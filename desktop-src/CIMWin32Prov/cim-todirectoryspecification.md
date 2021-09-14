@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e079a5012760507adfd9bff6b9716a6828e1f3e9b516ec252895ab8e93e801d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0728f605e02195a6bf2bd4beb0ca67fe8744e12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118677391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174537"
 ---
 # <a name="cim_todirectoryspecification-class"></a>Cim \_ ToDirectorySpecification (clase)
 
 La **\_ asociación Cim ToDirectorySpecification** identifica el directorio de destino para la acción de archivo. Cuando se usa esta asociación, se supone que el directorio de destino ya existía. Esta asociación no puede existir con una [**asociación \_ Cim ToDirectoryAction,**](cim-todirectoryaction.md) ya que una acción de archivo solo puede implicar un único directorio de destino.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ class CIM_ToDirectorySpecification
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Cim ToDirectorySpecification** tiene estos tipos de miembros:
 

@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29badef71eda70782203effb7098c7ee5bc7a62b67d28ccbc9428c74e9473012
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7318f01246578fe8ff34118427c95afb7b3bb098
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889313"
 ---
 # <a name="buttonelementmappingcolor"></a>BUTTONELEMENT.mappingColor
 
-El **atributo mappingColor** especifica o recupera la clave de color que identifica **este BUTTONELEMENT** en **BUTTONGROUP.**
+El **atributo mappingColor** especifica o recupera la clave de color que identifica **este ELEMENTO BUTTONELEMENT** en **BUTTONGROUP**.
 
 ``` syntax
         elementID.mappingColor
@@ -31,7 +31,7 @@ El **atributo mappingColor** especifica o recupera la clave de color que identif
 
 Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer Microsoft. No tiene valor predeterminado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo especifica el color de la región en el grupo de botones **mappingImage** que corresponde a este elemento de botón. Todos los clics de esta región se controlan mediante este elemento de botón.
 
@@ -84,13 +84,13 @@ El ejemplo siguiente es un archivo de definición de máscara completo que muest
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

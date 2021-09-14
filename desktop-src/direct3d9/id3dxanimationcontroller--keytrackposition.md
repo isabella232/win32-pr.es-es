@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9e66bac7b5aaa8da87b0cb88e3bfd12469d8aa8b6ec755eaa47268c70da5eadf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d027069efa9fb49cad3d2344da593eae4c3c844c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119791235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964895"
 ---
 # <a name="id3dxanimationcontrollerkeytrackposition-method"></a>Método ID3DXAnimationController::KeyTrackPosition
 
@@ -65,7 +65,7 @@ Nueva hora local de la pista de animación.
 
 Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Clave de hora global. Especifica la hora global en la que se llevará a cabo el cambio.
+Clave de hora global. Especifica la hora global en la que se realizará el cambio.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Identificador de evento para el evento de combinación de prioridad. **Se** devu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

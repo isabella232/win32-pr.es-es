@@ -1,21 +1,21 @@
 ---
-description: En este tema se describen las diferencias entre las funciones de cadena usadas en el control de la información de Unicode y del juego de caracteres. Estas funciones tienen unicode y Windows de página de códigos para admitir Unicode y Windows de página de códigos.
+description: En este tema se describen las diferencias entre las funciones de cadena usadas en el control de la información de unicode y juego de caracteres. Estas funciones tienen implementaciones unicode y Windows de página de códigos para admitir Unicode Windows parámetros de página de códigos.
 ms.assetid: 52a15957-b44b-49ba-b915-e5c8e003a7e6
 title: Diferencias de función de cadena
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d60a6208e858eceac65ac8826ffbff6303b970969cae6f635d0bcc027dd6d9f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad0c940aa8be1603f7958fb1993cc521ca7b1ed7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146998"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171897"
 ---
 # <a name="string-function-differences"></a>Diferencias de función de cadena
 
-En este tema se describen las diferencias entre las funciones de cadena usadas en el control de la información de Unicode y del juego de caracteres. Estas funciones tienen [unicode](unicode.md) y Windows de página [de](code-pages.md) códigos para admitir Unicode y Windows de página de códigos.
+En este tema se describen las diferencias entre las funciones de cadena usadas en el control de la información de unicode y juego de caracteres. Estas funciones tienen [implementaciones de](unicode.md) [páginas de códigos](code-pages.md) Unicode Windows para admitir Unicode Windows parámetros de página de códigos.
 
-Las siguientes funciones de cadena no requieren un comentario especial. Sus implementaciones de Windows y Unicode funcionan de forma idéntica.
+Las siguientes funciones de cadena no requieren un comentario especial. Sus implementaciones de Windows unicode y de página de códigos funcionan de forma idéntica.
 
 -   [**CharNext**](/windows/win32/api/winuser/nf-winuser-charnexta)
 -   [**CharPrev**](/windows/win32/api/winuser/nf-winuser-charpreva)
@@ -34,7 +34,7 @@ Las siguientes funciones de cadena son sensibles a la configuración regional de
 -   [**lstrcmp**](/windows/win32/api/winbase/nf-winbase-lstrcmpa)
 -   [**lstrcmpi**](/windows/win32/api/winbase/nf-winbase-lstrcmpia)
 
-Las siguientes funciones convierten entre el juego de caracteres OEM y la página de códigos Windows actual o Unicode, dependiendo de la versión que se utilice:
+Las siguientes funciones convierten entre el juego de caracteres oem y la página Windows de códigos actual o Unicode, en función de la versión que se utilice:
 
 -   [**CharToOem**](/windows/win32/api/winuser/nf-winuser-chartooema)
 -   [**CharToOemBuff**](/windows/win32/api/winuser/nf-winuser-chartooembuffa)
@@ -59,12 +59,12 @@ Las funciones de impresión, por ejemplo, [**StringCbPrintf,**](/windows/win32/a
 
  
 
-El tipo de datos del texto de salida siempre depende de la versión de la función. Cuando el tipo de datos del parámetro de entrada y el tipo de datos del texto de salida no están de acuerdo, la función print realiza una conversión de Unicode a la página de códigos Windows actual, o viceversa, según sea necesario.
+El tipo de datos para el texto de salida siempre depende de la versión de la función. Cuando el tipo de datos del parámetro de entrada y el tipo de datos del texto de salida no están de acuerdo, la función print realiza una conversión de Unicode Windows la página de códigos Windows actual, o viceversa, según sea necesario.
 
 Para la versión Unicode de las funciones de impresión, la cadena de formato es Unicode, al igual que el texto de salida.
 
 > [!Caution]  
-> Un control de búfer deficiente se implica en muchos problemas de seguridad que implican saturaciones del búfer. Consulte [La referencia de Strsafe.h](../menurc/strsafe-ovw.md). Las funciones definidas en Strsafe.h proporcionan procesamiento adicional para el control adecuado del búfer en el código. Por este motivo, están diseñados para reemplazar sus homólogos de C/C++ integrados, así como implementaciones específicas de Windows Microsoft. Para obtener más información, vea [Security Considerations: International Features](security-considerations--international-features.md).
+> El control deficiente del búfer se implica en muchos problemas de seguridad que implican saturaciones de búfer. Vea [Referencia de Strsafe.h.](../menurc/strsafe-ovw.md) Las funciones definidas en Strsafe.h proporcionan procesamiento adicional para el control adecuado del búfer en el código. Por esta razón, están diseñados para reemplazar sus homólogos integrados de C/C++, así como implementaciones de microsoft Windows específicas. Para obtener más información, vea [Security Considerations: International Features](security-considerations--international-features.md).
 
  
 

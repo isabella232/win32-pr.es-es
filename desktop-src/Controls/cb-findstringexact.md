@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95010548601350b666ee65da4bd048127917dc9c1e80ac26ead844d8597a7a18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f99d85c7dddb95bdfb168443d6f977c22273a87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119079149"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173966"
 ---
 # <a name="cb_findstringexact-message"></a>Mensaje \_ FINDSTRINGEXACT de CB
 
@@ -47,7 +47,7 @@ Puntero a la cadena terminada en NULL para la que se va a buscar. La búsqueda n
 
 El valor devuelto es el índice de base cero del elemento correspondiente. Si la búsqueda no se realiza correctamente, es CB \_ ERR.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función se realiza correctamente solo si la cadena especificada y un elemento de cuadro combinado tienen la misma longitud (excepto para el carácter nulo de terminación) y los mismos caracteres.
 
@@ -57,15 +57,15 @@ Si crea el cuadro combinado con un estilo dibujado por el propietario pero sin e
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

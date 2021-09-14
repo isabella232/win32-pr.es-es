@@ -46,16 +46,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4fb71b27093cb1011b9aebaadf0a6760124b64f9e13ae7b5ef46f5ffc478cce4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3b138ce4bc92088896286f4a21a039b068e2206e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119972655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174410"
 ---
 # <a name="win32_networkloginprofile-class"></a>Clase NetworkLoginProfile de Win32 \_
 
-La clase  [WMI](../wmisdk/retrieving-a-class.md) **\_ NetworkLoginProfile de Win32** representa la información de inicio de sesión de red de un usuario específico en un equipo que ejecuta Windows. Esto incluye, entre otros, el estado de la contraseña, los privilegios de acceso, las cuotas de disco y las rutas de acceso del directorio de inicio de sesión.
+La **clase WMI \_ NetworkLoginProfile** [de](../wmisdk/retrieving-a-class.md) Win32 representa la información de inicio de sesión de red de un usuario específico en un sistema informático que ejecuta Windows. Esto incluye, entre otros, el estado de la contraseña, los privilegios de acceso, las cuotas de disco y las rutas de acceso del directorio de inicio de sesión.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -100,7 +100,7 @@ class Win32_NetworkLoginProfile : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ NetworkLoginProfile de Win32** tiene estos tipos de miembros:
 
@@ -188,7 +188,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Functions \| NetUserEnum")
 </dt> </dl>
 
-Número de veces que el usuario escribe una contraseña incorrecta al iniciar sesión en un equipo que ejecuta Windows.
+Número de veces que el usuario escribe una contraseña incorrecta al iniciar sesión en un sistema informático que ejecuta Windows.
 
 Ejemplo: 0
 
@@ -386,7 +386,7 @@ Permiso a una cuenta de confianza para un dominio que confía en otros dominios.
 
 Cuenta de confianza de estación de trabajo
 
-Una cuenta de equipo para una Windows o servidor que sea miembro de este dominio.
+Una cuenta de equipo para un Windows o servidor que sea miembro de este dominio.
 
 </dd> <dt>
 
@@ -641,7 +641,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ num \_ logons")
 </dt> </dl>
 
-Número de veces que el usuario intentó iniciar sesión en esta cuenta correctamente. Un valor de 0xFFFFFFFF indica que el valor es desconocido. Esta propiedad se mantiene por separado en cada controlador de dominio de copia de seguridad (BDC) del dominio. Para obtener un valor preciso, solo se debe usar el valor más grande de todos los BDC.
+Número de veces que el usuario intentó iniciar sesión en esta cuenta. Un valor de 0xFFFFFFFF indica que el valor es desconocido. Esta propiedad se mantiene por separado en cada controlador de dominio de copia de seguridad (BDC) del dominio. Para obtener un valor preciso, solo se debe usar el valor más grande de todos los BDC.
 
 Ejemplo: 4
 
@@ -659,7 +659,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ parms")
 </dt> </dl>
 
-Espacio reservado para que lo usen las aplicaciones. Esta cadena puede ser null o puede tener cualquier número de caracteres antes del carácter nulo de terminación. Los productos de Microsoft usan este miembro para almacenar información de configuración de usuario. No modifique esta información, ya que este valor es específico de una aplicación.
+Espacio reservado para que lo usen las aplicaciones. Esta cadena puede ser NULL o puede tener cualquier número de caracteres antes del carácter nulo de terminación. Los productos de Microsoft usan este miembro para almacenar información de configuración de usuario. No modifique esta información, ya que este valor es específico de una aplicación.
 
 </dd> <dt>
 
@@ -675,7 +675,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ password \_ age")
 </dt> </dl>
 
-Tiempo durante el que una contraseña ha estado en vigor. Este valor se mide a partir del número de segundos transcurridos desde la última vez que se cambió la contraseña.
+Período de tiempo durante el que una contraseña ha estado en vigor. Este valor se mide a partir del número de segundos transcurridos desde la última vez que se cambió la contraseña.
 
 Ejemplo: 00001201000230.000000 000
 
@@ -763,10 +763,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ profile")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("perfil usri3 de Estructuras de administración de redes win32API \| USER INFO \| [**\_ \_ 3")**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| \_
 </dt> </dl>
 
-Ruta de acceso al perfil del usuario. Este valor puede ser una cadena nula, una ruta de acceso absoluta local o una ruta de acceso UNC. Un perfil de usuario contiene configuraciones que son personalizables para cada usuario, como los colores de escritorio.
+Ruta de acceso al perfil del usuario. Este valor puede ser una cadena null, una ruta de acceso absoluta local o una ruta de acceso UNC. Un perfil de usuario contiene valores personalizables para cada usuario, como los colores del escritorio.
 
 Ejemplo: "C: \\ Windows"
 
@@ -781,7 +781,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ script \_ path")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Ruta de acceso del script usri3 de Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3")**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| \_ \_
 </dt> </dl>
 
 Ruta de acceso del directorio al script de inicio de sesión del usuario. Un script de inicio de sesión ejecuta automáticamente un conjunto de comandos cada vez que un usuario inicia sesión en un sistema.
@@ -804,7 +804,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -820,7 +820,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ units per \_ \_ week")
 </dt> </dl>
 
-Número de unidades de tiempo en las que se divide la semana. Se usa con la propiedad **LogonHours para** limitar el acceso del usuario al equipo.
+Número de unidades de tiempo en las que se divide la semana. Se usa con la propiedad **LogonHours para** limitar el acceso de los usuarios al equipo.
 
 Ejemplo: 168 (horas por semana)
 
@@ -835,7 +835,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ usr \_ comment")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| \_ usri3 usr \_ comment")
 </dt> </dl>
 
 Comentario o descripción definidos por el usuario para este perfil.
@@ -867,7 +867,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ flags")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("marcas \| usri3 de User \| [**\_ Info \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3)de estructuras de administración de redes de Win32API") \| \_
 </dt> </dl>
 
 Tipo de cuenta para la que el usuario tiene privilegios.
@@ -878,7 +878,7 @@ Los valores son:
 -   "Cuenta duplicada"
 -   "Cuenta de confianza de estación de trabajo"
 -   "Cuenta de confianza del servidor"
--   "Cuenta de confianza de Interdomain"
+-   "Cuenta de confianza de interdominio"
 -   "Desconocido"
 
 <dt>
@@ -913,14 +913,14 @@ Los valores son:
 
 <span id="Interdomain_Trust_Account"></span><span id="interdomain_trust_account"></span><span id="INTERDOMAIN_TRUST_ACCOUNT"></span>
 
-**Cuenta de confianza de Interdomain** ("Cuenta de confianza de Interdomain")
+**Cuenta de confianza de interdominio** ("cuenta de confianza de interdominio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> </dl>
@@ -936,18 +936,18 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estaciones de trabajo usri3 de Estructuras de administración de redes win32API \| USER INFO \| [**\_ \_ 3")**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| \_
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estaciones de trabajo de USER \| INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 de Estructuras de administración de redes de Win32API") \_
 </dt> </dl>
 
-Nombres de las estaciones de trabajo desde las que el usuario puede iniciar sesión. Se pueden especificar hasta ocho estaciones de trabajo; los nombres deben estar separados por comas (,). Una cadena null indica que no hay restricciones. Para deshabilitar los inicios de sesión de todas las estaciones de trabajo en esta cuenta, establezca UF ACCOUNTDISABLE en la \_ **propiedad Flags** de esta clase.
+Nombres de las estaciones de trabajo desde las que el usuario puede iniciar sesión. Se pueden especificar hasta ocho estaciones de trabajo; los nombres deben estar separados por comas (,). Una cadena null no indica ninguna restricción. Para deshabilitar los inicios de sesión de todas las estaciones de trabajo en esta cuenta, establezca UF ACCOUNTDISABLE en la \_ **propiedad Flags** de esta clase.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ NetworkLoginProfile de Win32** se deriva de [**cim \_ setting**](cim-setting.md).
 
-El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Para obtener más información, vea [Ejecutar operaciones con privilegios.](../wmisdk/executing-privileged-operations.md)
+El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Para obtener más información, [vea Ejecutar operaciones con privilegios.](../wmisdk/executing-privileged-operations.md)
 
 ## <a name="examples"></a>Ejemplos
 

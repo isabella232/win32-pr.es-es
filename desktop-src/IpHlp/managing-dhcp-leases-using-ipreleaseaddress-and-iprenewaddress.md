@@ -4,12 +4,12 @@ description: Las funciones IpReleaseAddress e IpRenewAddress se usan para libera
 ms.assetid: 0ed699dd-0bfb-4581-900d-7f5bc1e8acff
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7c5f5e469932a6a03fb50e6bde05c2c50afbcb8455746e564d74dd87e96427d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8a450d5e9a54fd4818f01bdc1eb7893609261ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146798"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171857"
 ---
 # <a name="manage-dhcp-leases-with-ipreleaseaddress-iprenewaddress"></a>Administración de concesiones DHCP con IpReleaseAddress, IpRenewAddress
 
@@ -26,7 +26,7 @@ La [**función IpReleaseAddress**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-ipr
 
 **Para usar IpReleaseAddress**
 
-1.  Obtenga un puntero a una estructura [**\_ INDEX MAP \_ \_ del ADAPTADOR**](/windows/desktop/api/Ipexport/ns-ipexport-ip_adapter_index_map) DE IP mediante la función [**GetInterfaceInfo.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo) (Para obtener ayuda con la función GetInterfaceInfo, vea [Managing Interfaces Using GetInterfaceInfo](managing-interfaces-using-getinterfaceinfo.md)). Cree un **objeto DWORD** `dwRetVal` (usado para la comprobación de errores). Se supone que la variable devuelta por **GetInterfaceInfo** se denomina `pInfo` .
+1.  Obtenga un puntero a una estructura [**\_ INDEX \_ \_ MAP**](/windows/desktop/api/Ipexport/ns-ipexport-ip_adapter_index_map) del ADAPTADOR DE IP mediante [**la función GetInterfaceInfo.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo) (Para obtener ayuda con la función GetInterfaceInfo, vea [Managing Interfaces Using GetInterfaceInfo](managing-interfaces-using-getinterfaceinfo.md)). Cree un **objeto DWORD** `dwRetVal` (usado para la comprobación de errores). Se supone que la variable devuelta por **GetInterfaceInfo** se denomina `pInfo` .
     ```C++
     DWORD dwRetVal;
     
@@ -56,7 +56,7 @@ La [**función IpReleaseAddress**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-ipr
 
 **Para usar IpRenewAddress**
 
-1.  Obtenga un puntero a una estructura [**\_ INDEX MAP \_ \_ del ADAPTADOR**](/windows/desktop/api/Ipexport/ns-ipexport-ip_adapter_index_map) DE IP mediante la función [**GetInterfaceInfo.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo) (Para obtener ayuda con **la función GetInterfaceInfo,** vea [Managing Interfaces Using GetInterfaceInfo](managing-interfaces-using-getinterfaceinfo.md)). Declare un **objeto DWORD** `dwRetVal` (usado para la comprobación de errores) si esta variable no se ha declarado. Se supone que la variable devuelta por **GetInterfaceInfo** se denomina `pInfo` .
+1.  Obtenga un puntero a una estructura [**\_ INDEX \_ \_ MAP**](/windows/desktop/api/Ipexport/ns-ipexport-ip_adapter_index_map) del ADAPTADOR DE IP mediante [**la función GetInterfaceInfo.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo) (Para obtener ayuda con **la función GetInterfaceInfo,** vea [Managing Interfaces Using GetInterfaceInfo](managing-interfaces-using-getinterfaceinfo.md)). Declare un **objeto DWORD** `dwRetVal` (usado para la comprobación de errores) si esta variable no se ha declarado. Se supone que la variable devuelta por **GetInterfaceInfo** se denomina `pInfo` .
     ```C++
     DWORD dwRetVal;
     

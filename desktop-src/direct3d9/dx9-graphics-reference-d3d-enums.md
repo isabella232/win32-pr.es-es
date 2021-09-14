@@ -4,12 +4,12 @@ ms.assetid: ae64eb17-63a8-44c5-8d41-e021c49f338a
 title: Enumeraciones de Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 480b5530fbe00339d2f4faf39e9c0b8d83acd3075e01a459ae9ce26e4d4875c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47c06f727e66e51d73eb217f73923979d56de0ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118523426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174790"
 ---
 # <a name="direct3d-enumerations"></a>Enumeraciones de Direct3D
 
@@ -53,7 +53,7 @@ En esta sección se describen los tipos enumerados de Direct3D.
 -   [D3DFORMAT](d3dformat.md)
 -   [**D3DLIGHTTYPE**](./d3dlighttype.md)
 -   [**D3DMATERIALCOLORSOURCE**](./d3dmaterialcolorsource.md)
--   [**TIPO D3DMULTISAMPLE \_**](./d3dmultisample-type.md)
+-   [**D3DMULTISAMPLE \_ TYPE**](./d3dmultisample-type.md)
 -   [**D3DPATCHEDGESTYLE**](./d3dpatchedgestyle.md)
 -   [**D3DPOOL**](./d3dpool.md)
 -   [**D3DPRIMITIVETYPE**](./d3dprimitivetype.md)

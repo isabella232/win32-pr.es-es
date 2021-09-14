@@ -1,5 +1,5 @@
 ---
-description: La aplicación \_ NetworkProtocol de Win32&\# 8194; La clase WMI representa un protocolo y sus características de red en un sistema de equipo Win32.
+description: El archivo \_ NetworkProtocol de Win32&\# 8194; La clase WMI representa un protocolo y sus características de red en un sistema de equipo Win32.
 ms.assetid: c864a694-d507-4629-91c5-bd26ccf397f7
 ms.tgt_platform: multiple
 title: Win32_NetworkProtocol clase
@@ -37,12 +37,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1e11fcfefb817a2ecc94914cccd96335100e2e2ae1c072af3bd9bf879f4d1e46
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 33817fa4aa55747ecf9d4e89f5dcf406160c0c67
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119972652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174409"
 ---
 # <a name="win32_networkprotocol-class"></a>Clase NetworkProtocol de Win32 \_
 
@@ -82,7 +82,7 @@ class Win32_NetworkProtocol : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ NetworkProtocol de Win32** tiene estos tipos de miembros:
 
@@ -171,7 +171,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \_ API Windows \| \| Sockets PROTOCOL INFO \_ \| dwServiceFlags \| XP GUARANTEED \_ \_ ORDER")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP GUARANTEED \_ \_ ORDER")
 </dt> </dl>
 
 El protocolo garantiza que los datos lleguen en el orden en que se enviaron. Tenga en cuenta que esta característica no garantiza la entrega de los datos, solo su pedido.
@@ -253,7 +253,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) \_ ("Win32 API \| Windows Sockets PROTOCOL INFO \| \_ \| iMinSockAddr "), [**unidades**](../wmisdk/standard-qualifiers.md) ("caracteres")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| iMinSockAddr "), [**unidades**](../wmisdk/standard-qualifiers.md) ("caracteres")
 </dt> </dl>
 
 Longitud mínima de una dirección de socket admitida por el protocolo.
@@ -339,7 +339,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -353,14 +353,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -402,7 +402,7 @@ Los valores son los siguientes:
 
 </dd> <dt>
 
-**Admite la difusión por difusión**
+**SupportsBroadcasting**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -411,7 +411,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| \| Sockets PROTOCOL INFO \_ \| dwServiceFlags \| XP SUPPORTS \_ \_ BROADCAST")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP SUPPORTS \_ \_ BROADCAST")
 </dt> </dl>
 
 El protocolo admite un mecanismo para difundir mensajes a través de la red.
@@ -427,7 +427,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP CONNECT \_ \_ DATA")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP CONNECT \_ \_ DATA")
 </dt> </dl>
 
 El protocolo permite que los datos se conecten a través de la red.
@@ -443,7 +443,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP DISCONNECT \_ \_ DATA")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP DISCONNECT \_ \_ DATA")
 </dt> </dl>
 
 El protocolo permite desconectar los datos a través de la red.
@@ -459,7 +459,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| \| Sockets PROTOCOL INFO \_ \| dwServiceFlags \| XP \_ ENCRYPTS")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP \_ ENCRYPTS")
 </dt> </dl>
 
 El protocolo admite el cifrado de datos.
@@ -475,10 +475,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| \| Sockets PROTOCOL INFO \_ \| dwServiceFlags \| XP \_ EXPEDITED \_ DATA")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP \_ EXPEDITED \_ DATA")
 </dt> </dl>
 
-El protocolo admite datos rápidos (también conocidos como datos urgentes) en toda la red. Los datos acelerados pueden omitir el control de flujo y recibir prioridad sobre los paquetes de datos normales.
+El protocolo admite datos rápidos (también conocidos como datos urgentes) a través de la red. Los datos acelerados pueden omitir el control de flujo y recibir prioridad sobre los paquetes de datos normales.
 
 </dd> <dt>
 
@@ -491,7 +491,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| \| Sockets PROTOCOL INFO \_ \| dwServiceFlags \| XP \_ FRAGMENTATION")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP \_ FRAGMENTATION")
 </dt> </dl>
 
 El protocolo admite la transmisión de los datos en fragmentos. La unidad de transferencia máxima de red física (MTU) está oculta en las aplicaciones. Cada tipo de medio tiene un tamaño máximo de fotograma que no se puede superar. La capa de vínculo detecta la MTU y la notifica a los protocolos usados.
@@ -507,7 +507,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \_ API Windows \| \| Sockets PROTOCOL INFO \_ \| dwServiceFlags \| XP GRACEFUL \_ \_ CLOSE")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP GRACEFUL \_ \_ CLOSE")
 </dt> </dl>
 
 El protocolo admite operaciones de cierre en dos fases, también conocidas como "operaciones de cierre correcto". Si no es así, el protocolo solo admite operaciones de cierre abortivas.
@@ -523,14 +523,14 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("API win32 \_ Windows \| \| sockets PROTOCOL INFO \_ \| dwServiceFlags \| XP BANDWIDTH \_ \_ ALLOCATION")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("API de Win32 \_ Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP BANDWIDTH \_ \_ ALLOCATION")
 </dt> </dl>
 
 El protocolo tiene un mecanismo para establecer y mantener un ancho de banda.
 
 </dd> <dt>
 
-**Admite multicasting**
+**SupportsMulticasting**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -539,7 +539,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \_ API Windows \| \| Sockets PROTOCOL INFO \_ \| dwServiceFlags \| XP SUPPORTS \_ \_ MULTICAST")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| Sockets PROTOCOL INFO \| \_ \| dwServiceFlags \| XP SUPPORTS \_ \_ MULTICAST")
 </dt> </dl>
 
 El protocolo admite la multidifusión.
@@ -558,13 +558,13 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32 \_ API Windows \| Sockets Structures \| WSAPROTOCOL \_ INFO \| dwServiceFlags1 \| XP1 \_ QOS \_ SUPPORTED")
 </dt> </dl>
 
-El protocolo es capaz de admitir calidad de servicio (QoS) por el proveedor de servicios en capas subyacente o el transportista de transporte. QoS es una colección de componentes que permiten diferenciar y tratar preferentemente los subconjuntos de datos transmitidos a través de la red. QoS significa que los subconjuntos de datos obtienen una prioridad más alta o un servicio garantizado al atravesar una red.
+El protocolo es capaz de admitir calidad de servicio (QoS) por el proveedor de servicios en capas subyacente o el transportista de transporte. QoS es una colección de componentes que permiten la diferenciación y el tratamiento preferente de subconjuntos de datos transmitidos a través de la red. QoS significa que los subconjuntos de datos obtienen una prioridad más alta o un servicio garantizado al atravesar una red.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ NetworkProtocol de Win32** se deriva de [**\_ LOGICALElement de CIM.**](cim-logicalelement.md)
+La **clase \_ NetworkProtocol de Win32** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
 ## <a name="examples"></a>Ejemplos
 

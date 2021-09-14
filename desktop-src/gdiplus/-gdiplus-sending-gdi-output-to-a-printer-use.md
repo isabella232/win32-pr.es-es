@@ -4,12 +4,12 @@ ms.assetid: a76cca57-6ed8-44cd-a9f6-f2692d14b68a
 title: Envío de la salida de GDI+ a una impresora
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51116e27f3ef4e457d2d3cf8d39b26c1a5e2275da4b964bd4de58ec273db1e2b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 96c1c4f6c05e4918663284e6d7747952040dcddf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172350"
 ---
 # <a name="sending-gdi-output-to-a-printer"></a>Envío de la salida de GDI+ a una impresora
 
@@ -66,7 +66,7 @@ En el código anterior, los tres comandos de dibujo GDI+ están entre las llamad
 
  
 
-Por lo general, no querrá codificar de forma automática el nombre de una impresora como se hizo en la aplicación de consola anterior. Una alternativa a la codificación rígida del nombre es llamar a [GetDefaultPrinter](../printdocs/getdefaultprinter.md) para obtener el nombre de la impresora predeterminada. Antes de llamar a GetDefaultPrinter, debe asignar un búfer lo suficientemente grande como para contener el nombre de la impresora. Puede determinar el tamaño del búfer necesario llamando a GetDefaultPrinter y pasando **NULL** como primer argumento.
+Por lo general, no querrá codificar de forma automática el nombre de una impresora como se hizo en la aplicación de consola anterior. Una alternativa a la codificación rígida del nombre es llamar a [GetDefaultPrinter](../printdocs/getdefaultprinter.md) para obtener el nombre de la impresora predeterminada. Antes de llamar a GetDefaultPrinter, debe asignar un búfer lo suficientemente grande como para contener el nombre de la impresora. Para determinar el tamaño del búfer necesario, llame a GetDefaultPrinter y pase **NULL** como primer argumento.
 
 > [!Note]  
 > La [función GetDefaultPrinter](../printdocs/getdefaultprinter.md) solo se admite en Windows 2000 y versiones posteriores.

@@ -1,6 +1,6 @@
 ---
 title: Función SampleBias::SampleBias(S,float,float,int,float,uint) para Texture3D
-description: Muestrea una textura después de aplicar el valor de sesgo al nivel de mapa mip, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. | Función SampleBias::SampleBias(S,float,float,int,float,uint) para Texture3D
+description: Muestrea una textura, después de aplicar el valor de sesgo al nivel de mapa mip, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. | Función SampleBias::SampleBias(S,float,float,int,float,uint) para Texture3D
 ms.assetid: 87B06414-F1A3-4BC8-B7DE-137B2156CFA7
 keywords:
 - Función SampleBias HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fc0ff4fab514ac283e88f9b6c44253a34708628d0bf7e4e617673570ca317d87
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6155bbd4a3b21b86add57d13bc14a1185c76b73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119043453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172493"
 ---
 # <a name="samplebiassamplebiassfloatfloatintfloatuint-function-for-texture3d"></a>Función SampleBias::SampleBias(S,float,float,int,float,uint) para Texture3D
 
-Muestrea una textura después de aplicar el valor de sesgo al nivel de mapa mip, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Devuelve el estado de la operación.
+Muestrea una textura, después de aplicar el valor de sesgo al nivel de mapa mip, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Devuelve el estado de la operación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ Las coordenadas de textura. El tipo de argumento depende del tipo texture-object
 
 
 
-| Texture-Object de datos                    | Tipo de parámetro |
+| Texture-Object type                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -93,7 +93,7 @@ Desplazamiento de coordenadas de textura opcional, que se puede usar para cualqu
 
 
 
-| Texture-Object de datos           | Tipo de parámetro |
+| Texture-Object type           | Tipo de parámetro |
 |-------------------------------|----------------|
 | Texture1D, Texture1DArray     | int            |
 | Texture2D, Texture2DArray     | int2           |
@@ -111,7 +111,7 @@ Desplazamiento de coordenadas de textura opcional, que se puede usar para cualqu
 
 Tipo: **float**
 
-Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual tiene acceso a un nivel de mip inferior a 2,0f.
+Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual acceda a un nivel de mip inferior a 2,0f.
 
 </dd> <dt>
 
@@ -128,9 +128,9 @@ Estado de la operación. No se puede acceder al estado directamente; en su lugar
 
 Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-El formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+El formato de textura, que es uno de los valores con tipo enumerados en [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

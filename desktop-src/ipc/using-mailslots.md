@@ -4,12 +4,12 @@ ms.assetid: 4a8597ad-97ba-4141-9e65-9a843000c3b2
 title: Uso de Mailslots
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 214bd58b3ef3fe57669dc733f4e8ce2da9f44e39e9041c3e357804e8955bf929
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a3c69b7f3fb5bea87a2aedc36114dc2beb8ba3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118755867"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172277"
 ---
 # <a name="using-mailslots"></a>Uso de Mailslots
 

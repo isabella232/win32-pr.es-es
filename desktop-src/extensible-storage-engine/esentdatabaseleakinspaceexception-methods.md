@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101523
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: c7d0dde0cc53fb91a9b6c7563555f93c871a1051f00083b40530f10a57de0574
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e47c5dca594668fd6fe75c29243f5988fee3a11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117712631"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963292"
 ---
 # <a name="esentdatabaseleakinspaceexception-methods"></a>Métodos de EsentDatabaseLeakInSpaceException 
 
@@ -78,7 +78,7 @@ El [tipo EsentDatabaseLeakInSpaceException](./esentdatabaseleakinspaceexception-
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 58da45fe25618317c1826ad89f7138361d02fb67b00745dee73e08161f1656e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae603708be4b34c9aa12722fe282df470c85d476
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118522022"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174742"
 ---
 # <a name="id3dxbaseeffectsetmatrixarray-method"></a>Método ID3DXBaseEffect::SetMatrixArray
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una matriz no transaccional contiene datos principales de fila; es decir, cada vector está contenido en una fila.
 
@@ -92,7 +92,7 @@ Si las matrices de destino son menores que las matrices de origen, se omitirán 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

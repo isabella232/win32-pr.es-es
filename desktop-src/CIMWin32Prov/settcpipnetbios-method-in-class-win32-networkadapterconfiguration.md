@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 80f408d0516e4caa5f45977e61b8620ea3d8865f5604eea2f3907bd7728f4809
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 20ecab5918d00dc5f189464becc0252f2a8c0569
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172025"
 ---
 # <a name="settcpipnetbios-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpipNetbios de la clase NetworkAdapterConfiguration de Win32 \_
 
 El **método SetTcpipNetbios** se usa para establecer la operación predeterminada de NetBIOS sobre TCP/IP.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,7 +67,7 @@ Habilitación de Netbios a través de DHCP
 
 </dt> <dd>
 
-Habilitación de Netbios
+Habilitar Netbios
 
 </dd> <dt>
 
@@ -273,7 +273,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión DHCP.
+No se puede renovar la concesión dhcp.
 
 </dd> <dt>
 
@@ -291,7 +291,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-IP no habilitada en el adaptador.
+Ip no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -304,7 +304,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco o red**
+**Error de límites de número de marco/red**
 </dt> <dd>
 
 86
@@ -313,7 +313,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de marco no válido**
+**Tipo de fotograma no válido**
 </dt> <dd>
 
 87
@@ -354,11 +354,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -457,7 +457,7 @@ El [ejemplo de PowerShell](https://Gallery.TechNet.Microsoft.Com/Configure-iSCSI
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

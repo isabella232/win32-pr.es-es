@@ -4,12 +4,12 @@ ms.assetid: e5c7c882-cbfc-4343-952c-b13c67326756
 title: Extensión de la funcionalidad CertOpenStore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c770ae56ff597f51248486db2c9eb2d74bea8d63d2e8daad83d5938594b2f1a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4cce198578cc482ba0488bd97ae0f1d7f923511b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007097"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171030"
 ---
 # <a name="extending-certopenstore-functionality"></a>Extensión de la funcionalidad CertOpenStore
 
@@ -28,7 +28,7 @@ El almacén TrustedPeople por usuario está restringido a almacenes físicos pre
 
 **Windows XP y Windows Server 2003:** El almacén TrustedPeople por usuario no está restringido a almacenes físicos predefinidos.
 
-Uno de los miembros de datos de la [**estructura CERT \_ STORE \_ PROV \_ INFO**](/windows/win32/api/Wincrypt/ns-wincrypt-cert_store_prov_info) es *la matriz rgpvStoreProvFunc.* Si la función de proveedor de almacén necesita admitir una o varias de las funciones de devolución de llamada, debe proporcionar punteros para esta matriz. Estos punteros deben apuntar a las funciones de devolución de llamada que se van a usar para otras actividades del almacén de certificados (como cerrar el almacén). En la ilustración siguiente se muestra el flujo de este proceso.
+Uno de los miembros de datos de la [**estructura CERT \_ STORE \_ PROV \_ INFO**](/windows/win32/api/Wincrypt/ns-wincrypt-cert_store_prov_info) es *la matriz rgpvStoreProvFunc.* Si la función de proveedor de almacén necesita admitir una o varias de las funciones de devolución de llamada, debe proporcionar punteros para esta matriz. Estos punteros deben apuntar a las funciones de devolución de llamada que se van a usar para otras actividades de almacén de certificados (como cerrar el almacén). En la ilustración siguiente se muestra el flujo de este proceso.
 
 ![Funcionalidad certopenstore](images/openstor.png)
 
@@ -129,7 +129,7 @@ Los siguientes tipos de búsqueda de certificados se admiten [**en CertFindCerti
 -   CERT \_ FIND \_ KEY \_ SPEC
 -   CERT \_ FIND \_ ENHKEY \_ USAGE
 
-Se llama a la devolución de llamada FIND \_ CERT para cada uno de los tipos de buscar anteriores. Los parámetros pasados [**a CertFindCertificateInStore**](/windows/win32/api/Wincrypt/nf-wincrypt-certfindcertificateinstore) se copian directamente en la estructura CERT STORE PROV FIND INFO antes de llamar a la devolución de \_ llamada FIND \_ \_ \_ \_ CERT. Para obtener más información sobre los valores de campo para los distintos tipos de búsqueda de la estructura CERT \_ STORE \_ PROV \_ FIND \_ INFO, vea **CertFindCertificateInStore**.
+Se llama \_ a la devolución de llamada FIND CERT para cada uno de los tipos de buscar anteriores. Los parámetros pasados [**a CertFindCertificateInStore**](/windows/win32/api/Wincrypt/nf-wincrypt-certfindcertificateinstore) se copian directamente en la estructura CERT STORE PROV FIND INFO antes de llamar a la devolución de \_ llamada FIND \_ \_ \_ \_ CERT. Para obtener más información sobre los valores de campo para los distintos tipos de búsqueda de la estructura CERT \_ STORE \_ PROV \_ FIND \_ INFO, vea **CertFindCertificateInStore**.
 
 Los siguientes tipos de buscar certificados admiten las API [**CertGetSubjectCertificateFromStore**](/windows/win32/api/Wincrypt/nf-wincrypt-certgetsubjectcertificatefromstore) y [**CertGetIssuerCertificateFromStore**](/windows/win32/api/Wincrypt/nf-wincrypt-certgetissuercertificatefromstore) y ayudan a determinar si el certificado ya existe en el almacén antes de agregar:
 
@@ -147,7 +147,7 @@ Se llama a la devolución de llamada FIND CRL cuando las API de almacén enumera
 
 Para CRL \_ FIND \_ ISSUED \_ BY, *pvFindPara* es un puntero a [**un CONTEXTO \_ DE CERT**](/windows/win32/api/Wincrypt/ns-wincrypt-cert_context) del emisor de CRL. Para CRL \_ FIND \_ EXISTING, *pvFindPara* [**\_**](/windows/win32/api/Wincrypt/ns-wincrypt-crl_context) es un puntero a un CONTEXTO DE CRL de la CRL para determinar si ya existe en el almacén.
 
-Se llama a \_ la devolución de llamada FIND CTL cuando las API del almacén enumeran o encuentran CTL. Los siguientes tipos de búsqueda de CTL se admiten [**en CertFindCTLInStore**](/windows/win32/api/Wincrypt/nf-wincrypt-certfindctlinstore):
+Se llama a \_ la devolución de llamada FIND CTL cuando las API de almacén enumeran o encuentran CTL. Los siguientes tipos de búsqueda de CTL se admiten [**en CertFindCTLInStore**](/windows/win32/api/Wincrypt/nf-wincrypt-certfindctlinstore):
 
 -   CTL \_ FIND \_ ANY
 -   CTL \_ FIND \_ SHA1 \_ HASH

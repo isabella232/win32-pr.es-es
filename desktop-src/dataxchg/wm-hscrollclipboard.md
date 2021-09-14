@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1066760fe4fb6f2d0c7449fe8f726f41e0e3530610dd3fe7790c369d4821f88
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a34ee33709601b483258ae0aec4873c47fa69a00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117914856"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174870"
 ---
 # <a name="wm_hscrollclipboard-message"></a>Mensaje \_ DE WM HSCROLLCLIPBOARD
 
@@ -50,7 +50,7 @@ La palabra de orden bajo *de lParam* especifica un evento de barra de desplazami
 
 
 
-| Valor                                                                                                                                                                                                                         | Significado                                                                                           |
+| Value                                                                                                                                                                                                                         | Significado                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | <span id="SB_ENDSCROLL"></span><span id="sb_endscroll"></span><dl> <dt>**SB \_ ENDSCROLL**</dt> <dt>8</dt> </dl>             | Desplazamiento final.<br/>                                                                            |
 | <span id="SB_LEFT"></span><span id="sb_left"></span><dl> <dt>**SB \_ LEFT**</dt> <dt>6</dt> </dl>                            | Desplácese a la parte superior izquierda.<br/>                                                                  |
@@ -71,7 +71,7 @@ La palabra de orden bajo *de lParam* especifica un evento de barra de desplazami
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El propietario del Portapapeles puede usar la [**función ScrollWindow**](https://msdn.microsoft.com/library/Cc410994(v=MSDN.10).aspx) para desplazar la imagen en la ventana del visor del Portapapeles e invalidar la región adecuada.
 
@@ -79,7 +79,7 @@ El propietario del Portapapeles puede usar la [**función ScrollWindow**](https:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

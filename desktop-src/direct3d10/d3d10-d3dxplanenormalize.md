@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXPlaneNormalize (D3DX10Math.h): normaliza los coeficientes de plano para que el plano normal tenga longitud de unidad.'
+description: 'Función D3DXPlaneNormalize (D3DX10Math.h): normaliza los coeficientes del plano para que el plano normal tenga longitud de unidad.'
 ms.assetid: 52ae36a7-e37b-457a-9832-e62900a85bde
 title: Función D3DXPlaneNormalize (D3DX10Math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cf4429e324a5ce1554c5c37c929625153c74764cb9d03618f633f35ecd416748
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b3499297a008b0d8f5dc705080bbd1d5bbe3af4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119754155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965087"
 ---
 # <a name="d3dxplanenormalize-function-d3dx10mathh"></a>Función D3DXPlaneNormalize (D3DX10Math.h)
 
@@ -65,9 +65,9 @@ Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
 Puntero a una estructura D3DXPLANE que representa la normalidad del plano.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función normaliza un plano para que \| a,b,c \| == 1.
+Esta función normaliza un plano para \| que a,b,c \| == 1.
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, esta función se puede usar como parámetro para otra función.
 
@@ -82,7 +82,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

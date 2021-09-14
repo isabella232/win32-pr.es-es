@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 75ffcf17329dfd3c8cc4a048035162658f9ccc0f5264805bb0ef8403082805a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a85afc4eb85a4269284a49809c399dbb65b4894
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118942275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173697"
 ---
 # <a name="patchsourcelistclearsource-method"></a>Método Patch.SourceListClearSource
 
-El **método SourceListClearSource** quita un origen de red o dirección URL. Este método llama a [**MsiSourceListClearSource.**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearsourcea)
+El **método SourceListClearSource** quita un origen de red o dirección URL. Este método llama [**a MsiSourceListClearSource.**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearsourcea)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Tipo de origen que se va a quitar.
 **MSISOURCETYPE \_ NETWORK**
 </dt><span id="MSISOURCETYPE_URL"></span><span id="msisourcetype_url"></span><dt>
 
-**DIRECCIÓN URL DE MSISOURCETYPE \_**
+**DIRECCIÓN URL DE \_ MSISOURCETYPE**
 </dt> </dl> </dd> <dt>
 
 *SourcePath* 
@@ -70,7 +70,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
 | IID<br/>     | IID IPatch se define como \_ 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
 

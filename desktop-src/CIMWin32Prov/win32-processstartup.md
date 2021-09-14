@@ -28,12 +28,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 10b0732b89d5240b457152f4bd19f951f69b8ee693baec54daea3bd6bbba9439
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b0be949b106c1fa88b37e0c7764dbddb0546ded7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174369"
 ---
 # <a name="win32_processstartup-class"></a>Clase ProcessStartup de Win32 \_
 
@@ -64,7 +64,7 @@ class Win32_ProcessStartup : Win32_MethodParameterClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ProcessStartup de Win32** tiene estos tipos de miembros:
 
@@ -236,7 +236,7 @@ El valor predeterminado es que el sistema operativo haga que los errores de alin
 
 </dt> <dd>
 
-Predeterminado
+Valor predeterminado
 
 </dd> <dt>
 
@@ -372,7 +372,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**JOBOBJECT BASIC LIMIT \_ \_ \_ INFORMATION**](/windows/win32/api/winnt/ns-winnt-jobobject_basic_limit_information) \| PriorityClass")
 </dt> </dl>
 
-Clase priority del nuevo proceso. Use esta propiedad para determinar las prioridades de programación de los subprocesos del proceso. Si la propiedad se deja null, el valor predeterminado de la clase priority es Normal, a menos que la clase de prioridad del proceso de creación sea Idle o Below \_ Normal. En estos casos, el proceso secundario recibe la clase de prioridad predeterminada del proceso de llamada.
+Clase priority del nuevo proceso. Use esta propiedad para determinar las prioridades de programación de los subprocesos del proceso. Si la propiedad se deja null, el valor predeterminado de la clase priority es Normal, a menos que la clase de prioridad del proceso de creación sea Idle o Below \_ Normal. En estos casos, el proceso secundario recibe la clase de prioridad predeterminada del proceso que realiza la llamada.
 
 <dt>
 
@@ -394,7 +394,7 @@ Indica un proceso normal sin necesidad de programación especial.
 
 </dt> <dd>
 
-Indica un proceso con subprocesos que se ejecutan solo cuando el sistema está inactivo y son adelantados por los subprocesos de cualquier proceso que se ejecuta en una clase de mayor prioridad. Un ejemplo es un protector de pantalla. Los procesos secundarios heredan la clase de prioridad inactiva.
+Indica un proceso con subprocesos que se ejecutan solo cuando el sistema está inactivo y son adelantados por los subprocesos de cualquier proceso que se ejecuta en una clase de prioridad más alta. Un ejemplo es un protector de pantalla. Los procesos secundarios heredan la clase de prioridad inactiva.
 
 </dd> <dt>
 
@@ -405,7 +405,7 @@ Indica un proceso con subprocesos que se ejecutan solo cuando el sistema está i
 
 </dt> <dd>
 
-Indica un proceso que realiza tareas críticas en el tiempo que se deben ejecutar inmediatamente para ejecutarse correctamente. Los subprocesos de un proceso de clase de prioridad alta adelantan los subprocesos de los procesos de clase de prioridad normal o de prioridad inactiva. Un ejemplo es Windows Lista de tareas, que debe responder rápidamente cuando lo llame el usuario, independientemente de la carga en el sistema operativo. Al usar la clase de prioridad alta, debe tener mucho cuidado, ya que una aplicación enlazada a la CPU de clase de prioridad alta puede usar casi todos los ciclos disponibles. Solo una prioridad en tiempo real adelanta los subprocesos establecidos en este nivel.
+Indica un proceso que realiza tareas de tiempo crítico que se deben ejecutar inmediatamente para ejecutarse correctamente. Los subprocesos de un proceso de clase de prioridad alta adelantan los subprocesos de los procesos de clase de prioridad normal o de prioridad inactiva. Un ejemplo es Windows Lista de tareas, que debe responder rápidamente cuando lo llama el usuario, independientemente de la carga en el sistema operativo. Debe tener mucho cuidado al usar la clase de prioridad alta, ya que una aplicación enlazada a la CPU de clase de alta prioridad puede usar casi todos los ciclos disponibles. Solo una prioridad en tiempo real adelanta los subprocesos establecidos en este nivel.
 
 </dd> <dt>
 
@@ -416,13 +416,13 @@ Indica un proceso que realiza tareas críticas en el tiempo que se deben ejecuta
 
 </dt> <dd>
 
-Indica un proceso que tiene la prioridad más alta posible. Los subprocesos de un proceso de clase de prioridad en tiempo real adelantan los subprocesos de todos los demás procesos, incluidos los subprocesos de alta prioridad y los procesos del sistema operativo que realizan tareas importantes. Por ejemplo, un proceso en tiempo real que se ejecuta durante más de un intervalo muy breve puede hacer que las memorias caché de disco no se vacíen o que un mouse deje de responder.
+Indica un proceso que tiene la prioridad más alta posible. Los subprocesos de un proceso de clase de prioridad en tiempo real adelantan los subprocesos de todos los demás procesos, incluidos los subprocesos de alta prioridad y los procesos del sistema operativo que realizan tareas importantes. Por ejemplo, un proceso en tiempo real que se ejecuta durante más de un intervalo muy breve puede hacer que las cachés de disco no se vaciarán o que un mouse deje de responder.
 
 </dd> <dt>
 
 <span id="Below_Normal"></span><span id="below_normal"></span><span id="BELOW_NORMAL"></span>
 
-<span id="Below_Normal"></span><span id="below_normal"></span><span id="BELOW_NORMAL"></span>**A continuación, \_ Normal** (16384)
+<span id="Below_Normal"></span><span id="below_normal"></span><span id="BELOW_NORMAL"></span>**A continuación se muestra \_ Normal** (16384)
 
 
 </dt> <dd>
@@ -472,7 +472,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| lpTitle")
 </dt> </dl>
 
-Texto que se muestra en la barra de título cuando se crea una nueva ventana de consola; se usa para los procesos de consola. Si **es NULL,** el nombre del archivo ejecutable se usa como título de la ventana. Esta propiedad debe ser **NULL para** los procesos de gui o consola que no crean una nueva ventana de consola.
+Texto que se muestra en la barra de título cuando se crea una nueva ventana de consola; se usa para los procesos de consola. Si **es NULL,** el nombre del archivo ejecutable se usa como título de la ventana. Esta propiedad debe ser **NULL para los** procesos de la gui o la consola que no crean una nueva ventana de consola.
 
 </dd> <dt>
 
@@ -488,7 +488,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| lpDesktop")
 </dt> </dl>
 
-El nombre del escritorio o el nombre de la estación de escritorio y de la ventana para el proceso. Una barra diagonal inversa en la cadena indica que la cadena incluye nombres de estación de escritorio y de ventana. Si **WinstationDesktop** es **NULL,** el nuevo proceso hereda la estación de escritorio y ventana de su proceso primario. Si **WinstationDesktop** es una cadena vacía, el proceso no hereda la estación de escritorio y ventana de su proceso primario. El sistema determina si se debe crear una nueva estación de escritorio y ventana. Una estación de ventana es un objeto seguro que contiene un Portapapeles, un conjunto de átomos globales y un grupo de objetos de escritorio. La estación de ventana interactiva que se asigna a la sesión de inicio de sesión del usuario interactivo también contiene el teclado, el mouse y el dispositivo para mostrar. Un escritorio es un objeto seguro contenido dentro de una estación de ventana. Un escritorio tiene una superficie de presentación lógica y contiene ventanas, menús y enlaces. Una estación de ventana puede tener varios escritorios. Solo los escritorios de la estación de ventana interactiva pueden ser visibles y recibir la entrada del usuario.
+El nombre del escritorio o el nombre de la estación de escritorio y ventana para el proceso. Una barra diagonal inversa en la cadena indica que la cadena incluye nombres de estación de escritorio y de ventana. Si **WinstationDesktop** es **NULL,** el nuevo proceso hereda la estación de escritorio y ventana de su proceso primario. Si **WinstationDesktop** es una cadena vacía, el proceso no hereda la estación de escritorio y ventana de su proceso primario. El sistema determina si se debe crear una nueva estación de escritorio y ventana. Una estación de ventana es un objeto seguro que contiene un Portapapeles, un conjunto de átomos globales y un grupo de objetos de escritorio. La estación de ventana interactiva que se asigna a la sesión de inicio de sesión del usuario interactivo también contiene el teclado, el mouse y el dispositivo para mostrar. Un escritorio es un objeto seguro contenido dentro de una estación de ventana. Un escritorio tiene una superficie de presentación lógica y contiene ventanas, menús y enlaces. Una estación de ventana puede tener varios escritorios. Solo los escritorios de la estación de ventana interactiva pueden ser visibles y recibir la entrada del usuario.
 
 </dd> <dt>
 
@@ -507,7 +507,7 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API
 Desplazamiento X de la esquina superior izquierda de una ventana si se crea una nueva ventana, en píxeles. Los desplazamientos se encuentran en la esquina superior izquierda de la pantalla. Para los procesos de GUI, la posición especificada se usa la primera vez que el nuevo proceso llama a [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) para crear una ventana superpuesta si el parámetro *X* de **CreateWindow** es **CW \_ USEDEFAULT.**
 
 > \[! Nota X\]  
-> e **Y** no se pueden especificar de forma independiente.
+> y **Y** no se pueden especificar de forma independiente.
 
  
 
@@ -525,7 +525,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| XCountChars")
 </dt> </dl>
 
-Ancho del búfer de pantalla en columnas de caracteres. Esta propiedad se usa para los procesos que crean una ventana de consola y se omite en los procesos de GUI.
+Ancho del búfer de pantalla en columnas de caracteres. Esta propiedad se usa para los procesos que crean una ventana de consola y se omite en los procesos de gui.
 
 > [!Note]  
 > **XCountChars** y **YCountChars** no se pueden especificar de forma independiente.
@@ -564,13 +564,13 @@ Tipo de datos: **uint32**
 Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| dwY")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Proceso win32API y estructuras de subproceso \| \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| dwY")
 </dt> </dl>
 
 Desplazamiento en píxeles de la esquina superior izquierda de una ventana si se crea una nueva ventana. Los desplazamientos se encuentran en la esquina superior izquierda de la pantalla. Para los procesos de GUI, la posición especificada se usa la primera vez que el nuevo proceso llama a [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) para crear una ventana superpuesta si el parámetro *y* de **CreateWindow** es **CW \_ USEDEFAULT.**
 
 > \[! Nota X\]  
-> e **Y** no se pueden especificar de forma independiente.
+> y **Y** no se pueden especificar de forma independiente.
 
  
 
@@ -609,7 +609,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| dwYSize")
 </dt> </dl>
 
-Alto de píxeles de una ventana si se crea una nueva ventana. Para los procesos de GUI, solo se usa la primera vez que el nuevo proceso llama a [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) para crear una ventana superpuesta si el parámetro *nWidth* de **CreateWindow** es **CW \_ USEDEFAULT**.
+Alto de píxel de una ventana si se crea una nueva ventana. Para los procesos de GUI, solo se usa la primera vez que el nuevo proceso llama a [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) para crear una ventana superpuesta si el parámetro *nWidth* de **CreateWindow** es **CW \_ USEDEFAULT.**
 
 > [!Note]  
 > **XSize** y **YSize** no se pueden especificar de forma independiente.
@@ -618,23 +618,23 @@ Alto de píxeles de una ventana si se crea una nueva ventana. Para los procesos 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta clase se deriva de [**Win32 \_ MethodParameterClass**](win32-methodparameterclass.md).
+Esta clase se deriva de [**\_ MethodParameterClass de Win32.**](win32-methodparameterclass.md)
 
 Información general
 
-El [**método Win32 \_ Process**](win32-process.md) [**Create**](create-method-in-class-win32-process.md) permite configurar opciones de inicio para cualquier proceso nuevo que se ejecute en un equipo. Por ejemplo, puede configurar un proceso para que se inicie en una ventana "oculta", lo que impide que un usuario lo vea y, posiblemente, lo interrumpa. Si el proceso se ejecuta en una ventana de comandos, puede configurar el tamaño, el título y los colores de primer plano y de fondo de la ventana.
+El [**método Win32 \_ Process**](win32-process.md) [**Create**](create-method-in-class-win32-process.md) permite configurar opciones de inicio para cualquier proceso nuevo que se ejecute en un equipo. Por ejemplo, puede configurar un proceso para que se inicie en una ventana "oculta", lo que impide que un usuario lo vea y, posiblemente, lo interrumpa. Si el proceso se ejecuta en una ventana de comandos, puede configurar el tamaño, el título y los colores de primer plano y fondo de la ventana.
 
-Las opciones de inicio se configuran mediante **la clase \_ ProcessStartup de Win32.** **Win32 \_ ProcessStartup es** una clase de tipo de método; La clase Method Type existe únicamente para pasar información a un método. En este caso, todas las propiedades de una instancia de **\_ ProcessStartup de Win32** se pasan a una instancia de [**Proceso de Win32. \_**](win32-process.md)
+Las opciones de inicio se configuran mediante la **clase \_ ProcessStartup de Win32.** **Win32 \_ ProcessStartup es** una clase de tipo de método; La clase Method Type solo existe para pasar información a un método. En este caso, todas las propiedades de una instancia de **\_ ProcessStartup de Win32** se pasan a una instancia de [**Proceso de Win32. \_**](win32-process.md)
 
 **Uso de \_ ProcessStartup de Win32**
 
 1.  Cree una instancia de **\_ ProcessStartup de Win32.**
 2.  Configure las propiedades de la nueva instancia.
-3.  Incluya la instancia como parte del [**método Win32 \_ Process**](win32-process.md) Create.
+3.  Incluya la instancia como parte del método Process Create de [**Win32. \_**](win32-process.md)
 
-Por ejemplo, si ha creado una instancia de **\_ ProcessStartup de Win32** denominada objConfig, pasará el nombre del objeto en el método Create de la siguiente manera:
+Por ejemplo, si ha creado una instancia de **\_ ProcessStartup de Win32** denominada objConfig, debe pasar el nombre del objeto en el método Create como se muestra a continuación:
 
 `errReturn = objProcess.Create("Database.exe", null, objConfig, intProcessID)`
 
@@ -656,7 +656,7 @@ errReturn = objProcess.Create("Notepad.exe", null, objConfig, intProcessID)
 
 
 
-El siguiente VBScript crea un proceso de mayor prioridad.
+El siguiente VBScript crea un proceso de prioridad más alta.
 
 
 ```VB
@@ -672,7 +672,7 @@ objProcess.Create "Database.exe", Null, objConfig, intProcessID
 
 
 
-En el ejemplo de código de VBScript siguiente se crea Bloc de notas proceso en el equipo local. **Win32 \_ ProcessStartup** se usa para configurar los valores del proceso.
+En el siguiente ejemplo de código vbscript se crea Bloc de notas proceso en el equipo local. **Win32 \_ ProcessStartup** se usa para configurar los valores del proceso.
 
 
 ```VB
@@ -707,7 +707,7 @@ End If
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

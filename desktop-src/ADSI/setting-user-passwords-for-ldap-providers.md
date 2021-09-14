@@ -7,18 +7,18 @@ keywords:
 - PROVEEDOR LDAP ADSI, objeto de usuario, establecimiento de contraseñas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efbbd0439a011575fbc9278dbe506d46db2210ce03d807ea74097499cb764b43
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5488146de271ac1108a904cd85163fad9d7dd205
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118690530"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172133"
 ---
 # <a name="setting-and-changing-user-passwords-with-the-ldap-provider"></a>Establecimiento y cambio de contraseñas de usuario con el proveedor LDAP
 
 Para establecer una contraseña de usuario, use [**el método IADsUser.SetPassword.**](/windows/desktop/api/Iads/nf-iads-iadsuser-setpassword)
 
-El proveedor LDAP para Active Directory utiliza uno de los tres procesos para establecer la contraseña (los directorios LDAP de terceros, como i Kerberos, no usan este proceso de autenticación de contraseña). El método puede variar según la configuración de red. Los métodos de establecer contraseña se producen en el orden siguiente:
+El proveedor LDAP para Active Directory utiliza uno de los tres procesos para establecer la contraseña (los directorios LDAP de terceros, como iFactor, no usan este proceso de autenticación de contraseña). El método puede variar según la configuración de red. Los métodos de establecer contraseña se producen en el orden siguiente:
 
 -   En primer lugar, el proveedor LDAP intenta usar LDAP a través de una conexión SSL de 128 bits. Para que LDAP SSL funcione correctamente, el servidor LDAP debe tener instalado el certificado de autenticación de servidor adecuado y los clientes que ejecutan el código ADSI deben confiar en la autoridad que emitió esos certificados. Tanto el servidor como el cliente deben admitir el cifrado de 128 bits.
 -   En segundo lugar, si la conexión SSL no se realiza correctamente, el proveedor LDAP intenta usar Kerberos. En Windows 2000, es posible que Kerberos no admita la autenticación entre bosques. Las mejoras posteriores a Kerberos admiten la autenticación entre bosques.

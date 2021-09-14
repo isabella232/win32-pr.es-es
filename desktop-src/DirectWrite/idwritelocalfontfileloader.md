@@ -15,18 +15,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa073b0d39e5dfbcdb90f2cd67db5f09a04e21c3e36790d4d841e5719490c753
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c65f537dc2a4a96161a11d85ae0a4e1869a331e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120048695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169854"
 ---
 # <a name="idwritelocalfontfileloader-interface"></a>Interfaz IDWriteLocalFontFileLoader
 
 Una implementación integrada de la interfaz [**IDWriteFontFileLoader,**](/windows/win32/api/dwrite/nn-dwrite-idwritefontfileloader) que funciona en archivos de fuentes locales y expone información del archivo de fuente local de la clave de referencia del archivo de fuente. Las referencias de archivo de fuente [**creadas con CreateFontFileReference**](/windows/win32/api/dwrite/nf-dwrite-idwritefactory-createfontfilereference) usan este cargador de archivos de fuente.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IDWriteLocalFontFileLoader** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IDWriteLocalFontFileLoader** también tiene estos tipos de miembros:
 

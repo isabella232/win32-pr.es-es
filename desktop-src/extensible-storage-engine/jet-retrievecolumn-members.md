@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103877
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 84a778eb86c09da86f8c524daa321df9e8ca104122af6ecc13de88c2a824b79d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a5eda1d671cfe6225a8419314b2f53558294754
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118979485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962888"
 ---
 # <a name="jet_retrievecolumn-members"></a>JET_RETRIEVECOLUMN miembros
 
@@ -21,7 +21,7 @@ Incluir miembros heredados
 
 Contiene parámetros de entrada y salida [para JetRetrieveColumns(JET_SESID, JET_TABLEID, \[ \] , Int32).](./api.jetretrievecolumns-method.md) Los campos de la estructura describen qué valor de columna se va a recuperar, cómo recuperarlo y dónde guardar los resultados.
 
-El [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md) expone los miembros siguientes.
+El [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md) muestra los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -64,17 +64,17 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335228(v=exchg.10).md">cbData</a></td>
-<td>Obtiene o establece el tamaño del búfer <a href="dn351040(v=exchg.10).md">pvData,</a> en bytes. La operación de recuperación de columnas no almacenará más datos en pvData que cbData.</td>
+<td>Obtiene o establece el tamaño del búfer <a href="dn351040(v=exchg.10).md">pvData,</a> en bytes. La operación de recuperación de columna no almacenará más datos en pvData que cbData.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335230(v=exchg.10).md">columnid</a></td>
-<td>Obtiene o establece el identificador de columna de la columna que se va a recuperar.</td>
+<td>Obtiene o establece el identificador de columna para la columna que se va a recuperar.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335229(v=exchg.10).md">columnidNextTagged</a></td>
-<td>Obtiene el columnid de la columna etiquetada, con varios valores o dispersa cuando se recuperan todas las columnas etiquetadas pasando 0 como columnid.</td>
+<td>Obtiene el columnid de la columna etiquetada, multivalor o dispersa cuando se recuperan todas las columnas etiquetadas pasando 0 como columnid.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -94,12 +94,12 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335234(v=exchg.10).md">ibLongValue</a></td>
-<td>Obtiene o establece el desplazamiento en el primer byte que se va a recuperar de una columna de tipo <a href="hh577895(v=exchg.10).md">LongBinary</a> <a href="hh577895(v=exchg.10).md">o LongText.</a></td>
+<td>Obtiene o establece el desplazamiento en el primer byte que se va a recuperar de una columna de tipo <a href="hh577895(v=exchg.10).md">LongBinary</a> <a href="hh577895(v=exchg.10).md">o LongText</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351039(v=exchg.10).md">itagSequence</a></td>
-<td>Obtiene o establece el número de secuencia de los valores contenidos en una columna con varios valores. Si la itagSequence es 0, se devuelve el número de instancias de una columna con varios valores en lugar de cualquier dato de columna.</td>
+<td>Obtiene o establece el número de secuencia de los valores contenidos en una columna con varios valores. Si itagSequence es 0, se devuelve el número de instancias de una columna con varios valores en lugar de cualquier dato de columna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>

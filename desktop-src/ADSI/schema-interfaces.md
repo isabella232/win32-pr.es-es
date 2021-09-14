@@ -7,12 +7,12 @@ keywords:
 - interfaces de esquema ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dfa22a32a4d93c36a7419d48ea6127c2345ffdea62686147d1ba08c41ea7992
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f414fdea2418fb92a0a3c8c9e8bf88eb6d7f00b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119770564"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172174"
 ---
 # <a name="schema-interfaces"></a>Interfaces de esquema
 

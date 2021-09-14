@@ -25,23 +25,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b84ec8a1f9a00b29e21706dd7fabe978740cb756675952b061d406dad8e233c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45f9fd2feabdcd1f9e650e7e7a913a394e8ef67d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020763"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965484"
 ---
 # <a name="cim_videobiosfeature-class"></a>Cim \_ VideoBIOSFeature (clase)
 
 La **clase \_ CIM VideoBIOSFeature** representa las funciones del software de bajo nivel que se usa para configurar y acceder al controlador de vídeo y la pantalla de un sistema informático.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ class CIM_VideoBIOSFeature : CIM_SoftwareFeature
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM VideoBIOSFeature** tiene estos tipos de miembros:
 
@@ -108,7 +108,7 @@ Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("In
 Cadenas de forma libre que proporcionan descripciones detalladas de las características del BIOS de vídeo indicadas en la **matriz Características.**
 
 > [!Note]  
-> Cada entrada de esta matriz está relacionada con la entrada de la matriz **Characteristics** que se encuentra en el mismo índice.
+> Cada entrada de esta matriz está relacionada con la entrada de la **matriz Characteristics** que se encuentra en el mismo índice.
 
  
 
@@ -126,7 +126,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Video BIOS Characteristic \| 001.3"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ VideoBIOSFeature**.**CharacteristicDescriptions**")
 </dt> </dl>
 
-Características compatibles con el BIOS de vídeo. Por ejemplo, se podría indicar compatibilidad con la administración de energía de VESA o el sombreado del BIOS de vídeo. El valor 3 ("Desconocido") no es válido en el esquema CIM, ya que representa que no se admiten características de BIOS en DMI. En ese caso, no se debe crear una instancia del objeto.
+Características compatibles con el BIOS de vídeo. Por ejemplo, se podría indicar la compatibilidad con la administración de energía de VESA o el sombreado del BIOS de vídeo. El valor 3 ("Desconocido") no es válido en el esquema CIM, ya que representa que no se admiten características de BIOS en DMI. En ese caso, no se debe crear una instancia del objeto.
 
 <dt>
 
@@ -181,14 +181,14 @@ Características compatibles con el BIOS de vídeo. Por ejemplo, se podría indi
 
 <span id="Video_BIOS_Shadowing_Allowed"></span><span id="video_bios_shadowing_allowed"></span><span id="VIDEO_BIOS_SHADOWING_ALLOWED"></span>
 
-**Se permite el sombreado de BIOS de** vídeo (8)
+**Se permite el sombreado del BIOS de** vídeo (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Video_BIOS_Upgradeable"></span><span id="video_bios_upgradeable"></span><span id="VIDEO_BIOS_UPGRADEABLE"></span>
 
-**Bios actualizable de vídeo** (9)
+**Video BIOS Upgradeable** (9)
 
 
 </dt> <dd></dd> </dl>
@@ -222,10 +222,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**IdentifyingNumber**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.4")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Product**](cim-product.md).**IdentifyingNumber**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.4")
 </dt> </dl>
 
-Identificación del producto, como un número de serie en software o un número de dado en un chip de hardware. Esta propiedad se hereda de [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
+Identificación del producto, como un número de serie en software o un número de dado en un chip de hardware. Esta propiedad se hereda de [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 
 </dd> <dt>
 
@@ -274,12 +274,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**Name**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.2")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Product**](cim-product.md).**Name**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.2")
 </dt> </dl>
 
 Nombre de producto que se usa con frecuencia.
 
-Esta propiedad se hereda de [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
+Esta propiedad se hereda de [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 
 </dd> <dt>
 
@@ -324,28 +324,28 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -396,12 +396,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**Vendor**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.1")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Product**](cim-product.md).**Vendor**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.1")
 </dt> </dl>
 
-Nombre del proveedor del producto, que corresponde a la propiedad **Vendor** en el objeto product de la solución DMTF Exchange Standard (SES).
+Nombre del proveedor del producto, que corresponde a la propiedad **Vendor** en el objeto de producto de dmtf solution Exchange Standard (SES).
 
-Esta propiedad se hereda de [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
+Esta propiedad se hereda de [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 
 </dd> <dt>
 
@@ -423,7 +423,7 @@ Esta propiedad se hereda de [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase CIM \_ VideoBIOSFeature** se deriva de [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 
@@ -445,7 +445,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

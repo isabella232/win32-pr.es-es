@@ -4,12 +4,12 @@ ms.assetid: 53b080ba-d8cf-48a3-a895-2c14d54f7e21
 title: Macros de validación de puntero
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fc53a48e8981c46fc0e1a75a06ed855a03322a06feed6765810ef4377d4fbe2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dadf5fd2df1e4f7568d899ff93d4a401404830f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119583635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171978"
 ---
 # <a name="pointer-validation-macros"></a>Macros de validación de puntero
 

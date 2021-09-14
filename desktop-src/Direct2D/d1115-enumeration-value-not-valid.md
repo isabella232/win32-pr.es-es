@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11800acaae350b5289b339738448300c91db32a16c0d3f3d9224f08b6079fba2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: edcfe70c67e61a3b8bfc435adfdaa017a1c62b22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119758125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164097"
 ---
 # <a name="d1115-enumeration-value-not-valid"></a>D1115: El valor de enumeración no es válido
 
-El parámetro \[ *con* \] valor de \[ *valor* para \] la *interfaz*::*el método* no es un valor de enumeración válido.
+El parámetro \[ *con* \] valor para \[ *el* método \] *interface*:: no es un valor de enumeración válido.
 
 ## <a name="placeholders"></a>Marcadores de posición
 
@@ -44,7 +44,7 @@ Valor de enumeración no válido.
 <span id="interface"></span><span id="INTERFACE"></span>*Interfaz*
 </dt> <dd>
 
-Nombre de la interfaz a la que pertenece *el método.*
+Nombre de la interfaz a la que pertenece *el* método.
 
 </dd> <dt>
 

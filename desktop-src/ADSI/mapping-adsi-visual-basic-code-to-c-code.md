@@ -5,12 +5,12 @@ ms.assetid: 6316f504-265e-44d4-ba24-e6289065981b
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a924f403dcbdbe89b1b0bbf846c95223b401a04d1925ce9362a5300faf828fe3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c64a022569a95f38ec1da7a1cb7acf533eb04ca6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118179212"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172178"
 ---
 # <a name="mapping-adsi-visual-basic-code-to-c-code"></a>Asignación de código Visual Basic ADSI a código de C++
 

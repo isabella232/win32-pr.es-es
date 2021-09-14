@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b08fb6d3c02affbe9c288004e9402808dd9c30318c16df7738f128029f84a3f2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 83f62d84af193be99850f1a82b720a2983ca77c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119760085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174485"
 ---
 # <a name="setdeadgwdetect-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetDeadGWDetect de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetDeadGWDetect** se usa para habilitar la detección de puertas de enlace no detectadas.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -312,7 +312,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de los límites.
+Parámetro fuera de límites.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -379,7 +379,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se pueden liberar o renovar**
+**No todas las concesiones DHCP se podrían liberar o renovar**
 </dt> <dd>
 
 98
@@ -404,19 +404,19 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Con esta característica habilitada, TCP pide a IP que cambie a una puerta de enlace de copia de seguridad si retransmite un segmento varias veces sin recibir una respuesta.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo [Enable Dead Gateway Detection for All Network Adapters](https://Gallery.TechNet.Microsoft.Com/4a24b080-1a8b-4085-9419-58d096ef8437) VBScript (Habilitar la detección de puerta de enlace fallada para todos los adaptadores de red vbScript) de la Galería de TechNet usa **SetDeadGWDetect** para configurar todos los adaptadores de red de un equipo para detectar automáticamente puertas de enlace no activas.
+El [ejemplo Enable Dead Gateway Detection for All Network Adapters](https://Gallery.TechNet.Microsoft.Com/4a24b080-1a8b-4085-9419-58d096ef8437) VBScript (Habilitar la detección de puerta de enlace fallada para todos los adaptadores de red VBScript) de la Galería de TechNet usa **SetDeadGWDetect** para configurar todos los adaptadores de red de un equipo para detectar automáticamente puertas de enlace falladas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

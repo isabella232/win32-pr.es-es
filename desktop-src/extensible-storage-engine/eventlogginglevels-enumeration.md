@@ -36,16 +36,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d910e1417ea7c05e86f7e9d6c2a69c8c0e47c212a7956f1d309e895576d4ee96
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ec0881a7d217cfdcbc3680eaa3054dbb4fb62a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118768038"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963028"
 ---
 # <a name="eventlogginglevels-enumeration"></a>EventLoggingLevels (enumeración)
 
-Opciones de EventLoggingLevel.
+Opciones para EventLoggingLevel.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -63,7 +63,7 @@ Dim instance As EventLoggingLevels
 public enum EventLoggingLevels
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -101,7 +101,7 @@ public enum EventLoggingLevels
 </tr>
 <tr class="even">
 <td></td>
-<td>Máx.</td>
+<td>Max</td>
 <td>Todos los eventos.</td>
 </tr>
 </tbody>

@@ -4,12 +4,12 @@ ms.assetid: a86626c1-7f90-4924-bfdd-384729bd0cc5
 title: Funciones estándar de C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f0e576dd8ad506d3d0f3379c161526dd7b9330542ca1cc575c95e3eda8e7dd4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f6247b3707f96908ef16d887462ba06573fd8dd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120130165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171901"
 ---
 # <a name="standard-c-functions"></a>Funciones estándar de C
 

@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 199b60d221c22b8d52ac88a251c366583cad21c6747578589706a2addeceb85b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dab7b5b8dc886f60f508c49f67e5dd3167e0cf5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119475245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174638"
 ---
 # <a name="jet_enumcolumn-class"></a>JET_ENUMCOLUMN clase
 
-Enumera los valores de columna de un registro mediante la función JetEnumerateColumns. JetEnumerateColumns devuelve una matriz de JET_ENUMCOLUMNVALUE estructuras. La matriz se devuelve en la memoria que se asignó mediante la devolución de llamada que se proporcionó a esa función.
+Enumera los valores de columna de un registro mediante la función JetEnumerateColumns. JetEnumerateColumns devuelve una matriz de JET_ENUMCOLUMNVALUE estructuras. La matriz se devuelve en memoria que se asignó mediante la devolución de llamada que se proporcionó a esa función.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -43,7 +43,7 @@ Enumera los valores de columna de un registro mediante la función JetEnumerateC
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

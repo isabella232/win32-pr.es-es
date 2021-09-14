@@ -3,7 +3,7 @@ title: MPTHREAT_TYPE enumeración (MpClient.h)
 description: Posibles tipos de amenazas.
 ms.assetid: 56061F12-AA89-4203-BED4-99613E24002A
 keywords:
-- MPTHREAT_TYPE enumeración de características heredadas Windows entorno
+- MPTHREAT_TYPE enumeración de características de entorno Windows heredado
 - PMPTHREAT_TYPE puntero de enumeración Heredados Windows Environment Features
 topic_type:
 - apiref
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b858501603b67451db9b565609d0c263040d2186cf44d91646e6df6ce3871ea1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8ed823b100c91f259252d7cad71e554099caf6a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118247146"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168293"
 ---
 # <a name="mpthreat_type-enumeration"></a>Enumeración MPTHREAT \_ TYPE
 
 Posibles tipos de amenazas.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -92,11 +92,11 @@ Valor máximo posible.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

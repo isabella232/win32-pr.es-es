@@ -4,12 +4,12 @@ ms.assetid: 0b1a6daa-55e1-4a74-be01-e39473e3c0cc
 title: Particiones y Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 144dde53c6247dcf09dbf9540ce535afb12725822b8e9895f7eb33b569135089
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b08e7b70c4b474e7b7bd949f530fb73973d39c6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119462145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888937"
 ---
 # <a name="partitions-and-active-directory"></a>Particiones y Active Directory
 
@@ -43,7 +43,7 @@ Los usuarios y las unidades de unidades de disco se pueden asignar a conjuntos d
 -   Ayuda a COM+ a determinar la partición en la que se encuentra una aplicación
 -   Establece el derecho de un usuario a acceder a una aplicación determinada.
 
-Para asociar particiones con conjuntos de particiones dentro de Active Directory y para asignar usuarios y utiles a esos conjuntos de particiones, los administradores usan las herramientas administrativas Usuarios y equipos de Active Directory y Servicios de componentes. Cuando se crea una partición en Active Directory, un administrador debe configurar localmente esa partición en el equipo donde se va a instalar la aplicación COM+ correspondiente. Esta configuración local de particiones creadas Active Directory se realiza a través de la herramienta administrativa Servicios de componentes.
+Para asociar particiones con conjuntos de particiones dentro de Active Directory y para asignar usuarios y utiles a esos conjuntos de particiones, los administradores usan las herramientas administrativas Usuarios y equipos de Active Directory y Servicios de componentes. Cuando se crea una partición en Active Directory, un administrador debe configurar localmente esa partición en el equipo donde se va a instalar la aplicación COM+ correspondiente. Esta configuración local de particiones creadas en Active Directory se realiza a través de la herramienta administrativa Servicios de componentes.
 
 Si una identidad de usuario de dominio no está asignada a un conjunto de particiones, la unidad organizativa del usuario concede al usuario acceso, que se asigna a la partición. Si la unidad organizativa del usuario no está asignada a un conjunto de particiones, pero la siguiente unidad organizativa más alta de la jerarquía está asignada a ese conjunto de particiones, el usuario puede acceder a la partición.
 

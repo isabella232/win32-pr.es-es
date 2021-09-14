@@ -1,21 +1,21 @@
 ---
-title: Método Get
-description: El método Get de los IAD se usa para recuperar atributos con nombre individuales de un objeto de directorio.
+title: El método Get
+description: El método Get de IADs se usa para recuperar atributos con nombre individuales de un objeto de directorio.
 ms.assetid: e3754663-fe31-46f3-9dc1-a9c96ed53fde
 ms.tgt_platform: multiple
 keywords:
-- Obtener ADSI mediante IAD Get
-- ADSI ADSI , mediante, mediante el método Get de IADs
+- Obtener ADSI mediante los IAD Get
+- ADSI ADSI , using,using the IADs Get (Método Get de IADs)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 386c3fe6e50a9f7357ec161b1e6bd8731cf8d0a74eed4b4a765adc3315c1045d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11590fda2cfd207315453323fa3d0999f298103d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117838635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172185"
 ---
-# <a name="the-get-method"></a>Método Get
+# <a name="the-get-method"></a>El método Get
 
 El [**método IADs::Get**](/windows/desktop/api/Iads/nf-iads-iads-get) se usa para recuperar atributos con nombre individuales de un objeto de directorio.
 
@@ -43,7 +43,7 @@ Cleanup:
 
 
 
-En los lenguajes de Automation, también se puede acceder directamente a los atributos con nombre mediante la notación de puntos. Por ejemplo, **object. Get("distinguishedName") es** idéntico a **object.distinguishedName.**
+En los lenguajes de Automation, también se puede acceder a los atributos con nombre directamente mediante la notación de puntos. Por ejemplo, **object. Get("distinguishedName") es** idéntico a **object.distinguishedName.**
 
 El ejemplo de código siguiente es idéntico al ejemplo anterior, salvo que se tiene acceso al atributo **distinguishedName** mediante la notación de puntos.
 

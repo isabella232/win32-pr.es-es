@@ -3,7 +3,7 @@ title: CBN_EDITUPDATE de notificación (Winuser.h)
 description: Se envía cuando la parte del control de edición de un cuadro combinado está a punto de mostrar texto modificado.
 ms.assetid: cae9cbf5-d420-4dfb-a46f-8c1a77de6ecf
 keywords:
-- CBN_EDITUPDATE código de notificación Windows controles
+- CBN_EDITUPDATE de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eeaf787fd241d9dd87457273bd76c07eebe12fa99f2635643b4a4eaa8eaf4952
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ef56b97bf8f4c4aebb4a11383be1b5a1941167b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119314735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173886"
 ---
 # <a name="cbn_editupdate-notification-code"></a>Código de notificación EDITUPDATE de CBN \_
 
-Se envía cuando la parte del control de edición de un cuadro combinado está a punto de mostrar texto modificado. Este código de notificación se envía después de que el control haya dado formato al texto, pero antes de que muestre el texto. La ventana primaria del cuadro combinado recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
+Se envía cuando la parte del control de edición de un cuadro combinado está a punto de mostrar texto modificado. Este código de notificación se envía después de que el control haya dado formato al texto, pero antes de mostrar el texto. La ventana primaria del cuadro combinado recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_EDITUPDATE
 *wParam* 
 </dt> <dd>
 
-Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del cuadro combinado. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
+LOWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del cuadro combinado. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Identificador del cuadro combinado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el cuadro combinado tiene el estilo [**\_ DROPDOWNLIST de CBS,**](combo-box-styles.md) este código de notificación no se envía.
+Si el cuadro combinado tiene el estilo [**\_ DROPDOWNLIST de CBS,**](combo-box-styles.md) no se envía este código de notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ Si el cuadro combinado tiene el estilo [**\_ DROPDOWNLIST de CBS,**](combo-box-s
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

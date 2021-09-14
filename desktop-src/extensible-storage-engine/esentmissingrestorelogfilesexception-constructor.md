@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dd02f59a528260f4c67459a56327297dc7fb9a4e2803a9abcd405dbfbb0682f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f7aae7942fb70c2e1d59c265292d30ca96b91d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119734171"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964523"
 ---
 # <a name="esentmissingrestorelogfilesexception-constructor"></a>Constructor EsentMissingRestoreLogFilesException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentMissingRestoreLogFilesException()
 public EsentMissingRestoreLogFilesException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

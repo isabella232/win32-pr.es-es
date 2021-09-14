@@ -1,11 +1,11 @@
 ---
-title: RegisteredTask.LastRunTime, propiedad
-description: Para el scripting, obtiene la hora de la última ejecución de la tarea registrada.
+title: Propiedad RegisteredTask.LastRunTime
+description: Para el scripting, obtiene la hora en que se ha ejecutado por última vez la tarea registrada.
 ms.assetid: 8fb991d1-4ecc-44cb-9719-16c4cec74782
 keywords:
 - Propiedad LastRunTime Programador de tareas
 - Propiedad LastRunTime Programador de tareas , objeto RegisteredTask
-- Objeto RegisteredTask Programador de tareas propiedad , LastRunTime
+- Objeto RegisteredTask Programador de tareas , propiedad LastRunTime
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b5c1bef75ce9854f98214e57a1bf19bd4994a5d5a3c6143df59a51e299fd861
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f69f9085f68061740f786fecd85c35554ca0b0d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119002433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172994"
 ---
-# <a name="registeredtasklastruntime-property"></a>RegisteredTask.LastRunTime, propiedad
+# <a name="registeredtasklastruntime-property"></a>Propiedad RegisteredTask.LastRunTime
 
-Para el scripting, obtiene la hora de la última ejecución de la tarea registrada.
+Para el scripting, obtiene la hora en que se ha ejecutado por última vez la tarea registrada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB

@@ -1,15 +1,15 @@
 ---
-description: Para NLS, ordenación (también conocida como &\# 0034;intercalación&\# 0034;) es la organización de cadenas.
+description: Para NLS, ordenación (también conocida como &\# 0034;intercalación&\# 0034;). es la organización de cadenas.
 ms.assetid: 8ca3af60-1ddb-4bfb-8aa6-8db769b3982d
 title: Ordenación (internacionalización)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3dbedf872c953a45ca7064eccd4ba16019a857c35186261695e094be03cd054
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f49a5abb8371a00ad9ee63f929b4aaf4b18b11be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120130215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171929"
 ---
 # <a name="sorting"></a>Ordenación
 

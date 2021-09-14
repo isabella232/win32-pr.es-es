@@ -4,12 +4,12 @@ ms.assetid: e8d93310-388e-4a08-9bce-04c31c33a665
 title: Cuadro de diálogo MsiRMFilesInUse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04aa3167609693135e2d3196fef0495d5244fe44f1a6e7d95d11f999efe51a46
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72bba73cab51f4b3d8321b15001dbb72c638176b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012894"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169750"
 ---
 # <a name="msirmfilesinuse-dialog"></a>Cuadro de diálogo MsiRMFilesInUse
 

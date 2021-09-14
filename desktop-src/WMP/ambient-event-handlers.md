@@ -10,12 +10,12 @@ keywords:
 - events,ambient
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff72739ec1791b79d6113415f1219a1ddee578b4b5a690ffaaac62bf6b3dbcfe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0dc05cf90956464afbb030f3cd5dc4af194b0da2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119865095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890073"
 ---
 # <a name="ambient-event-handlers"></a>Controladores de eventos ambiente
 

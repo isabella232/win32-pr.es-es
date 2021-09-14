@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 88d4f7952497ca0afd970a979441f98864b2855ed3f36f3e556dc4241ed52769
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e8c954b710c3f35bca9685d461e478104dac9039
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965351"
 ---
 # <a name="imsrdpcameraredirconfigcollectionaddconfig-method"></a>IMsRdpCameraRedirConfigCollection::AddConfig (método)
 
@@ -44,7 +44,7 @@ Vínculo simbólico para el nuevo [objeto IMsRdpCameraRedirConfig.](imsrdpcamera
 
 *fRedirected* \[ En\]
 
-Especifica si la nueva cámara se redirige de forma predeterminada.
+Especifica si la nueva cámara se redirige o no de forma predeterminada.
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -59,7 +59,7 @@ Devuelve **S \_ OK si** se realiza correctamente.
 | Archivo DLL                  | MsTscAx.dll     |
 | IID                      | IID \_ IMsRdpCameraRedirConfigCollection se define como AE45252B-AAAB-4504-B681-649D6073A37A          |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

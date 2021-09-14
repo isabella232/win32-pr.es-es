@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXSHEvalDirectionalLight (D3dx9math.h): evalúa una luz direccional y devuelve datos de armónica esférica esférica (SH).'
+description: 'Función D3DXSHEvalDirectionalLight (D3dx9math.h): evalúa una luz direccional y devuelve datos esféricos (SH) esféricos.'
 ms.assetid: 6e2e9b02-13bb-4cef-ae9d-343fbf64e5d7
 title: Función D3DXSHEvalDirectionalLight (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4a726348c8c6049f0d3867af06aadfecbaaadc8fbf87e5bb30ae2abb8e996acf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 488682eca230c8da6cc5048aded4a7a1e7f71bfd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119495105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963739"
 ---
 # <a name="d3dxshevaldirectionallight-function-d3dx9mathh"></a>Función D3DXSHEvalDirectionalLight (D3dx9math.h)
 
-Evalúa una luz [direccional y](light-types.md) devuelve datos esféricos armónicos esféricos (SH).
+Evalúa una luz [direccional y](light-types.md) devuelve datos esféricos esféricos (SH).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ HRESULT D3DXSHEvalDirectionalLight(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero al vector de dirección del eje (x, y, z) en el que se evaluarán las funciones de base SH. Vea la sección Comentarios.
+Puntero al vector de dirección del eje del hemisferio (x, y, z) en el que se evalúan las funciones de base sh. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -125,15 +125,15 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El vector de salida se calcula de modo que si la relación de intensidad R/G/B es igual a 1, el resultado de la radiación de salida de un punto directamente debajo de la luz en un objeto difuso con un albedo de 1 sería 1,0. Esto calculará tres ejemplos espectrales; *se devolverá pROut,* mientras que se pueden devolver *pGOut* y *pBOut.*
+El vector de salida se calcula de modo que si la relación de intensidad R/G/B es igual a 1, el resultado de la salida de un punto directamente debajo de la luz en un objeto difuso con un albedo de 1 sería 1,0. Esto calculará tres ejemplos espectrales; *Se devolverá pROut,* mientras que se pueden devolver *pGOut* y *pBOut.*
 
-En la esfera con radio de unidad, como se muestra en la ilustración siguiente, la dirección [](coordinate-systems.md)se puede especificar simplemente con theta, el ángulo sobre el eje Z en la dirección de la derecha y phi, el ángulo de z.
+En la esfera con radio de unidad, como se muestra en la ilustración siguiente, la dirección [](coordinate-systems.md)se puede especificar simplemente con theta, el ángulo sobre el eje Z en la dirección derecha y el ángulo de la z.
 
 ![ilustración de una esfera con radio de unidad](images/spherical-coordinates.png)
 
-Las ecuaciones siguientes muestran la relación entre las coordenadas cartesianas (x, y, z) y esféricas (theta, phi) en la esfera de unidad. El ángulo de theta varía en el intervalo de 0 a 2 pi, mientras que el de phi varía de 0 a pi.
+Las ecuaciones siguientes muestran la relación entre las coordenadas cartesianas (x, y, z) y esféricas (theta, phi) en la esfera de unidad. El ángulo de theta varía en el intervalo de 0 a 2 pi, mientras que phi varía de 0 a pi.
 
 ![ecuaciones de la relación entre coordenadas cartesianas y esféricas](images/spherical-coordinates-equations.png)
 
@@ -148,14 +148,14 @@ Las ecuaciones siguientes muestran la relación entre las coordenadas cartesiana
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferencia de radiancia precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de radiancia precalutada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

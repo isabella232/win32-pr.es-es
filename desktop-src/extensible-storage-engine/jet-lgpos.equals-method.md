@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 872268f6ac83f8eb3e4fa89aee59a4278ee885897838fc8921a6befe0809b51a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ae9993f353b83fedcfd9b1b57e223ce81cdea54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119109308"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962956"
 ---
 # <a name="jet_lgposequals-method"></a>JET_LGPOS. Método Equals
 

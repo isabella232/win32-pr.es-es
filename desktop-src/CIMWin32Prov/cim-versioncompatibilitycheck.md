@@ -27,18 +27,18 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: d9410c9dcddc99a9bffcf5d2e6e5b867f38f6e5c
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122883296"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965487"
 ---
-# <a name="cim_versioncompatibilitycheck-class"></a>Cim \_ VersionCompatibilityCheck (clase)
+# <a name="cim_versioncompatibilitycheck-class"></a>\_Cim VersionCompatibilityCheck (clase)
 
 La **clase CIM \_ VersionCompatibilityCheck** especifica si está permitido crear el siguiente estado de un elemento de software.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -65,9 +65,9 @@ class CIM_VersionCompatibilityCheck : CIM_Check
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ CIM VersionCompatibilityCheck** tiene estos tipos de miembros:
+La **clase \_ VersionCompatibilityCheck de CIM** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
@@ -80,7 +80,7 @@ La **clase CIM \_ VersionCompatibilityCheck** tiene estos métodos.
 
 | Método                                                                 | Descripción                                                   |
 |:-----------------------------------------------------------------------|:--------------------------------------------------------------|
-| [**Invocar**](invoke-method-in-class-cim-versioncompatibilitycheck.md) | Realiza una acción determinada. Wmi no implementa.<br/> |
+| [**Invocar**](invoke-method-in-class-cim-versioncompatibilitycheck.md) | Realiza una acción determinada. No implementado por WMI.<br/> |
 
 
 
@@ -132,7 +132,7 @@ Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del asunto.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -150,7 +150,7 @@ Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/w
 
 Identificador que se usa junto con otras claves para identificar de forma única la comprobación.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -163,11 +163,11 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que el [**método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **TRUE**.
+Si **es TRUE,** se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **TRUE**.
 
-Si **es FALSE,** no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
+Si **es FALSE**, no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -182,7 +182,7 @@ Tipo de acceso: solo lectura
 
 Descripción de los objetos.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -195,12 +195,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre usado para identificar el elemento de software
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -226,12 +226,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Se trata de un identificador para este elemento de software.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -244,12 +244,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado del elemento de software de un elemento de software.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 <dt>
 
@@ -292,12 +292,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
 </dt> </dl>
 
 Sistema operativo de destino del elemento de software.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 <dt>
 
@@ -365,7 +365,7 @@ Att UNIX
 
 </dt> <dd>
 
-Apertura de MÁQUINAS VIRTUALES
+Abrir máquinas virtuales
 
 </dd> <dt>
 
@@ -832,7 +832,7 @@ Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
@@ -842,7 +842,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

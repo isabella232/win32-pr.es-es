@@ -4,12 +4,12 @@ ms.assetid: 926778a5-e941-4424-8bc0-b50c925fd08b
 title: Funcionamiento de IUnknown
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1523a8de5d9b99df60ebaff540d4bf9468799e3be1361a4be111f15a142bbea9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a7549ce892e9c0dd3c82f1229a2440f1b930190
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169914"
 ---
 # <a name="how-iunknown-works"></a>Funcionamiento de IUnknown
 
@@ -52,7 +52,7 @@ La agregación de componentes debe ser transparente para el autor de la llamada.
 
 Para admitir este comportamiento, el componente debe agregar un nivel de direccionamiento indirecto. Un *IUnknown* delegado delega el trabajo en el lugar adecuado: en el componente externo, si hay uno, o en la versión interna del componente. Un *IUnknown* no delegado realiza el trabajo, como se describe en la sección anterior.
 
-La versión de delegación es pública y mantiene el nombre **IUnknown.** El nombre de la versión no delegating se denomina [**INonDelegatingUnknown.**](inondelegatingunknown.md) Este nombre no forma parte de la especificación COM, porque no es una interfaz pública.
+La versión de delegación es pública y mantiene el nombre **IUnknown**. El nombre de la versión no delegating se denomina [**INonDelegatingUnknown.**](inondelegatingunknown.md) Este nombre no forma parte de la especificación COM, porque no es una interfaz pública.
 
 Cuando el cliente crea una instancia del componente, llama al **método IClassFactory::CreateInstance.** Un parámetro es un puntero a la interfaz **IUnknown** del componente de agregación o **NULL** si no se agrega la nueva instancia. El componente usa este parámetro para almacenar una variable miembro que indica qué **interfaz IUnknown** se va a usar, como se muestra en el ejemplo siguiente:
 

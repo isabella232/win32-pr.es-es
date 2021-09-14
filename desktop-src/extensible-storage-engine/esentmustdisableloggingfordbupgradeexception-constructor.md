@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: edbd3772b7bda87bcb81a9470d6e6a97f91f271917af5900a921386c1ed68256
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d14f2ab29e61b510feebbf4c320ef8a6424ca08c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118263783"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172458"
 ---
 # <a name="esentmustdisableloggingfordbupgradeexception-constructor"></a>Constructor EsentMustDisableLoggingForDbUpgradeException
 

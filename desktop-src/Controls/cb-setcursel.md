@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e154d5c75dd2e26a8015414cac783e610411ccd1bb63b0c3f85f6e3327f725c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5bd130204e6dc8bb4166c21bc9c4d52950182c5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118171566"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174173"
 ---
 # <a name="cb_setcursel-message"></a>Mensaje \_ DE CB SETCURSEL
 
@@ -32,7 +32,7 @@ Una aplicación envía un **mensaje \_ CB SETCURSEL** para seleccionar una caden
 *wParam* 
 </dt> <dd>
 
-Especifica el índice de base cero de la cadena que se selecciona. Si este parámetro es -1, se quita cualquier selección actual de la lista y se borra el control de edición.
+Especifica el índice de base cero de la cadena que se debe seleccionar. Si este parámetro es -1, se quita cualquier selección actual de la lista y se borra el control de edición.
 
 </dd> <dt>
 
@@ -45,17 +45,17 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el mensaje es correcto, el valor devuelto es el índice del elemento seleccionado. Si *wParam es* mayor que el número de elementos de la lista o *si wParam* es -1, el valor devuelto es CB ERR y la \_ selección se borra.
+Si el mensaje se realiza correctamente, el valor devuelto es el índice del elemento seleccionado. Si *wParam es* mayor que el número de elementos de la lista o *si wParam* es -1, el valor devuelto es CB ERR y la selección se \_ borra.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

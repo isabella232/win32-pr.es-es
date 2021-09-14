@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22ae9205e84e4f1c0b10e516b1f406f2d167f1bc5cc38417a31379d20e16fcac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 679b9f878dbd8f7f374b461ee548f9ce2c62e281
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118413955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173906"
 ---
 # <a name="cben_endedit-notification-code"></a>Código de notificación ENDEDIT de CBEN \_
 
@@ -43,7 +43,7 @@ CBEN_ENDEDIT
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura NMCBEENDEDIT**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbeendedita) que contiene información sobre cómo el usuario finalizó la operación de edición.
+Puntero a una estructura [**NMCBEENDEDIT**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbeendedita) que contiene información sobre cómo el usuario finalizó la operación de edición.
 
 </dd> </dl>
 
@@ -55,16 +55,16 @@ Puntero a una [**estructura NMCBEENDEDIT**](/windows/desktop/api/Commctrl/ns-com
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **CBEN \_ ENDEDITW** (Unicode) y **CBEN \_ ENDEDITA** (ANSI)<br/>                 |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

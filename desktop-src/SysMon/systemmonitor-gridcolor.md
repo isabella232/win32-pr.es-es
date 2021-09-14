@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2681b9c0e7d07a6bc7ba4fd6860d9295c660672815c6e9090780f16bb5d03103
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8054ba81dfb0db6be311933d0a7d006435694257
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118882411"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173090"
 ---
 # <a name="systemmonitorgridcolor-property"></a>Propiedad SystemMonitor.GridColor
 
@@ -40,13 +40,13 @@ Property GridColor As stdole.OLE_COLOR
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Color de las líneas de cuadrícula horizontal y vertical que se usan en un gráfico si están seleccionadas las propiedades [**ShowHorizontalGrid**](systemmonitor-showhorizontalgrid.md) [**o ShowVerticalGrid.**](systemmonitor-showverticalgrid.md)
+Color de las líneas de cuadrícula horizontal y vertical que se usan en un gráfico si se seleccionan las propiedades [**ShowHorizontalGrid**](systemmonitor-showhorizontalgrid.md) [**o ShowVerticalGrid.**](systemmonitor-showverticalgrid.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
@@ -54,7 +54,7 @@ Color de las líneas de cuadrícula horizontal y vertical que se usan en un grá
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

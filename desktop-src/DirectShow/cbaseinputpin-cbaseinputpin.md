@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 526c10dc0cda2f9b4d4cee6a955620f2aa1aae697522aaf3e14e57c3317ca325
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95a6dca29a9bdcaf978a54587035b34959d81719
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173822"
 ---
 # <a name="cbaseinputpincbaseinputpin-constructor"></a>Constructor CBaseInputPin.CBaseInputPin
 
@@ -81,7 +81,7 @@ Cadena de caracteres anchos que contiene el nombre del pin (también se usa como
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todos los parámetros se pasan directamente al constructor [**CBasePin.**](cbasepin-cbasepin.md)
 

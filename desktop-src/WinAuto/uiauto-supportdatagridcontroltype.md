@@ -3,11 +3,11 @@ title: Tipo de control DataGrid
 description: En este tema se proporciona información sobre microsoft Automatización de la interfaz de usuario compatibilidad con el tipo de control DataGrid.
 ms.assetid: 2381b302-37d6-4159-bb7d-862ae41af695
 keywords:
-- Automatización de la interfaz de usuario,compatibilidad con el tipo de control DataGrid
+- Automatización de la interfaz de usuario, compatibilidad con el tipo de control DataGrid
 - Automatización de la interfaz de usuario, tipo de control DataGrid
-- Automatización de la interfaz de usuario estructura de árbol para el tipo de control DataGrid
+- Automatización de la interfaz de usuario,estructura de árbol para el tipo de control DataGrid
 - Automatización de la interfaz de usuario,properties para el tipo de control DataGrid
-- Automatización de la interfaz de usuario, patrones de control para el tipo de control DataGrid
+- Automatización de la interfaz de usuario,patrones de control para el tipo de control DataGrid
 - Automatización de la interfaz de usuario,events para el tipo de control DataGrid
 - estructuras de árbol, tipo de control DataGrid
 - properties,Tipo de control DataGrid
@@ -22,11 +22,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7fa37093402fc3c4c195b4b68ecc74652af2d6a6
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475601"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172649"
 ---
 # <a name="datagrid-control-type"></a>Tipo de control DataGrid
 
@@ -67,14 +67,14 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor        | Notas                                                                                                                                                                                                                                                                                                        |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value        | Notas                                                                                                                                                                                                                                                                                                        |
 |---------------------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.   | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                 |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.   | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel de la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                 |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas.   | El rectángulo exterior que contiene el control completo.                                                                                                                                                                                                                                                     |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas.   | Se admite si hay un rectángulo delimitador. Si no se puede hacer clic en todos los puntos del rectángulo delimitador y el elemento realiza pruebas de acceso especializadas, invalide y proporcione un punto en el que se puede hacer clic.                                                                                                         |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **DataGrid** |                                                                                                                                                                                                                                                                                                              |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE         | El valor de esta propiedad siempre debe ser **TRUE.** Esto significa que el control de cuadrícula de datos siempre debe estar en la vista de contenido del Automatización de la interfaz de usuario datos.                                                                                                                                                      |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE         | El valor de esta propiedad siempre debe **ser TRUE.** Esto significa que el control de cuadrícula de datos siempre debe incluirse en la vista de control del Automatización de la interfaz de usuario datos.                                                                                                                                                |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true         | El valor de esta propiedad siempre debe ser **TRUE.** Esto significa que el control de cuadrícula de datos siempre debe estar en la vista de contenido del Automatización de la interfaz de usuario datos.                                                                                                                                                      |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true         | El valor de esta propiedad siempre debe **ser TRUE.** Esto significa que el control de cuadrícula de datos siempre debe incluirse en la vista de control del Automatización de la interfaz de usuario datos.                                                                                                                                                |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas.   | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                                                                                                                                                                                    |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vea las notas.   | Si hay una etiqueta de texto estático, esta propiedad debe exponer una referencia a ese control.                                                                                                                                                                                                                      |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas.   | Cadena localizada correspondiente al tipo de control **DataGrid.** El valor predeterminado es "cuadrícula de datos" para en-US o inglés (Estados Unidos).                                                                                                                                                                      |
@@ -92,7 +92,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 
 | Patrón de control                                         | Soporte técnico  | Notas                                                                                                                                                                             |
 |---------------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider)           | Requerido | El propio control de cuadrícula de datos siempre admite el [patrón de](uiauto-implementinggrid.md) control Grid porque los elementos que contiene tienen metadatos que se disponen en una cuadrícula. |
+| [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider)           | Obligatorio | El propio control de cuadrícula de datos siempre admite el [patrón de](uiauto-implementinggrid.md) control Grid porque los elementos que contiene tienen metadatos que se disponen en una cuadrícula. |
 | [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider)       | Depende  | La capacidad de desplazar la cuadrícula de datos depende del contenido y de si las barras de desplazamiento están presentes.                                                                                       |
 | [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider) | Depende  | La capacidad de seleccionar la cuadrícula de datos depende del contenido.                                                                                                                           |
 | [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider)         | Depende  | Un control de cuadrícula de datos que tenga un encabezado debe admitir el [patrón de](uiauto-implementingtable.md) control Tabla.                                                                   |

@@ -5,12 +5,12 @@ ms.assetid: 218c0123-8da9-4d73-9882-cbf7f205001f
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: f4f7407a32c7a8447b82695d98d7dc54bcd20b86e09006a8c1a996f6e0495019
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 552577283adfa9a440e94b7e04f4056bd6c3ecda
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119824875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164186"
 ---
 # <a name="compatible-a8-render-targets-overview"></a>Introducción a los destinos de representación A8 compatibles
 
@@ -18,11 +18,11 @@ En este tema se describen los conceptos básicos de un destino de representació
 
 Un destino de representación A8 compatible es un destino de representación compatible [**(ID2D1BitmapRenderTarget)**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmaprendertarget)que usa un formato de píxeles A8 (DXGI \_ FORMAT \_ A8 \_ UNORM). Puede usar un destino de representación A8 compatible para mejorar el rendimiento de la aplicación y proporcionar transiciones más fluidas durante la animación de texto. Un destino de representación A8 compatible es especialmente útil cuando se intenta mejorar lo siguiente:
 
--   Velocidad de fotogramas de la aplicación que representa texto o geometría suavizada de alias que incluye solo animaciones simples, como cambios de color, rotación, rotación o escala.
+-   Velocidad de fotogramas de la aplicación que representa texto o geometría con suavizado de alias que incluye solo animaciones simples, como la traducción, la rotación, la escala o los cambios de color.
 
 -   Continuidad visual de la aplicación que extiende y diminuta el texto durante una animación.
 
-Para crear un destino de representación A8 compatible, use el método [**ID2D1RenderTarget::CreateCompatibleRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget)) junto con el formato de \_ píxelES UNORM DXGI FORMAT A8 y especifique un destino de representación \_ \_ compatible devuelto. Para obtener más información sobre los formatos de píxel, vea [Formatos de píxeles admitidos y modos alfa.](./supported-pixel-formats-and-alpha-modes.md)
+Para crear un destino de representación A8 compatible, use el método [**ID2D1RenderTarget::CreateCompatibleRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget)) junto con el formato de píxelES UNORM DXGI FORMAT A8 y especifique un destino de representación \_ \_ compatible \_ devuelto. Para obtener más información sobre los formatos de píxel, vea [Formatos de píxeles admitidos y modos alfa.](./supported-pixel-formats-and-alpha-modes.md)
 
 Por ejemplo, para animar eficazmente el texto que se muestra en la siguiente captura de pantalla, use un destino de representación A8 compatible para almacenar en caché el texto como una máscara de opacidad. A continuación, aplique transformaciones a la máscara de opacidad para lograr resultados de representación rápidos.
 

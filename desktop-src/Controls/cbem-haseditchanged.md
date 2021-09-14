@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae5949827dbabf962ec9a9e9bd9d3b6d27d09a3b7e62f7fc71f2c4343e8ce370
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c5234b816a2ec080449ade072981b489968df8f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119528045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170078"
 ---
 # <a name="cbem_haseditchanged-message"></a>Mensaje \_ HASEDITCHANGED de CBEM
 
@@ -39,7 +39,7 @@ Determina si el usuario ha cambiado el texto de un control de edición ComboBoxE
 
 Devuelve **TRUE** si se ha cambiado el texto del cuadro de edición del control o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un control ComboBoxEx usa un control de cuadro de edición cuando se establece en el estilo [**\_ DROPDOWN de CBS.**](combo-box-styles.md) Puede recuperar el identificador de ventana del control de cuadro de edición mediante el envío de un [**mensaje \_ GETEDITCONTROL de CBEM.**](cbem-geteditcontrol.md)
 
@@ -51,11 +51,11 @@ El [**estilo SIMPLE de \_ CBS**](combo-box-styles.md) no funciona correctamente 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

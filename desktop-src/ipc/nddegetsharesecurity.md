@@ -1,5 +1,5 @@
 ---
-description: Recupera el descriptor de seguridad asociado al recurso compartido DDE. Esto se hace normalmente para su edición.
+description: Recupera el descriptor de seguridad asociado al recurso compartido de DDE. Esto se hace normalmente para su edición.
 ms.assetid: 7d3cc965-45ee-40ce-a462-568200592345
 title: Función NDdeGetShareSecurity (Nddeapi.h)
 ms.topic: reference
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: 101767516e8bd726ebf1a64ad83cfd924b3696a56d810895b4d9a9ed9a1e0ef8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dae1352d9e7c45f9ce301dd30d4e7f73d508498c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119829345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172293"
 ---
 # <a name="nddegetsharesecurity-function"></a>Función NDdeGetShareSecurity
 
 \[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Recupera el descriptor de seguridad asociado al recurso compartido DDE. Esto se hace normalmente para su edición.
+Recupera el descriptor de seguridad asociado al recurso compartido de DDE. Esto se hace normalmente para su edición.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ Nombre del servidor en el que reside el DSDM.
 *lpszShareName* \[ En\]
 </dt> <dd>
 
-Nombre del recurso compartido cuyo descriptor de seguridad se va a recuperar del DSDM. Este parámetro no puede ser **NULL.**
+Nombre del recurso compartido cuyo descriptor de seguridad se va a recuperar de DSDM. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Valor [**DE \_ INFORMACIÓN DE**](/windows/desktop/SecAuthZ/security-information
 *pSD* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [**\_ DE DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que recibe el descriptor de seguridad auto relativo. Este parámetro puede ser **NULL**. Si este parámetro es **NULL,** el DSDM determina el tamaño de la información de seguridad solicitada y devuelve el número de bytes necesarios en el parámetro *lpcbsdRequired* junto con el código de error NDDE \_ BUF \_ TOO \_ SMALL.
+Puntero a una estructura [**\_ DE DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que recibe el descriptor de seguridad auto-relativo. Este parámetro puede ser **NULL**. Si este parámetro es **NULL,** DSDM determina el tamaño de la información de seguridad solicitada y devuelve el número de bytes necesarios en el parámetro *lpcbsdRequired* junto con el código de error TOO SMALL de NDDE \_ \_ BUF. \_
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ Si se produce un error en la función, el valor devuelto es un código de error,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

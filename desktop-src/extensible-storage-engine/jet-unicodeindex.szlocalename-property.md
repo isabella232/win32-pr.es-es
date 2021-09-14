@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f324e3ac54ed7faa3b69b23248b9fa0e1959ed4b83d60adff20a3061bad6cbda
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd986b9df7956709d5a756dd066d612ddb4624c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118251629"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965551"
 ---
 # <a name="jet_unicodeindexszlocalename-property"></a>JET_UNICODEINDEX.szLocaleName, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece el valor de LocaleName que se va a usar al normalizar los da
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

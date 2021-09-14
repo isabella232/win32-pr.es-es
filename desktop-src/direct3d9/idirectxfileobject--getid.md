@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 5cb6788afe0b937822b8895790584f6928a7b5aecb564a31540337935763b2f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 336dbde487ecd1b3af7b32d3743f037c235952f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118800187"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174729"
 ---
 # <a name="idirectxfileobjectgetid-method"></a>IDirectXFileObject::GetId (método)
 
@@ -54,7 +54,7 @@ Puntero a un GUID para recibir el identificador del objeto. La función establec
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser DXFILEERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método , el valor devuelto puede ser DXFILEERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

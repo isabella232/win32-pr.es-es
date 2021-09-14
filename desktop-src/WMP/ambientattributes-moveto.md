@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf05beedad4fe4abb839e957519384b58102253cd0ab6a292d629df23a7bef98
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af481526c0923c527bb14aa4700a6c6fe5ea3613
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889945"
 ---
 # <a name="ambientattributesmoveto"></a>AmbientAttributes.moveTo
 
@@ -56,7 +56,7 @@ El **método moveTo** mueve el control a una nueva ubicación a una velocidad li
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método es útil para elementos **ANIMADOS SUBVIEW** (por ejemplo, si el usuario hace clic en una bandeja y los controles se deslizan hacia abajo).
 
@@ -66,13 +66,13 @@ Este método crea un movimiento lineal al mover el control. Esto difiere de **sl
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

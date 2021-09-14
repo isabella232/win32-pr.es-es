@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: d3930275205102010686c1b94cf626f33ad756d5291ec41c8f1c597b9ee90fdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7d9fc380bb101b64c7f7ad13cb20739c8cead0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118787141"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964632"
 ---
 # <a name="texture2darraysample-methods"></a>Métodos Texture2DArray::Sample
 
@@ -31,7 +31,7 @@ Muestrea [**un objeto Texture2DArray**](sm5-object-texture2darray.md).
 |:----------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Sample(S,float,int)**](dx-graphics-hlsl-to-sample.md)                         | Muestrea una textura.<br/>                                                                                                             |
 | [**Sample(S,float,int,float)**](t2darray-sample-s-float-int-float-.md)           | Muestrea una textura con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.<br/>                                      |
-| [**Sample(S,float,int,float,uint)**](t2darray-sample-s-float-int-float-uint-.md) | Muestrea una textura con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra y devuelve el estado de la operación.<br/> |
+| [**Sample(S,float,int,float,uint)**](t2darray-sample-s-float-int-float-uint-.md) | Muestrea una textura con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra a y devuelve el estado de la operación.<br/> |
 
 
 

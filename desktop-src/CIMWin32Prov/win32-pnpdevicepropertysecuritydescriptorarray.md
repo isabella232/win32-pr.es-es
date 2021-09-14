@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8024dccf49d6ade3fb7d7345e814beb12db66540369cb8031f518c2629945b4c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 550290a19c275108d52472129084b80ef81b71e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119971905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174402"
 ---
 # <a name="win32_pnpdevicepropertysecuritydescriptorarray-class"></a>Clase Win32 \_ PnPDevicePropertySecurityDescriptorArray
 
@@ -45,7 +45,7 @@ class Win32_PnPDevicePropertySecurityDescriptorArray : Win32_PnPDeviceProperty
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PnPDevicePropertySecurityDescriptorArray de Win32** tiene estos tipos de miembros:
 
@@ -57,7 +57,7 @@ La **clase \_ PnPDevicePropertySecurityDescriptorArray de Win32** tiene estas pr
 
 <dl> <dt>
 
-**Datos**
+**Data**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **[**matriz \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)**
@@ -94,7 +94,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor del par de Name-Value clave que identifica la **propiedad** Data.
+Valor del par clave Name-Value que identifica la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -522,7 +522,7 @@ Los valores posibles son.
 [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md)
 </dt> <dt>
 
-[**SecurityDescriptor de Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
+[**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 </dt> <dt>
 
 [**GetDeviceProperties**](getdeviceproperties-win32-pnpentity.md)

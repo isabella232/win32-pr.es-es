@@ -1,11 +1,11 @@
 ---
-title: Propiedad RegisteredTask.Enabled
+title: RegisteredTask.Enabled, propiedad
 description: Para el scripting, obtiene o establece un valor booleano que indica si la tarea registrada está habilitada.
 ms.assetid: ec8722a0-4055-4604-b506-a3c3f6e07954
 keywords:
 - Propiedades habilitadas Programador de tareas
 - Propiedad Enabled Programador de tareas , objeto RegisteredTask
-- Propiedad RegisteredTask Programador de tareas , Enabled
+- Objeto RegisteredTask Programador de tareas propiedad , Enabled
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51f0b73ce0cebc35701484725496e6fe23b3284fe5a2ef7a3ae7faa8c400d731
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 518ba354a1be11f301e84dcb7161e6e1b0e99ecb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117943451"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173010"
 ---
-# <a name="registeredtaskenabled-property"></a>Propiedad RegisteredTask.Enabled
+# <a name="registeredtaskenabled-property"></a>RegisteredTask.Enabled, propiedad
 
 Para el scripting, obtiene o establece un valor booleano que indica si la tarea registrada está habilitada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -44,7 +44,7 @@ Valor booleano que indica si la tarea registrada está habilitada.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |

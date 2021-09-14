@@ -1,5 +1,5 @@
 ---
-description: El registro de Win32 \_&\# 8194; La clase WMI representa el registro del sistema en un sistema de equipo que ejecuta Windows.
+description: El registro de Win32 \_&\# 8194; La clase WMI representa el registro del sistema en un sistema informático que ejecuta Windows.
 ms.assetid: 4a6cd7d7-2845-434d-b024-d6dbb77371ea
 ms.tgt_platform: multiple
 title: Win32_Registry clase
@@ -22,18 +22,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 64611f35e08d9b816d990602b43c62330431e8afb65874cee284fac5778a898d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a1dc5fd89ee589aabda5da5f97632d86b39f6beb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119971581"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174337"
 ---
 # <a name="win32_registry-class"></a>Win32 \_ Registry (clase)
 
-La **clase \_ WMI del Registro Win32** representa el registro del sistema en un sistema informático que ejecuta Windows. [](../wmisdk/retrieving-a-class.md)
+La **clase \_ WMI del Registro win32** representa el registro del sistema en un sistema informático que ejecuta Windows. [](../wmisdk/retrieving-a-class.md)
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ class Win32_Registry : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Registry \_ de Win32** tiene estos tipos de miembros:
 
@@ -60,7 +60,7 @@ La **clase Registry \_ de Win32** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase Registry \_ de Win32** tiene estas propiedades.
+La **clase \_ Registry de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -91,7 +91,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \|NTDLL.DLL\| [**NtQuerySystemInformation**](/windows/win32/api/winternl/nf-winternl-ntquerysysteminformation) \| SystemRegistryQuotaInformation"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \|NTDLL.DLL\| [**NtQuerySystemInformation**](/windows/win32/api/winternl/nf-winternl-ntquerysysteminformation) \| SystemRegistryQuotaInformation"), [**Units**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
 Tamaño físico actual del registro Windows datos.
@@ -145,10 +145,10 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \| RegistrySizeLimit"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \| RegistrySizeLimit"), [**Units**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamaño máximo del registro Windows datos. Si el sistema usa correctamente la **propiedad ProposedSize,** **MaximumSize** debe contener el mismo valor.
+Tamaño máximo del registro Windows datos. Si el sistema usa correctamente la propiedad **ProposedSize,** **MaximumSize** debe contener el mismo valor.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Name"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry")
 </dt> </dl>
 
-Nombre de la Windows registro. La longitud máxima es de 256 caracteres.
+Nombre del registro Windows datos. La longitud máxima es de 256 caracteres.
 
 </dd> <dt>
 
@@ -177,10 +177,10 @@ Tipo de datos: **uint32**
 Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \| RegistrySizeLimit"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \| RegistrySizeLimit"), [**Units**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamaño propuesto del registro Windows datos. Es la única configuración del Registro que se puede modificar y su propuesta se intenta la próxima vez que se inicie el sistema.
+Tamaño propuesto del registro Windows proyecto. Es la única configuración del Registro que se puede modificar y su propuesta se intenta la próxima vez que se inicie el sistema.
 
 </dd> <dt>
 
@@ -198,7 +198,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayNa
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -229,28 +229,28 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -292,7 +292,7 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase Registry \_ de Win32** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 

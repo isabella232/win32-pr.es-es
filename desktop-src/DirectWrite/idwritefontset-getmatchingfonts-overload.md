@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 205a5debda8e53bd5bf9fb14ebb8c46917f6cf8fd54f3b3680a8bdd1d0b58ed2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b19917ebdd2c169b3a3877f03e2b81fe481f717
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119071679"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173749"
 ---
 # <a name="idwritefontsetgetmatchingfonts-methods"></a>Métodos IDWriteFontSet::GetMatchingFonts
 

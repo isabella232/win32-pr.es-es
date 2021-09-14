@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 24fd4802afd29d11c6c5f11a4f86f72cc818a5413cdd8f12f298f46a85a63b9d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b66a9979ec97d4ceda16acad6488d3b84d5d3a54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119760135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174489"
 ---
-# <a name="setdatabasepath-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetDatabasePath de la clase \_ NetworkAdapterConfiguration de Win32
+# <a name="setdatabasepath-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetDatabasePath de la clase NetworkAdapterConfiguration de Win32 \_
 
 El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetDatabasePath** establece la ruta de acceso a los archivos de base de datos de Internet estándar (HOSTS, LMHOSTS, NETWORKS y PROTOCOLS).
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ uint32 SetDatabasePath(
 *DatabasePath* \[ En\]
 </dt> <dd>
 
-Ruta de acceso de archivo válida a archivos de base de datos estándar de Internet (HOSTS, LMHOSTS, REDES y PROTOCOLOS) que usa la interfaz Windows Sockets.
+Ruta de acceso de archivo válida a archivos de base de datos de Internet estándar (HOSTS, LMHOSTS, REDES y PROTOCOLOS) que usa la interfaz Windows Sockets.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no se requiere reinicio.
+Finalización correcta, no es necesario reiniciar.
 
 </dd> <dt>
 
@@ -73,12 +73,12 @@ Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
-**Método no admitido en esta plataforma**
+**Método no compatible con esta plataforma**
 </dt> <dd>
 
 64
 
-Método no admitido en esta plataforma.
+Método no compatible con esta plataforma.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión dhcp.
+No se puede renovar la concesión DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-Ip no habilitada en el adaptador.
+IP no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco/red**
+**Error de límites de número de marco o red**
 </dt> <dd>
 
 86
@@ -280,7 +280,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de fotograma no válido**
+**Tipo de marco no válido**
 </dt> <dd>
 
 87
@@ -321,11 +321,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -404,13 +404,13 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método lo usa la interfaz Windows Sockets. La ruta de acceso predeterminada es %SystemRoot% \\ system32 \\ drivers \\ .
+La interfaz Windows Sockets usa este método. La ruta de acceso predeterminada es %SystemRoot% \\ system32 \\ drivers \\ .
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo Modify [the Database Path for all Network Adapters](https://Gallery.TechNet.Microsoft.Com/94bfa42f-f6a3-482f-8d5a-5445a2475bee) VBScript (Modificar la ruta de acceso de base de datos para todos los adaptadores de red vbScript) de la Galería de TechNet usa **SetDatabasePath** para establecer la ruta de acceso a los archivos de base de datos de Internet estándar (HOSTS, LMHOSTS, NETWORKS, PROTOCOLS) que usa la interfaz Windows Sockets.
+El ejemplo Modify [the Database Path for all Network Adapters](https://Gallery.TechNet.Microsoft.Com/94bfa42f-f6a3-482f-8d5a-5445a2475bee) VBScript (Modificar la ruta de acceso de base de datos para todos los adaptadores de red VBScript) de la Galería de TechNet usa **SetDatabasePath** para establecer la ruta de acceso a los archivos de base de datos de Internet estándar (HOSTS, LMHOSTS, NETWORKS, PROTOCOLS) que usa la interfaz Windows Sockets.
 
 ## <a name="requirements"></a>Requisitos
 

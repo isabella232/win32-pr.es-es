@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0b686a0e279a16650a976920ee812b23cfe0345409926fd6c02166cdb4572235
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9b1d16ba2a29d42614c388a6207503ad32dd5e0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120070065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888873"
 ---
 # <a name="d3dxplanetransform-function-d3dx10mathh"></a>Función D3DXPlaneTransform (D3DX10Math.h)
 
@@ -111,7 +111,7 @@ El parámetro pM contiene la transpuesta inversa de la matriz de transformación
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

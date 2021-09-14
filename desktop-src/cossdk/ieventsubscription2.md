@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 332f123756d1340352524852aa5bcb38fce09612f52554facaf6e5c8c2398e73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc7e3e41efc4b44c00c23f0910b8b696940fc1df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047492"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888964"
 ---
 # <a name="ieventsubscription2-interface"></a>Interfaz IEventSubscription2
 
@@ -31,7 +31,7 @@ No es necesario implementar la interfaz **IEventSubscription2.** Una clase de ob
 
 El [sistema de eventos COM+](com--events.md) usa esta interfaz para obtener información sobre suscripciones individuales.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IEventSubscription2** hereda de **IEventSubscription.** **IEventSubscription2** también tiene estos tipos de miembros:
 
@@ -45,8 +45,8 @@ La **interfaz IEventSubscription2** tiene estas propiedades.
 
 | Propiedad                                                                      | Tipo de acceso           | Descripción                                                |
 |:------------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------|
-| [**FilterCriteria**](ieventsubscription2-filtercriteria.md)<br/>       | Lectura/escritura<br/> | Criterios de filtro que rigen la suscripción.<br/> |
-| [**SubscriberMoniker**](ieventsubscription2-subscribermoniker.md)<br/> | Lectura/escritura<br/> | Moniker del suscriptor.<br/>                       |
+| [**FilterCriteria**](ieventsubscription2-filtercriteria.md)<br/>       | Lectura y escritura<br/> | Criterios de filtro que rigen la suscripción.<br/> |
+| [**SubscriberMoniker**](ieventsubscription2-subscribermoniker.md)<br/> | Lectura y escritura<br/> | Moniker del suscriptor.<br/>                       |
 
 
 
@@ -56,14 +56,14 @@ La **interfaz IEventSubscription2** tiene estas propiedades.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

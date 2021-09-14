@@ -10,12 +10,12 @@ keywords:
 - elements,AUTOMENU
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75a77036ffd88d514e890d92921deea5bae9d9fba1856fe324bd41c70dbbfc92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 77dc15db3089c48723084642d68787c04436d41a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118582964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889852"
 ---
 # <a name="automenu-element"></a>Elemento AUTOMENU
 
@@ -27,7 +27,7 @@ El **elemento AUTOMENU** admite el método siguiente.
 
 | Método                    | Descripción                          |
 |---------------------------|--------------------------------------|
-| [show](automenu-show.md) | Muestra el **cuadro Panel de acceso**. |
+| [show](automenu-show.md) | Muestra el **cuadro de diálogo Panel de acceso**. |
 
 
 

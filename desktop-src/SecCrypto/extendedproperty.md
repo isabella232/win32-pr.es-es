@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 927d35f73cec1f9e9032c326097a642349d6faa7e02d533330303016184a4bbb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ec61da301dc1819c899a7da23da9a10efd81ae0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171038"
 ---
 # <a name="extendedproperty-object"></a>ExtendedProperty, objeto
 
@@ -33,7 +33,7 @@ El **objeto ExtendedProperty** se usa para realizar las siguientes tareas:
 -   Establezca o recupere el tipo de la propiedad extendida.
 -   Establezca o recupere el tipo de codificación utilizado para codificar la propiedad extendida.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto ExtendedProperty** tiene estos tipos de miembros:
 
@@ -47,18 +47,18 @@ El **objeto ExtendedProperty** tiene estas propiedades.
 
 | Propiedad                                             | Tipo de acceso           | Descripción                                                                                                                                                                    |
 |:-----------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**PropID**](extendedproperty-propid.md)<br/> | Lectura/escritura<br/> | Valor de la [**enumeración CAPICOM \_ PROPID**](capicom-propid.md) que establece o recupera el tipo de propiedad extendida.<br/> Esta es la propiedad predeterminada.<br/> |
-| [**Value**](extendedproperty-value.md)<br/>   | Lectura/escritura<br/> | Valor de la enumeración [**\_ CAPICOM ENCODING \_ TYPE**](capicom-encoding-type.md) que establece o recupera los datos de propiedad extendida.<br/>                              |
+| [**PropID**](extendedproperty-propid.md)<br/> | Lectura y escritura<br/> | Valor de la [**enumeración CAPICOM \_ PROPID**](capicom-propid.md) que establece o recupera el tipo de propiedad extendida.<br/> Esta es la propiedad predeterminada.<br/> |
+| [**Value**](extendedproperty-value.md)<br/>   | Lectura y escritura<br/> | Valor de la enumeración [**\_ CAPICOM ENCODING \_ TYPE**](capicom-encoding-type.md) que establece o recupera los datos de propiedad extendida.<br/>                              |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La colección [**ExtendedProperties**](extendedproperties.md) usa el objeto **ExtendedProperty.**
 
-Se puede crear el objeto **ExtendedProperty** y no es seguro para el scripting. El ProgID del **objeto ExtendedProperty** es CAPICOM. ExtendedProperty.1.
+El **objeto ExtendedProperty** se puede crear y no es seguro para el scripting. El ProgID del **objeto ExtendedProperty** es CAPICOM. ExtendedProperty.1.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fba4c82679ebe96827cd45c9045080fb354cdab25eb562523869e97d533c5f2a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 403ee5aa100309084090dc241724067f9dd3aa5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173830"
 ---
 # <a name="cbaseinputpinendflush-method"></a>Método CBaseInputPin.EndFlush
 
@@ -44,16 +44,16 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método establece la [**marca CBaseInputPin::m \_ bFlushing**](cbaseinputpin-m-bflushing.md) en **TRUE,** lo que permite que el método [**CBaseInputPin::Receive**](cbaseinputpin-receive.md) acepte ejemplos.
 
 La clase derivada debe invalidar este método y realizar los pasos siguientes:
 
-1.  Libera los datos almacenados en búfer y espera a que se descarten todas las muestras en cola.
+1.  Liberar los datos almacenados en búfer y esperar a que se descarten todas las muestras en cola.
 2.  Borre las notificaciones [**EC \_ COMPLETE**](ec-complete.md) pendientes.
 3.  Llame al método de clase base.
-4.  Llame [**a IPin::EndFlush en**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) los pines de entrada de bajada. Si el pin aún no ha entregado ningún ejemplo multimedia de nivel inferior, puede omitir este paso. Si los pines de salida derivan de la clase [**CBaseOutputPin,**](cbaseoutputpin.md) puede llamar al método [**CBaseOutputPin::D eliverEndFlush.**](cbaseoutputpin-deliverendflush.md)
+4.  Llame [**a IPin::EndFlush en**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) los pines de entrada de nivel inferior. Si el pin aún no ha entregado ningún ejemplo multimedia de nivel inferior, puede omitir este paso. Si los pines de salida derivan de la clase [**CBaseOutputPin,**](cbaseoutputpin.md) puede llamar al método [**CBaseOutputPin::D eliverEndFlush.**](cbaseoutputpin-deliverendflush.md)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -6,12 +6,12 @@ keywords:
 - D2D1 namespace,classes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b13f3fddcd1939de335dce47d26637780183894fcaa53d16bb0e01aa3ba1dcd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71527ad35bdec7e2ea69be16839a5f0e5a1780fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119075579"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164205"
 ---
 # <a name="direct2d-helper-classes"></a>Clases auxiliares de Direct2D
 
@@ -23,11 +23,11 @@ El espacio de nombres D2D1 define las clases siguientes.
 
 | Tema                                       | Descripción                                                                                                                              |
 |---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ColorF**](/windows/win32/api/d2d1helper/nl-d2d1helper-colorf)<br/>         | Define un conjunto de constantes que representa los colores conocidos y proporciona métodos prácticos para crear instancias de colores diferentes.<br/>  |
+| [**ColorF**](/windows/win32/api/d2d1helper/nl-d2d1helper-colorf)<br/>         | Define un conjunto de constantes que representa colores conocidos y proporciona métodos prácticos para crear instancias de colores diferentes.<br/>  |
 | [**Matrix3x2F**](/windows/win32/api/d2d1helper/nl-d2d1helper-matrix3x2f)<br/> | La [**clase Matrix3x2F**](/windows/win32/api/d2d1helper/nl-d2d1helper-matrix3x2f) representa una matriz 3 por 2 y proporciona métodos prácticos para crear matrices.<br/> |
 | [**Matrix4x3F**](matrix4x3f.md)<br/> | La [**clase Matrix4x3F**](matrix4x3f.md) representa una matriz 4 por 3 y proporciona métodos prácticos para crear matrices.<br/> |
 | [**Matrix4x4F**](/windows/desktop/api/d2d1_1helper/nl-d2d1_1helper-matrix4x4f)<br/> | La [**clase Matrix4x4F**](/windows/desktop/api/d2d1_1helper/nl-d2d1_1helper-matrix4x4f) representa una matriz 4 por 4 y proporciona métodos prácticos para crear matrices.<br/> |
-| [**Matrix5x4F**](matrix5x4f.md)<br/> | La [**clase Matrix5x4F**](matrix5x4f.md) representa una matriz 5 por 4 y proporciona métodos prácticos para crear matrices.<br/> |
+| [**Matrix5x4F**](matrix5x4f.md)<br/> | La [**clase Matrix5x4F**](matrix5x4f.md) representa una matriz de 5 por 4 y proporciona métodos prácticos para crear matrices.<br/> |
 
 
 

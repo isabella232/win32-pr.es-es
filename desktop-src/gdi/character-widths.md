@@ -4,12 +4,12 @@ ms.assetid: 0c84f5f9-71cd-4077-bc99-f23a393c1c4d
 title: Anchos de caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 822ae01ea1ccd5a2a7ec118cb1b93211b1c2e5c0a215737a600d9450b8996117
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 950fbb7e6ad1e5f4ef12f2abd9e528ce3158a869
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117888108"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172358"
 ---
 # <a name="character-widths"></a>Anchos de caracteres
 
@@ -17,7 +17,7 @@ Las aplicaciones deben recuperar datos de ancho de caracteres cuando realizan ta
 
 Una aplicación puede usar las funciones [GetCharWidth32](/windows/desktop/api/Wingdi/nf-wingdi-getcharwidth32a) y [GetCharWidthFloat](/windows/desktop/api/Wingdi/nf-wingdi-getcharwidthfloata) para recuperar el ancho de avance de caracteres individuales o símbolos en una cadena de texto. El ancho de avance es la distancia que el cursor en una pantalla de vídeo o el titular de impresión de una impresora deben avanzar antes de imprimir el carácter siguiente en una cadena de texto. La [**función GetCharWidth32**](/windows/win32/api/wingdi/nf-wingdi-getcharwidth32a) devuelve el ancho de avance como un valor entero. Si se requiere mayor precisión, una aplicación puede usar la función [**GetCharWidthFloat**](/windows/win32/api/wingdi/nf-wingdi-getcharwidthfloata) para recuperar valores fraccionales de ancho de avance.
 
-Una aplicación puede recuperar datos reales de ancho de caracteres mediante las funciones [GetCharABCWidths](/windows/desktop/api/Wingdi/nf-wingdi-getcharabcwidthsa) y [**GetCharABCWidthsFloat.**](/windows/desktop/api/Wingdi/nf-wingdi-getcharabcwidthsfloata) La **función GetCharABCWidthsFloat** funciona con todas las fuentes. La [**función GetCharABCWidths**](/windows/win32/api/wingdi/nf-wingdi-getcharabcwidthsa) solo funciona con fuentes TrueType y OpenType. Para obtener más información sobre las fuentes TrueType y OpenType, vea [Fuentes Raster, Vector, TrueType y OpenType.](raster--vector--truetype--and-opentype-fonts.md)
+Una aplicación puede recuperar datos reales de ancho de caracteres mediante las funciones [GetCharABCWidths](/windows/desktop/api/Wingdi/nf-wingdi-getcharabcwidthsa) y [**GetCharABCWidthsFloat.**](/windows/desktop/api/Wingdi/nf-wingdi-getcharabcwidthsfloata) La **función GetCharABCWidthsFloat** funciona con todas las fuentes. La [**función GetCharABCWidths**](/windows/win32/api/wingdi/nf-wingdi-getcharabcwidthsa) solo funciona con fuentes TrueType y OpenType. Para obtener más información sobre las fuentes TrueType y OpenType, vea [Fuentes Raster, Vector, TrueType y OpenType](raster--vector--truetype--and-opentype-fonts.md).
 
 En la ilustración siguiente se muestran los tres componentes de un ancho de caracteres:
 

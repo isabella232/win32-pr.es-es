@@ -13,34 +13,34 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: d0f66c1e8ec59819f4f01c5f46989e1f904930f3699f978b26c6ab7c5107154c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 19626ba560ead406005612db3ed90cabc61d98ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119879345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171178"
 ---
 # <a name="capicom_encryption_algorithm-enumeration"></a>CAPICOM \_ ENCRYPTION \_ ALGORITHM (enumeración)
 
 El **tipo de enumeración \_ CAPICOM ENCRYPTION \_ ALGORITHM** define los algoritmos que se usarán en el cifrado y descifrado.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 
 
 | Miembro                                   | Descripción                                                                                                                                                                                              | Value     |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| **ALGORITMO DE CIFRADO \_ CAPICOM \_ \_ RC2**  | Use el cifrado RSA RC2.<br/>                                                                                                                                                                       | 0         |
+| **ALGORITMO DE CIFRADO CAPICOM \_ \_ \_ RC2**  | Use el cifrado RSA RC2.<br/>                                                                                                                                                                       | 0         |
 | **ALGORITMO DE CIFRADO CAPICOM \_ \_ \_ RC4**  | Use el cifrado RSA RC4.<br/>                                                                                                                                                                       | 1         |
 | **CAPICOM \_ ENCRYPTION \_ ALGORITHM \_ DES**  | Use el cifrado DES.<br/>                                                                                                                                                                           | 2         |
-| **ALGORITMO DE CIFRADO CAPICOM \_ \_ \_ 3DES** | Use el cifrado de DES triple.<br/>                                                                                                                                                                    | 3         |
-| **CAPICOM \_ ENCRYPTION \_ ALGORITHM \_ AES**  | Use el [*algoritmo Estándar de cifrado avanzado*](../secgloss/a-gly.md) (AES). Este valor solo es válido para [**el objeto EncryptedData.**](encrypteddata.md)<br/> | 4 // v2.0 |
+| **ALGORITMO DE CIFRADO CAPICOM \_ \_ \_ 3DES** | Use el cifrado DES triple.<br/>                                                                                                                                                                    | 3         |
+| **ALGORITMO DE CIFRADO \_ \_ CAPICOM \_ AES**  | Use el [*algoritmo Estándar de cifrado avanzado*](../secgloss/a-gly.md) (AES). Este valor solo es válido para [**el objeto EncryptedData.**](encrypteddata.md)<br/> | 4 // v2.0 |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La propiedad Algorithm.Name utiliza el tipo [](algorithm-name.md) de enumeración **\_ CAPICOM ENCRYPTION \_ ALGORITHM.**
+El **tipo de enumeración \_ CAPICOM ENCRYPTION \_ ALGORITHM** se usa en [**la Algorithm.Name**](algorithm-name.md) propiedad .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ La propiedad Algorithm.Name utiliza el tipo [](algorithm-name.md) de enumeració
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
+| Encabezado<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

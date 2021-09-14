@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b75d507a68a11a294c0f7f51d25cf8f9b422ad61615582b3d7fecc714787c710
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 77d27354c633f22c13875f429eadbf8e131a8656
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118119857"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889241"
 ---
 # <a name="buynow-attribute"></a>Atributo BuyNow
 
@@ -30,7 +30,7 @@ El **atributo BuyNow** es un valor **PARAM** para su uso en interacciones comerc
 -   [Pistas de CD](cd-track-attributes.md)
 -   [DVDs](dvd-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la base de datos de biblioteca (o caché).
 
@@ -46,7 +46,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

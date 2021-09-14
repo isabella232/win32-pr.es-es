@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e1c640262c1629e2bfed9c84c3bf0e9914482847188a62f19d1e63cd6099fdf8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91216b49dba7fabb25c128f3801d11bfa2fd95c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118093571"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964712"
 ---
 # <a name="id3dxtextureshadersetmatrixtranspose-method"></a>Método ID3DXTextureShader::SetMatrixTranspose
 
@@ -46,7 +46,7 @@ HRESULT SetMatrixTranspose(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la matriz de constantes. Vea [D3DXHANDLE.](d3dxfx.md)
+Identificador único de la matriz de constantes. Vea [D3DXHANDLE](d3dxfx.md).
 
 </dd> <dt>
 
@@ -63,11 +63,11 @@ Puntero a una matriz transpuesta. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una matriz transpuesta contiene datos principales de columna; es decir, cada vector está contenido en una columna.
+Una matriz transpuesta contiene datos principales de columna; es decir, cada vector se encuentra en una columna.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Una matriz transpuesta contiene datos principales de columna; es decir, cada vec
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

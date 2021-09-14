@@ -4,18 +4,18 @@ ms.assetid: 0dea39e2-a2b4-47fc-b44a-56af8ba1e346
 title: Suplentes y caracteres suplementarios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5b1dc4743627297962c7279449c06cc1ff967ac35f931a6e945b4577c937b59
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c8d6b738955c8b8de4f6cb0ae43c78f86752a928
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120130055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171877"
 ---
 # <a name="surrogates-and-supplementary-characters"></a>Suplentes y caracteres suplementarios
 
 Windows aplicaciones suelen usar UTF-16 para representar datos [de caracteres Unicode.](unicode.md) El uso de 16 bits permite la representación directa de 65 536 caracteres únicos, pero este plano multilingüe básico (BMP) no es suficiente para cubrir todos los símbolos usados en lenguajes humanos. La versión 4.1 de Unicode incluye más de 97 000 caracteres, con más de 70 000 caracteres solo para chino.
 
-El estándar Unicode ha establecido 16 "planos" adicionales de caracteres, cada uno del mismo tamaño que bmp. Naturalmente, la mayoría de los puntos de código más allá del BMP aún no tienen caracteres asignados, pero la definición de los planos ofrece a Unicode la posibilidad de definir 1114 112 caracteres (es decir, 2⁶ 17 caracteres) dentro del intervalo de puntos de código \* U+0000 a U+10FFFF. Para que UTF-16 represente este conjunto de caracteres más grande, el estándar Unicode define "caracteres adicionales".
+El estándar Unicode ha establecido 16 "planos" adicionales de caracteres, cada uno del mismo tamaño que bmp. Naturalmente, la mayoría de los puntos de código más allá del BMP aún no tienen caracteres asignados, pero la definición de los planos ofrece a Unicode la posibilidad de definir 1 114 112 caracteres (es decir, 2⁶ 17 caracteres) dentro del intervalo de puntos de código \* U+0000 a U+10FFFF. Para que UTF-16 represente este conjunto de caracteres más grande, el estándar Unicode define "caracteres adicionales".
 
 ## <a name="about-supplementary-characters"></a>Acerca de los caracteres adicionales
 
@@ -30,7 +30,7 @@ El sistema operativo admite caracteres adicionales de las maneras siguientes:
 
 -   El formato 12 de la tabla cmap de fuente OpenType admite directamente el código de caracteres de 4 bytes. Para obtener más información, vea la [especificación de fuente OpenType](/typography/opentype/spec/).
 -   Windows admite editores de métodos de entrada [(IME) habilitados para suplentes.](../dxtecharts/installing-and-using-input-method-editors.md)
--   La [WINDOWS GDI](../gdi/windows-gdi.md) admite el formato 12 tablas de asignación de cmap en fuentes para que los suplentes se puedan mostrar correctamente.
+-   La [Windows GDI](../gdi/windows-gdi.md) API admite el formato 12 tablas de cmap en fuentes para que los suplentes se puedan mostrar correctamente.
 -   [Uniscribe](uniscribe.md) API admite caracteres adicionales.
 -   [Windows controles](../controls/window-controls.md), [incluidos Editar](../controls/edit-controls.md) y [Editar](../controls/rich-edit-controls.md)enriquecido, admiten caracteres adicionales.
 -   El motor HTML admite páginas HTML que incluyen caracteres adicionales para mostrar, editar (a través de Outlook Express) y enviar formularios.
@@ -53,7 +53,7 @@ Dado que el mecanismo suplente para representar caracteres adicionales está bie
 
  
 
-Si va a desarrollar una fuente o un proveedor de IME, tenga en cuenta que los sistemas operativos XP previos a Windows deshabilitan la compatibilidad con caracteres adicionales de forma predeterminada. Windows XP y versiones posteriores habilitan caracteres adicionales de forma predeterminada. Si proporciona una fuente y un paquete IME que requiere caracteres adicionales, la aplicación debe establecer los siguientes valores del Registro:
+Si va a desarrollar una fuente o un proveedor de IME, tenga en cuenta que los sistemas operativos XP anteriores a la Windows deshabilitan la compatibilidad con caracteres adicionales de forma predeterminada. Windows XP y versiones posteriores habilitan caracteres adicionales de forma predeterminada. Si proporciona una fuente y un paquete IME que requiere caracteres adicionales, la aplicación debe establecer los siguientes valores del Registro:
 
 
 ```C++

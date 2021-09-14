@@ -4,12 +4,12 @@ description: En este tema se muestra cómo agregar listas de imágenes a un cont
 ms.assetid: 3C282FBC-5E37-4D8E-A2C4-B2876874E9A7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8875573634cd47fb5ccb271c3dabfca99daf9061469e31c1178b3e4ed938347e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2c2f6f5b483ea80b412ab7638c9aceafcac4c5e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119922065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174290"
 ---
 # <a name="how-to-add-list-view-image-lists"></a>Cómo agregar listas List-View imágenes
 
@@ -23,7 +23,7 @@ Solo se crean las listas de imágenes que usa el control. Por ejemplo, si la apl
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
@@ -31,7 +31,7 @@ Solo se crean las listas de imágenes que usa el control. Por ejemplo, si la apl
 ## <a name="instructions"></a>Instructions
 
 
-Para mostrar imágenes de elementos, debe asignar una lista de imágenes al control list-view. Para ello, use el mensaje [**\_ SETIMAGELIST**](lvm-setimagelist.md) de LVM o la macro [**correspondiente ListView \_ SetImageList,**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setimagelist)especificando si la lista de imágenes contiene iconos de tamaño completo, iconos pequeños o imágenes de estado. Para recuperar el identificador de una lista de imágenes que está asignada actualmente a un control de vista de lista, use el mensaje [**\_ LVM GETIMAGELIST.**](lvm-getimagelist.md) Puede usar la [**función GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) para determinar las dimensiones adecuadas para los iconos pequeños y de tamaño completo.
+Para mostrar imágenes de elementos, debe asignar una lista de imágenes al control list-view. Para ello, use el mensaje [**\_ SETIMAGELIST**](lvm-setimagelist.md) de LVM o la macro [**correspondiente ListView \_ SetImageList,**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setimagelist)especificando si la lista de imágenes contiene iconos de tamaño completo, iconos pequeños o imágenes de estado. Para recuperar el identificador de una lista de imágenes que está asignada actualmente a un control de vista de lista, use el mensaje [**\_ LVM GETIMAGELIST.**](lvm-getimagelist.md) Puede usar la [**función GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) para determinar las dimensiones adecuadas para los iconos de tamaño completo y pequeños.
 
 En el siguiente ejemplo de código de C++, la función definida por la aplicación crea primero listas de imágenes y, a continuación, las asigna a un control de vista de lista.
 

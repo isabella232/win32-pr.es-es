@@ -6,16 +6,16 @@ keywords:
 - efecto de borde
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ce125a96730ee59f63b18cfd1a08abd2432af6f3fdc6b5f06cfc2e9272a7a3c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 49fb43ae8b3e9c4eb449a8231f8b4ffcacf7658b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119929001"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164226"
 ---
 # <a name="border-effect"></a>Efecto de borde
 
-Use el efecto de borde para extender una imagen desde los bordes. Puede usar este efecto para repetir los píxeles de los bordes de la imagen, encapsular los píxeles del extremo opuesto de la imagen o reflejar los píxeles en el borde del mapa de bits para ampliar la región del mapa de bits.
+Use el efecto de borde para extender una imagen desde los bordes. Puede usar este efecto para repetir los píxeles de los bordes de la imagen, ajustar los píxeles del extremo opuesto de la imagen o reflejar los píxeles en el borde del mapa de bits para ampliar la región del mapa de bits.
 
 El CLSID para este efecto es CLSID \_ D2D1Border.
 
@@ -59,7 +59,7 @@ En los ejemplos siguientes se muestra la salida del efecto de borde mediante cad
 |--------------------------------------------------------------|
 | ![Captura de pantalla que muestra la imagen antes del efecto de un ajuste.](images/border-before.jpg)    |
 | Después                                                        |
-| ![Captura de pantalla que muestra la imagen después de la transformación de un encapsulado.](images/10-border-wrap.png) |
+| ![Captura de pantalla que muestra la imagen después de la transformación para un ajuste.](images/10-border-wrap.png) |
 
 
 
@@ -87,8 +87,8 @@ m_d2dContext->EndDraw();
 
 | Enumeración de nombre para mostrar e índice                                  | Descripción                                                                                                                                                                                                                                                            |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Modo perimetral X<br/> D2D1 \_ BORDER \_ PROP \_ EDGE \_ MODE \_ X<br/> | Modo perimetral en la dirección X para el efecto. Puede establecer esta opción en fijación, ajuste o reflejo. Consulte [Modos perimetrales](#edge-modes) para obtener más información.<br/> El tipo es D2D1 \_ BORDER \_ EDGE \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ EDGE MODE \_ \_ CLAMP.<br/> |
-| Modo perimetral Y<br/> D2D1 \_ BORDER \_ PROP \_ EDGE \_ MODE \_ Y<br/> | Modo perimetral en la dirección Y para el efecto. Puede establecer esta opción en fijación, ajuste o reflejo. Consulte [Modos perimetrales](#edge-modes) para obtener más información.<br/> El tipo es D2D1 \_ BORDER \_ EDGE \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ EDGE MODE \_ \_ CLAMP.<br/> |
+| Modo perimetral X<br/> D2D1 \_ BORDER \_ PROP \_ EDGE \_ MODE \_ X<br/> | Modo perimetral en la dirección X para el efecto. Puede establecerlo en fijación, encapsulado o reflejo. Consulte [Modos perimetrales](#edge-modes) para obtener más información.<br/> El tipo es D2D1 \_ BORDER \_ EDGE \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ EDGE MODE \_ \_ CLAMP.<br/> |
+| Modo perimetral Y<br/> D2D1 \_ BORDER \_ PROP \_ EDGE \_ MODE \_ Y<br/> | Modo perimetral en la dirección Y del efecto. Puede establecerlo en fijación, encapsulado o reflejo. Consulte [Modos perimetrales](#edge-modes) para obtener más información.<br/> El tipo es D2D1 \_ BORDER \_ EDGE \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ EDGE MODE \_ \_ CLAMP.<br/> |
 
 
 
@@ -100,7 +100,7 @@ m_d2dContext->EndDraw();
 
 | Enumeración de nombre para mostrar e índice                            | Descripción                                          |
 |---------------------------------------------------------------|------------------------------------------------------|
-| Clamp<br/> D2D1 \_ BORDER \_ EDGE \_ MODE \_ CLAMP<br/>   | Repite los píxeles de los bordes de la imagen.      |
+| Clamp<br/> FIJACIÓN DEL MODO PERIMETRAL DE BORDE D2D1 \_ \_ \_ \_<br/>   | Repite los píxeles de los bordes de la imagen.      |
 | Encapsulado<br/> AJUSTE DEL MODO PERIMETRAL DE BORDE D2D1 \_ \_ \_ \_<br/>     | Usa píxeles del borde final opuesto de la imagen. |
 | Reflejo<br/> REFLEJO DEL MODO PERIMETRAL DE BORDE D2D1 \_ \_ \_ \_<br/> | Refleja píxeles sobre el borde de la imagen.         |
 
@@ -118,9 +118,9 @@ El tamaño del mapa de bits de salida es infinito para todas las entradas, excep
 
 | Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio Windows aplicaciones de la \| Tienda\] |
-| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio Windows aplicaciones de la \| Tienda\] |
-| Header                   | d2d1effects.h                                                                      |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

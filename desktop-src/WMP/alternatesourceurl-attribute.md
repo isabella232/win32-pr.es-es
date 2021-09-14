@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 765c7a3945224e82a0112c0f4dd7249e4340ec13e0d78adbd59039d25f234aaf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 574a355dfa862c4db004fa2df942e464934a38ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890076"
 ---
 # <a name="alternatesourceurl-attribute"></a>Atributo AlternateSourceURL
 
-El **atributo AlternateSourceURL** es un localizador uniforme de recursos para el elemento multimedia que actúa como alternativa a los atributos [**DLNASourceURI**](dlnasourceuri-attribute.md) y [**SourceURL.**](sourceurl-attribute.md)
+El **atributo AlternateSourceURL es** un localizador uniforme de recursos para el elemento multimedia que actúa como alternativa a los atributos [**DLNASourceURI**](dlnasourceuri-attribute.md) y [**SourceURL.**](sourceurl-attribute.md)
 
 ## <a name="applies-to"></a>Se aplica a
 
@@ -30,21 +30,21 @@ El **atributo AlternateSourceURL** es un localizador uniforme de recursos para e
 -   [**Elementos de lista de reproducción**](playlist-attributes-ref.md)
 -   [**Elementos de vídeo**](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este atributo no está disponible para los elementos multimedia de la biblioteca local del usuario actual. Solo está disponible para elementos multimedia que pertenecen a una biblioteca remota; es decir, una biblioteca que otro usuario ha puesto a disposición de los usuarios en la red principal. Para determinar si una biblioteca multimedia es remota, llame a [**IWMPLibrary::get \_ escriba**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_type).
+Este atributo no está disponible para los elementos multimedia de la biblioteca local del usuario actual. Solo está disponible para los elementos multimedia que pertenecen a una biblioteca remota; es decir, una biblioteca que otro usuario ha puesto a disposición de los usuarios en la red doméstica. Para determinar si una biblioteca multimedia es remota, llame al [**tipo IWMPLibrary::get \_**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_type).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 12<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

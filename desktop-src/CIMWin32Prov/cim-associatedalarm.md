@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1ee89533b6084999d6972da253276f1ee225dd1e517727761c893e9424f01f65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe6a637482526feecc7528eadc70dc695dafca9b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965511"
 ---
 # <a name="cim_associatedalarm-class"></a>Cim \_ AssociatedAlarm (clase)
 
 La **dependencia \_ AssociatedAlarm de CIM** asocia una alarma a un dispositivo lógico.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_AssociatedAlarm : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ AssociatedAlarm de CIM** tiene estos tipos de miembros:
 
@@ -76,16 +76,16 @@ AlarmDevice [**\_ cim que**](cim-alarmdevice.md) contiene el dispositivo de alar
 **Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ LogicalDevice**
+Tipo de datos: **\_ Cim LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**dispositivo \_ lógico CIM**](cim-logicaldevice.md) que contiene el dispositivo lógico que está alarmado.
+Un [**\_ dispositivo lógico CIM**](cim-logicaldevice.md) que contiene el dispositivo lógico que está alarmado.
 
 </dd> </dl>
 
@@ -95,7 +95,7 @@ La **clase \_ AssociatedAlarm de CIM** se deriva de la dependencia [**\_ CIM**](
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

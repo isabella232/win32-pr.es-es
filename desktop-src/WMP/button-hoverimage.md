@@ -1,6 +1,6 @@
 ---
 title: BUTTON.hoverImage
-description: El atributo hoverImage especifica o recupera la imagen que se muestra cuando button está en estado up y el usuario mantiene el mouse sobre ella con el puntero del mouse.
+description: El atributo hoverImage especifica o recupera la imagen que se muestra cuando button está en estado up y el usuario mantiene el puntero sobre él con el puntero del mouse.
 ms.assetid: 6704e63d-1def-4e8e-808f-131c3cc1c0de
 keywords:
 - BUTTON.hoverImage Reproductor de Windows Media
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8488fb599a958a96ef7b5aaa5afbf4c219110f0da5be7016a8190efe2004475d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 80b17a461ffde4b9f6777f3ce360c6b3f1747235
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889436"
 ---
 # <a name="buttonhoverimage"></a>BUTTON.hoverImage
 
-El **atributo hoverImage** especifica o recupera la imagen que se muestra cuando **button** está en estado up y el usuario mantiene el mouse sobre ella con el puntero del mouse.
+El **atributo hoverImage** especifica o recupera la imagen que se muestra cuando **button** está en estado up y el usuario mantiene el puntero sobre él con el puntero del mouse.
 
 ``` syntax
         elementID.hoverImage
@@ -29,17 +29,17 @@ El **atributo hoverImage** especifica o recupera la imagen que se muestra cuando
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de **lectura** y escritura que contiene el nombre del archivo de imagen.
+Este atributo es una cadena de lectura **y** escritura que contiene el nombre del archivo de imagen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los formatos de imagen admitidos son BMP, JPG, PNG y GIF.
 
 La imagen predeterminada es la especificada en el atributo **image** o su valor predeterminado.
 
-Si la imagen con el puntero es mayor que la región definida en el atributo ambient, se recortará la imagen con el mouse.
+Si la imagen con el puntero es mayor que la región definida en el atributo ambient, se recortará la imagen con el puntero.
 
-Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la imagen de color rojo-x).
+Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la imagen red-x).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la ima
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

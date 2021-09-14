@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Win32_Process métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2554be4b6dc7c5a61ad4679171db236bb37fb82df5e911073c6cf775afea58d1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d263403bab95840e65ce183c80fd9e760c1dc3fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119971815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174370"
 ---
 # <a name="win32_process-methods"></a>Métodos de proceso de Win32 \_
 

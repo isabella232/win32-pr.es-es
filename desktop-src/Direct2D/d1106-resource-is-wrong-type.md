@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 1bbfd6d58eeb155002fbf5e7dbe243bd8d942ddaf4fa7d7715c6211523015476
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c38ef36319b8021de918a798c94a3be0683a7b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119911195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164130"
 ---
 # <a name="d1106-resource-is-wrong-type"></a>D1106: El tipo de recurso es incorrecto
 
-El recurso especificado \[ *no* \] es de un tipo esperado.
+El recurso de \[ *recurso especificado* \] no es de un tipo esperado.
 
 ## <a name="placeholders"></a>Marcadores de posición
 
@@ -46,7 +46,7 @@ Una interfaz se ha conversión incorrectamente y se ha usado como parámetro par
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se pasa [**id2D1SolidColorBrush cuando**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) se [**espera un id2D1Geometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry)
+En el ejemplo siguiente se pasa [**un ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) cuando se [**espera un ID2D1Geometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry)
 
 
 ```C++

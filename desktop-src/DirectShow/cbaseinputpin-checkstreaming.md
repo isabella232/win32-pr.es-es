@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: de22d8a6fc634ffbb16ac111de1ad20dc0638660c5091c835a44f256d9ed1d4b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ba07d28ac93f7dc511390a851d3c737a833ef3f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120076625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173829"
 ---
 # <a name="cbaseinputpincheckstreaming-method"></a>Método CBaseInputPin.CheckStreaming
 
@@ -57,7 +57,7 @@ Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La clase derivada puede invalidar este método para realizar comprobaciones adicionales. En el método de invalidación, llame también a la implementación de la clase base.
 

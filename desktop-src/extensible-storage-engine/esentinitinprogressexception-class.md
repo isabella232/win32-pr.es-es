@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed57b146f679a0d697d19c48d7c81d4f4ed3aedef8a035b9b0f2d64fe504827e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b035465e575dd94f68b38cf72f8771c24add49d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120064985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172473"
 ---
 # <a name="esentinitinprogressexception-class"></a>Clase EsentInitInProgressException
 
-Clase base para JET_err.Iniexcepciones tInProgress.
+Clase base para JET_err. Excepciones de InitInProgress.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -47,7 +47,7 @@ Clase base para JET_err.Iniexcepciones tInProgress.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -67,7 +67,7 @@ public sealed class EsentInitInProgressException : EsentOperationException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

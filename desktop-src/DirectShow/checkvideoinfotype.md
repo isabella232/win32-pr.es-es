@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - checkbmi.h
-ms.openlocfilehash: 4463a1edb2002f64e983a38eb4a0ace5b5289b4d47ac43c8ea27bf165138ff95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c3a3c9603f974458ed3012dc651815abd432645
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119539545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172013"
 ---
 # <a name="checkvideoinfotype-function"></a>Función CheckVideoInfoType
 
@@ -67,7 +67,7 @@ Devuelve uno de los siguientes **valores HRESULT.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función llama [**a ValidateBitmapInfoHeader para**](validatebitmapinfoheader.md) validar la [**estructura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) en el tipo de medio. Si el tipo de formato no es FORMAT \_ VideoInfo, la función devuelve VFW \_ E TYPE NOT \_ \_ \_ ACCEPTED.
 
@@ -81,7 +81,7 @@ Esta función llama [**a ValidateBitmapInfoHeader para**](validatebitmapinfohead
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a55a77b47c205d05494854e5c98ea1432b18d801e381624648c87f0abf15fa63
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c713bb1bb06483b00ea426f2663c5fff6ee476c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119478804"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963128"
 ---
 # <a name="esentnocurrentindexexception-constructor"></a>Constructor EsentNoCurrentIndexException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentNoCurrentIndexException()
 public EsentNoCurrentIndexException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

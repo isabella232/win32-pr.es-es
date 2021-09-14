@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2ae3293be4ef73673ac4c89b7880b3f64da10ee1e8141dc72bf15bf40de22384
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 09c9770c23e0cd7f1f5140a5f9b9f18299ddaa23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170002"
 ---
 # <a name="cmediatypeistemporalcompressed-method"></a>Método CMediaType.IsTemporalCompressed
 
-El `IsTemporalCompressed` método determina si la secuencia usa la compresión temporal.
+El `IsTemporalCompressed` método determina si la secuencia usa compresión temporal.
 
 ## <a name="syntax"></a>Sintaxis
 

@@ -4,22 +4,22 @@ ms.assetid: 7d531fd6-f0fe-4e05-a977-888f4935332a
 title: Text Control
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfc3ee675fcc53d0ee8a0b68105d2926ae0bba45b0cbc86178daab3dc5e625de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68600f8fe1d438afde46f01007abd00f1d7d30d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118141854"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169706"
 ---
 # <a name="text-control"></a>Text Control
 
 El control Texto muestra texto estático, que puede usar un estilo predefinido.
 
-El método recomendado para mostrar texto con saltos de línea especificados es usar varios controles de texto de una línea ubicados debajo de los demás. Las secuencias de caracteres n, r n o n r del campo de texto del control no se \\ muestran como un salto de \\ \\ \\ \\ línea. El control muestra literalmente estas secuencias de caracteres.
+El método recomendado para mostrar texto con saltos de línea especificados es usar varios controles de texto de una línea ubicados debajo de los demás. Las secuencias de caracteres n, r n o n r del campo de texto del control no se muestran como \\ \\ un salto de \\ \\ \\ línea. El control muestra literalmente estas secuencias de caracteres.
 
 ## <a name="control-attributes"></a>Atributos de control
 
-Puede usar los atributos siguientes con el control Texto. Para cambiar el valor de un atributo mediante un evento, suscribe el control a un control ControlEvent en la [tabla EventMapping](eventmapping-table.md) y enumera el identificador del atributo en la columna Atributo . Escriba el identificador de ControlEvent en la columna Evento.
+Puede usar los atributos siguientes con el control Texto. Para cambiar el valor de un atributo mediante un evento, suscriba el control a un control ControlEvent en la [tabla EventMapping](eventmapping-table.md) y enumézcalo en la columna Atributo . Escriba el identificador de ControlEvent en la columna Evento.
 
 
 
@@ -29,7 +29,7 @@ Puede usar los atributos siguientes con el control Texto. Para cambiar el valor 
 | [Texto](text-control-attribute.md)                               |                                  | Texto mostrado por el control . Para establecer la fuente y el estilo de fuente de una cadena de texto, antefirima la cadena de caracteres mostrados con { style} o \\ {&style}. Donde style es un identificador enumerado en la columna TextStyle de la [tabla TextStyle](textstyle-table.md). Si ninguno de ellos está presente, pero la [**propiedad DefaultUIFont**](defaultuifont.md) se define como un estilo de texto válido, se usará esa fuente.<br/>                                                                                                                                                                                                                                                                                                                              |
 | [TimeRemaining](timeremaining-control-attribute.md)             |                                  | Este atributo permite que un control Text muestre el número aproximado de minutos y segundos restantes para una instalación. Suscriba el control Text al [control TimeRemaining ControlEvent](timeremaining-controlevent.md) en la tabla [Eventmapping](eventmapping-table.md) y escriba TimeRemaining en la columna Atributo .<br/> El instalador publica un registro que contiene un entero que representa el número de segundos restantes en la instalación. Incluya una fila en la [tabla UIText](uitext-table.md) con TimeRemaining en la columna Key. Escriba una cadena de texto con formato en la columna Texto que se ha escrito para mostrar minutos y segundos. Formatee esta cadena como se describe [**para MsiFormatRecord.**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda)<br/> |
 | [Visible](visible-control-attribute.md)                         | 0x00000000 0x00000001<br/> | Control oculto. Control visible.<br/> Incluya este bit en la palabra de bits de la columna Atributos de la [tabla Control](control-table.md) o de la tabla [BBControl](bbcontrol-table.md)para que el control sea visible u oculto tras su creación.<br/> También puede ocultar o mostrar un control mediante la [tabla ControlCondition](controlcondition-table.md).<br/>                                                                                                                                                                                                                                                                                                                                                                             |
-| [Habilitado](enabled-control-attribute.md)                         | 0x00000000 0x00000002<br/> | Control en estado deshabilitado. Control en un estado habilitado.<br/> Incluya este bit en la palabra de bits en la columna Atributos de las [tablas Control](control-table.md) o [BBControl](bbcontrol-table.md) para habilitar el control en la creación.<br/> También puede habilitar o deshabilitar un control mediante la [tabla ControlCondition](controlcondition-table.md).<br/>                                                                                                                                                                                                                                                                                                                                                                          |
+| [Enabled](enabled-control-attribute.md)                         | 0x00000000 0x00000002<br/> | Control en estado deshabilitado. Control en un estado habilitado.<br/> Incluya este bit en la palabra de bits en la columna Atributos de las [tablas Control](control-table.md) o [BBControl](bbcontrol-table.md) para habilitar el control en la creación.<br/> También puede habilitar o deshabilitar un control mediante la [tabla ControlCondition](controlcondition-table.md).<br/>                                                                                                                                                                                                                                                                                                                                                                          |
 | [Sunken](sunken-control-attribute.md)                           | 0x00000000 0x00000004<br/> | Muestra el estilo visual predeterminado. Muestra el control con un aspecto 3D.<br/> Incluya estos bits en la palabra de bits en la columna Atributos de la [tabla Control](control-table.md).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | [RTLRO](rtlro-control-attribute.md)                             | 0x00000000 0x00000020<br/> | El texto del control se muestra en orden de lectura de izquierda a derecha. El texto del control se muestra en orden de lectura de derecha a izquierda.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | [Alineado a la derecha](rightaligned-control-attribute.md)               | 0x00000000 0x00000040<br/> | El texto del control se alinea a la izquierda. El texto del control se alinea a la derecha.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -43,7 +43,7 @@ Puede usar los atributos siguientes con el control Texto. Para cambiar el valor 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este control se puede crear a partir de la clase STATIC mediante [**la función CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Tiene los estilos **SS \_ LEFT,** **WS \_ CHILD** y **WS \_ GROUP.**
 

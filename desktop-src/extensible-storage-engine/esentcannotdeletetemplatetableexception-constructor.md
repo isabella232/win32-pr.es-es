@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 02cf1d4205b634e0bf29e47b7c3fb8dd1e83904fa730b46bf9136d5035d39620
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9dbe452ae605d7cd85af419e5bda62e1bcca8af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117715294"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172482"
 ---
 # <a name="esentcannotdeletetemplatetableexception-constructor"></a>Constructor EsentCannotDeleteTemplateTableException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCannotDeleteTemplateTableException()
 public EsentCannotDeleteTemplateTableException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

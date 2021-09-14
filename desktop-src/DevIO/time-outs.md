@@ -4,12 +4,12 @@ ms.assetid: 271d4c68-1f6d-4483-a9a1-703220de761f
 title: Tiempos de espera
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d6226e8a2d13020bd4dc90a416e7ef359fbd919cf54e886c5e691e5fca2cdea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6db31fafc0f4d98832f1fb7fa5d22b32cba33d73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118956794"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164294"
 ---
 # <a name="time-outs"></a>Tiempos de espera
 
@@ -17,7 +17,7 @@ Un identificador de un recurso de comunicaciones tiene un conjunto asociado de p
 
 Cuando una aplicación abre un recurso de comunicaciones, el sistema establece los valores de tiempo de espera del recurso en los valores en vigor cuando se usó el recurso por última vez. Si el recurso de comunicaciones nunca se ha abierto, el sistema establece los valores de tiempo de espera en algún valor predeterminado. En cualquier caso, una aplicación siempre debe determinar los valores de tiempo de espera actuales después de abrir el recurso y, a continuación, establecerlos explícitamente para que cumplan sus requisitos. Para determinar los valores de tiempo de espera actuales de un recurso de comunicaciones, use la [**función GetCommTimeouts.**](/windows/desktop/api/Winbase/nf-winbase-getcommtimeouts) Para cambiar los valores de tiempo de espera, use la [**función SetCommTimeouts.**](/windows/desktop/api/Winbase/nf-winbase-setcommtimeouts)
 
-Los parámetros de tiempo de espera habilitan dos tipos de tiempos de espera. Se produce un tiempo de espera de intervalo cuando el tiempo entre la recepción de dos caracteres cualquiera supera un número especificado de milisegundos. El tiempo se inicia cuando se recibe el primer carácter y se reinicia cuando se recibe cada nuevo carácter. Se produce un tiempo de espera total cuando la cantidad total de tiempo consumido por una operación de lectura supera un número calculado de milisegundos. El tiempo se inicia inmediatamente cuando comienza la operación de E/S. Las operaciones de escritura solo admiten tiempos de espera totales. Las operaciones de lectura admiten intervalos y tiempos de espera totales, que se pueden usar por separado o combinarse.
+Los parámetros de tiempo de espera habilitan dos tipos de tiempos de espera. Se produce un tiempo de espera de intervalo cuando el tiempo entre la recepción de dos caracteres cualquiera supera un número especificado de milisegundos. El tiempo comienza cuando se recibe el primer carácter y se reinicia cuando se recibe cada nuevo carácter. Se produce un tiempo de espera total cuando la cantidad total de tiempo consumido por una operación de lectura supera un número calculado de milisegundos. El tiempo se inicia inmediatamente cuando comienza la operación de E/S. Las operaciones de escritura solo admiten tiempos de espera totales. Las operaciones de lectura admiten tiempos de espera de intervalo y total, que se pueden usar por separado o combinarse.
 
 El tiempo, en milisegundos, del período de tiempo de espera total de una operación de lectura o escritura se calcula mediante el multiplicador y los valores constantes de la estructura [**COMMTIMEOUTS**](/windows/desktop/api/Winbase/ns-winbase-commtimeouts) especificada en la función [**GetCommTimeouts**](/windows/desktop/api/Winbase/nf-winbase-getcommtimeouts) o [**SetCommTimeouts.**](/windows/desktop/api/Winbase/nf-winbase-setcommtimeouts) Se usa la siguiente fórmula:
 

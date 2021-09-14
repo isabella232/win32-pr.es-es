@@ -15,11 +15,11 @@ api_location:
 - d3dx9.lib
 - d3dx9.dll
 ms.openlocfilehash: 9dc9bb79d1ebbe536661347d76d13846dead6aa8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174809"
 ---
 # <a name="d3dxcoloradjustcontrast-function-d3dx9mathh"></a>Función D3DXColorAdjustContrast (D3dx9math.h)
 
@@ -65,7 +65,7 @@ Puntero a una estructura [**D3DXCOLOR de**](d3dxcolor.md) origen.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor de contraste. Este parámetro interpola linealmente entre el cincuenta por ciento gris y el color, pC. No hay límites en el valor de c. Si este parámetro es cero, el color devuelto es cincuenta por ciento gris. Si este parámetro es 1, el color devuelto es el color original.
+Valor de contraste. Este parámetro interpola linealmente entre el porcentaje de gris del cincuenta por ciento y el color, pC. No hay límites en el valor de c. Si este parámetro es cero, el color devuelto es un gris del 50 por ciento. Si este parámetro es 1, el color devuelto es el color original.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
 Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el resultado del ajuste de contraste.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El canal alfa de entrada se copia, sin modificar, en el canal alfa de salida.
 
@@ -103,7 +103,7 @@ Si c es mayor que 0 y menor que 1, se reduce el contraste. Si c es mayor que 1, 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

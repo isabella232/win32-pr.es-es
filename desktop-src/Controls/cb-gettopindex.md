@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2360b07c86d6d5bcbb8296d705e8ef65b3a81481a8fc647a362aedc729f38b42
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 59d5d6834dd954261822c8b1cb1a449d16398284
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120089115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174185"
 ---
 # <a name="cb_gettopindex-message"></a>Mensaje \_ GETTOPINDEX de CB
 
@@ -45,7 +45,7 @@ No se usa; debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el mensaje es correcto, el valor devuelto es el índice del primer elemento visible en el cuadro de lista del cuadro combinado.
+Si el mensaje se realiza correctamente, el valor devuelto es el índice del primer elemento visible en el cuadro de lista del cuadro combinado.
 
 Si se produce un error en el mensaje, el valor devuelto es CB \_ ERR.
 
@@ -53,11 +53,11 @@ Si se produce un error en el mensaje, el valor devuelto es CB \_ ERR.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

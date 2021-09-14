@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bebbf730180bf2d017dc3d193ad92772fa312af4a3737110d93fcfa5bed2ff6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7b3de12950aed383f48dcde5d8978724037f86e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118840423"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889268"
 ---
 # <a name="buttongroupcursor"></a>BUTTONGROUP.cursor
 
@@ -33,24 +33,24 @@ Este atributo es una cadena de **lectura** y escritura que contiene uno de los v
 
 
 
-| Valor            | Descripción                                                                                 |
+| Value            | Descripción                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------|
 | sistema           | Predeterminada. Cursor dependiente de la plataforma (normalmente una flecha).                                      |
 | Mano             | Mano.                                                                                       |
-| ayuda             | Flecha con signo de interrogación que indica que la Ayuda está disponible.                                      |
+| help             | Flecha con signo de interrogación que indica que la Ayuda está disponible.                                      |
 | sizeall          | Flecha de cuatro puntas que apunta al norte, sur, este y oeste.                                   |
-| sizenesw         | Flecha de doble punta que apunta hacia el noreste y el suroeste.                                      |
+| sizenesw         | Flecha de doble punta que apunta hacia el nordeste y el suroeste.                                      |
 | sizens           | Flecha de doble punta que apunta hacia el norte y el sur.                                              |
-| sizenwse         | Flecha de doble punta que apunta al noroeste y al sudeste.                                      |
+| sizenwse         | Flecha de doble punta que apunta al sudeste y al sudeste.                                      |
 | sizewe           | Flecha de doble punta que apunta hacia el oeste y el este.                                                |
-| arriba          | Flecha vertical que apunta hacia arriba.                                                             |
+| uparrow          | Flecha vertical que apunta hacia arriba.                                                             |
 | \*.ani o \* .cur | Cualquier archivo .ani o .cur (debe estar en el mismo directorio que el archivo .wms o en el archivo .wmz). |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El cursor especificado se aplica a todos los botones de **BUTTONGROUP.**
 
@@ -68,7 +68,7 @@ Las rutas de acceso de nombre de archivo de cursor se omiten, por lo que el arch
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

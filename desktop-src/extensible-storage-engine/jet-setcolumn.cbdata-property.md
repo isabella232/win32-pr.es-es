@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9f263b39bc83022a67990600e3d18b3386c3da92d27e10def01fde27fdd338a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ebe108fb022a2c91eae8e5c632cb15b3637b47a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118253529"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962824"
 ---
 # <a name="jet_setcolumncbdata-property"></a>JET_SETCOLUMN.cbData, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece el tamaño de los datos que se establecerán.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

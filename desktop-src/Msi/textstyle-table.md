@@ -4,28 +4,28 @@ ms.assetid: a351e67a-8f51-41bf-9202-56488b870fa7
 title: Tabla TextStyle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6f8a5b3141314722bc5b92e34ea214fa8e1505babfbc8b7f942899e6c6779c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c9993362228e37f01c0e53683755f7bd1310eaa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118623494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169686"
 ---
 # <a name="textstyle-table"></a>Tabla TextStyle
 
 En la tabla TextStyle se enumeran los distintos estilos de fuente que se usan en los controles que tienen texto.
 
-La tabla TextStyle tiene las siguientes columnas.
+La tabla TextStyle tiene las columnas siguientes.
 
 
 
-| Columna    | Tipo                               | Key | Nullable |
+| Columna    | Tipo                               | Clave | Nullable |
 |-----------|------------------------------------|-----|----------|
-| Textstyle | [Identificador](identifier.md)       | Y   | N        |
-| FaceName  | [Texto](text.md)                   | N   | N        |
-| Size      | [Entero](integer.md)             | N   | N        |
-| Color     | [DoubleInteger](doubleinteger.md) | N   | Y        |
-| StyleBits | [Entero](integer.md)             | N   | Y        |
+| Textstyle | [Identificador](identifier.md)       | Y   | No        |
+| FaceName  | [Texto](text.md)                   | No   | No        |
+| Size      | [Entero](integer.md)             | No   | No        |
+| Color     | [DoubleInteger](doubleinteger.md) | No   | Y        |
+| StyleBits | [Entero](integer.md)             | No   | Y        |
 
 
 
@@ -59,9 +59,9 @@ Tamaño de fuente medido en puntos. Debe ser un número no negativo.
 <span id="Color"></span><span id="color"></span><span id="COLOR"></span>Color
 </dt> <dd>
 
-Esta columna especifica el color del texto mostrado por un [control Text .](text-control.md) Todos los demás tipos de controles siempre usan el color de texto predeterminado. El valor que se coloca en esta columna se debe calcular con la siguiente fórmula: 65536 azul + 256 verde + rojo, donde rojo, verde y azul están cada uno en el intervalo de \* \* 0-255. El valor no debe superar 16777215, que es el valor de blanco. El valor es 0 para negro, 255 para rojo, 65280 para verde, 16711680 para azul y 8421504 para gris. Si el campo está vacío, se especifica el color predeterminado.
+Esta columna especifica el color del texto mostrado por un [control Text](text-control.md). Todos los demás tipos de controles siempre usan el color de texto predeterminado. El valor que se coloca en esta columna debe calcularse mediante la fórmula siguiente: 65536 blue + 256 green + red, donde red, green y blue están cada uno en el intervalo de \* \* 0-255. El valor no debe superar 16777215, que es el valor de white. El valor es 0 para negro, 255 para rojo, 65280 para verde, 16711680 para azul y 8421504 para gris. Si el campo está vacío, se especifica el color predeterminado.
 
-No coloque controles de [texto transparentes](text-control.md) sobre mapas de bits de color. Es posible que el texto no esté visible si el usuario cambia la combinación de colores para mostrar. Por ejemplo, el texto puede volverse invisible si el usuario establece el parámetro de contraste alto para la accesibilidad.
+No coloque controles de [texto transparentes](text-control.md) sobre mapas de bits de color. Es posible que el texto no esté visible si el usuario cambia la combinación de colores para mostrar. Por ejemplo, el texto puede hacerse invisible si el usuario establece el parámetro de contraste alto para la accesibilidad.
 
 </dd> <dt>
 
@@ -77,9 +77,9 @@ Los bits de estilo individuales tienen los siguientes valores.
 | Constante                             | Hexadecimal | Decimal | Estilo      |
 |--------------------------------------|-------------|---------|------------|
 | **msidbTextStyleStyleBitsBold**      | 0x001       | 1       | Negrita       |
-| **msidbTextStyleStyleBitsItalic**    | 0x002       | 2       | Cursiva     |
-| **msidbTextStyleStyleBitsUnderline** | 0x004       | 4       | Subrayado  |
-| **msidbTextStyleStyleBitsStrike**    | 0x008       | 8       | Out out (Fuera de la salida) |
+| **msidbTextStyleBitsItalic**    | 0x002       | 2       | Cursiva     |
+| **msidbTextStyleBitsUnderline** | 0x004       | 4       | Subrayado  |
+| **msidbTextStyleStyleBitsStrike**    | 0x008       | 8       | Tacha |
 
 
 

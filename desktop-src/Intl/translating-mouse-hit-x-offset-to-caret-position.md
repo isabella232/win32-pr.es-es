@@ -1,15 +1,15 @@
 ---
-description: Convencionalmente, el usuario puede seleccionar la posición del carácter de asociación (cp) haciendo clic en la mitad final del carácter &\# 0034;cp-1&0034; o la mitad inicial del \# carácter &\# 0034;cp&\# 0034;.
+description: Convencionalmente, el usuario puede seleccionar la posición del carácter de vínculo (cp) haciendo clic en la mitad final del carácter &\# 0034;cp-1&0034; o la mitad inicial del \# carácter &\# 0034;cp&\# 0034;.
 ms.assetid: 36b6ff00-7ea8-40e5-90f7-917cef117d4a
 title: Traducción del desplazamiento X de posicionamiento del mouse a la posición del cursor de cursor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e135efaccb6454e55999d21f00e762d749eb380751848aef88cf4b4e5b8e913
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f993de35ebffac4740b367927d1a8edf864a813e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119693185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171862"
 ---
 # <a name="translating-mouse-hit-x-offset-to-caret-position"></a>Traducción del desplazamiento X de posicionamiento del mouse a la posición del cursor de cursor
 

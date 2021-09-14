@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102661
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 7ae8fad71ee0f9346bb617431cb5b446d1f7cc173ba665dd85cfc619400fe1f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 62b249891c29127b0904af7ebf9333cc4362ed48
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118773743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964476"
 ---
 # <a name="esentrfsfailureexception-methods"></a>Métodos de EsentRfsFailureException 
 

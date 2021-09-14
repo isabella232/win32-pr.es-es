@@ -3,7 +3,7 @@ title: Interfaz ID3DX11EffectDepthStencilViewVariable (D3dx11effect.h)
 description: Una interfaz depth-stencil-view-variable accede a una vista de galería de símbolos de profundidad.
 ms.assetid: 316bf0cc-a7cd-4a40-932a-d566e3c2001e
 keywords:
-- Interfaz ID3DX11EffectDepthStencilViewVariable Direct3D 11
+- INTERFAZ ID3DX11EffectDepthStencilViewVariable Direct3D 11
 - Id3DX11EffectDepthStencilViewVariable interface Direct3D 11 , descrito
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d445f2250ec29dbc4b964fecf538a4272985d2396c3cd0e605ca751aa810b3d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51961bd1300157eef4acb4dd15484d5146a166f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118535923"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963816"
 ---
 # <a name="id3dx11effectdepthstencilviewvariable-interface"></a>Interfaz ID3DX11EffectDepthStencilViewVariable
 
 Una interfaz depth-stencil-view-variable accede a una vista de galería de símbolos de profundidad.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ID3DX11EffectDepthStencilViewVariable** hereda de [**ID3DX11EffectVariable**](id3dx11effectvariable.md). **ID3DX11EffectDepthStencilViewVariable** también tiene estos tipos de miembros:
 
@@ -50,7 +50,7 @@ La **interfaz ID3DX11EffectDepthStencilViewVariable** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
@@ -75,7 +75,7 @@ La **interfaz ID3DX11EffectDepthStencilViewVariable** tiene estos métodos.
 [**ID3DX11EffectVariable**](id3dx11effectvariable.md)
 </dt> <dt>
 
-[Interfaces de Efectos 11](d3d11-graphics-reference-effects11-interfaces.md)
+[Efectos 11 interfaces](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)

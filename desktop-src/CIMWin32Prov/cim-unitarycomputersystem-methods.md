@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: CIM_UnitaryComputerSystem métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b432ff3425800d723b88058d83bc91db3fd96ba1604bcd68b44b042f4a122028
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 77c4724d6175211ed4c6cb25d699481f1b4723f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118677381"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174525"
 ---
 # <a name="cim_unitarycomputersystem-methods"></a>Métodos \_ unitaryComputerSystem de CIM
 

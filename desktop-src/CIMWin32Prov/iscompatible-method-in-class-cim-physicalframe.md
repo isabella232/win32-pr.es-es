@@ -1,5 +1,5 @@
 ---
-description: Comprueba si el marco físico al que se hace referencia se puede contener o insertar en el paquete físico.
+description: Comprueba si el marco físico al que se hace referencia puede incluirse en el paquete físico o insertarlo en este.
 ms.assetid: 8102569d-a956-445a-ae42-23eb206ba224
 ms.tgt_platform: multiple
 title: Método IsCompatible de la CIM_PhysicalFrame clase
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 283be65511fb82c29dd21ff17cfd864739232ef081b738e0622f2b89a96d47ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 121405e66a9361e832f6accb24ca6e303bb8e280
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120064484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174509"
 ---
 # <a name="iscompatible-method-of-the-cim_physicalframe-class"></a>Método IsCompatible de la clase \_ PhysicalFrame de CIM
 
-El **método IsCompatible** comprueba si el marco físico al que se hace referencia se puede contener o insertar en el paquete físico. En una subclase, el conjunto de códigos de retorno posibles se puede especificar mediante un **calificador ValueMap** en el método . Las cadenas a las que se traduce el contenido **de ValueMap** también se pueden especificar en la subclase como calificador de **matriz Values.** Este método se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
+El **método IsCompatible** comprueba si el marco físico al que se hace referencia puede contener o insertarse en el paquete físico. En una subclase, el conjunto de códigos de retorno posibles se puede especificar mediante un **calificador ValueMap** en el método . Las cadenas a las que se traduce el contenido de **ValueMap** también se pueden especificar en la subclase como calificador de **matriz Values.** Este método se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ uint32 IsCompatible(
 *ElementToCheck* \[ En\]
 </dt> <dd>
 
-Referencia al elemento físico con el que se ejecuta el método **IsCompatible.**
+Referencia al elemento físico en el que se ejecuta el método **IsCompatible.**
 
 </dd> </dl>
 
@@ -58,11 +58,11 @@ Referencia al elemento físico con el que se ejecuta el método **IsCompatible.*
 
 Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 

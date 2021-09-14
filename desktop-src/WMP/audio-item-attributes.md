@@ -4,27 +4,27 @@ description: Atributos de elementos de audio
 ms.assetid: fbaff235-47bb-4fa2-8961-53dac26142dd
 keywords:
 - Reproductor de Windows Media,atributos de elemento de audio
-- Reproductor de Windows Media Atributos de elementos de audio y móviles
+- Reproductor de Windows Media Móvil, atributos de elemento de audio
 - Reproductor de Windows Media modelo de objetos, atributos de elemento de audio
 - modelo de objetos, atributos de elemento de audio
 - ActiveX control, atributos de elemento de audio
-- Reproductor de Windows Media ActiveX control,atributos de elemento de audio
+- Reproductor de Windows Media ActiveX control, atributos de elemento de audio
 - Reproductor de Windows Media Control de ActiveX móvil, atributos de elementos de audio
 - referencia para el modelo de objetos, atributos de elementos de audio
-- atributos, elementos de audio
+- attributes,audio items
 - atributos de elemento de audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dda5edbeb3303eedc06833eb23cc42fec41ecabd6121a0c01f162c1664703609
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd7abdb134d24d79ffab6f671fd3280b21517ec0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120004025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889900"
 ---
 # <a name="audio-item-attributes"></a>Atributos de elementos de audio
 
-Los atributos siguientes están disponibles para un elemento de audio en la biblioteca.
+Los atributos siguientes están disponibles para un elemento de audio de la biblioteca.
 
 -   [**Atributo AcquisitionTime**](acquisitiontime-attribute.md)
 -   [**Atributo AlternateSourceURL**](alternatesourceurl-attribute.md)
@@ -100,7 +100,7 @@ Los atributos siguientes están disponibles para un elemento de audio en la bibl
 -   [**Atributo WM/GenreID**](wm-genreid-attribute.md)
 -   [**Atributo WM/InitialKey**](wm-initialkey-attribute.md)
 -   [**Atributo WM/Language**](wm-language-attribute.md)
--   [**Atributo WM/Attribute**](wm-lyrics-attribute.md)
+-   [**Atributo WM/Desatribuciones**](wm-lyrics-attribute.md)
 -   [**Atributo WM/MCDI**](wm-mcdi-attribute.md)
 -   [**Atributo WM/MediaClassPrimaryID**](wm-mediaclassprimaryid-attribute.md)
 -   [**Atributo WM/MediaClassSecondaryID**](wm-mediaclasssecondaryid-attribute.md)

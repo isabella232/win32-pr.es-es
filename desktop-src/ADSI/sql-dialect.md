@@ -8,21 +8,21 @@ keywords:
 - dialect ADSI , SQL dialecto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7483a5e3785f410e6c2fd875122ba24618a82b70d1ed6dc9a85105ae4e8dcfa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0b0936a54bc7bd0028717967ce779fe2f2048a33
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119262055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174125"
 ---
 # <a name="sql-dialect"></a>SQL Dialecto
 
 El SQL, derivado del Lenguaje de consulta estructurado, usa expresiones legibles para definir instrucciones de consulta. Use una instrucción SQL consulta con las siguientes interfaces de búsqueda ADSI:
 
--   Las [ActiveX de objetos de datos (ADO),](searching-with-activex-data-objects-ado.md) que son interfaces de Automation que usan OLE DB.
+-   Las [ActiveX data object (ADO),](searching-with-activex-data-objects-ado.md) que son interfaces de Automation que usan OLE DB.
 -   [OLE DB](searching-with-ole-db.md), que es un conjunto de interfaces de C/C++ para consultar bases de datos.
 
-SQL instrucciones requieren la siguiente sintaxis.
+SQL instrucciones requieren la sintaxis siguiente.
 
 
 ```sql
@@ -37,17 +37,17 @@ En la tabla siguiente se enumeran SQL palabras clave de instrucción de consulta
 
 | Palabra clave  | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SELECT   | Especifica una lista separada por comas de atributos que se recuperarán para cada objeto. Si especifica \* , la consulta recupera solo ADsPath de cada objeto.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| FROM     | Especifica el ADsPath de la base de la búsqueda. Por ejemplo, el ADsPath del contenedor Users de un dominio Active Directory podría ser "LDAP://CN=Users,DC=Fabrikam,DC=COM". Tenga en cuenta que la ruta de acceso está entre comillas simples (').                                                                                                                                                                                                                                                                                                                                                    |
+| SELECT   | Especifica una lista separada por comas de atributos que se recuperarán para cada objeto. Si especifica \* , la consulta recupera solo el ADsPath de cada objeto.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| FROM     | Especifica el ADsPath de la base de la búsqueda. Por ejemplo, el ADsPath del contenedor Users en un dominio Active Directory podría ser "LDAP://CN=Users,DC=Fabrikam,DC=COM". Tenga en cuenta que la ruta de acceso está entre comillas simples (').                                                                                                                                                                                                                                                                                                                                                    |
 | WHERE    | Palabra clave opcional que especifica el filtro de consulta.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ORDER BY | Palabra clave opcional que genera una ordenación del lado servidor si el servidor admite el control de ordenación LDAP. Active Directory admite el control de ordenación, pero puede afectar al rendimiento del servidor, especialmente si el conjunto de resultados es grande. La lista de ordenación es una lista separada por comas de atributos en los que se va a ordenar. Tenga en cuenta que Active Directory solo admite una única clave de ordenación. Puede usar las palabras clave ASC y DESC opcionales para especificar el criterio de ordenación ascendente o descendente. el valor predeterminado es ascendente. La palabra clave ORDER BY invalida cualquier clave de ordenación especificada con la propiedad "Ordenar por" del objeto Command de ADO. |
+| ORDER BY | Palabra clave opcional que genera una ordenación del lado servidor si el servidor admite el control de ordenación LDAP. Active Directory admite el control de ordenación, pero puede afectar al rendimiento del servidor, especialmente si el conjunto de resultados es grande. La lista de ordenación es una lista separada por comas de atributos en los que se va a ordenar. Tenga en cuenta que Active Directory solo admite una única clave de ordenación. Puede usar las palabras clave ASC y DESC opcionales para especificar un criterio de ordenación ascendente o descendente. el valor predeterminado es ascendente. La palabra clave ORDER BY invalida cualquier clave de ordenación especificada con la propiedad "Ordenar por" del objeto Command de ADO. |
 
 
 
  
 
 > [!Note]  
-> En los casos en los que se usa un juego de caracteres multibyte, si ADO realiza la búsqueda con el dialecto SQL, no se puede usar una barra diagonal inversa para escapar caracteres. En su lugar, se deben usar las secuencias de escape [enumeradas en](search-filter-syntax.md) Caracteres especiales. Por ejemplo, para una instrucción que usaba la sintaxis "samAccountName= Test", que usa la barra diagonal inversa, " ", para escapar el paréntesis abierto, "(", en su lugar, reemplazaría la barra diagonal inversa por el carácter especial " 28", como se muestra a \( \\ continuación: \\ "samAccountName= \\ 28Test".
+> En los casos en los que se usa un juego de caracteres multibyte, si ADO realiza la búsqueda con el dialecto SQL, no se puede usar una barra diagonal inversa para caracteres de escape. En su lugar, se deben usar las secuencias de escape [enumeradas en](search-filter-syntax.md) Caracteres especiales. Por ejemplo, para una instrucción que usa la sintaxis "samAccountName= Test", que usa la barra diagonal inversa, " ", para escapar el paréntesis abierto, "(", en su lugar, reemplazaría la barra diagonal inversa por el carácter especial " 28", como se muestra a \( \\ continuación: \\ "samAccountName= \\ 28Test".
 
  
 
@@ -71,7 +71,7 @@ SELECT ADsPath, cn FROM 'LDAP://OU=Sales,DC=Fabrikam,DC=COM' WHERE objectCategor
 
 
 
-La gramática formal para SQL consultas se define en el ejemplo de código siguiente. Todas las palabras clave no tienen en cuenta mayúsculas de minúsculas.
+La gramática formal para SQL consultas se define en el ejemplo de código siguiente. Todas las palabras clave no tienen en cuenta las mayúsculas y minúsculas.
 
 
 ```sql
@@ -118,7 +118,7 @@ SQL el proveedor de Active Directory OLE DB no admite las combinaciones internas
 [Buscar con objetos ActiveX datos](searching-with-activex-data-objects-ado.md)
 </dt> <dt>
 
-[Buscar con OLE DB](searching-with-ole-db.md)
+[Búsqueda con OLE DB](searching-with-ole-db.md)
 </dt> </dl>
 
  

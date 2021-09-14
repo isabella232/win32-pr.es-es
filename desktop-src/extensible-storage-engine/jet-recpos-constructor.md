@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_RECPOS constructor'
+description: 'Más información sobre: constructor de JET_RECPOS'
 title: JET_RECPOS constructor
 TOCTitle: 'JET_RECPOS constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_RECPOS.#ctor
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b93e000f82f01217826ff7f9f8c5e92759bcbd2e18c718298604a3777c2dab93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f06d120fbdfe39479ca219f84710e035a7e590a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117893403"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962931"
 ---
 # <a name="jet_recpos-constructor"></a>JET_RECPOS constructor
 
@@ -50,7 +50,7 @@ Dim instance As New JET_RECPOS()
 public JET_RECPOS()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

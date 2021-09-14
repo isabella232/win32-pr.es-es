@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101698
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 763159cb952256757b4ec93577d5a745102ba98d533b9443bda3fcd52b9c1eaf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36a81b5817c52e7cf3c0effea8c9492f85689563
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117710753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964576"
 ---
 # <a name="esentfileiofailexception-methods"></a>Métodos de EsentFileIOFailException 
 
@@ -78,7 +78,7 @@ El [tipo EsentFileIOFailException](./esentfileiofailexception-class.md) expone l
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

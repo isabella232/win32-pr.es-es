@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 26a0e000f5b2b8de645924300eb650a05a66a4b57c16c5eda3f124e7bc0903a8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 94ce34393ec494f34cce621afc168a4d6bbe4325
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119432105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169886"
 ---
 # <a name="validatestringptra-macro"></a>Macro ValidateStringPtrA
 
@@ -44,7 +44,7 @@ void ValidateStringPtrA(
 
 <dl> <dt>
 
-*p* 
+*P* 
 </dt> <dd>
 
 Puntero a una cadena ANSI terminada en NULL.
@@ -55,7 +55,7 @@ Puntero a una cadena ANSI terminada en NULL.
 
 Esta macro no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta macro se omite a menos que se defina DEBUG, DEBUG o VFWROBUST cuando se DirectShow archivo de encabezado de \_ clase base.
 

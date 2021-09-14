@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbd83336d27bf8e47900554a6f3c36d2d767e5e8ddd4b8680b50050d87da79bc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 33816abe36e2d1e1593e6365061a500d072c155b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119699265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173934"
 ---
 # <a name="cbem_setimagelist-message"></a>Mensaje \_ SETIMAGELIST de CBEM
 
@@ -43,7 +43,7 @@ Identificador de la lista de imágenes que se va a establecer para el control.
 
 Devuelve el identificador de la lista de imágenes previamente asociada al control o devuelve **NULL** si no se estableció previamente ninguna lista de imágenes.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!IMPORTANT]
 > El alto de las imágenes de la lista de imágenes puede cambiar los requisitos de tamaño del control ComboBoxEx. Se recomienda cambiar el tamaño del control después de enviar este mensaje para asegurarse de que se muestra correctamente.
@@ -54,11 +54,11 @@ Devuelve el identificador de la lista de imágenes previamente asociada al contr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

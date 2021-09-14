@@ -8,12 +8,12 @@ keywords:
 - consultas, sintaxis de filtro de búsqueda
 ms.topic: article
 ms.date: 09/25/2020
-ms.openlocfilehash: 9ea6b347da1c840ef6bd1dd32bb32f96e7be86dfb93e6c1e71cdbb06bd52ba97
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 28875bd49a3d1df7418c37706e58852066bbe08a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120005495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172170"
 ---
 # <a name="search-filter-syntax"></a>Sintaxis de filtro de búsqueda
 
@@ -26,9 +26,9 @@ ADSI admite los filtros de búsqueda LDAP tal como se define en RFC2254. Estos f
 | Filtro de búsqueda                                                               | Descripción                                                |
 |-----------------------------------------------------------------------------|------------------------------------------------------------|
 | "(objectClass= \* )"                                                          | Todos los objetos.                                               |
-| "(&(objectCategory=person)(objectClass=user)(!( cn=andy)))"                  | Todos los objetos de usuario, menos "andy".                               |
+| "(&(objectCategory=person)(objectClass=user)(!( cn=andy)))"                  | Todos los objetos de usuario menos "andy".                               |
 | "(sn=sm \* )"                                                                 | Todos los objetos con un apellido que empieza por "sm".          |
-| "(&(objectCategory=person)(objectClass=contact)( \| (sn=Smith)(sn=Johnson)))" | Todos los contactos con un apellido igual a "Smith" o "Johnson". |
+| "(&(objectCategory=person)(objectClass=contact)( \| (sn=Smith)(sn=Johnson)))" | Todos los contactos con un apellido igual a "Smith" o "Smith". |
 
 
 
@@ -52,7 +52,7 @@ o
 
 
 
-Los filtros de búsqueda ADSI se usan de dos maneras. Forman parte del dialecto LDAP para enviar consultas a través del proveedor OLE DB cliente. También se usan con la [**interfaz IDirectorySearch.**](/windows/desktop/api/Iads/nn-iads-idirectorysearch)
+Los filtros de búsqueda adsi se usan de dos maneras. Forman parte del dialecto LDAP para enviar consultas a través del OLE DB cliente. También se usan con la [**interfaz IDirectorySearch.**](/windows/desktop/api/Iads/nn-iads-idirectorysearch)
 
 ## <a name="operators"></a>Operadores
 
@@ -74,7 +74,7 @@ En la tabla siguiente se enumeran los operadores de filtro de búsqueda usados c
 
  
 
-Además de los operadores anteriores, LDAP define dos identificadores de objeto de regla de coincidencia ( IDO) que se pueden usar para realizar comparaciones bit a bit de valores numéricos. Las reglas de coincidencia tienen la siguiente sintaxis.
+Además de los operadores anteriores, LDAP define dos identificadores de objeto de regla (ID) que se pueden usar para realizar comparaciones bit a bit de valores numéricos. Las reglas de coincidencia tienen la sintaxis siguiente.
 
 
 ```C++
@@ -83,7 +83,7 @@ Además de los operadores anteriores, LDAP define dos identificadores de objeto 
 
 
 
-" &lt; attribute name " is the &gt; **lDAPDisplayName** of the attribute, " &lt; rule OID " is the &gt; OID for the matching rule, and " value " is the &lt; value to use for &gt; comparison. Tenga en cuenta que no se pueden usar espacios en esta cadena. " &lt; value " debe ser un número decimal; no puede ser un número hexadecimal o un nombre constante &gt; como ADS GROUP TYPE SECURITY **\_ \_ \_ \_ ENABLED**. Para obtener más información sobre los atributos de Active Directory disponibles, vea [Todos los atributos](/windows/desktop/ADSchema/attributes-all).
+" &lt; attribute name " is the &gt; **lDAPDisplayName** of the attribute, " &lt; rule OID " is the &gt; OID for the matching rule, and " value " is the &lt; value to use for &gt; comparison. Tenga en cuenta que los espacios no se pueden usar en esta cadena. " &lt; value " debe ser un número decimal; no puede ser un número hexadecimal o un nombre constante como &gt; ADS GROUP TYPE SECURITY **\_ \_ \_ \_ ENABLED**. Para obtener más información sobre los atributos de Active Directory disponibles, vea [Todos los atributos](/windows/desktop/ADSchema/attributes-all).
 
 En la tabla siguiente se enumeran los ED de regla de coincidencia implementados por LDAP.
 
@@ -91,9 +91,9 @@ En la tabla siguiente se enumeran los ED de regla de coincidencia implementados 
 
 | OID de regla de coincidencia       | Identificador de cadena (de Ntldap.h)   | Descripción                                                                                                                                                                                   |
 |-------------------------|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.2.840.113556.1.4.803  | **BIT \_ DE REGLA DE COINCIDENCIA LDAP \_ \_ \_ Y**  | Solo se encuentra una coincidencia si todos los bits del atributo coinciden con el valor. Esta regla es equivalente a un operador **AND** bit a bit.                                                                  |
-| 1.2.840.113556.1.4.804  | **BIT \_ DE REGLA DE COINCIDENCIA LDAP \_ \_ \_ O**   | Se encuentra una coincidencia si algún bit del atributo coincide con el valor. Esta regla es equivalente a un operador **OR** bit a bit.                                                                        |
-| 1.2.840.113556.1.4.1941 | **REGLA \_ DE COINCIDENCIA LDAP EN \_ \_ \_ CHAIN** | Esta regla se limita a los filtros que se aplican al DN. Se trata de un operador de coincidencia especial "extendido" que recorre la cadena de la familia en objetos hasta llegar a la raíz hasta que encuentra una coincidencia. |
+| 1.2.840.113556.1.4.803  | **BIT \_ DE REGLA DE COINCIDENCIA LDAP \_ \_ \_ Y**  | Solo se encuentra una coincidencia si todos los bits del atributo coinciden con el valor . Esta regla es equivalente a un operador **AND** bit a bit.                                                                  |
+| 1.2.840.113556.1.4.804  | **BIT \_ DE REGLA DE COINCIDENCIA LDAP \_ \_ \_ O**   | Se encuentra una coincidencia si algún bit del atributo coincide con el valor . Esta regla es equivalente a un operador **OR** bit a bit.                                                                        |
+| 1.2.840.113556.1.4.1941 | **REGLA \_ DE COINCIDENCIA LDAP EN \_ \_ \_ CADENA** | Esta regla se limita a los filtros que se aplican al DN. Se trata de un operador de coincidencia especial "extendido" que recorre la cadena de objetos hasta la raíz hasta encontrar una coincidencia. |
 
 
 
@@ -108,9 +108,9 @@ En la siguiente cadena de consulta de ejemplo se buscan objetos de grupo que tie
 
 
 
-LDAP **\_ MATCHING \_ RULE IN \_ \_ CHAIN** es un OID de regla de coincidencia que está diseñado para proporcionar un método para buscar la apariencia de un objeto. Muchas aplicaciones que usan AD AD LDS normalmente funcionan con datos jerárquicos, ordenados por relaciones de elementos primarios y secundarios. Anteriormente, las aplicaciones realizaban una expansión de grupo transitiva para averiguar la pertenencia a grupos, que usaba demasiado ancho de banda de red. Las aplicaciones necesitaban realizar varios recorridos de ida y vuelta para averiguar si un objeto caía "en la cadena" si se atraviesa un vínculo hasta el final.
+**LDAP \_ MATCHING \_ RULE IN \_ \_ CHAIN** es un OID de regla de coincidencia que está diseñado para proporcionar un método para buscar el descaro de un objeto. Muchas aplicaciones que usan AD AD LDS suelen trabajar con datos jerárquicos, ordenados por relaciones de elementos primarios y secundarios. Anteriormente, las aplicaciones realizaban una expansión transitiva de grupos para averiguar la pertenencia a grupos, que usaba demasiado ancho de banda de red. Las aplicaciones necesitaban realizar varios recorridos de ida y vuelta para averiguar si un objeto caía "en la cadena" si se atraviesa un vínculo hasta el final.
 
-Un ejemplo de este tipo de consulta es uno diseñado para comprobar si un usuario "user1" es miembro del grupo "group1". Establecería la base en el DN del usuario y el `(cn=user1, cn=users, dc=x)` ámbito en `base` y usaría la consulta siguiente.
+Un ejemplo de este tipo de consulta es uno diseñado para comprobar si un usuario "user1" es miembro del grupo "group1". Establecería la base en el DN de usuario `(cn=user1, cn=users, dc=x)` y el ámbito en y `base` usaría la consulta siguiente.
 
 
 ```C++
@@ -134,7 +134,7 @@ Tenga en cuenta que cuando **se usa LDAP \_ MATCHING RULE IN \_ \_ \_ CHAIN**, e
 
 También puede agregar caracteres comodín y condiciones a un filtro de búsqueda LDAP. En los ejemplos siguientes se muestran subcadenas que se pueden usar para buscar en el directorio.
 
-Obtener todas las entradas:
+Obtenga todas las entradas:
 
 
 ```C++
@@ -179,7 +179,7 @@ Obtenga todas las entradas de usuario con un atributo de correo electrónico y u
 
 
 
-Obtenga todas las entradas de usuario con un nombre común que comience por "andy", "steve" o "australian":
+Obtenga todas las entradas de usuario con un nombre común que comience por "andy", "steve" o "iam":
 
 
 ```C++
@@ -197,7 +197,7 @@ Obtenga todas las entradas sin un atributo de correo electrónico:
 
 
 
-La definición formal del filtro de búsqueda es la siguiente (de [RFC 2254](https://tools.ietf.org/html/rfc2254)):
+La definición formal del filtro de búsqueda es la siguiente (de [RFC 2254):](https://tools.ietf.org/html/rfc2254)
 
 
 ```C++
@@ -222,9 +222,9 @@ La definición formal del filtro de búsqueda es la siguiente (de [RFC 2254](htt
 
 
 
-El &lt; attr del token &gt; es una cadena que representa un AttributeType. El valor &lt; del token es una cadena que representa un AttributeValue cuyo formato está definido por el servicio de directorio &gt; subyacente.
+El token &lt; attr &gt; es una cadena que representa un AttributeType. El valor &lt; del token es una cadena que representa un &gt; AttributeValue cuyo formato está definido por el servicio de directorio subyacente.
 
-Si un valor debe contener el carácter de asterisco ( ), paréntesis de apertura (() o paréntesis derecho &lt; &gt; \* ()), el carácter debe ir precedido del carácter de escape de barra diagonal inversa ( \\ ).
+Si un valor debe contener el carácter de asterisco ( ), paréntesis izquierdo (() o paréntesis derecho &lt; &gt; \* ()), el carácter debe ir precedido del carácter de escape de barra diagonal inversa ( \\ ).
 
 ## <a name="special-characters"></a>Caracteres especiales
 
@@ -232,7 +232,7 @@ Si alguno de los siguientes caracteres especiales debe aparecer en el filtro de 
 
 
 
-| Carácter ASCII | Sustitución de secuencia de escape |
+| Carácter ASCII | Sustituto de secuencia de escape |
 |-----------------|----------------------------|
 | \*              | \\2a                       |
 | (               | \\28                       |
@@ -250,7 +250,7 @@ Si alguno de los siguientes caracteres especiales debe aparecer en el filtro de 
 
  
 
-Además, los datos binarios arbitrarios se pueden representar mediante la sintaxis de secuencia de escape mediante la codificación de cada byte de datos binarios con la barra diagonal inversa ( ) seguida de \\ dos dígitos hexadecimales. Por ejemplo, el valor de cuatro bytes 0x00000004 codifica como \\ 00 \\ 00 \\ 00 \\ 04 en una cadena de filtro.
+Además, los datos binarios arbitrarios se pueden representar mediante la sintaxis de secuencia de escape codificando cada byte de datos binarios con la barra diagonal inversa ( ) seguida de \\ dos dígitos hexadecimales. Por ejemplo, el valor de cuatro 0x00000004 se codifica como \\ 00 \\ 00 \\ 00 \\ 00 04 en una cadena de filtro.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -265,10 +265,10 @@ Además, los datos binarios arbitrarios se pueden representar mediante la sintax
 [Búsqueda con la interfaz IDirectorySearch](searching-with-idirectorysearch.md)
 </dt> <dt>
 
-[Buscar con ActiveX objetos de datos](searching-with-activex-data-objects-ado.md)
+[Búsqueda con objetos ActiveX datos](searching-with-activex-data-objects-ado.md)
 </dt> <dt>
 
-[Buscar con OLE DB](searching-with-ole-db.md)
+[Búsqueda con OLE DB](searching-with-ole-db.md)
 </dt> </dl>
 
  

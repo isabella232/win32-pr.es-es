@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 19fc62179337236edbac2d5136cbcbff8152b46292ae666ae2836fd4b3c8d2d3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 564f122242407f4d6f5dd28da9fd4d151ab6b47f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174086"
 ---
 # <a name="setipusezerobroadcast-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIPUseZeroBroadcast de la clase \_ NetworkAdapterConfiguration de Win32
 
@@ -312,7 +312,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de límites.
+Parámetro fuera de los límites.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -379,7 +379,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se podrían liberar o renovar**
+**No todas las concesiones DHCP se pueden liberar o renovar**
 </dt> <dd>
 
 98
@@ -406,11 +406,11 @@ DHCP no habilitado en el adaptador.
 
 ## <a name="remarks"></a>Observaciones
 
-Si el *parámetro IPUseZeroBroadcast* está establecido en **TRUE,** la dirección IP usará difusión cero (0.0.0.0) en lugar de difusión única (255.255.255.255). La mayoría de los sistemas usan difusión única, pero los sistemas derivados de implementaciones de BSD usan difusión cero. Los sistemas que usan difusión diferentes no interoperarán en la misma red.
+Si el parámetro *IPUseZeroBroadcast* se establece en **TRUE,** ip usará difusión de cero (0.0.0.0) en lugar de difusión única (255.255.255.255). La mayoría de los sistemas usan difusión única, pero los sistemas derivados de implementaciones de BSD usan difusión cero. Los sistemas que usan difusión diferentes no interoperarán en la misma red.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de VBScript Modify [Zero-Broadcast Use for All Network Adapters](https://Gallery.TechNet.Microsoft.Com/3d1ec74a-bf96-41cf-bb90-f98cd6494fb3) configura un equipo para que use difusión cero (0.0.0.0) en lugar de difusión única (255.255.255.255).
+El ejemplo de VBScript Modify [Zero-Broadcast Use for All Network Adapters](https://Gallery.TechNet.Microsoft.Com/3d1ec74a-bf96-41cf-bb90-f98cd6494fb3) configura un equipo para que use difusión cero (0.0.0.0) en lugar de una difusión (255.255.255.255).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -436,7 +436,7 @@ El ejemplo de VBScript Modify [Zero-Broadcast Use for All Network Adapters](http
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6eb136ef309bad4ffd5c02768a3ca5b8e0d52f3c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: ed374030bd3ab577b209d326d21110482c9cf37a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470520"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962919"
 ---
 # <a name="jet_recpos-structure"></a>JET_RECPOS estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_recpos-structure"></a>JET_RECPOS estructura
 
-La **JET_RECPOS** estructura contiene una colección de enteros que representan una posición fraccionria dentro de un índice. **centriesLT es** el número de entradas de índice menor que la clave de índice actual. **centriesInRange es** el número de entradas de índice igual a la clave actual. **centriesInRange** no se admite y siempre se devuelve como 1. **centriesTotal es** el número de entradas de índice del índice. Todos los valores son aproximaciones sin garantía de precisión.
+La **JET_RECPOS** contiene una colección de enteros que representan una posición fraccionera dentro de un índice. **centriesLT es** el número de entradas de índice menor que la clave de índice actual. **centriesInRange es** el número de entradas de índice igual a la clave actual. **centriesInRange** no se admite y siempre se devuelve como 1. **centriesTotal es** el número de entradas de índice del índice. Todos los valores son aproximaciones sin garantía de precisión.
 
 ```cpp
     typedef struct {
@@ -40,7 +40,7 @@ La **JET_RECPOS** estructura contiene una colección de enteros que representan 
     } JET_RECPOS;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **cbStruct**
 
@@ -48,7 +48,7 @@ Tamaño de la estructura [JET_RETINFO,](./jet-retinfo-structure.md) en bytes. Es
 
 **centriesLT**
 
-Número aproximado de entradas de índice inferior a la clave actual.
+Número aproximado de entradas de índice menor que la clave actual.
 
 **centriesInRange**
 
@@ -56,12 +56,16 @@ Número aproximado de entradas de índice igual a la clave actual. Este campo si
 
 **centriesTotal**
 
-Número aproximado de entradas del índice.
+Número aproximado de entradas en el índice.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

@@ -4,7 +4,7 @@ description: En este tema se proporciona información sobre microsoft Automatiza
 ms.assetid: 69a3b243-8ee5-48e4-a01e-c7ad69b9a3aa
 keywords:
 - Automatización de la interfaz de usuario,compatibilidad con el tipo de control Text
-- Automatización de la interfaz de usuario, tipo de control Text
+- Automatización de la interfaz de usuario,tipo de control Text
 - Automatización de la interfaz de usuario,tree structure for Text control type
 - Automatización de la interfaz de usuario,properties para el tipo de control Text
 - Automatización de la interfaz de usuario,patrones de control para el tipo de control Text
@@ -12,7 +12,7 @@ keywords:
 - tree structures,Text control type
 - properties,Tipo de control Text
 - patrones de control, tipo de control Text
-- events,Text (tipo de control)
+- events,Tipo de control Text
 - compatibilidad con el tipo de control Text
 - Text (tipo de control)
 - tipos de control, estructura de árbol para tipo de control Text
@@ -22,11 +22,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7bc109bfba35f995384447014bc6642dcf3cd7f4
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478801"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172613"
 ---
 # <a name="text-control-type"></a>Tipo de control Text
 
@@ -46,7 +46,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control típico y una vista de contenido del árbol de Automatización de la interfaz de usuario que pertenece a los controles de texto y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control típico y una vista de contenido del árbol de Automatización de la interfaz de usuario que pertenece a los controles de texto y se describe lo que se puede incluir en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
 
 
 
@@ -60,7 +60,7 @@ En la tabla siguiente se muestra un control típico y una vista de contenido del
 
  
 
-Un control de texto se puede usar solo como una etiqueta o como texto estático en un formulario. También se puede contener dentro de la estructura de uno de los siguientes elementos:
+Un control de texto se puede usar solo como una etiqueta o como texto estático en un formulario. También se puede incluir dentro de la estructura de uno de los siguientes elementos:
 
 -   [DataItem](uiauto-supportdataitemcontroltype.md)
 -   [ListItem](uiauto-supportlistitemcontroltype.md)
@@ -74,18 +74,18 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor      | Notas                                                                                                                                                                                                                                                                                                                                               |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value      | Notas                                                                                                                                                                                                                                                                                                                                               |
 |---------------------------------------------------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas. | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                                                        |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas. | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel de la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                                                        |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas. | El rectángulo exterior que contiene el control completo.                                                                                                                                                                                                                                                                                            |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas. | Se admite si hay un rectángulo delimitador. Si no se puede hacer clic en todos los puntos del rectángulo delimitador y el elemento realiza pruebas de acceso especializadas, invalide y proporcione un punto en el que se puede hacer clic.                                                                                                                                                |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **Texto**   |                                                                                                                                                                                                                                                                                                                                                     |
 | [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | Depende    | El control de texto es contenido si contiene información no expuesta en la propiedad Name de otro control.                                                                                                                                                                                                                                              |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE       | El control de texto siempre debe ser un control.                                                                                                                                                                                                                                                                                                          |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true       | El control de texto siempre debe ser un control.                                                                                                                                                                                                                                                                                                          |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas. | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                                                                                                                                                                                                                           |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL       | Los controles de texto no tienen una etiqueta de texto estático.                                                                                                                                                                                                                                                                                                      |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas. | Cadena localizada correspondiente al tipo **de** control Text. El valor predeterminado es "text" para en-US o inglés (Estados Unidos).                                                                                                                                                                                                                      |
-| [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | Vea las notas. | El nombre de un control de texto puede ser el texto que muestra. Sin embargo, si el control también admite el patrón [Text](uiauto-implementingtextandtextrange.md) y el texto es amplio, no use el contenido de texto completo como valor **de** Nombre. En su lugar, **proporcione un valor** De nombre más corto, derivado de otras propiedades del control. |
+| [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | Vea las notas. | El nombre de un control de texto puede ser el texto que muestra. Sin embargo, si el control también admite el patrón [Text](uiauto-implementingtextandtextrange.md) y el texto es extenso, no use el contenido de texto completo como valor **de** Nombre. En su lugar, **proporcione un valor** De nombre más corto, derivado de otras propiedades del control. |
 
 
 

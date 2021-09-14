@@ -4,12 +4,12 @@ ms.assetid: 08b0f7b5-6c45-4471-9634-1f42fbbf500c
 title: Componentes y particiones en cola de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0296119d32eafefd3212ae37e32543b8fd14b884ff6401c16827717a9a6960b6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 589d7cb7c3e61be8ef53a248f990cde65447cf9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119129077"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965180"
 ---
 # <a name="com-queued-components-and-partitions"></a>Componentes y particiones en cola de COM+
 

@@ -17,13 +17,13 @@ topic_type:
 - APIRef
 - kbSyntax
 ms.openlocfilehash: 536ef31df9bbd60bfbb6a48c3f6de07718c5ce31
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172249"
 ---
-# <a name="span-idwwan_profile_v4element_1_accessstringspanmodemdmconfigprofileaccessstring-v4"></a><span id="WWAN_profile_v4.element_1_AccessString"></span>MódemDMConfigProfile \/ ... \/ AccessString (v4)
+# <a name="span-idwwan_profile_v4element_1_accessstringspanmodemdmconfigprofileaccessstring-v4"></a><span id="WWAN_profile_v4.element_1_AccessString"></span>\/MódemDMConfigProfile... \/ AccessString (v4)
 
 Identifica el APN o la cadena de marcado que se va a usar para establecer una conexión de datos.
 

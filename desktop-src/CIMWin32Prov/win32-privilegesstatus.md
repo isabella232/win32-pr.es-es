@@ -1,5 +1,5 @@
 ---
-description: Privilegios de Win32Status \_&\# 8194; La clase WMI notifica información sobre los privilegios necesarios para completar una operación. Se puede devolver cuando se ha producido un error en una operación o cuando se ha devuelto una instancia parcialmente rellenada.
+description: El estado de privilegios de Win32 \_&\# 8194; La clase WMI informa sobre los privilegios necesarios para completar una operación. Se puede devolver cuando se ha producido un error en una operación o cuando se ha devuelto una instancia parcialmente rellenada.
 ms.assetid: 295ec2bd-7996-4031-8503-d4e869d8368d
 ms.tgt_platform: multiple
 title: Win32_PrivilegesStatus clase (proveedores WMI CIMWin32)
@@ -21,18 +21,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4e2c2b2329884b22eecdc00a629abb8d05bc87435ce06d35e51907cb4095c8fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab399ce08374a954b3bbc015cfee7b4d20167b70
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174378"
 ---
 # <a name="win32_privilegesstatus-class-cimwin32-wmi-providers"></a>Win32_PrivilegesStatus clase (proveedores WMI CIMWin32)
 
-La clase  [WMI](../wmisdk/retrieving-a-class.md) **\_ PrivilegesStatus de Win32** informa sobre los privilegios necesarios para completar una operación. Se puede devolver cuando se ha producido un error en una operación o cuando se ha devuelto una instancia parcialmente rellenada.
+La clase  [WMI](../wmisdk/retrieving-a-class.md) **Win32 \_ PrivilegesStatus** informa sobre los privilegios necesarios para completar una operación. Se puede devolver cuando se ha producido un error en una operación o cuando se ha devuelto una instancia parcialmente rellenada.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ class Win32_PrivilegesStatus : __ExtendedStatus
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PrivilegesStatus de Win32** tiene estos tipos de miembros:
 
@@ -86,7 +86,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Operación que tiene lugar en el momento de un error o anomalía. Normalmente, Windows Management Instrumentation (WMI) establece esta propiedad en el nombre de una API COM para el método WMI como la siguiente: [**IWbemServices::CreateInstanceEnum**](/windows/win32/api/wbemcli/nf-wbemcli-iwbemservices-createinstanceenum).
+Operación que tiene lugar en el momento de un error o anomalía. Normalmente, Windows Management Instrumentation (WMI) establece esta propiedad en el nombre de una API COM para el método WMI como el siguiente: [**IWbemServices::CreateInstanceEnum**](/windows/win32/api/wbemcli/nf-wbemcli-iwbemservices-createinstanceenum).
 
 Esta propiedad se hereda de [**\_ \_ ExtendedStatus.**](../wmisdk/--extendedstatus.md)
 
@@ -101,7 +101,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Parámetros implicados en un error o cambio de estado. Por ejemplo, si una aplicación intenta recuperar una clase que no existe, esta propiedad se establece en el nombre de clase que se encuentra fuera de servicio.
+Parámetros implicados en un error o cambio de estado. Por ejemplo, si una aplicación intenta recuperar una clase que no existe, esta propiedad se establece en el nombre de clase infractora.
 
 Esta propiedad se hereda de [**\_ \_ ExtendedStatus.**](../wmisdk/--extendedstatus.md)
 
@@ -119,7 +119,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| AccessControl \| Windows nt privileges")
 </dt> </dl>
 
-Lista de los privilegios de acceso necesarios que faltan para completar una operación. Los tipos de privilegios de acceso se pueden encontrar en el Windows privilegios.
+Lista de los privilegios de acceso necesarios que faltan para completar una operación. Los tipos de privilegios de acceso se pueden encontrar en la Windows privilegios.
 
 Ejemplo: "SE \_ SHUTDOWN \_ NAME"
 
@@ -137,7 +137,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| AccessControl \| Windows nt privileges")
 </dt> </dl>
 
-Lista de todos los privilegios necesarios para realizar una operación. Esto incluye los valores de **la propiedad PrivilegesNotHeld.**
+Lista de todos los privilegios necesarios para realizar una operación. Esto incluye valores de la **propiedad PrivilegesNotHeld.**
 
 Ejemplo: "SE \_ SHUTDOWN \_ NAME"
 
@@ -152,7 +152,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identifica el proveedor que provoca o notifica un error o cambio de estado. Si un proveedor no está implicado, esta cadena se establece en "Windows Management".
+Identifica el proveedor que produce o notifica un error o cambio de estado. Si un proveedor no está implicado, esta cadena se establece en "Windows Management".
 
 Esta propiedad se hereda de [**\_ \_ ExtendedStatus.**](../wmisdk/--extendedstatus.md)
 
@@ -167,13 +167,13 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Contiene un error o código de información para una operación. Puede ser cualquier valor definido por el proveedor, pero el valor 0 (cero) suele reservarse para indicar que se ha hecho correctamente.
+Contiene un error o código de información para una operación. Puede ser cualquier valor definido por el proveedor, pero el valor 0 (cero) normalmente se reserva para indicar que se ha establecido correctamente.
 
 Esta propiedad se hereda de [**\_ \_ NotifyStatus.**](../wmisdk/--notifystatus.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ PrivilegesStatus de Win32** se deriva de [**\_ \_ ExtendedStatus**](../wmisdk/--extendedstatus.md).
 

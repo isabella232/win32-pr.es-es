@@ -1,6 +1,6 @@
 ---
 title: Propiedad RedirectByDefault de la interfaz IMsRdpCameraRedirConfigCollection
-description: Especifica si cualquier cámara nueva se redirige de forma predeterminada.
+description: Especifica si se redirige o no una cámara nueva de forma predeterminada.
 ms.tgt_platform: multiple
 keywords:
 - Propiedad RedirectByDefault Servicios de Escritorio remoto
@@ -18,20 +18,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 8c95431132acf5e3c08ede859520c844c4cae542f6b07dcb8e5781726078e754
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 810af200eefee0008aea21af684c02b6d31325eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119475875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965328"
 ---
-# <a name="imsrdpcameraredirconfigcollectionredirectbydefault-property"></a>IMsRdpCameraRedirConfigCollection::RedirectByDefault, propiedad
+# <a name="imsrdpcameraredirconfigcollectionredirectbydefault-property"></a>Propiedad IMsRdpCameraRedirConfigCollection::RedirectByDefault
 
-Especifica si cualquier cámara nueva se redirige de forma predeterminada.
+Especifica si se redirige o no una cámara nueva de forma predeterminada.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ```C++
 HRESULT put_RedirectByDefault(
@@ -56,7 +56,7 @@ Valor que indica si alguna cámara nueva se redirige de forma predeterminada.
 | Archivo DLL                  | MsTscAx.dll     |
 | IID                      | IID \_ IMsRdpCameraRedirConfigCollection se define como AE45252B-AAAB-4504-B681-649D6073A37A          |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

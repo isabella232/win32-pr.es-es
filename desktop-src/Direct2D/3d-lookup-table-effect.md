@@ -1,21 +1,21 @@
 ---
 title: Efecto de tabla de búsqueda 3D
-description: Una tabla de consulta 3D es un efecto de uso general que se usa para encapsular cualquier efecto de creación de imágenes 1 1 mediante el cálculo previo de cómo el efecto asigna entradas a salidas para un subconjunto de todos los valores de entrada.
+description: Una tabla de consulta 3D es un efecto de uso general que se usa para encapsular cualquier efecto de creación de imágenes 1 1 al calcular previamente cómo asigna el efecto las entradas a las salidas de un subconjunto de todos los valores de entrada.
 ms.assetid: 2f0b4b6d-f371-101c-918a-bf564778e593
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5b6d7cee4d21af5f7bc56ee4982f64523e892e616263b3cf5ed7ea84294fbb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d0c6c5df1aa873d3458345d77a46f6f3fdae40b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118161035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164273"
 ---
 # <a name="3d-lookup-table-effect"></a>Efecto de tabla de búsqueda 3D
 
 Una tabla de consulta 3D es un efecto de uso general que se usa para encapsular cualquier efecto de creación de imágenes 1:1 mediante el cálculo previo de cómo el efecto asigna entradas a salidas para un subconjunto de todos los valores de entrada.
 
-El efecto 3D Lookup Table (LUT) modifica una imagen de entrada mediante el valor de color RGB de la imagen para indexar una textura 3D, donde la textura contiene un valor de salida precalutado de una canalización de efecto arbitrario.
+El efecto 3D Lookup Table (LUT) modifica una imagen de entrada mediante el uso del valor de color RGB de la imagen para indexar una textura 3D, donde la textura contiene un valor de salida precalutado de una canalización de efecto arbitrario.
 
 El LUT 3D debe cargarse en un recurso de textura de GPU para que se represente, y esto puede ser costoso en función del tamaño de la textura y las funcionalidades del dispositivo. Los desarrolladores de aplicaciones pueden especificar cuándo pagar este costo mediante el [**recurso ID2D1LookupTable3D**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1lookuptable3d) D2D. **ID2D1LookupTable3D** tiene los siguientes atributos:
 
@@ -128,7 +128,7 @@ Las propiedades del efecto de tabla de búsqueda 3D se definen mediante la enume
 |--------------------------|---------------------------------------------------|
 | Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
 | Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Header                   | d2d1effects \_ 2.h                                  |
+| Encabezado                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Temas relacionados

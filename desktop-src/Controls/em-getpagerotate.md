@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETPAGEROTATE (RichEdit. h)
-description: Obtiene el diseño de texto de un control Rich Edit de Microsoft.
+title: EM_GETPAGEROTATE mensaje (Richedit.h)
+description: Obtiene el diseño de texto para un control Microsoft Rich Edit.
 ms.assetid: 0efb112e-ad51-4ebb-9037-3aee3ab9ad1d
 keywords:
-- EM_GETPAGEROTATE controles de mensajes de Windows
+- EM_GETPAGEROTATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -15,17 +15,17 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ad7bc7cd3c77ae88cd4c8710e14b4472e57407ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170053"
 ---
-# <a name="em_getpagerotate-message"></a>\_Mensaje GETPAGEROTATE em
+# <a name="em_getpagerotate-message"></a>Mensaje \_ EM GETPAGEROTATE
 
-\[**Em \_ GETPAGEROTATE** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
+\[**EM \_ GETPAGEROTATE** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
 
-Obtiene el diseño de texto de un control Rich Edit de Microsoft.
+Obtiene el diseño de texto para un control Microsoft Rich Edit.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -34,20 +34,20 @@ Obtiene el diseño de texto de un control Rich Edit de Microsoft.
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Obtiene el diseño del texto actual. Para obtener una lista de posibles valores de diseño de texto, consulte [**em \_ SETPAGEROTATE**](em-setpagerotate.md).
+Obtiene el diseño de texto actual. Para obtener una lista de posibles valores de diseño de texto, [**vea EM \_ SETPAGEROTATE**](em-setpagerotate.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Obtiene el diseño del texto actual. Para obtener una lista de posibles valores 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP1 \[\]<br/>                                  |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP1 \[\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Obtiene el diseño del texto actual. Para obtener una lista de posibles valores 
 
 <dl> <dt>
 
-[**\_SETPAGEROTATE em**](em-setpagerotate.md)
+[**EM \_ SETPAGEROTATE**](em-setpagerotate.md)
 </dt> </dl>
 
  

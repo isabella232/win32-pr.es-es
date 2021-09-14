@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102861
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a00f874f386a4ad2b38b44af507b9870673aa0d64fd35e9519be91f48678980a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34459a0eef05d0fd4d26e8ac15408cd5874e17dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118981319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963044"
 ---
 # <a name="esentslvheaderbadchecksumexception-methods"></a>Métodos de EsentSLVHeaderBadChecksumException 
 
@@ -78,7 +78,7 @@ El [tipo EsentSLVHeaderBadChecksumException](./esentslvheaderbadchecksumexceptio
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

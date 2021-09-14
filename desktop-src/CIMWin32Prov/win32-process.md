@@ -60,12 +60,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e52ae224aee9db09ffa42cf19b3550a5ff6362326b0058d87e4d2a8b2da1851e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bb8d1d37bd5d4db59942aaab7170119283c5cc7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174373"
 ---
 # <a name="win32_process-class"></a>Win32 \_ Process (clase)
 
@@ -130,7 +130,7 @@ class Win32_Process : CIM_Process
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Win32 \_ Process** tiene estos tipos de miembros:
 
@@ -953,7 +953,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1007,9 +1007,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de finalización")
 </dt> </dl>
 
-El proceso se detuvo o finalizó. Para obtener el tiempo de finalización, se debe mantener abierto un identificador para el proceso. De lo contrario, esta propiedad devuelve **NULL.**
+El proceso se detuvo o finalizó. Para obtener la hora de finalización, se debe mantener abierto un identificador del proceso. De lo contrario, esta propiedad devuelve **NULL.**
 
-Esta propiedad se hereda del proceso [**\_ CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM.**](cim-process.md)
 
 </dd> <dt>
 
@@ -1038,12 +1038,12 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("UserModeTime"), [**Units**](../wmisdk/standard-qualifiers.md) ("100 nanoseconds")
+Calificadores: [**Invalidación**](../wmisdk/standard-qualifiers.md) ("UserModeTime"), [**unidades**](../wmisdk/standard-qualifiers.md) ("100 nanosegundos")
 </dt> </dl>
 
 Tiempo en modo de usuario, en unidades de 100 nanosegundos. Si esta información no está disponible, use un valor de 0 (cero).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> <dt>
 
@@ -1056,12 +1056,12 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| VirtualSize"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Virtual Address Space Usage"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| VirtualSize"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Uso del espacio de direcciones virtuales"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Tamaño actual del espacio de direcciones virtuales que usa un proceso, no la memoria física o virtual usada realmente por el proceso. El uso de espacio de direcciones virtuales no implica necesariamente el uso correspondiente de páginas de memoria principal o de disco. El espacio virtual es finito y, al usar demasiado, es posible que el proceso no pueda cargar bibliotecas. Este valor es coherente con lo que se ve en Perfmon.exe.
+Tamaño actual del espacio de direcciones virtuales que usa un proceso, no la memoria física o virtual realmente utilizada por el proceso. El uso del espacio de direcciones virtuales no implica necesariamente el uso correspondiente de páginas de disco o de memoria principal. El espacio virtual es finito y, al usar demasiado, es posible que el proceso no pueda cargar bibliotecas. Este valor es coherente con lo que se ve en Perfmon.exe.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> <dt>
 
@@ -1092,14 +1092,14 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tamaño del espacio de trabajo"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tamaño del espacio de trabajo"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Cantidad de memoria en bytes que un proceso debe ejecutar de forma eficaz, para un sistema operativo que usa la administración de memoria basada en páginas. Si el sistema no tiene suficiente memoria (menor que el tamaño del espacio de trabajo), se produce la thrashing. Si no se conoce el tamaño del conjunto de trabajo, use **NULL** o 0 (cero). Si se proporcionan datos de espacio de trabajo, puede supervisar la información para comprender los requisitos de memoria cambiantes de un proceso.
+Cantidad de memoria en bytes que un proceso debe ejecutarse de forma eficaz, para un sistema operativo que usa la administración de memoria basada en páginas. Si el sistema no tiene suficiente memoria (menor que el tamaño del espacio de trabajo), se produce la extensión. Si no se conoce el tamaño del conjunto de trabajo, use **NULL** o 0 (cero). Si se proporcionan datos de espacio de trabajo, puede supervisar la información para comprender los requisitos de memoria cambiantes de un proceso.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
-Esta propiedad se hereda del proceso [**\_ CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM.**](cim-process.md)
 
 </dd> <dt>
 
@@ -1117,7 +1117,7 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API
 
 Número de operaciones de escritura realizadas.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> <dt>
 
@@ -1135,39 +1135,39 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API
 
 Cantidad de datos escritos.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase Win32 \_ Process** se deriva del [**proceso CIM \_**](cim-process.md). El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Para obtener más información, [vea Ejecutar operaciones con privilegios.](../wmisdk/executing-privileged-operations.md)
+La **clase Process \_ de Win32** se deriva del [**proceso \_ CIM.**](cim-process.md) El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Para obtener más información, vea [Ejecutar operaciones con privilegios.](../wmisdk/executing-privileged-operations.md)
 
 ### <a name="overview"></a>Información general
 
-Los procesos subyacen a casi todo lo que sucede en un equipo. De hecho, la causa principal de la mayoría de los problemas del equipo se puede realizar en los procesos. Por ejemplo, es posible que se ejecuten demasiados procesos en un equipo (y que se contenda por un conjunto finito de recursos), o que un único proceso esté usando más de su parte de recursos. Estos factores hacen que sea importante mantener una estrecha atención sobre los procesos que se ejecutan en un equipo. La supervisión de procesos, la actividad principal en la administración de procesos, le permite determinar qué hace realmente un equipo, qué aplicaciones ejecuta el equipo y cómo se ven afectadas esas aplicaciones por los cambios en el entorno informático.
+Los procesos subyacen a casi todo lo que sucede en un equipo. De hecho, la causa principal de la mayoría de los problemas del equipo se puede realizar en los procesos. Por ejemplo, es posible que se ejecuten demasiados procesos en un equipo (y que se deba a un conjunto finito de recursos), o que un único proceso esté usando más que su parte de recursos. Estos factores hacen que sea importante mantener una estrecha atención sobre los procesos que se ejecutan en un equipo. La supervisión de procesos, la actividad principal en la administración de procesos, permite determinar qué hace realmente un equipo, qué aplicaciones ejecuta el equipo y cómo se ven afectadas por los cambios en el entorno informático.
 
 ### <a name="monitoring-a-process"></a>Supervisión de un proceso
 
-La supervisión de los procesos de forma periódica le ayuda a garantizar que un equipo se ejecuta con la máxima eficacia y que lleva a cabo sus tareas designadas según lo previsto. Por ejemplo, mediante la supervisión de procesos, se le puede notificar inmediatamente de cualquier aplicación que haya dejado de responder y, a continuación, realizar los pasos necesarios para finalizar ese proceso. Además, la supervisión de procesos permite identificar problemas antes de que se produzcan. Por ejemplo, al comprobar repetidamente la cantidad de memoria usada por un proceso, puede identificar una pérdida de memoria. A continuación, puede detener el proceso antes de que la aplicación errant use toda la memoria disponible y detenga el equipo.
+La supervisión de los procesos de forma periódica le ayuda a garantizar que un equipo se ejecuta con la máxima eficacia y que lleva a cabo sus tareas designadas según lo previsto. Por ejemplo, mediante la supervisión de procesos, se le puede notificar inmediatamente de cualquier aplicación que haya dejado de responder y, a continuación, realizar los pasos necesarios para finalizar ese proceso. Además, la supervisión de procesos permite identificar problemas antes de que se produzcan. Por ejemplo, al comprobar repetidamente la cantidad de memoria usada por un proceso, puede identificar una pérdida de memoria. A continuación, puede detener el proceso antes de que la aplicación errante use toda la memoria disponible y detenga el equipo.
 
 La supervisión de procesos también ayuda a minimizar las interrupciones causadas por interrupciones planeadas para las actualizaciones y el mantenimiento. Por ejemplo, al comprobar el estado de una aplicación de base de datos que se ejecuta en equipos cliente, puede determinar el impacto de desconectar la base de datos para actualizar el software.
 
-Supervisión de la disponibilidad del proceso. Mide el porcentaje de tiempo que un proceso está disponible. Normalmente, la disponibilidad se supervisa mediante un sondeo simple, que informa de si el proceso todavía se está ejecutando. Al realizar un seguimiento de los resultados de cada sondeo, puede calcular la disponibilidad del proceso. Por ejemplo, un proceso que se sondea 100 veces y responde en 95 de esas ocasiones tiene una disponibilidad del 95 %. Este tipo de supervisión se reserva normalmente para bases de datos, programas de correo y otras aplicaciones que se espera que se ejecuten en todo momento. No es adecuado para programas de procesamiento de texto, hojas de cálculo u otras aplicaciones que se inician y detienen de forma rutinaria varias veces al día.
+Supervisión de la disponibilidad del proceso. Mide el porcentaje de tiempo que un proceso está disponible. La disponibilidad se supervisa normalmente mediante un sondeo simple, que informa de si el proceso todavía se está ejecutando. Al realizar un seguimiento de los resultados de cada sondeo, puede calcular la disponibilidad del proceso. Por ejemplo, un proceso que se sondea 100 veces y responde en 95 de esas ocasiones tiene una disponibilidad del 95 %. Este tipo de supervisión se reserva normalmente para bases de datos, programas de correo y otras aplicaciones que se espera que se ejecuten en todo momento. No es adecuado para programas de procesamiento de texto, hojas de cálculo u otras aplicaciones que se inician y detienen de forma rutinaria varias veces al día.
 
-Puede crear una instancia de la clase [**\_ ProcessStartup de Win32**](win32-processstartup.md) para configurar el proceso.
+Puede crear una instancia de la [**clase \_ ProcessStartup de Win32**](win32-processstartup.md) para configurar el proceso.
 
-Puede supervisar el rendimiento de los procesos con la clase [**\_ PerfFormattedData \_ PerfProc \_ Process de Win32**](../wmisdk/retrieving-raw-and-formatted-performance-data.md) y un objeto de actualizador WMI, [**como SWbemRefresher.**](../wmisdk/swbemrefresher.md) Para obtener más información, vea [Supervisión de datos de rendimiento.](../wmisdk/monitoring-performance-data.md)
+Puede supervisar el rendimiento de los procesos con la clase [**\_ PerfFormattedData \_ PerfProc \_ Process de Win32**](../wmisdk/retrieving-raw-and-formatted-performance-data.md) y un objeto de actualizador WMI, como [**SWbemRefresher**](../wmisdk/swbemrefresher.md). Para obtener más información, vea [Monitoring Performance Data](../wmisdk/monitoring-performance-data.md).
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/a7918bf3-bc03-4553-990f-aba13cf196b7) código de PowerShell Enumerar las propiedades de las clases WMI en la Galería de TechNet describe la clase Proceso **\_ win32** y genera los resultados en Excel formato.
+El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/a7918bf3-bc03-4553-990f-aba13cf196b7) código de PowerShell Enumerar las propiedades de las clases WMI en la Galería de TechNet describe la clase Process de **\_ Win32** y genera los resultados en Excel formato.
 
-El [proceso De finalizar en ejecución en varios servidores](https://Gallery.TechNet.Microsoft.Com/698c2512-2bbd-40ee-b3bf-a9cebdad2faf) finaliza un proceso que se ejecuta en uno o varios equipos.
+El [proceso terminate running en varios servidores](https://Gallery.TechNet.Microsoft.Com/698c2512-2bbd-40ee-b3bf-a9cebdad2faf) finaliza un proceso que se ejecuta en uno o varios equipos.
 
-En el [tema Ejemplo: Llamar a un método de](../wmisdk/example--calling-a-provider-method.md) proveedor, el código usa C++ para llamar a Proceso **win32 \_** para crear un proceso.
+En el [tema Ejemplo: Llamar a un método de](../wmisdk/example--calling-a-provider-method.md) proveedor, el código usa C++ para llamar a **Win32 \_ Process** para crear un proceso.
 
-La disponibilidad es la forma más sencilla de supervisión de procesos: con este enfoque, simplemente se asegura de que el proceso se está ejecutando. Al supervisar la disponibilidad del proceso, normalmente se recupera una lista de procesos que se ejecutan en un equipo y, a continuación, se comprueba que un proceso determinado sigue activo. Si el proceso está activo, se considera disponible. Si el proceso no está activo, no está disponible. En el ejemplo de VBScript siguiente se supervisa la disponibilidad de los procesos comprobando la lista de procesos que se ejecutan en un equipo y emitiendo una notificación si no se encuentra Database.exe proceso.
+La disponibilidad es la forma más sencilla de supervisión de procesos: con este enfoque, simplemente se asegura de que el proceso se está ejecutando. Al supervisar la disponibilidad de los procesos, normalmente se recupera una lista de procesos que se ejecutan en un equipo y, a continuación, se comprueba que un proceso determinado sigue activo. Si el proceso está activo, se considera disponible. Si el proceso no está activo, no está disponible. En el ejemplo de VBScript siguiente se supervisa la disponibilidad de los procesos comprobando la lista de procesos que se ejecutan en un equipo y emitiendo una notificación si no se encuentra Database.exe proceso.
 
 
 ```VB
@@ -1183,7 +1183,7 @@ End If
 
 
 
-En el ejemplo de VBScript siguiente se supervisa la creación de procesos mediante un consumidor de eventos temporal.
+El siguiente ejemplo de VBScript supervisa la creación de procesos mediante un consumidor de eventos temporal.
 
 
 ```VB
@@ -1200,7 +1200,7 @@ Loop
 
 
 
-El siguiente VBScript supervisa la información de rendimiento del proceso.
+El siguiente vbscript supervisa la información de rendimiento del proceso.
 
 
 ```VB
@@ -1219,7 +1219,7 @@ Next
 
 
 
-En el siguiente ejemplo de código de VBScript se muestra cómo obtener el propietario de cada proceso en un equipo local. Puede usar este script para obtener datos de un equipo remoto, por ejemplo, para determinar qué usuarios tienen procesos que ejecutan terminal server y sustituya el nombre del equipo remoto por "." en la primera línea. También debe ser administrador en el equipo remoto.
+En el ejemplo de código de VBScript siguiente se muestra cómo obtener el propietario de cada proceso en un equipo local. Puede usar este script para obtener datos de un equipo remoto, por ejemplo, para determinar qué usuarios tienen procesos que ejecutan terminal Server, sustituya el nombre del equipo remoto por "." en la primera línea. También debe ser administrador en el equipo remoto.
 
 
 ```VB
@@ -1239,7 +1239,7 @@ Next
 
 
 
-En el siguiente ejemplo de código de VBScript se muestra cómo obtener la sesión de inicio de sesión asociada a un proceso en ejecución. Un proceso debe ejecutarse Notepad.exe antes de que se inicie el script. En el ejemplo se localizan las instancias de [**\_ LogonSession de Win32**](win32-logonsession.md) asociadas al proceso **de Win32 \_** que representa Notepad.exe. [**Win32 \_ SessionProcess**](win32-sessionprocess.md) se especifica como clase de asociación. Para obtener más información, [vea ASSOCIATORS OF (Instrucción).](../wmisdk/associators-of-statement.md)
+En el ejemplo de código de VBScript siguiente se muestra cómo obtener la sesión de inicio de sesión asociada a un proceso en ejecución. Un proceso debe ejecutarse Notepad.exe antes de que se inicie el script. En el ejemplo se localizan las instancias de [**\_ LogonSession de Win32**](win32-logonsession.md) asociadas al proceso **de Win32 \_** que representa Notepad.exe. [**Win32 \_ SessionProcess**](win32-sessionprocess.md) se especifica como la clase de asociación. Para obtener más información, [vea ASSOCIATORS OF Statement.](../wmisdk/associators-of-statement.md).
 
 
 ```VB

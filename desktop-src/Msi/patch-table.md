@@ -4,12 +4,12 @@ ms.assetid: 1b624702-de25-4b1a-9dac-21f359ee97f7
 title: Tabla de revisiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9e5f41f206557589bf0b90d9ffb125a80d05d39ce809dc01a8e687a21045475
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 061b2082f88a8c7c3967652900bb6bf6e1c29802
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119558465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173673"
 ---
 # <a name="patch-table"></a>Tabla de revisiones
 
@@ -21,12 +21,12 @@ La tabla Patch tiene las columnas siguientes.
 
 | Columna      | Tipo                               | Clave | Nullable |
 |-------------|------------------------------------|-----|----------|
-| Archivo\_      | [Identificador](identifier.md)       | Y   | N        |
-| Secuencia    | [Entero](integer.md)             | Y   | N        |
-| PatchSize   | [DoubleInteger](doubleinteger.md) | N   | N        |
-| Atributos  | [Entero](integer.md)             | N   | N        |
-| Header      | [Binario](binary.md)               | N   | Y        |
-| StreamRef\_ | [Identificador](identifier.md)       | N   | Y        |
+| Archivo\_      | [Identificador](identifier.md)       | Y   | No        |
+| Secuencia    | [Entero](integer.md)             | Y   | No        |
+| PatchSize   | [DoubleInteger](doubleinteger.md) | No   | No        |
+| Atributos  | [Entero](integer.md)             | No   | No        |
+| Encabezado      | [Binario](binary.md)               | No   | Y        |
+| StreamRef\_ | [Identificador](identifier.md)       | No   | Y        |
 
 
 
@@ -78,7 +78,7 @@ Entero que contiene marcas de bits que representan atributos de revisión. Inser
 <span id="Header"></span><span id="header"></span><span id="HEADER"></span>Rúbrica
 </dt> <dd>
 
-Esta columna es el encabezado de revisión de flujo binario usado para la validación de revisiones. Esta columna debe ser NULL si la columna StreamRef \_ no es NULL. En este caso, la secuencia de encabezado de revisión se almacena en la tabla [MsiPatchHeaders](msipatchheaders-table.md) para superar la limitación de nombre de flujo descrita en [Limitaciones](ole-limitations-on-streams.md)ole Secuencias .
+Esta columna es el encabezado de revisión de flujo binario usado para la validación de revisiones. Esta columna debe ser NULL si la columna StreamRef \_ no es NULL. En este caso, el flujo de encabezado de revisión se almacena en la tabla [MsiPatchHeaders](msipatchheaders-table.md) para superar la limitación de nombre de flujo descrita en [Limitaciones](ole-limitations-on-streams.md)ole Secuencias .
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Clave externa en la tabla MsiPatchHeaders que especifica la fila que contiene el
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta tabla se procesa mediante la [acción PatchFiles](patchfiles-action.md). Normalmente se agrega al paquete de instalación mediante una transformación de un paquete de revisión. Normalmente no se ha escrito directamente en un paquete de instalación.
 

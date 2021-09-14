@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b931fcf837c1b97f53d709464d9648d3285fe1ce35377bcb8a1063a621316212
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25af4c5ca5654ed769a61afa19ad3afe8732ac54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118263120"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963116"
 ---
 # <a name="esentobjectduplicateexception-class"></a>Clase EsentObjectDuplicateException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones objectDuplicate.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

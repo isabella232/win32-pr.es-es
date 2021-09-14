@@ -1,7 +1,7 @@
 ---
 description: GUID de partición del suscriptor.
 ms.assetid: 0b2411d3-cdc1-492c-a54f-ca3d3bd8b953
-title: 'IEventSubscription3:: SubscriberPartitionID (propiedad)'
+title: Propiedad IEventSubscription3::SubscriberPartitionID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,13 +15,13 @@ api_type:
 - COM
 api_location: ''
 ms.openlocfilehash: b09c41ac1b3a90c3275daf7afa0cd90fe2bb905c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275090"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965164"
 ---
-# <a name="ieventsubscription3subscriberpartitionid-property"></a>IEventSubscription3:: SubscriberPartitionID (propiedad)
+# <a name="ieventsubscription3subscriberpartitionid-property"></a>Propiedad IEventSubscription3::SubscriberPartitionID
 
 GUID de partición del suscriptor.
 
@@ -48,7 +48,7 @@ Cadena que contiene el GUID de la partición del suscriptor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, e \_ OUTOFMEMORY, e \_ inesperado, e \_ FAIL y S \_ OK.
+Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED, E \_ FAIL y S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, e \
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

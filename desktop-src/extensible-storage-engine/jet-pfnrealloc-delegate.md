@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 445cd4084ff187fba0b94e210d587b04660c0fb4dfe9e882e0c5696bfd5392df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7aab9fef2d7a449c877f88d2ed77aa19cbb2409d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119730425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965632"
 ---
 # <a name="jet_pfnrealloc-delegate"></a>JET_PFNREALLOC delegado
 
@@ -93,7 +93,7 @@ public delegate IntPtr JET_PFNREALLOC(
 Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
 Puntero a la memoria recién asignada. Si no se pudo asignar memoria, [se debe](/dotnet/api/system.intptr.zero) devolver Cero.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

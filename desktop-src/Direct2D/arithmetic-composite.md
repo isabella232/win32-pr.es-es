@@ -1,21 +1,21 @@
 ---
 title: Efecto compuesto aritmético
-description: Use el efecto compuesto aritmético para combinar 2 imágenes con una suma ponderada de píxeles de las imágenes de entrada.
+description: Use el efecto compuesto aritmético para combinar dos imágenes con una suma ponderada de píxeles de las imágenes de entrada.
 ms.assetid: 6EC8CD61-5B51-4A8E-8A61-B291ABB5C5E0
 keywords:
 - efecto compuesto aritmético
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e45976d577299bda7dfcef9bf20eff4980cc67ac105cb14fa793065d7ce1857f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 04c235ecb024c6b9e7adbce31c9f0cd65bc36cdf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119641971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164257"
 ---
 # <a name="arithmetic-composite-effect"></a>Efecto compuesto aritmético
 
-Use el efecto compuesto aritmético para combinar 2 imágenes con una suma ponderada de píxeles de las imágenes de entrada.
+Use el efecto compuesto aritmético para combinar dos imágenes con una suma ponderada de píxeles de las imágenes de entrada.
 
 El CLSID para este efecto es CLSID \_ D2D1ArithmeticComposite.
 
@@ -115,11 +115,11 @@ El mapa de bits de salida depende de los valores del coeficiente. Estos son los 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
 | Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

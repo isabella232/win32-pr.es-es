@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 07cdc7f1740be078f743288ada1b828df6519a0914f342d8310cbfa8599c8ffa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ebf558c315d92013cd25a8c7e19c1fa2c01f053e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119476935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963052"
 ---
 # <a name="esentslvfilenotfoundexception-constructor"></a>Constructor EsentSLVFileNotFoundException
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVFileNotFoundException()
 public EsentSLVFileNotFoundException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

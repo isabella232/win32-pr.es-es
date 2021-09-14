@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: baaa4c46850919aed50897583bfa68c9003bcf496ad884c68cfb57d3e8a90147
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d59e110aece56a31af71e75e9a8eca0bb008961
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118666356"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164149"
 ---
 # <a name="d1102-too-many-opened-handles"></a>D1102: Demasiados identificadores abiertos
 
-Se encontró un gran número de interfaces no publicados. Actualmente hay un \[ *número de* \] interfaces no publicados asignadas por este archivo DLL.
+Se encontró un gran número de interfaces no publicados. Actualmente hay \[ *número de* \] interfaces no publicados asignadas por este archivo DLL.
 
 ## <a name="placeholders"></a>Marcadores de posición
 
@@ -45,7 +45,7 @@ Número de interfaces no publicados asignadas por este archivo DLL.
 
 ## <a name="possible-causes"></a>Causas posibles
 
-Se creó un gran número de recursos. Aunque Direct2D no tiene ningún límite superior en el número de recursos disponibles (excepto memoria), la capa de depuración emite este mensaje informativo cuando encuentra 1001 objetos en directo, 2001 objetos en directo o 3001 objetos en directo, etc., porque esto podría indicar una pérdida en la aplicación.
+Se creó un gran número de recursos. Aunque Direct2D no tiene ningún límite superior en el número de recursos disponibles (excepto memoria), la capa de depuración emite este mensaje informativo cuando encuentra 1001 objetos en directo, 2001 objetos en directo, 3001 objetos en directo, etc., porque esto podría indicar una pérdida en la aplicación.
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 10a5210d-7992-4832-9435-67ac2b851a97
 title: 'Programa C de ejemplo: enumeración de proveedores de CSP y tipos de proveedor'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 372ea5f228008856d2a7701a7f11dbff462d239f8e0d39486a2c1634379ddec4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a109aab8bbf3788bd539d078f00f7a28926f98de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007653"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171102"
 ---
 # <a name="example-c-program-enumerating-csp-providers-and-provider-types"></a>Programa C de ejemplo: enumeración de proveedores de CSP y tipos de proveedor
 

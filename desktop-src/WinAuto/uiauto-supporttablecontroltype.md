@@ -22,11 +22,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0badb06cfc449140162663625f3fa7282f9c1589
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470082"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172617"
 ---
 # <a name="table-control-type"></a>Tipo de control Table
 
@@ -34,7 +34,7 @@ En este tema se proporciona información sobre microsoft Automatización de la i
 
 Los controles de tabla contienen filas y columnas de texto y, opcionalmente, encabezados de fila y encabezados de columna.
 
-En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, las propiedades, los patrones de control y los eventos necesarios para el tipo **de** control Table. Los Automatización de la interfaz de usuario se aplican a todos los controles de tabla en los que la plataforma o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
+En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el **tipo de** control Table. Los Automatización de la interfaz de usuario se aplican a todos los controles de tabla en los que el marco o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -46,7 +46,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de tabla y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el árbol Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de tabla y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario árbol, vea [Información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
 
 
 
@@ -64,11 +64,11 @@ Si un control de tabla tiene encabezados de fila o columna, deben exponerse en l
 
 ## <a name="relevant-properties"></a>Propiedades pertinentes
 
-En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles de tabla. Para obtener más información sobre Automatización de la interfaz de usuario, vea [Retrieving Properties from Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
+En la tabla siguiente se enumeran las Automatización de la interfaz de usuario cuyo valor o definición es especialmente relevante para los controles de tabla. Para obtener más información sobre Automatización de la interfaz de usuario, vea [Retrieving Properties from Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor      | Notas                                                                                                                                                                                                                             |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value      | Notas                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas. | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato del Automatización de la interfaz de usuario árbol.                                                                                                                      |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas. | El rectángulo exterior que contiene el control completo.                                                                                                                                                                          |
@@ -76,8 +76,8 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **Tabla**  |                                                                                                                                                                                                                                   |
 | [**UIA \_ DescribedByPropertyId**](uiauto-automation-element-propids.md)                   | Vea las notas. | Si la tabla se anota por otro elemento de la interfaz de usuario (por ejemplo, un elemento de texto que contiene la descripción de la tabla), la propiedad DescribedBy debería exponer una referencia al elemento de automatización del control de texto.           |
 | [**HelpTextPropertyId de UIA \_**](uiauto-automation-element-propids.md)                         | Vea las notas. | Se deben exponer más detalles sobre el propósito de la tabla a través de esta propiedad si la propiedad [**\_ NamePropertyId**](uiauto-automation-element-propids.md) de UIA no la explica lo suficiente.      |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE       | El control de tabla siempre debe aparecer en la vista de contenido del Automatización de la interfaz de usuario tabla.                                                                                                                                               |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE       | El control de tabla siempre debe aparecer en la vista de control del Automatización de la interfaz de usuario control.                                                                                                                                               |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true       | El control de tabla siempre debe aparecer en la vista de contenido del Automatización de la interfaz de usuario tabla.                                                                                                                                               |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true       | El control de tabla siempre debe aparecer en la vista de control del Automatización de la interfaz de usuario control.                                                                                                                                               |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas. | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                                                                                                         |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vea las notas. | Si hay una etiqueta de texto estático, esta propiedad debe exponer una referencia al elemento de automatización del control.                                                                                                                |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas. | Cadena localizada correspondiente al tipo **de** control Table. El valor predeterminado es "table" para en-US o inglés (Estados Unidos).                                                                                                  |
@@ -89,15 +89,15 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 ## <a name="required-control-patterns"></a>Patrones de control necesarios
 
-En la tabla siguiente se enumeran los Automatización de la interfaz de usuario de control necesarios para que todos los controles de tabla sean compatibles. Para más información sobre los patrones de control, vea [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
+En la tabla siguiente se enumeran los Automatización de la interfaz de usuario de control que deben ser compatibles con todos los controles de tabla. Para más información sobre los patrones de control, vea [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 
 
 | Patrón de control                                         | Soporte técnico                     | Notas                                                                                                                                                                                                                                                                                        |
 |---------------------------------------------------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider)           | Requerido                    | Dado que el control de tabla contiene elementos presentados en una cuadrícula, siempre admite el [patrón de](uiauto-implementinggrid.md) control Grid.                                                                                                                                                    |
+| [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider)           | Obligatorio                    | Dado que el control de tabla contiene elementos presentados en una cuadrícula, siempre admite el [patrón de](uiauto-implementinggrid.md) control Grid.                                                                                                                                                    |
 | [**IGridItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igriditemprovider)   | Requerido con objetos secundarios | Los objetos internos de una tabla deben admitir los patrones de control [GridItem](uiauto-implementinggriditem.md) y [TableItem.](uiauto-implementingtableitem.md) La propia tabla no necesita admitir el patrón de control GridItem o TableItem a menos que la tabla forma parte de otra tabla.  |
-| [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider)         | Requerido                    | El control de tabla siempre puede tener encabezados asociados al contenido.                                                                                                                                                                                                                       |
+| [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider)         | Obligatorio                    | El control de tabla siempre puede tener encabezados asociados al contenido.                                                                                                                                                                                                                       |
 | [**ITableItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableitemprovider) | Requerido con objetos secundarios | Los objetos internos de una tabla deben admitir los patrones de control [GridItem](uiauto-implementinggriditem.md) y [TableItem.](uiauto-implementingtableitem.md) La propia tabla no necesita admitir los patrones de control GridItem o TableItem, a menos que la tabla forme parte de otra tabla. |
 
 

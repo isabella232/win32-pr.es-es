@@ -4,12 +4,12 @@ ms.assetid: 142bc8a2-240d-418f-9374-62d34a76ec38
 title: Cómo crear un archivo DLL DirectShow filtro de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 443f8aff88cf73198ed7c417da77f6febf33e18806efba5431e18117ddd2c32e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ee964115e040d11ae10562b05899b2895f03d2fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169909"
 ---
 # <a name="how-to-create-a-directshow-filter-dll"></a>Cómo crear un archivo DLL DirectShow filtro de archivos
 

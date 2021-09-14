@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45b8022feacda910b28d68636c1abdcb2f6c1c9d3c2e799f762f25f5060b2b82
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c4a01e84b8f765d024c753d08211f3bb84e7f011
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119618795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889764"
 ---
 # <a name="keypress-event-of-the-axwindowsmediaplayer-object"></a>Evento KeyPress del objeto AxWindowsMediaPlayer
 
@@ -53,7 +53,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este evento se produce cuando la pulsación de tecla da como resultado cualquier carácter de teclado imprimible, la tecla CTRL combinada con un carácter del alfabeto estándar o uno de algunos caracteres especiales, y la tecla ENTRAR o RETROCESO.
 
@@ -61,7 +61,7 @@ Este evento se produce cuando la pulsación de tecla da como resultado cualquier
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
@@ -69,7 +69,7 @@ Este evento se produce cuando la pulsación de tecla da como resultado cualquier
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

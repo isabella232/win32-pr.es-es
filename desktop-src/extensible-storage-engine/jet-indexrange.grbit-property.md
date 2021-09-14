@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c2281f6aba08be58ee0ebe5e3f61539a08ac9637829a5a171a7c22031c24c046
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 60ae6e3e0bc142afd80624302df4aee919a5a755
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172413"
 ---
 # <a name="jet_indexrangegrbit-property"></a>JET_INDEXRANGE.grbit, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece la opción indexrange.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

@@ -4,12 +4,12 @@ ms.assetid: 80ff713d-f704-40d3-9317-cbf33d932207
 title: Distribuidores de complementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e70d253066fdde4f082a964c56a221331cfd127c0984db2a7b1933a0bb352425
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f7817e5e31b29444cc596b0be583be2198adc018
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119583665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171981"
 ---
 # <a name="plug-in-distributors"></a>Distribuidores de complementos
 
@@ -34,7 +34,7 @@ Cuando el administrador de gráficos de filtro agrega un PID, consulta el PID pa
 -   Cuando se establece un reloj de referencia, el administrador de gráficos de filtro llama a [**IDistributorNotify::SetSyncSource**](/windows/desktop/api/Strmif/nf-strmif-idistributornotify-setsyncsource).
 -   Cuando se agregan o quitan filtros, o se cambian las conexiones de pin, el administrador de gráficos de filtros llama a [**IDistributorNotify::NotifyGraphChange**](/windows/desktop/api/Strmif/nf-strmif-idistributornotify-notifygraphchange).
 
-Para implementar un PID personalizado, cree un objeto COM que admita agregaciones. Debe admitir una interfaz que el administrador de gráficos de filtros aún no admita. Opcionalmente, puede admitir la **interfaz IDistributorNotify.**
+Para implementar un PID personalizado, cree un objeto COM que admita la agregación. Debe admitir una interfaz que el administrador de gráficos de filtros aún no admita. Opcionalmente, puede admitir la **interfaz IDistributorNotify.**
 
 Si el PID obtiene punteros de interfaz del administrador de gráficos de filtro, debe liberarlos inmediatamente. De lo contrario, podría crear un recuento circular de referencias, lo que podría impedir que se destruyese el administrador de gráficos de filtros. Mantener un recuento de referencias en el administrador de gráficos de filtros no es necesario en ningún caso, porque el administrador de gráficos de filtro controla la duración del PID.
 

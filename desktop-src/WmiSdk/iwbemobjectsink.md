@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Fastprox.dll
-ms.openlocfilehash: 6bfce21edca92c95276f382d16007f8b319b9f3b80fc5c3c721f7232ea0b4618
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 980865605eadfd5e4cb61a511317dec7838b8e47
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119996545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172570"
 ---
 # <a name="iwbemobjectsink-interface"></a>Interfaz IWbemObjectSink
 
@@ -39,7 +39,7 @@ Al programar clientes asincrónicos de WMI, el usuario proporciona la implementa
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IWbemObjectSink** tiene estos tipos de miembros:
 
@@ -60,7 +60,7 @@ La **interfaz IWbemObjectSink** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al implementar un receptor de suscripción de eventos (**IWbemObjectSink** o [**IWbemEventSink**](iwbemeventsink.md)), no llame a WMI desde los métodos [**Indicate**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) o [**SetStatus**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-setstatus) del objeto receptor. Por ejemplo, llamar a [**IWbemServices::CancelAsyncCall**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) para cancelar el receptor desde dentro de una implementación de [**Indicate**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) puede interferir con el estado wmi. Para cancelar una suscripción de eventos, establezca una marca y llame a **IWbemServices::CancelAsyncCall** desde otro subproceso u objeto. Para las implementaciones que no están relacionadas con un receptor de eventos, como recuperaciones de objetos, enumeraciones y consultas, puede volver a llamar a WMI.
 
@@ -168,13 +168,13 @@ HRESULT QuerySink::SetStatus(
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                           |
-| Header<br/>                   | <dl> <dt>Wbemcli.h (incluir Wbemidl.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wbemcli.h (incluir Wbemidl.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Wbemuuid.lib</dt> </dl>                  |
 | Archivo DLL<br/>                      | <dl> <dt>Fastprox.dll</dt> </dl>                  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

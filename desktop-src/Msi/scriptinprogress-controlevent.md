@@ -4,18 +4,18 @@ ms.assetid: 088e91e0-734a-4f18-8ceb-cfa4f904f75c
 title: ScriptInProgress ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5b2e92baf6f1ad3fd4a7ffb714aede88dc90d664564dd5d18f4c97e4d3bdc8c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 788fdc9c0acec5979a835a6cd2a0ec09cc6f0c38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169713"
 ---
 # <a name="scriptinprogress-controlevent"></a>ScriptInProgress ControlEvent
 
 El instalador usa este evento para mostrar una cadena de información mientras se compila el script de ejecución de la instalación. La cadena de información se puede mostrar en un cuadro de diálogo mediante un [control text](text-control.md) que se suscribe a este control ControlEvent. Este evento debe crearse en la [tabla EventMapping](eventmapping-table.md).
 
-Este control ControlEvent se puede controlar mediante una [](r-gly.md)interfaz de usuario que se ejecuta en los niveles de interfaz de usuario [*básica,*](b-gly.md)interfaz de usuario reducida o interfaz [*de usuario*](f-gly.md) completa. Para obtener información sobre los niveles de interfaz de usuario, [vea Interfaz de usuario niveles](user-interface-levels.md).
+Este control ControlEvent se puede controlar mediante una [](r-gly.md)interfaz de usuario que se ejecuta en los niveles de interfaz de usuario [*básica,*](b-gly.md)interfaz de usuario reducida o interfaz [*de usuario*](f-gly.md) completa. Para obtener información sobre los niveles de interfaz de [usuario, vea Interfaz de usuario levels](user-interface-levels.md).
 
 ## <a name="published-by"></a>Publicado por
 

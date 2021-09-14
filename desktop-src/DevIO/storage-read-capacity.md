@@ -1,5 +1,5 @@
 ---
-description: Contiene información sobre el tamaño de un dispositivo. Esto se devuelve desde el código de control CAPACIDAD DE LECTURA DE ALMACENAMIENTO \_ DE IOCTL. \_ \_
+description: Contiene información sobre el tamaño de un dispositivo. Esto se devuelve desde el código de control DE CAPACIDAD DE LECTURA DE ALMACENAMIENTO \_ DE IOCTL. \_ \_
 ms.assetid: bd18f4b7-f87e-48f6-b7c2-68990beb8d36
 title: STORAGE_READ_CAPACITY estructura (Ntddstor.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Ntddstor.h
-ms.openlocfilehash: 3a138f6594e241c96526ebf6955c61374aa0f48a5aa66f364ef82c1591b64594
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e57a9f4420b977598e15f9aae219c060665c9d0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118404976"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164293"
 ---
 # <a name="storage_read_capacity-structure"></a>ESTRUCTURA \_ DE CAPACIDAD DE LECTURA DE \_ ALMACENAMIENTO
 
@@ -39,7 +39,7 @@ typedef struct _STORAGE_READ_CAPACITY {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -78,7 +78,7 @@ Tamaño del disco en bytes.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El archivo de encabezado Ntddstor.h está disponible en Windows Driver Kit (WDK).
 
@@ -86,11 +86,11 @@ El archivo de encabezado Ntddstor.h está disponible en Windows Driver Kit (WDK)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008, Windows Server 2003 con SP1<br/>                          |
-| Header<br/>                   | <dl> <dt>Ntddstor.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntddstor.h</dt> </dl> |
 
 
 
@@ -98,7 +98,7 @@ El archivo de encabezado Ntddstor.h está disponible en Windows Driver Kit (WDK)
 
 <dl> <dt>
 
-[**CAPACIDAD DE \_ LECTURA DE \_ ALMACENAMIENTO DE IOCTL \_**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity)
+[**CAPACIDAD DE LECTURA \_ DE \_ ALMACENAMIENTO DE \_ IOCTL**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity)
 </dt> </dl>
 
  

@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Tipos de contadores no condicionales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a05da34058ceeb99ab60d8cc3d4f72cb3eec85194e48bb707a929eb2f68aa7b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 87ba2757f08dcb2256236117daf2ef3343004425
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118555165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172557"
 ---
 # <a name="noncomputational-counter-types"></a>Tipos de contadores no condicionales
 
 Los tipos de contadores no condicionales no tienen una fórmula asociada. El valor sin formato es directamente significativo.
 
-La **propiedad FilesToBeIndexed** de la clase [**\_ \_ ContentIndex \_ IndexingService de Win32 PerfRawData**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) es un ejemplo del tipo de contador **\_ PERF COUNTER \_ RAWCOUNT.** Contiene un recuento de archivos que no se han indexado.
+La **propiedad FilesToBeIndexed** de la clase [**\_ \_ ContentIndex \_ IndexingService de PerfRawData de Win32**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) es un ejemplo del tipo de contador **\_ PERF COUNTER \_ RAWCOUNT.** Contiene un recuento de archivos que no se han indexado.
 
 Los tipos de contador se designan mediante la constante definida en Winperf.h, que se encuentra en el Kit de desarrollo de software (SDK) de Microsoft Windows. En la tabla siguiente se enumeran los tipos de contadores no condicionales que se proporcionan.
 
@@ -38,7 +38,7 @@ Los tipos de contador se designan mediante la constante definida en Winperf.h, q
 
 <dl> <dt>
 
-[Tipos de contadores de rendimiento WMI](wmi-performance-counter-types.md)
+[Tipos de contadores de rendimiento wmi](wmi-performance-counter-types.md)
 </dt> </dl>
 
  

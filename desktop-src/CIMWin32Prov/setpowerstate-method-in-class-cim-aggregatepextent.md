@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 56d9f6c34ec1eb98d89c27eb0ebf90ad792f0237eb0b716d5ccb1d4ce2927c7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ed988e5f58464479aa29d709eb628feb13f0d1c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118675756"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174050"
 ---
 # <a name="setpowerstate-method-of-the-cim_aggregatepextent-class"></a>Método SetPowerState de la clase \_ AggregatePExtent de CIM
 

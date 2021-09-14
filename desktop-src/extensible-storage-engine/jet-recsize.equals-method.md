@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: d11841e4a179046707be49a1f9fbee2c3dee95d00cb2e1f3387ea05677574259
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e71c1abac163f3b874a5708d4004d9592d721503
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119719925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962911"
 ---
 # <a name="jet_recsizeequals-method"></a>JET_RECSIZE. Método Equals
 
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

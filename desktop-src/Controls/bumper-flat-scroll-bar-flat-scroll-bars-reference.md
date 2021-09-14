@@ -4,12 +4,12 @@ description: Referencia de barra de desplazamiento plano
 ms.assetid: c9f6bd60-c55f-49ad-b6e7-193743a1cdec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3647590773111862bbba1f38b7986331830feec9f0fd42167c27b1805e5d3715
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 14e34c3e8dd81019f60c7725f3ab6061ca343320
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119827265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174258"
 ---
 # <a name="flat-scroll-bar-reference"></a>Referencia de barra de desplazamiento plano
 

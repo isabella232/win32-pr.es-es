@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101703
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 68d06ee463f1ef23418203a759b8823382e0279d81efb98abb740f0951a78396
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a2383912889f0c547e9d396c419c846225465ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117710724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963276"
 ---
 # <a name="esentfileiofailexception-properties"></a>Propiedades de EsentFileIOFailException
 
@@ -34,7 +34,7 @@ El [tipo EsentFileIOFailException](./esentfileiofailexception-class.md) expone l
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentFileIOFailException](./esentfileiofailexception-class.md) expone l
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -4,12 +4,12 @@ ms.assetid: 4ee858fa-dd9b-487b-87a7-4d94c7e8c237
 title: Spell Checking API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e716028281c1ff13b2cff634b868921f50a2ae0bdf2ccdd805d783ed7edceb5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 858579a1f77e37048ebcd94f88ab5f7ff32deaa5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120130185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171914"
 ---
 # <a name="spell-checking-api"></a>Spell Checking API
 

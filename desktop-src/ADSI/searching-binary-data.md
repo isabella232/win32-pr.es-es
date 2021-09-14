@@ -10,12 +10,12 @@ keywords:
 - ADSI ADSI, código de ejemplo C/C++, búsqueda de datos binarios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f77ead11f4e2d02c6e7ef3e25975a7059c2c057dbc62f71e406bbda3e24c3b2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0973ff7a769d68abf85e6557fef2e1d434ba3ff4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120005425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172153"
 ---
 # <a name="searching-binary-data"></a>Buscar datos binarios
 

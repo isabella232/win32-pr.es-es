@@ -4,12 +4,12 @@ ms.assetid: b64a3983-ee75-4199-9778-1e5b7cec59e4
 title: Mensaje WM_DEVICECHANGE (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b32936d36e01a34acc9ace512703db7584768e8b51a9fe06a791b2a285ee2add
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91cc45d7a7978d5501e51cc1355c43afcf12b956
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017804"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164278"
 ---
 # <a name="wm_devicechange-message"></a>Mensaje \_ DE WM DEVICECHANGE
 
@@ -77,7 +77,7 @@ Devuelve **TRUE** para conceder la solicitud.
 
 Devuelve **BROADCAST QUERY DENY \_ \_ para** denegar la solicitud.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En el caso de los dispositivos que ofrecen características controlables por software, como la expulsión y el bloqueo, el sistema normalmente envía un mensaje [ \_ DBT DEVICEREMOVEPENDING](dbt-deviceremovepending.md) para permitir que las aplicaciones y los controladores de dispositivos finalicen correctamente el uso del dispositivo. Si el sistema quita forzadamente un dispositivo, es posible que no envíe un mensaje [ \_ DEVICEQUERYREMOVE](dbt-devicequeryremove.md) de DBT antes de hacerlo.
 
@@ -87,9 +87,9 @@ En el caso de los dispositivos que ofrecen características controlables por sof
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows XP |
 | Servidor mínimo compatible | Windows Server 2003|
-| Header | <dl> <dt>Winuser.h (incluya Windows.h o Dbt.h)</dt> </dl> |
+| Encabezado | <dl> <dt>Winuser.h (incluya Windows.h o Dbt.h)</dt> </dl> |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

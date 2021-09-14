@@ -2,7 +2,7 @@
 description: Representa un trabajo creado con el comando AT.
 ms.assetid: 2fa69e3f-9a6c-4aa9-8a6c-ea28eb4342ca
 ms.tgt_platform: multiple
-title: Win32_ScheduledJob (clase)
+title: Win32_ScheduledJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -34,18 +34,18 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 50162221e7ca18e07e3599deca2dba67b18ba708
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174330"
 ---
-# <a name="win32_scheduledjob-class"></a>\_Clase Win32 ScheduledJob
+# <a name="win32_scheduledjob-class"></a>Clase ScheduledJob de Win32 \_
 
-La  [clase WMI](../wmisdk/retrieving-a-class.md) **\_ ScheduledJob de Win32**   representa un trabajo creado con el comando **at** .
+La **clase \_ WMI ScheduledJob de Win32** representa un trabajo creado con el comando  [](../wmisdk/retrieving-a-class.md)   **AT.**
 
 > [!Note]  
-> La **clase \_ ScheduledJob de Win32** no representa un trabajo creado con el Asistente para tareas programadas desde el panel de control. No se puede cambiar una tarea creada por WMI en la interfaz de usuario de tareas programadas. Para obtener más información, vea la sección Comentarios.
+> La **clase \_ ScheduledJob de Win32** no representa un trabajo creado con el Asistente para tareas programadas desde el Panel de control. No se puede cambiar una tarea creada por WMI en la interfaz de usuario tareas programadas. Para obtener más información, vea la sección Comentarios.
 
  
 
@@ -79,7 +79,7 @@ class Win32_ScheduledJob : CIM_Job
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ScheduledJob de Win32** tiene estos tipos de miembros:
 
@@ -88,14 +88,14 @@ La **clase \_ ScheduledJob de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ ScheduledJob** tiene estos métodos.
+La **clase \_ ScheduledJob de Win32** tiene estos métodos.
 
 
 
 | Método                                                      | Descripción                                                                                                           |
 |:------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| [**A**](create-method-in-class-win32-scheduledjob.md) | Método de clase que envía un trabajo al sistema operativo para su ejecución en una fecha y hora futuras especificadas.<br/> |
-| [**Elimínelos**](delete-method-in-class-win32-scheduledjob.md) | Método de clase que elimina un trabajo programado.<br/>                                                                 |
+| [**Crear**](create-method-in-class-win32-scheduledjob.md) | Método de clase que envía un trabajo al sistema operativo para su ejecución en una fecha y hora futuras especificadas.<br/> |
+| [**Eliminar**](delete-method-in-class-win32-scheduledjob.md) | Método de clase que elimina un trabajo programado.<br/>                                                                 |
 
 
 
@@ -116,12 +116,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -134,28 +134,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| \| [**de administración de red en la \_ información**](/windows/win32/api/lmat/ns-lmat-at_info) \| ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Comando Win32API \| Network Management Structures AT \| [**\_ INFO**](/windows/win32/api/lmat/ns-lmat-at_info) \| ")
 </dt> </dl>
 
-Nombre del comando, programa por lotes o archivo binario (y argumentos de la línea de comandos) que el servicio de programación utiliza para invocar el trabajo.
+Nombre del comando, programa por lotes o archivo binario (y argumentos de línea de comandos) que usa el servicio de programación para invocar el trabajo.
 
-Ejemplo: "**Defrag** **/q/f**"
+Ejemplo: "**defrag** **/q/f**"
 
 </dd> <dt>
 
 **DaysOfMonth**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**at \_ info**](/windows/win32/api/lmat/ns-lmat-at_info) \| **DaysOfMonth**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures AT \| [**\_ INFO**](/windows/win32/api/lmat/ns-lmat-at_info) \| **DaysOfMonth")**
 </dt> </dl>
 
-Días del mes en que el trabajo está programado para ejecutarse. Si un trabajo está programado para ejecutarse en varios días del mes, estos valores se pueden combinar en un operador lógico OR. Por ejemplo, si un trabajo se va a ejecutar el 1 y el 16 de cada mes, el valor de la propiedad **DaysOfMonth** sería 1 o 32768.
+Días del mes en que el trabajo está programado para ejecutarse. Si un trabajo está programado para ejecutarse varios días del mes, estos valores se pueden unir en un or lógico. Por ejemplo, si un trabajo se va a ejecutar el 1 y el 16 de cada mes, el valor de la propiedad **DaysOfMonth** sería 1 O 32768.
 
 <dt>
 
@@ -166,7 +166,7 @@ Días del mes en que el trabajo está programado para ejecutarse. Si un trabajo 
 
 </dt> <dd>
 
-1a
+Primera
 
 </dd> <dt>
 
@@ -177,7 +177,7 @@ Días del mes en que el trabajo está programado para ejecutarse. Si un trabajo 
 
 </dt> <dd>
 
-secundaria
+Segundo
 
 </dd> <dt>
 
@@ -265,7 +265,7 @@ secundaria
 
 </dt> <dd>
 
-10
+10th
 
 </dd> <dt>
 
@@ -309,7 +309,7 @@ secundaria
 
 </dt> <dd>
 
-14
+14.
 
 </dd> <dt>
 
@@ -320,7 +320,7 @@ secundaria
 
 </dt> <dd>
 
-día
+15.
 
 </dd> <dt>
 
@@ -331,7 +331,7 @@ día
 
 </dt> <dd>
 
-16
+16.
 
 </dd> <dt>
 
@@ -342,7 +342,7 @@ día
 
 </dt> <dd>
 
-17
+17.
 
 </dd> <dt>
 
@@ -353,7 +353,7 @@ día
 
 </dt> <dd>
 
-18
+18.
 
 </dd> <dt>
 
@@ -364,7 +364,7 @@ día
 
 </dt> <dd>
 
-19
+Xix
 
 </dd> <dt>
 
@@ -375,7 +375,7 @@ día
 
 </dt> <dd>
 
-20
+Xx
 
 </dd> <dt>
 
@@ -419,7 +419,7 @@ día
 
 </dt> <dd>
 
-24
+24.
 
 </dd> <dt>
 
@@ -430,7 +430,7 @@ día
 
 </dt> <dd>
 
-25
+25.
 
 </dd> <dt>
 
@@ -441,7 +441,7 @@ día
 
 </dt> <dd>
 
-26
+26.
 
 </dd> <dt>
 
@@ -452,7 +452,7 @@ día
 
 </dt> <dd>
 
-27
+27.
 
 </dd> <dt>
 
@@ -463,7 +463,7 @@ día
 
 </dt> <dd>
 
-28
+28.
 
 </dd> <dt>
 
@@ -474,7 +474,7 @@ día
 
 </dt> <dd>
 
-29
+29.
 
 </dd> <dt>
 
@@ -485,7 +485,7 @@ día
 
 </dt> <dd>
 
-semestre
+30.
 
 </dd> <dt>
 
@@ -496,7 +496,7 @@ semestre
 
 </dt> <dd>
 
-día
+31.
 
 </dd> </dl>
 
@@ -505,16 +505,16 @@ día
 **DaysOfWeek**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**at \_ info**](/windows/win32/api/lmat/ns-lmat-at_info) \| **DaysOfWeek**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de administración de red win32API \| AT \| [**\_ INFO**](/windows/win32/api/lmat/ns-lmat-at_info) \| **DaysOfWeek**")
 </dt> </dl>
 
-Días de la semana en los que está programada la ejecución de un trabajo. Si un trabajo está programado para ejecutarse en varios días de la semana, los valores se pueden combinar en un operador lógico OR. Por ejemplo, si un trabajo está programado para ejecutarse los lunes, miércoles y viernes, el valor de la propiedad **DaysOfWeek** sería 1 o 4 o 16.
+Días de la semana en los que se programa la ejecución de un trabajo. Si un trabajo está programado para ejecutarse varios días de la semana, los valores se pueden unir en un or lógico. Por ejemplo, si un trabajo está programado para ejecutarse los lunes, miércoles y viernes, el valor de la propiedad **DaysOfWeek** sería 1 O 4 O 16.
 
 <dt>
 
@@ -578,19 +578,19 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ElapsedTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -598,25 +598,25 @@ Tipo de acceso: solo lectura
 
 Período de tiempo durante el que se ha estado ejecutando el trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
 Indica cuándo se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -629,26 +629,26 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**at \_ info**](/windows/win32/api/lmat/ns-lmat-at_info) \| **Flags** no \| **\_ Interactive**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures AT \| [**\_ INFO**](/windows/win32/api/lmat/ns-lmat-at_info) \| **Flags** \| **JOB \_ NONINTERACTIVE")**
 </dt> </dl>
 
-El trabajo especificado es interactivo, lo que significa que un usuario puede proporcionar la entrada a un trabajo programado mientras se está ejecutando.
+El trabajo especificado es interactivo, lo que significa que un usuario puede proporcionar entradas a un trabajo programado mientras se está ejecutando.
 
 </dd> <dt>
 
 **JobId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](../wmisdk/key-qualifier.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**at \_ enum**](/windows/win32/api/lmat/ns-lmat-at_enum) \| **JobID**")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures AT \| [**\_ ENUM**](/windows/win32/api/lmat/ns-lmat-at_enum) \| **JobId")**
 </dt> </dl>
 
-Número de identificación del trabajo. Los métodos los usan como identificador de un trabajo programado en este equipo.
+Identificación del número del trabajo. Los métodos lo usan como identificador de un trabajo que se está programando en este equipo.
 
 </dd> <dt>
 
@@ -661,23 +661,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("JobStatus"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| estructuras de administración \| [**de red en las marcas de \_ enumeración**](/windows/win32/api/lmat/ns-lmat-at_enum) \|  \| **\_ \_ error de trabajo exec**")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("JobStatus"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures AT \| [**\_ ENUM**](/windows/win32/api/lmat/ns-lmat-at_enum) \| **Flags** \| **JOB \_ EXEC \_ ERROR**")
 </dt> </dl>
 
-Estado de la ejecución la última vez que se programó la ejecución de este trabajo.
+Estado de ejecución la última vez que se programó la ejecución de este trabajo.
 
 <dt>
 
 <span id="Success"></span><span id="success"></span><span id="SUCCESS"></span>
 
-**Correcto** ("correcto")
+**Correcto** ("Correcto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Failure"></span><span id="failure"></span><span id="FAILURE"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> </dl>
@@ -693,12 +693,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, esta propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -711,9 +711,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Se notifica al usuario sobre la finalización o el error del trabajo.
+Se notifica al usuario tras la finalización o el error del trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
@@ -728,14 +728,14 @@ Tipo de acceso: solo lectura
 
 Usuario que envió el trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
 **Prioridad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -743,7 +743,7 @@ Tipo de acceso: solo lectura
 
 Importancia de la ejecución de un trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
@@ -756,30 +756,30 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| \| de estructuras de administración de red en el trabajo marcas [**de \_ información**](/windows/win32/api/lmat/ns-lmat-at_info)se \|  \| **\_ ejecutan \_ periódicamente**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures AT \| [**\_ INFO**](/windows/win32/api/lmat/ns-lmat-at_info) \| **Flags** \| **JOB RUN \_ \_ PERIODICALLY")**
 </dt> </dl>
 
-El trabajo programado se ejecuta repetidamente en los días en los que está programado el trabajo. Si es **false**, el trabajo se ejecuta una vez.
+El trabajo programado se ejecuta repetidamente en los días en que se programa el trabajo. Si **es False**, el trabajo se ejecuta una vez.
 
 </dd> <dt>
 
 **StartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("startTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**at \_ enum**](/windows/win32/api/lmat/ns-lmat-at_enum) \| **JobTime**")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("StartTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures AT \| [**\_ ENUM**](/windows/win32/api/lmat/ns-lmat-at_enum) \| **JobTime")**
 </dt> </dl>
 
-Hora UTC para ejecutar el trabajo, con el formato "AAAAMMDDHHMMSS. MMMMMM (+-) OOO ", donde" AAAAMMDD "debe reemplazarse por" \* \* \* \* \* \* \* \* ". El reemplazo es necesario porque el servicio de programación solo permite configurar los trabajos para que se ejecuten una vez, o se ejecuten en un día del mes o de la semana. No se puede ejecutar un trabajo en una fecha concreta.
+Hora UTC para ejecutar el trabajo, con el formato "AAAAMMDDHHMMSS. MMMMMM(+-)OOO", donde "YYYYMMDD" debe reemplazarse por " \* \* \* \* \* \* \* \* ". El reemplazo es necesario porque el servicio de programación solo permite que los trabajos se configuren para que se ejecuten una vez o que se ejecuten un día del mes o la semana. Un trabajo no se puede ejecutar en una fecha específica.
 
-La sección "(+-) OOO" del valor de la propiedad **startTime** es la diferencia actual de la conversión de hora local. La diferencia es la diferencia entre la hora UTC y la hora local. Para calcular la diferencia de la zona horaria, multiplique el número de horas que la zona horaria está por encima o por detrás de la hora del meridiano de Greenwich (GMT) en 60 (use un número positivo para el número de horas si la zona horaria está por detrás de GMT y un número negativo si la zona horaria está tras la hora GMT). Agregue un 60 adicional al cálculo si la zona horaria usa el horario de verano. Por ejemplo, la zona horaria estándar del Pacífico es de ocho horas tras la hora GMT, por lo que la diferencia es igual a-420 (-8 \* 60 + 60) cuando el horario de verano está en uso y-480 (-8 \* 60) cuando el horario de verano no está en uso. También puede determinar el valor de la diferencia consultando la propiedad bias de la clase [**\_ TimeZone de Win32**](win32-timezone.md) .
+La sección "(+-)OOO" del valor de la propiedad **StartTime** es el sesgo actual para la traducción de la hora local. El sesgo es la diferencia entre la hora UTC y la hora local. Para calcular el sesgo de la zona horaria, multiplique el número de horas que la zona horaria está por delante o por detrás de la hora media de Greenwich (GMT) por 60 (use un número positivo para el número de horas si la zona horaria está por delante de GMT y un número negativo si la zona horaria está detrás de GMT). Agregue 60 adicionales al cálculo si la zona horaria usa el horario de verano. Por ejemplo, la zona horaria estándar del Pacífico está ocho horas por detrás de GMT, por lo que el sesgo es igual a -420 (-8 60 + 60) cuando el horario de verano está en uso y \* -480 (-8 60) cuando el horario de verano no está \* en uso. También puede determinar el valor del sesgo consultando la propiedad bias de la clase [**\_ TimeZone de Win32.**](win32-timezone.md)
 
-Por ejemplo: " \* \* \* \* \* \* \* \* 123000.000000-420" especifica 14,30 (2:30 P.M.) PST con horario de verano en vigor.
+Por ejemplo: \* \* \* \* \* \* \* \* "123000.000000-420" especifica 14.30 (2:30 p. m.) PST con el horario de verano en vigor.
 
 </dd> <dt>
 
@@ -792,14 +792,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Cadena que indica el estado actual del objeto. Se puede definir un estado operativo y no operativo. El estado operativo puede ser "correcto", "degradado" y "Pred FAIL". "Pred FAIL" indica que un elemento funciona correctamente, pero está prediciendo un error (por ejemplo, una unidad de disco duro habilitada para SMART).
+Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "error", "iniciando", "deteniendo" y "servicio". "Servicio" puede aplicarse durante el reflejo del disco: Resilvering, recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -807,84 +807,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -894,7 +894,7 @@ Con **estrés** ("acentuado")
 **TimeSubmitted**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -902,14 +902,14 @@ Tipo de acceso: solo lectura
 
 Hora a la que se envió el trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del trabajo [**\_ cim**](cim-job.md).
 
 </dd> <dt>
 
 **UntilTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -917,24 +917,24 @@ Tipo de acceso: solo lectura
 
 Hora en la que el trabajo no es válido o debe detenerse.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del trabajo [**\_ cim**](cim-job.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Cada trabajo programado en el servicio de programación se almacena de forma persistente (el programador puede iniciar un trabajo después de un reinicio) y se ejecuta a la hora especificada y al día de la semana o mes. Si el equipo no está activo o si el servicio programado no se está ejecutando en el tiempo de trabajo especificado, el servicio de programación ejecuta el trabajo especificado el día siguiente a la hora especificada.
+Cada trabajo programado en el servicio de programación se almacena de forma persistente (el programador puede iniciar un trabajo después de un reinicio) y se ejecuta a la hora y el día especificados de la semana o el mes. Si el equipo no está activo o si el servicio programado no se está ejecutando a la hora de trabajo especificada, el servicio de programación ejecuta el trabajo especificado al día siguiente a la hora especificada.
 
-Los trabajos se programan de acuerdo con la hora universal coordinada (UTC) con el desplazamiento de diferencia de la hora del meridiano de Greenwich (GMT), lo que significa que se puede especificar un trabajo mediante cualquier zona horaria. La **clase \_ ScheduledJob de Win32** devuelve la hora local con el desplazamiento de UTC al enumerar un objeto y se convierte en la hora local al crear nuevos trabajos. Por ejemplo, un trabajo especificado para ejecutarse en un equipo de Boston a las 10:30 P.M. La hora del lunes PST se programará para ejecutarse localmente a las 1:30 A.M. Martes EST.
+Los trabajos se programan según la hora universal coordinada (UTC) con desplazamiento de sesgo con respecto a la hora media de Greenwich (GMT), lo que significa que un trabajo se puede especificar mediante cualquier zona horaria. La **clase \_ ScheduledJob de Win32** devuelve la hora local con desplazamiento UTC al enumerar un objeto y se convierte a la hora local al crear nuevos trabajos. Por ejemplo, un trabajo especificado para ejecutarse en un equipo de Boston a las 10:30 p. m. La hora del lunes pst se programará para ejecutarse localmente a la 1:30 a. m. Martes EST.
 
 > [!Note]  
-> Un cliente debe tener en cuenta si el horario de verano está en funcionamiento en el equipo local, y si es así, reste una diferencia de 60 minutos a partir del desplazamiento de UTC.
+> Un cliente debe tener en cuenta si el horario de verano está en funcionamiento o no en el equipo local y, si es así, restar un sesgo de 60 minutos del desplazamiento UTC.
 
  
 
-La **clase \_ ScheduledJob de Win32** se deriva [**del \_ trabajo CIM**](cim-job.md). Debe ser miembro del grupo administradores para crear un trabajo programado mediante esta clase.
+La **clase \_ ScheduledJob de Win32** se deriva del [**trabajo CIM \_**](cim-job.md). Debe ser miembro del grupo de administradores para crear un trabajo programado con esta clase.
 
-La **clase \_ ScheduledJob de Win32** usa internamente el protocolo at, que está enlazado a la degradación a partir de Windows 8 y Windows Server 2012. Como primer paso, el protocolo AT está deshabilitado de forma predeterminada. Si se deshabilita el protocolo, por ejemplo, al llamar al método [**Create**](create-method-in-class-win32-scheduledjob.md) en un objeto **\_ ScheduledJob de Win32** se producirá un error 0x8. Puede volver a activar el protocolo AT si agrega la siguiente entrada del registro:
+La **clase \_ ScheduledJob de Win32** usa internamente el protocolo AT, que está enlazado a desuso a partir de Windows 8 y Windows Server 2012. Como primer paso, el protocolo AT está deshabilitado de forma predeterminada. Si el protocolo está deshabilitado, por ejemplo, si se llama al método [**Create**](create-method-in-class-win32-scheduledjob.md) en un objeto **\_ ScheduledJob de Win32,** se producirá un error 0x8. Puede volver a activar el protocolo AT agregando la siguiente entrada del Registro:
 
 ``` syntax
 Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Configuration 
@@ -943,13 +943,13 @@ Type: REG_DWORD
 Value: 1
 ```
 
-Es posible que tenga que reiniciar el equipo para que la configuración sea efectiva.
+Es posible que tenga que reiniciar la máquina para que la configuración sea efectiva.
 
-Dado que **Win32 \_ ScheduledJob** se basa en la API de Win32 [**NetScheduleJobGetInfo**](/windows/win32/api/lmat/nf-lmat-netschedulejobgetinfo) , no puede usar esta clase junto con el programador de tareas. Si desea usar Programador de tareas, use la API de Programador de tareas. Para obtener más información, consulte la [referencia de programador de tareas](../taskschd/task-scheduler-reference.md).
+Dado **que Win32 \_ ScheduledJob** se basa en la API [**Win32 NetScheduleJobGetInfo,**](/windows/win32/api/lmat/nf-lmat-netschedulejobgetinfo) no puede usar esta clase junto con el Programador de tareas. Si desea usar Programador de tareas, use Programador de tareas API. Para obtener más información, vea la [Programador de tareas referencia](../taskschd/task-scheduler-reference.md).
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente ejemplo de código de VBScript programa Notepad.exe para que se ejecute de forma interactiva en 1:25 por la hora del equipo local cada miércoles.
+El siguiente ejemplo de código de VBScript Notepad.exe ejecutar de forma interactiva a la 1:25 a la hora del equipo local cada miércoles.
 
 
 ```VB
@@ -974,8 +974,8 @@ End If
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -984,13 +984,13 @@ End If
 
 <dl> <dt>
 
-[**Trabajo de CIM \_**](cim-job.md)
+[**Trabajo \_ cim**](cim-job.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)
 </dt> <dt>
 
-[Tareas de WMI: tareas programadas](../wmisdk/wmi-tasks--scheduled-tasks.md)
+[Tareas wmi: tareas programadas](../wmisdk/wmi-tasks--scheduled-tasks.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 32e46c52-5c3c-4e22-8f4e-05286ee213ba
 title: Servicios de transliteración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d442ed0a9c45d5fb40ffa3f84438f6b2a46ad0a5a6587e3a9fd16dd2f2fd9cff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc00b96d56e6b05e70b352c81da0280e9ef35043
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119788275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171858"
 ---
 # <a name="transliteration-services"></a>Servicios de transliteración
 
@@ -27,7 +27,7 @@ La salida de un servicio de transliteración es texto UTF-16 asignado a un segun
 
 ## <a name="transliteration-service-operation"></a>Operación del servicio de transliteración
 
-Un servicio de transliteración asigna texto Unicode de un script de entrada a un script de salida, carácter por carácter o término por término, según corresponda. La aplicación puede optar por obtener el servicio de transliteración específico de interés especificando scripts de entrada y salida al llamar a [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices)o proporcionando el GUID del servicio. Otra opción para la aplicación es enumerar todos los servicios de transliteración disponibles especificando la categoría de servicio "Transliteration" al llamar a **MappingGetServices**. En este caso, la aplicación llama a cada servicio y compara los resultados con el texto original para ver si el funcionamiento de un servicio determinado ha cambiado los resultados.
+Un servicio de transliteración asigna texto Unicode de un script de entrada a un script de salida, carácter por carácter o término por término, según corresponda. La aplicación puede optar por obtener el servicio de transliteración específico de interés especificando scripts de entrada y salida al llamar a [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices)o proporcionando el GUID del servicio. Otra opción para la aplicación es enumerar todos los servicios de transliteración disponibles especificando la categoría de servicio "Transliteration" al llamar a **MappingGetServices.** En este caso, la aplicación llama a cada servicio y compara los resultados con el texto original para ver si el funcionamiento de un servicio determinado ha cambiado los resultados.
 
 La aplicación puede solicitar el reconocimiento de texto para un servicio de transliteración de ELS con una llamada a [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext). Cuando recibe la solicitud, el servicio de transliteración asigna un búfer para contener los datos transliterados y, a continuación, realiza el reconocimiento de texto para cada punto de código de la cadena de entrada proporcionada por la aplicación.
 

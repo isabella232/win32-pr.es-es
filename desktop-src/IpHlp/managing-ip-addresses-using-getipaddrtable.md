@@ -4,12 +4,12 @@ ms.assetid: f041cb37-926d-4eeb-835c-f8b9d5ee4d2e
 title: Administración de direcciones IP mediante GetIpAddrTable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 090bdb1e73d3f770eafb3a5e70893253918eb68573ebd05aa6ec40a609a7ba4e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a3d94eb4de22a428e20a4cb0fdc8970d7f65fed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146688"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171841"
 ---
 # <a name="managing-ip-addresses-using-getipaddrtable"></a>Administración de direcciones IP mediante GetIpAddrTable
 
@@ -17,7 +17,7 @@ La [**función GetIpAddrTable**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getip
 
 **Para usar GetIpAddrTable**
 
-1.  Declare un puntero a un objeto [**\_ IPADDRTABLE**](/windows/win32/api/ipmib/ns-ipmib-mib_ipaddrtable) de MIB denominado *pIPAddrTable* y un **objeto DWORD** denominado *dwSize*. Estas variables se pasan como parámetros a [**la función GetIpAddrTable.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getipaddrtable) Cree también una variable **DWORD** denominada *dwRetVal* (que se usa para la comprobación de errores).
+1.  Declare un puntero a un objeto [**\_ IPADDRTABLE**](/windows/win32/api/ipmib/ns-ipmib-mib_ipaddrtable) de MIB denominado *pIPAddrTable* y un **objeto DWORD** denominado *dwSize*. Estas variables se pasan como parámetros a [**la función GetIpAddrTable.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getipaddrtable) Cree también una variable **DWORD** denominada *dwRetVal* (usada para la comprobación de errores).
     ```C++
     MIB_IPADDRTABLE  *pIPAddrTable;
     DWORD            dwSize = 0;
@@ -27,7 +27,7 @@ La [**función GetIpAddrTable**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getip
 
     
 
-2.  Asigne memoria para la estructura .
+2.  Asigne memoria para la estructura.
     > [!Note]  
     > El tamaño de *dwSize* no es suficiente para contener la información. Consulte el paso siguiente.
 
@@ -66,7 +66,7 @@ La [**función GetIpAddrTable**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getip
 
     
 
-5.  Si la llamada se ha realizado correctamente, acceda a los datos desde la estructura de datos *pIPAddrTable.*
+5.  Si la llamada se ha realizado correctamente, acceda a los datos de la estructura de datos *pIPAddrTable.*
     ```C++
     printf("IP Address:         %ld\n", pIPAddrTable->table[0].dwAddr);
     printf("IP Mask:            %ld\n", pIPAddrTable->table[0].dwMask);

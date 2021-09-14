@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: e67381a26e3d0f1031e282d6530562416919e8cf52800a07301bf18820887828
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 134a1ce61ed1dc0d98a4daf3ba80dd4b0976c372
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119846955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174726"
 ---
 # <a name="idirectxfileobjectgetname-method"></a>IDirectXFileObject::GetName (método)
 

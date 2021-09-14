@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6099c47590397556937b8b1cceb59bc231117aa16c92012d59964afec4f6bcf1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47af082174bc6927a16760e87566f311ec9f4a14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117759606"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172957"
 ---
 # <a name="registeredtaskstate-property"></a>RegisteredTask.State, propiedad
 
 Para el scripting, obtiene el estado operativo de la tarea registrada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB

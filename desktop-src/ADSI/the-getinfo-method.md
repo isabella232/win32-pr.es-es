@@ -8,12 +8,12 @@ keywords:
 - ADSI ADSI , using,using the IADs GetInfo method
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 534de8bd667ed33d562ac55b6a70452b6496d0a3d708c55a2cb0fee1a86a8a29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b374791e7fd7ff787c1b825827f410a9c15b551b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117838459"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172181"
 ---
 # <a name="the-getinfo-method"></a>El método GetInfo
 

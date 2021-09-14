@@ -1,40 +1,40 @@
 ---
-title: Tipo de control de grupo
+title: Tipo de control Group
 description: En este tema se proporciona información sobre microsoft Automatización de la interfaz de usuario compatibilidad con el tipo de control Grupo.
 ms.assetid: f8363c2f-dbff-43a3-831f-d30151829ef9
 keywords:
 - Automatización de la interfaz de usuario, compatibilidad con el tipo de control Grupo
-- Automatización de la interfaz de usuario, tipo de control Group
+- Automatización de la interfaz de usuario, Tipo de control Grupo
 - Automatización de la interfaz de usuario,tree structure for Group control type
 - Automatización de la interfaz de usuario,properties para el tipo de control Group
-- Automatización de la interfaz de usuario,patrones de control para el tipo de control Group
+- Automatización de la interfaz de usuario,patrones de control para el tipo de control Grupo
 - Automatización de la interfaz de usuario,events para el tipo de control Group
-- tree structures,Group control type
-- properties,Group control type
-- patrones de control, tipo de control Group
+- estructuras de árbol, tipo de control De grupo
+- properties,Group (Tipo de control)
+- patrones de control, tipo de control De grupo
 - events,Group control type
-- compatibilidad con el tipo de control Grupo
+- Compatibilidad con el tipo de control Grupo
 - Group (tipo de control)
-- tipos de control, estructura de árbol para tipo de control Group
-- tipos de control, patrones de control para el tipo de control Grupo
+- tipos de control, estructura de árbol para tipo de control Grupo
+- tipos de control, patrones de control para tipo de control Grupo
 - tipos de control, compatibilidad con group
 - tipos de control, Grupo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fe0cee05f7132a35c8dd3f998ae9af5a89ac2a71
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172634"
 ---
-# <a name="group-control-type"></a>Tipo de control de grupo
+# <a name="group-control-type"></a>Tipo de control Group
 
 En este tema se proporciona información sobre microsoft Automatización de la interfaz de usuario compatibilidad con el tipo **de** control Grupo.
 
-Un control de grupo representa un nodo dentro de una jerarquía. El **tipo** de control Group crea una separación en el árbol Automatización de la interfaz de usuario para que los elementos que se agrupan tengan una división lógica dentro del Automatización de la interfaz de usuario árbol.
+Un control de grupo representa un nodo dentro de una jerarquía. El **tipo** de control Grupo crea una separación en el árbol de Automatización de la interfaz de usuario para que los elementos que se agrupan tengan una división lógica dentro del Automatización de la interfaz de usuario datos.
 
-En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el **tipo de** control Group. Los Automatización de la interfaz de usuario se aplican a todos los controles de grupo en los que el marco o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
+En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, las propiedades, los patrones de control y los eventos necesarios para el **tipo de** control Group. Los Automatización de la interfaz de usuario se aplican a todos los controles de grupo en los que el marco o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -46,7 +46,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control típico y una vista de contenido del árbol Automatización de la interfaz de usuario que pertenece a los controles de grupo y se describe lo que se puede incluir en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de grupo y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario árbol, vea [Información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
 
 
 
@@ -64,21 +64,21 @@ Los controles de grupo suelen incluir Automatización de la interfaz de usuario 
 
 ## <a name="relevant-properties"></a>Propiedades pertinentes
 
-En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles de grupo. Para obtener más información sobre Automatización de la interfaz de usuario propiedades, vea [Recuperar propiedades de Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
+En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles de grupo. Para obtener más información sobre Automatización de la interfaz de usuario, vea [Retrieving Properties from Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor      | Notas                                                                                                                                                                                                |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value      | Notas                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas. | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                         |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas. | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato del Automatización de la interfaz de usuario árbol.                                                                                         |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas. | El rectángulo exterior que contiene el control completo.                                                                                                                                             |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas. | Se admite si hay un rectángulo delimitador. Si no se puede hacer clic en todos los puntos del rectángulo delimitador y el elemento realiza pruebas de acceso especializadas, invalide y proporcione un punto en el que se puede hacer clic. |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **Grupo**  |                                                                                                                                                                                                      |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | **TRUE**   | El control de grupo siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario contenido.                                                                                                                  |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | **TRUE**   | El control de grupo siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario árbol.                                                                                                                  |
 | [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | **TRUE**   | El control de grupo siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                                                                                  |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas. | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                                                                            |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vea las notas. | Los controles de grupo suelen etiquetarse automáticamente. En estos casos, devuelve **NULL**. Si el grupo tiene una etiqueta de texto estático, devuelva la etiqueta como valor de la **propiedad LabeledBy.**                      |
-| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas. | Cadena localizada correspondiente al tipo **de** control Grupo. El valor predeterminado es "group" para en-US o Inglés (Estados Unidos).                                                                     |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas. | Cadena localizada correspondiente al tipo **de** control Group. El valor predeterminado es "group" para en-US o inglés (Estados Unidos).                                                                     |
 | [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | Vea las notas. | El control de grupo suele recibir su nombre del texto que etiqueta el control.                                                                                                                     |
 
 
@@ -109,7 +109,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AutomationFocusChangedEventId de UIA \_**](uiauto-event-ids.md)                                                                   |                                                                                                                                                  |
 | [**UIA \_ Evento de cambio de propiedad BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md)                              |                                                                                                                                                  |
-| [**UIA \_ Evento expandCollapseExpandCollapseStatePropertyId**](uiauto-control-pattern-propids.md) cambiado por la propiedad . | Si el control admite el patrón de control de patrón de control [ExpandCollapse,](uiauto-implementingexpandcollapse.md) debe admitir este evento. |
+| [**UIA \_ Evento de cambio de propiedad ExpandCollapseExpandCollapseStatePropertyId.**](uiauto-control-pattern-propids.md) | Si el control admite el patrón de control de patrón de control [ExpandCollapse,](uiauto-implementingexpandcollapse.md) debe admitir este evento. |
 | [**UIA \_ Evento de cambio de propiedad IsEnabledPropertyId.**](uiauto-automation-element-propids.md)                                              | Si el control admite la [**propiedad IsEnabled,**](uiauto-automation-element-propids.md) debe admitir este evento.                         |
 | [**UIA \_ Evento de cambio de propiedad IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)                                          | Si el control admite la [**propiedad IsOffscreen,**](uiauto-automation-element-propids.md) debe admitir este evento.                       |
 | [**UIA \_ Evento de cambio de propiedad ToggleToggleStatePropertyId.**](uiauto-control-pattern-propids.md)                                 | Si el control admite el patrón de control [Toggle,](uiauto-implementingtoggle.md) debe admitir este evento.                                 |

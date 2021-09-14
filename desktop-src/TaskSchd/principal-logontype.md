@@ -17,17 +17,17 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ec67a00b55510aecb980fd8bd8a5b2fa4ad6c73e
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885650"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173030"
 ---
 # <a name="principallogontype-property"></a>Principal.LogonType, propiedad
 
 Para el scripting, obtiene o establece el método de inicio de sesión de seguridad necesario para ejecutar las tareas asociadas a la entidad de seguridad.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -42,9 +42,9 @@ Establezca en una de las siguientes [**constantes de \_ enumeración TASK LOGON 
 
 
 
-| Valor                                                                                                                                                                                                                                                                                                     | Significado                                                                                                                                                                                                                                                                                               |
+| Value                                                                                                                                                                                                                                                                                                     | Significado                                                                                                                                                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TASK_LOGON_NONE"></span><span id="task_logon_none"></span><dl> <dt>**TASK \_ INICIO \_ DE SESIÓN NINGUNO**</dt> <dt>0</dt> </dl>                                                                               | No se especifica el método logon. Se usa para credenciales que no son NT. <br/>                                                                                                                                                                                                                           |
+| <span id="TASK_LOGON_NONE"></span><span id="task_logon_none"></span><dl> <dt>**TASK \_ INICIO \_ DE SESIÓN NINGUNO**</dt> <dt>0</dt> </dl>                                                                               | No se especifica el método logon. Se usa para credenciales que no son DE NT. <br/>                                                                                                                                                                                                                           |
 | <span id="TASK_LOGON_PASSWORD"></span><span id="task_logon_password"></span><dl> <dt>**TASK \_ CONTRASEÑA \_ DE INICIO DE**</dt> SESIÓN <dt>1</dt> </dl>                                                                   | Use una contraseña para iniciar sesión en el usuario. La contraseña debe proporcionarse en el momento del registro.<br/>                                                                                                                                                                                                |
 | <span id="TASK_LOGON_S4U"></span><span id="task_logon_s4u"></span><dl> <dt>**TASK \_ LOGON \_ S4U**</dt> <dt>2</dt> </dl>                                                                                  | Use un token interactivo existente para ejecutar una tarea. El usuario debe iniciar sesión con un servicio para el inicio de sesión del usuario (S4U). Cuando se usa un inicio de sesión S4U, el sistema no almacena ninguna contraseña y no hay acceso a la red ni a los archivos cifrados.<br/>                                                |
 | <span id="TASK_LOGON_INTERACTIVE_TOKEN"></span><span id="task_logon_interactive_token"></span><dl> <dt>**TASK \_ TOKEN \_ INTERACTIVO DE INICIO \_ DE**</dt> <dt>SESIÓN 3</dt> </dl>                                       | El usuario ya debe haber iniciado sesión. La tarea se ejecutará solo en una sesión interactiva existente.<br/>                                                                                                                                                                                              |
@@ -56,11 +56,11 @@ Establezca en una de las siguientes [**constantes de \_ enumeración TASK LOGON 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad solo es válida cuando la propiedad [**UserId**](principal-userid.md) especifica un identificador de usuario.
 
-Al leer o escribir XML para una tarea, el tipo de inicio de sesión se especifica en el elemento [**&lt; LogonType &gt;**](taskschedulerschema-logontype-principaltype-element.md) del Programador de tareas esquema.
+Al leer o escribir XML para una tarea, el tipo de inicio de sesión se especifica en el [**&lt; elemento LogonType &gt;**](taskschedulerschema-logontype-principaltype-element.md) del esquema Programador de tareas inicio de sesión.
 
 Para una tarea, que contiene una acción de cuadro de mensaje, el cuadro de mensaje se mostrará si la tarea está activada y la tarea tiene un tipo de inicio de sesión interactivo. Para establecer el tipo de inicio de sesión de tarea en interactivo, especifique 3 ( TASK **\_ LOGON INTERACTIVE \_ \_ TOKEN**) o 4 (**TASK LOGON \_ \_ GROUP**) en la propiedad **LogonType** de la entidad de seguridad de tarea o en el parámetro *logonType* de [**TaskFolder.RegisterTask**](taskfolder-registertask.md) [**o TaskFolder.RegisterTaskDefinition**](taskfolder-registertaskdefinition.md).
 
@@ -68,7 +68,7 @@ Para una tarea, que contiene una acción de cuadro de mensaje, el cuadro de mens
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
@@ -84,7 +84,7 @@ Para una tarea, que contiene una acción de cuadro de mensaje, el cuadro de mens
 [Programador de tareas](task-scheduler-start-page.md)
 </dt> <dt>
 
-[**Entidad de seguridad**](principal.md)
+[**Principal**](principal.md)
 </dt> </dl>
 
  

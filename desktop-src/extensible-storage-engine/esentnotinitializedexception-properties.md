@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102374
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b72e2b4daa66a122ee0030c5e707db0c447a9186faab3365fcd8355344f9f88f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 418e503d98607b7c14f09eae0722a4f0daae559e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119733935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174650"
 ---
 # <a name="esentnotinitializedexception-properties"></a>Propiedades de EsentNotInitializedException
 
@@ -34,7 +34,7 @@ El [tipo EsentNotInitializedException](./esentnotinitializedexception-class.md) 
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

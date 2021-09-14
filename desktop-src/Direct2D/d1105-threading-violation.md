@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 12e7321fd40437bc262439c6ddb319a0aa6dba145d05d3feebba2813c904bbce
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fe83baa32be8ae18948ae5a80e3e0b218cd4fa4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119537975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164137"
 ---
 # <a name="d1105-threading-violation"></a>D1105: Infracción de subprocesos
 
-Se ha accedido simultáneamente a una interfaz de subproceso de alquiler \[  \] desde varios subprocesos.
+Se ha accedido simultáneamente a una interfaz de subprocesos de alquiler \[  \] desde varios subprocesos.
 
 ## <a name="placeholders"></a>Marcadores de posición
 
@@ -42,7 +42,7 @@ Dirección de la interfaz a la que han accedido varios subprocesos.
 
 ## <a name="possible-causes"></a>Causas posibles
 
-Usar una instancia de objeto del mismo generador de un solo subproceso de dos subprocesos diferentes.
+Usar una instancia de objeto del mismo generador de subprocesos únicos de dos subprocesos diferentes.
 
  
 

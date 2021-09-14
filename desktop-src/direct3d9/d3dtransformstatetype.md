@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 299246ef890015a6d7de465ecc7c00251a52432d276a87f3d5f336b63d563737
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 022aa20fab0739b32aa75eb5f4bc575c0a8ad853
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963756"
 ---
 # <a name="d3dtransformstatetype-enumeration"></a>D3DTRANSFORMSTATETYPE (enumeración)
 
 Define constantes que describen los valores de estado de transformación.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -122,11 +122,11 @@ Identifica la matriz de transformación que se establece para la fase de textura
 <span id="D3DTS_FORCE_DWORD"></span><span id="d3dts_force_dword"></span>**D3DTS \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los estados de transformación del intervalo de 256 a 511 están reservados para almacenar hasta 256 matrices globales que se pueden indexar mediante las \_ macros WORLDMATRIX y D3DTS WORLD de D3DTS. \_
 
@@ -151,7 +151,7 @@ Los estados de transformación del intervalo de 256 a 511 están reservados para
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

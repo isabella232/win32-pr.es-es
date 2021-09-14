@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: dc48eb9f2fd6ee5fee6c04936801997145a5ea21542b9b5ff8ec6d257eee80e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7670f8b311532d096b9957ebbefcf1f6fb15d952
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964887"
 ---
 # <a name="id3dxanimationcontrollerregisteranimationoutput-method"></a>Método ID3DXAnimationController::RegisterAnimationOutput
 
@@ -58,7 +58,7 @@ Nombre de la salida de animación.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que contiene datos de transformación SRT. Puede ser **NULL.**
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que contiene datos de transformación de SRT. Puede ser **NULL.**
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que contiene datos de t
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a un vector [**D3DXVECTOR3**](d3dxvector3.md) que describe la escala del conjunto de animaciones. Puede ser **NULL.**
+Puntero a un vector [**D3DXVECTOR3**](d3dxvector3.md) que describe la escala del conjunto de animación. Puede ser **NULL.**
 
 </dd> <dt>
 
@@ -93,9 +93,9 @@ Puntero a un vector [**D3DXVECTOR3**](d3dxvector3.md) que describe la traducció
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la salida de animación ya está registrada, pMatrix se rellenará con los datos de transformación de entrada.
 
@@ -112,7 +112,7 @@ Los conjuntos de animación creados [**con D3DXLoadMeshHierarchyFromX**](d3dxloa
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

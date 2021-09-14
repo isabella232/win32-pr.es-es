@@ -1,19 +1,19 @@
 ---
 description: La propiedad MSIRESTARTMANAGERCONTROL especifica si el paquete Windows Installer usa la funcionalidad Restart Manager o FilesInUse Dialog.
 ms.assetid: fefff18b-892a-440e-9f57-d23aeb99af74
-title: Propiedad MSIRESTARTMANAGERCONTROL
+title: MsiRESTARTMANAGERCONTROL, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 912f529187560aa5fffff90407573e5438139d2b2d26345645752c8d30416f60
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8d965f1b814ce2969a6253ba227672c54769791
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169757"
 ---
-# <a name="msirestartmanagercontrol-property"></a>Propiedad MSIRESTARTMANAGERCONTROL
+# <a name="msirestartmanagercontrol-property"></a>MsiRESTARTMANAGERCONTROL, propiedad
 
-La **propiedad MSIRESTARTMANAGERCONTROL** especifica si el paquete Windows Installer usa la funcionalidad Restart [Manager](../rstmgr/restart-manager-portal.md) o [FilesInUse Dialog.](filesinuse-dialog.md)
+La **propiedad MSIRESTARTMANAGERCONTROL** especifica si el paquete Windows Installer usa la funcionalidad [Restart Manager](../rstmgr/restart-manager-portal.md) o [FilesInUse Dialog.](filesinuse-dialog.md)
 
 ## <a name="value"></a>Value
 
@@ -22,16 +22,16 @@ La **propiedad MSIRESTARTMANAGERCONTROL** especifica si el paquete Windows Insta
 | Value                                                                                        | Significado                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0</dt> </dl>                 | Este es el valor predeterminado si no se establece la propiedad . Windows El instalador siempre intenta usar el [Administrador de reinicio](../rstmgr/restart-manager-portal.md) en Windows Vista.<br/>                                                                                                                                                                                                       |
-| <dl> <dt>"Deshabilitar"</dt> </dl>         | Deshabilita la interacción del paquete con [el Administrador de reinicio.](../rstmgr/restart-manager-portal.md) Windows El instalador usa el [cuadro de diálogo FilesInUse](filesinuse-dialog.md). <br/>                                                                                                                                                                                                      |
-| <dl> <dt>"DisableShutdown"</dt> </dl> | Windows El instalador usa el [cuadro de diálogo FilesInUse](filesinuse-dialog.md). Esta configuración deshabilita los [](../rstmgr/restart-manager-portal.md) intentos del Administrador de reinicio para mitigar los reinicios al instalar un paquete de Windows Installer que no se ha creado para usar el Administrador de reinicio. El instalador sigue utilizando el Administrador de reinicio para detectar archivos en uso por parte de las aplicaciones. <br/> |
+| <dl> <dt>"Deshabilitar"</dt> </dl>         | Deshabilita la interacción del paquete con el [Administrador de reinicio.](../rstmgr/restart-manager-portal.md) Windows El instalador usa el [cuadro de diálogo FilesInUse](filesinuse-dialog.md). <br/>                                                                                                                                                                                                      |
+| <dl> <dt>"DisableShutdown"</dt> </dl> | Windows El instalador usa el [cuadro de diálogo FilesInUse](filesinuse-dialog.md). Esta configuración deshabilita los [](../rstmgr/restart-manager-portal.md) intentos del Administrador de reinicio de mitigar los reinicios al instalar un paquete del instalador de Windows que no se ha creado para usar el Administrador de reinicio. El instalador sigue utilizando el Administrador de reinicio para detectar archivos en uso por parte de las aplicaciones. <br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **propiedad MSIRESTARTMANAGERCONTROL** se omite si [el Administrador de reinicio](../rstmgr/restart-manager-portal.md) no está disponible o deshabilitado.
+La **propiedad MSIRESTARTMANAGERCONTROL** se omite si [el Administrador de](../rstmgr/restart-manager-portal.md) reinicio no está disponible o deshabilitado.
 
 El valor de esta propiedad se puede modificar mediante transformaciones o actualizaciones de personalización. Cambiar el valor de esta propiedad a partir de acciones personalizadas no tiene ningún efecto.
 
@@ -41,7 +41,7 @@ El valor de esta propiedad se puede modificar mediante transformaciones o actual
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre el Service Pack mínimo requerido por una Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre el Service Pack mínimo requerido por una Windows installer.<br/> |
 
 
 

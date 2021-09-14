@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cbb007769238f0e6a4239366e8fe9956e61f892f7d3c98f2b638dc425dc9359f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 843c445a29bcce9e6dc26b66b0c6738831e9b79c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164362"
 ---
 # <a name="media_serial_number_data-structure"></a>ESTRUCTURA DE \_ DATOS DE NÚMERO DE SERIE \_ \_ MULTIMEDIA
 
@@ -37,7 +37,7 @@ typedef struct _MEDIA_SERIAL_NUMBER_DATA {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ El número de serie del dispositivo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No hay ningún archivo de encabezado disponible para la **estructura MEDIA SERIAL NUMBER \_ \_ \_ DATA.** Incluya la definición de estructura en la parte superior de esta página en el código fuente.
 
@@ -84,7 +84,7 @@ No hay ningún archivo de encabezado disponible para la **estructura MEDIA SERIA
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

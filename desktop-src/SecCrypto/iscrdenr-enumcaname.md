@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 11742525d616aecc8d83871ae2a59025d1034513ae99d8a7253d16d9e0f64dd6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c23df2f74cdf3791f1280e38cbff8ddd48f924b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119005223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170982"
 ---
 # <a name="iscrdenrenumcaname-method"></a>Método ISCrdEnr::enumCAName
 
@@ -90,11 +90,11 @@ Puntero a una cadena que devuelve el nombre de la entidad de certificación.
 
 Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
-Cadena que representa el nombre de la entidad de certificación.
+Cadena que representa el nombre de la CA.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,7 +109,7 @@ Cadena que representa el nombre de la entidad de certificación.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

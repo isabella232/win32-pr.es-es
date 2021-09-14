@@ -1,5 +1,5 @@
 ---
-description: Comprueba que la región multimedia de la unidad de DVD coincide con la región de la unidad de DVD.
+description: Comprueba que la región de medios de la unidad de DVD coincide con la región de la unidad de DVD.
 ms.assetid: 864de493-94c2-4f32-96a8-14cfea13dbef
 title: Función DvdLauncher
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - StorProp.dll
-ms.openlocfilehash: a52ac620e5ec9aa3d9060d35921fcfd9c5bcc6e73cebf71ef336ceb54fc0806e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef49be579052e5a9fd493f5bf246a2efbd217c34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118956914"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164374"
 ---
 # <a name="dvdlauncher-function"></a>Función DvdLauncher
 
-Comprueba que la región multimedia de la unidad de DVD coincide con la región de la unidad de DVD.
+Comprueba que la región de medios de la unidad de DVD coincide con la región de la unidad de DVD.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ Letra de unidad.
 
 Si la función se realiza correctamente y las regiones coinciden, el valor devuelto es distinto de cero. De lo contrario, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función no tiene ninguna biblioteca de importación asociada. Debe usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a StorProp.dll.
 
@@ -74,7 +74,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Debe usar la
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

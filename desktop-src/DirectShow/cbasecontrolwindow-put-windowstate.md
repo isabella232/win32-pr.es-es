@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4769aff01c251017734fd7152fa703cd51064db11fb91851fd0b8fed76fc3d96
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1944e9bd39816cd1f022296b69fdac60d0779f1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119635705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173857"
 ---
 # <a name="cbasecontrolwindowput_windowstate-method"></a>CBaseControlWindow.put \_ (método WindowState)
 
@@ -53,7 +53,7 @@ Nuevo estado de la ventana.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro toma los mismos parámetros que la función **ShowWindow** de Microsoft Win32 (por ejemplo, WS \_ SHOWNORMAL, WS \_ SHOWMINNOACTIVATE y WS \_ SHOWMAXIMIZED).
 

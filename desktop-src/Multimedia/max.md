@@ -1,6 +1,6 @@
 ---
 title: max macro (Minwindef.h)
-description: La macro max compara dos valores y devuelve el mayor. El tipo de datos puede ser cualquier tipo de datos numérico, con o sin signo. El tipo de datos de los argumentos y el valor devuelto es el mismo.
+description: La macro max compara dos valores y devuelve el mayor. El tipo de datos puede ser cualquier tipo de datos numérico, con signo o sin signo. El tipo de datos de los argumentos y el valor devuelto es el mismo.
 ms.assetid: 224d2ef7-6764-49c0-9782-51bfadbfb77f
 keywords:
 - max macro Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: b484f2505958aca04745c63ca63a0dd131a51ed9
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370268"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169673"
 ---
 # <a name="max-macro"></a>max (macro)
 
-La **macro** max compara dos valores y devuelve el mayor. El tipo de datos puede ser cualquier tipo de datos numérico, con o sin signo. El tipo de datos de los argumentos y el valor devuelto es el mismo.
+La **macro** max compara dos valores y devuelve el mayor. El tipo de datos puede ser cualquier tipo de datos numérico, con signo o sin signo. El tipo de datos de los argumentos y el valor devuelto es el mismo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ La **macro** max compara dos valores y devuelve el mayor. El tipo de datos puede
 *value1* 
 </dt> <dd>
 
-Especifica el primero de los dos valores.
+Especifica el primero de dos valores.
 
 </dd> <dt>
 

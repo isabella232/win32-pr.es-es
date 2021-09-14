@@ -1,9 +1,9 @@
 ---
-title: Error de creación de hardware inesperado de D1009
+title: D1009 Error inesperado de creación de hardware
 description: Se encontró un error inesperado \error\ al intentar crear un destino de Direct3D.
 ms.assetid: 1ff34b1f-0ab3-4821-97f5-a4e67831383a
 keywords:
-- Error de creación de hardware inesperado de D1009 Direct2D
+- D1009 Error inesperado de creación de hardware Direct2D
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9eef3c09f5783f0011d5f2802b73948b13cc1c2075401a261ec96b015d50b2d7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fa51d2536995feb51081134e412d94617f34d069
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119984025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164158"
 ---
 # <a name="d1009-unexpected-hardware-creation-error"></a>D1009: Error inesperado de creación de hardware
 

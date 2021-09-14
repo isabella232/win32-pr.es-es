@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fc7b24d0b6e6992a8501ecb2592892033dd86b9ac8276924ad75a3e9e260b0ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 806f3847e23bff1eb1d34f9f8111faa75e6ba880
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119972695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963231"
 ---
 # <a name="esentintransactionexception-class"></a>Clase EsentInTransactionException
 
-Clase base para JET_err. Excepciones de InTransaction.
+Clase base para JET_err. Excepciones InTransaction.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones de InTransaction.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -68,7 +68,7 @@ public sealed class EsentInTransactionException : EsentUsageException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

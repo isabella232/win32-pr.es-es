@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6d69db4bbf0d5edcaed6ed6fbcaef724b6ef72d606a89c40c5a309713680606f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ff86af88342a1b8f0147ecd9721765794faf39e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119920335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172066"
 ---
 # <a name="cim_runningos-class"></a>Cim \_ RunningOS (clase)
 
@@ -45,7 +45,7 @@ class CIM_RunningOS : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ RunningOS de CIM** tiene estos tipos de miembros:
 
@@ -89,7 +89,7 @@ Un [**sistema de \_ equipo CIM**](cim-computersystem.md) que describe el sistema
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ RunningOS de CIM** se deriva de la dependencia [**\_ CIM**](cim-dependency.md).
 
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: 'WorldRayOrigin: la dirección del espacio mundial para el rayo actual.'
+description: 'WorldRayOrigin: dirección del espacio mundial del rayo actual.'
 ms.assetid: ''
 title: WorldRayOrigin
 ms.localizationpriority: low
@@ -12,12 +12,12 @@ api_name:
 - WorldRayOrigin
 api_type:
 - NA
-ms.openlocfilehash: c5c1de535e7efc73f633c5656a5c799db34161e06d07df012d4bfccb94012c7c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 456d93bf36ceeaac0627d90ed9355453265969b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120119445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174845"
 ---
 # <a name="worldrayorigin"></a>WorldRayOrigin
 
@@ -30,9 +30,9 @@ float3 WorldRayOrigin();
 
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
+Se puede llamar a esta función desde los siguientes tipos de sombreador:
 
 * [**Sombreador de cualquier acierto**](any-hit-shader.md)
 * [**Sombreador del acierto más cercano**](closest-hit-shader.md)

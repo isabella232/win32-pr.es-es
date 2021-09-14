@@ -4,17 +4,17 @@ ms.assetid: 8dbae3e2-31bb-4ab0-bba8-b79061338ea4
 title: atributo height
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5036cd5e38ad4f90827c3ee8c79ebb677992b5ad4fdc038dca5eaccab7c3085
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2875a7b14dfa887f200baf07463a96ce27238e27
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119564615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169938"
 ---
 # <a name="height-attribute"></a>atributo height
 
 > [!Note]  
-> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -26,9 +26,9 @@ Valor de punto flotante. El valor debe incluir el cero inicial antes de la posic
 
 ## <a name="applies-to"></a>Se aplica a
 
-[**group**](group-element.md)
+[**Grupo**](group-element.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Establezca este atributo solo si el **atributo de** tipo es `video` .
 

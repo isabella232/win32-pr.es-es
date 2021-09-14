@@ -1,24 +1,24 @@
 ---
 title: Efecto de origen de mapa de bits
-description: Use el efecto de origen de mapa de bits para generar un id2D1Image a partir de un IWICBitmapSource para usarlo como entrada en un gráfico de efectos.
+description: Use el efecto de origen de mapa de bits para generar un ID2D1Image a partir de IWICBitmapSource para usarlo como entrada en un gráfico de efecto.
 ms.assetid: 86646111-208A-4E6D-A28C-7B23A1742D24
 keywords:
 - efecto de origen de mapa de bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19889372c7ebd4268f1b6fd8b77c360f290cc416631e9fb5e1cd3a0b0320844c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a439c94f0f520b318b3cb3511775dbec58b6e139
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119833334"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164246"
 ---
 # <a name="bitmap-source-effect"></a>Efecto de origen de mapa de bits
 
-Use el efecto de origen de mapa de bits para generar [**un id2D1Image**](/windows/win32/api/d2d1/nn-d2d1-id2d1image) a partir de [**un IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) para usarlo como entrada en un gráfico de efectos. Este efecto realiza el escalado y la rotación en la CPU. También puede generar opcionalmente un mapa mipmap de memoria del sistema, que puede ser una optimización del rendimiento para escalar activamente imágenes muy grandes a varias resoluciones reducidas.
+Use el efecto de origen de mapa de bits para generar un [**ID2D1Image**](/windows/win32/api/d2d1/nn-d2d1-id2d1image) a partir de [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) para usarlo como entrada en un gráfico de efecto. Este efecto realiza el escalado y la rotación en la CPU. También puede generar opcionalmente un mapa mipmap de memoria del sistema, que puede ser una optimización del rendimiento para escalar activamente imágenes muy grandes con varias resoluciones reducidas.
 
 > [!Note]  
-> El efecto de origen del mapa de bits toma su entrada como una propiedad, no como una entrada de imagen. Debe usar el [**método SetValue,**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(uint32_constbyte_uint32)) no [**el método SetInput.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1effect-setinput) La *propiedad WicBitmapSource* es donde se especifican los datos de entrada de la imagen.
+> El efecto de origen de mapa de bits toma su entrada como una propiedad, no como entrada de imagen. Debe usar el [**método SetValue,**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(uint32_constbyte_uint32)) no [**el método SetInput.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1effect-setinput) La *propiedad WicBitmapSource* es donde se especifican los datos de entrada de la imagen.
 
  
 
@@ -39,10 +39,10 @@ El CLSID para este efecto es CLSID \_ D2D1BitmapSource.
 | Enumeración de nombre para mostrar e índice                                                          | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | WicBitmapSource<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ WIC \_ BITMAP \_ SOURCE<br/>         | [IWICBitmapSource que](/windows/desktop/wic/-wic-imp-iwicbitmapsource) contiene los datos de imagen que se cargarán.<br/> El tipo es [IWICBitmapSource.](/windows/desktop/wic/-wic-imp-iwicbitmapsource)<br/> El valor predeterminado es NULL.<br/>                                                                                                                                                                                                                   |
-| Escala<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ SCALE<br/>                                 | La cantidad de escala en la dirección X e Y. El efecto multiplica el ancho por el valor X y el alto por el valor Y. Esta propiedad es un vector D2D1 \_ \_ 2F definido como: (escala X, escala Y). Las cantidades de escala son FLOAT, sin unidad y deben ser positivas o 0.<br/> El tipo es D2D1 \_ VECTOR \_ 2F.<br/> El valor predeterminado es {1.0f, 1.0f}.<br/>                                                                           |
-| InterpolationMode.<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ INTERPOLATION \_ MODE<br/>      | Modo de interpolación utilizado para escalar la imagen. Consulte [Modos de interpolación](#interpolation-modes) para obtener más información.<br/> Si el modo deshabilita el mapa mip, BitmapSouce almacenará en caché la imagen en la resolución determinada por las propiedades Scale y EnableDPICorrection.<br/> El tipo es D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE.<br/> El valor predeterminado es D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ LINEAR.<br/> |
-| EnableDPICorrection<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ ENABLE \_ DPI \_ CORRECTION<br/> | Si establece esta opción en TRUE, el efecto escalará la imagen de entrada para convertir el PPP notificado por [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) en el valor de PPP del contexto del dispositivo. El efecto usa el modo de interpolación que se establece con la propiedad InterpolationMode. Si establece esta opción en FALSE, el efecto usa un valor de PPP de 96,0 para la imagen de salida.<br/> El tipo es BOOL.<br/> El valor predeterminado es FALSE.<br/>   |
-| AlphaMode<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ ALPHA \_ MODE<br/>                       | Modo alfa de la salida. Puede ser premultiplicado o recta. Consulte [Modos alfa para](#alpha-modes) obtener más información.<br/> El tipo es D2D1 \_ BITMAPSOURCE \_ ALPHA \_ MODE.<br/> El valor predeterminado es D2D1 \_ BITMAPSOURCE \_ ALPHA MODE \_ \_ PREMULTIPLIED.<br/>                                                                                                                                                              |
+| Escala<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ SCALE<br/>                                 | La cantidad de escala en la dirección X e Y. El efecto multiplica el ancho por el valor X y el alto por el valor Y. Esta propiedad es una D2D1 \_ VECTOR \_ 2F definida como: (escala X, escala Y). Las cantidades de escala son FLOAT, sin unidades y deben ser positivas o 0.<br/> El tipo es D2D1 \_ VECTOR \_ 2F.<br/> El valor predeterminado es {1.0f, 1.0f}.<br/>                                                                           |
+| InterpolationMode.<br/> MODO DE \_ \_ \_ INTERPOLACIÓN DE PROP DE ORIGEN DE MAPA DE BITS D2D1 \_<br/>      | Modo de interpolación utilizado para escalar la imagen. Consulte [Modos de interpolación](#interpolation-modes) para obtener más información.<br/> Si el modo deshabilita el mapa mip, BitmapSouce almacenará en caché la imagen en la resolución determinada por las propiedades Scale y EnableDPICorrection.<br/> El tipo es D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE.<br/> El valor predeterminado es D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ LINEAR.<br/> |
+| EnableDPICorrection<br/> D2D1 \_ BITMAPSOURCE \_ PROP ENABLE PPP \_ \_ \_ CORRECTION<br/> | Si establece esta opción en TRUE, el efecto escalará la imagen de entrada para convertir el PPP notificado por [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) al VALOR PPP del contexto del dispositivo. El efecto usa el modo de interpolación que se establece con la propiedad InterpolationMode. Si establece esta opción en FALSE, el efecto usa un valor de PPP de 96,0 para la imagen de salida.<br/> El tipo es BOOL.<br/> El valor predeterminado es FALSE.<br/>   |
+| AlphaMode<br/> D2D1 \_ BITMAPSOURCE \_ PROP \_ ALPHA \_ MODE<br/>                       | Modo alfa de la salida. Puede ser premultiplicado o recta. Consulte [Modos alfa](#alpha-modes) para obtener más información.<br/> El tipo es D2D1 \_ BITMAPSOURCE \_ ALPHA \_ MODE.<br/> El valor predeterminado es D2D1 \_ BITMAPSOURCE \_ ALPHA MODE \_ \_ PREMULTIPLIED.<br/>                                                                                                                                                              |
 | Orientación<br/> ORIENTACIÓN DE LA PROPIEDAD BITMAPSOURCE D2D1 \_ \_ \_<br/>                     | Una operación de volteo o rotación que se va a realizar en la imagen. Consulte [Orientación](#orientation) para obtener más información.<br/> El tipo es D2D1 \_ BITMAPSOURCE \_ ORIENTATION.<br/> El valor predeterminado es D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ DEFAULT.<br/>                                                                                                                                                                                 |
 
 
@@ -51,17 +51,17 @@ El CLSID para este efecto es CLSID \_ D2D1BitmapSource.
 
 ## <a name="interpolation-modes"></a>Modos de interpolación
 
-El efecto interpola mediante este modo cuando escala una imagen o cuando corrige el ppp. Los modos de interpolación que usa este efecto se calculan mediante la CPU, no la GPU.
+El efecto se interpola mediante este modo cuando escala una imagen o cuando corrige el valor de PPP. Los modos de interpolación que usa este efecto se calculan mediante la CPU, no la GPU.
 
 
 
 | Nombre                                                       | Descripción                                                                                                                                                                                                                          |
 |------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ NEAREST \_ NEIGHBOR | Muestrea el punto más cercano y lo usa. No genera un mapa mip.                                                                                                                                                           |
-| D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ LINEAR            | Usa una muestra de cuatro puntos y una interpolación lineal. No genera un mapa mip.                                                                                                                                                        |
+| D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ NEAREST \_ NEIGHBOR | Muestrea el punto único más cercano y lo usa. No genera un mapa mip.                                                                                                                                                           |
+| MODO DE INTERPOLACIÓN DE BITMAPSOURCE D2D1 \_ \_ \_ \_ LINEAR            | Usa una muestra de cuatro puntos e interpolación lineal. No genera un mapa mip.                                                                                                                                                        |
 | D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ CUBIC             | Usa un kernel cúbica de 16 muestras para la interpolación. No genera un mapa mip.                                                                                                                                                          |
-| FANT DEL MODO \_ \_ DE INTERPOLACIÓN DE BITMAPSOURCE \_ D2D1 \_              | Usa la interpolación de ventilador wic, igual que la [**interfaz IWICBitmapScaler.**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapscaler) No genera un mapa mip.                                                                                       |
-| D2D1 \_ BITMAPSOURCE \_ INTERPOLATION \_ MODE \_ MIPMAP \_ LINEAR    | Genera la cadena mipmap en la memoria del sistema mediante la interpolación bilineal. Para cada mapa mip, el efecto se escala al múltiplo más cercano de 0,5 mediante la interpolación bilineal y, a continuación, escala la cantidad restante mediante la interpolación lineal. |
+| FANT DEL MODO \_ \_ DE INTERPOLACIÓN DE BITMAPSOURCE \_ D2D1 \_              | Usa la interpolación de fant de WIC, la misma que la [**interfaz IWICBitmapScaler.**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapscaler) No genera un mapa mip.                                                                                       |
+| MODO DE \_ \_ INTERPOLACIÓN \_ \_ MIPMAP \_ LINEAR DE BITMAPSOURCE D2D1    | Genera la cadena mipmap en la memoria del sistema mediante la interpolación bilineal. Para cada mapa mip, el efecto se escala al múltiplo más cercano de 0,5 mediante la interpolación bilineal y, a continuación, escala la cantidad restante mediante la interpolación lineal. |
 
 
 
@@ -76,13 +76,13 @@ La propiedad Orientation se puede usar para aplicar una marca de orientación EX
 | Nombre                                                                    | Descripción                                                        |
 |-------------------------------------------------------------------------|--------------------------------------------------------------------|
 | D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ DEFAULT                                | Predeterminada. El efecto no cambia la orientación de la entrada.   |
-| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ FLIP \_ HORIZONTAL                       | Voltea la imagen horizontalmente.                                      |
-| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE180                   | Gira la imagen en el sentido de las agujas del reloj 180 grados.                           |
-| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE180 \_ FLIP \_ HORIZONTAL | Gira la imagen en el sentido de las agujas del reloj 180 grados y la voltea horizontalmente. |
-| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE270 \_ FLIP \_ HORIZONTAL | Gira la imagen en el sentido de las agujas del reloj 270 grados y la voltea horizontalmente. |
-| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE90                    | Gira la imagen en el sentido de las agujas del reloj 90 grados.                            |
-| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE90 \_ FLIP \_ HORIZONTAL  | Gira la imagen en el sentido de las agujas del reloj 90 grados y la voltea horizontalmente.  |
-| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE270                   | Gira la imagen 270 grados en el sentido de las agujas del reloj.                           |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ FLIP \_ HORIZONTAL                       | Invierte la imagen horizontalmente.                                      |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE180                   | Gira la imagen 180 grados en el sentido de las agujas del reloj.                           |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE180 \_ FLIP \_ HORIZONTAL | Gira la imagen 180 grados en el sentido de las agujas del reloj y la voltea horizontalmente. |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE270 \_ FLIP \_ HORIZONTAL | Gira la imagen 270 grados en el sentido de las agujas del reloj y la voltea horizontalmente. |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE90                    | Gira la imagen 90 grados en el sentido de las agujas del reloj.                            |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE90 \_ FLIP \_ HORIZONTAL  | Gira la imagen 90 grados en el sentido de las agujas del reloj y la voltea horizontalmente.  |
+| D2D1 \_ BITMAPSOURCE \_ ORIENTATION \_ ROTATE \_ CLOCKWISE270                   | Gira la imagen en el sentido de las agujas del reloj 270 grados.                           |
 
 
 
@@ -129,14 +129,14 @@ D2D1_BITMAPSOURCE_ORIENTATION GetBitmapSourceOrientation(unsigned short PhotoOri
 
 | Nombre                                           | Descripción                                            |
 |------------------------------------------------|--------------------------------------------------------|
-| D2D1 \_ BITMAPSOURCE \_ ALPHA \_ MODE \_ PREMULTIPLIED | La salida del efecto usa alfa premultiplicado.<br/> |
+| MODO ALFA DE BITMAPSOURCE D2D1 \_ \_ \_ \_ PREMULTIPLICADO | La salida del efecto usa alfa premultiplicado.<br/> |
 | MODO ALFA D2D1 \_ BITMAPSOURCE \_ \_ \_ STRAIGHT      | La salida del efecto usa alfa recta.<br/>      |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para optimizar el rendimiento al usar WIC y [Direct2D](./direct2d-portal.md) juntos, debe usar [**IWICFormatConverter**](/windows/desktop/api/wincodec/nn-wincodec-iwicformatconverter) para convertir a un formato de píxel adecuado basado en el escenario de la aplicación y la precisión nativa de la imagen.
 
@@ -160,11 +160,11 @@ Dado que muchos formatos de imagen admiten varios niveles de precisión, debe us
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
 | Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

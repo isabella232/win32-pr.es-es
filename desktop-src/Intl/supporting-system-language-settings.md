@@ -4,12 +4,12 @@ ms.assetid: 6f5f4782-6e9b-4b30-8728-2bff66c3e1b3
 title: Compatibilidad con el lenguaje del sistema Configuración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 897da3026ee10820e2c0bc44834d276da3573e5aa0b99060b3580130c01ef9ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e428a2db855ebfa4e15c8249ea85be7d24f034d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118389999"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171890"
 ---
 # <a name="supporting-system-language-settings"></a>Compatibilidad con el lenguaje del sistema Configuración
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9461dafb6b8da66ffa2a84e0d9d61c119a67c33bd967ae5183252e875fb6192
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 587cde43ec2d9136bab5884691c99321d1492835
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119676955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965035"
 ---
 # <a name="id3dx11effectgetdesc-method"></a>Método ID3DX11Effect::GetDesc
 
@@ -58,7 +58,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una descripción del efecto contiene información básica sobre un efecto, como las técnicas que contiene y los recursos de búfer constante que requiere.
 
@@ -78,7 +78,7 @@ Una descripción del efecto contiene información básica sobre un efecto, como 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: . | Referencia del Portapapeles
 ms.assetid: 3d6722a6-0d49-4a33-a5de-5b8a0ea29fdf
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b47a21dd27cde5ca728f4616a7f7ec88083ba52488c61d63204e1d0edd89efd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d091d719996ccff788b490daa7b7fa669a37721
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118545429"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965131"
 ---
 # <a name="clipboard-reference"></a>Referencia del Portapapeles
 

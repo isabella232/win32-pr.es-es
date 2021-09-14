@@ -4,12 +4,12 @@ ms.assetid: ac7d7b1c-3c9a-4693-87ea-0a10a8ab915c
 title: Control de cambios de formato desde el representador de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc1dd0ec2f87a8604d3b03aa6c2f334161d218f4d7fb45c76aad1015f071d947
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d731ac4b9d6985cf5ad92f642b6d8262209fa91d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119905305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169950"
 ---
 # <a name="handling-format-changes-from-the-video-renderer"></a>Control de cambios de formato desde el representador de vídeo
 
@@ -17,7 +17,7 @@ En esta sección se describe cómo un filtro descodificador o filtro de transfor
 
 **Filtro de representador de vídeo**
 
-Cuando se conecta [el filtro Antiguo](video-renderer-filter.md) representador de vídeo, requiere un formato RGB que coincida con el formato de presentación del monitor principal. Esto le permite usar GDI para la representación si DirectDraw no está disponible. Cuando se inicia la reproducción, el representador de vídeo puede cambiar a un formato compatible con DirectDraw. Para comprobar si el filtro ascendente puede admitir el nuevo formato, el representador de vídeo llama a [**IPin::QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) en el pin de salida del filtro ascendente. Si el filtro ascendente acepta el nuevo formato, el **método QueryAccept** devuelve S \_ OK. El representador de vídeo cambia los formatos adjuntando un tipo de medio con el nuevo formato al siguiente ejemplo multimedia devuelto por su asignador. El filtro ascendente debe comprobar si hay cambios de formato llamando a [**IMediaSample::GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype) en cada ejemplo. El representador de vídeo puede cambiar entre el formato original y el nuevo formato en cualquier momento durante el streaming. No llama a **QueryAccept después** del primer cambio de formato. Una vez que el filtro ascendente ha aceptado el nuevo formato, debe poder cambiar de un lado a otro.
+Cuando se conecta [el filtro Antiguo](video-renderer-filter.md) representador de vídeo, requiere un formato RGB que coincida con el formato de presentación del monitor principal. Esto le permite usar GDI para la representación si DirectDraw no está disponible. Cuando se inicia la reproducción, el representador de vídeo puede cambiar a un formato compatible con DirectDraw. Para comprobar si el filtro ascendente puede admitir el nuevo formato, el representador de vídeo llama a [**IPin::QueryAccept en**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) el pin de salida del filtro ascendente. Si el filtro ascendente acepta el nuevo formato, el **método QueryAccept** devuelve S \_ OK. El representador de vídeo cambia los formatos adjuntando un tipo de medio con el nuevo formato al siguiente ejemplo multimedia devuelto por su asignador. El filtro ascendente debe comprobar los cambios de formato llamando a [**IMediaSample::GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype) en cada ejemplo. El representador de vídeo puede cambiar entre el formato original y el nuevo formato en cualquier momento durante el streaming. No llama a **QueryAccept después** del primer cambio de formato. Una vez que el filtro ascendente ha aceptado el nuevo formato, debe poder cambiar de un lado a otro.
 
 El filtro ascendente puede rechazar el cambio de formato devolviendo S \_ FALSE desde **QueryAccept**. En ese caso, el representador de vídeo sigue utilizando GDI con el formato original.
 

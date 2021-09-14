@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 62b909e617e2401aad77e1cc361c1d4773059c02a06db86886ddae61bfcff512
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bbe403553acb3305b538d6f35f837ca7feab97db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120093425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962843"
 ---
 # <a name="jet_retrievecolumniblongvalue-property"></a>JET_RETRIEVECOLUMN.ibLongValue, propiedad
 
-Obtiene o establece el desplazamiento en el primer byte que se va a recuperar de una columna de tipo [LongBinary](./jet-coltyp-enumeration.md) [o LongText](./jet-coltyp-enumeration.md).
+Obtiene o establece el desplazamiento en el primer byte que se va a recuperar de una columna de tipo [LongBinary](./jet-coltyp-enumeration.md) [o LongText.](./jet-coltyp-enumeration.md)
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

@@ -1,27 +1,27 @@
 ---
-description: Información sobre calificadores WMI, sintaxis Managed Object Format (MOF), tipos de contadores de rendimiento y otros datos usados por proveedores, scripts y aplicaciones wmi.
+description: Información sobre calificadores WMI, sintaxis Managed Object Format (MOF), tipos de contadores de rendimiento y otros datos usados por proveedores, scripts y aplicaciones WMI.
 ms.assetid: 7f0e3ebb-ba10-4cf0-86a9-5fdec5ffc383
 ms.tgt_platform: multiple
 title: Objetos y valores de infraestructura WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7a4ebef101fc94448d3f5894badd5eac80469f6d8154311c45ed698b546fcbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76b39ac726a45b95a667a865ac26e0be937ff445
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119995415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172541"
 ---
 # <a name="wmi-infrastructure-objects-and-values"></a>Objetos y valores de infraestructura WMI
 
-En esta sección se incluye información sobre calificadores de [*WMI, sintaxis Managed Object Format*](gloss-m.md) (MOF), tipos de contadores de rendimiento y otros datos [*usados*](gloss-q.md)por proveedores, scripts y aplicaciones de WMI.
+En esta sección se incluye información sobre los calificadores wmi, [*la sintaxis Managed Object Format*](gloss-m.md) (MOF), los tipos de contadores de rendimiento y otros datos [*usados*](gloss-q.md)por proveedores, scripts y aplicaciones wmi.
 
 <dl> <dt>
 
 <span id="CIMTYPE_ENUMERATION"></span><span id="cimtype_enumeration"></span>[**CIMTYPE \_ (ENUMERACIÓN)**](/windows/win32/api/wbemcli/ne-wbemcli-cimtype_enumeration)
 </dt> <dd>
 
-Define valores que especifican diferentes tipos de datos CIM.
+Define valores que especifican distintos tipos de datos CIM.
 
 </dd> <dt>
 
@@ -56,14 +56,14 @@ Lista de los [*calificadores admitidos*](gloss-q.md) por WMI.
 <span id="WMI_Return_Codes"></span><span id="wmi_return_codes"></span><span id="WMI_RETURN_CODES"></span>[Códigos de retorno wmi](wmi-return-codes.md)
 </dt> <dd>
 
-Lista de las constantes simbólicas, los valores literales y las descripciones devueltas por WMI en **HRESULT**.
+Lista de las constantes simbólicas, los valores literales y las descripciones devueltas por WMI en **HRESULT.**
 
 </dd> <dt>
 
 <span id="WMI_Security"></span><span id="wmi_security"></span><span id="WMI_SECURITY"></span>[Seguridad wmi](wmi-security.md)
 </dt> <dd>
 
-Lista de objetos usados en descriptores de seguridad y constantes usados en métodos que manipulan privilegios o descriptores de seguridad.
+Lista de objetos usados en descriptores de seguridad y constantes que se usan en métodos que manipulan descriptores de seguridad o privilegios.
 
 </dd> <dt>
 

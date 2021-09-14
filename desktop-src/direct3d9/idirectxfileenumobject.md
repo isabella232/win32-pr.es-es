@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dxof.lib
 - d3dxof.dll
-ms.openlocfilehash: 448751cf7160dd9f5bd44f8f7460f30acc731ddf783c840654c3634e80f66540
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9220f6e0a406cb4143798787276d7aa6cb5f5d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119491755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174730"
 ---
 # <a name="idirectxfileenumobject-interface"></a>Interfaz IDirectXFileEnumObject
 
 Las aplicaciones usan los métodos de la interfaz IDirectXFileEnumObject para recorrer los objetos de datos del archivo y recuperar un objeto de datos por su identificador único global (GUID) o por su nombre. En desuso.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IDirectXFileEnumObject** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IDirectXFileEnumObject** también tiene estos tipos de miembros:
 
@@ -47,7 +47,7 @@ La **interfaz IDirectXFileEnumObject** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El GUID de la interfaz IDirectXFileEnumObject es IID \_ IDirectXFileEnumObject.
 

@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: 00e6d8c4b235e8f7d02ba22e737fc4de9bf4a739864afb1464e6f84c620faa48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 112752bcd0953fbbc358c75080cb2749273ed95d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118481829"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172286"
 ---
 # <a name="nddesetsharesecurity-function"></a>Función NDdeSetShareSecurity
 
@@ -80,7 +80,7 @@ Si la función se realiza correctamente, el valor devuelto es NDDE \_ NO \_ ERRO
 
 Si se produce un error en la función, el valor devuelto es un código de error, que se puede traducir en un mensaje de error de texto llamando a [**NDdeGetErrorString**](nddegeterrorstring.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para modificar el [**\_ DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) asociado a un recurso compartido de DDE en DSDM, el usuario debe tener el privilegio adecuado; el creador del recurso compartido tiene este privilegio.
 
@@ -88,7 +88,7 @@ Para modificar el [**\_ DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |

@@ -4,12 +4,12 @@ ms.assetid: 0779242c-45f4-4cd9-9c9f-36cff54c8dee
 title: Cliente de canalización con nombre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4d00a3fec3e3d7df80468822d2e147cbae38f440e39fd55dafc9ed3ea2442cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6318edd7d5b41c701e3112188a896c0529338805
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117695178"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172317"
 ---
 # <a name="named-pipe-client"></a>Cliente de canalización con nombre
 

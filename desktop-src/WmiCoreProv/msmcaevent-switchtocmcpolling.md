@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: a8192dc83a50063b2aaabba2bf708053fadb8e094bfa1cab82b11b084f722a76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7d0d543dc36054550d4ddf6cc1a77ce80cf1647
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119640945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965308"
 ---
 # <a name="msmcaevent_switchtocmcpolling-class"></a>Clase MSMCAEvent \_ SwitchToCMCPolling
 
-La **clase \_ SwitchToCMCPolling de MSMCAEvent** representa el control de comprobación de máquina (CMC) corregido que se va a cambiar del controlador de interrupción al sondeo. En algunos casos, el kernel sondea la capa de abstracción del sistema (SAL) en busca de cualquier error de cmc o de plataforma (CPE) corregido que se produjo dentro del intervalo de sondeo anterior. Esta clase solo está disponible en sistemas de 64 Windows bits.
+La **clase MSMCAEvent \_ SwitchToCMCPolling** representa el control de comprobación de máquina (CMC) corregido que se va a cambiar del controlador de interrupción al sondeo. En algunos casos, el kernel sondea la capa de abstracción del sistema (SAL) para cualquier error de cmc o de plataforma (CPE) corregido que se produjo dentro del intervalo de sondeo anterior. Esta clase solo está disponible en sistemas de 64 Windows bits.
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,15 +38,15 @@ class MSMCAEvent_SwitchToCMCPolling : WMIEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase MSMCAEvent \_ SwitchToCMCPolling** tiene estos tipos de miembros:
+La **clase \_ SwitchToCMCPolling de MSMCAEvent** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase MSMCAEvent \_ SwitchToCMCPolling** tiene estas propiedades.
+La **clase \_ SwitchToCMCPolling de MSMCAEvent** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -79,7 +79,7 @@ Identificador único de esta instancia de la clase .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SwitchToCMCPolling de MSMCAEvent** se deriva de [**WMIEvent**](wmievent.md).
 
@@ -89,7 +89,7 @@ La capa de abstracción del sistema (SAL) está codificada en la ROM a la que ll
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |

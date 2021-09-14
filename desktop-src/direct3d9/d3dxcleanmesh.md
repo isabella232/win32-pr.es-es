@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: adc5d60b66dc9eaa06314e18ead26412b8572e9dbc649070c37891a62fb9ecbe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5565978dc1ad0e80c33718275ea65080930ce7cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119495915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174814"
 ---
 # <a name="d3dxcleanmesh-function"></a>Función D3DXCleanMesh
 
@@ -50,7 +50,7 @@ HRESULT D3DXCleanMesh(
 
 Tipo: **[ **D3DXCLEANTYPE**](./d3dxcleantype.md)**
 
-Operaciones de vértice que se realizan como preparación para la limpieza de malla. Vea [**D3DXCLEANTYPE**](./d3dxcleantype.md).
+Operaciones de vértice que se realizan como preparación para la limpieza de malla. Vea [**D3DXCLEANTYPE.**](./d3dxcleantype.md)
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función limpia una malla mediante el método de limpieza y las opciones especificadas en el parámetro CleanType. Consulte la [**enumeración D3DXCLEANTYPE**](./d3dxcleantype.md) para obtener una descripción de las opciones disponibles.
 

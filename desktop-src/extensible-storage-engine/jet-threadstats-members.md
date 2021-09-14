@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vist
 ms:contentKeyID: 39514028
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 13713d00431337f5e2190e2f547729e96a7cfb634fe1a95dddba570a9236f1f9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f8b824f716d35c3039bb77af745cf6cf08dfc9cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172382"
 ---
 # <a name="jet_threadstats-members"></a>JET_THREADSTATS miembros
 
@@ -89,7 +89,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="hh565584(v=exchg.10).md">Add (Agregar)</a></td>
-<td>Agregue las estadísticas en dos JET_THREADSTATS estructura.</td>
+<td>Agregue las estadísticas en dos estructuras JET_THREADSTATS datos.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -156,7 +156,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="hh163281(v=exchg.10).md">Suma</a></td>
-<td>Agregue las estadísticas en dos JET_THREADSTATS estructura.</td>
+<td>Agregue las estadísticas en dos estructuras JET_THREADSTATS datos.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -179,7 +179,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

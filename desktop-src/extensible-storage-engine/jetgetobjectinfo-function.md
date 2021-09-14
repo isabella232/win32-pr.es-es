@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 824c19fbb1fb1e479b805eb45bf8ff56458110d0
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 9e6317280c5e794e9809c15f47f01d55ffd48eeb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469792"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964243"
 ---
 # <a name="jetgetobjectinfo-function"></a>Función JetGetObjectInfo
 
@@ -61,7 +61,7 @@ Base de datos de la que se recupera la información.
 
 *objtyp*
 
-Objetos que contienen información que se va a recuperar. Actualmente, solo JET_objtypNil y JET_objtypTable, ambos se comportan de forma idéntica. Solo se recuperarán las tablas.
+Objetos que contienen información que se va a recuperar. Actualmente, solo JET_objtypNil y JET_objtypTable se admiten, y ambos se comportan de forma idéntica. Solo se recuperarán las tablas.
 
 *szContainerName*
 
@@ -77,7 +77,7 @@ Actualmente solo se admiten nombres de tabla.
 
 Puntero a un búfer que recibe la información especificada.
 
-El tamaño del búfer, en bytes, se pasa *en cbMax.* En caso de error, el *contenido de pvResult* no está definido.
+El tamaño del búfer, en bytes, se pasa en *cbMax.* En caso de error, el *contenido de pvResult* no está definido.
 
 La información almacenada en *pvResult* depende de *InfoLevel*.
 
@@ -92,14 +92,14 @@ Especifica el tipo de información que se va a recuperar para el objeto especifi
 Las siguientes opciones están disponibles para establecer para este parámetro.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_ObjInfo</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a> estructura.</p><p>La <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a> estructura se rellena con información relativa al objeto denominado <em>en szObjectName</em>.</p><p>Si el autor de la llamada no quiere conocer el número de registros y páginas del objeto JET_ObjInfoNoStats, considere la posibilidad de usar un nivel de información, que podría ser más rápido, ya que no se incluyen las estadísticas.</p> | 
 | <p>JET_ObjInfoList</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a> estructura. Se recupera información sobre todos los objetos. Se creará una tabla temporal y la información necesaria para recorrer la tabla temporal se describe en la <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a> datos. Para obtener más información, <a href="gg269348(v=exchg.10).md">vea JET_OBJECTLIST</a>. Si el autor de la llamada no quiere saber el número de registros y páginas del objeto, considere la posibilidad de usar JET_ObjInfoListNoStats, que podría ser más rápido.</p> | 
 | <p>JET_ObjInfoListACM</p> | <p>Está en desuso y no se admite actualmente.</p> | 
-| <p>JET_ObjInfoListNoStats</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a> estructura. Se recupera información sobre todos los objetos. Se creará una tabla temporal y la información necesaria para recorrer la tabla temporal se describe en la <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a> datos. Para obtener más información, <a href="gg269348(v=exchg.10).md">vea JET_OBJECTLIST</a>. JET_ObjInfoListNoStats es idéntico a JET_ObjInfoList, salvo que las columnas que informan del número de registros<em>(columnidcRecord</em>) y pages (<em>columnidcPage</em>) no se actualizarán.</p> | 
-| <p>JET_ObjInfoMax</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a>. El tamaño máximo del objeto está en páginas. Actualmente solo se devolverán tablas.</p> | 
-| <p>JET_ObjInfoNoStats</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a>. Solo se recuperará información sobre el objeto especificado en <em>szObjectName.</em></p><p>La <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a> estructura se rellenará con información relativa al objeto denominado <em>en szObjectName</em>.</p><p>JET_ObjInfoNoStats es idéntico a JET_ObjInfo, salvo que los campos que informan del número de registros y páginas están establecidos en cero.</p> | 
+| <p>JET_ObjInfoListNoStats</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a> estructura. Se recupera información sobre todos los objetos. Se creará una tabla temporal y la información necesaria para recorrer la tabla temporal se describe en la <a href="gg269348(v=exchg.10).md">JET_OBJECTLIST</a> datos. Para obtener más información, <a href="gg269348(v=exchg.10).md">vea JET_OBJECTLIST</a>. JET_ObjInfoListNoStats es idéntico a JET_ObjInfoList, salvo que las columnas que informan del número de registros (<em>columnidcRecord</em>) y pages (<em>columnidcPage</em>) no se actualizarán.</p> | 
+| <p>JET_ObjInfoMax</p> | <p><em>pvResult</em> se interpreta como un <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a>. El tamaño máximo del objeto está en páginas. Actualmente solo se devolverán tablas.</p> | 
+| <p>JET_ObjInfoNoStats</p> | <p><em>pvResult</em> se interpreta como un <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a>. Se recuperará información sobre solo el objeto especificado en <em>szObjectName.</em></p><p>La <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a> estructura se rellenará con información relativa al objeto denominado <em>en szObjectName</em>.</p><p>JET_ObjInfoNoStats es idéntico a JET_ObjInfo, salvo que los campos que informan del número de registros y páginas se establecen en cero.</p> | 
 | <p>JET_ObjInfoRulesLoaded</p> | <p>Está en desuso y no se admite actualmente.</p> | 
 | <p>JET_ObjInfoSysTabCursor</p> | <p>Está en desuso y no se admite actualmente.</p> | 
 | <p>JET_ObjInfoSysTabReadOnly</p> | <p>Está en desuso y no se admite actualmente.</p> | 
@@ -120,7 +120,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Si **JetGetObjectInfo** crea correctamente una tabla temporal (por ejemplo, JET_ObjInfoList o JET_ObjInfoNoStats), el autor de la llamada es responsable de cerrar la tabla temporal [con JetCloseTable](./jetclosetable-function.md).
 
@@ -129,7 +129,14 @@ Si **JetGetObjectInfo** crea correctamente una tabla temporal (por ejemplo, JET_
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetObjectInfoW</strong> (Unicode) y <strong>JetGetObjectInfoA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetObjectInfoW</strong> (Unicode) y <strong>JetGetObjectInfoA</strong> (ANSI).</p> | 
 
 
 

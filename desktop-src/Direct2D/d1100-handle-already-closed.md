@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 7c7dc6424f4383a0c6e64695626ae2433e16868f93d0c1a1b160bf2ec19e31ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4967b84b28df81999e834a660d66fe8bf1aea9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118161016"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164157"
 ---
 # <a name="d1100-handle-already-closed"></a>D1100: Identificador ya cerrado
 

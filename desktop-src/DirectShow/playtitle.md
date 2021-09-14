@@ -4,12 +4,12 @@ ms.assetid: d9c47aa6-1401-498f-b9d9-f70dd844a51f
 title: PlayTitle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27dab08409f9cffc79ba172b295a7ba465658a9716b0370017b6e313b889d3a1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0d00529fdf6b37cd4a781706ab16ea3141deeff9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119583675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171982"
 ---
 # <a name="playtitle"></a>PlayTitle
 

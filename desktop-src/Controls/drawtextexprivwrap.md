@@ -3,7 +3,7 @@ title: Función DrawTextExPrivWrap
 description: Dibuja texto con formato en el rectángulo especificado. Esta función encapsula una llamada a DrawTextEx.
 ms.assetid: 3212282c-1adb-4f7e-b4d7-7d833b26ac60
 keywords:
-- Controles de Windows de función DrawTextExPrivWrap
+- Controles de Windows drawTextExPrivWrap
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3381cd7aef94556cf80ddfc3ad828477e3a29c0fd57601ad27ff735d7b2f58f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eba496a121af3ba88ed24ab6c9c7834c90153ec0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174130"
 ---
 # <a name="drawtextexprivwrap-function"></a>Función DrawTextExPrivWrap
 
 \[**DrawTextExPrivWrap** está disponible a través Windows XP con Service Pack 2 (SP2). Podría modificarse o no estar disponible en versiones posteriores. Se recomienda usar [**DrawTextEx directamente**](/windows/desktop/api/winuser/nf-winuser-drawtextexa) en su lugar.\]
 
-Dibuja texto con formato en el rectángulo especificado. Esta función encapsula una llamada a [**DrawTextEx.**](/windows/desktop/api/winuser/nf-winuser-drawtextexa)
+Dibuja texto con formato en el rectángulo especificado. Esta función encapsula una llamada a [**DrawTextEx**](/windows/desktop/api/winuser/nf-winuser-drawtextexa).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,7 +72,7 @@ Si *dwDTFormat* incluye DT \_ MODIFYSTRING, la función podría agregar hasta cu
 
 Tipo: **int**
 
-Longitud de la cadena a la que apunta *lpchText.* Si *cchText* es -1, se supone que el parámetro *lpchText* es un puntero a una cadena terminada en NULL y [**DrawTextEx**](/windows/desktop/api/winuser/nf-winuser-drawtextexa) calcula automáticamente el recuento de caracteres.
+Longitud de la cadena a la que apunta *lpchText*. Si *cchText* es -1, se supone que el parámetro *lpchText* es un puntero a una cadena terminada en NULL y [**DrawTextEx**](/windows/desktop/api/winuser/nf-winuser-drawtextexa) calcula automáticamente el recuento de caracteres.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Para obtener información de error extendida, llame a [**GetLastError**](/window
 
 ## <a name="remarks"></a>Comentarios
 
-**DrawTextExPrivWrap** no se exporta por nombre ni se declara en un archivo de encabezado público. Para usarlo, debe usar [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) y solicitar el ordinal 416 de ComCtl32.dll para obtener un puntero de función.
+**DrawTextExPrivWrap** no se exporta por nombre ni se declara en un archivo de encabezado público. Para usarlo, debe usar [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) y solicitar ordinal 416 a ComCtl32.dll para obtener un puntero de función.
 
 Para obtener comentarios adicionales, vea [**DrawTextEx**](/windows/desktop/api/winuser/nf-winuser-drawtextexa).
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d73b9878a43ef876174561f16678f78787b15b88f423ecfb3f1765bd82c84630
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc51c912794135b456542bb9a8a779601681f393
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118302481"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965056"
 ---
 # <a name="id3dx10skininforemapvertices-method"></a>Método ID3DX10SkinInfo::RemapVertices
 
@@ -55,7 +55,7 @@ Nuevo número de vértices.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntero a una matriz de índices de vértices, que describen el remapping. Por ejemplo, por ejemplo, say SkinInfo contiene algunos vértices, por ejemplo, que se asigna a v0, amut1 a v1 y a la matriz con 2,1,0, y se especifica array con 2,1,0 para p ArrayRemap. Esto hará que cause que cause que se asignen a v2, a pero1 a v1 y a la versión 2 a v0.
+Puntero a una matriz de índices de vértices, que describen el remapping. Por ejemplo, por ejemplo, say SkinInfo contiene algunos vértices, por ejemplo, que se asigna a v0, se asigna a la versión 1 y a la versión 2, y se especifica la matriz con 2,1,0 para pIqueRemap. Esto hará que cause que cause que se asignen a v2, a pero1 a v1 y a la versión 2 a v0.
 
 </dd> </dl>
 

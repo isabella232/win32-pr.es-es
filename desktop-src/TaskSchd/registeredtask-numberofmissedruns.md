@@ -1,5 +1,5 @@
 ---
-title: Propiedad RegisteredTask.NumberOfMissedRuns
+title: RegisteredTask.NumberOfMissedRuns, propiedad
 description: Para el scripting, obtiene el número de veces que la tarea registrada ha perdido una ejecución programada.
 ms.assetid: cfccb782-eedd-47e4-a6c5-c5857f75d09d
 keywords:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93e6deb2566d476147c4f51eac0e92f5919a897d8d686adf61ce5fe6250254f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d9115229afd5ee7cebf83b3b817991cbe0cf74ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117759660"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172981"
 ---
-# <a name="registeredtasknumberofmissedruns-property"></a>Propiedad RegisteredTask.NumberOfMissedRuns
+# <a name="registeredtasknumberofmissedruns-property"></a>RegisteredTask.NumberOfMissedRuns, propiedad
 
 Para el scripting, obtiene el número de veces que la tarea registrada ha perdido una ejecución programada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -38,7 +38,7 @@ RegisteredTask.NumberOfMissedRuns As Integer
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Número de veces que la tarea registrada no ha ejecutado una ejecución programada.
+Número de veces que la tarea registrada perdió una ejecución programada.
 
 ## <a name="requirements"></a>Requisitos
 

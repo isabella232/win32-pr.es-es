@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: c32704b0d91f2943bf65a9601255f6c4dbc78966cddca84f6871351ffb050930
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46b1db7c8da8ab4399357a978ece2b7af7516fc6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118978724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964212"
 ---
 # <a name="microsoftisamesentinteropserver2003-namespace"></a>Espacio de nombres Microsoft.Isam.Esent.Interop.Server2003
 

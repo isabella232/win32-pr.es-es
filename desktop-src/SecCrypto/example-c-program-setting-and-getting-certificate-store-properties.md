@@ -4,12 +4,12 @@ ms.assetid: 9fb368c9-a0d7-4c5f-9a38-7ef8f7283354
 title: 'Programa C de ejemplo: Establecer y obtener propiedades del almacén de certificados'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59d65eeb0ee667b1dbce5a1df6c9c73d1849ef2524ecc3d0674d6fa7a5225fdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7337027c265376f9145ef7b68f359250223d20f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171062"
 ---
 # <a name="example-c-program-setting-and-getting-certificate-store-properties"></a>Programa C de ejemplo: Establecer y obtener propiedades del almacén de certificados
 
@@ -25,8 +25,8 @@ En este ejemplo se muestran las siguientes tareas y [*funciones cryptoAPI:*](../
 -   Guarde el almacén de certificados en un [*BLOB de memoria*](../secgloss/b-gly.md) mediante [**CertSaveStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsavestore)
 -   Determine el número de firmantes del mensaje PKCS \# 7 mediante [**CryptGetMessageSignercount**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagesignercount).
 -   Abra un almacén de certificados desde un mensaje PKCS \# 7 en memoria mediante [**CryptGetMessageCertificates**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagecertificates).
--   Inicializar las [**estructuras de datos CRYPT ALGORITHM \_ \_ IDENTIFIER**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) y [**CRYPT HASH MESSAGE \_ \_ \_ PARA**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_hash_message_para) necesarias para [*crear un algoritmo hash*](../secgloss/h-gly.md) en el mensaje
--   Aplica un algoritmo hash y codifica el mensaje [**mediante CryptHashMessage.**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashmessage)
+-   Inicializar las [**estructuras de datos CRYPT ALGORITHM \_ \_ IDENTIFIER**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) y [**CRYPT HASH MESSAGE \_ \_ \_ PARA**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_hash_message_para) necesarias para [*crear un hash*](../secgloss/h-gly.md) del mensaje
+-   Hash y codificación del mensaje mediante [**CryptHashMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashmessage).
 -   Determine si se han realizado cambios en un almacén de certificados abierto y sincronice el almacén si es necesario mediante [**CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore).
 -   Cierre de un almacén de certificados [**mediante CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) con CERT \_ CLOSE STORE FORCE \_ \_ \_ FLAG.
 

@@ -5,16 +5,16 @@ ms.assetid: 52AF86A5-16E8-4AC8-BB67-CC2F1A3635B5
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: e8ee83911cc7be1ab6e611a735a7a5b3a7397c472b78e3192468d2e323ed0c4d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aeb6ba9427a04f7a251a1d59062be508e4249b41
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119331761"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164233"
 ---
 # <a name="block-compression"></a>Compresión de bloques
 
-A partir Windows 8.1, Direct2D admite varios formatos de píxel comprimidos en bloque. Además, Windows 8.1 contiene un nuevo códec DDS Windows Imaging Component (WIC) para habilitar la carga y el almacenamiento de imágenes comprimidas en bloque en el formato de archivo DDS. La compresión de bloques es una técnica para reducir la cantidad de memoria de gráficos que consume el contenido del mapa de bits. Mediante la compresión de bloques, la aplicación puede reducir el consumo de memoria y los tiempos de carga para las mismas imágenes de resolución. O bien, la aplicación puede usar más o más imágenes de resolución mientras sigue consumiendo la misma superficie de memoria de GPU.
+A partir Windows 8.1, Direct2D admite varios formatos de píxel comprimidos en bloque. Además, Windows 8.1 un nuevo códec DDS del componente de creación de imágenes de Windows (WIC) para habilitar la carga y el almacenamiento de imágenes comprimidas en bloque en el formato de archivo DDS. La compresión de bloques es una técnica para reducir la cantidad de memoria de gráficos que consume el contenido del mapa de bits. Mediante la compresión de bloques, la aplicación puede reducir el consumo de memoria y los tiempos de carga para las mismas imágenes de resolución. O bien, la aplicación puede usar más o más imágenes de resolución mientras sigue consumiendo la misma superficie de memoria de GPU.
 
 Las aplicaciones de Direct3D han usado la compresión de bloques durante mucho tiempo y con Windows 8.1 está disponible también para los desarrolladores de aplicaciones estándar y Direct2D.
 
@@ -51,7 +51,7 @@ La cantidad total de datos que se usan para representar estos 16 píxeles es:
 
 `16 bits [to define a reference color] * 2 + 2 bits * 16 [number of pixels]  = 64 bits`
 
-Esto da como resultado una densidad media de 4 bits por píxel. Para la comparación, el formato de píxel DXGI \_ FORMAT \_ B8G8R8A8 UNORM común consume \_ 32 bits por píxel.
+Esto da como resultado una densidad media de 4 bits por píxel. En comparación, el formato de píxel DXGI \_ FORMAT \_ B8G8R8A8 UNORM común consume \_ 32 bits por píxel.
 
 En este diagrama se muestra que cada píxel se codifica como un índice de 2 bits. Todo el bloque se codifica en 64 bits.
 
@@ -71,7 +71,7 @@ Los formatos comprimidos en bloques difieren de los formatos de compresión de i
 
 Debe considerar el uso de imágenes comprimidas en bloque en la aplicación en lugar de otros formatos como JPEG si desea reducir el consumo de memoria de los mapas de bits o quiere reducir los tiempos de descodificación y carga.
 
-Sin embargo, la compresión de bloques no es adecuada para todos los casos y requiere algunas recompensas. En primer lugar, los algoritmos de compresión de bloques pierden. La compresión de bloques funciona bien con contenido de fotografía natural, pero puede introducir artefactos visuales no deseados en imágenes con límites de contraste alto y nítido, como capturas de pantalla generadas por el equipo. Debe asegurarse de que los recursos de imagen comprimidos en bloque tienen una calidad de imagen aceptable antes de usarlos.
+Sin embargo, la compresión de bloques no es adecuada para todos los casos y requiere algunos contras. En primer lugar, los algoritmos de compresión de bloques pierden. La compresión de bloques funciona bien con contenido de fotografía natural, pero puede introducir artefactos visuales no deseados en imágenes con límites de contraste alto y nítido, como capturas de pantalla generadas por el equipo. Debe asegurarse de que los recursos de imagen comprimidos en bloque tienen una calidad de imagen aceptable antes de usarlos.
 
 En segundo lugar, los archivos DDS comprimidos en bloque suelen consumir más espacio en disco que las imágenes JPEG comparables. Esto a su vez aumentará el tamaño del paquete de la aplicación y los requisitos de ancho de banda de red.
 
@@ -124,7 +124,7 @@ Los métodos siguientes se actualizan en Windows 8.1 para admitir formatos BC:
 -   [**ID2D1Bitmap::CopyFromBitmap**](/windows/win32/api/d2d1/nf-d2d1-id2d1bitmap-copyfrombitmap)
 -   [**ID2D1Bitmap1::GetSurface**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-getsurface)
 
-Tenga en [**cuenta que CreateBitmapFromWicBitmap**](id2d1devicecontext-createbitmapfromwicbitmap-overload.md) toma [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) como interfaz; pero en Windows 8.1 WIC no admite la obtención de datos comprimidos en bloque de **IWICBitmapSource** y no hay ningún formato de píxel WIC correspondiente a DXGI \_ FORMAT \_ BC1 \_ UNORM, etc. En su lugar, **CreateBitmapFromWicBitmap** determina si **IWICBitmapSource** es un DDS [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) válido y carga directamente los datos comprimidos en bloque. Puede especificar explícitamente el formato de píxel en la estructura [**D2D1 \_ BITMAP \_ PROPERTIES1**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_bitmap_properties1) o permitir que Direct2D determine automáticamente el formato correcto.
+Tenga en [**cuenta que CreateBitmapFromWicBitmap**](id2d1devicecontext-createbitmapfromwicbitmap-overload.md) toma [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) como interfaz; sin embargo Windows 8.1 WIC no admite la obtención de datos comprimidos en bloque de **IWICBitmapSource** y no hay ningún formato de píxel WIC correspondiente a DXGI \_ FORMAT \_ BC1 \_ UNORM, etc. En su lugar, **CreateBitmapFromWicBitmap** determina si **IWICBitmapSource** es un DDS [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) válido y carga directamente los datos comprimidos en bloque. Puede especificar explícitamente el formato de píxel en la estructura [**D2D1 \_ BITMAP \_ PROPERTIES1**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_bitmap_properties1) o permitir que Direct2D determine automáticamente el formato correcto.
 
 ### <a name="windows-imaging-component-apis"></a>Windows API de componentes de creación de imágenes
 
@@ -136,7 +136,7 @@ El Windows Imaging Component (WIC) agrega un nuevo códec DDS en Windows 8.1. Ad
 
 ### <a name="block-compressed-wic-pixel-formats"></a>Bloquear formatos de píxeles WIC comprimidos
 
-No hay ningún nuevo formato de píxel comprimido de bloque WIC en Windows 8.1. En su lugar, si obtiene un [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) del descodificador DDS y llama a [**CopyPixels,**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapsource-copypixels)recibirá píxeles estándar sin comprimir, como WICPixelFormat32bppPBGRA. Puede usar [**IWICDdsFrameDecode::CopyBlocks**](/windows/desktop/api/wincodec/nf-wincodec-iwicddsframedecode-copyblocks) para obtener los datos comprimidos de bloque sin formato en forma de búfer de memoria de un archivo DDS.
+No hay nuevos formatos de píxeles comprimidos de bloque WIC en Windows 8.1. En su lugar, si obtiene un [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) del descodificador DDS y llama a [**CopyPixels,**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapsource-copypixels)recibirá píxeles estándar sin comprimir, como WICPixelFormat32bppPBGRA. Puede usar [**IWICDdsFrameDecode::CopyBlocks**](/windows/desktop/api/wincodec/nf-wincodec-iwicddsframedecode-copyblocks) para obtener los datos comprimidos de bloque sin formato en forma de búfer de memoria de un archivo DDS.
 
 ### <a name="multi-frame-dds-access"></a>Acceso DDS de varios fotogramas
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 78c82b00b8b719b03d096ac0f83e43c8471ea98d56eab7bf67d28b0adae852f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7327d25aafa6f6673b7ed70b658f675a9dab8f4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118157040"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173805"
 ---
 # <a name="cbasevideorendereronrenderstart-method"></a>Método CBaseVideoRenderer.OnRenderStart
 
@@ -45,7 +45,7 @@ void OnRenderStart(
 *pMediaSample* 
 </dt> <dd>
 
-Puntero al ejemplo multimedia.
+Puntero al ejemplo de medios.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero al ejemplo multimedia.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro recupera la hora del reloj actual del sistema y la almacena en una variable miembro que se usará cuando se complete el dibujo. La función también realiza el registro de rendimiento. Se debe llamar a esta función miembro justo antes de que se inicie el dibujo.
 

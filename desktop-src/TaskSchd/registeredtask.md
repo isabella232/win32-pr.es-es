@@ -15,18 +15,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e90dc83c47b37343c41489ca2d7b3288f727086e769e83104b57ca5b6de13b2a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c7ce300375e5122a7b63266c0cd21cdddf34606b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119681645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172945"
 ---
 # <a name="registeredtask-object"></a>Objeto RegisteredTask
 
 Objeto de scripting que proporciona los métodos que se usan para ejecutar la tarea inmediatamente, obtener las instancias en ejecución de la tarea, obtener o establecer las credenciales que se usan para registrar la tarea y las propiedades que describen la tarea.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto RegisteredTask** tiene estos tipos de miembros:
 
@@ -62,14 +62,14 @@ El **objeto RegisteredTask** tiene estas propiedades.
 | Propiedad                                                                   | Tipo de acceso           | Descripción                                                                               |
 |:---------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------|
 | [**Definición**](registeredtask-definition.md)<br/>                 | Solo lectura<br/>  | Obtiene la definición de la tarea.<br/>                                               |
-| [**habilitado**](registeredtask-enabled.md)<br/>                       | Lectura/escritura<br/> | Obtiene o establece un valor booleano que indica si la tarea registrada está habilitada.<br/>  |
+| [**Enabled**](registeredtask-enabled.md)<br/>                       | Lectura y escritura<br/> | Obtiene o establece un valor booleano que indica si la tarea registrada está habilitada.<br/>  |
 | [**LastRunTime**](registeredtask-lastruntime.md)<br/>               | Solo lectura<br/>  | Obtiene la hora de la última ejecución de la tarea registrada.<br/>                                |
 | [**LastTaskResult**](registeredtask-lasttaskresult.md)<br/>         | Solo lectura<br/>  | Obtiene los resultados devueltos la última vez que se ha ejecutado la tarea registrada.<br/> |
 | [**Nombre**](registeredtask-name.md)<br/>                             | Solo lectura<br/>  | Obtiene el nombre de la tarea registrada.<br/>                                          |
 | [**NextRunTime**](registeredtask-nextruntime.md)<br/>               | Solo lectura<br/>  | Obtiene la hora a la que se programa la siguiente ejecución de la tarea registrada.<br/>               |
 | [**NumberOfMissedRuns**](registeredtask-numberofmissedruns.md)<br/> | Solo lectura<br/>  | Obtiene el número de veces que la tarea registrada ha perdido una ejecución programada.<br/>       |
-| [**Ruta de acceso**](registeredtask-path.md)<br/>                             | Solo lectura<br/>  | Obtiene la ruta de acceso a donde se almacena la tarea registrada.<br/>                          |
-| [**Estado**](registeredtask-state.md)<br/>                           | Solo lectura<br/>  | Obtiene el estado operativo de la tarea registrada.<br/>                             |
+| [**Path**](registeredtask-path.md)<br/>                             | Solo lectura<br/>  | Obtiene la ruta de acceso a donde se almacena la tarea registrada.<br/>                          |
+| [**State**](registeredtask-state.md)<br/>                           | Solo lectura<br/>  | Obtiene el estado operativo de la tarea registrada.<br/>                             |
 | [**XML**](registeredtask-xml.md)<br/>                               | Solo lectura<br/>  | Obtiene la información de registro con formato XML para la tarea registrada.<br/>       |
 
 
@@ -84,7 +84,7 @@ Para obtener más información y código de ejemplo para este objeto de scriptin
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |

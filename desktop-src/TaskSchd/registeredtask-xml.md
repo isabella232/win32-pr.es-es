@@ -5,7 +5,7 @@ ms.assetid: 59a88a19-2401-42aa-aa04-1933f16a7d7b
 keywords:
 - Propiedades XML Programador de tareas
 - Propiedad XML Programador de tareas , objeto RegisteredTask
-- Objeto RegisteredTask Programador de tareas , propiedad XML
+- Propiedad XML Programador de tareas registeredTask
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7af139100a449d8a2e8ce4ddc6098b9776d61477e1ef595aac14315a152c4f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c0765613918882910b902af61d9989bfa40a513
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119253565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172953"
 ---
 # <a name="registeredtaskxml-property"></a>RegisteredTask.XML propiedad
 
 Para el scripting, obtiene la información de registro con formato XML para la tarea registrada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -44,7 +44,7 @@ Información de registro con formato XML para la tarea registrada.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |

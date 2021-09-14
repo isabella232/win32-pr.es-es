@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: métodos JET_RECPOS de datos'
+description: 'Más información sobre: métodos JET_RECPOS datos'
 title: JET_RECPOS métodos
 TOCTitle: JET_RECPOS methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_RECPOS
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103859
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b83ca773bf4812448585ef67a963eb204b25cf83a87e4644532ba704799da137
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e4e879520f7670ba8f75d3c4ba4175899621df06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119719985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962916"
 ---
 # <a name="jet_recpos-methods"></a>JET_RECPOS métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_RECPOS](./jet-recpos-class.md) expone los miembros siguientes.
+El [JET_RECPOS](./jet-recpos-class.md) muestra los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -78,7 +78,7 @@ El [JET_RECPOS](./jet-recpos-class.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 0ab5a8556706b833a1867065cf7446b53873b4193be07c901e9b13513ef5a84a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb9672ee434eb46c6881903d2916c1bec6e570fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171057"
 ---
 # <a name="extendedpropertypropid-property"></a>Propiedad ExtendedProperty.PropID
 
@@ -26,7 +26,7 @@ ms.locfileid: "119007143"
 
 La **propiedad PropID** establece o recupera el tipo de propiedad extendida. Esta es la propiedad predeterminada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -68,7 +68,7 @@ Valor de la [**enumeración CAPICOM \_ PROPID**](capicom-propid.md) que define l
 | <span id="CAPICOM_PROPID_KEY_IDENTIFIER"></span><span id="capicom_propid_key_identifier"></span><dl> <dt>**CAPICOM \_ PROPID \_ KEY \_ IDENTIFIER**</dt> </dl>                                                 | Identificador de clave.<br/>                                                                                                                                                                                                                                                               |
 | <span id="CAPICOM_PROPID_AUTO_ENROLL"></span><span id="capicom_propid_auto_enroll"></span><dl> <dt>**INSCRIPCIÓN AUTOMÁTICA DE CAPICOM \_ PROPID \_ \_**</dt> </dl>                                                          | Información de inscripción automática de un certificado.<br/>                                                                                                                                                                                                                                  |
 | <span id="CAPICOM_PROPID_PUBKEY_ALG_PARA"></span><span id="capicom_propid_pubkey_alg_para"></span><dl> <dt>**CAPICOM \_ PROPID \_ PUBKEY \_ ALG \_ PARA**</dt> </dl>                                             | Parámetros para un algoritmo de clave pública.<br/>                                                                                                                                                                                                                                          |
-| <span id="CAPICOM_PROPID_CROSS_CERT_DIST_POINTS"></span><span id="capicom_propid_cross_cert_dist_points"></span><dl> <dt>**PUNTOS DE DISTRIBUCIÓN \_ DE CERTIFICADOS \_ \_ CRUZADOS \_ DE CAPICOM PROPID \_**</dt> </dl>                       | Información utilizada para actualizar certificados cruzados dinámicos.<br/>                                                                                                                                                                                                                          |
+| <span id="CAPICOM_PROPID_CROSS_CERT_DIST_POINTS"></span><span id="capicom_propid_cross_cert_dist_points"></span><dl> <dt>**PUNTOS DE DISTRIBUCIÓN DE \_ CERTIFICADOS \_ \_ CRUZADOS \_ DE CAPICOM PROPID \_**</dt> </dl>                       | Información utilizada para actualizar certificados cruzados dinámicos.<br/>                                                                                                                                                                                                                          |
 | <span id="CAPICOM_PROPID_ISSUER_PUBLIC_KEY_MD5_HASH"></span><span id="capicom_propid_issuer_public_key_md5_hash"></span><dl> <dt>**\_ \_ \_ HASH \_ \_ MD5 \_ DE CLAVE PÚBLICA DEL EMISOR DE CAPICOM PROPID**</dt> </dl>          | Hash MD5 de la clave pública del emisor.<br/>                                                                                                                                                                                                                                        |
 | <span id="CAPICOM_PROPID_SUBJECT_PUBLIC_KEY_MD5_HASH"></span><span id="capicom_propid_subject_public_key_md5_hash"></span><dl> <dt>**CAPICOM \_ PROPID \_ SUBJECT \_ PUBLIC \_ KEY \_ MD5 \_ HASH**</dt> </dl>       | Hash MD5 de la clave pública del sujeto.<br/>                                                                                                                                                                                                                                       |
 | <span id="CAPICOM_PROPID_ENROLLMENT"></span><span id="capicom_propid_enrollment"></span><dl> <dt>**INSCRIPCIÓN DE CAPICOM \_ PROPID \_**</dt> </dl>                                                              | Información sobre la inscripción del certificado.<br/>                                                                                                                                                                                                                                 |

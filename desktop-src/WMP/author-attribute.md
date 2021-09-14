@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f7bd6acf39142f3947a4df623b4ce2450f3a872386f1f68ec8d7e600b831f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e94ef73679aa3869a9a3d87b926b7f38464b1001
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119864885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889868"
 ---
 # <a name="author-attribute"></a>Atributo Author
 
@@ -36,7 +36,7 @@ El **atributo Author** es el nombre de un actor o intérprete multimedia asociad
 -   [Elementos de radio](radio-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia.
 
@@ -58,7 +58,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

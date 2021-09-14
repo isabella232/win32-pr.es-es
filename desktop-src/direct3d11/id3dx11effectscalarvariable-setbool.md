@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectScalarVariable SetBool (D3dx11effect. h)
+title: Método ID3DX11EffectScalarVariable SetBool (D3dx11effect.h)
 description: Establezca una variable booleana.
 ms.assetid: b5385ed3-6e65-4d65-bb8e-835967e6f610
 keywords:
 - Método SetBool Direct3D 11
 - Método SetBool Direct3D 11, interfaz ID3DX11EffectScalarVariable
-- Interfaz ID3DX11EffectScalarVariable Direct3D 11, método SetBool
+- ID3DX11EffectScalarVariable interface Direct3D 11 , SetBool method
 topic_type:
 - apiref
 api_name:
@@ -18,13 +18,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 1e1d3670b3a41f47bf1b5ec7ac3d2fb93441e72f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172509"
 ---
-# <a name="id3dx11effectscalarvariablesetbool-method"></a>ID3DX11EffectScalarVariable:: SetBool (método)
+# <a name="id3dx11effectscalarvariablesetbool-method"></a>Método ID3DX11EffectScalarVariable::SetBool
 
 Establezca una variable booleana.
 
@@ -46,7 +46,7 @@ HRESULT SetBool(
 *Valor* 
 </dt> <dd>
 
-Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 
 Puntero a la variable.
 
@@ -56,12 +56,12 @@ Puntero a la variable.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,12 +71,12 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
