@@ -7,12 +7,12 @@ keywords:
 - Servicios de Escritorio remoto Servicios de Escritorio remoto , interfaces de control de acceso web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a444aeebed6c4d35d92020c01c302d62c5861c5a1ec1e29d58183354b3c56bbf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 02c30f7fbf0030cd62dff221586cf4d44c90f473
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117940538"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374675"
 ---
 # <a name="remote-desktop-services-web-access-control-interfaces"></a>Servicios de Escritorio remoto web Access Control web
 

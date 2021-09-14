@@ -4,12 +4,12 @@ ms.assetid: 7bd4d725-de17-4801-bd06-8d47a777409d
 title: Protección de la contraseña de inicio de sesión automático
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b43435afaef5820bdfeb8eda1c092904858e05f11de2f718450f5b5c76058bec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25508af4de64554e664426db3e786a1eca34579b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118920673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374987"
 ---
 # <a name="protecting-the-automatic-logon-password"></a>Protección de la contraseña de inicio de sesión automático
 

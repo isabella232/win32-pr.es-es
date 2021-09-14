@@ -4,12 +4,12 @@ ms.assetid: ac5370e2-b401-46be-bf92-f1221ffa3e48
 title: Estructuras de tiempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b124e7912f47e221df49b4783011b3e99e84fca2f3c424068c31232e58e9986a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7726ce53a7af3ac97548fa647d44039e1318c4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117957855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243867"
 ---
 # <a name="time-structures"></a>Estructuras de tiempo
 

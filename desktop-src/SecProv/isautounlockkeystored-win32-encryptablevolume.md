@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: c28f8357edd88322f6f4498fd1e5b7156eeeff0b67d53b4d759c6935f4e9f9eb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aedb834bdfd26ce4b348a41b4046c0c4e2c7e260
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119906315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374866"
 ---
 # <a name="isautounlockkeystored-method-of-the-win32_encryptablevolume-class"></a>Método IsAutoUnlockKeyStored de la clase EncryptableVolume de Win32 \_
 
@@ -66,7 +66,7 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use [**ClearAllAutoUnlockKeys para**](clearallautounlockkeys-win32-encryptablevolume.md) quitar toda la información de desbloqueo del volumen del sistema operativo que se está ejecutando actualmente.
 
@@ -74,7 +74,7 @@ La información que se usa para desbloquear un volumen se almacena cuando se eje
 
 **IsAutoUnlockKeyStored** difiere de [**IsAutoUnlockEnabled**](isautounlockenabled-win32-encryptablevolume.md) en que incluso si el desbloqueo automático está deshabilitado para todos los volúmenes de datos conectados actualmente al equipo, todavía puede haber información de desbloqueo asociada a volúmenes de datos desconectados o volúmenes de datos que ya no existen.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista Ultimate \[\]<br/>                       |
+| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/>                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |

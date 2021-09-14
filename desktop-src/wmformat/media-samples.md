@@ -11,12 +11,12 @@ keywords:
 - ASF (formato de sistemas avanzados), ejemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 741641bfa326357114f5a02e81a32ac47691661f331355d91a2c3e187ad4233b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b8d264aa23e80f1e692f28789c2f2e631ef3ed8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117654589"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267028"
 ---
 # <a name="media-samples-windows-media-format-11-sdk"></a>Ejemplos de medios (Windows SDK de formato multimedia 11)
 

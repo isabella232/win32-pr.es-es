@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 312fc18be42ccc7ba35a0d0a6288637bd92cd0f10a855dc95c457329c69cd7af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a5909a8782571f9bd01a1c31e5ccd04c3d029df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118922772"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244202"
 ---
 # <a name="iscardmanagecreatechverification-method"></a>Método ISCardManage::CreateCHVerification
 
@@ -64,7 +64,7 @@ El método devuelve uno de los siguientes valores posibles:
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una lista de todos los métodos definidos por esta interfaz, vea [**ISCardManage**](iscardmanage.md).
 
@@ -74,7 +74,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
@@ -83,7 +83,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -5,7 +5,7 @@ ms.assetid: 28714644-12c4-46eb-95fc-70091624f6dd
 keywords:
 - método titleMenu Reproductor de Windows Media
 - Método titleMenu Reproductor de Windows Media , interfaz IWMPDVD
-- Interfaz IWMPDVD Reproductor de Windows Media método , titleMenu
+- Interfaz IWMPDVD Reproductor de Windows Media , método titleMenu
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff485cd09915ec9acb076d2c06a8aa28c3549bf6527495e5e32d4a01d483285a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0889a3f65ccefe4e09bb5ff47a66867681dcc801
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120000465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242954"
 ---
 # <a name="iwmpdvdtitlemenu-method"></a>IWMPDVD::titleMenu (método)
 
@@ -53,7 +53,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada DVD se ha escrito de forma diferente. El DVD debe contener un menú para que este método funcione. Algunos DVD se han escrito para que los métodos **IWMPDVD.topMenu** y **titleMenu** abran el mismo menú. El **método titleMenu** normalmente invoca el menú de título, pero puede invocar el menú superior si no hay ningún menú de título disponible.
 

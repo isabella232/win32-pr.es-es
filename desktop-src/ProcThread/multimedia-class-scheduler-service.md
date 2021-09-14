@@ -4,16 +4,16 @@ ms.assetid: a7169938-1c72-4c4c-881a-cb08ad6182c7
 title: Servicio Programador de clases multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf0744883180c361d5656cf7c182f538d93617be7f6bbdc6a05ff93efa732b53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 80656276af30495c084d0964534a04e11896bcd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120032445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375046"
 ---
 # <a name="multimedia-class-scheduler-service"></a>Servicio Programador de clases multimedia
 
-El servicio Programador de clases multimedia (MMCSS) permite a las aplicaciones multimedia asegurarse de que su procesamiento con un tiempo limitado recibe acceso prioritario a los recursos de CPU. Este servicio permite que las aplicaciones multimedia utilicen la mayor parte de la CPU posible sin denegar los recursos de CPU a las aplicaciones de prioridad inferior.
+El servicio Programador de clases multimedia (MMCSS) permite a las aplicaciones multimedia asegurarse de que su procesamiento con un tiempo limitado recibe acceso prioritario a los recursos de CPU. Este servicio permite que las aplicaciones multimedia utilicen la mayor parte de la CPU posible sin denegar los recursos de CPU a las aplicaciones de menor prioridad.
 
 MMCSS usa la información almacenada en el Registro para identificar las tareas admitidas y determinar la prioridad relativa de los subprocesos que realizan estas tareas. Cada subproceso que realiza el trabajo relacionado con una tarea determinada llama a la función [**AvSetMmMaxThreadCharacteristics**](/windows/desktop/api/Avrt/nf-avrt-avsetmmmaxthreadcharacteristicsa) o [**AvSetMmThreadCharacteristics**](/windows/desktop/api/Avrt/nf-avrt-avsetmmthreadcharacteristicsa) para informar a MMCSS de que está trabajando en esa tarea.
 
@@ -46,9 +46,9 @@ Cada clave de tarea contiene el siguiente conjunto de valores que representan la
 | Value                   | Formato         | Valores posibles                                                                                                                                                                                                                                                                                                                                                         |
 |-------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Afinidad**            | **REG \_ DWORD** | Máscara de bits que indica la afinidad del procesador. Tanto 0x00 como 0xFFFFFFFF indican que no se usa la afinidad de procesador.                                                                                                                                                                                                                                                 |
-| **Solo fondo**     | **REG \_ SZ**    | Indica si se trata de una tarea en segundo plano (sin interfaz de usuario). Los subprocesos de una tarea en segundo plano no cambian debido a un cambio en el foco de la ventana. Este valor se puede establecer en True o False.                                                                                                                                                                            |
-| **BackgroundPriority**  | **REG \_ DWORD** | Prioridad en segundo plano. El intervalo de valores es 1-8.                                                                                                                                                                                                                                                                                                                    |
-| **Frecuencia del reloj**          | **REG \_ DWORD** | Sugerencia usada por MMCSS para determinar la granularidad de la programación de recursos de procesador. **Windows Server 2008 y Windows Vista:** Velocidad de reloj máxima garantizada que usa el sistema si un subproceso se une a esta tarea, en intervalos de 100 nanosegundos. A partir Windows 7 y Windows Server 2008 R2, esta garantía se quitó para reducir el consumo de energía del sistema.<br/> |
+| **Solo en segundo plano**     | **REG \_ SZ**    | Indica si se trata de una tarea en segundo plano (sin interfaz de usuario). Los subprocesos de una tarea en segundo plano no cambian debido a un cambio en el foco de la ventana. Este valor se puede establecer en True o False.                                                                                                                                                                            |
+| **BackgroundPriority**  | **REG \_ DWORD** | Prioridad en segundo plano. El intervalo de valores es de 1 a 8.                                                                                                                                                                                                                                                                                                                    |
+| **Frecuencia del reloj**          | **REG \_ DWORD** | Sugerencia usada por MMCSS para determinar la granularidad de la programación de recursos de procesador. **Windows Server 2008 y Windows Vista:** La velocidad de reloj máxima garantizada que usa el sistema si un subproceso se une a esta tarea, en intervalos de 100 nanosegundos. A partir Windows 7 y Windows Server 2008 R2, esta garantía se quitó para reducir el consumo de energía del sistema.<br/> |
 | **Prioridad de GPU**        | **REG \_ DWORD** | Prioridad de GPU. El intervalo de valores es 0-31. Esta prioridad aún no se usa.                                                                                                                                                                                                                                                                                           |
 | **Prioridad**            | **REG \_ DWORD** | Prioridad de la tarea. El intervalo de valores es de 1 (bajo) a 8 (alto). Para las tareas con **una categoría de programación** alta, este valor siempre se trata como 2.<br/>                                                                                                                                                                                                           |
 | **Categoría de programación** | **REG \_ SZ**    | Categoría de programación. Este valor se puede establecer en Alto, Medio o Bajo.                                                                                                                                                                                                                                                                                                 |
@@ -59,7 +59,7 @@ Cada clave de tarea contiene el siguiente conjunto de valores que representan la
  
 
 > [!Note]  
-> Para ahorrar energía, las aplicaciones no deben establecer la resolución del temporizador de todo el sistema en un valor pequeño a menos que sea absolutamente necesario. Para obtener más información, vea [Rendimiento en](../win7devguide/performance.md) la guía [Windows 7 desarrolladores](../win7devguide/windows-7-developer-guide.md)de .
+> Para ahorrar energía, las aplicaciones no deben establecer la resolución del temporizador de todo el sistema en un valor pequeño a menos que sea absolutamente necesario. Para obtener más información, [vea Rendimiento](../win7devguide/performance.md) en la guía [Windows 7 Desarrolladores de](../win7devguide/windows-7-developer-guide.md).
 
  
 
@@ -78,10 +78,10 @@ MMCSS establece la prioridad de los subprocesos de cliente en función de su cat
 
 | Category | Prioridad | Descripción                                                                                                                               |
 |----------|----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Alto     | 23-26    | Estos subprocesos se ejecutan con una prioridad de subproceso inferior a solo determinadas tareas de nivel del sistema. Esta categoría está diseñada para tareas Pro audio. |
+| Alto     | 23-26    | Estos subprocesos se ejecutan con una prioridad de subproceso inferior a solo determinadas tareas de nivel de sistema. Esta categoría está diseñada para tareas Pro audio. |
 | Media   | 16-22    | Estos subprocesos forman parte de la aplicación que está en primer plano.                                                                      |
 | Bajo      | 8-15     | Esta categoría contiene el resto de los subprocesos. Se garantiza un porcentaje mínimo de los recursos de CPU si es necesario.           |
-|          | 1-7      | Estos subprocesos han usado su cuota de recursos de CPU. Pueden seguir ejecándose si no hay subprocesos de prioridad baja listos para ejecutarse.                |
+|          | 1-7      | Estos subprocesos han usado su cuota de recursos de CPU. Pueden continuar ejecándose si no hay subprocesos de prioridad baja listos para ejecutarse.                |
 
 
 

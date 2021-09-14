@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6c6f9d20a6a9b88d3764e013468747968a71690cf5e4a31603a88acd9e7e33e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5872f870e831896ff37157a4a0f47584e77d93c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117954530"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243842"
 ---
 # <a name="systemmonitorupdateinterval-property"></a>Propiedad SystemMonitor.UpdateInterval
 
@@ -42,7 +42,7 @@ Property UpdateInterval As Single
 
 Tiempo, en segundos, que SYSMON espera antes de la próxima vez que recopile los datos del contador y actualice el gráfico o informe. El intervalo mínimo es 1 segundo (este también es el valor predeterminado). El valor máximo es 1 000 000.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad solo es relevante cuando [**SystemMonitor.ManualUpdate**](systemmonitor-manualupdate.md) está establecido en False.
 

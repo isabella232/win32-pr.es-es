@@ -10,12 +10,12 @@ keywords:
 - enumeraciones, visualizaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e35a3597baebc214f33c289cffa149b315a740ec0997efc93012c028e7ec540
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc19a8c56109bd75a3891a97dccb970780b995eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243051"
 ---
 # <a name="visualization-structures-and-enumeration-types"></a>Estructuras de visualización y tipos de enumeración
 
@@ -34,7 +34,7 @@ ms.locfileid: "119054043"
 
 <dl> <dt>
 
-[**Referencia de programación de visualizaciones personalizadas**](custom-visualization-programming-reference.md)
+[**Referencia de programación de visualización personalizada**](custom-visualization-programming-reference.md)
 </dt> </dl>
 
  

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 2602339c9285eaac5da806fa0a08f498c0f8f631db30626f342a5bead7cc79ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4def6948860e11673970986925d2b665da2efe25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118966744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267623"
 ---
 # <a name="titleareatype-complex-type"></a>Tipo complejo TitleAreaType
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6850bd73c9add044bdb845d17341745c7546918f7824b611ed2f018f66139d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d93bf97c7b5213e3d196897de1c3ebcfa6e6d2c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120000495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242966"
 ---
 # <a name="iwmpcontrols3getlanguagename-method"></a>IWMPControls3::getLanguageName (método)
 
@@ -64,7 +64,7 @@ Implements IWMPControls3.getLanguageName
 
 **System.String que** es el nombre del idioma de audio.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un LCID identifica de forma única un dialecto de idioma determinado, denominado configuración regional.
 

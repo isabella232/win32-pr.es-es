@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: f0d01fe47133ddeaf7bba32a91711d76783bdfbb0a28762d7ddb7f9054d0108d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c44bf65bfcebe6e76ce1ee955205b9c9163efcee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120014445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244257"
 ---
 # <a name="iscardiso7816verify-method"></a>ISCardISO7816::Verify (método)
 
@@ -57,7 +57,7 @@ Cuando el cuerpo está vacío, el comando se puede usar para recuperar el númer
 | <span id="No_Info"></span><span id="no_info"></span><span id="NO_INFO"></span><dl> <dt>**Sin información**</dt> </dl>                     | Posición del bit: 00000000<br/> P2=00 está reservado para indicar que no se usa ningún calificador determinado en esas tarjetas en las que el comando verify hace referencia a los datos secretos de forma inequívoca.<br/> |
 | <span id="Global_Ref"></span><span id="global_ref"></span><span id="GLOBAL_REF"></span><dl> <dt>**Referencia global**</dt> </dl>         | Posición de bits: 0-------<br/> Un ejemplo de referencia global sería una contraseña.<br/>                                                                                                        |
 | <span id="Specific_Ref"></span><span id="specific_ref"></span><span id="SPECIFIC_REF"></span><dl> <dt>**Referencia específica**</dt> </dl> | Posición de bits: 1-------<br/> Un ejemplo de ref específico es la contraseña específica de DF.<br/>                                                                                                  |
-| <span id="RFU"></span><span id="rfu"></span><dl> <dt>**Rfu**</dt> </dl>                                                           | Posición de bits: -xx-----<br/>                                                                                                                                                                 |
+| <span id="RFU"></span><span id="rfu"></span><dl> <dt>**RFU**</dt> </dl>                                                           | Posición de bits: -xx-----<br/>                                                                                                                                                                 |
 | <span id="Ref_Data__"></span><span id="ref_data__"></span><span id="REF_DATA__"></span><dl> <dt>**Datos de referencia \#**</dt> </dl>        | Posición de bits: ---xxxxx<br/> El número de datos de referencia puede ser, por ejemplo, un número de contraseña o un identificador de EF corto.<br/>                                                           |
 
 
@@ -99,7 +99,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El estado de seguridad se puede modificar como resultado de una comparación. Se pueden registrar comparaciones incorrectas en la tarjeta (por ejemplo, para limitar el número de intentos lejos de usar los datos de referencia).
 
@@ -117,7 +117,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 se define como 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |

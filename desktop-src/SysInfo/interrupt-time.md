@@ -4,18 +4,18 @@ ms.assetid: 56fe322e-53ea-4186-9b5e-352f69b09109
 title: Hora de interrupción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e0da8fa92fc51cdceef6f0052dda7a2cd27d7b21b24d11bd8ec7b1ea4aff18b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6018d97ab0eecd1182c02b734357ca13fbe12632
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118885515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243939"
 ---
 # <a name="interrupt-time"></a>Hora de interrupción
 
 *El tiempo de* interrupción es la cantidad de tiempo desde que se inició por última vez el sistema, en intervalos de 100 nanosegundos. El recuento de tiempo de interrupción comienza en cero cuando se inicia el sistema y se incrementa en cada interrupción del reloj por la longitud de un tic del reloj. La longitud exacta de un tic de reloj depende del hardware subyacente y puede variar entre sistemas.
 
-A diferencia de [la](system-time.md)hora del sistema, el recuento de tiempo de interrupción no está sujeto a ajustes por parte de los usuarios ni del servicio de hora Windows, lo que lo hace una mejor opción para medir duraciones cortas. Las aplicaciones que requieren una precisión mayor que el recuento de tiempo de interrupción deben usar [un temporizador de alta resolución](../winmsg/about-timers.md). Use la [**función QueryPerformanceFrequency**](/windows/win32/api/profileapi/nf-profileapi-queryperformancefrequency) para recuperar la frecuencia del temporizador de alta resolución y la [**función QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) para recuperar el valor del contador.
+A diferencia de [la](system-time.md)hora del sistema , el recuento de tiempo de interrupción no está sujeto a ajustes por parte de los usuarios ni del servicio de hora Windows, lo que lo hace una mejor opción para medir duraciones cortas. Las aplicaciones que requieren una precisión mayor que el recuento de tiempo de interrupción deben usar [un temporizador de alta resolución](../winmsg/about-timers.md). Use la [**función QueryPerformanceFrequency**](/windows/win32/api/profileapi/nf-profileapi-queryperformancefrequency) para recuperar la frecuencia del temporizador de alta resolución y la [**función QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) para recuperar el valor del contador.
 
 Las [**funciones QueryInterruptTime**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttime), [**QueryInterruptTimePrecise,**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttimeprecise) [**QueryUnbiasedInterruptTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime)y [**QueryUnbiasedInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttimeprecise) se pueden usar para recuperar el recuento de tiempo de interrupción. Tiempo de interrupción no sesgado significa que solo se cuenta el tiempo que el sistema está en estado de funcionamiento; por lo tanto, el recuento de tiempo de interrupción no se "sesgado" por el tiempo que el sistema pasa en suspensión o hibernación.
 

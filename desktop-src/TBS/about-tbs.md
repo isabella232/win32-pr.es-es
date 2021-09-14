@@ -6,12 +6,12 @@ keywords:
 - TPM Base Services TBS , acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4997bf6181a1da7aabaf811d0f1d0cf3e3ca813bb11a8f2d73b3b286e4e5ebde
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6a5d40b1fca688676978f274cb976afedb6e6a56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117954462"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243824"
 ---
 # <a name="about-tbs"></a>Acerca de TBS
 

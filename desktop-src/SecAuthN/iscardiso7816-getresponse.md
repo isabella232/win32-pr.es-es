@@ -1,5 +1,5 @@
 ---
-description: El método GetResponse construye un comando de unidad de datos de protocolo de aplicación (APDU) que transmite comandos APDU (o parte de un comando APDU) que, de lo contrario, no se pudieron transmitir mediante los protocolos disponibles.
+description: El método GetResponse construye un comando de unidad de datos de protocolo de aplicación (APDU) que transmite comandos APDU (o parte de un comando APDU) que, de lo contrario, no se podían transmitir mediante los protocolos disponibles.
 ms.assetid: 1aa83d38-d46d-4d3b-8f57-0256e5875e35
 title: Método ISCardISO7816::GetResponse (Scardssp.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 21646b7de844509b28bb0ea437fa76cd9fa835932333677f919872daecb3ce60
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0b74fe9620aefc390957b88f9cf286f7871c1d18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119481153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244293"
 ---
 # <a name="iscardiso7816getresponse-method"></a>Método ISCardISO7816::GetResponse
 
 \[El **método GetResponse** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método GetResponse** construye un comando de unidad de datos de protocolo de aplicación (APDU) que transmite comandos APDU (o parte de un comando APDU) que, de lo contrario, no se pudieron transmitir mediante los protocolos disponibles. [](../secgloss/a-gly.md)
+El **método GetResponse** construye un comando de unidad de datos de protocolo de aplicación (APDU) que transmite comandos APDU (o parte de un comando APDU) que, de lo contrario, no se podían transmitir mediante los protocolos disponibles. [](../secgloss/a-gly.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,9 +68,9 @@ Longitud de los datos transmitidos.
 *ppCmd* \[ in, out\]
 </dt> <dd>
 
-En la entrada, puntero a un objeto de interfaz [**ISCardCmd**](iscardcmd.md) o **NULL.**
+En la entrada, puntero a un [**objeto de interfaz ISCardCmd**](iscardcmd.md) o **NULL.**
 
-En la devolución, se rellena con el comando APDU construido por esta operación. Si *ppCmd* se estableció en **NULL,** [*se*](../secgloss/s-gly.md) crea internamente un objeto [**ISCardCmd**](iscardcmd.md) de tarjeta inteligente y se devuelve a través del *puntero ppCmd.*
+Al devolverse, se rellena con el comando APDU construido por esta operación. Si *ppCmd* se estableció en **NULL,** [*se*](../secgloss/s-gly.md) crea internamente un objeto [**ISCardCmd**](iscardcmd.md) de tarjeta inteligente y se devuelve a través del *puntero ppCmd.*
 
 </dd> </dl>
 
@@ -103,11 +103,11 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 se define como 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |

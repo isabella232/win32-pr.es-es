@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 394e10c460b406e510b1423f299b4a8724492f5a5b180212ff121f4ad593041e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c54e62f82f52fedc7de7c7c4af1cd3ed1ccdf149
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244928"
 ---
 # <a name="glupickmatrix-function"></a>Función gluPickMatrix
 
@@ -54,7 +54,7 @@ Coordenada de ventana x de una región de selección.
 *y* 
 </dt> <dd>
 
-Coordenada de ventana y de una región de selección.
+Coordenada de la ventana Y de una región de selección.
 
 </dd> <dt>
 
@@ -83,22 +83,22 @@ La ventanilla actual (como desde una [**llamada a glGetIntegerv).**](glgetintege
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluPickMatrix** crea una matriz de proyección que puede usar para restringir el dibujo a una pequeña región de la ventanilla.
 
-1.  Use **gluPickMatrix para** restringir el dibujo a una región pequeña alrededor del cursor.
-2.  Escriba el modo de selección [**(con glRenderMode)**](glrendermode.md)y, a continuación, vuelva a mostrar la escena.
+1.  Use **gluPickMatrix para** restringir el dibujo a una pequeña región alrededor del cursor.
+2.  Escriba el modo de selección [**(con glRenderMode)**](glrendermode.md)y vuelva a mostrar la escena.
 
     Todas las primitivas que se hubieran dibujado cerca del cursor se identifican y almacenan en el búfer de selección.
 
-La matriz creada **por gluPickMatrix** se multiplica por la matriz actual como si se llamara [**a glMultMatrix**](glmultmatrix.md) con la matriz generada.
+La matriz creada por **gluPickMatrix** se multiplica por la matriz actual como si se llamara [**a glMultMatrix**](glmultmatrix.md) con la matriz generada.
 
 1.  Llame [**a glLoadIdentity para**](glloadidentity.md) cargar una matriz de identidad en la pila de la matriz de perspectiva.
 2.  Llame **a gluPickMatrix.**
-3.  Llame a una función (como [**gluPerspective)**](gluperspective.md)para multiplicar la matriz de perspectiva por la matriz de selección.
+3.  Llame a una función (como [**gluPerspective)**](gluperspective.md)para multiplicar la matriz de perspectiva por la matriz pick.
 
-Al usar **gluPickMatrix para** elegir B-Spline no uniformes de rational [(SPLINEBS),](using-nurbs-curves-and-surfaces.md)tenga cuidado de desactivar la propiedad DEBS, GLU \_ AUTO LOAD \_ \_ MATRIX. Si GLU AUTO LOAD MATRIX no está desactivado, cualquier superficie DE GLUBS que se represente se subdivide de forma diferente con la matriz de selección de cómo se subdividió sin la \_ \_ \_ matriz de selección.
+Al usar **gluPickMatrix para** seleccionar B-Spline no uniformes de tipo Rational [(SPLINEBS),](using-nurbs-curves-and-surfaces.md)tenga cuidado de desactivar la propiedad DE GLUBS, GLU \_ AUTO LOAD \_ \_ MATRIX. Si GLU AUTO LOAD MATRIX no está desactivado, cualquier superficie DE LA BASE de datos de carga automática que se represente se subdivide de forma diferente con la matriz de selección de la forma en que se subdividió sin la \_ \_ \_ matriz de selección.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -115,7 +115,7 @@ glMatrixMode(GL_MODELVIEW);
 
 
 
-El código siguiente selecciona una parte de la ventanilla:
+el código siguiente selecciona una parte de la ventanilla:
 
 
 ```

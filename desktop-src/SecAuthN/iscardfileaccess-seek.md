@@ -1,5 +1,5 @@
 ---
-description: El método Seek selecciona el objeto desde el que se realizará el acceso (lectura/escritura).
+description: El método Seek selecciona el objeto desde el que se realizará el acceso (de lectura y escritura).
 ms.assetid: 9e06df70-6415-46dd-b34f-59614d1cbee7
 title: Método ISCardFileAccess::Seek
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 5f4059eb2943411cfa5a3fb2b2ae247cd0fda7dd735cc1f1f61d516181976b6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0d23925ba1c38a05e15bea5e6ee63b3a1c87125
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118923164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244341"
 ---
 # <a name="iscardfileaccessseek-method"></a>Método ISCardFileAccess::Seek
 
 \[El **método Seek** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método Seek** selecciona el objeto desde el que se realizará el acceso (lectura/escritura).
+El **método Seek** selecciona el objeto desde el que se realizará el acceso (de lectura y escritura).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,9 +56,9 @@ Ubicación donde debe comenzar la búsqueda.
 
 
 
-| Valor                                                                                                | Significado                                            |
+| Value                                                                                                | Significado                                            |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>SC \_ SEEK DESDE EL \_ \_ PRINCIPIO</dt> </dl> | Comience la búsqueda al principio.<br/>          |
+| <dl> <dt>SC \_ SEEK \_ FROM \_ BEGINNING</dt> </dl> | Comience la búsqueda al principio.<br/>          |
 | <dl> <dt>SC \_ SEEK \_ FROM \_ END </dt> </dl>      | Comience la búsqueda desde el final.<br/>              |
 | <dl> <dt>SC \_ SEEK \_ RELATIVE</dt> </dl>        | Comience la búsqueda desde la posición actual.<br/> |
 
@@ -91,7 +91,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para leer o escribir desde un archivo, llame a [**Lectura**](iscardfileaccess-read.md) o [**Escritura**](iscardfileaccess-write.md) respectivamente.
 
@@ -103,16 +103,16 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

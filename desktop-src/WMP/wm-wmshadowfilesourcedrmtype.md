@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5189a6dbd332b08f0fb8b949933d4b2b92561cd6b3151829f1a321e7f47261d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b019b1e26e7a98f49a25de96dc8e8e45a6f7bd3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118116578"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374275"
 ---
 # <a name="wmwmshadowfilesourcedrmtype-windows-media-player-sdk"></a>WM/WMShadowFileSourceDRMType (Reproductor de Windows Media SDK)
 
 **WM/WMShadowFileSourceDRMType** es el sistema de administración de derechos digitales que se usa para proteger el archivo contenido en el archivo de sombra.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un archivo de sombra puede ser un contenedor para un archivo de código fuente. Este atributo es una cadena que identifica el tipo DRM del archivo de origen.
 
@@ -33,7 +33,7 @@ El archivo de sombra se especifica mediante el atributo [ShadowFilePath.](shadow
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/> |
 

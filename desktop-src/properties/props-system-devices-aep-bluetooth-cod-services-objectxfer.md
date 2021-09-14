@@ -4,12 +4,12 @@ ms.assetid: 2dbaccc5-7fe0-4041-b317-bbfb4a603e1b
 title: System.Devices.Aep. Bluetooth. Cod.Services.ObjectXfer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e44528ab4740b8e365c56578e1318f3c7feaa692f136108593f1cabbdb0c2889
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: adf3730bdfddb037bd06ac482136d855c5242116
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268084"
 ---
 # <a name="systemdevicesaepbluetoothcodservicesobjectxfer"></a>System.Devices.Aep. Bluetooth. Cod.Services.ObjectXfer
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

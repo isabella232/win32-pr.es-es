@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 8cda73c4a698d40a602b39fd7822dabfbded9a7a35c27db16ca74f7993f7f684
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85e912542b09b02297f5119392115857259f70f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119879525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374914"
 ---
 # <a name="basicconstraints-object"></a>BasicConstraints, objeto
 
-\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use la [**clase X509BasicConstraintsExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509basicconstraintsextension?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/previous-versions/windows/)\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use la clase [**X509BasicConstraintsExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509basicconstraintsextension?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/previous-versions/windows/)\]
 
 El **objeto BasicConstraints** representa la extensión de restricciones básicas de un certificado.
 
@@ -35,7 +35,7 @@ El **objeto BasicConstraints** se usa para realizar las tareas siguientes:
 -   Determine si el certificado está restringido a las autoridades de certificación.
 -   Determine si la restricción de longitud de ruta de acceso está presente y recupere el valor de restricción de longitud de ruta de acceso.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto BasicConstraints** tiene estos tipos de miembros:
 
@@ -47,9 +47,9 @@ El **objeto BasicConstraints** tiene estas propiedades.
 
 
 
-| Propiedad                                                                                     | Tipo de acceso          | Descripción                                                                                                                                                                                                        |
+| Propiedad.                                                                                     | Tipo de acceso          | Descripción                                                                                                                                                                                                        |
 |:---------------------------------------------------------------------------------------------|:---------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IsCertificateAuthority**](basicconstraints-iscertificateauthority.md)<br/>         | Solo lectura<br/> | Recupera un valor booleano que indica si el certificado es para una entidad [*de certificación*](../secgloss/c-gly.md) (CA).<br/> |
+| [**IsCertificateAuthority**](basicconstraints-iscertificateauthority.md)<br/>         | Solo lectura<br/> | Recupera un valor booleano que indica si el certificado es para una [*entidad de certificación*](../secgloss/c-gly.md) (CA).<br/> |
 | [**IsCritical**](basicconstraints-iscritical.md)<br/>                                 | Solo lectura<br/> | Recupera un valor booleano que indica si la extensión de restricción básica está marcada como crítica.<br/>                                                                                                     |
 | [**IsPathLenConstraintPresent**](basicconstraints-ispathlenconstraintpresent.md)<br/> | Solo lectura<br/> | Recupera un valor booleano que indica si la restricción de longitud de ruta de acceso del certificado está presente.<br/>                                                                                                   |
 | [**IsPresent**](basicconstraints-ispresent.md)<br/>                                   | Solo lectura<br/> | Recupera un valor booleano que indica si la extensión de restricciones básicas está presente. Esta es la propiedad predeterminada.<br/>                                                                              |
@@ -59,7 +59,7 @@ El **objeto BasicConstraints** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No **se puede crear el objeto BasicConstraints.**
 
@@ -80,7 +80,7 @@ No **se puede crear el objeto BasicConstraints.**
 
 <dl> <dt>
 
-[Objetos de criptografía](cryptography-objects.md)
+[Objetos criptografía](cryptography-objects.md)
 </dt> </dl>
 
  

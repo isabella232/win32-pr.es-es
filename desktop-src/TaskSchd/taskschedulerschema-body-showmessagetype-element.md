@@ -3,7 +3,7 @@ title: Elemento Body (showMessageType)
 description: Contiene el texto que se mostrará en el cuerpo del cuadro de mensaje.
 ms.assetid: 69ea872a-7ca1-4464-9380-b35f74c9cb8e
 keywords:
-- Cuerpo del elemento Programador de tareas
+- Elemento body Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c6b1fbacd450c05b8ff71521dacfa6e95c7efc70fc7d8909ca66f3390bf22295
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3486601153f8e9dd7dac14f83800dae00a79a9f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374758"
 ---
 # <a name="body-showmessagetype-element"></a>Elemento Body (showMessageType)
 
@@ -42,7 +42,7 @@ El tipo complejo [**showMessageType**](taskschedulerschema-showmessagetype-compl
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de C++, [**vea Propiedad MessageBody de IShowMessageAction.**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_messagebody)
 

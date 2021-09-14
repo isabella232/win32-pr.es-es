@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac93b14cf79aadc6622f00e9d3867d3dfdb50955799f1185db80d2fb1e8b271d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ce3e0a755411228d8a71de1cdc781c360050ee94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119571785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243081"
 ---
 # <a name="stringcollectioncount"></a>StringCollection.count
 
 La **propiedad count** recupera el número de elementos de la colección de cadenas.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player*. *mediaCollection*. **getAttributeStringCollection**( *atributo*, *mediaType*). **count**
 
@@ -33,7 +33,7 @@ La **propiedad count** recupera el número de elementos de la colección de cade
 
 Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
@@ -41,7 +41,7 @@ Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la bi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff79de8bc1740e659b8f0398c0fa84958c1bfcffda505f1a26322da442dcc19b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0fb73cd62c5ab5c343f44f24bbbd8de7f6343a21
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119059573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374734"
 ---
 # <a name="gettstolsconnectivitystatus-method-of-the-win32_terminalservicesetting-class"></a>Método GetTStoLSConnectivityStatus de la clase \_ TerminalServiceSetting de Win32
 
@@ -71,7 +71,7 @@ No se puede determinar el estado de conectividad.
 
 <span id="LS_CONNECTABLE_VALID_WS08R2"></span><span id="ls_connectable_valid_ws08r2"></span>
 
-<span id="LS_CONNECTABLE_VALID_WS08R2"></span><span id="ls_connectable_valid_ws08r2"></span>**LS \_ CONNECTABLE \_ VALID \_ WS08R2** (1)
+<span id="LS_CONNECTABLE_VALID_WS08R2"></span><span id="ls_connectable_valid_ws08r2"></span>**LS \_ \_ \_ WS08R2** VÁLIDO CONECTABLE (1)
 
 
 </dt> <dd>
@@ -87,13 +87,13 @@ Servicios de Escritorio remoto conectarse al servidor de licencias Windows Serve
 
 </dt> <dd>
 
-Servicios de Escritorio remoto puede conectarse al servidor de licencias Windows Server 2008.
+Servicios de Escritorio remoto conectarse al servidor de licencias Windows Server 2008.
 
 </dd> <dt>
 
 <span id="LS_CONNECTABLE_BETA_RTM_MISMATCH"></span><span id="ls_connectable_beta_rtm_mismatch"></span>
 
-<span id="LS_CONNECTABLE_BETA_RTM_MISMATCH"></span><span id="ls_connectable_beta_rtm_mismatch"></span>**LS \_ ERROR DE \_ COINCIDENCIA \_ DE BETA RTM \_ CONECTABLE** (3)
+<span id="LS_CONNECTABLE_BETA_RTM_MISMATCH"></span><span id="ls_connectable_beta_rtm_mismatch"></span>**LS \_ ERROR DE \_ COINCIDENCIA DE RTM DE LA VERSIÓN BETA \_ \_ CONECTABLE** (3)
 
 
 </dt> <dd>
@@ -104,7 +104,7 @@ Servicios de Escritorio remoto puede conectarse al servidor de licencias, pero u
 
 <span id="LS_CONNECTABLE_LOWER_VERSION"></span><span id="ls_connectable_lower_version"></span>
 
-<span id="LS_CONNECTABLE_LOWER_VERSION"></span><span id="ls_connectable_lower_version"></span>**LS \_ VERSIÓN \_ INFERIOR \_ CONECTABLE** (4)
+<span id="LS_CONNECTABLE_LOWER_VERSION"></span><span id="ls_connectable_lower_version"></span>**LS \_ VERSIÓN INFERIOR \_ \_ CONECTABLE** (4)
 
 
 </dt> <dd>
@@ -137,7 +137,7 @@ Servicios de Escritorio remoto puede conectarse al servidor de licencias.
 
 <span id="LS_CONNECTABLE_UNKNOWN_VALIDITY"></span><span id="ls_connectable_unknown_validity"></span>
 
-<span id="LS_CONNECTABLE_UNKNOWN_VALIDITY"></span><span id="ls_connectable_unknown_validity"></span>**LS \_ VALIDEZ \_ DESCONOCIDA \_ CONECTABLE** (7)
+<span id="LS_CONNECTABLE_UNKNOWN_VALIDITY"></span><span id="ls_connectable_unknown_validity"></span>**LS \_ VALIDEZ DESCONOCIDA \_ \_ CONECTABLE** (7)
 
 
 </dt> <dd>
@@ -148,7 +148,7 @@ El servidor de licencias se puede conectar a , pero no se puede determinar la va
 
 <span id="LS_CONNECTABLE_BUT_ACCESS_DENIED"></span><span id="ls_connectable_but_access_denied"></span>
 
-<span id="LS_CONNECTABLE_BUT_ACCESS_DENIED"></span><span id="ls_connectable_but_access_denied"></span>**LS \_ CONECTABLE \_ PERO \_ ACCESO \_ DENEGADO** (8)
+<span id="LS_CONNECTABLE_BUT_ACCESS_DENIED"></span><span id="ls_connectable_but_access_denied"></span>**LS \_ ACCESO CONECTABLE \_ \_ PERO \_ DENEGADO** (8)
 
 
 </dt> <dd>
@@ -159,12 +159,12 @@ Servicios de Escritorio remoto puede conectarse al servidor de licencias, pero l
 
 <span id="LS_CONNECTABLE_VALID_WS08R2_VDI"></span><span id="ls_connectable_valid_ws08r2_vdi"></span>
 
-<span id="LS_CONNECTABLE_VALID_WS08R2_VDI"></span><span id="ls_connectable_valid_ws08r2_vdi"></span>**LS \_ CONNECTABLE \_ VALID \_ WS08R2 \_ VDI** (9)
+<span id="LS_CONNECTABLE_VALID_WS08R2_VDI"></span><span id="ls_connectable_valid_ws08r2_vdi"></span>**LS \_ \_ \_ WS08R2 \_ VDI** VÁLIDO CONECTABLE (9)
 
 
 </dt> <dd>
 
-Servicios de Escritorio remoto conectarse al servidor de Windows Server 2008 R2 Infraestructura de escritorio virtual (VDI).
+Servicios de Escritorio remoto conectarse al servidor Windows Server 2008 R2 Infraestructura de escritorio virtual (VDI).
 
 **Windows Server 2008 R2:** Este valor no se admite antes de Windows Server 2012.
 
@@ -172,12 +172,12 @@ Servicios de Escritorio remoto conectarse al servidor de Windows Server 2008 R2 
 
 <span id="LS_CONNECTABLE_FEATURE_NOT_SUPPORTED"></span><span id="ls_connectable_feature_not_supported"></span>
 
-<span id="LS_CONNECTABLE_FEATURE_NOT_SUPPORTED"></span><span id="ls_connectable_feature_not_supported"></span>**LS \_ CARACTERÍSTICA \_ CONECTABLE \_ NO \_ COMPATIBLE** (10)
+<span id="LS_CONNECTABLE_FEATURE_NOT_SUPPORTED"></span><span id="ls_connectable_feature_not_supported"></span>**LS \_ CARACTERÍSTICA \_ CONECTABLE \_ NO \_ ADMITIDA** (10)
 
 
 </dt> <dd>
 
-No se admite la característica.
+No se admite la característica .
 
 **Windows Server 2008 R2 y Windows Server 2008 R2 con SP1:** Este valor no se admite antes de Windows Server 2012.
 
@@ -198,7 +198,7 @@ El servidor de licencias es válido.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -208,7 +208,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 

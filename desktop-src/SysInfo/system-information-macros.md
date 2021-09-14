@@ -1,19 +1,19 @@
 ---
-description: La macro siguiente se usa para recuperar o establecer información del sistema.
+description: La macro siguiente se usa para recuperar o establecer la información del sistema.
 ms.assetid: 1fb6ac67-55bf-48f9-9571-cad14545cdfa
 title: Información del sistema Macros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e773d88e299ec9e8d7faea292097d3018a6e69032c614a014af853efb363c1dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1abb22deff840b9c5591fa469455890751728d12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118884810"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243926"
 ---
 # <a name="system-information-macros"></a>Información del sistema Macros
 
-La macro siguiente se usa para recuperar o establecer información del sistema.
+La macro siguiente se usa para recuperar o establecer la información del sistema.
 
 <dl>
 

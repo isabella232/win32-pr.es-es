@@ -4,16 +4,16 @@ ms.assetid: 0f809c71-a3bd-4c62-8086-9651ea1a3400
 title: Objetos auxiliares
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98464c31548309b50e21b2b8e3e20a867efe7ca647d7a9879efd0ef346e6a147
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac5193003abd10d9fa2c311b250272d9ad5847a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118999485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374394"
 ---
 # <a name="helper-objects"></a>Objetos auxiliares
 
-\[A partir Windows 8 y Windows Server 2012, la interfaz COM del servicio virtual [de](virtual-disk-service-portal.md) disco se reemplaza por [el Windows Storage API de Administración](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[A partir de Windows 8 y Windows Server 2012, la interfaz COM [del](virtual-disk-service-portal.md) servicio virtual de disco se reemplaza [por el Windows Storage API de Administración](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 VDS proporciona dos objetos auxiliares: el objeto de enumeración y el objeto asincrónico. En este tema se describe cada uno de estos objetos y se proporcionan vínculos a ejemplos de cómo funcionan los llamadores con cada uno de ellos.
 
@@ -37,7 +37,7 @@ En la tabla siguiente se enumeran interfaces, enumeraciones y estructuras relaci
 
 Un objeto asincrónico administra las operaciones asincrónicas. Los métodos que inician operaciones asincrónicas devuelven un puntero a una interfaz [**IVdsAsync,**](/windows/desktop/api/Vds/nn-vds-ivdsasync) lo que permite al autor de la llamada cancelar, esperar y consultar el estado de la operación asincrónica.
 
-Las operaciones VDS de ejecución larga tienden a implementarse de forma asincrónica. Los programas de proveedor de software básico y dinámico implementan métodos asincrónicos de forma coherente para las operaciones de volumen, partición y disco. Opcionalmente, los proveedores de hardware implementan métodos asincrónicos de forma asincrónica. Independientemente de cómo implemente el proveedor el método , la operación debe devolver un puntero a una [**interfaz IVdsAsync**](/windows/desktop/api/Vds/nn-vds-ivdsasync) al autor de la llamada. Para obtener un ejemplo de código, vea [Administración de operaciones asincrónicas.](managing-asynchronous-operations.md)
+Las operaciones VDS de ejecución larga tienden a implementarse de forma asincrónica. Los programas de proveedor de software básico y dinámico implementan métodos asincrónicos de forma coherente para las operaciones de volumen, partición y disco. Opcionalmente, los proveedores de hardware implementan métodos asincrónicos de forma asincrónica. Independientemente de cómo implemente el método el proveedor, la operación debe devolver un puntero a una [**interfaz IVdsAsync**](/windows/desktop/api/Vds/nn-vds-ivdsasync) al autor de la llamada. Para obtener un ejemplo de código, vea [Administración de operaciones asincrónicas.](managing-asynchronous-operations.md)
 
 Las operaciones asincrónicas incluyen:
 

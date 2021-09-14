@@ -14,12 +14,12 @@ keywords:
 - enumeraciones, dispositivos portátiles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64f62ecc599e8a9610bf01b5f8a1651b330c9f8ed6abb4197fac89daeb751c4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d44f71fa26f40983424ced70280d9c03e0892a00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118339863"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243267"
 ---
 # <a name="enumerating-devices"></a>Enumeración de dispositivos
 

@@ -5,11 +5,11 @@ ms.assetid: 290052b7-0528-41c5-b6f4-958cc42d502b
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6fa03a0fe0af67df387d9324006ff16734b2dac6
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267292"
 ---
 # <a name="toggle-button"></a>Botón de alternancia
 

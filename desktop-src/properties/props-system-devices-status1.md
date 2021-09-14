@@ -4,12 +4,12 @@ ms.assetid: 53002298-5ef3-4c5d-bd9d-70f8c82789e9
 title: System.Devices.Status1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc6a23ca19a1dac4d82eb31c60b78294e63cf383d49b45511ab9c7d155744a35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aba6dcd4190c262f91947e8dc17e6bf6e63e4ac4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119097094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268044"
 ---
 # <a name="systemdevicesstatus1"></a>System.Devices.Status1
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

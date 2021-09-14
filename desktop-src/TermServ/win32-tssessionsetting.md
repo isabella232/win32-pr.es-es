@@ -35,12 +35,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5139b53917f3d54b95fd153ac39fab176f047ba4bb9ec6df5d1c7c9b6e2d2f49
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e780cdedee0fe447499bed5013dadc2ba9b448b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119769155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243416"
 ---
 # <a name="win32_tssessionsetting-class"></a>Clase \_ TSSessionSetting de Win32
 
@@ -76,7 +76,7 @@ class Win32_TSSessionSetting : Win32_TerminalSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSSessionSetting de Win32** tiene estos tipos de miembros:
 
@@ -328,7 +328,7 @@ Directiva de grupo
 2
 </dt> <dd>
 
-Predeterminado
+Valor predeterminado
 
 </dd> </dl>
 
@@ -379,7 +379,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad DisconnectedSessionLimit** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
+Indica si la propiedad **DisconnectedSessionLimit** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -400,7 +400,7 @@ Directiva de grupo
 2
 </dt> <dd>
 
-Predeterminado
+Valor predeterminado
 
 </dd> </dl>
 
@@ -415,7 +415,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad IdleSessionLimit** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
+Indica si la propiedad **IdleSessionLimit** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -436,7 +436,7 @@ Directiva de grupo
 2
 </dt> <dd>
 
-Predeterminado
+Valor predeterminado
 
 </dd> </dl>
 
@@ -527,7 +527,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -643,11 +643,11 @@ El servidor reemplaza la configuración de la directiva de límites de tiempo de
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Tenga en cuenta que las winstations asociadas a la sesión de consola no pueden tener acceso a los métodos y propiedades de esta clase. Si se intenta hacerlo especificando "Console" como valor de la propiedad TerminalName, los métodos de este objeto **devolverán WBEM \_ E NOT \_ \_ SUPPORTED**. Este código de error también se devolverá si una estación de ventana intenta llamar a métodos de este objeto con el fin de agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
 
-Para conectarse al espacio de nombres \\ "root CIMV2 \\ TerminalServices", el nivel de autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, este sería un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, este sería un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio de nombres \\ "root CIMV2 TerminalServices", el nivel de autenticación \\ debe incluir privacidad de paquetes. Para las llamadas de C/C++, este sería un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. En Visual Basic y llamadas de scripting, este sería un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -658,17 +658,17 @@ Set objServices = GetObject( _
 
 
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
@@ -678,7 +678,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 <dl> <dt>
 
-[**TerminalSetting de Win32 \_**](win32-terminalsetting.md)
+[**Terminal \_ Win32Setting**](win32-terminalsetting.md)
 </dt> <dt>
 
 [**Configuración de CIM \_**](/windows/desktop/CIMWin32Prov/cim-setting)

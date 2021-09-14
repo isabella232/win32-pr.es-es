@@ -1,23 +1,23 @@
 ---
-title: Excepciones de la plataforma de filtrado de Windows para Teredo
-description: Las excepciones que permiten a las aplicaciones recibir tráfico no solicitado a través de Teredo a través de un firewall deben crearse mediante las API de la plataforma de filtrado de Windows.
+title: Windows Filtrado de excepciones de plataforma para Teredo
+description: Las excepciones que permiten a las aplicaciones recibir tráfico no solicitado a través de Teredo a través de un firewall deben crearse mediante Windows API de la plataforma de filtrado.
 ms.assetid: 8e562757-cd31-4c83-bf4a-92c2e0d3f2ed
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 4cd4d84b97afeaf1157eaac3cd9cc5fc3e24aff0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243542"
 ---
-# <a name="windows-filtering-platform-exceptions-for-teredo"></a>Excepciones de la plataforma de filtrado de Windows para Teredo
+# <a name="windows-filtering-platform-exceptions-for-teredo"></a>Windows Filtrado de excepciones de plataforma para Teredo
 
-Las excepciones que permiten a las aplicaciones recibir tráfico no solicitado a través de [Teredo](about-teredo.md) a través de un firewall deben crearse mediante las API de la [plataforma de filtrado de Windows](/windows/desktop/FWP/windows-filtering-platform-start-page) . Esto se logra abriendo las excepciones basadas en la aplicación (aplicación) entrantes y salientes <app name> en el subnivel de Ale de Teredo para el tráfico IPv6. Esto garantiza que solo las aplicaciones con la excepción Teredo puedan usar Teredo. Tenga cuidado en la creación de estas excepciones. El uso de la opción general " \* (todos) podría permitir que los programas no registrados con el subnivel Teredo o el tráfico de túnel pasen el firewall y supongan una amenaza para la seguridad.
+Las excepciones que permiten a las aplicaciones recibir tráfico no solicitado a través de [Teredo](about-teredo.md) a través de un firewall deben crearse mediante Windows api de la plataforma [de](/windows/desktop/FWP/windows-filtering-platform-start-page) filtrado. Para ello, se abren las excepciones entrantes y salientes basadas en la aplicación (Aplicación) en <app name> el subcapa Teredo de ALE para el tráfico IPv6. Esto garantiza que solo las aplicaciones con la excepción Teredo puedan usar Teredo. Se debe tener precaución en la creación de estas excepciones. El uso de la opción general " " (all) podría permitir que los programas no registrados en el tráfico de túnel o subcapa de Teredo pasen el firewall y represente una amenaza \* para la seguridad.
 
-En cualquier caso, se requiere al menos una aplicación bloqueada, pero puede haber cero o más aplicaciones permitidas agregadas por un firewall en función de cuántas aplicaciones deban permitirse.
+En cualquier situación, se requiere al menos una aplicación bloqueada, pero puede haber cero o más aplicaciones permitidas agregadas por un firewall en función de cuántas aplicaciones se deben permitir.
 
-En el siguiente ejemplo se muestra el uso de un bloque allow y uno.
+En el ejemplo siguiente se muestra el uso de un allow y un bloque.
 
 
 ```C++
@@ -169,6 +169,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

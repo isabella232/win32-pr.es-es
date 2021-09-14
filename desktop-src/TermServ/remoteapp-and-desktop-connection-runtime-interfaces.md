@@ -7,12 +7,12 @@ keywords:
 - Servicios de Escritorio remoto Servicios de Escritorio remoto , referencia Conexión de RemoteApp y Escritorio API en tiempo de ejecución
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 974b68a5787a2e2e7fb0ad6e0cd653d4c1c4e583eb22f4475e749b8e03889970
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6b7c3c2fd3841cfe797fc559ba1aa30d3479436
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118605290"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374634"
 ---
 # <a name="remoteapp-and-desktop-connection-runtime-interfaces"></a>Conexión de RemoteApp y Escritorio runtime
 

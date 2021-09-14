@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a61a94f2fcd10234cdb4656882494cf4c8d848d992b783bd56bcfd6e8607e5d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 544a5d260a8c2f58399f57b13a396bf198159dfd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117955533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374819"
 ---
 # <a name="logfilescount-property"></a>Propiedad LogFiles.Count
 
@@ -46,7 +46,7 @@ Número de archivos de registro de la colección.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

@@ -4,12 +4,12 @@ ms.assetid: 1362495b-1abb-41fd-b821-b51d8e32f137
 title: DMO Interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27a5a65ee422a20a4ec94fd9d06a05c5f7c52f86d8c54bdb70fe432b44ed49cd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fa87b2c3cf5bce5b5729249c1223d10a53879d4e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119749125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375250"
 ---
 # <a name="dmo-interfaces"></a>DMO Interfaces
 

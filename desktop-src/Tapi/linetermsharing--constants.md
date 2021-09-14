@@ -4,12 +4,12 @@ ms.assetid: 50a52a50-4d94-4068-9ea4-bea862400036
 title: LINETERMSHARING_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0465899b8875545d70419f0892b57f10b8c1dce16256890f8b384817d6094108
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a2587621b6362195a610339ba5620b32f1d4f761
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117944852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374791"
 ---
 # <a name="linetermsharing_-constants"></a>Constantes LINETERMSHARING \_
 
@@ -47,7 +47,7 @@ El dispositivo terminal se puede usar en varias líneas. El último dispositivo 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
@@ -57,10 +57,10 @@ Estas constantes describen las clases de flujos de control e información que se
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

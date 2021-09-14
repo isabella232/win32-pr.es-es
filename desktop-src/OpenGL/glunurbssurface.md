@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50f56232ac891cbdfba18195741d875ecc5436112772ed4fa665903374e96602
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c784741eded406a49bba90f67544a406ab024a6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119554195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244941"
 ---
 # <a name="glunurbssurface-function"></a>función gluNurbsSurface
 
-La **función gluNurbsSurface** define la forma de una superficie de spline B no uniforme de tipo rational [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
+La **función gluNurbsSurface** define la forma de una superficie B-Spline no uniforme de rational [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -95,7 +95,7 @@ Desplazamiento (como un número de valores de punto de precisión única)  entre
 *t \_ stride* 
 </dt> <dd>
 
-Desplazamiento (en valores de punto de precisión única) entre los  puntos de control sucesivos en la dirección v paramétrica en *ctlarray*.
+Desplazamiento (en valores de punto de precisión única) entre los puntos de control sucesivos en la dirección *v* paramétrica en *ctlarray*.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Tipo de la superficie. El *parámetro* de tipo puede ser cualquiera de los tipos
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use **gluNurbsSurface dentro** de una definición de superficie DE DSLBS para describir la forma de una superficie DE LABS (antes de cualquier recorte). Para marcar el principio de una definición de superficie DE LABS, use la [**función gluBeginSurface.**](glubeginsurface.md) Para marcar el final de una definición de superficie DE LABS, use la [**función gluEndSurface.**](gluendsurface.md) Llame **a gluNurbsSurface solo** dentro de una definición de superficie DE DSLBS.
 
@@ -145,7 +145,7 @@ Un **gluNurbsSurface** con recuento de *sknot \_* en la dirección *u* y *tknot 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

@@ -5,12 +5,12 @@ ms.assetid: 96B6860E-95BC-46D5-A968-98EAA5834A47
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d80ab8bf81fc23f4944311cc35cc3d324fe17748eaa88f4631260096d327d16a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: acfafd56140f6ce705b01c19ce4e2d14a481a81c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119769065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243405"
 ---
 # <a name="win32_tsvirtualip-methods"></a>Métodos \_ TSVirtualIP de Win32
 

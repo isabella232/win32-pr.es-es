@@ -4,8 +4,8 @@ description: La propiedad versionInfo obtiene un valor que especifica la versió
 ms.assetid: e128bec5-1ae9-4710-800e-4f97df362909
 keywords:
 - propiedad versionInfo Reproductor de Windows Media
-- Propiedad versionInfo Reproductor de Windows Media , clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad versionInfo
+- propiedad versionInfo Reproductor de Windows Media clase , AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media propiedad , versionInfo
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fd7491af0fc102f03da9855b78ecef79ac0a09ca9b3ab8b49f9bf6b948f0d86
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2f759c2aedb19e21c4b7d90f3634141e4c37ec8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118841166"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243308"
 ---
 # <a name="axwindowsmediaplayerversioninfo-property"></a>Propiedad AxWindowsMediaPlayer.versionInfo
 

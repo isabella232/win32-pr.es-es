@@ -4,12 +4,12 @@ ms.assetid: c36025c5-a407-4a05-8780-23f8107730df
 title: Proveedor criptográfico base de Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32082fc6cd7ec6d34bd994e3d3122e2b4c06eee290af8074cea0c183e5dd0116
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d53bd4b2f7faf140e57d25b54d3161b47dcaf740
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120100705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244071"
 ---
 # <a name="microsoft-base-cryptographic-provider"></a>Proveedor criptográfico base de Microsoft
 

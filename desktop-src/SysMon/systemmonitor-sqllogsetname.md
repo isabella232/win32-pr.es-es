@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce06e396b6a90a46de88d915a0191258da723bef31dfe82f67a20c9507b2939d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be20ccc561eb3e9292b4a95dcc654ed7bac00ba7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118881312"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243860"
 ---
 # <a name="systemmonitorsqllogsetname-property"></a>Propiedad SystemMonitor::SqlLogSetName
 
 Recupera o establece el nombre descriptivo del conjunto de registros.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -40,7 +40,7 @@ Property SqlLogSetName As String
 
 Nombre descriptivo del conjunto de registros, que corresponde a un único archivo de registro que contiene datos binarios o de texto en la base SQL datos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Antes de Windows Vista:** No se puede modificar esta propiedad si el valor [**de SystemMonitor.DataSourceType**](systemmonitor-datasourcetype.md) está establecido en sysmonSqlLog.
 
@@ -48,7 +48,7 @@ Nombre descriptivo del conjunto de registros, que corresponde a un único archiv
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

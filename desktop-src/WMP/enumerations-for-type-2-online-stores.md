@@ -9,12 +9,12 @@ keywords:
 - enumeraciones, tipo 2 tiendas en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05a203342d675eaac6e0565c9b120ab42f42a29799f9a2a84dc18ac165fc3ae0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3dd9cd733f39cb3c99b09986ea7136e984b3c666
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243237"
 ---
 # <a name="enumerations-for-type-2-online-stores"></a>Enumeraciones para almacenes en línea de tipo 2
 

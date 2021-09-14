@@ -1,6 +1,6 @@
 ---
 title: Funciones glRasterPos
-description: Estas funciones especifican la posición de trama para las operaciones de píxeles.
+description: Estas funciones especifican la posición del trama para las operaciones de píxeles.
 ms.assetid: 2a661893-0818-441d-9399-0103560737c3
 keywords:
 - Funciones OpenGL,glRasterPos
@@ -17,12 +17,12 @@ keywords:
 - pixels,functions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 134db3f2186b6026fb88a23cbbe9cff9a0e84e784164b27a3cf464beeea370bb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c8f2ce2f387e70b3ea7a378b5463a03a88a4d5d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119492565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245001"
 ---
 # <a name="glrasterpos-functions"></a>Funciones glRasterPos
 

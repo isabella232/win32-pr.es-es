@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: b61dd43980049355621c2ee4085634303c55e0f9dac79db839602d07c7d61f94
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51f551a704f3a98b932e646c95810f928e73bac7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119409454"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374899"
 ---
 # <a name="iscrdenrgetusername-method"></a>Método ISCrdEnr::getUserName
 
@@ -86,7 +86,7 @@ Si se produce un error en el método , devuelve un **valor HRESULT** que indica 
 
 Cadena que representa el nombre del usuario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede especificar el nombre del usuario [](../secgloss/s-gly.md) al que se emite la tarjeta inteligente llamando a [**ISCrdEnr::setUserName**](iscrdenr-setusername.md) o [**ISCrdEnr::selectUserName**](iscrdenr-selectusername.md). Una vez especificado un nombre de usuario, su valor se puede recuperar llamando a **getUserName**.
 
@@ -94,7 +94,7 @@ Puede especificar el nombre del usuario [](../secgloss/s-gly.md) al que se emite
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
@@ -103,7 +103,7 @@ Puede especificar el nombre del usuario [](../secgloss/s-gly.md) al que se emite
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

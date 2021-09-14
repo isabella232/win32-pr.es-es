@@ -5,17 +5,17 @@ title: elemento libraryDescription (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6f7fbd9dc23f80affab56396389362de9825b4c3
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885451"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267804"
 ---
 # <a name="librarydescription-element-library-schema"></a>elemento libraryDescription (esquema de biblioteca)
 
 El &lt; elemento libraryDescription &gt; es el contenedor de nivel superior para la definición de la biblioteca. Este elemento es obligatorio.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -68,22 +68,22 @@ El &lt; elemento libraryDescription &gt; es el contenedor de nivel superior para
 
 | Elemento primario | Elementos secundarios                                                                                                          |
 |----------------|-------------------------------------------------------------------------------------------------------------------------|
-|                | [name (Elemento, Esquema de biblioteca)](schema-library-name.md). Obligatorio.                                                     |
+|                | [name (Elemento, Esquema de biblioteca)](schema-library-name.md). Necesario.                                                     |
 |                | [elemento ownerSID (esquema de biblioteca)](schema-library-ownersid.md). Opcional.                                             |
-|                | [elemento version (Esquema de biblioteca)](schema-library-version.md). Opcional.                                               |
+|                | [elemento version (esquema de biblioteca)](schema-library-version.md). Opcional.                                               |
 |                | [Elemento isLibraryPinned (esquema de biblioteca)](schema-library-islibrarypinned.md). Opcional.                               |
 |                | [elemento iconReference (esquema de biblioteca)](schema-library-iconreference.md). Opcional.                                   |
 |                | [elemento propertyStore (esquema de biblioteca)](schema-library-propertystore.md). Opcional.                                   |
 |                | [elemento templateInfo (esquema de biblioteca)](schema-library-templateinfo.md). Opcional.                                     |
-|                | [elemento searchConnectorDescriptionList (esquema de biblioteca)](schema-library-searchconnectordescriptionlist.md). Obligatorio. |
+|                | [elemento searchConnectorDescriptionList (esquema de biblioteca)](schema-library-searchconnectordescriptionlist.md). Necesario. |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cada biblioteca puede contener una o varias ubicaciones que un usuario puede examinar o buscar mediante Windows Explorer. Los conectores de búsqueda definen las ubicaciones mediante [ &lt; elementos searchConnectorDescription &gt; ](schema-library-searchconnectordescription.md) en un elemento contenedor [ &lt; searchConnectorDescriptionList. &gt; ](schema-library-searchconnectordescriptionlist.md)
+Cada biblioteca puede contener una o varias ubicaciones que un usuario puede examinar o buscar mediante Windows Explorer. Los conectores de búsqueda definen las ubicaciones mediante [ &lt; elementos searchConnectorDescription &gt; ](schema-library-searchconnectordescription.md) en un elemento de contenedor [ &lt; searchConnectorDescriptionList. &gt; ](schema-library-searchconnectordescriptionlist.md)
 
 Una biblioteca puede tener un conjunto único de propiedades y las ubicaciones de la biblioteca también pueden tener conjuntos únicos de propiedades. Estas propiedades se definen en elementos [ &lt; de propiedad &gt; ](schema-library-property.md) dentro de un elemento contenedor [ &lt; propertyStore. &gt; ](schema-library-propertystore.md)
 

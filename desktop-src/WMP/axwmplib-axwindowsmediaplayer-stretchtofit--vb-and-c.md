@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3090889207e0631fbc2f35613398b4c979f4c907cfe240e9f0a7374c74b00b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2dd6937ffa556817a80f0b21dfaed6d270c2e351
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118581515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243345"
 ---
 # <a name="axwindowsmediaplayerstretchtofit-property"></a>Propiedad AxWindowsMediaPlayer.stretchToFit
 
 La propiedad stretchToFit obtiene o establece un valor que indica si el vídeo mostrado por el control Reproductor de Windows Media cambia automáticamente de tamaño para ajustarse a la ventana de vídeo, cuando la ventana de vídeo es mayor que las dimensiones de la imagen de vídeo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public Property stretchToFit As System.Boolean
 
 Valor System.Boolean que indica si el vídeo se ajustará para ajustarse a la ventana. El valor predeterminado es false.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando **stretchToFit** se establece en true, el control Reproductor de Windows Media mantiene la relación de aspecto original del vídeo. Si la relación de aspecto del vídeo no coincide con la relación de aspecto de la ventana de vídeo, las áreas de máscara negra pueden aparecer en la parte superior e inferior, o en la izquierda y derecha, de la imagen de vídeo.
 
@@ -58,7 +58,7 @@ Esta propiedad se aplica al control Reproductor de Windows Media solo cuando se 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
@@ -66,7 +66,7 @@ Esta propiedad se aplica al control Reproductor de Windows Media solo cuando se 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

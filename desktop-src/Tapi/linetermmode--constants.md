@@ -1,19 +1,19 @@
 ---
-description: Las constantes de marca de bits LINETERMMODE describen diferentes tipos de eventos en una línea de teléfono que se pueden \_ enrutar a un dispositivo terminal.
+description: Las constantes de marca de bits LINETERMMODE describen diferentes tipos de eventos en una línea telefónica que se pueden \_ enrutar a un dispositivo terminal.
 ms.assetid: 60af1687-8958-4918-be21-a13780c60974
 title: LINETERMMODE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 411c1dd633ff1bef49e08eb127f4145f81f3d6785d07f3566431fe7b5d7e8fee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e689e2e4e432d6cf804e64babd462e749e7e9e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119518815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374794"
 ---
-# <a name="linetermmode_-constants"></a>LineTERMMODE \_ (Constantes)
+# <a name="linetermmode_-constants"></a>Constantes \_ LINETERMMODE
 
-Las constantes de marca de bits **LINETERMMODE \_** describen diferentes tipos de eventos en una línea de teléfono que se pueden enrutar a un dispositivo terminal.
+Las constantes de marca de bits **LINETERMMODE \_** describen diferentes tipos de eventos en una línea telefónica que se pueden enrutar a un dispositivo terminal.
 
 <dl> <dt>
 
@@ -32,7 +32,7 @@ Se trata de eventos de botón que se envían desde el terminal a la línea.
 
 
 
-Se trata de la información de visualización enviada desde la línea al terminal.
+Esta es la información de presentación enviada desde la línea al terminal.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,12 +42,12 @@ Se trata de la información de visualización enviada desde la línea al termina
 
 
 
-Se trata de eventos de conmutador de enlace enviados desde el terminal a la línea.
+Se trata de eventos hookswitch enviados desde el terminal a la línea.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINETERMMODE_LAMPS"></span><span id="linetermmode_lamps"></span>**LINETERMMODE \_ LAMPS**
+<span id="LINETERMMODE_LAMPS"></span><span id="linetermmode_lamps"></span>**BOMBILLAS LINETERMMODE \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -72,7 +72,7 @@ Se trata del flujo multimedia bidireccional asociado a una llamada en la línea 
 
 
 
-Se trata del flujo multimedia unidireccional desde la línea al terminal asociado a una llamada en la línea. Use este valor cuando el enrutamiento de ambos canales unidireccionales de la secuencia multimedia de una llamada se pueda controlar de forma independiente.
+Se trata de la secuencia de medios unidireccional desde la línea hasta el terminal asociado a una llamada en la línea. Use este valor cuando el enrutamiento de ambos canales unidireccionales de la secuencia multimedia de una llamada se pueda controlar de forma independiente.
 
 
 </dt> </dl> </dd> <dt>
@@ -82,7 +82,7 @@ Se trata del flujo multimedia unidireccional desde la línea al terminal asociad
 
 
 
-Se trata del flujo multimedia unidireccional desde el terminal hasta la línea asociada a una llamada en la línea. Use este valor cuando el enrutamiento de ambos canales unidireccionales de la secuencia multimedia de una llamada se pueda controlar de forma independiente.
+Se trata de la secuencia de medios unidireccional desde el terminal hasta la línea asociada a una llamada en la línea. Use este valor cuando el enrutamiento de ambos canales unidireccionales de la secuencia multimedia de una llamada se pueda controlar de forma independiente.
 
 
 </dt> </dl> </dd> <dt>
@@ -92,12 +92,12 @@ Se trata del flujo multimedia unidireccional desde el terminal hasta la línea a
 
 
 
-Se trata de información de control de timbre enviada desde el conmutador al terminal.
+Esta es la información de control de timbre enviada desde el conmutador al terminal.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
@@ -107,10 +107,10 @@ Estas constantes describen las clases de flujos de control e información que se
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

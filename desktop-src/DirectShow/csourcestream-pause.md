@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 454f6e64461c036e9e3d9ef2f13033e5a210d783f3f6b734b7137a99b16402c5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b6f7cd3b38144edebd98ca655b32bf6092f44269
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375255"
 ---
 # <a name="csourcestreampause-method"></a>Método CSourceStream.Pause
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK o E \_ UNEXPECTED.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método CSourceStream::Active**](csourcestream-active.md) llama a este método. Cuando el [**método CSourceStream::ThreadProc**](csourcestream-threadproc.md) recibe esta solicitud, llama al método [**CSourceStream::D oBufferProcessingLoop.**](csourcestream-dobufferprocessingloop.md)
 

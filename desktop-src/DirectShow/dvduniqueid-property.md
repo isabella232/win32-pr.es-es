@@ -4,12 +4,12 @@ ms.assetid: 8ea6dd4d-6998-4212-8874-9c6cd93a1db3
 title: Propiedad DVDUniqueID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 488a3e76c93005a55f58e631f0b166b51f036e63857df3b2e21eed6e093e55b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23138f348ef1ec71f1506c8892532bd42f1c807d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118652908"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375215"
 ---
 # <a name="dvduniqueid-property"></a>Propiedad DVDUniqueID
 

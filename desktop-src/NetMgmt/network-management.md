@@ -6,12 +6,12 @@ keywords:
 - Administración de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82c2c71c802a22d50bc003529576c16f23d4db2e5e6d128ae164421b9554fc44
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e18433f3f9cb76c1e5bcaaef6eaa7623e882201f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119779615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375186"
 ---
 # <a name="network-management"></a>Administración de red
 

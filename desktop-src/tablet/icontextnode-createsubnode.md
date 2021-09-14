@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: c7b4bc39431d6b4608586e60bdeffb7cd6c79bf95f944e436c16a683e24e634d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 02c10cc50b90b96cc1ce4aadfa97f86a6c516ed3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119092316"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267692"
 ---
 # <a name="icontextnodecreatesubnode-method"></a>IContextNode::CreateSubNode (método)
 
@@ -43,7 +43,7 @@ HRESULT CreateSubNode(
 *pNodeType* \[ En\]
 </dt> <dd>
 
-GUID **que** representa el tipo de [**IContextNode que**](icontextnode.md) se creará.
+GUID **que** representa el tipo de [**IContextNode**](icontextnode.md) que se creará.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Puntero al nuevo [**IContextNode**](icontextnode.md).
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *ppContextNodeCreated* cuando ya no necesite usar el nodo de contexto.
@@ -73,11 +73,11 @@ Para obtener una lista de tipos de nodo de contexto, vea [Tipos de nodo de conte
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

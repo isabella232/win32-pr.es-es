@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 4c4dc3861120d56dd5bff13fe1e77fd97e1fc32efed9622f18ee51b5160d1c35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f6b35a2cfa2de459bb5e7acfcb9853e83ae0a55
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119417645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244371"
 ---
 # <a name="ibytebuffercopyto-method"></a>IByteBuffer::CopyTo (método)
 
@@ -65,7 +65,7 @@ Puntero a la ubicación donde este método escribe el número real de bytes leí
 
 </dd> <dt>
 
-*cribiendo* \[ out\]
+*yescribe* \[ out\]
 </dt> <dd>
 
 Puntero a la ubicación donde este método escribe el número real de bytes escritos en el destino. Puede establecer este puntero en **NULL** para indicar que no está interesado en este valor. En este caso, este método no proporciona el número real de bytes escritos.
@@ -90,7 +90,7 @@ Este método copia los bytes especificados de una secuencia a otra. También se 
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardssp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IByteBuffer se define como E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |

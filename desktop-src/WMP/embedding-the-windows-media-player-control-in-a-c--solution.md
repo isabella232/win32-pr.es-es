@@ -4,29 +4,29 @@ description: Inserción del control Reproductor de Windows Media en una solució
 ms.assetid: 0889cfd8-ed1f-4d0c-aff8-bff2f55ffccb
 keywords:
 - Reproductor de Windows Media, insertar ActiveX control
-- Reproductor de Windows Media de objetos, insertar ActiveX control
+- Reproductor de Windows Media modelo de objetos, insertar ActiveX control
 - object model,embedding ActiveX control
 - Reproductor de Windows Media Mobile,embedding ActiveX control
 - Reproductor de Windows Media ActiveX control, inserción
-- Reproductor de Windows Media Control de ActiveX móviles, inserción
+- Reproductor de Windows Media Control de ActiveX móvil, inserción
 - ActiveX control, inserción
 - Reproductor de Windows Media,C
 - Reproductor de Windows Media modelo de objetos, C
 - object model,C
 - Reproductor de Windows Media Mobile,C
 - Reproductor de Windows Media ActiveX control, C
-- Reproductor de Windows Media Control de ActiveX móvil, C
+- Reproductor de Windows Media Control ActiveX móvil, C
 - ActiveX control, C
 - embedding,C programs
 - Inserción de programas de C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a067a407fccdd78d71d9e60bc00d1eae6950e3fdaf204f886c5e96edf372eb07
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0c950bed9812cea0aa6ce28995fd6998bb8417ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119901985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374307"
 ---
 # <a name="embedding-the-windows-media-player-control-in-a-c-solution"></a>Inserción del control Reproductor de Windows Media en una solución de C#
 
@@ -36,9 +36,9 @@ En las secciones siguientes se describe cómo crear una aplicación que reproduc
 
 ## <a name="add-the-video-window"></a>Agregar la ventana de vídeo
 
-Agregue el Reproductor de Windows Media ActiveX control a un formulario. Cambie el tamaño del control y colómelo donde quiera que aparezca la ventana de vídeo.
+Agregue el control Reproductor de Windows Media ActiveX a un formulario. Cambie el tamaño del control y colómelo donde quiera que aparezca la ventana de vídeo.
 
-Seleccione el Reproductor de Windows Media y, a continuación, cambie la **propiedad uiMode** a "none". Esta configuración oculta los controles de interfaz de usuario. Cuando el usuario reproduce un vídeo, aparecerá en la ventana. Para el contenido de solo audio, aparecerá una visualización.
+Seleccione el Reproductor de Windows Media y cambie la propiedad **uiMode** a "none". Esta configuración oculta los controles de interfaz de usuario. Cuando el usuario reproduce un vídeo, aparecerá en la ventana. Para el contenido de solo audio, aparecerá una visualización.
 
 ## <a name="add-two-buttons-and-adjust-the-form"></a>Agregar dos botones y ajustar el formulario
 

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: b56ae58db754de7b7182bc11bded164da525d649d77d98656adebabfa9922f96
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b54c2193ec17bca9f9b3ba00b2c2bc133707dbb2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244335"
 ---
 # <a name="iscardfileaccesssetproperties-method"></a>Método ISCardFileAccess::SetProperties
 
@@ -103,7 +103,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una lista de todos los métodos definidos por esta interfaz, vea [**ISCardFileAccess.**](iscardfileaccess.md)
 

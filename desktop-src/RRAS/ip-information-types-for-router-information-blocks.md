@@ -4,12 +4,12 @@ description: Obtenga información sobre los tipos de información de IP enumerad
 ms.assetid: 911c61d4-e500-48c6-8861-39dbc09ab4e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93a94829c116ac2dece2a9076d2b3cf37b42d60874bcc063a6f43811ee61b82b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a49abdb139eaa94440e380ce710280d744bd6ac5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117790989"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244755"
 ---
 # <a name="ip-information-types-for-router-information-blocks"></a>Tipos de información de IP para bloques de información de enrutador
 

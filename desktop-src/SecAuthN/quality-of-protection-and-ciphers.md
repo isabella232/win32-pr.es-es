@@ -4,12 +4,12 @@ ms.assetid: d3788465-3e9f-4346-9e67-9626b48249b7
 title: Calidad de protección y cifrado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c20643301dba767ae6decae0c0fb38b2c9923cb220cb66c3c564515c5ce6d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 679c2fd727565d6475cc96558e33b88d88dfda8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118920504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374986"
 ---
 # <a name="quality-of-protection-and-ciphers"></a>Calidad de protección y cifrado
 

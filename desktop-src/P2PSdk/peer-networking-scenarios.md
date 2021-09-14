@@ -4,12 +4,12 @@ ms.assetid: b0e647d3-4562-46db-b676-0f7a0d9bb594
 title: Escenarios de redes del mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ff9362502f6a2b0df8b04e7d0d929aeb22c7872e6b661b91dbc1ed279df2889
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e883d2704f6f1e8d6a33b24e4a23491329e45d5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119775785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244814"
 ---
 # <a name="peer-networking-scenarios"></a>Escenarios de redes del mismo nivel
 

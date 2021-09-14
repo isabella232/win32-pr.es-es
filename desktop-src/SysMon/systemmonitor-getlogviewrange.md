@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3233dd57327734669631fc57b31bfb85578621991f34c1b1c414a69697b82048
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d494a5861ff9c0d2c076abe2bdad749d21653500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118882431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374835"
 ---
 # <a name="systemmonitorgetlogviewrange-method"></a>Método SystemMonitor.GetLogViewRange
 
@@ -61,7 +61,7 @@ Fecha de finalización utilizada para recuperar valores de contador de los archi
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 SYSMON recupera los valores de contador de los archivos de registro que se encuentran dentro de las fechas de inicio y de detenerse, ambos incluidos.
 
@@ -71,7 +71,7 @@ El uso de este método es igual que el acceso a [**las propiedades SystemMonitor
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
@@ -79,7 +79,7 @@ El uso de este método es igual que el acceso a [**las propiedades SystemMonitor
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

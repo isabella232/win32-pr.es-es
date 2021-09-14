@@ -6,12 +6,12 @@ keywords:
 - storyboards Windows Animation ,scheduling
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 013adc114fd09f518c34bc15ca2e7799381b6cee3dfeeedaf3b26fcae6d506e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3feae253804d20711c9bbd8ed50895f43272a3f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120008175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243386"
 ---
 # <a name="schedule-a-storyboard"></a>Programar un guión gráfico
 
@@ -21,7 +21,7 @@ Una vez creado un guión gráfico, lo programa el administrador de animaciones.
 
 De forma predeterminada, cada guión gráfico se inicia inmediatamente cuando se programa. Esto significa que cuando un guión gráfico empieza a animar una o varias variables, puede interrumpir cualquier otro guión gráfico que anima esas mismas variables. Sin embargo, una aplicación puede especificar otros comportamientos mediante la determinación de la prioridad relativa entre guiones gráficos.
 
-Una vez programado un guión gráfico, ya no se puede modificar. Sin embargo, una vez que se ha quitado un guión gráfico de la programación, se puede volver a programar para su reproducción. Los desarrolladores deben tener cuidado al volver a usar guiones gráficos, ya que esto solo debe hacerse cuando no hay ninguna posibilidad de que el mismo guión gráfico tenga que ponerse en cola debido a una acción del usuario cuando ya se está reproduciendo o en cola en la programación.
+Una vez programado un guión gráfico, ya no se puede modificar. Sin embargo, una vez que se ha quitado un guión gráfico de la programación, se puede volver a programar para su reproducción. Los desarrolladores deben tener precaución al volver a usar guiones gráficos, ya que esto solo debe hacerse cuando no hay ninguna posibilidad de que el mismo guión gráfico tenga que ponerse en cola debido a una acción del usuario cuando ya se está reproduciendo o en cola en la programación.
 
 ## <a name="example-code"></a>Código de ejemplo
 

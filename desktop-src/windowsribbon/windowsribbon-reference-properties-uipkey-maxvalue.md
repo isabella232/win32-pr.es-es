@@ -4,12 +4,12 @@ description: Identifica la propiedad \_ MaxValue de PKEY \_ de la interfaz de us
 ms.assetid: f05436ed-b8bd-4374-af12-d9b114d98f6c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6057c334c114cc292c67bade0254b095195cca9f29d492385eb1663f13dc0ff9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46558e0b36c0be8b13889f8771e4505e7dc05701
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118031464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267231"
 ---
 # <a name="ui_pkey_maxvalue"></a>UI \_ PKEY \_ MaxValue
 
@@ -25,7 +25,7 @@ propertyDescription
       type = VT_DECIMAL
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación usa ui PKEY MaxValue para consultar \_ el valor máximo del control \_ [Spinner.](windowsribbon-controls-spinner.md)
 

@@ -4,12 +4,12 @@ ms.assetid: 70b47e29-c755-4c59-a493-d7fcbbc94b83
 title: Personalización de Winlogon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a10b2ae1e029bb741a2402a25d8e51f331fdd1cac1e9918dfef3b35b36c8e6d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b64da4baae9b52dd53e288c631f35d33ea5a3085
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008663"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244377"
 ---
 # <a name="customizing-winlogon"></a>Personalización de Winlogon
 
@@ -41,7 +41,7 @@ Un [*código auxiliar de GINA*](/windows/desktop/SecGloss/g-gly) es un archivo D
 
  
 
-Una función de código auxiliar de GINA puede implementar funcionalidades adicionales en una o varias de sus funciones de exportación. Por ejemplo, la función [**WlxLoggedOutSAS**](/windows/desktop/api/Winwlx/nf-winwlx-wlxloggedoutsas) de un código auxiliar de GINA podría comprobar la hora actual antes de llamar a la función **WlxLoggedOutSAS** del MsGina.dll. Si la hora actual estaba dentro de un intervalo específico, la función de código auxiliar podría mostrar un mensaje que indica que el inicio de sesión no está permitido durante ese período de tiempo y devolver **WLX \_ SAS ACTION \_ \_ NONE** a Winlogon. La **función WlxLoggedOutSAS** del MsGina.dll se llamaría solo durante el período de tiempo permitido.
+Una función de código auxiliar de GINA puede implementar funcionalidades adicionales en una o varias de sus funciones de exportación. Por ejemplo, la función [**WlxLoggedOutSAS**](/windows/desktop/api/Winwlx/nf-winwlx-wlxloggedoutsas) de un código auxiliar de GINA podría comprobar la hora actual antes de llamar a la función **WlxLoggedOutSAS** del MsGina.dll. Si la hora actual estaba dentro de un intervalo específico, la función de código auxiliar podría mostrar un mensaje que indica que el inicio de sesión no está permitido durante ese período de tiempo y devolver **WLX \_ SAS ACTION \_ \_ NONE** a Winlogon. La **función WlxLoggedOutSAS** del MsGina.dll llamaría solo durante el período de tiempo permitido.
 
 La aplicación de código auxiliar GINA obtiene una tabla de distribución para las funciones de compatibilidad de Winlogon a través del *parámetro pWinlogonFunctions* de la [**función WlxInitialize.**](/windows/desktop/api/Winwlx/nf-winwlx-wlxinitialize) La aplicación de código auxiliar GINA puede usar esta tabla de distribución para llamar a las funciones de soporte técnico de Winlogon. Por ejemplo, una aplicación de código auxiliar GINA puede llamar [*a*](/windows/desktop/SecGloss/s-gly) la función [**WlxSasNotify**](/windows/win32/api/winwlx/nc-winwlx-pwlx_sas_notify) para provocar un evento de secuencia de atención segura (SAS) cuando se inserta una tarjeta inteligente en un [*lector.*](/windows/desktop/SecGloss/r-gly) [](/windows/desktop/SecGloss/s-gly)
 

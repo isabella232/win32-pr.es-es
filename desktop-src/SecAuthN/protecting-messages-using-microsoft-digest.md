@@ -4,12 +4,12 @@ ms.assetid: 15509d51-80c0-4d5c-aa24-4dc17de3f12c
 title: Protección de mensajes mediante Microsoft Digest
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dab0add351287b6c90cfe0781151c0378da56f309214b03ed12d1325a6e55d88
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 573eafcf66e23188546abd3acd316095ec100187
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118920744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374994"
 ---
 # <a name="protecting-messages-using-microsoft-digest"></a>Protección de mensajes mediante Microsoft Digest
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 687738cce6bb311d7e8223877b716abdaef180340ab570f430659ee2e98458ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36e35a6ea905f20e1cb30eddc5b270786614403b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119519445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244929"
 ---
 # <a name="glupartialdisk-function"></a>Función gluPartialDisk
 
@@ -99,21 +99,21 @@ Número de anillos concéntricas sobre el origen en el que se subdivide el disco
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluPartialDisk** representa un disco parcial en el *plano z* = 0. Un disco parcial es similar a un disco completo, salvo que solo se incluye el subconjunto del disco desde *startAngle* hasta *startAngle* sweepAngle (donde 0 grados está a lo largo del eje Y positivo, 90 grados a lo largo del eje X positivo, 180 grados a lo largo del eje y negativo y  +   270 grados a lo largo del eje X negativo).
 
-El disco parcial tiene un radio de *outerRadius* y contiene un hueco circular concéntrica con un radio *de innerRadius*. Si *innerRadius* es cero, no se genera ningún hueco. El disco parcial se subdivide alrededor del eje Z en segmentos (como los segmentos de pizza) y también sobre el eje Z en anillos (tal y como especifican los *segmentos* y *bucles*, respectivamente).
+El disco parcial tiene un radio de *outerRadius* y contiene un hueco circular concéntrica con un radio *de innerRadius*. Si *innerRadius* es cero, no se genera ningún hueco. El disco parcial se subdivide alrededor del eje Z en segmentos (como los segmentos de pizza) y también sobre el eje Z en anillos (como se especifica en *segmentos* y *bucles,* respectivamente).
 
-Con respecto a la orientación, se considera que el lado z positivo del disco parcial está fuera (vea [**gluQuadricOrientation).**](gluquadricorientation.md) Esto significa que si la orientación se establece en GLU OUTSIDE, cualquier punto normal generado a lo \_ largo del eje Z positivo.
+Con respecto a la orientación, se considera que el lado z positivo del disco parcial está fuera (vea [**gluQuadricOrientation**](gluquadricorientation.md)). Esto significa que si la orientación se establece en GLU OUTSIDE, cualquier punto normal generado a lo \_ largo del eje Z positivo.
 
-Si ha activado el texturing (con [**gluQuadricTexture),**](gluquadrictexture.md) **gluPartialDisk** genera coordenadas de textura linealmente de forma que donde *r* outerRadius , el valor en  =  (*r*, 0, 0) es (1, 0,5); en (0, *r*, 0) es (0,5, 1); en (*r*, 0, 0) es (0, 0,5); y en (0, *r*, 0) es (0,5, 0).
+Si ha activado el texturing (con [**gluQuadricTexture),**](gluquadrictexture.md) **gluPartialDisk** genera coordenadas de textura linealmente de forma que, donde *r* outerRadius , el valor en  =  (*r*, 0, 0) es (1, 0,5); en (0, *r*, 0) es (0,5, 1); en (*r*, 0, 0) es (0, 0,5); y en (0, *r*, 0) es (0,5, 0).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

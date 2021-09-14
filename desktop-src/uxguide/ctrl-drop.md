@@ -5,13 +5,13 @@ ms.assetid: dbe88cf1-7946-4343-bc16-ce12be7ce205
 ms.topic: article
 ms.date: 10/20/2020
 ms.openlocfilehash: 79a50f4033223030fd135bb0fcfa247e07f0693d
-ms.sourcegitcommit: 0ab75073bbeec7ca2899f8051626a8b772073f82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122401008"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267527"
 ---
-# <a name="drop-down-lists--combo-boxes"></a>Lista desplegable Enumera & combinados
+# <a name="drop-down-lists--combo-boxes"></a>Listas desplegables de & combinados
 
 > [!NOTE]
 > Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
@@ -51,7 +51,7 @@ Para decidirte, intenta responder a estas preguntas:
 
     En este ejemplo, la calidad de color más alta es la mejor opción para la mayoría de los usuarios, por lo que una lista desplegable es una buena opción para bajar las alternativas.
 
--   **¿Desea llamar la atención sobre la opción?** Si es así, considere la posibilidad de usar botones de radio, una lista de selección única o un cuadro de lista editable, que tienden a llamar más la atención al tomar más espacio en la pantalla. Dado que las listas desplegables son compactas, son buenas opciones para las opciones que desea reducir el tamaño.
+-   **¿Desea llamar la atención sobre la opción?** Si es así, considere los botones de radio, una lista de selección única o un cuadro de lista editable, que tienden a llamar más la atención al tomar más espacio en la pantalla. Dado que las listas desplegables son compactas, son buenas opciones para las opciones que desea reducir el tamaño.
 -   **¿El espacio de pantalla es premium?** Si es así, use una lista desplegable porque el espacio de pantalla utilizado es fijo e independiente del número de opciones.
 -   **¿Hay otras listas desplegables en la ventana?** Si es así, considere la posibilidad de usar una lista desplegable para mantener la coherencia.
 
@@ -61,9 +61,9 @@ Además de los principios que se proporcionan para las listas desplegables, tamb
 
 -   **¿Están restringidas las posibles opciones?** Si es así, use una lista desplegable normal en su lugar. Los cuadros combinados son para la entrada sin restricciones, en la que es posible que los usuarios deban escribir un valor que no esté actualmente en la lista. Dado que la entrada no está entrenada, si los usuarios escriben texto que no es válido, debe controlar el error con un mensaje de error.
 -   **¿Puede enumerar las opciones más probables de antemano?** Si no es así, use un cuadro de texto en su lugar.
--   **¿Se usa la lista desplegable para enumerar la entrada de usuario anterior?** A menos que los usuarios necesiten revisar la lista completa de la entrada anterior, use un cuadro de texto con la opción autocompletar en su lugar.
+-   **¿Se usa la lista desplegable para enumerar la entrada del usuario anterior?** A menos que los usuarios necesiten revisar la lista completa de la entrada anterior, use un cuadro de texto con la opción autocompletar en su lugar.
 
-    ![captura de pantalla del cuadro de diálogo ejecutar con lista desplegable ](images/ctrl-drop-image3.png)
+    ![captura de pantalla del cuadro de diálogo ejecutar con la lista desplegable ](images/ctrl-drop-image3.png)
 
     En este ejemplo, es posible que los usuarios deban revisar su entrada anterior, por lo que una lista desplegable editable es una buena opción.
 
@@ -111,7 +111,7 @@ Las listas desplegables y los cuadros combinados tienen varios patrones de uso:
 
 ### <a name="general"></a>General
 
--   **No use el cambio de una lista desplegable o** un cuadro combinado a :
+-   **No use el cambio de una lista desplegable** o un cuadro combinado a :
     -   Realice comandos.
     -   Mostrar otras ventanas, como un cuadro de diálogo para recopilar más entradas.
     -   Mostrar dinámicamente otros controles relacionados con el control seleccionado[(los](inter-accessibility.md) lectores de pantalla no pueden detectar tales eventos).
@@ -132,7 +132,7 @@ Las listas desplegables y los cuadros combinados tienen varios patrones de uso:
 
     En este ejemplo, los elementos de lista se ordenan en orden alfabético, excepto la opción que representa todos los elementos.
 
--   **Coloque las opciones que representan Todos o Ninguno al principio de la lista, independientemente del criterio de ordenación de los elementos restantes.**
+-   **Coloque las opciones que representan All o None al principio de la lista, independientemente del criterio de ordenación de los elementos restantes.**
 -   **Incluya las meta-opciones entre paréntesis.**
 
     ![Captura de pantalla que muestra una lista desplegable con la opción "(None)" seleccionada.](images/ctrl-drop-image15.png)
@@ -154,7 +154,7 @@ Las listas desplegables y los cuadros combinados tienen varios patrones de uso:
 
 ### <a name="preview-drop-down-lists"></a>Listas desplegables de vista previa
 
--   **Use vistas previas en los elementos de lista cuando sea mejor mostrar con imágenes que describir el uso de texto por sí solo.**
+-   **Use vistas previas en los elementos de lista cuando sea mejor mostrar con imágenes que describir el uso de texto solo.**
 
     ![captura de pantalla de la lista desplegable de fuentes vista previa ](images/ctrl-drop-image18.png)
 
@@ -230,7 +230,7 @@ Tamaño y espaciado recomendados para listas desplegables y cuadros combinados.
 -   Use [mayúsculas de estilo oración.](glossary.md)
 -   Coloque la etiqueta a la izquierda del control o encima del control y alinee la etiqueta con el borde izquierdo del control. Si label está a la izquierda, alinee verticalmente el texto de la etiqueta con el texto del control.
 
-    **Correcto:** ![ captura de pantalla de alineación de etiquetas de lista desplegable ](images/ctrl-drop-image23.png)
+    **Correcto:** ![ captura de pantalla de la alineación de la etiqueta de lista desplegable ](images/ctrl-drop-image23.png)
 
     En este ejemplo, la etiqueta se alinea correctamente con el texto del control.
 
@@ -239,20 +239,20 @@ Tamaño y espaciado recomendados para listas desplegables y cuadros combinados.
     En este ejemplo, la etiqueta está alineada incorrectamente con el texto del control.
 
 -   Puede especificar unidades (segundos, conexiones, entre paréntesis) después de la etiqueta.
--   No haga que el contenido de la lista desplegable o el cuadro combinado (o su etiqueta de unidades) sea parte de una oración, porque esto no es localizable.
+-   No haga que el contenido de la lista desplegable o el cuadro combinado (o su etiqueta de unidades) forma parte de una oración, porque esto no es localizable.
 
 **Texto de la opción**
 
 -   Asigne un nombre único a cada opción.
--   Use [mayúsculas de estilo oración,](glossary.md)a menos que un elemento sea un nombre adecuado.
+-   Use [mayúsculas y mayúsculas de estilo](glossary.md)oración, a menos que un elemento sea un nombre adecuado.
 -   Escriba la etiqueta como una palabra o frase, no como una frase, y no use ningún signo de puntuación final.
 -   Use expresiones paralelas e intente mantener la longitud aproximadamente igual para todas las opciones.
 
 **Texto informativo**
 
--   Si necesita agregar texto informativo sobre una lista desplegable o un cuadro combinado, agrégrelo encima de la etiqueta. Use oraciones completas con puntuación final.
--   Use [mayúsculas de estilo oración.](glossary.md)
--   La información adicional que resulta útil, pero no necesaria, debe mantenerse corta. Coloque esta información entre paréntesis entre la etiqueta y los dos puntos, o sin paréntesis debajo del control .
+-   Si necesita agregar texto informativo sobre una lista desplegable o un cuadro combinado, agrégrelo encima de la etiqueta. Use oraciones completas con signos de puntuación finales.
+-   Use [el uso de mayúsculas y mayúsculas de estilo oración.](glossary.md)
+-   La información adicional que es útil, pero no necesaria, debe mantenerse corta. Coloque esta información entre paréntesis entre la etiqueta y los dos puntos, o sin paréntesis debajo del control .
 
     ![captura de pantalla de la lista desplegable con datos agregados ](images/ctrl-drop-image25.png)
 
@@ -262,18 +262,18 @@ Tamaño y espaciado recomendados para listas desplegables y cuadros combinados.
 
 Al hacer referencia a listas desplegables:
 
--   Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado o dos puntos de la clave de acceso; incluir lista o cuadro, lo que sea más claro.
--   Para las opciones de lista, use el texto exacto de la opción, incluida su mayúscula.
+-   Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado ni los dos puntos de la clave de acceso. incluir lista o cuadro, lo que sea más claro.
+-   Para las opciones de lista, use el texto exacto de la opción, incluida su inclusión en mayúsculas.
 -   En programación y otra documentación técnica, consulte listas desplegables como listas desplegables. En cualquier otro lugar, use list o box, lo que sea más claro.
 -   Para describir la interacción del usuario, use click.
 -   Cuando sea posible, formatee las opciones de etiqueta y lista mediante texto en negrita. De lo contrario, coloque la etiqueta y las opciones entre comillas solo si es necesario para evitar confusiones.
 
-Ejemplo: en la **lista Tamaño de** fuente , haga clic en Fuentes **grandes.**
+Ejemplo: en la **lista Tamaño de** fuente , haga clic en Fuentes **grandes**.
 
 Al hacer referencia a cuadros combinados:
 
--   Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado o dos puntos de la clave de acceso; incluir el cuadro de palabras.
--   Para las opciones de lista, use el texto exacto de la opción, incluida su mayúscula.
+-   Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado ni los dos puntos de la clave de acceso. incluya el cuadro de palabras.
+-   Para las opciones de lista, use el texto exacto de la opción, incluido su uso de mayúsculas y mayúsculas.
 -   En programación y otra documentación técnica, consulte cuadros combinados como cuadros combinados. En cualquier otro lugar, use box.
 -   Para describir la interacción del usuario, use Entrar.
 -   Cuando sea posible, formatee las opciones de etiqueta y lista mediante texto en negrita. De lo contrario, coloque la etiqueta y las opciones entre comillas solo si es necesario para evitar confusiones.

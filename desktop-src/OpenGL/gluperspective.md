@@ -3,7 +3,7 @@ title: Función gluPerspective (Glu.h)
 description: La función gluPerspective configura una matriz de proyección de perspectiva.
 ms.assetid: 125e2828-a2d7-4c6c-9370-eb21a581ced8
 keywords:
-- función gluPerspective OpenGL
+- Función gluPerspective OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 973040fc9d9f23e6cfba5e30ceea89a1c13cfbaab0071cc7905080cfcdf60f12
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf30fc7dc4c6ba5a56efd3def6a5a7178f81ed49
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244934"
 ---
 # <a name="gluperspective-function"></a>función gluPerspective
 
@@ -46,14 +46,14 @@ void WINAPI gluPerspective(
 *fovy* 
 </dt> <dd>
 
-El campo de ángulo de vista, en grados, en la dirección Y.
+Campo de ángulo de vista, en grados, en la dirección y.
 
 </dd> <dt>
 
 *aspect* 
 </dt> <dd>
 
-Relación de aspecto que determina el campo de vista en la dirección X. La relación de aspecto es la proporción *de x* (ancho) a *y* (alto).
+Relación de aspecto que determina el campo de vista en la dirección X. La relación de aspecto es la proporción de *x* (ancho) a *y* (alto).
 
 </dd> <dt>
 
@@ -75,11 +75,11 @@ Distancia desde el visor hasta el plano de recorte lejano (siempre positivo).
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluPerspective** especifica un frustum de visualización en el sistema de coordenadas mundial. En general, la relación de aspecto de **gluPerspective** debe coincidir con la relación de aspecto de la ventanilla asociada. Por ejemplo, *aspect* = 2.0 significa que el ángulo de vista del visor es el doble de ancho en *x* que en *y*. Si la ventanilla tiene el doble de ancho que la alta, muestra la imagen sin distorsión.
 
-La matriz generada por **gluPerspective** se multiplica por la matriz actual, igual que si se llamara [**a glMultMatrix**](glmultmatrix.md) con la matriz generada. Para cargar la matriz de perspectiva en la pila de matriz actual en su lugar, anteponga la llamada a **gluPerspective** con una llamada a [**glLoadIdentity**](glloadidentity.md).
+La matriz generada **por gluPerspective** se multiplica por la matriz actual, como si se llamara [**a glMultMatrix**](glmultmatrix.md) con la matriz generada. Para cargar la matriz de perspectiva en la pila de matriz actual en su lugar, anteponga la llamada a **gluPerspective** con una llamada a [**glLoadIdentity**](glloadidentity.md).
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,12 +4,12 @@ description: Crear nuevos objetos accesibles
 ms.assetid: d34a52d1-1eb2-4bb4-989c-a1ca4b5d815f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eaaa9ee8669199a9f4de938b4e1cb9e6dd24336bd86527a2cc528709e303543e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5efa85e44d6d51105e6363d276ecb7e5f33d8378
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174925"
 ---
 # <a name="create-new-accessible-objects"></a>Crear nuevos objetos accesibles
 
@@ -17,7 +17,7 @@ En este escenario, el servidor crea un nuevo objeto accesible en respuesta a cad
 
 En el código de ejemplo siguiente, se recupera un puntero al control de los datos de ventana adicionales. Este y el identificador de ventana se pasan al constructor del objeto de servidor de accesibilidad personalizado (AccServer). Este objeto se crea cada vez [**que se recibe OBJID \_ CLIENT.**](object-identifiers.md)
 
-Cuando se crea el objeto, el servidor obtiene una referencia, que se debe liberar después de llamar a [**LresultFromObject**](/windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject), para que el objeto se destruya en cuanto el cliente termine con él. Tenga en **cuenta que LresultFromObject** incrementa el recuento de referencias varias veces, pero es responsabilidad de las aplicaciones cliente y del entorno Microsoft Active Accessibility runtime liberar estas referencias.
+Cuando se crea el objeto, el servidor obtiene una referencia, que se debe liberar después de llamar a [**LresultFromObject**](/windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject), para que el objeto se destruya en cuanto el cliente termine con él. Tenga en **cuenta que LresultFromObject** incrementa el recuento de referencias varias veces, pero es responsabilidad de las aplicaciones cliente y del entorno de ejecución Microsoft Active Accessibility liberar estas referencias.
 
 
 ```C++

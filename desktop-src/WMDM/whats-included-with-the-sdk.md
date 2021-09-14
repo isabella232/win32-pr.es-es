@@ -6,15 +6,15 @@ keywords:
 - Windows Media Administrador de dispositivos,software development kit (SDK)
 - Administrador de dispositivos,software development kit (SDK)
 - Windows SDK de Administrador de dispositivos multimedia
-- Administrador de dispositivos SDK
+- ADMINISTRADOR DE DISPOSITIVOS SDK
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36e621ac4de7fee296bf9d2c3ffb4e1d357824510b37a6ded73efd66b91f38d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8ac1698336e1cf3966e3ab69ad3ae7c46f95e469
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120004905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374330"
 ---
 # <a name="whats-included-with-the-sdk"></a>Qué se incluye con el SDK
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5edf1b0fb2dbda1ef1e0a2c4b9ab67b8e7e6305998a8f5a6de9c461e4e148bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd1174dd933d46813a89c35b781d0408c3ac5476
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118615422"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375106"
 ---
 # <a name="glpassthrough-function"></a>Función glPassThrough
 
@@ -49,7 +49,7 @@ Valor de marcador que se va a colocar en el búfer de comentarios. Se indica con
 
 | Value                                                                                                                                                                                   | Significado                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_PASS_THROUGH_TOKEN"></span><span id="gl_pass_through_token"></span><dl> <dt>**TOKEN \_ DE PASO A TRAVÉS DE \_ \_ GL**</dt> </dl> | Se mantiene el **orden de los comandos glPassThrough** con respecto a la especificación de primitivas de gráficos.<br/> |
+| <span id="GL_PASS_THROUGH_TOKEN"></span><span id="gl_pass_through_token"></span><dl> <dt>**TOKEN \_ DE PASO A TRAVÉS DE \_ \_ GL**</dt> </dl> | Se mantiene el **orden de los comandos glPassThrough** con respecto a la especificación de primitivas gráficas.<br/> |
 
 
 
@@ -75,9 +75,9 @@ La función [**glGetError**](glgeterror.md) puede recuperar el código de error 
 
 ## <a name="remarks"></a>Observaciones
 
-Comentarios es un modo de representación OpenGL seleccionado mediante una llamada [**a glRenderMode**](glrendermode.md) con GL \_ FEEDBACK. Cuando OpenGL está en modo de comentarios, la rasterización no genera píxeles. En su lugar, OpenGL vuelve a proporcionar información sobre los primitivos que se hubieran rasterizado a la aplicación. Consulte [**glFeedbackBuffer para**](glfeedbackbuffer.md) obtener una descripción del búfer de comentarios y los valores que incluye.
+Feedback es un modo de representación OpenGL seleccionado mediante una [**llamada a glRenderMode**](glrendermode.md) con GL \_ FEEDBACK. Cuando OpenGL está en modo de comentarios, la rasterización no genera píxeles. En su lugar, OpenGL vuelve a proporcionar información sobre las primitivas que se hubieran rasterizado a la aplicación. Consulte [**glFeedbackBuffer para**](glfeedbackbuffer.md) obtener una descripción del búfer de comentarios y los valores que incluye.
 
-La **función glPassThrough** inserta un marcador definido por el usuario en el búfer de comentarios cuando se ejecuta en modo de comentarios. El *parámetro de* token se devuelve como si fuera un primitivo.
+La **función glPassThrough** inserta un marcador definido por el usuario en el búfer de comentarios cuando se ejecuta en modo de comentarios. El *parámetro* de token se devuelve como si fuera una primitiva.
 
 La **función glPassThrough** se omite si OpenGL no está en modo de comentarios.
 

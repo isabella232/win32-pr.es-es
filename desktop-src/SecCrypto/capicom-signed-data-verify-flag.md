@@ -13,25 +13,25 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 8f087a9a28d06e63bc19d75974bccba05da4c77658f81401fd994a7eadb9726a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc8db48ee067e8d12bffa9dbff433384058013b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117772089"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374907"
 ---
 # <a name="capicom_signed_data_verify_flag-enumeration"></a>CAPICOM \_ SIGNED DATA VERIFY FLAG \_ \_ \_ (enumeración)
 
 La **enumeración CAPICOM \_ SIGNED DATA VERIFY \_ \_ \_ FLAG** indica lo que se comprueba cuando se comprueba una firma [*digital.*](../secgloss/d-gly.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 
 
 | Miembro                                           | Descripción                                                                                                 | Value |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------|-------|
 | **CAPICOM \_ VERIFY \_ SIGNATURE \_ ONLY**             | Solo se comprueba la firma.<br/>                                                                   | 0     |
-| **COMPROBACIÓN DE LA \_ FIRMA Y EL \_ \_ CERTIFICADO DE \_ CAPICOM** | Se comprueban tanto la firma como la validez del certificado usado para crear la firma.<br/> | 1     |
+| **CAPICOM VERIFY SIGNATURE AND CERTIFICATE (COMPROBACIÓN \_ DE FIRMA Y CERTIFICADO DE CAPICOM) \_ \_ \_** | Se comprueban tanto la firma como la validez del certificado usado para crear la firma.<br/> | 1     |
 
 
 
@@ -42,7 +42,7 @@ La **enumeración CAPICOM \_ SIGNED DATA VERIFY \_ \_ \_ FLAG** indica lo que se
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
+| Encabezado<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

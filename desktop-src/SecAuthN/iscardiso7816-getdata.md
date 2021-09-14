@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 1ef783092edb87a29203c83afcf67fb594eb84dcc296621379c9f39a9ccbcc79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93dca04daa50e068a68dc62cf11a580eb8e3b1c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119672385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244299"
 ---
-# <a name="iscardiso7816getdata-method"></a>MÉTODO ISCardISO7816::GetData
+# <a name="iscardiso7816getdata-method"></a>Método ISCardISO7816::GetData
 
 \[El **método GetData** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
@@ -53,11 +53,11 @@ Parámetros.
 
 | Value                                                                                  | Significado                                          |
 |----------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>0000 - 003F</dt> </dl> | Rfu<br/>                                   |
+| <dl> <dt>0000 - 003F</dt> </dl> | RFU<br/>                                   |
 | <dl> <dt>0040 - 00FF</dt> </dl> | Etiqueta BER-TLV (1 byte) en P2<br/>            |
 | <dl> <dt>0100 - 01FF</dt> </dl> | Datos de la aplicación (codificación propietaria)<br/> |
 | <dl> <dt>0200 - 02FF</dt> </dl> | Etiqueta SIMPLE-TLV en P2<br/>                  |
-| <dl> <dt>0300 - 03FF</dt> </dl> | Rfu<br/>                                   |
+| <dl> <dt>0300 - 03FF</dt> </dl> | RFU<br/>                                   |
 | <dl> <dt>0400 - 04FF</dt> </dl> | Etiqueta BER-TLV (2 bytes) en P1-P2<br/>        |
 
 
@@ -75,11 +75,11 @@ Parámetros.
 
 | Value                                                                                  | Significado                                          |
 |----------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>0000 - 003F</dt> </dl> | Rfu<br/>                                   |
+| <dl> <dt>0000 - 003F</dt> </dl> | RFU<br/>                                   |
 | <dl> <dt>0040 - 00FF</dt> </dl> | Etiqueta BER-TLV (1 byte) en P2<br/>            |
 | <dl> <dt>0100 - 01FF</dt> </dl> | Datos de la aplicación (codificación propietaria)<br/> |
 | <dl> <dt>0200 - 02FF</dt> </dl> | Etiqueta SIMPLE-TLV en P2<br/>                  |
-| <dl> <dt>0300 - 03FF</dt> </dl> | Rfu<br/>                                   |
+| <dl> <dt>0300 - 03FF</dt> </dl> | RFU<br/>                                   |
 | <dl> <dt>0400 - 04FF</dt> </dl> | Etiqueta BER-TLV (2 bytes) en P1-P2<br/>        |
 
 
@@ -121,7 +121,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El comando encapsulado solo se puede realizar [](../secgloss/s-gly.md) si el estado de seguridad de la tarjeta inteligente satisface los atributos de seguridad del archivo básico que se está leyendo. Las condiciones de seguridad dependen de la directiva de la tarjeta y se pueden manipular a través de [**ExternalAuthenticate,**](iscardiso7816-externalauthenticate.md) [**InternalAuthenticate,**](iscardiso7816-internalauthenticate.md) [**ISCardAuth,**](iscardauth.md)y así sucesivamente.
 
@@ -135,13 +135,13 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 se define como 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |

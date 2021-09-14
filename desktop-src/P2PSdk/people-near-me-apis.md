@@ -4,12 +4,12 @@ ms.assetid: 3b142d23-a9b2-465c-9bdc-484afbde154e
 title: Equipos a mi alrededor API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ad778ecd674e558ce62a44a4f36bdefb222eb2dc1fba0527e2386b62a8d6c6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 132d358a7d51a1069f7a4d1dc1ddfe2752dbdd1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119675115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244808"
 ---
 # <a name="people-near-me-apis"></a>Equipos a mi alrededor API
 

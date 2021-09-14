@@ -5,17 +5,17 @@ title: elemento ownerSID (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 095a29b530d90194a181f0f3c95868fd5ab560db
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880471"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267807"
 ---
 # <a name="ownersid-element-library-schema"></a>elemento ownerSID (esquema de biblioteca)
 
 El &lt; elemento ownerSID &gt; especifica el identificador de seguridad (SID) del creador de la biblioteca. Este elemento es opcional y no tiene atributos ni elementos secundarios.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <!-- ownerSID -->

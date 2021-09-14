@@ -1,12 +1,12 @@
 ---
-title: Método RemoveDeploymentSetting de la clase Win32_RDMSDeploymentSettings
+title: Método RemoveDeploymentSetting de la Win32_RDMSDeploymentSettings clase
 description: Elimina la configuración de implementación de una colección de escritorios virtuales.
 ms.assetid: 68e102a3-8f3f-4997-bdf0-c2ae3640ed42
 ms.tgt_platform: multiple
 keywords:
 - Método RemoveDeploymentSetting Servicios de Escritorio remoto
-- Método RemoveDeploymentSetting Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método RemoveDeploymentSetting
+- Método RemoveDeploymentSetting Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto , método RemoveDeploymentSetting
 topic_type:
 - apiref
 api_name:
@@ -18,13 +18,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 336b93f86d6b96074341dde4851813b26eb66fe2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905611"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374591"
 ---
-# <a name="removedeploymentsetting-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método RemoveDeploymentSetting de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="removedeploymentsetting-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método RemoveDeploymentSetting de la clase RDMSDeploymentSettings de Win32 \_
 
 Elimina la configuración de implementación de una colección de escritorios virtuales.
 
@@ -43,10 +43,10 @@ uint32 RemoveDeploymentSetting(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-El alias de la colección de escritorios virtuales.
+Alias de la colección de escritorios virtuales.
 
 </dd> </dl>
 
@@ -58,8 +58,8 @@ El alias de la colección de escritorios virtuales.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -68,7 +68,7 @@ El alias de la colección de escritorios virtuales.
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

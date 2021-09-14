@@ -1,32 +1,32 @@
 ---
-title: Atributos de archivo de música
-description: Atributos de archivo de música
+title: Música Atributos de archivo
+description: Música Atributos de archivo
 ms.assetid: 53b0dc75-bfab-4ad3-958e-0365eb8048b9
 keywords:
-- Windows Media Player, atributos de archivo de música
-- Windows Media Player los atributos de archivo de música móviles
-- Modelo de objetos de Windows Media Player, atributos de archivo de música
+- Reproductor de Windows Media,atributos de archivo de música
+- Reproductor de Windows Media Atributos móviles y de archivo de música
+- Reproductor de Windows Media modelo de objetos, atributos de archivo de música
 - modelo de objetos, atributos de archivo de música
-- Control ActiveX, atributos de archivo de música
-- Control ActiveX de Windows Media Player, atributos de archivo de música
-- Control ActiveX móvil de Windows Media Player, atributos de archivo de música
-- Referencia del modelo de objetos, atributos de archivo de música
-- atributos, archivos de música
+- ActiveX control,atributos de archivo de música
+- Reproductor de Windows Media ActiveX control, atributos de archivo de música
+- Reproductor de Windows Media Control de ActiveX móvil, atributos de archivo de música
+- referencia para el modelo de objetos, atributos de archivo de música
+- attributes,music files
 - atributos de archivo de música
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ed64374755829c30b70515224701fb01e6817b4b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268246"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243236"
 ---
-# <a name="music-file-attributes"></a>Atributos de archivo de música
+# <a name="music-file-attributes"></a>Música Atributos de archivo
 
-Los siguientes atributos están disponibles para un archivo de música no en la biblioteca. Estos atributos corresponden a las entradas que se encuentran en el cuadro de diálogo **Editor de etiquetas avanzadas** de Windows Media Player.
+Los atributos siguientes están disponibles para un archivo de música que no está en la biblioteca. Estos atributos corresponden a las entradas que se encuentran en Reproductor de Windows Media cuadro de diálogo **Editor de etiquetas** avanzadas.
 
--   [Descripción (atributo)](description-attribute.md)
+-   [Atributo Description](description-attribute.md)
 -   [Atributo WM/OriginalAlbumTitle](wm-originalalbumtitle-attribute.md)
 -   [Atributo WM/OriginalArtist](wm-originalartist-attribute.md)
 -   [Atributo WM/OriginalLyricist](wm-originallyricist-attribute.md)
@@ -36,12 +36,12 @@ Los siguientes atributos están disponibles para un archivo de música no en la 
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,32 +1,32 @@
 ---
-description: Debe recuperar la información de configuración de la base de datos de seguridad y del servicio, comparar los dos conjuntos de información y, a continuación, actualizar la sección de análisis de la base de datos de seguridad con cualquier diferencia.
+description: Debe recuperar la información de configuración de la base de datos de seguridad y el servicio, comparar los dos conjuntos de información y, a continuación, actualizar la sección de análisis de la base de datos de seguridad con cualquier diferencia.
 ms.assetid: f8420dde-55a2-40a0-b10d-140c28c0e9e4
 title: Implementación de SceSvcAttachmentAnalyze
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b7f8501be2caac84c3dc96363eb85a8bc787d2be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374894"
 ---
 # <a name="implementing-scesvcattachmentanalyze"></a>Implementación de SceSvcAttachmentAnalyze
 
-La función [**SceSvcAttachmentAnalyze**](scesvcattachmentanalyze.md) debe recuperar la información de configuración de la base de datos de seguridad y el servicio, comparar los dos conjuntos de información y, a continuación, actualizar la sección de análisis de la base de datos de seguridad con cualquier diferencia. Puede asegurarse de esto mediante el siguiente algoritmo.
+La función [**SceSvcAttachmentAnalyze**](scesvcattachmentanalyze.md) debe recuperar información de configuración de la base de datos de seguridad y el servicio, comparar los dos conjuntos de información y, a continuación, actualizar la sección de análisis de la base de datos de seguridad con cualquier diferencia. Puede asegurarse de ello mediante el algoritmo siguiente.
 
 **Para implementar SceSvcAttachmentAnalyze**
 
 1.  Defina las variables necesarias para recuperar y establecer la información de seguridad y los códigos de retorno.
 2.  Llame a la función de devolución de llamada pfQueryInfo en la estructura de devolución de llamada para recuperar información de configuración de la base de datos de seguridad.
 3.  Recupere la información correspondiente del servicio.
-4.  Compare los datos de configuración recuperados del servicio con que se recuperaron de la base de datos de seguridad.
-5.  Si la información no es igual, llame a la función de devolución de llamada pfSetInfo en la estructura de devolución de llamada para actualizar la base de datos.
-6.  Libere todos los búferes utilizados para recuperar información. Llame a la función de devolución de llamada pfFreeInfo en la estructura de devolución de llamada para liberar la memoria usada para la información de base de datos devuelta.
-7.  Si hay algún mensaje que la extensión desee agregar al archivo de registro de análisis, llame a la función de devolución de llamada pfLogInfo en la estructura de devolución de llamada.
-8.  Devuelve los códigos de **SCESTATUS** apropiados.
+4.  Compare los datos de configuración recuperados del servicio con los recuperados de la base de datos de seguridad.
+5.  Si la información no es la misma, llame a la función de devolución de llamada pfSetInfo en la estructura de devolución de llamada para actualizar la base de datos.
+6.  Liberar todos los búferes usados para recuperar información. Llame a la función de devolución de llamada pfFreeInfo en la estructura de devolución de llamada para liberar memoria usada para la información de base de datos devuelta.
+7.  Si hay algún mensaje que la extensión desea agregar al archivo de registro de análisis, llame a la función de devolución de llamada pfLogInfo en la estructura de devolución de llamada.
+8.  Devuelve los códigos **SCESTATUS adecuados.**
 
-En el ejemplo siguiente se muestra una posible implementación de [**SceSvcAttachmentAnalyze**](scesvcattachmentanalyze.md). Tenga en cuenta que en este ejemplo, las funciones QueryConfigurationLine y CompareValue consultan respectivamente la información del servicio y comparan esos valores con los recuperados de la base de datos de seguridad. No se muestra la implementación de estas funciones.
+En el ejemplo siguiente se muestra una posible implementación de [**SceSvcAttachmentAnalyze.**](scesvcattachmentanalyze.md) Tenga en cuenta que en este ejemplo, las funciones QueryConfigurationLine y CompareValue consultan respectivamente la información del servicio y comparan esos valores con los recuperados de la base de datos de seguridad. No se muestra la implementación de estas funciones.
 
 
 ```C++

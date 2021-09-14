@@ -4,12 +4,12 @@ ms.assetid: 3733f611-c6a1-4d48-b21e-ada3490c5de1
 title: Funciones de tiempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d537224ceaf072fd5e11f0fdd839215c7317a5378de90e1be56def3f90490105
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1187c029bac34411fdca28dd3b27322478de678
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117958048"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243896"
 ---
 # <a name="time-functions"></a>Funciones de tiempo
 
@@ -120,15 +120,15 @@ Las siguientes funciones se usan con contadores de rendimiento de alta resoluci�
 
  
 
-Las funciones siguientes se usan con el contador de rendimiento auxiliar.
+Las siguientes funciones se usan con el contador de rendimiento auxiliar.
 
 
 
 | Función                                                                                           | Descripción                                                                                                                                                                                                   |
 |----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**QueryQliliaryCounterFrequency**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryauxiliarycounterfrequency)                           | Consulta la frecuencia del contador auxiliar.                                                                                                                                                                      |
-| [**ConvertCountiliaryCounterToPerformanceCounter**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-convertauxiliarycountertoperformancecounter) | Convierte el valor de contador auxiliar especificado en el valor del contador de rendimiento correspondiente; opcionalmente proporciona el error de conversión estimado en nanosegundos debido a latencias y al máximo posible de desviación. |
-| [**ConvertPerformanceCounterToCountiliaryCounter**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-convertperformancecountertoauxiliarycounter) | Convierte el valor del contador de rendimiento especificado en el valor de contador auxiliar correspondiente; opcionalmente proporciona el error de conversión estimado en nanosegundos debido a latencias y al máximo posible de desviación. |
+| [**ConvertAryCounterToPerformanceCounter**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-convertauxiliarycountertoperformancecounter) | Convierte el valor del contador auxiliar especificado en el valor del contador de rendimiento correspondiente; opcionalmente, proporciona el error de conversión estimado en nanosegundos debido a latencias y al máximo de desviación posible. |
+| [**ConvertPerformanceCounterToPlatiliaryCounter**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-convertperformancecountertoauxiliarycounter) | Convierte el valor del contador de rendimiento especificado en el valor del contador auxiliar correspondiente; opcionalmente, proporciona el error de conversión estimado en nanosegundos debido a latencias y al máximo de desviación posible. |
 
 
 
@@ -141,9 +141,9 @@ La siguiente función se usa con tiempo de interrupción.
 | Función                                                                       | Descripción                                                                                                                                                                                                                                           |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**QueryInterruptTime**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttime)                               | Obtiene el recuento de tiempo de interrupción actual.                                                                                                                                                                                                                |
-| [**QueryInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttimeprecise)                 | Obtiene el recuento de tiempo de interrupción actual, de forma más precisa que [**QueryInterruptTime.**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttime)                                                                                                                             |
-| [**QueryUnbiasedInterruptTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime)               | Obtiene el recuento actual de tiempo de interrupción no sesí. El recuento de tiempo de interrupción no sesgo no incluye el tiempo que el sistema pasa en suspensión o hibernación.                                                                                                    |
-| [**QueryUnbiasedInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttimeprecise) | Obtiene el recuento actual de tiempo de interrupción no sesí, en un formato más preciso que [**QueryUnbiasedInterruptTime.**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime) El recuento de tiempo de interrupción no sesgo no incluye el tiempo que el sistema pasa en suspensión o hibernación. |
+| [**QueryInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttimeprecise)                 | Obtiene el recuento de tiempo de interrupción actual, en un formato más preciso que [**QueryInterruptTime.**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttime)                                                                                                                             |
+| [**QueryUnbiasedInterruptTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime)               | Obtiene el recuento de tiempo de interrupción no sesíado actual. El recuento de tiempo de interrupción no sesgo no incluye el tiempo que el sistema pasa en suspensión o hibernación.                                                                                                    |
+| [**QueryUnbiasedInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttimeprecise) | Obtiene el recuento de tiempo de interrupción no sesíado actual, en un formato más preciso que [**QueryUnbiasedInterruptTime.**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime) El recuento de tiempo de interrupción no sesgo no incluye el tiempo que el sistema pasa en suspensión o hibernación. |
 
 
 

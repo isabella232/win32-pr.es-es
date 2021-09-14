@@ -4,12 +4,12 @@ ms.assetid: 90eca1e0-960f-4355-aef7-6e923100a6d8
 title: Proveedor de servicios criptográficos & Diffie-Hellman DSS mejorado de Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3eb3e70d90224b2d97612c5d63380171d3239e11915da4cdd8a38a0faea0b8f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 70c42b4e504c1e5d4cb8ccfea7405580e37362f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119425445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244029"
 ---
 # <a name="microsoft-enhanced-dss--diffie-hellman-cryptographic-provider"></a>Proveedor de servicios criptográficos & Diffie-Hellman DSS mejorado de Microsoft
 

@@ -4,7 +4,7 @@ description: Enumeración de los elementos multimedia
 ms.assetid: 1819b4c3-57ae-48fc-8a01-b699b5802b64
 keywords:
 - Reproductor de Windows Media,listas de reproducción de sincronización
-- Reproductor de Windows Media modelo de objetos, listas de reproducción de sincronización
+- Reproductor de Windows Media de objetos, listas de reproducción de sincronización
 - modelo de objetos, listas de reproducción de sincronización
 - Reproductor de Windows Media Móvil, listas de reproducción de sincronización
 - Reproductor de Windows Media ActiveX control, listas de reproducción de sincronización
@@ -18,12 +18,12 @@ keywords:
 - enumeraciones, listas de reproducción de sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96f6afd6c209f96edd011b6b5829af07583057bd9220c61015d8e8ffa9fe4bfa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8e07148ed6978355056febfb2ad920e4b1380a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119650915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243248"
 ---
 # <a name="enumerating-the-media-items"></a>Enumeración de los elementos multimedia
 
@@ -153,7 +153,7 @@ Para la implementación de la función GetPartnershipSyncState, vea Determinar e
 
 <dl> <dt>
 
-[**Interfaz IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
+[**IWMPMedia (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
 </dt> <dt>
 
 [**IWMPPlaylist (Interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 8c9b231ec7930b78c1693e38268638e7a24b26dfa32d8f25acb5a429dbcdedc1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 99a3f7c1acd4266395917b47c81f044d5385b3d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118922664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244196"
 ---
 # <a name="iscardmanagecreateinterface-method"></a>Método ISCardManage::CreateInterface
 
@@ -88,7 +88,7 @@ Los valores devueltos posibles son los siguientes:
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una lista de todos los métodos definidos por la [**interfaz ISCardManage,**](iscardmanage.md) vea **ISCardManage**.
 
@@ -100,7 +100,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                       |

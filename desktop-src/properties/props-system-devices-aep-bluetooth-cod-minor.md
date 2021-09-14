@@ -1,19 +1,19 @@
 ---
-description: Bluetooth clase de código secundaria del dispositivo.
+description: Bluetooth clase de código menor del dispositivo.
 ms.assetid: 56923491-8d03-418a-a0b5-c27206c3f8b0
 title: System.Devices.Aep. Bluetooth. Cod.Minor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a312a9e2b0d2cefcc51632d29205091d55f5437991c20be74f97ec0c7c9e77d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d928b34323ba8ca7d37035842234a011bb2b6c8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119946235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268092"
 ---
 # <a name="systemdevicesaepbluetoothcodminor"></a>System.Devices.Aep. Bluetooth. Cod.Minor
 
-Bluetooth clase de código secundaria del dispositivo.
+Bluetooth clase de código menor del dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

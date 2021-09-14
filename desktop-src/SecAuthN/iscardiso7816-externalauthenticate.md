@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: ea1a21324e0757f4a57a29bb84821c73b9afe63dac0b79691710dba4e6b1fe9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c8d56b6f2210974bd86dbecea06f16b68548659
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118923076"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244316"
 ---
 # <a name="iscardiso7816externalauthenticate-method"></a>Método ISCardISO7816::ExternalAuthenticate
 
@@ -26,7 +26,7 @@ ms.locfileid: "118923076"
 
 El **método ExternalAuthenticate** crea un comando de unidad de datos de protocolo de aplicación (APDU) que actualiza condicionalmente el estado de seguridad, comprobando la identidad del equipo cuando la tarjeta inteligente no confía en él. [](../secgloss/a-gly.md) [](../secgloss/s-gly.md)
 
-El comando usa el resultado (sí o no) del cálculo de la tarjeta (en función de un desafío emitido previamente por la tarjeta, por ejemplo, por el comando GET CHALLENGE de INS), una clave (posiblemente un secreto) almacenada en la tarjeta y los datos de autenticación transmitidos por el dispositivo \_ \_ de interfaz.
+El comando usa el resultado (sí o no) del cálculo por parte de la tarjeta (en función de un desafío emitido previamente por la tarjeta, por ejemplo, por el comando GET CHALLENGE de INS), una clave (posiblemente un secreto) almacenada en la tarjeta y los datos de autenticación transmitidos por el dispositivo \_ \_ de interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ HRESULT ExternalAuthenticate(
 
 Referencia del algoritmo en la tarjeta.
 
-Si este valor es cero, esto indica que no se proporciona ninguna información. La referencia del algoritmo se conoce antes de emitir el comando o se proporciona en el campo de datos.
+Si este valor es cero, esto indica que no se proporciona información. La referencia del algoritmo se conoce antes de emitir el comando o se proporciona en el campo de datos.
 
 </dd> <dt>
 
@@ -62,12 +62,12 @@ Referencia del secreto.
 
 
 
-| Valor                                                                                                                                                                                    | Significado                                                                                                                                                                        |
+| Value                                                                                                                                                                                    | Significado                                                                                                                                                                        |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="No_Info"></span><span id="no_info"></span><span id="NO_INFO"></span><dl> <dt>**Sin información**</dt> </dl>                     | Posición del bit: 00000000<br/> No se proporciona información. La referencia del secreto se conoce antes de emitir el comando o se proporciona en el campo de datos.<br/> |
+| <span id="No_Info"></span><span id="no_info"></span><span id="NO_INFO"></span><dl> <dt>**Sin información**</dt> </dl>                     | Posición de bits: 00000000<br/> No se proporciona información. La referencia del secreto se conoce antes de emitir el comando o se proporciona en el campo de datos.<br/> |
 | <span id="Global_ref"></span><span id="global_ref"></span><span id="GLOBAL_REF"></span><dl> <dt>**Referencia global**</dt> </dl>         | Posición de bits: 0-------<br/> Datos de referencia globales (una clave específica de MF).<br/>                                                                                       |
 | <span id="Specific_ref"></span><span id="specific_ref"></span><span id="SPECIFIC_REF"></span><dl> <dt>**Referencia específica**</dt> </dl> | Posición de bits: 1-------<br/> Datos de referencia específicos (una clave específica de DF).<br/>                                                                                      |
-| <span id="RFU"></span><span id="rfu"></span><dl> <dt>**Rfu**</dt> </dl>                                                           | Posición de bits: -xx-----<br/> 00 (otros valores son RFU).<br/>                                                                                                        |
+| <span id="RFU"></span><span id="rfu"></span><dl> <dt>**RFU**</dt> </dl>                                                           | Posición de bits: -xx-----<br/> 00 (otros valores son RFU).<br/>                                                                                                        |
 | <span id="Secret"></span><span id="secret"></span><span id="SECRET"></span><dl> <dt>**Secreto**</dt> </dl>                         | Posición de bits: ---xxxxx<br/> Número del secreto.<br/>                                                                                                             |
 
 
@@ -86,9 +86,9 @@ Puntero a los datos relacionados con la autenticación. Este parámetro puede se
 *ppCmd* \[ in, out\]
 </dt> <dd>
 
-En la entrada, puntero a un objeto de interfaz [**ISCardCmd**](iscardcmd.md) o **NULL.**
+En la entrada, puntero a un [**objeto de interfaz ISCardCmd**](iscardcmd.md) o **NULL.**
 
-En la devolución, se rellena con el comando APDU construido por esta operación. Si *ppCmd* se estableció en **NULL,** [*se*](../secgloss/s-gly.md) crea internamente un objeto [**ISCardCmd**](iscardcmd.md) de tarjeta inteligente y se devuelve mediante el *puntero ppCmd.*
+Al devolverse, se rellena con el comando APDU construido por esta operación. Si *ppCmd* se estableció en **NULL,** [*se*](../secgloss/s-gly.md) crea internamente un objeto [**ISCardCmd**](iscardcmd.md) de tarjeta inteligente y se devuelve mediante el *puntero ppCmd.*
 
 </dd> </dl>
 
@@ -109,11 +109,11 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para que el comando encapsulado sea correcto, el último desafío obtenido de la tarjeta debe ser válido.
 
-Se pueden registrar comparaciones incorrectas en la tarjeta (por ejemplo, para limitar el número de intentos lejos de usar los datos de referencia).
+Se pueden registrar comparaciones incorrectas en la tarjeta (por ejemplo, para limitar el número de intentos mayores de uso de los datos de referencia).
 
 Para obtener una lista de todos los métodos proporcionados por esta interfaz, vea [**ISCardISO7816**](iscardiso7816.md).
 
@@ -123,20 +123,20 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 se define como 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

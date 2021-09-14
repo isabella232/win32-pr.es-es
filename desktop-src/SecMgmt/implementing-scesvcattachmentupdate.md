@@ -4,16 +4,16 @@ ms.assetid: 3c0a71f6-f643-4a5e-8b5c-15c976a3736e
 title: Implementación de SceSvcAttachmentUpdate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3f2399ee87fdc97dcfb82d9fd711c6407894c3dbbbf17a31df39bb225010032
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 381a2b04b75399b5f580426d9f2dd9f5911f52d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118894599"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374879"
 ---
 # <a name="implementing-scesvcattachmentupdate"></a>Implementación de SceSvcAttachmentUpdate
 
-La [**función SceSvcAttachmentUpdate**](scesvcattachmentupdate.md) toma como parámetro un conjunto de información de configuración proporcionada. A continuación, recupera información de la base de datos de seguridad, calcula una nueva configuración base mediante la información de configuración proporcionada, calcula la nueva información de análisis basada en la información de base de datos y la información de configuración proporcionada, y actualiza la base de datos con la nueva configuración base e información de análisis. Puede implementar **SceSvcAttachmentUpdate** mediante el algoritmo siguiente.
+La [**función SceSvcAttachmentUpdate**](scesvcattachmentupdate.md) toma como parámetro un conjunto de información de configuración proporcionada. A continuación, recupera información de la base de datos de seguridad, calcula una nueva configuración base con la información de configuración proporcionada, calcula la nueva información de análisis en función de la información de base de datos y la información de configuración proporcionada, y actualiza la base de datos con la nueva configuración base y la información de análisis. Puede implementar **SceSvcAttachmentUpdate** mediante el algoritmo siguiente.
 
 **Para implementar SceSvcAttachmentUpdate**
 
@@ -24,7 +24,7 @@ La [**función SceSvcAttachmentUpdate**](scesvcattachmentupdate.md) toma como pa
     -   Si los datos difieren, llame a la función de devolución de llamada pfSetInfo en la estructura de devolución de llamada para actualizar los datos de configuración de la base de datos.
     -   Si los datos son los mismos, llame a la función de devolución de llamada pfSetInfo en la estructura de devolución de llamada para actualizar los datos de análisis de la base de datos.
 
-4.  Repita la repetición hasta que se procese todos los datos.
+4.  Repita el proceso hasta que se procese todos los datos.
 
 En el ejemplo siguiente se muestra una posible implementación de [**SceSvcAttachmentUpdate**](scesvcattachmentupdate.md).
 

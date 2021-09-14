@@ -4,12 +4,12 @@ ms.assetid: 40958e12-09c7-4ce5-aa4d-5ed8b1f40aa3
 title: DMO Tipos de medios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0d67be6775163695189c2dc2c2742f65bcd0181032d9935b2a2a3ce2df2e900
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1997abb1cc3c8eb10301778982ef7a46690855ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016144"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375247"
 ---
 # <a name="dmo-media-types"></a>DMO Tipos de medios
 
@@ -19,7 +19,7 @@ Los tipos de medios se definen mediante el [**DMO \_ estructura MEDIA \_ TYPE.**
 
 -   El *tipo principal* es un identificador único global (GUID) que define una categoría amplia, como audio o vídeo.
 -   El *subtipo* es un GUID que define aspectos más específicos del tipo. Por ejemplo, dentro del vídeo, los subtipos incluyen RGB de 16 bits, RGB de 24 bits, UYVY, vídeo codificado en DV, etc.
--   El *bloque de formato* es una estructura secundaria que especifica completamente el formato. El diseño del bloque de formato depende del tipo de datos. Por ejemplo, el audio PCM usa la **estructura DESATEX.** El vídeo usa otras estructuras, **como VIDEOINFOHEADER** y **VIDEOINFOHEADER2.** El diseño del bloque de formato se identifica mediante un GUID de tipo de formato. Por ejemplo, FORMAT \_ WaveFormatEx especifica una **estructura WAVEATEX.**
+-   El *bloque de formato* es una estructura secundaria que especifica completamente el formato. El diseño del bloque de formato depende del tipo de datos. Por ejemplo, el audio PCM usa la **estructura DESATEX.** El vídeo usa otras estructuras, como **VIDEOINFOHEADER** y **VIDEOINFOHEADER2.** El diseño del bloque de formato se identifica mediante un GUID de tipo de formato. Por ejemplo, FORMAT \_ WaveFormatEx especifica una **estructura WAVEATEX.**
 
 Cuando se crea DMO por primera vez, las secuencias no tienen un tipo de medio. Para que DMO procesar datos, el cliente debe establecer un tipo de medio para cada secuencia. Este proceso se describe desde la perspectiva del cliente en [Establecer tipos de medios en un DMO](setting-media-types-on-a-dmo.md).
 
@@ -39,7 +39,7 @@ Una vez que la aplicación establece todos los tipos de entrada de un DMO, el DM
 
 **Establecimiento de los tipos de medios**
 
-Las aplicaciones usan **los métodos SetInputType** y **SetOutputType** para probar, establecer o borrar tipos en una secuencia especificada. La aplicación debe especificar completamente el tipo. El DMO comprueba si puede aceptar el tipo propuesto. La respuesta puede depender de qué tipos se han establecido en otras secuencias. La DMO SET TYPEF CLEAR borra el tipo de una secuencia, por lo que la aplicación puede \_ \_ "volver atrás" e intentar otra \_ combinación.
+Las aplicaciones usan **los métodos SetInputType** y **SetOutputType** para probar, establecer o borrar tipos en una secuencia especificada. La aplicación debe especificar completamente el tipo. El DMO comprueba si puede aceptar el tipo propuesto. La respuesta puede depender de qué tipos se han establecido en otras secuencias. El DMO marca SET TYPEF CLEAR borra el tipo de una secuencia, por lo que la aplicación puede \_ \_ "volver atrás" e intentar otra \_ combinación.
 
 **Escenarios de ejemplo**
 

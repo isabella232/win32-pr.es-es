@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73652b1eda6fb05c9e058a47bb988ab3098e451facc898d55bcd89257bec958b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a729b2b917f38e12639fb1acda8eeb36808be990
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118118245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243069"
 ---
 # <a name="textscrollingdirection"></a>TEXT.scrollingDirection
 
@@ -29,7 +29,7 @@ El **atributo scrollingDirection** especifica o recupera la dirección del texto
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de lectura **y escritura.**
+Este atributo es una cadena de lectura y **escritura.**
 
 
 
@@ -42,9 +42,9 @@ Este atributo es una cadena de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si **el desplazamiento** se establece en false, **scrollingDirection** se omite.
+Si **el desplazamiento** se establece en false, se omite **scrollingDirection.**
 
 Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 

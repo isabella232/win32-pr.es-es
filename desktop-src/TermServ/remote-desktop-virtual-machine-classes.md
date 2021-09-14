@@ -1,20 +1,20 @@
 ---
 title: Escritorio remoto clases de máquina virtual
-description: El Escritorio remoto WMI de máquina virtual proporciona las siguientes clases.
+description: El Escritorio remoto WMI de máquina virtual proporciona las clases siguientes.
 ms.assetid: C502FF8A-895C-4ABB-8C2D-09D7870AF3E4
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d7b807d9adf5c9c4fa7432bdadf3f15236f7a0dd1bc29bccddfc33d6153006b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a3d70ec212f7a239dd9299845d69567b6a5959a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119058613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374671"
 ---
 # <a name="remote-desktop-virtual-machine-classes"></a>Escritorio remoto clases de máquina virtual
 
-El Escritorio remoto WMI de máquina virtual proporciona las siguientes clases.
+El Escritorio remoto WMI de máquina virtual proporciona las clases siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,7 +23,7 @@ El Escritorio remoto WMI de máquina virtual proporciona las siguientes clases.
 [**Win32 \_ TSVirtualDesktopServerSettings**](win32-tsvirtualdesktopserversettings.md)
 </dt> <dd>
 
-Contiene información de configuración para un Escritorio remoto Host de virtualización de Escritorio remoto (RD Virtualization Host).
+Contiene información de configuración para un servidor Escritorio remoto Virtualization Host (Host de virtualización de Escritorio remoto).
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Representa una asociación entre una Escritorio remoto virtual y sus propiedades
 
 </dd> <dt>
 
-[**Win32 \_ TSVmMetadataItem**](win32-tsvmmetadataitem.md)
+[**TSVmMetadataItem de Win32 \_**](win32-tsvmmetadataitem.md)
 </dt> <dd>
 
 Representa un elemento de metadatos para una Escritorio remoto virtual.
@@ -51,7 +51,7 @@ Representa un elemento de metadatos para una Escritorio remoto virtual.
 [**Win32 \_ RdvhManagement**](win32-rdvhmanagement.md)
 </dt> <dd>
 
-Describe un servicio Escritorio remoto administración de host virtual (RDVH).
+Describe un Escritorio remoto de administración de host virtual (RDVH).
 
 </dd> </dl>
 

@@ -4,12 +4,12 @@ ms.assetid: 2d9b642f-6b42-4fc6-839c-269bbb0f7296
 title: System.Photo.ISOSpeed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 070dbe583ac8177e56e31f5856a65ab0d37204e19a8c7d75df7144af24933e52
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37f45c4a6003191918525c5d7174212003f9ac75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118228749"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267951"
 ---
 # <a name="systemphotoisospeed"></a>System.Photo.ISOSpeed
 
@@ -44,7 +44,7 @@ propertyDescription
       type = UInt16
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -52,7 +52,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras de imágenes digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

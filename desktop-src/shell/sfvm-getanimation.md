@@ -4,12 +4,12 @@ ms.assetid: 6f8b3894-f08f-4ebf-a645-87869e7d1b20
 title: SFVM_GETANIMATION mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 746d8bc9bc4a6d4e15d9cd5190d7cfcb7d1362daba8ec5478b333458f62787da
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 60e4281689556e8315da7a9550fd69acc1a327a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120008995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267796"
 ---
 # <a name="sfvm_getanimation-message"></a>Mensaje \_ GETANIMATION de SFVM
 
@@ -42,15 +42,15 @@ Identificador de instancia del módulo desde el que se debe cargar el recurso.
 *pwszName* \[ out\]
 </dt> <dd>
 
-Puntero a una cadena Unicode terminada en NULL que contiene la ruta de acceso del archivo .avi o el nombre de un recurso AVI. Como alternativa, este parámetro puede constar del identificador de recurso en la palabra de orden bajo y 0 en la palabra de orden superior. Para crear este valor, use la [**macro MAKEINTRESOURCE.**](/windows/win32/api/winuser/nf-winuser-makeintresourcea) El control carga el recurso desde el módulo especificado por la clase . Un recurso AVI debe tener el tipo "AVI".
+Puntero a una cadena Unicode terminada en NULL que contiene la ruta de acceso del archivo .avi o el nombre de un recurso AVI. Como alternativa, este parámetro puede constar del identificador de recurso en la palabra de orden bajo y 0 en la palabra de orden superior. Para crear este valor, use la [**macro MAKEINTRESOURCE.**](/windows/win32/api/winuser/nf-winuser-makeintresourcea) El control carga el recurso desde el módulo especificado por inst. Un recurso AVI debe tener el tipo "AVI".
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-De forma predeterminada, el objeto de vista de carpeta del sistema muestra la animación de "linterna" durante una enumeración en segundo plano.
+De forma predeterminada, el objeto de vista de carpetas del sistema muestra la animación "flashlight" durante una enumeración de fondo.
 
-*phinst* y *pwszName* se pasarán al [control de animación](../controls/animation-control-overview.md) con un mensaje OPEN [**\_ de ACM.**](../controls/acm-open.md)
+*phinst y* *pwszName* se pasarán al [control de animación](../controls/animation-control-overview.md) con un mensaje OPEN [**\_ de ACM.**](../controls/acm-open.md)
 
 ## <a name="requirements"></a>Requisitos
 

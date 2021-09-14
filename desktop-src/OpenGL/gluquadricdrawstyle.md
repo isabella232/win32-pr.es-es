@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a873ed4f4ceaff4aa3dad678dbb4c1fd7a635b0ce41d7a9480af84278c8360c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8a1b44b7894ea9762b450c5a5d6c2b022c5e02f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061563"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244899"
 ---
-# <a name="gluquadricdrawstyle-function"></a>función gluQuadricDrawStyle
+# <a name="gluquadricdrawstyle-function"></a>Función gluQuadricDrawStyle
 
 La **función gluQuadricDrawStyle** especifica el estilo de dibujo deseado para los cuádigos.
 
@@ -57,9 +57,9 @@ Estilo de dibujo deseado. Los valores siguientes son válidos.
 
 | Value                                                                                                                                                            | Significado                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GLU_FILL"></span><span id="glu_fill"></span><dl> <dt>**GLU \_ FILL**</dt> </dl>                   | Los cuádigos se representan con primitivas de polígono. Los polígonos se dibujan en sentido contrario a las agujas del reloj con respecto a sus normales (como se define con [**gluQuadricOrientation**](gluquadricorientation.md)).<br/> |
-| <span id="GLU_LINE"></span><span id="glu_line"></span><dl> <dt>**GLU \_ LINE**</dt> </dl>                   | Los cuádigos se representan como un conjunto de líneas.<br/>                                                                                                                                                                    |
-| <span id="GLU_SILHOUETTE"></span><span id="glu_silhouette"></span><dl> <dt>**GLU \_ DE ALTA SEGURIDAD**</dt> </dl> | Los cuádigos se representan como un conjunto de líneas, salvo que los bordes que separan las caras coplanares no se dibujarán.<br/>                                                                                                     |
+| <span id="GLU_FILL"></span><span id="glu_fill"></span><dl> <dt>**GLU \_ FILL**</dt> </dl>                   | Los cuádigos se representan con primitivas de polígono. Los polígonos se dibujan en sentido contrario a las agujas del reloj con respecto a sus normales (como se define con [**gluQuadricOrientation).**](gluquadricorientation.md)<br/> |
+| <span id="GLU_LINE"></span><span id="glu_line"></span><dl> <dt>**LÍNEA \_ DE GLU**</dt> </dl>                   | Los cuádigos se representan como un conjunto de líneas.<br/>                                                                                                                                                                    |
+| <span id="GLU_SILHOUETTE"></span><span id="glu_silhouette"></span><dl> <dt>**GLU \_ LO QUE SE VA A HACER**</dt> </dl> | Los cuádigos se representan como un conjunto de líneas, salvo que no se dibujarán los bordes que separan las caras coplanares.<br/>                                                                                                     |
 | <span id="GLU_POINT"></span><span id="glu_point"></span><dl> <dt>**GLU \_ POINT**</dt> </dl>                | Los cuádigos se representan como un conjunto de puntos.<br/>                                                                                                                                                                   |
 
 
@@ -72,9 +72,9 @@ Estilo de dibujo deseado. Los valores siguientes son válidos.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función gluQuadricDrawStyle** especifica el estilo de dibujo de los cuádigos representados con **quadObject**.
+La **función gluQuadricDrawStyle** especifica el estilo de dibujo para los cuádigos representados con **quadObject**.
 
 ## <a name="requirements"></a>Requisitos
 

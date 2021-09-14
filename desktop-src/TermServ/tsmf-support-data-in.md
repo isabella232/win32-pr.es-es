@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8ae90099b69494425344ff65b73090cce574b843cd1589572203a4786b38ff6c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2072363978cb0e70d64a09d855ed2861341e9cf0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117755781"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374398"
 ---
-# <a name="tsmf_support_data_in-structure"></a>TSMF \_ SUPPORT DATA IN \_ (ESTRUCTURA DE DATOS DE COMPATIBILIDAD DE TSMF) \_
+# <a name="tsmf_support_data_in-structure"></a>Estructura TSMF \_ SUPPORT \_ DATA \_ IN
 
 Contiene información sobre los formatos multimedia. El método [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty) usa esta estructura durante las consultas **\_ WRDS QUERY MF FORMAT \_ \_ \_ SUPPORT.**
 
@@ -39,7 +39,7 @@ typedef struct tagTSMF_SUPPORT_DATA_IN {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -68,14 +68,14 @@ Número variable de estructuras que contienen datos de formato multimedia.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>         |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

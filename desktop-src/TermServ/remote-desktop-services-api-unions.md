@@ -5,12 +5,12 @@ ms.assetid: 31c763f1-72e7-49a0-a87d-749a5b718ac4
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d5e09574bc01e81f355d8f690935378049be09fab8a0fcfc45149994b5f7009
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c192ff7dc880c8206f5b7d32eb07ba73ed62d4b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119865945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374679"
 ---
 # <a name="remote-desktop-services-api-unions"></a>Servicios de Escritorio remoto uniones de API
 

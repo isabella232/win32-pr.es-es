@@ -4,12 +4,12 @@ ms.assetid: 82034950-78a7-4bab-b449-1b8ea7d90676
 title: El entorno de desarrollo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6d6c0de35fa84ec4ee01b3f25aaefec6ab3470fde83161f7aaf2157197bbf1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fefa29a518beaf21aa8b2457abf17d9581075f73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118449218"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267647"
 ---
 # <a name="the-development-environment"></a>El entorno de desarrollo
 
@@ -44,11 +44,11 @@ También necesita lo siguiente:
 
 ### <a name="details-on-developing-on-non-tablet-pc-skus-of-windows"></a>Detalles sobre el desarrollo en SKU de PC que no son tabletas de Windows
 
-Los componentes de la plataforma tablet PC se pueden instalar en Windows XP Professional con Service Pack 2 o Windows Server 2003. En estos sistemas operativos, la aplicación puede recopilar entrada de lápiz con la clase [**InkCollector**](inkcollector-class.md) y se puede probar y depurar. Sin embargo, no hay ningún reconocimiento disponible a menos que también instale Microsoft Windows XP Tablet PC Edition 2005 Recognizer Pack. Puede descargar ese paquete desde el Centro de descarga en MSDN.
+Los componentes de la plataforma tablet PC se pueden instalar en Windows XP Professional con Service Pack 2 o Windows Server 2003. En estos sistemas operativos, la aplicación puede recopilar entrada de lápiz con la clase [**InkCollector**](inkcollector-class.md) y se puede probar y depurar. Sin embargo, no hay ningún reconocimiento disponible a menos que también instale microsoft Windows XP Tablet PC Edition 2005 Recognizer Pack. Puede descargar ese paquete desde el Centro de descarga en MSDN.
 
-Después de instalar el SDK de Windows en un sistema de Windows XP Professional o Windows Server 2003, tendrá todos los archivos de desarrollo necesarios para compilar aplicaciones de entrada de lápiz (como msbizut.h para un desarrollador COM). Sin embargo, no podrá ejecutar ni depurar la aplicación en ese sistema hasta que instale los archivos en tiempo de ejecución. Por ejemplo, en el caso de un desarrollador COM, inkobj.dll debe instalarse y registrarse. Dado que no está en un sistema donde existen estos archivos de plataforma, debe instalar los componentes de la plataforma de Tablet PC desde el módulo de combinación redistribuible, mstpcrt.msm, para obtener los archivos en tiempo de ejecución en el sistema.
+Después de instalar el SDK de Windows en un sistema Windows XP Professional o Windows Server 2003, tendrá todos los archivos de desarrollo necesarios para compilar aplicaciones de entrada manuscrita (como msbizut.h para un desarrollador COM). Sin embargo, no podrá ejecutar ni depurar la aplicación en ese sistema hasta que instale los archivos en tiempo de ejecución. Por ejemplo, en el caso de un desarrollador COM, inkobj.dll debe instalarse y registrarse. Dado que no está en un sistema donde existen estos archivos de plataforma, debe instalar los componentes de la plataforma de Tablet PC desde el módulo de combinación redistribuible, mstpcrt.msm, para obtener los archivos en tiempo de ejecución en el sistema.
 
-La manera más sencilla de instalar los entornos de ejecución de la plataforma en un sistema Professional o Windows 2000 de Windows XP para fines de desarrollo es compilar el proyecto de instalación de ejemplo proporcionado con los ejemplos de PC móvil y tablet PC e implementarlo en la máquina de desarrollo.
+La manera más sencilla de instalar los entornos de ejecución de la plataforma en un sistema Professional o Windows 2000 de Windows XP para fines de desarrollo es compilar el proyecto de instalación de ejemplo proporcionado con los ejemplos de PC móvil y tableta pc e implementarlo en la máquina de desarrollo.
 
 > [!Note]  
 > Windows Vista y Windows XP Tablet PC Edition 2005 ya tienen instalados los componentes de la plataforma, por lo que no requieren pasos adicionales para ejecutar y depurar aplicaciones de Tablet PC.

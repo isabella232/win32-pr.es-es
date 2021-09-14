@@ -4,12 +4,12 @@ description: Las siguientes estructuras de información son para el transporte I
 ms.assetid: 432e6c58-ffab-4d38-baca-5756a40cdee3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c112760917abde9b580e571090cd973be60abe08ed8bf1c6d00015ad0f84d665
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a56c20fb56b09ee09939a577f6de9c6c81e26d85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120036695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244760"
 ---
 # <a name="ip-information-structures"></a>Estructuras de información de IP
 

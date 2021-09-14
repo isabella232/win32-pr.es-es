@@ -4,12 +4,12 @@ ms.assetid: 33860A3D-0BC5-4a90-8479-8926ABBCDFA9
 title: System.Image
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15354b098a5a6d6c08e9828971e61a9b307c77cbedadb5d821fa1d58e033ef38
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fdd180bbbb46c55b1f7356cd666579714cf45a1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119841335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267332"
 ---
 # <a name="systemimage"></a>System.Image
 

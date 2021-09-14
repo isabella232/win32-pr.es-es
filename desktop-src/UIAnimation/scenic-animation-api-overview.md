@@ -6,19 +6,19 @@ keywords:
 - Windows Animation Windows Animation ,overview
 - objetos de administrador de animación Windows Animación , descrito
 - variables de animación Windows Animation ,described
-- objetos de temporizador de animación Windows Animación , descrito
+- objetos de temporizador de animación Windows Animación ,descrito
 - timing system Windows Animation
 - duración contextual de Windows animación
 - velocidad de coincidencia Windows animación
 - contention management Windows Animation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bc0892cffa3e79428e19cbe5b1a3c27d7abda62365c4ceb15731101aa857f0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6a60b02b29d8d434cc93420f36c3cdca4428f94c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118348013"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243404"
 ---
 # <a name="windows-animation-overview"></a>Windows Información general sobre animaciones
 
@@ -85,7 +85,7 @@ Para conservar los recursos del sistema, se puede configurar un temporizador par
 
 La WINDOWS Animation API es una API basada en COM de un solo subproceso que proporciona las siguientes características para desarrolladores:
 
--   Un objeto de administrador de animación, [**UIAnimationManager,**](/previous-versions/windows/desktop/legacy/dd317019(v=vs.85))para crear objetos de animación y controlar animaciones
+-   Un objeto de administrador de animaciones, [**UIAnimationManager,**](/previous-versions/windows/desktop/legacy/dd317019(v=vs.85))para crear objetos de animación y controlar animaciones
 -   Variables de animación y guiones gráficos
 -   Una biblioteca fundamental, [**UIAnimationTransitionLibrary,**](/previous-versions/windows/desktop/legacy/dd317028(v=vs.85))de transiciones listas para usar
 -   Un objeto de temporizador, [**UIAnimationTimer,**](/previous-versions/windows/desktop/legacy/dd317021(v=vs.85))para determinar la hora actual y, opcionalmente, para impulsar la animación
@@ -93,7 +93,7 @@ La WINDOWS Animation API es una API basada en COM de un solo subproceso que prop
 
 Para obtener la referencia completa de la API, [consulte Windows Animation Reference](windows-animation-reference.md). Para obtener código de ejemplo, [vea Windows Animation Tasks](using-windows-animation.md) y Windows Animation [Samples](windows-animation-samples.md).
 
-## <a name="configurations"></a>Configuraciones
+## <a name="configurations"></a>Configurations
 
 Las aplicaciones deben obtener la hora actual antes de programar una animación nueva. Estos son los mecanismos de control de tiempo admitidos por Windows Animation:
 
@@ -114,7 +114,7 @@ En la configuración más sencilla, una aplicación volverá a dibujar todo cada
 
 En lugar de actualizar el administrador de animaciones directamente, las aplicaciones pueden permitir que el temporizador de animación informe al administrador de animaciones cuándo actualizar su estado y simplemente recibir una notificación cuando se haya realizado cada actualización. Este enfoque se recomienda para las API de gráficos anteriores. En general, si es posible sincronizar con la frecuencia de actualización del monitor, es mejor hacerlo y usar la animación controlada por la aplicación.
 
-En el diagrama siguiente se muestran las interacciones entre una aplicación y los componentes Windows animation cuando el temporizador de animación está impulsando las actualizaciones de animación.
+En el diagrama siguiente se muestran las interacciones entre una aplicación y los componentes Windows animación cuando el temporizador de animación está impulsando las actualizaciones de animación.
 
 ![diagrama que muestra las interacciones entre una aplicación y los componentes de animación de Windows cuando el temporizador de animación está impulsando las actualizaciones de animación.](images/animationtimerupdates.png)
 
@@ -149,20 +149,20 @@ Si dos guiones gráficos necesitan actualizar la misma variable de animación si
 
 ### <a name="contention-management"></a>Administración de contención
 
-Los desarrolladores pueden implementar una *devolución de* llamada de comparación de prioridad para comparar la prioridad del guión gráfico de que se está programando y el guión gráfico que ya está en la programación. Una aplicación que implementa una comparación de prioridad puede usar cualquier lógica preferida para determinar cuándo un guión gráfico precarga a otro. Para resolver el conflicto de programación, Windows Animation pregunta a la aplicación cuál de estas acciones se puede realizar, en el orden siguiente:
+Los desarrolladores pueden implementar una *devolución de* llamada de comparación de prioridad para comparar la prioridad del guión gráfico de que se está programando y el guión gráfico que ya está en la programación. Una aplicación que implementa una comparación de prioridad puede usar cualquier lógica preferida para determinar cuándo un guión gráfico vacía previamente otra. Para resolver el conflicto de programación, Windows Animation pregunta a la aplicación cuál de estas acciones se puede realizar, en el orden siguiente:
 
 -   **Cancele el guión gráfico programado.** Si el guión gráfico programado aún no se ha empezado a reproducir, es posible que se cancele y se quite inmediatamente de la programación.
--   **Recorte el guión gráfico programado.** Cuando un guión gráfico nuevo recorta un guión gráfico programado, el guión gráfico programado deja de afectar a la variable en cuanto el nuevo guión gráfico comienza a animarlo. Se comparan las velocidades, lo que permite que el nuevo guión gráfico se resalte sin problemas donde lo dejó el anterior.
--   **Concluya el guión gráfico programado.** Un guión gráfico solo se puede concluir si contiene un bucle que se repite indefinidamente. Si el guión gráfico está en un bucle de este tipo cuando se finaliza, se completa la repetición actual y, a continuación, se reproduce el resto del guión gráfico. Si el bucle aún no se ha iniciado cuando se ha finalizado un guión gráfico, el bucle se omite por completo.
--   **Comprima el guión gráfico programado.** Si recortar o cancelar el guión gráfico programado no es una opción, el guión gráfico puede completarse. Windows La animación presenta la posibilidad de comprimir el tiempo disponible para el guión gráfico programado (y los guiones gráficos programados antes de él), por lo que las variables alcanzan su estado final más rápidamente. Cuando se aplica la compresión, el tiempo se acelera temporalmente para los guiones gráficos afectados, por lo que se reproducen más rápido.
+-   **Recorte el guión gráfico programado.** Cuando un guión gráfico nuevo recorta un guión gráfico programado, el guión gráfico programado deja de afectar a la variable en cuanto el nuevo guión gráfico comienza a animarlo. Las velocidades coinciden, lo que permite que el nuevo guión gráfico se resalte sin problemas donde lo dejó el anterior.
+-   **Concluya el guión gráfico programado.** Un guión gráfico solo se puede concluir si contiene un bucle que se repite indefinidamente. Si el guión gráfico está en un bucle de este tipo cuando se finaliza, se completa la repetición actual y, a continuación, se reproduce el resto del guión gráfico. Si el bucle aún no ha empezado cuando se ha finalizado un guión gráfico, el bucle se omite por completo.
+-   **Comprima el guión gráfico programado.** Si el recorte o la cancelación del guión gráfico programado no es una opción, el guión gráfico puede completarse. Windows La animación presenta la posibilidad de comprimir el tiempo disponible para el guión gráfico programado (y los guiones gráficos programados antes de él), por lo que las variables alcanzan su estado final más rápidamente. Cuando se aplica la compresión, el tiempo se acelera temporalmente para los guiones gráficos afectados, por lo que se reproducen más rápido.
 
 Si los objetos de comparación de prioridad registrados no permiten ninguna de las acciones anteriores, se produce un error al intentar programar el nuevo guión gráfico. De forma predeterminada, todos los guiones gráficos se pueden recortar, concluir o comprimir para evitar errores, pero no se puede cancelar ninguno.
 
-En el diagrama siguiente se muestra el ciclo de vida de un guión gráfico, utilizando los estados definidos por la [**\_ enumeración UI ANIMATION \_ STORYBOARD \_ STATUS.**](/windows/win32/api/uianimation/ne-uianimation-ui_animation_storyboard_status) Las aplicaciones usan Windows Animation API para compilar un guión gráfico y enviarlo para su programación. El administrador de animación programa el guión gráfico y administra la animación.
+En el diagrama siguiente se muestra el ciclo de vida de un guión gráfico, utilizando los estados definidos por la [**\_ enumeración UI ANIMATION \_ STORYBOARD \_ STATUS.**](/windows/win32/api/uianimation/ne-uianimation-ui_animation_storyboard_status) Las aplicaciones usan Windows Animation API para compilar un guión gráfico y enviarlo para su programación. El administrador de animaciones programa el guión gráfico y administra la animación.
 
-![diagrama que muestra cómo el administrador de animación programa el guión gráfico y administra la animación.](images/statediagram.png)
+![diagrama que muestra cómo el administrador de animaciones programa el guión gráfico y administra la animación.](images/statediagram.png)
 
-Para obtener más información sobre la programación y administración de guiones gráficos, vea [Información general sobre guiones gráficos.](storyboard-construction.md)
+Para obtener más información sobre la programación y administración de guiones gráficos, vea [Información general del guión gráfico.](storyboard-construction.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

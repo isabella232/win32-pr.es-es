@@ -1,7 +1,7 @@
 ---
-description: El método Read Lee y devuelve los datos especificados de un archivo determinado.
+description: El método Read lee y devuelve los datos especificados de un archivo determinado.
 ms.assetid: 697b8dfa-754b-46cf-ab5c-1ac1d8ae47f2
-title: 'ISCardFileAccess:: Read (método)'
+title: Método ISCardFileAccess::Read
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - COM
 api_location: ''
 ms.openlocfilehash: b3d66b5c6e314a4ef7a00a76fabc8660f3bf65eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244353"
 ---
-# <a name="iscardfileaccessread-method"></a>ISCardFileAccess:: Read (método)
+# <a name="iscardfileaccessread-method"></a>Método ISCardFileAccess::Read
 
-\[El método **Read** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
+\[El **método Read** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El método **Read** Lee y devuelve los datos especificados de un archivo determinado.
+El **método Read** lee y devuelve los datos especificados de un archivo determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,34 +43,34 @@ HRESULT Read(
 
 <dl> <dt>
 
-*hFile* \[ de\]
+*hFile* \[ En\]
 </dt> <dd>
 
-Identificador del archivo abierto al que se va a tener acceso.
+Identificador del archivo abierto al que se tiene acceso.
 
 </dd> <dt>
 
-*lBytesToRead* \[ de\]
+*lBytesToRead* \[ En\]
 </dt> <dd>
 
-Longitud de los datos que se van a leer (en) o el número de bytes leídos (out). Devuelve una lista de archivos como una matriz de BSTR.
+Longitud de los datos que se leerán (entrada) o número de bytes leídos (out). Devuelve una lista de archivos como una matriz de BSTR.
 
 </dd> <dt>
 
-*marcas* \[ de de\]
+*flags* \[ En\]
 </dt> <dd>
 
 Especifica si se debe usar la mensajería segura.
 
 <dl><span id="SC_FL_SECURE_MESSAGING"></span><span id="sc_fl_secure_messaging"></span><dt>
 
-**\_ \_ mensajería segura de SC FL \_**
+**MENSAJERÍA SEGURA DE SC \_ FL \_ \_**
 </dt> </dl> </dd> <dt>
 
-*ppBuffer* \[ enuncia\]
+*ppBuffer* \[ out\]
 </dt> <dd>
 
-Un objeto [**IByteBuffer**](ibytebuffer.md) que contiene los datos leídos.
+Objeto [**IByteBuffer**](ibytebuffer.md) que contiene los datos leídos.
 
 </dd> </dl>
 
@@ -82,9 +82,9 @@ El método devuelve uno de los siguientes valores posibles.
 
 | Código devuelto                                                                                   | Descripción                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | Operación completada correctamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operación completada correctamente.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parámetro no válido.<br/>                |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | Se pasó un puntero no válido.<br/>      |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Se pasó un puntero no válido.<br/>      |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>                    |
 
 
@@ -93,9 +93,9 @@ El método devuelve uno de los siguientes valores posibles.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener una lista de todos los métodos definidos por esta interfaz, vea [**ISCardFileAccess**](iscardfileaccess.md).
+Para obtener una lista de todos los métodos definidos por esta interfaz, vea [**ISCardFileAccess.**](iscardfileaccess.md)
 
-Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de error de [*tarjeta inteligente*](../secgloss/s-gly.md) si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [valores devueltos de tarjeta inteligente](authentication-return-values.md).
+Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de [*error*](../secgloss/s-gly.md) de tarjeta inteligente si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [Valores devueltos de tarjeta inteligente.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,8 +103,8 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                       |
 

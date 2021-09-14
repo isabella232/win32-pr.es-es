@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3deefa38d7c7fcfc3f7942eb809b2ca14e96ea14ee4f2e014cdf3e0069a6ab9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a468de22d571fa52d37c2ad51d40d492af35384a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120009185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374554"
 ---
 # <a name="removevirtualdesktop-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método RemoveVirtualDesktop de la clase \_ RDMSVirtualDesktopCollection de Win32
 
@@ -52,7 +52,7 @@ Nombre de la máquina virtual que hospeda el escritorio virtual.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 

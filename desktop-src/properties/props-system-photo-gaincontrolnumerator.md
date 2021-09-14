@@ -4,12 +4,12 @@ ms.assetid: 5b94f7b8-ced8-4f49-bba2-30d15bafba4e
 title: System.Photo.GainControlNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 594319282634c062233ad0e8bb683a0f5a4f5e859b4636c1a046bd67d4359cea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3a8650405d95e2ef714bd39ef9702177610742e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118228890"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267956"
 ---
 # <a name="systemphotogaincontrolnumerator"></a>System.Photo.GainControlNumerator
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

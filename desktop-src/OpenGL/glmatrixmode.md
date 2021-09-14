@@ -1,9 +1,9 @@
 ---
-title: función glMatrixMode (GL. h)
+title: Función glMatrixMode (Gl.h)
 description: La función glMatrixMode especifica qué matriz es la matriz actual.
 ms.assetid: f1006ea3-322a-42a9-b33c-6c7181985ef9
 keywords:
-- glMatrixMode (función) OpenGL
+- Función glMatrixMode OpenGL
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 9877d62fc6e721cc6757206c7c2d07d24f3e879b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150619"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375179"
 ---
-# <a name="glmatrixmode-function"></a>glMatrixMode función)
+# <a name="glmatrixmode-function"></a>Función glMatrixMode
 
-La función **glMatrixMode** especifica qué matriz es la matriz actual.
+La **función glMatrixMode** especifica qué matriz es la matriz actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,15 +43,15 @@ void WINAPI glMatrixMode(
 *mode* 
 </dt> <dd>
 
-Pila de matriz que es el destino de las operaciones de matriz posteriores. El parámetro de *modo* puede suponer uno de los tres valores.
+Pila de matriz que es el destino de las operaciones de matriz posteriores. El *parámetro mode* puede suponer uno de los tres valores.
 
 
 
 | Value                                                                                                                                                         | Significado                                                                         |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| <span id="GL_MODELVIEW"></span><span id="gl_modelview"></span><dl> <dt>**GL \_ MODELVIEW**</dt> </dl>    | Aplica las operaciones de matriz subsiguientes a la pila de matriz de MODELVIEW.<br/>  |
-| <span id="GL_PROJECTION"></span><span id="gl_projection"></span><dl> <dt>**\_proyección GL**</dt> </dl> | Aplica las operaciones de matriz subsiguientes a la pila de la matriz de proyección.<br/> |
-| <span id="GL_TEXTURE"></span><span id="gl_texture"></span><dl> <dt>**\_textura GL**</dt> </dl>          | Aplica las operaciones de matriz subsiguientes a la pila de la matriz de textura.<br/>    |
+| <span id="GL_MODELVIEW"></span><span id="gl_modelview"></span><dl> <dt>**GL \_ MODELVIEW**</dt> </dl>    | Aplica las operaciones de matriz posteriores a la pila de matriz modelview.<br/>  |
+| <span id="GL_PROJECTION"></span><span id="gl_projection"></span><dl> <dt>**PROYECCIÓN \_ GL**</dt> </dl> | Aplica las operaciones de matriz posteriores a la pila de matriz de proyección.<br/> |
+| <span id="GL_TEXTURE"></span><span id="gl_texture"></span><dl> <dt>**TEXTURA \_ GL**</dt> </dl>          | Aplica las operaciones de matriz posteriores a la pila de la matriz de textura.<br/>    |
 
 
 
@@ -71,18 +71,18 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | el *modo* no era un valor aceptado.<br/>                                                                                          |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *mode* no era un valor aceptado.<br/>                                                                                          |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-La función **glMatrixMode** establece el modo de matriz actual.
+La **función glMatrixMode** establece el modo de matriz actual.
 
-La siguiente función recupera información relacionada con **glMatrixMode**:
+La función siguiente recupera información relacionada con **glMatrixMode**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el \_ modo de matriz de contabilidad de argumentos \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MATRIX \_ MODE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ La siguiente función recupera información relacionada con **glMatrixMode**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

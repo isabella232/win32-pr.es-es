@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1e06c1740e908c34652a6d39bc7a2334763199d222ff9d1dc00ae733803ada0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46abbb0edd2dfc7fc51aaf7fa6519dc5367b109c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117795237"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375110"
 ---
 # <a name="glortho-function"></a>función glOrtho
 
@@ -103,13 +103,13 @@ La función [**glGetError**](glgeterror.md) puede recuperar el código de error 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glOrtho** describe una matriz de perspectiva que genera una proyección paralela. Los *parámetros (* left , *bottom*, *near*) y (*right*, *top*, *near*) especifican los puntos del plano de recorte cercano que se asignan a las esquinas inferior izquierda y superior derecha de la ventana, respectivamente, suponiendo que el ojo se encuentra en (0, 0, 0). El *parámetro far* especifica la ubicación del plano de recorte lejano. Tanto *zNear* como *zFar* pueden ser positivos o negativos. La matriz correspondiente se muestra en la siguiente imagen.
 
 ![Diagrama que muestra la matriz de perspectiva que describe la función glOrtho.](images/ortho1.png)
 
-where
+, donde
 
 ![Ecuaciones que describen la matriz de perspectiva.](images/ortho2.png)
 

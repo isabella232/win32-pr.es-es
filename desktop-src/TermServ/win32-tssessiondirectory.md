@@ -1,6 +1,6 @@
 ---
 title: Win32_TSSessionDirectory clase
-description: Define los Conexión a Escritorio remoto de configuración de Broker (Agente de conexión a Escritorio remoto) para la clase \_ TSSessionDirectorySetting de Win32.
+description: Define la configuración Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto) para la \_ clase TSSessionDirectorySetting de Win32.
 ms.assetid: ef9042c2-4a35-49e9-b195-fb37c0919068
 ms.tgt_platform: multiple
 keywords:
@@ -35,16 +35,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f748eb3a84650a3188b55e90a6f13bb282fadbac285cdbc56722197d6d88a354
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb50ed77b99f415ae551dfcf69655af5c1d77501
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119137588"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243417"
 ---
 # <a name="win32_tssessiondirectory-class"></a>Clase TSSessionDirectory de Win32 \_
 
-Define la configuración Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto) para la [**clase \_ TSSessionDirectorySetting de Win32.**](win32-tssessiondirectorysetting.md)
+Define la configuración Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto) para la [**\_ clase TSSessionDirectorySetting de Win32.**](win32-tssessiondirectorysetting.md)
 
 > [!Note]  
 > En Windows Server 2008 R2, el nombre del Agente de sesión de Terminal Services (TS Session Broker) se cambió a Agente de conexión a Escritorio remoto. Estas propiedades se aplican a todos los sistemas operativos compatibles, a menos que se indique lo contrario.
@@ -81,7 +81,7 @@ class Win32_TSSessionDirectory : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSSessionDirectory de Win32** tiene estos tipos de miembros:
 
@@ -99,10 +99,10 @@ La **clase \_ TSSessionDirectory de Win32** tiene estos métodos.
 | [**CreateUserDiskTemplate**](createuserdisktemplate-win32-tssessiondirectory.md)                       | Crea una plantilla de disco de usuario.<br/>                                                                     |
 | [**DisableUserVhd**](disableuservhd-win32-tssessiondirectory.md)                                       | Deshabilita un VHD de perfil de usuario.<br/>                                                                      |
 | [**EnableUserVhd**](enableuservhd-win32-tssessiondirectory.md)                                         | Habilita un VHD de perfil de usuario en un servidor RDSH.<br/>                                                     |
-| [**GetCurrentRedirectableAddresses**](getcurrentredirectableaddresses-win32-tssessiondirectory.md)     | Obtiene la lista configurada actualmente de direcciones aptas para DNS y el tipo de redirección.<br/>        |
+| [**GetCurrentRedirectableAddresses**](getcurrentredirectableaddresses-win32-tssessiondirectory.md)     | Obtiene la lista configurada actualmente de direcciones aptas para DNS y el tipo de redireccionamiento.<br/>        |
 | [**GetRedirectableAddresses**](getredirectableaddresses-win32-tssessiondirectory.md)                   | Obtiene la lista completa de direcciones aptas para DNS.<br/>                                                |
 | [**PingSessionDirectory**](pingsessiondirectory-win32-tssessiondirectory.md)                           | Comprueba si el servidor del Agente de conexión a Escritorio remoto está disponible.<br/>                                      |
-| [**SetCurrentRedirectableAddresses**](setcurrentredirectableaddresses-win32-tssessiondirectory.md)     | Establece la lista configurada de direcciones DNS aptas y el tipo de redirección.<br/>                     |
+| [**SetCurrentRedirectableAddresses**](setcurrentredirectableaddresses-win32-tssessiondirectory.md)     | Establece la lista configurada de direcciones aptas para DNS y el tipo de redireccionamiento.<br/>                     |
 | [**SetLoadBalancingState**](setloadbalancingstate-win32-tssessiondirectory.md)                         | Establece el valor para indicar si el servidor participará en el equilibrio de carga del Agente de conexión a Escritorio remoto.<br/> |
 | [**SetServerWeight**](setserverweight-win32-tssessiondirectory.md)                                     | Establece el valor de peso del servidor para el equilibrio de carga del Agente de conexión a Escritorio remoto.<br/>                             |
 | [**SetSessionDirectoryActive**](win32-tssessiondirectory-setsessiondirectoryactive.md)                 | Deshabilita y habilita el Agente de conexión a Escritorio remoto.<br/>                                                    |
@@ -218,7 +218,7 @@ El servidor está configurado para actuar como Servicios de Escritorio remoto re
 1
 </dt> <dd>
 
-El servidor no está configurado para actuar como un Servicios de Escritorio remoto de acceso.
+El servidor no está configurado para actuar como Servicios de Escritorio remoto redirector.
 
 </dd> </dl>
 
@@ -458,7 +458,7 @@ Especifica si Servicios de Escritorio remoto participa en el Agente de conexión
 
 </dt> <dd>
 
-Servicios de Escritorio remoto participación en el Agente de conexión a Escritorio remoto está deshabilitado.
+Servicios de Escritorio remoto la participación en el Agente de conexión a Escritorio remoto está deshabilitada.
 
 </dd> <dt>
 
@@ -563,7 +563,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -627,9 +627,9 @@ Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystem
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para conectarse al espacio \\ \\ de nombres Raíz de \\ \\ TerminalServices CIMV2, el nivel de autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de seis.
+Para conectarse al espacio \\ \\ de nombres Raíz de \\ \\ TerminalServices CIMV2, el nivel de autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de seis.
 
 En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
@@ -646,7 +646,7 @@ En Windows Server 2008, el nombre de la característica Directorio de sesión de
 
 En Windows Server 2008 R2, el nombre de la característica Agente de sesión de Terminal Services se cambió a Conexión a Escritorio remoto Broker.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las clases Windows Management Instrumentation (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 

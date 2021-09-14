@@ -19,12 +19,12 @@ keywords:
 - Asistente para proyectos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55b2f5a4b6d29b227b08654cfcde2a89cc97b224fc756251ae9554f029f22416
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1ea2382e5852965b246f1ef303e5e70d160cb22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119763945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243285"
 ---
 # <a name="compiling-the-sample-project"></a>Compilación del ejemplo Project
 
@@ -35,9 +35,9 @@ El asistente genera todos los archivos que necesita para compilar el proyecto de
 
  
 
-Antes de intentar compilar el proyecto, asegúrese de configurar el entorno de desarrollo para que apunte a las carpetas denominadas Include y Lib donde instaló Windows SDK. El compilador y el vinculador necesitarán acceso a algunos de los archivos de estas carpetas.
+Antes de intentar compilar el proyecto, asegúrese de configurar el entorno de desarrollo para que apunte a las carpetas denominadas Include y Lib donde instaló el SDK Windows. El compilador y el vinculador necesitarán acceso a algunos de los archivos de estas carpetas.
 
-Si ejecutó la utilidad Visual Studio Registration que se incluye con el SDK de Windows Vista, es probable que el entorno de desarrollo ya se haya configurado para que apunte a las carpetas include y Lib del SDK de Windows. De lo contrario, debe configurar manualmente el entorno de desarrollo.
+Si ejecutó la utilidad Visual Studio Registration que se incluye con el SDK de Windows Vista, es probable que el entorno de desarrollo ya se haya configurado para que apunte a las carpetas Include y Lib del SDK de Windows. De lo contrario, debe configurar manualmente el entorno de desarrollo.
 
 Para configurar manualmente Visual Studio, siga estos pasos.
 

@@ -1,19 +1,19 @@
 ---
-description: Bluetooth clase de detección limitada del servicio de dispositivo.
+description: Bluetooth clase de detección limitada del servicio de dispositivos.
 ms.assetid: 6972462b-cbda-4d5a-9d49-b0ec0d84d295
 title: System.Devices.Aep. Bluetooth. Cod.Services.LimitedDiscovery
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b26d72e06c186d971707dc5d9983ee8f351c5cfcef1d7682f81831c8b28214a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5cbfa774881bd7c7ed67479cad5ac28bf5a5b66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118054658"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268087"
 ---
 # <a name="systemdevicesaepbluetoothcodserviceslimiteddiscovery"></a>System.Devices.Aep. Bluetooth. Cod.Services.LimitedDiscovery
 
-Bluetooth clase de detección limitada del servicio de dispositivo.
+Bluetooth clase de detección limitada del servicio de dispositivos.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

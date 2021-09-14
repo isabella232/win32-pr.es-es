@@ -4,12 +4,12 @@ ms.assetid: d2c65c9b-6f52-46f7-935d-0c582ca83867
 title: Cómo escalar un origen de mapa de bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2771ed13c23fdb3d74cf9c24899bea7a355efefcb5e541ac21aff53f372ded0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 737f72014929065bc63ec9c6021b05e38799d06e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118439703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267388"
 ---
 # <a name="how-to-scale-a-bitmap-source"></a>Cómo escalar un origen de mapa de bits
 
@@ -17,7 +17,7 @@ En este tema se muestra cómo escalar [**un IWICBitmapSource**](/windows/desktop
 
 Para escalar un origen de mapa de bits
 
-1.  Cree un [**objeto IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para crear Windows componentes de creación de imágenes (WIC).
+1.  Cree un [**objeto IWICImagingFactory para**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) crear Windows componentes de creación de imágenes (WIC).
 
     ```C++
     // Create WIC factory

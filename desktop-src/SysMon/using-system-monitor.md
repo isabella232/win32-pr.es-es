@@ -4,18 +4,18 @@ description: El Monitor de sistema (SYSMON) se puede incluir en cualquier aplica
 ms.assetid: 36931aae-b608-42d9-a3e3-09784e80f386
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8fcd29993e49b3db1693792949bd20f7a37ef8ba9d85d3bbe36ea67ac013919
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: abd636c8b984f7c891c2222b4674dd8d0d7e747d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117954473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243831"
 ---
 # <a name="using-system-monitor"></a>Uso del Monitor de sistema
 
 El Monitor de sistema (SYSMON) se puede incluir en cualquier aplicación que admita ActiveX® controles. Por ejemplo, puede incluir SYSMON en una aplicación de Microsoft Visual Basic o en un documento HTML.
 
-En el ejemplo siguiente se muestra cómo incluir SYSMON en un documento HTML. En el ejemplo se usa VBScript para agregar contadores cuyos valores se recuperan del equipo local, modifica algunas de las propiedades SYSMON que controlan cómo se muestra el monitor y procesa el evento OnCounterAdd. En el ejemplo se usa el carácter comodín ( ) para \* agregar todas las instancias del contador de procesos.
+En el ejemplo siguiente se muestra cómo incluir SYSMON en un documento HTML. En el ejemplo se usa VBScript para agregar contadores cuyos valores se recuperan del equipo local, modifica algunas de las propiedades SYSMON que controlan cómo se muestra el monitor y procesa el evento OnCounterAdd. En el ejemplo se usa el carácter comodín ( \* ) para agregar todas las instancias del contador de procesos.
 
 ``` syntax
 <HTML>

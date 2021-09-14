@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: a0db06f9dcafd211f628eb7cd0be9ed2f800b6f1b980d8e2320cd82b2849d386
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf3cf05ff6e6040d5cac2bde161fa2eea07d5297
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120014245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244227"
 ---
 # <a name="iscardlocatefindcard-method"></a>Método ISCardLocate::FindCard
 
@@ -51,10 +51,10 @@ Modo en el que se va a compartir o no la tarjeta inteligente cuando se abre una 
 
 
 
-| Valor                                                                                                                                            | Significado                                                       |
+| Value                                                                                                                                            | Significado                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="EXCLUSIVE"></span><span id="exclusive"></span><dl> <dt>**Exclusivo**</dt> </dl> | Nadie más usa esta conexión a la tarjeta inteligente.<br/> |
-| <span id="SHARED"></span><span id="shared"></span><dl> <dt>**Compartido**</dt> </dl>          | Otras aplicaciones pueden usar esta conexión.<br/>        |
+| <span id="EXCLUSIVE"></span><span id="exclusive"></span><dl> <dt>**EXCLUSIVO**</dt> </dl> | Nadie más usa esta conexión a la tarjeta inteligente.<br/> |
+| <span id="SHARED"></span><span id="shared"></span><dl> <dt>**COMPARTIDO**</dt> </dl>          | Otras aplicaciones pueden usar esta conexión.<br/>        |
 
 
 
@@ -84,7 +84,7 @@ Especifica cuándo se [*muestra la interfaz*](../secgloss/u-gly.md) de usuario:
 
 
 
-| Valor                                                                                                                                                                       | Significado                                                                                                                                                                                                                                                                                                                             |
+| Value                                                                                                                                                                       | Significado                                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="SC_DLG_MINIMAL_UI"></span><span id="sc_dlg_minimal_ui"></span><dl> <dt>**INTERFAZ \_ DE USUARIO MÍNIMA DE SC DLG \_ \_**</dt> </dl> | Muestra el cuadro de diálogo solo si la tarjeta que busca la aplicación que realiza la llamada no se encuentra y está disponible para su uso en un lector. Esto permite que la tarjeta se encuentra, se conecta (ya sea a través de un mecanismo de cuadro de diálogo interno o mediante las funciones de devolución de llamada del usuario) y se devuelve a la aplicación que realiza la llamada.<br/> |
 | <span id="SC_DLG_NO_UI"></span><span id="sc_dlg_no_ui"></span><dl> <dt>**SC \_ DLG \_ NO \_ UI**</dt> </dl>                | No provoca ninguna presentación de la interfaz de usuario, independientemente del resultado de la búsqueda.<br/>                                                                                                                                                                                                                                                                  |
@@ -120,7 +120,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para establecer los criterios de búsqueda de la búsqueda, llame a [**ConfigureCardNameSearch**](iscardlocate-configurecardnamesearch.md) para especificar los nombres de tarjeta de una tarjeta inteligente.
 
@@ -132,13 +132,13 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardLocate se define como \_ 1461AACD-6810-11D0-918F-00AA00C18068<br/>         |

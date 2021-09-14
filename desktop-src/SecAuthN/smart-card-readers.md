@@ -1,19 +1,19 @@
 ---
-description: Los lectores son dispositivos estándar en un sistema de tarjetas inteligentes. Se controlan mediante controladores y se introducen en el sistema y se quitan del sistema mediante Plug and Play o a través del elemento Panel de control Dispositivos.
+description: Los lectores son dispositivos estándar en un sistema de tarjetas inteligentes. Se controlan a través de controladores y se introducen y quitan del sistema a través de Plug and Play o a través del elemento Panel de control Devices.
 ms.assetid: 694902b9-e43c-4558-8fab-baa853f9fc4d
 title: Lectores de tarjetas inteligentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 335aabe1d815e9b6d41ccfd820242209da63134797595d8a1c85f009f8551b7e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b6f4f5c4d1d487f136fb25052d44659f4b073bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118917754"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374935"
 ---
 # <a name="smart-card-readers"></a>Lectores de tarjetas inteligentes
 
-Los lectores son dispositivos estándar en un [*sistema de tarjetas inteligentes.*](../secgloss/s-gly.md) Se controlan mediante controladores y se introducen en el sistema y se quitan del sistema mediante Plug and Play o a través del elemento Panel de control Dispositivos.
+Los lectores son dispositivos estándar en un [*sistema de tarjetas inteligentes.*](../secgloss/s-gly.md) Se controlan a través de controladores y se introducen y quitan del sistema a través de Plug and Play o a través del elemento Panel de control Devices.
 
 El subsistema de tarjeta inteligente debe definir cada lector [*para su uso.*](../secgloss/s-gly.md) El subsistema no es responsable de ningún lector que no se le ha dado específicamente.
 

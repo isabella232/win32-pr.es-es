@@ -1,12 +1,12 @@
 ---
-title: Método SetStringProperty de la Win32_RDSHServer clase (Certenroll.h)
+title: Método SetStringProperty de la Win32_RDSHServer (Certenroll.h)
 description: Actualiza un valor de propiedad de cadena de un objeto \_ RDSHServer de Win32.
 ms.assetid: 9a338872-27fc-4e37-afd6-20a42c7859e5
 ms.tgt_platform: multiple
 keywords:
 - Método SetStringProperty Servicios de Escritorio remoto
 - Método SetStringProperty Servicios de Escritorio remoto , Win32_RDSHServer clase
-- Win32_RDSHServer clase Servicios de Escritorio remoto método , SetStringProperty
+- Win32_RDSHServer clase Servicios de Escritorio remoto , método SetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2715271bcb73efd15acbef2097a29a978774e575a4fb115a9ef9e727e3efa91
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53d30812c0df943175f96c8ae43a4fe094725c74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118349396"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374395"
 ---
-# <a name="setstringproperty-method-of-the-win32_rdshserver-class"></a>Método SetStringProperty de la clase RDSHServer de Win32 \_
+# <a name="setstringproperty-method-of-the-win32_rdshserver-class"></a>Método SetStringProperty de la clase \_ RDSHServer de Win32
 
 Actualiza un valor de propiedad de cadena de [**un objeto \_ RDSHServer de Win32.**](win32-rdshserver.md)
 
@@ -71,7 +71,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
 | Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
-| Header<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 

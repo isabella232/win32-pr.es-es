@@ -1,9 +1,9 @@
 ---
 title: Función gluPwlCurve (Glu.h)
-description: La función gluPwlCurve describe una curva de recorte lineal no uniforme de spline B lógica no uniforme (SPLINEBS).
+description: La función gluPwlCurve describe una curva de recorte lineal lineal no uniforme de B-Spline lógica (DSLBS).
 ms.assetid: 3d08e7e8-dfdf-447c-9795-bd73299412b5
 keywords:
-- Función gluPwlCurve OpenGL
+- Función GluPwlCurve OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9911619e54247c633d4b3cecc69327f92da6a7f27c3cebf9231ec86ad0f0a20d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d15c532659811c7e499369e7798c4b1ceaf842bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244916"
 ---
-# <a name="glupwlcurve-function"></a>función gluPwlCurve
+# <a name="glupwlcurve-function"></a>Función gluPwlCurve
 
-La **función gluPwlCurve** describe una curva de recorte lineal lineal no uniforme de B-Spline no uniforme [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
+La **función gluPwlCurve** describe una curva de recorte lineal lineal no uniforme de B-Spline lógica [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -83,11 +83,11 @@ Tipo de curva. Debe ser GLU \_ MAP1 \_ TRIM \_ 2 o GLU \_ MAP1 \_ TRIM \_ 3.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función gluPwlCurve** describe una curva de recorte lineal por fragmentos para una superficie DE ASEBS. Una curva lineal por fragmentos consta de una lista de coordenadas de puntos en el espacio de parámetros para la superficie DE LA QUE SE VA A RECORTAR. Estos puntos están conectados con segmentos de línea para formar una curva. Si la curva es una aproximación a una curva real, los puntos deben estar lo suficientemente cerca como para que la ruta de acceso resultante aparezca curvada en la resolución utilizada en la aplicación.
+La **función gluPwlCurve** describe una curva de recorte lineal por fragmentos para una superficie DE ASEBS. Una curva lineal por fragmentos consta de una lista de coordenadas de puntos en el espacio de parámetros para la superficie DE LA BASE DE DATOS QUE se va a recortar. Estos puntos están conectados con segmentos de línea para formar una curva. Si la curva es una aproximación a una curva real, los puntos deben estar lo suficientemente cerca como para que la ruta de acceso resultante aparezca curvada en la resolución utilizada en la aplicación.
 
-Si *type* es GLU MAP1 TRIM 2, describe una curva en el espacio de parámetros \_ \_ \_ bidimensional *(u* y *v).* Si es GLU MAP1 TRIM 3, describe una curva en el espacio de parámetros \_ homogéneo bidimensional \_ \_ *(u*, *v* y *w).* Para obtener más información sobre el recorte de curvas, [**vea gluBeginTrim**](glubegintrim.md).
+Si *type* es GLU MAP1 TRIM 2, describe una curva en un espacio de parámetros \_ \_ \_ bidimensional *(u* y *v).* Si es GLU MAP1 TRIM 3, describe una curva en un espacio de parámetros \_ \_ \_ homogéneo bidimensional *(u,* *v* y *w).* Para obtener más información sobre el recorte de curvas, [**vea gluBeginTrim**](glubegintrim.md).
 
 ## <a name="requirements"></a>Requisitos
 

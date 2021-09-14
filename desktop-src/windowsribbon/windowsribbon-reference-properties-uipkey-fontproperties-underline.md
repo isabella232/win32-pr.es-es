@@ -1,19 +1,19 @@
 ---
 title: UI_PKEY_FontProperties_Underline
-description: Identifica la propiedad PKEY FontProperties Underline de la interfaz \_ \_ de \_ usuario.
+description: Identifica la propiedad \_ FontProperties Underline de PKEY \_ de la interfaz de \_ usuario.
 ms.assetid: 88492558-ab19-4606-8fe0-5f100677b88a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b75142e08549c2084ebcd37e82943ed63fdfb5b278faef01c4ad79441fa36915
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 066027e5f62416667619937eea7dbe493a3ff279
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118706730"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267263"
 ---
-# <a name="ui_pkey_fontproperties_underline"></a>UI \_ PKEY \_ FontProperties \_ Underline
+# <a name="ui_pkey_fontproperties_underline"></a>Subrayado \_ fontproperties PKEY de la interfaz \_ de \_ usuario
 
-Identifica la propiedad PKEY FontProperties Underline de la interfaz \_ \_ de \_ usuario.
+Identifica la propiedad \_ FontProperties Underline de PKEY \_ de la interfaz de \_ usuario.
 
 ```
 propertyDescription
@@ -25,15 +25,15 @@ propertyDescription
       type = UI_FONTUNDERLINE
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una aplicación usa FontProperties Underline de ui PKEY para consultar \_ el estado del botón \_ \_ **Subrayado.**
+Una aplicación usa el subrayado FontProperties PKEY de la interfaz de usuario \_ para consultar el estado del botón \_ \_ **Subrayado.**
 
 El valor de propiedad es de la [**\_ enumeración FONTUNDERLINE de la interfaz de**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontunderline) usuario.
 
 El valor predeterminado es `UI_FONTUNDERLINE_NOTSET`.
 
-En la siguiente captura de pantalla se muestra **el botón Subrayado** del control [**FontControl de la cinta de opciones.**](windowsribbon-element-fontcontrol.md)
+En la captura de pantalla siguiente se muestra **el botón Subrayado** de [**FontControl de la cinta de opciones**](windowsribbon-element-fontcontrol.md).
 
 ![captura de pantalla del elemento fontcontrol con el atributo richfont establecido en true.](images/markup/fontcontrol-underline.png)
 
@@ -41,11 +41,11 @@ En la tabla siguiente se describen las propiedades y el resultado de la interfaz
 
 
 
-|      Propiedad                   |       Resultado de la interfaz de usuario                                                          |
+|      Propiedad.                   |       Resultado de la interfaz de usuario                                                          |
 |---------------------------------|--------------------------------------------------------------------------|
 | `UI_FONTUNDERLINE_NOTAVAILABLE` | **El** botón Subrayado está deshabilitado y solo la aplicación puede establecerlo. |
-| `UI_FONTUNDERLINE_NOTSET`       | **El** botón Subrayado no está seleccionado.                                    |
-| `UI_FONTUNDERLINE_SET`          | **El** botón Subrayado está seleccionado.                                        |
+| `UI_FONTUNDERLINE_NOTSET`       | **El botón** Subrayado no está seleccionado.                                    |
+| `UI_FONTUNDERLINE_SET`          | **El botón** Subrayado está seleccionado.                                        |
 
 
 

@@ -4,12 +4,12 @@ description: Enumera las macros contenedoras para los proveedores de TraceLoggin
 ms.assetid: 806F43F3-D376-4DBD-A4C5-B5F01E5D009D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bad266f44dbd82c31ceea95eed2978c5634beb8a75830d073465ef11c1be331
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9dc28b3a35074089b1f5c613b041534b8b282423
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118966484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267575"
 ---
 # <a name="tracelogging-wrapper-macros"></a>Macros de contenedor tracelogging
 

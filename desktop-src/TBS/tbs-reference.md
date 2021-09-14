@@ -6,12 +6,12 @@ keywords:
 - TPM Base Services TBS , referencia
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eaccce85c46706c60c3d95467ce264efd5bb28d091b6aa7c22bd0c689e953337
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed6a091a75a67a1ef5eb2803dccc8bd3a2f15a8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118880661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243776"
 ---
 # <a name="tbs-reference"></a>Referencia de TBS
 

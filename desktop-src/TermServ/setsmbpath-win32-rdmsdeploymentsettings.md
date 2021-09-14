@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c91d64b589ed61e7cc9713636dcc0f0b090da749ca9d8e8d9ab7567e8500175
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d40598a3217ff1ca7c6082b3af09097352962309
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120008585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374427"
 ---
 # <a name="setsmbpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método SetSMBPath de la clase RDMSDeploymentSettings de Win32 \_
 

@@ -4,12 +4,12 @@ ms.assetid: c9a52867-0a0b-40d8-a09d-2b7bed517e13
 title: Provider-Specific funciones del cuadro de diálogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4d31a38f09dd0e0806fe21f491d02b5e18fe0abb1e5a181e40f0ab6370280b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 567c4dcb9f1fd6c2e289d678cf09b3d0d66e4207
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118920582"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374983"
 ---
 # <a name="provider-specific-dialog-box-functions"></a>Provider-Specific funciones del cuadro de diálogo
 

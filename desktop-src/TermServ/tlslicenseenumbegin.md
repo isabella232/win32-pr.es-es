@@ -1,6 +1,6 @@
 ---
 title: Función TLSLicenseEnumBegin
-description: Comienza la enumeración de licencias emitidas por el Escritorio remoto de licencias en función de los criterios de búsqueda.
+description: Comienza la enumeración de licencias emitidas por el servidor de Escritorio remoto en función de los criterios de búsqueda.
 ms.assetid: ec575632-b828-49c0-b326-1ab420381875
 ms.tgt_platform: multiple
 keywords:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 620f6487bb516a76ac5cb7f77da9983178933c24ac03151bd9a4c8455f694ec9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 95913337de968d0b30780b5898b7f204d947dd4b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243507"
 ---
 # <a name="tlslicenseenumbegin-function"></a>Función TLSLicenseEnumBegin
 
-Comienza la enumeración de licencias emitidas por el Escritorio remoto de licencias en función de los criterios de búsqueda.
+Comienza la enumeración de licencias emitidas por el servidor de Escritorio remoto en función de los criterios de búsqueda.
 
 > [!Note]  
 > Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
@@ -60,13 +60,13 @@ Identificador de un Escritorio remoto de licencias. Especifique un identificador
 *dwSearchParm* \[ En\]
 </dt> <dd>
 
-Especifica los criterios de búsqueda. El parámetro puede ser uno o una combinación de los valores que se describen en la lista siguiente. El parámetro especifica el tipo de key pack y el paquete de claves que se va a buscar.
+Especifica los criterios de búsqueda. El parámetro puede ser uno o una combinación de los valores que se describen en la lista siguiente. El parámetro especifica el tipo de paquete de claves y el paquete de claves que se va a buscar.
 
 <dt>
 
 <span id="LSLICENSE_SEARCH_LICENSEID"></span><span id="lslicense_search_licenseid"></span>
 
-<span id="LSLICENSE_SEARCH_LICENSEID"></span><span id="lslicense_search_licenseid"></span>**LSLICENSE \_ SEARCH \_ LICENSEID** (0x00000001)
+<span id="LSLICENSE_SEARCH_LICENSEID"></span><span id="lslicense_search_licenseid"></span>**LSLICENSE \_ BUSCAR \_ LICENSEID** (0x00000001)
 
 
 </dt> <dd>
@@ -99,7 +99,7 @@ Busque por nombre de máquina.
 
 <span id="LSLICENSE_SEARCH_USERNAME"></span><span id="lslicense_search_username"></span>
 
-<span id="LSLICENSE_SEARCH_USERNAME"></span><span id="lslicense_search_username"></span>**LSLICENSE \_ SEARCH \_ USERNAME** (nombre de usuario) (0x00000010)
+<span id="LSLICENSE_SEARCH_USERNAME"></span><span id="lslicense_search_username"></span>**LSLICENSE \_ NOMBRE \_ DE USUARIO DE** BÚSQUEDA (0x00000010)
 
 
 </dt> <dd>
@@ -121,7 +121,7 @@ Buscar por fecha de problema.
 
 <span id="LSLICENSE_SEARCH_EXPIREDATE"></span><span id="lslicense_search_expiredate"></span>
 
-<span id="LSLICENSE_SEARCH_EXPIREDATE"></span><span id="lslicense_search_expiredate"></span>**LSLICENSE \_ SEARCH \_ EXPIREDATE** (0x00000100)
+<span id="LSLICENSE_SEARCH_EXPIREDATE"></span><span id="lslicense_search_expiredate"></span>**LSLICENSE \_ BUSCAR \_ EXPIREDATE** (0x00000100)
 
 
 </dt> <dd>
@@ -143,7 +143,7 @@ Buscar por número de licencias.
 
 <span id="LSLICENSE_SEARCH___ENTRY_STATUS"></span><span id="lslicense_search___entry_status"></span>
 
-<span id="LSLICENSE_SEARCH___ENTRY_STATUS"></span><span id="lslicense_search___entry_status"></span>**LSLICENSE \_ ESTADO \_ DE ENTRADA DE \_ BÚSQUEDA** (0x20000000)
+<span id="LSLICENSE_SEARCH___ENTRY_STATUS"></span><span id="lslicense_search___entry_status"></span>**LSLICENSE \_ ESTADO \_ DE LA ENTRADA \_ DE** BÚSQUEDA (0x20000000)
 
 
 </dt> <dd>
@@ -219,7 +219,7 @@ Error interno en el servidor de licencias.
 
 <span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>
 
-<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ E \_ SECUENCIA NO \_ VÁLIDA** (5006)
+<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ E \_ SECUENCIA \_ NO VÁLIDA** (5006)
 
 
 </dt> <dd>
@@ -267,14 +267,14 @@ Esta función devuelve los siguientes valores devueltos posibles.
 
 <dl> <dt>
 
-**RPC \_ S \_ OK**
+**RPC \_ S \_ CORRECTO**
 </dt> <dd>
 
-La llamada se ha realiza correctamente. Compruebe el valor del parámetro *pdwErrCode* para obtener el código de retorno de la llamada.
+La llamada se ha realiza correctamente. Compruebe el valor del *parámetro pdwErrCode* para obtener el código de retorno de la llamada.
 
 </dd> <dt>
 
-**RPC \_ S \_ INVALID \_ ARG**
+**RPC \_ S ARGUMENTO NO \_ \_ VÁLIDO**
 </dt> <dd>
 
 El argumento no era válido.

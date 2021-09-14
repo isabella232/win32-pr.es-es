@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 61fa3403fc56c6a02f97330b3c2f62d1c3e3c723f50672520ea42fb4a2018705
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 520a4262baf17badb136b55e7b2e216bf89d7edf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243284"
 ---
 # <a name="entryref-element"></a>ELEMENTO ENTRYREF
 
@@ -55,9 +55,9 @@ Este atributo ya no se admite.
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento apunta al contenido de un metarchivo externo. Reproductor de Windows Media procesa los elementos **ENTRY** del metarchivo al que se hace referencia como si estuvieran incluidos en el metarchivo principal en la posición del **elemento ENTRYREF.** Sin embargo, omite los elementos **ENTRY** del metarchivo al que se hace referencia que tienen el atributo **SKIPIFREF** establecido en YES.
+Este elemento apunta al contenido de un metarchivo externo. Reproductor de Windows Media procesa los elementos **ENTRY** del metarchivo al que se hace referencia como si estuvieran incluidos en el metarchivo principal en la posición del **elemento ENTRYREF.** Sin embargo, omite los elementos **ENTRY** del metarchivo al que se hace referencia y que tienen el atributo **SKIPIFREF** establecido en YES.
 
-Reproductor de Windows Media 7.0, 7.1 y Reproductor de Windows Media para Windows XP omiten los elementos **ENTRYREF** del metarchivo al que se hace referencia. Por lo tanto, los metarchivos solo se pueden anidar un nivel de profundidad cuando se usan estas versiones del reproductor. Reproductor de Windows Media omite también el elemento **ASX** del archivo al que se hace referencia junto con sus atributos. Reproductor de Windows Media serie 9 o posterior admite el anidamiento de metarchivos de hasta cinco niveles de profundidad.
+Reproductor de Windows Media 7.0, 7.1 y Reproductor de Windows Media para Windows XP omiten los elementos **ENTRYREF** del metarchivo al que se hace referencia. Por lo tanto, los metarchivos solo se pueden anidar en un nivel de profundidad cuando se usan estas versiones del reproductor. Reproductor de Windows Media omite el elemento **ASX** en el archivo al que se hace referencia junto con sus atributos. Reproductor de Windows Media serie 9 o posterior admite el anidamiento de metarchivos de hasta cinco niveles de profundidad.
 
 La dirección URL especificada en el **atributo HREF** se convierte en la dirección URL base de las direcciones URL relativas del metarchivo externo. Esta dirección URL se usa cuando se reproduce una entrada del metarchivo externo y el usuario la agrega a la biblioteca.
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 68da059abfccbdc6569bad160df90059439ab427d62038182e9514b138f82b94
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7eed6758373aebf08863669b5b81909fca1c0840
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118922644"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244142"
 ---
 # <a name="iscardtypeconvconvertbytebuffertobytearray-method"></a>Método ISCardTypeConv::ConvertByteBufferToByteArray
 
@@ -66,7 +66,7 @@ El método devuelve uno de los siguientes valores posibles:
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Memoria asignada correctamente.<br/>                                                        |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Hay algún problema con uno o varios de los parámetros pasados a la función.<br/> |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Un parámetro de tipo de puntero era incorrecto.<br/>                                            |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Un parámetro de tipo puntero era incorrecto.<br/>                                            |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay suficiente memoria libre para satisfacer la solicitud.<br/>                                            |
 
 
@@ -77,20 +77,20 @@ El método devuelve uno de los siguientes valores posibles:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardTypeConv se define como \_ 53B6AA63-3F56-11D0-916B-00AA00C18068<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1001d5c723642357263a6029c3569eaa861f7dcf3689cc7d06b42e04ef461aa2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 138f6d91ed428caabf8da69e3d958675f879dd15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119987505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374403"
 ---
 # <a name="setstringproperty-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método SetStringProperty de la clase RDMSDeploymentSettings de Win32 \_
 
@@ -67,7 +67,7 @@ Nuevo valor de propiedad.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
 | Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
-| Header<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 

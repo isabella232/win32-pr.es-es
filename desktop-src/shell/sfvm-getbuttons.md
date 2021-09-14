@@ -4,12 +4,12 @@ ms.assetid: 0c0dbf61-9da9-4bcc-bad9-92c3f78db78f
 title: SFVM_GETBUTTONS mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 299641ef45d17a6ad1e4d709c3250abe220e297daedabcb563eeba9dcf56262a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2ad4ced86909c37ec77bf0470b46a40954f5b61c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120008985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267780"
 ---
 # <a name="sfvm_getbuttons-message"></a>Mensaje \_ GETBUTTONS de SFVM
 
@@ -46,7 +46,7 @@ Dirección de una matriz de estructuras [**TBBUTTON,**](/windows/win32/api/commc
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje va precedido de un [**mensaje \_ GETBUTTONINFO de SFVM.**](sfvm-getbuttoninfo.md) El objeto de devolución de llamada debe controlar ese mensaje para especificar el número de botones y dónde se van a colocar en la barra de herramientas. En función de cómo responda el objeto de devolución de llamada al mensaje **\_ GETBUTTONINFO de SFVM,** los botones especificados por el parámetro *pbtn* se anexarán o anteponen a los botones estándar del objeto de vista de carpeta del sistema, o reemplazarán el conjunto estándar.
 

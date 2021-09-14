@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método SetDeviceRedirectionType Servicios de Escritorio remoto
 - Método SetDeviceRedirectionType Servicios de Escritorio remoto , Win32_TSGatewayConnectionAuthorizationPolicy clase
-- Win32_TSGatewayConnectionAuthorizationPolicy clase Servicios de Escritorio remoto método , SetDeviceRedirectionType
+- Win32_TSGatewayConnectionAuthorizationPolicy clase Servicios de Escritorio remoto , método SetDeviceRedirectionType
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdd3ccbe06acbc75e8c7c29632d7fd83dc0af222eb004c6b83976e3f6478f705
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98b369e0b6031aa503e2f7f55860d004f63b7f93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118604664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374442"
 ---
 # <a name="setdeviceredirectiontype-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método SetDeviceRedirectionType de la clase \_ TSGatewayConnectionAuthorizationPolicy de Win32
 
@@ -67,15 +67,15 @@ No se redirigirá ningún dispositivo.
 2
 </dt> <dd>
 
-Los dispositivos especificados no se redirigirán. Las **propiedades DiskDrivesDisabled**, **PrintersDisabled,** **SerialPortsDisabled,** **ClipboardDisabled** y **PlugAndPlayDevicesDisabled** controlan qué dispositivos no se redirigirán.
+Los dispositivos especificados no se redirigirán. Las propiedades **DiskDrivesDisabled**, **PrintersDisabled,** **SerialPortsDisabled,** **ClipboardDisabled** y **PlugAndPlayDevicesDisabled** controlan qué dispositivos no se redirigirán.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
@@ -85,11 +85,11 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 

@@ -4,12 +4,12 @@ description: Las pestañas proporcionan una manera de presentar información rel
 ms.assetid: d90228ce-aa95-4359-be8e-ea2014d71ae6
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 167b74bab228398eb0334452a5eacd359578d5bfc01efecb52ccafbcd90d376d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6922865abcaa060cc2e4b13e4768d57bcd17aa8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119819097"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267452"
 ---
 # <a name="tabs"></a>Pestañas
 
@@ -22,12 +22,12 @@ Las pestañas proporcionan una manera de presentar información relacionada en p
 
 Un conjunto típico de pestañas.
 
-Las pestañas suelen estar asociadas a ventanas de propiedades (y viceversa), pero las pestañas se pueden usar en cualquier tipo de ventana.
+Las pestañas suelen asociarse a ventanas de propiedades (y viceversa), pero las pestañas se pueden usar en cualquier tipo de ventana.
 
-Los controles de pestaña representan las carpetas con pestañas que se usan para organizar la información en los archivadores que se encuentran normalmente en el Estados Unidos. (Las carpetas de Van no se usan en todo el mundo).
+Los controles de pestaña representan las carpetas de pestañas que se usan para organizar la información en los archivadores que se encuentran normalmente en el Estados Unidos. (Las carpetas de Yas no se usan en todo el mundo).
 
 > [!Note]  
-> Las directrices relacionadas [con el diseño,](vis-layout.md) [los menús de pestañas,](cmd-menus.md) [los cuadros de](win-dialog-box.md)diálogo y las ventanas [de propiedades](win-property-win.md) se presentan en artículos independientes.
+> Las instrucciones relacionadas con el [](win-dialog-box.md) [diseño,](vis-layout.md) [los menús de pestañas,](cmd-menus.md)los cuadros de diálogo y las [ventanas de propiedades](win-property-win.md) se presentan en artículos independientes.
 
  
 
@@ -38,10 +38,10 @@ Para decidirte, intenta responder a estas preguntas:
 -   **¿Los controles pueden caber cómodamente en una sola página de tamaño razonable?** Si es así, use una sola página.
 -   **¿Solo hay una pestaña?** Si es así, use una sola página.
 -   **¿Las pestañas están relacionadas entre sí de alguna manera obvia?** Si no es así, considere la posibilidad de dividir la información en ventanas independientes de información relacionada.
--   **Si se usa para la configuración, ¿la configuración de páginas diferentes es completamente independiente?** ¿Afectará el cambio de una configuración en una página a la configuración de otras páginas? Si no son independientes, use páginas de tareas o un [asistente en su](win-wizards.md) lugar.
+-   **Si se usa para la configuración, ¿la configuración de páginas diferentes es completamente independiente?** ¿El cambio de una configuración en una página afectará a la configuración de otras páginas? Si no son independientes, use páginas de tareas o un [asistente en su](win-wizards.md) lugar.
 -   **¿Las pestañas son principalmente pares entre sí o hay una relación jerárquica?** Si es jerárquico, considere la posibilidad de usar la divulgación progresiva o cuadros [de diálogo secundarios](win-dialog-box.md) para mostrar información relacionada.
--   **¿Se usan las pestañas para mostrar los pasos dentro de una tarea?** Puede usar "pestañas" para mostrar los pasos dentro de una tarea solo si se presentan para que se parezcan a los pasos, y hay una manera obvia y alternativa de llegar al paso de texto, como un botón Siguiente. De lo contrario, si se requieren los pasos, use páginas en un flujo de página o en un [asistente](win-wizards.md). Si los pasos son opcionales, muestre los pasos opcionales mediante cuadros de [diálogo modales](win-dialog-box.md) en su lugar.
--   **¿Las pestañas son diferentes vistas de los mismos datos?** Si es así, considere la posibilidad de [usar un botón de división](ctrl-command-buttons.md) o una lista desplegable [para](/windows/desktop/uxguide/ctrl-drop) cambiar las vistas. Aunque las pestañas se pueden usar eficazmente para cambiar las vistas, las alternativas son más ligeras.
+-   **¿Se usan las pestañas para mostrar los pasos dentro de una tarea?** Puede usar "pestañas" para mostrar los pasos dentro de una tarea solo si se presentan para que se parezcan a los pasos y hay una manera obvia y alternativa de llegar al paso de texto, como un botón Siguiente. De lo contrario, si se requieren los pasos, use páginas en un flujo de página o en un [asistente](win-wizards.md). Si los pasos son opcionales, muestre los pasos opcionales mediante cuadros de [diálogo modales](win-dialog-box.md) en su lugar.
+-   **¿Las pestañas son vistas diferentes de los mismos datos?** Si es así, considere la posibilidad de [usar un botón de división](ctrl-command-buttons.md) o una lista desplegable [para](/windows/desktop/uxguide/ctrl-drop) cambiar las vistas. Aunque las pestañas se pueden usar eficazmente para cambiar las vistas, las alternativas son más ligeras.
 
 ## <a name="usage-patterns"></a>Patrones de uso
 
@@ -51,10 +51,10 @@ Las pestañas tienen varios patrones de uso:
 
 |  Uso                                                                                                                                                                                                 |    Ejemplo                                                                                                                                                                                                                                                                                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Superficie de ventana dinámica**<br/> Al igual que las barras de desplazamiento, se pueden usar pestañas para aumentar el área de superficie de la ventana para mostrar información relacionada.<br/>                                                    | Con este patrón, el uso de pestañas es conceptualmente similar a colocar toda la información de las pestañas linealmente en una sola superficie desplazable, con las etiquetas de tabulación como encabezados. <br/> ![captura de pantalla de cinco pestañas ](images/ctrl-tabs-image1.png)<br/> En este ejemplo, las pestañas aumentan eficazmente el área de superficie de la ventana.<br/>                          |
-| **Varias vistas**<br/> Al igual que los botones de división o las listas desplegables, las pestañas se pueden usar para mostrar diferentes vistas de la misma información o relacionada. <br/>                                           | ![captura de pantalla de pestañas de diseño, división y vista previa ](images/ctrl-tabs-image2.png)<br/> En este ejemplo, las pestañas cambian las vistas dentro de un documento.<br/>                                                                                                                                                                                                         |
-| **Varios documentos**<br/> Al igual que varias ventanas, se pueden usar pestañas para mostrar documentos diferentes en una sola ventana. <br/>                                                                   | ![captura de pantalla de tres pestañas para distintos documentos ](images/ctrl-tabs-image3.png)<br/> ![figura de pestañas para distintos meses ](images/ctrl-tabs-image4.png)<br/> En estos ejemplos, las pestañas muestran distintos documentos dentro de una sola ventana de aplicación.<br/>                                                                                       |
-| **Opciones exclusivas**<br/> Al igual que los botones de radio, las pestañas se pueden usar para presentar varias opciones exclusivas. en este patrón, solo se aplica la pestaña seleccionada y se omiten todas las demás pestañas. <br/> | ![captura de pantalla de las pestañas ubicación, datos y mensajes ](images/ctrl-tabs-image5.png)<br/> En este ejemplo, las pestañas se usan (incorrectamente) como sustituto de los botones de radio.<br/> **Este patrón no se recomienda** porque usa un comportamiento no estándar. Las pestañas se comportan como una configuración en lugar de simplemente una manera de navegar dentro de la ventana. <br/> |
+| **Superficie de ventana dinámica**<br/> Al igual que las barras de desplazamiento, las pestañas se pueden usar para aumentar el área de superficie de la ventana para mostrar información relacionada.<br/>                                                    | Con este patrón, el uso de pestañas es conceptualmente similar a colocar toda la información en las pestañas linealmente en una sola superficie desplazable, con las etiquetas de tabulación como encabezados. <br/> ![captura de pantalla de cinco pestañas ](images/ctrl-tabs-image1.png)<br/> En este ejemplo, las pestañas aumentan de forma eficaz el área de superficie de la ventana.<br/>                          |
+| **Varias vistas**<br/> Al igual que los botones divididos o las listas desplegables, las pestañas se pueden usar para mostrar diferentes vistas de la misma información o información relacionada. <br/>                                           | ![captura de pantalla de las pestañas de diseño, división y vista previa ](images/ctrl-tabs-image2.png)<br/> En este ejemplo, las pestañas cambian las vistas dentro de un documento.<br/>                                                                                                                                                                                                         |
+| **Varios documentos**<br/> Al igual que varias ventanas, las pestañas se pueden usar para mostrar documentos diferentes en una sola ventana. <br/>                                                                   | ![captura de pantalla de tres pestañas para distintos documentos ](images/ctrl-tabs-image3.png)<br/> ![figura de pestañas para distintos meses ](images/ctrl-tabs-image4.png)<br/> En estos ejemplos, las pestañas muestran documentos diferentes dentro de una sola ventana de aplicación.<br/>                                                                                       |
+| **Opciones exclusivas**<br/> Al igual que los botones de radio, las pestañas se pueden usar para presentar varias opciones exclusivas. en este patrón, solo se aplica la pestaña seleccionada y se omiten todas las demás pestañas. <br/> | ![captura de pantalla de las pestañas de ubicación, datos y mensajes ](images/ctrl-tabs-image5.png)<br/> En este ejemplo, las pestañas se usan (incorrectamente) como sustituto de los botones de radio.<br/> **Este patrón no se recomienda** porque usa un comportamiento no estándar. Las pestañas se comportan como una configuración en lugar de simplemente una manera de navegar dentro de la ventana. <br/> |
 
 
 
@@ -62,7 +62,7 @@ Las pestañas tienen varios patrones de uso:
 
 **Si solo hace una cosa...**
 
-Asegúrese de que la información de las pestañas está relacionada, pero la configuración de páginas diferentes es independiente. La última pestaña seleccionada no debe tener ningún significado especial.
+Asegúrese de que la información de las pestañas está relacionada, pero la configuración de las distintas páginas es independiente. La última pestaña seleccionada no debe tener ningún significado especial.
 
 ## <a name="guidelines"></a>Directrices
 
@@ -80,13 +80,13 @@ Asegúrese de que la información de las pestañas está relacionada, pero la co
         En este ejemplo, las pestañas verticales admiten ocho o más pestañas.
 
 -   **No anidar pestañas ni combinar pestañas horizontales con pestañas verticales.** En su lugar, reduzca el número de pestañas, use solo pestañas verticales o use otro control, como una lista desplegable.
--   **No desplácese por pestañas horizontales.** El desplazamiento horizontal no se puede detectar fácilmente. Sin embargo, puede desplazarse por las pestañas verticales.
+-   **No desplácese por las pestañas horizontales.** El desplazamiento horizontal no se puede detectar fácilmente. Sin embargo, puede desplazarse por las pestañas verticales.
 
     **Incorrecto:**
 
     ![captura de pantalla de la etiqueta de pestaña horizontal truncada ](images/ctrl-tabs-image7.png)
 
-    En este ejemplo, se desplazan las pestañas horizontales.
+    En este ejemplo, las pestañas horizontales se desplazan.
 
 -   En el caso de las pestañas de una ventana o panel de tamaño ajustable, coloque una barra de desplazamiento, cuando sea necesario, en la página, no en la ventana o el panel. Las pestañas siempre deben estar visibles y no desplazarse fuera de la vista.
 
@@ -94,20 +94,20 @@ Asegúrese de que la información de las pestañas está relacionada, pero la co
 
     En este ejemplo, la página de pestañas tiene la barra de desplazamiento, no el panel.
 
--   **Asegúrese de que las pestañas se parecen a las pestañas y no a otro tipo de control.**
+-   **Asegúrese de que las pestañas se parezcan a las pestañas y no a otro tipo de control.**
 
     **Incorrecto:**
 
     ![captura de pantalla de la ventana con botones para pestañas ](images/ctrl-tabs-image9.png)
 
-    En este ejemplo, estas pestañas tienen el aspecto de botones de comando.
+    En este ejemplo, estas pestañas son como botones de comando.
 
 ### <a name="interaction"></a>Interacción
 
 -   **Cuando los controles se aplican solo a una página, colócanlos dentro del borde de la página con pestañas.**
 -   **Cuando los controles se apliquen a toda la ventana, colócanlos fuera de la página con pestañas.**
 -   **No asigne efectos a las pestañas cambiantes.** Las pestañas deben ser accesibles en cualquier orden. Cambiar la pestaña actual nunca debe tener efectos secundarios, aplicar la configuración o generar un mensaje de error.
--   **No asigne un significado especial a la última pestaña seleccionada.** La selección de pestañas es para la navegación La última selección de pestaña del usuario no es una configuración.
+-   **No asigne un significado especial a la última pestaña seleccionada.** La selección de pestañas es para la navegación la última selección de pestañas del usuario no es una configuración.
 -   **No haga que la configuración de una página dependa de la configuración de otras páginas.** En su lugar, coloque cualquier configuración dependiente en la misma página.
 -   **Si es probable que los usuarios comiencen con la última pestaña mostrada, haga que la pestaña persista y selecciónelo de forma predeterminada.** Haga que la configuración se conserve por ventana y por usuario. De lo contrario, seleccione la primera página de forma predeterminada.
 
@@ -142,7 +142,7 @@ Asegúrese de que la información de las pestañas está relacionada, pero la co
 
     ![captura de pantalla de la ventana de opciones con el nombre de la pestaña atenuado ](images/ctrl-tabs-image12.png)
 
-    En este ejemplo, la pestaña Ubicaciones de archivo está deshabilitada incorrectamente Microsoft Word se usa como editor de correo electrónico. En lugar de deshabilitar esta pestaña, debe quitarse porque los usuarios no esperarán ver ni cambiar las ubicaciones de los archivos en este contexto.
+    En este ejemplo, la pestaña Ubicaciones de archivos está deshabilitada incorrectamente cuando Microsoft Word se usa como editor de correo electrónico. En lugar de deshabilitar esta pestaña, debe quitarse porque los usuarios no esperarán ver ni cambiar las ubicaciones de los archivos en este contexto.
 
 -   **Si una pestaña no se aplica al contexto actual y es posible que los usuarios lo esperen:**
 

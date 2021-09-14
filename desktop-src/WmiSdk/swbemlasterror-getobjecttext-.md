@@ -16,16 +16,16 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 7f935457c6fa6566d69c10b6cb5cade914e6e81c175f7451cc6eaff5268358e6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4247b5212e453c2f4393c26cd5ad63f07992c75a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119679595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174898"
 ---
 # <a name="swbemlasterrorgetobjecttext_-method"></a>Método SWbemLastError.GetObjectText \_
 
-El **método \_ GetObjectText** del objeto [**SWbemLastError**](swbemlasterror.md) devuelve una representación textual del objeto en [un formato Managed Object Format (MOF).](managed-object-format--mof-.md) Este objeto MOF se puede usar para mostrar el contenido de un objeto. Observe que el texto MOF que se devuelve no contiene toda la información sobre el objeto, sino solo información suficiente para que el compilador MOF pueda volver a crear el objeto original. Por ejemplo, no encontrará información sobre los calificadores propagados ni las propiedades de clase primaria.
+El **método \_ GetObjectText** del objeto [**SWbemLastError**](swbemlasterror.md) devuelve una representación textual del objeto en [un formato Managed Object Format (MOF).](managed-object-format--mof-.md) Este objeto MOF se puede usar para mostrar el contenido de un objeto. Observe que el texto MOF que se devuelve no contiene toda la información sobre el objeto, sino solo suficiente información para que el compilador MOF pueda volver a crear el objeto original. Por ejemplo, no encontrará información sobre los calificadores propagados ni las propiedades de clase primaria.
 
 Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
@@ -86,11 +86,11 @@ No hay suficiente memoria para completar la operación.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemLastError<br/>                                                        |

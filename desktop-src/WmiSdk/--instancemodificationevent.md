@@ -18,14 +18,14 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: fffc8508eff24181201792207a151f5effd28a3022fec56506953b55d3e59deb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e644db16b6638bbc87006819e186540a9ce1874e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118557762"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174902"
 ---
-# <a name="__instancemodificationevent-class"></a>\_\_Clase InstanceModificationEvent
+# <a name="__instancemodificationevent-class"></a>\_\_InstanceModificationEvent (clase)
 
 La clase del sistema **\_ \_ InstanceModificationEvent** notifica un evento [](determining-the-type-of-event-to-receive.md) de modificación de instancia, que es un tipo de evento intrínseco generado cuando una instancia cambia en el espacio de nombres .
 
@@ -43,7 +43,7 @@ class __InstanceModificationEvent : __InstanceOperationEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **\_ \_ clase InstanceModificationEvent** tiene estos tipos de miembros:
 
@@ -105,17 +105,17 @@ Tipo de acceso: solo lectura
 
 Valor único que indica la hora a la que se generó el evento. Se trata de un valor de 64 bits que representa el número de intervalos de 100 nanosegundos después del 1 de enero de 1601. La información está en formato de hora universal coordinada (UTC). Esta propiedad se hereda del [**\_ \_ evento**](--event.md).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **\_ \_ clase InstanceModificationEvent** se deriva de [**\_ \_ InstanceOperationEvent.**](--instanceoperationevent.md)
+La **\_ \_ clase InstanceModificationEvent** se deriva de [**\_ \_ InstanceOperationEvent**](--instanceoperationevent.md).
 
 **Modificación de un recurso: \_ \_ InstanceModificationEvent**
 
-Supongamos que sospecha que una aplicación de administración que usa está cambiando erróneamente el tipo de inicio de un servicio en uno de los servidores. Quiere escribir un script WMI para supervisar las modificaciones realizadas en la configuración del servicio. En cuanto se realiza una modificación en un servicio, su targetInstance correspondiente refleja la modificación.
+Supongamos que sospecha que una aplicación de administración que usa está cambiando erróneamente el tipo de inicio de un servicio en uno de los servidores. Quiere escribir un script WMI para supervisar las modificaciones realizadas en la configuración del servicio. En cuanto se realiza una modificación en un servicio, su TargetInstance correspondiente refleja la modificación.
 
 Si registra su interés en este evento, una modificación en la configuración del servicio da como resultado la creación de una instancia de la **\_ \_ clase InstanceModificationEvent.**
 
@@ -131,7 +131,7 @@ El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/daa06cdd-c1d9-4179-ba67-83
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -139,7 +139,7 @@ El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/daa06cdd-c1d9-4179-ba67-83
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

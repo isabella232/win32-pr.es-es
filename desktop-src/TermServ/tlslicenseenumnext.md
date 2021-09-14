@@ -15,12 +15,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 945c0afb931770a36049342f32c71613bd8fb1a0a9b16142c1ffbc6a67ccc288
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5c13b0a3137258015fe311c49b2cc9b999e3a13f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243488"
 ---
 # <a name="tlslicenseenumnext-function"></a>Función TLSLicenseEnumNext
 
@@ -131,7 +131,7 @@ El servidor de licencias está demasiado ocupado para procesar la solicitud.
 
 </dt> <dd>
 
-No se puede procesar la solicitud debido a memoria insuficiente.
+No se puede procesar la solicitud debido a una memoria insuficiente.
 
 </dd> </dl> </dd> </dl>
 
@@ -141,14 +141,14 @@ Esta función devuelve los siguientes valores devueltos posibles.
 
 <dl> <dt>
 
-**RPC \_ S \_ OK**
+**RPC \_ S \_ CORRECTO**
 </dt> <dd>
 
 La llamada se ha realiza correctamente. Compruebe el valor del *parámetro pdwErrCode* para obtener el código de retorno de la llamada.
 
 </dd> <dt>
 
-**ARGUMENTO \_ RPC S NO \_ \_ VÁLIDO**
+**RPC \_ S ARGUMENTO NO \_ \_ VÁLIDO**
 </dt> <dd>
 
 El argumento no era válido.

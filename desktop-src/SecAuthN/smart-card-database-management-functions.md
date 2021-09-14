@@ -4,12 +4,12 @@ ms.assetid: a2f457e1-c042-42e7-9071-cf0edd68e27a
 title: Funciones de administración de bases de datos de tarjetas inteligentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61b107663df8b80b5883c9ce9b3f045e8d7913ac92b5acb23d9ae758dafa2ac9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c424494a30c71e15647da773027311ed53a2599
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118917811"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374946"
 ---
 # <a name="smart-card-database-management-functions"></a>Funciones de administración de bases de datos de tarjetas inteligentes
 

@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c015c1999cbd60174da1994d92766b4f334630294767ee390be21340aef97cc3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5b33bd99c2dd1e6d1013da9015a5ff70bc111c79
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119661025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267775"
 ---
 # <a name="sfvm_gethelptext-message"></a>Mensaje \_ GETHELPTEXT de SFVM
 
@@ -44,7 +44,7 @@ SFVM_GETHELPTEXT
 *idCmd \_ cchMax* \[ en\]
 </dt> <dd>
 
-La palabra de orden bajo de este parámetro contiene el identificador del comando. La palabra de orden superior contiene el número de caracteres del búfer *pszText.*
+La palabra de orden bajo de este parámetro contiene el identificador del comando. La palabra de orden superior contiene el número de caracteres en el *búfer pszText.*
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Cadena terminada en NULL que contiene el texto de ayuda.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

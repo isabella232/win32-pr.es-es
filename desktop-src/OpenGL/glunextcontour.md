@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4607fbeea8e8aa46b365204bf1853c392c1a38f5ded594d840c6e9eea063da2f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c7b798eba50205053c019e3e8d1708c9ed834e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244971"
 ---
 # <a name="glunextcontour-function"></a>función gluNextContour
 
@@ -60,9 +60,9 @@ Tipo del contorno que se va a definir. Los valores siguientes son válidos.
 | Value                                                                                                                                                                | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="GLU_EXTERIOR"></span><span id="glu_exterior"></span><dl> <dt>**GLU \_ EXTERIOR**</dt> </dl>           | Un contorno exterior define un límite exterior del polígono.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| <span id="GLU_INTERIOR"></span><span id="glu_interior"></span><dl> <dt>**GLU \_ INTERIOR**</dt> </dl>           | Un contorno interior define un límite interior del polígono (por ejemplo, un hueco).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| <span id="GLU_INTERIOR"></span><span id="glu_interior"></span><dl> <dt>**GLU \_ INTERIOR**</dt> </dl>           | Un contorno interior define un límite interior del polígono (como un hueco).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | <span id="GLU_UNKNOWN"></span><span id="glu_unknown"></span><dl> <dt>**GLU \_ UNKNOWN**</dt> </dl>              | La biblioteca analiza un contorno desconocido para determinar si es interior o exterior.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| <span id="GLU_CCW__GLU_CW"></span><span id="glu_ccw__glu_cw"></span><dl> <dt>**GLU \_ CCW, GLU \_ CW**</dt> </dl> | El primer contorno \_ GLU CCW o GLU \_ CW definido se considera exterior. Todos los demás contornos se consideran exteriores si están orientados en la misma dirección (en el sentido de las agujas del reloj o en sentido contrario a las agujas del reloj) que el primer contorno y en el interior si no lo están.<br/> Si un contorno es de tipo GLU CCW o GLU CW, todos los contornos deben ser del mismo tipo (si no lo están, todos los contornos DE GLU CCW y GLU CW se cambiarán a \_ \_ GLU \_ \_ \_ UNKNOWN). Tenga en cuenta que no hay ninguna diferencia real entre los tipos de contorno GLU \_ CCW y GLU \_ CW.<br/> |
+| <span id="GLU_CCW__GLU_CW"></span><span id="glu_ccw__glu_cw"></span><dl> <dt>**GLU \_ CCW, GLU \_ CW**</dt> </dl> | El primer contorno DE GLU \_ CCW o GLU \_ CW definido se considera exterior. Todos los demás contornos se consideran exteriores si están orientados en la misma dirección (en el sentido de las agujas del reloj o en sentido contrario a las agujas del reloj) que el primer contorno y en el interior si no lo están.<br/> Si un contorno es de tipo GLU CCW o GLU CW, todos los contornos deben ser del mismo tipo (si no lo están, todos los contornos DE GLU CCW y GLU CW se cambiarán a \_ \_ GLU \_ \_ \_ UNKNOWN). Tenga en cuenta que no hay ninguna diferencia real entre los tipos de contorno GLU \_ CCW y GLU \_ CW.<br/> |
 
 
 
@@ -74,9 +74,9 @@ Tipo del contorno que se va a definir. Los valores siguientes son válidos.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use la **función gluNextContour** para describir polígonos con varios contornos. Después de describir el primer contorno a través de una serie de llamadas [**gluTessVertex,**](glutessvertex.md) una llamada **a gluNextContour** indica que el contorno anterior está completo y que el contorno siguiente está a punto de comenzar. Realice otra serie de **llamadas gluTessVertex** para describir el nuevo contorno. Repita este proceso hasta que se hayan descrito todos los contornos.
+Use la **función gluNextContour para** describir polígonos con varios contornos. Después de describir el primer contorno a través de una serie de llamadas [**gluTessVertex,**](glutessvertex.md) una llamada **a gluNextContour** indica que el contorno anterior está completo y que el contorno siguiente está a punto de comenzar. Realice otra serie de **llamadas a gluTessVertex** para describir el nuevo contorno. Repita este proceso hasta que se hayan descrito todos los contornos.
 
 El *parámetro type* define el tipo de contorno que sigue.
 

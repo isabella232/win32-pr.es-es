@@ -7,12 +7,12 @@ keywords:
 - RAS Administration RRAS ,reference
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1dfbfbda18ee2fb231c2e8fd8ba5384e0757c2822fe791500a954057750705d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b7d00e08b9cdac7fbba07e5da92f36d7357d0183
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120028285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244748"
 ---
 # <a name="remote-access-service-administration-reference"></a>Referencia de administración del servicio de acceso remoto
 

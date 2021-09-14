@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 161a4ded-ab56-4930-a030-446cd793c73d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acbc6948e0ab2bb5d3879fe443e19711da876add4515e17a96760d7520b307a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0286cecc6a12ec2c912beacef6730c6e867b820
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117953312"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243597"
 ---
 # <a name="i-text-services-framework"></a>I (Text Services Framework)
 

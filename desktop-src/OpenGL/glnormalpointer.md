@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f188a65a0a2bff0438188ae7521615de45341147b138a849d2fd375ed8a959b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2c2f3abbfbd989351af647557ec64f8ee3172dc5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118938414"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375114"
 ---
 # <a name="glnormalpointer-function"></a>función glNormalPointer
 
@@ -80,9 +80,9 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función glNormalPointer** especifica la ubicación y los datos de una matriz de normales que se usará al representar. El *parámetro type* especifica el tipo de datos de cada coordenada normal. El *parámetro stride* determina el desplazamiento de bytes de uno normal a otro, lo que habilita el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, almacenar los vértices y atributos en una sola matriz puede ser más eficaz que usar matrices independientes. vea [**glInterleavedArrays para**](glinterleavedarrays.md) obtener más información.
+La **función glNormalPointer** especifica la ubicación y los datos de una matriz de normales que se usará al representar. El *parámetro type* especifica el tipo de datos de cada coordenada normal. El *parámetro stride* determina el desplazamiento de bytes de uno normal a otro, lo que habilita el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, almacenar los vértices y atributos en una sola matriz puede ser más eficaz que usar matrices independientes. Vea [**glInterleavedArrays para**](glinterleavedarrays.md) obtener más información.
 
 Se habilita una matriz normal cuando se especifica la constante GL \_ NORMAL \_ ARRAY con [**glEnableClientState**](glenableclientstate.md). Cuando se habilita, [**glDrawArrays,**](gldrawarrays.md) [**glDrawElements**](gldrawelements.md) y [**glArrayElement**](glarrayelement.md) usan la matriz normal. De forma predeterminada, la matriz normal está deshabilitada.
 

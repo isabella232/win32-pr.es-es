@@ -4,12 +4,12 @@ ms.assetid: 3f7d3079-3d3d-4b93-9ab7-4c03def7c4be
 title: Simulación de Graph building con GraphEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff4f5bee201e2bd5b771348596b46caa513944aa148c7ec17a9e2974a360e60c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f76878997c873c74d454979ccda689a9c241489d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119583205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375203"
 ---
 # <a name="simulating-graph-building-with-graphedit"></a>Simulación de Graph building con GraphEdit
 

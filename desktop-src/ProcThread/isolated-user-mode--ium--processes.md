@@ -4,12 +4,12 @@ ms.assetid: 58374CC4-593F-4B91-A5E4-85E29C44F8B4
 title: Procesos de modo de usuario aislado (IUM)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 982d9924f60d02a74aa7237e5c3bb16e787f1d3a0cc07e9693e9cd47335cedc5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81a176421174a58abe4ab595bb37ab75434edade
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120032554"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375062"
 ---
 # <a name="isolated-user-mode-ium-processes"></a>Procesos de modo de usuario aislado (IUM)
 
@@ -25,7 +25,7 @@ El aislamiento de VTL lo crea el hipervisor de Hyper-V, que asigna memoria en ti
 
 ## <a name="trustlets"></a>Trustlets
 
-Los trustlets (también conocidos como procesos de confianza, procesos seguros o procesos IUM) son programas que se ejecutan como procesos de IUM en VSM. Para completar las llamadas del sistema, se pueden Windows en el kernel que se ejecuta en el anillo VTL0 0. VSM crea un entorno de ejecución pequeño que incluye el pequeño kernel seguro que se ejecuta en VTL1 (aislado del kernel y los controladores que se ejecutan en VTL0). La ventaja de seguridad clara es el aislamiento de las páginas de modo de usuario trustlet en VTL1 de los controladores que se ejecutan en el kernel VTL0. Incluso si el modo kernel de VTL0 está en peligro por malware, no tendrá acceso a las páginas de proceso de IUM.
+Los trustlets (también conocidos como procesos de confianza, procesos seguros o procesos IUM) son programas que se ejecutan como procesos de IUM en VSM. Completan las llamadas del sistema mediante la marshalling them over to the Windows kernel running in VTL0 ring 0 (El kernel Windows que se ejecuta en el anillo VTL0 0). VSM crea un entorno de ejecución pequeño que incluye el pequeño kernel seguro que se ejecuta en VTL1 (aislado del kernel y los controladores que se ejecutan en VTL0). La ventaja de seguridad clara es el aislamiento de las páginas de modo de usuario trustlet en VTL1 de los controladores que se ejecutan en el kernel VTL0. Incluso si el modo kernel de VTL0 está en peligro por malware, no tendrá acceso a las páginas de proceso de IUM.
 
 Con VSM habilitado, el entorno de autoridad de seguridad local (LSASS) se ejecuta como trustlet. LSASS administra la directiva del sistema local, la autenticación de usuarios y la auditoría mientras se administran datos de seguridad confidenciales, como hash de contraseña y claves Kerberos. Para aprovechar las ventajas de seguridad de VSM, un trustlet denominado LSAISO.exe (LSA aislado) se ejecuta en VTL1 y se comunica con LSASS.exe que se ejecuta en VTL0 a través de un canal RPC. Los secretos LSAISO se cifran antes de enviarlos a LSASS que se ejecuta en modo normal de VSM y las páginas de LSAISO están protegidas contra código malintencionado que se ejecuta en VTL0.
 
@@ -39,7 +39,7 @@ No es posible adjuntar a un proceso de IUM, lo que impide la capacidad de depura
 
 Use el código de ejemplo siguiente para evitar llamar a cualquier función que intente adjuntar o insertar código en un proceso de IUM. Esto incluye los controladores de kernel que ponen en cola las API para la ejecución del código en un trustlet.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el estado devuelto de IsSecureProcess es correcto, examine el parámetro SecureProcess Out para determinar si el proceso \_ \_ es un proceso IUM. El sistema marca los procesos IUM como "Procesos seguros". Un resultado booleano de TRUE significa que el proceso de destino es de tipo IUM.
 

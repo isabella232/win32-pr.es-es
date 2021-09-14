@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 067c8e9f3e8cee607281d5f0a80ca813e91b425e63c15d3c1d47661acbbd04d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc5a48f76a643447b3e3d836d61ad7a769c56ff6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120014095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244184"
 ---
 # <a name="iscardmanagedetach-method"></a>MÉTODO ISCardManage::D etach
 
@@ -53,7 +53,7 @@ El método devuelve uno de los siguientes valores posibles:
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para adjuntar una llamada de tarjeta [**inteligente, llame a AttachByHandle**](iscardmanage-attachbyhandle.md) [**o AttachByIFD.**](iscardmanage-attachbyifd.md)
 
@@ -67,7 +67,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |

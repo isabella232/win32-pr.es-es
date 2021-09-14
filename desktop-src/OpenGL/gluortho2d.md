@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4a2f0d5fad1a2efb0df0c802dbb2cf51b54ff3e43402c3143bad982009f4f95
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1bf07fea583c5ae46680d888f6bf6c0a9c5aa9a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119488865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244940"
 ---
 # <a name="gluortho2d-function"></a>Función gluOrtho2D
 
@@ -75,7 +75,7 @@ Coordenada del plano de recorte horizontal inferior.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluOrtho2D** configura una región de visualización ortográfica bidimensional. Esto equivale a llamar [**a glOrtho**](glortho.md) con zNear = -1 y zFar = 1.
 
@@ -83,7 +83,7 @@ La **función gluOrtho2D** configura una región de visualización ortográfica 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

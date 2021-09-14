@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 74a179fd1a7f59dcf4e4d22eadf509db9b00cbe482d55e6a6755d7207de8079d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2c4a982f583d1780dbab37d982fd9a54601e141
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119689005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375267"
 ---
 # <a name="cbasepinqueryaccept-method"></a>Método CBasePin.QueryAccept
 
@@ -53,7 +53,7 @@ Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-
 
 Devuelve S \_ OK si el tipo de medio es aceptable. De lo contrario, devuelve S \_ FALSE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En la clase base, este método delega en el [**método CBasePin::CheckMediaType.**](cbasepin-checkmediatype.md) Si se produce un error **en CheckMediaType,** `QueryAccept` devuelve S \_ FALSE.
 

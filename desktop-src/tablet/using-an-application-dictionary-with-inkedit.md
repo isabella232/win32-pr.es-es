@@ -4,12 +4,12 @@ ms.assetid: 24dbf617-fa16-44f1-ba59-d4d99b8f1375
 title: Uso de un diccionario de aplicaciones con InkEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35b090b0822afba691012ef19d51068a18c3cf8d6c9afb9070f43f63cd86ef34
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4bc919fc071f249611d42b8decb6ce4fb0b0f88
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118966644"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267612"
 ---
 # <a name="using-an-application-dictionary-with-inkedit"></a>Uso de un diccionario de aplicaciones con InkEdit
 

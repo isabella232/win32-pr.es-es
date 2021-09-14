@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a159d9c8b4e8c4b5086fff9c4fc6c67c0a6e33464eeefee77d15a620b157bd55
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a1e3e72f5c401b8cbb0e5e5de45f594d61af6275
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119988155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374515"
 ---
 # <a name="sendmessage-method-of-the-win32_virtualdesktopsession-class"></a>Método SendMessage de la clase VirtualDesktopSession de Win32 \_
 

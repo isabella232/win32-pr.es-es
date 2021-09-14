@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 1c100d1607cceea95264e9af24ba29b23824dee833c14e492cfb0a1dd7ad396f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90c6b10d407992ae8147998d2d420989cc91e970
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120013895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244161"
 ---
 # <a name="iscardmanagescardunlock-method"></a>Método ISCardManage::SCardUnlock
 
 \[El **método SCardUnlock** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método SCardUnlock** libera el uso exclusivo de la tarjeta [*inteligente conectada.*](../secgloss/s-gly.md)
+El **método SCardUnlock** publica el uso exclusivo de la [*tarjeta inteligente conectada.*](../secgloss/s-gly.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ Estado en el que se va a dejar la tarjeta inteligente cuando se libera el bloque
 
 <dl><span id="LEAVE"></span><span id="leave"></span><dt>
 
-**Salir**
+**SALIR**
 </dt><span id="RESET"></span><span id="reset"></span><dt>
 
 **RESET**
@@ -56,7 +56,7 @@ Estado en el que se va a dejar la tarjeta inteligente cuando se libera el bloque
 **UNPOWER**
 </dt><span id="EJECT"></span><span id="eject"></span><dt>
 
-**Expulsar**
+**EXPULSAR**
 </dt> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
@@ -74,9 +74,9 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para bloquear la tarjeta inteligente conectada, llame a [**SCardLock.**](iscardmanage-scardlock.md)
+Para bloquear la tarjeta inteligente conectada, llame a [**SCardLock**](iscardmanage-scardlock.md).
 
 Para obtener una lista de todos los métodos definidos por esta interfaz, vea [**ISCardManage**](iscardmanage.md).
 
@@ -86,9 +86,9 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                       |

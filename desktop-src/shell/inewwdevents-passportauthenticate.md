@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f462053281efd97b75422c55ce23829688d18ac153ecb92c7544eafb8f356b9b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 48e6cfbcbf525784fe33520702bbd9c05226f353
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119942405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267884"
 ---
 # <a name="newwdeventspassportauthenticate-method"></a>Método NewWDEvents.PassportAuthenticate
 
@@ -54,7 +54,7 @@ Tipo: **booleano**
 
 Establezca en **true si** la autenticación se realiza correctamente; en caso contrario, **false.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede llamar a este método incluso si un usuario ya ha iniciado sesión en una cuenta Microsoft. En ese caso, el método devuelve **true sin** mostrar el inicio de sesión de la cuenta Microsoft en la interfaz de usuario.
 
@@ -66,8 +66,8 @@ Se puede llamar a este método incluso si un usuario ya ha iniciado sesión en u
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 

@@ -4,16 +4,16 @@ ms.assetid: ffa6234d-9040-4838-8f51-0cf87df40a5c
 title: DMO Filtro de contenedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a13383e7539f478327f1a904d60fcd069692180239e76bcfd48bcc090a068e9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d29c5b86bdff4a215ec2ef5854d09a1f842dbf0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118653045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375235"
 ---
 # <a name="dmo-wrapper-filter"></a>DMO Filtro de contenedor
 
-El DMO contenedor de DirectShow permite a una aplicación de DirectShow usar un objeto multimedia [directX](directx-media-objects.md) (DMO) dentro de un gráfico de filtros. El filtro ajusta el DMO controla todos los detalles del uso de la DMO, como pasar datos a y desde el DMO. Además, el filtro agrega el DMO, por lo que la aplicación puede consultar el filtro para cualquier interfaz COM que el DMO expone.
+El filtro DMO wrapper permite que una aplicación DirectShow use un objeto multimedia [DirectX](directx-media-objects.md) (DMO) dentro de un gráfico de filtros. El filtro ajusta el DMO controla todos los detalles del uso de la DMO, como pasar datos hacia y desde el DMO. Además, el filtro agrega el DMO, por lo que la aplicación puede consultar el filtro para cualquier interfaz COM que el DMO expone.
 
 
 
@@ -46,7 +46,7 @@ El DMO contenedor tiene las siguientes limitaciones:
 
 ### <a name="pins"></a>Chinchetas
 
-Para cada flujo de entrada del DMO, el filtro crea un pin de entrada correspondiente. Para cada flujo de salida, crea un pin de salida correspondiente. Los tipos de medios que admite cada pin dependen de la DMO
+Para cada flujo de entrada del DMO, el filtro crea un pin de entrada correspondiente. Para cada flujo de salida, crea un pin de salida correspondiente. Los tipos de medios que admite cada pin dependen del DMO
 
 ### <a name="encoder-interfaces"></a>Interfaces de codificador
 
@@ -54,15 +54,15 @@ Si el DMO es un codificador de vídeo o un codificador de audio, el pin de salid
 
 ### <a name="streaming"></a>Streaming
 
-El filtro usa la [**interfaz IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) para controlar todo el streaming. No admite conexiones [**IAsyncReader.**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) El filtro llama [**a IMediaObject::P rocessOutput**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-processoutput) en el DMO solo cuando recibe datos del canal de subida (incluidas las notificaciones de fin de flujo). Por lo tanto, no admite DDO con cero flujos de entrada.
+El filtro usa la [**interfaz IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) para controlar todo el streaming. No admite conexiones [**IAsyncReader.**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) El filtro llama [**a IMediaObject::P rocessOutput**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-processoutput) en el DMO solo cuando recibe datos de nivel superior (incluidas las notificaciones de fin de flujo). Por lo tanto, no admite DDO con cero flujos de entrada.
 
 ### <a name="seeking"></a>Buscando
 
-Todas las solicitudes de búsqueda se pasan al filtro ascendente, a través del primer pin de entrada en el DMO contenedor. En el caso de las DDO de varias salidas, esto significa que el filtro ascendente podría recibir varias solicitudes de búsqueda cuando la aplicación busca el gráfico.
+Todas las solicitudes de búsqueda se pasan al filtro ascendente, a través de la primera patilla de entrada del DMO contenedor. En el caso de las DDO de varias salidas, esto significa que el filtro ascendente podría recibir varias solicitudes de búsqueda cuando la aplicación busca el gráfico.
 
 ### <a name="merit"></a>Mérito
 
-DirectShow asigna a todas las DDO un valor de valor de merececión predeterminado **de NORMAL + \_** 0X800. Este valor se encuentra entre **LO \_ NORMAL y** **\_ PREFERITORIO PREFERIDO.** Por lo general, los filtros descodificadores tienen un valor de **meritorio de LO \_ NORMAL.** Por lo tanto, el administrador de gráficos de filtro normalmente seleccionará un descodificador DMO un filtro descodificador. Para invalidar el valor predeterminado de la puntuación, agregue una entrada del Registro a la DMO del Registro de HKEY \_ CLASSES \_ ROOT \\ CLSID. Incluya un **valor DWORD** denominado "Honor", cuyo valor especifica el valor.
+DirectShow asigna a todas las DDO un valor de merececión predeterminado **de NORMAL + \_** 0x800. Este valor se encuentra entre **LO \_ NORMAL y** **\_ PREFERITORIO PREFERIDO.** Por lo general, los filtros descodificadores tienen un valor de **meritorio de LO \_ NORMAL.** Por lo tanto, el administrador de gráficos de filtro normalmente seleccionará un descodificador DMO un filtro descodificador. Para invalidar el valor predeterminado de los privilegios, agregue una entrada del Registro a la DMO del Registro de HKEY \_ CLASSES \_ ROOT \\ CLSID. Incluya un **valor DWORD** denominado "Honor", cuyo valor especifica el valor.
 
 ### <a name="category"></a>Category
 
@@ -107,7 +107,7 @@ Si el DMO expone la interfaz [**IDMOQualityControl,**](/previous-versions/window
 
 ### <a name="using-the-fiter-in-graphedit"></a>Uso de Fiter en GraphEdit
 
-En GraphEdit, el filtro DMO wrapper no aparece bajo su propio nombre. En su lugar, cada DMO registrado se muestra en la categoría de filtro adecuada. Cuando se agrega un DMO  a través del cuadro de diálogo Insertar filtros, GraphEdit crea el filtro DMO Wrapper y lo configura para usar ese DMO.
+En GraphEdit, el filtro DMO wrapper no aparece bajo su propio nombre. En su lugar, cada DMO registrado aparece en la categoría de filtro adecuada. Cuando se agrega un DMO  a través del cuadro de diálogo Insertar filtros, GraphEdit crea el filtro DMO Wrapper y lo configura para usar ese DMO.
 
 ## <a name="related-topics"></a>Temas relacionados
 

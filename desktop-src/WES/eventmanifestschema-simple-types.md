@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 53b0029bc213fd01d051a44eb46df22ea0c8185e190673313e4f038b0ac181d2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d3f32a37381714b06924cd2988ca9597e5312009
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119958265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243362"
 ---
 # <a name="eventmanifest-schema-simple-types"></a>Tipos simples de esquema eventManifest
 

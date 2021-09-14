@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2f64af1d7e886b418ac87cd360302101a60d746d707652f605a648e9812a5547
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6c09896fc4b35fcb0b6a01a7d592421dd5d5654
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119059593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374746"
 ---
 # <a name="gettsaudioendpointenumeratorforsession-callback-function"></a>Función de devolución de llamada GetTSAudioEndpointEnumeratorForSession
 
-Devuelve una referencia a un enumerador de extremo de audio para el identificador de sesión especificado. Los consumidores de este enumerador de extremo de audio, como MMDevAPI.dll, llaman a esta función para recuperar un enumerador de punto de conexión de audio en una Servicios de Escritorio remoto sesión.
+Devuelve una referencia a un enumerador de extremo de audio para el identificador de sesión especificado. Los consumidores de este enumerador de punto de conexión de audio, como MMDevAPI.dll, llaman a esta función para recuperar un enumerador de punto de conexión de audio en una Servicios de Escritorio remoto sesión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ Dirección de un puntero a una [**interfaz IMMDeviceEnumerator.**](/windows/desk
 
 Si el método se realiza correctamente, devuelve **S \_ OK**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función no está definida en un archivo de encabezado. Debe implementar y exportar esta función en el enumerador de punto de conexión personalizado y usar la firma que se muestra en el bloque de sintaxis anterior en este tema.
 

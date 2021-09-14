@@ -4,12 +4,12 @@ description: Para que una aplicación reciba tráfico de Teredo, se debe permiti
 ms.assetid: 2fc74d86-9696-4ba9-adbe-e5558ae7d7c2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a67d7de38ed91de7d8d8afeada6fe9705ff55f2af1b726ed5c5d49b271464dc5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bbc2fcf0f7c8b1f5fe51afc056dc8c8ff7c7916a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118354448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243537"
 ---
 # <a name="required-firewall-exceptions-for-teredo"></a>Excepciones de firewall necesarias para Teredo
 
@@ -48,7 +48,7 @@ Los firewalls de cliente deben admitir las siguientes funciones de detección y 
 
 Si estos mensajes no se pueden permitir específicamente, se debe habilitar la exención de todos los mensajes ICMPv6 en el firewall. Además, el firewall del host puede observar que los paquetes clasificados por los códigos 135/136 o 133/134 proceden del servicio en modo de usuario **iphlpsvc** o no de la pila. El firewall del host no debe descartar estos paquetes. El servicio Teredo se implementa principalmente dentro del servicio del asistente de IP "modo de usuario".
 
-Mediante la API de firewall de Windows de [**INetFwPolicy2**](/previous-versions/windows/desktop/api/netfw/nn-netfw-inetfwpolicy2) para enumerar todas las reglas con la marca Edge Traversal establecida, todas las aplicaciones que quieran escuchar el tráfico no solicitado se enumeran para la excepción del firewall. La información específica sobre el uso de la opción Edge Traversal se detalla en Recepción de tráfico no solicitado [a través de Teredo.](receiving-unsolicited-traffic-over-teredo.md)
+Mediante la API de firewall de Windows [**INetFwPolicy2**](/previous-versions/windows/desktop/api/netfw/nn-netfw-inetfwpolicy2) para enumerar todas las reglas con la marca Edge Traversal establecida, todas las aplicaciones que quieran escuchar el tráfico no solicitado se enumeran para la excepción del firewall. La información específica sobre el uso de la opción Edge Traversal se detalla en Recepción de tráfico no solicitado [a través de Teredo.](receiving-unsolicited-traffic-over-teredo.md)
 
 Las devoluciones de llamada no están asociadas al siguiente código de enumeración de ejemplo; Se recomienda encarecidamente que los firewalls de terceros realicen la enumeración periódicamente, o siempre que el firewall detecte una nueva aplicación que intente pasar por el firewall.
 

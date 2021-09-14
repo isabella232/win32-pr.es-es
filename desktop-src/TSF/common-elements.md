@@ -9,12 +9,12 @@ keywords:
 - Aplicaciones habilitadas para TSF, elementos comunes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e835fb6f4c881ac4159b0b93c35fa98585c734d0aac3368a7e755fab3cd6a3fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 630327dce70f6fee292eaa236baa99f589da3bd6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117953886"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243710"
 ---
 # <a name="common-elements"></a>Elementos comunes
 

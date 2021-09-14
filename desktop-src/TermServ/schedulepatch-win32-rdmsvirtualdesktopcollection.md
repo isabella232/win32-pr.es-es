@@ -1,12 +1,12 @@
 ---
-title: Método SchedulePatch de la clase Win32_RDMSVirtualDesktopCollection programación
+title: Método SchedulePatch de la Win32_RDMSVirtualDesktopCollection de programación
 description: Programa un trabajo de aprovisionamiento de actualizaciones de software que instala actualizaciones de software en las máquinas virtuales de una colección de escritorios virtuales.
 ms.assetid: 780d5709-9e7d-41d9-a4d0-b5d021615655
 ms.tgt_platform: multiple
 keywords:
 - Método SchedulePatch Servicios de Escritorio remoto
 - Método SchedulePatch Servicios de Escritorio remoto , Win32_RDMSVirtualDesktopCollection clase
-- Win32_RDMSVirtualDesktopCollection clase Servicios de Escritorio remoto , método SchedulePatch
+- Win32_RDMSVirtualDesktopCollection clase Servicios de Escritorio remoto método , SchedulePatch
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb29eb42f0f1d13ff1bf234c6fb41b8f414317a4b723af9a6d215cf25fa2ec95
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7d9585e3d13ea1f02115506741c153d62c33fcc8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119865515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374531"
 ---
 # <a name="schedulepatch-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método SchedulePatch de la clase \_ RDMSVirtualDesktopCollection de Win32
 
@@ -73,7 +73,7 @@ Cadena con formato XML que contiene la información del trabajo de actualizació
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 

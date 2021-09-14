@@ -11,12 +11,12 @@ keywords:
 - Complementos de DSP, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85d2752368dfc24cd8ff97056dfb025a41a8e9176bd3af4289032a30ef800929
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 755088bce89530350997d2f543e30872f630e882
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119506735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242997"
 ---
 # <a name="windows-media-player-dsp-plug-ins"></a>Reproductor de Windows Media Complementos DE DSP
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 849dd3925dafaec253842ac28d16ff61adb484e916bea698bff8be8cc59a2228
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b081f02626b7a89a99f5e6bd2785617a2599c22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118589048"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374359"
 ---
 # <a name="eventdata-eventtype-element"></a>Elemento EventData (EventType)
 
@@ -30,7 +30,7 @@ Contiene los datos del evento.
  />
 ```
 
-El tipo complejo [**EventType**](eventschema-eventtype-complextype.md) define el elemento **EventData.**
+El **elemento EventData** se define mediante el [**tipo complejo EventType.**](eventschema-eventtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ El tipo complejo [**EventType**](eventschema-eventtype-complextype.md) define el
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

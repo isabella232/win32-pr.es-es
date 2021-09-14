@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: e49b7653a434f54bfa706aea0bde63048d6b511e5143ade34f0b4e8225a6042b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4af451bea1f08df2af0a673b26e84c9df2a0954b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120014275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244232"
 ---
 # <a name="iscardlocateconfigurecardnamesearch-method"></a>Método ISCardLocate::ConfigureCardNameSearch
 
 \[El **método ConfigureCardNameSearch** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método ConfigureCardNameSearch** especifica los nombres de tarjeta que se usarán en la búsqueda de [*la tarjeta inteligente.*](../secgloss/s-gly.md)
+El **método ConfigureCardNameSearch** especifica los nombres de tarjeta que se usarán en la búsqueda de la [*tarjeta inteligente*](../secgloss/s-gly.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,15 +68,15 @@ Título del cuadro de diálogo para el control común de búsqueda.
 *lFlags* \[ En\]
 </dt> <dd>
 
-Especifica cuándo [*se muestra la*](../secgloss/u-gly.md) interfaz de usuario.
+Especifica cuándo se [*muestra la interfaz*](../secgloss/u-gly.md) de usuario.
 
 
 
 | Value                                                                                                                                                                       | Significado                                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="SC_DLG_MINIMAL_UI"></span><span id="sc_dlg_minimal_ui"></span><dl> <dt>**INTERFAZ \_ DE USUARIO MÍNIMA DE SC DLG \_ \_**</dt> </dl> | Muestra el cuadro de diálogo solo si la tarjeta que la aplicación que realiza la llamada no se encuentra y está disponible para su uso en un lector. Esto permite encontrar la tarjeta, conectarse (a través de un mecanismo de cuadro de diálogo interno o mediante las funciones de devolución de llamada del usuario) y devolverla a la aplicación que realiza la llamada.<br/> |
+| <span id="SC_DLG_MINIMAL_UI"></span><span id="sc_dlg_minimal_ui"></span><dl> <dt>**INTERFAZ \_ DE USUARIO MÍNIMA DE SC DLG \_ \_**</dt> </dl> | Muestra el cuadro de diálogo solo si la tarjeta que busca la aplicación que realiza la llamada no se encuentra y está disponible para su uso en un lector. Esto permite que la tarjeta se encuentra, se conecta (ya sea a través de un mecanismo de cuadro de diálogo interno o mediante las funciones de devolución de llamada del usuario) y se devuelve a la aplicación que realiza la llamada.<br/> |
 | <span id="SC_DLG_NO_UI"></span><span id="sc_dlg_no_ui"></span><dl> <dt>**SC \_ DLG \_ NO \_ UI**</dt> </dl>                | No provoca ninguna presentación de la interfaz de usuario, independientemente del resultado de la búsqueda.<br/>                                                                                                                                                                                                                                                                  |
-| <span id="SC_DLG_FORCE_UI"></span><span id="sc_dlg_force_ui"></span><dl> <dt>**SC \_ DLG \_ FORCE \_ UI**</dt> </dl>       | Hace que la interfaz de usuario se muestre independientemente del resultado de la búsqueda.<br/>                                                                                                                                                                                                                                                                      |
+| <span id="SC_DLG_FORCE_UI"></span><span id="sc_dlg_force_ui"></span><dl> <dt>**INTERFAZ \_ DE USUARIO DE SC DLG \_ FORCE \_**</dt> </dl>       | Hace que la interfaz de usuario se muestre independientemente del resultado de la búsqueda.<br/>                                                                                                                                                                                                                                                                      |
 
 
 
@@ -101,7 +101,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para buscar la [*tarjeta inteligente,*](../secgloss/s-gly.md)llame a [**FindCard**](iscardlocate-findcard.md).
 
@@ -115,11 +115,11 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardLocate se define como \_ 1461AACD-6810-11D0-918F-00AA00C18068<br/>         |

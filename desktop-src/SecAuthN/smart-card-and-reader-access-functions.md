@@ -4,12 +4,12 @@ ms.assetid: 37d92491-174b-471e-b36e-46d9285dd404
 title: Funciones de acceso de lector y tarjeta inteligente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b571764ae2d31865082e823996e8cc1ecde9d9d3e2dd618f28e528fd465a567
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7202b2d6165b49bfe80e55f15c4d69cb4a6909a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118917960"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374955"
 ---
 # <a name="smart-card-and-reader-access-functions"></a>Funciones de acceso de lector y tarjeta inteligente
 

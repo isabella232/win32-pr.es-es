@@ -9,12 +9,12 @@ keywords:
 - enumeraciones, tipo 1 tiendas en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3436223f3abab88f7a177bf8b5fe54e41c82046fae3809c00e15c0cccd829c6e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de065a8b8925959720a70ca957514b28dc68a2bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117748970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243242"
 ---
 # <a name="enumerations-for-type-1-online-stores"></a>Enumeraciones para almacenes en línea de tipo 1
 
@@ -23,7 +23,7 @@ ms.locfileid: "117748970"
 
  
 
-Los siguientes tipos de enumeración están disponibles para las tiendas en línea de tipo 1 mediante código de C++.
+Los siguientes tipos de enumeración están disponibles para almacenes en línea de tipo 1 mediante código de C++.
 
 
 
@@ -31,7 +31,7 @@ Los siguientes tipos de enumeración están disponibles para las tiendas en lín
 |--------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | [WMPAccountType](/previous-versions/windows/desktop/api/contentpartner/ne-contentpartner-wmpaccounttype)                   | Enumeración que define los tipos de cuenta para un almacén en línea.                                              |
 | [WMPCallbackNotification](/previous-versions/windows/desktop/api/contentpartner/ne-contentpartner-wmpcallbacknotification) | Enumeración que define los estados para su uso por la función de devolución de llamada **IWMPContentPartnerCallback::Notify.** |
-| [WMPPartnerNotification](/previous-versions/windows/desktop/api/contentpartner/ne-contentpartner-wmppartnernotification)   | Enumeración que define los estados operativos de una tienda en línea.                                          |
+| [WMPPartnerNotification](/previous-versions/windows/desktop/api/contentpartner/ne-contentpartner-wmppartnernotification)   | Enumeración que define los estados operativos de un almacén en línea.                                          |
 | [WMPStreamingType](/previous-versions/windows/desktop/api/contentpartner/ne-contentpartner-wmpstreamingtype)               | Enumeración que especifica el tipo de medio de streaming.                                                  |
 | [WMPTaskType](/previous-versions/windows/desktop/api/contentpartner/ne-contentpartner-wmptasktype)                         | Enumeración que representa Reproductor de Windows Media paneles de tareas.                                             |
 | [WMPTemplateSize](/previous-versions/windows/desktop/api/contentpartner/ne-contentpartner-wmptemplatesize)                 | Enumeración que representa los tamaños de plantilla HTML.                                                         |

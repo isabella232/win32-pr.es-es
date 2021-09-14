@@ -5,12 +5,12 @@ ms.assetid: 9603edb9-22c6-4649-b82d-bc1421f10ff5
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12c24d32ba25f76747a8d57819dba995c116bcbcc77adbcbd88f997df00a1396
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 398e4f0e9cddd9c15f62cc67d466231711ce3ef0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119865935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374670"
 ---
 # <a name="remote-desktop-virtualization-enumerations"></a>Escritorio remoto enumeraciones de virtualización
 
@@ -20,7 +20,7 @@ La API Escritorio remoto Virtualization admite los siguientes tipos de enumeraci
 
 <dl> <dt>
 
-[**TIPO DE \_ CAMBIO \_ DE DESTINO**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-target_change_type)
+[**TIPO \_ DE CAMBIO DE \_ DESTINO**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-target_change_type)
 </dt> <dd>
 
 Especifica el tipo de cambio que se produjo en un destino.
@@ -34,10 +34,10 @@ Indica el estado de un destino.
 
 </dd> <dt>
 
-[**TIPO \_ DE DESTINO**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-target_type)
+[**TIPO DE \_ DESTINO**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-target_type)
 </dt> <dd>
 
-Indica si un destino pertenece a un grupo o granja.
+Indica si un destino pertenece a un grupo o una granja.
 
 </dd> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: f45ee39e9599e2d77d77131eb64c2a9037de1f4ba31f907ac5c9ea562a706c27
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 96862836d3f9c16034ce1c2e751aebea2884d114
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120032195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375019"
 ---
 # <a name="ntgetcurrentprocessornumber-function"></a>Función NtGetCurrentProcessorNumber
 
@@ -43,7 +43,7 @@ Esta función no tiene parámetros.
 
 La función devuelve el número de procesador actual.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función se usa para proporcionar información para calcular el rendimiento del proceso.
 

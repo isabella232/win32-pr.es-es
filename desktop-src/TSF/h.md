@@ -1,18 +1,18 @@
 ---
-title: H (marco de trabajo de servicios de texto)
+title: H (Text Services Framework)
 description: Página de glosario
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 0aa2f4ed-ca9a-477f-8ae4-e54bb405528c
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ba96385d0b2d37592d429ecc9e6598f6575181c9
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104149805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243603"
 ---
-# <a name="h-text-services-framework"></a>H (marco de trabajo de servicios de texto)
+# <a name="h-text-services-framework"></a>H (Text Services Framework)
 
 <dl> <dt>
 

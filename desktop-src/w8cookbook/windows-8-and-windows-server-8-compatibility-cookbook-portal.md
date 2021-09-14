@@ -6,7 +6,7 @@ title: Windows y Windows Server compatibility cookbook Windows 10, Windows 8, Wi
 
 ## <a name="purpose"></a>Propósito
 
-En la guía *,* proporcionamos información sobre los cambios y las nuevas características de los sistemas operativos Windows 10, Windows 8, Windows 8.1, Windows Server 2012 y Windows Server 2012 R2. También se proporcionan directrices para comprobar la compatibilidad de los programas existentes y planeados con los nuevos sistemas operativos. Se supone que está familiarizado con las versiones anteriores de Windows.
+En la *guía,* se proporciona información sobre los cambios y las nuevas características de los sistemas operativos Windows 10, Windows 8, Windows 8.1, Windows Server 2012 y Windows Server 2012 R2. También se proporcionan directrices para comprobar la compatibilidad de los programas existentes y planeados con los nuevos sistemas operativos. Se supone que está familiarizado con las versiones anteriores de Windows.
 
 El contenido se aplica a:
 

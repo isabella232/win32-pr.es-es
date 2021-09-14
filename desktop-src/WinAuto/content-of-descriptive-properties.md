@@ -4,12 +4,12 @@ description: La interfaz IAccessible proporciona propiedades descriptivas, que d
 ms.assetid: e6c1d1a3-417d-4aea-abac-f84a55f666b7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7073d44478d3e7236a56828898346499922ab5e16e401489e54a41b61d7637e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 271dc920034802b87afd4c76ab7ede6bb9476d99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119860645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242925"
 ---
 # <a name="content-of-descriptive-properties"></a>Contenido de propiedades descriptivas
 
@@ -32,7 +32,7 @@ Al diseñar objetos accesibles, los desarrolladores de servidores también deben
 -   [Elección de las propiedades que se admitirán](choosing-which-properties-to-support.md)
 -   [Elegir el contenido para propiedades descriptivas](choosing-the-content-for-descriptive-properties.md)
 
-Para obtener información sobre los parámetros y los valores devueltos de estas propiedades, vea la sección [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) de la Microsoft Active Accessibility [referencia de C/C++.](c-c---reference.md)
+Para obtener información sobre los parámetros y los valores devueltos de estas propiedades, vea la sección [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) de Microsoft Active Accessibility [referencia de C/C++.](c-c---reference.md)
 
  
 

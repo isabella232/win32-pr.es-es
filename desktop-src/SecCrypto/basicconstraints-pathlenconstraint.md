@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 2816f8b7d0c9485037e3b90dc421c295fe144ec3fc986bc620b22e7c8d95abbc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39656cf4f3cbe768589ba704a0a65c158da000fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119879535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374915"
 ---
 # <a name="basicconstraintspathlenconstraint-property"></a>BasicConstraints.PathLenConstraint, propiedad
 
-\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use la clase [**X509BasicConstraintsExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509basicconstraintsextension?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/previous-versions/windows/)\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use la [**clase X509BasicConstraintsExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509basicconstraintsextension?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/previous-versions/windows/)\]
 
 La **propiedad PathLenConstraint** recupera el valor de la restricción de longitud de ruta de acceso.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB

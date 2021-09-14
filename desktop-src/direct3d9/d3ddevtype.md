@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: d311706d328a5d05668a4d1dcddb032f17fba0c69e48286f899875a8da6a650e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2be365ffbbe5bf778379c7be060c85c0b099422f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117732995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242865"
 ---
 # <a name="d3ddevtype-enumeration"></a>D3DDEVTYPE (enumeración)
 
 Define los tipos de dispositivo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -62,7 +62,7 @@ Inicialice Direct3D en un equipo que no tenga disponible el hardware ni la raste
 
 Las características de Direct3D se implementan en software; sin embargo, el rasterizador de referencia hace uso de instrucciones especiales de CPU siempre que puede.
 
-El dispositivo de referencia se instala mediante Windows SDK 8.0 o posterior y está pensado como ayuda para depurar solo para el desarrollo.
+El dispositivo de referencia se instala mediante Windows SDK 8.0 o posterior y está pensado como ayuda para la depuración solo para el desarrollo.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, al
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todos los métodos de [**la interfaz IDirect3D9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3d9) que toman un tipo de dispositivo **D3DDEVTYPE** producirán un error si se especifica D3DDEVTYPE \_ NULLREF. Para usar estos métodos, sustituya D3DDEVTYPE \_ REF en la llamada al método .
 

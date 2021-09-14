@@ -4,12 +4,12 @@ ms.assetid: f8ef613a-74d1-4bc3-8f13-36679856ce4c
 title: Equipos a mi alrededor arquitectura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8191bd60fa63487d38d9178d3de9228c388f5ea1a93ad11fd338fb59d25be529
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9dad198453978f24e8f63935e50d199d9bfa5315
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120034405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244796"
 ---
 # <a name="people-near-me-architecture"></a>Equipos a mi alrededor arquitectura
 

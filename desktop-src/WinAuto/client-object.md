@@ -4,12 +4,12 @@ description: El área de cliente es la parte de una ventana donde la aplicación
 ms.assetid: 1b3a800e-e3c1-4737-8ad0-41707eb1e985
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f33190ebd1013c92a58ecc64b07993a5a5ae1cd842e50c88691295114a128074
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be28ae4c31e1a2d2f72674a39d7db08730562816
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119645065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242931"
 ---
 # <a name="client-object-msaa-ui-element-reference"></a>Objeto de cliente (referencia de elemento de la interfaz de usuario de MSAA)
 

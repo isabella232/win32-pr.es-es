@@ -1,15 +1,15 @@
 ---
-description: Obtenga información sobre Bluetooth GUID del servicio. En esta página de referencia se describe System.Devices.AepService. Bluetooth. Propiedad ServiceGuid.
+description: Obtenga información sobre el GUID Bluetooth servicio. En esta página de referencia se describe System.Devices.AepService. Bluetooth. Propiedad ServiceGuid.
 ms.assetid: b623c597-3cf3-4c46-a1df-3a15425a41c6
 title: System.Devices.AepService. Bluetooth. ServiceGuid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb0f3be7b9fec56fc7830f981e64f8a25f84463400d1ac5d3cf800405f8199cb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b1f71d58b9661bdbbb7a531d6ce5d1364f79e19a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119775824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268079"
 ---
 # <a name="systemdevicesaepservicebluetoothserviceguid"></a>System.Devices.AepService. Bluetooth. ServiceGuid
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

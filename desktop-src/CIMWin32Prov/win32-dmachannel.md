@@ -1,5 +1,5 @@
 ---
-description: La clase WMI DMAChannel de Win32 representa un canal de acceso directo a memoria (DMA) en un sistema informático que \_ ejecuta Windows.
+description: La clase WMI DMAChannel win32 representa un canal de acceso directo a memoria (DMA) en un sistema \_ informático que ejecuta Windows.
 ms.assetid: cc517aac-7bd4-4937-8b07-2597076fca2c
 ms.tgt_platform: multiple
 title: Win32_DMAChannel clase
@@ -33,16 +33,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f1edce18d0dc8283a134972e8f0e2f79ce0ff98148bf6333d4048adbc14f2d88
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0c2b36ff17931133d0dc4529e34f31ac24e00653
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375278"
 ---
 # <a name="win32_dmachannel-class"></a>Clase DMAChannel de Win32 \_
 
-La **clase WMI \_ DMAChannel** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa un canal de acceso directo a memoria (DMA) en un sistema informático que ejecuta Windows. DMA es un método para mover datos de un dispositivo a la memoria (o viceversa) sin la ayuda del microprocesador. La placa del sistema usa un controlador DMA para controlar un número fijo de canales, cada uno de los cuales puede ser utilizado por un dispositivo (y solo uno) a la vez.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ DMAChannel win32** representa un canal de acceso directo a memoria (DMA) en un sistema informático que ejecuta Windows. DMA es un método para mover datos de un dispositivo a la memoria (o viceversa) sin la ayuda del microprocesador. La placa del sistema usa un controlador DMA para controlar un número fijo de canales, cada uno de los cuales puede ser utilizado por un dispositivo (y solo uno) a la vez.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -74,15 +74,15 @@ class Win32_DMAChannel : CIM_DMA
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase Win32 \_ DMAChannel** tiene estos tipos de miembros:
+La **clase \_ DMAChannel win32** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase Win32 \_ DMAChannel** tiene estas propiedades.
+La **clase \_ DMAChannel win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -196,7 +196,7 @@ En uso o no disponible
 
 </dt> <dd>
 
-En uso y disponible o compartible
+En Uso y disponible o compartible
 
 </dd> </dl>
 
@@ -254,23 +254,23 @@ Esta propiedad se hereda de [**CIM \_ DMA.**](cim-dma.md)
 
 <span id="Not_execute_in__count_by_byte__mode"></span><span id="not_execute_in__count_by_byte__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>
 
-<span id="Not_execute_in__count_by_byte__mode"></span><span id="not_execute_in__count_by_byte__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**No se ejecuta en modo "recuento por byte"** (3)
+<span id="Not_execute_in__count_by_byte__mode"></span><span id="not_execute_in__count_by_byte__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**No se ejecuta en el modo "recuento por byte"** (3)
 
 
 </dt> <dd>
 
-No se ejecuta en modo "recuento por byte"
+No se ejecuta en modo "count by byte"
 
 </dd> <dt>
 
 <span id="Execute_in__count_by_byte__mode"></span><span id="execute_in__count_by_byte__mode"></span><span id="EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>
 
-<span id="Execute_in__count_by_byte__mode"></span><span id="execute_in__count_by_byte__mode"></span><span id="EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**Ejecutar en modo "recuento por byte"** (4)
+<span id="Execute_in__count_by_byte__mode"></span><span id="execute_in__count_by_byte__mode"></span><span id="EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**Ejecutar en modo "count by byte"** (4)
 
 
 </dt> <dd>
 
-Ejecutar en modo "recuento por byte"
+Ejecutar en modo "count by byte"
 
 </dd> </dl>
 
@@ -306,7 +306,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.9")
 </dt> </dl>
 
-Tiempo del canal DMA.
+Control de tiempo del canal DMA.
 
 Esta propiedad se hereda de [**CIM \_ DMA.**](cim-dma.md)
 
@@ -368,7 +368,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
 Esta propiedad se hereda de [**CIM \_ DMA.**](cim-dma.md)
 
@@ -383,7 +383,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de la clase de creación del sistema de equipo de ámbito.
@@ -401,7 +401,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre del sistema de equipo de ámbito.
@@ -491,7 +491,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -512,7 +512,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| System Structures CM PARTIAL RESOURCE \| [**\_ \_ \_ DESCRIPTOR**](/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_partial_resource_descriptor) \| Dma \| Port")
 </dt> </dl>
 
-Puerto DMA utilizado por el adaptador de bus host. Esto es significativo para los bus de tipo MCA.
+Puerto DMA utilizado por el adaptador de bus host. Esto es significativo para los buses de tipo MCA.
 
 Ejemplo: 12
 
@@ -530,7 +530,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -561,7 +561,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -575,14 +575,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -775,7 +775,7 @@ Esta propiedad se hereda de [**CIM \_ DMA.**](cim-dma.md)
 
 <span id="Not_execute_in__count_by_word__mode"></span><span id="not_execute_in__count_by_word__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_WORD__MODE"></span>
 
-<span id="Not_execute_in__count_by_word__mode"></span><span id="not_execute_in__count_by_word__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_WORD__MODE"></span>**No se ejecuta en modo "recuento por palabra"** (3)
+<span id="Not_execute_in__count_by_word__mode"></span><span id="not_execute_in__count_by_word__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_WORD__MODE"></span>**No se ejecuta en el modo "recuento por palabra"** (3)
 
 
 </dt> <dd>
@@ -797,7 +797,7 @@ Ejecutar en modo "recuento por palabra"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ DMAChannel de Win32** se deriva de [**CIM \_ DMA**](cim-dma.md).
 

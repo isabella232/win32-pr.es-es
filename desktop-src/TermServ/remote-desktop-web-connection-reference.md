@@ -1,6 +1,6 @@
 ---
 title: Escritorio remoto ActiveX interfaces de control
-description: Interfaces que puede usar para crear e implementar canales virtuales que se pueden incluir en scripts en Servicios de Escritorio remoto web.
+description: Interfaces que puede usar para crear e implementar canales virtuales que pueden incluir scripts en Servicios de Escritorio remoto web.
 ms.assetid: 8258411e-eef6-4dcf-a7a2-7d04b0ea3744
 ms.tgt_platform: multiple
 keywords:
@@ -8,16 +8,16 @@ keywords:
 - Protocolo de escritorio remoto (RDP) Servicios de Escritorio remoto , interfaces
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: feac7c2ab5d836191f5321d87fafc50350f1d5713bf18cb27dbb879aff127271
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a80c80dcf9799efe2eb5609f54142fd0780cfe54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119988675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374654"
 ---
 # <a name="remote-desktop-activex-control-interfaces"></a>Escritorio remoto ActiveX interfaces de control
 
-El control Escritorio remoto ActiveX admite las siguientes interfaces que admiten scripts y que no se pueden incluir en el script, que se agrupan según la jerarquía de herencia.
+El Escritorio remoto ActiveX admite las siguientes interfaces que admiten scripts y que no se pueden incluir en el script, que se agrupan según la jerarquía de herencia.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -187,7 +187,7 @@ Proporciona acceso a las propiedades noscriptables de la sesión remota de un cl
 [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md)
 </dt> <dd>
 
-Incluye métodos para recuperar y establecer las propiedades del control Escritorio remoto ActiveX que están restringidas a zonas de seguridad de Internet Explorer URL específicas.
+Incluye métodos para recuperar y establecer las propiedades del control Escritorio remoto ActiveX que están restringidas a zonas de seguridad Internet Explorer URL específicas.
 
 </dd> <dt>
 
@@ -201,14 +201,14 @@ Define propiedades adicionales del control Escritorio remoto ActiveX que están 
 [**IMsRdpClientShell**](imsrdpclientshell.md)
 </dt> <dd>
 
-Conexión a Escritorio remoto de cliente (RDC) que se usan para iniciar el cliente desde Escritorio remoto Web Access (Acceso web de Escritorio remoto) o desde otros portales web.
+Conexión a Escritorio remoto configuración de cliente (RDC) que se usa para iniciar el cliente desde Escritorio remoto Web Access (Acceso web de Escritorio remoto) o desde otros portales web.
 
 </dd> <dt>
 
 [**IMsRdpClientTransportSettings**](imsrdpclienttransportsettings.md)
 </dt> <dd>
 
-Administra la configuración de transporte de cliente para el Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
+Administra la configuración de transporte de cliente para el servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 
 </dd> <dt>
 
@@ -334,7 +334,7 @@ Contiene propiedades y métodos relacionados con la aplicación de una contrase�
 [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md)
 </dt> <dd>
 
-Incluye métodos para recuperar y establecer las propiedades del control Escritorio remoto ActiveX que están restringidas a zonas de seguridad Internet Explorer url específicas.
+Incluye métodos para recuperar y establecer las propiedades del control Escritorio remoto ActiveX que están restringidas a zonas de seguridad Internet Explorer URL específicas.
 
 </dd> <dt>
 

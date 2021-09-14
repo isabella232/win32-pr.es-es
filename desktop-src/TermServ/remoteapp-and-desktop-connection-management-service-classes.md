@@ -1,20 +1,20 @@
 ---
 title: Administración de conexiones de RemoteApp y Escritorio Service
-description: El Administración de conexiones de RemoteApp y Escritorio WMI del servicio proporciona las siguientes clases.
+description: El Administración de conexiones de RemoteApp y Escritorio WMI de servicio proporciona las clases siguientes.
 ms.assetid: F14E378A-0BA4-4CD6-A3B7-71A2E71FAA2A
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2132f78baad858e96a6a986fc06df427d7964d18b179fc2db75dd0c0fd28e3b7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 42e07eb8c2bda7c56d3b5954aa9cb0c8e9f3ca74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119988645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127374642"
 ---
 # <a name="remoteapp-and-desktop-connection-management-service-classes"></a>Administración de conexiones de RemoteApp y Escritorio Service
 
-El Administración de conexiones de RemoteApp y Escritorio WMI del servicio proporciona las siguientes clases.
+El Administración de conexiones de RemoteApp y Escritorio WMI de servicio proporciona las clases siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,21 +23,21 @@ El Administración de conexiones de RemoteApp y Escritorio WMI del servicio prop
 [**Win32 \_ CentralPublishingChangeEvent**](win32-centralpublishingchangeevent.md)
 </dt> <dd>
 
-Evento que representa un cambio en la configuración central de RDV.
+Evento que representa un cambio en la configuración de RDV central.
 
 </dd> <dt>
 
 [**Win32 \_ RDCentralPublishedDeploymentSettings**](win32-rdcentralpublisheddeploymentsettings.md)
 </dt> <dd>
 
-Contiene la configuración de implementación que se usa para generar archivos RDP para los recursos publicados desde una granja.
+Contiene la configuración de implementación utilizada para generar archivos RDP para los recursos publicados desde una granja de servidores.
 
 </dd> <dt>
 
 [**Win32 \_ RDCentralPublishedFarm**](win32-rdcentralpublishedfarm.md)
 </dt> <dd>
 
-Lista de granjas de servidores desde las que se han publicado escritorios o aplicaciones.
+Lista de granjas desde las que se han publicado escritorios o aplicaciones.
 
 </dd> <dt>
 
@@ -48,7 +48,7 @@ Información de una extensión de archivo asociada a una aplicación
 
 </dd> <dt>
 
-[**Win32 \_ RDCentralPublishedRemoteApplication**](win32-rdcentralpublishedremoteapplication.md)
+[**\_RdCentralPublishedRemoteApplication de Win32**](win32-rdcentralpublishedremoteapplication.md)
 </dt> <dd>
 
 Describe una aplicación publicada en otro equipo para su uso remoto a través de Terminal Services.
@@ -62,10 +62,10 @@ Escritorio publicado en otro equipo, para su uso remoto a través de Terminal Se
 
 </dd> <dt>
 
-[**Win32 \_ RDPersonalDesktopAssignment**](win32-rdpersonaldesktopassignment.md)
+[**\_RdPersonalDesktopAssignment de Win32**](win32-rdpersonaldesktopassignment.md)
 </dt> <dd>
 
-Lista de asignaciones de escritorios personales.
+Lista de asignaciones de escritorio personales.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Representa un complemento que está configurado para usarse a través de Adminis
 [**Win32 \_ TSLegacyPlugin**](win32-tslegacyplugin.md)
 </dt> <dd>
 
-Representa un Escritorio remoto que los complementos integrados Administración de conexiones de RemoteApp y Escritorio Service consultarán los programas RemoteApp.
+Representa un servidor Escritorio remoto que los complementos Administración de conexiones de RemoteApp y Escritorio Service integrados consultarán para los programas RemoteApp.
 
 </dd> <dt>
 
