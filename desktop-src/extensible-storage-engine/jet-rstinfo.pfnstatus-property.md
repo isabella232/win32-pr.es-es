@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0a4a74518b50358dc2e6317009684db356562d54927012c6af433f4172bd4f4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57b400e91867d4408fcdb93b979d1a39d8e7eb76
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119967598"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965579"
 ---
 # <a name="jet_rstinfopfnstatus-property"></a>JET_RSTINFO.pfnStatus, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece la devolución de llamada en Obtiene o establece la función
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ public JET_PFNSTATUS pfnStatus { get; set; }
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_PFNSTATUS](./jet-pfnstatus-delegate.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

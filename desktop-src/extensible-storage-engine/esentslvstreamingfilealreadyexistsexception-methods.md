@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102828
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 52911c37016a57a8e4e4337caaa2b42a63beccee4c56cacc222361ae4dfc82f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bfbb3f24e964c7dd4fccf423a0936fd3ce03fe2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118771797"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964404"
 ---
 # <a name="esentslvstreamingfilealreadyexistsexception-methods"></a>Métodos de EsentSLVStreamingFileAlreadyExistsException 
 

@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 583a27c3a6ea905d498c78b9275154b221c8e5500cf6823102172b364b66cc4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 209347096064d61f9f31fac8ae0552f36fbc9109
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118266519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966220"
 ---
 # <a name="esentinvalidfilenameexception-class"></a>Clase EsentInvalidFilenameException
 
-Clase base para JET_err. Excepciones invalidFilename.
+Clase base para JET_err. Excepciones InvalidFilename.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones invalidFilename.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

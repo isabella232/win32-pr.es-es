@@ -4,12 +4,12 @@ description: Recupera el número de adaptadores de un objeto de lista de adaptad
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 952120a039e4060a45f5e6e1de607fd68b50fcd7d7cd88ce5a98474f8f2dcfdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 067e7046d53bdd63f3c8db0c856cf5664a09f426
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966324"
 ---
 # <a name="idxcoreadapterlistgetadaptercount-method"></a>IDXCoreAdapterList::GetAdapterCount (método)
 
@@ -27,6 +27,6 @@ Tipo: **uint32_t**
 
 Devuelve el número de elementos de adaptador de la lista.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [IDXCoreAdapterList,](./nn-dxcore_interface-idxcoreadapterlist.md) [referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

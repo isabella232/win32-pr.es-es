@@ -4,7 +4,7 @@ description: Contiene información adicional sobre el estado de una inscripción
 ms.assetid: 2FDDF4D3-6A3E-4DF5-ACA4-423F893C6F2B
 keywords:
 - WINBIO_EXTENDED_ENROLLMENT_STATUS estructura Windows API de Marco biométrico
-- PWINBIO_EXTENDED_ENROLLMENT_STATUS puntero de estructura Windows API de Marco biométrico
+- PWINBIO_EXTENDED_ENROLLMENT_STATUS puntero de estructura Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16ab3736e3ad5b0bcf10bed1fb606d3e6283715a6b10c44dcb4923920597d5e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 937e56e438feadc646329c673af4454cb39eaddd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118910450"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160763"
 ---
 # <a name="winbio_extended_enrollment_status-structure"></a>ESTRUCTURA DE ESTADO \_ DE INSCRIPCIÓN \_ EXTENDIDA \_ DE WINBIO
 
@@ -66,7 +66,7 @@ typedef struct _WINBIO_EXTENDED_ENROLLMENT_STATUS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -230,7 +230,7 @@ El tamaño del marco de la cámara determina el límite superior en el número d
 **CenterCenter \_ 1**
 </dt> <dd>
 
-Posición del centro de una de las alumnos del individuo que se inscribirá. Si el sistema de reconocimiento de iris solo supervisa un ojo, esta posición es del centro de la alumno de ese ojo. Si el sistema de reconocimiento de iris supervisa ambos ojos, pero solo hay un ojo en el marco de la cámara, esta posición es del centro de la mirada del ojo en el marco de la cámara. Si el sistema de reconocimiento de iris supervisa ambos ojos y ambos están en el marco de la cámara, esta posición probablemente sea del centro de la afición del ojo derecho del individuo.
+Posición del centro de una de las alumnos del individuo que se inscribirá. Si el sistema de reconocimiento de iris solo supervisa un ojo, esta posición es del centro de la alumno de ese ojo. Si el sistema de reconocimiento de iris supervisa ambos ojos, pero solo hay un ojo en el marco de la cámara, esta posición es del centro de la mirada del ojo en el marco de la cámara. Si el sistema de reconocimiento de iris supervisa ambos ojos y ambos están en el marco de la cámara, esta posición probablemente sea del centro de la mirada del ojo derecho del individuo.
 
 </dd> <dt>
 
@@ -270,7 +270,7 @@ Reservado.
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                                                                     |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluye Winbio.h para aplicaciones cliente o Adaptadores de \_ Winbio.h para adaptadores)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluya Winbio.h para aplicaciones cliente o Adaptadores \_ de Winbio.h para adaptadores)</dt> </dl> |
 
 
 

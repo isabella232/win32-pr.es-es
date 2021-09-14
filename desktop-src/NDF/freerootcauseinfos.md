@@ -1,6 +1,6 @@
 ---
 title: Función FreeRootCauseInfos (Ndattributils.h)
-description: Desasigna la memoria asignada internamente a una matriz de estructuras RootCauseInfo.
+description: Desasigne la memoria asignada internamente a una matriz de estructuras RootCauseInfo.
 ms.assetid: b45fa432-0db4-470b-80ce-ae25c33f88d6
 keywords:
 - Función FreeRootCauseInfos NDF
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9cbd0386af86ebe5e1fdc5e6350cebfb305f44544f8822e0f2bde4d46cb55f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97d302a1c58f1a77aafa7611f437f3d445f29f9a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161209"
 ---
 # <a name="freerootcauseinfos-function"></a>Función FreeRootCauseInfos
 
@@ -81,11 +81,11 @@ Esta función no devuelve ningún valor.
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

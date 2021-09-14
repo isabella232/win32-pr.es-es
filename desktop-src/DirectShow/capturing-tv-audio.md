@@ -4,12 +4,12 @@ ms.assetid: c0c62a8e-ab16-4617-936c-b64e6e3865b4
 title: Captura de audio de TV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d699533480bdeaaa528e362c0773e9df8100fda3dc2195a65c055ae7f7d5bb1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 138ce631aedf12ddfb52be92d08ffb47da0cbdec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119641015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160220"
 ---
 # <a name="capturing-tv-audio"></a>Captura de audio de TV
 

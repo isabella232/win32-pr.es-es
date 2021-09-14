@@ -18,12 +18,12 @@ api_type:
 - Schema
 api_location:
 - Root
-ms.openlocfilehash: 50d81fb8cfc5580ad0868df307771c493c0919e1bf2ce4de4b67d48db034a0d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a8590a2a83cdbc9bd06575cf17ddbe65138a4a31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118321115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965303"
 ---
 # <a name="__cimomidentification-class"></a>\_\_CIMOMIdentification (clase)
 
@@ -44,7 +44,7 @@ class __CIMOMIdentification : __SystemClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **\_ \_ clase CIMOMIdentification** tiene estos tipos de miembros:
 
@@ -118,13 +118,13 @@ Directorio de instalación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **\_ \_ clase CIMOMIdentification** se deriva de [**\_ \_ SystemClass**](--systemclass.md), que no tiene propiedades.
+La **\_ \_ clase CIMOMIdentification** se deriva de [**\_ \_ SystemClass**](--systemclass.md), que no tiene ninguna propiedad.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código de VBScript se describe cómo mostrar la información de identificación del modelo de objetos CIM y se tomó del directorio de ejemplo en Archivos de programa SDK de Microsoft Windows script wmi de sysmgmt de ejemplos \\ \\ \\ \\ \\ v7.0. \\ \\ \\ \\
+En el siguiente ejemplo de código de VBScript se describe cómo mostrar información de identificación del modelo de objetos CIM y se ha tomado del directorio de ejemplo en Archivos de programa SDK de \\ \\ Microsoft Windows \\ \\ \\ v7.0 \\ Samples \\ sysmgmt wmi scripting (Scripting wmi de sysmgmt de ejemplos de v7.0). \\ \\
 
 
 ```VB
@@ -141,7 +141,7 @@ end if
 
 
 
-En el siguiente ejemplo de código Perl se describe cómo mostrar la información de identificación del modelo de objetos CIM y se ha tomado del directorio de ejemplo en Archivos de programa SDK de Microsoft Windows script wmi de sysmgmt de ejemplos \\ \\ \\ \\ \\ v7.0. \\ \\ \\ \\
+En el siguiente ejemplo de código Perl se describe cómo mostrar la información de identificación del modelo de objetos CIM y se tomó del directorio de ejemplo en Archivos de programa SDK de Microsoft Windows scripting wmi de sysmgmt de ejemplos \\ \\ \\ \\ \\ v7.0. \\ \\ \\ \\
 
 
 ```Perl
@@ -170,7 +170,7 @@ else
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |

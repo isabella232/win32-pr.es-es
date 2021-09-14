@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 87f3bed1dcd9fd43a67c96cbcb53d2496a976afa
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 1b47cd9de933efdc5a73aba32a212432a9e37a12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474091"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964232"
 ---
 # <a name="jetgetthreadstats-function"></a>JetGetThreadStats (Función)
 
@@ -55,7 +55,7 @@ Tamaño máximo en bytes del búfer de salida.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores ese, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
@@ -69,7 +69,7 @@ Si se ejecuta correctamente, el búfer de salida contendrá [una JET_THREADSTATS
 
 En caso de error, el estado del búfer de salida es indefinido.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 La información proporcionada por dos llamadas consecutivas de esta API está pensada para usarse para calcular el gasto de cualquier otra operación del motor de base de datos en el subproceso actual. Por lo general, esto se hace tomando un antes y después de leer las estadísticas y restando el recuento posterior del recuento anterior para obtener el recuento neto de operaciones realizadas.
 
@@ -82,7 +82,13 @@ La [JET_THREADSTATS](./jet-threadstats-structure.md) estructura se expandirá pr
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

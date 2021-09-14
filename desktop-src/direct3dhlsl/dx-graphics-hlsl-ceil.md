@@ -1,6 +1,6 @@
 ---
 title: ceil (Corecrt \_ math.h)
-description: Devuelve el valor entero más pequeño mayor o igual que el valor especificado.
+description: Devuelve el valor entero más pequeño que es mayor o igual que el valor especificado.
 ms.assetid: 9823f321-14c3-4b27-9a4b-7a885cece39b
 keywords:
 - ceil HLSL
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87e898de0e638e93b4eea5d1f70f89ab7de125909a97f7bbbf058f6581c44c3d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec86db320119b7f162ed48a748c1d1ff4335b6f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119854955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964691"
 ---
 # <a name="ceil"></a>ceil
 
-Devuelve el valor entero más pequeño mayor o igual que el valor especificado.
+Devuelve el valor entero más pequeño que es mayor o igual que el valor especificado.
 
 
 
@@ -71,7 +71,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí       |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | sí       |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 
@@ -88,7 +88,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

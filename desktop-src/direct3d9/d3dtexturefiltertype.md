@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: a9a55632ee1f1b8f2e40b1be1272411c7c24b3b18c576563ff9c0de7c79bc413
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bd6038e1b3d2b2f85e5766605583db9879427343
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963763"
 ---
 # <a name="d3dtexturefiltertype-enumeration"></a>D3DTEXTUREFILTERTYPE (enumeración)
 
 Define los modos de filtrado de textura para una fase de textura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -108,11 +108,11 @@ El uso [**con \_ MIPFILTER de D3DSAMP**](./d3dsamplerstatetype.md) no está defi
 <span id="D3DTEXF_FORCE_DWORD"></span><span id="d3dtexf_force_dword"></span>**D3DTEXF \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) usa D3DTEXTUREFILTERTYPE junto con [**D3DSAMPLERSTATETYPE para**](./d3dsamplerstatetype.md) definir modos de filtrado de textura para una fase de textura.
 
@@ -136,7 +136,7 @@ No todos los modos de filtrado válidos para un dispositivo se aplicarán a los 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 493893a51d51b1ce61d43ff54461bb71c08a9f6a
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371491"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161336"
 ---
 # <a name="wm_cap_set_callback_status-message"></a>Mensaje DE \_ ESTADO DE \_ \_ DEVOLUCIÓN DE LLAMADA \_ DE WM CAP SET
 
@@ -70,7 +70,7 @@ Opcionalmente, las aplicaciones pueden establecer una función de devolución de
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

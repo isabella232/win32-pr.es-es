@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: cec1d083f9884b9bff1b14806d84126f7426f49556955ac460e06336a6297da5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51edaa1872223727abdc396766552720cd34d726
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118522314"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888508"
 ---
 # <a name="id3dxbaseeffectgetfloat-method"></a>Método ID3DXBaseEffect::GetFloat
 
@@ -63,7 +63,7 @@ Devuelve un valor de punto flotante.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

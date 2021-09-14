@@ -4,12 +4,12 @@ description: Sincronización de grupos de subprocesos o barrera de memoria.
 ms.assetid: DCA637FE-8F5C-41D0-8B5E-F913463BA387
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5c64532669fc94d7d2109c39e501af0825e56434f66b79e20e1641c787a1a58
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: be072b51b4a18d9f1408df0907ec0a55131c18d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119852865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966535"
 ---
 # <a name="sync-sm5---asm"></a>sync (sm5 - asm)
 
@@ -24,7 +24,7 @@ Sincronización de grupos de subprocesos o barrera de memoria.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **La** sincronización tiene \_ opciones uglobal, \_ ugroup, \_ g y \_ t.
 
@@ -36,7 +36,7 @@ En el sombreador de proceso, se debe especificar ( \_ \_ uglobal o ugroup \* ) \
 
 Barrera de \# memoria global u (UAV).
 
-Todas las lecturas o escrituras de memoria u anteriores realizadas por este subproceso en el orden del programa se hacen visibles para todos los subprocesos de toda la GPU antes de que este subproceso acceda a la memoria u \# \# subsiguiente. La parte completa de la GPU de la definición se reemplaza por un ámbito menor que global en un caso, que se describe a continuación.
+Todas las lecturas o escrituras de memoria u anteriores realizadas por este subproceso en el orden del programa se hacen visibles para todos los subprocesos de toda la GPU antes de que este subproceso acceda a la memoria u \# \# subsiguiente. La parte completa de la GPU de la definición se reemplaza por un ámbito menos global en un caso, que se describe a continuación.
 
 Esto se aplica a toda la memoria UAV enlazada en la fase actual del sombreador.
 
@@ -109,7 +109,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -117,11 +117,11 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Dado que los UAV están disponibles en todas las fases del sombreador para Direct3D 11.1, la variante **\_ sync uglobal** de esta instrucción se aplica a todas las fases del sombreador para el tiempo de ejecución de Direct3D 11.1, que está disponible a partir de Windows 8.
+Dado que los UAV están disponibles en todas las fases del sombreador para Direct3D 11.1, la variante **\_ uglobal** de sincronización de esta instrucción se aplica a todas las fases del sombreador para el tiempo de ejecución de Direct3D 11.1, que está disponible a partir de Windows 8.
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -137,12 +137,12 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

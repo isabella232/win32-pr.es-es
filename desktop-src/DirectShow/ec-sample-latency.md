@@ -4,12 +4,12 @@ ms.assetid: 8bd202fb-3015-41a2-ad14-862f64cb252f
 title: EC_SAMPLE_LATENCY (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 612c553916dc19685224bb512f6627363dba439883553d82c59f153324f5eda7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee90d42e6464eccc4bc93b1052e29392b74bb2d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119686155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161513"
 ---
 # <a name="ec_sample_latency"></a>LATENCIA \_ DE EJEMPLO DE \_ EC
 
@@ -22,7 +22,7 @@ Especifica el retraso en la programación de un componente para el procesamiento
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**const REFERENCE \_ TIME**) Lo \* lejos que está el componente, en unidades de 100 nanosegundos. Si este valor es positivo, el componente está detrás de la programación. Si este valor es negativo, el componente está por delante de la programación.
+(**const REFERENCE \_ TIME** \* ) Lo lejos que está el componente, en unidades de 100 nanosegundos. Si este valor es positivo, el componente está detrás de la programación. Si este valor es negativo, el componente se adelanta a la programación.
 
 </dd> <dt>
 
@@ -37,11 +37,11 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un presentador personalizado para el filtro [**Representador**](enhanced-video-renderer-filter.md) de vídeo mejorado (EVR) puede enviar este mensaje al EVR para notificar al EVR si el presentador está detrás de la programación o antes de la programación.
 
-La manera más sencilla de calcular *lParam1* es: *QPC ahora* destino *QPC*, donde *QPC* ahora es la hora del reloj y el destino *de QPC* es el tiempo de presentación.   
+La manera más sencilla de calcular *lParam1* es: *QPC now*   *QPC target*, donde *QPC* ahora es la hora del reloj y el destino *de QPC* es el tiempo de presentación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ La manera más sencilla de calcular *lParam1* es: *QPC ahora* destino *QPC*, don
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

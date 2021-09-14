@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: constructor de JET_COLUMNCREATE'
+description: 'Más información sobre: JET_COLUMNCREATE constructor'
 title: JET_COLUMNCREATE constructor
 TOCTitle: 'JET_COLUMNCREATE constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_COLUMNCREATE.#ctor
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bf01f1b4462fd5d964d41e12053c05205683361066c408e9ea3a7f3f15fe6385
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b87f1118cf1c2ecb75edee778511fa6723e395e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119475675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964348"
 ---
 # <a name="jet_columncreate-constructor"></a>JET_COLUMNCREATE constructor
 
@@ -50,7 +50,7 @@ Dim instance As New JET_COLUMNCREATE()
 public JET_COLUMNCREATE()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

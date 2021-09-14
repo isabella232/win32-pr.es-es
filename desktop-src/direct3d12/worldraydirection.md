@@ -13,15 +13,15 @@ api_name:
 api_type:
 - NA
 ms.openlocfilehash: 9d38ab75d0f0708f70624284483a0222eadf9591
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105293"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160449"
 ---
 # <a name="worldraydirection"></a>WorldRayDirection
 
-Dirección del espacio mundial para el rayo actual.
+Dirección del espacio del mundo para el rayo actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,7 +32,7 @@ float3 WorldRayDirection();
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 

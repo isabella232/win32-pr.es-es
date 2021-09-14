@@ -3,7 +3,7 @@ title: Función Texture2D::Gather(S,float,int)
 description: Devuelve los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Función Texture2D::Gather(S,float,int)
 ms.assetid: 5d196c1c-8cc9-4add-9d33-654294314ee2
 keywords:
-- Recopilación de la función HLSL
+- Función Gather HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 263c3672f55e2f461d9a6c160a60b8222ddeda32ec239b846680d30af0f7fedc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4d0a58be0580572441f91a3b3f637601d70cd9c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119853285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884084"
 ---
 # <a name="texture2dgathersfloatint-function"></a>Función Texture2D::Gather(S,float,int)
 
@@ -71,9 +71,9 @@ Tipo: **TemplateType**
 
 Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los ejemplos de textura se pueden usar para la interpolación bilineal.
+Las muestras de textura se pueden usar para la interpolación bilineal.
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -87,14 +87,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Recopilación de métodos](texture2d-gather.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

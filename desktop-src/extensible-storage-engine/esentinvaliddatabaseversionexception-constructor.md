@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: aa91fd2a6d6ddb410267ff5de668781f5fd45b902029271a86ea06b4d2654e6b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3706f6c5eae7986881955e15ef34da3a27ce8ac8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119837235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966228"
 ---
 # <a name="esentinvaliddatabaseversionexception-constructor"></a>Constructor EsentInvalidDatabaseVersionException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidDatabaseVersionException()
 public EsentInvalidDatabaseVersionException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

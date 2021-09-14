@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1240c99cb70b27b7112ac7eaa6c1db7175d1aef38f3f510a047a429ffc394268
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd942f8f3bd94323ec37c531047715dd50133474
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119675605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161095"
 ---
 # <a name="glcolor4s-function"></a>Función glColor4s
 
@@ -75,7 +75,7 @@ Nuevo valor alfa para el color actual.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El GL almacena un índice de color actual de un solo valor y un color RGBA de cuatro valores actual. **glcolor** establece un nuevo color RGBA de cuatro valores. **glcolor** tiene dos variantes principales: **glcolor3** y **glcolor4.** Las **variantes glcolor3** especifican los nuevos valores rojo, verde y azul explícitamente y establecen el valor alfa actual en 1,0 (intensidad completa) implícitamente. **Las variantes glcolor4** especifican explícitamente los cuatro componentes de color.
 
@@ -99,7 +99,7 @@ Ni los valores de punto flotante ni entero con signo se fijan en el \[ intervalo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

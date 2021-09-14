@@ -4,12 +4,12 @@ ms.assetid: 214debba-4256-4682-b98d-0bbfb2d68a13
 title: Asignaciones de canales de Alemania
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cd4bef5c934fcedb3cccc92921ec449aeb274bc764accf42d0225d85646be04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fb1d295c8ff4c5fc28a7c0a92f3d787f3d92ec6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118159267"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161688"
 ---
 # <a name="belgium-channel-assignments"></a>Asignaciones de canales de Alemania
 

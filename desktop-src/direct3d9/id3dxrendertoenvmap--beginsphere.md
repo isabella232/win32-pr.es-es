@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3f8bc555e3ea4f4fbb895c42f5c7a407cea88aedeacb9604ad1e78c7003bdf34
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 872aa06734ae818ef248b03fbc14dcd1c33fe815
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118801295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966656"
 ---
 # <a name="id3dxrendertoenvmapbeginsphere-method"></a>Método ID3DXRenderToEnvMap::BeginSphere
 
@@ -53,9 +53,9 @@ Puntero a una [**interfaz IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL. E \_ FAIL
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL. E \_ FAIL
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Vea [**ID3DXRenderToEnvMap::Face**](id3dxrendertoenvmap--face.md) para dibujar la cara.
 

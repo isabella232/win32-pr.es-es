@@ -4,12 +4,12 @@ ms.assetid: 365451f8-e93e-4cc4-b688-2e668518c245
 title: Habilitar la información de depuración de Direct3D (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88851c144c2e651e920d870618f66a38028207bc5503f513f45fb053e16bd2e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 17bb46cf8658d0417d021faa6bdbefd10822d1dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117730175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964959"
 ---
 # <a name="enabling-direct3d-debug-information-direct3d-9"></a>Habilitar la información de depuración de Direct3D (Direct3D 9)
 

@@ -4,12 +4,12 @@ ms.assetid: f0d01dfb-d1de-4d16-8c64-4ae56d7fed06
 title: Varias vistas en modo de ventana (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e2784a4f2bd855293e427aa9297d2e5725a74a3f5bce52b4b53cdf3d9081062
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ed750472d1816c0365298630cfb426982743b11a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966576"
 ---
 # <a name="multiple-views-in-windowed-mode-direct3d-9"></a>Varias vistas en modo de ventana (Direct3D 9)
 

@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0d061f3731db5ad5f1bd72d2612cf1ec1002bdf97f25f7e81eec5dd58da9b3b0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 08823de30cfe13497a4bd42073688bc739d80acf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119945475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965584"
 ---
 # <a name="jet_rstinfolgposstop-property"></a>JET_RSTINFO.lgposStop, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece la posición del registro en la que se va a detener la recup
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ public JET_LGPOS lgposStop { get; set; }
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

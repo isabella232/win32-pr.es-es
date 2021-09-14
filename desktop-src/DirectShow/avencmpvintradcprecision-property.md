@@ -4,12 +4,12 @@ ms.assetid: 2b4d11c1-767c-4466-8291-7959d841ae65
 title: Propiedad AVEncMPVIntraDCPrecision (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e50d4a6b222d9860a16216a1395b9f5a2b10d23e6242315a61e8224d37810c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 55d4bdd3c08f49586eb2663829271ae4166d917e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119276135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161836"
 ---
 # <a name="avencmpvintradcprecision-property"></a>AvEncMPVIntraDCPrecision, propiedad
 
@@ -29,7 +29,7 @@ Esta propiedad es de lectura y escritura.
 
 Esta propiedad tiene un intervalo lineal de valores. Para obtener el intervalo admitido, llame a [**ICodecAPI::GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El intervalo habitual para esta propiedad es de 8 a 11 bits. Si el valor es cero, el codificador selecciona la precisión.
 
@@ -41,7 +41,7 @@ El intervalo habitual para esta propiedad es de 8 a 11 bits. Si el valor es cero
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: f0369dee-12e4-4403-a0c4-6d840ad2552e
 title: Propiedad AVEncVideoOutputColorPrimaries (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed9edaee18777f78a9be42373e127071531ccb3d053cb781679bab79c3042923
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e85090356773b481d796060f4748c50c4dab39e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119274855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161738"
 ---
 # <a name="avencvideooutputcolorprimaries-property"></a>Propiedad AVEncVideoOutputColorPrimaries
 
@@ -33,11 +33,11 @@ El valor de esta propiedad es un miembro de la [**enumeración eAVEncVideoColorP
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 

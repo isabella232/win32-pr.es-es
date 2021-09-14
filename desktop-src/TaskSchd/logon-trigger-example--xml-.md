@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f7e92216748a799c5cf8a3ae32393db2b33c680861b2a5d3249eb19c527474e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d66766ce4cae33c3526ac9d30071ff2082ddc1f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117760062"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886588"
 ---
 # <a name="logon-trigger-example-xml"></a>Ejemplo de desencadenador de inicio de sesión (XML)
 
@@ -24,10 +24,10 @@ Para registrar una tarea definida en XML, puede usar la función [**ITaskFolder:
 
 ## <a name="to-define-a-task-to-start-notepad-on-system-boot"></a>Para definir una tarea para iniciar Bloc de notas en el arranque del sistema
 
-En el ejemplo XML siguiente se muestra cómo definir una tarea con una sola acción de ejecución (a partir de Bloc de notas), un desencadenador de inicio de sesión único que inicia la tarea cuando un usuario inicia sesión y otras configuraciones de tareas que afectan a cómo controla la tarea Programador de tareas.
+En el ejemplo XML siguiente se muestra cómo definir una tarea con una sola acción de ejecución (a partir de Bloc de notas), un desencadenador de inicio de sesión único que inicia la tarea cuando un usuario inicia sesión y otras opciones de configuración de tareas que afectan a cómo controla la tarea Programador de tareas.
 
 > [!Note]  
-> Establezca el valor del **elemento UserId** en un nombre de usuario en el equipo en el que está registrada la tarea.
+> Establezca el valor del elemento **UserId** en un nombre de usuario en el equipo en el que está registrada la tarea.
 
  
 

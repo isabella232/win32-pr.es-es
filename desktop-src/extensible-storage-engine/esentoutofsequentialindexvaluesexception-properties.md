@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102444
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5600aa3446f6a08239d3805100823090ae96bb40bc1e0cd30fdff858b3f7acc8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d33c9fa33332e8b7f689ee59d8fe5bb28256652
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118261835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887969"
 ---
 # <a name="esentoutofsequentialindexvaluesexception-properties"></a>Propiedades de EsentOutOfSequentialIndexValuesException
 

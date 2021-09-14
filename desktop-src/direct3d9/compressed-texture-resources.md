@@ -4,12 +4,12 @@ ms.assetid: 0ea5cb07-a21a-4e2c-93e2-54966153bb8a
 title: Recursos de textura comprimida (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2cd4e21dfd0e042f8d8d97fd8415529a2b4a5a952334df3e7f39ef8ae20a890
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9b7ef048c0e1780f92246a407863a4fa48a94a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118989285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888705"
 ---
 # <a name="compressed-texture-resources-direct3d-9"></a>Recursos de textura comprimida (Direct3D 9)
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 07275d7a67527959396ba82f7e0fb8cbbc39b27d7e3adeca70df2e174fe09258
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a3af01df7d1ce66029994226d040544b733a75df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119895385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965092"
 ---
 # <a name="d3dxplanefrompoints-function-d3dx10mathh"></a>Función D3DXPlaneFromPoints (D3DX10Math.h)
 
@@ -66,7 +66,7 @@ Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md), que define uno de los puntos 
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a una estructura D3DXVECTOR3, definiendo uno de los puntos usados para construir el plano.
+Puntero a una estructura D3DXVECTOR3, que define uno de los puntos usados para construir el plano.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntero a una estructura D3DXVECTOR3, definiendo uno de los puntos usados para c
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a una estructura D3DXVECTOR3, definiendo uno de los puntos usados para construir el plano.
+Puntero a una estructura D3DXVECTOR3, que define uno de los puntos usados para construir el plano.
 
 </dd> </dl>
 
@@ -85,9 +85,9 @@ Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
 Puntero a la estructura D3DXPLANE construida a partir de los puntos dados.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXPlaneFromPoints se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXPlaneFromPoints se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,7 +100,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - ntmmapi.h
-ms.openlocfilehash: e3bd7d351e890a968f2fa01ddffa6c8e3be16164d78393894055f55660c516bd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 66177f6b478264a10c1ce0e50297d943a16407c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120040285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159905"
 ---
 # <a name="cfg_call_target_info-structure"></a>Estructura CFG \_ CALL \_ TARGET \_ INFO
 
@@ -36,21 +36,21 @@ typedef struct _CFG_CALL_TARGET_INFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **Offset**
 </dt> <dd>
 
-Desplazamiento relativo a una dirección virtual proporcionada (inicio). Este desplazamiento debe tener una alineación de 16 bytes.
+Desplazamiento con respecto a una dirección virtual proporcionada (inicio). Este desplazamiento debe tener una alineación de 16 bytes.
 
 </dd> <dt>
 
 **Marcas**
 </dt> <dd>
 
-Marcas que describen la operación que se va a realizar en la dirección. Si **se establece \_ CFG CALL TARGET \_ \_ VALID,** la dirección se marcará como válida para CFG. De lo contrario, se marcará como un destino de llamada no válido.
+Marcas que describen la operación que se va a realizar en la dirección. Si **se establece CFG CALL TARGET \_ \_ \_ VALID,** la dirección se marcará como válida para CFG. De lo contrario, se marcará como un destino de llamada no válido.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Marcas que describen la operación que se va a realizar en la dirección. Si **s
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>Ntmmapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntmmapi.h</dt> </dl> |
 
 
 

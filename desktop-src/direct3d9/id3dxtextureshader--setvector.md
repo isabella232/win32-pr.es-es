@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 53fef8dfaa3a8b05fa7a6565e980c677ece679dac2824a80423b0d7eeccb9d66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e917e4ff13cf7c03de264542dc1995364f1dc526
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118292424"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888377"
 ---
 # <a name="id3dxtextureshadersetvector-method"></a>Método ID3DXTextureShader::SetVector
 
@@ -46,7 +46,7 @@ HRESULT SetVector(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la constante vectorial. Vea [D3DXHANDLE](d3dxfx.md).
+Identificador único de la constante de vector. Vea [D3DXHANDLE](d3dxfx.md).
 
 </dd> <dt>
 

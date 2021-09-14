@@ -5,17 +5,17 @@ title: MsiTransformView
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 8e1b6c46ebfcfb82ee23ce6acec998490f53fe67
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161489"
 ---
 # <a name="msitransformview"></a>MsiTransformView
 
 Esta tabla temporal habilita la opción [de desinstalación de revisión de](custom-action-patch-uninstall-option.md) acción personalizada para las acciones personalizadas agregadas o actualizadas por una revisión.
 
-Si una revisión agrega o actualiza una acción personalizada que tiene el atributo **msidbCustomActionTypePatchUninstall,** Windows Installer ejecuta la acción personalizada nueva o actualizada cuando se desinstala la revisión. Windows El instalador hace que las actualizaciones dentro de la revisión que se va a desinstalar estén disponibles para la acción personalizada de desinstalación de revisiones. La revisión debe incluir una tabla *&lt; PatchGUID &gt;* de MsiTransformView para proporcionar esta información a Windows Instalador. La información de esta tabla está disponible para cualquier acción personalizada inmediata y no está disponible para las acciones personalizadas diferidas.
+Si una revisión agrega o actualiza una acción personalizada con el atributo **msidbCustomActionTypePatchUninstall,** Windows Installer ejecuta la acción personalizada nueva o actualizada cuando se desinstala la revisión. Windows El instalador hace que las actualizaciones dentro de la revisión que se va a desinstalar estén disponibles para la acción personalizada de desinstalación de revisiones. La revisión debe incluir una tabla *&lt; PatchGUID &gt;* de MsiTransformView para proporcionar esta información a Windows Instalador. La información de esta tabla está disponible para cualquier acción personalizada inmediata y no está disponible para las acciones personalizadas diferidas.
 
 **[Windows Installer 4.0 y versiones anteriores:](not-supported-in-windows-installer-4-0.md)** No se admite. La [opción de desinstalación de revisión de](custom-action-patch-uninstall-option.md) acción personalizada está disponible a partir Windows Instalador 4.5.
 
@@ -26,10 +26,10 @@ Esta tabla debe denominarse MsiTransformView *&lt; PatchGUID &gt;* Table, donde 
 | Columna  | Tipo                         | Clave | Nullable |
 |---------|------------------------------|-----|----------|
 | Tabla   | [Identificador](identifier.md) | Y   | No        |
-| Columna  | [Text](text.md)             | S   | N        |
-| Row     | [Text](text.md)             | S   | Y        |
-| data    | [Text](text.md)             | N   | S        |
-| Current | [Text](text.md)             | No   | S        |
+| Columna  | [Texto](text.md)             | Y   | No        |
+| Row     | [Texto](text.md)             | Y   | Y        |
+| Datos    | [Texto](text.md)             | No   | Y        |
+| Current | [Texto](text.md)             | No   | Y        |
 
 
 
@@ -74,7 +74,7 @@ Valor actual de la base de datos de referencia o columna un número.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las acciones personalizadas de desinstalación de revisiones se ejecutan cuando se desinstala la revisión. No se ejecutan cuando se desinstala el producto. Use la [opción de desinstalación de revisión de](custom-action-patch-uninstall-option.md) acción personalizada y esta tabla para ejecutar un personalizado solo cuando se desinstale la revisión.
 

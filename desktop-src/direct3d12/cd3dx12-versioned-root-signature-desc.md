@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una \_ estructura de \_ DESC de la firma raíz de D3D12 \_ \_ .
+title: CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura \_ \_ \_ DESC DESC de firma raíz con control de versiones \_ D3D12.
 ms.assetid: 4505C1CE-CAA5-4092-B990-75740A2B194C
 keywords:
-- Estructura de CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC
+- CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC estructura
 topic_type:
 - apiref
 api_name:
@@ -16,15 +16,15 @@ ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 695b60fef5aba124ce4e6f2ff729fdb9362c7b2c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717590"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965020"
 ---
-# <a name="cd3dx12_versioned_root_signature_desc-structure"></a>CD3DX12 \_ estructura de \_ \_ DESC de firma raíz con versión \_
+# <a name="cd3dx12_versioned_root_signature_desc-structure"></a>ESTRUCTURA \_ \_ \_ \_ DESC DESC DE FIRMA RAÍZ CON VERSIONES DE CD3DX12
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura de DESC de la [**\_ \_ \_ firma \_ raíz de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) .
+Estructura auxiliar para permitir la inicialización sencilla de una estructura [**\_ \_ \_ \_ DESC DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) de firma raíz con control de versiones D3D12.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,158 +47,158 @@ struct CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC  : public D3D12_VERSIONED_ROOT_SIGN
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
-**CD3DX12 de \_ firma raíz con control de versiones \_ \_ \_ ()**
+**CD3DX12 \_ VERSIONED \_ ROOT \_ SIGNATURE \_ DESC()**
 </dt> <dd>
 
-Crea una instancia nueva, no inicializada, de una descripción de la \_ firma raíz con versión CD3DX12 \_ \_ \_ .
+Crea una nueva instancia sin inicializar de un \_ DESC DESC DE FIRMA RAÍZ CON VERSIÓN \_ \_ \_ CD3DX12.
 
 </dd> <dt>
 
-**CD3DX12 de \_ firma raíz de versión explícita de la \_ firma de raíz \_ \_ (const D3D12 con \_ versión de \_ firma raíz con \_ \_ &o)**
+**EXPLICIT CD3DX12 \_ \_ VERSIONED ROOT \_ SIGNATURE \_ DESC(const D3D12 \_ \_ VERSIONED ROOT SIGNATURE \_ \_ DESC &o)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ Descripción de la \_ firma raíz con versión CD3DX12 \_ \_ , inicializada con el contenido de una estructura de DESC de la [**\_ \_ \_ firma \_ raíz con versión D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) .
+Crea una nueva instancia de un DESC DESC DE FIRMA RAÍZ CON CONTROL DE VERSIONES DE CD3DX12, inicializado con el contenido de una estructura \_ \_ \_ \_ [**\_ \_ \_ \_ DESC DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) de firma raíz con control de versiones D3D12.
 
 </dd> <dt>
 
-**Descripción de la firma raíz de CD3DX12 explícita con \_ versión \_ \_ \_ (const D3D12 raíz de la \_ \_ &firma raíz \_ )**
+**EXPLICIT CD3DX12 \_ VERSIONED \_ ROOT SIGNATURE \_ \_ DESC(const D3D12 \_ ROOT SIGNATURE \_ \_ DESC &o)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ Descripción de la \_ firma raíz con versión CD3DX12 \_ \_ , inicializada con el contenido de una estructura de DESC de la [**\_ \_ firma \_ raíz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) .
+Crea una nueva instancia de un DESC DESC DE FIRMA RAÍZ CON CONTROL DE VERSIONES DE CD3DX12, inicializado con el contenido de una estructura DESC de firma raíz \_ \_ \_ \_ [**D3D12. \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc)
 
 </dd> <dt>
 
-**CD3DX12 de \_ firma raíz explícita con versión de \_ \_ \_ (const D3D12 \_ raíz \_ signatura \_ DESC1 &)**
+**EXPLICIT CD3DX12 \_ VERSIONED \_ ROOT SIGNATURE \_ \_ DESC(const D3D12 \_ ROOT SIGNATURE \_ \_ DESC1 &o)**
 </dt> <dd>
 
-Crea una nueva instancia de una CD3DX12 de \_ \_ firma raíz con control de versiones \_ \_ , inicializada con el contenido de una estructura DESC1 de la [**\_ \_ firma \_ raíz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc1) .
+Crea una nueva instancia de un DESC DESC DE FIRMA RAÍZ VERSIONED DESC de CD3DX12, inicializado con el contenido de una estructura \_ \_ \_ \_ [**D3D12 \_ ROOT \_ SIGNATURE \_ DESC1.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc1)
 
 </dd> <dt>
 
-**CD3DX12 \_ \_ de firma raíz con control \_ de versiones \_ (uint numParameters, const D3D12 \_ raíz \_ parámetro \* \_ PPARAMETERS, uint numStaticSamplers = 0, const D3D12 \_ static \_ Sample \_ DESC \* \_ pStaticSamplers = null, D3D12 \_ root \_ Signature \_ Flags Flags = D3D12 \_ marca de \_ firma raíz \_ \_ None)**
+**CD3DX12 \_ VERSIONED \_ ROOT \_ SIGNATURE \_ DESC(UINT numParameters, const D3D12 \_ ROOT \_ PARAMETER \* \_ pParameters, UINT numStaticSamplers = 0, const D3D12 \_ STATIC \_ SAMPLER \_ DESC \* \_ pStaticSamplers = NULL, D3D12 \_ ROOT \_ SIGNATURE \_ FLAGS flags = D3D12 \_ ROOT \_ SIGNATURE \_ FLAG \_ NONE)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ \_ Descripción de la firma raíz CD3DX12 con versión \_ \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de UN DESC DESC DE FIRMA RAÍZ CON CONTROL DE VERSIONES DE CD3DX12, \_ \_ \_ \_ inicializando los parámetros siguientes:
 
 UINT numParameters
 
-[**\_ \_ parámetro raíz const D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) \* \_ pParameters
+const [**D3D12 \_ ROOT \_ PARAMETER**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) \* \_ pParameters
 
 UINT numStaticSamplers = 0
 
-const [**D3D12 \_ static \_ Sample \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = null
+const [**D3D12 \_ STATIC \_ SAMPLER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = NULL
 
-[**D3D12 \_ Marcas \_ de \_ firma raíz**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) marcas = \_ D3D12 \_ marca de firma raíz \_ \_ ninguno
+[**D3D12 \_ MARCAS \_ DE FIRMA RAÍZ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE
 
 </dd> <dt>
 
-**CD3DX12 \_ \_ de firma raíz con control \_ de versiones \_ (uint numParameters, const D3D12 \_ raíz \_ parámetro1 \* \_ PPARAMETERS, uint numStaticSamplers = 0, const D3D12 \_ static \_ Sample \_ DESC \* \_ pStaticSamplers = null, D3D12 \_ root \_ Signature \_ Flags Flags = D3D12 \_ marca de \_ firma raíz \_ \_ None)**
+**CD3DX12 \_ VERSIONED \_ ROOT \_ SIGNATURE \_ DESC(UINT numParameters, const D3D12 \_ ROOT \_ PARAMETER1 \* \_ pParameters, UINT numStaticSamplers = 0, const D3D12 \_ STATIC \_ SAMPLER \_ DESC \* \_ pStaticSamplers = NULL, D3D12 \_ ROOT \_ SIGNATURE \_ FLAGS flags = D3D12 \_ ROOT \_ SIGNATURE \_ FLAG \_ NONE)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ \_ Descripción de la firma raíz CD3DX12 con versión \_ \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de UN DESC DESC DE FIRMA RAÍZ CON CONTROL DE VERSIONES DE CD3DX12, \_ \_ \_ \_ inicializando los parámetros siguientes:
 
 UINT numParameters
 
-const [**D3D12 \_ raíz \_ parámetro1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) \* \_ pParameters
+const [**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) \* \_ pParameters
 
 UINT numStaticSamplers = 0
 
-const [**D3D12 \_ static \_ Sample \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = null
+const [**D3D12 \_ STATIC \_ SAMPLER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = NULL
 
-[**D3D12 \_ Marcas \_ de \_ firma raíz**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) marcas = \_ D3D12 \_ marca de firma raíz \_ \_ ninguno
+[**D3D12 \_ MARCAS \_ DE FIRMA RAÍZ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE
 
 </dd> <dt>
 
-**CD3DX12 de \_ firma raíz con versiones de \_ \_ \_ ( \_ valor predeterminado de CD3DX12)**
+**CD3DX12 \_ VERSIONED \_ ROOT \_ SIGNATURE \_ DESC(CD3DX12 \_ DEFAULT)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ \_ Descripción de la firma raíz con versión CD3DX12 \_ \_ , inicializada con los parámetros predeterminados:
+Crea una nueva instancia de un DESC DESC DE FIRMA RAÍZ VERSIONED DESC de CD3DX12, \_ \_ \_ \_ inicializado con los parámetros predeterminados:
 
 UINT numParameters = 0
 
-const [**D3D12 \_ raíz \_ parámetro1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) \* \_ pParameters = null
+const [**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) \* \_ pParameters = NULL
 
 UINT numStaticSamplers = 0
 
-const [**D3D12 \_ static \_ Sample \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = null
+const [**D3D12 \_ STATIC \_ SAMPLER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = NULL
 
-[**D3D12 \_ Marcas \_ de \_ firma raíz**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) marcas = \_ D3D12 \_ marca de firma raíz \_ \_ ninguno
+[**D3D12 \_ MARCAS \_ DE FIRMA RAÍZ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE
 
 </dd> <dt>
 
-**Inicialización en línea \_ 1 \_ 0 (uint numParameters, const D3D12 \_ raíz \_ parámetro \* \_ pParameters, uint numStaticSamplers = 0, const D3D12 \_ static \_ Sample \_ DESC \* \_ pStaticSamplers = null, D3D12 \_ root \_ Signature \_ Flags Flags = D3D12 marca de \_ firma raíz \_ \_ \_ None)**
+**inline Init \_ 1 \_ 0(UINT numParameters, const D3D12 \_ ROOT PARAMETER \_ \* \_ pParameters, UINT numStaticSamplers = 0, const D3D12 \_ STATIC \_ SAMPLER \_ DESC \* \_ pStaticSamplers = NULL, D3D12 \_ ROOT SIGNATURE \_ \_ FLAGS flags = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
 UINT numParameters
 
-[**\_ \_ parámetro raíz const D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) \* \_ pParameters
+const [**D3D12 \_ ROOT \_ PARAMETER**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) \* \_ pParameters
 
 UINT numStaticSamplers = 0
 
-const [**D3D12 \_ static \_ Sample \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = null
+const [**D3D12 \_ STATIC \_ SAMPLER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = NULL
 
-[**D3D12 \_ Marcas \_ de \_ firma raíz**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) marcas = \_ D3D12 \_ marca de firma raíz \_ \_ ninguno
+[**D3D12 \_ MARCAS \_ DE FIRMA RAÍZ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE
 
 </dd> <dt>
 
-**Static inline init \_ 1 \_ 0 (D3D12 con \_ versiones \_ \_ de la firma raíz \_ DESC &DESC, uint numParameters, const D3D12 \_ raíz \_ parámetro \* \_ pParameters, uint numStaticSamplers = 0, const D3D12 \_ static \_ Sample \_ DESC \* \_ pStaticSamplers = null, D3D12 \_ root \_ Signature \_ Flags Flags = D3D12 \_ marca de firma raíz \_ \_ \_ None)**
+**static inline Init \_ 1 \_ 0(D3D12 \_ VERSIONED \_ ROOT SIGNATURE \_ \_ DESC &desc, UINT numParameters, const D3D12 \_ ROOT PARAMETER \_ \* \_ pParameters, UINT numStaticSamplers = 0, const D3D12 STATIC \_ \_ SAMPLER \_ DESC \* \_ pStaticSamplers = NULL, D3D12 \_ ROOT SIGNATURE \_ \_ FLAGS flags = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
-[**D3D12 \_ Descripción de \_ la \_ firma \_ raíz con versión**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) &DESC
+[**D3D12 \_ VERSIONED \_ ROOT \_ SIGNATURE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) &desc
 
 UINT numParameters
 
-[**\_ \_ parámetro raíz const D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) \* \_ pParameters
+const [**D3D12 \_ ROOT \_ PARAMETER**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) \* \_ pParameters
 
 UINT numStaticSamplers = 0
 
-const [**D3D12 \_ static \_ Sample \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = null
+const [**D3D12 \_ STATIC \_ SAMPLER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = NULL
 
-[**D3D12 \_ Marcas \_ de \_ firma raíz**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) marcas = \_ D3D12 \_ marca de firma raíz \_ \_ ninguno
+[**D3D12 \_ MARCAS \_ DE FIRMA RAÍZ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE
 
 </dd> <dt>
 
-**Inicialización en línea \_ 1 \_ (uint numParameters, const D3D12 \_ raíz \_ Parámetro1 \* \_ pParameters, uint numStaticSamplers = 0, const D3D12 \_ static \_ Sample \_ DESC \* \_ pStaticSamplers = null, D3D12 \_ root \_ Signature \_ Flags Flags = D3D12 \_ marca de firma raíz \_ \_ \_ None)**
+**inline Init \_ 1 \_ 1(UINT numParameters, const D3D12 \_ ROOT \_ PARAMETER1 \* \_ pParameters, UINT numStaticSamplers = 0, const D3D12 \_ STATIC \_ SAMPLER \_ DESC \* \_ pStaticSamplers = NULL, D3D12 \_ ROOT SIGNATURE \_ \_ FLAGS flags = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
 UINT numParameters
 
-const [**D3D12 \_ raíz \_ parámetro1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) \* \_ pParameters
+const [**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) \* \_ pParameters
 
 UINT numStaticSamplers = 0
 
-const [**D3D12 \_ static \_ Sample \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = null
+const [**D3D12 \_ STATIC \_ SAMPLER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = NULL
 
-[**D3D12 \_ Marcas \_ de \_ firma raíz**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) marcas = \_ D3D12 \_ marca de firma raíz \_ \_ ninguno
+[**D3D12 \_ MARCAS \_ DE FIRMA RAÍZ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE
 
 </dd> <dt>
 
-**Inicial de inline init \_ 1 \_ 1 (D3D12 de \_ firma raíz con versiones de \_ \_ \_ &DESC, uint numParameters, const D3D12 \_ raíz \_ parámetro1 \* \_ pParameters, uint numStaticSamplers = 0, const D3D12 \_ static \_ Sample \_ DESC \* \_ pStaticSamplers = null, D3D12 \_ root \_ Signature \_ Flags Flags = D3D12 \_ marca de \_ firma raíz \_ \_ None)**
+**static inline Init \_ 1 \_ 1(D3D12 \_ VERSIONED \_ ROOT SIGNATURE \_ \_ DESC &desc, UINT numParameters, const D3D12 \_ ROOT \_ PARAMETER1 \* \_ pParameters, UINT numStaticSamplers = 0, const D3D12 \_ STATIC \_ SAMPLER \_ DESC \* \_ pStaticSamplers = NULL, D3D12 \_ ROOT SIGNATURE \_ \_ FLAGS flags = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
-[**D3D12 \_ Descripción de \_ la \_ firma \_ raíz con versión**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) &DESC
+[**D3D12 \_ VERSIONED \_ ROOT \_ SIGNATURE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) &desc
 
 UINT numParameters
 
-const [**D3D12 \_ raíz \_ parámetro1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) \* \_ pParameters
+const [**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) \* \_ pParameters
 
 UINT numStaticSamplers = 0
 
-const [**D3D12 \_ static \_ Sample \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = null
+const [**D3D12 \_ STATIC \_ SAMPLER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) \* \_ pStaticSamplers = NULL
 
-[**D3D12 \_ Marcas \_ de \_ firma raíz**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) marcas = \_ D3D12 \_ marca de firma raíz \_ \_ ninguno
+[**D3D12 \_ MARCAS \_ DE FIRMA RAÍZ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags) = D3D12 \_ ROOT SIGNATURE FLAG \_ \_ \_ NONE
 
 </dd> </dl>
 
@@ -208,15 +208,15 @@ const [**D3D12 \_ static \_ Sample \_ DESC**](/windows/desktop/api/d3d12/ns-d3d1
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Descripción de la \_ \_ firma raíz \_ de D3D12 con versiones**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc)
+[**D3D12 \_ VERSIONED \_ ROOT \_ SIGNATURE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

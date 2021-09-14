@@ -4,12 +4,12 @@ description: En las secciones anteriores se han analizado los clics del mouse y 
 ms.assetid: 6A5B953F-7032-4AA6-8B64-2E9CBB8F59F1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a31877ab5a71819fa896fd1253e7391f9ed748dffff636ab9d3e8591669b7fae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bfba63dce8116d79a557cbbbf8895f17d2a8f1b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118387971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159951"
 ---
 # <a name="miscellaneous-mouse-operations"></a>Varias operaciones del mouse
 
@@ -34,10 +34,10 @@ Si la interfaz de usuario admite el arrastre de elementos de la interfaz de usua
 
 
 
-Esta es la idea: cuando un programa admite arrastrar y colocar, no quiere que cada clic del mouse se interprete como un arrastre. De lo contrario, el usuario podría arrastrar accidentalmente algo cuando simplemente quería hacer clic en él (por ejemplo, para seleccionarlo). Pero si un mouse es especialmente sensible, puede ser difícil mantener el mouse perfectamente inquiete al hacer clic. Por lo tanto, Windows un umbral de arrastre de unos píxeles. Cuando el usuario presiona el botón del mouse, no se considera un arrastre a menos que el mouse cruce este umbral. La [**función DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) comprueba si se alcanza este umbral. Si la función devuelve **TRUE**, puede interpretar el clic del mouse como un arrastre. De lo contrario, no lo haga.
+Esta es la idea: cuando un programa admite arrastrar y colocar, no quiere que cada clic del mouse se interprete como un arrastre. De lo contrario, el usuario podría arrastrar accidentalmente algo cuando simplemente quería hacer clic en él (por ejemplo, para seleccionarlo). Pero si un mouse es especialmente sensible, puede ser difícil mantener el mouse perfectamente inquiete al hacer clic. Por lo tanto, Windows define un umbral de arrastre de unos pocos píxeles. Cuando el usuario presiona el botón del mouse, no se considera un arrastre a menos que el mouse cruce este umbral. La [**función DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) comprueba si se alcanza este umbral. Si la función devuelve **TRUE**, puede interpretar el clic del mouse como un arrastre. De lo contrario, no lo haga.
 
 > [!Note]  
-> Si [**DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) devuelve **FALSE**, Windows el mensaje [**WM \_ LBUTTONUP**](/windows/desktop/inputdev/wm-lbuttonup) cuando el usuario suelta el botón del mouse. Por lo tanto, no llame a **DragDetect a** menos que el programa esté actualmente en un modo que admita arrastrar. (Por ejemplo, si ya se ha seleccionado un elemento de interfaz de usuario arrastrable). Al final de este módulo, veremos un ejemplo de código más largo que usa la **función DragDetect.**
+> Si [**DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) devuelve **FALSE,** Windows el mensaje [**\_ LBUTTONUP de WM**](/windows/desktop/inputdev/wm-lbuttonup) cuando el usuario suelta el botón del mouse. Por lo tanto, no llame a **DragDetect** a menos que el programa esté actualmente en un modo que admita arrastrar. (Por ejemplo, si ya se ha seleccionado un elemento de interfaz de usuario arrastrable). Al final de este módulo, veremos un ejemplo de código más largo que usa la **función DragDetect.**
 
  
 
@@ -66,7 +66,7 @@ El código siguiente limita el cursor al área cliente de la ventana.
 
 
 
-[**ClipCursor toma**](/windows/desktop/api/winuser/nf-winuser-clipcursor) una [**estructura RECT,**](/previous-versions//dd162897(v=vs.85)) pero [**ClientToScreen**](/windows/desktop/api/winuser/nf-winuser-clienttoscreen) toma una [**estructura POINT.**](/previous-versions//dd162805(v=vs.85)) Un rectángulo se define mediante sus puntos superior izquierdo e inferior derecho. Puede limitar el cursor a cualquier área rectangular, incluidas las áreas fuera de la ventana, pero la conexión del cursor al área de cliente es una manera habitual de usar la función. La confinación del cursor a una región completamente fuera de la ventana sería inusual y los usuarios probablemente lo perciben como un error.
+[**ClipCursor toma**](/windows/desktop/api/winuser/nf-winuser-clipcursor) una [**estructura RECT,**](/previous-versions//dd162897(v=vs.85)) pero [**ClientToScreen**](/windows/desktop/api/winuser/nf-winuser-clienttoscreen) toma una [**estructura POINT.**](/previous-versions//dd162805(v=vs.85)) Un rectángulo se define mediante sus puntos superior izquierdo e inferior derecho. Puede limitar el cursor a cualquier área rectangular, incluidas las áreas fuera de la ventana, pero la conexión del cursor al área de cliente es una manera habitual de usar la función. La conexión del cursor a una región completamente fuera de la ventana sería inusual y los usuarios probablemente lo perciben como un error.
 
 Para quitar la restricción, llame [**a ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) con el valor **NULL**.
 
@@ -81,7 +81,7 @@ ClipCursor(NULL);
 
 Otros dos mensajes del mouse están deshabilitados de forma predeterminada, pero pueden ser útiles para algunas aplicaciones:
 
--   [**WM \_ MOUSEHOVER:**](/windows/desktop/inputdev/wm-mousehover)el cursor se ha desplace sobre el área de cliente durante un período de tiempo fijo.
+-   [**WM \_ MOUSEHOVER:**](/windows/desktop/inputdev/wm-mousehover)el cursor ha sobresalido sobre el área de cliente durante un período de tiempo fijo.
 -   [**WM \_ MOUSELEAVE:**](/windows/desktop/inputdev/wm-mouseleave)el cursor ha dejado el área de cliente.
 
 Para habilitar estos mensajes, llame a [**la función TrackMouseEvent.**](/windows/desktop/api/winuser/nf-winuser-trackmouseevent)
@@ -214,7 +214,7 @@ Si el usuario gira la rueda del mouse, la ventana con el foco recibe un [**mensa
 
 El signo de la diferencia indica la dirección de rotación:
 
--   Positivo: girar hacia delante, lejos del usuario.
+-   Positivo: gira hacia delante, lejos del usuario.
 -   Negativo: gira hacia atrás, hacia el usuario.
 
 El valor de delta se coloca en *wParam* junto con algunas marcas adicionales. Use la [**macro GET WHEEL DELTA \_ \_ \_ WPARAM**](/windows/desktop/api/winuser/nf-winuser-get_wheel_delta_wparam) para obtener el valor de la diferencia.

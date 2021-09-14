@@ -4,7 +4,7 @@ description: La propiedad openState obtiene un valor de enumeración que indica 
 ms.assetid: 7a76814a-649f-4516-a92a-5f536fb1b147
 keywords:
 - propiedad openState Reproductor de Windows Media
-- Propiedad openState Reproductor de Windows Media clase , AxWindowsMediaPlayer
+- propiedad openState Reproductor de Windows Media clase , AxWindowsMediaPlayer
 - Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad openState
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09fa09451bf323a9f30afeddf7b2d003183a1eba7b0999a79fb42c70e1417013
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 919bf906ce67793c4cd26f32892eae8acf441295
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119573575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889681"
 ---
 # <a name="axwindowsmediaplayeropenstate-property"></a>Propiedad AxWindowsMediaPlayer.openState
 
@@ -50,15 +50,15 @@ Public ReadOnly Property openState As WMPOpenState
 
 Valor de enumeración WMPLib.WMPOpenState.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Reproductor de Windows Media no se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
+Reproductor de Windows Media se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
@@ -66,7 +66,7 @@ Reproductor de Windows Media no se garantiza que los estados se produzcan en un 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

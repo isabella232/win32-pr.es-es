@@ -29,22 +29,22 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 2aaceef2e4c72d88e2fbafb40012bb3d7b9a7a2c
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882857"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160343"
 ---
 # <a name="cim_softwareelementversioncheck-class"></a>Cim \_ SoftwareElementVersionCheck (clase)
 
-La **\_ clase CIM SoftwareElementVersionCheck** representa un tipo de elemento de software que debe existir en el entorno. Esta comprobación puede ser para un determinado, mínimo, máximo o un intervalo de versiones. Para especificar una versión específica, las versiones inferior y superior deben ser las mismas. Para especificar una versión mínima, especifique solo la versión inferior. Para especificar una versión máxima, especifique solo la versión superior. Para especificar un intervalo, se deben especificar las versiones superior e inferior. Los detalles de las comprobaciones se comparan con los detalles correspondientes que se encuentran en un objeto [**\_ SoftwareElement cim**](cim-softwareelement.md) al que hace referencia una asociación [**\_ InstalledSoftwareElement**](cim-installedsoftwareelement.md) de CIM para el objeto [**\_ ComputerSystem de CIM.**](cim-computersystem.md) Al menos un **\_ elemento Cim SoftwareElement** debe cumplir los detalles de la condición para que se cumpla la comprobación.
+La **\_ clase CIM SoftwareElementVersionCheck** representa un tipo de elemento de software que debe existir en el entorno. Esta comprobación puede ser para un determinado, mínimo, máximo o un intervalo de versiones. Para especificar una versión específica, las versiones inferior y superior deben ser las mismas. Para especificar una versión mínima, especifique solo la versión inferior. Para especificar una versión máxima, especifique solo la versión superior. Para especificar un intervalo, se deben especificar las versiones superior e inferior. Los detalles de las comprobaciones se comparan con los detalles correspondientes que se encuentran en un objeto [**\_ SoftwareElement cim**](cim-softwareelement.md) al que hace referencia una asociación [**\_ InstalledSoftwareElement**](cim-installedsoftwareelement.md) de CIM para el objeto [**\_ ComputerSystem de CIM.**](cim-computersystem.md) Al menos un **\_ elemento SoftwareElement de CIM** debe cumplir los detalles de la condición para que se cumpla la comprobación.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -69,7 +69,7 @@ class CIM_SoftwareElementVersionCheck : CIM_Check
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM SoftwareElementVersionCheck** tiene estos tipos de miembros:
 
@@ -438,7 +438,7 @@ Att UNIX
 
 </dt> <dd>
 
-Apertura de MÁQUINAS VIRTUALES
+Apertura de máquinas virtuales
 
 </dd> <dt>
 
@@ -962,7 +962,7 @@ Att UNIX
 
 </dt> <dd>
 
-Apertura de máquinas virtuales
+Abrir máquinas virtuales
 
 </dd> <dt>
 
@@ -1000,7 +1000,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**SISTEMA OPERATIVO/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -1219,7 +1219,7 @@ BS2000/OSD
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estorba** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
 
 
 </dt> <dd></dd> <dt>
@@ -1365,7 +1365,7 @@ Mac OS 9
 
 </dt> <dd>
 
-So De remanso
+So de mano
 
 </dd> <dt>
 
@@ -1431,31 +1431,31 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versión de la operación.
 
-La versión de la operación debe tener uno de los formatos siguientes:
+La versión de la operación debe tener uno de los siguientes formatos:
 
 -   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
 -   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
-Esta propiedad se hereda de la [**clase \_ CHECK de CIM.**](cim-check.md)
+Esta propiedad se hereda de la [**clase CIM \_ Check.**](cim-check.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -1465,7 +1465,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

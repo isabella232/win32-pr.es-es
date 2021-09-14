@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7e4e0530c98b78f9b18b0934874fb5a082779694ced2f171293d0a38dc458a08
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af7a670713dc5b63839702a04a632dda61ebfa43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963607"
 ---
 # <a name="consumestructuredbuffer"></a>ConsumeStructuredBuffer
 
@@ -49,7 +49,7 @@ Este objeto se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | sí       |
 
 
 
@@ -59,7 +59,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -67,7 +67,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

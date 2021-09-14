@@ -4,12 +4,12 @@ ms.assetid: f720a9b6-930a-4ed7-9798-1c72fa7a11ff
 title: EC_FULLSCREEN_LOST (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebf9384bec15969c904636f37db21ab19674bd2468542c2984ce80aa1773c3c6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cf36b5652ea5f7cde26950a18de086af0862dac7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161553"
 ---
 # <a name="ec_fullscreen_lost"></a>EC \_ FULLSCREEN \_ LOST
 
@@ -37,7 +37,7 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el [representador de pantalla completa](full-screen-renderer-filter.md) pierde la activación, envía este evento. Cuando otro representador de vídeo sale del modo de pantalla completa, el administrador de gráficos de filtros envía este evento, en respuesta a un evento [**EC \_ ACTIVATE**](ec-activate.md) del representador.
 
@@ -51,7 +51,7 @@ Cuando el [representador de pantalla completa](full-screen-renderer-filter.md) p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

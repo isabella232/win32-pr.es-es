@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c45c24f4b8b6f40042031b96b7895b347ce0250744ec8fde8bf72626785128fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4030a86ed867a2463346dca549acb35809264c34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118765586"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887444"
 ---
 # <a name="jet_instancetostring-method-string-iformatprovider"></a>JET_INSTANCE. Método ToString (String, IFormatProvider)
 
@@ -71,7 +71,7 @@ public string ToString(
   - formatProvider  
     Tipo: [System.IFormatProvider](/dotnet/api/system.iformatprovider)  
     
-    [IFormatProvider que se](/dotnet/api/system.iformatprovider) usará para dar formato al valor; o bien, null para obtener la información de formato numérico de la configuración regional actual del sistema operativo.
+    [IFormatProvider que se](/dotnet/api/system.iformatprovider) usará para dar formato al valor; o null para obtener la información de formato numérico de la configuración regional actual del sistema operativo.
 
 #### <a name="return-value"></a>Valor devuelto
 

@@ -1,7 +1,7 @@
 ---
 description: Identificador del subproceso.
 ms.assetid: 93d1182a-58f0-4570-8568-fe0fded762cb
-title: Miembro M_HTHREAD(Wxutil.h)
+title: Miembro M_HTHREAD (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f7293a97373a53d102887e5958c4296aff3dcfe3d392c80492ed773af62a8f11
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e83dd225da0c3673f9c7f423e0bf56da7431b097
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118158916"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160248"
 ---
 # <a name="camthreadm_hthread-member"></a>Miembro CAMThread::m \_ hThread
 
@@ -36,7 +36,7 @@ HANDLE m_hThread;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta variable se inicializa como **NULL.** El [**método CAMThread::Create**](camthread-create.md) establece esta variable en el identificador del subproceso. Para determinar si el subproceso existe, llame al [**método CAMThread::ThreadExists.**](camthread-threadexists.md)
 
@@ -51,7 +51,7 @@ Esta variable se inicializa como **NULL.** El [**método CAMThread::Create**](ca
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

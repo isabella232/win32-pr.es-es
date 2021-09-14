@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 69688bb011fc8a75b0ec52effaef3afd7972fb7a198a4cdedf20c07a40c4fa7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c829690572d55ea700d51124b99370f23e755a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160189"
 ---
 # <a name="crendererpospassthruregistermediatime-method-ctlutilh"></a>Método CRendererPosPassThru.RegisterMediaTime (Ctlutil.h)
 
@@ -58,13 +58,13 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en l
 | Código devuelto                                                                                                  | Descripción                                |
 |--------------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                         | Correcto.<br/>                        |
-| <dl> <dt>**TIEMPO DE MEDIOS DE VFW \_ E \_ NO \_ \_ \_ ESTABLECIDO**</dt> </dl> | El ejemplo no tiene marca de tiempo.<br/> |
+| <dl> <dt>**TIEMPO DE MEDIOS \_ VFW E \_ NO \_ \_ \_ ESTABLECIDO**</dt> </dl> | El ejemplo no tiene marca de tiempo.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método almacena las marcas de tiempo del ejemplo actual. El [**método CRendererPosPassThru::GetMediaTime**](crendererpospassthru-getmediatime.md) recupera los mismos valores.
 

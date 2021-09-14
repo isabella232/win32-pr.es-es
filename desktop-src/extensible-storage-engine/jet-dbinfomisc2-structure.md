@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: estructura JET_DBINFOMISC2 datos'
+description: 'Más información sobre: JET_DBINFOMISC2 estructura'
 title: Estructura de JET_DBINFOMISC2
 TOCTitle: JET_DBINFOMISC2 Structure
 ms:assetid: c62e87ca-c02c-4d6f-a1e6-f80d022c6aad
@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: da04b1960581c21c29e63d69393de4ebc78dfe7a
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985228"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965724"
 ---
 # <a name="jet_dbinfomisc2-structure"></a>Estructura de JET_DBINFOMISC2
 
@@ -72,7 +72,7 @@ La **JET_DBINFOMISC2** contiene información miscelánea sobre una base de datos
     } JET_DBINFOMISC2;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **ulVersion**
 
@@ -101,7 +101,7 @@ Realiza un seguimiento de las actualizaciones de formato de base de datos increm
 | <p>0x620,B</p> | <p>Nuevo formato de suma de comprobación (08/1/2004).</p> | 
 | <p>0x620,C</p> | <p>Se ha aumentado la longitud máxima de clave a 1000/2000 bytes para páginas de 4/8 kb (1/15/2004).</p> | 
 | <p>0x620,D</p> | <p>Sugerencias de espacio de catálogo, space_header.v2 (15/7/2007).</p> | 
-| <p>0x620,E</p> | <p>Agregue el nuevo formato de nodo o extensión al administrador de espacios y úselo para grupos reservados de espacio (9/8/2007).</p> | 
+| <p>0x620,E</p> | <p>Agregue el nuevo formato de nodo o extensión al administrador de espacios y úsel para grupos reservados de espacio (9/8/2007).</p> | 
 | <p>0x620,F</p> | <p>Compresión para valores long intrínsecos (30/10/2007).</p> | 
 | <p>0x620,10</p> | <p>Compresión para valores largos separados (12/05/2007).</p> | 
 | <p>0x620,11</p> | <p>Nuevo tamaño de fragmento de LV para páginas grandes (29/12/2007).</p> | 
@@ -139,7 +139,7 @@ Null si la base de datos se encuentra en un estado de desvía. Esta es la hora e
 
 **logtimeAttach**
 
-Hora a la que se ha adjuntado la base de datos por última vez [con JetAttachDatabase.](./jetattachdatabase-function.md)
+Hora a la que se adjunta la base de datos por última vez [con JetAttachDatabase](./jetattachdatabase-function.md).
 
 **lgposAttach**
 
@@ -151,7 +151,7 @@ Hora a la que se desasociaron por última vez la base de datos [con JetDetachDat
 
 **lgposDetach**
 
-Posición del registro que se usó la última vez que la base de datos se [desasocia con JetDetachDatabase](./jetdetachdatabase-function.md).
+Posición de registro que se usó la última vez que la base de datos se [desasocia con JetDetachDatabase](./jetdetachdatabase-function.md).
 
 **signLog**
 
@@ -179,19 +179,19 @@ Admite la infraestructura ese y no se puede usar en el código.
 
 **dwMajorVersion**
 
-Representa los números Windows versión de NT cuando se actualizaron los índices de las bases de datos. Se usa para actualizar índices.
+Representa los números Windows versión de NT cuando se actualizaron los índices de bases de datos. Se usa para actualizar índices.
 
 **dwMinorVersion**
 
-Representa los números Windows versión de NT cuando se actualizaron los índices de las bases de datos. Se usa para actualizar índices.
+Representa los números Windows versión de NT cuando se actualizaron los índices de bases de datos. Se usa para actualizar índices.
 
 **dwBuildNumber**
 
-Representa los números Windows versión de NT cuando se actualizaron los índices de las bases de datos. Se usa para actualizar índices.
+Representa los números Windows versión de NT cuando se actualizaron los índices de bases de datos. Se usa para actualizar índices.
 
 **lSPNumber**
 
-Representa los números Windows versión de NT cuando se actualizaron los índices de las bases de datos. Se usa para actualizar índices.
+Representa los números Windows versión de NT cuando se actualizaron los índices de bases de datos. Se usa para actualizar índices.
 
 **cbPageSize**
 
@@ -201,7 +201,7 @@ Este valor solo se recupera si JET_DbInfoMisc a [JetGetDatabaseInfo](./jetgetdat
 
 **genMinRequired**
 
-Representa la generación mínima de registros necesaria para reproducir los registros. Esto se usa normalmente como generación de puntos de control.
+Representa la generación de registros mínima necesaria para reproducir los registros. Normalmente, se usa como generación de puntos de comprobación.
 
 **genMaxRequired**
 
@@ -225,7 +225,7 @@ Número de veces que se había ejecutado la reparación en esta base de datos an
 
 **ulECCFixSuccess**
 
-Número de veces que se corrigió un error de un bit y dio lugar a una página buena.
+Número de veces que se corrigió un error de un bit y se produjo una buena página.
 
 **logtimeECCFixSuccess**
 
@@ -245,7 +245,7 @@ Representa la fecha y hora en que se corrigió el último error de un bit y dio 
 
 **ulECCFixFailOld**
 
-Número de veces que se corrigió un error de un bit y se produjo una página no buena antes de la última reparación.
+Número de veces que se corrigió un error de un bit y se produjo una página no era buena antes de la última reparación.
 
 **ulBadChecksum**
 
@@ -253,7 +253,7 @@ Número de veces que se encontró un error ecc/suma de comprobación no corregib
 
 **logtimeBadChecksum**
 
-Representa la fecha y hora en que se encontró el último error de ECC o suma de comprobación no corregible.
+Representa la fecha y hora en que se encontró el último error ecc/suma de comprobación no corregible.
 
 **ulBadChecksumOld**
 

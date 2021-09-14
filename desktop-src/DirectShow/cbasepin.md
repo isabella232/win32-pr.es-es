@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 55f697d6ff1a2bd3ebac77a77d8ba98321f29d09a75181b52e8ef08b03eed682
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ba7b3a85b512b2ad8d6e85aa38627a2abc68c21
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160199"
 ---
 # <a name="cbasepin-class"></a>CBasePin (clase)
 
@@ -32,12 +32,12 @@ La `CBasePin` clase es una clase abstracta que implementa un pin genérico.
 En los temas siguientes se describe cómo usar esta clase:
 
 -   [Proceso de conexión de CBasePin](cbasepin-connection-process.md)
--   [Notificación a CBasePin de los cambios de estado de filtro](notifying-cbasepin-of-filter-state-changes.md)
--   [Derivar de CBasePin](deriving-from-cbasepin.md)
+-   [Notificación a CBasePin de cambios de estado de filtro](notifying-cbasepin-of-filter-state-changes.md)
+-   [Derivación de CBasePin](deriving-from-cbasepin.md)
 
 
 
-| Variables de miembro protegido                                               | Descripción                                                                                                |
+| Variables miembro protegidas                                               | Descripción                                                                                                |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [**m \_ pName**](cbasepin-m-pname.md)                                     | Nombre del pin.                                                                                                  |
 | [**m \_ Conectado**](cbasepin-m-connected.md)                             | Puntero al pin que está conectado a este pin.                                                          |

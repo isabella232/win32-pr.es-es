@@ -1,15 +1,15 @@
 ---
-description: GetLastError devuelve los valores de error identificados en este tema cuando se produce un error en una de las funciones de microsoft Windows HTTP Services (WinHTTP).
+description: GetLastError devuelve los valores de error identificados en este tema cuando se produce un error en una de las funciones Windows Servicios HTTP de Microsoft (WinHTTP).
 ms.assetid: c8a863cd-d36c-4ec8-ac49-0b714a5e4cc2
 title: Mensajes de error (Winhttp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d83fa1859f071b0fc0e651235deea51626f55b8a45cdb2a3ea8736a57317741
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eccdc8be4b1e7c3cc7f9a03403c2f8778ddd19b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117744721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160547"
 ---
 # <a name="error-messages-winhttph"></a>Mensajes de error (Winhttp.h)
 
@@ -19,7 +19,7 @@ Los valores de error cuyos nombres comienzan por "ERROR \_ \_ WINHTTP" son espec
 
 <dl> <dt>
 
-<span id="ERROR_WINHTTP_AUTO_PROXY_SERVICE_ERROR"></span><span id="error_winhttp_auto_proxy_service_error"></span>**ERROR \_ DE SERVICIO DE PROXY \_ \_ AUTOMÁTICO \_ WINHTTP \_**
+<span id="ERROR_WINHTTP_AUTO_PROXY_SERVICE_ERROR"></span><span id="error_winhttp_auto_proxy_service_error"></span>**ERROR \_ WINHTTP \_ AUTO \_ PROXY \_ SERVICE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 12178
@@ -27,7 +27,7 @@ Los valores de error cuyos nombres comienzan por "ERROR \_ \_ WINHTTP" son espec
 
 
 
-Lo devuelve [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) cuando no se encuentra un proxy para la dirección URL especificada.
+Lo devuelve [**WinHttpGetProxyForUrl cuando**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) no se encuentra un proxy para la dirección URL especificada.
 
 
 </dt> </dl> </dd> <dt>
@@ -53,7 +53,7 @@ Lo devuelve [**WinHttpDetectAutoProxyConfigUrl**](/windows/desktop/api/Winhttp/n
 
 
 
-Error al ejecutar el código de script en el archivo de configuración automática (PAC) del proxy.
+Se produjo un error al ejecutar el código de script en el archivo de configuración automática de proxy (PAC).
 
 
 </dt> </dl> </dd> <dt>
@@ -254,7 +254,7 @@ No se puede encontrar el encabezado solicitado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WINHTTP_INCORRECT_HANDLE_STATE"></span><span id="error_winhttp_incorrect_handle_state"></span>**ERROR \_ WINHTTP \_ INCORRECT \_ HANDLE \_ STATE**
+<span id="ERROR_WINHTTP_INCORRECT_HANDLE_STATE"></span><span id="error_winhttp_incorrect_handle_state"></span>**ERROR \_ WINHTTP \_ ESTADO DE IDENTIFICADOR \_ \_ INCORRECTO**
 </dt> <dd> <dl> <dt>
 
 12019
@@ -483,7 +483,7 @@ Se encontró un error al ejecutar un script.
 
 
 
-Se devuelve cuando un nombre CN de certificado no coincide con el valor pasado (equivalente a un **error CERT E CN NO \_ \_ \_ \_ MATCH).**
+Se devuelve cuando un nombre CN de certificado no coincide con el valor pasado (equivalente a un error **CERT E CN NO \_ \_ \_ \_ MATCH).**
 
 
 </dt> </dl> </dd> <dt>
@@ -620,7 +620,7 @@ Este error se puede devolver como resultado del comportamiento de tiempo de espe
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WINHTTP_UNABLE_TO_DOWNLOAD_SCRIPT"></span><span id="error_winhttp_unable_to_download_script"></span>**ERROR \_ WINHTTP UNABLE TO DOWNLOAD SCRIPT (ERROR WINHTTP \_ NO SE PUEDE DESCARGAR EL \_ \_ \_ SCRIPT)**
+<span id="ERROR_WINHTTP_UNABLE_TO_DOWNLOAD_SCRIPT"></span><span id="error_winhttp_unable_to_download_script"></span>**ERROR \_ WINHTTP \_ NO SE PUEDE DESCARGAR EL \_ \_ \_ SCRIPT**
 </dt> <dd> <dl> <dt>
 
 12167
@@ -731,7 +731,7 @@ No se carga la pila de protocolos necesaria y la aplicación no puede iniciar Wi
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHttp.
 
@@ -744,15 +744,15 @@ Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-
 | Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
 | Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
-| Header<br/>                   | <dl> <dt>Winhttp.h</dt> </dl>       |
+| Encabezado<br/>                   | <dl> <dt>Winhttp.h</dt> </dl>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Versiones winHTTP](winhttp-versions.md)
+[Versiones de WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

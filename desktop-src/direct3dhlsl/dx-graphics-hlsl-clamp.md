@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a0350127a26b0c65762e6c927ea38ca944101dcd646026713de231e33e987fb7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5d6b0a3e83c0b1a5e511aba96df03b828b90c11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119043843"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888353"
 ---
 # <a name="clamp"></a>Abrazadera
 
@@ -51,7 +51,7 @@ Fija el valor especificado al intervalo mínimo y máximo especificado.
 
 Valor de fijación para el *parámetro x.*
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para los valores de -INF o INF, la fijación se comportará según lo previsto. Sin embargo, para los valores de NaN, los resultados no están definidos.
 
@@ -78,14 +78,14 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible             |
 |------------------------------------------------------------------------------------|-----------------------|
-| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí                   |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | sí                   |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1 y ps \_ 1 \_ 4 |
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Obtiene la matriz de desplazamiento de desplazamiento de desplazamiento de desplazamiento.
+description: Obtiene la matriz de desplazamiento de desplazamiento de desplazamiento de desplazamiento de desplazamiento.
 ms.assetid: 99d47635-ffae-4668-a37c-b15442148fa1
 title: Método ID3DXSkinInfo::GetOffsetMatrix (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d10586fc9d4008ebd22b7edf2fa955628ffa0ab703ef70ed06cb2f2cb1fd8d68
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fce108dc1d0eb08f198ae9375ac35ed149c5e760
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119492305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966612"
 ---
 # <a name="id3dxskininfogetboneoffsetmatrix-method"></a>Método ID3DXSkinInfo::GetOffsetMatrix
 
-Obtiene la matriz de desplazamiento de desplazamiento de desplazamiento de desplazamiento.
+Obtiene la matriz de desplazamiento de desplazamiento de desplazamiento de desplazamiento de desplazamiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ LPD3DXMATRIX GetBoneOffsetMatrix(
 
 <dl> <dt>
 
-*Desótola* \[ En\]
+*Insólote* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -53,7 +53,7 @@ Número de pándalo.
 
 Tipo: **[ **LPD3DXMATRIX**](d3dxmatrix.md)**
 
-Devuelve un puntero a la matriz de desplazamiento de desplazamiento. No libera este puntero.
+Devuelve un puntero a la matriz de desplazamiento de desplazamiento de desplazamiento de desplazamiento. No libera este puntero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,17 +66,17 @@ Devuelve un puntero a la matriz de desplazamiento de desplazamiento. No libera e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DXSkinInfo](id3dxskininfo.md)
 </dt> <dt>
 
-[**SetIonalOffsetMatrix**](id3dxskininfo--setboneoffsetmatrix.md)
+[**SetOffsetMatrix**](id3dxskininfo--setboneoffsetmatrix.md)
 </dt> <dt>
 
-[**GetNumIonals**](id3dxskininfo--getnumbones.md)
+[**GetNumNumNums**](id3dxskininfo--getnumbones.md)
 </dt> </dl>
 
  

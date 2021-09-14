@@ -4,7 +4,7 @@ description: Contiene información sobre las funcionalidades y los requisitos de
 ms.assetid: 83586E04-24CA-4A39-836F-C80DB1508C71
 keywords:
 - WINBIO_EXTENDED_ENGINE_INFO estructura Windows API de marco biométrico
-- PWINBIO_EXTENDED_ENGINE_INFO puntero de estructura Windows Biometric Framework API
+- PWINBIO_EXTENDED_ENGINE_INFO puntero de estructura Windows API de marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df59b10400729150a13f2a8a5476c46507867777f71641a01ea0c08e064b4c40
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 829bd0423ab6add41b17f59d308aea850c5b2f42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118910521"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160765"
 ---
 # <a name="winbio_extended_engine_info-structure"></a>Estructura DE \_ INFORMACIÓN DEL MOTOR EXTENDIDO DE \_ \_ WINBIO
 
@@ -70,7 +70,7 @@ typedef struct _WINBIO_EXTENDED_ENGINE_INFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -157,35 +157,35 @@ Número total de ejemplos buenos necesarios para crear una nueva plantilla de hu
 **Centro**
 </dt> <dd>
 
-Número de buenos ejemplos para el centro de la huella digital necesaria para crear una nueva plantilla de huella digital.
+Número de buenas muestras para el centro de la huella digital necesaria para crear una nueva plantilla de huella digital.
 
 </dd> <dt>
 
 **Topedge**
 </dt> <dd>
 
-Número de buenos ejemplos para el borde superior de la huella digital necesaria para crear una nueva plantilla de huella digital.
+Número de buenas muestras para el borde superior de la huella digital necesaria para crear una nueva plantilla de huella digital.
 
 </dd> <dt>
 
 **BottomEdge**
 </dt> <dd>
 
-Número de buenos ejemplos para el borde inferior de la huella digital necesaria para crear una nueva plantilla de huella digital.
+Número de buenas muestras para el borde inferior de la huella digital necesaria para crear una nueva plantilla de huella digital.
 
 </dd> <dt>
 
 **LeftEdge**
 </dt> <dd>
 
-Número de buenos ejemplos para el borde izquierdo de la huella digital necesaria para crear una nueva plantilla de huella digital.
+Número de buenas muestras para el borde izquierdo de la huella digital necesaria para crear una nueva plantilla de huella digital.
 
 </dd> <dt>
 
 **RightEdge**
 </dt> <dd>
 
-Número de buenos ejemplos para el borde derecho de la huella digital necesaria para crear una nueva plantilla de huella digital.
+Número de buenas muestras para el borde derecho de la huella digital necesaria para crear una nueva plantilla de huella digital.
 
 </dd> </dl> </dd> </dl> </dd> <dt>
 
@@ -245,18 +245,18 @@ Reservado. Debe ser cero.
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                                                                     |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluya Winbio.h para aplicaciones cliente o Adaptadores \_ de Winbio.h para adaptadores)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluye Winbio.h para aplicaciones cliente o Adaptadores de \_ Winbio.h para adaptadores)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Constantes DE FUNCIONALIDAD DE WINBIO \_**](winbio-capability-constants.md)
 </dt> <dt>
 
-[**Constantes DE \_ TIPO BIOMETRIC DE WINBIO \_**](winbio-biometric-type-constants.md)
+[**Constantes DE \_ TIPO BIOMÉTRICO DE WINBIO \_**](winbio-biometric-type-constants.md)
 </dt> </dl>
 
  

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f831429d736f3b4ad32a6dc3cbc89890fbb07a7086cec2ae9308399a64f246c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c4cb8f6fd15db857daa3005c99381d437a5289f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117726351"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964671"
 ---
 # <a name="data-types-hlsl"></a>Tipos de datos (HLSL)
 

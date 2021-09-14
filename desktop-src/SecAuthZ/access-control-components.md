@@ -1,17 +1,17 @@
 ---
 description: Explica las partes del modelo de control de acceso.
 ms.assetid: cca78195-90f5-45ee-9d16-c445d87e9f5e
-title: Partes del modelo de Access Control datos
+title: Partes del modelo Access Control datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bffdbf6542a9e29360437c50f47495d83467334e09c7aa55e8a136a8fc7556d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3aa6d3547d486c33f4b31cdb5d5de24c7d27cec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160858"
 ---
-# <a name="parts-of-the-access-control-model"></a>Partes del modelo de Access Control datos
+# <a name="parts-of-the-access-control-model"></a>Partes del modelo Access Control datos
 
 Hay dos partes básicas del modelo de control de acceso:
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 78c3601abaf2a039b49318772eba1ed6e95d2aed06e2a91c72aabdadc3ffebd8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4318a7936f4713d3ff89a2fa73731eea0cdd97db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118579605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885257"
 ---
 # <a name="description-element"></a>Elemento Description
 
@@ -60,9 +60,9 @@ La longitud de la descripción debe ser menor o igual que 255 caracteres.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-------------------------------------|
-| Versión<br/> | Reproductor de Windows Media 11.<br/> |
+| Version<br/> | Reproductor de Windows Media 11.<br/> |
 
 
 
@@ -70,7 +70,7 @@ La longitud de la descripción debe ser menor o igual que 255 caracteres.
 
 <dl> <dt>
 
-[**Documento ServiceInfo de ejemplo para una tienda en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo de ejemplo para un almacén en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo de ejemplo para una tienda en línea de tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)

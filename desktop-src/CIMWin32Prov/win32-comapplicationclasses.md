@@ -1,5 +1,5 @@
 ---
-description: La clase WMI de asociación abstracta COMApplicationClasses de Win32 relaciona un componente del Modelo de objetos componentes (COM) y la aplicación \_ COM donde reside.
+description: La clase WMI de asociación abstracta COMApplicationClasses de Win32 relaciona un componente de Component Object Model (COM) y la aplicación \_ COM donde reside.
 ms.assetid: 7c188199-86fb-45ba-b318-9d9529b831b8
 ms.tgt_platform: multiple
 title: Win32_COMApplicationClasses clase
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4ee60339aa4b25bb5a18659ad22e6a52749e330ea57e52b66ae620091e7a75b6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 01413128f7457049a4383c1148938e2136645337
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119642775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160316"
 ---
-# <a name="win32_comapplicationclasses-class"></a>Clase COMApplicationClasses de Win32 \_
+# <a name="win32_comapplicationclasses-class"></a>Clase \_ COMApplicationClasses de Win32
 
-La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) de asociación abstracta **\_ COMApplicationClasses de Win32** relaciona un componente del Modelo de objetos componentes (COM) y la aplicación COM donde reside.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) de asociación abstracta **\_ COMApplicationClasses de Win32** relaciona un componente de Component Object Model (COM) y la aplicación COM donde reside.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -40,7 +40,7 @@ class Win32_COMApplicationClasses : CIM_Component
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ COMApplicationClasses de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Una [**clase \_ COMClass de Win32**](win32-comclass.md) que representa el compon
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ COMApplicationClasses de Win32** se deriva del [**componente CIM \_**](cim-component.md).
 
@@ -92,7 +92,7 @@ La **clase \_ COMApplicationClasses de Win32** se deriva del [**componente CIM \
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -102,7 +102,7 @@ La **clase \_ COMApplicationClasses de Win32** se deriva del [**componente CIM \
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

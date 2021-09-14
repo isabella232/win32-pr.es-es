@@ -4,16 +4,16 @@ ms.assetid: c0a1269b-f9d4-49e1-89ca-526fef148134
 title: WLX_SAS_TYPE_XXX (Winwlx.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 568308d064b576f036d18aaa2d150cb1c6b7f0a2d89ee60d9410fcad123351d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a75c7d7a71855700c4c8c233db3cfc18e06b9d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160868"
 ---
 # <a name="wlx_sas_type_xxx"></a>WLX \_ SAS \_ TYPE \_ XXX
 
-\[La constante WLX SAS TYPE XXX ya no está disponible para su uso a partir de \_ \_ Windows Server \_ 2008 y Windows Vista.\]
+\[La constante WLX SAS TYPE XXX ya no está disponible para su uso a partir \_ \_ de Windows Server \_ 2008 y Windows Vista.\]
 
 Los **valores DE TIPO XXX de SAS \_ \_ \_ de WLX** definen un tipo de SAS específico.
 
@@ -48,7 +48,7 @@ Todos los valores de cero a 127 están reservados para los tipos definidos por M
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                      |
-| Header<br/>                   | <dl> <dt>Winwlx.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winwlx.h</dt> </dl> |
 
 
 

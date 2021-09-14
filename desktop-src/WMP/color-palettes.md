@@ -12,12 +12,12 @@ keywords:
 - paletas de colores para máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5feabaa57966b2f9b7913523c908fefe609892a8e20570aa1657e893dc02d7a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 424f1f8de0dd6f9777815dd81074af07acb30c9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118580632"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885265"
 ---
 # <a name="color-palettes-windows-media-player-sdk"></a>Paletas de colores (Reproductor de Windows Media SDK)
 

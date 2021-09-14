@@ -4,7 +4,7 @@ description: Los desarrolladores de SHV deben implementarlo para permitir que el
 ms.assetid: 0366d919-39b9-4961-9b8b-c4313448391f
 keywords:
 - NAP de la interfaz INapSystemHealthValidator
-- Nap de interfaz INapSystemHealthValidator , descrito
+- Interfaz NAP de INapSystemHealthValidator , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,23 +15,23 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7310afe1c61dd61344bd1ed355f78735dc7785f9016bbcbb702073b2a06feba0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cce4d47555926c2a3ad5b06315521fea23503d66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119686065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161272"
 ---
-# <a name="inapsystemhealthvalidator-interface"></a>Interfaz INapSystemHealthValidator
+# <a name="inapsystemhealthvalidator-interface"></a>INapSystemHealthValidator (interfaz)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-**INapSystemHealthValidator proporciona** métodos que los desarrolladores de SHV deben implementar para permitir que el sistema NAP se comunique con una SHV.
+**INapSystemHealthValidator proporciona** métodos que deben implementar los desarrolladores de SHV para permitir que el sistema NAP se comunique con una SHV.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz INapSystemHealthValidator** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapSystemHealthValidator** también tiene estos tipos de miembros:
 
@@ -55,16 +55,16 @@ La **interfaz INapSystemHealthValidator** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
-| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

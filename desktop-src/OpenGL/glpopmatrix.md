@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1c0f10456c1038da46d9070689713a8237f876bec7ce7da40acf3d81d89ad15
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 41424a8af3ca6599edc7a66f9e498632640022c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120128025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161092"
 ---
 # <a name="glpopmatrix-function"></a>Función glPopMatrix
 
@@ -57,7 +57,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Hay una pila de matrices para cada uno de los modos de matriz. En el \_ modo GL MODELVIEW, la profundidad de la pila es al menos 32. En los otros dos modos, GL \_ PROJECTION y GL \_ TEXTURE, la profundidad es al menos 2. La matriz actual en cualquier modo es la matriz en la parte superior de la pila para ese modo.
 
@@ -99,7 +99,7 @@ Las funciones siguientes recuperan información relacionada [**con glPushMatrix*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

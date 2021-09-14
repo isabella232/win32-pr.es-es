@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: c0c5609f82db98caea02e08f1e4fbd3877eeccbae25a5e83da3ac2804577b100
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6bfe698a45ea1cfe0a4bac6e65b839292bc1996
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118398112"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886772"
 ---
 # <a name="impeg2psiparsergetcountofprograms-method"></a>IMpeg2PsiParser::GetCountOfPrograms (método)
 

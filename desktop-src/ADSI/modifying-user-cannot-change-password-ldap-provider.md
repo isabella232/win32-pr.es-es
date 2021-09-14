@@ -4,33 +4,33 @@ description: La capacidad de un usuario para cambiar su propia contraseña es un
 ms.assetid: 9d5c2d6a-9997-4d0c-b896-bf1b578e64ac
 ms.tgt_platform: multiple
 keywords:
-- La modificación del usuario no puede cambiar la contraseña (proveedor LDAP) ADSI
+- Modificar el usuario no puede cambiar la contraseña (proveedor LDAP) ADSI
 - El usuario no puede cambiar el ADSI de contraseña (proveedor LDAP), modificando
-- ADSI del proveedor LDAP, ejemplos de administración de usuarios, usuario debe cambiar contraseña en el siguiente inicio de sesión, modificar
+- ADSI del proveedor LDAP, ejemplos de administración de usuarios, usuario debe cambiar la contraseña en el siguiente inicio de sesión, modificar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec664f9a79e0de4ff0b75ae31abd8dc1532cd17c0d3d35a934e094da45eb3383
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e1628b113c2f15278bc72e41aa79e4be03a98f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118179023"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887156"
 ---
 # <a name="modifying-user-cannot-change-password-ldap-provider"></a>Modificar el usuario no puede cambiar la contraseña (proveedor LDAP)
 
 La capacidad de un usuario para cambiar su propia contraseña es un permiso que se puede conceder o denegar. Para denegar este permiso, establezca dos ACE en la lista de control de acceso discrecional (DACL) del descriptor de seguridad del objeto de usuario con el tipo **\_ ACETYPE \_ ACCESS DENIED \_ \_ OBJECT** ace de ADS. Una ACE deniega el permiso al usuario y otra ACE deniega el permiso al grupo Todos. Ambas ACE son ACE de denegación específicas del objeto que especifican el GUID del permiso extendido para cambiar contraseñas. Para conceder este permiso, establezca las mismas ACE con el tipo **\_ ACETYPE \_ ACCESS ALLOWED \_ \_ OBJECT** ace de ADS.
 
-En el procedimiento siguiente se describe cómo modificar o agregar ACE para este permiso.
+En el procedimiento siguiente se describe cómo modificar o agregar ASE para este permiso.
 
 **Para modificar o agregar las ACE para este permiso**
 
-1.  Enlace al objeto de usuario.
-2.  Obtenga el [**objeto IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) de la **propiedad ntSecurityDescriptor** del objeto de usuario.
+1.  Enlazar al objeto de usuario.
+2.  Obtenga el [**objeto IADsSecurityDescriptor de**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) la **propiedad ntSecurityDescriptor** del objeto de usuario.
 3.  Obtenga una [**interfaz IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) para el descriptor de seguridad de la [**propiedad IADsSecurityDescriptor.DiscretionaryAcl.**](iadssecuritydescriptor-property-methods.md)
 4.  Enumerar las ACE del objeto y buscar las ACE que tienen el GUID de contraseña de cambio ({AB721A53-1E2F-11D0-9819-00AA0040529B}) para la propiedad [**IADsAccessControlEntry.ObjectType**](iadsaccesscontrolentry-property-methods.md) y "Todos" o "NT AUTHORITY SELF" para la propiedad \\ **IADsAccessControlEntry.Trustee.**
 
     > [!Note]  
-    > Las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador \\ de dominio del dominio. Por este problema, las cadenas no se deben usar directamente. Los nombres de cuenta se deben obtener en tiempo de ejecución mediante una llamada a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) con el SID para "Todos" ("S-1-1-0") y "NT AUTHORITY \\ SELF" ("S-1-5-10") entidades de seguridad conocidas. Las funciones de ejemplo **GetSidAccountName**, **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** C++ mostradas en Lectura del usuario no se puede cambiar la contraseña [(proveedor LDAP)](reading-user-cannot-change-password-ldap-provider.md) muestran cómo hacerlo.
+    > Las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador \\ de dominio del dominio. Por este problema, las cadenas no se deben usar directamente. Los nombres de cuenta deben obtenerse en tiempo de ejecución llamando a la función [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) con el SID de "Todos" ("S-1-1-0") y "NT AUTHORITY \\ SELF" ("S-1-5-10") entidades de seguridad conocidas. Las funciones de ejemplo **GetSidAccountName**, **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** C++ que se muestran en Lectura del usuario no se puede cambiar la contraseña [(proveedor LDAP)](reading-user-cannot-change-password-ldap-provider.md) muestran cómo hacerlo.
 
      
 
@@ -45,12 +45,12 @@ En la tabla siguiente se enumeran los valores de propiedad del objeto [**IADsAcc
 
 
 
-| Propiedad IADsAccessControlEntry                                        | Valor                                                                                                                                                                 |
+| Propiedad IADsAccessControlEntry                                        | Value                                                                                                                                                                 |
 |------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Máscara de acceso**](iadsaccesscontrolentry-property-methods.md)          | **ADS \_ RIGHT \_ DS \_ CONTROL \_ ACCESS**                                                                                                                                   |
 | [**AceType**](iadsaccesscontrolentry-property-methods.md)             | **ADS \_ ACETYPE \_ ACCESS \_ DENIED \_ OBJECT** si el usuario no puede cambiar su contraseña o **ADS \_ ACETYPE ACCESS ALLOWED \_ \_ \_ OBJECT** si el usuario puede cambiar su contraseña. |
 | [**AceFlags**](iadsaccesscontrolentry-property-methods.md)            | 0                                                                                                                                                                     |
-| [**Banderas**](iadsaccesscontrolentry-property-methods.md)               | **ADS \_ FLAG \_ OBJECT \_ TYPE \_ PRESENT**                                                                                                                                  |
+| [**Marcas**](iadsaccesscontrolentry-property-methods.md)               | **ADS \_ FLAG \_ OBJECT \_ TYPE \_ PRESENT**                                                                                                                                  |
 | [**ObjectType**](iadsaccesscontrolentry-property-methods.md)          | "{AB721A53-1E2F-11D0-9819-00AA0040529B}", que es el GUID de contraseña de cambio en forma de cadena.                                                                            |
 | [**InheritedObjectType**](iadsaccesscontrolentry-property-methods.md) | No se usa                                                                                                                                                              |
 | [**Fideicomisario**](iadsaccesscontrolentry-property-methods.md)             | Nombre de cuenta del SID "S-1-1-0" (Todos).                                                                                                                            |
@@ -64,7 +64,7 @@ En la tabla siguiente se enumeran los valores de propiedad del objeto [**IADsAcc
 En el ejemplo de código siguiente se muestra cómo obtener una interfaz para cambiar una DACL. La [**interfaz IADsObjectOptions**](/windows/desktop/api/Iads/nn-iads-iadsobjectoptions) se puede usar estableciendo la opción **ADS SECURITY INFO \_ \_ \_ DACL.**
 
 > [!Note]  
-> Para usar el código documentado en este ejemplo, debe ser administrador. Si no es administrador, deberá agregar más código que usará una interfaz que permitirá a un usuario cambiar la forma en que la caché del lado cliente se vacía de nuevo en el servicio Dominio de Active Directory.
+> Para usar el código documentado en este ejemplo, debe ser administrador. Si no es administrador, deberá agregar más código que usará una interfaz que permitirá a un usuario cambiar la forma en que se vacía la memoria caché del lado cliente al servicio Dominio de Active Directory.
 
  
 
@@ -106,7 +106,7 @@ if(SUCCEEDED(hr))
 
 
 
-En el ejemplo de código siguiente se muestra cómo modificar el permiso User Cannot Change Password mediante el proveedor LDAP. En este ejemplo de código se usa la función de utilidad **GetObjectACE** definida anteriormente.
+En el ejemplo de código siguiente se muestra cómo modificar el permiso Usuario no se puede cambiar la contraseña mediante el proveedor LDAP. En este ejemplo de código se usa la función de utilidad **GetObjectACE** definida anteriormente.
 
 En este ejemplo se usan las funciones de ejemplo **GetSidAccountName \_ Everyone** y **GetSidAccountName \_ Self** C++ que se muestran en Lectura del usuario no se puede cambiar la contraseña [(proveedor LDAP).](reading-user-cannot-change-password-ldap-provider.md)
 
@@ -417,10 +417,10 @@ HRESULT SetUserCannotChangePassword(LPCWSTR pwszUserDN,
 
 
 
-En el ejemplo de código siguiente se muestra cómo modificar el permiso User Cannot Change Password mediante el proveedor LDAP.
+En el ejemplo de código siguiente se muestra cómo modificar el permiso Usuario no se puede cambiar la contraseña mediante el proveedor LDAP.
 
 > [!Note]  
-> El ejemplo siguiente solo funcionará en dominios en los que el idioma principal sea inglés porque las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador de dominio del \\ dominio. No hay ninguna manera de Visual Basic los nombres de cuenta de una entidad de seguridad conocida sin llamar a la [**función LookupAccountSid.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) Si usa Visual Basic, se recomienda usar el proveedor winNT para modificar el permiso Usuario no se puede cambiar la contraseña como se muestra en Modificar el usuario no se puede cambiar la contraseña [(proveedor winNT).](modifying-user-cannot-change-password-winnt-provider.md)
+> El ejemplo siguiente solo funcionará en dominios en los que el idioma principal sea inglés porque las cadenas "Todos" y "NT AUTHORITY SELF" se localizan en función del idioma del primer controlador de dominio del \\ dominio. No hay ninguna manera de Visual Basic los nombres de cuenta de una entidad de seguridad conocida sin llamar a la [**función LookupAccountSid.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) Si usa Visual Basic, se recomienda usar el proveedor WinNT para modificar el permiso Usuario no se puede cambiar la contraseña, como se muestra en Modificar el usuario no se puede cambiar la contraseña [(proveedor winNT).](modifying-user-cannot-change-password-winnt-provider.md)
 
  
 

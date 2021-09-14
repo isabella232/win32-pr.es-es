@@ -4,8 +4,8 @@ description: Los agentes de mantenimiento del sistema usan para registrar el ide
 ms.assetid: 5d6f2392-2ada-474a-b150-31e0583c2ea7
 keywords:
 - Método NAP de GetStringCorrelationId
-- Método NAP de GetStringCorrelationId, interfaz INapSystemHealthAgentRequest
-- INapSystemHealthAgentRequest interface NAP , GetStringCorrelationId method
+- Método NAP de GetStringCorrelationId , interfaz INapSystemHealthAgentRequest
+- Interfaz NAP de INapSystemHealthAgentRequest, método GetStringCorrelationId
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2545e8fca51361cf46e1fe144b77e77b26512772955b5269d2e40a0c944ba7ec
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5f33e98ae4b0fd76d97e85fb3588bcd1f2d33fd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119802734"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161298"
 ---
 # <a name="inapsystemhealthagentrequestgetstringcorrelationid-method"></a>INapSystemHealthAgentRequest::GetStringCorrelationId (método)
 
@@ -50,7 +50,7 @@ HRESULT GetStringCorrelationId(
 *correlationId* \[ out\]
 </dt> <dd>
 
-Puntero a un puntero a un [**correlationId único**](/windows/win32/api/naptypes/ns-naptypes-correlationid) para este intercambio soH.
+Puntero a un puntero a un [**correlationId único**](/windows/win32/api/naptypes/ns-naptypes-correlationid) para este intercambio de SoH.
 
 </dd> </dl>
 
@@ -74,17 +74,17 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagentrt.dll</dt> </dl>             |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

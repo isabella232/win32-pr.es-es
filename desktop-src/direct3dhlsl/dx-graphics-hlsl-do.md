@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c154255d4c134c8879df8b6373a522e08ec102c26f3e11bf0b5a6876444eaa4f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a1f019af77ef0021ad0574bf703ff2a2a52ac0f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120024345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888273"
 ---
 # <a name="do-statement"></a>do (Instrucción)
 
@@ -44,7 +44,7 @@ Parámetro opcional que controla cómo se compila la instrucción.
 
 | Atributo | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| fastopt   | Reduce el tiempo de compilación, pero genera optimizaciones menos agresivas. Si usa este atributo, el compilador no desenrollará bucles.<br/> Este atributo solo afecta a los destinos del modelo de sombreador que admiten [instrucciones de](dx-graphics-hlsl-break.md) interrupción. Este atributo está disponible en el modelo de sombreador [frente \_ a 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) y el [modelo de sombreador 3](dx-graphics-hlsl-sm3.md) y versiones posteriores. Es especialmente útil en el modelo [de sombreador 4](dx-graphics-hlsl-sm4.md) y versiones posteriores cuando el compilador compila bucles. El compilador simula bucles de forma predeterminada para evaluar si puede deshacer su inscripción. Si no desea que el compilador desrolle bucles, use este atributo para reducir el tiempo de compilación.<br/> |
+| fastopt   | Reduce el tiempo de compilación, pero genera optimizaciones menos agresivas. Si usa este atributo, el compilador no desenrollará bucles.<br/> Este atributo solo afecta a los destinos del modelo de sombreador que admiten [instrucciones de](dx-graphics-hlsl-break.md) interrupción. Este atributo está disponible en el modelo de sombreador [frente \_ a 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) y en el modelo [de sombreador 3](dx-graphics-hlsl-sm3.md) y versiones posteriores. Resulta especialmente útil en el modelo [de sombreador 4](dx-graphics-hlsl-sm4.md) y versiones posteriores cuando el compilador compila bucles. El compilador simula bucles de forma predeterminada para evaluar si puede deshacer su inscripción. Si no desea que el compilador desenrolle bucles, use este atributo para reducir el tiempo de compilación.<br/> |
 
 
 
@@ -76,7 +76,7 @@ Expresión [condicional](dx-graphics-hlsl-expressions.md). El bloque de instrucc
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

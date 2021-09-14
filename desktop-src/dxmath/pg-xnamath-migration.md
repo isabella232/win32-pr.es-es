@@ -1,19 +1,19 @@
 ---
-description: En esta introducción se describen los cambios necesarios para migrar el código existente mediante la biblioteca matemática de XNA a la biblioteca DirectXMath.
+description: En esta introducción se describen los cambios necesarios para migrar el código existente mediante la biblioteca matemática XNA a la biblioteca DirectXMath.
 ms.assetid: ed8463f8-8a3d-e89e-89e2-8d72a7f45cd6
-title: Migración de código desde la biblioteca matemática de XNA
+title: Migración de código desde la biblioteca matemática XNA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11afe17e4e8e63ed06b34aed5fe573951b4e5383a78eb3c2c68f5b742c6560a3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5dc7a48d30711a870c28b677e458a4f72c3b3c40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119740129"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883889"
 ---
-# <a name="code-migration-from-the-xna-math-library"></a>Migración de código desde la biblioteca matemática de XNA
+# <a name="code-migration-from-the-xna-math-library"></a>Migración de código desde la biblioteca matemática XNA
 
-En esta introducción se describen los cambios necesarios para migrar el código existente mediante la biblioteca matemática de XNA a la biblioteca DirectXMath.
+En esta introducción se describen los cambios necesarios para migrar el código existente mediante la biblioteca matemática XNA a la biblioteca DirectXMath.
 
 ## <a name="header-changes"></a>Cambios de encabezado
 
@@ -25,16 +25,16 @@ Los tipos de límite del ejemplo de colisión del SDK de DirectX en ahora forman
 
 ## <a name="constant-changes"></a>Cambios constantes
 
-XNXTTH \_ VERSION (200, 201, 202, 203, 204, y así sucesivamente) se ha reemplazado por DIRECXTMATH \_ VERSION (300, 301, 302, 303, y así sucesivamente).
+XNAMATH \_ VERSION (200, 201, 202, 203, 204, y así sucesivamente) se ha reemplazado por DIRECXTMATH \_ VERSION (300, 301, 302, 303, y así sucesivamente).
 
 > [!NOTE]  
-> DirectXMath 3.00 y 3.02 se incluye con versiones preliminares del SDK Windows. DirectXMath 3.03 está en la versión final del SDK de Windows 8.
+> DirectXMath 3.00 y 3.02 se incluye con versiones preliminares del SDK Windows. DirectXMath 3.03 está en la versión final del SDK Windows 8.
 
 ## <a name="namespaces"></a>Espacios de nombres
 
 La biblioteca DirectXMath usa espacios de nombres de C++ para organizar los tipos. XNA Math solo usaba el espacio de nombres global. Los tipos de DirectXMath en común con XNA Math están en el espacio de nombres **DirectX** o **DirectX::P ackedVector.**
 
-En los archivos de código fuente de C++, una solución sencilla es agregar `using` instrucciones.
+En los archivos de código fuente de C++, una solución sencilla es agregar `using` instrucciones .
 
 ```cpp
 #include "DirectXMath.h"
@@ -44,7 +44,7 @@ using namespace DirectX;
 using namespace DirectX::PackedVector;
 ```
 
-En el caso de los encabezados, no se considera un procedimiento recomendado agregar instrucciones using. En su lugar, agregue espacios de nombres completos.
+Para los encabezados, no se considera un procedimiento recomendado agregar instrucciones using. En su lugar, agregue espacios de nombres completos.
 
 ```
 struct mystruct
@@ -60,7 +60,7 @@ Para varias funciones que cargan menos de 4 elementos de un XMVECTOR, la bibliot
 
 ## <a name="removal-of-xbox-360-specific-types"></a>Eliminación de Xbox 360 tipos específicos
 
-Los siguientes tipos, funciones y constantes de la biblioteca matemática de XNA no están disponibles en DirectXMath.
+Los siguientes tipos, funciones y constantes de la biblioteca matemática XNA no están disponibles en DirectXMath.
 
 -   HENDN3, XMHEND3, XMUHENDN3, XMUHEND3, XMDHENN3, XMDHEN3, XMUDHENN3, XMUDHEN3
 -   XMLoadHenDN3(), XMLoadHenD3(), XMLoadUHenDN3(), XMLoadUHenD3(), XMLoadDHenN3(), XMLoadDHen3(), XMLoadUDHenN3(), XMLoadUDHen3()
@@ -71,36 +71,36 @@ Los siguientes tipos, funciones y constantes de la biblioteca matemática de XNA
 -   XMStoreXIcoN4(), XMStoreXIco4() , XMStoreIcoN4(), XMStoreIco4(), XMStoreUIcoN4(), XMStoreUIco4()
 -   g \_ XMMaskIco4, g \_ XMXorXIco4, g \_ XMXorIco4, g \_ XMAddXIco4, g \_ XMAddUIco4, g \_ XMAddIco4, g \_ XMMulIco4
 
-\_\_vector4i está en desuso. En [**su lugar, use XMVECVEC32**](xmvectori32-data-type.md) [**o XMVECTORU32.**](xmvectoru32-data-type.md)
+\_\_vector4i está en desuso. Use [**XMVECVEC32**](xmvectori32-data-type.md) o [**XMVECTORU32 en**](xmvectoru32-data-type.md) su lugar.
 
-Las siguientes funciones y tipos están en desuso porque solo están en Xbox 360: XMLoadDecN4, XMStoreDecN4, XMDECN4, XMLoadDec4, XMStoreDec4, XMDEC4, XMLoadXDec4, XMStoreXDec4, XMXDEC4.
+Las siguientes funciones y tipos están en desuso, ya que solo están Xbox 360: XMLoadDecN4, XMStoreDecN4, XMDECN4, XMLoadDec4, XMStoreDec4, XMDEC4, XMLoadXDec4, XMStoreXDec4, XMXDEC4.
 
 ## <a name="arm-neon-intrinsics"></a>Intrínsecos ARM-NEON
 
-La declaración de una constante vectorial con este código se compilará para XNA Math for SSE y NO-INTRINSICS, pero se producirá un error para DirectXMath mediante ARM-NEON.
+La declaración de una constante vectorial con este código se compilará para XNA Math para SSE y NO-INTRINSICS, pero se producirá un error para DirectXMath mediante ARM-NEON.
 
 ```
 XMVECTOR v = { 1.f, 2.f, 3.f, 4.f }
 ```
 
-En general, no se recomienda este método de inicialización de [**un XMVECTOR**](xmvector-data-type.md). Sin embargo, si desea una constante de vector, la clase [**XMVECTORF32**](xmvectorf32-data-type.md) admite este estilo de inicialización y devuelve el tipo **XMVECTOR** automáticamente para que pueda usar **XMVECTORF32** en la mayoría de los mismos contextos. Cualquier operación de escritura en **una clase XMVECTORF32** requiere hacer referencia explícitamente al miembro **XMVECTOR .v.**
+En general, no se recomienda este método de inicialización de [**un XMVECTOR**](xmvector-data-type.md). Sin embargo, si desea una constante de vector, la clase [**XMVECTORF32**](xmvectorf32-data-type.md) admite este estilo de inicialización y devuelve el tipo **XMVECTOR** automáticamente para que pueda usar **XMVECTORF32** en la mayoría de los mismos contextos. Cualquier operación de escritura en **una clase XMVECTORF32** requiere hacer referencia explícita al miembro **XMVECTOR** .v.
 
 ## <a name="permute"></a>Permute
 
-La biblioteca matemática XNA tenía la forma siguiente para el vector general permute:
+La biblioteca matemática XNA tenía la siguiente forma para la permute de vector general:
 
 ```
 XMVECTOR XMVectorPermuteControl(UINT ElementIndex0, UINT ElementIndex1, UINT ElementIndex2, UINT ElementIndex3);
 XMVECTOR XMVectorPermute(FXMVECTOR V1, FXMVECTOR V2, FXMVECTOR Control);
 ```
 
-Para DirectXMath, **se ha eliminado XMVectorPermuteControl** y XM \_ PERMUTE \_ 0X . Las constantes PERMUTE 1Z de XM se han redefinido para que sean índices simples de \_ \_ 0 a 7. Esta es la nueva firma para [**XMVectorPermute:**](/windows/win32/api/directxmath/nf-directxmath-xmvectorpermute)
+En el caso de DirectXMath, se ha eliminado **XMVectorPermuteControl** y el control \_ XM PERMUTE \_ 0X . Las constantes PERMUTE 1Z de XM se han redefinido para que sean índices simples de \_ \_ 0 a 7. Esta es la nueva firma [**para XMVectorPermute:**](/windows/win32/api/directxmath/nf-directxmath-xmvectorpermute)
 
 ```
 XMVECTOR XMVectorPermute(FXMVECTOR V1, FXMVECTOR V2, uint32_t PermuteX, uint32_t PermuteY, uint32_t PermuteZ, uint32_t PermuteW);
 ```
 
-En lugar de una palabra de control, esta función toma directamente los 4 índices como parámetros, lo que también hace que sea análoga a la función [**XMVectorSwzzle**](/windows/win32/api/directxmath/nf-directxmath-xmvectorswizzle) mediante el nuevo XM \_ SWZZLE \_ X . Constantes \_ DE XM SW STALE W \_ definidas como índices simples de 0-3.
+En lugar de una palabra de control, esta función toma directamente los 4 índices como parámetros, lo que también hace que sea análoga a la función [**XMVectorSwmovle**](/windows/win32/api/directxmath/nf-directxmath-xmvectorswizzle) mediante el nuevo SW STALE X de \_ \_ XM. Constantes \_ DE W DE XM SW STALE \_ definidas como índices simples de 0 a 3.
 
 ```
 XMVECTOR XMVectorSwizzle(FXMVECTOR V, uint32_t E0, uint32_t E1, uint32_t E2, uint32_t E3);

@@ -15,14 +15,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fdbd7184ad6fc432beb5ba8e9585c2e9a93486acc604f875ff3a70f72e8ec04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f36a071251a12c4d27d06586775c01759b88d38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118531111"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160454"
 ---
-# <a name="cd3dx12_depth_stencil_desc-structure"></a>CD3DX12 \_ DEPTH \_ STENCIL \_ DESC (estructura DESC)
+# <a name="cd3dx12_depth_stencil_desc-structure"></a>Estructura \_ \_ DESC de STENCIL \_ DEPTH de CD3DX12
 
 Estructura auxiliar para permitir la inicialización sencilla de una estructura [**D3D12 \_ DEPTH \_ STENCIL \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)
 
@@ -42,11 +42,11 @@ struct CD3DX12_DEPTH_STENCIL_DESC  : public D3D12_DEPTH_STENCIL_DESC{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
-**CD3DX12 \_ DEPTH \_ STENCIL \_ DESC()**
+**GALERÍA DE SÍMBOLOS DE PROFUNDIDAD DE CD3DX12 \_ \_ \_ DESC()**
 </dt> <dd>
 
 Crea una nueva instancia sin inicializar de D3DX12 \_ DEPTH \_ STENCIL \_ DESC.
@@ -80,7 +80,7 @@ Crea una nueva instancia de D3DX12 \_ DEPTH \_ STENCIL \_ DESC, inicializada con
 
 </dd> <dt>
 
-**explicit CD3DX12 \_ DEPTH \_ STENCIL \_ DESC(BOOL depthEnable, D3D12 \_ DEPTH WRITE MASK \_ \_ depthWriteMask, D3D12 \_ COMPARISON \_ FUNC depthFunc, BOOL stencilEnable, UINT8 stencilReadMask, UINT8 stencilWriteMask, D3D12 \_ STENCIL \_ OP frontStencilFailOp, \_ FrontStencilD12 STENCIL \_ OP frontStencilDepthFailOp, D3D12 \_ STENCIL \_ OP frontStencilPassOp, D3D12 \_ COMPARISON \_ FUNC frontStencilFunc, D3D12 \_ STENCIL \_ OP backStencilFailOp, D3D12 \_ STENCIL \_ OP backStencilDepthFailOp, D3D12 \_ STENCIL \_ OP backStencilPassOp, D3D12 \_ COMPARISON \_ FUNC backStencilFunc)**
+**explicit CD3DX12 \_ DEPTH \_ STENCIL \_ DESC(BOOL depthEnable, D3D12 \_ DEPTH WRITE MASK \_ \_ depthWriteMask, D3D12 \_ COMPARISON \_ FUNC depthFunc, BOOL stencilEnable, UINT8 stencilReadMask, UINT8 stencilWriteMask, D3D12 \_ STENCIL \_ OP frontStencilFailOp, D3D12 \_ STENCIL \_ OP frontStencilDepthFailOp, D3D12 \_ STENCIL \_ OP frontStencilPassOp, D3D12 \_ COMPARISON \_ FUNC frontStencilFunc, D3D12 \_ STENCIL \_ OP backStencilFailOp, D3D12 \_ STENCIL \_ OP backStencilDepthFailOp, D3D12 \_ STENCIL \_ OP backStencilPassOp, D3D12 \_ COMPARISON \_ FUNC backStencilFunc)**
 </dt> <dd>
 
 Crea una nueva instancia de D3DX12 \_ DEPTH \_ STENCIL \_ DESC, inicializando los parámetros siguientes:
@@ -103,22 +103,22 @@ UINT8 stencilWriteMask
 
 [**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) frontStencilPassOp
 
-[**D3D12 \_ COMPARACIÓN \_ FrontStencilFunc**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func)
+[**D3D12 \_ COMPARISON \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) frontStencilFunc
 
-[**D3D12 \_ BackStencilFailOp de STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op)
+[**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) backStencilFailOp
 
 [**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) backStencilDepthFailOp
 
 [**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) backStencilPassOp
 
-[**D3D12 \_ COMPARACIÓN \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) backStencilFunc
+[**D3D12 \_ COMPARISON \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) backStencilFunc
 
 </dd> <dt>
 
 **~CD3DX12 \_ DEPTH \_ STENCIL \_ DESC()**
 </dt> <dd>
 
-Destruye una instancia de CD3DX12 \_ DEPTH \_ STENCIL \_ DESC.
+Destruye una instancia de cd3DX12 \_ DEPTH \_ STENCIL \_ DESC.
 
 </dd> <dt>
 

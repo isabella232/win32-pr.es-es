@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Proveedor de vistas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cec84f3a22a777da2212dcfe918f4294495ade54191cd4d37e17f2ac32c2f5ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e49154504dfb2f71ec19c2275851befbdbf9a48
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118553274"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889169"
 ---
 # <a name="view-provider"></a>Proveedor de vistas
 

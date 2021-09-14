@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: effc6115586139fe47db677907fdfdac7ca14d7a9c9f27a49407d8ad762cf914
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e494c98e2a828b512b0bb66dc2a44cba8c37792c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117974435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160730"
 ---
 # <a name="settingsenablepromptforcertificateui-property"></a>Configuración. EnablePromptForCertificateUI, propiedad
 
@@ -26,7 +26,7 @@ ms.locfileid: "117974435"
 
 La **propiedad EnablePromptForCertificateUI** establece o recupera un valor booleano que especifica si la interfaz de usuario solicita la identidad de un firmante o remitente.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -48,14 +48,14 @@ Si **es true,** se puede usar la interfaz de usuario que solicita la identidad d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

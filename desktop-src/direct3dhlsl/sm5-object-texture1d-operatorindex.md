@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d2c11ef313531adb9b129ffb99103ea6c7778462eddf8c1c76f4b235c92951c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44e5b502c7ae8b766363956920d7922858b4d771
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966547"
 ---
 # <a name="texture1doperator--function"></a>Función Texture1D::Operator
 
@@ -41,7 +41,7 @@ R Operator[](
 
 Tipo: **uint**
 
-Posición del índice. Contiene la coordenada x.
+Posición del índice. Contiene la coordenada X.
 
 </dd> </dl>
 
@@ -49,17 +49,17 @@ Posición del índice. Contiene la coordenada x.
 
 Tipo: **R**
 
-Variable de recurso de solo lectura.
+Una variable de recurso de solo lectura.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método siempre tiene acceso al primer nivel de mip. Para especificar otros niveles de mip, use [**el operador \[ \] \[ \] mip.operator en**](sm5-object-texture1d-mipsoperatorindex.md) su lugar.
+Este método siempre tiene acceso al primer nivel de mip. Para especificar otros niveles de mip, use en su lugar [**\[ \] \[ \] mip.operator.**](sm5-object-texture1d-mipsoperatorindex.md)
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -67,14 +67,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Texture1D](sm5-object-texture1d.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

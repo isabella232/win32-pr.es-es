@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103179
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 251fec298b7fb24ef41ce4dd0fd4a46b91e143d8655bda9e1e06e9b815a4fcbe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 876a590a05ecf7178128225853a40b10f7dc4740
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039553"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887657"
 ---
 # <a name="esentusageexception-methods"></a>Métodos de EsentUsageException 
 
@@ -78,7 +78,7 @@ El [tipo EsentUsageException](./esentusageexception-class.md) expone los miembro
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

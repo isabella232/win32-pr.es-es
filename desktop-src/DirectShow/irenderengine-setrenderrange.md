@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 0255b7806e2e2303bb2ca953fc5e59886480cbf3525d4de1bf1ef2fbd1388caf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e715c2c0077a890948cfd5f5026afe98633325ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952524"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886676"
 ---
 # <a name="irenderenginesetrenderrange-method"></a>IRenderEngine::SetRenderRange (método)
 
@@ -75,7 +75,7 @@ Devuelve uno de los siguientes **valores HRESULT:**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -98,7 +98,7 @@ Devuelve uno de los siguientes **valores HRESULT:**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

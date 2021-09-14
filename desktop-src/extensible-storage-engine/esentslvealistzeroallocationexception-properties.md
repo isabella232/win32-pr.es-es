@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102787
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8a3a06d1119409ad307fb9a1fa6d311fb538f9ae9fd3648a06844aaa8f8d036f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5fe9f05cc857930a53076c7e4faeeb5d652973f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118981445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964431"
 ---
 # <a name="esentslvealistzeroallocationexception-properties"></a>Propiedades de EsentSLVEAListZeroAllocationException
 
@@ -34,7 +34,7 @@ El [tipo EsentSLVEAListZeroAllocationException](./esentslvealistzeroallocationex
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentSLVEAListZeroAllocationException](./esentslvealistzeroallocationex
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

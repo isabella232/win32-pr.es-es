@@ -4,16 +4,16 @@ description: La actividad de mantenimiento hace referencia a una aplicación o p
 ms.assetid: 1D38341B-15AA-422F-AED1-647FCDE69E2E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43fe72159ac5fd14c2dcc80126e572fa1475ed52ffd5710b74621cf00ad40a39
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 456383eeb75c3b29bf575357d4b17d5f8a66234b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139308"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886465"
 ---
 # <a name="automatic-maintenance"></a>Mantenimiento automático
 
-La actividad de mantenimiento hace referencia a una aplicación o proceso que ayuda a mantener el estado y el rendimiento de un Windows equipo. El mantenimiento incluye mantener el Windows operativo (SO) y las aplicaciones actualizados, comprobar la seguridad y ejecutar exámenes en busca de malware. Windows Administración automática (WAM) es un conjunto de mejoras en la API de Programador de tareas que puede usar para vincular las aplicaciones a la programación de mantenimiento Windows aplicaciones. En concreto, WAM permite agregar actividades que requieren programación periódica, pero que no tienen requisitos de tiempo exactos. En su lugar, WAM se basa en el sistema operativo para elegir la hora adecuada para activar la tarea a lo largo del día. El sistema elige esas horas en función del impacto mínimo en el usuario, el rendimiento del equipo y la eficiencia energética.
+La actividad de mantenimiento hace referencia a una aplicación o proceso que ayuda a mantener el estado y el rendimiento de un Windows equipo. El mantenimiento incluye mantener actualizados Windows sistema operativo (SO) y aplicaciones, comprobar la seguridad y ejecutar exámenes de malware. Windows La administración automática (WAM) es un conjunto de mejoras en la API de Programador de tareas que puede usar para vincular las aplicaciones a la programación de mantenimiento Windows aplicaciones. En concreto, WAM permite agregar actividades que requieren programación periódica, pero que no tienen requisitos de tiempo exactos. En su lugar, WAM se basa en el sistema operativo para elegir la hora adecuada para activar la tarea a lo largo del día. El sistema elige esas horas en función del impacto mínimo en el usuario, el rendimiento del equipo y la eficiencia energética.
 
 ## <a name="how-scheduled-maintenance-works"></a>Funcionamiento del mantenimiento programado
 
@@ -31,13 +31,13 @@ Una vez que el sistema completa la tarea (incluso con un código de error), el i
 
 ## <a name="automatic-maintenancemdashdaily-wakeup"></a>Reactivación diaria &mdash; de mantenimiento automático
 
-En Windows 7, una tarea de mantenimiento se ejecuta exclusivamente durante la hora de mantenimiento *,* con un valor predeterminado de 3 a. m. y configurable a través de directiva de grupo. La máquina se reactivaría de modo de espera, ejecutaría tareas de mantenimiento y volvería a suspensión. Esta sesión diaria se limitó a una duración máxima de 1 hora por intento. Esto permitiría que el sistema realizara tareas de mantenimiento diariamente, empezando a las 3 a. m. de forma predeterminada. Tenga en cuenta que el usuario puede volver a programar la hora a la que se desencadena el mantenimiento mediante la configuración de estas opciones.
+En Windows 7, una tarea de mantenimiento se ejecuta exclusivamente durante la hora de mantenimiento *,* de forma predeterminada a las 3 a. m., y se puede configurar a través de directiva de grupo. La máquina se reactivaría de modo de espera, ejecutaría tareas de mantenimiento y volvería a suspensión. Esta sesión diaria se limitó a una duración máxima de 1 hora por intento. Esto permitiría que el sistema realizara tareas de mantenimiento diariamente, empezando a las 3 a. m. de forma predeterminada. Tenga en cuenta que el usuario puede volver a programar la hora a la que se desencadena el mantenimiento mediante la configuración de estas opciones.
 
 Con la llegada de los portátiles y el enfoque pesado en la duración de la batería, las máquinas ya no están configuradas para permitir la reactivación S3 en la mayoría de las circunstancias y, por lo general, Doze-To-S4 (hibernar) lo antes posible, para ahorrar batería. En respuesta a estos cambios, Programador de tareas (> Win7) ejecuta tareas de mantenimiento cada vez que se les debe, y la máquina está inactiva y con alimentación de CA.
 
 Esta configuración se puede configurar en Panel de control.
 
-Abra **Panel de control**  >  **Sistema y seguridad**  >  **Seguridad y mantenimiento**  >  **Mantenimiento automático**.
+Abra **Panel de control**  >  **sistema y seguridad**  >  **Seguridad y mantenimiento**  >  **Mantenimiento automático**.
 
 Por lo tanto, en función de cómo estén configuradas las máquinas y las tareas, es posible que el comportamiento de reactivación diaria no se produzca hoy como se esperaba debido a esta nueva configuración. En primer lugar, puede determinar si la máquina es compatible con S3 o con CS (espera conectada).
 Para ello, abra un símbolo del sistema de Power Shell con privilegios elevados y ejecute el siguiente comando.

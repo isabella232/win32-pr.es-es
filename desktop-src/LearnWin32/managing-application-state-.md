@@ -1,28 +1,28 @@
 ---
 title: Administración del estado de la aplicación
-description: Un procedimiento de ventana es simplemente una función que se invoca para cada mensaje, por lo que es intrínsecamente sin estado. Por lo tanto, necesita una manera de realizar un seguimiento del estado de la aplicación desde una llamada de función a la siguiente.
+description: Un procedimiento de ventana es simplemente una función que se invoca para cada mensaje, por lo que es inherentemente sin estado. Por lo tanto, necesita una manera de realizar un seguimiento del estado de la aplicación de una llamada de función a la siguiente.
 ms.assetid: 2f03961e-a886-4947-8f5d-62543c6b8815
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b0cde27195ba0dfc16668da11beac243821902995a9d01daa337f8962944343
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e275833c30c612b5b40ab29d089d07ed7794b429
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119068074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159968"
 ---
 # <a name="managing-application-state"></a>Administración del estado de la aplicación
 
-Un procedimiento de ventana es simplemente una función que se invoca para cada mensaje, por lo que es intrínsecamente sin estado. Por lo tanto, necesita una manera de realizar un seguimiento del estado de la aplicación desde una llamada de función a la siguiente.
+Un procedimiento de ventana es simplemente una función que se invoca para cada mensaje, por lo que es inherentemente sin estado. Por lo tanto, necesita una manera de realizar un seguimiento del estado de la aplicación de una llamada de función a la siguiente.
 
-El enfoque más sencillo es simplemente colocar todo en variables globales. Esto funciona lo suficientemente bien para programas pequeños y muchos de los ejemplos del SDK usan este enfoque. En un programa grande, sin embargo, conduce a una proliferación de variables globales. Además, es posible que tenga varias ventanas, cada una con su propio procedimiento de ventana. Realizar un seguimiento de qué ventana debe tener acceso a las variables que se vuelven confusas y propensas a errores.
+El enfoque más sencillo es simplemente colocar todo en variables globales. Esto funciona lo suficientemente bien para programas pequeños y muchos de los ejemplos del SDK usan este enfoque. Sin embargo, en un programa grande, conduce a una proliferación de variables globales. Además, es posible que tenga varias ventanas, cada una con su propio procedimiento de ventana. Realizar un seguimiento de qué ventana debe tener acceso a las variables que se vuelven confusas y propensas a errores.
 
 La [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) proporciona una manera de pasar cualquier estructura de datos a una ventana. Cuando se llama a esta función, envía los dos mensajes siguientes al procedimiento de ventana:
 
 - [**WM \_ NCCREATE**](/windows/desktop/winmsg/wm-nccreate)
 - [**WM \_ CREATE**](/windows/desktop/winmsg/wm-create)
 
-Estos mensajes se envían en el orden indicado. (Estos no son los únicos dos mensajes enviados durante [**CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa)pero podemos omitir los demás para esta explicación).
+Estos mensajes se envían en el orden indicado. (Estos no son los dos únicos mensajes enviados durante [**CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa)pero podemos omitir los demás para esta discusión).
 
 Los [**mensajes WM \_ NCCREATE**](/windows/desktop/winmsg/wm-nccreate) [**y WM \_ CREATE**](/windows/desktop/winmsg/wm-create) se envían antes de que la ventana se vuelva visible. Esto los convierte en un buen lugar para inicializar la interfaz de usuario, por ejemplo, para determinar el diseño inicial de la ventana.
 
@@ -38,7 +38,7 @@ struct StateInfo {
 };
 ```
 
-Al llamar a [**CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa)pase un puntero a esta estructura en el parámetro **void \*** final.
+Al llamar a [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa), pase un puntero a esta estructura en el parámetro **\* void** final.
 
 ```C++
 StateInfo *pState = new (std::nothrow) StateInfo;
@@ -88,7 +88,7 @@ A continuación, llame [**a la función SetWindowLongPtr**](/windows/desktop/api
 SetWindowLongPtr(hwnd, GWLP_USERDATA, (LONG_PTR)pState);
 ```
 
-El propósito de esta última llamada de función es almacenar el puntero *StateInfo* en los datos de instancia de la ventana. Una vez hecho esto, siempre puede obtener el puntero desde la ventana llamando a [**GetWindowLongPtr**](/windows/desktop/api/winuser/nf-winuser-getwindowlongptra):
+El propósito de esta última llamada de función es almacenar el puntero *StateInfo* en los datos de instancia de la ventana. Una vez hecho esto, siempre puede recuperar el puntero de la ventana llamando a [**GetWindowLongPtr**](/windows/desktop/api/winuser/nf-winuser-getwindowlongptra):
 
 ```C++
 LONG_PTR ptr = GetWindowLongPtr(hwnd, GWLP_USERDATA);
@@ -134,9 +134,9 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 }
 ```
 
-## <a name="an-object-oriented-approach"></a>Un enfoque Object-Oriented de datos
+## <a name="an-object-oriented-approach"></a>Un Object-Oriented de trabajo
 
-Podemos ampliar este enfoque aún más. Ya hemos definido una estructura de datos para contener información de estado sobre la ventana. Tiene sentido proporcionar a esta estructura de datos funciones miembro (métodos) que funcionan en los datos. Esto conduce de forma natural a un diseño en el que la estructura (o clase) es responsable de todas las operaciones en la ventana. A continuación, el procedimiento de ventana formaría parte de la clase .
+Podemos ampliar este enfoque aún más. Ya hemos definido una estructura de datos para contener información de estado sobre la ventana. Tiene sentido proporcionar esta estructura de datos con funciones miembro (métodos) que operan en los datos. Esto conduce de forma natural a un diseño donde la estructura (o clase) es responsable de todas las operaciones en la ventana. A continuación, el procedimiento de ventana formaría parte de la clase .
 
 En otras palabras, nos gustaría pasar de esto:
 
@@ -296,7 +296,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int nCmdShow
 }
 ```
 
-El método virtual `BaseWindow::HandleMessage` puro se usa para implementar el procedimiento de ventana. Por ejemplo, la siguiente implementación es equivalente al procedimiento de ventana que se muestra al principio del [módulo 1](your-first-windows-program.md).
+El método virtual `BaseWindow::HandleMessage` puro se usa para implementar el procedimiento de ventana. Por ejemplo, la siguiente implementación es equivalente al procedimiento de ventana que se muestra al principio del [módulo 1.](your-first-windows-program.md)
 
 ```C++
 LRESULT MainWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
@@ -323,9 +323,9 @@ LRESULT MainWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 }
 ```
 
-Observe que el identificador de ventana se almacena en una variable miembro (*m \_ hwnd*), por lo que no es necesario pasarlo como parámetro a `HandleMessage` .
+Observe que el identificador de ventana se almacena en una variable miembro (*m \_ hwnd*), por lo que no es necesario pasarlo como un parámetro a `HandleMessage` .
 
-Muchos de los marcos de programación de Windows existentes, como Microsoft Foundation Classes (MFC) y Active Template Library (ATL), usan enfoques que son básicamente similares al que se muestra aquí. Por supuesto, un marco totalmente generalizado como MFC es más complejo que este ejemplo relativamente simplista.
+Muchos de los marcos de programación Windows existentes, como Microsoft Foundation Classes (MFC) y Active Template Library (ATL), usan enfoques que son básicamente similares al que se muestra aquí. Por supuesto, un marco totalmente generalizado como MFC es más complejo que este ejemplo relativamente simplista.
 
 ## <a name="next"></a>Siguientes
 
@@ -333,4 +333,4 @@ Muchos de los marcos de programación de Windows existentes, como Microsoft Foun
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Ejemplo baseWindow](basewindow-sample.md)
+[Ejemplo de BaseWindow](basewindow-sample.md)

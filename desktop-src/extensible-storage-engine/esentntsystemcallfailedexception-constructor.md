@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6930e689a3a1809ccc4d464ad734fd7caf0ffdd4889a04660bc7ff2e5cbe400b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb9507f6a15c24f83846ed2b9a8e3f59e17c5b06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119040349"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966083"
 ---
 # <a name="esentntsystemcallfailedexception-constructor"></a>Constructor EsentNTSystemCallFailedException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentNTSystemCallFailedException()
 public EsentNTSystemCallFailedException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 33d1399141aca8c68ea781c59569f44f60b1f0c94c7e168cd2d74f59ff1c951e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c07c059a5c2b640964edf8c1410a739458345d9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887369"
 ---
 # <a name="jet_lgposlgeneration-property"></a>JET_LGPOS.lGeneration, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece la generación de esta posición de registro.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

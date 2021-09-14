@@ -1,7 +1,16 @@
 ---
-title: WinMain The Application Entry Point description: WinMain: The Application Entry Point ms.assetid: 389da5d4-d0f9-4339-be6c-0f4fecc59316 ms.topic: article ms.date: 05/31/2018
+title: WinMain El punto de entrada de la aplicación
+description: Cada Windows programa incluye una función de punto de entrada denominada WinMain o wWinMain.
+ms.assetid: 389da5d4-d0f9-4339-be6c-0f4fecc59316
+ms.topic: article
+ms.date: 09/10/2021
+ms.openlocfilehash: 590dee4b9871853812f48f22b5cce568257cca16
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159916"
 ---
-
 # <a name="winmain-the-application-entry-point"></a>WinMain: el punto de entrada de la aplicación
 
 Cada Windows programa incluye una función de punto de entrada denominada **WinMain** o **wWinMain**. Esta es la firma de **wWinMain**.
@@ -16,7 +25,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
 Los cuatro parámetros son:
 
 -   *hInstance* es algo denominado "identificador de una instancia" o "identificador de un módulo". El sistema operativo usa este valor para identificar el ejecutable (EXE) cuando se carga en memoria. El identificador de instancia es necesario para ciertas funciones Windows, por ejemplo, para cargar iconos o mapas de bits.
--   *hPrevInstance* no tiene ningún significado. Se usó en archivos de 16 Windows, pero ahora es siempre cero.
+-   *hPrevInstance* no tiene ningún significado. Se usó en un Windows de 16 Windows, pero ahora es siempre cero.
 -   *pCmdLine contiene* los argumentos de línea de comandos como una cadena Unicode.
 -   *nCmdShow* es una marca que indica si la ventana principal de la aplicación se minimizará, maximizará o se mostrará con normalidad.
 
@@ -31,7 +40,7 @@ La **función WinMain** es idéntica a **wWinMain,** salvo que los argumentos de
 > [!Note]  
 > CRT realiza algún trabajo adicional dentro de **main**. Por ejemplo, se llama a cualquier inicializador estático antes **que wWinMain**. Aunque puede decir al vinculador que use una función de punto de entrada diferente, use el valor predeterminado si vincula a CRT. De lo contrario, se omitirá el código de inicialización de CRT, con resultados imprevisibles. (Por ejemplo, los objetos globales no se inicializarán correctamente).
 
- 
+ 
 
 Esta es una función **vacía de WinMain.**
 
@@ -52,6 +61,6 @@ Ahora que tiene el punto de entrada y comprende algunas de las convenciones bás
 
 [Módulo 1. Su primer Windows programa](your-first-windows-program.md).
 
- 
+ 
 
- 
+ 

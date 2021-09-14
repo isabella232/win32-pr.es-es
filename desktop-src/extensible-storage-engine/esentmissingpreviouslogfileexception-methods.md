@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102248
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 364ea74f75df940f871ab158ac8b769c0830d30f8ba8d0dfbb6c182d24408e5a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50b52f0ebef20d8975a1befc444cd3be5d6a1266
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118775936"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964528"
 ---
 # <a name="esentmissingpreviouslogfileexception-methods"></a>Métodos de EsentMissingPreviousLogFileException 
 

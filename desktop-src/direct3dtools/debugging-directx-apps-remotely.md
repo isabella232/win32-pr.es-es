@@ -4,18 +4,18 @@ description: Puede usar Visual Studio y el SDK Windows 8 para depurar aplicacion
 ms.assetid: CA471465-47C2-4706-B391-C9E6C2CD69D9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30f9fd97519bb88a0a89206e5a8c3aa43cf990948cb9aa8c9dd40379c53ed1a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 55548cd282bf643e16f22177e46643c6e283a909
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118505680"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966407"
 ---
 # <a name="debugging-directx-apps-remotely"></a>Depuración remota de aplicaciones DirectX
 
 Puede usar Visual Studio y el SDK Windows 8 para depurar aplicaciones directX de forma remota. El SDK Windows 8 proporciona un conjunto de componentes que admiten el desarrollo de DirectX y proporcionan comprobación de errores y validación de parámetros, además de la depuración que Visual Studio proporciona. Estos componentes son D3D11 \_1SDKLayers.dll, D2D1Debug1.dll y Dxgidebug.dll.
 
-Si desea depurar de forma remota en un equipo sin el SDK de Windows 8 instalado y desea esta funcionalidad de depuración adicional, debe instalar el paquete de depuración remota adecuado para la arquitectura en la que desea depurar. Los Windows instalador de instalación de `C:\Program Files (x86)\Windows Kits\8.0\Remote\<arch>` instalan la compatibilidad adecuada.
+Si desea depurar de forma remota en un equipo sin el SDK de Windows 8 instalado y desea esta funcionalidad de depuración adicional, debe instalar el paquete de depuración remota adecuado para la arquitectura en la que desea depurar. Los Windows instalador de instalación de `C:\Program Files (x86)\Windows Kits\8.0\Remote\<arch>` instalan el soporte técnico adecuado.
 
 Para habilitar las funcionalidades de depuración adicionales para las aplicaciones de Direct2D, use este código:
 
@@ -38,7 +38,7 @@ Para habilitar las funcionalidades de depuración adicionales para las aplicacio
         );         
 ```
 
-Para habilitar las funcionalidades de depuración adicionales para las aplicaciones de Direct3D, use este código:
+Para habilitar las funcionalidades de depuración adicionales para aplicaciones de Direct3D, use este código:
 
 ```cpp
     // This flag supports surfaces with a different color channel ordering than the API default.

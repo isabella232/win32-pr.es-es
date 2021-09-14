@@ -4,8 +4,8 @@ description: Obtiene un grupo de efectos por índice.
 ms.assetid: b38ecdbf-0920-48ff-a599-9629a3581d75
 keywords:
 - Método GetGroupByIndex Direct3D 11
-- Método GetGroupByIndex Direct3D 11 , interfaz ID3DX11Effect
-- ID3DX11Effect interface Direct3D 11 , GetGroupByIndex method
+- Método GetGroupByIndex Direct3D 11, interfaz ID3DX11Effect
+- Interfaz ID3DX11Effect Direct3D 11, método GetGroupByIndex
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 184971eea69f80f105aa29bb3dac9decbeb18d3452ca29656a150d4f1e5d9e08
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1dd0f629a60255ed28aa5cc426b99198867e0b23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119632475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965032"
 ---
 # <a name="id3dx11effectgetgroupbyindex-method"></a>Método ID3DX11Effect::GetGroupByIndex
 
@@ -58,10 +58,10 @@ Tipo: **[ **ID3DX11EffectGroup**](id3dx11effectgroup.md)\***
 
 Puntero a una [**interfaz ID3DX11EffectGroup.**](id3dx11effectgroup.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -72,11 +72,11 @@ Puntero a una [**interfaz ID3DX11EffectGroup.**](id3dx11effectgroup.md)
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

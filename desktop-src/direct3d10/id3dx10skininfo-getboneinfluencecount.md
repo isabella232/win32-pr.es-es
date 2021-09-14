@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: baea07c840210a785e7bf54ad14bb4f6102e8ad2212c5845e52c3c6257439e51
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ad6ddc6ebc80c51e07b7ff0c887371fd45fd42b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119634285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965071"
 ---
 # <a name="id3dx10skininfogetboneinfluencecount-method"></a>Método ID3DX10SkinInfo::GetIonalInfluenceCount
 
@@ -40,12 +40,12 @@ UINT GetBoneInfluenceCount(
 
 <dl> <dt>
 
-*Index deindex* \[ En\]
+*IndexIndex* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice que especifica un pórmico existente. Debe estar entre 0 y el valor devuelto por [**ID3DX10SkinInfo::GetNumPxs**](id3dx10skininfo-getnumbones.md).
+Índice que especifica un fragmento existente. Debe estar entre 0 y el valor devuelto por [**ID3DX10SkinInfo::GetNumPxs**](id3dx10skininfo-getnumbones.md).
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

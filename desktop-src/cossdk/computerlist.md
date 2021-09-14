@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: c798e65ef797965db4f8681898d31379717a329f6f097ea0282b5d4b6c1be300
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 379e5e07a86d06961de3f8f3936a260451bf43ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117917016"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160511"
 ---
 # <a name="computerlist-collection"></a>Colección ComputerList
 
@@ -25,7 +25,7 @@ Contiene una lista de los equipos de la **carpeta Equipos** de la herramienta de
 
 Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección ComputerList** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -43,7 +43,7 @@ Puede navegar a esta colección desde las siguientes colecciones:
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades dentro de la colección:
 
 -   [Nombre](#name)
 
@@ -63,7 +63,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

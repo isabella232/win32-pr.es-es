@@ -4,12 +4,12 @@ ms.assetid: bb228f39-0e04-497a-8404-18f7bc027bea
 title: Aplicación de la activación en el contexto de llamadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e42cb657ad7d11f61de0737ca7ac935d1d570649c3e0da9db9b63c79edea38cd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c70af40f92056e679a9211964b8a614cbeaeb4a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119567425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160501"
 ---
 # <a name="enforcing-activation-in-the-callers-context"></a>Aplicación de la activación en el contexto del autor de la llamada
 
@@ -20,7 +20,7 @@ Puede controlar si un objeto se activa en su propio contexto. Cuando se usa la h
 
 Si el objeto requiere o no su propio contexto depende de su configuración en relación con el estado actual de las propiedades de contexto del autor de la llamada. Para obtener más información, [vea CONTEXTOS DE COM+.](com--contexts.md)
 
-Le gustaría controlar la activación en ese nivel si algún aspecto del objeto no funcionaría correctamente si tiene su propio contexto. Por ejemplo, si el componente no admite la serialización y tiene su propio contexto, se producirá un error en las llamadas a él porque se interceptan las llamadas entre contextos y se realiza una serialización ligera.
+Le gustaría controlar la activación en ese nivel si algún aspecto del objeto no funcionara correctamente si tiene su propio contexto. Por ejemplo, si el componente no admite la serialización y tiene su propio contexto, se producirá un error en las llamadas a él porque se interceptan las llamadas entre contextos y se realiza una serialización ligera.
 
 **Para aplicar la activación en el contexto del autor de la llamada**
 
@@ -30,7 +30,7 @@ Le gustaría controlar la activación en ese nivel si algún aspecto del objeto 
 
 3.  Active la **casilla Must be activated in the callers context** (Debe activarse en el contexto de los llamadores).
 
-4.  Haga clic en **Aceptar**.
+4.  Haga clic en **OK**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

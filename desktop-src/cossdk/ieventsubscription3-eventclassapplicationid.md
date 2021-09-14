@@ -1,7 +1,7 @@
 ---
-description: GUID de aplicación del objeto de clase de evento.
+description: GUID de aplicación del objeto de clase de eventos.
 ms.assetid: 0d19183a-429c-4564-b6a5-f06481d27e00
-title: Propiedad IEventSubscription3::EventClassApplicationID
+title: IEventSubscription3::EventClassApplicationID, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,20 +14,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 228650f97f8662e60f7866fd36c184583316e494286b55c1f70e03a148e5e979
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e80a8d8f557c80a1b2605328728260eb8ae7bd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118813836"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965168"
 ---
-# <a name="ieventsubscription3eventclassapplicationid-property"></a>Propiedad IEventSubscription3::EventClassApplicationID
+# <a name="ieventsubscription3eventclassapplicationid-property"></a>IEventSubscription3::EventClassApplicationID, propiedad
 
-GUID de aplicación del objeto de clase de evento.
+GUID de aplicación del objeto de clase de eventos.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -61,7 +61,7 @@ Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, E \
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

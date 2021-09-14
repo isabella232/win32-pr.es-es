@@ -4,12 +4,12 @@ ms.assetid: 72e16c7d-977e-4269-9576-afc789e31826
 title: Propiedad AVEncVideoOutputFrameRate (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f1e1105ad98564b8d837f35e574be25bcd6cb9506a2adddbc115129fcb65564
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad4cb675c266d146936a3402934e51486ded5b02
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119540675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161734"
 ---
 # <a name="avencvideooutputframerate-property"></a>Propiedad AVEncVideoOutputFrameRate
 
@@ -46,7 +46,7 @@ El valor de esta propiedad es una relación que define la velocidad de fotograma
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las aplicaciones pueden establecer esta propiedad para especificar la velocidad de fotogramas de salida. Los codificadores también pueden devolver esta propiedad como una funcionalidad. Dependiendo del codificador, el valor puede estar restringido a la velocidad de fotogramas de entrada. Si no es así, el codificador puede convertir internamente la velocidad de fotogramas. Vea [**AVEncVideoOutputFrameRateConversion Property**](avencvideooutputframerateconversion-property.md).
 
@@ -56,15 +56,15 @@ Esta propiedad también se usa con codificadores de cámara [H.264 UVC 1.5.](/wi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
-| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP de 2000 \[ \| Server\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

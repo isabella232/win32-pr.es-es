@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_DBINFOMISC métodos'
+description: 'Más información acerca de: JET_DBINFOMISC métodos'
 title: 'Métodos de JET_DBINFOMISC '
 TOCTitle: JET_DBINFOMISC methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC
@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39511369
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 025db5708281c461d9fcc0e9efad492aaaa5ef98220696f25ad36d7ab86f6d5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6480f72c094d161bac8e6157e10a2aae36a5dc6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119834005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964324"
 ---
 # <a name="jet_dbinfomisc-methods"></a>Métodos de JET_DBINFOMISC 
 
@@ -35,7 +35,7 @@ El [JET_DBINFOMISC](./jet-dbinfomisc-class.md) expone los miembros siguientes.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh557934(v=exchg.10).md">Equals(Object)</a></td>
-<td>Determina si el objeto <a href="/dotnet/api/system.object">especificado</a> es igual al objeto <a href="/dotnet/api/system.object">actual.</a> (Invalida <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>).</td>
+<td>Determina si el objeto <a href="/dotnet/api/system.object">especificado</a> es igual que el objeto <a href="/dotnet/api/system.object">actual.</a> (Invalida <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -73,7 +73,7 @@ El [JET_DBINFOMISC](./jet-dbinfomisc-class.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

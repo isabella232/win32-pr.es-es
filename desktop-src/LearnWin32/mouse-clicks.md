@@ -4,12 +4,12 @@ description: Respuesta a los clics del mouse
 ms.assetid: FED1CA3B-94C6-4780-B82D-C10171F36D98
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 947b50726e79fbf29c4f013d4ac0a449c009c1817b74b1a8063e63a68c4dd6c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32c37903264ca638aeca1c0b28fb2ea7fa792660
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159957"
 ---
 # <a name="responding-to-mouse-clicks"></a>Respuesta a los clics del mouse
 
@@ -48,7 +48,7 @@ int yPos = GET_Y_LPARAM(lParam);
 
 Estas macros se definen en el archivo de encabezado WindowsX.h.
 
-En los valores de 64 Windows, *lParam* es un valor de 64 bits. No se usan los 32 bits superiores de *lParam.* La documentación de MSDN menciona la "palabra de orden bajo" y la "palabra de orden superior" *de lParam*. En el caso de 64 bits, esto significa las palabras de orden bajo y alto de los 32 bits inferiores. Las macros extraen los valores correctos, por lo que si los usa, estará seguro.
+En el caso de Windows 64 bits, *lParam* es un valor de 64 bits. No se usan los 32 bits superiores de *lParam.* La documentación de MSDN menciona la "palabra de orden bajo" y la "palabra de orden superior" *de lParam*. En el caso de 64 bits, esto significa las palabras de orden bajo y alto de los 32 bits inferiores. Las macros extraen los valores correctos, por lo que si los usa, estará seguro.
 
 Las coordenadas del mouse se dan en píxeles, no en píxeles independientes del dispositivo (DIP), y se miden con respecto al área cliente de la ventana. Las coordenadas son valores con firma. Las posiciones encima y a la izquierda del área de cliente tienen coordenadas negativas, lo que es importante si realiza un seguimiento de la posición del mouse fuera de la ventana. Veremos cómo hacerlo en un tema posterior, [Capturar movimiento del mouse fuera de la ventana](mouse-movement.md).
 
@@ -83,7 +83,7 @@ if (wParam & MK_CONTROL) { ...
 
 Si necesita encontrar el estado de otras teclas además de CTRL y MAYÚS, use la función [**GetKeyState,**](/windows/desktop/api/winuser/nf-winuser-getkeystate) que se describe en [Entrada de teclado](keyboard-input.md).
 
-Los [**mensajes de ventana \_ XBUTTONDOWN**](/windows/desktop/inputdev/wm-xbuttondown) y [**WM \_ XBUTTONUP**](/windows/desktop/inputdev/wm-xbuttonup) se aplican a XBUTTON1 y XBUTTON2. El *parámetro wParam* indica qué botón se hizo clic.
+Los [**mensajes de ventana \_ XBUTTONDOWN y**](/windows/desktop/inputdev/wm-xbuttondown) WM [**\_ XBUTTONUP**](/windows/desktop/inputdev/wm-xbuttonup) se aplican a XBUTTON1 y XBUTTON2. El *parámetro wParam* indica qué botón se hizo clic.
 
 
 ```C++
@@ -102,7 +102,7 @@ else if (button == XBUTTON2)
 
 ## <a name="double-clicks"></a>Clics dobles
 
-Una ventana no recibe notificaciones de doble clic de forma predeterminada. Para recibir doble clic, establezca la marca **\_ DBLCLKS** de CS en la [**estructura WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) al registrar la clase de ventana.
+Una ventana no recibe notificaciones de doble clic de forma predeterminada. Para recibir doble clic, establezca la marca **\_ DBLCLKS** de CS en la estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) al registrar la clase de ventana.
 
 
 ```C++
@@ -127,7 +127,7 @@ Si establece la marca **\_ DBLCLKS** de CS como se muestra, la ventana recibirá
 [**WM \_ LBUTTONUP**](/windows/desktop/inputdev/wm-lbuttonup)  
 </dl>
 
-De hecho, el segundo mensaje [**\_ LBUTTONDOWN de WM**](/windows/desktop/inputdev/wm-lbuttondown) que normalmente se generaría se convierte en un mensaje [**\_ LBUTTONDBLCLK de WM.**](/windows/desktop/inputdev/wm-lbuttondblclk) Los mensajes equivalentes se definen para los botones right, middle y XBUTTON.
+En efecto, el segundo mensaje [**\_ LBUTTONDOWN de WM**](/windows/desktop/inputdev/wm-lbuttondown) que normalmente se generaría se convierte en un mensaje [**\_ LBUTTONDBLCLK de WM.**](/windows/desktop/inputdev/wm-lbuttondblclk) Los mensajes equivalentes se definen para los botones right, middle y XBUTTON.
 
 Hasta que reciba el mensaje de doble clic, no hay ninguna manera de saber que el primer clic del mouse es el inicio de un doble clic. Por lo tanto, una acción de doble clic debe continuar con una acción que comience con el primer clic del mouse. Por ejemplo, en Windows Shell, un solo clic selecciona una carpeta, mientras que un doble clic abre la carpeta.
 

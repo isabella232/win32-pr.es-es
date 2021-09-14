@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a3f5f4ba6f10d5119e479a56e9e207e410b2d1e817d6809e7ceac1c98c8d2ee5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1206cc8514f3e7eb235f1072bf2a66c4b5bf1e7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119893745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964875"
 ---
 # <a name="id3dxanimationcontrollerresettime-method"></a>Método ID3DXAnimationController::ResetTime
 
@@ -44,7 +44,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método se usa normalmente cuando el valor de tiempo de animación global se acerca a la precisión máxima del almacenamiento DOUBLE, o 2⁶⁴ - 1.
 
@@ -59,7 +59,7 @@ Este método se usa normalmente cuando el valor de tiempo de animación global s
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

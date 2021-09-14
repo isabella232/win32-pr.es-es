@@ -4,12 +4,12 @@ ms.assetid: aa285d9c-09b2-a408-ca6d-7aa79670e1e6
 title: Funciones de la biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b19fde27c7b9df5b488b6f5803d080394f32fe9210cca25ee8d591f325a9ec6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6057c9c6ab9ee32fc0ed756c08cb9a953de2271a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119841105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963443"
 ---
 # <a name="directxmath-library-functions"></a>Funciones de la biblioteca DirectXMath
 
@@ -111,7 +111,7 @@ Enumera las funciones de utilidad proporcionadas por DirectXMath.
 [Funciones del accessor de vectores de la biblioteca DirectXMath](ovw-xnamath-reference-functions-accessors.md)
 </dt> <dd>
 
-Enumera las funciones de accessor de vector proporcionadas por la biblioteca DirectXMath.
+Enumera las funciones del accessor vectorial proporcionadas por la biblioteca DirectXMath.
 
 </dd> <dt>
 

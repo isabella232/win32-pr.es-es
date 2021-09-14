@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - All
-ms.openlocfilehash: 77053174878db77409c525510acb54740ac8ad5c5c0505af5bf6ff8421cdf737
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7aece0a50678689141de9b9a38a014414578de3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119050863"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965283"
 ---
 # <a name="getsecuritydescriptor-method-of-the-__systemsecurity-class"></a>Método GetSecurityDescriptor de la \_ \_ clase SystemSecurity
 
@@ -49,7 +49,7 @@ Descriptor de seguridad asociado al espacio de nombres WMI.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o un valor diferente para indicar un error. Para obtener más información, vea [Códigos de retorno de WMI](wmi-return-codes.md) o [**WbemErrorEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum).
+Devuelve uno de los valores enumerados en la lista siguiente o un valor diferente para indicar un error. Para obtener más información, vea [Códigos de retorno wmi](wmi-return-codes.md) o [**WbemErrorEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum).
 
 <dl> <dt>
 
@@ -88,17 +88,17 @@ Un parámetro especificado en la llamada al método no es válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La [**instancia de \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa un tipo de datos SECURITY DESCRIPTOR [**\_ \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) y contiene una lista de [*control*](/windows/desktop/SecGloss/d-gly) de acceso discrecional (DACL) y una lista de [*control*](/windows/desktop/SecGloss/s-gly) de acceso del sistema (SACL). Para obtener más información, [vea Access Control enumeración](/windows/desktop/SecAuthZ/access-control-lists).
+La [**instancia \_ de SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa un tipo de datos [**SECURITY DESCRIPTOR \_ \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) y contiene una lista de [*control*](/windows/desktop/SecGloss/d-gly) de acceso discrecional (DACL) y una lista de [*control*](/windows/desktop/SecGloss/s-gly) de acceso del sistema (SACL). Para obtener más información, [vea Access Control enumeraciones](/windows/desktop/SecAuthZ/access-control-lists).
 
-Si **se concede o se habilita SeSecurityPrivilege** al obtener un descriptor de seguridad, solo se devuelve la DACL en el descriptor de seguridad devuelto. Para obtener más información, vea [**Constantes de privilegios**](privilege-constants.md) y [Ejecución de operaciones con privilegios.](executing-privileged-operations.md)
+Si no se concede o se habilita **SeSecurityPrivilege** al obtener un descriptor de seguridad, solo se devuelve la DACL en el descriptor de seguridad devuelto. Para obtener más información, vea [**Constantes de privilegios**](privilege-constants.md) y [Ejecución de operaciones con privilegios.](executing-privileged-operations.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -106,14 +106,14 @@ Si **se concede o se habilita SeSecurityPrivilege** al obtener un descriptor de 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**\_\_SystemSecurity**](--systemsecurity.md)
 </dt> <dt>
 
-[Establecer descriptores de seguridad namepace](setting-namespace-security-descriptors.md)
+[Establecer descriptores de seguridad de namepace](setting-namespace-security-descriptors.md)
 </dt> </dl>
 
  

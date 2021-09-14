@@ -5,25 +5,25 @@ title: API de compresión
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7e088b37bbe2ba652379a2d90e6e1e21f87a2e68
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966960"
 ---
 # <a name="compression-api"></a>API de compresión
 
 ## <a name="purpose"></a>Propósito
 
-La API de compresión expone los algoritmos de compresión MSZIP, XPRESS, XPRESS HUFF y \_ LZMS de Windows. Esto permite a los desarrolladores de aplicaciones de Windows administrar versiones, servicios y ampliar los algoritmos de compresión expuestos.
+Compression API expone los algoritmos Windows compresión MSZIP, XPRESS, XPRESS \_ HUFF y LZMS. Esto permite a los desarrolladores Windows aplicaciones administrar versiones, servicios y ampliar los algoritmos de compresión expuestos.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-Compression API está diseñada para su uso por parte de desarrolladores profesionales de C/C++ de aplicaciones de Windows. La API de compresión expone los algoritmos de compresión sin pérdida usados por Windows a través de una interfaz pública y una API en modo de usuario. Compression API es el método recomendado para que los desarrolladores de Windows controle los algoritmos de compresión. Esta característica es de 64 bits en Windows de 64 bits y de 32 bits en Windows de 32 bits.
+Compression API está diseñada para su uso por parte de desarrolladores profesionales de C/C++ Windows aplicaciones. La API de compresión expone los algoritmos de compresión sin pérdida usados por Windows a través de una interfaz pública y una API en modo de usuario. Compression API es el método recomendado para que los Windows controle los algoritmos de compresión. Esta característica es de 64 bits en Windows de 64 bits y de 32 bits en Windows.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-Compression API está disponible a partir de Windows 8 o Windows Server 2012.
+Compression API está disponible a partir del Windows 8 o Windows Server 2012.
 
 ## <a name="in-this-section"></a>En esta sección
 

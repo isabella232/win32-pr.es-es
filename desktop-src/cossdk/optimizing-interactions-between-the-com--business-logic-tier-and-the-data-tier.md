@@ -4,12 +4,12 @@ ms.assetid: d2bce8b6-1f88-4e4a-bb08-fc7ee4c039da
 title: Optimización de llamadas entre la lógica de negocios y los datos de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66427f1f3761a27dc6828735ca04d98a1ca2accaaa549453c8219482cdfdabc2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3346f628344e7505fde03c3a64b7420d199312ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120070415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965148"
 ---
 # <a name="optimizing-interactions-between-the-com-business-logic-tier-and-the-data-tier"></a>Optimización de interacciones entre el nivel de lógica de negocios de COM+ y el nivel de datos
 

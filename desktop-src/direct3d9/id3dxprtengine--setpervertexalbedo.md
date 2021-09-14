@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d40c91ea00be7b1194099764c3c6d029a9cacb10d5265fb560053b093f396c9f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da7a33a79cc50963e87d0eff15baf22ee8d79ce3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120095835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966667"
 ---
 # <a name="id3dxprtenginesetpervertexalbedo-method"></a>Método ID3DXPRTEngine::SetPerVertexAlbedo
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

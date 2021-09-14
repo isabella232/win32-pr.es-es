@@ -4,12 +4,12 @@ description: Este tema está pensado para proporcionar instrucciones genéricas 
 ms.assetid: f5dbd198-7d22-4e7e-830e-6753e9f4d6c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 474a9f4ade01fe98a8db30568aa6a7c4978156d2c791747353071f020af27605
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d91ff748d8139aad17fca3710b17e73b5e1eaa14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119802365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161215"
 ---
 # <a name="designing-ndf-helper-class-extensions"></a>Diseño de extensiones de clase auxiliar de NDF
 

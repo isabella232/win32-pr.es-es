@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 03858f0327fb8196665fa3e9ac06a67d1bba29f77afddfbd9ba2592903e1cdd9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c5d941469dad85a8af0af1f56bf4b942030aede
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119121693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888484"
 ---
 # <a name="id3dxbuffergetbufferpointer-method"></a>Método ID3DXBuffer::GetBufferPointer
 
@@ -55,7 +55,7 @@ Devuelve un puntero a los datos del búfer.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

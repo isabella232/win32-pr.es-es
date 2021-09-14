@@ -4,16 +4,16 @@ ms.assetid: 8f28177f-335a-4fa2-bf66-2ec1698bebec
 title: Inicialización del modo de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09be7c4c00937473e2ecc3d6b01bb7c59a2842085a133f381b5a8a10bd9b215f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 473b06daf2e1c3612b02583d203ce4cd9afebabd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118915587"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160909"
 ---
 # <a name="user-mode-initialization"></a>Inicialización del modo de usuario
 
-Las aplicaciones distribuidas (cliente/servidor) usan [*paquetes de seguridad*](../secgloss/s-gly.md) para obtener conexiones autenticadas e intercambiar mensajes. La aplicación llama a funciones de interfaz de proveedor de compatibilidad de seguridad (SSPI) que se asignan a funciones implementadas por [SSP/AP](authentication-functions.md)y funciones implementadas por [SSP/AP en](authentication-functions.md)modo de usuario. Esta asignación se realiza mediante el archivo DLL del proveedor de seguridad (Secur32.dll o Security.dll), que se puede cargar dinámicamente en los procesos de cliente y servidor. El archivo DLL también se puede vincular estáticamente mediante Secur32.lib. Tanto el archivo DLL como LIB se envían con el Kit de desarrollo de software (SDK) de Microsoft Windows.
+Las aplicaciones distribuidas (cliente/servidor) usan [*paquetes de seguridad*](../secgloss/s-gly.md) para obtener conexiones autenticadas e intercambiar mensajes. La aplicación llama a funciones de interfaz de proveedor de compatibilidad de seguridad (SSPI) que se asignan a funciones implementadas por [SSP/AP](authentication-functions.md)y funciones implementadas por [SSP/AP en](authentication-functions.md)modo de usuario. Esta asignación se realiza mediante el archivo DLL del proveedor de seguridad (Secur32.dll o Security.dll), que se puede cargar dinámicamente en los procesos de cliente y servidor. El archivo DLL también se puede vincular estáticamente mediante Secur32.lib. El archivo DLL y LIB se envían con microsoft Windows Software Development Kit (SDK).
 
 El sistema controla la carga del paquete de seguridad en el proceso del cliente o servidor, si el archivo DLL de SSP/AP que contiene el paquete de seguridad está registrado correctamente.
 

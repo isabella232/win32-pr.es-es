@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103012
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d4c6c1bb3784abc9609a4d77caf90b0a9f09d53a3ac90e57c751e0a823a6e185
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee84f3b80ca0e00c7e36a898dc384774fe6a3f42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119834905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887692"
 ---
 # <a name="esentsystempathinuseexception-methods"></a>Métodos de EsentSystemPathInUseException 
 
@@ -78,7 +78,7 @@ El [tipo EsentSystemPathInUseException](./esentsystempathinuseexception-class.md
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

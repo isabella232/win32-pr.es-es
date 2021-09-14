@@ -9,7 +9,7 @@ keywords:
 - Reproductor de Windows Media en línea, creación de complementos
 - tiendas en línea, creación de complementos
 - tiendas en línea de tipo 1, creación de complementos
-- Reproductor de Windows Media en línea, interfaz IWMPContentPartner
+- Reproductor de Windows Media online stores,IWMPContentPartner (interfaz)
 - online stores,IWMPContentPartner (interfaz)
 - type 1 online stores,IWMPContentPartner (interfaz)
 - complementos, Reproductor de Windows Media en línea
@@ -26,12 +26,12 @@ keywords:
 - building plug-ins,type 1 online stores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1fdc5b01a0a8ec526af22e6be90c562524536cdb30b37bd03eb40132af0be49
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36272e3497eebc7b5362d793a0ee265d2c3166fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889532"
 ---
 # <a name="building-the-plug-in-for-a-type-1-online-store"></a>Creación del complemento para una tienda en línea de tipo 1
 

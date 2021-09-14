@@ -1,23 +1,23 @@
 ---
-title: Asignación entre propiedades IADsUser y Active Directory atributos
-description: Si procede, una propiedad del objeto de usuario ADSI se asigna a un atributo Active Directory adecuado. Las propiedades del objeto de usuario ADSI están asociadas a los métodos de propiedad IADsUser.
+title: Asignación entre propiedades IADsUsuario y Active Directory atributos
+description: Cuando procede, una propiedad del objeto de usuario ADSI se asigna a un atributo Active Directory adecuado. Las propiedades del objeto de usuario ADSI están asociadas a los métodos de propiedad IADsUser.
 ms.assetid: 9b568084-5a6b-4a73-be88-9d9cd8007824
 ms.tgt_platform: multiple
 keywords:
-- Asignación entre propiedades IADsUser y ADSI Active Directory atributos de usuario
+- Asignación entre propiedades IADsUser y ADSI Active Directory Atributos de usuario
 - ADSI del proveedor LDAP, objeto de usuario, asignación entre IADs Propiedades de usuario y atributos Active Directory usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e659c6325457b2654ad5cfeef964975949150232c4ae3376fac640c51c41aa8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 17b817a8c56e2c74c846e1343e0ed7803427f4a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117839485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887172"
 ---
-# <a name="mapping-between-iadsuser-properties-and-active-directory-attributes"></a>Asignación entre propiedades IADsUser y Active Directory atributos
+# <a name="mapping-between-iadsuser-properties-and-active-directory-attributes"></a>Asignación entre propiedades IADsUsuario y Active Directory atributos
 
-Si procede, una propiedad del objeto de usuario ADSI se asigna a un atributo Active Directory adecuado. Las propiedades del objeto de usuario ADSI están asociadas a [**los métodos de propiedad IADsUser.**](/windows/desktop/api/Iads/nn-iads-iadsuser)
+Cuando procede, una propiedad del objeto de usuario ADSI se asigna a un atributo Active Directory adecuado. Las propiedades del objeto de usuario ADSI están asociadas a los métodos de propiedad [**IADsUser.**](/windows/desktop/api/Iads/nn-iads-iadsuser)
 
 En la tabla siguiente se muestra la asignación [**entre las propiedades IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser) del proveedor LDAP y el atributo Active Directory correspondiente.
 
@@ -25,32 +25,32 @@ En la tabla siguiente se muestra la asignación [**entre las propiedades IADsUse
 
 | Propiedad IADsUser                                           | Atributo de Active Directory                                                                                  |
 |-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [**AccountDisabled**](iadsuser-property-methods.md)        | **ADS \_ Marca \_ ACCOUNTDISABLE de UF** en el [**atributo userAccountControl.**](/windows/desktop/ADSchema/a-useraccountcontrol)  |
+| [**AccountDisabled**](iadsuser-property-methods.md)        | **ADS \_ Marca \_ ACCOUNTDISABLE de UF** en [**el atributo userAccountControl.**](/windows/desktop/ADSchema/a-useraccountcontrol)  |
 | [**AccountExpirationDate**](iadsuser-property-methods.md)  | [**accountExpires**](/windows/desktop/ADSchema/a-accountexpires)                                                             |
 | [**BadLoginAddress**](iadsuser-property-methods.md)        | No compatible.                                                                                              |
 | [**BadLoginCount**](iadsuser-property-methods.md)          | [**badPwdCount**](/windows/desktop/ADSchema/a-badpwdcount)                                                                   |
-| [**Departamento**](iadsuser-property-methods.md)             | [**Departamento**](/windows/desktop/ADSchema/a-department)                                                                     |
+| [**Departamento**](iadsuser-property-methods.md)             | [**department**](/windows/desktop/ADSchema/a-department)                                                                     |
 | [**Descripción**](iadsuser-property-methods.md)            | [**Descripción**](/windows/desktop/ADSchema/a-description)                                                                   |
 | [**División**](iadsuser-property-methods.md)               | [**División**](/windows/desktop/ADSchema/a-division)                                                                         |
 | [**EmailAddress**](iadsuser-property-methods.md)           | [**mail**](/windows/desktop/ADSchema/a-mail)                                                                                 |
 | [**Employeeid**](iadsuser-property-methods.md)             | [**Employeeid**](/windows/desktop/ADSchema/a-employeeid)                                                                     |
 | [**FaxNumber**](iadsuser-property-methods.md)              | [**facsimileTelephoneNumber**](/windows/desktop/ADSchema/a-facsimiletelephonenumber)                                         |
-| [**Nombre**](iadsuser-property-methods.md)              | [**givenName**](/windows/desktop/ADSchema/a-givenname)                                                                       |
+| [**FirstName**](iadsuser-property-methods.md)              | [**givenName**](/windows/desktop/ADSchema/a-givenname)                                                                       |
 | [**FullName**](iadsuser-property-methods.md)               | [**Displayname**](/windows/desktop/ADSchema/a-displayname)                                                                   |
 | [**GraceLoginsAllowed**](iadsuser-property-methods.md)     | No compatible.                                                                                              |
 | [**GraceLoginsRemaining**](iadsuser-property-methods.md)   | No compatible.                                                                                              |
 | [**HomeDirectory**](iadsuser-property-methods.md)          | [**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory)                                                               |
 | [**Página principal**](iadsuser-property-methods.md)               | [**wWWHomePage**](/windows/desktop/ADSchema/a-wwwhomepage)                                                                   |
 | [**IsAccountLocked**](iadsuser-property-methods.md)        | [**lockoutTime**](/windows/desktop/ADSchema/a-lockouttime)                                                                   |
-| [**Idiomas**](iadsuser-property-methods.md)              | No compatible.                                                                                              |
+| [**Lenguajes**](iadsuser-property-methods.md)              | No compatible.                                                                                              |
 | [**LastFailedLogin**](iadsuser-property-methods.md)        | [**badPasswordTime**](/windows/desktop/ADSchema/a-badpasswordtime)                                                           |
 | [**LastLogin**](iadsuser-property-methods.md)              | [**lastLogon**](/windows/desktop/ADSchema/a-lastlogon)                                                                       |
 | [**LastLogoff**](iadsuser-property-methods.md)             | [**lastLogoff**](/windows/desktop/ADSchema/a-lastlogoff)                                                                     |
-| [**Apellidos**](iadsuser-property-methods.md)               | [**Sn**](/windows/desktop/ADSchema/a-sn)                                                                                     |
+| [**LastName**](iadsuser-property-methods.md)               | [**Sn**](/windows/desktop/ADSchema/a-sn)                                                                                     |
 | [**LoginHours**](iadsuser-property-methods.md)             | [**logonHours**](/windows/desktop/ADSchema/a-logonhours)                                                                     |
 | [**LoginScript**](iadsuser-property-methods.md)            | [**scriptPath**](/windows/desktop/ADSchema/a-scriptpath)                                                                     |
 | [**LoginWorkstations**](iadsuser-property-methods.md)      | [**userWorkstations**](/windows/desktop/ADSchema/a-userworkstations)                                                         |
-| [**director**](iadsuser-property-methods.md)                | [**manager**](/windows/desktop/ADSchema/a-manager)                                                                           |
+| [**Director**](iadsuser-property-methods.md)                | [**director**](/windows/desktop/ADSchema/a-manager)                                                                           |
 | [**MaxLogins**](iadsuser-property-methods.md)              | No compatible.                                                                                              |
 | [**MaxStorage**](iadsuser-property-methods.md)             | [**maxStorage**](/windows/desktop/ADSchema/a-maxstorage)                                                                     |
 | [**NamePrefix**](iadsuser-property-methods.md)             | [**personalTitle**](/windows/desktop/ADSchema/a-personaltitle)                                                               |

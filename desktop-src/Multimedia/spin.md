@@ -1,9 +1,9 @@
 ---
 title: comando spin
-description: El comando de giro empieza a girar un disco o detiene el giro del disco. Los dispositivos Videodisc reconocen este comando.
+description: El comando spin empieza a girar un disco o impide que el disco gire. Los dispositivos videodiscos reconocen este comando.
 ms.assetid: 1fdf4d09-fafd-4245-ad92-397114d0f473
 keywords:
-- Comando spin Windows Multimedia
+- comando spin Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 4c25e25f5a44ad6e6c9562d05653ab25cb2950b8
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370261"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161377"
 ---
 # <a name="spin-command"></a>comando spin
 
-El comando de giro empieza a girar un disco o detiene el giro del disco. Los dispositivos Videodisc reconocen este comando.
+El comando spin empieza a girar un disco o impide que el disco gire. Los dispositivos videodiscos reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -73,11 +73,11 @@ Puede ser "wait", "notify" o ambos. Para obtener más información sobre estas m
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente comando comienza a girar un dispositivo videodisc.
+El siguiente comando comienza a girar un dispositivo de vídeodisco.
 
 ``` syntax
 spin videodisc up
@@ -94,7 +94,7 @@ spin videodisc up
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

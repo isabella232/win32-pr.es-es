@@ -1,6 +1,6 @@
 ---
-title: 'RWBuffer:: Operator (función)'
-description: 'Devuelve una variable de recurso. | RWBuffer:: Operator (función)'
+title: RWBuffer::Operator (Función)
+description: Devuelve una variable de recurso. | RWBuffer::Operator (Función)
 ms.assetid: 59e5e4ec-ff0d-43aa-805a-04b79f5ab57f
 keywords:
 - Función de operador HLSL
@@ -14,13 +14,13 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 40336c8ad6ee9e8008b82c172f1a5b863e967c0d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998021"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963580"
 ---
-# <a name="rwbufferoperator--function"></a>RWBuffer:: Operator (función)
+# <a name="rwbufferoperator--function"></a>RWBuffer::Operator (Función)
 
 Devuelve una variable de recurso.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Posición de índice.
+Posición del índice.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Variable de recurso.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -65,7 +65,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

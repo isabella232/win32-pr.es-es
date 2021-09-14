@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 780dca7323ecf14b7924f0dac142c0bffc0ca7a57a318c982947ce147533531e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 087f22d7836ff41ac97b65c15be1b51dfac84a8b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119115820"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966140"
 ---
 # <a name="esentioexception-constructor-string-jet_err"></a>EsentIOException constructor (String, JET_err)
 

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102800
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 6a47cb2abe3466ade04c4023c6974bf5a4d9da1c3f2447789db8d3c4b75d8279
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a8895cefb6fdbfeebac4ea9905de9c3b43d95c3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120116645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965844"
 ---
 # <a name="esentslvpagesnotdeletedexception-methods"></a>Métodos de EsentSLVPagesNotDeletedException 
 
@@ -78,7 +78,7 @@ El [tipo EsentSLVPagesNotDeletedException](./esentslvpagesnotdeletedexception-cl
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

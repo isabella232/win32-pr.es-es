@@ -16,20 +16,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4297bf3d845495e1783d3d8c65f64fc5df85a555b58d9afeb4a80c0fe96b517
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f2e552bb51653248e0a70ccfc0edea907749900e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120072615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886508"
 ---
 # <a name="showmessageactiontitle-property"></a>Propiedad ShowMessageAction.Title
 
-\[Este objeto ya no se admite. Puede usar IExecAction con la función [**msgbox**](/previous-versions/sfw6660x(v=vs.80)) Windows scripting para mostrar un mensaje en la sesión de usuario.\]
+\[Este objeto ya no se admite. Puede usar IExecAction con la función Windows scripting [**MsgBox**](/previous-versions/sfw6660x(v=vs.80)) para mostrar un mensaje en la sesión de usuario.\]
 
 Para el scripting, obtiene o establece el título del cuadro de mensaje.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -42,17 +42,17 @@ ShowMessageAction.Title As String
 
 Título del cuadro de mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las cadenas parametrizadas se pueden usar en el texto de título del cuadro de mensaje. Para obtener más información, vea la sección Ejemplos [**de EventTrigger.ValueQueries**](eventtrigger-valuequeries.md).
+Las cadenas parametrizadas se pueden usar en el texto del título del cuadro de mensaje. Para obtener más información, vea la sección Ejemplos de [**EventTrigger.ValueQueries**](eventtrigger-valuequeries.md).
 
-Al establecer este valor de propiedad, el valor puede ser texto que se recupera de un recurso .dll archivo. Se usa una cadena especializada para hacer referencia al texto del archivo de recursos. El formato de la cadena es $(@ Dll , ResourceID ), donde Dll es la ruta de acceso al archivo .dll que contiene el recurso y ResourceID es el identificador del texto \[ \] del \[ \] \[ \] \[ \] recurso. Por ejemplo, el establecimiento de este valor de propiedad en $(@ %SystemRoot% \\ System32ResourceName.dll, -101) establecerá la propiedad en el valor del texto del recurso con un identificador igual a -101 en el archivo deResourceName.dll \\ %SystemRoot%. \\ \\
+Al establecer este valor de propiedad, el valor puede ser texto que se recupera de un recurso .dll archivo. Se usa una cadena especializada para hacer referencia al texto del archivo de recursos. El formato de la cadena es $(@ Dll , ResourceID ), donde Dll es la ruta de acceso al archivo .dll que contiene el recurso y ResourceID es el identificador del texto \[ \] del \[ \] \[ \] \[ \] recurso. Por ejemplo, el establecimiento de este valor de propiedad en $(@ %SystemRoot% System32ResourceName.dll, -101) establecerá la propiedad en el valor del texto del recurso con un identificador igual a -101 en el archivo deResourceName.dll \\ \\ %SystemRoot% \\ \\ System32.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
@@ -63,7 +63,7 @@ Al establecer este valor de propiedad, el valor puede ser texto que se recupera 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

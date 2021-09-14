@@ -3,19 +3,19 @@ title: Elemento BUTTON (WMP)
 description: Elemento BUTTON
 ms.assetid: 2818ff6a-4fc5-4150-9ff9-ff143feb9204
 keywords:
-- Reproductor de Windows Media máscaras,elemento BUTTON
+- Reproductor de Windows Media máscaras, elemento BUTTON
 - máscaras, elemento BUTTON
 - Button, elemento
 - referencia de máscaras,elemento BUTTON
 - elements,BUTTON
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13ca4e57dafdc01fc194c4cf4bc534e067297a58fcc2527939e3672f2d705628
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3c069207e15be62e06b4d2b18f13c052026932dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119736735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889465"
 ---
 # <a name="button-element"></a>Elemento BUTTON
 
@@ -31,7 +31,7 @@ El **elemento BUTTON** admite los atributos siguientes.
 | [disabledImage](button-disabledimage.md)         | Especifica o recupera la imagen que se muestra cuando **button** está deshabilitado.                                                                  |
 | [down](button-down.md)                           | Especifica o recupera un valor que indica si **button** está en la posición de arriba o abajo.                                                  |
 | [downImage](button-downimage.md)                 | Especifica o recupera la imagen que representa el estado de apagado de **BUTTON.**                                                                  |
-| [downToolTip](button-downtooltip.md)             | Especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre **button** y **button** está en estado de depresión o deprimido. |
+| [downToolTip](button-downtooltip.md)             | Especifica o recupera el texto de información sobre herramientas  que aparece cuando el mouse está sobre button y **button** está en estado de depresión o deprimido. |
 | [hoverDownImage](button-hoverdownimage.md)       | Especifica o recupera la imagen que se muestra cuando **button** está en estado de bajada y el usuario mantiene el mouse sobre ella con el puntero del mouse.          |
 | [hoverImage](button-hoverimage.md)               | Especifica o recupera la imagen que se muestra cuando **button** está en estado up y el usuario mantiene el mouse sobre ella con el puntero del mouse.            |
 | [image](button-image.md)                         | Especifica o recupera la imagen predeterminada de **BUTTON.**                                                                                      |
@@ -44,7 +44,7 @@ El **elemento BUTTON** admite los atributos siguientes.
 
  
 
-El **elemento BUTTON** admite los atributos de ambiente y puede implementar los controladores de eventos de ambiente. Para obtener más información, vea [Atributos ambientales](ambient-attributes.md) y [controladores de eventos de ambiente.](ambient-event-handlers.md)
+El **elemento BUTTON** admite los atributos de ambiente y puede implementar los controladores de eventos de ambiente. Para obtener más información, vea [Atributos de ambiente](ambient-attributes.md) y Controladores de eventos de [ambiente.](ambient-event-handlers.md)
 
 Los botones predefinidos son **elementos BUTTON** normales con varias configuraciones de atributo comunes especificadas de forma predeterminada. Están disponibles los siguientes botones predefinidos.
 
@@ -54,12 +54,12 @@ Los botones predefinidos son **elementos BUTTON** normales con varias configurac
 |--------------------------------------|------------------------------------------------------------------------------------|
 | [CLOSEBUTTON](closebutton.md)       | Botón **que** se usa para cerrar el reproductor.                                             |
 | [FFWDBUTTON](ffwdbutton.md)         | Botón **con** una llamada integrada a **player.controls.fastForward** cuando se hace clic en él. |
-| [Imagebutton](imagebutton.md)       | Botón **que** se usa para mostrar una imagen.                                             |
+| [IMAGEBUTTON](imagebutton.md)       | Botón **que** se usa para mostrar una imagen.                                             |
 | [MINIMIZEBUTTON](minimizebutton.md) | Botón **que** se usa para minimizar el reproductor.                                          |
 | [MUTEBUTTON](mutebutton.md)         | Botón **que** se usa para silenciar y desactivar el audio.                                   |
 | [NEXTBUTTON](nextbutton.md)         | Botón **con** una llamada integrada a **player.controls.next cuando** se hace clic en él.        |
 | [PAUSEBUTTON](pausebutton.md)       | Botón **con** una llamada integrada a **player.controls.pause cuando** se hace clic en él.       |
-| [Playbutton](playbutton.md)         | Botón **con** una llamada integrada a **player.controls.play cuando** se hace clic en él.        |
+| [PLAYBUTTON](playbutton.md)         | Botón **con** una llamada integrada a **player.controls.play cuando** se hace clic en él.        |
 | [PREVBUTTON](prevbutton.md)         | Botón **con** una llamada integrada a **player.controls.previous cuando** se hace clic en él.    |
 | [REPEATBUTTON](repeatbutton.md)     | Botón **que** alterna la opción Repetir.                                       |
 | [RETURNBUTTON](returnbutton.md)     | Botón **que** devuelve Reproductor de Windows Media al centro multimedia.                |

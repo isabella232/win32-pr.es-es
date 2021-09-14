@@ -5,19 +5,19 @@ ms.tgt_platform: multiple
 title: CIM_VideoController métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bf230dd3a66dfa5a0b9a14d8976e233d3dbb94fe71b89e4544854c3e25a3c8f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c08d43d710e88b4dabbf4bec6358906f1657c637
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119505505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965483"
 ---
-# <a name="cim_videocontroller-methods"></a>\_Métodos videoController de CIM
+# <a name="cim_videocontroller-methods"></a>\_Métodos VideoController de CIM
 
 La [**clase \_ CIM VideoController**](cim-videocontroller.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

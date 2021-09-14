@@ -8,12 +8,12 @@ keywords:
 - ADSI, Búsqueda, IDirectorySearch, Otras opciones de búsqueda, Paginación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48494c01831e6b69931fc6b6f779ed9b042b7fecaaf17fa62286c094a926ba73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6e9fdf001f5908f6c3fc7321c8c94cda09f1b96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117838945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887097"
 ---
 # <a name="paging-with-idirectorysearch"></a>Paginación con IDirectorySearch
 
@@ -21,7 +21,7 @@ La paginación especifica cuántas filas devuelve el servidor al cliente. Una p�
 
 
 
-| Valor                                   | Descripción                                                                                                                                                                                                                                          |
+| Value                                   | Descripción                                                                                                                                                                                                                                          |
 |-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **ADS \_ SEARCHPREF \_ PAGESIZE**           | Especifica el número máximo de filas que se devolverán en una página.                                                                                                                                                                                            |
 | **LÍMITE \_ DE TIEMPO PAGINADO DE SEARCHPREF \_ \_ DE \_ ADS** | Especifica el tiempo máximo, en segundos, que el servidor debe dedicar a recopilar una página de resultados antes de devolver la página al cliente. Si se alcanza el límite, el servidor detiene la búsqueda y devuelve las filas ya recuperadas para la página. |

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3971c0664a7b3c3aac434969662b5cab2a211275ef586f466cc7912d33e2da65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 811636e7e7002afedf026d4e3955f08f647c2c5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118789165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966512"
 ---
 # <a name="samplecmpsamplecmpsfloatfloatintfloat-function-for-texture1d"></a>Función SampleCmp::SampleCmp(S,float,float,int,float) para Texture1D
 

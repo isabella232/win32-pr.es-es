@@ -1,5 +1,5 @@
 ---
-description: El método \_ put Filter especifica un filtro de origen para el detector de medios que se usará.
+description: El método put \_ Filter especifica un filtro de origen para el detector de medios que se usará.
 ms.assetid: 59382cb0-c472-48b8-9cc5-52f9dbc61a07
 title: Método IMediaDet::p ut_Filter (Qedit.h)
 ms.topic: reference
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a118baae251bd4456dfe0097afa091e0084e41ad96d96c9847006b8ce9c58d82
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd07ee3e2a18dcceae752e3923fd5fbdc88c0313
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118398122"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886844"
 ---
-# <a name="imediadetput_filter-method"></a>Método Filter IMediaDet::p ut \_
+# <a name="imediadetput_filter-method"></a>Método IMediaDet::p ut \_ Filter
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -31,7 +31,7 @@ ms.locfileid: "118398122"
 El `put_Filter` método especifica un filtro de origen para el detector de medios que se usará.
 
 > [!IMPORTANT]
-> No agregue el filtro de origen a su propio gráfico de filtros ni use un filtro que ya esté en un gráfico de filtros. El objeto de detector de medios crea automáticamente un gráfico de filtros interno y colocar el filtro en otro gráfico puede provocar resultados inesperados.
+> No agregue el filtro de origen a su propio gráfico de filtros ni use un filtro que ya esté en un gráfico de filtros. El objeto de detector de medios crea automáticamente un gráfico de filtro interno y colocar el filtro en otro gráfico puede provocar resultados inesperados.
 
  
 
@@ -53,7 +53,7 @@ HRESULT put_Filter(
 *newVal* \[ En\]
 </dt> <dd>
 
-Puntero a la interfaz **IUnknown** del filtro de origen.
+Puntero a la interfaz **IUnknown del filtro de** origen.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Devuelve un **valor HRESULT.** Entre los valores posibles figuran los siguientes
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para la mayoría de las aplicaciones, es más sencillo llamar al método [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) con el nombre de un archivo de origen.
 
@@ -83,7 +83,7 @@ Para la mayoría de las aplicaciones, es más sencillo llamar al método [**IMed
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -105,7 +105,7 @@ Para la mayoría de las aplicaciones, es más sencillo llamar al método [**IMed
 [**IMediaDet (interfaz)**](imediadet.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

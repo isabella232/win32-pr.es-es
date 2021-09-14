@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXTextureShader::GetConstantByName: obtiene una constante buscando su nombre.'
+description: 'Método ID3DXTextureShader::GetConstantByName: obtiene una constante mediante la búsqueda de su nombre.'
 ms.assetid: 0c57f6ce-ea81-4b34-9251-c385bfe6ebe7
 title: Método ID3DXTextureShader::GetConstantByName (D3DX9Shader.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 55b3de81179c01171d7ee5ff7b845295709dfb8ead1a9bc1a7cdf615bc37c44d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 825aca3f3227a340952092985f4730018fe316e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117729106"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964744"
 ---
 # <a name="id3dxtextureshadergetconstantbyname-method"></a>Método ID3DXTextureShader::GetConstantByName
 
-Obtiene una constante buscando su nombre.
+Obtiene una constante mediante la búsqueda de su nombre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,7 +76,7 @@ Devuelve un identificador único a la constante.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 title: Evento PlayStateChange del objeto AxWindowsMediaPlayer
-description: El evento PlayStateChange tiene lugar cuando cambia el estado de reproducción Reproductor de Windows Media control.
+description: El evento PlayStateChange tiene lugar cuando cambia el estado de reproducción Reproductor de Windows Media control de reproducción.
 ms.assetid: f8823c90-2084-4771-a2fe-7081d4e49e63
 keywords:
 - Evento PlayStateChange del objeto AxWindowsMediaPlayer Reproductor de Windows Media
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a02f533211ccb6f2f2617d402eed8343a444fad4a7c3ccf49e187ede71ce9513
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af97803224df89287847ee2b9ef83d8e976d91b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889617"
 ---
 # <a name="playstatechange-event-of-the-axwindowsmediaplayer-object"></a>Evento PlayStateChange del objeto AxWindowsMediaPlayer
 
-El evento PlayStateChange tiene lugar cuando cambia el estado de reproducción Reproductor de Windows Media control.
+El evento PlayStateChange tiene lugar cuando cambia el estado de reproducción Reproductor de Windows Media control de reproducción.
 
 ``` syntax
 [C#]
@@ -48,15 +48,15 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad     | Descripción                                     |
 |--------------|-------------------------------------------------|
-| **newState** | System.Int32 Especifica el nuevo estado.<br/> |
+| **newState** | System.Int32Especifica el nuevo estado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Reproductor de Windows Media no se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
+Reproductor de Windows Media se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -201,7 +201,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

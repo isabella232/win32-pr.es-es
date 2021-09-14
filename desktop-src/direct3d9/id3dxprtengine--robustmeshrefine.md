@@ -1,5 +1,5 @@
 ---
-description: Subdivide caras en una malla, lo que permite un muestreo adaptable conservador que no eliminará las características de la malla.
+description: Subdivide las caras en una malla, lo que permite un muestreo adaptable conservador que no eliminará las características de la malla.
 ms.assetid: 0d74a01a-de67-4607-99eb-ed98e239f199
 title: Método ID3DXPRTEngine::RobustMeshRefine (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 280e4552af6de13995ed81afab4d743232485e92446c72b61fd10ae17fea7b07
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 65d49fcec3072956365ce1ed8dc5d7a11ce6c826
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119790565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966696"
 ---
 # <a name="id3dxprtenginerobustmeshrefine-method"></a>Método ID3DXPRTEngine::RobustMeshRefine
 
-Subdivide caras en una malla, lo que permite un muestreo adaptable conservador que no eliminará las características de la malla.
+Subdivide las caras en una malla, lo que permite un muestreo adaptable conservador que no eliminará las características de la malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Nivel máximo de subdivisión de una cara que se usará en el muestreo adaptable
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

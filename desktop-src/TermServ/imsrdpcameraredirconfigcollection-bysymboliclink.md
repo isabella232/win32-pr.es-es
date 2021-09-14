@@ -1,9 +1,9 @@
 ---
 title: Propiedad BySymbolicLink de la interfaz IMsRdpCameraRedirConfigCollection
-description: Devuelve un objeto IMsRdpCameraRedirConfig de la colección que corresponde al vínculo simbólico dado de la **interfaz** KSCATEGORY_VIDEO_CAMERA para la cámara.
+description: Devuelve un objeto IMsRdpCameraRedirConfig de la colección que corresponde al vínculo simbólico dado de la **interfaz KSCATEGORY_VIDEO_CAMERA** para la cámara.
 ms.tgt_platform: multiple
 keywords:
-- BySymbolicLink, propiedad Servicios de Escritorio remoto
+- Propiedad BySymbolicLink Servicios de Escritorio remoto
 - Propiedad BySymbolicLink Servicios de Escritorio remoto , interfaz IMsRdpCameraRedirConfigCollection
 - Interfaz IMsRdpCameraRedirConfigCollection Servicios de Escritorio remoto , propiedad BySymbolicLink
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: a46cd3daf8cc4270473433bb0c4c20dee0616dba3619b056d33136e0d4dd8f5e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d4888c7e468e0522240d8ef922563ab28eb33e77
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965348"
 ---
 # <a name="imsrdpcameraredirconfigcollectionbysymboliclink-property"></a>IMsRdpCameraRedirConfigCollection::. BySymbolicLink, propiedad
 
-Devuelve un [objeto IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) de la colección que corresponde al vínculo simbólico dado de la **interfaz** KSCATEGORY_VIDEO_CAMERA para la cámara.
+Devuelve un [objeto IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) de la colección que corresponde al vínculo simbólico dado de la **interfaz KSCATEGORY_VIDEO_CAMERA** para la cámara.
 
 Esta propiedad es de solo lectura.
 
@@ -52,7 +52,7 @@ Objeto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) que corresponde al 
 | Archivo DLL                  | MsTscAx.dll     |
 | IID                      | IID \_ IMsRdpCameraRedirConfigCollection se define como AE45252B-AAAB-4504-B681-649D6073A37A          |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

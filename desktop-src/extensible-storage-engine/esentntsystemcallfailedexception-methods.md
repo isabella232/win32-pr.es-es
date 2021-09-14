@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102385
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3bb748dbfbc92af95c360c7d43ec493b00fefb3cd74302245b51086c18eb8b68
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b09a4822f444f8765529dcad71c2f1a9b3030efe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119040353"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966075"
 ---
 # <a name="esentntsystemcallfailedexception-methods"></a>Métodos de EsentNTSystemCallFailedException 
 
@@ -78,7 +78,7 @@ El [tipo EsentNTSystemCallFailedException](./esentntsystemcallfailedexception-cl
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

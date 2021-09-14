@@ -1,9 +1,9 @@
 ---
-title: AutoBackup (ChannelLoggingType) (elemento)
-description: Determina si se debe crear un nuevo archivo de registro cuando el archivo de registro actual alcanza su tamaño máximo.
+title: elemento autoBackup (ChannelLoggingType)
+description: Determina si se debe crear un nuevo archivo de registro cuando el archivo de registro actual alcance su tamaño máximo.
 ms.assetid: 708c5d44-d20b-437a-a01f-6182b244c736
 keywords:
-- elemento AutoBackup EventLog
+- Elemento autoBackup EventLog
 topic_type:
 - apiref
 api_name:
@@ -14,15 +14,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 4d69c1a1c43be9d2376d94f39b3158e167f7bd13
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885484"
 ---
-# <a name="autobackup-channelloggingtype-element"></a>AutoBackup (ChannelLoggingType) (elemento)
+# <a name="autobackup-channelloggingtype-element"></a>elemento autoBackup (ChannelLoggingType)
 
-Determina si se debe crear un nuevo archivo de registro cuando el archivo de registro actual alcanza su tamaño máximo.
+Determina si se debe crear un nuevo archivo de registro cuando el archivo de registro actual alcance su tamaño máximo.
 
 ``` syntax
 <xs:element name="autoBackup"
@@ -30,7 +30,7 @@ Determina si se debe crear un nuevo archivo de registro cuando el archivo de reg
  />
 ```
 
-El elemento **AutoBackup** se define mediante el tipo complejo [**ChannelLoggingType**](eventmanifestschema-channelloggingtype-complextype.md) .
+El tipo complejo [**ChannelLoggingType**](eventmanifestschema-channelloggingtype-complextype.md) define el elemento **autoBackup.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,12 +38,12 @@ El elemento **AutoBackup** se define mediante el tipo complejo [**ChannelLogging
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

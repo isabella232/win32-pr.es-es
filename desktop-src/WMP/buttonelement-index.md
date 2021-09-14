@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 031bce6f0f4eda1281e8ec09185177d81d4b445ea798556d41aa0af32cc40787
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dfb89056d6e18429ad787c0325689918e7b959ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118581389"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889316"
 ---
 # <a name="buttonelementindex"></a>BUTTONELEMENT.index
 
@@ -35,7 +35,7 @@ Este atributo es un número de solo **lectura** (**long**).
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 

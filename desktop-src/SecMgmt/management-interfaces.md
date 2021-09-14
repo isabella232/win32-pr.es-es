@@ -4,12 +4,12 @@ ms.assetid: 451587bd-a7ab-446b-b647-be98de251915
 title: Interfaces de administración de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6adc6cbaa24be46508e2a4f72181c96d4ccb65e589fdad95808c65a57262b73b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b3a205757a3bf324a5308a5f6fbc3d63374b4af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118894332"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160701"
 ---
 # <a name="security-management-interfaces"></a>Interfaces de administración de seguridad
 

@@ -7,12 +7,12 @@ keywords:
 - ADSI de interfaces que no son de Automatización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c71e1cdeadcb4dade22d6abb8f641bd0a4262aaf9665049e3237d907bcf120bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0748cffcf0bc5974e471e46cb79074a1fcd55fa3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119082359"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887105"
 ---
 # <a name="non-automation-interfaces"></a>Interfaces que no son de automatización
 

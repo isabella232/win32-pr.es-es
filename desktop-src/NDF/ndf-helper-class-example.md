@@ -1,21 +1,21 @@
 ---
-title: Extensión de clase auxiliar de NDF
+title: Extensión de clase auxiliar NDF
 description: En este ejemplo se muestra cómo implementar funciones de diagnóstico y reparación de NDF.
 ms.assetid: 18e66d09-e565-4b86-8bc3-600f2159a4bd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1fd8fd7683aded0573034ffec56097256093c61e2bb0f9ec2e7bcd353ff8d3b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e5b2a0dbcba29449b8f21850fa0669f8154dcbd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119802115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161195"
 ---
-# <a name="ndf-helper-class-extension"></a>Extensión de clase auxiliar de NDF
+# <a name="ndf-helper-class-extension"></a>Extensión de clase auxiliar NDF
 
-En este ejemplo se muestra cómo implementar funciones de diagnóstico y reparación de NDF. En este ejemplo, debe existir un archivo de configuración crítico para que el sistema permanezca en buen estado. En consecuencia, el problema es determinar si el archivo existe. Si no es así, el sistema es incorrecto y NDF diagnostica el problema. La reparación es volver a crear el archivo que falta.
+En este ejemplo se muestra cómo implementar funciones de diagnóstico y reparación de NDF. En este ejemplo, debe existir un archivo de configuración crítico para que el sistema siga siendo correcto. En consecuencia, el problema es determinar si el archivo existe. Si no es así, el sistema es incorrecto y NDF diagnostica el problema. La reparación es volver a crear el archivo que falta.
 
-Para diagnosticar y reparar el problema, es necesario usar cuatro métodos [**INetDiagHelper:**](/windows/desktop/api/ndhelper/nn-ndhelper-inetdiaghelper) [**Initialize**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-initialize), [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth), [**GetRepairInfo**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo)y [**Repair**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-repair).
+Para diagnosticar y reparar el problema es necesario usar cuatro métodos [**INetDiagHelper:**](/windows/desktop/api/ndhelper/nn-ndhelper-inetdiaghelper) [**Initialize**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-initialize), [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth), [**GetRepairInfo**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo)y [**Repair**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-repair).
 
 ## <a name="initializing-the-helper-class"></a>Inicialización de la clase auxiliar
 
@@ -85,9 +85,9 @@ HRESULT SimpleFileHelperClass::Initialize(
 
 
 
-## <a name="checking-on-the-files-existence"></a>Comprobar la existencia del archivo
+## <a name="checking-on-the-files-existence"></a>Comprobación de la existencia del archivo
 
-El [**método LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth) se usa para comprobar la existencia del archivo. Si el archivo existe, el estado de diagnóstico se establece en **DS \_ REJECTED,** lo que indica que no hay ningún problema. Si no se encuentra el archivo, el estado de diagnóstico se establece en **DS \_ CONFIRMED**.
+El [**método LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth) se usa para comprobar la existencia del archivo. Si el archivo existe, el estado de diagnóstico se establece en **DS \_ REJECTED**, lo que indica que no hay nada incorrecto. Si no se encuentra el archivo, el estado de diagnóstico se establece en **DS \_ CONFIRMED**.
 
 
 ```C++
@@ -138,7 +138,7 @@ HRESULT SimpleFileHelperClass::LowHealth(
 
 ## <a name="determining-the-repair-action"></a>Determinar la acción de reparación
 
-Si [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth) devuelve **DS \_ CONFIRMED,** [**Se implementa GetRepairInfo**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo) para determinar la acción de reparación adecuada. En este ejemplo, eso significa volver a crear el archivo.
+Si [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth) devuelve **DS \_ CONFIRMED**, [**GetRepairInfo**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo) se implementa para determinar la acción de reparación adecuada. En este ejemplo, eso significa volver a crear el archivo.
 
 
 ```C++

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ba68c7852c19d0e3c65e7a57ba847e4b9ee024ba4b39c1a224625f57f6085119
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a5f95a87f46e94c971dd19989ffa670e6993e8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118789094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966495"
 ---
 # <a name="samplegradsamplegradsfloatfloatfloatintfloatuint-function-for-texture1d"></a>Función SampleGrad::SampleGrad(S,float,float,float,int,float,uint) para Texture1D
 

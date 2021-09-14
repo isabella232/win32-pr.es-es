@@ -4,12 +4,12 @@ ms.assetid: 22c1897a-abb5-4ce9-9d09-21b6aed4f1d8
 title: Configuración de la directiva de restricción de software
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30aa7de81769288e5cdcee6a7612fa0439a0e9f41d8c384b0855b7bd7ae06d41
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 522f216af6957ebd23bc9f17c70f61cab2cabc5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119128957"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965176"
 ---
 # <a name="configuring-the-software-restriction-policy"></a>Configuración de la directiva de restricción de software
 
@@ -28,7 +28,7 @@ Cuando se establecen explícitamente los niveles de confianza de directiva de re
     -   **No permitido.** No se permite que la aplicación use los privilegios completos del usuario. Los componentes con cualquier nivel de confianza se pueden cargar en él.
     -   **Sin restricciones.** La aplicación tiene acceso sin restricciones a los privilegios del usuario. Solo se pueden cargar en él los componentes con un nivel de confianza sin restricciones.
 
-5.  Haga clic en **Aceptar**.
+5.  Haga clic en **OK**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

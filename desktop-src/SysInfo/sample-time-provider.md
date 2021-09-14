@@ -4,12 +4,12 @@ ms.assetid: 6be08c49-be68-4b75-b740-fc1d5a2ff592
 title: Proveedor de hora de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac1ff8a636e079902cc8d8d276e4efaa4a6d08e66fc6ceda68ece62ebfbad21d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20a5f04f7515d73f8851b764ad5758c47848b07b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118884928"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160667"
 ---
 # <a name="sample-time-provider"></a>Proveedor de hora de ejemplo
 

@@ -4,12 +4,12 @@ ms.assetid: d377951f-e7d4-4482-9182-2c3b153cb325
 title: Recuperación de información mediante GetNetworkParams
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84bbe1d03cd619af3a6e73e7995876431a804b3ec723cf9a132df5dba517e719
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 20aed9b1ffa761ec53637d4d5b165e3fd2c2673d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120102045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160058"
 ---
 # <a name="retrieving-information-using-getnetworkparams"></a>Recuperación de información mediante GetNetworkParams
 
@@ -17,7 +17,7 @@ La [**función GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
 **Para usar GetNetworkParams**
 
-1.  Declare un puntero a un [**objeto FIXED \_ INFO**](/windows/desktop/api/Iptypes/ns-iptypes-fixed_info_w2ksp1) denominado *pFixedInfo* y un objeto **ULONG** denominado *ulOutBufLen*. Estas variables se pasan como parámetros a la [**función GetNetworkParams.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) Cree también una variable **DWORD** *dwRetVal* (que se usa para la comprobación de errores).
+1.  Declare un puntero a un [**objeto FIXED \_ INFO**](/windows/desktop/api/Iptypes/ns-iptypes-fixed_info_w2ksp1) denominado *pFixedInfo* y un objeto **ULONG** denominado *ulOutBufLen*. Estas variables se pasan como parámetros a [**la función GetNetworkParams.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) Cree también una variable **DWORD** *dwRetVal* (que se usa para la comprobación de errores).
     ```C++
         FIXED_INFO *pFixedInfo;
         IP_ADDR_STRING *pIPAddr;
@@ -43,7 +43,7 @@ La [**función GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
 3.  Realice una llamada inicial a [**GetNetworkParams**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getnetworkparams) para obtener el tamaño necesario para la variable *ulOutBufLen.*
     > [!Note]  
-    > Se producirá un error en esta función y se usa para asegurarse de que la variable *ulOutBufLen* especifica un tamaño suficiente para contener todos los datos devueltos a *pFixedInfo*. Se trata de un modelo de programación común para estructuras de datos y funciones de este tipo.
+    > Esta función producirá un error y se usa para asegurarse de que la variable *ulOutBufLen* especifica un tamaño suficiente para contener todos los datos devueltos a *pFixedInfo*. Se trata de un modelo de programación común para estructuras de datos y funciones de este tipo.
 
      
 

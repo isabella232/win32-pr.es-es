@@ -1,5 +1,5 @@
 ---
-description: El método put \_ Filename especifica el nombre del archivo de origen que debe usar el detector de medios.
+description: El método put \_ Filename especifica el nombre del archivo de origen que se usará en el detector de medios.
 ms.assetid: 37bcc7ed-d2c1-4182-b85a-03bad92c5ba7
 title: Método IMediaDet::p ut_Filename (Qedit.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 9a64c0232c77d732bd172bbd46e1a29eef57ae10a96cbaf2a581aeeec5100a20
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 542b84d3a1eec79b8408c7642bc08680fdc036ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118398271"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886841"
 ---
 # <a name="imediadetput_filename-method"></a>Método IMediaDet::p ut \_ Filename
 
@@ -28,9 +28,9 @@ ms.locfileid: "118398271"
 
  
 
-El `put_Filename` método especifica el nombre del archivo de origen que usará el detector de medios.
+El `put_Filename` método especifica el nombre del archivo de origen que el detector de medios debe usar.
 
-No llame dos veces a este método en el mismo objeto MediaDet. Para usar esta interfaz con más de un archivo de origen, cree instancias independientes del objeto MediaDet.
+No llame a este método dos veces en el mismo objeto MediaDet. Para usar esta interfaz con más de un archivo de origen, cree instancias independientes del objeto MediaDet.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ Nombre de archivo del origen.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -88,7 +88,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 [**IMediaDet (interfaz)**](imediadet.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

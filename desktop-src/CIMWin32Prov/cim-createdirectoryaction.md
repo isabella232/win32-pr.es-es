@@ -1,5 +1,5 @@
 ---
-description: La clase \_ CreateDirectoryAction de CIM crea directorios vacíos para que los elementos de software se instalen localmente.
+description: La clase CreateDirectoryAction de CIM crea directorios vacíos para que los elementos \_ de software se instalen localmente.
 ms.assetid: e8587534-4bb3-44de-98a1-8d777f1da1b3
 ms.tgt_platform: multiple
 title: CIM_CreateDirectoryAction clase
@@ -25,18 +25,18 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 908f3e37b13d50c56923e566451730ffc9dd03cf
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884097"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160364"
 ---
 # <a name="cim_createdirectoryaction-class"></a>Cim \_ CreateDirectoryAction (clase)
 
 La **clase \_ CreateDirectoryAction de CIM** crea directorios vacíos para que los elementos de software se instalen localmente.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -61,7 +61,7 @@ class CIM_CreateDirectoryAction : CIM_DirectoryAction
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CreateDirectoryAction de CIM** tiene estos tipos de miembros:
 
@@ -76,7 +76,7 @@ La **clase \_ CreateDirectoryAction de CIM** tiene estos métodos.
 
 | Método                                                             | Descripción                                                                                                                                  |
 |:-------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Invocar**](invoke-method-in-class-cim-createdirectoryaction.md) | Realiza una acción determinada. Los detalles de cómo el método realiza la acción son específicos de la implementación. No implementado por WMI.<br/> |
+| [**Invocar**](invoke-method-in-class-cim-createdirectoryaction.md) | Realiza una acción determinada. Los detalles de cómo el método realiza la acción son específicos de la implementación. Wmi no implementa .<br/> |
 
 
 
@@ -163,7 +163,7 @@ Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 <span id="Uninstall"></span><span id="uninstall"></span><span id="UNINSTALL"></span>
 
-**Desinstalar** (1)
+**Desinstalación** (1)
 
 
 </dt> <dd></dd> </dl>
@@ -184,7 +184,7 @@ Calificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
 
 Nombre del directorio al que se aplica la acción.
 
-Esta propiedad se hereda de [**CIM \_ DirectoryAction**](cim-directoryaction.md).
+Esta propiedad se hereda de [**CIM \_ DirectoryAction.**](cim-directoryaction.md)
 
 </dd> <dt>
 
@@ -197,7 +197,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identifica el elemento de software.
@@ -215,7 +215,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador del elemento de software.
@@ -233,7 +233,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado de un elemento de software.
@@ -271,7 +271,7 @@ Describe los detalles necesarios para una instalación correcta y los detalles (
 
 </dt> <dd>
 
-Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado en ejecución (es decir, el siguiente estado).
+Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado de ejecución (es decir, el siguiente estado).
 
 </dd> <dt>
 
@@ -282,7 +282,7 @@ Describe los detalles necesarios para la ejecución correcta y los detalles (con
 
 </dt> <dd>
 
-Describe los detalles necesarios para supervisar y operar en un elemento start.
+Describe los detalles necesarios para supervisar y operar en un elemento de inicio.
 
 </dd> </dl>
 
@@ -297,7 +297,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
 </dt> </dl>
 
 Sistema operativo de destino del elemento de software propietario.
@@ -366,7 +366,7 @@ Mac OS
 
 </dt> <dd>
 
-Abrir máquinas virtuales
+Apertura de máquinas virtuales
 
 </dd> <dt>
 
@@ -837,7 +837,7 @@ Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CreateDirectoryAction** de CIM se deriva de [**CIM \_ DirectoryAction**](cim-directoryaction.md).
 
@@ -849,7 +849,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -859,7 +859,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

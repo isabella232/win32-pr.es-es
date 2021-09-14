@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d51e42b1636958edd772d27c4e5a29720fa0dd87a74784f28f3ffeb7891873c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 771249ddb070c596dc126b9b0c8c7d04a4b4268f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118840468"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889385"
 ---
 # <a name="buttontransparencycolor"></a>BUTTON.transparencyColor
 
@@ -29,41 +29,41 @@ El **atributo transparencyColor** especifica o recupera el color que será trans
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de lectura **y** escritura sin ningún valor predeterminado que contenga uno de los valores siguientes.
+Este atributo es una cadena de **lectura** y escritura sin ningún valor predeterminado que contenga uno de los valores siguientes.
 
 
 
-| Valor                                    | Descripción                                                                                               |
+| Value                                    | Descripción                                                                                               |
 |------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Auto                                     | El color del píxel en la ubicación 0,0 de la imagen se convierte en el color transparente.                        |
-| Cualquier Internet Explorer de formato de color | Un Internet Explorer de formato de color se convierte en el color transparente (por ejemplo, "rojo" o \# "FF0000"). |
-| Ninguno                                     | Sin transparencia.                                                                                          |
+| Cualquier valor Internet Explorer formato de color | Un Internet Explorer de formato de color se convierte en el color transparente (por ejemplo, "rojo" o \# "FF0000"). |
+| None                                     | Sin transparencia.                                                                                          |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Un color transparente en una imagen permite que lo que hay detrás de la imagen se muestre a través de las áreas transparentes. El **BOTÓN** seguirá recibiendo clics en la región transparente.
+Un color transparente en una imagen permite que todo lo que está detrás de la imagen se muestre a través de las áreas transparentes. El **botón** seguirá recibiendo clics en la región transparente.
 
 El color transparente puede ser cualquier valor Internet Explorer de color. Si el valor del atributo **transparencyColor** se establece en "Auto", se usa el color del píxel en la ubicación 0,0 de la imagen.
 
 Si el color especificado no es uno de los colores de IE válidos, se mantiene el valor anterior.
 
-Dado que los JPG son de pérdida y, por tanto, están sujetos a un cambio de color inesperado, no se recomiendan cuando **se usa transparencyColor.**
+Dado que los JPG son perdidos y, por tanto, están sujetos a un cambio de color inesperado, no se recomiendan cuando **se usa transparencyColor.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

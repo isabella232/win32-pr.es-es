@@ -4,12 +4,12 @@ ms.assetid: f5464614-f6bb-427d-5488-3ba0fd4c6e8d
 title: Funciones vectoriales por componente
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1aee8de793dc6d1c4cd7880581a20dbf43bbba38487728e37d3bf92724fd0f26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 70d7bae881827e0662a06c46dd54971ce5ed591d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119979335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966307"
 ---
 # <a name="component-wise-vector-functions"></a>Funciones vectoriales por componente
 
@@ -26,10 +26,10 @@ Enumera las funciones vectoriales por componente.
 | [**XMVectorMergeZW**](/windows/win32/api/directxmath/nf-directxmath-xmvectormergezw)<br/>             | Crea un nuevo vector combinando los componentes z y w de dos vectores.<br/>                                                      |
 | [**XMVectorPermute**](/windows/win32/api/directxmath/nf-directxmath-xmvectorpermute)<br/>             | Permuta los componentes de dos vectores para crear un nuevo vector.<br/>                                                                |
 | [**XMVectorRotateLeft**](/windows/win32/api/directxmath/nf-directxmath-xmvectorrotateleft)<br/>       | Gira el vector a la izquierda por un número determinado de elementos de 32 bits.<br/>                                                                 |
-| [**XMVectorRotateRight**](/windows/win32/api/directxmath/nf-directxmath-xmvectorrotateright)<br/>     | Gira el vector a la derecha en un número determinado de elementos de 32 bits.<br/>                                                                |
+| [**XMVectorRotateRight**](/windows/win32/api/directxmath/nf-directxmath-xmvectorrotateright)<br/>     | Gira el vector a la derecha por un número determinado de elementos de 32 bits.<br/>                                                                |
 | [**XMVectorSelect**](/windows/win32/api/directxmath/nf-directxmath-xmvectorselect)<br/>               | Realiza una selección por componente entre dos vectores de entrada y devuelve el vector resultante.<br/>                                |
 | [**XMVectorSelectControl**](/windows/win32/api/directxmath/nf-directxmath-xmvectorselectcontrol)<br/> | Define un vector de control para su uso [**en XMVectorSelect**](/windows/win32/api/directxmath/nf-directxmath-xmvectorselect).<br/>                                                 |
-| [**XMVectorShiftLeft**](/windows/win32/api/directxmath/nf-directxmath-xmvectorshiftleft)<br/>         | Desplaza un vector a la izquierda por un número determinado de elementos de 32 bits, rellenando los elementos desocupados con elementos de un segundo vector.<br/>   |
+| [**XMVectorShiftLeft**](/windows/win32/api/directxmath/nf-directxmath-xmvectorshiftleft)<br/>         | Desplaza un vector a la izquierda por un número determinado de elementos de 32 bits, rellenando los elementos vacíos con elementos de un segundo vector.<br/>   |
 | [**XMVectorSplatW**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplatw)<br/>               | Replica el componente w de un vector en todos los componentes.<br/>                                                              |
 | [**XMVectorSplatX**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplatx)<br/>               | Replica el componente x de un vector en todos los componentes.<br/>                                                              |
 | [**XMVectorSplaty**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsplaty)<br/>               | Replica el componente y de un vector en todos los componentes.<br/>                                                              |

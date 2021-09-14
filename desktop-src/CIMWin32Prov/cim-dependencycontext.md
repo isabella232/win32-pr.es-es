@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 845086b7d41eb03227d6b5b47240ef4bf9e1a2c35f8049c96d5c665800b327e6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 69319a4f4d228d484da62411060ae3fead90bb79
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119924645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160352"
 ---
 # <a name="cim_dependencycontext-class"></a>Clase \_ DependencyContext de CIM
 
-La **relación \_ Cim DependencyContext** asocia una clase [**de \_ dependencia CIM**](cim-dependency.md) a uno o varios objetos de configuración [**\_ cim.**](cim-configuration.md) Por ejemplo, las dependencias de un sistema informático pueden cambiar en función de la red a la que está conectado el sistema.
+La **relación \_ Cim DependencyContext** asocia una clase [**de \_ dependencia CIM**](cim-dependency.md) con uno o varios [**objetos de configuración \_ cim.**](cim-configuration.md) Por ejemplo, las dependencias de un sistema informático pueden cambiar en función de la red a la que está conectado el sistema.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_DependencyContext
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ DependencyContext de CIM** tiene estos tipos de miembros:
 
@@ -86,7 +86,7 @@ Referencia a una dependencia agregada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 

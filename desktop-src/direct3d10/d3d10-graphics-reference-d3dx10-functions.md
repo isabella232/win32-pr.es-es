@@ -4,12 +4,12 @@ ms.assetid: 9b813410-9c60-4043-b226-86de9c05926f
 title: Funciones D3DX (gráficos de Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 867f63080bce905eef0d97a03c5e712d88e55ea524a6d5f79f30c16969a033c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec7cc6f35f31792c5a388a6a613c83173ff10ad8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118304325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966924"
 ---
 # <a name="d3dx-functions-direct3d-10-graphics"></a>Funciones D3DX (gráficos de Direct3D 10)
 

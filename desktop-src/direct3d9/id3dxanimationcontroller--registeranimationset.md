@@ -1,5 +1,5 @@
 ---
-description: Agrega un conjunto de animación al controlador de animación.
+description: Agrega un conjunto de animaciones al controlador de animación.
 ms.assetid: 93351d61-b7f4-4bd1-a5bf-313911cf6b61
 title: Método ID3DXAnimationController::RegisterAnimationSet (D3dx9anim.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0c6572b4a09967f2a911ffb3b147f3786aae75d71650d4d77d0564c1dbefc5f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca70baf55a3dae19422c9026575d75f63eed4bde
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118296985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964883"
 ---
 # <a name="id3dxanimationcontrollerregisteranimationset-method"></a>Método ID3DXAnimationController::RegisterAnimationSet
 
-Agrega un conjunto de animación al controlador de animación.
+Agrega un conjunto de animaciones al controlador de animación.
 
 ## <a name="syntax"></a>Sintaxis
 

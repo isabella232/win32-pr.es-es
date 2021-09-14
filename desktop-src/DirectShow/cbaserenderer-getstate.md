@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 532a41bb9e39f844b3a485fc236ae8d03450d45cdcb45d92c8cfa94d9af4a4bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 451078a6167ff7ca89ad4153c416826af8ac6d05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118403414"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161622"
 ---
 # <a name="cbaserenderergetstate-method"></a>Método CBaseRenderer.GetState
 
@@ -67,13 +67,13 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | Correcto.<br/>                                            |
 | <dl> <dt>**VFW \_ S \_ STATE \_ INTERMEDIATE**</dt> </dl> | El filtro está transfiriendo al estado indicado.<br/> |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>                  | Argumento de puntero **NULL.**<br/>                          |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>                  | **Argumento de** puntero NULL.<br/>                          |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el [**método CBaseFilter::GetState.**](cbasefilter-getstate.md) Cuando el representador está en pausa, no completa la transición de estado hasta que recibe un ejemplo para representarlo. Si el tiempo de espera expira antes de que se complete la transición de estado, el método devuelve VFW \_ S \_ STATE \_ INTERMEDIATE.
 

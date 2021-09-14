@@ -4,12 +4,12 @@ ms.assetid: e04175c4-bb43-4f76-8ceb-50282a1ebed0
 title: Estados de Winlogon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fef22cdd172572b1d5032990abae929712dc0be29a926524520c7ce6f9bbfe69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4d2e4ec690d6bdda15fb8e350969b36e01d5c68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118915063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160870"
 ---
 # <a name="winlogon-states"></a>Estados de Winlogon
 
@@ -23,7 +23,7 @@ En cualquier momento, Winlogon se encuentra en uno de estos tres estados:
 
 Estos tres estados se muestran en la ilustración siguiente.
 
-![estados winlogon](images/winlogonst.png)
+![Estados de winlogon](images/winlogonst.png)
 
 ## <a name="logged-off-state"></a>Logged-Off estado
 

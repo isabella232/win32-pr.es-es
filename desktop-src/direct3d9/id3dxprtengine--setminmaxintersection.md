@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2182714588e5d408c6928a677433e68dac44f09abf5ec6bd4cb4d6df7e4acf02
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68845f713289c524afc844037ca305909e5b89b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966680"
 ---
 # <a name="id3dxprtenginesetminmaxintersection-method"></a>Método ID3DXPRTEngine::SetMinMaxIntersection
 
@@ -65,7 +65,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no se puede usar en simulaciones de transferencia de radiancia precalutadas (PRT) que se ejecutan en la GPU. Vea [**ID3DXPRTEngine::ComputeDirectLightingSHGPU**](id3dxprtengine--computedirectlightingshgpu.md).
 
@@ -80,7 +80,7 @@ Este método no se puede usar en simulaciones de transferencia de radiancia prec
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

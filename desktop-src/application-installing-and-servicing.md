@@ -4,12 +4,12 @@ ms.assetid: 537ff8c3-8feb-4dd6-9af5-f476803a3cdb
 title: Instalación y mantenimiento de aplicaciones
 ms.topic: reference
 ms.date: 12/01/2020
-ms.openlocfilehash: 93c21647da1e85d568d5c7b3169a49437fe93229bf3bee98a82bf20859150dc2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bf8b67e4ea1dd8a126f4fb228bdf01ff6cb10bcc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119954465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965224"
 ---
 # <a name="application-installation-and-servicing"></a>Instalación y mantenimiento de aplicaciones
 

@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 85258e4e1dab0060ae8586d200c30b9f31d1b779083eb182038f1ed04bdb48a2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8a6a8e7705b157ce61fc674cb08f19e4eca75f58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120115625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964208"
 ---
 # <a name="microsoftisamesentinteropvista-namespace"></a>Espacio de nombres Microsoft.Isam.Esent.Interop.Vista
 
@@ -42,7 +42,7 @@ ms.locfileid: "120115625"
 <tr class="even">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Clase pública" alt="Public class" /></td>
 <td><a href="dn335321(v=exchg.10).md">VistaApi</a></td>
-<td>API DE ESENT que se admiten por primera vez en Windows Vista.</td>
+<td>API de ESENT que se admiten por primera vez en Windows Vista.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Clase pública" alt="Public class" /></td>
@@ -82,7 +82,7 @@ ms.locfileid: "120115625"
 <tr class="odd">
 <td><img src="../images/hh596136.pubstructure(exchg.10).gif" title="Estructura pública" alt="Public structure" /></td>
 <td><a href="hh557010(v=exchg.10).md">JET_RECSIZE</a></td>
-<td>Usado por <a href="dn335320(v=exchg.10).md">JetGetRecordSize(JET_SESID, JET_TABLEID, JET_RECSIZE, GetRecordSizeGrbit)</a> para devolver información sobre los requisitos de uso de un registro en el espacio de datos del usuario, el número de columnas establecidas, el número de valores y el espacio de sobrecarga de la estructura de registros ESENT.</td>
+<td>Usado por <a href="dn335320(v=exchg.10).md">JetGetRecordSize(JET_SESID, JET_TABLEID, JET_RECSIZE, GetRecordSizeGrbit)</a> para devolver información sobre los requisitos de uso de un registro en el espacio de datos de usuario, el número de columnas de conjunto, el número de valores y el espacio de sobrecarga de la estructura de registros ESENT.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596136.pubstructure(exchg.10).gif" title="Estructura pública" alt="Public structure" /></td>
@@ -117,12 +117,12 @@ ms.locfileid: "120115625"
 <tr class="odd">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumeración pública" alt="Public enumeration" /></td>
 <td><a href="hh564489(v=exchg.10).md">SnapshotEndGrbit</a></td>
-<td>Opciones para <a href="dn351267(v=exchg.10).md">JetOSSnapshotEnd(JET_OSSNAPID, SnapshotEndGrbit).</a></td>
+<td>Opciones de <a href="dn351267(v=exchg.10).md">JetOSSnapshotEnd(JET_OSSNAPID, SnapshotEndGrbit).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumeración pública" alt="Public enumeration" /></td>
 <td><a href="hh565195(v=exchg.10).md">SnapshotGetFreezeInfoGrbit</a></td>
-<td>Opciones para <a href="dn351269(v=exchg.10).md">JetOSSnapshotGetFreezeInfo(JET_OSSNAPID, Int32, [], SnapshotGetFreezeInfoGrbit).</a></td>
+<td>Opciones de <a href="dn351269(v=exchg.10).md">JetOSSnapshotGetFreezeInfo(JET_OSSNAPID, Int32, [], SnapshotGetFreezeInfoGrbit)</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumeración pública" alt="Public enumeration" /></td>

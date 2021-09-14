@@ -1,7 +1,7 @@
 ---
 description: Puntero al reloj de referencia del filtro.
 ms.assetid: 164ea59d-d36d-41ab-9e25-815b30e21e95
-title: Miembro CBaseFilter::m_pClock (Amfilter.h)
+title: CBaseFilter::m_pClock miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e6824bb785189213645197a630ed29150aa1a003c00c1710f1f8d25b46d926b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39add97c66da15eb9c99c7abdcc025c7c1ee5787
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161638"
 ---
 # <a name="cbasefilterm_pclock-member"></a>CBaseFilter::m \_ miembro pClock
 
@@ -47,7 +47,7 @@ IReferenceClock *m_pClock;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

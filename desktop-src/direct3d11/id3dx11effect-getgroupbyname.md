@@ -5,7 +5,7 @@ ms.assetid: 14b4b484-848a-409c-9a99-207ab25b7566
 keywords:
 - Método GetGroupByName Direct3D 11
 - Método GetGroupByName Direct3D 11, interfaz ID3DX11Effect
-- Interfaz ID3DX11Effect Direct3D 11 , método GetGroupByName
+- ID3DX11Effect interface Direct3D 11 , GetGroupByName (método)
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 905fb9fb439dcf613e5abfee22f03bf968c81838c89af17d72e7f4a74d887c6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1c2132dedb34fe71db30bf82b1c6d336f110a8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119046603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965028"
 ---
 # <a name="id3dx11effectgetgroupbyname-method"></a>Método ID3DX11Effect::GetGroupByName
 
@@ -58,10 +58,10 @@ Tipo: **[ **ID3DX11EffectGroup**](id3dx11effectgroup.md)\***
 
 Puntero a una [**interfaz ID3DX11EffectGroup.**](id3dx11effectgroup.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -72,11 +72,11 @@ Puntero a una [**interfaz ID3DX11EffectGroup.**](id3dx11effectgroup.md)
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101931
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 30d2cf6d22828252fcbe432b3880c8a3f0742b220e9ef800e0820644ce7b0b2e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c0f83c976801580d191aa0e14bd289d6dd73c4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119837265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966199"
 ---
 # <a name="esentinvalidfilenameexception-methods"></a>Métodos de EsentInvalidFilenameException 
 
@@ -78,7 +78,7 @@ El [tipo EsentInvalidFilenameException](./esentinvalidfilenameexception-class.md
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

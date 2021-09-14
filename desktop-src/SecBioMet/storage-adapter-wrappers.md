@@ -4,12 +4,12 @@ description: Funciones que puede usar para llamar a funciones en el adaptador de
 ms.assetid: 3e7ff098-b8f3-4745-aa75-712a392c6c78
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6308dda71cd279ae07e0849c0760526f116de6295bb0555f530f31a0033a5851
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c5dfdf562546e1520ee85c5a9a0164acdff53904
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118911608"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160805"
 ---
 # <a name="storage-adapter-wrappers"></a>Storage Contenedores de adaptadores
 

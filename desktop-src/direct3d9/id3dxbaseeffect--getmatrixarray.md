@@ -1,5 +1,5 @@
 ---
-description: Obtiene una matriz de matrices no transpuestas.
+description: Obtiene una matriz de matrices no transaccionadas.
 ms.assetid: 37b08f55-22f1-4b60-8cd4-566a77e7dbd6
 title: Método ID3DXBaseEffect::GetMatrixArray (D3DX9Shader.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 6d94820200cfc4cdc90c0a67562ac84efd57cd5cacb8e2a0ff37fcb91454db33
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 242b3c42976f9bfe4ad8ecad4d965c473839ffdd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964815"
 ---
 # <a name="id3dxbaseeffectgetmatrixarray-method"></a>Método ID3DXBaseEffect::GetMatrixArray
 
-Obtiene una matriz de matrices no transpuestas.
+Obtiene una matriz de matrices no transaccionadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,9 +73,9 @@ Número de matrices de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una matriz no transaccional contiene datos principales de fila; es decir, cada vector está contenido en una fila.
 
@@ -92,7 +92,7 @@ Si las matrices de destino son mayores que las matrices de origen, solo se relle
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,17 +1,17 @@
 ---
 description: En el ejemplo siguiente se usa la función GetFileTime para recuperar la hora de última escritura de un archivo. Convierte la hora a la hora local en función de la configuración de zona horaria actual y crea una cadena de fecha y hora que se puede mostrar al usuario.
 ms.assetid: 54509a35-fa6a-4ee6-90f8-36c9ef55e1bc
-title: Recuperación de la hora Last-Write datos
+title: Recuperación de la Last-Write tiempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92bc6176a622ae2c2ef89b4b0b3ca4e900cb85a9e630d66c6080e35d5eb9e2e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2332a55744eda1ea93853e6967f0cf1b4d45046d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118884982"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160674"
 ---
-# <a name="retrieving-the-last-write-time"></a>Recuperación de la hora Last-Write datos
+# <a name="retrieving-the-last-write-time"></a>Recuperación de la Last-Write tiempo
 
 En el ejemplo siguiente se usa [**la función GetFileTime**](/windows/desktop/api/FileAPI/nf-fileapi-getfiletime) para recuperar la hora de última escritura de un archivo. Convierte la hora a la hora local en función de la configuración de zona horaria actual y crea una cadena de fecha y hora que se puede mostrar al usuario.
 

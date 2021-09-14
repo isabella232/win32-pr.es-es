@@ -4,12 +4,12 @@ ms.assetid: fa9d72d0-2f9c-433d-b05a-8423664b2e3e
 title: Novedades del asistente de IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3141797e96442f34a94c2d2afc37585ce6dbc944e7fb35cf9b4602afa042c95a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2c1a6eebb3e9e785e8988b822df0b2a80ae6eba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160050"
 ---
 # <a name="whats-new-in-ip-helper"></a>Novedades del asistente de IP
 
@@ -17,13 +17,13 @@ ms.locfileid: "119897625"
 
 Se han agregado las siguientes características a las API del asistente de IP en Windows 8 y Windows Server 2012.
 
-Función que recupera las estimaciones de ancho de banda históricas para una conexión de red. Para más información, consulte:
+Función que recupera las estimaciones de ancho de banda histórico para una conexión de red. Para más información, consulte:
 
 -   [**GetIpNetworkConnectionBandwidthEstimates**](/windows/desktop/api/Netioapi/nf-netioapi-getipnetworkconnectionbandwidthestimates)
 
 Estructura que contiene información sobre las estimaciones de ancho de banda disponibles y la varianza asociada determinada por la pila TCP/IP. Para más información, consulte:
 
--   [**INFORMACIÓN DE \_ ANCHO DE BANDA DE \_ NL**](/windows/desktop/api/Nldef/ns-nldef-nl_bandwidth_information)
+-   [**INFORMACIÓN DE \_ ANCHO DE BANDA \_ NL**](/windows/desktop/api/Nldef/ns-nldef-nl_bandwidth_information)
 
 ## <a name="windows-7-and-windows-server-2008-r2"></a>Windows 7 y Windows Server 2008 R2
 
@@ -92,7 +92,7 @@ Función que funciona con IPv6 e IPv4 para la administración de memoria de tabl
 
 -   [**FreeMibTable**](/windows/desktop/api/Netioapi/nf-netioapi-freemibtable)
 
-Funciones que funcionan con IPv6 e IPv4 para la administración de direcciones ip de vecino. Para más información, consulte:
+Funciones que funcionan con IPv6 e IPv4 para la administración de direcciones de vecino IP. Para más información, consulte:
 
 -   [**CreateIpNetEntry2**](/windows/desktop/api/Netioapi/nf-netioapi-createipnetentry2)
 -   [**DeleteIpNetEntry2**](/windows/desktop/api/Netioapi/nf-netioapi-deleteipnetentry2)

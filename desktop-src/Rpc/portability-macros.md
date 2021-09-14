@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20aa6ebda92d7c3998082fdbb5e5f07aa1be22f37a6ec65a8e81327b8614565a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c184365496db7757524a12f1b0807c3c53e24b27
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161033"
 ---
 # <a name="portability-macros"></a>Macros de portabilidad
 
@@ -27,9 +27,9 @@ Las herramientas RPC logran la independencia de modelo, llamada y convención de
 
 En la ilustración siguiente se muestran las definiciones de macro que el compilador MIDL aplica a las llamadas de función entre componentes RPC:
 
-![Diagrama que muestra las definiciones de macro que MIDL se aplica a las llamadas de función.](images/prog-a29.png)
+![Diagrama que muestra las definiciones de macros que MIDL se aplica a las llamadas de función.](images/prog-a29.png)
 
-Las macros RPC se definen de la siguiente manera.
+Las macros RPC se definen como se muestra a continuación.
 
 
 
@@ -55,7 +55,7 @@ Para vincular correctamente con las bibliotecas en tiempo de ejecución, los có
 <span id="__RPC_USER_midl_user_free_..._"></span><span id="__rpc_user_midl_user_free_..._"></span><span id="__RPC_USER_MIDL_USER_FREE_..._"></span>\_\_RPC \_ USER *midl \_ user* \_ free(...)
 </dt> <dd></dd> <dt>
 
-<span id="__RPC_USER__handletype_bind_..._"></span><span id="__rpc_user__handletype_bind_..._"></span><span id="__RPC_USER__HANDLETYPE_BIND_..._"></span>\_\_Enlace \_ de tipo de identificador *DE* USUARIO \_ DE RPC(...)
+<span id="__RPC_USER__handletype_bind_..._"></span><span id="__rpc_user__handletype_bind_..._"></span><span id="__RPC_USER__HANDLETYPE_BIND_..._"></span>\_\_Rpc \_ USER *handletype* \_ bind(...)
 </dt> <dd></dd> <dt>
 
 <span id="__RPC_USER_handletype_unbind_..._"></span><span id="__rpc_user_handletype_unbind_..._"></span><span id="__RPC_USER_HANDLETYPE_UNBIND_..._"></span>\_\_Rpc \_ USER *handletype* \_ unbind(...)
@@ -64,7 +64,7 @@ Para vincular correctamente con las bibliotecas en tiempo de ejecución, los có
 <span id="__RPC_USER_type_to_local"></span><span id="__rpc_user_type_to_local"></span><span id="__RPC_USER_TYPE_TO_LOCAL"></span>\_\_TIPO DE USUARIO DE RPC \_  \_ en \_ local
 </dt> <dd></dd> <dt>
 
-<span id="__RPC_USER_type_from_local"></span><span id="__rpc_user_type_from_local"></span><span id="__RPC_USER_TYPE_FROM_LOCAL"></span>\_\_Tipo \_ DE USUARIO *RPC* \_ de \_ local
+<span id="__RPC_USER_type_from_local"></span><span id="__rpc_user_type_from_local"></span><span id="__RPC_USER_TYPE_FROM_LOCAL"></span>\_\_Tipo DE USUARIO DE RPC \_  \_ de \_ local
 </dt> <dd></dd> <dt>
 
 <span id="__RPC_USER_type_to_xmit_..._"></span><span id="__rpc_user_type_to_xmit_..._"></span><span id="__RPC_USER_TYPE_TO_XMIT_..._"></span>\_\_Rpc \_ USER type to \_ \_ xmit(...)

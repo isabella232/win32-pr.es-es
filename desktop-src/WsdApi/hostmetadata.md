@@ -1,19 +1,19 @@
 ---
-description: Define los metadatos de hospedaje para el dispositivo que se va a implementar. Este elemento solo se usa para implementaciones de dispositivos (hosts).
+description: Define los metadatos de hospedaje del dispositivo que se va a implementar. Este elemento solo se usa para implementaciones de dispositivos (hosts).
 ms.assetid: ca7bc5ea-8ab2-4233-86d2-5b793021b8ee
-title: hostMetadata, elemento
+title: elemento hostMetadata
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8f1ec89725255e59fe7c0ba504bc96ae1a0b7753e2df1a63a8bedb5d5bca27e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d9cf6fa139a2723ed90dfe281fc7b054016386fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118106655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966980"
 ---
-# <a name="hostmetadata-element"></a>hostMetadata, elemento
+# <a name="hostmetadata-element"></a>elemento hostMetadata
 
-Define los metadatos de hospedaje para el dispositivo que se va a implementar. Este elemento solo se usa para implementaciones de dispositivos (hosts).
+Define los metadatos de hospedaje del dispositivo que se va a implementar. Este elemento solo se usa para implementaciones de dispositivos (hosts).
 
 ## <a name="usage"></a>Uso
 
@@ -57,9 +57,9 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los metadatos de hospedaje aparecen en este elemento con un formato similar al especificado en el perfil de dispositivo. **hostMetadata es** ligeramente diferente del formato descrito en el perfil de dispositivo en que la única propiedad de referencia que admite es el identificador de servicio.
+Los metadatos de hospedaje aparecen en este elemento con un formato similar al especificado en el perfil de dispositivo. **hostMetadata** es ligeramente diferente del formato descrito en el perfil de dispositivo en que la única propiedad de referencia que admite es el identificador de servicio.
 
 El [**elemento relationshipMetadataDefinition**](relationshipmetadatadefinition.md) se usa posteriormente para generar una constante de C que contiene esta información.
 

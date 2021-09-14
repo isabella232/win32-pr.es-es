@@ -15,11 +15,11 @@ ms.localizationpriority: low
 ms.topic: reference
 ms.date: 08/05/2021
 ms.openlocfilehash: 952bf1cd1b2833a4e4a2bf0a91892fbb1d6f797c
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121812856"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966855"
 ---
 # <a name="cd3dx12_state_object_config_subobject-class"></a>CD3DX12_STATE_OBJECT_CONFIG_SUBOBJECT clase
 
@@ -42,7 +42,7 @@ public:
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `CD3DX12_STATE_OBJECT_CONFIG_SUBOBJECT`
 
@@ -50,11 +50,11 @@ Constructor predeterminado. Crea una nueva instancia de inicializada de forma pr
 
 `CD3DX12_STATE_OBJECT_CONFIG_SUBOBJECT(CD3DX12_STATE_OBJECT_DESC&)`
 
-Constructor que crea una nueva instancia de un **CD3DX12_STATE_OBJECT_CONFIG_SUBOBJECT** inicializado con el contenido de un [**CD3DX12_STATE_OBJECT_DESC**](cd3dx12-state-object-desc.md) objeto .
+Constructor que crea una nueva instancia de un **CD3DX12_STATE_OBJECT_CONFIG_SUBOBJECT** inicializado con el contenido de un [**CD3DX12_STATE_OBJECT_DESC**](cd3dx12-state-object-desc.md) objeto.
 
 `SetFlags(D3D12_STATE_OBJECT_FLAGS)`
 
-Función para especificar los requisitos del objeto de estado a través de [un D3D12_STATE_OBJECT_FLAGS](/windows/win32/api/d3d12/ne-d3d12-d3d12_state_object_flags) objeto .
+Función para especificar los requisitos del objeto de estado a través [de un D3D12_STATE_OBJECT_FLAGS](/windows/win32/api/d3d12/ne-d3d12-d3d12_state_object_flags) objeto .
 
 `Type`
 
@@ -62,7 +62,7 @@ Recupera el tipo del subobjeto, representado por la [D3D12_STATE_SUBOBJECT_TYPE_
 
 `operator const D3D12_STATE_SUBOBJECT&`
 
-Operador de conversión que devuelve una referencia a una constante [D3D12_STATE_SUBOBJECT](/windows/win32/api/d3d12/ns-d3d12-d3d12_state_subobject) objeto que describe el objeto de estado.
+Operador de conversión que devuelve una referencia a una [constante D3D12_STATE_SUBOBJECT](/windows/win32/api/d3d12/ns-d3d12-d3d12_state_subobject) objeto que describe el objeto de estado.
 
 `operator const D3D12_STATE_OBJECT_CONFIG&`
 
@@ -74,7 +74,7 @@ Operador de conversión que devuelve una referencia a una [constante D3D12_STATE
 |-------------------|-------------------------------------------------------------------------------------|
 | Encabezado | [D3dx12.h](https://github.com/microsoft/DirectX-Headers/blob/main/include/directx/d3dx12.h) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Estructuras auxiliares para Direct3D 12](helper-structures-for-d3d12.md)
 * [CD3DX12_STATE_OBJECT_DESC](cd3dx12-state-object-desc.md)

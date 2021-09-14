@@ -1,17 +1,17 @@
 ---
-title: Exponer Owner-Drawn elementos de cuadro combinado
+title: Exponer Owner-Drawn de cuadro combinado
 description: Los desarrolladores de aplicaciones no necesitan implementar IAccessible para exponer los elementos de un cuadro combinado dibujado por el propietario que tiene el estilo CBS HASSTRINGS porque Microsoft Active Accessibility expone los elementos en cuadros combinados con este \_ estilo.
 ms.assetid: 9ff14b2f-ae09-4839-b281-fba46addaf5f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fea00a20dc0e6290ee7331a4caabf988558d81e3cc2f56511dfbefbaf1bb0b2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 364dccaf21927e2d0092fc744d501f47830c6eeb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118828947"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160569"
 ---
-# <a name="exposing-owner-drawn-combo-box-items"></a>Exponer Owner-Drawn elementos de cuadro combinado
+# <a name="exposing-owner-drawn-combo-box-items"></a>Exponer Owner-Drawn de cuadro combinado
 
 Los desarrolladores de aplicaciones no necesitan implementar [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para exponer los elementos de un cuadro combinado dibujado por el propietario que tiene el estilo **CBS \_ HASSTRINGS** porque Microsoft Active Accessibility expone los elementos en cuadros combinados con este estilo. Los elementos de un cuadro combinado dibujado por el propietario con el estilo **\_ HASSTRINGS** de CBS se muestran como texto. Sin embargo, este estilo también se usa con cuadros combinados dibujados por el propietario que no muestran texto para que los elementos del cuadro combinado se exponán mediante Microsoft Active Accessibility.
 

@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 15fef5786487a0e5dad6aa96f4061a2e7414773e2f269ea9834cc3dd17211e3d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 42c675f61fc8b42790aeb811ec275554b355a392
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965431"
 ---
-# <a name="create-method-of-the-win32_process-class"></a>Método Create de la clase Process de Win32 \_
+# <a name="create-method-of-the-win32_process-class"></a>Método Create de la clase Win32 \_ Process
 
-El **método de** clase Create [WMI](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuevo proceso.
+El **método Create** WMI [class](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuevo proceso.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -100,15 +100,15 @@ Devuelve un valor de 0 (cero) si el proceso se creó correctamente y cualquier o
 **Otros** (22 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede crear una instancia de la clase [**\_ ProcessStartup de Win32**](win32-processstartup.md) para configurar el proceso antes de llamar a este método.
 
-Se debe especificar una ruta de acceso completa en los casos en los que el programa que se va a iniciar no se encuentra en la ruta de acceso de búsqueda Winmgmt.exe. Si el proceso recién creado intenta interactuar con objetos en el sistema de destino sin los privilegios de acceso adecuados, se termina sin notificación a este método.
+Se debe especificar una ruta de acceso completa en los casos en los que el programa que se va a iniciar no esté en la ruta de acceso de búsqueda Winmgmt.exe. Si el proceso recién creado intenta interactuar con objetos en el sistema de destino sin los privilegios de acceso adecuados, se termina sin notificación a este método.
 
 Por motivos de seguridad, **el método \_ Process.Create de Win32** no se puede usar para iniciar un proceso interactivo de forma remota.
 
-Los procesos creados con **el método \_ Process.Create de Win32** están limitados por el objeto de trabajo a menos que se especifique la marca CREATE **\_ BREAKAWAY FROM \_ \_ JOB.** Para obtener más información, [**vea Win32 \_ ProcessStartup**](win32-processstartup.md) y [**\_ \_ ProviderHostQuotaConfiguration.**](/windows/desktop/WmiSdk/--providerhostquotaconfiguration)
+Los procesos creados con **el método \_ Process.Create de Win32** están limitados por el objeto de trabajo a menos que se especifique la marca CREATE **\_ BREAKAWAY FROM \_ \_ JOB.** Para obtener más información, [**vea Win32 \_ ProcessStartup**](win32-processstartup.md) y [**\_ \_ ProviderHostQuotaConfiguration**](/windows/desktop/WmiSdk/--providerhostquotaconfiguration).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -173,7 +173,7 @@ else
 
 
 
-En el siguiente ejemplo de código vbscript se crea Bloc de notas proceso en el equipo local. [**Win32 \_ ProcessStartup**](win32-processstartup.md) se usa para configurar los valores del proceso.
+En el ejemplo de código de VBScript siguiente se crea Bloc de notas proceso en el equipo local. [**Win32 \_ ProcessStartup**](win32-processstartup.md) se usa para configurar los valores del proceso.
 
 
 ```VB
@@ -220,7 +220,7 @@ End If
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

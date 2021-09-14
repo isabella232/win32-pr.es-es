@@ -1,5 +1,5 @@
 ---
-description: Toma una malla y devuelve una nueva malla con pesos de mezcla por vértice y una tabla de combinación de teclas. En la tabla se describe qué elementos afectan a qué subconjuntos de la malla.
+description: Toma una malla y devuelve una nueva malla con pesos de mezcla por vértice y una tabla de combinación de triángulos. En la tabla se describe qué esqueletos afectan a qué subconjuntos de la malla.
 ms.assetid: c26a9e84-5731-4394-a047-5f1ffe7688d9
 title: Método ID3DXSkinInfo::ConvertToBlendedMesh (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 026808748f0d94a4b5282bfdad6590e3c030ddf6ce0009bec5e59852e9984163
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 051c51291416dd7e190c83433a9bf84baeb92957
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119747685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966620"
 ---
 # <a name="id3dxskininfoconverttoblendedmesh-method"></a>Método ID3DXSkinInfo::ConvertToBlendedMesh
 
-Toma una malla y devuelve una nueva malla con pesos de mezcla por vértice y una tabla de combinación de teclas. En la tabla se describe qué elementos afectan a qué subconjuntos de la malla.
+Toma una malla y devuelve una nueva malla con pesos de mezcla por vértice y una tabla de combinación de triángulos. En la tabla se describe qué esqueletos afectan a qué subconjuntos de la malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -99,7 +99,7 @@ Matriz de DWORD, una por cara, que identifica la cara de malla original que corr
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXBuffer,**](id3dxbuffer.md) que contiene un DWORD para cada vértice que especifica cómo se asignan los nuevos vértices a los vértices antiguos. Esta reasignación es útil si necesita modificar los datos externos en función de la nueva asignación de vértices. Este parámetro es opcional; Se puede usar **NULL.**
+Dirección de un puntero a una [**interfaz ID3DXBuffer,**](id3dxbuffer.md) que contiene un DWORD para cada vértice que especifica cómo se asignan los nuevos vértices a los vértices antiguos. Esta reasignación es útil si necesita modificar los datos externos en función de la nueva asignación de vértices. Este parámetro es opcional; Se puede usar **NULL.**
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ Dirección de un puntero a una interfaz [**ID3DXBuffer,**](id3dxbuffer.md) que c
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero a un DWORD que contendrá el número máximo de influencias de la pera requeridas por vértice para este método de despejado.
+Puntero a un DWORD que contendrá el número máximo de influencias de pómez necesarias por vértice para este método de desnado.
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ Puntero a un DWORD que contendrá el número máximo de influencias de la pera r
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero al número de tordos de la tabla de combinación de teclas.
+Puntero al número de esqueletos de la tabla de combinación de tomos.
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Puntero al número de tordos de la tabla de combinación de teclas.
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntero a la tabla de combinación de teclas. Los datos se organizan en una [**estructura D3DXCCICOMBINATION.**](d3dxbonecombination.md)
+Puntero a la tabla de combinación de tomos. Los datos se organizan en una [**estructura D3DXPXCOMBINATION.**](d3dxbonecombination.md)
 
 </dd> <dt>
 
@@ -143,13 +143,13 @@ Puntero a la nueva malla.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada elemento de la matriz de reasignación especifica el índice anterior para esa posición. Por ejemplo, si un vértice estaba en la posición 3 pero se ha reasignado a la posición 5, el quinto elemento de pVertexRemap contendrá 3.
 
-Este método no se ejecuta en hardware que no admite la mezcla de vértices de función fija.
+Este método no se ejecuta en hardware que no admite la combinación de vértices de función fija.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -162,7 +162,7 @@ Este método no se ejecuta en hardware que no admite la mezcla de vértices de f
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

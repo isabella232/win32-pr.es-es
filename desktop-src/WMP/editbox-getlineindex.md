@@ -1,9 +1,9 @@
 ---
-title: EDITBOX. getLineIndex
-description: El método getLineIndex recupera el índice de carácter del primer carácter de la línea con el índice de línea especificado.
+title: EDITBOX.getLineIndex
+description: El método getLineIndex recupera el índice de caracteres del primer carácter de la línea con el índice de línea especificado.
 ms.assetid: 1298227a-d839-44fc-bacb-44c3c968bd94
 keywords:
-- GetLineIndex Windows Media Player
+- EDITBOX.getLineIndex Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,15 +14,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 5f55027bb7d577b7080ad2f006a5a006e718c2d5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700412"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885241"
 ---
-# <a name="editboxgetlineindex"></a>EDITBOX. getLineIndex
+# <a name="editboxgetlineindex"></a>EDITBOX.getLineIndex
 
-El método **getLineIndex** recupera el índice de carácter del primer carácter de la línea con el índice de línea especificado.
+El **método getLineIndex** recupera el índice de caracteres del primer carácter de la línea con el índice de línea especificado.
 
 ``` syntax
         elementID.getLineIndex(index)
@@ -32,16 +32,16 @@ El método **getLineIndex** recupera el índice de carácter del primer carácte
 
 <dl> <dt>
 
-<span id="index"></span><span id="INDEX"></span>*ajustar*
+<span id="index"></span><span id="INDEX"></span>*Índice*
 </dt> <dd>
 
-**Número** (**largo**) que contiene el índice de la línea cuyo índice de caracteres se va a recuperar.
+**Number** (**long**) que contiene el índice de la línea cuyo índice de caracteres se va a recuperar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un **número** (**Long**).
+Este método devuelve un **valor Number** (**long**).
 
 ## <a name="remarks"></a>Observaciones
 
@@ -55,21 +55,21 @@ Solo se puede llamar a este método después de que el control se vuelva visible
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**EDITBOX. getLine**](editbox-getline.md)
+[**EDITBOX.getLine**](editbox-getline.md)
 </dt> <dt>
 
-[**EDITBOX. getLineFromChar**](editbox-getlinefromchar.md)
+[**EDITBOX.getLineFromChar**](editbox-getlinefromchar.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a4f044d3337a2da05eb78b027492b870f450e4309c94faa8c72db935437511dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc744536336a4a102bafeaeae3ba87bbad58eb97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119853493"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884761"
 ---
 # <a name="d3dx10createmesh-function"></a>Función D3DX10CreateMesh
 
@@ -136,7 +136,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

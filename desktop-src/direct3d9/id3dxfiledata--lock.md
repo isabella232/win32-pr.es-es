@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: c052f570b3206c5a0661a4cf4ab38b259fb476f4eda1322df80e709608d09bf5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27ef18fcb12b00f0b778ee15d582610ffe52fe54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118520712"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966739"
 ---
 # <a name="id3dxfiledatalock-method"></a>Método ID3DXFileData::Lock
 
@@ -65,7 +65,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DXFERR \_ BADVALUE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El *puntero ppData* solo es válido durante un **id3DXFileData::Lock...** [**Secuencia ID3DXFileData::Unlock.**](id3dxfiledata--unlock.md) Puede realizar varias llamadas de bloqueo. Sin embargo, debe asegurarse de que el número de llamadas de bloqueo coincide con el número de llamadas de desbloqueo.
 

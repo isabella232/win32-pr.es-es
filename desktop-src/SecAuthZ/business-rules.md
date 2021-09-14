@@ -4,12 +4,12 @@ ms.assetid: 2220d533-87f5-41a6-a688-a3307f0853fa
 title: Reglas de negocios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a54260fc6c7dd56137b3065a07f0dcccf9df1c4d21add4b9e7f0cfa79b0300e2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4f77d94ce623086b8850406f9bae4f412d3bbdc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117783631"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160857"
 ---
 # <a name="business-rules"></a>Reglas de negocios
 

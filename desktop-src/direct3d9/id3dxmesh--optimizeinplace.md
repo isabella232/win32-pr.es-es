@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0075e7a0b823f0d747859a4717a440e0c244fde76076e4b285c7d1b2a7e78d00
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f889e0d3754cc1321ffa59eba294038b87991489
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119120809"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966719"
 ---
 # <a name="id3dxmeshoptimizeinplace-method"></a>Método ID3DXMesh::OptimizeInplace
 
@@ -85,7 +85,7 @@ Matriz de DWORD, una por cara, que identifica la cara de malla original que corr
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXBuffer,**](id3dxbuffer.md) que contiene un DWORD para cada vértice que especifica cómo se asignan los nuevos vértices a los vértices antiguos. Esta reasignación es útil si necesita modificar los datos externos en función de la nueva asignación de vértices. Si el valor proporcionado para este argumento es **NULL,** no se devuelven los datos de reasignación de vértices.
+Dirección de un puntero a una [**interfaz ID3DXBuffer,**](id3dxbuffer.md) que contiene un DWORD para cada vértice que especifica cómo se asignan los nuevos vértices a los vértices antiguos. Esta reasignación es útil si necesita modificar los datos externos en función de la nueva asignación de vértices. Si el valor proporcionado para este argumento es **NULL,** no se devuelven los datos de reasignación de vértices.
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Dirección de un puntero a una interfaz [**ID3DXBuffer,**](id3dxbuffer.md) que c
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ CANNOTATTRSORT, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ CANNOTATTRSORT, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Antes de **ejecutar ID3DXMesh::OptimizeInplace,** una aplicación debe generar un búfer de adyacencia llamando a [**ID3DXBaseMesh::GenerateAdjacency**](id3dxbasemesh--generateadjacency.md). El búfer de adyacencia contiene datos de adyacencia, como una lista de bordes y las caras adyacentes entre sí.
+Antes de **ejecutar ID3DXMesh::OptimizeInplace**, una aplicación debe generar un búfer de adyacencia llamando a [**ID3DXBaseMesh::GenerateAdjacency**](id3dxbasemesh--generateadjacency.md). El búfer de adyacencia contiene datos de adyacencia, como una lista de bordes y las caras adyacentes entre sí.
 
 > [!Note]  
 > Este método producirá un error si la malla comparte su búfer de vértices con otra malla, a menos que D3DXMESHOPT \_ IGNOREVERTS esté establecido en Marcas.
@@ -115,7 +115,7 @@ Antes de **ejecutar ID3DXMesh::OptimizeInplace,** una aplicación debe generar u
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

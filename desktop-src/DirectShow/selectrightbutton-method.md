@@ -1,15 +1,15 @@
 ---
-description: El método SelectRightButton selecciona el botón direccional derecho en el menú que se muestra.
+description: El método SelectRightButton selecciona el botón direccional derecho en el menú mostrado.
 ms.assetid: 03e6034a-8db1-4724-9923-f19c4e835db7
 title: Método SelectRightButton (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e04eb19addba14b285955daa6752fda497f657435cf7655e3071de3ee345edc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 96adb93cb81e59fd43ec4aa4438ae17085ee1b51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886596"
 ---
 # <a name="selectrightbutton-method"></a>Método SelectRightButton
 
@@ -18,7 +18,7 @@ ms.locfileid: "120078895"
 
  
 
-El `SelectRightButton` método selecciona el botón direccional derecho en el menú que se muestra.
+El `SelectRightButton` método selecciona el botón direccional derecho en el menú mostrado.
 
 ``` syntax
 MSWebDVD.SelectRightButton()
@@ -38,14 +38,14 @@ No de devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**ActivateButton**](activatebutton-method.md)
 </dt> <dt>
 
-[**SeleccioneLeftButton.**](selectleftbutton-method.md)
+[**SelectLeftButton**](selectleftbutton-method.md)
 </dt> <dt>
 
 [**SelectLowerButton**](selectlowerbutton-method.md)

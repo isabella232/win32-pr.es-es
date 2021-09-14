@@ -1,23 +1,23 @@
 ---
 title: Definir asignaciones de nombre y valor
-description: Un proveedor puede definir una lista de pares de nombre/valor que los consumidores usan para asignar valores enteros a cadenas.
+description: Un proveedor puede definir una lista de pares nombre-valor que los consumidores usan para asignar valores enteros a cadenas.
 ms.assetid: d16b2410-a0de-42da-8f2a-98341c90ed87
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 62020adeb46bac96cada70cf5830e17213d69868
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104420485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885540"
 ---
 # <a name="defining-namevalue-mappings"></a>Definir asignaciones de nombre y valor
 
-Un proveedor puede definir una lista de pares de nombre/valor que los consumidores usan para asignar valores enteros a cadenas. Los pares de nombre/valor pueden asignar valores enteros a cadenas o valores de bits bit a cadenas; cada valor corresponde a un valor de cadena. Use asignaciones en elementos de datos enteros que contengan valores de enumeración.
+Un proveedor puede definir una lista de pares nombre-valor que los consumidores usan para asignar valores enteros a cadenas. Los pares nombre-valor pueden asignar valores enteros a cadenas o valores de bits a cadenas; cada valor corresponde a un valor de cadena. Use asignaciones en elementos de datos enteros que contengan valores de enumeración.
 
-Los consumidores pueden usar el mapa Value para recuperar la cadena asociada con un valor y mostrarla en lugar de mostrar el valor entero o de bit. Para definir una asignación de valores enteros, use los elementos **valueMap** y **map** . Para definir una asignación de valores de bits, utilice los elementos **Bitmap** y **map** .
+Los consumidores pueden usar el mapa de valores para recuperar la cadena asociada a un valor y mostrarla en lugar de mostrar el valor entero o bit. Para definir un mapa de valores enteros, use los **elementos valueMap** **y map.** Para definir un mapa de valores de bits, use los elementos **de mapa de bits** y **de** mapa.
 
-En el ejemplo siguiente se muestra cómo definir un mapa de valores y un mapa de bits. Debe especificar el atributo **Name** del mapa. Para cada par de nombre y valor, debe especificar el **valor** y el atributo de **mensaje** .
+En el ejemplo siguiente se muestra cómo definir un mapa de valores y un mapa de bits. Debe especificar el atributo name **del** mapa. Para cada par nombre-valor, debe especificar el valor **y** el atributo **de** mensaje.
 
 
 ```XML

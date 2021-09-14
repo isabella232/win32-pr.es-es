@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Perfstruct.h
-ms.openlocfilehash: 49cc76f4db1a5fae76678ee2d81f3e2fff0a6c5ca3d5c5532adebaec23f48215
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee2d944d086f9c1a4ea7944f023321dfbc06d547
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120050715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886625"
 ---
 # <a name="perfinfo_dshow_avrend-structure"></a>PERFINFO \_ DSHOW \_ (estructura AVREND)
 
@@ -39,7 +39,7 @@ typedef struct PERFINFO_DSHOW_AVREND {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -64,7 +64,7 @@ Hora de inicio del ejemplo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para habilitar este evento, debe establecer la marca DXMPERF VIDEOREND en el parámetro \_ *EnableFlag* al llamar a **EnableTrace**. Esta marca se define en el archivo de encabezado Dxmperf.h, que se incluye en las DirectShow base.
 
@@ -80,7 +80,7 @@ Para registrar este evento desde un filtro DirectShow, use la macro **PERFLOG \_
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

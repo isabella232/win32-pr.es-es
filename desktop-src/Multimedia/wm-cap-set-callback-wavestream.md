@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d36abc7848de082e033cfc25d4f15d90c86cf3b2
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371497"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161333"
 ---
 # <a name="wm_cap_set_callback_wavestream-message"></a>Mensaje \_ \_ WAVESTREAM DE \_ DEVOLUCIÓN DE LLAMADA DE \_ WM CAP SET
 
@@ -47,7 +47,7 @@ Puntero a la función de devolución de llamada de flujo de onda, de tipo [**cap
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza **correctamente o FALSE si** la captura de streaming o una sesión de captura de un solo fotograma está en curso.
+Devuelve **TRUE si** se realiza correctamente o FALSE **si** la captura de streaming o una sesión de captura de un solo fotograma están en curso.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -67,7 +67,7 @@ Si se usa una función de devolución de llamada de flujo de onda, debe instalar
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

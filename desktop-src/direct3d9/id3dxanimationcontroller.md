@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d01bafe9a20e56741f7e8b7ec9828386883fbdc150632335a342240c0a64a858
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ed587be50ba41d4544152985285b20ab63bd745
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964852"
 ---
 # <a name="id3dxanimationcontroller-interface"></a>Interfaz ID3DXAnimationController
 
 Esta interfaz se usa para controlar la funcionalidad de animación, conectando conjuntos de animación con los fotogramas de transformación que se animan. La interfaz tiene métodos para mezclar varias animaciones y modificar parámetros de combinación a lo largo del tiempo para permitir transiciones fluidas y otros efectos.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ID3DXAnimationController** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXAnimationController también** tiene estos tipos de miembros:
 
@@ -52,7 +52,7 @@ La **interfaz ID3DXAnimationController** tiene estos métodos.
 | [**GetMaxNumTracks**](id3dxanimationcontroller--getmaxnumtracks.md)                     | Obtiene el número máximo de pistas en el controlador de animación.<br/>                                                                               |
 | [**GetNumAnimationSets**](id3dxanimationcontroller--getnumanimationsets.md)             | Devuelve el número de conjuntos de animación registrados actualmente en el controlador de animación.<br/>                                                       |
 | [**GetPriorityBlend**](id3dxanimationcontroller--getpriorityblend.md)                   | Obtiene el peso de combinación de prioridad actual utilizado por el controlador de animación.<br/>                                                                  |
-| [**GetTime**](id3dxanimationcontroller--gettime.md)                                     | Obtiene el tiempo de animación global.<br/>                                                                                                              |
+| [**ConocerHora**](id3dxanimationcontroller--gettime.md)                                     | Obtiene el tiempo de animación global.<br/>                                                                                                              |
 | [**GetTrackAnimationSet**](id3dxanimationcontroller--gettrackanimationset.md)           | Obtiene el conjunto de animaciones para la pista determinada.<br/>                                                                                                  |
 | [**GetTrackDesc**](id3dxanimationcontroller--gettrackdesc.md)                           | Obtiene la descripción de la pista.<br/>                                                                                                                  |
 | [**GetUpcomingPriorityBlend**](id3dxanimationcontroller--getupcomingpriorityblend.md)   | Devuelve un identificador de evento al siguiente evento blend de prioridad programado para producirse después de un evento especificado.<br/>                                         |
@@ -83,7 +83,7 @@ La **interfaz ID3DXAnimationController** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cree un objeto de controlador de animación [**con D3DXCreateAnimationController**](d3dxcreateanimationcontroller.md).
 
@@ -126,7 +126,7 @@ typedef D3DXEVENTHANDLE *LPD3DXEVENTHANDLE;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

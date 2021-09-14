@@ -8,12 +8,12 @@ keywords:
 - Bluetooth y WSALookupServiceEnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bd6c893a06fbf586d07e3a2581d1d25626e161508e505dc089d7660267bae92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a032ef5d0e4fa785626ad10c64d6ddc5d383be2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119081099"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160368"
 ---
 # <a name="bluetooth-and-wsalookupserviceend"></a>Bluetooth y WSALookupServiceEnd
 
@@ -40,7 +40,7 @@ Los pasos para la consulta de dispositivos y la detección de Bluetooth son lo s
 [**BTH \_ QUERY \_ SERVICE**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_service)
 </dt> <dt>
 
-[**conectar**](/windows/desktop/api/winsock2/nf-winsock2-connect)
+[**Conectar**](/windows/desktop/api/winsock2/nf-winsock2-connect)
 </dt> <dt>
 
 [**SOCKADDR \_ BTH**](/windows/desktop/api/Ws2bth/ns-ws2bth-sockaddr_bth)

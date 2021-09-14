@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9842e774d95a906168c341930fb493c7fa3973ee9bde385e09110c091f0e3d59
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc42d283231a0e49359531827cc785bd83aefc2b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118094219"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888545"
 ---
 # <a name="id3dxanimationcontrollersettrackweight-method"></a>Método ID3DXAnimationController::SetTrackWeight
 
@@ -63,7 +63,7 @@ Valor de peso.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

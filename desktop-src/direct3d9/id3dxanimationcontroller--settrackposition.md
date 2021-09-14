@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5fbcc55f1403df0577937695d3e831aa73514304f10a6e659911d146f5b7d251
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 95c408a43df3047a52d93da0cca3d9b17053d320
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964864"
 ---
 # <a name="id3dxanimationcontrollersettrackposition-method"></a>Método ID3DXAnimationController::SetTrackPosition
 
@@ -55,7 +55,7 @@ Identificador de seguimiento.
 
 Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Valor de hora de animación local que se asigna a la pista.
+Valor de tiempo de animación local que se asignará a la pista.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Valor de hora de animación local que se asigna a la pista.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

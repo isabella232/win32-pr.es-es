@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 230c750c36b9241f6aa4840daf6a4f3a512d42a5dcd899bc555b44a48cb3ac53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b49a589fa1702f61e5a5daef806a5b36d464d0ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119750925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888681"
 ---
 # <a name="d3dpresentstats-structure"></a>D3DPRESENTSTATS (estructura)
 
@@ -39,7 +39,7 @@ typedef struct _D3DPRESENTSTATS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -98,7 +98,7 @@ Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando una aplicación 9Ex adopta el modo de volteo presente (D3DSWAPEFFECT FLIPEX), las aplicaciones pueden detectar la colocación de fotogramas llamando a \_ GetPresentStatistics en cualquier momento. En efecto, pueden hacer lo siguiente.
 
@@ -167,7 +167,7 @@ Las aplicaciones pueden detectar un problema si se realiza un seguimiento de Syn
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

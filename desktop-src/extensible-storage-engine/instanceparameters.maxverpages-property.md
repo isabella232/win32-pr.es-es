@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2ce33867409725a017ee5e80a936e40ecdb0c280f37d92718412d97502002452
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd6a561a4005ab0992f6d32dbe6c65a241f517d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039383"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964360"
 ---
 # <a name="instanceparametersmaxverpages-property"></a>Propiedad InstanceParameters.MaxVerPages
 
@@ -40,7 +40,7 @@ Obtiene o establece el número máximo de páginas de almacén de versiones rese
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ public int MaxVerPages { get; set; }
 
 Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

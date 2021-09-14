@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: JET_UNICODEINDEX.lcid'
-title: JET_UNICODEINDEX.lcid, propiedad
+title: JET_UNICODEINDEX.lcid
 TOCTitle: 'lcid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_UNICODEINDEX.lcid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_unicodeindex.lcid(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9c67097724d8afb9028ba4a4593999671a4deff5ac1ffc22d99e7a5469462e2c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2edbe2e8819d8b4a3a7299d285a39e8f7e3e05c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118251709"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965556"
 ---
-# <a name="jet_unicodeindexlcid-property"></a>JET_UNICODEINDEX.lcid, propiedad
+# <a name="jet_unicodeindexlcid-property"></a>JET_UNICODEINDEX.lcid
 
 Obtiene o establece el LCID que se va a usar al normalizar los datos Unicode.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

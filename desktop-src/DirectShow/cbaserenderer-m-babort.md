@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ef77bb1db508459bb96b3ebfa8970096ac2b1dbbf5d6c4242fb1b8350297e810
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 85b6a972cac8a381030ae04b8da806d92fe9c849
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119502775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161611"
 ---
-# <a name="cbaserendererm_babort-member"></a>CBaseRenderer::m \_ bAbort member
+# <a name="cbaserendererm_babort-member"></a>Miembro BBaseRenderer::m \_ bAbort
 
 Marca que indica si se debe detener la representación y rechazar más ejemplos.
 
@@ -47,7 +47,7 @@ BOOL m_bAbort;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

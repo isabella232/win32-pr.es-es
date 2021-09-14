@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d0acc8b0db9d6e08e059c70d41f51d42ddf70cd43034a4f2c015da05a2a2c114
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dfcc1a88d8bb5fc1317eb60d43187671f8f27eba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119635235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161633"
 ---
 # <a name="cbaserenderercbaserenderer-destructor"></a>Destructor CBaseRenderer.~CBaseRenderer
 
@@ -32,7 +32,7 @@ Método destructor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

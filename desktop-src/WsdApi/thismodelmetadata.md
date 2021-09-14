@@ -4,12 +4,12 @@ ms.assetid: 2ebd3092-39aa-469c-a8c9-23f373ba0e66
 title: elemento thisModelMetadata
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01d074e7e9c8d43e078ebc477366d88608e7c4f3fade6c0be3dbc6fda23f006b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 872bcdfcf3f93bfc8fe307684c31cdebb2000b05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118991555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965228"
 ---
 # <a name="thismodelmetadata-element"></a>elemento thisModelMetadata
 
@@ -33,10 +33,10 @@ No hay atributos.
 
 | Elemento                                                     | Descripción                                                                                                                                                                        |
 |-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**fabricante**](manufacturer.md)<br/>             | Nombre del fabricante. Al menos uno de [**los fabricantesLS**](manufacturer.md) debe estar presente en los metadatos. [](manufacturerls.md)<br/> <br/> |
+| [**Fabricante**](manufacturer.md)<br/>             | Nombre del fabricante. Al menos uno [](manufacturerls.md) de los [**fabricantesLS**](manufacturer.md) debe estar presente en los metadatos.<br/> <br/> |
 | [**manufacturerLS**](manufacturerls.md)<br/>         | Versión localizada del nombre del fabricante.<br/> <br/>                                                                                                                 |
 | [**manufacturerURL**](manufacturerurl.md)<br/>       | Dirección URL del fabricante.<br/> <br/>                                                                                                                                   |
-| [**modelName**](modelname.md)<br/>                   | Nombre del dispositivo. Al menos uno de [**los valores modelName o**](modelname.md) [**modelNameLS**](modelnamels.md) debe estar presente en los metadatos.<br/> <br/>                   |
+| [**modelName**](modelname.md)<br/>                   | Nombre del dispositivo. Al menos uno de [**los valores modelName**](modelname.md) o [**modelNameLS**](modelnamels.md) debe estar presente en los metadatos.<br/> <br/>                   |
 | [**modelNameLS**](modelnamels.md)<br/>               | Versión localizada del nombre del dispositivo.<br/> <br/>                                                                                                                       |
 | [**modelNumber**](modelnumber.md)<br/>               | Número de modelo del dispositivo.<br/> <br/>                                                                                                                                 |
 | [**modelURL**](modelurl.md)<br/>                     | Dirección URL del modelo de dispositivo.<br/> <br/>                                                                                                                           |
@@ -71,13 +71,13 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los metadatos del fabricante coinciden con la sección de metadatos del fabricante descrita en el perfil de dispositivo (consulte el perfil de dispositivo para obtener más información). Debe proporcionarse el nombre del fabricante o al menos una versión localizada del nombre del fabricante. Se debe proporcionar el nombre del modelo o al menos una versión localizada del nombre del modelo.
+Los metadatos del fabricante coinciden con la sección de metadatos del fabricante descrita en el perfil de dispositivo (consulte el perfil del dispositivo para obtener más información). Se debe proporcionar el nombre del fabricante o al menos una versión localizada del nombre del fabricante. Se debe proporcionar el nombre del modelo o al menos una versión localizada del nombre del modelo.
 
 El [**elemento thisModelMetadataDefinition**](thismodelmetadatadefinition.md) se usa posteriormente para generar una constante de C que contiene esta información.
 
-Si hay [**un elemento PnPXDeviceCategory**](pnpxdevicecategory.md) presente, al menos un elemento hospedado debe contener los elementos [**PnPXHardwareId**](pnpxhardwareid.md) y [**PnPXCompatibleId.**](pnpxcompatibleid.md) [](hosted.md) Del mismo modo, si los elementos **PnPXHardwareId** y  **PnPXCompatibleId** están presentes en un elemento hospedado, debe haber un elemento **PnPXDeviceCategory** dentro del elemento **thisModelMetadata.**
+Si hay [**un elemento PnPXDeviceCategory,**](pnpxdevicecategory.md) [](hosted.md) al menos un elemento hospedado debe contener los elementos [**PnPXHardwareId**](pnpxhardwareid.md) y [**PnPXCompatibleId.**](pnpxcompatibleid.md) Del mismo modo, si los elementos **PnPXHardwareId** y  **PnPXCompatibleId** están presentes en un elemento hospedado, debe haber un elemento **PnPXDeviceCategory** dentro del **elemento thisModelMetadata.**
 
 ## <a name="element-information"></a>Información de elemento
 

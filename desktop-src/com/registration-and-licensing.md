@@ -4,12 +4,12 @@ description: Registro y licencias
 ms.assetid: 8f61edda-41f9-41a2-8392-cb8cb5b758fa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dffb0bf370f2f3a7664f04f4e368ebb636d2725a1be450e298077a92524a7c31
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b95e311776e039e4f1e57877b6e07dda47914be2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118104772"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966947"
 ---
 # <a name="registration-and-licensing"></a>Registro y licencias
 

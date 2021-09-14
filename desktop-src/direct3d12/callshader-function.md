@@ -12,18 +12,18 @@ api_name:
 - CallShader
 api_type:
 - NA
-ms.openlocfilehash: e411ef61c34eafcef71f3e68f6700651e4b3073423afd40451f139f02826e504
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8c5cdf4e0a71430d6375fd75ca553f92ca9539b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119280355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966872"
 ---
 # <a name="callshader-function"></a>Función CallShader
 
 Invoca otro sombreador desde dentro de un sombreador.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 Esta definición de función intrínseca es equivalente a la siguiente plantilla de función:
 
 ```
@@ -48,7 +48,7 @@ Parámetros definidos por el usuario que se pasan al sombreador al que se puede 
 
 **void**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
@@ -59,7 +59,7 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador de rayt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

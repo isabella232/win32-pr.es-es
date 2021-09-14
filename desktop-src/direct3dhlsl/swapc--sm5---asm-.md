@@ -4,12 +4,12 @@ description: Realiza un intercambio condicional por componente de los valores en
 ms.assetid: 3DFCEB82-076E-4AFA-915F-47390A355B7C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d09d52bd497c7819500c11c4464907e4a7854bb305ed0e31d53b897ba4cf7e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46d2ee674a1cb1067594b0e96c739ff8df73b152
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119486265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966536"
 ---
 # <a name="swapc-sm5---asm"></a>swapc (sm5 - asm)
 
@@ -38,11 +38,11 @@ Realiza un intercambio condicional por componente de los valores entre dos regis
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La codificación de esta instrucción intenta expresar de forma compacta varios intercambios condicionales paralelos de escalares en dos registros de 4 componentes, con una pequeña flexibilidad en la organización de los pares de números implicados en el intercambio.
 
-La elección del registro y el valor de *src0,* *src1* y *src2* no están restringidas de ninguna manera, como [movc](movc--sm4---asm-.md).
+La elección del registro y el valor de *src0,* *src1* y *src2* no están entrelazadas de ninguna manera, como [movc](movc--sm4---asm-.md).
 
 La semántica de esta instrucción se puede describir mediante las operaciones equivalentes con la **instrucción movc.** El peor de los casos se muestra en el ejemplo siguiente, asegurando de que los registros de destino no se actualizan hasta el final.
 
@@ -90,12 +90,12 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

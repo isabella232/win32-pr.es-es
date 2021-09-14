@@ -8,19 +8,19 @@ keywords:
 - ATRIBUTOS ADSI, Modificar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef82d6a3d4c486fcd1fca1f5cba7ae62f57e66e713ed84551a5a9372cdc86683
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f4f3b24b151d9991e1346cd18d396892f828f4dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887169"
 ---
 # <a name="modifying-attributes-with-adsi"></a>Modificación de atributos con ADSI
 
-Para modificar los valores de atributo, ADSI proporciona los [**métodos IADs.Put**](/windows/desktop/api/Iads/nf-iads-iads-put) [**e IADs.PutEx.**](/windows/desktop/api/Iads/nf-iads-iads-putex) Estos métodos modifican los datos de la caché del lado cliente. Se [**debe llamar al método IADs.SetInfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) para confirmar los cambios en el directorio.
+Para modificar los valores de atributo, ADSI proporciona los [**métodos IADs.Put**](/windows/desktop/api/Iads/nf-iads-iads-put) [**e IADs.PutEx.**](/windows/desktop/api/Iads/nf-iads-iads-putex) Estos métodos modifican los datos de la caché del lado cliente. Se debe llamar al [**método IADs.SetInfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) para confirmar los cambios en el directorio.
 
 > [!Note]  
-> Cuando se confirman varios cambios de atributo en una sola llamada a [**IADs.SetInfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo), si no se puede modificar ningún atributo único, no se modificará ninguno de los atributos. Por ejemplo, si modifica los atributos [**sn**](/windows/desktop/ADSchema/a-sn) y [**givenName**](/windows/desktop/ADSchema/a-givenname) y borra el atributo [**telephoneNumber**](/windows/desktop/ADSchema/a-telephonenumber) de un objeto de usuario sin llamadas posteriores al **método SetInfo,** los cambios se introducen al llamar a **SetInfo**. Si no se permiten una o varias de las modificaciones y, por tanto, no se pueden realizar, ninguna de las modificaciones colectivas realizadas en los atributos se introduce durante la llamada a **SetInfo**.
+> Cuando se confirman varios cambios de atributo en una sola llamada a [**IADs.SetInfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo), si no se puede modificar ningún atributo único, no se modificará ninguno de los atributos. Por ejemplo, si modifica los atributos [**sn**](/windows/desktop/ADSchema/a-sn) y [**givenName**](/windows/desktop/ADSchema/a-givenname) y borra el atributo [**telephoneNumber**](/windows/desktop/ADSchema/a-telephonenumber) de un objeto de usuario sin llamadas posteriores al **método SetInfo,** los cambios se introducen cuando se llama a **SetInfo**. Si no se permiten una o varias de las modificaciones y, por tanto, no se pueden realizar, no se introduce ninguna de las modificaciones colectivas realizadas en los atributos durante la llamada a **SetInfo**.
 
  
 

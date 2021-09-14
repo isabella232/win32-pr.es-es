@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_FILE_ALLOCATE mensaje (Vfw.h)
-description: El mensaje \_ WM CAP FILE ALLOCATE crea \_ \_ (prealloca) un archivo de captura de un tamaño especificado. Puede enviar este mensaje explícitamente o mediante la macro capFileAlloc.
+description: El mensaje \_ WM CAP FILE ALLOCATE crea \_ \_ (preasigna) un archivo de captura de un tamaño especificado. Puede enviar este mensaje explícitamente o mediante la macro capFileAlloc.
 ms.assetid: 31ebe824-4a30-4212-9479-a5cbd8fc1e1d
 keywords:
 - WM_CAP_FILE_ALLOCATE mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 1d36cec54e5775641118679b24b0d4b3b1767693
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161363"
 ---
 # <a name="wm_cap_file_allocate-message"></a>Mensaje \_ WM CAP FILE \_ \_ ALLOCATE
 
-El **mensaje WM CAP FILE \_ \_ \_ ALLOCATE** crea (prealloca) un archivo de captura de un tamaño especificado. Puede enviar este mensaje explícitamente o mediante la [**macro capFileAlloc.**](/windows/desktop/api/Vfw/nf-vfw-capfilealloc)
+El **mensaje WM CAP FILE \_ \_ \_ ALLOCATE** crea (preasigna) un archivo de captura de un tamaño especificado. Puede enviar este mensaje explícitamente o mediante la [**macro capFileAlloc.**](/windows/desktop/api/Vfw/nf-vfw-capfilealloc)
 
 
 ```C++
@@ -67,7 +67,7 @@ Puede mejorar significativamente el rendimiento de la captura de streaming media
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

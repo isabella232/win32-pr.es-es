@@ -5,7 +5,7 @@ ms.assetid: 5d505ce0-18cf-4e38-b1b8-026303f7069b
 ms.tgt_platform: multiple
 keywords:
 - Propiedad MsRdpWorkspace Servicios de Escritorio remoto
-- Interfaz de la propiedad MsRdpWorkspace Servicios de Escritorio remoto , IMsRdpClientShell2
+- Propiedad MsRdpWorkspace Servicios de Escritorio remoto , interfaz IMsRdpClientShell2
 - Interfaz IMsRdpClientShell2 Servicios de Escritorio remoto , propiedad MsRdpWorkspace
 topic_type:
 - apiref
@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6470f51ccae2efb6dc3d44a7b0a2a0310ad4230861d7d86262f34fd312fcfc5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91eadd3f1b422e3da96d5bcd3a5178a2a0b0eb52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118854445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886097"
 ---
 # <a name="imsrdpclientshell2msrdpworkspace-property"></a>IMsRdpClientShell2::MsRdpWorkspace, propiedad
 
@@ -46,7 +46,7 @@ HRESULT get_MsRdpWorkspace(
 
 Dirección de un puntero a la [**interfaz IMsRdpWorkspace.**](imsrdpworkspace.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**interfaz IMsRdpWorkspace**](imsrdpworkspace.md) no se expone como una interfaz personalizada. Solo se puede acceder a través [de métodos IDispatch.](/windows/desktop/com/exposing-methods-through-idispatch)
 
@@ -54,7 +54,7 @@ La [**interfaz IMsRdpWorkspace**](imsrdpworkspace.md) no se expone como una inte
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                             |
@@ -62,7 +62,7 @@ La [**interfaz IMsRdpWorkspace**](imsrdpworkspace.md) no se expone como una inte
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

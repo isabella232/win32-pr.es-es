@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bec13f48ac58def00ddc8d6bc3ae51b5f67ad01ae271898522cddfe2960f20c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15db375650ab62d0576bc19708d0d3fd90c40b14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119968396"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965740"
 ---
 # <a name="jet_columnlistcolumniddefault-property"></a>JET_COLUMNLIST.columnidDefault, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el columnid de la columna de la tabla temporal que almacena el valor pre
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public JET_COLUMNID columnidDefault { get; internal set; }
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

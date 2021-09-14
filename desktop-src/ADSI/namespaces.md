@@ -7,12 +7,12 @@ keywords:
 - adsi de espacios de nombres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d416782f2a96ca716f6e803ad9d0b4200c82cff6ad0ad033751a89a5d2c8af1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d29d93963b2fc2b3fa6ea0eb486fe95b46ba0e9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117839390"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887113"
 ---
 # <a name="namespaces"></a>Espacios de nombres
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 317b9aa1efc6a39bf9bf192c87cd5742afea5453e2ad084ad179b32d88157e14
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56afc7cb576bc469a7b6e52b63f914b35e01a594
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119480545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966156"
 ---
 # <a name="esentinvalidtableidexception-constructor"></a>Constructor EsentInvalidTableIdException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidTableIdException()
 public EsentInvalidTableIdException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

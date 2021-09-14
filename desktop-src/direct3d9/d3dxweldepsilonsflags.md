@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: c206718cd55a05d67d0a38d90c254238b63e964fa1f26149e75b57e09db359e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e67c8b0f0bf93c9da181a5bba9a694525bd9819
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119044493"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963736"
 ---
 # <a name="d3dxweldepsilonsflags-enumeration"></a>Enumeración D3DXWELDEPSILONSFLAGS
 
 Opciones para la colaboración entre vértices.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -81,7 +81,7 @@ Indica a la clase que no divida los vértices que están en grupos de atributos 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

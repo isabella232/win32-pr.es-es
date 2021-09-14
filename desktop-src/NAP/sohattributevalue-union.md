@@ -1,9 +1,9 @@
 ---
-title: SoHAttributeValue Union (NapProtocol. h)
+title: Unión de SoHAttributeValue (NapProtocol.h)
 description: Define el contenido del miembro de tipo en una estructura SoHAttribute.
 ms.assetid: 53b30455-33a5-4cf5-8d4e-f0fa8e4e1a12
 keywords:
-- SoHAttributeValue Union NAP
+- Nap de unión de SoHAttributeValue
 topic_type:
 - apiref
 api_name:
@@ -15,20 +15,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 36660e4e360ff0df31bb3a76d06c50e5d366c894
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492334"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161235"
 ---
-# <a name="sohattributevalue-union"></a>Unión SoHAttributeValue
+# <a name="sohattributevalue-union"></a>Unión de SoHAttributeValue
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-La Unión **SoHAttributeValue** define el contenido del miembro de **tipo** en una estructura [**SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute) . La estructura de la Unión **SoHAttributeValue** viene determinada por el [**SoHAttributeType**](sohattributetype-enum.md) especificado en el miembro de **tipo** de la estructura [**SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute) .
+La **unión SoHAttributeValue** define el contenido del miembro **de tipo** en una estructura [**SoHAttribute.**](/windows/win32/api/naptypes/ns-naptypes-sohattribute) La estructura de la **unión SoHAttributeValue** viene determinada por el [**Valor SoHAttributeType**](sohattributetype-enum.md) especificado en el miembro **type** de la [**estructura SoHAttribute.**](/windows/win32/api/naptypes/ns-naptypes-sohattribute)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,23 +61,23 @@ typedef union tagSoHAttributeValue {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **idVal**
 </dt> <dd>
 
-**caso (sohAttributeTypeSystemHealthId)**
+**case(sohAttributeTypeSystemHealthId)**
 
-Un [SystemHealthEntityId](nap-datatypes.md) único que contiene el identificador del agente de mantenimiento del sistema (SHA) o el validador de mantenimiento del sistema (SHV) que construyó este paquete [**SOH**](/windows/win32/api/naptypes/ns-naptypes-soh) .
+[SystemHealthEntityId](nap-datatypes.md) único que contiene el identificador del agente de mantenimiento del sistema (SHA) o del validador de estado del sistema (SHV) que construyó este [**paquete soH.**](/windows/win32/api/naptypes/ns-naptypes-soh)
 
 </dd> <dt>
 
 **v4AddressesVal**
 </dt> <dd>
 
-**caso (sohAttributeTypeIpv4FixupServers)**
+**case(sohAttributeTypeIpv4FixupServers)**
 
 Las direcciones IPv4 de los servidores de corrección en uso por el sistema NAP.
 
@@ -86,21 +86,21 @@ Las direcciones IPv4 de los servidores de corrección en uso por el sistema NAP.
 **count**
 </dt> <dd>
 
-El número de direcciones IPv4 en el miembro **Addresses** en el intervalo de 1 a [**maxIpv4CountPerSoHAttribute**](nap-type-constants.md).
+Número de direcciones IPv4 del miembro **addresses** en el intervalo de 1 a [**maxIpv4CountPerSoHAttribute.**](nap-type-constants.md)
 
 </dd> <dt>
 
 **addresses**
 </dt> <dd>
 
-Una matriz de estructuras [**direcciónipv4**](/windows/win32/api/naptypes/ns-naptypes-ipv4address) que contienen las direcciones IPv4.
+Matriz de [**estructuras Ipv4Address**](/windows/win32/api/naptypes/ns-naptypes-ipv4address) que contienen las direcciones IPv4.
 
 </dd> </dl> </dd> <dt>
 
 **v6AddressesVal**
 </dt> <dd>
 
-**caso (sohAttributeTypeIpv6FixupServers)**
+**case(sohAttributeTypeIpv6FixupServers)**
 
 Las direcciones IPv6 de los servidores de corrección en uso por el sistema NAP.
 
@@ -109,39 +109,39 @@ Las direcciones IPv6 de los servidores de corrección en uso por el sistema NAP.
 **count**
 </dt> <dd>
 
-El número de direcciones IPv4 en el miembro **Addresses** en el intervalo de 1 a [**maxIpv6CountPerSoHAttribute**](nap-type-constants.md).
+Número de direcciones IPv4 del miembro **addresses** en el intervalo de 1 a [**maxIpv6CountPerSoHAttribute.**](nap-type-constants.md)
 
 </dd> <dt>
 
 **addresses**
 </dt> <dd>
 
-Una matriz de estructuras [**DirecciónIPv6**](/windows/win32/api/naptypes/ns-naptypes-ipv6address) que contienen las direcciones IPv4.
+Matriz de [**estructuras Ipv6Address**](/windows/win32/api/naptypes/ns-naptypes-ipv6address) que contienen las direcciones IPv4.
 
 </dd> </dl> </dd> <dt>
 
 **codesVal**
 </dt> <dd>
 
-**Case (sohAttributeTypeComplianceResultCodes, sohAttributeTypeErrorCodes)**
+**case(sohAttributeTypeComplianceResultCodes, sohAttributeTypeErrorCodes)**
 
-Una estructura [**ResultCodes**](/windows/win32/api/naptypes/ns-naptypes-resultcodes) que contiene los códigos de resultado de compatibilidad definidos por la aplicación de las [**constantes de error**](nap-error-constants.md)de cliente o NAP. Un paquete [**SOH**](/windows/win32/api/naptypes/ns-naptypes-soh) debe contener este TLV o el TLV **sohAttributeTypeFailureCategory** .
+Estructura [**ResultCodes que**](/windows/win32/api/naptypes/ns-naptypes-resultcodes) contiene los códigos de resultados de cumplimiento definidos por la aplicación del cliente o [**las constantes de error nap**](nap-error-constants.md). Un [**paquete SoH**](/windows/win32/api/naptypes/ns-naptypes-soh) debe contener este TLV o **sohAttributeTypeFailureCategory** TLV.
 
 </dd> <dt>
 
 **dateTimeVal**
 </dt> <dd>
 
-**Case (sohAttributeTypeTimeOfLastUpdate, sohAttributeTypeSoHGenerationTime)**
+**case(sohAttributeTypeTimeOfLastUpdate, sohAttributeTypeSoHGenerationTime)**
 
-Una estructura [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) que contiene la hora de la última actualización de [**SOH**](/windows/win32/api/naptypes/ns-naptypes-soh) o la hora de generación de **SOH** .
+Estructura [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) que contiene la hora de la última actualización [**de SoH**](/windows/win32/api/naptypes/ns-naptypes-soh) o el tiempo **de generación de SoH.**
 
 </dd> <dt>
 
 **vendorSpecificVal**
 </dt> <dd>
 
-**caso (sohAttributeTypeVendorSpecific)**
+**case(sohAttributeTypeVendorSpecific)**
 
 Datos específicos de la aplicación definidos por el proveedor.
 
@@ -150,30 +150,30 @@ Datos específicos de la aplicación definidos por el proveedor.
 **vendorId**
 </dt> <dd>
 
-Identificador de 4 bytes que define el identificador de par SHA/SHV. Los primeros 3 bytes son el código SMI asignado por IETF del proveedor y el último byte identifica el propio componente. Al implementar un SHA o SHV, no use los valores de identificador asignados a los componentes internos de mantenimiento del sistema de Microsoft en las [**constantes de proveedor de NAP**](nap-vendor-constants.md).
+Identificador de 4 bytes que define el identificador de par SHA/SHV. Los tres primeros bytes son el código SMI asignado por IETF del proveedor y el último byte identifica el propio componente. Al implementar sha o SHV, no use los valores de identificador asignados a los componentes internos de mantenimiento del sistema de Microsoft en [**las constantes del proveedor nap**](nap-vendor-constants.md).
 
 </dd> <dt>
 
 **size**
 </dt> <dd>
 
-Tamaño, en bytes, de los datos del proveedor en el intervalo de 0 a ([**maxSoHAttributeSize**](nap-type-constants.md) -4).
+Tamaño, en bytes, de los datos del proveedor en el intervalo de 0 a ([**maxSoHAttributeSize**](nap-type-constants.md) - 4).
 
 </dd> <dt>
 
 **vendorSpecificData**
 </dt> <dd>
 
-Puntero a los datos específicos del proveedor en el orden de bytes de la red.
+Puntero a los datos específicos del proveedor en orden de bytes de red.
 
 </dd> </dl> </dd> <dt>
 
 **uint8Val**
 </dt> <dd>
 
-**Case (sohAttributeTypeHealthClass, sohAttributeTypeFailureCategory, sohAttributeTypeExtendedIsolationState)**
+**case(sohAttributeTypeHealthClass, sohAttributeTypeFailureCategory,sohAttributeTypeExtendedIsolationState)**
 
-La clase de estado, la categoría de error o el estado de aislamiento extendido de un componente NAP como un valor de [**HealthClassValue**](healthclassvalue-enum.md) o [**FailureCategory**](/windows/win32/api/naptypes/ne-naptypes-failurecategory) , o una estructura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) .
+Clase de mantenimiento, categoría de error o estado de aislamiento extendido de un componente NAP como un [**valor HealthClassValue**](healthclassvalue-enum.md) o [**FailureCategory,**](/windows/win32/api/naptypes/ne-naptypes-failurecategory) o una [**estructura IsolationInfoEx.**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex)
 
 </dd> <dt>
 
@@ -189,27 +189,27 @@ Los valores de los atributos siguientes son cadenas de octeto:
 -   sohAttributeTypeProductName
 -   sohAttributeTypeHealthClassStatus
 
-En cuanto a la compatibilidad con versiones posteriores, todos los atributos no reconocidos se devuelven como cadenas de octeto. los **datos** deben estar en el orden de bytes de la red.
+Por compatibilidad con versiones adicionales, todos los atributos no reconocidos se devuelven como cadenas de octeto. **los datos** deben estar en orden de bytes de red.
 
 <dl> <dt>
 
 **size**
 </dt> <dd>
 
-Tamaño, en bytes, de los **datos** del intervalo de 0 a [**maxSoHAttributeSize**](nap-type-constants.md).
+Tamaño, en bytes, de **los datos** del intervalo de 0 a [**maxSoHAttributeSize.**](nap-type-constants.md)
 
 </dd> <dt>
 
 **data**
 </dt> <dd>
 
-Puntero al valor de la cadena de octeto.
+Puntero al valor de cadena de octeto.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="actual-data-layout"></a>Diseño de datos real
 
-Debido a la naturaleza del entorno de publicación de SDK, las uniones no se representan claramente en bloques de sintaxis. Esta es la sintaxis real del archivo de encabezado NapProtocol. h.
+Debido a la naturaleza del entorno de publicación del SDK, las uniones no se representan claramente en bloques de sintaxis. Esta es la sintaxis real del archivo de encabezado NapProtocol.h.
 
 
 ```C++
@@ -274,7 +274,7 @@ typedef [switch_type(SoHAttributeType)]
 
 ## <a name="remarks"></a>Observaciones
 
-Estos tipos de atributo los consume el sistema NAP:
+El sistema NAP consume estos tipos de atributo:
 
 -   sohAttributeTypeSystemHealthId
 -   sohAttributeTypeIpv4FixupServers
@@ -282,7 +282,7 @@ Estos tipos de atributo los consume el sistema NAP:
 -   sohAttributeTypeComplianceResultCodes
 -   sohAttributeTypeFailureCategory
 
-El resto de los [**SoHAttributeTypes**](sohattributetype-enum.md) están pensados exclusivamente como instrucciones prescriptivas para el uso por parte de los Sha y los SHV.
+El resto de [**los SoHAttributeTypes**](sohattributetype-enum.md) están diseñados exclusivamente como instrucciones preceptivas para su uso por parte de SHAs y SHV.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -290,21 +290,21 @@ El resto de los [**SoHAttributeTypes**](sohattributetype-enum.md) están pensado
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
+| Encabezado<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Referencia de NAP](nap-reference.md)
 </dt> <dt>
 
-[Estructuras de NAP](nap-structures.md)
+[Estructuras nap](nap-structures.md)
 </dt> </dl>
 
  

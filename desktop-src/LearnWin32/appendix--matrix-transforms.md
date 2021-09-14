@@ -4,12 +4,12 @@ description: En este tema se proporciona información general matemática de las
 ms.assetid: 8cc01f45-dd84-4f3e-a5f2-26edc5cbdfa1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12d02976446824bba07829173bb326338a55732b39c640c93319630a209096b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a5a9b09f75b17e4baf8afe5e7fde8643c06982f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118389335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160010"
 ---
 # <a name="appendix-matrix-transforms"></a>Apéndice: Transformaciones de matriz
 
@@ -22,7 +22,7 @@ En este tema se proporciona información general matemática de las transformaci
     -   [Transformación de escalado](#scaling-transform)
     -   [Rotación alrededor del origen](#rotation-around-the-origin)
     -   [Rotación alrededor de un punto arbitrario](#rotation-around-an-arbitrary-point)
-    -   [Transformación de asimetría](#skew-transform)
+    -   [Transformación de sesgo](#skew-transform)
 -   [Representación de transformaciones en Direct2D](#representing-transforms-in-direct2d)
 -   [Siguiente](#next)
 
@@ -71,7 +71,7 @@ Este es un ejemplo de multiplicación de una matriz (2 × 2) por una matriz (2 �
 
 ![multiplicación de matriz.](images/matrix03.png)
 
-La multiplicación de matrices no es conmutativa. Es decir, A × B ≠ B × A. Además, a partir de la definición se sigue que no se pueden multiplicar todos los pares de matrices. El número de columnas de la matriz de la izquierda debe ser igual al número de filas de la matriz de la derecha. De lo contrario, × operador no está definido.
+La multiplicación de matrices no es conmutativa. Es decir, A × B ≠ B × A. Además, a partir de la definición siguiente, no se pueden multiplicar todos los pares de matrices. El número de columnas de la matriz de la izquierda debe ser igual al número de filas de la matriz de la derecha. De lo contrario, × operador no está definido.
 
 *Identifique la matriz*. Una matriz de identidad, designada I, es una matriz cuadrada definida de la siguiente manera:
 
@@ -99,7 +99,7 @@ Las transformaciones afín para el espacio 2D tienen el formato siguiente.
 
 ![Muestra una transformación afín para el espacio 2D.](images/matrix05.png)
 
-Si aplica la definición de multiplicación de matriz que se ha dado anteriormente, puede mostrar que el producto de dos transformaciones afín es otra transformación afín. Para transformar un punto 2D mediante una transformación afín, el punto se representa como una matriz 1 × 3.
+Si aplica la definición de multiplicación de matriz dada anteriormente, puede mostrar que el producto de dos transformaciones afín es otra transformación afín. Para transformar un punto 2D mediante una transformación afín, el punto se representa como una matriz 1 × 3.
 
 <dl> P = \| x y 1 \|  
 </dl>
@@ -113,7 +113,7 @@ Esto se expande a lo siguiente.
 
 ![transformación de affine.](images/matrix06.png)
 
-where
+, donde
 
 <dl> x' = ax + cy + e  
 y' = bx + dy + f  
@@ -125,7 +125,7 @@ Para obtener el punto transformado, tome los dos primeros elementos de la matriz
 </dl>
 
 > [!Note]  
-> Una matriz × *n se* denomina vector *de fila*. Tanto Direct2D como Direct3D usan vectores de fila para representar puntos en espacio 2D o 3D. Puede obtener un resultado equivalente mediante un vector de columna *(n* × 1) y la matriz de transformación. La mayoría de los textos gráficos usan el formato de vector de columna. En este tema se presenta el formato de vector de fila para mantener la coherencia con Direct2D y Direct3D.
+> Una matriz × *n se* denomina vector *de fila*. Tanto Direct2D como Direct3D usan vectores de fila para representar puntos en espacio 2D o 3D. Puede obtener un resultado equivalente mediante un vector de columna *(n ×* 1) y la matriz de transformación. La mayoría de los textos gráficos usan el formato de vector de columna. En este tema se presenta el formato de vector de fila para mantener la coherencia con Direct2D y Direct3D.
 
  
 
@@ -163,13 +163,13 @@ que corresponde al punto (x,y) escalado por *dx* y *dy*.
 
 ### <a name="rotation-around-the-origin"></a>Rotación alrededor del origen
 
-La matriz para girar un punto alrededor del origen tiene el formato siguiente.
+La matriz para girar un punto alrededor del origen tiene la forma siguiente.
 
 ![Muestra una fórmula para una transformación de rotación.](images/matrix11.png)
 
 El punto transformado es:
 
-<dl> P' = (*x* cosΘ – ysinA, *x* sinN + *y* cos):
+<dl> P' = (*x* cosΘ – ysinΘ, *x* sinN + *y* cosΘ)
 </dl>
 
 Prueba. Para mostrar que P' representa una rotación, considere el diagrama siguiente.
@@ -201,7 +201,7 @@ Punto original que se debe transformar.
 
 </dd> <dt>
 
-<span id="P_____x__y__"></span><span id="p_____x__y__"></span><span id="P_____X__Y__"></span>P' = (x', y')
+<span id="P_____x__y__"></span><span id="p_____x__y__"></span><span id="P_____X__Y__"></span>P' = (x',y')
 </dt> <dd>
 
 Punto transformado.
@@ -216,27 +216,27 @@ Longitud de la línea (0,0) a P. También el radio del círculo de rotación.
 </dd> </dl>
 
 > [!Note]  
-> En este diagrama se usa el sistema de coordenadas estándar que se usa en la geometría, donde el eje Y positivo apunta hacia arriba. Direct2D usa el Windows coordenadas, donde el eje Y positivo apunta hacia abajo.
+> En este diagrama se usa el sistema de coordenadas estándar que se usa en geometría, donde apunta hacia arriba el eje Y positivo. Direct2D usa el Windows coordenadas, donde el eje Y positivo apunta hacia abajo.
 
  
 
-El ángulo entre el eje X y la línea (0,0) a P' es А + Θ. Las siguientes identidades se mantienen:
+El ángulo entre el eje X y la línea (0,0) a P' es Θ + Θ. Las siguientes identidades se mantienen:
 
-<dl> x = R cos  
+<dl> x = R cos Y  
 y = R sin Y  
 x' = R cos(Θ + Θ)  
 y' = R sin(Θ+ Θ)  
 </dl>
 
-Ahora, resuelva x' e y' en términos de Θ. Por las fórmulas de adición trigonométricas:
+Ahora, resuelva x' e y' en términos de Θ. Mediante las fórmulas de adición trigonométricas:
 
-<dl> x' = R(cos YcosA – sinАsin): Rcos YcosA – IosNSinS  
-y' = R(sinАcos + cosАsin): Iosn Ycos Y + Rcos YSinS  
+<dl> x' = R(cos YcosA – sinΘsin): Rcos YcosA – IosNSinS  
+y' = R(sinΘcosΘ + cosΘsinΘ) = Iosn YCOS + RcosΘsinΘ  
 </dl>
 
-Sustituyendo, se obtiene lo siguiente:
+Al sustituir, se obtiene lo siguiente:
 
-<dl> x' = xcos – ysinΘ  
+<dl> x' = xcosΘ – ysinΘ  
 y' = xsin( + ycos)  
 </dl>
 
@@ -252,21 +252,21 @@ Puede derivar esta matriz tomando el punto (x,y) como origen.
 
 ![diagrama que muestra la rotación alrededor de un punto.](images/graphics25.png)
 
-Deje que (x1, y1) sea el punto que resulta de girar el punto (x0, y0) alrededor del punto (x,y). Podemos derivar x1 como se muestra a continuación.
+Deje (x1, y1) ser el punto que resulta de girar el punto (x0, y0) alrededor del punto (x,y). Podemos derivar x1 como se muestra a continuación.
 
-<dl> x1 = (x0 – x)cosΘ– (y0 – y)sinΘ + x  
-x1 = x0cosΘ – y0sinΘ + \[ (1 – cosΘ) + ysin): \]  
+<dl> x1 = (x0 – x)cosΘ– (y0 – y)sinN + x  
+x1 = x0cosΘ – y0sinΘ + \[ (1 – cosΘ) + ysinΘ \]  
 </dl>
 
-Ahora vuelva a conectar esta ecuación a la matriz de transformación con la fórmula x1 = ax0 + cy0 + e anterior. Use el mismo procedimiento para derivar y1.
+Ahora vuelva a conectar esta ecuación a la matriz de transformación, con la fórmula x1 = ax0 + cy0 + e anterior. Use el mismo procedimiento para derivar y1.
 
-### <a name="skew-transform"></a>Transformación de sesgo
+### <a name="skew-transform"></a>Transformación de asimetría
 
 La transformación de sesgo se define mediante cuatro parámetros:
 
--   ): la cantidad que se sesga a lo largo del eje X, medida como un ángulo desde el eje Y.
--   ): la cantidad que se sesga a lo largo del eje Y, medida como un ángulo desde el eje X.
--   (*px*, *py*): las coordenadas x e y del punto sobre el que se realiza la asimetría.
+-   Θ: la cantidad que se sesga a lo largo del eje X, medida como un ángulo del eje Y.
+-   ): cantidad que se sesga a lo largo del eje Y, medida como un ángulo desde el eje X.
+-   (*px*, *py*): las coordenadas x e y del punto sobre el que se realiza el sesgo.
 
 La transformación de sesgo usa la siguiente matriz.
 
@@ -274,37 +274,37 @@ La transformación de sesgo usa la siguiente matriz.
 
 El punto transformado es:
 
-<dl> P' = (*x*  +  *y* tan – *py* tanA, *y*  +  *x* tanA) – *py* tanA
+<dl> P' = (*x*  +  *y* tanΘ – *py* tanA, *y*  +  *x* tanA) – *py* tanA
 </dl>
 
 o de forma equivalente:
 
-<dl> P' = (*x* + (*y* – *py*)tan, *y* + (*x* – *px*)tanA)
+<dl> P' = (*x* + (*y* – *py*)tanΘ, *y* + (*x* – *px*)tanA)
 </dl>
 
-Para ver cómo funciona esta transformación, considere cada componente individualmente. El parámetro Θ mueve cada punto de la dirección x en una cantidad igual a tan/. En el diagrama siguiente se muestra la relación entre Θ y el sesgo del eje X.
+Para ver cómo funciona esta transformación, tenga en cuenta cada componente individualmente. El parámetro Θ mueve cada punto de la dirección x en una cantidad igual a tanA. En el diagrama siguiente se muestra la relación entre Θ y el sesgo del eje X.
 
-![Diagrama que muestra la asimetría a lo largo del eje X.](images/graphics26.png)
+![Diagrama que muestra el sesgo a lo largo del eje X.](images/graphics26.png)
 
 Este es el mismo sesgo aplicado a un rectángulo:
 
-![Diagrama que muestra la asimetría a lo largo del eje X cuando se aplica a un rectángulo.](images/graphics27.png)
+![Diagrama que muestra el sesgo a lo largo del eje X cuando se aplica a un rectángulo.](images/graphics27.png)
 
-El parámetro Ö tiene el mismo efecto, pero a lo largo del eje Y:
+El parámetro Y tiene el mismo efecto, pero a lo largo del eje Y:
 
-![Diagrama que muestra la asimetría a lo largo del eje Y.](images/graphics28.png)
+![Diagrama que muestra el sesgo a lo largo del eje Y.](images/graphics28.png)
 
-En el diagrama siguiente se muestra la asimetría del eje Y aplicada a un rectángulo.
+En el diagrama siguiente se muestra el sesgo del eje Y aplicado a un rectángulo.
 
-![Diagrama que muestra la asimetría a lo largo del eje Y cuando se aplica a un rectángulo.](images/graphics29.png)
+![Diagrama que muestra el sesgo a lo largo del eje Y cuando se aplica a un rectángulo.](images/graphics29.png)
 
-Por último, los parámetros *px* *y py* desplazan el punto central de la asimetría a lo largo de los ejes X e Y.
+Por último, los parámetros *px* y *py* desplazan el punto central del sesgo a lo largo de los ejes X e Y.
 
 ## <a name="representing-transforms-in-direct2d"></a>Representación de transformaciones en Direct2D
 
-Todas las transformaciones de Direct2D son transformaciones afín. Direct2D no admite transformaciones no afín. Las transformaciones se representan mediante la [**estructura D2D1 \_ MATRIX \_ 3X2 \_ F.**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) Esta estructura define una matriz de 3 × 2. Dado que la tercera columna de una transformación afín es siempre la misma (0, 0, 1 ) y porque Direct2D no admite transformaciones no afín, no es necesario especificar toda la \[ \] matriz de 3 × 3. Internamente, Direct2D usa 3 × 3 matrices para calcular las transformaciones.
+Todas las transformaciones de Direct2D son transformaciones afín. Direct2D no admite transformaciones no afín. Las transformaciones se representan mediante la estructura [**\_ MATRIX \_ 3X2 \_ F de D2D1.**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) Esta estructura define una matriz de 3 × 2. Dado que la tercera columna de una transformación afín es siempre la misma (0, 0, 1 ) y porque Direct2D no admite transformaciones no afín, no es necesario especificar la \[ \] matriz 3 × 3. Internamente, Direct2D usa 3 × 3 matrices para calcular las transformaciones.
 
-Los miembros de [**D2D1 \_ MATRIX \_ 3X2 \_ F**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) se denominan según su posición de índice: **\_ el miembro 11** es elemento (1,1), el **\_ miembro 12** es elemento (1,2), etc. Aunque puede inicializar los miembros de la estructura directamente, se recomienda usar la [**clase D2D1::Matrix3x2F.**](/windows/desktop/api/d2d1helper/nl-d2d1helper-matrix3x2f) Esta clase hereda **D2D1 \_ MATRIX \_ 3X2 \_ F** y proporciona métodos auxiliares para crear cualquiera de las transformaciones afín básicas. La clase también define [**el \* operador ()**](/windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-operator-mult) para componer dos o más transformaciones, como se describe en Aplicar transformaciones [en Direct2D.](applying-transforms-in-direct2d.md)
+Los miembros de [**D2D1 \_ MATRIX \_ 3X2 \_ F**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) se denominan según su posición de índice: **\_ el miembro 11** es el elemento (1,1), el **\_ miembro 12** es el elemento (1,2), etc. Aunque puede inicializar los miembros de la estructura directamente, se recomienda usar la clase [**D2D1::Matrix3x2F.**](/windows/desktop/api/d2d1helper/nl-d2d1helper-matrix3x2f) Esta clase hereda **D2D1 \_ MATRIX \_ 3X2 \_ F** y proporciona métodos auxiliares para crear cualquiera de las transformaciones afín básicas. La clase también define [**el \* operador ()**](/windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-operator-mult) para componer dos o más transformaciones, como se describe en Aplicar transformaciones [en Direct2D.](applying-transforms-in-direct2d.md)
 
 ## <a name="next"></a>Siguientes
 

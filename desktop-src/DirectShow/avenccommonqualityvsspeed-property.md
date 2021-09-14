@@ -4,12 +4,12 @@ ms.assetid: d721a50d-dec9-4e2d-bda5-25913f225d68
 title: Propiedad AVEncCommonQualityVsSpeed (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9def8fc53a6cf88384a42870ef695294a0117ab3bfdd26ba69c95bd2b02a63b6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d8af65f816bc9be6642e2a23ee4dc05e2e4fa40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119540885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161986"
 ---
 # <a name="avenccommonqualityvsspeed-property"></a>Propiedad AVEncCommonQualityVsSpeed
 
@@ -31,7 +31,7 @@ El valor de esta propiedad tiene el intervalo siguiente.
 
 
 
-| Valor | Descripción                      |
+| Value | Descripción                      |
 |-------|----------------------------------|
 | 0     | Codificación más rápida y de menor calidad.  |
 | 100   | Codificación más lenta y de mayor calidad. |
@@ -44,15 +44,15 @@ El valor de esta propiedad tiene el intervalo siguiente.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

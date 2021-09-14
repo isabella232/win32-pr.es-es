@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 11710ad49b3b068b0e43753c166ba4f7205317bf64bd5fd7b2dc9311edfe6ba3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8af28c1e7b180980c9cb5286c81b5731e0b3bae2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119723525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964535"
 ---
 # <a name="esentinvalidplaceholdercolumnexception-constructor"></a>Constructor EsentInvalidPlaceholderColumnException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidPlaceholderColumnException()
 public EsentInvalidPlaceholderColumnException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

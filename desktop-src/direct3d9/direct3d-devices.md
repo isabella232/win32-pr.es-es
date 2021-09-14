@@ -1,24 +1,24 @@
 ---
-description: Un dispositivo de Direct3D es el componente de representación de Direct3D. Encapsula y almacena el estado de representación. Además, un dispositivo Direct3D realiza transformaciones y operaciones de iluminación y rasteriza una imagen en una superficie.
+description: Un dispositivo de Direct3D es el componente de representación de Direct3D. Encapsula y almacena el estado de representación. Además, un dispositivo Direct3D realiza operaciones de transformación e iluminación y rasteriza una imagen en una superficie.
 ms.assetid: b592edb8-351a-4a82-9ff7-8a69d82723bc
 title: Dispositivos Direct3D (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12b36ae856686c0f6a0b821b92a871ed98e016bf1a010200038281f2eb50964e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c07726069b952ba99d608e5f36df8e1fb7745cd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120096064"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888604"
 ---
 # <a name="direct3d-devices-direct3d-9"></a>Dispositivos Direct3D (Direct3D 9)
 
-Un dispositivo de Direct3D es el componente de representación de Direct3D. Encapsula y almacena el estado de representación. Además, un dispositivo Direct3D realiza transformaciones y operaciones de iluminación y rasteriza una imagen en una superficie.
+Un dispositivo de Direct3D es el componente de representación de Direct3D. Encapsula y almacena el estado de representación. Además, un dispositivo Direct3D realiza operaciones de transformación e iluminación y rasteriza una imagen en una superficie.
 
 -   [XPDM frente a WDDM](xpdm-vs-wddm.md)
 -   [Tipos de dispositivos (Direct3D 9)](device-types.md)
 -   [Creación de un dispositivo (Direct3D 9)](creating-a-device.md)
--   [Modo de ventana Full-Screen (Direct3D 9)](windowed-vs-full-screen-mode.md)
+-   [Modo de ventana Full-Screen usuario (Direct3D 9)](windowed-vs-full-screen-mode.md)
 -   [Selección de un dispositivo (Direct3D 9)](selecting-a-device.md)
 -   [Dispositivos perdidos (Direct3D 9)](lost-devices.md)
 -   [Determinar la compatibilidad con hardware (Direct3D 9)](determining-hardware-support.md)
@@ -36,13 +36,13 @@ Direct3D admite actualmente dos tipos principales de dispositivos Direct3D:
 
 Puede pensar en estos dispositivos como dos controladores independientes. Los controladores de software y los dispositivos de referencia se representan mediante controladores de software y el dispositivo se representa mediante un controlador de hardware. La manera más común de aprovechar estos dispositivos es usar el dispositivo para enviar aplicaciones y el dispositivo de referencia para las pruebas de características. Estos son proporcionados por terceros para emular dispositivos concretos, por ejemplo, hardware de desarrollo que aún no se ha publicado.
 
-El dispositivo Direct3D que crea una aplicación debe corresponder a las funcionalidades del hardware en el que se ejecuta la aplicación. Direct3D proporciona funcionalidades de representación, ya sea mediante el acceso al hardware 3D instalado en el equipo o emulando las funcionalidades del hardware 3D en el software. Por lo tanto, Direct3D proporciona dispositivos para el acceso de hardware y la emulación de software.
+El dispositivo Direct3D que crea una aplicación debe corresponder a las funcionalidades del hardware en el que se ejecuta la aplicación. Direct3D proporciona funcionalidades de representación, ya sea mediante el acceso al hardware 3D instalado en el equipo o mediante la emulación de las funcionalidades de hardware 3D en software. Por lo tanto, Direct3D proporciona dispositivos para el acceso de hardware y la emulación de software.
 
-Los dispositivos acelerados por hardware dan un rendimiento mucho mejor que los dispositivos de software. El tipo de dispositivo está disponible en todos los adaptadores gráficos compatibles con Direct3D. En la mayoría de los casos, las aplicaciones tienen como destino equipos que tienen aceleración de hardware y se basan en la emulación de software para dar cabida a equipos de nivel inferior.
+Los dispositivos acelerados por hardware dan un rendimiento mucho mejor que los dispositivos de software. El tipo de dispositivo está disponible en todos los adaptadores gráficos compatibles con Direct3D. En la mayoría de los casos, las aplicaciones tienen como destino equipos que tienen aceleración de hardware y se basan en la emulación de software para dar cabida a equipos de gama inferior.
 
 A excepción del dispositivo de referencia, los dispositivos de software no siempre admiten las mismas características que un dispositivo de hardware. Las aplicaciones siempre deben consultar las funcionalidades del dispositivo para determinar qué características se admiten.
 
-Dado que el comportamiento del software y de los dispositivos de referencia proporcionados con Direct3D 9 es idéntico al del dispositivo , el código de aplicación que se ha escrito para trabajar con el dispositivo de acceso funcionará con el software o los dispositivos de referencia sin modificaciones. Tenga en cuenta que, aunque el comportamiento del software o del dispositivo de referencia proporcionado es idéntico al del dispositivo , las funcionalidades del dispositivo varían y un dispositivo de software determinado puede implementar un conjunto mucho más pequeño de funcionalidades.
+Dado que el comportamiento del software y los dispositivos de referencia proporcionados con Direct3D 9 es idéntico al del dispositivo , el código de aplicación que se ha escrito para trabajar con el dispositivo de destino funcionará con el software o los dispositivos de referencia sin modificaciones. Tenga en cuenta que, aunque el comportamiento del software o del dispositivo de referencia proporcionado es idéntico al del dispositivo , las funcionalidades del dispositivo varían y un dispositivo de software determinado puede implementar un conjunto mucho más pequeño de funcionalidades.
 
 ## <a name="behaviors"></a>Comportamientos
 

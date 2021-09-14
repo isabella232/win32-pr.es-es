@@ -15,11 +15,11 @@ ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/29/2021
 ms.openlocfilehash: 87fe62c475e1d961258671355c4c9be133bf0a41
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121813237"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966859"
 ---
 # <a name="cd3dx12_resource_desc1-structure"></a>CD3DX12_RESOURCE_DESC1 estructura
 
@@ -95,7 +95,7 @@ inline bool operator==(const D3D12_RESOURCE_DESC1& l, const D3D12_RESOURCE_DESC1
 inline bool operator!=(const D3D12_RESOURCE_DESC1& l, const D3D12_RESOURCE_DESC1& r) noexcept;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `CD3DX12_RESOURCE_DESC1`
 
@@ -116,7 +116,7 @@ Función estática que construye y devuelve una nueva instancia de **un** CD3DX1
 |Miembro de datos|value|
 |-|-|
 |Dimensión|D3D12_RESOURCE_DIMENSION_BUFFER|
-|Alignment|*resAllocInfo*. Alineación|
+|Alineación|*resAllocInfo*. Alineación|
 |Ancho|*resAllocInfo*. SizeInBytes|
 |Alto|1|
 |DepthOrArraySize|1|
@@ -137,7 +137,7 @@ Función estática que construye y devuelve una nueva instancia de **un** CD3DX1
 |Miembro de datos|value|
 |-|-|
 |Dimensión|D3D12_RESOURCE_DIMENSION_BUFFER|
-|Alignment|*Alineación*|
+|Alineación|*Alineación*|
 |Ancho|*width*|
 |Alto|1|
 |DepthOrArraySize|1|
@@ -158,7 +158,7 @@ Función estática que construye y devuelve una nueva instancia de **un** CD3DX1
 |Miembro de datos|value|
 |-|-|
 |Dimensión|D3D12_RESOURCE_DIMENSION_TEXTURE1D|
-|Alignment|*Alineación*|
+|Alineación|*Alineación*|
 |Ancho|*width*|
 |Alto|1|
 |DepthOrArraySize|*arraySize*|
@@ -174,12 +174,12 @@ Función estática que construye y devuelve una nueva instancia de **un** CD3DX1
 
 `Tex2D(DXGI_FORMAT, UINT64, UINT, UINT16 = 1, UINT16 = 0, UINT = 1, UINT = 0, D3D12_RESOURCE_FLAGS = D3D12_RESOURCE_FLAG_NONE, D3D12_TEXTURE_LAYOUT = D3D12_TEXTURE_LAYOUT_UNKNOWN, UINT64 = 0, UINT = 0, UINT = 0, UINT = 0)`
 
-Función estática que construye y devuelve una nueva instancia de un **CD3DX12_RESOURCE_DESC1** inicializado con estos valores.
+Función estática que construye y devuelve una nueva instancia de **un** CD3DX12_RESOURCE_DESC1 inicializado con estos valores.
 
 |Miembro de datos|value|
 |-|-|
 |Dimensión|D3D12_RESOURCE_DIMENSION_TEXTURE2D|
-|Alignment|*Alineación*|
+|Alineación|*Alineación*|
 |Ancho|*width*|
 |Alto|*height*|
 |DepthOrArraySize|*arraySize*|
@@ -195,12 +195,12 @@ Función estática que construye y devuelve una nueva instancia de un **CD3DX12_
 
 `Tex3D(DXGI_FORMAT, UINT64, UINT, UINT16, UINT16 = 0, D3D12_RESOURCE_FLAGS = D3D12_RESOURCE_FLAG_NONE, D3D12_TEXTURE_LAYOUT = D3D12_TEXTURE_LAYOUT_UNKNOWN, UINT64 = 0)`
 
-Función estática que construye y devuelve una nueva instancia de un **CD3DX12_RESOURCE_DESC1** inicializado con estos valores.
+Función estática que construye y devuelve una nueva instancia de **un** CD3DX12_RESOURCE_DESC1 inicializado con estos valores.
 
 |Miembro de datos|value|
 |-|-|
 |Dimensión|D3D12_RESOURCE_DIMENSION_TEXTURE3D|
-|Alignment|*Alineación*|
+|Alineación|*Alineación*|
 |Ancho|*width*|
 |Alto|*height*|
 |DepthOrArraySize|*Profundidad*|
@@ -248,7 +248,7 @@ Función gratuita que devuelve si los dos parámetros son miembros no `true` igu
 |-------------------|-------------------------------------------------------------------------------------|
 | Encabezado | [D3dx12.h](https://github.com/microsoft/DirectX-Headers/blob/main/include/directx/d3dx12.h) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [D3DX12_RESOURCE_DESC1](/windows/win32/api/d3d12/D3DX12_RESOURCE_DESC1/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_desc1)
 * [Estructuras auxiliares para Direct3D 12](helper-structures-for-d3d12.md)

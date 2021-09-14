@@ -4,12 +4,12 @@ ms.assetid: 7c941454-7410-f3fb-d750-9007f672ed8c
 title: Funciones vectoriales geométricas
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c586ca75a7b56f53ddd8a11a1b32acb5caa7d07bbcc0406ab9e90aa50800ab7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ea5f8a18001f20b16fe78bb6a861e6b37d3aa094
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120117535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966304"
 ---
 # <a name="geometric-vector-functions"></a>Funciones vectoriales geométricas
 

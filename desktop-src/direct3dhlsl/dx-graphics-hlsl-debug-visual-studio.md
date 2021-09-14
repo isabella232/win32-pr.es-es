@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ac92e72537cde333d8e6cfa76baac0e4de67349f40c36805a8de98037a365fb9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b32b661a79be21b4b3ef22d9cc0de161de268a7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119043803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888308"
 ---
 # <a name="debugging-shaders-in-visual-studio"></a>Depuración de sombreadores en Visual Studio
 
-La herramienta más reciente para depurar sombreadores ahora se incluye como una característica en Microsoft Visual Studio, denominada Visual Studio Depurador de gráficos. Esta nueva herramienta es un reemplazo de [LA HERRAMIENTA DE TIEMPO](/windows/desktop/directx-sdk--august-2009-) para Windows herramienta. Visual Studio El depurador de gráficos ha mejorado enormemente la facilidad de uso, la compatibilidad con Windows 8 y Direct3D 11.1, y la integración con características tradicionales de Visual Studio como pilas de llamadas y ventanas de depuración para la depuración [HLSL.](dx-graphics-hlsl.md) Para obtener más información sobre esta nueva característica, vea [Depuración de gráficos directX.](/visualstudio/debugger/visual-studio-graphics-diagnostics?view=vs-2015)
+La herramienta más reciente para depurar sombreadores ahora se incluye como una característica en Microsoft Visual Studio, denominada Visual Studio Depurador de gráficos. Esta nueva herramienta es un reemplazo de [LA HERRAMIENTA DE TIEMPO](/windows/desktop/directx-sdk--august-2009-) Windows herramienta. Visual Studio El depurador de gráficos ha mejorado enormemente la facilidad de uso, la compatibilidad con Windows 8 y Direct3D 11.1, y la integración con características tradicionales de Visual Studio como pilas de llamadas y ventanas de depuración para la depuración [HLSL.](dx-graphics-hlsl.md) Para obtener más información sobre esta nueva característica, vea [Depuración de gráficos directX.](/visualstudio/debugger/visual-studio-graphics-diagnostics?view=vs-2015)
 
 ## <a name="related-topics"></a>Temas relacionados
 

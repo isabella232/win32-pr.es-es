@@ -4,12 +4,12 @@ description: Enumera las funciones de transformación de vectores 3D.
 ms.assetid: 148972da-e460-63b9-6b01-10201f63d157
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68c5d5ee6117c08516ccf88448b9c3a38246eae6391d1aa4aff10e853fea509f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a592071970d69d7ef4b4db42960335c5fc771ac3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118276797"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963464"
 ---
 # <a name="directxmath-3d-vector-transformation-functions"></a>Funciones de transformación de vectores 3D de DirectXMath
 

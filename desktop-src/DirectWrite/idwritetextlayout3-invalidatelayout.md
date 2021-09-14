@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af698ce5f94918be281e633342060f70ba3f62655d7aec3794686a7793c4364a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b5df97d4590f62f586a570d52428b6560a7d88df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117816086"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160087"
 ---
 # <a name="idwritetextlayout3invalidatelayout-method"></a>Método IDWriteTextLayout3::InvalidateLayout
 
@@ -58,7 +58,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

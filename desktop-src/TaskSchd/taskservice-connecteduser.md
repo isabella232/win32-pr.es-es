@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a1f1630073e3b94aa055ed977aa33a7524efa9189cb24b4daa35c1742d03011
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 856cdb2cbaa137b8821c2440af95ef5969c48e12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117942702"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886428"
 ---
 # <a name="taskserviceconnecteduser-property"></a>Propiedad TaskService.ConnectedUser
 
 Para el scripting, obtiene el nombre del usuario que está conectado al Programador de tareas servicio.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB

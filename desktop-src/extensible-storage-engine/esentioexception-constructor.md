@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Constructor EsentIOException'
+description: 'Más información sobre: Constructor esentIOException'
 title: Constructor EsentIOException
 TOCTitle: 'EsentIOException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentIOException.#ctor
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 0a43292577f50c2d0a15560147c9e01b246d53dd5f210c00a017984d07ca913b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45fba2a9781b0af9848be934423e5329fb6217ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119971955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966136"
 ---
 # <a name="esentioexception-constructor"></a>Constructor EsentIOException
 
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

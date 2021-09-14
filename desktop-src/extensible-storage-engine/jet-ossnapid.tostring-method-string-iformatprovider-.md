@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 56e86765839434f2cd3a67c18f6395dd5443f21f8b905e6f86e6e85ad9915c3f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95e93fd3a6bbf7f2fa3505fcb9480367b780ecc4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119038873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965667"
 ---
 # <a name="jet_ossnapidtostring-method-string-iformatprovider"></a>JET_OSSNAPID. Método ToString (String, IFormatProvider)
 
@@ -82,7 +82,7 @@ Cadena [que](/dotnet/api/system.string) contiene el valor de la instancia actual
 
 [IFormattable.ToString(String, IFormatProvider)](/dotnet/api/system.iformattable.tostring#System_IFormattable_ToString_System_String_System_IFormatProvider_)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

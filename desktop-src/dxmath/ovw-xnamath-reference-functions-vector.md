@@ -4,12 +4,12 @@ ms.assetid: 6c354159-8c90-d241-1aff-8f198097b83d
 title: Funciones vectoriales de la biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 561186f932af4a51253b4079b187a5d6866ca94f6d91f48f51b7816518c83a15
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b6b5307ababe1b8c721548ca36db5d54e415cdd0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119948574"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966284"
 ---
 # <a name="directxmath-library-vector-functions"></a>Funciones vectoriales de la biblioteca DirectXMath
 

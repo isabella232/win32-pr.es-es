@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 190665f2990884ea959976311731d7c553b7c9db89e59faf685f5aefd9b0c6d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3eb6331fdf3c494c0df6537712e86b3de0b873da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119732525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887825"
 ---
 # <a name="esentslvfilestaleexception-constructor"></a>Constructor EsentSLVFileStaleException
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVFileStaleException()
 public EsentSLVFileStaleException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

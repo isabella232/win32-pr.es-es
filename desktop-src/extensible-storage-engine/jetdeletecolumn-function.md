@@ -21,11 +21,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 7c7c73c5a6fd3249a8779526f6655992ad545372
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985918"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887300"
 ---
 # <a name="jetdeletecolumn-function"></a>JetDeleteColumn (Función)
 
@@ -60,7 +60,7 @@ Nombre de la columna que se va a eliminar.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
@@ -88,7 +88,7 @@ Llamar **a JetDeleteColumn** es idéntico a llamar [a JetDeleteColumn2](./jetdel
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 | <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetDeleteColumnW</strong> (Unicode) y <strong>JetDeleteColumnA</strong> (ANSI).</p> | 
 
 

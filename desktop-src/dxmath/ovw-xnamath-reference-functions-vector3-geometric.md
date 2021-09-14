@@ -1,19 +1,19 @@
 ---
-description: Enumera las funciones geométricas del vector 3D.
+description: Enumera las funciones geométricas vectoriales 3D.
 ms.assetid: f2cee697-b4ec-5e4d-a87b-622c9fb7997c
-title: Funciones geométricas de vectores 3D de la biblioteca DirectXMath
+title: Funciones geométricas vectoriales 3D de la biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a57dd08bc8dd1c75a5abdbc3f97b12b5abf6249b7cee92e17d30b3121cb73234
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 241f6a14e32cbdbebdf2aa5270970d405085810c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118500289"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966271"
 ---
-# <a name="directxmath-library-3d-vector-geometric-functions"></a>Funciones geométricas de vectores 3D de la biblioteca DirectXMath
+# <a name="directxmath-library-3d-vector-geometric-functions"></a>Funciones geométricas vectoriales 3D de la biblioteca DirectXMath
 
-Enumera las funciones geométricas del vector 3D.
+Enumera las funciones geométricas vectoriales 3D.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -36,12 +36,12 @@ Enumera las funciones geométricas del vector 3D.
 | [**XMVector3LinePointDistance**](/windows/win32/api/directxmath/nf-directxmath-xmvector3linepointdistance)<br/>           | Calcula la distancia mínima entre una línea y un punto.<br/>                                                              |
 | [**XMVector3Normalize**](/windows/win32/api/directxmath/nf-directxmath-xmvector3normalize)<br/>                           | Devuelve la versión normalizada de un vector 3D.<br/>                                                                         |
 | [**XMVector3NormalizeEst**](/windows/win32/api/directxmath/nf-directxmath-xmvector3normalizeest)<br/>                     | Calcula la versión normalizada de un vector 3D.<br/>                                                                       |
-| [**XMVector3Ortortonal**](/windows/win32/api/directxmath/nf-directxmath-xmvector3orthogonal)<br/>                         | Calcula un vector vector a un vector 3D.<br/>                                                                        |
+| [**XMVector3Ortortortonal**](/windows/win32/api/directxmath/nf-directxmath-xmvector3orthogonal)<br/>                         | Calcula un vector vector a un vector 3D.<br/>                                                                        |
 | [**XMVector3ReciprocalLength**](/windows/win32/api/directxmath/nf-directxmath-xmvector3reciprocallength)<br/>             | Calcula el recíproco de la longitud de un vector 3D.<br/>                                                                  |
 | [**XMVector3ReciprocalLengthEst**](/windows/win32/api/directxmath/nf-directxmath-xmvector3reciprocallengthest)<br/>       | Calcula el recíproco de la longitud de un vector 3D.<br/>                                                                 |
 | [**XMVector3Reflect**](/windows/win32/api/directxmath/nf-directxmath-xmvector3reflect)<br/>                               | Refleja un vector 3D de incidente en un vector normal 3D.<br/>                                                              |
-| [**XMVector3Refracción**](/windows/win32/api/directxmath/nf-directxmath-xmvector3refract)<br/>                               | Vuelve a convertir un vector 3D de incidente en un vector normal 3D.<br/>                                                              |
-| [**XMVector3RefracciónV**](/windows/win32/api/directxmath/nf-directxmath-xmvector3refractv)<br/>                             | Vuelve a convertir un vector 3D de incidente en un vector normal 3D.<br/>                                                              |
+| [**XMVector3Refracción**](/windows/win32/api/directxmath/nf-directxmath-xmvector3refract)<br/>                               | Vuelve a mostrar un vector 3D de incidente en un vector normal 3D.<br/>                                                              |
+| [**XMVector3RefracciónV**](/windows/win32/api/directxmath/nf-directxmath-xmvector3refractv)<br/>                             | Vuelve a mostrar un vector 3D de incidente en un vector normal 3D.<br/>                                                              |
 
 
 

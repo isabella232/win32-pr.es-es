@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: e119a639af7cb6459e8e6ec8ae6416f9d067c56e8f81560fedc385abd518b840
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08648c8b941874a6d1e1ed97d49f510694b998b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118899344"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160721"
 ---
 # <a name="signedcode-object"></a>Objeto SignedCode
 
@@ -38,7 +38,7 @@ El **objeto SignedCode** se usa para realizar las tareas siguientes:
 -   Recupere una colección de los certificados para el archivo ejecutable.
 -   Recupere una descripción o la dirección URL de la descripción del archivo ejecutable.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto SignedCode** tiene estos tipos de miembros:
 
@@ -55,7 +55,7 @@ El **objeto SignedCode** tiene estos métodos.
 |:------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Firmar**](signedcode-sign.md)           | Crea una firma digital Authenticode y firma el archivo ejecutable especificado en la [**propiedad SignedCode.FileName.**](signedcode-filename.md)<br/>    |
 | [**Timestamp**](signedcode-timestamp.md) | Crea una firma de marca de tiempo Authenticode en el archivo ejecutable firmado especificado en la [**propiedad SignedCode.FileName.**](signedcode-filename.md)<br/> |
-| [**Verificación**](signedcode-verify.md)       | Comprueba la firma Authenticode en el archivo ejecutable firmado especificado en la [**propiedad SignedCode.FileName.**](signedcode-filename.md)<br/>          |
+| [**Verify**](signedcode-verify.md)       | Comprueba la firma Authenticode en el archivo ejecutable firmado especificado en la [**propiedad SignedCode.FileName.**](signedcode-filename.md)<br/>          |
 
 
 
@@ -70,9 +70,9 @@ El **objeto SignedCode** tiene estas propiedades.
 | Propiedad                                                       | Tipo de acceso           | Descripción                                                                                                                                |
 |:---------------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Certificados**](signedcode-certificates.md)<br/>     | Solo lectura<br/>  | Colección [**Certificates que**](certificates.md) contiene todos los certificados del archivo ejecutable firmado.<br/>             |
-| [**Descripción**](signedcode-description.md)<br/>       | Lectura/escritura<br/> | Cadena que contiene una descripción del archivo ejecutable firmado.<br/>                                                             |
-| [**DescriptionURL**](signedcode-descriptionurl.md)<br/> | Lectura/escritura<br/> | Cadena que contiene la dirección HTTP de una descripción del archivo ejecutable firmado.<br/>                                         |
-| [**Nombre**](signedcode-filename.md)<br/>             | Lectura/escritura<br/> | Cadena que contiene la ruta de acceso al archivo de contenido que contiene el archivo ejecutable.<br/> Esta es la propiedad predeterminada.<br/> |
+| [**Descripción**](signedcode-description.md)<br/>       | Lectura y escritura<br/> | Cadena que contiene una descripción del archivo ejecutable firmado.<br/>                                                             |
+| [**DescriptionURL**](signedcode-descriptionurl.md)<br/> | Lectura y escritura<br/> | Cadena que contiene la dirección HTTP de una descripción del archivo ejecutable firmado.<br/>                                         |
+| [**Nombre**](signedcode-filename.md)<br/>             | Lectura y escritura<br/> | Cadena que contiene la ruta de acceso al archivo de contenido que contiene el archivo ejecutable.<br/> Esta es la propiedad predeterminada.<br/> |
 | [**Firmante**](signedcode-signer.md)<br/>                 | Solo lectura<br/>  | Objeto [**Signer**](signer.md) que proporciona acceso al firmante del archivo ejecutable.<br/>                                    |
 | [**Timestamper**](signedcode-timestamper.md)<br/>       | Solo lectura<br/>  | Objeto [**Signer**](signer.md) que proporciona acceso al marca de tiempo del archivo ejecutable.<br/>                              |
 
@@ -80,7 +80,7 @@ El **objeto SignedCode** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede crear el objeto **SignedCode** y no es seguro para el scripting. El ProgID del **objeto SignedCode** es CAPICOM. SignedCode.1.
 
@@ -90,7 +90,7 @@ El archivo ejecutable debe ser de un tipo que se pueda firmar con la tecnología
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |

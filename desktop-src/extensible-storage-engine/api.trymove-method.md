@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 973188fb145c1d6c8fc82e2d2566643e98011857a36b1c94399cabda9659ed67
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d4b3aa596bb5e813d87dcc6f278112fe1e4cbdb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883772"
 ---
 # <a name="apitrymove-method"></a>Método Api.TryMove
 
@@ -99,13 +99,13 @@ public static bool TryMove(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
-True si el traslado se ha realizado correctamente.  
+True si el movimiento se ha realizado correctamente.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

@@ -4,12 +4,12 @@ ms.assetid: 32835bcd-e0b6-4156-ac1b-05d5bfc3116c
 title: Referencia de programación de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a607974a25558fdbecbcb0d7630045751bfcd7503033142312d9a1e7db60f2dd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fba749c6b0c4952e2c35c5e97a8751b9c1613332
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120029546"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965183"
 ---
 # <a name="com-programming-reference"></a>Referencia de programación de COM+
 

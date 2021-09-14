@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6c7fd04622a5cdab8bade32f41b090d8f480db292209d284804b5180134954f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5894ae98666c9134abd4bce96922a5f28d5919b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118662352"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160275"
 ---
 # <a name="camschedulegetnextadvisetime-method"></a>Método CAMSchedule.GetNextAdviseTime
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la hora de referencia de la siguiente solicitud de aviso o MAX \_ TIME no se programa ninguna solicitud.
+Devuelve la hora de referencia de la siguiente solicitud de notificación o MAX \_ TIME no se programa ninguna solicitud.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Devuelve la hora de referencia de la siguiente solicitud de aviso o MAX \_ TIME 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

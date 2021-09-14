@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b346367accd0be70b7846b0f3be379a91e9f6b2e351aa69b919641c6e8caee6e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c07ed9f2f53b4e1e204e54d5bd78103ca8873636
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120018445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965883"
 ---
 # <a name="esentslvealistcorruptexception-class"></a>Clase EsentSLVEAListCorruptException
 
@@ -46,7 +46,7 @@ ms.locfileid: "120018445"
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -66,7 +66,7 @@ public sealed class EsentSLVEAListCorruptException : EsentObsoleteException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

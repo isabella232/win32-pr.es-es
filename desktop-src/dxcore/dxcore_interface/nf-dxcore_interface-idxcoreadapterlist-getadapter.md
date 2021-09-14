@@ -4,16 +4,16 @@ description: Recupera un adaptador específico por índice de un objeto de lista
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 96b2973e36c93ca50db273fc28bd0f02cbaf7a48f96e6833af7f14323c7de57d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5ba03c9e6f2711adc5264354a6abd70ee489965f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120022135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966328"
 ---
 # <a name="idxcoreadapterlistgetadapter-method"></a>IDXCoreAdapterList::GetAdapter (método)
 
-Recupera un adaptador específico por índice de un objeto de lista de adaptadores DXCore. Para obtener instrucciones de programación y ejemplos de código, vea [Uso de DXCore para enumerar adaptadores.](../dxcore-enum-adapters.md)
+Recupera un adaptador específico por índice de un objeto de lista de adaptadores DXCore. Para obtener instrucciones de programación y ejemplos de código, [vea Uso de DXCore para enumerar adaptadores.](../dxcore-enum-adapters.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ Tipo: **uint32_t**
 
 Tipo: **REFIID**
 
-Referencia al identificador único global (GUID) de la interfaz que desea que se devuelva en *ppvAdapter*. Se espera que sea el identificador de interfaz (IID) [de IDXCoreAdapter.](./nn-dxcore_interface-idxcoreadapter.md)
+Referencia al identificador único global (GUID) de la interfaz que desea que se devuelva en *ppvAdapter.* Se espera que sea el identificador de interfaz (IID) [de IDXCoreAdapter.](./nn-dxcore_interface-idxcoreadapter.md)
 
 ### <a name="ppvadapter-out"></a>ppvAdapter [out]
 
@@ -62,10 +62,10 @@ Si la función se realiza correctamente, devuelve **S_OK**. De lo contrario, dev
 |E_NOINTERFACE|Se proporcionó un valor no válido para *riid*.|
 |E_POINTER|`nullptr` se proporcionó para *ppvAdapter*.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Varias llamadas que pasan un índice que representa el mismo adaptador devuelven punteros de interfaz idénticos, incluso en diferentes listas de adaptadores. Como resultado, es seguro comparar punteros de interfaz para determinar si varios punteros hacen referencia al mismo objeto de adaptador.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md), [Referencia de DXCore](../dxcore-reference.md), [Uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)
+[IDXCoreAdapterList,](./nn-dxcore_interface-idxcoreadapterlist.md) [referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33259ba97979130968ad67b3609f31d6549e6a62449d3bcadd80bb52cb3d8593
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6ff8a1931e95df4fd78d67a3a71d53150875400
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118534151"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160482"
 ---
 # <a name="id3dx11effectrendertargetviewvariablesetrendertargetarray-method"></a>Método ID3DX11EffectRenderTargetViewVariable::SetRenderTargetArray
 
@@ -78,7 +78,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
@@ -96,7 +96,7 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
