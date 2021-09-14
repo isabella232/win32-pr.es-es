@@ -11,12 +11,12 @@ keywords:
 - WMDRMStartup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8356160565754764ac71cb152799a0fd9d1530e6e6969dc7a56e203b7504645d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 182a9e54e077c174c4f4cbe74ba392aa44ce5112
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119086211"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247407"
 ---
 # <a name="application-basics"></a>Aspectos básicos de la aplicación
 

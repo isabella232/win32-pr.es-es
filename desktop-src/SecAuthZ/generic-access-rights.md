@@ -4,12 +4,12 @@ ms.assetid: e18cede9-9bf7-4866-850b-5d7fa43a5b0f
 title: Derechos de acceso genéricos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee90a6866afc294cfef1c8fdad96e239f76ce8f9c251aeabc2d2a907e3e0bbe5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adff14aa259222bc37096b8a94f30cffb5ab0876
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119672095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069118"
 ---
 # <a name="generic-access-rights"></a>Derechos de acceso genéricos
 

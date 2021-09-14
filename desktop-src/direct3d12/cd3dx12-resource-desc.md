@@ -15,14 +15,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c9d92953abdb0cf77a7a55f7b64341b857a111baaef0d84d4d44855b02efb2a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1b341646b2dee7f469235c0b0bc9bb4550e56ff5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120028305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966856"
 ---
-# <a name="cd3dx12_resource_desc-structure"></a>ESTRUCTURA \_ \_ DESC DESC DE RECURSOS CD3DX12
+# <a name="cd3dx12_resource_desc-structure"></a>ESTRUCTURA \_ \_ DESC DESC DE RECURSOS DE CD3DX12
 
 Una estructura auxiliar para permitir la inicialización sencilla de una [**estructura \_ \_ DESC resource de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_desc)
 
@@ -52,7 +52,7 @@ struct CD3DX12_RESOURCE_DESC  : public D3D12_RESOURCE_DESC{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ Crea una nueva instancia de RESOURCE DESC CD3DX12 sin \_ \_ inicializar.
 **EXPLICIT CD3DX12 \_ RESOURCE \_ DESC(const D3D12 \_ RESOURCE \_ DESC& o)**
 </dt> <dd>
 
-Crea una nueva instancia de un DESC DE CD3DX12 RESOURCE, inicializado con el contenido de otra estructura \_ \_ [**\_ \_ DESC RESOURCE de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_desc)
+Crea una nueva instancia de un DESC DE RECURSOS CD3DX12, inicializado con el contenido de otra estructura \_ \_ [**\_ \_ DESC DESC de recursos D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_desc)
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Ancho de UINT64
 
 </dd> <dt>
 
-**static inline Tex1D(DXGI \_ FORMAT format, UINT64 width, UINT16 arraySize = 1, UINT16 mipLevels = 0, D3D12 \_ RESOURCE \_ FLAGS flags = D3D12 \_ RESOURCE FLAG \_ \_ NONE, D3D12 \_ TEXTURE LAYOUT layout = \_ D3D12 \_ TEXTURE LAYOUT \_ \_ UNKNOWN, UINT64 alignment = 0)**
+**static inline Texas1D(DXGI \_ FORMAT format, UINT64 width, UINT16 arraySize = 1, UINT16 mipLevels = 0, D3D12 \_ RESOURCE \_ FLAGS flags = D3D12 \_ RESOURCE FLAG \_ \_ NONE, D3D12 \_ TEXTURE LAYOUT layout = \_ D3D12 \_ TEXTURE LAYOUT \_ \_ UNKNOWN, UINT64 alignment = 0)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
@@ -171,7 +171,7 @@ Alto de UINT
 
 </dd> <dt>
 
-**static inline Texas3D(DXGI \_ FORMAT format, UINT64 width, UINT height, UINT16 depth, UINT16 mipLevels = 0, D3D12 \_ RESOURCE \_ FLAGS flags = D3D12 \_ RESOURCE FLAG \_ \_ NONE, D3D12 \_ TEXTURE LAYOUT layout = \_ D3D12 \_ TEXTURE LAYOUT \_ \_ UNKNOWN, UINT64 alignment = 0)**
+**static inline Tex3D(DXGI \_ FORMAT format, UINT64 width, UINT height, UINT16 depth, UINT16 mipLevels = 0, D3D12 \_ RESOURCE \_ FLAGS flags = D3D12 \_ RESOURCE FLAG \_ \_ NONE, D3D12 \_ TEXTURE LAYOUT layout = \_ D3D12 \_ TEXTURE LAYOUT \_ \_ UNKNOWN, UINT64 alignment = 0)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
@@ -204,7 +204,7 @@ Si Dimension == [**D3D12 \_ RESOURCE \_ DIMENSION**](/windows/desktop/api/d3d12/
 **inline ArraySize() const**
 </dt> <dd>
 
-Si dimension != D3D12 \_ RESOURCE \_ DIMENSION \_ TEXTURE3D, devuelve DepthOrArraySize. Si Dimension == D3D12 \_ RESOURCE \_ DIMENSION \_ TEXTURE3D, devuelve 1. Consulte [**DIMENSIÓN DE RECURSOS D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_dimension) \_ TEXTURE3D.
+Si dimension != D3D12 \_ RESOURCE \_ DIMENSION \_ TEXTURE3D, devuelve DepthOrArraySize. Si Dimension == D3D12 \_ RESOURCE \_ DIMENSION \_ TEXTURE3D, devuelve 1. Consulte [**DIMENSIÓN DE RECURSOS DE D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_dimension) \_ TEXTURE3D.
 
 </dd> <dt>
 
@@ -260,7 +260,7 @@ Devuelve false si todos los miembros de cada estructura son idénticos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

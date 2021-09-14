@@ -6,12 +6,12 @@ keywords:
 - Efecto de transformación de perspectiva 3d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 513d48a38e948f1255afa0cad3972a626c1e5b9039c9285c9c49b4180a5791d6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4ed2b1c5131319dd711d2c7802a0bfabceaaa32e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079654"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164266"
 ---
 # <a name="3d-perspective-transform-effect"></a>Efecto de transformación de perspectiva 3D
 
@@ -68,12 +68,12 @@ m_d2dContext->EndDraw();
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | InterpolationMode<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ INTERPOLATION \_ MODE<br/> | Modo de interpolación que el efecto usa en la imagen. Hay cinco modos de escala que varían en calidad y velocidad.<br/> El tipo es D2D1 \_ 3DPERSPECTIVETRANSFORM \_ INTERPOLATION \_ MODE.<br/> El valor predeterminado es D2D1 \_ 3DPERSPECTIVETRANSFORM \_ INTERPOLATION \_ MODE \_ LINEAR.<br/>              |
 | BorderMode<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ BORDER \_ MODE<br/>               | Modo que se usa para calcular el borde de la imagen, de forma flexible o dura. Consulte [Modos de borde](https://www.bing.com/search?q=Border+modes) para obtener más información.<br/> El tipo es D2D1 \_ BORDER \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ MODE \_ SOFT.<br/>                                                              |
-| Profundidad<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ DEPTH<br/>                           | Distancia desde *PerspectiveOrigin* hasta el plano de proyección. Valor especificado en DIP y debe ser mayor que 0.<br/> El tipo es FLOAT.<br/> El valor predeterminado es 1000,0f.<br/>                                                                                               |
-| PerspectiveOrigin<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ PERSPECTIVE \_ ORIGIN<br/> | Ubicación X e Y del visor en la escena 3D. Esta propiedad es un vector D2D1 \_ \_ 2F definido como: (punto X, punto Y). Las unidades están en DIP.<br/> Establezca el valor Z con la *propiedad Depth.*<br/> El tipo es D2D1 \_ VECTOR \_ 2F.<br/> El valor predeterminado es {0.0f, 0.0f}.<br/> |
-| LocalOffset<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ LOCAL \_ OFFSET<br/>             | Una traducción que el efecto realiza antes de girar el plano de proyección. Esta propiedad es un vector D2D1 \_ \_ 3F definido como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                        |
-| GlobalOffset<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ GLOBAL \_ OFFSET<br/>           | Una traducción que el efecto realiza después de girar el plano de proyección. Esta propiedad es un vector D2D1 \_ \_ 3F definido como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                         |
-| RotationOrigin<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ ROTATION \_ ORIGIN<br/>       | Punto central de la rotación que realiza el efecto. Esta propiedad es un vector D2D1 \_ \_ 3F definido como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                                            |
-| Rotación<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ ROTATION<br/>                     | Ángulos de rotación para cada eje. Esta propiedad es un vector D2D1 \_ \_ 3F definido como: (X, Y, Z). Las unidades están en grados.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                                                         |
+| Profundidad<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ DEPTH<br/>                           | Distancia entre *PerspectiveOrigin* y el plano de proyección. El valor especificado en LOSP y debe ser mayor que 0.<br/> El tipo es FLOAT.<br/> El valor predeterminado es 1000.0f.<br/>                                                                                               |
+| PerspectiveOrigin<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ PERSPECTIVE \_ ORIGIN<br/> | Ubicación X e Y del visor en la escena 3D. Esta propiedad es una D2D1 \_ VECTOR \_ 2F definida como: (punto X, punto Y). Las unidades están en DIP.<br/> Establezca el valor Z con la *propiedad Depth.*<br/> El tipo es D2D1 \_ VECTOR \_ 2F.<br/> El valor predeterminado es {0,0f, 0,0f}.<br/> |
+| LocalOffset<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ LOCAL \_ OFFSET<br/>             | Una traducción que el efecto realiza antes de girar el plano de proyección. Esta propiedad es un vector 3F D2D1 \_ \_ definido como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                        |
+| GlobalOffset<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ GLOBAL \_ OFFSET<br/>           | Una traducción que el efecto realiza después de girar el plano de proyección. Esta propiedad es un vector 3F D2D1 \_ \_ definido como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                         |
+| RotationOrigin<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ ROTATION \_ ORIGIN<br/>       | Punto central de la rotación que realiza el efecto. Esta propiedad es un vector 3F D2D1 \_ \_ definido como: (X, Y, Z). Las unidades están en DIP.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                                            |
+| Rotación<br/> D2D1 \_ 3DPERSPECTIVETRANSFORM \_ PROP \_ ROTATION<br/>                     | Ángulos de rotación para cada eje. Esta propiedad es un vector 3F D2D1 \_ \_ definido como: (X, Y, Z). Las unidades están en grados.<br/> El tipo es D2D1 \_ VECTOR \_ 3F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f}.<br/>                                                                         |
 
 
 
@@ -85,10 +85,10 @@ m_d2dContext->EndDraw();
 
 | Enumeración                                                              | Descripción                                                                                                                                                |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ MODO DE INTERPOLACIÓN VECINO MÁS \_ \_ \_ PRÓXIMO     | Muestrea el punto más cercano y lo usa. Este modo usa menos tiempo de procesamiento, pero genera la imagen de menor calidad.                                 |
-| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ MODO DE INTERPOLACIÓN \_ \_ LINEAL                | Usa una muestra de cuatro puntos y una interpolación lineal. Este modo usa más tiempo de procesamiento que el modo vecino más cercano, pero genera una imagen de mayor calidad. |
-| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ MODO DE INTERPOLACIÓN \_ \_ CÚBICA                 | Usa un kernel cúbica de 16 muestras para la interpolación. Este modo usa el mayor tiempo de procesamiento, pero genera una imagen de mayor calidad.                              |
-| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ MODO MULTI SAMPLE \_ \_ \_ \_ LINEAR | Usa 4 muestras lineales dentro de un solo píxel para un suavizado de alias de borde bueno. Este modo es bueno para reducir verticalmente en pequeñas cantidades en imágenes con pocos píxeles.    |
+| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ INTERPOLATION \_ MODE \_ NEAREST \_ NEIGHBOR     | Muestrea el punto único más cercano y lo usa. Este modo usa menos tiempo de procesamiento, pero genera la imagen de menor calidad.                                 |
+| D2D1 \_ MODO DE INTERPOLACIÓN 3DPERSPECTIVETRANSFORM \_ \_ \_ LINEAR                | Usa una muestra de cuatro puntos e interpolación lineal. Este modo usa más tiempo de procesamiento que el modo vecino más cercano, pero genera una imagen de mayor calidad. |
+| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ INTERPOLATION \_ MODE \_ CUBIC                 | Usa un kernel cúbica de 16 muestras para la interpolación. Este modo usa el mayor tiempo de procesamiento, pero genera una imagen de mayor calidad.                              |
+| D2D1 \_ 3DPERSPECTIVETRANSFORM \_ INTERPOLATION \_ MODE \_ MULTI \_ SAMPLE \_ LINEAR | Usa 4 muestras lineales dentro de un solo píxel para un buen suavizado de alias perimetral. Este modo es bueno para reducir verticalmente en pequeñas cantidades en imágenes con pocos píxeles.    |
 | D2D1 \_ 3DPERSPECTIVETRANSFORM \_ INTERPOLATION \_ MODE \_ ANISOTROPIC           | Usa el filtrado anisotropico para muestrear un patrón según la forma transformada del mapa de bits.                                                           |
 
 
@@ -101,7 +101,7 @@ m_d2dContext->EndDraw();
  
 
 > [!Note]  
-> El modo anisotropico genera mapas MIP al escalar; sin embargo, si establece la propiedad **Cached** en true en los efectos que se introducen en este efecto, los mapas MIP no se generarán cada vez para imágenes lo suficientemente pequeñas.
+> El modo anisotropico genera mapas mipmap al escalar; sin embargo, si establece la propiedad **Cached** en true en los efectos que se introducen en este efecto, los mapas mipmap no se generarán cada vez para imágenes lo suficientemente pequeñas.
 
  
 
@@ -130,9 +130,9 @@ El efecto realiza la operación de transformación y, a continuación, aplica un
 
 | Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio Windows aplicaciones de la \| Tienda\] |
-| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio Windows aplicaciones de la \| Tienda\] |
-| Header                   | d2d1effects.h                                                                      |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e020c2bb73b2a2a58ee11916f589fb8b5bc1bf9268696f9ff3920ce99248aef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0cda1e5c46bb6216c413737c44b5785ac26925f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119527895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173929"
 ---
 # <a name="cbem_setwindowtheme-message"></a>Mensaje \_ SETWINDOWTHEME de CBEM
 
@@ -35,7 +35,7 @@ Establece el estilo visual de un control ComboBoxEx.
 *lParam* 
 </dt> <dd>
 
-Puntero a una cadena Unicode que contiene el estilo visual de control que se establece.
+Puntero a una cadena Unicode que contiene el estilo visual de control que se establecerá.
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Puntero a una cadena Unicode que contiene el estilo visual de control que se est
 
 No se usa el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32 versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
@@ -54,11 +54,11 @@ No se usa el valor devuelto.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

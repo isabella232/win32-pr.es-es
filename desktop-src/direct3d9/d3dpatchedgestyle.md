@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 717139a33e260aa29bc8d0e244fa49b3cb324c5249614f513faf0624ccf21841
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e625b7c4ff12f9859efdcc2b10b551a2223adab6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119987245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970984"
 ---
 # <a name="d3dpatchedgestyle-enumeration"></a>D3DPATCHEDGESTYLE (enumeración)
 
 Define si el modo de teselación actual es discreto o continuo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -58,11 +58,11 @@ Estilo de borde continuo. En el modo continuo, la teselación se especifica como
 <span id="D3DPATCHEDGE_FORCE_DWORD"></span><span id="d3dpatchedge_force_dword"></span>**D3DPATCHEDGE \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Tenga en cuenta que la teselación continua genera un patrón de teselación completamente diferente del discreto para los mismos valores de teselación (esto es más evidente en el modo wireframe). Por lo tanto, 4.0 continuo no es lo mismo que 4 discreto.
 
@@ -76,7 +76,7 @@ Tenga en cuenta que la teselación continua genera un patrón de teselación com
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

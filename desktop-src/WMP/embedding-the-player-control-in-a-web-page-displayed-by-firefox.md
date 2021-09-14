@@ -10,14 +10,14 @@ keywords:
 - Reproductor de Windows Media ActiveX control, inserción
 - Reproductor de Windows Media Control de ActiveX móvil, inserción
 - ActiveX control, inserción
-- control Reproductor de Windows Media ActiveX, páginas web
+- Reproductor de Windows Media ActiveX control,Páginas web
 - Reproductor de Windows Media Control de ActiveX móviles,páginas web
-- ActiveX control, páginas web
+- ActiveX control,Páginas web
 - Reproductor de Windows Media,Firefox
 - Reproductor de Windows Media modelo de objetos,Firefox
-- object model,Firefox
+- modelo de objetos, Firefox
 - Reproductor de Windows Media Mobile,Firefox
-- Reproductor de Windows Media ActiveX control,Firefox
+- control Reproductor de Windows Media ActiveX, Firefox
 - Reproductor de Windows Media Control de ActiveX móvil,Firefox
 - ActiveX control, Firefox
 - Firefox, acerca de la inserción de páginas web
@@ -25,12 +25,12 @@ keywords:
 - Inserción de páginas web,Firefox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0c1db799df78cb6c62516798f4bbd196c093f02225386f0c1009bfa11d9a668
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a16063ea07a0262ab798e58ed02e4d5a5b6b5d65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118578592"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249692"
 ---
 # <a name="embedding-the-player-control-in-a-web-page-displayed-by-firefox"></a>Inserción del control Player en una página web mostrada por Firefox
 
@@ -101,7 +101,7 @@ En el ejemplo siguiente se muestra cómo insertar el control Reproductor de Wind
 
 <dl> <dt>
 
-[**Uso de Reproductor de Windows Media Control con Firefox**](using-the-windows-media-player-control-with-firefox.md)
+[**Uso del control Reproductor de Windows Media con Firefox**](using-the-windows-media-player-control-with-firefox.md)
 </dt> </dl>
 
  

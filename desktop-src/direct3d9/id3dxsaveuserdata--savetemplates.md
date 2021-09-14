@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 00695f11f267c77838bc2d9a3d2932df108c7323f3751b385c009abe2b21f540
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92040629b1b21cbfa1219eee237e357aa056b473
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118293118"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966635"
 ---
 # <a name="id3dxsaveuserdatasavetemplates-method"></a>Método ID3DXSaveUserData::SaveTemplates
 
@@ -45,7 +45,7 @@ HRESULT SaveTemplates(
 
 Tipo: **[ **LPD3DXFILESAVEOBJECT**](id3dxfilesaveobject.md)**
 
-Puntero a un objeto de guardado de archivo .x. No use este parámetro para agregar objetos de datos. Vea [**ID3DXFileSaveObject.**](id3dxfilesaveobject.md)
+Puntero a un objeto de guardado de archivo .x. No use este parámetro para agregar objetos de datos. Vea [**ID3DXFileSaveObject**](id3dxfilesaveobject.md).
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Puntero a un objeto de guardado de archivo .x. No use este parámetro para agreg
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Los valores devueltos de este método los implementa un programador de aplicaciones. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para devolver un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md), ya que esto hará que [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) también presente un error y devuelva el error.
+Los valores devueltos de este método los implementa un programador de aplicaciones. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para devolver un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md), ya que esto hará que [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) también devuelva el error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-[**ID3DXSaveUserData::RegisterTemplates**](id3dxsaveuserdata--registertemplates.md) e **ID3DXSaveUserData::SaveTemplates** proporcionan un mecanismo para agregar una plantilla a un archivo .x para guardar los datos del usuario.
+[**ID3DXSaveUserData::RegisterTemplates**](id3dxsaveuserdata--registertemplates.md) e **ID3DXSaveUserData::SaveTemplates** proporcionan un mecanismo para agregar una plantilla a un archivo .x para guardar datos de usuario.
 
 ## <a name="requirements"></a>Requisitos
 

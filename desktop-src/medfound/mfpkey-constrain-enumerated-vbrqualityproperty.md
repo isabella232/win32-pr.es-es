@@ -1,23 +1,23 @@
 ---
-description: Especifica si los modos enumerados por el codificador se enclaves a los que cumplen un requisito de calidad dado por MFPKEY \_ DESIRED \_ VBRQUALITY.
+description: Especifica si los modos enumerados por el codificador se acalo a los que cumplen un requisito de calidad especificado por MFPKEY \_ DESIRED \_ VBRQUALITY.
 ms.assetid: b2f1d5c5-d2bb-4a8a-94ea-fd969e07bb0e
 title: MFPKEY_CONSTRAIN_ENUMERATED_VBRQUALITY propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d138bbf7e9e77673821b6deed574b7395a3d4e51269e71b18b67cda711ed4bbf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2cb9e63ab955bbe7726ab67bdab057fe2d397942
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117690447"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257700"
 ---
-# <a name="mfpkey_constrain_enumerated_vbrquality-property"></a>Propiedad \_ \_ VBRQUALITY ENUMERADA DE RESTRICCIÓN \_ DE MFPKEY
+# <a name="mfpkey_constrain_enumerated_vbrquality-property"></a>Propiedad \_ \_ VBRQUALITY ENUMERADA DE MFPKEY CONSTRAIN \_
 
-Especifica si los modos enumerados por el codificador se enclaves a los que cumplen un requisito de calidad especificado por [**MFPKEY \_ DESIRED \_ VBRQUALITY**](mfpkey-desired-vbrqualityproperty.md).
+Especifica si los modos enumerados por el codificador se acalo a los que cumplen un requisito de calidad dado por [**MFPKEY \_ DESIRED \_ VBRQUALITY**](mfpkey-desired-vbrqualityproperty.md).
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -27,7 +27,7 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 **VARIANT \_ FALSE**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para enumerar los modos de VBR que cumplen un determinado requisito de calidad, establezca las siguientes propiedades del codificador.
 
@@ -39,14 +39,14 @@ Para enumerar los modos de VBR que cumplen un determinado requisito de calidad, 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Cliente<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Remoto<br/> | Windows Vista o Windows 7<br/>                                                   |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

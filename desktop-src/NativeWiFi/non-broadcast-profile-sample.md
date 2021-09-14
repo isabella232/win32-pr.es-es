@@ -4,20 +4,20 @@ ms.assetid: 564324ad-6723-4676-ab5c-0b5d2957d201
 title: Ejemplo de perfil que no es de difusión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8cab5a6ae274c90d1eeec40248ee73d04e610dba54e0024fca7eb3f463dabbc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a09bfd9cf9eac724f882a9aa3cf16064f051fdf3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119801025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069455"
 ---
 # <a name="non-broadcast-profile-sample"></a>Ejemplo de perfil que no es de difusión
 
-El ejemplo de perfil que no es de difusión se puede usar para conectarse a redes que no difunden su nombre de red o SSID.
+El ejemplo de perfil de no difusión se puede usar para conectarse a redes que no difunden su nombre de red o SSID.
 
 Este perfil de ejemplo está configurado para usar Wi-Fi seguridad de acceso protegido que se ejecuta en modo personal (WPA-Personal). El Protocolo de integridad de clave temporal (TKIP) se usa para el cifrado. Los perfiles que usan otros tipos de seguridad y cifrado también se pueden configurar como perfiles que no son de difusión.
 
-Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** Se [**omite**](wlan-profileschema-name-wlanprofile-element.md) el elemento secundario name del elemento [**WLANProfile.**](wlan-profileschema-wlanprofile-element.md) El nombre del perfil, tal como se almacena en el almacén de perfiles, se deriva del nombre [**secundario**](wlan-profileschema-name-ssid-element.md) del [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** Se [**omite**](wlan-profileschema-name-wlanprofile-element.md) el elemento secundario name del elemento [**WLANProfile.**](wlan-profileschema-wlanprofile-element.md) El nombre del perfil, tal como se almacena en el almacén de perfiles, se deriva del nombre [**secundario**](wlan-profileschema-name-ssid-element.md) del [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

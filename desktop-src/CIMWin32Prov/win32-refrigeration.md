@@ -36,12 +36,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 99b2a73ea9175947dc1ad8ca0082958e68b0316c87b070aebafd71918e36a48d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23db1490d184cbfe38d6c5b65fa7190273ad2a87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118958904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174341"
 ---
 # <a name="win32_refrigeration-class"></a>Clase Refrigeration de Win32 \_
 
@@ -78,7 +78,7 @@ class Win32_Refrigeration : CIM_Refrigeration
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Refrigeration de Win32** tiene estos tipos de miembros:
 
@@ -491,7 +491,7 @@ Error en el dispositivo.
 
 </dt> <dd>
 
-El dispositivo no puede encontrar suficientes recursos gratuitos para usarlos.
+El dispositivo no encuentra suficientes recursos gratuitos para usarlos.
 
 </dd> <dt>
 
@@ -519,12 +519,12 @@ El dispositivo no puede funcionar correctamente hasta que se reinicie el equipo.
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque probablemente haya un problema de nueva enumeración.** (15)
+<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque probablemente haya un problema de enumeración.** (15)
 
 
 </dt> <dd>
 
-El dispositivo no funciona correctamente debido a un posible problema de nueva enumeración.
+El dispositivo no funciona correctamente debido a un posible problema de enumeración.
 
 </dd> <dt>
 
@@ -552,12 +552,12 @@ El dispositivo solicita un tipo de recurso desconocido.
 
 <span id="Reinstall_the_drivers_for_this_device."></span><span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>
 
-<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores de este dispositivo.** (18)
+<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores para este dispositivo.** (18)
 
 
 </dt> <dd>
 
-Los controladores de dispositivos deben volver a instalarse.
+Los controladores de dispositivo deben volver a instalarse.
 
 </dd> <dt>
 
@@ -575,18 +575,18 @@ Los controladores de dispositivos deben volver a instalarse.
 
 </dt> <dd>
 
-El Registro puede estar dañado.
+Es posible que el Registro esté dañado.
 
 </dd> <dt>
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si esto no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
 
-Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware. Windows está quitando el dispositivo.
+Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware. Windows está quitando el dispositivo.
 
 </dd> <dt>
 
@@ -608,7 +608,7 @@ El dispositivo está deshabilitado.
 
 </dt> <dd>
 
-Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware.
+Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware.
 
 </dd> <dt>
 
@@ -680,12 +680,12 @@ El dispositivo está deshabilitado. El firmware del dispositivo no proporcionaba
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que otro dispositivo está usando.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que usa otro dispositivo.** (30)
 
 
 </dt> <dd>
 
-El dispositivo usa un recurso IRQ que está usando otro dispositivo.
+El dispositivo usa un recurso IRQ que usa otro dispositivo.
 
 </dd> <dt>
 
@@ -716,7 +716,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Si **es TRUE,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -729,12 +729,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [ **Clave CIM \_**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -770,7 +770,7 @@ Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/s
 
 Identificador único del dispositivo de refrigeración.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -785,7 +785,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** ahora se borra el error notificado en **LastErrorCode.**
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -800,7 +800,7 @@ Tipo de acceso: solo lectura
 
 Más información sobre el error registrado en **LastErrorCode** y las acciones correctivas que se pueden realizar.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -833,7 +833,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -869,7 +869,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* "PNP030b"
 
@@ -944,7 +944,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](../wmisdk/designing-managed-object-format--mof--classes.md)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](../wmisdk/designing-managed-object-format--mof--classes.md).
 
 </dd> <dt>
 
@@ -985,7 +985,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar mediante energía (se puede poner en modo de suspensión, y así sucesivamente). La propiedad no indica que las características de administración de energía están habilitadas actualmente, solo que el dispositivo lógico es capaz de la administración de energía.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1039,7 +1039,7 @@ Los valores son los siguientes:
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
@@ -1053,7 +1053,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1109,7 +1109,7 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMT
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1159,12 +1159,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Valor de la propiedad **CreationClassName** del equipo de ámbito.
+Valor de la propiedad **CreationClassName del** equipo de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1177,16 +1177,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ Refrigeration de Win32** se deriva de [**CIM \_ Refrigeration**](cim-refrigeration.md).
 
@@ -1208,7 +1208,7 @@ La **clase \_ Refrigeration de Win32** se deriva de [**CIM \_ Refrigeration**](c
 
 <dl> <dt>
 
-[**Refrigeración CIM \_**](cim-refrigeration.md)
+[**Refrigeración \_ CIM**](cim-refrigeration.md)
 </dt> <dt>
 
 [Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)

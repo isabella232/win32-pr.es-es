@@ -1,33 +1,33 @@
 ---
 title: Descriptores de seguridad en archivos y claves del Registro
-description: Active Directory Service Interfaces (ADSI) se pueden usar para administrar y proteger sistemas de archivos dentro de una organización, incluida la capacidad de establecer o modificar acl en archivos o recursos compartidos de archivos creados por los usuarios.
+description: Active Directory Interfaces de servicio (ADSI) se pueden usar para administrar y proteger sistemas de archivos dentro de una organización, incluida la capacidad de establecer o modificar acl en archivos o recursos compartidos de archivos creados por los usuarios.
 ms.assetid: 7233a82f-fc38-4718-b674-4e6a00666184
 ms.tgt_platform: multiple
 keywords:
 - Descriptores de seguridad en archivos y claves del Registro ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae567e9550989153f0b85207be49a729bc0499c320f410c92fc993269d997da7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 11600a495b9a70513b9bd401777e9cdd61449ede
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119333225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172141"
 ---
 # <a name="security-descriptors-on-files-and-registry-keys"></a>Descriptores de seguridad en archivos y claves del Registro
 
-Active Directory Service Interfaces (ADSI) se pueden usar para administrar y proteger sistemas de archivos dentro de una organización, incluida la capacidad de establecer o modificar acl en archivos o recursos compartidos de archivos creados por los usuarios. Las interfaces de seguridad, como [**IADsSecurityDescriptor,**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)y [**IADsAccessControlEntry,**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) establecen ACL en objetos de clave del Registro, Exchange, archivo, recurso compartido de archivos u Active Directory objetos de clave del Registro. Antes de usar estas interfaces, es posible que sea necesario modificar el descriptor de seguridad si usa un formato diferente de la interfaz o si no tiene derechos de acceso a la SACL del descriptor de seguridad porque no es miembro del grupo de administradores de seguridad.
+Active Directory Interfaces de servicio (ADSI) se pueden usar para administrar y proteger sistemas de archivos dentro de una organización, incluida la capacidad de establecer o modificar acl en archivos o recursos compartidos de archivos creados por los usuarios. Las interfaces de seguridad, como [**IADsSecurityDescriptor,**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)y [**IADsAccessControlEntry,**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) establecen ACL en Active Directory objetos de clave del Registro, Exchange, archivo, recurso compartido de archivos u objetos de clave del Registro. Antes de usar estas interfaces, es posible que sea necesario modificar el descriptor de seguridad si usa un formato diferente de la interfaz o si no tiene derechos de acceso a la SACL del descriptor de seguridad porque no es miembro del grupo de administradores de seguridad.
 
 Para obtener, establecer o modificar el descriptor de seguridad, use la [**interfaz IADsSecurityUtility.**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) Esta interfaz permite recuperar un descriptor de seguridad de varios recursos en su formato original, como el formato ADSI [**IADsSecurityDescriptor,**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor)un descriptor de seguridad sin formato o como una cadena hexadecimal como se usa en Exchange 5.5. Cuando se recupera, puede convertirlo a otro formato, por ejemplo, de un descriptor de seguridad sin formato a **IADsSecurityDescriptor**. A continuación, puede volver a escribir el nuevo formato en el recurso.
 
-Algunos de los [**valores de propiedad IADsAccessControlEntry,**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) como [**AccessMask**](iadsaccesscontrolentry-property-methods.md) y **AceFlags,** serán diferentes para los distintos tipos de objeto. Por ejemplo, un objeto Active Directory usará el miembro **\_ ADS RIGHT GENERIC \_ \_ READ** de la enumeración [**ADS RIGHTS \_ \_ ENUM**](/windows/win32/api/iads/ne-iads-ads_rights_enum) para la propiedad **IADsAccessControlEntry.AccessMask,** pero el derecho de acceso equivalente para un objeto de archivo es **FILE GENERIC \_ \_ READ**. No es seguro suponer que todos los valores de propiedad serán los mismos para los objetos Active Directory y los objetos que no Active Directory propiedad. En la lista siguiente se muestran las propiedades **IADsAccessControlEntry** que difieren para los objetos que no son de Active Directory y donde se pueden obtener los valores adecuados.
+Algunos de los [**valores de propiedad IADsAccessControlEntry,**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) como [**AccessMask**](iadsaccesscontrolentry-property-methods.md) y **AceFlags,** serán diferentes para los distintos tipos de objeto. Por ejemplo, un objeto Active Directory usará el miembro **\_ ADS RIGHT GENERIC \_ \_ READ** de la enumeración [**ADS RIGHTS \_ \_ ENUM**](/windows/win32/api/iads/ne-iads-ads_rights_enum) para la propiedad **IADsAccessControlEntry.AccessMask,** pero el derecho de acceso equivalente para un objeto de archivo es **FILE GENERIC \_ \_ READ.** No es seguro suponer que todos los valores de propiedad serán los mismos para los objetos Active Directory y los objetos que no Active Directory propiedad. En la lista siguiente se muestran las propiedades **IADsAccessControlEntry** que difieren para los objetos que no Active Directory y donde se pueden obtener los valores adecuados.
 
 <dl> <dt>
 
 <span id="AccessMask"></span><span id="accessmask"></span><span id="ACCESSMASK"></span>[**Máscara de acceso**](iadsaccesscontrolentry-property-methods.md)
 </dt> <dd>
 
-Para obtener más información y una lista de valores posibles para objetos de archivo o recurso compartido de archivos, vea Derechos de acceso [y seguridad de archivos.](/windows/desktop/FileIO/file-security-and-access-rights)
+Para obtener más información y una lista de valores posibles para objetos de archivo o recurso compartido de archivos, vea Derechos de acceso y seguridad [de archivos.](/windows/desktop/FileIO/file-security-and-access-rights)
 
 Para obtener más información y una lista de los valores posibles para los objetos del Registro, vea Derechos de acceso y seguridad de claves [del Registro.](/windows/desktop/SysInfo/registry-key-security-and-access-rights)
 

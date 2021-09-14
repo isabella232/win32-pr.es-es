@@ -4,12 +4,12 @@ ms.assetid: 1c15dc2b-0e69-4d16-af02-8056a1eb2c5c
 title: DSP del convertidor de colores (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e97db9f3131ed7cea9076255005149544363ba8d6b548736a211973cda3999d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73a8418d6eeeffcf83a38452b19f18a6baa60bcc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117880667"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257956"
 ---
 # <a name="color-converter-dsp"></a>DSP del convertidor de colores
 
@@ -79,15 +79,15 @@ CLSID \_ CColorConvertDMO
 -   [MFPKEY \_ COLORCONV \_ HEIGHT](mfpkey-colorconv-height.md)
 -   [MFPKEY \_ COLORCONV \_ MODE](mfpkey-colorconv-mode.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El DSP del convertidor de colores se implementa como un objeto COM que puede actuar como un objeto DirectXMedia (DMO) o una transformación de Media Foundation (MFT). El objeto tiene un identificador de clase única (CLSID) independientemente de si actúa como DMO o MFT. Para obtener información sobre cuándo un DSP actúa como DMO o MFT, vea [Procesadores de señales digitales](windowsmediadigitalsignalprocessors.md).
+El DSP del convertidor de colores se implementa como un objeto COM que puede actuar como un objeto DirectXMedia (DMO) o una transformación de Media Foundation (MFT). El objeto tiene un identificador de clase única (CLSID) independientemente de si actúa como DMO o MFT. Para obtener información sobre cuándo un DSP actúa como DMO o MFT, vea [Procesadores de señal digital](windowsmediadigitalsignalprocessors.md).
 
-Los identificadores únicos globales (GUID) de los subtipos de medios RGB difieren en función de si un DSP actúa como un DMO o un MFT. Los GUID para subtipos multimedia no RGB son los mismos, independientemente de si un DSP actúa como un DMO o un MFT. Para obtener información sobre los GUID que representan subtipos multimedia, vea [GUID de subtipo de vídeo.](video-subtype-guids.md)
+Los identificadores únicos globales (GUID) de los subtipos de medios RGB difieren en función de si un DSP actúa como DMO o MFT. Los GUID de los subtipos multimedia no RGB son los mismos, independientemente de si un DSP actúa como DMO o MFT. Para obtener información sobre los GUID que representan subtipos multimedia, vea [GUID de subtipo de vídeo.](video-subtype-guids.md)
 
 De forma predeterminada, este DSP copia toda la imagen de origen en el búfer de salida. Opcionalmente, puede especificar rectángulos de origen y destino. El DSP copia la parte de la imagen de origen definida por el rectángulo de origen y la escribe en el rectángulo de destino en el búfer de salida. El DSP no realiza ningún escalado; los rectángulos de origen y destino deben tener el mismo tamaño. Los rectángulos de origen y destino no pueden superar los límites del fotograma de vídeo.
 
-Todas las propiedades excepto [**MFPKEY \_ COLORCONV \_ MODE**](mfpkey-colorconv-mode.md) deben establecerse en un grupo. Si establece cualquiera de estas propiedades, debe establecer todas las demás. De lo contrario, los rectángulos de origen y de destino podrían no ser válidos, en cuyo caso los métodos [**ODBCTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) e [**IMediaObject::P rocessOutput**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-processoutput) **devolverán E \_ INVALIDARG**.
+Todas las propiedades excepto [**MFPKEY \_ COLORCONV \_ MODE**](mfpkey-colorconv-mode.md) deben establecerse en un grupo. Si establece cualquiera de estas propiedades, debe establecer todas las demás. De lo contrario, los rectángulos de origen y destino podrían no ser válidos, en cuyo caso los métodos [**IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) e [**IMediaObject::P rocessOutput**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-processoutput) **devolverán E \_ INVALIDARG**.
 
 El convertidor de colores no admite todas las combinaciones de formato de entrada y formato de salida. Normalmente, debe establecer el formato multimedia que conoce, ya sea entrada o salida, y, a continuación, enumerar los formatos disponibles en la secuencia opuesta.
 
@@ -99,12 +99,12 @@ El convertidor de colores no admite todas las combinaciones de formato de entrad
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Colorcnv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

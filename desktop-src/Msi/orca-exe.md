@@ -3,13 +3,13 @@ description: Orca.exe es un editor de tablas de base de datos para crear y edita
 ms.assetid: 4dddc262-1271-4e00-a986-53380b957b17
 title: Orca.exe
 ms.topic: article
-ms.date: 05/31/2018
-ms.openlocfilehash: b9f1b0d31936bf81e60efd8eb9799ddb30b4d5a6f78363e2ff5d3d638ae40c4c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.date: 09/10/2021
+ms.openlocfilehash: 478a2c15f362b1d9f357793334e5b5a26f3f47df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120082685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251013"
 ---
 # <a name="orcaexe"></a>Orca.exe
 
@@ -17,7 +17,7 @@ Orca.exe es un editor de tablas de base de datos para crear y editar paquetes Wi
 
 Esta herramienta solo está disponible en los componentes del [SDK de Windows para Windows programadores del instalador](platform-sdk-components-for-windows-installer-developers.md). Se proporciona como un archivo Orca.msi datos. Después de instalar los componentes Windows SDK para desarrolladores Windows Installer, haga doble clic en Orca.msi para instalar el archivo Orca.exe.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 **orca***\[\<options>\]\[\<source file>\]*
 
@@ -30,14 +30,14 @@ Orca.exe usa las siguientes opciones de línea de comandos que no tienen en cuen
 | Opción | Descripción                                                 |
 |--------|-------------------------------------------------------------|
 | -q     | Modo silencioso                                                  |
-| -S     | <*base*> de datos \[ de esquema "orca.dat": valor predeterminado\] |
+| -S     | <*base*> de datos de esquema \[ "orca.dat": valor predeterminado\] |
 | -?     | Cuadro de diálogo de ayuda                                                 |
 
 
 
  
 
-Orca.exe usa las siguientes opciones de línea de comandos que no tienen en cuenta las mayúsculas y minúsculas con los módulos de combinación. También se puede usar un delimitador de barra diagonal en lugar de un guión. Al realizar una combinación, se requieren las propiedades -f, -m <*sourcefile*>.
+Orca.exe usa las siguientes opciones de línea de comandos que no tienen en cuenta las mayúsculas y minúsculas con los módulos de combinación. También se puede usar un delimitador de barra diagonal en lugar de un guión. Al realizar una combinación, se requieren las propiedades -f, -m y <*sourcefile*>.
 
 
 
@@ -46,10 +46,10 @@ Orca.exe usa las siguientes opciones de línea de comandos que no tienen en cuen
 | -c         | Confirme la combinación en la base de datos si no hay errores.                                     |
 | -!         | Confirme la combinación en una base de datos incluso si hay errores.                       |
 | -M         | <*módulo>* Módulo de combinación para combinar en la base de datos.                      |
-| -f         | \[Característica:Características 2 para conectarse al módulo de \] mezcla.                |
-| -r         | <*id. de* directorio> directory para el redireccionamiento raíz del módulo.    |
+| -f         | \[Característica:Características 2 \] para conectarse al módulo de mezcla.                |
+| -r         | <*Id. de* directorio> de directorio para el redireccionamiento raíz del módulo.    |
 | -X         | <*directorio*> extraer archivos a una imagen en el directorio .         |
-| -g         | <*language*> Language usado para abrir un módulo.                         |
+| -g         | <*idioma*> lenguaje usado para abrir un módulo.                         |
 | -l         | <*archivo de*> archivo que se va a usar como registro, anexe si ya existe.      |
 | -i         | <*directorio*> extraer archivos en la imagen de origen en el directorio . |
 | -cab       | <*nombre*> extraer el archivo del archivo del archivo.                        |

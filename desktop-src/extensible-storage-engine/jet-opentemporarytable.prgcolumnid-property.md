@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_OPENTEMPORARYTABLE. prgcolumnid'
-title: Propiedad JET_OPENTEMPORARYTABLE. prgcolumnid (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_OPENTEMPORARYTABLE.prgcolumnid'
+title: JET_OPENTEMPORARYTABLE.prgcolumnid (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'prgcolumnid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE.prgcolumnid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_opentemporarytable.prgcolumnid(v=EXCHG.10)
@@ -27,18 +27,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: cd6516e01d08de32f7962a48d2caca69ddbf0427
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002898"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969091"
 ---
-# <a name="jet_opentemporarytableprgcolumnid-property"></a>Propiedad JET_OPENTEMPORARYTABLE. prgcolumnid
+# <a name="jet_opentemporarytableprgcolumnid-property"></a>JET_OPENTEMPORARYTABLE.prgcolumnid, propiedad
 
-Obtiene o establece el búfer de salida que recibe la matriz de identificadores de columna generados durante la creación de la tabla temporal. Los identificadores de columna de esta matriz se corresponden exactamente con la matriz de entrada de definiciones de columna. Como resultado, el tamaño de este búfer debe corresponder al tamaño de [prgcolumndef](./jet-opentemporarytable.prgcolumndef-property.md).
+Obtiene o establece el búfer de salida que recibe la matriz de id. de columna generados durante la creación de la tabla temporal. Los id. de columna de esta matriz se corresponderán exactamente con la matriz de entrada de definiciones de columna. Como resultado, el tamaño de este búfer debe corresponder al tamaño de [prgcolumndef](./jet-opentemporarytable.prgcolumndef-property.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public JET_COLUMNID[] prgcolumnid { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Automáticamente \[\]  
+Tipo: \[\]  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_OPENTEMPORARYTABLE (clase)](./jet-opentemporarytable-class.md)
+[JET_OPENTEMPORARYTABLE clase](./jet-opentemporarytable-class.md)
 
-[Miembros de JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-members.md)
+[JET_OPENTEMPORARYTABLE miembros](./jet-opentemporarytable-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

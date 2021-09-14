@@ -4,12 +4,12 @@ ms.assetid: 2029afc4-419c-494a-ae52-1f84b08bcb35
 title: EC_PREPROCESS_COMPLETE (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df07444c501ea89ec0d19f3f727e8325953e3c06f740562f7ec058eafa987fee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba13938ac848ef37f1a2a2826372d97ff5a5d716
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119537005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161521"
 ---
 # <a name="ec_preprocess_complete"></a>EC \_ PREPROCESS \_ COMPLETE
 
@@ -47,7 +47,7 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

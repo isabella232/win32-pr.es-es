@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 21feb3094b072bcbb236d31f09ed4b237bc5bca4019fe0a6eaf3244f0ea51b2d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 79d6d376d9a574587e5e3fc5329a7c092da73a2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120063595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969175"
 ---
 # <a name="jet_columnidequality-operator"></a>JET_COLUMNID. Operador de igualdad
 
@@ -81,7 +81,7 @@ public static bool operator ==(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

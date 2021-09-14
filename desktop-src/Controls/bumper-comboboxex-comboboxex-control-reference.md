@@ -4,12 +4,12 @@ description: Referencia del control ComboBoxEx
 ms.assetid: 409b3460-ef2e-4cc1-8a85-0a376e0f89eb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 855cda596693c4ee17ae9eb1ee9ba8fa8f203fd2ed2785113a58114bb64217f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd7ac8b0bdd89c7341d413ccd2b211a8362994a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117833477"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251228"
 ---
 # <a name="comboboxex-control-reference"></a>Referencia del control ComboBoxEx
 

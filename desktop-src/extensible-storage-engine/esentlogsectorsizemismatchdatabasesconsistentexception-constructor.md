@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a9f9ba81f3272da9fce4ef7ab29f380a68344c8d9a3f8d384d97a7b5cf56ddb6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16e6f35d82ca5d49dda004cb8742e9a9e3eb2b2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119620315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969375"
 ---
 # <a name="esentlogsectorsizemismatchdatabasesconsistentexception-constructor"></a>Constructor EsentLogSectorSizeMismatchDatabasesConsistentException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLogSectorSizeMismatchDatabasesConsistentException()
 public EsentLogSectorSizeMismatchDatabasesConsistentException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

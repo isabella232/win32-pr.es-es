@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2c876d58df63b70f1b30c48a8dd08790039962cb7acedc1a79dedb712b0de446
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cf1d64e769bc2b1c9d26300c92d25a5df06ccf4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119781435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969251"
 ---
 # <a name="esenttaggednotnullexception-class"></a>Clase EsentTaggedNotNULLException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones TaggedNotNULL.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -68,7 +68,7 @@ public sealed class EsentTaggedNotNULLException : EsentObsoleteException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

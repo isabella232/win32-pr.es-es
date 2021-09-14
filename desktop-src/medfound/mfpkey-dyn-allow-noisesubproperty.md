@@ -4,12 +4,12 @@ ms.assetid: 8b018208-3e35-41a6-9f03-3aa142cc4f69
 title: MFPKEY_DYN_ALLOW_NOISESUB propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5ad11b9373051eabe10986caf49ca78f7c9db8af36b4f2a5dd0a76532da6cc9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97daf95403753ce8bb251b5a62d59dbbd0fcc9f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117690221"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257564"
 ---
 # <a name="mfpkey_dyn_allow_noisesub-property"></a>Propiedad MFPKEY \_ DYN \_ ALLOW \_ NOISESUB
 
@@ -29,12 +29,12 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Cliente<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Remoto<br/> | Windows Vista o Windows 7<br/>                                                   |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -15,18 +15,18 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5706600ea0854a3b83d961965ba3cc8f0084c2969fc31438344378781410729f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f52fbdbaa37c392de727dd2640580800d813d51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118856387"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891260"
 ---
 # <a name="clientspec-enumeration"></a>Enumeración ClientSpec
 
 Se usa con [**la propiedad ClientProtocolSpec para**](imsrdpclientadvancedsettings8-clientprotocolspec.md) especificar el protocolo de escritorio remoto usado entre el cliente y el servidor.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -46,21 +46,21 @@ typedef enum  {
 <span id="FullMode"></span><span id="fullmode"></span><span id="FULLMODE"></span>**FullMode**
 </dt> <dd>
 
-El protocolo es completo Windows 8 Escritorio remoto protocolo.
+El protocolo es un protocolo Windows 8 Escritorio remoto completo.
 
 </dd> <dt>
 
 <span id="ThinClientMode"></span><span id="thinclientmode"></span><span id="THINCLIENTMODE"></span>**ThinClientMode**
 </dt> <dd>
 
-El protocolo se limita al uso de la Windows 7 con el códec de RemoteFX SP1 y una memoria caché más pequeña. Todos los demás códecs están deshabilitados. Este protocolo tiene la superficie de memoria más pequeña.
+El protocolo se limita al uso del Windows 7 con el códec sp1 RemoteFX y una caché más pequeña. Todos los demás códecs están deshabilitados. Este protocolo tiene la menor superficie de memoria.
 
 </dd> <dt>
 
 <span id="SmallCacheMode"></span><span id="smallcachemode"></span><span id="SMALLCACHEMODE"></span>**SmallCacheMode**
 </dt> <dd>
 
-El protocolo es el mismo que **FullMode**, salvo que usa una memoria caché más pequeña.
+El protocolo es el mismo que **FullMode,** salvo que usa una memoria caché más pequeña.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ El protocolo es el mismo que **FullMode**, salvo que usa una memoria caché más
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                         |
@@ -76,7 +76,7 @@ El protocolo es el mismo que **FullMode**, salvo que usa una memoria caché más
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

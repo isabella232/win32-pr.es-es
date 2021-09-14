@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7da152cc1d006588a5a96a3295095dea13ea9cde6426bf70ede6fa44408f7c77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c245f653bceb7f0f98d9a2719d8a222a9a7a6112
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118772121"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248948"
 ---
 # <a name="esentslvpagesnotfreeexception-constructor"></a>Constructor EsentSLVPagesNotFreeException
 

@@ -4,12 +4,12 @@ ms.assetid: b94ff899-2350-4f8b-b096-9d1c73e2b492
 title: Estructuras wi-fi nativas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b6d8ad63147915eb0d4eec1b8ae379938c92f4f47a799c95ccecc965f7ed647
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ee8e5bd8b85ea252a85e7e673b4d0e7b3ae32b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117798367"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069458"
 ---
 # <a name="native-wifi-structures"></a>Estructuras wi-fi nativas
 
@@ -34,7 +34,7 @@ La interfaz Wi-Fi nativa define y usa las estructuras siguientes.
 -   [**LISTA DE \_ REDES DISPONIBLES \_ DE WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_available_network_list)
 -   [**ENTRADA \_ BSS DE WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_bss_entry)
 -   [**WLAN \_ BSS \_ LIST**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_bss_list)
--   [**ATRIBUTOS DE \_ CONEXIÓN WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_connection_attributes)
+-   [**ATRIBUTOS DE CONEXIÓN DE WLAN \_ \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_connection_attributes)
 -   [**DATOS DE \_ NOTIFICACIÓN DE \_ CONEXIÓN WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_connection_notification_data)
 -   [**PARÁMETROS DE \_ CONEXIÓN WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_connection_parameters)
 -   [**LISTA DE \_ \_ CADENAS \_ DE PAÍS O \_ REGIÓN DE \_ WLAN**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_country_or_region_string_list)

@@ -5,11 +5,11 @@ title: D3DFVF
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 56136b57aa0af7e8a7d4050f9feb6e1e3e92f3b6
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122629744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966779"
 ---
 # <a name="d3dfvf"></a>D3DFVF
 

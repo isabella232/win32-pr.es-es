@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3022a6b604956fdfda6f42b838bb7803d848a2188c7865e7e7c9fa67b73bf1a1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 26d2aeee7a138223155f19748141cb0948f008b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119956335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249489"
 ---
 # <a name="iwmpmetadatatexttext-property"></a>IWMPMetadataText::text, propiedad
 
 La `text` propiedad obtiene el texto de metadatos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public ReadOnly Property text As System.String
 
 **System.String que** es el texto de metadatos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
@@ -64,7 +64,7 @@ Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

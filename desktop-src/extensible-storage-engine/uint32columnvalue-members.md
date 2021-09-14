@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.uint
 ms:contentKeyID: 55104080
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 54230adf3d4fe46bbe5a69d0e63f79751b350f74c1afa1e6191997453013e58d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa70700dfdb74235cf16e70ff8e8efeed2e55982
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118071137"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968943"
 ---
 # <a name="uint32columnvalue-members"></a>Miembros UInt32ColumnValue
 
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

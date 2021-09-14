@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103136
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8a1f9c8da834b10924b7b77f2f70c7c4a0d9e4643d88630dc0be7ad6a290ee8f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e3ba521358f67ddb7b4b3c3787c66dfc5899f14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119969495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969224"
 ---
 # <a name="esenttranstoodeepexception-methods"></a>Métodos de EsentTransTooDeepException 
 
@@ -78,7 +78,7 @@ El [tipo EsentTransTooDeepException](./esenttranstoodeepexception-class.md) expo
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

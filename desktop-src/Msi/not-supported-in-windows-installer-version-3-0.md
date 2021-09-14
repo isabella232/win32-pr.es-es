@@ -1,19 +1,19 @@
 ---
-description: Las Windows, las tablas y las propiedades del instalador de Windows enumeradas en esta página no son compatibles con&\# Installer&160;3.0 y versiones anteriores.
+description: Las funciones, tablas y propiedades del instalador de Windows que se enumeran en esta página no son compatibles con Windows Installer&\# 160;3.0 y versiones anteriores.
 ms.assetid: 35be6da4-2a20-4a7a-9f6e-0420cd5a227e
 title: No se admite en Windows Installer 3.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 398b4211433762c68ed39af012d895d65aeee8fdc5a17f1e6142df76fcbe056c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 003a43a3667ece516f921bd9ae49695ab3716c09
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119926305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161473"
 ---
 # <a name="not-supported-in-windows-installer-30"></a>No se admite en Windows Installer 3.0
 
-Las Windows, las tablas y las propiedades del instalador que se enumeran en esta página no son compatibles con Windows Installer 3.0 y versiones anteriores. La ausencia de una característica de esta lista no garantiza que se admite la característica. Consulte la documentación principal para determinar qué Windows installer es necesaria para una característica determinada. Para obtener información sobre otras Windows installer, vea [Novedades de Windows Installer](what-s-new-in-windows-installer.md).
+Las Windows, las tablas y las propiedades del instalador que se enumeran en esta página no son compatibles con Windows Installer 3.0 y versiones anteriores. La ausencia de una característica de esta lista no garantiza que se admite la característica. Consulte la documentación principal para determinar qué versión Windows instalador es necesaria para una característica determinada. Para obtener información sobre otras Windows installer, vea [Novedades de Windows Installer](what-s-new-in-windows-installer.md).
 
 Windows El instalador 3.0 está disponible para Windows Server 2003, Windows XP o Windows 2000. Para obtener una lista de todas las versiones Windows installer y redistribuibles, vea Versiones publicadas [de Windows Installer](released-versions-of-windows-installer.md).
 

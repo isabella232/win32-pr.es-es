@@ -1,7 +1,7 @@
 ---
-description: Importa una clave en el proveedor de protocolo del Protocolo de Capa de sockets seguros (SSL).
+description: Importa una clave en el proveedor de Capa de sockets seguros de protocolos (SSL).
 ms.assetid: 42310799-384e-4396-a9d5-5f226ca25a86
-title: Función SslImportKey (Sslprovider. h)
+title: Función SslImportKey (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Ncrypt.dll
 ms.openlocfilehash: 8bf1b03fd5d51974db3676dcdbccc2a2b0fa4323
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666956"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250383"
 ---
-# <a name="sslimportkey-function"></a>SslImportKey función)
+# <a name="sslimportkey-function"></a>Función SslImportKey
 
-La función **SslImportKey** importa una clave en el proveedor de protocolo del [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+La **función SslImportKey** importa una clave en el proveedor de [*protocolos Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,33 +44,33 @@ SECURITY_STATUS WINAPI SslImportKey(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
 Identificador de la instancia del proveedor del protocolo SSL.
 
 </dd> <dt>
 
-*phKey* \[ enuncia\]
+*phKey* \[ out\]
 </dt> <dd>
 
-Puntero al identificador de la [*clave criptográfica*](/windows/desktop/SecGloss/c-gly) para recibir la clave importada.
+Puntero al identificador de la clave [*criptográfica para*](/windows/desktop/SecGloss/c-gly) recibir la clave importada.
 
 </dd> <dt>
 
-*pszBlobType* \[ de\]
+*pszBlobType* \[ En\]
 </dt> <dd>
 
-Una cadena Unicode terminada en null que contiene un identificador que especifica el tipo de [*BLOB*](/windows/desktop/SecGloss/b-gly) que se encuentra en el búfer de *pbInput* . Puede ser uno de los valores siguientes.
+Cadena Unicode terminada en NULL que contiene un identificador que especifica el tipo de [*BLOB*](/windows/desktop/SecGloss/b-gly) contenido en el *búfer pbInput.* Puede ser uno de los siguientes valores.
 
 
 
 | Value                                                                                                                                                                                      | Significado                                                                                                                                                                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="BCRYPT_DH_PUBLIC_BLOB"></span><span id="bcrypt_dh_public_blob"></span><dl> <dt>**\_ \_ BLOB público de BCRYPT DH \_**</dt> </dl>    | Exportar una [*clave pública*](/windows/desktop/SecGloss/p-gly)de Diffie-Hellman. El búfer *pbOutput* recibe una estructura de BLOB de [**clave de BCRYPT \_ \_ \_ DH**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_key_blob) seguida inmediatamente de los datos de clave.<br/>                                                                                                                                                        |
-| <span id="BCRYPT_ECCPUBLIC_BLOB"></span><span id="bcrypt_eccpublic_blob"></span><dl> <dt>**\_BLOB ECCPUBLIC de BCRYPT \_**</dt> </dl>     | Exportar una [*clave pública*](/windows/desktop/SecGloss/p-gly)de [*criptografía de curva elíptica*](/windows/desktop/SecGloss/e-gly) (ECC). El búfer *pbOutput* recibe una estructura de [**\_ \_ blobs ECCKEY de BCRYPT**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_ecckey_blob) seguida inmediatamente de los datos clave.<br/>                             |
-| <span id="BCRYPT_OPAQUE_KEY_BLOB"></span><span id="bcrypt_opaque_key_blob"></span><dl> <dt>**\_BLOB de \_ clave \_ opaca de BCRYPT**</dt> </dl> | Exportar una [*clave simétrica*](/windows/desktop/SecGloss/s-gly) en un formato específico de un único proveedor de [*servicios criptográficos*](/windows/desktop/SecGloss/c-gly) (CSP). Los blobs opacos no se pueden transferir y se deben importar mediante el mismo CSP que generó el BLOB.<br/> |
-| <span id="BCRYPT_RSAPUBLIC_BLOB"></span><span id="bcrypt_rsapublic_blob"></span><dl> <dt>**\_BLOB RSAPUBLIC de BCRYPT \_**</dt> </dl>     | Exportar una clave pública [*RSA*](/windows/desktop/SecGloss/r-gly) . El búfer *pbOutput* recibe una estructura de [**\_ \_ blobs RSAKEY de BCRYPT**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_rsakey_blob) seguida inmediatamente de los datos clave.<br/>                                                                                                                                                                                 |
+| <span id="BCRYPT_DH_PUBLIC_BLOB"></span><span id="bcrypt_dh_public_blob"></span><dl> <dt>**BCRYPT \_ DH \_ PUBLIC \_ BLOB**</dt> </dl>    | Exporte un Diffie-Hellman [*clave pública*](/windows/desktop/SecGloss/p-gly). El *búfer pbOutput* recibe una estructura [**\_ BCRYPT DH KEY \_ \_ BLOB**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_key_blob) seguida inmediatamente de los datos clave.<br/>                                                                                                                                                        |
+| <span id="BCRYPT_ECCPUBLIC_BLOB"></span><span id="bcrypt_eccpublic_blob"></span><dl> <dt>**BCRYPT \_ ECCPUBLIC \_ BLOB**</dt> </dl>     | Exporte una clave pública [*de criptografía*](/windows/desktop/SecGloss/e-gly) de curva elíptica (ECC). [](/windows/desktop/SecGloss/p-gly) El *búfer pbOutput* recibe una estructura [**\_ BCRYPT ECCKEY \_ BLOB**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_ecckey_blob) seguida inmediatamente de los datos clave.<br/>                             |
+| <span id="BCRYPT_OPAQUE_KEY_BLOB"></span><span id="bcrypt_opaque_key_blob"></span><dl> <dt>**BCRYPT \_ OPAQUE \_ KEY \_ BLOB**</dt> </dl> | Exportar una [*clave simétrica*](/windows/desktop/SecGloss/s-gly) en un formato específico de un único proveedor [*de servicios criptográficos*](/windows/desktop/SecGloss/c-gly) (CSP). Los blobs opacos no son transferibles y deben importarse mediante el mismo CSP que generó el BLOB.<br/> |
+| <span id="BCRYPT_RSAPUBLIC_BLOB"></span><span id="bcrypt_rsapublic_blob"></span><dl> <dt>**BCRYPT \_ RSAPUBLIC \_ BLOB**</dt> </dl>     | Exportar una [*clave pública RSA.*](/windows/desktop/SecGloss/r-gly) El *búfer pbOutput* recibe una [**estructura \_ BCRYPT RSAKEY \_ BLOB**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_rsakey_blob) inmediatamente seguida de los datos clave.<br/>                                                                                                                                                                                 |
 
 
 
@@ -78,21 +78,21 @@ Una cadena Unicode terminada en null que contiene un identificador que especific
 
 </dd> <dt>
 
-*pbKeyBlob* \[ de\]
+*pbKeyBlob* \[ En\]
 </dt> <dd>
 
-Puntero al búfer que contiene el BLOB de [*clave*](/windows/desktop/SecGloss/k-gly).
+Puntero al búfer que contiene la [*clave BLOB*](/windows/desktop/SecGloss/k-gly).
 
 </dd> <dt>
 
-*cbKeyBlob* \[ de\]
+*cbKeyBlob* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer *pbKeyBlob* .
+Tamaño, en bytes, del *búfer pbKeyBlob.*
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -101,19 +101,19 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                       | Descripción                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**NTE \_ NO hay \_ memoria**</dt> <dt>0x8009000EL</dt> </dl>         | No hay suficiente memoria disponible para asignar los búferes necesarios.<br/> |
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl>    | El identificador de *hSslProvider* no es válido.<br/>                       |
-| <dl> <dt>**NTE \_ \_Parámetro no válido**</dt> <dt>0x80090027L</dt> </dl> | El parámetro *phKey* es **null**.<br/>                            |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | No hay suficiente memoria disponible para asignar los búferes necesarios.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | El *identificador hSslProvider* no es válido.<br/>                       |
+| <dl> <dt>**NTE \_ PARÁMETRO \_ NO VÁLIDO**</dt> <dt>0x80090027L</dt> </dl> | El *parámetro phKey* es **NULL.**<br/>                            |
 
 
 
@@ -121,7 +121,7 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 ## <a name="remarks"></a>Observaciones
 
-Puede usar la función **SslImportKey** para importar claves de sesión como parte del proceso de transferencia de claves de sesión de un proceso a otro.
+Puede usar la función **SslImportKey para** importar claves de sesión como parte del proceso de transferencia de claves de sesión de un proceso a otro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -129,9 +129,9 @@ Puede usar la función **SslImportKey** para importar claves de sesión como par
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -4,18 +4,18 @@ description: La especificación Automatización de la interfaz de usuario propor
 ms.assetid: 5fab2d7a-0b1c-4119-b7f4-afdf86db74e7
 keywords:
 - Automatización de la interfaz de usuario,especificaciones
-- Automatización de la interfaz de usuario, promesa de la comunidad
-- Especificaciones de Automatización de la interfaz de usuario
+- Automatización de la interfaz de usuario,promesa de la comunidad
+- especificaciones de Automatización de la interfaz de usuario
 - promesa de la comunidad para Automatización de la interfaz de usuario
 - Automatización de la interfaz de usuario,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed9a71b5946f7e0b38241a1d7ef7ced9832203bfd4f0637032903f4dad948607
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c1d369493fae6bd82f882dc9251df7185be7b862
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119570495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172670"
 ---
 # <a name="ui-automation-specification-and-community-promise"></a>UI Automation Specification y Community Promise
 
@@ -25,7 +25,7 @@ La Automatización de la interfaz de usuario Community Promise permite a cualqui
 
 ## <a name="ui-automation-specification"></a>Automatización de la interfaz de usuario especificación
 
-La Automatización de la interfaz de usuario proporciona información sobre los marcos de accesibilidad de Microsoft, incluidos Active Accessibility, Automatización de la interfaz de usuario y Automatización de la interfaz de usuario Express. Se describen los componentes principales de cada marco, se proporcionan ejemplos y consideraciones de diseño y se describen los requisitos de implementación.
+La Automatización de la interfaz de usuario especificación proporciona información sobre los marcos de accesibilidad de Microsoft, incluidos Active Accessibility, Automatización de la interfaz de usuario y Automatización de la interfaz de usuario Express. Se describen los componentes principales de cada marco, se proporcionan ejemplos y consideraciones de diseño y se describen los requisitos de implementación.
 
 ### <a name="ui-automation-specification-copyright-license"></a>Automatización de la interfaz de usuario licencia de copyright de especificación de datos
 
@@ -33,9 +33,9 @@ La siguiente licencia de copyright se aplica a Automatización de la interfaz de
 
 ### <a name="legal-notice"></a>Aviso legal
 
-Se concede permiso para copiar, mostrar y distribuir el contenido de este documento (la "Especificación"), en cualquier medio para cualquier propósito sin cuota ni canon, siempre que incluya el siguiente aviso en TODAS las copias de la especificación, o partes de ella, que realice:
+Se concede permiso para copiar, mostrar y distribuir el contenido de este documento (la "Especificación"), en cualquier medio para cualquier propósito sin honorarios ni regalías, siempre que incluya el siguiente aviso en TODAS las copias de la especificación, o partes de ella, que realice:
 
-Copyright © Microsoft Corporation. All rights reserved. El permiso para copiar, mostrar y distribuir este documento está disponible en [Automatización de la interfaz de usuario Community Promise](uiauto-specandcommunitypromise.md).
+Copyright © Microsoft Corporation. Todos los derechos reservados. El permiso para copiar, mostrar y distribuir este documento está disponible en [Automatización de la interfaz de usuario Community Promise](uiauto-specandcommunitypromise.md).
 
 Puede crear trabajos derivados de la especificación, siempre que incluya todas las partes necesarias de la especificación en el trabajo derivado y proporcione el aviso anterior.
 

@@ -1,5 +1,5 @@
 ---
-description: Especifica el período de tiempo, en segundos, que se esperará antes de EAPOL-Start se envíe una aplicación.
+description: Especifica el período de tiempo, en segundos, que se debe esperar antes de EAPOL-Start se envía una aplicación.
 ms.assetid: 6163eeb9-23a8-4e34-ad3f-016946e241e2
 title: elemento startPeriod (OneX)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 2d21381939348ce8c37a9b23abb2283ab209e766bbce452c3802b8c5defe0872
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a583403a354cbefe93387be2d5af06958bbf6b28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119800725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069445"
 ---
 # <a name="startperiod-onex-element"></a>elemento startPeriod (OneX)
 
-El elemento startPeriod (OneX) especifica el período de tiempo, en segundos, que se debe esperar antes de EAPOL-Start se envía. Se EAPOL-Start mensaje para iniciar el proceso de autenticación 802.1X.
+El elemento startPeriod (OneX) especifica el tiempo, en segundos, que se debe esperar antes de que se envíe EAPOL-Start una aplicación. Se EAPOL-Start mensaje para iniciar el proceso de autenticación 802.1X.
 
 Este elemento es opcional. Cuando startPeriod no se especifica en un perfil, se usa un valor de 5 segundos.
 
@@ -50,14 +50,14 @@ El **elemento startPeriod** se define mediante el [**elemento OneX.**](onexschem
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

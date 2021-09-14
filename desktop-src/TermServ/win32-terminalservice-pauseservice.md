@@ -1,6 +1,6 @@
 ---
 title: Método PauseService de la clase Win32_Service (Servicios de Escritorio remoto)
-description: 'Método PauseService de la Win32_Service (Servicios de Escritorio remoto): intenta colocar el servicio en estado en pausa.'
+description: 'Método PauseService de la clase Win32_Service (Servicios de Escritorio remoto): intenta colocar el servicio en estado en pausa.'
 ms.assetid: 101987F6-FBAB-4E79-B1FA-346B1EF58DE1
 ms.tgt_platform: multiple
 keywords:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3bce9626b67b989ca9ec323f2c1150599696c6bf203a09a1b77aabb88e6f6b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d7c9847f363d9bc6d1743da6189d2c4290c00dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119867935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890748"
 ---
 # <a name="pauseservice-method-of-the-win32_service-class-remote-desktop-services"></a>Método PauseService de la clase Win32_Service (Servicios de Escritorio remoto)
 
-El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** intenta colocar el servicio en estado en pausa.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** intenta colocar el servicio en estado de pausa.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -224,7 +224,7 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de determinar qué servicios se pueden detener o pausar, puede usar los métodos [**StopService**](win32-terminalservice-stopservice.md) y **PauseService** para detener y pausar los servicios. La decisión de detener un servicio en lugar de pausarlo, o viceversa, depende de varios factores, incluidos los siguientes:
 
@@ -236,7 +236,7 @@ El código de scripting necesario para detener un servicio es casi idéntico al 
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo de VBScript](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) Pausar los servicios que se ejecutan en una cuenta específica pausa todos los servicios que se ejecutan en la cuenta de servicio hipotética Netsvc.
+El [ejemplo de VBScript Pausar](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) servicios que se ejecutan en una cuenta específica pausa todos los servicios que se ejecutan en la cuenta de servicio hipotética Netsvc.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -246,13 +246,13 @@ El [ejemplo de VBScript](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-469
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

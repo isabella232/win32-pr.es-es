@@ -15,14 +15,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9658f1df1fbe316fa9f308b9f8e0589f0f93858916c6dbde4607fd11a6f0707f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8dc7ae2703ac80ac155c04d42624a081723288bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119751955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969899"
 ---
-# <a name="cd3dx12_pipeline_state_stream_depth_stencil_format-structure"></a>Estructura \_ \_ \_ \_ \_ STENCIL \_ FORMAT DE PROFUNDIDAD DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12
+# <a name="cd3dx12_pipeline_state_stream_depth_stencil_format-structure"></a>Estructura DE FORMATO \_ \_ \_ \_ \_ STENCIL \_ DE PROFUNDIDAD DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12
 
 Estructura auxiliar que se usa para describir el formato de galería de símbolos de profundidad como un único objeto adecuado para una descripción de secuencia.
 
@@ -40,21 +40,21 @@ struct CD3DX12_PIPELINE_STATE_STREAM_DEPTH_STENCIL_FORMAT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
-**FORMATO DE GALERÍA DE SÍMBOLOS DE PROFUNDIDAD DE \_ FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ \_ \_ CD3DX12 \_**
+**FORMATO DE GALERÍA DE SÍMBOLOS DE PROFUNDIDAD DE FLUJO DE ESTADO DE \_ \_ CANALIZACIÓN \_ \_ \_ CD3DX12 \_**
 </dt> <dd>
 
-Crea una nueva instancia sin inicializar de un FORMATO \_ \_ \_ \_ \_ STENCIL CD3DX12 PIPELINE STATE STREAM \_ DEPTH.
+Crea una nueva instancia de CD3DX12 \_ PIPELINE \_ STATE STREAM DEPTH \_ \_ \_ STENCIL FORMAT, sin \_ inicializar.
 
 </dd> <dt>
 
 **CD3DX12 \_ PIPELINE STATE STREAM DEPTH \_ \_ \_ \_ STENCIL \_ FORMAT (DXGI \_ FORMAT const &i)**
 </dt> <dd>
 
-Crea una nueva instancia de UN CD3DX12 PIPELINE STATE STREAM DEPTH STENCIL FORMAT, inicializado con un \_ \_ tipo de subobjeto \_ \_ \_ \_ **D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT TYPE DEPTH \_ \_ \_ STENCIL \_ FORMAT** y datos de subobjetos [**\_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) copiados de i , una enumeración DXGI FORMAT.
+Crea una nueva instancia de UN CD3DX12 PIPELINE STATE STREAM DEPTH STENCIL FORMAT, inicializado con un \_ \_ tipo de subobjeto \_ \_ \_ \_ **D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT TYPE DEPTH \_ \_ \_ STENCIL \_ FORMAT** y datos de subobjetos copiados de i , una [**enumeración DXGI \_ FORMAT.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Conversión implícita a una [**enumeración \_ DXGI FORMAT.**](/windows/desktop
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 CD3DX12 PIPELINE STATE STREAM DEPTH STENCIL FORMAT es una especialización typedef de la plantilla \_ \_ \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
 
@@ -95,7 +95,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<DXGI_FORMAT, D3D12_PIPELINE_STAT
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -105,7 +105,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<DXGI_FORMAT, D3D12_PIPELINE_STAT
 [**SUBOBJETO CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**TIPO DE \_ SUBOBJETO DE ESTADO \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE SUBOBJETO DE ESTADO \_ \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

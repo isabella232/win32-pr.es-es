@@ -7,12 +7,12 @@ MSHAttr:
 title: RoamApplicability (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d81607e57c41b4618f4aab8eaf7c8656a47acc4b
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0e38bff2d9ec50c78c3d2e2497b732719eff61a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476091"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172246"
 ---
 # <a name="span-idwwan_profile_v4element_1_roamapplicabilityspanmodemdmconfigprofileroamapplicability-v4"></a><span id="WWAN_profile_v4.element_1_RoamApplicability"></span>ModemDMConfigProfile \/ RoamApplicability (v4)
 
@@ -26,7 +26,7 @@ Especifica que este perfil está activo solo cuando la condición de itinerancia
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<RoamApplicability\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <RoamApplicability>
@@ -52,7 +52,7 @@ Ninguno.
 | Elemento primario | Descripción | 
 |----------------|-------------|
 | <a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a> | <p>Perfil de configuración de DM de módem.</p> | 
-| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Especifica las condiciones que deben cumplirse para que un perfil sea aplicable.</p><p>Este elemento es nuevo para v4. Permite especificar varios perfiles que se aplican en condiciones diferentes y para que el perfil adecuado se utilice automáticamente cuando sea aplicable. Este elemento es opcional. Si no lo especifica, el perfil siempre es aplicable con respecto a las condiciones enumeradas.</p> | 
+| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Especifica las condiciones que se deben cumplir para que un perfil sea aplicable.</p><p>Este elemento es nuevo para v4. Permite especificar varios perfiles que se aplican en condiciones diferentes y para que el perfil adecuado se utilice automáticamente cuando sea aplicable. Este elemento es opcional. Si no lo especifica, el perfil siempre es aplicable con respecto a las condiciones enumeradas.</p> | 
 
 
  
@@ -60,7 +60,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

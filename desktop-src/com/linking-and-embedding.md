@@ -4,12 +4,12 @@ description: Vinculación e incrustación de objetos
 ms.assetid: 7c35ab0a-f534-42b1-9871-d288c36bd739
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60667fa199338089724a8b8829a6cb843de3657eebbca3da253e2d89797a8a9b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1aee08b067723edb04f9cc0da8b1db45477497c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119854275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249272"
 ---
 # <a name="linking-and-embedding"></a>Vinculación e incrustación de objetos
 

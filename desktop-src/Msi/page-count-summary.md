@@ -4,12 +4,12 @@ ms.assetid: ee3aaeed-166c-4591-ae3e-642c1204a5ca
 title: Propiedad Resumen de recuento de páginas
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 690f19db5b8b4dc4dff3c3eb30f616803754bfac199a3aa1e6656da0f1e3fa39
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ec5e319450bb7a7db5515587be7777ad3e657d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145418"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250934"
 ---
 # <a name="page-count-summary-property"></a>Propiedad Resumen de recuento de páginas
 
@@ -23,7 +23,7 @@ Para un paquete de revisión, la **propiedad Resumen de recuento de** páginas e
 
 Esta propiedad de resumen es obligatoria.
 
-Esta propiedad se puede usar para crear un paquete que solo se puede instalar mediante la versión mínima o posterior especificada del instalador Windows.
+Esta propiedad se puede usar para crear un paquete que solo se puede instalar con la versión mínima o posterior especificada del instalador de Windows.
 
 ## <a name="requirements"></a>Requisitos
 

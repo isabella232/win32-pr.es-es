@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_INDEXRANGE propiedades'
+description: 'Más información sobre: propiedades JET_INDEXRANGE datos'
 title: JET_INDEXRANGE propiedades
 TOCTitle: JET_INDEXRANGE properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_INDEXRANGE
@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103678
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b97ddc0071835e529fdda36e668fccb28fd98858cf7e77962bda0cc23ed35268
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e573de3b7769da70c8a40a638f9a553cce777687
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117894746"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962980"
 ---
 # <a name="jet_indexrange-properties"></a>JET_INDEXRANGE propiedades
 
@@ -48,7 +48,7 @@ El [JET_INDEXRANGE](./jet-indexrange-class.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

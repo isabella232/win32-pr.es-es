@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Proporcionar datos a WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f22fbff46959c001f589587f21b8b2b50ab5c5187d387338f407bf45e3e1a29d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 60df0384bd6f512b931870775067d9d9e6d4077d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118316579"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249338"
 ---
 # <a name="providing-data-to-wmi"></a>Proporcionar datos a WMI
 
@@ -29,7 +29,7 @@ En este tema se de abordan las siguientes secciones:
 
 ## <a name="creating-a-model-for-a-manageable-object"></a>Crear un modelo para un objeto administrable
 
-Antes de desarrollar un proveedor, cree un modelo de datos para representar el objeto administrable que se va a exponer a través de WMI. Planee qué objetos de datos expondrá el proveedor. Por ejemplo, si tiene previsto administrar la resolución de pantalla del fondo del escritorio, debe decidir cómo modelar el escritorio en un archivo [*Managed Object Format (MOF).*](gloss-m.md)
+Antes de desarrollar un proveedor, cree un modelo de datos para representar el objeto administrable que se va a exponer a través de WMI. Planee qué objetos de datos expondrá el proveedor. Por ejemplo, si planea administrar la resolución de pantalla del fondo del escritorio, debe decidir cómo modelar el escritorio en un archivo [*Managed Object Format (MOF).*](gloss-m.md)
 
 Para crear un modelo útil:
 
@@ -71,7 +71,7 @@ El término proveedor acoplado o desacoplado determina en qué proceso de host s
 
 Para obtener más información sobre cómo crear un proveedor acoplado, vea Proporcionar datos a [WMI](supplying-data-to-wmi-by-writing-a-provider.md)escribiendo un proveedor y, para obtener información sobre cómo incorporar un proveedor desacoplado en una aplicación, vea Incorporación de un proveedor en una [aplicación](incorporating-a-provider-in-an-application.md).
 
-Los proveedores acoplados se pueden describir como en proceso (en proceso) o fuera de proceso (fuera de proceso). Cuando un proveedor acoplado es un proveedor en proceso, se ejecuta en un proceso de hospedaje de WMI de WMIPRVSE.EXE compartido y se implementa como un servidor en proceso COM (.dll). Cuando un proveedor es un proveedor fuera de proceso, WMI lo inicia a petición de un cliente o evento, pero se ejecuta como un proceso separado y se implementa como ejecutable (.exe).
+Los proveedores acoplados se pueden describir como en proceso (en proceso) o fuera de proceso (fuera de proceso). Cuando un proveedor acoplado es un proveedor en proceso, se ejecuta en un proceso compartido de hospedaje wmi de WMIPRVSE.EXE y se implementa como un servidor en proceso COM (.dll). Cuando un proveedor es un proveedor fuera de proceso, WMI lo inicia a petición de un cliente o evento, pero se ejecuta como un proceso separado y se implementa como ejecutable (.exe).
 
 ## <a name="implementing-a-provider"></a>Implementar un proveedor
 

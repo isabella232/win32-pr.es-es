@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: a7b7460dcbadc82a0bb8acb647f2ffd03edea711610bd5827c7aff057babf1ce
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 978cfb62458c2cbcecba8c8d7ba8d9e7df201d2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119911884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069373"
 ---
 # <a name="netserviceenum"></a>NetServiceEnum
 

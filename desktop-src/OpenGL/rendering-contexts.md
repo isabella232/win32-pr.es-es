@@ -7,12 +7,12 @@ keywords:
 - contextos de representación OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51167161662501f8aaaca6a392b2efc84217be139842c343056746abf0c35161
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53ac2ac6c5948da2b7372d600377666cd9e4e074
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119011953"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069290"
 ---
 # <a name="rendering-contexts"></a>Representación de contextos
 

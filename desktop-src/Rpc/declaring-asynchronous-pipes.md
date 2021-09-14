@@ -4,12 +4,12 @@ description: El siguiente archivo IDL de ejemplo define una estructura de canali
 ms.assetid: ddd20212-18f5-41f6-9f6e-0edbe5e517a2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16c49bc722cd8069f446cc87567f20b1636dc77654f4387ca635f952e33dc83b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f4f8fb11d89d92bcee5b2b8b052a381077aeb82c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120101675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069158"
 ---
 # <a name="declaring-asynchronous-pipes"></a>Declarar canalizaciones asincrónicas
 

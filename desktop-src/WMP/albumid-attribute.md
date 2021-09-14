@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2690e4b6dd6bf6c8d795c8a06aca9c65c3f2c17513cf9b8ab8d55419b00d517
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 339253c82554579fa549371e2ebe4cb2f1926cc5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120124075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890137"
 ---
 # <a name="albumid-attribute"></a>Atributo AlbumID
 
@@ -27,11 +27,11 @@ El **atributo AlbumID** es un identificador único para el álbum.
 
 -   [Elementos de audio](audio-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 
-El identificador único es una combinación del título del álbum y el nombre del intérprete del álbum. En este atributo, el título del álbum es el primero. Cuando se usa el [método MediaCollection.getAttributeStringCollection para](mediacollection-getattributestringcollection.md) obtener un **objeto StringCollection** con este atributo, los valores se ordenan por título del álbum.
+El identificador único es una combinación del título del álbum y el nombre del intérprete del álbum. En este atributo, el título del álbum es el primero. Cuando se usa el [método MediaCollection.getAttributeStringCollection](mediacollection-getattributestringcollection.md) para obtener un objeto **StringCollection** mediante este atributo, los valores se ordenan por título del álbum.
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -45,7 +45,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

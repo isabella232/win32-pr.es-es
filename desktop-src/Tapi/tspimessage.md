@@ -4,12 +4,12 @@ ms.assetid: b3c4ce68-033f-42f1-8c37-66326d21bf32
 title: TSPIMessage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1f74b412d131fc40a13f9da13dc86ba4f31a3becf6bb747e95131bc3bb0e2bf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 75ed5f081c367c675c565f64146b2201890b8306
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119739165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173065"
 ---
 # <a name="tspimessage"></a>TSPIMessage
 

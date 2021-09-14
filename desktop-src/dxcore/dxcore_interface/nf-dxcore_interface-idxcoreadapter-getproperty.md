@@ -4,16 +4,16 @@ description: Recupera el valor de la propiedad de adaptador especificada.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 8adb48994580125d153c36394c4db65cb38f4a08306814d1638e5c27eb3d4868
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8a7f7b36fdb0128b4047335051823da07a074c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118279405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966395"
 ---
 # <a name="idxcoreadaptergetproperty-method"></a>IDXCoreAdapter::GetProperty (método)
 
-Recupera el valor de la propiedad de adaptador especificada. Antes de llamar a **GetProperty** para un tipo de propiedad, llame a [IsPropertySupported](./nf-dxcore_interface-idxcoreadapter-ispropertysupported.md) para confirmar que el tipo de propiedad está disponible para este adaptador y sistema operativo (SO). También antes de **llamar a GetProperty**, llame a [GetPropertySize](./nf-dxcore_interface-idxcoreadapter-getpropertysize.md) para determinar el tamaño necesario del búfer en el que se va a recibir el valor de propiedad.
+Recupera el valor de la propiedad de adaptador especificada. Antes de llamar a **GetProperty** para un tipo de propiedad, llame a [IsPropertySupported](./nf-dxcore_interface-idxcoreadapter-ispropertysupported.md) para confirmar que el tipo de propiedad está disponible para este adaptador y sistema operativo (SO). También antes de **llamar a GetProperty**, llame a [GetPropertySize para](./nf-dxcore_interface-idxcoreadapter-getpropertysize.md) determinar el tamaño necesario del búfer en el que se va a recibir el valor de propiedad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ Tipo de la propiedad cuyo valor desea recuperar. Consulte la tabla de [DXCoreAda
 
 Tipo: **size_t**
 
-Tamaño, en bytes, del búfer de salida que asigna y proporciona en *propertyData.*
+Tamaño, en bytes, del búfer de salida que se asigna y se proporciona en *propertyData.*
 
 ### <a name="propertydata-out"></a>propertyData [out]
 
@@ -59,12 +59,12 @@ Si la función se realiza correctamente, devuelve **S_OK**. De lo contrario, dev
 |-|-|
 |DXGI_ERROR_INVALID_CALL|Este sistema operativo  (SO) no reconoce el tipo de propiedad especificado en la propiedad . Llame [a IsPropertySupported](./nf-dxcore_interface-idxcoreadapter-ispropertysupported.md) para confirmar que el tipo de propiedad está disponible para este adaptador y sistema operativo (SO).|
 |DXGI_ERROR_UNSUPPORTED|El adaptador no admite *el* tipo de propiedad especificado en la propiedad . Llame [a IsPropertySupported](./nf-dxcore_interface-idxcoreadapter-ispropertysupported.md) para confirmar que el tipo de propiedad está disponible para este adaptador y sistema operativo (SO).|
-|E_INVALIDARG|Se proporciona un tamaño de búfer insuficiente en *propertyData.* Llame [a GetPropertySize](./nf-dxcore_interface-idxcoreadapter-getpropertysize.md) para determinar el tamaño que debe tener el búfer *propertyData* para una propiedad de adaptador determinada.|
+|E_INVALIDARG|Se proporciona un tamaño de búfer insuficiente en *propertyData*. Llame [a GetPropertySize](./nf-dxcore_interface-idxcoreadapter-getpropertysize.md) para determinar el tamaño que debe tener el búfer *propertyData* para una propiedad de adaptador determinada.|
 |E_POINTER|`nullptr`se proporcionó para *propertyData.*|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Como resultado, puede llamar a **GetProperty** en un adaptador que ya no sea válido. &mdash; Esta función cero el búfer *propertyData* antes de rellenarlo.
+Puede llamar a **GetProperty** en un adaptador que ya no sea válido; como resultado, la función no producirá un &mdash; error. Esta función cero el búfer *propertyData* antes de rellenarlo.
 
 ## <a name="see-also"></a>Consulte también
 

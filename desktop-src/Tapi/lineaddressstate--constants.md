@@ -4,12 +4,12 @@ ms.assetid: f06140d0-f41a-4228-93c5-21d609af5473
 title: LINEADDRESSSTATE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddf746d98328df51497374b990eb23f3885516ee1374d9cfdafb8799d016fb74
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 483ac665c41989c65b43419442601dfb70667dc2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117761857"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249993"
 ---
 # <a name="lineaddressstate_-constants"></a>Constantes \_ LINEADDRESSSTATE
 
@@ -22,7 +22,7 @@ Las constantes de marca de bits **LINEADDRESSSTATE \_** describen varios element
 
 
 
-Indica que, debido a los cambios de configuración realizados por el usuario u otras circunstancias, uno o varios de los miembros de la estructura [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps) de la dirección han cambiado. La aplicación debe usar [**lineGetAddressCaps para**](/windows/desktop/api/Tapi/nf-tapi-linegetaddresscaps) leer la estructura actualizada. Si un proveedor de servicios envía un mensaje [**\_ LINE ADDRESSSTATE**](line-addressstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado TAPI versión 1.4 o posterior; las aplicaciones que negocian una versión de API anterior recibirán mensajes [**\_ LINEDEVSTATE**](line-linedevstate.md) que especifican LINEDEVSTATE REINIT, lo que les obliga a apagar y reinicializar su conexión a TAPI para obtener la información \_ actualizada.
+Indica que, debido a los cambios de configuración realizados por el usuario u otras circunstancias, uno o varios de los miembros de la estructura [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps) de la dirección han cambiado. La aplicación debe usar [**lineGetAddressCaps para**](/windows/desktop/api/Tapi/nf-tapi-linegetaddresscaps) leer la estructura actualizada. Si un proveedor de servicios envía un mensaje [**\_ LINE ADDRESSSTATE**](line-addressstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado TAPI versión 1.4 o posterior; las aplicaciones que negocien una versión de API anterior recibirán mensajes [**\_ LINEDEVSTATE**](line-linedevstate.md) que especifican LINEDEVSTATE REINIT, lo que les obliga a cerrar y reinicializar su conexión a TAPI para obtener la información \_ actualizada.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ La dirección supervisada o puente ha pasado de estar en uso por una estación a
 
 
 
-La dirección ha cambiado de inactiva o en uso por muchas estaciones puente a estar en uso por una sola estación.
+La dirección ha cambiado de inactiva o en uso por muchas estaciones de puente a estar en uso por una sola estación.
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ La dirección ha cambiado de inactiva o en uso por muchas estaciones puente a es
 
 
 
-La dirección ha cambiado a inactiva (no está en uso por ninguna estación).
+La dirección ha cambiado a inactiva (no está en uso en ninguna estación).
 
 
 </dt> </dl> </dd> <dt>
@@ -82,7 +82,7 @@ La dirección ha cambiado a inactiva (no está en uso por ninguna estación).
 
 
 
-El número de llamadas en la dirección ha cambiado. Esto es el resultado de eventos como una nueva llamada entrante, una llamada saliente en la dirección o una llamada que cambia su estado de retención. Esta marca cubre los cambios en cualquiera de los miembros **dwNumActiveCalls**, **dwNumOnHoldCalls** y **dwNumOnHoldPendingCalls** en la [**estructura LINEADDRESSSTATUS.**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) La aplicación debe comprobar los tres miembros cuando recibe un [**mensaje LINE \_ ADDRESSSTATE**](line-addressstate.md) (numCalls).
+El número de llamadas en la dirección ha cambiado. Este es el resultado de eventos como una nueva llamada entrante, una llamada saliente en la dirección o una llamada que cambia su estado de retención. Esta marca cubre los cambios en cualquiera de los miembros **dwNumActiveCalls,** **dwNumOnHoldCalls** y **dwNumOnHoldPendingCalls** en la [**estructura LINEADDRESSSTATUS.**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) La aplicación debe comprobar los tres miembros cuando recibe un mensaje [**LINE \_ ADDRESSSTATE**](line-addressstate.md) (numCalls).
 
 
 </dt> </dl> </dd> <dt>
@@ -92,7 +92,7 @@ El número de llamadas en la dirección ha cambiado. Esto es el resultado de eve
 
 
 
-Los elementos de estado de dirección distintos de los enumerados a continuación han cambiado. La aplicación debe comprobar el estado de la dirección actual para determinar qué elementos han cambiado.
+Los elementos de estado de dirección distintos de los que se enumeran a continuación han cambiado. La aplicación debe comprobar el estado de la dirección actual para determinar qué elementos han cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -107,11 +107,11 @@ La configuración del terminal para la dirección ha cambiado.
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
-Se notifica a una aplicación sobre los cambios en estos elementos de estado en el [**mensaje \_ LINE ADDRESSSTATE.**](line-addressstate.md) Las funcionalidades del dispositivo de la dirección indican qué cambios de estado de dirección se pueden indicar para esta dirección.
+Se notifica a una aplicación sobre los cambios en estos elementos de estado en el [**mensaje LINE \_ ADDRESSSTATE.**](line-addressstate.md) Las funcionalidades del dispositivo de la dirección indican qué cambios de estado de dirección se pueden indicar para esta dirección.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -120,7 +120,7 @@ Se notifica a una aplicación sobre los cambios en estos elementos de estado en 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

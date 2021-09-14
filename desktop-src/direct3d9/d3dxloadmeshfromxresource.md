@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 903add3ab87e23f904e609b2d0fe076cef4e7990f62424f365307ba87e014e0f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b3e1d9d14d86296df48e2d27f77e2f79f3ad73c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119857005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966743"
 ---
 # <a name="d3dxloadmeshfromxresource-function"></a>Función D3DXLoadMeshFromXResource
 
@@ -145,7 +145,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Consulte [**FindResource para**](/windows/win32/api/winbase/nf-winbase-findresourcea) obtener más información sobre los parámetros Module, Name y Type.
 
@@ -166,7 +166,7 @@ El nombre de textura predeterminado también se rellena, pero se controla de for
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

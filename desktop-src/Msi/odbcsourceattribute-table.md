@@ -4,26 +4,26 @@ ms.assetid: 8ee50fd7-507e-484f-9a16-de5449470562
 title: Tabla ODBCSourceAttribute
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c6d84ca19dfd059df4ff8f79d9409ef23288800f09e84d45e1b55d81bc8641e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d52dd9636ac19eae0fb3a9e41d1a1c8389753e5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120082715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251066"
 ---
 # <a name="odbcsourceattribute-table"></a>Tabla ODBCSourceAttribute
 
 La tabla ODBCSourceAttribute contiene información sobre los atributos de los orígenes de datos.
 
-La tabla ODBCSourceAttribute tiene las columnas siguientes.
+La tabla ODBCSourceAttribute tiene las siguientes columnas.
 
 
 
 | Columna       | Tipo                         | Clave | Nullable |
 |--------------|------------------------------|-----|----------|
-| Datasource\_ | [Identificador](identifier.md) | Y   | N        |
-| Atributo    | [Texto](text.md)             | Y   | N        |
-| Value        | [Formato](formatted.md)   | N   | Y        |
+| Datasource\_ | [Identificador](identifier.md) | Y   | No        |
+| Atributo    | [Texto](text.md)             | Y   | No        |
+| Value        | [Formato](formatted.md)   | No   | Y        |
 
 
 
@@ -54,9 +54,9 @@ Valor de cadena localizable para el atributo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las [acciones InstallODBC](installodbc-action.md) [y RemoveODBC](removeodbc-action.md) de las tablas [*de secuencia*](s-gly.md) procesan la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
+Las [acciones InstallODBC](installodbc-action.md) [y RemoveODBC](removeodbc-action.md) de las tablas [*de*](s-gly.md) secuencia procesan la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
 
 ## <a name="validation"></a>Validación
 

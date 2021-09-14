@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102934
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 63ae4d104bc6b64d599c4169f3f440f2c567e5fda54ede1aff334a6b5d465ad6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95eba697a64842759db9809c97339d937f5939dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118078869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969288"
 ---
 # <a name="esentslvstreamingfileinuseexception-properties"></a>Propiedades de EsentSLVStreamingFileInUseException
 
@@ -34,7 +34,7 @@ El [tipo EsentSLVStreamingFileInUseException](./esentslvstreamingfileinuseexcept
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentSLVStreamingFileInUseException](./esentslvstreamingfileinuseexcept
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

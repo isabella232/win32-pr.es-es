@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 1ffde9c7bb0416f2b296f7a7c347a058734430be33ef4ecde59e7e39cd6e845f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c17812ab5d451be639def0d07fe773d4b676570
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118154836"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891921"
 ---
 # <a name="iamtimelinesrcsplicewithnext-method"></a>IamTimelineSrc::SpliceWithNext (método)
 
@@ -69,11 +69,11 @@ Devuelve un **valor HRESULT.** Entre los posibles valores devueltos se incluyen 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Como se implementa actualmente, este método descarta los efectos en *pNext*.
 
-Para que este método se realice correctamente, *pNext* debe ser un marco de coincidencia del objeto de origen actual, definido como sigue:
+Para que este método se realice correctamente, *pNext* debe ser un marco de coincidencia del objeto de origen actual, definido de la siguiente manera:
 
 -   Debe compartir el mismo archivo de código fuente.
 -   La hora de inicio del medio debe ser igual a la hora de detenerse del origen actual.
@@ -85,7 +85,7 @@ Para que este método se realice correctamente, *pNext* debe ser un marco de coi
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -100,7 +100,7 @@ Para que este método se realice correctamente, *pNext* debe ser un marco de coi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

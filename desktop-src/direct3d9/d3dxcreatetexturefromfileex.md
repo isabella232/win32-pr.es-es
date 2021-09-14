@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d5964f7f466dac135d08958ef66c12a1dfe2e61a19180eb45072c5489f9f4a64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f4dba1424f98389a9282fdebf9dae55c7e1601f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118299250"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969811"
 ---
 # <a name="d3dxcreatetexturefromfileex-function"></a>Función D3DXCreateTextureFromFileEx
 
@@ -67,7 +67,7 @@ Puntero a una [**interfaz IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
+Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Puntero a una cadena que especifica el nombre de archivo. Si la configuración d
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ancho en píxeles. Si este valor es cero o D3DX DEFAULT, las dimensiones se toman del archivo y se \_ redondean a una potencia de dos. Si el dispositivo admite la no potencia de 2 texturas y se especifica [D3DX \_ DEFAULT \_ NONPOW2,](other-d3dx-constants.md) el tamaño no se redondeará.
+Ancho en píxeles. Si este valor es cero o D3DX DEFAULT, las dimensiones se toman del archivo y se \_ redondean hasta una potencia de dos. Si el dispositivo admite la no potencia de 2 texturas y se especifica [D3DX \_ DEFAULT \_ NONPOW2,](other-d3dx-constants.md) el tamaño no se redondeará.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Ancho en píxeles. Si este valor es cero o D3DX DEFAULT, las dimensiones se toma
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Alto, en píxeles. Si este valor es cero o D3DX DEFAULT, las dimensiones se toman del archivo y se \_ redondean a una potencia de dos. Si el dispositivo admite la no potencia de 2 texturas y [D3DX \_ DEFAULT \_ NONPOW2](other-d3dx-constants.md) está sepcificado, el tamaño no se redondeará.
+Alto, en píxeles. Si este valor es cero o D3DX DEFAULT, las dimensiones se toman del archivo y se \_ redondean hasta una potencia de dos. Si el dispositivo admite texturas sin potencia de 2 y [D3DX \_ DEFAULT \_ NONPOW2](other-d3dx-constants.md) está secificado, el tamaño no se redondeará.
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Alto, en píxeles. Si este valor es cero o D3DX DEFAULT, las dimensiones se toma
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de niveles de mip solicitados. Si este valor es cero o D3DX DEFAULT, se crea una \_ cadena de asignación mip completa. Si D3DX FROM FILE, el tamaño se toma exactamente como está en el archivo y se producirá un error en la llamada si esto infringe las funcionalidades \_ \_ del dispositivo.
+Número de niveles mip solicitados. Si este valor es cero o D3DX DEFAULT, se crea una \_ cadena de asignación mipmap completa. Si D3DX FROM FILE, el tamaño se toma exactamente como está en el archivo y se producirá un error en la llamada si esto infringe las funcionalidades \_ \_ del dispositivo.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Número de niveles de mip solicitados. Si este valor es cero o D3DX DEFAULT, se 
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-0, [**D3DUSAGE \_ RENDERTARGET**](d3dusage.md)o **D3DUSAGE \_ DYNAMIC**. Establecer esta marca en **D3DUSAGE \_ RENDERTARGET** indica que la superficie se va a usar como destino de representación. A continuación, el recurso se puede pasar al *parámetro pNewRenderTarget* del [**método SetRenderTarget.**](/windows/desktop/api) Si se **especifica D3DUSAGE \_ RENDERTARGET** o **D3DUSAGE \_ DYNAMIC,** *pool* debe establecerse en D3DPOOL DEFAULT y la aplicación debe comprobar que el dispositivo admite esta operación mediante una llamada a \_ [**CheckDeviceFormat**](/windows/desktop/api). **D3DUSAGE \_ DYNAMIC** indica que la superficie debe controlarse dinámicamente. Consulte [Uso de texturas dinámicas.](performance-optimizations.md)
+0, [**D3DUSAGE \_ RENDERTARGET**](d3dusage.md)o **D3DUSAGE \_ DYNAMIC**. Establecer esta marca en **D3DUSAGE \_ RENDERTARGET** indica que la superficie se va a usar como destino de representación. A continuación, el recurso se puede pasar al *parámetro pNewRenderTarget* del [**método SetRenderTarget.**](/windows/desktop/api) Si se **especifica D3DUSAGE \_ RENDERTARGET** o **D3DUSAGE \_ DYNAMIC,** *pool* debe establecerse en D3DPOOL DEFAULT y la aplicación debe comprobar que el dispositivo admite esta operación mediante una llamada a \_ [**CheckDeviceFormat**](/windows/desktop/api). **D3DUSAGE \_ DYNAMIC** indica que la superficie se debe controlar dinámicamente. Consulte [Uso de texturas dinámicas.](performance-optimizations.md)
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Miembro del tipo [enumerado D3DFORMAT,](d3dformat.md) que describe el formato de
 
 Tipo: **[ **D3DPOOL**](./d3dpool.md)**
 
-Miembro del tipo [**enumerado D3DPOOL,**](./d3dpool.md) que describe la clase de memoria en la que se debe colocar la textura.
+Miembro del [**tipo enumerado D3DPOOL,**](./d3dpool.md) que describe la clase de memoria en la que se debe colocar la textura.
 
 </dd> <dt>
 
@@ -157,7 +157,7 @@ Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
 
 Tipo: **[ **D3DXIMAGE \_ INFO**](d3dximage-info.md)\***
 
-Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con una descripción de los datos en el archivo de imagen de origen o **NULL.**
+Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con una descripción de los datos del archivo de imagen de origen, o **NULL.**
 
 </dd> <dt>
 
@@ -166,7 +166,7 @@ Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a 
 
 Tipo: **[ **PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry)\***
 
-Puntero a una [**estructura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que representa una paleta de 256 colores que se rellenará, o **NULL.**
+Puntero a una [**estructura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que representa una paleta de 256 colores para rellenar, o **NULL.**
 
 </dd> <dt>
 
@@ -185,9 +185,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DERR \_ NOTAVAILABLE, D3DERR \_ OUTOFVIDEOMEMORY, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en D3DXCreateTextureFromFileExW. De lo contrario, la llamada de función se resuelve en D3DXCreateTextureFromFileExA porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en D3DXCreateTextureFromFileExW. De lo contrario, la llamada de función se resuelve en D3DXCreateTextureFromFileExA porque se usan cadenas ANSI.
 
 Use [**D3DXCheckTextureRequirements**](d3dxchecktexturerequirements.md) para determinar si el dispositivo puede admitir la textura según el estado actual.
 
@@ -199,9 +199,9 @@ Para obtener el mejor rendimiento cuando se **usa D3DXCreateTextureFromFileEx**:
 
 1.  El escalado de imágenes y la conversión de formato en tiempo de carga pueden ser lentos. Almacene las imágenes en el formato y la resolución que se usarán. Si el hardware de destino requiere una potencia de 2 dimensiones, cree y almacene imágenes con la potencia de 2 dimensiones.
 2.  Para la creación de imágenes mipmap en tiempo de carga, filtre mediante [D3DX \_ FILTER \_ BOX](d3dx-filter.md). Un filtro de cuadro es mucho más rápido que otros tipos de filtro, como D3DX \_ FILTER \_ TRIANGLE.
-3.  Considere la posibilidad de usar archivos DDS. Dado que los archivos DDS se pueden usar para representar cualquier formato de textura de Direct3D 9, son muy fáciles de leer para D3DX. Además, pueden almacenar mapas mip, por lo que cualquier algoritmo de generación de mapas mip se puede usar para crear las imágenes.
+3.  Considere la posibilidad de usar archivos DDS. Dado que los archivos DDS se pueden usar para representar cualquier formato de textura de Direct3D 9, son muy fáciles de leer para D3DX. Además, pueden almacenar mapas mip, por lo que se pueden usar algoritmos de generación de mipmap para crear las imágenes.
 
-Al omitir los niveles de mipmap al cargar un archivo .dds, use la macro D3DX SKIP DDS MIP LEVELS para generar el \_ \_ valor \_ \_ mipFilter. Esta macro toma el número de niveles que se omitirán y el tipo de filtro y devuelve el valor del filtro, que se pasará entonces al parámetro MipFilter.
+Al omitir los niveles de asignación mip al cargar un archivo .dds, use la macro D3DX SKIP DDS MIP LEVELS para generar el \_ \_ valor de \_ \_ MipFilter. Esta macro toma el número de niveles que se omitirán y el tipo de filtro y devuelve el valor del filtro, que se pasará al parámetro MipFilter.
 
 ## <a name="requirements"></a>Requisitos
 

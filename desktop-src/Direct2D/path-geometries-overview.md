@@ -5,12 +5,12 @@ ms.assetid: 38a290be-b915-4317-b9b1-0e49e40dc8ec
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 5fb177cbbd82ef56a03ef2c8a6faa7ef6c11f7889423ce79102d11eb42090231
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0189c46f50e2ccc9ecc4523a4bb6f34006e59139
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119636163"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162654"
 ---
 # <a name="path-geometries-overview"></a>Introducción a las geometrías de ruta de acceso
 
@@ -18,42 +18,42 @@ En este tema se describe cómo usar geometrías de ruta de acceso de Direct2D pa
 
 -   [Requisitos previos](#prerequisites)
 -   [Geometrías de ruta de acceso en Direct2D](#path-geometries-in-direct2d)
--   [Usar un ID2D1GeometrySink para rellenar una geometría de ruta de acceso](#using-an-id2d1geometrysink-to-populate-a-path-geometry)
+-   [Usar un id2D1GeometrySink para rellenar una geometría de trazado](#using-an-id2d1geometrysink-to-populate-a-path-geometry)
 -   [Ejemplo: Crear un dibujo complejo](#example-create-a-complex-drawing)
     -   [Creación de una geometría de trazado para la montaña izquierda](#create-a-path-geometry-for-the-left-mountain)
     -   [Creación de una geometría de trazado para la montaña derecha](#create-a-path-geometry-for-the-right-mountain)
     -   [Creación de una geometría de trazado para el sol](#create-a-path-geometry-for-the-sun)
-    -   [Creación de una geometría de trazado para el cauce](#create-a-path-geometry-for-the-river)
-    -   [Representar las geometrías de ruta de acceso en la pantalla](#render-the-path-geometries-onto-the-display)
+    -   [Creación de una geometría de trazado para el river](#create-a-path-geometry-for-the-river)
+    -   [Representación de las geometrías de ruta de acceso en la pantalla](#render-the-path-geometries-onto-the-display)
 -   [Temas relacionados](#related-topics)
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
-En esta introducción se da por supuesto que está familiarizado con la creación de aplicaciones básicas de Direct2D, como se describe en [Creación de una aplicación direct2D simple.](direct2d-quickstart.md) También se supone que está familiarizado con las características básicas de las geometrías de Direct2D, como se describe en Información general [sobre geometrías.](direct2d-geometries-overview.md)
+En esta introducción se da por supuesto que está familiarizado con la creación de aplicaciones básicas de Direct2D, como se describe en Creación de [una aplicación direct2D simple.](direct2d-quickstart.md) También se supone que está familiarizado con las características básicas de las geometrías de Direct2D, como se describe en Información general [sobre geometrías.](direct2d-geometries-overview.md)
 
 ## <a name="path-geometries-in-direct2d"></a>Geometrías de ruta de acceso en Direct2D
 
-Las geometrías de ruta de acceso se representan mediante la [**interfaz ID2D1PathGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) Para crear instancias de una geometría de ruta de acceso, llame al [**método ID2D1Factory::CreatePathGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) Estos objetos se pueden usar para describir figuras geométricas complejas formadas por segmentos como arcos, curvas y líneas. Para rellenar una geometría de trazado con figuras y segmentos, llame al método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) para recuperar un [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) y use los métodos del receptor de geometría para agregar figuras y segmentos a la geometría del trazado.
+Las geometrías de ruta de acceso se representan mediante la [**interfaz ID2D1PathGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) Para crear una instancia de una geometría de ruta de acceso, llame al [**método ID2D1Factory::CreatePathGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) Estos objetos se pueden usar para describir figuras geométricas complejas compuestas de segmentos como arcos, curvas y líneas. Para rellenar una geometría de trazado con figuras y segmentos, llame al método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) para recuperar un [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) y use los métodos del receptor de geometría para agregar figuras y segmentos a la geometría de trazado.
 
-## <a name="using-an-id2d1geometrysink-to-populate-a-path-geometry"></a>Usar un ID2D1GeometrySink para rellenar una geometría de trazado
+## <a name="using-an-id2d1geometrysink-to-populate-a-path-geometry"></a>Usar un id2D1GeometrySink para rellenar una geometría de trazado
 
 [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) describe un trazado geométrico que puede contener líneas, arcos, curvas Bézier cúbicas y curvas Bézier cuadráticas.
 
-Un receptor de geometría consta de una o varias figuras. Cada ilustración se forma de uno o varios segmentos de línea, curva o arco. Para crear una ilustración, llame al método [**BeginFigure,**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure) pasando el punto inicial de la ilustración y, a continuación, use sus métodos Add (como [**AddLine**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addline) y [**AddBezier)**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) para agregar segmentos. Cuando haya terminado de agregar segmentos, llame al [**método EndFigure.**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-endfigure) Puede repetir esta secuencia para crear figuras adicionales. Cuando haya terminado de crear figuras, llame al [**método Close.**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-close)
+Un receptor de geometría consta de una o varias figuras. Cada ilustración se forma de uno o varios segmentos de línea, curva o arco. Para crear una ilustración, llame al método [**BeginFigure,**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure) pasando el punto inicial de la ilustración y, a continuación, use sus métodos Add (como [**AddLine**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addline) y [**AddBezier)**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) para agregar segmentos. Cuando haya terminado de agregar segmentos, llame al [**método EndFigure.**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-endfigure) Puede repetir esta secuencia para crear cifras adicionales. Cuando haya terminado de crear cifras, llame al [**método Close.**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-close)
 
 ## <a name="example-create-a-complex-drawing"></a>Ejemplo: Crear un dibujo complejo
 
-En la ilustración siguiente se muestra un dibujo complejo con líneas, arcos y curvas Bézier. En el ejemplo de código siguiente se muestra cómo crear el dibujo mediante cuatro objetos de geometría de trazado, uno para la montaña izquierda, otro para la montaña derecha, otro para el monte y otro para el sol con toboganes.
+En la ilustración siguiente se muestra un dibujo complejo con líneas, arcos y curvas Bézier. En el ejemplo de código siguiente se muestra cómo crear el dibujo mediante cuatro objetos de geometría de trazado, uno para la montaña izquierda, otro para la montaña derecha, otro para el río y otro para el sol con zonas de verano.
 
-![ilustración de un monte, montañas y el sol, mediante geometrías de trazado](images/path-geo-mnts.png)
+![ilustración de un río, las montañas y el sol, mediante geometrías de ruta](images/path-geo-mnts.png)
 
 ### <a name="create-a-path-geometry-for-the-left-mountain"></a>Creación de una geometría de trazado para la montaña izquierda
 
-En primer lugar, en el ejemplo se crea una geometría de trazado para la montaña izquierda, como se muestra en la ilustración siguiente.
+En el ejemplo primero se crea una geometría de trazado para la montaña izquierda, como se muestra en la ilustración siguiente.
 
 ![Muestra un dibujo complejo de un polígono que muestra una montaña.](images/path-geo-leftmnt.png)
 
-Para crear la montaña izquierda, en el ejemplo se llama al método [**ID2D1Factory::CreatePathGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) para crear un [**elemento ID2D1PathGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry)
+Para crear la montaña izquierda, en el ejemplo se llama al método [**ID2D1Factory::CreatePathGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) para crear un [**id2D1PathGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry)
 
 
 ```C++
@@ -62,7 +62,7 @@ hr = m_pD2DFactory->CreatePathGeometry(&m_pLeftMountainGeometry);
 
 
 
-A continuación, en el ejemplo se usa el método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) para obtener un receptor geometry de [**id2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) y se almacena en la variable *pSink.*
+A continuación, en el ejemplo se usa el método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) para obtener un receptor de geometría de [**id2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) y se almacena en la variable *pSink.*
 
 
 ```C++
@@ -72,7 +72,7 @@ hr = m_pLeftMountainGeometry->Open(&pSink);
 
 
 
-A continuación, en el ejemplo se llama a [**BeginFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure), pasando [**D2D1 \_ FIGURE BEGIN \_ \_ FILLED**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_figure_begin) que indica que esta figura se rellena y, a continuación, llama a [**AddLines**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-addlines), pasando una matriz de puntos [**D2D1 \_ POINT \_ 2F,**](d2d1-point-2f.md) (267, 177), (236, 192), (212, 160), (156, 255) y (346, 255).
+A continuación, el ejemplo llama a [**BeginFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure), pasando [**D2D1 \_ FIGURE BEGIN \_ \_ FILLED**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_figure_begin) que indica que esta figura se rellena y, a continuación, llama a [**AddLines,**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-addlines)pasando una matriz de puntos [**D2D1 \_ POINT \_ 2F,**](d2d1-point-2f.md) (267, 177), (236, 192), (212, 160), (156, 255) y (346, 255).
 
 El código siguiente muestra cómo hacerlo.
 
@@ -147,7 +147,7 @@ A continuación, el ejemplo rellena otra geometría de trazado para el sol, como
 
 ![ilustración de un arco y curvas bézier que muestran el sol](images/path-geo-sun.png)
 
-Para ello, la geometría de la ruta de acceso crea un receptor y agrega una figura para el arco y una figura para cada reboso al receptor. Al repetir la secuencia de [**BeginFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure), sus métodos Add (como [**AddBezier)**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget))y [**EndFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-endfigure), se agregan varias figuras al receptor.
+Para ello, la geometría de ruta de acceso crea un receptor y agrega una figura para el arco y una figura para cada uno de ellos al receptor. Al repetir la secuencia [**de BeginFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure), sus métodos Add (como [**AddBezier)**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget))y [**EndFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-endfigure), se agregan varias figuras al receptor.
 
 El código siguiente muestra cómo hacerlo.
 
@@ -275,11 +275,11 @@ El código siguiente muestra cómo hacerlo.
 
 
 
-### <a name="create-a-path-geometry-for-the-river"></a>Creación de una geometría de trazado para el cauce
+### <a name="create-a-path-geometry-for-the-river"></a>Creación de una geometría de trazado para el river
 
 A continuación, en el ejemplo se crea otro trazado de geometría para el cauce que contiene curvas Bézier. En la ilustración siguiente se muestra cómo se muestra el agua.
 
-![ilustración de curvas bézier que muestran un paseo](images/path-geo-river.png)
+![ilustración de curvas bézier que muestran un río](images/path-geo-river.png)
 
 El código siguiente muestra cómo hacerlo.
 
@@ -329,9 +329,9 @@ El código siguiente muestra cómo hacerlo.
 
 
 
-### <a name="render-the-path-geometries-onto-the-display"></a>Representar las geometrías de ruta de acceso en la pantalla
+### <a name="render-the-path-geometries-onto-the-display"></a>Representación de las geometrías de ruta de acceso en la pantalla
 
-El código siguiente muestra cómo representar las geometrías de ruta de acceso rellenadas en la pantalla. En primer lugar, dibuja y pinta la geometría solar, después la geometría de la montaña izquierda, después la geometría de los montes y, por último, la geometría de la montaña derecha.
+El código siguiente muestra cómo representar las geometrías de ruta de acceso rellenadas en la pantalla. Primero dibuja y pinta la geometría solar, después la geometría de la montaña izquierda, luego la geometría de los montes y, por último, la geometría de la montaña derecha.
 
 
 ```C++
@@ -378,7 +378,7 @@ El código siguiente muestra cómo representar las geometrías de ruta de acceso
 
 En el ejemplo completo se muestra la siguiente ilustración.
 
-![ilustración de un monte, montañas y el sol, mediante geometrías de trazado](images/path-geo-mnts.png)
+![ilustración de un río, las montañas y el sol, mediante geometrías de ruta](images/path-geo-mnts.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

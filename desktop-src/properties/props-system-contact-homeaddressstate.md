@@ -4,12 +4,12 @@ ms.assetid: bbb1961f-7f80-45c1-8bbd-81dc1b6e5944
 title: System.Contact.HomeAddressState
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ae6176663aa43b71e861ce5107e1506e79426cbf480c273eeb0de4124930ade
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e2b9de8ad813092dc39f550d8231bdafbf271ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119599772"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257367"
 ---
 # <a name="systemcontacthomeaddressstate"></a>System.Contact.HomeAddressState
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

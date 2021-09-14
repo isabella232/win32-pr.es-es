@@ -20,14 +20,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bbc38d132920bd5ffcaa2208d8f1aa94c8629bb0c5399f6b8776654d078cd47
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4695479eb33301bda51b558375a18186fa08161e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119868525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249789"
 ---
-# <a name="win32_centralpublishingchangeevent-class"></a>Clase Win32 \_ CentralPublishingChangeEvent
+# <a name="win32_centralpublishingchangeevent-class"></a>Clase \_ CentralPublishingChangeEvent de Win32
 
 Evento que representa un cambio en la configuración central de RDV.
 
@@ -45,7 +45,7 @@ class Win32_CentralPublishingChangeEvent : __ExtrinsicEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CentralPublishingChangeEvent de Win32** tiene estos tipos de miembros:
 
@@ -102,7 +102,7 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descriptor utilizado por el proveedor de eventos para determinar qué usuarios pueden recibir el evento. Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event). Para obtener más información sobre las constantes usadas para establecer este descriptor de seguridad, vea [Constantes de seguridad wmi](/windows/desktop/WmiSdk/wmi-security-constants).
+Descriptor utilizado por el proveedor de eventos para determinar qué usuarios pueden recibir el evento. Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event). Para obtener más información sobre las constantes usadas para establecer este descriptor de seguridad, vea [Wmi Security Constants](/windows/desktop/WmiSdk/wmi-security-constants).
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Tipo de acceso: solo lectura
 
 Valor único que indica la hora a la que se generó el evento. Se trata de un valor de 64 bits que representa el número de intervalos de 100 nanosegundos después del 1 de enero de 1601. La información está en formato de hora universal coordinada (UTC). Esta propiedad se hereda del [**\_ \_ evento**](/windows/desktop/WmiSdk/--event).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> </dl>
 
@@ -142,7 +142,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                           |
-| Espacio de nombres<br/>                | \\TerminalServices cimv2 \\ raíz<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>Tscpub.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 

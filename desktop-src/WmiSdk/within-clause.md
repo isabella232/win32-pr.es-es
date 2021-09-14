@@ -2,21 +2,21 @@
 description: Use la cláusula WITHIN en las consultas de eventos para especificar un intervalo de sondeo o un intervalo de agrupación.
 ms.assetid: e2fc7627-fb3d-4966-b38b-441333868ae3
 ms.tgt_platform: multiple
-title: WITHIN (cláusula)
+title: WITHIN (Cláusula)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ee35350a52ef6af1aa22aacf775d22b3c7629fb479967a74aed1408aa5e1f39
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73d863e2e71d52fe60aeed7697feeb1231164c05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119757605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967027"
 ---
-# <a name="within-clause"></a>WITHIN (cláusula)
+# <a name="within-clause"></a>WITHIN (Cláusula)
 
 Los consumidores de eventos usan la cláusula WITHIN en las consultas de eventos para especificar un intervalo *de sondeo* o un intervalo *de agrupación*.
 
-Un intervalo de sondeo es el intervalo que usa Windows Management Instrumentation (WMI) para sondear el proveedor de datos responsable de la clase para eventos intrínsecos [,](determining-the-type-of-event-to-receive.md)del que el evento consultado es miembro. Este intervalo es la cantidad de tiempo máxima que puede transcurrir antes de entregarse la notificación de un evento. Un consumidor usa un intervalo de sondeo en una cláusula WITHIN cuando el consumidor requiere la notificación de cambios en una clase y un proveedor de eventos no está disponible. El consumidor se registra para un evento intrínseco e incluye el intervalo de sondeo.
+Un intervalo de sondeo es el intervalo que Windows Management Instrumentation (WMI) usa para sondear el proveedor de datos responsable de la clase para los eventos intrínsecos [de](determining-the-type-of-event-to-receive.md)los que el evento consultado es miembro. Este intervalo es la cantidad de tiempo máxima que puede transcurrir antes de entregarse la notificación de un evento. Un consumidor usa un intervalo de sondeo en una cláusula WITHIN cuando el consumidor requiere la notificación de cambios en una clase y un proveedor de eventos no está disponible. El consumidor se registra para un evento intrínseco e incluye el intervalo de sondeo.
 
 Para especificar un intervalo de sondeo, coloque la cláusula WITHIN inmediatamente antes de la cláusula WHERE, como se muestra a continuación:
 
@@ -27,11 +27,11 @@ SELECT * FROM IntrinsicEventClass WITHIN interval  WHERE property = value
 
 
 
-IntrinsicEventClass es la clase de eventos intrínseca de la que el evento es miembro, interval es el intervalo de sondeo y value es el valor de la propiedad en la que el consumidor requiere notificación.
+IntrinsicEventClass es la clase de evento intrínseca de la que el evento es miembro, interval es el intervalo de sondeo y value es el valor de la propiedad en la que el consumidor requiere notificación.
 
 El intervalo de sondeo es un número de punto flotante y puede ser fraccionrio para aceptar valores menores de 1 segundo. Sin embargo, el intervalo debe representar un número de segundos en lugar de un valor extremadamente pequeño, como 0,001, porque la especificación de un valor demasiado pequeño puede hacer que WMI rechace la instrucción como no válida, debido a la naturaleza de sondeo que consume muchos recursos. Dado que la mayoría de los consumidores de eventos no requieren notificación inmediata, se recomienda que usen un intervalo superior a 5 minutos.
 
-En el ejemplo de consulta siguiente se solicita que WMI compruebe cada 10 segundos los cambios que se producen en las instancias de la [**\_ clase LogicalDisk de Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) Si una instancia de la clase se modifica dentro del intervalo de sondeo especificado, se envía un evento de notificación para cada modificación.
+En el ejemplo de consulta siguiente se solicita que WMI compruebe cada 10 segundos los cambios que se producen en las instancias de la clase [**\_ LogicalDisk de Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) Si una instancia de la clase se modifica dentro del intervalo de sondeo especificado, se envía un evento de notificación para cada modificación.
 
 
 ```sql
@@ -62,9 +62,9 @@ SELECT * FROM EventClass WHERE property = value GROUP WITHIN Interval
 
 
 
-EventClass es la clase de eventos de la que el evento es miembro, value es el valor de la propiedad en la que el consumidor requiere notificación e Interval es el intervalo de agrupación.
+EventClass es la clase de eventos de la que el evento es miembro, value es el valor de la propiedad en la que el consumidor requiere notificación y Interval es el intervalo de agrupación.
 
-Para obtener más información, [vea Determinar el tipo de evento que se recibirá.](determining-the-type-of-event-to-receive.md)
+Para obtener más información, vea [Determinar el tipo de evento que se recibirá.](determining-the-type-of-event-to-receive.md)
 
 Los consumidores de eventos permanentes solo se pueden crear con consultas de sondeo si tiene privilegios de administrador.
 

@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_SETINACTIVETIMER mensaje (Vfw.h)
-description: El mensaje MCIWNDM SETFRACCIÓNTIMER establece el período de actualización utilizado por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria cuando la ventana \_ MCIWnd está inactiva. Puede enviar este mensaje explícitamente o mediante la macro MCIWndSet NoTimer.
+description: El mensaje MCIWNDM SETFRACCIÓNTIMER establece el período de actualización utilizado por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria cuando la ventana \_ MCIWnd está inactiva. Puede enviar este mensaje explícitamente o mediante la macro MCIWndSetInactiveTimer.
 ms.assetid: 8900c372-0493-4a63-a027-ef6ecf8f8254
 keywords:
 - MCIWNDM_SETINACTIVETIMER mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ba4504d84b254dfb67616568f5f97bba8e3bc2e3
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370747"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250761"
 ---
 # <a name="mciwndm_setinactivetimer-message"></a>Mensaje DE MCIWNDM \_ SETCIÓNTIMER
 
-El **mensaje MCIWNDM \_ SETFRACCIÓNTIMER** establece el período de actualización utilizado por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria cuando la ventana MCIWnd está inactiva. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSet NoTimer.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
+El mensaje **MCIWNDM \_ SETFRACCIÓNTIMER** establece el período de actualización utilizado por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria cuando la ventana MCIWnd está inactiva. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetInactiveTimer.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
 
 
 ```C++
@@ -65,7 +65,7 @@ Este mensaje no devuelve un valor.
 
 <dl> <dt>
 
-[**MCIWndSetCiónTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
+[**MCIWndSetInactiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
 </dt> </dl>
 
  

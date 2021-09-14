@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 333c248490e4594829d92653ee1309e3046e3bf64818bc9592807cf333c41e3e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e98bc8b34514cf2ac54e7fd96916c66c9f2a53d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120094895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970503"
 ---
 # <a name="texture2dgathergreensfloatint2int2int2int2uint-function"></a>Función Texture2D::GatherGreen(S,float,int2,int2,int2,int2,uint)
 
@@ -114,7 +114,7 @@ Tipo: **TemplateType**
 
 Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
@@ -122,7 +122,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

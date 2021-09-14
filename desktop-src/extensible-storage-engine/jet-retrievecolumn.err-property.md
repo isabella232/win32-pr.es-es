@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: JET_RETRIEVECOLUMN.err'
-title: JET_RETRIEVECOLUMN.err
+title: JET_RETRIEVECOLUMN.err, propiedad
 TOCTitle: 'err property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN.err
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retrievecolumn.err(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 64e7ef46137bc655f89f827078a32b7bf92dc58194072bfe32335f67a0e057b9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6a4d0a66a93485ba6e5ff70540182ef07588d3aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120063045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962852"
 ---
-# <a name="jet_retrievecolumnerr-property"></a>JET_RETRIEVECOLUMN.err
+# <a name="jet_retrievecolumnerr-property"></a>JET_RETRIEVECOLUMN.err, propiedad
 
 Obtiene la advertencia devuelta de la recuperación de la columna.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public JET_wrn err { get; private set; }
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5a10e6cf6c94b2854dbb2274ad7f07db81d0ae2f5b4805131c7ea2300216d8f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10e9c6ee9bf416220f141bf8e5ac1741ec8a6a26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118773119"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963056"
 ---
 # <a name="esentslvfilenotfoundexception-class"></a>Clase EsentSLVFileNotFoundException
 
@@ -46,7 +46,7 @@ ms.locfileid: "118773119"
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

@@ -13,12 +13,12 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: 018a54652ef5c24562a6c5220aa24da00276dce4729608cf59162bc11c7d7aee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b3cb4be93b8d960b39f0f5c5cf2b5a4809573cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012343"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069356"
 ---
 # <a name="attachproperties-callback-function"></a>Función de devolución de llamada AttachProperties
 
@@ -76,9 +76,9 @@ Valor MAC del primer protocolo en un marco. *MacType* puede ser uno de los sigui
 
 | Value                                                                                                                                                                         | Significado                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| <span id="MAC_TYPE_ETHERNET"></span><span id="mac_type_ethernet"></span><dl> <dt>**ETHERNET \_ DE TIPO \_ MAC**</dt> </dl>    | 802.3 <br/>       |
+| <span id="MAC_TYPE_ETHERNET"></span><span id="mac_type_ethernet"></span><dl> <dt>**MAC \_ TYPE \_ ETHERNET**</dt> </dl>    | 802.3 <br/>       |
 | <span id="MAC_TYPE_TOKENRING"></span><span id="mac_type_tokenring"></span><dl> <dt>**TOKENRING \_ DE \_ TIPO MAC**</dt> </dl> | 802.5 <br/>       |
-| <span id="MAC_TYPE_FDDI"></span><span id="mac_type_fddi"></span><dl> <dt>**FDDI \_ DE TIPO \_ MAC**</dt> </dl>                | ANSI X3T9.5 <br/> |
+| <span id="MAC_TYPE_FDDI"></span><span id="mac_type_fddi"></span><dl> <dt>**FDDI \_ DE \_ TIPO MAC**</dt> </dl>                | ANSI X3T9.5 <br/> |
 
 
 
@@ -89,7 +89,7 @@ Valor MAC del primer protocolo en un marco. *MacType* puede ser uno de los sigui
 *BytesLeft* \[ En\]
 </dt> <dd>
 
-Número restante de bytes de un marco que comienza al principio de los datos reconocidos.
+El número restante de bytes de un marco a partir del principio de los datos reconocidos.
 
 </dd> <dt>
 
@@ -116,21 +116,21 @@ Puntero a los datos de instancia que proporciona el protocolo anterior. Los dato
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función es correcta, el valor devuelto es un puntero al primer byte después de los datos reconocidos en un marco o **NULL** si los datos reconocidos son el último fragmento de datos de un marco.
+Si la función se realiza correctamente, el valor devuelto es un puntero al primer byte después de los datos reconocidos en un marco o **NULL** si los datos reconocidos son el último fragmento de datos de un marco.
 
 Si la función no se realiza correctamente, el valor devuelto es un puntero a los datos reconocidos. El *parámetro lpProtocol* pasa el puntero al archivo DLL del analizador.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Monitor de red llama a **la función AttachProperties** para cada analizador que reconoce un fragmento de datos en un fotograma. Tenga en cuenta que el analizador determina qué propiedades existen en los datos reconocidos y dónde se encuentra cada propiedad.
+Monitor de red llama a **la función AttachProperties** para cada analizador que reconoce un fragmento de datos en un marco. Tenga en cuenta que el analizador determina qué propiedades existen en los datos reconocidos y dónde se encuentra cada propiedad.
 
 Durante la implementación de **AttachProperties,** llame [a AttachPropertyInstance](attachpropertyinstance.md) para usar los datos tal como existen en la captura. También puede llamar a la [función AttachPropertyInstanceEx](attachpropertyinstanceex.md) para modificar los datos de propiedad. Sin embargo, se recomienda usar los datos tal como existen en la captura.
 
-Solo se llama a las funciones **AttachPropertyInstanceEx** **y AttachPropertyInstance** para las propiedades que existen en los datos reconocidos. Tenga en Monitor de red una [*base*](p.md) de datos de propiedades para el analizador que contiene una descripción de todas las propiedades que admite el analizador.
+Solo se llama a las funciones **AttachPropertyInstanceEx** y **AttachPropertyInstance** para las propiedades que existen en los datos reconocidos. Tenga en cuenta Monitor de red una [*base*](p.md) de datos de propiedades para el analizador que contiene una descripción de todas las propiedades que admite el analizador.
 
 **Datos de instancia**
 
-Los datos de instancia son información que se pasa de un analizador a otro. Los datos de instancia pueden ser datos menores o iguales que un PTR DWORD de longitud, o un puntero a datos, como datos de fotogramas sin procesar, que el analizador no necesita asignar o \_ liberar. En el *parámetro lpInstData* de las funciones **AttachProperties** y [RecognizeFrame,](recognizeframe.md) Monitor de red proporciona un puntero a los datos de instancia del protocolo anterior. Puede establecer los datos de instancia del analizador durante la implementación de **RecognizeFrame.**
+Los datos de instancia son información que se pasa de un analizador a otro. Los datos de instancia pueden ser datos menores o iguales que DWORD PTR de longitud, o un puntero a datos, como los datos de marco sin procesar, que el analizador no necesita asignar ni \_ liberar. En el *parámetro lpInstData* de las funciones **AttachProperties** y [RecognizeFrame,](recognizeframe.md) Monitor de red proporciona un puntero a los datos de instancia del protocolo anterior. Puede establecer los datos de instancia del analizador durante la implementación de **RecognizeFrame.**
 
 
 
@@ -139,7 +139,7 @@ Los datos de instancia son información que se pasa de un analizador a otro. Los
 | Qué son los analizadores y cómo funcionan con Monitor de red.   | [Analizadores](parsers.md)                                             |
 | Qué puntos de entrada se incluyen en el archivo DLL del analizador.           | [Arquitectura dll del analizador](parser-dll-architecture.md)             |
 | Reconocimiento de datos.                                      | [Implementación de RecognizeFrame](implementing-recognizeframe.md)     |
-| Cómo crear una base de datos de propiedades.                          | [Implementar el registro](implementing-register.md)                 |
+| Cómo crear una base de datos de propiedades.                          | [Implementación del registro](implementing-register.md)                 |
 | La implementación de **AttachProperties**  incluye un ejemplo. | [Implementación de AttachProperties](implementing-attachproperties.md) |
 
 
@@ -158,7 +158,7 @@ Los datos de instancia son información que se pasa de un analizador a otro. Los
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

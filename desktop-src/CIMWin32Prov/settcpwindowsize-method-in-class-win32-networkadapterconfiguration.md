@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9bad1974233dade51f9c49d8508d3ad65f3dfc3f3a1bbb27a55bf4ea0828cc09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4a77acdc81c06d1f78da8bbc0160bd0d21bcfd8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970280"
 ---
 # <a name="settcpwindowsize-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpWindowSize de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpWindowSize** se usa para establecer el tamaño máximo de ventana de recepción TCP que ofrece el sistema.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -312,7 +312,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de los límites.
+Parámetro fuera de límites.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -379,7 +379,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se pueden liberar o renovar**
+**No todas las concesiones DHCP se podrían liberar o renovar**
 </dt> <dd>
 
 98
@@ -404,18 +404,18 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La ventana de recepción determina el número de bytes que un remitente puede transmitir sin recibir una confirmación. En general, las ventanas de recepción más grandes mejoran el rendimiento en las redes de alto retraso y ancho de banda alto. Para mejorar la eficacia, la ventana de recepción debe ser incluso un múltiplo del tamaño máximo de segmento (MSS) de TCP.
+La ventana de recepción determina el número de bytes que un remitente puede transmitir sin recibir una confirmación. En general, las ventanas de recepción más grandes mejoran el rendimiento a través de redes de alto retraso y ancho de banda alto. Para mejorar la eficacia, la ventana de recepción debe ser un múltiplo par del tamaño máximo de segmento (MSS) de TCP.
 
 > [!Note]  
-> Windows Vista: este método tiene acceso a la `"CurrentControlSet\\Services\\Tcpip\\Parameters|TcpWindowSize"` entrada del Registro, que no se usa en la implementación actual del sistema operativo.
+> Windows Vista: este método accede a la entrada `"CurrentControlSet\\Services\\Tcpip\\Parameters|TcpWindowSize"` del Registro, que no se usa en la implementación actual del sistema operativo.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo Modify the TCP Window Size for All Network Adapters](https://Gallery.TechNet.Microsoft.Com/74cf7be0-0044-4a88-85a3-9bc98490897b) VBScript (Modificar el tamaño de ventana TCP para todos los adaptadores de red de VBScript) establece el tamaño de la ventana TCP para todos los adaptadores de red de un equipo.
+El [ejemplo Modify the TCP Window Size for All Network Adapters](https://Gallery.TechNet.Microsoft.Com/74cf7be0-0044-4a88-85a3-9bc98490897b) VBScript (Modificar el tamaño de la ventana TCP para todos los adaptadores de red de VBScript) establece el tamaño de la ventana TCP para todos los adaptadores de red de un equipo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -433,7 +433,7 @@ El [ejemplo Modify the TCP Window Size for All Network Adapters](https://Gallery
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

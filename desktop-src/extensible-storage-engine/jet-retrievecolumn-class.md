@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_RETRIEVECOLUMN (clase)'
-title: JET_RETRIEVECOLUMN (clase)
+description: 'Más información sobre: JET_RETRIEVECOLUMN clase'
+title: JET_RETRIEVECOLUMN clase
 TOCTitle: JET_RETRIEVECOLUMN class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retrievecolumn(v=EXCHG.10)
@@ -25,23 +25,23 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: c929c1a270071cf7ab52d39c5893cb8c3d84f107
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913757"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962891"
 ---
-# <a name="jet_retrievecolumn-class"></a>JET_RETRIEVECOLUMN (clase)
+# <a name="jet_retrievecolumn-class"></a>JET_RETRIEVECOLUMN clase
 
-Contiene parámetros de entrada y salida para [JetRetrieveColumns (JET_SESID, JET_TABLEID, \[ \] , Int32)](./api.jetretrievecolumns-method.md). Los campos de la estructura describen qué valor de columna se va a recuperar, cómo se recupera y dónde se guardan los resultados.
+Contiene parámetros de entrada y salida [para JetRetrieveColumns(JET_SESID, JET_TABLEID, \[ \] , Int32).](./api.jetretrievecolumns-method.md) Los campos de la estructura describen qué valor de columna se va a recuperar, cómo recuperarlo y dónde guardar los resultados.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,10 +60,10 @@ public class JET_RETRIEVECOLUMN
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_RETRIEVECOLUMN](./jet-retrievecolumn-members.md)
+[JET_RETRIEVECOLUMN miembros](./jet-retrievecolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

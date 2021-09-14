@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Pwm.h
-ms.openlocfilehash: 3f51f360e7b6ff3966ed58d8ec3a171d8bbbfb54672c50c31852e71ab6750f95
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f63057299a8ef37ed1b38151958d2e0061ad2727
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120088145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164333"
 ---
 # <a name="pwm_controller_get_actual_period_output-structure"></a>Estructura GET REAL PERIOD OUTPUT del CONTROLADOR \_ \_ \_ \_ \_ DE PWM
 
@@ -37,7 +37,7 @@ typedef struct _PWM_CONTROLLER_GET_ACTUAL_PERIOD_OUTPUT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -58,11 +58,11 @@ El período de señal de salida efectivo tal como se mediría en los canales de 
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                             |
 | Versión mínima de KMDF<br/>     | 1.19<br/>                                                                                  |
 | Versión mínima de UMDF<br/>     | 2.19<br/>                                                                                  |
-| Header<br/>                   | <dl> <dt>Pwm.h (incluir Pwm.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Pwm.h (incluir Pwm.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

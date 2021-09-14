@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec2CatmullRom (D3DX10Math.h): realiza una interpolación Catmull-Rom mediante los vectores 2D especificados.'
+description: 'Función D3DXVec2CatmullRom (D3DX10Math.h): realiza una interpolación Catmull-Rom, mediante los vectores 2D especificados.'
 ms.assetid: 8ec1abfa-0fa9-486a-b86d-bbb8f1d63849
 title: Función D3DXVec2CatmullRom (D3DX10Math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: bfa83302c62c7e09991cb8c3cc9282b41cdd17ec396bc721511d7e13e59ed95a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41b61d9488e09b72c73cba885d836c6451631c56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970024"
 ---
 # <a name="d3dxvec2catmullrom-function-d3dx10mathh"></a>Función D3DXVec2CatmullRom (D3DX10Math.h)
 
@@ -105,7 +105,7 @@ Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
 Puntero a una estructura D3DXVECTOR2 que es el resultado del Catmull-Rom interpolación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Dados cuatro puntos (p1, p2, p3, p4), busque una función Q(s) de modo que:
 
@@ -119,7 +119,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-La Catmull-Rom spline se puede derivar de la curva spline de Hermite estableciendo:
+El Catmull-Rom spline se puede derivar de la spline Hermite estableciendo:
 
 
 ```
@@ -141,7 +141,7 @@ p3 es el contenido de pV2.
 
 p4 es el contenido de pV3.
 
-Uso de la ecuación spline de Hermite:
+Uso de la ecuación spline hermite:
 
 
 ```
@@ -159,7 +159,7 @@ Q(s) = (2s3 - 3s2 + 1)p2 + (-2s3 + 3s2)p3 + (s3 - 2s2 + s)(p3 - p1) / 2 + (s3 - 
 
 
 
-Esto se puede reorganizar de la siguiente forma:
+Esto se puede reorganizar como:
 
 
 ```
@@ -179,7 +179,7 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,12 +1,12 @@
 ---
-title: Usar marcadores
-description: Usar marcadores
+title: Uso de marcadores
+description: Uso de marcadores
 ms.assetid: b801c985-4ec7-441e-9f8a-40c69b1299a9
 keywords:
-- Windows Media Format SDK, marcadores
-- Advanced Systems Format (ASF), marcadores
-- ASF (formato de sistemas avanzados), marcadores
-- Advanced Systems Format (ASF), buscar marcadores
+- Windows SDK de formato multimedia, marcadores
+- Formato de sistemas avanzados (ASF), marcadores
+- ASF (formato de sistemas avanzados),marcadores
+- Formato de sistemas avanzados (ASF), buscar marcadores
 - ASF (formato de sistemas avanzados), buscar marcadores
 - marcadores, acerca de
 - marcadores, agregar
@@ -16,21 +16,21 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 44cc585b8c71e3bfbae85953650809ad031d36a2
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "103789232"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247221"
 ---
-# <a name="using-markers"></a>Usar marcadores
+# <a name="using-markers"></a>Uso de marcadores
 
-Un *marcador* es un punto con nombre dentro de un archivo ASF. Cada marcador se compone de un nombre y un tiempo asociado, medido como un desplazamiento desde el inicio del archivo. Una aplicación puede usar marcadores para asignar nombres a varios puntos del contenido, Mostrar esos nombres al usuario y, a continuación, buscar las posiciones del marcador. Una aplicación puede Agregar o quitar marcadores de un archivo ASF existente.
+Un *marcador* es un punto con nombre dentro de un archivo ASF. Cada marcador consta de un nombre y una hora asociada, medidos como un desplazamiento desde el inicio del archivo. Una aplicación puede usar marcadores para asignar nombres a varios puntos del contenido, mostrar esos nombres al usuario y, a continuación, buscar en las posiciones del marcador. Una aplicación puede agregar o quitar marcadores de un archivo ASF existente.
 
-La interfaz [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) contiene métodos para trabajar con marcadores. El objeto editor de metadatos admite la adición y eliminación de marcadores. Los objetos de lectura y escritura pueden recuperar marcadores, pero no pueden agregar o quitar marcadores.
+La [**interfaz IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) contiene métodos para trabajar con marcadores. El objeto del editor de metadatos admite la adición y eliminación de marcadores. Los objetos de escritor y lector pueden recuperar marcadores, pero no pueden agregar ni quitar marcadores.
 
 ## <a name="adding-markers"></a>Agregar marcadores
 
-Para agregar un marcador, consulte el editor de metadatos de la interfaz **IWMHeaderInfo** . A continuación, llame al método [**IWMHeaderInfo:: AddMarker**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo-addmarker) , especificando el nombre del marcador como una cadena de caracteres anchos y el tiempo en unidades de 100-nanosegundos. El tiempo no debe superar la duración del archivo. Dos marcadores pueden tener la misma hora.
+Para agregar un marcador, consulte el editor de metadatos para la **interfaz IWMHeaderInfo.** A continuación, llame al método [**IWMHeaderInfo::AddMarker,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo-addmarker) especificando el nombre del marcador como una cadena de caracteres anchos y la hora en unidades de 100 nanosegundos. El tiempo no debe superar la duración del archivo. Dos marcadores pueden tener la misma hora.
 
 En el ejemplo siguiente se agregan varios marcadores a un archivo:
 
@@ -64,7 +64,7 @@ pEdit->Release();
 
 ## <a name="removing-markers"></a>Quitar marcadores
 
-Para quitar un marcador, llame a [**IWMHeaderInfo:: RemoveMarker**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo-removemarker), especificando el índice del marcador que se va a quitar. Los marcadores se ordenan automáticamente en orden de tiempo creciente, de modo que el índice 0 siempre es el primer marcador. Tenga en cuenta que al llamar a **RemoveMarker** se cambian los números de índice de los marcadores siguientes. El código siguiente, donde *Pinfo* es un puntero a una interfaz **IWMHeaderInfo** , quita todos los marcadores de un archivo:
+Para quitar un marcador, llame a [**IWMHeaderInfo::RemoveMarker**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo-removemarker)y especifique el índice del marcador que se quitará. Los marcadores se ordenan automáticamente en orden de tiempo creciente, por lo que el índice 0 siempre es el primer marcador. Tenga en cuenta que **al llamar a RemoveMarker** se cambian los números de índice de los marcadores siguientes. El código siguiente, donde *pInfo* es un puntero a una **interfaz IWMHeaderInfo,** quita todos los marcadores de un archivo:
 
 
 ```C++
@@ -83,12 +83,12 @@ while (count--)
 
 Para recuperar el nombre y la hora de un marcador, realice los pasos siguientes:
 
-1.  Llame al método [**IWMHeaderInfo:: GetMarkerCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getmarkercount) para determinar el número de marcadores que contiene el archivo.
-2.  Recupere el tamaño de la cadena necesaria para contener el nombre del marcador. Para ello, llame al método [**IWMHeaderInfo:: GetMarker**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getmarker) . Especifique el índice del marcador que se va a recuperar y **null** para el búfer de cadena (el parámetro *pwszMarkerName* ). El método devuelve la longitud de la cadena, incluido el carácter ' \\ 0 ' de terminación, en el parámetro *pcchMarkerNameLen* .
+1.  Llame al [**método IWMHeaderInfo::GetMarkerCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getmarkercount) para determinar cuántos marcadores contiene el archivo.
+2.  Recupere el tamaño de la cadena necesaria para contener el nombre del marcador. Para ello, llame al [**método IWMHeaderInfo::GetMarker.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getmarker) Especifique el índice del marcador que se recuperará y **NULL para** el búfer de cadena (el *parámetro pwszMarkerName).* El método devuelve la longitud de la cadena, incluido el carácter \\ "0" final, en el *parámetro pcchMarkerNameLen.*
 3.  Asigne una cadena de caracteres anchos para recibir el nombre.
-4.  Vuelva a llamar a **GetMarker** , pero esta vez pase la dirección de la cadena en el parámetro *pwszMarkerName* . El método escribe el nombre del marcador en la cadena y devuelve la hora del marcador en el parámetro *pcnsMarkerTime* .
+4.  Vuelva **a llamar a GetMarker,** pero esta vez pase la dirección de la cadena en el parámetro *pwszMarkerName.* El método escribe el nombre del marcador en la cadena y devuelve la hora del marcador en el *parámetro pcnsMarkerTime.*
 
-El siguiente código recorre en bucle cada marcador en orden y recupera el nombre y la hora:
+El código siguiente recorre cada marcador en orden y recupera el nombre y la hora:
 
 
 ```C++
@@ -119,9 +119,9 @@ delete[] wszName;
 
 
 
-## <a name="seeking-to-a-marker"></a>Buscar un marcador
+## <a name="seeking-to-a-marker"></a>Búsqueda de un marcador
 
-Para iniciar la reproducción desde una ubicación de marcador, llame al método [**IWMReaderAdvanced2:: StartAtMarker**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-startatmarker) del objeto lector y especifique el índice del marcador. Los parámetros restantes son idénticos a los del método [**IWMReader:: Start**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-start) . En el ejemplo siguiente se consulta el lector de la interfaz [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) y se busca el primer marcador.
+Para iniciar la reproducción desde una ubicación de marcador, llame al método [**IWMReaderAdvanced2::StartAtMarker**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-startatmarker) del objeto lector, especificando el índice del marcador. Los parámetros restantes son idénticos a los del [**método IWMReader::Start.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-start) En el ejemplo siguiente se consulta al lector la [**interfaz IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) y se busca en el primer marcador.
 
 
 ```C++
@@ -142,7 +142,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**Interfaz IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo)
+[**IWMHeaderInfo (interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo)
 </dt> <dt>
 
 [**IWMReaderAdvanced2::StartAtMarker**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-startatmarker)
@@ -151,9 +151,9 @@ if (SUCCEEDED(hr))
 [**Trabajar con metadatos**](working-with-metadata.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

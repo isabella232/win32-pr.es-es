@@ -4,28 +4,28 @@ description: Documento ServiceInfo de ejemplo para una tienda en línea de tipo 
 ms.assetid: d9bbce89-15b4-495f-8995-24dda99a4f40
 keywords:
 - Reproductor de Windows Media en línea, ejemplo de documento ServiceInfo
-- tiendas en línea, ejemplo de documento ServiceInfo
+- online stores,example ServiceInfo document
 - tiendas en línea de tipo 2, ejemplo de documento ServiceInfo
-- Reproductor de Windows Media tiendas en línea,documento ServiceInfo
-- tiendas en línea,documento ServiceInfo
-- tiendas en línea de tipo 2, documento ServiceInfo
+- Reproductor de Windows Media en línea,documento ServiceInfo
+- online stores,ServiceInfo document
+- tipo 2 tiendas en línea, documento ServiceInfo
 - Reproductor de Windows Media en línea, ejemplo de código
 - tiendas en línea, ejemplo de código
 - tiendas en línea de tipo 2, ejemplo de código
-- Documento ServiceInfo de ejemplo
+- documento ServiceInfo de ejemplo
 - Documento ServiceInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7962f7548f8c880e60320d3a7fb071e2a076ffafdac9a56b4cf6d8aa41b5d60
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 02214b9d7180296fa11bb877f978c6bde85f3a4e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119650125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249668"
 ---
 # <a name="example-serviceinfo-document-for-a-type-2-online-store"></a>Documento ServiceInfo de ejemplo para una tienda en línea de tipo 2
 
-En el ejemplo de código siguiente se muestra un ServiceInfo.xml completo. Puede usar este XML como punto de partida para su propio documento ServiceInfo.
+En el ejemplo de código siguiente se muestra un documento ServiceInfo.xml completo. Puede usar este XML como punto de partida para su propio documento ServiceInfo.
 
 
 ```C++

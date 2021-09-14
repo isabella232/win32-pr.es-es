@@ -4,12 +4,12 @@ ms.assetid: 692eb8f2-1c53-4535-b44d-babb30eecd9c
 title: Recepción de notificaciones de conexión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3a581855ef134536df8c4c728521e796e541c963a780e2f572ad88dc704c677
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c054d4f7bb78f610afe6c1cbdf028416de7b5596
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118919694"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069139"
 ---
 # <a name="receiving-connection-notifications"></a>Recepción de notificaciones de conexión
 

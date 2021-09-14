@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5060e2e9842022d89c49e01b56967a92b71c5752e01239fd970c881ccb509cbe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3640cbd6a0a3e582899e7f5cd349ca48498f3532
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119908065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171990"
 ---
 # <a name="cseekingpassthrucreateinstance-method"></a>Método CSeekingPassThru.CreateInstance
 
-El `CreateInstance` método crea una instancia del objeto . Este método admite la creación del objeto a través de un generador de clases. Para obtener más información, [**vea CFactoryTemplate**](cfactorytemplate.md).
+El `CreateInstance` método crea una instancia del objeto . Este método admite la creación del objeto a través de un generador de clases. Para obtener más información, vea [**CFactoryTemplate**](cfactorytemplate.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,7 +72,7 @@ Devuelve un puntero a un nuevo **objeto CSeekingPassThru.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

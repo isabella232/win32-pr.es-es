@@ -1,21 +1,21 @@
 ---
-description: La biblioteca DirectXMath proporciona una serie de estructuras y tipos definidos para encapsular los datos para admitir la facilidad de uso, optimización y portabilidad.
+description: La biblioteca DirectXMath proporciona una serie de estructuras y tipos definidos para encapsular datos para admitir la facilidad de uso, optimización y portabilidad.
 ms.assetid: 4b9ffc17-3917-551c-7cb5-19de505dfd21
 title: Tipos de biblioteca de DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cd9be6da4b29ace16e1ada76571f5c1be7aebf709c1025fb58391139a2e2142
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32ac888e451fe1e1ba5cfc66184bf2eb7b6feffd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118087661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963436"
 ---
 # <a name="directxmath-library-types"></a>Tipos de biblioteca de DirectXMath
 
-La biblioteca DirectXMath proporciona una serie de estructuras y tipos definidos para encapsular los datos para admitir la facilidad de uso, optimización y portabilidad.
+La biblioteca DirectXMath proporciona una serie de estructuras y tipos definidos para encapsular datos para admitir la facilidad de uso, optimización y portabilidad.
 
-La lista siguiente incluye estructuras que forman parte actualmente de la biblioteca DirectXMath y que están disponibles a través del encabezado DirectXMath.h.
+La lista siguiente incluye estructuras que actualmente forman parte de la biblioteca DirectXMath y que están disponibles a través del encabezado DirectXMath.h.
 
 ## <a name="in-this-section"></a>En esta sección
 

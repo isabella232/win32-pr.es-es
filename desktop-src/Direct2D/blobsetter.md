@@ -1,6 +1,6 @@
 ---
 title: BlobSetter (D2d1effecthelpers.h)
-description: Llama a una devolución de llamada del setter de propiedad member-function para una propiedad de tipo blob.
+description: Llama a una devolución de llamada del setter de propiedad de función miembro para una propiedad de tipo blob.
 ms.assetid: 29411D53-1D27-4040-A3C0-B1511E627A32
 keywords:
 - BlobSetter Direct2D
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b062f32282ee03aabb37f440e3291f71abf3a88963aaecbe0166e5525ad4f661
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2a073db2fb53fa86414ed6081ede0e24c2eb7dcf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119641915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164237"
 ---
 # <a name="blobsetter"></a>BlobSetter
 
-Llama a una devolución de llamada del setter de propiedad member-function para una propiedad de tipo blob.
+Llama a una devolución de llamada del setter de propiedad de función miembro para una propiedad de tipo blob.
 
 ``` syntax
 template<typename T, T P, typename I>
@@ -44,7 +44,7 @@ HRESULT CALLBACK BlobSetter(
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

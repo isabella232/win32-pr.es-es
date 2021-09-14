@@ -8,12 +8,12 @@ keywords:
 - volver a configurar Windows cinta de opciones con modos de aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e35cf4f1b52c51770aa460596f9120672d598b0b6d57b2643d692e34149711d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83d206c238e6fe7463562077daaa52a5522a79d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117666558"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247503"
 ---
 # <a name="reconfiguring-the-ribbon-with-application-modes"></a>Reconfiguración de la cinta con modos de aplicación
 
@@ -197,9 +197,9 @@ En este ejemplo se muestra lo siguiente:
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La cinta de opciones debe tener al menos un modo activo en todo momento. Si una aplicación intenta desactivar todos los modos llamando a [**IUIFramework::SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes) con un valor de modo de 0, se devuelve E FAIL y el conjunto de modo activo permanece \_ sin cambios.
+La cinta de opciones debe tener al menos un modo activo en todo momento. Si una aplicación intenta desactivar todos los modos mediante una llamada a [**IUIFramework::SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes) con un valor de modo de 0, se devuelve E FAIL y el conjunto de modo activo permanece \_ sin cambios.
 
 El marco requiere que exista al menos una pestaña en la interfaz de usuario de la cinta de opciones en todo momento. Como resultado, debe haber al menos una pestaña expuesta por el modo predeterminado (modo 0) y después de cada cambio de modo.
 

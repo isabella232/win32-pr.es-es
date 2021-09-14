@@ -25,16 +25,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e7ea10d0e09492c3f0f27a0d3538ccaf458cb761678c699032fc1b61f43d0eb7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 886f5085ee09020730b36269255279836b31562a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119780235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969015"
 ---
 # <a name="table-implicit-conversion-table-to-jet_tableid"></a>Conversión implícita de tabla (tabla a JET_TABLEID)
 
-Operador de conversión implícita de una tabla a una JET_TABLEID. Esto permite usar una tabla con las API que esperan un JET_TABLEID.
+Operador de conversión implícita de una tabla a un JET_TABLEID. Esto permite usar una tabla con API que esperan un JET_TABLEID.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -64,14 +64,14 @@ public static implicit operator JET_TABLEID (
   - table  
     Tipo: [Microsoft.Isam.Esent.Interop.Table](./table-class.md)  
     
-    Tabla que se convertirá.
+    Tabla que se debe convertir.
 
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
 El JET_TABLEID de la tabla.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

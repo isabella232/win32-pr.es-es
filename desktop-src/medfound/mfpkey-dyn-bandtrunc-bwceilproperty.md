@@ -4,12 +4,12 @@ ms.assetid: 01af4961-b372-462b-a24e-c600d1cd76ab
 title: MFPKEY_DYN_BANDTRUNC_BWCEIL propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dd3093fa7db432369abaac02fb3339c3ed268ca7a7b611af2f9256982c67b84
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 59c7bce5f8ec0ea3be6dfc59ea281bb7bb3eac67
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119940005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257556"
 ---
 # <a name="mfpkey_dyn_bandtrunc_bwceil-property"></a>Propiedad MFPKEY \_ DYN \_ BANDTRUNC \_ BWCEIL
 
@@ -17,7 +17,7 @@ Especifica el ancho de banda codificado máximo permitido por el truncamiento de
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -29,12 +29,12 @@ Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Cliente<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Remoto<br/> | Windows Vista o Windows 7<br/>                                                   |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

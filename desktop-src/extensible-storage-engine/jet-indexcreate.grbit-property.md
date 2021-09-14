@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 61984861d9e39f706319af59cf1efd8963a84e0c94237bd0a986d4b32b859315
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7bf0436a7b0b8c87713a1d1e59d9abe8b2e98fd1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248775"
 ---
 # <a name="jet_indexcreategrbit-property"></a>JET_INDEXCREATE.grbit, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece las opciones de creación de índices.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ public CreateIndexGrbit grbit { get; set; }
 
 Tipo: [Microsoft.Isam.Esent.Interop.CreateIndexGrbit](./createindexgrbit-enumeration.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

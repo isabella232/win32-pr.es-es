@@ -4,12 +4,12 @@ ms.assetid: 82c24d0e-12c4-436b-8a1d-452819412954
 title: System.Devices.WinPhone8CameraFlags
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24f15cf0b79e60d7d5681a9999f4fe5a174bf590d1d5de04d646ad8dab087ddf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d17762a72d8e57bafabb0778920a15161d3fe5d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118727655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248228"
 ---
 # <a name="systemdeviceswinphone8cameraflags"></a>System.Devices.WinPhone8CameraFlags
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

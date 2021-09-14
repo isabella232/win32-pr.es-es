@@ -1,8 +1,8 @@
 ---
-title: 'IDODownloadInternal:: GetPropertyEx (método)'
-description: Recupera un puntero a una **variante** que contiene un valor de propiedad de descarga extendida específico.
+title: Método IDODownloadInternal::GetPropertyEx
+description: Recupera un puntero a variant **que** contiene un valor de propiedad de descarga extendido específico.
 keywords:
-- 'IDODownloadInternal:: GetPropertyEx (método)'
+- Método IDODownloadInternal::GetPropertyEx
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/29/2019
 ms.openlocfilehash: 908f9b15df5c0c4a2769149419ff12d545201e5c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420974"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965127"
 ---
-# <a name="idodownloadinternalgetpropertyex-method"></a>IDODownloadInternal:: GetPropertyEx (método)
+# <a name="idodownloadinternalgetpropertyex-method"></a>Método IDODownloadInternal::GetPropertyEx
 
 > [!IMPORTANT]
-> La interfaz **IDODownloadInternal** está en desuso. En su lugar, use la interfaz [IDODownload](../do/nn-do-idodownload.md) .
+> La **interfaz IDODownloadInternal** está en desuso. En su lugar, use [la interfaz IDODownload.](../do/nn-do-idodownload.md)
 
-Recupera un puntero a una **variante** que contiene un valor de propiedad de descarga extendida específico.
+Recupera un puntero a variant **que** contiene un valor de propiedad de descarga extendido específico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,26 +41,26 @@ HRESULT GetPropertyEx(
 
 `propId`
 
-IDENTIFICADOR de propiedad necesario que se va a obtener (de tipo **DODownloadPropertyEx**).
+Identificador de propiedad necesario para obtener (de tipo **DODownloadPropertyEx**).
 
 `propVal`
 
-Valor de propiedad resultante, almacenado en una **variante**.
+Valor de propiedad resultante, almacenado en **variant.**
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve **S_OK**. De lo contrario, devuelve un [código de error](/windows/desktop/com/com-error-codes-10) [**HRESULT**](/windows/desktop/com/structure-of-com-error-codes) .
+Si la función se realiza correctamente, devuelve **S_OK**. De lo contrario, devuelve un [**código de**](/windows/desktop/com/structure-of-com-error-codes) error [HRESULT](/windows/desktop/com/com-error-codes-10).
 
 |Valor devuelto|Descripción|
 |-|-|
-|DO_E_UNKNOWN_PROPERTY_ID|se desconoce el *propId* .|
+|DO_E_UNKNOWN_PROPERTY_ID|*propId* es desconocido.|
 |DO_E_WRITE_ONLY_PROPERTY|La propiedad es de solo escritura y no se puede leer.|
-|E_NOT_SET|No se estableció esta propiedad a través de **SetPropertyEx**.|
+|E_NOT_SET|No se estableció dicha propiedad a través **de SetPropertyEx**.|
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Solo aplicaciones Win32 de Windows 10, versión 1809 \[\] |
-| **Servidor mínimo compatible** | Windows Server, versión 1809 \[ Win32 Applications Only\] |
-| **Header** | DODownloadInternal. h |
+| **Cliente mínimo compatible** | \[Windows 10, versión 1809 Solo aplicaciones Win32\] |
+| **Servidor mínimo compatible** | Windows Servidor, versión 1809 \[ Solo aplicaciones Win32\] |
+| **Header** | DODownloadInternal.h |

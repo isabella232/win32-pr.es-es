@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cdc87805539619ff644afbd295bfa7f1ac76f075
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0ef90466b736facf5bd9fefee31c0449964d003b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122482791"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962772"
 ---
 # <a name="jetregistercallback-function"></a>Función JetRegisterCallback
 
@@ -61,7 +61,7 @@ Cursor que se va a usar para esta llamada.
 
 Máscara de bits formada por las razones de devolución de llamada por las que la aplicación desea recibir notificaciones.
 
-Para crear esta máscara de bits, simplemente o juntos motivos de devolución de llamada válidos de [la enumeración JET_CBTYP](./jet-cbtyp.md) bits.
+Para crear esta máscara de bits, simplemente o juntas razones de devolución de llamada válidas de la [enumeración JET_CBTYP](./jet-cbtyp.md) bits.
 
 *pCallback*
 
@@ -85,7 +85,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
-| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. <strong>JetRegisterCallback</strong> devolverá este error cuando:</p><ul><li><p><em>cbtyp</em> es cero,</p></li><li><p><em>pCallback</em> es NULL.</p></li><li><p><em>phCallbackId</em> es NULL.</p></li></ul> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. <strong>JetRegisterCallback</strong> devolverá este error cuando:</p><ul><li><p><em>cbtyp</em> es cero,</p></li><li><p><em>pCallback</em> es NULL.</p></li><li><p><em>phCallbackId</em> es NULL.</p></li></ul> | 
 | <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
@@ -97,14 +97,20 @@ Si se ejecuta correctamente, la devolución de llamada especificada se registrar
 
 En caso de error, la devolución de llamada no se registrará. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Este método proporciona un medio para que la aplicación asocie devoluciones de llamada volátiles a una tabla de una base de datos. Si la aplicación desea asociar devoluciones de llamada persistentes a una tabla de la base de datos, debe pasar la devolución de llamada a [JET_TABLECREATE](./jet-tablecreate-structure.md) mediante [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md).
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

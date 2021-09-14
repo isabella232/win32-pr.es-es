@@ -1,7 +1,7 @@
 ---
-description: Especifica el método de transmisión utilizado para los mensajes de EAPOL-Start.
+description: Especifica el método de transmisión utilizado para EAPOL-Start mensajes.
 ms.assetid: 8d49d19a-8122-4191-bb46-92a2016bcfee
-title: Elemento supplicantMode (OneX)
+title: elemento supplicantMode (OneX)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,31 +13,31 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 33d58bd247a220ca93ed4d2a05886be107afd4c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677748"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069444"
 ---
-# <a name="supplicantmode-onex-element"></a>Elemento supplicantMode (OneX)
+# <a name="supplicantmode-onex-element"></a>elemento supplicantMode (OneX)
 
-El elemento supplicantMode (OneX) especifica el método de transmisión que se usa para los mensajes de EAPOL-Start. La siguiente tabla describe los posibles valores.
+El elemento supplicantMode (OneX) especifica el método de transmisión utilizado para EAPOL-Start mensajes. La siguiente tabla describe los posibles valores.
 
 
 
 | Value               | Descripción                                                                                                                                                              |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| inhibitTransmission | No se transmiten los mensajes de EAPOL-Start. Válido solo para perfiles de LAN con cable.                                                                                             |
-| includeLearning     | El cliente determina cuándo se deben enviar los paquetes de EAPOL-Start en función de la capacidad de la red. EAPOL-Start mensajes solo se envían cuando es necesario. Válido solo para perfiles de LAN con cable. |
-| compliant           | EAPOL-Start mensajes se transmiten según lo especificado por 802.1 X. Válido para perfiles de LAN inalámbrica y cableada.                                                             |
+| induccionesTransmission | EAPOL-Start mensajes no se transmiten. Válido solo para perfiles de LAN cableadas.                                                                                             |
+| includeLearning     | El cliente determina cuándo enviar paquetes EAPOL-Start en función de la funcionalidad de red. EAPOL-Start solo se envían cuando es necesario. Válido solo para perfiles de LAN cableadas. |
+| compliant           | EAPOL-Start mensajes se transmiten según lo especificado por 802.1X. Válido para perfiles de LAN cableadas e inalámbricas.                                                             |
 
 
 
  
 
-Este elemento es opcional. Cuando supplicantMode no se especifica en un perfil, se usa un valor de `compliant` para los perfiles de LAN inalámbrica y cableada.
+Este elemento es opcional. Cuando no se especifica supplicantMode en un perfil, se usa un valor de para los `compliant` perfiles de LAN cableadas e inalámbricas.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
 
 ``` syntax
 <xs:element name="supplicantMode">
@@ -59,7 +59,7 @@ Este elemento es opcional. Cuando supplicantMode no se especifica en un perfil, 
 </xs:element>
 ```
 
-El elemento **supplicantMode** se define mediante el elemento [**Onex**](onexschema-onex-element.md) .
+El **elemento supplicantMode** se define mediante el [**elemento OneX.**](onexschema-onex-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,25 +67,25 @@ El elemento **supplicantMode** se define mediante el elemento [**Onex**](onexsch
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Onex-**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**Onex-**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> </dl>
 
  

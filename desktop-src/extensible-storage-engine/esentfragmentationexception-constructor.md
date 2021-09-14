@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Constructor de EsentFragmentationException'
-title: Constructor de EsentFragmentationException
+title: Constructor EsentFragmentationException
 TOCTitle: 'EsentFragmentationException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentFragmentationException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentfragmentationexception.esentfragmentationexception(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 4d6456a5ea687b90d08fbac62b3c618d3531d025f76d700a8e647efcf6a35523
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7bf233560a3e0b86324f732d93e5a97e9e8a3dff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118081552"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963256"
 ---
-# <a name="esentfragmentationexception-constructor"></a>Constructor de EsentFragmentationException
+# <a name="esentfragmentationexception-constructor"></a>Constructor EsentFragmentationException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

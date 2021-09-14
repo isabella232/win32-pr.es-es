@@ -4,29 +4,29 @@ ms.assetid: 015a6a6d-9e07-4f22-b931-dcce77051bef
 title: Descarga de netmon y filtros DPWS de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8a6f92f2680807101a3c82664f4b0b3ae5a877f0d9f5797da9c9c0b6ea2b158
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 47790b26164ec0ed2792d1d1e1f2ad4ba5d77d38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120030225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966987"
 ---
 # <a name="downloading-netmon-and-sample-dpws-filters"></a>Descarga de netmon y filtros DPWS de ejemplo
 
-Monitor de red de Microsoft 3 (Netmon) es un analizador de paquetes que se usa para inspeccionar el tráfico de red. Netmon debe descargarse antes de seguir los pasos de solución de problemas [indicados](inspecting-network-traces-for-udp-ws-discovery.md) en Inspección de seguimientos de red para la detección de WS udp e Inspección de seguimientos de red para los [metadatos HTTP](inspecting-network-traces-for-http-metadata-exchange.md) Exchange se pueden seguir. Una vez descargado Netmon, se pueden usar filtros DPWS para ayudar a aislar el tráfico de interés.
+Monitor de red de Microsoft 3 (Netmon) es un analizador de paquetes que se usa para inspeccionar el tráfico de red. Netmon se debe descargar antes de seguir los pasos de solución de problemas indicados en Inspección de seguimientos de red para la detección de [WS](inspecting-network-traces-for-udp-ws-discovery.md) udp e inspección de [seguimientos](inspecting-network-traces-for-http-metadata-exchange.md) de red para la Exchange http. Una vez descargado Netmon, se pueden usar filtros DPWS para ayudar a aislar el tráfico de interés.
 
 ## <a name="downloading-netmon"></a>Descarga de Netmon
 
-Para descargar Netmon, vaya [a Monitor de red de Microsoft](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=983b941d-06cb-4658-b7f6-3088333d062f) y siga las instrucciones. Para obtener más información sobre Netmon, vea "Information about Monitor de red 3.0" (Información sobre Monitor de red 3.0) en help and support Knowledge Base at [https://support.microsoft.com/kb/933741](https://support.microsoft.com/kb/933741) .
+Para descargar Netmon, vaya [a Monitor de red de Microsoft](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=983b941d-06cb-4658-b7f6-3088333d062f) y siga las instrucciones. Para obtener más información sobre Netmon, vea "Información sobre Monitor de red 3.0" en la página ayuda y soporte técnico Knowledge Base en [https://support.microsoft.com/kb/933741](https://support.microsoft.com/kb/933741) .
 
 ## <a name="sample-dpws-filters"></a>Filtros DPWS de ejemplo
 
-A veces, WS-Discovery solución de problemas de intercambio de metadatos y de almacenamiento en una red ocupada. Los filtros de ejemplo se pueden usar para ayudar a limitar la salida de Netmon al tráfico de interés. Para obtener más información sobre el uso de filtros de Netmon, vea [https://support.microsoft.com/kb/933741](https://support.microsoft.com/kb/933741) .
+A veces, WS-Discovery solución de problemas de intercambio de metadatos y de metadatos en una red ocupada. Los filtros de ejemplo se pueden usar para ayudar a limitar la salida de Netmon al tráfico de interés. Para obtener más información sobre el uso de filtros de Netmon, vea [https://support.microsoft.com/kb/933741](https://support.microsoft.com/kb/933741) .
 
 En el ejemplo siguiente se muestra un filtro que limita la salida a todo el tráfico WS-Discovery difusión.
 
 > [!Note]  
-> Este filtro no captura el tráfico de las pilas que no responden a mensajes de WS-Discovery multidifusión que se originan en el puerto 3702. Si se usa una pila de este tipo, este filtro de ejemplo debe modificarse antes de su uso.
+> Este filtro no captura el tráfico de las pilas que no responden a mensajes de WS-Discovery multidifusión que se originan en el puerto 3702. Si se usa este tipo de pila, este filtro de ejemplo debe modificarse antes de su uso.
 
  
 

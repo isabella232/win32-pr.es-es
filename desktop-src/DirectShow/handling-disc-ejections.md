@@ -4,12 +4,12 @@ ms.assetid: c43dd795-749b-4ca7-8510-71d62e0076b3
 title: Control de las eyección de disco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a7acb2201b0bffbc64b07fcb19af02a2f2aeb5b7be766e1abc47cc21845315
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8964c8fd18395e932e1536e885bae1814d5952fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117999821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169954"
 ---
 # <a name="handling-disc-ejections"></a>Control de las eyección de disco
 

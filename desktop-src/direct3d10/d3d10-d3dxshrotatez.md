@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXSHRotateZ (D3DX10.h): gira el vector de armónico esférico (SH) en el eje Z por el ángulo especificado.'
+description: 'Función D3DXSHRotateZ (D3DX10.h): gira el vector de armónico esférico (SH) en el eje Z según el ángulo especificado.'
 ms.assetid: 7c4bec55-4a4c-4f7e-8849-1cac373a2340
 title: Función D3DXSHRotateZ (D3DX10.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2ea15bf7bbcbea68fabf592ec8bad409990038d03fb1f4014f760b92d124408b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 55e4663057bd25ac9768a5913963a5511b662f11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119990025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970043"
 ---
 # <a name="d3dxshrotatez-function-d3dx10h"></a>Función D3DXSHRotateZ (D3DX10.h)
 
-Gira el vector armónico esférico (SH) en el eje Z por el ángulo especificado.
+Gira el vector armónico esférico (SH) en el eje z mediante el ángulo especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ FLOAT* D3DXSHRotateZ(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación genera coeficientes order-to-order. Este puntero no debe incluir un alias con pIn. Vea la sección Comentarios.
+Puntero a coeficientes de salida de armónica esférica (SH). La evaluación genera coeficientes order-to-order. Este puntero no debe incluir un alias con pIn. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación gene
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntero a coeficientes de salida sh.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria lmiento + m + l, donde:
 
@@ -103,7 +103,7 @@ Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: La clase VideoConfiguration de Win32 \_ no está activa. No devolverá ninguna instancia, ya que no hay ningún proveedor que la resalte.
+description: La clase VideoConfiguration de Win32 \_ no está activa. No devolverá ninguna instancia, ya que no hay ningún proveedor que lo acote.
 ms.assetid: 8dd15e8a-ff9b-4e75-bae9-8c80548301ab
 ms.tgt_platform: multiple
 title: Win32_VideoConfiguration clase
@@ -44,18 +44,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7d951a8927458fa12398682ce63963dd71949d70e4db3a426dfc93ad14c78bf7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 96ad4206cc50953a135b23257526ffb5cdc59b6e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119922625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892436"
 ---
 # <a name="win32_videoconfiguration-class"></a>Clase VideoConfiguration de Win32 \_
 
-La **clase \_ VideoConfiguration de Win32** no está activa. No devolverá ninguna instancia, ya que no hay ningún proveedor que la resalte.
+La **clase \_ VideoConfiguration de Win32** no está activa. No devolverá ninguna instancia, ya que no hay ningún proveedor que lo acote.
 
-La **clase \_ VideoConfiguration de Win32** representa una configuración de un subsistema de vídeo. Esta clase ha quedado en desuso en favor de las propiedades contenidas en las clases [**\_ VideoController de Win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)y [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
+La **clase \_ VideoConfiguration de Win32** representa una configuración de un subsistema de vídeo. Esta clase ha quedado en desuso en favor de las propiedades contenidas en las clases [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)y [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -98,7 +98,7 @@ class Win32_VideoConfiguration : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ VideoConfiguration de Win32** tiene estos tipos de miembros:
 
@@ -119,10 +119,10 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| COLORRES"), [**Units**](../wmisdk/standard-qualifiers.md) ("bits per pixel")
+Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funciones de contexto de dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| COLORRES"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bits por píxel")
 </dt> </dl>
 
-Indica la profundidad de color actual de la presentación del vídeo.
+Indica la profundidad de color actual de la pantalla de vídeo.
 
 Esta propiedad ha quedado en desuso en favor de las propiedades correspondientes contenidas en [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
 
@@ -178,7 +178,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \\ \\ Info \| DACType")
 </dt> </dl>
 
-Indica el nombre del chip digital a analógico (DAC) utilizado en el adaptador.
+Indica el nombre del chip de digital a análogo (DAC) utilizado en el adaptador.
 
 Esta propiedad ha quedado en desuso en favor de las propiedades correspondientes contenidas en [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
 
@@ -254,7 +254,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| BITSPIXEL")
 </dt> </dl>
 
-Indica el número real de bits por píxel que representa la pantalla. Esto se puede escalar a la configuración de vídeo actual (representada por la propiedad ActualColorResolution) del usuario.
+Indica el número real de bits por píxel que representa la presentación. Esto se puede escalar a la configuración de vídeo actual (representada por la propiedad ActualColorResolution) del usuario.
 
 Ejemplo: 8
 
@@ -276,7 +276,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -292,7 +292,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| PLANES")
 </dt> </dl>
 
-Indica el número actual de planos de color usados en la presentación del vídeo. Un plano de color es otra manera de representar los colores de los píxeles. en lugar de asignar un único valor RGB a cada uno de los píxeles, los planos de color separan el gráfico en cada uno de los componentes de color primario (azul verde rojo) y los almacenan en sus propios planos. Esto permite mayores profundidades de color en sistemas de vídeo de 8 y 16 bits. Los sistemas gráficos presentes tienen el bitwidth lo suficientemente grande como para almacenar información de profundidad de color, lo que hace que solo sea necesario un plano de color.
+Indica el número actual de planos de color usados en la presentación del vídeo. Un plano de color es otra manera de representar los colores de los píxeles. en lugar de asignar un único valor RGB a cada uno de los píxeles, los planos de color separan el gráfico en cada uno de los componentes de color primario (azul verde rojo) y los almacenan en sus propios planos. Esto permite una mayor profundidad de color en sistemas de vídeo de 8 y 16 bits. Los sistemas de gráficos presentes tienen el bitwidth lo suficientemente grande como para almacenar información de profundidad de color, lo que hace que solo sea necesario un plano de color.
 
 Ejemplo: 1
 
@@ -331,7 +331,7 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -344,7 +344,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| NUMPENS")
+Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funciones de contexto de dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| NUMPENS")
 </dt> </dl>
 
 Indica el número actual de lápices específicos del dispositivo. Un valor de 0xFFFFFFFF significa que el dispositivo no admite lápices. Los lápices se usan para dibujar líneas y los límites de objetos poligonales.
@@ -407,7 +407,7 @@ Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**Mappin
 
 Especifica la ruta de acceso al archivo .inf del controlador de vídeo.
 
-Ejemplo: C: \\ controladores Windows \\ System32 \\
+Ejemplo: C: \\ Windows \\ controladores system32 \\
 
 Esta propiedad ha quedado en desuso en favor de las propiedades correspondientes contenidas en [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
 
@@ -555,7 +555,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| DEVICEFRESH")
 </dt> </dl>
 
-Indica la frecuencia de actualización de la configuración del vídeo. Un valor de 0 o 1 indica que se usa una velocidad predeterminada.
+Indica la frecuencia de actualización de la configuración del vídeo. Un valor de 0 o 1 indica que se está utilizando una velocidad predeterminada.
 
 Ejemplo: 72
 
@@ -606,7 +606,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| VERTSIZE"), [**Units**](../wmisdk/standard-qualifiers.md) ("mmmms")
+Calificadores: [**DEPRECATED**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funciones de contexto de dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| VERTSIZE"), [**unidades**](../wmisdk/standard-qualifiers.md) ("milímetros")
 </dt> </dl>
 
 Especifica el alto de la pantalla física.
@@ -705,7 +705,7 @@ Esta propiedad ha quedado en desuso en favor de las propiedades correspondientes
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

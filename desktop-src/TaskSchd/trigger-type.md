@@ -4,8 +4,8 @@ description: Para el scripting, obtiene el tipo del desencadenador.
 ms.assetid: 346e6b02-c89e-4644-aa19-2bbf3d0fb3c3
 keywords:
 - Tipo de propiedad Programador de tareas
-- Propiedad Type Programador de tareas , Trigger object
-- Desencadenador de objeto Programador de tareas , propiedad Type
+- Propiedad type Programador de tareas , Trigger object
+- Desencadenador de objetos Programador de tareas , propiedad Type
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcc44e385324d161ca051b4270096e674adbba878448667ef176a9c1c63bb24b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba2cef2d6ae33ceeac028e10a0f545afbc0a0ec8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119002043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891412"
 ---
 # <a name="triggertype-property"></a>Propiedad Trigger.Type
 
 Para el scripting, obtiene el tipo del desencadenador. El tipo de desencadenador se define cuando se crea el desencadenador y no se puede cambiar más adelante. Para obtener información sobre cómo crear un desencadenador, [**vea TriggerCollection.Create**](triggercollection-create.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -50,7 +50,7 @@ Uno de los siguientes valores [**de \_ enumeración TASK TRIGGER \_ TYPE2.**](/w
 | <span id="TASK_TRIGGER_WEEKLY"></span><span id="task_trigger_weekly"></span><dl> <dt>**TASK \_ TRIGGER \_ WEEKLY**</dt> <dt>3</dt> </dl>                                              | Inicia la tarea semanalmente.<br/>                                    |
 | <span id="TASK_TRIGGER_MONTHLY"></span><span id="task_trigger_monthly"></span><dl> <dt>**TASK \_ DESENCADENADOR \_ MENSUAL**</dt> <dt>4</dt> </dl>                                           | Inicia la tarea mensualmente.<br/>                                   |
 | <span id="TASK_TRIGGER_MONTHLYDOW"></span><span id="task_trigger_monthlydow"></span><dl> <dt>**TASK \_ TRIGGER \_ MONTHLYDOW**</dt> <dt>5</dt> </dl>                                  | Inicia la tarea cada mes en un día específico de la semana.<br/> |
-| <span id="TASK_TRIGGER_IDLE"></span><span id="task_trigger_idle"></span><dl> <dt>**TASK \_ TRIGGER \_ IDLE**</dt> <dt>6</dt> </dl>                                                    | Inicia la tarea cuando el equipo entra en estado de inactividad.<br/> |
+| <span id="TASK_TRIGGER_IDLE"></span><span id="task_trigger_idle"></span><dl> <dt>**TASK \_ TRIGGER \_ IDLE**</dt> <dt>6</dt> </dl>                                                    | Inicia la tarea cuando el equipo entra en un estado inactivo.<br/> |
 | <span id="TASK_TRIGGER_REGISTRATION"></span><span id="task_trigger_registration"></span><dl> <dt>**TASK \_ REGISTRO \_ DE DESENCADENADOR**</dt> <dt>7</dt> </dl>                            | Inicia la tarea cuando se registra la tarea.<br/>               |
 | <span id="TASK_TRIGGER_BOOT"></span><span id="task_trigger_boot"></span><dl> <dt>**TASK \_ TRIGGER \_ BOOT**</dt> <dt>8</dt> </dl>                                                    | Inicia la tarea cuando se inicia el equipo.<br/>                   |
 | <span id="TASK_TRIGGER_LOGON"></span><span id="task_trigger_logon"></span><dl> <dt>**TASK \_ DESENCADENAR \_ INICIO DE SESIÓN**</dt> <dt>9</dt> </dl>                                                 | Inicia la tarea cuando un usuario específico inicia sesión.<br/>              |
@@ -73,7 +73,7 @@ Uno de los siguientes valores [**de \_ enumeración TASK TRIGGER \_ TYPE2.**](/w
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 2e238d31-98b2-4c79-96b0-9e6949010a73
 title: MFPKEY_DECODERCOMPLEXITYPROFILE propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca206357a3f3a396ac6d07ea16a1b72bc245c641095a5523e46139dfd6af7f76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f39544830a0a05e21779a637da61d3bcb310fcd8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119604225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257620"
 ---
 # <a name="mfpkey_decodercomplexityprofile-property"></a>Propiedad DECODERCOMPLEXITYPROFILE de MFPKEY \_
 
@@ -23,7 +23,7 @@ g \_ wszWMVCDecoderComplexityProfile
 
 **VT \_ BSTR**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo puede leer este valor una vez completada la codificación.
 
@@ -31,7 +31,7 @@ En el caso del audio, esta propiedad tiene uno de los valores siguientes.
 
 
 
-| Valor | Descripción                                                                                    |
+| Value | Descripción                                                                                    |
 |-------|------------------------------------------------------------------------------------------------|
 | "L1"  | Codificación estándar con una frecuencia de muestreo de 44,1 KHz y una velocidad de bits máxima de 161 Kbps.         |
 | "L2"  | Codificación estándar con velocidades de muestreo de hasta 48 KHz y una velocidad de bits máxima de 161 Kbps.         |
@@ -70,15 +70,15 @@ Para el contenido de vídeo, puede solicitar un nivel de perfil estableciendo [M
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

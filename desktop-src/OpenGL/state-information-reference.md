@@ -6,18 +6,18 @@ keywords:
 - OpenGL, referencia de información de estado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ed923cd645300c27395b78c50f019217edf8b41e34905e670236410e89a9ce6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 885e1e7b4d8704eb43dda2cc85b870ede7e53a22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069264"
 ---
 # <a name="state-information-reference"></a>Referencia de información de estado
 
 La lista siguiente contiene las funciones que obtienen información de estado.
 
-Para obtener una lista de las páginas de referencia de las variables de estado, vea [Variables de estado OpenGL.](opengl-state-variables.md)
+Para obtener una lista de las páginas de referencia de las variables de estado, vea [Variables de estado de OpenGL.](opengl-state-variables.md)
 
 -   [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)
 -   [**glGetBooleanv**](glgetbooleanv.md)

@@ -26,12 +26,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bdc939edcba5176fd93ad7828bf4f7ea5368fb80c9e97f646f3f1ca4122ad55
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb7397ccc1afd350689ac1eeb984a62177140f50
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119868375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249735"
 ---
 # <a name="win32_rdmscollectionproperties-class"></a>Clase \_ RDMSCollectionProperties de Win32
 
@@ -58,7 +58,7 @@ class Win32_RDMSCollectionProperties
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ RDMSCollectionProperties de Win32** tiene estos tipos de miembros:
 
@@ -232,7 +232,7 @@ Obtiene y establece un valor que indica si RemoteFX está habilitado para la má
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

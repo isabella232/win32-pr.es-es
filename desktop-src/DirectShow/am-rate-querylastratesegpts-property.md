@@ -4,12 +4,12 @@ ms.assetid: 3c7006e7-48fd-4df8-b446-8ee2b024278b
 title: AM_RATE_QueryLastRateSegPTS propiedad (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34e7b54e618829d9768b4d08a0a76defcf2c91758be6b916b6e570b368191e89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72c6e3e00985ba6e714bf48d349fd5af5c9593b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117824839"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162345"
 ---
 # <a name="am_rate_querylastratesegpts-property"></a>Consulta \_ AM \_ RATELastRateSegPTS Propiedad
 
@@ -19,7 +19,7 @@ Esta propiedad se define para la versión 1.1 de este conjunto de propiedades; v
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-------------------|-------------------------------|
 | GUID del conjunto de propiedades | AM \_ KSPROPSETID \_ TSRateChange |
 | Id. de propiedad       | Consulta \_ AM \_ RATELastRateSegPTS |
@@ -29,7 +29,7 @@ Esta propiedad se define para la versión 1.1 de este conjunto de propiedades; v
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El filtro de origen puede usar esta propiedad para sincronizar los cambios de velocidad en varias secuencias de audio y vídeo.
 
@@ -43,7 +43,7 @@ El filtro de origen puede usar esta propiedad para sincronizar los cambios de ve
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

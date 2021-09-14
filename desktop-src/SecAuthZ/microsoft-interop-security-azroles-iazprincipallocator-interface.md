@@ -1,5 +1,5 @@
 ---
-description: Vínculos a documentación para los métodos y propiedades de contenedor de interoperabilidad de IAzPrincipalLocator.
+description: Vínculos a la documentación de los métodos y propiedades del contenedor de interoperabilidad IAzPrincipalLocator.
 ms.assetid: 429d3be5-d4f2-46b1-8e80-05b4d3b8c1e3
 title: Interfaz Microsoft.Interop.Security.AzRoles.IAzPrincipalLocator
 ms.topic: reference
@@ -17,18 +17,18 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 511ba00fdfe2cba27eff885c8ecdd9b209098c4b2e5dd20608e1bebdad2a00ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 618d37e9f0a46ab24d5ee43d17821e4a28eda177
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117780958"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069060"
 ---
 # <a name="microsoftinteropsecurityazrolesiazprincipallocator-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzPrincipalLocator
 
-Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzNameResolver** se documentan en la versión COM del método o la propiedad . Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
+Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzNameResolver** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz Microsoft.Interop.Security.AzRoles.IAzPrincipalLocator** tiene estos tipos de miembros:
 

@@ -4,12 +4,12 @@ ms.assetid: 2bb1c94a-55b6-4aee-b86d-ee9e1f8ed290
 title: Optimización de revisiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fee37ba48764f6249410a6dfc2512245aa6ca6dfca68cff09ec15e06a42f9156
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86215855bb02314d7eb54c774541b0a2086c7c99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118627648"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250886"
 ---
 # <a name="patch-optimization"></a>Optimización de revisiones
 
@@ -17,7 +17,7 @@ Windows El instalador puede optimizar la aplicación de revisiones para reducir 
 
 **Windows Installer 2.0:** No se admite. Para las versiones de Windows Installer publicadas antes de Windows Installer 3.0, la aplicación de revisiones ejecuta una instalación de reparación completa de la aplicación, lo que puede tardar mucho más tiempo.
 
-**Windows Installer 3.0 y versiones posteriores:** El proceso de aplicación de revisiones solo cambia las partes de una aplicación modificadas por una revisión.
+**Windows Installer 3.0 y versiones posteriores:** El proceso de aplicación de revisiones solo cambia las partes de una aplicación que se modifican mediante una revisión.
 
 **Windows Installer 3.1 y versiones posteriores:** A partir de Windows Installer 3.1, la optimización de revisiones requiere que todas las revisiones de la transacción tengan la propiedad OptimizedInstallMode establecida en 1 (uno) en la tabla [MsiPatchMetadata](msipatchmetadata-table.md).
 

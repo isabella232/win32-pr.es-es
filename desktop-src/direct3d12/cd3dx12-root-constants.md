@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ece9dade9bd1e833657c26d84d426d04a63ebce786280b3d76f21e10bc07b3c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7a1f81a429b083400adad60f316cc90c4ede1d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118098478"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966852"
 ---
 # <a name="cd3dx12_root_constants-structure"></a>Estructura DE CONSTANTES \_ RAÍZ CD3DX12 \_
 
@@ -41,7 +41,7 @@ struct CD3DX12_ROOT_CONSTANTS  : public D3D12_ROOT_CONSTANTS{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -52,7 +52,7 @@ Crea una nueva instancia sin inicializar de una CONSTANTE RAÍZ CD3DX12. \_ \_
 
 </dd> <dt>
 
-**EXPLICIT CD3DX12 \_ ROOT \_ CONSTANTS(const D3D12 \_ ROOT \_ CONSTANTS &o)**
+**CONSTANTES RAÍZ EXPLÍCITAS DE CD3DX12(constantes raíz \_ \_ const D3D12 \_ \_ &o)**
 </dt> <dd>
 
 Crea una nueva instancia de CD3DX12 ROOT CONSTANTS, inicializada con el contenido de otra estructura \_ \_ [**D3D12 \_ ROOT \_ CONSTANTS.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants)
@@ -110,7 +110,7 @@ Sombreador UINTRegistrar
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

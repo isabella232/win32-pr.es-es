@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1903ece7cac625e5ac020dc09cb73e464365f4fe59155940411c254ca21b53c4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f89200eea32b93dc814c4b1a30532ed1e1148b5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161639"
 ---
-# <a name="cbasefilterm_clsid-member"></a>CBaseFilter::m \_ clsid miembro
+# <a name="cbasefilterm_clsid-member"></a>Miembro CBaseFilter::m \_ clsid
 
 Identificador de clase (CLSID) del filtro.
 
@@ -47,7 +47,7 @@ CLSID m_clsid;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

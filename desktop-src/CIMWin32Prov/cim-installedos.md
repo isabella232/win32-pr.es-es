@@ -1,5 +1,5 @@
 ---
-description: La clase \_ de asociación CIM InstalledOS representa un vínculo entre el sistema operativo del equipo y el sistema operativo instalado.
+description: La clase \_ de asociación CIM InstalledOS representa un vínculo entre el sistema informático y el sistema operativo instalado.
 ms.assetid: 6db5b5a2-91b6-4540-83b8-bb9c86c7f94e
 ms.tgt_platform: multiple
 title: CIM_InstalledOS clase
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a60bbd71993557eac238d6facd75d99b967b993a075cad726ccdef4625d6dce5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 53e01be6a87fa6e5ef91ad6e8a81dbbddff4a576
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119923415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970344"
 ---
 # <a name="cim_installedos-class"></a>Cim \_ InstalledOS (clase)
 
-La **clase \_ de asociación CIM InstalledOS** representa un vínculo entre el sistema operativo del equipo y el sistema operativo instalado. Un sistema operativo se instala cuando se encuentra en la extensión de almacenamiento de un sistema de equipo (por ejemplo, se copia en una unidad de disco o se descarga en la memoria).
+La **clase \_ de asociación CIM InstalledOS** representa un vínculo entre el sistema informático y el sistema operativo instalado. Un sistema operativo se instala cuando se encuentra en la extensión de almacenamiento de un sistema informático (por ejemplo, se copia en una unidad de disco o se descarga en la memoria).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ class CIM_InstalledOS : CIM_SystemComponent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM InstalledOS** tiene estos tipos de miembros:
 
@@ -71,14 +71,14 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Un [**sistema de \_ equipo CIM**](cim-computersystem.md) que describe el sistema del equipo.
+Un [**sistema de \_ equipos CIM**](cim-computersystem.md) que describe el sistema del equipo.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Cim \_ OperatingSystem**
+Tipo de datos: **CIM \_ OperatingSystem**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -87,7 +87,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Un [**\_ sistema operativo CIM**](cim-operatingsystem.md) que describe el sistema operativo instalado en el sistema informático.
+Un [**sistema \_ operativo CIM**](cim-operatingsystem.md) que describe el sistema operativo instalado en el sistema informático.
 
 </dd> <dt>
 
@@ -107,19 +107,19 @@ Si **es TRUE**, el sistema operativo instalado es el sistema operativo predeterm
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CIM InstalledOS** se deriva de [**CIM \_ SystemComponent**](cim-systemcomponent.md).
 
-WMI no implementa esta clase. Para las clases derivadas de **CIM \_ InstalledOS,** vea [Clases win32.](win32-provider.md)
+WMI no implementa esta clase. Para las clases derivadas de **CIM \_ InstalledOS,** vea [Clases win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

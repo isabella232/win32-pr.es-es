@@ -1,17 +1,17 @@
 ---
 description: Los programadores usan tecnologías de autorización para crear software de control de acceso, control de acceso a Internet, control de acceso de seguridad y seguridad de archivos.
 ms.assetid: 1b8306da-7577-40b8-b77c-5762c1962f00
-title: Autorización
+title: Authorization
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b0eb421a351c2f68667fd86925957fae5cf61569a229eaf9c4fe32eb1123abd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c939a4dd8747b7219fe99650ab7a078239b5f643
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117784208"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250448"
 ---
-# <a name="authorization"></a>Autorización
+# <a name="authorization"></a>Authorization
 
 ## <a name="purpose"></a>Propósito
 

@@ -1,5 +1,5 @@
 ---
-description: La clase CIM UninterruptiblePowerSupply representa las funciones y la administración de una fuente de \_ alimentación ininterrumpida (UPS).
+description: La clase CIM UninterruptiblePowerSupply representa las funcionalidades y la administración de una fuente \_ de alimentación ininterrumpida (UPS).
 ms.assetid: 27ddc955-906b-40b9-981b-96872356477c
 ms.tgt_platform: multiple
 title: CIM_UninterruptiblePowerSupply clase
@@ -49,23 +49,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4a57da3fe2b669b950213ffeaf39d72accb3452770852885c2ebe7da51d357d2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 214517fd6518cf2ca406523c61f522ae9c1adc46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119817565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174529"
 ---
 # <a name="cim_uninterruptiblepowersupply-class"></a>Cim \_ UninterruptiblePowerSupply (clase)
 
-La **clase CIM \_ UninterruptiblePowerSupply** representa las funciones y la administración de una fuente de alimentación ininterrumpida (UPS). Las propiedades del dispositivo UPS indican cuándo se recorta o aumenta la energía entrante, así como la información agregada de las baterías, los generadores, y así sucesivamente, que forma el dispositivo. Los componentes individuales (por ejemplo, varias baterías) también se pueden modelar de forma independiente y asociarse con el UPS.
+La **clase CIM \_ UninterruptiblePowerSupply** representa las funcionalidades y la administración de una fuente de alimentación ininterrumpida (UPS). Las propiedades del dispositivo UPS indican cuándo se recorta o aumenta la energía entrante, así como la información agregada de las baterías, los generadores, entre otros, que conste del dispositivo. Los componentes individuales (por ejemplo, varias baterías) también se pueden modelar de forma independiente y asociarse con el UPS.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -111,7 +111,7 @@ class CIM_UninterruptiblePowerSupply : CIM_PowerSupply
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase CIM \_ UninterruptiblePowerSupply** tiene estos tipos de miembros:
 
@@ -126,8 +126,8 @@ La **clase CIM \_ UninterruptiblePowerSupply** tiene estos métodos.
 
 | Método                                                                                | Descripción                                                                                                                              |
 |:--------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**Restablecer**](reset-method-in-class-cim-uninterruptiblepowersupply.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                               |
-| [**SetPowerState**](setpowerstate-method-in-class-cim-uninterruptiblepowersupply.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. No implementado por WMI.<br/> |
+| [**Reset**](reset-method-in-class-cim-uninterruptiblepowersupply.md)                 | Solicita un restablecimiento del dispositivo lógico. Wmi no implementa .<br/>                                                               |
+| [**SetPowerState**](setpowerstate-method-in-class-cim-uninterruptiblepowersupply.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. Wmi no implementa .<br/> |
 
 
 
@@ -151,7 +151,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.15")
 </dt> </dl>
 
-El intervalo de voltaje de entrada está actualmente en uso. Si la fuente no está dibujando energía actualmente, se puede especificar el valor 6 ("Ninguno"). Esta información es necesaria en el caso de un UPS, una subclase de [**CIM \_ PowerSupply.**](cim-powersupply.md)
+El intervalo de voltaje de entrada está actualmente en uso. Si la fuente no está dibujando actualmente la potencia, se puede especificar el valor 6 ("Ninguno"). Esta información es necesaria en el caso de un UPS, una subclase [**de CIM \_ PowerSupply**](cim-powersupply.md).
 
 Esta propiedad se hereda de [**CIM \_ PowerSupply.**](cim-powersupply.md)
 
@@ -210,12 +210,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. \|HOST-RESOURCES-MIB.hrDeviceStatus de IETF")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -235,12 +235,12 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
 
 
 </dt> <dd>
 
-Energía completa o en ejecución
+En ejecución o con energía completa
 
 </dd> <dt>
 
@@ -302,7 +302,7 @@ Energía completa o en ejecución
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -371,7 +371,7 @@ El dispositivo está en pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
 
 
 </dt> <dd>
@@ -382,7 +382,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
 
 
 </dt> <dd>
@@ -393,12 +393,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo está silencioso.
+El dispositivo es silencioso.
 
 </dd> </dl>
 
@@ -436,7 +436,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -571,7 +571,7 @@ Error en el dispositivo.
 
 </dt> <dd>
 
-El dispositivo no encuentra suficientes recursos gratuitos para usarlos.
+El dispositivo no puede encontrar suficientes recursos gratuitos para usarlos.
 
 </dd> <dt>
 
@@ -599,12 +599,12 @@ El dispositivo no puede funcionar correctamente hasta que se reinicie el equipo.
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque probablemente haya un problema de enumeración.** (15)
+<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque probablemente haya un problema de nueva enumeración.** (15)
 
 
 </dt> <dd>
 
-El dispositivo no funciona correctamente debido a un posible problema de enumeración.
+El dispositivo no funciona correctamente debido a un posible problema de nueva enumeración.
 
 </dd> <dt>
 
@@ -637,7 +637,7 @@ El dispositivo solicita un tipo de recurso desconocido.
 
 </dt> <dd>
 
-Los controladores de dispositivo deben volver a instalarse.
+Los controladores de dispositivos deben volver a instalarse.
 
 </dd> <dt>
 
@@ -655,7 +655,7 @@ Los controladores de dispositivo deben volver a instalarse.
 
 </dt> <dd>
 
-Es posible que el Registro esté dañado.
+El Registro puede estar dañado.
 
 </dd> <dt>
 
@@ -666,7 +666,7 @@ Es posible que el Registro esté dañado.
 
 </dt> <dd>
 
-Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware. Windows está quitando el dispositivo.
+Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware. Windows está quitando el dispositivo.
 
 </dd> <dt>
 
@@ -688,7 +688,7 @@ El dispositivo está deshabilitado.
 
 </dt> <dd>
 
-Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware.
+Error del sistema. Si cambiar el controlador de dispositivo no es eficaz, consulte la documentación de hardware.
 
 </dd> <dt>
 
@@ -760,12 +760,12 @@ El dispositivo está deshabilitado. El firmware del dispositivo no proporcionaba
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que usa otro dispositivo.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que otro dispositivo está usando.** (30)
 
 
 </dt> <dd>
 
-El dispositivo usa un recurso IRQ que usa otro dispositivo.
+El dispositivo usa un recurso IRQ que está usando otro dispositivo.
 
 </dd> <dt>
 
@@ -796,7 +796,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Si **es TRUE,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -809,7 +809,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
@@ -1065,7 +1065,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, [vea Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1135,10 +1135,10 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.17"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.17"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frecuencia, en hercios, en el extremo bajo del intervalo de frecuencia de entrada 1 de la fuente de alimentación. Un valor de 0 (cero) implica DC.
+Frecuencia, en hercios, en el extremo bajo del intervalo de frecuencia de entrada de la fuente de alimentación 1. Un valor de 0 (cero) implica DC.
 
 Esta propiedad se hereda de [**CIM \_ PowerSupply.**](cim-powersupply.md)
 
@@ -1153,10 +1153,10 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Range1InputVoltageHigh"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milivolts")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Range1InputVoltageHigh"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("millivolts")
 </dt> </dl>
 
-Si el voltaje, en milvoltios, se eleva por encima del valor especificado por la propiedad **Range1InputVoltageHigh,** el UPS compensará recortando el voltaje. Un valor de 0 (cero) indica que se desconoce el voltaje en el que se produce el recorte.
+Si el voltaje, en milivovoltios, se eleva por encima del valor especificado por la propiedad **Range1InputVoltageHigh,** el UPS compensará recortando el voltaje. Un valor de 0 (cero) indica que se desconoce el voltaje en el que se produce el recorte.
 
 Esta propiedad se hereda de [**CIM \_ PowerSupply.**](cim-powersupply.md)
 
@@ -1174,7 +1174,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Range1InputVoltageLow"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("millivolts")
 </dt> </dl>
 
-Si el voltaje, en milvoltios, cae por debajo del valor especificado por la propiedad **Range1InputVoltageLow,** el UPS compensará al aumentar el voltaje con sus fuentes de alimentación. Un valor de 0 indica que se desconoce el voltaje en el que se produce la potenciación.
+Si el voltaje, en milivovoltios, cae por debajo del valor especificado por la propiedad **Range1InputVoltageLow,** el UPS compensará al aumentar el voltaje mediante sus fuentes de alimentación. Un valor de 0 indica que se desconoce el voltaje en el que se produce la potenciación.
 
 Esta propiedad se hereda de [**CIM \_ PowerSupply.**](cim-powersupply.md)
 
@@ -1189,10 +1189,10 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.20"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.20"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frecuencia, en hercios, en el extremo superior del intervalo de frecuencia de entrada 2 de la fuente de alimentación. Un valor de 0 (cero) implica DC.
+Frecuencia, en hercios, en el extremo superior del intervalo de frecuencia de entrada de la fuente de alimentación 2. Un valor de 0 (cero) implica DC.
 
 Esta propiedad se hereda de [**CIM \_ PowerSupply.**](cim-powersupply.md)
 
@@ -1207,10 +1207,10 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.19"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.19"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frecuencia, en hercios, en el extremo bajo del intervalo de frecuencia de entrada 2 de la fuente de alimentación. Un valor de 0 implica DC.
+Frecuencia, en hercios, en el extremo bajo del intervalo de frecuencia de entrada de la fuente de alimentación 2. Un valor de 0 implica DC.
 
 Esta propiedad se hereda de [**CIM \_ PowerSupply.**](cim-powersupply.md)
 
@@ -1228,7 +1228,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Range2InputVoltageHigh"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milivots")
 </dt> </dl>
 
-Si el voltaje, en milvoltios, se eleva por encima del valor especificado por la propiedad **Range2InputVoltageHigh,** el UPS compensará recortando el voltaje. Un valor de 0 (cero) indica que se desconoce el voltaje en el que se produce el recorte.
+Si el voltaje, en milivovoltios, se eleva por encima del valor especificado por la propiedad **Range2InputVoltageHigh,** el UPS compensará recortando el voltaje. Un valor de 0 (cero) indica que se desconoce el voltaje en el que se produce el recorte.
 
 Esta propiedad se hereda de [**CIM \_ PowerSupply.**](cim-powersupply.md)
 
@@ -1243,10 +1243,10 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Range2InputVoltageLow"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milivolts")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Range2InputVoltageLow"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milivots")
 </dt> </dl>
 
-Si el voltaje, en milvoltios, cae por debajo del valor especificado por la propiedad **Range2InputVoltageLow,** el UPS compensará al aumentar el voltaje mediante sus fuentes de alimentación. Un valor de 0 (cero) indica que se desconoce el voltaje en el que se produce la potenciación.
+Si el voltaje, en milivovoltios, cae por debajo del valor especificado por la propiedad **Range2InputVoltageLow,** el UPS compensará al aumentar el voltaje mediante sus fuentes de alimentación. Un valor de 0 (cero) indica que se desconoce el voltaje en el que se produce la potenciación.
 
 Esta propiedad se hereda de [**CIM \_ PowerSupply.**](cim-powersupply.md)
 
@@ -1293,7 +1293,7 @@ Los minutos estimados restantes de tiempo de ejecución son mayores que el estad
 
 </dt> <dd>
 
-El resto de minutos estimados de tiempo de ejecución es menor o igual que el estado de bajo consumo definido del UPS.
+Los minutos estimados restantes de tiempo de ejecución son menores o iguales que el estado de bajo consumo definido del UPS.
 
 </dd> <dt>
 
@@ -1304,7 +1304,7 @@ El resto de minutos estimados de tiempo de ejecución es menor o igual que el es
 
 </dt> <dd>
 
-El UPS no podrá mantener la carga actual cuando se pierda la energía de la utilidad (incluida la posibilidad de que la energía de la utilidad esté ausente actualmente).
+El UPS no podrá mantener la carga actual cuando se pierda la potencia de la utilidad (incluida la posibilidad de que la energía de la utilidad esté ausente actualmente).
 
 </dd> </dl>
 
@@ -1351,7 +1351,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -1365,14 +1365,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -1423,12 +1423,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.3")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Estado operativo DMTF \| \| 003.3")
 </dt> </dl>
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -1478,12 +1478,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nombre de clase de creación del sistema de ámbito.
+Ámbito del nombre de la clase de creación del sistema.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1496,12 +1496,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1517,7 +1517,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| UPS Battery \| 001.2"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("seconds")
 </dt> </dl>
 
-Tiempo transcurrido, en segundos, desde que el UPS cambió por última vez a la energía de la batería, el generador u otra fuente de alimentación. O bien, el tiempo desde que se reinició por última vez el UPS, lo que sea menor. Si el UPS está en línea, se devolverá 0 (cero).
+Tiempo transcurrido, en segundos, desde que el UPS cambió por última vez a la energía de la batería, el generador u otra fuente de alimentación. O bien, el tiempo desde que se reinició el UPS por última vez, lo que sea menor. Si el UPS está en línea, se devolverá 0 (cero).
 
 </dd> <dt>
 
@@ -1601,19 +1601,19 @@ Esta propiedad se hereda de [**CIM \_ PowerSupply.**](cim-powersupply.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase CIM \_ UninterruptiblePowerSupply** se deriva de [**CIM \_ PowerSupply.**](cim-powersupply.md)
+La **clase CIM \_ UninterruptiblePowerSupply** se deriva de [**CIM \_ PowerSupply**](cim-powersupply.md).
 
-WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ UninterruptiblePowerSupply**, vea [Clases win32.](win32-provider.md)
+WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ UninterruptiblePowerSupply**, vea [Clases win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

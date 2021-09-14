@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 21d06fc3be6da5032fc68a90d6518ae92cdff7e8d8268d85d47df8f9ab027790
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 87ebb646a4746b86343772ff7fa509a2b99f0965
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119040363"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966087"
 ---
 # <a name="esentntsystemcallfailedexception-class"></a>Clase EsentNTSystemCallFailedException
 
-Clase base para JET_err. Excepciones NTSystemCallFailed.
+Clase base para JET_err. EXCEPCIONES NTSystemCallFailed.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -47,7 +47,7 @@ Clase base para JET_err. Excepciones NTSystemCallFailed.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -67,7 +67,7 @@ public sealed class EsentNTSystemCallFailedException : EsentOperationException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c9b97e7c55c03dc2fe0e899f9878310eebbf395e3ff15631cea6db8c98546e3a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 098652c6ea0a53f9d3b1f616def3dd8b5e7228af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174054"
 ---
 # <a name="setpmtubhdetect-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetPMTUBHDetect de la clase \_ NetworkAdapterConfiguration de Win32
 
@@ -321,11 +321,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -404,7 +404,7 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un enrutador black hole no devuelve los mensajes de destino icmp (Protocolo de mensajes de control de Internet) inaccesibles cuando necesita fragmentar un datagrama IP con el conjunto de bits No fragmentar. TCP depende de la recepción de estos mensajes para realizar la detección de MTU de ruta de acceso.
 

@@ -1,6 +1,6 @@
 ---
 title: CD3DX12_PIPELINE_STATE_STREAM_PARSE_HELPER estructura (D3dx12.h)
-description: Compila un objeto INTERNO CD3DX12 PIPELINE STATE STREAM a partir de los \_ \_ detalles del subobjeto \_ pasados a las funciones miembro correspondientes. Esta estructura implementa la interfaz ID3DX12PipelineParserCallbacks.
+description: Compila un objeto CD3DX12 PIPELINE STATE STREAM interno a partir de los detalles del subobjeto pasados \_ a las funciones miembro \_ \_ correspondientes. Esta estructura implementa la interfaz ID3DX12PipelineParserCallbacks.
 ms.assetid: 7D4FFD1D-9FA3-4482-A67B-E742611030BC
 keywords:
 - CD3DX12_PIPELINE_STATE_STREAM_PARSE_HELPER estructura
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d20c34fb2c32cc588a12ac820cd80083d3c3139fa85cbf36810379a21618e80c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44cc6228f690abd677e1adc8552293e440452ec5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119851255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969859"
 ---
-# <a name="cd3dx12_pipeline_state_stream_parse_helper-structure"></a>Estructura DEL ASISTENTE DE ANÁLISIS DE FLUJOS DE \_ \_ ESTADO DE CANALIZACIÓN \_ CD3DX12 \_ \_
+# <a name="cd3dx12_pipeline_state_stream_parse_helper-structure"></a>Estructura DEL ASISTENTE DE ANÁLISIS DE \_ FLUJOS DE ESTADO DE \_ \_ CANALIZACIÓN \_ \_ CD3DX12
 
-Compila un objeto INTERNO CD3DX12 PIPELINE STATE STREAM a partir de los \_ \_ detalles del subobjeto \_ pasados a las funciones miembro correspondientes. Esta estructura implementa la interfaz [**ID3DX12PipelineParserCallbacks.**](id3dx12pipelineparsercallbacks.md)
+Compila un objeto CD3DX12 PIPELINE STATE STREAM interno a partir de los detalles del subobjeto pasados \_ a las funciones miembro \_ \_ correspondientes. Esta estructura implementa la interfaz [**ID3DX12PipelineParserCallbacks.**](id3dx12pipelineparsercallbacks.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,14 +63,14 @@ struct CD3DX12_PIPELINE_STATE_STREAM_PARSE_HELPER  : public ID3DX12PipelineParse
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **PipelineStream**
 </dt> <dd>
 
-[**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM1 interno.**](cd3dx12-pipeline-state-stream1.md) Su estado actual representa el efecto acumulativo de los métodos de devolución de llamada a los que se ha llamado en este objeto.
+EL FLUJO DE ESTADO DE [**CANALIZACIÓN CD3DX12 \_ \_ \_ interno1**](cd3dx12-pipeline-state-stream1.md). Su estado actual representa el efecto acumulativo de los métodos de devolución de llamada a los que se ha llamado en este objeto.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Inicializa el miembro **Flags** de **PipelineStream** con el valor del *parámet
 **NodeMaskCb(UINT NodeMask)**
 </dt> <dd>
 
-Inicializa el miembro **NodeMask** de **PipelineStream** con el valor del *parámetro Nodemask.*
+Inicializa el miembro **NodeMask** de **PipelineStream** con el valor del parámetro *Nodemask.*
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Inicializa el **miembro InputLayout** de **PipelineStream** con el valor del *pa
 **IBStripCutValueCb(D3D12 \_ INDEX \_ BUFFER \_ STRIP \_ CUT \_ VALUE IBStripCutValue)**
 </dt> <dd>
 
-Inicializa el miembro **IBStripCutValue** de **PipelineStream** con el valor del *parámetro IBStripCutValue.*
+Inicializa el **miembro IBStripCutValue** de **PipelineStream** mediante el valor del *parámetro IBStripCutValue.*
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Inicializa el **miembro PrimitiveTopologyType** de **PipelineStream** con el val
 **VSCb(const D3D12 \_ SHADER \_ BYTECODE& VS)**
 </dt> <dd>
 
-Inicializa el miembro **vs** (sombreador de vértices) de **PipelineStream** con el valor del parámetro *vs.*
+Inicializa el miembro **vs** (sombreador de vértices) de **PipelineStream** con el valor del parámetro *de VS.*
 
 </dd> <dt>
 
@@ -133,14 +133,14 @@ Inicializa el miembro **GS** (sombreador de geometría) de **PipelineStream** co
 **StreamOutputCb(const D3D12 \_ STREAM \_ OUTPUT \_ DESC& StreamOutput)**
 </dt> <dd>
 
-Inicializa el **miembro StreamOutput** de **PipelineStream** con el valor del *parámetro StreamOutput.*
+Inicializa el miembro **StreamOutput** de **PipelineStream** con el valor del *parámetro StreamOutput.*
 
 </dd> <dt>
 
 **HSCb(const D3D12 \_ SHADER \_ BYTECODE& HS)**
 </dt> <dd>
 
-Inicializa el miembro **HS** (sombreador de casco) de **PipelineStream** con el valor del *parámetro HS.*
+Inicializa el miembro **HS** (sombreador de casco) de **PipelineStream** con el valor *del parámetro HS.*
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Inicializa el miembro **CS** de **PipelineStream** con el valor del *parámetro 
 **BlendStateCb(const D3D12 \_ BLEND \_ DESC& BlendState)**
 </dt> <dd>
 
-Inicializa el **miembro BlendState** de **PipelineStream** con el valor del *parámetro BlendState.*
+Inicializa el miembro **BlendState** de **PipelineStream** con el valor del *parámetro BlendState.*
 
 </dd> <dt>
 
@@ -189,7 +189,7 @@ Inicializa el **miembro DepthStencilState** de **PipelineStream** con el valor d
 **DSVFormatCb(DXGI \_ FORMAT DSVFormat)**
 </dt> <dd>
 
-Inicializa el **miembro DSVFormat** de **PipelineStream** con el valor del *parámetro DSVFormat.*
+Inicializa el miembro **DSVFormat** de **PipelineStream** con el valor del *parámetro DSVFormat.*
 
 </dd> <dt>
 
@@ -224,7 +224,7 @@ Inicializa el miembro **SampleMask** de **PipelineStream** con el valor del *par
 **ViewInstancingCb(const D3D12 \_ VIEW \_ INSTANCING \_ DESC& ViewInstancingDesc)**
 </dt> <dd>
 
-Inicializa el **miembro ViewInstancingDesc** de **PipelineStream** con el valor *del parámetro ViewInstancingDesc.*
+Inicializa el **miembro ViewInstancingDesc** de **PipelineStream** con el valor del *parámetro ViewInstancingDesc.*
 
 </dd> <dt>
 
@@ -256,9 +256,9 @@ No hace nada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se pasa como segundo parámetro a la función [**D3DX12ParsePipelineStream,**](d3dx12parsepipelinestream.md) los detalles del objeto [**INTERNO CD3DX12 \_ PIPELINE STATE \_ \_ STREAM1**](cd3dx12-pipeline-state-stream1.md) se clonan a partir del [**D3D12 \_ PIPELINE STATE STREAM \_ \_ \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_pipeline_state_stream_desc) pasado como primer parámetro. Este proceso valida la descripción del flujo de origen. Si D3DX12ParsePipelineStream devuelve **S \_ OK**, la descripción del flujo de origen y el **CD3DX12 \_ PIPELINE STATE \_ \_ STREAM1PipelineStream** resultante son válidos; de lo contrario, ambos no son válidos. Las secuencias no válidas y otros errores solo se notifican a través del valor devuelto de D3DX12ParsePipelineStream; esta estructura implementa las devoluciones de llamada de error para no hacer nada.
+Cuando se pasa como segundo parámetro a la función [**D3DX12ParsePipelineStream,**](d3dx12parsepipelinestream.md) los detalles del objeto [**INTERNO CD3DX12 \_ PIPELINE STATE \_ \_ STREAM1**](cd3dx12-pipeline-state-stream1.md) se clonan a partir del [**\_ \_ \_ \_ DESC PIPELINE STATE STREAM de D3D12 que**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_pipeline_state_stream_desc) se pasa como primer parámetro. Este proceso valida la descripción del flujo de origen. Si D3DX12ParsePipelineStream devuelve **S \_ OK**, la descripción de la secuencia de origen y el **CD3DX12 \_ PIPELINE STATE \_ \_ STREAM1PipelineStream** resultante son válidos; de lo contrario, ambos no son válidos. Los flujos no válidos y otros errores solo se notifican a través del valor devuelto de D3DX12ParsePipelineStream; Esta estructura implementa las devoluciones de llamada de error para no hacer nada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -270,7 +270,7 @@ Cuando se pasa como segundo parámetro a la función [**D3DX12ParsePipelineStrea
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

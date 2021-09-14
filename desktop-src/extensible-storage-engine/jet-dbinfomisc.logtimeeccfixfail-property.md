@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 736e1de35417751875a1c6266bd12e0ab60b1809771c428703b529b8b213b03b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de1f73089c2dbb6fed60e45985b70975cbdcb9ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118254886"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969140"
 ---
 # <a name="jet_dbinfomisclogtimeeccfixfail-property"></a>JET_DBINFOMISC.logtimeECCFixFail, propiedad
 
@@ -40,7 +40,7 @@ Obtiene la última vez que se encontró un error de un bit incorregible.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

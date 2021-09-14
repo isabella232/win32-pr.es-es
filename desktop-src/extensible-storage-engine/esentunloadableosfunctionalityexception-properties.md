@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103160
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: bfeb22b76cc437fb7f8b2115d0d4d558d8359ac3b11bc22e075c29b07a29a401
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6710c310d6cf8807fc8ecea0926de49d259a34fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172429"
 ---
 # <a name="esentunloadableosfunctionalityexception-properties"></a>Propiedades de EsentUnloadableOSFunctionalityException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentUnloadableOSFunctionalityException](./esentunloadableosfunctionalityexception-class.md) expone los siguientes miembros.
+El [tipo EsentUnloadableOSFunctionalityException](./esentunloadableosfunctionalityexception-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -34,7 +34,7 @@ El [tipo EsentUnloadableOSFunctionalityException](./esentunloadableosfunctionali
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

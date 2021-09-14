@@ -5,11 +5,11 @@ ms.assetid: b329de53-646b-42a2-afa3-06473c3483d6
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0d0ce1b2280faaed7be3b5afb25a48438ff1a2b7
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369520"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249260"
 ---
 # <a name="locating-a-remote-object"></a>Buscar un objeto remoto
 

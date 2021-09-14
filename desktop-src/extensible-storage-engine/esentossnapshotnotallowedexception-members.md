@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102430
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 457ddce2f502bbed9990c427b646465cd041ed418f56a9d2ed0d92b97530f7c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89aa41f3a3bd1da13eabce2962d19a73001946cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118263258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258335"
 ---
 # <a name="esentossnapshotnotallowedexception-members"></a>Miembros de EsentOSSnapshotNotAllowedException
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 69dae4ca2a7f7a9e3b2f77047475c5dd35f54a3394b4481c2f452a46e983c35e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 57c83bc3e9535550086c9732b33a71a357e4da42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119744275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069343"
 ---
 # <a name="expertmemorysize-function"></a>Función ExpertMemorySize
 
@@ -43,7 +43,7 @@ SIZE_T WINAPI ExpertMemorySize(
 *hExpertKey* \[ En\]
 </dt> <dd>
 
-Identificador único de experto. Monitor de red pasa *hExpertKey* al experto cuando llama a la [función Run.](run.md)
+Identificador experto único. Monitor de red pasa *hE expert al* experto cuando llama a la [función Run.](run.md)
 
 </dd> <dt>
 
@@ -58,9 +58,9 @@ Puntero a la dirección de memoria del experto asignado por [ExpertAllocMemory](
 
 La función devuelve la cantidad de memoria asignada en bytes.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para obtener información sobre el **tipo de datos SIZE \_ T** que **devuelve ExpertMemorySize,** vea Tipos de datos.
+Para obtener información sobre el tipo de **\_ datos SIZE T** que **devuelve ExpertMemorySize,** vea Tipos de datos.
 
 ## <a name="requirements"></a>Requisitos
 

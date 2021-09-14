@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 430f50af6eeb90e1530d0bbdbe43fccad4e47ebf0aa47ea4b39ffbeca52bf3de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4306f357dafa2872a2a3728255a7912c33e4bf94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117899745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963147"
 ---
 # <a name="esentloggingdisabledexception-constructor"></a>Constructor EsentLoggingDisabledException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLoggingDisabledException()
 public EsentLoggingDisabledException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

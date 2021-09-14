@@ -4,12 +4,12 @@ ms.assetid: d1d3beba-678c-48fd-ad12-45e0418e1236
 title: MFPKEY_WMAAECMA_DMO_SOURCE_MODE propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ec9dd01be5a020047410362b2fdfc27fd8d703a393e3ae2f557b1dd3a42bf80
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec5749ff1f142603cc45df475caae7bc71182bde
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119555305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257511"
 ---
 # <a name="mfpkey_wmaaecma_dmo_source_mode-property"></a>Propiedad MFPKEY \_ WMAAECMA \_ DMO \_ SOURCE \_ MODE
 
@@ -31,7 +31,7 @@ VARIANT \_ TRUE
 
 -   [DSP de captura de voz](voicecapturedmo.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En el modo de origen, la aplicación no necesita enviar datos de entrada al DSP, ya que este extrae automáticamente los datos de los dispositivos de audio. En el modo de filtro, la aplicación debe enviar los datos de entrada al DSP.
 
@@ -49,7 +49,7 @@ Esta propiedad puede tener los siguientes valores.
  
 
 > [!Note]  
-> Cuando el DMO está en modo de origen, solo debe llamar a [**IMediaObject::SetOutputType para**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-setoutputtype) establecer el formato del flujo de salida y no llamar a [**IMediaObject::SetInputType para**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-setinputtype) establecer los formatos de flujo de entrada. De lo DMO se producirá un error en la inicialización.
+> Cuando el DMO está en modo de origen, solo debe llamar a [**IMediaObject::SetOutputType para**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-setoutputtype) establecer el formato del flujo de salida y no llamar a [**IMediaObject::SetInputType para**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-setinputtype) establecer formatos de flujo de entrada. De lo DMO se producirá un error en la inicialización.
 
  
 
@@ -60,7 +60,7 @@ Si el valor de esta propiedad es VARIANT \_ TRUE, el DSP tiene cero entradas. Si
 | Value                     | Número de entradas |
 |---------------------------|------------------|
 | OPTIBEAM \_ ARRAY \_ Y \_ AEC | 2                |
-| OPTIBEAM ARRAY ONLY (SOLO \_ MATRIZ DE OPTIBEAM) \_     | 1                |
+| OPTIBEAM \_ ARRAY \_ ONLY     | 1                |
 | AEC \_ \_ DE CANAL ÚNICO      | 2                |
 | \_ \_ NSAGC DE CANAL ÚNICO    | 1                |
 
@@ -77,15 +77,15 @@ Si el valor de esta propiedad es VARIANT \_ TRUE, el DSP tiene cero entradas. Si
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

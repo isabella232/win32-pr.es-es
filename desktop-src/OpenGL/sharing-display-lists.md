@@ -7,12 +7,12 @@ keywords:
 - compartir listas de visualización OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 934789f3de00e6e0be451fc441416dfcbaa057b0b58b224fc57021db31575e71
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 87d8d012e8e04455f76ca5d7bfe74229ac0b0ac8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069269"
 ---
 # <a name="sharing-display-lists"></a>Compartir listas de visualización
 

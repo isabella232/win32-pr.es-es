@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 89fb9e5872555c6bd16f8ffa75711b974ae566f1b0fd8f9652c3eec2435ca7c1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 61ac6bc827c5fe96def43bc6d1ffa68f139a90c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120093445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969075"
 ---
 # <a name="jet_recsizecnontaggedcolumns-property"></a>JET_RECSIZE.cNonTaggedColumns, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el número total de columnas fijas y variables establecidas en este regi
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

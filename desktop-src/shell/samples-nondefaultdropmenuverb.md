@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 1c4623b9143e0a23762cfc44dd8dfc4f46b827a0f6433098d45d8a784ead81f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d326e012fb78b04fd542f88d49c370e8aeab613
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118968794"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248031"
 ---
 # <a name="nondefaultdropmenuverb-sample"></a>Ejemplo de NonDefaultDropMenuVerb
 
@@ -34,7 +34,7 @@ En este tema se incluyen las siguientes secciones.
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
-| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
 
 
 
@@ -42,7 +42,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
+| Location      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo NonDefaultDropMenuVerb](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/NonDefaultDropMenuVerb) |
 
@@ -61,7 +61,7 @@ Para compilar el ejemplo mediante Microsoft Visual Studio (opción preferida):
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-1.  Vaya al directorio que contiene el nuevo archivo DLL, mediante el símbolo del sistema o Windows Explorador.
+1.  Vaya al directorio que contiene el nuevo archivo DLL, mediante el símbolo del sistema o Windows Explorer.
 2.  Copie NonDefaultDropMenuVerb.dll en el directorio System (por ejemplo, C: \\ Windows \\ System32).
 3.  En un símbolo del sistema, escriba `regedit NonDefaultDropMenuVerb.reg` .
 4.  Use el botón derecho del mouse para arrastrar un archivo de una carpeta a otra. Verá elementos de menú adicionales para la operación de colocación.

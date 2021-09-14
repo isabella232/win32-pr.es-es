@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fa9d9103b317482e3fbd2cf1187775335f551a224f111f1b9e4d8c149f70a39b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a581293426c421de0dd76636a9f446f245f6ab32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118421646"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970304"
 ---
 # <a name="cim_productphysicalelements-class"></a>\_Cim ProductPhysicalElements (clase)
 
@@ -32,7 +32,7 @@ La **clase \_ ProductPhysicalElements de CIM** representa los elementos físicos
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ class CIM_ProductPhysicalElements
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ProductPhysicalElements de CIM** tiene estos tipos de miembros:
 
@@ -73,20 +73,20 @@ Referencia al elemento físico que forma parte del producto.
 **Producto**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Producto \_ CIM**
+Tipo de datos: **Producto CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Agregado,**](/windows/desktop/WmiSdk/standard-qualifiers) [**Máximo**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Referencia al producto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
@@ -96,7 +96,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

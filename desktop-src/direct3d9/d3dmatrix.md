@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: ee4c67a4a743d3bff1cfc5ca88b6691e995f78a9fb01fe36aabc4ae6aca66e6c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b4339d2e44e1add46103bae58ad3e02c8a6509b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117732370"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970992"
 ---
 # <a name="d3dmatrix"></a>D3DMATRIX
 
@@ -41,7 +41,7 @@ typedef struct _D3DMATRIX {
 
 Tipos derivados: \* LPD3DMATRIX
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 
 
@@ -53,7 +53,7 @@ Tipos derivados: \* LPD3DMATRIX
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En Direct3D, el \_ elemento 34 de una matriz de proyección no puede ser un número negativo. Si la aplicación necesita usar un valor negativo en esta ubicación, debe escalar toda la matriz de proyección en -1 en su lugar.
 
@@ -67,7 +67,7 @@ En Direct3D, el \_ elemento 34 de una matriz de proyección no puede ser un núm
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

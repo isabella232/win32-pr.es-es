@@ -1,11 +1,11 @@
 ---
-title: Win32_RDCentralPublishedRemoteApplication (clase)
-description: Describe una aplicación publicada en otro equipo, para su uso remoto a través de Terminal Services.
+title: Win32_RDCentralPublishedRemoteApplication clase
+description: Describe una aplicación publicada en otro equipo para su uso remoto a través de Terminal Services.
 ms.assetid: 8605bd1e-e825-4fd9-b14f-9d3bdac489f1
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDCentralPublishedRemoteApplication clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDCentralPublishedRemoteApplication de clase, se describe
+- Win32_RDCentralPublishedRemoteApplication clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -34,15 +34,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: dd837f62d8d0787d992e8eed7316ed1ef3f199ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996256"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249746"
 ---
-# <a name="win32_rdcentralpublishedremoteapplication-class"></a>\_Clase Win32 RDCentralPublishedRemoteApplication
+# <a name="win32_rdcentralpublishedremoteapplication-class"></a>Clase \_ RdCentralPublishedRemoteApplication de Win32
 
-Describe una aplicación publicada en otro equipo, para su uso remoto a través de Terminal Services.
+Describe una aplicación publicada en otro equipo para su uso remoto a través de Terminal Services.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -72,7 +72,7 @@ class Win32_RDCentralPublishedRemoteApplication : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ RDCentralPublishedRemoteApplication de Win32** tiene estos tipos de miembros:
 
@@ -90,10 +90,10 @@ La **clase \_ RDCentralPublishedRemoteApplication de Win32** tiene estas propied
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Alias de la aplicación.
@@ -106,10 +106,10 @@ Alias de la aplicación.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-AppID se usa para el anclaje en los clientes.
+AppID se usa para anclar en los clientes.
 
 </dd> <dt>
 
@@ -127,20 +127,20 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CommandLineSetting**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si se requieren argumentos de línea de comandos para esta aplicación.
+Si se requieren argumentos de línea de comandos para esta aplicación.
 
 <dt>
 
@@ -182,30 +182,30 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Carpetas**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Lista de las carpetas en las que se debe mostrar este recurso.
+Lista de las carpetas donde se debe mostrar este recurso.
 
 </dd> <dt>
 
-**IconContents**
+**IconoContents**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
@@ -218,18 +218,18 @@ Contenido del icono correspondiente a la aplicación.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -244,17 +244,17 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Ruta de acceso**
+**Path**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Ruta de acceso a la aplicación
@@ -267,10 +267,10 @@ Ruta de acceso a la aplicación
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Alias de la granja que publicó la aplicación
@@ -296,7 +296,7 @@ Contenido del archivo RDP correspondiente a la aplicación.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Argumentos de línea de comandos necesarios para esta aplicación.
@@ -309,13 +309,13 @@ Argumentos de línea de comandos necesarios para esta aplicación.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Descriptor de seguridad que controla el acceso a la aplicación, en formato SDDL. Una cadena vacía implica permitir todo acceso.
+Descriptor de seguridad que controla el acceso a la aplicación, en formato SDDL. Una cadena vacía implica permitir todo el acceso.
 
 </dd> <dt>
 
@@ -325,10 +325,10 @@ Descriptor de seguridad que controla el acceso a la aplicación, en formato SDDL
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-**true** si esta aplicación debe mostrarse en el acceso web de TS; en caso contrario, **false**.
+**true** si esta aplicación debe mostrarse en TS Web Access; de lo contrario, **false**.
 
 </dd> <dt>
 
@@ -344,15 +344,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -380,21 +380,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -414,7 +414,7 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Ruta de acceso virtual a la aplicación.
@@ -429,8 +429,8 @@ Ruta de acceso virtual a la aplicación.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ cimv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>Tscpub. mof</dt> </dl>    |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>Tscpub.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 
 

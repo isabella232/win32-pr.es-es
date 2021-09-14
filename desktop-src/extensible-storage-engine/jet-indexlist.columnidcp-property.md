@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INDEXLIST. columnidCp'
-title: Propiedad JET_INDEXLIST. columnidCp
+description: 'Más información sobre: JET_INDEXLIST.columnidCp'
+title: JET_INDEXLIST.columnidCp, propiedad
 TOCTitle: 'columnidCp property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXLIST.columnidCp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexlist.columnidcp(v=EXCHG.10)
@@ -27,18 +27,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 80afdce5014edf1678807afd40beff613ca9e4ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277894"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969127"
 ---
-# <a name="jet_indexlistcolumnidcp-property"></a>Propiedad JET_INDEXLIST. columnidCp
+# <a name="jet_indexlistcolumnidcp-property"></a>JET_INDEXLIST.columnidCp, propiedad
 
-Obtiene el columnid de la columna de la tabla temporal que almacena la página de códigos de la columna indizada. La columna es de tipo [Short](./jet-coltyp-enumeration.md).
+Obtiene el columnid de la columna de la tabla temporal que almacena la página de códigos de la columna indizada. La columna es de tipo [Short.](./jet-coltyp-enumeration.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,14 +60,14 @@ public JET_COLUMNID columnidCp { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXLIST (clase)](./jet-indexlist-class.md)
+[JET_INDEXLIST clase](./jet-indexlist-class.md)
 
-[Miembros de JET_INDEXLIST](./jet-indexlist-members.md)
+[JET_INDEXLIST miembros](./jet-indexlist-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

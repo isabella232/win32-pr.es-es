@@ -4,12 +4,12 @@ ms.assetid: 424751cd-65d2-4cab-9f7b-cad50c09c767
 title: Propiedad AVEncMPVGOPOpen (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6be085bde5588fecd5a2274d442f38d4198702475f3ed13c7bb3a5569687375
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6dd971a6cc9926245b97794868f58758af814803
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119540905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161839"
 ---
 # <a name="avencmpvgopopen-property"></a>AVEncMPVGOPOpen, propiedad
 
@@ -29,7 +29,7 @@ Esta propiedad es de lectura y escritura.
 
 
 
-| Valor          | Descripción |
+| Value          | Descripción |
 |----------------|-------------|
 | VARIANT \_ FALSE | GOP cerrados |
 | VARIANT \_ TRUE  | Abrir GOP   |
@@ -38,7 +38,7 @@ Esta propiedad es de lectura y escritura.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un GOP abierto contiene marcos delta que hacen referencia a fotogramas del GOP anterior. Un GOP cerrado no contiene ningún marco delta que haga referencia al GOP anterior.
 
@@ -46,15 +46,15 @@ Un GOP abierto contiene marcos delta que hacen referencia a fotogramas del GOP a
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

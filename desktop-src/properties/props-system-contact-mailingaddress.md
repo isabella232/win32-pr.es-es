@@ -4,12 +4,12 @@ ms.assetid: ac8890e3-6ffe-418e-a172-1de63f9928ca
 title: System.Contact.MailingAddress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbcf1f9e6e6b1b322ebd6f6cb81e259c4039ec539060112a7e53ec1abfbafde8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5233c9a37b99670da1870d5d795e5307fbe83578
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120091675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248307"
 ---
 # <a name="systemcontactmailingaddress"></a>System.Contact.MailingAddress
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

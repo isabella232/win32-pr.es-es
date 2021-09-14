@@ -1,9 +1,9 @@
 ---
-title: 'StructuredBuffer:: Getdimensions ((función)'
-description: 'Obtiene las dimensiones de recursos. | StructuredBuffer:: Getdimensions ((función)'
+title: StructuredBuffer::GetDimensions (Función)
+description: Obtiene las dimensiones de recursos. | StructuredBuffer::GetDimensions (Función)
 ms.assetid: 423ea79c-4440-4837-b637-95180a1d5019
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,13 +14,13 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 2b3d7c879c77386ddee80a63053711b8ae34ee8c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362191"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963536"
 ---
-# <a name="structuredbuffergetdimensions-function"></a>StructuredBuffer:: Getdimensions ((función)
+# <a name="structuredbuffergetdimensions-function"></a>StructuredBuffer::GetDimensions (Función)
 
 Obtiene las dimensiones de recursos.
 
@@ -37,21 +37,21 @@ void GetDimensions(
 
 <dl> <dt>
 
-*numStructs* \[ enuncia\]
+*numStructs* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-El número de estructuras en el recurso.
+Número de estructuras del recurso.
 
 </dd> <dt>
 
-*STRIDE* \[ enuncia\]
+*stride* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Intervalo, en bytes, de cada elemento de la estructura.
+El paso, en bytes, de cada elemento de estructura.
 
 </dd> </dl>
 
@@ -61,11 +61,11 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -73,7 +73,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

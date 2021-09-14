@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9d8e000d64ef92212cd7c6cf37c7fd79036107e1d3be0d7669d73b40c759de3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c34d24e86118a1cca0939d535b6da6e86c2df34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055183"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889980"
 ---
 # <a name="ambientattributesenabled"></a>AmbientAttributes.enabled
 
@@ -29,11 +29,11 @@ El **atributo enabled** especifica o recupera un valor que indica si el control 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un booleano de lectura **y escritura.**
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción               |
+| Value | Descripción               |
 |-------|---------------------------|
 | true  | Predeterminada. Control habilitado. |
 | false | Control deshabilitado.         |
@@ -42,9 +42,9 @@ Este atributo es un booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el control está habilitado, puede tener una tabulación y recibirá todos los eventos de ambiente. Cuando está deshabilitado, el control no tiene un tabulador y no recibe ningún evento de mouse ambiente o teclado que se haya desencadenado en él. (Sin embargo, seguirá recibiendo todos los demás eventos de ambiente que se desencadenan en él).
+Si el control está habilitado, puede tener una tabulación de detenerse y recibirá todos los eventos ambientales. Cuando se deshabilita, el control no tiene una tabulación de detenerse y no recibe ningún evento ambiente del mouse o del teclado que se haya desencadenado en él. (Sin embargo, seguirá recibiendo todos los demás eventos de ambiente que se desencadenan en él).
 
 Este atributo no se admite para el **elemento SUBVIEW.**
 
@@ -58,7 +58,7 @@ Este atributo no se admite para el **elemento SUBVIEW.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

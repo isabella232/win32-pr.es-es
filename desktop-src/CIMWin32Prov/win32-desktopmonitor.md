@@ -1,5 +1,5 @@
 ---
-description: Representa el tipo de monitor o dispositivo de visualización conectado al sistema informático.
+description: Representa el tipo de dispositivo de supervisión o visualización conectado al sistema informático.
 ms.assetid: 922be3c1-3c7b-4418-a72f-ab5ada91a7a4
 ms.tgt_platform: multiple
 title: Win32_DesktopMonitor clase
@@ -44,18 +44,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1c4f0c108c397668dce915f5d5993881e66c3524025ef0545c40e00ed2563d78
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ccf986957d73dd93837b0ab7a1e10b50aec5e8f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970231"
 ---
 # <a name="win32_desktopmonitor-class"></a>Clase DesktopMonitor de Win32 \_
 
-La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Win32 \_ DesktopMonitor** representa el tipo de dispositivo de monitor o pantalla conectado al sistema informático.
+La **clase WMI \_ DesktopMonitor** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa el tipo de dispositivo de supervisión o visualización conectado al sistema informático.
 
-El hardware que no es compatible con Windows Display Driver Model (WDDM) devuelve valores de propiedad inexactos para instancias de esta clase.
+El hardware que no es compatible con Windows Display Driver Model (WDDM) devuelve valores de propiedad inexactos para las instancias de esta clase.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -96,7 +96,7 @@ class Win32_DesktopMonitor : CIM_DesktopMonitor
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ DesktopMonitor de Win32** tiene estos tipos de miembros:
 
@@ -120,7 +120,7 @@ La **clase \_ DesktopMonitor de Win32** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ DesktopMonitor de Win32** tiene estas propiedades.
+La **clase Win32 \_ DesktopMonitor** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -133,12 +133,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. \|HOST-RESOURCES-MIB.hrDeviceStatus de IETF")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -158,12 +158,12 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
 
 
 </dt> <dd>
 
-Energía completa o en ejecución
+En ejecución o con energía completa
 
 </dd> <dt>
 
@@ -225,7 +225,7 @@ Energía completa o en ejecución
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -294,7 +294,7 @@ El dispositivo está en pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
 
 
 </dt> <dd>
@@ -305,7 +305,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
 
 
 </dt> <dd>
@@ -316,12 +316,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo está silencioso.
+El dispositivo es silencioso.
 
 </dd> </dl>
 
@@ -377,7 +377,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -602,7 +602,7 @@ Es posible que el Registro esté dañado.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware. Windows quita este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si esto no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
@@ -791,7 +791,7 @@ Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](
 
 Identificador único de un monitor de escritorio.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -863,9 +863,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** ahora se borra el error **notificado en LastErrorCode.**
+Si **es TRUE,** ahora se borra el error notificado en **LastErrorCode.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -880,7 +880,7 @@ Tipo de acceso: solo lectura
 
 Cadena de forma libre que proporciona más información sobre el error registrado en **LastErrorCode** e información sobre las acciones correctivas que se pueden realizar.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -928,7 +928,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -977,7 +977,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -995,7 +995,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones de contexto de dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps)"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("píxeles por pulgada lógica")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones de contexto de dispositivo Win32API \| \| [**GetDeviceCaps"),**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("píxeles por pulgada lógica")
 </dt> </dl>
 
 Resolución a lo largo del eje X (dirección horizontal) del monitor.
@@ -1011,7 +1011,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones de contexto de dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps)"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("píxeles por pulgada lógica")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones de contexto de dispositivo Win32API \| \| [**GetDeviceCaps"),**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("píxeles por pulgada lógica")
 </dt> </dl>
 
 Resolución a lo largo del eje Y (dirección vertical) del monitor.
@@ -1032,7 +1032,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* "PNP030b"
 
@@ -1049,7 +1049,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1067,7 +1067,7 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dt> <dd>
 
-No se admiten capacidades relacionadas con energía para este dispositivo.
+Las capacidades relacionadas con la energía no se admiten para este dispositivo.
 
 </dd> <dt>
 
@@ -1129,7 +1129,7 @@ El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) 
 
 </dt> <dd>
 
-El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y la hora establecida en una fecha y hora específicas, o un intervalo, para la encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y el tiempo establecido en una fecha y hora específicas, o un intervalo, para el encendido.
 
 </dd> </dl>
 
@@ -1377,13 +1377,13 @@ Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase Win32 \_ DesktopMonitor** se deriva de [**CIM \_ DesktopMonitor**](cim-desktopmonitor.md), que deriva de [**cim \_ display**](cim-display.md). **CIM \_ La** presentación se deriva de [**CIM \_ UserDevice**](cim-userdevice.md), que deriva de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+La **clase \_ DesktopMonitor de Win32** se deriva de [**CIM \_ DesktopMonitor**](cim-desktopmonitor.md), que deriva de [**CIM \_ Display**](cim-display.md). **CIM \_ La** presentación se deriva de [**CIM \_ UserDevice**](cim-userdevice.md), que deriva de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo [ps Create a Computer Configuration Drawing using Visio](https://Gallery.TechNet.Microsoft.Com/84e2c31a-e644-4f79-83cd-e2b1a0ef8557) PowerShell (Crear un dibujo de configuración de equipo con Visio PowerShell) en la Galería de TechNet usa **Win32 \_ DesktopMonitor** para interactuar con el modelo de automatización de Visio para crear un dibujo Visio.
+En el ejemplo de PowerShell Para crear un equipo mediante un ejemplo de PowerShell en la Galería de TechNet se usa **Win32 \_ DesktopMonitor** para interactuar con el modelo de automatización de Visio para crear un dibujo Visio. [Visio](https://Gallery.TechNet.Microsoft.Com/84e2c31a-e644-4f79-83cd-e2b1a0ef8557)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1399,7 +1399,7 @@ El ejemplo [ps Create a Computer Configuration Drawing using Visio](https://Gall
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

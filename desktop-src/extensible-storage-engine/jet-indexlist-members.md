@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103660
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b4ced7a9ffe60d2d8ce16c0e78574e96475f00ec5b6877a6bfea04ef2bd142e6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d7800ef911366bad40b2d02ee60e23b5d138d30c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120017225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962987"
 ---
 # <a name="jet_indexlist-members"></a>JET_INDEXLIST miembros
 
@@ -181,7 +181,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335165(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el objeto <a href="dn335123(v=exchg.10).md">JET_INDEXLIST</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335123(v=exchg.10).md">JET_INDEXLIST</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -189,7 +189,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

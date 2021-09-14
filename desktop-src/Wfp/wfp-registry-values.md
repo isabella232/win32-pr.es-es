@@ -4,12 +4,12 @@ ms.assetid: d4da7f24-1e5d-4ea2-98e8-049e7eaefae1
 title: Valores del Registro WFP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a363a462e32d797b2032d222d6c6195a65493481668620401bc31daa3eb53fb6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31cb8db23800ebbead68f34eaf0fa9fffd772f01
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249464"
 ---
 # <a name="wfp-registry-values"></a>Valores del Registro WFP
 

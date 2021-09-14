@@ -7,12 +7,12 @@ keywords:
 - Códigos de error de Win32 para ADSI 2.0 ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea81b4d277ad43cb2278d23549e370df1d11b3058be1e9c8b0f8b9329eabe26e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7e079fa6a98df28625f6307f774ce194712a52a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119589755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970356"
 ---
 # <a name="win32-error-codes-for-adsi-20"></a>Códigos de error de Win32 para ADSI 2.0
 
@@ -46,28 +46,28 @@ En la tabla siguiente se enumeran los mensajes de error LDAP para ADSI 2.0.
 | 0X8007006E       | **ERROR \_ DE OPERACIONES LDAP \_**            | **ERROR \_ AL ABRIR \_ ERROR**              | Error de operación.                            |
 | 0x8007007A       | **RESULTADOS \_ LDAP \_ DEMASIADO \_ GRANDES**          | **ERROR \_ BÚFER \_ INSUFICIENTE**      | El conjunto de resultados es demasiado grande.                            |
 | 0x8007007B       | **SINTAXIS \_ LDAP NO \_ VÁLIDA**              | **ERROR \_ NOMBRE NO \_ VÁLIDO**             | Sintaxis no válida.                                    |
-| 0x8007007C       | **ERROR DEL PROTOCOLO LDAP \_ \_**              | **ERROR \_ NIVEL NO \_ VÁLIDO**            | Error de protocolo.                                      |
+| 0x8007007C       | **ERROR \_ DE PROTOCOLO \_ LDAP**              | **ERROR \_ NIVEL NO \_ VÁLIDO**            | Error de protocolo.                                      |
 | 0x800700B7       | **LDAP \_ YA \_ EXISTE**              | **EL ERROR \_ YA \_ EXISTE**           | El objeto ya existe.                               |
-| 0x800700EA       | **RESULTADOS \_ PARCIALES DE LDAP \_**             | **ERROR \_ MÁS \_ DATOS**                | Resultados parciales y referencias recibidas.              |
+| 0x800700EA       | **RESULTADOS \_ PARCIALES LDAP \_**             | **ERROR \_ MÁS \_ DATOS**                | Resultados parciales y referencias recibidas.              |
 | 0x800700EA       | **LDAP \_ OCUPADO**                         | **ERROR \_ OCUPADO**                      | El servidor está ocupado.                                      |
 | 0x800703EB       | **LDAP \_ NO ESTÁ DISPUESTO A \_ \_ REALIZAR**       | **ERROR \_ NO SE PUEDE \_ \_ COMPLETAR**        | El servidor no puede realizar la operación.                     |
-| 0x8007041D       | **TIEMPO DE ESPERA DE LDAP \_**                      | **TIEMPO DE ESPERA \_ DE SOLICITUD DEL SERVICIO DE \_ \_ ERROR** | Se ha pasado el tiempo de espera de la búsqueda.                                    |
-| 0x800704B8       | **LDAP \_ COMPARE \_ FALSE**               | **ERROR \_ EXTENDIDO \_ ERROR**           | Compare yielded **FALSE**.                           |
-| 0x800704B8       | **LDAP \_ COMPARE \_ TRUE**                | **ERROR \_ EXTENDIDO \_ ERROR**           | Compare el valor true que se **ha dado.**                            |
+| 0x8007041D       | **TIEMPO DE ESPERA DE LDAP \_**                      | **ERROR \_ SERVICE \_ REQUEST \_ TIMEOUT** | Se ha pasado el tiempo de espera de la búsqueda.                                    |
+| 0x800704B8       | **LDAP \_ COMPARE \_ FALSE**               | **ERROR \_ EXTENDIDO \_ ERROR**           | Comparar yielded **FALSE**.                           |
+| 0x800704B8       | **LDAP \_ COMPARE \_ TRUE**                | **ERROR \_ EXTENDIDO \_ ERROR**           | Comparar el valor **TRUE cedido.**                            |
 | 0x800704B8       | **REFERENCIA \_ LDAP**                     | **ERROR \_ EXTENDIDO \_ ERROR**           | No se puede resolver la referencia.                             |
 | 0x800704B8       | **EXTENSIÓN CRIT LDAP \_ NO \_ \_ DISPONIBLE** | **ERROR \_ EXTENDIDO \_ ERROR**           | La extensión crítica no está disponible.                   |
 | 0x800704B8       | **LDAP \_ NO ES UN ATRIBUTO DE ESTE \_ \_ TIPO**          | **ERROR \_ EXTENDIDO \_ ERROR**           | El atributo solicitado no existe.                  |
-| 0x800704B8       | **TIPO \_ LDAP NO \_ DEFINIDO**              | **ERROR \_ EXTENDIDO \_ ERROR**           | El tipo no está definido.                                 |
+| 0x800704B8       | **TIPO \_ LDAP \_ UNDEFINED**              | **ERROR \_ EXTENDIDO \_ ERROR**           | El tipo no está definido.                                 |
 | 0x800704B8       | **COINCIDENCIA \_ \_ INAPROPIADA DE LDAP**      | **ERROR \_ EXTENDIDO \_ ERROR**           | Hubo una coincidencia inapropiada.                 |
 | 0x800704B8       | **INFRACCIÓN \_ DE RESTRICCIÓN \_ LDAP**        | **ERROR \_ EXTENDIDO \_ ERROR**           | Hubo una infracción de restricción.                     |
-| 0x800704B8       | **ATRIBUTO \_ LDAP O VALOR \_ \_ \_ EXISTE** | **ERROR \_ EXTENDIDO \_ ERROR**           | El atributo existe o el valor se ha asignado. |
+| 0x800704B8       | **EL \_ ATRIBUTO O VALOR LDAP \_ \_ \_ EXISTE** | **ERROR \_ EXTENDIDO \_ ERROR**           | El atributo existe o el valor se ha asignado. |
 | 0x800704B8       | **PROBLEMA \_ DE ALIAS \_ LDAP**               | **ERROR \_ EXTENDIDO \_ ERROR**           | El alias no es válido.                                  |
-| 0x800704B8       | **LDAP \_ ES \_ HOJA**                     | **ERROR \_ EXTENDIDO \_ ERROR**           | El objeto es una hoja.                                    |
-| 0x800704B8       | **PROBLEMA \_ DE DEREF DE ALIAS \_ \_ LDAP**        | **ERROR \_ EXTENDIDO \_ ERROR**           | No se puede desreferenciar el alias.                        |
+| 0x800704B8       | **LDAP \_ ES \_ LEAF**                     | **ERROR \_ EXTENDIDO \_ ERROR**           | El objeto es una hoja.                                    |
+| 0x800704B8       | **PROBLEMA \_ DE \_ DESREFERENCIA DE ALIAS \_ LDAP**        | **ERROR \_ EXTENDIDO \_ ERROR**           | No se puede desreferenciar el alias.                        |
 | 0x800704B8       | **DETECCIÓN \_ DE BUCLE \_ LDAP**                 | **ERROR \_ EXTENDIDO \_ ERROR**           | Se detectó un bucle.                                   |
 | 0x800704B8       | **LDAP \_ NO PERMITIDO EN \_ \_ \_ NONLEAF**    | **ERROR \_ EXTENDIDO \_ ERROR**           | No se permite la operación en un objeto no hoja.       |
 | 0x800704B8       | **LDAP \_ NO PERMITIDO EN \_ \_ \_ RDN**        | **ERROR \_ EXTENDIDO \_ ERROR**           | No se permite la operación en RDN.                     |
-| 0x800704B8       | **LDAP \_ SIN \_ \_ MODS DE \_ CLASE DE OBJETO**      | **ERROR \_ EXTENDIDO \_ ERROR**           | No se puede modificar la clase de objeto.                          |
+| 0x800704B8       | **LDAP \_ NO \_ OBJECT \_ CLASS \_ MODS**      | **ERROR \_ EXTENDIDO \_ ERROR**           | No se puede modificar la clase de objeto.                          |
 | 0x800704B8       | **LDAP \_ AFECTA A VARIAS \_ \_ DSAS**      | **ERROR \_ EXTENDIDO \_ ERROR**           | Varios agentes de servicios de directorio se ven afectados.      |
 | 0x800704C7       | **USUARIO \_ LDAP \_ CANCELADO**              | **ERROR \_ CANCELADO**                 | El usuario ha cancelado la operación.                     |
 | 0x80070718       | **LDAP \_ TIMELIMIT \_ EXCEEDED**          | **ERROR \_ NO HAY SUFICIENTE \_ \_ CUOTA**        | Se ha superado el límite de tiempo.                                 |

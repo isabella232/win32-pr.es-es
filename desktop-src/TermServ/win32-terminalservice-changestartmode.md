@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método ChangeStartMode Servicios de Escritorio remoto
 - Método ChangeStartMode Servicios de Escritorio remoto , Win32_Service clase
-- Win32_Service clase Servicios de Escritorio remoto método , ChangeStartMode
+- Win32_Service clase Servicios de Escritorio remoto , método ChangeStartMode
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf7189d687c8cdc58122da4e20750c6158396587cf07b08f6fc53cecee625ebd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a46c6b72fbb070dac32b2b6990a217068c77da9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119514395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890817"
 ---
 # <a name="changestartmode-method-of-the-win32_service-class-remote-desktop-services"></a>Método ChangeStartMode de la clase Win32_Service (Servicios de Escritorio remoto)
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeStartMode** modifica el modo de inicio de [**un \_ TerminalService de Win32.**](win32-terminalservice.md)
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -92,7 +92,7 @@ Servicio que el Administrador de control de servicios iniciará automáticamente
 
 </dt> <dd>
 
-Servicio que va a iniciar el Administrador de control de servicios cuando un proceso llama al [**método StartService.**](win32-terminalservice-startservice.md)
+Servicio que debe iniciar el Administrador de control de servicios cuando un proceso llame al [**método StartService.**](win32-terminalservice-startservice.md)
 
 </dd> <dt>
 
@@ -313,13 +313,13 @@ ELSE
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

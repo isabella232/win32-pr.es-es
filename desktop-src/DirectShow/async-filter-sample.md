@@ -1,43 +1,43 @@
 ---
-description: Ejemplo de filtro Async
+description: Ejemplo de filtro asincrónico
 ms.assetid: ad1f2386-6d23-4a6d-8542-bbca53df4825
-title: Ejemplo de filtro Async
+title: Ejemplo de filtro asincrónico
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 099931e9a20c977da18a67f9fe232c2ec391dd4e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104080056"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162241"
 ---
-# <a name="async-filter-sample"></a>Ejemplo de filtro Async
+# <a name="async-filter-sample"></a>Ejemplo de filtro asincrónico
 
 ## <a name="description"></a>Descripción
 
-El ejemplo de filtro Async es un filtro de lector de archivos que admite la descarga progresiva. Este filtro de ejemplo implementa las interfaces [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) y [**IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter) . Admite archivos MPEG, pero no archivos AVI.
+El ejemplo de filtro asincrónico es un filtro de lector de archivos que admite la descarga progresiva. Este filtro de ejemplo implementa las [**interfaces IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) [**e IFileSourceFilter.**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter) Admite archivos MPEG, pero no archivos AVI.
 
 ## <a name="usage"></a>Uso
 
-En este ejemplo se incluye una pequeña aplicación de línea de comandos, Memfile.exe, que muestra el filtro. Los argumentos de la línea de comandos especifican un archivo multimedia y una velocidad de bits, en kilobytes por segundo. La aplicación lee el archivo en la memoria a la velocidad especificada y reproduce el archivo. Para ello, crea una instancia del filtro, agrega el filtro al gráfico de filtro y representa el PIN de salida del filtro.
+Este ejemplo incluye una pequeña aplicación de línea de comandos, Memfile.exe, que muestra el filtro. Los argumentos de la línea de comandos especifican un archivo multimedia y una velocidad de bits, en kilobytes por segundo. La aplicación lee el archivo en memoria a la velocidad especificada y reproduce el archivo. Para ello, crea una instancia del filtro, agrega el filtro al gráfico de filtros y representa el pin de salida del filtro.
 
 En la línea de comandos, escriba:
 
-**Velocidad de bits de Memfile FILENAME**  
+**Velocidad de bits de nombre de archivo de Memfile**  
 
-El filtro de ejemplo Async no admite archivos AVI porque no se puede conectar al filtro de [divisor de AVI](avi-splitter-filter.md) . El PIN de salida del filtro asincrónico propone \_ el flujo MEDIATYPE y MEDIASUBTYPE \_ null para el tipo de medio. El PIN de entrada en el filtro de divisor de AVI no acepta MEDIASUBTYPE \_ null y no propone ningún tipo propio. Por lo tanto, se produce un error en la conexión del PIN. El filtro Async se podría mejorar para ofrecer MEDIASUBTYPE \_ AVI cuando corresponda. Por ejemplo, podría examinar el formato de archivo o utilizar la extensión de archivo.
+El filtro de ejemplo asincrónico no admite archivos AVI, ya que no se puede conectar al filtro [divisor avi.](avi-splitter-filter.md) El pin de salida del filtro asincrónico propone la secuencia MEDIATYPE \_ y MEDIASUBTYPE \_ NULL para el tipo de medio. El pin de entrada en el filtro divisor AVI no acepta MEDIASUBTYPE NULL y no propone \_ ningún tipo propio. Por lo tanto, se produce un error en la conexión de pin. El filtro asincrónico podría mejorarse para ofrecer MEDIASUBTYPE \_ Avi cuando corresponda. Por ejemplo, podría examinar el formato de archivo o usar la extensión de archivo.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Para descargar los ejemplos del SDK de DirectShow, instale la versión más reciente de la [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+Para descargar los ejemplos DirectShow SDK, instale la versión más reciente del [SDK de Windows.](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
 
-Este ejemplo se instala en la siguiente ruta de acceso: \[ ejemplos *raíz del SDK* \] \\ \\ filtros DirectShow de multimedia \\ \\ \\ Async.
+Este ejemplo se instala en la siguiente ruta de acceso: Ejemplos raíz del \[ *SDK* \] \\ Multimedia DirectShow Filtros \\ \\ \\ \\ asincrónicos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 
 
-[Ejemplos de DirectShow](directshow-samples.md)
+[DirectShow Muestras](directshow-samples.md)
 
 
  

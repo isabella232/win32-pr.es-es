@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Obtener y proporcionar datos en un equipo de 64 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46163290d1212fd66bef48dba177034769360e8d7c6249dfdf40327ce2adc32c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe7d8ff5430a7c47b652bfbcca05d2f53ba857d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118819388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965276"
 ---
 # <a name="getting-and-providing-data-on-a-64-bit-computer"></a>Obtener y proporcionar datos en un equipo de 64 bits
 

@@ -4,12 +4,12 @@ ms.assetid: 11f6b5cb-10c6-470b-870d-b89983dba74e
 title: Propiedad AVDecCommonMeanBitRate (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e09969d09bf788d6dc33b6b796cd9c05934819de9eaebe9d13081bc21c2c382e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aa5cef2b854a3e35d2e1d97596b3da642b8d5cec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162146"
 ---
 # <a name="avdeccommonmeanbitrate-property"></a>Propiedad AVDecCommonMeanBitRate
 
@@ -29,15 +29,15 @@ Esta propiedad es de solo lectura.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

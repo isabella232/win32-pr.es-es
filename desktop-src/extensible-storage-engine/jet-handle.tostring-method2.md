@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_HANDLE. ToString (método)'
-title: JET_HANDLE. ToString (método)
+description: 'Más información sobre: JET_HANDLE. Método ToString'
+title: JET_HANDLE. Método ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_HANDLE.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_handle.tostring(v=EXCHG.10)
@@ -21,18 +21,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 715d46eddba81eaa8e8c234194f403e4192c45d0
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389118"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969132"
 ---
-# <a name="jet_handletostring-method"></a>JET_HANDLE. ToString (método)
+# <a name="jet_handletostring-method"></a>JET_HANDLE. Método ToString
 
-Generar una representación de cadena de la estructura.
+Genere una representación de cadena de la estructura .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,17 +52,17 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-La estructura como una cadena.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Estructura como una cadena.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_HANDLE](./jet-handle-structure.md)
+[JET_HANDLE estructura](./jet-handle-structure.md)
 
-[Miembros de JET_HANDLE](./jet-handle-members.md)
+[JET_HANDLE miembros](./jet-handle-members.md)
 
 [Sobrecarga de ToString](./jet-handle.tostring-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

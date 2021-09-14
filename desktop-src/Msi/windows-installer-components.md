@@ -4,12 +4,12 @@ ms.assetid: f1c9696d-3267-44be-a904-ab26250fae2e
 title: Windows Componentes del instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 449a54a2e0c60eb3385b7ac1d606c2517337bf664f96c5df88517a8097cdcaa6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8ad90f2fb576d0333a26fc92f9cf951e4da06bab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119995521"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069559"
 ---
 # <a name="windows-installer-components"></a>Windows Componentes del instalador
 

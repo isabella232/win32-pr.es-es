@@ -1,5 +1,5 @@
 ---
-title: Métodos SetAttributeValue de ID2D1SvgElement (D2d1svg.h)
+title: Métodos Id2D1SvgElement SetAttributeValue (D2d1svg.h)
 description: Establece un atributo de este elemento.
 ms.assetid: 33403a07-28d1-4138-ea7f-04f3ac42a8f7
 keywords:
@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 95ac3021abdf641b268e2278e92dfd86227244cde1d1d51f992953e68584fa69
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c49f224d364523653e13fb7b6cc141e8e8c6eca7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119527145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162761"
 ---
 # <a name="id2d1svgelementsetattributevalue-methods"></a>Métodos ID2D1SvgElement::SetAttributeValue
 
@@ -30,11 +30,11 @@ Establece un atributo de este elemento.
 | Método                                                                                                                      | Descripción                                                                                                                                                 |
 |:----------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**SetAttributeValue(PCWSTR, FLOAT)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_float))                                             | Establece un atributo de este elemento mediante float.<br/>                                                                                                 |
-| [**SetAttributeValue(PCWSTR, D2D1 \_ COLOR \_ F &)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_constd2d1_color_f_))                                  | Establece un atributo de este elemento como color.<br/>                                                                                                    |
+| [**SetAttributeValue(PCWSTR, D2D1 \_ COLOR \_ F &)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_constd2d1_color_f_))                                  | Establece un atributo de este elemento como un color.<br/>                                                                                                    |
 | [**SetAttributeValue(PCWSTR, D2D1 \_ FILL \_ MODE)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_fill_mode))                                  | Establece un atributo de este elemento como modo de relleno. Este método se puede usar para establecer el valor de las propiedades "fill-rule" o "clip-rule".<br/>         |
 | [**SetAttributeValue(PCWSTR, D2D1 \_ SVG \_ DISPLAY)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_display))                                | Obtiene un atributo de este elemento como un valor para mostrar. Este método se puede usar para obtener el valor de la propiedad para mostrar.<br/>                          |
 | [**SetAttributeValue(PCWSTR, D2D1 \_ EXTEND \_ MODE)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_extend_mode))                               | Establece un atributo de este elemento como un valor de modo de extensión. Este método se puede usar para establecer el valor de un atributo spreadMethod.<br/>                 |
-| [**SetAttributeValue(PCWSTR, D2D1 \_ SVG \_ OVERFLOW)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_overflow))                               | Establece un atributo de este elemento como un valor de desbordamiento. Este método se puede usar para establecer el valor de la propiedad de desbordamiento.<br/>                       |
+| [**SetAttributeValue(PCWSTR, D2D1 \_ SVG \_ OVERFLOW)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_overflow))                               | Establece un atributo de este elemento como un valor de desbordamiento. Este método se puede usar para establecer el valor de la propiedad overflow.<br/>                       |
 | [**SetAttributeValue(PCWSTR, D2D1 \_ SVG \_ LINE \_ CAP)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_line_cap))                             | Establece un atributo de este elemento como un valor de extremo de línea. Este método se puede usar para establecer el valor de la propiedad stroke-linecap.<br/>                  |
 | [**SetAttributeValue(PCWSTR, D2D1 \_ SVG \_ LENGTH &)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_constd2d1_svg_length_))                              | Establece un atributo de este elemento como un valor de longitud.<br/>                                                                                             |
 | [**SetAttributeValue(PCWSTR, D2D1 \_ SVG \_ LINE \_ JOIN)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_line_join))                             | Establece un atributo de este elemento como un valor de combinación de línea. Este método se puede usar para establecer el valor de la propiedad stroke-linejoin.<br/>                |
@@ -58,7 +58,7 @@ Establece un atributo de este elemento.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

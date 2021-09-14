@@ -1,6 +1,6 @@
 ---
 title: Función Texture2DArray::GatherAlpha(S,float,int,uint)
-description: Devuelve los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos. | Función Texture2DArray::GatherAlpha(S,float,int,uint)
+description: Devuelve los cuatro valores de texel que se usarían en una operación de filtrado bi linear, junto con el estado de asignación de mosaicos. | Función Texture2DArray::GatherAlpha(S,float,int,uint)
 ms.assetid: B04F29A7-0EC9-49F0-9662-00F1DD0F3E5B
 keywords:
 - Función GatherAlpha HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6efa67eb0f2e3eed33f18788443723fadce825a381511019dcc24d941656865c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 59f5ead36b4880ba02fc50691e634fc477efea6f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119788295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970480"
 ---
 # <a name="texture2darraygatheralphasfloatintuint-function"></a>Función Texture2DArray::GatherAlpha(S,float,int,uint)
 
-Devuelve los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.
+Devuelve los cuatro valores de texel que se usarían en una operación de filtrado bi linear, junto con el estado de asignación de mosaicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,7 +74,7 @@ Desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 Tipo: **uint**
 
-Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -84,9 +84,9 @@ Tipo: **TemplateType**
 
 Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las muestras de textura se pueden usar para la interpolación bilineal.
+Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -100,7 +100,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

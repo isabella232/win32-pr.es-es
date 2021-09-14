@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: e9e56e25e51a3c6e798242b390f5d8b7341d7306455f1b15eb9e450830d3c9b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec26a3cab15014deabca4e9332c1fbef7a788b17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119064705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069420"
 ---
 # <a name="wlanpolicy-element"></a>Elemento WLANPolicy
 
@@ -151,18 +151,18 @@ El espacio de nombres de destino **para el elemento WLANPolicy** es `https://www
 | [**denyAllESS**](wlan-policyschema-denyalless-networkfilter-element.md)                                                   | boolean                                                                  | Especifica si se bloquea el acceso a todas las redes de infraestructura. <br/>                                                           |
 | [**denyAllIBSS**](wlan-policyschema-denyallibss-networkfilter-element.md)                                                 | boolean                                                                  | Especifica si se bloquea el acceso a todas las redes ad hoc. <br/>                                                                   |
 | [**Descripción**](wlan-policyschema-description-wlanpolicy-element.md)                                                    | [**nameType**](wlan-policyschema-nametype-simpletype.md)                | Descripción de una directiva de LAN inalámbrica. <br/>                                                                                |
-| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | boolean                                                                  | Especifica si las máquinas usan el servicio de configuración automática (AutoConfig) integrado para administrar conexiones inalámbricas. <br/> |
+| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | boolean                                                                  | Especifica si las máquinas usan el servicio de configuración automática integrado (AutoConfig) para administrar conexiones inalámbricas. <br/> |
 | [**globalFlags**](wlan-policyschema-globalflags-wlanpolicy-element.md)                                                    |                                                                          | Contiene la configuración global del módulo de configuración automática (ACM). <br/>                                                    |
-| [**Nombre**](wlan-policyschema-name-wlanpolicy-element.md)                                                                  | [**nameType**](wlan-policyschema-nametype-simpletype.md)                | Nombre de una directiva de LAN inalámbrica. <br/>                                                                                       |
-| [**Red**](wlan-policyschema-network-allowlist-element.md)                                                             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Una red permitida. <br/>                                                                                                      |
-| [**Red**](wlan-policyschema-network-blocklist-element.md)                                                             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Una red bloqueada. <br/>                                                                                                       |
+| [**name**](wlan-policyschema-name-wlanpolicy-element.md)                                                                  | [**nameType**](wlan-policyschema-nametype-simpletype.md)                | Nombre de una directiva de LAN inalámbrica. <br/>                                                                                       |
+| [**red**](wlan-policyschema-network-allowlist-element.md)                                                             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Una red permitida. <br/>                                                                                                      |
+| [**red**](wlan-policyschema-network-blocklist-element.md)                                                             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Una red bloqueada. <br/>                                                                                                       |
 | [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md)                                                |                                                                          | Lista de redes permitidas y denegadas.<br/>                                                                                  |
 | [**profileList**](wlan-policyschema-profilelist-wlanpolicy-element.md)                                                    |                                                                          | Contiene una lista de perfiles que se aplicarán en el nivel de dominio o equipo. <br/>                                                |
 | [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | boolean                                                                  | Especifica si las redes denegadas aparecen en el **Conectar a un Asistente para** redes. <br/>                                         |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para ver la lista de elementos secundarios en una estructura similar a un árbol, vea [Elementos de esquema de \_ la directiva WLAN](wlan-policyschema-elements.md).
 
@@ -170,7 +170,7 @@ Para ver la lista de elementos secundarios en una estructura similar a un árbol
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

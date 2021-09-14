@@ -5,11 +5,11 @@ ms.assetid: 3de97027-e0c8-4199-a6ef-a8f096b118fd
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 755d896408734b7f51778235cb11b2022bbe8bf2
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105660079"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251240"
 ---
 # <a name="combobox-control-messages"></a>Mensajes de control ComboBox
 
@@ -17,11 +17,11 @@ ms.locfileid: "105660079"
 
 -   [**CB \_ ADDSTRING**](cb-addstring.md)
 -   [**CB \_ DELETESTRING**](cb-deletestring.md)
--   [**\_directorio CB**](cb-dir.md)
+-   [**CB \_ DIR**](cb-dir.md)
 -   [**CB \_ FINDSTRING**](cb-findstring.md)
--   [**CB \_ FindExactString con**](cb-findstringexact.md)
+-   [**CB \_ FINDSTRINGEXACT**](cb-findstringexact.md)
 -   [**CB \_ GETCOMBOBOXINFO**](cb-getcomboboxinfo.md)
--   [**\_GETCOUNT.**](cb-getcount.md)
+-   [**CB \_ GETCOUNT**](cb-getcount.md)
 -   [**CB \_ GETCUEBANNER**](cb-getcuebanner.md)
 -   [**CB \_ GETCURSEL**](cb-getcursel.md)
 -   [**CB \_ GETDROPPEDCONTROLRECT**](cb-getdroppedcontrolrect.md)
@@ -34,10 +34,10 @@ ms.locfileid: "105660079"
 -   [**CB \_ GETITEMHEIGHT**](cb-getitemheight.md)
 -   [**CB \_ GETLBTEXT**](cb-getlbtext.md)
 -   [**CB \_ GETLBTEXTLEN**](cb-getlbtextlen.md)
--   [**la de CB ( \_ GETLOCALE)**](cb-getlocale.md)
+-   [**CB \_ GETLOCALE**](cb-getlocale.md)
 -   [**CB \_ GETMINVISIBLE**](cb-getminvisible.md)
 -   [**CB \_ GETTOPINDEX**](cb-gettopindex.md)
--   [**INITSTORAGE de CB \_**](cb-initstorage.md)
+-   [**CB \_ INITSTORAGE**](cb-initstorage.md)
 -   [**CB \_ INSERTSTRING**](cb-insertstring.md)
 -   [**CB \_ LIMITTEXT**](cb-limittext.md)
 -   [**CB \_ RESETCONTENT**](cb-resetcontent.md)

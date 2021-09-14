@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102608
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: c5e5ca0f686d25d3244f3ba949a0eedb028d1f05bbaebc7636dc2a79104c907c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c07cd44075284e4e8fd736102f62f702e055db99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120018795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963071"
 ---
 # <a name="esentresource-methods"></a>Métodos de EsentResource
 
@@ -98,7 +98,7 @@ El [tipo EsentResource](./esentresource-class.md) expone los miembros siguientes
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

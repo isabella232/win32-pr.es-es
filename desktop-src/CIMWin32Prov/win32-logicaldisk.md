@@ -1,5 +1,5 @@
 ---
-description: Representa un origen de datos que se resuelve en un dispositivo de almacenamiento local real en un sistema informático que ejecuta Windows.
+description: Representa un origen de datos que se resuelve en un dispositivo de almacenamiento local real en un equipo que ejecuta Windows.
 ms.assetid: 134a90cc-b2c3-4ade-a317-b96c4aabe63d
 ms.tgt_platform: multiple
 title: Win32_LogicalDisk clase
@@ -56,16 +56,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6ccd719adf39bcd27ebdf8c22f5da6ac3d541b1127eb5c66fc9566ccb2a25434
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ad1472f14e73d06c19ccc0808794a47f7588cf9b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119973405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970228"
 ---
 # <a name="win32_logicaldisk-class"></a>Clase LogicalDisk de Win32 \_
 
-La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ Win32 LogicalDisk** representa un origen de datos que se resuelve en un dispositivo de almacenamiento local real en un sistema de equipo que ejecuta Windows.
+La **clase WMI \_ LogicalDisk** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa un origen de datos que se resuelve en un dispositivo de almacenamiento local real en un sistema de equipo que ejecuta Windows.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -118,7 +118,7 @@ class Win32_LogicalDisk : CIM_LogicalDisk
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ LogicalDisk de Win32** tiene estos tipos de miembros:
 
@@ -134,9 +134,9 @@ La **clase \_ LogicalDisk de Win32** tiene estos métodos.
 | Método                                                                             | Descripción                                                                                                                                                                                                                 |
 |:-----------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Chkdsk**](chkdsk-method-in-class-win32-logicaldisk.md)                         | Invoca la [**operación Chkdsk**](chkdsk-method-in-class-win32-logicaldisk.md) en el disco.<br/>                                                                                                                    |
-| [**ExcludeFromAutochk**](excludefromautochk-method-in-class-win32-logicaldisk.md) | Excluye los discos de la [**operación chkdsk**](chkdsk-method-in-class-win32-logicaldisk.md) que se ejecutarán en el siguiente reinicio.<br/>                                                                                      |
-| **Reset**                                                                          | Sin implementar. Para obtener más información sobre cómo implementar este método, consulte el método [**Reset**](reset-method-in-class-cim-controller.md) en [**Cim \_ LogicalDisk**](cim-logicaldisk.md) para obtener documentación.<br/> |
-| [**ScheduleAutoChk**](scheduleautochk-method-in-class-win32-logicaldisk.md)       | Programa [**chkdsk**](chkdsk-method-in-class-win32-logicaldisk.md) para que se ejecute en el siguiente reinicio si se ha establecido el bit desnuciado.<br/>                                                                                |
+| [**ExcludeFromAutochk**](excludefromautochk-method-in-class-win32-logicaldisk.md) | Excluye los discos de la [**operación chkdsk**](chkdsk-method-in-class-win32-logicaldisk.md) que se ejecutará en el siguiente reinicio.<br/>                                                                                      |
+| **Reset**                                                                          | Sin implementar. Para obtener más información sobre cómo implementar este método, consulte el método [**Reset**](reset-method-in-class-cim-controller.md) en [**CIM \_ LogicalDisk**](cim-logicaldisk.md) para obtener documentación.<br/> |
+| [**ScheduleAutoChk**](scheduleautochk-method-in-class-win32-logicaldisk.md)       | Programa [**chkdsk**](chkdsk-method-in-class-win32-logicaldisk.md) para que se ejecute en el siguiente reinicio si se ha establecido el bit desa prueba.<br/>                                                                                |
 | **SetPowerState**                                                                  | Sin implementar. Para obtener más información sobre cómo implementar este método, vea el método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) en [**\_ CIM LogicalDisk**](cim-logicaldisk.md).<br/>   |
 
 
@@ -214,12 +214,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. \|HOST-RESOURCES-MIB.hrDeviceStatus de IETF")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -239,12 +239,12 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
 
 
 </dt> <dd>
 
-Energía completa o en ejecución
+En ejecución o con energía completa
 
 </dd> <dt>
 
@@ -310,7 +310,7 @@ Sin conexión
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -379,7 +379,7 @@ El dispositivo está en pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
 
 
 </dt> <dd>
@@ -390,7 +390,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
 
 
 </dt> <dd>
@@ -401,12 +401,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo está silencioso.
+El dispositivo es silencioso.
 
 </dd> </dl>
 
@@ -424,11 +424,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageAllocationUnits"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Tamaño, en bytes, de los bloques que forman esta extensión de almacenamiento. Si se desconoce o si un concepto de bloque no es válido (por ejemplo, para extensiones de agregado, memoria o discos lógicos), escriba 1.
+Tamaño, en bytes, de los bloques que forman esta extensión de almacenamiento. Si es desconocido o si un concepto de bloque no es válido (por ejemplo, para extensiones de agregado, memoria o discos lógicos), escriba 1.
 
 Esta propiedad se hereda de [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -462,7 +462,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones del sistema de archivos Win32API \| \| [**GetVolumeInformation**](/windows/desktop/api/fileapi/nf-fileapi-getvolumeinformationa) \| FS VOL IS \_ \_ \_ COMPRESSED")
 </dt> </dl>
 
-Si **es True,** el volumen lógico existe como una sola entidad comprimida, como un volumen DoubleSpace. Si se admite la compresión basada en archivos, como en NTFS, esta propiedad es **False.**
+Si **es True**, el volumen lógico existe como una sola entidad comprimida, como un volumen DoubleSpace. Si se admite la compresión basada en archivos, como en NTFS, esta propiedad es **False.**
 
 </dd> <dt>
 
@@ -676,7 +676,7 @@ El dispositivo solicita un tipo de recurso desconocido.
 
 <span id="Reinstall_the_drivers_for_this_device."></span><span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>
 
-<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores de este dispositivo.** (18)
+<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores para este dispositivo.** (18)
 
 
 </dt> <dd>
@@ -705,7 +705,7 @@ Es posible que el Registro esté dañado.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si esto no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
@@ -840,7 +840,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Si **es True,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -853,12 +853,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -894,9 +894,9 @@ Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](
 
 Identificador único del disco lógico de otros dispositivos del sistema.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
-Para obtener un ejemplo de código que recupera esta propiedad, vea la sección Comentarios a continuación.
+Para obtener un ejemplo de código que recupera esta propiedad, vea la sección Comentarios, a continuación.
 
 </dd> <dt>
 
@@ -976,9 +976,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es True,** ahora se borra el error **notificado en LastErrorCode.**
+Si **es True**, ahora se borra el error notificado en **LastErrorCode.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -993,7 +993,7 @@ Tipo de acceso: solo lectura
 
 Más información sobre el error registrado en **LastErrorCode** e información sobre las acciones correctivas que se pueden realizar.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1006,7 +1006,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de detección y corrección de errores admitidos por esta extensión de almacenamiento.
+Tipo de detección y corrección de errores compatibles con esta extensión de almacenamiento.
 
 Esta propiedad se hereda de [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
@@ -1021,7 +1021,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones del sistema de archivos Win32API \| [**GetVolumeInformation**](/windows/desktop/api/fileapi/nf-fileapi-getvolumeinformationa))
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones del sistema de archivos Win32API \| [**GetVolumeInformation)**](/windows/desktop/api/fileapi/nf-fileapi-getvolumeinformationa)
 </dt> </dl>
 
 Sistema de archivos en el disco lógico.
@@ -1044,9 +1044,9 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("byt
 
 Espacio, en bytes, disponible en el disco lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDisk.**](cim-logicaldisk.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDisk**](cim-logicaldisk.md).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -1079,7 +1079,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1092,7 +1092,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones del sistema de archivos Win32API \| [**GetVolumeInformation**](/windows/desktop/api/fileapi/nf-fileapi-getvolumeinformationa))
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones del sistema de archivos Win32API \| [**GetVolumeInformation)**](/windows/desktop/api/fileapi/nf-fileapi-getvolumeinformationa)
 </dt> </dl>
 
 Longitud máxima de un componente de nombre de archivo compatible con Windows unidad. Un componente de nombre de archivo es esa parte de un nombre de archivo entre barras diagonales inversas. El valor se puede usar para indicar que el sistema de archivos especificado admite nombres largos. Por ejemplo, para un sistema de archivos FAT que admita nombres largos, la función almacena el valor 255, en lugar del indicador 8.3 anterior. Los nombres largos también se pueden usar en sistemas que usan el sistema de archivos NTFS.
@@ -1110,7 +1110,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Device Input and Output Functions \| DeviceIoControl")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones de entrada y salida del dispositivo Win32API \| \| DeviceIoControl")
 </dt> </dl>
 
 Tipo de medio presente actualmente en la unidad lógica. Este valor será uno de los valores de la enumeración MEDIA \_ TYPE definida en Winioctl.h. Es posible que el valor no sea exacto para las unidades extraíbles si actualmente no hay ningún medio en la unidad.
@@ -1429,7 +1429,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de **CIM \_ LogicalDevice.**
+Esta propiedad se hereda de **CIM \_ LogicalDevice**.
 
 <dt>
 
@@ -1483,7 +1483,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase [**\_ logicalDevice**](cim-logicaldevice.md) de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase [**\_ logicalDevice**](cim-logicaldevice.md) de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1804,7 +1804,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones del sistema de archivos Win32API \| \| [**GetVolumeInformation**](/windows/desktop/api/fileapi/nf-fileapi-getvolumeinformationa) \| FS FILE \_ \_ COMPRESSION")
 </dt> </dl>
 
-Si **es True,** la partición de disco lógico admite la compresión basada en archivos, como es el caso del sistema de archivos NTFS. Esta propiedad es **False** cuando **la propiedad comprimida** es **True.**
+Si **es True,** la partición de disco lógico admite la compresión basada en archivos, como es el caso del sistema de archivos NTFS. Esta propiedad es **False cuando** la **propiedad comprimida** es **True.**
 
 </dd> <dt>
 
@@ -1820,7 +1820,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Valor de la propiedad **CreationClassName del** equipo de ámbito.
+Valor de la propiedad **CreationClassName del equipo de** ámbito.
 
 Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
@@ -1874,7 +1874,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Nombre del volumen del disco lógico.
 
-Restricciones: 32 caracteres como máximo.
+Restricciones: máximo 32 caracteres.
 
 Para obtener un ejemplo de código que recupera esta propiedad, vea la sección Comentarios, a continuación.
 
@@ -1900,13 +1900,13 @@ Ejemplo: "A8C3-D032"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ LogicalDisk de Win32** se deriva de [**CIM \_ LogicalDisk,**](cim-logicaldisk.md) que deriva de [**CIM \_ StorageExtent.**](cim-storageextent.md) La **clase \_ StorageExtent de CIM** se deriva de CIM [**\_ LogicalDevice**](cim-logicaldevice.md).
 
-Una unidad de disco físico es la piedra angular de cualquier sistema de administración de almacenamiento. Sin embargo, una vez instalada una unidad de disco físico, ni los usuarios ni los administradores del sistema suelen tratar el hardware directamente. En su lugar, tanto los usuarios como los administradores del sistema interactúan con las unidades lógicas que se han creado en el disco.
+Una unidad de disco físico es la piedra angular de cualquier sistema de administración de almacenamiento. Sin embargo, una vez instalada una unidad de disco físico, ni los usuarios ni los administradores del sistema suelen tratar directamente el hardware. En su lugar, tanto los usuarios como los administradores del sistema interactúan con las unidades lógicas que se han creado en el disco.
 
-Una unidad lógica es una subdivisión de una partición a la que se le ha asignado su propia letra de unidad. (Es posible tener una partición a la que no se le haya asignado una letra de unidad). Al hablar sobre la unidad C o la unidad D, se hace referencia a una unidad lógica en lugar de a una unidad de disco físico. Del mismo modo, al guardar un documento en la unidad E, lo guarda en la unidad lógica. Los discos físicos componen el hardware que compone una unidad, incluidos componentes como cabezas, sectores y cilindros. Por el contrario, las unidades lógicas tienen propiedades como espacio en disco, espacio en disco disponible y letras de unidad.
+Una unidad lógica es una subdivisión de una partición a la que se le ha asignado su propia letra de unidad. (Es posible tener una partición a la que no se le haya asignado una letra de unidad). Cuando se habla de la unidad C o la unidad D, se hace referencia a una unidad lógica en lugar de a una unidad de disco físico. Del mismo modo, cuando se guarda un documento en la unidad E, se guarda en la unidad lógica. Los discos físicos componen el hardware que compone una unidad, incluidos componentes como cabezas, sectores y cilindros. Por el contrario, las unidades lógicas tienen propiedades como espacio en disco, espacio en disco disponible y letras de unidad.
 
 > [!Note]  
 > La **clase \_ LogicalDisk de Win32** solo se puede usar para enumerar las propiedades de las unidades de disco locales. Sin embargo, puede usar la [**clase \_ MappedLogicalDisk de Win32**](win32-mappedlogicaldisk.md) para enumerar las propiedades de las unidades de red asignadas.
@@ -1915,11 +1915,11 @@ Una unidad lógica es una subdivisión de una partición a la que se le ha asign
 
 ## <a name="examples"></a>Ejemplos
 
-Puede encontrar otros ejemplos con **Win32 \_ LogicalDisk** para obtener datos de disco o volumen en el tema Tareas de [WMI:](/windows/desktop/WmiSdk/wmi-tasks--disks-and-file-systems) discos y sistemas de archivos.
+Puede encontrar otros ejemplos con **\_ LogicalDisk de Win32** para obtener datos de disco o volumen en el tema [Tareas de WMI:](/windows/desktop/WmiSdk/wmi-tasks--disks-and-file-systems) discos y sistemas de archivos.
 
-El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/e493376c-1286-456b-bd4b-4ac3b0e9bb45) código VBScript del Recuperador de información de WMI en la Galería de TechNet usa la clase LogicalDisk de **\_ Win32** para recuperar información de hardware de varios equipos remotos.
+El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/e493376c-1286-456b-bd4b-4ac3b0e9bb45) código VBScript del recuperador de información de WMI en la Galería de TechNet usa la clase **\_ LogicalDisk de Win32** para recuperar información de hardware de varios equipos remotos.
 
-Obtener [información de disco mediante wmi/cim...](https://Gallery.TechNet.Microsoft.Com/Get-Disk-info-using-wmicim-ff0bd352) En el ejemplo de código de PowerShell de la Galería de TechNet se usa **Win32 \_ LogicalDisk** para recuperar **DeviceID,** **VolumeName** y **Size** de un dispositivo de destino. En concreto, este ejemplo incluye un estricto control de excepciones y devuelve un único objeto por equipo, en lugar de por disco.
+Obtener [información de disco mediante wmi/cim...](https://Gallery.TechNet.Microsoft.Com/Get-Disk-info-using-wmicim-ff0bd352) El ejemplo de código de PowerShell de la Galería de TechNet usa **Win32 \_ LogicalDisk** para recuperar **DeviceID,** **VolumeName** y **Size** de un dispositivo de destino. En concreto, este ejemplo incluye un estricto control de excepciones y devuelve un único objeto por equipo, en lugar de por disco.
 
 Enterprise scripting suele implicar la configuración de hardware y software en equipos remotos; a su vez, esto requiere que sepa, de antemano, el tipo de unidades de disco instaladas en un equipo. Por ejemplo, un script que instala una aplicación en la unidad E solo funciona si la unidad E es un disco duro. Si la unidad E representa un disquete o una unidad de CD-ROM, se produce un error en el script. El código siguiente identifica las unidades y los tipos de unidad instalados en un equipo.
 
@@ -2090,11 +2090,11 @@ Get-WmiObject -Class Win32_LogicalDisk |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Disco \_ lógico CIM**](cim-logicaldisk.md)
+[**\_Disco lógico CIM**](cim-logicaldisk.md)
 </dt> <dt>
 
 [Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)

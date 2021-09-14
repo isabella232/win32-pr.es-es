@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: cde292352bc4ae4403725781345e5331b4409d7b1f3578da1298035cfb9b421d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 36800381ce50ea60d5252841d9731b2657fc22cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119767415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892148"
 ---
 # <a name="iamtimelinecompvtrackgetcount-method"></a>IamTimelineComp::VTrackGetCount (método)
 
@@ -56,7 +56,7 @@ Recibe el número de pistas virtuales.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -79,7 +79,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

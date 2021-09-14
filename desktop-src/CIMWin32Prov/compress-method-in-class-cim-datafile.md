@@ -1,8 +1,8 @@
 ---
-description: 'Método Compress de la CIM_DataFile : usa la compresión NTFS para comprimir el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método se hereda de CIM \_ LogicalFile.'
+description: 'Método Compress de la clase CIM_DataFile : usa la compresión NTFS para comprimir el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método se hereda de CIM \_ LogicalFile.'
 ms.assetid: fce57569-8290-420e-a938-10ab08ac67c3
 ms.tgt_platform: multiple
-title: Método Compress de la CIM_DataFile de datos
+title: Método Compress de la CIM_DataFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 61da18a85935c2c7e7b9ff246347c7a52059f78900b5a7b7b51c76f09780b955
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cc63ed3cafd676a0d865953c52a14e6247d4b70
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118420325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968867"
 ---
-# <a name="compress-method-of-the-cim_datafile-class"></a>Método Compress de la clase DataFile de \_ CIM
+# <a name="compress-method-of-the-cim_datafile-class"></a>Método Compress de la clase \_ DataFile de CIM
 
 El **método Compress** usa la compresión NTFS para comprimir el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -61,7 +61,7 @@ Correcto.
 **2**
 </dt> <dd>
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ El objeto ya existe.
 **11**
 </dt> <dd>
 
-Sistema de archivos no NTFS.
+El sistema de archivos no es NTFS.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Archivo de inicio no válido.
 **17**
 </dt> <dd>
 
-Privilegio no mantenido.
+Privilegios no mantenidos.
 
 </dd> <dt>
 
@@ -142,17 +142,17 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI implementa el método **Compress** en [**CIM \_ DataFile.**](cim-datafile.md)
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -166,10 +166,10 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Archivo de datos CIM \_**](compress-method-in-class-cim-datafile.md)
+[**CIM \_ DataFile**](compress-method-in-class-cim-datafile.md)
 </dt> <dt>
 
-[**Archivo de datos CIM \_**](cim-datafile.md)
+[**CIM \_ DataFile**](cim-datafile.md)
 </dt> <dt>
 
 [Tareas wmi: archivos y carpetas](/windows/desktop/WmiSdk/wmi-tasks--files-and-folders)

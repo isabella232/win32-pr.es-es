@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 95370c67a75ed2e07f827ea33488dcde16d09bd982287443c3f69886ea89d270
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a9adc4f2d58cea7b8b4b5ae9653a95716e907a3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119561285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963320"
 ---
 # <a name="esentconsistenttimemismatchexception-constructor"></a>Constructor EsentConsistentTimeMismatchException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentConsistentTimeMismatchException()
 public EsentConsistentTimeMismatchException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

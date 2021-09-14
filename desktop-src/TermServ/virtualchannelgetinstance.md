@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f96eac56f737d6f945c3d59d5cdf844e9cc65058a0460f620e6051830806ab99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 535ebdc8928cceb282dd62de56f8c6fbadc94e90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119868625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249812"
 ---
 # <a name="virtualchannelgetinstance-entry-point"></a>Punto de entrada VirtualChannelGetInstance
 
@@ -27,7 +27,7 @@ Se llama para que el complemento cree una instancia de la interfaz [**IWTSPlugin
 
 > [!Note]
 >
-> Esta función se implementa mediante el complemento y se debe exportar por nombre, de modo que una aplicación pueda usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a la función.
+> Esta función se implementa mediante el complemento y se debe exportar por nombre para que una aplicación pueda usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a la función.
 >
 > El prototipo de esta función no está incluido en ningún archivo de encabezado público, por lo que debe declararlo exactamente como se muestra.
 

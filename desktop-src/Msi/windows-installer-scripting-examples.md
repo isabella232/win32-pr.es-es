@@ -4,18 +4,18 @@ ms.assetid: 93747a8d-32e0-4f31-a5cf-f95fb26b97df
 title: Windows Ejemplos de scripting del instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3addf648460418daad783b6c5dbcc71078f9904c4a0bba1324f025896692cd37
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47c2ad75411201cdbf74ef3aa035906d7e58aa7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069558"
 ---
 # <a name="windows-installer-scripting-examples"></a>Windows Ejemplos de scripting del instalador
 
-El SDK de [Windows Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md) (Componentes del SDK de Windows para desarrolladores de instaladores de Windows) contiene archivos VBScript que muestran cómo se usa la interfaz de automatización del instalador de Windows para modificar Windows Installer.
+La [Windows SDK components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md) contiene archivos VBScript que muestran cómo se usa la interfaz de automatización del instalador de Windows para modificar Windows Installer.
 
-Los ejemplos de script identificados en este tema no son compatibles con Microsoft Corporation y solo se proporcionan como una referencia potencialmente útil. La ejecución de estos ejemplos requiere Windows host de script. Para obtener más información sobre Windows host de script, vea la sección Windows [Script Host](/previous-versions//9bbdkx3k(v=vs.85)) del Kit de desarrollo de software (SDK) de Microsoft Windows.
+Los ejemplos de script identificados en este tema no son compatibles Microsoft Corporation y solo se proporcionan como una referencia potencialmente útil. La ejecución de estos ejemplos requiere Windows host de script. Para obtener más información sobre Windows host de script, vea la sección Windows [Script Host](/previous-versions//9bbdkx3k(v=vs.85)) del Kit de desarrollo de software (SDK) de Microsoft Windows.
 
 
 
@@ -55,7 +55,7 @@ Estos ejemplos requieren Windows host de script para ejecutarse. Windows El host
 -   CScript.exe es la versión que permite ejecutar scripts desde el símbolo del sistema y proporciona modificadores de línea de comandos para establecer las propiedades del script.
 -   WScript.exe es la versión de Windows host de script que permite ejecutar scripts desde Windows. Para obtener más información, consulte [la Windows host de script](/previous-versions//9bbdkx3k(v=vs.85)) en el SDK de Windows.
 
-La utilidad Makecab.exe se incluye con los ejemplos de aplicación de revisiones en los componentes del SDK de [Windows para Windows Installer .](platform-sdk-components-for-windows-installer-developers.md)
+La utilidad Makecab.exe se incluye con los ejemplos de aplicación de revisiones en [Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
 
 Para obtener información sobre WMI, vea [Using Windows Installer with WMI](using-windows-installer-with-wmi.md).
 

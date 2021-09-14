@@ -1,5 +1,5 @@
 ---
-description: La clase CIM ProductFRU representa una asociación entre el producto y una unidad reemplazable de campo (FRU), que proporciona información sobre los componentes del producto que se han reemplazado o se \_ están reemplazando.
+description: La clase CIM ProductFRU representa una asociación entre el producto y una unidad reemplazable de campo (FRU), que proporciona información sobre los componentes de producto que se han reemplazado o se \_ han reemplazado.
 ms.assetid: 15d682e5-cd90-4fc4-8fff-e3fe1d2a0ac4
 ms.tgt_platform: multiple
 title: CIM_ProductFRU clase
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 06457b7f5eccd7364fa7882301ec0a195cb5bfc3af46d4040570d1ecb2e2f635
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b141d16adb50c5bc3f8d6be682a90aa4921061ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020953"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970308"
 ---
 # <a name="cim_productfru-class"></a>Cim \_ ProductFRU (clase)
 
-La **clase \_ CIM ProductFRU** representa una asociación entre el producto y una unidad reemplazable de campo (FRU), que proporciona información sobre los componentes del producto que se han reemplazado o se están reemplazando.
+La **clase \_ CIM ProductFRU** representa una asociación entre el producto y una unidad reemplazable de campo (FRU), que proporciona información sobre los componentes de producto que se han reemplazado o se han reemplazado.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,9 +45,9 @@ class CIM_ProductFRU
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ CIM ProductFRU** tiene estos tipos de miembros:
+La **clase \_ ProductFRU de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -86,11 +86,11 @@ Referencia al producto al que se aplica la FRU.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 

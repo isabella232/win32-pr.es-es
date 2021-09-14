@@ -14,12 +14,12 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: 431043b261b3e6fa67e8c6c9e45df27bb6c252dfd92b18e0e4127d4795533c0f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0af3913f2579363afbb0c3985ad0f40f58051eac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117857134"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247886"
 ---
 # <a name="addonestroke-function"></a>Función AddOneStroke
 
@@ -92,7 +92,7 @@ Esta función puede devolver uno de estos valores.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                         |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |

@@ -4,12 +4,12 @@ ms.assetid: 240ef2b3-ed72-45bb-b653-441c4e5540b5
 title: elemento subscriptionIdlFunctionDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3998103d04250206ef382f822e329210b83471c69dcc51b401fcfbc241460729
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f4d738dd06ccbf034702cbb7d6494a28a229d07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119130617"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965243"
 ---
 # <a name="subscriptionidlfunctiondeclarations-element"></a>elemento subscriptionIdlFunctionDeclarations
 
@@ -41,7 +41,7 @@ Genera declaraciones IDL para las funciones de proxy de suscripción o cancelaci
 | Elemento                                                           | Descripción                                                                                            |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | [**notificationInterface**](notificationinterface.md)<br/> | Especifica el nombre de la interfaz de notificación que se usa con las suscripciones de eventos.<br/> <br/> |
-| [**operation**](operation.md)<br/>                         | Especifica una operación para la que se va a generar código.<br/> <br/>                       |
+| [**Operación**](operation.md)<br/>                         | Especifica una operación para la que se va a generar código.<br/> <br/>                       |
 | [**portType**](porttype.md)<br/>                           | Especifica el tipo de puerto para el que se va a generar el código.<br/> <br/>                      |
 
 
@@ -62,7 +62,7 @@ Genera declaraciones IDL para las funciones de proxy de suscripción o cancelaci
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**file**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 

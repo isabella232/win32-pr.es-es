@@ -8,18 +8,18 @@ keywords:
 - dialectos ADSI, dialecto LDAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c231d3c4d619775cca2ed9542733bff51219d92ff31d922f6d38ea7b1bcd2e4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 15f7d1f65a41655596d0a14cf6e2a3595916c2cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119509985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172190"
 ---
 # <a name="ldap-dialect"></a>Dialecto LDAP
 
-El dialecto LDAP es un formato para las instrucciones de consulta que usan la sintaxis de filtro [de búsqueda LDAP](search-filter-syntax.md). Use una instrucción de consulta LDAP con las siguientes interfaces de búsqueda ADSI:
+El dialecto LDAP es un formato para las instrucciones de consulta que usan la sintaxis [de filtro de búsqueda LDAP](search-filter-syntax.md). Use una instrucción de consulta LDAP con las siguientes interfaces de búsqueda ADSI:
 
--   Las [ActiveX objeto de datos (ADO),](searching-with-activex-data-objects-ado.md) que son interfaces de Automation que usan OLE DB.
+-   Las [ActiveX de objetos de datos (ADO),](searching-with-activex-data-objects-ado.md) que son interfaces de Automation que usan OLE DB.
 -   [OLE DB](searching-with-ole-db.md), que es un conjunto de interfaces de C/C++ para consultar bases de datos.
 -   [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch), que es la interfaz de C/C++ para Active Directory.
 
@@ -37,7 +37,7 @@ Una cadena de dialecto LDAP consta de cuatro partes separadas por punto y coma (
 -   Nombre para mostrar LDAP de los atributos que se recuperarán. Varios atributos están separados por una coma.
 -   Especifica el ámbito de la búsqueda. Los valores válidos son "base", "onelevel" y "subárbol". El ámbito especificado en una cadena de consulta LDAP invalida cualquier ámbito de búsqueda especificado con la propiedad "SearchScope" del objeto ADO Command.
 
-A continuación se muestra un ejemplo de código del dialecto LDAP en ADSI que busca en todos los objetos del subárbol.
+A continuación se muestra un ejemplo de código del dialecto LDAP en ADSI que busca todos los objetos del subárbol.
 
 
 ```VB
@@ -124,7 +124,7 @@ Para obtener más información sobre la sintaxis de consulta, vea [Sintaxis de f
 [Buscar con objetos ActiveX datos](searching-with-activex-data-objects-ado.md)
 </dt> <dt>
 
-[Búsqueda con OLE DB](searching-with-ole-db.md)
+[Buscar con OLE DB](searching-with-ole-db.md)
 </dt> </dl>
 
  

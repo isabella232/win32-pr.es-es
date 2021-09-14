@@ -1,15 +1,15 @@
 ---
-description: El mensaje TAPI LINE GATHERDIGITS se envía cuando la solicitud de recopilación de dígitos almacenados en búfer actual ha \_ finalizado o se ha cancelado. El búfer de dígitos se puede examinar después de que la aplicación haya recibido este mensaje.
+description: El mensaje TAPI LINE GATHERDIGITS se envía cuando la solicitud de recopilación de dígitos almacenados en búfer actual ha finalizado \_ o se ha cancelado. El búfer de dígitos se puede examinar después de que la aplicación haya recibido este mensaje.
 ms.assetid: 0d27904d-9743-44bf-a7bc-132459351e01
 title: LINE_GATHERDIGITS mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b430f19d2a06b14c3412989d860205d6fda0ca7a698b83ef559016b3f0ba798
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f0c67c5a9bbd3f798a8f4343b36c311309633ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119140158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250107"
 ---
 # <a name="line_gatherdigits-message"></a>Mensaje \_ LINE GATHERDIGITS
 
@@ -65,7 +65,7 @@ El "recuento de pasos" (número de milisegundos desde que Windows inició) en el
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **mensaje \_ LINE GATHERDIGITS** solo se envía a la aplicación que inició la recopilación de dígitos en la llamada [**mediante lineGatherDigits**](/windows/desktop/api/Tapi/nf-tapi-linegatherdigits).
 
@@ -87,11 +87,11 @@ Si el proveedor de servicios no genera la marca de tiempo (por ejemplo, si se cr
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

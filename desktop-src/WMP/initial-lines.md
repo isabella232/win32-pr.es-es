@@ -10,12 +10,12 @@ keywords:
 - archivos de definición de máscara, líneas iniciales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 729e487eff7b0b8910b07afa8e64e23d4f5f1f94c71578fde6fb8abcef436027
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d48c45479a6ea41f646f3e75ed209811d6f56e52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119572645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249609"
 ---
 # <a name="initial-lines"></a>Líneas iniciales
 

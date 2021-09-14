@@ -12,12 +12,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bc90f574edcf306b2141a54ccc3b34c79814e1dd5c705690af1b16103b1b8c05
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 52c51c3348f41f4cd3fad990a2cc7ef94a865173
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119513865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890556"
 ---
 # <a name="wsdl-interface-for-custom-vdi-solutions"></a>Interfaz WSDL para soluciones de VDI personalizadas
 

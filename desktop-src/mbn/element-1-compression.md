@@ -1,5 +1,5 @@
 ---
-description: ModemDMConfigProfile \/ ... \/ Compresión (v4)
+description: MódemDMConfigProfile \/ ... \/ Compresión (v4)
 MS-HAID: WWAN\_profile\_v4.element\_1\_Compression
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,17 +17,17 @@ topic_type:
 - APIRef
 - kbSyntax
 ms.openlocfilehash: 1b6f5af121385500e4d7563c25172290fe7152a5
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982838"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257964"
 ---
-# <a name="span-idwwan_profile_v4element_1_compressionspanmodemdmconfigprofilecompression-v4"></a><span id="WWAN_profile_v4.element_1_Compression"></span>ModemDMConfigProfile \/ ... \/ Compresión (v4)
+# <a name="span-idwwan_profile_v4element_1_compressionspanmodemdmconfigprofilecompression-v4"></a><span id="WWAN_profile_v4.element_1_Compression"></span>MódemDMConfigProfile \/ ... \/ Compresión (v4)
 
-Especifica si se usará la compresión en el vínculo de datos para el encabezado y la transferencia de datos.
+Especifica si se usará la compresión en el vínculo de datos para la transferencia de encabezados y datos.
 
-Para obtener más información, consulte la documentación del elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
+Para obtener más información, vea la documentación del elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 

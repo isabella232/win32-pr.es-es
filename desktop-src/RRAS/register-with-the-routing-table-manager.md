@@ -4,12 +4,12 @@ description: El código de ejemplo siguiente muestra cómo registrar una nueva e
 ms.assetid: 320cc97f-2875-4d26-b2f4-5611a43d5839
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ccb3aaae18d9e327bffb94019b1b69c4fc2b62bc36a7cb4ae31225f9a8a827d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3b5e2f3ba3df414f383305d09c129b52bcb32cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117788614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069164"
 ---
 # <a name="register-with-the-routing-table-manager"></a>Registro con el Administrador de tablas de enrutamiento
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 60e4aef5183e7c107b0853794b9e63c288916763daa4784e21241d55c1bfec89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e64350d4f54fef493ec7fe935474218a1b111503
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118990715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970023"
 ---
 # <a name="d3dxvec2hermite-function-d3dx10mathh"></a>Función D3DXVec2Hermite (D3DX10Math.h)
 
@@ -105,7 +105,7 @@ Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
 Puntero a una estructura D3DXVECTOR2 que es el resultado de la interpolación spline de Hermite.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función D3DXVec2Hermite** interpola de (positionA, tangentA) a (positionB, tangentB) mediante la interpolación spline hermite.
 
@@ -166,7 +166,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

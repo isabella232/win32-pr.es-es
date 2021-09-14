@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Novedades de Windows 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 000a3460366855df65096333a8b847a6d2c0c0a48a89c91f6791db3286d634fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 682e4f125fcc11a1b6679af7df78fddba5a766ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119502865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967036"
 ---
 # <a name="whats-new-in-windows-7"></a>Novedades de Windows 7
 
@@ -29,14 +29,14 @@ Cambios para mejorar la seguridad del proceso de host del proveedor compartido w
 
 ## <a name="other-new-or-updated-features-in-windows-7"></a>Otras características nuevas o actualizadas de Windows 7
 
-En la lista siguiente se enumeran las nuevas características wmi que están disponibles en Windows 7.
+En la lista siguiente se enumeran las nuevas características de WMI que están disponibles en Windows 7.
 
 <dl> <dt>
 
 <span id="CIM_schema_compatibility"></span><span id="cim_schema_compatibility"></span><span id="CIM_SCHEMA_COMPATIBILITY"></span>Compatibilidad de esquemas CIM
 </dt> <dd>
 
-A partir Windows 7, WMI es compatible con la versión 2.17.1 del esquema Modelo de información común (CIM). Para obtener más información, vea [Cim Schema Compatibility](cim-schema-compatibility.md).
+A partir Windows 7, WMI es compatible con la versión 2.17.1 del esquema Modelo de información común (CIM). Para obtener más información, vea [Compatibilidad de esquemas CIM.](cim-schema-compatibility.md)
 
 </dd> <dt>
 
@@ -50,7 +50,7 @@ WMI implementó un mecanismo estándar para detectar perfiles mediante el esquem
 <span id="Association_providers"></span><span id="association_providers"></span><span id="ASSOCIATION_PROVIDERS"></span>Proveedores de asociación
 </dt> <dd>
 
-Información sobre cómo escribir y registrar un proveedor de asociación. Los proveedores de asociación se usan para exponer perfiles estándar, como un perfil de energía. Para obtener más información, vea [Escribir un proveedor de asociación para la interoperabilidad.](writing-an-association-provider-for-interop.md)
+Información sobre cómo escribir y registrar un proveedor de asociación. Los proveedores de asociación se usan para exponer perfiles estándar, como un perfil de energía. Para obtener más información, vea [Escribir un proveedor de asociación para la interoperabilidad](writing-an-association-provider-for-interop.md).
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Las [clases de licencias de software](/previous-versions/windows/desktop/sppwmi/
 <span id="Changes_to_the_Win32_ServerFeature_class"></span><span id="changes_to_the_win32_serverfeature_class"></span><span id="CHANGES_TO_THE_WIN32_SERVERFEATURE_CLASS"></span>Cambios en la [**clase \_ ServerFeature de Win32**](win32-serverfeature.md)
 </dt> <dd>
 
-Se **actualizó** la propiedad [**ID de Win32 \_ ServerFeature.**](win32-serverfeature.md)
+Se **actualizó** la propiedad ID de [**\_ Win32 ServerFeature.**](win32-serverfeature.md)
 
 </dd> </dl>
 

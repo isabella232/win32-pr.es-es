@@ -6,12 +6,12 @@ keywords:
 - efecto no multimultiplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a152803956b9839b881404be013c521dc0f5bfc764b2f07a8462275b523ba762
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5628ea646443a08abffa4549ad25147deb609acf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118664883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162522"
 ---
 # <a name="unpremultiply-effect"></a>Efecto no multimultiplicación
 
@@ -33,7 +33,7 @@ El tamaño del mapa de bits de salida es el mismo que el tamaño del mapa de bit
 |--------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
 | Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

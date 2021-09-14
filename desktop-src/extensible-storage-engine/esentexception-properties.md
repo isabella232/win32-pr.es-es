@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.esentexcepti
 ms:contentKeyID: 55100677
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 071b868b28a84fdc0269a3c578599e84ec472e07f678dadda3df328e772630c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d3c2130c3f433afb22dbdf4ae54405659d58f3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118496971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258372"
 ---
 # <a name="esentexception-properties"></a>Propiedades de EsentException
 
@@ -34,7 +34,7 @@ El [tipo EsentException](./esentexception-class.md) expone los miembros siguient
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

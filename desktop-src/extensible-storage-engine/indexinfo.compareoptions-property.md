@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5bb3ba11f462d29d3298d344d3230c7aef0539f94cd65c4bb3441c6d5d5fb824
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae4e9f77a8e899c4874e18c8faaa079a7d2cf83d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965780"
 ---
 # <a name="indexinfocompareoptions-property"></a>IndexInfo.CompareOptions, propiedad
 
@@ -39,7 +39,7 @@ Obtiene compareOptions para el índice.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -60,7 +60,7 @@ public CompareOptions CompareOptions { get; }
 
 Tipo: [System.Globalization.CompareOptions](/dotnet/api/system.globalization.compareoptions)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

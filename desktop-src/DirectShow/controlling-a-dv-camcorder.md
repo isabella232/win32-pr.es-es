@@ -1,21 +1,21 @@
 ---
-description: Control de una videocamba de DV
+description: Control de una cámara de vídeo dv
 ms.assetid: 3b17b28a-cac8-4753-8c4e-3e57f372d8e5
-title: Control de una videocamba de DV
+title: Control de una cámara de vídeo dv
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33636d073ec86fb6a6eb03afd211a1b170e4668c32b6ba3b3b5e78dfb54ec036
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 68d1c84edcd4738745bdd695fe41cf735d6df1a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119214065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161573"
 ---
-# <a name="controlling-a-dv-camcorder"></a>Control de una videocamba de DV
+# <a name="controlling-a-dv-camcorder"></a>Control de una cámara de vídeo dv
 
 En este artículo se describe cómo controlar una cámara de vídeo digital (DV) mediante DirectShow. Contiene las secciones siguientes:
 
--   [Interfaces de dispositivos externos para cámaras de vídeo DV](external-device-interfaces-for-dv-camcorders.md)
+-   [Interfaces de dispositivo externo para cámaras de vídeo DV](external-device-interfaces-for-dv-camcorders.md)
 -   [Modo de dispositivo](device-mode.md)
 -   [Estado de transporte de dispositivos](device-transport-state.md)
 -   [Formato de secuencia](stream-format.md)

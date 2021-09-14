@@ -8,11 +8,11 @@ title: ProfileCreationType (en MBNProfileExt)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 719e95406be13c6b47b6db32ec2c9f28fab0bde3
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122986878"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248618"
 ---
 # <a name="span-idwwan_profile_v4element_profilecreationtypespanprofilecreationtype-in-mbnprofileext"></a><span id="WWAN_profile_v4.element_ProfileCreationType"></span>ProfileCreationType (en MBNProfileExt)
 

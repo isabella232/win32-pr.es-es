@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2a7c16b7830afad83e4eb43b042da81ba6894f3ea300e816ee33582809bb3f0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eccae96a6289d2172115763b6b6117bf184e2eb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119490405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250706"
 ---
 # <a name="gltexgendv-function"></a>Función glTexGendv
 
@@ -59,7 +59,7 @@ Nombre simbólico de la función de generación de coordenadas de textura.
 *params* 
 </dt> <dd>
 
-Matriz que contiene los coeficientes de la función de generación de textura correspondiente.
+Matriz que contiene los coeficientes para la función de generación de textura correspondiente.
 
 </dd> </dl>
 
@@ -75,12 +75,12 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *coord o* *pname* no era un valor definido aceptado, o *pname* era GL TEXTURE GEN MODE y params no era un \_ valor definido \_ \_ aceptado. <br/> |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *coord* o *pname* no era un valor definido aceptado, o *pname* era GL TEXTURE GEN MODE y params no era un \_ \_ valor definido \_ aceptado. <br/> |
 | <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). <br/>                 |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glTexGen** selecciona una función de generación de coordenadas de textura o proporciona coeficientes para una de las funciones. El *parámetro coord* denomina una de las coordenadas de textura (s,t,r,q) y debe ser uno de estos símbolos: GL \_ S, GL T, GL R o GL \_ \_ \_ Q. El *parámetro pname* debe ser una de las tres constantes simbólicas: GL \_ TEXTURE GEN \_ \_ MODE, GL OBJECT PLANE o GL \_ EYE \_ \_ \_ PLANE. Si *pname es* GL OBJECT PLANE o \_ GL EYE \_ \_ \_ PLANE, *param* contiene coeficientes para la función de generación de textura correspondiente.
 
@@ -88,25 +88,25 @@ Si la función de generación de texturas es GL \_ OBJECT \_ LINEAR, la función
 
 ! [Ecuación que muestra la función glTexGen cuando la función de generación de texturas GL_OBJECT_LINEAR].
 
-se usa , donde g es el valor calculado para la coordenada denominada en coord; p1, p2, p3 y p4 son los cuatro valores proporcionados en params. y x?, y?, z?, and w? son las coordenadas de objeto del vértice. Puede usar esta función para el terreno del mapa de texturas mediante el nivel del mar como un plano de referencia (definido por p1, p2, p3 y p4). La función de generación de coordenadas GL OBJECT LINEAR calcula la altitud de un vértice del terreno como su distancia desde el nivel del mar; esa altitud se usa para indexar la imagen de textura para asignar la nieve blanca a los picos y el verde a los \_ \_ montes, por ejemplo.
+se usa , donde g es el valor calculado para la coordenada denominada en coord; p1, p2, p3 y p4 son los cuatro valores proporcionados en params; y x?, y?, z?, and w? son las coordenadas de objeto del vértice. Puede usar esta función para texturar el terreno mediante el nivel del mar como plano de referencia (definido por p1, p2, p3 y p4). La función de generación de coordenadas GL OBJECT LINEAR calcula la altitud de un vértice de terreno como su distancia desde el nivel del mar; esa altitud se usa para indexar la imagen de textura para asignar la nieve blanca a picos y el verde a las \_ \_ montañas, por ejemplo.
 
-Si la función de generación de texturas es GL \_ EYE \_ LINEAR, la función
+Si la función de generación de textura es GL \_ EYE \_ LINEAR, la función
 
 ! [Ecuación que muestra la función glTexGen cuando la función de generación de texturas GL_EYE_LINEAR].
 
-se usa, donde
+se usa , donde
 
 ![Ecuación que muestra las coordenadas oculares del vértice.](images/tex03.png)
 
-y x?, y?, z?, and w? son las coordenadas de los ojos del vértice, p1, p2, p3 y p4 son los valores proporcionados en *param* y M es la matriz modelview cuando se llama **aglTexGen.** Si M está mal condición o es singular, las coordenadas de textura generadas por la función resultante pueden ser inexactas o indefinidos.
+y x?, y?, z?, and w? son las coordenadas de los ojos del vértice, p1, p2, p3 y p4 son los valores proporcionados en *param*, y M es la matriz modelview cuando se llama **aglTexGen.** Si M está mal condición o singular, las coordenadas de textura generadas por la función resultante pueden ser inexactas o indefinidos.
 
-Tenga en cuenta que los valores *de param* definen un plano de referencia en coordenadas de los ojos. La matriz modelview que se les aplica puede no ser la misma en vigor cuando se transforman los vértices del polígono. Esta función establece un campo de coordenadas de textura que puede generar líneas de contorno dinámicas en objetos en movimiento.
+Tenga en cuenta que los valores de *param* definen un plano de referencia en coordenadas de los ojos. La matriz modelview que se les aplica puede no ser la misma en vigor cuando se transforman los vértices de polígono. Esta función establece un campo de coordenadas de textura que puede generar líneas dinámicas de contorno en objetos en movimiento.
 
-Si *pname* es GL SPHERE MAP y coord es GL S o GL T, las coordenadas de textura s y t se generan \_ como se muestra a \_  \_ \_ continuación. Deje que u sea el vector de unidad que apunta desde el origen al vértice del polígono (en coordenadas de los ojos). Deje que n sea la normal actual, después de la transformación a las coordenadas de los ojos. Let f = (fx ( ) fy ( ) fz)T be the reflection vector such that
+Si *pname es* GL SPHERE MAP y coord es GL S o GL T, las coordenadas de textura s y t se generan \_ como se muestra a \_  \_ \_ continuación. Vamos a ser el vector de unidad que apunta desde el origen al vértice del polígono (en coordenadas de los ojos). Deje que n sea el normal actual, después de la transformación a las coordenadas de los ojos. Let f = (fx ( ) fy ( ) fz)T be the reflection vector such that
 
 ![Ecuación que muestra el vector de reflexión como una función de vector de unidad y normal actual.](images/tex05.png)
 
-Por último, deje que
+Por último, let
 
 ![Ecuación que muestra m como función del vector de reflexión.](images/tex07.png)
 
@@ -131,7 +131,7 @@ Las siguientes funciones recuperan información relacionada con glTexGen:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -141,7 +141,7 @@ Las siguientes funciones recuperan información relacionada con glTexGen:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

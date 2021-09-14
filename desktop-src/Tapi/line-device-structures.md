@@ -1,17 +1,17 @@
 ---
 description: Esta sección contiene una lista alfabética de las estructuras de dispositivo de línea usadas por TAPI.
 ms.assetid: a1ca88dc-8497-41f5-889d-16eecfee0648
-title: Estructuras de dispositivo de línea
+title: Estructuras de dispositivos de línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f44061a961a477d4adafb79e89d1719083477705c066857696cba2a19c934d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b534be2522152188dd57f74e4fe1cdc1d3d5a674
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117761975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250154"
 ---
-# <a name="line-device-structures"></a>Estructuras de dispositivo de línea
+# <a name="line-device-structures"></a>Estructuras de dispositivos de línea
 
 Esta sección contiene una lista alfabética de las estructuras de dispositivo de línea usadas por TAPI. Estas estructuras de dispositivo de línea incluyen:
 

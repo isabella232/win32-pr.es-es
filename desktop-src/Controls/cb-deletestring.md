@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0bed1d654b86ffeb4a02c780678822e1999847ef0e163e35ecba081af099f66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb0d3900c86874db1113c219fd9f7967c5f6bb6e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120063585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173970"
 ---
 # <a name="cb_deletestring-message"></a>Mensaje \_ DELETESTRING de CB
 
@@ -32,7 +32,7 @@ Elimina una cadena en el cuadro de lista de un cuadro combinado.
 *wParam* 
 </dt> <dd>
 
-Índice de base cero de la cadena que se eliminará.
+Índice de base cero de la cadena que se desea eliminar.
 
 </dd> <dt>
 
@@ -47,9 +47,9 @@ Este parámetro no se utiliza.
 
 El valor devuelto es un recuento de las cadenas restantes en la lista. Si el *parámetro wParam* especifica un índice mayor que el número de elementos de la lista, el valor devuelto es CB \_ ERR.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si crea el cuadro combinado con un estilo dibujado por el propietario pero sin el estilo [**\_ HASSTRINGS de CBS,**](combo-box-styles.md) el sistema envía un mensaje [**\_ DELETEITEM**](wm-deleteitem.md) de WM al propietario del cuadro combinado para que la aplicación pueda liberar los datos adicionales asociados al elemento.
+Si crea el cuadro combinado con un estilo dibujado por el propietario pero sin el estilo [**\_ HASSTRINGS de CBS,**](combo-box-styles.md) el sistema envía un mensaje [**\_ DELETEITEM**](wm-deleteitem.md) de WM al propietario del cuadro combinado para que la aplicación pueda liberar datos adicionales asociados al elemento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Si crea el cuadro combinado con un estilo dibujado por el propietario pero sin e
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

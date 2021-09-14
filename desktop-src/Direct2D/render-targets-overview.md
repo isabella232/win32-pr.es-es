@@ -7,12 +7,12 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 50fc3d79ec113ff719884d1115b10ed82f14937ee326840d2a45d8013d0fabb5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1770447d1468d7a09990696f8d523458bd2d0e46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118002417"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162610"
 ---
 # <a name="render-targets-overview"></a>Información general sobre los destinos de representación
 

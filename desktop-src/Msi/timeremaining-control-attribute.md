@@ -4,12 +4,12 @@ ms.assetid: e1302449-7f80-4881-bd76-49d386bfdafb
 title: Atributo de control TimeRemaining
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 907db993731172343418fc92d86f2fbab04cf6f41c2a1627bc76e2cd557f505d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 668cabe4832e6460b4ab01fcc048e2f8e1bbdf66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119810735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069611"
 ---
 # <a name="timeremaining-control-attribute"></a>Atributo de control TimeRemaining
 
@@ -23,7 +23,7 @@ Este atributo permite que un control de texto muestre el número aproximado de m
 
 Este atributo no usa marcas de bits.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Vea [Atributos de](control-attributes.md) control y el control que debe crear en [Controles](controls.md).
 

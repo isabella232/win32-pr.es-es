@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a4f8c52a880817596fab088c29cb34db4db77c10b50b04e5337c1d4e477f180e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: efca014493cb5631e058927256bd1586aaca7ab7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120107805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161499"
 ---
 # <a name="iamtimelineobjgetusername-method"></a>IamTimelineObj::GetUserName (método)
 
 > [!Note]  
-> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -56,7 +56,7 @@ Recibe el nombre del objeto como **un BSTR**.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método asigna memoria para la cadena. La aplicación debe llamar **a SysFreeString para** liberar la memoria.
 
@@ -81,14 +81,14 @@ El método asigna memoria para la cadena. La aplicación debe llamar **a SysFree
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IAMTimelineObj (interfaz)**](iamtimelineobj.md)
+[**IamTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

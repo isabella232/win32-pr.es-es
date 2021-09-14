@@ -5,19 +5,19 @@ ms.tgt_platform: multiple
 title: CIM_AggregatePExtent métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6e0654fd9d2323375ca42f334a487bcdb2c05ec973d38d77576bb46a988ff7e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3febd898142299b2f7b336b223be986ed60b930
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119701285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968891"
 ---
 # <a name="cim_aggregatepextent-methods"></a>Métodos \_ AggregatePExtent de CIM
 
 La [**clase \_ AggregatePExtent de CIM**](cim-aggregatepextent.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: b1c4292ed3b1fba2d3f3d9bd350c06cee89d2ba569103db1b677bc690be4af15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43c17c6bb06eca94a1738ddc71255cd7cd441c5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119895785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159701"
 ---
 # <a name="target-switch"></a>Modificador /target
 
-El **modificador /target** permite al compilador MIDL habilitar las optimizaciones disponibles solo en versiones recientes de Windows. El **modificador /target** activa automáticamente modificadores adicionales.
+El **modificador /target** permite que el compilador MIDL habilite las optimizaciones disponibles solo en versiones recientes de Windows. El **modificador /target** activa automáticamente modificadores adicionales.
 
 ``` syntax
 midl /target level
 ```
 
-## <a name="switch-options"></a>Cambiar opciones
+## <a name="switch-options"></a>Opciones de cambio
 
 <dl> <dt>
 
@@ -38,7 +38,7 @@ Especifica el nivel de destino, como NT50, NT51, NT60, NT61, NT62 o NT100.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **modificador /target** activa automáticamente modificadores adicionales, en función del sistema operativo, como se especifica en la tabla siguiente:
 
@@ -60,7 +60,7 @@ Para asegurarse de que un código auxiliar se ejecuta en el sistema especificado
 
 | Nivel mínimo requerido /target | Características                                                                                                                                                                                          |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NT50                           | /robust<br/> \[message\]<br/> \[async\]<br/> \[uuid \_ asincrónico\]<br/> \[notificar \] en modo /Oicf<br/> \[codificación \] o \[ descodificación en modo \] /Oicf<br/>                   |
+| NT50                           | /robust<br/> \[message\]<br/> \[async\]<br/> \[uuid \_ asincrónico\]<br/> \[notificar \] en modo /Oicf<br/> \[codificar \] o \[ descodificar en modo \] /Oicf<br/>                   |
 | NT51                           | Compatibilidad con /protocol de 64 bits<br/> \[partial \_ ignore\]<br/> \[forzar \_ asignación\]<br/>                                                                                                 |
 | NT60                           | Marshalling de estructuras complejas forzadas<br/> Identificadores de contexto en una matriz o estructura<br/> \[Compatibilidad \] con intervalos para cadenas sin formato<br/> \[identificador \_ de contexto estricto de \_ \_ tipo\]<br/> |
 | NT61                           | Las llamadas directas de código auxiliar COM para interfaces con menos de 32 métodos requieren la vinculación de códigos auxiliares COM **OLE32.DLL**.<br/>                                                                          |
@@ -74,7 +74,7 @@ Para asegurarse de que un código auxiliar se ejecuta en el sistema especificado
 
 **midl /target NT50**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

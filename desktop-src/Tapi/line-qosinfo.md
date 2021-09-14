@@ -4,12 +4,12 @@ ms.assetid: b2844d12-c524-42ab-aeb9-8daf4e07a436
 title: LINE_QOSINFO mensaje (Tspi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f0e6273eb31447f0e0c9543dfa191a25869fa08f05be8a5c639ceb101deff47
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d35ff19601ab6acd9a3d8e8aebf1e59b06a4f17e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119873325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250053"
 ---
 # <a name="line_qosinfo-message"></a>Mensaje \_ QOSINFO DE LÍNEA
 
@@ -75,11 +75,11 @@ Sin usar.
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
-| Header<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

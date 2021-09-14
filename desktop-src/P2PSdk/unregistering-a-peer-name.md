@@ -1,21 +1,21 @@
 ---
 description: Al anular el registro de un nombre del mismo nivel, se quita un nombre registrado de una nube del Protocolo de resolución de nombres del mismo nivel (PNRP).
 ms.assetid: a451988e-7026-4b3c-a7a3-366f9886aa02
-title: Anulación del registro de un nombre del mismo nivel
+title: Anular el registro de un nombre del mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6ee0bd03e881f93321c31dfccd03cc71459b323f1ed356a88f829489c578a80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd482cc9cfd8c32d7bc95edd00e866e2d87b7a55
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119675015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069211"
 ---
-# <a name="unregistering-a-peer-name"></a>Anulación del registro de un nombre del mismo nivel
+# <a name="unregistering-a-peer-name"></a>Anular el registro de un nombre del mismo nivel
 
 Al anular el registro de un nombre del mismo nivel, se quita un nombre registrado de una nube del Protocolo de resolución de nombres del mismo nivel (PNRP).
 
-## <a name="unregistering-a-peer-name"></a>Anulación del registro de un nombre del mismo nivel
+## <a name="unregistering-a-peer-name"></a>Anular el registro de un nombre del mismo nivel
 
 Para anular el registro de un nombre del mismo nivel, llame [**a WSASetService**](pnrp-and-wsasetservice.md). El *parámetro essOperation* debe tener un valor **de RNRSERVICE \_ DELETE**. Use las instrucciones de las secciones siguientes de este tema para realizar las configuraciones necesarias para los parámetros **WSASetService** y la estructura [**WSAQUERYSET.**](pnrp-and-wsaqueryset.md)
 
@@ -25,7 +25,7 @@ Cuando una aplicación llama a [**WSASetService**](pnrp-and-wsasetservice.md), l
 
 -   *essOperation* debe tener un valor de **RNRSERVICE \_ DELETE**.
 -   *dwFlags* debe ser cero (0).
--   *lpqsRegInfo* debe apuntar a una estructura [**WSAQUERYSET,**](pnrp-and-wsaqueryset.md) que debe configurarse mediante las directrices de la sección siguiente de este tema.
+-   *lpqsRegInfo* debe apuntar a una estructura [**WSAQUERYSET,**](pnrp-and-wsaqueryset.md) que debe configurarse mediante las instrucciones de la sección siguiente de este tema.
 
 ## <a name="configuring-wsaqueryset"></a>Configuración de WSAQUERYSET
 
@@ -33,7 +33,7 @@ La [**estructura WSAQUERYSET**](pnrp-and-wsaqueryset.md) debe configurarse segú
 
 -   **dwSize** debe especificar el tamaño de la [**estructura WSAQUERYSET.**](pnrp-and-wsaqueryset.md)
 -   **lpszServiceInstanceName** debe apuntar al nombre del mismo nivel que se está anulando el registro.
--   **lpBlob** debe apuntar a una [**estructura PNRPINFO.**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1)
+-   **lpBlob debe** apuntar a una [**estructura PNRPINFO.**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1)
 -   **lpcsaBuffer debe** apuntar a la lista de direcciones.
 
 > [!Note]  

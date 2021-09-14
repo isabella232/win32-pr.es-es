@@ -5,12 +5,12 @@ ms.assetid: 9ba03801-8471-43a9-8e24-114a082d5776
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f54634112b4a6ac3cc1e981421e4a3e33af5e32bae8ab63ec8690f2df12c7a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3fde3263925a3b8bf4921dd0dfc95842a5dc5b4c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119657995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891180"
 ---
 # <a name="detecting-the-remote-desktop-services-environment"></a>Detección del Servicios de Escritorio remoto de datos
 
@@ -31,9 +31,9 @@ BOOL IsRemoteSession(void)
 
 
 
-Para obtener más información, [vea Vinculación en tiempo de ](run-time-linking-to-wtsapi32-dll.md)ejecución a Wtsapi32.dll.
+Para obtener más información, [vea Vinculación en tiempo de ejecución a Wtsapi32.dll](run-time-linking-to-wtsapi32-dll.md).
 
-No debe usar **GetSystemMetrics(SM \_ REMOTESESSION)** para determinar si la aplicación se ejecuta en una sesión remota en Windows 8 y versiones posteriores o Windows Server 2012 y posteriores si la sesión remota también puede usar las mejoras de vGPU de RemoteFX en el Protocolo de visualización remota de Microsoft (RDP). En este caso, **GetSystemMetrics(SM \_ REMOTESESSION)** identificará la sesión remota como una sesión local.
+No debe usar **GetSystemMetrics(SM \_ REMOTESESSION)** para determinar si la aplicación se ejecuta en una sesión remota en Windows 8 y versiones posteriores o Windows Server 2012 y versiones posteriores si la sesión remota también puede usar las mejoras de vGPU de RemoteFX en el Protocolo de visualización remota de Microsoft (RDP). En este caso, **GetSystemMetrics(SM \_ REMOTESESSION)** identificará la sesión remota como una sesión local.
 
 La aplicación puede comprobar la siguiente clave del Registro para determinar si la sesión es una sesión remota que usa RemoteFX vGPU. Si existe una sesión local, esta clave del Registro proporciona el identificador de la sesión local.
 

@@ -4,12 +4,12 @@ description: Aumenta o disminuye el contraste de una imagen.
 ms.assetid: c0cc0f86-f6d4-e951-0cdd-dbad488e0793
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad766b33f82a409395186f219321cf1035d49fe447c29fb3a95071c985c18397
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a6f287b1309aceadc4709bae3b1c2101a06df32d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119814930"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164178"
 ---
 # <a name="contrast-effect"></a>Efecto de contraste
 
@@ -60,11 +60,11 @@ Las propiedades del efecto de contraste se definen mediante la [**enumeración \
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Header                   | d2d1effects \_ 2.h                                  |
+| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
+| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
+| Encabezado                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Temas relacionados

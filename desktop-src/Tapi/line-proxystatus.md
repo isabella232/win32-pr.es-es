@@ -1,21 +1,21 @@
 ---
-description: El mensaje LINE PROXYSTATUS se envía cuando los servidores proxy disponibles cambian en una línea que \_ la aplicación tiene abierta actualmente.
+description: El mensaje \_ LINE PROXYSTATUS se envía cuando los servidores proxy disponibles cambian en una línea que la aplicación tiene abierta actualmente.
 ms.assetid: e20d4b48-a72a-4a83-ae04-a608791a1a3a
 title: LINE_PROXYSTATUS mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 585feda6194a13ecfbe17292aadb9036784d244c9ee5b7df4361981ab7401f65
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8cb00c5df4f531309bdd1311fb7c34c3e9967a8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119682355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250058"
 ---
 # <a name="line_proxystatus-message"></a>Mensaje \_ DE LINE PROXYSTATUS
 
 El **mensaje \_ LINE PROXYSTATUS** se envía cuando los servidores proxy disponibles cambian en una línea que la aplicación tiene abierta actualmente.
 
-TAPISRV genera este mensaje durante una función [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) mediante LINEPROXYSTATUS OPEN y \_ LINEPROXYSTATUS ALLOPENFORACD o una función \_ [**lineClose**](/windows/desktop/api/Tapi/nf-tapi-lineclose) mediante LINEPROXYSTATUS CLOSE (todas las \_ constantes [**\_ LINEPROXYSTATUS**](lineproxystatus--constants.md)).
+TAPISRV genera este mensaje durante una función [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) mediante LINEPROXYSTATUS OPEN y \_ LINEPROXYSTATUS ALLOPENFORACD o una función \_ [**lineClose**](/windows/desktop/api/Tapi/nf-tapi-lineclose) mediante LINEPROXYSTATUS CLOSE (todas las constantes \_ [**LINEPROXYSTATUS \_**](lineproxystatus--constants.md)).
 
 
 ```C++
@@ -31,7 +31,7 @@ TAPISRV genera este mensaje durante una función [**lineOpen**](/windows/desktop
 *dwDevice* 
 </dt> <dd>
 
-Identificador de la aplicación al dispositivo de línea. Esto se relaciona con el controlador del agente.
+Identificador de la aplicación al dispositivo de línea. Esto está relacionado con el controlador del agente.
 
 </dd> <dt>
 
@@ -90,14 +90,14 @@ Reservado. Establecer en cero.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

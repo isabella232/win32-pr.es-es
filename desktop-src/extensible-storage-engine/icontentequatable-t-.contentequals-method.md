@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9cee5c5cce2d915b8afb99c794b005b815e696e8488055e385cb49cdfe1ce024
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c3b06307f7c4ebc44242e02ee5ae99a182f9ab3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118256065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258159"
 ---
 # <a name="icontentequatabletcontentequals-method"></a>IContentEquatable \<T\> . Método ContentEquals
 
@@ -61,7 +61,7 @@ bool ContentEquals(
 
 #### <a name="parameters"></a>Parámetros
 
-  - Otros  
+  - otro  
     Tipo: [T](./icontentequatable-t-interface.md)  
     
     Instancia de que se va a comparar con esta instancia.

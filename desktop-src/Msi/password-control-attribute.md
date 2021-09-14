@@ -4,12 +4,12 @@ ms.assetid: 65489f19-2b9d-48c7-80fa-e2c4be2a0cc3
 title: Atributo de control de contraseñas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72ae28f37de51ffa7565c0ed6680e2113adf057d610aac1cfd97a19fbd407c91
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8269f7d2fbab06f3e365c90ee7fc086a2d59786d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250917"
 ---
 # <a name="password-control-attribute"></a>Atributo de control de contraseñas
 
@@ -25,7 +25,7 @@ Establecer el atributo de control de contraseña impide que el instalador escrib
 
 Este atributo no usa marcas de bits.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información, vea [Controlar atributos](control-attributes.md) y [controles](controls.md).
 

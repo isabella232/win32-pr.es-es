@@ -4,18 +4,18 @@ ms.assetid: 2fbdbe49-0d4d-4dce-afc3-7049c793ace0
 title: Creación de DirectShow aplicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e6c062c97d64373668ef8bfd7eaf02b5d514bd648c3bc5b67ac6803d1fd804f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56c6ab8a0731e93eece734abd4380b092414ff5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118951904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891705"
 ---
 # <a name="building-directshow-applications"></a>Creación de DirectShow aplicaciones
 
 En este tema se describen los encabezados y bibliotecas necesarios para compilar DirectShow aplicaciones.
 
-Los encabezados DirectShow bibliotecas más recientes están disponibles en [el SDK Windows](https://msdn.microsoft.com/windows/aa904949.aspx).
+Los encabezados DirectShow y bibliotecas más recientes están disponibles en el [SDK Windows .](https://msdn.microsoft.com/windows/aa904949.aspx)
 
 ## <a name="header-files"></a>Archivos de encabezado
 
@@ -23,7 +23,7 @@ Todas DirectShow aplicaciones usan el archivo de encabezado que se muestra en la
 
 
 
-| Archivo de encabezado | Requerido para                 |
+| Archivo de encabezado | Obligatorio para                 |
 |-------------|------------------------------|
 | Dshow.h     | Todas DirectShow aplicaciones. |
 
@@ -41,8 +41,8 @@ DirectShow usa los archivos de biblioteca estática que se muestran en la tabla 
 
 | Archivo de biblioteca | Descripción                                                                                                                    |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Strmiids.lib | Exporta los identificadores de clase (CLID) y los identificadores de interfaz (IID).                                                           |
-| Estorba.lib   | Exporta la [**función AMGetErrorText.**](/windows/win32/api/errors/nf-errors-amgeterrortexta) Si no llama a esta función, esta biblioteca no es necesaria. |
+| Strmiids.lib | Exporta identificadores de clase (CLID) e identificadores de interfaz (IID).                                                           |
+| Lugar de la consa.lib   | Exporta la [**función AMGetErrorText.**](/windows/win32/api/errors/nf-errors-amgeterrortexta) Si no llama a esta función, esta biblioteca no es necesaria. |
 
 
 
@@ -52,13 +52,13 @@ Use los mismos archivos .lib para las compilaciones de depuración y versión.
 
 ## <a name="filter-base-classes"></a>Filtrar clases base
 
-El SDK Windows proporciona un conjunto de clases de C++ que se recomiendan si está escribiendo un filtro DirectShow personalizado. Estas clases se proporcionan como código de ejemplo, que puede compilar en una biblioteca estática. Para obtener más información, [vea DirectShow clases base](directshow-base-classes.md).
+El SDK Windows proporciona un conjunto de clases de C++ que se recomiendan si está escribiendo un filtro de DirectShow personalizado. Estas clases se proporcionan como código de ejemplo, que puede compilar en una biblioteca estática. Para obtener más información, [vea DirectShow Base Classes](directshow-base-classes.md).
 
 ## <a name="redistributable-dlls"></a>Archivos DLL redistribuibles
 
-DirectShow las aplicaciones escritas para Windows XP con Service Pack 2 (SP2) y versiones posteriores no necesitan redistribuir ningún archivo DLL DirectShow datos.
+DirectShow aplicaciones escritas para Windows XP con Service Pack 2 (SP2) y versiones posteriores no necesitan redistribuir ningún archivo DLL DirectShow archivos DLL.
 
-Para Windows XP con Service Pack 1 (SP1) y versiones anteriores, los archivos DLL DirectShow redistribuibles están disponibles en el SDK de Microsoft DirectX. La versión más reciente de estos archivos DLL es la versión 9.0c. No se planea ningún desarrollo adicional de estos archivos DLL redistribuibles. Windows XP con Service Pack 2 (SP2) contiene los archivos DLL de la versión 9.0c.
+Para Windows XP con Service Pack 1 (SP1) y versiones anteriores, los archivos DLL de DirectShow redistribuibles están disponibles en el SDK de Microsoft DirectX. La versión más reciente de estos archivos DLL es la 9.0c. No se planea ningún desarrollo adicional de estos archivos DLL redistribuibles. Windows XP con Service Pack 2 (SP2) contiene los archivos DLL de la versión 9.0c.
 
 Los paquetes reds atribuibles contienen los siguientes archivos DLL:
 

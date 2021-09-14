@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_NOTIFYPOS mensaje (Vfw.h)
-description: El mensaje MCIWNDM NOTIFYPOS notifica a la ventana primaria de una \_ aplicación que la posición de la ventana ha cambiado.
+description: El mensaje MCIWNDM NOTIFYPOS notifica a la ventana primaria de \_ una aplicación que la posición de la ventana ha cambiado.
 ms.assetid: ccc8903b-ad79-495a-8003-20e120ad28ff
 keywords:
 - MCIWNDM_NOTIFYPOS mensaje Windows Multimedia
@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 5bebb3a8facd6478c21888cf0cf5ca81e3735ff8
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370706"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250832"
 ---
 # <a name="mciwndm_notifypos-message"></a>Mensaje NOTIFYPOS de MCIWNDM \_
 

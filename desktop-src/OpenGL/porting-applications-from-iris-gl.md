@@ -8,12 +8,12 @@ keywords:
 - Porte de OpenGL, IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a68e218e5b6f57039e364ab4e6ebc29fb1f2b2fad2e8a679b35c1368367f5f2b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c9e739b40f63bb2fd00bb62b4e5ec5566df3c82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119777235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069301"
 ---
 # <a name="porting-applications-from-iris-gl"></a>Porting Applications from IRIS GL
 

@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9a1ca2430ae188b256fb1c6d026db7b6d78e45fdbfeaec158242019b7795d910
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0a25e78ca291271a96d06e5c0bf61c691acd4de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119042533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969491"
 ---
 # <a name="apijetgetsecondaryindexbookmark-method"></a>Método Api.JetGetSecondaryIndexBookmark
 
-Recupera un marcador especial para la entrada de índice secundario en la posición actual de un cursor. A continuación, este marcador se puede usar para volver a colocar eficazmente ese cursor en la misma entrada de índice mediante JetGotoSecondaryIndexBookmark. Esto es muy útil al cambiar la posición en un índice secundario que contiene claves duplicadas o que contiene varias entradas de índice para el mismo registro.
+Recupera un marcador especial para la entrada de índice secundario en la posición actual de un cursor. A continuación, este marcador se puede usar para cambiar la posición eficaz de ese cursor a la misma entrada de índice mediante JetGotoSecondaryIndexBookmark. Esto es muy útil al cambiar la posición en un índice secundario que contiene claves duplicadas o que contiene varias entradas de índice para el mismo registro.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -146,11 +146,11 @@ public static void JetGetSecondaryIndexBookmark(
     
     Opciones para la llamada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

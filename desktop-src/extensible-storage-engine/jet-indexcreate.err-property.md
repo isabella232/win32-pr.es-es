@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_INDEXCREATE. err (propiedad)'
-title: JET_INDEXCREATE. err (propiedad)
+description: 'Más información sobre: JET_INDEXCREATE.err'
+title: JET_INDEXCREATE.err
 TOCTitle: 'err property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE.err
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate.err(v=EXCHG.10)
@@ -27,18 +27,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 8c2298128ad08a5fe1528ead18c72560a71e577b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659997"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248780"
 ---
-# <a name="jet_indexcreateerr-property"></a>JET_INDEXCREATE. err (propiedad)
+# <a name="jet_indexcreateerr-property"></a>JET_INDEXCREATE.err
 
 Obtiene o establece el código de error de la creación de este índice.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public JET_err err { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXCREATE (clase)](./jet-indexcreate-class.md)
+[JET_INDEXCREATE clase](./jet-indexcreate-class.md)
 
-[Miembros de JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE miembros](./jet-indexcreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

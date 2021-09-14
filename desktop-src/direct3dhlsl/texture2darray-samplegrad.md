@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: b1cc44e549b9fa0c68421b3a83163dbb32d6321d3678642d3788aeb6cd9c3d39
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9ce2b97fc02d43e06fa7629d7f6518ef2e46aeb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119742765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963500"
 ---
 # <a name="texture2darraysamplegrad-methods"></a>Métodos Texture2DArray::SampleGrad
 
@@ -35,7 +35,7 @@ Muestrea [**un objeto Texture2DArray**](sm5-object-texture2darray.md) mediante u
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

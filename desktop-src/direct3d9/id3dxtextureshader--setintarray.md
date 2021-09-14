@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 461ace1b4e666e26b7f9bc5f1068b620f047c4408b7210c077ed8dd100bf7ca1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ddc00637bddf2810e73be7755a9dcfb8696053e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118093632"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970808"
 ---
 # <a name="id3dxtextureshadersetintarray-method"></a>Método ID3DXTextureShader::SetIntArray
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

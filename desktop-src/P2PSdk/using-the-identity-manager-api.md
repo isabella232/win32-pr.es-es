@@ -4,12 +4,12 @@ ms.assetid: 7ae3010b-d884-450d-9d15-dad4e414f70a
 title: Uso de Identity Manager
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31d607a6ff87cee43bc8caf454ccfebce6c5d4adacd5a16b79f84f5a0d0dd09a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4bac702ca7c669ad825ce1b3f7d85be0f84332c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061263"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069200"
 ---
 # <a name="using-identity-manager"></a>Uso de Identity Manager
 

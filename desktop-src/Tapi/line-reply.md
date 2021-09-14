@@ -4,12 +4,12 @@ ms.assetid: 5d98ed8b-b75e-49f8-aba3-c6eee89e91c1
 title: LINE_REPLY mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: febe10c822a469465984b715c7b6f23d150f1f068730d4e92190b05ce50cd535
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8ed963a777a5073b0182e809eec83fb7f904768e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120126245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250040"
 ---
 # <a name="line_reply-message"></a>MENSAJE \_ DE RESPUESTA DE LÍNEA
 
@@ -65,9 +65,9 @@ Sin usar.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las funciones que operan de forma asincrónica devuelven un valor de identificador de solicitud positivo a la aplicación. Este identificador de solicitud se devuelve con el mensaje de respuesta para identificar la solicitud que se completó. El otro parámetro del mensaje **LINE \_ REPLY** lleva la indicación de éxito o error. Los posibles errores son los mismos que los definidos por la función correspondiente. Este mensaje no se puede deshabilitar.
+Las funciones que operan de forma asincrónica devuelven un valor de identificador de solicitud positivo a la aplicación. Este identificador de solicitud se devuelve con el mensaje de respuesta para identificar la solicitud que se completó. El otro parámetro para el mensaje **LINE \_ REPLY** lleva la indicación de éxito o error. Los posibles errores son los mismos que los definidos por la función correspondiente. Este mensaje no se puede deshabilitar.
 
 En algunos casos, una aplicación puede no recibir el mensaje **LINE \_ REPLY** correspondiente a una llamada a una función asincrónica. Esto sucede si el identificador de llamada correspondiente se desasigna antes de que se reciba el mensaje.
 
@@ -83,11 +83,11 @@ En algunos casos, una aplicación puede no recibir el mensaje **LINE \_ REPLY** 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

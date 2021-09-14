@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.inde
 ms:contentKeyID: 55103271
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f1ba99d4c42ab32fc7f2248dc069f24700a670fa6158fe17a7edca24ca8db7f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: abda2eab4a258c5bdc32c77132ac749af31be450
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117706284"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965784"
 ---
 # <a name="indexinfo-members"></a>Miembros IndexInfo
 
@@ -127,7 +127,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

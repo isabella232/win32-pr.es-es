@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración SnapshotFreezeGrbit'
-title: Enumeración SnapshotFreezeGrbit
+description: 'Más información sobre: Enumeración SnapshotFreezeGrbit'
+title: SnapshotFreezeGrbit (enumeración)
 TOCTitle: SnapshotFreezeGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SnapshotFreezeGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.snapshotfreezegrbit(v=EXCHG.10)
@@ -27,20 +27,20 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: ae2e35e6258374bf229530edb055cc4023809c6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154660"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258116"
 ---
-# <a name="snapshotfreezegrbit-enumeration"></a>Enumeración SnapshotFreezeGrbit
+# <a name="snapshotfreezegrbit-enumeration"></a>SnapshotFreezeGrbit (enumeración)
 
-Opciones para [JetOSSnapshotFreeze (JET_OSSNAPID, Int32, \[ \] , SnapshotFreezeGrbit)](./api.jetossnapshotfreeze-method.md).
+Opciones de [JetOSSnapshotFreeze(JET_OSSNAPID, Int32, \[ \] , SnapshotFreezeGrbit).](./api.jetossnapshotfreeze-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Dim instance As SnapshotFreezeGrbit
 public enum SnapshotFreezeGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -77,8 +77,8 @@ public enum SnapshotFreezeGrbit
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

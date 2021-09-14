@@ -4,18 +4,18 @@ ms.assetid: 89893C4E-4F4E-4d85-9623-08607B4383E5
 title: elemento image (esquema de descripción de propiedad)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39145ebf4db2bab4ffffeeec31db15e26a881a5bf63b752096a5732522ff8d9d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c24ecb1b88b8b724ce299a81281f926972180743
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120011505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257495"
 ---
 # <a name="image"></a>imagen
 
 Solo debe haber un elemento [image]() para cada elemento primario.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -41,7 +41,7 @@ Solo debe haber un elemento [image]() para cada elemento primario.
 
 | Elementos primarios                                                                  | Elementos secundarios |
 |----------------------------------------------------------------------------------|----------------|
-| [enum](./propdesc-schema-enum.md), [enumRange](./propdesc-schema-enumrange.md) | Ninguno           |
+| [enum](./propdesc-schema-enum.md), [enumRange](./propdesc-schema-enumrange.md) | None           |
 
 
 
@@ -53,7 +53,7 @@ Solo debe haber un elemento [image]() para cada elemento primario.
 
 | Atributo | Descripción       |
 |-----------|-------------------|
-| res       | Público. Obligatorio. |
+| res       | Público. Necesario. |
 
 
 

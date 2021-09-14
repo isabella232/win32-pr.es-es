@@ -6,12 +6,12 @@ keywords:
 - Funciones WGL, contextos de representación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7efb419caa2771b8dbee0eb25c8b5bdaf2a673df565f82ab25df10cbcc11cc39
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad8d3a8ea0333154d3145711829ab23e262fa485
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069294"
 ---
 # <a name="rendering-context-functions"></a>Funciones de contexto de representación
 

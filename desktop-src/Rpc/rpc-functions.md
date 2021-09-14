@@ -6,12 +6,12 @@ keywords:
 - Llamada a procedimiento remoto RPC, referencia, funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a1eeb52119aa5b2df381f84da17adb787342a9478fa170bb00a531e581cb894
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8abaa00de5bae6b0381d67f82e5ca75cd528361
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120018435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250514"
 ---
 # <a name="rpc-functions"></a>Funciones RPC
 

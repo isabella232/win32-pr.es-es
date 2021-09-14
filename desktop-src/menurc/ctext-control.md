@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6b220448fcaa6cbbbb6b01c605a9b5fd6e03f8dc6a60a0e409f6f275d9b74b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41c12b6c1da5d5bd5c8ce59a01e21b05baf77503
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119826005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248474"
 ---
 # <a name="ctext-control"></a>Control CTEXT
 
-Define un control de texto centrado. El control es un rectángulo simple que muestra el texto dado centrado en el rectángulo. El texto tiene formato antes de mostrarse. Las palabras que se extenderían más allá del final de una línea se encapsulan automáticamente al principio de la línea siguiente. Las palabras que son más largas que el ancho del control se truncan.
+Define un control de texto centrado. El control es un rectángulo simple que muestra el texto dado centrado en el rectángulo. El texto tiene formato antes de que se muestre. Las palabras que se extenderían más allá del final de una línea se encapsulan automáticamente al principio de la línea siguiente. Las palabras que son más largas que el ancho del control se truncan.
 
 La [**instrucción LTEXT,**](ltext-control.md) que solo se puede usar en una instrucción rep, define el texto, el identificador, las dimensiones y los atributos del control.
 
@@ -41,7 +41,7 @@ Texto que se va a centrar en el área rectangular del control.
 <span id="style"></span><span id="STYLE"></span>*Estilo*
 </dt> <dd>
 
-Estilos de control. Este valor puede ser cualquier combinación de los estilos siguientes: **SS \_ CENTER**, **WS \_ TABSTOP** y **WS \_ GROUP**.
+Estilos de control. Este valor puede ser cualquier combinación de los estilos **\_ siguientes:** **SS \_ CENTER,** **WS \_ TABSTOP** y WS GROUP .
 
 Si no especifica un estilo, el estilo predeterminado es `SS_CENTER | WS_GROUP` .
 
@@ -61,7 +61,7 @@ CTEXT "Filename", 101, 10, 10, 100, 100
 
 <dl> <dt>
 
-[**Control**](control-control.md)
+[**CONTROL**](control-control.md)
 </dt> <dt>
 
 [Editar controles](../controls/about-edit-controls.md)
@@ -70,7 +70,7 @@ CTEXT "Filename", 101, 10, 10, 100, 100
 [**LTEXT**](ltext-control.md)
 </dt> <dt>
 
-[**Rtext**](rtext-control.md)
+[**RTEXT**](rtext-control.md)
 </dt> </dl>
 
  

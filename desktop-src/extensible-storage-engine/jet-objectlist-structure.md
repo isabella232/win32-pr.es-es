@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a2f035a15c0f0f2861c7c6698878e0782feb35ce
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 21a3ea030421406a5bc571bb5cc1887f77b4710d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476541"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962939"
 ---
 # <a name="jet_objectlist-structure"></a>Estructura de JET_OBJECTLIST
 
@@ -48,7 +48,7 @@ La **JET_OBJECTLIST** recorre una tabla temporal que se creó [con JetGetObjectI
     } JET_OBJECTLIST;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **cbStruct**
 
@@ -66,13 +66,13 @@ Número de registros de la tabla temporal que se creó.
 
 Identificador de columna del nombre del tipo de contenedor.
 
-Los únicos contenedores que se admiten actualmente son tablas. Esta columna es una [JET_coltypText](./jet-coltyp.md).
+Los únicos contenedores que se admiten actualmente son tablas. Esta columna es un [JET_coltypText](./jet-coltyp.md).
 
 **columnidobjectname**
 
 Identificador de columna del nombre del objeto.
 
-Esta columna es una [JET_coltypText](./jet-coltyp.md).
+Esta columna es un [JET_coltypText](./jet-coltyp.md).
 
 **columnidobjtyp**
 
@@ -112,7 +112,7 @@ Identificador de columna del número de páginas que usa el objeto.
 
 Esta columna es una [JET_coltypLong](./jet-coltyp.md).
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 Cada fila de la tabla temporal corresponde a un objeto de la base de datos.
 
@@ -123,7 +123,11 @@ Actualmente, solo la información sobre las tablas estará en la tabla temporal.
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

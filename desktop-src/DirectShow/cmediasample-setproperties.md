@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a4bac378d41e0a9933f0903990e6368979c669c048102665a06b2ce59e4a45c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c5e6ef3c3839825586bf47259cf44783d167f503
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118156537"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251163"
 ---
 # <a name="cmediasamplesetproperties-method"></a>Método CMediaSample.SetProperties
 
@@ -53,7 +53,7 @@ Longitud de los datos de propiedad que se establecerán, en bytes.
 *pbProperties* 
 </dt> <dd>
 
-Puntero a un búfer de tamaño *cbProperties*.
+Puntero a un búfer de tamaño *cbProperties.*
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 | Código devuelto                                                                                   | Descripción                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>          | Success<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Correcto<br/>                   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Argumento no válido<br/>          |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>       |
 | <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | **Argumento de** puntero NULL<br/> |

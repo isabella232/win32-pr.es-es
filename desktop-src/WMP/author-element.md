@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 058753d73049debe01e442f49bf12476642111549ad890e931100026badaeb3d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9d20498ebd7c8a56edc2e32bc2e76422c9b22242
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889857"
 ---
 # <a name="author-element"></a>ELEMENTO AUTHOR
 
-El **elemento AUTHOR** contiene el nombre del autor de un metarchivo Windows multimedia o clip multimedia.
+El **elemento AUTHOR** contiene el nombre del autor de un Windows multimedia o clip multimedia.
 
 ``` syntax
 <AUTHOR>   
@@ -49,7 +49,7 @@ Este elemento no tiene atributos.
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento contiene una cadena de texto que representa el nombre del autor de un archivo Windows multimedia o clip multimedia. Puede usar el elemento **AUTHOR dentro** del elemento **ASX** y dentro de **los elementos ENTRY.**
+Este elemento contiene una cadena de texto que representa el nombre del autor de un Windows multimedia o clip multimedia. Puede usar el elemento **AUTHOR dentro** del elemento **ASX** y dentro de **los elementos ENTRY.**
 
 Si este elemento aparece en el **elemento ASX,** el texto se muestra como **Mostrar** información.
 
@@ -83,7 +83,7 @@ Cada elemento **ASX y** **ENTRY** primario debe contener como máximo un element
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

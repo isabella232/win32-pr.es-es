@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4412a8482af1da3316dda233e520f1ca7780524817a72c01d252d548e28c5860
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c5fa7d1450240a8250e66e2bbe6d8ef0b97c136
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119471265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962747"
 ---
 # <a name="vistaapijetinit3-method"></a>Método VistaApi.JetInit3
 
@@ -91,7 +91,7 @@ public static JET_wrn JetInit3(
 Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Un código de advertencia.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

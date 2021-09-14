@@ -1,30 +1,30 @@
 ---
-description: Obtenga información sobre Windows installer que comienzan con la letra P, como el código del paquete y la aplicación de revisiones.
+description: Obtenga información Windows conceptos del instalador que comienzan por la letra P, como el código del paquete y la aplicación de revisiones.
 ms.assetid: 868f5ed3-b179-404b-9462-1d3a179103f8
 title: P (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74af2780852bcb59124390042bfdbbc7bf2e7618cdb4167f58b15fc04ab1b15b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8923359197916a1186fe28ab0d12e4118b989bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118942765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250953"
 ---
 # <a name="p-windows-installer"></a>P (Windows instalador)
 
-[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) G [H](g-gly.md) [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) P P [Q](q-gly.md) [R](r-gly.md) [S](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
+[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) P [Q](q-gly.md) [R](r-gly.md) [S](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
 
 <dl> <dt>
 
 <span id="_msi_package_using_windows_installer_gly"></span><span id="_MSI_PACKAGE_USING_WINDOWS_INSTALLER_GLY"></span>**Paquete**
 </dt> <dd>
 
-[*.msi archivo y*](m-gly.md) cualquier [*archivo de origen externo*](e-gly.md) al que pueda apuntar este archivo. Por lo tanto, un paquete contiene toda la información que Windows Installer necesita para ejecutar la interfaz de usuario y para instalar o desinstalar la aplicación. Para obtener más información, vea también instalador [*de base de datos*](i-gly.md).
+[*.msi archivo y*](m-gly.md) cualquier [*archivo de origen externo*](e-gly.md) al que pueda apuntar este archivo. Por lo tanto, un paquete contiene toda la información que el Windows necesita para ejecutar la interfaz de usuario e instalar o desinstalar la aplicación. Para obtener más información, vea también instalador [*de base de datos*](i-gly.md).
 
 </dd> <dt>
 
-<span id="_msi_package_code_gly"></span><span id="_MSI_PACKAGE_CODE_GLY"></span>**código de paquete**
+<span id="_msi_package_code_gly"></span><span id="_MSI_PACKAGE_CODE_GLY"></span>**código del paquete**
 </dt> <dd>
 
 GUID que identifica un paquete determinado. Se requiere un código de paquete único porque algunas transformaciones o paquetes de revisión se pueden aplicar a más de una aplicación o pueden actualizar una aplicación a otra aplicación o versión. Para obtener más información, vea [Códigos de paquete](package-codes.md).
@@ -71,7 +71,7 @@ El término "propiedad" también hace referencia a un atributo de un objeto de a
 <span id="_msi_publishing_gly"></span><span id="_MSI_PUBLISHING_GLY"></span>**Editorial**
 </dt> <dd>
 
-Método para [*anunciar*](a-gly.md) una característica o aplicación. La publicación no rellena la interfaz de usuario. Sin embargo, si otra aplicación intenta abrir una aplicación publicada, hay suficiente información para que el instalador asigne la aplicación publicada. Para obtener más información, [*vea asignación de*](a-gly.md) componentes [y características.](components-and-features.md)
+Método para [*anunciar*](a-gly.md) una característica o aplicación. La publicación no rellena la interfaz de usuario. Sin embargo, si otra aplicación intenta abrir una aplicación publicada, hay suficiente información para que el instalador asigne la aplicación publicada. Para obtener más información, vea [*asignación de*](a-gly.md) componentes [y características.](components-and-features.md)
 
 </dd> </dl>
 

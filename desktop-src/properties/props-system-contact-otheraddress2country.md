@@ -4,12 +4,12 @@ ms.assetid: 3318aed5-2607-4d5c-912e-40116aeb1450
 title: System.Contact.OtherAddress2Country
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09a814f7bffe5561c75df7aec23890f2191149e9bcd1b3ce439b934e9c36f069
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8adc7e73b97e8e800eb41b01ee6b049c3ee04691
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118729186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248300"
 ---
 # <a name="systemcontactotheraddress2country"></a>System.Contact.OtherAddress2Country
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -5,7 +5,7 @@ ms.assetid: 665a5005-d435-4783-b48e-2d8400aa7638
 keywords:
 - Windows SDK de formato multimedia, individualización de DRM
 - Windows SDK de formato multimedia, individualización
-- administración de derechos digitales (DRM),individualización
+- digital rights management (DRM), individualización
 - DRM (administración de derechos digitales), individualización
 - administración de derechos digitales (DRM), individualización de DRM
 - DRM (administración de derechos digitales), individualización de DRM
@@ -13,16 +13,16 @@ keywords:
 - API extendidas de cliente, individualización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eeb13f44eaa5fe3a3d67560d6fa7bb1e39250842ba0707ef62969b91fb50d47
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1252fe951e306f837f2df95245b3cfc81dac03c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119086006"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247388"
 ---
 # <a name="drm-individualization-example"></a>Ejemplo de individualización de DRM
 
-El código siguiente es un ejemplo de individualización forzada y también muestra cómo usar el modelo de control de eventos sincrónicos con eventos que tienen interfaces de estado asociadas.
+El código siguiente es un ejemplo de individualización forzada y también muestra cómo usar el modelo de control de eventos sincrónico con eventos que tienen interfaces de estado asociadas.
 
 
 ```C++
@@ -178,7 +178,7 @@ HRESULT Individualize(IWMDRMSecurity* pSecurity)
 [**Realización de la individualización de DRM**](performing-drm-individualization.md)
 </dt> <dt>
 
-[**Uso del Media Foundation de eventos**](using-the-media-foundation-model.md)
+[**Uso del modelo Media Foundation eventos**](using-the-media-foundation-model.md)
 </dt> </dl>
 
  

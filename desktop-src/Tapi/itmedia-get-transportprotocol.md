@@ -4,12 +4,12 @@ ms.assetid: d270d6f4-bdcf-4cf4-970b-65f0be706171
 title: ItMedia::get_TransportProtocol (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7927469ff00caab36ab45af12939c6f2f6518a415d4a764c3d04f9c715db75e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7cf2bc66a98e181674bbf6f7956579bbaa0b5a72
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119682775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250275"
 ---
 # <a name="itmediaget_transportprotocol-method"></a>ItMedia::get \_ TransportProtocol (método)
 
@@ -57,7 +57,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación debe usar [**SysFreeString para**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) liberar la memoria asignada para el *parámetro ppProtocol.*
 
@@ -65,16 +65,16 @@ La aplicación debe usar [**SysFreeString para**](/windows/win32/api/oleauto/nf-
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

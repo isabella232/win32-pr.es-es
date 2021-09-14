@@ -4,12 +4,12 @@ ms.assetid: d8e7d09e-a903-44ce-a257-eebf7cde9e4a
 title: System.Devices.AepContainer.Manufacturer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20f402632cf96ceb40d6db3635bfe4b43cddfa39425bae9c69ee48591fd723c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 397659cd31fafc1e1b322b1440637e7f8a831e86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119598955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248282"
 ---
 # <a name="systemdevicesaepcontainermanufacturer"></a>System.Devices.AepContainer.Manufacturer
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

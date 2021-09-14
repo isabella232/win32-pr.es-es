@@ -36,19 +36,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6c04ea3b2efa2b9af394d7b1e8792eeff5d9b012b56d2bc899e3668bf3ee7172
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27d61c82d3874e0a6d1864b04795dd51203c89eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119438735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970347"
 ---
 # <a name="cim_infraredcontroller-class"></a>\_CimController (clase)
 
 La **clase \_ CIM Descontroladorcontrolador** representa las funciones y la administración de un controlador de escáner.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -85,7 +85,7 @@ class CIM_InfraredController : CIM_Controller
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIMController tiene** estos tipos de miembros:
 
@@ -100,7 +100,7 @@ La **clase \_ CIM DescontroladorControlador** tiene estos métodos.
 
 | Método                                                                        | Descripción                                                                                                                              |
 |:------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**Restablecer**](reset-method-in-class-cim-infraredcontroller.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                               |
+| [**Reset**](reset-method-in-class-cim-infraredcontroller.md)                 | Solicita un restablecimiento del dispositivo lógico. No implementado por WMI.<br/>                                                               |
 | [**SetPowerState**](setpowerstate-method-in-class-cim-infraredcontroller.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. No implementado por WMI.<br/> |
 
 
@@ -401,7 +401,7 @@ El dispositivo no funciona correctamente. Uno de sus controladores o el registro
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**El controlador de este dispositivo necesita un recurso que Windows puede administrar.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**El controlador para este dispositivo necesita un recurso que Windows puede administrar.** (5)
 
 
 </dt> <dd>
@@ -518,7 +518,7 @@ El dispositivo no funciona correctamente debido a un posible problema de enumera
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows identificar todos los recursos que usa este dispositivo.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows puede identificar todos los recursos que usa este dispositivo.** (16)
 
 
 </dt> <dd>
@@ -569,7 +569,7 @@ Es posible que el Registro esté dañado.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si esto no funciona, consulte la documentación de hardware. Windows quita este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si esto no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
@@ -788,7 +788,7 @@ Tipo de acceso: solo lectura
 
 Cadena de forma libre que proporciona información sobre el error registrado en la **propiedad LastErrorCode** y las acciones correctivas que se deben realizar.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -821,7 +821,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -852,7 +852,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
@@ -873,7 +873,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Win32 Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Win32 Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 Ejemplo: \* "PNP030b"
 
@@ -890,7 +890,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de **CIM \_ LogicalDevice.**
+Esta propiedad se hereda de **\_ CIM LogicalDevice.**
 
 <dt>
 
@@ -944,7 +944,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -966,7 +966,7 @@ El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) 
 
 </dt> <dd>
 
-El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y el tiempo establecido en una fecha y hora específicas, o un intervalo, para el encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y la hora establecida en una fecha y hora específicas, o un intervalo, para la encendido.
 
 </dd> </dl>
 
@@ -983,7 +983,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar con energía, es decir, poner en un estado de ahorro de energía. Si **es FALSE,** el valor entero 1 ("No compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities.**
 
-Esta propiedad no indica si las características de administración de energía están habilitadas actualmente, o si están habilitadas, qué características se admiten. Para obtener más información, vea la **matriz PowerManagementCapabilities.** Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad no indica si las características de administración de energía están habilitadas actualmente o, si están habilitadas, qué características se admiten. Para más información, consulte la matriz **PowerManagementCapabilities.** Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -996,7 +996,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Dmtf \| Bus Port \| 001.2", "MIF. Discos DMTF \| \| 003.3")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Puerto del bus DMTF \| \| 001.2", "MIF. Discos DMTF \| \| 003.3")
 </dt> </dl>
 
 Protocolo utilizado por el controlador para acceder a dispositivos "controlados".
@@ -1147,7 +1147,7 @@ Esta propiedad se hereda del [**controlador CIM. \_**](cim-controller.md) Los va
 
 <span id="Power"></span><span id="power"></span><span id="POWER"></span>
 
-**Potencia** (21)
+**Energía** (21)
 
 
 </dt> <dd></dd> <dt>
@@ -1161,7 +1161,7 @@ Esta propiedad se hereda del [**controlador CIM. \_**](cim-controller.md) Los va
 
 <span id="MultiBus"></span><span id="multibus"></span><span id="MULTIBUS"></span>
 
-**Multibus** (23)
+**MultiBus** (23)
 
 
 </dt> <dd></dd> <dt>
@@ -1568,7 +1568,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

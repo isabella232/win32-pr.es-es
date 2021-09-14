@@ -4,16 +4,16 @@ ms.assetid: 4f516cf0-d5b3-4df6-b171-54bbafc0ef93
 title: Valores de propiedad del sistema operativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 461419a29bc62b9aa51e76fe2a471f4c6ef9a079767f40cbeaab397358a10ec8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b5747d5be27566bbdb5ec1e7e9208ac5ffbf6f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145558"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127251018"
 ---
 # <a name="operating-system-property-values"></a>Valores de propiedad del sistema operativo
 
-En la tabla de este tema se muestran los valores de las propiedades Windows sistema operativo [del instalador seleccionados.](property-reference.md)
+En la tabla de este tema se muestran los valores de las propiedades Windows sistema operativo [del instalador seleccionado.](property-reference.md)
 
 
 

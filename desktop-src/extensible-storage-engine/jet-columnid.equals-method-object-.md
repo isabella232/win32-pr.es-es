@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 27ce6392e76f3a8435b45a23065c7138e8d0faa264fae4cf0a763242b6bd85b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8fea8b3a0ac649d262cd34b4aa16724361ef0f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119112384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969168"
 ---
 # <a name="jet_columnidequals-method-object"></a>JET_COLUMNID. Método Equals (Object)
 

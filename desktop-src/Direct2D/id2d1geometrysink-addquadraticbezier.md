@@ -1,6 +1,6 @@
 ---
 title: Métodos ID2D1GeometrySink AddQuadraticBezier (D2d1.h)
-description: Crea una curva Bézier cuadrática entre el punto actual y el punto de conexión especificado y la agrega al receptor de geometría.
+description: Crea una curva Bézier cuadrática entre el punto actual y el punto final especificado y la agrega al receptor de geometría.
 ms.assetid: 142f0823-0d8d-4216-8f40-9dec7f48032e
 keywords:
 - Métodos AddQuadraticBezier de Direct2D
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 323c8fe1128aae915746f5f23dc060225901e1dc8435be8390953490438628ff
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc66782a9042df43f90a40863f53e36834f48ce2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162929"
 ---
 # <a name="id2d1geometrysinkaddquadraticbezier-methods"></a>Métodos ID2D1GeometrySink::AddQuadraticBezier
 
-Crea una curva Bézier cuadrática entre el punto actual y el punto de conexión especificado y la agrega al receptor de geometría.
+Crea una curva Bézier cuadrática entre el punto actual y el punto final especificado y la agrega al receptor de geometría.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -46,7 +46,7 @@ Crea una curva Bézier cuadrática entre el punto actual y el punto de conexión
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

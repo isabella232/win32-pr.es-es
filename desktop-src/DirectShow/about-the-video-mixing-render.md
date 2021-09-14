@@ -4,16 +4,16 @@ ms.assetid: ae1564c2-5084-45c7-af69-b9120c4a290c
 title: Acerca de la representación de mezcla de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4610b0a598ed827a58ce3460d034018ae30aaae0a5cac715025c7b747eb276c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c53e77e57340ff9fce5aaa6f31b09104cef8a4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118664095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162449"
 ---
 # <a name="about-the-video-mixing-render"></a>Acerca de la representación de mezcla de vídeo
 
-En esta sección se proporciona información general sobre las características del representador de mezcla de vídeo 7 (VMR-7) y vmr-9.
+En esta sección se proporciona información general sobre las características de Video Mixing Renderer 7 (VMR-7) y VMR-9.
 
 -   [Características de VMR](features-of-the-vmr.md)
 -   [VMR frente a representadores DirectShow anteriores](vmr-vs--previous-directshow-renderers.md)
@@ -24,7 +24,7 @@ En esta sección se proporciona información general sobre las características 
 
 <dl> <dt>
 
-[Uso del representador de mezcla de vídeo](using-the-video-mixing-renderer.md)
+[Usar el representador de mezcla de vídeo](using-the-video-mixing-renderer.md)
 </dt> </dl>
 
  

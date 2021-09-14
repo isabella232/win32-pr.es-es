@@ -13,16 +13,16 @@ keywords:
 - tiendas en línea, secuencias de servidor de música
 - tiendas en línea de tipo 1, secuencias de servidor de música
 - secuencias de audio
-- secuencias del servidor de música
+- secuencias de servidor de música
 - secuencias de servidores de música
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f59bc9b203d4e1c98a09d02ebc6c8aa9ca35b5cf3b7888e0a2db1d01e749ab51
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7164a703417e2efb8e32b2632890972957f7adf7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120124015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889892"
 ---
 # <a name="audio-streams"></a>Audio Secuencias
 

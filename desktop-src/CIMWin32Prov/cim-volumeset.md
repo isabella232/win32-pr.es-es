@@ -40,19 +40,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b3d1aae8482491d945d6d083b4248aaf449ad262ef4405ef67a55985d62b31b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ee8cd96381901250c9a15e544ee1963470565b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118677050"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965464"
 ---
 # <a name="cim_volumeset-class"></a>Cim \_ VolumeSet (clase)
 
 La **clase CIM \_ VolumeSet** representa un intervalo contiguo de bloques lógicos presentados al entorno operativo para leer y escribir datos de usuario. Los conjuntos de volúmenes no deben superponerse entre sí y se basan en una o varias extensiones físicas, extensiones de espacio protegido o extensiones de agregado (todas del mismo tipo). Se deben crear instancias de las asociaciones basadas en o crear subclases según sea necesario.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -93,7 +93,7 @@ class CIM_VolumeSet : CIM_StorageExtent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase CIM \_ VolumeSet** tiene estos tipos de miembros:
 
@@ -108,7 +108,7 @@ La **clase CIM \_ VolumeSet** tiene estos métodos.
 
 | Método                                                               | Descripción                                                                                                                              |
 |:---------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**Restablecer**](reset-method-in-class-cim-volumeset.md)                 | Solicita un restablecimiento del dispositivo lógico. Wmi no implementa .<br/>                                                               |
+| [**Reset**](reset-method-in-class-cim-volumeset.md)                 | Solicita un restablecimiento del dispositivo lógico. Wmi no implementa .<br/>                                                               |
 | [**SetPowerState**](setpowerstate-method-in-class-cim-volumeset.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. Wmi no implementa .<br/> |
 
 
@@ -187,7 +187,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -384,7 +384,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageAllocationUnits"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Tamaño, en bytes, de los bloques que forman la extensión de almacenamiento. Si el tamaño del bloque de variables es , se debe especificar el tamaño máximo del bloque, en bytes. Si se desconoce el tamaño del bloque o si un concepto de bloque no es válido (por ejemplo, para extensiones agregadas, memoria o discos lógicos), escriba 1 (uno).
+Tamaño, en bytes, de los bloques que forman la extensión de almacenamiento. Si el tamaño del bloque de variables es variable, se debe especificar el tamaño máximo del bloque, en bytes. Si se desconoce el tamaño del bloque o si un concepto de bloque no es válido (por ejemplo, para extensiones agregadas, memoria o discos lógicos), escriba 1 (uno).
 
 Esta propiedad se hereda de [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
@@ -424,7 +424,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Windows Administrador de configuración código de error.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -481,7 +481,7 @@ El dispositivo no funciona correctamente. Uno de sus controladores o el registro
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**El controlador de este dispositivo necesita un recurso que Windows puede administrar.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**El controlador para este dispositivo necesita un recurso que Windows puede administrar.** (5)
 
 
 </dt> <dd>
@@ -598,12 +598,12 @@ El dispositivo no funciona correctamente debido a un posible problema de nueva e
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows identificar todos los recursos que usa este dispositivo.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows puede identificar todos los recursos que usa este dispositivo.** (16)
 
 
 </dt> <dd>
 
-Windows identificar todos los recursos que usa el dispositivo.
+Windows puede identificar todos los recursos que usa el dispositivo.
 
 </dd> <dt>
 
@@ -643,13 +643,13 @@ Los controladores de dispositivos deben volver a instalarse.
 
 </dt> <dd>
 
-Es posible que el Registro esté dañado.
+El Registro puede estar dañado.
 
 </dd> <dt>
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si esto no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
@@ -797,12 +797,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -833,12 +833,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Dirección u otra información de identificación para dar un nombre único al dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -853,7 +853,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** ahora se borra el error notificado en la propiedad **LastErrorCode.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -868,7 +868,7 @@ Tipo de acceso: solo lectura
 
 Cadena de forma libre que proporciona información sobre el error registrado en la **propiedad LastErrorCode** y las acciones correctivas que se deben realizar.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -916,7 +916,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -929,7 +929,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
@@ -950,11 +950,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageSize")
 </dt> </dl>
 
-Número total de bloques consecutivos, cada uno de los cuales bloquea el tamaño del valor contenido en la **propiedad BlockSize,** que forman esta extensión de almacenamiento. El tamaño total de la extensión de almacenamiento se puede calcular multiplicando el valor de la **propiedad BlockSize** por el valor de esta propiedad. Si el valor de **BlockSize** es 1 (uno), esta propiedad es el tamaño total de la extensión de almacenamiento.
+Número total de bloques consecutivos, cada uno de los cuales bloquea el tamaño del valor contenido en la **propiedad BlockSize,** que forman esta extensión de almacenamiento. El tamaño total de la extensión de almacenamiento se puede calcular multiplicando el valor de la propiedad **BlockSize** por el valor de esta propiedad. Si el valor de **BlockSize** es 1 (uno), esta propiedad es el tamaño total de la extensión de almacenamiento.
 
 Esta propiedad se hereda de [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -970,7 +970,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Windows Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Windows Plug and Play identificador de dispositivo del dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* "PNP030b"
 
@@ -987,7 +987,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de **\_ CIM LogicalDevice.**
+Esta propiedad se hereda de **CIM \_ LogicalDevice**.
 
 <dt>
 
@@ -1041,7 +1041,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase [**\_ logicalDevice**](cim-logicaldevice.md) de CIM primaria y se puede implementar. Para obtener más información, [vea Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase [**\_ logicalDevice**](cim-logicaldevice.md) de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1063,7 +1063,7 @@ El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) 
 
 </dt> <dd>
 
-El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y la hora establecida en una fecha y hora específicas, o un intervalo, para la encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y el tiempo establecido en una fecha y hora específicas, o un intervalo, para el encendido.
 
 </dd> </dl>
 
@@ -1080,7 +1080,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar con energía, es decir, poner en un estado de ahorro de energía. Si **es FALSE,** el valor entero 1 ("No compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities.**
 
-Esta propiedad no indica si las características de administración de energía están habilitadas actualmente o, si están habilitadas, qué características se admiten. Para más información, consulte la matriz **PowerManagementCapabilities.** Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad no indica si las características de administración de energía están habilitadas actualmente, o si están habilitadas, qué características se admiten. Para obtener más información, vea la **matriz PowerManagementCapabilities.** Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1093,7 +1093,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Conjunto de volúmenes DMTF \| \| 001,5")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Conjunto de volúmenes DMTF \| \| 001.5")
 </dt> </dl>
 
 Número de extensiones de espacio protegido para la franja como un conjunto colectivo. En SCC, este valor se define como el número de franjas que se van a contar antes de continuar asignando al siguiente conjunto contiguo de extensiones, más allá de la franja actual.
@@ -1352,7 +1352,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

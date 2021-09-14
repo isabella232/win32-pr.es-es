@@ -5,7 +5,7 @@ ms.assetid: 58f79085-4364-408f-8bf1-97a82ad68f4b
 ms.tgt_platform: multiple
 keywords:
 - Propiedad ConnectToServerConsole Servicios de Escritorio remoto
-- Propiedad ConnectToServerConsole Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Propiedad ConnectToServerConsole Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad ConnectToServerConsole
 - Propiedad ConnectToServerConsole Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad ConnectToServerConsole
@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83c6b935c34dda3f8a676d025bc1995a30e1bbb3f11dd4db3c055f6e28437ba3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18e3385b25a9dbe3e77085ae011b85e9be21b224
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119515294"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890932"
 ---
 # <a name="imsrdpclientadvancedsettingsconnecttoserverconsole-property"></a>Propiedad IMsRdpClientAdvancedSettings::ConnectToServerConsole
 
@@ -69,7 +69,7 @@ Use la [**propiedad ConnectToAdminadminserver**](imsrdpclientadvancedsettings6-c
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -92,7 +92,7 @@ Establezca este parámetro en **VARIANT \_ FALSE.** **VARIANT \_ No** se admite 
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -110,7 +110,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

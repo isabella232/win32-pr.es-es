@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Rkeysvcc.h
-ms.openlocfilehash: f19a01e9132bf9c4b1e281a75b0e0d7a27b4f9c7f299eefdd47bef8d60daea97
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4908b7224a02f5a28b876b1ff67cbcec7d23df5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118900550"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250298"
 ---
 # <a name="rkeypfxinstall-function"></a>Función RKeyPFXInstall
 
-No **se admite la función RKeyPFXInstall.**
+No se admite la función **RKeyPFXInstall.**
 
 **Windows Server 2003:** La **función RKeyPFXInstall** instala un certificado en un equipo remoto. Tenga en cuenta que este comportamiento ha cambiado con Windows Server 2003 con Service Pack 1 (SP1).
 
@@ -72,7 +72,7 @@ Marcas que especifican las opciones de instalación del certificado. Este parám
 
 
 
-| Valor                                                                                                                                                                                                                                     | Significado                                                                                      |
+| Value                                                                                                                                                                                                                                     | Significado                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | <span id="CRYPT_EXPORTABLE"></span><span id="crypt_exportable"></span><dl> <dt>**CRYPT \_ EXPORTABLE**</dt><dt></dt> </dl>              | Las claves importadas se marcan como exportables.<br/>                                           |
 | <span id="CRYPT_MACHINE_KEYSET"></span><span id="crypt_machine_keyset"></span><dl> <dt>**CRYPT \_ CONJUNTO \_ DE CLAVES DE LA MÁQUINA**</dt><dt></dt> </dl> | Las claves privadas se almacenan en el equipo remoto y no en el usuario actual.<br/> |
@@ -93,11 +93,11 @@ Si se produce un error en la función, el valor devuelto es **un ULONG** que ind
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 

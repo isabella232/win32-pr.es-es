@@ -1,7 +1,7 @@
 ---
 description: Identifica el nodo raíz de la sección de contadores de un manifiesto de instrumentación.
 ms.assetid: f16f432b-466f-4a3c-bc1b-e80b876a2511
-title: counters (elemento)
+title: counters (Elemento)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -10,13 +10,13 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 11ced77890dba6d47f713642adf9b41d4b30f6a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250670"
 ---
-# <a name="counters-element"></a>counters (elemento)
+# <a name="counters-element"></a>counters (Elemento)
 
 Identifica el nodo raíz de la sección de contadores de un manifiesto de instrumentación.
 
@@ -85,7 +85,7 @@ Identifica el nodo raíz de la sección de contadores de un manifiesto de instru
 
 ## <a name="remarks"></a>Observaciones
 
-El nodo primario de este elemento es el elemento de [**instrumentación**](/windows/desktop/WES/eventmanifestschema-instrumentationtype-complextype) del manifiesto.
+El nodo primario de este elemento es el [**elemento de**](/windows/desktop/WES/eventmanifestschema-instrumentationtype-complextype) instrumentación del manifiesto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,8 +93,8 @@ El nodo primario de este elemento es el elemento de [**instrumentación**](/wind
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

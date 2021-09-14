@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e243a4a854eb9cac80f8ce94fd12c5b63f01b6a413167797a80804c9df66717
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42ae0aa6fab7bb567f67055f0398a74549e519b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120034825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069311"
 ---
 # <a name="pixel-state-variables"></a>Variables de estado de píxeles
 
@@ -177,7 +177,7 @@ ms.locfileid: "120034825"
 
  
 
-</dd> <dt><span id="GL_MAP_COLOR"></span><span id="gl_map_color"></span>COLOR \_ DE MAPA \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_MAP_COLOR"></span><span id="gl_map_color"></span>COLOR \_ DEL MAPA DE \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
@@ -190,7 +190,7 @@ ms.locfileid: "120034825"
 
  
 
-</dd> <dt><span id="GL_MAP_STENCIL"></span><span id="gl_map_stencil"></span>GALERÍA DE \_ SÍMBOLOS DE MAPA DE \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_MAP_STENCIL"></span><span id="gl_map_stencil"></span>GALERÍA \_ DE SÍMBOLOS DE MAPA DE \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
@@ -216,7 +216,7 @@ ms.locfileid: "120034825"
 
  
 
-</dd> <dt><span id="GL_INDEX_OFFSET"></span><span id="gl_index_offset"></span>GL \_ INDEX \_ OFFSET</dt> <dd> 
+</dd> <dt><span id="GL_INDEX_OFFSET"></span><span id="gl_index_offset"></span>DESPLAZAMIENTO \_ DE ÍNDICE DE \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|

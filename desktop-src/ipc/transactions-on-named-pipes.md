@@ -4,12 +4,12 @@ ms.assetid: aedce207-7dea-4670-b6dd-0c61b3f6f690
 title: Transacciones en canalizaciones con nombre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 524f9ae453eb958efd59d8ef6ee5adfda12dd2701e4c719be51299e2873913dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 489039b92b65f57cefc71c5d78a01b1824b1418a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119963905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172274"
 ---
 # <a name="transactions-on-named-pipes"></a>Transacciones en canalizaciones con nombre
 
@@ -200,7 +200,7 @@ int _tmain(int argc, TCHAR *argv[])
 [Servidor de canalización con nombre que usa E/S superpuesta](named-pipe-server-using-overlapped-i-o.md)
 </dt> <dt>
 
-[Servidor de canalización con nombre que usa rutinas de finalización](named-pipe-server-using-completion-routines.md)
+[Servidor de canalización con nombre mediante rutinas de finalización](named-pipe-server-using-completion-routines.md)
 </dt> </dl>
 
  

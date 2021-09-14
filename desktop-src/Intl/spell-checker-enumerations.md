@@ -4,12 +4,12 @@ ms.assetid: C4CBE404-DC56-4099-B8B5-F5A32F32701C
 title: Enumeraciones de revisión ortográfica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d197f088f176f0e91a0aaf799fcc2526c75ad9a27ae2ce7f88e31349d469452
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da9b698ef79a0c2fa06fc82f4d036f07619f9014
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118390266"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171905"
 ---
 # <a name="spell-checking-enumerations"></a>Enumeraciones de revisión ortográfica
 

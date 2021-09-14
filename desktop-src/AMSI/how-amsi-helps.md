@@ -3,16 +3,16 @@ title: Cómo ayuda AMSI a defenderse contra malware
 description: Como desarrollador de aplicaciones, puede participar activamente en la defensa contra malware. En concreto, puede ayudar a proteger a los clientes frente a malware dinámico basado en scripts y frente a vías no tradicionales de ciberataque.
 ms.topic: article
 ms.date: 02/27/2019
-ms.openlocfilehash: 6c9ce09fdbf928395e2ca538add5fe7121c5ee49867c29205a9a39bce746a382
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d6aee30034312073123f5ab14b1924fd01e6eac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119440495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968940"
 ---
 # <a name="how-the-antimalware-scan-interface-amsi-helps-you-defend-against-malware"></a>Cómo la interfaz de examen antimalware (AMSI) le ayuda a defenderse contra malware
 
-Para obtener una introducción a Windows interfaz de examen antimalware (AMSI), vea [Antimalware Scan Interface (AMSI)](antimalware-scan-interface-portal.md).
+Para obtener una introducción a la Windows antimalware Scan Interface (AMSI), vea [Antimalware Scan Interface (AMSI).](antimalware-scan-interface-portal.md)
 
 Como desarrollador de aplicaciones, puede participar activamente en la defensa contra malware. En concreto, puede ayudar a proteger a los clientes frente a malware dinámico basado en scripts y frente a vías no tradicionales de ciberataque.
 
@@ -24,7 +24,7 @@ Esta es una ilustración de la arquitectura amsi, donde su propia aplicación se
 
 ![la arquitectura amsi](images/AMSI7Archi.jpg)
 
-La Windows de AMSI está abierta. Lo que significa que cualquier aplicación puede llamarla; y cualquier motor antimalware registrado puede procesar el contenido que se le envía.
+La Windows interfaz AMSI está abierta. Lo que significa que cualquier aplicación puede llamarla; y cualquier motor antimalware registrado puede procesar el contenido que se le envía.
 
 Tampoco es necesario limitar la discusión a los motores de scripting. Quizás la aplicación es una aplicación de comunicación y examina los mensajes instantáneos en busca de virus antes de que se muestre a los clientes. O quizás el software sea un juego que valide los complementos antes de instalarlos. Hay muchas oportunidades y escenarios para usar AMSI.
 
@@ -36,7 +36,7 @@ Este es un ejemplo de un script que usa la técnica de codificación XOR para oc
 
 ![script de ejemplo codificado en Base64](images/AMSI8.png)
 
-Para que las cosas más interesantes, podemos escribir este script manualmente en la línea de comandos para que no haya ningún archivo real para supervisar. Esto refleja lo que se conoce como una "amenaza sin archivos". No es tan sencillo como examinar archivos en disco. La amenaza podría ser una puerta trasera que solo se encuentra en la memoria de una máquina.
+Para que todo sea más interesante, podemos escribir este script manualmente en la línea de comandos para que no haya ningún archivo real que supervisar. Esto refleja lo que se conoce como una "amenaza sin archivos". No es tan sencillo como examinar archivos en disco. La amenaza podría ser una puerta trasera que solo se encuentra en la memoria de una máquina.
 
 A continuación, vemos el resultado de ejecutar el script en Windows PowerShell. Verá que Windows Defender el ejemplo de prueba de AMSI en este escenario complicado, simplemente mediante la firma de ejemplo de prueba de AMSI estándar.
 
@@ -51,7 +51,7 @@ En el flujo de trabajo que se muestra a continuación se describe el flujo de un
 - El usuario recibe un documento que contiene una macro (malintencionada) que evita los exámenes de software antivirus estáticos mediante técnicas como ofuscación, archivos protegidos con contraseña u otros.
 - A continuación, el usuario abre el documento que contiene la macro (malintencionada). Si el documento se abre en vista protegida, el usuario hace clic en **Habilitar** edición para salir de la vista protegida.
 - El usuario hace clic en **Habilitar macros** para permitir la ejecución de macros.
-- A medida que se ejecuta la macro, el tiempo de ejecución de VBA usa un búfer circular para registrar 1 datos y parámetros relacionados con las llamadas a las API \[ \] de Win32, COM y VBA.
+- A medida que se ejecuta la macro, el tiempo de ejecución de VBA usa un búfer circular para registrar 1 datos y parámetros relacionados con las llamadas a las API \[ \] win32, COM y VBA.
 - Cuando se observan api de Win32 o COM específicas que se consideran de alto riesgo (también conocidas como desencadenadores *)* 2, la ejecución de macros se detiene y el contenido del búfer circular se pasa a \[ \] AMSI.
 - El proveedor de servicios antimalware de AMSI registrado responde con un veredicto para indicar si el comportamiento de la macro es malintencionado o no.
 - Si el comportamiento no es malintencionado, la ejecución de macros continúa.
@@ -67,7 +67,7 @@ Como proveedor de software antivirus, puede considerar la posibilidad de impleme
 
 ## <a name="more-background-info-about-fileless-threats"></a>Más información general sobre las amenazas sin archivos
 
-Es posible que tenga curiosidad por obtener más información sobre los tipos de amenazas sin archivos que Windows AMSI está diseñado para ayudarle a defenderse. En esta sección, echaremos un vistazo al juego tradicional de gatos y mouse que se reproduce en el ecosistema de malware.
+Es posible que tenga curiosidad por obtener más información general sobre los tipos de amenazas sin archivos que Windows AMSI está diseñado para ayudarle a defenderse. En esta sección, echaremos un vistazo al juego tradicional de gatos y mouse que se desempeña en el ecosistema de malware.
 
 Usaremos PowerShell como ejemplo. Pero puede aprovechar las mismas técnicas y procesos que mostraremos con cualquier &mdash; lenguaje dinámico VBScript, Perl, Python, Ruby, etc.
 
@@ -81,9 +81,9 @@ Sin embargo, después de que la primera firma lo detecte, los autores de malware
 
 ![un ejemplo de un script dinámico](images/AMSI2.png)
 
-En ese escenario, los autores de malware crean una cadena que representa el script de PowerShell que se ejecutará. Pero usan una técnica simple de concatenación de cadenas para interrumpir la firma anterior. Si alguna vez ve el origen de una página web cargada de anuncios, verá que se usan muchas instancias de esta técnica para evitar el bloqueo de software.
+En ese escenario, los autores de malware crean una cadena que representa el script de PowerShell que se ejecutará. Pero usan una técnica simple de concatenación de cadenas para interrumpir la firma anterior. Si alguna vez ve el origen de una página web cargada de anuncios, verá muchas instancias de esta técnica que se usan para evitar el bloqueo de software de anuncios.
 
-Por último, el autor de malware pasa esta cadena concatenada al mecanismo de PowerShell del cmdlet para evaluar los scripts que se componen o `Invoke-Expression` crean en tiempo de &mdash; ejecución.
+Por último, el autor de malware pasa esta cadena concatenada al mecanismo de PowerShell del cmdlet para evaluar los scripts compuestos o creados `Invoke-Expression` &mdash; en tiempo de ejecución.
 
 En respuesta, el software antimalware empieza a realizar la emulación básica del lenguaje. Por ejemplo, si vemos dos cadenas concatenadas, emulamos la concatenación de esas dos cadenas y, a continuación, ejecutamos nuestras firmas en el resultado. Desafortunadamente, se trata de un enfoque bastante frágil, ya que los lenguajes tienden a tener muchas maneras de representar y concatenar cadenas.
 

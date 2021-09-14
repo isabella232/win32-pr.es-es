@@ -4,12 +4,12 @@ ms.assetid: F9907D49-F9FE-406A-BF5F-17C61706ADC1
 title: AJAX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4e683bb441642e8f9764ac0cfe8313d0aa0df92ae3276f986f5fdf6837d6c48
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 575ab08530936ab083baa4bb3fcfa2956ffe3b2d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119795925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249423"
 ---
 # <a name="ajax"></a>AJAX
 

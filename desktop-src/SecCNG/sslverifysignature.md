@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: b020f41822185dfc9e4e2513fc9e299bc35d9bbb258aaeddf6f1e1e8ea7b8cf9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb2a50a7f16062f271a89b6061e3f2fa2dd16685
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118905664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250329"
 ---
 # <a name="sslverifysignature-function"></a>Función SslVerifySignature
 
@@ -48,7 +48,7 @@ SECURITY_STATUS WINAPI SslVerifySignature(
 *hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia [*del proveedor Capa de sockets seguros protocolo*](/windows/desktop/SecGloss/s-gly) de protocolo de acceso (SSL).
+Identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo ssl (ssl).
 
 </dd> <dt>
 
@@ -114,7 +114,7 @@ Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 ## <a name="remarks"></a>Observaciones
 
-La **función SslVerifySignature** no se llama actualmente mediante Windows. Esta función es una parte necesaria de la interfaz del proveedor SSL y debe implementarse por completo para garantizar la compatibilidad con el reenvío.
+La **función SslVerifySignature** no se llama actualmente por Windows. Esta función es una parte necesaria de la interfaz del proveedor SSL y debe implementarse completamente para garantizar la compatibilidad con versiones adicionales.
 
 Las implementaciones actuales del [](/windows/desktop/SecGloss/t-gly) lado servidor de la conexión del protocolo de seguridad de la capa de transporte (TLS) llaman a la función [**NCryptVerifySignature**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptverifysignature) durante la autenticación del cliente para procesar el mensaje de comprobación del certificado.
 
@@ -126,7 +126,7 @@ Las implementaciones actuales del [](/windows/desktop/SecGloss/t-gly) lado servi
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

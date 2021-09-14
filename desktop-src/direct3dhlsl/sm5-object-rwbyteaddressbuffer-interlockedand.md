@@ -1,9 +1,9 @@
 ---
-title: Función RWByteAddressBuffer::InterlockedAnd
+title: RwByteAddressBuffer::InterlockedAnd (Función)
 description: Y el valor, de forma atómica.
 ms.assetid: c4024be0-3884-4af9-8075-76774c7c6178
 keywords:
-- Función InterlockedAnd HLSL
+- Función HLSL de InterlockedAnd
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8117729543d13b8c5578fd38a829cc0dba2a4d2d77885d32de006f4afad59f24
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a389da886b193815c7d4b2c1fe0a86db1f068fc7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117725170"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963563"
 ---
 # <a name="interlockedand-function"></a>Función InterlockedAnd
 
@@ -56,7 +56,7 @@ Valor de entrada.
 
 </dd> <dt>
 
-*valor \_ de salida* \[ original\]
+*valor \_ original de* \[ salida\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
@@ -69,7 +69,7 @@ El valor original.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta operación solo se puede realizar en recursos con tipo int o uint y variables de memoria compartida. Hay tres usos posibles para esta función. La primera es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza un atómico y de valor en el registro de memoria compartida al que hace referencia dest. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza una operación atómica y de valor en la ubicación del recurso a la que hace referencia dest. Por último, el tercer escenario es cuando R es un tipo de variable local. En este escenario, la función se reduce a y del valor de dest y value, almacenados en dest. La función sobrecargada tiene una variable de salida adicional que se establecerá en el valor original de dest. Esta operación sobrecargada solo está disponible cuando R es legible y grabable.
 
@@ -77,7 +77,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| VS  | Hs  | DS  | GS  | PS  | CS  |
+| VS  | HS  | DS  | GS  | PS  | CS  |
 |-----|-----|-----|-----|-----|-----|
 | x   | x   |  x  | x   | x   | x   |
 
@@ -85,14 +85,14 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

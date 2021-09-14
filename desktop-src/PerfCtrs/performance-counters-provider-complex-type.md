@@ -10,11 +10,11 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 94654c538cc0637e6c90e0b14d3433b979762b00
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250611"
 ---
 # <a name="provider-complex-type"></a>provider Complex Type (Tipo complejo de proveedor)
 
@@ -199,7 +199,7 @@ Define un proveedor y los contadores que proporciona.
 <tr class="even">
 <td>providerName</td>
 <td><strong>xs:string</strong></td>
-<td>Nombre que se usa para crear el nombre de clase Win32_PerfRawData WMI. Si no especifica un nombre, &quot; se usa Counters &quot; como nombre de la clase.<br/></td>
+<td>Nombre que se usa para crear el nombre de clase wmi Win32_PerfRawData clase. Si no especifica un nombre, &quot; se usa Counters &quot; como nombre de la clase.<br/></td>
 </tr>
 <tr class="odd">
 <td>providerType</td>

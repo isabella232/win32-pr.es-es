@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e6577dbe378eb2a4ca3edf4366b5f61dbbd4bdcd02b5d8a6b9ee65652879d0bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf93085b8e78913d561be5413ebe291c69bdf777
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119107237"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962840"
 ---
 # <a name="jet_retrievecolumntostring-method"></a>JET_RETRIEVECOLUMN. Método ToString
 
@@ -57,7 +57,7 @@ public override string ToString()
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.String](/dotnet/api/system.string)  
-Cadena [que](/dotnet/api/system.string) representa el objeto [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md).  
+Cadena [que](/dotnet/api/system.string) representa el [objeto](./jet-retrievecolumn-class.md)JET_RETRIEVECOLUMN .  
 
 ## <a name="see-also"></a>Consulte también
 

@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 704fcb3205f032654ef6a666dd119dec34f88992018f16b1715ba4982847149d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe98a06daf84ec753c26903cc09787cec65c8d10
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118131665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968688"
 ---
 # <a name="registrationinfotype-complex-type"></a>registrationInfoType Complex Type
 
-Define los elementos secundarios y la información de secuenciación para el [**elemento RegistrationInfo.**](taskschedulerschema-registrationinfo-tasktype-element.md)
+Define los elementos secundarios y la información de secuenciación para [**el elemento RegistrationInfo.**](taskschedulerschema-registrationinfo-tasktype-element.md)
 
 ``` syntax
 <xs:complexType name="registrationInfoType">
@@ -75,7 +75,7 @@ Define los elementos secundarios y la información de secuenciación para el [**
 | [**Documentación**](taskschedulerschema-documentation-registrationinfotype-element.md)           | string   | Especifica cualquier documentación adicional para la tarea.<br/>                                                    |
 | [**SecurityDescriptor**](taskschedulerschema-securitydescriptor-registrationinfotype-element.md) | string   | Especifica el descriptor de seguridad de la tarea.<br/>                                                          |
 | [**Fuente**](taskschedulerschema-source-registrationinfotype-element.md)                         | string   | Especifica de dónde se originó la tarea. Por ejemplo, desde un componente, servicio, aplicación o usuario.<br/> |
-| [**Identificador URI**](taskschedulerschema-uri-registrationinfotype-element.md)                               | anyURI   | Especifica el URI de la tarea.<br/>                                                                          |
+| [**URI**](taskschedulerschema-uri-registrationinfotype-element.md)                               | anyURI   | Especifica el URI de la tarea.<br/>                                                                          |
 | [**Versión**](taskschedulerschema-version-registrationinfotype-element.md)                       | string   | Especifica el número de versión de la tarea.<br/>                                                               |
 
 
@@ -84,18 +84,18 @@ Define los elementos secundarios y la información de secuenciación para el [**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

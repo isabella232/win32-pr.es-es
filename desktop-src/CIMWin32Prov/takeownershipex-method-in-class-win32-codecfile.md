@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 04af6ed0953f25c5b02e988569eecad806ae62cb4757463831132e3c22dd40b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36512d48fe724da42c39c0d3d0686a706f54472d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119546645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970275"
 ---
-# <a name="takeownershipex-method-of-the-win32_codecfile-class"></a>Método TakeOwnerShipEx de la clase CodecFile de Win32 \_
+# <a name="takeownershipex-method-of-the-win32_codecfile-class"></a>Método TakeOwnerShipEx de la clase CodecFile win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShipEx** obtiene la propiedad del archivo de códec lógico especificado en la ruta de acceso del objeto. Este método es una versión extendida del [**método TakeOwnerShip.**](takeownership-method-in-class-win32-directory.md) Si el archivo lógico es realmente un directorio, este método actúa de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,21 +47,21 @@ uint32 TakeOwnerShipEx(
 *StopFileName* \[ out\]
 </dt> <dd>
 
-Nombre del archivo o directorio en el que el **método TakeOwnerShipEx ha fallado.** Este parámetro será **NULL si** el método se realiza correctamente.
+Nombre del archivo o directorio en el que se ha **fallado el método TakeOwnerShipEx.** Este parámetro será **NULL si** el método se realiza correctamente.
 
 </dd> <dt>
 
-*StartFileName* \[ in, opcional\]
+*StartFileName* \[ en, opcional\]
 </dt> <dd>
 
-Denomina el archivo o directorio secundario que se usará como punto de partida **para TakeOwnerShipEx.** El *parámetro StartFileName suele* ser el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL**, la operación se realiza en el archivo o directorio especificado en la **llamada a ExecMethod.**
+Denomina el archivo o directorio secundario que se usará como punto de partida **para TakeOwnerShipEx.** El *parámetro StartFileName* suele ser el *parámetro StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL,** la operación se realiza en el archivo o directorio especificado en la **llamada a ExecMethod.**
 
 </dd> <dt>
 
-*Recursiva* \[ in, opcional\]
+*Recursivo* \[ en, opcional\]
 </dt> <dd>
 
-Si **es true,** el cambio de propiedad se aplicará de forma recursiva a los archivos y directorios del directorio especificado por la instancia [**de \_ LogicalFile de CIM.**](cim-logicalfile.md) Nota: En el caso de las instancias de archivo, se omite el parámetro de entrada *recursivo.*
+Si **es true**, el cambio de propiedad se aplicará de forma recursiva a los archivos y directorios dentro del directorio especificado por la instancia de [**\_ LogicalFile de CIM.**](cim-logicalfile.md) Nota: En el caso de las instancias de archivo, se omite el parámetro de entrada *recursivo.*
 
 </dd> </dl>
 
@@ -137,7 +137,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha infringido el uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -166,7 +166,7 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -176,14 +176,14 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**CódecFile de \_ Win32**](win32-codecfile.md)
+[**CodecFile de Win32 \_**](win32-codecfile.md)
 </dt> </dl>
 
  

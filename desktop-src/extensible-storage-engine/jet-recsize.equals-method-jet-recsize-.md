@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 62a99854f2c32dd6aa40cb69e28621814063e8d9acd3fbf6d428ca4298ace311
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ecc4aff26b80754d47fdffb70dbdeb1963cf065f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120093435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969060"
 ---
 # <a name="jet_recsizeequals-method-jet_recsize"></a>JET_RECSIZE. Método Equals (JET_RECSIZE)
 
@@ -57,7 +57,7 @@ public bool Equals(
 
 #### <a name="parameters"></a>Parámetros
 
-  - Otros  
+  - otro  
     Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE](./jet-recsize-structure2.md)  
     
     Objeto que se va a comparar con esta instancia.

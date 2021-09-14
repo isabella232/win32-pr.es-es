@@ -1,5 +1,5 @@
 ---
-description: Describe una clave vectorial para su uso en la animación de fotogramas clave. Especifica un vector en un momento dado. Se usa para las claves de escalado y traducción.
+description: Describe una clave vectorial para usarla en la animación de fotogramas clave. Especifica un vector en un momento dado. Se usa para las claves de escalado y traducción.
 ms.assetid: 7a7ba2ce-c9f3-4a04-b865-39de9070868b
 title: D3DXKEY_VECTOR3 estructura (D3dx9anim.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 0214582b3fb1267caeb30a6cca905cbf7243ecf5dd1af40365841b315359317f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 41aec16da30a6e8742290b747b844b7fb22f6650
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120119185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966756"
 ---
-# <a name="d3dxkey_vector3-structure"></a>D3DXKEY \_ VECTOR3 (estructura)
+# <a name="d3dxkey_vector3-structure"></a>Estructura D3DXKEY \_ VECTOR3
 
-Describe una clave vectorial para su uso en la animación de fotogramas clave. Especifica un vector en un momento dado. Se usa para las claves de escalado y traducción.
+Describe una clave vectorial para usarla en la animación de fotogramas clave. Especifica un vector en un momento dado. Se usa para las claves de escalado y traducción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ typedef struct D3DXKEY_VECTOR3 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

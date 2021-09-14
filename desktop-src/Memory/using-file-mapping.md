@@ -4,12 +4,12 @@ ms.assetid: 4da527b7-7e40-43b7-b6f4-989b5a7aa096
 title: Uso de la asignación de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa8e20d2b60811f7bfa0d24851bece5ad4049bef53c5dba9d7c25d4df25ff74f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a58bb5c9ec6efd856e5267830ab27011cf550b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117992477"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159797"
 ---
 # <a name="using-file-mapping"></a>Uso de la asignación de archivos
 

@@ -1,5 +1,5 @@
 ---
-description: La relación CIM ControlledBy indica qué dispositivos son controlados por el dispositivo lógico del controlador o a los que se accede a \_ través de ellos.
+description: La relación CIM ControlledBy indica qué dispositivos son controlados por el dispositivo lógico del controlador o a los que se accede a través \_ de ellos.
 ms.assetid: 6aa4e088-32a0-4c88-bb82-341b6ab53b4c
 ms.tgt_platform: multiple
 title: CIM_ControlledBy clase (proveedores WMI CIMWin32)
@@ -21,19 +21,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: efaf4d0d9312e929fa79d689490bd9e5b6a3e164dfdecafaf7cd9fe87b16990d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 315eea9fa207a92c3aa1add6fe021127dc3949d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174097"
 ---
 # <a name="cim_controlledby-class-cimwin32-wmi-providers"></a>CIM_ControlledBy clase (proveedores WMI CIMWin32)
 
 La **relación \_ CIM ControlledBy** indica qué dispositivos son controlados por el dispositivo lógico del controlador o a los que se accede a través de ellos.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -55,7 +55,7 @@ class CIM_ControlledBy : CIM_DeviceConnection
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM ControlledBy** tiene estos tipos de miembros:
 
@@ -76,7 +76,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el controlador está comandoando activamente o accediendo al dispositivo. Esta información es necesaria cuando varios controladores pueden usar o acceder a un dispositivo lógico.
+Indica si el controlador está comandando activamente o accediendo al dispositivo. Esta información es necesaria cuando varios controladores pueden usar o acceder a un dispositivo lógico.
 
 <dt>
 
@@ -122,13 +122,13 @@ Controlador [**CIM \_ que**](cim-controller.md) representa el controlador.
 **Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ LogicalDevice**
+Tipo de datos: **\_ Cim LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
 Un [**dispositivo \_ lógico CIM**](cim-logicaldevice.md) que representa el dispositivo controlado.
@@ -147,7 +147,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
-Cuando son posibles varios anchos de datos de conexión o bus, esta propiedad define el que se usa entre los dispositivos. El ancho de los datos se especifica en bits. Si no se negocia el ancho de los datos, o si esta información no está disponible o no es importante para la administración de dispositivos, la propiedad debe establecerse en 0 (cero).
+Cuando son posibles varios anchos de datos de conexión o bus, esta propiedad define el que se usa entre los dispositivos. El ancho de datos se especifica en bits. Si no se negocia el ancho de datos o si esta información no está disponible o es importante para la administración de dispositivos, la propiedad debe establecerse en 0 (cero).
 
 Esta propiedad se hereda de [**CIM \_ DeviceConnection.**](cim-deviceconnection.md)
 
@@ -167,7 +167,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit
 
 Cuando son posibles varias velocidades de conexión o bus, esta propiedad define la que se usa entre los dispositivos. La velocidad se especifica en bits por segundo. Si no se negocian las velocidades de conexión o bus, o si esta información no está disponible o es importante para la administración de dispositivos, la propiedad debe establecerse en 0 (cero).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 Esta propiedad se hereda de [**CIM \_ DeviceConnection.**](cim-deviceconnection.md)
 
@@ -182,7 +182,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de restablecimientos de seguridad emitidos por el controlador. Un restablecimiento de seguridad devuelve el dispositivo a su estado de inicialización o arranque. Se pierden toda la información y los datos internos del estado del dispositivo.
+Número de restablecimientos de seguridad emitidos por el controlador. Un restablecimiento duro devuelve el dispositivo a su estado de inicialización o arranque. Se pierden toda la información y los datos internos del estado del dispositivo.
 
 </dd> <dt>
 
@@ -199,19 +199,19 @@ Número de restablecimientos de programación emitidos por el controlador. Un re
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CIM ControlledBy** se deriva de [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
 
 WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ ControlledBy**, vea [Clases win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

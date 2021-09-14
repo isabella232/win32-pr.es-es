@@ -4,12 +4,12 @@ ms.assetid: 352867e1-025f-4adb-be32-f7941c0ec8cf
 title: EC_OPENING_FILE (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 436a48a90640577504871dfe835d6c81c398680ae070065189cb4031493e7fc3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bf275a2f9b64f9a30c8049b5207622270edc5098
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161532"
 ---
 # <a name="ec_opening_file"></a>ARCHIVO \_ DE APERTURA DE \_ EC
 
@@ -37,7 +37,7 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un filtro puede enviar este evento si dedica mucho tiempo a abrir un archivo. (Por ejemplo, el archivo podría encontrarse en una red). La aplicación puede usar este evento para ajustar su interfaz de usuario.
 
@@ -51,7 +51,7 @@ Un filtro puede enviar este evento si dedica mucho tiempo a abrir un archivo. (P
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

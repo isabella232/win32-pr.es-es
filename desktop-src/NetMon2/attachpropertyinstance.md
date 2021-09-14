@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: c4d726b7500fd890dfe8c7fdc39f628c185dbe35f3a3bc14f0c05ab7f85cd673
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 50ab07967605f8a24ba330a3cb13f80c833cf542
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119744685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069354"
 ---
 # <a name="attachpropertyinstance-function"></a>Función AttachPropertyInstance
 
@@ -100,7 +100,7 @@ Valor de campo BIT que indica el orden de los BIT dentro de una propiedad. Los a
 
 | Value                                                                                                                                                         | Significado                                                         |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <span id="IFLAG_ERROR"></span><span id="iflag_error"></span><dl> <dt>**ERROR DE IFLAG \_**</dt> </dl>       | Los datos del marco tienen un error.<br/>                      |
+| <span id="IFLAG_ERROR"></span><span id="iflag_error"></span><dl> <dt>**ERROR \_ DE IFLAG**</dt> </dl>       | Los datos del marco tienen un error.<br/>                      |
 | <span id="IFLAG_SWAPPED"></span><span id="iflag_swapped"></span><dl> <dt>**IFLAG \_ SWAPPED**</dt> </dl> | En el momento de la **asociación,** el byte WORD es un formato que no es Intel.<br/> |
 | <span id="IFLAG_UNICODE"></span><span id="iflag_unicode"></span><dl> <dt>**IFLAG \_ UNICODE**</dt> </dl> | En el momento de la **asociación, STRING** es Unicode.<br/>               |
 
@@ -116,7 +116,7 @@ Si la función se realiza correctamente, el valor devuelto es **TRUE.**
 
 Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se **llama a la función AttachPropertyInstance** durante la implementación de la función de exportación [**AttachProperties.**](attachproperties.md) Cuando se adjunta una propiedad a los datos, Monitor de red crea una [**estructura PROPERTYINST**](propertyinst.md) que define la instancia de la propiedad adjunta.
 
@@ -147,7 +147,7 @@ Durante la implementación de [**AttachProperties,**](attachproperties.md)llame 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
