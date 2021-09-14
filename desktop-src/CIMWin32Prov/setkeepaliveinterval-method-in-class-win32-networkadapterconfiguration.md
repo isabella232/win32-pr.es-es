@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5ca52cbc68c834d5216920334763d4de5c982702b8cc562db88ceed7b6de0f12
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2ce6a1491fd9e414f503d0165216794c67db0e97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174085"
 ---
 # <a name="setkeepaliveinterval-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetKeepAliveInterval de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetKeepAliveInterval** se usa para establecer el intervalo que separa las retransmisiones Keep Alive hasta que se recibe una respuesta.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,7 +73,7 @@ Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
-**Método no admitido en esta plataforma**
+**Método no compatible con esta plataforma**
 </dt> <dd>
 
 64
@@ -312,7 +312,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de límites.
+Parámetro fuera de los límites.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -379,7 +379,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se podrían liberar o renovar**
+**No todas las concesiones DHCP se pueden liberar o renovar**
 </dt> <dd>
 
 98
@@ -404,13 +404,13 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Después de recibir una respuesta, el retraso hasta la siguiente transmisión keep alive se controla de nuevo mediante el valor de [**la propiedad KeepAliveTime.**](win32-networkadapterconfiguration.md) La conexión finaliza después de que el número de retransmisiones especificado por la propiedad **TcpMaxDataRetransmissions** haya quedo sin respuesta.
+Después de recibir una respuesta, el retraso hasta la siguiente transmisión Keep Alive se controla de nuevo mediante el valor de [**la propiedad KeepAliveTime.**](win32-networkadapterconfiguration.md) La conexión finaliza después de que el número de retransmisiones especificado por la **propiedad TcpMaxDataRetransmissions** haya quedo sin respuesta
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo Modify [the Keep Alive Interval for all Network Adapters](https://Gallery.TechNet.Microsoft.Com/f6d4a0e7-5b59-42e3-888d-82a028e2bf35) VBScript (Modificar el intervalo de conexión continua para todos los adaptadores de red de VBScript) configura el intervalo de mantenimiento activo para todos los adaptadores de red de un equipo en 300 00 milisegundos (5 minutos).
+El ejemplo Modificar [el](https://Gallery.TechNet.Microsoft.Com/f6d4a0e7-5b59-42e3-888d-82a028e2bf35) intervalo de conexión continua para todos los adaptadores de red de VBScript configura el intervalo de conexión continua para todos los adaptadores de red de un equipo en 300 00 milisegundos (5 minutos).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -436,7 +436,7 @@ El ejemplo Modify [the Keep Alive Interval for all Network Adapters](https://Gal
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

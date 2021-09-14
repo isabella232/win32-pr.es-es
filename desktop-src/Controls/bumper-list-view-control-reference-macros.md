@@ -4,12 +4,12 @@ description: Macros de vista de lista
 ms.assetid: b0fd0c7c-3902-4b8a-9f22-74b44ac3dea7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8699511b10573f1a0bb5a65d6953c8ed4b913d8816df86c3337e1aeb3d6e301
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27a3faf6106cc42944c5c0be698396ee56296d59
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118673257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174225"
 ---
 # <a name="list-view-macros"></a>Macros de vista de lista
 
@@ -125,7 +125,7 @@ ms.locfileid: "118673257"
 -   [**ListView \_ SetInfoTip**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setinfotip)
 -   [**ListView \_ SetInsertMark**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setinsertmark)
 -   [**ListView \_ SetInsertMarkColor**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setinsertmarkcolor)
--   [**ListView \_ SetItem**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitem)
+-   [**SetItem de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitem)
 -   [**ListView \_ SetItemCount**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemcount)
 -   [**ListView \_ SetItemCountEx**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemcountex)
 -   [**ListView \_ SetItemIndexState**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemindexstate)
@@ -149,7 +149,7 @@ ms.locfileid: "118673257"
 -   [**ListView \_ SortItemsEx**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sortitemsex)
 -   [**ListView \_ SubItemHitTest**](/windows/desktop/api/Commctrl/nf-commctrl-listview_subitemhittest)
 -   [**ListView \_ SubItemHitTestEx**](/windows/desktop/api/Commctrl/nf-commctrl-listview_subitemhittestex)
--   [**Actualización \_ de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_update)
+-   [**Actualización de \_ ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_update)
 
  
 

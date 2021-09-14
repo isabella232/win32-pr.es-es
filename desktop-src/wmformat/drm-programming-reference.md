@@ -13,24 +13,24 @@ keywords:
 - DRM (administración de derechos digitales), API extendidas de cliente
 - administración de derechos digitales (DRM), API extendidas
 - DRM (administración de derechos digitales), API extendidas
-- administración de derechos digitales (DRM), API
-- DRM (administración de derechos digitales), API
-- digital rights management (DRM), referencia de programación
-- DRM (administración de derechos digitales), referencia de programación
+- administración de derechos digitales (DRM),API
+- DRM (administración de derechos digitales),API
+- administración de derechos digitales (DRM), referencia de programación
+- DRM (administración de derechos digitales),referencia de programación
 - API extendidas de cliente DRM, referencia de programación
 - API extendidas de cliente, referencia de programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fcae34de5f573172bb1067bd0118f66a1039c82a1ac5c4594e888bdffa3f654
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0dd24b2bc65e2a7bc11476258ce7f863245c3483
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118029312"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359922"
 ---
 # <a name="microsoft-windows-media-drm-client-programming-reference"></a>Referencia de programación de cliente drm de Microsoft Windows Media
 
-Esta referencia incluye información sobre los elementos de programación de C++ admitidos por las API extendidas de Windows DRM multimedia. Se divide en las secciones siguientes.
+Esta referencia incluye información sobre los elementos de programación de C++ admitidos por Windows API extendidas del cliente DRM multimedia. Se divide en las secciones siguientes.
 
 -   [Funciones](drm-functions.md)
 -   [Interfaces](drm-interfaces.md)
@@ -42,7 +42,7 @@ Esta referencia incluye información sobre los elementos de programación de C++
 
 <dl> <dt>
 
-[**Windows API extendidas de cliente DRM multimedia**](windows-media-drm-client-extended-apis.md)
+[**Windows API extendidas del cliente DRM multimedia**](windows-media-drm-client-extended-apis.md)
 </dt> </dl>
 
  

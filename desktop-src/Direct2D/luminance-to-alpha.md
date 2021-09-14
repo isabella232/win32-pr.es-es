@@ -6,12 +6,12 @@ keywords:
 - efecto de luminosidad a alfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 803070fea76b47c1334803a4e7f8fef510cc77c8b3bc05c8477b572cb0451670
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8fb4c6fb78a1d49498b2adab6716d41e93d30deb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117825266"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162709"
 ---
 # <a name="luminance-to-alpha-effect"></a>Efecto de luminosidad a alfa
 
@@ -26,7 +26,7 @@ El CLSID para este efecto es CLSID \_ D2D1LuminanceToAlpha.
 
 ## <a name="example-image"></a>Imagen de ejemplo
 
-En este ejemplo se muestra la salida de la luminosidad al efecto alfa compuesto sobre una superficie blanca para mostrar opacidad.
+En este ejemplo se muestra la salida del efecto de luminosidad a alfa compuesto sobre una superficie blanca para mostrar la opacidad.
 
 
 
@@ -73,7 +73,7 @@ Este efecto consume y genera imágenes alfa premultiplicadas. El efecto no funci
 
 > [!Note]
 >
-> Dado que las imágenes se almacenan en un formato compensado por gamma, antes de calcular la luminosidad de una imagen, primero debe realizar la corrección gamma inversa para obtener los valores de color verdaderos de la imagen. Dado que las imágenes se almacenan normalmente en 2,2 gamma, puede usar el efecto de transferencia Gamma con un exponente de (1/2.2) y, a continuación, usar la salida de ese efecto.
+> Dado que las imágenes se almacenan en un formato compensado por gamma, antes de calcular la luminosidad de una imagen, primero debe realizar una corrección gamma inversa para obtener los valores de color verdaderos de la imagen. Puesto que las imágenes se almacenan normalmente en 2,2 gamma, puede usar el efecto de transferencia Gamma con un exponente de (1/2.2) y, a continuación, usar la salida de ese efecto.
 
  
 
@@ -81,11 +81,11 @@ Este efecto consume y genera imágenes alfa premultiplicadas. El efecto no funci
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio Windows aplicaciones de la \| Tienda\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio Windows aplicaciones de la \| Tienda\] |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

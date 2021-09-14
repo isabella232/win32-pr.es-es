@@ -4,12 +4,12 @@ ms.assetid: 14ae2c97-8596-46db-a55c-ef706d2cd00b
 title: Documentos XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 587f9b421c64287647e39d13d98a9f826f591d7be907ac14df21d649b3a66c80
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 625c2f04a43db9433fe125b52a4bbc08e37fb4f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120092124"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359716"
 ---
 # <a name="xps-documents"></a>Documentos XPS
 
@@ -49,14 +49,14 @@ Microsoft proporciona varias tecnologías de documentos diferentes para admitir 
 
     .NET Framework 3.0 se admite en Windows XP con Service Pack 2 (SP2) y versiones posteriores de sistemas operativos cliente de Windows, y en Windows Server 2003 con Service Pack 2 (SP2) y versiones posteriores de sistemas operativos de servidor Windows.
 
-    .NET Framework 3.5 se admite en versiones de Windows XP de sistemas operativos cliente de Windows y en Windows Server 2003 y versiones posteriores de Windows Server.
+    .NET Framework 3.5 se admite en versiones de Windows XP de sistemas operativos cliente de Windows y en Windows Server 2003 y versiones posteriores de Windows server operating systems.
 
     > [!Note]  
     > Se recomienda el uso de .NET Framework para crear documentos XPS solo en aplicaciones cliente, no en aplicaciones de servidor a menos que la aplicación se cierre periódicamente, como lo haría si fuera una aplicación cliente.
 
      
 
-    Para obtener más información sobre la compatibilidad con documentos .NET Framework, [vea Windows Presentation Foundation Documents](/previous-versions/dotnet/netframework-3.0/ms749165(v=vs.85)).
+    Para obtener más información sobre la compatibilidad con documentos .NET Framework, vea [Windows Presentation Foundation Documents](/previous-versions/dotnet/netframework-3.0/ms749165(v=vs.85)).
 
 > [!Note]  
 > Para trabajar con documentos XPS en un programa, use la API de documentos XPS nativa o el .NET Framework; No se admite el uso simultáneo de ambos en el mismo programa.

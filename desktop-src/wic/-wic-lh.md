@@ -5,23 +5,23 @@ title: Windows Imaging Component
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f00bb18e2e432abbe3cfb3b72d28ceb4182e63ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277772"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247557"
 ---
 # <a name="windows-imaging-component"></a>Windows Imaging Component
 
 ## <a name="purpose"></a>Propósito
 
-El componente de creación de imágenes de Windows (WIC) es una plataforma extensible que proporciona una API de bajo nivel para imágenes digitales.  WIC admite los formatos de imagen web estándar, imágenes de rango dinámico alto y datos de cámara sin procesar.  WIC también admite características adicionales, como:
+El Windows Imaging Component (WIC) es una plataforma extensible que proporciona una API de bajo nivel para imágenes digitales.  WIC admite los formatos de imagen web estándar, imágenes de alto rango dinámico y datos de cámara sin procesar.  WIC también admite características adicionales, como:
 
 -   Compatibilidad integrada con formatos de metadatos estándar
 -   Marco extensible para códecs de imagen, formatos de píxeles y formatos de metadatos.
--   Gran variedad de compatibilidad con el formato de píxeles.
--   Compatibilidad de alto color; incluye formatos de intervalo extendido de 30 bits, alta precisión de 30 bits y alta precisión de 48 bits y de gama ancha.
--   Descodificación de imágenes progresivas.
+-   Amplia gama de compatibilidad con formato de píxel.
+-   Compatibilidad con colores altos; incluidos el intervalo extendido de 30 bits, la alta precisión de 30 bits y los formatos de píxeles anchos y de alta precisión de 48 bits.
+-   Decoding de imágenes progresivas.
 
 ## <a name="developer-audience"></a>Audiencia de los desarrolladores
 

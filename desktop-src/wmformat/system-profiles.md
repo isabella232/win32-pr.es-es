@@ -10,22 +10,22 @@ keywords:
 - Formato de sistemas avanzados (ASF), iDs de perfil
 - ASF (formato de sistemas avanzados), iDs de perfil
 - perfiles del sistema, lista de
-- profile IDs (IDs de perfil)
+- profile IDs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6389f82e93a0b27c079bd75ded9eb7d35d78a380ab72d244c5443c07f4c9ed5e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eeca66023e6de6aba9c07a6bcb84a73756e316a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359562"
 ---
 # <a name="system-profiles"></a>Perfiles del sistema
 
 La tabla siguiente contiene la lista completa de perfiles de sistema admitidos. Cada perfil de la lista tiene un nombre y un identificador de perfil. El identificador de perfil es una constante establecida en el valor GUID asignado al perfil del sistema. Para usar los iDs de perfil del sistema en el código, debe incluir wmsysprf.h en la aplicación. Para obtener ejemplos que muestran cómo cargar un perfil de sistema, vea [Para cargar un perfil de sistema.](to-load-a-system-profile.md)
 
 > [!IMPORTANT]
-> Los perfiles que se enumeran a continuación usan la versión 8 Windows códecs De audio multimedia Windows vídeo multimedia. No hay perfiles de sistema predefinidos que usen los códecs Windows serie Media 9. Puede crear su propio perfil Windows serie Media 9 mediante un perfil de la versión 8 como punto de partida. Para obtener más información, [vea Reusing Stream Configurations](reusing-stream-configurations.md).
+> Los perfiles que se enumeran a continuación usan la versión 8 Windows códecs De audio multimedia Windows vídeo multimedia. No hay perfiles de sistema predefinidos que usen los códecs Windows media 9 series. Puede crear su propio perfil Windows serie Media 9 mediante un perfil de la versión 8 como punto de partida. Para obtener más información, [vea Reusing Stream Configurations](reusing-stream-configurations.md).
 
  
 
@@ -36,8 +36,8 @@ La tabla siguiente contiene la lista completa de perfiles de sistema admitidos. 
 | Windows Vídeo multimedia 8 para pc de cartera de colores (225 Kbps)                             | WMProfile \_ V80 \_ 255VideoPDA    | Use este perfil al crear archivos de vídeo para su reproducción en equipos de color más rápidos.                                                                                 |
 | Windows Vídeo multimedia 8 para pc de cartera de colores (150 Kbps)                             | WMProfile \_ V80 \_ 150VideoPDA    | Use este perfil al crear archivos de vídeo para su reproducción en la mayoría de los equipos de Pocket.                                                                                         |
 | Windows Vídeo multimedia 8 para módems de acceso telefónico o ISDN de canal único (de 28,8 a 56 Kbps) | WMProfile \_ V80 \_ 28856VideoMBR  | Use este perfil de velocidad de bits múltiple para audiencias de destino con módems de acceso telefónico o conexiones ISDN de canal único (el ancho de banda está entre 28,8 Kbps y 56 Kbps).        |
-| Windows Vídeo multimedia 8 para LAN, módem por cable o xDSL (de 100 a 768 Kbps)             | WMProfile \_ V80 \_ 100768VideoMBR | Use este perfil de velocidad de bits múltiple para audiencias de destino con conexiones ISDN, LAN, módem de cable o xDSL de doble canal (el ancho de banda está entre 100 Kbps y 500 Kbps). |
-| Windows Vídeo multimedia 8 para módems de acceso telefónico o LAN (de 28,8 a 100 Kbps)                | WMProfile \_ V80 \_ 288100VideoMBR | Use este perfil de velocidad de bits múltiple para audiencias de destino con conexiones ISDN de módem de acceso telefónico, LAN o de canal doble (el ancho de banda está entre 28,8 y 100 Kbps).         |
+| Windows Vídeo multimedia 8 para LAN, módem de cable o xDSL (de 100 a 768 Kbps)             | WMProfile \_ V80 \_ 100768VideoMBR | Use este perfil de velocidad de bits múltiple para audiencias de destino con conexiones ISDN de doble canal, LAN, módem de cable o xDSL (el ancho de banda está entre 100 Kbps y 500 Kbps). |
+| Windows Vídeo multimedia 8 para módems de acceso telefónico o LAN (de 28,8 a 100 Kbps)                | WMProfile \_ V80 \_ 288100VideoMBR | Use este perfil de velocidad de bits múltiple para las audiencias de destino con conexiones ISDN de módem de acceso telefónico, LAN o de canal dual (el ancho de banda está entre 28,8 y 100 Kbps).         |
 | Windows Vídeo multimedia 8 para módems de acceso telefónico (28,8 Kbps)                              | WMProfile \_ V80 \_ 288Video       | Use este perfil para la entrega de audio y vídeo de baja velocidad de bits a través de conexiones de acceso telefónico de 28,8 Kbps.                                                                          |
 | Windows Vídeo multimedia 8 para módems de acceso telefónico (56 Kbps)                                | WMProfile \_ V80 \_ 56Video        | Use este perfil para la entrega de audio y vídeo de baja velocidad de bits a través de conexiones de acceso telefónico de 56 Kbps.                                                                            |
 | Windows Vídeo multimedia 8 para red de área local (100 Kbps)                           | WMProfile \_ V80 \_ 100Video       | Use este perfil para la entrega de velocidad de bits media a través de conexiones ISDN, LAN o módem de cable de doble canal.                                                              |
@@ -55,7 +55,7 @@ La tabla siguiente contiene la lista completa de perfiles de sistema admitidos. 
 | Windows Audio multimedia 8 para módem de acceso telefónico (calidad de CD, 64 Kbps)                     | WMProfile \_ V80 \_ 64StereoAudio  | Use este perfil para públicos de destino con conexiones a Internet o LAN de alta velocidad.                                                                                  |
 | Windows Audio multimedia 8 para ISDN (mejor que la calidad de CD, 96 Kbps)                  | WMProfile \_ V80 \_ 96StereoAudio  | Use este perfil para públicos de destino con conexiones a Internet o LAN de alta velocidad.                                                                                  |
 | Windows Audio multimedia 8 para ISDN (mejor que la calidad de CD, 128 Kbps)                 | WMProfile \_ V80 \_ 128StereoAudio | Use este perfil para públicos de destino con conexiones a Internet o LAN de alta velocidad.                                                                                  |
-| Windows Vídeo multimedia 8 para módem telefónico (sin audio, 28,8 Kbps)                     | WMProfile \_ V80 \_ 288VideoOnly   | Use este perfil al crear contenido de solo vídeo para públicos de destino con módems de acceso telefónico.                                                                         |
+| Windows Vídeo multimedia 8 para módem de acceso telefónico (sin audio, 28,8 Kbps)                     | WMProfile \_ V80 \_ 288VideoOnly   | Use este perfil al crear contenido de solo vídeo para públicos de destino con módems de acceso telefónico.                                                                         |
 | Windows Vídeo multimedia 8 para módem de acceso telefónico (sin audio, 56 Kbps)                       | WMProfile \_ V80 \_ 56VideoOnly    | Use este perfil al crear contenido de solo vídeo para públicos de destino con módems de acceso telefónico.                                                                         |
 | Windows Media 8 Fair Quality based VBR for Broadband                              | WMProfile \_ V80 \_ FAIRVBRVideo   | Perfil de alta calidad basado en la calidad del contenido de VBR que está restringido por la calidad.                                                                                     |
 | Windows Media 8 Alta calidad basada en VBR para banda ancha.                             | WMProfile \_ V80 \_ HIGHVBRVideo   | Perfil de alta a mejor calidad basado en el contenido de VBR que está restringido por la calidad.                                                                                     |

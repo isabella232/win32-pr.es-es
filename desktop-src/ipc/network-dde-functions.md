@@ -4,12 +4,12 @@ ms.assetid: 5fd61759-1792-4db0-9ad4-adf112294b9c
 title: Funciones DDE de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4b37e83dd6b335e1acd2e77010fa61d0da5e3e26af5b46eef54d5ee20cf2eb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16e5ae6a38ec6324cf33b4f9c4ffc1af44473699
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118756314"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359155"
 ---
 # <a name="network-dde-functions"></a>Funciones DDE de red
 

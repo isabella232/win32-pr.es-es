@@ -1,19 +1,19 @@
 ---
 title: Efecto de pósterización
-description: El efecto de pósterización reduce el número de colores únicos de una imagen.
+description: El efecto de pósterización reduce el número de colores únicos en una imagen.
 ms.assetid: e6686998-1246-b3b7-6f4f-212568c3191c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21372ee43935441168609cc81ef053ac96fd3fdbbd7cd3c16578f13d1a47fda1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2c98c55154300f7b29c23c24e97570335c6e930f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119636114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162641"
 ---
 # <a name="posterize-effect"></a>Efecto de pósterización
 
-El efecto de pósterización reduce el número de colores únicos de una imagen.
+El efecto de pósterización reduce el número de colores únicos en una imagen.
 
 El CLSID para este efecto es CLSID \_ D2D1Posterize.
 
@@ -50,7 +50,7 @@ m_d2dContext->EndDraw();
 
 ## <a name="effect-properties"></a>Propiedades de efecto
 
-Las propiedades del efecto posterize se definen mediante la [**enumeración \_ POSTERIZE \_ PROP de D2D1.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_posterize_prop)
+Las propiedades del efecto de pósterización se definen mediante la [**enumeración \_ POSTERIZE \_ PROP de D2D1.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_posterize_prop)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,9 +58,9 @@ Las propiedades del efecto posterize se definen mediante la [**enumeración \_ P
 
 | Requisito | Value |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
-| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
-| Header                   | d2d1effects \_ 2.h                                  |
+| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Encabezado                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Temas relacionados

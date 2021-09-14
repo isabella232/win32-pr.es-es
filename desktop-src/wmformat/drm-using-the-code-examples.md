@@ -1,6 +1,6 @@
 ---
-title: Uso de los ejemplos de código de cliente drm Windows Media de Microsoft
-description: Uso de los ejemplos de código de cliente drm Windows Media de Microsoft
+title: Uso de los ejemplos de código de cliente DRM Windows Media de Microsoft
+description: Uso de los ejemplos de código de cliente DRM Windows Media de Microsoft
 ms.assetid: 75db2663-9eb8-406d-b1a9-8f6092c95f9d
 keywords:
 - Windows SDK de formato multimedia, ejemplos de código
@@ -12,14 +12,14 @@ keywords:
 - DRM (administración de derechos digitales),código de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e14ef7e1d003dec8270bb4cfb63d5b4ead7f11751eb94dd09cd771ebd34b3ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 054d1ed804873c8aca104203ee1f235ecb3856f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118704218"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247341"
 ---
-# <a name="using-the-microsoft-windows-media-drm-client-code-examples"></a>Uso de los ejemplos de código de cliente drm Windows Media de Microsoft
+# <a name="using-the-microsoft-windows-media-drm-client-code-examples"></a>Uso de los ejemplos de código de cliente DRM Windows Media de Microsoft
 
 En esta documentación se incluyen ejemplos de código para ilustrar el uso de componentes. Los ejemplos se escriben para que sean lo más claros y concisos posible. Al leer los ejemplos, debe tener en cuenta las convenciones siguientes.
 

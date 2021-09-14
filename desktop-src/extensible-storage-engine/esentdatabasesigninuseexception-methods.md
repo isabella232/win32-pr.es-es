@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101439
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 76fbdce0485bb1f8c580cbdd48c976fad4b2b4ecaf2ed8a70f6f550ae1f5fa00
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c945f78a1450f9b2094ec901a45f4f4a355f4301
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118780419"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172478"
 ---
 # <a name="esentdatabasesigninuseexception-methods"></a>Métodos de EsentDatabaseSignInUseException 
 

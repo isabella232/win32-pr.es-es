@@ -3,7 +3,7 @@ title: Métodos ID2D1RenderTarget FillOpacityMask
 description: Aplica la máscara de opacidad descrita por el mapa de bits especificado a un pincel y usa ese pincel para pintar una región del destino de representación.
 ms.assetid: a5e56d8a-2929-4f7b-b1c4-fb358c202721
 keywords:
-- Métodos FillOpacityMask de Direct2D
+- Métodos fillOpacityMask de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 362043696e4cbd21dd64783f210cf2e24066645e7dac5e303a16cd83abb31307
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e988994b849c193725dfdd75773f22a63fed6754
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162798"
 ---
 # <a name="id2d1rendertargetfillopacitymask-methods"></a>Métodos ID2D1RenderTarget::FillOpacityMask
 
@@ -35,7 +35,7 @@ Aplica la máscara de opacidad descrita por el mapa de bits especificado a un pi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para que este método funcione correctamente, el destino de representación debe usar el modo de suavizado de contorno [**D2D1 \_ ANTIALIAS \_ MODE \_ ALIASED.**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_antialias_mode) Puede establecer el modo de suavizado de contorno llamando al [**método ID2D1RenderTarget::SetAntialiasMode.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-setantialiasmode)
 
@@ -52,7 +52,7 @@ Este método no devuelve un código de error si se produce un error. Para determ
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

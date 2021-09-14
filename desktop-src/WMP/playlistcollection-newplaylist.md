@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af40d4de424997cb943711d84bf62805f2036afeb551c5d397ce82ae0975e812
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d94c25a8dfe6f1eb7c4dac40dd644433a5f0d7e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118334634"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359471"
 ---
 # <a name="playlistcollectionnewplaylist-method"></a>Método PlaylistCollection.newPlaylist
 
@@ -53,15 +53,15 @@ retVal = PlaylistCollection.newPlaylist(
 
 Este método devuelve un objeto **Playlist.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método crea una lista de reproducción vacía en la biblioteca. Para rellenar la lista de reproducción con elementos multimedia, use Lista *de reproducción*. **appendItem o** *Lista de reproducción.* **insertItem**.
+Este método crea una lista de reproducción vacía en la biblioteca. Para rellenar la lista de reproducción con elementos multimedia, use *Lista de reproducción*. **appendItem o** *Lista de reproducción.* **insertItem**.
 
-Se permiten varias listas de reproducción con el mismo nombre en la biblioteca. Para evitar crear un nombre de lista de reproducción duplicado con este método, use **getByName** y *PlaylistArray*. **count** para determinar si ya existe una lista de reproducción con un nombre determinado.
+Se permiten varias listas de reproducción con el mismo nombre en la biblioteca. Para evitar la creación de un nombre de lista de reproducción duplicado con este método, use **getByName** y *PlaylistArray*. **count** para determinar si ya existe una lista de reproducción con un nombre determinado.
 
 Los espacios iniciales y finales no se permiten en los nombres de lista de reproducción y se quitan automáticamente del valor especificado para el *parámetro name.*
 
-Para usar este método, se requiere acceso completo a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso completo a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -80,7 +80,7 @@ var NewList = Player.playlistCollection.newPlaylist("ThreeList");
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

@@ -4,12 +4,12 @@ ms.assetid: 48259444-bf7b-4f0e-9068-2bdf89dde694
 title: Enumeración TAPIControlFlags (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 278cc2328335409d4ffcc95ea136826d121acd57776f98aaad947c8fb9ee5d93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 07cc3e931c69a408d996fa28e6002b6c53c9df87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139808"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361757"
 ---
 # <a name="tapicontrolflags-enumeration"></a>TAPIControlFlags (enumeración)
 
@@ -17,7 +17,7 @@ ms.locfileid: "119139808"
 
 Varios métodos usan la enumeración **TAPIControlFlags** para indicar si una propiedad determinada se controla de forma automática o manual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -30,7 +30,7 @@ Varios métodos usan la enumeración **TAPIControlFlags** para indicar si una pr
 
 <dl> <dt>
 
-<span id="TAPIControl_Flags_None"></span><span id="tapicontrol_flags_none"></span><span id="TAPICONTROL_FLAGS_NONE"></span>**Marcas TAPIControl \_ \_ None**
+<span id="TAPIControl_Flags_None"></span><span id="tapicontrol_flags_none"></span><span id="TAPICONTROL_FLAGS_NONE"></span>**TAPIControl \_ marca None \_**
 </dt> <dd>
 
 TAPI no tiene marcas de control para la propiedad .
@@ -44,7 +44,7 @@ La propiedad se controla automáticamente.
 
 </dd> <dt>
 
-<span id="TAPIControl_Flags_Manual"></span><span id="tapicontrol_flags_manual"></span><span id="TAPICONTROL_FLAGS_MANUAL"></span>**Manual de marcas \_ TAPIControl \_**
+<span id="TAPIControl_Flags_Manual"></span><span id="tapicontrol_flags_manual"></span><span id="TAPICONTROL_FLAGS_MANUAL"></span>**TAPIControl \_ Flags \_ Manual**
 </dt> <dd>
 
 La propiedad se controla manualmente.
@@ -58,11 +58,11 @@ La propiedad se controla manualmente.
 | Requisito | Value |
 |-------------------------|------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                       |
-| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

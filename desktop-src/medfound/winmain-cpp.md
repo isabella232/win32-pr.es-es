@@ -5,11 +5,11 @@ title: winmain.cpp
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 31c0ec32af15d6598dbb34d29f80ec6b4ad7a48f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406358"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363598"
 ---
 # <a name="winmaincpp"></a>winmain.cpp
 

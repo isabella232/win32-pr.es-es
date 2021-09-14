@@ -15,12 +15,12 @@ keywords:
 - Windows Listas de reproducción de metarchivo multimedia, elementos multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95ef42f4c79c8239af9278532c8bd09e320725a9d3bb36b361995e25fa905257
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f4716a8ce07e7b0ec8348ce1a6981e23291335e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359461"
 ---
 # <a name="playlists-and-media-items"></a>Listas de reproducción y elementos multimedia
 
@@ -28,7 +28,7 @@ Una lista de reproducción es un conjunto de elementos multimedia. Un **objeto L
 
 ## <a name="retrieving-media-items"></a>Recuperar elementos multimedia
 
-Para una lista de reproducción existente, puede leer la lista de *reproducción*. **count** para determinar cuántos elementos multimedia hay en la lista de reproducción y puede obtener una referencia al objeto **Multimedia** correspondiente a un elemento específico mediante la lista de *reproducción*. **propiedad item.**
+Para una lista de reproducción existente, puede leer la lista de *reproducción*. **count** para determinar cuántos elementos multimedia hay en la lista de reproducción y puede obtener una referencia al objeto **Media** correspondiente a un elemento específico mediante la lista de *reproducción*. **propiedad item.**
 
 En el siguiente ejemplo de C# se recupera una referencia de objeto a un elemento multimedia específico. (En este tema, la variable *pList* es una referencia a un objeto **Playlist).**
 

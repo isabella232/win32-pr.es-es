@@ -1,5 +1,5 @@
 ---
-description: La clase WMI SerialPortConfiguration de Win32 representa la configuración para la transmisión de datos en \_ un Windows serie basado en el servidor. Esto incluye configuraciones para establecer una conexión y una comprobación de errores.
+description: La clase WMI SerialPortConfiguration de Win32 representa la configuración de la transmisión de datos en \_ un Windows serie basado en datos. Esto incluye configuraciones para establecer una conexión y una comprobación de errores.
 ms.assetid: 688cdcce-8325-4b4d-93ab-5a602e9e3f8e
 ms.tgt_platform: multiple
 title: Win32_SerialPortConfiguration clase
@@ -43,12 +43,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 07052c0366b32904ef6bf6f52b15f3ea98022ba8385120ec60cdefe5714e2c4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 065d069b261472e3347a115cfbbff652812b6622
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119079699"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174322"
 ---
 # <a name="win32_serialportconfiguration-class"></a>Clase SerialPortConfiguration de Win32 \_
 
@@ -94,7 +94,7 @@ class Win32_SerialPortConfiguration : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SerialPortConfiguration de Win32** tiene estos tipos de miembros:
 
@@ -512,7 +512,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fParity")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estructuras de comunicación de Win32API \| \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fParity")
 </dt> </dl>
 
 Si **es TRUE,** la comprobación de paridad está habilitada.
@@ -722,7 +722,7 @@ Si **es TRUE,** se usa el control de flujo XON/XOFF durante la recepción. Si **
 
 </dt> <dd>
 
-FALSE
+false
 
 </dd> <dt>
 
@@ -733,7 +733,7 @@ FALSE
 
 </dt> <dd>
 
-TRUE
+true
 
 </dd> </dl>
 
@@ -755,7 +755,7 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SerialPortConfiguration de Win32** se deriva de [**cim \_ setting**](cim-setting.md).
 
@@ -763,7 +763,7 @@ La **clase \_ SerialPortConfiguration de Win32** se deriva de [**cim \_ setting*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -773,7 +773,7 @@ La **clase \_ SerialPortConfiguration de Win32** se deriva de [**cim \_ setting*
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

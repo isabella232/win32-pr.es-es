@@ -1,27 +1,27 @@
 ---
-description: Crear nodos de origen
+description: Creación de nodos de origen
 ms.assetid: 44c26bcd-04a9-48c3-b536-25c2b18c34c1
-title: Crear nodos de origen
+title: Creación de nodos de origen
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e9b1e882dd6f8e9345244b56eace332c2fad4bc3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705417"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360713"
 ---
-# <a name="creating-source-nodes"></a>Crear nodos de origen
+# <a name="creating-source-nodes"></a>Creación de nodos de origen
 
-Un nodo de origen representa una secuencia de un origen de medios. El nodo de origen debe contener punteros al origen de medios, el descriptor de presentación y el descriptor de flujo.
+Un nodo de origen representa una secuencia de un origen multimedia. El nodo de origen debe contener punteros al origen multimedia, al descriptor de presentación y al descriptor de secuencia.
 
 Para agregar un nodo de origen a una topología, haga lo siguiente:
 
-1.  Llame a [**MFCreateTopologyNode**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) con la marca de nodo de la **\_ topología MF \_ SOURCESTREAM \_** para crear el nodo de origen.
-2.  Establezca el atributo de [**\_ \_ origen MF TOPONODE**](mf-toponode-source-attribute.md) en el nodo, con un puntero al origen de medios.
-3.  Establezca el atributo de [**\_ \_ \_ descriptor de presentación MF TOPONODE**](mf-toponode-presentation-descriptor-attribute.md) en el nodo, con un puntero al descriptor de presentación del origen multimedia.
-4.  Establezca el atributo de [**\_ \_ \_ descriptor de secuencia MF TOPONODE**](mf-toponode-stream-descriptor-attribute.md) en el nodo, con un puntero al descriptor de flujo para la secuencia.
-5.  Llame a [**IMFTopology:: AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) para agregar el nodo a la topología.
+1.  Llame [**a MFCreateTopologyNode con**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) la marca MF **\_ TOPOLOGY \_ SOURCESTREAM \_ NODE** para crear el nodo de origen.
+2.  Establezca el [**atributo MF \_ TOPONODE \_ SOURCE**](mf-toponode-source-attribute.md) en el nodo, con un puntero al origen multimedia.
+3.  Establezca el [**atributo MF \_ TOPONODE \_ PRESENTATION \_ DESCRIPTOR**](mf-toponode-presentation-descriptor-attribute.md) en el nodo, con un puntero al descriptor de presentación del origen multimedia.
+4.  Establezca el [**atributo MF \_ TOPONODE \_ STREAM \_ DESCRIPTOR**](mf-toponode-stream-descriptor-attribute.md) en el nodo, con un puntero al descriptor de flujo para la secuencia.
+5.  Llame [**a IMFTopology::AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) para agregar el nodo a la topología.
 
 En el ejemplo siguiente se crea e inicializa un nodo de origen.
 
@@ -86,7 +86,7 @@ done:
 
 <dl> <dt>
 
-[Crear topologías](creating-topologies.md)
+[Creación de topologías](creating-topologies.md)
 </dt> <dt>
 
 [Orígenes multimedia](media-sources.md)

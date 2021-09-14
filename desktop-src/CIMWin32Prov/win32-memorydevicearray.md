@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2226e9adffa917a479078f9fb1fbcddfa4e1f74c3f481a294947dc8f832c4c7e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1e527f77183c3bdc09d464f6fed4808e45adefa5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119973005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174014"
 ---
 # <a name="win32_memorydevicearray-class"></a>Clase MemoryDeviceArray de Win32 \_
 
@@ -40,7 +40,7 @@ class Win32_MemoryDeviceArray : CIM_Component
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ MemoryDeviceArray de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Un [**dispositivo \_ MemoryDevice de Win32**](win32-memorydevice.md) que represe
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ MemoryDeviceArray de Win32** se deriva del [**componente CIM \_**](cim-component.md).
 

@@ -1,26 +1,26 @@
 ---
-description: Valor FNumber cuando se tomó la foto, como se lee en la información de Archivo de imagen intercambiable (EXIF).
+description: Valor FNumber cuando se tomó la foto, como se lee en la información del archivo de imagen intercambiable (EXIF).
 ms.assetid: 914dc34d-34e9-4283-be26-203da945d3e9
 title: System.Photo.FNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83045d392a05dbe5c3053e289527582d8b16f6f97136ff412723423922e84c93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f22498d498bdf606cb0562f93df9a7b4d40405ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119716235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361078"
 ---
 # <a name="systemphotofnumber"></a>System.Photo.FNumber
 
-Valor FNumber cuando se tomó la foto, como se lee en la información de Archivo de imagen intercambiable (EXIF). Esta propiedad se calcula a [partir de System.Photo.FNumberNumerator](./props-system-photo-fnumbernumerator.md) y [System.Photo.FNumberDenominator.](./props-system-photo-fnumberdenominator.md)
+Valor FNumber cuando se tomó la foto, como se lee en la información del archivo de imagen intercambiable (EXIF). Esta propiedad se calcula a [partir de System.Photo.FNumberNumerator](./props-system-photo-fnumbernumerator.md) y [System.Photo.FNumberDenominator.](./props-system-photo-fnumberdenominator.md)
 
-Los siguientes son valores posibles tomados de la especificación EXIF 2.2.
+A continuación se den los valores posibles tomados de la especificación EXIF 2.2.
 
 -   1
 -   1.4
 -   2
--   2,8
+-   2.8
 -   4
 -   5.6
 -   8
@@ -60,7 +60,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -68,7 +68,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras de imágenes digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras de digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

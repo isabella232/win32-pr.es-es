@@ -4,12 +4,12 @@ ms.assetid: aa3166b2-6b04-44fa-bc9d-c8ff46f99201
 title: Tipos de vídeo H.264
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 973df2825b0824256e2eb7a1a7f580c5f13bf5cdbb390602175e1319305756b3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 692a751e197e2e7bbb088b30dd2a3f5f199d56de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120102774"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169958"
 ---
 # <a name="h264-video-types"></a>Tipos de vídeo H.264
 
@@ -79,7 +79,7 @@ El bloque de formato es una [**estructura MPEG2VIDEOINFO.**](/previous-versions/
 
 -   **hdr:** estructura [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) que describe la secuencia de bits. No hay ninguna tabla de colores después de [**la parte BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) de la estructura y **biClrUsed** debe ser cero.
 -   **dwStartTimeCode:** no se usa. Establecer en cero.
--   **cbSequenceHeader:** longitud de la matriz **dwSequenceHeader** en bytes.
+-   **cbSequenceHeader:** longitud de la **matriz dwSequenceHeader** en bytes.
 -   **dwProfile:** especifica el perfil H.264.
 -   **dwLevel:** especifica el nivel H.264.
 -   **dwFlags:** número de bytes usados para el campo de longitud que aparece antes de cada **NALU.** El campo length indica el tamaño del siguiente NALU en bytes. Por ejemplo, si **dwFlags** es 4, cada NALU va precedida de un campo de longitud de 4 bytes. Los valores válidos son 1, 2 y 4.

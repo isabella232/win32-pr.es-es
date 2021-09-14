@@ -4,12 +4,12 @@ description: La nueva Windows escritorio 7 da vida a las aplicaciones.
 ms.assetid: e706167a-435b-4c32-bb64-87113f368866
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a8d62c94cfaae137a921979e514c9500376be4abf858da5b64eee5ac3c8ec6c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3476f70c46aecceb365e17dba1803b876fd51e8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119811421"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247521"
 ---
 # <a name="the-desktop-experience"></a>La experiencia de escritorio
 
@@ -17,14 +17,14 @@ La nueva Windows escritorio 7 da vida a las aplicaciones. Las aplicaciones ahora
 
 -   La barra de tareas mejorada presenta miniaturas interactivas y permite la animación y la interacción para aplicaciones minimizadas.
 -   El concepto Destinos permite a los usuarios saltar con un solo clic a los archivos, ubicaciones o tareas que usan con más frecuencia.
--   Los nuevos controles y API de la cinta de *opciones,* basados en la interfaz de usuario de Office Fluent, están disponibles para agregar fácilmente controles, menús y galerías de estilo ribbon a las aplicaciones.
+-   Los nuevos controles y API de la cinta de *opciones,* basados en la interfaz de usuario de Office Fluent, están disponibles para agregar fácilmente controles, menús y galerías de estilo ribbon a las aplicaciones. 
 -   Un marco de animación ayuda a mejorar las animaciones personalizadas.
 
 Las mejoras en la plataforma de los dispositivos permiten a las aplicaciones instalar dispositivos complementarios durante la instalación o la experiencia de primera ejecución.
 
-![Captura de pantalla que muestra Windows escritorio 7.](images/windows7-6.jpg)
+![Captura de pantalla que muestra el Windows 7.](images/windows7-6.jpg)
 
-La nueva Windows escritorio 7 da vida a las aplicaciones
+El nuevo escritorio Windows 7 da vida a las aplicaciones
 
 ## <a name="jump-listsgetting-users-into-your-application-quickly"></a>Listas de accesos rápidos: introducción rápida de usuarios a la aplicación
 
@@ -40,11 +40,11 @@ Con la nueva barra de tareas Windows 7, las aplicaciones pueden proporcionar má
 
 ## <a name="gadgets-platform"></a>Plataforma Descándalo
 
-Los artefactos son una característica popular del escritorio Windows Vista y, en Windows 7, es incluso más fácil para las aplicaciones instalar los dispositivos. En Windows 7, una aplicación puede agregar mediante programación un dispositivo al escritorio Windows durante la instalación de la aplicación o la primera ejecución. Esto significa que la experiencia lista para usar de una aplicación puede incluir una casilla simple, por ejemplo, para instalar un complemento que esté disponible en el escritorio en cuanto la aplicación esté lista para usarse. (Consulte [Introducción a la plataforma de Plataforma Dei).](/previous-versions/windows/desktop/gadgetplatform/introduction-to-the-gadget-platform)
+Los Dispositivos son una característica popular del escritorio Windows Vista y, en Windows 7, es incluso más fácil para las aplicaciones instalar los dispositivos. En Windows 7, una aplicación puede agregar mediante programación un dispositivo al escritorio Windows durante la instalación de la aplicación o la primera ejecución. Esto significa que la experiencia lista para usar de una aplicación puede incluir una casilla simple, por ejemplo, para instalar un complemento que esté disponible en el escritorio en cuanto la aplicación esté lista para usarse. (Consulte [Introducción a la plataforma de Plataforma Dei).](/previous-versions/windows/desktop/gadgetplatform/introduction-to-the-gadget-platform)
 
 ![ventanas de windows](images/windows7-8.jpg)
 
-En Windows 7, es incluso más fácil para las aplicaciones instalar los dispositivos.
+En Windows 7, es incluso más fácil para las aplicaciones instalar los artefactos.
 
 ## <a name="windows-ribbon"></a>Windows Cinta
 
@@ -52,7 +52,7 @@ En Windows 7, es incluso más fácil para las aplicaciones instalar los disposit
 
 El Windows cinta de opciones ayuda a los desarrolladores a mejorar la facilidad de uso al exponer las características a las que se accede con más frecuencia de la aplicación directamente a los usuarios finales. La cinta de opciones facilita a los usuarios finales la búsqueda y el uso de características de la aplicación, ya que hay menos funcionalidad oculta, lo que aumenta la productividad. La cinta de opciones está diseñada como una alternativa basada en intenciones al modelo de presentación de comandos de menús, barras de herramientas, paneles de tareas y cuadros de diálogo en aplicaciones basadas Windows estándar.
 
-Los controles de la cinta de opciones constan de un conjunto de Win32APIs que invalidan la funcionalidad de la barra de menús de nivel superior y representan en su lugar una interfaz de usuario de comandos de estilo cinta de opciones. Es similar en funcionalidad y apariencia a la cinta *de* opciones del sistema de Office 2007. La interfaz de usuario se compone de varios controles secundarios que incluyen lo siguiente:
+Los controles de la cinta de opciones constan de un conjunto de Win32APIs que invalidan la funcionalidad de la barra de menús de nivel superior y representan en su lugar una interfaz de usuario de comandos de estilo cinta de opciones. Es similar en funcionalidad y apariencia a *la* cinta de opciones del sistema de Office 2007. La interfaz de usuario se compone de varios controles secundarios que incluyen lo siguiente:
 
 -   Botón de aplicación (o botón de la aplicación)
 -   Barra de herramientas de acceso rápido

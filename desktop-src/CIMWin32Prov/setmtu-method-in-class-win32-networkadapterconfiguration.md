@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 043138fd82f5d5423703e860c5811f3e21b8513adb7bb4238ad6d6f7fa7215cd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 466c344892f2c4bf4a1e979ac9c1f50cd709325a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119439885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174058"
 ---
 # <a name="setmtu-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetMTU de la clase \_ NetworkAdapterConfiguration de Win32
 
-El método estático de [la clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetMTU** se usa para establecer la unidad de transmisión máxima (MTU) predeterminada para una interfaz de red.
+El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetMTU** se usa para establecer la unidad de transmisión máxima (MTU) predeterminada para una interfaz de red.
 
-En este tema se usa Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ uint32 SetMTU(
 *MTU* \[ En\]
 </dt> <dd>
 
-Unidad de transmisión máxima (MTU) predeterminada para una interfaz de red. El intervalo de este valor abarca el tamaño mínimo de paquete (68) a la MTU admitida por la red subyacente.
+Unidad de transmisión máxima (MTU) predeterminada para una interfaz de red. El intervalo de este valor abarca el tamaño mínimo del paquete (68) a la MTU compatible con la red subyacente.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta. No se requiere ningún reinicio.
+Finalización correcta. No es necesario reiniciar.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión DHCP.
+No se puede renovar la concesión dhcp.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-IP no habilitada en el adaptador.
+Ip no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco o red**
+**Error de límites de número de marco/red**
 </dt> <dd>
 
 86
@@ -280,7 +280,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de marco no válido**
+**Tipo de fotograma no válido**
 </dt> <dd>
 
 87
@@ -312,7 +312,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de límites.
+Parámetro fuera de los límites.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -379,7 +379,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se podrían liberar o renovar**
+**No todas las concesiones DHCP se pueden liberar o renovar**
 </dt> <dd>
 
 98
@@ -406,7 +406,7 @@ DHCP no está habilitado en el adaptador.
 
 ## <a name="remarks"></a>Observaciones
 
-La MTU es el tamaño máximo de paquete (en bytes) que transmitirá un transporte a través de la red subyacente. El tamaño incluye el encabezado de transporte.
+La MTU es el tamaño máximo de paquete (en bytes) que un transporte transmitirá a través de la red subyacente. El tamaño incluye el encabezado de transporte.
 
 Tenga en cuenta que un datagrama IP puede abarcar varios paquetes. Los valores mayores que el valor predeterminado para la red subyacente tienen como resultado el transporte mediante la MTU predeterminada de red. Los valores menores que 68 tienen como resultado el transporte mediante una MTU de 68.
 
@@ -438,7 +438,7 @@ El [ejemplo Modify the MTU for all Network Adapters](https://Gallery.TechNet.Mic
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

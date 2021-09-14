@@ -14,11 +14,11 @@ api_type:
 - NA
 api_location: ''
 ms.openlocfilehash: d28d37faf454accd91281034d0aeb8df5e10dddb
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122879867"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359212"
 ---
 # <a name="winmgmt"></a>Winmgmt
 
@@ -70,7 +70,7 @@ El *argumento de* marca debe ser 1 (forzar la desconexión de usuarios y restaur
 <span id="__________resyncperf__winmgmt-service-process-id_____"></span><span id="__________RESYNCPERF__WINMGMT-SERVICE-PROCESS-ID_____"></span>**/resyncperf** *&lt; winmgmt-service-process-id &gt;* 
 </dt> <dd>
 
-Registra las bibliotecas de rendimiento del equipo con WMI. PID de WMI es el identificador de proceso para el servicio WMI.
+Registra las bibliotecas de rendimiento del equipo con WMI. EL PID de WMI es el identificador de proceso para el servicio WMI.
 
 Solo es necesario si las clases del monitor de rendimiento no devuelven resultados confiables.
 
@@ -79,7 +79,7 @@ Solo es necesario si las clases del monitor de rendimiento no devuelven resultad
 <span id="_standalonehost__level_"></span><span id="_STANDALONEHOST__LEVEL_"></span>**/standalonehost** \[ *&lt; level &gt;*\]
 </dt> <dd>
 
-Mueve el servicio Winmgmt a un proceso Svchost independiente que tiene un punto de conexión DCOM fijo. El punto de conexión predeterminado es "ncacn \_ ip \_ tcp.0.24158". Sin embargo, el punto de conexión se puede cambiar ejecutando Dcomcnfg.exe. Para obtener más información sobre cómo configurar un puerto fijo para WMI, vea [Configurar un puerto fijo para WMI.](setting-up-a-fixed-port-for-wmi.md)
+Mueve el servicio Winmgmt a un proceso Svchost independiente que tiene un punto de conexión DCOM fijo. El punto de conexión predeterminado es "ncacn \_ ip \_ tcp.0.24158". Sin embargo, el punto de conexión se puede cambiar mediante la ejecución Dcomcnfg.exe. Para obtener más información sobre cómo configurar un puerto fijo para WMI, vea [Configurar un puerto fijo para WMI.](setting-up-a-fixed-port-for-wmi.md)
 
 El *argumento level* es el nivel de autenticación para el proceso svchost. WMI normalmente se ejecuta como parte de un host de servicio compartido y no se puede aumentar el nivel de autenticación solo para WMI. Si *no* se especifica level, el valor predeterminado es 4 **(RPC C \_ \_ AUTHN \_ LEVEL \_ PKT** o **WbemAuthenticationLevelPkt**).
 
@@ -97,7 +97,7 @@ Mueve el servicio Winmgmt al proceso svchost compartido.
 <span id="__________verifyrepository__path_____"></span><span id="__________VERIFYREPOSITORY__PATH_____"></span>**/verifyrepository** *&lt; path &gt;* 
 </dt> <dd>
 
-Realiza una comprobación de coherencia en el repositorio WMI. Cuando se agrega el **modificador /verifyrepository** *&lt; &gt;* sin el argumento path, se comprueba el repositorio en directo utilizado actualmente por WMI. Al especificar el argumento *de ruta* de acceso, puede comprobar cualquier copia guardada del repositorio. En este caso, el argumento path debe contener la ruta de acceso completa a la copia del repositorio guardada. El repositorio guardado debe ser una copia de toda la carpeta del repositorio. Para obtener más información sobre los errores devueltos por este comando, vea la sección Comentarios.
+Realiza una comprobación de coherencia en el repositorio WMI. Al agregar el modificador *&lt; &gt;* **/verifyrepository** sin el argumento de ruta de acceso, se comprueba el repositorio en directo usado actualmente por WMI. Al especificar el argumento *de ruta* de acceso, puede comprobar cualquier copia guardada del repositorio. En este caso, el argumento path debe contener la ruta de acceso completa a la copia del repositorio guardada. El repositorio guardado debe ser una copia de toda la carpeta del repositorio. Para obtener más información sobre los errores devueltos por este comando, vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ El repositorio se restablece al estado inicial cuando se instala por primera vez
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta herramienta se encuentra en el directorio wbem %Windir% \\ \\ System32. Para obtener una lista de los modificadores disponibles, escriba `WinMgmt /?` en el símbolo del sistema.
 
@@ -137,7 +137,7 @@ WMI devuelve el error **ERROR \_ INTERNAL DB \_ \_ CORRUPTION** (net helpmsg 135
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |

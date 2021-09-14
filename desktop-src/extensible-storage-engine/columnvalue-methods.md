@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.colu
 ms:contentKeyID: 55100957
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 300ea93d41a8d8fff79553b1d685491b99141e70410e25a5209aeb6081655382
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 492cfe913d46c69ba1cc38f68c7f36bedebc4f35
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359080"
 ---
 # <a name="columnvalue-methods"></a>Métodos ColumnValue
 
@@ -65,7 +65,7 @@ El [tipo ColumnValue](./columnvalue-class.md) expone los miembros siguientes.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334163(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el objeto <a href="dn334206(v=exchg.10).md">ColumnValue actual.</a> (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el <a href="dn334206(v=exchg.10).md">valor columnValue actual.</a> (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>

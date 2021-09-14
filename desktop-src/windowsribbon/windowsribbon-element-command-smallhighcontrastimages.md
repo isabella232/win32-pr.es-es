@@ -1,9 +1,9 @@
 ---
-title: Command. SmallHighContrastImages (propiedad)
-description: Representa un contenedor de imágenes; en este caso, imágenes pequeñas para su uso con la configuración del sistema de alto contraste.
+title: Propiedad Command.SmallHighContrastImages
+description: Representa un contenedor de imágenes; en este caso, imágenes pequeñas para su uso con la configuración del sistema de contraste alto.
 ms.assetid: d1c441eb-885a-4dc1-b98d-5a36cab2f837
 keywords:
-- Command. SmallHighContrastImages (propiedad) cinta de Windows
+- Propiedad Command.SmallHighContrastImages Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 56291ad4e56e5f941fe4cb2790ac6afab27ad67b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247491"
 ---
-# <a name="commandsmallhighcontrastimages-property"></a>Command. SmallHighContrastImages (propiedad)
+# <a name="commandsmallhighcontrastimages-property"></a>Propiedad Command.SmallHighContrastImages
 
-Representa un contenedor de imágenes; en este caso, imágenes pequeñas para su uso con la configuración del sistema de alto contraste.
+Representa un contenedor de imágenes; en este caso, imágenes pequeñas para su uso con la configuración del sistema de contraste alto.
 
 ## <a name="usage"></a>Uso
 
@@ -51,7 +51,7 @@ No hay atributos.
 
 | Elemento                                                     |
 |-------------------------------------------------------------|
-| [**Get-Help**](windowsribbon-element-command.md)<br/> |
+| [**Comando**](windowsribbon-element-command.md)<br/> |
 
 
 
@@ -59,15 +59,15 @@ No hay atributos.
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**comando**](windowsribbon-element-command.md).
+Puede producirse como máximo una vez para cada [**comando**](windowsribbon-element-command.md).
 
-Los recursos de imagen deben cumplir el formato de gráficos de mapa de bits estándar (BMP) usado en Windows.
+Los recursos de imagen deben ajustarse al formato de gráfico de mapa de bits estándar (BMP) que se usa en Windows.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para [**splitButton**](windowsribbon-element-splitbutton.md) con un elemento [**MenuGroup**](windowsribbon-element-menugroup.md) .
+En el ejemplo siguiente se muestra el marcado básico para [**SplitButton**](windowsribbon-element-splitbutton.md) con un [**elemento MenuGroup.**](windowsribbon-element-menugroup.md)
 
-En esta sección de código se muestran las declaraciones de comandos [**splitButton**](windowsribbon-element-splitbutton.md) y [**MenuGroup**](windowsribbon-element-menugroup.md) con recursos grandes y pequeños de imagen de contraste alto. También se declara un [**Grupo**](windowsribbon-element-group.md) asociado que actúa como contenedor primario para el elemento **splitButton** .
+En esta sección de código se muestran las [**declaraciones SplitButton**](windowsribbon-element-splitbutton.md) [**y MenuGroup**](windowsribbon-element-menugroup.md) Command con recursos grandes y pequeños de imágenes de contraste alto. También se [**declara**](windowsribbon-element-group.md) un grupo asociado que actúa como contenedor primario para el elemento **SplitButton.**
 
 
 ```XML
@@ -117,8 +117,8 @@ En esta sección de código se muestran las declaraciones de comandos [**splitBu
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -126,7 +126,7 @@ En esta sección de código se muestran las declaraciones de comandos [**splitBu
 
 <dl> <dt>
 
-[Especificar recursos de imagen de cinta](windowsribbon-imageformats.md)
+[Especificar recursos de imagen de cinta de opciones](windowsribbon-imageformats.md)
 </dt> <dt>
 
 [UI \_ PKEY \_ SmallHighContrastImage](windowsribbon-reference-properties-uipkey-smallhighcontrastimage.md)

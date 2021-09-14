@@ -1,21 +1,21 @@
 ---
 title: Efecto de transferencia discreta
-description: Use el efecto de transferencia discreta para asignar las intensidades de color de una imagen mediante una función de transferencia de pasos creada a partir de una lista de valores que proporcione.
+description: Use el efecto de transferencia discreta para asignar las intensidades de color de una imagen mediante una función de transferencia paso a paso creada a partir de una lista de valores que proporcione.
 ms.assetid: 5A612002-2B1D-4FC3-B364-AACD9FD44BEC
 keywords:
-- efecto de transferencia discreta
+- efecto de transferencia discreto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c977e6d2b03a3496bfa9be84209a32f57094c8514f6760746f9ec967c2ff8a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c05ef08f9ddf053eaa686cb0f88d4183194d9e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119431411"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163330"
 ---
 # <a name="discrete-transfer-effect"></a>Efecto de transferencia discreta
 
-Use el efecto de transferencia discreta para asignar las intensidades de color de una imagen mediante una función de transferencia de pasos creada a partir de una lista de valores que proporcione.
+Use el efecto de transferencia discreta para asignar las intensidades de color de una imagen mediante una función de transferencia paso a paso creada a partir de una lista de valores que proporcione.
 
 El CLSID para este efecto es CLSID \_ D2D1DiscreteTransfer.
 
@@ -26,7 +26,7 @@ El CLSID para este efecto es CLSID \_ D2D1DiscreteTransfer.
 
 ## <a name="example-image"></a>Imagen de ejemplo
 
-La imagen aquí muestra la entrada y salida del efecto de transferencia discreta.
+La imagen aquí muestra la entrada y la salida del efecto de transferencia discreta.
 
 
 
@@ -59,9 +59,9 @@ m_d2dContext->EndDraw();
 
 
 
-La función de transferencia se basa en la lista de entradas: V=(V0,V1,V2,V3,V? ,V<sub>N</sub>) donde N es el número de elementos - 1.
+La función de transferencia se basa en la lista de entradas: V=(V0,V1,V2,V3,V? ,V<sub>N</sub>) donde N es el número de elementos : 1.
 
-La intensidad de píxeles de entrada se representa como C. Intensidad de píxeles de salida, C se calcula con la ecuación:
+La intensidad de píxeles de entrada se representa como C. La intensidad de píxeles de salida, C se calcula con la ecuación:
 
 Para un valor C, elija un valor k, de forma que:
 
@@ -73,7 +73,7 @@ Este efecto funciona en imágenes alfa rectas y premultiplicadas. El efecto gene
 
 Este es el aspecto del gráfico de la función de transferencia discreta si las entradas son `[0.25, 0.5, 0.75, 1.0]` .
 
-![Gráfico de intensidad de píxeles para la función de transferencia discreta.](images/discrete-transfer-graph.png)
+![gráfico de intensidad de píxeles para la función de transferencia discreta.](images/discrete-transfer-graph.png)
 
 ## <a name="effect-properties"></a>Propiedades de efecto
 
@@ -86,15 +86,15 @@ Este es el aspecto del gráfico de la función de transferencia discreta si las 
 
 | Enumeración de nombre para mostrar e índice                                              | Tipo y valor predeterminado                       | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| RedTable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ RED \_ TABLE<br/>         | Flotador\[\]<br/> {0.0f, 1.0f}<br/> | Lista de valores usados para definir la función de transferencia para el canal rojo.                                                                                                                                                                                                                                                                                                                                                                                 |
-| RedDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ RED \_ DISABLE<br/>     | BOOL<br/> FALSE<br/>             | Si establece esta opción en TRUE, el efecto no aplica la función de transferencia al canal rojo. Si establece esta opción en FALSE, el efecto aplica la función RedDiscreteTransfer al canal rojo.                                                                                                                                                                                                                                                                 |
-| GreenTable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ GREEN \_ TABLE<br/>     | Flotador\[\]<br/> {0.0f, 1.0f}<br/> | Lista de valores que definen la función de transferencia para el canal verde.                                                                                                                                                                                                                                                                                                                                                                                  |
-| GreenDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ GREEN \_ DISABLE<br/> | BOOL<br/> FALSE<br/>             | Si establece esta opción en TRUE, el efecto no aplica la función de transferencia al canal verde. Si establece esta opción en FALSE, el efecto aplica la función GreenDiscreteTransfer al canal verde.                                                                                                                                                                                                                                                           |
-| BlueTable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ BLUE \_ TABLE<br/>       | Flotador\[\]<br/> {0.0f, 1.0f}<br/> | Lista de valores que definen la función de transferencia para el canal Azul.                                                                                                                                                                                                                                                                                                                                                                                   |
-| BlueDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ BLUE \_ DISABLE<br/>   | BOOL<br/> FALSE<br/>             | Si establece esta opción en TRUE, el efecto no aplica la función de transferencia al canal Azul. Si establece esta opción en FALSE, el efecto aplica la función BlueDiscreteTransfer al canal Azul.                                                                                                                                                                                                                                                              |
-| AlphaTable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ ALPHA \_ TABLE<br/>     | Flotador\[\]<br/> {0.0f, 1.0f}<br/> | Lista de valores que definen la función de transferencia para el canal Alfa.                                                                                                                                                                                                                                                                                                                                                                                  |
-| AlphaDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ ALPHA \_ DISABLE<br/> | BOOL<br/> FALSE<br/>             | Si establece esta opción en TRUE, el efecto no aplica la función de transferencia al canal Alfa. Si establece esta opción en FALSE, el efecto aplica la función AlphaDiscreteTransfer al canal Alfa.                                                                                                                                                                                                                                                           |
-| ClampOutput<br/> SALIDA DE LA FIJACIÓN DE \_ \_ PROP \_ DISCRETETRANSFER D2D1 \_<br/>   | BOOL<br/> FALSE<br/>             | Si el efecto fija los valores de color a entre 0 y 1 antes de que el efecto pase los valores al siguiente efecto en el gráfico. El efecto fija los valores antes de que multipliese el valor alfa.<br/> Si establece esta opción en TRUE, el efecto fijará los valores. Si establece esta opción en FALSE, el efecto no fijará los valores de color, pero otros efectos y la superficie de salida pueden fijar los valores si no tienen una precisión lo suficientemente alta.<br/> |
+| RedTable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ RED \_ TABLE<br/>         | FLOTADOR\[\]<br/> {0.0f, 1.0f}<br/> | Lista de valores usados para definir la función de transferencia para el canal rojo.                                                                                                                                                                                                                                                                                                                                                                                 |
+| RedDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ RED \_ DISABLE<br/>     | BOOL<br/> false<br/>             | Si establece esta opción en TRUE, el efecto no aplica la función de transferencia al canal rojo. Si establece esta opción en FALSE, el efecto aplica la función RedDiscreteTransfer al canal rojo.                                                                                                                                                                                                                                                                 |
+| GreenTable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ GREEN \_ TABLE<br/>     | FLOTADOR\[\]<br/> {0.0f, 1.0f}<br/> | Lista de valores que definen la función de transferencia para el canal verde.                                                                                                                                                                                                                                                                                                                                                                                  |
+| GreenDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ GREEN \_ DISABLE<br/> | BOOL<br/> false<br/>             | Si establece esta opción en TRUE, el efecto no aplica la función de transferencia al canal verde. Si establece esta opción en FALSE, el efecto aplica la función GreenDiscreteTransfer al canal verde.                                                                                                                                                                                                                                                           |
+| BlueTable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ BLUE \_ TABLE<br/>       | FLOTADOR\[\]<br/> {0.0f, 1.0f}<br/> | Lista de valores que definen la función de transferencia para el canal azul.                                                                                                                                                                                                                                                                                                                                                                                   |
+| BlueDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ BLUE \_ DISABLE<br/>   | BOOL<br/> false<br/>             | Si establece esta opción en TRUE, el efecto no aplica la función de transferencia al canal Azul. Si establece esta opción en FALSE, el efecto aplica la función BlueDiscreteTransfer al canal Azul.                                                                                                                                                                                                                                                              |
+| AlphaTable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ ALPHA \_ TABLE<br/>     | FLOTADOR\[\]<br/> {0.0f, 1.0f}<br/> | Lista de valores que definen la función de transferencia para el canal Alfa.                                                                                                                                                                                                                                                                                                                                                                                  |
+| AlphaDisable<br/> D2D1 \_ DISCRETETRANSFER \_ PROP \_ ALPHA \_ DISABLE<br/> | BOOL<br/> false<br/>             | Si establece esta opción en TRUE, el efecto no aplica la función de transferencia al canal Alfa. Si establece esta opción en FALSE, el efecto aplica la función AlphaDiscreteTransfer al canal Alfa.                                                                                                                                                                                                                                                           |
+| ClampOutput<br/> SALIDA DE LA FIJACIÓN \_ DE \_ PROP \_ DISCRETETRANSFER D2D1 \_<br/>   | BOOL<br/> false<br/>             | Si el efecto fija los valores de color a entre 0 y 1 antes de que el efecto pase los valores al siguiente efecto en el gráfico. El efecto fija los valores antes de multiplicar previamente el valor alfa.<br/> Si establece esta opción en TRUE, el efecto fijará los valores. Si establece esta opción en FALSE, el efecto no fijará los valores de color, pero otros efectos y la superficie de salida pueden fijar los valores si no tienen una precisión lo suficientemente alta.<br/> |
 
 
 
@@ -106,9 +106,9 @@ Este es el aspecto del gráfico de la función de transferencia discreta si las 
 
 | Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de \[ escritorio \| Windows store\] |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

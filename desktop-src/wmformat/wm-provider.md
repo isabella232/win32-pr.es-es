@@ -1,5 +1,5 @@
 ---
-title: WM/Proveedor
+title: WM/Provider
 description: El atributo WM/Provider contiene el nombre del proveedor de contenido de metadatos. A menudo, los metadatos se obtienen a través de un servicio.
 ms.assetid: 94d1f87e-f5b5-4898-b717-8b7494456f26
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e45cb071d93832aa9d07025afa1fdac09b7d88a5b9c89afd1630a637bddca87
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eed12817d76a8a63bf70c7dff2bea5835a46b762
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119704815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359556"
 ---
-# <a name="wmprovider"></a>WM/Proveedor
+# <a name="wmprovider"></a>WM/Provider
 
 El **atributo WM/Provider** contiene el nombre del proveedor de contenido de metadatos. A menudo, los metadatos se obtienen a través de un servicio.
 
@@ -29,7 +29,7 @@ g \_ wszWMProvider
 
 ## <a name="data-type"></a>Tipo de datos
 
-**CADENA DE TIPO WMT \_ \_**
+**CADENA DE \_ TIPO \_ WMT**
 
 ## <a name="example"></a>Ejemplo
 
@@ -37,7 +37,7 @@ g \_ wszWMProvider
 
 | Tipo de archivo | Valor de ejemplo |
 |-----------|---------------|
-| Todo       | "AMG"         |
+| All       | "AMG"         |
 
 
 

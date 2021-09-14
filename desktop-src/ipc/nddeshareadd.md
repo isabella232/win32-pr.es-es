@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: 0a02381fad8412c7ada0c337c21e633ffa6793887a720ec504f1dfa3d78d9ede
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 282ff7ed3e1564044591966fb4233b2eda1d3227
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119602145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172289"
 ---
 # <a name="nddeshareadd-function"></a>Función NDdeShareAdd
 
@@ -71,7 +71,7 @@ Puntero a una estructura [**\_ DE DESCRIPTOR DE SEGURIDAD**](/windows/desktop/ap
 *lpBuffer* \[in\]
 </dt> <dd>
 
-Puntero a la estructura [**NDDESHAREINFO**](nddeshareinfo-str.md) que define la lista ApplicationTopic asociada al recurso compartido DDE que se va a crear, así como otros parámetros. Este parámetro no puede ser **NULL.**
+Puntero a la estructura [**NDDESHAREINFO**](nddeshareinfo-str.md) que define la lista ApplicationTopic asociada al recurso compartido DDE que se va a crear, así como a otros parámetros. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
@@ -88,15 +88,15 @@ Si la función se realiza correctamente, el valor devuelto es NDDE \_ NO \_ ERRO
 
 Si se produce un error en la función, el valor devuelto es un código de error, que se puede traducir en un mensaje de error de texto llamando a [**NDdeGetErrorString**](nddegeterrorstring.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para que un cliente pueda conectarse al recurso compartido de DDE, debe ser de confianza [**con NDdeSetTrustedShare**](nddesettrustedshare.md).
+Para que un cliente pueda conectarse al recurso compartido de DDE, debe ser de confianza con [**NDdeSetTrustedShare**](nddesettrustedshare.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
@@ -107,7 +107,7 @@ Para que un cliente pueda conectarse al recurso compartido de DDE, debe ser de c
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

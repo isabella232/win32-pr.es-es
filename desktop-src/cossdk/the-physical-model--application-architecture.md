@@ -4,12 +4,12 @@ ms.assetid: 18c440f0-88c8-4738-9f29-c82772439b51
 title: 'Modelo físico: arquitectura de aplicación'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5147241b460763b4218734344340291af5c423c2ee2e7a8ec9e485b30221d795
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f0fab87d76e445a365958ab330f572f657d1505
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118812220"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361620"
 ---
 # <a name="the-physical-model-application-architecture"></a>Modelo físico: arquitectura de aplicación
 

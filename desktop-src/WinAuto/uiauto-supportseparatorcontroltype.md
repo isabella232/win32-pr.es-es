@@ -5,7 +5,7 @@ ms.assetid: 4987b05a-101e-48b1-aed2-bd7206146f70
 keywords:
 - Automatización de la interfaz de usuario, compatibilidad con el tipo de control Separador
 - Automatización de la interfaz de usuario,Tipo de control Separator
-- Automatización de la interfaz de usuario,estructura de árbol para el tipo de control Separador
+- Automatización de la interfaz de usuario estructura de árbol para el tipo de control Separador
 - Automatización de la interfaz de usuario,properties para el tipo de control Separator
 - Automatización de la interfaz de usuario,patrones de control para el tipo de control Separador
 - Automatización de la interfaz de usuario,events para el tipo de control Separator
@@ -22,11 +22,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0685f21565a6252febfadad115c8edf10990995c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242294"
 ---
 # <a name="separator-control-type"></a>Tipo de control Separador
 
@@ -66,17 +66,17 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor         | Notas                                                                                                                                                                                                |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value         | Notas                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.    | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                         |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.    | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel de la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                         |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas.    | El rectángulo exterior que contiene el control completo.                                                                                                                                             |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas.    | Se admite si hay un rectángulo delimitador. Si no se puede hacer clic en todos los puntos del rectángulo delimitador y el elemento realiza pruebas de acceso especializadas, invalide y proporcione un punto en el que se puede hacer clic. |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **Separador** |                                                                                                                                                                                                      |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | FALSE         | El control Separator nunca es contenido.                                                                                                                                                              |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE          | El control de separador siempre debe ser un control.                                                                                                                                                      |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | false         | El control Separator nunca es contenido.                                                                                                                                                              |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true          | El control de separador siempre debe ser un control.                                                                                                                                                      |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas.    | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                                                                            |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL          | El control de separador no tiene una etiqueta estática.                                                                                                                                                  |
-| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas.    | Cadena localizada correspondiente al tipo **de** control Separador. El valor predeterminado es "Separador" para en-US o inglés (Estados Unidos).                                                             |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas.    | Cadena localizada correspondiente al tipo **de** control Separador. El valor predeterminado es "Separator" para en-US o English (Estados Unidos).                                                             |
 | [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | ""            | El control separador no requiere una **propiedad Name.**                                                                                                                                          |
 
 

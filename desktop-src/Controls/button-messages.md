@@ -5,11 +5,11 @@ ms.assetid: 2d2358fb-b17d-48a9-8def-15ae8bad9162
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 136310a3718f17900f604287bf78186f7c927259
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174005"
 ---
 # <a name="button-messages"></a>Mensajes de botón 
 
@@ -119,7 +119,7 @@ El procedimiento de ventana de la clase de ventana de control de botón predefin
 <tbody>
 <tr class="odd">
 <td><a href="bm-click.md"><strong>BM_CLICK</strong></a></td>
-<td>Envía al botón un <a href="/windows/desktop/inputdev/wm-lbuttondown"><strong>WM_LBUTTONDOWN</strong></a> y <a href="/windows/desktop/inputdev/wm-lbuttonup"><strong>un WM_LBUTTONUP</strong></a> y envía <a href="bn-clicked.md">a</a> la ventana primaria un BN_CLICKED de notificación.</td>
+<td>Envía al botón un <a href="/windows/desktop/inputdev/wm-lbuttondown"><strong>WM_LBUTTONDOWN</strong></a> un <a href="/windows/desktop/inputdev/wm-lbuttonup"><strong>mensaje WM_LBUTTONUP</strong></a> y envía <a href="bn-clicked.md">a</a> la ventana primaria un BN_CLICKED de notificación.</td>
 </tr>
 <tr class="even">
 <td><a href="bm-getcheck.md"><strong>BM_GETCHECK</strong></a></td>
@@ -127,15 +127,15 @@ El procedimiento de ventana de la clase de ventana de control de botón predefin
 </tr>
 <tr class="odd">
 <td><a href="bm-getimage.md"><strong>BM_GETIMAGE</strong></a></td>
-<td>Devuelve un identificador al mapa de bits o icono asociado al botón o <strong>NULL</strong> si el botón no tiene mapa de bits ni icono.</td>
+<td>Devuelve un identificador al mapa de bits o icono asociado al botón o <strong>NULL</strong> si el botón no tiene ningún mapa de bits o icono.</td>
 </tr>
 <tr class="even">
 <td><a href="bm-getstate.md"><strong>BM_GETSTATE</strong></a></td>
-<td>Devuelve el estado de comprobación actual, el estado de inserción y el estado de enfoque del botón.</td>
+<td>Devuelve el estado de comprobación actual, el estado de inserción y el estado de foco del botón.</td>
 </tr>
 <tr class="odd">
 <td><a href="bm-setcheck.md"><strong>BM_SETCHECK</strong></a></td>
-<td>Establece el estado de comprobación de todos los estilos de botones de radio y casillas. Si el <em>parámetro wParam</em> es mayor que cero para los botones de radio, el botón tiene el <a href="/windows/desktop/winmsg/window-styles"><strong>WS_TABSTOP</strong></a> estilo.</td>
+<td>Establece el estado de comprobación de todos los estilos de botones de radio y casillas. Si el <em>parámetro wParam</em> es mayor que cero para los botones de radio, se le da el <a href="/windows/desktop/winmsg/window-styles"><strong>estilo WS_TABSTOP</strong></a> botón.</td>
 </tr>
 <tr class="even">
 <td><a href="bm-setimage.md"><strong>BM_SETIMAGE</strong></a></td>
@@ -143,15 +143,15 @@ El procedimiento de ventana de la clase de ventana de control de botón predefin
 </tr>
 <tr class="odd">
 <td><a href="bm-setstate.md"><strong>BM_SETSTATE</strong></a></td>
-<td>Establece el estado de inserción del botón. En el caso de los botones dibujados por el propietario, WM_DRAWITEM mensaje se envía <a href="wm-drawitem.md"><strong>a</strong></a> la ventana primaria si el estado del botón ha cambiado.</td>
+<td>Establece el estado de inserción del botón. En el caso de los botones <a href="wm-drawitem.md"><strong>dibujados por</strong></a> el propietario, WM_DRAWITEM mensaje se envía a la ventana primaria si el estado del botón ha cambiado.</td>
 </tr>
 <tr class="even">
 <td><a href="bm-setstyle.md"><strong>BM_SETSTYLE</strong></a></td>
-<td>Establece el estilo de botón. Si la palabra de orden bajo del <em>parámetro lParam</em> es <strong>TRUE,</strong>se vuelve a dibujar el botón.</td>
+<td>Establece el estilo del botón. Si la palabra de orden bajo del <em>parámetro lParam</em> es <strong>TRUE,</strong>se vuelve a dibujar el botón.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/inputdev/wm-char"><strong>WM_CHAR</strong></a></td>
-<td>Comprueba una casilla o una casilla automática cuando el usuario presiona las teclas más (+) o igual (=). Borra una casilla o una casilla automática cuando el usuario presiona la tecla menos (–).</td>
+<td>Comprueba una casilla o una casilla automática cuando el usuario presiona las teclas más (+) o igual (=). Borra una casilla o casilla automática cuando el usuario presiona la tecla menos (–).</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/winmsg/wm-enable"><strong>WM_ENABLE</strong></a></td>
@@ -163,7 +163,7 @@ El procedimiento de ventana de la clase de ventana de control de botón predefin
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/dlgbox/wm-getdlgcode"><strong>WM_GETDLGCODE</strong></a></td>
-<td>Devuelve valores que indican el tipo de entrada procesada por el procedimiento de botón predeterminado, como se muestra en la tabla siguiente. 
+<td>Devuelve valores que indican el tipo de entrada procesado por el procedimiento de botón predeterminado, como se muestra en la tabla siguiente. 
 <table>
 <thead>
 <tr class="header">
@@ -219,11 +219,11 @@ El procedimiento de ventana de la clase de ventana de control de botón predefin
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/inputdev/wm-killfocus"><strong>WM_KILLFOCUS</strong></a></td>
-<td>Quita el rectángulo de foco de un botón. En el caso de los botones de inserción y los botones de inserción predeterminados, se invalida el rectángulo de foco. Si el botón tiene la captura del mouse, se libera la captura, no se hace clic en el botón y se quita cualquier estado de inserción.</td>
+<td>Quita el rectángulo de foco de un botón. Para los botones de inserción y los botones de inserción predeterminados, el rectángulo de foco se invalida. Si el botón tiene la captura del mouse, se libera la captura, no se hace clic en el botón y se quita cualquier estado de inserción.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/inputdev/wm-lbuttondblclk"><strong>WM_LBUTTONDBLCLK</strong></a></td>
-<td>Envía <a href="bn-dblclk.md">un</a> BN_DBLCLK de notificación a la ventana primaria para botones de radio y botones dibujados por el propietario. Para otros botones, se procesa un doble clic como <a href="/windows/desktop/inputdev/wm-lbuttondown"><strong>WM_LBUTTONDOWN</strong></a> mensaje.</td>
+<td>Envía <a href="bn-dblclk.md">un</a> BN_DBLCLK de notificación a la ventana primaria para los botones de radio y los botones dibujados por el propietario. Para otros botones, un doble clic se procesa como un <a href="/windows/desktop/inputdev/wm-lbuttondown"><strong>mensaje WM_LBUTTONDOWN</strong></a> mensaje.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/inputdev/wm-lbuttondown"><strong>WM_LBUTTONDOWN</strong></a></td>
@@ -251,7 +251,7 @@ El procedimiento de ventana de la clase de ventana de control de botón predefin
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/inputdev/wm-setfocus"><strong>WM_SETFOCUS</strong></a></td>
-<td>Dibuja un rectángulo de foco en el botón para obtener el foco. En el caso de los botones de radio y los botones de radio automáticos, la ventana primaria se envía <a href="bn-clicked.md">BN_CLICKED</a> código de notificación.</td>
+<td>Dibuja un rectángulo de foco en el botón para obtener el foco. En el caso de los botones de radio y los botones de radio automáticos, <a href="bn-clicked.md">la</a> ventana primaria se envía BN_CLICKED de notificación.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/winmsg/wm-setfont"><strong>WM_SETFONT</strong></a></td>
@@ -259,7 +259,7 @@ El procedimiento de ventana de la clase de ventana de control de botón predefin
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/winmsg/wm-settext"><strong>WM_SETTEXT</strong></a></td>
-<td>Establece el texto del botón. En el caso de un cuadro de grupo, el mensaje pinta sobre el texto existente antes de volver a dibujar el cuadro de grupo con el nuevo texto.</td>
+<td>Establece el texto del botón. En el caso de un cuadro de grupo, el mensaje pinta sobre el texto preexistnte antes de volver a dibujar el cuadro de grupo con el nuevo texto.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/inputdev/wm-syskeyup"><strong>WM_SYSKEYUP</strong></a></td>

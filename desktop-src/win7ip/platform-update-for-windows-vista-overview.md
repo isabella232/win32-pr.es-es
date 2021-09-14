@@ -7,12 +7,12 @@ keywords:
 - Actualización de plataforma para Windows Vista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb9751331bf764ee486afe20a9dccd7f6b4691fee15e5000ccf8157561656409
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2bcd3e94f8784ce3d060a8e56c0b089a065d288
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118964574"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359589"
 ---
 # <a name="about-platform-update-for-windows-vista"></a>Acerca de la actualización de plataforma para Windows Vista
 
@@ -25,11 +25,11 @@ Cada tecnología compatible con la actualización de plataforma para Windows Vis
 Para obtener más información sobre el uso de las API admitidas por las actualizaciones de una aplicación que tiene como destino versiones anteriores de Windows, vea [Developing Application for Previous Versions of Windows](developing-applications-for-previous-versions-of-windows.md).
 
 > [!Note]  
-> Es posible que algunas API asociadas a una tecnología no sean compatibles y el comportamiento, el rendimiento o los requisitos de algunas API compatibles pueden variar en Windows versiones. Para más información sobre la API admitida para una tecnología específica, haga clic en el vínculo de una de las tablas de resumen para ir a la sección sobre esa tecnología.
+> Es posible que algunas API asociadas a una tecnología no sean compatibles y el comportamiento, el rendimiento o los requisitos de algunas API admitidas pueden variar en Windows versiones. Para más información sobre la API admitida para una tecnología específica, haga clic en el vínculo de una de las tablas de resumen para ir a la sección sobre esa tecnología.
 
  
 
-### <a name="technologies-supported-with-platform-update-for-windows-vista"></a>Tecnologías compatibles con la actualización de plataforma para Windows Vista
+### <a name="technologies-supported-with-platform-update-for-windows-vista"></a>Tecnologías admitidas con la actualización de plataforma para Windows Vista
 
 Para más información sobre la API admitida para una tecnología específica, haga clic en el vínculo de una de las tablas de resumen para ir a la sección sobre esa tecnología.
 
@@ -46,7 +46,7 @@ Las tecnologías que se admiten para Windows Vista y Windows XP con la actualiza
 
  
 
-### <a name="technologies-supported-with-platform-update-for-windows-server-2008"></a>Tecnologías admitidas con la actualización de plataforma para Windows Server 2008
+### <a name="technologies-supported-with-platform-update-for-windows-server-2008"></a>Tecnologías compatibles con la actualización de plataforma para Windows Server 2008
 
 Para más información sobre la API admitida para una tecnología específica, haga clic en el vínculo de una de las tablas de resumen para ir a la sección sobre esa tecnología.
 
@@ -78,7 +78,7 @@ Windows Automation API 3.0 es un conjunto de archivos DLL y elementos de API que
 
 Microsoft Active Accessibility (MSAA) y Automatización de la interfaz de usuario son similares en que proporcionan un medio para exponer y recopilar información sobre los controles y elementos de la interfaz de usuario para admitir la accesibilidad de la interfaz de usuario y la automatización de pruebas de software. Automatización de la interfaz de usuario es una Windows implementación de la especificación Automatización de la interfaz de usuario datos. Es una tecnología más reciente que aborda muchas de las limitaciones de MSAA.
 
-Para obtener más información sobre Windows Automation API 3.0, [consulte Windows Automation API: Overview](/windows/desktop/WinAuto/windows-automation-api-overview).
+Para obtener más información sobre Windows Automation API 3.0, [vea Windows Automation API: Overview .](/windows/desktop/WinAuto/windows-automation-api-overview)
 
 La actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008 admiten las siguientes Windows Automation API 3.0:
 
@@ -134,7 +134,7 @@ Windows XP Professional con SP3 (x86)<br />
 
 ### <a name="microsoft-active-accessibility-msaa"></a>Microsoft Active Accessibility (MSAA)
 
-Microsoft Active Accessibility (MSAA) es una tecnología heredada que se introdujo por primera vez con Windows 95. Es un conjunto de API que mejora la forma en que los productos de tecnología de asistencia (AT) funcionan con aplicaciones que se ejecutan en Microsoft Windows. La API proporciona interfaces de programación y métodos para exponer información sobre los elementos de la interfaz de usuario.
+Microsoft Active Accessibility (MSAA) es una tecnología heredada que se introdujo por primera vez con Windows 95. Se trata de un conjunto de API que mejora la forma en que los productos de tecnología de asistencia (AT) funcionan con aplicaciones que se ejecutan en Microsoft Windows. La API proporciona interfaces de programación y métodos para exponer información sobre los elementos de la interfaz de usuario.
 
 Para obtener más información sobre Microsoft Active Accessibility, vea [Información general técnica.](/windows/desktop/WinAuto/technical-overview)
 
@@ -146,7 +146,7 @@ Todas las API se admiten en versiones anteriores de Windows que son aptas para l
 
 Automatización de la interfaz de usuario es una tecnología más reciente que implementa la especificación Automatización de la interfaz de usuario y aborda muchas de las limitaciones de Microsoft Active Accessibility. Es un conjunto de API que proporciona acceso mediante programación a los elementos de la interfaz de usuario de las aplicaciones. La API proporcionada ayuda a los productos de assistive Technology y a las herramientas de prueba automatizadas a acceder, identificar y manipular los elementos de interfaz de usuario estándar y personalizados de una aplicación.
 
-Para obtener más información sobre Automatización de la interfaz de usuario, [vea Windows Automation API: Automatización de la interfaz de usuario](../winauto/entry-uiauto-win32.md).
+Para obtener más información sobre Automatización de la interfaz de usuario, [consulte Windows Automation API: Automatización de la interfaz de usuario](../winauto/entry-uiauto-win32.md).
 
 ### <a name="supported-ui-automation-api-elements"></a>Elementos Automatización de la interfaz de usuario API admitidos
 
@@ -154,11 +154,11 @@ Todas las API se admiten en versiones anteriores de Windows que son aptas para l
 
 ### <a name="running-ui-automation-on-previous-windows-versions"></a>Ejecución de Automatización de la interfaz de usuario en versiones Windows anteriores
 
-Debido a las diferencias en la forma en que los controles comunes y los controles estándar de Windows se implementan en distintas versiones de Windows, puede haber ligeras diferencias en la información que recuperan los servidores proxy de Automatización de la interfaz de usuario para estos controles de una versión a otra.
+Debido a las diferencias en la forma en que los controles comunes y los controles estándar de Windows se implementan en diferentes versiones de Windows, puede haber ligeras diferencias en la información que recuperan los servidores proxy de Automatización de la interfaz de usuario para estos controles de una versión a otra.
 
 ### <a name="windows-graphics-imaging-and-xps-library"></a>Windows Gráficos, imágenes y biblioteca XPS
 
-La actualización de plataforma para Windows Vista admite las siguientes API Windows 7 de la biblioteca de Windows Graphics, Imaging y XPS:
+La actualización de plataforma para Windows Vista admite las siguientes API Windows 7 de la biblioteca de Windows Gráficos, Creación de imágenes y XPS:
 
 -   [Direct2D](#direct2d)
 -   [Direct3D](#direct3d)
@@ -206,7 +206,7 @@ Ultimate con SP2 (x86 y amd64)<br />
 
 ### <a name="direct2d"></a>Direct2D
 
-Direct2D API es una nueva API de gráficos 2D de modo inmediato acelerada por hardware que proporciona un alto rendimiento y una representación de alta calidad para geometría 2D, mapas de bits y texto. La API de Direct2D está diseñada para interoperar bien con el código existente que usa GDI, GDI+ o Direct3D.
+Direct2D API es una nueva API de gráficos 2D de modo inmediato acelerada por hardware que proporciona un alto rendimiento y una representación de alta calidad para geometría 2D, mapas de bits y texto. La API de Direct2D está diseñada para interoperar bien con código existente que usa GDI, GDI+ o Direct3D.
 
 Para obtener más información sobre Direct2D, vea [Acerca de Direct2D.](/windows/desktop/Direct2D/direct2d-overview)
 
@@ -220,7 +220,7 @@ Si falta el controlador WDDM 1.1 en Windows Vista, el rendimiento de la interope
 
 ### <a name="direct3d"></a>Direct3D
 
-La actualización de plataforma para Windows Vista proporciona compatibilidad con la superficie BGRA para las rutas de acceso de código Direct3D10 y Direct3D10.1. Direct3D10Level9 permite que la funcionalidad de Direct3D10 funcione en hardware de Direct3D9. Direct3D WARP10 es un rasterizador de software de rendimiento para aplicaciones Direct3D10. Direct3D11, la versión más reciente de Direct3D, proporciona nuevas funcionalidades, como compatibilidad mejorada con multithreading, teselación, funcionalidad DirectCompute y vinculación dinámica del sombreador.
+La actualización de plataforma para Windows Vista proporciona compatibilidad con la superficie de BGRA para las rutas de acceso de código Direct3D10 y Direct3D10.1. Direct3D10Level9 permite que la funcionalidad de Direct3D10 funcione en hardware de Direct3D9. Direct3D WARP10 es un rasterizador de software de rendimiento para aplicaciones Direct3D10. Direct3D11, la versión más reciente de Direct3D, proporciona nuevas funcionalidades, como compatibilidad mejorada con multithreading, teselación, funcionalidad DirectCompute y vinculación dinámica del sombreador.
 
 Si crea aplicaciones que usan Direct3D, se requiere el [SDK de DirectX](/previous-versions/windows/apps/hh452744(v=win.10)) ( https://msdn.microsoft.com/directx/aa937788.aspx) .
 
@@ -240,7 +240,7 @@ Para obtener más información sobre DirectWrite, vea [Introducing DirectWrite](
 
 Todas las API se admiten en versiones anteriores de Windows que son aptas para la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008.
 
-### <a name="running-directwrite-on-previous-windows-versions"></a>Ejecución de DirectWrite versiones anteriores Windows versiones anteriores
+### <a name="running-directwrite-on-previous-windows-versions"></a>Ejecución de DirectWrite en versiones Windows anteriores
 
 Los siguientes problemas de comportamiento pueden afectar al uso de DirectWrite API en versiones Windows anteriores:
 
@@ -276,9 +276,9 @@ Si una aplicación intenta crear instancias o llamar a un método o interfaz de 
 
 ### <a name="windows-imaging-component"></a>Windows Imaging Component
 
-Las nuevas características de Windows Imaging Component (WIC) incluyen seguridad mejorada, compatibilidad con un color alto y una mejor interoperabilidad de metadatos. Además, el componente de creación de imágenes de Windows amplía su cumplimiento de estándares al proporcionar compatibilidad con la descodación progresiva de imágenes, características PNG expandida, metadatos GIF, , actualizaciones de fotos de HD y metadatos que abarcan segmentos de APPn.
+Las nuevas características de Windows Imaging Component (WIC) incluyen seguridad mejorada, compatibilidad con un color alto y una mejor interoperabilidad de metadatos. Además, el componente de creación de imágenes de Windows amplía su cumplimiento de estándares al proporcionar compatibilidad con la descodación progresiva de imágenes, características PNG expandida, metadatos GIF, , actualizaciones de fotos de HD y metadatos que abarcan segmentos APPn.
 
-Para obtener más información sobre el Windows de creación de imágenes, vea el Windows Información general del componente de creación [de imágenes.](/windows/desktop/wic/-wic-about-windows-imaging-codec)
+Para obtener más información sobre el Windows de creación de imágenes, vea el Windows información general del [componente de creación de imágenes.](/windows/desktop/wic/-wic-about-windows-imaging-codec)
 
 ### <a name="supported-wic-api-elements"></a>Elementos de LA API de WIC admitidos
 
@@ -313,7 +313,7 @@ La actualización de plataforma para Windows Vista admite las siguientes API Win
 
 ### <a name="windows-editions-eligible-for-the-updates"></a>Windows Ediciones aptas para las actualizaciones
 
-La actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008 habilitan la cinta de opciones de Windows y la biblioteca del Administrador de animaciones en las ediciones de Windows que se muestran en la tabla siguiente.
+La actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008 habilitan la compatibilidad con la cinta de opciones y la biblioteca del Administrador de animaciones de Windows en las ediciones de Windows que se muestran en la tabla siguiente.
 
 
 
@@ -349,13 +349,13 @@ Ultimate con SP2 (x86 y amd64)<br />
 
 ### <a name="windows-ribbon-framework"></a>Windows Marco de la cinta de opciones
 
-El marco Windows cinta de opciones (cinta de opciones) es un completo sistema de presentación de comandos que proporciona una alternativa moderna a los menús en capas, las barras de herramientas y los paneles de tareas de las aplicaciones Windows tradicionales.
+El marco Windows cinta de opciones (cinta) es un completo sistema de presentación de comandos que proporciona una alternativa moderna a los menús en capas, las barras de herramientas y los paneles de tareas de las aplicaciones Windows tradicionales.
 
-El marco es una colección de API win32 de Microsoft que proporcionan una serie de nuevas funcionalidades de interfaz de usuario para los desarrolladores de Windows e incluye la cinta de opciones y un sistema de menú contextual.
+El marco es una colección de API de Microsoft Win32 que proporcionan una serie de nuevas funcionalidades de interfaz de usuario para desarrolladores de Windows e incluye la cinta de opciones y un sistema de menú contextual.
 
 Para obtener más información sobre el marco de la cinta de opciones, vea [Introducing the Windows Ribbon Framework](../windowsribbon/windowsribbon-introduction.md).
 
-### <a name="supported-ribbon-framework-api-elements"></a>Elementos admitidos de la API del marco de la cinta de opciones
+### <a name="supported-ribbon-framework-api-elements"></a>Elementos de API de Ribbon Framework admitidos
 
 Todas las API se admiten en versiones anteriores de Windows que son aptas para la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008.
 
@@ -363,23 +363,23 @@ Todas las API se admiten en versiones anteriores de Windows que son aptas para l
 
 El Windows animation manager (Windows Animation) es una interfaz de programación que admite la animación de elementos visuales de Windows aplicaciones. Windows La animación está diseñada para simplificar el desarrollo y el mantenimiento de secuencias de animación y para permitir a los desarrolladores implementar animaciones coherentes e intuitivas. Windows La animación se puede usar con cualquier plataforma gráfica, como Direct2D, Direct3D o GDI+.
 
-Windows La animación es una API COM de un solo subproceso que proporciona todo lo que un desarrollador necesita para crear, administrar e impulsar la animación de la interfaz de usuario.
+Windows Animation es una API COM de un solo subproceso que proporciona todo lo que un desarrollador necesita para crear, administrar y controlar la animación de la interfaz de usuario.
 
-Para obtener más información sobre el administrador Windows animación, vea [Introducing Windows Animation](/windows/desktop/UIAnimation/introducing-windows-animation-manager).
+Para obtener más información sobre Windows Animation Manager, vea [Introducing Windows Animation](/windows/desktop/UIAnimation/introducing-windows-animation-manager).
 
-### <a name="supported-animation-manager-api-elements"></a>Elementos admitidos de la API de Animation Manager
+### <a name="supported-animation-manager-api-elements"></a>Elementos de API de Animation Manager admitidos
 
 Todas las API se admiten en versiones anteriores de Windows que son aptas para la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008.
 
 ### <a name="windows-portable-devices-platform"></a>Windows Plataforma de dispositivos portátiles
 
-La actualización de plataforma para Windows Vista admite las extensiones Windows 7 a la plataforma Windows Portable Devices (WPD). Esta característica permite a los equipos comunicarse con dispositivos de almacenamiento y medios conectados. WPD proporciona una manera flexible y sólida para que los equipos se comuniquen con cámaras digitales, reproductores de música, teléfonos móviles y muchos otros tipos de dispositivos conectados.
+La actualización de plataforma para Windows Vista admite las Windows 7 a la plataforma Windows dispositivos portátiles (WPD). Esta característica permite a los equipos comunicarse con dispositivos de almacenamiento y medios conectados. WPD proporciona una manera flexible y sólida de que los equipos se comuniquen con cámaras digitales, reproductores de música, teléfonos móviles y muchos otros tipos de dispositivos conectados.
 
-Para obtener más información sobre Windows portables, [vea Windows Portable Devices](/windows-hardware/drivers/portable/) ( https://docs.microsoft.com/windows-hardware/drivers/portable/) .
+Para obtener más información sobre Windows dispositivos portátiles, [vea Windows Portable Devices](/windows-hardware/drivers/portable/) ( https://docs.microsoft.com/windows-hardware/drivers/portable/) .
 
 ### <a name="windows-editions-eligible-for-the-updates"></a>Windows Ediciones aptas para las actualizaciones
 
-La actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008 habilitan la compatibilidad con Windows Portable Devices (WPD) en las ediciones de Windows que se muestran en la tabla siguiente.
+La actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008 habilitan la compatibilidad con dispositivos portátiles (WPD) de Windows en las ediciones de Windows que se muestran en la tabla siguiente.
 
 
 
@@ -395,7 +395,7 @@ La actualización de plataforma para Windows Vista y la actualización de plataf
 <td>Windows Vista</td>
 <td><dl> Starter con SP2 (x86)<br />
 Home Basic con SP2 (x86 y amd64)<br />
-Inicio Premium sp2 (x86 y amd64)<br />
+Inicio Premium con SP2 (x86 y amd64)<br />
 Negocio con SP2 (x86 y amd64)<br />
 Enterprise con SP2 (x86 y amd64)<br />
 Ultimate con SP2 (x86 y amd64)<br />
@@ -410,12 +410,12 @@ Ultimate con SP2 (x86 y amd64)<br />
 
 ### <a name="supported-wpd-api-elements"></a>Elementos de API de WPD admitidos
 
-En la tabla siguiente se identifican las características que se admiten para las versiones de Windows 7, Windows Vista y Windows Vista con actualización de plataforma para las versiones de Windows Vista del sistema operativo Windows.
+En la tabla siguiente se identifican las características que se admiten para las versiones Windows 7, Windows Vista y Windows Vista con la actualización de plataforma para las versiones de Windows Vista del sistema operativo Windows.
 
 | Característica WPD                    | Windows 7 | Windows Vista | Windows Vista con actualización de plataforma para Windows Vista |
 |--------------------------------|-----------|---------------|------------------------------------------------------|
 | MTP a través de USB                   | Sí       | Sí           | Sí                                                  |
-| MTP sobre IP                    | Sí       | Sí           | Sí                                                  |
+| MTP a través de IP                    | Sí       | Sí           | Sí                                                  |
 | MTP sobre Bluetooth             | Sí       | No            | Sí                                                  |
 | WPD y MTP Device Services    | Sí       | No            | Sí                                                  |
 | Automatización de WPD                 | Sí       | No            | No                                                   |
@@ -427,7 +427,7 @@ En la tabla siguiente se identifican las características que se admiten para la
 
  
 
-Para las ediciones de Windows 7 y Windows Vista que no tienen Microsoft Reproductor de Windows Media instalado de forma predeterminada (las ediciones N y KN), debe instalar el SDK de formato multimedia [11]( ../audio-and-video.md) de Windows ( para habilitar la funcionalidad https://msdn.microsoft.com/windows/bb190326.aspx) de WPD. Para obtener más información, [vea el Knowledge Base](https://support.microsoft.com/kb/953693) ( , que se publicó originalmente como una resolución para Windows https://go.microsoft.com/fwlink/p/?linkid=158715) Vista.
+Para las ediciones de Windows 7 y Windows Vista que no tienen Microsoft Reproductor de Windows Media instalado de forma predeterminada (las ediciones N y KN), debe instalar el SDK de [Windows Media Format 11]( ../audio-and-video.md) ( para habilitar la funcionalidad https://msdn.microsoft.com/windows/bb190326.aspx) de WPD. Para obtener más información, [vea el Knowledge Base](https://support.microsoft.com/kb/953693) ( , que se publicó originalmente como una resolución para Windows https://go.microsoft.com/fwlink/p/?linkid=158715) Vista.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -442,7 +442,7 @@ Para las ediciones de Windows 7 y Windows Vista que no tienen Microsoft Reproduc
 [Acerca de la actualización de plataforma para Windows Vista](platform-update-for-windows-vista-overview.md)
 </dt> <dt>
 
-[Knowledge Base artículo sobre la actualización de plataforma para Windows Vista (KB 971644)](https://support.microsoft.com/kb/971644)
+[Knowledge Base sobre la actualización de plataforma para Windows Vista (KB 971644)](https://support.microsoft.com/kb/971644)
 </dt> </dl>
 
  

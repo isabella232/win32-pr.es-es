@@ -1,19 +1,19 @@
 ---
-description: Lista genérica de personas asociadas y que contribuyen a un elemento.
+description: Lista genérica de personas asociadas a un elemento y que contribuyen a él.
 ms.assetid: 4d85678b-91cc-4c0d-b676-b4e6995fe062
-title: System. ItemParticipants
+title: System.ItemParticipants
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 9fec9527296794d7caf5f577d414dc5dd99d3150
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696626"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359677"
 ---
-# <a name="systemitemparticipants"></a>System. ItemParticipants
+# <a name="systemitemparticipants"></a>System.ItemParticipants
 
-Lista genérica de personas asociadas y que contribuyen a un elemento. Por ejemplo, esta es la combinación de personas de la lista para, la lista CC y el remitente de un mensaje de correo electrónico.
+Lista genérica de personas asociadas a un elemento y que contribuyen a él. Por ejemplo, esta es la combinación de personas en la lista Para, Cc y el remitente de un mensaje de correo electrónico.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

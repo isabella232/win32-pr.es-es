@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28db512ac96e4df41f3fc70d15cd8286a191cd56dd5e862d4061df4d69cd10ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 971c44688e57dd1081d33a4a077a8dcadcb89abf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118098138"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359819"
 ---
 # <a name="d3d12islayoutopaque-function"></a>Función D3D12IsLayoutOpaque
 
@@ -68,7 +68,7 @@ Valor **bool** que indica si el diseño es opaco. Un diseño es opaco si es D3D1
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

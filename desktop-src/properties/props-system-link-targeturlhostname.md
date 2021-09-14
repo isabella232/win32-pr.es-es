@@ -4,12 +4,12 @@ ms.assetid: 548e4130-bf18-43cf-955d-a7e856152d0c
 title: System.Link.TargetUrlHostName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23b8243bca8f4ed2f4c98bd0d5e28bfeae51f1e73841ddeb773283340f88f59b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f2827eafd01c3439a76fa74a992250fb3cb82236
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248115"
 ---
 # <a name="systemlinktargeturlhostname"></a>System.Link.TargetUrlHostName
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

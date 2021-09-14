@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: fa5213eabfb4b22b9a37927495f5058cbfeb0b86b0f1f8b8f3a4ba1a2a2bdbb6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: abf8f070e339f2dcda5f818f5ffd5386c33d0e29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118666214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164101"
 ---
-# <a name="d1114-non-optional-pointer-null"></a>D1114: puntero no opcional NULL
+# <a name="d1114-non-optional-pointer-null"></a>D1114: puntero null no opcional
 
-El parámetro \[ *de parámetro* \] para *el* método interface :: no es opcional. Se pasó un puntero **NULL.** Esto hará que Direct2D se bloquea.
+El parámetro \[ *de parámetro* \] para el *método*::*de la* interfaz no es opcional. Se pasó un puntero **NULL.** Esto hará que Direct2D se bloquea.
 
 ### <a name="placeholders"></a>Marcadores de posición
 
@@ -38,7 +38,7 @@ Nombre del parámetro que contiene el **puntero NULL.**
 <span id="interface"></span><span id="INTERFACE"></span>*Interfaz*
 </dt> <dd>
 
-Nombre de la interfaz a la que pertenece *el* método.
+Nombre de la interfaz a la que pertenece *el método.*
 
 </dd> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 4b3fc078-731e-4263-8e95-2c273d69a457
 title: Ejemplo de reconocimiento de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c151c92c9f407461c34ecffb015af179e57b5c9ed4735b36f70c9a4d26c78088
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 30d97d9d15ef64a3d7a1fe1fc5d45b3cb0454ba7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119935125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359654"
 ---
 # <a name="ink-recognition-sample"></a>Ejemplo de reconocimiento de lápiz
 
@@ -51,7 +51,7 @@ End Sub
 
 ## <a name="recognize-the-strokes"></a>Reconocimiento de los trazos
 
-El [controlador de](/dotnet/api/system.windows.forms.button?view=netcore-3.1) eventos Click del objeto [Button](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) comprueba que el usuario tenga al menos un reconocedor instalado mediante el examen de la propiedad [Count](/previous-versions/ms828521(v=msdn.10)) de la [colección Recognizers.](/previous-versions/ms828520(v=msdn.10))
+El [controlador de](/dotnet/api/system.windows.forms.button?view=netcore-3.1) eventos Click del objeto [Button](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) comprueba que el usuario tiene al menos un reconocedor instalado mediante el examen de la propiedad [Count](/previous-versions/ms828521(v=msdn.10)) de la [colección Recognizers.](/previous-versions/ms828520(v=msdn.10))
 
 La [propiedad SelectedText](/previous-versions/windows/) del cuadro de texto se establece en la mejor coincidencia para los trazos mediante el [método ToString](/previous-versions/ms827836(v=msdn.10)) de la [colección Strokes.](/previous-versions/ms552701(v=vs.100)) Una vez que se han reconocido los trazos, se eliminan. Por último, el código fuerza el repintado del área de dibujo y la borra para su uso adicional con lápiz.
 

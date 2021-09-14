@@ -5,11 +5,11 @@ title: Administración de recursos compartidos de DDE
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fa89b890c9cf2b140f669b5e4dfa556cd11f978d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472171"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172318"
 ---
 # <a name="managing-dde-shares"></a>Administración de recursos compartidos de DDE
 

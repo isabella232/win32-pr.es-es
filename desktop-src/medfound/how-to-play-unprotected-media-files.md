@@ -4,18 +4,18 @@ ms.assetid: cdd67082-8153-4f48-abc5-278be82ae082
 title: Cómo reproducir archivos multimedia con Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65ba44212227be87e78d29c60a76bc3acdc2b1483b1029c62dd288bb7434b2a3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 163dba2f9f67139ce7477470889e13a54e2c8b5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117878869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359740"
 ---
 # <a name="how-to-play-media-files-with-media-foundation"></a>Cómo reproducir archivos multimedia con Media Foundation
 
 En este tutorial se muestra cómo reproducir archivos multimedia mediante el [objeto Sesión multimedia.](media-session.md)
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 Antes de leer este tema, debe estar familiarizado con los siguientes Media Foundation conceptos:
 
@@ -51,13 +51,13 @@ A continuación se muestra un esquema general de los pasos necesarios para repro
 4.  Cree una topología que conecte el origen multimedia a evr y SAR. En este paso, la aplicación crea una *topología parcial* que no incluye los descodificadores. Para obtener más información, vea [Crear topologías de reproducción.](creating-playback-topologies.md)
 5.  Llame [**a IMFMediaSession::SetTopology para**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology) establecer la topología en la sesión multimedia.
 6.  Use la [**interfaz IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) para obtener eventos de la sesión multimedia.
-7.  Llame [**a IMFMediaSession::Start para**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) iniciar la reproducción. Una vez que se inicia la reproducción, puede pausar mediante una llamada [**a IMFMediaSession::P ause**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-pause)o detenerla mediante una llamada a [**IMFMediaSession::Stop**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-stop).
+7.  Llame [**a IMFMediaSession::Start para**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) iniciar la reproducción. Una vez que se inicia la reproducción, puede pausar mediante una llamada a [**IMFMediaSession::P ause**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-pause)o detenerla mediante una llamada a [**IMFMediaSession::Stop**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-stop).
 8.  Cuando se cierre la aplicación, libere los recursos:
 
     1.  Llame [**a IMFMediaSession::Close**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-close) para cerrar la sesión multimedia. Este método es asincrónico. Cuando se completa, la sesión multimedia envía un [evento MESessionClosed.](mesessionclosed.md) A continuación, es seguro realizar los pasos restantes.
     2.  Llame [**a IMFMediaSource::Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown) para apagar el origen multimedia.
     3.  Llame [**a IMFMediaSession::Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-shutdown) para apagar la sesión multimedia.
-    4.  Llame [**a MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) para apagar Media Foundation plataforma.
+    4.  Llame [**a MFShutdown para**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) apagar Media Foundation plataforma.
 
 En las secciones siguientes se muestra un ejemplo de código completo:
 

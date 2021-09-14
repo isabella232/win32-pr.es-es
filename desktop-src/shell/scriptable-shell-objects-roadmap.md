@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: b30e312a5a8afab59a220d6ad87aa3cb09af979c64e38cc5e0093b6e0fb8f3fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8685b44d00d3f48e8de2a567218ef08c1cb5070
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118048761"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248030"
 ---
 # <a name="scriptable-shell-objects"></a>Objetos de shell que pueden incluirse en scripts
 
@@ -22,17 +22,17 @@ El shell de Windows proporciona un conjunto eficaz de objetos de automatización
 
 En esta sección se presentan los objetos shell que pueden incluirse en scripts.
 
--   [Versiones de shell](#shell-versions)
+-   [Versiones del shell](#shell-versions)
 -   [Creación de instancias de objetos de shell](#instantiating-shell-objects)
     -   [Enlace en tiempo de tarde](#late-binding)
     -   [Elemento HTML OBJECT](#html-object-element)
--   [Objeto Shell](#shell-object)
+-   [Objeto shell](#shell-object)
     -   [Seguridad](#security)
 -   [Objetos de carpeta](#folder-objects)
 
-## <a name="shell-versions"></a>Versiones de shell
+## <a name="shell-versions"></a>Versiones del shell
 
-Muchos de los objetos de Shell están disponibles [en la versión 4.71](versions.md) del shell. Otras están disponibles en la versión 5.00 y posteriores. La versión 5.00 está disponible con Windows 2000. En la tabla siguiente se muestra cada objeto shell en la versión del shell en la que el objeto ha pasado a estar disponible.
+Muchos de los objetos de Shell están disponibles [en la versión 4.71](versions.md) del shell. Otras están disponibles en la versión 5.00 y posteriores. La versión 5.00 pasó a estar disponible con Windows 2000. En la tabla siguiente se muestra cada objeto shell en la versión del shell en la que el objeto pasó a estar disponible.
 
 
 
@@ -56,14 +56,14 @@ Muchos de los objetos de Shell están disponibles [en la versión 4.71](versions
 
 ## <a name="instantiating-shell-objects"></a>Creación de instancias de objetos de shell
 
-Para crear instancias de los objetos de Shell Visual Basic aplicaciones con enlace anticipado, agregue referencias a las bibliotecas siguientes en el proyecto:
+Para crear instancias de los objetos de Shell en Visual Basic aplicaciones con enlace temprano, agregue referencias a las siguientes bibliotecas en el proyecto:
 
 -   Controles de Internet de Microsoft (SHDocVw)
 -   Controles y automatización de Microsoft Shell (Shell32)
 
 ### <a name="late-binding"></a>Enlace en tiempo de tarde
 
-También puede crear instancias de muchos de los objetos de Shell con enlace en tiempo de tarde. Este enfoque funciona en Visual Basic y en script. En el ejemplo siguiente se muestra cómo crear instancias del objeto [**Shell**](shell.md) en JScript.
+También puede crear instancias de muchos de los objetos de Shell con enlace en tiempo de tarde. Este enfoque funciona en Visual Basic y en script. En el ejemplo siguiente se muestra cómo crear una instancia del [**objeto Shell**](shell.md) en JScript.
 
 
 ```
@@ -81,7 +81,7 @@ También puede crear instancias de muchos de los objetos de Shell con enlace en 
 
 
 
-En el ejemplo siguiente se muestra cómo crear instancias del [**objeto Folder**](folder.md) en VBScript.
+En el ejemplo siguiente se muestra cómo crear una instancia del [**objeto Folder**](folder.md) en VBScript.
 
 
 ```
@@ -136,7 +136,7 @@ El ProgID de cada uno de los objetos de Shell se muestra en la tabla siguiente.
 
 ### <a name="html-object-element"></a>Elemento HTML OBJECT
 
-También puede usar el elemento [**OBJECT**](https://msdn.microsoft.com/library/ms535859(v=VS.85).aspx) para crear instancias de objetos shell en una página HTML. Para ello, establezca el atributo  ID del elemento **OBJECT** en el nombre de variable que usará en los scripts e identifique el objeto con su número registrado (CLASSID). El siguiente código HTML crea una instancia del [**objeto ShellFolderItem**](shellfolderitem-object.md) mediante el **elemento OBJECT.**
+También puede usar el elemento [**OBJECT**](https://msdn.microsoft.com/library/ms535859(v=VS.85).aspx) para crear instancias de objetos de Shell en una página HTML. Para ello, establezca el atributo  ID del elemento **OBJECT** en el nombre de variable que usará en los scripts e identifique el objeto con su número registrado (CLASSID). El siguiente código HTML crea una instancia del [**objeto ShellFolderItem**](shellfolderitem-object.md) mediante el **elemento OBJECT.**
 
 
 ```
@@ -148,11 +148,11 @@ También puede usar el elemento [**OBJECT**](https://msdn.microsoft.com/library/
 
 
 
-En la tabla siguiente se muestra cada objeto shell y su CLASSID respectivo.
+En la tabla siguiente se muestra cada objeto de Shell y su CLASSID correspondiente.
 
 
 
-| Objeto shell                                           | Classid                              |
+| Objeto shell                                           | CLASSID                              |
 |--------------------------------------------------------|--------------------------------------|
 | [**DIDiskQuotaUser**](didiskquotauser-object.md)       | 7988B571-EC89-11cf-9C00-00AA00A14F56 |
 | [**DiskQuotaControl**](diskquotacontrol-object.md)     | 7988B571-EC89-11cf-9C00-00AA00A14F56 |
@@ -180,7 +180,7 @@ En la tabla siguiente se muestra cada objeto shell y su CLASSID respectivo.
 
 ## <a name="shell-object"></a>Objeto shell
 
-El [**objeto Shell**](shell.md) representa los objetos del shell. Puede usar los métodos expuestos por el objeto shell para:
+El [**objeto Shell**](shell.md) representa los objetos del Shell. Puede usar los métodos expuestos por el objeto shell para:
 
 -   Abra, explore y busque carpetas.
 -   Minimice, restaure, en cascada o abra ventanas de mosaico.
@@ -263,7 +263,7 @@ Los usuarios quizás estén más familiarizados con los comandos a los que acced
 
 ### <a name="security"></a>Seguridad
 
-Como aplicación, un HTA se ejecuta con un modelo de seguridad diferente al de una página web. Para interactuar con una página web que implementa la funcionalidad de los objetos de Shell, los usuarios deben habilitar la opción Inicializar y incluir en script los controles **ActiveX** no marcados como seguros para la zona de seguridad en la que están viendo la página.
+Como aplicación, un HTA se ejecuta con un modelo de seguridad diferente al de una página web. Para interactuar con una página web que implementa la funcionalidad de los objetos de Shell, los usuarios deben habilitar los controles Initialize y **script ActiveX no** marcados como seguros para la zona de seguridad en la que están viendo la página.
 
 ## <a name="folder-objects"></a>Objetos de carpeta
 

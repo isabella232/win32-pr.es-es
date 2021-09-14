@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: f4153a5761d59c54cf8635202adcca0ddf72603022ebf8dbb5b160231c90e49e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 31c2e6de8cf1504543727cad056a3616a51182d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119955215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359401"
 ---
 # <a name="swbemlocatorconnectserver-method"></a>Método SWbemLocator.ConnectServer
 
@@ -94,7 +94,7 @@ Ejemplo: "DomainName \\ UserName"
 *strPassword* \[ en, opcional\]
 </dt> <dd>
 
-Cadena que especifica la contraseña que se usará al intentar conectarse. Deje el parámetro en blanco para usar el contexto de seguridad actual. El *parámetro strPassword* solo debe usarse con conexiones a servidores WMI remotos. Si intenta especificar *strPassword* para una conexión WMI local, se produce un error en el intento de conexión. Si la autenticación Kerberos está en uso, el nombre de usuario y la contraseña especificados en *strUser* y *strPassword* no se pueden interceptar en la red.
+Cadena que especifica la contraseña que se usará al intentar conectarse. Deje el parámetro en blanco para usar el contexto de seguridad actual. El *parámetro strPassword* solo debe usarse con conexiones a servidores WMI remotos. Si intenta especificar *strPassword para una* conexión WMI local, se produce un error en el intento de conexión. Si la autenticación Kerberos está en uso, el nombre de usuario y la contraseña especificados en *strUser* y *strPassword* no se pueden interceptar en la red.
 
 </dd> <dt>
 
@@ -129,7 +129,7 @@ Ejemplo: "Kerberos:DOMAIN"
 NTLMDomain:
 </dt> <dd>
 
-Para usar la autenticación NT Lan Manager (NTLM), debe especificarla como NTLMDomain:*dominio*, por ejemplo, donde es el `NTLMDomain:fabrikam` nombre del `fabrikam` dominio.
+Para usar la autenticación NT Lan Manager (NTLM), debe especificarla como NTLMDomain:*dominio*, como donde es el `NTLMDomain:fabrikam` nombre del `fabrikam` dominio.
 
 Ejemplo: "NTLMDomain:DOMAIN"
 
@@ -228,7 +228,7 @@ Se ha producido un error de red que impide el funcionamiento normal.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método ConnectServer** se usa a menudo al conectarse a una cuenta con un nombre de usuario y una contraseña diferentes en un equipo remoto porque no se puede especificar una contraseña diferente en una cadena [de moniker.](constructing-a-moniker-string.md) Para obtener más información, consulte [Conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md) (puede estar en inglés).
 
@@ -302,7 +302,7 @@ $WbemClasses
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemLocator<br/>                                                          |

@@ -1,6 +1,6 @@
 ---
-title: Identificadores de estilo (UIAutomationClient. h)
-description: Este conjunto de constantes describe las constantes con nombre que se usan para identificar el estilo visual del texto de un documento.
+title: Identificadores de estilo (UIAutomationClient.h)
+description: Este conjunto de constantes describe las constantes con nombre que se usan para identificar el estilo visual de texto en un documento.
 ms.assetid: BC06F8B6-3A2B-46BF-A8A6-6BA69A72738A
 topic_type:
 - apiref
@@ -29,15 +29,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0d4f2c98a5fc2ae2cecb8af0135034434adaba12
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803452"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172669"
 ---
 # <a name="style-identifiers"></a>Identificadores de estilo
 
-Este conjunto de constantes describe las constantes con nombre que se usan para identificar el estilo visual del texto de un documento.
+Este conjunto de constantes describe las constantes con nombre que se usan para identificar el estilo visual de texto en un documento.
 
 <dl> <dt>
 
@@ -62,12 +62,12 @@ Lista con elementos con viñetas. Se admite a partir de Windows 8.1.
 
 
 
-Un estilo personalizado.
+Estilo personalizado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="StyleId_Emphasis"></span><span id="styleid_emphasis"></span><span id="STYLEID_EMPHASIS"></span>**\_Énfasis StyleId**
+<span id="StyleId_Emphasis"></span><span id="styleid_emphasis"></span><span id="STYLEID_EMPHASIS"></span>**Énfasis de StyleId \_**
 </dt> <dd> <dl> <dt>
 
 70013
@@ -101,7 +101,7 @@ Encabezado de primer nivel.
 
 
 
-Encabezado de segundo nivel.
+Un segundo encabezado de nivel.
 
 
 </dt> </dl> </dd> <dt>
@@ -114,7 +114,7 @@ Encabezado de segundo nivel.
 
 
 
-Encabezado de tercer nivel.
+Un encabezado de tercer nivel.
 
 
 </dt> </dl> </dd> <dt>
@@ -127,7 +127,7 @@ Encabezado de tercer nivel.
 
 
 
-Encabezado de cuarto nivel.
+Un encabezado de cuarto nivel.
 
 
 </dt> </dl> </dd> <dt>
@@ -140,7 +140,7 @@ Encabezado de cuarto nivel.
 
 
 
-Encabezado de quinto nivel.
+Un encabezado de quinto nivel.
 
 
 </dt> </dl> </dd> <dt>
@@ -166,7 +166,7 @@ Encabezado de sexto nivel.
 
 
 
-Encabezado de séptima nivel.
+Un séptimo encabezado de nivel.
 
 
 </dt> </dl> </dd> <dt>
@@ -179,7 +179,7 @@ Encabezado de séptima nivel.
 
 
 
-Encabezado de octavo nivel.
+Un título de octavo nivel.
 
 
 </dt> </dl> </dd> <dt>
@@ -192,12 +192,12 @@ Encabezado de octavo nivel.
 
 
 
-Encabezado de noveno nivel.
+Noveno encabezado de nivel.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="StyleId_Normal"></span><span id="styleid_normal"></span><span id="STYLEID_NORMAL"></span>**StyleId \_ normal**
+<span id="StyleId_Normal"></span><span id="styleid_normal"></span><span id="STYLEID_NORMAL"></span>**StyleId \_ Normal**
 </dt> <dd> <dl> <dt>
 
 70012
@@ -223,7 +223,7 @@ Lista con elementos numerados. Se admite a partir de Windows 8.1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="StyleId_Quote"></span><span id="styleid_quote"></span><span id="STYLEID_QUOTE"></span>**Comilla StyleId \_**
+<span id="StyleId_Quote"></span><span id="styleid_quote"></span><span id="STYLEID_QUOTE"></span>**StyleId \_ Quote**
 </dt> <dd> <dl> <dt>
 
 70014
@@ -231,12 +231,12 @@ Lista con elementos numerados. Se admite a partir de Windows 8.1.
 
 
 
-Una expresión de código delimitada.
+Una comilla.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="StyleId_Subtitle"></span><span id="styleid_subtitle"></span><span id="STYLEID_SUBTITLE"></span>**Subtítulo StyleId \_**
+<span id="StyleId_Subtitle"></span><span id="styleid_subtitle"></span><span id="STYLEID_SUBTITLE"></span>**Subtítulo de \_ StyleId**
 </dt> <dd> <dl> <dt>
 
 70011
@@ -244,12 +244,12 @@ Una expresión de código delimitada.
 
 
 
-Un subtítulo.
+Subtítulo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="StyleId_Title"></span><span id="styleid_title"></span><span id="STYLEID_TITLE"></span>**Título de StyleId \_**
+<span id="StyleId_Title"></span><span id="styleid_title"></span><span id="STYLEID_TITLE"></span>**Título \_ de StyleId**
 </dt> <dd> <dl> <dt>
 
 70010
@@ -257,7 +257,7 @@ Un subtítulo.
 
 
 
-Un título.
+Título.
 
 
 </dt> </dl> </dd> </dl>
@@ -268,13 +268,13 @@ Un título.
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                            |
-| Encabezado<br/>                   | <dl> <dt>UIAutomationClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                      |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                            |
+| Encabezado<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -287,7 +287,7 @@ Un título.
 [**IUIAutomationStylesPattern::CurrentStyleId**](/windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomationstylespattern-get_currentstyleid)
 </dt> <dt>
 
-[Compatibilidad de UI Automation para el contenido textual](uiauto-ui-automation-textpattern-overview.md)
+[Automatización de la interfaz de usuario compatibilidad con contenido textual](uiauto-ui-automation-textpattern-overview.md)
 </dt> </dl>
 
  

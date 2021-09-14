@@ -4,12 +4,12 @@ ms.assetid: ecfddf4e-71b4-42c4-8b54-9868cec6ed9b
 title: Agregar metadatos al receptor de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65e25ddc12b406987de4ec95d3183309e8453696d1bb5b2816054407f1ced4b8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16ea86a09ff9e3d2a25bbf8d00d46691fd803365
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119606725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359746"
 ---
 # <a name="adding-metadata-to-the-file-sink"></a>Agregar metadatos al receptor de archivos
 

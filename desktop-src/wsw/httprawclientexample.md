@@ -5,15 +5,15 @@ ms.assetid: bc9e108e-d4a0-4bdd-82c2-5486ea46364b
 keywords:
 - HttpRawClientExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5202a43c1d3e49d171055fbbece6656c519ccfa9c699b491ec9fe59b2ee6205a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b91db8d21b9be3f9e243b6a985ace1688e399ac9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963124"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360577"
 ---
 # <a name="httprawclientexample"></a>HttpRawClientExample
 

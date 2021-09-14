@@ -1,19 +1,19 @@
 ---
-description: Índice de icono usado en los mensajes marcados para seguimiento.
+description: Índice de icono que se usa en los mensajes marcados para seguimiento.
 ms.assetid: cce643a4-0942-4f51-b4d8-ff9307b862d2
 title: System.Communication.FollowupIconIndex
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 289f3ea35a2f05896365e717e464c84319eb1ec151efb7b7ad9b339ca7505943
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7de05fef41c2688aa8e7b41c9364993adadf2e06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118970774"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248331"
 ---
 # <a name="systemcommunicationfollowupiconindex"></a>System.Communication.FollowupIconIndex
 
-Índice de icono usado en los mensajes marcados para seguimiento.
+Índice de icono que se usa en los mensajes marcados para seguimiento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Int32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -4,12 +4,12 @@ ms.assetid: e5500ae2-f250-4b27-8eaa-bff8c2f7c797
 title: System.Media.AverageLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a01102d09296723fd01f2304b0e5c29be934bea5d509c94a6c057e038478670
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eaccb62bbe71ac06f821123b971643f92fcbbba3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118726364"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363410"
 ---
 # <a name="systemmediaaveragelevel"></a>System.Media.AverageLevel
 
@@ -29,7 +29,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

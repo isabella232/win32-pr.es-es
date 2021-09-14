@@ -1,5 +1,5 @@
 ---
-description: El método SetControlVideoPin establece el pin usado por el filtro.
+description: El método SetControlVideoPin establece el pin utilizado por el filtro.
 ms.assetid: 4346f828-4380-4150-9ecb-74eb690bdcdf
 title: Método CBaseControlVideo.SetControlVideoPin (Ctlutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6169b5d2ec71148cd868e340c5a2f4e206355044ce55e0905c20787ddb3a263e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4cf47469800a4d1ecd8abe373d6f3c1fd53ece5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118660790"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172014"
 ---
 # <a name="cbasecontrolvideosetcontrolvideopin-method"></a>Método CBaseControlVideo.SetControlVideoPin
 
@@ -68,7 +68,7 @@ Solo se puede llamar a la interfaz cuando el filtro se ha conectado correctament
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

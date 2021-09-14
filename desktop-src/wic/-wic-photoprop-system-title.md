@@ -5,19 +5,19 @@ title: Directiva de metadatos de fotos System.Title
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fa43b31595928fa3c2c936de8710131c20f17b1a
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880688"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359984"
 ---
 # <a name="systemtitle-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Title
 
-Directiva de metadatos de fotos para la [propiedad System.Title.](../properties/props-system-title.md)
+Directiva de metadatos de fotos para [la propiedad System.Title.](../properties/props-system-title.md)
 
 ### <a name="pkey"></a>PKEY
 
-Título \_ PKEY
+PKEY \_ Title
 
 ### <a name="containers"></a>Contenedores
 
@@ -37,15 +37,15 @@ VT \_ LPWSTR o VT \_ LPSTR
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se concilian los valores de esquemas diferentes.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
-| Pedido de | Ruta de acceso                                | Formato de disco    |
+| Pedido | Path                                | Formato de disco    |
 |-------|-------------------------------------|----------------|
 | 1     | /app1/ifd/{ushort=40091}            | bytes \_ unicode |
 | 2     | /xmp/ &lt; xmpalt &gt; dc:title         | unicode        |
@@ -66,7 +66,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido de | Ruta de acceso                                | Formato de disco    |
+| Pedido | Path                                | Formato de disco    |
 |-------|-------------------------------------|----------------|
 | 1     | /app1/ifd/{ushort=40091}            | bytes \_ unicode |
 | 2     | /xmp/dc:title                       | unicode        |
@@ -86,7 +86,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido de | Ruta de acceso                                |
+| Pedido | Path                                |
 |-------|-------------------------------------|
 | 1     | /app1/ifd/{ushort=40091}            |
 | 2     | /xmp/dc:title                       |
@@ -102,11 +102,11 @@ Se concilian los valores de esquemas diferentes.
 
 ### <a name="tiff-policy"></a>Directiva TIFF
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
-| Pedido de | Ruta de acceso                                    | Formato de disco    |
+| Pedido | Path                                    | Formato de disco    |
 |-------|-----------------------------------------|----------------|
 | 1     | /ifd/{ushort=40091}                     | bytes \_ unicode |
 | 2     | /ifd/xmp/ &lt; xmpalt &gt; dc:title         | unicode        |
@@ -128,7 +128,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido de | Ruta de acceso                                    | Formato de disco    |
+| Pedido | Path                                    | Formato de disco    |
 |-------|-----------------------------------------|----------------|
 | 1     | /ifd/{ushort=40091}                     | bytes \_ unicode |
 | 2     | /ifd/xmp/dc:title                       | unicode        |
@@ -149,7 +149,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido de | Ruta de acceso                                    |
+| Pedido | Path                                    |
 |-------|-----------------------------------------|
 | 1     | /ifd/{ushort=40091}                     |
 | 2     | /ifd/xmp/dc:title                       |
@@ -164,7 +164,7 @@ Se concilian los valores de esquemas diferentes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

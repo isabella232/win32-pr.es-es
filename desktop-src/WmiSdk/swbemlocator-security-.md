@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 6c5fa2ba102de1135c0019e2dcfb291f55672cabb00cea1c59d8a655f21c882e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c2aa61ebc3ef48c82405d960d5de42ab8f23dc53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119955175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359399"
 ---
 # <a name="swbemlocatorsecurity_-property"></a>Propiedad SWbemLocator.Security \_
 
@@ -47,7 +47,7 @@ SWbemLocator.Security_ As Object
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las propiedades de **un objeto \_ SWbemLocator.Security** no tienen valores predeterminados. Si intenta obtener el valor [**de SWbemSecurity.AuthenticationLevel**](swbemsecurity-authenticationlevel.md) o [**SWbemSecurity.ImpersonationLevel**](swbemsecurity-impersonationlevel.md) en un objeto [**SWbemLocator**](swbemlocator.md) antes de establecerlo, se producirá un error [wbemErrFailed.](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum)
 
@@ -59,7 +59,7 @@ Las propiedades de **un objeto \_ SWbemLocator.Security** no tienen valores pred
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemLocator<br/>                                                          |

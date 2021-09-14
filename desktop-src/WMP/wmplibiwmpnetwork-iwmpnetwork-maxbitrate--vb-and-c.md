@@ -1,5 +1,5 @@
 ---
-title: Propiedad maxBitRate de IWMPNetwork
+title: IWMPNetwork maxBitRate, propiedad
 description: La propiedad maxBitRate obtiene la velocidad de bits de vídeo máxima posible.
 ms.assetid: 5a4c984a-a692-49f4-9539-d9bec269dba8
 keywords:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5b3ab011170832de15a3aac55645a7717e68a5d1df35dc4e7609cd698ebe87a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8bc5821351fec88213e122e9bf897e7a8f96db6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118331458"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360889"
 ---
-# <a name="iwmpnetworkmaxbitrate-property"></a>Propiedad IWMPNetwork::maxBitRate
+# <a name="iwmpnetworkmaxbitrate-property"></a>IWMPNetwork::maxBitRate, propiedad
 
 La **propiedad maxBitRate** obtiene la velocidad de bits de vídeo máxima posible.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -46,13 +46,13 @@ Public ReadOnly Property maxBitRate As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System.Int32** que es la velocidad de bits máxima.
+**System.Int32 que** es la velocidad de bits máxima.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

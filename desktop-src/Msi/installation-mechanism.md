@@ -4,12 +4,12 @@ ms.assetid: e9cda321-6978-4f9f-aff4-ccf609c88667
 title: Mecanismo de instalación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bce4396701ab5cddb43a67dddbafd1e8310092d04d779af04ad7876681cc3bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78455cb26e7672614266453e82f1a44c44e6b14d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118634223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171794"
 ---
 # <a name="installation-mechanism"></a>Mecanismo de instalación
 

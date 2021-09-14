@@ -1,15 +1,15 @@
 ---
-description: En estos artículos se describen las palabras clave públicas que pueden aparecer en printticket. No es necesario que se admiten todas las palabras clave.
+description: En estos artículos se describen las palabras clave públicas que pueden aparecer en un PrintTicket. No es necesario que se admiten todas las palabras clave.
 ms.assetid: 6ab4b34f-554f-4ecd-b2a5-7eacb66d0d72
 title: Descripciones de propiedades específicas de PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b401f36e67180f125ebc19439a057dd651de947198fac023da5f96d8471b0231
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 884286d631c293c5333e997932928cdeb879fc0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120112265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248421"
 ---
 # <a name="printticket-specific-property-descriptions"></a>Descripciones de propiedades específicas de PrintTicket
 

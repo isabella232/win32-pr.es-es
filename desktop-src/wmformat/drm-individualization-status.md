@@ -1,9 +1,9 @@
 ---
-title: DRM_INDIVIDUALIZATION_STATUS enumeración (Drmexternals.h)
-description: El tipo de enumeración DRM \_ INDIVIDUALIZATION \_ STATUS define los estados válidos para la individualización de DRM. | DRM_INDIVIDUALIZATION_STATUS enumeración (Drmexternals.h)
+title: DRM_INDIVIDUALIZATION_STATUS enumeración (Drternals.h)
+description: El tipo de enumeración ESTADO DE INDIVIDUALIZACIÓN DE DRM \_ define los estados \_ válidos para la individualización de DRM. | DRM_INDIVIDUALIZATION_STATUS enumeración (Drternals.h)
 ms.assetid: 76748fb3-340e-47e2-969d-5e857bb4e4d8
 keywords:
-- DRM_INDIVIDUALIZATION_STATUS de enumeración windows Media Format
+- DRM_INDIVIDUALIZATION_STATUS enumeración windows Media Format
 - enumeración windows Media Format
 topic_type:
 - apiref
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 081a8714d29cb48236bdb9191c15e92db96b18a9f8c1d9c2388c5baee7783296
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e8d59a19c58c775ee22d78e17bc09add2825948e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119705655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247383"
 ---
-# <a name="drm_individualization_status-enumeration-drmexternalsh"></a>DRM_INDIVIDUALIZATION_STATUS enumeración (Drmexternals.h)
+# <a name="drm_individualization_status-enumeration-drmexternalsh"></a>DRM_INDIVIDUALIZATION_STATUS enumeración (Drternals.h)
 
-El **tipo de enumeración DRM \_ INDIVIDUALIZATION \_ STATUS** define los estados válidos para [*la individualización de*](wmformat-glossary.md)DRM. Cuando una aplicación inicia la individualización con una llamada a [**IWMDRMReader::Individualize**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-individualize), el progreso de la solicitud de individualización se transmite a la aplicación a través de llamadas al método [**IWMStatusCallback::OnStatus.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) Todos los mensajes de estado de individualización usarán el miembro WMT INDIVIDUALIZE del tipo de enumeración \_ [**WMT \_ STATUS**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_status) como *parámetro Status.* El estado de la individualización se pasa a **OnStatus** en el *parámetro pValue.*
+El **tipo de enumeración DRM \_ INDIVIDUALIZATION \_ STATUS** define los estados válidos para [*la individualización de*](wmformat-glossary.md)DRM. Cuando una aplicación inicia la individualización con una llamada a [**IWMDRMReader::Individualize**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-individualize), el progreso de la solicitud de individualización se transmite a la aplicación a través de llamadas al método [**IWMStatusCallback::OnStatus.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) Todos los mensajes de estado de individualización usarán el miembro WMT INDIVIDUALIZE del tipo de enumeración STATUS de \_ [**WMT \_**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_status) como *parámetro Status.* El estado de la individualización se pasa a **OnStatus** en el *parámetro pValue.*
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -71,7 +71,7 @@ Indica que se ha completado el proceso de individualización.
 <span id="INDI_FAIL"></span><span id="indi_fail"></span>**ERROR \_ DE INDI**
 </dt> <dd>
 
-Indica que se ha fallado el proceso de individualización.
+Indica que error en el proceso de individualización.
 
 </dd> <dt>
 
@@ -96,9 +96,9 @@ Indica que se está instalando la actualización de seguridad.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La estructura WM [**\_ INDIVIDUALIZE \_ STATUS**](wm-individualize-status.md) utiliza esta enumeración.
+Esta enumeración la utiliza la [**estructura WM \_ INDIVIDUALIZE \_ STATUS.**](wm-individualize-status.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,7 +109,7 @@ La estructura WM [**\_ INDIVIDUALIZE \_ STATUS**](wm-individualize-status.md) ut
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                      |
 | Versión<br/>                  | Windows SDK de formato multimedia 7 o versiones posteriores del SDK<br/>                       |
-| Header<br/>                   | <dl> <dt>Drmexternals.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Drternals.h</dt> </dl> |
 
 
 
@@ -117,7 +117,7 @@ La estructura WM [**\_ INDIVIDUALIZE \_ STATUS**](wm-individualize-status.md) ut
 
 <dl> <dt>
 
-[**ESTADO \_ HTTP DE DRM \_**](drm-http-status.md)
+[**ESTADO HTTP DE DRM \_ \_**](drm-http-status.md)
 </dt> <dt>
 
 [**Tipos de enumeración**](enumeration-types.md)

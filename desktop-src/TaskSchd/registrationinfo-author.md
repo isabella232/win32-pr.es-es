@@ -4,7 +4,7 @@ description: Para el scripting, obtiene o establece el autor de la tarea.
 ms.assetid: ba355a3b-cda3-4d4f-8504-f77f3d9eb21a
 keywords:
 - Creación de propiedades Programador de tareas
-- Propiedad Author Programador de tareas , objeto RegistrationInfo
+- Propiedad Author Programador de tareas objeto , RegistrationInfo
 - Objeto RegistrationInfo Programador de tareas , propiedad Author
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a136f41b27f69d95a0817efa24931a994237da90c6c2e0eaf581149687664f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e7e940ff9da2cfccaa306ebf73080da2a28a091
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118858859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172917"
 ---
 # <a name="registrationinfoauthor-property"></a>RegistrationInfo.Author, propiedad
 
 Para el scripting, obtiene o establece el autor de la tarea.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -40,17 +40,17 @@ RegistrationInfo.Author As String
 
 Autor de la tarea.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Al leer o escribir XML para una tarea, el autor de la tarea se especifica mediante el [**elemento Author**](taskschedulerschema-author-registrationinfotype-element.md) del Programador de tareas esquema.
+Al leer o escribir XML para una tarea, el autor de la tarea se especifica mediante el [**elemento Author**](taskschedulerschema-author-registrationinfotype-element.md) del esquema Programador de tareas tarea.
 
-Al establecer este valor de propiedad, el valor puede ser texto que se recupera de un recurso .dll archivo. Se usa una cadena especializada para hacer referencia al texto del archivo de recursos. El formato de la cadena es $(@ Dll , ResourceID ), donde Dll es la ruta de acceso al archivo .dll que contiene el recurso y ResourceID es el identificador del texto \[ \] del \[ \] \[ \] \[ \] recurso. Por ejemplo, el establecimiento de este valor de propiedad en $(@ %SystemRoot% \\ System32ResourceName.dll, -101) establecerá la propiedad en el valor del texto del recurso con un identificador igual a -101 en el archivo deResourceName.dll \\ %SystemRoot%. \\ \\
+Al establecer este valor de propiedad, el valor puede ser texto que se recupera de un recurso .dll archivo. Se usa una cadena especializada para hacer referencia al texto del archivo de recursos. El formato de la cadena es $(@ Dll , ResourceID ), donde Dll es la ruta de acceso al archivo .dll que contiene el recurso y ResourceID es el identificador del texto \[ \] del \[ \] \[ \] \[ \] recurso. Por ejemplo, el establecimiento de este valor de propiedad en $(@ %SystemRoot% System32ResourceName.dll, -101) establecerá la propiedad en el valor del texto del recurso con un identificador igual a -101 en el archivo deResourceName.dll \\ \\ %SystemRoot% \\ \\ System32.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |

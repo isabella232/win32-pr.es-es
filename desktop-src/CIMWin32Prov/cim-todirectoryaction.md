@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 37ecee55fa76f6e86ccc60921851eca6cb922bec8fb6b00de01c3e410ca19940
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10ed2f7c2e2b46e63e2cc02cc8e6ce09ab2688e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174538"
 ---
 # <a name="cim_todirectoryaction-class"></a>Cim \_ ToDirectoryAction (clase)
 
-La **\_ asociación Cim ToDirectoryAction** identifica el directorio de destino para la acción de archivo. Cuando se usa esta asociación, se supone que una acción anterior creó el directorio de destino. Esta asociación no puede existir con una [**asociación \_ Cim ToDirectorySpecification,**](cim-todirectoryspecification.md) ya que una acción de archivo solo puede implicar un único directorio de destino.
+La **\_ asociación Cim ToDirectoryAction** identifica el directorio de destino para la acción de archivo. Cuando se usa esta asociación, se supone que el directorio de destino se creó mediante una acción anterior. Esta asociación no puede existir con una [**asociación \_ Cim ToDirectorySpecification,**](cim-todirectoryspecification.md) ya que una acción de archivo solo puede implicar un único directorio de destino.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ class CIM_ToDirectoryAction
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Cim ToDirectoryAction** tiene estos tipos de miembros:
 
@@ -82,18 +82,18 @@ Tipo de datos: **CIM \_ CopyFileAction**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: [**Mínimo**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Referencia al nombre de archivo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 

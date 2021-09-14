@@ -1,21 +1,21 @@
 ---
 title: Efecto RGB a matiz
-description: Convierte una imagen RGB en los espacios de color HSL (matiz, saturación, lumez) o HSV (matiz, saturación, valor).
+description: Convierte una imagen RGB en los espacios de color HSL (Matiz, Saturación, Lightness) o HSV (Matiz, Saturación, Valor).
 ms.assetid: 1def972d-8172-9217-8ce7-abce4a93f6e1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c474705d050c2ef2eff9050a759c60c5d8f1098440e06601ec1e3981e349aaff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53ccb4d3f67d116426d7a3497c04c4e8fb115b74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118160391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162606"
 ---
 # <a name="rgb-to-hue-effect"></a>Efecto RGB a matiz
 
-Convierte una imagen RGB en los espacios de color HSL (matiz, saturación, lumez) o HSV (matiz, saturación, valor).
+Convierte una imagen RGB en los espacios de color HSL (Matiz, Saturación, Lightness) o HSV (Matiz, Saturación, Valor).
 
-HSL y HSV son dos modelos diferentes para representar un color RGB en un espacio de colores cilíndrica. Son útiles porque permiten razonar sobre un color mediante conceptos más intuitivos, como matiz e intensidad, frente a la combinación de valores rojo, verde y azul.
+HSL y HSV son dos modelos diferentes para representar un color RGB en un espacio de colores cilíndrica. Son útiles porque permiten razonar sobre un color mediante conceptos más intuitivos, como el matiz y la intensidad, frente a la combinación de valores rojo, verde y azul.
 
 Este efecto normaliza los datos de salida (matiz, valor de saturación para HSV o matiz, saturación, lightness para HSL) al intervalo \[ 0, 1 \] .
 
@@ -54,11 +54,11 @@ Las propiedades del efecto de contraste se definen mediante la [**enumeración D
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|---------------------------------------------------|
 | Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
 | Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Header                   | d2d1effects \_ 2.h                                  |
+| Encabezado                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 

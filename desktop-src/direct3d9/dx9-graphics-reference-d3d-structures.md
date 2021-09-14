@@ -4,12 +4,12 @@ ms.assetid: 0a13cb04-10cb-48a6-a709-ad4a56459f02
 title: Estructuras de Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5437b99c97bf58127d942e00a05ee2342844af4865f49ad894d10e67977afc3a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24b3e11f8760cf5ab13e32bfbf9d944d0dd55f5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117730618"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359363"
 ---
 # <a name="direct3d-structures"></a>Estructuras de Direct3D
 

@@ -11,17 +11,17 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: ebbfbc1061d8bca03f52dd8cb7583fbe23ebb33a
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885250"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359217"
 ---
 # <a name="scripting-api-constants"></a>Constantes de API de scripting
 
 WMI usa varios tipos de constantes en el parámetro *iflags* de las llamadas de método en [scripting API para WMI.](scripting-api-for-wmi.md)
 
-Visual Basic aplicaciones pueden incluir la biblioteca de tipos para la API de scripting, Wbemdisp.tlb. Los scripts no pueden tener acceso a las constantes de la biblioteca de tipos a menos que usen las etiquetas REFERENCE u OBJECT del formato de archivo XML del host de &lt; &gt; script de Windows &lt; &gt; (WSH), [](using-the-wmi-scripting-type-library.md)como se describe en Uso de la biblioteca de tipos de scripting wmi . De lo contrario, un script debe usar el valor de la constante.
+Visual Basic aplicaciones pueden incluir la biblioteca de tipos para la API de scripting, Wbemdisp.tlb. Los scripts no pueden tener acceso a las constantes de la biblioteca de tipos a menos que usen las etiquetas REFERENCE u OBJECT del formato de archivo XML de host de script de &lt; &gt; Windows &lt; &gt; (WSH), [](using-the-wmi-scripting-type-library.md)tal como se describe en Uso de la biblioteca de tipos de scripting WMI . De lo contrario, un script debe usar el valor de la constante.
 
 ## <a name="constants"></a>Constantes
 
@@ -37,7 +37,7 @@ Defina los niveles de autenticación de seguridad.
 <span id="WbemChangeFlagEnum"></span><span id="wbemchangeflagenum"></span><span id="WBEMCHANGEFLAGENUM"></span>[**WbemChangeFlagEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemchangeflagenum)
 </dt> <dd>
 
-Defina cómo se lleva a cabo una operación de escritura en una clase o una instancia.
+Defina cómo se lleva a cabo una operación de escritura en una clase o una instancia de .
 
 </dd> <dt>
 
@@ -65,28 +65,28 @@ Define una marca de seguridad que se usa como parámetro en las llamadas al mét
 <span id="WbemErrorEnum"></span><span id="wbemerrorenum"></span><span id="WBEMERRORENUM"></span>[**WbemErrorEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum)
 </dt> <dd>
 
-Defina los errores que la API de scripting puede devolver [para las llamadas WMI.](scripting-api-for-wmi.md)
+Defina los errores que puede devolver [Scripting API para las llamadas WMI.](scripting-api-for-wmi.md)
 
 </dd> <dt>
 
 <span id="WbemFlagEnum"></span><span id="wbemflagenum"></span><span id="WBEMFLAGENUM"></span>[**WbemFlagEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemflagenum)
 </dt> <dd>
 
-Define las constantes usadas por [**SWbemServices.ExecQuery**](swbemservices-execquery.md), [**SWbemServices.ExecQueryAsync**](swbemservices-execqueryasync.md), [**SWbemServices.SubclassesOf**](swbemservices-subclassesof.md)y [**SWbemServices.InstancesOf**](swbemservices-instancesof.md).
+Define las constantes usadas por [**SWbemServices.ExecQuery**](swbemservices-execquery.md), [**SWbemServices.ExecQueryAsync,**](swbemservices-execqueryasync.md) [**SWbemServices.SubclassesOf**](swbemservices-subclassesof.md)y [**SWbemServices.InstancesOf.**](swbemservices-instancesof.md)
 
 </dd> <dt>
 
 <span id="WbemImpersonationLevelEnum"></span><span id="wbemimpersonationlevelenum"></span><span id="WBEMIMPERSONATIONLEVELENUM"></span>[**WbemImpersonationLevelEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemimpersonationlevelenum)
 </dt> <dd>
 
-Defina los niveles de suplantación de seguridad. Estas constantes se usan con [**SWbemSecurity**](swbemsecurity.md).
+Defina los niveles de suplantación de seguridad. Estas constantes se usan con [**SWbemSecurity.**](swbemsecurity.md)
 
 </dd> <dt>
 
 <span id="WbemObjectTextFormatEnum"></span><span id="wbemobjecttextformatenum"></span><span id="WBEMOBJECTTEXTFORMATENUM"></span>[**WbemObjectTextFormatEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemobjecttextformatenum)
 </dt> <dd>
 
-Defina los formatos de texto de objeto válidos que [**usará SWbemObjectEx.GetText. \_**](swbemobjectex-gettext-.md)
+Defina los formatos de texto de objeto válidos que va a usar [**SWbemObjectEx.GetText. \_**](swbemobjectex-gettext-.md)
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Define las constantes de tiempo de espera. [**SWbemEventSource.NextEvent**](swbe
 
 Puede combinar marcas para afectar a más de un aspecto de la llamada API.
 
-Por ejemplo, para crear una llamada [*semisincronosa,*](gloss-s.md) el parámetro *iFlags* de una llamada [**SWbemServices.Exe\_ cQuery**](swbemservices-execquery.md) debe contener dos marcas: **WbemFlagReturnImmediately** y **WbemFlagForwardOnly.** El valor **de WbemFlagReturnImmediately** es 16 y el valor de **WbemFlagForwardOnly** es 32. Dado que no se puede tener acceso a las constantes por nombre, se combinan los valores de estas marcas, lo que genera un *valor de iFlags* de 48.
+Por ejemplo, para crear una llamada [*semisincronosa,*](gloss-s.md) el parámetro *iFlags* en una llamada [**SWbemServices.ExecQuery \_**](swbemservices-execquery.md) debe contener dos marcas: **WbemFlagReturnImmediately** y **WbemFlagForwardOnly**. El valor de **WbemFlagReturnImmediately** es 16 y el valor de **WbemFlagForwardOnly** es 32. Dado que no se puede acceder a las constantes por nombre, se combinan los valores de estas marcas, lo que genera un *valor de iFlags* de 48.
 
 En el ejemplo de script siguiente se muestra la llamada.
 

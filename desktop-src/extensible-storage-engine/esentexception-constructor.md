@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 4645dab93b0b9b6fd2a7be6f553326e550a9744e7b21014c0bdf471fa7cee906
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e53a1611e052f2582be3b268a9f72b3bc9488a1c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118270012"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360766"
 ---
 # <a name="esentexception-constructor-overload-list"></a>Lista de sobrecargas de constructores de EsentException
 

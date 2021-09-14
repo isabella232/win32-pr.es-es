@@ -4,12 +4,12 @@ ms.assetid: 7f044ee5-b99e-4f0c-a680-b1e2672949fc
 title: Valores de atributo de sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7867dec9e6494c3e6e3d864e8841785f6c4fac96b2bb54ead0f24b0cbe7ea6b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4606726d5202a1453e98d5bf609084982f8f824e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119636895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361630"
 ---
 # <a name="synchronization-attribute-values"></a>Valores de atributo de sincronización
 
@@ -29,7 +29,7 @@ COM+ proporciona los siguientes valores de atributo de sincronización:
 
     Una buena razón para establecer el atributo de sincronización en Compatible es que esta configuración puede ser menos costosa en términos de recursos del sistema. Sin embargo, es más difícil escribir el componente debido a la necesidad de protegerlo frente a llamadas simultáneas. La implicación de establecer el atributo de sincronización en Compatible es que, en determinadas circunstancias, se puede crear una instancia del objeto de forma que no esté sincronizada. Si el modelo de subprocesos del componente es Gratis o Ambos, tendrá que proteger los datos de la instancia con algún tipo de mecanismo de bloqueo. Si el modelo de subprocesos es Apartment (STA), no tendrá que proteger los datos de la instancia.
 
--   **Requerido.** Al establecer este atributo, COM+ garantiza que se sincronizarán todos los objetos creados a partir del componente. De hecho, cada vez que COM+ crea una instancia del componente, se asegura de que solo haya un subproceso que pase por esta instancia a la vez.
+-   **Requerido.** Al establecer este atributo, COM+ garantiza que se sincronizarán todos los objetos creados a partir del componente. En efecto, cada vez que COM+ crea una instancia del componente, se asegura de que solo haya un subproceso que pase por esta instancia a la vez.
 
     A medida que COM+ activa un objeto, examina el estado de sincronización de su autor de la llamada. Si el autor de la llamada está sincronizado, COM+ fluye el límite de sincronización del autor de la llamada para incluir el nuevo objeto. De lo contrario, COM+ inicia la sincronización.
 

@@ -4,12 +4,12 @@ ms.assetid: 97e5ba52-92fc-49e4-9c22-6f61bfda2003
 title: Descodificador de vídeo DV
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd91cf325d9ba715d75aae884e29665d05d449ca39f01c195f9b13e2e1f8c1fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed277c3e4dd1aaa031d4dcf4694c7c3051fe37ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118064098"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248547"
 ---
 # <a name="dv-video-decoder"></a>Descodificador de vídeo DV
 
@@ -48,7 +48,7 @@ Admite un único tipo de salida:
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
 | Archivo DLL<br/>                      | <dl> <dt>Mfdvdec.dll</dt> </dl> |
 

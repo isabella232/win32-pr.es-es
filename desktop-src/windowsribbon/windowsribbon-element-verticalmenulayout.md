@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 732fff993e4ac4e1caf8637c1f83804636bf6882
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122623301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360610"
 ---
 # <a name="verticalmenulayout-element"></a>Elemento VerticalMenuLayout
 
@@ -57,14 +57,14 @@ Representa un diseño vertical para los elementos de una galería.
 <td><strong>Pinza</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Un identificador de tamaño asociado a la lista desplegable de la galería. <br/> <img src="images/controls/gripper.png" alt="Screen shot of a vertical gripper." /><br/> Restringido a uno de los siguientes valores:<br/> <br/>
+<td>Identificador de tamaño asociado a la lista desplegable de la galería. <br/> <img src="images/controls/gripper.png" alt="Screen shot of a vertical gripper." /><br/> Restringido a uno de los siguientes valores:<br/> <br/>
 <dt><span></span><span></span><strong></strong> (Ninguno)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Vertical)<br/> </dt> <dd> Predeterminada. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>IsMultipleHighlightingEnabled</strong><br/></td>
 <td>xs:boolean<br/></td>
 <td>No<br/></td>
-<td><strong>Windows 8 y versiones más recientes</strong><br/> Resalta todos los elementos de la lista hasta el elemento actual del mouseover (en lugar de solo el elemento de mouseover). Normalmente se usa para varias <strong>funcionalidades</strong> de deshacer <strong>y rehacer.</strong><br/> <br/>
+<td><strong>Windows 8 y versiones más recientes</strong><br/> Resalta todos los elementos de la lista hasta el elemento actual del mouseover (en lugar de incluirlo únicamente). Normalmente se usa para varias <strong>funcionalidades deshacer</strong> <strong>y rehacer.</strong><br/> <br/>
 <dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Predeterminada. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
@@ -95,11 +95,11 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Necesario.
 
-El **elemento VerticalMenuLayout** o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md) deben producirse una vez para cada [**elemento DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md), [**InRibbonGallery.MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)o [**SplitButtonGallery.MenuLayout.**](windowsribbon-element-splitbuttongallery-menulayout.md)
+El elemento **VerticalMenuLayout** o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md) deben producirse una vez para cada [**elemento DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md), [**InRibbonGallery.MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)o [**SplitButtonGallery.MenuLayout.**](windowsribbon-element-splitbuttongallery-menulayout.md)
 
 ## <a name="examples"></a>Ejemplos
 

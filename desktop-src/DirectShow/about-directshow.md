@@ -4,12 +4,12 @@ ms.assetid: 505c0a49-8e61-4c28-ada6-e8aa96d60a58
 title: Acerca DirectShow (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8262849d346dcb3c085522c4b8795708fee800eda36fe5d5b7facf27b40eff4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 572bfb704662f2628c0a5883d3fba455591e8939
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117824859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162486"
 ---
 # <a name="about-directshow-directshow"></a>Acerca DirectShow (DirectShow)
 

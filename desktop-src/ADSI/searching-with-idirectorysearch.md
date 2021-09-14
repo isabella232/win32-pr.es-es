@@ -10,12 +10,12 @@ keywords:
 - IDirectorySearch ADSI , Usar para buscar un directorio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c46700c48f82955bd01967808cd30f2fa078e3b6c998fb3beaac4bf7c7fe8707
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2738e163f672fb0000275e2fb9d885442ae6693
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119023224"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172145"
 ---
 # <a name="searching-with-the-idirectorysearch-interface"></a>Búsqueda con la interfaz IDirectorySearch
 
@@ -29,11 +29,11 @@ La [**interfaz IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorys
 
 Para obtener más información sobre la sintaxis de filtro de búsqueda, vea [Sintaxis de filtro de búsqueda.](search-filter-syntax.md)
 
-La ejecución de consultas es específica del proveedor. Con algunos proveedores, la ejecución de la consulta real no se produce hasta que se llama a [**IDirectorySearch::GetFirstRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getfirstrow) o [**IDirectorySearch::GetNextRow.**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextrow) La [**interfaz IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) funciona directamente con filtros de búsqueda. No se SQL el dialecto ldap ni el dialecto LDAP.
+La ejecución de consultas es específica del proveedor. Con algunos proveedores, la ejecución de la consulta real no se produce hasta que se llama a [**IDirectorySearch::GetFirstRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getfirstrow) o [**IDirectorySearch::GetNextRow.**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextrow) La [**interfaz IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) funciona directamente con filtros de búsqueda. Ni el dialecto SQL ni el dialecto LDAP son necesarios.
 
-La [**interfaz IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) proporciona métodos para enumerar el conjunto de resultados, fila por fila. El [**método IDirectorySearch::GetFirstRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getfirstrow) recupera la primera fila e [**IDirectorySearch::GetNextRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextrow) le mueve a la siguiente fila de la fila actual. Cuando haya alcanzado la última fila, la llamada a estos métodos devuelve el código de error S \_ ADS \_ NOMORE \_ ROWS. Por el contrario, [**IDirectorySearch::GetPreviousRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getpreviousrow) le mueve una fila a la vez. Un valor devuelto S ADS NOMORE ROWS indica \_ que ha alcanzado la primera fila del conjunto de \_ \_ resultados. Estos métodos funcionan en el conjunto de resultados, que residen en la memoria, en el cliente. Por lo tanto, cuando se realizan búsquedas paginadas y asincrónicas y la opción RESULTADOS DE CACHÉ está desactivada, el desplazamiento \_ hacia atrás puede tener \_ consecuencias inesperadas.
+La [**interfaz IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) proporciona métodos para enumerar el conjunto de resultados, fila por fila. El [**método IDirectorySearch::GetFirstRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getfirstrow) recupera la primera fila e [**IDirectorySearch::GetNextRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextrow) le mueve a la siguiente fila de la fila actual. Cuando se ha alcanzado la última fila, la llamada a estos métodos devuelve el código de error S \_ ADS \_ NOMORE \_ ROWS. Por el contrario, [**IDirectorySearch::GetPreviousRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getpreviousrow) le mueve una fila a la vez. Un valor devuelto S ADS NOMORE ROWS indica \_ que ha alcanzado la primera fila del conjunto de \_ \_ resultados. Estos métodos funcionan en el conjunto de resultados, que residen en la memoria, en el cliente. Por lo tanto, cuando se realizan búsquedas paginadas y asincrónicas y la opción RESULTADOS DE CACHÉ está desactivada, el desplazamiento \_ hacia atrás puede tener \_ consecuencias inesperadas.
 
-Cuando haya ubicado la fila adecuada, llame a [**IDirectorySearch::GetColumn**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getcolumn) para obtener elementos de datos, columna por columna. Para cada llamada, se pasa el nombre de la columna de interés. El elemento de datos devuelto es un puntero a una [**estructura \_ ADS SEARCH \_ COLUMN.**](/windows/desktop/api/Iads/ns-iads-ads_search_column) **GetColumn** le asigna esta estructura, pero debe liberarla mediante [**FreeColumn**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-freecolumn). Llame [**a CloseSearchHandle**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-closesearchhandle) para completar la operación de búsqueda.
+Cuando haya ubicado la fila adecuada, llame a [**IDirectorySearch::GetColumn**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getcolumn) para obtener elementos de datos, columna por columna. Para cada llamada, se pasa el nombre de la columna de interés. El elemento de datos devuelto es un puntero a una estructura [**\_ ADS SEARCH \_ COLUMN.**](/windows/desktop/api/Iads/ns-iads-ads_search_column) **GetColumn** le asigna esta estructura, pero debe liberarla mediante [**FreeColumn**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-freecolumn). Llame [**a CloseSearchHandle**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-closesearchhandle) para completar la operación de búsqueda.
 
 **Para realizar una búsqueda de directorios**
 
@@ -81,7 +81,7 @@ Esto proporciona un puntero a la [**interfaz IDirectorySearch.**](/windows/deskt
 
 Ahora que hay una interfaz COM para una instancia de IDirectoryInterface, llame a [**IDirectorySearch::SetSearchPreference**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference).
 
-Compile una matriz de nombres de atributo para prepararse para llamar a la [**función IDirectorySearch::ExecuteSearch.**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-executesearch) Los nombres de atributo se definen dentro del esquema de Active Directory. Para obtener más información sobre la definición de esquema, vea [AdsI Schema Model](adsi-schema-model.md). Los nombres de atributo enumerados se devuelven, si el objeto lo admite, como conjunto de resultados de la búsqueda.
+Compile una matriz de nombres de atributo para prepararse para llamar a la [**función IDirectorySearch::ExecuteSearch.**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-executesearch) Los nombres de atributo se definen dentro del esquema de Active Directory. Para obtener más información sobre la definición de esquema, vea [ADSI Schema Model](adsi-schema-model.md). Los nombres de atributo enumerados se devuelven, si el objeto lo admite, como conjunto de resultados de la búsqueda.
 
 
 ```C++

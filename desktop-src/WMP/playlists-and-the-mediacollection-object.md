@@ -16,12 +16,12 @@ keywords:
 - Objeto MediaCollection
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b1a0bba2e966e51523dc24965c2f2a066767b059f26a08fde9ee5856a1694df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 334b693046e6c78e92a4af901816b57bb9c4cddc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118334458"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359456"
 ---
 # <a name="playlists-and-the-mediacollection-object"></a>Listas de reproducción y el objeto MediaCollection
 

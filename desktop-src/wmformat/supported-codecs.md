@@ -11,11 +11,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d4d202470e2fd430025c5c1e75d0677e4504189e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359905"
 ---
 # <a name="supported-codecs"></a>Códecs admitidos
 

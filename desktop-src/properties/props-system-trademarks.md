@@ -4,12 +4,12 @@ ms.assetid: bcdec0f4-82af-4a82-8912-a7e658e77244
 title: System.Trademarks
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6410532d09296898e7863a405270ca50bcb9f5cc29cba1714173f617e152e8a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86c354c4e4fb958cc2631101d8b82332efe65388
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119095442"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361070"
 ---
 # <a name="systemtrademarks"></a>System.Trademarks
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

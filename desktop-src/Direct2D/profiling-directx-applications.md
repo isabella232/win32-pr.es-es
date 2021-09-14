@@ -1,63 +1,63 @@
 ---
 title: Generación de perfiles de aplicaciones de DirectX
-description: Muestra cómo medir algunas de las medidas de tiempo de rendimiento más importantes para una aplicación DirectX mediante las herramientas XPerf y GPUView que se envían como parte de la Windows rendimiento Toolkit.
+description: Muestra cómo medir algunas de las medidas de tiempo de rendimiento más importantes para una aplicación DirectX mediante las herramientas XPerf y GPUView que se envían como parte de Windows Rendimiento Toolkit.
 ms.assetid: 4B2F7273-C9B0-4DD3-B559-6220CDE62129
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c923f2917dbb8695bcd624f4d998043e7218cf2f976b19b24ab4cff2bc65f398
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0280389d4f8f2161e5e07f8906df7ea0484ad458
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118665468"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162630"
 ---
 # <a name="profiling-directx-apps"></a>Generación de perfiles de aplicaciones de DirectX
 
-Esto muestra cómo medir algunas de las medidas de tiempo de rendimiento más importantes para una aplicación [DirectX](/previous-versions/windows/apps/jj262109(v=win.10)) mediante las herramientas **XPerf** y **GPUView** que se envían como parte de la Windows Rendimiento Toolkit. Esta no es una guía completa para comprender las herramientas, sino su aplicabilidad específica para analizar el rendimiento de la aplicación DirectX. Aunque la mayoría de las técnicas que se analizan aquí son relevantes para todas las aplicaciones de DirectX, es más relevante para las aplicaciones que usan cadenas de intercambio y no para las aplicaciones DirectX creadas en XAML que usan animaciones SIS/VSIS y XAML. Le llevamos por las medidas clave del tiempo de rendimiento, cómo adquirir e instalar las herramientas, y realizar seguimientos de medición del rendimiento y, a continuación, analizarlas para comprender los cuellos de botella de la aplicación.
+Esto muestra cómo medir algunas de las medidas de tiempo de rendimiento más importantes para una aplicación [DirectX](/previous-versions/windows/apps/jj262109(v=win.10)) mediante las herramientas **XPerf** y **GPUView** que se envían como parte de Windows Performance Toolkit. Esta no es una guía completa para comprender las herramientas, sino su aplicabilidad específica para analizar el rendimiento de las aplicaciones de DirectX. Aunque la mayoría de las técnicas que se analizan aquí son pertinentes para todas las aplicaciones de DirectX, es más relevante para las aplicaciones que usan cadenas de intercambio y no para las aplicaciones DirectX creadas en XAML que usan animaciones SIS/VSIS y XAML. Le llevamos a través de las medidas clave del tiempo de rendimiento, cómo adquirir e instalar las herramientas, y realizar seguimientos de medición del rendimiento y analizarlos para comprender los cuellos de botella de la aplicación.
 
 ## <a name="about-the-tools"></a>Acerca de las herramientas
 
 ### <a name="xperf"></a>**XPerf**
 
-**XPerf** es un conjunto de herramientas de análisis de rendimiento creadas sobre seguimiento de eventos para Windows (ETW) diseñadas para medir y analizar el rendimiento detallado del sistema y la aplicación y el uso de recursos. A partir Windows 8 esta herramienta de línea de comandos tiene una interfaz gráfica de usuario y se denomina Windows Performance Recorder (WPR) y Windows Analizador de rendimiento (WPA). Puede encontrar más información sobre estas herramientas en la página web de [Windows Performance Toolkit](/previous-versions/windows/it-pro/windows-8.1-and-8/hh162945(v=win.10)) (WPT): Windows Performance [Toolkit](/previous-versions/windows/it-pro/windows-8.1-and-8/hh162945(v=win.10)).
+**XPerf** es un conjunto de herramientas de análisis de rendimiento creadas sobre el seguimiento de eventos para Windows (ETW) diseñadas para medir y analizar el rendimiento detallado del sistema y la aplicación y el uso de recursos. A partir Windows 8 esta herramienta de línea de comandos tiene una interfaz gráfica de usuario y se denomina Windows Performance Recorder (WPR) y Windows Analizador de rendimiento (WPA). Puede encontrar más información sobre estas herramientas en la página web de [Windows Performance Toolkit](/previous-versions/windows/it-pro/windows-8.1-and-8/hh162945(v=win.10)) (WPT): Windows Performance [Toolkit](/previous-versions/windows/it-pro/windows-8.1-and-8/hh162945(v=win.10)).
 
-Un ETW recopila los eventos de kernel solicitados y los guarda en un archivo denominado archivo de registro de seguimiento de eventos (ETL). Estos eventos de kernel proporcionan información amplia sobre una aplicación y las características del sistema al ejecutar la aplicación. Los datos se recopilan habilitando la captura de seguimiento, realizando el escenario de aplicación deseado que necesita análisis, deteniendo la captura que guarda los datos en un archivo ETL. A continuación, puede analizar el archivo en el mismo equipo o en otro mediante la herramienta de línea de **comandosxperf.exe** o la herramienta de análisis de seguimiento visual **xperfview.exe**.
+Un ETW recopila los eventos de kernel solicitados y los guarda en un archivo denominado archivo de registro de seguimiento de eventos (ETL). Estos eventos de kernel proporcionan información amplia sobre las características de una aplicación y del sistema al ejecutar la aplicación. Los datos se recopilan habilitando la captura de seguimiento, realizando el escenario de aplicación deseado que necesita análisis, deteniendo la captura que guarda los datos en un archivo ETL. A continuación, puede analizar el archivo en la misma máquina o en otra diferente mediante la herramienta de línea de **comandosxperf.exe** o la herramienta de análisis de seguimiento visual **xperfview.exe**.
 
 ### <a name="gpuview"></a>GPUView
 
-**GPUView es** una herramienta de desarrollo para determinar el rendimiento de la unidad de procesamiento gráfico (GPU) y la CPU. Examina el rendimiento con respecto al procesamiento del búfer de acceso directo a memoria (DMA) y el resto del procesamiento de vídeo en el hardware de vídeo.
+**GPUView es** una herramienta de desarrollo para determinar el rendimiento de la unidad de procesamiento de gráficos (GPU) y la CPU. Examina el rendimiento con respecto al procesamiento del búfer de acceso directo a memoria (DMA) y el resto del procesamiento de vídeo en el hardware de vídeo.
 
-En el caso de las aplicaciones de [DirectX](/previous-versions/windows/apps/jj262109(v=win.10)) que dependen en gran medida de la GPU, **GPUView** es una herramienta eficaz para comprender la relación entre el trabajo realizado en la CPU y la GPU. Para obtener más información sobre **GPUView,** [consulte Uso de GPUView.](/windows-hardware/drivers/display/using-gpuview)
+En el caso de las aplicaciones de [DirectX](/previous-versions/windows/apps/jj262109(v=win.10)) que dependen en gran medida de la GPU, **GPUView** es una herramienta eficaz para comprender la relación entre el trabajo realizado en la CPU y la GPU. Para obtener más información sobre **GPUView,** [vea Uso de GPUView.](/windows-hardware/drivers/display/using-gpuview)
 
-De forma similar a **XPerf,** primero se realiza un seguimiento ETW iniciando el servicio de seguimiento, iniciando el escenario que necesita análisis para la aplicación en consideración, deteniendo el servicio y guardando la información en un archivo ETL. **GPUView** presenta los datos presentes en el archivo ETL en un formato gráfico.
+De forma similar a **XPerf,** primero se realiza un seguimiento ETW iniciando el servicio de seguimiento, analizando el escenario que necesita análisis para la aplicación en consideración, deteniendo el servicio y guardando la información en un archivo ETL. **GPUView** presenta los datos presentes en el archivo ETL en un formato gráfico.
 
 Después de instalar **la herramienta GPUView,** se recomienda leer el tema "Pantalla principal de **GPUView"** en el menú "Ayuda **de GPUView".** Contiene información útil sobre cómo interpretar la interfaz **de usuario de GPUView.**
 
 ## <a name="installing-the-tools"></a>Instalación de las herramientas
 
-**XPerf** y **GPUView se** incluyen en Windows Performance Toolkit (WPT).
+**XPerf y** **GPUView se** incluyen en Windows Performance Toolkit (WPT).
 
-**XPerf se** distribuye como parte del kit de desarrollo Windows software (SDK) para Windows. [Descargue el SDK Windows](https://dev.windows.com/downloads).
+**XPerf se** distribuye como parte del kit de desarrollo Windows software (SDK) de Windows. [Descargue el SDK Windows](https://dev.windows.com/downloads).
 
-**GPUView** está disponible en Windows Assessment and Deployment Kit (Windows ADK). [Descargue el Windows ADK](/windows-hardware/get-started/adk-install).
+**GPUView** está disponible en Windows Assessment and Deployment Kit (Windows ADK). [Descargue el Windows ADK.](/windows-hardware/get-started/adk-install)
 
 Después de la instalación, debe agregar los directorios que contienen **XPerf** y **GPUView** a la variable "Path" del sistema.
 
-Haga clic en botón Inicio y escriba "Variables del sistema". Se abre la ventana Propiedades sistema. Haga clic en "Editar las variables de entorno del sistema". Seleccione "Variables de entorno" en el cuadro de diálogo "Propiedades del sistema". La variable "Path" se encuentra en "Variables del sistema". Anexe el directorio que **contienexperf.exe** y **GPUView.exe** a la ruta de acceso. Estos archivos ejecutables se encuentran en el directorio "Windows Rendimiento Toolkit" dentro de "Windows Kits". La ubicación predeterminada es: C: Archivos de **\\ programa (x86) Windows \\ Kits \\ 10 \\ Windows Rendimiento Toolkit**.
+Haga clic en botón Inicio y escriba "Variables del sistema". Se abre la ventana Propiedades sistema. Haga clic en "Editar las variables de entorno del sistema". Seleccione "Variables de entorno" en el cuadro de diálogo "Propiedades del sistema". La variable "Path" se encuentra en "Variables del sistema". Anexe el directorio que **xperf.exe** y **GPUView.exe** a la ruta de acceso. Estos ejecutables se encuentran en el directorio "Windows Performance Toolkit" dentro de "Windows Kits". La ubicación predeterminada es: C: Archivos de **\\ programa (x86) Windows \\ Kits \\ 10 \\ Windows Rendimiento Toolkit**.
 
 ## <a name="performance-time-measurements"></a>Medidas de tiempo de rendimiento
 
-La mayoría de las aplicaciones esperan ejecutarse sin problemas y responder a la entrada del usuario. Sin embargo, en función del escenario que desee, un aspecto del rendimiento podría ser más importante que otro. Por ejemplo, para una aplicación de lector de noticias que se ejecuta en un equipo con tableta táctil, el aspecto más importante es ver un único artículo a la vez y desplazarse por el mismo artículo o por otro diferente. En este escenario, no es necesaria la capacidad de representar todo el contenido de cada fotograma. Sin embargo, la capacidad de desplazarse por el artículo sin problemas en un gesto táctil es muy importante.
+La mayoría de las aplicaciones esperan ejecutarse sin problemas y responder a la entrada del usuario. Sin embargo, dependiendo del escenario que desee, un aspecto del rendimiento puede ser más importante que otro. Por ejemplo, para una aplicación de lector de noticias que se ejecuta en un equipo con tableta táctil, el aspecto más importante es ver un único artículo a la vez y desplazarse por el mismo artículo o en otro. En este escenario, no es necesaria la capacidad de representar todo el contenido de cada fotograma. Sin embargo, la capacidad de desplazarse por el artículo sin problemas en un gesto táctil es muy importante.
 
 En otra instancia, un juego o una aplicación de representación de vídeo que usa muchas animaciones tiene problemas si se descartan fotogramas. En este caso, la capacidad de presentar contenido en la pantalla sin interupción de la entrada del usuario es muy importante.
 
-Para entender qué parte de la aplicación es problemática, el primer paso es decidir los escenarios más importantes. Una vez que se entienden los aspectos básicos de la aplicación y cómo se van a realizar, resulta más fácil buscar problemas con las herramientas.
+Para comprender qué parte de la aplicación es problemática, el primer paso es decidir los escenarios más importantes. Una vez que se entienden los aspectos básicos de la aplicación y cómo se van a realizar, resulta más fácil buscar problemas con las herramientas.
 
 Algunas de las métricas de tiempo de rendimiento más comunes son las siguientes:
 
 ### <a name="startup-time"></a>Tiempo de inicio
 
-Tiempo medido desde el inicio del proceso hasta la primera vez que se alcanza la pantalla. Esta medida es más útil cuando el sistema está caliente, lo que significa que la medida se toma después de iniciar la aplicación varias veces.
+Tiempo medido desde el inicio del proceso hasta la primera vez que se alcanza la pantalla. Esta medida es más útil cuando el sistema está en caliente, lo que significa que la medida se toma después de iniciar la aplicación varias veces.
 
 ### <a name="cpu-time-per-frame"></a>Tiempo de CPU por fotograma
 
@@ -67,31 +67,31 @@ Tiempo durante el cual la CPU procesa activamente la carga de trabajo de la apli
 
 Tiempo durante el cual GPU procesa activamente la carga de trabajo de la aplicación para un fotograma. Una aplicación está enlazada a GPU cuando el tiempo que se necesita para procesar un marco de datos es superior a 16 ms.
 
-La capacidad de entender si una aplicación está enlazada a CPU o GPU restringirá la parte problemática del código.
+Saber si una aplicación está enlazada a CPU o GPU restringirá la parte problemática del código.
 
-## <a name="taking-performance-time-measurement-trace"></a>Realizar un seguimiento de la medición del tiempo de rendimiento
+## <a name="taking-performance-time-measurement-trace"></a>Realizar un seguimiento de medición del tiempo de rendimiento
 
 Realice estos pasos para realizar un seguimiento:
 
 1.  Abra una ventana de comandos como administrador.
 2.  Cierre la aplicación si ya se está ejecutando.
-3.  Cambie los directorios al *directorio gpuview* dentro de la Windows rendimiento Toolkit carpeta.
-4.  Escriba "log.cmd" para iniciar el seguimiento de eventos. Esta opción registra los eventos más interesantes. Otras opciones disponibles registra un ámbito diferente de los eventos. Por ejemplo, el modo de registro "v" o detallado captura todos los eventos que **GPUView** conoce.
-5.  Inicie el ejemplo y ejecótelo de una manera que cubra la ruta de rendimiento que debe analizar.
+3.  Cambie los directorios al *directorio gpuview* dentro de la Windows de Toolkit rendimiento.
+4.  Escriba "log.cmd" para iniciar el seguimiento de eventos. Esta opción registra los eventos más interesantes. Otras opciones disponibles registra un ámbito diferente de los eventos. Por ejemplo, el modo de registro detallado o "v" captura todos los eventos que **GPUView** conoce.
+5.  Inicie el ejemplo y ejecte el ejemplo de una manera que cubra la ruta de rendimiento que debe analizar.
 6.  Vuelva a las ventanas de comandos y escriba de nuevo "log.cmd" para detener el registro.
-7.  Esto genera un archivo denominado "merged.etl" en la *carpeta gpuview.* Puede guardar este archivo en otra ubicación y analizarlo en el mismo equipo o en otro. Para ver los detalles de la captura de pila, guarde el archivo de símbolos (.pdb) asociado a la aplicación.
+7.  Esto genera un archivo denominado "merged.etl" en la *carpeta gpuview.* Puede guardar este archivo en otra ubicación y analizarlo en la misma máquina o en otra diferente. Para ver los detalles de la captura de pila, guarde el archivo de símbolos (.pdb) asociado a la aplicación.
 
 ## <a name="measurements"></a>Medidas
 
 
 > [!Note]  
-> Las medidas de la muestra de realización de geometría se toman en una máquina Quad Core con una tarjeta gráfica DirectX11 integrada. Las medidas varían en función de la configuración de la máquina.
+> Las medidas de la muestra de realización de geometría se toman en una máquina de cuatro núcleos con una tarjeta gráfica DirectX11 integrada. Las medidas varían en función de la configuración de la máquina.
 
  
 
-En esta sección se muestra cómo medir el tiempo de inicio, el tiempo de CPU y la GPU por fotograma. Puede capturar un seguimiento del rendimiento del mismo ejemplo en la máquina y ver las diferencias en las distintas medidas.
+En esta sección se muestra cómo medir el tiempo de inicio, el tiempo de CPU y la GPU por fotograma. Puede capturar un seguimiento de rendimiento para el mismo ejemplo en la máquina y ver las diferencias en las distintas medidas.
 
-Para analizar el seguimiento en **GPUView,** abra el archivo "merged.elt" **GPUView.exe**.
+Para analizar el seguimiento en **GPUView,** abra el archivo "merged.elt" mediante **GPUView.exe**.
 
 ### <a name="startup-time"></a>Tiempo de inicio
 
@@ -99,7 +99,7 @@ El tiempo de inicio se mide por el tiempo total empleado desde el inicio de la a
 
 La medida en tiempo de inicio se toma mejor siguiendo los pasos enumerados en la sección anterior con estas variaciones:
 
--   Si toma las medidas de inicio la primera vez que inicia la aplicación, se denomina arranque en frío. Esto puede variar con respecto a las medidas realizadas después de iniciar la aplicación varias veces en un período de tiempo pequeño. Esto se denomina inicio en caliente. Dependiendo de cuántos recursos cree una aplicación al iniciarse, puede haber una gran diferencia entre los dos tiempos de inicio. En función de los objetivos de la aplicación, puede ser conveniente medir uno u otro.
+-   Si toma las medidas de inicio la primera vez que inicia la aplicación, se denomina arranque en frío. Esto puede variar en función de las medidas realizadas después de iniciar la aplicación varias veces en un período de tiempo pequeño. Esto se denomina inicio en caliente. En función de cuántos recursos cree una aplicación en el inicio, puede haber una gran diferencia entre los dos tiempos de inicio. En función de los objetivos de la aplicación, puede ser conveniente medir uno u otro.
 -   Al registrar la información de rendimiento, finalice la aplicación en cuanto el primer fotograma se muestre en la pantalla.
 
 ### <a name="calculating-start-up-time-using-gpuview"></a>Cálculo del tiempo de inicio mediante **GPUView**
@@ -108,11 +108,11 @@ La medida en tiempo de inicio se toma mejor siguiendo los pasos enumerados en la
 
     ![Captura de pantalla que muestra un ejemplo de procesos en GPUView.](images/profile1.png)
 
-2.  La cola de CPU de contexto representa la carga de trabajo de gráficos en cola en el hardware, pero no necesariamente la procesa el hardware. Cuando se abre el archivo de seguimiento, muestra todos los eventos registrados entre el momento en que se tomó el seguimiento. Para calcular el tiempo de inicio, seleccione la región de interés y haga zoom en la parte inicial de la primera cola de CPU de contexto (esta es la que muestra la actividad) mediante Ctrl +Z. Puede encontrar más información **sobre los controles GPUView** en la sección "Resumen de controles GPUView" del archivo de Ayuda **de GPUView.**  En la ilustración siguiente solo se muestra GeometryRealization.exe proceso de ampliación a la primera parte de la cola de CPU de contexto. El color de la cola de CPU de contexto se indica mediante el rectángulo justo debajo de la cola y los mismos paquetes de datos de color de la cola muestran el trabajo de GPU en cola en el hardware. El paquete de patrón de sombreado de la cola de contexto muestra el paquete actual, lo que significa que la aplicación quiere que el hardware presente el contenido en la pantalla.
+2.  La cola de CPU de contexto representa la carga de trabajo de gráficos en cola en el hardware, pero no necesariamente la procesa el hardware. Cuando se abre el archivo de seguimiento, muestra todos los eventos registrados entre el momento en que se tomó el seguimiento. Para calcular el tiempo de inicio, seleccione la región de interés y haga zoom en la parte inicial de la primera cola de CPU de contexto (esta es la que muestra la actividad) mediante Ctrl +Z. Puede encontrar más información **sobre los controles GPUView** en la sección del archivo de Ayuda de **GPUView** "Resumen de **los controles GPUView".** En la ilustración siguiente solo se muestra el GeometryRealization.exe el proceso de acercamiento a la primera parte de la cola de CPU de contexto. El color de la cola de CPU de contexto se indica mediante el rectángulo justo debajo de la cola y los mismos paquetes de datos de color de la cola muestran el trabajo de GPU en cola en el hardware. El paquete de patrón de sombreado de la cola de contexto muestra el paquete actual, lo que significa que la aplicación quiere que el hardware presente el contenido en la pantalla.
 
     ![Captura de pantalla que muestra ejemplos de la "Cola de C U de contexto de C".](images/profile2.png)
 
-3.  El tiempo de inicio es la hora a la que se inicia la aplicación por primera vez (en este caso, el módulo de punto de entrada del subproceso de interfaz de usuario SHCORE.dll) hasta el momento en que aparece por primera vez el contexto (marcado por un paquete de sombreado). En esta ilustración se resalta el área de interés.
+3.  El tiempo de inicio es la hora a la que se inicia la aplicación por primera vez (en este caso, el módulo de punto de entrada del subproceso de interfaz de usuario SHCORE.dll) hasta el momento en que aparece por primera vez el contexto (marcado por un paquete de trama). En esta ilustración se resalta el área de interés.
 
     > [!Note]  
     > La información actual real se representa en la cola de volteo y, por tanto, el tiempo se extiende hasta que el paquete actual se completa realmente en la cola de volteo.
@@ -136,8 +136,8 @@ En ambos casos, se observó que la velocidad de fotogramas se redujo drásticame
 
 ### <a name="calculating-cpu-and-gpu-time-when-2048-primitives-are-being-rendered-unrealized"></a>Cálculo del tiempo de CPU y GPU cuando las primitivas de 2048 se representan como no realizadas
 
-1.  Abra el archivo de seguimiento **medianteGPUView.exe**.
-2.  Desplácese hacia abajo hasta GeometryRealization.exe proceso.
+1.  Abra el archivo de seguimiento mediante **GPUView.exe**.
+2.  Desplácese hacia abajo hasta el GeometryRealization.exe de trabajo.
 3.  Seleccione un área para calcular el tiempo de CPU y haga zoom en él mediante CTRL + Z.
 
     ![Captura de pantalla que muestra un área seleccionada para calcular la hora de C P U en la "Cola de CPU de contexto".](images/profile4.png)

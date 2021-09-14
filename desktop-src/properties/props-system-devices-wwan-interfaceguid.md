@@ -4,12 +4,12 @@ ms.assetid: 4c67d652-3c6c-46ca-a1d6-cf35afd23440
 title: System.Devices.Wwan.InterfaceGuid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76e244ae3a424b60eebee8a1a7b89f776a552396fbd9ae07b0ba0f9bd6165a48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18ab6fb01052ecfb3e73709017c8e47427a5f89a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119097004"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248222"
 ---
 # <a name="systemdeviceswwaninterfaceguid"></a>System.Devices.Wwan.InterfaceGuid
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

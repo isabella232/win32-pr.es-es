@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8e5badce8249e5d6b9d2460fec0e72ef4ca4b81f5b8ffa0d3edd83729f98bd2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7758903de5f4a68cddffee982ad457d03ae6094
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360944"
 ---
 # <a name="iwmsecurebufferencrypt-method"></a>IWMSecureBuffer::Encrypt (método)
 
@@ -64,7 +64,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use este método para cifrar punteros de datos para que se puedan enviar a través de los límites de DLL.
 
@@ -79,7 +79,7 @@ Use este método para cifrar punteros de datos para que se puedan enviar a trav�
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

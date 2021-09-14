@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9439328ed817da40630c3a600cf7e6db553738a12799babbe9e71c48f28923b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51af3ccebec52ab6f6863aeb376ed27f8c8e2467
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119085877"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360594"
 ---
 # <a name="drm_video_output_protection_ids-structure"></a>Estructura DE \_ IDENTIFICADORES \_ DE PROTECCIÓN DE SALIDA DE VÍDEO \_ \_ DRM
 
@@ -38,7 +38,7 @@ typedef struct DRM_VIDEO_OUTPUT_PROTECTION_IDS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -56,7 +56,7 @@ Dirección de una matriz de estructuras **\_ DRM VIDEO OUTPUT \_ \_ PROTECTION.*
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta estructura se usa como miembro de la estructura [**\_ \_ OPL de DRM PLAY.**](drmdrm-play-opl.md)
 

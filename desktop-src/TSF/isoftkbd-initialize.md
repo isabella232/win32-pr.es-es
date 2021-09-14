@@ -1,11 +1,11 @@
 ---
-title: Método Initialize ISoftKbd (Softkbdc. h)
-description: El método ISoftKbd Initialize inicializa todos los campos necesarios para un teclado en pantalla y genera distribuciones estándar de teclado en pantalla.
+title: Método ISoftKbd Initialize (Softkbdc.h)
+description: El método ISoftKbd Initialize inicializa todos los campos necesarios para un teclado flexible y genera diseños de teclado flexible estándar.
 ms.assetid: c997864c-2596-4086-8062-cd30f371c38f
 keywords:
-- Método Initialize servicios de texto Framework
-- Método Initialize Text Services Framework, ISoftKbd (interfaz)
-- ISoftKbd interface Text Services Framework, Initialize (método)
+- Inicializar método Text Services Framework
+- Inicializar método Text Services Framework , interfaz ISoftKbd
+- Interfaz ISoftKbd Text Services Framework método , Initialize
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: e6e820becb05d7c474004b4889735f9637e0135a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801304"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361807"
 ---
-# <a name="isoftkbdinitialize-method"></a>ISoftKbd:: Initialize (método)
+# <a name="isoftkbdinitialize-method"></a>ISoftKbd::Initialize (Método)
 
-El método **ISoftKbd:: Initialize** inicializa todos los campos necesarios para un teclado en pantalla y genera distribuciones estándar de teclado en pantalla.
+El **método ISoftKbd::Initialize** inicializa todos los campos necesarios para un teclado flexible y genera diseños de teclado flexible estándar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ Este método puede devolver uno de estos valores.
 
 | Value                                                                                | Descripción                           |
 |--------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | Método realizado correctamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Método realizado correctamente.<br/> |
 
 
 
@@ -62,14 +62,14 @@ Este método puede devolver uno de estos valores.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Redistribuible<br/>          | TSF 1,0 en Windows 2000 Professional<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                        |
+| Encabezado<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| IDL<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

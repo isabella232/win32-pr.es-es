@@ -4,12 +4,12 @@ ms.assetid: 9db9045d-b289-4c6c-9b17-ddbc2c1d3089
 title: Solicitud de reconocimiento de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8efd4fe8b2f37c134480aa1b057705af8826bbf7490b1dc4d40fb5a2755b043
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db2442cfa1e26185c4c8d882fe71bb178911f4d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119147058"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171973"
 ---
 # <a name="requesting-text-recognition"></a>Solicitud de reconocimiento de texto
 
@@ -124,7 +124,7 @@ void PrintAllResults(PMAPPING_PROPERTY_BAG pBag)
 
 **Reconocimiento de texto sincrónico con el servicio de detección de scripts de Microsoft**
 
-En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) con el servicio de detección de scripts de Microsoft e imprime todos los resultados recuperados. El formato de salida de este servicio es una matriz de estructuras [**MAPPING \_ DATA \_ RANGE,**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range) cada una de las que especifica texto escrito en el mismo script. Los caracteres comunes (Zyyy) se agregan al intervalo anterior o al intervalo siguiente si el intervalo anterior no existe. El **miembro pData** de cada estructura apunta a una cadena terminada en null Unicode que contiene el nombre Unicode estándar del script para el intervalo determinado.
+En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) con el servicio de detección de scripts de Microsoft e imprime todos los resultados recuperados. El formato de salida de este servicio es una matriz de estructuras [**MAPPING \_ DATA \_ RANGE,**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range) cada una de las que especifica el texto escrito en el mismo script. Los caracteres comunes (Zyyy) se agregan al intervalo anterior o al intervalo siguiente si el intervalo anterior no existe. El **miembro pData** de cada estructura apunta a una cadena terminada en null Unicode que contiene el nombre Unicode estándar del script para el intervalo determinado.
 
 > [!Note]  
 > A partir Windows 7, el servicio de detección de scripts de Microsoft cumple con Unicode 5.1.

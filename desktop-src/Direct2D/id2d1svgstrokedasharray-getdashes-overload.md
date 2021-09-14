@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: f7ee01215ba2a19165d3df51c86ed16c9b287bffe0396883c8da0a8589c4a356
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b5e868ce12cc016097ace7868124c16027b42a41
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120076835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162754"
 ---
 # <a name="id2d1svgstrokedasharraygetdashes-methods"></a>Métodos ID2D1SvgStrokeDashArray::GetDashes
 
@@ -44,7 +44,7 @@ Obtiene guiones de la matriz.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

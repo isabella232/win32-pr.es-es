@@ -4,12 +4,12 @@ description: Funciones de barra de desplazamiento plano
 ms.assetid: 091961ae-9a7a-4ee1-8f2f-313af79403aa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae8509b086265590c239f52e823f753435bce6b7ee5322fcde506c908c3ec337
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42145a12ce86f62ebc6b85c707c79d64b363089b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174254"
 ---
 # <a name="flat-scroll-bar-functions"></a>Funciones de barra de desplazamiento plano
 

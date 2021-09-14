@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2d980d1be456e7a733a023455e7a6731480fcdad577038ef0c59b36b33a796ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d61828a8961ee0cc2deada82bf06ad0a214fc338
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117896967"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359764"
 ---
 # <a name="esentslvpagesnotreservedexception-constructor"></a>Constructor EsentSLVPagesNotReservedException
 

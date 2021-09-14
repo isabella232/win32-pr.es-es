@@ -4,25 +4,25 @@ description: Describe los procedimientos recomendados para crear aplicaciones Di
 ms.assetid: FDD770D4-817F-44D9-86C4-15DD04D214AE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5710435f263e7b0f735581e03416f1d01733711429ad95b3ed25e473aca6d936
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6be979b867edd6d36583959c4a595dbd507ca94f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119636425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162678"
 ---
 # <a name="multithreaded-direct2d-apps"></a>Aplicaciones Direct2D multiproceso
 
 Si desarrolla aplicaciones [de Direct2D,](./direct2d-portal.md) es posible que tenga que acceder a los recursos de Direct2D desde más de un subproceso. En otros casos, es posible que desee usar multiproceso para obtener un mejor rendimiento o una mejor capacidad de respuesta (por ejemplo, usar un subproceso para la presentación en pantalla y un subproceso independiente para la representación sin conexión).
 
-En este tema se describen los procedimientos recomendados para desarrollar aplicaciones [Direct2D](./direct2d-portal.md) multiproceso con poca o ninguna [representación de Direct3D.](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) Los defectos de software causados por problemas de simultaneidad pueden ser difíciles de rastrear y resulta útil planear la directiva multithreading y seguir los procedimientos recomendados que se describen aquí.
+En este tema se describen los procedimientos recomendados para desarrollar aplicaciones [Direct2D](./direct2d-portal.md) multiproceso con poca o ninguna [representación de Direct3D.](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) Los defectos de software causados por problemas de simultaneidad pueden ser difíciles de realizar y resulta útil planear la directiva multithreading y seguir los procedimientos recomendados que se describen aquí.
 
 > [!Note]  
-> Si accede a dos recursos de [Direct2D](./direct2d-portal.md) creados a partir de dos factorías de Direct2D de un solo subproceso diferentes, no se producirán conflictos de acceso, siempre y cuando los dispositivos y contextos de dispositivo de [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) subyacentes también sean distintos. Al hablar de "acceder a recursos de Direct2D" en este artículo, significa realmente "acceder a los recursos de Direct2D creados desde el mismo dispositivo Direct2D", a menos que se indique lo contrario.
+> Si accede a dos recursos de [Direct2D](./direct2d-portal.md) creados a partir de dos factorías de Direct2D de un solo subproceso diferentes, no se producirán conflictos de acceso, siempre y cuando los dispositivos y contextos de dispositivo de [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) subyacentes también sean distintos. Al hablar de "acceso a recursos de Direct2D" en este artículo, significa realmente "acceder a los recursos de Direct2D creados desde el mismo dispositivo Direct2D", a menos que se indique lo contrario.
 
-## <a name="developing-thread-safe-apps-that-call-only-direct2d-apis"></a>Desarrollo de Thread-Safe aplicaciones que llaman solo a las API de Direct2D
+## <a name="developing-thread-safe-apps-that-call-only-direct2d-apis"></a>Desarrollo de Thread-Safe que llaman solo a las API de Direct2D
 
-Puede crear una instancia de fábrica [de Direct2D](./direct2d-portal.md) multiproceso. Puede usar y compartir una fábrica multiproceso y todos sus recursos desde más de un subproceso, pero los accesos a esos recursos (a través de llamadas de Direct2D) se serializan mediante Direct2D, por lo que no se producen conflictos de acceso. Si la aplicación llama solo a las API de Direct2D, Direct2D realiza automáticamente esta protección en un nivel granular con una sobrecarga mínima. Código para crear un generador multiproceso aquí.
+Puede crear una instancia de fábrica [de Direct2D](./direct2d-portal.md) multiproceso. Puede usar y compartir una fábrica multiproceso y todos sus recursos desde más de un subproceso, pero los accesos a esos recursos (a través de llamadas de Direct2D) se serializan mediante Direct2D, por lo que no se producen conflictos de acceso. Si la aplicación llama solo a las API de Direct2D, Dicha protección se realiza automáticamente mediante Direct2D en un nivel granular con una sobrecarga mínima. Código para crear un generador multiproceso aquí.
 
 ```cpp
 ID2D1Factory* m_D2DFactory;
@@ -42,7 +42,7 @@ En la imagen siguiente se muestra [cómo Direct2D](./direct2d-portal.md) seriali
 
 Es más que habitual que una [aplicación de Direct2D](./direct2d-portal.md) también haga algunas [llamadas a Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) o DXGI. Por ejemplo, un subproceso de presentación se dibujará en Direct2D y, a continuación, se presentará mediante una [**cadena de intercambio DXGI**](/windows/desktop/api/dxgi/nn-dxgi-idxgiswapchain).
 
-En este caso, garantizar la seguridad de subprocesos es más complicado: algunas llamadas de [Direct2D](./direct2d-portal.md) acceden indirectamente a los recursos subyacentes [de Direct3D,](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) a los que podría tener acceso simultáneamente otro subproceso que llama a Direct3D o DXGI. Dado que esas llamadas a Direct3D o DXGI están fuera del conocimiento y el control de Direct2D, debe crear un generador de Direct2D multiproceso, pero debe hacer lo mismo para evitar conflictos de acceso.
+En este caso, garantizar la seguridad de subprocesos es más complicado: algunas llamadas de [Direct2D](./direct2d-portal.md) acceden indirectamente a los recursos subyacentes [de Direct3D,](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) a los que podría tener acceso simultáneamente otro subproceso que llama a Direct3D o DXGI. Dado que esas llamadas a Direct3D o DXGI están fuera del conocimiento y el control de Direct2D, debe crear una fábrica de Direct2D multiproceso, pero debe hacer lo mismo para evitar conflictos de acceso.
 
 En el diagrama siguiente se muestra un conflicto de acceso a recursos [de Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) debido a que el subproceso T0 accede indirectamente a un recurso a través de una llamada a [Direct2D](./direct2d-portal.md) y T2 accede al mismo recurso directamente a través de una llamada a Direct3D o DXGI.
 
@@ -60,7 +60,7 @@ Para evitar conflictos de acceso a recursos aquí, se recomienda adquirir explí
 
  
 
-El código aquí muestra un ejemplo de cuándo bloquear y, a continuación, desbloquear en torno a [llamadas Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) o DXGI.
+El código aquí muestra un ejemplo de cuándo bloquear y, a continuación, desbloquear las [llamadas direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) o DXGI.
 
 
 ```C++
@@ -84,7 +84,7 @@ void MyApp::DrawFromThread2()
 
 
 > [!Note]  
-> Algunas llamadas [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) o DXGI (en particular [**IDXGISwapChain::P resent)**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-present)pueden adquirir bloqueos o desencadenar devoluciones de llamada en el código de la función o método de llamada. Debe tener en cuenta esto y asegurarse de que este comportamiento no provoca interbloqueos. Para obtener más información, vea el [tema Información general de DXGI.](/windows/desktop/direct3ddxgi/d3d10-graphics-programming-guide-dxgi)
+> Algunas [llamadas Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) o DXGI (en particular [**IDXGISwapChain::P resent)**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-present)pueden adquirir bloqueos o desencadenar devoluciones de llamada en el código de la función o método de llamada. Debe tener en cuenta esto y asegurarse de que este comportamiento no provoca interbloqueos. Para obtener más información, vea el [tema Información general de DXGI.](/windows/desktop/direct3ddxgi/d3d10-graphics-programming-guide-dxgi)
 
  
 
@@ -118,4 +118,4 @@ Para solucionar este problema, se recomienda tener un contexto independiente par
 
 ## <a name="summary"></a>Resumen
 
-Al desarrollar aplicaciones [Direct2D](./direct2d-portal.md) multiproceso, debe crear una factoría direct2D multiproceso y, a continuación, derivar todos los recursos de Direct2D de esa factoría. Si un subproceso realiza llamadas [a Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) o DXGI, también debe adquirir explícitamente y, a continuación, aplicar el bloqueo de Direct2D para proteger esas llamadas a Direct3D o DXGI. Además, debe garantizar la integridad del contexto al tener una copia de los recursos mutables para cada subproceso.
+Al desarrollar aplicaciones [Direct2D](./direct2d-portal.md) multiproceso, debe crear una factoría direct2D multiproceso y, a continuación, derivar todos los recursos de Direct2D de esa factoría. Si un subproceso va a realizar llamadas a [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) o DXGI, también debe adquirir explícitamente y, a continuación, aplicar el bloqueo de Direct2D para proteger esas llamadas direct3D o DXGI. Además, debe garantizar la integridad del contexto al tener una copia de los recursos mutables para cada subproceso.

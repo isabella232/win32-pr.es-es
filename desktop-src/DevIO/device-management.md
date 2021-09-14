@@ -4,12 +4,12 @@ ms.assetid: 7d5c0933-c543-41ef-9418-4a288748f841
 title: Administración de dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac285484e3adcf992a59145ccfa0c59bcc80b5ec81b57229370dc99b7d082b66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e18dd282772c7158792e4b78a1dc3deabe168c99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119572805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164389"
 ---
 # <a name="device-management"></a>Administración de dispositivos
 

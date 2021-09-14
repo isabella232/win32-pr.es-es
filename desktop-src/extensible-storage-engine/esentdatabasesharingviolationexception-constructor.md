@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 35ec7892541c2546456080097193064ca5917c593f1d4c7728ce8ae1a9d696bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1eeb726d28862f90edb50211a5cbf3c10a992963
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119041403"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249027"
 ---
 # <a name="esentdatabasesharingviolationexception-constructor"></a>Constructor EsentDatabaseSharingViolationException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDatabaseSharingViolationException()
 public EsentDatabaseSharingViolationException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

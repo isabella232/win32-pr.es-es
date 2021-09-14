@@ -6,12 +6,12 @@ keywords:
 - efecto de sombra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5d88924140caac22b688a0ccb6948ee74312411c770bff99360847ef2cd1b4c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c42fd8755078dd79f2b01b623b1839785beb3c3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119833060"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163305"
 ---
 # <a name="shadow-effect"></a>Efecto de sombra
 
@@ -84,7 +84,7 @@ m_d2dContext->EndDraw();
 
 | Enumeración de nombre para mostrar e índice                                                        | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BlurStandardDeviation<br/> DESVIACIÓN ESTÁNDAR DE DESENFOQUE \_ \_ DE PROP DE \_ \_ SOMBRA \_ D2D1<br/> | Cantidad de desenfoque que se va a aplicar al canal alfa de la imagen. Puede calcular el radio de desenfoque del kernel multiplicando la desviación estándar por 3. Las unidades de la desviación estándar y el radio de desenfoque son DIP.<br/> Esta propiedad es la misma que la propiedad [Desenfoque gausiano](gaussian-blur.md) propiedad de desviación estándar. <br/> El tipo es FLOAT.<br/> El valor predeterminado es 3,0f.<br/> |
+| BlurStandardDeviation<br/> DESVIACIÓN ESTÁNDAR DE DESENFOQUE \_ \_ DE PROP DE \_ \_ SOMBRA \_ D2D1<br/> | Cantidad de desenfoque que se va a aplicar al canal alfa de la imagen. Puede calcular el radio de desenfoque del kernel multiplicando la desviación estándar por 3. Las unidades de la desviación estándar y el radio de desenfoque son DIP.<br/> Esta propiedad es la misma que la [Desenfoque gausiano](gaussian-blur.md) de desviación estándar. <br/> El tipo es FLOAT.<br/> El valor predeterminado es 3,0f.<br/> |
 | Color<br/> COLOR DE PROP DE SOMBRA D2D1 \_ \_ \_<br/>                                     | Color de la sombra paralela. Esta propiedad es una D2D1 \_ VECTOR \_ 4F definida como: (R, G, B, A). Debe especificar este color en alfa recta.<br/> El tipo es D2D1 \_ VECTOR \_ 4F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f, 1.0f}.<br/>                                                                                                                                                                     |
 | Optimization<br/> OPTIMIZACIÓN DE LA \_ PROPIEDAD SHADOW \_ DE D2D1 \_<br/>                       | Nivel de optimización del rendimiento.<br/> El tipo es D2D1 \_ SHADOW \_ OPTIMIZATION.<br/> El valor predeterminado es D2D1 \_ SHADOW \_ OPTIMIZATION \_ BALANCED.<br/>                                                                                                                                                                                                                                                   |
 
@@ -124,7 +124,7 @@ La salida aumenta igual en todas las direcciones, por lo que, por ejemplo, si el
 |--------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
 | Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

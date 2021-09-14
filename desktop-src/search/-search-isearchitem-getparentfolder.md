@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: a5e5aded87ca197af8774a7b5506e21c958dc564eb0af67396e100877ac53e10
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4209b319e066d5481c669bcca021684f87532a3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119094916"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360655"
 ---
 # <a name="isearchitemgetparentfolder-method"></a>ISearchItem::GetParentFolder (método)
 
@@ -44,7 +44,7 @@ HRESULT GetParentFolder(
 
 Tipo: **ppShellFolder \* \***
 
-Al devolver, contiene la dirección de un puntero a la carpeta que contiene la dirección URL actual. Todos los objetos de carpeta del espacio de nombres de Shell exponen la interfaz [IShellFolder](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) y sus métodos se usan para administrar carpetas.
+En la devolución, contiene la dirección de un puntero a la carpeta que contiene la dirección URL actual. Todos los objetos de carpeta de espacio de nombres de Shell exponen la interfaz [IShellFolder](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) y sus métodos se usan para administrar carpetas.
 
 </dd> <dt>
 
@@ -53,7 +53,7 @@ Al devolver, contiene la dirección de un puntero a la carpeta que contiene la d
 
 Tipo: **\* pppdl**
 
-Al devolver, contiene la dirección de un puntero a una lista de identificadores de elemento (PIDL) que identifica la carpeta primaria. El *parámetro LPITEMIDLIST* puede hacer referencia a un objeto en cualquier nivel por debajo de la carpeta primaria de la jerarquía de espacios de nombres y, por tanto, puede ser un puntero de varios niveles a un **pidl** relativo a la carpeta primaria.
+En la devolución, contiene la dirección de un puntero a una lista de identificadores de elemento (PIDL) que identifica la carpeta primaria. El *parámetro LPITEMIDLIST* puede hacer referencia a un objeto en cualquier nivel debajo de la carpeta primaria de la jerarquía de espacios de nombres y, por tanto, puede ser un puntero de varios niveles a **un pidl** relativo a la carpeta primaria.
 
 </dd> </dl>
 
@@ -63,19 +63,19 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método ISearchItem::GetParentFolder** solo se admite en Windows XP y Windows Server 2003 y ya no se debe usar.
 
-Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede ser necesario usar la interfaz [**ISearchItem**](-search-isearchitem.md) y las siguientes API: las interfaces [**IItemPreviewerExt,**](-search-iitempreviewerext.md) [**IItemPropertyBag**](iitempropertybag.md)e [**ISearchProtocolUI,**](-search-isearchprotocolui.md) la estructura [**LINKINFO**](-search-linkinfo.md) y la enumeración [**LINKTYPE.**](-search-linktype.md)
+Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede que sea necesario usar la interfaz [**ISearchItem**](-search-isearchitem.md) y las siguientes API: las interfaces [**IItemPreviewerExt,**](-search-iitempreviewerext.md) [**IItemPropertyBag**](iitempropertybag.md)e [**ISearchProtocolUI,**](-search-isearchprotocolui.md) la estructura [**LINKINFO**](-search-linkinfo.md) y la enumeración [**LINKTYPE.**](-search-linktype.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/> |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 3.0<br/>          |
 

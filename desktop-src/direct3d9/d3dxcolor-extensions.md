@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 7a07d697192d838298f76205aeb3010fda7bf6a08f58f39fe58893444f604231
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7f457332f371b2c452a465c5b831774488301c6f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120096295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174813"
 ---
 # <a name="d3dxcolor-extensions"></a>Extensiones D3DXCOLOR
 
@@ -76,11 +76,11 @@ public:
 
 Tipos derivados: \* LPD3DXCOLOR
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 Para obtener más información sobre los miembros de estructura, consulte [**D3DXCOLOR**](d3dxcolor.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las sobrecargas de operador y las conversión de tipos para esta estructura se implementan en d3dx9math.inl.
 

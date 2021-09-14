@@ -4,12 +4,12 @@ ms.assetid: 75525e26-72f5-4a58-a663-0bbdc2034759
 title: Uso de la función GetDC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 407f494cb551137b3d900f098ca7a836232eab08628c1a2d2fcd339588e9db0f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98c018228eccbce7b487444341481165e24214b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117885636"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248691"
 ---
 # <a name="using-the-getdc-function"></a>Uso de la función GetDC
 

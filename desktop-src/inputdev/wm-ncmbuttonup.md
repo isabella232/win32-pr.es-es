@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d535677dd291fb7acd503491bda9344bd10723e7ab9a9e4945bf65b7fb800b2b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a890c79f6835dc0f44257fc1adf5d00b976a87c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360093"
 ---
 # <a name="wm_ncmbuttonup-message"></a>Mensaje \_ NCMBUTTONUP de WM
 
@@ -56,7 +56,7 @@ Estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) que contiene las 
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 También puede usar las macros [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) y [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer los valores de las coordenadas x e y- de *lParam*.
 
@@ -127,7 +127,7 @@ Si es adecuado hacerlo, el sistema envía el [**mensaje \_ SYSCOMMAND**](/window
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**Puntos**](/previous-versions//dd162808(v=vs.85))
+[**PUNTOS**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

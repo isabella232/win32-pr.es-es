@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c245cbb85a4e67845bd86a25b4cccb2f2aa0dc1d9d9613afd1d685037c5e1ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e1b2480360ea38a00c4dd8efe6eb84eed8999890
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120002725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174141"
 ---
 # <a name="dl_dropped-notification-code"></a>Código \_ de notificación DL DROPPED
 
@@ -49,7 +49,7 @@ Puntero a una estructura [**DRAGLISTINFO**](/windows/win32/api/commctrl/ns-commc
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este código de notificación se procesa normalmente insertando el elemento que se arrastra a la lista delante del elemento bajo el cursor. Para recuperar el índice del elemento en la posición del cursor, use la [**función LBItemFromPt.**](/windows/desktop/api/Commctrl/nf-commctrl-lbitemfrompt) Tenga en cuenta que el código de \_ notificación DL DROPPED se envía incluso si el cursor no está en un elemento de lista. En ese caso, **LBItemFromPt** devuelve -1.
 
@@ -61,7 +61,7 @@ Este código de notificación se procesa normalmente insertando el elemento que 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

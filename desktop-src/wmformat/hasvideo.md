@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c7baa1ea9de8e8ff217b1c0725864e9eaa34804f3e2f3e563b5e5b453d05e5c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 98e40f65bb525656c24053ceb2470ee41c5873b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120006675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359917"
 ---
 # <a name="hasvideo"></a>HasVideo
 
@@ -29,9 +29,9 @@ g \_ wszWMHasVideo
 
 ## <a name="data-type"></a>Tipo de datos
 
-**WMT \_ TYPE \_ BOOL**
+**TIPO WMT \_ \_ BOOL**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de un atributo codificado.
 

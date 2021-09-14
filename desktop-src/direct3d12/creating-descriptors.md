@@ -5,12 +5,12 @@ ms.assetid: 0D360A7C-8A2F-49E1-A5CC-98C958B59D1C
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 915cf1d92165f6d802bf4e8698180675a3edb32bd77da0510f4d9b52d6e044b1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aac9aab5dde0f5ca0864fcc1627ade984c6b6ccf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249200"
 ---
 # <a name="creating-descriptors"></a>Creación de descriptores
 
@@ -134,7 +134,7 @@ Las enumeraciones y estructuras a las que hace referencia [**D3D12 \_ SHADER RES
 -   [**D3D12 \_ TEXCUBE \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_texcube_srv)
 -   [**D3D12 \_ TEXCUBE \_ ARRAY \_ SRV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_texcube_array_srv)
 
-Tenga en cuenta a continuación que float `ResourceMinLODClamp` se ha agregado a SRV para Tex1D/2D/3D/Cube. En D3D11, era una propiedad de un recurso, pero esto no coincide con cómo se implementó en el hardware. `StructureByteStride` se ha agregado a los SRV de búfer, donde en D3D11 era una propiedad del recurso. Si el stride es distinto de cero, indica una vista de búfer estructurado y el formato debe establecerse en DXGI \_ FORMAT \_ UNKNOWN.
+Tenga en cuenta a continuación que float se ha agregado a `ResourceMinLODClamp` SRV para Tex1D/2D/3D/Cube. En D3D11, era una propiedad de un recurso, pero esto no coincide con cómo se implementó en el hardware. `StructureByteStride` se ha agregado a los SRV de búfer, donde en D3D11 era una propiedad del recurso. Si el stride es distinto de cero, indica una vista de búfer estructurado y el formato debe establecerse en DXGI \_ FORMAT \_ UNKNOWN.
 
 Por último, para crear la vista de recursos del sombreador, llame [**a ID3D12Device::CreateShaderResourceView**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createshaderresourceview).
 
@@ -327,7 +327,7 @@ m_processedCommandBufferCounterReset->Unmap(0, nullptr);
 
 ## <a name="stream-output-view"></a>Vista de salida de flujo
 
-Para crear una vista de salida de flujo, rellene una estructura [**\_ \_ \_ DESC D3D12 STREAM OUTPUT.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)
+Para crear una vista de salida de flujo, rellene una estructura [**D3D12 \_ STREAM \_ OUTPUT \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)
 
 ``` syntax
 typedef struct D3D12_STREAM_OUTPUT_DESC  
@@ -440,7 +440,7 @@ Consulte las enumeraciones y estructuras siguientes:
 
 -   [**FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 -   [**D3D12 \_ TEX1D \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_dsv)
--   [**D3D12 \_ TEXAS1D \_ ARRAY \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_array_dsv)
+-   [**D3D12 \_ TEX1D \_ ARRAY \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex1d_array_dsv)
 -   [**D3D12 \_ TEX2D \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_dsv)
 -   [**D3D12 \_ TEX2D \_ ARRAY \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_dsv)
 -   [**D3D12 \_ TEX2DMS \_ DSV**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2dms_dsv)

@@ -4,12 +4,12 @@ ms.assetid: c81bf3af-e023-4384-8c89-0fa9c8f08773
 title: WSOleDB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17000de683fc9f5171bc556c607c7c068cabb4b3e88693407e1381565fb6b242
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff6cecfc308fdfa9af796e64ab8bc6273f9c4d94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118969624"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363219"
 ---
 # <a name="wsoledb"></a>WSOleDB
 
@@ -34,12 +34,12 @@ En este tema se incluyen las siguientes secciones.
 
 Este ejemplo está disponible en la siguiente ubicación.
 
-| Ubicación      | Dirección URL de ruta de acceso                                                                  |
+| Location      | Dirección URL de ruta de acceso                                                                  |
 |---------------|---------------------------------------------------------------------------|
 | GitHub        | [Ejemplo de WSOleDB](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/WSOleDB)         |
 
 > [!NOTE]  
-> Para todas las versiones de Windows, incluido Windows 7, se recomienda descargar los ejemplos directamente desde GitHub para obtener la versión más actualizada.
+> Para todas las versiones de Windows, incluido Windows 7, se recomienda descargar los ejemplos directamente desde GitHub para la versión más actualizada.
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
@@ -53,7 +53,7 @@ Este ejemplo está disponible en la siguiente ubicación.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-1. Vaya al directorio que contiene el nuevo ejecutable, mediante la ventana símbolo del sistema o Windows Explorador.
+1. Vaya al directorio que contiene el nuevo ejecutable, mediante la ventana símbolo del sistema o Windows explorador.
 2. En el símbolo del sistema, escriba o, en Windows Explorer, haga doble clic `WSOleDB.exe` en el icono para WSOleDB.exe.
 
 ## <a name="related-topics"></a>Temas relacionados

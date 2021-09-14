@@ -4,12 +4,12 @@ ms.assetid: 4a0dfbca-e3a2-4b08-bb06-86a58bef9998
 title: System.Contact.HomeAddressPostOfficeBox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ac71d88adda918fd3772ac816d8c22191ae4e595ad00b8b5ee82a6e549d675f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29f0111cb7b204e844ca57ed9435b6ef6e0c9e7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118055300"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257372"
 ---
 # <a name="systemcontacthomeaddresspostofficebox"></a>System.Contact.HomeAddressPostOfficeBox
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

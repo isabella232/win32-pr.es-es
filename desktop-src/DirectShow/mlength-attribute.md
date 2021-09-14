@@ -4,17 +4,17 @@ ms.assetid: f33ce85c-df61-4248-8dea-677162fa1a07
 title: Atributo mlength
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2aac65cd917fe99e296298bac425e0ff76ca18fc51c82e9294eaedf0ef1c23c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35eadc288e29d99df0e6af7f06e1404d86f6a938
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120051155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173762"
 ---
 # <a name="mlength-attribute"></a>Atributo mlength
 
 > [!Note]  
-> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 

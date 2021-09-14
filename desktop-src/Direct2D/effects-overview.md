@@ -4,12 +4,12 @@ description: Información general sobre los efectos de Direct2D.
 ms.assetid: 1446BDA9-AD4C-472C-8F1D-82ABC1880E13
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe0a88ff64721fc32955416dcfe108b1c9e87f7565a67fc2e1d8192a1eaf369d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0dd29a4b2968e91bd0d516a74ec01538f69821bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119317998"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163294"
 ---
 # <a name="effects"></a>Efectos
 
@@ -33,19 +33,19 @@ Hay una variedad de [efectos integrados de](built-in-effects.md) categorías com
 -   [Transformación y escalado](built-in-effects.md)
 -   [Sources](built-in-effects.md)
 
-Puede aplicar efectos a cualquier mapa de [bits,](/windows/desktop/DirectWrite/direct-write-portal)incluidas: imágenes cargadas por el componente de creación de imágenes [de Windows (WIC),](/windows/desktop/wic/-wic-api)primitivas dibujadas por [Direct2D,](./direct2d-portal.md)texto de DirectWrite o escenas representados por [Direct3D.](/windows/desktop/direct3d10/d3d10-graphics)
+Puede aplicar efectos a cualquier mapa de bits, incluidas: imágenes cargadas por el componente de creación de imágenes [de Windows (WIC),](/windows/desktop/wic/-wic-api)primitivas dibujadas por [Direct2D,](./direct2d-portal.md)texto [de DirectWrite](/windows/desktop/DirectWrite/direct-write-portal)o escenas representados por [Direct3D.](/windows/desktop/direct3d10/d3d10-graphics)
 
 Con los efectos de Direct2D puede escribir sus propios efectos que puede usar para las aplicaciones. Un marco de efectos personalizado le permite usar características de GPU como sombreadores de píxeles, sombreadores de vértices y la unidad de combinación. También puede incluir otros efectos integrados o personalizados en el efecto personalizado. El marco para crear efectos personalizados es el mismo que se usó para crear los efectos integrados de [Direct2D.](./direct2d-portal.md) La [API de creación de efectos de Direct2D](custom-effects.md) proporciona un conjunto de interfaces para crear y registrar efectos.
 
 ### <a name="more-effects-topics"></a>Temas sobre más efectos
 
-En el resto de este tema se explican los conceptos básicos de los efectos de Direct2D, como aplicar un efecto a una imagen. La tabla aquí tiene vínculos a temas adicionales sobre los efectos.
+En el resto de este tema se explican los aspectos básicos de los efectos de Direct2D, como aplicar un efecto a una imagen. La tabla aquí tiene vínculos a temas adicionales sobre los efectos.
 
 | Tema                                                                                                                    | Descripción                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Vinculación del sombreador de efectos](effect-shader-linking.md)<br/>                                                            | Direct2D usa una optimización denominada vinculación del sombreador de efectos que combina los pases de representación de grafos de varios efectos en un solo paso.<br/>                                               |
 | [Efectos personalizados](custom-effects.md)<br/>                                                                          | Muestra cómo escribir sus propios efectos personalizados mediante HLSL estándar.<br/>                                                                                                                |
-| [Carga de una imagen en efectos de Direct2D mediante FilePicker](load-a-id2d1image-using-the-filepicker.md)<br/> | Muestra cómo usar el [**Windows::Storage::P ickers::FileOpenPicker**](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) para cargar una imagen en efectos de Direct2D.<br/>                                      |
+| [Carga de una imagen en efectos de Direct2D mediante FilePicker](load-a-id2d1image-using-the-filepicker.md)<br/> | Muestra cómo usar [**Windows::Storage::P ickers::FileOpenPicker**](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) para cargar una imagen en efectos de Direct2D.<br/>                                      |
 | [Cómo guardar el contenido de Direct2D en un archivo de imagen](save-direct2d-content-to-an-image-file.md)<br/>                   | En este tema se muestra cómo usar [**IWICImageEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicimageencoder) para guardar contenido en forma de [**ID2D1Image**](/windows/win32/api/d2d1/nn-d2d1-id2d1image) en un archivo de imagen codificado como JPEG.<br/> |
 | [Cómo aplicar efectos a primitivas](how-to-apply-effects-to-primitives.md)<br/>                                  | En este tema se muestra cómo aplicar una serie de efectos a [Direct2D](./direct2d-portal.md) [y DirectWrite](direct2d-and-directwrite.md) primitivos.<br/>                           |
 | [Controlar la precisión y el recorte numérico en gráficos de efecto](precision-and-clipping-in-effect-graphs.md)<br/>  | Las aplicaciones que representan efectos mediante Direct2D deben tener cuidado para lograr el nivel deseado de calidad y predictibilidad con respecto a la precisión numérica. <br/>                    |
@@ -119,7 +119,7 @@ Puede usar la API de efectos de Direct2D para aplicar transformaciones a las im�
 Direct2D proporciona efectos integrados que pueden transformar imágenes en espacio 2D y 3D, así como escalado. Los efectos de escala y transformación ofrecen varios niveles de calidad como: vecino más próximo, lineal, cúbico, lineal de varias muestras, anisotropico y cúbico de alta calidad.
 
 > [!Note]  
-> El modo anisotropico genera mapas MIP al escalar; sin embargo, si establece la propiedad **Cached** en true en los efectos que se introducen en la transformación, los mapas mipmap no se generarán cada vez para imágenes lo suficientemente pequeñas.
+> El modo anisotropico genera mapas MIP al escalar, pero si establece la propiedad **Cached** en true en los efectos que se introducen en la transformación, los mapas mipmap no se generarán cada vez para imágenes lo suficientemente pequeñas.
 
  
 
@@ -179,7 +179,7 @@ El efecto compuesto combina imágenes de varias maneras diferentes según el mod
 
 ## <a name="pixel-adjustments"></a>Ajustes de píxeles
 
-Hay algunos efectos integrados de Direct2D que permiten modificar los datos de píxeles. Por ejemplo, el efecto de matriz de colores se puede usar para cambiar el color de una imagen.
+Hay algunos efectos integrados de Direct2D que le permiten modificar los datos de píxeles. Por ejemplo, el efecto de matriz de colores se puede usar para cambiar el color de una imagen.
 
 
 ```C++
@@ -212,7 +212,7 @@ Este código toma la imagen y modifica el color como se muestra aquí en las im�
 
  
 
-Consulte la [sección de efectos integrados de color](how-to-create-a-solid-color-brush.md) para obtener más información.
+Consulte la [sección efectos integrados de color](how-to-create-a-solid-color-brush.md) para obtener más información.
 
 ## <a name="building-effect-graphs"></a>Creación de gráficos de efecto
 

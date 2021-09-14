@@ -5,11 +5,11 @@ ms.assetid: BB3DF71E-1085-45D0-B739-F4C272E7098B
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6ecfa00a38c2263fe1db1b996bb3ec052f8caef1
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122483131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172262"
 ---
 # <a name="windows-defender-functions"></a>Windows Defender Funciones
 

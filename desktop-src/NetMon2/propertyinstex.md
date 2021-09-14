@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 533169a98d17c56a32df56f77c30d403d0dbb28c6a51159debc9692a505da52b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7b196d30e96f9d047f7f923d969d65a918aa4f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120036975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362132"
 ---
-# <a name="propertyinstex-structure"></a>Estructura PROPERTYINSTEX
+# <a name="propertyinstex-structure"></a>PROPERTYINSTEX (estructura)
 
 La **estructura PROPERTYINSTEX** define una instancia de propiedad extendida de forma libre.
 
@@ -45,7 +45,7 @@ typedef struct _PROPERTYINSTEX {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 

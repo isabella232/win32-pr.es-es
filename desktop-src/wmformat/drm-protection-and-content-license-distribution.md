@@ -15,16 +15,16 @@ keywords:
 - DRM (administración de derechos digitales), distribución de licencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2b0c666136d3713a0b725bfa9d8ff7dd25e84f3cc9d82fd3a97b66137e47d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25af13947828885d70f3e0fd9fe8bf035eb8c5e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118704319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359918"
 ---
 # <a name="drm-protection-and-content-license-distribution"></a>Protección DRM y distribución de licencias de contenido
 
-En el lado de la creación, la tecnología de administración de derechos digitales implica dos procesos principales: (1) proteger el contenido y (2) proporcionar licencias para el contenido. La protección de un archivo implica básicamente cifrar el contenido e incluir una dirección URL en el encabezado de archivo que especifica dónde se puede obtener una licencia para el contenido. Si desea proteger los archivos con y, a continuación, distribuirlos a otros equipos o dispositivos, puede usar el SDK de formato multimedia de Windows o el SDK de Windows Media Rights Manager para proteger el archivo. En escenarios de DRM en vivo, debe usar el SDK Windows Media Format para proteger el contenido a medida que se codifica.
+En el lado de la creación, la tecnología de administración de derechos digitales implica dos procesos principales: (1) proteger el contenido y (2) proporcionar licencias para el contenido. La protección de un archivo implica básicamente cifrar el contenido e incluir una dirección URL en el encabezado de archivo que especifica dónde se puede obtener una licencia para el contenido. Si desea proteger archivos con y, a continuación, distribuirlos a otros equipos o dispositivos, puede usar el SDK de formato multimedia de Windows o el SDK de Windows Media Rights Manager para proteger el archivo. En escenarios de DRM en vivo, debe usar el SDK Windows Media Format para proteger el contenido mientras se codifica.
 
 Para crear y emitir licencias de contenido protegido, puede crear su propia solución personalizada mediante los objetos del SDK de Windows Media Rights Manager, o bien puede usar un servicio ejecutado por un tercero.
 

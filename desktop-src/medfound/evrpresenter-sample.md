@@ -4,12 +4,12 @@ ms.assetid: 791a9816-4c40-4683-8b32-22f73d7fe84d
 title: Ejemplo EVRPresenter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe874483313d96f2ee6d9481fca7695d3ecfdba492f3e976f9f6c107c6114b1a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2bde85de152c41f348b1aae74a8c0d67ca746cab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118063659"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359741"
 ---
 # <a name="evrpresenter-sample"></a>Ejemplo EVRPresenter
 

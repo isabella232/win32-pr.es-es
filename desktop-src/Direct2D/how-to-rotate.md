@@ -4,12 +4,12 @@ description: Muestra cómo girar un objeto.
 ms.assetid: 468e29b6-941b-4cf8-8649-9e513326ccb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: babc84c08af759d8484c8ba85db40780f68570d93a0a8b9442e93b960ecac39c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b69cd900a78ba4d81919df91b85fd97723172eba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118003540"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163141"
 ---
 # <a name="how-to-rotate-an-object"></a>Cómo girar un objeto
 

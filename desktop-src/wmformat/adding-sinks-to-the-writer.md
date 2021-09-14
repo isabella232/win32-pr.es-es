@@ -13,12 +13,12 @@ keywords:
 - receptores de escritor, agregar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aca64b412dd83e9bbba1d8de66b2aef335573c9e50073c2afe898fed0c34761b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 886a6630a02d1fea56ce387077484f173ddf4dd3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119810025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247412"
 ---
 # <a name="adding-sinks-to-the-writer"></a>Agregar receptores al escritor
 

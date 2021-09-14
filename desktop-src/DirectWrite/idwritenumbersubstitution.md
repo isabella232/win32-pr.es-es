@@ -4,7 +4,7 @@ description: Contiene los dígitos adecuados y la puntuación numérica para una
 ms.assetid: bf8caeea-6ede-4cd3-84f7-2e8314af50db
 keywords:
 - Escritura directa de la interfaz IDWriteNumberSubstitution
-- IdWriteNumberSubstitution interface Direct Write , descrito
+- IdWriteNumberSubstitution interface Direct Write ( Escritura directa de la interfaz IDWriteNumberSubstitution), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31c5c2298fd72d8daa09223de0132116e13bf5b5b3d50620283f6eb506615fe9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da0f18b87c25de8af03982bc4ad2f2d7f102964e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118650199"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169849"
 ---
 # <a name="idwritenumbersubstitution-interface"></a>Interfaz IDWriteNumberSubstitution
 
 Contiene los dígitos adecuados y la puntuación numérica para una configuración regional especificada.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IDWriteNumberSubstitution** hereda de la [**interfaz IUnknown,**](/windows/win32/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -34,7 +34,7 @@ La **interfaz IDWriteNumberSubstitution** hereda de la [**interfaz IUnknown,**](
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
 | Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |

@@ -1,6 +1,6 @@
 ---
-title: Obtención del mejor rendimiento de búsqueda de vídeo
-description: Obtención del mejor rendimiento de búsqueda de vídeo
+title: Obtener el mejor rendimiento de búsqueda de vídeo
+description: Obtener el mejor rendimiento de búsqueda de vídeo
 ms.assetid: 21269f0c-fc3a-46fc-88b4-f71828b5d5a7
 keywords:
 - Windows SDK de formato multimedia, mejor rendimiento de búsqueda de vídeo
@@ -14,14 +14,14 @@ keywords:
 - rendimiento, búsqueda de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d055ade42caada84e4c58667d568d796c36cf10b3250e827b6194ac68369ec4b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c95feb9158bbab09ce28024100f3ebbffb56ad9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117655611"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359572"
 ---
-# <a name="getting-the-best-video-seeking-performance"></a>Obtención del mejor rendimiento de búsqueda de vídeo
+# <a name="getting-the-best-video-seeking-performance"></a>Obtener el mejor rendimiento de búsqueda de vídeo
 
 La búsqueda de contenido en un archivo es una operación muy común que puede ser un problema de rendimiento. El vídeo codificado con el códec Windows Media Video 9 se basa principalmente en fotogramas delta, que solo registran los cambios en relación con el fotograma anterior. La reconstrucción de fotogramas delta lleva tiempo, especialmente si los fotogramas clave están separados. Para obtener más información sobre cómo configurar fotogramas clave para búsquedas eficaces, vea [Configuring Video Secuencias for Seeking Performance](configuring-video-streams-for-seeking-performance.md).
 

@@ -1,5 +1,5 @@
 ---
-description: Establece los estados mostrar automáticamente y siempre en la parte superior de la Windows de tareas.
+description: Establece los estados autohide y always-on-top de la Windows de tareas.
 title: ABM_SETSTATE mensaje (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1a50671a750f8ca1800cea200c2c58828803bc8a45ae055082c5b6d78959dd12
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3cd21ca49d1a57d870c26e010420f978f1d9b88a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119710875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361064"
 ---
 # <a name="abm_setstate-message"></a>Mensaje \_ SETSTATE de ABM
 
-Establece los estados mostrar automáticamente y siempre en la parte superior de la Windows de tareas.
+Establece los estados autohide y always-on-top de la Windows de tareas.
 
 
 ```C++
@@ -98,7 +98,7 @@ Siempre devuelve **TRUE.**
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 

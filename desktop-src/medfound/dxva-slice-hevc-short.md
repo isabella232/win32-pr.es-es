@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - dxva.h
-ms.openlocfilehash: b59008947e636e7d4252b678a79b28c128c4a7b122b97c9337fb41ddc062fd54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d0f88e1534ef3d901023ebdee8ce9c36a8c2cc9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119958585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172214"
 ---
 # <a name="dxva_slice_hevc_short-structure"></a>Estructura corta \_ de HEVC de segmento \_ DXVA \_
 
@@ -37,7 +37,7 @@ typedef struct _DXVA_Slice_HEVC_Short {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -62,9 +62,9 @@ Si se usa el análisis de secuencia de bits fuera del host, este valor indica el
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Valor | Descripción                                                                                                                                                                                                                                             |
+| Value | Descripción                                                                                                                                                                                                                                             |
 | 0     | Todos los bits del segmento se encuentran en el búfer de datos de secuencia de bits correspondiente.                                                                                                                                                                      |
 | 1     | El búfer de datos de secuencia de bits contiene el inicio del segmento, pero no todo el segmento, porque el búfer está lleno.                                                                                                                                        |
 | 2     | El búfer de datos de flujo de bits contiene el final del segmento. No contiene el inicio del segmento, porque el inicio del segmento se encontraba en el búfer de datos de flujo de bits anterior.                                                                  |
@@ -76,7 +76,7 @@ Si se usa el análisis de secuencia de bits fuera del host, este valor indica el
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **DXVA \_ Slice \_ HEVC \_ Short contiene** datos de control de segmento que se pasan al acelerador de hardware desde el descodificador de software host.
 
@@ -88,11 +88,11 @@ Si se usa el análisis de secuencia de bits fuera del host, este valor indica el
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

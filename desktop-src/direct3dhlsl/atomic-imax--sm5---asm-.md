@@ -4,12 +4,12 @@ description: Entero con signo atómico máximo en memoria.
 ms.assetid: E15E9F25-CFC6-435F-B931-A50EA1C8621C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e8c51db8442df3c906c0de07fc47308b816681536ae18cbf80e047608dcc48d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21e4cfb806bf6387752255bbd87d0a7095db3cee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118795157"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360835"
 ---
 # <a name="atomic_imax-sm5---asm"></a>atomic \_ imax (sm5 - asm)
 
@@ -36,7 +36,7 @@ Entero con signo atómico máximo en memoria.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta operación realiza un único componente de 32 bits con signo máximo de *src0* de operando en *dst* a 32 bits por dirección de componente *dstAddress,* realizado de forma atómica.
 
@@ -58,7 +58,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -70,7 +70,7 @@ Dado que los UAV están disponibles en todas las fases del sombreador para Direc
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -86,7 +86,7 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
 | [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |

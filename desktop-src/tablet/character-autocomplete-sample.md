@@ -4,12 +4,12 @@ ms.assetid: 237e33bc-3708-4128-8749-d3d031f7237a
 title: Ejemplo de autocompletar de caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 485955e1b4254fe6f2dcf4c278aca4be0b4e2b5e41617434c6f2881cfb0b02d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4853cdef72a087aff3b9b726f0c83af9038ef5bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119093059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360339"
 ---
 # <a name="character-autocomplete-sample"></a>Ejemplo de autocompletar de caracteres
 
@@ -116,7 +116,7 @@ End Sub
 
 ## <a name="handling-the-stroke-event"></a>Controlar el evento de trazo
 
-El [**controlador de**](inkcollector-stroke.md) eventos Stroke detiene primero el reconocimiento en segundo plano en el contexto del reconocedor. A continuación, agrega el nuevo trazo a la propiedad [**Strokes del contexto del**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) reconocedor. Por último, establece la propiedad [**InkRecognizerCharacterAutoCompletionMode**](/windows/desktop/api/msinkaut/ne-msinkaut-inkrecognizercharacterautocompletionmode) del contexto del reconocedor y llama al método [**BackgroundRecognizeWithAlternates**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-backgroundrecognizewithalternates) del reconocedor para cada uno de los tres modos de autocompletar de tres caracteres. El *parámetro CustomData* de la llamada al método **BackgroundRecognizeWithAlternates** se usa para identificar qué resultados de reconocimiento se devuelven en el [**evento RecognitionWithAlternates.**](inkrecognizercontext-recognitionwithalternates.md)
+El [**controlador de**](inkcollector-stroke.md) eventos Stroke detiene primero el reconocimiento en segundo plano en el contexto del reconocedor. A continuación, agrega el nuevo trazo a la propiedad [**Strokes**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) del contexto del reconocedor. Por último, establece la propiedad [**InkRecognizerCharacterAutoCompletionMode**](/windows/desktop/api/msinkaut/ne-msinkaut-inkrecognizercharacterautocompletionmode) del contexto del reconocedor y llama al método [**BackgroundRecognizeWithAlternates**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-backgroundrecognizewithalternates) del reconocedor para cada uno de los tres modos de autocompletar de tres caracteres. El *parámetro CustomData* de la llamada al método **BackgroundRecognizeWithAlternates** se usa para identificar qué resultados de reconocimiento se devuelven en el [**evento RecognitionWithAlternates.**](inkrecognizercontext-recognitionwithalternates.md)
 
 
 ```C++

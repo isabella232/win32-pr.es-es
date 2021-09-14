@@ -1,6 +1,6 @@
 ---
 title: Método IWMDRMNetTransmitter SetLicenseChallenge (Wmdrmsdk.h)
-description: El método SetLicenseChallenge procesa un desafío de licencia enviado por un Windows drm multimedia para dispositivos de red.
+description: El método SetLicenseChallenge procesa un desafío de licencia enviado por un receptor Windows DRM multimedia para dispositivos de red.
 ms.assetid: 3d4cd029-a8f5-49fc-ba8c-d8615ff94366
 keywords:
 - SetLicenseChallenge method windows Media Format
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 211f8de60cddb153e157af64ee300a4bbaf327d70a1564fbd9e622008c055cb9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94b83ca615896039a592d147fe8c14d15493cec0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247292"
 ---
 # <a name="iwmdrmnettransmittersetlicensechallenge-method"></a>IWMDRMNetTransmitter::SetLicenseChallenge (método)
 
-El **método SetLicenseChallenge** procesa un desafío de licencia enviado por un Windows DRM multimedia para dispositivos de red.
+El **método SetLicenseChallenge** procesa un desafío de licencia enviado por un receptor Windows DRM multimedia para dispositivos de red.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -71,7 +71,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si este método se realiza correctamente, las llamadas posteriores a los otros métodos de **IWMDRMNetTransmitter** usarán la información del desafío procesado.
 

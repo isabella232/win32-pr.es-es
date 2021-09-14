@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a8433da88d2055f996b895d6234eb73369cbd431277b8cfd67b640bb3cc6c279
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 253048b44a836f92646124fb972fe32c135e3b9a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174477"
 ---
 # <a name="setdefaultttl-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetDefaultTTL de la clase NetworkAdapterConfiguration de Win32 \_
 
@@ -321,11 +321,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -404,7 +404,7 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El TTL especifica el número de enrutadores que puede pasar un paquete IP para llegar a su destino antes de descartarse. Cada enrutador disminuye el número de TTL de un paquete en uno y descarta los paquetes con un TTL de 0 (cero).
 

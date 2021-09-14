@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: fc8eefd335ad9c54e7dc4aefa5a1027785de1b9c33cd3346c8bb1c8a4872b939
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: caa3f7c20b95243e03c0c6025d1ff32d60443ab2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117695047"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359158"
 ---
 # <a name="nddetrustedshareenum-function"></a>Función NDdeTrustedShareEnum
 
@@ -65,7 +65,7 @@ Reservado. Este parámetro debe ser cero.
 *lpBuffer* \[ out\]
 </dt> <dd>
 
-Puntero a un búfer que recibe la lista de recursos compartidos de DDE de confianza. La lista de recursos compartidos de DDE de confianza se devuelve como una secuencia de cadenas separadas por null que finalizan con un carácter nulo doble al final. Este parámetro puede ser **NULL**. Si *lpBuffer* es **NULL,** DSDM devuelve el tamaño de búfer necesario para contener la lista de recursos compartidos en el *campo lpcbTotalAvailable.*
+Puntero a un búfer que recibe la lista de recursos compartidos de DDE de confianza. La lista de recursos compartidos DDE de confianza se devuelve como una secuencia de cadenas separadas por null que finalizan con un carácter null doble al final. Este parámetro puede ser **NULL**. Si *lpBuffer* es **NULL,** DSDM devuelve el tamaño de búfer necesario para contener la lista de recursos compartidos en el *campo lpcbTotalAvailable.*
 
 </dd> <dt>
 
@@ -111,11 +111,11 @@ Si se produce un error en la función, el valor devuelto es un código de error,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Información general sobre datos dinámicos Exchange red](network-dynamic-data-exchange.md)
+[Información general datos dinámicos Exchange red](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funciones DDE de red](network-dde-functions.md)

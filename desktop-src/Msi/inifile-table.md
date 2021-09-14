@@ -4,31 +4,31 @@ ms.assetid: fdb1a627-da6b-4da1-87a7-7f1c94d3836e
 title: Tabla IniFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4cd12c02fa0123ac9e1a763b4e725681e6c6b1d51a331a1efea9916b5ac4cbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d63ae37f7c8ed5c50b9b425b0462b445f7acb5b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118946572"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171821"
 ---
 # <a name="inifile-table"></a>Tabla IniFile
 
 La tabla IniFile contiene la .ini que la aplicación debe establecer en un .ini archivo.
 
-La tabla IniFile tiene las siguientes columnas.
+La tabla IniFile tiene las columnas siguientes.
 
 
 
 | Columna      | Tipo                         | Clave | Nullable |
 |-------------|------------------------------|-----|----------|
-| IniFile     | [Identificador](identifier.md) | Y   | N        |
-| FileName    | [FileName](text.md)         | N   | N        |
-| DirProperty | [Identificador](identifier.md) | N   | Y        |
-| Sección     | [Formato](formatted.md)   | N   | N        |
-| Clave         | [Formato](formatted.md)   | N   | N        |
-| Value       | [Formato](formatted.md)   | N   | N        |
-| Acción      | [Entero](integer.md)       | N   | N        |
-| Componente\_ | [Identificador](identifier.md) | N   | N        |
+| IniFile     | [Identificador](identifier.md) | Y   | No        |
+| FileName    | [FileName](text.md)         | No   | No        |
+| DirProperty | [Identificador](identifier.md) | No   | Y        |
+| Sección     | [Formato](formatted.md)   | No   | No        |
+| Clave         | [Formato](formatted.md)   | No   | No        |
+| Value       | [Formato](formatted.md)   | No   | No        |
+| Acción      | [Entero](integer.md)       | No   | No        |
+| Componente\_ | [Identificador](identifier.md) | No   | No        |
 
 
 
@@ -55,7 +55,7 @@ Nombre localizable del archivo .ini en el que se va a escribir la información.
 <span id="DirProperty"></span><span id="dirproperty"></span><span id="DIRPROPERTY"></span>DirProperty
 </dt> <dd>
 
-Nombre de una propiedad que tiene un valor que se resuelve en la ruta de acceso completa de la carpeta que contiene .ini archivo. La propiedad puede ser el nombre de un directorio de la tabla [Directory](directory-table.md), una propiedad establecida por la tabla [AppSearch](appsearch-table.md)o cualquier otra propiedad que represente una ruta de acceso completa. Si este campo se deja en blanco, el .ini se crea en la carpeta con la ruta de acceso completa especificada por la [**propiedad WindowsFolder.**](windowsfolder.md)
+Nombre de una propiedad que tiene un valor que se resuelve en la ruta de acceso completa de la carpeta que contiene .ini archivo. La propiedad puede ser el nombre de un directorio de la tabla [Directory](directory-table.md), una propiedad establecida por la tabla [AppSearch](appsearch-table.md)o cualquier otra propiedad que represente una ruta de acceso completa. Si este campo se deja en blanco, el archivo .ini se crea en la carpeta que tiene la ruta de acceso completa especificada por la [**propiedad WindowsFolder.**](windowsfolder.md)
 
 </dd> <dt>
 
@@ -106,11 +106,11 @@ Clave externa en la primera columna de la [tabla Component](component-table.md) 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La .ini se escribe cuando se ha seleccionado el componente correspondiente para instalarse como local o ejecutarse desde el origen.
+La .ini de archivos se escribe cuando se ha seleccionado el componente correspondiente para instalarse como local o ejecutarse desde el origen.
 
-Se hace referencia a esta tabla cuando se [ejecuta la acción WriteIniValues](writeinivalues-action.md) o [removeIniValues.](removeinivalues-action.md)
+Se hace referencia a esta tabla cuando se [ejecuta la acción WriteIniValues](writeinivalues-action.md) o [la acción RemoveIniValues.](removeinivalues-action.md)
 
 ## <a name="validation"></a>Validación
 

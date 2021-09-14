@@ -4,16 +4,16 @@ ms.assetid: 9dd3ff5b-4c7c-41a8-b1b9-7ea380175193
 title: Usar la codificación VBR (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50a9e1a61baf0539c0597e68f24dfad1496918012e52f778a1b7a64de27e5faa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cdd1f317308d79c696e26a8671cc9d84ca8effa4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117871234"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363646"
 ---
 # <a name="using-vbr-encoding-microsoft-media-foundation"></a>Usar la codificación VBR (Microsoft Media Foundation)
 
-Como se detalla en el tema [Métodos](encodingmethods.md) de codificación, la codificación de velocidad de bits variable (VBR) se usa para mejorar la coherencia de la calidad del contenido. Los flujos de VBR se configuran de la misma manera que se codifican secuencias de velocidad de bits constante (CBR), excepto para los parámetros de búfer (velocidad de bits y ventana de búfer). En esta sección se describe cómo configurar secuencias de VBR.
+Como se detalla en el tema [Métodos](encodingmethods.md) de codificación, la codificación de velocidad de bits variable (VBR) se usa para mejorar la coherencia de la calidad del contenido. Las secuencias de VBR se configuran de la misma manera que se codifican secuencias de velocidad de bits constante (CBR), excepto para los parámetros de búfer (velocidad de bits y ventana de búfer). En esta sección se describe cómo configurar secuencias de VBR.
 
 ## <a name="configuring-quality-based-vbr"></a>Configuración de VBR basado en calidad
 
@@ -25,7 +25,7 @@ Para configurar una secuencia de vídeo de VBR basada en la calidad, debe establ
 
 
 
-| Propiedad                                            | Descripción                                                                                                                                             |
+| Propiedad.                                            | Descripción                                                                                                                                             |
 |-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [MFPKEY \_ VBRENABLED](mfpkey-vbrenabledproperty.md) | Establezca en VARIANT \_ TRUE.                                                                                                                                   |
 | [MFPKEY \_ VBRQUALITY](mfpkey-vbrqualityproperty.md) | Establezca en el valor de calidad deseado, de 0 a 100. No todos los valores de calidad representan configuraciones discretas. Consulte la descripción de la propiedad para obtener más información. |
@@ -44,7 +44,7 @@ Para configurar una secuencia de vídeo de VBR sin restricciones, debe establece
 
 
 
-| Propiedad                                            | Descripción                          |
+| Propiedad.                                            | Descripción                          |
 |-----------------------------------------------------|--------------------------------------|
 | [MFPKEY \_ VBRENABLED](mfpkey-vbrenabledproperty.md) | Establezca en VARIANT \_ TRUE.                |
 | [MFPKEY \_ PASSESUSED](mfpkey-passesusedproperty.md) | Establezca en 2.                            |
@@ -64,7 +64,7 @@ Para configurar una secuencia de vídeo de VBR con restricciones máximas, debe 
 
 
 
-| Propiedad                                            | Descripción                                                     |
+| Propiedad.                                            | Descripción                                                     |
 |-----------------------------------------------------|-----------------------------------------------------------------|
 | [MFPKEY \_ VBRENABLED](mfpkey-vbrenabledproperty.md) | Establezca en VARIANT \_ TRUE.                                           |
 | [MFPKEY \_ PASSESUSED](mfpkey-passesusedproperty.md) | Establezca en 2.                                                       |

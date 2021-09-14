@@ -4,17 +4,17 @@ description: En esta sección se proporciona información general conceptual de 
 ms.assetid: 7839C264-C15F-4E89-82B6-2963A5C61CEC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87328fc3d47925282c6302e143a05d332d5e432275f095cd4c4c87239064736d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bea823d2edd27b2c725cefdd73cd053e94124d7f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118088910"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360778"
 ---
 # <a name="directcomposition-concepts"></a>Conceptos de DirectComposition
 
 > [!NOTE]
-> Para las aplicaciones de Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para las aplicaciones Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 En esta sección se proporciona información general conceptual de DirectComposition.
 

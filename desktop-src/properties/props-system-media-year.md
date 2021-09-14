@@ -4,12 +4,12 @@ ms.assetid: 87080e50-1233-4300-8fbc-cd897d9aecbd
 title: System.Media.Year
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 528af76ccef744efa888dc4c6cd5a3420f491f23a0b67dd4cf8a4b8d857b3886
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c591d30da427cda56158f6273587182b59a5fe1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117683328"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248085"
 ---
 # <a name="systemmediayear"></a>System.Media.Year
 
@@ -42,7 +42,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

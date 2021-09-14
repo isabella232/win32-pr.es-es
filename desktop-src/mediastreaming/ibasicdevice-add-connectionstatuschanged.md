@@ -1,6 +1,6 @@
 ---
-title: Método add_ConnectionStatusChanged IBasicDevice
-description: Registra un controlador de eventos para el evento ConnectionStatusChanged. | Método add_ConnectionStatusChanged IBasicDevice
+title: IBasicDevice add_ConnectionStatusChanged método
+description: Registra un controlador de eventos para el evento ConnectionStatusChanged. | IBasicDevice add_ConnectionStatusChanged método
 ms.assetid: 1A4CCEFE-B6B6-4AFD-9296-EE923B9EF399
 keywords:
 - add_ConnectionStatusChanged media streaming API
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 55e90ea1f90ccd5b1e141b0e4071213abfe6f4a05a85d3c0d4ced505e1b0f164
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0028e6f3dad1670974178b0f07a59f74dffdc06f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119952665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248511"
 ---
-# <a name="ibasicdeviceadd_connectionstatuschanged-method"></a>Método IBasicDevice::add \_ ConnectionStatusChanged
+# <a name="ibasicdeviceadd_connectionstatuschanged-method"></a>IBasicDevice::add \_ ConnectionStatusChanged (método)
 
 Registra un controlador de eventos para el [**evento ConnectionStatusChanged.**](connectionstatuschanged.md)
 
@@ -70,9 +70,9 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para anular el registro del controlador de eventos registrado por este método, pase el *valor del token* al método remove [**\_ ConnectionStatusChanged.**](ibasicdevice-remove-connectionstatuschanged.md)
+Para anular el registro del controlador de eventos registrado por este método, pase el *valor del token* al método Remove [**\_ ConnectionStatusChanged.**](ibasicdevice-remove-connectionstatuschanged.md)
 
 ## <a name="see-also"></a>Vea también
 

@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Win32_ScheduledJob métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ee25bca758d7822d0accd1d2838b4ce621706181dfff569710f27d6ee777cb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adfb461696ad8c45865660a606941735b67b4839
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174334"
 ---
 # <a name="win32_scheduledjob-methods"></a>Métodos \_ ScheduledJob de Win32
 

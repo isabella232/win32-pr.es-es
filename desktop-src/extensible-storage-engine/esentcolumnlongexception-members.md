@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101270
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: beba8ad5b040139e933c7efae987e2bca7702db7868b04039323954b851d3194
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c9b7c0b47eec2f65a339a34f16912dec7bf719b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119622110"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359307"
 ---
 # <a name="esentcolumnlongexception-members"></a>Miembros de EsentColumnLongException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones columnlong.
+Clase base para JET_err. Excepciones de ColumnLong.
 
-El [tipo EsentColumnLongException](./esentcolumnlongexception-class.md) expone los siguientes miembros.
+El [tipo EsentColumnLongException](./esentcolumnlongexception-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

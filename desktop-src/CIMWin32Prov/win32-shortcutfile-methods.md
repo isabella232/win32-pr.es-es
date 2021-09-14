@@ -5,14 +5,14 @@ ms.tgt_platform: multiple
 title: Win32_ShortcutFile métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfccfbbc78df21789af63c37b1f145cff71462dd99a39602d3eb05beba71e923
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: abc6b58b47bb2a45c0f610cc92ab50c6b4065cf9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119971515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174306"
 ---
-# <a name="win32_shortcutfile-methods"></a>Métodos ShortcutFile de Win32 \_
+# <a name="win32_shortcutfile-methods"></a>Métodos shortcutfile de Win32 \_
 
 La [**clase \_ ShortcutFile de Win32**](win32-shortcutfile.md) expone los métodos siguientes.
 

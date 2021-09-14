@@ -22,11 +22,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0cb068e5b2d69c3b7ac180b65436888ca550b1db
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467802"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172642"
 ---
 # <a name="document-control-type"></a>Tipo de control de documento
 
@@ -46,7 +46,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control típico y una vista de contenido del árbol de Automatización de la interfaz de usuario que pertenece a los controles de documento y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, [vea información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control típico y una vista de contenido del árbol de Automatización de la interfaz de usuario que pertenece a los controles de documento y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
 
 
 
@@ -66,14 +66,14 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor        | Notas                                                                                                                                             |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value        | Notas                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.   | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato del Automatización de la interfaz de usuario árbol.                                      |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.   | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel de la vista sin formato Automatización de la interfaz de usuario árbol.                                      |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas.   | El rectángulo exterior que contiene el control completo.                                                                                          |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas.   | El documento tiene un punto en el que se puede hacer clic que provocará que el foco pase al documento de uno de sus elementos del contenedor de documento.                   |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **Documento** |                                                                                                                                                   |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE         | El control de documento siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario contenido.                                                            |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE         | El control de documento siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                            |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true         | El control de documento siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario contenido.                                                            |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true         | El control de documento siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                            |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas.   | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                         |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vea las notas.   | El valor de esta propiedad debe ser la etiqueta del control de documento. Normalmente, se utiliza el título del documento.                             |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas.   | Cadena localizada correspondiente al tipo **de** control Document. El valor predeterminado es "document" para en-US o Inglés (Estados Unidos).            |
@@ -92,7 +92,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 | Patrón de control/Propiedad de patrón                  | Soporte técnico/valor | Notas                                                                                                                                                                                                                                                                                                                  |
 |---------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider) | Depende       | El control de documento puede abarcar más de lo que puede la ventanilla. El control debe admitir el [patrón de](uiauto-implementingscroll.md) control Scroll si el contenido se puede desplazar.                                                                                                                              |
-| [**ITextProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextprovider)     | Requerido      | Todos los controles de documento deben admitir el [patrón de](uiauto-implementingtextandtextrange.md) control Texto.                                                                                                                                                                                                                |
+| [**ITextProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextprovider)     | Obligatorio      | Todos los controles de documento deben admitir el [patrón de](uiauto-implementingtextandtextrange.md) control Texto.                                                                                                                                                                                                                |
 | [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider)   | Depende       | Aunque Automatización de la interfaz de usuario clientes pueden usar [**IUIAutomationTextPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtextpattern) para obtener información de texto sobre un documento, necesitan el patrón de [control](uiauto-implementingvalue.md) Valor para establecer el valor interno. La entrada de texto simple solo es posible a través del patrón de control Valor. |
 
 

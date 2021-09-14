@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2ae53996e2f8199d552909a186ab17e6b7ec89857c9be24dc4d8d4bfe583cfea
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2bfe731ea1d89e8e0ad702bfa229a61fba30dfc7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174458"
 ---
 # <a name="setdnsserversearchorder-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetDNSServerSearchOrder de la clase \_ NetworkAdapterConfiguration de Win32
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetDNSServerSearchOrder** usa una matriz de elementos de cadena para establecer el orden de búsqueda del servidor.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -174,7 +174,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 **Otros** (101 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de una llamada de método dependiente de la instancia que se aplica por adaptador. Después de especificar que los servidores DNS estáticos empiecen a usar el Protocolo de configuración dinámica de host (DHCP) en lugar de los servidores DNS estáticos, puede llamar al método sin proporcionar parámetros "in".
 

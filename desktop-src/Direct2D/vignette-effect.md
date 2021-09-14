@@ -1,21 +1,21 @@
 ---
 title: Efecto de la viñeta
-description: Atenua la imagen de entrada en los bordes a un color definido por el usuario.
+description: Atenua la imagen de entrada en los bordes a un color establecido por el usuario.
 ms.assetid: 34da221f-44a2-1d01-d88d-d7846b9770b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0c4f955595cfcf081b6de20d7bf81427f83df82806d9eb64e6046921503782f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c3fe9302a86a49b060aa05ecb856ce43122d946d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074978"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162518"
 ---
 # <a name="vignette-effect"></a>Efecto de la viñeta
 
-Atenua la imagen de entrada en los bordes a un color definido por el usuario.
+Atenua la imagen de entrada en los bordes a un color establecido por el usuario.
 
-El CLSID para este efecto es CLSID \_ D2D1Vigpanel.
+El CLSID para este efecto es CLSID \_ D2D1Vigvigvigave.
 
 -   [Imagen de ejemplo](#example-image)
 -   [Código de ejemplo](#sample-code)
@@ -45,15 +45,15 @@ m_d2dContext->EndDraw();
 
 ## <a name="effect-properties"></a>Propiedades de efecto
 
-Las propiedades del efecto de la viñeta se definen mediante la [**enumeración D2D1 \_ DE LA PROPIEDAD DE LA VIÑETA. \_**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_vignette_prop)
+Las propiedades del efecto de la viñeta se definen mediante la [**enumeración D2D1 \_ VIGNETTE \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_vignette_prop)
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
-| Header                   | d2d1effects \_ 2.h                                  |
+| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
+| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
+| Encabezado                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Temas relacionados

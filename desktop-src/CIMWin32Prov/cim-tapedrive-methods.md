@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: CIM_TapeDrive métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a763ad33f005704d0d7cd922e3389922638f51a5bd4c354a5fe66b5c2cf8026f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f65d12ce24a5dd48f9b5f78e688c71077c549e1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119817595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174561"
 ---
 # <a name="cim_tapedrive-methods"></a>Métodos \_ de TapeDrive de CIM
 

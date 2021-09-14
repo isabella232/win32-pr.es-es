@@ -1,19 +1,19 @@
 ---
-description: Contiene una alternativa de reconocimiento para inkWord. Las alternativas se ordenan por la confianza del reconocedor en la alternativa, con el valor más alto primero.
+description: Contiene una alternativa de reconocimiento para inkWord. Las alternativas se ordenan por la confianza del reconocedor en la alternativa, con la más alta en primer lugar.
 ms.assetid: 6ec78ac9-c10c-4227-bead-5ddfc48ce27e
 title: Elemento Alternate (Wingdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 306371c1f2eff41629c115261fecb0d807652a598458be79bbabf8d7c7cc7587
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 55dfb629aadea988a6aeec1cba1020c8ab47c994
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119884025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247881"
 ---
 # <a name="alternate-element"></a>Elemento alternativo
 
-Contiene una alternativa de reconocimiento para [**un objeto InkWord.**](inkword-element.md) Las alternativas se ordenan por la confianza del reconocedor en la alternativa, con el valor más alto primero.
+Contiene una alternativa de reconocimiento para [**un objeto InkWord.**](inkword-element.md) Las alternativas se ordenan por la confianza del reconocedor en la alternativa, con la más alta en primer lugar.
 
 ## <a name="definition"></a>Definición
 

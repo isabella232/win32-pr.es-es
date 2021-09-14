@@ -4,12 +4,12 @@ ms.assetid: 407619c6-2d4b-4f7f-a861-42ee0f462ecd
 title: Cómo selecciona Microsoft DVD Navigator la región de DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 822a546276c57296bb4514e3ab2c8917abfe7218fe3afeadd528ac6bd80066d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f8a2898725ad187946b50e567f7daa7e72a9886
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117999774"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169913"
 ---
 # <a name="how-microsoft-dvd-navigator-selects-the-dvd-region"></a>Cómo selecciona Microsoft DVD Navigator la región de DVD
 

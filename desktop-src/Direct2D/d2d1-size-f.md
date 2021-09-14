@@ -6,12 +6,12 @@ keywords:
 - D2D1_SIZE_F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7068319c161d7d6b288da6d3a451d8cdfdda715b9890160d17cc7fe872322381
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4a031e1e6a1e9ad7d6975f3dea63427655aa92f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163489"
 ---
 # <a name="d2d1_size_f"></a>D2D1 \_ SIZE \_ F
 
@@ -24,7 +24,7 @@ typedef D2D_SIZE_F D2D1_SIZE_F;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al igual que los puntos, los tamaños son otro concepto de gráficos importante. En Direct2D, los tamaños se representan mediante las estructuras **D2D1 \_ SIZE \_ F** [**o D2D1 \_ SIZE \_ U.**](d2d1-size-u.md) Ambos contienen un par ordenado de números, normalmente el ancho y el alto de un rectángulo. La **estructura D2D1 \_ SIZE \_ F** contiene un par ordenado de valores **FLOAT** y la estructura **D2D1 \_ SIZE \_ U** contiene un par ordenado de **valores UINT32.**
 
@@ -36,14 +36,14 @@ Al igual que los puntos, los tamaños son otro concepto de gráficos importante.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Platform Update for Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Platform Update for Windows Vista \[ desktop apps \| UWP apps\]<br/>                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                                  |
-| Header<br/>                   | <dl> <dt>D2DBaseTypes.h (incluir D2d1.h)</dt> </dl>                               |
+| Encabezado<br/>                   | <dl> <dt>D2DBaseTypes.h (incluir D2d1.h)</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

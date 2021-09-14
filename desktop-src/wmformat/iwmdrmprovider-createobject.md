@@ -1,11 +1,11 @@
 ---
 title: Método CreateObject de IWMDRMProvider (Wmdrmsdk.h)
-description: El método CreateObject recupera un puntero a una interfaz especificada, creando el objeto de implementación si es necesario.
+description: El método CreateObject recupera un puntero a una interfaz especificada y crea el objeto de implementación si es necesario.
 ms.assetid: d408f7f3-9e49-4747-ac8f-d39db31d1240
 keywords:
-- Formato multimedia de windows del método CreateObject
+- Método CreateObject windows Media Format
 - Método CreateObject windows Media Format , interfaz IWMDRMProvider
-- Interfaz IWMDRMProvider windows Media Format , método CreateObject
+- IWMDRMProvider interface windows Media Format , CreateObject method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f50341e33092b33b19ec3f41d968e0a1b7bc883ae959b200f6c7062e4c69996b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c0422138391b0d6f5e38fbc81fd5141bd3d8535
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118700781"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247263"
 ---
 # <a name="iwmdrmprovidercreateobject-method"></a>IWMDRMProvider::CreateObject (método)
 
-El **método CreateObject** recupera un puntero a una interfaz especificada, creando el objeto de implementación si es necesario.
+El **método CreateObject** recupera un puntero a una interfaz especificada y crea el objeto de implementación si es necesario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -93,11 +93,11 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Interfaz IWMDRMProvider**](iwmdrmprovider.md)
+[**IWMDRMProvider (interfaz)**](iwmdrmprovider.md)
 </dt> <dt>
 
 [**IWMDRMLicenseManagement (interfaz)**](iwmdrmlicensemanagement.md)
@@ -106,13 +106,13 @@ Ninguno.
 [**IWMDRMLicenseQuery (interfaz)**](iwmdrmlicensequery.md)
 </dt> <dt>
 
-[**Interfaz IWMDRMNetReceiver**](iwmdrmnetreceiver.md)
+[**IWMDRMNetReceiver (interfaz)**](iwmdrmnetreceiver.md)
 </dt> <dt>
 
-[**Interfaz IWMDRMNetTransmitter**](iwmdrmnettransmitter.md)
+[**IWMDRMNetTransmitter (interfaz)**](iwmdrmnettransmitter.md)
 </dt> <dt>
 
-[**Interfaz IWMDRMSecurity**](iwmdrmsecurity.md)
+[**IWMDRMSecurity (interfaz)**](iwmdrmsecurity.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_SIGNATURE métodos'
+description: 'Más información sobre: JET_SIGNATURE métodos'
 title: JET_SIGNATURE métodos
 TOCTitle: JET_SIGNATURE methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_SIGNATURE
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39514663
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 48c532fcaa2a8a42c84985f1f5def53240fdadb742b72774d6b139c3bc873e7d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 819fcb878a114cd1d64dd5c82573882127cacf99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119616315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242217"
 ---
 # <a name="jet_signature-methods"></a>JET_SIGNATURE métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_SIGNATURE](./jet-signature-structure2.md) muestra los miembros siguientes.
+El [JET_SIGNATURE](./jet-signature-structure2.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -73,7 +73,7 @@ El [JET_SIGNATURE](./jet-signature-structure2.md) muestra los miembros siguiente
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -11,12 +11,12 @@ keywords:
 - transformación de coordenadas OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe3c2e4f8c0dd9540e8ba7963640072ebf44997cf9d99e807f31914ddf8eed4c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 504a5a58c723dcccfc54ce2f47a01710133ccc30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119553575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362000"
 ---
 # <a name="transforming-coordinates"></a>Transformar coordenadas
 

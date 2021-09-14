@@ -5,15 +5,15 @@ ms.assetid: 891e1f91-406e-4997-9da6-59b5fe578d0d
 keywords:
 - Servicios web de resultados de procesamiento de seguridad para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f53009729b3d7f1c8ff6b9e38a054d8dbadf202b7a0caa4a92c7861232c8390a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ecf6f8964d14c8cfdca3f6bd66b2f24e9fa611d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962934"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360898"
 ---
 # <a name="security-processing-results"></a>Resultados del procesamiento de seguridad
 

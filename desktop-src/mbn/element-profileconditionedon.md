@@ -8,11 +8,11 @@ title: ProfileConditionedOn
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 1c0be79fd82b7fa92400a4d828149912cfc1aeb7
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987078"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172242"
 ---
 # <a name="span-idwwan_profile_v4element_profileconditionedonspanprofileconditionedon"></a><span id="WWAN_profile_v4.element_ProfileConditionedOn"></span>ProfileConditionedOn
 

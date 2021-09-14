@@ -4,12 +4,12 @@ ms.assetid: ef361c85-8f3b-4719-80f2-853c84ae7277
 title: Trabajar con vídeo (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd9819c7f3c949f841b040ec2c73bf37a9957f8cc40d7f595b2fd65f723dd762
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 002b32fab6dafea91fb9c15d59a4ca3cca2f03f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117688145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363547"
 ---
 # <a name="working-with-video-microsoft-media-foundation"></a>Trabajar con vídeo (Microsoft Media Foundation)
 
@@ -25,8 +25,8 @@ Aunque los códecs de vídeo individuales tienen sus propias localidades, todos 
 | [Inserción forzada de fotogramas clave](forcedkeyframeinsertion.md)                                                    | Describe cómo solicitar la codificación de un ejemplo como fotograma clave.                                       |
 | [Codificación de vídeo entrelazada](interlacedvideoencoding.md)                                                     | Describe cómo mantener el entrelazado en Windows de vídeo multimedia.                                   |
 | [Uso del códec de perfil avanzado Windows Media Video 9](usingthewindowsmediavideo9advancedprofilecodec.md) | Describe cómo usar el códec de perfil avanzado Windows Media Video 9.                                  |
-| [Uso del códec de Windows media video 9](usingthewindowsmediavideo9screencodec.md)                    | Describe cómo usar el códec de Windows media video 9.                                            |
-| [Uso del códec de imagen Windows Media Video 9.1](usingthewindowsmediavideo9imagecodec.md)                    | Describe cómo usar el códec de imagen Windows Media Video 9.1.                                           |
+| [Uso del códec de Windows media video 9](usingthewindowsmediavideo9screencodec.md)                    | Describe cómo usar el códec Windows Media Video 9 Screen.                                            |
+| [Uso del códec Windows imagen de Media Video 9.1](usingthewindowsmediavideo9imagecodec.md)                    | Describe cómo usar el códec de imagen Windows Media Video 9.1.                                           |
 
 
 

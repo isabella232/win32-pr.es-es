@@ -6,21 +6,21 @@ ms.assetid: f3a4477a-7b09-4943-8b06-f252f8f9fed8
 ms.topic: article
 ms.custom: contperf-fy21q1
 ms.openlocfilehash: 16f529003d97c77d9ffc74207500390222c0baf8
-ms.sourcegitcommit: f374b50b37160b683da16b59ac9340282a8f50a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "104151933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164297"
 ---
 # <a name="registering-for-device-notification"></a>Registro para recibir notificaciones del dispositivo
 
-El sistema operativo puede enviar mensajes de notificación que representan los eventos generados por un dispositivo. El sistema envía las notificaciones a una ventana o a un servicio de Windows. Y puede registrarse para recibir esas notificaciones mediante una llamada a la función [**RegisterDeviceNotification**](/windows/win32/api/winuser/nf-winuser-registerdevicenotificationw) .
+El sistema operativo puede enviar mensajes de notificación que representan los eventos que genera un dispositivo. El sistema envía esas notificaciones a una ventana o a Windows servicio. Y puede registrarse para recibir esas notificaciones llamando a la [**función RegisterDeviceNotification.**](/windows/win32/api/winuser/nf-winuser-registerdevicenotificationw)
 
-En este tema se proporciona un ejemplo de código que muestra cómo registrarse para recibir notificaciones de dispositivo. Puede identificar el dispositivo que recibirá notificaciones especificando una clase de dispositivo al llamar a **RegisterDeviceNotification**. Y identifica esa clase de dispositivo por su GUID.
+En este tema se proporciona un ejemplo de código que muestra cómo registrarse para las notificaciones de dispositivo. Puede identificar el dispositivo sobre el que recibir notificaciones especificando una clase de dispositivo al llamar a **RegisterDeviceNotification**. Y se identifica esa clase de dispositivo por su GUID.
 
 ## <a name="source-code-listing"></a>Lista de código fuente
 
-Si desea compilar y ejecutar este ejemplo de código fuente como una aplicación, empiece por crear un nuevo proyecto en Microsoft Visual Studio. Cree un nuevo proyecto basado en la plantilla de proyecto de **aplicación de escritorio de Windows** . Asigne al proyecto el nombre *RegisterDeviceNotification*.
+Si desea compilar y ejecutar este ejemplo de código fuente como una aplicación, empiece por crear un nuevo proyecto en Microsoft Visual Studio. Cree un proyecto basado en la plantilla de **proyecto Windows aplicación de** escritorio. Asigne al proyecto *el nombre RegisterDeviceNotification.*
 
 Abre `RegisterDeviceNotification.cpp`, elimina todo su contenido y pega en la lista siguiente.
 
@@ -505,12 +505,12 @@ Ahora puedes compilar y ejecutar el proyecto.
 
 ## <a name="about-the-code-example"></a>Acerca del ejemplo de código
 
-En el ejemplo de código se usa un identificador de ventana para las notificaciones de cambio de dispositivo y se incluye una gran cantidad de código solo para administrar la infraestructura de ventanas. Una aplicación diseñada para instalarse como un servicio de Windows contendría un código de infraestructura diferente.
+En el ejemplo de código se usa un identificador de ventana para las notificaciones de cambio de dispositivo y contiene una gran cantidad de código solo para administrar la infraestructura de ventanas. Una aplicación diseñada para instalarse como un servicio de Windows con código de infraestructura diferente.
 
-La aplicación recibirá el mensaje de [**WM_DEVICECHANGE**](./wm-devicechange.md) cada vez que se envíe una notificación de evento de interfaz de dispositivo USB.
+La aplicación recibirá el [**mensaje**](./wm-devicechange.md) WM_DEVICECHANGE cada vez que se envíe una notificación de eventos de interfaz de dispositivo USB.
 
-El sistema difunde un conjunto de eventos de cambio de dispositivo predeterminados a todas las aplicaciones y servicios. No es necesario registrarse para recibir esos eventos predeterminados. Para obtener más información, vea la sección **comentarios** en [**RegisterDeviceNotification**](/windows/win32/api/winuser/nf-winuser-registerdevicenotificationw).
+El sistema difunde un conjunto de eventos de cambio de dispositivo predeterminados a todas las aplicaciones y servicios. No es necesario registrarse para recibir esos eventos predeterminados. Para obtener más información, vea **la sección Comentarios** de [**RegisterDeviceNotification**](/windows/win32/api/winuser/nf-winuser-registerdevicenotificationw).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Notificaciones de dispositivo](./device-notifications.md)
+* [Notificaciones de dispositivos](./device-notifications.md)

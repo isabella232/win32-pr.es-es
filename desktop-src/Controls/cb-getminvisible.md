@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CB_GETMINVISIBLE (commctrl. h)
+title: CB_GETMINVISIBLE mensaje (Commctrl.h)
 description: Obtiene el número mínimo de elementos visibles en la lista desplegable de un cuadro combinado.
 ms.assetid: 9861358a-1ef9-4d78-8ec8-561b97f3f18e
 keywords:
-- CB_GETMINVISIBLE controles de mensajes de Windows
+- CB_GETMINVISIBLE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 3dcf4fe5088d9c994e232a64ba16bbddf11b0d48
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174189"
 ---
-# <a name="cb_getminvisible-message"></a>\_Mensaje GETMINVISIBLE CB
+# <a name="cb_getminvisible-message"></a>Mensaje \_ GETMINVISIBLE de CB
 
 Obtiene el número mínimo de elementos visibles en la lista desplegable de un cuadro combinado.
 
@@ -32,14 +32,14 @@ Obtiene el número mínimo de elementos visibles en la lista desplegable de un c
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Cuando el número de elementos de la lista desplegable es mayor que el mínimo, 
 
 Este mensaje se omite si el control de cuadro combinado tiene el estilo [**CBS \_ NOINTEGRALHEIGHT**](combo-box-styles.md).
 
-Para usar **CB \_ GETMINVISIBLE**, la aplicación debe especificar comctl32.dll versión 6 del manifiesto. Para obtener más información, vea [habilitar estilos visuales](cookbook-overview.md).
+Para usar **CB \_ GETMINVISIBLE,** la aplicación debe especificar comctl32.dll versión 6 en el manifiesto. Para obtener más información, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ Para usar **CB \_ GETMINVISIBLE**, la aplicación debe especificar comctl32.dll 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

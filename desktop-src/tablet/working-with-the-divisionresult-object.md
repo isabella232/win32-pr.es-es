@@ -4,12 +4,12 @@ ms.assetid: 2bcf5223-7bf4-420c-8f04-a972f04f262d
 title: Trabajar con el objeto DivisionResult
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b1bb001ecc57c0925253b01b129e0c6fcf0c0243c5a77f0eb697e2cc5c618d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0b9874f4a9d2e6bc4390d98803c2344308fc3e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118715075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247677"
 ---
 # <a name="working-with-the-divisionresult-object"></a>Trabajar con el objeto DivisionResult
 
@@ -17,7 +17,7 @@ El **objeto DivisionResult** representa una instantánea del análisis de diseñ
 
 Puede obtener información del objeto **DivisionResult** por tipo de elemento estructural, como dibujo o líneas de escritura a mano. El **objeto DivisionResult** puede persistir después **de destruir** el objeto Divider. En Automation, este objeto se denomina objeto [**IInkDivisionResult Interface.**](/windows/desktop/api/msinkaut15/nn-msinkaut15-iinkdivisionresult)
 
-La [**propiedad Strokes**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) del objeto **DivisionResult** contiene una copia de la colección **Strokes** del objeto **Divider** en el momento en que se creó el objeto **DivisionResult.**
+La [**propiedad Strokes**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) del objeto **DivisionResult** contiene una copia de la colección **Strokes** en el objeto **Divider** en el momento en que se creó el objeto **DivisionResult.**
 
 La [**enumeración InkDivisionType**](/windows/win32/api/msinkaut15/ne-msinkaut15-inkdivisiontype) define los tipos de elementos estructurales que el análisis de diseño reconoce.
 

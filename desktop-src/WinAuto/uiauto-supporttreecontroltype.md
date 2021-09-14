@@ -16,25 +16,25 @@ keywords:
 - compatibilidad con el tipo de control Tree
 - Tree (tipo de control)
 - tipos de control, estructura de árbol para tipo de control Árbol
-- tipos de control, patrones de control para el tipo de control Tree
+- tipos de control, patrones de control para el tipo de control Árbol
 - tipos de control, compatibilidad con tree
 - tipos de control, Árbol
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ea7ac6330428c2e79fca1e9a51d4ca0f7c63e8a7
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172601"
 ---
 # <a name="tree-control-type"></a>Tipo de control Tree
 
 En este tema se proporciona información sobre microsoft Automatización de la interfaz de usuario compatibilidad con el tipo **de** control Tree.
 
-El **tipo de** control Árbol se usa para contenedores cuyo contenido tiene relevancia como jerarquía de nodos, como con la forma en que se muestran los archivos y carpetas en el panel izquierdo de Windows Explorer. Cada nodo tiene el potencial de contener otros nodos, denominados nodos secundarios. Los nodos primarios o los nodos que contienen nodos secundarios se pueden mostrar expandidos o contraídos. El Windows de vista de árbol (identificado por [**WC \_ TREEVIEW)**](/windows/desktop/Controls/common-control-window-classes)es un ejemplo de un control que pertenece al tipo **de** control Tree.
+El **tipo de** control Árbol se usa para contenedores cuyo contenido tiene relevancia como jerarquía de nodos, como con la forma en que se muestran los archivos y carpetas en el panel izquierdo de Windows Explorer. Cada nodo tiene el potencial de contener otros nodos, denominados nodos secundarios. Los nodos primarios o los nodos que contienen nodos secundarios se pueden mostrar expandidos o contraídos. El Windows de vista de árbol (como se identifica mediante [**WC \_ TREEVIEW)**](/windows/desktop/Controls/common-control-window-classes)es un ejemplo de un control que pertenece al tipo **de** control Tree.
 
-En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el tipo **de** control Tree. Los Automatización de la interfaz de usuario se aplican a todos los controles de elementos de árbol en los que la plataforma o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
+En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el **tipo de** control Tree. Los Automatización de la interfaz de usuario se aplican a todos los controles de elementos de árbol en los que la plataforma o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -46,7 +46,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control típico y una vista de contenido del árbol Automatización de la interfaz de usuario que pertenece a los controles de árbol y se describe lo que se puede incluir en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, [vea información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control típico y una vista de contenido del árbol Automatización de la interfaz de usuario que pertenece a los controles de árbol y se describe lo que se puede incluir en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
 
 
 
@@ -73,14 +73,14 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor      | Notas                                                                                                                                                                                                                                                                                      |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value      | Notas                                                                                                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas. | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato del Automatización de la interfaz de usuario árbol.                                                                                                                                                                               |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas. | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel de la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                                                                                                               |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas. | El rectángulo exterior que contiene el control completo.                                                                                                                                                                                                                                   |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas. | Los controles de árbol tienen un punto en el que se puede hacer clic que hace que el árbol o uno de los elementos del contenedor de árbol reciba el foco. Un control de árbol solo puede tener un punto en el que se puede hacer clic si es posible hacer clic en una ubicación del árbol sin hacer que se seleccione un elemento o reciba el foco. |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **Árbol**   | Este valor es el mismo para todos los marcos de trabajo de la interfaz de usuario.                                                                                                                                                                                                                                              |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE       | El control de árbol siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                         |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE       | El control de árbol siempre se incluye en la vista de control del Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                         |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true       | El control de árbol siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                         |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true       | El control de árbol siempre se incluye en la vista de control del Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                         |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas. | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                                                                                                                                                                  |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vea las notas. | Si el control de árbol tiene una etiqueta asociada, esta propiedad devuelve un puntero [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) para esa etiqueta. De lo contrario, la propiedad devuelve una referencia nula.                                                                          |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas. | Cadena localizada correspondiente al tipo **de** control Tree. El valor predeterminado es "tree" para en-US o English (Estados Unidos).                                                                                                                                                             |
@@ -109,7 +109,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 
 ## <a name="required-events"></a>Eventos necesarios
 
-En la tabla siguiente se enumeran Automatización de la interfaz de usuario eventos que deben admitir todos los controles de árbol. Para más información sobre los eventos, vea [UI Automation Events Overview](uiauto-eventsoverview.md).
+En la tabla siguiente se enumeran los eventos Automatización de la interfaz de usuario que deben admitir todos los controles de árbol. Para más información sobre los eventos, vea [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 
@@ -125,7 +125,7 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario even
 | [**UIA \_ Evento de cambio de propiedad ScrollVerticalScrollPercentPropertyId.**](uiauto-control-pattern-propids.md)     | Si el control admite el patrón de control [Scroll,](uiauto-implementingscroll.md) debe admitir este evento.           |
 | [**UIA \_ Evento de cambio de propiedad ScrollVerticallyScrollablePropertyId.**](uiauto-control-pattern-propids.md)       | Si el control admite el patrón de control [Scroll,](uiauto-implementingscroll.md) debe admitir este evento.           |
 | [**UIA \_ Evento de cambio de propiedad ScrollVerticalViewSizePropertyId.**](uiauto-control-pattern-propids.md)               | Si el control admite el patrón de control [Scroll,](uiauto-implementingscroll.md) debe admitir este evento.           |
-| [**Selección de UIA \_ \_ InvalidatedEventId**](uiauto-event-ids.md)                                                            | Si el control admite el patrón de control [Selection,](uiauto-implementingselection.md) debe admitir este evento.     |
+| [**UIA \_ Selection \_ InvalidtedEventId**](uiauto-event-ids.md)                                                            | Si el control admite el patrón de control [Selection,](uiauto-implementingselection.md) debe admitir este evento.     |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                                       |                                                                                                                            |
 
 

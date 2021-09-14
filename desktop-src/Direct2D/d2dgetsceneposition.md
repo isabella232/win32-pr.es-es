@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbcd7a1ee987cf64a92aa76b0f8910bee1c9a15465872bbd3ccfe2502629f700
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ace0ee4d60f8c140825e41ba47de941bca09e67c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119641645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163461"
 ---
 # <a name="d2dgetsceneposition-function"></a>Función D2DGetScenePosition
 
@@ -39,7 +39,7 @@ Esta función no tiene parámetros.
 
 La función devuelve un **valor float4** con el formato SCENE \_ POSITION.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En el ejemplo siguiente se muestra el uso de la función para generar un patrón de disolver.
 
@@ -71,7 +71,7 @@ D2D_PS_ENTRY(BlendDissolve)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

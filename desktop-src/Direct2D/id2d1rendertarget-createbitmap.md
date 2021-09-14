@@ -1,5 +1,5 @@
 ---
-title: Métodos ID2D1RenderTarget CreateBitmap
+title: Métodos CreateBitmap de ID2D1RenderTarget
 description: Crea un mapa de bits de Direct2D.
 ms.assetid: b45d353f-ae33-4110-b7c8-f14661017e0f
 keywords:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: ceac5f0245c1a724518cd0fd0df375a92e4a6b7eb4408551195e82770d86c148
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4576b9111d9180b395527bad8b06ee3f9a8eef2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119587005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162857"
 ---
 # <a name="id2d1rendertargetcreatebitmap-methods"></a>Métodos ID2D1RenderTarget::CreateBitmap
 
@@ -40,14 +40,14 @@ Crea un mapa de bits de Direct2D.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
 | Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

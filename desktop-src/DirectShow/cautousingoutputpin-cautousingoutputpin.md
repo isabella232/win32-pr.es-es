@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c0594eed7f253f7e540f843dfc3c3de6481d7dbede3f25d1534e52181ef0585b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94bafcdcb6e44a07afdccea382d783c20a9ad2ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361431"
 ---
 # <a name="cautousingoutputpincautousingoutputpin-constructor"></a>Constructor CAutoUsingOutputPin.CAutoUsingOutputPin
 
@@ -57,7 +57,7 @@ Puntero a una variable que contiene un **valor HRESULT.** El valor debe ser S \_
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el método vuelve, el valor de *\* phr* indica el éxito o error del método.
 
@@ -72,7 +72,7 @@ Cuando el método vuelve, el valor de *\* phr* indica el éxito o error del mét
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

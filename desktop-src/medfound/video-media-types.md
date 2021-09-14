@@ -4,12 +4,12 @@ ms.assetid: b8cfe0d1-013d-4706-bb76-6d426836ab6a
 title: Tipos de medios de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2363be01030b4d2d7f3ca74a55c24967d9b36ed27910a155c409784b2ad8a7d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89b08aa7117f73139b6f90ea56e4f0f93d42ac0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118237483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363630"
 ---
 # <a name="video-media-types"></a>Tipos de medios de vídeo
 

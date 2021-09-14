@@ -4,12 +4,12 @@ ms.assetid: 982d2110-ff2f-43e0-a931-cb2b8146ad0a
 title: Cómo crear un descodificador mediante una secuencia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a10e7da05e860f3ad17ca1e780ff25ba4ffd991c761b9d22492163b44fb1048a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b0a76badec0e2587f9136cfa6bc3ff041b76592
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117668223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247593"
 ---
 # <a name="how-to-create-a-decoder-using-a-stream"></a>Cómo crear un descodificador mediante una secuencia
 
@@ -19,7 +19,7 @@ Para crear un descodificador de mapa de bits mediante una secuencia
 
 1.  Cargue un archivo de imagen en una secuencia. En este ejemplo, se crea una secuencia para un recurso de aplicación.
 
-    En el archivo de definición de recursos de aplicación (.rc), defina el recurso. En el ejemplo siguiente se define un `Image` recurso denominado `IDR_SAMPLE_IMAGE` .
+    En el archivo de definición de recursos de aplicación (.rc), defina el recurso. En el ejemplo siguiente se define `Image` un recurso denominado `IDR_SAMPLE_IMAGE` .
 
     ```C++
     IDR_SAMPLE_IMAGE IMAGE "turtle.jpg"
@@ -141,7 +141,7 @@ Para crear un descodificador de mapa de bits mediante una secuencia
 
     
 
-    El formato de archivo JPEG solo admite un único marco. Dado que el archivo de este ejemplo es un archivo JPEG, se usa el primer fotograma ( `0` ). Para ver los formatos de imagen que tienen varios fotogramas, consulte Cómo recuperar los fotogramas [de una imagen](-wic-bitmapsources-howto-retrieveimageframes.md) para acceder a cada fotograma de la imagen.
+    El formato de archivo JPEG solo admite un único fotograma. Dado que el archivo de este ejemplo es un archivo JPEG, se usa el primer fotograma ( `0` ). Para ver los formatos de imagen que tienen varios fotogramas, [consulte Recuperación](-wic-bitmapsources-howto-retrieveimageframes.md) de los fotogramas de una imagen para acceder a cada fotograma de la imagen.
 
 8.  Procese el marco de imagen. Para obtener información adicional sobre [**los objetos IWICBitmapSource,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) vea Información general sobre orígenes [de mapa de bits.](-wic-bitmapsources.md)
 

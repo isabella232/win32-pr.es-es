@@ -4,12 +4,12 @@ ms.assetid: dcf6bc5a-1b61-48f7-bc7a-f74ae6e2e57e
 title: GUID de propiedad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f4883ee713122ae36c4ad7e29b86013beb670545ffac31da28bad4da8c2f59c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b2eb089a9b3b5c7863f2d57d9a635b9ab042ae6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119031663"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247730"
 ---
 # <a name="property-guids"></a>GUID de propiedad
 

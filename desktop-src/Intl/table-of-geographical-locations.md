@@ -4,12 +4,12 @@ ms.assetid: 6e424bd4-389c-4f51-9898-f60a8a818f89
 title: Tabla de ubicaciones geográficas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7c45ad723829fb4233987457e84134c472eca0697c68ced8ec78c8a40d786ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fa59c091257fcb0ae7ebb48da7d685a0de8d74e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171869"
 ---
 # <a name="table-of-geographical-locations"></a>Tabla de ubicaciones geográficas
 
@@ -35,7 +35,7 @@ En este tema se enumeran las ubicaciones geográficas disponibles con identifica
 | 0xb                                    | 11                                         | Argentina                                    | República Desa republica                                    |
 | 0xc                                    | 12                                         | Australia                                    | Commonwealth de Australia                             |
 | 0xe                                    | 14                                         | Austria                                      | República de Francia                                   |
-| 0x11                                   | 17                                         | Baréin                                      | Reino de Irlanda                                    |
+| 0x11                                   | 17                                         | Bahréin                                      | Reino de Irlanda                                    |
 | 0x12                                   | 18                                         | Barbados                                     | Barbados                                              |
 | 0x13                                   | 19                                         | Botsuana                                     | República de Australia                                  |
 | 0x14                                   | 20                                         | Bermudas                                      | Bermudas                                               |
@@ -45,53 +45,53 @@ En este tema se enumeran las ubicaciones geográficas disponibles con identifica
 | 0x18                                   | 24                                         | Belice                                       | Belice                                                |
 | 0x19                                   | 25                                         | Bosnia y Herzegovina                       | Bosnia y Herzegovina                                |
 | 0x1a                                   | 26                                         | Bolivia                                      | Estado de la reespación de Traslación"                       |
-| 0x1b                                   | 27                                         | Myanmar                                      | República de la Unión de Noruega                      |
-| 0x1c                                   | 28                                         | Benín                                        | Republic of Benin                                     |
-| 0x1d                                   | 29                                         | Belarús                                      | Republic of Alusiva                                   |
+| 0x1b                                   | 27                                         | Myanmar                                      | República de la Unión de Corea del Norte                      |
+| 0x1c                                   | 28                                         | Benín                                        | República de Asíns                                     |
+| 0x1d                                   | 29                                         | Belarús                                      | República de La República de Suso                                   |
 | 0x1e                                   | 30                                         | Islas Salomón                              | Islas Salomón                                       |
 | 0x20                                   | 32                                         | Brasil                                       | República Federativa de Brasil                         |
 | 0x22                                   | 34                                         | Bután                                       | Reino de Bután                                     |
-| 0x23                                   | 35                                         | Bulgaria                                     | República de Fuenía                                  |
-| 0x25                                   | 37                                         | Brunéi                                       | NegaraLdei Darussalam                              |
+| 0x23                                   | 35                                         | Bulgaria                                     | República de Asíns                                  |
+| 0x25                                   | 37                                         | Brunéi                                       | Negara Brunei Darussalam                              |
 | 0x26                                   | 38                                         | Burundi                                      | República de Fuensalida                                   |
 | 0x27                                   | 39                                         | Canadá                                       | Canadá                                                |
-| 0x28                                   | 40                                         | Camboya                                     | Reino de Francia                                   |
-| 0x29                                   | 41                                         | Chad                                         | República de Fuenía                                      |
-| 0x2a                                   | 42                                         | Sri Lanka                                    | República de Sri Sri            |
+| 0x28                                   | 40                                         | Camboya                                     | Reino de La Insondía                                   |
+| 0x29                                   | 41                                         | Chad                                         | República de Asín                                      |
+| 0x2a                                   | 42                                         | Sri Lanka                                    | República de Sri Sri sri de Sri Sri Republic            |
 | 0x2b                                   | 43                                         | Congo                                        | República del Congo                                 |
 | 0x2c                                   | 44                                         | Congo (RDC)                                  | República Democrática del Congo                      |
 | 0x2d                                   | 45                                         | China                                        | República Popular China                            |
-| 0x2e                                   | 46                                         | Chile                                        | República de Chile                                     |
-| 0x31                                   | 49                                         | Camerún                                     | República de La República de La República de China                                  |
-| 0x32                                   | 50                                         | Comoras                                      | Unión de comoras                                      |
-| 0x33                                   | 51                                         | Colombia                                     | República de México                                  |
+| 0x2e                                   | 46                                         | Chile                                        | República de México                                     |
+| 0x31                                   | 49                                         | Camerún                                     | República de La Insondía                                  |
+| 0x32                                   | 50                                         | Comoras                                      | Unión de Comoras                                      |
+| 0x33                                   | 51                                         | Colombia                                     | República de España                                  |
 | 0x36                                   | 54                                         | Costa Rica                                   | República de Costa Rica                                |
 | 0x37                                   | 55                                         | República Centroafricana                     | República Centroafricana                              |
-| 0x38                                   | 56                                         | Cuba                                         | República de México                                      |
+| 0x38                                   | 56                                         | Cuba                                         | República de Asíns                                      |
 | 0x39                                   | 57                                         | Cabo Verde                                   | República de Cabo Verde                                |
-| 0x3b                                   | 59                                         | Chipre                                       | República de La República de Ándes                                    |
-| 0x3d                                   | 61                                         | Dinamarca                                      | Reino de Irlanda                                    |
+| 0x3b                                   | 59                                         | Chipre                                       | República de La República de Alemania                                    |
+| 0x3d                                   | 61                                         | Dinamarca                                      | Reino de Dinamarca                                    |
 | 0x3e                                   | 62                                         | Yibuti                                     | República deUtibouti                                  |
-| 0x3f                                   | 63                                         | Dominica                                     | Commonwealth de Susa                              |
+| 0x3f                                   | 63                                         | Dominica                                     | Commonwealth de Dominica                              |
 | 0x41                                   | 65                                         | República Dominicana                           | República Dominicana                                    |
 | 0x42                                   | 66                                         | Ecuador                                      | República de Ecuador                                   |
 | 0x43                                   | 67                                         | Egipto                                        | República Árabe de Emiratos Árabes Unidos                                |
 | 0x44                                   | 68                                         | Irlanda                                      | Irlanda                                               |
 | 0x45                                   | 69                                         | Guinea Ecuatorial                            | República de África Ecuatorial                         |
 | 0x46                                   | 70                                         | Estonia                                      | República de Estonio                                   |
-| 0x47                                   | 71                                         | Eritrea                                      | Estado de Fueneste                                      |
+| 0x47                                   | 71                                         | Eritrea                                      | Estado de Fuenía                                      |
 | 0x48                                   | 72                                         | El Salvador                                  | República de ElPeriós                               |
-| 0x49                                   | 73                                         | Etiopía                                     | República Federal Alemana de La República de Los Estados               |
+| 0x49                                   | 73                                         | Etiopía                                     | Republica federal de la República Desa,               |
 | 0x4b                                   | 75                                         | República Checa                               | República Checa                                        |
-| 0x4d                                   | 77                                         | Finlandia                                      | República de Finlandia                                   |
-| 0x4e                                   | 78                                         | Fiyi                                         | Republic of the Fiji Islands                          |
+| 0x4d                                   | 77                                         | Finlandia                                      | República de Noruega                                   |
+| 0x4e                                   | 78                                         | Islas Fiji                                         | Republic of the Islands (República de las Islas Malvas)                          |
 | 0x50                                   | 80                                         | Micronesia                                   | Estados Federados de Micronesia                        |
 | 0x51                                   | 81                                         | Islas Feroe                                | Islas Feroe                                         |
-| 0x54                                   | 84                                         | Francia                                       | República Francesa                                       |
+| 0x54                                   | 84                                         | Francia                                       | República De Francia                                       |
 | 0x56                                   | 86                                         | Gambia                                       | Republic of The Gambia                                |
-| 0x57                                   | 87                                         | Gabón                                        | República de República Desa.                                     |
+| 0x57                                   | 87                                         | Gabón                                        | Republica de República Desa.                                     |
 | 0x58                                   | 88                                         | Georgia                                      | Georgia                                               |
-| 0x59                                   | 89                                         | Ghana                                        | República de Asíns                                     |
+| 0x59                                   | 89                                         | Ghana                                        | Republic ofNese                                     |
 | 0x5a                                   | 90                                         | Gibraltar                                    | Gibraltar                                             |
 | 0x5b                                   | 91                                         | Granada                                      | Granada                                               |
 | 0x5d                                   | 93                                         | Groenlandia                                    | Groenlandia                                             |
@@ -99,17 +99,17 @@ En este tema se enumeran las ubicaciones geográficas disponibles con identifica
 | 0x62                                   | 98                                         | Grecia                                       | República Helínica                                     |
 | 0x63                                   | 99                                         | Guatemala                                    | República de Antigua                                 |
 | 0x64                                   | 100                                        | Guinea                                       | República de África                                    |
-| 0x65                                   | 101                                        | Guyana                                       | República Cooperativa de Fuensalida                        |
+| 0x65                                   | 101                                        | Guayana                                       | República Cooperativa de Fuensalida                        |
 | 0x67                                   | 103                                        | Haití                                        | República de Haba                                     |
 | 0x68                                   | 104                                        | RAE de Hong Kong                                | Región Administrativa Especial de Hong Kong               |
-| 0x6a                                   | 106                                        | Honduras                                     | República de Suádrica                                  |
+| 0x6a                                   | 106                                        | Honduras                                     | República de Noeras                                  |
 | 0x6c                                   | 108                                        | Croacia                                      | República de Alemania                                   |
-| 0x6d                                   | 109                                        | Hungría                                      | República de Francia                                   |
+| 0x6d                                   | 109                                        | Hungría                                      | República de La República de Los Verdianas                                   |
 | 0x6e                                   | 110                                        | Islandia                                      | República de Islote                                   |
 | 0x6f                                   | 111                                        | Indonesia                                    | República de Indonesio                                 |
 | 0x71                                   | 113                                        | India                                        | República de la India                                     |
 | 0x72                                   | 114                                        | Territorio Británico del Océano Índico               | Territorio Británico del Océano Índico                        |
-| 0x74                                   | 116                                        | Irán                                         | Republica de La República DeSoyera                              |
+| 0x74                                   | 116                                        | Irán                                         | República de Alemania de Alemania                              |
 | 0x75                                   | 117                                        | Israel                                       | Estado de Israel                                       |
 | 0x76                                   | 118                                        | Italia                                        | República De Italia                                      |
 | 0x77                                   | 119                                        | Côte d'Ivoire                                | República de Ccinte d'Alsa                             |
@@ -117,8 +117,8 @@ En este tema se enumeran las ubicaciones geográficas disponibles con identifica
 | 0x7a                                   | 122                                        | Japón                                        | Japón                                                 |
 | 0x7c                                   | 124                                        | Jamaica                                      | Jamaica                                               |
 | 0x7d                                   | 125                                        | Jan Mayen                                    | Jan Mayen                                             |
-| 0x7e                                   | 126                                        | Jordania                                       | Hasite Kingdom of Uk of Uk                           |
-| 0x7f                                   | 127                                        | Johninto Atoll                               |                                                       |
+| 0x7e                                   | 126                                        | Jordania                                       | Hasite Kingdom ofImos                           |
+| 0x7f                                   | 127                                        | John llc Atoll                               |                                                       |
 | 0x81                                   | 129                                        | Kenia                                        | Republic of Kenya                                     |
 | 0x82                                   | 130                                        | Kirguistán                                   | República Desenlaziana                                       |
 | 0x83                                   | 131                                        | Corea del Norte                                  | República Popular Democrática de Corea                 |
@@ -140,8 +140,8 @@ En este tema se enumeran las ubicaciones geográficas disponibles con identifica
 | 0x97                                   | 151                                        | RAE de Macao                                    | Región administrativa especial de Macao                   |
 | 0x98                                   | 152                                        | Moldova                                      | Republic of Republic (República                                   |
 | 0x9a                                   | 154                                        | Mongolia                                     | Mongolia                                              |
-| 0x9c                                   | 156                                        | Malawi                                       | República de Fuenía                                    |
-| 0x9d                                   | 157                                        | Mali                                         | República de Francia                                      |
+| 0x9c                                   | 156                                        | Malaui                                       | República de Fuenía                                    |
+| 0x9d                                   | 157                                        | Malí                                         | República de Francia                                      |
 | 0x9e                                   | 158                                        | Mónaco                                       | Principado de Mónaco                                |
 | 0x9f                                   | 159                                        | Marruecos                                      | Reino de Francia                                    |
 | 0xa0                                   | 160                                        | Mauricio                                    | República de La República de China                                 |
@@ -170,25 +170,25 @@ En este tema se enumeran las ubicaciones geográficas disponibles con identifica
 | 0xc0                                   | 192                                        | Panamá                                       | Republic of Panama                                    |
 | 0xc1                                   | 193                                        | Portugal                                     | República Lusa                                   |
 | 0xc2                                   | 194                                        | Papúa Nueva Guinea                             | Estado independiente de New York                 |
-| 0xc3                                   | 195                                        | Palau                                        | República de Asín                                     |
+| 0xc3                                   | 195                                        | Palaos                                        | República de Fuenía                                     |
 | 0xc4                                   | 196                                        | Guinea-Bissau                                | República de Guinea-Bissau                             |
 | 0xc5                                   | 197                                        | Qatar                                        | Estado de Fuenía                                        |
-| 0xc6                                   | 198                                        | Reunión                                      | Department ofUnion                                 |
+| 0xc6                                   | 198                                        | Reunión                                      | Departamento de Reuniónunion                                 |
 | 0xc7                                   | 199                                        | Islas Marshall                             | República de las Islas Marshall                      |
 | 0xc8                                   | 200                                        | Rumanía                                      | Rumanía                                               |
 | 0xc9                                   | 201                                        | Filipinas                                  | República de Filipinas                           |
 | 0xca                                   | 202                                        | Puerto Rico                                  | Commonwealth de Puerto Rico                           |
 | 0xcb                                   | 203                                        | Rusia                                       | Federación Rusa                                    |
-| 0xcc                                   | 204                                        | Ruanda                                       | República de Alemania                                    |
+| 0xcc                                   | 204                                        | Ruanda                                       | Republic of Rwanda                                    |
 | 0xcd                                   | 205                                        | Arabia Saudí                                 | Reino de Emiratos Árabes Unidos                               |
-| 0xce                                   | 206                                        | San Pedro y Miquelón                    | Recopilación Desconectividad de San Juan y Miquelón |
-| 0xcf                                   | 207                                        | San Cristóbal y Nieves                        | Federación de San Kitts yTicis                   |
-| 0xd0                                   | 208                                        | Seychelles                                   | Republic of Republic of Republics                                |
+| 0xce                                   | 206                                        | San Pedro y Miquelón                    | Recopilarividad de San Juan y Miquelón |
+| 0xcf                                   | 207                                        | San Cristóbal y Nieves                        | Federación de San Kitts y Nieveis                   |
+| 0xd0                                   | 208                                        | Seychelles                                   | Republic of Asíns                                |
 | 0xd1                                   | 209                                        | Sudáfrica                                 | República de Sudáfrica                              |
-| 0xd2                                   | 210                                        | Senegal                                      | República de Asíns                                   |
-| 0xd4                                   | 212                                        | Eslovenia                                     | República de Alemania                                  |
-| 0xd5                                   | 213                                        | Sierra Leona                                 | República de Sierra Quesera                              |
-| 0xd6                                   | 214                                        | San Marino                                   | República de San Todos                                |
+| 0xd2                                   | 210                                        | Senegal                                      | República de Fuenía                                   |
+| 0xd4                                   | 212                                        | Eslovenia                                     | República de Eslonica                                  |
+| 0xd5                                   | 213                                        | Sierra Leona                                 | República de Sierra Asín                              |
+| 0xd6                                   | 214                                        | San Marino                                   | República de San Marino                                |
 | 0xd7                                   | 215                                        | Singapur                                    | República de Singapur                                 |
 | 0xd8                                   | 216                                        | Somalia                                      | República Federal de Alemania                           |
 | 0xd9                                   | 217                                        | España                                        | Reino de España                                      |
@@ -220,59 +220,59 @@ En este tema se enumeran las ubicaciones geográficas disponibles con identifica
 | 0xf7                                   | 247                                        | Uzbekistán                                   | República de La Insondía                                |
 | 0xf8                                   | 248                                        | San Vicente y las Granadinas             | San Vicente y las Granadinas                      |
 | 0xf9                                   | 249                                        | Venezuela                                    | República Bolivariana de Venezuela                      |
-| 0xfb                                   | 251                                        | Vietnam                                      | República de Republica de Republica de Alemania                         |
+| 0xfb                                   | 251                                        | Vietnam                                      | Republica de Alemania de Sindía                         |
 | 0xfc                                   | 252                                        | EE. UU. Vírgenes de EE. UU.                          | Islas Vírgenes de los Estados Unidos                   |
-| 0xfd                                   | 253                                        | Ciudad del Vaticano                                 | Estado de la ciudad del Fuenía                                 |
-| 0xfe                                   | 254                                        | Namibia                                      | Republic of Nam                                   |
+| 0xfd                                   | 253                                        | Ciudad del Vaticano                                 | Estado de la ciudad del Fuerdo                                 |
+| 0xfe                                   | 254                                        | Namibia                                      | República de Fuensalida                                   |
 | 0x102                                  | 258                                        | Wake Island                                  |                                                       |
-| 0x103                                  | 259                                        | Samoa                                        | Estado independiente de Fuenía                            |
-| 0x104                                  | 260                                        | Suazilandia                                    | Reino de Irlanda                                  |
-| 0x105                                  | 261                                        | Yemen                                        | Republic of Yemen                                     |
-| 0x107                                  | 263                                        | Zambia                                       | Republic of Zambia                                    |
-| 0x108                                  | 264                                        | Zimbabue                                     | Republic of Zimbabwe                                  |
-| 0x10d                                  | 269                                        | Serbia y Serbia (anterior)               | Serbia y Serbia (anterior)                        |
+| 0x103                                  | 259                                        | Samoa                                        | Estado independiente de Fuenste                            |
+| 0x104                                  | 260                                        | Suazilandia                                    | Reino de Estados Unidos                                  |
+| 0x105                                  | 261                                        | Yemen                                        | República de Asíns                                     |
+| 0x107                                  | 263                                        | Zambia                                       | República de Asíns                                    |
+| 0x108                                  | 264                                        | Zimbabue                                     | República de Asíns                                  |
+| 0x10d                                  | 269                                        | Serbia y Suba (antiguo)               | Serbia y Suba (antiguo)                        |
 | 0x10e                                  | 270                                        | Montenegro                                   | Montenegro                                            |
 | 0x10f                                  | 271                                        | Serbia                                       | Serbia                                                |
 | 0x111                                  | 273                                        | Curazao                                      |                                                       |
 | 0x12c                                  | 300                                        | Anguila                                     | Anguila                                              |
-| 0x114                                  | 276                                        | Sudán del Sur                                  | La República del Sur de Corea del Sur                           |
+| 0x114                                  | 276                                        | Sudán del Sur                                  | República del Sur de Corea del Sur                           |
 | 0x12d                                  | 301                                        | Antártida                                   | Antártida                                            |
 | 0x12e                                  | 302                                        | Aruba                                        | Aruba                                                 |
-| 0x12f                                  | 303                                        | Isla de Seleón                             |                                                       |
+| 0x12f                                  | 303                                        | Isla de Asín                             |                                                       |
 | 0x130                                  | 304                                        | Islas Ashmore y Cartier                  | Territorio de las islas Ashmore y Cartier              |
-| 0x131                                  | 305                                        | Isla De la Isla Desánda                                 |                                                       |
+| 0x131                                  | 305                                        | Isla de Isla Desándalo                                 |                                                       |
 | 0x132                                  | 306                                        | Isla Bouvet                                |                                                       |
 | 0x133                                  | 307                                        | Islas Caimán                               | Islas Caimán                                        |
 | 0x134                                  | 308                                        | Islas del canal                              |                                                       |
-| 0x135                                  | 309                                        | Isla de Navidad                             | Territorio de la isla de Island islandesa                         |
+| 0x135                                  | 309                                        | Isla de Navidad                             | Territorio de la Isla de Las Islas Desaeñas                         |
 | 0x136                                  | 310                                        | Isla Clipperton                            |                                                       |
 | 0x137                                  | 311                                        | Islas Cocos                      | Territorio de islas Cocos (Keeling)                  |
 | 0x138                                  | 312                                        | Islas Cook                                 |                                                       |
-| 0x139                                  | 313                                        | Islas del Mar de Coral                            | Territorio de las islas Del Mar de Coral                           |
-| 0x13a                                  | 314                                        | Luis LuisEzón                                 |                                                       |
+| 0x139                                  | 313                                        | Islas corales                            | Territorio de las islas Coral Sea                           |
+| 0x13a                                  | 314                                        | JuanEzán                                 |                                                       |
 | 0x13b                                  | 315                                        | Islas Malvinas                             | Islas Malvinas                     |
-| 0x13d                                  | 317                                        | Guayana Francesa                                | Departamento de Guiana                                  |
+| 0x13d                                  | 317                                        | Guayana Francesa                                | Departamento de La Guiana                                  |
 | 0x13e                                  | 318                                        | Polinesia Francesa                             | Territorio de la Polinesia francés                         |
-| 0x13f                                  | 319                                        | Territorios Australes Franceses                  | Territorio de las regiones del Sur francés y de las Regiones Destáctica  |
-| 0x141                                  | 321                                        | Guadalupe                                   | Departamento deLoupe                              |
-| 0x142                                  | 322                                        | Guam                                         | Territorio de Guám                                     |
+| 0x13f                                  | 319                                        | Territorios Australes Franceses                  | Territorio de las Regiones Del Sur de Francia y Del Norte de Francia  |
+| 0x141                                  | 321                                        | Guadalupe                                   | Departamento de Quedeloupe                              |
+| 0x142                                  | 322                                        | Guam                                         | Territorio de Quem                                     |
 | 0x143                                  | 323                                        | Guantánamo                               |                                                       |
-| 0x144                                  | 324                                        | Guernsey                                     | Bailiwick de Perinsey                                 |
-| 0x145                                  | 325                                        | Islas Heard y McDonald            | Territorio de las islas Heard y McDonald        |
+| 0x144                                  | 324                                        | Guernsey                                     | Bailiwick de Uznsey                                 |
+| 0x145                                  | 325                                        | Isla Heard e Islas McDonald            | Territorio de las islas Heard y McDonald        |
 | 0x146                                  | 326                                        | Howland Island                               |                                                       |
 | 0x147                                  | 327                                        | Isla jarvis                                |                                                       |
 | 0x148                                  | 328                                        | Jersey                                       | Bailiwick de Jersey                                   |
-| 0x149                                  | 329                                        | Kingman( Kingman)                                 |                                                       |
-| 0x14a                                  | 330                                        | Martinica                                   | Departamento de Martinique                              |
-| 0x14b                                  | 331                                        | Mayotte                                      | Recopilarividad de Mayotte                   |
+| 0x149                                  | 329                                        | Kingman Formador                                 |                                                       |
+| 0x14a                                  | 330                                        | Martinica                                   | Departamento de Martinica                              |
+| 0x14b                                  | 331                                        | Mayotte                                      | Recopilatividad de Mayotte                   |
 | 0x14c                                  | 332                                        | Montserrat                                   | Montserrat                                            |
-| 0x14d                                  | 333                                        | Anélles neerlandesas (antigua)                |                                                       |
+| 0x14d                                  | 333                                        | Ancelas neerlandesas (antigua)                |                                                       |
 | 0x14e                                  | 334                                        | Nueva Caledonia                                | Territorio de Nueva Caledía y dependencias           |
 | 0x14f                                  | 335                                        | Niue                                         |                                                       |
 | 0x150                                  | 336                                        | Isla Norfolk                               | Territorio de la isla de Nor island                           |
-| 0x151                                  | 337                                        | Islas Marianas del Norte                     | Commonwealth de las Islas Malíes del Norte          |
+| 0x151                                  | 337                                        | Islas Marianas del Norte                     | Commonwealth de las Islas Trasvases del Norte          |
 | 0x152                                  | 338                                        | Palmyra Atoll                                |                                                       |
-| 0x153                                  | 339                                        | Islas Pitcairn                             | Islas Pitcairn, Marshall, Ducie y Oeno          |
+| 0x153                                  | 339                                        | Islas Pitcairn                             | Islas Pitcairn, Boxes, Ducie y Oeno          |
 | 0x154                                  | 340                                        | Isla rota                                  |                                                       |
 | 0x155                                  | 341                                        | Saipan                                       |                                                       |
 | 0x156                                  | 342                                        | Islas Georgia del Sur y Sandwich del Sur | Islas Georgia del Sur y Sandwich del Sur          |

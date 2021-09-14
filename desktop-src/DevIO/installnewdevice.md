@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - NewDev.dll
-ms.openlocfilehash: cb12e87ceee4812ffc8c0e39d961ce631e26c4ab8ca7ae555785c8ad8381ca01
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76a458ae071c61b9f1030aad535c4d4c6a31078c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118405317"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164370"
 ---
 # <a name="installnewdevice-function"></a>Función InstallNewDevice
 
@@ -76,7 +76,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Debe usar la
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                        |

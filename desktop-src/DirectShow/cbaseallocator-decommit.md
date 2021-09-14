@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 614986a912f08d918d4fbbaf6b3eeeb0d3b2c3eabc47748351934a08b8280cca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 613af805f1c04a7bf375755ff8f3adba7b70be18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017553"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172017"
 ---
 # <a name="cbaseallocatordecommit-method"></a>CBaseAllocator.Decommit (método)
 
@@ -44,11 +44,11 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de llamar a este método, se producirá un error en las llamadas al método [**CBaseAllocator::GetBuffer.**](cbaseallocator-getbuffer.md) A medida que se liberan los ejemplos, se devuelven a la lista gratuita. Cuando se devuelve el último ejemplo, el asignador llama al método [**CBaseAllocator::Free,**](cbaseallocator-free.md) que libera la memoria asignada. (En la clase base, **Free es** un método virtual puro).
 
-Además, este método libera todos los subprocesos que están bloqueados en **las llamadas a GetBuffer.** Se producirá un error **en las llamadas a GetBuffer.**
+Además, este método libera los subprocesos que están bloqueados en **las llamadas a GetBuffer.** Se producirá un error **en las llamadas a GetBuffer.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Además, este método libera todos los subprocesos que están bloqueados en **la
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

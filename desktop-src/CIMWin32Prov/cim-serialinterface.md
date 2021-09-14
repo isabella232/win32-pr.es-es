@@ -24,23 +24,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6c6b704c8af9e6907150ed4d09caacaafb0229902005fdbc63453dc315a3401a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1df787ff64798f412035a72e6db6d7b01b4b9b0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172029"
 ---
 # <a name="cim_serialinterface-class"></a>Cim \_ SerialInterface (clase)
 
 La **clase CIM \_ SerialInterface** representa una relación [**\_ ControlledBy**](cim-controlledby.md) de CIM que indica a qué dispositivos se accede a través del controlador serie y las características del acceso.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ class CIM_SerialInterface : CIM_ControlledBy
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase CIM \_ SerialInterface** tiene estos tipos de miembros:
 
@@ -123,7 +123,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Cim [**\_ SerialController**](cim-serialcontroller.md) que describe el controlador serie.
+Un [**\_ serialController cim**](cim-serialcontroller.md) que describe el controlador serie.
 
 </dd> <dt>
 
@@ -331,7 +331,7 @@ Información sobre la configuración de paridad para los datos transmitidos.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase CIM \_ SerialInterface** se deriva de [**CIM \_ ControlledBy**](cim-controlledby.md).
 
@@ -353,7 +353,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 9be9fb342f45bc42edff59edad401897f67846363afcf26cc76dbc3e44b1aa8d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7ef4c6148ae2dfc12225948890ce332ba2310b25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119214466"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162969"
 ---
 # <a name="id2d1geometrygetbounds-methods"></a>Métodos ID2D1Geometry::GetBounds
 
@@ -36,7 +36,7 @@ Recupera los límites de la geometría.
 
 ## <a name="examples"></a>Ejemplos
 
-En el código siguiente se muestra cómo usar **GetBounds** para recuperar los límites de la geometría.
+El código siguiente muestra cómo usar **GetBounds** para recuperar los límites de la geometría.
 
 
 ```C++
@@ -344,7 +344,7 @@ if (SUCCEEDED(hr))
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
