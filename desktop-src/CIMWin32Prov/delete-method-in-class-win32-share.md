@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c1331ce9dfa3309c1cfbd0ba0ddc3b4a0c96d431d524d8f0e74f7937c8cdb332
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2048ba9dac91b139888f27c037d64849de8a4ee8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061541"
 ---
 # <a name="delete-method-of-the-win32_share-class"></a>Método Delete de la clase Win32 \_ Share
 
-El **método de** clase WMI [Delete](/windows/desktop/WmiSdk/retrieving-a-class) elimina un nombre de recurso compartido de la lista de recursos compartidos de un servidor y desconecta las conexiones al recurso compartido.
+El **método eliminar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) elimina un nombre de recurso compartido de la lista de recursos compartidos de un servidor, desconectando las conexiones al recurso compartido.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro va
 **Ruta de acceso redirigida** (23)
 </dt> <dt>
 
-**Dispositivo o directorio desconocidos** (24)
+**Dispositivo o directorio desconocido** (24)
 </dt> <dt>
 
 **Nombre de red no encontrado** (25)
@@ -79,9 +79,9 @@ Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro va
 **Otros** (26 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **método Delete** es un método de objeto y se usa en una instancia de una clase .
+El **método Delete** es un método de objeto y se usa en una instancia de una clase.
 
 Solo los miembros del grupo local Administradores u Operadores de cuenta o aquellos con pertenencia a grupos de operadores de comunicación, impresión o servidor pueden ejecutar correctamente el método . El operador Print solo puede eliminar colas de impresora. El operador Communication solo puede eliminar colas de dispositivos de comunicación.
 
@@ -111,7 +111,7 @@ Next
 
 
 
-El siguiente ejemplo de código de PowerShell elimina recursos compartidos en blanco.
+El siguiente ejemplo de código de PowerShell elimina los recursos compartidos en blanco.
 
 
 ```PowerShell
@@ -139,7 +139,7 @@ Foreach ($Share in $Shares) {
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

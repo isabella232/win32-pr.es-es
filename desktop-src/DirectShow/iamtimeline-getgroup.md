@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 71bf4aa0dd5d6f338da43d71384ead024fe821d3a639b0021299f6f6deb14be8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1241a125698cf78c1138d9264ecd8c73ff78056c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119685195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160170"
 ---
 # <a name="iamtimelinegetgroup-method"></a>IAMTimeline::GetGroup (método)
 
@@ -64,7 +64,7 @@ Recibe un puntero a la interfaz [**IAMTimelineObj del**](iamtimelineobj.md) grup
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el método se realiza correctamente, la **interfaz IAMTimelineObj** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberar la interfaz cuando haya terminado de usarlo.
 
@@ -89,7 +89,7 @@ Si el método se realiza correctamente, la **interfaz IAMTimelineObj** que devue
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

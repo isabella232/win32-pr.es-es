@@ -4,16 +4,16 @@ description: Movimiento del mouse
 ms.assetid: 54366E9B-470A-4155-8A5F-425BAC8AC1A5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f15c5d6be5e7b018bc7e9c5d07f50871018ee20730d0a9b8a005294eded044a9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 14176310882651cdeb2939d0db55368ff133ea11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119979824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159953"
 ---
 # <a name="mouse-movement"></a>Movimiento del mouse
 
-Cuando se mueve el mouse, Windows un [**mensaje \_ WM MOUSEMOVE.**](/windows/desktop/inputdev/wm-mousemove) De forma predeterminada, **WM \_ MOUSEMOVE** va a la ventana que contiene el cursor. Puede invalidar este comportamiento *capturando el* mouse, que se describe en la sección siguiente.
+Cuando se mueve el mouse, Windows un [**mensaje WM \_ MOUSEMOVE.**](/windows/desktop/inputdev/wm-mousemove) De forma predeterminada, **WM \_ MOUSEMOVE** va a la ventana que contiene el cursor. Puede invalidar este comportamiento *capturando el* mouse, que se describe en la sección siguiente.
 
 El [**mensaje \_ WM MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) contiene los mismos parámetros que los mensajes para los clics del mouse. Los 16 bits más bajos de *lParam* contienen la coordenada x y los 16 bits siguientes contienen la coordenada y. Use las macros [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) [**y GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para desempaquetar las coordenadas *de lParam.* El *parámetro wParam* contiene un **OR** bit a bit de marcas, que indica el estado de los demás botones del mouse más las teclas MAYÚS y CTRL. El código siguiente obtiene las coordenadas del mouse *de lParam*.
 
@@ -31,7 +31,7 @@ Una ventana también puede recibir un [**mensaje \_ MOUSEMOVE**](/windows/deskto
 
 ## <a name="capturing-mouse-movement-outside-the-window"></a>Captura del movimiento del mouse fuera de la ventana
 
-De forma predeterminada, una ventana deja de recibir [**mensajes \_ WM MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) si el mouse se mueve más allá del borde del área cliente. Pero para algunas operaciones, es posible que tenga que realizar un seguimiento de la posición del mouse más allá de este punto. Por ejemplo, un programa de dibujo podría permitir al usuario arrastrar el rectángulo de selección más allá del borde de la ventana, como se muestra en el diagrama siguiente.
+De forma predeterminada, una ventana deja de recibir [**mensajes \_ WM MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) si el mouse se mueve más allá del borde del área cliente. Sin embargo, para algunas operaciones, es posible que tenga que realizar un seguimiento de la posición del mouse más allá de este punto. Por ejemplo, un programa de dibujo podría permitir al usuario arrastrar el rectángulo de selección más allá del borde de la ventana, como se muestra en el diagrama siguiente.
 
 ![ilustración de la captura del mouse.](images/input01.png)
 
@@ -134,7 +134,7 @@ Llame `DPIScale::Initialize` a en el controlador WM [**\_ CREATE**](/windows/des
 
 
 
-Para obtener las coordenadas del mouse en DIP de los mensajes del mouse, haga lo siguiente:
+Para obtener las coordenadas del mouse en DIP a partir de los mensajes del mouse, haga lo siguiente:
 
 1.  Use las macros [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) [**y GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para obtener las coordenadas de píxel. Estas macros se definen en WindowsX.h, por lo que no olvide incluir ese encabezado en el proyecto.
 2.  Llame `DPIScale::PixelsToDipsX` a y para convertir `DPIScale::PixelsToDipsY` píxeles en DIP.
@@ -167,7 +167,7 @@ Para el mensaje de abajo del botón izquierdo, haga lo siguiente:
 1.  Llame [**a SetCapture**](/windows/desktop/api/winuser/nf-winuser-setcapture) para empezar a capturar el mouse.
 2.  Almacene la posición del clic del mouse en la variable *ptMouse.* Esta posición define la esquina superior izquierda del cuadro de límite para la elipse.
 3.  Restablezca la estructura de puntos suspensivos.
-4.  Llame [**a InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Esta función fuerza a que se vuelva a dibujar la ventana.
+4.  Llame [**a InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Esta función obliga a que se vuelva a dibujar la ventana.
 
 
 ```C++

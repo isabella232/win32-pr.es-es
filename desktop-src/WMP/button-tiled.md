@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 32f4f1dda0b5a79749cfbffaa30f29522ff318a763ad50fcd005479afa9c8997
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c6c1316f10ce9ae3135f4ac35ab214ecdd1096d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118581379"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889393"
 ---
 # <a name="buttontiled"></a>BUTTON.tiled
 
@@ -33,7 +33,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                       |
+| Value | Descripción                       |
 |-------|-----------------------------------|
 | true  | La imagen se mostrará en mosaico.              |
 | false | Predeterminada. La imagen no se mostrará en mosaico. |
@@ -42,7 +42,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la imagen es menor que la región real del control, el rellenado de la imagen la repetirá hasta que rellene toda la región. Si no se especifica una imagen o no se puede recuperar, **el mosaico** se establecerá en false.
 
@@ -50,7 +50,7 @@ Si la imagen es menor que la región real del control, el rellenado de la imagen
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

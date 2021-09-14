@@ -1,5 +1,5 @@
 ---
-description: El método GetBitmapBits recupera un fotograma de vídeo en el momento del medio especificado. El marco devuelto siempre está en formato RGB de 24 bits.
+description: El método GetBitmapBits recupera un fotograma de vídeo en el momento multimedia especificado. El marco devuelto siempre está en formato RGB de 24 bits.
 ms.assetid: b51df9d1-9c54-41bd-b0f8-ec290525deca
 title: Método IMediaDet::GetBitmapBits (Qedit.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 5c4a7332580d4e9a9fece5a66d390753566fbf54c615699663256c463cb401b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95aea5281f77b32868e0f0856bc63063e4f08639
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119792005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886881"
 ---
 # <a name="imediadetgetbitmapbits-method"></a>IMediaDet::GetBitmapBits (método)
 
@@ -28,7 +28,7 @@ ms.locfileid: "119792005"
 
  
 
-El `GetBitmapBits` método recupera un fotograma de vídeo en el momento del medio especificado. El marco devuelto siempre está en formato RGB de 24 bits.
+El `GetBitmapBits` método recupera un fotograma de vídeo en el momento multimedia especificado. El marco devuelto siempre está en formato RGB de 24 bits.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -93,7 +93,7 @@ Devuelve un **valor HRESULT.** Entre los valores posibles figuran los siguientes
 | Código devuelto                                                                                             | Descripción                                                                                       |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                    | Correcto.<br/>                                                                               |
-| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl>           | No se pudo agregar el [**filtro Sample Grabber**](sample-grabber-filter.md) al gráfico.<br/> |
+| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl>           | No se pudo agregar [**el filtro Sample Grabber**](sample-grabber-filter.md) al gráfico.<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>           | Memoria insuficiente.<br/>                                                                   |
 | <dl> <dt>**PUNTERO \_ E**</dt> </dl>               | **Error de** puntero NULL.<br/>                                                                |
 | <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>            | error inesperado.<br/>                                                                      |
@@ -103,11 +103,11 @@ Devuelve un **valor HRESULT.** Entre los valores posibles figuran los siguientes
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Antes de llamar a este método, establezca el nombre de archivo y la secuencia llamando a [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream**](imediadet-put-currentstream.md).
+Antes de llamar a este método, establezca el nombre de archivo y la secuencia mediante una llamada a [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream**](imediadet-put-currentstream.md).
 
-Para determinar el tamaño del búfer necesario, llame a este método con *pBuffer* igual a **NULL.** El tamaño se devuelve en la variable a la que apunta *pBufferSize*. A continuación, cree el búfer y vuelva a llamar al método , con *pBuffer* igual a la dirección del búfer. Cuando el método devuelve un resultado, el búfer contiene una **estructura BITMAPINFOHEADER** seguida del mapa de bits. El mapa de bits se escala a las dimensiones especificadas en los *parámetros Width* *y Height.*
+Para determinar el tamaño del búfer necesario, llame a este método con *pBuffer* igual a **NULL.** El tamaño se devuelve en la variable a la que apunta *pBufferSize*. A continuación, cree el búfer y llame al método de nuevo, *con pBuffer* igual a la dirección del búfer. Cuando el método vuelve, el búfer contiene una **estructura BITMAPINFOHEADER** seguida del mapa de bits. El mapa de bits se escala a las dimensiones especificadas en los *parámetros Width* *y Height.*
 
 Este método coloca el detector de medios en modo de captura de mapa de bits. Una vez que se ha llamado a este método, los distintos métodos de información de secuencias de **IMediaDet** no funcionan, a menos que cree una nueva instancia del detector de medios.
 
@@ -117,7 +117,7 @@ Este método coloca el detector de medios en modo de captura de mapa de bits. Un
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -177,14 +177,14 @@ if (SUCCEEDED(hr))
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IMediaDet (interfaz)**](imediadet.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

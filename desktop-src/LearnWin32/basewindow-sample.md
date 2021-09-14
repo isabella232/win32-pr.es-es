@@ -4,12 +4,12 @@ description: Esta aplicación de ejemplo muestra cómo pasar datos de estado de 
 ms.assetid: 5be8a5ef-8a63-43e7-b2a5-a4fff63c7ce3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 980c89a3793fed27694c3e439afbe9d6106dc4e14a945bee6af1bd01712bd2af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 304a29b3f194e9ec8f530d1a5bb360d2d98add51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118388458"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160006"
 ---
 # <a name="basewindow-sample"></a>Ejemplo de BaseWindow
 

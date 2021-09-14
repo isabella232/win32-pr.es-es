@@ -56,12 +56,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 515651c4e9d82bc88053187ae8ed3517662fb53a81080e54cd54097b7243a225
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c7e7d3b754a0399acb152dba043da269f67a06f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061423"
 ---
 # <a name="win32_tapedrive-class"></a>Clase TapeDrive de Win32 \_
 
@@ -118,7 +118,7 @@ class Win32_TapeDrive : CIM_TapeDrive
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TapeDrive de Win32** tiene estos tipos de miembros:
 
@@ -527,7 +527,7 @@ Si **es TRUE,** la compresión de datos de hardware está habilitada.
 
 </dt> <dd>
 
-FALSE
+false
 
 </dd> <dt>
 
@@ -538,7 +538,7 @@ FALSE
 
 </dt> <dd>
 
-TRUE
+true
 
 </dd> </dl>
 
@@ -932,12 +932,12 @@ El dispositivo está deshabilitado. El firmware del dispositivo no proporcionaba
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que usa otro dispositivo.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que otro dispositivo está usando.** (30)
 
 
 </dt> <dd>
 
-El dispositivo usa un recurso IRQ que usa otro dispositivo.
+El dispositivo usa un recurso IRQ que está usando otro dispositivo.
 
 </dd> <dt>
 
@@ -968,7 +968,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Si **es TRUE,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -981,12 +981,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [ **Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1006,7 +1006,7 @@ Tamaño de bloque predeterminado, en bytes, para este dispositivo.
 
 Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](cim-mediaaccessdevice.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> <dt>
 
@@ -1042,7 +1042,7 @@ Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/s
 
 Identificador único de la unidad de cinta con otros dispositivos del sistema.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1090,7 +1090,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Advertencia de tamaño de zona para el final de la cinta (EOT).
+Tamaño de zona para la advertencia del final de la cinta (EOT).
 
 Esta propiedad se hereda de [**CIM \_ TapeDrive.**](cim-tapedrive.md)
 
@@ -1105,9 +1105,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** ahora se borra el error **notificado en LastErrorCode.**
+Si **es TRUE,** ahora se borra el error notificado en **LastErrorCode.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1122,7 +1122,7 @@ Tipo de acceso: solo lectura
 
 Cadena de forma libre que proporciona más información sobre el error registrado en **LastErrorCode** e información sobre las acciones correctivas que se pueden realizar.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1153,7 +1153,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tape Backup Structures TAPE GET DRIVE \| [**\_ \_ \_ PARAMETERS**](/windows/win32/api/winnt/ns-winnt-tape_get_drive_parameters) \| FeaturesHigh")
 </dt> </dl>
 
-Orden general de 32 bits de la marca de características del dispositivo.
+Orden superior a 32 bits de la marca de características del dispositivo.
 
 </dd> <dt>
 
@@ -1220,7 +1220,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1236,7 +1236,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry")
 </dt> </dl>
 
-Fabricante de la Windows CD-ROM.
+Fabricante de la unidad Windows CD-ROM.
 
 Ejemplo: "PLEXTOR"
 
@@ -1254,11 +1254,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Tamaño máximo del bloque, en bytes, para los medios a los que accede este dispositivo.
+Tamaño máximo de bloque, en bytes, para los medios a los que accede este dispositivo.
 
 Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](cim-mediaaccessdevice.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> <dt>
 
@@ -1274,11 +1274,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| Sequential Access Devices \| 001.2"), [**Units**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Tamaño máximo, en kilobytes, de los medios admitidos por este dispositivo.
+Tamaño máximo, en kilobytes, de los medios compatibles con este dispositivo.
 
 Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](cim-mediaaccessdevice.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> <dt>
 
@@ -1309,7 +1309,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Unidad de cinta MediaType de Win32 \_ \| TapeDrive") \|
 </dt> </dl>
 
-Tipo de medio utilizado por (o al que accede) este dispositivo. En este caso, se establece en "Unidad de cinta".
+Tipo de medio usado por este dispositivo (o al que accede este dispositivo). En este caso, se establece en "Unidad de cinta".
 
 </dd> <dt>
 
@@ -1329,7 +1329,7 @@ Tamaño mínimo del bloque, en bytes, para los medios a los que accede este disp
 
 Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](cim-mediaaccessdevice.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> <dt>
 
@@ -1342,7 +1342,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -1413,7 +1413,7 @@ Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 
 Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* "PNP030b"
 
@@ -1430,7 +1430,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de **\_ CIM LogicalDevice.**
+Esta propiedad se hereda de **CIM \_ LogicalDevice**.
 
 <dt>
 
@@ -1510,9 +1510,9 @@ El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) 
 
 </dt> <dd>
 
-Timed Power-On compatible
+Se admiten Power-On tiempo
 
-El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y la hora establecida en una fecha y hora específicas, o un intervalo, para la encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y el tiempo establecido en una fecha y hora específicas, o un intervalo, para el encendido.
 
 </dd> </dl>
 
@@ -1529,7 +1529,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar mediante energía (se puede poner en modo de suspensión, y así sucesivamente). La propiedad no indica que las características de administración de energía están habilitadas actualmente, solo que el dispositivo lógico es capaz de la administración de energía.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1545,7 +1545,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tape Backup Structures TAPE GET DRIVE \| [**\_ \_ \_ PARAMETERS**](/windows/win32/api/winnt/ns-winnt-tape_get_drive_parameters) \| ReportSetmarks")
 </dt> </dl>
 
-Si **es TRUE,** el informe de marca de conjunto está habilitado. Los informes setmark usan un elemento registrado especializado que no contiene datos de usuario. Este elemento registrado se usa para proporcionar un esquema de segmentación que es jerárquicamente superior a las marcas de archivo. Las marcas de configuración proporcionan un posicionamiento más rápido en cintas de alta capacidad.
+Si **es TRUE,** los informes de marca de conjunto están habilitados. Los informes setmark usan un elemento registrado especializado que no contiene datos de usuario. Este elemento registrado se usa para proporcionar un esquema de segmentación que es jerárquicamente superior a las marcas de archivo. Las marcas de configuración proporcionan un posicionamiento más rápido en cintas de alta capacidad.
 
 <dt>
 
@@ -1556,7 +1556,7 @@ Si **es TRUE,** el informe de marca de conjunto está habilitado. Los informes s
 
 </dt> <dd>
 
-FALSE
+false
 
 </dd> <dt>
 
@@ -1567,7 +1567,7 @@ FALSE
 
 </dt> <dd>
 
-TRUE
+true
 
 </dd> </dl>
 
@@ -1585,7 +1585,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -1616,7 +1616,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -1630,14 +1630,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1688,12 +1688,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Estado operativo DMTF \| \| 003.3")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| Operational State \| 003.3")
 </dt> </dl>
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1743,12 +1743,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ System**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Valor de la propiedad **CreationClassName del** equipo de ámbito.
+Valor de la propiedad **CreationClassName** del equipo de ámbito.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1761,16 +1761,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ System**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ TapeDrive de Win32** se deriva de [**CIM \_ TapeDrive.**](cim-tapedrive.md)
 
@@ -1788,7 +1788,7 @@ La **clase \_ TapeDrive de Win32** se deriva de [**CIM \_ TapeDrive.**](cim-tape
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: af222b82792089eb250ede73b9fc1b3d17a5d5aefc83f219281dde6e0ff86ad2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9d5670d378c8ff1a0ec6c1f1b62c3bf7bf310fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118495595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964559"
 ---
 # <a name="esentindexhasprimaryexception-class"></a>Clase EsentIndexHasPrimaryException
 
-Clase base para JET_err. Excepciones IndexHasPrimary.
+Clase base para JET_err. IndexHasPrimary exceptions.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones IndexHasPrimary.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -68,7 +68,7 @@ public sealed class EsentIndexHasPrimaryException : EsentUsageException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

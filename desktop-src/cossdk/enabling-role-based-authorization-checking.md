@@ -4,12 +4,12 @@ ms.assetid: d391a0d4-fe5d-4587-b0b1-b3aa294b7ad7
 title: Habilitación de Role-Based comprobación de autorización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dd46a0b09b981a3dd7731f5839458550379dad5619f22d1caaaddb24e87deaa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c4268c35812af04ed8a0056900e821029274756
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118813863"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160502"
 ---
 # <a name="enabling-role-based-authorization-checking"></a>Habilitación de Role-Based comprobación de autorización
 
@@ -23,7 +23,7 @@ Para usar la seguridad basada en roles en la aplicación COM+, primero debe habi
 
 3.  En **Autorización**, active la casilla **Aplicar comprobaciones de** acceso para esta aplicación; Desactivar la casilla significa que la seguridad basada en roles no se usa para la aplicación.
 
-4.  Haga clic en **Aceptar**.
+4.  Haga clic en **OK**.
 
 La configuración de autorización seleccionada tiene efecto la próxima vez que se inicia la aplicación.
 

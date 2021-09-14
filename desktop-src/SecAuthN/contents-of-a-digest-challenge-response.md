@@ -4,12 +4,12 @@ ms.assetid: a9a30255-a78a-41aa-9dfd-340902f4c550
 title: Contenido de una respuesta de desafío de resumen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af2a4fd199dfe9e97d69628adb0e6012bc4941929b9c1e96e00de8c42d53eba7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b7168a7e6a468ecc7d573ef0bd853ec6db255b19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119141158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161015"
 ---
 # <a name="contents-of-a-digest-challenge-response"></a>Contenido de una respuesta de desafío de resumen
 
@@ -19,7 +19,7 @@ El cliente debe enviar al servidor una respuesta de desafío de resumen cuando r
 
 | Directiva          | Descripción                                                                                                                                                                                                                |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| username           | Nombre de cuenta de la entidad [*de seguridad*](/windows/desktop/SecGloss/s-gly) que solicita el recurso.                                                                  |
+| username           | Nombre de cuenta de la [*entidad de seguridad*](/windows/desktop/SecGloss/s-gly) que solicita el recurso.                                                                  |
 | Dominio              | Nombre del dominio que contiene la cuenta indicada por nombre de usuario.                                                                                                                                                    |
 | valor de seguridad              | Nonce recibido en el desafío Digest.                                                                                                                                                                                |
 | uri                | Identificador de recurso universal (URI) del recurso solicitado.                                                                                                                                                         |
@@ -46,7 +46,7 @@ Aunque se admiten caracteres en mayúsculas, para obtener un mejor rendimiento q
 
 El uso de hashes precalculados es una nueva característica que permite a los operadores del sistema omitir el uso de contraseñas cifradas reversibles en el controlador de dominio. Se forma un hash precalculado para un usuario cuando se cambia la contraseña del usuario.
 
-Microsoft Digest genera la cadena de respuesta de desafío implícita para las aplicaciones cliente. Para obtener más información, consulte [Generación de la respuesta del desafío de resumen.](generating-the-digest-challenge-response.md)
+Microsoft Digest genera la cadena de respuesta de desafío implícita para las aplicaciones cliente. Para obtener más información, consulte [Generación de la respuesta del desafío de resumen](generating-the-digest-challenge-response.md).
 
  
 

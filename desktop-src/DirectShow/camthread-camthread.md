@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e042624573cd0c421e8ecd202cde971a49eef95cc5f3c6c0ac64bf45b4cf9c19
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0c4b9c5f80e131ce089b6a2da924e9cca41a84f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120103335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160268"
 ---
 # <a name="camthreadcamthread-constructor"></a>Constructor CAMThread.CAMThread
 
@@ -51,7 +51,7 @@ Para la compatibilidad con versiones anteriores de strmbase.lib, este parámetro
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método constructor no crea el subproceso. Para crear el subproceso, llame al [**método CAMThread::Create.**](camthread-create.md)
 
@@ -66,7 +66,7 @@ El método constructor no crea el subproceso. Para crear el subproceso, llame al
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

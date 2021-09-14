@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Protección de una conexión WMI remota
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8650ee47c549121a51e5d131055a84c176da944c6146f0532ffc86f1d2f9e4c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df2a044e49fed5eaa27fbc246dca3306a6c29650
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117739519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889201"
 ---
 # <a name="securing-a-remote-wmi-connection"></a>Protección de una conexión WMI remota
 
@@ -20,7 +20,7 @@ WMI tiene la configuración predeterminada del servicio de suplantación, autent
 
 En este tema se de abordan las secciones siguientes:
 
--   [Suplantación y autenticación de DCOM Configuración wmi](#dcom-impersonation-and-authentication-settings-for-wmi)
+-   [Suplantación y autenticación de DCOM Configuración para WMI](#dcom-impersonation-and-authentication-settings-for-wmi)
 -   [Establecer la seguridad de DCOM para permitir que un usuario acceda a un equipo de forma remota](#setting-dcom-security-to-allow-a-user-to-access-a-computer-remotely)
 -   [Permitir que los usuarios accedan a un espacio de nombres WMI específico](#allowing-users-access-to-a-specific-wmi-namespace)
 -   [Establecer la seguridad del espacio de nombres para requerir cifrado de datos para conexiones remotas](#setting-namespace-security-to-require-data-encryption-for-remote-connections)
@@ -46,7 +46,7 @@ En la tabla siguiente se muestra la configuración predeterminada del servicio d
 
  
 
-Las conexiones remotas WMI se ven afectadas por el Control de cuentas de [usuario (UAC)](/previous-versions/aa905108(v=msdn.10)) [y Windows firewall](https://www.microsoft.com/technet/itsolutions/network/wf/default.mspx). Para obtener más información, vea [Conectarse a WMI de forma remota a partir de Vista](connecting-to-wmi-remotely-starting-with-vista.md) y [Conectarse a través de Windows Firewall](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista).
+Las conexiones remotas WMI se ven afectadas por el Control de cuentas de [usuario (UAC)](/previous-versions/aa905108(v=msdn.10)) [y Windows firewall](https://www.microsoft.com/technet/itsolutions/network/wf/default.mspx). Para obtener más información, vea [Conectarse a WMI de forma remota a partir](connecting-to-wmi-remotely-starting-with-vista.md) de Vista y [Conectarse a través de Windows firewall](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista).
 
 Tenga en cuenta que la conexión a WMI en el equipo local tiene un nivel de autenticación predeterminado **de PktPrivacy**.
 
@@ -64,12 +64,12 @@ En el procedimiento siguiente se describe cómo conceder permisos de activación
 2.  En el cuadro **de diálogo** Servicios de componentes , expanda **Servicios** de componentes , expanda Equipos **y,** a **continuación, haga** clic con el botón Mi PC haga clic en **Propiedades**.
 3.  En el cuadro **de Mi PC propiedades,** haga clic en la **pestaña Seguridad COM** .
 4.  En **Permisos de inicio y activación**, haga clic en **Editar límites**.
-5.  En el **cuadro de diálogo Permiso** de inicio , siga estos pasos si el nombre o el grupo no aparecen en la lista Grupos o nombres de **usuario**:
+5.  En el **cuadro de diálogo** Iniciar permiso , siga estos pasos si el nombre o el grupo no aparecen en la lista Grupos o nombres de **usuario**:
 
     1.  En el cuadro **de diálogo Permiso** de inicio , haga clic en **Agregar**.
     2.  En el cuadro de diálogo Seleccionar **usuarios, equipos** o grupos  , agregue su nombre y el grupo en el cuadro Escriba los nombres de objeto que desea seleccionar y, a continuación, haga clic **en Aceptar**.
 
-6.  En el **cuadro de diálogo Permiso** de inicio , seleccione el usuario y el grupo en el cuadro Nombres de usuario **o** grupo . En la **columna Permitir** en Permisos para **el usuario**, seleccione **Inicio remoto,** activación **remota** y, a continuación, haga clic **en Aceptar.**
+6.  En el **cuadro de diálogo** Permiso de inicio , seleccione el usuario y el grupo en el cuadro Nombres de usuario **o** grupo . En la **columna Permitir** en Permisos para **el usuario**, seleccione **Inicio remoto,** activación **remota** y, a continuación, haga clic **en Aceptar.**
 
 En el procedimiento siguiente se describe cómo conceder permisos de acceso remoto de DCOM para determinados usuarios y grupos. Si el equipo A se conecta de forma remota al equipo B, puede establecer estos permisos en el equipo B para permitir que un usuario o grupo que no forma parte del grupo Administradores del equipo B se conecte al equipo B.
 
@@ -79,13 +79,13 @@ En el procedimiento siguiente se describe cómo conceder permisos de acceso remo
 2.  En el cuadro **de diálogo** Servicios de componentes , expanda **Servicios** de componentes , expanda Equipos **y,** a **continuación, haga** clic con el botón Mi PC haga clic en **Propiedades**.
 3.  En el cuadro **de Mi PC propiedades,** haga clic en la **pestaña Seguridad COM** .
 4.  En **Permisos de acceso**, haga clic en **Editar límites**.
-5.  En el cuadro **de diálogo Permiso** de acceso, seleccione Nombre DE INICIO DE **SESIÓN** ANÓNIMO en el cuadro Nombres de **usuario o** grupo. En la **columna Permitir** en Permisos para **el usuario**, seleccione Acceso **remoto** y, a continuación, haga clic **en Aceptar.**
+5.  En el cuadro **de diálogo Permiso** de acceso, seleccione Nombre DE INICIO DE **SESIÓN** ANÓNIMO en el cuadro Nombres de **usuario o** grupo. En la **columna Permitir** en Permisos para **el usuario**, seleccione **Acceso remoto** y, a continuación, haga clic **en Aceptar.**
 
 ## <a name="allowing-users-access-to-a-specific-wmi-namespace"></a>Permitir que los usuarios accedan a un espacio de nombres WMI específico
 
 Puede permitir o no permitir que los usuarios accedan a un espacio de nombres WMI específico estableciendo el permiso "Habilitar remotamente" en el Control WMI para un espacio de nombres. Si un usuario intenta conectarse a un espacio de nombres al que no se le permite el acceso, recibirá un error 0x80041003. De forma predeterminada, este permiso solo está habilitado para los administradores. Un administrador puede habilitar el acceso remoto a espacios de nombres WMI específicos para un usuario que no es administrador.
 
-El procedimiento siguiente establece permisos de habilitación remota para un usuario que no es administrador.
+En el procedimiento siguiente se establecen permisos de habilitación remota para un usuario que no es administrador.
 
 **Para establecer permisos de habilitación remota**
 
@@ -94,7 +94,7 @@ El procedimiento siguiente establece permisos de habilitación remota para un us
     Para obtener más información sobre el control WMI, vea [Establecer la seguridad del espacio de nombres con el control WMI](setting-namespace-security-with-the-wmi-control.md).
 
 2.  En la pestaña **Seguridad,** seleccione el espacio de nombres y haga clic **en Seguridad.**
-3.  Busque la cuenta adecuada y active **Habilitar remotamente en** la **lista Permisos.**
+3.  Busque la cuenta adecuada y active **Habilitar remotamente en** **la lista Permisos.**
 
 ## <a name="setting-namespace-security-to-require-data-encryption-for-remote-connections"></a>Establecer la seguridad del espacio de nombres para requerir cifrado de datos para conexiones remotas
 

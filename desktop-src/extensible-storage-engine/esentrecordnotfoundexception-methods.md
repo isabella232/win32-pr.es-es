@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102530
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f8f4a22993fa034675ed612d7945c38ca2b091da86af7b1def802c365eb23eb5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0c1ed97cdd70ad9cb671ce9f7551db8871d138b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118079392"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964484"
 ---
 # <a name="esentrecordnotfoundexception-methods"></a>Métodos de EsentRecordNotFoundException 
 
@@ -78,7 +78,7 @@ El [tipo EsentRecordNotFoundException](./esentrecordnotfoundexception-class.md) 
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

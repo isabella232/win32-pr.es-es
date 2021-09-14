@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 41e821d853a8a8f981f1174d654f17475c0363cdcc97bb537e308ccd72e38190
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68de2a77b9d27391c57ec299ceb87d29166ee248
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060556"
 ---
 # <a name="id3dxpatchmeshgenerateadjacency-method"></a>Método ID3DXPatchMesh::GenerateAdjacency
 
@@ -45,7 +45,7 @@ HRESULT GenerateAdjacency(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Especifica que los vértices que difieren en posición en menor que la tolerancia se deben tratar como coincidentes.
+Especifica que los vértices que difieren en posición en menor que la tolerancia deben tratarse como coincidentes.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una vez que una aplicación genera información de adyacencia para una malla, los datos de la malla se pueden optimizar para mejorar el rendimiento del dibujo. Este método determina qué revisiones son adyacentes (dentro de la tolerancia proporcionada). Esta información se usa internamente para optimizar la teselación.
 
@@ -70,7 +70,7 @@ Una vez que una aplicación genera información de adyacencia para una malla, lo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

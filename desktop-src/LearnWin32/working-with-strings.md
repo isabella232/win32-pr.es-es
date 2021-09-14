@@ -4,16 +4,16 @@ description: Trabajo con cadenas
 ms.assetid: 876ff8bb-67c3-4dcc-aa94-7fbd915c67dc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1850d531a1cff713ec71a7e96399f029794545db9b695abe5b826ed63f0f080
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4661c6b07a267d90e0fca05d04354c018be04527
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120075205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159915"
 ---
 # <a name="working-with-strings"></a>Trabajo con cadenas
 
-Windows admite de forma nativa cadenas Unicode para elementos de interfaz de usuario, nombres de archivo, etc. Unicode es la codificación de caracteres preferida, ya que admite todos los lenguajes y conjuntos de caracteres. Windows representa caracteres Unicode mediante la codificación UTF-16, en la que cada carácter se codifica como un valor de 16 bits. Los caracteres UTF-16 se *denominan caracteres anchos,* para distinguirlos de los caracteres ANSI de 8 bits. El compilador Visual C++ admite el tipo de datos **integrado wchar \_ t** para caracteres anchos. El archivo de encabezado WinNT.h también define la siguiente **definición de tipo**.
+Windows admite de forma nativa cadenas Unicode para elementos de interfaz de usuario, nombres de archivo, etc. Unicode es la codificación de caracteres preferida, ya que admite todos los idiomas y conjuntos de caracteres. Windows representa caracteres Unicode mediante la codificación UTF-16, en la que cada carácter se codifica como un valor de 16 bits. Los caracteres UTF-16 se *denominan caracteres anchos,* para distinguirlos de los caracteres ANSI de 8 bits. El Visual C++ admite el tipo de datos **integrado wchar \_ t para** caracteres anchos. El archivo de encabezado WinNT.h también define la definición **de tipo siguiente.**
 
 
 ```C++
@@ -50,7 +50,7 @@ Estas son algunas otras definiciones de tipos relacionadas con cadenas que verá
 
 ## <a name="unicode-and-ansi-functions"></a>Funciones Unicode y ANSI
 
-Cuando Microsoft introdujo la compatibilidad con Unicode Windows, facilitaba la transición proporcionando dos conjuntos paralelos de API, uno para cadenas ANSI y otro para cadenas Unicode. Por ejemplo, hay dos funciones para establecer el texto de la barra de título de una ventana:
+Cuando Microsoft introdujo la compatibilidad con Unicode para Windows, se facilitaba la transición proporcionando dos conjuntos paralelos de API, uno para cadenas ANSI y otro para cadenas Unicode. Por ejemplo, hay dos funciones para establecer el texto de la barra de título de una ventana:
 
 -   **SetWindowTextA toma** una cadena ANSI.
 -   **SetWindowTextW toma** una cadena Unicode.
@@ -70,11 +70,11 @@ Internamente, la versión ANSI traduce la cadena a Unicode. Los Windows también
 
 En MSDN, la función se documenta con el nombre [**SetWindowText**](/windows/desktop/api/winuser/nf-winuser-setwindowtexta), aunque ese es realmente el nombre de la macro, no el nombre real de la función.
 
-Las nuevas aplicaciones siempre deben llamar a las versiones Unicode. Muchos idiomas del mundo requieren Unicode. Si usa cadenas ANSI, será imposible encontrar la aplicación. Las versiones ANSI también son menos eficaces, ya que el sistema operativo debe convertir las cadenas ANSI a Unicode en tiempo de ejecución. Según sus preferencias, puede llamar explícitamente a las funciones Unicode, como **SetWindowTextW,** o usar las macros . El código de ejemplo de MSDN normalmente llama a las macros, pero las dos formas son exactamente equivalentes. La mayoría de las API más recientes Windows solo tienen una versión Unicode, sin la versión ANSI correspondiente.
+Las nuevas aplicaciones siempre deben llamar a las versiones Unicode. Muchos idiomas del mundo requieren Unicode. Si usa cadenas ANSI, será imposible encontrar la aplicación. Las versiones ANSI también son menos eficaces, ya que el sistema operativo debe convertir las cadenas ANSI a Unicode en tiempo de ejecución. Según sus preferencias, puede llamar explícitamente a las funciones Unicode, como **SetWindowTextW,** o usar las macros . El código de ejemplo en MSDN normalmente llama a las macros, pero los dos formularios son exactamente equivalentes. Las API más recientes de Windows solo tienen una versión Unicode, sin la versión ANSI correspondiente.
 
 ## <a name="tchars"></a>TCHAR
 
-Cuando las aplicaciones necesitaban admitir Windows NT, así como Windows 95, Windows 98 y Windows Me, resultaba útil compilar el mismo código para cadenas ANSI o Unicode, en función de la plataforma de destino. Con este fin, el SDK Windows proporciona macros que asignan cadenas a Unicode o ANSI, en función de la plataforma.
+Cuando las aplicaciones necesitaban admitir Windows NT, así como Windows 95, Windows 98 y Windows Me, resultaba útil compilar el mismo código para cadenas ANSI o Unicode, en función de la plataforma de destino. Para ello, el SDK Windows proporciona macros que asignan cadenas a Unicode o ANSI, en función de la plataforma.
 
 
 
@@ -107,9 +107,9 @@ SetWindowTextA("My Application");  // ANSI function.
 
 
 
-Las **macros TEXT** y **TCHAR** son menos útiles hoy en día, porque todas las aplicaciones deben usar Unicode. Sin embargo, es posible que los vea en código anterior y en algunos de los ejemplos de código de MSDN.
+Las **macros TEXT** y **TCHAR** son menos útiles hoy en día, ya que todas las aplicaciones deben usar Unicode. Sin embargo, es posible que los vea en código anterior y en algunos de los ejemplos de código de MSDN.
 
-Los encabezados de las bibliotecas en tiempo de ejecución de Microsoft C definen un conjunto similar de macros. Por ejemplo, **\_ tcslen** se resuelve como **strlen** si no está definido; de lo contrario, se resuelve en wcslen , que es la versión de caracteres `_UNICODE` anchos **de strlen**. 
+Los encabezados de las bibliotecas en tiempo de ejecución de Microsoft C definen un conjunto similar de macros. Por ejemplo, **\_ tcslen** se resuelve en **strlen** si no está definido; de lo contrario, se resuelve en wcslen , que es la versión de caracteres `_UNICODE` anchos **de strlen**. 
 
 
 ```C++

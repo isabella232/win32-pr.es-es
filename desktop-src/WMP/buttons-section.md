@@ -11,12 +11,12 @@ keywords:
 - archivos de definición de máscara, sección Botones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96c64c055ee5ef4bc758838b531cf9052548f8673e18219970b750eb092d57fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f994225154e3f4cc55070351c32c654d5ad616c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889252"
 ---
 # <a name="buttons-section"></a>Sección Botones
 

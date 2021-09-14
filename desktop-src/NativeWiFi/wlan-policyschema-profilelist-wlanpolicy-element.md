@@ -1,7 +1,7 @@
 ---
 description: 'Elemento profileList (WLANPolicy): contiene una lista de perfiles que se aplicarán en el nivel de dominio o equipo.'
 ms.assetid: b78cb095-a1da-4b1b-91d3-c5085325be05
-title: Elemento profileList (WLANPolicy)
+title: elemento profileList (WLANPolicy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 4c7478f38ba7336738325bac6872866cd570288b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161169"
 ---
-# <a name="profilelist-wlanpolicy-element"></a>Elemento profileList (WLANPolicy)
+# <a name="profilelist-wlanpolicy-element"></a>elemento profileList (WLANPolicy)
 
 El elemento profileList (WLANPolicy) contiene una lista de perfiles que se aplicarán en el nivel de dominio o equipo. Este elemento es opcional. Si este elemento está presente, debe contener al menos un perfil.
 
-Los perfiles deben basarse en el esquema [de \_ perfil WLAN](wlan-profileschema-schema.md), con un elemento raíz [**de WLANProfile**](wlan-profileschema-wlanprofile-element.md).
+Los perfiles deben basarse en el esquema [ \_ de perfil WLAN](wlan-profileschema-schema.md), con un elemento raíz de [**WLANProfile**](wlan-profileschema-wlanprofile-element.md).
 
 ``` syntax
 <xs:element name="profileList">
@@ -45,10 +45,10 @@ El **elemento profileList** se define mediante el [**elemento WLANPolicy.**](wla
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

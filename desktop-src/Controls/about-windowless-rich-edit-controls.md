@@ -4,18 +4,18 @@ description: Un control de edición enriquecido sin ventanas, también conocido 
 ms.assetid: 880a704d-776a-49d3-be31-0328af408e3b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96b68a2bc0317a884f0516b73b3674d104c4fa6c12f16bdc24960d7ea0ef8bbf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fc1c8bc685dff5f8ddb041011089a84eb2e12008
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119922185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061404"
 ---
 # <a name="about-windowless-rich-edit-controls"></a>Acerca de los controles rich edit sin ventanas
 
 Un control de edición enriquecido sin ventanas, también conocido como objeto de servicios de texto, es un objeto que proporciona la funcionalidad de un [control](rich-edit-controls.md) de edición enriquecido sin proporcionar la ventana. Para proporcionar la funcionalidad de una ventana, como la capacidad de recibir mensajes y un contexto de dispositivo en el que se puede dibujar, los controles de edición enriquecciones sin ventanas usan un par de interfaces: [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) e [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost).
 
-Para crear un control de edición enriquecido sin ventanas, llame a la función [**CreateTextServices**](/windows/desktop/api/Textserv/nf-textserv-createtextservices) con un puntero a la implementación de la [**interfaz ITextHost.**](/windows/desktop/api/Textserv/nl-textserv-itexthost) **CreateTextServices devuelve** un [**puntero IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) que puede consultar para recuperar un puntero a la implementación [**de ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) del control sin ventanas.
+Para crear un control de edición enriquecido sin ventanas, llame a la función [**CreateTextServices**](/windows/desktop/api/Textserv/nf-textserv-createtextservices) con un puntero a la implementación de la [**interfaz ITextHost.**](/windows/desktop/api/Textserv/nl-textserv-itexthost) **CreateTextServices** devuelve un puntero [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) que puede consultar para recuperar un puntero a la implementación [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) del control sin ventanas.
 
 Msftedit.dll exporta un identificador de interfaz (IID) denominado **IID \_ ITextServices** que puede usar para consultar el [**puntero IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) para la [**interfaz ITextServices.**](/windows/desktop/api/Textserv/nl-textserv-itextservices) En el ejemplo siguiente se muestra cómo recuperar **IID \_ ITextServices** y usarlo para obtener la **interfaz ITextServices.**
 

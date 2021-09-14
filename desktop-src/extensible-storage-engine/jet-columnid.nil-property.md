@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_COLUMNID. Nil (propiedad)'
-title: JET_COLUMNID. Nil (propiedad)
+description: 'Más información sobre: JET_COLUMNID. Propiedad Nil'
+title: JET_COLUMNID. Propiedad Nil
 TOCTitle: 'Nil property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNID.Nil
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnid.nil(v=EXCHG.10)
@@ -26,18 +26,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 624c6073e9996fce85a2d19556d684c54fff32e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687691"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160388"
 ---
-# <a name="jet_columnidnil-property"></a>JET_COLUMNID. Nil (propiedad)
+# <a name="jet_columnidnil-property"></a>JET_COLUMNID. Propiedad Nil
 
-Obtiene un JET_COLUMNID nulo.
+Obtiene un valor null JET_COLUMNID.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,14 +57,14 @@ public static JET_COLUMNID Nil { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_COLUMNID](./jet-columnid-structure.md)
+[JET_COLUMNID estructura](./jet-columnid-structure.md)
 
-[Miembros de JET_COLUMNID](./jet-columnid-members.md)
+[JET_COLUMNID miembros](./jet-columnid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

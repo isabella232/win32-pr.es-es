@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 04cda233d777f05dec44b4fc93537cc33b0369d14d95c104773f0f33ef03498d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d8b02b64fd13e7466980340056fceccc1da784cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120070045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888865"
 ---
 # <a name="d3dxplanetransformarray-function-d3dx10mathh"></a>Función D3DXPlaneTransformArray (D3DX10Math.h)
 
-Transforma una matriz de planos por una matriz. Los vectores que describen cada plano deben normalizarse.
+Transforma una matriz de planos mediante una matriz. Los vectores que describen cada plano deben normalizarse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ Puntero a la [**estructura D3DXPLANE**](d3d10-d3dxplane.md) que contiene el plan
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-El paso de cada plano transformado.
+Paso de cada plano transformado.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
 Puntero a una estructura D3DXPLANE, que representa el plano transformado. Este es el mismo valor devuelto en el parámetro pOut para que esta función se pueda usar como parámetro para otra función.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En este ejemplo se transforma un plano aplicando una escala no uniforme.
 
@@ -131,9 +131,9 @@ D3DXPlaneTransformArray( &planeNew, sizeof (D3DXPLANE), &plane,
 
 
 
-Un plano se describe mediante ax + by + dw + dw = 0. El primer plano se crea con (a,b,c,d) = (0,1,1,0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), que muestra el nuevo plano descrito por 0,353y + 0,235z = 0.
+Un plano se describe por ax + by + dw + dw = 0. El primer plano se crea con (a,b,c,d) = (0,1,1,0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), que muestra el nuevo plano descrito por 0,353y + 0,235z = 0.
 
-El parámetro pM contiene la transpuesta inversa de la matriz de transformación. Este método requiere la transpuesta inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
+El parámetro pM contiene la transpuesta inversa de la matriz de transformación. Este método requiere la transponer inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -146,7 +146,7 @@ El parámetro pM contiene la transpuesta inversa de la matriz de transformación
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 713b02835aa063e888a2385df9bd8abdff9af1300a2e9885c06e995f2b814bbf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9a9848d4470d54cc2a146098343b664c9bd3419
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119042713"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888092"
 ---
 # <a name="apijetenumeratecolumns-method"></a>Método Api.JetEnumerateColumns
 
@@ -104,7 +104,7 @@ public static JET_wrn JetEnumerateColumns(
   - tableid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor del que se recuperarán los datos.
+    Cursor del que se recuperan los datos.
 
 <!-- end list -->
 
@@ -118,7 +118,7 @@ public static JET_wrn JetEnumerateColumns(
   - columnids  
     Tipo: \[\]  
     
-    Matriz opcional de id. de columna, cada uno con una matriz opcional de números de itagSequence que se va a enumerar.
+    Matriz opcional de id. de columna, cada uno con una matriz opcional de números de itagSequence para enumerar.
 
 <!-- end list -->
 
@@ -146,14 +146,14 @@ public static JET_wrn JetEnumerateColumns(
   - allocatorContext  
     Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
-    Contexto para la devolución de llamada de asignación.
+    Contexto de la devolución de llamada de asignación.
 
 <!-- end list -->
 
   - maxDataSize  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Establece un límite en la cantidad de datos que se devolverán de una columna de texto largo o binario largo. Este parámetro se puede usar para evitar la enumeración de un valor de columna extremadamente grande.
+    Establece un límite en la cantidad de datos que se devolverán de una columna binaria larga o de texto largo. Este parámetro se puede usar para evitar la enumeración de un valor de columna extremadamente grande.
 
 <!-- end list -->
 
@@ -167,11 +167,11 @@ public static JET_wrn JetEnumerateColumns(
 Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Una advertencia o un éxito.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9cb1adacadb92cf3a2f9a3e041e4a94a840994db3244233509350448008bd675
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5396c70c1c4286223d9f45fb8ab9b73a019becb1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119748785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964792"
 ---
 # <a name="id3dxconstanttablegetconstantelement-method"></a>Método ID3DXConstantTable::GetConstantElement
 
@@ -65,7 +65,7 @@ Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
 Devuelve un identificador único a la constante de elemento.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una constante que no forma parte de una matriz, use [**ID3DXConstantTable::GetConstant**](id3dxconstanttable--getconstant.md) o [**ID3DXConstantTable::GetConstantByName**](id3dxconstanttable--getconstantbyname.md).
 
@@ -80,7 +80,7 @@ Para obtener una constante que no forma parte de una matriz, use [**ID3DXConstan
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

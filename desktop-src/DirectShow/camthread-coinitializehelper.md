@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 41a763a4b9151f22615aa0af3dae57af8281751209a016dc3135f3572e9d8ef3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a6c3eb7fbcb9e4abada43098339a29d208ded0d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119768295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160257"
 ---
 # <a name="camthreadcoinitializehelper-method"></a>Método CAMThread.CoInitializeHelper
 
@@ -56,9 +56,9 @@ Devuelve un **valor HRESULT.** A continuación se den los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El [**método CAMThread::InitialThreadProc**](camthread-initialthreadproc.md) llama a este método auxiliar, que llama a la función CoInitializeEx. Usa la marca COINIT DISABLE OLE1DDE para deshabilitar datos dinámicos Exchange \_ \_ (DDE). Para más información, consulte el SDK de plataforma.
+El [**método CAMThread::InitialThreadProc**](camthread-initialthreadproc.md) llama a este método auxiliar, que llama a la función CoInitializeEx. Usa la marca COINIT \_ DISABLE \_ OLE1DDE para deshabilitar datos dinámicos Exchange (DDE). Para obtener más información, consulte el SDK de plataforma.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ El [**método CAMThread::InitialThreadProc**](camthread-initialthreadproc.md) ll
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

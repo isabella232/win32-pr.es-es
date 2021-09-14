@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ae385d636429d25b420f1bc75dd531b55d8d2419a7eedc328865753d7b7b536b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d88d8a1da7ae544c5647fc844cda4966cfee7b10
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119120739"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060534"
 ---
 # <a name="id3dxpatchmeshlockvertexbuffer-method"></a>Método ID3DXPatchMesh::LockVertexBuffer
 
@@ -73,9 +73,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Normalmente, el búfer de vértices se bloquea, se escribe en y, a continuación, se desbloquea para lectura.
+Normalmente, el búfer de vértices se bloquea, se escribe en y, a continuación, se desbloquea para su lectura.
 
 Las mallas de revisión usan búferes de índice de 16 bits.
 

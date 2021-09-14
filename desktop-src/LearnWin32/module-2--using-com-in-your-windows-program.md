@@ -4,34 +4,34 @@ description: El módulo 1 de esta serie mostró cómo crear una ventana y respon
 ms.assetid: 6e867618-4d02-4c17-b7ea-dc7290507689
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2180d47bd0dd12c0184a2f9241ec5656c7fe711150e1d5163ca2fec9e0b28fd9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8c03f16937846c4479a70e16141f1b50bde3efc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119068035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159963"
 ---
 # <a name="module-2-using-com-in-your-windows-based-program"></a>Módulo 2. Uso de COM en el Windows-Based programa
 
 [El módulo 1](your-first-windows-program.md) de esta serie mostró cómo crear una ventana y responder a mensajes de ventana como [**WM \_ PAINT**](/windows/desktop/gdi/wm-paint) y [**WM \_ CLOSE.**](/windows/desktop/winmsg/wm-close) El módulo 2 presenta el modelo de objetos componentes (COM).
 
-COM es una especificación para crear componentes de software reutilizables. Muchas de las características que usará en un programa moderno basado en Windows se basan en COM, como las siguientes:
+COM es una especificación para crear componentes de software reutilizables. Muchas de las características que usará en un programa moderno basado en Windows se basan en COM, como los siguientes:
 
 -   Gráficos (Direct2D)
 -   Texto (DirectWrite)
 -   Shell de Windows
--   Control de cinta de opciones
+-   Control Cinta de opciones
 -   Animación de la interfaz de usuario
 
 (Algunas tecnologías de esta lista usan un subconjunto de COM y, por lo tanto, no son COM "puros").
 
-COM tiene una reputación de ser difícil de aprender. Y es cierto que escribir un nuevo módulo de software para admitir COM puede ser complicado. Pero si el programa es estrictamente *un consumidor* de COM, es posible que encuentre que COM es más fácil de entender de lo esperado.
+COM tiene la reputación de ser difícil de aprender. Y es cierto que escribir un nuevo módulo de software para admitir COM puede ser complicado. Pero si el programa es estrictamente *un consumidor* de COM, es posible que com sea más fácil de entender de lo esperado.
 
-En este módulo se muestra cómo llamar a las API basadas en COM en el programa. También se describen algunos de los razonamientos que hay detrás del diseño de COM. Si comprende por qué COM está diseñado tal cual, puede programar con él de forma más eficaz. En la segunda parte del módulo se describen algunas prácticas de programación recomendadas para COM.
+En este módulo se muestra cómo llamar a las API basadas en COM en el programa. También se describen algunos de los razonamientos que hay detrás del diseño de COM. Si comprende por qué COM está diseñado tal cual, puede programar con él de forma más eficaz. En la segunda parte del módulo se describen algunos procedimientos de programación recomendados para COM.
 
 COM se introdujo en 1993 para admitir la vinculación e inserción de objetos (OLE) 2.0. A veces, los usuarios creen que COM y OLE son lo mismo. Este puede ser otro motivo para la percepción de que COM es difícil de aprender. OLE 2.0 se basa en COM, pero no es necesario conocer OLE para entender COM.
 
-COM es un *estándar binario,* no un estándar de lenguaje: define la interfaz binaria entre una aplicación y un componente de software. Como estándar binario, COM es neutro en el lenguaje, aunque se asigna de forma natural a determinadas construcciones de C++. Este módulo se centrará en tres objetivos principales de COM:
+COM es un *estándar binario,* no un estándar de lenguaje: define la interfaz binaria entre una aplicación y un componente de software. Como estándar binario, COM es neutral en el lenguaje, aunque se asigna de forma natural a determinadas construcciones de C++. Este módulo se centrará en tres objetivos principales de COM:
 
 -   Separación de la implementación de un objeto de su interfaz.
 -   Administrar la duración de un objeto.
@@ -54,7 +54,7 @@ COM es un *estándar binario,* no un estándar de lenguaje: define la interfaz b
 
 <dl> <dt>
 
-[Aprender a programar para Windows en C++](learn-to-program-for-windows.md)
+[Aprenda a programar para Windows en C++](learn-to-program-for-windows.md)
 </dt> </dl>
 
  

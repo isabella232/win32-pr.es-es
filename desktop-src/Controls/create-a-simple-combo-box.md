@@ -4,12 +4,12 @@ description: En este tema se describe cómo crear, agregar elementos y recuperar
 ms.assetid: E432AEC0-6C06-40C7-BBFE-B66C21DB8ACA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb1ab672e0beea90d07eadf05f14ffdc4a8181a4da7bf7940af50b00ddc69cde
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c4175d435ac78795e7020fd84099d512cc65be20
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119920815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160288"
 ---
 # <a name="how-to-create-a-simple-combo-box"></a>Cómo crear un cuadro combinado simple
 
@@ -26,7 +26,7 @@ En este tema se describe cómo crear, agregar elementos y recuperar elementos de
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación

@@ -1,15 +1,15 @@
 ---
-description: Implementar NTFS transaccional (TxF) y Registro transaccional (TxR). TxF permite operaciones del sistema de archivos con transacciones dentro de NTFS. TxR permite operaciones de registro con transacciones. Coordine las operaciones del registro y del sistema de archivos con una transacción.
+description: Implemente NTFS transaccional (TxF) y Registro transaccional (TxR). TxF permite operaciones del sistema de archivos con transacciones dentro de NTFS. TxR permite operaciones de registro con transacciones. Coordine las operaciones del registro y del sistema de archivos con una transacción.
 ms.assetid: 2f601994-db1e-4aac-8db1-9a36c702664b
 title: Administrador de transacciones de kernel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c446931fff4f119217a5f6e5f1b7ae8cf351cf94966a9da5abc4e4d2e88d787
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 281050461163d5fd0cde64af79e70569d613888e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160037"
 ---
 # <a name="kernel-transaction-manager"></a>Administrador de transacciones de kernel
 
@@ -29,7 +29,7 @@ KTM se puede usar con aplicaciones y administradores de recursos hospedados en W
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-La API de KTM está diseñada para su uso por parte de programadores de C y C++.
+La API de KTM está diseñada para su uso por los programadores de C y C++.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 

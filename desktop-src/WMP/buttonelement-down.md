@@ -1,6 +1,6 @@
 ---
 title: BUTTONELEMENT.down
-description: El atributo down especifica o recupera un valor que indica si el elemento button está en la posición arriba o abajo.
+description: El atributo down especifica o recupera un valor que indica si el elemento de botón está en la posición de arriba o abajo.
 ms.assetid: 6b3633c5-84c1-48a0-bd2f-94660890d9a6
 keywords:
 - ButtonELEMENT.down Reproductor de Windows Media
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff20aebda01b24dc14eb7d5298ee0d663d903bedcb7ef6ef8b05b6211af8b567
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23f48b0e2ac0f4bf02f87d90bb0bd504478beb52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889345"
 ---
 # <a name="buttonelementdown"></a>BUTTONELEMENT.down
 
-El **atributo** down especifica o recupera un valor que indica si el elemento button está en la posición arriba o abajo.
+El **atributo** down especifica o recupera un valor que indica si el elemento de botón está en la posición de arriba o abajo.
 
 ``` syntax
         elementID.down
@@ -29,20 +29,20 @@ El **atributo** down especifica o recupera un valor que indica si el elemento bu
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un valor booleano de lectura **y escritura.**
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                                                     |
+| Value | Descripción                                                     |
 |-------|-----------------------------------------------------------------|
 | true  | Indica que **BUTTONELEMENT** está en la posición de abajo.        |
-| false | Predeterminada. Indica que **BUTTONELEMENT** está en la posición de arriba. |
+| false | Predeterminada. Indica que **BUTTONELEMENT** está en la posición hacia arriba. |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para que un elemento de botón permanezca en la posición de abajo, **sticky** debe establecerse en true. De forma predeterminada, **sticky** es false y cualquier intento de establecer **en** true se omitirá.
 
@@ -58,7 +58,7 @@ Si se especifica un valor no válido, se mantiene el estado anterior.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

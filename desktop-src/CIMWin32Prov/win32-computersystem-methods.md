@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Win32_ComputerSystem métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee655f19eb6e51eab5067e3318065423b081004c74ef1b1062d0ed86ba6c6cb2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c31abeedbb563601195f7234113139490706ccc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160305"
 ---
 # <a name="win32_computersystem-methods"></a>Métodos ComputerSystem de Win32 \_
 

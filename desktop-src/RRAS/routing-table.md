@@ -4,12 +4,12 @@ description: El administrador de tablas de enrutamiento mantiene una tabla de en
 ms.assetid: ea857c28-89ed-48b6-bf20-144a5e7b6b69
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15384442a8cc3cd21afe1586527972a171f6b67c343f877a6ffee32e159139db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b4b7652c1c1014d1249c8446bb1ad01e3313062b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117787321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161056"
 ---
 # <a name="routing-table"></a>Tabla de enrutamiento
 

@@ -4,12 +4,12 @@ ms.assetid: e7b12b9e-8caa-4dad-b81f-b609ccb92c9f
 title: Uso de SecBufferDesc y SecBuffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06ad12120414a1e0acb7a6b1cfe211b0ed1787d9e676e8329df1e16ecfef17cd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ca7d8155a610263838d2baf2a7d1c8fc96ec874
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160898"
 ---
 # <a name="using-secbufferdesc-and-secbuffer"></a>Uso de SecBufferDesc y SecBuffer
 

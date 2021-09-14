@@ -4,12 +4,12 @@ ms.assetid: 468379e2-c5f6-479f-9d5d-42afb395ec9b
 title: Interoperabilidad con otras Windows características
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a18595140676539c6e5acaa5fc62835ac279215d068834e3e56dffe50d01e0e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa3aeac3d920b408a9a18c32eab83cf747525e82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119265075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160045"
 ---
 # <a name="interoperability-with-other-windows-features"></a>Interoperabilidad con otras Windows características
 

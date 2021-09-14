@@ -20,14 +20,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 31b0d257455cb1549cf849b4791bf596488bb67cde99926378e75b218330c5f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c833b137b1e5df9f6d70e206b2f517977375e29b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119968355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964332"
 ---
-# <a name="jet_commit_idequals-method-jet_commit_id"></a>método JET_COMMIT_ID.Equals (JET_COMMIT_ID)
+# <a name="jet_commit_idequals-method-jet_commit_id"></a>JET_COMMIT_ID.Equals (JET_COMMIT_ID)
 
 Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
@@ -57,7 +57,7 @@ public bool Equals(
 
 #### <a name="parameters"></a>Parámetros
 
-  - Otros  
+  - otro  
     Tipo: [Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
     
     Objeto que se va a comparar con esta instancia.
@@ -71,7 +71,7 @@ True si las dos instancias son iguales.
 
 [IEquatable \<T\> . Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

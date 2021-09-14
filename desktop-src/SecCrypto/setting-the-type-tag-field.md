@@ -1,34 +1,34 @@
 ---
-description: Las variables de tipo variante tienen un campo de etiqueta de tipo VT que indica el tipo de datos de los datos.
+description: Las variables de tipo VARIANT tienen un campo de etiqueta de tipo vt que indica el tipo de datos de los datos.
 ms.assetid: 3436faf6-2e66-46a1-b1e8-84f513282c16
 title: Establecer el campo de etiqueta de tipo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 3e443fae33b14bd4270e63188ff96a042a91c8e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275177"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160740"
 ---
 # <a name="setting-the-type-tag-field"></a>Establecer el campo de etiqueta de tipo
 
-Las variables de tipo **variante** tienen un campo de etiqueta de tipo **VT** que indica el tipo de datos de los datos. Los métodos devuelven los valores devueltos de tipo **Variant** con el campo de etiqueta de tipo establecido en el tipo de datos del valor devuelto. Los parámetros de entrada de tipo **Variant** en una llamada al método deben tener el campo de etiqueta de tipo establecido por la aplicación en uno de los valores admitidos. La correspondencia entre los tipos de parámetro y los tipos de datos es la siguiente.
+**Las** variables de tipo VARIANT tienen un campo de etiqueta **de tipo vt** que indica el tipo de datos de los datos. **Los métodos** devuelven valores devueltos de tipo VARIANT con el campo de etiqueta de tipo establecido en el tipo de datos del valor devuelto. **Los** parámetros de entrada de tipo VARIANT de una llamada de método deben tener el campo de etiqueta de tipo establecido por la aplicación en uno de los valores admitidos. La correspondencia de los tipos de parámetro con los tipos de datos es la siguiente.
 
 
 
 | Tipo de parámetro              | Tipo de datos                                      |
 |-----------------------------|------------------------------------------------|
-| PROPTYPE \_ largo<br/>   | VT \_ I2 o VT \_ I4<br/>                    |
-| fecha de PROPTYPE \_<br/>   | fecha de VT \_<br/>                            |
-| \_binario PROPTYPE<br/> | VT \_ BSTR o (VT \_ BSTR \| VT \_ BYREF)<br/> |
-| \_cadena PROPTYPE<br/> | VT \_ BSTR o (VT \_ BSTR \| VT \_ BYREF)<br/> |
+| PROPTYPE \_ LONG<br/>   | VT \_ I2 o VT \_ I4<br/>                    |
+| PROPTYPE \_ DATE<br/>   | FECHA \_ DE VT<br/>                            |
+| PROPTYPE \_ BINARY<br/> | VT \_ BSTR o (VT \_ BSTR \| VT \_ BYREF)<br/> |
+| PROPTYPE \_ STRING<br/> | VT \_ BSTR o (VT \_ BSTR \| VT \_ BYREF)<br/> |
 
 
 
  
 
-En el ejemplo siguiente se muestra cómo inicializar los tipos de datos Variant enumerados anteriormente.
+En el ejemplo siguiente se muestra cómo inicializar los tipos de datos variantes enumerados anteriormente.
 
 
 ```C++

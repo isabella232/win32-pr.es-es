@@ -21,16 +21,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9188b456f31f81164ab27966e652c87ad06a80aa5115769d119c8f90dc268f2d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a1e6128ffde7afce0132dd4415e4eca1f06b5cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120064435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061488"
 ---
 # <a name="win32_potsmodemtoserialport-class"></a>Clase WIN32 \_ POTSModemToSerialPort
 
-La clase [WMI](../wmisdk/retrieving-a-class.md) **de \_ asociación WIN32 POTSModemToSerialPort** relaciona un módem con el puerto serie que usa el módem.
+La clase [WMI](../wmisdk/retrieving-a-class.md) **de asociación \_ WIN32 POTSModemToSerialPort** relaciona un módem con el puerto serie que usa el módem.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -50,7 +50,7 @@ class Win32_POTSModemToSerialPort : CIM_ControlledBy
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ WIN32 POTSModemToSerialPort** tiene estos tipos de miembros:
 
@@ -71,7 +71,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el controlador está comandoando activamente o accediendo al dispositivo. Esta información es necesaria cuando varios controladores pueden usar o acceder a un dispositivo lógico.
+Indica si el controlador está comandoando activamente o accediendo al dispositivo. Esta información es necesaria cuando varios controladores pueden usar o tener acceso a un dispositivo lógico.
 
 Esta propiedad se hereda de [**CIM \_ ControlledBy**](cim-controlledby.md).
 
@@ -200,7 +200,7 @@ Esta propiedad se hereda de [**CIM \_ ControlledBy**](cim-controlledby.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ WIN32 POTSModemToSerialPort** se deriva de [**CIM \_ ControlledBy**](cim-controlledby.md).
 
@@ -218,7 +218,7 @@ La **clase \_ WIN32 POTSModemToSerialPort** se deriva de [**CIM \_ ControlledBy*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

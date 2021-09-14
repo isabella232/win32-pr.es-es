@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_DDE_EXECUTE (DDE. h)
-description: Una aplicación cliente de Intercambio dinámico de datos (DDE) envía un \_ mensaje de ejecución de WM DDE \_ a una aplicación de servidor DDE para enviar una cadena al servidor que se va a procesar como una serie de comandos.
+title: WM_DDE_EXECUTE mensaje (Dde.h)
+description: Una datos dinámicos Exchange cliente de datos dinámicos Exchange (DDE) envía un mensaje WM DDE EXECUTE a una aplicación de servidor DDE para enviar una cadena al servidor que se va a procesar como una serie de \_ \_ comandos.
 ms.assetid: 23c18a57-83ee-4fd3-a5bc-71645bda34eb
 keywords:
-- Intercambio de datos de mensajes de WM_DDE_EXECUTE
+- WM_DDE_EXECUTE mensaje Data Exchange
 topic_type:
 - apiref
 api_name:
@@ -15,17 +15,17 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 957b5cadcd2383d535aa67258725bafff57ab4f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422376"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160487"
 ---
-# <a name="wm_dde_execute-message"></a>Mensaje de ejecución de \_ DDE de WM \_
+# <a name="wm_dde_execute-message"></a>Mensaje \_ EXECUTE de WM DDE \_
 
-Una aplicación cliente de Intercambio dinámico de datos (DDE) envía un mensaje de **\_ \_ ejecución de WM DDE** a una aplicación de servidor DDE para enviar una cadena al servidor que se va a procesar como una serie de comandos. Se espera que la aplicación de servidor publique un mensaje de [**\_ \_ confirmación de WM DDE**](wm-dde-ack.md) en respuesta.
+Una datos dinámicos Exchange cliente de datos dinámicos Exchange (DDE) envía un mensaje **\_ WM DDE \_ EXECUTE** a una aplicación de servidor DDE para enviar una cadena al servidor que se va a procesar como una serie de comandos. Se espera que la aplicación de servidor publique un [**mensaje \_ wm DDE \_ ACK**](wm-dde-ack.md) en respuesta.
 
-Para enviar este mensaje, llame a la función [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con los parámetros siguientes.
+Para publicar este mensaje, llame a la [**función PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con los parámetros siguientes.
 
 
 ```C++
@@ -48,19 +48,19 @@ Identificador de la ventana de cliente que publica el mensaje.
 *lParam* 
 </dt> <dd>
 
-Contiene un objeto de memoria global que hace referencia a una cadena de comandos ANSI o Unicode, en función de los tipos de ventanas que participan en la conversación.
+Contiene un objeto de memoria global que hace referencia a una cadena de comandos ANSI o Unicode, en función de los tipos de ventanas implicadas en la conversación.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La cadena de comandos es una cadena terminada en null que consta de una o varias cadenas de código de operación entre corchetes ( \[ \] ). Cada cadena de código de operación tiene la sintaxis siguiente, donde la lista de *parámetros* es opcional:
+La cadena de comando es una cadena terminada en NULL que consta de una o varias cadenas de código de operación entre corchetes únicos ( \[ \] ). Cada cadena de código de operación tiene la siguiente sintaxis, donde la *lista de parámetros* es opcional:
 
 *parámetros de código de operación*
 
 El *código de operación* es cualquier token único definido por la aplicación. No puede incluir espacios, comas, paréntesis, corchetes ni comillas.
 
-La lista de *parámetros* puede contener cualquier valor definido por la aplicación o valores. Varios parámetros se separan mediante comas y la lista completa de parámetros se incluye entre paréntesis. Los parámetros no pueden incluir comas ni paréntesis, excepto dentro de una cadena entrecomillada. Si un corchete o un paréntesis van a aparecer en una cadena entrecomillada, no es necesario doblarlo, como era el caso de las reglas anteriores.
+La *lista* de parámetros puede contener cualquier valor o valor definido por la aplicación. Varios parámetros están separados por comas y toda la lista de parámetros se incluye entre paréntesis. Los parámetros no pueden incluir comas ni paréntesis, excepto dentro de una cadena entre comillas. Si un carácter de corchete o paréntesis va a aparecer en una cadena entre comillas, no es necesario duplicarlo, como en el caso de las reglas antiguas.
 
 Las siguientes son cadenas de comandos válidas:
 
@@ -75,7 +75,7 @@ Las siguientes son cadenas de comandos válidas:
 
 
 
-Tenga en cuenta que, en las reglas anteriores, los paréntesis y corchetes tenían que doblarse, como se indica a continuación:
+Tenga en cuenta que, en las reglas antiguas, los paréntesis y corchetes tenían que duplicarse, como se muestra a continuación:
 
 
 ```
@@ -84,21 +84,21 @@ Tenga en cuenta que, en las reglas anteriores, los paréntesis y corchetes tení
 
 
 
-Los servidores deben ser capaces de analizar los comandos de cualquier forma.
+Los servidores deben poder analizar comandos de cualquier forma.
 
-Las cadenas de ejecución Unicode solo deben usarse cuando los identificadores de la ventana de cliente y de servidor hacen que la función [**IsWindowUnicode**](/windows/desktop/api/winuser/nf-winuser-iswindowunicode) devuelva **true**.
+Las cadenas de ejecución Unicode solo se deben usar cuando los identificadores de ventana de cliente y servidor hacen que [**la función IsWindowUnicode**](/windows/desktop/api/winuser/nf-winuser-iswindowunicode) devuelva **TRUE.**
 
-### <a name="posting"></a>Config
+### <a name="posting"></a>Publicar
 
-La aplicación cliente asigna el objeto de memoria global mediante una llamada a la función [**GlobalAlloc**](/windows/desktop/api/winbase/nf-winbase-globalalloc) .
+La aplicación cliente asigna el objeto de memoria global mediante una llamada a la [**función GlobalAlloc.**](/windows/desktop/api/winbase/nf-winbase-globalalloc)
 
-Al procesar el mensaje de [**\_ \_ confirmación de DDE de WM**](wm-dde-ack.md) que el servidor envía en respuesta a un mensaje de **\_ \_ ejecución de WM DDE** , la aplicación cliente debe eliminar el objeto devuelto por el mensaje de **\_ \_ confirmación de DDE de WM** .
+Al procesar el [**mensaje \_ DDE \_ ACK**](wm-dde-ack.md) de WM que el servidor publica en respuesta a un mensaje **WM \_ DDE \_ EXECUTE,** la aplicación cliente debe eliminar el objeto devuelto por el **mensaje \_ DDE \_ ACK** de WM.
 
 ### <a name="receiving"></a>Recepción
 
-La aplicación de servidor envía el mensaje de [**\_ \_ confirmación de WM DDE**](wm-dde-ack.md) para responder de forma positiva o negativa. El servidor debe volver a usar el objeto de memoria global.
+La aplicación de servidor publica el [**mensaje \_ WM DDE \_ ACK**](wm-dde-ack.md) para responder de forma positiva o negativa. El servidor debe reutilizar el objeto de memoria global.
 
-A menos que un subprotocolo especifique lo contrario, el servidor no debe exponer el mensaje de [**\_ \_ confirmación de WM DDE**](wm-dde-ack.md) hasta que se completen todas las acciones especificadas por la cadena de comando Execute. La única excepción a esta regla es cuando la cadena hace que el servidor finalice la conversación.
+A menos que un subprototo especifique lo contrario, el servidor no debe publicar el mensaje [**\_ WM DDE \_ ACK**](wm-dde-ack.md) hasta que se completen todas las acciones especificadas por la cadena de comando execute. La única excepción a esta regla es cuando la cadena hace que el servidor finalice la conversación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,11 +108,11 @@ A menos que un subprotocolo especifique lo contrario, el servidor no debe expone
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>DDE. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Dde.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -134,16 +134,16 @@ A menos que un subprotocolo especifique lo contrario, el servidor no debe expone
 [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage)
 </dt> <dt>
 
-[**UnpackDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
+[**DesempaquetarDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
 </dt> <dt>
 
-[**\_confirmación de DDE de WM \_**](wm-dde-ack.md)
+[**WM \_ DDE \_ ACK**](wm-dde-ack.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Acerca de Intercambio dinámico de datos](about-dynamic-data-exchange.md)
+[Acerca de datos dinámicos Exchange](about-dynamic-data-exchange.md)
 </dt> </dl>
 
  

@@ -30,12 +30,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cfd4bd427321137add1d0669fcaf798a353309a825d1ccf9544f45098d3454f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4028a2a337b32394029960e45bb0e485c2b6b705
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118978645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964199"
 ---
 # <a name="objectinfogrbit-enumeration"></a>Enumeración ObjectInfoGrbit
 
@@ -61,7 +61,7 @@ Dim instance As ObjectInfoGrbit
 public enum ObjectInfoGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -91,7 +91,7 @@ public enum ObjectInfoGrbit
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

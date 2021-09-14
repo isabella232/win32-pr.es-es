@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fd54753cd2acc84972c2f8150d4894d29bc02a4039b854426e7a031a157af6cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bdca1b9342e6e79b2975da38efa00f03c5ea8107
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160191"
 ---
 # <a name="crendererinputpinactive-method"></a>Método CRendererInputPin.Active
 
@@ -55,7 +55,7 @@ Devuelve un **valor HRESULT.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

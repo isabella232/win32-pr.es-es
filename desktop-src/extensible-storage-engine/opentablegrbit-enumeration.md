@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración OpenTableGrbit'
-title: Enumeración OpenTableGrbit
+description: 'Más información sobre: Enumeración OpenTableGrbit'
+title: OpenTableGrbit (enumeración)
 TOCTitle: OpenTableGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.OpenTableGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.opentablegrbit(v=EXCHG.10)
@@ -73,20 +73,20 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: dfb2d75fc17e37dc669acf1fd84f38c957d467f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887220"
 ---
-# <a name="opentablegrbit-enumeration"></a>Enumeración OpenTableGrbit
+# <a name="opentablegrbit-enumeration"></a>OpenTableGrbit (enumeración)
 
 Opciones de JetOpenTable.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -103,7 +103,7 @@ Dim instance As OpenTableGrbit
 public enum OpenTableGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -122,12 +122,12 @@ public enum OpenTableGrbit
 <tr class="even">
 <td></td>
 <td>DenyWrite</td>
-<td>No se puede abrir esta tabla para acceso de escritura en otra sesión.</td>
+<td>Otra sesión no puede abrir esta tabla para el acceso de escritura.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DenyRead</td>
-<td>Esta tabla no se puede abrir para acceso de lectura en otra sesión.</td>
+<td>Otra sesión no puede abrir esta tabla para el acceso de lectura.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -147,17 +147,17 @@ public enum OpenTableGrbit
 <tr class="odd">
 <td></td>
 <td>NoCache</td>
-<td>No almacenar en caché las páginas de esta tabla.</td>
+<td>No almacenar en caché páginas para esta tabla.</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>Lectura preleída</td>
-<td>Proporciona una sugerencia que indica que la tabla probablemente no está en la caché del búfer y que la lectura previa puede ser beneficiosa para el rendimiento.</td>
+<td>Preread</td>
+<td>Proporciona una sugerencia de que la tabla probablemente no esté en la caché del búfer y que la lectura previa puede ser beneficiosa para el rendimiento.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Secuencial</td>
-<td>Asuma un patrón de acceso secuencial y páginas de base de datos de captura previa.</td>
+<td>Suponga un patrón de acceso secuencial y precarga de páginas de base de datos.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -167,7 +167,7 @@ public enum OpenTableGrbit
 <tr class="odd">
 <td></td>
 <td>TableClass2</td>
-<td>La tabla pertenece a la clase de estadísticas 2.</td>
+<td>La tabla pertenece a la clase stats 2.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -177,7 +177,7 @@ public enum OpenTableGrbit
 <tr class="odd">
 <td></td>
 <td>TableClass4</td>
-<td>La tabla pertenece a la clase de estadísticas 4.</td>
+<td>La tabla pertenece a la clase stats 4.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -187,7 +187,7 @@ public enum OpenTableGrbit
 <tr class="odd">
 <td></td>
 <td>TableClass6</td>
-<td>La tabla pertenece a la clase de estadísticas 6.</td>
+<td>La tabla pertenece a la clase stats 6.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -197,7 +197,7 @@ public enum OpenTableGrbit
 <tr class="odd">
 <td></td>
 <td>TableClass8</td>
-<td>La tabla pertenece a la clase de estadísticas 8.</td>
+<td>La tabla pertenece a la clase stats 8.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -207,7 +207,7 @@ public enum OpenTableGrbit
 <tr class="odd">
 <td></td>
 <td>TableClass10</td>
-<td>La tabla pertenece a la clase de estadísticas 10.</td>
+<td>La tabla pertenece a la clase stats 10.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -217,17 +217,17 @@ public enum OpenTableGrbit
 <tr class="odd">
 <td></td>
 <td>TableClass12</td>
-<td>La tabla pertenece a la clase de estadísticas 12.</td>
+<td>La tabla pertenece a la clase stats 12.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TableClass13</td>
-<td>La tabla pertenece a la clase de estadísticas 13.</td>
+<td>Table pertenece a la clase stats 13.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>TableClass14</td>
-<td>La tabla pertenece a la clase de estadísticas 14.</td>
+<td>La tabla pertenece a la clase stats 14.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -238,8 +238,8 @@ public enum OpenTableGrbit
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

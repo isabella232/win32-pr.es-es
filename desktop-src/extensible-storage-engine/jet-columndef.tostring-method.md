@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 984be1a47717a87c838ddadf0341a547a7c592545a20a1c671a87f99ac276d3b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fd6fec51117aa2c07db93022cc94913c720de5ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119668115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887588"
 ---
 # <a name="jet_columndeftostring-method"></a>JET_COLUMNDEF. Método ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el objeto [JET_COLUMNDEF](./jet-columndef-class.md).
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el objeto [JET_COLUMNDEF](./jet-columndef-class.md).
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -59,7 +59,7 @@ public override string ToString()
 Tipo: [System.String](/dotnet/api/system.string)  
 Cadena [que](/dotnet/api/system.string) representa el objeto [JET_COLUMNDEF](./jet-columndef-class.md).  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

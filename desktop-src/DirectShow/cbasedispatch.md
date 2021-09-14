@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1a094ad3b79dbeb8c4dfc2888de01a521738740fc19ad70b521172d3194fd9f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d115412b2b668f640834d5a3fa3b134f7a8d9c01
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061389"
 ---
 # <a name="cbasedispatch-class"></a>CBaseDispatch (clase)
 
@@ -33,7 +33,7 @@ Esta clase se limita a admitir las interfaces compatibles con Automation exporta
 
 Para usar esta clase, haga lo siguiente:
 
--   Declare una nueva clase que admita **IDispatch.**
+-   Declare una nueva clase que admita **IDispatch**.
 -   Dé a la nueva clase una variable miembro privada de tipo **CBaseDispatch**.
 -   Implemente **los métodos IDispatch.**
 -   En los **métodos IDispatch,** llame a **los métodos CBaseDispatch.**
@@ -47,7 +47,7 @@ Para obtener más información, consulte el código fuente de cualquiera de las 
 | [**CBaseDispatch**](cbasedispatch-cbasedispatch.md)       | Método constructor.                                                                                                 |
 | [**~CBaseDispatch**](cbasedispatch--cbasedispatch.md)     | Método destructor.                                                                                                  |
 | [**GetIDsOfNames**](cbasedispatch-getidsofnames.md)       | Mapas un conjunto de nombres a un conjunto correspondiente de DISPID.                                                              |
-| [**GetTypeInfo**](cbasedispatch-gettypeinfo.md)           | Recupera la información de tipo del objeto , que luego se puede usar para obtener la información de tipo de una interfaz. |
+| [**GetTypeInfo**](cbasedispatch-gettypeinfo.md)           | Recupera la información de tipo para el objeto , que luego se puede usar para obtener la información de tipo de una interfaz. |
 | [**GetTypeInfoCount**](cbasedispatch-gettypeinfocount.md) | Recupera el número de interfaces de información de tipo que proporciona el objeto .                                            |
 
 
@@ -65,7 +65,7 @@ Para obtener más información, consulte el código fuente de cualquiera de las 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

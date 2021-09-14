@@ -3,7 +3,7 @@ title: Función gluNewQuadric (Glu.h)
 description: La función gluNewQuadric crea un objeto cuádigo.
 ms.assetid: 5a4289bf-b57a-4c74-b0e3-b7536671e4df
 keywords:
-- Función gluNewQuadric OpenGL
+- función gluNewQuadric OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66fed28c555d327bffa18d8f9100a6f5e9824b714bff1308e6b2dab20b5d3671
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: affedc7dcebd2b7925449e22cc1b902e88d936f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120036275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161074"
 ---
 # <a name="glunewquadric-function"></a>función gluNewQuadric
 
@@ -38,9 +38,9 @@ GLUquadric* WINAPI gluNewQuadric(void);
 
 Esta función no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función gluNewQuadric** crea y devuelve un puntero a un nuevo objeto cuádigo. Consulte este objeto al llamar a funciones de representación y control cuádricas. Un valor devuelto de cero significa que no hay suficiente memoria para asignar al objeto.
+La **función gluNewQuadric** crea y devuelve un puntero a un nuevo objeto cuádigo. Haga referencia a este objeto al llamar a funciones de representación y control cuádricas. Un valor devuelto de cero significa que no hay suficiente memoria para asignar al objeto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ La **función gluNewQuadric** crea y devuelve un puntero a un nuevo objeto cuád
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 230970e1328737339f236776c1405b7a950ea97c07a04d60d9ce26d9226168e9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f714dfa91baba14524f12b6c3b2cb85211484cf5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119848785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888516"
 ---
 # <a name="id3dxbaseeffectgetboolarray-method"></a>Método ID3DXBaseEffect::GetBoolArray
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

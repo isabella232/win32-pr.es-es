@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b94f6c6ff61acb526e972da54c55798524b39b1663dec1239e9e2dbae0110e6c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9ec294600fdc81f085bf29f5e664bcbec961417c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119827755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061427"
 ---
 # <a name="win32_systemtimezone-class"></a>Clase SystemTimeZone de Win32 \_
 
 La clase WMI **de asociación \_ SystemTimeZone** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y una zona horaria.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ class Win32_SystemTimeZone : Win32_SystemSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemTimeZone de Win32** tiene estos tipos de miembros:
 
@@ -71,7 +71,7 @@ Referencia a la instancia de que representa el sistema informático que realiza 
 **Configuración**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Zona horaria \_ Win32**
+Tipo de datos: **Zona horaria \_ win32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -80,11 +80,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ TimeZone")
 </dt> </dl>
 
-Referencia a la instancia de que representa las propiedades de zona horaria de las que realiza el seguimiento el sistema informático.
+Referencia a la instancia de que representa las propiedades de zona horaria de las que realiza un seguimiento el sistema informático.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemTimeZone de Win32** se deriva de [**\_ SystemSetting de Win32.**](win32-systemsetting.md)
 
@@ -92,7 +92,7 @@ La **clase \_ SystemTimeZone de Win32** se deriva de [**\_ SystemSetting de Win3
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -102,11 +102,11 @@ La **clase \_ SystemTimeZone de Win32** se deriva de [**\_ SystemSetting de Win3
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ SystemSetting**](win32-systemsetting.md)
+[**SystemSetting de Win32 \_**](win32-systemsetting.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

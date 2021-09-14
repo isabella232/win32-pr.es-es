@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7bce3b7a1323b90650efee124bd9a267831edc35e594d8e3bc32436bf1d2b1bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3e13e2101291dc130700531f4e4245c547cfb30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119115435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964524"
 ---
 # <a name="esentmissingrestorelogfilesexception-class"></a>Clase EsentMissingRestoreLogFilesException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones missingRestoreLogFiles.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

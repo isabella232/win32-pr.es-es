@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 768064e19af76a03aa0d4f11c087f8d7ff7086b04cd1de46edfb504ba8e6be2e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14c82eaae707f23c8f696593496d556bfa61277a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119614485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964203"
 ---
 # <a name="microsoftisamesentinteropwindows8-namespace"></a>Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8
 
@@ -152,7 +152,7 @@ ms.locfileid: "119614485"
 <tr class="even">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumeración pública" alt="Public enumeration" /></td>
 <td><a href="dn335491(v=exchg.10).md">JetRestone</a></td>
-<td>Operación de comparación para el filtro definido como <a href="dn335349(v=exchg.10).md">JET_INDEX_COLUMN</a>.</td>
+<td>Operación de comparación para el filtro definido <a href="dn335349(v=exchg.10).md">como JET_INDEX_COLUMN</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumeración pública" alt="Public enumeration" /></td>
@@ -162,7 +162,7 @@ ms.locfileid: "119614485"
 <tr class="even">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumeración pública" alt="Public enumeration" /></td>
 <td><a href="dn335369(v=exchg.10).md">ResizeDatabaseGrbit</a></td>
-<td>Opciones para <a href="dn335496(v=exchg.10).md">JetResizeDatabase(JET_SESID, JET_DBID, Int32, Int32, ResizeDatabaseGrbit).</a></td>
+<td>Opciones de <a href="dn335496(v=exchg.10).md">JetResizeDatabase(JET_SESID, JET_DBID, Int32, Int32, ResizeDatabaseGrbit)</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596136.pubenumeration(exchg.10).gif" title="Enumeración pública" alt="Public enumeration" /></td>

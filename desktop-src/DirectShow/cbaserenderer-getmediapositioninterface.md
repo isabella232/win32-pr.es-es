@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 12e15b297f78b3386ae9ad31e749858bad14b87e59e938ac02a3cf3a9ca002a9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3d41d777b88f0e18ae1510c32b7e89024ea7bdd9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119872335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061331"
 ---
 # <a name="cbaserenderergetmediapositioninterface-method"></a>Método CBaseRenderer.GetMediaPositionInterface
 
-El método recupera los punteros de interfaz `GetMediaPositionInterface` [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) e [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) del filtro.
+El `GetMediaPositionInterface` método recupera los punteros de interfaz [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) e [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) del filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,17 +67,17 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 |-----------------------------------------------------------------------------------------------|-------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Correcto.<br/>                 |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente.<br/>     |
-| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl> | No se admite la interfaz .<br/> |
+| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl> | Interfaz no admitida.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El filtro delega todos los comandos de búsqueda en un [**objeto CRendererPosPassThru,**](crendererpospassthru.md) que los pasa de nivel superior. Este método crea el **objeto CRendererPosPassThru,** si aún no existe, y lo consulta para la interfaz solicitada.
+El filtro delega todos los comandos de búsqueda en un [**objeto CRendererPosPassThru,**](crendererpospassthru.md) que los pasa en sentido ascendente. Este método crea el **objeto CRendererPosPassThru,** si aún no existe, y lo consulta para la interfaz solicitada.
 
-La variable [**miembro CBaseRenderer::m \_ pPosition**](cbaserenderer-m-pposition.md) almacena un puntero al objeto **CRendererPosPassThru.**
+La variable [**miembro CBaseRenderer::m \_ pPosition**](cbaserenderer-m-pposition.md) almacena un puntero al **objeto CRendererPosPassThru.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ La variable [**miembro CBaseRenderer::m \_ pPosition**](cbaserenderer-m-ppositio
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

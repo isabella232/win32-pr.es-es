@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 1e42eec5cc9c5c90d1fa4e26c4ad38d611dce3ce0df933d76b1eb81d2534b8dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e8d1d72fccd5c4ad47d21d05ee46013860a7743
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118295881"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964767"
 ---
 # <a name="id3dxeffectcompilercompileshader-method"></a>Método ID3DXEffectCompiler::CompileShader
 
@@ -95,7 +95,7 @@ Búfer que contiene al menos el primer mensaje de error de compilación que se p
 
 Tipo: **[ **LPD3DXCONSTANTTABLE**](id3dxconstanttable.md)\***
 
-Devuelve una [**interfaz ID3DXConstantTable,**](id3dxconstanttable.md) que se puede usar para tener acceso a las constantes del sombreador. Este valor puede ser **NULL.** Si compila la aplicación como una dirección grande (es decir, usa la opción del vinculador /LARGEADDRESSAWARE para controlar direcciones de más de 2 GB), no puede usar este parámetro y debe establecerlo en **NULL.** En su lugar, debe usar la función [**D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md) para recuperar la tabla shader-constant incrustada dentro del sombreador. En esta **llamada D3DXGetShaderConstantTableEx,** debe pasar la marca **D3DXCONSTTABLE \_ LARGEADDRESSAWARE** al parámetro *Flags* para especificar el acceso a hasta 4 GB de espacio de direcciones virtuales.
+Devuelve una [**interfaz ID3DXConstantTable,**](id3dxconstanttable.md) que se puede usar para tener acceso a las constantes del sombreador. Este valor puede ser **NULL.** Si compila la aplicación como una dirección grande (es decir, usa la opción del vinculador /LARGEADDRESSAWARE para controlar direcciones de más de 2 GB), no puede usar este parámetro y debe establecerlo en **NULL.** En su lugar, debe usar la función [**D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md) para recuperar la tabla shader-constant incrustada dentro del sombreador. En esta **llamada a D3DXGetShaderConstantTableEx,** debe pasar la marca **D3DXCONSTTABLE \_ LARGEADDRESSAWARE** al parámetro *Flags* para especificar el acceso a hasta 4 GB de espacio de direcciones virtuales.
 
 </dd> </dl>
 
@@ -107,18 +107,18 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK.
 
 Si los argumentos no son válidos, el método devolverá D3DERR \_ INVALIDCALL.
 
-Si se produce un error en el método, el valor devuelto será E \_ FAIL.
+Si se produce un error en el método , el valor devuelto será E \_ FAIL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se pueden especificar destinos para sombreadores de vértices, sombreadores de píxeles y funciones de relleno de textura.
+Los destinos se pueden especificar para sombreadores de vértices, sombreadores de píxeles y funciones de relleno de textura.
 
 
 
-| Destinos                      | Funciones                                                                      |
+| Destinos                      | Functions                                                                      |
 |-----------------------|-----------------------------------------------------------------------|
 | Destinos del sombreador de vértices | vs \_ 1 \_ 1, vs \_ 2 \_ 0, vs \_ 2 \_ sw, vs \_ 3 \_ 0                               |
-| Destinos del sombreador de píxeles  | ps \_ \_ 1 1, ps \_ 1 \_ 2, ps \_ 1 \_ 3, ps \_ 1 \_ 4, ps \_ 2 \_ 0, ps \_ 2 \_ sw, ps \_ 3 \_ 0 |
+| Destinos del sombreador de píxeles  | ps \_ 1 \_ 1, ps \_ 1 \_ 2, ps \_ 1 \_ 3, ps \_ 1 \_ 4, ps \_ 2 \_ 0, ps \_ 2 \_ sw, ps \_ 3 \_ 0 |
 | Destinos de relleno de textura  | tx \_ 0, tx \_ 1                                                          |
 
 

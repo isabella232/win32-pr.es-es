@@ -1,5 +1,5 @@
 ---
-description: El método DisplaySampleTimes dibuja las marcas de tiempo de un ejemplo multimedia encima de la imagen de vídeo.
+description: El método DisplaySampleTimes dibuja las marcas de tiempo de un ejemplo multimedia sobre la imagen de vídeo.
 ms.assetid: 3741dc74-5311-4cb1-9e6b-4a8bf6113477
 title: Método CDrawImage.DisplaySampleTimes (Winutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b81f8cd1f7e894319b3cd2e48332c9544c6c986f04c2ed87f9014ab331922b41
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9988aaedf9a1c01c83412cdbe9e00533556c9b15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119909965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061302"
 ---
 # <a name="cdrawimagedisplaysampletimes-method"></a>Método CDrawImage.DisplaySampleTimes
 
@@ -53,9 +53,9 @@ Puntero a la [**interfaz IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-i
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Solo se llama a este método en las compilaciones de depuración.
+Solo se llama a este método en compilaciones de depuración.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Solo se llama a este método en las compilaciones de depuración.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

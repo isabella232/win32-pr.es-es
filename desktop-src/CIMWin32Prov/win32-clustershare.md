@@ -25,12 +25,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 66be06bf3a8433a7dba1eb28e6123adb03d622803745838158aa80bda0e8e594
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ccff6ad8d99692d066728c99dd74ab07640af4fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118417996"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160325"
 ---
 # <a name="win32_clustershare-class"></a>Clase ClusterShare de Win32 \_
 
@@ -60,7 +60,7 @@ class Win32_ClusterShare : Win32_Share
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ClusterShare de Win32** tiene estos tipos de miembros:
 
@@ -102,7 +102,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **EN DESUSO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Esta propiedad está obsoleta y ya no se usa. Use el [**método \_ Share.GetAccessMask de Win32**](getaccessmask-method-in-class-win32-share.md) en su lugar. WMI establece el valor de la propiedad **AccessMask** en **NULL.** Para obtener más información sobre cómo establecer el acceso cuando se crea un recurso compartido, vea el [**método Create.**](create-method-in-class-win32-share.md)
+Esta propiedad está obsoleta y ya no se usa. En su lugar, use el [**\_ método Share.GetAccessMask de Win32.**](getaccessmask-method-in-class-win32-share.md) WMI establece el valor de la propiedad **AccessMask** en **NULL.** Para obtener más información sobre cómo establecer el acceso cuando se crea un recurso compartido, vea el [**método Create.**](create-method-in-class-win32-share.md)
 
 Esta propiedad se hereda de [**Win32 \_ Share.**](win32-share.md)
 
@@ -218,7 +218,7 @@ Esta propiedad se hereda de [**Win32 \_ Share.**](win32-share.md)
 
 </dd> <dt>
 
-**Ruta de acceso**
+**Path**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -268,7 +268,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -313,14 +313,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -374,7 +374,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures SHARE INFO \| [**\_ \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| shi502 \_ type")
 </dt> </dl>
 
-Tipo de recurso que se comparte. Los tipos incluyen: unidades de disco, colas de impresión, comunicaciones entre procesos (IPC) y dispositivos generales.
+Tipo de recurso que se comparte. Entre los tipos se incluyen: unidades de disco, colas de impresión, comunicaciones entre procesos (IPC) y dispositivos generales.
 
 Esta propiedad se hereda de [**Win32 \_ Share.**](win32-share.md)
 
@@ -442,7 +442,7 @@ Esta propiedad se hereda de [**Win32 \_ Share.**](win32-share.md)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |

@@ -4,12 +4,12 @@ ms.assetid: a6ed351a-7889-4993-96bf-b03352a815da
 title: Difuso Mapas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 758fc2b5054a30bf8df703941b3cedf0810c378a5fb459d8c5783bb295ff9abe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ab6a85fb93bc1ebcc15735431c1d54be4482a1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119044453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888620"
 ---
 # <a name="diffuse-light-maps-direct3d-9"></a>Difuso Mapas (Direct3D 9)
 

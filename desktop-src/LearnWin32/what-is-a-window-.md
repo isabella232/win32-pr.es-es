@@ -4,12 +4,12 @@ description: ¿Qué es una ventana?
 ms.assetid: eef5e139-91f9-4d8b-9153-e178d7416d7e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0af5d845d1a7eac6474dec9da08dcfde8df9f9fd67bf16d6f59cad94c5af0fe2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8494738e3985f78930549f313cb2868b79b34f3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119631445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159920"
 ---
 # <a name="what-is-a-window"></a>¿Qué es una ventana?
 
@@ -34,7 +34,7 @@ Por lo tanto, cuando piense *en la ventana*, no piense simplemente en la ventana
 -   Sabe cómo dibujarse a sí mismo.
 -   Responde a eventos del usuario o del sistema operativo.
 
-## <a name="parent-windows-and-owner-windows"></a>Propiedad Windows y propietario Windows
+## <a name="parent-windows-and-owner-windows"></a>Propiedad Windows principal y propietario Windows
 
 En el caso de un control de interfaz de usuario, se dice que la ventana de control es *el elemento secundario* de la ventana de aplicación. La ventana de aplicación es *el elemento primario* de la ventana de control. La ventana primaria proporciona el sistema de coordenadas utilizado para colocar una ventana secundaria. Tener una ventana primaria afecta a aspectos de la apariencia de una ventana; Por ejemplo, se recorta una ventana secundaria para que ninguna parte de la ventana secundaria pueda aparecer fuera de los bordes de su ventana primaria.
 
@@ -67,11 +67,11 @@ Tenga en cuenta que los identificadores no son punteros. Si *hwnd* es una variab
 
 ## <a name="screen-and-window-coordinates"></a>Coordenadas de pantalla y ventana
 
-Las coordenadas se miden en píxeles independientes del dispositivo. Tendremos más información sobre la  parte independiente del dispositivo de *los* píxeles independientes del dispositivo cuando se deba a los gráficos.
+Las coordenadas se miden en píxeles independientes del dispositivo. Tendremos más que decir sobre  la parte independiente del dispositivo de *los* píxeles independientes del dispositivo cuando se deba a los gráficos.
 
 En función de la tarea, puede medir las coordenadas con respecto a la pantalla, con respecto a una ventana (incluido el marco) o con respecto al área cliente de una ventana. Por ejemplo, colocaría una ventana en la pantalla mediante coordenadas de pantalla, pero dibujaría dentro de una ventana mediante coordenadas de cliente. En cada caso, el origen (0, 0) siempre es la esquina superior izquierda de la región.
 
-![ilustración que muestra las coordenadas de pantalla, ventana y cliente](images/coordinates01.png)
+![ilustración en la que se muestran las coordenadas de pantalla, ventana y cliente](images/coordinates01.png)
 
 ## <a name="next"></a>Siguientes
 

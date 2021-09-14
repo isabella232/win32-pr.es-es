@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 24c5195d38aeaebefd1713df31f23b6b2ec7b2324a31381027f3442b541678c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1a632fa867269f04e8f5f66e6bc352ef1701cd9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118094182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160440"
 ---
 # <a name="id3dxanimationcontrollervalidateevent-method"></a>Método ID3DXAnimationController::ValidateEvent
 
@@ -57,7 +57,7 @@ Devuelve S \_ OK si el identificador de evento es válido y el evento aún no se
 
 Devuelve E \_ FAIL si el identificador del evento no es válido o el evento se ha completado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método indicará que un identificador de evento es válido incluso si el evento se está ejecutando pero aún no se ha completado.
 
@@ -72,7 +72,7 @@ El método indicará que un identificador de evento es válido incluso si el eve
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

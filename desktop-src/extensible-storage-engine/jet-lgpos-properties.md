@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39509714
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5273e10397de4eadb15d125f67d2127ee1b447db786d994c819bb0d45ba509da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4fbd1ae6505a3999a071423f79517dcbf6328101
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118765520"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887425"
 ---
 # <a name="jet_lgpos-properties"></a>JET_LGPOS propiedades
 

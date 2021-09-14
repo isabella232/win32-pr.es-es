@@ -1,7 +1,7 @@
 ---
 description: Define la lista de redes permitidas y denegadas para las máquinas.
 ms.assetid: 21502c97-36a4-4cd6-9dd0-ee44c4cc522f
-title: elemento networkFilter (WLANPolicy)
+title: Elemento networkFilter (WLANPolicy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 1fff0738b8497bd52bee02a04402c77e959e2689c66e47519be20c95a58d56a9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d78a23ba1a456f1ad45745fcc25580c27de148c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119684385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161175"
 ---
-# <a name="networkfilter-wlanpolicy-element"></a>elemento networkFilter (WLANPolicy)
+# <a name="networkfilter-wlanpolicy-element"></a>Elemento networkFilter (WLANPolicy)
 
 El elemento networkFilter (WLANPolicy) define la lista de redes permitidas y denegadas para las máquinas.
 
@@ -103,14 +103,14 @@ El **elemento networkFilter** se define mediante el [**elemento WLANPolicy.**](w
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

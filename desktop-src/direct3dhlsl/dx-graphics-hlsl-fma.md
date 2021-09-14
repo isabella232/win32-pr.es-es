@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d2b9a6932a1b0f0f8f1f7bc674920162def49e556c8d5b757547d4837caa60b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 287f07881a00ca53a3f1fe702cf4d95b64bf14c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119120209"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964651"
 ---
 # <a name="fma"></a>fma
 
@@ -63,11 +63,11 @@ Devuelve la suma multiplicada de precisión doble de \* b + c.
 
 Suma multiplicada de precisión doble de parámetros *a* \* *b*  +  *c*. El valor devuelto debe ser preciso a 0,5 unidades de precisión mínima (ULP).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **intrínseco fma** debe admitir NaN, INF y Denorms.
 
-Para usar la función intrínseca **fma** en el código del sombreador, llame al método [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-checkfeaturesupport) con [**D3D11 \_ FEATURE \_ D3D11 \_ OPTIONS**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_feature) para comprobar que el dispositivo Direct3D admite la opción de característica [**ExtendedDoublesShaderInstructions.**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options) El **intrínseco fma** requiere un controlador de pantalla WDDM 1.2 y todos los controladores de pantalla de WDDM 1.2 deben admitir **fma**. Si la aplicación crea [](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) un dispositivo de representación con el nivel de característica 11.0 o 11.1 y el destino de compilación es el modelo de sombreador 5 o posterior, el código fuente HLSL puede usar el intrínseco **fma.**
+Para usar la función intrínseca **fma** en el código del sombreador, llame al método [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-checkfeaturesupport) con [**D3D11 \_ FEATURE \_ D3D11 \_ OPTIONS**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_feature) para comprobar que el dispositivo Direct3D admite la opción de característica [**ExtendedDoublesShaderInstructions.**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options) El **intrínseco fma** requiere un controlador de pantalla WDDM 1.2 y todos los controladores de pantalla de WDDM 1.2 deben admitir **fma**. Si la aplicación crea un dispositivo de representación con el nivel [de](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) característica 11.0 o 11.1 y el destino de compilación es el modelo de sombreador 5 o posterior, el código fuente HLSL puede usar la función intrínseca **fma.**
 
 ### <a name="type-description"></a>Descripción del tipo
 
@@ -92,7 +92,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                | Compatible |
 |-------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5 o posterior](d3d11-graphics-reference-sm5.md) | Sí       |
+| [Modelo de sombreador 5 o posterior](d3d11-graphics-reference-sm5.md) | sí       |
 
 
 
@@ -106,11 +106,11 @@ Esta función se admite en los siguientes modelos de sombreador.
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
-| Header<br/>                   | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

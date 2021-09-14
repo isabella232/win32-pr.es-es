@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1c200e96024075d0c2880b294c197938a5ec0a6f3e1da4cb019d5ecd3ed32b9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4f7589a67b9a3b1454e3c65b17ad6f584ce0e655
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119802775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161273"
 ---
 # <a name="inapsystemhealthvalidatorvalidate-method"></a>INapSystemHealthValidator::Validate (Método)
 
@@ -62,13 +62,13 @@ Puntero COM a un [**objeto INapSystemHealthValidationRequest**](inapsystemhealth
 Duración, en milisegundos, del período de tiempo de espera de comunicación. El validador de estado del sistema (SHV) debe responder dentro de esta cantidad de tiempo; De lo contrario, se descarta la respuesta.
 
 > [!Note]  
-> El tiempo de espera predeterminado para todos los SHV es de 2000 milisegundos. El uso de un valor distinto del predeterminado cambiará el tiempo de espera de todos los SHV registrados.
+> El tiempo de espera predeterminado para todas las SHV es de 2000 milisegundos. El uso de un valor distinto del predeterminado cambiará el tiempo de espera de todos los SHV registrados.
 
  
 
 </dd> <dt>
 
-*devolución de llamada* \[ En\]
+*Devolución de llamada* \[ En\]
 </dt> <dd>
 
 Puntero al objeto de devolución de llamada [**INapServerCallback**](inapservercallback.md). Los SHV usan este puntero de devolución de llamada cuando **devuelven E \_ PENDING** desde la llamada a **INapSystemHealthValidator::Validate**. Se usa para la validación asincrónica. Se espera que los SHV respondan dentro de la *hora hintTimeOutInMsec* o, de lo contrario, se descartará la respuesta.
@@ -85,13 +85,13 @@ Si se devuelve cualquier otro código de error, el sistema asume que se ha produ
 |------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | Indica que el validador ha establecido un SoHResponse en el objeto "request".<br/>                                                                                                                                                                                                                                                                                                                                                                                                        |
 | <dl> <dt>**E \_ PENDIENTE**</dt> </dl>                  | Indica que se llamará a OnComplete() en un subproceso independiente.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| <dl> <dt>**SERVIDOR \_ RPC S NO \_ \_ DISPONIBLE**</dt> </dl> | Indica que el proceso de validador de estado del sistema (SHV) finalizó sin que NapServer liberara realmente una referencia a él. NapServer intentará volver a crear una nueva referencia a la SHV y volverá a ejecutar la llamada Validate una vez. Si se produce un error en la creación del objeto o la validación que se vuelve a ejecutar, la SHV se quita de la lista de SHV cargadas. La única manera de volver a cargar este SHV es anular el registro y volver a registrar la SHV, o cuando napServer se reinicie.<br/> |
+| <dl> <dt>**SERVIDOR \_ RPC S NO \_ \_ DISPONIBLE**</dt> </dl> | Indica que el proceso de validador de estado del sistema (SHV) finalizó sin que NapServer liberara realmente una referencia a él. NapServer intentará volver a crear una nueva referencia a la SHV y volverá a ejecutar la llamada Validate una vez. Si se produce un error en la creación del objeto o la validación que se vuelve a ejecutar, el SHV se quita de la lista de SHV cargados. La única manera de volver a cargar este SHV es anular el registro y volver a registrar la SHV, o cuando se reinicie NapServer.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para admitir la detección de intrusiones, se pedirá a los SHV que validen la máquina cliente independientemente de si el cliente envió un [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) destinado a la SHV.
 
@@ -123,12 +123,12 @@ La SHV no debe contener referencias a la *solicitud o* *devolución de llamada* 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
-| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

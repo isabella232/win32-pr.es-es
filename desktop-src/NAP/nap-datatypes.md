@@ -16,12 +16,12 @@ keywords:
 - MessageId
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 550baa14779ccefaec14605938edb6076e7cc332aa9d1a2390ab430f7568e844
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f5780d73701354a12b244c5e5ea6167c2cfba70d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119802625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161259"
 ---
 # <a name="nap-datatypes"></a>Tipos de datos NAP
 
@@ -132,11 +132,11 @@ Valor único que se usa para identificar los mensajes del sistema NAP.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                                                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                                |
-| Header<br/>                   | <dl> <dt>NapTypes.h; </dt> <dt>NapEnforcementClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapTypes.h; </dt> <dt>NapEnforcementClient.h</dt> </dl> |
 
 
 

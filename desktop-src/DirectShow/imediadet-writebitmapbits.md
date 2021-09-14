@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: fc2a967f5b0e99c50317e9dc226a4b345c6790a8ce2b6e5d42eb50dfdc3b105b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79bf54f136cc2ab9db1208ad6c2b4e5cb12bd950
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118154160"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886836"
 ---
 # <a name="imediadetwritebitmapbits-method"></a>IMediaDet::WriteBitmapBits (método)
 
@@ -95,7 +95,7 @@ Devuelve S \_ OK it successful. De lo contrario, devuelve **un valor HRESULT** q
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de llamar a este método, establezca el nombre de archivo y la secuencia mediante una llamada a [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream**](imediadet-put-currentstream.md).
 
@@ -122,7 +122,7 @@ Este método coloca el detector de medios en modo de captura de mapa de bits. Un
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

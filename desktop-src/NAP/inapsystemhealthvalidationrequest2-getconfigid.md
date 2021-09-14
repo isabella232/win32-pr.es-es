@@ -3,9 +3,9 @@ title: Método INapSystemHealthValidationRequest2 GetConfigID (NapSystemHealthVa
 description: Lo usan los validadores de estado del sistema (SHV) para recuperar el identificador de configuración en una solicitud de validación.
 ms.assetid: 6d5564e4-8386-444b-a859-f0c855e4ee30
 keywords:
-- Método NAP de GetConfigID
-- Método NAP de GetConfigID, interfaz INapSystemHealthValidationRequest2
-- Interfaz NAP de INapSystemHealthValidationRequest2, método GetConfigID
+- Método GetConfigID NAP
+- Método GetConfigID NAP , interfaz INapSystemHealthValidationRequest2
+- INapSystemHealthValidationRequest2 interface NAP , Método GetConfigID
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72acdd170726d2d94e4fbc46864a7e5aab6b902d7b1ee25b63ee0fa9e376c75e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0f3b41d2f08dc117fd28e704d607c628ec73e6ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119625985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161276"
 ---
 # <a name="inapsystemhealthvalidationrequest2getconfigid-method"></a>INapSystemHealthValidationRequest2::GetConfigID (método)
 
@@ -50,13 +50,13 @@ HRESULT GetConfigID(
 *configID* \[ out\]
 </dt> <dd>
 
-En la devolución, puntero a UINT32 que contiene un identificador de configuración de shv.
+En la devolución, puntero a UINT32 que contiene un identificador de configuración de la SHV.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los siguientes códigos de error en función del resultado de esta operación.
+Devuelve uno de los siguientes códigos de error según el resultado de esta operación.
 
 
 
@@ -73,17 +73,17 @@ Devuelve uno de los siguientes códigos de error en función del resultado de es
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
-| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

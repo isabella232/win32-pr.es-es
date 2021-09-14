@@ -4,12 +4,12 @@ ms.assetid: 53ed2eb4-2c29-48fd-b7fa-0c27bf155758
 title: Formatos de nombre de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57c2d4a31904e1cdc6c08da596e2db24054389387ef90142001e7f0e6e520567
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c1fb99a9e6064cd3883a8d71c1e76ca853d88661
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118915550"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160908"
 ---
 # <a name="user-name-formats"></a>Formatos de nombre de usuario
 
@@ -20,13 +20,13 @@ Cuando una aplicación usa el API de Administración credenciales para solicitar
 
 ## <a name="user-principal-name"></a>Nombre principal del usuario
 
-[*El formato de nombre principal*](../secgloss/u-gly.md) de usuario (UPN) se usa para especificar un nombre de estilo de Internet, como <b>UserName@Example.Microsoft.com</b> . En la tabla siguiente se resumen las partes de un UPN.
+[*El formato de nombre principal*](../secgloss/u-gly.md) de usuario (UPN) se usa para especificar un nombre de estilo Internet, como <b>UserName@Example.Microsoft.com</b> . En la tabla siguiente se resumen las partes de un UPN.
 
 
 
 | Parte                                                        | Ejemplo                                |
 |-------------------------------------------------------------|----------------------------------------|
-| Nombre de la cuenta de usuario. También se conoce como nombre de inicio de sesión.<br/> | *UserName*<br/>                  |
+| Nombre de la cuenta de usuario. También se conoce como el nombre de inicio de sesión.<br/> | *UserName*<br/>                  |
 | Separador. Literal de carácter, at sign (@).<br/> | @<br/>                           |
 | Sufijo UPN. También se conoce como nombre de dominio.<br/>       | *Example.Microsoft.com* <br/> |
 
@@ -34,7 +34,7 @@ Cuando una aplicación usa el API de Administración credenciales para solicitar
 
  
 
-Un UPN se puede definir implícita o explícitamente. Un UPN implícito tiene el formato <b>UserName@DNSDomainName.com</b> . Un UPN implícito siempre está asociado a la cuenta del usuario, incluso si no se define un UPN explícito. Un UPN explícito tiene el formato , donde el administrador define explícitamente las cadenas de nombre <i><b>Name@Suffix</b></i> y sufijo.
+Un UPN se puede definir implícita o explícitamente. Un UPN implícito tiene el formato <b>UserName@DNSDomainName.com</b> . Un UPN implícito siempre está asociado a la cuenta del usuario, aunque no se defina un UPN explícito. Un UPN explícito tiene el formato , donde el administrador define explícitamente las cadenas de nombre <i><b>Name@Suffix</b></i> y sufijo.
 
 ## <a name="down-level-logon-name"></a>Down-Level de inicio de sesión
 
@@ -46,7 +46,7 @@ El formato de nombre de inicio de sesión de nivel inferior se usa para especifi
 |----------------------------------------------------------------|-----------------------|
 | Nombre de dominio NetBIOS.<br/>                                | *DOMAIN*<br/>   |
 | Separador. Literal de carácter, la barra diagonal inversa ( \\ ).<br/> | **\\**<br/>     |
-| Nombre de la cuenta de usuario. También se conoce como nombre de inicio de sesión.<br/>    | *UserName*<br/> |
+| Nombre de la cuenta de usuario. También se conoce como el nombre de inicio de sesión.<br/>    | *UserName*<br/> |
 
 
 

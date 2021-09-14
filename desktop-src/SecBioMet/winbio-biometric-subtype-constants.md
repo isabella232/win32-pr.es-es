@@ -14,26 +14,26 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 07e6dc285e1a19fab8e0363391fbd81429e931cd
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122630844"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160786"
 ---
 # <a name="winbio_biometric_subtype-constants"></a>Constantes \_ DE \_ SUBTIPO BIOMÉTRICO DE WINBIO
 
-**WINBIO \_ Las constantes \_ BIOMETRIC SUBTYPE** se usan en Windows Biometric Framework para proporcionar información adicional sobre una medida biométrica. Las siguientes constantes se pueden usar cuando no se requiere ningún subtipo o cuando se requiere algún subtipo.
+**WINBIO \_ Las constantes \_ BIOMETRIC SUBTYPE** se usan en Windows marco biométrico para proporcionar información adicional sobre una medida biométrica. Las siguientes constantes se pueden usar cuando no se requiere ningún subtipo o cuando se requiere algún subtipo.
 
 
 
 | Constante o valor                                                                                                                                                                                                                                                            | Descripción                        |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------|
 | <span id="WINBIO_SUBTYPE_NO_INFORMATION"></span><span id="winbio_subtype_no_information"></span><dl> <dt>**WINBIO \_ SUBTIPO \_ SIN \_ INFORMACIÓN**</dt> <dt>0x00</dt> </dl> | No hay información de subtipo.<br/> |
-| <span id="WINBIO_SUBTYPE_ANY"></span><span id="winbio_subtype_any"></span><dl> <dt>**WINBIO \_ SUBTYPE \_ ANY**</dt> <dt>0xFF</dt> </dl>                                   | Cualquier subtipo.<br/>            |
+| <span id="WINBIO_SUBTYPE_ANY"></span><span id="winbio_subtype_any"></span><dl> <dt>**WINBIO \_ SUBTIPO \_ CUALQUIER**</dt> <dt>0xFF</dt> </dl>                                   | Cualquier subtipo.<br/>            |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para buscar los subtipos biométricos disponibles para un tipo biométrico determinado, use la tabla siguiente:
 
@@ -106,7 +106,7 @@ Para obtener más información, vea [Constantes de aplicación cliente](client-a
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
 | Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 

@@ -36,12 +36,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b7533e5d1e842e6794a9f9c386103b781afa0404ee181354c420770358f7e8a2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 15be9b176680e8abb259d3d011da9d6cec0c2fa8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119751225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061455"
 ---
 # <a name="win32_systemdriver-class"></a>Clase SystemDriver de Win32 \_
 
@@ -80,7 +80,7 @@ class Win32_SystemDriver : Win32_BaseService
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemDriver de Win32** tiene estos tipos de miembros:
 
@@ -236,7 +236,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| lpDisplayName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre para mostrar")
 </dt> </dl>
 
-Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva entre mayúsculas y minúsculas en el Administrador de control de servicios. **Las comparaciones** de DisplayName siempre no tienen en cuenta las mayúsculas y minúsculas.
+Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva en el Administrador de control de servicios. **Las comparaciones** de DisplayName siempre no tienen en cuenta las mayúsculas y minúsculas.
 
 Restricciones: acepta el mismo valor que la **propiedad Name.**
 
@@ -310,7 +310,7 @@ El sistema intenta reiniciarse con una configuración válida.
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconocido** ("Desconocido")
+<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** ("Unknown")
 
 
 </dt> <dd>
@@ -333,7 +333,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwWin32ExitCode"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Código de salida")
 </dt> </dl>
 
-Windows código de error que define los problemas detectados al iniciar o detener el servicio. Esta propiedad se establece en **\_ ERROR SERVICE SPECIFIC \_ \_ ERROR** (1066) cuando el error es único para el servicio representado por esta clase y la información sobre el error está disponible en la propiedad **ServiceSpecificExitCode.** El servicio establece este valor en **NO \_ ERROR** cuando se ejecuta y, de nuevo, en la finalización normal.
+Windows código de error que define los problemas detectados al iniciar o detener el servicio. Esta propiedad se establece en **ERROR \_ SERVICE SPECIFIC \_ \_ ERROR** (1066) cuando el error es único para el servicio representado por esta clase y la información sobre el error está disponible en la **propiedad ServiceSpecificExitCode.** El servicio establece este valor en **NO \_ ERROR cuando se** ejecuta y, de nuevo, en la finalización normal.
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
@@ -387,9 +387,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| lpBinaryPathName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre de ruta de acceso del archivo")
 </dt> </dl>
 
-Ruta de acceso completa al archivo binario del servicio que implementa el servicio.
+Ruta de acceso completa al archivo binario de servicio que implementa el servicio.
 
-Ejemplo: " \\ SystemRoot \\ System32 \\ drivers \\afd.sys"
+Ejemplo: \\ "SystemRoot \\ System32 \\ drivers \\afd.sys"
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
@@ -407,7 +407,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwServiceSpecificExitCode"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Código de salida específico del servidor")
 </dt> </dl>
 
-Código de error específico del servicio para los errores que se producen mientras el servicio se inicia o se detiene. El servicio representado por esta clase define los códigos de salida. Este valor solo se establece cuando el valor **de la propiedad ExitCode** es **ERROR SERVICE SPECIFIC \_ \_ \_ ERROR** (1066).
+Código de error específico del servicio para los errores que se producen mientras el servicio se está iniciando o deteniendo. El servicio representado por esta clase define los códigos de salida. Este valor solo se establece cuando el valor **de la propiedad ExitCode** es **ERROR SERVICE SPECIFIC \_ \_ \_ ERROR** (1066).
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
@@ -422,7 +422,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwServiceType"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tipo de servicio")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwServiceType"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Service Type")
 </dt> </dl>
 
 Tipo de servicio proporcionado a los procesos de llamada.
@@ -442,7 +442,7 @@ Los valores son:
 
 <span id="File_System_Driver"></span><span id="file_system_driver"></span><span id="FILE_SYSTEM_DRIVER"></span>
 
-**Controlador del sistema de archivos** ("Controlador del sistema de archivos")
+**Controlador del sistema de archivos** ("controlador del sistema de archivos")
 
 
 </dt> <dd></dd> <dt>
@@ -463,7 +463,7 @@ Los valores son:
 
 <span id="Own_Process"></span><span id="own_process"></span><span id="OWN_PROCESS"></span>
 
-**Propio proceso** ("Proceso propio")
+**Proceso propio** ("Proceso propio")
 
 
 </dt> <dd></dd> <dt>
@@ -477,7 +477,7 @@ Los valores son:
 
 <span id="Interactive_Process"></span><span id="interactive_process"></span><span id="INTERACTIVE_PROCESS"></span>
 
-**Proceso interactivo** ("Proceso interactivo")
+**Proceso interactivo** ("proceso interactivo")
 
 
 </dt> <dd></dd> </dl>
@@ -527,7 +527,7 @@ Esta propiedad se hereda de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
 </dt> <dd>
 
-Controlador de dispositivo iniciado por el cargador de sistema operativo (válido solo para los servicios de controlador).
+Controlador de dispositivo iniciado por el cargador del sistema operativo (válido solo para los servicios de controlador).
 
 </dd> <dt>
 
@@ -560,7 +560,7 @@ Servicio que el administrador de control de servicios iniciará automáticamente
 
 </dt> <dd>
 
-Servicio que va a iniciar el administrador de control de servicios cuando un proceso llama al [**método StartService.**](startservice-method-in-class-win32-systemdriver.md)
+Servicio que va a iniciar el administrador de control de servicios cuando un proceso llame al [**método StartService.**](startservice-method-in-class-win32-systemdriver.md)
 
 </dd> <dt>
 
@@ -589,7 +589,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| lpServiceStartName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Starting Account Name")
 </dt> </dl>
 
-Nombre de cuenta con el que se ejecuta el servicio. Según el tipo de servicio, el nombre de la cuenta puede tener el formato nombreDe DomainName \\ NombreDeUsuario. El proceso de servicio se registrará mediante uno de estos dos formularios cuando se ejecute. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica **NULL,** el servicio se registrará como la cuenta LocalSystem. Para los controladores de nivel de sistema o kernel, **StartName** contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Además, si **se especifica NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio.
+Nombre de cuenta con el que se ejecuta el servicio. Dependiendo del tipo de servicio, el nombre de la cuenta puede tener el formato nombreDeNombreDe \\ DomainName. El proceso de servicio se registrará mediante uno de estos dos formularios cuando se ejecute. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica **NULL,** el servicio se inicia sesión como la cuenta LocalSystem. En el caso de los controladores de kernel o de nivel de sistema, **StartName** contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Además, si **se especifica NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio.
 
 Ejemplo: "DWDOM \\ Admin"
 
@@ -640,7 +640,7 @@ Los valores son:
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-**En** ejecución ("En ejecución")
+**Ejecución** ("En ejecución")
 
 
 </dt> <dd></dd> <dt>
@@ -661,14 +661,14 @@ Los valores son:
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-**En pausa** ("En pausa")
+**En pausa** ("en pausa")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> </dl>
@@ -687,7 +687,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -718,7 +718,7 @@ Los valores son:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -732,14 +732,14 @@ Los valores son:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -790,10 +790,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Class Name")
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Class Name")
 </dt> </dl>
 
-Escriba el nombre del sistema que hospeda este servicio.
+Nombre de tipo del sistema que hospeda este servicio.
 
 Esta propiedad se hereda del [**servicio CIM. \_**](cim-service.md)
 
@@ -808,7 +808,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Name")
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Name")
 </dt> </dl>
 
 Nombre del sistema que hospeda este servicio.
@@ -829,23 +829,23 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwTagId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Id. de etiqueta")
 </dt> </dl>
 
-Valor de etiqueta único para este servicio del grupo. Un valor de 0 (cero) indica que no se ha asignado una etiqueta al servicio. Una etiqueta se puede usar para ordenar el inicio del servicio dentro de un grupo de pedidos de carga especificando un vector de orden de etiquetas en el registro ubicado en:
+Valor de etiqueta único para este servicio en el grupo. Un valor de 0 (cero) indica que no se ha asignado una etiqueta al servicio. Una etiqueta se puede usar para ordenar el inicio del servicio dentro de un grupo de pedidos de carga especificando un vector de orden de etiquetas en el registro ubicado en:
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
 **HKEY \_ LOCAL \_ MACHINE \\ System \\ CurrentControlSet \\ Control \\ GroupOrderList**.
 
-Las etiquetas solo se evalúan para los servicios de tipo de inicio del controlador kernel y del controlador del sistema de archivos que tienen modos de inicio de arranque o del sistema.
+Las etiquetas solo se evalúan para los servicios de tipo de inicio del controlador de kernel y del controlador del sistema de archivos que tienen modos de inicio de arranque o del sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemDriver de Win32** se deriva de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de VBScript [List System Drivers](https://Gallery.TechNet.Microsoft.Com/5629cc13-cefc-4e51-a24f-aac6db23d141) Muestra los controladores del sistema instalados en un archivo HTML.
+El [ejemplo de VBScript Enumerar](https://Gallery.TechNet.Microsoft.Com/5629cc13-cefc-4e51-a24f-aac6db23d141) controladores del sistema muestra los controladores del sistema instalados en un archivo HTML.
 
 En el siguiente ejemplo de PowerShell se recuperan varias propiedades de los controladores del sistema en ejecución en un equipo.
 
@@ -870,11 +870,11 @@ Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**BaseService de Win32 \_**](win32-baseservice.md)
+[**Win32 \_ BaseService**](win32-baseservice.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

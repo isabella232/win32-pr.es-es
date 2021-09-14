@@ -1,19 +1,19 @@
 ---
-description: Las siguientes herramientas solo están disponibles en el Kit de desarrollo de software (SDK) de Microsoft Windows.
+description: Las siguientes herramientas solo están disponibles en microsoft Windows Software Development Kit (SDK).
 ms.assetid: 53b0fdaf-73a6-4934-acec-a7c5c22699f5
 title: Herramientas de desarrollo de ensamblados en paralelo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b230ff93f2bf3390da979a26e8a34de237261d5da6fc36dff74ca23ae5d56eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae941c3471fdd4c2126d509431de4aa852e8b3aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119884835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161018"
 ---
 # <a name="side-by-side-assembly-development-tools"></a>Herramientas de desarrollo de ensamblados en paralelo
 
-Las siguientes herramientas solo están disponibles en el Kit de desarrollo de software (SDK) de Microsoft Windows.
+Las siguientes herramientas solo están disponibles en microsoft Windows Software Development Kit (SDK).
 
 
 

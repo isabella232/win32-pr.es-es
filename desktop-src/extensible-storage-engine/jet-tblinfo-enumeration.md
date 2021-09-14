@@ -40,12 +40,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b2af9bfd69f81b518eba42f435a457c9baaa0d0ce8ddbac1424b997329a3ef0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad43dcecf65fdc9fb8dd53bdf686a077e6bdfa8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119832685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887313"
 ---
 # <a name="jet_tblinfo-enumeration"></a>JET_TblInfo enumeración
 
@@ -67,7 +67,7 @@ Dim instance As JET_TblInfo
 public enum JET_TblInfo
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -80,7 +80,7 @@ public enum JET_TblInfo
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Valor predeterminado</td>
+<td>Default</td>
 <td>Opciones predeterminadas Recupera un <a href="dn335219(v=exchg.10).md">JET_OBJECTINFO</a> que contiene información sobre la tabla. Use esta opción con <a href="dn292198(v=exchg.10).md">JetGetTableInfo(JET_SESID, JET_TABLEID, JET_OBJECTINFO, JET_TblInfo).</a></td>
 </tr>
 <tr class="even">
@@ -106,23 +106,23 @@ public enum JET_TblInfo
 <tr class="even">
 <td></td>
 <td>SpaceOwned</td>
-<td>Obtiene el número de páginas de propiedad de la tabla. Use esta opción con <a href="dn292201(v=exchg.10).md">JetGetTableInfo(JET_SESID, JET_TABLEID, Int32, JET_TblInfo).</a></td>
+<td>Obtiene el número de páginas de propiedad de la tabla. Use esta opción <a href="dn292201(v=exchg.10).md">con JetGetTableInfo(JET_SESID, JET_TABLEID, Int32, JET_TblInfo).</a></td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Espacio disponible</td>
-<td>Obtiene el número de páginas disponibles en la tabla. Use esta opción con <a href="dn292201(v=exchg.10).md">JetGetTableInfo(JET_SESID, JET_TABLEID, Int32, JET_TblInfo).</a></td>
+<td>Obtiene el número de páginas disponibles en la tabla. Use esta opción <a href="dn292201(v=exchg.10).md">con JetGetTableInfo(JET_SESID, JET_TABLEID, Int32, JET_TblInfo).</a></td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TemplateTableName</td>
-<td>Si la tabla es una tabla derivada, el resultado se rellenará con el nombre de la tabla de la que la tabla derivada heredó su DDL. Si la tabla no es una tabla derivada, el búfer será una cadena vacía. Use esta opción con <a href="dn292204(v=exchg.10).md">JetGetTableInfo(JET_SESID, JET_TABLEID, String, JET_TblInfo).</a></td>
+<td>Si la tabla es una tabla derivada, el resultado se rellenará con el nombre de la tabla de la que la tabla derivada heredó su DDL. Si la tabla no es una tabla derivada, el búfer tendrá una cadena vacía. Use esta opción con <a href="dn292204(v=exchg.10).md">JetGetTableInfo(JET_SESID, JET_TABLEID, String, JET_TblInfo).</a></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

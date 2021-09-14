@@ -4,12 +4,12 @@ ms.assetid: 29280a02-1c26-4b54-8468-707dd96dea1d
 title: Iluminación difusa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9906742b47b959336fd882748388a2f10776b6adb06eb98bc23effb6576793be
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f51e45093786348aaa115ec38c420acec471f718
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119675780"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888612"
 ---
 # <a name="diffuse-lighting-direct3d-9"></a>Iluminación difusa (Direct3D 9)
 
@@ -37,7 +37,7 @@ Iluminación difusa = suma \[ C<sub>d</sub> \* L<sub>d</sub> \* (N<sup>.</sup> L
 
 El valor de C<sub>d</sub> es:
 
--   vertex color1, si DIFUSMATERIALSOURCE = D3DMCS COLOR1 y el primer color de vértice se proporciona \_ en la declaración de vértice.
+-   vertex color1, si DIFFUSEMATERIALSOURCE = D3DMCS COLOR1 y el primer color de vértice se proporciona \_ en la declaración de vértice.
 -   vertex color2, si DIFFUSEMATERIALSOURCE = D3DMCS COLOR2 y el segundo color de vértice se proporciona \_ en la declaración de vértice.
 -   color difuso de material
 

@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 1fdd1533fd836c53afcb1a3242563fa1467ba58045ae573ded782b861688d94d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b8ef79ccd00240e09b97791045bfa0869d579dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119742595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888145"
 ---
 # <a name="texturecubesample-methods"></a>Métodos TextureCube::Sample
 
@@ -35,7 +35,7 @@ Muestrea una textura.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

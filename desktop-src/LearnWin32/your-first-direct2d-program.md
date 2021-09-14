@@ -4,20 +4,20 @@ description: Vamos a crear nuestro primer programa de Direct2D. El programa no h
 ms.assetid: 940cc5e4-2952-4714-bf32-c611a965f819
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cb7b9b4a81b9e3767f9d53d0c5872b170772c1cb60b4a74c599401de342ee05
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d445f98c5dc6a6e5d1aa91d913010cb406a67992
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119754395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159911"
 ---
 # <a name="your-first-direct2d-program"></a>Su primer programa de Direct2D
 
 Vamos a crear nuestro primer programa de Direct2D. El programa no hace nada sofisticado: simplemente dibuja un círculo que rellena el área cliente de la ventana. Pero este programa presenta muchos conceptos esenciales de Direct2D.
 
-![una captura de pantalla del programa del círculo.](images/graphics08.png)
+![una captura de pantalla del programa de círculo.](images/graphics08.png)
 
-Esta es la lista de código para el programa Circle. El programa vuelve a utilizar la `BaseWindow` clase que se definió en el tema [Administración del estado de la aplicación](managing-application-state-.md). Los temas posteriores examinarán el código en detalle.
+Esta es la lista de código para el programa Circle. El programa vuelve a utilizar la `BaseWindow` clase que se definió en el tema Administración del [estado de la aplicación](managing-application-state-.md). Los temas posteriores examinarán el código en detalle.
 
 
 ```C++
@@ -204,17 +204,17 @@ LRESULT MainWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 
 
-Puede descargar el proyecto de Visual Studio completo de [Direct2D Circle Sample](direct2d-circle-sample.md).
+Puede descargar el proyecto de Visual Studio completo desde Direct2D Circle Sample (Ejemplo [de círculo de Direct2D).](direct2d-circle-sample.md)
 
-## <a name="the-d2d1-namespace"></a>El espacio de nombres D2D1
+## <a name="the-d2d1-namespace"></a>Espacio de nombres D2D1
 
-El **espacio de nombres D2D1** contiene funciones y clases auxiliares. No forman parte estrictamente de la API de Direct2D ( puede programar Direct2D sin usarlos), pero ayudan a simplificar el código. El **espacio de nombres D2D1** contiene:
+El **espacio de nombres D2D1** contiene funciones y clases auxiliares. No forman parte estrictamente de la API de Direct2D (puede programar Direct2D sin usarlos), pero ayudan a simplificar el código. El **espacio de nombres D2D1** contiene:
 
 -   Clase [**ColorF**](/windows/desktop/api/d2d1helper/nl-d2d1helper-colorf) para construir valores de color.
 -   [**Matrix3x2F para**](/windows/desktop/api/d2d1helper/nl-d2d1helper-matrix3x2f) construir matrices de transformación.
 -   Conjunto de funciones para inicializar estructuras de Direct2D.
 
-Verá ejemplos del espacio de nombres **D2D1** en este módulo.
+Verá ejemplos del espacio de nombres **D2D1** a lo largo de este módulo.
 
 ## <a name="next"></a>Siguientes
 

@@ -7,12 +7,12 @@ keywords:
 - formato de píxel de coincidencia más adecuado de OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 258364e18ff38cb67edd1315f261a55a91f58fe940b026e1fcb7b63ed2e12eac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 143800a9c43d8c8a7779bb5e6cd119c6737f8129
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119063305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161133"
 ---
 # <a name="choosing-and-setting-a-best-match-pixel-format"></a>Elegir y establecer un formato Best-Match píxeles
 

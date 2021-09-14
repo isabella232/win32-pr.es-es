@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4f4e9ff0078f6efe8dee9b060e61858c24aea0a64e7e35b9fb867125b8612ed3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff31707dc409db1e72c36866150c5a0b24c53f9a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119908085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160185"
 ---
 # <a name="critcheckin-function"></a>Función CritCheckIn
 
@@ -45,7 +45,7 @@ BOOL WINAPI CritCheckIn(
 *pcCrit* 
 </dt> <dd>
 
-Puntero a una [**sección crítica de CCritSec.**](ccritsec.md)
+Puntero a una sección crítica de [**CCritSec.**](ccritsec.md)
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Puntero a una [**sección crítica de CCritSec.**](ccritsec.md)
 
 En las compilaciones de depuración, devuelve **TRUE** si el subproceso actual es el propietario de esta sección crítica o **FALSE** en caso contrario. En las compilaciones comerciales, siempre devuelve **TRUE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función es especialmente útil dentro de la macro [**ASSERT**](assert.md) para probar si un subproceso posee un bloqueo determinado.
+Esta función es especialmente útil dentro de la macro [**ASSERT,**](assert.md) para probar si un subproceso posee un bloqueo determinado.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -89,7 +89,7 @@ En el ejemplo de código siguiente se muestra cómo usar esta función:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

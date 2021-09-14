@@ -4,16 +4,16 @@ ms.assetid: BCF69196-D4E4-41D0-B372-5000FD50164B
 title: Proveedores de credenciales en Windows 10
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38543127709007407c013a2a8ff047f7c91f4440351653061e894f4e7c2d90d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12a7947000e5d5a989f71dcdddd808a8e1d5ab3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160997"
 ---
 # <a name="credential-providers-in-windows-10"></a>Proveedores de credenciales en Windows 10
 
-Los proveedores de credenciales son el mecanismo principal para la autenticación de usuarios: actualmente son el único método para que los usuarios prueben su identidad, que es necesaria para el inicio de sesión y otros escenarios de autenticación del sistema. Con Windows 10 y la introducción de Microsoft Passport, los proveedores de credenciales son más importantes que nunca; se usarán para la autenticación en aplicaciones, sitios web y mucho más.
+Los proveedores de credenciales son el mecanismo principal para la autenticación de usuarios: actualmente son el único método para que los usuarios prueben su identidad, que es necesaria para el inicio de sesión y otros escenarios de autenticación del sistema. Con Windows 10 y la introducción de Microsoft Passport, los proveedores de credenciales son más importantes que nunca. se usarán para la autenticación en aplicaciones, sitios web y mucho más.
 
 Microsoft proporciona una variedad de proveedores de credenciales como parte de Windows, como contraseña, PIN, tarjeta inteligente y Windows Hello (reconocimiento de huella digital, cara e iris). Estos se conocen como "proveedores de credenciales del sistema" en este artículo. Los OEM, las empresas y otras entidades pueden escribir sus propios proveedores de credenciales e integrarlos fácilmente en Windows. Estos se conocen como "proveedores de credenciales de terceros" en este artículo. Tenga en cuenta que los proveedores de credenciales V1 y V2 se admiten en Windows 10. Es importante que los creadores y administradores de proveedores de credenciales de terceros comprendan estas recomendaciones.
 
@@ -39,7 +39,7 @@ En resumen, queremos desaconsejan la deshabilitación de todos los proveedores d
 
 ## <a name="custom-credential-providers"></a>Proveedores de credenciales personalizadas
 
-El marco Windows proveedor de credenciales personalizadas permite a los desarrolladores crear proveedores de credenciales personalizados. Cuando [Winlogon quiere](winlogon.md) recopilar credenciales, la interfaz de usuario de inicio de sesión consulta a cada proveedor de credenciales el número de credenciales que desea enumerar. Una vez que todos los proveedores han enumerado sus iconos, la interfaz de usuario de inicio de sesión los muestra al usuario. A continuación, el usuario interactúa con un icono para proporcionar las credenciales necesarias. La interfaz de usuario de inicio de sesión envía estas credenciales para la autenticación. La interfaz de usuario de credenciales también puede usar proveedores de credenciales cuando son necesarias credenciales. Consulte [**ESCENARIO DE USO DEL PROVEEDOR DE \_ \_ \_ CREDENCIALES**](/windows/desktop/api/credentialprovider/ne-credentialprovider-credential_provider_usage_scenario) para obtener una lista de escenarios en los que se puede admite un proveedor de credenciales.
+El marco Windows proveedor de credenciales permite a los desarrolladores crear proveedores de credenciales personalizados. Cuando [Winlogon quiere](winlogon.md) recopilar credenciales, la interfaz de usuario de inicio de sesión consulta a cada proveedor de credenciales el número de credenciales que desea enumerar. Una vez que todos los proveedores han enumerado sus iconos, la interfaz de usuario de inicio de sesión los muestra al usuario. A continuación, el usuario interactúa con un icono para proporcionar las credenciales necesarias. La interfaz de usuario de inicio de sesión envía estas credenciales para la autenticación. La interfaz de usuario de credenciales también puede usar proveedores de credenciales cuando son necesarias credenciales. Consulte [**ESCENARIO DE USO DEL PROVEEDOR DE \_ \_ \_ CREDENCIALES**](/windows/desktop/api/credentialprovider/ne-credentialprovider-credential_provider_usage_scenario) para obtener una lista de escenarios en los que se puede admite un proveedor de credenciales.
 
 Gracias a este sistema, es mucho más fácil crear un proveedor de credenciales que históricamente. Gran parte del trabajo se controla mediante la combinación de [Winlogon](winlogon.md), la interfaz de usuario de inicio de sesión y la interfaz de usuario de credenciales. Para ello, deberá crear su propia implementación de [**ICredentialProvider**](/windows/desktop/api/credentialprovider/nn-credentialprovider-icredentialprovider) e [**ICredentialProviderCredential**](/windows/desktop/api/credentialprovider/nn-credentialprovider-icredentialprovidercredential). Si va a implementar un proveedor de credenciales V2, que se recomienda, también deberá implementar [**ICredentialProviderCredential2**](/windows/desktop/api/credentialprovider/nn-credentialprovider-icredentialprovidercredential2).
 
@@ -67,7 +67,7 @@ Si se necesita una funcionalidad en un proveedor de credenciales que no se inclu
 
 <dl> <dt>
 
-[Proveedor de credenciales basada en Windows inicio de sesión](https://go.microsoft.com/fwlink/?LinkId=717287)
+[Proveedor de credenciales experiencia Windows inicio de sesión controlado](https://go.microsoft.com/fwlink/?LinkId=717287)
 </dt> <dt>
 
 [ICredentialProvider](/windows/desktop/api/credentialprovider/nn-credentialprovider-icredentialprovider)

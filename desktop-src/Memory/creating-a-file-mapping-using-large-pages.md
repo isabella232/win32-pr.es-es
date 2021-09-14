@@ -4,19 +4,19 @@ ms.assetid: be2cdcbc-03e8-407d-8ae2-569f8fd8cba8
 title: Crear una asignación de archivos mediante páginas grandes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8df68cc483856d0fe7f329b4f5e6e5c8a424a8c0e55958ca1da8de1ce51cbf71
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 49a852de187f6798904ef1795dca5955663283f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119869945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159885"
 ---
 # <a name="creating-a-file-mapping-using-large-pages"></a>Crear una asignación de archivos mediante páginas grandes
 
-En el ejemplo siguiente se usa [**la función CreateFileMapping con**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) la marca SEC LARGE **\_ \_ PAGES** para usar páginas grandes. El búfer debe ser lo suficientemente grande como para contener el tamaño mínimo de una página grande. Este valor se obtiene mediante la [**función GetLargePageMinimum.**](/windows/win32/api/memoryapi/nf-memoryapi-getlargepageminimum) Esta característica también requiere el privilegio "SeLockMemoryPrivilege".
+En el ejemplo siguiente se usa [**la función CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) con la marca **SEC LARGE \_ \_ PAGES** para usar páginas grandes. El búfer debe ser lo suficientemente grande como para contener el tamaño mínimo de una página grande. Este valor se obtiene mediante la [**función GetLargePageMinimum.**](/windows/win32/api/memoryapi/nf-memoryapi-getlargepageminimum) Esta característica también requiere el privilegio "SeLockMemoryPrivilege".
 
 > [!NOTE]
-> A partir Windows 10, versión 1703, la función [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) asigna una vista mediante páginas pequeñas de forma predeterminada, incluso para los objetos de asignación de archivos creados con la marca **SEC LARGE \_ \_ PAGES.** En esta y versiones posteriores del sistema operativo, debe especificar la marca **FILE \_ MAP LARGE \_ \_ PAGES** con la [**función MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para asignar páginas grandes. Esta marca se omite en las versiones del sistema operativo antes Windows 10, versión 1703.
+> A partir de Windows 10, versión 1703, la función [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) asigna una vista mediante páginas pequeñas de forma predeterminada, incluso para los objetos de asignación de archivos creados con la marca **SEC LARGE \_ \_ PAGES.** En esta y versiones posteriores del sistema operativo, debe especificar la marca DE PÁGINAS GRANDES DE MAPA DE ARCHIVOS con la función [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para asignar páginas grandes. **\_ \_ \_** Esta marca se omite en las versiones del sistema operativo anteriores Windows 10, versión 1703.
 
 
 ```C++

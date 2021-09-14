@@ -4,12 +4,12 @@ description: La capacidad de cambiar la memoria a través de punteros a menudo r
 ms.assetid: 8a49582a-9ae4-4f26-a172-bc8fe2aab65a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23d634b209c1f6369429c432d5fad5d4e64b47aeae16778efd8916c00e65911e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7cdd4c51207de093dfe2d32ec0c275aa7a05a317
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118927365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161035"
 ---
 # <a name="pointers-and-memory-allocation"></a>Punteros y asignación de memoria
 

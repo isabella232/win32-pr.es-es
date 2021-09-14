@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102968
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 87aff5287eb7d035fb4d1639eac4eb2ad7aeb6c285b59d9c031dd5437938a088
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 45bb43a660fa7324e7d93fcde7e5aa5847a32f87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120064195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964387"
 ---
 # <a name="esenttableduplicateexception-members"></a>Miembros de EsentTableDuplicateException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones de TableDuplicate.
+Clase base para JET_err. Excepciones TableDuplicate.
 
 El [tipo EsentTableDuplicateException](./esenttableduplicateexception-class.md) expone los miembros siguientes.
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

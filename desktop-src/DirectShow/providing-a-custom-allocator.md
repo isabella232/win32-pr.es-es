@@ -4,12 +4,12 @@ ms.assetid: 4ce2db4b-c901-43a5-b905-7d6d923c940b
 title: Proporcionar un asignador personalizado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79b2f36f269ff30545d648c5df22e3070ec5588bcc2fa8791852fe9b6a59215c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1e85a8d133ee5b686e25bc0d7d4a3e2444cb2791
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119747915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160117"
 ---
 # <a name="providing-a-custom-allocator"></a>Proporcionar un asignador personalizado
 
@@ -17,11 +17,11 @@ En esta sección se describe cómo proporcionar un asignador personalizado para 
 
 En primer lugar, defina una clase de C++ para el asignador. El asignador puede derivar de una de las clases de asignador estándar, [**CBaseAllocator**](cbaseallocator.md) o [**CMemAllocator,**](cmemallocator.md)o puede crear una clase de asignador completamente nueva. Si crea una nueva clase, debe exponer la [**interfaz IMemAllocator.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
 
-Los pasos restantes dependen de si el asignador pertenece a un pin de entrada o a un pin de salida en el filtro. Los pines de entrada desempeñan un rol diferente al de los pines de salida durante la fase de negociación del asignador, ya que el pin de salida selecciona en última instancia el asignador.
+Los pasos restantes dependen de si el asignador pertenece a un pin de entrada o a un pin de salida en el filtro. Los pines de entrada desempeñan un rol diferente al de los pines de salida durante la fase de negociación del asignador, ya que, en última instancia, el pin de salida selecciona el asignador.
 
 **Proporcionar un asignador personalizado para un pin de entrada**
 
-Para proporcionar un asignador para un pin de entrada, invalide el método [**CBaseInputPin::GetAllocator del**](cbaseinputpin-getallocator.md) pin de entrada. Dentro de este método, compruebe la **variable \_ miembro m pAllocator.** Si esta variable no es **NULL,** significa que el asignador ya se ha seleccionado para esta conexión, por lo que el método **GetAllocator** debe devolver un puntero a ese asignador. Si **m \_ pAllocator** es **NULL,** significa que no se ha seleccionado el asignador, por lo que el método **GetAllocator** debe devolver un puntero al asignador preferido del pin de entrada. En ese caso, cree una instancia del asignador personalizado y devuelva su [**puntero IMemAllocator.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) El código siguiente muestra cómo implementar el **método GetAllocator:**
+Para proporcionar un asignador para un pin de entrada, invalide el método [**CBaseInputPin::GetAllocator**](cbaseinputpin-getallocator.md) del pin de entrada. Dentro de este método, compruebe la variable **\_ miembro m pAllocator.** Si esta variable no es **NULL,** significa que el asignador ya se ha seleccionado para esta conexión, por lo que el método **GetAllocator** debe devolver un puntero a ese asignador. Si **m \_ pAllocator** es **NULL,** significa que no se ha seleccionado el asignador, por lo que el método **GetAllocator** debe devolver un puntero al asignador preferido del pin de entrada. En ese caso, cree una instancia del asignador personalizado y devuelva su [**puntero IMemAllocator.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) El código siguiente muestra cómo implementar el **método GetAllocator:**
 
 
 ```C++

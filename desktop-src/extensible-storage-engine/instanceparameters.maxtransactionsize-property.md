@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. MaxTransactionSize (propiedad)'
-title: Propiedad InstanceParameters. MaxTransactionSize
+description: 'Más información sobre: Propiedad InstanceParameters.MaxTransactionSize'
+title: Propiedad InstanceParameters.MaxTransactionSize
 TOCTitle: 'MaxTransactionSize property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.MaxTransactionSize
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.maxtransactionsize(v=EXCHG.10)
@@ -27,18 +27,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: a370d05364142a6fca7d84265dc8d29c7ab5c808
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910502"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964363"
 ---
-# <a name="instanceparametersmaxtransactionsize-property"></a>Propiedad InstanceParameters. MaxTransactionSize
+# <a name="instanceparametersmaxtransactionsize-property"></a>Propiedad InstanceParameters.MaxTransactionSize
 
-Obtiene o establece el porcentaje del almacén de versiones que la transacción más antigua puede usar antes de [VersionStoreOutOfMemory](./jet-err-enumeration.md) (valor predeterminado = 100).
+Obtiene o establece el porcentaje de almacén de versiones que puede usar la transacción más antigua antes de [VersionStoreOutOfMemory](./jet-err-enumeration.md) (valor predeterminado = 100).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public int MaxTransactionSize { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros InstanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

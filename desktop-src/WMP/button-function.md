@@ -9,16 +9,16 @@ keywords:
 - botones en máscaras, funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c563a7e84902ac2f2f09c8abadc952d70a0b0e1731808ff7b308dc4f1106e65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8316fa6ca6256db551a2a3bd9f984af055424edb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119864475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889460"
 ---
 # <a name="button-function"></a>Button (Función)
 
-En la tabla siguiente se muestran los valores que son válidos para la función Button. No es necesario definir valores para las funciones que no va a usar en la máscara.
+En la tabla siguiente se muestran los valores que son válidos para la función Button. No es necesario definir valores para las funciones que no se van a usar en la máscara.
 
 
 
@@ -35,7 +35,7 @@ En la tabla siguiente se muestran los valores que son válidos para la función 
 | PlayPause       | Alterna entre el estado de reproducción y el estado de pausa.                                                                                                          |
 | Información            | Proporciona información sobre el elemento multimedia que se está reproduciendo. Para Reproductor de Windows Media 10 máscaras móviles o posteriores, no se usa esta función.                     |
 | FullScreen      | Cambia el tamaño del vídeo al tamaño máximo de la pantalla del dispositivo.                                                                                                 |
-| WindowsMedia\*  | Abre pocket Internet Explorer carga el sitio web Windowsmedia.com.                                                                                       |
+| WindowsMedia\*  | Abre Pocket Internet Explorer carga el sitio web Windowsmedia.com web.                                                                                       |
 | PlayPauseStop\* | Además de alternar entre el estado de reproducción y el estado de pausa, también permite a los usuarios detener una difusión en directo cuando la funcionalidad de pausa no está disponible. |
 | VolumeUp\*      | Aumenta la salida de audio.                                                                                                                                  |
 | VolumeDown\*    | Reduce la salida de audio.                                                                                                                                  |

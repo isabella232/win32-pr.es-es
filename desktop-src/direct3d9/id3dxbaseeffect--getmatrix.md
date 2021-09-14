@@ -1,5 +1,5 @@
 ---
-description: Obtiene una matriz sin transacciones.
+description: Obtiene una matriz no transaccional.
 ms.assetid: d507c82c-b1a5-4e83-8921-5d45f52faba0
 title: Método ID3DXBaseEffect::GetMatrix (D3DX9Shader.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f7733f37ae5db4bfdaf504f5e0925b89cea7a8f2e54f4546feb4141fddd246ae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 17d59700d8752526f3f4c48efeaf7f3e6bd985bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120118865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964819"
 ---
 # <a name="id3dxbaseeffectgetmatrix-method"></a>Método ID3DXBaseEffect::GetMatrix
 
-Obtiene una matriz sin transacciones.
+Obtiene una matriz no transaccional.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Identificador único. Vea [Identificadores (Direct3D 9).](handles.md)
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Devuelve una matriz sin transacciones. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
+Devuelve una matriz no transaccional. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Devuelve una matriz sin transacciones. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una matriz no transaccional contiene datos principales de fila; es decir, cada vector está contenido en una fila.
 
@@ -82,7 +82,7 @@ Si la matriz de destino es mayor que la matriz de origen, solo se rellenarán lo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

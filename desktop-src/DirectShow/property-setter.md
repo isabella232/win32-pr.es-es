@@ -4,12 +4,12 @@ ms.assetid: 625f3774-4f8a-4208-ab30-43559b1fd6ce
 title: Property Setter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1a7ab831e1c9230bd707af647bc0c6ab206e5a1bf9fdc653ef2195100158db0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ce5149eb32468913aaefee733a6c1eacd7f76a18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119697325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160120"
 ---
 # <a name="property-setter"></a>Property Setter
 
@@ -18,7 +18,7 @@ ms.locfileid: "119697325"
 
  
 
-El objeto Property Setter establece las **propiedades IDispatch** en un objeto de escala de tiempo. Para crear este objeto, llame a **CoCreateInstance**. El identificador de clase es CLSID \_ PropertySetter.
+El objeto Property Setter establece las **propiedades IDispatch** en un objeto timeline. Para crear este objeto, llame a **CoCreateInstance**. El identificador de clase es CLSID \_ PropertySetter.
 
 El objeto Property Setter expone las interfaces siguientes:
 

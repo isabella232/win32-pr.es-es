@@ -1,10 +1,10 @@
 ---
 title: Método INapSystemHealthValidationRequest GetStringCorrelationId (NapSystemHealthValidator.h)
-description: Lo usan los validadores de estado del sistema (SHV) que deben registrar esta información.
+description: Lo usan los validadores de estado del sistema (SHV), que deben registrar esta información.
 ms.assetid: c3e45857-463b-4048-a178-ec26a318b63b
 keywords:
 - Método NAP de GetStringCorrelationId
-- Método NAP de GetStringCorrelationId, interfaz INapSystemHealthValidationRequest
+- Método NAP de GetStringCorrelationId , interfaz INapSystemHealthValidationRequest
 - INapSystemHealthValidationRequest interface NAP , GetStringCorrelationId method
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5818ebd219dd38633da92a269e63d5641f393371cfa67b6910844523c37929ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 554a5a31f0aa46f6bcbd7a750662d47ab2c78040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118939366"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161283"
 ---
 # <a name="inapsystemhealthvalidationrequestgetstringcorrelationid-method"></a>INapSystemHealthValidationRequest::GetStringCorrelationId (método)
 
@@ -50,7 +50,7 @@ HRESULT GetStringCorrelationId(
 *correlationId* \[ out\]
 </dt> <dd>
 
-Puntero a un puntero a un [**StringCorrelationId único**](nap-type-constants.md) para el intercambio soH.
+Puntero a un puntero a un [**stringCorrelationId único**](nap-type-constants.md) para el intercambio soH.
 
 </dd> </dl>
 
@@ -78,13 +78,13 @@ También se pueden devolver otros códigos de error específicos de COM.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
-| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

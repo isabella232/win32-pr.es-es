@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 245f3ddb2c85f5de6ae2acc040f929387d522c12d65eeb4d4307f162b8532af8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fa66aadd0ef1f9f9f65747694fc311f80172449
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119120729"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060536"
 ---
 # <a name="id3dxpatchmeshoptimize-method"></a>Método ID3DXPatchMesh::Optimize
 
@@ -53,13 +53,13 @@ Actualmente no se usa.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ CANNOTATTRSORT.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ CANNOTATTRSORT.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una vez que una aplicación genera información de adyacencia para una malla, los datos de la malla se pueden optimizar (reordenar) para mejorar el rendimiento del dibujo. Este método determina qué revisiones son adyacentes (dentro de la tolerancia proporcionada).
 
-La información de adyacencia también se usa para optimizar la teselación. Genere información de adyacencia una vez y haga una llamada repetidamente a [**ID3DXPatchMesh::Tessellate**](id3dxpatchmesh--tessellate.md). La optimización realizada es independiente del nivel de teselación real utilizado. Sin embargo, si se cambian los vértices de malla, debe volver a generar la información de adyacencia.
+La información de adyacencia también se usa para optimizar la teselación. Genere información de adyacencia una vez y entrelaze repetidamente mediante una llamada a [**ID3DXPatchMesh::Tessellate**](id3dxpatchmesh--tessellate.md). La optimización realizada es independiente del nivel de teselación real utilizado. Sin embargo, si se cambian los vértices de la malla, debe volver a generar la información de adyacencia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ La información de adyacencia también se usa para optimizar la teselación. Gen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
 title: Enlace del lado cliente
-description: Los identificadores de enlace se componen de una secuencia de protocolo, el nombre o la dirección de un equipo host del programa de servidor y un punto de conexión de programa de servidor. Por lo tanto, el programa cliente debe obtener o proporcionar esta información para crear un enlace.
+description: Los identificadores de enlace se componen de una secuencia de protocolo, el nombre o la dirección de un equipo host de programa de servidor y un punto de conexión de programa de servidor. Por lo tanto, el programa cliente debe obtener o proporcionar esta información para crear un enlace.
 ms.assetid: 0a3bed37-95c7-4f4a-9ed3-9d57f69db523
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc566d408b27884cacefe07a181f26971352e1f29f9f47dfd41b3d56a8276515
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f42ed5d2af21eff1091e0ba48718426bf17501e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118931728"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161055"
 ---
 # <a name="client-side-binding"></a>Enlace del lado cliente
 
-Los identificadores de enlace se componen de una secuencia de protocolo, el nombre o la dirección de un equipo host del programa de servidor y un punto de conexión de programa de servidor. Por lo tanto, el programa cliente debe obtener o proporcionar esta información para crear un enlace.
+Los identificadores de enlace se componen de una secuencia de protocolo, el nombre o la dirección de un equipo host de programa de servidor y un punto de conexión de programa de servidor. Por lo tanto, el programa cliente debe obtener o proporcionar esta información para crear un enlace.
 
 Si el programa cliente usa identificadores de enlace automáticos, no es necesario escribir código fuente especial para crear o administrar el enlace. El código auxiliar de cliente llama a las funciones RPC necesarias para establecer y mantener el enlace. Todo lo que tiene que hacer es especificar que el cliente usa identificadores de enlace automático en el archivo de configuración de la aplicación (ACF) y diseñar la interfaz en consecuencia. Para obtener más información, vea [Identificadores de enlace automáticos.](automatic-binding-handles.md)
 

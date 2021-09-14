@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f7ffee6a55191f8f41d7121f3801a4a6392f9869803ded40ed891817146828f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7410fbee4ece729d1579f525731bddaceded1153
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118955404"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160269"
 ---
 # <a name="camthreadcallworker-method"></a>Método CAMThread.CallWorker
 
@@ -53,7 +53,7 @@ Parámetro de solicitud. La clase derivada define el significado del parámetro 
 
 Devuelve un valor definido por la clase derivada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los [**métodos CAMThread::GetRequest**](camthread-getrequest.md) y [**CAMThread::CheckRequest**](camthread-checkrequest.md) recuperan el valor del *parámetro dwParam.* El método GetRequest se bloquea hasta `CallWorker` que se llama a .
 
@@ -72,7 +72,7 @@ Este método contiene el bloqueo [**DE BLOQUEO DE ACCESO DE SUBPROCESO::m \_**](
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

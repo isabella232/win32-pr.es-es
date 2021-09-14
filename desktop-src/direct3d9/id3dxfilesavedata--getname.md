@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 7aa6ef69a5296830b2f3bb992fb24ac23fa58adeeea629fd0e1bdeacf6173344
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 00fa8c60f423343d3d4c594d31141a2f192802d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119856655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888457"
 ---
 # <a name="id3dxfilesavedatagetname-method"></a>Método ID3DXFileSaveData::GetName
 
@@ -46,7 +46,7 @@ HRESULT GetName(
 
 Tipo: **[ **LPSTR**](../winprog/windows-data-types.md)**
 
-Dirección de un puntero para recibir el nombre de este nodo de datos de archivo. Si este parámetro es **NULL,** *puiSize* devolverá el tamaño de la cadena. Si szName apunta a memoria válida, el nombre de este nodo de datos de archivo se copiará en szName hasta el número de caracteres especificado por *puiSize* .
+Dirección de un puntero para recibir el nombre de este nodo de datos de archivo. Si este parámetro es **NULL,** *puiSize* devolverá el tamaño de la cadena. Si szName apunta a una memoria válida, el nombre de este nodo de datos de archivo se copiará en szName hasta el número de caracteres especificado por *puiSize* .
 
 </dd> <dt>
 
@@ -63,9 +63,9 @@ Puntero al tamaño de la cadena que representa el nombre de este nodo de datos d
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DXFERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DXFERR \_ BADVALUE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para que este método se haga correctamente, *szName* o *puiSize* deben ser distintos de **NULL.**
 
@@ -80,7 +80,7 @@ Para que este método se haga correctamente, *szName* o *puiSize* deben ser dist
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

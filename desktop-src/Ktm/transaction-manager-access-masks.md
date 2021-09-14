@@ -1,19 +1,19 @@
 ---
-description: KTM define las siguientes máscaras de acceso de registro que se usarán al abrir un administrador de transacciones (TM).
+description: KTM define las siguientes máscaras de acceso de alta que se usarán al abrir un administrador de transacciones (TM).
 ms.assetid: 8f9b9d3d-e7ea-4df2-82b1-2d4c3e0766c0
 title: Máscaras de acceso del Administrador de transacciones (WinNT.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cfa093f38898ec49a789699fc5c7230612ef744fec78f200021361327d9f714
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: efae6c0bac1fc2bfa117e74e38aff8d439eb2f25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119913905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160017"
 ---
 # <a name="transaction-manager-access-masks"></a>Máscaras de acceso del Administrador de transacciones
 
-KTM define las siguientes máscaras de acceso de registro que se usarán al abrir un administrador de transacciones (TM).
+KTM define las siguientes máscaras de acceso de alta que se usarán al abrir un administrador de transacciones (TM).
 
 <dl> <dt>
 
@@ -77,12 +77,12 @@ El autor de la llamada puede cambiar el nombre de una instancia de TM.
 
 
 
-El autor de la llamada puede crear un administrador de recursos asociado a esta TM.
+El autor de la llamada puede crear un administrador de recursos asociado a este TM.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTIONMANAGER_BIND_TRANSACTION"></span><span id="transactionmanager_bind_transaction"></span>**TRANSACTIONMANAGER \_ BIND \_ TRANSACTION**
+<span id="TRANSACTIONMANAGER_BIND_TRANSACTION"></span><span id="transactionmanager_bind_transaction"></span>**TRANSACCIÓN DE \_ ENLACE DE \_ TRANSACTIONMANAGER**
 </dt> <dd> <dl> <dt>
 
 0x00020
@@ -116,7 +116,7 @@ El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_
 
 
 
-El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_ WRITE,** **TRANSACTIONMANAGER SET \_ \_ INFORMATION,** **TRANSACTIONMANAGER \_ RECOVER,** **TRANSACTIONMANAGER \_ RENAME** y **TRANSACTIONMANAGER CREATE \_ \_ RM.**
+El autor de la llamada tiene los privilegios siguientes: **STANDARD \_ RIGHTS \_ WRITE**, **TRANSACTIONMANAGER SET \_ \_ INFORMATION**, **TRANSACTIONMANAGER \_ RECOVER**, **TRANSACTIONMANAGER \_ RENAME** y **TRANSACTIONMANAGER CREATE \_ \_ RM**.
 
 
 </dt> </dl> </dd> <dt>
@@ -129,12 +129,12 @@ El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_
 
 
 
-El autor de la llamada tiene el privilegio siguiente: **STANDARD \_ RIGHTS \_ EXECUTE**.
+El autor de la llamada tiene el siguiente privilegio: **STANDARD \_ RIGHTS \_ EXECUTE**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTIONMANAGER_ALL_ACCESS"></span><span id="transactionmanager_all_access"></span>**TRANSACTIONMANAGER \_ ALL \_ ACCESS**
+<span id="TRANSACTIONMANAGER_ALL_ACCESS"></span><span id="transactionmanager_all_access"></span>**ACCESO DE TRANSACTIONMANAGER \_ \_ ALL**
 </dt> <dd> <dl> <dt>
 
 0xF003F
@@ -155,7 +155,7 @@ Este valor establece todos los bits válidos para un valor de acceso TM.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                     |
-| Header<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
 
 
 

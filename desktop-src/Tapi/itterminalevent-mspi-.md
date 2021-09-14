@@ -4,12 +4,12 @@ ms.assetid: 5277776e-0471-41b6-b662-4346a9d237ec
 title: ITTerminalEvent (MSPI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bc5177fee1998639b4e01213eb1662f4046219e7c9093c6f2e1d1db5a6e0626
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 593b9a7d048db9843825ccde8b22d0585a0c07fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120012815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160626"
 ---
 # <a name="itterminalevent-mspi"></a>ITTerminalEvent (MSPI)
 

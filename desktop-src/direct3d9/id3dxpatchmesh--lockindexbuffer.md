@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cd0e4fc41507e6b01dcbf77ae19a69dbc4b8e3df981f4c3366f441f4e4854aa8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81dc410262ff21ea972d4c501ac3b5d26a361642
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118294348"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060537"
 ---
 # <a name="id3dxpatchmeshlockindexbuffer-method"></a>Método ID3DXPatchMesh::LockIndexBuffer
 
@@ -70,11 +70,11 @@ Puntero VOID \* a un búfer de memoria que contiene los datos de índice devuelt
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El búfer de índice normalmente se bloquea, se escribe en y, a continuación, se desbloquea para lectura. Los búferes de índice de malla de revisión son búferes de 16 bits.
+El búfer de índice normalmente se bloquea, se escribe en y, a continuación, se desbloquea para su lectura. Los búferes de índice de malla de revisión son búferes de 16 bits.
 
 ## <a name="requirements"></a>Requisitos
 

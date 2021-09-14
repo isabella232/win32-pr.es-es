@@ -4,12 +4,12 @@ ms.assetid: e1ca5abf-83c2-44f0-8049-ddf1b81ef088
 title: Recepción de notificaciones de eventos de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28225654bc7e4119f76eff21425e96dda83f628b88d16be9cdfc370d9fa63712
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ecb9840f7ddf4adbfaae5775de337da81a3e7670
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146618"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160069"
 ---
 # <a name="receiving-notification-of-network-events"></a>Recepción de notificaciones de eventos de red
 
@@ -19,7 +19,7 @@ Use la [**función NotifyAddrChange**](/windows/desktop/api/Iphlpapi/nf-iphlpapi
 
 De forma similar, [**la función NotifyRouteChange permite**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-notifyroutechange) a una aplicación solicitar la notificación de cualquier cambio que se produzca en la tabla de enrutamiento IP.
 
-Las notificaciones proporcionadas por estas funciones no especifican lo que ha cambiado. simplemente especifican que algo ha cambiado. Use otras funciones del asistente de IP, como [**GetIPAddrTable**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getipaddrtable) y [**GetBestRoute,**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getbestroute)para determinar la naturaleza exacta del cambio.
+Las notificaciones proporcionadas por estas funciones no especifican lo que ha cambiado; simplemente especifican que algo ha cambiado. Use otras funciones auxiliares de IP, como [**GetIPAddrTable**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getipaddrtable) y [**GetBestRoute,**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getbestroute)para determinar la naturaleza exacta del cambio.
 
  
 

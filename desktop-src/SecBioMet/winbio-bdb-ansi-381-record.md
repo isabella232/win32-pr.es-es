@@ -1,9 +1,9 @@
 ---
-title: WINBIO_BDB_ANSI_381_RECORD estructura (Winbio \_ types.h)
-description: Contiene información sobre una sola huella digital o una muestra de la mano de un usuario final.
+title: WINBIO_BDB_ANSI_381_RECORD estructura (Tipos de \_ Winbio.h)
+description: Contiene información sobre una sola huella digital o una muestra de manos de un usuario final.
 ms.assetid: e0b32d05-3e96-4b42-9e18-57d10513f224
 keywords:
-- WINBIO_BDB_ANSI_381_RECORD de Windows API de marco biométrico
+- WINBIO_BDB_ANSI_381_RECORD estructura Windows API de marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15e30cd66348245aa3090fb21188d7d1cea347c1b28ee51243d2effd9b52609f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f30af31d88349dbe02066f231cdff21293aebe90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119480345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160789"
 ---
 # <a name="winbio_bdb_ansi_381_record-structure"></a>Estructura DE REGISTROS \_ \_ ANSI \_ 381 \_ de WINBIO BDB
 
-La **estructura WINBIO \_ BDB ANSI \_ \_ 381 \_ RECORD** contiene información sobre una sola huella digital o una muestra de manos de un usuario final. Se incluye una colección de estas estructuras en cada estructura [**DE ENCABEZADO \_ WINBIO BDB \_ ANSI \_ 381. \_**](winbio-bdb-ansi-381-header.md)
+La **estructura WINBIO \_ BDB ANSI \_ \_ 381 \_ RECORD** contiene información sobre una sola huella digital o una muestra de la mano de un usuario final. Se incluye una colección de estas estructuras en cada [**estructura WINBIO \_ BDB \_ ANSI \_ 381 \_ HEADER.**](winbio-bdb-ansi-381-header.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct _WINBIO_BDB_ANSI_381_RECORD {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Especifica el número de píxeles en una línea vertical del ejemplo.
 **Position**
 </dt> <dd>
 
-Valor **DE \_ SUBTIPO \_ BIOMÉTRICO DE WINBIO** que especifica el dedo o la mano usados para generar la muestra biométrica. Para obtener más información, vea la sección Comentarios.
+Valor **DE \_ \_ SUBTYPE BIOMETRIC de WINBIO** que especifica el dedo o la mano usados para generar la muestra biométrica. Para obtener más información, vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -113,17 +113,17 @@ Reservado. Debe establecerse en cero (0).
 
 ## <a name="remarks"></a>Observaciones
 
-El *miembro Position* especifica el área de la mano o la mano que se usa para realizar la muestra biométrica. El Windows Biometric Framework (WBF) actualmente solo admite la captura de huellas digitales y usa las siguientes constantes para representar información de posición.
+El *miembro* Position especifica el área de la mano o la mano que se usa para crear la muestra biométrica. El Windows Biometric Framework (WBF) actualmente solo admite la captura de huellas digitales y usa las siguientes constantes para representar información de posición.
 
 -   WINBIO \_ ANSI \_ 381 \_ POS \_ UNKNOWN
 -   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ THUMB
 -   DEDO ÍNDICE RH DE WINBIO \_ ANSI \_ 381 \_ POS \_ \_ \_
--   DEDO MEDIO DE WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ \_
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ MIDDLE \_ FINGER
 -   DEDO ANILLO DE WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ \_
 -   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ LITTLE \_ FINGER
 -   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ THUMB
--   DEDO ÍNDICE DE LH DE WINBIO \_ ANSI \_ 381 \_ POS \_ \_ \_
--   DEDO MEDIO DE LH DE WINBIO \_ ANSI \_ 381 \_ POS \_ \_ \_
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ INDEX \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ MIDDLE \_ FINGER
 -   DEDO ANILLO DE LH DE WINBIO \_ ANSI \_ 381 \_ POS \_ \_ \_
 -   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ LITTLE \_ FINGER
 -   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ FOUR \_ FINGERS
@@ -132,7 +132,7 @@ El *miembro Position* especifica el área de la mano o la mano que se usa para r
 
 > [!IMPORTANT]
 >
-> No intente validar el valor proporcionado para el *valor position.* El Windows Biometrics Service validará el valor proporcionado antes de pasarlo a la implementación. Si el valor es **WINBIO \_ SUBTYPE \_ NO INFORMATION \_ o** **WINBIO \_ SUBTYPE \_ ANY,** valide cuando corresponda.
+> No intente validar el valor proporcionado para el *valor Position.* El Windows Biometrics Service validará el valor proporcionado antes de pasarlo a la implementación. Si el valor es **WINBIO \_ SUBTYPE \_ NO INFORMATION \_ o** **WINBIO \_ SUBTYPE \_ ANY**, valide cuando corresponda.
 
  
 
@@ -142,13 +142,13 @@ El *miembro Position* especifica el área de la mano o la mano que se usa para r
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

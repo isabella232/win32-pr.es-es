@@ -1,9 +1,9 @@
 ---
-title: RWByteAddressBuffer::Store (Función)
+title: FUNCIÓN RWByteAddressBuffer::Store
 description: Establece un valor.
 ms.assetid: edfda955-602c-44f4-adc3-77b61c9dcd05
 keywords:
-- Almacenar la función HLSL
+- Almacenamiento de la función HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5be699a28eea213b8847f32a3b66f53739a7db86ee5964bd97559a6d534fff6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e161e4fb64d09e41c6529954e63b2ace55207e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117724947"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888196"
 ---
 # <a name="store-function"></a>Función Store
 
@@ -59,13 +59,13 @@ Un valor de entrada.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -73,14 +73,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

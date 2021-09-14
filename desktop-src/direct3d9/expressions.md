@@ -4,12 +4,12 @@ ms.assetid: 642aa188-5dd7-49fc-b6cc-845f8fc22530
 title: Expresiones (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: daeffeb09a2c2f496f73d492581cb2b51ac2e518e176bbbc848889bef5716b25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3aa574069094853eb506f7a1b38cdb6cd4379d3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119985705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888569"
 ---
 # <a name="expressions-direct3d-9"></a>Expresiones (Direct3D 9)
 

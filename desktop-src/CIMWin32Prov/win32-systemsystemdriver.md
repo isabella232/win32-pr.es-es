@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 027f720ee5b4a6be6f36a568e343ca42d097d61619098c171ce2cc279c6f202a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b193d173fa0592a44ba437543659dec456e432ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118958894"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061432"
 ---
 # <a name="win32_systemsystemdriver-class"></a>Clase \_ SystemSystemDriver de Win32
 
@@ -40,7 +40,7 @@ class Win32_SystemSystemDriver : CIM_SystemComponent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemSystemDriver de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Referencia a la instancia de que representa el controlador del sistema que se ej
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemSystemDriver de Win32** se deriva de [**CIM \_ SystemComponent**](cim-systemcomponent.md).
 
@@ -92,7 +92,7 @@ La **clase \_ SystemSystemDriver de Win32** se deriva de [**CIM \_ SystemCompone
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

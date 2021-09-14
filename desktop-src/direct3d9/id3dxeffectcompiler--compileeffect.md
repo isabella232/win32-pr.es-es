@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f3769f3f7433aadc55e766d68ecc152a4e26444cf506344f80e3f11a0bca8fcf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6552d0216cd05c40c122657270c02e0886438da1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964771"
 ---
 # <a name="id3dxeffectcompilercompileeffect-method"></a>Método ID3DXEffectCompiler::CompileEffect
 
@@ -77,7 +77,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK.
 
 Si los argumentos no son válidos, el método devolverá D3DERR \_ INVALIDCALL.
 
-Si se produce un error en el método, el valor devuelto será E \_ FAIL.
+Si se produce un error en el método , el valor devuelto será E \_ FAIL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Si se produce un error en el método, el valor devuelto será E \_ FAIL.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 04dc47237ee7bd6f05ba4c187a0d643b478f6e98b74f7670e87df998998dcd03
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 45453c6423b8fa9f68e5d8dff86d13b130d65f6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120076635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061381"
 ---
 # <a name="cbasefilterjoinfiltergraph-method"></a>Método CBaseFilter.JoinFilterGraph
 
-El `JoinFilterGraph` método notifica al filtro que se ha unido o ha dejado un gráfico de filtro. Este método implementa el [**método IBaseFilter::JoinFilterGraph.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-joinfiltergraph)
+El `JoinFilterGraph` método notifica al filtro que se ha unido o ha dejado un gráfico de filtro. Este método implementa el método [**IBaseFilter::JoinFilterGraph.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-joinfiltergraph)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,9 +61,9 @@ Puntero a una cadena Unicode que contiene un nombre para el filtro.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método establece la variable [**miembro CBaseFilter::m \_ pGraph**](cbasefilter-m-pgraph.md) igual al *parámetro pGraph.* También consulta un puntero de interfaz [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) y lo almacena en la variable miembro [**\_ PSink CBaseFilter::m.**](cbasefilter-m-psink.md) Sin embargo, el filtro no mantiene un recuento de referencias en ninguna de estas interfaces. Al hacerlo, se crearía un recuento circular de referencias, ya que el administrador de gráficos de filtros mantiene un recuento de referencias en el filtro.
+Este método establece la variable [**miembro CBaseFilter::m \_ pGraph**](cbasefilter-m-pgraph.md) igual al *parámetro pGraph.* También consulta un puntero de interfaz [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) y lo almacena en la variable miembro [**\_ PSink CBaseFilter::m.**](cbasefilter-m-psink.md) Sin embargo, el filtro no mantiene un recuento de referencias en ninguna de estas interfaces. Si lo hace, se crearía un recuento circular de referencias, ya que el administrador de gráficos de filtros mantiene un recuento de referencias en el filtro.
 
 El método copia la cadena especificada por *pName* en la variable miembro [**CBaseFilter::m \_ pName.**](cbasefilter-m-pname.md)
 
@@ -78,7 +78,7 @@ El método copia la cadena especificada por *pName* en la variable miembro [**CB
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

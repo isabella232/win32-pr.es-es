@@ -4,7 +4,7 @@ description: Proporciona la funcionalidad de depuración remota.
 ms.assetid: f91987c0-2e4b-4872-8ed6-e208a23baa49
 keywords:
 - IOrpcDebugNotify (interfaz COM)
-- IOrpcDebugNotify (interfaz COM) , descrito
+- Interfaz IOrpcDebugNotify COM , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3dd051819b70ae93b7c615d803e12134221d55ffbd464c60d5b9c41d983eb9f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1f4db08daf93997b2a7fa0ed383591cb5d111ac7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119678585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889065"
 ---
 # <a name="iorpcdebugnotify-interface"></a>IOrpcDebugNotify (interfaz)
 
@@ -34,7 +34,7 @@ Implemente esta interfaz para habilitar la depuración remota a través de RPC.
 
 Esta interfaz debe usarse para la depuración remota en proceso cuando no se deben usar excepciones de software para las notificaciones del depurador COM. Permite que los depuradores en proceso se notifiquen mediante llamadas directas mediante estos métodos.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IOrpcDebugNotify** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) **IOrpcDebugNotify** también tiene estos tipos de miembros:
 
@@ -51,7 +51,7 @@ La **interfaz IOrpcDebugNotify** tiene estos métodos.
 | [**ClientFillBuffer**](iorpcdebugnotify-clientfillbuffer.md)       | Envía datos del depurador de cliente al depurador del servidor.<br/>         |
 | [**ClientGetBufferSize**](iorpcdebugnotify-clientgetbuffersize.md) | Recupera el tamaño del búfer RPC del depurador del lado cliente.<br/>        |
 | [**ClientNotify**](iorpcdebugnotify-clientnotify.md)               | Informa al cliente de una solicitud del depurador saliente al servidor.<br/>   |
-| [**ServerFillBuffer**](iorpcdebugnotify-serverfillbuffer.md)       | Envía datos del depurador del servidor al depurador de cliente.<br/>         |
+| [**ServerFillBuffer**](iorpcdebugnotify-serverfillbuffer.md)       | Envía datos del depurador del servidor al depurador del cliente.<br/>         |
 | [**ServerGetBufferSize**](iorpcdebugnotify-servergetbuffersize.md) | Recupera el tamaño del búfer RPC del depurador del lado servidor.<br/>        |
 | [**ServerNotify**](iorpcdebugnotify-servernotify.md)               | Informa al servidor de una solicitud entrante del depurador del cliente.<br/> |
 
@@ -59,9 +59,9 @@ La **interfaz IOrpcDebugNotify** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una biblioteca de importación que contiene **la interfaz IOrpcDebugNotify** no se incluye en el Kit de desarrollo de software (SDK) de Microsoft Windows. Una aplicación puede usar las funciones [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) y [**GetModuleHandle**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) para recuperar un puntero de función a [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) desde oleaut.dll y proporcionar estos métodos a través de la interfaz **IOrpcDebugNotify.**
+Una biblioteca de importación que contiene **la interfaz IOrpcDebugNotify** no se incluye en el Kit de desarrollo de software (SDK) de Microsoft Windows. Una aplicación puede usar las funciones [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) y [**GetModuleHandle**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) para recuperar un puntero de función a [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) de oleaut.dll y proporcionar estos métodos a través de la interfaz **IOrpcDebugNotify.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,11 +72,11 @@ Una biblioteca de importación que contiene **la interfaz IOrpcDebugNotify** no 
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                     |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                           |
 | Encabezado<br/>                   | <dl> <dt>N/D</dt> </dl> |
-| Idl<br/>                      | <dl> <dt>N/D</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>N/D</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -89,7 +89,7 @@ Una biblioteca de importación que contiene **la interfaz IOrpcDebugNotify** no 
 [**BÚFER \_ DE DBG DE ORPC \_**](orpc-dbg-buffer.md)
 </dt> <dt>
 
-[**ORPC \_ INIT \_ ARGS**](orpc-init-args.md)
+[**ARGUMENTOS \_ DE ORPC INIT \_**](orpc-init-args.md)
 </dt> <dt>
 
 [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md)

@@ -3,9 +3,9 @@ title: Método INapSystemHealthValidationRequest SetPrivateData (NapSystemHealth
 description: Permite que NapServer almacene información de estado.
 ms.assetid: 128f9beb-e5da-4b20-bf5e-fcf064209da3
 keywords:
-- Método NAP de SetPrivateData
-- Método NAP de SetPrivateData, interfaz INapSystemHealthValidationRequest
-- INapSystemHealthValidationRequest interface NAP , SetPrivateData method
+- Nap del método SetPrivateData
+- Método NAP de SetPrivateData , interfaz INapSystemHealthValidationRequest
+- Interfaz NAP de INapSystemHealthValidationRequest, método SetPrivateData
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf0e362eb3732d18c0e98b89f834dfe9efbc2a70ca82b7c211a96459d46a9f1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da50ca236c08388632e17916decee162b3b71743
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161280"
 ---
 # <a name="inapsystemhealthvalidationrequestsetprivatedata-method"></a>INapSystemHealthValidationRequest::SetPrivateData (método)
 
@@ -70,7 +70,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo NapServer puede interpretar el blob de datos.
 
@@ -82,13 +82,13 @@ Solo NapServer puede interpretar el blob de datos.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
-| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,7 +4,7 @@ description: La propiedad playState obtiene un valor de enumeración que indica 
 ms.assetid: ab9f1547-5c28-4289-beaf-9262f7f59b07
 keywords:
 - Propiedad playState Reproductor de Windows Media
-- Propiedad playState Reproductor de Windows Media clase , AxWindowsMediaPlayer
+- propiedad playState Reproductor de Windows Media clase , AxWindowsMediaPlayer
 - Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad playState
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbd6d5ecbd4914864d812125143b1c5b6c0ae0d470b2c3951c060aacd3627ff2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d397c65c1cfd7f4adb040cc94e208a66c6c42d1b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119378185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889625"
 ---
 # <a name="axwindowsmediaplayerplaystate-property"></a>Propiedad AxWindowsMediaPlayer.playState
 
@@ -50,7 +50,7 @@ Public ReadOnly Property playState As WMPPlayState
 
 Valor de enumeración WMPLib.WMPPlayState.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Reproductor de Windows Media se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
 
@@ -94,7 +94,7 @@ End If
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |

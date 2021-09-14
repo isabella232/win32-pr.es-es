@@ -4,12 +4,12 @@ ms.assetid: e407e9ed-f1f7-43c4-a048-c27476c910ea
 title: Generar datos en un filtro de captura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dcbc604c94953239b8be70ced28c9c0d6cf43eefa308c9d624db9a33d62152ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8d9c9e5bed6fc7e01aa89bf6f495c1bbdf6e42a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119748185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160127"
 ---
 # <a name="producing-data-in-a-capture-filter"></a>Generar datos en un filtro de captura
 
@@ -40,7 +40,7 @@ CMyVidcapFilter::GetState(DWORD dw, FILTER_STATE *pState)
 
 
 
-## <a name="controlling-individual-streams"></a>Controlar los datos individuales Secuencias
+## <a name="controlling-individual-streams"></a>Controlar las Secuencias
 
 Los pines de salida de un filtro de captura deben admitir la interfaz [**IAMStreamControl**](/windows/desktop/api/Strmif/nn-strmif-iamstreamcontrol) para que una aplicación pueda activar o desactivar cada pin individualmente. Por ejemplo, una aplicación puede obtener una vista previa sin capturar y, a continuación, cambiar al modo de captura sin volver a generar el gráfico de filtros. Puede usar la [**clase CBaseStreamControl**](cbasestreamcontrol.md) para implementar esta interfaz.
 
@@ -50,7 +50,7 @@ Cuando el filtro captura una muestra, marca de tiempo la muestra con el tiempo d
 
 Para calcular el tiempo de secuencia, llame al método [**IReferenceClock::GetTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-gettime) para obtener la hora de referencia actual y, a continuación, sustrae la hora de inicio original. Como alternativa, llame [**al método CBaseFilter::StreamTime,**](cbasefilter-streamtime.md) que realiza el mismo cálculo. Para establecer la marca de tiempo en un ejemplo, llame al [**método IMediaSample::SetTime.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-settime)
 
-Sin embargo, si el filtro tiene un pin de vista previa, los ejemplos del pin de vista previa no deben tener marcas de tiempo. El motivo es que las muestras siempre llegarán al representador ligeramente después del tiempo de captura. Si las muestras tienen una marca de tiempo, el representador las tratará como tardías y puede intentar ponerse al día quitando muestras. (Para obtener más información, vea [DirectShow filtros de captura de vídeo).](directshow-video-capture-filters.md) Tenga en cuenta que [**la interfaz IAMStreamControl**](/windows/desktop/api/Strmif/nn-strmif-iamstreamcontrol) requiere el pin para realizar un seguimiento de los tiempos de ejemplo. Para una marca de vista previa, es posible que tenga que modificar la implementación para que no se base en marcas de tiempo.
+Sin embargo, si el filtro tiene un pin de vista previa, los ejemplos del pin de vista previa no deben tener marcas de tiempo. El motivo es que las muestras siempre llegarán al representador ligeramente después del tiempo de captura. Si las muestras tienen una marca de tiempo, el representador las tratará como tardías y puede intentar ponerse al día quitando muestras. (Para obtener más información, [vea DirectShow filtros de captura de vídeo).](directshow-video-capture-filters.md) Tenga en cuenta que [**la interfaz IAMStreamControl**](/windows/desktop/api/Strmif/nn-strmif-iamstreamcontrol) requiere el pin para realizar un seguimiento de los tiempos de ejemplo. Para una marca de vista previa, es posible que tenga que modificar la implementación para que no se base en marcas de tiempo.
 
 Las marcas de tiempo siempre deben aumentar de una muestra a la siguiente. Esto es así incluso cuando se pausa el filtro. Si el filtro se ejecuta, se pausa y, a continuación, se ejecuta de nuevo, el primer ejemplo después de la pausa debe tener una marca de tiempo mayor que la última muestra anterior a la pausa.
 

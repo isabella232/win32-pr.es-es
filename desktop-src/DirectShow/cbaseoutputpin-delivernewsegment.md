@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f4c89bb14377cf46e5395fc106807133d53cd090c0ba9e0eae8e103b438d69fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3eb6d31a50095affdf38d44b69040304674ec6fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119910611"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061373"
 ---
 # <a name="cbaseoutputpindelivernewsegment-method"></a>Método CBaseOutputPin.DeliverNewSegment
 
@@ -61,7 +61,7 @@ Posición del medio final del segmento, en unidades de 100 nanosegundos.
 *dRate* 
 </dt> <dd>
 
-Velocidad a la que se debe procesar este segmento, como porcentaje de la velocidad original.
+Velocidad a la que se debe procesar este segmento, como porcentaje de la tasa original.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en l
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método llama al [**método IPin::NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment) en el pin de entrada.
 
@@ -95,7 +95,7 @@ Este método llama al [**método IPin::NewSegment**](/windows/desktop/api/Strmif
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

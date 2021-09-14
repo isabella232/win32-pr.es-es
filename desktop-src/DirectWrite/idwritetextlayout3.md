@@ -15,18 +15,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f3a6d441c3f7d8ac9bf356bd835f800e026f8c6e27cb083a57ced571ba68fe8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78a7a9203245939e40b522e0ef5998be0764085a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119070655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160075"
 ---
 # <a name="idwritetextlayout3-interface"></a>Interfaz IDWriteTextLayout3
 
 Representa un bloque de texto después de que se haya analizado y dado formato por completo.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IDWriteTextLayout3** hereda de [**IDWriteTextLayout2**](idwritetextlayout2.md). **IDWriteTextLayout3** también tiene estos tipos de miembros:
 
@@ -53,7 +53,7 @@ La **interfaz IDWriteTextLayout3** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                          |
@@ -63,7 +63,7 @@ La **interfaz IDWriteTextLayout3** tiene estos métodos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

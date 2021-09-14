@@ -9,12 +9,12 @@ keywords:
 - ADSI ADSI , Uso y optimización mediante el método GetInfoEx de IADs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4daf75fa3961a57996d6ae51d237d27835213a25a20c52452b5896c6224964a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b522093fff00700cf35b864edde2a6ae7f8f9922
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117838999"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887089"
 ---
 # <a name="optimization-using-getinfoex"></a>Optimización mediante GetInfoEx
 

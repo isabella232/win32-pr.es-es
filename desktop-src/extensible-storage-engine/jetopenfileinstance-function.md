@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ce54e03c79f8147b1deb9f77bab520c6d2b121e9
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: ba66545c65abcaa3d3969ec7c3d61d73c57be732
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480371"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887265"
 ---
 # <a name="jetopenfileinstance-function"></a>Función JetOpenFileInstance
 
@@ -50,7 +50,7 @@ La **función JetOpenFileInstance** abre una base de datos adjunta, un archivo d
 
 ### <a name="parameters"></a>Parámetros
 
-*Ejemplo*
+*instance*
 
 Instancia de que se va a usar para esta llamada.
 
@@ -76,7 +76,7 @@ Puntero al búfer de salida que recibe los 32 bits más significativos del tama�
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores ese, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
@@ -95,7 +95,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
 | <p>JET_errOutOfMemory</p> | <p>Error en la operación porque no se pudo asignar suficiente memoria para completarla. <strong>JetOpenFileInstance</strong> devolverá JET_errOutOfMemory si se intenta abrir otro archivo antes de que JetCloseFileInstance haya cerrado el archivo anterior abierto mediante <strong>JetOpenFileInstance.</strong> <a href="gg269270(v=exchg.10).md"></a> Actualmente solo se admite un identificador de archivo pendiente.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
-| <p>JET_errRunningInMultiInstanceMode</p> | <p>Error en la operación porque se intentó usar el motor en modo heredado (Windows modo de compatibilidad 2000), donde solo se admite una instancia cuando en realidad ya existen varias instancias.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>Error en la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad Windows 2000), donde solo se admite una instancia cuando en realidad ya existen varias instancias.</p> | 
 | <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
 
 
@@ -106,7 +106,7 @@ En caso de error, el estado de los búferes de salida será indefinido. Se puede
 
 **Advertencia**  Por motivos de seguridad, es importante tener en cuenta que **JetOpenFileInstance** no comprueba que la ruta de acceso de archivo solicitada está asociada al conjunto de archivos de los que se realiza una copia de seguridad para la instancia. Como resultado, es posible usar esta función para acceder a cualquier archivo que pueda abrir el contexto de seguridad actual del subproceso. Es fundamental que la aplicación restrinja las rutas de acceso que se pasan a esta función a un conjunto conocido de rutas de acceso de archivo correctas o que se pueda hacer posible la divulgación de ataques de información.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Los búferes de salida de tamaño de archivo y identificador deben estar presentes. Si no están presentes, el motor se bloqueará porque no se validan los parámetros del búfer de salida.
 
@@ -119,7 +119,14 @@ Es posible que el tamaño del archivo que se va a leer como notifica esta funci�
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetOpenFileInstanceW</strong> (Unicode) y <strong>JetOpenFileInstanceA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetOpenFileInstanceW</strong> (Unicode) y <strong>JetOpenFileInstanceA</strong> (ANSI).</p> | 
 
 
 

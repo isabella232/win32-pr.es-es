@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7a346e9da4a847c0a9a1c3bef5c23e4151b9ed6478613d05d4cd547e777a2bf4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ece3a81fa0687299edba0857b15f4c0abc50e403
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119947295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887980"
 ---
 # <a name="esentoutofdatabasespaceexception-class"></a>Clase EsentOutOfDatabaseSpaceException
 
@@ -49,7 +49,7 @@ Clase base para JET_err. Excepciones OutOfDatabaseSpace.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -69,7 +69,7 @@ public sealed class EsentOutOfDatabaseSpaceException : EsentQuotaException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0bf61b8907e7089a22ba160e573c4ca1372b4f1aee4f8a48d45965c7556d4b76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: edcc4b6a7f34c12be7013f2ae1e0b2e6d991a5d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118093689"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964752"
 ---
 # <a name="id3dxtextureshadergetconstant-method"></a>Método ID3DXTextureShader::GetConstant
 
@@ -65,7 +65,7 @@ Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
 Devuelve un identificador único a la constante.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una constante de una matriz de constantes, use [**ID3DXTextureShader::GetConstantElement**](id3dxtextureshader--getconstantelement.md).
 
@@ -80,7 +80,7 @@ Para obtener una constante de una matriz de constantes, use [**ID3DXTextureShade
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

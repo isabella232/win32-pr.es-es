@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9c2d1851025cb051a21a997f5e3a4987d3b6309e148248b3ea55c6b9ca6ad31c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 66c1f763c4771a8406acd2f3401445d1a29cde79
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119950485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888345"
 ---
 # <a name="common-shader-core"></a>Common-Shader Core
 
@@ -64,7 +64,7 @@ El núcleo común del sombreador admite los siguientes operadores bit a bit:
 
 | Operador  | Función          |
 |-----------|-------------------|
-| ~         | No lógico       |
+| ~         | NOT lógico       |
 | <<  | Desplazamiento a la izquierda        |
 | >>  | Desplazamiento a la derecha       |
 | &         | Logical And       |

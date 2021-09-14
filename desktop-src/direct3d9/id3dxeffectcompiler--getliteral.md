@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: d5c4fcb9b4eb3ee102d4e0676985945cfa227aa35cbd939c8dcd5b8d51da4826
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c16e3798ab66a34e12812a3560572c45b9206b30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119493945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964764"
 ---
 # <a name="id3dxeffectcompilergetliteral-method"></a>Método ID3DXEffectCompiler::GetLiteral
 
@@ -63,11 +63,11 @@ Devuelve True si el parámetro es un literal y False en caso contrario.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Estos métodos solo cambian si el parámetro es un literal o no. Para cambiar el valor de un parámetro, use un método como [**ID3DXBaseEffect::SetBool**](id3dxbaseeffect--setbool.md) o [**ID3DXBaseEffect::SetValue**](id3dxbaseeffect--setvalue.md).
+Este método solo cambia si el parámetro es un literal o no. Para cambiar el valor de un parámetro, use un método como [**ID3DXBaseEffect::SetBool**](id3dxbaseeffect--setbool.md) o [**ID3DXBaseEffect::SetValue**](id3dxbaseeffect--setvalue.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Estos métodos solo cambian si el parámetro es un literal o no. Para cambiar el
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

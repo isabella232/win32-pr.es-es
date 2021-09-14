@@ -4,16 +4,16 @@ description: En esta sección se describen las características del cuadro de li
 ms.assetid: 359bb363-5b97-4e0c-bdc4-bfa6a6504a76
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a15622b073cea0a1ecfd9b8ce4039cc893e6a258a9ccee23733754fd4e900213
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 674712226a79960e44ab99ed8e59c88b27984efb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119922425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061413"
 ---
 # <a name="about-list-boxes"></a>Acerca de los cuadros de lista
 
-Un control de cuadro de lista contiene una lista simple de la que el usuario puede seleccionar normalmente uno o varios elementos. Los cuadros de lista proporcionan una flexibilidad limitada en comparación con los [controles de vista de](list-view-control-reference.md) lista.
+Un control de cuadro de lista contiene una lista simple de la que el usuario generalmente puede seleccionar uno o varios elementos. Los cuadros de lista proporcionan una flexibilidad limitada en comparación con los [controles de vista de](list-view-control-reference.md) lista.
 
 Los elementos de cuadro de lista se pueden representar mediante cadenas de texto, mapas de bits o ambos. Si el cuadro de lista no es lo suficientemente grande como para mostrar todos los elementos del cuadro de lista a la vez, el cuadro de lista proporciona una barra de desplazamiento. El usuario se desplaza por los elementos del cuadro de lista y aplica o quita el estado de selección según sea necesario. Al seleccionar un elemento de cuadro de lista se cambia su apariencia visual, normalmente cambiando el texto y los colores de fondo a los especificados por las métricas pertinentes del sistema operativo. Cuando el usuario selecciona o anula la selección de un elemento, el sistema envía un mensaje de notificación a la ventana primaria del cuadro de lista.
 
@@ -56,7 +56,7 @@ Además, la [**función GetListBoxInfo**](/windows/desktop/api/Winuser/nf-winuse
 
 ## <a name="notification-messages-from-list-boxes"></a>Mensajes de notificación de cuadros de lista
 
-Cuando se produce un evento en un cuadro de lista, el cuadro de lista envía un código de notificación, en forma de mensaje [**WM \_ COMMAND,**](/windows/desktop/menurc/wm-command) al procedimiento de cuadro de diálogo de la ventana de propietario. Los códigos de notificación de cuadro de lista se envían cuando un usuario selecciona, hace doble clic o cancela un elemento de cuadro de lista; cuando el cuadro de lista recibe o pierde el foco del teclado; y cuando el sistema no puede asignar suficiente memoria para una solicitud de cuadro de lista. Un **mensaje \_ WM COMMAND** contiene el identificador del cuadro de lista en la palabra de orden bajo del parámetro *wParam* y el código de notificación en la palabra de orden superior. El *parámetro lParam* contiene el identificador de la ventana de control.
+Cuando se produce un evento en un cuadro de lista, el cuadro de lista envía un código de notificación, en forma de mensaje [**WM \_ COMMAND,**](/windows/desktop/menurc/wm-command) al procedimiento de cuadro de diálogo de la ventana de propietario. Los códigos de notificación de cuadro de lista se envían cuando un usuario selecciona, hace doble clic o cancela un elemento del cuadro de lista. cuando el cuadro de lista recibe o pierde el foco del teclado; y cuando el sistema no puede asignar suficiente memoria para una solicitud de cuadro de lista. Un **mensaje \_ WM COMMAND** contiene el identificador del cuadro de lista en la palabra de orden bajo del parámetro *wParam* y el código de notificación en la palabra de orden superior. El *parámetro lParam* contiene el identificador de la ventana de control.
 
 No es necesario un procedimiento de cuadro de diálogo para procesar estos mensajes; el procedimiento de ventana predeterminado los procesa.
 
@@ -67,7 +67,7 @@ Una aplicación debe supervisar y procesar los siguientes códigos de notificaci
 | Código de notificación                   | Descripción                                                      |
 |-------------------------------------|------------------------------------------------------------------|
 | [\_DBLCLK de LBN](lbn-dblclk.md)       | El usuario hace doble clic en un elemento del cuadro de lista.                  |
-| [ERRSPACE DE LBN \_](lbn-errspace.md)   | El cuadro de lista no puede asignar suficiente memoria para satisfacer una solicitud. |
+| [LBN \_ ERRSPACE](lbn-errspace.md)   | El cuadro de lista no puede asignar suficiente memoria para satisfacer una solicitud. |
 | [LBN \_ KILLFOCUS](lbn-killfocus.md) | El cuadro de lista pierde el foco del teclado.                           |
 | [LBN \_ SELCANCEL](lbn-selcancel.md) | El usuario cancela la selección de un elemento en el cuadro de lista.       |
 | [LBN \_ SELCHANGE](lbn-selchange.md) | La selección de un cuadro de lista está a punto de cambiar.                  |
@@ -147,7 +147,7 @@ El procedimiento de ventana para la clase predefinida de ventana de cuadro de li
 | [**WM \_ DESTROY**](/windows/desktop/winmsg/wm-destroy)               | Destruye el cuadro de lista y libera los recursos que usa.                                                                                                                                                                                                                                                                                                              |
 |                                                    | Pasa el mensaje al procedimiento del cuadro de diálogo o al proceso de ventana primaria.                                                                                                                                                                                                                                                                                                 |
 | [**WM \_ ENABLE**](/windows/desktop/winmsg/wm-enable)                 | Si el control está visible, invalida el rectángulo para que las cadenas se puedan pintar en gris.                                                                                                                                                                                                                                                                                 |
-| [**WM \_ ERASEBNDAND**](/windows/desktop/winmsg/wm-erasebkgnd)         | Borra el fondo de un cuadro de lista. Si el cuadro de lista tiene el estilo [**L BS \_ OWNERDRAW,**](button-styles.md) el fondo no se borra.                                                                                                                                                                                                                   |
+| [**WM \_ ERASEBNDAND**](/windows/desktop/winmsg/wm-erasebkgnd)         | Borra el fondo de un cuadro de lista. Si el cuadro de lista tiene el estilo L [**BS \_ OWNERDRAW,**](button-styles.md) el fondo no se borra.                                                                                                                                                                                                                   |
 | [**WM \_ GETDLGCODE**](/windows/desktop/dlgbox/wm-getdlgcode)         | Devuelve DLGC \_ WANTARROWS \| DLGC \_ WANTCHARS, [**\_**](/windows/desktop/inputdev/wm-char) lo que indica que el procedimiento del cuadro de lista predeterminado procesa las teclas de dirección y los mensajes CHAR de WM.                                                                                                                                                                                                      |
 | [**WM \_ GETFONT**](/windows/desktop/winmsg/wm-getfont)               | Devuelve un identificador a la fuente actual del cuadro de lista.                                                                                                                                                                                                                                                                                                                   |
 | [**WM \_ HSCROLL**](wm-hscroll.md)                  | Desplaza horizontalmente el cuadro de lista.                                                                                                                                                                                                                                                                                                                                       |
@@ -168,7 +168,7 @@ El procedimiento de ventana para la clase predefinida de ventana de cuadro de li
 
  
 
-El procedimiento del cuadro de lista predefinido pasa todos los demás mensajes [**a DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para el procesamiento predeterminado.
+El procedimiento del cuadro de lista predefinido pasa todos los demás mensajes [**a DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para su procesamiento predeterminado.
 
 ## <a name="owner-drawn-list-boxes"></a>Owner-Drawn cuadros de lista
 
@@ -188,7 +188,7 @@ Para obtener un ejemplo de un cuadro de lista dibujado por el propietario, vea [
 
 ## <a name="drag-list-boxes"></a>Arrastrar cuadros de lista
 
-Un cuadro de lista de arrastre es un tipo especial de cuadro de lista que permite al usuario arrastrar elementos de una posición a otra. Una aplicación puede usar un cuadro de lista de arrastre para mostrar cadenas en una secuencia determinada y permitir que el usuario cambie la secuencia arrastrando los elementos a su posición.
+Un cuadro de lista de arrastre es un tipo especial de cuadro de lista que permite al usuario arrastrar elementos de una posición a otra. Una aplicación puede usar un cuadro de lista de arrastrar para mostrar cadenas en una secuencia determinada y permitir que el usuario cambie la secuencia arrastrando los elementos a su posición.
 
 ### <a name="creating-drag-list-boxes"></a>Crear cuadros de lista de arrastre
 
@@ -208,9 +208,9 @@ El código de notificación de la lista de arrastre, identificado por el miembro
 
 El [código de notificación \_ BEGINDRAG](dl-begindrag.md) de DL se envía cuando el cursor está en un elemento de lista y el usuario hace clic en el botón izquierdo del mouse. La ventana primaria puede devolver **TRUE para** iniciar la operación de arrastre o **FALSE** para no permitir el arrastre. De esta manera, la ventana primaria puede habilitar el arrastre para algunos elementos de lista y deshabilitarlo para otros. Puede determinar qué elemento de lista se encuentra en la ubicación especificada mediante la [**función LBItemFromPt.**](/windows/desktop/api/Commctrl/nf-commctrl-lbitemfrompt)
 
-Si el arrastre está en vigor, el código de notificación [ \_ DRAG](dl-dragging.md) de DL se envía cada vez que se mueve el mouse, o a intervalos regulares si no se mueve el mouse. La ventana primaria debe determinar primero el elemento de lista bajo el cursor mediante [**LBItemFromPt**](/windows/desktop/api/Commctrl/nf-commctrl-lbitemfrompt) y, a continuación, dibujar el icono de inserción mediante la [**función DrawInsert.**](/windows/desktop/api/Commctrl/nf-commctrl-drawinsert) Al especificar **TRUE para** el parámetro *bAutoScroll* de **LBItemFromPt**, puede hacer que el cuadro de lista se desplace por una línea si el cursor está por encima o debajo de su área de cliente. El valor devuelto para esta notificación especifica el tipo de cursor del mouse que debe establecer el cuadro de lista de arrastre.
+Si el arrastre está en vigor, el código de notificación [ \_ DL DRAGGING](dl-dragging.md) se envía cada vez que se mueve el mouse, o a intervalos regulares si no se mueve el mouse. La ventana primaria debe determinar primero el elemento de lista bajo el cursor mediante [**LBItemFromPt**](/windows/desktop/api/Commctrl/nf-commctrl-lbitemfrompt) y, a continuación, dibujar el icono de inserción mediante la [**función DrawInsert.**](/windows/desktop/api/Commctrl/nf-commctrl-drawinsert) Al especificar **TRUE para** el parámetro *bAutoScroll* de **LBItemFromPt**, puede hacer que el cuadro de lista se desplace por una línea si el cursor está por encima o debajo de su área de cliente. El valor devuelto para esta notificación especifica el tipo de cursor del mouse que debe establecer el cuadro de lista de arrastre.
 
-El [código de notificación \_ CANCELDRAG de DL](dl-canceldrag.md) se envía si el usuario cancela una operación de arrastrar haciendo clic en el botón derecho del mouse o presionando la tecla ESC. El código de notificación [ \_ DL DROPPED](dl-dropped.md) se envía si el usuario completa una operación de arrastrar al soltar el botón izquierdo del mouse, incluso si el cursor no está sobre un elemento de lista. El cuadro de lista de arrastre libera la captura del mouse antes de enviar una notificación. Se omite el valor devuelto de estas dos notificaciones. Arrastrar lista
+El [código de notificación \_ CANCELDRAG de DL](dl-canceldrag.md) se envía si el usuario cancela una operación de arrastrar haciendo clic en el botón derecho del mouse o presionando la tecla ESC. El código de notificación [ \_ DL DROPPED](dl-dropped.md) se envía si el usuario completa una operación de arrastre al soltar el botón izquierdo del mouse, incluso si el cursor no está sobre un elemento de lista. El cuadro de lista de arrastre libera la captura del mouse antes de enviar una notificación. Se omite el valor devuelto de estas dos notificaciones. Arrastrar lista
 
  
 

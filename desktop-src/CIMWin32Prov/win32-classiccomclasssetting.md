@@ -40,12 +40,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4aa3a60b68902bbcf7728866d24e5cedd831eac35ba629a3e2516a885a28efaf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f263a888ce9dea80444023faff57998bc3f2c1c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118418246"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160332"
 ---
 # <a name="win32_classiccomclasssetting-class"></a>Clase \_ ClassicCOMClassSetting de Win32
 
@@ -88,7 +88,7 @@ class Win32_ClassicCOMClassSetting : Win32_COMSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ClassicCOMClassSetting de Win32** tiene estos tipos de miembros:
 
@@ -289,7 +289,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocServer32 Default \[ \] ")
 </dt> </dl>
 
-Ruta de acceso completa, incluido el nombre de archivo o solo el nombre de archivo, a un archivo DLL de servidor en proceso de 32 bits para este componente COM. El proveedor no siempre devuelve la ruta de acceso completa.
+Ruta de acceso completa, incluido nombre de archivo o solo nombre de archivo a un archivo DLL de servidor en proceso de 32 bits para este componente COM. El proveedor no siempre devuelve la ruta de acceso completa.
 
 </dd> <dt>
 
@@ -366,7 +366,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ AuxUserType \\ \\ 3 \[ \] Default")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ AuxUserType \\ \\ 3 Default \[ \] ")
 </dt> </dl>
 
 Nombre completo de la aplicación COM. Se usa en áreas como el campo **Resultados** del cuadro **de diálogo Ole Pegar** especial .
@@ -385,7 +385,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ ProgID \[ \] Default")
 </dt> </dl>
 
-Identificador de programación asociado al componente COM. El formato de un ProgID se <Vendor.<Component.<Version. No se garantiza que este identificador sea único.
+Identificador de programación asociado al componente COM. El formato de un ProgID es <Vendor.<Component.<Version. No se garantiza que este identificador sea único.
 
 </dd> <dt>
 
@@ -403,7 +403,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -416,7 +416,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ AuxUserType \\ \\ 2 Default \[ \] ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ AuxUserType \\ \\ 2 \[ \] Default")
 </dt> </dl>
 
 Nombre corto de la aplicación COM (se usa en menús y elementos emergentes).
@@ -435,13 +435,13 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocServer32 \[ ThreadingModel \] ")
 </dt> </dl>
 
-Modelo de subprocesos usado por clases COM en proceso. Si esta propiedad es **NULL,** no se usa ningún modelo de subprocesos. El componente se crea en el subproceso principal del cliente y las llamadas de otros subprocesos se serializan a este subproceso.
+Modelo de subprocesos utilizado por las clases COM en proceso. Si esta propiedad es **NULL,** no se usa ningún modelo de subprocesos. El componente se crea en el subproceso principal del cliente y las llamadas de otros subprocesos se serializan a este subproceso.
 
-El modelo Apartment especifica que los componentes pueden especificarse mediante un único subproceso. Los datos comunes que mantienen estos tipos de servidores de objetos deben protegerse frente a colisiones de subprocesos porque el servidor de objetos admite varios componentes. Cada componente se puede especificar simultáneamente mediante subprocesos diferentes.
+El modelo Apartment especifica que los componentes pueden especificarse mediante un solo subproceso. Los datos comunes que mantienen estos tipos de servidores de objetos deben protegerse frente a colisiones de subprocesos porque el servidor de objetos admite varios componentes. Cada componente se puede especificar simultáneamente mediante subprocesos diferentes.
 
-El modelo Free especifica que los componentes no aplican restricciones en qué subprocesos o cuántos subprocesos pueden entrar en el objeto. El objeto no puede contener datos específicos del subproceso y debe proteger sus datos del acceso simultáneo por parte de varios subprocesos. Sin embargo, los subprocesos de apartamento no pueden acceder directamente a los componentes de subproceso libre y las llamadas a ellos se serializan a través del apartamento del cliente.
+El modelo Free especifica que los componentes no aplican restricciones en qué subprocesos o cuántos subprocesos pueden entrar en el objeto. El objeto no puede contener datos específicos del subproceso y debe proteger sus datos del acceso simultáneo por parte de varios subprocesos. Sin embargo, los subprocesos de apartamento no pueden acceder directamente a los componentes de subproceso libre y las llamadas a ellos se serializan desde el apartamento del cliente.
 
-Cuando se especifica Ambos, los componentes se pueden usar en modos de subprocesos de apartamento o de subproceso libre. Estos componentes se pueden especificar mediante varios subprocesos, proteger sus datos frente a colisiones de subprocesos y no contienen datos específicos del subproceso.
+Cuando se especifica Ambos, los componentes se pueden usar en modos de subprocesos de apartamento o de subproceso libre. Estos componentes se pueden especificar mediante varios subprocesos, proteger sus datos de colisiones de subprocesos y no contienen datos específicos del subproceso.
 
 Los valores son:
 
@@ -484,7 +484,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ ToolBoxBitmap32 Default \[ \] ")
 </dt> </dl>
 
-Nombre de módulo e identificador de recursos para un mapa de bits pequeño (16 x 16) usado para la cara de una barra de herramientas o un botón del cuadro de herramientas. Se usa cuando el componente COM es un control OLE ActiveX control .
+Nombre del módulo e identificador de recursos para un mapa de bits pequeño (16 x 16) usado para la cara de una barra de herramientas o un botón del cuadro de herramientas. Se usa cuando el componente COM es un control OLE ActiveX.
 
 </dd> <dt>
 
@@ -513,10 +513,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ TypeLib Default \[ \] ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ TypeLib \[ \] Default")
 </dt> </dl>
 
-GUID para la biblioteca de tipos para este componente COM.
+GUID de la biblioteca de tipos para este componente COM.
 
 </dd> <dt>
 
@@ -548,11 +548,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ VersionIndependentProgId Default \[ \] ")
 </dt> </dl>
 
-Identificador del programa coherente para todas las versiones del mismo programa.
+Identificador de programa coherente para todas las versiones del mismo programa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ ClassicCOMClassSetting de Win32** se deriva de [**\_ COMSetting de Win32.**](win32-comsetting.md)
 
@@ -560,7 +560,7 @@ La **clase \_ ClassicCOMClassSetting de Win32** se deriva de [**\_ COMSetting de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

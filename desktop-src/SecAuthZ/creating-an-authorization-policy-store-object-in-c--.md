@@ -4,12 +4,12 @@ ms.assetid: 6fc84944-8050-4000-8856-36558d94e2fd
 title: Crear un objeto de almacén de directivas de autorización en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4be0b39633eb773b84ad16098f24b59cb23e5d9cc234afdfca414e9cba7a640b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58b50bfa4234f5adaf162b1499f85785a7d65f5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117782470"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160829"
 ---
 # <a name="creating-an-authorization-policy-store-object-in-c"></a>Crear un objeto de almacén de directivas de autorización en C++
 
@@ -23,7 +23,7 @@ El Administrador de autorización admite el almacenamiento de la directiva de au
 
 ## <a name="creating-an-active-directory-store"></a>Creación de una Active Directory Store
 
-Para usar Active Directory para almacenar la directiva de autorización, el dominio debe estar en el nivel funcional de dominio Windows **Server 2003.** El almacén de directivas de autorización no se puede encontrar en un contexto de nomenclatura que no **sea de dominio** (también denominado partición de aplicación). Se recomienda que el almacén  se encuentra en el contenedor Datos del programa en una nueva unidad organizativa creada específicamente para el almacén de directivas de autorización. También se recomienda que el almacén se encuentra dentro de la misma red de área local que los servidores de aplicaciones que ejecutan aplicaciones que usan el almacén.
+Para usar Active Directory para almacenar la directiva de autorización, el dominio debe estar en el nivel funcional de dominio Windows **Server 2003.** El almacén de directivas de autorización no se puede encontrar en un contexto de nomenclatura que no sea **de dominio** (también denominado partición de aplicación). Se recomienda que el almacén  se encuentra en el contenedor Datos del programa en una nueva unidad organizativa creada específicamente para el almacén de directivas de autorización. También se recomienda que el almacén se encuentra dentro de la misma red de área local que los servidores de aplicaciones que ejecutan aplicaciones que usan el almacén.
 
 En el ejemplo siguiente se muestra cómo crear un [**objeto AzAuthorizationStore**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore) que representa un almacén de directivas de autorización en Active Directory. En el ejemplo se supone que hay una unidad organizativa Active Directory denominada Datos de programa en un dominio denominado authmanager.com.
 
@@ -105,12 +105,12 @@ void MyHandleError(char *s)
 
 ## <a name="creating-a-sql-server-store"></a>Creación de un SQL Server Store
 
-El Administrador de autorización admite la creación de un Microsoft SQL Server de directivas de autorización basado en la autorización. Para crear un SQL Server de autorización basado en el servidor, use una dirección URL que comience con el **prefijo MSSQL://**. La dirección URL debe contener una cadena de conexión SQL, un nombre de base de datos y el nombre del almacén de directivas de autorización: **MSSQL://**_ConnectionString_ *_/_* _DatabaseName_ *_/_* _PolicyStoreName_.
+El Administrador de autorización admite la creación de un Microsoft SQL Server de directivas de autorización basado en directivas. Para crear un SQL Server de autorización basado en el servidor, use una dirección URL que comience con el **prefijo MSSQL://**. La dirección URL debe contener una cadena de conexión SQL, un nombre de base de datos y el nombre del almacén de directivas de autorización: **MSSQL://**_ConnectionString_ *_/_* _DatabaseName_ *_/_* _PolicyStoreName_.
 
 Si la instancia de SQL Server no contiene la base de datos del Administrador de autorización especificada, el Administrador de autorización crea una nueva base de datos con ese nombre.
 
 > [!Note]  
-> Las conexiones a un almacén de SQL Server no se cifran a menos que configure explícitamente el cifrado de SQL para la conexión o configure el cifrado del tráfico de red que usa seguridad de protocolo de Internet (IPsec).
+> Las conexiones a un almacén de SQL Server no se cifran a menos que configure explícitamente un cifrado de SQL para la conexión o configure el cifrado del tráfico de red que usa seguridad de protocolo de Internet (IPsec).
 
  
 

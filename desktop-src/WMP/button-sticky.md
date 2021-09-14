@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec9c6a2cf1523cf2384142bd6ffd47cb5e42e7851dc96b6e236343c5ba670aa1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8de9b4e1a8e4bab04e5729cb45662164e2dfa2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118342751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889396"
 ---
 # <a name="buttonsticky"></a>BUTTON.sticky
 
@@ -33,7 +33,7 @@ Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                        |
+| Value | Descripción                        |
 |-------|------------------------------------|
 | true  | **BUTTON** es permanente.              |
 | false | Predeterminada. **BUTTON** no es permanente. |
@@ -42,7 +42,7 @@ Este atributo es un valor booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si **sticky** se establece en true, **el botón** cambiará al estado down cuando se haga clic en él y permanecerá en ese estado hasta que se vuelva a hacer clic en él. Cuando **el botón** está en estado de bajada, el atributo **down** será true y se **mostrará downImage.**
 
@@ -50,7 +50,7 @@ Si **sticky** se establece en true, **el botón** cambiará al estado down cuand
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

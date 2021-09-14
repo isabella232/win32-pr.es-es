@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a0943479aaa7fe2e6d699bba147977a73f48fc31186fb64ea26a211e2ea31d8d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 70880243cef294ebe747463cd11737027faf9277
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119757795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160286"
 ---
 # <a name="camscheduleadvise-method"></a>Método CAMSchedule.Advise
 
@@ -53,11 +53,11 @@ Valor que especifica la hora de referencia actual.
 
 Devuelve la hora de referencia de la siguiente solicitud de aviso programada o MAX \_ TIME si no queda ninguna.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando el reloj llama a este método, especifica la hora de referencia actual. El programador determina qué solicitudes de asesoramiento han expirado, si las hay, y las envía. Si expira una solicitud de una sola toma, el programador la elimina. Si expira una solicitud periódica, el programador la vuelve a programar para la próxima hora de aviso. El método devuelve la hora de la siguiente solicitud pendiente.
+Cuando el reloj llama a este método, especifica la hora de referencia actual. El programador determina qué solicitudes de asesoramiento han expirado, si las hay, y las envía. Si expira una solicitud de una sola toma, el programador la elimina. Si una solicitud periódica expira, el programador la vuelve a programar para la próxima hora de aviso. El método devuelve la hora de la siguiente solicitud pendiente.
 
-Para enviar una solicitud de aviso, el programador señala el evento o semáforo especificado en el *parámetro hNotify* del [**método CAMSchedule::AddAdvisePacket.**](camschedule-addadvisepacket.md)
+Para enviar una solicitud de aviso, el programador señala el evento o semáforo especificado en el *parámetro hNotify* del método [**CAMSchedule::AddAdvisePacket.**](camschedule-addadvisepacket.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Para enviar una solicitud de aviso, el programador señala el evento o semáforo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -3,7 +3,7 @@ title: BUTTONGROUP.buttonCount
 description: El atributo buttonCount recupera el número de botones en BUTTONGROUP.
 ms.assetid: d69d3b89-66b6-4130-ad9f-6315ba2c2766
 keywords:
-- ButtonGROUP.buttonCount Reproductor de Windows Media
+- BUTTONGROUP.buttonCount Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf70632fe083a7117e8c3bd86db36da924b9b1456f6ab2570ae5289ec46dfaa3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9048f060111c0ac218a3eec7b818c0afd0477026
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889297"
 ---
 # <a name="buttongroupbuttoncount"></a>BUTTONGROUP.buttonCount
 
@@ -41,7 +41,7 @@ Este atributo es un número de solo **lectura** (**long**).
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

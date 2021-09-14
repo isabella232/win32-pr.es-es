@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bf12a80cd967832755f476db0e8810867326e84598ddce835e1da10dc6943419
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9cac5ee4a1e1a9cc3fecc8d09096d031e9fc9a63
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118158936"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160263"
 ---
 # <a name="camthreadclose-method"></a>Método CAMThread.Close
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Antes de llamar a este método, debe proporcionar una manera de que el subproceso salga. Por ejemplo, en el [**método CAMThread::ThreadProc,**](camthread-threadproc.md) defina una solicitud que señale al subproceso para salir. A continuación, [**llame al método CAMThread::CallWorker**](camthread-callworker.md) con ese valor.
+Antes de llamar a este método, debe proporcionar una manera de que el subproceso salga. Por ejemplo, en el [**método CAMThread::ThreadProc,**](camthread-threadproc.md) defina una solicitud que señale al subproceso para que se cierre. A continuación, [**llame al método CAMThread::CallWorker**](camthread-callworker.md) con ese valor.
 
 El [**método destructor ~ CAMThread**](camthread--camthread.md) llama a este método.
 
@@ -61,7 +61,7 @@ El [**método destructor ~ CAMThread**](camthread--camthread.md) llama a este m�
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

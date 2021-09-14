@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 7f640481c664c51614a45ff10250a4c40d769a27d793868c4bec316c2cab9ded
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8531d70e301b0583309817ac23a36762cacf563f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117914351"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888809"
 ---
 # <a name="id3dx10skininfoaddboneinfluences-method"></a>Método ID3DX10SkinInfo::AddIonalInfluences
 
@@ -43,12 +43,12 @@ HRESULT AddBoneInfluences(
 
 <dl> <dt>
 
-*Index deindex* \[ En\]
+*IndexIndex* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice que especifica un pórmico existente. Debe estar entre 0 y el valor devuelto por [**ID3DX10SkinInfo::GetNumPxs**](id3dx10skininfo-getnumbones.md).
+Índice que especifica un fragmento existente. Debe estar entre 0 y el valor devuelto por [**ID3DX10SkinInfo::GetNumPxs**](id3dx10skininfo-getnumbones.md).
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de vértices que se agregan a la influencia del tejido.
+Número de vértices que se agregarán a la influencia del tejido.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntero a una matriz de índices de vértices. Cada miembro de esta matriz tiene
 
 Tipo: **\* float**
 
-Puntero a una matriz de pesos de peso. Cada miembro de esta matriz tiene un miembro correspondiente en pIndices, de modo que pWeights i corresponde a \[ \] pIndices \[ i \] . Cada valor de pWeights está entre 0 y 1 y define la cantidad de influencia que tiene el pWeights sobre cada vértice. El tamaño de pWeights debe ser igual o mayor que InfluenceCount.
+Puntero a una matriz de pesos de pesos de peso. Cada miembro de esta matriz tiene un miembro correspondiente en pIndices, de modo que pWeights i corresponde a \[ \] pIndices \[ i \] . Cada valor de pWeights está entre 0 y 1 y define la cantidad de influencia que tiene el grosor sobre cada vértice. El tamaño de pWeights debe ser igual o mayor que InfluenceCount.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Puntero a una matriz de pesos de peso. Cada miembro de esta matriz tiene un miem
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser: E \_ INVALIDARG o E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ INVALIDARG o E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 

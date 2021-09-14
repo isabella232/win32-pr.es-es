@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6264be0712f5ac7f30a9882efde5c66e1e75404634e77d6b72d2313ba016fd6e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ecbd5cbb94355af9c1e51e6c7e8fc31a862b03be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118299260"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888657"
 ---
 # <a name="d3dxcreatetexture-function"></a>Función D3DXCreateTexture
 
@@ -79,7 +79,7 @@ Alto en píxeles. Si este valor es 0, se usa un valor de 1. Vea la sección Come
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de niveles mip solicitados. Si este valor es cero o D3DX DEFAULT, se crea una \_ cadena de asignación mipmap completa.
+Número de niveles de mip solicitados. Si este valor es cero o D3DX DEFAULT, se crea una \_ cadena de asignación mip completa.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Número de niveles mip solicitados. Si este valor es cero o D3DX DEFAULT, se cre
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-0, [**D3DUSAGE \_ RENDERTARGET**](d3dusage.md)o **D3DUSAGE \_ DYNAMIC**. Establecer esta marca en **D3DUSAGE \_ RENDERTARGET** indica que la superficie se usará como destino de representación mediante una llamada al [**método SetRenderTarget.**](/windows/desktop/api) Si se **especifica D3DUSAGE \_ RENDERTARGET** o **D3DUSAGE \_ DYNAMIC,** la aplicación debe comprobar que el dispositivo admite esta operación llamando a [**CheckDeviceFormat**](/windows/desktop/api). Para obtener más información sobre el uso de texturas dinámicas, vea [Usar texturas dinámicas.](performance-optimizations.md)
+0, [**D3DUSAGE \_ RENDERTARGET**](d3dusage.md)o **D3DUSAGE \_ DYNAMIC**. Establecer esta marca en **D3DUSAGE \_ RENDERTARGET** indica que la superficie se va a usar como destino de representación mediante una llamada al [**método SetRenderTarget.**](/windows/desktop/api) Si se **especifica D3DUSAGE \_ RENDERTARGET** o **D3DUSAGE \_ DYNAMIC,** la aplicación debe comprobar que el dispositivo admite esta operación llamando a [**CheckDeviceFormat**](/windows/desktop/api). Para obtener más información sobre el uso de texturas dinámicas, vea [Usar texturas dinámicas.](performance-optimizations.md)
 
 </dd> <dt>
 
@@ -125,9 +125,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DERR \_ NOTAVAILABLE, D3DERR \_ OUTOFVIDEOMEMORY, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Internamente, D3DXCreateTexture usa [**D3DXCheckTextureRequirements**](d3dxchecktexturerequirements.md) para ajustar los parámetros de llamada. Por lo tanto, las llamadas a D3DXCreateTexture a menudo se realizará correctamente, donde las llamadas a [**CreateTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createtexture) producirían un error.
+Internamente, D3DXCreateTexture usa [**D3DXCheckTextureRequirements**](d3dxchecktexturerequirements.md) para ajustar los parámetros de llamada. Por lo tanto, las llamadas a D3DXCreateTexture a menudo se realizará correctamente, donde se producirá un error en las llamadas [**a CreateTexture.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createtexture)
 
 Si Height y Width se establecen en [D3DX \_ DEFAULT,](other-d3dx-constants.md)se usa un valor de 256 para ambos parámetros. Si Height o Width se establecen en D3DX DEFAULT y el otro parámetro se establece en un valor numérico, la textura será cuadrada con el alto y el ancho iguales al \_ valor numérico.
 

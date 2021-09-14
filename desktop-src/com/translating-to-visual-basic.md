@@ -4,18 +4,18 @@ description: Traducción a Visual Basic
 ms.assetid: 48672d0c-b0d7-4820-91d4-d985030396f6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd9aa8a163141c6361df464a22ce873770c8385607bdf8f84d333d204c55a327
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c45e7beedaaa3983b1be1503b5ce443a3adf4d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118550619"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160529"
 ---
 # <a name="translating-to-visual-basic"></a>Traducción a Visual Basic
 
 Puede agregar un objeto COM al proyecto Visual Basic como referencia o como componente. Una vez que el objeto se agrega al proyecto, la aplicación puede acceder a sus clases e interfaces. A continuación, puede usar Visual Basic Explorador de objetos para ver la información de la biblioteca de tipos del objeto en Visual Basic sintaxis.
 
-Normalmente, los controles se agregan a un proyecto como componentes y noncontrols se agregan como referencias. Cuando se agrega un objeto COM como componente, aparece en el cuadro de Visual Basic de herramientas. Las nuevas instancias de ese objeto se crean arrastrando el icono de objeto desde el cuadro de herramientas a Visual Basic formulario u otro tipo de contenedor. Las nuevas instancias de objetos COM agregados como referencias se crean mediante la **palabra clave new.**
+Normalmente, los controles se agregan a un proyecto como componentes y noncontrols se agregan como referencias. Cuando se agrega un objeto COM como componente, aparece en el cuadro de Visual Basic herramientas. Las nuevas instancias de ese objeto se crean arrastrando el icono de objeto desde el cuadro de herramientas a un Visual Basic formulario u otro tipo de contenedor. Las nuevas instancias de objetos COM agregados como referencias se crean mediante la **palabra clave new.**
 
 La distinción entre usar una clase como referencia frente a un componente es sutil pero importante. Al agregar un objeto como referencia, solo puede usar la biblioteca de tipos que proporciona el control o la biblioteca de tipos "sin formato".
 

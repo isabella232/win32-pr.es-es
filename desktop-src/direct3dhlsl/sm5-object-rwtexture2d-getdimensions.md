@@ -1,9 +1,9 @@
 ---
-title: 'RWTexture2D:: Getdimensions ((función)'
-description: 'Devuelve las dimensiones del recurso. | RWTexture2D:: Getdimensions ((función)'
+title: FUNCIÓN RWTexture2D::GetDimensions
+description: Devuelve las dimensiones del recurso. | FUNCIÓN RWTexture2D::GetDimensions
 ms.assetid: bc55622d-fbff-4aeb-aceb-4eb2cfc7ac28
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,13 +14,13 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 19a6711e8f04afdb2f5ec66ff33c8aaf1d59b40c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104157109"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888188"
 ---
-# <a name="rwtexture2dgetdimensions-function"></a>RWTexture2D:: Getdimensions ((función)
+# <a name="rwtexture2dgetdimensions-function"></a>FUNCIÓN RWTexture2D::GetDimensions
 
 Devuelve las dimensiones del recurso.
 
@@ -37,21 +37,21 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Ancho* \[ de enuncia\]
+*Ancho* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El ancho del recurso, en textura.
+Ancho del recurso, en texturas.
 
 </dd> <dt>
 
-*Alto* \[ de enuncia\]
+*Alto* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El alto del recurso, en textura.
+Alto del recurso, en texturas.
 
 </dd> </dl>
 
@@ -74,11 +74,11 @@ void GetDimensions(out float Width,
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -86,7 +86,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

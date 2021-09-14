@@ -4,12 +4,12 @@ ms.assetid: a3f74372-bdc9-43eb-b72f-7d00a43e78a8
 title: Suplantación de cliente (autorización)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 454e943b53cffbc4430c71b31e2b172095b999e2201c4cafc08b081bf1782e64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32e72abb17c9f5f6271f55fbfc77da4f6b93ca2d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117783071"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160850"
 ---
 # <a name="client-impersonation-authorization"></a>Suplantación de cliente (autorización)
 

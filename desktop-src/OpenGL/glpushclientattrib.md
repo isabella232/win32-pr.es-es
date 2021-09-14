@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f378ec3ff735ed916567ea91e211a1d8a1685580b1f1ea80d448b92203b39a3d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 944e2e4229f0d36f0009ce337fd3806020322dbf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119492615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161090"
 ---
 # <a name="glpushclientattrib-function"></a>Función glPushClientAttrib
 
@@ -47,7 +47,7 @@ Máscara que indica qué atributos se guardarán. Las siguientes son las constan
 
 
 
-| Valor                                                                                                                                                                                                                                            | Significado                                           |
+| Value                                                                                                                                                                                                                                            | Significado                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
 | <span id="GL_CLIENT_PIXEL_STORE_BIT"></span><span id="gl_client_pixel_store_bit"></span><dl> <dt>**BIT DE \_ ALMACÉN \_ DE \_ PÍXELES DE CLIENTE \_ GL**</dt> </dl>                                             | Atributos del modo de almacenamiento de píxeles.<br/>         |
 | <span id="GL_CLIENT_VERTEX_ARRAY_BIT"></span><span id="gl_client_vertex_array_bit"></span><dl> <dt>**BIT DE \_ MATRIZ \_ DE \_ VÉRTICES DE \_ CLIENTE GL**</dt> </dl>                                          | Atributos de la matriz de vértices.<br/>               |
@@ -75,7 +75,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar el código de error 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glPushClientAttrib** usa su parámetro mask para determinar qué grupos de variables de estado de cliente se guardan en la pila de atributo de cliente. Puede usar el operador OR bit a bit para unir constantes simbólicas aceptadas para establecer bits y construir una máscara.
 
@@ -112,7 +112,7 @@ Las funciones siguientes recuperan información relacionada **con glPushClientAt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

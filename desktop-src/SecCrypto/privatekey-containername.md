@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: eb47ba9d4fbaa4b7c2d9eef14e5def9212dd95a648f7c17a3e3f4bea64dc48ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e9506b9390dc8b09e6326232e53c72d01749f34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117978522"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160749"
 ---
 # <a name="privatekeycontainername-property"></a>PrivateKey.ContainerName, propiedad
 
@@ -26,7 +26,7 @@ ms.locfileid: "117978522"
 
 La **propiedad ContainerName** recupera el nombre del contenedor de claves privadas. Esta es la propiedad predeterminada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -43,14 +43,14 @@ Cadena que contiene el nombre del contenedor de claves privadas.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

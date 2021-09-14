@@ -17,25 +17,25 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2912f17b35ce3134a7ba66df7fa8630720aa755ae75eb4923863e3f541fbf9a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea6fcb02794174e825994f70270745741c9b7713
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160346"
 ---
 # <a name="cim_softwareelementchecks-class"></a>Cim \_ SoftwareElementChecks (clase)
 
-La **clase \_ de asociación CIM SoftwareElementChecks** relaciona un elemento de software con información de condición o ubicación que una característica puede requerir.
+La **clase \_ de asociación CIM SoftwareElementChecks** relaciona un elemento de software con la información de condición o ubicación que puede requerir una característica.
 
-Dado que los elementos de software en un estado listo para ejecutarse no pueden realizar la transición a otro estado, el valor de la propiedad **Phase** está restringido a en estado para los objetos [**\_ SoftwareElement**](cim-softwareelement.md) cim en un estado listo para ejecutarse.
+Dado que los elementos de software en un estado listo para ejecutarse no pueden pasar a otro estado, el valor de la propiedad **Phase** está restringido a en estado para los objetos [**\_ SoftwareElement**](cim-softwareelement.md) de CIM en un estado listo para ejecutarse.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,9 +49,9 @@ class CIM_SoftwareElementChecks
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **\_ clase CIM SoftwareElementChecks** tiene estos tipos de miembros:
+La **clase \_ CIM SoftwareElementChecks** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -64,7 +64,7 @@ La **clase \_ CIM SoftwareElementChecks** tiene estas propiedades.
 **Comprobación**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Comprobación de \_ CIM**
+Tipo de datos: **Comprobación de CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -86,7 +86,7 @@ Tipo de datos: **CIM \_ SoftwareElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mín.**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Máximo**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Agregado**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
 Referencia al elemento .
@@ -115,18 +115,18 @@ Indica si la comprobación a la que se hace referencia es una comprobación en e
 
 <span id="Next-State"></span><span id="next-state"></span><span id="NEXT-STATE"></span>
 
-**Next-State** (1)
+**Estado siguiente** (1)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ SoftwareElementChecks,** vea [Clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI derivadas de **\_ CIM SoftwareElementChecks,** vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 

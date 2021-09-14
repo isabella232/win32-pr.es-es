@@ -4,12 +4,12 @@ description: AND bit a bit atómico inmediato en la memoria. Devuelve el valor e
 ms.assetid: DA2A70C3-57BD-41F0-865C-235AA4DF1A52
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53992096dccf4d4f0c4e8e98cbafd08f65ce852e28389c8c725f7f2594c7ec4a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1567d3b4eb16a46b1be9badb8db7b39cc03b4b32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119672805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964640"
 ---
 # <a name="imm_atomic_and-sm5---asm"></a>imm \_ atomic \_ y (sm5 - asm)
 
@@ -17,7 +17,7 @@ AND bit a bit atómico inmediato en la memoria. Devuelve el valor en memoria ant
 
 
 
-| imm \_ atomic \_ y dst0 \[ .single component mask , \_ \_ \] dst1, dstAddress \[ .swzzle, \] src0 \[ .select \_ component\] |
+| imm \_ atomic \_ y dst0 \[ .single component mask , \_ \_ \] dst1, dstAddress \[ .swzzle \] , src0 \[ .select \_ component\] |
 |-------------------------------------------------------------------------------------------------------------|
 
 
@@ -37,7 +37,7 @@ AND bit a bit atómico inmediato en la memoria. Devuelve el valor en memoria ant
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta instrucción realiza un único componente de 32 bits and bit a bit de *operando src0* con *dst1* a 32 bits por dirección de componente *dstAddress*.
 
@@ -89,12 +89,12 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

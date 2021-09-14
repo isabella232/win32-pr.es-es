@@ -1,17 +1,17 @@
 ---
-title: Establecer la seguridad para las aplicaciones COM
-description: Establecer la seguridad para las aplicaciones COM
+title: Configuración de la seguridad para aplicaciones COM
+description: Configuración de la seguridad para aplicaciones COM
 ms.assetid: 5b615007-e04b-41be-872c-20e0ea818ff1
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5a8dd705015aaa2ca1965d07c556ff3d55aada00
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369612"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160541"
 ---
-# <a name="setting-security-for-com-applications"></a>Establecer la seguridad para las aplicaciones COM
+# <a name="setting-security-for-com-applications"></a>Configuración de la seguridad para aplicaciones COM
 
 Hay varias maneras de ayudar a controlar la seguridad de las aplicaciones. Puede cambiar la configuración de seguridad predeterminada de un equipo, que usan todas las aplicaciones del equipo que no proporcionen sus propios valores de seguridad. Puede establecer la seguridad de un proceso determinado, ya sea mediante Dcomcnfg.exe o llamando a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). También puede controlar mediante programación la configuración de seguridad en el nivel de proxy de interfaz.
 

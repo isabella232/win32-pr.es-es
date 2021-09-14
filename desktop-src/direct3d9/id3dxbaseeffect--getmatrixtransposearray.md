@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 98f3194ce2b57f533ab04e21a3b0e184ad9fe96af66704705880c08dd52b8e85
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c5f3709a31067b82e9752a9e97db6f3a2a323a19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119893715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964803"
 ---
 # <a name="id3dxbaseeffectgetmatrixtransposearray-method"></a>Método ID3DXBaseEffect::GetMatrixTransposeArray
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una matriz transpuesta contiene datos principales de columna; es decir, cada vector se encuentra en una columna.
 
@@ -92,7 +92,7 @@ Si las matrices de destino son mayores que las matrices de origen, solo se relle
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
