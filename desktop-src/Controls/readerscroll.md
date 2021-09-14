@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 554530e556161b4128199cda0a1a9d791f4f0ed75e8915c311d8945445486ac3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0db5a80b84a30362e3bdbce45fe7485ad0dd6884
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118169115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167182"
 ---
 # <a name="readerscroll-callback-function"></a>Función de devolución de llamada ReaderScroll
 
@@ -77,9 +77,9 @@ Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 
 Esta función siempre debe devolver **TRUE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando la aplicación recibe una notificación de esta función, la aplicación es responsable de desplazar la ventana del modo lector en la dirección especificada por los *parámetros dx* y *dy.*
+Cuando la aplicación recibe una notificación de esta función, la aplicación es responsable de desplazar la ventana del modo lector en la dirección especificada por los parámetros *dx* y *dy.*
 
 ## <a name="examples"></a>Ejemplos
 
@@ -106,7 +106,7 @@ ReaderScrollCallback(PREADERMODEINFO prmi, int dx, int dy)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista, solo Windows \[ aplicaciones de escritorio de Vista\]<br/> |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>          |

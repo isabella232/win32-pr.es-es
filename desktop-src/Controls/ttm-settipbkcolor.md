@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb56f62e7ebc8cab8b7773048767cecbe188abf698aaae15db6f7fb73d10bd95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5cbd830f9a9fbdad428766bd12d82c059e37418e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119433755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165854"
 ---
 # <a name="ttm_settipbkcolor-message"></a>Mensaje \_ SETTIPBKCOLOR de TTM
 
@@ -55,7 +55,7 @@ Cuando los estilos visuales están habilitados, este mensaje no tiene ningún ef
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

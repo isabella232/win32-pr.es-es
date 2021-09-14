@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre los elementos de programa
 ms.assetid: vs|controls|~\controls\tooltip\reflist.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b30ebe66569ede133c311168d3f3f2870dc3aeabe8eaeaa3e15d6584be2d6873
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 228f7a0b40e934342081d73a24a612c9631e39bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166009"
 ---
 # <a name="tooltip"></a>Información sobre herramientas
 

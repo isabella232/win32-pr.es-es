@@ -4,12 +4,12 @@ description: En este tema se muestra cómo crear subclases de cuadros combinados
 ms.assetid: 9897EA94-1BF7-4711-AED6-5E9C863C287A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea674cfecf3c84ce4a1fa2abb1f23f8f208a8b8fd220736bbcec61bea7880b34
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b48301309597c53f02ca87d1d1748ab1fe05139
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078449"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166973"
 ---
 # <a name="how-to-subclass-a-combo-box"></a>Cómo crear subclases de un cuadro combinado
 
@@ -21,12 +21,12 @@ En este tema se muestra cómo crear subclases de cuadros combinados. La aplicaci
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Instrucciones
 
 ### <a name="process-the-wm_create-message"></a>Procesar el mensaje CREATE de WM \_
 
@@ -60,7 +60,7 @@ A continuación, la aplicación crea subclases de los controles de edición (cam
 
 Para crear subclases de los controles de edición, la aplicación llama a la función [**SetWindowLong,**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) reemplazando el puntero al procedimiento de ventana de clase por un puntero a la **función SubClassProc** definida por la aplicación. El puntero al procedimiento de ventana original se guarda en la variable global *lpfnEditWndProc*.
 
-**SubClassProc intercepta** las claves TAB, ENTER y ESC y notifica a la ventana de la barra de herramientas mediante el envío de mensajes definidos por la aplicación (WM \_ TAB, WM \_ ESC y WM \_ ENTER). **SubClassProc** usa la [**función CallWindowProc para**](/windows/desktop/api/winuser/nf-winuser-callwindowproca) pasar la mayoría de los mensajes al procedimiento de ventana original, *lpfnEditWndProc*.
+**SubClassProc intercepta** las claves TAB, ENTER y ESC y notifica a la ventana de la barra de herramientas mediante el envío de mensajes definidos por la aplicación (WM \_ TAB, WM \_ ESC y WM \_ ENTER). **SubClassProc usa** la [**función CallWindowProc para**](/windows/desktop/api/winuser/nf-winuser-callwindowproca) pasar la mayoría de los mensajes al procedimiento de ventana original, *lpfnEditWndProc*.
 
 
 ```C++
@@ -122,7 +122,7 @@ En el ejemplo se procesa **el mensaje DE WM \_ TAB** estableciendo el foco en el
 
 
 
-En respuesta al **mensaje WM \_ ENTER,** el ejemplo garantiza que la selección actual del cuadro combinado sea válida y, a continuación, establece el foco en la ventana principal de la aplicación. Si el cuadro combinado no contiene ninguna selección actual, en el ejemplo se usa el mensaje [**\_ FINDSTRINGEXACT**](cb-findstringexact.md) de CB para buscar un elemento de lista que coincida con el contenido del campo de selección. Si hay una coincidencia, el ejemplo establece la selección actual; De lo contrario, agrega un nuevo elemento de lista.
+En respuesta al **mensaje WM \_ ENTER,** el ejemplo garantiza que la selección actual del cuadro combinado sea válida y, a continuación, establece el foco en la ventana principal de la aplicación. Si el cuadro combinado no contiene ninguna selección actual, en el ejemplo se usa el mensaje [**\_ FINDSTRINGEXACT**](cb-findstringexact.md) de CB para buscar un elemento de lista que coincida con el contenido del campo de selección. Si hay una coincidencia, el ejemplo establece la selección actual; de lo contrario, agrega un nuevo elemento de lista.
 
 
 ```C++

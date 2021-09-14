@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48f05f67eb20c78f764957e73d2293d32e88f25a73d44d6b58f9a1c310b8d9d8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f23722b68f28a5157948ac6277858193366242fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119751045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165974"
 ---
 # <a name="trbn_thumbposchanging-notification-code"></a>Código de notificación \_ THUMBPOSCHANGING de TRBN
 
@@ -47,9 +47,9 @@ Puntero a una [**estructura NMTRBTHUMBPOSCHANGING.**](/windows/win32/api/commctr
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** para evitar que el control de posición se mueva a la posición especificada.
+Devuelve **TRUE** para evitar que el control se mueva a la posición especificada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Envíe esta notificación a los clientes que no escuchan mensajes [**\_ WM HSCROLL**](wm-hscroll.md) [**o WM \_ VSCROLL.**](wm-vscroll.md)
 
@@ -61,7 +61,7 @@ Envíe esta notificación a los clientes que no escuchan mensajes [**\_ WM HSCRO
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

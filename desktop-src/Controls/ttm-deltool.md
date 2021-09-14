@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea54eefd2b9cc84b3aabe5dd600c5fcc32c7468cae01d1819b5fda7b631aeabd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d943259c5496757c0f15ca4127d0a5e6a4237fbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118166388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165937"
 ---
-# <a name="ttm_deltool-message"></a>Mensaje \_ de DELTOOL de TTM
+# <a name="ttm_deltool-message"></a>Mensaje \_ DELTOOL de TTM
 
 Quita una herramienta de un control de información sobre herramientas.
 
@@ -37,7 +37,7 @@ Quita una herramienta de un control de información sobre herramientas.
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura TOOLINFO.**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) Los **miembros hwnd** y **uId identifican** la herramienta que se quitará y el miembro **cbSize** debe especificar el tamaño de la estructura. Se omiten todos los demás miembros.
+Puntero a una [**estructura TOOLINFO.**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) Los **miembros hwnd** **y uId** identifican la herramienta que se quitará y el **miembro cbSize** debe especificar el tamaño de la estructura. Se omiten todos los demás miembros.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ No de devuelve ningún valor.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TTM \_ DELTOOLW** (Unicode) y **TTM \_ DELTOOLA** (ANSI)<br/>                   |
 
 
@@ -65,7 +65,7 @@ No de devuelve ningún valor.
 **Referencia**
 </dt> <dt>
 
-[**HERRAMIENTA \_ ADDTOOL de TTM**](ttm-addtool.md)
+[**TTM \_ ADDTOOL**](ttm-addtool.md)
 </dt> <dt>
 
 **Conceptual**

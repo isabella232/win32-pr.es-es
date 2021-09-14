@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d055b317cc6db5e17edbe57bc57e6dbfe287274788718e8e2a920e1f25d9316b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2edebc6b6dcf3b0b93e3047a39aac74c34d121bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117829338"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166429"
 ---
 # <a name="tbm_setsel-message"></a>Mensaje TBM \_ SETSEL
 
@@ -47,7 +47,7 @@ LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje se omite si la barra de seguimiento no tiene el [**estilo \_ ENABLESELRANGE de TBS.**](trackbar-control-styles.md)
 
@@ -57,11 +57,11 @@ Este mensaje se omite si la barra de seguimiento no tiene el [**estilo \_ ENABLE
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

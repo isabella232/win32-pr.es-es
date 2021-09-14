@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f952d00486fe2419ab48592c7624299ef466c5dfa2b96d53fefb308fc537488
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1a4e317543765fb24755516a0637b16958ad679
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118335817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243140"
 ---
 # <a name="playlistsetselectedstate2"></a>PLAYLIST.setSelectedState2
 
@@ -42,7 +42,7 @@ El **método setSelectedState2** establece el estado seleccionado del elemento c
 <span id="selected"></span><span id="SELECTED"></span>*Seleccionado*
 </dt> <dd>
 
-**Valor** booleano que indica si el elemento especificado se va a seleccionar (true) o no se va a seleccionar (false).
+**Valor** booleano que indica si el elemento especificado se va a seleccionar (true) o no seleccionar (false).
 
 </dd> </dl>
 
@@ -50,15 +50,15 @@ El **método setSelectedState2** establece el estado seleccionado del elemento c
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método puede funcionar con listas de reproducción anidadas y reemplaza el **método setSelectedState** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el *parámetro item.*
+Este método puede funcionar con listas de reproducción anidadas y reemplaza el **método setSelectedState** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el parámetro *item.*
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
@@ -68,7 +68,7 @@ Este método puede funcionar con listas de reproducción anidadas y reemplaza el
 
 <dl> <dt>
 
-[**ELEMENTO PLAYLIST**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**PLAYLIST.setSelectedState**](playlist-setselectedstate.md)

@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 677ab818524614f89d16ae851376d8776a4ccca3ef7798d4ac90aa6d36962ca2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7201f3056ed05e6321ab9d9bd726edc3b4470f0b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166449"
 ---
-# <a name="tbm_setposnotify-message"></a>Mensaje \_ SETPOSNOTIFY de TBM
+# <a name="tbm_setposnotify-message"></a>Mensaje \_ TBM SETPOSNOTIFY
 
 Establece la posición lógica actual del control deslizante en una barra de seguimiento.
 
@@ -39,7 +39,7 @@ wParam no se usa.
 *lParam* 
 </dt> <dd>
 
-Nueva posición lógica del control deslizante. Las posiciones lógicas válidas son los valores enteros del intervalo de posiciones del control deslizante mínimo a máximo de la barra de seguimiento. Si este valor está fuera del intervalo máximo y mínimo del control, la posición se establece en el valor máximo o mínimo.
+Nueva posición lógica del control deslizante. Las posiciones lógicas válidas son los valores enteros del intervalo de posiciones del control deslizante mínimo al máximo de la barra de seguimiento. Si este valor está fuera del intervalo máximo y mínimo del control, la posición se establece en el valor máximo o mínimo.
 
 </dd> </dl>
 
@@ -47,9 +47,9 @@ Nueva posición lógica del control deslizante. Las posiciones lógicas válidas
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Al llamar a **TBM \_ SETPOSNOTIFY** se establecerá la ubicación del control deslizante de la barra de seguimiento como lo haría [**TBM \_ SETPOS,**](tbm-setpos.md) pero también hará que la barra de seguimiento notifique a su elemento primario de un movimiento a través de un mensaje [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL.**](wm-vscroll.md)
+Al llamar a **TBM \_ SETPOSNOTIFY** se establecerá la ubicación del control deslizante de la barra de seguimiento como lo haría [**TBM \_ SETPOS,**](tbm-setpos.md) pero también hará que la barra de seguimiento notifique a su elemento primario de un movimiento a través de un mensaje WM [**\_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL.**](wm-vscroll.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Al llamar a **TBM \_ SETPOSNOTIFY** se establecerá la ubicación del control de
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                            |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

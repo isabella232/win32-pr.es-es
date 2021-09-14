@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 718a51f14f096edbd8df72b0c5fc33ca65ec0c303a095f108981482c9fb3cda5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfa02aa8fabf89ea27fce628d3d63165255bbd66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117829349"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166377"
 ---
-# <a name="tbn_dragover-notification-code"></a>Código de notificación \_ DE DRAGOVER de TBN
+# <a name="tbn_dragover-notification-code"></a>Código de notificación DRAGOVER de TBN \_
 
-Determina si se debe [**enviar \_ un mensaje MARKBUTTON**](tb-markbutton.md) de TB para un botón que se está arrastrando. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
+Determina si se debe [**enviar un \_ mensaje MARKBUTTON**](tb-markbutton.md) de TB para un botón que se está arrastrando. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -53,11 +53,11 @@ Puntero a una [**estructura NMTBHOTITEM**](/windows/win32/api/commctrl/ns-commct
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

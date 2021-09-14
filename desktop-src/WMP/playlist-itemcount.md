@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b2c831535a0d7ed5643558ddb5305419bab0f0a85b6359f1234f68e78a659ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cbde81ee6c2849a19c6400fee4ef7fa6514eaefe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243171"
 ---
 # <a name="playlistitemcount"></a>PLAYLIST.itemCount
 
@@ -31,9 +31,9 @@ El **atributo itemCount** recupera el número de elementos que se muestran actua
 
 Este atributo es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **propiedad itemCount** contará el número total de elementos expandido. Por ejemplo, si hay dos listas de reproducción que contienen tres elementos multimedia cada una, **itemCount** devolverá 2 si las listas de reproducción no se expanden. Si solo se expande la primera lista de reproducción, **itemCount** devolverá 4. Si ambas listas de reproducción se expanden, **itemCount** devolverá 6.
+La **propiedad itemCount** cuenta el número total de elementos expandido. Por ejemplo, si hay dos listas de reproducción que contienen tres elementos multimedia cada una, **itemCount** devolverá 2 si las listas de reproducción no se expanden. Si solo se expande la primera lista de reproducción, **itemCount** devolverá 4. Si ambas listas de reproducción se expanden, **itemCount** devolverá 6.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f92fb85f7133053392bee39119c91b55240f84f0a51c8acc7dc9c732b596526c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9dd6c7fdb47483ae0ddc841ae5f79b8f913e6a4f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120104765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166206"
 ---
 # <a name="tcm_setitemextra-message"></a>Mensaje \_ SETITEMEXTRA de TCM
 
@@ -43,7 +43,7 @@ Número de bytes adicionales.
 
 Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, el número de bytes adicionales es cuatro. Una aplicación que cambia el número de bytes adicionales no puede usar la [**estructura TCITEM**](/windows/win32/api/commctrl/ns-commctrl-tcitema) para recuperar y establecer los datos definidos por la aplicación para una pestaña. En su lugar, debe definir una nueva estructura que consta de la [**estructura TCITEMHEADER**](/windows/win32/api/commctrl/ns-commctrl-tcitemheadera) seguida de miembros definidos por la aplicación.
 
@@ -57,7 +57,7 @@ Una aplicación solo debe cambiar el número de bytes adicionales cuando un cont
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f3396392f8010e58d81cb7d8970a4fc5fd022c87bbcb152fa6911154039c564
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 184819f02ef666240768eee0a890ed1e0b62b873
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118571300"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243170"
 ---
 # <a name="playlistitemerrorcolor"></a>PLAYLIST.itemErrorColor
 
@@ -29,26 +29,26 @@ El **atributo itemErrorColor** especifica o recupera el color de resaltado que i
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer Microsoft. Tiene un valor predeterminado de "rojo".
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft. Tiene un valor predeterminado de "rojo".
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**Referencia de color**](color-reference.md)
 </dt> <dt>
 
-[**ELEMENTO PLAYLIST**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

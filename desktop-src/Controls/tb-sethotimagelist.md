@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12d07c66add48fa8022f7b8505bee377be184af3ed8195251b3a92b46d0ff58c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f9a84c3420eaf64710ac1f8764db20d2cfc88b7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119318855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166618"
 ---
 # <a name="tb_sethotimagelist-message"></a>Mensaje \_ SETHOTIMAGELIST de TB
 
@@ -43,7 +43,7 @@ Identificador de la lista de imágenes que se establecerá.
 
 Devuelve el identificador a la lista de imágenes usada anteriormente para mostrar botones de acceso rápido, o **NULL** si no se estableció previamente ninguna lista de imágenes.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un botón está en caliente cuando el cursor está sobre él. Los controles de barra de herramientas deben tener el estilo [**TBSTYLE \_ FLAT**](toolbar-control-and-button-styles.md) o [**TBSTYLE \_ LIST**](toolbar-control-and-button-styles.md) para tener elementos de acceso rápido.
 
@@ -55,7 +55,7 @@ Un botón está en caliente cuando el cursor está sobre él. Los controles de b
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

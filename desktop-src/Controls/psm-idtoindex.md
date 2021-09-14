@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83bce0bfeecd2f233b2108133b08e49c27c90625c1bd07f2d4273bd77bbd0b54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f098c37ba30e33685abedf9dccd3ffc7c303acb9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120061525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167562"
 ---
 # <a name="psm_idtoindex-message"></a>Mensaje \_ IDTOINDEX de PSM
 
@@ -55,7 +55,7 @@ Devuelve el índice de base cero de la página de hoja de propiedades especifica
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: Cómo procesar mensajes de notificación
-description: Una hoja de propiedades envía mensajes WM NOTIFY para recuperar información de las páginas y \_ notificar a las páginas las acciones del usuario.
+description: Una hoja de propiedades envía mensajes WM NOTIFY para recuperar información de las páginas \_ y notificar a las páginas las acciones del usuario.
 ms.assetid: 82768E43-97BA-451A-9373-D5B8FD06ABED
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9baf0c58fdbcbe5378dd46e828a2d29a7c91832174c9564660a82c5ab70997a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2c544910e44e0c865e738427285d7488147b9c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119575485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167650"
 ---
 # <a name="how-to-process-notification-messages"></a>Cómo procesar mensajes de notificación
 
-Una hoja de propiedades envía [**mensajes WM \_ NOTIFY**](wm-notify.md) para recuperar información de las páginas y notificar a las páginas las acciones del usuario.
+Una hoja de propiedades envía [**mensajes \_ WM NOTIFY**](wm-notify.md) para recuperar información de las páginas y notificar a las páginas las acciones del usuario.
 
-El *parámetro lParam* del mensaje es la dirección de una estructura [**NMHDR,**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene el identificador del cuadro de diálogo de la hoja de propiedades, el identificador del cuadro de diálogo de página y un código de notificación. La página debe responder a algunos mensajes de notificación estableciendo el valor MSGRESULT de DWL de la página \_ en **TRUE** o **FALSE.**
+El *parámetro lParam* del mensaje es la dirección de una estructura [**NMHDR,**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene el identificador del cuadro de diálogo de hoja de propiedades, el identificador del cuadro de diálogo de página y un código de notificación. La página debe responder a algunos mensajes de notificación estableciendo el valor MSGRESULT de DWL de la página \_ en **TRUE** o **FALSE.**
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -23,16 +23,16 @@ El *parámetro lParam* del mensaje es la dirección de una estructura [**NMHDR,*
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Instrucciones
 
 ### <a name="process-notification-messages"></a>Procesar mensajes de notificación
 
-El ejemplo siguiente es un fragmento de código del procedimiento de cuadro de diálogo de una página. Muestra cómo procesar el código de [notificación de LA AYUDA \_ de PSN.](psn-help.md)
+El ejemplo siguiente es un fragmento de código del procedimiento de cuadro de diálogo de una página. Muestra cómo procesar el código de [notificación DE AYUDA \_ de PSN.](psn-help.md)
 
 
 ```C++

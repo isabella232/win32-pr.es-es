@@ -1,9 +1,9 @@
 ---
 title: Función de devolución de llamada TranslateDispatch
-description: Usado por el cliente de la función DoReaderMode para interceptar y controlar explícitamente los mensajes de Windows destinados al área de desplazamiento de la ventana del modo de lector. Se trata de una función de devolución de llamada definida por la aplicación.
+description: Lo usa el cliente de la función DoReaderMode para interceptar y controlar explícitamente los mensajes de Windows destinados al área de desplazamiento de la ventana del modo lector. Se trata de una función de devolución de llamada definida por la aplicación.
 ms.assetid: a50cff4f-ae10-4c3c-a386-9ec7c7d6256f
 keywords:
-- Función de devolución de llamada TranslateDispatch Windows Controles
+- Función de devolución de llamada TranslateDispatch Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 08f726c3f56579260e96a882f1123d035df37cb3f7f71fd0ecbc47d41672359c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1230ed1e65f8d739f9a0a05e4788eb919c45c4cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120060535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165977"
 ---
 # <a name="translatedispatch-callback-function"></a>Función de devolución de llamada TranslateDispatch
 
 \[*TranslateDispatch* está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
 
-Usado por el cliente de la función [**DoReaderMode**](doreadermode.md) para interceptar y controlar explícitamente los mensajes de Windows destinados al área de desplazamiento de la ventana del modo de lector. Se trata de una función de devolución de llamada definida por la aplicación.
+Lo usa el cliente de la función [**DoReaderMode**](doreadermode.md) para interceptar y controlar explícitamente los mensajes de Windows destinados al área de desplazamiento de la ventana del modo lector. Se trata de una función de devolución de llamada definida por la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Puntero a una [**estructura MSG**](/windows/win32/api/winuser/ns-winuser-msg) qu
 
 Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 
-**TRUE** si esta función controló el mensaje; de lo contrario, **FALSE**. Si **es FALSE**, el mensaje se controla mediante la implementación predeterminada del modo de lector. Esa implementación controla el movimiento del mouse y los botones, así como las pulsaciones de tecla.
+**TRUE** si esta función controló el mensaje; de lo contrario, **FALSE**. Si **es FALSE,** el mensaje se controla mediante la implementación predeterminada del modo de lector. Esa implementación controla el movimiento del mouse y los botones, así como las pulsaciones de tecla.
 
 ## <a name="examples"></a>Ejemplos
 

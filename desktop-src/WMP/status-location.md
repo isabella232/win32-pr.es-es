@@ -9,16 +9,16 @@ keywords:
 - visualización del estado en máscaras, ubicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1111c511c2ab52ff4233a497384606238f8afa351ab786deb6e3f5a20247a9a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b47cb08b0a1fde8b3bbc24e4300f880c3896ebf6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119763185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243099"
 ---
 # <a name="status-location"></a>Ubicación de estado
 
-Debe definir la ubicación de la pantalla de estado que desea usar. Debe proporcionar cuatro enteros positivos, separados por comas, que definan la izquierda, la parte superior, el ancho y el alto de la presentación de estado, en píxeles, con respecto a la imagen de fondo.
+Debe definir la ubicación de la pantalla de estado que desea usar. Debe proporcionar cuatro enteros positivos, separados por comas, que definan la izquierda, la parte superior, el ancho y el alto de la pantalla de estado, en píxeles, con respecto a la imagen de fondo.
 
 
 ```C++

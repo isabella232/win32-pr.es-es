@@ -1,6 +1,6 @@
 ---
 title: TDN_HYPERLINK_CLICKED de notificación (Commctrl.h)
-description: Enviado por un cuadro de diálogo de tarea cuando el usuario hace clic en un hipervínculo en el contenido del diálogo de tarea. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método TaskDialogIndirect.
+description: Enviado por un cuadro de diálogo de tarea cuando el usuario hace clic en un hipervínculo en el contenido del cuadro de diálogo de la tarea. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método TaskDialogIndirect.
 ms.assetid: b769af31-32d0-463e-be15-6abf5dcb425c
 keywords:
 - TDN_HYPERLINK_CLICKED código de notificación Windows controles
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0adaf5ecf05b22e3ff33aa88e28cb3f8f8c8b78f0b06d2127792b7639942bf7f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: edd79406eb59f9bafd93269f8982db6213ef882c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119875775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166074"
 ---
-# <a name="tdn_hyperlink_clicked-notification-code"></a>Código de notificación CLICKED DE TDN \_ HYPERLINK \_
+# <a name="tdn_hyperlink_clicked-notification-code"></a>Código de notificación \_ CLICKED DE HIPERVÍNCULO DE TDN \_
 
-Enviado por un cuadro de diálogo de tarea cuando el usuario hace clic en un hipervínculo en el contenido del diálogo de tarea. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el [**método TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
+Enviado por un cuadro de diálogo de tarea cuando el usuario hace clic en un hipervínculo en el contenido del cuadro de diálogo de la tarea. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el [**método TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
 
 ```C++
@@ -65,7 +65,7 @@ Se omite el valor devuelto.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

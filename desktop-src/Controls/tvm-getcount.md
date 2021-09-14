@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fce2d3ed6580acc875007ff3962bbeb21e9c0d3c3cb38128a2339da79597f3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 870ca0d1e4bf04d054d29d78ab60371863648a8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120060355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165765"
 ---
 # <a name="tvm_getcount-message"></a>Mensaje \_ GETCOUNT de TVM
 
@@ -39,9 +39,9 @@ Recupera un recuento de los elementos de un control de vista de árbol. Puede en
 
 Devuelve el recuento de elementos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El recuento de nodos devuelto por [**TreeView \_ GetCount**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getcount) se limita a valores enteros. Si agrega un nodo más allá de 32767, la macro devuelve un valor negativo. Después de agregar 65536 nodos, el recuento vuelve a cero. Cuando esto sucede, el control de vista de árbol aparece vacío sin barras de desplazamiento.
+El número de nodos devuelto por [**TreeView \_ GetCount**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getcount) se limita a los valores enteros. Si agrega un nodo más allá de 32767, la macro devuelve un valor negativo. Después de agregar 65536 nodos, el recuento vuelve a cero. Cuando esto sucede, el control de vista de árbol aparece vacío sin barras de desplazamiento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ El recuento de nodos devuelto por [**TreeView \_ GetCount**](/windows/desktop/ap
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

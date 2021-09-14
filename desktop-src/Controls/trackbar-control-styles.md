@@ -28,12 +28,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9165325c2d78ac6e4dc1ae69e410d293100de24cb8d38868475e99e49c0faaa8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 42966f98db18257c9a6a9ca463d5bd88028a02f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165986"
 ---
 # <a name="trackbar-control-styles"></a>Estilos de control de la barra de seguimiento
 
@@ -57,7 +57,7 @@ Esta sección contiene información sobre los estilos usados con controles de ba
 | <span id="TBS_NOTHUMB"></span><span id="tbs_nothumb"></span><dl> <dt>**TBS \_ NOTHUMB**</dt> </dl>                            | El control trackbar no muestra un control deslizante. <br/>                                                                                                                                                                                                                                                                                                           |
 | <span id="TBS_TOOLTIPS"></span><span id="tbs_tooltips"></span><dl> <dt>**INFORMACIÓN SOBRE \_ HERRAMIENTAS DE TBS**</dt> </dl>                         | [Versión 4.70.](common-control-versions.md) El control trackbar admite información sobre herramientas. Cuando se crea un control trackbar con este estilo, crea automáticamente un control de información sobre herramientas predeterminado que muestra la posición actual del control deslizante. Puede cambiar dónde se muestra la información sobre herramientas mediante el [**mensaje \_ SETTIPSIDE de TBM.**](tbm-settipside.md) <br/> |
 | <span id="TBS_REVERSED"></span><span id="tbs_reversed"></span><dl> <dt>**TB \_ INVERTIDOS**</dt> </dl>                         | [Versión 5.80.](common-control-versions.md) Este bit de estilo se usa para barras de seguimiento "invertida", donde un número más pequeño indica "mayor" y un número mayor indica "menor". No tiene ningún efecto en el control; es simplemente una etiqueta que se puede comprobar para determinar si una barra de seguimiento es normal o se invierte.<br/>                                             |
-| <span id="TBS_DOWNISLEFT"></span><span id="tbs_downisleft"></span><dl> <dt>**TBS \_ DOWNISLEFT**</dt> </dl>                   | De forma predeterminada, el control trackbar usa los valores inferiores iguales a right y up equal to left. Use el estilo DOWNISLEFT de TBS para invertir el valor predeterminado, lo que hace que sea igual a la izquierda \_ y hacia arriba igual a la derecha. <br/>                                                                                                                                                                          |
+| <span id="TBS_DOWNISLEFT"></span><span id="tbs_downisleft"></span><dl> <dt>**TBS \_ DOWNISLEFT**</dt> </dl>                   | De forma predeterminada, el control trackbar usa los valores inferiores iguales a derecha e iguales a izquierda. Use el estilo DOWNISLEFT de TBS para invertir el valor predeterminado, lo que hace que sea igual a la izquierda \_ y hacia arriba igual a la derecha. <br/>                                                                                                                                                                          |
 | <span id="TBS_NOTIFYBEFOREMOVE"></span><span id="tbs_notifybeforemove"></span><dl> <dt>**TBS \_ NOTIFYBEFOREMOVE**</dt> </dl> | [Versión 6.00](common-control-versions.md) **y Windows Vista.** La barra de seguimiento debe notificar al elemento primario antes de cambiar la posición del control deslizante debido a la acción del usuario (habilita el ajuste). <br/>                                                                                                                                                                                   |
 | <span id="TBS_TRANSPARENTBKGND"></span><span id="tbs_transparentbkgnd"></span><dl> <dt>**TBS \_ TRANSPARENTBNDAND**</dt> </dl> | [Versión 6.00](common-control-versions.md) **y Windows Vista.** El elemento primario pinta el fondo a través del \_ mensaje PRINTCLIENT de WM. <br/>                                                                                                                                                                                                                   |
 

@@ -4,16 +4,16 @@ description: Una barra de estado es una ventana horizontal en la parte inferior 
 ms.assetid: vs|controls|~\controls\status\status.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc75802c7aa478a8bc02cf67bb8474a4535239261f3b398f564a9ad25a15f96d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3c2d1130b25cf0dc6373021e063210b765aa34a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119816334"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167009"
 ---
 # <a name="status-bars-windows-controls"></a>Barras de estado (Windows controles)
 
-Una *barra de estado* es una ventana horizontal en la parte inferior de una ventana primaria en la que una aplicación puede mostrar varios tipos de información de estado. La barra de estado se puede dividir en partes para mostrar más de un tipo de información. En la siguiente captura de pantalla se muestra la barra de estado en la aplicación Windows Paint Microsoft. En este caso, la barra de estado contiene el texto "Para ayuda, haga clic en Temas de Ayuda en el menú Ayuda". La barra de estado es el área de la parte inferior de la ventana que contiene el texto de ayuda y la información de coordenadas.
+Una *barra de estado* es una ventana horizontal en la parte inferior de una ventana primaria en la que una aplicación puede mostrar varios tipos de información de estado. La barra de estado se puede dividir en partes para mostrar más de un tipo de información. En la siguiente captura de pantalla se muestra la barra de estado en microsoft Windows Paint aplicación. En este caso, la barra de estado contiene el texto "Para ayuda, haga clic en Temas de Ayuda en el menú Ayuda". La barra de estado es el área de la parte inferior de la ventana que contiene el texto de ayuda y la información de coordenadas.
 
 ![captura de pantalla de la aplicación de pintura, con una barra de estado que contiene sugerencias sobre la ayuda en línea](images/sb-paint.png)
 
@@ -44,7 +44,7 @@ El procedimiento de ventana de la barra de estado establece automáticamente el 
 
 El procedimiento de ventana ajusta automáticamente el tamaño de la barra de estado cada vez que recibe un [**mensaje \_ WM SIZE.**](/windows/desktop/winmsg/wm-size) Normalmente, cuando cambia el tamaño de la ventana primaria, el elemento primario envía un mensaje **WM \_ SIZE** a la barra de estado.
 
-Una aplicación puede establecer el alto mínimo del área de dibujo de una barra de estado enviando a la ventana un mensaje [**\_ SB SETMINHEIGHT,**](sb-setminheight.md) especificando el alto mínimo, en píxeles. El área de dibujo no incluye los bordes de la ventana. Un alto mínimo es útil para dibujar en una barra de estado dibujada por el propietario. Para obtener más información, vea [Barras de estado dibujadas por el propietario](#owner-drawn-status-bars) más adelante en este capítulo.
+Una aplicación puede establecer el alto mínimo del área de dibujo de una barra de estado enviando a la ventana un mensaje [**SB \_ SETMINHEIGHT,**](sb-setminheight.md) especificando el alto mínimo, en píxeles. El área de dibujo no incluye los bordes de la ventana. Un alto mínimo es útil para dibujar en una barra de estado dibujada por el propietario. Para obtener más información, vea [Barras de estado dibujadas por el propietario](#owner-drawn-status-bars) más adelante en este capítulo.
 
 Para recuperar los anchos de los bordes de una barra de estado, envíe a la ventana [**un mensaje \_ SB GETBORDERS.**](sb-getborders.md) El mensaje incluye la dirección de una matriz de tres elementos que recibe los anchos.
 
@@ -56,7 +56,7 @@ Una barra de estado puede tener un máximo de 256 partes, aunque las aplicacione
 
 ## <a name="status-bar-text-operations"></a>Operaciones de texto de la barra de estado
 
-El texto de cualquier parte de una barra de estado se establece enviando el mensaje [**\_ SB SETTEXT,**](sb-settext.md) especificando el índice de base cero de una parte, una dirección de la cadena que se va a dibujar en el elemento y la técnica para dibujar la cadena. La técnica de dibujo determina si el texto tiene un borde y, si lo hace, el estilo del borde. También determina si la ventana primaria es responsable de dibujar el texto. Para más información, consulte la sección [Barras de estado dibujadas por](#owner-drawn-status-bars) el propietario a continuación.
+El texto de cualquier parte de una barra de estado se establece enviando el mensaje [**\_ SB SETTEXT,**](sb-settext.md) especificando el índice de base cero de una parte, una dirección de la cadena que se va a dibujar en el elemento y la técnica para dibujar la cadena. La técnica de dibujo determina si el texto tiene un borde y, si lo hace, el estilo del borde. También determina si la ventana primaria es responsable de dibujar el texto. Para más información, consulte la sección [Barras de estado dibujadas por el](#owner-drawn-status-bars) propietario a continuación.
 
 De forma predeterminada, el texto se alinea a la izquierda dentro de la parte especificada de una barra de estado. Puede insertar caracteres de tabulación (t) en el texto para centrarlo \\ o alinearlo a la derecha. El texto situado a la derecha de un solo carácter de tabulación se centra y el texto a la derecha de un segundo carácter de tabulación se alinea a la derecha.
 
@@ -94,9 +94,9 @@ Cuando una barra de estado necesita dibujar una parte dibujada por el propietari
 
 ## <a name="simple-mode-status-bars"></a>Barras de estado de modo simple
 
-Una barra de estado se coloca en "modo simple" enviándole un [**mensaje SB \_ SIMPLE.**](sb-simple.md) Una barra de estado de modo simple muestra solo una parte. Cuando se establece el texto de la ventana, la ventana se invalida, pero no se vuelve a dibujar hasta el [**siguiente WM \_ PAINT**](/windows/desktop/gdi/wm-paint). La espera del mensaje reduce el parpadeo de la pantalla al minimizar el número de veces que se vuelve a dibujar la ventana. Una barra de estado de modo simple es útil para mostrar texto de Ayuda para los elementos de menú mientras el usuario se desplaza por el menú.
+Para colocar una barra de estado en "modo simple", envíele un [**mensaje \_ SB SIMPLE.**](sb-simple.md) Una barra de estado de modo simple muestra solo una parte. Cuando se establece el texto de la ventana, la ventana se invalida, pero no se vuelve a dibujar hasta el [**siguiente WM \_ PAINT**](/windows/desktop/gdi/wm-paint). La espera del mensaje reduce el parpadeo de la pantalla al minimizar el número de veces que se vuelve a dibujar la ventana. Una barra de estado de modo simple es útil para mostrar texto de Ayuda para los elementos de menú mientras el usuario se desplaza por el menú.
 
-La cadena que muestra una barra de estado mientras está en modo simple se mantiene por separado de las cadenas que muestra mientras está en modo no sencillo. Esto significa que puede poner la ventana en modo simple, establecer su texto y volver al modo no sencillo sin cambiar el texto en modo no sencillo.
+La cadena que muestra una barra de estado mientras está en modo simple se mantiene por separado de las cadenas que muestra mientras está en modo no sencillo. Esto significa que puede poner la ventana en modo simple, establecer su texto y volver al modo no sencillo sin cambiar el texto del modo no sencillo.
 
 Al establecer el texto de una barra de estado de modo simple, puede especificar cualquier técnica de dibujo excepto SBT \_ OWNERDRAW. Una barra de estado de modo simple no admite el dibujo de propietario.
 
@@ -114,10 +114,10 @@ En esta sección se describen los mensajes que controla el procedimiento de vent
 | **WM \_ GETTEXT**       | Copia el texto de la primera parte de una barra de estado en un búfer. Devuelve un valor de 32 bits que especifica la longitud, en caracteres, del texto y la técnica utilizada para dibujar el texto.                                                                                |
 | **WM \_ GETTEXTLENGTH** | Devuelve un valor de 32 bits que especifica la longitud, en caracteres, del texto de la primera parte de una barra de estado y la técnica utilizada para dibujar el texto.                                                                                                                  |
 | **WM \_ NCHITTEST**     | Devuelve el valor HTBOTTOMRIGHT si el cursor del mouse está en el control de tamaño, lo que hace que el sistema muestre el cursor de tamaño. Si el cursor del mouse no está en el control de tamaño, la barra de estado pasa este mensaje a la [**función DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) |
-| **WM \_ PAINT**         | Pinta la región no válida de la barra de estado. Si el *parámetro wParam* no es **NULL,** el control supone que el valor es un HDC y pinta con ese contexto de dispositivo.                                                                                               |
+| **WM \_ PAINT**         | Pinta la región no válida de la barra de estado. Si el *parámetro wParam* no es **NULL,** el control asume que el valor es un HDC y pinta con ese contexto de dispositivo.                                                                                               |
 | **WM \_ SETFONT**       | Selecciona el identificador de fuente en el contexto del dispositivo para la barra de estado.                                                                                                                                                                                                      |
-| **WM \_ SETTEXT**       | Copia el texto especificado en la primera parte de una barra de estado mediante la operación de dibujo predeterminada (especificada como cero). Devuelve **TRUE si se** realiza correctamente o FALSE en **caso** contrario.                                                                                       |
-| **TAMAÑO \_ DE WM**          | Cambia el tamaño de la barra de estado en función del ancho actual del área de cliente de la ventana primaria y el alto de la fuente actual de la barra de estado.                                                                                                                               |
+| **WM \_ SETTEXT**       | Copia el texto especificado en la primera parte de una barra de estado mediante la operación de dibujo predeterminada (especificada como cero). Devuelve **TRUE si se** realiza correctamente o **FALSE** en caso contrario.                                                                                       |
+| **TAMAÑO \_ WM**          | Cambia el tamaño de la barra de estado según el ancho actual del área de cliente de la ventana primaria y el alto de la fuente actual de la barra de estado.                                                                                                                               |
 
 
 

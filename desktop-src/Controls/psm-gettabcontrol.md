@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b0e26c9489dc839383552b407a16313c94e1fc3b070d93f1d59ddaf0310134d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab296159cac4dbfb4ef894d90d31bcd74d6ca2e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118169665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167570"
 ---
 # <a name="psm_gettabcontrol-message"></a>Mensaje \_ GETTABCONTROL de PSM
 
@@ -47,7 +47,7 @@ Debe ser cero.
 
 Devuelve el identificador al control de ficha.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Este mensaje no se admite cuando se usa el estilo del asistente de Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).
@@ -62,7 +62,7 @@ Devuelve el identificador al control de ficha.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

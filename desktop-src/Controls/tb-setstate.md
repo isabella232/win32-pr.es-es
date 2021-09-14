@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa9ee112e4bbbe9c64ceab6205d67ecd6ae9653df97be55991be38eb5d181d3d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7aa46dc68d9af5559e580e697bf6893b15051cff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118167475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166566"
 ---
 # <a name="tb_setstate-message"></a>Mensaje \_ SETSTATE de TB
 
@@ -39,23 +39,23 @@ Identificador de comando del botón.
 *lParam* 
 </dt> <dd>
 
-LOWORD [**es una combinación**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) de valores enumerados en Estados del botón de la barra de [herramientas](toolbar-button-states.md). HIWORD [**debe**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) ser cero.
+[**LOWORD es una combinación**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) de valores enumerados en Estados [del botón de la](toolbar-button-states.md)barra de herramientas . [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

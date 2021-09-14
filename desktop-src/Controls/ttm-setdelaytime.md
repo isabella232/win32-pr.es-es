@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dd5b4f3d20cd99872adeeb66776d71a1e4125a066890a3bab4793caf04de8f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43b633dc75baa0a8f385cf8cdb9bf7e9fa254809
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119914075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165866"
 ---
 # <a name="ttm_setdelaytime-message"></a>Mensaje \_ SETDELAYTIME de TTM
 
@@ -60,7 +60,7 @@ LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.
 
 No se usa el valor devuelto para este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los tiempos de retraso predeterminados se basan en el tiempo de doble clic. Para el tiempo predeterminado de doble clic de 500 ms, los tiempos de retraso inicial, autopop y reshow son 500 ms, 5000 ms y 100 ms, respectivamente. El fragmento de código siguiente usa la [**función GetDoubleClickTime**](/windows/desktop/api/winuser/nf-winuser-getdoubleclicktime) para determinar los tres tiempos de retraso de cualquier sistema.
 
@@ -83,7 +83,7 @@ reshow = GetDoubleClickTime() / 5;
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

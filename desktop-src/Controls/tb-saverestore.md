@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94d04c16fda40bf66736431a684398eddf313529c669cc6db9ec49fbaad4f6f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e87e4ddbed87e81a88c8711c9931dcf95cf9e59
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118168035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166666"
 ---
 # <a name="tb_saverestore-message"></a>Mensaje \_ SAVERESTORE de TB
 
@@ -34,7 +34,7 @@ Envíe este mensaje para iniciar la guardado o restauración de un estado de la 
 *wParam* 
 </dt> <dd>
 
-Guardar o restaurar marca. Si este parámetro es **TRUE,** se guarda la información. Si es **FALSE,** se restaura la información.
+Guardar o restaurar marca. Si este parámetro es **TRUE**, se guarda la información. Si es **FALSE**, se restaura la información.
 
 </dd> <dt>
 
@@ -49,21 +49,21 @@ Puntero a una [**estructura TBSAVEPARAMS**](/windows/win32/api/commctrl/ns-commc
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para la versión 4.72 y anteriores, para usar este mensaje para guardar o restaurar una barra de herramientas, la ventana primaria del control de barra de herramientas debe implementar un controlador para el código de [notificación \_ TBN GETBUTTONINFO.](tbn-getbuttoninfo.md) La barra de herramientas emite esta notificación para recuperar información sobre cada botón a medida que se restaura.
+Para la versión 4.72 y anteriores, para usar este mensaje para guardar o restaurar una barra de herramientas, la ventana primaria del control de barra de herramientas debe implementar un controlador para el código de [notificación \_ GETBUTTONINFO de TBN.](tbn-getbuttoninfo.md) La barra de herramientas emite esta notificación para recuperar información sobre cada botón a medida que se restaura.
 
-La versión 5.80 incluye una nueva opción de guardar o restaurar. Al principio del proceso y, a medida que se guarde o restaure cada botón, la aplicación recibirá una notificación [TBN \_ SAVE](tbn-save.md) o [TBN \_ RESTORE.](tbn-restore.md) Para usar esta opción, debe implementar controladores de notificación para proporcionar al Shell la información de mapa de bits y estado que necesita para guardar o restaurar correctamente el estado de la barra de herramientas.
+La versión 5.80 incluye una nueva opción de guardar o restaurar. Al principio del proceso y, a medida que se guarde o restaure cada botón, la aplicación recibirá una notificación [ \_ TBN SAVE](tbn-save.md) o [TBN \_ RESTORE.](tbn-restore.md) Para usar esta opción, debe implementar controladores de notificación para proporcionar al Shell la información de mapa de bits y estado que necesita para guardar o restaurar correctamente el estado de la barra de herramientas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TB \_ SAVERESTOREW** (Unicode) y **TB \_ SAVERESTOREA** (ANSI)<br/>             |
 
 

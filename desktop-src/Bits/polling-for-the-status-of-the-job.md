@@ -1,22 +1,22 @@
 ---
 title: Sondeo del estado del trabajo
-description: De forma predeterminada, una aplicación debe sondear los cambios en el estado de un trabajo.
+description: De forma predeterminada, una aplicación debe sondear si hay cambios en el estado de un trabajo.
 ms.assetid: b12ee1e0-d3d9-4d31-b2af-7491480968f0
 keywords:
 - bits de trabajo de transferencia, sondeo
 - sondeo de bits de estado de trabajo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af7f1f47a891968e686ae1ffc083bfa9b00d79c8bdc22e2c78ea523ef7ec707e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2df7fcde49d7359ff8cfa38326eba1e1e0bfeac5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119701725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167998"
 ---
 # <a name="polling-for-the-status-of-the-job"></a>Sondeo del estado del trabajo
 
-De forma predeterminada, una aplicación debe sondear los cambios en el estado de un trabajo. Para capturar los cambios en el estado del trabajo, llame al [**método IBackgroundCopyJob::GetState.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getstate) Para capturar cambios en el número de bytes y archivos transferidos, llame al método [**IBackgroundCopyJob::GetProgress.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress) Para recuperar información de progreso sobre la parte de respuesta de un trabajo de carga y respuesta, llame al método [**IBackgroundCopyJob2::GetReplyProgress.**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyprogress) Para obtener un ejemplo en el que se usa la información de progreso, vea [Determinar el progreso de un trabajo.](determining-the-progress-of-a-job.md)
+De forma predeterminada, una aplicación debe sondear si hay cambios en el estado de un trabajo. Para capturar los cambios en el estado del trabajo, llame al [**método IBackgroundCopyJob::GetState.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getstate) Para capturar los cambios en el número de bytes y archivos transferidos, llame al método [**IBackgroundCopyJob::GetProgress.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress) Para recuperar información de progreso sobre la parte de respuesta de un trabajo de carga y respuesta, llame al método [**IBackgroundCopyJob2::GetReplyProgress.**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyprogress) Para obtener un ejemplo en el que se usa la información de progreso, vea [Determinar el progreso de un trabajo.](determining-the-progress-of-a-job.md)
 
 La [**\_ enumeración BG JOB \_ STATE**](/windows/desktop/api/Bits/ne-bits-bg_job_state) define los estados de un trabajo y la estructura [**BG JOB \_ \_ PROGRESS**](/windows/desktop/api/Bits/ns-bits-bg_job_progress) contiene información sobre el número de bytes y archivos transferidos.
 

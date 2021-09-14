@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4f2586c84740cb2d5e8b1f1aadfb910cd241270d3e18363accf1f166c3c35ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab33e53117933390d7a34ec75a49724003255108
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118167191"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166461"
 ---
 # <a name="tbm_setbuddy-message"></a>Mensaje \_ SETBUDDY de TBM
 
@@ -36,10 +36,10 @@ Valor que especifica la ubicación en la que se va a mostrar la ventana del comp
 
 
 
-| Valor                                                                                                                                | Significado                                                                                                                                                                                                                                                                                         |
+| Value                                                                                                                                | Significado                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TRUE"></span><span id="true"></span><dl> <dt>**Verdad**</dt> </dl>    | El compañero aparecerá a la izquierda de la barra de seguimiento si el control trackbar usa el [**estilo \_ HORZ de TBS.**](trackbar-control-styles.md) Si la barra de seguimiento usa el [**estilo \_ VERT de TBS,**](trackbar-control-styles.md) el compañero aparece encima del control trackbar.<br/>  |
-| <span id="FALSE"></span><span id="false"></span><dl> <dt>**Falso**</dt> </dl> | El compañero aparecerá a la derecha de la barra de seguimiento si el control trackbar usa el [**estilo \_ HORZ de TBS.**](trackbar-control-styles.md) Si la barra de seguimiento usa el [**estilo \_ VERT de TBS,**](trackbar-control-styles.md) el compañero aparece debajo del control trackbar.<br/> |
+| <span id="TRUE"></span><span id="true"></span><dl> <dt>**VERDAD**</dt> </dl>    | El compañero aparecerá a la izquierda de la barra de seguimiento si el control trackbar usa el [**estilo \_ HORZ de TBS.**](trackbar-control-styles.md) Si la barra de seguimiento usa el [**estilo \_ VERT de TBS,**](trackbar-control-styles.md) el compañero aparece encima del control trackbar.<br/>  |
+| <span id="FALSE"></span><span id="false"></span><dl> <dt>**FALSO**</dt> </dl> | El compañero aparecerá a la derecha de la barra de seguimiento si el control trackbar usa el [**estilo \_ HORZ de TBS.**](trackbar-control-styles.md) Si la barra de seguimiento usa el [**estilo \_ VERT de TBS,**](trackbar-control-styles.md) el compañero aparece debajo del control trackbar.<br/> |
 
 
 
@@ -58,7 +58,7 @@ Identificador de la ventana que se establecerá como el compañero del control t
 
 Devuelve el identificador a la ventana que se asignó previamente al control en esa ubicación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Los controles de barra de seguimiento admiten hasta dos ventanas de compañeros. Esto puede ser útil cuando debe mostrar texto o imágenes en cada extremo del control.
@@ -69,11 +69,11 @@ Devuelve el identificador a la ventana que se asignó previamente al control en 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

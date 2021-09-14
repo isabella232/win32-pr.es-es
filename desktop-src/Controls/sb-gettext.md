@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05967d41d86ad039e39259c8179a9e768e8fbbf76e5112b531048ac0ed7b56bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e90b132c3f934188aea36afd86d53ab8f75bdadb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118168740"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167137"
 ---
 # <a name="sb_gettext-message"></a>Mensaje \_ SB GETTEXT
 
@@ -55,18 +55,18 @@ Devuelve un valor de 32 bits que consta de dos valores de 16 bits. La palabra ba
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | <dl> <dt>**0**</dt> </dl>               | El texto se dibuja con un borde para que aparezca más bajo que el plano de la ventana.<br/>  |
 | <dl> <dt>**SBT \_ NOBORDERS**</dt> </dl>  | El texto se dibuja sin bordes.<br/>                                             |
-| <dl> <dt>**SBT \_ POPOUT**</dt> </dl>     | El texto se dibuja con un borde que aparece más arriba que el plano de la ventana.<br/> |
+| <dl> <dt>**SBT \_ POPOUT**</dt> </dl>     | El texto se dibuja con un borde para que aparezca más alto que el plano de la ventana.<br/> |
 | <dl> <dt>**SBT \_ RTLREADING**</dt> </dl> | El texto se muestra en la dirección opuesta del texto en la ventana primaria.<br/>  |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-**Advertencia de seguridad:** El uso incorrecto de este mensaje puede poner en peligro la seguridad del programa. Este mensaje no proporciona una manera de conocer el tamaño del búfer. Si usa este mensaje, llame primero a [**SB \_ GETTEXTLENGTH**](sb-gettextlength.md) para obtener el número de caracteres necesarios y, a continuación, llame al mensaje para recuperar la cadena. Si espera antes de llamar a **SB \_ GETTEXT,** el texto podría cambiar, invalidando así el valor devuelto **de SB \_ GETTEXTLENGTH**. Debe revisar consideraciones [de seguridad: Microsoft Windows antes](sec-comctls.md) de continuar.
+**Advertencia de seguridad:** El uso incorrecto de este mensaje puede poner en peligro la seguridad del programa. Este mensaje no proporciona una manera de conocer el tamaño del búfer. Si usa este mensaje, llame primero a [**SB \_ GETTEXTLENGTH**](sb-gettextlength.md) para obtener el número de caracteres necesarios y, a continuación, llame al mensaje para recuperar la cadena. Si espera antes de llamar a **SB \_ GETTEXT,** el texto podría cambiar, invalidando así el valor devuelto **de SB \_ GETTEXTLENGTH**. Debe revisar las [Consideraciones de seguridad: Controles de Windows Microsoft](sec-comctls.md) antes de continuar.
 
-Este mensaje devuelve un máximo de 65 535 caracteres. Si la cadena de texto es mayor que eso, se trunca.
+Este mensaje devuelve un máximo de 65 535 caracteres. Si la cadena de texto es más larga que eso, se trunca.
 
 Si el texto tiene el tipo de dibujo SBT OWNERDRAW, este mensaje devuelve el valor de 32 bits asociado al texto en lugar de la longitud y el tipo \_ de operación.
 
@@ -80,7 +80,7 @@ Las ventanas normales muestran texto de izquierda a derecha (LTR). Windows se pu
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **SB \_ GETTEXTW** (Unicode) y **SB \_ GETTEXTA** (ANSI)<br/>                     |
 
 

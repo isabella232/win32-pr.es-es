@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18355edc8efb18ea56a39e60c68361a7ef8d72e39af644707d6d102738fd60c6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4f059be20560adeb8cbcb0c63a2555283f6b7051
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119387265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165785"
 ---
-# <a name="tvm_endeditlabelnow-message"></a>Mensaje \_ DE TVM ENDEDITLABELNOW
+# <a name="tvm_endeditlabelnow-message"></a>Mensaje DE TVM \_ ENDEDITLABELNOW
 
 Finaliza la edición de la etiqueta de un elemento de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ EndEditLabelNow.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_endeditlabelnow)
 
@@ -32,7 +32,7 @@ Finaliza la edición de la etiqueta de un elemento de vista de árbol. Puede env
 *wParam* 
 </dt> <dd>
 
-Variable que indica si la edición se cancela sin guardarse en la etiqueta. Si este parámetro es **TRUE,** el sistema cancela la edición sin guardar los cambios. De lo contrario, el sistema guarda los cambios en la etiqueta.
+Variable que indica si la edición se cancela sin guardarse en la etiqueta. Si este parámetro es **TRUE**, el sistema cancela la edición sin guardar los cambios. De lo contrario, el sistema guarda los cambios en la etiqueta.
 
 </dd> <dt>
 
@@ -41,21 +41,21 @@ Variable que indica si la edición se cancela sin guardarse en la etiqueta. Si e
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este mensaje hace que el [código de notificación \_ ENDLABELEDIT](tvn-endlabeledit.md) de TVN se envíe a la ventana primaria del control de vista de árbol.
+Este mensaje hace que el [código de notificación \_ ENDLABELEDIT de TVN](tvn-endlabeledit.md) se envíe a la ventana primaria del control de vista de árbol.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

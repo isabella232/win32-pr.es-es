@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29df1da7643384233b25af6a6efd99930d5b49d0b47b5ffead335b2307bd3de3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bc1fe07d12331e523fed9e1ff46b9e265487bc31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119967815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165814"
 ---
 # <a name="ttn_getdispinfo-notification-code"></a>Código de notificación \_ GETDISPINFO de TTN
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMTTDISPINFO**](/windows/win32/api/commctrl/ns-commc
 
 No se usa el valor devuelto para esta notificación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Rellene los miembros adecuados de la estructura para devolver la información solicitada al control de información sobre herramientas. Si el controlador de mensajes establece el miembro **uFlags** de la estructura [**NMTTDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfoa) en TTF DI SETITEM, el control de información sobre herramientas almacena la información y no la \_ \_ volverá a solicitar.
 
@@ -63,7 +63,7 @@ Rellene los miembros adecuados de la estructura para devolver la información so
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TTN \_ GETDISPINFOW** (Unicode) y **TTN \_ GETDISPINFOA** (ANSI)<br/>           |
 
 

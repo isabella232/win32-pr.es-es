@@ -1,19 +1,19 @@
 ---
 title: Compatibilidad con contraste alto temas
-description: En este tema se compara la compatibilidad con temas de contraste alto en Windows 8 con la de versiones anteriores de Windows y se explica cómo admitir temas de contraste alto en una aplicación Windows 8.
+description: En este tema se compara la compatibilidad de los temas de contraste alto en Windows 8 con la de las versiones anteriores de Windows y se explica cómo admitir temas de contraste alto en una aplicación Windows 8.
 ms.assetid: 6E4F1198-E69C-4C60-B3B0-2702AECAA203
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f32c89302daeb7190174a0d6b9e822e1c55d3e530ad29baedd00c5ffdefc97b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2068d64b585f302f578296c9e156895c23b9bce9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118670642"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166958"
 ---
 # <a name="supporting-high-contrast-themes"></a>Compatibilidad con contraste alto temas
 
-En este tema se compara la compatibilidad con temas de contraste alto en Windows 8 con la de versiones anteriores de Windows y se explica cómo admitir temas de contraste alto en una aplicación Windows 8.
+En este tema se compara la compatibilidad de los temas de contraste alto en Windows 8 con la de las versiones anteriores de Windows y se explica cómo admitir temas de contraste alto en una aplicación Windows 8.
 
 Incluye las secciones siguientes.
 
@@ -25,7 +25,7 @@ Incluye las secciones siguientes.
 
 ## <a name="overview-of-support-for-high-contrast-themes"></a>Información general sobre la compatibilidad con contraste alto temas
 
-Windows 7 y versiones anteriores admiten dos modelos de tema, incluidos el modelo Windows modelo clásico y los estilos visuales actuales. El Windows modelo clásico se ha conservado a través de Windows 7 principalmente para admitir los distintos temas de contraste alto. Sin embargo, Windows modelo clásico tiene una serie de inconvenientes:
+Windows 7 y versiones anteriores admiten dos modelos de tema, incluidos el modelo Windows clásico y los estilos visuales actuales. El Windows modelo clásico se ha conservado a través de Windows 7 principalmente para admitir los distintos temas de contraste alto. Sin embargo, Windows modelo clásico tiene una serie de inconvenientes:
 
 -   No se admiten temas que usan estilos visuales, como Windows Aero. Los usuarios de temas de contraste alto deben usar la interfaz Windows clásica.
 -   No se admiten características de interfaz de usuario que se basan en Administrador de ventanas de escritorio (DWM) para ejecutarse, como vistas previas de miniaturas y la lupa de pantalla completa que se introdujo en Windows 7.
@@ -98,7 +98,7 @@ Esta imagen muestra el mismo cuadro de diálogo en contraste alto Windows 8, con
 
 ## <a name="detecting-high-contrast-in-previous-versions-of-windows"></a>Detección de contraste alto en versiones anteriores de Windows
 
-Las aplicaciones que se ejecutan en versiones anteriores Windows no tienen acceso a los nuevos temas de contraste alto. Si la aplicación necesita ejecutarse en versiones anteriores de , debe incluir compatibilidad para representar la interfaz de usuario en alta contraWindowsst en el modelo de Windows de modelado clásico. La aplicación puede determinar si un tema de contraste alto está activo llamando a la función [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) con la **marca SPI \_ GETHIGHCONTRAST.**
+Las aplicaciones que se ejecutan en versiones anteriores Windows no tienen acceso a los nuevos temas de contraste alto. Si la aplicación necesita ejecutarse en versiones anteriores de , debe incluir compatibilidad para representar la interfaz de usuario en alta contrawindowsst en el modelo de Windows de modelado clásico. La aplicación puede determinar si un tema de contraste alto está activo llamando a la función [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) con la **marca SPI \_ GETHIGHCONTRAST.**
 
 ## <a name="related-topics"></a>Temas relacionados
 

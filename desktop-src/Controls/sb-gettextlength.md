@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b2c203862b2a17352924f3df07560034c9f52784c84676d924d78524b05be1c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8b08dd3b870c3c59e5aafbeb9d53baef3816a726
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120084965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167141"
 ---
 # <a name="sb_gettextlength-message"></a>Mensaje \_ SB GETTEXTLENGTH
 
@@ -59,7 +59,7 @@ Devuelve un valor de 32 bits que consta de dos valores de 16 bits. La palabra ba
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las ventanas normales muestran texto de izquierda a derecha (LTR). Windows se puede reflejar *para* mostrar idiomas como hebreo o árabe que leen de derecha a izquierda (RTL). Si se establece SBT RTLREADING, el texto de la ventana de estado especificado leerá en la dirección opuesta del texto \_ de la ventana primaria.
 
@@ -73,7 +73,7 @@ Este mensaje devuelve una longitud máxima de cadena de 65 535 caracteres. Si la
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **SB \_ GETTEXTLENGTHW** (Unicode) y **SB \_ GETTEXTLENGLG (ANSI)**<br/>         |
 
 

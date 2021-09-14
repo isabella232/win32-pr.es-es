@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0bd98c82d91d8334f64724057c247f0145ccc36c887e8f5bea3291ecb0987d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56c3ab1f6c601d9b243977d147f7503ce99788e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077969"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166409"
 ---
 # <a name="tbm_settipside-message"></a>Mensaje \_ SETTIPSIDE de TBM
 
@@ -36,7 +36,7 @@ Valor que representa la ubicación en la que se va a mostrar el control de infor
 
 
 
-| Valor                                                                                                                                                   | Significado                                                                                                                       |
+| Value                                                                                                                                                   | Significado                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | <span id="TBTS_TOP"></span><span id="tbts_top"></span><dl> <dt>**TBTS \_ TOP**</dt> </dl>          | El control de información sobre herramientas se colocará encima de la barra de seguimiento. Esta marca se usa con barras de seguimiento horizontales.<br/>         |
 | <span id="TBTS_LEFT"></span><span id="tbts_left"></span><dl> <dt>**TBTS \_ LEFT**</dt> </dl>       | El control de información sobre herramientas se colocará a la izquierda de la barra de seguimiento. Esta marca se usa con barras de seguimiento verticales.<br/>  |
@@ -60,11 +60,11 @@ Devuelve un valor que representa la ubicación anterior del control de informaci
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

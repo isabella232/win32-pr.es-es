@@ -1,9 +1,9 @@
 ---
-title: NM_RDBLCLK de notificación (barra de estado) (Commctrl.h)
+title: NM_RDBLCLK (barra de estado) código de notificación (Commctrl.h)
 description: Notifica a las ventanas primarias de un control de barra de estado que el usuario ha hecho doble clic en el botón derecho del mouse dentro del control. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 57d8c5a7-e179-4b65-a3aa-5566d5780c18
 keywords:
-- NM_RDBLCLK de notificación (barra de estado) Windows controles
+- NM_RDBLCLK (barra de estado) código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8aa5c754eed028d050f1f42ab6ab7ae652bfb3a3dc8bedb49df81357db6b5af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18092b03a599c75a88deb56bb256d96728b96328
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118410686"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167929"
 ---
 # <a name="nm_rdblclk-status-bar-notification-code"></a>Código \_ de notificación DE NM RDBLCLK (barra de estado)
 
@@ -53,11 +53,11 @@ Devuelve **TRUE** para indicar que el sistema controló el clic del mouse y supr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1209147993b770dde4fa5f67078ff16f68dcc213c3ae1fc780f01b7d615b06
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 29fc024efcad9f0f48ae4882b019269903c249bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119503755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166698"
 ---
 # <a name="tb_isbuttonindeterminate-message"></a>Mensaje \_ ISBUTTONINDETERMINATE de TB
 
@@ -47,11 +47,11 @@ Devuelve un valor distinto de cero si el botón es indeterminado o cero en caso 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

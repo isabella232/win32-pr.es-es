@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb5dca4e4be30b50627d8583a67801dc5cb246ef65e9cd267e6d7b3ee3ed7869
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9e588170c80378082eab7e419e9425e716b8caf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118170202"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167745"
 ---
 # <a name="pbm_setrange-message"></a>Mensaje \_ SETRANGE de PBM
 
@@ -45,9 +45,9 @@ LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve los valores de intervalo anteriores si se realiza correctamente o cero en caso contrario. LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el valor mínimo anterior y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el valor máximo anterior.
+Devuelve los valores de intervalo anteriores si se realiza correctamente o cero en caso contrario. [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica el valor mínimo anterior y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el valor máximo anterior.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si no establece los valores de intervalo, el sistema establece el valor mínimo en 0 y el valor máximo en 100. Dado que este mensaje expresa el intervalo como un entero de 16 bits sin signo, puede extender de 0 a 65 535. El valor mínimo del intervalo puede oscilar entre 0 y 65 535. Del mismo modo, el valor máximo puede ser de 0 a 65 535.
 
@@ -57,11 +57,11 @@ Para establecer un intervalo mayor, llame [**a PBM \_ SETRANGE32**](pbm-setrange
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre los elementos de programa
 ms.assetid: vs|controls|~\controls\rebar\reflist.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14ac71ea71b5e0b0bd1e222d46c070a62512f0f5ff3b885fe13b19fad10f7bf7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bef14343d33fb5ae45a2d93df74a9b915aca6d7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119434845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167178"
 ---
 # <a name="rebar"></a>Rebar
 
@@ -21,7 +21,7 @@ Esta sección contiene información sobre los elementos de programación utiliza
 
 | Tema                                            | Contenido                                                                               |
 |--------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Controles rebar](rebar-controls.md)             | *Los controles rebar* actúan como contenedores para las ventanas secundarias.<br/>                       |
+| [Controles Rebar](rebar-controls.md)             | *Los controles rebar* actúan como contenedores para las ventanas secundarias.<br/>                       |
 | [Usar controles Rebar](using-rebar-controls.md) | Esta sección contiene código de ejemplo que muestra cómo implementar controles rebar.<br/> |
 
 
@@ -91,16 +91,16 @@ Esta sección contiene información sobre los elementos de programación utiliza
 | [NM \_ NCHITTEST (rebar)](nm-nchittest-rebar.md)              | Enviado por un control rebar cuando el control recibe un [**mensaje \_ WM NCHITTEST.**](/windows/desktop/inputdev/wm-nchittest) Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                 |
 | [NM \_ RELEASEDCAPTURE (rebar)](nm-releasedcapture-rebar-.md) | Notifica a la ventana primaria de un control rebar que el control está liberando la captura del mouse. Esta notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                        |
 | [RBN \_ AUTOBREAK](rbn-autobreak.md)                          | Notifica al elemento [primario de una barra](rebar-controls.md) de rebar que aparecerá una interrupción en la barra. El elemento primario determina si se debe realizar la interrupción. <br/>                                                                                                                            |
-| [RBN \_ AUTOSIZE](rbn-autosize.md)                            | Enviado por un control rebar creado con el [**estilo \_ AUTOSIZE de RBS**](rebar-control-styles.md) cuando la barra rebar cambia automáticamente de tamaño. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                  |
+| [RBN \_ AUTOSIZE](rbn-autosize.md)                            | Enviado por un control de rebar creado con el [**estilo \_ AUTOSIZE de RBS**](rebar-control-styles.md) cuando la barra se cambia automáticamente de tamaño. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                  |
 | [RBN \_ BEGINDRAG](rbn-begindrag.md)                          | Enviado por un control rebar cuando el usuario comienza a arrastrar una banda. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                           |
 | [RBN \_ CHEVRONPUSHED](rbn-chevronpushed.md)                  | Enviado por un control rebar cuando se inserta un botón de contenido adicional. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)<br/>                                                                                                                        |
 | [RBN \_ CHILDSIZE](rbn-childsize.md)                          | Enviado por un control rebar cuando se cambia el tamaño de la ventana secundaria de una banda. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                          |
-| [RBN \_ DELETEDBAND](rbn-deletedband.md)                      | Enviado por un control rebar después de eliminar una banda. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                                  |
-| [RBN \_ DELETINGBAND](rbn-deletingband.md)                    | Enviado por un control rebar cuando una banda está a punto de eliminarse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                             |
+| [RBN \_ DELETEDBAND](rbn-deletedband.md)                      | Enviado por un control rebar después de que se haya eliminado una banda. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                                  |
+| [ELIMINACIÓN \_ DE RBNBAND](rbn-deletingband.md)                    | Enviado por un control rebar cuando una banda está a punto de eliminarse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                             |
 | [RBN \_ ENDDRAG](rbn-enddrag.md)                              | Enviado por un control rebar cuando el usuario deja de arrastrar una banda. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                            |
-| [GETOBJECT DE RBN \_](rbn-getobject.md)                          | Enviado por un control rebar creado con el estilo [**\_ REGISTERDROP de RBS**](rebar-control-styles.md) cuando se arrastra un objeto sobre una banda del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/> |
-| [RBN \_ HEIGHTCHANGE](rbn-heightchange.md)                    | Enviado por un control rebar cuando su alto ha cambiado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                                    |
-| [RBN \_ LAYOUTCHANGED](rbn-layoutchanged.md)                  | Enviado por un control rebar cuando el usuario cambia el diseño de las bandas del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                        |
+| [RBN \_ GETOBJECT](rbn-getobject.md)                          | Enviado por un control rebar creado con el estilo [**\_ REGISTERDROP de RBS**](rebar-control-styles.md) cuando se arrastra un objeto sobre una banda del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/> |
+| [CAMBIO ALTO DE RBN \_](rbn-heightchange.md)                    | Enviado por un control rebar cuando ha cambiado su alto. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                                    |
+| [DISEÑO DE RBN \_ MODIFICADO](rbn-layoutchanged.md)                  | Lo envía un control rebar cuando el usuario cambia el diseño de las bandas del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                        |
 | [RBN \_ MINMAX](rbn-minmax.md)                                | Enviado por un control rebar antes de maximizar o minimizar una banda. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                       |
 | [RBN \_ SPLITTERDRAG](rbn-splitterdrag.md)                    | Enviado por un control rebar cuando el usuario arrastra un divisor. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                                                                                 |
 
@@ -114,13 +114,13 @@ Esta sección contiene información sobre los elementos de programación utiliza
 
 | Tema                                        | Contenido                                                                                                                                      |
 |----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**NMRBAUTOSIZE**](/windows/win32/api/commctrl/ns-commctrl-nmrbautosize)         | Contiene información que se usa para controlar los códigos [de notificación \_ AUTOSIZE de RBN.](rbn-autosize.md) <br/>                                   |
+| [**NMRBAUTOSIZE**](/windows/win32/api/commctrl/ns-commctrl-nmrbautosize)         | Contiene información que se usa para controlar los [códigos de notificación DE \_ RBN AUTOSIZE.](rbn-autosize.md) <br/>                                   |
 | [**NMREBAR**](/windows/win32/api/commctrl/ns-commctrl-nmrebar)                   | Contiene información que se usa para controlar varios códigos de notificación de rebar. <br/>                                                           |
-| [**NMREBARAUTOBREAK**](/windows/win32/api/commctrl/ns-commctrl-nmrebarautobreak) | Contiene información usada con la [notificación \_ AUTOBREAK de RBN.](rbn-autobreak.md)<br/>                                               |
-| [**NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron)     | Contiene información utilizada para controlar el código [de notificación \_ RBN CHEVRONPUSHED.](rbn-chevronpushed.md) <br/>                          |
-| [**NMREBARCHILDSIZE**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchildsize) | Contiene información utilizada para controlar el código [de notificación \_ CHILDSIZE de RBN.](rbn-childsize.md) <br/>                                  |
+| [**NMREBARAUTOBREAK**](/windows/win32/api/commctrl/ns-commctrl-nmrebarautobreak) | Contiene información que se usa con la [notificación \_ AUTOBREAK de RBN.](rbn-autobreak.md)<br/>                                               |
+| [**NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron)     | Contiene información que se usa para controlar el [código de notificación \_ RBN CHEVRONPUSHED.](rbn-chevronpushed.md) <br/>                          |
+| [**NMREBARCHILDSIZE**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchildsize) | Contiene información que se usa para controlar el [código de notificación \_ CHILDSIZE de RBN.](rbn-childsize.md) <br/>                                  |
 | [**NMREBARSPLITTER**](/windows/win32/api/commctrl/ns-commctrl-nmrebarsplitter)   | Contiene información que se usa para controlar un código [de notificación \_ SPLITTERDRAG de RBN.](rbn-splitterdrag.md)<br/>                                |
-| [**RBHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-rbhittestinfo)       | Contiene información específica de una operación de prueba de acceso. Esta estructura se usa con el mensaje [**\_ HITTEST de RB.**](rb-hittest.md) <br/> |
+| [**RBHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-rbhittestinfo)       | Contiene información específica de una operación de prueba de acceso. Esta estructura se usa con el [**mensaje \_ RB HITTEST.**](rb-hittest.md) <br/> |
 | [**REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa)       | Contiene información que define una banda en un control rebar. <br/>                                                                      |
 | [**REBARINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarinfo)               | Contiene información que describe las características del control rebar. <br/>                                                                |
 
@@ -134,7 +134,7 @@ Esta sección contiene información sobre los elementos de programación utiliza
 
 | Tema                                            | Contenido                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [Estilos de control Rebar](rebar-control-styles.md) | Los controles rebar admiten una variedad de estilos de control además de los estilos de ventana estándar. <br/> |
+| [Estilos de control Rebar](rebar-control-styles.md) | Los controles rebar admiten una variedad de estilos de control, además de los estilos de ventana estándar. <br/> |
 
 
 

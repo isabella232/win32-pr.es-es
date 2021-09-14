@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TBN_TOOLBARCHANGE (commctrl. h)
-description: Notifica a la ventana primaria de la barra de herramientas que el usuario ha personalizado una barra de herramientas. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TBN_TOOLBARCHANGE de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de la barra de herramientas que el usuario ha personalizado una barra de herramientas. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 6c5127e6-391f-4592-8547-4cc3d3ed6cf0
 keywords:
-- TBN_TOOLBARCHANGE controles de código de notificación de Windows
+- TBN_TOOLBARCHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: af9c533a7a26dd1ed0f1938e6c5138bbae13c31f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996796"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166306"
 ---
-# <a name="tbn_toolbarchange-notification-code"></a>Código de notificación de TOOLBARCHANGE de TBN \_
+# <a name="tbn_toolbarchange-notification-code"></a>TBN \_ TOOLBARCHANGE notification code
 
-Notifica a la ventana primaria de la barra de herramientas que el usuario ha personalizado una barra de herramientas. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de la barra de herramientas que el usuario ha personalizado una barra de herramientas. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ TBN_TOOLBARCHANGE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información sobre el código de notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información sobre el código de notificación.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ No de devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

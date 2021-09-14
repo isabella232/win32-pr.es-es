@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9125c5e5ac742f4692fc5464cd51c89e111558c4d0004e08d7cef9c862d03cbb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7cc8c9ec1fdc9658413da5991fa109e7bef27a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118167495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166629"
 ---
 # <a name="tb_setdisabledimagelist-message"></a>Mensaje \_ SETDISABLEDIMAGELIST de TB
 
@@ -41,17 +41,17 @@ Identificador de la lista de imágenes que se establecerá.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador de la lista de imágenes usada anteriormente para mostrar los botones deshabilitados, o **NULL** si no se estableció previamente ninguna lista de imágenes.
+Devuelve el identificador a la lista de imágenes que se usó anteriormente para mostrar los botones deshabilitados, o **NULL** si no se estableció previamente ninguna lista de imágenes.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre los elementos de programa
 ms.assetid: vs|controls|~\controls\trackbar\reflist.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f56c5a483340a8e77ef0df6503481d3cbc50e51a85bd07258cdf283dd563c6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfe8e58cd8db9c2811f31cac92ee3d1d31c2c02d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120060545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165990"
 ---
 # <a name="trackbar"></a>Barra de seguimiento
 
@@ -22,7 +22,7 @@ Esta sección contiene información sobre los elementos de programación utiliza
 | Tema                                                  | Contenido                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Acerca de los controles trackbar](trackbar-controls.md)       | Una barra de seguimiento es una ventana que contiene un control deslizante (a veces denominado thumb) en un canal y marcas de graduación opcionales. Cuando el usuario mueve el control deslizante, con el mouse o las teclas de dirección, la barra de seguimiento envía mensajes de notificación para indicar el cambio.<br/> |
-| [Usar controles trackbar](using-trackbar-controls.md) | En esta sección se proporcionan detalles de implementación y ejemplos de controles trackbar.<br/>                                                                                                                                                                               |
+| [Usar controles trackbar](using-trackbar-controls.md) | En esta sección se proporcionan detalles de implementación y ejemplos para los controles trackbar.<br/>                                                                                                                                                                               |
 
 
 
@@ -54,7 +54,7 @@ Esta sección contiene información sobre los elementos de programación utiliza
 | [**TBM \_ GETTOOLTIPS**](tbm-gettooltips.md)           | Recupera el identificador del control de información sobre herramientas asignado a la barra de seguimiento, si lo hay. <br/>                                                                                                                                                                                                                          |
 | [**TBM \_ GETUNICODEFORMAT**](tbm-getunicodeformat.md) | Recupera la marca de formato de caracteres Unicode para el control . <br/>                                                                                                                                                                                                                                           |
 | [**TBM \_ SETBUDDY**](tbm-setbuddy.md)                 | Asigna una ventana como ventana de compañeros para un control de barra de seguimiento. Las ventanas de compañeros de barra de seguimiento se muestran automáticamente en una ubicación relativa a la orientación del control (horizontal o vertical). <br/>                                                                                                          |
-| [**TBM \_ SETLINESIZE**](tbm-setlinesize.md)           | Establece el número de posiciones lógicas que el control deslizante de la barra de seguimiento mueve en respuesta a la entrada del teclado desde las teclas de dirección, como las teclas o . Las posiciones lógicas son los incrementos enteros en el intervalo de posiciones del control deslizante mínimo a máximo de la barra de seguimiento. <br/>                                              |
+| [**TBM \_ SETLINESIZE**](tbm-setlinesize.md)           | Establece el número de posiciones lógicas que se mueve el control deslizante de la barra de seguimiento en respuesta a la entrada del teclado desde las teclas de dirección, como las teclas o . Las posiciones lógicas son los incrementos enteros en el intervalo de posiciones del control deslizante mínimo a máximo de la barra de seguimiento. <br/>                                              |
 | [**TBM \_ SETPAGESIZE**](tbm-setpagesize.md)           | Establece el número de posiciones lógicas que el control deslizante de la barra de seguimiento se mueve en respuesta a la entrada del teclado, como las teclas o o la entrada del mouse, como los clics en el canal de la barra de seguimiento. Las posiciones lógicas son los incrementos enteros en el intervalo de posiciones del control deslizante mínimo a máximo de la barra de seguimiento. <br/>        |
 | [**TBM \_ SETPOS**](tbm-setpos.md)                     | Establece la posición lógica actual del control deslizante en una barra de seguimiento. <br/>                                                                                                                                                                                                                                         |
 | [**TBM \_ SETPOSNOTIFY**](tbm-setposnotify.md)         | Establece la posición lógica actual del control deslizante en una barra de seguimiento. <br/>                                                                                                                                                                                                                                         |
@@ -96,7 +96,7 @@ Esta sección contiene información sobre los elementos de programación utiliza
 | Tema                                                  | Contenido                                                                                    |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | [Valores de dibujo personalizados](custom-draw-values.md)           | En esta sección se enumeran los valores usados para identificar las partes de un control trackbar. <br/>      |
-| [Estilos de control de la barra de seguimiento](trackbar-control-styles.md) | Esta sección contiene información sobre los estilos usados con los controles de barra de seguimiento. <br/> |
+| [Estilos de control de la barra de seguimiento](trackbar-control-styles.md) | Esta sección contiene información sobre los estilos usados con controles de barra de seguimiento. <br/> |
 
 
 

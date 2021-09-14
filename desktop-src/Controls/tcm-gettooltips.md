@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb68710c13c8b6b236782b133caa5b6f3609fef931e3b1e395b9944e9ab9a651
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e49334a1fa7124dd6e7a0f0b739cd1ebd24b51b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118166938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166245"
 ---
 # <a name="tcm_gettooltips-message"></a>Mensaje \_ GETTOOLTIPS de TCM
 
@@ -37,21 +37,21 @@ Recupera el identificador del control de información sobre herramientas asociad
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador al control de información sobre herramientas si se realiza correctamente o **NULL** en caso contrario.
+Devuelve el identificador al control de información sobre herramientas si se realiza correctamente o NULL en **caso** contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Un control de pestaña crea un control de información sobre herramientas si tiene el [**estilo TCS \_ TOOLTIPS.**](tab-control-styles.md) También puede asignar un control de información sobre herramientas a un control de pestaña mediante el [**mensaje \_ SETTOOLTIPS de TCM.**](tcm-settooltips.md)
+Un control de pestaña crea un control de información sobre herramientas si tiene el [**estilo DE INFORMACIÓN SOBRE HERRAMIENTAS DE \_ TCS.**](tab-control-styles.md) También puede asignar un control de información sobre herramientas a un control de pestaña mediante el mensaje [**\_ SETTOOLTIPS de TCM.**](tcm-settooltips.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

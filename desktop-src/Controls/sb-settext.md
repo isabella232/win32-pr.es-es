@@ -17,11 +17,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: c8a8ddf0ee02f88b468b0911e64b5308cc2e8784
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479741"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167105"
 ---
 # <a name="sb_settext-message"></a>Mensaje \_ SB SETTEXT
 
@@ -34,7 +34,7 @@ Establece el texto de la parte especificada de una ventana de estado.
 *wParam* 
 </dt> <dd>
 
-El [**LOBYTE**](/previous-versions/windows/desktop/legacy/ms632658(v=vs.85)) de la palabra de orden bajo especifica el índice de base cero de la parte que se establece. Si **loBYTE se** establece en SB SIMPLEID, se supone que la ventana de estado es una barra de estado de modo simple; es decir, una barra de estado con \_ una sola parte.
+El [**LOBYTE**](/previous-versions/windows/desktop/legacy/ms632658(v=vs.85)) de la palabra de orden bajo especifica el índice de base cero de la parte que se establece. Si **loBYTE** se establece en SB SIMPLEID, se supone que la ventana de estado es una barra de estado de modo simple; es decir, una barra de estado con \_ una sola parte.
 
 El [**HIBYTE**](/previous-versions/windows/desktop/legacy/ms632656(v=vs.85)) de la palabra de orden bajo especifica el tipo de la operación de dibujo. Este parámetro puede ser uno de los valores siguientes.
 
@@ -43,14 +43,14 @@ Se omite la palabra de orden superior *de wParam.*
 
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <span id="0"></span><dl><dt><strong>0</strong></dt></dl> | El texto se dibuja con un borde para que aparezca más bajo que el plano de la ventana.<br /> | 
 | <span id="SBT_NOBORDERS"></span><span id="sbt_noborders"></span><dl><dt><strong>SBT_NOBORDERS</strong></dt></dl> | El texto se dibuja sin bordes.<br /> | 
 | <span id="SBT_OWNERDRAW"></span><span id="sbt_ownerdraw"></span><dl><dt><strong>SBT_OWNERDRAW</strong></dt></dl> | La ventana primaria dibuja el texto. <br /><blockquote>[!Note]<br />Una barra de estado de modo simple no admite el dibujo del propietario.</blockquote><br /> | 
 | <span id="SBT_POPOUT"></span><span id="sbt_popout"></span><dl><dt><strong>SBT_POPOUT</strong></dt></dl> | El texto se dibuja con un borde para que aparezca más alto que el plano de la ventana.<br /> | 
 | <span id="SBT_RTLREADING"></span><span id="sbt_rtlreading"></span><dl><dt><strong>SBT_RTLREADING</strong></dt></dl> | El texto se mostrará en la dirección opuesta al texto de la ventana primaria.<br /> | 
-| <span id="SBT_NOTABPARSING"></span><span id="sbt_notabparsing"></span><dl><dt><strong>SBT_NOTABPARSING</strong></dt></dl> | Se omiten los caracteres de tabulación.<br /> | 
+| <span id="SBT_NOTABPARSING"></span><span id="sbt_notabparsing"></span><dl><dt><strong>SBT_NOTABPARSING</strong></dt></dl> | Los caracteres de tabulación se omiten.<br /> | 
 
 
 
@@ -70,17 +70,17 @@ Puntero a una cadena terminada en NULL que especifica el texto que se establecer
 
 Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El mensaje invalida la parte de la ventana que ha cambiado, lo que hace que muestre el nuevo texto cuando la ventana recibe a continuación el [**mensaje \_ DE WM PAINT.**](/windows/desktop/gdi/wm-paint)
 
-Las ventanas normales muestran texto de izquierda a derecha (LTR). Windows se puede reflejar *para* mostrar idiomas como hebreo o árabe que leen de derecha a izquierda (RTL). Si se establece SBT \_ RTLREADING, la cadena *lParam* leerá en la dirección opuesta desde el texto de la ventana primaria.
+Las ventanas normales muestran texto de izquierda a derecha (LTR). Windows se puede *reflejar para* mostrar idiomas como hebreo o árabe que leen de derecha a izquierda (RTL). Si se establece SBT \_ RTLREADING, la cadena *lParam* leerá en la dirección opuesta desde el texto de la ventana primaria.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
@@ -89,7 +89,7 @@ Las ventanas normales muestran texto de izquierda a derecha (LTR). Windows se pu
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

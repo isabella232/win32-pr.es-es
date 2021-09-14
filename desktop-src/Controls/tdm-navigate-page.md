@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c7894bdc5831af2c1fe2e779679aaab38eab94f976cf9c586dfe64d26a051b8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 56fc86e0e4fe457a43e035ed5d568e91303c7fcd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120104635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166133"
 ---
 # <a name="tdm_navigate_page-message"></a>Mensaje DE \_ LA PÁGINA DE NAVEGACIÓN de TDM \_
 
@@ -47,7 +47,7 @@ Puntero a una [**estructura TASKDIALOGCONFIG**](/windows/desktop/api/Commctrl/ns
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para iniciar un cuadro de diálogo de tarea del asistente, use [**la función TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) A medida que el usuario navega mediante el asistente, envíe este mensaje al cuadro de diálogo de tarea para mostrar la página siguiente. Se crea un nuevo cuadro de diálogo de tarea (parece una nueva página) con los elementos especificados en la estructura a la que *apunta lParam*. Durante la creación, se destruye y se reconstruye todo el contenido del marco de diálogo. Como resultado, se pierde cualquier información de estado que mantienen los controles (por ejemplo, una barra de progreso, un botón expando o una casilla de verificación) en el cuadro de diálogo.
 
@@ -61,7 +61,7 @@ El diseño del cuadro de diálogo de tarea puede producir un error y es posible 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

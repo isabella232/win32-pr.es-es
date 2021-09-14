@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ca25ed7dd2a2fa2b11e0854f7fe9e4bb4afb9aa47ec52c21bc1c6e346ebf16d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9dc86866be1154bbd0ef1cf76b3535b7b02496e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119914495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167433"
 ---
 # <a name="psn_translateaccelerator-notification-code"></a>Código de notificación \_ DE PSN TRANSLATEACCELERATOR
 
@@ -49,7 +49,7 @@ Puntero a una [**estructura PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-psh
 
 Devuelve PSNRET \_ MESSAGEHANDLED para indicar que no es necesario ningún procesamiento adicional. Devuelve PSNRET \_ NOERROR para solicitar el procesamiento normal.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para establecer el valor devuelto, el procedimiento del cuadro de diálogo de la página debe usar la [**función SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) con el valor MSGRESULT de \_ DWL. El procedimiento del cuadro de diálogo debe devolver **TRUE**.
 
@@ -61,7 +61,7 @@ Para establecer el valor devuelto, el procedimiento del cuadro de diálogo de la
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

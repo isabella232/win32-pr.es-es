@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8e22712e37f3fcd800677af0659673d9ca85d818b86b1efdf8f039f731b0306
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 48534d9e933f5c0e304fe0bb743c048c765cc772
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119467745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243200"
 ---
 # <a name="playlisteditbuttonvisible"></a>PLAYLIST.editButtonVisible
 
@@ -29,7 +29,7 @@ El **atributo editButtonVisible** especifica o recupera un valor que indica si e
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un booleano de lectura **y escritura.**
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
@@ -42,7 +42,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al establecer este atributo en true, el botón de edición de la lista de reproducción aparecerá en la esquina inferior izquierda del elemento **PLAYLIST.** Al hacer clic en este botón se muestra un menú de opciones que permite al usuario editar, borrar, ordenar, abrir, guardar o copiar una lista de reproducción.
 
@@ -60,7 +60,7 @@ Al establecer este atributo en true, el botón de edición de la lista de reprod
 
 <dl> <dt>
 
-[**ELEMENTO PLAYLIST**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0556add41addb4a58d5734ab900af4a43c2018b533723145ed4f9c8272e3890
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fba57c298a2b903a65c429ae6b4f9d55fc9ed2b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078379"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166909"
 ---
 # <a name="tb_addstring-message"></a>Mensaje \_ ADDSTRING de TB
 
@@ -34,14 +34,14 @@ Agrega una nueva cadena al grupo de cadenas de la barra de herramientas.
 *wParam* 
 </dt> <dd>
 
-Identificador de la instancia del módulo con un archivo ejecutable que contiene el recurso de cadena. Si, *en su lugar, lParam* apunta a una matriz de caracteres con una o varias cadenas, establezca este parámetro en **NULL.**
+Controle la instancia del módulo con un archivo ejecutable que contenga el recurso de cadena. Si *lParam en* su lugar apunta a una matriz de caracteres con una o varias cadenas, establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Identificador de recurso para el recurso de cadena o un puntero a una matriz TCHAR. Vea la sección Comentarios.
+Identificador de recurso para el recurso de cadena o puntero a una matriz TCHAR. Vea la sección Comentarios.
 
 </dd> </dl>
 
@@ -49,21 +49,21 @@ Identificador de recurso para el recurso de cadena o un puntero a una matriz TCH
 
 Devuelve el índice de la primera cadena nueva si se realiza correctamente o -1 en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si *wParam es* **NULL,** *lParam* apunta a una matriz de caracteres con una o varias cadenas terminadas en NULL. La última cadena de la matriz debe terminar con dos caracteres NULL.
+Si *wParam* es **NULL,** *lParam* apunta a una matriz de caracteres con una o varias cadenas terminadas en NULL. La última cadena de la matriz debe terminar con dos caracteres NULL.
 
-Si *wParam es* el HINSTANCE de la aplicación o de otro módulo que contiene un recurso de cadena, *lParam* es el identificador de recurso de la cadena. Cada elemento de la cadena debe comenzar con un carácter separador arbitrario y la cadena debe terminar con dos de estos caracteres. Por ejemplo, el texto de tres botones podría aparecer en la tabla de cadenas como "/New/Open/Save//". El mensaje devuelve el índice de "New" en el grupo de cadenas de la barra de herramientas y los demás elementos se encuentran en posiciones consecutivas.
+Si *wParam es* el HINSTANCE de la aplicación o de otro módulo que contiene un recurso de cadena, *lParam* es el identificador de recurso de la cadena. Cada elemento de la cadena debe comenzar con un carácter separador arbitrario y la cadena debe terminar con dos caracteres de este tipo. Por ejemplo, el texto de tres botones puede aparecer en la tabla de cadenas como "/New/Open/Save//". El mensaje devuelve el índice de "New" en el grupo de cadenas de la barra de herramientas y los demás elementos se encuentran en posiciones consecutivas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TB \_ ADDSTRINGW** (Unicode) y **TB \_ ADDSTRINGA** (ANSI)<br/>                 |
 
 

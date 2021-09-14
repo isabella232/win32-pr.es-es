@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfac02c2a902e890b56e1d14d9ec4b300257e340340d72c6cf80e17488afe3e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7a720531ae58fdb0712b8f23fd1aef88b3e4caa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119914325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167069"
 ---
-# <a name="sbm_setrange-message"></a>Mensaje \_ SETRANGE de SBM
+# <a name="sbm_setrange-message"></a>Mensaje SBM \_ SETRANGE
 
 El **mensaje \_ SETRANGE de SBM** se envía para establecer los valores de posición mínimo y máximo para el control de barra de desplazamiento.
 
@@ -51,9 +51,9 @@ Especifica la posición de desplazamiento máxima.
 
 **ComCtl32.dll versión 6.0:** la posición actual del cuadro de desplazamiento, independientemente de si ha cambiado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los valores de posición mínimo y máximo predeterminados son cero. La diferencia entre los valores especificados por los *parámetros wParam* e *lParam* no debe ser mayor que MAXLONG.
+Los valores predeterminados de posición mínima y máxima son cero. La diferencia entre los valores especificados por los *parámetros wParam* e *lParam* no debe ser mayor que MAXLONG.
 
 Si los valores de posición mínima y máxima son iguales, el control de barra de desplazamiento está oculto y, en efecto, deshabilitado.
 
@@ -65,7 +65,7 @@ Si los valores de posición mínima y máxima son iguales, el control de barra d
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

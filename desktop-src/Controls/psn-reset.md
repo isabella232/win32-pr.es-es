@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb9f14b037d8757469497e644d870a887e6db36172b171f31b00d5615ff39532
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5642a5354d934b37ee58007a9fb260befe201edd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118409816"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167437"
 ---
 # <a name="psn_reset-notification-code"></a>Código de notificación \_ de PSN RESET
 
@@ -49,7 +49,7 @@ Puntero a una [**estructura PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-psh
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todos los cambios realizados desde el último código de notificación [DE PSN \_ APPLY](psn-apply.md) se cancelan, excepto en el caso de [**PSH \_ AEROWIZARD,**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)que no admite ese código de notificación.
 
@@ -58,7 +58,7 @@ El **miembro lParam** de la estructura [**PSHNOTIFY**](/windows/desktop/api/Prsh
 Una aplicación puede usar este código de notificación como una oportunidad para realizar operaciones de limpieza.
 
 > [!Note]  
-> La hoja de propiedades está en proceso de manipular la lista de páginas cuando se envía el código de notificación \_ de PSN RESET. No intente agregar, quitar ni insertar páginas mientras se administra este código de notificación. Si lo hace, tendrá resultados impredecibles.
+> La hoja de propiedades está en proceso de manipular la lista de páginas cuando se envía el código de notificación \_ de PSN RESET. No intente agregar, quitar ni insertar páginas mientras administra este código de notificación. Si lo hace, tendrá resultados impredecibles.
 
  
 
@@ -68,11 +68,11 @@ No llame a la [**función EndDialog**](/windows/desktop/api/winuser/nf-winuser-e
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

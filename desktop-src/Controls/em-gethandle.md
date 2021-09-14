@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f09ade5545197df2dbc9310b708cd7521334bba68f41a14329dd865e84fdee6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88a466394b48d2d726621e50a7e2c5df2f747f08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119019653"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167941"
 ---
 # <a name="em_gethandle-message"></a>Mensaje \_ GETHANDLE DE EM
 
@@ -47,12 +47,12 @@ No se usa; debe ser cero.
 
 El valor devuelto es un identificador de memoria que identifica el búfer que contiene el contenido del control de edición. Si se produce un error, como el envío del mensaje a un control de edición de una sola línea, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la función se realiza correctamente, la aplicación puede tener acceso al contenido del control de edición al convertir el valor devuelto en [**HLOCAL**](/windows/desktop/WinProg/windows-data-types) y pasarlo a [**LocalLock**](/windows/desktop/api/winbase/nf-winbase-locallock). **LocalLock** devuelve un puntero a un búfer que es una matriz terminada en NULL de **CHAR** s o **WCHAR** s, en función de si una función ANSI o Unicode creó el control. Por ejemplo, si se [**usó CreateWindowExA,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) el búfer es una matriz de **CHAR,** pero si se usó **CreateWindowExW,** el búfer es una matriz de **WCHAR.** Es posible que la aplicación no cambie el contenido del búfer. Para desbloquear el búfer, la aplicación llama a [**LocalUnlock**](/windows/desktop/api/winbase/nf-winbase-localunlock) antes de permitir que el control de edición reciba nuevos mensajes.
 
 > [!Note]  
-> Para Comctl32.dll versión 6, el búfer siempre contiene una matriz de **WCHAR,** independientemente de si una función ANSI o Unicode creó el control de edición. Para obtener más información sobre las versiones de DLL, vea [Versiones de control comunes](common-control-versions.md).
+> Por Comctl32.dll versión 6, el búfer siempre contiene una matriz de **WCHAR,** independientemente de si una función ANSI o Unicode creó el control de edición. Para obtener más información sobre las versiones de DLL, vea [Versiones de control comunes](common-control-versions.md).
 
  
 
@@ -68,7 +68,7 @@ Si la aplicación no puede cumplir las restricciones impuestas por **EM \_ GETHA
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56d191034fc1551d4ffc1840498e352e2f3cd82985f1bbc5a7ae8d5350a41fb1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5bb1346f63e9bb10b919c678373e0e8df0724861
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166478"
 ---
 # <a name="tbm_getticpos-message"></a>Mensaje \_ GETTICPOS de TBM
 
@@ -47,9 +47,9 @@ Debe ser cero.
 
 Devuelve la distancia, en coordenadas de cliente, desde la izquierda o la parte superior del área cliente de la barra de seguimiento hasta la marca de graduación especificada. El valor devuelto es la coordenada x de la marca de graduación de una barra de seguimiento horizontal o la coordenada Y de una barra de seguimiento vertical. Si *wParam* no es un índice válido, el valor devuelto es -1.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Dado que la primera y la última marca de graduación no están disponibles a través de este mensaje, los índices válidos se desplazan de su posición de tic en la barra de seguimiento. Si la diferencia entre [**TBM \_ GETRANGEMIN**](tbm-getrangemin.md) y [**TBM \_ GETRANGEMAX**](tbm-getrangemax.md) es menor que dos, no hay ningún índice válido y se producirá un error en este mensaje.
+Dado que la primera y la última marca de graduación no están disponibles a través de este mensaje, los índices válidos se desplazan desde su posición de tic en la barra de seguimiento. Si la diferencia entre [**TBM \_ GETRANGEMIN**](tbm-getrangemin.md) y [**TBM \_ GETRANGEMAX**](tbm-getrangemax.md) es menor que dos, no hay ningún índice válido y se producirá un error en este mensaje.
 
 A continuación se muestra la relación entre los tics de una barra de seguimiento, los tics disponibles a través de este mensaje y sus índices de base cero.
 
@@ -67,7 +67,7 @@ A continuación se muestra la relación entre los tics de una barra de seguimien
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

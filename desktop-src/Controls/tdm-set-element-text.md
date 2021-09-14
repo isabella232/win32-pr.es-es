@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bb0f81867bcff4fd5f7d533c156c8af17d0f4a761b6f8560aa584a85c62b7c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6d0c8830a6d8a1057ab283a9e096434a6184151
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120060775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166129"
 ---
 # <a name="tdm_set_element_text-message"></a>Mensaje DE \_ TEXTO DEL ELEMENTO SET \_ \_ de TDM
 
@@ -38,7 +38,7 @@ Indica el elemento que se debe actualizar. (Para obtener una ilustración, vea [
 
 | Value                                                                                                                                                                                           | Significado                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| <span id="TDE_CONTENT"></span><span id="tde_content"></span><dl> <dt>**CONTENIDO \_ de TDE**</dt> </dl>                                         | Contenido.<br/>              |
+| <span id="TDE_CONTENT"></span><span id="tde_content"></span><dl> <dt>**CONTENIDO \_ DE TDE**</dt> </dl>                                         | Contenido.<br/>              |
 | <span id="TDE_EXPANDED_INFORMATION"></span><span id="tde_expanded_information"></span><dl> <dt>**INFORMACIÓN EXPANDIDA DE TDE \_ \_**</dt> </dl> | Información expandida.<br/> |
 | <span id="TDE_FOOTER"></span><span id="tde_footer"></span><dl> <dt>**PIE DE PÁGINA DE TDE \_**</dt> </dl>                                            | Texto del pie de página.<br/>          |
 | <span id="TDE_MAIN_INSTRUCTION"></span><span id="tde_main_instruction"></span><dl> <dt>**INSTRUCCIÓN PRINCIPAL DE TDE \_ \_**</dt> </dl>             | Instrucción principal.<br/>     |
@@ -60,9 +60,9 @@ Nuevo texto que se usará.
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El tamaño o el diseño del cuadro de diálogo de tarea pueden cambiar para dar cabida al nuevo texto.
+El tamaño o el diseño del cuadro de diálogo de tarea pueden cambiar para adaptarse al nuevo texto.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -83,7 +83,7 @@ SendMessage(hwnd, TDM_SET_ELEMENT_TEXT, (WPARAM)TDE_FOOTER, (LPARAM)L"New footer
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

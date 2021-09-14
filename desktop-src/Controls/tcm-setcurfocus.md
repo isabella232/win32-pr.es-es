@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac3be7b9b7f62d69a1207e60f58189f152f109531d83e4f7b80b6e13ca6f6da3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: abe566d1e1b3cc7d257c4756fe123423fc344a7f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119876495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166222"
 ---
 # <a name="tcm_setcurfocus-message"></a>Mensaje \_ SETCURFOCUS de TCM
 
@@ -43,11 +43,11 @@ Establece el foco en una pestaña especificada en un control de ficha. Puede env
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el control de pestaña tiene el [**estilo TCS \_ BUTTONS**](tab-control-styles.md) (modo de botón), la pestaña con el foco puede ser diferente de la pestaña seleccionada. Por ejemplo, cuando se selecciona una pestaña, el usuario puede presionar las teclas de dirección para establecer el foco en otra pestaña sin cambiar la pestaña seleccionada. En el modo de botón, **TCM \_ SETCURFOCUS** establece el foco de entrada en el botón asociado a la pestaña especificada, pero no cambia la pestaña seleccionada.
 
-Si el control de pestaña no tiene el estilo [**TCS \_ BUTTONS,**](tab-control-styles.md) cambiar el foco también cambia la pestaña seleccionada. En este caso, el control de pestaña envía los códigos de notificación [TCN \_ SELCHANGING](tcn-selchanging.md) y [TCN \_ SELCHANGE](tcn-selchange.md) a su ventana primaria.
+Si el control de pestaña no tiene el [**estilo TCS \_ BUTTONS,**](tab-control-styles.md) cambiar el foco también cambia la pestaña seleccionada. En este caso, el control de pestaña envía los códigos de notificación [ \_ TCN SELCHANGING](tcn-selchanging.md) y [TCN \_ SELCHANGE](tcn-selchange.md) a su ventana primaria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Si el control de pestaña no tiene el estilo [**TCS \_ BUTTONS,**](tab-control-s
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

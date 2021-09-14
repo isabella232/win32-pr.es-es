@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59b90c5163717712cbb085e0dcdaf1e08fdf64a6b88e59a73bd0a77364dca22b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 12f41f0ba2ec8d13a7bfc932b553b355399f76b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119985645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167513"
 ---
 # <a name="psm_setcursel-message"></a>Mensaje \_ SETCURSEL de PSM
 
@@ -45,9 +45,9 @@ Identificador de la página que se activará. Una aplicación puede especificar 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La ventana que pierde la activación recibe el código de notificación [ \_ KILLACTIVE](psn-killactive.md) de PSN y la ventana que obtiene la activación recibe el código de [notificación \_ SETACTIVE de PSN.](psn-setactive.md)
 
@@ -59,7 +59,7 @@ La ventana que pierde la activación recibe el código de notificación [ \_ KIL
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2d095cd824970b7ea90541420274b204a1e2f63ce6e1218e62221741f572feb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e09e558d5574d4fd28cf01e9794657556dda4ae8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119434975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167297"
 ---
 # <a name="rb_pushchevron-message"></a>Mensaje \_ PUSHCHEVRON de RB
 
@@ -39,7 +39,7 @@ Se envía a un control rebar para insertar mediante programación un botón de c
 *lParam* 
 </dt> <dd>
 
-Valor de 32 bits definido por la aplicación. Se volverá a pasar a la aplicación como miembro **lParamNM** de la estructura [**NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) que se pasa con la notificación [ \_ CHEVRONPUSHED de RBN.](rbn-chevronpushed.md)
+Valor de 32 bits definido por la aplicación. Se volverá a pasar a la aplicación como miembro **lParamNM** de la estructura [**NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) que se pasa con la notificación [ \_ RBN CHEVRONPUSHED.](rbn-chevronpushed.md)
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Cuando se envía este mensaje, el control rebar enviará a la aplicación un có
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

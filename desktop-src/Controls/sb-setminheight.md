@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b644067e48312b265d132f7d06d53343c4612b879c3a09b638ebd0a98a7c88a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6bcad3bf0cb4d11567e82aae4ef46a95fefe3890
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119293735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167117"
 ---
 # <a name="sb_setminheight-message"></a>Mensaje \_ SB SETMINHEIGHT
 
@@ -43,7 +43,7 @@ Alto mínimo, en píxeles, de la ventana.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El alto mínimo es la suma de *wParam* y el doble del ancho, en píxeles, del borde vertical de la ventana de estado. Una aplicación debe enviar el [**mensaje WM \_ SIZE**](/windows/desktop/winmsg/wm-size) a la ventana de estado para volver a dibujar la ventana. Los *parámetros wParam* *y lParam* del mensaje WM **\_ SIZE** deben establecerse en cero.
 
@@ -55,7 +55,7 @@ El alto mínimo es la suma de *wParam* y el doble del ancho, en píxeles, del bo
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

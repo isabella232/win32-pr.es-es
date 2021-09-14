@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eaf1a5221e186ebe5f01f942ec99d82906ea87ef7f1b8f73860bade24ab1751
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ae5f90670c79797ef8576c5e6e3911255ab5fe1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118169655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167450"
 ---
 # <a name="psn_killactive-notification-code"></a>Código de notificación KILLACTIVE de PSN \_
 
@@ -49,18 +49,18 @@ Puntero a una [**estructura PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-psh
 
 Devuelve **TRUE** para evitar que la página pierda la activación o **FALSE** para permitirla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una aplicación controla este código de notificación para validar la información que el usuario ha escrito.
+Una aplicación controla este código de notificación para validar la información que el usuario ha especificado.
 
 > [!Note]  
-> La hoja de propiedades está en proceso de manipular la lista de páginas cuando se envía el código de notificación \_ KILLACTIVE de PSN. No intente agregar, quitar ni insertar páginas mientras se administra este código de notificación. Si lo hace, tendrá resultados impredecibles.
+> La hoja de propiedades está en proceso de manipular la lista de páginas cuando se envía el código de notificación \_ KILLACTIVE de PSN. No intente agregar, quitar ni insertar páginas mientras administra este código de notificación. Si lo hace, tendrá resultados impredecibles.
 
  
 
-Para establecer un valor devuelto, el procedimiento del cuadro de diálogo de la página debe llamar a la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) con un valor MSGRESULT de DWL establecido \_ en el valor devuelto. El procedimiento del cuadro de diálogo debe devolver **TRUE.**
+Para establecer un valor devuelto, el procedimiento del cuadro de diálogo de la página debe llamar a la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) con un valor MSGRESULT de DWL establecido \_ en el valor devuelto. El procedimiento del cuadro de diálogo debe devolver **TRUE**.
 
-Si el procedimiento del cuadro de diálogo establece MSGRESULT de DWL en TRUE , debería mostrar un cuadro de \_ mensaje para explicar el problema al usuario. 
+Si el procedimiento del cuadro de diálogo establece DWL MSGRESULT en TRUE, debe mostrar un cuadro de mensaje para \_ explicar el problema al usuario. 
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Si el procedimiento del cuadro de diálogo establece MSGRESULT de DWL en TRUE , 
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

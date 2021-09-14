@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d35cbb162b42636d886cb5e41eb9ba6de1a2101a8327ff8ddffbc71c57fa6735
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d34c2e70aa6247cb970e576c915bdcd28cd18d23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166438"
 ---
-# <a name="tbm_setrangemin-message"></a>Mensaje \_ TBM SETRANGEMIN
+# <a name="tbm_setrangemin-message"></a>Mensaje \_ SETRANGEMIN de TBM
 
 Establece la posición lógica mínima del control deslizante en una barra de seguimiento.
 
@@ -32,7 +32,7 @@ Establece la posición lógica mínima del control deslizante en una barra de se
 *wParam* 
 </dt> <dd>
 
-Volver a dibujar la marca. Si este parámetro es **TRUE,** el mensaje vuelve a dibujar la barra de seguimiento después de establecer el intervalo. Si este parámetro es **FALSE,** el mensaje establece el intervalo, pero no vuelve a dibujar la barra de seguimiento.
+Vuelva a dibujar la marca. Si este parámetro es **TRUE,** el mensaje vuelve a dibujar la barra de seguimiento después de establecer el intervalo. Si este parámetro es **FALSE**, el mensaje establece el intervalo, pero no vuelve a dibujar la barra de seguimiento.
 
 </dd> <dt>
 
@@ -47,9 +47,9 @@ Posición mínima del control deslizante.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si la posición del control deslizante actual es menor que el nuevo mínimo, el mensaje **\_ TBM SETRANGEMIN** establece la posición del control deslizante en el nuevo valor mínimo.
+Si la posición del control deslizante actual es menor que el nuevo mínimo, el mensaje **\_ SETRANGEMIN** de TBM establece la posición del control deslizante en el nuevo valor mínimo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Si la posición del control deslizante actual es menor que el nuevo mínimo, el 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

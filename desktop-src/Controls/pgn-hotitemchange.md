@@ -1,6 +1,6 @@
 ---
 title: PGN_HOTITEMCHANGE mensaje (Commctrl.h)
-description: Notifica a la ventana primaria de un control de paginación que el elemento de acceso activa (resaltado) ha cambiado. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
+description: Notifica a la ventana primaria de un control de paginación que el elemento activa (resaltado) ha cambiado. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 0f59677c-0251-49f4-b909-6fac6d93f354
 keywords:
 - PGN_HOTITEMCHANGE controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6510eeb648ad883d04ccc0baf916223bb5209d110c2237ef3bf618d241c2ede
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 573f3dd93a6e4b0b3db6682d36804416d6f6f1e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117830139"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167665"
 ---
 # <a name="pgn_hotitemchange-message"></a>Mensaje \_ HOTITEMCHANGE de PGN
 
-Notifica a la ventana primaria de un control de paginación que el elemento de acceso activa (resaltado) ha cambiado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
+Notifica a la ventana primaria de un control de paginación que el elemento activa (resaltado) ha cambiado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -49,7 +49,7 @@ Puntero a una [**estructura NMPGHOTITEM**](/windows/win32/api/commctrl/ns-commct
 
 Devuelve cero para resaltar el elemento o distinto de cero para evitar el resaltado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
@@ -60,11 +60,11 @@ Devuelve cero para resaltar el elemento o distinto de cero para evitar el resalt
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

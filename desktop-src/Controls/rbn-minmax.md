@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d18fea875af376b3ec9b311d2aad09597f0ce6ea264963e9e466cc87ce4fe4b6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b3569a28d0c0a610ccccf42d11ff4b2e5b4b0007
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119984995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167202"
 ---
 # <a name="rbn_minmax-notification-code"></a>Código de notificación MINMAX de RBN \_
 
@@ -48,7 +48,7 @@ Devuelve un valor distinto de cero para evitar que se haga la operación, cero p
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

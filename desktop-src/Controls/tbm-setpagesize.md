@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87cf41547a996e9726002101998ea859b7dbc6cc3e7ed3f87927fdae8bdadd2f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec5d8a396bb605b4276346e84e7b46bfbefe0657
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166457"
 ---
 # <a name="tbm_setpagesize-message"></a>Mensaje \_ SETPAGESIZE de TBM
 
@@ -43,7 +43,7 @@ Nuevo tamaño de página.
 
 Devuelve un valor de 32 bits que especifica el tamaño de página anterior.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La barra de seguimiento también envía un mensaje [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) con los códigos de notificación PAGEUP y TB PAGEDOWN de TB a su ventana primaria cuando recibe la entrada del teclado o del mouse que desplaza la \_ \_ página.
 
@@ -55,7 +55,7 @@ La barra de seguimiento también envía un mensaje [**WM \_ HSCROLL**](wm-hscrol
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

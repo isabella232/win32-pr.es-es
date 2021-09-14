@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c2f6da5153457a871918afea60ac1251496454831a09426f16579ac47342406
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ee6de1c45402f8bdc154f9f10be00140d7c766c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078879"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167670"
 ---
-# <a name="pgn_calcsize-notification-code"></a>Código de notificación \_ PGN CALCSIZE
+# <a name="pgn_calcsize-notification-code"></a>Código de notificación \_ DE PGN CALCSIZE
 
 Enviado por un control de paginación para obtener las dimensiones desplazables de la ventana independiente. El control de paginación usa estas dimensiones para determinar el tamaño desplazable de la ventana independiente. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -41,7 +41,7 @@ PGN_CALCSIZE
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura NMPGCALCSIZE**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgcalcsize) que contiene y recibe información sobre el código de notificación. El **miembro dwFlag** de esta estructura indica qué dimensión se está calculando. Según el valor de **dwFlag**, debe colocar la dimensión deseada en el **miembro iWidth** o **iHeight** de esta estructura.
+Puntero a una [**estructura NMPGCALCSIZE**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgcalcsize) que contiene y recibe información sobre el código de notificación. El **miembro dwFlag** de esta estructura indica qué dimensión se está calculando. Según el valor de **dwFlag**, debe colocar la dimensión deseada en el miembro **iWidth** o **iHeight** de esta estructura.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Se omite el valor devuelto.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

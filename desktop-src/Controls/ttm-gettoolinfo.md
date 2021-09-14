@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77f19243603ab5d2ba62d498a5595528e39b33658c7a8e4aa0638888806684ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc0de37b97be3bec495c8777b2ddd1cc6fc1bd42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118166378"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165890"
 ---
 # <a name="ttm_gettoolinfo-message"></a>Mensaje \_ GETTOOLINFO de TTM
 
@@ -45,7 +45,7 @@ Puntero a una [**estructura TOOLINFO.**](/windows/win32/api/commctrl/ns-commctrl
 
 Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el control de información sobre herramientas incluye la herramienta, la [**estructura TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) recibe información sobre la herramienta.
 
@@ -93,11 +93,11 @@ HRESULT MyToolTipClass::OffsetTooltip(int xOffset, int yOffset)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TTM \_ GETTOOLINFOW** (Unicode) y **TTM \_ GETTOOLINFOA** (ANSI)<br/>           |
 
 

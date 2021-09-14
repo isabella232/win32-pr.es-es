@@ -43,12 +43,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7b582d0477600acb69447c0d82c93092f486618e93b27b3f166c1324938d4ca
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 319445e5a5961023062e09a04481f0376ff3493c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119387756"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166006"
 ---
 # <a name="toolbar-standard-button-image-index-values"></a>Valores de índice de imagen del botón Estándar de la barra de herramientas
 
@@ -70,7 +70,7 @@ Valores de índice para IDB \_ HIST \_ LARGE COLOR y \_ IDB \_ HIST SMALL \_ \_ 
 
 <dl></dl>
 
-Valores de índice para \_ IDB STD \_ LARGE COLOR y \_ IDB \_ STD SMALL \_ \_ COLOR:
+Valores de índice para \_ IDB STD \_ LARGE COLOR y \_ \_ IDB STD \_ SMALL \_ COLOR:
 
 
 
@@ -80,7 +80,7 @@ Valores de índice para \_ IDB STD \_ LARGE COLOR y \_ IDB \_ STD SMALL \_ \_ CO
 | <span id="STD_CUT"></span><span id="std_cut"></span><dl> <dt>**STD \_ CUT**</dt> </dl>                      | Operación de corte.<br/>           |
 | <span id="STD_DELETE"></span><span id="std_delete"></span><dl> <dt>**STD \_ DELETE**</dt> </dl>             | Operación de eliminación.<br/>        |
 | <span id="STD_FILENEW"></span><span id="std_filenew"></span><dl> <dt>**STD \_ FILENEW**</dt> </dl>          | Nueva operación de archivo.<br/>      |
-| <span id="STD_FILEOPEN"></span><span id="std_fileopen"></span><dl> <dt>**ARCHIVO \_ STDABRIR**</dt> </dl>       | Operación abrir archivo.<br/>     |
+| <span id="STD_FILEOPEN"></span><span id="std_fileopen"></span><dl> <dt>**ARCHIVO \_ STDABRIR**</dt> </dl>       | Operación de abrir archivo.<br/>     |
 | <span id="STD_FILESAVE"></span><span id="std_filesave"></span><dl> <dt>**STD \_ FILESAVE**</dt> </dl>       | Operación de guardar archivo.<br/>     |
 | <span id="STD_FIND"></span><span id="std_find"></span><dl> <dt>**STD \_ FIND**</dt> </dl>                   | Operación de búsqueda.<br/>          |
 | <span id="STD_HELP"></span><span id="std_help"></span><dl> <dt>**AYUDA \_ DE STD**</dt> </dl>                   | Operación de ayuda.<br/>          |

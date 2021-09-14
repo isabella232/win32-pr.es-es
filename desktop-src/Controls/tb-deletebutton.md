@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 527bac884c36d8bcbf1ddee245156557e392cf1b4591b03c8af7cfc9cc3c8f77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c1d9bbbca143351f70005990b5ac97fa4fa35cad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166874"
 ---
 # <a name="tb_deletebutton-message"></a>Mensaje \_ DELETEBUTTON de TB
 
@@ -32,7 +32,7 @@ Elimina un botón de la barra de herramientas.
 *wParam* 
 </dt> <dd>
 
-Índice de base cero del botón que se eliminará.
+Índice de base cero del botón que se desea eliminar.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Elimina un botón de la barra de herramientas.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

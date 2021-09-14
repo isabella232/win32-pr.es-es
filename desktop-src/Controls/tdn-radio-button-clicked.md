@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea1917a1523cdc3a106398d07912d3fff5295f7da18a59055f059a13007f98b8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0c8b16f738e4807c94a060b41b3932d0f3e07ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119875765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166065"
 ---
-# <a name="tdn_radio_button_clicked-notification-code"></a>Código de notificación CLIC EN \_ EL BOTÓN DE RADIO \_ \_ de TDN
+# <a name="tdn_radio_button_clicked-notification-code"></a>TDN \_ RADIO \_ BUTTON \_ CLICKED notification code
 
 Enviado por un cuadro de diálogo de tarea cuando el usuario selecciona un botón de radio o un vínculo de comando en el cuadro de diálogo de tarea. Este código de notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el [**método TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
@@ -65,7 +65,7 @@ Se omite el valor devuelto.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

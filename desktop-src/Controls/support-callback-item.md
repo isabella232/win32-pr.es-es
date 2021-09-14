@@ -4,12 +4,12 @@ description: En este tema se muestra cómo proporcionar compatibilidad con eleme
 ms.assetid: BD32666F-9445-4871-AE21-5DC9F5FC9C1B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df078b8be8cd02f56592a74de4242b515974a740df01d3cd4bd36074d5f8e022
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 056f64c086aeda94ccf928d93ae2c5db5e2187a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119968225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166962"
 ---
 # <a name="how-to-support-callback-items"></a>Cómo admitir elementos de devolución de llamada
 
@@ -26,7 +26,7 @@ En este tema se muestra cómo proporcionar compatibilidad con elementos de devol
 -   C/C++
 -   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Instrucciones
 
 
 Si la aplicación va a usar elementos de devolución de llamada en un control ComboBoxEx, debe estar preparado para controlar el código de [notificación \_ GETDISPINFO de CBEN.](cben-getdispinfo.md) Un control ComboBoxEx envía esta notificación siempre que necesite que el propietario proporcione información específica del elemento. Para obtener más información sobre los elementos de devolución de llamada, vea [Elementos de devolución de llamada](comboboxex-controls.md).

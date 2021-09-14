@@ -1,29 +1,29 @@
 ---
-title: Acerca de los controles de la barra de herramientas
+title: Acerca de los controles de barra de herramientas
 description: Una barra de herramientas es un control que contiene uno o varios botones.
 ms.assetid: b5a00a81-8d23-4844-8b0a-776e7cceced8
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6f615da972f14bb88c4915504c089dd6b40d9aca
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166014"
 ---
-# <a name="about-toolbar-controls"></a>Acerca de los controles de la barra de herramientas
+# <a name="about-toolbar-controls"></a>Acerca de los controles de barra de herramientas
 
-Una barra de herramientas es un control que contiene uno o varios botones. Cada botón, cuando un usuario hace clic en él, envía un mensaje de comando a la ventana primaria. Normalmente, los botones de una barra de herramientas se corresponden con los elementos del menú de la aplicación, lo que proporciona una manera adicional y más directa para que el usuario acceda a los comandos de una aplicación.
+Una barra de herramientas es un control que contiene uno o varios botones. Cada botón, cuando un usuario hace clic en él, envía un mensaje de comando a la ventana primaria. Normalmente, los botones de una barra de herramientas corresponden a los elementos del menú de la aplicación, lo que proporciona una manera más directa y adicional para que el usuario acceda a los comandos de una aplicación.
 
-En la captura de pantalla siguiente se muestra una ventana que contiene una barra de herramientas sencilla para las operaciones de archivo. La aplicación ha habilitado estilos visuales. El botón Guardar está "en caliente" porque el cursor se desplazaba sobre él cuando se tomó la captura de pantalla. La apariencia real del control varía según el sistema operativo y el tema seleccionado por el usuario.
+En la siguiente captura de pantalla se muestra una ventana que contiene una barra de herramientas sencilla para las operaciones de archivo. La aplicación tiene habilitados los estilos visuales. El botón Guardar está "en caliente" porque el cursor estaba sobre él cuando se tomó la captura de pantalla. La apariencia real del control varía según el sistema operativo y el tema seleccionado por el usuario.
 
-![captura de pantalla de una ventana con una barra de herramientas de tres botones; un botón está en caliente](images/tb-withstyles.png)
+![captura de pantalla de una ventana con una barra de herramientas de tres botones; un botón está encendido](images/tb-withstyles.png)
 
-La siguiente captura de pantalla muestra el mismo control en una aplicación que se compiló sin estilos visuales habilitados.
+En la siguiente captura de pantalla se muestra el mismo control en una aplicación compilada sin estilos visuales habilitados.
 
 ![captura de pantalla de una ventana sin estilos visuales: ninguno de los botones parece activa](images/tb-wostyles.png)
 
-En los temas siguientes se tratan las características que se deben tener en cuenta al planear una barra de herramientas. Para obtener información específica sobre la implementación y el código de ejemplo, vea [Usar controles de la barra de herramientas](using-toolbar-controls.md).
+En los temas siguientes se tratan las características que se deben tener en cuenta al planear una barra de herramientas. Para obtener información específica sobre la implementación y el código de ejemplo, vea [Usar controles de barra de herramientas](using-toolbar-controls.md).
 
 -   [Especificar el tamaño y la posición de la barra de herramientas](#specifying-toolbar-size-and-position)
 -   [Barras de herramientas transparentes](#transparent-toolbars)
@@ -51,19 +51,19 @@ Si crea una barra de herramientas mediante [**CreateToolbarEx**](/windows/deskto
 
 La [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) no tiene parámetros para especificar el tamaño de la barra de herramientas. El procedimiento de ventana de la barra de herramientas establece automáticamente el tamaño y la posición de la ventana de la barra de herramientas. El alto se basa en el alto de los botones de la barra de herramientas. El ancho es el mismo que el ancho del área de cliente de la ventana primaria. Para cambiar la configuración de tamaño automático, envíe un [**mensaje \_ SETBUTTONSIZE de TB.**](tb-setbuttonsize.md) Los estilos de control comunes [**\_ CCS TOP**](common-control-styles.md) y [**CCS \_ BOTTOM**](common-control-styles.md) determinan si la barra de herramientas se coloca en la parte superior o inferior del área cliente. De forma predeterminada, una barra de herramientas tiene **el estilo CCS \_ TOP.**
 
-Además, el procedimiento de ventana de la barra de herramientas ajusta automáticamente el tamaño de la barra de herramientas cada vez que recibe un mensaje [**WM \_ SIZE**](/windows/desktop/winmsg/wm-size) o [**TB \_ AUTOSIZE.**](tb-autosize.md) Una aplicación debe enviar cualquiera de estos mensajes siempre que cambie el tamaño de la ventana primaria o después de enviar un mensaje que requiera ajustar el tamaño de la barra de herramientas, por ejemplo, un mensaje [**\_ SETBUTTONSIZE**](tb-setbuttonsize.md) de TB.
+Además, el procedimiento de ventana de la barra de herramientas ajusta automáticamente el tamaño de la barra de herramientas cada vez que recibe un [**mensaje WM \_ SIZE**](/windows/desktop/winmsg/wm-size) o [**TB \_ AUTOSIZE.**](tb-autosize.md) Una aplicación debe enviar cualquiera de estos mensajes siempre que cambie el tamaño de la ventana primaria o después de enviar un mensaje que requiera ajustar el tamaño de la barra de herramientas, por ejemplo, un mensaje [**\_ SETBUTTONSIZE de TB.**](tb-setbuttonsize.md)
 
-Los comportamientos de ajuste de tamaño y posicionamiento predeterminados de la barra de herramientas se pueden desactivar estableciendo los estilos de control comunes [**\_ CCS NORESIZE**](common-control-styles.md) y [**CCS \_ NOPARENTALIGN.**](common-control-styles.md) Los controles de barra de herramientas hospedados por controles rebar deben establecer estos estilos porque los controles rebar tamaños y posiciones de la barra de herramientas.
+Los comportamientos de ajuste de tamaño y posición predeterminados de la barra de herramientas se pueden desactivar estableciendo los estilos de control comunes [**CCS \_ NORESIZE**](common-control-styles.md) y [**CCS \_ NOPARENTALIGN.**](common-control-styles.md) Los controles de barra de herramientas hospedados por controles de barra de cambios deben establecer estos estilos porque el control rebar tiene tamaños y posiciones en la barra de herramientas.
 
 ## <a name="transparent-toolbars"></a>Barras de herramientas transparentes
 
-Los controles de barra de herramientas admiten un aspecto transparente que permite mostrar el área de cliente debajo de la barra de herramientas. Hay dos tipos de barras de herramientas transparentes, una con botones planos y otra con botones tridimensionales. Si quiere que la aplicación coincida con la interfaz de Windows, use la barra de herramientas de estilo transparente plano.
+Los controles de barra de herramientas admiten un aspecto transparente que permite que el área de cliente de la barra de herramientas se muestre. Hay dos tipos de barras de herramientas transparentes, unas con botones planos y otras con botones tridimensionales. Si desea que la aplicación coincida con la interfaz Windows, use la barra de herramientas de estilo transparente plano.
 
 En la captura de pantalla siguiente se muestran los dos tipos de barras de herramientas transparentes, sin usar estilos visuales.
 
 ![captura de pantalla de dos ventanas con diferentes estilos de barras de herramientas, pero ambas barras de herramientas son transparentes](images/toolbartrans.jpg)
 
-En la siguiente captura de pantalla se muestra una barra de herramientas transparente tal como podría aparecer en Windows Vista, con estilos visuales habilitados. Se ha cambiado el color de fondo del cuadro de diálogo para que la transparencia sea más obvia.
+En la captura de pantalla siguiente se muestra una barra de herramientas transparente como podría aparecer en Windows Vista, con estilos visuales habilitados. El color de fondo del cuadro de diálogo se ha cambiado para que la transparencia sea más obvia.
 
 ![captura de pantalla de una ventana en Windows Vista con una barra de herramientas transparente](images/tb-transparent.png)
 
@@ -76,7 +76,7 @@ Para crear una barra de herramientas transparente, lo único que debe hacer es a
 
 ## <a name="list-style-toolbars"></a>Barras de herramientas de estilo de lista
 
-Los botones de la barra de herramientas permiten mostrar texto y mapas de bits. Los botones de una barra de herramientas creada con el estilo [**TBSTYLE \_ LIST**](toolbar-control-and-button-styles.md) coloca el texto a la derecha del mapa de bits en lugar de debajo de él.
+Los botones de la barra de herramientas permiten mostrar texto y mapas de bits. Los botones de una barra de herramientas creada con el [**estilo TBSTYLE \_ LIST**](toolbar-control-and-button-styles.md) coloca el texto a la derecha del mapa de bits en lugar de debajo de él.
 
 En la captura de pantalla siguiente se muestra una barra de herramientas con el estilo de lista.
 
@@ -94,18 +94,18 @@ Cada botón de una barra de herramientas puede incluir una imagen de mapa de bit
 
 Cada imagen tiene un índice de base cero. La primera imagen agregada a la lista interna tiene un índice de 0, la segunda imagen tiene un índice de 1, y así sucesivamente. [**TB \_ ADDBITMAP**](tb-addbitmap.md) agrega imágenes al final de la lista y devuelve el índice de la primera imagen nueva que agregó. Para asociar la imagen a un botón, debe enviar un mensaje [**\_ ADDBUTTONS**](tb-addbuttons.md) de TB y especificar el índice de la imagen después de agregar mapas de bits a la lista de imágenes interna.
 
-Windows supone que todas las imágenes de mapa de bits de una barra de herramientas tienen el mismo tamaño. Para especificar el tamaño al crear la barra de herramientas, use [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex). Si usa la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para crear una barra de herramientas, el tamaño de las imágenes se establece en las dimensiones predeterminadas de 16 por 15 píxeles. Puede usar el mensaje [**\_ SETBITMAPSIZE**](tb-setbitmapsize.md) de TB para cambiar las dimensiones de las imágenes de mapa de bits, pero debe hacerlo antes de agregar cualquier imagen a la lista interna.
+Windows supone que todas las imágenes de mapa de bits de una barra de herramientas tienen el mismo tamaño. El tamaño se especifica al crear la barra de herramientas mediante [**CreateToolbarEx.**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) Si usa la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para crear una barra de herramientas, el tamaño de las imágenes se establece en las dimensiones predeterminadas de 16 por 15 píxeles. Puede usar el mensaje [**\_ SETBITMAPSIZE**](tb-setbitmapsize.md) de TB para cambiar las dimensiones de las imágenes de mapa de bits, pero debe hacerlo antes de agregar cualquier imagen a la lista interna.
 
 ### <a name="defining-button-images-by-using-image-lists"></a>Definir imágenes de botón mediante listas de imágenes
 
-También puede almacenar imágenes de botón en un conjunto de [listas de imágenes](image-lists.md). Una lista de imágenes es una colección de imágenes del mismo tamaño, cada una de las cuales se puede hacer referencia mediante su índice. Las listas de imágenes se usan para administrar grandes conjuntos de iconos o mapas de bits. Puede usar hasta tres listas de imágenes diferentes para mostrar botones en varios estados, como se muestra en la tabla siguiente.
+También puede almacenar imágenes de botón en un conjunto de [listas de imágenes](image-lists.md). Una lista de imágenes es una colección de imágenes del mismo tamaño, a las que su índice puede hacer referencia a cada una de ellas. Las listas de imágenes se usan para administrar grandes conjuntos de iconos o mapas de bits. Puede usar hasta tres listas de imágenes diferentes para mostrar botones en varios estados, como se muestra en la tabla siguiente.
 
 
 
 |  Estado        |  Descripción                                                                                                                                                                                            |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Normal   | Botones en su estado predeterminado.                                                                                                                                                              |
-| Acceso frecuente      | Botones que están debajo del puntero o presionados. Los elementos de acceso rápido solo se admiten en los controles de barra de herramientas que tienen [**el estilo TBSTYLE \_ FLAT.**](toolbar-control-and-button-styles.md) |
+| Acceso frecuente      | Botones que están bajo el puntero o presionados. Los elementos de acceso rápido solo se admiten en los controles de barra de herramientas que tienen [**el estilo TBSTYLE \_ FLAT.**](toolbar-control-and-button-styles.md) |
 | Disabled | Botones que están deshabilitados.                                                                                                                                                                   |
 
 
@@ -116,7 +116,7 @@ Una vez que se destruye la barra de herramientas, las aplicaciones deben liberar
 
 ## <a name="defining-text-for-buttons"></a>Definir texto para botones
 
-Cada botón puede mostrar una cadena además o en lugar de una imagen. Una barra de herramientas mantiene una lista interna que contiene todas las cadenas disponibles para los botones de la barra de herramientas. Las cadenas se agregan a la lista interna mediante el mensaje [**\_ ADDSTRING**](tb-addstring.md) de TB, especificando la dirección del búfer que contiene las cadenas que se agregarán. Cada cadena debe terminar en null y la última cadena debe terminarse con dos caracteres NULL.
+Cada botón puede mostrar una cadena además o en lugar de una imagen. Una barra de herramientas mantiene una lista interna que contiene todas las cadenas disponibles para los botones de la barra de herramientas. Las cadenas se agregan a la lista interna mediante el mensaje [**\_ ADDSTRING de TB,**](tb-addstring.md) especificando la dirección del búfer que contiene las cadenas que se agregarán. Cada cadena debe terminar en null y la última cadena debe terminarse con dos caracteres NULL.
 
 Cada cadena tiene un índice de base cero. La primera cadena agregada a la lista interna de cadenas tiene un índice de 0, la segunda cadena tiene un índice de 1, y así sucesivamente. [**TB \_ ADDSTRING**](tb-addstring.md) agrega cadenas al final de la lista y devuelve el índice de la primera cadena nueva. El índice de una cadena se usa para asociar la cadena a un botón.
 
@@ -141,15 +141,15 @@ Puede crear grupos de botones de barra de herramientas que actúen como botones 
 
 El [**estilo \_ BTNS SEP**](toolbar-control-and-button-styles.md) crea una pequeña brecha entre los botones o dibuja un etch entre los botones de las barras de herramientas planas. Un botón con el **estilo \_ BTNS SEP** no recibe la entrada del usuario.
 
-La versión 5.80 de los controles comunes introdujo algunos estilos de botón de barra de herramientas nuevos y cambió el nombre de algunos de los estilos anteriores. Todas las marcas de estilo de botón comienzan ahora con BTNS \_ XXX en lugar de TBSTYLE \_ XXX. Para obtener una lista y una explicación de los estilos de botón, vea Control [de barra de herramientas y Estilos de botón](toolbar-control-and-button-styles.md).
+La versión 5.80 de los controles comunes introdujo algunos estilos de botón de barra de herramientas nuevos y cambió el nombre de algunos de los estilos anteriores. Todas las marcas de estilo de botón ahora comienzan por BTNS \_ XXX en lugar de TBSTYLE \_ XXX. Para obtener una lista y una explicación de los estilos de botón, vea Control de barra de herramientas [y Estilos de botón](toolbar-control-and-button-styles.md).
 
-### <a name="toolbar-button-states"></a>Estados de los botones de la barra de herramientas
+### <a name="toolbar-button-states"></a>Estados del botón Barra de herramientas
 
-Cada botón de una barra de herramientas tiene un estado . La barra de herramientas actualiza el estado de un botón para reflejar las acciones del usuario, como hacer clic en el botón. El estado indica si el botón está presionado o no presionado, habilitado o deshabilitado, oculto o visible. Aunque una aplicación establece el estado inicial de un botón al agregar el botón a la barra de herramientas, puede cambiar y recuperar el estado enviando mensajes [**\_ TB GETSTATE**](tb-getstate.md) y [**TB \_ SETSTATE**](tb-setstate.md) a la barra de herramientas. Para obtener una lista de los estados de los botones de la barra de herramientas, vea [Estados de la barra de herramientas.](toolbar-button-states.md)
+Cada botón de una barra de herramientas tiene un estado . La barra de herramientas actualiza el estado de un botón para reflejar las acciones del usuario, como hacer clic en el botón. El estado indica si el botón está presionado o no presionado, habilitado o deshabilitado, oculto o visible. Aunque una aplicación establece el estado inicial de un botón al agregar el botón a la barra de herramientas, puede cambiar y recuperar el estado mediante el envío de mensajes [**DE TB \_ GETSTATE**](tb-getstate.md) y [**TB \_ SETSTATE**](tb-setstate.md) a la barra de herramientas. Para obtener una lista de los estados de los botones de la barra de herramientas, vea [Estados de la barra de herramientas.](toolbar-button-states.md)
 
 ### <a name="command-identifier"></a>Identificador de comando
 
-Cada botón tiene un identificador de comando definido por la aplicación asociado. Los identificadores de botón normalmente se definen en un archivo de encabezado de aplicación. Por ejemplo, un botón Pegar se puede definir como:
+Cada botón tiene asociado un identificador de comando definido por la aplicación. Los identificadores de botón normalmente se definen en un archivo de encabezado de aplicación. Por ejemplo, un botón Pegar se puede definir como:
 
 
 ```
@@ -158,7 +158,7 @@ Cada botón tiene un identificador de comando definido por la aplicación asocia
 
 
 
-Cuando el usuario selecciona un botón, la barra de herramientas envía a la ventana primaria un mensaje [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) o [**WM \_ NOTIFY**](wm-notify.md) que incluye el identificador de comando del botón. La ventana primaria examina el identificador de comando y lleva a cabo el comando asociado al botón. Para obtener información sobre cuándo los controles envían **mensajes WM \_ COMMAND** y cuándo envían **WM \_ NOTIFY**, vea la sección Comentarios de la [**documentación de WM \_ NOTIFY.**](wm-notify.md)
+Cuando el usuario selecciona un botón, la barra de herramientas envía a la ventana primaria un mensaje [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) o [**WM \_ NOTIFY**](wm-notify.md) que incluye el identificador de comando del botón. La ventana primaria examina el identificador de comando y lleva a cabo el comando asociado al botón. Para obtener información sobre cuándo los controles envían **mensajes \_ WM COMMAND** y cuándo envían WM **\_ NOTIFY**, vea la sección Comentarios de la [**documentación de WM \_ NOTIFY.**](wm-notify.md)
 
 ### <a name="button-size-and-position"></a>Tamaño y posición del botón
 
@@ -168,17 +168,17 @@ Una barra de herramientas actualiza los índices de posición a medida que se in
 
 Todos los botones de una barra de herramientas tienen el mismo tamaño. La [**función CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) requiere que se establezca el tamaño inicial de los botones al crear la barra de herramientas. Cuando se usa la [**función CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) el tamaño inicial se establece en las dimensiones predeterminadas de 24 por 22 píxeles. Puede usar el mensaje [**\_ SETBUTTONSIZE**](tb-setbuttonsize.md) de TB para cambiar el tamaño del botón, pero debe hacerlo antes de agregar cualquier botón a la barra de herramientas. El [**mensaje \_ TB GETITEMRECT**](tb-getitemrect.md) recupera las dimensiones actuales de los botones.
 
-Cuando se agrega una cadena que es más larga que cualquier cadena que se encuentra actualmente en la barra de herramientas, la barra de herramientas restablece automáticamente el ancho de sus botones. El ancho se establece para dar cabida a la cadena más larga de la barra de herramientas.
+Cuando se agrega una cadena que es más larga que cualquier cadena actualmente en la barra de herramientas, la barra de herramientas restablece automáticamente el ancho de sus botones. El ancho se establece para dar cabida a la cadena más larga de la barra de herramientas.
 
 ## <a name="enabling-customization"></a>Habilitación de la personalización
 
 Una barra de herramientas tiene características de personalización integradas que puede hacer que esté disponible para el usuario al dar a la barra de herramientas el estilo de control común [**CCS \_ ADJUSTABLE.**](common-control-styles.md) Las características de personalización permiten al usuario arrastrar un botón a una nueva posición o quitar un botón arrastrándolo fuera de la barra de herramientas. Además, el usuario puede hacer doble clic en la barra de herramientas para mostrar el cuadro de diálogo Personalizar barra de herramientas, que permite al usuario agregar, eliminar y reorganizar botones de la barra de herramientas. Para mostrar el cuadro de diálogo, use el [**mensaje \_ PERSONALIZACIÓN de TB.**](tb-customize.md) Una aplicación determina si las características de personalización están disponibles para el usuario y controla la medida en que el usuario puede personalizar la barra de herramientas.
 
-Como parte del proceso de personalización, las aplicaciones a menudo necesitan guardar y restaurar el estado de una barra de herramientas. Por ejemplo, muchas aplicaciones almacenan el estado de la barra de herramientas antes de que el usuario comience a personalizar la barra de herramientas en caso de que el usuario quiera restaurar la barra de herramientas a su estado original. El control de barra de herramientas no mantiene automáticamente un registro de su estado de personalización previa. La aplicación debe guardar el estado de la barra de herramientas para restaurarlo. Para obtener más información, vea [Usar controles de la barra de herramientas](using-toolbar-controls.md).
+Como parte del proceso de personalización, las aplicaciones a menudo necesitan guardar y restaurar el estado de una barra de herramientas. Por ejemplo, muchas aplicaciones almacenan el estado de la barra de herramientas antes de que el usuario comience a personalizar la barra de herramientas en caso de que el usuario quiera restaurar la barra de herramientas a su estado original. El control de barra de herramientas no mantiene automáticamente un registro de su estado de prepersonalización. La aplicación debe guardar el estado de la barra de herramientas para restaurarlo. Para obtener más información, vea [Usar controles de barra de herramientas](using-toolbar-controls.md).
 
 ## <a name="enabling-hot-tracking"></a>Habilitación del seguimiento en caliente
 
-El seguimiento en caliente significa que cuando el puntero se mueve sobre un elemento, cambia la apariencia del botón. Cuando los estilos visuales están habilitados, las barras de herramientas admiten el seguimiento en caliente de forma predeterminada. De lo contrario, solo los controles de barra de herramientas creados [**con el estilo TBSTYLE \_ FLAT**](toolbar-control-and-button-styles.md) admiten el seguimiento en caliente. Puede usar otros estilos de ventana en combinación con **TBSTYLE \_ FLAT** para generar barras de herramientas que habiliten el seguimiento en caliente, pero que tengan una apariencia diferente a la de una barra de herramientas plana. Para obtener más información, vea [Usar controles de la barra de herramientas](using-toolbar-controls.md).
+El seguimiento en caliente significa que cuando el puntero se mueve sobre un elemento, cambia la apariencia del botón. Cuando los estilos visuales están habilitados, las barras de herramientas admiten el seguimiento en caliente de forma predeterminada. De lo contrario, solo los controles de barra de herramientas creados [**con el estilo TBSTYLE \_ FLAT**](toolbar-control-and-button-styles.md) admiten el seguimiento en caliente. Puede usar otros estilos de ventana en combinación con **TBSTYLE \_ FLAT** para generar barras de herramientas que permiten el seguimiento en caliente, pero tienen una apariencia diferente de una barra de herramientas plana. Para obtener más información, vea [Usar controles de barra de herramientas](using-toolbar-controls.md).
 
  
 

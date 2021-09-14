@@ -3,7 +3,7 @@ title: RBN_SPLITTERDRAG de notificación (Commctrl.h)
 description: Enviado por un control rebar cuando el usuario arrastra un divisor. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 7827c971-6a92-452f-b961-1abe6ae66d2a
 keywords:
-- RBN_SPLITTERDRAG código de notificación Windows controles
+- RBN_SPLITTERDRAG de notificación de Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3de913b5815acbdf8b0a98d8131d0a6f071f157fd5bb78040422b6892d7fe09
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fe0b2d3fc00433be9cd3011f2f2b24d515b8cbd0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119984945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167201"
 ---
 # <a name="rbn_splitterdrag-notification-code"></a>Código de notificación \_ SPLITTERDRAG de RBN
 
@@ -57,7 +57,7 @@ No se usa el valor devuelto para esta notificación.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

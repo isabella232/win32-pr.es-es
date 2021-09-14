@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce7715082a371c3632d8accb8fdf60bbac50d8d7d8182732d6a62c2dbb423c34
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9c7725d3c0bc3f3a7a7a72db16e19626a3c4d2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118169281"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167289"
 ---
 # <a name="rb_setcolorscheme-message"></a>Mensaje \_ SETCOLORSCHEME de RB
 
@@ -43,7 +43,7 @@ Puntero a una [**estructura COLORSCHEME**](/windows/win32/api/commctrl/ns-commct
 
 No se usa el valor devuelto para este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El control rebar usa la información de combinación de colores al dibujar los elementos 3D en el control y las bandas.
 
@@ -51,11 +51,11 @@ El control rebar usa la información de combinación de colores al dibujar los e
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

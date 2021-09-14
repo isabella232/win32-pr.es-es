@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bce561b254645932b214b48879aa0be04deb31b32e8dc591fc3183ec39871273
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f89c56692db9d451eb18db61af262cc0f3a715f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119751055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165917"
 ---
 # <a name="ttm_getmaxtipwidth-message"></a>Mensaje \_ GETMAXTIPWIDTH de TTM
 
@@ -39,9 +39,9 @@ Recupera el ancho máximo de una ventana de información sobre herramientas.
 
 Devuelve un **valor INT** que representa el ancho máximo de la información sobre herramientas, en píxeles. Si no se estableció anteriormente ningún ancho máximo, el mensaje devuelve -1.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor de ancho máximo de la información sobre herramientas no indica el ancho real de una ventana de información sobre herramientas. En su lugar, si una cadena de información sobre herramientas supera el ancho máximo, el control divide el texto en varias líneas, usando espacios para determinar los saltos de línea. Si el texto no se puede segmentar en varias líneas, se mostrará en una sola línea. La longitud de esta línea puede superar el ancho máximo de la información sobre herramientas.
+El valor de ancho máximo de información sobre herramientas no indica el ancho real de una ventana de información sobre herramientas. En su lugar, si una cadena de información sobre herramientas supera el ancho máximo, el control divide el texto en varias líneas, usando espacios para determinar los saltos de línea. Si el texto no se puede segmentar en varias líneas, se mostrará en una sola línea. La longitud de esta línea puede superar el ancho máximo de información sobre herramientas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ El valor de ancho máximo de la información sobre herramientas no indica el anc
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ El valor de ancho máximo de la información sobre herramientas no indica el anc
 
 <dl> <dt>
 
-[**TTM \_ SETMAXTIPWIDTH**](ttm-setmaxtipwidth.md)
+[**\_SETMAXTIPWIDTH de TTM**](ttm-setmaxtipwidth.md)
 </dt> </dl>
 
  

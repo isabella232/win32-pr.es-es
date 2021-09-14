@@ -34,16 +34,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a6ce10494c44f6eecd78e44d4bcf97d5e46da7d6281a5ef614a9e737acae68c0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5fae5416a4b3cbeda0d8c63f6834c0406e628013
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119972595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167953"
 ---
-# <a name="win32_onboarddevice-class"></a>Win32 \_ OnBoardDevice (clase)
+# <a name="win32_onboarddevice-class"></a>Clase OnBoardDevice de Win32 \_
 
-La **clase WMI Win32 \_ OnBoardDevice** [representa](../wmisdk/retrieving-a-class.md) dispositivos adaptadores comunes integrados en la placa base (placa del sistema).
+La **clase WMI \_ Win32 OnBoardDevice** [representa](../wmisdk/retrieving-a-class.md) dispositivos adaptadores comunes integrados en la placa base (placa del sistema).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -76,15 +76,15 @@ class Win32_OnBoardDevice : CIM_PhysicalComponent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ OnBoardDevice de Win32** tiene estos tipos de miembros:
+La **clase Win32 \_ OnBoardDevice** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ OnBoardDevice de Win32** tiene estas propiedades.
+La **clase Win32 \_ OnBoardDevice** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -115,12 +115,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ Clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**\_ clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -209,7 +209,7 @@ Tipo de dispositivo que se representa.
 
 </dd> <dt>
 
-**Habilitado**
+**Enabled**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -234,7 +234,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** se puede intercambiar en caliente un paquete físico (si es posible reemplazar el elemento por uno físicamente diferente, pero equivalente, mientras que el paquete que lo contiene tiene la potencia aplicada). Por ejemplo, un paquete de unidad de disco insertado mediante conectores SCA es extraíble y se puede intercambiar en caliente. Todos los paquetes que se pueden intercambiar en caliente son intrínsecamente extraíbles y reemplazables.
+Si **es TRUE,** un paquete físico se puede intercambiar en caliente (si es posible reemplazar el elemento por uno físicamente diferente, pero equivalente, mientras que el paquete que lo contiene tiene energía aplicada). Por ejemplo, un paquete de unidad de disco insertado mediante conectores SCA es extraíble y se puede intercambiar en caliente. Todos los paquetes que se pueden intercambiar en caliente son intrínsecamente extraíbles y reemplazables.
 
 Esta propiedad se hereda de [**CIM \_ PhysicalComponent.**](cim-physicalcomponent.md)
 
@@ -272,7 +272,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 
 Nombre de la organización responsable de generar el elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -290,7 +290,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Nombre por el que se suele conocer el elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -303,7 +303,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -323,7 +323,7 @@ Tipo de acceso: solo lectura
 
 Datos adicionales, más allá de la información de etiquetas de recurso, que podrían usarse para identificar un elemento físico. Un ejemplo son los datos de código de barras asociados a un elemento que también tiene una etiqueta de recurso. Tenga en cuenta que si solo hay datos de código de barras disponibles y es único o se puede usar como clave de elemento, esta propiedad sería **NULL** y los datos del código de barras se usan como clave de clase en la propiedad de etiqueta.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -339,9 +339,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Número de parte asignado por la organización responsable de producir o crear el elemento físico.
+Número de pieza asignado por la organización responsable de producir o fabricación del elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -356,7 +356,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el elemento físico está encendido.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -369,7 +369,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** un paquete físico es extraíble (si está diseñado para su entrada y salida del contenedor físico en el que se encuentra normalmente, sin afectar a la función del empaquetado general). Un paquete todavía puede ser extraíble si la energía debe estar "desactivada" para realizar la eliminación. Si la energía puede estar "encendido" y se ha quitado el paquete, el elemento es extraíble y se puede intercambiar en caliente. Por ejemplo, una batería adicional en un portátil es extraíble, al igual que un paquete de unidad de disco insertado mediante conectores SCA. Sin embargo, este último se puede intercambiar en caliente. La pantalla de un portátil no es extraíble ni es una fuente de alimentación sin red. Quitar estos componentes afectaría a la función del empaquetado general o es imposible debido a la estrecha integración del paquete.
+Si **es TRUE,** un paquete físico es extraíble (si está diseñado para su entrada y salida del contenedor físico en el que se encuentra normalmente, sin afectar a la función del empaquetado general). Un paquete todavía puede ser extraíble si la energía debe estar "desactivada" para realizar la eliminación. Si power puede estar "encendido" y se ha quitado el paquete, el elemento es extraíble y se puede intercambiar en caliente. Por ejemplo, una batería adicional en un portátil es extraíble, al igual que un paquete de unidad de disco insertado mediante conectores SCA. Sin embargo, este último se puede intercambiar en caliente. La pantalla de un portátil no es extraíble ni es una fuente de alimentación sin red. La eliminación de estos componentes afectaría a la función del empaquetado general o es imposible debido a la estrecha integración del paquete.
 
 Esta propiedad se hereda de [**CIM \_ PhysicalComponent.**](cim-physicalcomponent.md)
 
@@ -384,7 +384,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** se puede reemplazar un paquete físico (si es posible reemplazar, FRU o actualizar, el elemento por uno físicamente diferente). Por ejemplo, algunos sistemas informáticos permiten que el chip del procesador principal se actualice a una de las especificaciones de reloj más altas. En este caso, se dice que el procesador es reemplazable. Otro ejemplo es un paquete de fuente de alimentación montado en raíles deslizantes. Todos los paquetes extraíbles son inherentemente reemplazables.
+Si **es TRUE,** se puede reemplazar un paquete físico (si es posible reemplazar, FRU o actualizar, el elemento por uno físicamente diferente). Por ejemplo, algunos sistemas informáticos permiten actualizar el chip del procesador principal a una de las especificaciones de reloj más altas. En este caso, se dice que el procesador es reemplazable. Otro ejemplo es un paquete de fuente de alimentación montado en raíles deslizantes. Todos los paquetes extraíbles se pueden reemplazar de forma inherente.
 
 Esta propiedad se hereda de [**CIM \_ PhysicalComponent.**](cim-physicalcomponent.md)
 
@@ -402,9 +402,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
-Número asignado por el fabricante que se usa para identificar el elemento físico.
+Número asignado por el fabricante usado para identificar el elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -422,7 +422,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Número de unidad de mantenimiento de existencias para el elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -438,7 +438,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -483,14 +483,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -546,7 +546,7 @@ Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/sta
 
 Identificador único del dispositivo integrado conectado al sistema.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 Ejemplo: "On Board Device 1"
 
@@ -566,11 +566,11 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Versión del elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ OnBoardDevice de Win32** se deriva de [**CIM \_ PhysicalComponent**](cim-physicalcomponent.md).
 

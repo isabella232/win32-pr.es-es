@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 733932b28dce34d06df0cbfc1d704763401b36a68380dc0aa8958b9bc3aff32f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f1ee299f56b367eef649a05657d713e22206a7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078349"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166786"
 ---
 # <a name="tb_getmetrics-message"></a>Mensaje \_ DE TB GETMETRICS
 
@@ -35,7 +35,7 @@ Recupera las métricas de un control de barra de herramientas.
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura TBMETRICS que**](/windows/desktop/api/Commctrl/ns-commctrl-tbmetrics) recibe las métricas de la barra de herramientas.
+Puntero a una [**estructura TBMETRICS**](/windows/desktop/api/Commctrl/ns-commctrl-tbmetrics) que recibe las métricas de la barra de herramientas.
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Puntero a una [**estructura TBMETRICS que**](/windows/desktop/api/Commctrl/ns-co
 
 No se usa el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
@@ -54,11 +54,11 @@ No se usa el valor devuelto.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ description: En este tema se muestra cómo procesar mensajes de notificación Co
 ms.assetid: 375634BC-CDD6-4D72-A41E-FCBFCBFE7F03
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4ec73c31020283afe5876567a57fc1fbd8a23cee123e9dc417c14c57a86709a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a9787e22aa01d51478ca55f0dde5d7ac944decb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119575495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167654"
 ---
 # <a name="how-to-process-comboboxex-notifications"></a>Cómo procesar notificaciones ComboBoxEx
 
@@ -21,15 +21,15 @@ En este tema se muestra cómo procesar mensajes de notificación ComboBoxEx.
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Instrucciones
 
 
-Un control ComboBoxEx notifica a su ventana primaria los eventos mediante el envío [**de mensajes WM \_ NOTIFY.**](wm-notify.md) También pasa los mensajes de [**notificación \_ WM COMMAND**](/windows/desktop/menurc/wm-command) que recibe del cuadro combinado que contiene a la ventana primaria que se va a procesar. Por lo tanto, la aplicación debe estar preparada para procesar los mensajes **WM \_ NOTIFY** de los mensajes ComboBoxEx y **WM \_ COMMAND** que se reenvía desde el control de cuadro combinado secundario ComboBoxEx.
+Un control ComboBoxEx notifica a su ventana primaria de eventos mediante el envío [**de mensajes WM \_ NOTIFY.**](wm-notify.md) También pasa los mensajes de [**notificación DE WM \_ COMMAND**](/windows/desktop/menurc/wm-command) que recibe del cuadro combinado contenido en él a la ventana primaria que se va a procesar. Por lo tanto, la aplicación debe estar preparada para procesar los mensajes **WM \_ NOTIFY** de los mensajes ComboBoxEx y **WM \_ COMMAND** que se reenvía desde el control de cuadro combinado secundario ComboBoxEx.
 
 En el ejemplo de esta sección se controlan los mensajes [**WM \_ NOTIFY**](wm-notify.md) y [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) de un control ComboBoxEx mediante una llamada a una función definida por la aplicación correspondiente para procesar estos mensajes.
 

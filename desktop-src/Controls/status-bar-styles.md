@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 622938aaee4c6f1e1c4a07556dde9b77942569a64c3b5d883a319eed64fa2854
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a74de1aa410c2ddfb13a942fdf07d1c05d020ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119696405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167014"
 ---
 # <a name="status-bar-styles"></a>Estilos de barra de estado
 
@@ -31,7 +31,7 @@ En esta sección se enumeran los estilos, además de los estilos de ventana est�
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="SBARS_SIZEGRIP"></span><span id="sbars_sizegrip"></span><dl> <dt>**TAMAÑO DE SBARS \_ (TAMAÑO DE SBARS)**</dt> </dl> | El control de barra de estado incluirá un control de tamaño en el extremo derecho de la barra de estado. Un control de tamaño es similar a un borde de tamaño; es un área rectangular en la que el usuario puede hacer clic y arrastrar para cambiar el tamaño de la ventana primaria. <br/> |
 | <span id="SBT_TOOLTIPS"></span><span id="sbt_tooltips"></span><dl> <dt>**INFORMACIÓN SOBRE HERRAMIENTAS DE SBT \_**</dt> </dl>       | [Versión 4.71.](common-control-versions.md) Use este estilo para habilitar la información sobre herramientas.<br/>                                                                                                                                             |
-| <span id="SBARS_TOOLTIPS"></span><span id="sbars_tooltips"></span><dl> <dt>**INFORMACIÓN SOBRE HERRAMIENTAS DE \_ SBARS**</dt> </dl> | [Versión 5.80.](common-control-versions.md) Idéntica a la información sobre \_ herramientas de SBT. Use esta marca para las versiones 5.00 o posteriores. <br/>                                                                                                         |
+| <span id="SBARS_TOOLTIPS"></span><span id="sbars_tooltips"></span><dl> <dt>**INFORMACIÓN SOBRE HERRAMIENTAS DE \_ SBARS**</dt> </dl> | [Versión 5.80.](common-control-versions.md) Idéntico a SBT \_ TOOLTIPS. Use esta marca para las versiones 5.00 o posteriores. <br/>                                                                                                         |
 
 
 

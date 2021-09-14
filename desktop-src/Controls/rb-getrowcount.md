@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_GETROWCOUNT (commctrl. h)
-description: Recupera el número de filas de bandas en un control rebar.
+title: RB_GETROWCOUNT mensaje (Commctrl.h)
+description: Recupera el número de filas de bandas de un control rebar.
 ms.assetid: 80f9614e-672d-4c2a-bb2a-382597193796
 keywords:
-- RB_GETROWCOUNT controles de mensajes de Windows
+- RB_GETROWCOUNT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 33fca81552a41e2cc99c4c2c214b7f8743335619
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167342"
 ---
-# <a name="rb_getrowcount-message"></a>Mensaje de GETROWCOUNT de RB \_
+# <a name="rb_getrowcount-message"></a>Mensaje \_ GETROWCOUNT de RB
 
-Recupera el número de filas de bandas en un control rebar.
+Recupera el número de filas de bandas de un control rebar.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Recupera el número de filas de bandas en un control rebar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **uint** que representa el número de filas de banda del control.
+Devuelve un **valor UINT** que representa el número de filas de banda del control.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Devuelve un valor **uint** que representa el número de filas de banda del contr
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

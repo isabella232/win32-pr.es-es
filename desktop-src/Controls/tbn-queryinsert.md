@@ -3,7 +3,7 @@ title: TBN_QUERYINSERT de notificación (Commctrl.h)
 description: Notifica a la ventana primaria de la barra de herramientas si se puede insertar un botón a la izquierda del botón especificado mientras el usuario personaliza una barra de herramientas. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: d389fabb-16f6-43aa-a4b6-abb80723345b
 keywords:
-- TBN_QUERYINSERT código de notificación Windows controles
+- TBN_QUERYINSERT de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44f741fd7cfa5c6f72405b10ba9678aed71f7cb2359743593f117b17c8ad1c8e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a1a21e9ade8f54ffe27ebffdfc2a8b535b4b3630
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118166965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166325"
 ---
-# <a name="tbn_queryinsert-notification-code"></a>Código de \_ notificación QUERYINSERT de TBN
+# <a name="tbn_queryinsert-notification-code"></a>Código de notificación \_ QUERYINSERT de TBN
 
 Notifica a la ventana primaria de la barra de herramientas si se puede insertar un botón a la izquierda del botón especificado mientras el usuario personaliza una barra de herramientas. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -57,7 +57,7 @@ Devuelve **TRUE** para permitir que se inserte un botón delante del botón dado
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

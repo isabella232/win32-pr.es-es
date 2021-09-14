@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 32a73b7da3efee0b1bb1ba829cf40356e6060a5f7e7fdfcc2467e2cca32226a5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 409297306901980fa8b831e5c1129a13c596ef0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119876865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166361"
 ---
 # <a name="tbn_getbuttoninfo-notification-code"></a>Código de notificación \_ GETBUTTONINFO de TBN
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMTOOLBAR.**](/windows/win32/api/commctrl/ns-commctr
 
 Devuelve **TRUE si** la información del botón se copió en la estructura especificada o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El control de barra de herramientas asigna un búfer y el receptor (ventana primaria) debe copiar el texto en ese búfer. El **miembro cchText** contiene la longitud del búfer asignado por la barra de herramientas cuando TBN \_ GETBUTTONINFO se envía a la ventana primaria.
 
@@ -63,7 +63,7 @@ El control de barra de herramientas asigna un búfer y el receptor (ventana prim
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TBN \_ GETBUTTONINFOW** (Unicode) y **TBN \_ GETBUTTONINFOA** (ANSI)<br/>       |
 
 

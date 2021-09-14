@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f69d1c77377553ae19a008f80e692e3c87487bc9874593d5f3d1e692658c4ad7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e19c1f3989b0d749a9c663d00b5fb7b54d67fc0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118168518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166826"
 ---
-# <a name="tb_gethotimagelist-message"></a>Mensaje \_ GETHOTIMAGELIST de TB
+# <a name="tb_gethotimagelist-message"></a>Mensaje \_ DE TB GETHOTIMAGELIST
 
 Recupera la lista de imágenes que usa un control de barra de herramientas para mostrar botones de acceso rápido.
 
@@ -39,19 +39,19 @@ Recupera la lista de imágenes que usa un control de barra de herramientas para 
 
 Devuelve el identificador a la lista de imágenes que el control usa para mostrar botones de acceso rápido, o **NULL** si no se establece ninguna lista de imágenes de acceso rápido.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Un botón está en caliente cuando el cursor está sobre él. Los controles de barra de herramientas deben [**tener el estilo TBSTYLE \_ FLAT**](toolbar-control-and-button-styles.md) o [**TBSTYLE \_ LIST**](toolbar-control-and-button-styles.md) para tener elementos de acceso rápido.
+Un botón está en caliente cuando el cursor está sobre él. Los controles de barra de herramientas deben tener el estilo [**TBSTYLE \_ FLAT**](toolbar-control-and-button-styles.md) o [**TBSTYLE \_ LIST**](toolbar-control-and-button-styles.md) para tener elementos de acceso rápido.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

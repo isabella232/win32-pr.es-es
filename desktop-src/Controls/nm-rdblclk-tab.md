@@ -1,9 +1,9 @@
 ---
-title: NM_RDBLCLK (pestaña) de notificación (Commctrl.h)
+title: NM_RDBLCLK (pestaña) código de notificación (Commctrl.h)
 description: Notifica a la ventana primaria de un control de pestaña que el usuario ha hecho doble clic en el botón derecho del mouse dentro del control. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: cdf0df70-e30b-4353-8c2a-26fffa0596c4
 keywords:
-- NM_RDBLCLK (pestaña) notification code Windows Controls
+- NM_RDBLCLK (pestaña) código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d3d45f463b718d34b8e52d226a7c7058a479f4b2cf5d10b2a669cfa3f68313e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9c4e159e64780f21576aa9e936379c881b32153d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120088695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167922"
 ---
-# <a name="nm_rdblclk-tab-notification-code"></a>Código \_ de notificación DE NM RDBLCLK (pestaña)
+# <a name="nm_rdblclk-tab-notification-code"></a>Código de notificación DE NM \_ RDBLCLK (pestaña)
 
 Notifica a la ventana primaria de un control de pestaña que el usuario ha hecho doble clic en el botón derecho del mouse dentro del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -53,11 +53,11 @@ Devuelve un valor distinto de cero para no permitir el procesamiento predetermin
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

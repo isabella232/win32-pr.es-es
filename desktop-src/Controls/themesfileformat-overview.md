@@ -5,15 +5,15 @@ ms.assetid: 0b7b0ff7-f55a-4215-a2fd-6c3ea117d6e8
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 584e6d9785cf7660e017cadfb2a39d6bce6c2a87
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122886632"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166034"
 ---
 # <a name="theme-file-format"></a>Formato de archivo de tema
 
-En este documento se describe el formato de los archivos theme (.theme). Un archivo .theme es un .ini de texto que se divide en secciones, que especifican los elementos visuales que aparecen en un Windows escritorio. Los nombres de sección se encapsulan entre corchetes ( \[ \] ) en .ini archivo.
+En este documento se describe el formato de los archivos theme (.theme). Un archivo .theme es un .ini de texto que se divide en secciones, que especifican los elementos visuales que aparecen en un Windows escritorio. Los nombres de sección se encapsulan entre corchetes ( \[ \] ) en el .ini archivo.
 
 Se introdujo un nuevo formato de archivo, .themepack, con Windows 7 para ayudar a los usuarios a compartir temas. Los temas se pueden seleccionar en personalización Panel de control solo en Windows 7 Home Premium o posterior, o solo en Windows Server 2008 R2 cuando se instala el componente Desktop.
 
@@ -22,8 +22,8 @@ En este artículo se tratan los temas siguientes.
 -   [Crear un archivo de tema](#creating-a-theme-file)
 -   [Descripción de un archivo de tema](#description-of-a-theme-file)
     -   [\[Sección \] tema](#theme-section)
-    -   [\[Panel de control de \\ colores \]](#control-panelcolors-section)
-    -   [\[Panel de control de \\ cursores \]](#control-panelcursors-section)
+    -   [\[Panel de control \\ de colores \]](#control-panelcolors-section)
+    -   [\[Panel de control \\ de cursores \]](#control-panelcursors-section)
     -   [\[Panel de control \\ Desktop \]](#control-paneldesktop-section)
     -   [\[Sección \] presentación](#slideshow-section)
     -   [\[Sección \] métricas](#metrics-section)
@@ -65,7 +65,7 @@ La primera parte de la \[ sección Tema contiene los dos elementos \] siguientes
 | Elemento                                                                                                                    | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | DisplayName=name<br/> o<br/> DisplayName= @module ,-stringId<br/> ejemplo: DisplayName= @themeui.dll ,-2013 | DisplayName es el nombre del tema que se mostrará en el cuadro de diálogo Personalization Panel de control. Puede ser una cadena o una referencia a un nombre localizado.<br/> Este campo es opcional. Si falta, el nombre de archivo del tema se usa como nombre del tema.<br/>                                                                                                                                                                                                                                         |
-| BrandImage=path to image<br/> ejemplo: BrandImage=c: \\ Fabrikam \\brand.png<br/>                                 | **Windows 7 y versiones posteriores** BrandImage especifica la ruta de acceso a un archivo gráfico de marca que se incorpora en la vista previa del tema en el panel personalización Panel de control.<br/> El gráfico de iconos debe ser un archivo PNG. El gráfico se escala a 80 x 240 píxeles, por lo que se recomienda proporcionar una imagen de ese tamaño. La galería de temas respeta las regiones transparentes del icono de marca.<br/> Este campo es opcional. Si falta, no se muestra ningún logotipo como icono de tema.<br/> |
+| BrandImage=path to image<br/> ejemplo: BrandImage=c: \\ Fabrikam \\brand.png<br/>                                 | **Windows 7 y versiones posteriores** BrandImage especifica la ruta de acceso a un archivo gráfico con marca que se incorpora en la vista previa del tema en el cuadro de Panel de control.<br/> El gráfico de iconos debe ser un archivo PNG. El gráfico se escala a 80 x 240 píxeles, por lo que se recomienda proporcionar una imagen de ese tamaño. La galería de temas respeta las regiones transparentes del icono de marca.<br/> Este campo es opcional. Si falta, no se muestra ningún logotipo como icono de tema.<br/> |
 
 
 
@@ -116,7 +116,7 @@ Empty=%SystemRoot%\System32\imageres.dll,-55
 
 
 
-### <a name="control-panelcolors-section"></a>\[Panel de control \\ de colores \]
+### <a name="control-panelcolors-section"></a>\[Panel de control de \\ colores \]
 
 > [!Note]  
 > Esta sección es opcional. Si no incluye esta sección en el archivo .theme, el sistema usa la configuración predeterminada. Si el tema usa el estilo visual Dea, debe evitar reemplazar los valores predeterminados de esta sección.
@@ -228,7 +228,7 @@ WallpaperStyle=2
 **Windows 7 y versiones posteriores.**
 
 > [!Note]  
-> Esta sección es opcional. Si no incluye esta sección en el archivo .theme, el sistema usa la imagen de fondo del escritorio especificada en la \[ Panel de control \\ \] Desktop. Si incluye esta sección, debe especificar aquí la configuración de la presentación de diapositivas.
+> Esta sección es opcional. Si no incluye esta sección en el archivo .theme, el sistema usa la imagen de fondo del escritorio especificada en la \[ sección Panel de control \\ \] Desktop. Si incluye esta sección, debe especificar aquí la configuración de la presentación de diapositivas.
 
  
 
@@ -239,9 +239,9 @@ El fondo del tema puede ser una presentación de diapositivas de imágenes almac
 
 | Atributo | Descripción | 
 |-----------|-------------|
-| Interval=número de milisegundos | Obligatorio. Interval es un número que determina la frecuencia con la que cambia el fondo. Se mide en milisegundos. | 
-| Shuffle=0 o 1 | Obligatorio. Shuffle identifica si el orden aleatorio en segundo plano se ordena.<br /> 0 = Deshabilitado<br /> 1 = Habilitado<br /> | 
-| RSSFeed=URL a fuente RSS | Obligatorio si no se especifica ImagesRootPath. RSSFeed especifica una fuente RSS que se usará como presentación en segundo plano. Para que la fuente funcione, debe hacer referencia a imágenes de alta resolución que se adhieren al estándar de "gabinetes" que usa Windows <a href="/previous-versions/windows/desktop/ms684701(v=vs.85)">plataforma RSS.</a> Debido a esta limitación, los archivos .theme que incluyen una fuente RSS deben crearse manualmente. <br /><blockquote>[!Note]<br />No puede especificar RSSFeed e ImagesRootPath.</blockquote><br /><br /> | 
+| Interval=número de milisegundos | Necesario. Interval es un número que determina la frecuencia con la que cambia el fondo. Se mide en milisegundos. | 
+| Shuffle=0 o 1 | Necesario. Shuffle identifica si el orden aleatorio en segundo plano se ordena.<br /> 0 = Deshabilitado<br /> 1 = Habilitado<br /> | 
+| RSSFeed=URL a fuente RSS | Obligatorio si no se especifica ImagesRootPath. RSSFeed especifica una fuente RSS que se usará como presentación en segundo plano. Para que la fuente funcione, debe hacer referencia a imágenes de alta resolución que se adhieren al estándar de "gabinetes" que usa Windows <a href="/previous-versions/windows/desktop/ms684701(v=vs.85)">RSS Platform</a>. Debido a esta limitación, los archivos .theme que incluyen una fuente RSS deben crearse manualmente. <br /><blockquote>[!Note]<br />No puede especificar RSSFeed e ImagesRootPath.</blockquote><br /><br /> | 
 | ImagesRootPath=path to image folder | Obligatorio si no se especifica RSSFeed. ImagesRootPath especifica una ruta de acceso a un conjunto de imágenes que desea usar como presentación en segundo plano. Las imágenes de subcarpetas no se incluyen en la presentación de diapositivas.<br /> ImagesRootPath admite sustituciones de variables de entorno en la ruta de acceso.<br /><blockquote>[!Note]<br />No puede especificar RSSFeed e ImagesRootPath.</blockquote><br /><br /> | 
 | Item<em>N</em>Path=path(s) to specific image(s) | Para su uso con ImagesRootPath. <br /> Ruta<em>de acceso</em>del elemento N especifica rutas de acceso a imágenes específicas, por lo que puede limitar la presentación de diapositivas a imágenes concretas en lugar de a todas las imágenes de una carpeta. Si no se especifica ninguna ruta de acceso, todas las imágenes de la ruta de acceso ImagesRootPath se usan en la presentación de diapositivas, incluidas las imágenes agregadas después de crear e instalar el tema.<br /> La ruta<em>de acceso</em>del elemento N admite sustituciones de variables de entorno en la ruta de acceso. <em>N</em> es 0, 1, 2, y así sucesivamente. <br /> | 
 
@@ -675,7 +675,7 @@ Un archivo .theme tiene asociaciones de archivo; Por lo tanto, las aplicaciones 
 
 ## <a name="theme-packs"></a>Paquetes de temas
 
-**Windows 7 y versiones posteriores.** Un paquete de temas es un archivo .cab que contiene no solo el archivo .theme, sino también los archivos necesarios para implementar el tema en otro equipo, como archivos de sonido e imágenes. Los usuarios pueden crear paquetes de temas a través del Panel de control.
+**Windows 7 y versiones posteriores.** Un paquete de temas es un archivo .cab que contiene no solo el archivo .theme, sino también los archivos necesarios para implementar el tema en otro equipo, como archivos de sonido e imágenes. Los usuarios pueden crear paquetes de temas a través de la página personalización Panel de control.
 
 Entre los tipos de archivo admitidos se incluyen los siguientes:
 
@@ -698,6 +698,6 @@ Entre los tipos de archivo admitidos se incluyen los siguientes:
 
 <dl> <dt>
 
-[Información general sobre los estilos visuales](visual-styles-overview.md)
+[Información general sobre estilos visuales](visual-styles-overview.md)
 </dt> </dl>
 

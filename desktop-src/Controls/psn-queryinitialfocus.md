@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffc82fe11893e728fbc9301868d9acdca5f7110bedfd37b4a16b473de0821f33
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc542332440009f6564f384b415657e725edda00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118169645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167438"
 ---
 # <a name="psn_queryinitialfocus-notification-code"></a>Código de \_ notificación PSN QUERYINITIALFOCUS
 
@@ -49,7 +49,7 @@ Puntero a una [**estructura PSHNOTIFY.**](/windows/desktop/api/Prsht/ns-prsht-ps
 
 Para especificar qué control debe recibir el foco, devuelva el identificador del control. De lo contrario, devuelva cero y el foco irá al control predeterminado. Para establecer el valor devuelto, el procedimiento del cuadro de diálogo debe llamar a la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) con un valor **\_ MSGRESULT de DWL** y devolver **TRUE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación no debe llamar a la [**función SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus) mientras se administra este código de notificación. Devuelve el identificador del control que debe recibir el foco y el administrador de la hoja de propiedades controlará el cambio de foco.
 
@@ -73,11 +73,11 @@ case PSN_QUERYINITIALFOCUS :
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

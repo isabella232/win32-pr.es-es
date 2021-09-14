@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58c6a07c186fd3f5a521719ba0f75f8e468c3868d8ebfaa0595679d48b45089f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b4ed278ea31dfa156dcc8a64afdb98a2ae3b938
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118167505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166637"
 ---
 # <a name="tb_setcolorscheme-message"></a>Mensaje \_ SETCOLORSCHEME de TB
 
@@ -43,7 +43,7 @@ Puntero a una [**estructura COLORSCHEME**](/windows/win32/api/commctrl/ns-commct
 
 No se usa el valor devuelto para este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El control de barra de herramientas usa la información de combinación de colores al dibujar los elementos 3D del control.
 
@@ -53,11 +53,11 @@ Cuando los estilos visuales están habilitados, este mensaje no tiene ningún ef
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80c1eb7e72030a3c2dadc61bfd90027dab032c3342a25c72e4da9dd9a7338142
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b76d465b1b937359a3d312a401914d497f9c9b22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120104665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166158"
 ---
-# <a name="tdm_click_radio_button-message"></a>TDM \_ HAGA CLIC EN EL MENSAJE DEL BOTÓN DE \_ \_ RADIO
+# <a name="tdm_click_radio_button-message"></a>Mensaje TDM \_ CLICK \_ RADIO \_ BUTTON
 
 Simula la acción de hacer clic en un botón de radio en un cuadro de diálogo de tarea.
 
@@ -47,9 +47,9 @@ Debe ser cero.
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El identificador de botón de radio especificado se envía a la función de devolución de llamada [**TaskDialogCallbackProc**](/windows/win32/api/commctrl/nc-commctrl-pftaskdialogcallback) como parte de un código de notificación CLICKED de [ \_ TDN RADIO \_ BUTTON. \_](tdn-radio-button-clicked.md) Una vez que se devuelva la función de devolución de llamada, se seleccionará el botón de radio.
+El identificador de botón de radio especificado se envía a la función de devolución de llamada [**TaskDialogCallbackProc**](/windows/win32/api/commctrl/nc-commctrl-pftaskdialogcallback) como parte de un código de notificación [ \_ \_ \_ CLICKED de TDN RADIO BUTTON.](tdn-radio-button-clicked.md) Una vez que se devuelva la función de devolución de llamada, se seleccionará el botón de radio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ El identificador de botón de radio especificado se envía a la función de devo
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

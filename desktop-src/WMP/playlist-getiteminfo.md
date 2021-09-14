@@ -1,11 +1,11 @@
 ---
-title: Método playlist. getItemInfo
+title: Método Playlist.getItemInfo
 description: El método getItemInfo recupera el valor de un atributo de lista de reproducción.
 ms.assetid: 888c0ab7-c225-4246-b1a1-94da7e19fa1a
 keywords:
-- método getItemInfo de Windows Media Player
-- método getItemInfo Windows Media Player, clase playlist
-- Clase PlayList Windows Media Player, método getItemInfo
+- Método getItemInfo Reproductor de Windows Media
+- Método getItemInfo Reproductor de Windows Media , clase Playlist
+- Clase playlist Reproductor de Windows Media , método getItemInfo
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 6b1151528d6cf4e36aaed1cb4dc48a70f4083c4e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243189"
 ---
-# <a name="playlistgetiteminfo-method"></a>Método playlist. getItemInfo
+# <a name="playlistgetiteminfo-method"></a>Método Playlist.getItemInfo
 
-El método **getItemInfo** recupera el valor de un atributo de lista de reproducción.
+El **método getItemInfo** recupera el valor de un atributo de lista de reproducción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ strRetVal = Playlist.getItemInfo(
 
 <dl> <dt>
 
-*nombre* \[ de de\]
+*name* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene el nombre del atributo que se va a recuperar. Para obtener información acerca de los atributos admitidos por Media Player de Windows, consulte la [referencia](attribute-reference.md)de los atributos de Windows Media Player.
+**Cadena** que contiene el nombre del atributo que se va a recuperar. Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la referencia Reproductor de Windows Media [atributo](attribute-reference.md).
 
 </dd> </dl>
 
@@ -55,11 +55,11 @@ Este método devuelve una **cadena**.
 
 ## <a name="remarks"></a>Observaciones
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 
-Vea la propiedad [attributeCount](playlist-attributecount.md) para ver el código de ejemplo que usa esta propiedad.
+Vea la [propiedad attributeCount](playlist-attributecount.md) para obtener código de ejemplo que usa esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Vea la propiedad [attributeCount](playlist-attributecount.md) para ver el códig
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -76,16 +76,16 @@ Vea la propiedad [attributeCount](playlist-attributecount.md) para ver el códig
 
 <dl> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto de lista de reproducción**](playlist-object.md)
 </dt> <dt>
 
-[**Lista de reproducción. setItemInfo**](playlist-setiteminfo.md)
+[**Playlist.setItemInfo**](playlist-setiteminfo.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

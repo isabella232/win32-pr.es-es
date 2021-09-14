@@ -4,12 +4,12 @@ description: En esta sección se describen los cambios que puede realizar en el 
 ms.assetid: ACB4FF34-38EF-4F3D-9395-D48D58A72C0B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2139ac1bff3d197d63011e6a6e76c861b984c5e20b5c54ceab8871678d31a52
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9ef9a2eea9490beac7b6ff5048b70de61eb635f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119914225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167038"
 ---
 # <a name="how-to-scroll-text"></a>Cómo desplazar texto
 
@@ -21,18 +21,18 @@ En esta sección se describen los cambios que puede realizar en el procedimiento
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Instrucciones
 
 ### <a name="processing-the-wm_create-message"></a>Procesamiento del mensaje CREATE de WM \_
 
-Normalmente, las unidades de desplazamiento se establecen al procesar el [**\_ mensaje WM CREATE.**](/windows/desktop/winmsg/wm-create) Es conveniente basar las unidades de desplazamiento en las dimensiones de la fuente asociadas al contexto de dispositivo (DC) de la ventana. Para recuperar las dimensiones de fuente de un controlador de dominio específico, use [**la función GetTextMetrics.**](/windows/desktop/api/wingdi/nf-wingdi-gettextmetrics)
+Normalmente, las unidades de desplazamiento se establecen al procesar el [**\_ mensaje WM CREATE.**](/windows/desktop/winmsg/wm-create) Es conveniente basar las unidades de desplazamiento en las dimensiones de la fuente asociadas al contexto de dispositivo (DC) de la ventana. Para recuperar las dimensiones de fuente de un controlador de dominio específico, use la [**función GetTextMetrics.**](/windows/desktop/api/wingdi/nf-wingdi-gettextmetrics)
 
-En el ejemplo de esta sección, una unidad de desplazamiento vertical es equivalente al alto de una celda de caracteres, más el inicial externo. Una unidad de desplazamiento horizontal es equivalente al ancho medio de una celda de caracteres. Por lo tanto, las posiciones de desplazamiento horizontal no se corresponden con los caracteres reales, a menos que la fuente de la pantalla sea de ancho fijo.
+En el ejemplo de esta sección, una unidad de desplazamiento vertical es equivalente al alto de una celda de caracteres, más el inicial externo. Una unidad de desplazamiento horizontal es equivalente al ancho medio de una celda de caracteres. Por lo tanto, las posiciones de desplazamiento horizontal no corresponden a los caracteres reales, a menos que la fuente de la pantalla sea de ancho fijo.
 
 ### <a name="processing-the-wm_size-message"></a>Procesamiento del mensaje \_ WM SIZE
 
@@ -42,7 +42,7 @@ La [**función SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrol
 
 ### <a name="processing-the-wm_hscroll-and-wm_vscroll-messages"></a>Procesamiento de los mensajes \_ WM HSCROLL y WM \_ VSCROLL
 
-La barra de desplazamiento envía mensajes [**WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) al procedimiento de ventana cada vez que el usuario hace clic en la barra de desplazamiento o arrastra el cuadro de desplazamiento. Las palabras de orden bajo de **WM \_ VSCROLL** y **WM \_ HSCROLL** contienen cada una un código de solicitud que indica la dirección y magnitud de la acción de desplazamiento.
+La barra de desplazamiento envía [**mensajes WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) al procedimiento de ventana cada vez que el usuario hace clic en la barra de desplazamiento o arrastra el cuadro de desplazamiento. Las palabras de orden bajo de **WM \_ VSCROLL** y **WM \_ HSCROLL** contienen cada una un código de solicitud que indica la dirección y magnitud de la acción de desplazamiento.
 
 Cuando se [**procesan los mensajes WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL,**](wm-vscroll.md) se examina el código de solicitud de la barra de desplazamiento y se calcula el incremento de desplazamiento. Después de aplicar el incremento a la posición de desplazamiento actual, la ventana se desplaza a la nueva posición mediante la función [**ScrollWindowEx**](/windows/desktop/api/Winuser/nf-winuser-scrollwindowex) y la posición del cuadro de desplazamiento se ajusta mediante la [**función SetScrollInfo.**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo)
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 007a62386180e7b47edca201236cd1dacc86df696b5705d02ec1da0acb89761c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e0c4ffe9365686432a5e78cb1540055f41a838fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167777"
 ---
 # <a name="pbm_getrange-message"></a>Mensaje \_ GETRANGE de PBM
 
@@ -56,7 +56,7 @@ Puntero a una [**estructura PBRANGE**](/windows/desktop/api/Commctrl/ns-commctrl
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor INT que representa el valor de límite especificado por *wParam.* Si *lParam* no es **NULL,** *lParam* debe apuntar a una [**estructura PBRANGE**](/windows/desktop/api/Commctrl/ns-commctrl-pbrange) que se va a rellenar con ambos valores de límite.
+Devuelve un valor INT que representa el valor de límite especificado por *wParam.* Si *lParam no* es **NULL,** *lParam* debe apuntar a una [**estructura PBRANGE**](/windows/desktop/api/Commctrl/ns-commctrl-pbrange) que se va a rellenar con ambos valores de límite.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Devuelve un valor INT que representa el valor de límite especificado por *wPara
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

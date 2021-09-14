@@ -1,5 +1,5 @@
 ---
-description: La clase CIM SpareGroup se deriva de la clase RedundancyGroup de CIM e indica que se puede ahorrar uno o varios de los elementos \_ \_ agregados.
+description: La clase CIM SpareGroup se deriva de la clase Cim RedundancyGroup e indica que se pueden ahorrar uno o varios de los elementos \_ \_ agregados.
 ms.assetid: e60f8cab-a9e8-4f5a-b8d7-833c7832ef7e
 ms.tgt_platform: multiple
 title: CIM_SpareGroup clase
@@ -21,23 +21,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0a820c6a84cd4f5437e74b615e4c12083686b8294aab4b7ae78e26e767969ab2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 17907c62ace9f75c8d807e56d35b91f4c28e5f42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118677491"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167974"
 ---
 # <a name="cim_sparegroup-class"></a>Cim \_ SpareGroup (clase)
 
-La **clase \_ CIM SpareGroup** se deriva de la clase [**\_ RedundancyGroup**](cim-redundancygroup.md) de CIM e indica que se pueden ahorrar uno o varios de los elementos agregados. Las piezas de reserva se definen mediante la [**\_ asociación Cim ActsAsSpare.**](cim-actsasspare.md) Un ejemplo de una reserva es el uso de NIC redundantes en un sistema informático, donde una NIC es principal y la otra es de reserva. La NIC principal sería miembro del grupo de reserva, asociado mediante la clase [**\_ RedundancyComponent**](cim-redundancycomponent.md) de CIM, y la otra NIC se asociaría mediante la relación **\_ ActsAsSpare** de CIM.
+La **clase \_ CIM SpareGroup** se deriva de la clase [**Cim \_ RedundancyGroup**](cim-redundancygroup.md) e indica que se pueden ahorrar uno o varios de los elementos agregados. Las piezas de reserva se definen mediante la [**\_ asociación ActsAsSpare de CIM.**](cim-actsasspare.md) Un ejemplo de una reserva es el uso de NIC redundantes en un sistema informático, donde una NIC es principal y la otra es de reserva. La NIC principal sería miembro del grupo de reserva, asociado mediante la clase [**\_ RedundancyComponent**](cim-redundancycomponent.md) de CIM, y la otra NIC se asociaría mediante la relación **\_ ActsAsSpare** de CIM.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,9 +55,9 @@ class CIM_SpareGroup : CIM_RedundancyGroup
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ CIM SpareGroup** tiene estos tipos de miembros:
+La **clase CIM \_ SpareGroup** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -99,7 +99,7 @@ Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/w
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda de [**Cim \_ RedundancyGroup.**](cim-redundancygroup.md)
+Esta propiedad se hereda de [**Cim \_ RedundancyGroup**](cim-redundancygroup.md).
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
@@ -168,7 +168,7 @@ Tipo de acceso: solo lectura
 
 Información sobre el estado del grupo de redundancia.
 
-Esta propiedad se hereda de [**Cim \_ RedundancyGroup.**](cim-redundancygroup.md)
+Esta propiedad se hereda de [**Cim \_ RedundancyGroup**](cim-redundancygroup.md).
 
 <dt>
 
@@ -243,7 +243,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -274,7 +274,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -288,14 +288,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -339,11 +339,11 @@ Los valores son los siguientes:
 
 ## <a name="remarks"></a>Observaciones
 
-La **clase \_ CIM SpareGroup** se deriva de [**CIM \_ RedundancyGroup**](cim-redundancygroup.md).
+La **clase CIM \_ SpareGroup** se deriva de [**CIM \_ RedundancyGroup**](cim-redundancygroup.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 

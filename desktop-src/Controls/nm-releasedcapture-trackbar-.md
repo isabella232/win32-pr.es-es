@@ -3,7 +3,7 @@ title: NM_RELEASEDCAPTURE (barra de seguimiento) (Commctrl.h)
 description: Notifica a la ventana primaria de un control trackbar que el control está liberando la captura del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 1e3e4f67-672d-4e3e-84f4-b3fa6221d118
 keywords:
-- NM_RELEASEDCAPTURE de notificación (barra de seguimiento) Windows controles
+- NM_RELEASEDCAPTURE (barra de seguimiento) de código de notificación Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f987ba9aec66a2a637736cb1b675196538ec46c7401b9a6317e5458a0bba7c48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 684f58fb5328cfe0d25fc73ce7c1a2d9a189d86f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167874"
 ---
 # <a name="nm_releasedcapture-trackbar-notification-code"></a>Código de notificación DE NM \_ RELEASEDCAPTURE (barra de seguimiento)
 
@@ -57,7 +57,7 @@ El control omite el valor devuelto de este código de notificación.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b5860a0e7016080c70682d99209b112dc8ab81100ed4d1115db904832f1b92e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6eb3d0a6caf110045d694208c63aa81d63c265c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119825805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165837"
 ---
-# <a name="ttm_trackactivate-message"></a>Mensaje TRACKACTIVATE de TTM \_
+# <a name="ttm_trackactivate-message"></a>Mensaje \_ TRACKACTIVATE de TTM
 
 Activa o desactiva una información sobre herramientas de seguimiento.
 
@@ -38,8 +38,8 @@ Valor que especifica si se está activando o desactivando el seguimiento. Este v
 
 | Value                                                                                                                                | Significado                         |
 |--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| <span id="TRUE"></span><span id="true"></span><dl> <dt>**Verdad**</dt> </dl>    | Activar seguimiento.<br/>   |
-| <span id="FALSE"></span><span id="false"></span><dl> <dt>**Falso**</dt> </dl> | Desactivación del seguimiento.<br/> |
+| <span id="TRUE"></span><span id="true"></span><dl> <dt>**VERDAD**</dt> </dl>    | Activar seguimiento.<br/>   |
+| <span id="FALSE"></span><span id="false"></span><dl> <dt>**FALSO**</dt> </dl> | Desactivación del seguimiento.<br/> |
 
 
 
@@ -66,7 +66,7 @@ No se usa el valor devuelto para este mensaje.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ No se usa el valor devuelto para este mensaje.
 **Conceptual**
 </dt> <dt>
 
-[Usar controles de información sobre herramientas](using-tooltip-contro.md)
+[Uso de controles de información sobre herramientas](using-tooltip-contro.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: TBM_GETUNICODEFORMAT mensaje (Commctrl.h)
-description: 'TBM_GETUNICODEFORMAT mensaje: recupera la marca de formato de caracteres Unicode para el control .'
+description: 'TBM_GETUNICODEFORMAT mensaje: recupera la marca de formato de caracteres Unicode para el control.'
 ms.assetid: cecd7e55-f482-4381-bde8-a60b8c5173eb
 keywords:
 - TBM_GETUNICODEFORMAT controles de Windows mensaje
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e15f5b12a60b58958dad1364848120f391c91906bb6057727f3a4e22b8a7813
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 82e7424a4e561ee8f8be79135309089fe4bb0bf9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166469"
 ---
 # <a name="tbm_getunicodeformat-message"></a>Mensaje \_ GETUNICODEFORMAT de TBM
 
@@ -39,7 +39,7 @@ Recupera la marca de formato de caracteres Unicode para el control .
 
 Devuelve la marca de formato Unicode del control. Si este valor es distinto de cero, el control usa caracteres Unicode. Si este valor es cero, el control usa caracteres ANSI.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Consulte los comentarios de [**CCM \_ GETUNICODEFORMAT para**](ccm-getunicodeformat.md) obtener una explicación de este mensaje.
 
@@ -51,7 +51,7 @@ Consulte los comentarios de [**CCM \_ GETUNICODEFORMAT para**](ccm-getunicodefor
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

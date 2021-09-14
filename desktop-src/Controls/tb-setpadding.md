@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da488c7aab3a6856fd1bd8db6911336eb52881da396e287937678600158d9655
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 65fae53f7e7702528915af7631bd675f11188b71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078169"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166578"
 ---
 # <a name="tb_setpadding-message"></a>Mensaje \_ SETPADDING de TB
 
@@ -47,7 +47,7 @@ LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.
 
 Devuelve un **valor DWORD** que contiene el relleno horizontal anterior en [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) y el relleno vertical anterior en [**HIWORD,**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))en píxeles.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores de relleno se usan para crear un área en blanco entre el borde del botón y la imagen o el texto del botón. El lugar y la cantidad de relleno que se aplica realmente depende del tipo del botón y de si tiene una imagen. El relleno horizontal se aplica tanto a la derecha como a la izquierda del botón, y el relleno vertical se aplica tanto a la parte superior como a la parte inferior del botón. El relleno solo se aplica a los botones que tienen el [**estilo TBSTYLE \_ AUTOSIZE.**](toolbar-control-and-button-styles.md)
 
@@ -55,11 +55,11 @@ Los valores de relleno se usan para crear un área en blanco entre el borde del 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

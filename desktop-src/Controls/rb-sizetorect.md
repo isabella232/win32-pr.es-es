@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba63630fc64f56dff914b4fb576ecc6cef43d12d192606a5088924fd6a5832e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3db5727ee8c94d2473b503c9a81b7669bb829a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078558"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167246"
 ---
 # <a name="rb_sizetorect-message"></a>Mensaje \_ SIZETORECT de RB
 
@@ -43,7 +43,7 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que e
 
 Devuelve un valor distinto de cero si se produjo un cambio de diseño o cero en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las bandas de rebar se organizarán y ajustarán según sea necesario para ajustarse al rectángulo. Las bandas que tienen el estilo VARIABLEHEIGHT de RBBS se cambiarán de tamaño de la forma más uniforme \_ posible para ajustarse al rectángulo. El alto de un rebar horizontal o el ancho de una barra vertical pueden cambiar, dependiendo del nuevo diseño.
 
@@ -51,11 +51,11 @@ Las bandas de rebar se organizarán y ajustarán según sea necesario para ajust
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f4bb1e560e2be2b6952406d548215d60f2c2974e57b2388580da7453b51c184
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7daf67839837adccfbec99bf03fc4dfff97738db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119318825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166610"
 ---
 # <a name="tb_sethotitem2-message"></a>Mensaje \_ SETHOTITEM2 de TB
 
@@ -32,18 +32,18 @@ Establece el elemento de acceso rápido en una barra de herramientas.
 *wParam* 
 </dt> <dd>
 
-Índice del elemento que se hará más caliente. Si este valor es -1, ninguno de los elementos estará en caliente.
+Índice del elemento que se hará en caliente. Si este valor es -1, ninguno de los elementos estará en caliente.
 
 </dd> <dt>
 
 *lParam* 
-</dt> <dd>Combinación de marcas XXX \_ de HICF. Vea <a href="/windows/win32/api/commctrl/ns-commctrl-nmtbhotitem">**NMTBHOTITEM**</a>.</dd> </dl>
+</dt> <dd>Combinación de marcas XXX \_ de HICF. Vea <a href="/windows/win32/api/commctrl/ns-commctrl-nmtbhotitem">**NMTBHOTITEM.**</a></dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
 Devuelve el índice del elemento de acceso actual anterior o -1 si no había ningún elemento de acceso.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El comportamiento de este mensaje no está definido para las barras de herramientas que no tienen el [**estilo TBSTYLE \_ FLAT.**](toolbar-control-and-button-styles.md)
 
@@ -55,7 +55,7 @@ El comportamiento de este mensaje no está definido para las barras de herramien
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

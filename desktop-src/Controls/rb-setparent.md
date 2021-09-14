@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_SETPARENT (commctrl. h)
+title: RB_SETPARENT mensaje (Commctrl.h)
 description: Establece la ventana primaria de un control rebar.
 ms.assetid: bb8036d4-cab8-4887-86c6-66460bdbe64b
 keywords:
-- RB_SETPARENT controles de mensajes de Windows
+- RB_SETPARENT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: f6fafd054d9438b6aedd268620097847b42f3d60
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905417"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167277"
 ---
-# <a name="rb_setparent-message"></a>Mensaje de el SETPARENT de RB \_
+# <a name="rb_setparent-message"></a>Mensaje \_ SETPARENT de RB
 
 Establece la ventana primaria de un control rebar.
 
@@ -41,11 +41,11 @@ Identificador de la ventana primaria que se va a establecer.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador de la ventana primaria anterior o **null** si no hay ningún elemento primario anterior.
+Devuelve el identificador a la ventana primaria anterior o **NULL** si no hay ningún elemento primario anterior.
 
 ## <a name="remarks"></a>Observaciones
 
-El control rebar envía mensajes de notificación a la ventana que se especifica con este mensaje. En realidad, este mensaje no cambia el elemento primario del control rebar.
+El control rebar envía mensajes de notificación a la ventana que especifique con este mensaje. Este mensaje no cambia realmente el elemento primario del control rebar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ El control rebar envía mensajes de notificación a la ventana que se especifica
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

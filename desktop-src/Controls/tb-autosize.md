@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b363546c5a079d2d73a0a3573a582ac27d6348b4db879d6c4371d639021f5d2d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5f901463888338fd9cadf67472232efe9a25f29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119018733"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166905"
 ---
 # <a name="tb_autosize-message"></a>Mensaje \_ DE TAMAÑO AUTOMÁTICO DE TB
 
@@ -39,9 +39,9 @@ Hace que se cambie el tamaño de una barra de herramientas.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una aplicación envía el mensaje **\_ TB AUTOSIZE** después de hacer que el tamaño de una barra de herramientas cambie estableciendo el tamaño del botón o del mapa de bits o agregando cadenas por primera vez.
+Una aplicación envía el mensaje **\_ TB AUTOSIZE** después de hacer que el tamaño de una barra de herramientas cambie estableciendo el botón o el tamaño del mapa de bits o agregando cadenas por primera vez.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Una aplicación envía el mensaje **\_ TB AUTOSIZE** después de hacer que el ta
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

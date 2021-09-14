@@ -7,16 +7,16 @@ keywords:
 - Active Directory ejemplos Active Directory , agregar un usuario o grupo de dominio a un grupo local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdca65c26c6ab1195dcd0d7fc3f44b36e39bed1d15e97627664754c918e57e96
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 539e8fbbeed3d865a0878236745b7a3c74c76d27
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118694693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168009"
 ---
 # <a name="example-code-for-adding-a-domain-user-or-group-to-a-local-group"></a>Código de ejemplo para agregar un usuario o grupo de dominio a un grupo local
 
-En el ejemplo de código de C++ siguiente se agrega un usuario o grupo de dominio Windows a un grupo local en un servidor miembro o en un equipo que se ejecuta en una estación de trabajo nt o Windows 2000 Professional.
+En el siguiente ejemplo de código de C++ se agrega un usuario o grupo de dominio a un grupo Windows local en un servidor miembro o en un equipo que se ejecuta en una estación de trabajo nt o Windows 2000 Professional.
 
 
 ```C++
@@ -106,7 +106,7 @@ HRESULT AddDomainUserToLocalGroup(LPCWSTR pwszComputerName,
 
 
 
-En el ejemplo Visual Basic de código siguiente se agrega un usuario o grupo de dominio a un grupo Windows local en un servidor miembro o en un equipo que se ejecuta en una estación de trabajo nt o Windows 2000 Professional.
+En el ejemplo Visual Basic código siguiente se agrega un usuario o grupo de dominio a un grupo Windows local en un servidor miembro o en un equipo que se ejecuta en una estación de trabajo nt o Windows 2000 Professional.
 
 
 ```VB

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74f286a2f03e318629a10651d066da5aa6cfe70aa293f242ad7508d0ef4739a8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a42839157125c8def28a19dd9c2ccce21d3b96c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119540025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166417"
 ---
 # <a name="tbm_settic-message"></a>Mensaje \_ TBM SETTIC
 
@@ -43,7 +43,7 @@ Posición de la marca de graduación. Este parámetro puede ser cualquiera de lo
 
 Devuelve **TRUE** si se establece la marca de graduación o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una barra de seguimiento crea sus propias marcas de graduación primero y último. No use este mensaje para establecer la primera y la última marca de graduación.
 
@@ -51,11 +51,11 @@ Una barra de seguimiento crea sus propias marcas de graduación primero y últim
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

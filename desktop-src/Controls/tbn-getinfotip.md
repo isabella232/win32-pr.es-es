@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b6adb47a940ce6795047a1aca8bb7cbdc0899a142c132ab8f6f39e6bb089f1e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fda2c1b181ebea1840b153b8b2df8328b3f2cc8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077909"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166345"
 ---
 # <a name="tbn_getinfotip-notification-code"></a>Código de notificación \_ DE TBN GETINFOTIP
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMTBGETINFOTIP**](/windows/win32/api/commctrl/ns-com
 
 El control omite el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La compatibilidad con la información sobre la información en la barra de herramientas permite que la barra de herramientas muestre información sobre herramientas para elementos tan grandes como los caracteres INFOTIPSIZE. Si no se procesa este código de notificación, la barra de herramientas usará el texto del elemento para la información.
 
@@ -63,7 +63,7 @@ La compatibilidad con la información sobre la información en la barra de herra
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TBN \_ GETINFOTIPW** (Unicode) y **TBN \_ GETINFOTIPA** (ANSI)<br/>             |
 
 

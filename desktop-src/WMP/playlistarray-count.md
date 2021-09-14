@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddcab2e970ab45a0479f5cafc38580b8db2f7f39d3b0350734a485be2c9b3059
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f15594a3fc612625e38bf92b443cb5c5e7d2d17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118335494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243128"
 ---
 # <a name="playlistarraycount"></a>PlaylistArray.count
 
 La **propiedad count** recupera el número de listas de reproducción de la matriz de listas de reproducción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 player.playlistCollection.getAll().count
 
@@ -33,7 +33,7 @@ player.playlistCollection.getAll().count
 
 Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
@@ -41,7 +41,7 @@ Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la bi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

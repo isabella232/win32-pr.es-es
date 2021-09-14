@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a593be5bc9bb3ba8d04b1a657785afb86824119fa8bbd5e027003f296230e99e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9fb4ead5374015c014a105056b63077779272535
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119642515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165849"
 ---
 # <a name="ttm_settiptextcolor-message"></a>Mensaje \_ SETTIPTEXTCOLOR de TTM
 
@@ -43,7 +43,7 @@ Nuevo color de texto.
 
 No se usa el valor devuelto para este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando los estilos visuales están habilitados, este mensaje no tiene ningún efecto.
 
@@ -51,11 +51,11 @@ Cuando los estilos visuales están habilitados, este mensaje no tiene ningún ef
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

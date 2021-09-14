@@ -1,6 +1,6 @@
 ---
 title: TBM_SETSELEND mensaje (Commctrl.h)
-description: Establece la posición lógica final del intervalo de selección actual en una barra de seguimiento. Este mensaje se omite si la barra de seguimiento no tiene el estilo TBS \_ ENABLESELRANGE.
+description: Establece la posición lógica final del intervalo de selección actual en una barra de seguimiento. Este mensaje se omite si la barra de seguimiento no tiene el estilo \_ ENABLESELRANGE de TBS.
 ms.assetid: 1feec14c-1607-49d5-a147-af2443f82dc1
 keywords:
 - TBM_SETSELEND controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9ee524bf6a519a7d0071e4149ed03191a9aec989e2deefe596cca1072dbd098
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 146446df4daf8e8ac7c0f3499149ba0f46940880
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118167070"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166426"
 ---
-# <a name="tbm_setselend-message"></a>Mensaje TBM \_ SETSELEND
+# <a name="tbm_setselend-message"></a>Mensaje \_ SETELEND de TBM
 
-Establece la posición lógica final del intervalo de selección actual en una barra de seguimiento. Este mensaje se omite si la barra de seguimiento no tiene el [**estilo TBS \_ ENABLESELRANGE.**](trackbar-control-styles.md)
+Establece la posición lógica final del intervalo de selección actual en una barra de seguimiento. Este mensaje se omite si la barra de seguimiento no tiene el [**estilo \_ ENABLESELRANGE de TBS.**](trackbar-control-styles.md)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece la posición lógica final del intervalo de selección actual en una b
 *wParam* 
 </dt> <dd>
 
-Volver a dibujar la marca. Si este parámetro es **TRUE,** el mensaje vuelve a dibujar la barra de seguimiento después de establecer el intervalo de selección. Si este parámetro es **FALSE,** el mensaje establece el intervalo de selección, pero no vuelve a dibujar la barra de seguimiento.
+Vuelva a dibujar la marca. Si este parámetro es **TRUE,** el mensaje vuelve a dibujar la barra de seguimiento después de establecer el intervalo de selección. Si este parámetro es **FALSE,** el mensaje establece el intervalo de selección, pero no vuelve a dibujar la barra de seguimiento.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ No de devuelve ningún valor.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

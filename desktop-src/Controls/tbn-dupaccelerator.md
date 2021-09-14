@@ -3,7 +3,7 @@ title: TBN_DUPACCELERATOR de notificación (Commctrl.h)
 description: Determina si se puede usar una tecla de aceleración en dos o más barras de herramientas activas. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 98068d1a-1460-4be3-8575-9294b82ce903
 keywords:
-- TBN_DUPACCELERATOR de notificación Windows controles
+- TBN_DUPACCELERATOR código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0ff0059a6071db79cab91fcf903a1e68f3550c766b3d16cd3571c3a785e7368
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e530fa2101f8145148b7ede7d74f53a1828fa58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117829339"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166369"
 ---
 # <a name="tbn_dupaccelerator-notification-code"></a>Código de notificación \_ DE TBN DUPACCELERATOR
 
@@ -47,9 +47,9 @@ Puntero a una estructura que proporciona un acelerador y que recibe un valor que
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente; en caso **contrario, FALSE.**
+Devuelve **TRUE si** se realiza correctamente; de lo **contrario, FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación debe declarar la **estructura NMTBDUPACCELERATOR** como se muestra a continuación:
 
@@ -66,11 +66,11 @@ typedef struct tagNMTBDUPACCELERATOR
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

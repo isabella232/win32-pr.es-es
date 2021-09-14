@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d25cbf20fd084c2ce60b29d131b7f488ca2b8cee178a2218fcfac191b3c1af33
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 465ad2546397fa31c33d6a52b4989902c979d91d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166761"
 ---
 # <a name="tb_getstring-message"></a>Mensaje \_ GETSTRING de TB
 
@@ -49,7 +49,7 @@ Puntero a un búfer utilizado para devolver la cadena.
 
 Devuelve la longitud de cadena si se realiza correctamente o -1 en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje devuelve la cadena especificada del grupo de cadenas de la barra de herramientas. No se corresponde necesariamente con la cadena de texto que se muestra actualmente mediante un botón. Para recuperar la cadena de texto actual de un botón, envíe a la barra de herramientas [**un mensaje \_ GETBUTTONTEXT de TB.**](tb-getbuttontext.md)
 
@@ -61,7 +61,7 @@ Este mensaje devuelve la cadena especificada del grupo de cadenas de la barra de
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TB \_ GETSTRINGW** (Unicode) y **TB \_ GETSTRINGA** (ANSI)<br/>                 |
 
 

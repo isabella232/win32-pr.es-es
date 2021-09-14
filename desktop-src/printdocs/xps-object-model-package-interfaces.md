@@ -4,12 +4,12 @@ ms.assetid: 9e269b18-e5b1-4801-b8e7-473750443c6d
 title: Interfaces de paquete DE OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6732531e3874046bbd174c363db24e304da95b9596b810014abb52a795e720c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e1465f5d6782e29f9c37f899b59790302e21ebf1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119886146"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168021"
 ---
 # <a name="xps-om-package-interfaces"></a>Interfaces de paquete DE OM XPS
 
@@ -20,8 +20,8 @@ Las interfaces de paquete representan el nivel superior de XPS OM, que correspon
 | Nombre de interfaz                                                  | Interfaces secundarias lógicas                                                                                                            | Descripción                                                                                    |
 |-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | [**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage)<br/>               | [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence)<br/> [**IXpsOMCoreProperties**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcoreproperties)<br/> | La OM XPS completa que corresponde al paquete que contiene el documento XPS.<br/> |
-| [**IXpsOMPackageWriter**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackagewriter)<br/>   | Ninguno<br/>                                                                                                                     | Habilita la serialización incremental de páginas de documento en un paquete.<br/>                   |
-| [**IXpsOMCoreProperties**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcoreproperties)<br/> | Ninguno<br/>                                                                                                                     | Accede a los metadatos del documento. <br/>                                                    |
+| [**IXpsOMPackageWriter**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackagewriter)<br/>   | None<br/>                                                                                                                     | Habilita la serialización incremental de páginas de documento en un paquete.<br/>                   |
+| [**IXpsOMCoreProperties**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcoreproperties)<br/> | None<br/>                                                                                                                     | Accede a los metadatos del documento. <br/>                                                    |
 
 
 
@@ -126,7 +126,7 @@ El ejemplo de código siguiente obtiene un puntero a la interfaz [**IXpsOMCorePr
 [Uso de la interfaz IXpsOMPackageWriter](using-the-ixpsompackagewriter-interface.md)
 </dt> <dt>
 
-[Navegación por XPS OM](navigate-the-xps-om.md)
+[Navegar por XPS OM](navigate-the-xps-om.md)
 </dt> <dt>
 
 [**IXpsOMDocumentSequence (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence)

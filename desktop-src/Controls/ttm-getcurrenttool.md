@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4558e582e4619cd7d96380a1e38e2efe68808b9241e4c627e12a74946965d8de
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5fa6218bcb4ad9aa43c7ffba0d332786956d9a62
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119769345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165926"
 ---
 # <a name="ttm_getcurrenttool-message"></a>Mensaje \_ GETCURRENTTOOL de TTM
 
@@ -43,7 +43,7 @@ Puntero a una [**estructura TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario. Si *lParam* es **NULL,** devuelve distinto de cero si existe una herramienta actual o cero en caso contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario. Si *lParam es* **NULL,** devuelve distinto de cero si existe una herramienta actual o cero en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ Devuelve un valor distinto de cero si se realiza correctamente o cero en caso co
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TTM \_ GETCURRENTTOOLW** (Unicode) y **TTM \_ GETCURRENTTOOLA** (ANSI)<br/>     |
 
 

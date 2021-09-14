@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b92816b70e683b9f58e0de2247b2710da38bee891caa39d9026fc342168c6be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f73d3d4308d2e3f963c015b6e36f385902bea6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120060655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166122"
 ---
 # <a name="tdm_set_progress_bar_marquee-message"></a>Mensaje \_ \_ MARQUEE DE LA \_ BARRA DE \_ PROGRESO DE TDM SET
 
@@ -32,7 +32,7 @@ Inicia y detiene la presentación de marquesina de la barra de progreso en un cu
 *wParam* \[ En\]
 </dt> <dd>
 
-Un **BOOL** que indica si se debe activar o desactivar la presentación de marquesina. Use **TRUE** para activar la pantalla de marquesina o **FALSE** para desactivarla.
+Un **BOOL** que indica si se debe activar o desactivar la presentación de marquesina. Use **TRUE** para activar la presentación de marquesina o **FALSE** para desactivarla.
 
 </dd> <dt>
 
@@ -47,7 +47,7 @@ UINT **que** especifica el tiempo, en milisegundos, entre las actualizaciones de
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener información sobre el modo de marquesina, vea [Control de barra de progreso](progress-bar-control.md).
 
@@ -59,7 +59,7 @@ Para obtener información sobre el modo de marquesina, vea [Control de barra de 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

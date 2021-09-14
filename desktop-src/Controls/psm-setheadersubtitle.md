@@ -1,6 +1,6 @@
 ---
 title: PSM_SETHEADERSUBTITLE mensaje (Prsht.h)
-description: Establece el texto del subtítulo para el encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o usar la macro PropSheet \_ SetHeaderSubTitle.
+description: Establece el texto del subtítulo para el encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o usar la \_ macro PropSheet SetHeaderSubTitle.
 ms.assetid: 6ef3017b-8a20-4d62-a604-135410d8bdf7
 keywords:
 - PSM_SETHEADERSUBTITLE controles de Windows mensaje
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20e030b75a933ba7f647f8b3dffa5e45637999d45f3299f8280fd1db3afb9857
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2d73376b5ed35f20b43c743b31a4a78d3a4fa809
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120088505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167486"
 ---
 # <a name="psm_setheadersubtitle-message"></a>Mensaje \_ SETHEADERSUBTITLE de PSM
 
-Establece el texto del subtítulo para el encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o usar la macro [**PropSheet \_ SetHeaderSubTitle.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setheadersubtitle)
+Establece el texto del subtítulo para el encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o usar la [**macro \_ PropSheet SetHeaderSubTitle.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setheadersubtitle)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -49,7 +49,7 @@ Nuevo subtítulo de encabezado.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si especifica la página actual, se volverá a dibujar inmediatamente para mostrar el nuevo subtítulo.
 
@@ -62,11 +62,11 @@ Si especifica la página actual, se volverá a dibujar inmediatamente para mostr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl>      |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl>      |
 | Nombres Unicode y ANSI<br/>   | **PSM \_ SETHEADERSUBTITLEW** (Unicode) y **PSM \_ SETHEADERSUBTITLEA** (ANSI)<br/> |
 
 

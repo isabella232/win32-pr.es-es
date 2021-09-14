@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb3be7432ac3a93af4f27fe9b06dced50fc6c77c0176c3bff7419cf15f2c73ab
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 00f0ae4ec104c8472d3640aa804650640d77cc63
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120104535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166110"
 ---
-# <a name="tdm_set_progress_bar_state-message"></a>Mensaje DE ESTADO \_ DE LA BARRA DE PROGRESO \_ \_ \_ DE TDM SET
+# <a name="tdm_set_progress_bar_state-message"></a>Mensaje TDM \_ SET \_ PROGRESS BAR \_ \_ STATE
 
 Establece el estado de la barra de progreso en un cuadro de diálogo de tarea.
 
@@ -69,7 +69,7 @@ Si la función no se realiza correctamente, el valor devuelto es cero. Para obte
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

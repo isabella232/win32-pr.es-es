@@ -6,12 +6,12 @@ keywords:
 - EM_GETHILITE controles de Windows mensaje
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 652f0e103a694666a9d36ec17991a2ceb71eeb929275b9e8f4af11842cc13163
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a57e59526bee2a2be9fc48bbb958659970c23e69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120049175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167938"
 ---
 # <a name="em_gethilite-message"></a>Mensaje \_ EM GETHILITE
 

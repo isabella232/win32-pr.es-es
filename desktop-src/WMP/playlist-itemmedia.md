@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52b3061ef83ec246878d51528e88a12b4f10dcb3085f584a2266dc64a163b866
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 269e9011ade69ee61d99c29c1fa5bd1b9fa3deeb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117746880"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243165"
 ---
 # <a name="playlistitemmedia"></a>PLAYLIST.itemMedia
 
@@ -42,7 +42,7 @@ Este atributo es un objeto **Multimedia de solo** lectura.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **propiedad itemMedia** devolverá objetos multimedia que se expanden en el elemento **PLAYLIST.** Por ejemplo, si hay una lista de reproducción que contiene tres clips multimedia que no se expanden en el elemento **PLAYLIST,** **itemMedia**(0) devolverá la lista de reproducción como el objeto multimedia. Si la lista de reproducción está expandida, **itemMedia**(0) devolverá el primer clip multimedia de la lista de reproducción.
 

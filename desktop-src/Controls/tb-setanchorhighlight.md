@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77a66193aebee80a2ffde97b7e802b5bab750f0a9e2f1773b32d872211d52150
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 809f71e446f7768d637258152db1dd2d56346dfd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118167988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166661"
 ---
 # <a name="tb_setanchorhighlight-message"></a>Mensaje \_ DE TB SETANCHORHIGHLIGHT
 
@@ -43,19 +43,19 @@ Establece el valor de resaltado de delimitador para una barra de herramientas.
 
 Devuelve la configuración de resaltado de delimitador anterior. Si este valor es distinto de cero, se ha habilitado el resaltado de delimitadores. Si este valor es cero, se deshabilitó el resaltado de delimitadores.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El resaltado de delimitadores en una barra de herramientas significa que el último elemento resaltado permanecerá resaltado hasta que se resalte otro elemento. Esto sucede incluso si el cursor sale del control de la barra de herramientas.
+El resaltado de delimitadores en una barra de herramientas significa que el último elemento resaltado permanecerá resaltado hasta que se resalte otro elemento. Esto sucede incluso si el cursor deja el control de la barra de herramientas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

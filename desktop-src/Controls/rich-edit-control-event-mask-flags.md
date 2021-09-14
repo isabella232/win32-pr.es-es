@@ -29,12 +29,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92fe4be97a1288012b6a692f8837388e5eb4c99b465f1f34bb37d47ea0d44f28
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 006a6d82e7aa4958b03360d05d29a78564f99db7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119434805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167170"
 ---
 # <a name="rich-edit-control-event-mask-flags"></a>Marcas de máscara de eventos del control Rich Edit
 
@@ -57,7 +57,7 @@ La máscara de eventos especifica qué códigos de notificación envía un contr
 | <span id="ENM_OBJECTPOSITIONS"></span><span id="enm_objectpositions"></span><dl> <dt>**ENM \_ OBJECTPOSITIONS**</dt> </dl>       | Envía [notificaciones EN \_ OBJECTPOSITIONS.](en-objectpositions.md)<br/>                                                                                                                                                                                                                                     |
 | <span id="ENM_PARAGRAPHEXPANDED"></span><span id="enm_paragraphexpanded"></span><dl> <dt>**PÁRRAFO \_ DE ENMEXPANDED**</dt> </dl> | Envía [notificaciones EN \_ PARAGRAPHEXPANDED.](/windows/desktop/Controls/en-paragraphexpanded)<br/>                                                                                                                                                                                                                            |
 | <span id="ENM_PROTECTED"></span><span id="enm_protected"></span><dl> <dt>**ENM \_ PROTECTED**</dt> </dl>                         | Envía [notificaciones EN \_ PROTECTED.](en-protected.md)<br/>                                                                                                                                                                                                                                                 |
-| <span id="ENM_REQUESTRESIZE"></span><span id="enm_requestresize"></span><dl> <dt>**SOLICITUD DE \_ ENMRESIZE**</dt> </dl>             | Envía [notificaciones EN \_ REQUESTRESIZE.](en-requestresize.md)<br/>                                                                                                                                                                                                                                         |
+| <span id="ENM_REQUESTRESIZE"></span><span id="enm_requestresize"></span><dl> <dt>**SOLICITUD \_ DE ENMRESIZE**</dt> </dl>             | Envía [notificaciones EN \_ REQUESTRESIZE.](en-requestresize.md)<br/>                                                                                                                                                                                                                                         |
 | <span id="ENM_SCROLL"></span><span id="enm_scroll"></span><dl> <dt>**DESPLAZAMIENTO \_ DE ENM**</dt> </dl>                                  | Envía [notificaciones EN \_ HSCROLL](en-hscroll.md) [y EN \_ VSCROLL.](en-vscroll.md)<br/>                                                                                                                                                                                                                   |
 | <span id="ENM_SCROLLEVENTS"></span><span id="enm_scrollevents"></span><dl> <dt>**EVENTOS DE DESPLAZAMIENTO DE ENM \_**</dt> </dl>                | Envía [notificaciones EN \_ MSGFILTER](en-msgfilter.md) para eventos de rueda del mouse.<br/>                                                                                                                                                                                                                          |
 | <span id="ENM_SELCHANGE"></span><span id="enm_selchange"></span><dl> <dt>**ENM \_ SELCHANGE**</dt> </dl>                         | Envía [notificaciones \_ EN SELCHANGE.](en-selchange.md)<br/>                                                                                                                                                                                                                                                 |

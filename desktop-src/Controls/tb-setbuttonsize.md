@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58b0b957ad6328515da7aee2f978870662801aa6aba81133e9e4bc22ee7d9c92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5db17b943c8a7cc8e71735d08718ece02a8c2582
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118167738"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166649"
 ---
-# <a name="tb_setbuttonsize-message"></a>Mensaje \_ DE TB SETBUTTONSIZE
+# <a name="tb_setbuttonsize-message"></a>Mensaje \_ SETBUTTONSIZE de TB
 
 Establece el tamaño de los botones de una barra de herramientas.
 
@@ -39,19 +39,19 @@ Debe ser cero.
 *lParam* 
 </dt> <dd>
 
-Loword [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el ancho, en píxeles, de los botones. HIWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el alto, en píxeles, de los botones.
+LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el ancho, en píxeles, de los botones. HIWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el alto, en píxeles, de los botones.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **TB \_ Por lo** general, se debe llamar a SETBUTTONSIZE después de agregar botones.
 
-Use [**TB \_ SETBUTTONWIDTH para**](tb-setbuttonwidth.md) establecer el ancho máximo y mínimo permitido para los botones antes de agregarse. Use **TB \_ SETBUTTONSIZE para** establecer el tamaño real de los botones.
+Use [**TB \_ SETBUTTONWIDTH para**](tb-setbuttonwidth.md) establecer los anchos máximos y mínimos permitidos para los botones antes de agregarse. Use **TB \_ SETBUTTONSIZE para** establecer el tamaño real de los botones.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -69,11 +69,11 @@ SendMessage(hWndToolbar, TB_SETBUTTONSIZE, 0, MAKELPARAM(80, 30);
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

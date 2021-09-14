@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. itemPlayingColor
+title: PLAYLIST.itemPlayingColor
 description: El atributo itemPlayingColor especifica o recupera el color de resaltado que indica el elemento que se está reproduciendo actualmente en la lista de reproducción.
 ms.assetid: 8a0ab446-a659-44c6-a1ed-a2fc2c616cdd
 keywords:
-- Windows Media Player de lista de reproducción. itemPlayingColor
+- PLAYLIST.itemPlayingColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0a47c4fdb69fb07aa4686b567c676fe35b499374
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650156"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243164"
 ---
-# <a name="playlistitemplayingcolor"></a>Lista de reproducción. itemPlayingColor
+# <a name="playlistitemplayingcolor"></a>PLAYLIST.itemPlayingColor
 
-El atributo **itemPlayingColor** especifica o recupera el color de resaltado que indica el elemento que se está reproduciendo actualmente en la lista de reproducción.
+El **atributo itemPlayingColor** especifica o recupera el color de resaltado que indica el elemento que se está reproduciendo actualmente en la lista de reproducción.
 
 ``` syntax
         elementID.itemPlayingColor
@@ -29,7 +29,7 @@ El atributo **itemPlayingColor** especifica o recupera el color de resaltado que
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene cualquier valor de color de Microsoft Internet Explorer. Tiene un valor predeterminado de " \# 00FF00".
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft. Tiene un valor predeterminado de \# "00FF00".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Este atributo es una **cadena** de lectura/escritura que contiene cualquier valo
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 

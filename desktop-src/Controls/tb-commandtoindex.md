@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea21f7436745ff3b6a8d69df4c2be43e59fc82e8e4e934302cddb71c9d342e43
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0257f55e01db59f1d23d59583f1ef78f44b1dac1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118670398"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166885"
 ---
 # <a name="tb_commandtoindex-message"></a>Mensaje \_ COMMANDTOINDEX de TB
 
@@ -41,7 +41,7 @@ Identificador de comando asociado al botón.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el índice de base cero del botón o -1 si el identificador de comando especificado no es válido.
+Devuelve el índice de base cero para el botón o -1 si el identificador de comando especificado no es válido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Devuelve el índice de base cero del botón o -1 si el identificador de comando 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

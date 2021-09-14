@@ -5,11 +5,11 @@ ms.assetid: 77923055-9d00-4528-bda7-b602a26b577f
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: eb8e1b4119754d524bccfbe4153e12783d9bd38d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467092"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167018"
 ---
 # <a name="status-bar"></a>Barra de estado
 
@@ -34,7 +34,7 @@ Esta sección contiene información sobre los elementos de programación utiliza
 
 | Tema | Contenido | 
 |-------|----------|
-| <a href="/windows/desktop/api/Commctrl/nf-commctrl-createstatuswindowa"><strong>CreateStatusWindow</strong></a> | Crea una ventana de estado, que normalmente se usa para mostrar el estado de una aplicación. Por lo general, la ventana aparece en la parte inferior de la ventana primaria y contiene el texto especificado.<blockquote>[!Note]<br />Esta función está obsoleta. Use <a href="/windows/desktop/api/winuser/nf-winuser-createwindowa"><strong>CreateWindow en</strong></a> su lugar.</blockquote><br /><br /> | 
+| <a href="/windows/desktop/api/Commctrl/nf-commctrl-createstatuswindowa"><strong>CreateStatusWindow</strong></a> | Crea una ventana de estado, que normalmente se usa para mostrar el estado de una aplicación. La ventana suele aparecer en la parte inferior de la ventana primaria y contiene el texto especificado.<blockquote>[!Note]<br />Esta función está obsoleta. Use <a href="/windows/desktop/api/winuser/nf-winuser-createwindowa"><strong>CreateWindow en</strong></a> su lugar.</blockquote><br /><br /> | 
 | <a href="/windows/desktop/api/Commctrl/nf-commctrl-drawstatustexta"><strong>DrawStatusText</strong></a> | La <a href="/windows/desktop/api/Commctrl/nf-commctrl-drawstatustexta"><strong>función DrawStatusText</strong></a> dibuja el texto especificado en el estilo de una ventana de estado con bordes.<br /> | 
 | <a href="/windows/desktop/api/Commctrl/nf-commctrl-menuhelp"><strong>MenuHelp</strong></a> | Procesa <a href="/windows/desktop/menurc/wm-menuselect"><strong>WM_MENUSELECT</strong></a> y <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> y muestra el texto de ayuda sobre el menú actual en la ventana de estado especificada.<br /> | 
 
@@ -43,7 +43,7 @@ Esta sección contiene información sobre los elementos de programación utiliza
 
  
 
-### <a name="messages"></a>Mensajes
+### <a name="messages"></a>error de Hadoop
 
 
 

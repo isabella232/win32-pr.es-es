@@ -1,5 +1,5 @@
 ---
-title: NM_RDBLCLK (vista de árbol) (Commctrl.h)
+title: NM_RDBLCLK de notificación (vista de árbol) (Commctrl.h)
 description: Notifica al elemento primario de un control de vista de árbol que el usuario ha hecho doble clic en el botón derecho del mouse dentro del control. Esta notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: eb1ae167-32cb-45d6-92e6-7bf5f7e46c2a
 keywords:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4da45d7ac3363a5dc362ef6d34255531f71ce780075e8106fb9579126298a1e5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7ef5b4f1dbaf1031c995028028cc0b44e544f5f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119826075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167909"
 ---
 # <a name="nm_rdblclk-tree-view-notification-code"></a>Código \_ de notificación DE NM RDBLCLK (vista de árbol)
 
@@ -57,7 +57,7 @@ Devuelve un valor distinto de cero para evitar el procesamiento predeterminado o
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

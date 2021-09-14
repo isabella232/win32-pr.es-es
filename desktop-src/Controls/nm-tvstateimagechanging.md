@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a57da81dbcccf4dcfbb896417e15c8788bb8d3f6baba71a57a6a99f053a3ba45
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aebf628eb9387acd4fd10f100f2f80570d1b021b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119433685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167813"
 ---
-# <a name="nm_tvstateimagechanging-notification-code"></a>Código \_ de notificación DE NM TVSTATEIMAGECHANGING
+# <a name="nm_tvstateimagechanging-notification-code"></a>Código \_ de notificación NM TVSTATEIMAGECHANGING
 
 Enviado por un control de vista de árbol a su ventana primaria que cambia la imagen de estado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -57,7 +57,7 @@ El control omite el valor devuelto.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

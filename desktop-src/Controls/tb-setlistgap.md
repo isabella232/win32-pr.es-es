@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6192a002fcc2aec52c6c294b9eaad3fc55af3bfa3d01a092ae44f5c6d4087559
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 224a709b7beefcfdf49ea7838f905977487aca8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078179"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166590"
 ---
-# <a name="tb_setlistgap-message"></a>Mensaje \_ SETLISTGAP de TB
+# <a name="tb_setlistgap-message"></a>Mensaje \_ DE TB SETLISTGAP
 
 Establece la distancia entre los botones de la barra de herramientas de una barra de herramientas específica.
 
@@ -47,9 +47,9 @@ ignorado.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La diferencia entre los botones solo se aplica a la ventana de control de la barra de herramientas que recibe este mensaje. La recepción de este mensaje desencadena un repintado de la barra de herramientas, si la barra de herramientas está visible actualmente.
+La separación entre botones solo se aplica a la ventana de control de la barra de herramientas que recibe este mensaje. La recepción de este mensaje desencadena un repintado de la barra de herramientas, si la barra de herramientas está visible actualmente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ La diferencia entre los botones solo se aplica a la ventana de control de la bar
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

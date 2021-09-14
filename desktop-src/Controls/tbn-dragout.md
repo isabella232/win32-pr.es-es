@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad707fa357a487e271bbe03039745b97521542a1305f9745a71a56044060c950
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 54fa61ef183b56b882c6ecdcb9d0d59edbf13e80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077949"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166378"
 ---
 # <a name="tbn_dragout-notification-code"></a>Código de notificación DRAGOUT de TBN \_
 
@@ -49,7 +49,7 @@ Puntero a una [**estructura NMTOOLBAR**](/windows/win32/api/commctrl/ns-commctrl
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este código de notificación permite a una aplicación implementar la funcionalidad de arrastrar y colocar para los botones de la barra de herramientas. Al procesar este código de notificación, la aplicación iniciará la operación de arrastrar y colocar.
 
@@ -57,11 +57,11 @@ Este código de notificación permite a una aplicación implementar la funcional
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

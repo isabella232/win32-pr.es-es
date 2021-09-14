@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34093db3899205249fce934335e7aefa6393bc5bc588c8e797400e9359d9c54e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3028b119eb7f84a66caf0b6978382cee569b4a21
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117829666"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166774"
 ---
-# <a name="tb_getpressedimagelist-message"></a>Mensaje \_ DE TB GETPRESSEDIMAGELIST
+# <a name="tb_getpressedimagelist-message"></a>Mensaje \_ GETPRESSEDIMAGELIST de TB
 
 Obtiene la lista de imágenes que usa un control de barra de herramientas para mostrar los botones en estado presionado.
 
@@ -51,11 +51,11 @@ Devuelve el identificador a la lista de imágenes o **NULL si** no se establece 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

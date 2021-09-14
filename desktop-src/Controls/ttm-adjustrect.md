@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bba5a6719bcbd820d94b6d736a12644f8b2539cc81064f942616c62bce55823f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: af89374161d5e3f9d9ab6affc2b3b498a39cbf68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119769535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165945"
 ---
 # <a name="ttm_adjustrect-message"></a>Mensaje \_ ADJUSTRECT de TTM
 
@@ -47,7 +47,7 @@ Valor que especifica la operación que se va a realizar. Si **es TRUE,** *lParam
 
 Devuelve un valor distinto de cero si el rectángulo se ajusta correctamente y devuelve cero si se produce un error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje es especialmente útil cuando se desea usar un control de información sobre herramientas para mostrar el texto completo de una cadena que normalmente se trunca. Se usa normalmente con controles listview y treeview. Normalmente, este mensaje se envía en respuesta a un código de notificación SHOW de [TTN \_ ](ttn-show.md) para que pueda colocar correctamente el control de información sobre herramientas.
 
@@ -84,7 +84,7 @@ if (MyStringIsTruncated) {
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

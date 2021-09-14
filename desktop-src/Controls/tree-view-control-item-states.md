@@ -21,12 +21,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5adb0371e3796c5d512ff3582a5c65850dc6cf8261f138934d46640aa57bf28
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ef4a19306855b7f38d03aa00323b26407f108bfe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120045965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165970"
 ---
 # <a name="tree-view-control-item-states"></a>Tree-View de elementos de control
 
@@ -49,7 +49,7 @@ En esta sección se enumeran las marcas de estado de elemento utilizadas para in
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al establecer o recuperar el índice de imagen superpuesta o el índice de imagen de estado de un elemento, debe especificar las siguientes máscaras en el miembro **stateMask** de la [**estructura TVITEM:**](/windows/win32/api/commctrl/ns-commctrl-tvitema)
 

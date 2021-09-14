@@ -1,6 +1,6 @@
 ---
 title: RB_GETUNICODEFORMAT mensaje (Commctrl.h)
-description: 'RB_GETUNICODEFORMAT mensaje: recupera la marca de formato de caracteres Unicode para el control .'
+description: 'RB_GETUNICODEFORMAT mensaje: recupera la marca de formato de caracteres Unicode para el control.'
 ms.assetid: 48a4472b-dda4-41a2-b5bc-6f74b1cdc70b
 keywords:
 - RB_GETUNICODEFORMAT controles de Windows mensaje
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe1fd66ce5a6c4052543ee925011057e592375fa64b2841147e7bf97831a2302
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45e1a4546c9c33e87943d305c85939ab280fa122
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118409409"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167330"
 ---
 # <a name="rb_getunicodeformat-message"></a>Mensaje \_ GETUNICODEFORMAT de RB
 
@@ -39,7 +39,7 @@ Recupera la marca de formato de caracteres Unicode para el control .
 
 Devuelve la marca de formato Unicode del control. Si este valor es distinto de cero, el control usa caracteres Unicode. Si este valor es cero, el control usa caracteres ANSI.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Consulte los comentarios de [**CCM \_ GETUNICODEFORMAT para**](ccm-getunicodeformat.md) obtener una explicación de este mensaje.
 
@@ -47,15 +47,15 @@ Consulte los comentarios de [**CCM \_ GETUNICODEFORMAT para**](ccm-getunicodefor
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

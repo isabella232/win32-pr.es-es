@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 743eda08070769c9fd603efc878e27672cc4bdfabac5af71c07566f710660818
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8140eef4aa09e9dd19d8baaf8193a836b105482e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119985445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167482"
 ---
 # <a name="psm_setheadertitle-message"></a>Mensaje \_ SETHEADERTITLE de PSM
 
@@ -49,7 +49,7 @@ Nuevo subtítulo de encabezado.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si especifica la página actual, se volverá a dibujar inmediatamente para mostrar el nuevo título.
 
@@ -61,7 +61,7 @@ Si especifica la página actual, se volverá a dibujar inmediatamente para mostr
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **PSM \_ SETHEADERTITLEW** (Unicode) y **PSM \_ SETHEADERTITLEA** (ANSI)<br/>  |
 
 

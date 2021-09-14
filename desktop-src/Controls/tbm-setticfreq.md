@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7c1b3e029abc8027d8708da31698f44db85ec78e427ba9461f0a71a740fb05a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b68a555a7803e663fa1708fc02214deecbb05aad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166410"
 ---
 # <a name="tbm_setticfreq-message"></a>Mensaje \_ TBM SETTICFREQ
 
@@ -43,7 +43,7 @@ Frecuencia de las marcas de graduación.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La barra de seguimiento debe tener el [**estilo \_ TBS AUTOTICKS**](trackbar-control-styles.md) para usar este mensaje.
 
@@ -51,11 +51,11 @@ La barra de seguimiento debe tener el [**estilo \_ TBS AUTOTICKS**](trackbar-con
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

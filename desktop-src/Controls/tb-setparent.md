@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd97cdab230317feea65f2bffce74a7dec34ee336d69bb46ec4c6963ca9b3eff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8137406c8e6854f86ed81d8d6b96293074ae67b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078149"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166574"
 ---
 # <a name="tb_setparent-message"></a>Mensaje \_ SETPARENT de TB
 
@@ -32,7 +32,7 @@ Establece la ventana a la que el control de barra de herramientas envía mensaje
 *wParam* 
 </dt> <dd>
 
-Identificador en la ventana para recibir mensajes de notificación.
+Controlar en la ventana para recibir mensajes de notificación.
 
 </dd> <dt>
 
@@ -43,19 +43,19 @@ Identificador en la ventana para recibir mensajes de notificación.
 
 El valor devuelto es un identificador de la ventana de notificación anterior o **NULL** si no hay ninguna ventana de notificación anterior.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **mensaje \_ SETPARENT de TB** no cambia la ventana primaria que se especificó cuando se creó el control. Llamar a [**la función GetParent**](/windows/desktop/api/winuser/nf-winuser-getparent) para un control de barra de herramientas devolverá la ventana primaria real, no la ventana especificada en **TB \_ SETPARENT**. Para cambiar la ventana primaria del control, llame a la [**función SetParent.**](/windows/desktop/api/winuser/nf-winuser-setparent)
+El **mensaje \_ SETPARENT de TB** no cambia la ventana primaria que se especificó cuando se creó el control. Al llamar [**a la función GetParent**](/windows/desktop/api/winuser/nf-winuser-getparent) para un control de barra de herramientas, se devolverá la ventana primaria real, no la ventana especificada en **TB \_ SETPARENT**. Para cambiar la ventana primaria del control, llame a la [**función SetParent.**](/windows/desktop/api/winuser/nf-winuser-setparent)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

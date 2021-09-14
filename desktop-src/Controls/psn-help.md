@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f03dc1e016780494c8c5ca35e62baf2570af04ee77daf21f404d7371e9df168
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fa60e039211e4c8e63a831ae547c3db116ede3f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119588205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167449"
 ---
-# <a name="psn_help-notification-code"></a>Código de notificación DE AYUDA de PSN \_
+# <a name="psn_help-notification-code"></a>Código de notificación \_ de PSN HELP
 
 Notifica a una página que el usuario ha hecho clic en el botón Ayuda. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -49,12 +49,12 @@ Puntero a una [**estructura PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-psh
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación debe mostrar la información de ayuda de la página.
 
 > [!Note]  
-> Este código de notificación no se admite cuando se usa el estilo del asistente de Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).
+> Este código de notificación no se admite cuando se usa el estilo del asistente de Aero [**(PSH \_ AEROWIZARD).**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)
 
  
 
@@ -66,7 +66,7 @@ Una aplicación debe mostrar la información de ayuda de la página.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

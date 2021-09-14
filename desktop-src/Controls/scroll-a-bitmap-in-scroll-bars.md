@@ -4,18 +4,18 @@ description: En esta sección se describen los cambios que puede realizar en el 
 ms.assetid: FA6FEA49-25EB-4C18-AD07-74BD77501906
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 084d8fff259326c4eb73838f1f6e2b650aab40d54882633a76e2fbf120a1ae89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a01a93fbb005b75d7cd860bc8545c4e77a80767
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118005288"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167046"
 ---
 # <a name="how-to-scroll-a-bitmap"></a>Desplazamiento de un mapa de bits
 
 En esta sección se describen los cambios que puede realizar en el procedimiento de ventana principal de una aplicación para permitir al usuario desplazarse por un mapa de bits.
 
-El ejemplo incluye un elemento de menú que copia el contenido de la pantalla en un mapa de bits y muestra el mapa de bits en el área de cliente. El ejemplo también procesa los mensajes [**\_ WM HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) generados por las barras de desplazamiento para que el usuario pueda desplazar el mapa de bits horizontal y verticalmente. A diferencia del ejemplo de texto de desplazamiento, el ejemplo de mapa de bits emplea la [**función BitBlt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt) para dibujar la parte no válida del área de cliente.
+El ejemplo incluye un elemento de menú que copia el contenido de la pantalla en un mapa de bits y muestra el mapa de bits en el área de cliente. El ejemplo también procesa los mensajes [**\_ WM HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) generados por las barras de desplazamiento para que el usuario pueda desplazar el mapa de bits horizontal y verticalmente. A diferencia del ejemplo de texto de desplazamiento, el ejemplo de mapa de bits emplea la función [**BitBlt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt) para dibujar la parte no válida del área de cliente.
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -28,7 +28,7 @@ El ejemplo incluye un elemento de menú que copia el contenido de la pantalla en
 -   C/C++
 -   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Instrucciones
 
 ### <a name="processing-the-wm_create-message"></a>Procesamiento del mensaje \_ WM CREATE
 
@@ -36,7 +36,7 @@ Cuando se procesa el mensaje [**\_ WM CREATE,**](/windows/desktop/winmsg/wm-crea
 
 Se recupera la información específica del dispositivo sobre el dispositivo de visualización. Si se crea un controlador de dominio compatible para la pantalla, como en el ejemplo, use la [**función GetDeviceCaps**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) para obtener esta información. La información incluye el número de bits de color adyacentes por píxel, el número de planos de color y el alto y ancho del controlador de dominio.
 
-### <a name="processing-the-wm_size-message"></a>Procesamiento del mensaje WM \_ SIZE
+### <a name="processing-the-wm_size-message"></a>Procesamiento del mensaje \_ WM SIZE
 
 El procesamiento del [**mensaje WM \_ SIZE**](/windows/desktop/winmsg/wm-size) requiere ajustar el intervalo de desplazamiento y la posición, para que refleje las dimensiones del área de cliente y el mapa de bits que se mostrarán.
 

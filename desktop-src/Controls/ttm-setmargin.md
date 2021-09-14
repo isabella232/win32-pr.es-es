@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04e5792b33f7f9f5a997759ba390c1b8a713308f95c4ba3f7b5cd0460747ff62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ed46bf40833a3046d15386782897eb6b573b29c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119914065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165865"
 ---
 # <a name="ttm_setmargin-message"></a>Mensaje \_ SETMARGIN de TTM
 
@@ -44,7 +44,7 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que c
 | <span id="top"></span><span id="TOP"></span><dl> <dt>**top**</dt> </dl>          | Distancia entre el borde superior y la parte superior del texto de la información sobre herramientas, en píxeles.<br/>         |
 | <span id="left"></span><span id="LEFT"></span><dl> <dt>**Izquierda**</dt> </dl>       | Distancia entre el borde izquierdo y el extremo izquierdo del texto de la información sobre herramientas, en píxeles.<br/>   |
 | <span id="bottom"></span><span id="BOTTOM"></span><dl> <dt>**Parte inferior**</dt> </dl> | Distancia entre el borde inferior y la parte inferior del texto de la información sobre herramientas, en píxeles.<br/>   |
-| <span id="right"></span><span id="RIGHT"></span><dl> <dt>**Correcto**</dt> </dl>    | Distancia entre el borde derecho y el extremo derecho del texto de la información sobre herramientas, en píxeles.<br/> |
+| <span id="right"></span><span id="RIGHT"></span><dl> <dt>**Correcto**</dt> </dl>    | Distancia entre el borde derecho y el extremo derecho del texto de información sobre herramientas, en píxeles.<br/> |
 
 
 
@@ -56,9 +56,9 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que c
 
 No se usa el valor devuelto para este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este mensaje no tiene ningún efecto cuando la aplicación se ejecuta en Windows vista y los estilos visuales están habilitados para la información sobre herramientas. Puede deshabilitar los estilos visuales de la información sobre herramientas mediante [**SetWindowTheme**](/windows/desktop/api/Uxtheme/nf-uxtheme-setwindowtheme).
+Este mensaje no tiene ningún efecto cuando la aplicación se ejecuta en Windows Vista y los estilos visuales están habilitados para la información sobre herramientas. Puede deshabilitar los estilos visuales para la información sobre herramientas mediante [**SetWindowTheme**](/windows/desktop/api/Uxtheme/nf-uxtheme-setwindowtheme).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Este mensaje no tiene ningún efecto cuando la aplicación se ejecuta en Windows
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Este mensaje no tiene ningún efecto cuando la aplicación se ejecuta en Windows
 
 <dl> <dt>
 
-[**GETMARGIN DE TTM \_**](ttm-getmargin.md)
+[**TTM \_ GETMARGIN**](ttm-getmargin.md)
 </dt> </dl>
 
  

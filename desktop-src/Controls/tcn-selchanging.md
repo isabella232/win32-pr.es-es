@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75fbf92139a43b19d41fce0fd607932531fef7e23556330b9bda376945a21080
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a6ba7dcf25d243d9b42876425564fba0e01c803f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120104675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166169"
 ---
-# <a name="tcn_selchanging-notification-code"></a>Código de notificación DE TCN \_ SELCHANGING
+# <a name="tcn_selchanging-notification-code"></a>Código de notificación \_ DE TCN SELCHANGING
 
 Notifica a la ventana primaria de un control de pestaña que la pestaña seleccionada actualmente está a punto de cambiar. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -47,11 +47,11 @@ Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-n
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** para evitar que cambie la selección o **FALSE** para permitir que cambie la selección.
+Devuelve **TRUE** para evitar que cambie la selección o **FALSE** para permitir que la selección cambie.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para determinar la pestaña seleccionada actualmente, use la [**macro TabCtrl \_ GetCurSel.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel)
+Para determinar la pestaña seleccionada actualmente, use la [**macro \_ TabCtrl GetCurSel.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Para determinar la pestaña seleccionada actualmente, use la [**macro TabCtrl \_
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

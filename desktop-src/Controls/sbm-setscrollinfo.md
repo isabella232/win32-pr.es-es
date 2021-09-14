@@ -1,6 +1,6 @@
 ---
 title: SBM_SETSCROLLINFO mensaje (Winuser.h)
-description: El mensaje SETCROLLINFO de SBM \_ se envía para establecer los parámetros de una barra de desplazamiento.
+description: El mensaje \_ SBM SETSCROLLINFO se envía para establecer los parámetros de una barra de desplazamiento.
 ms.assetid: e0e42a81-67be-4d40-88c8-77398b068617
 keywords:
 - SBM_SETSCROLLINFO controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5622371abb86301e1450c9fa0d6864e8db76c9837fca48fe8bcf11cb884f6b5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e98abbca2d53d4b104caea22954472a17dfd5c1c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119914295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167065"
 ---
-# <a name="sbm_setscrollinfo-message"></a>Mensaje \_ SETCROLLINFO de SBM
+# <a name="sbm_setscrollinfo-message"></a>Mensaje SBM \_ SETSCROLLINFO
 
-El **mensaje \_ SETCROLLINFO** de SBM se envía para establecer los parámetros de una barra de desplazamiento.
+El **mensaje \_ SBM SETSCROLLINFO** se envía para establecer los parámetros de una barra de desplazamiento.
 
 Las aplicaciones no deben enviar este mensaje directamente. En su lugar, deben usar la [**función SetScrollInfo.**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) Una ventana recibe este mensaje a través de su [*función WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) Las aplicaciones que implementan un control de barra de desplazamiento personalizado deben responder a estos mensajes para que la **función SetScrollInfo** funcione correctamente.
 
@@ -34,7 +34,7 @@ Las aplicaciones no deben enviar este mensaje directamente. En su lugar, deben u
 *wParam* 
 </dt> <dd>
 
-Especifica si la barra de desplazamiento se vuelve a dibujar para reflejar la nueva posición del cuadro de desplazamiento. Si este parámetro es **TRUE**, se vuelve a dibujar la barra de desplazamiento. Si es **FALSE,** la barra de desplazamiento no se vuelve a dibujar.
+Especifica si se vuelve a dibujar la barra de desplazamiento para reflejar la nueva posición del cuadro de desplazamiento. Si este parámetro es **TRUE,** se vuelve a dibujar la barra de desplazamiento. Si es **FALSE,** la barra de desplazamiento no se vuelve a dibujar.
 
 </dd> <dt>
 
@@ -50,9 +50,9 @@ El **miembro fMask** puede ser uno o varios de los valores siguientes.
 | Value                                                                                                                                                                           | Significado                                                                                                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | <span id="SIF_DISABLENOSCROLL"></span><span id="sif_disablenoscroll"></span><dl> <dt>**SIF \_ DISABLENOSCROLL**</dt> </dl> | Deshabilita la barra de desplazamiento en lugar de quitarla, si los nuevos parámetros de la barra de desplazamiento hacen que la barra de desplazamiento sea innecesaria.<br/> |
-| <span id="SIF_PAGE"></span><span id="sif_page"></span><dl> <dt>**PÁGINA \_ SIF**</dt> </dl>                                  | Establece la página de desplazamiento en el valor especificado en el **miembro nPage.**<br/>                                                |
+| <span id="SIF_PAGE"></span><span id="sif_page"></span><dl> <dt>**PÁGINA DE \_ SIF**</dt> </dl>                                  | Establece la página de desplazamiento en el valor especificado en el **miembro nPage.**<br/>                                                |
 | <span id="SIF_POS"></span><span id="sif_pos"></span><dl> <dt>**SIF \_ POS**</dt> </dl>                                     | Establece la posición de desplazamiento en el valor especificado en el **miembro nPos.** <br/>                                            |
-| <span id="SIF_RANGE"></span><span id="sif_range"></span><dl> <dt>**INTERVALO DE \_ SIF**</dt> </dl>                               | Establece el intervalo de desplazamiento en el valor especificado en los **miembros nMin** **y nMax.** <br/>                                 |
+| <span id="SIF_RANGE"></span><span id="sif_range"></span><dl> <dt>**INTERVALO \_ DE SIF**</dt> </dl>                               | Establece el intervalo de desplazamiento en el valor especificado en los **miembros nMin** y **nMax.** <br/>                                 |
 
 
 
@@ -64,9 +64,9 @@ El **miembro fMask** puede ser uno o varios de los valores siguientes.
 
 El valor devuelto es la posición actual del cuadro de desplazamiento.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los mensajes que indican la posición de la barra de desplazamiento, [**WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md), proporcionan solo 16 bits de datos de posición. Sin embargo, la estructura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) usada por [**SBM \_ GETSCROLLINFO,**](sbm-getscrollinfo.md) **SBM \_ SETSCROLLINFO,** [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)y [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) proporciona 32 bits de datos de posición de la barra de desplazamiento. Puede usar estos mensajes y funciones al procesar los mensajes **WM \_ HSCROLL** o **WM \_ VSCROLL** para obtener datos de posición de la barra de desplazamiento de 32 bits.
+Los mensajes que indican la posición de la barra de desplazamiento, [**WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL,**](wm-vscroll.md)proporcionan solo 16 bits de datos de posición. Sin embargo, la estructura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) utilizada por [**SBM \_ GETSCROLLINFO,**](sbm-getscrollinfo.md) **SBM \_ SETSCROLLINFO,** [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)y [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) proporciona 32 bits de datos de posición de la barra de desplazamiento. Puede usar estos mensajes y funciones al procesar los mensajes **\_ WM HSCROLL** o **WM \_ VSCROLL** para obtener datos de posición de la barra de desplazamiento de 32 bits.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Los mensajes que indican la posición de la barra de desplazamiento, [**WM \_ HS
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

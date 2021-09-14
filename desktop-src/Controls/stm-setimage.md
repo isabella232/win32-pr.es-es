@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d48cc8aeb5e28ac67a6bbe25636be1a2f6f9b89f225568be02e517e1ad04dc55
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27c4f9c216d2e987727a1e2fa9bc6de12a823d52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078459"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166993"
 ---
 # <a name="stm_setimage-message"></a>Mensaje \_ setimage de STM
 
-Una aplicación envía un **mensaje \_ SETIMAGE de STM** para asociar una nueva imagen a un control estático.
+Una aplicación envía un mensaje **\_ SETIMAGE de STM** para asociar una nueva imagen a un control estático.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -36,7 +36,7 @@ Especifica el tipo de imagen que se asociará al control estático. Este paráme
 
 
 
-| Valor                                                                                                                                                                     | Significado                       |
+| Value                                                                                                                                                                     | Significado                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
 | <span id="IMAGE_BITMAP"></span><span id="image_bitmap"></span><dl> <dt>**IMAGEN DE \_ MAPA DE BITS**</dt> </dl>                | Bits.<br/>            |
 | <span id="IMAGE_CURSOR"></span><span id="image_cursor"></span><dl> <dt>**IMAGE \_ CURSOR**</dt> </dl>                | Cursor.<br/>            |
@@ -60,7 +60,7 @@ Identificador de la imagen que se asociará al control estático.
 
 El valor devuelto es un identificador de la imagen asociada previamente al control estático, si existe; de lo contrario, es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para asociar una imagen a un control estático, el control debe tener el estilo adecuado. En la tabla siguiente se muestra el estilo necesario para cada tipo de imagen.
 
@@ -89,11 +89,11 @@ Para asociar una imagen a un control estático, el control debe tener el estilo 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

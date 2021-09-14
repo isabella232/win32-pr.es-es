@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ff80191ebed8929a3d7b5079f1bf381ae9ad82ad82c2c177d8f7366e8734dc0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eb12126ae0a2b9187a941ccc1aff53186a0cda7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119877155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167517"
 ---
 # <a name="psm_restartwindows-message"></a>MENSAJE \_ DE REINICIO DE PSMWINDOWS
 
@@ -47,7 +47,7 @@ Debe ser cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación debe enviar este mensaje solo en respuesta al código de notificación [PSN \_ APPLY](psn-apply.md) o [PSN \_ KILLACTIVE.](psn-killactive.md) Puede enviar el mensaje **PSM \_ RESTARTWINDOWS** explícitamente o mediante la [**macro PropSheet \_ RestartWindows.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_restartwindows)
 
@@ -66,7 +66,7 @@ Este mensaje hace que la función [**PropertySheet**](/windows/desktop/api/Prsht
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

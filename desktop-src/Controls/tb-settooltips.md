@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a75827df49eeaf8b6175cd14180ebb26ddbb642588ee77d625c701eee457baaf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 781565658d2c362ca32e36736d6e2d80c3641514
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120061235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166557"
 ---
 # <a name="tb_settooltips-message"></a>Mensaje \_ SETTOOLTIPS de TB
 
@@ -43,7 +43,7 @@ Identificador del control de información sobre herramientas.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los botones agregados a una barra de herramientas antes de enviar el **mensaje \_ SETTOOLTIPS** de TB no se registrarán con el control de información sobre herramientas.
 
@@ -55,7 +55,7 @@ Los botones agregados a una barra de herramientas antes de enviar el **mensaje \
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

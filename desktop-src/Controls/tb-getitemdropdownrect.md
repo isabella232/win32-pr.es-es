@@ -1,6 +1,6 @@
 ---
 title: TB_GETITEMDROPDOWNRECT mensaje (Commctrl.h)
-description: Obtiene el rectángulo delimitador de la ventana desplegable de un elemento de la barra de herramientas con el estilo BTNS \_ DROPDOWN.
+description: Obtiene el rectángulo delimitador de la ventana desplegable para un elemento de la barra de herramientas con el estilo BTNS \_ DROPDOWN.
 ms.assetid: 4b59c96b-8d75-44c1-b771-c1d62502a2c2
 keywords:
 - TB_GETITEMDROPDOWNRECT controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ecd2dfc8a48ff735bfb8bcc99bc0baf36555eee9d995c3f453a95ea2910948a6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dbcbcef725b0ade0bfc776200fa5b191618d2ccb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166798"
 ---
-# <a name="tb_getitemdropdownrect-message"></a>Mensaje \_ GETITEMDROPDOWNRECT de TB
+# <a name="tb_getitemdropdownrect-message"></a>Mensaje \_ DE TB GETITEMDROPDOWNRECT
 
-Obtiene el rectángulo delimitador de la ventana desplegable de un elemento de la barra de herramientas con el estilo [**\_ BTNS DROPDOWN**](toolbar-control-and-button-styles.md).
+Obtiene el rectángulo delimitador de la ventana desplegable para un elemento de la barra de herramientas con el estilo [**BTNS \_ DROPDOWN**](toolbar-control-and-button-styles.md).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Obtiene el rectángulo delimitador de la ventana desplegable de un elemento de l
 *wParam* \[ En\]
 </dt> <dd>
 
-Índice de base cero del elemento de control de barra de herramientas para el que se va a recuperar el rectángulo delimitador.
+Índice de base cero del elemento de control de la barra de herramientas para el que se va a recuperar el rectángulo delimitador.
 
 </dd> <dt>
 
@@ -43,7 +43,7 @@ Obtiene el rectángulo delimitador de la ventana desplegable de un elemento de l
 
 Siempre devuelve un valor distinto de cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El elemento debe tener el [**estilo \_ DESPLEGABLE BTNS.**](toolbar-control-and-button-styles.md)
 
@@ -55,7 +55,7 @@ El elemento debe tener el [**estilo \_ DESPLEGABLE BTNS.**](toolbar-control-and-
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

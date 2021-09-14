@@ -1,6 +1,6 @@
 ---
-title: NM_SETCURSOR de notificación (vista de árbol) (Commctrl.h)
-description: Notifica a la ventana primaria de un control de vista de árbol que el control está estableciendo el cursor en respuesta a un mensaje \_ SETCURSOR de WM. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
+title: NM_SETCURSOR (vista de árbol) (Commctrl.h)
+description: Notifica a la ventana primaria de un control de vista de árbol que el control establece el cursor en respuesta a un mensaje \_ SETCURSOR de WM. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 2b2f2e90-edef-484d-b67a-12983a1cde29
 keywords:
 - NM_SETCURSOR (vista de árbol) código de notificación Windows controles
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7791ff62fa9ed097052ebd38dae0000d7165519133527044e9716bb7e39c655
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b40b733e32c72abc9620e0fd18a6ef554aee9214
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118410462"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167850"
 ---
 # <a name="nm_setcursor-tree-view-notification-code"></a>Código de notificación de NM \_ SETCURSOR (vista de árbol)
 
-Notifica a la ventana primaria de un control de vista de árbol que el control está estableciendo el cursor en respuesta a un [**mensaje \_ SETCURSOR**](/windows/desktop/menurc/wm-setcursor) de WM. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
+Notifica a la ventana primaria de un control de vista de árbol que el control establece el cursor en respuesta a un [**mensaje \_ SETCURSOR**](/windows/desktop/menurc/wm-setcursor) de WM. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -53,11 +53,11 @@ Devuelve cero para permitir que el control establezca el cursor o distinto de ce
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

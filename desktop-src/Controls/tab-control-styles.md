@@ -31,12 +31,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec4dfdcfb17b2f4a8ffebd4a7cfba5042e19ba2b566d4b03635032438a2f7fee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 352864fe71b5efc39529109bafb3bdc49cee68e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078419"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166929"
 ---
 # <a name="tab-control-styles"></a>Estilos de control de pestaña
 
@@ -52,7 +52,7 @@ En esta sección se enumeran los estilos de control de pestaña admitidos.
 | <span id="TCS_FLATBUTTONS"></span><span id="tcs_flatbuttons"></span><dl> <dt>**TCS \_ FLATBUTTONS**</dt> </dl>                   | [Versión 4.71.](common-control-versions.md) Las pestañas seleccionadas aparecen como con sangría en segundo plano, mientras que otras pestañas aparecen en el mismo plano que el fondo. Este estilo solo afecta a los controles de tabulación con el estilo TCS \_ BUTTONS.<br/>                                                                                                     |
 | <span id="TCS_FOCUSNEVER"></span><span id="tcs_focusnever"></span><dl> <dt>**TCS \_ FOCUSNEVER**</dt> </dl>                      | El control de pestaña no recibe el foco de entrada cuando se hace clic en él.<br/>                                                                                                                                                                                                                                                                                      |
 | <span id="TCS_FOCUSONBUTTONDOWN"></span><span id="tcs_focusonbuttondown"></span><dl> <dt>**TCS \_ FOCUSONBUTTONDOWN**</dt> </dl> | El control de pestaña recibe el foco de entrada cuando se hace clic en él.<br/>                                                                                                                                                                                                                                                                                              |
-| <span id="TCS_FORCEICONLEFT"></span><span id="tcs_forceiconleft"></span><dl> <dt>**TCS \_ FORCEICONLEFT**</dt> </dl>             | Los iconos se alinean con el borde izquierdo de cada pestaña de ancho fijo. Este estilo solo se puede usar con el \_ estilo FIXEDWIDTH de TCS.<br/>                                                                                                                                                                                                                           |
+| <span id="TCS_FORCEICONLEFT"></span><span id="tcs_forceiconleft"></span><dl> <dt>**TCS \_ FORCEICONLEFT**</dt> </dl>             | Los iconos se alinean con el borde izquierdo de cada pestaña de ancho fijo. Este estilo solo se puede usar con el estilo \_ FIXEDWIDTH de TCS.<br/>                                                                                                                                                                                                                           |
 | <span id="TCS_FORCELABELLEFT"></span><span id="tcs_forcelabelleft"></span><dl> <dt>**TCS \_ FORCELABELLEFT**</dt> </dl>          | Las etiquetas se alinean con el borde izquierdo de cada pestaña de ancho fijo; es decir, la etiqueta se muestra inmediatamente a la derecha del icono en lugar de estar centrada. Este estilo solo se puede usar con el estilo \_ FIXEDWIDTH de TCS e implica el estilo \_ FORCEICONLEFT de TCS.<br/>                                                                             |
 | <span id="TCS_HOTTRACK"></span><span id="tcs_hottrack"></span><dl> <dt>**TCS \_ HOTTRACK**</dt> </dl>                            | [Versión 4.70.](common-control-versions.md) Los elementos situados bajo el puntero se resaltan automáticamente. Puede comprobar si el seguimiento en caliente está habilitado llamando [**a SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa). <br/>                                                                                                                              |
 | <span id="TCS_MULTILINE"></span><span id="tcs_multiline"></span><dl> <dt>**TCS \_ MULTILINE**</dt> </dl>                         | Si es necesario, se muestran varias filas de pestañas, por lo que todas las pestañas están visibles a la vez.<br/>                                                                                                                                                                                                                                                                 |
@@ -69,7 +69,7 @@ En esta sección se enumeran los estilos de control de pestaña admitidos.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los estilos siguientes se pueden modificar después de crear el control.
 

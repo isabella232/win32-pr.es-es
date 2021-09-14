@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 522d4a0ea52f4cee495e689e8f0cdc91d7362ec3a1ee37ab81a911bc980d3209
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13d8206b4e423fb01be3277a9dd0ca3a49b59129
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118410041"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167458"
 ---
 # <a name="psn_apply-notification-code"></a>Código de notificación APPLY de PSN \_
 
@@ -54,7 +54,7 @@ Establezca PSNRET NOERROR para indicar que los cambios realizados en esta págin
 
 Para establecer el valor devuelto, el procedimiento del cuadro de diálogo de la página debe llamar a la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) con el valor MSGRESULT de DWL y el procedimiento del cuadro de diálogo debe \_ devolver **TRUE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el usuario hace clic en los botones Aceptar, Aplicar o Cerrar, la hoja de propiedades envía una notificación [ \_ KILLACTIVE](psn-killactive.md) de PSN a la página activa, lo que le ofrece la oportunidad de validar los cambios del usuario. Si los cambios son válidos, la hoja de propiedades envía un código de notificación APPLY de PSN a cada página, lo que le dirige para aplicar las nuevas propiedades \_ al elemento correspondiente.
 
@@ -82,11 +82,11 @@ Para recibir este código de notificación, una página debe establecer el valor
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 
