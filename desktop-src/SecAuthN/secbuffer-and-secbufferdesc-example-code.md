@@ -4,12 +4,12 @@ ms.assetid: f8196a9c-786a-49a3-85a4-1bd5f414a653
 title: Código de ejemplo secBuffer y SecBufferDesc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b60b776dd85e29c3f91d2840849d18e48d100dada6037bff556074b1041bdb8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee7d28e885d6eec65c209caeda299b2f7e5f2ad3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118918452"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265540"
 ---
 # <a name="secbuffer-and-secbufferdesc-example-code"></a>Código de ejemplo secBuffer y SecBufferDesc
 

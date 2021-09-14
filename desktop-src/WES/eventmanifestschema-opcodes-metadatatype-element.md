@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2c0adab32e9b514ac9c90f1f54bde4b7dc3f1f8f12fbc590f16a6f48d766a167
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d21f7bafc10b7669ee446247871e110a1ca99336
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119652075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071013"
 ---
 # <a name="opcodes-metadatatype-element"></a>elemento opcodes (MetadataType)
 
@@ -30,13 +30,13 @@ Define una lista de códigos de operación que puede usar para agrupar eventos d
  />
 ```
 
-El **elemento opcodes** se define mediante el tipo [**complejo MetadataType.**](eventmanifestschema-metadatatype-complextype.md)
+El **elemento opcodes** se define mediante el [**tipo complejo MetadataType.**](eventmanifestschema-metadatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

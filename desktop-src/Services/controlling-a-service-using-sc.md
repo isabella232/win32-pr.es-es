@@ -1,21 +1,21 @@
 ---
-description: El SDK Windows contiene una utilidad de línea de comandos, Sc.exe, que se puede usar para controlar un servicio. Sus comandos corresponden a las funciones proporcionadas por el SCM. La sintaxis es la siguiente.
+description: El WINDOWS SDK contiene una utilidad de línea de comandos, Sc.exe, que se puede usar para controlar un servicio. Sus comandos corresponden a las funciones proporcionadas por el SCM. La sintaxis es la siguiente.
 ms.assetid: 7c3e5c39-ec0f-4174-9ecf-239927de3d39
 title: Controlar un servicio mediante SC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2481e0d13f19760c042d39efe4ec6094a3ef270312aeb31d2228d401d914bc1f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3c1aa991395ba2aa55bf05d63176fba59d96dce8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120126455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265071"
 ---
 # <a name="controlling-a-service-using-sc"></a>Controlar un servicio mediante SC
 
-El SDK Windows contiene una utilidad de línea de comandos, Sc.exe, que se puede usar para controlar un servicio. Sus comandos corresponden a las funciones proporcionadas por el SCM. La sintaxis es la siguiente.
+El WINDOWS SDK contiene una utilidad de línea de comandos, Sc.exe, que se puede usar para controlar un servicio. Sus comandos corresponden a las funciones proporcionadas por el SCM. La sintaxis es la siguiente.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 **sc** \[ *ServerName* \] *Comando* \[ *ServiceName* \] \[ *option1* \] \[ *option2* \] ...
 
@@ -24,7 +24,7 @@ El SDK Windows contiene una utilidad de línea de comandos, Sc.exe, que se puede
 <span id="ServerName"></span><span id="servername"></span><span id="SERVERNAME"></span>*Nombredeservidor*
 </dt> <dd>
 
-Nombre de servidor opcional. Use el formulario \\ \\ *ServerName*.
+Nombre de servidor opcional. Use el formato \\ \\ *NombreDeServidor*.
 
 </dd> <dt>
 
@@ -56,11 +56,11 @@ Parámetro opcional.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para ver la sintaxis completa de un comando, use el siguiente comando:
 
-**Comando sc** 
+**sc** *(Comando)*
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2f41e296e63f6b6d98fd39134021c2f28097d595653590a82085f944aaf7910
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3620d609db0f1786da673923f54d726b3c99994a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264692"
 ---
 # <a name="iwmpnetworkmaxbandwidth-property"></a>Propiedad IWMPNetwork::maxBandwidth
 
 La **propiedad maxBandwidth** obtiene o establece el ancho de banda máximo permitido.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public Property maxBandwidth As System.Int32
 
 **System.Int32 que** es el ancho de banda máximo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad no tiene un valor predeterminado. El valor se puede especificar mientras Reproductor de Windows Media está reproduciendo, pero el cambio no tendrá efecto hasta que se libera el elemento multimedia actual abriendo otro o llamando a **AxWindowsMediaPlayer.close.** Reproductor de Windows Media intenta lograr el mayor ancho de banda posible. No se producirá ninguna reducción intencionada del ancho de banda a menos que se establezca este valor.
 
@@ -66,7 +66,7 @@ Esta configuración es útil para reducir la cantidad de ancho de banda utilizad
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

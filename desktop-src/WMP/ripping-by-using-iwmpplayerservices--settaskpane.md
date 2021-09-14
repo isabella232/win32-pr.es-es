@@ -3,24 +3,24 @@ title: Copia desde CD mediante IWMPPlayerServices setTaskPane
 description: Copia desde CD mediante IWMPPlayerServices setTaskPane
 ms.assetid: 0d3efb0e-e8f5-40e3-abb5-6ad22009a4eb
 keywords:
-- Reproductor de Windows Media,CD al día
-- Reproductor de Windows Media modelo de objetos, desasocución de CD
-- modelo de objetos, resalte de CD
-- Reproductor de Windows Media ActiveX control de datos, desasocución de CD
-- ActiveX control, cds
-- Reproductor de Windows Media Control ActiveX dispositivos móviles, cds
+- Reproductor de Windows Media,CD
+- Reproductor de Windows Media modelo de objetos, cds
+- modelo de objetos, cds
+- Reproductor de Windows Media ActiveX control de datos, cds
+- ActiveX control de datos, cds
+- Reproductor de Windows Media Control de ActiveX dispositivos móviles,cds
 - Reproductor de Windows Media Móvil, cds
-- Interfaz setTaskPane de IWMPPlayerServices de CD
-- Interfaz setTaskPane de CDs,IWMPPlayerServices
+- Interfaz setTaskPane de CD player,IWMPPlayerServices
+- Interfaz setTaskPane de CDs e IWMPPlayerServices
 - IWMPPlayerServices setTaskPane (interfaz)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2abf53d29284b5da629598e6f23d6dcae78c69c60c23ba07f30445d5252845e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bfb1a09d67f310266ae4818bc0b594fe3b74d128
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118569838"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070886"
 ---
 # <a name="ripping-by-using-iwmpplayerservicessettaskpane"></a>Task by Using IWMPPlayerServices::setTaskPane
 
@@ -29,9 +29,9 @@ ms.locfileid: "118569838"
 
  
 
-Puede usar el control Reproductor de Windows Media serie 9 o posterior para copiar las pistas de CD en el equipo del usuario. Este proceso se denomina *algar.* Para ello, debe insertar el control Reproductor de Windows Media en modo remoto. Para obtener más información sobre el modo remoto, vea [Comunicación remota del Reproductor de Windows Media control](remoting-the-windows-media-player-control.md).
+Puede usar el control Reproductor de Windows Media serie 9 o posterior para copiar pistas de CD en el equipo del usuario. Este proceso se denomina *desasoyendo.* Para ello, debe insertar el control Reproductor de Windows Media en modo remoto. Para obtener más información sobre el modo remoto, vea [Comunicación remota Reproductor de Windows Media control](remoting-the-windows-media-player-control.md).
 
-Para iniciar el proceso de task, llame [a IWMPPlayerServices::setTaskPane](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpplayerservices-settaskpane), pasando copyFromCD? AutoCopy:*valor de* identificador para el parámetro *bstrTaskPane,* donde *id* es el índice de la unidad de CD desde la que se va a copiar. Este índice corresponde al índice de un objeto **Cdrom** en la **interfaz IWMPCdromCollection** o el **evento CdromMediaChange.**
+Para iniciar el proceso de task, llame [a IWMPPlayerServices::setTaskPane](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpplayerservices-settaskpane)y pase copyFromCD. AutoCopy:*valor de* identificador para el parámetro *bstrTaskPane,* donde *id* es el índice de la unidad de CD desde la que se va a copiar. Este índice corresponde al índice de un objeto **Cdrom** en la **interfaz IWMPCdromCollection** o el **evento CdromMediaChange.**
 
 El código de ejemplo siguiente es una función que inicia el proceso de desasoción de un CD desde la unidad de CD identificada por el índice cero. La función usa la siguiente variable miembro:
 
@@ -78,7 +78,7 @@ HRESULT CMyApp::StartRip()
 
 Mostrar el estado al usuario
 
-Al copiar desde un CD, puede recuperar una cadena que contiene información de estado sobre la operación de copia. Para ello, primero debe recuperar una lista de reproducción que contenga elementos multimedia que representen las pistas de CD llamando a [IWMPCdrom::get \_ ](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdrom-get_playlist)playlist . Al igual que en el ejemplo anterior, el código de ejemplo siguiente funciona con el índice cero de la unidad de CD. Almacena la lista de reproducción recuperada en la siguiente variable miembro:
+Al copiar desde un CD, puede recuperar una cadena que contiene información de estado sobre la operación de copia. Para ello, primero debe recuperar una lista de reproducción que contenga elementos multimedia que representen las pistas de CD mediante una llamada a [IWMPCdrom::get \_ ](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdrom-get_playlist)playlist . Al igual que en el ejemplo anterior, el código de ejemplo siguiente funciona con el índice de unidad de CD cero. Almacena la lista de reproducción recuperada en la siguiente variable miembro:
 
 
 ```C++
@@ -139,11 +139,11 @@ HRESULT CMyApp::GetCDPlaylist()
 
 
 
-A continuación, [controle el evento IWMPEvents::MediaChange.](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-mediachange) Este evento tiene lugar cuando se produce una pista de CD. El **puntero IDispatch** pasado al controlador de eventos apunta a la **interfaz IWMPMedia** para la pista de CD. Llame **a QueryInterface** a **través de IDispatch** para recuperar el puntero a **IWMPMedia.**
+A continuación, [controle el evento IWMPEvents::MediaChange.](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents-mediachange) Este evento tiene lugar cuando se realiza una pista de CD. El **puntero IDispatch** pasado al controlador de eventos apunta a la **interfaz IWMPMedia** para la pista de CD. Llame **a QueryInterface** **a través de IDispatch** para recuperar el puntero a **IWMPMedia**.
 
-Para detectar qué pista de CD se está desenredando, compare el puntero **IWMPMedia** del evento con los elementos multimedia de la lista de reproducción de CD mediante una llamada a [IWMPMedia::get \_ isIdentical](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-get_isidentical).
+Para detectar qué pista de CD se está arrancando, compare el puntero **IWMPMedia** del evento con los elementos multimedia de la lista de reproducción de CD mediante una llamada [a IWMPMedia::get \_ isIdentical](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-get_isidentical).
 
-Llame [a IWMPMedia::getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo)y pase la cadena "Status" como nombre del elemento. **El** estado es un atributo temporal establecido por Reproductor de Windows Media elementos multimedia mientras se arrasa desde cd. no está disponible en la biblioteca.
+Llame [a IWMPMedia::getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo)y pase la cadena "Status" como nombre del elemento. **El** estado es un atributo temporal establecido por Reproductor de Windows Media elementos multimedia mientras se migran desde CD. no está disponible en la biblioteca.
 
 En el código de ejemplo siguiente se muestra un **controlador de eventos MediaChange.**
 
@@ -244,7 +244,7 @@ void CMyApp::MediaChange(IDispatch * Item)
 
 <dl> <dt>
 
-[**Interfaz IWMPCdrom**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdrom)
+[**IWMPCdrom (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdrom)
 </dt> <dt>
 
 [**IWMPCdromCollection (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromcollection)
@@ -253,7 +253,7 @@ void CMyApp::MediaChange(IDispatch * Item)
 [**IWMPEvents (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents)
 </dt> <dt>
 
-[**Interfaz IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
+[**IWMPMedia (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
 </dt> <dt>
 
 [**IWMPPlayerServices (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplayerservices)
@@ -262,10 +262,10 @@ void CMyApp::MediaChange(IDispatch * Item)
 [**IWMPPlaylist (Interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)
 </dt> <dt>
 
-[**Guía de control de reproductor**](player-control-guide.md)
+[**Guía de control del reproductor**](player-control-guide.md)
 </dt> <dt>
 
-[**Asegar mediante la interfaz IWMPCdromRip**](ripping-by-using-the-iwmpcdromrip-interface.md)
+[**Resalte mediante la interfaz IWMPCdromRip**](ripping-by-using-the-iwmpcdromrip-interface.md)
 </dt> </dl>
 
  

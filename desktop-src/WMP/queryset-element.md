@@ -3,7 +3,7 @@ title: elemento querySet
 description: El elemento querySet contiene elementos que definen qué elementos multimedia se seleccionarán de la biblioteca.
 ms.assetid: 18b5a509-a56b-4fd1-812f-60b8efd5136b
 keywords:
-- QuerySet Element Reproductor de Windows Media
+- Elemento querySet Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb157bb30c2e728b7840fe7021a2a4fcacc317b10eb6778b5702d7d2277c4a92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4971c2a7f601132640d7654a95dd288f1740a467
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118570618"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070949"
 ---
 # <a name="queryset-element"></a>elemento querySet
 
@@ -46,7 +46,7 @@ Este elemento no tiene atributos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **elemento querySet** especifica qué elementos multimedia se deben seleccionar de la biblioteca, sin tener en cuenta el tamaño del conjunto de resultados. Por **otro** lado, el elemento filter limita el tamaño del conjunto de resultados.
 
@@ -77,13 +77,13 @@ El **elemento querySet** especifica qué elementos multimedia se deben seleccion
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -96,7 +96,7 @@ El **elemento querySet** especifica qué elementos multimedia se deben seleccion
 [**elemento fragment**](fragment-element.md)
 </dt> <dt>
 
-[**Elemento smartPlaylist**](smartplaylist-element.md)
+[**elemento smartPlaylist**](smartplaylist-element.md)
 </dt> <dt>
 
 [**elemento sourceFilter**](sourcefilter-element.md)

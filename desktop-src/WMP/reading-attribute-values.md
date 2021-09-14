@@ -4,24 +4,24 @@ description: Lectura de valores de atributo
 ms.assetid: 5f791f47-472e-409f-b716-2ace11f34742
 keywords:
 - Reproductor de Windows Media,attributes para elementos multimedia
-- Reproductor de Windows Media modelo de objetos, atributos para elementos multimedia
+- Reproductor de Windows Media modelo de objetos,atributos para elementos multimedia
 - object model,attributes for media items
 - Reproductor de Windows Media Móvil, atributos para elementos multimedia
 - Reproductor de Windows Media ActiveX control,atributos para elementos multimedia
-- Reproductor de Windows Media Control de ActiveX móviles, atributos para elementos multimedia
+- Reproductor de Windows Media Control de ActiveX móvil,atributos para elementos multimedia
 - ActiveX control,atributos para elementos multimedia
 - Reproductor de Windows Media biblioteca,atributos para elementos multimedia
 - library,attributes para elementos multimedia
 - attributes,reading values
-- leer valores de atributo
+- lectura de valores de atributo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8431405b68435f41cb357a810e30c37bb96c5971824b3878b1982986aa0d0833
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d527429b71cff5594c127b3ad2bfb82b3f3b2ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120002835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070936"
 ---
 # <a name="reading-attribute-values"></a>Lectura de valores de atributo
 

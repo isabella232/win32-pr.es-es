@@ -4,12 +4,12 @@ description: La implementación de los procedimientos recomendados descritos en 
 ms.assetid: ef694361-49b7-424c-a583-1eadc2519db7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58f596378c55b5f99af5b24fa60a23d980407392298fe2ad656579730fbab709
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38d9f70828610d04255b61ad3ee533d23c514867
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118327875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070731"
 ---
 # <a name="accessibility-best-practices"></a>Procedimientos de accesibilidad recomendados
 
@@ -21,7 +21,7 @@ En este tema se incluyen las siguientes secciones.
     -   [Habilitar el acceso mediante programación a todos los elementos de la interfaz de usuario y el texto](#enable-programmatic-access-to-all-ui-elements-and-text)
     -   [Colocar nombres, títulos y descripciones en objetos de interfaz de usuario, marcos y páginas](#place-names-titles-and-descriptions-on-ui-objects-frames-and-pages)
     -   [Asegurarse de que todas las actividades de la interfaz de usuario activan eventos mediante programación](#ensure-programmatic-events-are-triggered-by-all-ui-activities)
--   [Usuario Configuración](#user-settings)
+-   [Configuración de usuario](#user-settings)
     -   [Respetar todas las configuraciones de todo el sistema y no interferir con las funciones de accesibilidad](#respect-all-system-wide-settings-and-do-not-interfere-with-accessibility-functions)
 -   [Diseño visual de la interfaz de usuario](#visual-ui-design)
     -   [No se Hard-Code colores](#do-not-hard-code-colors)
@@ -50,7 +50,7 @@ Seguir este procedimiento recomendado permite a los proveedores de tecnología d
 
 ### <a name="place-names-titles-and-descriptions-on-ui-objects-frames-and-pages"></a>Colocar nombres, títulos y descripciones en objetos de interfaz de usuario, marcos y páginas
 
-Dado que los productos de tecnología de asistencia,especialmente los lectores de pantalla, usan títulos para comprender la ubicación de un marco, un objeto o una página en el esquema de navegación, los títulos deben ser muy descriptivos. Los buenos títulos descriptivos permiten a los productos de tecnología de asistencia identificar y manipular elementos de interfaz de usuario en controles y aplicaciones. Por ejemplo, un título de página web de "Página web de Microsoft" no sirve para nada si el usuario ha navegado profundamente a un área determinada. Un título descriptivo es fundamental para los usuarios que son invidentes y dependen de lectores de pantalla.
+Dado que los productos de tecnología de asistencia, especialmente los lectores de pantalla, usan títulos para comprender la ubicación de un marco, un objeto o una página en el esquema de navegación, los títulos deben ser muy descriptivos. Los buenos títulos descriptivos permiten a los productos de tecnología de asistencia identificar y manipular elementos de interfaz de usuario en controles y aplicaciones. Por ejemplo, un título de página web de "Página web de Microsoft" no sirve para nada si el usuario ha navegado profundamente a un área determinada. Un título descriptivo es fundamental para los usuarios que son invidentes y dependen de lectores de pantalla.
 
 Seguir este procedimiento recomendado permite que los productos de tecnología de asistencia identifiquen y manipulen la interfaz de usuario en aplicaciones y controles de ejemplo.
 
@@ -66,7 +66,7 @@ Con el procedimiento recomendado de esta sección, puede asegurarse de que los c
 
 ### <a name="respect-all-system-wide-settings-and-do-not-interfere-with-accessibility-functions"></a>Respetar todas las configuraciones de todo el sistema y no interferir con las funciones de accesibilidad
 
-Los usuarios pueden Panel de control para establecer algunas marcas de todo el sistema; otras marcas se pueden establecer mediante programación. Esta configuración no debe cambiarse con controles ni aplicaciones. Además, las aplicaciones deben admitir la configuración de accesibilidad de su sistema operativo host.
+Los usuarios pueden usar Panel de control para establecer algunas marcas de todo el sistema; otras marcas se pueden establecer mediante programación. Esta configuración no debe cambiarse con controles ni aplicaciones. Además, las aplicaciones deben admitir la configuración de accesibilidad de su sistema operativo host.
 
 Seguir este procedimiento recomendado permite a los usuarios establecer la configuración de accesibilidad y saber que las aplicaciones no cambiarán esa configuración.
 
@@ -88,7 +88,7 @@ Muchos usuarios necesitan combinaciones concretas de contraste alto, como texto 
 
 ### <a name="ensure-all-ui-correctly-scales-by-any-dpi-setting"></a>Asegurarse de que toda la interfaz de usuario se escale correctamente con cualquier configuración de PPP
 
-Asegúrese de que todos los elementos de la interfaz de usuario se puedan escalar correctamente por cualquier configuración de puntos por pulgada (ppp). Además, asegúrese de que los elementos de la interfaz de usuario caben en una pantalla de 1024 x 768 con 120 puntos por pulgada (ppp).
+Asegúrese de que todos los elementos de la interfaz de usuario se puedan escalar correctamente por cualquier configuración de puntos por pulgada (ppp). Además, asegúrese de que los elementos de la interfaz de usuario quepa en una pantalla de 1024 x 768 con 120 puntos por pulgada (ppp).
 
 ## <a name="keyboard-navigation"></a>Navegación mediante teclado
 

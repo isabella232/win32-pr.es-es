@@ -6,12 +6,12 @@ keywords:
 - Reproductor de Windows Media Tiendas en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab2cb1b4d44b1bd3c6289311c6b276de7c75ed1bcd955431796a36d272811942
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: beefd0945f9d1a9ae61e61f8be74beada1695baf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119901384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070839"
 ---
 # <a name="validation-tests-for-on-boarding-type-2-online-stores"></a>Pruebas de validación para almacenes en línea de tipo 2 de incorporación
 
@@ -43,7 +43,7 @@ En este tema se incluyen las siguientes secciones.
 -   [Interacción del almacén](#store-interaction)
     -   [Yielding to the Active Store](#yielding-to-the-active-store)
     -   [Impedir que el almacén probado tome el control del almacén activo](#preventing-the-tested-store-from-taking-over-the-active-store)
-    -   [Acceso a un almacén en High-Contrast automático](#accessing-a-store-in-high-contrast-mode)
+    -   [Acceso a un almacén en modo High-Contrast usuario](#accessing-a-store-in-high-contrast-mode)
     -   [Protección de un almacén](#securing-a-store)
 
 ## <a name="test-checklist"></a>Lista de comprobación de pruebas
@@ -158,7 +158,7 @@ Antes de ejecutar una prueba, debe asegurarse de que el almacén y las cuentas d
 
     -   Almacenes en directo que funcionan con Windows XP, Windows Vista y Windows 7
     -   El almacén no vivo que se probará
-    -   Compruebe que el almacén no en directo que se va a probar está visible en todas las versiones del sistema operativo y en todas las versiones de Reproductor de Windows Media plataforma.
+    -   Compruebe que el almacén no en directo que se va a probar esté visible en todas las versiones del sistema operativo y en todas las versiones de Reproductor de Windows Media plataforma.
 
 -   Determine la siguiente información sobre el almacén que se probará:
 
@@ -198,7 +198,7 @@ Antes de ejecutar una prueba, debe asegurarse de que el almacén y las cuentas d
 Debe realizar pruebas en las siguientes configuraciones:
 
 -   Microsoft Reproductor de Windows Media 11 en Windows XP con sistemas operativos Service Pack 3 (SP3) de 32 y 64 bits
--   Reproductor de Windows Media 11 en Windows operativos Vista de 32 y 64 bits (32 bits Reproductor de Windows Media)
+-   Reproductor de Windows Media 11 en Windows operativos vista de 32 y 64 bits (32 bits Reproductor de Windows Media)
 -   Microsoft Reproductor de Windows Media 12 en Windows operativos de 7 32 y 64 bits (32 bits Reproductor de Windows Media)
 
 Aunque debe realizar pruebas en todas las versiones y plataformas del sistema operativo enumeradas, las versiones de 32 bits de Windows Vista y Windows 7 son las versiones de sistema operativo de destino prioritario. Debe probar la instalación de cualquier software en todas las plataformas.
@@ -224,7 +224,7 @@ Realice los pasos siguientes para configurar una máquina de prueba:
 
 3.  Desactive la vista del Centro de información de una tienda estableciendo Reproductor de Windows Media para reproducir una visualización. La principal diferencia entre las plataformas es que, en Reproductor de Windows Media 11, empieza haciendo clic en Ahora reproduciendo **,** mientras que en Reproductor de Windows Media 12, empieza haciendo clic con el botón derecho en la ventana principal.
 
-    La siguiente captura de pantalla muestra la secuencia de opciones de menú que reproduce una visualización Reproductor de Windows Media 11:
+    En la siguiente captura de pantalla se muestra la secuencia de opciones de menú que reproduce una visualización Reproductor de Windows Media 11:
 
     ![captura de pantalla que muestra cómo reproducir una visualización en el Reproductor de Windows Media 11](images/wmp11-visual.png)
 
@@ -269,7 +269,7 @@ En primer lugar, realice los pasos siguientes para configurar un almacén y, a c
 
     Compruebe que la pestaña tienda cambia para indicar el almacén seleccionado.
 
-    Para Windows XP y Windows Vista con Reproductor de Windows Media 11, compruebe que el nombre y el icono de la tienda están visibles en el fondo oscuro Reproductor de Windows Media 11.
+    Para Windows XP y Windows Vista con Reproductor de Windows Media 11, compruebe que el nombre y el icono de la tienda están visibles en el fondo Reproductor de Windows Media 11.
 
     Para Windows 7 con Reproductor de Windows Media 12, compruebe que el nombre del almacén y el icono están visibles en el panel de navegación de la biblioteca, en el menú contextual del selector de servicios.
 
@@ -284,7 +284,7 @@ En primer lugar, realice los pasos siguientes para configurar un almacén y, a c
 
     ![captura de pantalla que muestra la pestaña de la tienda en el Reproductor de Windows Media 11](images/wmp11-verify-store.png)
 
-    En la siguiente captura de pantalla se muestra el menú que aparece al hacer clic en el botón dividir situado en la esquina inferior izquierda Reproductor de Windows Media 12:
+    La siguiente captura de pantalla muestra el menú que aparece al hacer clic en el botón dividir situado en la esquina inferior izquierda Reproductor de Windows Media 12:
 
     ![captura de pantalla que muestra la pestaña de la tienda en el Reproductor de Windows Media 12](images/wmp12-verify-store.png)
 
@@ -294,7 +294,7 @@ En primer lugar, realice los pasos siguientes para configurar un almacén y, a c
 
 1.  Compruebe que el almacén tiene una opción para crear una nueva cuenta y, a continuación, siga las instrucciones del almacén para crear una nueva cuenta.
 
-    En la captura de pantalla siguiente se resalta **un botón Crear** nueva cuenta como podría aparecer en Reproductor de Windows Media 11:
+    En la siguiente captura de pantalla se resalta **un botón** Crear nueva cuenta como podría aparecer en Reproductor de Windows Media 11:
 
     ![captura de pantalla que muestra cómo comprobar la configuración de la cuenta para el Reproductor de Windows Media 11](images/wmp11-verify-account.png)
 
@@ -317,13 +317,13 @@ En primer lugar, realice los pasos siguientes para configurar el almacenamiento 
 1.  Compruebe que la tienda tiene una casilla para la **opción Guardar mi información de** usuario.
 
     1.  Cierre Reproductor de Windows Media.
-    2.  Vuelva Reproductor de Windows Media e intente descargar contenido.
+    2.  Vuelva a Reproductor de Windows Media e intente descargar contenido.
 
 2.  Compruebe que el almacenamiento en caché de credenciales está presente y funcionando.
 
     1.  Cerrar sesión en la tienda.
     2.  Cierre Reproductor de Windows Media.
-    3.  Vuelva Reproductor de Windows Media e intente descargar contenido.
+    3.  Vuelva a Reproductor de Windows Media e intente descargar contenido.
 
 3.  Compruebe que se le pidan credenciales al usuario si no están almacenadas en caché.
 
@@ -362,8 +362,8 @@ En primer lugar, realice los pasos siguientes para comprar contenido y, a contin
 
     Cuando se complete la descarga, vaya al contenido descargado en la biblioteca Reproductor de Windows Media datos. El contenido descargado se encuentra en la biblioteca del usuario actual.
 
-    -   Para Windows XP y Windows Vista con Reproductor de Windows Media 11, el contenido descargado aparece en el  panel de navegación de la biblioteca, en el pivote Biblioteca y, a continuación, en **Canciones**.
-    -   Para Windows 7 con Reproductor de Windows Media 12, el contenido que se descarga en la biblioteca de Reproductor de Windows Media aparece en el panel de navegación Reproductor de Windows Media en **Música**.
+    -   Para Windows XP y Windows Vista con Reproductor de Windows Media 11, el contenido descargado aparece en  el panel de navegación de la biblioteca, en el pivote Biblioteca y, a continuación, en **Canciones**.
+    -   Para Windows 7 con Reproductor de Windows Media 12, el contenido que se descarga en la biblioteca Reproductor de Windows Media aparece en el panel de navegación Reproductor de Windows Media bajo **Música**.
 
 3.  Compruebe que los metadatos se descargan para la compra.
 
@@ -443,7 +443,7 @@ En primer lugar, realice los pasos siguientes para grabar el contenido adquirido
 2.  Arrastre las pistas adquiridas a **la lista de grabación.**
 3.  Haga clic en **el botón Iniciar grabación.**
 
-En la siguiente captura de pantalla se muestra **la** Lista de grabación en el lado derecho de la pantalla y el botón Iniciar grabación debajo de **la** lista de grabación Reproductor de Windows Media 11: 
+En la siguiente captura de pantalla se muestra la  **lista** de grabación en el lado derecho de la pantalla y el botón Iniciar grabación debajo de **la** lista de grabación Reproductor de Windows Media 11:
 
 ![captura de pantalla que muestra cómo grabar contenido en el Reproductor de Windows Media 11](images/wmp11-verify-burn.png)
 
@@ -478,18 +478,18 @@ En primer lugar, realice los pasos siguientes para sincronizar con un dispositiv
 
 1.  Conectar un dispositivo con un reloj seguro. Algunos ejemplos son los dispositivos que usan Windows DRM multimedia para dispositivos portátiles, como un centro multimedia portátil como iRiver H10, Creative Zen, entre otros.
 2.  En Reproductor de Windows Media, haga clic en **la pestaña** Sincronizar.
-3.  Arrastre el contenido de la biblioteca al **área de lista** Sincronización de la **pestaña** Sincronizar.
+3.  Arrastre el contenido de la biblioteca al área **de lista Sincronizar** de la **pestaña** Sincronizar.
 4.  Haga clic en **el botón Iniciar sincronización.**
 
-En la captura de pantalla siguiente se muestra  la pista 1 en el área **de** lista Sincronización y el botón Iniciar sincronización Reproductor de Windows Media 11:
+En la siguiente captura de pantalla se muestra  la pista 1 en el área **de** lista Sincronizar y el botón Iniciar sincronización Reproductor de Windows Media 11:
 
 ![captura de pantalla que muestra cómo transferir contenido en el Reproductor de Windows Media 11](images/wmp11-verify-transfer.png)
 
-En la captura de pantalla siguiente se muestra  la pista 1 en el área **de** lista Sincronización y se muestra el botón Iniciar sincronización Reproductor de Windows Media 12:
+En la siguiente captura de pantalla se muestra  la pista 1 en el área **de** lista Sincronizar y el botón Iniciar sincronización Reproductor de Windows Media 12:
 
 ![captura de pantalla que muestra cómo transferir contenido en el Reproductor de Windows Media 12](images/wmp12-verify-transfer.png)
 
-**Para comprobar que el contenido comprado se puede transferir a otro dispositivo**
+**Para comprobar que el contenido adquirido se puede transferir a otro dispositivo**
 
 1.  Compruebe que el contenido adquirido se transfiere al dispositivo reproduciendo el contenido en el dispositivo. El contenido transferido también debe tener los metadatos adecuados.
 
@@ -501,7 +501,7 @@ En la captura de pantalla siguiente se muestra  la pista 1 en el área **de** li
 
 ## <a name="store-features"></a>Características de la tienda
 
-En las secciones siguientes se describe cómo probar varias características de una tienda en línea abordada.
+En las secciones siguientes se describe cómo probar varias características de una tienda en línea de entrada.
 
 ### <a name="managing-an-account"></a>Administración de una cuenta
 
@@ -511,19 +511,19 @@ Inicie sesión con una cuenta que haya realizado algunas compras y abra el histo
 
 -   Compruebe que el historial de compras realiza un seguimiento de las compras anteriores.
 
-Si el tipo de tienda o cuenta admite esta característica, intente restaurar una compra eliminada.
+Si el tipo de cuenta o la tienda admite esta característica, intente restaurar una compra eliminada.
 
 **Para comprobar que se pueden volver a adquirir las compras anteriores**
 
 -   Compruebe que se puede restaurar una compra anterior.
 
-Si el almacén admite el uso de varios equipos con la cuenta, compruebe cualquier funcionalidad que esta característica proporciona.
+Si la tienda admite el uso de varios equipos con la cuenta, compruebe cualquier funcionalidad que esta característica proporciona.
 
 **Para comprobar la administración de varios equipos con una sola cuenta**
 
 -   Compruebe la funcionalidad del almacén para administrar varios equipos.
 
-### <a name="managing-a-store-specific-account"></a>Administración de una cuenta Store-Specific cliente
+### <a name="managing-a-store-specific-account"></a>Administración de una Store-Specific cuenta
 
 Es posible que el almacén no tenga tipos de cuenta, restricciones o contenido típicos. Por ejemplo, una tienda que alquila vídeo de streaming necesitará alguna interfaz de usuario para mostrar los alquileres activos y esa interfaz de usuario tendría que probarse.
 
@@ -545,7 +545,7 @@ En primer lugar, realice los pasos siguientes para prepararse para probar el est
 
 Si la tienda ofrece una vista del Centro de información, reproduce contenido de la tienda y, mientras se reproduce el contenido, cambia al modo Reproducción ahora y activa el Centro de información.
 
-En Windows XP o Windows Vista con Reproductor de Windows Media 11, haga clic con el botón derecho en la ventana que se reproduce ahora y, a continuación, en el menú contextual, seleccione Vista del Centro de **información**.
+En Windows XP o Windows Vista con Reproductor de Windows Media 11, haga clic con el botón derecho en la ventana que se está reproduciendo y, a continuación, en el menú contextual, seleccione Vista del centro de **información**.
 
 En la captura de pantalla siguiente se muestra el menú contextual Reproductor de Windows Media 11:
 
@@ -553,19 +553,19 @@ En la captura de pantalla siguiente se muestra el menú contextual Reproductor d
 
 En Windows 7 con Reproductor de Windows Media 12, haga clic con el botón derecho en la ventana que se reproduce ahora, en el menú contextual seleccione Visualizaciones y, a continuación, haga clic en Vista **del Centro** de información .
 
-En la captura de pantalla siguiente se muestra el menú contextual Reproductor de Windows Media 12:
+En la siguiente captura de pantalla se muestra el menú contextual Reproductor de Windows Media 12:
 
 ![captura de pantalla que muestra cómo acceder al centro de información de una tienda en el Reproductor de Windows Media 12](images/wmp12-info-center.png)
 
 **Para comprobar que el Centro de información es funcional**
 
--   Compruebe que el Centro de información muestra información multimedia en el área que se está reproduciendo ahora. En la captura de pantalla siguiente se muestra un ejemplo de dicha información multimedia:
+-   Compruebe que el Centro de información muestra información multimedia en el área que se está reproduciendo. En la siguiente captura de pantalla se muestra un ejemplo de dicha información multimedia:
 
     ![captura de pantalla que muestra la funcionalidad del centro de información de una tienda](images/media-information.png)
 
 Si aparecen vínculos de compra u otros vínculos en la página, haga clic en ellos.
 
-**Para comprobar los vínculos en la vista Del Centro de información**
+**Para comprobar los vínculos en la vista del Centro de información**
 
 -   Compruebe que los vínculos muestran el almacén.
 
@@ -573,7 +573,7 @@ Si aparecen vínculos de compra u otros vínculos en la página, haga clic en el
 
 ## <a name="store-interaction"></a>Interacción del almacén
 
-En las secciones siguientes se describe cómo probar la interacción entre los otros almacenes y el almacén que está probando.
+En las secciones siguientes se describe cómo probar la interacción entre las otras tiendas y el almacén que está probando.
 
 ### <a name="yielding-to-the-active-store"></a>Yielding to the Active Store
 
@@ -585,7 +585,7 @@ Cambie a un almacén que no sea el almacén que se está probando.
 
 ### <a name="preventing-the-tested-store-from-taking-over-the-active-store"></a>Impedir que el almacén probado tome el control del almacén activo
 
--   Con otro almacén seleccionado, cierre Reproductor de Windows Media y reinicie el equipo.
+-   Con otra tienda seleccionada, cierre Reproductor de Windows Media y reinicie el equipo.
 -   Inicie Reproductor de Windows Media.
 
 **Para comprobar que el almacén probado no toma el control**
@@ -594,13 +594,13 @@ Cambie a un almacén que no sea el almacén que se está probando.
 
 ### <a name="accessing-a-store-in-high-contrast-mode"></a>Acceso a un almacén en High-Contrast automático
 
-En primer lugar, para habilitar el modo de contraste alto, presione MAYÚS IZQUIERDA+ALT IZQUIERDA+IMPRIMIR PANTALLA y, a continuación, realice los pasos siguientes para comprobar la accesibilidad de contraste alto:
+En primer lugar, habilite el modo de contraste alto presionando MAYÚS IZQUIERDA+ALT IZQUIERDA+IMPRIMIR PANTALLA y, a continuación, realice los pasos siguientes para comprobar la accesibilidad de contraste alto:
 
 **Para comprobar que el almacén es accesible en modo de contraste alto**
 
-1.  Compruebe que la interfaz de usuario de inicio de sesión está intacta y funciona.
+1.  Compruebe que la interfaz de usuario de inicio de sesión está intacta y funcional.
 2.  Compruebe que todas las ventanas y cuadros de diálogo aparecen correctamente.
-3.  Medios de compra. Compruebe que los botones de compra y descarga, los administradores de descarga, la información de precios, entre otros, están visibles.
+3.  Comprar medios. Compruebe que los botones de compra y descarga, los administradores de descarga, la información de precios, entre otros, están visibles.
 4.  Compruebe que puede transmitir, grabar y sincronizar.
 5.  Busque texto recortado y elementos de la interfaz de usuario, texto que no sea legible y otros defectos visibles.
 

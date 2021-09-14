@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 4e1ca35493667cb6e7e3d5ba8b162a3d073d51fc397ce2e1a1da7ab7a380728d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae8b357743cabf652721d3666c177990568718e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265420"
 ---
 # <a name="sslgeneratemasterkey-function"></a>Función SslGenerateMasterKey
 
-La **función SslGenerateMasterKey** calcula la [*clave secreta maestra Capa de sockets seguros protocolo*](/windows/desktop/SecGloss/s-gly) de seguridad (SSL).
+La **función SslGenerateMasterKey** calcula la [*clave secreta maestra*](/windows/desktop/SecGloss/s-gly) Capa de sockets seguros protocolo de cifrado (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -134,7 +134,7 @@ Especifica si esta función se usa para el intercambio de claves del lado client
 | Value                                                                                                                                                                                                                                                      | Significado                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | <span id="NCRYPT_SSL_CLIENT_FLAG"></span><span id="ncrypt_ssl_client_flag"></span><dl> <dt>**NCRYPT \_ Marca \_ de \_ cliente SSL**</dt> <dt>0x00000001</dt> </dl> | Especifica un intercambio de claves del lado cliente.<br/> |
-| <span id="NCRYPT_SSL_SERVER_FLAG"></span><span id="ncrypt_ssl_server_flag"></span><dl> <dt>**NCRYPT \_ Marca \_ de \_ servidor SSL**</dt> <dt>0x00000002</dt> </dl> | Especifica un intercambio de claves del lado servidor.<br/> |
+| <span id="NCRYPT_SSL_SERVER_FLAG"></span><span id="ncrypt_ssl_server_flag"></span><dl> <dt>**NCRYPT \_ MARCA \_ DE \_ SERVIDOR SSL**</dt> <dt>0x00000002</dt> </dl> | Especifica un intercambio de claves del lado servidor.<br/> |
 
 
 
@@ -170,7 +170,7 @@ Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

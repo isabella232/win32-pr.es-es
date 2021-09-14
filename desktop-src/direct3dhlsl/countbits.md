@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5f3816152b91fd03348e64c7a36dd41e8b620bd5e5ef8f4463538c44ef974485
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 357aceca6e2aea261a9e94212b58ff6308c99560
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118793973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264356"
 ---
 # <a name="countbits-function"></a>countbits (función)
 
@@ -51,7 +51,7 @@ Tipo: **uint**
 
 Número de bits.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 También están disponibles las siguientes versiones sobrecargadas:
 
@@ -70,7 +70,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | sí       |
 
 
 
@@ -80,7 +80,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -95,7 +95,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Funciones intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

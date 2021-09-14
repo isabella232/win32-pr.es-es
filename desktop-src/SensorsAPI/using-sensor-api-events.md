@@ -4,12 +4,12 @@ ms.assetid: 0c396d54-cb2e-4b07-999f-3f4001db2a02
 title: Uso de eventos de SENSOR API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ba26e99ef039808ea8c3d6bee9ac8a5b0d6b1a231fb2a4b62c2bb05a2489099
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a54fcb14138c1b20470a2b716e5cce86235c3102
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120126505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265132"
 ---
 # <a name="using-sensor-api-events"></a>Uso de eventos de SENSOR API
 
@@ -202,7 +202,7 @@ public:
 
 Después de implementar la interfaz de devolución de llamada, puede proporcionar un sensor determinado con un puntero a una instancia de la clase de devolución de llamada para empezar a recibir notificaciones de eventos del sensor.
 
-En el código de ejemplo siguiente se crea una instancia de la clase de devolución de llamada y, a continuación, se solicitan las notificaciones de eventos desde un sensor.
+El código de ejemplo siguiente crea una instancia de la clase de devolución de llamada y, a continuación, solicita las notificaciones de eventos de un sensor.
 
 
 ```C++
@@ -247,7 +247,7 @@ if(SUCCEEDED(hr))
 
 ## <a name="requesting-a-report-interval"></a>Solicitar un intervalo de informe
 
-Puede sugerir un valor para la frecuencia con la que la aplicación recibe eventos actualizados de datos. Sin embargo, no es necesario que los sensores proporcionen eventos en un intervalo determinado. Debe tener en cuenta que el valor sugerido podría no coincidir con el intervalo real del informe que usa el sensor para generar eventos. Para conocer el intervalo de informe real, recupere el valor de la propiedad SENSOR PROPERTY CURRENT REPORT INTERVAL, como se describe en \_ \_ \_ \_ [Retrieving and Setting Sensor Properties](setting-and-retrieving-sensor-properties.md).
+Puede sugerir un valor para la frecuencia con la que la aplicación recibe eventos actualizados de datos. Sin embargo, no es necesario que los sensores proporcionen eventos en un intervalo determinado. Debe tener en cuenta que el valor sugerido podría no coincidir con el intervalo de informe real que usa el sensor para generar eventos. Para conocer el intervalo de informe real, recupere el valor de la propiedad SENSOR PROPERTY CURRENT REPORT INTERVAL, como se describe en \_ \_ \_ \_ [Retrieving and Setting Sensor Properties](setting-and-retrieving-sensor-properties.md).
 
 El código de ejemplo siguiente crea una función auxiliar que solicita un nuevo valor para la propiedad SENSOR \_ PROPERTY \_ CURRENT REPORT \_ \_ INTERVAL. La función toma un puntero al sensor para el que se va a establecer la propiedad y un valor **ULONG** que indica el nuevo intervalo de informe que se va a establecer.
 

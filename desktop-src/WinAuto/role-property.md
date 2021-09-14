@@ -4,12 +4,12 @@ description: La propiedad Role describe el elemento de la interfaz de usuario de
 ms.assetid: f6abf95b-a77a-406d-9ca0-4663adc8245f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2881b301537e9a25dabb260b84bc889cef4e4a6f9f6a5a2c8fab540d78daf8c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f2b285d9242542f83c6b4478df93e888a7a23cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133728"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070646"
 ---
 # <a name="role-property"></a>Propiedad Role
 

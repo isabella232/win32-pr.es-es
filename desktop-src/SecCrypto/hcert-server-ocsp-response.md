@@ -4,12 +4,12 @@ ms.assetid: baf173f1-99dc-49f9-9a17-fee79b393db7
 title: HCERT_SERVER_OCSP_RESPONSE (Wincrypt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a694b6165a3fb5f067fd64170b4b0275c3a06dad21d508f616ee63d6b27e4a22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ceab319b5d8370dd15ef3dcd288124e4f2adf9ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119006463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265375"
 ---
 # <a name="hcert_server_ocsp_response"></a>RESPUESTA \_ \_ OCSP DEL SERVIDOR HCERT \_
 
@@ -37,7 +37,7 @@ typedef VOID* HCERT_SERVER_OCSP_RESPONSE;
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Wincrypt.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wincrypt.h</dt> </dl> |
 
 
 

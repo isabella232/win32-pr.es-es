@@ -4,12 +4,12 @@ ms.assetid: dde1b978-6d35-4a75-91fd-69dfcc6c43d2
 title: Sugerencias de diseño para desarrollar un CRM de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a286b2aa75b266a41b249b29203b16f0441e6276a9de03a25efc622ac2bd3fdf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8dcdb59f0ea23fb6879300d0bacec7df12970d81
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119128757"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264516"
 ---
 # <a name="design-suggestions-for-developing-a-com-crm"></a>Sugerencias de diseño para desarrollar un CRM de COM+
 
@@ -18,7 +18,7 @@ A continuación se indican los pasos sugeridos para desarrollar un CRM de COM+:
 1.  Antes de iniciar el desarrollo, establezca el tiempo de espera de la transacción en cero (mediante la herramienta administrativa Servicios de componentes). Establezca la marca del Registro VTRACE1 (vea [COM+ CRM Registry Configuración](com--crm-registry-settings.md)) para ver los mensajes de error y advertencia de CRM en el seguimiento de depuración.
 2.  Determine qué conjunto de interfaces debe usar, estructurado (variantes) o no estructurado. (Vea [INTERFACES DE COM+ CRM).](com--crm-interfaces.md) Esto dependerá del lenguaje que use para desarrollar crm, por ejemplo, Microsoft Visual C++ o Microsoft Visual Basic.
 3.  Desarrolle primero el trabajo de CRM. Determine la información necesaria en las entradas de registro. Defina los tipos de registros necesarios y su formato.
-4.  Se proporciona un compensador CRM de depuración como parte de los ejemplos de CRM (en Windows SDK). Esto se puede usar temporalmente al depurar el trabajo de CRM en lugar del compensador de CRM real.
+4.  Se proporciona un compensador crm de depuración como parte de los ejemplos de CRM (en Windows SDK). Esto se puede usar temporalmente al depurar el trabajo de CRM en lugar del compensador de CRM real.
 5.  Cuando el trabajo de CRM funcione correctamente, desarrolle el compensador crm real y reemplace el compensador crm de depuración por el compensador crm real.
 6.  Puede ser conveniente no probar inicialmente el caso de recuperación. Si es así, elimine el archivo de registro de CRM para la aplicación de servidor CRM cada vez antes de iniciar esa aplicación de servidor CRM.
 

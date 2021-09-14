@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 78e508c72faf61a1a1167fda4fbfba621f4c5255021b6196b8b30a6b86c13fdb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89568dc5cf24af38f916375795eea052c8b39200
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119846005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264156"
 ---
 # <a name="texture-type"></a>Tipo de textura
 
@@ -33,7 +33,7 @@ Use la sintaxis siguiente para declarar una variable de textura.
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="Type"></span><span id="type"></span><span id="TYPE"></span>**Tipo**<br/> | Uno de los siguientes tipos: textura (sin tipo, por compatibilidad con versiones anteriores), Texture1D, Texture1DArray, Texture2D, Texture2DArray, Texture3D, TextureCube. El tamaño del elemento debe caber en 4 cantidades de 32 bits.<br/> |
 | <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nombre**<br/> | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                                                                                                                                                   |
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Hay tres partes para usar una textura.
 
@@ -43,18 +43,18 @@ Hay tres partes para usar una textura.
     texture g_MeshTexture;
     ```
 
-    \- O bien
+    \- o -
 
     ```
     Texture2D g_MeshTexture;
     ```
 
-2.  Declarar e inicializar un objeto sampler. Esto se hace con una sintaxis ligeramente diferente en Direct3D 9 y Direct3D 10. Para obtener más información sobre la sintaxis del objeto [sampler, vea Sampler Type (DirectX HLSL)](dx-graphics-hlsl-sampler.md).
+2.  Declarar e inicializar un objeto sampler. Esto se hace con una sintaxis ligeramente diferente en Direct3D 9 y Direct3D 10. Para obtener más información sobre la sintaxis de objetos [sampler, vea Sampler Type (DirectX HLSL).](dx-graphics-hlsl-sampler.md)
 3.  Invocar una función de textura en un sombreador.
 
 Diferencias entre Direct3D 9 y Direct3D 10:
 
-Direct3D 9 usa funciones [de textura intrínsecas](dx-graphics-hlsl-intrinsic-functions.md) para realizar operaciones de textura. Este ejemplo es del [ejemplo BasicHLSL](/previous-versions/windows/desktop/bb153287(v%3Dvs.85)) y usa [texas2D(s, t) (DirectX HLSL)](dx-graphics-hlsl-tex2d.md) para realizar el muestreo de textura.
+Direct3D 9 usa funciones [de textura intrínsecas](dx-graphics-hlsl-intrinsic-functions.md) para realizar operaciones de textura. Este ejemplo es del [ejemplo BasicHLSL y](/previous-versions/windows/desktop/bb153287(v%3Dvs.85)) usa [tex2D(s, t) (DirectX HLSL)](dx-graphics-hlsl-tex2d.md) para realizar el muestreo de textura.
 
 <code>Output.RGBColor = tex2D(MeshTextureSampler, In.TextureUV) * In.Diffuse;</code>
 
@@ -62,6 +62,6 @@ Direct3D 10 usa objetos [de textura con plantilla](dx-graphics-hlsl-to-type.md) 
 
 <code>Output.RGBColor = g_MeshTexture.Sample(MeshTextureSampler, In.TextureUV) * In.Diffuse;</code>
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Tipos de datos (HLSL de DirectX)](dx-graphics-hlsl-data-types.md)
+[Tipos de datos (DirectX HLSL)](dx-graphics-hlsl-data-types.md)

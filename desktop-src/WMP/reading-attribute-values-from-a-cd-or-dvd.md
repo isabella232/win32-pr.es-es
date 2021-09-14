@@ -1,29 +1,29 @@
 ---
-title: Lectura de valores de atributo desde un CD o DVD
-description: Lectura de valores de atributo desde un CD o DVD
+title: Lectura de valores de atributo de un CD o DVD
+description: Lectura de valores de atributo de un CD o DVD
 ms.assetid: 441916fb-f66d-4a12-a95c-b47561c93e64
 keywords:
-- Reproductor de Windows Media,atributos para elementos multimedia
+- Reproductor de Windows Media,attributes para elementos multimedia
 - Reproductor de Windows Media modelo de objetos, atributos para elementos multimedia
-- modelo de objetos, atributos para elementos multimedia
+- object model,attributes for media items
 - Reproductor de Windows Media Móvil, atributos para elementos multimedia
 - Reproductor de Windows Media ActiveX control,atributos para elementos multimedia
-- Reproductor de Windows Media Control de ActiveX móviles, atributos para elementos multimedia
+- Reproductor de Windows Media Control de ActiveX móvil,atributos para elementos multimedia
 - ActiveX control,atributos para elementos multimedia
-- Reproductor de Windows Media biblioteca, atributos para elementos multimedia
+- Reproductor de Windows Media biblioteca,atributos para elementos multimedia
 - library,attributes para elementos multimedia
 - attributes,reading values
-- leer valores de atributo
+- lectura de valores de atributo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 800fda1bf3002f015873b69e29503ecba637a978bac1b167724c04f5f15228b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8909a752e9a974e4959be8ecd933d4bb3f1bfd4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070938"
 ---
-# <a name="reading-attribute-values-from-a-cd-or-dvd"></a>Lectura de valores de atributo desde un CD o DVD
+# <a name="reading-attribute-values-from-a-cd-or-dvd"></a>Lectura de valores de atributo de un CD o DVD
 
 A lo largo de este tema, **el objeto Player** se definió de la siguiente manera:
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41b5e4f637aa4d15aa9496eb85ee0b60a103ed4db33185e8434b8409173da298
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 992ffd881498c3670eaaf5c075db9c6432cc1496
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118830264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070835"
 ---
 # <a name="videobackgroundcolor"></a>VIDEO.backgroundColor
 
@@ -31,7 +31,7 @@ El **atributo backgroundColor** especifica o recupera el color de fondo del cont
 
 Este atributo es una cadena de lectura y **escritura** que contiene cualquier valor de color Internet Explorer microsoft o el valor "none". Tiene un valor predeterminado de "none", lo que significa que si no hay ningún vídeo asociado al control de vídeo, el control Vídeo es transparente y se muestra el fondo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el vídeo es menor que la ventana y **stretchToFit** es false, el color de fondo aparece alrededor del vídeo.
 
@@ -39,7 +39,7 @@ Cuando el vídeo es menor que la ventana y **stretchToFit** es false, el color d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

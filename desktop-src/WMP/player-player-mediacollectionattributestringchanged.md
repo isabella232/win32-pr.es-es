@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9435be90761abf88927789fad4380172f0ef6f31427848195d3aa14ea4112cf2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f92eba7f0f585b9bbff7a8eb52ab13ec0d74aaa5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117747401"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070976"
 ---
 # <a name="playermediacollectionattributestringchanged-event"></a>Evento Player.MediaCollectionAttributeStringChanged
 
@@ -47,7 +47,7 @@ Player.MediaCollectionAttributeStringChanged(
 *bstrAttribName* 
 </dt> <dd>
 
-**Cadena** que especifica el nombre del atributo. Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la referencia Reproductor de Windows Media [atributo .](attribute-reference.md)
+**Cadena** que especifica el nombre del atributo. Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la referencia Reproductor de Windows Media [atributo](attribute-reference.md).
 
 </dd> <dt>
 
@@ -69,11 +69,11 @@ Player.MediaCollectionAttributeStringChanged(
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando un usuario modifica los metadatos de la biblioteca, el **objeto MediaCollection** se actualiza y este evento se produce para cada atributo cambiado.
 
-El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media, y se puede acceder o pasar a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la inclusión en mayúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede tener acceso a un método de un archivo JScript importado mediante el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la inclusión en mayúsculas.
 
 **Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 

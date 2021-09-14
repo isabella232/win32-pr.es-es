@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3c238ee5bd873c33f3acd2207ba9ad31869b151924dd20f082669b782d207c59
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e8e06169d2b758264f181263a5cb717977a1602
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118857958"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071034"
 ---
 # <a name="day-daysofmonthtype-element"></a>Elemento Day (daysOfMonthType)
 
@@ -44,7 +44,7 @@ El **elemento Day** se define mediante el tipo complejo [**daysOfMonthType.**](t
 
 ## <a name="examples"></a>Ejemplos
 
-El xml siguiente define la parte de días de un calendario mensual que ejecuta la tarea el día 1 y el 15 del mes.
+El xml siguiente define la parte de días de un calendario mensual que ejecuta la tarea el primer y el 15 día del mes.
 
 
 ```XML

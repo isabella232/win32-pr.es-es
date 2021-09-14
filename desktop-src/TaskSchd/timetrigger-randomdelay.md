@@ -1,9 +1,9 @@
 ---
-title: TimeTrigger.RandomDelay, propiedad
-description: Para el scripting, obtiene o establece un tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. | TimeTrigger.RandomDelay, propiedad
+title: Propiedad TimeTrigger.RandomDelay
+description: Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. | Propiedad TimeTrigger.RandomDelay
 ms.assetid: ee55dd85-9696-4872-8670-f919fca7481d
 keywords:
-- Propiedades de RandomDelay Programador de tareas
+- Propiedad RandomDelay Programador de tareas
 - Propiedad RandomDelay Programador de tareas , objeto TimeTrigger
 - Objeto TimeTrigger Programador de tareas , propiedad RandomDelay
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cdbe297ace4fd34c2b5bf88db132e0573afd208052b50331ab571881b85831f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39c4acf4f38670332e723ac0824276695919cb1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118354767"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264927"
 ---
-# <a name="timetriggerrandomdelay-property"></a>TimeTrigger.RandomDelay, propiedad
+# <a name="timetriggerrandomdelay-property"></a>Propiedad TimeTrigger.RandomDelay
 
-Para el scripting, obtiene o establece un tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
+Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -44,7 +44,7 @@ Tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencade
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |

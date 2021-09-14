@@ -4,12 +4,12 @@ description: Los botones de radio se usan para seleccionar una de varias opcione
 ms.assetid: cf4568ff-1bc4-4770-bc54-a5d08ac0a60c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c560e4efa57790980d852ab2716248d5b1d7faff535592f3f2ca892f3dff0715
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9766e85f530281e4f843c4d39fd41fe35d4fb620
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119998145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070660"
 ---
 # <a name="radio-button-msaa-ui-element-reference"></a>Botón de radio (Referencia del elemento de la interfaz de usuario de MSAA)
 

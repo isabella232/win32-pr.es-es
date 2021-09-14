@@ -9,12 +9,12 @@ keywords:
 - Complementos de interfaz de usuario, constructor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0931e23b0234f55c6e8deefca95e9bd7feae07205c4977f4d1d19b94f2a5b350
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 17508626b4c39309095d826f7e8afd945316d3d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134588"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264743"
 ---
 # <a name="the-constructor"></a>The Constructor
 

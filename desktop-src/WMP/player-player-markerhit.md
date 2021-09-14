@@ -1,11 +1,11 @@
 ---
-title: Evento Player. MarkerHit
-description: El evento MarkerHit se produce cuando se alcanza un marcador. | Evento Player. MarkerHit
+title: Evento Player.MarkerHit
+description: El evento MarkerHit tiene lugar cuando se alcanza un marcador. | Evento Player.MarkerHit
 ms.assetid: c97aff61-6f06-4589-a75b-ac2af340cb1d
 keywords:
-- Media Player MarkerHit de eventos de Windows
-- Evento MarkerHit de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento MarkerHit
+- Evento MarkerHit Reproductor de Windows Media
+- Evento MarkerHit Reproductor de Windows Media , clase Player
+- Player class Reproductor de Windows Media , MarkerHit event
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 7cce6b9ca7c103e9a9e9151a7ff0467a59786b1e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690184"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070983"
 ---
-# <a name="playermarkerhit-event"></a>Evento Player. MarkerHit
+# <a name="playermarkerhit-event"></a>Evento Player.MarkerHit
 
-El evento **MarkerHit** se produce cuando se alcanza un marcador.
+El **evento MarkerHit** tiene lugar cuando se alcanza un marcador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ Player.MarkerHit(
 *MarkerNum* 
 </dt> <dd>
 
-**Número** (**largo**) que indica el número del marcador que se alcanzó.
+**Number** (**long**) que indica el número del marcador al que se ha alcanzado.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Este evento no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El valor de los parámetros de evento lo especifica Windows Media Player y se puede tener acceso a él o pasarlo a un método en un archivo JScript importado mediante el nombre de parámetro dado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluidas las mayúsculas y minúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede acceder a un método o pasarlo a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la mayúscula.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ El valor de los parámetros de evento lo especifica Windows Media Player y se pu
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

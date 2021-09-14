@@ -4,7 +4,7 @@ description: Acerca del objeto DVD
 ms.assetid: 6c255e9e-d537-4f4f-865c-b7fb26c8e413
 keywords:
 - Reproductor de Windows Media,OBJETO DVD
-- Reproductor de Windows Media de objetos, objeto DVD
+- Reproductor de Windows Media modelo de objetos, objeto DVD
 - object model,DVD object
 - Reproductor de Windows Media ActiveX control,objeto DVD
 - ActiveX control,objeto DVD
@@ -13,12 +13,12 @@ keywords:
 - Objeto DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 109587f30e7df0ff49b1cdbe5b45d818decb1a3f50ffe4a4ba9cde53d00833f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29b9432fa90e409b40f9e1acd3e7686628bca3d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118583767"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264767"
 ---
 # <a name="about-the-dvd-object"></a>Acerca del objeto DVD
 

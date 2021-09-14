@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f941ac90fa86cdd16dedf5349c0a6d614c57f49bc91009f5d62c56bb83144bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a73271098340ea0cf0a645472b5ef6333ae0f4b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118332080"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070750"
 ---
 # <a name="iwmpcontrolsstop-method"></a>IWMPControls::stop (método)
 
@@ -53,9 +53,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método hace que Reproductor de Windows Media liberar los recursos del sistema que usa, como el dispositivo de audio. Sin embargo, el elemento multimedia actual no se libera.
+Este método hace que Reproductor de Windows Media liberar todos los recursos del sistema que usa, como el dispositivo de audio. Sin embargo, el elemento multimedia actual no se libera.
 
 Cuando Reproductor de Windows Media se detiene, la posición de reproducción actual en el elemento multimedia se restablece al principio del elemento. Posteriormente, la **llamada a IWMPControls.play** iniciará la reproducción desde el principio del elemento multimedia. Para detener una operación de reproducción sin cambiar la posición actual, use el **método IWMPControls.pause.**
 
@@ -106,7 +106,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -114,7 +114,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

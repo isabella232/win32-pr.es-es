@@ -4,12 +4,12 @@ description: En este tema se resumen las principales diferencias entre Microsoft
 ms.assetid: ba963e53-6fb8-4bc1-8883-62547f52b0e2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2affcbb8471d5e9831aa788d65ee2d7dca71dac8b21337fe51dcfa8bdf8a9724
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c90c4bffd0646aea592e19adc51ca020b2c90d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119998295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070684"
 ---
 # <a name="microsoft-active-accessibility-and-ui-automation-compared"></a>Microsoft Active Accessibility y Automatización de la interfaz de usuario comparación
 
@@ -30,15 +30,15 @@ En este tema se resumen las principales diferencias entre Microsoft Active Acces
 
 ## <a name="basic-design-principles"></a>Principios básicos de diseño
 
-Aunque Microsoft Active Accessibility y Automatización de la interfaz de usuario son dos tecnologías diferentes, los principios de diseño básicos son similares. El propósito de ambas tecnologías es exponer información completa sobre los elementos de la interfaz de usuario usados en Windows aplicaciones. Los desarrolladores de herramientas de accesibilidad pueden usar esta información para crear software que haga que las aplicaciones que se ejecutan en Windows sea más accesible para las personas con discapacidades de visión, audiencia o movimiento.
+Aunque Microsoft Active Accessibility y Automatización de la interfaz de usuario son dos tecnologías diferentes, los principios de diseño básicos son similares. El propósito de ambas tecnologías es exponer información completa sobre los elementos de interfaz de usuario usados en Windows aplicaciones. Los desarrolladores de herramientas de accesibilidad pueden usar esta información para crear software que haga que las aplicaciones que se ejecutan en Windows sea más accesible para las personas con discapacidades de visión, audiencia o movimiento.
 
-Tanto Microsoft Active Accessibility como Automatización de la interfaz de usuario el modelo de objetos de interfaz de usuario como un árbol jerárquico, con raíz en el escritorio. Microsoft Active Accessibility elementos individuales de la interfaz de usuario como objetos accesibles y Automatización de la interfaz de usuario los representa como elementos *de automatización.* Ambos hacen referencia a la herramienta de accesibilidad o al programa de automatización de software como *el cliente*. Sin embargo, Microsoft Active Accessibility hace referencia a la aplicación o control que ofrece la interfaz de usuario para la accesibilidad como el servidor *,* mientras Automatización de la interfaz de usuario hace referencia a esto como *el proveedor*.
+Tanto Microsoft Active Accessibility como Automatización de la interfaz de usuario el modelo de objetos de interfaz de usuario como un árbol jerárquico, con raíz en el escritorio. Microsoft Active Accessibility representa elementos individuales de la *interfaz* de usuario como objetos accesibles y Automatización de la interfaz de usuario los representa como elementos *de automatización*. Ambos hacen referencia a la herramienta de accesibilidad o al programa de automatización de software como *el cliente*. Sin embargo, Microsoft Active Accessibility hace referencia a la aplicación o control que ofrece la interfaz de usuario para la accesibilidad como servidor *,* mientras que Automatización de la interfaz de usuario hace referencia a esto como *el proveedor*.
 
 ## <a name="properties-and-control-patterns"></a>Propiedades y patrones de control
 
 Microsoft Active Accessibility ofrece una única interfaz de Modelo de objetos componentes (COM) con un conjunto fijo y pequeño de propiedades. Automatización de la interfaz de usuario ofrece un conjunto más completo de propiedades, así como un conjunto de interfaces *extendidas denominadas* patrones de control para manipular objetos accesibles de manera que Microsoft Active Accessibility no.
 
-Para obtener más información, [vea información general Automatización de la interfaz de usuario propiedades y](uiauto-propertiesoverview.md) Automatización de la interfaz de usuario información general sobre patrones de [control.](uiauto-controlpatternsoverview.md)
+Para obtener más información, [vea Información general Automatización de la interfaz de usuario propiedades y](uiauto-propertiesoverview.md) Automatización de la interfaz de usuario información general sobre patrones de control [.](uiauto-controlpatternsoverview.md)
 
 ## <a name="msaa-roles-and-ui-automation-control-patterns"></a>Roles de MSAA y Automatización de la interfaz de usuario de control de MSAA
 
@@ -58,7 +58,7 @@ Con Automatización de la interfaz de usuario, a medida que se crean nuevos elem
 
 ## <a name="transitioning-from-msaa"></a>Transición desde MSAA
 
-El marco Windows automation API proporciona compatibilidad para la transición de servidores Microsoft Active Accessibility a Automatización de la interfaz de usuario proveedores. La [**interfaz IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) permite agregar propiedades de Automatización de la interfaz de usuario y patrones de control específicos a servidores Microsoft Active Accessibility heredados sin necesidad de volver a escribir toda la implementación. La **interfaz IAccessibleEx** también permite que los clientes de Microsoft Active Accessibility en proceso accedan Automatización de la interfaz de usuario las interfaces de proveedor directamente, en lugar de a través Automatización de la interfaz de usuario interfaces de cliente. Para obtener más información, [vea La interfaz IAccessibleEx](iaccessibleex.md).
+El marco Windows AUTOMATION API proporciona compatibilidad para la transición de servidores de Microsoft Active Accessibility a Automatización de la interfaz de usuario proveedores. La [**interfaz IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) permite agregar propiedades de Automatización de la interfaz de usuario y patrones de control específicos a servidores Microsoft Active Accessibility heredados sin necesidad de volver a escribir toda la implementación. La **interfaz IAccessibleEx** también permite que los clientes de Microsoft Active Accessibility en proceso accedan Automatización de la interfaz de usuario interfaces de proveedor directamente, en lugar de Automatización de la interfaz de usuario interfaces de cliente. Para obtener más información, [vea La interfaz IAccessibleEx](iaccessibleex.md).
 
 ## <a name="choosing-microsoft-active-accessibility-ui-automation-or-iaccessibleex"></a>Elegir Microsoft Active Accessibility, Automatización de la interfaz de usuario o IAccessibleEx
 
@@ -66,7 +66,7 @@ Esta sección le ayuda a determinar qué solución Windows API de Automation que
 
 ### <a name="new-applications-and-controls"></a>Nuevas aplicaciones y controles
 
-Si va a desarrollar una nueva aplicación o control, Microsoft recomienda usar Automatización de la interfaz de usuario. Aunque Microsoft Active Accessibility puede ser más fácil de implementar a corto plazo, las limitaciones inherentes a esta tecnología, como su modelo de objetos de edad y la incapacidad de admitir nuevos comportamientos de la interfaz de usuario o combinar roles, lo hace más difícil y costoso a largo plazo. Estas limitaciones se hacen especialmente evidentes al introducir nuevos controles.
+Si está desarrollando una nueva aplicación o control, Microsoft recomienda usar Automatización de la interfaz de usuario. Aunque Microsoft Active Accessibility puede ser más fácil de implementar a corto plazo, las limitaciones inherentes a esta tecnología, como su modelo de objetos de edad y la incapacidad de admitir nuevos comportamientos de interfaz de usuario o roles de combinación, lo hace más difícil y costoso a largo plazo. Estas limitaciones se hacen especialmente evidentes al introducir nuevos controles.
 
 El Automatización de la interfaz de usuario de objetos es más fácil de usar y es más flexible que el de Microsoft Active Accessibility. Los elementos de automatización de la interfaz de usuario reflejan la evolución de las interfaces de usuario, y los desarrolladores pueden definir patrones de control de Automatización de la interfaz de usuario, propiedades y eventos personalizados.
 
@@ -77,9 +77,9 @@ Microsoft Active Accessibility suele ejecutarse lentamente para los clientes que
 Si va a actualizar una aplicación o control existente basado en Microsoft Active Accessibility, considere la posibilidad de agregar compatibilidad con Automatización de la interfaz de usuario mediante la implementación de la [**interfaz IAccessibleEx.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) En primer lugar, asegúrese de que la aplicación o el control cumple los siguientes requisitos:
 
 -   La línea Microsoft Active Accessibility jerarquía del servidor de objetos accesibles debe estar bien organizada y libre de errores. [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) no puede corregir problemas con jerarquías de objetos accesibles existentes.
--   La [**implementación de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) debe cumplir tanto la especificación Microsoft Active Accessibility como la Automatización de la interfaz de usuario especificación. Microsoft proporciona un conjunto de herramientas para validar el cumplimiento de ambas especificaciones. Para obtener más información, vea [Herramientas de prueba.](testing-tools.md)
+-   La [**implementación de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) debe cumplir con la especificación Microsoft Active Accessibility y la especificación Automatización de la interfaz de usuario datos. Microsoft proporciona un conjunto de herramientas para validar el cumplimiento de ambas especificaciones. Para obtener más información, vea [Herramientas de prueba.](testing-tools.md)
 
-Si no se cumple alguno de estos requisitos, considere la posibilidad de implementar Automatización de la interfaz de usuario de forma nativa. Si es necesario, puede mantener las implementaciones Microsoft Active Accessibility de servidor heredados por motivos de compatibilidad con versiones anteriores. Desde una Automatización de la interfaz de usuario cliente, no hay ninguna diferencia entre los proveedores de Automatización de la interfaz de usuario y Microsoft Active Accessibility que implementan [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) correctamente.
+Si no se cumple alguno de estos requisitos, considere la posibilidad de implementar Automatización de la interfaz de usuario de forma nativa. Si es necesario, puede mantener las implementaciones de Microsoft Active Accessibility de servidor heredados por motivos de compatibilidad con versiones anteriores. Desde una Automatización de la interfaz de usuario cliente, no hay ninguna diferencia entre los proveedores de Automatización de la interfaz de usuario y Microsoft Active Accessibility que implementan [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) correctamente.
 
 Para obtener más información, [vea La interfaz IAccessibleEx](iaccessibleex.md).
 
@@ -96,7 +96,7 @@ Para obtener más información, [vea La interfaz IAccessibleEx](iaccessibleex.md
 [Automatización de la interfaz de usuario](entry-uiauto-win32.md)
 </dt> <dt>
 
-[Interfaz IAccessibleEx](iaccessibleex.md)
+[La interfaz IAccessibleEx](iaccessibleex.md)
 </dt> </dl>
 
  

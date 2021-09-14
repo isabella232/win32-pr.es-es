@@ -4,12 +4,12 @@ ms.assetid: B2A843D5-6A6B-4180-8B94-D032B1322798
 title: Compatibilidad con el formato de hardware de la característica de nivel 9.3 de Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05ad2746ce0d6e277f04783ae7140f3855fa7078e9a50b67d1e52bc827403c4b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 79185ddb360fe9359371671e3722372c3a1615f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264455"
 ---
 # <a name="format-support-for-direct3d-feature-10level9-93-hardware"></a>Compatibilidad con el formato de hardware de la característica de nivel 9.3 de Direct3D
 
@@ -111,21 +111,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | \- |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
+| Otros recuentos de muestras múltiples RT | \- |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -135,7 +135,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 128 |
-| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | ![requerido](images/letter-r.jpg) |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -161,31 +161,31 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
 | 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
-| Otros recuentos de varios muestreos RT | ![opcional](images/letter-o.jpg) |
+| Otros recuentos de muestras múltiples RT | ![opcional](images/letter-o.jpg) |
 | Resolución multimuestreo | ![requerido](images/letter-r.jpg) |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r32g32b32a32_uintsupfnssup-3"></a>DXGI_FORMAT_R32G32B32A32 \_ <sup>FNS de UINT</sup> (3)
+## <a name="dxgi_format_r32g32b32a32_uintsupfnssup-3"></a>DXGI_FORMAT_R32G32B32A32 \_ <sup>FNS de</sup> UINT (3)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 128 |
-| Compatibilidad con formatos | \- |
+| Compatibilidad con formato | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -311,21 +311,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -335,7 +335,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 96 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | ![requerido](images/letter-r.jpg) |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -361,21 +361,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | \- |
 | 4x Multisample RenderTarget | ![Dependiente](images/letter-d.jpg) |
 | 8x Multisample RenderTarget | ![Dependiente](images/letter-d.jpg) |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -385,7 +385,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 96 |
-| Compatibilidad con formato | \- |
+| Compatibilidad con formatos | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -511,31 +511,31 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | \- |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
+| Otros recuentos de muestras múltiples RT | \- |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r16g16b16a16_floatsupfnssup-10"></a>DXGI_FORMAT_R16G16B16A16 FLOAT \_ <sup>FNS</sup> (10)
+## <a name="dxgi_format_r16g16b16a16_floatsupfnssup-10"></a>DXGI_FORMAT_R16G16B16A16 \_ FLOAT<sup>FNS</sup> (10)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 64 |
-| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | ![requerido](images/letter-r.jpg) |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -561,16 +561,16 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
 | 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
-| Otros recuentos de varios muestreos RT | ![opcional](images/letter-o.jpg) |
+| Otros recuentos de muestras múltiples RT | ![opcional](images/letter-o.jpg) |
 | Resolución multimuestreo | ![requerido](images/letter-r.jpg) |
 | Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
@@ -761,21 +761,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -785,7 +785,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 64 |
-| Compatibilidad con formato | \- |
+| Compatibilidad con formatos | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -811,21 +811,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -835,7 +835,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 64 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | ![requerido](images/letter-r.jpg) |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -1061,31 +1061,31 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | \- |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
+| Otros recuentos de muestras múltiples RT | \- |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r32_float_x8x24_typelesssupfnssup-21"></a>DXGI_FORMAT_R32 \_ \_ FNS SIN TIPO FLOAT X8X24 \_ (21)<sup></sup>
+## <a name="dxgi_format_r32_float_x8x24_typelesssupfnssup-21"></a>DXGI_FORMAT_R32 FNS SIN TIPO \_ FLOAT \_ X8X24 \_ (21)<sup></sup>
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 64 |
-| Compatibilidad con formatos | \- |
+| Compatibilidad con formato | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -1111,31 +1111,31 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | \- |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
+| Otros recuentos de muestras múltiples RT | \- |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_x32_typeless_g8x24_uintsupfnssup-22"></a>DXGI_FORMAT_X32 \_ \_ FNS de UINT G8X24 sin TIPO \_ (22)<sup></sup>
+## <a name="dxgi_format_x32_typeless_g8x24_uintsupfnssup-22"></a>DXGI_FORMAT_X32 \_ \_ FNS de UINT G8X24 \_ <sup>SIN TIPO</sup> (22)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 64 |
-| Compatibilidad con formatos | \- |
+| Compatibilidad con formato | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -1331,7 +1331,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r10g10b10_xr_bias_a2_unormsupfnssup-89"></a>DXGI_FORMAT_R10G10B10 \_ \_ FNS \_ UNORM DE XR BIAS A2 \_ (89)<sup></sup>
+## <a name="dxgi_format_r10g10b10_xr_bias_a2_unormsupfnssup-89"></a>DXGI_FORMAT_R10G10B10 \_ FNS UNORM DE XR \_ BIAS \_ A2 \_ (89)<sup></sup>
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
@@ -1525,17 +1525,17 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Carga de varios muestras | \- |
 | Mostrar Scan-Out | ![requerido](images/letter-r.jpg) |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Salida del procesador de vídeo | ![requerido](images/letter-r.jpg) |
 | Recurso compartido | ![requerido](images/letter-r.jpg) |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r8g8b8a8_unorm_srgbsupfnssup-29"></a>DXGI_FORMAT_R8G8B8A8 \_ UNORM \_ SRGB<sup>FNS</sup> (29)
+## <a name="dxgi_format_r8g8b8a8_unorm_srgbsupfnssup-29"></a>DXGI_FORMAT_R8G8B8A8 \_ \_ UNORM SRGB<sup>FNS</sup> (29)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -1561,21 +1561,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
 | 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
-| Otros recuentos de muestras múltiples RT | ![opcional](images/letter-o.jpg) |
+| Otros recuentos de varios muestreos RT | ![opcional](images/letter-o.jpg) |
 | Resolución multimuestreo | ![requerido](images/letter-r.jpg) |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | ![requerido](images/letter-r.jpg) |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Salida del procesador de vídeo | ![requerido](images/letter-r.jpg) |
 | Recurso compartido | ![requerido](images/letter-r.jpg) |
@@ -1585,7 +1585,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | ![requerido](images/letter-r.jpg) |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -1631,7 +1631,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r8g8b8a8_snormsupfnssup-31"></a>DXGI_FORMAT_R8G8B8A8 \_ SNORM<sup>FNS</sup> (31)
+## <a name="dxgi_format_r8g8b8a8_snormsupfnssup-31"></a>DXGI_FORMAT_R8G8B8A8 \_ <sup>FNS</sup> de SNORM (31)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
@@ -1731,7 +1731,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r16g16_typelesssuppcssup-33"></a>DXGI_FORMAT_R16G16 \_ PC SIN<sup>TIPO</sup> (33)
+## <a name="dxgi_format_r16g16_typelesssuppcssup-33"></a>DXGI_FORMAT_R16G16 PC \_ SIN<sup>TIPO</sup> (33)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
@@ -1811,31 +1811,31 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
 | 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
-| Otros recuentos de muestras múltiples RT | ![opcional](images/letter-o.jpg) |
+| Otros recuentos de varios muestreos RT | ![opcional](images/letter-o.jpg) |
 | Resolución multimuestreo | ![requerido](images/letter-r.jpg) |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r16g16_unormsupfnssup-35"></a>DXGI_FORMAT_R16G16 \_ UNORM<sup>FNS</sup> (35)
+## <a name="dxgi_format_r16g16_unormsupfnssup-35"></a>DXGI_FORMAT_R16G16 \_ <sup>FNS de</sup> UNORM (35)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -1861,13 +1861,13 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
 | 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
 | Otros recuentos de muestras múltiples RT | ![opcional](images/letter-o.jpg) |
@@ -2031,7 +2031,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r32_typelesssuppcssup-39"></a>DXGI_FORMAT_R32 \_ PC SIN<sup>TIPO</sup> (39)
+## <a name="dxgi_format_r32_typelesssuppcssup-39"></a>DXGI_FORMAT_R32 PC \_ SIN<sup>TIPO</sup> (39)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
@@ -2081,7 +2081,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_d32_floatsupfnssup-40"></a>DXGI_FORMAT_D32 FLOAT \_ <sup>FNS</sup> (40)
+## <a name="dxgi_format_d32_floatsupfnssup-40"></a>DXGI_FORMAT_D32 \_ FLOAT<sup>FNS</sup> (40)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
@@ -2361,31 +2361,31 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | \- |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | \- |
 | 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
 | 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
-| Otros recuentos de varios muestreos RT | ![opcional](images/letter-o.jpg) |
+| Otros recuentos de muestras múltiples RT | ![opcional](images/letter-o.jpg) |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r24_unorm_x8_typelesssupfnssup-46"></a>DXGI_FORMAT_R24 \_ FNS SIN TIPO DE UNORM \_ X8 \_ (46)<sup></sup>
+## <a name="dxgi_format_r24_unorm_x8_typelesssupfnssup-46"></a>DXGI_FORMAT_R24 FN SIN TIPO \_ UNORM \_ X8 \_ (46)<sup></sup>
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
-| Compatibilidad con formatos | \- |
+| Compatibilidad con formato | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -2411,27 +2411,27 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | \- |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
+| Otros recuentos de muestras múltiples RT | \- |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_x24_typeless_g8_uintsupfnssup-47"></a>DXGI_FORMAT_X24 \_ \_ \_ <sup>FNS</sup> de UINT G8 sin TIPO (47)
+## <a name="dxgi_format_x24_typeless_g8_uintsupfnssup-47"></a>DXGI_FORMAT_X24 \_ \_ \_ <sup>FNS</sup> de UINT G8 SIN TIPO (47)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
@@ -2531,7 +2531,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r8g8_unormsupfnssup-49"></a>DXGI_FORMAT_R8G8 \_ <sup>FNS UNORM</sup> (49)
+## <a name="dxgi_format_r8g8_unormsupfnssup-49"></a>DXGI_FORMAT_R8G8 \_ <sup>FNS de</sup> UNORM (49)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 16 |
@@ -2625,17 +2625,17 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r8g8_snormsupfnssup-51"></a>DXGI_FORMAT_R8G8 \_ <sup>FNS de</sup> SNORM (51)
+## <a name="dxgi_format_r8g8_snormsupfnssup-51"></a>DXGI_FORMAT_R8G8 \_ <sup>FNS</sup> de SNORM (51)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 16 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -2661,21 +2661,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -2685,7 +2685,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 16 |
-| Compatibilidad con formato | \- |
+| Compatibilidad con formatos | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -2711,12 +2711,12 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
+| UAV Atomic Unsigned Min or Max | \- |
 | Cpu que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
@@ -2781,7 +2781,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r16_floatsupfnssup-54"></a>DXGI_FORMAT_R16 \_ FLOAT<sup>FNS</sup> (54)
+## <a name="dxgi_format_r16_floatsupfnssup-54"></a>DXGI_FORMAT_R16 FLOAT \_ <sup>FNS</sup> (54)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 16 |
@@ -3111,31 +3111,31 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_r8_unormsupfnssup-61"></a>DXGI_FORMAT_R8 \_ UNORM<sup>FNS</sup> (61)
+## <a name="dxgi_format_r8_unormsupfnssup-61"></a>DXGI_FORMAT_R8 \_ <sup>FNS de</sup> UNORM (61)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -3161,21 +3161,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | ![requerido](images/letter-r.jpg) |
@@ -3185,7 +3185,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formato | \- |
+| Compatibilidad con formatos | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -3211,21 +3211,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -3235,7 +3235,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formato | \- |
+| Compatibilidad con formatos | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -3261,21 +3261,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -3285,7 +3285,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formato | \- |
+| Compatibilidad con formatos | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -3481,7 +3481,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_g8r8_g8b8_unormsupfncsup-69"></a>DXGI_FORMAT_G8R8 \_ \_ <sup>FNC</sup> UNORM G8B8 (69)
+## <a name="dxgi_format_g8r8_g8b8_unormsupfncsup-69"></a>DXGI_FORMAT_G8R8 \_ \_ <sup>FNC</sup> unorm G8B8 (69)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 16 |
@@ -3585,7 +3585,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 4 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -3611,21 +3611,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | ![requerido](images/letter-r.jpg) |
@@ -3635,7 +3635,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 4 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -3661,7 +3661,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
@@ -3761,21 +3761,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
+| Otros recuentos de muestras múltiples RT | \- |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | ![requerido](images/letter-r.jpg) |
@@ -3785,157 +3785,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
-| Buffer | \- |
-| Búfer de vértices del ensamblador de entrada | \- |
-| Búfer de índice del ensamblador de entrada | \- |
-| Búfer de salida de flujo | \- |
-| Texture1D | \- |
-| Texture2D | ![requerido](images/letter-r.jpg) |
-| Texture3D | \- |
-| TextureCube | ![requerido](images/letter-r.jpg) |
-| Ejemplo de sombreador (solo ejemplo de punto) | ![requerido](images/letter-r.jpg) |
-| Ejemplo de sombreador (cualquier filtro) | ![requerido](images/letter-r.jpg) |
-| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
-| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
-| Recopilación del sombreador4 | \- |
-| Shader gather4 \_ c | \- |
-| Mipmap | ![requerido](images/letter-r.jpg) |
-| Generación automática de Mipmap | \- |
-| RenderTarget | \- |
-| Blendable RenderTarget | \- |
-| Operación lógica de fusión de salida | \- |
-| Profundidad/destino de galería de símbolos | \- |
-| UAV y SRV sin procesar | \- |
-| UAV estructurado y SRV | \- |
-| UAV con tipo | \- |
-| Almacén con tipo UAV | \- |
-| Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
-| Operaciones bit a bit atómicas de UAV | \- |
-| UAV Atomic Cmp&Store/Cmp&Exch | \- |
-| UAV Atomic Exchange | \- |
-| UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
-| 4x Multisample RenderTarget | \- |
-| 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
-| Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
-| Mostrar Scan-Out | \- |
-| Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
-| Entrada del procesador de vídeo | \- |
-| Salida del procesador de vídeo | \- |
-| Recurso compartido | ![requerido](images/letter-r.jpg) |
-| Recurso en mosaico | \- |
-
-## <a name="dxgi_format_bc3_typelesssuppccsup-76"></a>DXGI_FORMAT_BC3 \_ <sup>PCC</sup> SIN TIPO (76)
-| Destino | Soporte técnico |
-| - | - |
-| Bits por elemento (BPE) | 8 |
-| Compatibilidad con formatos | \- |
-| Buffer | \- |
-| Búfer de vértices del ensamblador de entrada | \- |
-| Búfer de índice del ensamblador de entrada | \- |
-| Búfer de salida de flujo | \- |
-| Texture1D | \- |
-| Texture2D | \- |
-| Texture3D | \- |
-| TextureCube | \- |
-| Ejemplo de sombreador (solo ejemplo de punto) | \- |
-| Ejemplo de sombreador (cualquier filtro) | \- |
-| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
-| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
-| Recopilación del sombreador4 | \- |
-| Shader gather4 \_ c | \- |
-| Mipmap | \- |
-| Generación automática de Mipmap | \- |
-| RenderTarget | \- |
-| Blendable RenderTarget | \- |
-| Operación lógica de fusión de salida | \- |
-| Profundidad/destino de galería de símbolos | \- |
-| UAV y SRV sin procesar | \- |
-| UAV estructurado y SRV | \- |
-| UAV con tipo | \- |
-| Almacén con tipo UAV | \- |
-| Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
-| Operaciones bit a bit atómicas de UAV | \- |
-| UAV Atomic Cmp&Store/Cmp&Exch | \- |
-| UAV Atomic Exchange | \- |
-| UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | \- |
-| 4x Multisample RenderTarget | \- |
-| 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
-| Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
-| Mostrar Scan-Out | \- |
-| Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
-| Entrada del procesador de vídeo | \- |
-| Salida del procesador de vídeo | \- |
-| Recurso compartido | \- |
-| Recurso en mosaico | \- |
-
-## <a name="dxgi_format_bc3_unormsupfncsup-77"></a>DXGI_FORMAT_BC3 \_ <sup>FNC UNORM</sup> (77)
-| Destino | Soporte técnico |
-| - | - |
-| Bits por elemento (BPE) | 8 |
-| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
-| Buffer | \- |
-| Búfer de vértices del ensamblador de entrada | \- |
-| Búfer de índice del ensamblador de entrada | \- |
-| Búfer de salida de flujo | \- |
-| Texture1D | \- |
-| Texture2D | ![requerido](images/letter-r.jpg) |
-| Texture3D | \- |
-| TextureCube | ![requerido](images/letter-r.jpg) |
-| Ejemplo de sombreador (solo ejemplo de punto) | ![requerido](images/letter-r.jpg) |
-| Ejemplo de sombreador (cualquier filtro) | ![requerido](images/letter-r.jpg) |
-| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
-| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
-| Recopilación del sombreador4 | \- |
-| Shader gather4 \_ c | \- |
-| Mipmap | ![requerido](images/letter-r.jpg) |
-| Generación automática de Mipmap | \- |
-| RenderTarget | \- |
-| Blendable RenderTarget | \- |
-| Operación lógica de fusión de salida | \- |
-| Profundidad/destino de galería de símbolos | \- |
-| UAV y SRV sin procesar | \- |
-| UAV estructurado y SRV | \- |
-| UAV con tipo | \- |
-| Almacén con tipo UAV | \- |
-| Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
-| Operaciones bit a bit atómicas de UAV | \- |
-| UAV Atomic Cmp&Store/Cmp&Exch | \- |
-| UAV Atomic Exchange | \- |
-| UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
-| 4x Multisample RenderTarget | \- |
-| 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
-| Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
-| Mostrar Scan-Out | \- |
-| Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
-| Entrada del procesador de vídeo | \- |
-| Salida del procesador de vídeo | \- |
-| Recurso compartido | ![requerido](images/letter-r.jpg) |
-| Recurso en mosaico | \- |
-
-## <a name="dxgi_format_bc3_unorm_srgbsupfncsup-78"></a>DXGI_FORMAT_BC3 \_ UNORM \_ SRGB<sup>FNC</sup> (78)
-| Destino | Soporte técnico |
-| - | - |
-| Bits por elemento (BPE) | 8 |
-| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -3981,10 +3831,10 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | ![requerido](images/letter-r.jpg) |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_bc4_typelesssuppccsup-79"></a>DXGI_FORMAT_BC4 \_ <sup>PCC</sup> SIN TIPO (79)
+## <a name="dxgi_format_bc3_typelesssuppccsup-76"></a>DXGI_FORMAT_BC3 \_ <sup>PCC</sup> SIN TIPO (76)
 | Destino | Soporte técnico |
 | - | - |
-| Bits por elemento (BPE) | 4 |
+| Bits por elemento (BPE) | 8 |
 | Compatibilidad con formato | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
@@ -4031,7 +3881,107 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_bc4_unormsupfncsup-80"></a>DXGI_FORMAT_BC4 \_ <sup>FNC DE</sup> UNORM (80)
+## <a name="dxgi_format_bc3_unormsupfncsup-77"></a>DXGI_FORMAT_BC3 \_ <sup>FNC de</sup> UNORM (77)
+| Destino | Soporte técnico |
+| - | - |
+| Bits por elemento (BPE) | 8 |
+| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Buffer | \- |
+| Búfer de vértices del ensamblador de entrada | \- |
+| Búfer de índice del ensamblador de entrada | \- |
+| Búfer de salida de flujo | \- |
+| Texture1D | \- |
+| Texture2D | ![requerido](images/letter-r.jpg) |
+| Texture3D | \- |
+| TextureCube | ![requerido](images/letter-r.jpg) |
+| Ejemplo de sombreador (solo ejemplo de punto) | ![requerido](images/letter-r.jpg) |
+| Ejemplo de sombreador (cualquier filtro) | ![requerido](images/letter-r.jpg) |
+| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
+| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
+| Recopilación del sombreador4 | \- |
+| Shader gather4 \_ c | \- |
+| Mipmap | ![requerido](images/letter-r.jpg) |
+| Generación automática de Mipmap | \- |
+| RenderTarget | \- |
+| Blendable RenderTarget | \- |
+| Operación lógica de fusión de salida | \- |
+| Profundidad/destino de galería de símbolos | \- |
+| UAV y SRV sin procesar | \- |
+| UAV estructurado y SRV | \- |
+| UAV con tipo | \- |
+| Almacén con tipo UAV | \- |
+| Carga con tipo UAV | \- |
+| Adición atómica de UAV | \- |
+| Operaciones bit a bit atómicas de UAV | \- |
+| UAV Atomic Cmp&Store/Cmp&Exch | \- |
+| UAV Atomic Exchange | \- |
+| UAV Atomic Signed Min o Max | \- |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| 4x Multisample RenderTarget | \- |
+| 8x Multisample RenderTarget | \- |
+| Otros recuentos de muestras múltiples RT | \- |
+| Resolución multimuestreo | \- |
+| Carga de varios muestras | \- |
+| Mostrar Scan-Out | \- |
+| Conversión dentro del diseño de bits | \- |
+| Compatibilidad con descodificador de vídeo | \- |
+| Entrada del procesador de vídeo | \- |
+| Salida del procesador de vídeo | \- |
+| Recurso compartido | ![requerido](images/letter-r.jpg) |
+| Recurso en mosaico | \- |
+
+## <a name="dxgi_format_bc3_unorm_srgbsupfncsup-78"></a>DXGI_FORMAT_BC3 \_ UNORM \_ SRGB<sup>FNC</sup> (78)
+| Destino | Soporte técnico |
+| - | - |
+| Bits por elemento (BPE) | 8 |
+| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Buffer | \- |
+| Búfer de vértices del ensamblador de entrada | \- |
+| Búfer de índice del ensamblador de entrada | \- |
+| Búfer de salida de flujo | \- |
+| Texture1D | \- |
+| Texture2D | ![requerido](images/letter-r.jpg) |
+| Texture3D | \- |
+| TextureCube | ![requerido](images/letter-r.jpg) |
+| Ejemplo de sombreador (solo ejemplo de punto) | ![requerido](images/letter-r.jpg) |
+| Ejemplo de sombreador (cualquier filtro) | ![requerido](images/letter-r.jpg) |
+| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
+| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
+| Recopilación del sombreador4 | \- |
+| Shader gather4 \_ c | \- |
+| Mipmap | ![requerido](images/letter-r.jpg) |
+| Generación automática de Mipmap | \- |
+| RenderTarget | \- |
+| Blendable RenderTarget | \- |
+| Operación lógica de fusión de salida | \- |
+| Profundidad/destino de galería de símbolos | \- |
+| UAV y SRV sin procesar | \- |
+| UAV estructurado y SRV | \- |
+| UAV con tipo | \- |
+| Almacén con tipo UAV | \- |
+| Carga con tipo UAV | \- |
+| UAV Atomic Add | \- |
+| Operaciones bit a bit atómicas de UAV | \- |
+| UAV Atomic Cmp&Store/Cmp&Exch | \- |
+| UAV Atomic Exchange | \- |
+| UAV Atomic Signed Min o Max | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| 4x Multisample RenderTarget | \- |
+| 8x Multisample RenderTarget | \- |
+| Otros recuentos de varios muestreos RT | \- |
+| Resolución multimuestreo | \- |
+| Carga multimuestreo | \- |
+| Mostrar Scan-Out | \- |
+| Conversión dentro del diseño de bits | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
+| Entrada del procesador de vídeo | \- |
+| Salida del procesador de vídeo | \- |
+| Recurso compartido | ![requerido](images/letter-r.jpg) |
+| Recurso en mosaico | \- |
+
+## <a name="dxgi_format_bc4_typelesssuppccsup-79"></a>DXGI_FORMAT_BC4 \_ <sup>PCC</sup> SIN TIPO (79)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 4 |
@@ -4076,6 +4026,56 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
 | Compatibilidad con descodificadores de vídeo | \- |
+| Entrada del procesador de vídeo | \- |
+| Salida del procesador de vídeo | \- |
+| Recurso compartido | \- |
+| Recurso en mosaico | \- |
+
+## <a name="dxgi_format_bc4_unormsupfncsup-80"></a>DXGI_FORMAT_BC4 \_ <sup>FNC de</sup> UNORM (80)
+| Destino | Soporte técnico |
+| - | - |
+| Bits por elemento (BPE) | 4 |
+| Compatibilidad con formato | \- |
+| Buffer | \- |
+| Búfer de vértices del ensamblador de entrada | \- |
+| Búfer de índice del ensamblador de entrada | \- |
+| Búfer de salida de flujo | \- |
+| Texture1D | \- |
+| Texture2D | \- |
+| Texture3D | \- |
+| TextureCube | \- |
+| Ejemplo de sombreador (solo ejemplo de punto) | \- |
+| Ejemplo de sombreador (cualquier filtro) | \- |
+| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
+| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
+| Recopilación del sombreador4 | \- |
+| Shader gather4 \_ c | \- |
+| Mipmap | \- |
+| Generación automática de Mipmap | \- |
+| RenderTarget | \- |
+| Blendable RenderTarget | \- |
+| Operación lógica de fusión de salida | \- |
+| Profundidad/destino de galería de símbolos | \- |
+| UAV y SRV sin procesar | \- |
+| UAV estructurado y SRV | \- |
+| UAV con tipo | \- |
+| Almacén con tipo UAV | \- |
+| Carga con tipo UAV | \- |
+| Adición atómica de UAV | \- |
+| Operaciones bit a bit atómicas de UAV | \- |
+| UAV Atomic Cmp&Store/Cmp&Exch | \- |
+| UAV Atomic Exchange | \- |
+| UAV Atomic Signed Min o Max | \- |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | \- |
+| 4x Multisample RenderTarget | \- |
+| 8x Multisample RenderTarget | \- |
+| Otros recuentos de muestras múltiples RT | \- |
+| Resolución multimuestreo | \- |
+| Carga de varios muestras | \- |
+| Mostrar Scan-Out | \- |
+| Conversión dentro del diseño de bits | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -4085,6 +4085,56 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 4 |
+| Compatibilidad con formato | \- |
+| Buffer | \- |
+| Búfer de vértices del ensamblador de entrada | \- |
+| Búfer de índice del ensamblador de entrada | \- |
+| Búfer de salida de flujo | \- |
+| Texture1D | \- |
+| Texture2D | \- |
+| Texture3D | \- |
+| TextureCube | \- |
+| Ejemplo de sombreador (solo ejemplo de punto) | \- |
+| Ejemplo de sombreador (cualquier filtro) | \- |
+| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
+| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
+| Recopilación del sombreador4 | \- |
+| Shader gather4 \_ c | \- |
+| Mipmap | \- |
+| Generación automática de Mipmap | \- |
+| RenderTarget | \- |
+| Blendable RenderTarget | \- |
+| Operación lógica de fusión de salida | \- |
+| Profundidad/destino de galería de símbolos | \- |
+| UAV y SRV sin procesar | \- |
+| UAV estructurado y SRV | \- |
+| UAV con tipo | \- |
+| Almacén con tipo UAV | \- |
+| Carga con tipo UAV | \- |
+| Adición atómica de UAV | \- |
+| Operaciones bit a bit atómicas de UAV | \- |
+| UAV Atomic Cmp&Store/Cmp&Exch | \- |
+| UAV Atomic Exchange | \- |
+| UAV Atomic Signed Min o Max | \- |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | \- |
+| 4x Multisample RenderTarget | \- |
+| 8x Multisample RenderTarget | \- |
+| Otros recuentos de muestras múltiples RT | \- |
+| Resolución multimuestreo | \- |
+| Carga de varios muestras | \- |
+| Mostrar Scan-Out | \- |
+| Conversión dentro del diseño de bits | \- |
+| Compatibilidad con descodificador de vídeo | \- |
+| Entrada del procesador de vídeo | \- |
+| Salida del procesador de vídeo | \- |
+| Recurso compartido | \- |
+| Recurso en mosaico | \- |
+
+## <a name="dxgi_format_bc5_typelesssuppccsup-82"></a>DXGI_FORMAT_BC5 \_ <sup>PCC</sup> SIN TIPO (82)
+| Destino | Soporte técnico |
+| - | - |
+| Bits por elemento (BPE) | 8 |
 | Compatibilidad con formatos | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
@@ -4131,61 +4181,11 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_bc5_typelesssuppccsup-82"></a>DXGI_FORMAT_BC5 \_ <sup>PCC</sup> SIN TIPO (82)
-| Destino | Soporte técnico |
-| - | - |
-| Bits por elemento (BPE) | 8 |
-| Compatibilidad con formato | \- |
-| Buffer | \- |
-| Búfer de vértices del ensamblador de entrada | \- |
-| Búfer de índice del ensamblador de entrada | \- |
-| Búfer de salida de flujo | \- |
-| Texture1D | \- |
-| Texture2D | \- |
-| Texture3D | \- |
-| TextureCube | \- |
-| Ejemplo de sombreador (solo ejemplo de punto) | \- |
-| Ejemplo de sombreador (cualquier filtro) | \- |
-| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
-| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
-| Recopilación del sombreador4 | \- |
-| Shader gather4 \_ c | \- |
-| Mipmap | \- |
-| Generación automática de Mipmap | \- |
-| RenderTarget | \- |
-| Blendable RenderTarget | \- |
-| Operación lógica de fusión de salida | \- |
-| Profundidad/destino de galería de símbolos | \- |
-| UAV y SRV sin procesar | \- |
-| UAV estructurado y SRV | \- |
-| UAV con tipo | \- |
-| Almacén con tipo UAV | \- |
-| Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
-| Operaciones bit a bit atómicas de UAV | \- |
-| UAV Atomic Cmp&Store/Cmp&Exch | \- |
-| UAV Atomic Exchange | \- |
-| UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
-| 4x Multisample RenderTarget | \- |
-| 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
-| Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
-| Mostrar Scan-Out | \- |
-| Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
-| Entrada del procesador de vídeo | \- |
-| Salida del procesador de vídeo | \- |
-| Recurso compartido | \- |
-| Recurso en mosaico | \- |
-
 ## <a name="dxgi_format_bc5_unormsupfncsup-83"></a>DXGI_FORMAT_BC5 \_ <sup>FNC de</sup> UNORM (83)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formato | \- |
+| Compatibilidad con formatos | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -4211,21 +4211,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -4235,7 +4235,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formato | \- |
+| Compatibilidad con formatos | \- |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -4261,31 +4261,31 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | \- |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
 | Entrada del procesador de vídeo | \- |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_b5g6r5_unormsupfnssup-85"></a>DXGI_FORMAT_B5G6R5 \_ UNORM<sup>FNS</sup> (85)
+## <a name="dxgi_format_b5g6r5_unormsupfnssup-85"></a>DXGI_FORMAT_B5G6R5 \_ <sup>FNS de</sup> UNORM (85)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 16 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -4311,13 +4311,13 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
 | 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
 | Otros recuentos de muestras múltiples RT | ![opcional](images/letter-o.jpg) |
@@ -4481,7 +4481,157 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | ![requerido](images/letter-r.jpg) |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_b8g8r8a8_unorm_srgbsupfnssup-91"></a>DXGI_FORMAT_B8G8R8A8 \_ UNORM \_ SRGB<sup>FNS</sup> (91)
+## <a name="dxgi_format_b8g8r8a8_unorm_srgbsupfnssup-91"></a>DXGI_FORMAT_B8G8R8A8 \_ \_ UNORM SRGB<sup>FNS</sup> (91)
+| Destino | Soporte técnico |
+| - | - |
+| Bits por elemento (BPE) | 32 |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
+| Buffer | \- |
+| Búfer de vértices del ensamblador de entrada | \- |
+| Búfer de índice del ensamblador de entrada | \- |
+| Búfer de salida de flujo | \- |
+| Texture1D | \- |
+| Texture2D | ![requerido](images/letter-r.jpg) |
+| Texture3D | ![requerido](images/letter-r.jpg) |
+| TextureCube | ![requerido](images/letter-r.jpg) |
+| Ejemplo de sombreador (solo ejemplo de punto) | ![requerido](images/letter-r.jpg) |
+| Ejemplo de sombreador (cualquier filtro) | ![requerido](images/letter-r.jpg) |
+| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
+| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
+| Recopilación del sombreador4 | \- |
+| Shader gather4 \_ c | \- |
+| Mipmap | ![requerido](images/letter-r.jpg) |
+| Generación automática de Mipmap | ![requerido](images/letter-r.jpg) |
+| RenderTarget | ![requerido](images/letter-r.jpg) |
+| Blendable RenderTarget | ![requerido](images/letter-r.jpg) |
+| Operación lógica de fusión de salida | \- |
+| Profundidad/destino de galería de símbolos | \- |
+| UAV y SRV sin procesar | \- |
+| UAV estructurado y SRV | \- |
+| UAV con tipo | \- |
+| Almacén con tipo UAV | \- |
+| Carga con tipo UAV | \- |
+| UAV Atomic Add | \- |
+| Operaciones bit a bit atómicas de UAV | \- |
+| UAV Atomic Cmp&Store/Cmp&Exch | \- |
+| UAV Atomic Exchange | \- |
+| UAV Atomic Signed Min o Max | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
+| 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
+| Otros recuentos de varios muestreos RT | ![opcional](images/letter-o.jpg) |
+| Resolución multimuestreo | ![requerido](images/letter-r.jpg) |
+| Carga multimuestreo | \- |
+| Mostrar Scan-Out | ![requerido](images/letter-r.jpg) |
+| Conversión dentro del diseño de bits | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
+| Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
+| Salida del procesador de vídeo | ![requerido](images/letter-r.jpg) |
+| Recurso compartido | ![requerido](images/letter-r.jpg) |
+| Recurso en mosaico | \- |
+
+## <a name="dxgi_format_b8g8r8x8_typelesssuppcssup-92"></a>DXGI_FORMAT_B8G8R8X8 PC \_ SIN<sup>TIPO</sup> (92)
+| Destino | Soporte técnico |
+| - | - |
+| Bits por elemento (BPE) | 32 |
+| Compatibilidad con formatos | \- |
+| Buffer | \- |
+| Búfer de vértices del ensamblador de entrada | \- |
+| Búfer de índice del ensamblador de entrada | \- |
+| Búfer de salida de flujo | \- |
+| Texture1D | \- |
+| Texture2D | \- |
+| Texture3D | \- |
+| TextureCube | \- |
+| Ejemplo de sombreador (solo ejemplo de punto) | \- |
+| Ejemplo de sombreador (cualquier filtro) | \- |
+| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
+| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
+| Recopilación del sombreador4 | \- |
+| Shader gather4 \_ c | \- |
+| Mipmap | \- |
+| Generación automática de Mipmap | \- |
+| RenderTarget | \- |
+| Blendable RenderTarget | \- |
+| Operación lógica de fusión de salida | \- |
+| Profundidad/destino de galería de símbolos | \- |
+| UAV y SRV sin procesar | \- |
+| UAV estructurado y SRV | \- |
+| UAV con tipo | \- |
+| Almacén con tipo UAV | \- |
+| Carga con tipo UAV | \- |
+| UAV Atomic Add | \- |
+| Operaciones bit a bit atómicas de UAV | \- |
+| UAV Atomic Cmp&Store/Cmp&Exch | \- |
+| UAV Atomic Exchange | \- |
+| UAV Atomic Signed Min o Max | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | \- |
+| 4x Multisample RenderTarget | \- |
+| 8x Multisample RenderTarget | \- |
+| Otros recuentos de varios muestreos RT | \- |
+| Resolución multimuestreo | \- |
+| Carga multimuestreo | \- |
+| Mostrar Scan-Out | \- |
+| Conversión dentro del diseño de bits | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
+| Entrada del procesador de vídeo | \- |
+| Salida del procesador de vídeo | \- |
+| Recurso compartido | \- |
+| Recurso en mosaico | \- |
+
+## <a name="dxgi_format_b8g8r8x8_unormsupfnssup-88"></a>DXGI_FORMAT_B8G8R8X8 \_ <sup>FNS de</sup> UNORM (88)
+| Destino | Soporte técnico |
+| - | - |
+| Bits por elemento (BPE) | 32 |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
+| Buffer | \- |
+| Búfer de vértices del ensamblador de entrada | \- |
+| Búfer de índice del ensamblador de entrada | \- |
+| Búfer de salida de flujo | \- |
+| Texture1D | \- |
+| Texture2D | ![requerido](images/letter-r.jpg) |
+| Texture3D | ![requerido](images/letter-r.jpg) |
+| TextureCube | ![requerido](images/letter-r.jpg) |
+| Ejemplo de sombreador (solo ejemplo de punto) | ![requerido](images/letter-r.jpg) |
+| Ejemplo de sombreador (cualquier filtro) | ![requerido](images/letter-r.jpg) |
+| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
+| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
+| Recopilación del sombreador4 | \- |
+| Shader gather4 \_ c | \- |
+| Mipmap | ![requerido](images/letter-r.jpg) |
+| Generación automática de Mipmap | ![requerido](images/letter-r.jpg) |
+| RenderTarget | ![requerido](images/letter-r.jpg) |
+| Blendable RenderTarget | ![requerido](images/letter-r.jpg) |
+| Operación lógica de fusión de salida | \- |
+| Profundidad/destino de galería de símbolos | \- |
+| UAV y SRV sin procesar | \- |
+| UAV estructurado y SRV | \- |
+| UAV con tipo | \- |
+| Almacén con tipo UAV | \- |
+| Carga con tipo UAV | \- |
+| UAV Atomic Add | \- |
+| Operaciones bit a bit atómicas de UAV | \- |
+| UAV Atomic Cmp&Store/Cmp&Exch | \- |
+| UAV Atomic Exchange | \- |
+| UAV Atomic Signed Min o Max | \- |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
+| 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
+| Otros recuentos de varios muestreos RT | ![opcional](images/letter-o.jpg) |
+| Resolución multimuestreo | ![requerido](images/letter-r.jpg) |
+| Carga multimuestreo | \- |
+| Mostrar Scan-Out | \- |
+| Conversión dentro del diseño de bits | \- |
+| Compatibilidad con descodificadores de vídeo | \- |
+| Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
+| Salida del procesador de vídeo | ![opcional](images/letter-o.jpg) |
+| Recurso compartido | ![requerido](images/letter-r.jpg) |
+| Recurso en mosaico | \- |
+
+## <a name="dxgi_format_b8g8r8x8_unorm_srgbsupfnssup-93"></a>DXGI_FORMAT_B8G8R8X8 \_ \_ UNORM SRGB<sup>FNS</sup> (93)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
@@ -4523,25 +4673,25 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Otros recuentos de muestras múltiples RT | ![opcional](images/letter-o.jpg) |
 | Resolución multimuestreo | ![requerido](images/letter-r.jpg) |
 | Carga de varios muestras | \- |
-| Mostrar Scan-Out | ![requerido](images/letter-r.jpg) |
+| Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
 | Compatibilidad con descodificador de vídeo | \- |
-| Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
-| Salida del procesador de vídeo | ![requerido](images/letter-r.jpg) |
+| Entrada del procesador de vídeo | \- |
+| Salida del procesador de vídeo | \- |
 | Recurso compartido | ![requerido](images/letter-r.jpg) |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_b8g8r8x8_typelesssuppcssup-92"></a>DXGI_FORMAT_B8G8R8X8 PC \_ SIN<sup>TIPO</sup> (92)
+## <a name="dxgi_format_ayuvsupvsup-100"></a>DXGI_FORMAT_AYUV<sup>V</sup> (100)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
-| Compatibilidad con formato | \- |
+| Compatibilidad con formato | ![opcional](images/letter-o.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
 | Búfer de salida de flujo | \- |
 | Texture1D | \- |
-| Texture2D | \- |
+| Texture2D | ![requerido](images/letter-r.jpg) |
 | Texture3D | \- |
 | TextureCube | \- |
 | Ejemplo de sombreador (solo ejemplo de punto) | \- |
@@ -4567,7 +4717,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
 | UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | \- |
+| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
 | Otros recuentos de muestras múltiples RT | \- |
@@ -4575,113 +4725,13 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
-| Entrada del procesador de vídeo | \- |
-| Salida del procesador de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | ![opcional](images/letter-o.jpg) |
+| Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
+| Salida del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_b8g8r8x8_unormsupfnssup-88"></a>DXGI_FORMAT_B8G8R8X8 \_ UNORM<sup>FNS</sup> (88)
-| Destino | Soporte técnico |
-| - | - |
-| Bits por elemento (BPE) | 32 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
-| Buffer | \- |
-| Búfer de vértices del ensamblador de entrada | \- |
-| Búfer de índice del ensamblador de entrada | \- |
-| Búfer de salida de flujo | \- |
-| Texture1D | \- |
-| Texture2D | ![requerido](images/letter-r.jpg) |
-| Texture3D | ![requerido](images/letter-r.jpg) |
-| TextureCube | ![requerido](images/letter-r.jpg) |
-| Ejemplo de sombreador (solo ejemplo de punto) | ![requerido](images/letter-r.jpg) |
-| Ejemplo de sombreador (cualquier filtro) | ![requerido](images/letter-r.jpg) |
-| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
-| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
-| Recopilación del sombreador4 | \- |
-| Shader gather4 \_ c | \- |
-| Mipmap | ![requerido](images/letter-r.jpg) |
-| Generación automática de Mipmap | ![requerido](images/letter-r.jpg) |
-| RenderTarget | ![requerido](images/letter-r.jpg) |
-| Blendable RenderTarget | ![requerido](images/letter-r.jpg) |
-| Operación lógica de fusión de salida | \- |
-| Profundidad/destino de galería de símbolos | \- |
-| UAV y SRV sin procesar | \- |
-| UAV estructurado y SRV | \- |
-| UAV con tipo | \- |
-| Almacén con tipo UAV | \- |
-| Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
-| Operaciones bit a bit atómicas de UAV | \- |
-| UAV Atomic Cmp&Store/Cmp&Exch | \- |
-| UAV Atomic Exchange | \- |
-| UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
-| 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
-| 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
-| Otros recuentos de muestras múltiples RT | ![opcional](images/letter-o.jpg) |
-| Resolución multimuestreo | ![requerido](images/letter-r.jpg) |
-| Carga de varios muestras | \- |
-| Mostrar Scan-Out | \- |
-| Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | \- |
-| Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
-| Salida del procesador de vídeo | ![opcional](images/letter-o.jpg) |
-| Recurso compartido | ![requerido](images/letter-r.jpg) |
-| Recurso en mosaico | \- |
-
-## <a name="dxgi_format_b8g8r8x8_unorm_srgbsupfnssup-93"></a>DXGI_FORMAT_B8G8R8X8 \_ \_ UNORM SRGB<sup>FNS</sup> (93)
-| Destino | Soporte técnico |
-| - | - |
-| Bits por elemento (BPE) | 32 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
-| Buffer | \- |
-| Búfer de vértices del ensamblador de entrada | \- |
-| Búfer de índice del ensamblador de entrada | \- |
-| Búfer de salida de flujo | \- |
-| Texture1D | \- |
-| Texture2D | ![requerido](images/letter-r.jpg) |
-| Texture3D | ![requerido](images/letter-r.jpg) |
-| TextureCube | ![requerido](images/letter-r.jpg) |
-| Ejemplo de sombreador (solo ejemplo de punto) | ![requerido](images/letter-r.jpg) |
-| Ejemplo de sombreador (cualquier filtro) | ![requerido](images/letter-r.jpg) |
-| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
-| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
-| Recopilación del sombreador4 | \- |
-| Shader gather4 \_ c | \- |
-| Mipmap | ![requerido](images/letter-r.jpg) |
-| Generación automática de Mipmap | ![requerido](images/letter-r.jpg) |
-| RenderTarget | ![requerido](images/letter-r.jpg) |
-| Blendable RenderTarget | ![requerido](images/letter-r.jpg) |
-| Operación lógica de fusión de salida | \- |
-| Profundidad/destino de galería de símbolos | \- |
-| UAV y SRV sin procesar | \- |
-| UAV estructurado y SRV | \- |
-| UAV con tipo | \- |
-| Almacén con tipo UAV | \- |
-| Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
-| Operaciones bit a bit atómicas de UAV | \- |
-| UAV Atomic Cmp&Store/Cmp&Exch | \- |
-| UAV Atomic Exchange | \- |
-| UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
-| 4x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
-| 8x Multisample RenderTarget | ![opcional](images/letter-o.jpg) |
-| Otros recuentos de varios muestreos RT | ![opcional](images/letter-o.jpg) |
-| Resolución multimuestreo | ![requerido](images/letter-r.jpg) |
-| Carga multimuestreo | \- |
-| Mostrar Scan-Out | \- |
-| Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
-| Entrada del procesador de vídeo | \- |
-| Salida del procesador de vídeo | \- |
-| Recurso compartido | ![requerido](images/letter-r.jpg) |
-| Recurso en mosaico | \- |
-
-## <a name="dxgi_format_ayuvsupvsup-100"></a>DXGI_FORMAT_AYUV<sup>V</sup> (100)
+## <a name="dxgi_format_y410supvsup-101"></a>DXGI_FORMAT_Y410<sup>V</sup> (101)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
@@ -4731,61 +4781,11 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_y410supvsup-101"></a>DXGI_FORMAT_Y410<sup>V</sup> (101)
-| Destino | Soporte técnico |
-| - | - |
-| Bits por elemento (BPE) | 32 |
-| Compatibilidad con formato | ![opcional](images/letter-o.jpg) |
-| Buffer | \- |
-| Búfer de vértices del ensamblador de entrada | \- |
-| Búfer de índice del ensamblador de entrada | \- |
-| Búfer de salida de flujo | \- |
-| Texture1D | \- |
-| Texture2D | ![requerido](images/letter-r.jpg) |
-| Texture3D | \- |
-| TextureCube | \- |
-| Ejemplo de sombreador (solo ejemplo de punto) | \- |
-| Ejemplo de sombreador (cualquier filtro) | \- |
-| Ejemplo de \_ sombreador c (filtro de comparación) | \- |
-| Ejemplo de sombreador (filtro mono de 1 bit) | \- |
-| Recopilación del sombreador4 | \- |
-| Shader gather4 \_ c | \- |
-| Mipmap | \- |
-| Generación automática de Mipmap | \- |
-| RenderTarget | \- |
-| Blendable RenderTarget | \- |
-| Operación lógica de fusión de salida | \- |
-| Profundidad/destino de galería de símbolos | \- |
-| UAV y SRV sin procesar | \- |
-| UAV estructurado y SRV | \- |
-| UAV con tipo | \- |
-| Almacén con tipo UAV | \- |
-| Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
-| Operaciones bit a bit atómicas de UAV | \- |
-| UAV Atomic Cmp&Store/Cmp&Exch | \- |
-| UAV Atomic Exchange | \- |
-| UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
-| 4x Multisample RenderTarget | \- |
-| 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
-| Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
-| Mostrar Scan-Out | \- |
-| Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | ![opcional](images/letter-o.jpg) |
-| Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
-| Salida del procesador de vídeo | ![opcional](images/letter-o.jpg) |
-| Recurso compartido | \- |
-| Recurso en mosaico | \- |
-
 ## <a name="dxgi_format_y416supvsup-102"></a>DXGI_FORMAT_Y416<sup>V</sup> (102)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 64 |
-| Compatibilidad con formato | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con formatos | ![opcional](images/letter-o.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -4811,21 +4811,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con descodificadores de vídeo | ![opcional](images/letter-o.jpg) |
 | Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Salida del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Recurso compartido | \- |
@@ -4835,7 +4835,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formato | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con formatos | ![opcional](images/letter-o.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -4861,21 +4861,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con descodificadores de vídeo | ![opcional](images/letter-o.jpg) |
 | Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Salida del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Recurso compartido | \- |
@@ -4885,7 +4885,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 16 |
-| Compatibilidad con formato | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con formatos | ![opcional](images/letter-o.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -4911,21 +4911,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con descodificadores de vídeo | ![opcional](images/letter-o.jpg) |
 | Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Salida del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Recurso compartido | \- |
@@ -4935,7 +4935,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 16 |
-| Compatibilidad con formato | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con formatos | ![opcional](images/letter-o.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -4961,31 +4961,31 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con descodificadores de vídeo | ![opcional](images/letter-o.jpg) |
 | Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Salida del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_420_opaquesupvsup-106"></a>DXGI_FORMAT_420 \_ OPAQUE<sup>V</sup> (106)
+## <a name="dxgi_format_420_opaquesupvsup-106"></a>DXGI_FORMAT_420 OPAQUE \_ <sup>V</sup> (106)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -5111,21 +5111,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con descodificadores de vídeo | ![opcional](images/letter-o.jpg) |
 | Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Salida del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Recurso compartido | \- |
@@ -5135,7 +5135,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 32 |
-| Compatibilidad con formato | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con formatos | ![opcional](images/letter-o.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -5161,21 +5161,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| Adición atómica de UAV | \- |
+| UAV Atomic Add | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min o Max | \- |
-| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min or Max | \- |
+| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de muestras múltiples RT | \- |
+| Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga de varios muestras | \- |
+| Carga multimuestreo | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificador de vídeo | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con descodificadores de vídeo | ![opcional](images/letter-o.jpg) |
 | Entrada del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Salida del procesador de vídeo | ![opcional](images/letter-o.jpg) |
 | Recurso compartido | \- |
@@ -5272,10 +5272,10 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | 8x Multisample RenderTarget | \- |
 | Otros recuentos de varios muestreos RT | \- |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | ![requerido](images/letter-r.jpg) |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -5285,7 +5285,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formatos | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con formato | ![opcional](images/letter-o.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -5311,21 +5311,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
+| Otros recuentos de muestras múltiples RT | \- |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | ![requerido](images/letter-r.jpg) |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -5335,7 +5335,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 8 |
-| Compatibilidad con formatos | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con formato | ![opcional](images/letter-o.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -5361,21 +5361,21 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
+| Otros recuentos de muestras múltiples RT | \- |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | ![requerido](images/letter-r.jpg) |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
@@ -5385,7 +5385,7 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 16 |
-| Compatibilidad con formatos | ![opcional](images/letter-o.jpg) |
+| Compatibilidad con formato | ![opcional](images/letter-o.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -5411,31 +5411,31 @@ Para comprobar mediante programación la compatibilidad con formato en D3D11 y D
 | UAV con tipo | \- |
 | Almacén con tipo UAV | \- |
 | Carga con tipo UAV | \- |
-| UAV Atomic Add | \- |
+| Adición atómica de UAV | \- |
 | Operaciones bit a bit atómicas de UAV | \- |
 | UAV Atomic Cmp&Store/Cmp&Exch | \- |
 | UAV Atomic Exchange | \- |
 | UAV Atomic Signed Min o Max | \- |
-| UAV Atomic Unsigned Min or Max | \- |
-| CPU que se puede bloquear | ![requerido](images/letter-r.jpg) |
+| UAV Atomic Unsigned Min o Max | \- |
+| Cpu que se puede bloquear | ![requerido](images/letter-r.jpg) |
 | 4x Multisample RenderTarget | \- |
 | 8x Multisample RenderTarget | \- |
-| Otros recuentos de varios muestreos RT | \- |
+| Otros recuentos de muestras múltiples RT | \- |
 | Resolución multimuestreo | \- |
-| Carga multimuestreo | \- |
+| Carga de varios muestras | \- |
 | Mostrar Scan-Out | \- |
 | Conversión dentro del diseño de bits | \- |
-| Compatibilidad con descodificadores de vídeo | \- |
+| Compatibilidad con descodificador de vídeo | \- |
 | Entrada del procesador de vídeo | ![requerido](images/letter-r.jpg) |
 | Salida del procesador de vídeo | \- |
 | Recurso compartido | \- |
 | Recurso en mosaico | \- |
 
-## <a name="dxgi_format_b4g4r4a4_unormsupfnssup-115"></a>DXGI_FORMAT_B4G4R4A4 \_ <sup>FNS de</sup> UNORM (115)
+## <a name="dxgi_format_b4g4r4a4_unormsupfnssup-115"></a>DXGI_FORMAT_B4G4R4A4 \_ UNORM<sup>FNS</sup> (115)
 | Destino | Soporte técnico |
 | - | - |
 | Bits por elemento (BPE) | 16 |
-| Compatibilidad con formatos | ![requerido](images/letter-r.jpg) |
+| Compatibilidad con formato | ![requerido](images/letter-r.jpg) |
 | Buffer | \- |
 | Búfer de vértices del ensamblador de entrada | \- |
 | Búfer de índice del ensamblador de entrada | \- |
@@ -5517,6 +5517,6 @@ El propósito del formato puede cambiar de un nivel de característica de hardwa
 
 [Implementación de búferes de sombra para el nivel 9 de característica de Direct3D](/previous-versions/windows/apps/jj262110(v=win.10))
 
-[Asignar formatos heredados](../direct3d10/d3d10-graphics-programming-guide-resources-legacy-formats.md)
+[Asignación de formatos heredados](../direct3d10/d3d10-graphics-programming-guide-resources-legacy-formats.md)
 
 [Guía de programación para DXGI](dx-graphics-dxgi-overviews.md)

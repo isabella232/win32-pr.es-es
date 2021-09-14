@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92398b8e01e4ad10971cbe19454fed52b0cb0b4f88565e78e597ef4eacdfc1d2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 814f22a94d1e69c2d101154c6f4a3984a67bd75e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119736375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071010"
 ---
 # <a name="equalizersettingsgainlevel8"></a>EQUALIZERSETTINGS.gainLevel8
 
@@ -31,7 +31,7 @@ El **atributo gainLevel8** especifica o recupera el nivel de ganancia de la band
 
 Este atributo es un número de lectura y **escritura** (**float**) con un valor que normalmente oscila entre 20 y +20. Tiene un valor predeterminado de cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo ajusta la parte del espectro de frecuencia de audio centrada en 4 kHz.
 

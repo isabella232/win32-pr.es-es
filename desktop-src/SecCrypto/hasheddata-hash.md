@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 2828f54f754591d1b0027a6c892dc57e8b5cdfecc5e9759985b74b1dffef9fdc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d36973340a7dbf67f8a8b0d1aa4cd5738ef97d74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119006583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265388"
 ---
 # <a name="hasheddatahash-method"></a>Método HashedData.Hash
 
-\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use [**la clase HashAlgorithm**](/previous-versions/windows/) en el espacio [**de nombres System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use [**la clase HashAlgorithm en**](/previous-versions/windows/) el espacio de nombres [**System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
 El **método Hash** crea un hash de la cadena especificada.
 
@@ -52,9 +52,9 @@ Cadena que contiene el valor que se debe hash.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para crear el hash de una gran cantidad de datos, llame al **método Hash** para cada fragmento de datos. El hash de cada fragmento de datos se concatena con la [**propiedad Value**](hasheddata-value.md) hasta que se lee la propiedad . El contenido de la **propiedad Value** se restablece cuando se lee la propiedad .
+Para crear el hash de una gran cantidad de datos, llame al **método Hash** para cada fragmento de datos. El hash de cada fragmento de datos se concatena con la [**propiedad Value**](hasheddata-value.md) hasta que se lee la propiedad. El contenido de la **propiedad Value** se restablece cuando se lee la propiedad .
 
 ## <a name="requirements"></a>Requisitos
 

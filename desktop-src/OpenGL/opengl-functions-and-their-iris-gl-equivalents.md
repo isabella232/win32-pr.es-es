@@ -5,16 +5,16 @@ ms.assetid: 4b279b1d-030f-46e6-a8c5-53b308fcd374
 keywords:
 - Equivalentes de OpenGL,IRIS GL
 - Porte de IRIS GL, equivalentes de OpenGL
-- porting from IRIS GL,OpenGL equivalents (Porting from IRIS GL,OpenGL equivalents)
-- porte a OpenGL desde IRIS GL, equivalentes de IRIS GL
+- porting from IRIS GL,OpenGL equivalents
+- porting to OpenGL from IRIS GL,IRIS GL equivalents
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ac4e2b5e17a08b39d7b776306014e0a28512951fceb7ae47a12b505efcc7620
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d972d0e2f2fd955a42e3c7f3b7ef7070cea7fbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118936855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265615"
 ---
 # <a name="opengl-functions-and-their-iris-gl-equivalents"></a>Funciones OpenGL y sus equivalentes de IRIS GL
 
@@ -22,13 +22,13 @@ En este apéndice se enumeran las funciones GL de IRIS y sus funciones OpenGL eq
 
 > [!Note]
 >
-> Las siguientes funciones de OpenGL enumeradas pueden comportarse de forma ligeramente diferente a los comandos GL de IRIS, y los parámetros también pueden ser diferentes. Para obtener más información sobre las diferencias entre IRIS GL y OpenGL, vea Diferencias de [IRIS GL y OpenGL.](iris-gl-and-opengl-differences.md)
+> Las siguientes funciones de OpenGL enumeradas pueden comportarse de forma ligeramente diferente a los comandos DE IRIS GL, y los parámetros también pueden ser diferentes. Para obtener más información sobre las diferencias entre IRIS GL y OpenGL, vea Diferencias de [IRIS GL y OpenGL.](iris-gl-and-opengl-differences.md)
 
  
 
 
 
-| Función GL de IRIS | Función OpenGL, GLU o Windows de trabajo                                                                                                                                                                                                |
+| Función IRIS GL | OpenGL, GLU o Windows función                                                                                                                                                                                                |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | acbuf            | [**glAccum**](glaccum.md)                                                                                                                                                                                                      |
 | acsize           | [**ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat)                                                                                                                                                                                  |
@@ -58,10 +58,10 @@ En este apéndice se enumeran las funciones GL de IRIS y sus funciones OpenGL eq
 | charstr          | [**glCallLists**](glcalllists.md)                                                                                                                                                                                              |
 | chunksize        | No necesaria.                                                                                                                                                                                                                     |
 | Circ             | [**gluDisk**](gludisk.md)                                                                                                                                                                                                      |
-| clear            | [**glClear**](glclear.md) ( GL \_ COLOR BUFFER BIT \_ \_ )                                                                                                                                                                           |
+| clear            | [**glClear**](glclear.md) (GL \_ COLOR BUFFER BIT \_ \_ )                                                                                                                                                                           |
 | clearhitcode     | No compatible.                                                                                                                                                                                                                  |
 | clipplane        | [**glClipPlane**](glclipplane.md)                                                                                                                                                                                              |
-| cl cl cl lc            | Use Windows para la administración de teclado.                                                                                                                                                                                            |
+| cl cl            | Use Windows para la administración de teclado.                                                                                                                                                                                            |
 | clkoff           | Use Windows para la administración de teclado.                                                                                                                                                                                            |
 | closeobj         | [**glEndList**](glendlist.md)                                                                                                                                                                                                  |
 | cmode            | [**ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat)                                                                                                                                                                                  |
@@ -144,7 +144,7 @@ En este apéndice se enumeran las funciones GL de IRIS y sus funciones OpenGL eq
 |                  | [**wglGetCurrentContext**](/windows/desktop/api/wingdi/nf-wingdi-wglgetcurrentcontext)                                                                                                                                                                            |
 | getdrawmode      | [**wglGetCurrentContext**](/windows/desktop/api/wingdi/nf-wingdi-wglgetcurrentcontext)                                                                                                                                                                            |
 | getfont          | Use Windows para las fuentes.                                                                                                                                                                                                          |
-| getgdesc         | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md), [**DescribePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-describepixelformat), [**wglGetCurrentContext**](/windows/desktop/api/wingdi/nf-wingdi-wglgetcurrentcontext) , [**wglGetCurrentDC**](/windows/desktop/api/wingdi/nf-wingdi-wglgetcurrentdc) |
+| getgdesc         | [**glGet,**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) [**DescribePixelFormat,**](/windows/desktop/api/wingdi/nf-wingdi-describepixelformat) [**wglGetCurrentContext**](/windows/desktop/api/wingdi/nf-wingdi-wglgetcurrentcontext) , [**wglGetCurrentDC**](/windows/desktop/api/wingdi/nf-wingdi-wglgetcurrentdc) |
 | getgpos          | No compatible.                                                                                                                                                                                                                  |
 | getheight        | Use Windows para las fuentes.                                                                                                                                                                                                          |
 | gethitcode       | No compatible.                                                                                                                                                                                                                  |
@@ -161,11 +161,11 @@ En este apéndice se enumeran las funciones GL de IRIS y sus funciones OpenGL eq
 | getopenobj       | No compatible.                                                                                                                                                                                                                  |
 | getorigin        | Use Windows para ventanas.                                                                                                                                                                                                      |
 | getpattern       | [**glGetPolygonStipple**](glgetpolygonstipple.md)                                                                                                                                                                              |
-| getplanes        | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ RED BITS ), \_ **glGet** ( GL \_ GREEN BITS ), \_ **glGet** ( GL \_ BLUE BITS \_ )                                                                         |
+| getplanes        | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) (GL \_ RED \_ BITS), **glGet** (GL \_ GREEN \_ BITS), **glGet** (GL \_ BLUE BITS \_ )                                                                         |
 | getport          | Use Windows para ventanas.                                                                                                                                                                                                      |
 | getresetls       | No compatible.                                                                                                                                                                                                                  |
 | getscrbox        | No compatible.                                                                                                                                                                                                                  |
-| getscrmask       | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ DESERTE \_ DE LA CAJA )                                                                                                                                   |
+| getscrazsk       | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ \_ SETEADOR BOX )                                                                                                                                   |
 | getshade         | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ CURRENT \_ INDEX )                                                                                                                                 |
 | getsize          | Use Windows para ventanas.                                                                                                                                                                                                      |
 | getsm            | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ SHADE \_ MODEL )                                                                                                                                   |
@@ -181,7 +181,7 @@ En este apéndice se enumeran las funciones GL de IRIS y sus funciones OpenGL eq
 | glcompat         | No compatible.                                                                                                                                                                                                                  |
 | greset           | No compatible.                                                                                                                                                                                                                  |
 | gRGBcolor        | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ CURRENT RASTER COLOR \_ \_ )                                                                                                                         |
-| gRGBcursor       | Use Windows para cursores.                                                                                                                                                                                                        |
+| gRGBcursor       | Use Windows para los cursores.                                                                                                                                                                                                        |
 | máscara gRGB         | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ COLOR \_ WRITEMASK )                                                                                                                               |
 | gselect          | [**glSelectBuffer**](glselectbuffer.md)                                                                                                                                                                                        |
 | Gsync            | Use Windows para ventanas.                                                                                                                                                                                                      |
@@ -196,13 +196,13 @@ En este apéndice se enumeran las funciones GL de IRIS y sus funciones OpenGL eq
 | istag            | No compatible.                                                                                                                                                                                                                  |
 | keepaspect       | Use Windows para ventanas.                                                                                                                                                                                                      |
 | lampoff          | No compatible.                                                                                                                                                                                                                  |
-| lampon           | No compatible.                                                                                                                                                                                                                  |
+| lampón           | No compatible.                                                                                                                                                                                                                  |
 | linesmooth       | [**glEnable**](glenable.md) ( GL \_ LINE \_ SMOOTH )                                                                                                                                                                               |
 | linewidth        | [**glLineWidth**](gllinewidth.md)                                                                                                                                                                                              |
 | linewidthf       | [**glLineWidth**](gllinewidth.md)                                                                                                                                                                                              |
 | lmbind           | [**glEnable**](glenable.md) ( GL \_ LIGHTING ), **glEnable** ( GL \_ LIGHT )                                                                                                                                                       |
 | lmcolor          | [**glColorMaterial**](glcolormaterial.md)                                                                                                                                                                                      |
-| lmdef            | [**glMaterial**](glmaterial-functions.md), [**glLight**](gllight-functions.md), [**glLightModel**](gllightmodel-functions.md)                                                                                                |
+| lmdef            | [**glMaterial,**](glmaterial-functions.md) [**glLight**](gllight-functions.md), [**glLightModel**](gllightmodel-functions.md)                                                                                                |
 | loadmatrix       | [**glLoadMatrix**](glloadmatrix.md)                                                                                                                                                                                            |
 | loadname         | [**glLoadName**](glloadname.md)                                                                                                                                                                                                |
 | logicop          | [**glLogicOp**](gllogicop.md)                                                                                                                                                                                                  |
@@ -251,15 +251,15 @@ En este apéndice se enumeran las funciones GL de IRIS y sus funciones OpenGL eq
 | pclos            | No compatible. (Vea [**glEnd**](glend.md)).                                                                                                                                                                                    |
 | Pdr              | No compatible. (Vea [**glVertex).**](glvertex-functions.md)                                                                                                                                                                    |
 | perspectiva      | [**gluPerspective**](gluperspective.md)                                                                                                                                                                                        |
-| Elegir             | [**gluPickMatrix**](glupickmatrix.md), [**glRenderMode**](glrendermode.md) ( GL \_ SELECT )                                                                                                                                     |
+| Elegir             | [**gluPickMatrix**](glupickmatrix.md), [**glRenderMode**](glrendermode.md) (GL \_ SELECT )                                                                                                                                     |
 | picksize         | [**gluPickMatrix**](glupickmatrix.md)                                                                                                                                                                                          |
-| modemode          | [**glPixelTransfer**](glpixeltransfer.md) y 3                                                                                                                                                                                |
+| mode          | [**glPixelTransfer**](glpixeltransfer.md) y 3                                                                                                                                                                                |
 | Pmv              | No compatible. (Vea [**glBegin**](glbegin.md) y [**glVertex).**](glvertex-functions.md)                                                                                                                                     |
 | pnt              | [**glBegin**](glbegin.md) ( GL \_ POINTS )                                                                                                                                                                                       |
 | pntsize          | [**glPointSize**](glpointsize.md)                                                                                                                                                                                              |
 | pntsizef         | [**glPointSize**](glpointsize.md)                                                                                                                                                                                              |
 | pntsmooth        | [**glEnable**](glenable.md) ( GL \_ POINT \_ SMOOTH )                                                                                                                                                                              |
-| polarview        | No compatible. (Vea [**glRotate**](glrotate.md) [**y glTranslate).**](gltranslate.md)                                                                                                                                       |
+| polarview        | No compatible. (Vea [**glRotate**](glrotate.md) y [**glTranslate).**](gltranslate.md)                                                                                                                                       |
 | polf             | No compatible.                                                                                                                                                                                                                  |
 | Polivinílico             | No compatible.                                                                                                                                                                                                                  |
 | polymode         | [**glPolygonMode**](glpolygonmode.md)                                                                                                                                                                                          |
@@ -268,7 +268,7 @@ En este apéndice se enumeran las funciones GL de IRIS y sus funciones OpenGL eq
 | popmatrix        | [**glPopMatrix**](glpopmatrix.md)                                                                                                                                                                                              |
 | popname          | [**glPopName**](glpopname.md)                                                                                                                                                                                                  |
 | popviewport      | [**glPopAttrib**](glpopattrib.md)                                                                                                                                                                                              |
-| prefposition     | Use Windows para ventanas.                                                                                                                                                                                                      |
+| preposición     | Use Windows para ventanas.                                                                                                                                                                                                      |
 | prefsize         | Use Windows para ventanas.                                                                                                                                                                                                      |
 | modemode          | Use Windows para ventanas.                                                                                                                                                                                                      |
 | pushattributes   | [**glPushAttrib**](glpushattrib.md)                                                                                                                                                                                            |
@@ -298,7 +298,7 @@ En este apéndice se enumeran las funciones GL de IRIS y sus funciones OpenGL eq
 | resetls          | No compatible.                                                                                                                                                                                                                  |
 | reshapeviewport  | No compatible.                                                                                                                                                                                                                  |
 | Rgbcolor         | [**glColor**](glcolor-functions.md)                                                                                                                                                                                            |
-| RGBcursor        | Use Windows para cursores.                                                                                                                                                                                                        |
+| RGBcursor        | Use Windows para los cursores.                                                                                                                                                                                                        |
 | RGBmode          | Use Windows para ventanas.                                                                                                                                                                                                      |
 | RGBrange         | No compatible.                                                                                                                                                                                                                  |
 | Máscara de RGBwrite     | [**glColorMask**](glcolormask.md)                                                                                                                                                                                              |
@@ -320,7 +320,7 @@ En este apéndice se enumeran las funciones GL de IRIS y sus funciones OpenGL eq
 | scrsubdivide     | No compatible.                                                                                                                                                                                                                  |
 | select           | [**glRenderMode**](glrendermode.md)                                                                                                                                                                                            |
 | setbell          | No compatible.                                                                                                                                                                                                                  |
-| setcursor        | Use Windows para cursores.                                                                                                                                                                                                        |
+| setcursor        | Use Windows para los cursores.                                                                                                                                                                                                        |
 | setdblights      | No compatible.                                                                                                                                                                                                                  |
 | setdepth         | [**glDepthRange**](gldepthrange.md)                                                                                                                                                                                            |
 | setlinestyle     | [**glLineStipple**](gllinestipple.md)                                                                                                                                                                                          |

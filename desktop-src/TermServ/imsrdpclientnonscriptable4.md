@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a13f8c03bcb9570d6afa3cca94092d34ec739b25f4a3e4ac33a84ac6afc7a37b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aedea56733a2a98db4b966bd91d9337e38e61d0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119990165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071032"
 ---
 # <a name="imsrdpclientnonscriptable4-interface"></a>Interfaz IMsRdpClientNonScriptable4
 
 Proporciona acceso a las propiedades noscriptables de la sesión remota de un cliente en el control Escritorio remoto ActiveX cliente. Deriva de la [**interfaz IMsRdpClientNonScriptable3.**](imsrdpclientnonscriptable3.md) Solo se puede acceder a los métodos de esta interfaz a través de vtable; no están disponibles para su uso en clientes que pueden incluir scripts.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpClientNonScriptable4** hereda de [**IMsRdpClientNonScriptable3**](imsrdpclientnonscriptable3.md). **IMsRdpClientNonScriptable4** también tiene estos tipos de miembros:
 
@@ -39,16 +39,16 @@ La **interfaz IMsRdpClientNonScriptable4** tiene estas propiedades.
 
 
 
-| Propiedad                                                                                                         | Tipo de acceso           | Descripción                                                                                                                                                                                              |
+| Propiedad.                                                                                                         | Tipo de acceso           | Descripción                                                                                                                                                                                              |
 |:-----------------------------------------------------------------------------------------------------------------|:----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AllowCredentialSaving**](imsrdpclientnonscriptable4-allowcredentialsaving.md)<br/>                     | Lectura/escritura<br/> | Especifica si el cuadro de diálogo credenciales muestra una casilla para habilitar el guardado de credenciales.<br/>                                                                                        |
-| [**LaunchedViaClientShellInterface**](imsrdpclientnonscriptable4-launchedviaclientshellinterface.md)<br/> | Lectura/escritura<br/> | Especifica si el usuario inició el control de cliente mediante la interfaz de acceso web de Escritorio remoto.<br/>                                                                                                  |
-| [**MarkRdpSettingsSecure**](imsrdpclientnonscriptable4-markrdpsettingssecure.md)<br/>                     | Lectura/escritura<br/> | Especifica si la configuración de RDP se marca como segura.<br/>                                                                                                                                          |
-| [**PromptForCredsOnClient**](imsrdpclientnonscriptable4-promptforcredsonclient.md)<br/>                   | Lectura/escritura<br/> | Especifica si el control de cliente muestra un cuadro de diálogo que solicita credenciales.<br/>                                                                                                      |
-| [**PublisherCertificateChain**](imsrdpclientnonscriptable4-publishercertificatechain.md)<br/>             | Lectura/escritura<br/> | Especifica la cadena de certificados del publicador. La cadena se almacena en una variante de tipo VT \_ BYREF que contiene un puntero a una [**estructura CERT CHAIN \_ \_ CONTEXT.**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_context)<br/> |
-| [**RedirectionWarningType**](imsrdpclientnonscriptable4-redirectionwarningtype.md)<br/>                   | Lectura/escritura<br/> | Controla la presencia y la apariencia del cuadro de diálogo de redirección.<br/>                                                                                                                           |
-| [**TrustedZoneSite**](imsrdpclientnonscriptable4-trustedzonesite.md)<br/>                                 | Lectura/escritura<br/> | Especifica si el sitio web desde el que el usuario inició la conexión está en la lista de sitios de confianza del equipo cliente.<br/>                                                                |
-| [**WarnAboutPrinterRedirection**](imsrdpclientnonscriptable4-warnaboutprinterredirection.md)<br/>         | Lectura/escritura<br/> | Especifica si el cuadro de diálogo de redireccionamiento muestra un mensaje sobre el redireccionamiento de impresoras antes de iniciar una sesión.<br/>                                                                          |
+| [**AllowCredentialSaving**](imsrdpclientnonscriptable4-allowcredentialsaving.md)<br/>                     | Lectura y escritura<br/> | Especifica si el cuadro de diálogo credenciales muestra una casilla para habilitar el guardado de credenciales.<br/>                                                                                        |
+| [**LaunchedViaClientShellInterface**](imsrdpclientnonscriptable4-launchedviaclientshellinterface.md)<br/> | Lectura y escritura<br/> | Especifica si el usuario inició el control de cliente mediante la interfaz de acceso web de Escritorio remoto.<br/>                                                                                                  |
+| [**MarkRdpSettingsSecure**](imsrdpclientnonscriptable4-markrdpsettingssecure.md)<br/>                     | Lectura y escritura<br/> | Especifica si la configuración de RDP se marca como segura.<br/>                                                                                                                                          |
+| [**PromptForCredsOnClient**](imsrdpclientnonscriptable4-promptforcredsonclient.md)<br/>                   | Lectura y escritura<br/> | Especifica si el control de cliente muestra un cuadro de diálogo que solicita credenciales.<br/>                                                                                                      |
+| [**PublisherCertificateChain**](imsrdpclientnonscriptable4-publishercertificatechain.md)<br/>             | Lectura y escritura<br/> | Especifica la cadena de certificados del publicador. La cadena se almacena en una variante de tipo VT \_ BYREF que contiene un puntero a una [**estructura CERT CHAIN \_ \_ CONTEXT.**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_context)<br/> |
+| [**RedirectionWarningType**](imsrdpclientnonscriptable4-redirectionwarningtype.md)<br/>                   | Lectura y escritura<br/> | Controla la presencia y la apariencia del cuadro de diálogo de redirección.<br/>                                                                                                                           |
+| [**TrustedZoneSite**](imsrdpclientnonscriptable4-trustedzonesite.md)<br/>                                 | Lectura y escritura<br/> | Especifica si el sitio web desde el que el usuario inició la conexión está en la lista de sitios de confianza del equipo cliente.<br/>                                                                |
+| [**WarnAboutPrinterRedirection**](imsrdpclientnonscriptable4-warnaboutprinterredirection.md)<br/>         | Lectura y escritura<br/> | Especifica si el cuadro de diálogo de redireccionamiento muestra un mensaje sobre el redireccionamiento de impresoras antes de iniciar una sesión.<br/>                                                                          |
 
 
 

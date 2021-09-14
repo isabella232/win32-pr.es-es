@@ -6,12 +6,12 @@ keywords:
 - Llamada a procedimiento remoto RPC, procedimientos recomendados, evitar que el cliente se ahorca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5da79573e59e30c58a7c236b35293b678c93dde6bf999b477de054d6f3c62971
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18d4b5fc92ca18b575d081cd7b5abf90929e7df5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118927301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265556"
 ---
 # <a name="preventing-client-side-hangs"></a>Evitar que se resalte el lado cliente
 
@@ -45,7 +45,7 @@ En la tabla siguiente se proporciona la traducción a segundos para Windows 2000
 
  
 
-Una vez que se han activado las conexiones continuas, el cliente envía un paquete keep alive cada segundo. Si no hay ninguna confirmación del servidor para tres o más keep alives, el cliente declara la conexión fallada y produce un error en la llamada al procedimiento remoto. Si el servidor envía una respuesta dentro del tiempo de espera especificado, no se activa keep alives. Si el servidor responde a las conexiones continuas, pero no responde a la llamada a procedimiento remoto, el cliente continúa enviando mensajes keep alives. Una vez que el servidor responde a la llamada RPC, se desactivarán las conexiones continuas. Para Windows 2000, las operaciones keep alive solo se activadas para las llamadas RPC sincrónicas. Para Windows XP, las llamadas RPC asincrónicas también están activadas.
+Una vez que se han activado las conexiones continuas, el cliente envía un paquete keep alive cada segundo. Si no hay ninguna confirmación del servidor para tres o más keep alives, el cliente declara la conexión fallada y produce un error en la llamada al procedimiento remoto. Si el servidor envía una respuesta dentro del tiempo de espera especificado, no se activa keep alives. Si el servidor responde a las conexiones continuas, pero no responde a la llamada a procedimiento remoto, el cliente continúa enviando mensajes keep alives. Una vez que el servidor responde a la llamada RPC, se desactivarán las conexiones continuas. Por Windows 2000, las operaciones keep alives solo están activadas para las llamadas RPC sincrónicas. Para Windows XP, las operaciones keep alive también están activadas para las llamadas RPC asincrónicas.
 
 Es tentador establecer keep alives en el valor más bajo para asegurarse de que la aplicación cliente responde a los problemas de red de forma oportuna. Se debe tener en cuenta detenidamente este tipo de tentación y aplicar el examen a si se garantiza un valor agresivo. Un servidor que pierde temporalmente la conectividad puede encontrarse desbordado por las alertas de varios clientes una vez restaurada la conectividad. Además, las tareas de cálculo largas pueden tardar más de dos minutos y es posible que el servidor deba dedicar más tiempo a la CPU a responder a las operaciones de mantenimiento que a realizar un trabajo útil. Por lo tanto, se debe usar keep alives con moderación. Si el cliente no puede tolerar que su subproceso esté vinculado durante largos períodos, se debe tener en cuenta rpc asincrónica.
 

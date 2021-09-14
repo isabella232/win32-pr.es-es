@@ -3,7 +3,7 @@ title: Método next de IWMPControls
 description: El método siguiente establece el siguiente elemento de la lista de reproducción como el elemento actual.
 ms.assetid: 3f82ef25-a1e0-4845-b0ed-dd6463719577
 keywords:
-- siguiente método Reproductor de Windows Media
+- método next Reproductor de Windows Media
 - Next method Reproductor de Windows Media , IWMPControls (interfaz)
 - Interfaz IWMPControls Reproductor de Windows Media , método next
 topic_type:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa7b2fcb4a05078f1eefe90c266d636ec80cff219226246c622ce6040824c45d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f8444ba7d9209759cb64c4b582e1af9d074332ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070762"
 ---
 # <a name="iwmpcontrolsnext-method"></a>IWMPControls::next (método)
 
@@ -53,9 +53,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si la lista de reproducción  está en la última entrada cuando se invoca la siguiente, la primera entrada de la lista de reproducción se convertirá en la actual.
+Si la lista de reproducción  está en la última entrada cuando se invoca next, la primera entrada de la lista de reproducción se convertirá en la actual.
 
 En el caso de las listas de reproducción del lado servidor, este método omite el siguiente elemento de la lista de reproducción del lado servidor, no la lista de reproducción del cliente.
 

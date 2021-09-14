@@ -1,6 +1,6 @@
 ---
 title: D3DCOMPILE_EFFECT constantes (D3DCompiler.h)
-description: Estas constantes dirigen cómo el compilador compila un archivo de efecto o cómo procesa el archivo de efecto en tiempo de ejecución.
+description: Estas constantes dirigen cómo el compilador compila un archivo de efecto o cómo el tiempo de ejecución procesa el archivo de efecto.
 ms.assetid: AA46E5ED-92DD-4327-B852-8DD23A878562
 topic_type:
 - apiref
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a7d5c31efb17d2f852ac3903a5946ce5fb72fcef86ef083c474328859472c70
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69f0597341a331af82ed279a6030126d222b70f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118286919"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264324"
 ---
 # <a name="d3dcompile_effect-constants"></a>Constantes D3DCOMPILE \_ EFFECT
 
-Estas constantes dirigen cómo el compilador compila un archivo de efecto o cómo procesa el archivo de efecto en tiempo de ejecución.
+Estas constantes dirigen cómo el compilador compila un archivo de efecto o cómo el tiempo de ejecución procesa el archivo de efecto.
 
 <dl> <dt>
 
@@ -37,7 +37,7 @@ Estas constantes dirigen cómo el compilador compila un archivo de efecto o cóm
 Compile el archivo de efectos (.fx) en un efecto secundario. Los efectos secundarios no tienen inicializadores para ningún valor compartido porque estos efectos secundarios se inicializan en el efecto maestro (el grupo de efectos).
 
 > [!Note]  
-> Los grupos de efectos son compatibles con Effects 10 (FX10), pero no con Effects 11 (FX11). Para obtener más información sobre las diferencias entre los grupos de efectos en Direct3D 10 y los grupos de efectos en Direct3D 11, vea [Grupos de efectos y grupos](/windows/desktop/direct3d11/d3d11-graphics-programming-guide-effects-differences).
+> Los grupos de efectos son compatibles con Effects 10 (FX10), pero no con Effects 11 (FX11). Para obtener más información sobre las diferencias entre los grupos de efectos en Direct3D 10 y los grupos de efectos en Direct3D 11, vea [Grupos de efectos y grupos.](/windows/desktop/direct3d11/d3d11-graphics-programming-guide-effects-differences)
 
  
 
@@ -54,7 +54,7 @@ Compile el archivo de efectos (.fx) en un efecto secundario. Los efectos secunda
 
 Deshabilita el modo de rendimiento y permite objetos de estado mutable.
 
-De forma predeterminada, el modo de rendimiento está habilitado. El modo de rendimiento no permite objetos de estado mutable evitando que las expresiones no literales aparezcan en las definiciones de objetos de estado.
+De forma predeterminada, el modo de rendimiento está habilitado. El modo de rendimiento no permite objetos de estado mutable al impedir que las expresiones no literales aparezcan en las definiciones de objetos de estado.
 
 
 </dt> </dl> </dd> </dl>

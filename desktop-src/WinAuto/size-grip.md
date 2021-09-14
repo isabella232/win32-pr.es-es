@@ -4,12 +4,12 @@ description: El control de tamaño es un puntero especial del mouse en la esquin
 ms.assetid: 886b27b3-e88d-47a1-85f3-a55bd14c7a7c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7315425720ddee8beaf0f7c1f1b2ecbd8ba0fada51e64dc70453f3bb477e1f6c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9fb7180a8936aff46903257e6be8ca4ab7f0e5b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119795654"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070620"
 ---
 # <a name="size-grip-msaa-ui-element-reference"></a>Control de tamaño (referencia del elemento de la interfaz de usuario de MSAA)
 

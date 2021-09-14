@@ -10,11 +10,11 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 4249d094f142af8a9015f4e8a3b32d4e39cd42fb
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122629558"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264135"
 ---
 # <a name="samplelevel-directx-hlsl-texture-object"></a>SampleLevel (objeto de textura HLSL de DirectX)
 
@@ -58,7 +58,7 @@ Esta función es similar a [Sample,](dx-graphics-hlsl-to-sample.md) salvo que us
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object tipo</th>
+<th>Texture-Object type</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -87,7 +87,7 @@ Esta función es similar a [Sample,](dx-graphics-hlsl-to-sample.md) salvo que us
 </tr>
 <tr class="even">
 <td><p><span id="LOD"></span><span id="lod"></span><em>LOD</em></p></td>
-<td><p>[in] Número que especifica el nivel de mapa mip. Si el valor es = 0, se usa el cero (mapa más grande). El valor fraccionrio (si se proporciona) se usa para interpolar entre dos niveles de mapa mip.</p></td>
+<td><p>[in] Número que especifica el nivel de asignación mip. Si el valor es = 0, se usa el cero "número" (mapa más grande). El valor fraccional (si se proporciona) se usa para interpolar entre dos niveles de mapa mip.</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Compensar</em></p></td>
@@ -96,7 +96,7 @@ Esta función es similar a [Sample,](dx-graphics-hlsl-to-sample.md) salvo que us
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object tipo</th>
+<th>Texture-Object type</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -131,7 +131,7 @@ Esta función es similar a [Sample,](dx-graphics-hlsl-to-sample.md) salvo que us
 
 ## <a name="return-value"></a>Valor devuelto
 
-El tipo de plantilla de la textura, que puede ser un vector de uno o varios componentes. El formato se basa en el [**FORMATO DXGI de la \_ textura.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
+El tipo de plantilla de la textura, que puede ser un vector de uno o varios componentes. El formato se basa en EL [**FORMATO DXGI de la \_ textura.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
@@ -148,11 +148,11 @@ Esta función se admite en los siguientes modelos de sombreador.
  
 
 1.  TextureCubeArray está disponible en Shader Model 4.1 o superior.
-2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o superior.
+2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o posterior.
 
 ## <a name="example"></a>Ejemplo
 
-Este ejemplo de código parcial es del archivo Instancing.fx del [ejemplo Instancing10](https://msdn.microsoft.com/library/Ee416415(v=VS.85).aspx).
+Este ejemplo de código parcial es del archivo Instancing.fx del ejemplo [Instancing10](https://msdn.microsoft.com/library/Ee416415(v=VS.85).aspx).
 
 
 ```

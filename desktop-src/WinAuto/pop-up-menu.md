@@ -4,12 +4,12 @@ description: Un menú emergente muestra una lista de comandos de menú.
 ms.assetid: 9dbfa2d7-a086-4348-8b84-7e36d33e2d27
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b578a6af66585e06c4d9392f7051a8ebf14c8c24865bac59bf0c4fa43c7deaa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 785fe8ac7a70352116b3a77cf30034092de04a23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070665"
 ---
 # <a name="pop-up-menu-msaa-ui-element-reference"></a>Menú emergente (Referencia del elemento de la interfaz de usuario de MSAA)
 
@@ -18,7 +18,7 @@ ms.locfileid: "119861395"
 
  
 
-Un menú emergente muestra una lista de comandos de menú. Microsoft Active Accessibility crea un objeto emergente de menú cuando se abre un elemento de menú en una barra de menús. Microsoft Active Accessibility también crea objetos emergentes de menú para menús contextuales, que se muestran cuando el usuario hace clic con el botón derecho en un elemento de interfaz de usuario.
+Un menú emergente muestra una lista de comandos de menú. Microsoft Active Accessibility crea un objeto emergente de menú cuando se abre un elemento de menú en una barra de menús. Microsoft Active Accessibility también crea objetos emergentes de menú para menús contextuales, que se muestran cuando el usuario hace clic con el botón derecho en un elemento de la interfaz de usuario.
 
 El nombre de clase de ventana de un menú emergente es \# "32768".
 

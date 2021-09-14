@@ -4,12 +4,12 @@ ms.assetid: e523b335-0156-4f47-b55c-b80495587c4f
 title: Certificados digitales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 467f2df1a529d94fa5a04385c7f91f5aefbb40c0488ef0c5c484fe98c3874358
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 161d200a0f8cab61594872f5182786a3e6597187
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119875305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265396"
 ---
 # <a name="digital-certificates"></a>Certificados digitales
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f23fac2f6671584c69ecad045d13e885e86fb260164675da3bc51f7edf847f73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb65a8ea83feaf2fec80403fc9ac6c2ab38c1936
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118515640"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264255"
 ---
 # <a name="dcl_resource-sm4---asm"></a>recurso dcl \_ (sm4 - asm)
 
@@ -90,9 +90,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |

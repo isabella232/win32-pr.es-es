@@ -10,12 +10,12 @@ keywords:
 - elements,VIDEO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7b72df7472829fe9979c9f7a30558e340a69aeb2f7024641623ba6be1a46424
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dbd8ab6bd014d2968483120fd1dd98804905faa4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070827"
 ---
 # <a name="video-element"></a>Elemento VIDEO
 
@@ -34,7 +34,7 @@ El **elemento VIDEO** admite los siguientes atributos.
 | [shrinkToFit](video-shrinktofit.md)                 | Especifica o recupera un valor que indica si el vídeo se reducirá al ancho y alto definidos para el control Vídeo.                                                                                                           |
 | [stretchToFit](video-stretchtofit.md)               | Especifica o recupera un valor que indica si el vídeo se ajustará al ancho y alto definidos para el control Vídeo.                                                                                                   |
 | [Descripción](video-tooltip.md)                         | Especifica o recupera el texto de la información sobre herramientas para la ventana de vídeo.                                                                                                                                                                            |
-| [sin ventana](video-windowless.md)                   | Especifica o recupera un valor que indica si el control Vídeo se abrirá o no. es decir, si todo el rectángulo del control estará visible en todo momento o se puede recortar. Solo se puede establecer en tiempo de diseño. |
+| [sin ventana](video-windowless.md)                   | Especifica o recupera un valor que indica si el control Vídeo se va a usar en ventanas o sin ventanas; es decir, si todo el rectángulo del control estará visible en todo momento o se puede recortar. Solo se puede establecer en tiempo de diseño. |
 | [Zoom](video-zoom.md)                               | Especifica el porcentaje por el que se va a escalar el vídeo.                                                                                                                                                                                    |
 
 
@@ -54,9 +54,9 @@ El **elemento VIDEO** puede implementar los siguientes controladores de eventos.
 
  
 
-El **elemento VIDEO** admite los atributos de ambiente y puede implementar los controladores de eventos de ambiente, excepto donde se indica. Para obtener más información, vea [Atributos ambientales](ambient-attributes.md) y [controladores de eventos de ambiente.](ambient-event-handlers.md)
+El **elemento VIDEO** admite los atributos de ambiente y puede implementar los controladores de eventos de ambiente, excepto donde se indica. Para obtener más información, vea [Atributos de ambiente](ambient-attributes.md) y Controladores de eventos de [ambiente.](ambient-event-handlers.md)
 
-Los elementos de vídeo predefinidos son elementos **VIDEO** normales con varias configuraciones de atributos comunes especificadas de forma predeterminada. Están disponibles los siguientes elementos de vídeo predefinidos.
+Los elementos de vídeo predefinidos son elementos **VIDEO** normales con varios valores de atributo comunes especificados de forma predeterminada. Están disponibles los siguientes elementos de vídeo predefinidos.
 
 
 

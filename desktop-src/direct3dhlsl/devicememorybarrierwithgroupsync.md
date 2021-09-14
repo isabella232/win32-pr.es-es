@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2567a209b86481cd0f25922e8e3b1cf947196a2c799344089591cf70fa3624fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6a7a4a27b3256fb78c7b60b960fc5383cfd5b5d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119625825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264239"
 ---
 # <a name="devicememorybarrierwithgroupsync-function"></a>Función DeviceMemoryBarmoreWithGroupSync
 
@@ -38,7 +38,7 @@ Esta función no tiene parámetros.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
@@ -48,7 +48,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | sí       |
 
 
 
@@ -58,7 +58,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
@@ -66,7 +66,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

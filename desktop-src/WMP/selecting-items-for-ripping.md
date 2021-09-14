@@ -1,33 +1,33 @@
 ---
-title: Selección de elementos para Alcándalo
-description: Selección de elementos para Alcándalo
+title: Selección de elementos para Resalte
+description: Selección de elementos para Resalte
 ms.assetid: 94bc765a-8318-4715-82e0-e7a9b93e99e0
 keywords:
-- Reproductor de Windows Media,CD al día
-- Reproductor de Windows Media modelo de objetos, algarada de CD
-- modelo de objetos, resalte de CD
-- Reproductor de Windows Media ActiveX control, cds
-- ActiveX control, cds
-- Reproductor de Windows Media Control ActiveX dispositivos móviles,cd- estad
+- Reproductor de Windows Media,CD
+- Reproductor de Windows Media modelo de objetos, cds
+- modelo de objetos, cds
+- Reproductor de Windows Media ActiveX control de datos, cds
+- ActiveX control de datos, cds
+- Reproductor de Windows Media Control de ActiveX dispositivos móviles,cds
 - Reproductor de Windows Media Móvil, cds
-- Cd al, seleccionar elementos
-- CDs de arras, selección de elementos
+- CD agarrón, selección de elementos
+- CDs de resalte, selección de elementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea677028fab6b3c39466e916bd8bb59ea8cee4d370730c096cbb98978f4abc49
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfc18ded43b609be6c7ac1f16833b0c8a33505ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119646655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070861"
 ---
-# <a name="selecting-items-for-ripping"></a>Selección de elementos para Alcándalo
+# <a name="selecting-items-for-ripping"></a>Selección de elementos para Resalte
 
-A veces, un usuario no quiere extraer todas las pistas de un CD. Reproductor de Windows Media proporciona una interfaz para especificar qué pistas se seleccionan para la eliminación. Normalmente, en una aplicación de registro de CD hay una interfaz de usuario que permite al usuario activar las casillas de una lista de pistas en el CD.
+A veces, un usuario no quiere extraer todas las pistas de un CD. Reproductor de Windows Media proporciona una interfaz para especificar las pistas que se seleccionan para la eliminación. Normalmente, en una aplicación de cd- a-cd hay una interfaz de usuario que permite al usuario activar las casillas de una lista de pistas en el CD.
 
-Es posible que algunas pistas no se seleccionen para la omisión de forma predeterminada. Si una pista ya está en la biblioteca Reproductor de Windows Media, no se seleccionará automáticamente para la eliminación. En el segundo ejemplo de código de esta sección se muestra cómo omitir el valor predeterminado y seleccionar manualmente una pista para la extracción si ya se ha roto.
+Es posible que algunas pistas no se seleccionen para la instalación de forma predeterminada. Si una pista ya está en la Reproductor de Windows Media, no se seleccionará automáticamente para la eliminación. En el segundo ejemplo de código de esta sección se muestra cómo omitir el valor predeterminado y seleccionar manualmente una pista para su omisión si ya se ha convertido en un error.
 
-En el ejemplo de código siguiente se muestra cómo determinar si se selecciona una pista para el arraigo:
+En el ejemplo de código siguiente se muestra cómo determinar si se ha seleccionado una pista para la prueba:
 
 
 ```C++
@@ -71,7 +71,7 @@ HRESULT CMainDlg::IsTrackSelected(long lIndex, bool &bSelected)
 
 
 
-En el ejemplo de código siguiente se muestra cómo especificar si se selecciona una pista para el arraigo.
+En el ejemplo de código siguiente se muestra cómo especificar si se selecciona una pista para la especificaciones.
 
 
 ```C++
@@ -119,16 +119,16 @@ HRESULT CMainDlg::SelectTrack (long lIndex, bool bSelected)
 
 <dl> <dt>
 
-[**Arrasar un CD**](ripping-a-cd.md)
+[**Resalte un CD**](ripping-a-cd.md)
 </dt> <dt>
 
 [**Recuperación de la interfaz de copia desde CD**](retrieving-the-ripping-interface.md)
 </dt> <dt>
 
-[**Iniciar el proceso de desgarr**](starting-the-rip-process.md)
+[**Iniciar el proceso de desgarrón**](starting-the-rip-process.md)
 </dt> <dt>
 
-[**Recuperar el estado de desgarr**](retrieving-the-rip-status.md)
+[**Recuperación del estado de desgarr**](retrieving-the-rip-status.md)
 </dt> </dl>
 
  

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6875789c40a2f0fab2987927662658a821de5742b2473b7947250cfb11da8155
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc8ed91f8e103ebbab7c43ffe53201f0e1d5dfcf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119982895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264079"
 ---
 # <a name="modifiers-for-ps_2_0-and-above"></a>Modificadores para ps \_ 2 \_ 0 y superiores
 
@@ -84,7 +84,7 @@ cmp_pp r0, r1, r2, r3
 
 El modificador de instrucción saturate (sat) satura (o fija) el resultado de la instrucción en el intervalo \_ 0, 1 antes de escribir en el \[ \] registro de destino.
 
-El \_ modificador de instrucción sat se puede usar con cualquier instrucción, excepto [frc - ps](frc---ps.md), [sincos - ps](sincos---ps.md)y cualquier instrucción de \* texas.
+El \_ modificador de instrucción sat se puede usar con cualquier instrucción, excepto [frc - ps](frc---ps.md), [sincos - ps](sincos---ps.md)y cualquier instrucción de tipo \* texas.
 
 Para ps \_ 2 \_ 0, ps 2 x y \_ \_ ps \_ 2 sw, \_ \_ [](dx9-graphics-reference-asm-ps-registers-output-color.md) [](dx9-graphics-reference-asm-ps-registers-output-depth.md)el modificador de instrucción sat no se puede usar con instrucciones que escriban en ningún registro de salida (Registro de color de salida o Registro de profundidad de salida). Esta restricción no se aplica a ps \_ 3 \_ 0 y posteriores.
 

@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a47b308bf95389dcf043e87565be365ec69ecc34500ac187ee11a679349f18ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97f67192b78c734359fc6113969eb5eb410e1bf3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118129893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071023"
 ---
 # <a name="imsrdpclientnonscriptable5getremotemonitorsboundingbox-property"></a>Propiedad IMsRdpClientNonScriptable5::GetRemoteMonitorsBoundingBox
 
@@ -55,7 +55,7 @@ Recibe el borde derecho del rectángulo.
 
 Recibe el borde inferior del rectángulo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todas las coordenadas están en coordenadas de pantalla virtual, que son relativas a la esquina superior izquierda del monitor principal. Si este no es el monitor principal, algunos o todos estos valores pueden ser negativos.
 
@@ -63,7 +63,7 @@ Todas las coordenadas están en coordenadas de pantalla virtual, que son relativ
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                             |

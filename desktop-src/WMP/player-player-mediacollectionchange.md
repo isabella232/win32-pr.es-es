@@ -1,6 +1,6 @@
 ---
 title: Evento Player.MediaCollectionChange
-description: El evento MediaCollectionChange tiene lugar cuando cambia la colección multimedia. | Evento Player.MediaCollectionChange
+description: El evento MediaCollectionChange tiene lugar cuando cambia la colección de medios. | Evento Player.MediaCollectionChange
 ms.assetid: 1cc8f26d-ccd5-49ba-a2b3-0adfe9b51b11
 keywords:
 - Evento MediaCollectionChange Reproductor de Windows Media
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bc5af57908371eaf7fd7e75dab39bb966977de358fa9488e54d32e985a104c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 05177b542217132bb10004a29faaa3cbe7fcce6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118338093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070975"
 ---
 # <a name="playermediacollectionchange-event"></a>Evento Player.MediaCollectionChange
 
-El **evento MediaCollectionChange** tiene lugar cuando cambia la colección multimedia.
+El **evento MediaCollectionChange** tiene lugar cuando cambia la colección de medios.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ Este evento no tiene parámetros.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
@@ -52,7 +52,7 @@ Este evento no devuelve un valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

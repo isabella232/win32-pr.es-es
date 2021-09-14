@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbb3c00725ebbe75d607636e8b143146dfce9112b4d1a9dacd430a3d61b3cce5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d083ac829582f2abc45837cf441b2f0a565ee03a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118838275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071004"
 ---
 # <a name="equalizersettingsgainlevels"></a>EQUALIZERSETTINGS.gainLevels
 
@@ -42,7 +42,7 @@ Este atributo es un número de lectura y **escritura** (**float**) con un valor 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo toma un parámetro, pero su valor se especifica en el código de script de la misma manera que otros valores de atributo. No se puede especificar en el elemento EQUALIZERSETTINGS ni se puede usar con el **atributo de escucha wmpprop.** En su lugar, se proporcionan los atributos de nivel de ganancia numerado para estas situaciones.
 
@@ -50,7 +50,7 @@ Este atributo toma un parámetro, pero su valor se especifica en el código de s
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

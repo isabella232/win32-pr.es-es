@@ -1,9 +1,9 @@
 ---
 title: D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact función
-description: Desempaqueta los datos del sombreador DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM \_ SRGB en XMFLOAT3. | D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact función
+description: Desempaqueta los datos del sombreador SRGB DXGI \_ FORMAT \_ B8G8R8X8 UNORM en \_ \_ XMFLOAT3. | D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact función
 ms.assetid: caa64f89-7b9e-4bc0-82dc-31edfd31d495
 keywords:
-- D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact función HLSL
+- D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact function HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f696381402d8ad42c92310029631e66b457e3b211d22d8f9de3dd98c1f1312ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ef3f0b97ee3d5e21fef7b0227304fc5b187df2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264316"
 ---
 # <a name="d3dx_b8g8r8x8_unorm_srgb_to_float3_inexact-function"></a>Función \_ \_ \_ \_ \_ \_ inexacta D3DX B8G8R8X8 UNORM SRGB to FLOAT3
 
-Desempaqueta los datos del sombreador DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM \_ SRGB en XMFLOAT3.
+Desempaqueta los datos del sombreador SRGB DXGI \_ FORMAT \_ B8G8R8X8 UNORM en \_ \_ XMFLOAT3.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,11 +46,11 @@ Datos empaquetados del sombreador.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Datos del sombreador desempaquetar.
+Datos del sombreador desempaquetados.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función usa instrucciones de sombreador que no tienen una precisión lo suficientemente alta como para dar la respuesta exacta. La función [**alternativa D3DX \_ B8G8R8X8 \_ UNORM \_ SRGB to \_ \_ FLOAT3**](d3dx-b8g8r8x8-unorm-srgb-to-float3.md) usa una tabla de búsqueda almacenada en el sombreador para proporcionar una conversión exacta de SRGB a float.
+Esta función usa instrucciones de sombreador que no tienen una precisión lo suficientemente alta como para dar la respuesta exacta. La función alternativa [**D3DX \_ B8G8R8X8 \_ UNORM \_ SRGB \_ to \_ FLOAT3**](d3dx-b8g8r8x8-unorm-srgb-to-float3.md) usa una tabla de búsqueda almacenada en el sombreador para proporcionar una conversión exacta de SRGB a float.
 
 ## <a name="requirements"></a>Requisitos
 

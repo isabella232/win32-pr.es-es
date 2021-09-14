@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e7cafc386d56995eafee5541a02a6ec2d22201b7689a83f79a4e818b1741ed17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da3da1062d02e995876a1f67e5c4e19518774760
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119983285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264367"
 ---
 # <a name="cmp---ps"></a>cmp - ps
 
 Elija src1 si src0 >= 0. De lo contrario, elija src2. La comparación se realiza por canal.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,14 +31,14 @@ Elija src1 si src0 >= 0. De lo contrario, elija src2. La comparación se realiza
 
  
 
-where
+, donde
 
 -   dst es el registro de destino.
 -   src0 es un registro de origen.
 -   src1 es un registro de origen.
 -   src2 es un registro de origen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

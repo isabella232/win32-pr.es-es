@@ -7,11 +7,11 @@ keywords:
 - tiendas en línea, listas de reproducción automáticas
 - tiendas en línea de tipo 1, listas de reproducción automáticas
 - tiendas en línea de tipo 2, listas de reproducción automáticas
-- Reproductor de Windows Media en línea, organizar el contenido de la biblioteca
+- Reproductor de Windows Media en línea, organización del contenido de la biblioteca
 - tiendas en línea, organización del contenido de la biblioteca
 - tiendas en línea de tipo 1, organización del contenido de la biblioteca
 - tiendas en línea de tipo 2, organización del contenido de la biblioteca
-- Reproductor de Windows Media en línea,organización de contenido de biblioteca
+- Reproductor de Windows Media en línea, organización de contenido de biblioteca
 - tiendas en línea, organización de contenido de biblioteca
 - tiendas en línea de tipo 1, organización de contenido de biblioteca
 - tiendas en línea de tipo 2, organización de contenido de biblioteca
@@ -20,12 +20,12 @@ keywords:
 - listas de reproducción automáticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0e32d0f95093d9550c71643330267d59a57f56db7e0d666274a492ac29b2c58
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa53a4b9f56a8aa6425f137ef4a8c43bd8ed1454
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119507175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070852"
 ---
 # <a name="using-auto-playlists-to-organize-content-in-the-library"></a>Usar listas de reproducción automáticas para organizar el contenido en la biblioteca
 
@@ -34,12 +34,12 @@ Puede usar listas de reproducción automáticas para organizar el contenido prem
 Para ello, realice los pasos siguientes:
 
 1.  Cree la lista de reproducción automática.
-2.  Con Windows explorador, vaya a la lista de reproducción automática y recupere el archivo .wpl.
+2.  Con Windows Explorer, vaya a la lista de reproducción automática y recupere el archivo .wpl.
 3.  Con el Reproductor de Windows Media de objetos, agregue la lista de reproducción automática a la biblioteca.
-4.  Establezca el **atributo WM/ContentDistributor de la** lista de reproducción en el nombre de clave del distribuidor de contenido.
+4.  Establezca el **atributo WM/ContentDistributor de la** lista de reproducción en el nombre de la clave del distribuidor de contenido.
 5.  Establezca el **atributo SyncOnly** de la lista de reproducción en true.
 
-En el código JScript ejemplo siguiente se muestra una función que agrega una lista de reproducción automática denominada "Favoritos aciertos" al nodo Proseware de la biblioteca:
+En el JScript ejemplo siguiente se muestra una función que agrega una lista de reproducción automática denominada "Favoritos aciertos" al nodo Proseware de la biblioteca:
 
 
 ```C++
@@ -60,7 +60,7 @@ function AddWPL()
 [Acerca de la integración de bibliotecas](download-manager-overview.md)
 </dt> <dt>
 
-[**Información común a los almacenes en línea de tipo 1 y 2**](information-common-to-type-1-and-type-2-online-stores.md)
+[**Información común a las tiendas en línea de tipo 1 y tipo 2**](information-common-to-type-1-and-type-2-online-stores.md)
 </dt> <dt>
 
 [**MediaCollection.add**](mediacollection-add.md)

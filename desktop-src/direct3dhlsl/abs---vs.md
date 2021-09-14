@@ -9,27 +9,27 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 59ba7ad170df49b252140b14452862bdf14c2b713ac457548c8f085a0fb50881
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 612ed14fb538a419a0e7f0b1cf07904d654bb010
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120025095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264423"
 ---
 # <a name="abs---vs"></a>abs - vs
 
 Calcula el valor absoluto.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 **abs dst, src**
 
-where
+, donde
 
 - dst es el registro de destino.
 - src es un registro de origen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

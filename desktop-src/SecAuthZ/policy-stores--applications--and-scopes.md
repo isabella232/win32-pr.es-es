@@ -4,12 +4,12 @@ ms.assetid: 235f236d-59c9-4a8c-aec6-60d1ddba4d5d
 title: Almacenes de directivas, aplicaciones y ámbitos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5db06b291ef81f391fed1a0094b73c9b31d0342f59bce22d93779c7bfa48a80b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4155d7bf60d34474d52c27efd50d2f53741fa73a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119907575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265463"
 ---
 # <a name="policy-stores-applications-and-scopes"></a>Almacenes de directivas, aplicaciones y ámbitos
 
@@ -31,7 +31,7 @@ Una aplicación debe inicializar un almacén de directivas de autorización ante
 
 Un almacén de directivas de autorización puede contener uno o varios [**objetos IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) que representan la directiva de autorización para una aplicación específica.
 
-## <a name="applications"></a>APLICACIONES
+## <a name="applications"></a>Aplicaciones
 
 En la API del Administrador de autorización, una aplicación se representa mediante un [**objeto IAzApplication.**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) Un almacén de directivas de autorización puede contener información de directiva de autorización para muchas aplicaciones. El **uso de objetos IAzApplication** permite almacenar una directiva de autorización diferente para distintas aplicaciones en un único almacén de directivas.
 

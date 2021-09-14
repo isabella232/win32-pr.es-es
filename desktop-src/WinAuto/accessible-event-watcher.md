@@ -4,18 +4,18 @@ description: AccEvent (Accessible Event Watcher) permite a los desarrolladores y
 ms.assetid: 0077da81-7a1f-4f8b-b519-ebefcc63d264
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb2192bf6973444bf2bfc307ff4613d9d1c593d5a22f9800ecb61bc310b3a210
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76e6fa4896c0cfe3155536537099b1c00af8ebe5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118327812"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070728"
 ---
 # <a name="accessibility-tools---accevent-accessible-event-watcher"></a>Herramientas de accesibilidad: AccEvent (Accessible Event Watcher)
 
 **AccEvent (Accessible Event Watcher)** permite a los desarrolladores y evaluadores validar que los elementos de interfaz de usuario de una aplicación producen eventos adecuados de Microsoft Automatización de la interfaz de usuario y Microsoft Active Accessibility cuando se producen cambios en la interfaz de usuario. Los cambios en la interfaz de usuario pueden producirse cuando cambia el foco o cuando se invoca, selecciona o tiene un cambio de estado o propiedad.
 
-**AccEvent** se instala con el kit de desarrollo Windows software (SDK). Se encuentra en la carpeta bin version platform> de la ruta de instalación del \\ \\ <  > \\ <  SDK (Accevent.exe).
+**AccEvent** se instala con Windows Software Development Kit (SDK). Se encuentra en la carpeta bin version platform> de la ruta de instalación del \\ \\ <  > \\ <  SDK (Accevent.exe).
 
 > [!NOTE]
 > **AccEvent** es una herramienta heredada. Se recomienda usar [accessibility Ideas](https://accessibilityinsights.io/) en su lugar.
@@ -60,7 +60,7 @@ Use el menú **Modo** para configurar el modo **operativo AccEvent** y seleccion
 | WinEvents (fuera de contexto)   | Muestra información sobre Microsoft Active Accessibility eventos (WinEvents) pasados para enlazar funciones que residen en el espacio de direcciones del cliente. Para obtener más información, vea [Funciones de enlace](out-of-context-hook-functions.md)fuera de contexto . |
 | Mostrar rectángulo resaltado     | Resalta un rectángulo alrededor del elemento de interfaz de usuario que ha producido el evento seleccionado.                                                                                                                                                                 |
 | Mostrar información sobre herramientas     | Muestra información de eventos en una información sobre herramientas.                                                                                                                                                                                                        |
-| Configuración                     | Muestra el **cuadro de diálogo Configuración** evento **UIA Configuración WinEvent.**                                                                                                                                                                     |
+| Configuración                     | Muestra el **cuadro de diálogo Configuración** evento **UIA o Configuración WinEvent.**                                                                                                                                                                     |
 
 
 

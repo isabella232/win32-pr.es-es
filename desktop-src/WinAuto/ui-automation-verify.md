@@ -1,6 +1,6 @@
 ---
-title: Automatización de la interfaz de usuario comprobación (comprobación de UIA)
-description: Automatización de la interfaz de usuario Verify (UIA Verify) es un marco de pruebas para las pruebas manuales y automatizadas de la implementación de Microsoft Automatización de la interfaz de usuario.
+title: Automatización de la interfaz de usuario verify (UIA Verify)
+description: Automatización de la interfaz de usuario Verify (UIA Verify) es un marco de pruebas para las pruebas manuales y automatizadas de la implementación de microsoft o la aplicación de un control de Microsoft Automatización de la interfaz de usuario.
 ms.assetid: C66AF411-2746-4695-A893-1552B3ED1066
 keywords:
 - UI Automation Verify
@@ -8,15 +8,15 @@ keywords:
 - Automatización de la interfaz de usuario implementación, pruebas
 - pruebas Automatización de la interfaz de usuario
 - Herramientas de prueba de UIA
-- Automatización de la interfaz de usuario de pruebas
+- Automatización de la interfaz de usuario herramientas de prueba
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00f8c97d6522e353445ededff47a9a7cf123998b94f1323f1df59b7a380ac1d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b794e5d191c07a9c0db602ebac0f908bbdf960bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052393"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070580"
 ---
 # <a name="accessibility-tools---ui-automation-verify-uia-verify"></a>Herramientas de accesibilidad: Automatización de la interfaz de usuario comprobación (comprobación de UIA)
 
@@ -27,7 +27,7 @@ ms.locfileid: "119052393"
 **UIA Verify** consta de una API denominada biblioteca Automatización de la interfaz de usuario test y una interfaz gráfica de usuario denominada Visual **Automatización de la interfaz de usuario Verify**. Estos se describen en los temas siguientes.
 
 > [!NOTE]
-> **Automatización de la interfaz de usuario Verify** es una herramienta heredada. Se recomienda usar [accessibility Ideas](https://accessibilityinsights.io/) en su lugar.
+> **Automatización de la interfaz de usuario Verify** es una herramienta heredada. En su [lugar,](https://accessibilityinsights.io/) se recomienda usar Ideas accesibilidad.
 
 ## <a name="requirements"></a>Requisitos
 

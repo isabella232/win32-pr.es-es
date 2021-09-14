@@ -1,46 +1,46 @@
 ---
-title: Recuperación del estado de la grabación
-description: Recuperación del estado de la grabación
+title: Recuperación del estado de grabación
+description: Recuperación del estado de grabación
 ms.assetid: 63b6525d-00be-4c68-8473-3bc1a58fde15
 keywords:
-- Windows Media Player, grabación de CD
-- Modelo de objetos de Windows Media Player, grabación de CD
+- Reproductor de Windows Media, cds
+- Reproductor de Windows Media modelo de objetos, cds
 - modelo de objetos, grabación de CD
-- Control ActiveX de Windows Media Player, grabación de CD
-- Control ActiveX, grabación de CD
-- Control ActiveX móvil de Windows Media Player, grabación de CD
-- Windows Media Player Mobile, grabación de CD
-- Grabación de CD, recuperación del estado de la grabación
-- grabar CDs, recuperar el estado de la grabación
+- Reproductor de Windows Media ActiveX control, grabación de CD
+- ActiveX control, grabación de CD
+- Reproductor de Windows Media Control de ActiveX móvil, grabación de CD
+- Reproductor de Windows Media Móvil, cds
+- Grabación de CD, recuperación del estado de grabación
+- cds, recuperar el estado de la grabación
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 8e9b9ab1d865b728c3a23b9b77f45ab022226605
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103994963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070896"
 ---
-# <a name="retrieving-the-burn-status"></a>Recuperación del estado de la grabación
+# <a name="retrieving-the-burn-status"></a>Recuperación del estado de grabación
 
-En el ejemplo de código siguiente, se definen los siguientes controles de cuadro de diálogo:
+En el ejemplo de código siguiente, se definen los siguientes controles de diálogo:
 
 
 
 | Id. de control           | Descripción                                                                    |
 |----------------------|--------------------------------------------------------------------------------|
-| \_Estado de grabación de IDC \_     | Texto estático que representa el estado de la operación de grabación de CD.             |
-| progreso de IDC \_        | Barra de progreso con un intervalo de 0 a 100 que representa el progreso total de la grabación. |
-| \_texto de progreso de IDC \_  | Texto estático que representa el progreso de la grabación total como un número comprendido entre 0 y 100. |
-| \_hora disponible de IDC \_ | Texto estático para mostrar la hora disponible en el CD, en segundos.               |
-| \_espacio libre de IDC \_     | Texto estático para mostrar el espacio disponible en el CD, en bytes.                     |
-| \_espacio total de IDC \_    | Texto estático que muestra la capacidad total del CD, en bytes.                 |
+| ESTADO DE LA \_ GRABACIÓN DE \_ IDC     | Texto estático que representa el estado de la operación de grabación de CD.             |
+| PROGRESO \_ DE IDC        | Barra de progreso con un intervalo de 0 a 100 que representa el progreso total de la evolución. |
+| TEXTO DE PROGRESO \_ DE \_ IDC  | Texto estático que representa el progreso total de la evolución como un número de 0 a 100. |
+| TIEMPO DISPONIBLE DE \_ \_ IDC | Texto estático para mostrar la hora disponible en el CD, en segundos.               |
+| ESPACIO LIBRE \_ DE \_ IDC     | Texto estático para mostrar el espacio libre en el CD, en bytes.                     |
+| ESPACIO \_ TOTAL DE \_ IDC    | Texto estático para mostrar la capacidad total del CD, en bytes.                 |
 
 
 
- 
+ 
 
-Puede supervisar el progreso de la operación de grabación llamando periódicamente a [IWMPCdromBurn:: get \_ burnProgress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-get_burnprogress) mientras se graba el CD. Este método recupera un valor de progreso para toda la operación de grabación. El valor recuperado es un número que representa el porcentaje de grabación completada, de 0 a 100.
+Puede supervisar el progreso de la operación de grabación llamando periódicamente a [IWMPCdromRom::get \_ burnProgress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-get_burnprogress) mientras se está quemando el CD. Este método recupera un valor de progreso para toda la operación de grabación. El valor recuperado es un número que representa el porcentaje de desmanes completados, de 0 a 100.
 
 
 ```C++
@@ -59,7 +59,7 @@ if (SUCCEEDED(hr))
 
 
 
-Puede obtener el estado actual de la operación de grabación llamando a [IWMPCdromBurn:: get \_ burnState](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-get_burnstate). Este método recupera una enumeración que especifica la operación actual que se está llevando a cabo.
+Puede obtener el estado actual de la operación de grabación llamando a [IWMPCdromRom::get \_ burnState](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-get_burnstate). Este método recupera una enumeración que especifica la operación actual que se está realizando.
 
 
 ```C++
@@ -113,7 +113,7 @@ if (SUCCEEDED(hr))
 
 
 
-Para recuperar el número de segundos de audio que puede contener el CD, llame a [IWMPCdromBurn:: getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-getiteminfo) con "AvailableTime" como primer parámetro. El valor recuperado por esta función se representa mediante una cadena.
+Para recuperar el número de segundos de audio que puede contener el CD, llame a [IWMPCdromRomRom::getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-getiteminfo) con "AvailableTime" como primer parámetro. El valor recuperado por esta función se representa mediante una cadena.
 
 
 ```C++
@@ -138,7 +138,7 @@ if (SUCCEEDED(hr))
 
 
 
-Para recuperar la cantidad de espacio libre en un disco, llame a **IWMPCdromBurn:: getItemInfo** con "FreeSpace" como primer parámetro. El valor recuperado por esta función es una cadena que representa el número de bytes libres disponibles en el disco.
+Para recuperar la cantidad de espacio libre en un disco, llame a **IWMPCdromRom::getItemInfo** con "FreeSpace" como primer parámetro. El valor recuperado por esta función es una cadena que representa el número de bytes libres disponibles en el disco.
 
 
 ```C++
@@ -163,7 +163,7 @@ if (SUCCEEDED(hr))
 
 
 
-Para recuperar la capacidad total de un disco, llame a **IWMPCdromBurn:: getItemInfo** con "TotalSpace" como primer parámetro. El valor recuperado por esta función es una cadena que corresponde al número total de bytes del disco.
+Para recuperar la capacidad total de un disco, llame a **IWMPCdrom Crash::getItemInfo** con "TotalSpace" como primer parámetro. El valor recuperado por esta función es una cadena que corresponde al número total de bytes del disco.
 
 
 ```C++
@@ -201,15 +201,15 @@ if (SUCCEEDED(hr))
 [**Iniciar el proceso de grabación**](starting-the-burn-process.md)
 </dt> <dt>
 
-[**Borrado de un CD regrabable**](erasing-a-rewritable-cd.md)
+[**Borrado de un CD reescrito**](erasing-a-rewritable-cd.md)
 </dt> <dt>
 
-[**Recuperación de la unidad y el estado del disco**](retrieving-the-drive-and-disc-status.md)
+[**Recuperar el estado de la unidad y el disco**](retrieving-the-drive-and-disc-status.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

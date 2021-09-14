@@ -1,6 +1,6 @@
 ---
 title: D3DX_B8G8R8X8_UNORM_to_FLOAT3 función
-description: Desempaqueta los datos del \_ \_ sombreador DXGI FORMAT B8G8R8X8 \_ UNORM en XMFLOAT3.
+description: Desempaqueta los datos del sombreador DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM en XMFLOAT3.
 ms.assetid: 0987d71a-89a4-4751-9f32-08e2490204d2
 keywords:
 - D3DX_B8G8R8X8_UNORM_to_FLOAT3 function HLSL
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac787be8dc856c9f4748b7d2934000c5e4271141284dbb36e45cc1309f111a5e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6397f271899c2a8d73ed1ba84a04f3c02514fb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118793820"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264308"
 ---
-# <a name="d3dx_b8g8r8x8_unorm_to_float3-function"></a>Función D3DX \_ B8G8R8X8 \_ UNORM \_ to \_ FLOAT3
+# <a name="d3dx_b8g8r8x8_unorm_to_float3-function"></a>Función D3DX \_ B8G8R8X8 \_ UNORM \_ a \_ FLOAT3
 
-Desempaqueta los datos del \_ \_ sombreador DXGI FORMAT B8G8R8X8 \_ UNORM en XMFLOAT3.
+Desempaqueta los datos del sombreador DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM en XMFLOAT3.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Datos empaquetados del sombreador.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Datos del sombreador desempaquetados.
+Datos del sombreador desempaquetar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ Datos del sombreador desempaquetados.
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para In-Place de imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

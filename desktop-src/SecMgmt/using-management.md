@@ -4,12 +4,12 @@ ms.assetid: accc4046-fbac-4343-b47b-42633a07ab2c
 title: Uso de administración de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f703d68ec3cba89d3d48a8f8ebc8830d6023ff5eacb27f6f1fd171f48d863be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 03dd8f8b0a7a6ad81aed08da332a23e33e7767fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119004723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265308"
 ---
 # <a name="using-security-management"></a>Uso de administración de seguridad
 

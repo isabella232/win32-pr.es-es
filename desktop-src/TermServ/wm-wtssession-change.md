@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f29bef7eb7778602a256f80cb04e47eae905a245783906c3388b576aecedee18
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: db8f1dc421aa160824a194588711e84f961ea4dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119419845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071020"
 ---
-# <a name="wm_wtssession_change-message"></a>Mensaje \_ DE CAMBIO DE WTSSESSION de WM \_
+# <a name="wm_wtssession_change-message"></a>MENSAJE \_ DE CAMBIO DE WTSSESSION DE WM \_
 
 Notifica a las aplicaciones los cambios en el estado de sesión.
 
@@ -72,7 +72,7 @@ Código de estado que describe el motivo por el que se envió la notificación d
 
 </dt> <dd>
 
-La sesión identificada por *lParam se* conectó al terminal de la consola o a RemoteFX sesión.
+La sesión identificada por *lParam se* conectó al terminal de consola o RemoteFX sesión.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Un usuario ha iniciado sesión en la sesión identificada por *lParam*.
 
 <span id="WTS_SESSION_LOGOFF"></span><span id="wts_session_logoff"></span>
 
-<span id="WTS_SESSION_LOGOFF"></span><span id="wts_session_logoff"></span>**WTS \_ SESSION \_ LOGOFF** (0x6)
+<span id="WTS_SESSION_LOGOFF"></span><span id="wts_session_logoff"></span>**WTS \_ CIERRE \_ DE SESIÓN** (0x6)
 
 
 </dt> <dd>
@@ -149,18 +149,18 @@ La sesión identificada por *lParam* se ha bloqueado.
 
 </dt> <dd>
 
-La sesión identificada por *lParam* se ha desbloqueado.
+Se ha desbloqueado la sesión identificada por *lParam.*
 
 </dd> <dt>
 
 <span id="WTS_SESSION_REMOTE_CONTROL"></span><span id="wts_session_remote_control"></span>
 
-<span id="WTS_SESSION_REMOTE_CONTROL"></span><span id="wts_session_remote_control"></span>**WTS \_ \_CONTROL REMOTO DE \_ SESIÓN** (0x9)
+<span id="WTS_SESSION_REMOTE_CONTROL"></span><span id="wts_session_remote_control"></span>**WTS \_ CONTROL \_ REMOTO \_ DE SESIÓN** (0x9)
 
 
 </dt> <dd>
 
-La sesión identificada por *lParam* ha cambiado su estado controlado remoto. Para determinar el estado, llame [**a GetSystemMetrics y**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) compruebe la **métrica SM \_ REMOTECONTROL.**
+La sesión identificada por *lParam* ha cambiado su estado controlado de forma remota. Para determinar el estado, llame a [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) y compruebe la **métrica SM \_ REMOTECONTROL.**
 
 </dd> <dt>
 
@@ -199,9 +199,9 @@ Se omite el valor devuelto.
 
 ## <a name="remarks"></a>Observaciones
 
-Este mensaje solo se envía a las aplicaciones que se han registrado para recibir este mensaje mediante una llamada a [**WTSRegisterSessionNotification**](/windows/desktop/api/Wtsapi32/nf-wtsapi32-wtsregistersessionnotification).
+Este mensaje solo se envía a las aplicaciones que se han registrado para recibir este mensaje mediante una llamada [**a WTSRegisterSessionNotification**](/windows/desktop/api/Wtsapi32/nf-wtsapi32-wtsregistersessionnotification).
 
-Entre los ejemplos de cómo las aplicaciones pueden responder a este mensaje se incluyen la liberación o adquisición de recursos específicos de la consola, la determinación de cómo se va a pintar una pantalla o el desencadenamiento de efectos de animación de consola.
+Entre los ejemplos de cómo las aplicaciones pueden responder a este mensaje se incluyen la liberación o adquisición de recursos específicos de la consola, determinar cómo se va a pintar una pantalla o desencadenar efectos de animación de la consola.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -211,7 +211,7 @@ Entre los ejemplos de cómo las aplicaciones pueden responder a este mensaje se 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                           |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 5c517384bdffd8723c1e9e0d96683cc4bd4918361acdf19df77286bfbac962b1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38bd1c704ca709fc1e4b6072bb68c2105dc5db9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119006373"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265316"
 ---
 # <a name="icertcontextcertcontext-property"></a>ICertContext::CertContext, propiedad
 
@@ -31,7 +31,7 @@ La **propiedad CertContext** establece o recupera el CONTEXTO DE PCCERT \_ de un
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -50,7 +50,7 @@ Si los métodos de acceso de **propiedad \_ ponen CertContext** y **\_ obtienen 
 
 Cualquier otro **valor HRESULT** indica que se ha dado error en la llamada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe llamar al método [**FreeContext**](icertcontext-freecontext.md) o a la [**función CertFreeCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatecontext) para liberar el contexto.
 
@@ -67,7 +67,7 @@ Si establece la **propiedad CertContext,** se restablece el estado de todo [**el
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

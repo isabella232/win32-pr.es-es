@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a391219f085c18a4c8bf2925a248800b6a26838cc6e2b8556551eb98b5335241
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ce65960474816a91eb64ece7b754b97090903d46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119562775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264007"
 ---
 # <a name="source-register-invert"></a>Invertir registro de origen
 
 Realiza un cálculo (1 - valor) para cada canal del registro especificado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -33,15 +33,15 @@ Realiza un cálculo (1 - valor) para cada canal del registro especificado.
 
 Registro de origen. Para obtener más información sobre los tipos de registro, [vea ps \_ \_ 1 1 \_ \_ ps \_ 1 \_ 2 ps \_ \_ \_ 1 \_ 3 ps \_ \_ \_ 1 \_ 4 Registers](dx9-graphics-reference-asm-ps-registers-ps-1-x.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se cambia el contenido del registro. El modificador solo se aplica a los datos leídos del registro. La operación de inversión se aplica a los cuatro canales de color (RGBA).
 
-Este modificador solo se puede usar con instrucciones aritméticas. Además, este modificador no se puede combinar con la otra máscara [de escritura del registro de destino.](dx9-graphics-reference-asm-ps-registers-modifiers-write-mask.md)
+Este modificador solo se puede usar con instrucciones aritméticas. Además, este modificador no se puede combinar con la otra máscara [de escritura de registro de destino](dx9-graphics-reference-asm-ps-registers-modifiers-write-mask.md).
 
 ## <a name="example"></a>Ejemplo
 
-En este ejemplo se usa la inversión para generar el complemento del registro r1.
+En este ejemplo se usa la inversión para generar el complemento de register r1.
 
 
 ```

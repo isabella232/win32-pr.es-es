@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c1de8bcbd0eb47f03aaff46b4292a8afe226ca8a221ec570537351af8e509801
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e96f4a93882e02589d7f15b74ba5cb225f506d69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119761745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070780"
 ---
 # <a name="viewbackgroundimage"></a>VIEW.backgroundImage
 
@@ -31,7 +31,7 @@ El **atributo backgroundImage** especifica o recupera la imagen de fondo de **VI
 
 Este atributo es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los formatos admitidos son BMP, JPG, GIF y PNG. Si la imagen es un archivo BMP de 8 bits, sus valores de matiz y saturación se pueden cambiar dinámicamente mediante los atributos **backgroundImageHueShift** y **backgroundImageSaturation.**
 
@@ -41,7 +41,7 @@ En un Windows de descarga multimedia, si especifica el atributo **backgroundImag
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

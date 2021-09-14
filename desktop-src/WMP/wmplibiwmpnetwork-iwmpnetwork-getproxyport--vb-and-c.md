@@ -1,11 +1,11 @@
 ---
-title: Método IWMPNetwork getProxyPort
+title: Método getProxyPort de IWMPNetwork
 description: El método getProxyPort devuelve el puerto de proxy que se está utilizando.
 ms.assetid: fc94f3a9-458d-410c-98e9-a34be6e08c52
 keywords:
 - Método getProxyPort Reproductor de Windows Media
 - Método getProxyPort Reproductor de Windows Media , interfaz IWMPNetwork
-- Interfaz IWMPNetwork Reproductor de Windows Media método , getProxyPort
+- Interfaz IWMPNetwork Reproductor de Windows Media , método getProxyPort
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c59186ed06b1669ead0727c618f01bcb937ff5f6e32454f6e7a1678499803cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46fb388c2740e709e75579c01d216af677a826c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264703"
 ---
 # <a name="iwmpnetworkgetproxyport-method"></a>IWMPNetwork::getProxyPort (método)
 
@@ -62,9 +62,9 @@ Implements IWMPNetwork.getProxyPort
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System.Int32** que es el puerto de proxy que se usa. El valor solo es significativo cuando **IWMPNetwork.getProxySettings** devuelve un valor de 2 (use la configuración manual).
+**System.Int32 que** es el puerto proxy que se usa. El valor solo es significativo cuando **IWMPNetwork.getProxySettings** devuelve un valor de 2 (use la configuración manual).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
@@ -141,7 +141,7 @@ proxyPortText.Lines = proxyPorts
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

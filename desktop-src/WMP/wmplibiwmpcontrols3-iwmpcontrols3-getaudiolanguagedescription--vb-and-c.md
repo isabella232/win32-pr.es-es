@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1172fd119671a8452ac581d3c3a27efd890456cec98f1ef8d6e61340a54c4404
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bb45ceb166ca9c948823e516029569e457f35e27
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070738"
 ---
 # <a name="iwmpcontrols3getaudiolanguagedescription-method"></a>IWMPControls3::getAudioLanguageDescription (método)
 
@@ -64,7 +64,7 @@ Implements IWMPControls3.getAudioLanguageDescription
 
 **System.String que** es la descripción del idioma de audio.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para Windows contenido basado en medios, las propiedades y los métodos relacionados con la selección de idioma solo admiten una única salida.
 

@@ -4,12 +4,12 @@ ms.assetid: e6b2df9e-a536-4629-916e-4e12a0d13771
 title: Implementación de aplicaciones COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98e67c5bee11c62bba4e8bcb467af1427293b72673535d5c28d748234db1a28e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 815cd2c48aca54246c59e8d790f8b4139fcc9491
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117916776"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264532"
 ---
 # <a name="deploying-com-applications"></a>Implementación de aplicaciones COM+
 

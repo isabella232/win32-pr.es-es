@@ -4,12 +4,12 @@ description: Reutilizar punteros existentes a objetos
 ms.assetid: 7e1610c6-89b2-4e7e-aee5-94a6cab87a22
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14571234ee937d2237d3102316665f15a9ab55415042ddaeda749bfaa21e4807
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c151b8d957fb82718721ad81b452a81a2c71ec84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119998125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070647"
 ---
 # <a name="reuse-existing-pointers-to-objects"></a>Reutilizar punteros existentes a objetos
 

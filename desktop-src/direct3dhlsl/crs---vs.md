@@ -1,6 +1,6 @@
 ---
-title: CRS-vs
-description: Calcula un producto cruzado mediante la regla de la derecha. | CRS-vs
+title: crs- vs
+description: Calcula un producto cruzado mediante la regla de la derecha. | crs- vs
 ms.assetid: 102108f5-acc8-49ce-a84b-b8060decbaa7
 ms.topic: reference
 ms.date: 05/31/2018
@@ -10,13 +10,13 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: fee30fab91b4f491efd4311919245ec2cb98b555
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362111"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264351"
 ---
-# <a name="crs---vs"></a>CRS-vs
+# <a name="crs---vs"></a>crs- vs
 
 Calcula un producto cruzado mediante la regla de la derecha.
 
@@ -24,7 +24,7 @@ Calcula un producto cruzado mediante la regla de la derecha.
 
 
 
-| CRS DST, src0, SRC1 |
+| crs dst, src0, src1 |
 |---------------------|
 
 
@@ -33,17 +33,17 @@ Calcula un producto cruzado mediante la regla de la derecha.
 
 , donde
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
 ## <a name="remarks"></a>Observaciones
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| CRS                    |      | x    | x    | x     | x    | x     |
+| Crs                    |      | x    | x    | x     | x    | x     |
 
 
 
@@ -60,15 +60,15 @@ dest.z = src0.x * src1.y - src0.y * src1.x;
 
 
 
-Algunas restricciones en el uso:
+Algunas restricciones de uso:
 
 -   src0 no puede ser el mismo registro que dest.
--   SRC1 no puede ser el mismo registro que dest.
--   src0 no puede tener ningún swizzle que no sea el swizzle predeterminado (. xyzw).
--   SRC1 no puede tener ningún swizzle que no sea el swizzle predeterminado (. xyzw).
--   dest debe tener exactamente una de las siete máscaras siguientes:. x \| . y \| . z \| . XY \| . XZ. \| YZ. \| XYZ.
+-   src1 no puede ser el mismo registro que dest.
+-   src0 no puede tener ningún swzzle que no sea el swzzle predeterminado (.xyzw).
+-   src1 no puede tener ningún swzzle que no sea el swzzle predeterminado (.xyzw).
+-   dest tiene que tener exactamente una de las siete máscaras siguientes: .x \| \| .x .y .z \| \| .xy .xz \| .yz \| .xyz.
 -   dest debe ser un registro temporal.
--   dest no debe ser el mismo registro que src0 o SRC1
+-   dest no debe ser el mismo registro que src0 o src1
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -5,7 +5,7 @@ ms.assetid: a34dafca-5db2-4065-bcfe-d66e633b26fb
 keywords:
 - Evento KeyDown Reproductor de Windows Media
 - Evento KeyDown Reproductor de Windows Media , clase Player
-- Player class Reproductor de Windows Media , KeyDown event
+- Clase player Reproductor de Windows Media evento , KeyDown
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a067e0125bea6bcabec591d6c1f3ec6fc5a2ee1b0d649a02009690c89d68952e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 226430421977a58eca02b7a42cf0349f2a5ff520
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134778"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070989"
 ---
 # <a name="playerkeydown-event"></a>Evento Player.KeyDown
 
@@ -61,7 +61,7 @@ Player.KeyDown(
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El *argumento nKeyCode* especifica una clave física. En las tablas siguientes se muestran los valores posibles de las teclas principales en un teclado estándar.
 
@@ -117,7 +117,7 @@ Valores de las teclas de navegación.
 | Clave         | Value |
 |-------------|-------|
 | INSERT      | 45    |
-| Delete      | 46    |
+| DELETE      | 46    |
 | INICIO        | 36    |
 | FIN         | 35    |
 | RE PÁG     | 33    |

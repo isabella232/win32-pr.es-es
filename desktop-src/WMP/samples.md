@@ -10,12 +10,12 @@ keywords:
 - documentación, ejemplos Reproductor de Windows Media SDK
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5de0725fdde0579e152986e8543ff7d8751979614df49e5af2a7230b3b465084
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20d500c98d05b93815284b094ce7920a5bdfbecb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070872"
 ---
 # <a name="wmp-sdk-samples"></a>Ejemplos del SDK de WMP
 
@@ -29,7 +29,7 @@ El SDK Reproductor de Windows Media incluye una variedad de ejemplos que muestra
 -   Un ejemplo de C# muestra cómo usar el control Reproductor de Windows Media ActiveX con el .NET Framework.
 -   Un Visual Basic ejemplo de .NET muestra cómo usar el control Reproductor de Windows Media ActiveX con el .NET Framework.
 
-Para usar los ejemplos, debe instalar el SDK Windows, que incluye Reproductor de Windows Media SDK. Para descargar el SDK Windows, vaya a la página Windows [SDK](https://msdn.microsoft.com/windows/bb980924.aspx) en el Centro Windows desarrolladores.
+Para usar los ejemplos, debe instalar el SDK Windows, que incluye Reproductor de Windows Media SDK. Para descargar el SDK Windows, vaya a la [página Windows SDK](https://msdn.microsoft.com/windows/bb980924.aspx) del Centro Windows desarrolladores.
 
 ## <a name="related-topics"></a>Temas relacionados
 

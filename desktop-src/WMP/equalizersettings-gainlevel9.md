@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 869f3ff05b72a422e1d48d90972baa94dc9cf390dc93b3a72ed897f569762f98
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cdd03197b4d1b6be48b0e91193b3eebfaf28a768
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119650734"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071009"
 ---
 # <a name="equalizersettingsgainlevel9"></a>EQUALIZERSETTINGS.gainLevel9
 
@@ -31,7 +31,7 @@ El **atributo gainLevel9** especifica o recupera el nivel de ganancia de la band
 
 Este atributo es un número de lectura y **escritura** (**float**) con un valor que normalmente oscila entre 20 y +20. Tiene un valor predeterminado de cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo ajusta la parte del espectro de frecuencia de audio centrada en 8 kHz.
 
@@ -41,7 +41,7 @@ Si no se especifica este atributo, se conservará el valor anterior.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

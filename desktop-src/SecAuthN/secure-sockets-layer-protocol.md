@@ -4,12 +4,12 @@ ms.assetid: 45536902-af80-4dca-b3ce-207086844763
 title: Capa de sockets seguros protocolo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faf8e6b7232db8bef98d5170887d6be75c9770927954a40b606450bf214efdf5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3ed2555c854a6cc25948abe0dc83043ee632170
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118918388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265500"
 ---
 # <a name="secure-sockets-layer-protocol"></a>Capa de sockets seguros protocolo
 

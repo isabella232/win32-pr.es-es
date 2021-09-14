@@ -9,12 +9,12 @@ keywords:
 - skins,Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f7d054238f5773a368fa2def3259cc748929ec7a6bcc0573901480b9ba1d267
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16d9aa0949bc648fff48fa72218e6a9689aeee58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117931158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070764"
 ---
 # <a name="windows-media-player-mobile-functionality"></a>Reproductor de Windows Media Funcionalidad móvil
 
@@ -22,12 +22,12 @@ Las siguientes acciones están disponibles para el usuario de la máscara:
 
 -   Pulsar o hacer clic en los botones
 -   Barras de seguimiento deslizantes
--   Leer texto de desplazamiento
+-   Lectura de texto de desplazamiento
 -   Ver vídeo
--   Visualización del arte de un álbum
+-   Visualización de arte de álbum
 -   Clasificación de elementos multimedia
 
-En las secciones siguientes se describen los tipos de elementos que puede crear para habilitar estas acciones de usuario:
+En las secciones siguientes se describen los tipos de elementos que puede crear para habilitar estas acciones del usuario:
 
 -   [Funciones de botón](button-functions.md)
 -   [Tipos de barra de seguimiento](trackbar-types.md)

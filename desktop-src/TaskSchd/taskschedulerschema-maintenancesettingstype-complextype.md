@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f0733d16ec929b4e67774fc436c1530b67d70392b2655525b2aaaa642c2ea346
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f261e84fe2af1239cce1bbd377e991ede6e8506
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139208"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264983"
 ---
 # <a name="maintenancesettingstype-complex-type"></a>tipo complejo maintenanceSettingsType
 
@@ -87,7 +87,7 @@ Define los elementos secundarios y la información de secuenciación para el [**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

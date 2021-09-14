@@ -4,22 +4,22 @@ description: Acerca de los archivos SAMI
 ms.assetid: 39b1e8a8-bbeb-4376-89d9-03a147f4c4fd
 keywords:
 - Reproductor de Windows Media,Synchronized Accessible Media Interchange (SAMI)
-- Reproductor de Windows Media de objetos, Intercambio multimedia accesible sincronizado (SAMI)
+- Reproductor de Windows Media de objetos, Intercambio de medios accesibles sincronizado (SAMI)
 - object model,Synchronized Accessible Media Interchange (SAMI)
 - Reproductor de Windows Media Intercambio multimedia accesible móvil y sincronizado (SAMI)
-- control Reproductor de Windows Media ActiveX, Intercambio de medios accesibles sincronizado (SAMI)
-- Reproductor de Windows Media Control de ActiveX móvil,Intercambio de medios accesibles sincronizado (SAMI)
+- control Reproductor de Windows Media ActiveX, Intercambio multimedia accesible sincronizado (SAMI)
+- Reproductor de Windows Media Control de ActiveX móviles, intercambio multimedia accesible sincronizado (SAMI)
 - ActiveX control, Intercambio de medios accesibles sincronizado (SAMI)
 - Intercambio multimedia accesible sincronizado (SAMI), archivos
 - SAMI (intercambio multimedia accesible sincronizado), archivos
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e1f03d3e4079a117831ed8afb53648abf6a128ee
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880536"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264831"
 ---
 # <a name="about-sami-files"></a>Acerca de los archivos SAMI
 
@@ -31,7 +31,7 @@ Un archivo SAMI básico requiere tres etiquetas fundamentales: &lt; SAMI &gt; , 
 
 La &lt; etiqueta SAMI &gt; identifica el documento como un documento SAMI para que otras aplicaciones puedan reconocer su formato de archivo.
 
-Entre el <HEAD> y </HEAD> etiquetas, defina directrices básicas y otra información de formato para el documento SAMI, como el título del documento, la información general y las propiedades de estilo de los títulos cerrados. Al igual que HTML, el contenido declarado dentro del elemento HEAD no se muestra como salida.
+Entre el <HEAD> y </HEAD> Etiquetas, defina directrices básicas y otra información de formato para el documento SAMI, como el título del documento, la información general y las propiedades de estilo de los títulos cerrados. Al igual que HTML, el contenido declarado dentro del elemento HEAD no se muestra como salida.
 
 Los elementos y atributos definidos entre las etiquetas BODY y &lt; &gt; &lt; /BODY &gt; muestran el contenido que ve el usuario. En SAMI, el elemento BODY contiene los parámetros para la sincronización y las cadenas de texto usadas para los subtítulos.
 

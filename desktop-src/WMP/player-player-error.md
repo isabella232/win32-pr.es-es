@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a7e4642eef19b4edc4b1aa5bc75022a307d279d0d60482af0c7e2f0a9368c06
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a99411773994ad012155eea5a203ed341d50b460
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134818"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070991"
 ---
 # <a name="playererror-event"></a>Evento Player.Error
 
@@ -46,7 +46,7 @@ Este evento no devuelve un valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo JScript siguiente se crea un controlador de eventos para mostrar el texto de descripción del primer error en la cola de errores. El **objeto Player** se creó con id. = "Player".
+En el JScript siguiente se crea un controlador de eventos para mostrar el texto de descripción del primer error en la cola de errores. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript

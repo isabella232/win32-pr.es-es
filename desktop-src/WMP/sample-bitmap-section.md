@@ -10,12 +10,12 @@ keywords:
 - archivos de definición de máscara, sección Mapas de bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de401906896abcdda4728ff0984871ef4a399d3e223b36afd9d585eb0e4fce76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00b05183be7ba56ed5b00a6bfd26ee6162e008cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118833399"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070877"
 ---
 # <a name="sample-bitmap-section"></a>Sección de mapa de bits de ejemplo
 
@@ -38,7 +38,7 @@ Las líneas siguientes muestran una sección de mapas de bits típica de un arch
 
 
 
-Esto define cinco mapas de bits que se usan para crear una imagen de fondo, imágenes para botones deshabilitados e presionados, una imagen de región para botones de región y una imagen super para barras de seguimiento.
+Esto define cinco mapas de bits que se usan para crear una imagen de fondo, imágenes para botones deshabilitados e presionados, una imagen de región para los botones de región y una imagen super para barras de seguimiento.
 
 > [!Note]  
 > Los mapas de bits Region y Super están en desuso en máscaras para Reproductor de Windows Media 10 Mobile o posterior.

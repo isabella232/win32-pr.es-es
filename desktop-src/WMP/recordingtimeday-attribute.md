@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff864607ceced7942ccb759caab6be2bbef299c647f4b749056e172876d08a71
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f6f4bbd80625df7b3a548cc6ad89707a5e595ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117746584"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070933"
 ---
 # <a name="recordingtimeday-attribute"></a>Atributo RecordingTimeDay
 
@@ -29,7 +29,7 @@ El **atributo RecordingTimeDay** es la parte del día de la fecha de la grabaci�
 -   [Elementos de fotos](photo-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 

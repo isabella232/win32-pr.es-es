@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 7c30194e4131cbd375192723e23308e1ad5ead69d849ab73857f72ef1d4b0790
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3728f8114d87d07ddb33dd77a6fda5db30d07cf0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117784083"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265487"
 ---
 # <a name="authzcomputegroupscallback-callback-function"></a>Función de devolución de llamada AuthzComputeGroupsCallback
 
@@ -50,38 +50,38 @@ Identificador de un contexto de cliente.
 
 </dd> <dt>
 
-*Args* \[ En\]
+*Argumentos* \[ En\]
 </dt> <dd>
 
-Datos pasados en el parámetro *DynamicGroupArgs* de una llamada a la función [**AuthzInitializeContextFromAuthzContext**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromauthzcontext), [**AuthzInitializeContextFromSid**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromsid)o [**AuthzInitializeContextFromToken.**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken)
+Datos pasados en el *parámetro DynamicGroupArgs* de una llamada a la función [**AuthzInitializeContextFromAuthzContext**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromauthzcontext), [**AuthzInitializeContextFromSid**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromsid)o [**AuthzInitializeContextFromToken.**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken)
 
 </dd> <dt>
 
 *pSidAttrArray* \[ out\]
 </dt> <dd>
 
-Puntero a una variable de puntero que recibe la dirección de una matriz de [**estructuras SID \_ Y \_ ATTRIBUTES.**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) Estas estructuras representan los grupos a los que pertenece el cliente.
+Puntero a una variable de puntero que recibe la dirección de una matriz [**de estructuras SID \_ AND \_ ATTRIBUTES.**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) Estas estructuras representan los grupos a los que pertenece el cliente.
 
 </dd> <dt>
 
 *pSidCount* \[ out\]
 </dt> <dd>
 
-Número de estructuras de *pSidAttrArray.*
+Número de estructuras de *pSidAttrArray*.
 
 </dd> <dt>
 
 *pRestrictedSidAttrArray* \[ out\]
 </dt> <dd>
 
-Puntero a una variable de puntero que recibe la dirección de una matriz de [**estructuras SID \_ Y \_ ATTRIBUTES.**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) Estas estructuras representan los grupos desde los que el cliente está restringido.
+Puntero a una variable de puntero que recibe la dirección de una matriz [**de estructuras SID \_ AND \_ ATTRIBUTES.**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) Estas estructuras representan los grupos desde los que el cliente está restringido.
 
 </dd> <dt>
 
 *pRestrictedSidCount* \[ out\]
 </dt> <dd>
 
-Número de estructuras de *pSidRestrictedAttrArray.*
+Número de estructuras de *pSidRestrictedAttrArray*.
 
 </dd> </dl>
 
@@ -91,7 +91,7 @@ Si la función devuelve correctamente una lista de SID, el valor devuelto es **T
 
 Si se produce un error en la función, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las aplicaciones también pueden agregar SID al contexto de cliente llamando a [**AuthzAddSidsToContext.**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext)
 
@@ -103,7 +103,7 @@ Las variables de atributo deben tener el formato de una expresión cuando se usa
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                            |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                   |
 | Redistribuible<br/>          | Windows Paquete de herramientas de administración de Server 2003 en Windows XP<br/> |
 

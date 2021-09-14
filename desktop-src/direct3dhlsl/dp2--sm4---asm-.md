@@ -4,12 +4,12 @@ description: Vector 2 dimensional dot-product de componentes rg, POS-swzzle.
 ms.assetid: E35F6A8B-6D8E-4660-B0F3-95B76BC19229
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65e50c791fc5c994cf6e8da56cabf64a257244519b8ee0d0d50137926bffef91
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d4073def6cb315dc0268d1ce8e3f28039b9b2a69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120024645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264223"
 ---
 # <a name="dp2-sm4---asm"></a>dp2 (sm4 - asm)
 
@@ -17,7 +17,7 @@ Vector 2 dimensional dot-product de componentes rg, POS-swzzle.
 
 
 
-| dp2 \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swzzle \] , \[ - \] src1 abs \[ \_ \] \[ .swzzle\] |
+| dp2 \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swzzle, \] \[ - \] src1 \[ \_ abs \] \[ .sw swzzle\] |
 |--------------------------------------------------------------------------------------------|
 
 
@@ -36,7 +36,7 @@ Vector 2 dimensional dot-product de componentes rg, POS-swzzle.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Resultado escalar replicado en componentes en máscara de escritura.
 
@@ -60,9 +60,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |

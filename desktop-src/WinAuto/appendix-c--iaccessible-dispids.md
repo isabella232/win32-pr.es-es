@@ -1,15 +1,15 @@
 ---
-title: Apéndice C IACCESSIBLE DISPIDs
+title: Apéndice C IAccessible DISPIDs
 description: Un DISPID permite que la implementación de IDispatch busque los distintos métodos y propiedades de una interfaz dual.
 ms.assetid: 3d19b37a-1ce4-4f34-96b3-ff39b320e8db
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f73b1e280a6735f4d7d18f519e60102c04103d9500a588ef0613fd123557ed7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d510fac39209cdb268a7676b49bbb6424cae1b09
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119998885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070713"
 ---
 # <a name="appendix-c-iaccessible-dispids"></a>Apéndice C: IAccessible DISPIDs
 

@@ -4,16 +4,16 @@ ms.assetid: 0a6ac61d-a00c-4fc8-a995-d25d17e405df
 title: Códigos de error de Schannel para alertas TLS y SSL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4819c39948a2baf5889734fe7e2c08c8d85cbd22868cc9fad8a33281d13a306c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d9fdba202e63d212fc85f0c02eb5ac9dc20db047
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118918594"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265543"
 ---
 # <a name="schannel-error-codes-for-tls-and-ssl-alerts"></a>Códigos de error de Schannel para alertas TLS y SSL
 
-[*Schannel*](../secgloss/s-gly.md) devuelve los siguientes mensajes de error [](../secgloss/t-gly.md) cuando se recibe la alerta correspondiente de los protocolos seguridad de la capa de transporte (TLS) o [*Capa de sockets seguros*](../secgloss/s-gly.md) (SSL). Los mensajes de error se definen en Winerror.h.
+[*Schannel*](../secgloss/s-gly.md) devuelve los siguientes mensajes de error [](../secgloss/t-gly.md) cuando se recibe la alerta correspondiente de los protocolos seguridad de la capa de transporte (TLS) [*o Capa de sockets seguros*](../secgloss/s-gly.md) (SSL). Los mensajes de error se definen en Winerror.h.
 
 
 

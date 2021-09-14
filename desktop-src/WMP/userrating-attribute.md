@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41725119f97e0609931a3c9b7789e86d16a20507523e76a3f5642a0955998d6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a25dd7b4e55195deaecf5228b9ad5bad9195c2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120001655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070855"
 ---
 # <a name="userrating-attribute"></a>Atributo UserRating
 
@@ -31,7 +31,7 @@ El **atributo UserRating** es la clasificación especificada por el usuario en l
 -   [Listas](playlist-attributes-ref.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las clasificaciones de usuario se representan mediante valores enteros, como se describe en la tabla siguiente. Al especificar un valor, use uno de los valores de la columna Valor de escritura. Al recuperar valores, puede usar los intervalos de la columna Valores de lectura para determinar el número de estrellas.
 

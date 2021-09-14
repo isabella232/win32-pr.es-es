@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d893ddbddcaa655a0da9d25a434063d96fa5615f4dfd561835a718655e08e266
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c92a6375f0724a1910fc0f09b47e1593614f9f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117908745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264127"
 ---
 # <a name="packoffset"></a>packoffset
 
@@ -44,7 +44,7 @@ Palabra clave de empaquetado constante de sombreador opcional, que usa la sintax
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use esta palabra clave para empaquetar manualmente una constante de sombreador [al declarar un tipo de variable](dx-graphics-hlsl-variable-syntax.md).
 
@@ -75,7 +75,7 @@ cbuffer MyBuffer
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -21,12 +21,12 @@ keywords:
 - Objeto ErrorItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84dcd8e0961007c185640b32ac53d249d2e739ca5e1aa4247a6735e09b2a3242
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23064670f13229aca84ae6dc86cf27cf34abbc56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120004405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264759"
 ---
 # <a name="about-the-error-and-erroritem-objects"></a>Acerca de los objetos Error y ErrorItem
 

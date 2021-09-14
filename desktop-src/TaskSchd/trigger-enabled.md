@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b9fe5439576322807abea6e10089460eaed4440496ed6a9e0f989dd44bc7e20
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 411bc36dcf03933e2b4cee2f575aaec3b8133846
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120099705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264916"
 ---
 # <a name="triggerenabled-property"></a>Propiedad Trigger.Enabled
 
 Para el scripting, obtiene o establece un valor booleano que indica si el desencadenador está habilitado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -40,7 +40,7 @@ Trigger.Enabled As Boolean
 
 True si el desencadenador está habilitado; de lo contrario, false. El valor predeterminado es true.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al leer o escribir XML para una tarea, la propiedad enabled se especifica mediante el [**elemento Enabled**](taskschedulerschema-enabled-triggerbasetype-element.md) del Programador de tareas esquema.
 
@@ -57,7 +57,7 @@ Al leer o escribir XML para una tarea, la propiedad enabled se especifica median
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

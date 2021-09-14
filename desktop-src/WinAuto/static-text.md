@@ -4,12 +4,12 @@ description: Los controles de texto estático proporcionan una manera cómoda de
 ms.assetid: 2c4b29bc-54e6-4c96-93a3-1fcb96d68269
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da892a102caa8a1af1729bdb4fc2258f461828adf1f7622e8ff5abf8a2a0bc18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f35581a9b305f28782d8faeac81105afb0d5147
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052493"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070616"
 ---
 # <a name="static-text-msaa-ui-element-reference"></a>Texto estático (referencia de elemento de la interfaz de usuario de MSAA)
 
@@ -52,7 +52,7 @@ Los controles de texto estático admiten las [**siguientes propiedades IAccessib
 
 ## <a name="notes"></a>Notas
 
--   El [**método accSelect**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accselect) devuelve DISP E MEMBERNOTFOUND cuando se llama con \_ \_ [**SELFFUND \_ TAKEFOCUS**](selflag.md) en un objeto de texto estático.
+-   El [**método accSelect**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accselect) devuelve DISP E MEMBERNOTFOUND cuando se llama con \_ \_ [**SELFACTIVE \_ TAKEFOCUS**](selflag.md) en un objeto de texto estático.
 -   Los controles estáticos con el estilo ICONO de SS \_ devuelven datos no válidos en la **propiedad** Name.
 
 ## <a name="related-topics"></a>Temas relacionados

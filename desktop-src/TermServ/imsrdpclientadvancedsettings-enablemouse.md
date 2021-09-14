@@ -7,19 +7,19 @@ keywords:
 - Propiedad EnableMouse Servicios de Escritorio remoto
 - Propiedad EnableMouse Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Propiedad EnableMouse Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Propiedad EnableMouse Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Propiedad EnableMouse Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Propiedad EnableMouse Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Propiedad EnableMouse Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Propiedad EnableMouse Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad EnableMouse
-- Propiedad EnableMouse Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Propiedad EnableMouse Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
 - Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad EnableMouse
 topic_type:
 - apiref
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb61f7763f92c46a80a7e0e45c5c476f4d3b64e7cbb735ba1e254641d90dae4b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0495ba7b48e431efe5746f40b353b5c1ad701d6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118608703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264892"
 ---
-# <a name="imsrdpclientadvancedsettingsenablemouse-property"></a>IMsRdpClientAdvancedSettings::EnableMouse, propiedad
+# <a name="imsrdpclientadvancedsettingsenablemouse-property"></a>Propiedad IMsRdpClientAdvancedSettings::EnableMouse
 
 Esta propiedad no es compatible.
 
@@ -110,7 +110,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

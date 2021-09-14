@@ -1,11 +1,11 @@
 ---
-title: Método anterior IWMPControls
+title: Método anterior de IWMPControls
 description: El método anterior establece el elemento anterior de la lista de reproducción como el elemento actual.
 ms.assetid: 380524f5-e8b6-45c4-9f6c-3dbb49b1ac9f
 keywords:
-- método anterior de Windows Media Player
-- método anterior de Windows Media Player, interfaz IWMPControls
-- Interfaz IWMPControls Windows Media Player, método Previous
+- método anterior Reproductor de Windows Media
+- previous method Reproductor de Windows Media , IWMPControls (interfaz)
+- Interfaz IWMPControls Reproductor de Windows Media , método anterior
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 823038205a026afb7141491f562698eb60515a5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070751"
 ---
-# <a name="iwmpcontrolsprevious-method"></a>IWMPControls::p método rior
+# <a name="iwmpcontrolsprevious-method"></a>Método IWMPControls::p revious
 
-El método **anterior** establece el elemento anterior de la lista de reproducción como el elemento actual.
+El **método** anterior establece el elemento anterior de la lista de reproducción como el elemento actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,11 +55,11 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Si la lista de reproducción está en la primera entrada cuando se invoca el **anterior** , la última entrada de la lista de reproducción se convertirá en la actual.
+Si la lista de reproducción está en la primera entrada **cuando** se invoca previous, la última entrada de la lista de reproducción se convertirá en la actual.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **Previous** para moverse al elemento anterior de la lista de reproducción actual en respuesta al evento click de un botón. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa previous** para pasar al elemento anterior de la lista de reproducción actual en respuesta al evento Click de un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -106,7 +106,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -119,10 +119,10 @@ End Sub
 [**Interfaz IWMPControls (VB y C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. Next (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-next--vb-and-c.md)
+[**IWMPControls.next (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-next--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. STOP (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-stop--vb-and-c.md)
+[**IWMPControls.stop (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-stop--vb-and-c.md)
 </dt> </dl>
 
  

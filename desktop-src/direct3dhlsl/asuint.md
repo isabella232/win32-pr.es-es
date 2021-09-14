@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 02f0df4d31ca978b8b58b50cd0c91710056aa9ac0f3cac1ae370a4edba6a9edf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c54ed89e112482df4a54f35e24a04694e88fa490
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119626595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264404"
 ---
 # <a name="asuint-function"></a>función asuint
 
@@ -69,7 +69,7 @@ Patrón alto de 32 bits de *valor*.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es una versión alternativa del intrínseco [**asuint**](dx-graphics-hlsl-asuint.md) que ha estado disponible en modelos de sombreador anteriores y se introdujo para El modelo de sombreador 5. La función original (reconocida en el compilador hlsl por su firma diferente) sigue estando disponible para el modelo de sombreador 5.
 
@@ -81,7 +81,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | sí       |
 
 
 
@@ -91,7 +91,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -99,7 +99,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -8,25 +8,25 @@ keywords:
 - object model,MediaCollection object
 - Reproductor de Windows Media ActiveX control,objeto MediaCollection
 - ActiveX control,objeto MediaCollection
-- Reproductor de Windows Media Control de ActiveX móvil, objeto MediaCollection
+- Reproductor de Windows Media Control ActiveX móvil, objeto MediaCollection
 - Reproductor de Windows Media Mobile,MediaCollection , objeto
 - Objeto MediaCollection
 - Reproductor de Windows Media,objeto Media
 - Reproductor de Windows Media modelo de objetos, objeto Multimedia
 - object model,Media object
-- Reproductor de Windows Media ActiveX control, objeto Multimedia
-- ActiveX control,Objeto Multimedia
+- Reproductor de Windows Media ActiveX control, objeto Media
+- ActiveX control, objeto Media
 - Reproductor de Windows Media Control de ActiveX móvil,objeto Multimedia
 - Reproductor de Windows Media Mobile,Media (objeto)
 - Objeto multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 082bea6eb3707915422a0bfa5cba63a2a999ac8df27ffa13876e74ffcfc6a882
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe902fd9ed046e0197fb5c8c2d995d26befafe29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118583687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264764"
 ---
 # <a name="about-the-mediacollection-and-media-objects"></a>Acerca de los objetos MediaCollection y Media
 

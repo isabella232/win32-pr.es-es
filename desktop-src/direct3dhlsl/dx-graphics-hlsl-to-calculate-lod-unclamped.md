@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c61fbcd8ef340604b4104dcbfd25e1ceec6beb176aa3b7920c4305c6293ca69c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57c2336491a3314953297daac817e8b67dd6f172
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118090462"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264151"
 ---
 # <a name="calculatelevelofdetailunclamped-directx-hlsl-texture-object"></a>CalculateLevelOfDetailUnclamped (objeto de textura HLSL de DirectX)
 

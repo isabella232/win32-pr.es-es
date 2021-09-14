@@ -4,12 +4,12 @@ ms.assetid: 844a69f8-fe8d-43c8-984f-e73e37dfdda5
 title: Constantes TAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c4a7fa790939ce29a36a511375363f94fae539f1c7aaf0677bad4abbe87636c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab6e8dab324870d27a56a45e654e5b81bbfbf810
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120012255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071056"
 ---
 # <a name="tapi-constants"></a>Constantes TAPI
 

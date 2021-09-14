@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fcabc6dcf5043c23be252fe6ac25c99da505e33b7c670c95ee5672b50ddb74bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73ea16c5aa6b49bce59fe51905734344e4e1cffb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119744635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264020"
 ---
 # <a name="input-color-register"></a>Registro de color de entrada
 
 Registro de entrada del sombreador de píxeles que contiene el color del vértice.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -35,9 +35,9 @@ donde:
 -   v es un registro de entrada y \# es el número de registro. El número de registros permitidos viene determinado por la versión del sombreador.
 -   writeMask determina qué componentes (hasta cuatro) se escriben. Los componentes válidos son: (x,y,z,w) o (r,g,b,a).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los registros de color son registros de solo lectura. Cada registro contiene valores RGBA de cuatro componentes iterados a partir de los vértices de entrada. Tienen una precisión menor que la mayoría de los registros, con la garantía de tener 8 bits de datos sin signo en el intervalo (0, +1). No se puede usar más de uno en una sola instrucción.
+Los registros de color son registros de solo lectura. Cada registro contiene valores RGBA de cuatro componentes iterados a partir de vértices de entrada. Tienen una precisión menor que la mayoría de los registros, con la garantía de tener 8 bits de datos sin signo en el intervalo (0, +1). No se puede usar más de uno en una sola instrucción.
 
 ## <a name="related-topics"></a>Temas relacionados
 

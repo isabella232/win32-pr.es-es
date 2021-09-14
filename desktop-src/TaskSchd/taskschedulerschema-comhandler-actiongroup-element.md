@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aba73244c3dc5217bcfe7350462200cd3226f0607c6d68ce5c6bcb8f5574b7df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2269464efb09e8c513ab2bdebb24744a6b32a671
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117943242"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071052"
 ---
 # <a name="comhandler-actiongroup-element"></a>Elemento ComHandler (actionGroup)
 
@@ -49,11 +49,11 @@ El **elemento ComHandler** se define mediante [**actionGroup**](taskschedulersch
 | Elemento                                                               | Tipo                                                         | Descripción                                                       |
 |-----------------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------|
 | [**Classid**](taskschedulerschema-classid-comhandlertype-element.md) | [**guidType**](taskschedulerschema-guidtype-simpletype.md)  | Especifica el identificador de la clase de controlador.<br/>         |
-| [**data**](taskschedulerschema-data-comhandlertype-element.md)       | [**Datatype**](taskschedulerschema-datatype-complextype.md) | Especifica datos adicionales asociados al controlador.<br/> |
+| [**Data**](taskschedulerschema-data-comhandlertype-element.md)       | [**Datatype**](taskschedulerschema-datatype-complextype.md) | Especifica datos adicionales asociados al controlador.<br/> |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las aplicaciones definen una acción de controlador COM mediante [**la interfaz IComHandlerAction.**](/windows/desktop/api/taskschd/nn-taskschd-icomhandleraction)
 
@@ -65,7 +65,7 @@ El siguiente atributo se define mediante el [**tipo complejo actionBaseType.**](
 
 ## <a name="examples"></a>Ejemplos
 
-El código XML siguiente define una acción de controlador COM.
+El xml siguiente define una acción de controlador COM.
 
 
 ```XML

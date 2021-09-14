@@ -5,15 +5,15 @@ ms.assetid: e74407ef-f500-4d13-aef4-ca6bb37d5858
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ec9254aceaaa8a6fa26d56d4a86987cc955b90dc
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264551"
 ---
 # <a name="call-synchronization"></a>Sincronización de llamadas
 
-Las aplicaciones COM deben ser capaces de tratar correctamente la entrada del usuario al procesar una o varias llamadas desde COM o el sistema operativo. COM proporciona sincronización de llamadas solo para los departamentos de un solo subproceso. Los departamentos multiproceso (que contienen subprocesos de subproceso libre) no reciben llamadas al realizar llamadas (en el mismo subproceso). Los departamentos multiproceso no pueden realizar llamadas sincronizadas de entrada. Las llamadas asincrónicas se convierten en llamadas sincrónicas en los departamentos multiproceso. No se llama al filtro de mensajes para ningún subproceso de un apartamento multiproceso. Para obtener más información sobre los problemas de subprocesos, vea [Procesos, subprocesos y departamentos](processes--threads--and-apartments.md).
+Las aplicaciones COM deben ser capaces de tratar correctamente la entrada del usuario al procesar una o varias llamadas desde COM o el sistema operativo. COM proporciona sincronización de llamadas solo para departamentos de un solo subproceso. Los departamentos multiproceso (que contienen subprocesos sin subprocesos) no reciben llamadas al realizar llamadas (en el mismo subproceso). Los departamentos multiproceso no pueden realizar llamadas sincronizadas de entrada. Las llamadas asincrónicas se convierten en llamadas sincrónicas en departamentos multiproceso. No se llama al filtro de mensajes para ningún subproceso de un apartamento multiproceso. Para obtener más información sobre los problemas de subprocesos, vea [Procesos, subprocesos y departamentos](processes--threads--and-apartments.md).
 
 Las llamadas COM entre procesos se divide en tres categorías, como se muestra a continuación:
 
@@ -47,7 +47,7 @@ Al enviar notificaciones asincrónicas, el autor de la llamada no espera la resp
 <span id="Input-synchronized_calls"></span><span id="input-synchronized_calls"></span><span id="INPUT-SYNCHRONIZED_CALLS"></span>*Llamadas sincronizadas con entrada*
 </dt> <dd>
 
-Al realizar llamadas sincronizadas con entrada, el objeto al que se llama debe completar la llamada antes de producir el control. Esto ayuda a garantizar que la administración del foco funciona correctamente y que los datos especificados por el usuario se procesan correctamente. Com realiza estas llamadas a través de la [**función SendMessage,**](/windows/win32/api/winuser/nf-winuser-sendmessage) sin entrar en un bucle modal. Al procesar una llamada sincronizada de entrada, el objeto al que se llama no debe llamar a ninguna función o método (incluidos los métodos sincrónicos) que puedan producir control. Los métodos siguientes se sincronizan con la entrada
+Al realizar llamadas sincronizadas de entrada, el objeto al que se llama debe completar la llamada antes de producir el control. Esto ayuda a garantizar que la administración del foco funciona correctamente y que los datos especificados por el usuario se procesan correctamente. Com realiza estas llamadas a través de [**la función SendMessage,**](/windows/win32/api/winuser/nf-winuser-sendmessage) sin entrar en un bucle modal. Al procesar una llamada sincronizada de entrada, el objeto al que se llama no debe llamar a ninguna función o método (incluidos los métodos sincrónicos) que puedan producir control. Los métodos siguientes están sincronizados con la entrada
 
 -   [**IOleWindow::GetWindow**](/windows/desktop/api/OleIdl/nf-oleidl-iolewindow-getwindow)
 -   [**IOleInPlaceActiveObject::OnFrameWindowActivate**](/windows/desktop/api/OleIdl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate)
@@ -62,9 +62,9 @@ Al realizar llamadas sincronizadas con entrada, el objeto al que se llama debe c
 
 </dd> </dl>
 
-Para minimizar los problemas que pueden surgir del procesamiento asincrónico de mensajes, la mayoría de las llamadas al método COM son sincrónicas. Con la comunicación sincrónica, no es necesario que el código especial envíe y controle los mensajes entrantes. Cuando una aplicación realiza una llamada de método sincrónico, COM entra en un bucle de espera modal que controla las respuestas necesarias y envía los mensajes entrantes a las aplicaciones capaces de procesarlos.
+Para minimizar los problemas que pueden surgir del procesamiento asincrónico de mensajes, la mayoría de las llamadas a métodos COM son sincrónicas. Con la comunicación sincrónica, no es necesario que el código especial envíe y controle los mensajes entrantes. Cuando una aplicación realiza una llamada de método sincrónico, COM entra en un bucle de espera modal que controla las respuestas necesarias y envía los mensajes entrantes a las aplicaciones capaces de procesarlas.
 
-COM administra las llamadas a métodos mediante la asignación de un identificador denominado identificador *de subproceso lógico*. Se asigna uno nuevo cuando un usuario selecciona un comando de menú o cuando la aplicación inicia una nueva operación COM. A las llamadas posteriores relacionadas con la llamada COM inicial se les asigna el mismo identificador de subproceso lógico que la llamada inicial.
+COM administra las llamadas a métodos mediante la asignación de un identificador denominado *identificador de subproceso lógico*. Se asigna uno nuevo cuando un usuario selecciona un comando de menú o cuando la aplicación inicia una nueva operación COM. A las llamadas posteriores relacionadas con la llamada COM inicial se les asigna el mismo identificador de subproceso lógico que la llamada inicial.
 
  
 

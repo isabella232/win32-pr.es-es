@@ -10,11 +10,11 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 44d71469cf5fd3246a0bb038cf369227cb3a3017
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625831"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264143"
 ---
 # <a name="calculatelevelofdetail-directx-hlsl-texture-object"></a>CalculateLevelOfDetail (objeto de textura HLSL de DirectX)
 

@@ -4,12 +4,12 @@ ms.assetid: 872de1e9-20f9-409b-9917-24b13a8cc08a
 title: COM Interfaces (Sensor API)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dec09b777379b283a4b941eccd6b6a393d4b51acbdd212e13f6b70569e866833
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 66a73e506f5b2a59a7ce8373b810aeba779f5e9a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117968319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265095"
 ---
 # <a name="com-interfaces-sensor-api"></a>COM Interfaces (Sensor API)
 
@@ -20,7 +20,7 @@ Sensor API expone las siguientes interfaces COM.
 | Interfaz                                              | Descripción                                                                                                      |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | [**ILocationPermissions**](/windows/desktop/api/sensorsapi/nn-sensorsapi-ilocationpermissions)   | Proporciona el estado de la configuración del sistema que permite a los usuarios cambiar la configuración de ubicación.                         |
-| [**ILogicalSensorManager**](/previous-versions/windows/desktop/legacy/dd318934(v=vs.85)) | Proporciona métodos utilizados por los autores de sensores lógicos para administrar las conexiones de sensor lógico.                            |
+| [**ILogicalSensorManager**](/previous-versions/windows/desktop/legacy/dd318934(v=vs.85)) | Proporciona métodos usados por los autores de sensores lógicos para administrar las conexiones de sensor lógico.                            |
 | [**ISensor**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensor)                             | Representa un sensor.                                                                                             |
 | [**ISensorCollection**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensorcollection)         | Representa una colección de sensores.                                                                              |
 | [**ISensorDataReport**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensordatareport)         | Representa un informe de datos del sensor.                                                                                 |

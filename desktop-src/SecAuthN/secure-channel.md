@@ -4,12 +4,12 @@ ms.assetid: 159074a1-6425-409a-8470-02cd485b75e9
 title: Canal seguro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a9a573fab82f873b7945adff3c2d5bd99193f06d289c894be482179608a1fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c007d3e967588d1b266c9a384fd8d1869b3b1ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118918398"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265535"
 ---
 # <a name="secure-channel"></a>Canal seguro
 

@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1c5e17c40908dbc76c61fe60c1b3d885b709d7b1e9282136957e0617ae52ea7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f4fb36eea4038322cacd7f233892151ab77e5eea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119734995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070744"
 ---
 # <a name="iwmpcontrols3currentaudiolanguageindex-property"></a>Propiedad IWMPControls3::currentAudioLanguageIndex
 
 La **propiedad currentAudioLanguageIndex** obtiene o establece el índice basado en uno que corresponde al idioma de audio para la reproducción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public Property currentAudioLanguageIndex As System.Int32
 
 **System.Int32** que es el índice basado en uno del lenguaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para Windows contenido basado en medios, las propiedades y los métodos relacionados con la selección de idioma solo admiten una única salida.
 
@@ -58,7 +58,7 @@ Use la **propiedad audioLanguageCount** para obtener el número de idiomas de au
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

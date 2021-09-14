@@ -1,9 +1,9 @@
 ---
-title: VIDEO.toolTip
-description: El atributo toolTip especifica o recupera el texto de la información sobre herramientas para la ventana de vídeo.
+title: Información sobre VIDEO.tool
+description: El atributo toolTip especifica o recupera el texto de información sobre herramientas para la ventana de vídeo.
 ms.assetid: 84e382b4-01b2-4be7-9768-7773a3f1300f
 keywords:
-- VIDEO.toolTip Reproductor de Windows Media
+- Video.toolTip Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7e2b2a6b05956fbe276ba6c35939af6efc229e236ddc66e10722b874d7aa0bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b73fcb6bee42b36d38bb651ef7e46dd3081ae7a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117931698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070804"
 ---
-# <a name="videotooltip"></a>VIDEO.toolTip
+# <a name="videotooltip"></a>Información sobre VIDEO.tool
 
-El **atributo toolTip** especifica o recupera el texto de la información sobre herramientas para la ventana de vídeo.
+El **atributo toolTip** especifica o recupera el texto de información sobre herramientas para la ventana de vídeo.
 
 ``` syntax
         elementID.toolTip
@@ -29,9 +29,9 @@ El **atributo toolTip** especifica o recupera el texto de la información sobre 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de lectura y **escritura,** que no debe superar los 1024 caracteres de longitud. No tiene valor predeterminado.
+Este atributo es una cadena de lectura **y** escritura , que no debe superar los 1024 caracteres de longitud. No tiene valor predeterminado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando este atributo se establece en "" (cadena vacía), no se muestra información sobre herramientas.
 
@@ -39,7 +39,7 @@ Cuando este atributo se establece en "" (cadena vacía), no se muestra informaci
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

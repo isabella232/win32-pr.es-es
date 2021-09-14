@@ -14,16 +14,16 @@ keywords:
 - patrones de control, DropTarget
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1eab48f4319c51a5ccbbaadae22f1ae337740df5b6d0fdf325a01ba1323f8630
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4194613d15aadac4a925303ef2322d4cf53c341c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133568"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070586"
 ---
 # <a name="ui-automation-support-for-drag-and-drop"></a>Automatización de la interfaz de usuario compatibilidad con arrastrar y colocar
 
-Microsoft Automatización de la interfaz de usuario define dos patrones de control para admitir escenarios de arrastrar y colocar, el patrón de control [Arrastrar](/windows/desktop/WinAuto/uiauto-implementingdrag) y el patrón de control [DropTarget.](/windows/desktop/WinAuto/uiauto-implementingdroptarget) Implemente el patrón de control Drag para un elemento que se puede arrastrar y el patrón de control DropTarget para un elemento que puede recibir un elemento arrastrado; es decir, un destino de colocación. Los dos patrones de control exponen información que una tecnología de asistencia puede usar para ayudar a un usuario de accesibilidad a completar una operación de arrastrar y colocar.
+Microsoft Automatización de la interfaz de usuario dos patrones de control para admitir escenarios de arrastrar y colocar, el patrón de control [Arrastrar](/windows/desktop/WinAuto/uiauto-implementingdrag) y el patrón de control [DropTarget.](/windows/desktop/WinAuto/uiauto-implementingdroptarget) Implemente el patrón de control Drag para un elemento que se puede arrastrar y el patrón de control DropTarget para un elemento que puede recibir un elemento arrastrado; es decir, un destino de colocación. Los dos patrones de control exponen información que una tecnología de asistencia puede usar para ayudar a un usuario de accesibilidad a completar una operación de arrastrar y colocar.
 
 -   [Arrastrar estilos](#dragging-styles)
     -   [Estilo de origen/destino](#sourcetarget-style)
@@ -64,7 +64,7 @@ Cuando el usuario libera el elemento arrastrado sobre un destino:
 
 -   El origen genera el evento DragComplete [**\_ \_ (DragCompleteEventId) de UIA DragComplete.**](uiauto-event-ids.md)
 -   El origen establece la [**propiedad IDragProvider::IsGrabbed**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idragprovider-get_isgrabbed) en **FALSE.**
--   El destino establece la [**propiedad IDropTargetProvider::D ropTargetEffect**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idroptargetprovider-get_droptargeteffect) para indicar el efecto que se produjo.
+-   El destino establece la [**propiedad IDropTargetProvider::D ropTargetEffect**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idroptargetprovider-get_droptargeteffect) para indicar el efecto que se ha producido.
 -   El destino genera el evento Dropped [**\_ (DropTarget \_ DroppedEventId) de UIA.**](uiauto-event-ids.md)
 
   
@@ -74,7 +74,7 @@ Los eventos de los objetos de origen y de destino están estrechamente relaciona
 
 Cuando una operación de arrastre está en curso, el elemento arrastrado se puede arrastrar dentro y fuera de las regiones de destino varias veces antes de que se complete la operación.
 
-Cualquier destino de colocación que necesite actualizar su [**propiedad IDropTargetProvider::D ropTargetEffect**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idroptargetprovider-get_droptargeteffect) sobre la marcha debe generar un evento de cambio de propiedad adicional en esa propiedad.
+Cualquier destino de colocación que necesite actualizar su propiedad [**IDropTargetProvider::D ropTargetEffect**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idroptargetprovider-get_droptargeteffect) sobre la marcha debe generar un evento de cambio de propiedad adicional en esa propiedad.
 
 ### <a name="source-only-style"></a>Estilo de solo origen
 

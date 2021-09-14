@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73c39b40412a02e145b8063f473272184e1d7cf03caaa170de19bde7fad37a50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c23ab90b974ad5a7f9cfaf9fcc598371cd0697f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134248"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070833"
 ---
 # <a name="videocursor"></a>VIDEO.cursor
 
@@ -29,7 +29,7 @@ El **atributo** cursor especifica o recupera el valor del cursor que se usa cuan
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de lectura **y escritura.**
+Este atributo es una cadena de lectura y **escritura.**
 
 
 
@@ -37,20 +37,20 @@ Este atributo es una cadena de lectura **y escritura.**
 |------------------|---------------------------------------------------------------------------------------------|
 | sistema           | Cursor dependiente de la plataforma (normalmente una flecha).                                               |
 | Mano             | Mano.                                                                                       |
-| ayuda             | Flecha con signo de interrogación que indica que la Ayuda está disponible.                                      |
+| help             | Flecha con signo de interrogación que indica que la Ayuda está disponible.                                      |
 | sizeall          | Flecha de cuatro puntas que apunta al norte, sur, este y oeste.                                   |
-| sizenesw         | Flecha de doble punta que apunta hacia el noreste y el suroeste.                                      |
+| sizenesw         | Flecha de doble punta que apunta hacia el nordeste y el suroeste.                                      |
 | sizens           | Flecha de doble punta que apunta hacia el norte y el sur.                                              |
-| sizenwse         | Flecha de doble punta que apunta al noroeste y al sudeste.                                      |
+| sizenwse         | Flecha de doble punta que apunta al sudeste y al sudeste.                                      |
 | sizewe           | Flecha de doble punta que apunta hacia el oeste y el este.                                                |
-| arriba          | Flecha vertical que apunta hacia arriba.                                                             |
+| uparrow          | Flecha vertical que apunta hacia arriba.                                                             |
 | \*.ani o \* .cur | Cualquier archivo .ani o .cur (debe estar en el mismo directorio que el archivo .wms o en el archivo .wmz). |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Con fines de representación, el sistema es el cursor predeterminado. El valor predeterminado recuperado de este atributo es "" (cadena vacía).
 

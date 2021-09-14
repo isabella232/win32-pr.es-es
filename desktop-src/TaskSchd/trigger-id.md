@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2c9ff851eab7b5e9cfb124bf03c83986d24b391d5ea109865ff2d59e2e33536
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91a3868f76368b19e6a316b222b8ddaf4cbbff96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119002163"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264903"
 ---
 # <a name="triggerid-property"></a>Trigger.Id propiedad
 
 Para el scripting, obtiene o establece el identificador del desencadenador.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -40,9 +40,9 @@ Trigger.Id As String
 
 Identificador del desencadenador. Este identificador lo usa el Programador de tareas con fines de registro.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Al leer o escribir XML para una tarea, el identificador del desencadenador se especifica en el atributo Id de los elementos de desencadenador individuales (por ejemplo, el atributo Id del [**elemento BootTrigger)**](taskschedulerschema-boottrigger-triggergroup-element.md) del esquema Programador de tareas.
+Al leer o escribir XML para una tarea, el identificador del desencadenador se especifica en el atributo Id de los elementos de desencadenador individuales (por ejemplo, el atributo Id del elemento [**BootTrigger)**](taskschedulerschema-boottrigger-triggergroup-element.md) del esquema Programador de tareas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Al leer o escribir XML para una tarea, el identificador del desencadenador se es
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -6,19 +6,19 @@ keywords:
 - Reproductor de Windows Media complementos, recursos de streaming de ejemplo de eco
 - complementos, recursos de streaming de ejemplo de eco
 - complementos de procesamiento de señales digitales, recursos de streaming de ejemplo de eco
-- Complementos DE DSP, recursos de streaming de ejemplo de eco
+- Complementos de DSP, recursos de streaming de ejemplo de eco
 - Ejemplo de complemento DSP de eco, recursos de streaming
-- Ejemplo del complemento DSP de eco, búfer de retraso
+- Ejemplo de complemento DSP de eco, búfer de retraso
 - búfer de retraso
 - búferes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5be71bc7f2ded34dcd5f29bc10ce01796b6498d36a9a194a48b0bfdec0e14662
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 09d7f9657d16d0805ff2fc85d2238635fbfa6e5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119571745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070838"
 ---
 # <a name="variables-to-manage-the-delay-buffer"></a>Variables para administrar el búfer de retraso
 

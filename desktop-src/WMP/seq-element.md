@@ -1,9 +1,9 @@
 ---
-title: Seq (elemento)
-description: El elemento SEQ contiene elementos que definen una lista de reproducción estática o elementos que definen una lista de reproducción inteligente.
+title: seq (Elemento)
+description: El elemento seq contiene elementos que definen una lista de reproducción estática o elementos que definen una lista de reproducción inteligente.
 ms.assetid: 849f7b38-25f2-4708-a83c-e651812a1a72
 keywords:
-- Elemento SEQ Windows Media Player
+- seq Element Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,15 +14,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: b08b3f4dfa448e48f3a9d2472c6ddb46a4d4dfaf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070859"
 ---
-# <a name="seq-element"></a>Seq (elemento)
+# <a name="seq-element"></a>seq (Elemento)
 
-El elemento **Seq** contiene elementos que definen una lista de reproducción estática o elementos que definen una lista de reproducción inteligente.
+El **elemento seq** contiene elementos que definen una lista de reproducción estática o elementos que definen una lista de reproducción inteligente.
 
 ``` syntax
 <seq>
@@ -40,7 +40,7 @@ Este elemento no tiene atributos.
 | Hierarchy | Elementos                                                               |
 |-----------|------------------------------------------------------------------------|
 | Parent    | [body](body-element.md)                                               |
-| Elemento secundario     | [medios](media-element.md), [smartPlaylist](smartplaylist-element.md) |
+| Elemento secundario     | [media](media-element.md), [smartPlaylist](smartplaylist-element.md) |
 
 
 
@@ -48,7 +48,7 @@ Este elemento no tiene atributos.
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando un elemento **Seq** solo contiene elementos **multimedia** que hacen referencia a elementos multimedia específicos, se considera que la lista de reproducción es estática. Cuando un elemento **Seq** contiene un elemento **smartPlaylist** , se considera que es una lista de reproducción "inteligente" dinámica.
+Cuando un **elemento seq** solo **contiene** elementos multimedia que hacen referencia a elementos multimedia específicos, la lista de reproducción se considera estática. Cuando un **elemento seq** contiene un **elemento smartPlaylist,** se considera una lista de reproducción dinámica "inteligente".
 
 ## <a name="examples"></a>Ejemplos
 
@@ -72,7 +72,7 @@ Cuando un elemento **Seq** solo contiene elementos **multimedia** que hacen refe
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
@@ -80,16 +80,16 @@ Cuando un elemento **Seq** solo contiene elementos **multimedia** que hacen refe
 
 <dl> <dt>
 
-[**Elemento BODY**](body-element.md)
+[**body (Elemento)**](body-element.md)
 </dt> <dt>
 
-[**Elemento multimedia**](media-element.md)
+[**elemento media**](media-element.md)
 </dt> <dt>
 
 [**Elemento smartPlaylist**](smartplaylist-element.md)
 </dt> <dt>
 
-[**Referencia de elementos de lista de reproducción de Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referencia de elementos de lista de reproducción multimedia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 3d6e090a-00b1-47d8-a4fb-620f3db8ba9c
 title: Servicios interactivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee6b99eb41d26d6740a30a314654d92fdd4522f5597ea6e4cbb2a3d443de8120
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57dda3018b4b37e8c5ee56d67cd1db2c56da9b67
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118889473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265015"
 ---
 # <a name="interactive-services"></a>Servicios interactivos
 
@@ -25,7 +25,7 @@ Normalmente, los servicios son aplicaciones de consola diseñadas para ejecutars
 Puede usar las técnicas siguientes para interactuar con el usuario desde un servicio en todas las versiones admitidas de Windows:
 
 -   Mostrar un cuadro de diálogo en la sesión del usuario mediante la [**función WTSSendMessage.**](/windows/desktop/api/wtsapi32/nf-wtsapi32-wtssendmessagea)
--   Cree una aplicación de GUI oculta independiente y use la [**función CreateProcessAsUser**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) para ejecutar la aplicación en el contexto del usuario interactivo. Diseñe la aplicación guia para comunicarse con el servicio a través de algún método de comunicación entre procesos (IPC), por ejemplo, canalizaciones con nombre. El servicio se comunica con la aplicación de guia para saber cuándo se debe mostrar la GUI. La aplicación comunica los resultados de la interacción del usuario al servicio para que el servicio pueda realizar la acción adecuada. Tenga en cuenta que IPC puede exponer las interfaces de servicio a través de la red a menos que use una lista de control de acceso (ACL) adecuada.
+-   Cree una aplicación de GUI oculta independiente y use la [**función CreateProcessAsUser**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) para ejecutar la aplicación en el contexto del usuario interactivo. Diseñe la aplicación gui para comunicarse con el servicio a través de algún método de comunicación entre procesos (IPC), por ejemplo, canalizaciones con nombre. El servicio se comunica con la aplicación de guia para saber cuándo se debe mostrar la GUI. La aplicación comunica los resultados de la interacción del usuario al servicio para que el servicio pueda realizar la acción adecuada. Tenga en cuenta que IPC puede exponer las interfaces de servicio a través de la red a menos que use una lista de control de acceso (ACL) adecuada.
 
     Si este servicio se ejecuta en un sistema multiusuario, agregue la aplicación a la clave siguiente para que se ejecute en cada sesión: **HKEY \_ LOCAL MACHINE SOFTWARE Microsoft Windows \_ \\ \\ \\ \\ CurrentVersion \\ Run**. Si la aplicación usa canalizaciones con nombre para IPC, el servidor puede distinguir entre varios procesos de usuario al dar a cada canalización un nombre único basado en el identificador de sesión.
 

@@ -35,12 +35,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9a4e314c2e47adc2500c74c570589ce5b808a16c52b6c3d7e7b285d4b5f106e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb628c8e6ada93546291cd9afb87c3194798b9f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070576"
 ---
 # <a name="annotation-type-identifiers"></a>Identificadores de tipo de anotación
 
@@ -85,7 +85,7 @@ En este tema se describen las constantes con nombre que se usan para identificar
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                            |
-| Header<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 

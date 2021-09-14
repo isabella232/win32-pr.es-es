@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aacc393080d06d8f6f72e4a55cc17f2d276f47174cbbb9e9b2fe495e27e7a749
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d23a9b85034c1591cfe695759b29612a3674d436
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117725473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264159"
 ---
 # <a name="texcubeproj"></a>texCUBEproj
 

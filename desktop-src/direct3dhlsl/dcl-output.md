@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d60f50250a3bf35056cd7232100fbac3e3d919c3c473436899e359f26f84ecea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4391a30e172ef28133b8fe09a99bae7f77c971af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117726992"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264263"
 ---
 # <a name="dcl_output-sm4---asm"></a>Salida dcl \_ (sm4 - asm)
 
@@ -52,11 +52,11 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
-A continuación se muestran algunos ejemplos.
+Estos son algunos ejemplos.
 
 
 ```
@@ -75,9 +75,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
@@ -90,7 +90,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

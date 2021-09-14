@@ -1,6 +1,6 @@
 ---
 title: Sampler (Direct3D 9 asm-ps)
-description: Un sampler es un pseudo registro de entrada para un sombreador de píxeles, que se usa para identificar la fase de muestreo.
+description: Un muestreador es un pseudoc registro de entrada para un sombreador de píxeles, que se usa para identificar la fase de muestreo.
 ms.assetid: 37cc28ae-fbd0-4f81-9e8e-f9609980d84e
 keywords:
 - Sampler, Type (Direct3D 9 asm-ps)
@@ -11,18 +11,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: abf8887f229669273b26c9afeb036821842bf19311a752654ba1b5909d943090
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 77875eed0827ad6bcb6d89111b13b6a31232dd86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119982845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263924"
 ---
 # <a name="sampler-direct3d-9-asm-ps"></a>Sampler (Direct3D 9 asm-ps)
 
-Un sampler es un pseudo registro de entrada para un sombreador de píxeles, que se usa para identificar la fase de muestreo. Hay registros de fase de muestreo de sombreador de 16 píxeles: s0 a s15. Por lo tanto, se pueden leer hasta 16 superficies de textura en un solo paso de sombreador. Las instrucciones que usan un registro de sampler sonld y texldp.
+Un muestreador es un pseudoc registro de entrada para un sombreador de píxeles, que se usa para identificar la fase de muestreo. Hay registros de fase de muestreo de sombreador de 16 píxeles: de0 a s15. Por lo tanto, se pueden leer hasta 16 superficies de textura en un solo paso de sombreador. Las instrucciones que usan un registro de sampler son texld y texldp.
 
-Sampler debe declararse antes de su uso con la [instrucción dcl \_ samplerType (sm2, sm3 - ps asm).](dcl-samplertype---ps.md)
+Sampler debe declararse antes de su uso con la instrucción [dcl \_ samplerType (sm2, sm3 - ps asm).](dcl-samplertype---ps.md)
 
 
 

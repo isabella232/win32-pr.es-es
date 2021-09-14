@@ -5,7 +5,7 @@ ms.assetid: 01696d28-e83b-4fd2-8e88-2871831b61e7
 keywords:
 - MediaCollectionMediaAdded event Reproductor de Windows Media
 - MediaCollectionMediaAdded event Reproductor de Windows Media , Player (Clase)
-- Clase player Reproductor de Windows Media evento , MediaCollectionMediaAdded
+- Clase player Reproductor de Windows Media , Evento MediaCollectionMediaAdded
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fef517c3d22335df6dd5dc5f62adcfd8f35dc3f2f91b08f8041c05770311993
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d18dd0536f508090c46f9fc5a9059c809f50091d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117747354"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070973"
 ---
 # <a name="playermediacollectionmediaadded-event"></a>Evento Player.MediaCollectionMediaAdded
 
@@ -53,7 +53,7 @@ Player.MediaCollectionMediaAdded(
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este evento solo se produce para la biblioteca local.
 

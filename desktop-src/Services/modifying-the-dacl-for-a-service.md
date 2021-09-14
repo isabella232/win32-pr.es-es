@@ -1,23 +1,23 @@
 ---
 description: Un programa de control de servicio puede crear o modificar la DACL asociada a un servicio para controlar el acceso.
 ms.assetid: 24bfb2b5-34be-4d38-a690-90d29f5d4f9c
-title: Modificar la DACL para un servicio
+title: Modificar la DACL de un servicio
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d814f6bc81b6d6a207bebf0e9b88c0bb672cdfbf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912226"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265004"
 ---
-# <a name="modifying-the-dacl-for-a-service"></a>Modificar la DACL para un servicio
+# <a name="modifying-the-dacl-for-a-service"></a>Modificar la DACL de un servicio
 
-Un [programa de control de servicio](service-control-programs.md) puede crear o modificar la DACL asociada a un servicio para controlar el acceso. Para recuperar la DACL asociada a un objeto de servicio, utilice la función [**QueryServiceObjectSecurity**](/windows/desktop/api/winsvc/nf-winsvc-queryserviceobjectsecurity) . Para establecer la DACL, utilice la función [**SetServiceObjectSecurity**](/windows/desktop/api/winsvc/nf-winsvc-setserviceobjectsecurity) . Los cambios que se realicen en el [**\_ descriptor de seguridad**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) asociado al objeto de servicio son persistentes hasta que el servicio se quite del sistema.
+Un [programa de control de](service-control-programs.md) servicio puede crear o modificar la DACL asociada a un servicio para controlar el acceso. Para recuperar la DACL asociada a un objeto de servicio, use la [**función QueryServiceObjectSecurity.**](/windows/desktop/api/winsvc/nf-winsvc-queryserviceobjectsecurity) Para establecer la DACL, use la [**función SetServiceObjectSecurity.**](/windows/desktop/api/winsvc/nf-winsvc-setserviceobjectsecurity) Los cambios realizados en el [**\_ DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) asociado al objeto de servicio son persistentes hasta que el servicio se quita del sistema.
 
-En el ejemplo siguiente se crea y establece una nueva DACL para el servicio. El código combina una entrada de control de acceso (ACE) con la DACL existente para el servicio. La nueva ACE concede a la cuenta de invitado Inicio, detención, eliminación y \_ acceso de control de lectura al servicio especificado. El acceso al servicio se puede modificar mediante el parámetro *AccessPermissions* que se pasa a la función [**BuildExplicitAccessWithName**](/windows/desktop/api/aclapi/nf-aclapi-buildexplicitaccesswithnamea) .
+En el ejemplo siguiente se crea y establece una nueva DACL para el servicio. El código combina una entrada de control de acceso (ACE) con la DACL existente para el servicio. La nueva ACE concede a la cuenta de invitado acceso start, stop, delete y READ \_ CONTROL al servicio especificado. El acceso al servicio se puede modificar mediante el *parámetro AccessPermissions* pasado a la [**función BuildExplicitAccessWithName.**](/windows/desktop/api/aclapi/nf-aclapi-buildexplicitaccesswithnamea)
 
-La variable szSvcName es una variable global que contiene el nombre del servicio. Para obtener el ejemplo completo en el que se establece esta variable, vea [SvcControl. cpp](svccontrol-cpp.md).
+La variable szSvcName es una variable global que contiene el nombre del servicio. Para obtener el ejemplo completo que establece esta variable, vea [SvcControl.cpp](svccontrol-cpp.md).
 
 
 ```C++
@@ -172,7 +172,7 @@ dacl_cleanup:
 
 <dl> <dt>
 
-[El ejemplo de servicio completo](the-complete-service-sample.md)
+[Ejemplo de servicio completo](the-complete-service-sample.md)
 </dt> </dl>
 
  

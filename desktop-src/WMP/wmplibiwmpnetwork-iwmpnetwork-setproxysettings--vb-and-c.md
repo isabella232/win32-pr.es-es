@@ -5,7 +5,7 @@ ms.assetid: 6e410812-a06c-4911-8291-1d654fcd281a
 keywords:
 - Método setProxySettings Reproductor de Windows Media
 - Método setProxySettings Reproductor de Windows Media , interfaz IWMPNetwork
-- Interfaz IWMPNetwork Reproductor de Windows Media método , setProxySettings
+- Interfaz IWMPNetwork Reproductor de Windows Media , método setProxySettings
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 258c25fb962acdac2f682ba20b3280b8baa489496046c79d7edd03b519a67b1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b7fc36c12335cf97ad7bff34924850155f2fd747
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119053473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264660"
 ---
 # <a name="iwmpnetworksetproxysettings-method"></a>IWMPNetwork::setProxySettings (método)
 
@@ -86,13 +86,13 @@ Implements IWMPNetwork.setProxySettings
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa un cuadro de lista para permitir al usuario establecer la configuración Reproductor de Windows Media proxy del protocolo HTTP. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
+En el ejemplo de código siguiente se usa un cuadro de lista para permitir al usuario establecer la configuración Reproductor de Windows Media proxy para el protocolo HTTP. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -153,7 +153,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

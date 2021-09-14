@@ -4,8 +4,8 @@ description: El método de reproducción comienza la reproducción del elemento 
 ms.assetid: 02e00df6-4dc1-44bb-9826-e69e8298ccaa
 keywords:
 - método play Reproductor de Windows Media
-- play method Reproductor de Windows Media , interfaz IWMPControls
-- Interfaz IWMPControls Reproductor de Windows Media , método play
+- método play Reproductor de Windows Media interfaz , IWMPControls
+- Interfaz IWMPControls Reproductor de Windows Media método , play
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2823c5f9846ec2569da0ede6629a4b7e8c04c7b61e14060451c8d0cf3a02f71d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0fd87a2e2ba3d53b119df328fa68668c91c78d6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119761025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070757"
 ---
 # <a name="iwmpcontrolsplay-method"></a>IWMPControls::p lay (método)
 
@@ -53,7 +53,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se llama a este método durante el reenvío rápido o la rebobinado, la velocidad de reproducción (el valor de **IWMPSettings.rate)** se establece en 1,0.
 

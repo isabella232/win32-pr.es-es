@@ -1,9 +1,9 @@
 ---
-title: VER. cerrar
-description: El método Close cierra la vista.
+title: VIEW.close
+description: El método close cierra view.
 ms.assetid: 3eabd9c1-99c3-4aed-9874-2c1242decd50
 keywords:
-- VER. cerrar ventanas Media Player
+- VIEW.close Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,15 +14,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 808d8930a72042009d6c855e798e717a7697ebac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649701"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070774"
 ---
-# <a name="viewclose"></a>VER. cerrar
+# <a name="viewclose"></a>VIEW.close
 
-El método **Close** cierra la **vista**.
+El **método close** cierra **view**.
 
 ``` syntax
         elementID.close()
@@ -42,7 +42,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -50,7 +50,7 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> </dl>
 
  

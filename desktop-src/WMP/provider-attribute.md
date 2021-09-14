@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b885275d165cba8ab9bb1e790c6f4983579b7919c4bbefb335d5c0ddc0607f0a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e16291eca203077332238a6b526d11a8bcb5b48
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118570696"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070958"
 ---
 # <a name="provider-attribute"></a>Atributo provider
 
@@ -27,7 +27,7 @@ El **atributo Provider** es una cadena que identifica el proveedor de los valore
 
 -   [Listas de reproducción de CD](cd-playlist-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -35,13 +35,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-title: Gather (objeto de textura HLSL de DirectX)
+title: Recopilar (objeto de textura HLSL de DirectX)
 description: Obtiene las cuatro muestras (solo componente rojo) que se usarían para la interpolación bilineal al muestrear una textura.
 ms.assetid: a394d8c2-99cc-4a38-9ac9-34afc666ebe0
 ms.topic: reference
@@ -10,17 +10,17 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: bf364bc9d8feac199235319639ab5be8b851de4b
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626961"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264148"
 ---
-# <a name="gather-directx-hlsl-texture-object"></a>Gather (objeto de textura HLSL de DirectX)
+# <a name="gather-directx-hlsl-texture-object"></a>Recopilar (objeto de textura HLSL de DirectX)
 
 Obtiene las cuatro muestras (solo componente rojo) que se usarían para la interpolación bilineal al muestrear una textura.
 
-&lt;Tipo de &gt; plantilla 4 Object.Gather( sampler \_ state S, float2 \| 3 \| 4 Location , \[ int2 Offset \] );
+&lt;Template Type &gt; 4 Object.Gather( sampler \_ state S, float2 \| 3 \| 4 Location \[ , int2 Offset \] );
 
 
 
@@ -56,7 +56,7 @@ Obtiene las cuatro muestras (solo componente rojo) que se usarían para la inter
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object tipo</th>
+<th>Texture-Object type</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -80,12 +80,12 @@ Obtiene las cuatro muestras (solo componente rojo) que se usarían para la inter
 </tr>
 <tr class="even">
 <td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Compensar</em></p></td>
-<td><p>[in] Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura; el desplazamiento se aplica a la ubicación antes del muestreo. El tipo de argumento depende del tipo texture-object. En el caso de los sombreadores que tienen como destino Shader Model 5.0 y posterior, los 6 bits menos significativos de cada valor de desplazamiento se respetan como un valor con firma, lo que produce el intervalo [-32..31]. Para los sombreadores de modelos de sombreador anteriores, los desplazamientos deben ser enteros inmediatos entre -8 y 7.</p>
+<td><p>[in] Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura; el desplazamiento se aplica a la ubicación antes del muestreo. El tipo de argumento depende del tipo texture-object. En el caso de los sombreadores que tienen como destino Shader Model 5.0 y superiores, los 6 bits menos significativos de cada valor de desplazamiento se respetan como un valor con firma, lo que produce el intervalo [-32..31]. Para los sombreadores de modelos de sombreador anteriores, los desplazamientos deben ser enteros inmediatos entre -8 y 7.</p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object tipo</th>
+<th>Texture-Object type</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -129,7 +129,7 @@ Esta función se admite en los siguientes modelos de sombreador.
  
 
 1.  TextureCubeArray está disponible en Shader Model 4.1 o superior.
-2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o superior.
+2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o posterior.
 
 ## <a name="example"></a>Ejemplo
 

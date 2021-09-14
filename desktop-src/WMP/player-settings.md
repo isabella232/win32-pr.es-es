@@ -14,30 +14,30 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb14137fba6ba460dda0d3bbdc32f0b97c442d75979e603460a645241d37e84e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d5482574069ea94052016272ff22cde2ac563f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118337970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070963"
 ---
 # <a name="playersettings"></a>Player.settings
 
 La **propiedad** settings recupera el Configuración objeto .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player* . **configuración**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un objeto de solo Configuración lectura.
+Esta propiedad es un objeto de solo Configuración de lectura.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

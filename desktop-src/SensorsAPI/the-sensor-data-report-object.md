@@ -4,12 +4,12 @@ ms.assetid: 8a812860-338b-4ada-8f5f-ea693e038941
 title: El objeto de informe de datos del sensor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ca1a8e5f61b23753437bd8b1cf4c2a176515b7042b21e84c4d2f431debc8fe6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 41d43753aa28be5cd20c85b7e65bf4c7516d4c90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119992605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265159"
 ---
 # <a name="the-sensor-data-report-object"></a>El objeto de informe de datos del sensor
 

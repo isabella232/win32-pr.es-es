@@ -1,6 +1,6 @@
 ---
 title: Ejemplo de desencadenador de tiempo (scripting)
-description: Este ejemplo de scripting muestra cómo crear una tarea que ejecute el Bloc de notas en un momento determinado.
+description: En este ejemplo de scripting se muestra cómo crear una tarea que ejecuta Bloc de notas en un momento específico.
 ms.assetid: 8511ffcd-166f-4c63-9cd2-ead53dde9ed8
 ms.topic: article
 ms.date: 05/31/2018
@@ -10,28 +10,28 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 77cbf9eab12f5ca027fbb6c48ade37a9f57d9beb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264935"
 ---
 # <a name="time-trigger-example-scripting"></a>Ejemplo de desencadenador de tiempo (scripting)
 
-Este ejemplo de scripting muestra cómo crear una tarea que ejecute el Bloc de notas en un momento determinado. La tarea contiene un desencadenador basado en tiempo que especifica un límite de inicio para activar la tarea, una acción ejecutable que ejecuta el Bloc de notas y un límite final que desactiva la tarea.
+En este ejemplo de scripting se muestra cómo crear una tarea que ejecuta Bloc de notas en un momento específico. La tarea contiene un desencadenador basado en tiempo que especifica un límite de inicio para activar la tarea, una acción ejecutable que ejecuta Bloc de notas y un límite final que desactiva la tarea.
 
-En el procedimiento siguiente se describe cómo programar una tarea para iniciar un ejecutable en un momento determinado.
+En el procedimiento siguiente se describe cómo programar una tarea para iniciar un archivo ejecutable en un momento específico.
 
-**Programar el Bloc de notas para que se inicie a una hora específica**
+**Para programar Bloc de notas iniciar a una hora específica**
 
-1.  Cree un objeto [**TaskService**](taskservice.md) . Este objeto permite crear la tarea en una carpeta especificada.
-2.  Obtener una carpeta de tareas y crear una tarea. Use el método [**TaskService. GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService. newtask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
-3.  Defina la información sobre la tarea mediante el objeto [**TaskDefinition**](taskdefinition.md) . Use la propiedad [**TaskDefinition. Settings**](taskdefinition-settings.md) para definir la configuración que determina cómo el servicio de programador de tareas realiza la tarea y la propiedad [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
-4.  Cree un desencadenador basado en el tiempo mediante la propiedad [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Esta propiedad proporciona acceso al objeto [**TriggerCollection**](triggercollection.md) . Use el método [**TriggerCollection. Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador basado en tiempo. Cuando cree el desencadenador, establezca el límite inicial y el límite final del desencadenador para activar y desactivar el desencadenador. El límite inicial especifica cuándo se realizará la acción de la tarea.
-5.  Cree una acción para que la tarea se ejecute mediante la propiedad [**TaskDefinition. Actions**](taskdefinition-actions.md) . Esta propiedad proporciona acceso al objeto [**ActionCollection**](actioncollection.md) . Use el método [**ActionCollection. Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**ExecAction**](execaction.md) , que representa una acción que ejecuta una operación de línea de comandos.
-6.  Registre la tarea mediante el método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) . En este ejemplo, la tarea iniciará el Bloc de notas en el momento actual más 30 segundos.
+1.  Cree un [**objeto TaskService.**](taskservice.md) Este objeto permite crear la tarea en una carpeta especificada.
+2.  Obtenga una carpeta de tareas y cree una tarea. Use el [**método TaskService.GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService.NewTask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
+3.  Defina información sobre la tarea mediante el [**objeto TaskDefinition.**](taskdefinition.md) Use la [**propiedad TaskDefinition.Configuración**](taskdefinition-settings.md) para definir la configuración que determina cómo el servicio Programador de tareas realiza la tarea y la propiedad [**TaskDefinition.RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
+4.  Cree un desencadenador basado en el tiempo mediante la [**propiedad TaskDefinition.Triggers.**](taskdefinition-triggers.md) Esta propiedad proporciona acceso al [**objeto TriggerCollection.**](triggercollection.md) Use el [**método TriggerCollection.Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador basado en el tiempo. Cuando cree el desencadenador, establezca el límite inicial y el límite final del desencadenador para activarlo y desactivarlo. El límite inicial especifica cuándo se realizará la acción de la tarea.
+5.  Cree una acción para que la tarea se ejecute mediante la [**propiedad TaskDefinition.Actions.**](taskdefinition-actions.md) Esta propiedad proporciona acceso al [**objeto ActionCollection.**](actioncollection.md) Use el [**método ActionCollection.Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto ExecAction,**](execaction.md) que representa una acción que ejecuta una operación de línea de comandos.
+6.  Registre la tarea mediante el [**método TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md) En este ejemplo, la tarea se iniciará Bloc de notas la hora actual más 30 segundos.
 
-En el siguiente ejemplo de VBScript se muestra cómo programar una tarea para ejecutar el Bloc de notas 30 segundos después de que se haya registrado la tarea.
+En el siguiente ejemplo de VBScript se muestra cómo programar una tarea para que se ejecute Bloc de notas 30 segundos después de registrar la tarea.
 
 
 ```VB
@@ -166,12 +166,12 @@ End Function
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

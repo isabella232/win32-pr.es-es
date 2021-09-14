@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e34c6a4a595051083ea79b1c187427fba0fe43919b1fea33973fb3b2a72829e2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6ed4c20f6f714b0e99e2d4a6649b3960b0e5803e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120125865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071039"
 ---
 # <a name="datatype-complex-type-task-scheduler"></a>tipo complejo dataType (Programador de tareas)
 

@@ -4,7 +4,7 @@ description: La propiedad attributeCount obtiene el número de atributos asociad
 ms.assetid: 0713ec4e-7e06-4ad2-8f7c-17ed5a92d5ee
 keywords:
 - attributeCount, propiedad Reproductor de Windows Media
-- Propiedad attributeCount Reproductor de Windows Media , interfaz IWMPPlaylist
+- Propiedad attributeCount Reproductor de Windows Media interfaz , IWMPPlaylist
 - Interfaz IWMPPlaylist Reproductor de Windows Media , propiedad attributeCount
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b51c621f5a484c23a2f7d0677fe20d1b62bfb4d2ec94228e003adc2ebc841cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4107eb1ad302415715b573b55d2dee1d7155128d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119760775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264655"
 ---
-# <a name="iwmpplaylistattributecount-property"></a>Propiedad IWMPPlaylist::attributeCount
+# <a name="iwmpplaylistattributecount-property"></a>IWMPPlaylist::attributeCount, propiedad
 
 La **propiedad attributeCount** obtiene el número de atributos asociados a una lista de reproducción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,11 +48,11 @@ Public ReadOnly Property attributeCount As System.Int32
 
 **System.Int32 que** es el número de atributos asociados a la lista de reproducción.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Dado que las listas de reproducción pueden proceden de muchos orígenes diferentes, pueden tener varios conjuntos de atributos diferentes. Esta propiedad obtiene el número total de atributos asociados a una lista de reproducción determinada para que otros miembros de la **interfaz IWMPPlaylist** puedan acceder a ellos.
+Dado que las listas de reproducción pueden proceden de muchos orígenes diferentes, pueden tener varios conjuntos diferentes de atributos. Esta propiedad obtiene el número total de atributos asociados a una lista de reproducción determinada para que otros miembros de la **interfaz IWMPPlaylist** puedan acceder a ellos.
 
-Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
+Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 Para obtener más información sobre los atributos admitidos por Reproductor de Windows Media, vea la [Referencia de atributos](attribute-reference.md).
 
@@ -179,7 +179,7 @@ displayAttributes.Nodes.Add(mediaRootNode)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

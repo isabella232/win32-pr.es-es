@@ -11,12 +11,12 @@ keywords:
 - registro, complementos de interfaz de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afbd34ed98236f8a02c936d52b092b82be60b986fb7b16edce1f3b1cbb91d6a1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac609b45866cd5f18edf61dffc2d3b7ac3c397ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120002815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070919"
 ---
 # <a name="registration-flags"></a>Marcas de registro
 
@@ -111,7 +111,7 @@ Las siguientes constantes se definen en wmpplug.h. No cambie los valores asociad
 [**IWMPPluginUI::SetProperty**](/previous-versions/windows/desktop/api/wmpplug/nf-wmpplug-iwmppluginui-setproperty)
 </dt> <dt>
 
-[**Interfaz de usuario de programación de complementos**](user-interface-plug-ins-programming-reference.md)
+[**referencia Interfaz de usuario programación de complementos de Interfaz de usuario**](user-interface-plug-ins-programming-reference.md)
 </dt> </dl>
 
  

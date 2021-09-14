@@ -4,7 +4,7 @@ description: El contenido textual de un control se expone mediante el patrón de
 ms.assetid: acc2b513-9367-416a-b0d9-3c2bcc14a8a7
 keywords:
 - Automatización de la interfaz de usuario, compatibilidad con contenido textual
-- Automatización de la interfaz de usuario,text pattern overview
+- Automatización de la interfaz de usuario,introducción al patrón de texto
 - Automatización de la interfaz de usuario información general sobre los controles de texto
 - Automatización de la interfaz de usuario,patrón de control Text
 - Automatización de la interfaz de usuario,Text Services Framework (TSF)
@@ -22,19 +22,19 @@ keywords:
 - rendimiento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04112e0233db056c5ff3e81b68256229aa45f60cfdb1258e565e10aea1cd43ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb9ff1eb75227454e3e9df6035798a304096a958
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052363"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070579"
 ---
 # <a name="about-the-text-and-textrange-control-patterns"></a>Acerca de los patrones de control Text y TextRange
 
 El contenido textual de un control se expone mediante el patrón de control [Text,](uiauto-implementingtextandtextrange.md) que representa el contenido de un contenedor de texto como una secuencia de texto. El patrón de control Text requiere la compatibilidad del patrón de control TextRange para exponer los atributos de formato y estilo. El patrón de control TextRange admite el patrón de control Text mediante la representación de intervalos de texto contiguos o múltiples e inconexos en un contenedor de texto con una colección de puntos de conexión inicial y final. El patrón de control TextRange admite funcionalidades como selección, comparación, recuperación y recorrido.
 
 > [!Note]  
-> El [patrón de](uiauto-implementingtextandtextrange.md) control Text no proporciona un medio para insertar o modificar texto. Sin embargo, dependiendo del control, esto puede realizarse mediante el patrón de control Microsoft Automatización de la interfaz de usuario [Value](uiauto-implementingvalue.md) o a través de la entrada de teclado directa. También hay un patrón [**TextEdit**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-itexteditprovider) que admite el cambio de texto mediante programación.
+> El [patrón de](uiauto-implementingtextandtextrange.md) control Text no proporciona un medio para insertar o modificar texto. Sin embargo, dependiendo del control, esto puede realizarse mediante el patrón de control Microsoft Automatización de la interfaz de usuario [Value](uiauto-implementingvalue.md) o mediante la entrada de teclado directa. También hay un patrón [**TextEdit**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-itexteditprovider) que admite el cambio de texto mediante programación.
 
  
 
@@ -64,7 +64,7 @@ Para obtener más información, [vea Text Services Framework](/windows/desktop/T
 
 ## <a name="control-types"></a>Tipos de controles
 
-El Automatización de la interfaz de usuario [editar](uiauto-supporteditcontroltype.md) tipo de control y [el tipo de](uiauto-supportdocumentcontroltype.md) control Documento deben admitir el patrón [de](uiauto-implementingtextandtextrange.md) control Texto. Para mejorar la accesibilidad, Microsoft recomienda que los tipos de control [Información](uiauto-supporttooltipcontroltype.md) sobre herramientas y Texto también admitan el patrón de control Texto, pero no es necesario.
+El Automatización de la interfaz de usuario [editar](uiauto-supporteditcontroltype.md) tipo de control y [el tipo](uiauto-supportdocumentcontroltype.md) de control Documento deben admitir el [patrón de](uiauto-implementingtextandtextrange.md) control Texto. Para mejorar la accesibilidad, Microsoft recomienda que los tipos de control [Información](uiauto-supporttooltipcontroltype.md) sobre herramientas y Texto también admitan el patrón de control Texto, pero no es necesario.
 
 ## <a name="provider-interfaces"></a>Interfaces de proveedor
 
@@ -87,15 +87,15 @@ Automatización de la interfaz de usuario aplicaciones cliente usan las interfac
 
 ## <a name="performance"></a>Rendimiento
 
-El **patrón de** control Text se basa en llamadas entre procesos para la mayor parte de su funcionalidad, por lo que no proporciona un mecanismo de almacenamiento en caché para mejorar el rendimiento al procesar el contenido. Se puede acceder a Automatización de la interfaz de usuario otros patrones de control de Microsoft mediante el [**método IUIAutomationElement::GetCachedPattern.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcachedpattern)
+El **patrón de** control Text se basa en llamadas entre procesos para la mayor parte de su funcionalidad, por lo que no proporciona un mecanismo de almacenamiento en caché para mejorar el rendimiento al procesar el contenido. Se puede acceder a otros patrones de Automatización de la interfaz de usuario de Microsoft mediante el [**método IUIAutomationElement::GetCachedPattern.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcachedpattern)
 
-Una técnica para mejorar el rendimiento es asegurarse de que los clientes de Automatización de la interfaz de usuario intenten recuperar bloques de texto de tamaño moderado mediante el método [**IUIAutomationTextRange::GetText.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext) Por ejemplo, si se usa **GetText** para recuperar caracteres únicos, se generarán aciertos entre procesos para cada carácter, mientras que si no se especifica una longitud máxima al llamar a **GetText,** se incurrirá en un acierto entre procesos, pero puede tener una latencia alta en función del tamaño del intervalo de texto.
+Una técnica para mejorar el rendimiento es asegurarse de que los clientes Automatización de la interfaz de usuario intenten recuperar bloques de texto de tamaño moderado mediante el método [**IUIAutomationTextRange::GetText.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext) Por ejemplo, si se usa **GetText** para recuperar caracteres únicos, se generarán aciertos entre procesos para cada carácter, mientras que si no se especifica una longitud máxima al llamar a **GetText,** se incurrirá en un acierto entre procesos, pero puede tener una latencia alta en función del tamaño del intervalo de texto.
 
 ## <a name="text-pattern-and-virtualized-embedded-objects"></a>Patrón de texto y objetos incrustados virtualizados
 
 Siempre que sea posible, una implementación de proveedor de [**ITextProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextprovider) e [**ITextRangeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextrangeprovider) debe admitir todo el texto de un documento, incluido cualquier texto fuera de la ventanilla. En el caso del texto fuera de la pantalla o los objetos incrustados que están virtualizados, los proveedores deben admitir el patrón de [control VirtualizedItem](uiauto-implementingvirtualizeditem.md) ([**IVirtualizedItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivirtualizeditemprovider)).
 
-Si un documento se virtualiza mientras la secuencia de texto completa sigue estando disponible, la propiedad [**ITextProvider::D ocumentRange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-get_documentrange) recuperará un intervalo de texto que incluya todo el documento. Sin embargo, al llamar [**al método ITextRangeProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-getchildren) se recuperará una colección de objetos virtualizados que representan todos los objetos incrustados en el documento. Para interactuar con un objeto incrustado virtualizado, los clientes deben llamar al método [**IVirtualizedItemProvider::Realize,**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivirtualizeditemprovider-realize) lo que hace que los elementos sea totalmente accesibles Automatización de la interfaz de usuario elementos. Los clientes deben seguir un proceso similar para trabajar con elementos de cuadrícula en una tabla insertada en la que una parte de la tabla está fuera de la pantalla y virtualizada.
+Si un documento está virtualizado mientras la secuencia de texto completa sigue estando disponible, la propiedad [**ITextProvider::D ocumentRange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-get_documentrange) recuperará un intervalo de texto que incluya todo el documento. Sin embargo, al llamar [**al método ITextRangeProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-getchildren) se recuperará una colección de objetos virtualizados que representan todos los objetos incrustados en el documento. Para interactuar con un objeto incrustado virtualizado, los clientes deben llamar al método [**IVirtualizedItemProvider::Realize,**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivirtualizeditemprovider-realize) lo que hace que los elementos sea totalmente accesibles Automatización de la interfaz de usuario elementos. Los clientes deben seguir un proceso similar para trabajar con elementos de cuadrícula en una tabla insertada en la que una parte de la tabla está fuera de la pantalla y virtualizada.
 
 ## <a name="using-the-custom-control-type-with-the-text-control-pattern"></a>Usar el tipo de control personalizado con el patrón de control de texto
 

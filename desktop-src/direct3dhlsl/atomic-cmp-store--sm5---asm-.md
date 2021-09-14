@@ -4,12 +4,12 @@ description: Comparación atómica y escritura en memoria.
 ms.assetid: 1B97E983-11A9-47E4-B274-E94083837C6E
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dbc57b14b4279b9bd4844d89492852ae915d9d900ed04421eeeccc367979a63
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 26a5292d65b32988017044a2ec52680848dffbef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118795167"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264399"
 ---
 # <a name="atomic_cmp_store-sm5---asm"></a>atomic \_ cmp \_ store (sm5 - asm)
 
@@ -37,7 +37,7 @@ Comparación atómica y escritura en memoria.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta instrucción realiza una comparación de valores de 32 bits de componente único de operando *src0* con *dst* a 32 bits por dirección de componente *dstAddress*.
 
@@ -63,7 +63,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -75,7 +75,7 @@ Dado que los UAV están disponibles en todas las fases del sombreador para Direc
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -91,8 +91,8 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
 | [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
@@ -106,7 +106,7 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblado del modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

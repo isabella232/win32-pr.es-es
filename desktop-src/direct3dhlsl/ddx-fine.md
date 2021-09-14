@@ -1,6 +1,6 @@
 ---
 title: ddx_fine función
-description: Calcula un derivado parcial de alta precisión con respecto a la coordenada x del espacio de pantalla. | ddx_fine función
+description: Calcula un derivado parcial de alta precisión con respecto a la coordenada X del espacio de pantalla. | ddx_fine función
 ms.assetid: 41062d6f-2b7f-4594-a6de-da37ded5d444
 keywords:
 - ddx_fine función HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5735d0e2f13a150b730855bc1308cba6e9f2dac795f6c5fc09000e42a607bec9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c1a579ba5899cf4d3ac3f25ef5a40337f6291977
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264247"
 ---
 # <a name="ddx_fine-function"></a>Función ddx \_ fine
 
-Calcula un derivado parcial de alta precisión con respecto a la coordenada x del espacio de pantalla.
+Calcula un derivado parcial de alta precisión con respecto a la coordenada X del espacio de pantalla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Tipo: **float**
 
 Derivado parcial de alta precisión del *valor*.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 También están disponibles las siguientes versiones sobrecargadas:
 
@@ -69,7 +69,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | sí       |
 
 
 
@@ -79,7 +79,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 
@@ -87,14 +87,14 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Funciones intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

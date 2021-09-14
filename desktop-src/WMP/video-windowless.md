@@ -1,6 +1,6 @@
 ---
 title: VIDEO.windowless
-description: El atributo sin ventana especifica o recupera un valor que indica si el control Vídeo se abrirá o no. es decir, si todo el rectángulo del control estará visible en todo momento o se puede recortar.
+description: El atributo sin ventanas especifica o recupera un valor que indica si el control Vídeo se abrirá o no. es decir, si todo el rectángulo del control estará visible en todo momento o se puede recortar.
 ms.assetid: d59e6baf-374b-48f6-b99f-35a83af7feb6
 keywords:
 - Video.windowless Reproductor de Windows Media
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c98aefde5aab9837f220ccb7df254e6a592e0d5e9d41de43291b2ab73e287321
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3a17d905d2ba8c11254476337d656890469b2b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117931745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070803"
 ---
 # <a name="videowindowless"></a>VIDEO.windowless
 
-El **atributo sin** ventana especifica o recupera un valor que indica si el control Vídeo se abrirá o no. es decir, si todo el rectángulo del control estará visible en todo momento o se puede recortar. Solo se puede establecer en tiempo de diseño.
+El **atributo sin** ventanas especifica o recupera un valor que indica si el control Vídeo se abrirá o no. es decir, si todo el rectángulo del control estará visible en todo momento o se puede recortar. Solo se puede establecer en tiempo de diseño.
 
 ``` syntax
         elementID.windowless
@@ -33,7 +33,7 @@ Este atributo es un **valor booleano** especificado en tiempo de diseño y de so
 
 
 
-| Valor | Descripción                              |
+| Value | Descripción                              |
 |-------|------------------------------------------|
 | true  | El control de vídeo no tendrá ventanas.        |
 | false | Predeterminada. El control de vídeo se abrirá en ventanas. |
@@ -42,11 +42,11 @@ Este atributo es un **valor booleano** especificado en tiempo de diseño y de so
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se desea una ventana de vídeo no rectangular o si desea cubrir cualquier parte de la ventana de vídeo con una imagen, este atributo debe establecerse en true. Esto sacrifique cierto rendimiento para realizar el recorte necesario.
 
-La reproducción de vídeo está optimizada para la reproducción sin control. En este caso, el **atributo sin** ventana se establece en false y siempre se muestra todo el rectángulo de vídeo. Cualquier imagen que cubre la ventana de vídeo se omite y la ventana de vídeo tiene el orden Z de nivel superior.
+La reproducción de vídeo está optimizada para la reproducción sin velocidad. En este caso, el **atributo sin** ventanas se establece en false y siempre se muestra todo el rectángulo de vídeo. Cualquier imagen que cubre la ventana de vídeo se omite y la ventana de vídeo tiene el orden Z de nivel superior.
 
 ## <a name="requirements"></a>Requisitos
 

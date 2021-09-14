@@ -9,24 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f3e1fcb16cace82118d153412ba5471876d4ebcc58c342466ff86db016189a28
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 047067d26f9b85ef981a007059d9f2e87ae28ce3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119744675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264063"
 ---
-# <a name="ps_2_x-instructions"></a>ps \_ 2 \_ x Instrucciones
+# <a name="ps_2_x-instructions"></a>ps \_ 2 \_ x Instructions
 
 Esta sección contiene información de referencia para las instrucciones x de la versión 2 del sombreador \_ de píxeles.
 
-Hay varios tipos de instrucciones de sombreador de píxeles, como se muestra en la tabla. Las columnas de la derecha significan lo siguiente:
+Hay varios tipos de instrucciones de sombreador de píxeles, como se muestra en la tabla. Las columnas a la derecha significan lo siguiente:
 
--   Ranuras de instrucción: número de espacios de instrucciones usados por cada instrucción.
+-   Ranuras de instrucción: número de ranuras de instrucción utilizadas por cada instrucción.
 -   Configuración: un sombreador de píxeles debe tener una instrucción de versión y debe ser la primera instrucción.
 -   Aritmética: estas instrucciones proporcionan las operaciones matemáticas en un sombreador.
 -   Textura: estas instrucciones se usan para cargar y muestrear datos de textura, y para modificar las coordenadas de textura.
--   Flow control: estas instrucciones proporcionan control de flujo estático y dinámico para la ejecución de instrucciones.
+-   Flow control: estas instrucciones proporcionan un control de flujo estático y dinámico para la ejecución de instrucciones.
 -   Nuevo: estas instrucciones son nuevas en esta versión.
 
 ## <a name="instruction-set"></a>Conjunto de instrucciones
@@ -37,22 +37,22 @@ Hay varios tipos de instrucciones de sombreador de píxeles, como se muestra en 
 |------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-------------------|-------|------------|---------|--------------|-----|
 | [abs - ps](abs---ps.md)                                         | Valor absoluto                                                                                   | 1                 |       | x          |         |              |     |
 | [add - ps](add---ps.md)                                         | Agregar dos vectores                                                                                  | 1                 |       | x          |         |              |     |
-| [break: ps](break---ps.md)                                     | Salir de un rep... endrep block                                                                | 1                 |       |            |         | x            | x   |
-| [break \_ comp: ps](break-comp---ps.md)                          | Interrupción condicional de un rep... endrep block, con una comparación                               | 3                 |       |            |         | x            | x   |
-| [breakp: ps](break-p---ps.md)                                  | Salir de un rep... endrep block, basado en un predicado                                          | 3                 |       |            |         | x            | x   |
+| [break- ps](break---ps.md)                                     | Interrupción de un representante... endrep block                                                                | 1                 |       |            |         | x            | x   |
+| [break \_ comp - ps](break-comp---ps.md)                          | Interrupción condicional de un representante... endrep block, con una comparación                               | 3                 |       |            |         | x            | x   |
+| [breakp- ps](break-p---ps.md)                                  | Interrupción de un representante... bloque endrep, basado en un predicado                                          | 3                 |       |            |         | x            | x   |
 | [call - ps](call---ps.md)                                       | Llamada a una subrutina                                                                                | 2                 |       |            |         | x            | x   |
 | [callnz bool - ps](callnz-bool---ps.md)                         | Llamar a una subrutina si un registro booleano no es cero                                              | 3                 |       |            |         | x            | x   |
 | [callnz pred - ps](callnz-pred---ps.md)                         | Llamar a una subrutina si un registro de predicado no es cero                                            | 3                 |       |            |         | x            | x   |
-| [cmp: ps](cmp---ps.md)                                         | Comparación del origen con 0                                                                              | 1                 |       | x          |         |              |     |
-| [crs- ps](crs---ps.md)                                         | Producto cruzado                                                                                    | 2                 |       | x          |         |              |     |
-| [dcl \_ samplerType (sm2, sm3 - ps asm)](dcl-samplertype---ps.md) | Declaración de la dimensión de textura para un muestreador                                                      | 0                 | x     |            |         |              |     |
+| [cmp - ps](cmp---ps.md)                                         | Comparar origen con 0                                                                              | 1                 |       | x          |         |              |     |
+| [crs - ps](crs---ps.md)                                         | Producto cruzado                                                                                    | 2                 |       | x          |         |              |     |
+| [dcl \_ samplerType (sm2, sm3 - ps asm)](dcl-samplertype---ps.md) | Declarar la dimensión de textura de un muestreador                                                      | 0                 | x     |            |         |              |     |
 | [dcl - (sm2, sm3 - ps asm)](dcl---ps.md)                        | Declare la asociación entre los registros de salida del sombreador de vértices y los registros de entrada del sombreador de píxeles. | 0                 | x     |            |         |              |     |
 | [def - ps](def---ps.md)                                         | Definición de constantes                                                                                 | 0                 | x     |            |         |              |     |
 | [defb - ps](defb---ps.md)                                       | Definición de una constante booleana                                                                        | 0                 | x     |            |         |              | x   |
-| [defi- ps](defi---ps.md)                                       | Definición de una constante de entero                                                                       | 0                 | x     |            |         |              | x   |
+| [defi - ps](defi---ps.md)                                       | Definición de una constante de entero                                                                       | 0                 | x     |            |         |              | x   |
 | [dp2add - ps](dp2add---ps.md)                                   | Producto de punto 2D y adición                                                                           | 2                 |       | x          |         |              |     |
-| [dp3: ps](dp3---ps.md)                                         | Producto de punto 3D                                                                                   | 1                 |       | x          |         |              |     |
-| [dp4- ps](dp4---ps.md)                                         | Producto de punto 4D                                                                                   | 1                 |       | x          |         |              |     |
+| [dp3- ps](dp3---ps.md)                                         | Producto de punto 3D                                                                                   | 1                 |       | x          |         |              |     |
+| [dp4 - ps](dp4---ps.md)                                         | Producto de punto 4D                                                                                   | 1                 |       | x          |         |              |     |
 | [dsx: ps](dsx---ps.md)                                         | Velocidad de cambio en la dirección X                                                                | 2                 |       | x          |         |              | x   |
 | [dsy- ps](dsy---ps.md)                                         | Velocidad de cambio en la dirección y                                                                | 2                 |       | x          |         |              | x   |
 | [else: ps](else---ps.md)                                       | Iniciar un bloque else                                                                              | 1                 |       |            |         | x            | x   |
@@ -72,7 +72,7 @@ Hay varios tipos de instrucciones de sombreador de píxeles, como se muestra en 
 | [m4x3 - ps](m4x3---ps.md)                                       | Multiplicación de 4x3                                                                                     | 3                 |       | x          |         |              |     |
 | [m4x4 - ps](m4x4---ps.md)                                       | Multiplicación de 4x4                                                                                     | 4                 |       | x          |         |              |     |
 | [mad - ps](mad---ps.md)                                         | Multiplicar y agregar                                                                                 | 1                 |       | x          |         |              |     |
-| [max - ps](max---ps.md)                                         | Máximo                                                                                          | 1                 |       | x          |         |              |     |
+| [max - ps](max---ps.md)                                         | Máxima                                                                                          | 1                 |       | x          |         |              |     |
 | [min - ps](min---ps.md)                                         | Mínima                                                                                          | 1                 |       | x          |         |              |     |
 | [mov - ps](mov---ps.md)                                         | Move                                                                                             | 1                 |       | x          |         |              |     |
 | [mul - ps](mul---ps.md)                                         | Multiplicar                                                                                         | 1                 |       | x          |         |              |     |

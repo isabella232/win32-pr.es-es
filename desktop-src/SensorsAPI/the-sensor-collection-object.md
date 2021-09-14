@@ -4,12 +4,12 @@ ms.assetid: 8893860c-c8c0-4460-b59b-0b988e6d31b8
 title: El objeto De colección de sensores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec74f0726fa7255bb9bbb0a41b85da657bf26712c469718e0bcb3242743909a3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31b2ca9567641952687a1c665db215b301c0f419
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117968606"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265164"
 ---
 # <a name="the-sensor-collection-object"></a>El objeto De colección de sensores
 

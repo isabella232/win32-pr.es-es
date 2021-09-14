@@ -1,11 +1,11 @@
 ---
-title: Evento Player. MediaChange
-description: El evento MediaChange se produce cuando cambia un elemento multimedia. | Evento Player. MediaChange
+title: Evento Player.MediaChange
+description: El evento MediaChange tiene lugar cuando cambia un elemento multimedia. | Evento Player.MediaChange
 ms.assetid: c4bdd2ae-c51f-4577-b762-bc84aaf52f76
 keywords:
-- Media Player MediaChange de eventos de Windows
-- Evento MediaChange de Windows Media Player, clase Player
-- Clase Player Media Player Windows, evento MediaChange
+- Evento MediaChange Reproductor de Windows Media
+- Evento MediaChange Reproductor de Windows Media clase , Player
+- Clase de reproductor Reproductor de Windows Media evento , MediaChange
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 99a63e087356b5d39ae8d751236b8128330c4f3c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070978"
 ---
-# <a name="playermediachange-event"></a>Evento Player. MediaChange
+# <a name="playermediachange-event"></a>Evento Player.MediaChange
 
-El evento **MediaChange** se produce cuando cambia un elemento multimedia.
+El **evento MediaChange** tiene lugar cuando cambia un elemento multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ Player.MediaChange(
 *Elemento* 
 </dt> <dd>
 
-Objeto **multimedia** que representa el elemento que ha cambiado.
+**Objeto** multimedia que representa el elemento que ha cambiado.
 
 </dd> </dl>
 
@@ -55,13 +55,13 @@ Este evento no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El valor de los parámetros de evento lo especifica Windows Media Player y se puede tener acceso a él o pasarlo a un método en un archivo JScript importado mediante el nombre de parámetro dado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluidas las mayúsculas y minúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede tener acceso a un método de un archivo JScript importado mediante el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la inclusión en mayúsculas.
 
-**Windows Media Player 10 Mobile:** Este evento no se admite.
+**Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa un elemento HTML DIV, denominado MEDIANAME, para mostrar el nombre del elemento multimedia actual. El código actualiza el texto en el DIV con cada aparición del evento **mediaChange** . El objeto **Player** se creó con ID = "Player".
+En el JScript siguiente se usa un elemento DIV HTML, denominado MediaName, para mostrar el nombre del elemento multimedia actual. El código actualiza el texto de div con cada aparición del **evento mediaChange.** El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -84,7 +84,7 @@ En el siguiente ejemplo de JScript se usa un elemento HTML DIV, denominado MEDIA
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

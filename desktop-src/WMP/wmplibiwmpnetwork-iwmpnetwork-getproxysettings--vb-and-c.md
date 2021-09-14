@@ -1,11 +1,11 @@
 ---
-title: Método IWMPNetwork getProxySettings
+title: Método getProxySettings de IWMPNetwork
 description: El método getProxySettings devuelve información sobre la configuración de proxy de un protocolo.
 ms.assetid: eda4829a-4869-4557-8fe9-8061a1e0f586
 keywords:
 - Método getProxySettings Reproductor de Windows Media
 - Método getProxySettings Reproductor de Windows Media , interfaz IWMPNetwork
-- Interfaz IWMPNetwork Reproductor de Windows Media método , getProxySettings
+- Interfaz IWMPNetwork Reproductor de Windows Media , método getProxySettings
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e69c990b01ed885b80c96e3e36ad28c2793baf618fea68b0e20006390c2adeed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d970160c07c90e84585c87ed1abf740fbe3c6318
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118331645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264700"
 ---
 # <a name="iwmpnetworkgetproxysettings-method"></a>IWMPNetwork::getProxySettings (método)
 
@@ -66,18 +66,18 @@ Implements IWMPNetwork.getProxySettings
 
 
 
-| Valor | Descripción                                                                      |
+| Value | Descripción                                                                      |
 |-------|----------------------------------------------------------------------------------|
-| 0     | No se está utilizando un servidor proxy.                                                |
-| 1     | Se está utilizando la configuración de proxy para el explorador actual (válido solo para HTTP). |
-| 2     | Se está utilizando la configuración de proxy especificada manualmente.                            |
+| 0     | No se usa un servidor proxy.                                                |
+| 1     | Se usa la configuración de proxy para el explorador actual (válido solo para HTTP). |
+| 2     | Se usa la configuración de proxy especificada manualmente.                            |
 | 3     | La configuración del proxy se detecta automáticamente.                                      |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
@@ -150,7 +150,7 @@ End Select
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

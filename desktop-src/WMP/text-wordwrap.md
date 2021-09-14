@@ -1,9 +1,9 @@
 ---
-title: TEXT. wordWrap
-description: El atributo wordWrap especifica o recupera un valor que indica si el ajuste de palabras está habilitado o deshabilitado.
+title: TEXT.wordWrap
+description: El atributo wordWrap especifica o recupera un valor que indica si el ajuste de línea está habilitado o deshabilitado.
 ms.assetid: 3bb127d8-42f1-4167-986a-d41690cb5647
 keywords:
-- TEXT. wordWrap Windows Media Player
+- Text.wordWrap Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ff2b4d030a7e9efdda1bc7503ae3bf8eb5985401
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650088"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264751"
 ---
-# <a name="textwordwrap"></a>TEXT. wordWrap
+# <a name="textwordwrap"></a>TEXT.wordWrap
 
-El atributo **WordWrap** especifica o recupera un valor que indica si el ajuste de palabras está habilitado o deshabilitado.
+El **atributo wordWrap** especifica o recupera un valor que indica si el ajuste de línea está habilitado o deshabilitado.
 
 ``` syntax
         elementID.wordWrap
@@ -29,14 +29,14 @@ El atributo **WordWrap** especifica o recupera un valor que indica si el ajuste 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
 | Value | Descripción                                                                                       |
 |-------|---------------------------------------------------------------------------------------------------|
 | true  | El ajuste de palabra está habilitado.                                                                             |
-| false | Predeterminada. El ajuste de palabra está deshabilitado. Si el texto no cabe en el control, el texto se recorta. |
+| false | Predeterminada. El ajuste de palabra está deshabilitado. Si el texto no cabe dentro del control , el texto se recorta. |
 
 
 
@@ -44,13 +44,13 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 ## <a name="remarks"></a>Observaciones
 
-El control de texto no separa palabras. Si una palabra se extiende más allá del ancho del control, se emplea el ajuste automático de línea para colocar la palabra en la línea siguiente. Si una sola palabra es más larga que el ancho del control, esa palabra se recorta y ocupa una sola línea.
+El control Texto no divide las palabras. Si una palabra se extiende más allá del ancho del control, se emplea el ajuste de línea para mover la palabra a la línea siguiente. Si una sola palabra es mayor que el ancho del control, esa palabra se recorta y ocupa una sola línea.
 
-Si no se especifica el atributo **width** , se omite **WordWrap** y se cambia el tamaño del control de texto en lugar de ajustar el texto.
+Si no **se especifica** el atributo width, **wordWrap** se omite y el control Text cambia de tamaño en lugar de ajustar el texto.
 
-Si se desean saltos de línea en ubicaciones concretas, se deben especificar explícitamente en el **valor** mediante "&\# 13;" o " \\ r". Si se usa el último formulario al especificar el valor directamente, la cadena debe ir precedida de "JScript:" y el valor real debe estar rodeado por comillas simples, como se muestra a continuación. Esto no es necesario si el valor se establece dinámicamente desde un controlador de eventos.
+Si se desean saltos de línea en ubicaciones concretas, se deben especificar explícitamente en **value** mediante "&\# 13;" o \\ "r". Si se usa la última forma al especificar el valor directamente, la cadena debe tener el prefijo "JScript:" y el valor real debe ir entre comillas simples, como se muestra a continuación. Esto no es necesario si el valor se establece dinámicamente desde dentro de un controlador de eventos.
 
-Si **WordWrap** está establecido en true y no se especifica la **información sobre herramientas** , la información sobre herramientas mostrará el texto completo del atributo **Value** . Si no se desea información sobre herramientas, establezca la **información sobre herramientas** en "" (cadena vacía).
+Si **wordWrap** se establece en true y no se especifica **toolTip,** la información sobre herramientas mostrará el texto completo del **atributo value.** Si no se desea ninguna información sobre herramientas, establezca **toolTip** en "" (cadena vacía).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -88,24 +88,24 @@ Si **WordWrap** está establecido en true y no se especifica la **información s
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**AmbientAttributes. width**](ambientattributes-width.md)
+[**AmbientAttributes.width**](ambientattributes-width.md)
 </dt> <dt>
 
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXTO. toolTip**](text-tooltip.md)
+[**TEXT.toolTip**](text-tooltip.md)
 </dt> <dt>
 
-[**TEXT. Value**](text-value.md)
+[**TEXT.value**](text-value.md)
 </dt> </dl>
 
  

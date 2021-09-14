@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9cb69321fe3ac2456c71024270ddf508ff6eac0a76b336cc3115f4882b3d35a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72dcbf1dcb06939ab74398c39bb89bc512dbb47b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119506895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070779"
 ---
 # <a name="viewbackgroundimagehueshift"></a>VIEW.backgroundImageHueShift
 
@@ -31,7 +31,7 @@ El **atributo backgroundImageHueShift** especifica o recupera la cantidad por la
 
 Este atributo es un número de lectura y **escritura** (**float**) con un valor que va de 0,0 a 360,0 con un valor predeterminado de 0,0.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo cambia el valor de matiz de las imágenes especificadas por el atributo **backgroundImage** si se ha especificado y hace referencia a una imagen BMP de 8 bits.
 
@@ -39,7 +39,7 @@ Este atributo cambia el valor de matiz de las imágenes especificadas por el atr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 

@@ -4,12 +4,12 @@ description: Los cuadros de lista muestran una lista desde la que un usuario pue
 ms.assetid: a3ca2c91-17bf-41a4-b9bb-a13e080da199
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8da4b9e85194328de2a9257b806f4abc79f3a929d5c18873d1049c7d3ead20d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1bb3b390d1fd3a5deb5b0d30906b5512a15a6ad8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070694"
 ---
 # <a name="list-box-msaa-ui-element-reference"></a>Cuadro de lista (Referencia del elemento de interfaz de usuario de MSAA)
 

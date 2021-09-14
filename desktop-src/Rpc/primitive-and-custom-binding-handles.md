@@ -1,30 +1,30 @@
 ---
 title: Identificadores de enlace primitivos y personalizados
-description: Todos los identificadores declarados con los tipos \_ handle t o RPC BINDING HANDLE son \_ \_ identificadores de enlace primitivos.
+description: Todos los identificadores declarados con los tipos handle t o \_ RPC BINDING HANDLE son \_ \_ identificadores de enlace primitivos.
 ms.assetid: 7a948aad-02fa-421d-b32c-f5dab071bd04
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e0e1d6f7cc2ad4d11e268e0f5c83b0275fcd2677a32303820507272f550b834
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d496a9a54ba0ee7b9552326f7c4dc15792a72bce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265548"
 ---
 # <a name="primitive-and-custom-binding-handles"></a>Identificadores de enlace primitivos y personalizados
 
-Todos los identificadores declarados con los [tipos \_ handle t](/windows/desktop/Midl/handle-t) o RPC BINDING [**\_ \_ HANDLE**](rpc-binding-handle.md) son identificadores de enlace primitivos. Puede extender los tipos [handle \_ t](/windows/desktop/Midl/handle-t) o [**RPC BINDING \_ \_ HANDLE**](rpc-binding-handle.md) para incluir más información o diferente de la que contiene el tipo de identificador primitivo. Cuando lo haga, creará un identificador de enlace personalizado.
+Todos los identificadores declarados con los [tipos \_ handle t](/windows/desktop/Midl/handle-t) o RPC BINDING [**\_ \_ HANDLE**](rpc-binding-handle.md) son identificadores de enlace primitivos. Puede extender los tipos [handle \_ t](/windows/desktop/Midl/handle-t) o [**RPC BINDING \_ \_ HANDLE**](rpc-binding-handle.md) para incluir más información o diferente de la que contiene el tipo de identificador primitivo. Al hacerlo, se crea un identificador de enlace personalizado.
 
 Para crear un identificador de enlace personalizado para la aplicación distribuida, deberá crear su propio tipo de datos y especificar el atributo handle en una definición de tipo en el \[ [](/windows/desktop/Midl/handle) \] archivo IDL. En última instancia, los archivos de código auxiliar asignan identificadores de enlace personalizados a identificadores primitivos.
 
-Si crea su propio tipo de identificador de enlace, también debe proporcionar rutinas de enlace y desenlazadas que el código auxiliar de cliente usa para asignar un identificador personalizado a un identificador primitivo. El código auxiliar llama a las rutinas de enlace y desenlazadas al principio y al final de cada llamada a procedimiento remoto. Las rutinas de enlace y desenlazadas deben ajustarse a los siguientes prototipos de función.
+Si crea su propio tipo de identificador de enlace, también debe proporcionar rutinas de enlace y desenlazadas que el código auxiliar del cliente usa para asignar un identificador personalizado a un identificador primitivo. El código auxiliar llama a las rutinas de enlace y desenlazadas al principio y al final de cada llamada a procedimiento remoto. Las rutinas de enlace y desenlazadas deben cumplir los siguientes prototipos de función.
 
 
 
 | Prototipo de función                     | Descripción       |
 |----------------------------------------|-------------------|
 | handle \_ t type \_ bind(*type*)           | Rutina de enlace   |
-| void type \_ unbind(*type*, *handle \_ t*) | Rutina de desenlace |
+| void type \_ unbind(*type*, *handle \_ t*) | Desenlace de rutina |
 
 
 
@@ -58,9 +58,9 @@ interface usrdef
 }
 ```
 
-Si la rutina de enlace encuentra un error, debe generar una excepción mediante la [**función RpcRaiseException.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcraiseexception) A continuación, el código auxiliar de cliente se limpiará y permitirá que la excepción se filtre hasta el bloque de excepciones que rodea la llamada a procedimiento remoto en el lado cliente. Si la rutina de enlace simplemente devuelve **NULL,** el código de cliente obtiene el error RPC \_ S INVALID \_ \_ BINDING. Aunque esto puede ser aceptable en determinadas situaciones, otras situaciones (como la falta de memoria) no responden bien. La rutina de desenlazado debe diseñarse para que no se pueda producir un error. La rutina desenlazada no debe generar excepciones.
+Si la rutina de enlace encuentra un error, debe generar una excepción mediante la [**función RpcRaiseException.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcraiseexception) A continuación, el código auxiliar del cliente se limpiará y permitirá que la excepción se filtre hasta el bloque de excepciones que rodea la llamada a procedimiento remoto en el lado cliente. Si la rutina de enlace simplemente devuelve **NULL,** el código de cliente obtiene el error RPC \_ S INVALID \_ \_ BINDING. Aunque esto puede ser aceptable en determinadas situaciones, otras situaciones (como la falta de memoria) no responden bien. La rutina de desenlazado debe diseñarse para que no se pueda producir un error. La rutina desenlazada no debe generar excepciones.
 
-Las rutinas de enlace y desenlazadas definidas por el programador aparecen en la aplicación cliente. En el ejemplo siguiente, la rutina de enlace llama a [**RpcBindingFromStringBinding para**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfromstringbinding) convertir la información de enlace de cadena en un identificador de enlace. La rutina sin enlazar llama [**a RpcBindingFree para**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfree) liberar el identificador de enlace.
+Las rutinas de enlace y desenlace definidas por el programador aparecen en la aplicación cliente. En el ejemplo siguiente, la rutina de enlace llama a [**RpcBindingFromStringBinding para**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfromstringbinding) convertir la información de enlace de cadena en un identificador de enlace. La rutina de desenlace [**llama a RpcBindingFree**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfree) para liberar el identificador de enlace.
 
 El nombre del identificador de enlace definido por el programador, DATA HANDLE TYPE, aparece como \_ parte del nombre de las \_ funciones. También se usa como tipo de parámetro en los parámetros de función.
 

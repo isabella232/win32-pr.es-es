@@ -4,12 +4,12 @@ description: Una cadena de identidad identifica una instancia determinada de un 
 ms.assetid: 970fa0a6-d6c9-48aa-afb8-cee3b47fdc37
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c46395b0510ee3d40dca777dc78882acf663c1e8371f296a85b80d99b41c7492
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6cbbdd5683f34f436a53a23c2fae7f3adf0b923
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119644435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070641"
 ---
 # <a name="scope-and-longevity-of-identity-string"></a>Ámbito y longevidad de la cadena de identidad
 

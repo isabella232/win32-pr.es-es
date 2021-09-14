@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6adc2301dd3ed21db4bb48f86f056f43d46719eebdd68b9d032d8c420a9741a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27919f7f59a0e8ca232267964c3edf60c32f43ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118333302"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070911"
 ---
 # <a name="releasedateyear-attribute"></a>Atributo ReleaseDateYear
 
@@ -29,7 +29,7 @@ El **atributo ReleaseDateYear** es la parte del año de la fecha de la versión 
 -   [Pistas de CD](cd-track-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la base de datos de biblioteca (o caché).
 
@@ -39,13 +39,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

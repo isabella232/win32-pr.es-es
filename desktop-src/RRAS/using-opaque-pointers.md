@@ -4,12 +4,12 @@ description: A menudo, los clientes deben almacenar información adicional espec
 ms.assetid: e96805b0-680f-411c-a02c-2c3fda7276ae
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16d24524f64fca7062ffb35ed6f4d5e6a2bc935ef7fee0c7fa141cb2e823e70f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9893b3a8b8e8a69ab78f33156efbe872b86d83ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120025075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265559"
 ---
 # <a name="using-opaque-pointers"></a>Uso de punteros opacos
 

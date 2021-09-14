@@ -4,12 +4,12 @@ ms.assetid: B9EC23C9-A311-4BD9-BBE8-908A1334A541
 title: Esperar a un evento cuando la representación no es necesaria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0db1aa4805aa1dde25947ed25c90d14c9f3c2f4c8693d3599f1382937ee0dbc1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b553ef52e812c5117e5d9669ba13b47b9f4280c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118517878"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264439"
 ---
 # <a name="waiting-on-an-event-when-rendering-is-unnecessary"></a>Esperar a un evento cuando la representación no es necesaria
 

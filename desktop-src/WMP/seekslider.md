@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a294eede05ec2b2f0f84e925aa299c9bcb2388ee2151385e48f2c68e6b4c1328
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59808fa7c41acfcc28b715362b8724c7f113faee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118833344"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070868"
 ---
 # <a name="seekslider"></a>SEEKSLIDER
 
@@ -34,21 +34,21 @@ onDragEnd="jscript:player.controls.currentPosition=value;"
 useForegroundProgress="true"
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esto crea un control **SLIDER** que busca el archivo multimedia en cualquier posición. La información sobre herramientas se localiza. Todas las propiedades de **este CONTROL DESLIZANTE** se pueden invalidar especificándolos explícitamente.
+Esto crea un control **SLIDER** que busca el archivo multimedia en cualquier posición. La información sobre herramientas está localizada. Todas las propiedades de **este CONTROL DESLIZANTE** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|----------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

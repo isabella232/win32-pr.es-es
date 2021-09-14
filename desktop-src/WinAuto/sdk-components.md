@@ -4,12 +4,12 @@ description: En esta sección se describen Microsoft Active Accessibility de pro
 ms.assetid: 9bbf2445-8663-4356-8cc3-cd8a1392ca06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c6044faa4c67ea7296f0dc4bdc0dc25e55258188c1b9d7de2e6d01431505601
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 613e30ca1c1ffb3afa3dde002cc534b347da2592
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133738"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070635"
 ---
 # <a name="active-accessibility-components"></a>Active Accessibility componentes
 

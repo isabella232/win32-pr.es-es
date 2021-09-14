@@ -5,7 +5,7 @@ ms.assetid: 000bc03d-aa2e-4922-b611-7d6e8ebb22e9
 keywords:
 - Reproductor de Windows Media, atributos de elemento de vídeo
 - Reproductor de Windows Media Atributos de elementos móviles y de vídeo
-- Reproductor de Windows Media modelo de objetos, atributos de elemento de vídeo
+- Reproductor de Windows Media de objetos, atributos de elemento de vídeo
 - modelo de objetos, atributos de elemento de vídeo
 - ActiveX control, atributos de elemento de vídeo
 - Reproductor de Windows Media ActiveX control, atributos de elemento de vídeo
@@ -15,12 +15,12 @@ keywords:
 - atributos de elemento de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2b3fa64fe3898708a3df85b01fadbb372d1fad76abe99379ec914016c602585
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ab23559ca6322ffd6ebc38517a73d802d7001ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054183"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070820"
 ---
 # <a name="video-item-attributes"></a>Atributos de elemento de vídeo
 

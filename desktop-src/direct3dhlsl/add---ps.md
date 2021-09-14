@@ -10,11 +10,11 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 54092caf19a486b68b92ef63d992f11289a51c93
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113130094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264412"
 ---
 # <a name="add---ps"></a>add - ps
 
@@ -31,7 +31,7 @@ Agrega dos vectores.
 
  
 
-where
+, donde
 
 -   dst es el registro de destino.
 -   src0 es un registro de origen.
@@ -65,7 +65,7 @@ dest.w = src0.w + src1.w;
 
 
 
-|   Requisito                       | Valor           |
+|   Requisito                       | Value           |
 |--------------------------|------------|
 | Sistema operativo mínimo | Windows 98 |
 

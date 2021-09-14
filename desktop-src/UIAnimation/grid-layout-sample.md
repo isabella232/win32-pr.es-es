@@ -4,12 +4,12 @@ description: Muestra cómo usar Windows animación mediante Direct2D para animar
 ms.assetid: f2f24058-c532-45ad-bde8-d05cfffcd505
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf287dc7d6f96b9b5db4ce3fff7d30c34b1f8b998518dbdddc9d7abbda793330
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc4d691ffa6396e294fd2dfbd07eaf9329f19519
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118999685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264852"
 ---
 # <a name="grid-layout-sample"></a>Ejemplo de diseño de cuadrícula
 
@@ -21,10 +21,10 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Ubicación                               | Ruta de acceso o dirección URL                                                                                          |
+| Location                               | Ruta de acceso o dirección URL                                                                                          |
 |----------------------------------------|---------------------------------------------------------------------------------------------------|
 | Kit de desarrollo de software de Windows (SDK) | [Microsoft Windows Software Development Kit 7.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx) |
-| Galería de códigos                           | [Windows Código de ejemplo del administrador de animaciones](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DirectCompositionWindowsAnimationManager)         |
+| Galería de códigos                           | [Windows Código de ejemplo del Administrador de animaciones](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DirectCompositionWindowsAnimationManager)         |
 
 
 
@@ -38,13 +38,13 @@ Use uno de los métodos siguientes para compilar el ejemplo.
 
 **Para compilar el ejemplo en el símbolo del sistema**
 
-1.  Abra la ventana símbolo del sistema y vaya al directorio del proyecto GridLayout. Por ejemplo, la ruta de instalación predeterminada para este ejemplo es C: Archivos de programa SDK de Microsoft Windows ejemplos \\ \\ de Windows Multimedia \\ \\ v7.0Animation \\ \\ \\ \\ GridLayout
+1.  Abra la ventana símbolo del sistema y vaya al directorio del proyecto GridLayout. Por ejemplo, la ruta de instalación predeterminada para este ejemplo es C: Archivos de programa SDK de \\ \\ Microsoft Windows \\ \\ v7.0 \\ Ejemplos de Windows \\ \\ MultimediaAnimation \\ GridLayout
 
 2.  Ejecute el siguiente comando: **msbuild GridLayout.sln**
 
-**Para compilar el ejemplo mediante Microsoft Visual Studio (opción preferida)**
+**Para compilar el ejemplo mediante Microsoft Visual Studio (preferido)**
 
-1.  Abra Windows Explorador de aplicaciones y vaya al directorio del proyecto GridLayout.
+1.  Abra Windows Explorer y vaya al directorio del proyecto GridLayout.
 
     > [!Note]  
     > La extensión de nombre de archivo .sln no se muestra en la configuración de carpeta predeterminada. En esa situación, se puede identificar por su icono único o por su descripción de tipo, "Microsoft Visual Studio solución".
@@ -59,7 +59,7 @@ Use uno de los métodos siguientes para compilar el ejemplo.
 
 Para ejecutar el ejemplo:
 
-1.  Vaya al directorio que contiene el nuevo ejecutable, mediante el símbolo del sistema o Windows Explorador.
+1.  Vaya al directorio que contiene el nuevo ejecutable, mediante el símbolo del sistema o Windows Explorer.
 
 2.  Ejecute **GridLayout.exe** en el símbolo del sistema o haga doble clic en el icono de GridLayout.exe en Windows Explorer.
 

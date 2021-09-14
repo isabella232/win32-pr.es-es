@@ -4,12 +4,12 @@ ms.assetid: 7ea391cb-f72b-4ac1-99be-c957d4ccc8af
 title: Aspectos básicos de Light-Aware interfaces de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8955180dfc57219d3b640c6463f2ee2025f22500d3d29b688bc4b0c154895f66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0ce71ab67e11684d14b188fef7ae73500edb7d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118890211"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265228"
 ---
 # <a name="fundamentals-of-light-aware-user-interfaces"></a>Aspectos básicos de Light-Aware interfaces de usuario
 
@@ -19,9 +19,9 @@ El  término interfaz de usuario ligera hace referencia a un programa que usa da
 
 En general, los objetos más grandes son más fáciles de ver. Cuando el equipo se encuentra en condiciones de iluminación adversas (por ejemplo, en la receptación directa), hacer que el contenido sea mayor puede ayudar a mejorar la legibilidad e interactiva de ese contenido.
 
-Las fotografías siguientes comparan un portátil con niveles de brillo y zoom típicos de un equipo portátil en las mismas condiciones de iluminación con una interfaz de usuario ligera. La primera fotografía muestra la pantalla establecida en un 40 % de brillo con niveles de zoom normales. La segunda fotografía muestra la pantalla establecida en un brillo del 100 % con mayores niveles de zoom.
+Las fotografías siguientes comparan un equipo portátil con niveles de brillo y zoom de pantalla típicos a un portátil en las mismas condiciones de iluminación con una interfaz de usuario ligera. La primera fotografía muestra la pantalla establecida en un 40 % de brillo con niveles de zoom normales. La segunda fotografía muestra la pantalla establecida en un 100 % de brillo con mayores niveles de zoom.
 
-![Pantalla de portátil con un brillo del 40 % con niveles de zoom normales](images/laptop-40.png)![Pantalla de portátil con un brillo del 100 % con mayores niveles de zoom](images/laptop-100.png)
+![Pantalla de portátil con un brillo del 40 % con niveles de zoom normales](images/laptop-40.png)![pantalla de portátil con un brillo del 100 % con mayores niveles de zoom](images/laptop-100.png)
 
 ### <a name="varying-font-size"></a>Variación del tamaño de fuente
 

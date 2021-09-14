@@ -1,6 +1,6 @@
 ---
 title: Evento Player.CurrentItemChange
-description: El evento CurrentItemChange tiene lugar cuando cambia Controls.currentItem.
+description: El evento CurrentItemChange se produce cuando cambia Controls.currentItem.
 ms.assetid: e6f68aeb-d7e7-460b-adc9-647f28c678a1
 keywords:
 - Evento CurrentItemChange Reproductor de Windows Media
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ed0ca3c8333c7261c8332bcc124c905c5540f5cdf0dbefe3f34f121eb901cc3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4c425184bf4b338177ec892ed5362c085dd8cb7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118338131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071002"
 ---
 # <a name="playercurrentitemchange-event"></a>Evento Player.CurrentItemChange
 
-El **evento CurrentItemChange** tiene lugar cuando *controla*. **currentItem** changes.
+El **evento CurrentItemChange** se produce cuando *controla*. **currentItem** changes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,7 +68,7 @@ En el JScript siguiente se muestra un controlador de eventos para el *reproducto
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

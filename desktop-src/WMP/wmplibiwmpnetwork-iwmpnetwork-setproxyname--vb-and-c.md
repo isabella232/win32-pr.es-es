@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe4525b3933f0929413a2719e1338083b00b9995a4ba39085f5787c6feca9931
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86c9759f37dd4c0e171c09afaea4dfde0993c7f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118568720"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264663"
 ---
 # <a name="iwmpnetworksetproxyname-method"></a>IWMPNetwork::setProxyName (método)
 
@@ -73,7 +73,7 @@ Implements IWMPNetwork.setProxyName
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no tiene ningún efecto a menos que el valor recuperado de **IWMPNetwork.getProxySettings** sea 2 (use la configuración manual).
 
@@ -136,7 +136,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

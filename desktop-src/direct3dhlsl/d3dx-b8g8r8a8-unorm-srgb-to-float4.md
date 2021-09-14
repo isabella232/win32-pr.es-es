@@ -1,9 +1,9 @@
 ---
 title: D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4 función
-description: Desempaqueta los datos del sombreador SRGB DXGI \_ FORMAT \_ B8G8R8A8 UNORM en \_ \_ XMFLOAT4. | D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4 función
+description: Desempaqueta los datos del sombreador DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM \_ SRGB en XMFLOAT4. | D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4 función
 ms.assetid: f6ce6125-c67e-4545-b25e-3400c0fc62b1
 keywords:
-- D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4 function HLSL
+- D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4 función HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3620823a572b7eb23f05bdda83866aae982f326dfb70ca6856309abc9d96f05b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91311bb83aa034410361bea631aa79f86737ff65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118516601"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264319"
 ---
 # <a name="d3dx_b8g8r8a8_unorm_srgb_to_float4-function"></a>Función D3DX \_ B8G8R8A8 \_ UNORM \_ SRGB \_ to \_ FLOAT4
 
-Desempaqueta los datos del sombreador SRGB DXGI \_ FORMAT \_ B8G8R8A8 UNORM en \_ \_ XMFLOAT4.
+Desempaqueta los datos del sombreador DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM \_ SRGB en XMFLOAT4.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Datos empaquetados del sombreador.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Datos del sombreador desempaquetados.
+Datos del sombreador desempaquetar.
 
 ## <a name="requirements"></a>Requisitos
 

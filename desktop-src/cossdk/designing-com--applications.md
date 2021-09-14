@@ -1,21 +1,21 @@
 ---
-description: Si va a diseñar una aplicación para llevar a cabo el comercio en línea, realizar el seguimiento de la información, acceder a datos en sistemas heredados, mensajería, planeamiento de recursos, publicación y administración del conocimiento o una aplicación de LÍNEA de negocio crítica, puede mejorar y simplificar el diseño de nivel intermedio mediante la integración de servicios COM+. La manera más común de hacerlo es agrupando componentes en aplicaciones COM+.
+description: Tanto si va a diseñar una aplicación para llevar a cabo el comercio en línea, realizar el seguimiento de la información, acceder a datos en sistemas heredados, mensajería, planeamiento de recursos, publicación y administración del conocimiento, o una aplicación lob crítica (línea de negocio), puede mejorar y simplificar el diseño de nivel intermedio mediante la integración de servicios COM+. La manera más común de hacerlo es agrupando componentes en aplicaciones COM+.
 ms.assetid: 75002a82-5300-4758-9fe4-56537af5168c
 title: Diseño de aplicaciones COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 307daed4b32be3b6130a11632419feb988652aac5545489adb5b14f3eaf5aad9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a1b28aa9e8b1658855ca0ef5134722d54650962
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118548004"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264511"
 ---
 # <a name="designing-com-applications"></a>Diseño de aplicaciones COM+
 
-Si va a diseñar una aplicación para llevar a cabo el comercio en línea, realizar el seguimiento de la información, acceder a datos en sistemas heredados, mensajería, planeamiento de recursos, publicación y administración del conocimiento o una aplicación de LÍNEA de negocio crítica, puede mejorar y simplificar el diseño de nivel intermedio mediante la integración de servicios COM+. La manera más común de hacerlo es agrupando componentes en aplicaciones COM+.
+Tanto si va a diseñar una aplicación para llevar a cabo el comercio en línea, realizar el seguimiento de la información, acceder a datos en sistemas heredados, mensajería, planeamiento de recursos, publicación y administración del conocimiento, o una aplicación lob crítica (línea de negocio), puede mejorar y simplificar el diseño de nivel intermedio mediante la integración de servicios COM+. La manera más común de hacerlo es agrupando componentes en aplicaciones COM+.
 
-Aunque una revisión de metodología completa para usar COM+ en todas las situaciones está fuera del ámbito de este documento, los temas siguientes presentan información que puede usar al crear una aplicación COM+.
+Aunque una revisión completa de la metodología para usar COM+ en todas las situaciones está fuera del ámbito de este documento, los temas siguientes presentan información que puede usar al crear una aplicación COM+.
 
 
 

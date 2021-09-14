@@ -3,23 +3,23 @@ title: Negociación de formato de vídeo en el complemento DSP de vídeo de ejem
 description: Negociación de formato de vídeo en el complemento DSP de vídeo de ejemplo
 ms.assetid: 3e92ce10-2b9b-4689-a181-f56c33472fea
 keywords:
-- Reproductor de Windows Media complementos,DSP de vídeo
+- Reproductor de Windows Media complementos, DSP de vídeo
 - complementos, DSP de vídeo
 - complementos de procesamiento de señal digital, negociación de formato de vídeo
 - Complementos DE DSP, negociación de formato de vídeo
 - complementos de DSP de vídeo, negociación de formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90154f3fe7824fb9af563cb662fdcb2847339bc6061d79b3e92cab9c6e36e44d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c287a38fbfcf11f1b9d74087a91c5825b22f1243
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119761825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070824"
 ---
 # <a name="video-format-negotiation-in-the-sample-video-dsp-plug-in"></a>Negociación de formato de vídeo en el complemento DSP de vídeo de ejemplo
 
-Antes Reproductor de Windows Media insertar un complemento DSP de vídeo en la cadena de señales, el reproductor debe determinar si el complemento puede procesar el vídeo que se va a reproducir. El proceso por el que el complemento y el reproductor se comunican sobre los formatos de vídeo admitidos se denomina negociación de formato.
+Antes Reproductor de Windows Media insertar un complemento DSP de vídeo en la cadena de señales, el reproductor debe determinar si el complemento puede procesar el vídeo que se reproduce. El proceso por el que el complemento y el reproductor se comunican sobre los formatos de vídeo admitidos se denomina negociación de formato.
 
 ## <a name="providing-the-supported-input-and-output-types"></a>Proporcionar los tipos de entrada y salida admitidos
 
@@ -27,7 +27,7 @@ Si el complemento DSP actúa como un objeto multimedia DirectX (DMO), el reprodu
 
 Si el complemento DSP actúa como una transformación de Media Foundation (MFT), el reproductor consulta al complemento sobre sus formatos admitidos mediante una secuencia de llamadas a **IMFTransform::GetInputAvailableType** y **ADETransform::GetOutputAvailableType.**
 
-El complemento de vídeo de ejemplo generado por el Asistente para complementos Reproductor de Windows Media almacena la lista de formatos de vídeo admitidos como una matriz de GUID. El código siguiente es del archivo .cpp principal:
+El complemento de vídeo de ejemplo generado por el Asistente para complementos de Reproductor de Windows Media almacena la lista de formatos de vídeo admitidos como una matriz de GUID. El código siguiente es del archivo .cpp principal:
 
 
 ```C++
@@ -68,9 +68,9 @@ else // Otherwise use default for this plug-in.
 
 ## <a name="setting-the-input-and-output-types"></a>Establecimiento de los tipos de entrada y salida
 
-Si el complemento DSP actúa como un DMO, Reproductor de Windows Media establece el tipo de medio mediante una llamada a **IMediaObject::SetInputType** e **IMediaObject::SetOutputType**, pasando a cada función un puntero a una estructura **MEDIA \_ \_ TYPE** de DMO que representa el tipo de medio solicitado.
+Si el complemento DSP actúa como un DMO, Reproductor de Windows Media establece el tipo de medio mediante una llamada a **IMediaObject::SetInputType** e **IMediaObject::SetOutputType**, pasando a cada función un puntero a una estructura **media \_ \_ TYPE** de DMO que representa el tipo de medio solicitado.
 
-Si el complemento DSP actúa como MFT, Reproductor de Windows Media establece el tipo de medio mediante una llamada a **IMFTransform::SetInputType** y **ASETRANSFORMTransform::SetOutputType,** pasando a cada función un puntero a una interfaz **DE TIPO DEFIMEDIA QUE representa** el tipo de medio solicitado.
+Si el complemento DSP actúa como MFT, Reproductor de Windows Media establece el tipo de medio mediante una llamada a **IMFTransform::SetInputType** y **ASETRANSFORMTransform::SetOutputType,** pasando a cada función un puntero a una interfaz **IMFMediaType que** representa el tipo de medio solicitado.
 
 No hay ninguna garantía de que el reproductor llame a métodos de negociación de formato en un orden determinado, por lo que el código del complemento debe controlar cualquier caso. Por ejemplo, si el reproductor llama a **SetOutputType** antes de llamar a **SetInputType,** es un curso de acción válido para que el complemento rechace el tipo de medio de salida propuesto. El código siguiente de la implementación de ejemplo **de IMediaObject::SetOutputType** muestra esto:
 

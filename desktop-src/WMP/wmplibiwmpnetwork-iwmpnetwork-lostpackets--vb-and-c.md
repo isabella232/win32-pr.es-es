@@ -1,10 +1,10 @@
 ---
-title: IWMPNetwork lostPackets, propiedad
+title: Propiedad lostPackets de IWMPNetwork
 description: La propiedad lostPackets obtiene el número de paquetes perdidos.
 ms.assetid: 611218d3-c4d3-4d4e-835c-1e7a956b2718
 keywords:
-- lostPackets, propiedad Reproductor de Windows Media
-- Interfaz de la propiedad lostPackets Reproductor de Windows Media , IWMPNetwork
+- propiedades lostPackets Reproductor de Windows Media
+- Interfaz lostPackets Reproductor de Windows Media , IWMPNetwork
 - Interfaz IWMPNetwork Reproductor de Windows Media , propiedad lostPackets
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a60c85920d647f99ed8ba8478da51183c3ba63efa733c0bc627c16b040b70965
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd1adac5f4aa8b1f58c023a556af04b8eae4bd8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117745916"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264695"
 ---
-# <a name="iwmpnetworklostpackets-property"></a>IWMPNetwork::lostPackets, propiedad
+# <a name="iwmpnetworklostpackets-property"></a>Propiedad IWMPNetwork::lostPackets
 
 La **propiedad lostPackets** obtiene el número de paquetes perdidos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,13 +48,13 @@ Public ReadOnly Property lostPackets As System.Int32
 
 **System.Int32 que** es el número de paquetes perdidos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad incluye solo paquetes multimedia de streaming y devolverá cero cuando se use el protocolo HTTP, que no tiene pérdidas.
 
 Los paquetes se pueden perder por diversos motivos, como el tipo y la calidad de la conexión de red.
 
-Cada vez que se detiene y reinicia la reproducción, esta propiedad se restablece en cero. El valor no se restablece si la reproducción está en pausa. Esta propiedad obtiene información válida solo durante el tiempo de ejecución cuando se establece la dirección URL para la reproducción mediante la **propiedad AxWindowsMediaPlayer.URL.**
+Cada vez que se detiene y reinicia la reproducción, esta propiedad se restablece a cero. El valor no se restablece si la reproducción está en pausa. Esta propiedad obtiene información válida solo durante el tiempo de ejecución cuando se establece la dirección URL para la reproducción mediante la **propiedad AxWindowsMediaPlayer.URL.**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -94,7 +94,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

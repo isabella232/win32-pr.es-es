@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 56900a306b6e4714131715f0936346fad40d8a71d3b694142c4be9392ba08f56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b551f1158e58cb671a0fb872f73eabec1b29de33
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118120593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071011"
 ---
 # <a name="opcodes-providertype-element"></a>elemento opcodes (ProviderType)
 

@@ -9,12 +9,12 @@ keywords:
 - radio.csv
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b473bfaa960dd499fae7eb309d02ccbd693b70061d0975c58357bd72e9dcc410
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5271f3a87b32d27996f61e444723f537a09cb827
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120002945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070948"
 ---
 # <a name="radiocsv"></a>radio.csv
 
@@ -24,16 +24,16 @@ La columna Formato de la tabla siguiente describe la forma en que se formatea ca
 
 
 
-| Campo              | Requerido | Formato                                                                                                               | Descripción                                                                                                                        |
+| Campo              | Obligatorio | Formato                                                                                                               | Descripción                                                                                                                        |
 |--------------------|----------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| RadioID            | Sí      | Entero no negativo.                                                                                                | Identificador de la fuente de radio que es única dentro radio.csv.                                                                             |
-| RadioTitle         | Sí      | Cadena Unicode. Ejemplo: Aciertos esenciales<br/>                                                                    | Título de la fuente de radio.                                                                                                                  |
+| RadioID            | Sí      | Entero no negativo.                                                                                                | Identificador de la fuente de radio que es única en radio.csv.                                                                             |
+| RadioTitle         | Sí      | Cadena Unicode. Ejemplo: Aciertos esenciales<br/>                                                                    | Título de fuente de radio.                                                                                                                  |
 | RadioSubtitle      | No       | Cadena Unicode. Ejemplo: Top 40.                                                                                     | Subtítulo de fuente de radio. A menudo es un nombre de género o subgéneo.                                                                               |
 | Programador         | Sí      | Cadena Unicode. Ejemplo: Terri Lee Duffy                                                                             | Nombre del programador de la fuente de radio. Se recomienda que este campo no supere los 32 caracteres.                                     |
 | PrimaryGenre       | Sí      | Entero no negativo.                                                                                                | Identificador del género principal. Solo se permite un valor.                                                                            |
-| Humor               | Sí      | Cadena Unicode. Ejemplo: Divertido; que se puede; y, por tanto, y, por tanto, Exuberante<br/>                                       | Una serie de adjetivos que describen la música. Sin punto y coma final después del último adjetivo.                                    |
+| Humor               | Sí      | Cadena Unicode. Ejemplo: divertido; que se puede; y, por tanto, y, por tanto, Exuberante<br/>                                       | Una serie de adjetivos que describen la música. Sin punto y coma final después del último adjetivo.                                    |
 | Category           | Sí      | Cadena de Unicode                                                                                                       | No se usa en esta versión. Debe estar vacío.                                                                                         |
-| Descripción        | No       | Cadena Unicode. Ejemplo: música animada y fácil de usar de los intérpretes que se han probado y verdaderos, que no se van a desaperar.<br/> | Descripción fácil de mostrar en las páginas de propiedades. Se recomienda que este campo no supere los 256 caracteres.                   |
+| Descripción        | No       | Cadena Unicode. Ejemplo: música animada y fácil de usar de los intérpretes que han probado y verdaderos, que no se van a desaperar.<br/> | Descripción fácil de mostrar en las páginas de propiedades. Se recomienda que este campo no supere los 256 caracteres.                   |
 | Popularidad         | Sí      | Valor entero o decimal no negativo. Ejemplo: 31<br/>                                                         | Clasificación de popularidad entre las fuentes de radio. Puede ser 0.                                                                                    |
 | StarRating         | No       | Float.Example: 3.21<br/>                                                                                       | Opcional. El valor, normalmente entre 0 y 5, se redondea al 1/4 más cercano para mostrarse en la interfaz de usuario.                   |
 | IsSubscriptionOnly | Sí      | booleano. Puede ser 0 o 1.                                                                                              | Indica si la fuente solo está disponible por suscripción.                                                                      |

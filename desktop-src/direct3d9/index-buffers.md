@@ -4,12 +4,12 @@ ms.assetid: baa60cd1-a1f0-4dbe-b934-aeb1a5c6b784
 title: Búferes de índice (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5e44ea8752948b3a6dbf9a32b950be1b5de28bc709abbe3dad89959315ace9d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7151fae6deb72a0c569d269c80e5b13bf946f9d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119846615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127264487"
 ---
 # <a name="index-buffers-direct3d-9"></a>Búferes de índice (Direct3D 9)
 
@@ -56,7 +56,7 @@ Cree un objeto de búfer de índice llamando al método [**IDirect3DDevice9::Cre
 
 -   El tercer parámetro es el miembro D3DFMT INDEX16 o D3DFMT INDEX32 del tipo enumerado \_ \_ [D3DFORMAT](d3dformat.md) que especifica el tamaño de cada índice.
 
--   El cuarto parámetro es un miembro del tipo enumerado [**D3DPOOL**](./d3dpool.md) que indica al sistema dónde en memoria colocar el nuevo búfer de índice.
+-   El cuarto parámetro es un miembro del tipo enumerado [**D3DPOOL**](./d3dpool.md) que indica al sistema dónde se debe colocar en memoria el nuevo búfer de índice.
 
 -   El parámetro final que [**acepta IDirect3DDevice9::CreateIndexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createindexbuffer) es la dirección de una variable que se rellena con un puntero a la nueva interfaz [**IDirect3DIndexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9) del objeto de búfer de vértices, si la llamada se realiza correctamente.
 
@@ -134,7 +134,7 @@ Recupere información sobre un búfer de índice llamando al [**método IDirect3
 [Recursos de Direct3D](direct3d-resources.md)
 </dt> <dt>
 
-[Representación a partir de búferes de vértices e índices (Direct3D 9)](rendering-from-vertex-and-index-buffers.md)
+[Representación a partir de búferes de vértice e índice (Direct3D 9)](rendering-from-vertex-and-index-buffers.md)
 </dt> <dt>
 
 [Búferes de vértices (Direct3D 9)](vertex-buffers.md)
