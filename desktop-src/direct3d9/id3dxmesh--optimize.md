@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e4ea03bcaaab492ec09dd24ec93c6a9c9ca393c1399b05e12096a8ba1f4f9aa3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: debec1c0ee54e612ab0de832dbc5c2481dcefad8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119493105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060559"
 ---
 # <a name="id3dxmeshoptimize-method"></a>Método ID3DXMesh::Optimize
 
@@ -86,7 +86,7 @@ Matriz de DWORD, una por cara, que identifica la cara de malla original que corr
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Dirección de un puntero a una [**interfaz ID3DXBuffer,**](id3dxbuffer.md) que contiene un DWORD para cada vértice que especifica cómo se asignan los nuevos vértices a los vértices antiguos. Esta reasignación es útil si necesita modificar los datos externos en función de la nueva asignación de vértices.
+Dirección de un puntero a una interfaz [**ID3DXBuffer,**](id3dxbuffer.md) que contiene un DWORD para cada vértice que especifica cómo se asignan los nuevos vértices a los vértices antiguos. Esta reasignación es útil si necesita modificar datos externos en función de la nueva asignación de vértices.
 
 </dd> <dt>
 
@@ -103,9 +103,9 @@ Dirección de un puntero a una [**interfaz ID3DXMesh,**](id3dxmesh.md) que repre
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método genera una nueva malla. Antes de ejecutar Optimize, una aplicación debe generar un búfer de adyacencia llamando a [**ID3DXBaseMesh::GenerateAdjacency**](id3dxbasemesh--generateadjacency.md). El búfer de adyacencia contiene datos de adyacencia, como una lista de bordes y las caras adyacentes entre sí.
 
@@ -122,7 +122,7 @@ Este método es muy similar al método [**ID3DXBaseMesh::CloneMesh,**](id3dxbase
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

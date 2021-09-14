@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 84445c3d18fa38bbeff4085c6da1fda191bb6ca5bbe147c17f3f5f8769d2a63d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1d59791859e0330415512db1551709729455d0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060531"
 ---
 # <a name="id3dxpatchmeshsetdisplaceparam-method"></a>Método ID3DXPatchMesh::SetDisplaceParam
 
@@ -105,7 +105,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los mapas de desplazamiento solo pueden ser texturas 2D. Mipmapping se omite para la teselación no pornóptica.
 
@@ -120,7 +120,7 @@ Los mapas de desplazamiento solo pueden ser texturas 2D. Mipmapping se omite par
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Obtiene el patrón de stipple de línea.
+description: Obtiene el patrón detippla de línea.
 ms.assetid: 4f461cd8-e17f-4eda-b47d-256220f65a66
 title: Método ID3DXLine::GetPattern (D3dx9core.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 93fd3e1d3ce2af249ed0b8baaa59dbd56d7947f3a8686c5e40f889793f8307f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 62a5c8c07ff2384249b78ece26575c4837b3a24d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119120994"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060573"
 ---
 # <a name="id3dxlinegetpattern-method"></a>Método ID3DXLine::GetPattern
 
-Obtiene el patrón de stipple de línea.
+Obtiene el patrón detippla de línea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Devuelve el patrón de stipple de línea: 1 es opaco, 0 es transparente.
+Devuelve el patrón detippla de línea: 1 es opaco, 0 es transparente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Devuelve el patrón de stipple de línea: 1 es opaco, 0 es transparente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
