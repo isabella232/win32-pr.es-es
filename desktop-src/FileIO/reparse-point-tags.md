@@ -1,23 +1,23 @@
 ---
-description: Cada punto de análisis tiene una etiqueta de identificador para que pueda diferenciar de forma eficaz entre los distintos tipos de puntos de análisis, sin tener que examinar los datos definidos por el usuario en el punto de análisis de análisis.
+description: Cada punto de análisis tiene una etiqueta de identificador para que pueda diferenciar de forma eficaz entre los diferentes tipos de puntos de análisis, sin tener que examinar los datos definidos por el usuario en el punto de análisis.
 ms.assetid: d02a2f50-d374-4149-bc04-49b7db052f62
 title: Etiquetas de punto de reanción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b31d4a1765266295b85c95c0955ae9c51faeb34ae07f3af48288a17a50f2166
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a53b65034347e2a2c07afcd6c1f03e31f73cef7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069857"
 ---
 # <a name="reparse-point-tags"></a>Etiquetas de punto de reanción
 
-Cada punto de análisis tiene una etiqueta de identificador para que pueda diferenciar de forma eficaz entre los distintos tipos de puntos de análisis, sin tener que examinar los datos definidos por el usuario en el punto de análisis de análisis. El sistema usa un conjunto de etiquetas predefinidas y un intervalo de etiquetas reservadas para Microsoft. Si usa cualquiera de las etiquetas reservadas al establecer un punto de rean aproximado, se produce un error en la operación. Las etiquetas no incluidas en estos intervalos no están reservadas y están disponibles para la aplicación.
+Cada punto de análisis tiene una etiqueta de identificador para que pueda diferenciar de forma eficaz entre los diferentes tipos de puntos de análisis, sin tener que examinar los datos definidos por el usuario en el punto de análisis. El sistema usa un conjunto de etiquetas predefinidas y un intervalo de etiquetas reservadas para Microsoft. Si usa cualquiera de las etiquetas reservadas al establecer un punto de reantiquete, se produce un error en la operación. Las etiquetas no incluidas en estos intervalos no están reservadas y están disponibles para la aplicación.
 
-Cuando se establece un punto de análisis de análisis, debe etiquetar los datos que se colocarán en el punto de análisis. Una vez establecido el punto de análisis, se produce un error en una nueva operación de conjunto si la etiqueta de los nuevos datos no coincide con la etiqueta de los datos existentes. Si las etiquetas coinciden, la operación set sobrescribe el punto de reanuración existente.
+Al establecer un punto de análisis, debe etiquetar los datos que se colocarán en el punto de análisis. Una vez establecido el punto de análisis, se produce un error en una nueva operación de conjunto si la etiqueta de los nuevos datos no coincide con la etiqueta de los datos existentes. Si las etiquetas coinciden, la operación set sobrescribe el punto de reanuración existente.
 
-Para recuperar la etiqueta de punto de reanción, use [**la función FindFirstFile.**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea) Si el **miembro dwFileAttributes** incluye el atributo **FILE ATTRIBUTE \_ \_ REPARSE \_ POINT,** el **miembro dwReserved0** especifica el punto de análisis.
+Para recuperar la etiqueta de punto de reanción, use la [**función FindFirstFile.**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea) Si el **miembro dwFileAttributes** incluye el atributo **FILE ATTRIBUTE \_ \_ REPARSE \_ POINT,** el **miembro dwReserved0** especifica el punto de análisis.
 
 ## <a name="tag-contents"></a>Contenido de etiquetas
 
@@ -39,7 +39,7 @@ Los 16 bits inferiores determinan el tipo de punto de rean aproximado. Los 16 bi
 |-----|--------------------------------------------------------------------------------------------------------------|
 | M   | Bit de Microsoft. Si se establece este bit, la etiqueta es propiedad de Microsoft. Todas las demás etiquetas deben usar cero para este bit. |
 | R   | Reservado; debe ser cero para todas las etiquetas que no son de Microsoft.                                                           |
-| N   | Nombre bit suplente. Si se establece este bit, el archivo o directorio representa otra entidad con nombre en el sistema. |
+| N   | Asigne un nombre al bit suplente. Si se establece este bit, el archivo o directorio representa otra entidad con nombre en el sistema. |
 
 
 
@@ -52,7 +52,7 @@ Existen las macros siguientes para ayudar a probar etiquetas:
 
 Cada macro devuelve un valor distinto de cero si se establece el bit asociado.
 
-Los siguientes son los valores de etiqueta de reantiqueta predefinidos de Microsoft; se definen en WinNT.h:
+Los siguientes son los valores predefinidos de etiquetas de reantiqueta de Microsoft; se definen en WinNT.h:
 
 -   **IO_REPARSE_TAG_AF_UNIX**
 -   **IO_REPARSE_TAG_APPEXECLINK**

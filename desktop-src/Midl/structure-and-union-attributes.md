@@ -1,19 +1,19 @@
 ---
-title: Atributos de estructura y unión
+title: Estructura y atributos de unión
 description: Use el modificador \_ \ atributos para especificar la característica de una unión en una llamada a procedimiento remoto. Use el atributo ignore para designar determinados miembros de estructura o unión como locales para la aplicación cliente.
 ms.assetid: e06e5184-fa92-4446-964b-d56d0e5f2872
 keywords:
 - IDL MIDL, atributos, estructura y unión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc179632bb7e0d64b777f3c8a08b9de2af7bbf818978d6bb0a7ee2ea8b515542
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b2a7764d56c8557bd71923021a9f324a118ac81
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159370"
 ---
-# <a name="structure-and-union-attributes"></a>Atributos de estructura y unión
+# <a name="structure-and-union-attributes"></a>Estructura y atributos de unión
 
 Use los **atributos \_ switch** para especificar la característica de una unión en una llamada a procedimiento \* remoto. Use el [**atributo ignore**](ignore.md) para designar determinados miembros de estructura o unión como locales para la aplicación cliente.
 

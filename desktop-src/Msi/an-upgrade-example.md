@@ -4,18 +4,18 @@ ms.assetid: 233302ea-abc3-4879-b868-425f2b10e02e
 title: Ejemplo de actualización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a148c8d66c09ae2ce033d3ad2440040734a2b1301b2e9e1b9bb1b79e44beb06
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95d1e19173a98f3ddee49c19d0ec10aca7994e86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159136"
 ---
 # <a name="an-upgrade-example"></a>Ejemplo de actualización
 
-En las secciones siguientes se muestra un ejemplo de creación de un paquete de actualización para la aplicación que se describe en [Un ejemplo de instalación](an-installation-example.md). Se proporciona un ejemplo de una interfaz de usuario mínima para este ejemplo en Windows [SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md) (Componentes del SDK de Windows para desarrolladores de instaladores de Uisample.msi). Si tiene el SDK, tiene acceso a todas las herramientas y datos necesarios para reproducir el paquete de instalación de ejemplo, la interfaz de usuario y el paquete de actualización de ejemplo.
+En las secciones siguientes se muestra un ejemplo de creación de un paquete de actualización para la aplicación que se describe en [Un ejemplo de instalación](an-installation-example.md). Se proporciona un ejemplo de una interfaz de usuario mínima para este ejemplo en Windows [SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md) como el archivo Uisample.msi. Si tiene el SDK, tiene acceso a todas las herramientas y datos necesarios para reproducir el paquete de instalación de ejemplo, la interfaz de usuario y el paquete de actualización de ejemplo.
 
-En este ejemplo se muestra cómo crear un paquete de Windows Installer que actualiza el producto hipotético MNP2000 a un nuevo producto denominado MNP2001. El paquete de actualización de ejemplo aplica una actualización principal al producto que requiere cambiar el código del producto. Para obtener más información sobre las actualizaciones principales, vea el tema actualizaciones [principales](major-upgrades.md) en la sección Revisiones [y actualizaciones.](patching-and-upgrades.md)
+En este ejemplo se muestra cómo crear un paquete Windows Installer que actualiza el producto hipotético MNP2000 a un nuevo producto denominado MNP2001. El paquete de actualización de ejemplo aplica una actualización principal al producto que requiere cambiar el código del producto. Para obtener más información sobre las actualizaciones principales, vea el tema actualizaciones [principales](major-upgrades.md) en la sección Revisiones [y actualizaciones.](patching-and-upgrades.md)
 
 El paquete de actualización de ejemplo tiene las siguientes especificaciones:
 

@@ -4,16 +4,16 @@ ms.assetid: 2719aaa5-bdcb-4326-8767-7e890bb5df0e
 title: DisablePatch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f3a4232ba5d41e4c72f4a171a747521af7d8a4aca5f54eb1e9097806bd2ab54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b4df2a74f6212ffc5de71bd2de0b03fb7e910bd1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118143126"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158541"
 ---
 # <a name="disablepatch"></a>DisablePatch
 
-Si esta directiva del sistema [por máquina](system-policy.md) se establece en "1", el instalador no aplica revisiones. Esta directiva se puede usar para proporcionar seguridad en entornos donde se debe restringir la aplicación de revisiones.
+Si esta directiva de [sistema por](system-policy.md) máquina está establecida en "1", el instalador no aplica revisiones. Esta directiva se puede usar para proporcionar seguridad en entornos donde se debe restringir la aplicación de revisiones.
 
 ## <a name="registry-key"></a>Clave del Registro
 

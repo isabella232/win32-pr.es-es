@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72655883b24c83890cf2f5604cb8f7335c6943b32e5e69611dba415689b03e22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 04b53aa2b8ab66737bd4d97710fe942ee73bf0b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146308"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159392"
 ---
 # <a name="retval-attribute"></a>retval (atributo)
 
@@ -40,7 +40,7 @@ Tipo de datos del valor devuelto del procedimiento remoto.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Nombre utilizado para invocar el procedimiento remoto.
@@ -68,9 +68,9 @@ Nombre del identificador del parámetro.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Puede usar el atributo **\[ retval \]** en parámetros de miembros de interfaz que describen métodos u obtienen propiedades. (El atributo es necesario en el último parámetro de un método que tiene el **\[** [**propget**](propget.md) **\]** attribute). El parámetro debe tener el **\[** [**atributo out**](out-idl.md) **\]** y debe ser un tipo de puntero.
+Puede usar el atributo **\[ retval \] en** parámetros de miembros de interfaz que describen métodos u obtienen propiedades. (El atributo es necesario en el último parámetro de un método que tiene el **\[** [**propget**](propget.md) **\]** attribute).) El parámetro debe tener el **\[** [**atributo out**](out-idl.md) **\]** y debe ser un tipo de puntero.
 
 No se puede aplicar el **\[** [**atributo**](optional.md) **\]** opcional a un parámetro **\[ retval. \]**
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca7dfa7e8cdc5b1df752a3a6eb442524157228d354079f262a27a5514860e335
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27f2e2040acbc0e8f65c02f4f4ec7c3ad329959b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118642971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159503"
 ---
 # <a name="max_is-attribute"></a>max \_ is attribute
 
@@ -38,9 +38,9 @@ Especifica una o varias expresiones de lenguaje C. Cada expresión se evalúa co
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **\[ atributo max \_ is \]** no se corresponde necesariamente con el número de elementos de la matriz. Para una matriz de tamaño *n* en C, donde el primer elemento de matriz es el número de elemento cero, el valor máximo de un índice de matriz válido *es n*–1.
+El **\[ atributo max \_ is \]** no se corresponde necesariamente con el número de elementos de la matriz. Para una matriz de tamaño *n* en C, donde el primer elemento de matriz es el número de elemento cero, el valor máximo de un índice de matriz válido *es n*-1.
 
 El **\[ atributo max \_ is \]** no se puede usar como atributo de campo al mismo tiempo que **\[** [**el atributo size \_ is.**](size-is.md) **\]**
 

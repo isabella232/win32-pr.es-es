@@ -6,12 +6,12 @@ keywords:
 - interfaces MIDL, archivo IDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c2666e02fc7812d9ecdc9a00e77400d5016ac627c9fcbd42d81be77bc41d487
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 950daa2c1841f6e4b3f015f14e373804fcd34b80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118383699"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159525"
 ---
 # <a name="interface-definition-idl-file"></a>Archivo de definición de interfaz (IDL)
 

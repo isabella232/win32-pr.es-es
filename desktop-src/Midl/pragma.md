@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ca869acddf4b0a0a098707833e889efcfccc267a3abf1949921c550cf66c773
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72f5e1c00c089bc8915adc2d9f3363305c677a96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118383503"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159417"
 ---
 # <a name="pragma-attribute"></a>pragma (atributo)
 
@@ -56,14 +56,14 @@ Especifica el tamaño del paquete actual. Los valores válidos son 1, 2, 4, 8 y 
 
 </dd> <dt>
 
-*identificador* 
+*id* 
 </dt> <dd>
 
 Especifica el identificador de usuario.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El preprocesador del compilador de C procesa las directivas de preprocesamiento del lenguaje C que aparecen en el archivo IDL. Las **\# directivas define** del archivo IDL están disponibles durante la compilación midl, aunque no para el compilador de C.
 

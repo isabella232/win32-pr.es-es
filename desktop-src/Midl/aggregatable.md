@@ -1,6 +1,6 @@
 ---
 title: aggregatable (atributo)
-description: El atributo \ aggregateable \ indica que la clase admite la agregación.
+description: El atributo \ aggregationable\ indica que la clase admite la agregación.
 ms.assetid: 3b680692-fbf7-4aeb-b11a-c3a87ddaea67
 keywords:
 - atributo agregable MIDL
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 5091815cf38060c30b82aa33fd05ad6be9d6c390
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358876"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159692"
 ---
 # <a name="aggregatable-attribute"></a>aggregatable (atributo)
 
-El atributo **\[ agregable \]** indica que la clase admite la agregación.
+El **\[ atributo \] agregable** indica que la clase admite la agregación.
 
 ``` syntax
 [
@@ -38,32 +38,32 @@ coclass coclass-name
 
 <dl> <dt>
 
-*coclass-Attribute-List* 
+*coclass-attribute-list* 
 </dt> <dd>
 
-Otros atributos que se aplican a la clase.
+Otros atributos que se aplican a la clase .
 
 </dd> <dt>
 
-*nombre de coclase* 
+*coclass-name* 
 </dt> <dd>
 
 Nombre de la clase.
 
 </dd> <dt>
 
-*coclass-interface-List* 
+*coclass-interface-list* 
 </dt> <dd>
 
-Una lista de interfaces para la clase.
+Lista de interfaces para la clase .
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Utilice el atributo **\[ agregable \]** en una instrucción de [**coclase**](coclass.md) para permitir que los usuarios sepan que la clase admite agregaciones. Es decir, la clase permite que una clase contenedora exponga sus interfaces como si fueran las interfaces propias del contenedor.
+Use el **\[ atributo agregable \]** en una instrucción [**coclass**](coclass.md) para que los usuarios sepan que la clase admite agregaciones. Es decir, la clase permite que una clase contenedora exponga sus interfaces como si fueran interfaces propias del contenedor.
 
-La representación typeflag para este atributo es TYPEFLAG \_ FAGGREGATABLE.
+La representación de la marca de tipo para este atributo es TYPEFLAG \_ CONFIGURABLEGREGATABLE.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -92,9 +92,9 @@ coclass Form
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

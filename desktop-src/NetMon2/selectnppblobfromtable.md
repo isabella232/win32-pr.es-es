@@ -1,5 +1,5 @@
 ---
-description: La función SelectNPPBlobFromTable selecciona una NIC de una tabla blob de NPP proporcionada.
+description: La función SelectNPPBlobFromTable selecciona una NIC de una tabla de BLOB de NPP proporcionada.
 ms.assetid: 7f8010ed-472a-49b2-8d97-92851b6c14cd
 title: Función SelectNPPBlobFromTable (Netmon.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 14d9ca14d027efc1540f5a5d2ae78e948da68dd59247252989b617d07229bb42
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d8f504d76d43b8a398947f435f7bd488678ea394
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120074415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260388"
 ---
 # <a name="selectnppblobfromtable-function"></a>Función SelectNPPBlobFromTable
 
-La **función SelectNPPBlobFromTable** selecciona una NIC de una tabla DE BLOB de NPP proporcionada.
+La **función SelectNPPBlobFromTable** selecciona una NIC de una tabla de BLOB de NPP proporcionada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,17 +70,17 @@ Si el usuario no selecciona una NIC, el valor devuelto es NMERR \_ NO \_ NPP \_ 
 
 Si la función no se realiza correctamente, el valor devuelto es otro valor NMERR.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se le llama, Monitor de red **el** cuadro de diálogo Seleccionar una red, que puede usar para seleccionar una NIC. El BLOB de NPP que representa la NIC seleccionada vuelve a la aplicación que realiza la llamada.
+Cuando se le llama, Monitor de red el **cuadro de** diálogo Seleccionar una red, que puede usar para seleccionar una NIC. El BLOB de NPP que representa la NIC seleccionada vuelve a la aplicación que realiza la llamada.
 
-Para obtener información sobre las distintas maneras en que puede seleccionar NIC, consulte [Selección de una tarjeta de interfaz de red.](selecting-a-network-interface-card.md)
+Para obtener información sobre las distintas formas de seleccionar NIC, consulte [Selección de una tarjeta de interfaz de red.](selecting-a-network-interface-card.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -90,7 +90,7 @@ Para obtener información sobre las distintas maneras en que puede seleccionar N
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

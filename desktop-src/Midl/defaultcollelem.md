@@ -1,9 +1,9 @@
 ---
 title: defaultcollelem (atributo)
-description: El atributo \ defaultcollelem \ marca una propiedad como una función de descriptor de acceso para un elemento de la colección predeterminada.
+description: El atributo \ defaultcollelem\ marca una propiedad como una función de accessor para un elemento de la colección predeterminada.
 ms.assetid: e409f845-3f26-4551-abda-86c4776160aa
 keywords:
-- defaultcollelem (atributo) MIDL
+- atributo defaultcollelem MIDL
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 45fdbd59ca954d955fc5598b2bc2dc7a39ee14b2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159628"
 ---
 # <a name="defaultcollelem-attribute"></a>defaultcollelem (atributo)
 
-El atributo **\[ defaultcollelem \]** marca una propiedad como una función de descriptor de acceso para un elemento de la colección predeterminada.
+El **\[ atributo defaultcollelem \]** marca una propiedad como una función de accessor para un elemento de la colección predeterminada.
 
 ``` syntax
 [property-attribute-list, defaultcollelem] return-type property-name(prop-param-list)
@@ -31,43 +31,43 @@ El atributo **\[ defaultcollelem \]** marca una propiedad como una función de d
 
 <dl> <dt>
 
-*Property-Attribute-List* 
+*property-attribute-list* 
 </dt> <dd>
 
-Otros atributos que se aplican a la propiedad.
+Otros atributos que se aplican a la propiedad .
 
 </dd> <dt>
 
-*tipo de valor devuelto* 
+*return-type* 
 </dt> <dd>
 
 Especifica el tipo de valor devuelto de la función.
 
 </dd> <dt>
 
-*nombre de propiedad* 
+*property-name* 
 </dt> <dd>
 
-Nombre de la propiedad.
+El nombre de la propiedad.
 
 </dd> <dt>
 
-*prop-param-List* 
+*prop-param-list* 
 </dt> <dd>
 
-Lista de cero o más parámetros asociados a la propiedad.
+Lista de cero o más parámetros asociados a la propiedad .
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El atributo **\[ defaultcollelem \]** se usa para la optimización del código de Visual BasicÂ®. Si un miembro de una interfaz o dispinterface se marca como una función de descriptor de acceso, la llamada irá directamente a ese miembro.
+El **\[ atributo defaultcollelem \]** se usa para la optimización ® código de Visual Basic. Si un miembro de una interfaz o dispinterface se marca como una función de accessor, la llamada irá directamente a ese miembro.
 
-El uso de **\[ defaultcollelem \]** debe ser coherente para una propiedad. Por ejemplo, si usa el atributo en una propiedad *Get* , también debe estar presente en una propiedad *Let* .
+El uso **\[ de \] defaultcollelem** debe ser coherente para una propiedad. Por ejemplo, si usa el atributo en una *propiedad Get,* también debe estar presente en una *propiedad Let.*
 
-### <a name="typeflags-representation"></a>Representación TYPEFLAGS
+### <a name="typeflags-representation"></a>Representación de typeflags
 
-La presencia de FUNCFLAG \_ FDEFAULTCOLLELEM o VARFLAG \_ FDEFAULTCOLLELEM.
+Presencia de FUNCFLAG \_ FDEFAULTCOLLELEM o VARFLAG \_ FDEFAULTCOLLELEM.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -105,7 +105,7 @@ End Sub
 
 <dl> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -114,6 +114,6 @@ End Sub
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

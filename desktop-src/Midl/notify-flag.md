@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9fb7479667fb9757924dcba765c34138cf01c1ad6645ce7bfdc525be393e77f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af61999f0527b599cf358c38288a8c67473445a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159441"
 ---
 # <a name="notify_flag-attribute"></a>atributo de marca notify \_
 
@@ -38,7 +38,7 @@ Nombre del procedimiento remoto al que está asociado el procedimiento \_ de mar
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **\[ atributo de \_ marca \]** notify es similar en uso al **\[ atributo notify. \]**
 

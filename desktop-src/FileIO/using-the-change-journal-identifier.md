@@ -4,12 +4,12 @@ ms.assetid: 5ae79460-b69a-4901-a417-1d5358dcba29
 title: Usar el identificador del diario de cambios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0483c171b69bcee0faf8df9f325d4ee8ffcb6e904f6aa0cd3c720b83df326e3c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 692acf98403e45b6bdafd3cd4791a64dd1beb532
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069807"
 ---
 # <a name="using-the-change-journal-identifier"></a>Usar el identificador del diario de cambios
 

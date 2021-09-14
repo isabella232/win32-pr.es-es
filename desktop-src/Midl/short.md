@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbb107b818d2d89717535996d95b580df5a2d49ad0a72aef97de5d6111a0e90d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b993c830c631b5b95246a7a191388ce897dbaafb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159388"
 ---
 # <a name="short-attribute"></a>atributo short
 
-La **palabra** clave short designa un entero de 16 bits.
+La **palabra clave** short designa un entero de 16 bits.
 
 ``` syntax
 [[ signed | unsigned ]] short [[ int ]] declarator-list;
@@ -38,11 +38,11 @@ Especifica uno o varios declaradores de C estándar, como identificadores, decla
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **palabra clave** short puede ir precedida de la palabra clave [**signed**](signed.md) o la palabra [**clave unsigned**](unsigned.md). La palabra clave [**int**](int.md) es opcional y se puede omitir. Para el compilador MIDL, un entero corto se firma de forma predeterminada y es sinónimo de **signed short int**.
+La **palabra** clave short puede ir precedida de la palabra clave [**signed**](signed.md) o de la palabra [**clave unsigned**](unsigned.md). La palabra clave [**int**](int.md) es opcional y se puede omitir. Para el compilador MIDL, un entero corto se firma de forma predeterminada y es sinónimo de **signed short int**.
 
-El **tipo** entero corto es uno de los tipos base del lenguaje IDL. El **tipo** entero corto puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como un especificador function-return-type y un especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea Archivo de [definición de interfaz (IDL).](interface-definition-idl-file.md)
+El **tipo** entero corto es uno de los tipos base del lenguaje IDL. El **tipo** entero corto puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como un especificador function-return-type y un especificador parameter-type). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
 
 ## <a name="see-also"></a>Vea también
 
@@ -57,7 +57,7 @@ El **tipo** entero corto es uno de los tipos base del lenguaje IDL. El **tipo** 
 [**int**](int.md)
 </dt> <dt>
 
-[**long**](long.md)
+[**Largo**](long.md)
 </dt> <dt>
 
 [**Firmado**](signed.md)

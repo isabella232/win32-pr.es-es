@@ -4,12 +4,12 @@ ms.assetid: 16b9d825-848f-4acc-ba53-9049c80a3f3c
 title: Recuperar información de tipo de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7dc8ff5678ea84a094d7a6a1c3c5d9d5503e05770d2cf6487770a320580cc55
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8ef8663610fe19f69785cb44f5d3a9b528a0fe6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119683275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069850"
 ---
 # <a name="retrieving-file-type-information"></a>Recuperar información de tipo de archivo
 

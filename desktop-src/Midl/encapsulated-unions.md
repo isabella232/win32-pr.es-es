@@ -1,27 +1,27 @@
 ---
 title: Uniones encapsuladas
-description: Una unión que se encuentra con su discriminante en una estructura dentro de es una unión encapsulada.
+description: Una unión contenida con su discriminador en una estructura dentro de es una unión encapsulada.
 ms.assetid: d32c18b4-b2f6-4ce2-94fe-a495a3c15d14
 keywords:
 - tipos de datos MIDL, uniones encapsuladas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bc8f8f830d49430551af7d6450b0174742b9436afcdba764e9fa6494c957d9c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4489a043ff3690ddb31a8acccf359dcd76940aa7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119895374"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159606"
 ---
 # <a name="encapsulated-unions"></a>Uniones encapsuladas
 
-Una unión que se encuentra con su discriminante en una estructura dentro de es una unión encapsulada. La unión encapsulada se indica mediante la presencia de la palabra clave [**switch.**](switch.md) Este tipo de unión se denomina así porque el compilador midl encapsula automáticamente la unión y su discriminador en una estructura para la transmisión durante una llamada a procedimiento remoto.
+Una unión contenida con su discriminador en una estructura dentro de es una unión encapsulada. La unión encapsulada se indica mediante la presencia de la palabra clave [**switch.**](switch.md) Este tipo de unión se denomina así porque el compilador MIDL encapsula automáticamente la unión y su discriminador en una estructura para su transmisión durante una llamada a procedimiento remoto.
 
-Si falta la etiqueta de unión (U1 TYPE en el ejemplo anterior), el compilador generará la estructura con el campo \_ de unión denominado unión *\_ etiquetada.*
+Si falta la etiqueta de unión (U1 TYPE en el ejemplo anterior), el compilador generará la estructura con el campo de unión \_ denominado *unión \_ etiquetada.*
 
-La forma de las uniones debe ser la misma entre plataformas para garantizar la interconectividad.
+La forma de las uniones debe ser la misma en todas las plataformas para garantizar la interconectividad.
 
-Para obtener una descripción del formato de una unión encapsulada, vea [**union**](union.md).
+Para obtener una descripción del formato de una unión encapsulada, vea [**unión**](union.md).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -46,7 +46,7 @@ typedef struct _S1_TYPE
 } S1_TYPE;
 ```
 
-Para obtener información relacionada, vea [MidL Base Types](midl-base-types.md), [**char**](char-idl.md), context **\[** [**\_ handle**](context-handle.md), **\]** [**enum**](enum.md), first **\[** [**\_ is**](first-is.md) **\]** , **\[** [**handle**](handle.md) **\]** , **\[** [**ignore**](ignore.md), **\]** [**int**](int.md), **\[** [**ignore**](ignore.md), **\]** last **\[** [**\_ is**](last-is.md) **\]** , length **\[** [**\_ is**](length-is.md) **\]** , max **\[** [**\_ is**](max-is.md) **\]** , **\[** [**ms \_ union**](ms-union-attrib.md) **\]** , [Nonencapsulated Unions](nonencapsulated-unions.md), **\[** [**ptr**](ptr.md) **\]** , **\[** [**ref**](ref.md), size **\]** **\[** [**\_ is**](size-is.md) **\]** , **\[** [**string**](string.md) **\]** , [**struct**](struct.md), [**switch**](switch.md), **\[** [**switch \_ is**](switch-is.md) **\]** , switch **\[** [**\_ type**](switch-type.md) **\]** , transmit **\[** [**\_ as**](transmit-as.md) **\]** , [**union**](union.md)y **\[** [**unique**](unique.md)**\]**
+Para obtener información relacionada, vea [MidL Base Types](midl-base-types.md), [**char**](char-idl.md), context **\[** [**\_ handle**](context-handle.md) **\]** , [**enum**](enum.md), first **\[** [**\_ is**](first-is.md) **\]** , handle , **\[** [](handle.md) **\]** **\[** [**ignore**](ignore.md) **\]** , [**int**](int.md), **\[** [**ignore**](ignore.md) **\]** , last **\[** [**\_ is**](last-is.md) **\]** , length **\[** [**\_ is**](length-is.md) **\]** , max **\[** [**\_ is**](max-is.md) **\]** , **\[** [**ms \_ union**](ms-union-attrib.md) **\]** , [Nonencapsulated Unions](nonencapsulated-unions.md), **\[** [**ptr**](ptr.md) **\]** , **\[** [**ref**](ref.md), **\]** size **\[** [**\_ is**](size-is.md) **\]** , **\[** [**string**](string.md) **\]** , [**struct**](struct.md), switch , [**switch**](switch.md) **\[** [**\_ is**](switch-is.md) **\]** , switch **\[** [**\_ type**](switch-type.md) **\]** , transmit **\[** [**\_ as**](transmit-as.md) **\]** , [**union**](union.md), and **\[** [**unique**](unique.md)**\]**
 
  
 

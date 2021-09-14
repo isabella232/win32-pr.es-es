@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f91db32fd7636f956e64dafc0db15efb520e643b435995dd977db7a631a20c78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 173ccd0b81eb5fa7d84a6fa4d2821162b852303d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159461"
 ---
 # <a name="ncadg_ip_udp-attribute"></a>Atributo udp \_ de ip de ncadg \_
 
@@ -45,7 +45,7 @@ Especifica un número opcional de 16 bits. Normalmente, los valores de menos de 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las restricciones siguientes se aplican a los protocolos de datagrama, [**ncadg \_ ipx**](ncadg-ipx.md) y **ncadg \_ ip \_ udp**:
 
@@ -82,7 +82,7 @@ interface iface2
 
 <dl> <dt>
 
-[**Extremo**](endpoint.md)
+[**endpoint**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)

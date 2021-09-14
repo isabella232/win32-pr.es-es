@@ -5,11 +5,11 @@ title: Sintaxis de instrucciones condicionales
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f131cf9513d4bf19bb84c5777d1fed1411a682ce
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122886438"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158815"
 ---
 # <a name="conditional-statement-syntax"></a>Sintaxis de instrucciones condicionales
 
@@ -21,7 +21,7 @@ En esta tabla y en la lista siguiente se resume la sintaxis que se va a usar en 
 
 
 
-| Elemento                | Syntax                                                                                                          |
+| Elemento                | Sintaxis                                                                                                          |
 |---------------------|-----------------------------------------------------------------------------------------------------------------|
 | value               | entero \| literal \| de símbolo                                                                                    |
 | comparison-operator | < \| > \| <= \| >= \| = \| <>                                                                 |
@@ -58,7 +58,7 @@ En la tabla siguiente se muestran los prefijos que se usarán para tener acceso 
 
 
 
-| Tipo de símbolo          | Prefijo | Valor                                                     |
+| Tipo de símbolo          | Prefijo | Value                                                     |
 |----------------------|--------|-----------------------------------------------------------|
 | Propiedad installer   | (ninguno) | Valor de la tabla property ([Property](property-table.md)). |
 | Variable de entorno | %      | Valor de la variable de entorno.                            |

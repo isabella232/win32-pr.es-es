@@ -4,12 +4,12 @@ ms.assetid: 8873c161-a709-48b8-a66f-fe2ee9be859f
 title: Tabla AdvtExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fed9a566b721be1065e825cbf7cd6650a52c83ace653dc2730f1fcf7785d125c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b68a3f69cc7473b2364f169545743941d752f51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118381594"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159158"
 ---
 # <a name="advtexecutesequence-table"></a>Tabla AdvtExecuteSequence
 
@@ -66,7 +66,7 @@ Las columnas son idénticas a las de [la tabla InstallExecuteSequence](installex
 <span id="Action"></span><span id="action"></span><span id="ACTION"></span>Acción
 </dt> <dd>
 
-Nombre de la [acción estándar que](standard-actions.md) va a ejecutar el instalador. Esta es la clave principal de la tabla.
+Nombre de la [acción estándar que](standard-actions.md) el instalador va a ejecutar. Esta es la clave principal de la tabla.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Un valor positivo indica la posición de secuencia de la acción. Los siguientes
 
 
 
-| Marca de terminación          | Valor | Descripción                                                                          |
+| Marca de terminación          | Value | Descripción                                                                          |
 |---------------------------|-------|--------------------------------------------------------------------------------------|
 | msiDoActionStatusSuccess  | -1    | Finalización correcta. Se usa con [los cuadros de](exit-dialog.md) diálogo Salir.               |
 | msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. Se usa con [los cuadros de diálogo UserExit.](userexit-dialog.md)     |

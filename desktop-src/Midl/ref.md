@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 916556bdee83817f512c2d86eef2d768c3f6dbddf06b39408da5c25a2ba10ed2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82bc5762eea78b3ce73ab3db58e9bb567b051675
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159399"
 ---
 # <a name="ref-attribute"></a>ref (atributo)
 
@@ -91,7 +91,7 @@ Especifica al menos un declarador de puntero al que se aplica el atributo **\[ r
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre del procedimiento remoto.
@@ -101,11 +101,11 @@ Especifica el nombre del procedimiento remoto.
 *parameter-attribute-list* 
 </dt> <dd>
 
-Consta de cero o más atributos adecuados para el tipo de parámetro especificado. Los atributos de parámetro pueden tomar los atributos direccionales de entrada y salida; los atributos de campo primero son , el último es , length es , max es , **\[** [](in.md) **\]** size es y **\[** [](out-idl.md) **\]** switch **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [**\_ type**](switch-type.md); **\]** **\[ \]** **\[** [](unique.md) **\]** **\[** [](ptr.md) **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](string.md) **\]** el atributo de puntero ref , unique o ptr ; y el identificador de contexto de los atributos de uso y la cadena . El atributo usage **\[** [**ignore no**](ignore.md) **\]** se puede usar como atributo de parámetro. Separe varios atributos con comas.
+Consta de cero o más atributos adecuados para el tipo de parámetro especificado. Los atributos de parámetro pueden tomar los atributos direccionales de entrada y salida; los atributos de campo primero son , el último es , length es , max es , size es y switch type ; el atributo de puntero **\[** [](in.md) **\]** **\[** [](out-idl.md) **\]** **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [**\_**](switch-type.md) **\]** **\[ ref \]**, unique o **\[** [](unique.md) **\]** **\[** [**ptr;**](ptr.md) **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](string.md) **\]** y el identificador de contexto de los atributos de uso y la cadena . El atributo usage **\[** [**ignore no**](ignore.md) **\]** se puede usar como atributo de parámetro. Separe varios atributos con comas.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un atributo de puntero se puede aplicar como atributo de tipo, como atributo de campo que se aplica a un miembro de estructura, miembro de unión o parámetro; o como un atributo de función que se aplica al tipo de valor devuelto de la función. El atributo de puntero también puede aparecer con la palabra **\[** [**clave default \_ del**](pointer-default.md) **\]** puntero.
 
@@ -197,7 +197,7 @@ Si no se especifica ningún atributo para un parámetro de puntero de nivel supe
 [**transmitir \_ como**](transmit-as.md)
 </dt> <dt>
 
-[**Unión**](union.md)
+[**union**](union.md)
 </dt> <dt>
 
 [**Único**](unique.md)

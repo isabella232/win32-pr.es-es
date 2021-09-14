@@ -14,14 +14,14 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 47cd9bab5c12230a048da04e60169e1ad21195df2304642f6b656983539f3b57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 063898419596fc852d073bf83ce7504a7691a10e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118947077"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158458"
 ---
-# <a name="errormoduletable-property"></a>Error.ModuleTable, propiedad
+# <a name="errormoduletable-property"></a>Propiedad Error.ModuleTable
 
 La propiedad **ModuleTable de** solo lectura devuelve el nombre de la tabla del módulo que produjo el error.
 
@@ -38,7 +38,7 @@ propVal = Error.ModuleTable
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La colección está vacía si los valores no se aplican al tipo del error. Puede determinar el tipo de error llamando a la [**propiedad Type**](error-type.md) del [**objeto Error.**](error-object.md)
 
@@ -53,7 +53,7 @@ Consulte get ModuleTable function (Obtener [**\_ función ModuleTable).**](/wind
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

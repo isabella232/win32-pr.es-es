@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c83d5c4b19800f92e3080d3fb435ddd20d62e4b6fe76986869a0f4da86deabcb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b9c233103330e9f8ae7318a613cbc5103315a74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119895075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159532"
 ---
 # <a name="importlib-attribute"></a>importlib (atributo)
 
@@ -59,7 +59,7 @@ Nombre y ubicación del archivo importado en tiempo de compilación MIDL.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todas **\[ las \] directivas importlib** deben preceder a las demás descripciones de tipos de la biblioteca. Tenga en cuenta que la biblioteca importada, así como la biblioteca generada, se deben distribuir con la aplicación para que esté disponible en tiempo de ejecución.
 

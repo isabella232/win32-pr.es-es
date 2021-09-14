@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5c61490a0719ce45d9776982b9230734d1126cef747330bb595c205500aca331
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 417a18ca53240dce0e4ed6d40f551c45c24b0f1c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118157668"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261439"
 ---
 # <a name="cbaserendereronstopstreaming-method"></a>Método CBaseRenderer.OnStopStreaming
 
-Se `OnStopStreaming` llama al método cuando el filtro detiene el streaming.
+Se `OnStopStreaming` llama al método cuando el filtro deja de transmitir.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método CBaseRenderer::StopStreaming**](cbaserenderer-stopstreaming.md) llama a este método. No hace nada en la clase base, pero la clase derivada puede invalidarla.
 
@@ -59,7 +59,7 @@ El [**método CBaseRenderer::StopStreaming**](cbaserenderer-stopstreaming.md) ll
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

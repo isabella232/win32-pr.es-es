@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 827ec8deec34a42d39fc3973dff73e9912ecb96bfee62e348ef7aebfee6ee9f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2aab7b7262bceb330e3f4645e4f16035b783197
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159528"
 ---
 # <a name="include-attribute"></a>include (atributo)
 
@@ -38,7 +38,7 @@ Especifica el nombre de uno o varios archivos de encabezado del lenguaje C. Use 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Como resultado de la instrucción **include,** el código auxiliar generado contendrá una instrucción include del preprocesador **\# C.** El archivo de encabezado del lenguaje C se proporciona al compilar los códigos auxiliares. Las instrucciones include se basan en el mecanismo del compilador de C para buscar archivos incluidos en la estructura de directorios.
 

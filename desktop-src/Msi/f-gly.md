@@ -4,12 +4,12 @@ ms.assetid: b6623bd8-bc83-4d84-bc82-eb4051e10260
 title: F (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aaab81a284aa8de395ebe2a1886a9b1cb8f91dc4401d25cce5472714d984df65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 374e70a6fa89369f9677eaabec8b98bf48e1c851
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118142924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158419"
 ---
 # <a name="f-windows-installer"></a>F (Windows instalador)
 
@@ -27,7 +27,7 @@ Funcionalidad desde la perspectiva del usuario. Para obtener más información, 
 <span id="_msi_full_ui_gly"></span><span id="_MSI_FULL_UI_GLY"></span>**interfaz de usuario completa**
 </dt> <dd>
 
-Característica de las funcionalidades de la [*interfaz de usuario interna del*](i-gly.md) instalador. El nivel de interfaz de usuario completo admite una interfaz de usuario para la instalación, incluidos cuadros de diálogo, barras de progreso y mensajes de error. Para obtener más información, [vea Interfaz de usuario Levels](user-interface-levels.md).
+Característica de las funcionalidades de la [*interfaz de usuario interna del*](i-gly.md) instalador. El nivel de interfaz de usuario completo admite una interfaz de usuario para la instalación, incluidos los cuadros de diálogo, las barras de progreso y los mensajes de error. Para obtener más información, [vea Interfaz de usuario Levels](user-interface-levels.md).
 
 </dd> </dl>
 

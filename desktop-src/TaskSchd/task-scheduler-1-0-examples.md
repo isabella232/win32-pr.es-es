@@ -6,12 +6,12 @@ keywords:
 - Programador de tareas ejemplos Programador de tareas , Programador de tareas ejemplos de 1.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ea41bbe0679935cd964f61efd52e9fa5b57cc34aab73f3bb1dd09ea64a0f9c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 746c8c44648359f269d61fd27fc57b1fd90932da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119059883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259412"
 ---
 # <a name="task-scheduler-10-examples"></a>Programador de tareas ejemplos de 1.0
 

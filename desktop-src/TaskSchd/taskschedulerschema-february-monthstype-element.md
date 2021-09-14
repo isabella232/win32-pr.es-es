@@ -1,5 +1,5 @@
 ---
-title: Elemento February (monthsType)
+title: Elemento De febrero (monthsType)
 description: Especifica que la tarea se ejecuta en febrero.
 ms.assetid: 871449f8-fa3a-4e1f-be36-bc5c98125721
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 02ea231a493d28c983bed0964029026c950125c0bbd877fda7058ed97b014423
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 727751964bfb9a752eb1190f8c7d3a86de2a9413
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118611927"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259367"
 ---
-# <a name="february-monthstype-element"></a>Elemento February (monthsType)
+# <a name="february-monthstype-element"></a>Elemento De febrero (monthsType)
 
 Especifica que la tarea se ejecuta en febrero.
 
@@ -38,7 +38,7 @@ El **elemento de febrero** se define mediante el [**tipo complejo monthsType.**]
 
 | Elemento                                                                                                          | Derivado de                                                     | Descripción                                                                                                |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica los meses del año durante los que se ejecuta la tarea para una programación mensual del día de la semana.<br/> |
+| [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica los meses del año durante los que la tarea se ejecuta para una programación mensual del día de la semana.<br/> |
 | [**Months (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica los meses del año durante los que se ejecuta la tarea para una programación mensual.<br/>             |
 
 
@@ -67,7 +67,7 @@ El siguiente XML define un calendario de meses que ejecuta la tarea en febrero.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

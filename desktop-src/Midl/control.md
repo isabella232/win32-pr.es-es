@@ -1,9 +1,9 @@
 ---
 title: atributo de control
-description: El atributo \ control\ identifica una coclase o biblioteca como un control COM, del que un sitio de contenedor derivará bibliotecas de tipos adicionales o clases de objeto de componente.
+description: El atributo \ control\ identifica una coclase o biblioteca como un control COM, del que un sitio de contenedor derivará bibliotecas de tipos adicionales o clases de objetos de componente.
 ms.assetid: c39dd4b6-743f-4888-8954-8b83584bdea5
 keywords:
-- atributo de control MIDL
+- MIDL del atributo de control
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b6372ffb7f7d9f19769e419b12c0b109736a9867360224e023f1b622c653854
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 982327d581ddb606f733e9efbbcb89e2f9972cf4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118643684"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159642"
 ---
 # <a name="control-attribute"></a>atributo de control
 
@@ -42,14 +42,14 @@ library | coclass lib-or-coclassname
 *attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la [**biblioteca o**](library.md) a la instrucción de [**la coclase.**](coclass.md) Separe varios atributos con comas.
+Especifica cero o más atributos que se aplican a la biblioteca [**o**](library.md) a la [**instrucción de la coclase.**](coclass.md) Separe varios atributos con comas.
 
 </dd> <dt>
 
 *lib-or-coclassname* 
 </dt> <dd>
 
-Especifica el nombre de la biblioteca [**o**](library.md) [**de la coclase**](coclass.md).
+Especifica el nombre de la biblioteca [**o**](library.md) [**la coclase**](coclass.md).
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Instrucciones MIDL que especifican los miembros de la [**biblioteca o**](library
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo permite marcar bibliotecas de tipos que describen controles para que no se muestren en exploradores de tipos destinados a objetos novisuales.
 

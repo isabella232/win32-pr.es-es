@@ -18,12 +18,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 536963be51d665b03af77bb81c7592b44d2a6eb5ddc449bfa82896dd7f7da9b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0e7dfa68646dbefb6d6b70218fe99830b44a0c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120064425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261631"
 ---
 # <a name="win32_powermanagementevent-class"></a>Clase PowerManagementEvent de Win32 \_
 
@@ -44,7 +44,7 @@ class Win32_PowerManagementEvent : __ExtrinsicEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PowerManagementEvent de Win32** tiene estos tipos de miembros:
 
@@ -175,7 +175,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ PowerManagementEvent de Win32** se deriva de [**\_ \_ ExtrinsicEvent**](../wmisdk/--extrinsicevent.md).
 
@@ -191,7 +191,7 @@ Para obtener más información sobre cómo responder Windows eventos de energía
 
 ## <a name="examples"></a>Ejemplos
 
-VbScript siguiente supervisa los cambios en el estado de energía en un equipo.
+El siguiente VBScript supervisa los cambios en el estado de energía en un equipo.
 
 
 ```VB
@@ -219,7 +219,7 @@ Loop
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a83528a1ec632fcf2309438e6228220544a32408b310ea90260b8bcfda3cb6f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1eb310c3e126caf9b25b8c015b840aea11791d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118642813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159482"
 ---
 # <a name="module-attribute"></a>atributo module
 
@@ -40,7 +40,7 @@ module modulename
 *attributes* 
 </dt> <dd>
 
-Los \[ [**atributos uuid**](uuid.md) \] , \[ [**version**](version.md) \] , \[ [**helpstring**](helpstring.md), helpcontext , hidden y \] \[ [](helpcontext.md) \] \[ [](hidden.md) \] \[ [**dllname**](dllname-str-.md) se aceptan antes que una instrucción \] **de** módulo. Vea [Descripciones de atributos](/previous-versions/windows/desktop/automat/attribute-descriptions), en el libro automatización OLE, para obtener más información sobre los atributos aceptados antes de una definición de módulo. Se \[ **requiere el atributo** \] dllname. Si se omite el atributo \[ **uuid,** el módulo no se especifica de forma \] única en el sistema.
+Los \[ [**atributos uuid**](uuid.md) \] , \[ [**version**](version.md) \] , \[ [**helpstring**](helpstring.md), helpcontext , hidden y dllname se \] \[ [](helpcontext.md) \] aceptan \[ [](hidden.md) \] antes que \[ [](dllname-str-.md) \] una instrucción **de** módulo. Vea [Descripciones de atributos](/previous-versions/windows/desktop/automat/attribute-descriptions), en el libro automatización OLE, para obtener más información sobre los atributos aceptados antes de una definición de módulo. Se requiere el atributo \[ **dllname.** \] Si se omite el atributo \[ **uuid,** el módulo no se especifica \] de forma única en el sistema.
 
 </dd> <dt>
 
@@ -60,11 +60,11 @@ Lista de definiciones de constantes y prototipos de función para cada función 
 
 \[*atributos* \] [**const**](const.md) constanttype *constname*  =  *constval*;
 
-Solo se \[ [**aceptan los atributos**](helpstring.md) \] \[ [**helpstring y helpcontext**](helpcontext.md) para un elemento \] [**const.**](const.md)
+Solo se \[ [**aceptan los atributos helpstring**](helpstring.md) y \] \[ [**helpcontext**](helpcontext.md) \] para un [**const**](const.md).
 
-Los atributos siguientes se aceptan en una función de un módulo: \[ [**helpstring**](helpstring.md) \] , \[ [**helpcontext**](helpcontext.md) \] , \[ [**string**](string.md) \] , \[ [**entry**](entry.md) \] , \[ [**propget**](propget.md), \] \[ [**propput,**](propput.md) \] \[ [**propputref**](propputref.md) \] \[ [**yutorg**](vararg.md) \] . Si se especifica , el último parámetro \[  \] debe ser una matriz segura de **tipo VARIANT.**
+Los atributos siguientes se aceptan en una función de un módulo: \[ [**helpstring**](helpstring.md) \] , \[ [**helpcontext**](helpcontext.md), \] \[ [**string**](string.md), \] \[ [**entry**](entry.md), \] \[ [**propget,**](propget.md) \] \[ [**propput,**](propput.md) \] \[ [**propputref**](propputref.md) \] \[ [**yutorg**](vararg.md) \] . Si se especifica , el último parámetro \[  \] debe ser una matriz segura de **tipo VARIANT.**
 
-La convención de llamada opcional puede ser una de \_ \_ \_ pascal/pascal/pascal, \_ \_ cdecl/ \_ cdecl/cdecl, \_ \_ o stdcall/ \_ stdcall/stdcall. El tipo de convención de llamada *paramname* puede incluir hasta dos caracteres de subrayado iniciales.
+La convención de llamada opcional puede ser una de \_ \_ \_ pascal/pascal/pascal, \_ \_ cdecl/ \_ cdecl/cdecl o \_ \_ stdcall/ \_ stdcall/stdcall. El tipo de convención de llamada *paramname* puede incluir hasta dos caracteres de subrayado iniciales.
 
 La lista de parámetros es una lista delimitada por comas de:
 
@@ -78,9 +78,9 @@ Si \[ [**se**](optional.md) \] usa opcional, los tipos de esos parámetros deben
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La salida del archivo de encabezado (.h) para los módulos es una serie de prototipos de función. La **palabra** clave module y los corchetes circundantes se quitan de la salida del archivo de encabezado (.h), pero se inserta un comentario (// **modulename** ) antes de los prototipos. La palabra clave **extern** se inserta antes de las declaraciones.
+La salida del archivo de encabezado (.h) para los módulos es una serie de prototipos de función. La **palabra** clave del módulo y los corchetes circundantes se quitan de la salida del archivo de encabezado (.h), pero se inserta un comentario (// **module** *modulename*) antes que los prototipos. La palabra clave **extern** se inserta antes de las declaraciones.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -153,7 +153,7 @@ module somemodule
 [**vararg**](vararg.md)
 </dt> <dt>
 
-[**Versión**](version.md)
+[**version**](version.md)
 </dt> </dl>
 
  

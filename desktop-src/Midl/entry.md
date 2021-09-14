@@ -1,6 +1,6 @@
 ---
 title: entry (atributo)
-description: El atributo \ entry\ especifica una función o constante exportada en un módulo mediante la identificación del punto de entrada en el archivo DLL.
+description: El atributo \ entry\ especifica una función exportada o una constante en un módulo mediante la identificación del punto de entrada en el archivo DLL.
 ms.assetid: 1d2d6429-d828-44ec-8b0a-cefb64c6e706
 keywords:
 - atributo de entrada MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f6dab1681cb04adbd48c4a27c14a359c87624870a43c118c6dd1a589689c00f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e596284a83c48bcfc84ef4f7985aed7c33ba7da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159597"
 ---
 # <a name="entry-attribute"></a>entry (atributo)
 
-El **\[ atributo \]** entry especifica una función o constante exportada en un módulo mediante la identificación del punto de entrada en el archivo DLL.
+El **\[ atributo \]** entry especifica una función exportada o una constante en un módulo mediante la identificación del punto de entrada en el archivo DLL.
 
 ``` syntax
 [
@@ -42,7 +42,7 @@ module modulename
 *uuid-number* 
 </dt> <dd>
 
-Especifica un número de identificación único universal para el [**módulo**](module.md).
+Especifica un número de identificación único universalmente para el [**módulo**](module.md).
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Especifica cero o más atributos para que el compilador MIDL se aplique al [**m�
 *modulename* 
 </dt> <dd>
 
-Especifica el nombre que otros componentes de software usan para indicar el [**módulo**](module.md).
+Especifica el nombre que usan otros componentes de software para indicar el [**módulo**](module.md).
 
 </dd> <dt>
 
@@ -74,9 +74,9 @@ Especifica una o varias instrucciones de definición de elemento de módulo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si la variable *entryid* del atributo **\[ entry \]** es una cadena, se trata de un punto de entrada con nombre. Si *entryid* es un número, el punto de entrada se define mediante un ordinal. Este atributo proporciona una manera de obtener la dirección de una función en un módulo.
+Si la *variable entryid* del atributo **\[ \] de** entrada es una cadena, se trata de un punto de entrada con nombre. Si *entryid* es un número, el punto de entrada se define mediante un ordinal. Este atributo proporciona una manera de obtener la dirección de una función en un módulo.
 
 ## <a name="examples"></a>Ejemplos
 

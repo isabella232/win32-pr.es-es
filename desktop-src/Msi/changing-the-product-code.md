@@ -4,12 +4,12 @@ ms.assetid: 4de84885-587d-405f-ba85-d62e09e8ba92
 title: Cambiar el código del producto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4567cbb014fa2f2002f0433a8e42c3a261ccb1af350f9b4e592a3bb5ff8a0216
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0272f1901ef60342f01f4db091e7a4e62b28e30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119340015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158929"
 ---
 # <a name="changing-the-product-code"></a>Cambiar el código del producto
 
@@ -23,7 +23,7 @@ Por lo general, una actualización que cumpla las siguientes directrices no requ
 -   La actualización no debe cambiar el nombre del archivo .msi del paquete de instalación. En su lugar, dado que modifica el paquete, debe cambiar el código del paquete. Tenga en cuenta que esto significa que la actualización puede cambiar las tablas, las acciones personalizadas y los cuadros de diálogo del archivo .msi sin cambiar el nombre del archivo.
 -   La actualización puede agregar, quitar o modificar los archivos, las claves del Registro o los accesos directos de componentes que no comparten dos o más características. Si la actualización modifica un archivo con versión, la versión de ese archivo debe incrementarse en la [tabla File](file-table.md). Si la actualización quita recursos, también debe actualizar las tablas [RemoveFile](removefile-table.md) y [RemoveRegistry](removeregistry-table.md) para quitar los archivos no usados, las claves del Registro o los accesos directos que ya se hayan instalado.
 -   La actualización de un componente compartido por dos o más características debe ser compatible con todas las aplicaciones y características que usan el componente. La actualización puede modificar el recurso de un componente compartido, como archivos, entradas del Registro y accesos directos, siempre que los cambios sean compatibles con versiones anteriores. No se recomienda que la actualización agregue o quite archivos, entradas del Registro o accesos directos de un componente compartido.
--   Una pequeña actualización se envía como un paquete de revisión Windows [Installer](patch-packages.md). (Normalmente, un CD-ROM de producto completo no se proporciona con una pequeña actualización).
+-   Una pequeña actualización se envía como un paquete Windows de revisión [del instalador.](patch-packages.md) (Normalmente, un CD-ROM de producto completo no se proporciona con una pequeña actualización).
 
 El código de producto debe cambiarse si se cumple alguna de las condiciones siguientes para la actualización:
 

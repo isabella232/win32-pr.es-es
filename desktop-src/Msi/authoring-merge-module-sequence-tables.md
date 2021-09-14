@@ -4,12 +4,12 @@ ms.assetid: 9efb75d2-43f9-404c-8e7f-918d056190cf
 title: Creación de tablas de secuencias de módulos de mezcla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f45e4cf86c846030854054d7ab700e34210d4e27367cd31d606c78c24f2a9a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24b21780601e626c006967cefa0dcff5700bdec4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118381190"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159032"
 ---
 # <a name="authoring-merge-module-sequence-tables"></a>Creación de tablas de secuencias de módulos de mezcla
 
@@ -17,7 +17,7 @@ Incluya las tablas MergeModuleSequence en el archivo .msm [](s-gly.md) si el mó
 
 Si alguna de las tablas ModuleSequence está presente en un archivo .msm, también se debe crear una copia vacía de la tabla de secuencia del instalador correspondiente en el módulo merge. Por ejemplo, si un módulo de mezcla contiene una tabla ModuleAdminExecuteSequence, el módulo de mezcla también debe incluir una tabla AdminExecuteSequence vacía. Durante una combinación, estas tablas vacías proporcionan a la herramienta de combinación las directrices de esquema necesarias.
 
-Cuando se [usan acciones estándar](standard-actions.md) en tablas de secuencia de módulos de combinación, el valor de la columna Secuencia debe ser el número de secuencia de acción recomendado para la acción estándar. Consulte las secuencias de acción sugeridas que se indican a continuación para ver los números de secuencia recomendados en cada tabla de secuencias. Si el número de secuencia de la tabla de secuencias del módulo de mezcla difiere del número de secuencia para la misma acción en el archivo .msi, la herramienta de combinación usa el número de secuencia en el archivo .msi durante la combinación.
+Cuando se [usan acciones estándar](standard-actions.md) en tablas de secuencia de módulos de combinación, el valor de la columna Secuencia debe ser el número de secuencia de acción recomendado para la acción estándar. Consulte las secuencias de acción sugeridas que se indican a continuación para ver los números de secuencia recomendados en cada tabla de secuencias. Si el número de secuencia de la tabla de secuencias del módulo de mezcla difiere del número de secuencia de la misma acción en el archivo .msi, la herramienta de combinación usa el número de secuencia en el archivo .msi durante la combinación.
 
 
 
@@ -42,7 +42,7 @@ Si se especifica una acción que devuelve una marca de terminación en la column
 
 
 
-| Marca de terminación          | Valor | Descripción              |
+| Marca de terminación          | Value | Descripción              |
 |---------------------------|-------|--------------------------|
 | msiDoActionStatusSuccess  | -1    | Finalización correcta.   |
 | msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. |

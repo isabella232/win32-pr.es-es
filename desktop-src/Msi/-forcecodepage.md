@@ -4,12 +4,12 @@ ms.assetid: d95c205f-a800-4a63-a712-6f06675e4a8a
 title: _ForceCodepage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee252260b0aaee9713c28af5a6d810a3f6a8ed1c1b376b52bd82472cebfd0853
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 132843fa092409b26811afd6a4c1f3e7cf0544f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119979605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159306"
 ---
 # <a name="_forcecodepage"></a>\_ForceCodepage
 

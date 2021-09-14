@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb1e91fb9bc06eb4644209d87b4a941a68bc6b4d58d4dc31010d284e7b0f959c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 519ceabc2714e65bcb87651b74518228245afb5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117807378"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159657"
 ---
 # <a name="call_as-attribute"></a>llamada \_ como atributo
 
@@ -52,7 +52,7 @@ Especifica la operación con nombre presentada a la aplicación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La capacidad de asignar una función a la que no se puede llamar de forma remota a una función remota es especialmente útil en interfaces que tienen numerosos tipos de parámetros que no se pueden transmitir a través de la red. En lugar de usar muchos tipos de representación como y transmisión como , puede combinar todas las conversiones **\[** [**\_**](represent-as.md) mediante **\]** llamadas **\[** [**\_**](transmit-as.md) **\]** **\[ \_ \] como** rutinas. Las dos llamadas se **\[ suministran \_ como \]** rutinas (lado cliente y lado servidor) para enlazar la rutina entre las llamadas de aplicación y las llamadas remotas.
 

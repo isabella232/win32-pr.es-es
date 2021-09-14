@@ -1,9 +1,9 @@
 ---
 title: atributo maybe
-description: La palabra clave \maybe\ indica que la llamada a procedimiento remoto no necesita ejecutarse cada vez que se llama a y el cliente no espera una respuesta. Tenga en cuenta que el protocolo \maybe\ no garantiza la entrega ni la finalización de la llamada.
+description: La palabra clave \maybe\ indica que la llamada a procedimiento remoto no necesita ejecutarse cada vez que se llama y el cliente no espera una respuesta. Tenga en cuenta que el protocolo \maybe\ no garantiza la entrega ni la finalización de la llamada.
 ms.assetid: 163b9fd5-7dce-493e-95bc-63807f42a498
 keywords:
-- quizás atributo MIDL
+- puede que el atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 178faf3d308f7dd282e31a8f0eabf8708bb8b3fe1a0d52a981e65adddb258ad1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68704e19d421150444933d74f6b78fc5bada46f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159502"
 ---
 # <a name="maybe-attribute"></a>atributo maybe
 
-La palabra **\[ clave puede \]** indicar que la llamada a procedimiento remoto no necesita ejecutarse cada vez que se llama a y el cliente no espera una respuesta. Tenga en cuenta **\[ que el protocolo quizás \]** no garantiza la entrega ni la finalización de la llamada.
+La palabra **\[ clave puede \]** indicar que la llamada a procedimiento remoto no necesita ejecutarse cada vez que se llama y el cliente no espera una respuesta. Tenga en cuenta **\[ que el protocolo quizás \]** no garantiza la entrega ni la finalización de la llamada.
 
 ``` syntax
 [
@@ -65,10 +65,10 @@ Especifica el tipo de valor devuelto de la función.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
-Especifica el nombre de la función a la que **\[ \] se** aplicará el atributo maybe.
+Especifica el nombre de la función a la que **se \[ \]** aplicará el atributo maybe.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Lista de parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una llamada con el **\[ atributo \] maybe** no puede contener parámetros de salida y es implícitamente una llamada **\[** [**idempotente.**](idempotent.md) **\]**
 

@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58f44b3a2f11094c37edf24f5fc00bbd8229d65dc2a54292acd2ca3221472e85
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f43e8c10592fcf99ea294327c400c579ce45bf6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119979625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159607"
 ---
-# <a name="enable_allocate-attribute"></a>habilitar \_ atributo de asignación
+# <a name="enable_allocate-attribute"></a>atributo \_ enable allocate
 
 El **\[ atributo enable \_ allocate \]** ACF especifica que el código auxiliar del servidor debe habilitar el entorno de administración de memoria de código auxiliar.
 
@@ -57,11 +57,11 @@ Nombre de la interfaz a la que se aplicará el atributo **\[ \_ enable allcoate.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-En el modo predeterminado, el código auxiliar del servidor habilita el entorno de memoria solo cuando se usa el atributo **\[ \_ enable \]** allocate. El entorno de administración de memoria debe estar habilitado para poder asignar memoria mediante [**RpcSmAllocate**](/windows/desktop/api/rpcndr/nf-rpcndr-rpcsmallocate). En **el modo osf** (cuando se compila mediante el modificador [**/osf),**](-osf.md) el código auxiliar habilita este entorno automáticamente o a petición cuando se usa el atributo **\[ enable \_ allocate. \]**
+En el modo predeterminado, el código auxiliar del servidor habilita el entorno de memoria solo cuando se usa el atributo **\[ \_ enable \]** allocate. El entorno de administración de memoria debe estar habilitado para poder asignar memoria mediante [**RpcSmAllocate.**](/windows/desktop/api/rpcndr/nf-rpcndr-rpcsmallocate) En **el modo osf** (cuando se compila mediante el modificador [**/osf),**](-osf.md) el código auxiliar habilita este entorno automáticamente, o a petición cuando se usa el atributo **\[ \_ \] enable** allocate.
 
-El código auxiliar del lado cliente puede ser confidencial para el **entorno de administración de memoria rpcss.** Si se ejecuta un código auxiliar de cliente confidencial cuando se deshabilita el paquete **Rpcss,** se llama a los asignadores o desasignadores de usuario predeterminados (por ejemplo, el usuario [midl \_ \_](/windows/desktop/Rpc/the-midl-user-allocate-function)asigna el usuario /  [ \_ \_ midl](/windows/desktop/Rpc/the-midl-user-free-function)libre). Cuando se habilita, el **paquete Rpcss** usa el par de asignador y desasignador del paquete. En el modo predeterminado, el cliente solo es confidencial cuando se usa el atributo **\[ \_ enable allocate. \]** Normalmente, el código auxiliar del lado cliente funciona en el entorno deshabilitado. En el modo **osf** (cuando se compila con el modificador [**/osf),**](-osf.md) el cliente siempre es sensible al entorno de administración de memoria **rpcss** y, por lo tanto, el atributo **\[ enable \_ allocate \]** no afectará a los códigos auxiliares del cliente.
+El código auxiliar del lado cliente puede ser sensible al entorno de administración de memoria de **Rpcss.** Si se ejecuta un código auxiliar de cliente confidencial cuando el paquete **Rpcss** está deshabilitado, se llama a los asignadores o desasignadores de usuario predeterminados (por ejemplo, [midl \_ user \_ allocate](/windows/desktop/Rpc/the-midl-user-allocate-function) /  [midl \_ user \_ free](/windows/desktop/Rpc/the-midl-user-free-function)). Cuando se habilita, **el paquete Rpcss** usa el par de asignador y desasignador del paquete. En el modo predeterminado, el cliente solo es confidencial cuando se usa el atributo **\[ \_ enable \]** allocate. Normalmente, el código auxiliar del lado cliente funciona en el entorno deshabilitado. En **el modo osf** (al compilar con el modificador [**/osf),**](-osf.md) el cliente siempre es sensible al entorno de administración de memoria **rpcss** y, por lo tanto, el atributo **\[ enable \_ allocate \]** no afectará a los códigos auxiliares del cliente.
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,7 +70,7 @@ El código auxiliar del lado cliente puede ser confidencial para el **entorno de
 [Archivo de configuración de la aplicación (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[asignación de usuario midl \_ \_](/windows/desktop/Rpc/the-midl-user-allocate-function)
+[midl \_ user \_ allocate](/windows/desktop/Rpc/the-midl-user-allocate-function)
 </dt> <dt>
 
 [midl \_ user \_ free](/windows/desktop/Rpc/the-midl-user-free-function)

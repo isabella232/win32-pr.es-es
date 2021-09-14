@@ -4,12 +4,12 @@ ms.assetid: aff16483-a9ed-4675-8e87-8adf695605ee
 title: Tabla FeatureComponents
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7635a43784ee7e8fbb71c7161bb07d39ffe5238177ea2a7cdaabdeb18dc41e20
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d6c93a7c020f179843916b063b48e2e4d19f7bf2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119430875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158408"
 ---
 # <a name="featurecomponents-table"></a>Tabla FeatureComponents
 
@@ -19,7 +19,7 @@ La tabla FeatureComponents tiene las siguientes columnas.
 
 
 
-| Columna      | Tipo                         | Key | Nullable |
+| Columna      | Tipo                         | Clave | Nullable |
 |-------------|------------------------------|-----|----------|
 | Característica\_   | [Identificador](identifier.md) | Y   | N        |
 | Componente\_ | [Identificador](identifier.md) | Y   | N        |

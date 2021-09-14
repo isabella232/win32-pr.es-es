@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbca1ef3cb5f51e54fe8b95aa16326c6438903ff9717258edea9fac491eebafa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1fa206902ae80e5218e1d5249da8a8fb1b9dfc04
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159459"
 ---
 # <a name="ncadg_ipx-attribute"></a>Atributo ipx de ncadg \_
 
@@ -45,7 +45,7 @@ Especifica un número opcional de 16 bits que representa la dirección del socke
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las restricciones siguientes se aplican a los protocolos de datagrama, **ncadg \_ ipx** y [**ncadg \_ ip \_ udp**](ncadg-ip-udp.md):
 
@@ -58,7 +58,7 @@ Cuando se usa **el transporte de ncadg \_ ipx,** el nombre del servidor es exact
 
 El **transporte de ncadg \_ ipx** es compatible con la versión de NWLink proporcionada con MS Client 3.0.
 
-Las aplicaciones cliente de Windows de 16 bits que usan el transporte **\_ ipx de ncadg** requieren que el archivo Nwipxspx.dll se instale para ejecutarse en el subsistema WOW. Póngase en contacto con Llegar a Para obtener este archivo.
+Las aplicaciones cliente Windows de 16 bits que usan el transporte **\_ ipx de ncadg** requieren que el archivo Nwipxspx.dll se instale para ejecutarse en el subsistema WOW. Póngase en contacto con Llegar a Para obtener este archivo.
 
 Para obtener las direcciones de red y nodo, use la utilidad **comcheck de** Hexadecimal o la API **IPXGetInternetAddress** definida por Asín. En Windows, también puede obtener estas direcciones con el **comando ipxroute config.**
 
@@ -87,7 +87,7 @@ interface iface
 
 <dl> <dt>
 
-[**Extremo**](endpoint.md)
+[**endpoint**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)

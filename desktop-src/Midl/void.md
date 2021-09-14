@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ad758ba334114e13493e7b082f45f37dc6e68efba16dc3a55f14fa57a772d63
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c4b14a5ae4a2325f840d8a840cb0a1bc5283bb4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118382441"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159318"
 ---
 # <a name="void-attribute"></a>atributo void
 
@@ -67,7 +67,7 @@ Especifica el nombre del tipo que toma el atributo **\[** [**de identificador \_
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El tipo de puntero void _, que en C describe un puntero genérico que se puede convertir para representar cualquier tipo de puntero, está limitado en MIDL a su uso con la palabra clave **\* *_* \[ context \_ handle. \]**
 

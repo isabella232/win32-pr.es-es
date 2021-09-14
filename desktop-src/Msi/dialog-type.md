@@ -4,12 +4,12 @@ ms.assetid: 3656684a-de95-45e1-9c78-5c1cc8ca879a
 title: Tipo de diálogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47f945b499cfab5ca8b3bf85180c16d9be88f4093b258513a11b5059874cb403
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 39ed04dece5702d232f252caa7c0ee02e7576246
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158578"
 ---
 # <a name="dialog-type"></a>Tipo de diálogo
 
@@ -23,11 +23,11 @@ El tipo Dialog se puede usar con los siguientes tipos de ContextData.
 
 **DialogNext ContextData**
 
-Un módulo de combinación configurable puede usar este tipo para permitir que el usuario proporcione una clave externa en la tabla de diálogos. Para especificar un elemento configurable de este tipo, los autores de módulos deben escribir el nombre del elemento configurable en la columna Nombre, escribir "1" en la columna Formato, escribir "Diálogo" en la columna Tipo y escribir "DialogNext" en la columna ContextData de la tabla [ModuleConfiguration](moduleconfiguration-table.md).
+Un módulo de combinación configurable puede usar este tipo para permitir que el usuario proporcione una clave externa en la tabla de diálogos. Para especificar un elemento configurable de este tipo, los autores del módulo deben escribir el nombre del elemento configurable en la columna Nombre, escribir "1" en la columna Formato, escribir "Dialog" en la columna Tipo y escribir "DialogNext" en la columna ContextData de la [tabla ModuleConfiguration](moduleconfiguration-table.md).
 
 **DialogPrev ContextData**
 
-Un módulo de combinación configurable puede usar este tipo para permitir que el usuario proporcione una clave externa en la tabla de diálogos. Para especificar un elemento configurable de este tipo, los autores de módulos deben escribir el nombre del elemento configurable en la columna Nombre, escribir "1" en la columna Formato, escribir "Diálogo" en la columna Tipo y escribir "DialogPrev" en la columna ContextData de la tabla ModuleConfiguration.
+Un módulo de combinación configurable puede usar este tipo para permitir que el usuario proporcione una clave externa en la tabla de diálogos. Para especificar un elemento configurable de este tipo, los autores del módulo deben escribir el nombre del elemento configurable en la columna Nombre, escribir "1" en la columna Formato, escribir "Dialog" en la columna Tipo y escribir "DialogPrev" en la columna ContextData de la tabla ModuleConfiguration.
 
  
 

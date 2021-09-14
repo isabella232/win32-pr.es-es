@@ -4,12 +4,12 @@ ms.assetid: a4f4dac5-76fd-4e9e-a71e-665684840d74
 title: Obtener un identificador de volumen para las operaciones del diario de cambios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3a7e8090e419df2034d1e1e1726dd74cf2b2915f6976a042a47c73544fa6b38
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8036fc642de52aa2d7f9bab66dd2e380dcc070c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119683485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069893"
 ---
 # <a name="obtaining-a-volume-handle-for-change-journal-operations"></a>Obtener un identificador de volumen para las operaciones del diario de cambios
 

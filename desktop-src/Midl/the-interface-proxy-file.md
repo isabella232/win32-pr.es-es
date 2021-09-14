@@ -6,12 +6,12 @@ keywords:
 - MIDL y COM MIDL, interfaces, archivos proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dedb9de50d00524b1e038f027448be5aaab369aa5d92243d2a3425bf603cd65a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7be52b3561af03df0375212d729f64f41e3cdd7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013543"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159355"
 ---
 # <a name="the-interface-proxy-file"></a>El archivo de proxy de interfaz
 

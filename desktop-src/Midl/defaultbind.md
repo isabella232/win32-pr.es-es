@@ -3,7 +3,7 @@ title: defaultbind (atributo)
 description: El atributo \ defaultbind\ indica la propiedad enlazable única que mejor representa el objeto.
 ms.assetid: 8cf0922a-3d7c-404d-b4fd-edbd772987bf
 keywords:
-- atributo defaultbind MIDL
+- midL del atributo defaultbind
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a981d0469219a32b5931507f5df6d742e84fa67e6676e44c24edfb823f521a3d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 518c11da8d5f9b0762843c5b69292562a94b80c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117807301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159631"
 ---
 # <a name="defaultbind-attribute"></a>defaultbind (atributo)
 
@@ -65,7 +65,7 @@ Especifica el tipo de valor devuelto de la función.
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre de la función a la que se aplicará el atributo **\[ defaultbind. \]**
@@ -79,11 +79,11 @@ Lista de parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las propiedades que tienen **\[ el atributo \] defaultbind** también deben tener el atributo **\[** [**enlazable.**](bindable.md) **\]** Solo una propiedad de una interfaz o dispinterface puede tener el **\[ atributo defaultbind. \]**
 
-Los contenedores que tienen un modelo de usuario que implican el enlace a un objeto en lugar de enlazar a una propiedad de un objeto usan este atributo. Un objeto puede admitir el enlace de datos, pero no tiene este atributo.
+Los contenedores que tienen un modelo de usuario que implican el enlace a un objeto en lugar de enlazar a una propiedad de un objeto utilizan este atributo. Un objeto puede admitir el enlace de datos, pero no tiene este atributo.
 
 ### <a name="flags"></a>Marcas
 

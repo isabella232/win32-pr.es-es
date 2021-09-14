@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ebf9b7d3aa3590417897383f47595fe25baa0d77f0121d64af5242ba0c214d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc683472d67775c4a2900695246d5f9ca920ca32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159337"
 ---
 # <a name="union-attribute"></a>atributo union
 
@@ -51,21 +51,21 @@ typedef [switch_type(switch-type) [[ , type-attr-list ]] ] union [[ tag ]]
 *type-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican al tipo de unión. Los atributos de tipo **\[** [**válidos incluyen el**](handle.md)identificador , transmitir como ; el atributo de puntero **\]** **\[** [**\_**](transmit-as.md) **\]** **\[** [**único**](unique.md) **\]** , o **\[** [**ptr**](ptr.md); **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](ignore.md) **\]** y el identificador de contexto de los atributos de uso y omitir . Las uniones encapsuladas también pueden tener el atributo de tipo de puntero **\[** [**ref.**](ref.md) **\]** Separe varios atributos con comas.
+Especifica cero o más atributos que se aplican al tipo de unión. Los atributos de tipo válidos incluyen el identificador , transmitir como ; el atributo de puntero **\[** [](handle.md) **\]** **\[** [**\_**](transmit-as.md) **\]** **\[** [**único**](unique.md) **\]** , **\[** [**o ptr**](ptr.md); **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](ignore.md) **\]** y el identificador de contexto de los atributos de uso y omitir . Las uniones encapsuladas también pueden tener el atributo de tipo de puntero **\[** [**ref.**](ref.md) **\]** Separe varios atributos con comas.
 
 </dd> <dt>
 
 *struct-name* 
 </dt> <dd>
 
-Especifica una etiqueta opcional que asigna un nombre a la estructura generada por el compilador MIDL.
+Especifica una etiqueta opcional que asigna un nombre a la estructura generada por el compilador midl.
 
 </dd> <dt>
 
 *switch-type* 
 </dt> <dd>
 
-Especifica un [**tipo int,**](int.md) [**char,**](char-idl.md) [**enum**](enum.md) o un identificador que se resuelve en uno de estos tipos.
+Especifica un [**tipo int**](int.md), [**char,**](char-idl.md) [**enum**](enum.md) o un identificador que se resuelve en uno de estos tipos.
 
 </dd> <dt>
 
@@ -100,21 +100,21 @@ Especifica una o varias expresiones de lenguaje C. El compilador MIDL admite exp
 *field-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos de campo que se aplican al miembro de unión. Los atributos de campo válidos incluyen primero , el último es , length es , max es , size es ; la cadena de atributos de uso , ignore y el identificador de contexto ; el atributo de puntero unique o ptr; y, para los miembros que no son uniones **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](unique.md) **\]** **\[** [](ptr.md) **\]** nocapsuladas, **\[** [**\_**](switch-type.md) **\]** el tipo de modificador de atributo union . Las uniones no superadas también pueden usar el atributo de campo de puntero **\[** [**ref.**](ref.md) **\]** Separe varios atributos de campo con comas.
+Especifica cero o más atributos de campo que se aplican al miembro de unión. Los atributos de campo válidos incluyen primero es , el último es , la longitud es , max es , size es ; la cadena de atributos de uso , omitir y el identificador de contexto ; el atributo de puntero unique o ptr ; y, para los miembros que no son uniones **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](unique.md) **\]** **\[** [](ptr.md) **\]** sincapsuladas, **\[** [**\_**](switch-type.md) **\]** el tipo de modificador de atributo union . Las uniones no superadas también pueden usar el atributo de campo de puntero **\[** [**ref.**](ref.md) **\]** Separe varios atributos de campo con comas.
 
 </dd> <dt>
 
 *type-specifier* 
 </dt> <dd>
 
-Especifica un tipo [base](midl-base-types.md), [**struct**](struct.md), **union**, [**enum**](enum.md) type o type identifier. Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
+Especifica un tipo [base,](midl-base-types.md) [**struct**](struct.md), **union,** [**tipo de enumeración**](enum.md) o identificador de tipo. Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
 
 </dd> <dt>
 
 *declarator-list* 
 </dt> <dd>
 
-Uno o varios declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en uniones que se transmiten en llamadas a procedimientos remotos. Excepto cuando se usa el modificador del compilador MIDL [**/osf**](-osf.md), estos declaradores se permiten en uniones que no se transmiten). Separe varios declaradores con comas.
+Uno o varios declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en las uniones que se transmiten en llamadas a procedimiento remoto. Excepto cuando se usa el modificador del compilador MIDL [**/osf**](-osf.md), estos declaradores se permiten en uniones que no se transmiten). Separe varios declaradores con comas.
 
 </dd> <dt>
 
@@ -125,17 +125,17 @@ Especifica una etiqueta opcional.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-MIDL admite dos tipos de uniones discriminadas: [uniones encapsuladas](encapsulated-unions.md) y uniones [nocapsuladas](nonencapsulated-unions.md). La unión encapsulada es compatible con implementaciones anteriores de RPC (versión 1 de NCA). La unión no encapsulada elimina algunas de las restricciones de la unión encapsulada y proporciona un discriminador más visible que la unión encapsulada.
+MIDL admite dos tipos de uniones discriminadas: [uniones encapsuladas](encapsulated-unions.md) y uniones [no superadas.](nonencapsulated-unions.md) La unión encapsulada es compatible con implementaciones anteriores de RPC (versión 1 de NCA). La unión no encapsulada elimina algunas de las restricciones de la unión encapsulada y proporciona un discriminador más visible que la unión encapsulada.
 
 La unión encapsulada se identifica mediante la palabra clave [**switch**](switch.md) y la ausencia de otras palabras clave relacionadas con la unión.
 
-La unión nocapsulada, también conocida como unión, se identifica por la presencia de las palabras clave **\[** [**switch \_ is**](switch-is.md) y **\]** switch **\[** [**\_ type,**](switch-type.md) que identifican el discriminador y **\]** su tipo.
+La unión no superulada, también conocida como unión, se identifica por la presencia del modificador es y las palabras clave de tipo switch, que identifican el discriminador y **\[** [**\_**](switch-is.md) **\]** su **\[** [**\_**](switch-type.md) **\]** tipo.
 
-Cuando use en , las uniones out, tenga en cuenta que cambiar el valor del modificador de unión durante la llamada puede hacer que la llamada remota se comporte de forma diferente a una **\[** [](in.md) [](out-idl.md) **\]** llamada local. En la devolución, los códigos auxiliares copian **\[ el parámetro en**, **out \]** en la memoria que ya está presente en el cliente. Cuando el procedimiento remoto modifica el valor del modificador union y, por tanto, cambia el tamaño del objeto de datos, el código auxiliar puede sobrescribir la memoria válida con el **\[ valor out. \]** Cuando el modificador union cambia el objeto de datos de un tipo base a un tipo de puntero, **\[ \]** los códigos auxiliares pueden sobrescribir la memoria válida cuando copian el referenciador de puntero en la ubicación de memoria indicada por en el valor de un tipo base.
+Cuando use en , out unions, tenga en cuenta que cambiar el valor del modificador de unión durante la llamada puede hacer que la llamada remota se comporte de forma diferente a una **\[** [](in.md) [](out-idl.md) **\]** llamada local. En la devolución, los códigos auxiliares copian **\[ el parámetro en**, **out \]** en la memoria que ya está presente en el cliente. Cuando el procedimiento remoto modifica el valor del modificador de unión y, por consiguiente, cambia el tamaño del objeto de datos, los códigos auxiliares pueden sobrescribir la memoria válida con el **\[ valor out. \]** Cuando el modificador union cambia el objeto de datos de un tipo base a un tipo de puntero, **\[ \]** los códigos auxiliares pueden sobrescribir la memoria válida cuando copian el referenciador de puntero en la ubicación de memoria indicada por en el valor de un tipo base.
 
-La forma de las uniones debe ser idéntica en todas las plataformas para garantizar la interconectividad.
+La forma de las uniones debe ser idéntica entre plataformas para garantizar la interconectividad.
 
 ## <a name="see-also"></a>Vea también
 

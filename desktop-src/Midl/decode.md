@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30c70c821906bcfa4dedb8dbe87aab882866a4f21b7d561b16d3613f9041e0f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dca24b3a601b9fcafd8d78a0194b6b986813f38c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118384737"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159632"
 ---
 # <a name="decode-attribute"></a>atributo decode
 
@@ -91,7 +91,7 @@ Especifica un tipo definido en el archivo IDL.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **\[ atributo \] de descodificación** hace que el compilador MIDL genere código que una aplicación puede usar para recuperar datos serializados de un búfer. El **\[** [**atributo de codificación**](encode.md) **\]** proporciona compatibilidad con la serialización, generando el código para serializar los datos en un búfer.
 

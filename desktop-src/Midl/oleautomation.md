@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c7617faf06d6c6920a2096c2a44806ae2f5204906573205ca94bf9a32e327db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b827aba4cb0871f7130e658299c6d8836557a156
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146378"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159439"
 ---
 # <a name="oleautomation-attribute"></a>oleautomation (atributo)
 
@@ -67,7 +67,7 @@ Especifica el nombre de una interfaz de Automation de la que esta interfaz deriv
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los parámetros y los tipos de valor devuelto especificados para los miembros de una interfaz **\[ oleautomation \]** deben ser compatibles con Automation, como se muestra en la tabla siguiente.
 
@@ -82,7 +82,7 @@ Los parámetros y los tipos de valor devuelto especificados para los miembros de
 | **int**                                         | Entero con signo, cuyo tamaño depende del sistema. En plataformas de 32 bits, MIDL trata [**int**](int.md) como un entero de 32 bits con signo.                                                                               |
 | **long**                                        | Entero con signo de 32 bits.                                                                                                                                                                                        |
 | **short**                                       | Entero de 16 bits con signo.                                                                                                                                                                                        |
-| **Bstr**                                        | Cadena con prefijo de longitud, como se describe en el tema de Automation [BSTR](/previous-versions/windows/desktop/automat/bstr).                                                                                                    |
+| **BSTR**                                        | Cadena con prefijo de longitud, como se describe en el tema de Automation [BSTR](/previous-versions/windows/desktop/automat/bstr).                                                                                                    |
 | **CURRENCY**                                    | Número fijo de punto flotante de 8 bytes.                                                                                                                                                                          |
 | **DATE**                                        | Número fraccional de punto flotante de 64 bits desde el 30 de diciembre de 1899.                                                                                                                                     |
 | **SCODE**                                       | Para sistemas de 16 bits: tipo de error integrado que corresponde a VT \_ ERROR.                                                                                                                                         |

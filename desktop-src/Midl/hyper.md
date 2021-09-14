@@ -3,7 +3,7 @@ title: atributo hyper
 description: La palabra clave hyper indica un entero de 64 bits que se puede declarar como con signo o sin signo.
 ms.assetid: cadcacc7-8eea-4ce2-b69f-98a1d8bafeaa
 keywords:
-- MIDL del atributo hyper
+- MIDL de hyper-attribute
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44f202890d2d81dcd7916f29c0330bf8e7093a7cf189e7b76a8af64dd2f0d0a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57da7c0d54e5b9ffcd47f76b22825d13b0a8cff9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119895265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159558"
 ---
 # <a name="hyper-attribute"></a>atributo hyper
 
@@ -38,12 +38,12 @@ Especifica uno o varios declaradores de C estándar, como identificadores, decla
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **tipo hyper** es uno de los tipos base del lenguaje de definición de interfaz (IDL). El **tipo hyper** puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como especificador function-return-type y como especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
+El **tipo hyper** es uno de los tipos base del lenguaje de definición de interfaz (IDL). El **tipo hyper** puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como un especificador function-return-type y como un especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea Archivo de [definición de interfaz (IDL).](interface-definition-idl-file.md)
 
 > [!Note]  
-> En el caso de las plataformas de 16 bits, el compilador midl reemplaza los enteros de hyper sin signo por **\_ MIDL.** Esto permite definir interfaces con enteros hyper sin signo en plataformas que no admiten directamente enteros de 64 bits. **MIDL \_ se define en** los archivos de encabezado RPC.
+> En el caso de las plataformas de 16 bits, el compilador de MIDL reemplaza los hyper-integer sin signo por **MIDL \_ uhyper**. Esto permite definir interfaces con hiper enteros sin signo en plataformas que no admiten directamente enteros de 64 bits. **MIDL \_ se define en** los archivos de encabezado RPC.
 
  
 

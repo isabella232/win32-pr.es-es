@@ -6,12 +6,12 @@ keywords:
 - MIDL de ACF, atributos, administración de memoria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3d7df6f020d8531f0c1ca8bebdd6bf59270f2ed22c821e2c183c9da6936e306
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d12a0ee6d11a2b10e1c0fad7cd1a42411670b508
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159499"
 ---
 # <a name="memory-management-acf-attributes"></a>Atributos ACF de administración de memoria
 

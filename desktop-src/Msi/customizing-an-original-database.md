@@ -4,12 +4,12 @@ ms.assetid: 1251d377-7143-4a6b-81d0-0915f952be10
 title: Personalización de una base de datos original
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f02f176bb24b1792d9184ebc662a45c9dbfdb8df385b3fb481967c9c8a099a6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3222ebce146e891c7b16c70eb78f0f26b95727c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120075045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158663"
 ---
 # <a name="customizing-an-original-database"></a>Personalización de una base de datos original
 
@@ -27,13 +27,13 @@ Incluya el nuevo archivo de recursos para la lista de teléfonos, Phone.txt, en 
 
  
 
-Use el editor de base de datos para agregar un registro a la [tabla Archivo](file-table.md) MNP2000t.msi para el nuevo archivo.
+Use el editor de bases de datos para agregar un registro a la [tabla File](file-table.md) MNP2000t.msi para el nuevo archivo.
 
 [Tabla de archivos](file-table.md)
 
 
 
-| Archivo      | Componente\_ | FileName  | FileSize | Versión | Lenguaje | Atributos | Secuencia |
+| Archivo      | Componente\_ | FileName  | FileSize | Versión | Idioma | Atributos | Secuencia |
 |-----------|-------------|-----------|----------|---------|----------|------------|----------|
 | Phone.txt | Teléfono       | Phone.txt | 1000     |         |          | 0          | 1        |
 
@@ -43,7 +43,7 @@ Use el editor de base de datos para agregar un registro a la [tabla Archivo](fil
 
 Como se explica en la [sección:](using-transforms-to-add-resources.md)Uso de transformaciones para agregar recursos, la transformación debe agregar uno o varios componentes nuevos a la base de datos de instalación para que contenga la nueva característica de lista de teléfonos. Use el editor de bases de datos para agregar el registro siguiente a la [tabla Component de](component-table.md) MNP2000t.msi.
 
-El Teléfono componente debe identificarse con un GUID de identificador de [componente único.](guid.md) Si va a reproducir el ejemplo, no reutilice el mismo GUID de identificador de componente que en la tabla siguiente. En su lugar, use una utilidad como Guidgen.exe generar un nuevo GUID. Asegúrese de usar una cadena GUID coherente con el tipo de datos GUID Windows [installer.](guid.md)
+El Teléfono componente debe identificarse con un GUID de identificador de [componente único.](guid.md) Si va a reproducir el ejemplo, no reutilice el mismo GUID de identificador de componente que en la tabla siguiente. En su lugar, use una utilidad como Guidgen.exe generar un nuevo GUID. Asegúrese de usar una cadena GUID coherente con el tipo de datos GUID Windows [Installer.](guid.md)
 
 [Tabla de componentes](component-table.md)
 
@@ -65,10 +65,10 @@ Use el editor de bases de datos para modificar los datos de la [tabla Caracterí
 
 | Característica     | Elemento \_ primario de la característica | Título         | Descripción                | Mostrar | Nivel | Directorio\_ | Atributos |
 |-------------|-----------------|---------------|----------------------------|---------|-------|-------------|------------|
-| Artes        |                 | Artes          | Eventos de eventos en Red Park.   | 20      | 3     | NOTEPADDIR  | 0          |
+| Arte        |                 | Arte          | Eventos de eventos en Red Park.   | 20      | 3     | NOTEPADDIR  | 0          |
 | Béisbol    | Deporte           | Béisbol      | Juegos de béisbol             | 17      | 3     | SPORTDIR    | 32         |
-| Concierto     | Artes            | Concierto       | Eventos de un concierto en Red Park | 21      | 3     | NOCIONESDIR     | 2          |
-| Baile       | Artes            | Baile         | Eventos de música en Red Park   | 23      | 3     | NOCIONESDIR     | 2          |
+| Concierto     | Arte            | Concierto       | Eventos de un concierto en Red Park | 21      | 3     | NOCIONESDIR     | 2          |
+| Baile       | Arte            | Baile         | Eventos de música en Red Park   | 23      | 3     | NOCIONESDIR     | 2          |
 | Fútbol    | Deporte           | Fútbol      | Partidos de fútbol             | 19      | 3     | SPORTDIR    | 2          |
 | Puerta        |                 | Puerta          | Admisiones de Red Park      | 6       | 0     | NOTEPADDIR  | 0          |
 | Ayuda        | Bloc de notas         | Ayuda          | Archivo de ayuda.                 | 5       | 3     | NOTEPADDIR  | 1          |

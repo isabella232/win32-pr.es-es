@@ -4,12 +4,12 @@ ms.assetid: 02ecdf93-1133-48af-a6c9-52142256673f
 title: Crear carpetas montadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d3067af38a893085adcc407263711c80a64c3eea1e535f6814db2cd2742f899
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a5d64630716be6e85ac323c80e89dda0500ba6c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119650235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069905"
 ---
 # <a name="creating-mounted-folders"></a>Crear carpetas montadas
 
@@ -23,7 +23,7 @@ Si se produce un error en un volumen, ya no se puede acceder a los volúmenes as
 
 Solo los volúmenes del sistema de archivos NTFS pueden tener carpetas montadas, pero los volúmenes de destino de las carpetas montadas pueden ser volúmenes que no sean NTFS.
 
-Las carpetas montadas se implementan mediante puntos de reanúndo y están sujetas a sus restricciones. Para obtener más información, vea [Puntos de reanción.](reparse-points.md) No es necesario manipular puntos de reanús para usar carpetas montadas; Las funciones como [**SetVolumeMountPoint**](/windows/desktop/api/WinBase/nf-winbase-setvolumemountpointa) controlan todos los detalles del punto de reanútil.
+Las carpetas montadas se implementan mediante puntos de reanúblo y están sujetas a sus restricciones. Para obtener más información, vea [Puntos de reanción.](reparse-points.md) No es necesario manipular puntos de reanús para usar carpetas montadas; Las funciones como [**SetVolumeMountPoint**](/windows/desktop/api/WinBase/nf-winbase-setvolumemountpointa) controlan todos los detalles del punto de reanútil.
 
 Dado que las carpetas montadas son directorios, puede cambiar el nombre, quitarlos, moverlos y manipularlos de otro modo, como haría con otros directorios.
 

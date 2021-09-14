@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f5126c5ee089729089179fa99f881f1e236859e3111ed3937323eb8b122d2fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 134d9772e167fe63e133d569b9985a7735668d3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159591"
 ---
 # <a name="fault_status-attribute"></a>atributo \_ de estado de error
 
@@ -44,7 +44,7 @@ Especifica cero o más atributos de función de ACF, como **\[ el estado de erro
 
 </dd> <dt>
 
-*nombre-de-la-función* 
+*function-name* 
 </dt> <dd>
 
 Especifica el nombre de la función tal como se define en el archivo IDL.
@@ -65,7 +65,7 @@ Especifica el parámetro para la función tal como se define en el archivo IDL. 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **\[ atributo de \_ estado \]** de error se puede usar como atributo de función o como atributo de parámetro, pero solo puede aparecer una vez por función. Se puede aplicar a la propia función o a un parámetro de cada función.
 
