@@ -1,11 +1,11 @@
 ---
-title: Método playlist. isIdentical
-description: El método isIdentical recupera un valor que indica si el objeto de lista de reproducción proporcionado es idéntico al actual.
+title: Método Playlist.isIdentical
+description: El método isIdentical recupera un valor que indica si el objeto Playlist proporcionado es idéntico al actual.
 ms.assetid: 8b18a44a-a394-46bf-91d0-d6ffd503881b
 keywords:
-- método isIdentical de Windows Media Player
-- método isIdentical Windows Media Player, clase playlist
-- Clase PlayList Windows Media Player, método isIdentical
+- Método isIdentical Reproductor de Windows Media
+- Método isIdentical Reproductor de Windows Media , clase Playlist
+- Clase playlist Reproductor de Windows Media método , isIdentical
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: f800beb49da8ce6456d25c4ff1db6bd4bf536ed0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709217"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359500"
 ---
-# <a name="playlistisidentical-method"></a>Método playlist. isIdentical
+# <a name="playlistisidentical-method"></a>Método Playlist.isIdentical
 
-El método **isIdentical** recupera un valor que indica si el objeto de **lista de reproducción** proporcionado es idéntico al actual.
+El **método isIdentical** recupera un valor que indica si el objeto **Playlist** proporcionado es idéntico al actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ bRetVal = Playlist.isIdentical(
 
 <dl> <dt>
 
-*lista de reproducción* \[ de\]
+*lista de reproducción* \[ En\]
 </dt> <dd>
 
-Objeto de **lista de reproducción** que se va a comparar con el actual.
+**Objeto de** lista de reproducción que se compara con el actual.
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Este método devuelve un **valor booleano**.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -68,7 +68,7 @@ Este método devuelve un **valor booleano**.
 
 <dl> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto de lista de reproducción**](playlist-object.md)
 </dt> </dl>
 
  

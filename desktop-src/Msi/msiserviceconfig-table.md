@@ -4,18 +4,18 @@ ms.assetid: 0d9fd005-9326-4a18-8496-35b5d1927f47
 title: Tabla MsiServiceConfig
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3b72e21fdfecd59780b862d3bfe7d68ef829b59b847dbceb0e9c13befae9d4a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 357b6787e56d52a893dd1a118a3e2fcbc13379e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119828595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169733"
 ---
 # <a name="msiserviceconfig-table"></a>Tabla MsiServiceConfig
 
 La tabla MsiServiceConfig configura un servicio instalado o instalado por el paquete actual.
 
-**[Windows instalador 4.5 o anterior:](not-supported-in-windows-installer-4-5.md)** No se admite. Esta tabla está disponible a partir de Windows Installer 5.0.
+**[Windows Installer 4.5 o versiones anteriores:](not-supported-in-windows-installer-4-5.md)** No se admite. Esta tabla está disponible a partir de Windows Installer 5.0.
 
 La tabla MsiServiceConfig tiene las columnas siguientes.
 
@@ -23,12 +23,12 @@ La tabla MsiServiceConfig tiene las columnas siguientes.
 
 | Columna           | Tipo                         | Clave | Nullable |
 |------------------|------------------------------|-----|----------|
-| MsiServiceConfig | [Identificador](identifier.md) | Y   | N        |
-| Nombre             | [Formato](formatted.md)   | N   | N        |
-| Evento            | [Entero](integer.md)       | N   | N        |
-| ConfigType       | [Entero](integer.md)       | N   | N        |
-| Argumento         | [Formato](formatted.md)   | N   | Y        |
-| Componente\_      | [Identificador](identifier.md) | N   | N        |
+| MsiServiceConfig | [Identificador](identifier.md) | Y   | No        |
+| Nombre             | [Formato](formatted.md)   | No   | No        |
+| Evento            | [Entero](integer.md)       | No   | No        |
+| ConfigType       | [Entero](integer.md)       | No   | No        |
+| Argumento         | [Formato](formatted.md)   | No   | Y        |
+| Componente\_      | [Identificador](identifier.md) | No   | No        |
 
 
 
@@ -74,17 +74,17 @@ Esta columna especifica cuándo se debe cambiar la configuración del servicio. 
 <span id="ConfigType"></span><span id="configtype"></span><span id="CONFIGTYPE"></span>ConfigType
 </dt> <dd>
 
-El valor de este campo, combinado con el valor del campo Argumentos, especifica el cambio que se debe realizar en la configuración del servicio. El cambio especificado tiene efecto la próxima vez que se inicia el sistema.
+El valor de este campo, combinado con el valor del campo Argumentos, especifica el cambio que se debe realizar en la configuración del servicio. El cambio especificado entra en vigor la próxima vez que se inicia el sistema.
 
 
 
 | Config                                                      | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **SERVICE \_ CONFIG \_ DELAYED \_ AUTO \_ START** 3<br/>       | Configure el retraso de tiempo de un [servicio de inicio automático.](../services/automatically-starting-services.md) <br/> Escriba 1 en el campo Argumento para iniciar el servicio después de otros servicios de inicio automático más un retraso de tiempo. <br/> Escriba 0 en el campo Argumento para desactivar el retraso del servicio de inicio automático.<br/> Solo se aplica a los servicios de inicio automático instalados por este paquete con **SERVICE \_ AUTO \_ START** en el campo StartType de la [tabla ServiceInstall](serviceinstall-table.md).<br/>                                                                         |
-| **SERVICE \_ CONFIGURACIÓN DE \_ \_ PRIVILEGIOS NECESARIOS \_ INFO** 6<br/> | Cambie la lista de privilegios requeridos por el servicio.<br/> Escriba una lista de privilegios solicitados en el campo Argumento. El [valor Cadena con](formatted.md) formato del campo Argumento enumera las constantes de [**privilegios**](../secauthz/privilege-constants.md) para los privilegios solicitados. Puede usar la \[ ~ \] sintaxis de la [cadena Formatted](formatted.md) para insertar un carácter nulo. Separe las constantes de privilegios de la lista por \[ ~ \] .<br/>                                                                                                                              |
-| **SERVICE \_ CONFIG \_ SERVICE \_ SID \_ INFO** 5<br/>         | Agregue un tipo de SID de servicio al token de proceso que contiene este servicio.<br/> Escriba en el campo Argumento un tipo de SID de servicio válido para la estructura [**SERVICE \_ SID \_ INFO:**](/windows/win32/api/winsvc/ns-winsvc-service_sid_info) **SERVICE \_ SID TYPE \_ \_ NONE** (0x00), **SERVICE \_ SID TYPE \_ \_ RESTRICTED** (0x03) o **SERVICE \_ SID TYPE \_ \_ UNRESTRICTED** (0x01). <br/>                                                                                                                                                                                                                                              |
-| **SERVICE \_ CONFIG \_ PRESHUTDOWN \_ INFO** 7<br/>          | Configure el período de tiempo que [espera Service Control Manager](../services/service-control-manager.md) (SCM) antes de continuar con otras operaciones de apagado. El SCM espera este período de tiempo después de enviar la **notificación \_ SERVICE CONTROL \_ PRESHUTDOWN** al servicio. <br/> Escriba la longitud del retraso de tiempo, en milisegundos, en el campo Argumento. Deje vacío el campo Argumento para restablecer el retraso de tiempo al valor predeterminado de 3 minutos. <br/>                                                                                                                               |
-| **SERVICE \_ MARCA 4 \_ DE ACCIONES DE ERROR \_ \_ DE** CONFIGURACIÓN<br/>     | Configure cuándo ejecutar las acciones de error para este servicio. Esta configuración se omite si el servicio no tiene ninguna acción de error configurada.<br/> Escriba 0 para ejecutar las acciones solo si el servicio finaliza sin notificar **SERVICE \_ STOPPED.**<br/> Escriba 1 para ejecutar las acciones si el servicio finaliza el informe **SERVICE \_ STOPPED** y el **miembro dwWin32ExitCode** de la estructura [**SERVICE \_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) no es **ERROR \_ SUCCESS**. Las acciones de error configuradas también se ejecutan si el servicio finaliza sin notificar **SERVICE \_ STOPPED.**<br/> |
+| **SERVICE \_ CONFIGURACIÓN DE \_ \_ PRIVILEGIOS NECESARIOS \_ INFO** 6<br/> | Cambie la lista de privilegios requeridos por el servicio.<br/> Escriba una lista de privilegios solicitados en el campo Argumento. El [valor Cadena con](formatted.md) formato del campo Argumento enumera las constantes de [**privilegios**](../secauthz/privilege-constants.md) para los privilegios solicitados. Puede usar la \[ ~ \] sintaxis de la cadena [con formato](formatted.md) para insertar un carácter nulo. Separe las constantes de privilegios de la lista por \[ ~ \] .<br/>                                                                                                                              |
+| **SERVICE \_ CONFIG \_ SERVICE \_ SID \_ INFO** 5<br/>         | Agregue un tipo de SID de servicio al token de proceso que contiene este servicio.<br/> Escriba en el campo Argumento un tipo de SID de servicio válido para la estructura DE INFORMACIÓN DE SID DE SERVICIO: SERVICE [**\_ \_ SID**](/windows/win32/api/winsvc/ns-winsvc-service_sid_info) **TYPE \_ \_ \_ NONE** (0x00), **SERVICE \_ SID TYPE \_ \_ RESTRICTED** (0x03) o **SERVICE \_ SID TYPE \_ \_ UNRESTRICTED** (0x01). <br/>                                                                                                                                                                                                                                              |
+| **SERVICE \_ CONFIG \_ PRESHUTDOWN \_ INFO** 7<br/>          | Configure el tiempo que el Administrador de [control](../services/service-control-manager.md) de servicios (SCM) espera antes de continuar con otras operaciones de apagado. El SCM espera durante este período de tiempo después de enviar la notificación **\_ DE \_ PRESHUTDOWN DE SERVICE CONTROL** al servicio. <br/> Escriba la longitud del retraso de tiempo, en milisegundos, en el campo Argumento. Deje vacío el campo Argumento para restablecer el retraso de tiempo al valor predeterminado de 3 minutos. <br/>                                                                                                                               |
+| **SERVICE \_ MARCA 4 \_ DE ACCIONES DE ERROR \_ \_ DE** CONFIGURACIÓN<br/>     | Configure cuándo ejecutar las acciones de error para este servicio. Esta configuración se omite si el servicio no tiene ninguna acción de error configurada.<br/> Escriba 0 para ejecutar las acciones solo si el servicio finaliza sin notificar **SERVICE \_ STOPPED**.<br/> Escriba 1 para ejecutar las acciones si el servicio finaliza el informe **SERVICE \_ STOPPED** y el **miembro dwWin32ExitCode** de la estructura [**SERVICE \_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) no es **ERROR \_ SUCCESS**. Las acciones de error configuradas también se ejecutan si el servicio finaliza sin notificar **SERVICE \_ STOPPED**.<br/> |
 
 
 
@@ -95,7 +95,7 @@ El valor de este campo, combinado con el valor del campo Argumentos, especifica 
 <span id="Argument"></span><span id="argument"></span><span id="ARGUMENT"></span>Argumento
 </dt> <dd>
 
-El valor de este campo, combinado con el valor del campo ConfigType, especifica qué cambio se debe realizar en la configuración del servicio. El cambio especificado tiene efecto la próxima vez que se inicia el sistema.
+El valor de este campo, combinado con el valor del campo ConfigType, especifica qué cambio se debe realizar en la configuración del servicio. El cambio especificado entra en vigor la próxima vez que se inicia el sistema.
 
 </dd> <dt>
 

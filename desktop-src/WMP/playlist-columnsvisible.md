@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 629f53db0355b56c4989651f3f0faaca7ca864c1e0fe3d7097679cf4a9afa995
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce5fd2438384363f0ee4c77b12ae268764b1fbb0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359514"
 ---
 # <a name="playlistcolumnsvisible"></a>PLAYLIST.columnsVisible
 
@@ -29,11 +29,11 @@ El **atributo columnsVisible** especifica o recupera un valor que indica si se m
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un booleano de lectura **y escritura.**
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                        |
+| Value | Descripción                        |
 |-------|------------------------------------|
 | true  | Predeterminada. Se muestran los encabezados de columna. |
 | false | No se muestran los encabezados de columna.      |
@@ -56,7 +56,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
 <dl> <dt>
 
-[**ELEMENTO PLAYLIST**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**PLAYLIST.columns**](playlist-columns.md)

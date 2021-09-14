@@ -1,7 +1,7 @@
 ---
 description: Obtiene un objeto que representa el elemento primario del objeto actual.
 ms.assetid: 76c2f72c-5ef6-4f2c-bdfc-62ced6dbc504
-title: Propiedad Shell. Parent (Shldisp. h)
+title: Propiedad Shell.Parent (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,13 +14,13 @@ api_type:
 api_location:
 - Shell32.dll
 ms.openlocfilehash: a121e4f87be1163429156f22dfe7bd55f1345f43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985546"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361031"
 ---
-# <a name="shellparent-property"></a>Shell. Parent (propiedad)
+# <a name="shellparent-property"></a>Propiedad Shell.Parent
 
 Obtiene un objeto que representa el elemento primario del objeto actual.
 
@@ -49,9 +49,9 @@ Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) qu
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de los **elementos primarios** para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de **Parent** JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -72,7 +72,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -126,11 +126,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

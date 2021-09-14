@@ -1,23 +1,23 @@
 ---
 description: Describe las posibles arquitecturas de máquina.
 ms.assetid: 1E5E4F98-925B-424D-9B3D-BC6716FBF990
-title: Constantes del equipo de archivos de imagen (Winnt. h)
+title: Constantes de máquina de archivos de imagen (Winnt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 7c8c43767ce0d86edf2285241772ea060573efc1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542670"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243944"
 ---
-# <a name="image-file-machine-constants"></a>Constantes del equipo de archivos de imagen
+# <a name="image-file-machine-constants"></a>Constantes de la máquina de archivos de imagen
 
-Describe las posibles arquitecturas de máquina. Se usa en [**GetSystemWow64Directory2**](/windows/desktop/api/wow64apiset/nf-wow64apiset-getsystemwow64directory2a), [**IsWow64GuestMachineSupported**](/windows/desktop/api/wow64apiset/nf-wow64apiset-iswow64guestmachinesupported) y [**IsWow64Process2**](/windows/win32/api/wow64apiset/nf-wow64apiset-iswow64process2).
+Describe las posibles arquitecturas de máquina. Se usa [**en GetSystemWow64Directory2**](/windows/desktop/api/wow64apiset/nf-wow64apiset-getsystemwow64directory2a), [**IsWow64GuestMachineSupported**](/windows/desktop/api/wow64apiset/nf-wow64apiset-iswow64guestmachinesupported) e [**IsWow64Process2**](/windows/win32/api/wow64apiset/nf-wow64apiset-iswow64process2).
 
 <dl> <dt>
 
-<span id="IMAGE_FILE_MACHINE_UNKNOWN"></span><span id="image_file_machine_unknown"></span>**máquina de archivo de imagen \_ \_ \_ desconocida**
+<span id="IMAGE_FILE_MACHINE_UNKNOWN"></span><span id="image_file_machine_unknown"></span>**EQUIPO DE \_ ARCHIVO \_ DE IMAGEN \_ DESCONOCIDO**
 </dt> <dd> <dl> <dt>
 
 0
@@ -30,7 +30,7 @@ Unknown
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_TARGET_HOST"></span><span id="image_file_machine_target_host"></span>**\_host de \_ destino del equipo de archivos de imagen \_ \_**
+<span id="IMAGE_FILE_MACHINE_TARGET_HOST"></span><span id="image_file_machine_target_host"></span>**HOST DE \_ DESTINO DE LA MÁQUINA DE ARCHIVOS DE \_ \_ \_ IMAGEN**
 </dt> <dd> <dl> <dt>
 
 0x0001
@@ -38,17 +38,17 @@ Unknown
 
 
 
-Interactúa con el host y no con un invitado WOW64
+Interactúa con el host y no con un invitado WOW64.
 
 > [!Note]  
-> Esta constante está disponible a partir de Windows 10, la versión 1607 y Windows Server 2016.
+> Esta constante está disponible a partir de Windows 10, versión 1607 y Windows Server 2016.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_I386"></span><span id="image_file_machine_i386"></span>**Máquina de archivos de imagen \_ \_ \_ i386**
+<span id="IMAGE_FILE_MACHINE_I386"></span><span id="image_file_machine_i386"></span>**IMAGE \_ FILE \_ MACHINE \_ I386**
 </dt> <dd> <dl> <dt>
 
 0x014c
@@ -61,7 +61,7 @@ Intel 386
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_R3000"></span><span id="image_file_machine_r3000"></span>**Máquina de archivos de imagen \_ \_ \_ R3000**
+<span id="IMAGE_FILE_MACHINE_R3000"></span><span id="image_file_machine_r3000"></span>**IMAGE \_ FILE \_ MACHINE \_ R3000**
 </dt> <dd> <dl> <dt>
 
 0x0162
@@ -69,12 +69,12 @@ Intel 386
 
 
 
-Little-Endian de MIPS, 0x160 Big-Endian
+MIPS little-endian, 0x160 big-endian
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_R4000"></span><span id="image_file_machine_r4000"></span>**Máquina de archivos de imagen \_ \_ \_ R4000**
+<span id="IMAGE_FILE_MACHINE_R4000"></span><span id="image_file_machine_r4000"></span>**IMAGE \_ FILE \_ MACHINE \_ R4000**
 </dt> <dd> <dl> <dt>
 
 0x0166
@@ -82,12 +82,12 @@ Little-Endian de MIPS, 0x160 Big-Endian
 
 
 
-Little-Endian de MIPS
+MIPS little-endian
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_R10000"></span><span id="image_file_machine_r10000"></span>**Máquina de archivos de imagen \_ \_ \_ R10000**
+<span id="IMAGE_FILE_MACHINE_R10000"></span><span id="image_file_machine_r10000"></span>**IMAGE \_ FILE \_ MACHINE \_ R10000**
 </dt> <dd> <dl> <dt>
 
 0x0168
@@ -95,12 +95,12 @@ Little-Endian de MIPS
 
 
 
-Little-Endian de MIPS
+MIPS little-endian
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_WCEMIPSV2"></span><span id="image_file_machine_wcemipsv2"></span>**Máquina de archivos de imagen \_ \_ \_ WCEMIPSV2**
+<span id="IMAGE_FILE_MACHINE_WCEMIPSV2"></span><span id="image_file_machine_wcemipsv2"></span>**MÁQUINA \_ DE ARCHIVOS DE IMAGEN \_ \_ WCEMIPSV2**
 </dt> <dd> <dl> <dt>
 
 0x0169
@@ -108,12 +108,12 @@ Little-Endian de MIPS
 
 
 
-MIPS Little-endian, WCE V2
+MIPS little-endian WCE v2
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_ALPHA"></span><span id="image_file_machine_alpha"></span>**\_alfa del \_ equipo de archivos de imagen \_**
+<span id="IMAGE_FILE_MACHINE_ALPHA"></span><span id="image_file_machine_alpha"></span>**MÁQUINA \_ DE ARCHIVOS DE IMAGEN \_ \_ ALFA**
 </dt> <dd> <dl> <dt>
 
 0x0184
@@ -126,7 +126,7 @@ Alpha \_ AXP
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_SH3"></span><span id="image_file_machine_sh3"></span>**Máquina de archivos de imagen \_ \_ \_ SH3**
+<span id="IMAGE_FILE_MACHINE_SH3"></span><span id="image_file_machine_sh3"></span>**IMAGE \_ FILE \_ MACHINE \_ SH3**
 </dt> <dd> <dl> <dt>
 
 0x01a2
@@ -134,12 +134,12 @@ Alpha \_ AXP
 
 
 
-SH3 Little-endian
+SH3 little-endian
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_SH3DSP"></span><span id="image_file_machine_sh3dsp"></span>**Máquina de archivos de imagen \_ \_ \_ SH3DSP**
+<span id="IMAGE_FILE_MACHINE_SH3DSP"></span><span id="image_file_machine_sh3dsp"></span>**MÁQUINA \_ DE ARCHIVOS DE IMAGEN \_ \_ SH3DSP**
 </dt> <dd> <dl> <dt>
 
 0x01a3
@@ -152,7 +152,7 @@ SH3DSP
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_SH3E"></span><span id="image_file_machine_sh3e"></span>**Máquina de archivos de imagen \_ \_ \_ SH3E**
+<span id="IMAGE_FILE_MACHINE_SH3E"></span><span id="image_file_machine_sh3e"></span>**MÁQUINA \_ DE ARCHIVOS DE IMAGEN \_ \_ SH3E**
 </dt> <dd> <dl> <dt>
 
 0x01a4
@@ -160,12 +160,12 @@ SH3DSP
 
 
 
-SH3E Little-endian
+SH3E little-endian
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_SH4"></span><span id="image_file_machine_sh4"></span>**Máquina de archivos de imagen \_ \_ \_ SH4**
+<span id="IMAGE_FILE_MACHINE_SH4"></span><span id="image_file_machine_sh4"></span>**IMAGE \_ FILE \_ MACHINE \_ SH4**
 </dt> <dd> <dl> <dt>
 
 0x01a6
@@ -173,12 +173,12 @@ SH3E Little-endian
 
 
 
-SH4 Little-endian
+SH4 little-endian
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_SH5"></span><span id="image_file_machine_sh5"></span>**Máquina de archivos de imagen \_ \_ \_ SH5**
+<span id="IMAGE_FILE_MACHINE_SH5"></span><span id="image_file_machine_sh5"></span>**IMAGE \_ FILE \_ MACHINE \_ SH5**
 </dt> <dd> <dl> <dt>
 
 0x01a8
@@ -191,7 +191,7 @@ SH5
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_ARM"></span><span id="image_file_machine_arm"></span>**\_ARM del \_ equipo de archivos de imagen \_**
+<span id="IMAGE_FILE_MACHINE_ARM"></span><span id="image_file_machine_arm"></span>**IMAGE \_ FILE \_ MACHINE \_ ARM**
 </dt> <dd> <dl> <dt>
 
 0x01c0
@@ -199,12 +199,12 @@ SH5
 
 
 
-Little-Endian ARM
+Arm Little-Endian
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_THUMB"></span><span id="image_file_machine_thumb"></span>**\_control de \_ equipo de archivo de imagen \_**
+<span id="IMAGE_FILE_MACHINE_THUMB"></span><span id="image_file_machine_thumb"></span>**POSICIÓN DE \_ LA MÁQUINA DEL ARCHIVO DE \_ \_ IMAGEN**
 </dt> <dd> <dl> <dt>
 
 0x01c2
@@ -212,12 +212,12 @@ Little-Endian ARM
 
 
 
-Thumb Thumb/Thumb-2 Little-Endian
+Arm Thumb/Thumb-2 Little-Endian
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_ARMNT"></span><span id="image_file_machine_armnt"></span>**máquina de archivos de imagen \_ \_ \_ ARMNT**
+<span id="IMAGE_FILE_MACHINE_ARMNT"></span><span id="image_file_machine_armnt"></span>**IMAGE \_ FILE \_ MACHINE \_ ARMNT**
 </dt> <dd> <dl> <dt>
 
 0x01c4
@@ -225,7 +225,7 @@ Thumb Thumb/Thumb-2 Little-Endian
 
 
 
-Control de ARM: 2 Little-Endian
+Arm Thumb-2 Little-Endian
 
 > [!Note]  
 > Esta constante está disponible a partir de Windows 7 y Windows Server 2008 R2.
@@ -235,7 +235,7 @@ Control de ARM: 2 Little-Endian
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_AM33"></span><span id="image_file_machine_am33"></span>**Máquina de archivos de imagen \_ \_ \_ AM33**
+<span id="IMAGE_FILE_MACHINE_AM33"></span><span id="image_file_machine_am33"></span>**IMAGE \_ FILE \_ MACHINE \_ AM33**
 </dt> <dd> <dl> <dt>
 
 0x01d3
@@ -248,7 +248,7 @@ TAM33BD
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_POWERPC"></span><span id="image_file_machine_powerpc"></span>**máquina de archivos de imagen \_ \_ \_ POWERPC**
+<span id="IMAGE_FILE_MACHINE_POWERPC"></span><span id="image_file_machine_powerpc"></span>**IMAGE \_ FILE \_ MACHINE \_ POWERPC**
 </dt> <dd> <dl> <dt>
 
 0x01F0
@@ -256,12 +256,12 @@ TAM33BD
 
 
 
-Little-Endian de IBM PowerPC
+IBM PowerPC Little-Endian
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_POWERPCFP"></span><span id="image_file_machine_powerpcfp"></span>**máquina de archivos de imagen \_ \_ \_ POWERPCFP**
+<span id="IMAGE_FILE_MACHINE_POWERPCFP"></span><span id="image_file_machine_powerpcfp"></span>**IMAGE \_ FILE \_ MACHINE \_ POWERPCFP**
 </dt> <dd> <dl> <dt>
 
 0x01f1
@@ -274,7 +274,7 @@ POWERPCFP
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_IA64"></span><span id="image_file_machine_ia64"></span>**Máquina de archivos de imagen \_ \_ \_ ia64**
+<span id="IMAGE_FILE_MACHINE_IA64"></span><span id="image_file_machine_ia64"></span>**IMAGE \_ FILE \_ MACHINE \_ IA64**
 </dt> <dd> <dl> <dt>
 
 0x0200
@@ -287,7 +287,7 @@ Intel 64
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_MIPS16"></span><span id="image_file_machine_mips16"></span>**Máquina de archivos de imagen \_ \_ \_ MIPS16**
+<span id="IMAGE_FILE_MACHINE_MIPS16"></span><span id="image_file_machine_mips16"></span>**MÁQUINA \_ DE ARCHIVOS DE IMAGEN \_ \_ MIPS16**
 </dt> <dd> <dl> <dt>
 
 0x0266
@@ -300,7 +300,7 @@ MIPS
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_ALPHA64"></span><span id="image_file_machine_alpha64"></span>**Máquina de archivos de imagen \_ \_ \_ ALPHA64**
+<span id="IMAGE_FILE_MACHINE_ALPHA64"></span><span id="image_file_machine_alpha64"></span>**MÁQUINA \_ DE ARCHIVOS DE IMAGEN \_ \_ ALPHA64**
 </dt> <dd> <dl> <dt>
 
 0x0284
@@ -313,7 +313,7 @@ ALPHA64
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_MIPSFPU"></span><span id="image_file_machine_mipsfpu"></span>**máquina de archivos de imagen \_ \_ \_ MIPSFPU**
+<span id="IMAGE_FILE_MACHINE_MIPSFPU"></span><span id="image_file_machine_mipsfpu"></span>**MÁQUINA \_ DE ARCHIVOS DE IMAGEN \_ \_ MIPSFPU**
 </dt> <dd> <dl> <dt>
 
 0x0366
@@ -326,7 +326,7 @@ MIPS
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_MIPSFPU16"></span><span id="image_file_machine_mipsfpu16"></span>**Máquina de archivos de imagen \_ \_ \_ MIPSFPU16**
+<span id="IMAGE_FILE_MACHINE_MIPSFPU16"></span><span id="image_file_machine_mipsfpu16"></span>**MÁQUINA \_ DE ARCHIVOS DE IMAGEN \_ \_ MIPSFPU16**
 </dt> <dd> <dl> <dt>
 
 0x0466
@@ -339,7 +339,7 @@ MIPS
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_AXP64"></span><span id="image_file_machine_axp64"></span>**Máquina de archivos de imagen \_ \_ \_ AXP64**
+<span id="IMAGE_FILE_MACHINE_AXP64"></span><span id="image_file_machine_axp64"></span>**IMAGE \_ FILE \_ MACHINE \_ AXP64**
 </dt> <dd> <dl> <dt>
 
 0x0284
@@ -352,7 +352,7 @@ AXP64
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_TRICORE"></span><span id="image_file_machine_tricore"></span>**máquina de archivos de imagen de \_ \_ \_ trinúcleo**
+<span id="IMAGE_FILE_MACHINE_TRICORE"></span><span id="image_file_machine_tricore"></span>**TRICORE \_ DE LA MÁQUINA DE ARCHIVOS DE \_ \_ IMAGEN**
 </dt> <dd> <dl> <dt>
 
 0x0520
@@ -365,7 +365,7 @@ Infineon
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_CEF"></span><span id="image_file_machine_cef"></span>**máquina de archivos de imagen \_ \_ \_ CEF**
+<span id="IMAGE_FILE_MACHINE_CEF"></span><span id="image_file_machine_cef"></span>**IMAGE \_ FILE \_ MACHINE \_ CEF**
 </dt> <dd> <dl> <dt>
 
 0x0CEF
@@ -378,7 +378,7 @@ CEF
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_EBC"></span><span id="image_file_machine_ebc"></span>**archivo de imagen del \_ \_ sistema \_ EBC**
+<span id="IMAGE_FILE_MACHINE_EBC"></span><span id="image_file_machine_ebc"></span>**EBC \_ DE LA MÁQUINA DE ARCHIVOS DE \_ \_ IMAGEN**
 </dt> <dd> <dl> <dt>
 
 0x0EBC
@@ -386,12 +386,12 @@ CEF
 
 
 
-Código de byte EFI
+Código de bytes EFI
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_AMD64"></span><span id="image_file_machine_amd64"></span>**Máquina de archivos de imagen \_ \_ \_ AMD64**
+<span id="IMAGE_FILE_MACHINE_AMD64"></span><span id="image_file_machine_amd64"></span>**MÁQUINA \_ DE ARCHIVOS DE IMAGEN \_ \_ AMD64**
 </dt> <dd> <dl> <dt>
 
 0x8664
@@ -404,7 +404,7 @@ AMD64 (K8)
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_M32R"></span><span id="image_file_machine_m32r"></span>**Máquina de archivos de imagen \_ \_ \_ M32R**
+<span id="IMAGE_FILE_MACHINE_M32R"></span><span id="image_file_machine_m32r"></span>**IMAGE \_ FILE \_ MACHINE \_ M32R**
 </dt> <dd> <dl> <dt>
 
 0x9041
@@ -412,12 +412,12 @@ AMD64 (K8)
 
 
 
-M32R Little-endian
+M32R little-endian
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_ARM64"></span><span id="image_file_machine_arm64"></span>**Máquina de archivos de imagen \_ \_ \_ ARM64**
+<span id="IMAGE_FILE_MACHINE_ARM64"></span><span id="image_file_machine_arm64"></span>**IMAGE \_ FILE \_ MACHINE \_ ARM64**
 </dt> <dd> <dl> <dt>
 
 0xAA64
@@ -425,7 +425,7 @@ M32R Little-endian
 
 
 
-Little-Endian ARM64
+Arm64 Little-Endian
 
 > [!Note]  
 > Esta constante está disponible a partir de Windows 8.1 y Windows Server 2012 R2.
@@ -435,7 +435,7 @@ Little-Endian ARM64
 
 </dt> </dl> </dd> <dt>
 
-<span id="IMAGE_FILE_MACHINE_CEE"></span><span id="image_file_machine_cee"></span>**máquina del archivo de imagen \_ \_ \_ CEE**
+<span id="IMAGE_FILE_MACHINE_CEE"></span><span id="image_file_machine_cee"></span>**IMAGE \_ FILE \_ MACHINE \_ FUE**
 </dt> <dd> <dl> <dt>
 
 0xC0EE
@@ -454,9 +454,9 @@ CEE
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Winnt. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winnt.h</dt> </dl> |
 
 
 

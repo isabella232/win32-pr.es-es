@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 712551a31868ad3a97738ce9f49c9b0ff3526cf33cbae0ca5dd284f701869666
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc0a3bc0d966ec6836d1523745b296350562aaa7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119519605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173706"
 ---
 # <a name="patchsourcelistaddsource-method"></a>Patch.SourceListAddSource (método)
 
@@ -64,7 +64,7 @@ Si se llama a esta función con un origen ya existente en la lista de origen e *
 
 Si se llama a la función con un origen existente en la lista de origen e *Index* se establece en un valor distinto de cero, el origen se quita de su ubicación actual en la lista y se inserta en la posición especificada por *Index*, antes de cualquier origen que ya exista en esa posición.
 
-Si se llama a la función con un nuevo origen y *Index* se establece en un valor distinto de cero, el origen se inserta en la posición especificada por *Index*, antes de cualquier origen que ya exista en esa posición. El valor de índice de todos los orígenes de la lista después de actualizar el índice especificado por *Index* para garantizar que los valores de índice únicos y el orden preexistido permanezcan sin cambios.
+Si se llama a la función con un nuevo origen y *Index* se establece en un valor distinto de cero, el origen se inserta en la posición especificada por *Index*, antes de cualquier origen que ya exista en esa posición. El valor de índice de todos los orígenes de la lista después de que se actualice el índice especificado por *Index* para garantizar que los valores de índice únicos y el orden preexistido permanezcan sin cambios.
 
 Si *Index* es mayor que el número de orígenes de la lista, el origen se coloca al final de la lista con un valor de índice uno mayor que cualquier origen existente.
 
@@ -78,7 +78,7 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |

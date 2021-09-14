@@ -5,7 +5,7 @@ ms.assetid: 9b5985c5-c01a-4104-940f-1e0e79f18bb7
 keywords:
 - Método GetSecurityDescriptor Programador de tareas
 - Método GetSecurityDescriptor Programador de tareas , objeto RegisteredTask
-- RegisteredTask object Programador de tareas , GetSecurityDescriptor (método)
+- Objeto RegisteredTask Programador de tareas método , GetSecurityDescriptor
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a832413f6d5373a07a7201341d3b412843f3c8eba3414326eeaa8316a9caedd5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85c7c0e6125bc848b361e4cc2d4515c32d797c57
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118859134"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172997"
 ---
 # <a name="registeredtaskgetsecuritydescriptor-method"></a>Método RegisteredTask.GetSecurityDescriptor
 

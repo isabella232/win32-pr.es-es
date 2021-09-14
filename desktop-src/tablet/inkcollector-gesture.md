@@ -5,11 +5,11 @@ title: Evento InkCollector.Gesture (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0bfc2fea09060dbb206cd7681bcecfbedbc7a6b4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359647"
 ---
 # <a name="inkcollectorgesture-event"></a>Evento InkCollector.Gesture
 
@@ -67,24 +67,24 @@ Para obtener más información sobre la estructura VARIANT, vea [Usar la bibliot
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método de evento se define en las interfaces de solo distribución \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ DE \_ DISPID ICEGesture.
+Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ de \_ ICEGesture DISPID.
 
 Cuando la [**propiedad CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectionmode) se establece en [**GestureOnly**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode), el tiempo de espera entre cuando un usuario agrega un gesto y cuando se produce el evento **Gesture** es un valor fijo que no se puede modificar mediante programación. El reconocimiento de gestos es más **rápido en el modo InkAndGesture.**
 
-Para evitar la recopilación de lápiz en [**el modo InkAndGesture:**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)
+Para evitar la colección de entrada de lápiz en [**modo InkAndGesture:**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)
 
 -   Establezca [**CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectionmode) en [**InkAndGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)
 -   Elimine el trazo en el [**evento Stroke.**](inkcollector-stroke.md)
 -   Procese el gesto en el **evento Gesto.**
 
-Para evitar el flujo de entrada de lápiz mientras se geste, establezca [**la propiedad DynamicRendering**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_dynamicrendering) en **FALSE.**
+Para evitar el flujo de entrada de lápiz durante la gesuración, establezca [**la propiedad DynamicRendering**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_dynamicrendering) en **FALSE.**
 
-Además de al insertar la entrada de lápiz, el **evento Gesto** se desencadena cuando está en modo de selección o borrado. Usted es responsable de realizar el seguimiento del modo de edición y debe tener en cuenta el modo antes de interpretar el evento.
+Además de al insertar la entrada de lápiz, el **evento Gesto** se desencadena cuando se está en modo de selección o borrado. Usted es responsable de realizar el seguimiento del modo de edición y debe tener en cuenta el modo antes de interpretar el evento.
 
 > [!Note]  
-> Para reconocer gestos, debe usar un objeto o control que pueda recopilar lápiz.
+> Para reconocer gestos, debe usar un objeto o control que pueda recopilar la entrada de lápiz.
 
  
 
@@ -98,16 +98,16 @@ Para obtener una lista de gestos de aplicación específicos, vea el tipo de enu
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c115ed30da9651167d72bb8c3af604a8444bc0ddcec991df3f76f7a0edee4517
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7dc96022e94df7f518b21b1c9a46895fc9204b08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119451455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361209"
 ---
-# <a name="wm_mouseleave-message"></a>Mensaje \_ DE WM MOUSELEAVE
+# <a name="wm_mouseleave-message"></a>Mensaje \_ WM MOUSELEAVE
 
 Se publica en una ventana cuando el cursor sale del área de cliente de la ventana especificada en una llamada anterior a [**TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
 
@@ -72,7 +72,7 @@ Todo el seguimiento solicitado [**por TrackMouseEvent**](/windows/win32/api/winu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

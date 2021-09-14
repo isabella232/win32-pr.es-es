@@ -8,11 +8,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f2b54c923c59fd2146b5b1c3db898f6606a1a3d0
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122881182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244389"
 ---
 # <a name="the-wire_marshal-attribute"></a>Atributo de \_ serialización de conexión
 
@@ -22,7 +22,7 @@ Use el atributo wire marshal para especificar un tipo de datos que se transmitir
 
 El tipo específico de la aplicación puede ser un tipo simple, compuesto o de puntero. La restricción principal es que la instancia de tipo debe tener un tamaño de memoria fijo y bien definido. Si es necesario cambiar el tamaño de la instancia de tipo, use un campo de puntero en lugar de una matriz compatible. Como alternativa, puede definir un puntero al tipo modificable.
 
-Debe proporcionar las rutinas para cambiar el tamaño, serializar y desmarque los datos, así como liberar la memoria asociada. En la tabla siguiente se describen los cuatro nombres de rutina proporcionados por el usuario. El &lt; tipo es el tipo &gt; userm especificado en la definición del tipo \[ **de \_ serialización** de \] conexión.
+Debe proporcionar las rutinas para cambiar el tamaño, serializar y desmarque los datos, así como liberar la memoria asociada. En la tabla siguiente se describen los cuatro nombres de rutina proporcionados por el usuario. El &lt; tipo es el tipo &gt; userm especificado en la definición del tipo de \[ **\_ serialización** \] de conexión.
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: El método IsPalettsed determina si el formato de presentación actual está en desenlazado.
+description: El método IsPalettsed determina si el formato de presentación actual está sobresalido.
 ms.assetid: 837c67a2-2438-4779-bdf7-31ee135532ff
-title: Método CImageDisplay.IsPal hvacsed (Winutil.h)
+title: Método CImageDisplay.IsPalettsed (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: efe9b317727889ded0451f1275df51233277ad9f80d59f505fd646acf4c57409
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89be1aa4883e22c1b91f7b895cb9f965a5595980
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119539295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170013"
 ---
-# <a name="cimagedisplayispalettised-method"></a>CImageDisplay.IsPal hvacsed (método)
+# <a name="cimagedisplayispalettised-method"></a>CImageDisplay.IsPalettsed (método)
 
-El `IsPalettised` método determina si el formato de presentación actual está en desenlazado.
+El `IsPalettised` método determina si el formato de presentación actual está endeutado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si el formato está en desenlazado o FALSE en **caso** contrario.
+Devuelve **TRUE** si el formato está sobresaltado o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

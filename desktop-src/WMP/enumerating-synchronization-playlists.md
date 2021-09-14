@@ -1,10 +1,10 @@
 ---
-title: Enumerar listas de reproducción de sincronización
-description: Enumerar listas de reproducción de sincronización
+title: Enumeración de listas de reproducción de sincronización
+description: Enumeración de listas de reproducción de sincronización
 ms.assetid: 830c3ea5-2937-48b5-b89f-ef68a6649ca3
 keywords:
 - Reproductor de Windows Media,listas de reproducción de sincronización
-- Reproductor de Windows Media modelo de objetos, listas de reproducción de sincronización
+- Reproductor de Windows Media de objetos, listas de reproducción de sincronización
 - modelo de objetos, listas de reproducción de sincronización
 - Reproductor de Windows Media Móvil, listas de reproducción de sincronización
 - Reproductor de Windows Media ActiveX control, listas de reproducción de sincronización
@@ -18,18 +18,18 @@ keywords:
 - enumeraciones, listas de reproducción de sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55c6da1b91ffb779bc32262584375a7970bb20b2c644d6ee6893eacfea0b0d6b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29679380cec1844e9a790ac4ff047bfa4bf05288
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117935152"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243249"
 ---
-# <a name="enumerating-synchronization-playlists"></a>Enumerar listas de reproducción de sincronización
+# <a name="enumerating-synchronization-playlists"></a>Enumeración de listas de reproducción de sincronización
 
-El código de ejemplo siguiente crea una función que rellena un control ListView con listas de reproducción. Las listas de reproducción de sincronización aparecen primero. Las listas de reproducción de sincronización para el dispositivo seleccionado actualmente se marcan con una marca de verificación y se ordenan en el orden de prioridad de sincronización. Todas las demás listas de reproducción están desactivadas.
+En el código de ejemplo siguiente se crea una función que rellena un control ListView con listas de reproducción. Las listas de reproducción de sincronización aparecen primero. Las listas de reproducción de sincronización para el dispositivo seleccionado actualmente se marcan con una marca de verificación y se ordenan en orden de prioridad de sincronización. Todas las demás listas de reproducción están desactivadas.
 
-El control ListView se configuró para una selección única. El orden de las listas de reproducción en el control ListView determina su prioridad de sincronización. El estado activado de una lista de reproducción individual determina si se trata de una lista de reproducción de sincronización para el dispositivo seleccionado actualmente.
+El control ListView se configuró para una selección única. El orden de las listas de reproducción en el control ListView determina su prioridad de sincronización. El estado comprobado de una lista de reproducción individual determina si se trata de una lista de reproducción de sincronización para el dispositivo seleccionado actualmente.
 
 El parámetro *lPSIndex* especifica el índice de asociación para el dispositivo portátil seleccionado actualmente.
 

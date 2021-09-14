@@ -11,12 +11,12 @@ keywords:
 - Modo RGBA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7bd27ae35f11a3fd1fcf775a37852e3a308a4c598ca8152ccf8f63e72e42eff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b82a2db1bade12a0ff844006a1572cdc3b977dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119553825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362018"
 ---
 # <a name="r-opengl"></a>R (OpenGL)
 
@@ -45,7 +45,7 @@ Conversión de primitivas especificadas en coordenadas de objeto a una imagen en
 
 </dd> <dt>
 
-<span id="opengl_rgba"></span><span id="OPENGL_RGBA"></span>**Rgba**
+<span id="opengl_rgba"></span><span id="OPENGL_RGBA"></span>**RGBA**
 </dt> <dd>
 
 Los componentes de color rojo, verde, azul y alfa del modo RGBA.

@@ -4,12 +4,12 @@ ms.assetid: 2b7a0ab7-bf7e-473d-ab43-8b79478d4453
 title: 'Cómo: Mostrar el progreso del trabajo de impresión'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec61c07844262b258fb052d08d8d20e9285a8f7e9bb83808ea61eddaf32f3a88
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9effc778f6affaba5b53cbd96a7a428ea5554d8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119950615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168122"
 ---
 # <a name="how-to-display-the-print-job-progress"></a>Cómo: Mostrar el progreso del trabajo de impresión
 
@@ -61,7 +61,7 @@ Un procedimiento de cuadro de diálogo de progreso de impresión controla los si
 
 -   **USER \_ PRINT \_ COMPLETE**
 
-    Muestra el mensaje "Imprimir trabajo completado" al usuario y libera los identificadores y eventos que se usaron en este trabajo de impresión.
+    Muestra el mensaje "Imprimir el trabajo completado" al usuario y libera los identificadores y eventos que se usaron en este trabajo de impresión.
 
     Se trata de un mensaje de ventana específico de la aplicación.
 

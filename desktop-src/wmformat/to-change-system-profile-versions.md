@@ -8,20 +8,20 @@ keywords:
 - perfiles del sistema, cambiar versiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c963a142c879242b5e2ae734dedb4073a120a57a9121c3f3f95e5838c15110a6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 824e2b1cf4a43cef0e87daa461c6510a6672472d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119084276"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359902"
 ---
 # <a name="to-change-system-profile-versions"></a>Para cambiar las versiones del perfil del sistema
 
-Cada vez que se crea un objeto de administrador de perfiles, analiza los perfiles del sistema. Puede recorrer en iteración los perfiles del sistema mediante los métodos [**IWMProfileManager::GetSystemProfileCount**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-getsystemprofilecount) e [**IWMProfileManager::LoadSystemProfile,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-loadsystemprofile) pero el administrador de perfiles solo contará y enumerará los perfiles de una sola versión a la vez. Si desea usar este método de búsqueda de perfiles del sistema, debe asegurarse de que el administrador de perfiles se ocupa de la versión que desea. Use los métodos de la [**interfaz IWMProfileManager2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager2) para establecer y recuperar la versión del perfil del sistema utilizada por el administrador de perfiles.
+Cada vez que se crea un objeto de administrador de perfiles, analiza los perfiles del sistema. Puede recorrer en iteración los perfiles del sistema mediante los métodos [**IWMProfileManager::GetSystemProfileCount**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-getsystemprofilecount) e [**IWMProfileManager::LoadSystemProfile,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-loadsystemprofile) pero el administrador de perfiles solo contará y enumerará los perfiles de una sola versión a la vez. Si desea usar este método de búsqueda de perfiles del sistema, debe asegurarse de que el administrador de perfiles se ocupa de la versión que desee. Use los métodos de la [**interfaz IWMProfileManager2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager2) para establecer y recuperar la versión del perfil del sistema que usa el administrador de perfiles.
 
-Las versiones se especifican mediante los miembros del tipo de [**enumeración WMT \_ VERSION.**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_version) Si establece la versión del perfil del sistema en WMT \_ VER \_ 9 0, la llamada se realizará correctamente, pero el recuento de perfiles del sistema \_ será cero. Esto se debe a que ningún perfil del sistema predefinido usa los códecs Windows media audio y vídeo de la serie 9. Para obtener más información sobre cómo actualizar perfiles para usar los códecs más nuevos, vea [Reusing Stream Configurations](reusing-stream-configurations.md).
+Las versiones se especifican mediante los miembros del tipo de [**enumeración WMT \_ VERSION.**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_version) Si establece la versión del perfil del sistema en WMT \_ VER \_ 9 0, la llamada se realizará correctamente, pero el recuento de perfiles del sistema \_ será cero. Esto se debe a que ningún perfil del sistema predefinido usa los códecs Windows media audio y vídeo de la serie 9. Para obtener más información sobre cómo actualizar perfiles para usar los códecs más nuevos, vea [Volver a usar configuraciones de flujo.](reusing-stream-configurations.md)
 
-Si carga un perfil de sistema por su identificador GUID, no importa la versión del perfil del sistema que use el administrador de perfiles. Para obtener más información sobre la carga de perfiles del sistema, vea [Para cargar un perfil de sistema.](to-load-a-system-profile.md)
+Si carga un perfil del sistema por su identificador GUID, no importa la versión del perfil del sistema que use el administrador de perfiles. Para obtener más información sobre cómo cargar perfiles del sistema, vea [Para cargar un perfil de sistema.](to-load-a-system-profile.md)
 
 En el código de ejemplo siguiente se muestra cómo establecer y recuperar la versión del perfil del sistema. En este ejemplo se usa printf para la salida de la consola y se requiere que se incluya stdio.h. Para obtener más información sobre el uso de este código, vea [Usar los ejemplos de código](using-the-code-examples.md).
 

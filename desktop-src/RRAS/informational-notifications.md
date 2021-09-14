@@ -4,12 +4,12 @@ description: Para los estados de conexión conocidos como estados en ejecución,
 ms.assetid: 3f5ea9e0-f75a-4b02-a0dc-86cb5012c242
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f526dcd0cd52eaa15929f970debe3ba78788fdb7525e734ee2e26e348b32552
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d6223c808309fcac3afc563f02c160412c80c88
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117790999"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244778"
 ---
 # <a name="informational-notifications"></a>Notificaciones informativos
 

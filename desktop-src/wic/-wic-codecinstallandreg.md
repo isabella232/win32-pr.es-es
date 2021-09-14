@@ -4,12 +4,12 @@ ms.assetid: 7aec54cb-40ac-495c-99d9-9c397b740b21
 title: Instalación y registro de códecs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdc13a2d937e82eae3517b9b20440f4acbb10b16af3fa0b872eb0ddd6c2a8d6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d83616071bebdbab14bfdc7dd0f879df3d49789d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118965184"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359618"
 ---
 # <a name="codec-installation-and-registration"></a>Instalación y registro de códecs
 
@@ -63,7 +63,7 @@ Si desea que el Windows Galería de fotos reconozca las extensiones de nombre de
 
 2.  Proporcione a Microsoft una lista de extensiones para los formatos de imagen y las direcciones URL de los sitios de descarga.
 
-Debe informar a Microsoft de las extensiones de los códecs nuevos que desarrolle en el futuro y de los cambios en las direcciones URL de los sitios de descarga, para que la nueva información se pueda agregar a la Windows Galería de fotos.
+Debe informar a Microsoft de las extensiones de los códecs nuevos que desarrolle en el futuro y de los cambios en las direcciones URL de los sitios de descarga para que la nueva información se pueda agregar a la Windows Galería de fotos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -75,7 +75,7 @@ Debe informar a Microsoft de las extensiones de los códecs nuevos que desarroll
 [Implementación de IWICMetadataBlockWriter](-wic-imp-iwicmetadatablockwriter.md)
 </dt> <dt>
 
-[Conclusión (Cómo escribir un códec WIC-Enabled)](-wic-howtowriteacodec-conclusion.md)
+[Conclusión (Cómo escribir un códec de WIC-Enabled)](-wic-howtowriteacodec-conclusion.md)
 </dt> <dt>
 
 [Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)

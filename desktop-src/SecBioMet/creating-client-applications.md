@@ -1,42 +1,42 @@
 ---
 title: Crear aplicaciones cliente
-description: Cómo usar la API de Plataforma de biometría de Windows para crear aplicaciones cliente.
+description: Cómo usar la API Windows Biometric Framework para crear aplicaciones cliente.
 ms.assetid: 7bef37ee-7685-4aaa-8dad-3c5a9c335eca
 keywords:
-- API Plataforma de biometría de Windows API de Plataforma de biometría de Windows, aplicaciones cliente
+- Windows API de Marco biométrico Windows API de Marco biométrico, aplicaciones cliente
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 98c2b25df11897a4e5f164c079dc2cd31faa4e77
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685598"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244082"
 ---
 # <a name="create-client-applications"></a>Crear aplicaciones cliente
 
-En los temas siguientes se explica cómo usar la API de Plataforma de biometría de Windows para crear aplicaciones cliente que usen grupos de sensores privados.
+En los temas siguientes se describe cómo usar la API Windows Biometric Framework para crear aplicaciones cliente que usan grupos de sensores privados.
 
 ## <a name="enroll-biometric-information"></a>Inscripción de información biométrica
 
-En los siguientes ejemplos de código se muestra cómo inscribir una plantilla biométrica en el grupo del sistema.
+En los ejemplos de código siguientes se muestra cómo inscribir una plantilla biométrica en el grupo de sistemas.
 
 ### <a name="synchronous-enrollment"></a>Inscripción sincrónica
 
-En el ejemplo de código siguiente:
+El ejemplo de código siguiente:
 
--   Llama a [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
--   Llama a [**WinBioLocateSensor**](/windows/desktop/api/Winbio/nf-winbio-winbiolocatesensor) para buscar una unidad biométrica.
--   Llama a [**WinBioEnrollBegin**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollbegin) para iniciar la secuencia de inscripción.
--   Llama a [**WinBioEnrollCapture**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcapture) para procesar varios deslizamientos de dedo en el sensor.
--   Llama a [**WinBioEnrollCommit**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcommit) para guardar la plantilla en el almacén.
+-   Llama [**a WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
+-   Llama [**a WinBioLocateSensor para**](/windows/desktop/api/Winbio/nf-winbio-winbiolocatesensor) buscar una unidad biométrica.
+-   Llama [**a WinBioEnrollBegin**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollbegin) para iniciar la secuencia de inscripción.
+-   Llama [**a WinBioEnrollCapture para**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcapture) procesar varios deslizamientos de dedo en el sensor.
+-   Llama [**a WinBioEnrollCommit para**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcommit) guardar la plantilla en el almacén.
 
-Para compilar este ejemplo, vincule a la biblioteca estática Winbio. lib e incluya los archivos de encabezado siguientes:
+Para compilar este ejemplo, vincule a la biblioteca estática Winbio.lib e incluya los siguientes archivos de encabezado:
 
--   Windows. h
--   Stdio. h
--   Conio. h
--   Winbio. h
+-   Windows.h
+-   Stdio.h
+-   Conio.h
+-   Winbio.h
 
 
 ```C++
@@ -180,16 +180,16 @@ e_Exit:
 
 ### <a name="asynchronous-enrollment"></a>Inscripción asincrónica
 
-En el ejemplo de código siguiente:
+El ejemplo de código siguiente:
 
--   Llama a [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
--   Llama a [**WinBioLocateSensor**](/windows/desktop/api/Winbio/nf-winbio-winbiolocatesensor) para buscar una unidad biométrica.
--   Llama a [**WinBioEnrollBegin**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollbegin) para iniciar la secuencia de inscripción.
--   Llama a [**WinBioEnrollCaptureWithCallback**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcapturewithcallback) para procesar varios deslizadores de dedo. Esta función es asincrónica y usa una función de devolución de llamada personalizada para continuar el procesamiento en un subproceso independiente. A continuación se incluye una función de devolución de llamada de ejemplo.
--   Llama a [**WinBioWait**](/windows/desktop/api/Winbio/nf-winbio-winbiowait) para esperar a que se complete o se cancele el proceso de inscripción asincrónica.
--   Llama a [**WinBioEnrollCommit**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcommit) para guardar la plantilla.
+-   Llama [**a WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
+-   Llama [**a WinBioLocateSensor para**](/windows/desktop/api/Winbio/nf-winbio-winbiolocatesensor) buscar una unidad biométrica.
+-   Llama [**a WinBioEnrollBegin**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollbegin) para iniciar la secuencia de inscripción.
+-   Llama [**a WinBioEnrollCaptureWithCallback para**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcapturewithcallback) procesar varios deslizamientos de dedo. Esta función es asincrónica y usa una función de devolución de llamada personalizada para continuar el procesamiento en un subproceso independiente. A continuación se incluye una función de devolución de llamada de ejemplo.
+-   Llama [**a WinBioWait para**](/windows/desktop/api/Winbio/nf-winbio-winbiowait) esperar a que el proceso de inscripción asincrónica se complete o se cancele.
+-   Llama [**a WinBioEnrollCommit para**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcommit) guardar la plantilla.
 
-Vínculo a la biblioteca estática Winbio. lib para compilar este ejemplo.
+Vínculo a la biblioteca estática Winbio.lib para compilar este ejemplo.
 
 
 ```C++
@@ -455,23 +455,23 @@ e_Exit:
 
 
 
-## <a name="locate-biometric-units"></a>Buscar unidades biométricas
+## <a name="locate-biometric-units"></a>Búsqueda de unidades biométricas
 
-En los siguientes ejemplos de código se muestra cómo buscar una unidad biométrica instalada.
+En los ejemplos de código siguientes se muestra cómo buscar una unidad biométrica instalada.
 
-### <a name="locate-biometric-units-synchronously"></a>Buscar unidades biométricas de forma sincrónica
+### <a name="locate-biometric-units-synchronously"></a>Búsqueda de unidades biométricas de forma sincrónica
 
-En el ejemplo de código siguiente:
+El ejemplo de código siguiente:
 
--   Llama a [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
--   Llama a [**WinBioLocateSensor**](/windows/desktop/api/Winbio/nf-winbio-winbiolocatesensor) para buscar una unidad biométrica.
+-   Llama [**a WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
+-   Llama [**a WinBioLocateSensor para**](/windows/desktop/api/Winbio/nf-winbio-winbiolocatesensor) buscar una unidad biométrica.
 
-Para compilar este ejemplo, vincule a la biblioteca estática Winbio. lib e incluya los archivos de encabezado siguientes:
+Para compilar este ejemplo, vincule a la biblioteca estática Winbio.lib e incluya los siguientes archivos de encabezado:
 
--   Windows. h
--   Stdio. h
--   Conio. h
--   Winbio. h
+-   Windows.h
+-   Stdio.h
+-   Conio.h
+-   Winbio.h
 
 
 ```C++
@@ -525,20 +525,20 @@ e_Exit:
 
 
 
-### <a name="locate-biometric-units-asynchronously"></a>Buscar unidades biométricas de forma asincrónica
+### <a name="locate-biometric-units-asynchronously"></a>Búsqueda asincrónica de unidades biométricas
 
-En el ejemplo de código siguiente:
+El ejemplo de código siguiente:
 
--   Llama a [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
--   Llama a [**WinBioLocateSensorWithCallback**](/windows/desktop/api/Winbio/nf-winbio-winbiolocatesensorwithcallback) para buscar un sensor biométrico. Se trata de una función asincrónica que configura el subsistema biométrico para ubicar el sensor en otro subproceso. La salida del subsistema biométrico se envía a una función de devolución de llamada personalizada, aquí denominada LocateSensorCallback.
--   Llama a [**WinBioWait**](/windows/desktop/api/Winbio/nf-winbio-winbiowait) para esperar a que el proceso asincrónico se complete o se cancele.
+-   Llama [**a WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
+-   Llama a [**WinBioLocateSensorWithCallback para**](/windows/desktop/api/Winbio/nf-winbio-winbiolocatesensorwithcallback) localizar un sensor biométrico. Se trata de una función asincrónica que configura el subsistema biométrico para localizar el sensor en otro subproceso. La salida del subsistema biométrico se envía a una función de devolución de llamada personalizada, aquí denominada LocateSensorCallback.
+-   Llama [**a WinBioWait**](/windows/desktop/api/Winbio/nf-winbio-winbiowait) para esperar a que el proceso asincrónico se complete o se cancele.
 
-Para compilar este ejemplo, vincule a la biblioteca estática Winbio. lib e incluya los archivos de encabezado siguientes:
+Para compilar este ejemplo, vincule a la biblioteca estática Winbio.lib e incluya los siguientes archivos de encabezado:
 
--   Windows. h
--   Stdio. h
--   Conio. h
--   Winbio. h
+-   Windows.h
+-   Stdio.h
+-   Conio.h
+-   Winbio.h
 
 
 ```C++
@@ -653,21 +653,21 @@ VOID CALLBACK LocateSensorCallback(
 
 
 
-## <a name="verify-user-identity"></a>Comprobar la identidad del usuario
+## <a name="verify-user-identity"></a>Comprobación de la identidad del usuario
 
 ### <a name="synchronous-verification"></a>Comprobación sincrónica
 
-En el ejemplo de código siguiente:
+El ejemplo de código siguiente:
 
--   Llama a [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
--   Llama a [**WinBioVerify**](/windows/desktop/api/Winbio/nf-winbio-winbioverify) para determinar si un ejemplo biométrico coincide con la identidad que inició la sesión del usuario actual.
+-   Llama [**a WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
+-   Llama [**a WinBioVerify**](/windows/desktop/api/Winbio/nf-winbio-winbioverify) para determinar si una muestra biométrica coincide con la identidad iniciada por el usuario actual.
 
-Para compilar este ejemplo, vincule a la biblioteca estática Winbio. lib e incluya los archivos de encabezado siguientes:
+Para compilar este ejemplo, vincule a la biblioteca estática Winbio.lib e incluya los siguientes archivos de encabezado:
 
--   Windows. h
--   Stdio. h
--   Conio. h
--   Winbio. h
+-   Windows.h
+-   Stdio.h
+-   Conio.h
+-   Winbio.h
 
 
 ```C++
@@ -827,18 +827,18 @@ e_Exit:
 
 ### <a name="asynchronous-verification"></a>Comprobación asincrónica
 
-En el ejemplo de código siguiente:
+El ejemplo de código siguiente:
 
--   Llama a [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
--   Llama a [**WinBioVerifyWithCallback**](/windows/desktop/api/Winbio/nf-winbio-winbioverifywithcallback) para determinar si un ejemplo biométrico coincide con la identidad que inició la sesión del usuario actual. Se trata de una función asincrónica que configura el subsistema biométrico para comprobar el usuario en otro subproceso. La salida del subsistema biométrico se envía a una función de devolución de llamada personalizada, aquí denominada VerifyCallback.
--   Llama a [**WinBioWait**](/windows/desktop/api/Winbio/nf-winbio-winbiowait) para esperar a que el proceso asincrónico se complete o se cancele.
+-   Llama [**a WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) para abrir una sesión biométrica y conectarse al grupo del sistema.
+-   Llama [**a WinBioVerifyWithCallback para**](/windows/desktop/api/Winbio/nf-winbio-winbioverifywithcallback) determinar si una muestra biométrica coincide con la identidad iniciada por el usuario actual. Se trata de una función asincrónica que configura el subsistema biométrico para comprobar el usuario en otro subproceso. La salida del subsistema biométrico se envía a una función de devolución de llamada personalizada, aquí denominada VerifyCallback.
+-   Llama [**a WinBioWait**](/windows/desktop/api/Winbio/nf-winbio-winbiowait) para esperar a que el proceso asincrónico se complete o se cancele.
 
-Para compilar este ejemplo, vincule a la biblioteca estática Winbio. lib e incluya los archivos de encabezado siguientes:
+Para compilar este ejemplo, vincule a la biblioteca estática Winbio.lib e incluya los siguientes archivos de encabezado:
 
--   Windows. h
--   Stdio. h
--   Conio. h
--   Winbio. h
+-   Windows.h
+-   Stdio.h
+-   Conio.h
+-   Winbio.h
 
 
 ```C++
@@ -1054,34 +1054,34 @@ e_Exit:
 
 ## <a name="manage-credentials"></a>Administración de credenciales
 
-El proveedor de credenciales y el administrador de credenciales son componentes en el Plataforma de biometría de Windows. El proveedor recupera las credenciales del usuario del almacén seguro y responde a las solicitudes de elevación de inicio de sesión, desbloqueo, cambio de contraseña y elevación de UAC. También responde durante un cambio rápido de usuario para iniciar sesión del nuevo usuario. El administrador asigna las credenciales de inicio de sesión a las identidades biométricas y almacena las credenciales de forma segura. Las asignaciones suelen ser creadas por aplicaciones de inscripción de terceros durante la inscripción biométrica, pero también se pueden crear mediante el proveedor de credenciales biométricas de Windows durante el inicio de sesión si el usuario inscrito intenta autenticar biométricamente pero no está inscrito, o las credenciales no coinciden con las del almacén seguro.
+El proveedor de credenciales y el administrador de credenciales son componentes del Windows Biometric Framework. El proveedor recupera las credenciales de usuario del almacén seguro y responde a las solicitudes de inicio de sesión, desbloqueo, cambio de contraseña y elevación de UAC. También responde durante un cambio de usuario rápido para iniciar sesión con el nuevo usuario. El administrador asigna las credenciales de inicio de sesión a identidades biométricas y almacena las credenciales de forma segura. Las asignaciones las crean normalmente aplicaciones de inscripción de terceros durante la inscripción biométrica, pero también las puede crear el proveedor de credenciales biométricas de Windows durante el inicio de sesión si el usuario inscrito intenta autenticarse biométricamente, pero no está inscrito o las credenciales no coinciden con las del almacén seguro.
 
-### <a name="credential-manager-api-guidelines"></a>Directrices de API del administrador de credenciales
+### <a name="credential-manager-api-guidelines"></a>Administrador de credenciales de API
 
--   Las credenciales no se pueden almacenar, consultar ni eliminar para las cuentas de administrador invitado o integrado o para cualquier cuenta no interactiva, como LocalSystem, LocalService o NetworkService.
--   Todas las funciones devuelven un código de error **HRESULT** que puede ser un código de error común, como **E \_ ACCESSDENIED** , o un error específico del administrador de credenciales como **WINBIO \_ E \_ \_ identificador desconocido**.
--   Si es necesario, \_ se devuelve E ACCESSDENIED antes de que se devuelvan códigos de error más específicos, como sec \_ e \_ Logon \_ denegated o WINBIO \_ E \_ Unknown \_ ID.
--   Los usuarios cuyos privilegios no se hayan elevado pueden establecer, consultar o quitar credenciales solo para su propia cuenta. Los llamadores elevados pueden consultar el estado de las credenciales y quitar las credenciales de otros usuarios.
--   Se producirá un error en todas las funciones y se devolverá WINBIO \_ e \_ CRED \_ Prov \_ Disabled:
-    -   Para todos los usuarios cuando el proveedor de credenciales no está habilitado para todo el sistema.
-    -   Para los usuarios del dominio cuando el proveedor no está habilitado para el uso del dominio.
--   Cuando se agrega o se quita una credencial, se genera un aviso de eventos.
+-   Las credenciales no se pueden almacenar, consultar ni eliminar para las cuentas de administrador invitado o integrado ni para cuentas no interactivas como LocalSystem, LocalService o NetworkService.
+-   Todas las funciones devuelven un código de error **HRESULT** que puede ser un código de error común, como **E \_ ACCESSDENIED** o un error específico del administrador de credenciales, como **WINBIO \_ E UNKNOWN \_ \_ ID**.
+-   Si procede, se devuelve E ACCESSDENIED antes de que se devuelvan códigos de error más específicos, como SEC E LOGON DENIED o \_ \_ \_ \_ WINBIO \_ E UNKNOWN \_ \_ ID.
+-   Los usuarios cuyos privilegios no se han elevado pueden establecer, consultar o quitar credenciales solo para su propia cuenta. Los llamadores con privilegios elevados pueden consultar el estado de las credenciales y quitar las credenciales de otros usuarios.
+-   Todas las funciones producirán un error y devolverán WINBIO \_ E \_ CRED \_ PROV \_ DISABLED:
+    -   Para todos los usuarios cuando el proveedor de credenciales no está habilitado en todo el sistema.
+    -   Para los usuarios de dominio cuando el proveedor no está habilitado para su uso en el dominio.
+-   Se genera un aviso de evento cuando se agrega o quita una credencial.
 
 ### <a name="set-a-credential"></a>Establecer una credencial
 
-En el ejemplo de código siguiente:
+El ejemplo de código siguiente:
 
--   Llama a GetCurrentUserIdentity para recuperar un objeto de [**\_ identidad WINBIO**](winbio-identity.md) para el usuario actual. GetCurrentUserIdentity es una función auxiliar y no forma parte de la Plataforma de biometría de Windows.
--   Llama a la función auxiliar GetCredentials para recuperar una matriz de bytes que contiene información de autenticación. GetCredentials muestra un cuadro de diálogo que solicita las credenciales al usuario.
--   Llama a [**WinBioSetCredential**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential) para guardar las credenciales en el almacén.
+-   Llama a GetCurrentUserIdentity para recuperar un [**objeto WINBIO \_ IDENTITY**](winbio-identity.md) para el usuario actual. GetCurrentUserIdentity es una función auxiliar y no forma parte del marco Windows Biometric Framework.
+-   Llama a la función auxiliar GetCredentials para recuperar una matriz de bytes que contiene información de autenticación. GetCredentials muestra un cuadro de diálogo que solicita al usuario las credenciales.
+-   Llama [**a WinBioSetCredential**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential) para guardar las credenciales en el almacén.
 
-Para compilar este vínculo de función en la biblioteca estática Winbio. lib e incluir los archivos de encabezado siguientes:
+Para compilar este vínculo de función a la biblioteca estática Winbio.lib e incluir los siguientes archivos de encabezado:
 
--   Windows. h
--   Wincred. h
--   Stdio. h
--   Conio. h
--   Winbio. h
+-   Windows.h
+-   Wincred.h
+-   Stdio.h
+-   Conio.h
+-   Winbio.h
 
 
 ```C++
@@ -1370,19 +1370,19 @@ e_Exit:
 
 
 
-### <a name="remove-a-credential"></a>Quitar una credencial
+### <a name="remove-a-credential"></a>Eliminación de una credencial
 
-En el ejemplo de código siguiente:
+El ejemplo de código siguiente:
 
--   Llama a GetCurrentUserIdentity para recuperar un objeto de [**\_ identidad WINBIO**](winbio-identity.md) para el usuario actual. GetCurrentUserIdentity es una función auxiliar y no forma parte de la Plataforma de biometría de Windows.
--   Llama a [**WinBioRemoveCredential**](/windows/desktop/api/Winbio/nf-winbio-winbioremovecredential) para eliminar las credenciales del almacén.
+-   Llama a GetCurrentUserIdentity para recuperar un [**objeto WINBIO \_ IDENTITY**](winbio-identity.md) para el usuario actual. GetCurrentUserIdentity es una función auxiliar y no forma parte del Windows Biometric Framework.
+-   Llama [**a WinBioRemoveCredential para**](/windows/desktop/api/Winbio/nf-winbio-winbioremovecredential) eliminar las credenciales del almacén.
 
-Para compilar este vínculo de función en la biblioteca estática Winbio. lib e incluir los archivos de encabezado siguientes:
+Para compilar este vínculo de función a la biblioteca estática Winbio.lib e incluir los siguientes archivos de encabezado:
 
--   Windows. h
--   Stdio. h
--   Conio. h
--   Winbio. h
+-   Windows.h
+-   Stdio.h
+-   Conio.h
+-   Winbio.h
 
 
 ```C++
@@ -1496,9 +1496,9 @@ e_Exit:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

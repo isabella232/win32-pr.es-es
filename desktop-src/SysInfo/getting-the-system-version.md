@@ -1,17 +1,17 @@
 ---
 description: En el ejemplo siguiente se usan las funciones del asistente de API de versión para determinar la versión del sistema operativo actual, si se trata de una versión de servidor o cliente y, a continuación, muestra esta información en la consola.
 ms.assetid: ae851aef-27d5-4eb7-aeb2-ccdfbf040e5a
-title: Obtener la versión del sistema
+title: Obtención de la versión del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eb9cfd0c1a4cfe1ee0789cb609bf22319bdd019bf3310bf439dabf907bfd138
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae0fa259378b81f9255846694927ee2b68e6f38f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117958530"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243981"
 ---
-# <a name="getting-the-system-version"></a>Obtener la versión del sistema
+# <a name="getting-the-system-version"></a>Obtención de la versión del sistema
 
 En el ejemplo siguiente se usan las funciones del asistente de [API](version-helper-apis.md) de versión para determinar la versión del sistema operativo actual, si se trata de una versión de servidor o cliente y, a continuación, muestra esta información en la consola. Si el modo de compatibilidad está en vigor, en el ejemplo se muestra el sistema operativo seleccionado para la [compatibilidad de aplicaciones.](/previous-versions/bb757005(v=msdn.10))
 

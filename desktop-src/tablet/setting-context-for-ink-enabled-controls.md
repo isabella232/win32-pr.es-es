@@ -1,17 +1,17 @@
 ---
 description: Todo el reconocimiento de los controles habilitados para entrada de lápiz se produce a través de un objeto RecognizerContext. Las API de tecnología de Tablet PC permiten establecer la propiedad Factoid en un objeto RecognizerContext.
 ms.assetid: 453993a7-f055-4d84-870c-256d1ec17731
-title: Establecer el contexto para Ink-Enabled controles
+title: Establecer contexto para Ink-Enabled controles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 306ae4c76ce5187c930c24a10631ec703f684cc8a3e4b0a94f46414bddbd058f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6776978834f030353a84c04f03e5ecf05ba060cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119091331"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362962"
 ---
-# <a name="setting-context-for-ink-enabled-controls"></a>Establecer el contexto para Ink-Enabled controles
+# <a name="setting-context-for-ink-enabled-controls"></a>Establecer contexto para Ink-Enabled controles
 
 Todo el reconocimiento de los controles habilitados para entrada de lápiz se produce a través de [**un objeto RecognizerContext.**](inkrecognizercontext-class.md) Las API de tecnología de Tablet PC permiten establecer la [**propiedad Factoid**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid) en un **objeto RecognizerContext.**
 
@@ -42,7 +42,7 @@ theRecognizerContext.Factoid = "(!IS_ADDRESS_POSTALCODE)";
 
 Puede combinar ámbitos de entrada mediante la sintaxis de expresiones regulares de escritura a mano. Para obtener más información sobre el uso de la sintaxis de expresiones regulares, vea [Ámbitos de entrada personalizados con expresiones regulares.](custom-input-scopes-with-regular-expressions.md)
 
-Puede establecer marcas de reconocimiento en el [**objeto RecognizerContext**](inkrecognizercontext-class.md) para que afecten al comportamiento del reconocedor. Una de estas marcas es **la marca Coerce** en la [**enumeración InkRecognitionModes**](/windows/desktop/api/msinkaut/ne-msinkaut-inkrecognitionmodes) de **RecognizerContext**. La **marca Coerce** obliga al reconocedor a devolver un resultado que coincida con la definición del factoid establecido. Por ejemplo, si tiene un formulario que requiere que el usuario escriba una cantidad numérica, puede ser útil establecer el factoid **IS \_ NUMBER** y también establecer la propiedad [**RecognitionFlags**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_recognitionflags) en **Coerce**. En ese caso, la **marca Coerce** garantiza que el reconocedor devuelve solo números.
+Puede establecer marcas de reconocimiento en el [**objeto RecognizerContext**](inkrecognizercontext-class.md) para que afecten al comportamiento del reconocedor. Una de estas marcas es **la marca Coerce** en la [**enumeración InkRecognitionModes**](/windows/desktop/api/msinkaut/ne-msinkaut-inkrecognitionmodes) de **RecognizerContext**. La **marca Coerce** obliga al reconocedor a devolver un resultado que coincida con la definición del factoid establecido. Por ejemplo, si tiene un formulario que requiere que el usuario escriba una cantidad numérica, puede ser útil establecer el factoid **IS \_ NUMBER** y establecer también la propiedad [**RecognitionFlags**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_recognitionflags) en **Coerce**. En ese caso, la **marca Coerce** garantiza que el reconocedor devuelve solo números.
 
 En el ejemplo de C \# siguiente se establece la propiedad [**RecognitionFlags**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_recognitionflags) en **Coerce**:
 

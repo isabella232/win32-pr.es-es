@@ -7,12 +7,12 @@ keywords:
 - Funciones SNMP, SNMP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42028e4045d4d0dfeb183dc29a3dc85e7220ed3d5bccf39a3cc9871215188153
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9f4cc98ce84fbb66f8beb59a6bf995dc4315159
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143018"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244382"
 ---
 # <a name="snmp-functions"></a>Funciones SNMP
 

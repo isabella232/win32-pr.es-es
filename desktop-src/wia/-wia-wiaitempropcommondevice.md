@@ -16,11 +16,11 @@ api_type:
 api_location:
 - wiadef.h
 ms.openlocfilehash: c5eda1266c8c99f1125e03dfbacc3eb325a69d1d
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122632183"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359626"
 ---
 # <a name="common-device-property-constants"></a>Constantes comunes de propiedad de dispositivo
 
@@ -28,7 +28,7 @@ Además de las propiedades de información del dispositivo, Windows de adquisici
 
 Las constantes de propiedad de dispositivo enumeradas aquí son comunes a la mayoría o a todos los dispositivos de hardware WIA.
 
-El prefijo "WIA DPA" indica una propiedad de dispositivo para todos los dispositivos y es la convención de nomenclatura usada \_ \_ en C/C++. Con fines de scripting, estas constantes usan el prefijo "Device" y forman parte del tipo enumerado [WiaItemPropertyId.](-wia-wiaitempropertyid.md) El nombre de miembro correspondiente de esa enumeración de script aparece entre paréntesis junto al nombre de constante de C/C++ en la lista siguiente.
+El prefijo "WIA DPA" indica una propiedad de dispositivo para todos los dispositivos y es la convención de nomenclatura \_ \_ usada en C/C++. Con fines de scripting, estas constantes usan el prefijo "Device" y forman parte del tipo enumerado [WiaItemPropertyId.](-wia-wiaitempropertyid.md) El nombre de miembro correspondiente de esa enumeración de script aparece entre paréntesis junto al nombre de constante de C/C++ en la lista siguiente.
 
 
 
@@ -46,7 +46,7 @@ El prefijo "WIA DPA" indica una propiedad de dispositivo para todos los disposit
 <tbody>
 <tr class="odd">
 <td ><span id="WIA_DPA_CONNECT_STATUS"></span><span id="wia_dpa_connect_status"></span><dl> <dt><strong>WIA_DPA_CONNECT_STATUS</strong></dt> <dt>DeviceConnectStatus</dt> </dl></td>
-<td >El estado de conexión actual del dispositivo. El minidriver crea y mantiene esta propiedad.<br/> Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/> La propiedad puede tener los siguientes valores posibles.<br/> 
+<td >El estado de conexión actual del dispositivo. El minidriver crea y mantiene esta propiedad.<br/> Tipo: <strong>VT_I4</strong>, Acceso: solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/> La propiedad puede tener los siguientes valores posibles.<br/> 
 <table>
 <thead>
 <tr class="header">
@@ -70,14 +70,14 @@ El prefijo "WIA DPA" indica una propiedad de dispositivo para todos los disposit
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPA_DEVICE_TIME"></span><span id="wia_dpa_device_time"></span><dl> <dt><strong>WIA_DPA_DEVICE_TIME</strong></dt> <dt>DeviceDeviceTime</dt> </dl></td>
-<td ><p>Hora del reloj actual que se almacena en el dispositivo. El minidriver crea y mantiene esta propiedad.</p>
-<p>Tipo: <strong>VT_UI2</strong>  |  <strong>VT_VECTOR</strong>, Acceso: Lectura/escritura o Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p>
-<p>Esta propiedad solo es compatible con dispositivos que tienen un reloj interno. Si se puede establecer el reloj del dispositivo, esta propiedad es De lectura y escritura; de lo contrario, es de solo lectura.</p>
-<p>Los dispositivos WIA informan de la hora <a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">en una estructura SYSTEMTIME.</a></p></td>
+<td ><p>Hora actual del reloj que se almacena en el dispositivo. El minidriver crea y mantiene esta propiedad.</p>
+<p>Tipo: <strong>VT_UI2</strong>  |  <strong>VT_VECTOR</strong>, Acceso: lectura/escritura o solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p>
+<p>Esta propiedad solo es compatible con dispositivos que tienen un reloj interno. Si se puede establecer el reloj del dispositivo, esta propiedad es Read/Write; de lo contrario, es de solo lectura.</p>
+<p>Los dispositivos WIA informan de la hora en <a href="/windows/desktop/api/minwinbase/ns-minwinbase-systemtime">una estructura SYSTEMTIME.</a></p></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_DPA_FIRMWARE_VERSION"></span><span id="wia_dpa_firmware_version"></span><dl> <dt><strong>WIA_DPA_FIRMWARE_VERSION</strong></dt> <dt>DeviceFirmwareVersion</dt> </dl></td>
-<td ><p>La versión de firmware del dispositivo. Este valor debe ser un valor de cadena, como &quot; 1.0.4 &quot; o &quot; 1.0abc &quot; . El minidriver crea y mantiene esta propiedad. Si el minidriver de WIA no proporciona un recurso de versión, el servicio WIA proporciona el valor &quot; 0.0.0.0 &quot; como valor predeterminado. Una aplicación lee esta propiedad para determinar la versión del archivo DLL de minidriver de WIA.</p>
+<td ><p>La versión del firmware del dispositivo. Este valor debe ser un valor de cadena, como &quot; 1.0.4 &quot; o &quot; 1.0abc. &quot; El minidriver crea y mantiene esta propiedad. Si el minidriver wia no proporciona un recurso de versión, el servicio WIA proporciona el valor &quot; 0.0.0.0 &quot; como valor predeterminado. Una aplicación lee esta propiedad para determinar la versión del archivo DLL de minidriver de WIA.</p>
 <p>Tipo: <strong>VT_BSTR</strong>, Acceso: solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 </tbody>
@@ -91,7 +91,7 @@ El prefijo "WIA DPA" indica una propiedad de dispositivo para todos los disposit
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                |
 | Encabezado<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 

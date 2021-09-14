@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 3fa8512169d0e5b3d6892dd1bf615a220143e6d4
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370231"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245967"
 ---
 # <a name="mci_tmsf_track-macro"></a>Macro \_ MCI TMSF \_ TRACK
 
@@ -53,7 +53,7 @@ Devuelve el componente tracks de la información de TMSF especificada.
 
 ## <a name="remarks"></a>Observaciones
 
-La hora en formato TMSF se expresa como un valor **DWORD** con el byte menos significativo que contiene pistas, el siguiente byte menos significativo que contiene minutos, el siguiente byte menos significativo que contiene segundos y el byte más significativo que contiene fotogramas.
+El tiempo en formato TMSF se expresa como un valor **DWORD** con el byte menos significativo que contiene pistas, el siguiente byte menos significativo que contiene minutos, el siguiente byte menos significativo que contiene segundos y el byte más significativo que contiene fotogramas.
 
 La **macro \_ MCI TMSF \_ TRACK** se define de la siguiente manera:
 

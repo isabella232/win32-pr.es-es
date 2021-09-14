@@ -4,12 +4,12 @@ ms.assetid: 9ab9ac2d-bf1d-419c-8f6b-e2ee80a4bf20
 title: 'Paso 1: Crear un componente transaccional'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87f5c87fb5c5f615ee04a3233f1a563d5ae5230e4dd18908c78e94092ff0f5c4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fdc378d85e628504e8724b765362b3397826f5e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118305419"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361646"
 ---
 # <a name="step-1-creating-a-transactional-component"></a>Paso 1: Crear un componente transaccional
 
@@ -26,7 +26,7 @@ En este paso, aprenderá lo siguiente:
 El componente UpdateAuthorAddress, el componente que se va a crear en esta sección, actualiza la dirección de un autor existente en la base de datos de Pubs. La base de datos de Pubs es una base de datos de ejemplo que se incluye Microsoft SQL Server. Contiene información de publicación, como nombres de autor, direcciones y títulos de libros.
 
 > [!Note]  
-> Pub pub es el almacén de datos que se usa a lo largo de esta guía de introducción.
+> Pub pub es el almacén de datos que se usa a lo largo de esta guía.
 
  
 
@@ -36,10 +36,10 @@ Dado que UpdateAuthorAddress actualiza un almacén de datos, es aconsejable incl
 
 Para convertir UpdateAuthorAddress en un componente transaccional, se requieren los pasos siguientes:
 
-1.  El componente debe escribirse. Para una protección adicional, se agrega una subrutina, comprobando que COM+ creó el objeto en una transacción. Además, el control de errores básico se incluye en el componente para simplificar la recuperación de errores. La comprobación de transacciones y el control de errores mejoran la confiabilidad del componente. (Consulte El paso 1: Código de ejemplo para obtener una lista completa del componente UpdateAuthorAddress).
-2.  Después de agregar el componente a una aplicación COM+ e instalar la aplicación, el atributo de transacción debe establecerse en **Requerido,** lo que garantiza que COM+ cree cada objeto UpdateAuthorAddress en una transacción. Para obtener instrucciones sobre cómo establecer el atributo de transacción para un componente, vea [Establecer el atributo de transacción](setting-the-transaction-attribute.md).
+1.  El componente debe escribirse. Para una protección adicional, se agrega una subrutina, comprobando que COM+ ha creado el objeto en una transacción. Además, el control de errores básico se incluye en el componente para simplificar la recuperación de errores. La comprobación de transacciones y el control de errores mejoran la confiabilidad del componente. (Consulte El paso 1: Código de ejemplo para obtener una lista completa del componente UpdateAuthorAddress).
+2.  Después de agregar el componente a una aplicación COM+ e instalar la aplicación, el atributo de transacción debe establecerse en **Requerido,** lo que garantiza que COM+ crea cada objeto UpdateAuthorAddress en una transacción. Para obtener instrucciones sobre cómo establecer el atributo de transacción para un componente, vea [Establecer el atributo de transacción](setting-the-transaction-attribute.md).
     > [!Note]  
-    > El establecimiento del atributo de transacción en un componente define cómo COM+ crea cada objeto con respecto a las transacciones. Los valores de atributo de **transacción son Ignored**, **Not Supported**, **Supported**, **Required** y **Requires New**. El **valor** Requerido no es uno de los valores de atributo predeterminados de un componente.
+    > Establecer el atributo de transacción en un componente define cómo COM+ crea cada objeto con respecto a las transacciones. Los valores de atributo de **transacción son Ignored**, **Not Supported**, **Supported**, **Required** y **Requires New**. El **valor** Requerido no es uno de los valores de atributo predeterminados de un componente.
 
      
 
@@ -165,7 +165,7 @@ End Sub
 
 -   COM+ asigna valores de atributo predeterminados. Puede volver a configurar la mayoría de los atributos de servicio.
 -   Establecer el atributo de transacción de un componente en **Requerido** garantiza que COM+ debe crear cada instancia de ese componente en una transacción, pero no inicia necesariamente una nueva transacción.
--   Al comprobar la presencia de una transacción, se confirma que el valor del atributo de transacción del componente no se restablecía accidentalmente a un valor no transaccional, como **Omitir** o No **admitido.**
+-   Al comprobar la presencia de una transacción, se confirma que el valor del atributo de transacción del componente no se restablecía accidentalmente a un valor no transaccional, como **Ignore** o **Not Supported**.
 -   El control de errores hace que el componente sea más confiable y fácil de solucionar.
 -   COM+ aplica los servicios de [activación JIT y](com--just-in-time-activation.md) protección [de simultaneidad](com--synchronization.md) para los componentes transaccionales.
 -   Cerrar la conexión de base de datos cuando haya terminado con ella permite que otro componente de la misma transacción reutilice la conexión desde el grupo de conexiones. (La agrupación de conexiones no debe confundirse con la [agrupación de objetos).](com--object-pooling.md)

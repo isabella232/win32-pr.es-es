@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 70679a2decc62011df70e68c119365bb8a98f7bdb06af6d7989eac18e7c14fd0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e65a8315e796db032dfa6e9cb8898d19437bad05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118922934"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244226"
 ---
 # <a name="iscardlocate-interface"></a>Interfaz ISCardLocate
 
@@ -29,7 +29,7 @@ La **interfaz ISCardLocate** proporciona servicios para buscar una [*tarjeta int
 
 Esta interfaz puede mostrar la interfaz de usuario [*de tarjeta inteligente*](../secgloss/u-gly.md) si es necesario.
 
-En el escenario siguiente se muestra un uso típico de la **interfaz ISCardLocate.** La **interfaz ISCardLocate** se usa para crear una unidad [*de datos del protocolo de aplicación*](../secgloss/a-gly.md) (APDU).
+En el escenario siguiente se muestra un uso típico de la **interfaz ISCardLocate.** La **interfaz ISCardLocate** se usa para compilar una unidad [*de datos de protocolo de aplicación*](../secgloss/a-gly.md) (APDU).
 
 **Para buscar una tarjeta específica con su nombre**
 
@@ -39,7 +39,7 @@ En el escenario siguiente se muestra un uso típico de la **interfaz ISCardLocat
 4.  Interpretará los resultados.
 5.  Libere la **interfaz ISCardLocate.**
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ISCardLocate** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **ISCardLocate** también tiene estos tipos de miembros:
 
@@ -65,13 +65,13 @@ La **interfaz ISCardLocate** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardLocate se define como \_ 1461AACD-6810-11D0-918F-00AA00C18068<br/>         |

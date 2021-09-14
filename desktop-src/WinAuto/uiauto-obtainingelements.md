@@ -4,9 +4,9 @@ description: En este tema se describen varias maneras de obtener interfaces IUIA
 ms.assetid: 8675851a-4a72-4cbe-ab71-ed6fc891be17
 keywords:
 - clientes, obtener Automatización de la interfaz de usuario elementos
-- clients,Automatización de la interfaz de usuario elementos
+- clients,Automatización de la interfaz de usuario elements
 - clients,root elements
-- clients,ámbito de búsqueda
+- clients,search scope
 - Automatización de la interfaz de usuario, obtener elementos
 - Automatización de la interfaz de usuario,elements
 - Automatización de la interfaz de usuario,root elements
@@ -18,25 +18,25 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: project-verbatim
-ms.openlocfilehash: f2ecf8a30f468e7a7ca4df60465993fa7acdc1e8eef1c8537d8c3d796132cb82
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a1adbcea5cea81f97350ef15c491b289e07d3ee6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119997745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359250"
 ---
 # <a name="obtaining-ui-automation-elements"></a>Obtener elementos de UI Automation
 
 En este tema se describen varias maneras de obtener interfaces [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) para elementos de interfaz de usuario.
 
-**IUIAutomationElement** se usa en la aplicación de ejemplo Automatización de la interfaz de usuario de cliente de [contenido del documento.](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/UIAutomationDocumentClient)
+**IUIAutomationElement** se usa en la aplicación de ejemplo [Automatización de la interfaz de usuario de contenido del documento.](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/UIAutomationDocumentClient)
 
 ## <a name="root-element"></a>Elemento raíz
 
-Aunque los elementos se pueden recuperar directamente mediante métodos, como [**IUIAutomation::GetFocusedElement,**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-getfocusedelement)algunas aplicaciones cliente requieren una vista de la estructura jerárquica de los elementos, conocida como el árbol Automatización de la interfaz de usuario. El elemento raíz de esta jerarquía es el escritorio. Puede obtener este elemento mediante el método [**IUIAutomation::GetRootElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-getrootelement) o el método [**IUIAutomation::GetRootElementBuildCache.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-getrootelementbuildcache) Ambos métodos recuperan un [**puntero de interfaz IUIAutomationElement.**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) Puede buscar elementos descendientes mediante métodos, como [**IUIAutomationElement::FindFirst**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findfirst) y [**FindAll**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findall).
+Aunque los elementos se pueden recuperar directamente mediante métodos, como [**IUIAutomation::GetFocusedElement,**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-getfocusedelement)algunas aplicaciones cliente requieren una vista de la estructura jerárquica de los elementos, conocida como árbol Automatización de la interfaz de usuario. El elemento raíz de esta jerarquía es el escritorio. Puede obtener este elemento mediante el método [**IUIAutomation::GetRootElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-getrootelement) o el método [**IUIAutomation::GetRootElementBuildCache.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-getrootelementbuildcache) Ambos métodos recuperan un [**puntero de interfaz IUIAutomationElement.**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) Puede buscar elementos descendientes mediante métodos, como [**IUIAutomationElement::FindFirst**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findfirst) y [**FindAll.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findall)
 
 > [!Note]  
-> En general, debe intentar obtener solo elementos secundarios directos del elemento raíz. Una búsqueda de descendientes puede recorrer en iteración cientos o miles de elementos. Si intenta obtener un elemento concreto en un nivel inferior, debe iniciar la búsqueda desde la ventana de aplicación o desde un contenedor en un nivel inferior.
+> En general, debe intentar obtener solo los elementos secundarios directos del elemento raíz. Una búsqueda de descendientes puede recorrer en iteración cientos o miles de elementos. Si intenta obtener un elemento concreto en un nivel inferior, debe iniciar la búsqueda desde la ventana de aplicación o desde un contenedor en un nivel inferior.
 
  
 
@@ -44,9 +44,9 @@ Aunque los elementos se pueden recuperar directamente mediante métodos, como [*
 
 Para la mayoría de las técnicas que se usan para recuperar Automatización de la interfaz de usuario elementos, debe especificar una condición. Una condición es un conjunto de criterios que define los elementos que desea recuperar. Una condición se representa mediante la [**interfaz IUIAutomationCondition.**](/windows/win32/api/uiautomationclient/nn-uiautomationclient-iuiautomationcondition)
 
-La condición más sencilla es la condición verdadera, que es un objeto predefinido que especifica que se van a devolver todos los elementos del ámbito de búsqueda. La condición false es la inversa de la condición verdadera y es menos útil, ya que impediría que se encontrara ningún elemento. Puede obtener una interfaz a la condición true mediante [**IUIAutomation::CreateTrueCondition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-createtruecondition).
+La condición más sencilla es la condición true, que es un objeto predefinido que especifica que se van a devolver todos los elementos del ámbito de búsqueda. La condición false es la inversa de la condición verdadera y es menos útil, ya que impediría que se encontrara ningún elemento. Puede obtener una interfaz para la condición verdadera mediante [**IUIAutomation::CreateTrueCondition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-createtruecondition).
 
-Otras tres condiciones predefinidas, disponibles como propiedades en el objeto [**IUIAutomation,**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) se pueden usar solas o en combinación con otras condiciones: [**IUIAutomation::ContentViewCondition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_contentviewcondition), [**ControlViewCondition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_controlviewcondition)y [**RawViewCondition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_rawviewcondition). **RawViewCondition**, usado por sí mismo, es equivalente a la condición true, porque no filtra elementos por las propiedades [**IUIAutomationElement::CurrentIsControlElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentiscontrolelement) o [**CurrentIsContentElement.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentiscontentelement)
+Otras tres condiciones predefinidas, disponibles como propiedades en el objeto [**IUIAutomation,**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) se pueden usar solas o en combinación con otras condiciones: [**IUIAutomation::ContentViewCondition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_contentviewcondition), [**ControlViewCondition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_controlviewcondition)y [**RawViewCondition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_rawviewcondition). **RawViewCondition**, utilizado por sí mismo, es equivalente a la condición verdadera, porque no filtra elementos por las propiedades [**IUIAutomationElement::CurrentIsControlElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentiscontrolelement) o [**CurrentIsContentElement.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentiscontentelement)
 
 Otras condiciones se construyen a partir de objetos de condición, cada una de las cuales especifica un valor de propiedad. Por ejemplo, una condición de propiedad podría especificar que el elemento está habilitado o que admite un determinado patrón de control.
 
@@ -69,7 +69,7 @@ El ámbito de una búsqueda se define mediante una combinación bit a bit de val
 
 Para buscar un elemento conocido identificado por nombre, identificador de automatización o alguna otra propiedad o combinación de propiedades, es más fácil usar el método [**IUIAutomationElement::FindFirst.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findfirst) Si el elemento buscado es una ventana de aplicación, el punto inicial de la búsqueda puede ser el elemento raíz.
 
-Esta forma de buscar Automatización de la interfaz de usuario elementos es más útil en escenarios de prueba automatizados.
+Esta manera de buscar Automatización de la interfaz de usuario elementos es más útil en escenarios de prueba automatizados.
 
 Para obtener un ejemplo de código que muestra cómo buscar un elemento know, vea [Buscar un elemento por nombre.](uiauto-howto-find-ui-elements.md)
 
@@ -81,11 +81,11 @@ Para obtener un ejemplo de código que muestra cómo buscar elementos en un sub�
 
 ## <a name="walking-a-subtree"></a>Recorrer un subárbol
 
-Si no tiene conocimientos previos de las aplicaciones con las que se puede usar el cliente, puede construir un subárbol de todos los elementos de interés mediante [**IUIAutomationTreeWalker**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker). El cliente podría hacer esto, por ejemplo, en respuesta a un evento de cambio de foco. es decir, cuando una aplicación o un control recibe el foco de entrada, el cliente de Automatización de la interfaz de usuario examina los elementos secundarios y quizás todos los descendientes del elemento centrado.
+Si no tiene conocimientos previos de las aplicaciones con las que se puede usar el cliente, puede construir un subárbol de todos los elementos de interés mediante [**IUIAutomationTreeWalker**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker). El cliente podría hacer esto, por ejemplo, en respuesta a un evento de cambio de foco; es decir, cuando una aplicación o un control recibe el foco de entrada, el cliente de Automatización de la interfaz de usuario examina los elementos secundarios y, quizás, todos los descendientes del elemento centrado.
 
-Tenga en cuenta que recorrer el Automatización de la interfaz de usuario de trabajo consume muchos recursos. Recorrer el árbol solo cuando no sea factible usar los métodos [**IUIAutomationElement::FindFirst**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findfirst), [**FindAll**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findall)o [**BuildUpdatedCache.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-buildupdatedcache)
+Tenga en cuenta que recorrer Automatización de la interfaz de usuario árbol consume muchos recursos. Recorrer el árbol solo cuando no sea factible usar los métodos [**IUIAutomationElement::FindFirst**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findfirst), [**FindAll**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findall)o [**BuildUpdatedCache.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-buildupdatedcache)
 
-Para definir su propio árbol, pase una condición personalizada a [**IUIAutomation::CreateTreeWalker,**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-createtreewalker)o bien puede usar uno de los siguientes objetos predefinidos que se definen como propiedades de la [**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation)base.
+Puede definir su propio pase de árbol pasando una condición personalizada a [**IUIAutomation::CreateTreeWalker**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-createtreewalker), o puede usar uno de los siguientes objetos predefinidos que se definen como propiedades de la [**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation)base.
 
 
 
@@ -99,9 +99,9 @@ Para definir su propio árbol, pase una condición personalizada a [**IUIAutomat
 
  
 
-Después de obtener un [**elemento IUIAutomationTreeWalker,**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker)llame a los métodos **IUIAutomationTreeWalker::GetXxx** para navegar por los elementos del subárbol y pasar el elemento desde el que empezar a recorrer.
+Después de obtener un [**IUIAutomationTreeWalker,**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker)llame a los métodos **IUIAutomationTreeWalker::GetXxx** para navegar por los elementos del subárbol, pasando el elemento desde el que empezar a andar.
 
-El [**método IUIAutomationTreeWalker::Normalize**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtreewalker-normalizeelement) se puede usar para navegar a un elemento del subárbol desde otro elemento que no forma parte de la vista. Por ejemplo, supongamos que crea una vista de un subárbol mediante [**IUIAutomation::ContentViewWalker**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_contentviewwalker). La aplicación recibe la notificación de que una barra de desplazamiento ha recibido el foco de entrada. Como una barra de desplazamiento no es un elemento de contenido, no está presente en la vista del subárbol. Sin embargo, puede pasar el [**elemento IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) que representa la barra de desplazamiento a **IUIAutomationTreeWalker::Normalize** y recuperar el antecesor más cercano que se encuentra en la vista de contenido.
+El [**método IUIAutomationTreeWalker::Normalize**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtreewalker-normalizeelement) se puede usar para navegar a un elemento del subárbol desde otro elemento que no forma parte de la vista. Por ejemplo, suponga que crea una vista de un subárbol mediante [**IUIAutomation::ContentViewWalker**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_contentviewwalker). La aplicación recibe la notificación de que una barra de desplazamiento ha recibido el foco de entrada. Como una barra de desplazamiento no es un elemento de contenido, no está presente en la vista del subárbol. Sin embargo, puede pasar el [**elemento IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) que representa la barra de desplazamiento a **IUIAutomationTreeWalker::Normalize** y recuperar el antecesor más cercano que se encuentra en la vista de contenido.
 
 Para obtener ejemplos de código que muestran cómo usar la interfaz [**IUIAutomationTreeWalker,**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker) vea [How to Walk the Automatización de la interfaz de usuario Tree](uiauto-howto-walk-uiautomation-tree.md).
 
@@ -111,15 +111,15 @@ Además de las búsquedas y la navegación, puede recuperar [**un elemento IUIAu
 
 ### <a name="from-an-event"></a>Desde un evento
 
-Cuando la aplicación recibe un evento Automatización de la interfaz de usuario, el objeto de origen pasado al controlador de eventos se representa mediante [**un elemento IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement). Por ejemplo, si se suscribe a eventos con cambio de foco, el origen pasado a [**IUIAutomationFocusChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationfocuschangedeventhandler) es el elemento que recibió el foco. Para obtener más información, [vea Suscribirse a Automatización de la interfaz de usuario eventos](uiauto-eventsforclients.md).
+Cuando la aplicación recibe un Automatización de la interfaz de usuario, el objeto de origen pasado al controlador de eventos se representa mediante [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement). Por ejemplo, si se suscribe a eventos modificados por el foco, el origen pasado a [**IUIAutomationFocusChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationfocuschangedeventhandler) es el elemento que recibió el foco. Para obtener más información, [vea Suscribirse a Automatización de la interfaz de usuario Eventos](uiauto-eventsforclients.md).
 
 ### <a name="from-a-point"></a>Desde un punto
 
-Para recuperar un [**elemento IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) a partir de coordenadas de pantalla, por ejemplo, una posición de cursor, use el [**método IUIAutomation::ElementFromPoint.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfrompoint)
+Para recuperar un [**elemento IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) a partir de coordenadas de pantalla, por ejemplo, una posición de cursor, use el método [**IUIAutomation::ElementFromPoint.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfrompoint)
 
 ### <a name="from-a-window-handle"></a>Desde un identificador de ventana
 
-Para recuperar un [**elemento IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) de **un HWND,** use el [**método IUIAutomation::ElementFromHandle.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfromhandle)
+Para recuperar un [**elemento IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) de **un HWND,** use el método [**IUIAutomation::ElementFromHandle.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfromhandle)
 
 ### <a name="from-the-focused-control"></a>Desde el control con el foco
 

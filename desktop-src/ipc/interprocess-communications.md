@@ -4,12 +4,12 @@ ms.assetid: ad3fb0d9-d0ab-479e-b9a6-22a463b6728c
 title: Comunicaciones entre procesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5632443187ba9e50ed6c7f1adb31e8a02a280735c99dd8ee5455d2f067ef263e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ca9789da756ae5449e77237c1140386a6f5cfd9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118756324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172325"
 ---
 # <a name="interprocess-communications"></a>Comunicaciones entre procesos
 
@@ -20,7 +20,7 @@ Normalmente, las aplicaciones pueden usar IPC clasificado como clientes o servid
 Después de decidir que la aplicación se beneficiaría de IPC, debe decidir cuáles de los métodos IPC disponibles usar. Es probable que una aplicación use varios mecanismos de IPC. Las respuestas a estas preguntas determinan si una aplicación puede beneficiarse mediante uno o varios mecanismos de IPC.
 
 -   ¿La aplicación debe ser capaz de comunicarse con otras aplicaciones que se ejecutan en otros equipos de una red o es suficiente para que la aplicación se comunique solo con las aplicaciones del equipo local?
--   ¿La aplicación debe ser capaz de comunicarse con aplicaciones que se ejecutan en otros equipos que pueden ejecutarse en sistemas operativos diferentes (por ejemplo, Windows de 16 bits o UNIX)?
+-   ¿La aplicación debe ser capaz de comunicarse con aplicaciones que se ejecutan en otros equipos que pueden ejecutarse en sistemas operativos diferentes (como sistemas operativos de 16 Windows o UNIX)?
 -   ¿El usuario de la aplicación debe elegir las demás aplicaciones con las que se comunica la aplicación o puede encontrar implícitamente sus asociados colaboradores?
 -   ¿Debe la aplicación comunicarse con muchas aplicaciones diferentes de forma general, como permitir operaciones de cortar y pegar con cualquier otra aplicación, o debe limitar sus requisitos de comunicaciones a un conjunto restringido de interacciones con otras aplicaciones específicas?
 -   ¿El rendimiento es un aspecto crítico de la aplicación? Todos los mecanismos de IPC incluyen cierta sobrecarga.
@@ -98,13 +98,13 @@ Hay dos tipos de canalizaciones para la comunicación bidireccional: canalizacio
 
 RPC permite a las aplicaciones llamar a funciones de forma remota. Por lo tanto, RPC hace que IPC sea tan fácil como llamar a una función. RPC funciona entre procesos en un solo equipo o en equipos diferentes de una red.
 
-La RPC proporcionada por Windows es compatible con open software foundation (OSF) Distributed Computing Environment (DCE). Esto significa que las aplicaciones que usan RPC pueden comunicarse con aplicaciones que se ejecutan con otros sistemas operativos que admiten DCE. RPC admite automáticamente la conversión de datos para tener en cuenta diferentes arquitecturas de hardware y para el orden de bytes entre entornos diferentes.
+La RPC proporcionada por Windows es compatible con el entorno de computación distribuida (DCE) de Open Software Foundation (OSF). Esto significa que las aplicaciones que usan RPC pueden comunicarse con aplicaciones que se ejecutan con otros sistemas operativos que admiten DCE. RPC admite automáticamente la conversión de datos para tener en cuenta diferentes arquitecturas de hardware y para el orden de bytes entre entornos diferentes.
 
 Los clientes y servidores RPC están estrechamente acoplados, pero siguen manteniendo un alto rendimiento. El sistema hace un uso amplio de RPC para facilitar una relación cliente-servidor entre diferentes partes del sistema operativo.
 
 **Punto clave:** RPC es una interfaz de nivel de función, compatible con la conversión automática de datos y las comunicaciones con otros sistemas operativos. Con RPC, puede crear aplicaciones distribuidas de alto rendimiento y estrechamente acopladas. Para obtener más información, vea [Componentes rpc de Microsoft](/windows/desktop/Rpc/microsoft-rpc-components).
 
-## <a name="using-windows-sockets-for-ipc"></a>Usar sockets Windows para IPC
+## <a name="using-windows-sockets-for-ipc"></a>Uso de Windows sockets para IPC
 
 Windows Sockets es una interfaz independiente del protocolo. Aprovecha las funcionalidades de comunicación de los protocolos subyacentes. En Windows Sockets 2, un identificador de socket se puede usar opcionalmente como identificador de archivo con las funciones de E/S de archivo estándar.
 

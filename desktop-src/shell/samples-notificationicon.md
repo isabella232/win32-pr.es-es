@@ -1,5 +1,5 @@
 ---
-description: Muestra cómo usar las API de Shell \_ NotifyIcon y Shell \_ NotifyIconGetRect para mostrar un icono de notificación.
+description: Muestra cómo usar las API NotifyIcon y \_ \_ NotifyIconGetRect del shell para mostrar un icono de notificación.
 title: Ejemplo de NotificationIcon
 ms.topic: article
 ms.date: 05/31/2018
@@ -10,15 +10,15 @@ api_location: ''
 topic_type:
 - kbArticle
 ms.openlocfilehash: 1569d162aef358130910081bee80354cb64f690d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985578"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359668"
 ---
 # <a name="notificationicon-sample"></a>Ejemplo de NotificationIcon
 
-Muestra cómo usar las API de Shell [**\_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) y [**Shell \_ NotifyIconGetRect**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicongetrect) para mostrar un icono de notificación.
+Muestra cómo usar las API NotifyIcon y [**\_ NotifyIconGetRect**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicongetrect) del shell para mostrar un icono de notificación. [**\_**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona)
 
 En este tema se incluyen las siguientes secciones.
 
@@ -26,14 +26,14 @@ En este tema se incluyen las siguientes secciones.
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 
 ## <a name="description"></a>Descripción
 
-Además del uso de los comandos [**\_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) y [**Shell \_ NotifyIconGetRect**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicongetrect) de Shell para mostrar un icono de notificación, en este ejemplo también se muestra cómo mostrar una ventana flotante enriquecida, un menú contextual y una notificación de globo.
+Además del uso de [**\_ Shell NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) y [**Shell \_ NotifyIconGetRect**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicongetrect) para mostrar un icono de notificación, en este ejemplo también se muestra cómo mostrar una ventana flotante enriquecte, un menú contextual y una notificación en globo.
 
 > [!Note]  
-> [**Shell \_ de NotifyIconGetRect**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicongetrect) solo está disponible en Windows 7 y versiones posteriores.
+> [**Shell \_ NotifyIconGetRect**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicongetrect) solo está disponible en Windows 7 y versiones posteriores.
 
  
 
@@ -52,7 +52,7 @@ Además del uso de los comandos [**\_ NotifyIcon**](/windows/desktop/api/Shellap
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | URL de ruta de acceso                                                                                             |
+| Location      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo de NotificationIcon](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/NotificationIcon) |
 
@@ -60,22 +60,22 @@ Además del uso de los comandos [**\_ NotifyIcon**](/windows/desktop/api/Shellap
 
 Para compilar el ejemplo desde el símbolo del sistema:
 
-1.  Abra la ventana del símbolo del sistema y navegue hasta el directorio del proyecto **NotificationIcon** .
+1.  Abra la ventana del símbolo del sistema y vaya al **directorio del proyecto NotificationIcon.**
 2.  Escriba `msbuild NotificationIcon.sln`.
 
-Para compilar el ejemplo mediante Microsoft Visual Studio (preferido):
+Para compilar el ejemplo mediante Microsoft Visual Studio (opción preferida):
 
-1.  Abra el explorador de Windows y navegue hasta el directorio del proyecto **NotificationIcon** .
-2.  Haga doble clic en el icono del archivo NotificationIcon. sln para abrir el proyecto en Visual Studio.
-3.  En el menú **compilar** , seleccione **compilar solución**.
+1.  Abra Windows Explorador de aplicaciones y vaya al **directorio del proyecto NotificationIcon.**
+2.  Haga doble clic en el icono del archivo NotificationIcon.sln para abrir el proyecto en Visual Studio.
+3.  En el menú **Compilar**, seleccione **Compilar solución**.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-1.  Navegue hasta el directorio que contiene el nuevo ejecutable, mediante el símbolo del sistema o el explorador de Windows.
-2.  En la línea de comandos, escriba `NotificationIcon.exe` . Como alternativa, en el explorador de Windows, haga doble clic en el icono de NotificationIcon.exe.
+1.  Vaya al directorio que contiene el nuevo ejecutable mediante el símbolo del sistema o Windows Explorador.
+2.  En la línea de comandos, escriba `NotificationIcon.exe` . Como alternativa, en Windows Explorer haga doble clic en el icono de NotificationIcon.exe.
 
 > [!Note]  
-> Los iconos de notificación especificados con un GUID están protegidos contra la suplantación de identidad mediante la validación de que solo una única aplicación los registra. Este registro se realiza la primera vez que se llama a NotifyIcon del shell \_ (Nim \_ Add,...) y se almacena el nombre de la ruta de acceso completa de la aplicación que realiza la llamada. Si posteriormente mueve el archivo binario a una ubicación diferente, el sistema no permitirá que el icono se vuelva a agregar. Para obtener más información, consulte [**\_ NotifyIcon de Shell**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) .
+> Los iconos de notificación especificados con un GUID se protegen contra la suplantación de identidad validando que solo una aplicación los registra. Este registro se realiza la primera vez que se llama a Shell NotifyIcon (NIM ADD, ...) y se almacena el nombre completo de la ruta \_ de acceso de la aplicación que realiza la \_ llamada. Si más adelante mueve el archivo binario a otra ubicación, el sistema no permitirá que se vuelva a agregar el icono. Consulte [**Shell \_ NotifyIcon para**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) obtener más información.
 
  
 

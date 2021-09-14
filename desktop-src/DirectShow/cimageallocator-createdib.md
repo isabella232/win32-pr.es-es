@@ -1,5 +1,5 @@
 ---
-description: El método CreateDIB crea un mapa de bits independiente del dispositivo (DIB) de GDI. La DIB se asigna en un bloque mempory compartido, que elimina una operación de copia cuando el filtro propietario corta la imagen.
+description: El método CreateDIB crea un mapa de bits independiente del dispositivo (DIB) de GDI. La DIB se asigna en un bloque mempory compartido, que elimina una operación de copia cuando el filtro propietario bloquea la imagen.
 ms.assetid: 8a9ab1cf-4104-48e9-ba6c-28d0f1a1d226
 title: Método CImageAllocator.CreateDIB (Winutil.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 94a629831ea50219b47500c0637cfeaebfbc95b1ee99a8b9d3872a655ab5485c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 316b7aeadfa442a8df4e80075380464758f3c6bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170037"
 ---
 # <a name="cimageallocatorcreatedib-method"></a>CImageAllocator.CreateDIB (método)
 
-El `CreateDIB` método crea un mapa de bits independiente del dispositivo GDI (DIB). La DIB se asigna en un bloque mempory compartido, que elimina una operación de copia cuando el filtro propietario corta la imagen.
+El `CreateDIB` método crea un mapa de bits independiente del dispositivo GDI (DIB). La DIB se asigna en un bloque mempory compartido, que elimina una operación de copia cuando el filtro propietario bloquea la imagen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ Referencia a una [**estructura DIBDATA.**](dibdata.md) El método rellena esta e
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK si se realiza correctamente o un código de error en caso contrario.
+Devuelve S \_ OK si se realiza correctamente o un código de error de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 

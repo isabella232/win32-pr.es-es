@@ -4,24 +4,24 @@ description: Como interfaz de software para hardware gráfico, OpenGL representa
 ms.assetid: ddd7c8d0-f1d1-4d16-bd0c-99cee3d733c5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90287c76c7c0ccc4355dd35d4edc119191a55e318d8a7275cfa2ee683162dba4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 02bec69473f937d4dfff9c496d291e8070ffadef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119486325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244850"
 ---
 # <a name="opengl"></a>Opengl
 
 ## <a name="purpose"></a>Propósito
 
-Como interfaz de software para hardware gráfico, OpenGL representa objetos multidimensionales en un búfer de fotogramas. La implementación de Microsoft de OpenGL para el sistema operativo Windows es un software gráfico estándar del sector con el que los programadores pueden crear imágenes de color tridimensionales animadas y todavía de alta calidad. La versión de OpenGL descrita en esta sección es 1.1.
+Como interfaz de software para hardware gráfico, OpenGL representa objetos multidimensionales en un búfer de fotogramas. La implementación de Microsoft de OpenGL para el sistema operativo Windows es un software de gráficos estándar del sector con el que los programadores pueden crear imágenes de color tridimensionales animadas y fijas de alta calidad. La versión de OpenGL descrita en esta sección es la 1.1.
 
 Para obtener información sobre OpenGL ES que se ejecuta Windows, vea [ANGLE for Windows Store](https://github.com/microsoft/angle/wiki).
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
-OpenGL se ha creado para la compatibilidad entre hardware y sistemas operativos. Esta arquitectura facilita el puerto de programas OpenGL de un sistema a otro. Aunque cada sistema operativo tiene requisitos únicos, el código OpenGL en muchos programas se puede usar tal y como está.
+OpenGL se ha creado para la compatibilidad entre hardware y sistemas operativos. Esta arquitectura facilita el puerto de programas OpenGL de un sistema a otro. Aunque cada sistema operativo tiene requisitos únicos, el código OpenGL de muchos programas se puede usar tal y como está.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
@@ -39,7 +39,7 @@ Para obtener más información sobre qué sistemas operativos son necesarios par
 |---------------------------------------------------|------------------------------------------------------------------------------------|
 | [Información general](basic-opengl-operation.md)<br/> | Información general sobre cómo funciona OpenGL.<br/>                             |
 | [Referencia](opengl-reference.md)<br/>      | Documentación de funciones, estructuras y otros elementos de programación.<br/> |
-| [Ejemplos](a-porting-sample.md)<br/>        | Ejemplos de código OpenGL.<br/>                                                |
+| [Muestras](a-porting-sample.md)<br/>        | Ejemplos de código OpenGL.<br/>                                                |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: ModemDMConfigProfile \/ ... \/ IPType (v4)
+description: '\/MódemDMConfigProfile... \/ IPType (v4)'
 MS-HAID: WWAN\_profile\_v4.element\_1\_IPType
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -8,17 +8,17 @@ title: IPType (v4)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 09ff4fd6c0290c29aa8737efea5d94da2d2025cb
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987108"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168206"
 ---
-# <a name="span-idwwan_profile_v4element_1_iptypespanmodemdmconfigprofileiptype-v4"></a><span id="WWAN_profile_v4.element_1_IPType"></span>ModemDMConfigProfile \/ ... \/ IPType (v4)
+# <a name="span-idwwan_profile_v4element_1_iptypespanmodemdmconfigprofileiptype-v4"></a><span id="WWAN_profile_v4.element_1_IPType"></span>\/MódemDMConfigProfile... \/ IPType (v4)
 
-Especifica el tipo de IP que se usará en esta conexión de datos.
+Especifica el tipo de IP que se va a usar en esta conexión de datos.
 
-Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los siguientes valores.
+Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los valores siguientes.
 
 | Value   | Significado                                       |
 |---------|-----------------------------------------------|
@@ -26,7 +26,7 @@ Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno
 | IPv4    | Uso de IPv4                                      |
 | IPv6    | Usar IPv6                                      |
 | IPv4v6  | Use IPv4 o IPv6, según esté disponible.           |
-| XLAT    | Uso de 464XLAT para tunelización de IPv4 a través de redes IPv6 |
+| XLAT    | Uso de 464XLAT para tuner IPv4 a través de redes IPv6 |
 
  
 

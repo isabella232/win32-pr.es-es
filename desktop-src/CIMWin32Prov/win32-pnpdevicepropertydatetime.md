@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7fee1f6caf730e5686f363e422596b2ee1c506d746252b534dd7d8dd5704134b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c03bf3723337c382733b1302fd9e86d2f598af7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118958924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174406"
 ---
 # <a name="win32_pnpdevicepropertydatetime-class"></a>Clase Win32 \_ PnPDevicePropertyDateTime
 
@@ -45,7 +45,7 @@ class Win32_PnPDevicePropertyDateTime : Win32_PnPDeviceProperty
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Win32 \_ PnPDevicePropertyDateTime** tiene estos tipos de miembros:
 
@@ -57,7 +57,7 @@ La **clase Win32 \_ PnPDevicePropertyDateTime** tiene estas propiedades.
 
 <dl> <dt>
 
-**Datos**
+**Data**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **datetime**
@@ -81,7 +81,7 @@ Tipo de acceso: solo lectura
 
 Identifica el dispositivo PnP.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Tipo de acceso: solo lectura
 
 Valor del par clave Name-Value que identifica la **propiedad** Data.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 </dd> <dt>
 
@@ -109,9 +109,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del par de Name-Value clave que identifica la **propiedad** Data.
+Nombre del par clave Name-Value que identifica la **propiedad** Data.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Tipo de acceso: solo lectura
 
 Tipo de la **propiedad** Data.
 
-Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 Los valores posibles son.
 
@@ -477,7 +477,7 @@ Los valores posibles son.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Desconocido: check in devpropdef.h** (4120)
+**Desconocido: comprobación de devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>
@@ -502,7 +502,7 @@ Los valores posibles son.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                          |
@@ -512,7 +512,7 @@ Los valores posibles son.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

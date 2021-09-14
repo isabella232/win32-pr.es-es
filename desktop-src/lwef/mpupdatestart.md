@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a61cda213ecfbb23c9ef366fcce7b5c91e806f26f0f4ebe8b45dc596b63d1b5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39867525529339c6b354ae771b070589ca52acfa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118975895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168266"
 ---
 # <a name="mpupdatestart-function"></a>Función MpUpdateStart
 
@@ -48,7 +48,7 @@ HRESULT WINAPI MpUpdateStart(
 
 Tipo: **MPHANDLE**
 
-Controlar la interfaz del administrador de protección contra malware. La función [**MpManagerOpen**](mpmanageropen.md) devuelve este identificador.
+Controle la interfaz del administrador de protección contra malware. La función [**MpManagerOpen**](mpmanageropen.md) devuelve este identificador.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Especifica la opción para la operación de actualización de firma. Puede ser u
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="MPUPDATE_OPTION_NONE"></span><span id="mpupdate_option_none"></span><dl> <dt>**OPCIÓN MPUPDATE \_ \_ NONE**</dt> </dl>                | No se solicita ninguna opción específica.<br/>                                                                                                                                                                                                                                                      |
 | <span id="MPUPDATE_OPTION_ASYNC"></span><span id="mpupdate_option_async"></span><dl> <dt>**OPCIÓN MPUPDATE \_ \_ ASYNC**</dt> </dl>             | La operación de actualización va a ser asincrónica, donde **MpUpdateStart** vuelve inmediatamente después del inicio correcto de la actualización de firma. (De forma predeterminada, la operación de actualización es sincrónica, lo que **significa que MpUpdateStart** solo devolverá una vez finalizada la actualización de la firma).<br/> |
-| <span id="MPUPDATE_OPTION_PROGRESS"></span><span id="mpupdate_option_progress"></span><dl> <dt>**PROGRESO DE LA \_ OPCIÓN MPUPDATE \_**</dt> </dl>    | El autor de la llamada está interesado en recibir información de progreso de actualización de firma a través de una devolución de llamada.<br/>                                                                                                                                                                                           |
+| <span id="MPUPDATE_OPTION_PROGRESS"></span><span id="mpupdate_option_progress"></span><dl> <dt>**PROGRESO DE LA OPCIÓN MPUPDATE \_ \_**</dt> </dl>    | El autor de la llamada está interesado en recibir información de progreso de actualización de firma a través de una devolución de llamada.<br/>                                                                                                                                                                                           |
 | <span id="MPUPDATE_OPTION_HTTP"></span><span id="mpupdate_option_http"></span><dl> <dt>**OPCIÓN MPUPDATE \_ \_ HTTP**</dt> </dl>                | La actualización de la firma se realiza descargando el paquete de firma completo desde el sitio del portal de seguridad de Microsoft. Se puede usar como opción de reserva si el cliente está experimentando un problema de descarga de firma a través de Microsoft Update.<br/>                                           |
 | <span id="MPUPDATE_OPTION_UNC"></span><span id="mpupdate_option_unc"></span><dl> <dt>**OPCIÓN DE MPUPDATE \_ \_ UNC**</dt> </dl>                   | Realiza la actualización de firmas mediante la descarga directa desde recursos compartidos UNC.<br/>                                                                                                                                                                                                                      |
 | <span id="MPUPDATE_OPTION_MANAGED"></span><span id="mpupdate_option_managed"></span><dl> <dt>**OPCIÓN MPUPDATE \_ \_ ADMINISTRADA**</dt> </dl>       | Realiza la actualización de firmas mediante EL WSUS del servicio administrado.<br/>                                                                                                                                                                                                                             |
@@ -82,7 +82,7 @@ Especifica la opción para la operación de actualización de firma. Puede ser u
 
 Tipo: **PMPCALLBACK \_ INFO**
 
-Puntero a la información de devolución de llamada utilizada para alimentar al cliente con cambios de estado de actualización de firma (como inicio y completado) e información de progreso. Los [**DATOS MPCALLBACK \_ pasados**](mpcallback-data.md) de vuelta en la función de devolución de llamada notifican el estado de actualización real y la información relacionada con el progreso. A continuación se muestra una lista de posibles devoluciones de llamada:
+Puntero a la información de devolución de llamada utilizada para alimentar al cliente con cambios de estado de actualización de firma (como inicio y completado) e información de progreso. Los [**datos MPCALLBACK \_ pasados**](mpcallback-data.md) de vuelta en la función de devolución de llamada notifican el estado de actualización real y la información relacionada con el progreso. A continuación se muestra una lista de posibles devoluciones de llamada:
 
 
 
@@ -91,15 +91,15 @@ Puntero a la información de devolución de llamada utilizada para alimentar al 
 | <span id="MPNOTIFY_SIGUPDATE_START"></span><span id="mpnotify_sigupdate_start"></span><dl> <dt>**MPNOTIFY \_ SIGUPDATE \_ START**</dt> </dl>                                      | Operación de actualización iniciada.<br/>                                                                                                                                  |
 | <span id="MPNOTIFY_SIGUPDATE_COMPLETE"></span><span id="mpnotify_sigupdate_complete"></span><dl> <dt>**MPNOTIFY \_ SIGUPDATE \_ COMPLETE**</dt> </dl>                             | Operación de actualización completada.<br/>                                                                                                                                |
 | <span id="MPNOTIFY_SIGUPDATE_SEARCH_START"></span><span id="mpnotify_sigupdate_search_start"></span><dl> <dt>**MPNOTIFY \_ SIGUPDATE \_ SEARCH \_ START**</dt> </dl>                | Busque actualizaciones iniciadas.<br/>                                                                                                                                |
-| <span id="MPNOTIFY_SIGUPDATE_SEARCH_COMPLETE"></span><span id="mpnotify_sigupdate_search_complete"></span><dl> <dt>**MPNOTIFY \_ SIGUPDATE \_ SEARCH \_ COMPLETE**</dt> </dl>       | Busque actualizaciones completadas. Hay información adicional disponible a través de [**la estructura DE DATOS MPSIGUPDATE. \_**](mpsigupdate-data.md)<br/>                             |
+| <span id="MPNOTIFY_SIGUPDATE_SEARCH_COMPLETE"></span><span id="mpnotify_sigupdate_search_complete"></span><dl> <dt>**MPNOTIFY \_ SIGUPDATE \_ SEARCH \_ COMPLETE**</dt> </dl>       | Busque actualizaciones completadas. Hay información adicional disponible a través de [**la estructura DE \_ DATOS MPSIGUPDATE.**](mpsigupdate-data.md)<br/>                             |
 | <span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_START"></span><span id="mpnotify_sigupdate_download_start"></span><dl> <dt>**INICIO DE DESCARGA DE MPNOTIFY \_ SIGUPDATE \_ \_**</dt> </dl>          | Descargar para la actualización iniciada.<br/>                                                                                                                               |
-| <span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_PROGRESS"></span><span id="mpnotify_sigupdate_download_progress"></span><dl> <dt>**PROGRESO DE DESCARGA DE MPNOTIFY \_ SIGUPDATE \_ \_**</dt> </dl> | Descargue la información de progreso. Hay información adicional disponible a través de [**la estructura DE DATOS MPSIGUPDATE. \_**](mpsigupdate-data.md)<br/>                            |
-| <span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_COMPLETE"></span><span id="mpnotify_sigupdate_download_complete"></span><dl> <dt>**DESCARGA COMPLETA DE \_ MPNOTIFY SIGUPDATE \_ \_**</dt> </dl> | Descargue para completar la actualización. Hay información adicional disponible a través de [**la estructura DE DATOS MPSIGUPDATE. \_**](mpsigupdate-data.md)<br/>                             |
+| <span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_PROGRESS"></span><span id="mpnotify_sigupdate_download_progress"></span><dl> <dt>**PROGRESO DE DESCARGA DE MPNOTIFY \_ SIGUPDATE \_ \_**</dt> </dl> | Descargue la información de progreso. Hay información adicional disponible a través de [**la estructura DE \_ DATOS MPSIGUPDATE.**](mpsigupdate-data.md)<br/>                            |
+| <span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_COMPLETE"></span><span id="mpnotify_sigupdate_download_complete"></span><dl> <dt>**DESCARGA COMPLETA DE MPNOTIFY \_ SIGUPDATE \_ \_**</dt> </dl> | Descargue para completar la actualización. Hay información adicional disponible a través de [**la estructura DE \_ DATOS MPSIGUPDATE.**](mpsigupdate-data.md)<br/>                             |
 | <span id="MPNOTIFY_SIGUPDATE_INSTALL_START"></span><span id="mpnotify_sigupdate_install_start"></span><dl> <dt>**INICIO DE INSTALACIÓN DE MPNOTIFY \_ SIGUPDATE \_ \_**</dt> </dl>             | Se inició la instalación de la actualización.<br/>                                                                                                                            |
-| <span id="MPNOTIFY_SIGUPDATE_INSTALL_PROGRESS"></span><span id="mpnotify_sigupdate_install_progress"></span><dl> <dt>**PROGRESO DE INSTALACIÓN DE MPNOTIFY \_ SIGUPDATE \_ \_**</dt> </dl>    | Información de progreso de la instalación. Hay información adicional disponible a través de [**la estructura DE DATOS MPSIGUPDATE. \_**](mpsigupdate-data.md)<br/>                        |
-| <span id="MPNOTIFY_SIGUPDATE_INSTALL_COMPLETE"></span><span id="mpnotify_sigupdate_install_complete"></span><dl> <dt>**INSTALACIÓN COMPLETA DE \_ MPNOTIFY SIGUPDATE \_ \_**</dt> </dl>    | Instalación de la actualización completada. Hay información adicional disponible a través de [**la estructura DE DATOS MPSIGUPDATE. \_**](mpsigupdate-data.md)<br/>                         |
-| <span id="MPNOTIFY_SIGUPDATE_REQUEST_PROCESSED"></span><span id="mpnotify_sigupdate_request_processed"></span><dl> <dt>**SOLICITUD DE \_ MPNOTIFY SIGUPDATE \_ \_ PROCESADA**</dt> </dl> | El servicio antimalware procesó una solicitud de actualización de firma. HResult indica un error o un resultado correcto *en* [**MPCALLBACK \_ DATA**](mpcallback-data.md).<br/> |
-| <span id="MPNOTIFY_SIGUPDATE_REBOOT_REQUIRED"></span><span id="mpnotify_sigupdate_reboot_required"></span><dl> <dt>**SE REQUIERE EL \_ REINICIO DE MPNOTIFY SIGUPDATE \_ \_**</dt> </dl>       | Requiere reiniciar para completar la operación de actualización. HResult indica un error o un resultado correcto *en* [**MPCALLBACK \_ DATA**](mpcallback-data.md).<br/>             |
+| <span id="MPNOTIFY_SIGUPDATE_INSTALL_PROGRESS"></span><span id="mpnotify_sigupdate_install_progress"></span><dl> <dt>**PROGRESO DE INSTALACIÓN DE MPNOTIFY \_ SIGUPDATE \_ \_**</dt> </dl>    | Información de progreso de la instalación. Hay información adicional disponible a través de [**la estructura DE \_ DATOS MPSIGUPDATE.**](mpsigupdate-data.md)<br/>                        |
+| <span id="MPNOTIFY_SIGUPDATE_INSTALL_COMPLETE"></span><span id="mpnotify_sigupdate_install_complete"></span><dl> <dt>**INSTALACIÓN COMPLETA DE \_ MPNOTIFY SIGUPDATE \_ \_**</dt> </dl>    | Instalación de la actualización completada. Hay información adicional disponible a través de [**la estructura DE \_ DATOS MPSIGUPDATE.**](mpsigupdate-data.md)<br/>                         |
+| <span id="MPNOTIFY_SIGUPDATE_REQUEST_PROCESSED"></span><span id="mpnotify_sigupdate_request_processed"></span><dl> <dt>**SOLICITUD DE \_ MPNOTIFY SIGUPDATE \_ \_ PROCESADA**</dt> </dl> | El servicio antimalware procesó una solicitud de actualización de firma. HResult indica un  error o un resultado correcto en [**MPCALLBACK \_ DATA**](mpcallback-data.md).<br/> |
+| <span id="MPNOTIFY_SIGUPDATE_REBOOT_REQUIRED"></span><span id="mpnotify_sigupdate_reboot_required"></span><dl> <dt>**SE REQUIERE EL \_ REINICIO DE MPNOTIFY SIGUPDATE \_ \_**</dt> </dl>       | Requiere reiniciar para completar la operación de actualización. HResult indica un  error o un resultado correcto en [**MPCALLBACK \_ DATA**](mpcallback-data.md).<br/>             |
 | <span id="MPNOTIFY_INTERNAL_FAILURE"></span><span id="mpnotify_internal_failure"></span><dl> <dt>**ERROR INTERNO DE \_ \_ MPNOTIFY**</dt> </dl>                                   | La operación de actualización de firmas ha detectado un error genérico. HResult *en* [**MPCALLBACK \_ DATA**](mpcallback-data.md) tiene el código de error específico.<br/>    |
 
 
@@ -133,7 +133,7 @@ Si se produce un error en la función, el valor devuelto es un **código HRESULT
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
@@ -154,7 +154,7 @@ Si se produce un error en la función, el valor devuelto es un **código HRESULT
 [**DATOS DE DEVOLUCIÓN DE \_ LLAMADA DE MP**](mpcallback-data.md)
 </dt> <dt>
 
-[**DATOS DE \_ MPSIGUPDATE**](mpsigupdate-data.md)
+[**MPSIGUPDATE \_ DATA**](mpsigupdate-data.md)
 </dt> </dl>
 
  

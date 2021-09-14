@@ -4,12 +4,12 @@ description: Las estructuras de administración de red se pueden agrupar como se
 ms.assetid: a4b05054-bef2-4cab-89f6-725d92ee75b8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e71d5e6b8244d8177d013653d4e102fece0eba8c18baa4a9918c3e6280eb8bdb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 247dd9afc6fb38cbede332e90f2b648a0e2bbc26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119891244"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245396"
 ---
 # <a name="network-management-structures"></a>Estructuras de administración de redes
 
@@ -22,8 +22,8 @@ Las estructuras de administración de red se pueden agrupar como se muestra a co
 [**ADMIN \_ OTHER \_ INFO**](/windows/desktop/api/Lmalert/ns-lmalert-admin_other_info)  
 [**ERRLOG \_ OTHER \_ INFO**](/windows/desktop/api/Lmalert/ns-lmalert-errlog_other_info)  
 [**IMPRIMIR \_ OTRA \_ INFORMACIÓN**](/windows/desktop/api/Lmalert/ns-lmalert-print_other_info)  
-[**ALERTA \_ DE STD**](/windows/desktop/api/Lmalert/ns-lmalert-std_alert)  
-[**OTRA \_ INFORMACIÓN DEL \_ USUARIO**](/windows/desktop/api/Lmalert/ns-lmalert-user_other_info)  
+[**ALERTA DE \_ STD**](/windows/desktop/api/Lmalert/ns-lmalert-std_alert)  
+[**USER \_ OTHER \_ INFO**](/windows/desktop/api/Lmalert/ns-lmalert-user_other_info)  
 </dl>
 
 ## <a name="azure-active-directory-join-information-structures"></a>Azure Active Directory Estructuras de información de combinación
@@ -38,8 +38,8 @@ Las estructuras de administración de red se pueden agrupar como se muestra a co
 
 <dl>
 
-[**NET \_ DISPLAY \_ GROUP**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_display_group)  
-[**MÁQUINA \_ DE NET \_ DISPLAY**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_display_machine)  
+[**GRUPO \_ DE PANTALLA DE \_ NET**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_display_group)  
+[**MÁQUINA DE \_ VISUALIZACIÓN \_ DE NET**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_display_machine)  
 [**USUARIO \_ DE NET \_ DISPLAY**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_display_user)  
 </dl>
 
@@ -59,7 +59,7 @@ Las estructuras de administración de red se pueden agrupar como se muestra a co
 -   [**LOCALGROUP \_ INFO \_ 1**](/windows/desktop/api/Lmaccess/ns-lmaccess-localgroup_info_1)
 -   [**LOCALGROUP \_ INFO \_ 1002**](/windows/desktop/api/Lmaccess/ns-lmaccess-localgroup_info_1002)
 -   [**LOCALGROUP \_ MEMBERS \_ INFO \_ 0**](/windows/desktop/api/Lmaccess/ns-lmaccess-localgroup_members_info_0)
--   [**INFORMACIÓN \_ 1 DE \_ LOS MIEMBROS DEL GRUPO \_ LOCAL**](/windows/desktop/api/Lmaccess/ns-lmaccess-localgroup_members_info_1)
+-   [**LOCALGROUP \_ MEMBERS \_ INFO \_ 1**](/windows/desktop/api/Lmaccess/ns-lmaccess-localgroup_members_info_1)
 -   [**LOCALGROUP \_ MEMBERS \_ INFO \_ 2**](/windows/desktop/api/Lmaccess/ns-lmaccess-localgroup_members_info_2)
 -   [**LOCALGROUP \_ MEMBERS \_ INFO \_ 3**](/windows/desktop/api/Lmaccess/ns-lmaccess-localgroup_members_info_3)
 -   [**LOCALGROUP \_ USERS \_ INFO \_ 0**](/windows/desktop/api/Lmaccess/ns-lmaccess-localgroup_users_info_0)
@@ -74,9 +74,9 @@ Las estructuras de administración de red se pueden agrupar como se muestra a co
 -   [**PARTE DEL \_ PAQUETE \_ DE OPERACIÓN**](odj-op_package_part.md)
 -   [**COLECCIÓN DE \_ PAQUETES \_ DE OPERACIÓN**](odj-op_package_collection.md)
 -   [**ODJ \_ SID \_ IDENTIFIER \_ AUTHORITY**](odj-sid_identifier_authority.md)
--   [**SID \_ de ODJ**](odj-odj_sid.md)
+-   [**SID de ODJ \_**](odj-odj_sid.md)
 -   [**CADENA \_ UNICODE ODJ \_**](odj-odj_unicode_string.md)
--   [**INFORMACIÓN DE DOMINIO \_ \_ DNS DE DIRECTIVA \_ DE \_ ODJ**](odj-odj_policy_dns_domain_info.md)
+-   [**INFORMACIÓN DE DOMINIO \_ DNS DE \_ DIRECTIVA \_ DE \_ ODJ**](odj-odj_policy_dns_domain_info.md)
 -   [**ODJ \_ WIN7BLOB**](odj-odj_win7blob.md)
 -   [**OP \_ JOIN \_ PROV2 \_ PART**](odj-op_join_prov2_part.md)
 -   [**OP \_ JOIN \_ PROV3 \_ PART**](odj-op_join_prov3_part.md)
@@ -85,7 +85,7 @@ Las estructuras de administración de red se pueden agrupar como se muestra a co
 -   [**OP \_ CERT \_ PART**](odj-op_cert_part.md)
 -   [**ELEMENTO \_ DE DIRECTIVA DE \_ OPERACIÓN**](odj-op_policy_element.md)
 -   [**LISTA DE \_ ELEMENTOS DE DIRECTIVA DE \_ \_ OPERACIÓN**](odj-op_policy_element_list.md)
--   [**PARTE DIRECTIVA \_ DE \_ OPERACIÓN**](odj-op_policy_part.md)
+-   [**PARTE DE \_ DIRECTIVA \_ DE OPERACIÓN**](odj-op_policy_part.md)
 
 ## <a name="message-structures"></a>Estructuras de mensajes
 
@@ -167,7 +167,7 @@ Las estructuras de administración de red se pueden agrupar como se muestra a co
 [**COMPARTIR \_ INFORMACIÓN \_ 2**](/windows/desktop/api/lmshare/ns-lmshare-share_info_2)  
 [**COMPARTIR \_ INFORMACIÓN \_ 501**](/windows/desktop/api/lmshare/ns-lmshare-share_info_501)  
 [**COMPARTIR \_ INFORMACIÓN \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502)  
-[**COMPARTIR \_ INFORMACIÓN \_ 1004**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1004)  
+[**SHARE \_ INFO \_ 1004**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1004)  
 [**COMPARTIR \_ INFORMACIÓN \_ 1005**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1005)  
 [**COMPARTIR \_ INFORMACIÓN \_ 1006**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1006)  
 [**COMPARTIR \_ INFORMACIÓN \_ 1501**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1501)  

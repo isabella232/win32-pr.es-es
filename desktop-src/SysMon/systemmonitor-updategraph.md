@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65e8604978f6dc786941a41f3be73170f40377502828b0e53d0b42c4af820300
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6215209466f54ea88f51b4b9777e2a6007917df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118881013"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243843"
 ---
 # <a name="systemmonitorupdategraph-method"></a>SystemMonitor::UpdateGraph (método)
 

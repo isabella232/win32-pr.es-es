@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45f6d4c10beb3f0fd94da0365d67b6c5ab480d36d5a3786021f538e9dcf4e90c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 343234fce2b93ac02255731a38025f6d7b9fac6f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118116061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242979"
 ---
 # <a name="iwmpclosedcaptioncaptioningid-property"></a>Propiedad IWMPClosedCaption::captioningId
 
 La **propiedad IWMPClosedCaption** obtiene o establece el nombre del elemento HTML que muestra los subtítulos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,15 +48,15 @@ Public Property captioningId As System.String
 
 **System.String que** es el identificador del elemento HTML.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El nombre del elemento especificado puede ser cualquier elemento HTML de la página web, siempre que admita el **atributo innerHTML.** Si la página web contiene varios fotogramas, el nombre del elemento solo puede hacer referencia a un elemento en el mismo marco que el control Reproductor de Windows Media elemento.
+El nombre del elemento especificado puede ser cualquier elemento HTML de la página web, siempre que admita el **atributo innerHTML.** Si la página web contiene varios marcos, el nombre del elemento solo puede hacer referencia a un elemento en el mismo marco que el control Reproductor de Windows Media elemento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

@@ -4,12 +4,12 @@ ms.assetid: 021AAF33-A89E-4336-AEB1-1A0D79A14C75
 title: Información general sobre el formato TIFF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 995b8635756a1cc807d3125240517ce5d1eef54d447540028408eb3048d6143a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 81b28dfcc85dac21e95e6c76118d2db57cb74a08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119841345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359980"
 ---
 # <a name="tiff-format-overview"></a>Información general sobre el formato TIFF
 

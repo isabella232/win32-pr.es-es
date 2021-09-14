@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fee3fadcd58f74b534c8d4b32ee2db0f87fd160d55abbb2dde243693696bbd2f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef853bc1aabde4c261037cbeb31ce2deba34c631
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359134"
 ---
 # <a name="playlistallowcolumnsorting"></a>PLAYLIST.allowColumnSorting
 
@@ -29,7 +29,7 @@ El **atributo allowColumnSorting** especifica o recupera un valor que indica si 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un booleano de lectura **y escritura.**
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
@@ -56,7 +56,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
 <dl> <dt>
 
-[**ELEMENTO PLAYLIST**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

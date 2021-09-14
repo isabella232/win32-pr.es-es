@@ -4,22 +4,22 @@ ms.assetid: 9f74fc1c-b903-4725-b667-3c56a2726dbc
 title: Registro de un DMO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab5635f7b05edb13da80adb62104db5c412fa55608ec2f9b5214380b7d9a095e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 19c5364304fd5f6a9557c84a4b27c86d29fa4e84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119904545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246440"
 ---
 # <a name="registering-a-dmo"></a>Registro de un DMO
 
-Para que los clientes usen su DMO, el CLSID debe estar registrado en el sistema del usuario. Esto se realiza a través de la función **DllRegisterServer del** archivo DLL. Si usa el Active Template Library ATL, el asistente atl genera automáticamente esta función.
+Para que los clientes usen la DMO, el CLSID debe estar registrado en el sistema del usuario. Esto se realiza a través de la **función DllRegisterServer del** archivo DLL. Si usa el Active Template Library (ATL), el asistente atl genera automáticamente esta función.
 
-También puede registrar sus DMO en una o varias categorías de DMO estándar. Esto permite a los clientes detectar DMO mediante la [**función DMOEnum.**](/previous-versions/windows/desktop/api/Dmoreg/nf-dmoreg-dmoenum) Las categorías se definen mediante GUID y se enumeran en la sección DMO [GUID.](dmo-guids.md)
+También puede registrar la aplicación DMO una o varias categorías de DMO estándar. Esto permite a los clientes detectar DMO mediante la [**función DMOEnum.**](/previous-versions/windows/desktop/api/Dmoreg/nf-dmoreg-dmoenum) Las categorías se definen mediante GUID y se enumeran en la sección DMO [GUID.](dmo-guids.md)
 
-El registro de DMO en una categoría es opcional. Para ello, llame a la función [**DMORegister**](/previous-versions/windows/desktop/api/Dmoreg/nf-dmoreg-dmoregister) y especifique el nombre descriptivo del DMO, el CLSID y la categoría. Opcionalmente, también puede registrar un conjunto de tipos de medios que admiten las DDO. Para obtener más información, [vea DMO tipos de medios .](dmo-media-types.md)
+El registro de DMO en una categoría es opcional. Para ello, llame a la función [**DMORegister**](/previous-versions/windows/desktop/api/Dmoreg/nf-dmoreg-dmoregister) y especifique el nombre descriptivo del DMO, clsid y categoría. Opcionalmente, también puede registrar un conjunto de tipos de medios que admiten las DDO. Para obtener más información, [vea DMO tipos de medios .](dmo-media-types.md)
 
-En el ejemplo siguiente se muestra cómo registrar un efecto de audio DMO admite la entrada y salida de audio PCM. En este caso, los tipos de entrada y de salida son los mismos.
+En el ejemplo siguiente se muestra cómo registrar un efecto de audio DMO que admite la entrada y salida de audio PCM. En este caso, los tipos de entrada y salida son los mismos.
 
 
 ```C++
@@ -48,11 +48,11 @@ STDAPI DllRegisterServer(void)
 
 
 
-En este ejemplo se supone que se usó ATL para crear el proyecto; la última línea de la función llama al método ATL estándar para registrar el servidor COM. Si no usa ATL, la función tendrá un aspecto diferente.
+En este ejemplo se da por supuesto que ATL se usó para crear el proyecto; La última línea de la función llama al método ATL estándar para registrar el servidor COM. Si no usa ATL, la función tendrá un aspecto diferente.
 
-**Anulación del registro de un DMO**
+**Anular el registro de un DMO**
 
-La **función DllUnregisterServer** debe quitar todas las entradas del Registro que cree la función **DllRegisterServer.** Si llama a **DMORegister** al registrar la DMO, debe [**DMOUnregister**](/previous-versions/windows/desktop/api/Dmoreg/nf-dmoreg-dmounregister) con la misma categoría al anular el registro de DMO.
+La **función DllUnregisterServer** debe quitar todas las entradas del Registro que cree la función **DllRegisterServer.** Si llama a **DMORegister** al registrar la DMO, debe [**registrar DMOUnregister**](/previous-versions/windows/desktop/api/Dmoreg/nf-dmoreg-dmounregister) con la misma categoría al anular el registro DMO.
 
 En el ejemplo siguiente se quitan las entradas del Registro creadas en el ejemplo anterior:
 
@@ -67,9 +67,9 @@ STDAPI DllUnregisterServer(void)
 
 
 
-**DirectShow Valores de los valores de los valores de**
+**DirectShow Valores de mezcciones**
 
-Para la creación de gráficos de filtro, DirectShow asigna un valor de merececión predeterminado a las DDO. Puede invalidar este valor agregando una entrada del Registro a la DMO del Registro de HKEY \_ CLASSES \_ ROOT \\ CLSID. Incluya un **valor DWORD** `Merit` denominado cuyo valor especifica el valor.
+Para la creación de gráficos de filtro, DirectShow asigna un valor de meritorio predeterminado a las DDO. Puede invalidar este valor agregando una entrada del Registro a la clave del Registro DMO la clave del Registro de HKEY \_ CLASSES \_ ROOT \\ CLSID. Incluya un **valor DWORD** denominado `Merit` cuyo valor especifica el resultado.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 3425f9477b153721980e3bb44b919b0baea37aa645caea6a3ee328a9ff923eb8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1847ffa1912a8638476ce80dfbdb71c40fc376d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119824744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359704"
 ---
 # <a name="printprocessor_caps_2-structure"></a>PRINTPROCESSOR \_ CAPS \_ 2 (estructura)
 
@@ -43,7 +43,7 @@ typedef struct _PRINTPROCESSOR_CAPS_2 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -127,7 +127,7 @@ Solo puede ser PPCAPS \_ SQUARE \_ SCALING, lo que indica que la impresora puede
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La función **GetPrintProcessorCapabilities** proporciona valores para todos los miembros de la estructura, que se documenta en Windows Driver Kit.
 
@@ -141,7 +141,7 @@ Cuando una aplicación llama a [**GetPrinterData**](getprinterdata.md), el colad
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
-| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -152,7 +152,7 @@ Cuando una aplicación llama a [**GetPrinterData**](getprinterdata.md), el colad
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del colador de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**GetPrinterData**](getprinterdata.md)

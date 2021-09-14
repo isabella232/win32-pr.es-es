@@ -4,18 +4,18 @@ ms.assetid: ed40e201-c6ed-444f-bdaa-a5f33d1cc068
 title: 'Tutorial: Decoding Audio'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4ad5dbac47680c4d8faa73affa711b987edf220e05324d88cd0ffbda3bb93e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 539eb6d9f48419b62fa1c379c636abaf2bb0a63a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118237674"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361110"
 ---
 # <a name="tutorial-decoding-audio"></a>Tutorial: Decoding Audio
 
 En este tutorial se muestra cómo usar el Lector de [origen](source-reader.md) para descodificar audio de un archivo multimedia y escribir el audio en un archivo WAVE. El tutorial se basa en el ejemplo [audio clip.](audio-clip-sample.md)
 
--   [Introducción](#overview)
+-   [Información general](#overview)
 -   [Archivos de encabezado y biblioteca](#header-and-library-files)
 -   [Implementación de wmain](#implement-wmain)
 -   [Escribir el archivo WAVE](#write-the-wave-file)
@@ -38,7 +38,7 @@ En su forma más sencilla, un archivo WAVE tiene la siguiente estructura:
 
 
 
-| Tipo de datos                              | Tamaño (bytes) | Valor                                                                 |
+| Tipo de datos                              | Tamaño (bytes) | Value                                                                 |
 |----------------------------------------|--------------|-----------------------------------------------------------------------|
 | **FOURCC**                             | 4            | 'RIFF'                                                                |
 | **DWORD**                              | 4            | Tamaño total del archivo, sin incluir los primeros 8 bytes                      |
@@ -48,7 +48,7 @@ En su forma más sencilla, un archivo WAVE tiene la siguiente estructura:
 | [**FORMA DE ONDAATEX**](/previous-versions/dd757713(v=vs.85)) | Varía       | Encabezado de formato de audio.                                                  |
 | **FOURCC**                             | 4            | 'data'                                                                |
 | **DWORD**                              | 4            | Tamaño de los datos de audio.                                               |
-| **Byte**\[\]                           | Varía       | Datos de audio.                                                           |
+| **BYTE**\[\]                           | Varía       | Datos de audio.                                                           |
 
 
 
@@ -177,7 +177,7 @@ Esta función hace lo siguiente:
 3.  Llama [**a MFCreateSourceReaderFromURL para**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesourcereaderfromurl) crear el lector de origen. Esta función toma el nombre del archivo de entrada y recibe un puntero de [**interfaz DEFUTSourceReader.**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader)
 4.  Crea el archivo de salida llamando a la **función CreateFile,** que devuelve un identificador de archivo.
 5.  Llama a la función [WriteWavFile definida por la](#write-the-wave-file) aplicación. Esta función descodifica el audio y escribe el archivo WAVE.
-6.  Libera el puntero [**DE LAFUTSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader) y el identificador de archivo.
+6.  Libera el puntero [**DE ALSOURCESourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader) y el identificador de archivo.
 7.  Llama [**a MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) para apagar Media Foundation plataforma.
 8.  Llama [**a CoUninitialize para**](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) liberar la biblioteca COM.
 
@@ -254,7 +254,7 @@ Estas funciones se muestran en las secciones restantes de este tutorial.
 
 La `ConfigureAudioStream` función configura el lector de origen para descodificar la secuencia de audio en el archivo de origen. También devuelve información sobre el formato del audio descodificado.
 
-En Media Foundation, los formatos multimedia se describen mediante *objetos de tipo multimedia.* Un objeto de tipo multimedia expone la interfaz [**IMFMediaType,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) que hereda la [**interfazATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Básicamente, un tipo de medio es una colección de propiedades que describen el formato. Para obtener más información, vea [Tipos de medios](media-types.md).
+En Media Foundation, los formatos multimedia se describen mediante *objetos de tipo multimedia.* Un objeto de tipo multimedia expone la [**interfaz IMFMediaType,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) que hereda la [**interfazATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Básicamente, un tipo de medio es una colección de propiedades que describen el formato. Para obtener más información, vea [Tipos de medios](media-types.md).
 
 
 ```C++
@@ -625,7 +625,7 @@ HRESULT WriteWaveData(
 
 La `WriteWaveData` función hace lo siguiente en un bucle:
 
-1.  Llama [**a IMFSourceReader::ReadSample para**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) leer audio del archivo de origen. El *parámetro dwFlags* recibe un **OR** bit a bit de marcas de la [**enumeración MF SOURCE READER \_ \_ \_ FLAG.**](/windows/desktop/api/mfreadwrite/ne-mfreadwrite-mf_source_reader_flag) El *parámetro pSample* recibe un puntero a la interfaz [**IMFSample,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) que se usa para acceder a los datos de audio. En algunos casos, una llamada a **ReadSample** no genera datos, en cuyo caso el puntero **DESAMPLESample** es **NULL.**
+1.  Llama [**a IMFSourceReader::ReadSample para**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) leer audio del archivo de origen. El *parámetro dwFlags* recibe un **OR** bit a bit de marcas de la [**enumeración MF SOURCE READER \_ \_ \_ FLAG.**](/windows/desktop/api/mfreadwrite/ne-mfreadwrite-mf_source_reader_flag) El *parámetro pSample* recibe un puntero a la [**interfaz IMFSample,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) que se usa para tener acceso a los datos de audio. En algunos casos, una llamada a **ReadSample** no genera datos, en cuyo caso el puntero **DESAMPLESample** es **NULL.**
 2.  Comprueba *dwFlags para* las marcas siguientes:
     -   **MF \_ SOURCE \_ READERF \_ CURRENTMEDIATYPECHANGED**. Esta marca indica un cambio de formato en el archivo de origen. Los archivos WAVE no admiten cambios de formato.
     -   **MF \_ SOURCE \_ READERF \_ ENDOFSTREAM**. Esta marca indica el final de la secuencia.

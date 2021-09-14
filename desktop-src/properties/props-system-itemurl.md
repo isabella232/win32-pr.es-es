@@ -4,12 +4,12 @@ ms.assetid: d592f12b-f8c2-406f-a031-eeb8212e64f7
 title: System.ItemUrl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79fe179849c7991a65db5412543815d78ac8dc21682511e27d6251253b3b1366
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d02beb9629661a052d2ec1fae7c7a34e999e777e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118970374"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359675"
 ---
 # <a name="systemitemurl"></a>System.ItemUrl
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

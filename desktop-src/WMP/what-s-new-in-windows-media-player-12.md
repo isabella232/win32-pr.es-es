@@ -6,26 +6,26 @@ keywords:
 - Reproductor de Windows Media, novedades
 - Reproductor de Windows Media,nuevas características
 - kit de desarrollo de software (SDK),Reproductor de Windows Media 12
-- SDK (kit de desarrollo de software), Reproductor de Windows Media 12
-- documentation,Reproductor de Windows Media SDK 12
+- SDK (kit de desarrollo de software),Reproductor de Windows Media 12
+- documentation,Reproductor de Windows Media 12 SDK
 - novedades, Reproductor de Windows Media 12
 - nuevas características, Reproductor de Windows Media 12
 - interfaces,nuevas características de Reproductor de Windows Media 12
-- atributos,nuevas características de Reproductor de Windows Media 12
+- atributos, nuevas características de Reproductor de Windows Media 12
 - metadata,new features in Reproductor de Windows Media 12
 - enumeraciones, nuevas características de Reproductor de Windows Media 12
 - flags,new features in Reproductor de Windows Media 12
 - interfaces, en desuso en Reproductor de Windows Media 12
 - methods, en desuso Reproductor de Windows Media 11 y no 12
-- versiones de Reproductor de Windows Media nuevas características de la versión 12
+- versiones de Reproductor de Windows Media,nuevas características de la versión 12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 976c9b0995188f9d6c6db6e7394ec0019047ff18b51940ada202c8c7ea713f39
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d16b21077df1f4a9c11edbfa20032ed473f872a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243027"
 ---
 # <a name="whats-new-in-windows-media-player-12"></a>Novedades del Reproductor de Windows Media 12
 
@@ -96,7 +96,7 @@ Los métodos siguientes quedaron en desuso Reproductor de Windows Media SDK 11, 
 
 <dl> <dt>
 
-[Acerca del SDK de Reproductor de Windows Media](about-the-windows-media-player-sdk.md)
+[Acerca del SDK Reproductor de Windows Media](about-the-windows-media-player-sdk.md)
 </dt> </dl>
 
  

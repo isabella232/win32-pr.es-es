@@ -4,12 +4,12 @@ ms.assetid: 8f20c64a-db79-4c3c-a544-685ed82143bb
 title: Creación de un Administrador de dispositivos WIA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 779b171225062381d5b6951ed536b086fd46a27def108802e34fff82e3527991
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35e315939566eea6fe8a4acabeb5fd8afe247c30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118035776"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360631"
 ---
 # <a name="creating-a-wia-device-manager"></a>Creación de un Administrador de dispositivos WIA
 

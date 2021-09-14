@@ -1,18 +1,18 @@
 ---
-title: Recursos en mosaico de volumen (Direct3D 12)
+title: Recursos en mosaico de volumen (Direct3D 12)
 description: Las texturas de volumen (3D) se pueden usar como recursos en mosaico, y se debe tener en cuenta que la resolución de mosaicos es tridimensional.
 ms.assetid: F670D15D-BC0F-4F90-99C1-A35192FE8980
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b8d6e9b4d7ae9ad4b93bae5cf29749c293bf7f55ea7fa35a1e1ca71040218e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf5371926b38415a84803155c67ea70ed902b915
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119123544"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174846"
 ---
-# <a name="volume-tiled-resources-direct3d-12"></a>Recursos en mosaico de volumen (Direct3D 12)
+# <a name="volume-tiled-resources-direct3d-12"></a>Recursos en mosaico de volumen (Direct3D 12)
 
 Las texturas de volumen (3D) se pueden usar como recursos en mosaico, y se debe tener en cuenta que la resolución de mosaicos es tridimensional.
 
@@ -22,7 +22,7 @@ Los recursos en mosaico desacoplan un objeto de recurso de Direct3D de su memori
 
 Los recursos en mosaico de textura 2D se admiten en Direct3D 11.2. La compatibilidad opcional con texturas en mosaico 3D está disponible para Direct3D 12 y Direct3D 11.3 (consulte [**D3D12_TILED_RESOURCES_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tiled_resources_tier)).
 
-Las dimensiones de recursos típicas que se usan en el mosaico son 4 mosaicos x 4 para texturas 2D y 4 mosaicos de 4 x 4 para texturas 3D.
+Las dimensiones de recursos típicas que se usan en el mosaico son 4 mosaicos de 4 x 4 para texturas 2D y 4 mosaicos de 4 x 4 para texturas 3D.
 
 | Bits/píxel (1 muestra/píxel) | Dimensiones de mosaico (píxeles, w x h x d) |
 |-----------------------------|-------------------------------------|
@@ -89,7 +89,7 @@ trSize.NumTiles = 6;
 
 ![segundo mip más detallado para una textura tridimensional](images/vtr-tex3d-default-2b.png)
 
-### <a name="texture-3d-tiled-resource-single-tile"></a>Recurso en mosaico texture 3D (un solo icono)
+### <a name="texture-3d-tiled-resource-single-tile"></a>Recurso en mosaico de textura 3D (un solo icono)
 
 El código siguiente configura un único recurso de icono.
 
@@ -133,29 +133,29 @@ trSize.Depth = 3;
 
 ## <a name="tiled-resource-apis"></a>API de recursos en mosaico
 
-Las mismas llamadas API se usan para recursos en mosaico 2D y 3D.
+Las mismas llamadas API se usan para los recursos en mosaico 2D y 3D.
 
 Enumeraciones
 
-* [**D3D12_TILED_RESOURCES_TIER:**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tiled_resources_tier) determina el nivel de compatibilidad de los recursos en mosaico.
+* [**D3D12_TILED_RESOURCES_TIER:**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tiled_resources_tier) determina el nivel de compatibilidad con recursos en mosaico.
 * [**D3D12_FORMAT_SUPPORT2**](/windows/win32/api/d3d12/ne-d3d12-d3d12_format_support2) : se usa para probar la compatibilidad con recursos en mosaico.
 * [**D3D12_MULTISAMPLE_QUALITY_LEVEL_FLAGS:**](/windows/win32/api/d3d12/ne-d3d12-d3d12_multisample_quality_level_flags) determina la compatibilidad con recursos en mosaico en un recurso de muestreo múltiple.
-* [**D3D12_TILE_COPY_FLAGS:**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_copy_flags) contiene marcas para copiar hacia y desde recursos en mosaico y búferes lineales.
+* [**D3D12_TILE_COPY_FLAGS:**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_copy_flags) contiene marcas para copiar a y desde recursos en mosaico desdobados y búferes lineales.
 
 Estructuras
 
-* [**D3D12_TILED_RESOURCE_COORDINATE**](/windows/win32/api/d3d12/ns-d3d12-d3d12_tiled_resource_coordinate) : contiene la referencia de coordenadas x, y y z y subcursos. Tenga en cuenta que hay una estructura auxiliar: [**CD3DX12_TILED_RESOURCE_COORDINATE**](cd3dx12-tiled-resource-coordinate.md).
+* [**D3D12_TILED_RESOURCE_COORDINATE**](/windows/win32/api/d3d12/ns-d3d12-d3d12_tiled_resource_coordinate) : contiene la referencia de coordenadas y subrecursos x, y y z. Tenga en cuenta que hay una estructura auxiliar: [**CD3DX12_TILED_RESOURCE_COORDINATE**](cd3dx12-tiled-resource-coordinate.md).
 * [**D3D12_TILE_REGION_SIZE**](/windows/win32/api/d3d12/ns-d3d12-d3d12_tile_region_size) : especifica el tamaño y el número de mosaicos de la región en mosaico.
-* [**D3D12_TILE_SHAPE:**](/windows/win32/api/d3d12/ns-d3d12-d3d12_tile_shape) forma de mosaico como ancho, alto y profundidad en texturas.
-* [**D3D12_FEATURE_DATA_D3D12_OPTIONS:**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options) contiene el nivel de recurso de icono admitido y un valor booleano, *VolumeTiledResourcesSupported*, que indica si se admiten recursos en mosaico de volumen.
+* [**D3D12_TILE_SHAPE:**](/windows/win32/api/d3d12/ns-d3d12-d3d12_tile_shape) forma de mosaico como ancho, alto y profundidad en los elementos de textura.
+* [**D3D12_FEATURE_DATA_D3D12_OPTIONS:**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options) contiene el nivel de recurso de icono admitido y un valor booleano, *VolumeTiledResourcesSupported,* que indica si se admiten recursos en mosaico de volumen.
 
 Métodos
 
-* [**ID3D12Device::CheckFeatureSupport:**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) se usa para determinar qué características y en qué nivel son compatibles con el hardware actual.
+* [**ID3D12Device::CheckFeatureSupport:**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) se usa para determinar qué características, y en qué nivel, son compatibles con el hardware actual.
 * [**ID3D12GraphicsCommandList::CopyTiles:**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytiles) copia iconos del búfer al recurso en mosaico o viceversa.
-* [**ID3D12CommandQueue::UpdateTileMappings:**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-updatetilemappings) actualiza las asignaciones de ubicaciones de mosaico de los recursos en mosaico a las ubicaciones de memoria de un montón de recursos.
+* [**ID3D12CommandQueue::UpdateTileMappings:**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-updatetilemappings) actualiza las asignaciones de ubicaciones de mosaico de recursos en mosaico a ubicaciones de memoria de un montón de recursos.
 * [**ID3D12CommandQueue::CopyTileMappings:**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-copytilemappings) copia las asignaciones de un recurso en mosaico de origen a un recurso en mosaico de destino.
-* [**ID3D12Device::GetResourceTiling:**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-getresourcetiling) obtiene información sobre cómo un recurso en mosaico se divide en iconos.
+* [**ID3D12Device::GetResourceTiling**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-getresourcetiling) : obtiene información sobre cómo un recurso en mosaico se divide en iconos.
 
 ## <a name="related-topics"></a>Temas relacionados
 

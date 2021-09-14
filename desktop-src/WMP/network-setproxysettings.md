@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6501d097a4ec342c2831e4b72bf8f17edc4e4e1bec02b2b51cd7840325674b88
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b3f3da665b07f717449721c9fb43a8733cdb6c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118573863"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243224"
 ---
 # <a name="networksetproxysettings-method"></a>Método Network.setProxySettings
 
@@ -57,7 +57,7 @@ Network.setProxySettings(
 
 
 
-| Valor | Descripción                                                          |
+| Value | Descripción                                                          |
 |-------|----------------------------------------------------------------------|
 | 0     | No usar ningún servidor proxy.                                           |
 | 1     | Use la configuración de proxy del explorador actual (solo válido para HTTP). |
@@ -74,7 +74,7 @@ Network.setProxySettings(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se produce un error en este método a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
@@ -110,14 +110,14 @@ En el ejemplo siguiente se JScript con un elemento SELECT HTML para permitir al 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e7b002c03ee0bfb95733ac9af0f6e88444cc6a42bec2af7d9a40a307d83d2fee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7c6168daf766ec11e18e86673d9d25542b50462
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119909655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361367"
 ---
 # <a name="coutputqueuebeginflush-method"></a>Método COutputQueue.BeginFlush
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método establece la variable [**miembro COutputQueue::m \_ bFlushing**](coutputqueue-m-bflushing.md) en **TRUE.** Si el objeto usa un subproceso, el subproceso llama al método [**COutputQueue::FreeSamples**](coutputqueue-freesamples.md) para liberar los ejemplos pendientes. De lo contrario, el objeto **llama a FreeSamples** durante [**el método COutputQueue::EndFlush.**](coutputqueue-endflush.md) Este método también establece la variable [**miembro COutputQueue::m \_ hr**](coutputqueue-m-hr.md) en S FALSE, lo que hace que el objeto descarte \_ todos los ejemplos nuevos.
 
@@ -61,7 +61,7 @@ El objeto pasa la notificación de vaciado de bajada llamando al [**método IPin
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

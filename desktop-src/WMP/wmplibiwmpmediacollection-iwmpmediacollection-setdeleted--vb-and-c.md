@@ -5,7 +5,7 @@ ms.assetid: 3fa7989e-8b98-44e1-93ca-8136aba358ea
 keywords:
 - Método setDeleted Reproductor de Windows Media
 - Método setDeleted Reproductor de Windows Media , interfaz IWMPMediaCollection
-- Interfaz IWMPMediaCollection Reproductor de Windows Media método , setDeleted
+- Interfaz IWMPMediaCollection Reproductor de Windows Media , método setDeleted
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7516d6aab26659fa2bba57bd961671b4dca0f92d367d5d9bb1f048e8fd19eb2e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57ccf8cf2d36ab7e4aaf76fdbe5c28582650fcda
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119505955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359260"
 ---
 # <a name="iwmpmediacollectionsetdeleted-method"></a>IWMPMediaCollection::setDeleted (método)
 
@@ -73,11 +73,11 @@ Valor **System.Boolean** que especifica si el elemento se debe mover a la carpet
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no quita archivos del equipo del usuario, simplemente los mueve a la carpeta de elementos eliminados.
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -129,7 +129,7 @@ End If
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

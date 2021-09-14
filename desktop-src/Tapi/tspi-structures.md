@@ -4,12 +4,12 @@ ms.assetid: 99d966ea-49b5-4a84-83a1-99dc8465c751
 title: Estructuras TSPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c11700dcaa46284b4050908ca70ed640e03afeb2eb7a2269ad1bac9161c089
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e3468171bc160ca03ac9f5501a9eba7fd9221ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173073"
 ---
 # <a name="tspi-structures"></a>Estructuras TSPI
 

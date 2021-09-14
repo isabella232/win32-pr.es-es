@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1ba35f2030f4b2fb6e9acfde1a8310e6c9f1dac98b8ba8aa65d56cce206c8e00
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 09a7bb545330710ae4fe2c39eae4556207061203
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359476"
 ---
 # <a name="playlistsetselectedstate"></a>PLAYLIST.setSelectedState
 
@@ -43,7 +43,7 @@ El **método setSelectedState** especifica que el elemento indexado de la lista 
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede establecer todos los elementos en el estado seleccionado especificando 1 en el parámetro *item.*
 

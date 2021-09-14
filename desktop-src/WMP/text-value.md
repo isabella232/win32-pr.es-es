@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8eef6b17428831a52a0e3cf5b8f8ec3dd7f795d5d4b78e2c4700a6274b877820
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d87f688f7afffeb588a37ac13ebff4cdc7cc105
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119762865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243063"
 ---
 # <a name="textvalue"></a>TEXT.value
 
@@ -31,7 +31,7 @@ El **atributo** value especifica o recupera el texto que se muestra en el contro
 
 Este atributo es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el ancho del control Text no es suficiente para contener el texto proporcionado, el texto se recorta y se muestran puntos suspensivos para ilustrar el hecho. Si no se ha establecido el atributo **toolTip,** el texto completo aparecerá como información sobre herramientas cuando el cursor mantenga el puntero sobre el control.
 

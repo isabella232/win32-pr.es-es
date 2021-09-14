@@ -5,15 +5,15 @@ ms.assetid: d73d76e1-bd78-40ce-9f92-e282b6b127ce
 keywords:
 - Cancelación de servicios web para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf75bd8d07d8f78ddf0a5750e6f4f96feb073dc15b8e63ed23ab8ceb061de145
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6e979455e898922dfb7c81381c1f1aafd455274
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117841785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359546"
 ---
 # <a name="cancellation"></a>Cancelación
 
@@ -27,13 +27,13 @@ La función que use para cancelar una operación depende del objeto afectado.
 | [**WsAbortListener**](/windows/desktop/api/WebServices/nf-webservices-wsabortlistener)         | Cancela todas las entradas y salidas pendientes en un agente de escucha especificado.                                                          |
 | [**WsAbortServiceProxy**](/windows/desktop/api/WebServices/nf-webservices-wsabortserviceproxy) | Cancela todas las entradas y salidas pendientes en un proxy de servicio especificado.                                                     |
 | [**WsAbortServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsabortservicehost)   | Interrumpe e interrumpe las operaciones actuales en el host de servicio.                                                    |
-| [**WsAbandonCall**](/windows/desktop/api/WebServices/nf-webservices-wsabandoncall)             | Abandona una llamada, una llamada especificada en un proxy de servicio especificado.                                                        |
+| [**WsAbandoneCall**](/windows/desktop/api/WebServices/nf-webservices-wsabandoncall)             | Abandona una llamada, una llamada especificada en un proxy de servicio especificado.                                                        |
 
 
 
  
 
-Para obtener información sobre las cancelaciones que afectan a [las operaciones de servicio del](server-side-service-operations.md) lado servidor y a las devoluciones de llamada del modelo de servicio, vea [Cancelación de llamadas.](call-cancellation.md)
+Para obtener información sobre las cancelaciones que afectan [a las operaciones](server-side-service-operations.md) de servicio del lado servidor y las devoluciones de llamada del modelo de servicio, vea [Cancelación de llamadas.](call-cancellation.md)
 
 
  

@@ -1,6 +1,6 @@
 ---
 title: ICM_DRAW mensaje (Vfw.h)
-description: El ICM draw notifica a un controlador de representación que descomprima un marco de datos y \_ lo dibuja en la pantalla.
+description: El ICM DRAW notifica a un controlador de representación que descomprima un fotograma de datos y \_ lo dibuja en la pantalla.
 ms.assetid: eceb42c6-d91a-45b7-98dc-e0944df3e558
 keywords:
 - ICM_DRAW mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d0840c6df2c69f4d3e45600cf8599c214b36200a
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370507"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246290"
 ---
 # <a name="icm_draw-message"></a>\_ICM Draw message (Mensaje DRAW)
 
-El **ICM \_ DRAW notifica** a un controlador de representación que descomprima un marco de datos y lo dibuje en la pantalla.
+El **ICM \_ draw notifica** a un controlador de representación que descomprima un marco de datos y lo dibuja en la pantalla.
 
 
 ```C++

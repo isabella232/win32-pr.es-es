@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 323464d32a2529475823003e51d5bbf0b15c616e32edb0622efe5be7f94dfb4c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cde2e70b04602de5936e945789007a6c5fea8542
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119611465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360091"
 ---
 # <a name="wm_ncmousehover-message"></a>Mensaje \_ WM NCMOUSEHOVER
 
@@ -56,7 +56,7 @@ Estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) que contiene las 
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El seguimiento del mouse se detiene cuando se genera este mensaje. La aplicación debe llamar de [**nuevo a TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) si requiere un seguimiento adicional del comportamiento del mouse.
 
@@ -127,7 +127,7 @@ yPos = GET_Y_LPARAM(lParam);
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**Puntos**](/previous-versions//dd162808(v=vs.85))
+[**PUNTOS**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

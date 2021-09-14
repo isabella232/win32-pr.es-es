@@ -1,11 +1,11 @@
 ---
 title: Método RegisteredTask.Stop
-description: En el caso del scripting, detiene la tarea registrada inmediatamente.
+description: Para el scripting, detiene la tarea registrada inmediatamente.
 ms.assetid: e4a533d8-5cf0-46ba-a603-f7a9c59ab0fd
 keywords:
-- Método Stop Programador de tareas
-- Stop method Programador de tareas , RegisteredTask object
-- RegisteredTask object Programador de tareas , Stop (método)
+- Detener método Programador de tareas
+- Método Stop Programador de tareas , objeto RegisteredTask
+- RegisteredTask object Programador de tareas , Stop (Método)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0496a3b9c8adad0ad4095b6c8aed3888940fd699750350117f4bf503c442f4c8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d2d51cf748bb65a9db38c56fded102ddeb5b40fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119681665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127172954"
 ---
 # <a name="registeredtaskstop-method"></a>Método RegisteredTask.Stop
 
-En el caso del scripting, detiene la tarea registrada inmediatamente.
+Para el scripting, detiene la tarea registrada inmediatamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Reservado. Debe ser cero.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función RegisteredTask.Stop** detiene todas las instancias de la tarea.
 
@@ -63,7 +63,7 @@ Los usuarios de la cuenta del sistema pueden detener una tarea, los usuarios con
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |

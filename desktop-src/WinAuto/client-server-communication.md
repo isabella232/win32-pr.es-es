@@ -4,12 +4,12 @@ description: El mecanismo WinEvents proporciona una manera de que los servidores
 ms.assetid: 992fe603-dcfe-4afd-88db-6d258a7a5f64
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 896b6f6688e0e2929ebb351fe9d7cc210803768a8031faa44a8aca8127b12002
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95b29170d5a903493977af130ef6d48bb3b896b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359432"
 ---
 # <a name="clientserver-communication"></a>Comunicación entre cliente y servidor
 

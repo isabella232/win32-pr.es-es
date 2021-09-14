@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 162944eeb4ee7ca0c72102b704e9f75851bbfb41885e6b79e86d1a438487473f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d4d43f73ab42021235db39adba0a77bc783b97a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118314671"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359412"
 ---
 # <a name="swbemlasterrorclone_-method"></a>Método SWbemLastError.Clone \_
 
@@ -74,7 +74,7 @@ No hay suficiente memoria para completar la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use el **método Clone \_** para duplicar una instancia o definición de clase. Este método es útil cuando necesita hacer una copia de seguridad de la copia original del objeto mientras modifica una nueva copia. Además, use este método para crear muchas instancias nuevas a partir de una única instancia de origen. Por ejemplo, use [**SWbemObject.SpawnInstance \_**](swbemobject-spawninstance-.md) para crear una instancia inicial única y **use SWbemLastError.Clone \_** para generar 100 copias de la instancia rápidamente. Posteriormente, puede modificar los objetos, dando valores específicos a cada objeto.
 
@@ -84,11 +84,11 @@ No es posible usar este método para convertir una definición de clase en una i
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemLastError<br/>                                                        |

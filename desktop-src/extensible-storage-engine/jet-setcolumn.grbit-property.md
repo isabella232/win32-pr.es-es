@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7933c63d6fad03492dfad83a0e6383c9735ca27e2785e630e6a8e93ad65c99b6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f214fdcfa83a09a97d710b401b070048516826e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119729645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174630"
 ---
 # <a name="jet_setcolumngrbit-property"></a>JET_SETCOLUMN.grbit, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece opciones para la operación de establecer columna.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

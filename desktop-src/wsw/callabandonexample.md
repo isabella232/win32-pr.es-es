@@ -5,15 +5,15 @@ ms.assetid: 71253dd6-4f59-4acd-b244-c721834ca381
 keywords:
 - CallAbandoneExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5aa53de83d703850ad3eb24086c59a4322ee51e69f268ee80de1557bc99785d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8fb8b9382d7dbac386e49c21d88d69893090b18e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963454"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359547"
 ---
 # <a name="callabandonexample"></a>CallAbandoneExample
 

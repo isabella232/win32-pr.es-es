@@ -18,12 +18,12 @@ keywords:
 - Archivos TSV (valores separados por tabulaciones)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c5bc0648c19c3c8a6f9ddb819d77e48235bcd684d4911bc8a324a109c49daf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b68af019a5e2302f52f615d5a1dba2180e27cfe5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119863805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243290"
 ---
 # <a name="compiling-a-full-catalog-from-tsv-files"></a>Compilación de un catálogo completo a partir de archivos TSV
 

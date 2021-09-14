@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: a023443f1121759872c4eba0743e5db5b01c8446403b312644e22c83559a527d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 30bfdb9ff8779633d81da89bbf7ac8e69a617d04
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120014385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244256"
 ---
 # <a name="iscardiso7816writerecord-method"></a>Método ISCardISO7816::WriteRecord
 
 \[El **método WriteRecord** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método WriteRecord** construye un comando [*de*](../secgloss/a-gly.md) unidad de datos de protocolo de aplicación (APDU) que inicia una de las siguientes operaciones:
+El **método WriteRecord** construye un comando de unidad de datos [*de*](../secgloss/a-gly.md) protocolo de aplicación (APDU) que inicia una de las siguientes operaciones:
 
 -   La escritura una vez de un registro.
 -   OR lógico **de** los bytes de datos de un registro que ya están presentes en la tarjeta con los bytes de datos del registro dados en el comando APDU.
@@ -122,13 +122,13 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El comando encapsulado solo se puede realizar [](../secgloss/s-gly.md) si el estado de seguridad de la tarjeta inteligente satisface los atributos de seguridad del archivo básico que se está procesando.
 
 Cuando el comando contiene un identificador básico corto válido, establece el archivo como archivo básico actual. Si actualmente se selecciona otro archivo básico en el momento de emitir este comando, este comando se puede procesar sin identificar el archivo seleccionado actualmente.
 
-Si el comando encapsulado se aplica a un archivo básico lineal fijo o estructurado cíclico, se anulará si la longitud del registro es diferente de la longitud del registro existente. Si se aplica a un archivo básico estructurado de variable lineal, se puede llevar a cabo cuando la longitud del registro es diferente de la longitud del registro existente.
+Si el comando encapsulado se aplica a un archivo básico lineal fijo o estructurado cíclico, se anulará si la longitud del registro es diferente de la longitud del registro existente. Si se aplica a un archivo elemental estructurado de variable lineal, se puede llevar a cabo cuando la longitud del registro es diferente de la longitud del registro existente.
 
 Si P2=xxxxx011 y el archivo básico es un archivo cíclico, este comando tiene el mismo comportamiento que un comando construido mediante [**AppendRecord**](iscardiso7816-appendrecord.md).
 
@@ -148,7 +148,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 se define como 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |

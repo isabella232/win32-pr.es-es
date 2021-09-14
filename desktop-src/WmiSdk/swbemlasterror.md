@@ -39,20 +39,20 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: a73312c38857b57f3ffeec8fcaf8a9ea5847001393d0a03d4916da76ffcb8c0b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a00d8e3421800acab7cc4958ddc1e6a75f101958
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118314464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242919"
 ---
 # <a name="swbemlasterror-object"></a>Objeto SWbemLastError
 
 Los métodos y propiedades del **objeto SWbemLastError** contienen y manipulan objetos de error. Los métodos y propiedades de este objeto son exactamente iguales que los del objeto [**SWbemObject,**](swbemobject.md) pero se usan para contener información de error en lugar de información de clase WMI. Este objeto se puede crear mediante la llamada **CreateObject de** VBScript.
 
-Puede crear un objeto de error **SWbemLastError** para inspeccionar la información de error extendida asociada a una llamada al método anterior. Si la información de error no está disponible, se producirá un error al intentar crear un objeto de error. Si la llamada se realiza correctamente y se devuelve un objeto de error, se restablece el estado del objeto. Se producirá un error en otros intentos de recuperar un objeto de error hasta que se produzca un nuevo error. Si realiza una llamada asincrónica que produce un error, el evento [**SWbemSink.OnCompleted**](swbemsink-oncompleted.md) puede devolverle un objeto **SWbemLastError** en el parámetro *objWbemErrorObject.*
+Puede crear un objeto de error **SWbemLastError** para inspeccionar la información de error extendida asociada a una llamada de método anterior. Si la información de error no está disponible, se producirá un error al intentar crear un objeto de error. Si la llamada se realiza correctamente y se devuelve un objeto de error, se restablece el estado del objeto. Se producirá un error en otros intentos de recuperar un objeto de error hasta que se produzca un nuevo error. Si realiza una llamada asincrónica que produce un error, el evento [**SWbemSink.OnCompleted**](swbemsink-oncompleted.md) puede devolverle un objeto **SWbemLastError** en el parámetro *objWbemErrorObject.*
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto SWbemLastError** tiene estos tipos de miembros:
 
@@ -69,7 +69,7 @@ El **objeto SWbemLastError** tiene estos métodos.
 |:---------------------------------------------------------|:---------------------------------------------------------------------------------------------|
 | **Asociadores\_**                                        | No se usa. El [**objeto SWbemObject**](swbemobject.md) proporciona el mismo método.<br/> |
 | **AssociatorsAsync\_**                                   | No se usa. El [**objeto SWbemObject**](swbemobject.md) proporciona el mismo método.<br/> |
-| [**Clon\_**](swbemlasterror-clone-.md)                 | Realiza una copia del objeto actual.<br/>                                               |
+| [**Clonar\_**](swbemlasterror-clone-.md)                 | Realiza una copia del objeto actual.<br/>                                               |
 | [**Compareto\_**](swbemlasterror-compareto-.md)         | Comprueba la igualdad de dos objetos.<br/>                                                   |
 | **Eliminar\_**                                             | No se usa. El [**objeto SWbemObject**](swbemobject.md) proporciona el mismo método.<br/> |
 | **DeleteAsync\_**                                        | No se usa. El [**objeto SWbemObject**](swbemobject.md) proporciona el mismo método.<br/> |
@@ -101,7 +101,7 @@ El **objeto SWbemLastError** tiene estas propiedades.
 |:--------------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Derivación\_**<br/>                                   | Solo lectura<br/> | No se usa. El [**objeto SWbemObject**](swbemobject.md) proporciona el mismo método.<br/>                                                                  |
 | **Métodos\_** <br/>                                     | Solo lectura<br/> | No se usa. El [**objeto SWbemObject**](swbemobject.md) proporciona el mismo método.<br/>                                                                  |
-| [**Ruta de acceso\_**](swbemlasterror-path-.md)<br/>             | Solo lectura<br/> | Contiene un [**objeto SWbemObjectPath**](swbemobjectpath.md) que representa la ruta de acceso del objeto de la clase o instancia actual.<br/>                    |
+| [**Path\_**](swbemlasterror-path-.md)<br/>             | Solo lectura<br/> | Contiene un [**objeto SWbemObjectPath**](swbemobjectpath.md) que representa la ruta de acceso del objeto de la clase o instancia actual.<br/>                    |
 | [**Propiedades\_**](swbemlasterror-properties-.md)<br/> | Solo lectura<br/> | Representa la colección de propiedades del **objeto SWbemLastError.** Esta propiedad es un [**objeto SWbemPropertySet.**](swbempropertyset.md)<br/> |
 | **Calificadores\_**<br/>                                   | Solo lectura<br/> | No se usa. El [**objeto SWbemObject**](swbemobject.md) proporciona el mismo método.<br/>                                                                  |
 | **Seguridad\_**<br/>                                     | Solo lectura<br/> | No se usa. El [**objeto SWbemObject**](swbemobject.md) proporciona el mismo método.<br/>                                                                  |
@@ -112,7 +112,7 @@ El **objeto SWbemLastError** tiene estas propiedades.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de VBScript siguiente se muestra cómo inspeccionar la información del objeto de error y de error.
+En el siguiente ejemplo de VBScript se muestra cómo inspeccionar la información del objeto de error y de error.
 
 
 ```VB
@@ -172,7 +172,7 @@ End If
 
 
 
-En el ejemplo de Perl siguiente se muestra cómo inspeccionar la información del objeto de error y de error.
+En el siguiente ejemplo de Perl se muestra cómo inspeccionar la información del objeto de error y de error.
 
 
 ```
@@ -242,11 +242,11 @@ else
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemLastError<br/>                                                        |
@@ -254,7 +254,7 @@ else
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

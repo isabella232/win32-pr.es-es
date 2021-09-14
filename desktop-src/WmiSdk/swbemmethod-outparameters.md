@@ -16,14 +16,14 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 5dec1b2fe18dae65443b45ee6c1d2efcd1d924a72eb2817869c35406ebbc7808
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2087dd545a37cdc4b82899cb261cfef5fdb1fda6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118314426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359394"
 ---
-# <a name="swbemmethodoutparameters-property"></a>SWbemMethod.OutParameters, propiedad
+# <a name="swbemmethodoutparameters-property"></a>Propiedad SWbemMethod.OutParameters
 
 La **propiedad OutParameters** del objeto [**SWbemMethod**](swbemmethod.md) es un objeto [**SWbemObject**](swbemobject.md) cuyas propiedades definen los parámetros out y el tipo de valor devuelto de este método. Esta propiedad es de solo lectura.
 
@@ -42,7 +42,7 @@ SWbemMethod.OutParameters As Object
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre cómo usar esta propiedad para obtener parámetros de salida de métodos de proveedor, vea Construir objetos [InParameters y Analizar objetos OutParameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md). Tenga en cuenta que los cambios realizados en este objeto no se reflejan en la definición del método subyacente.
 
@@ -50,11 +50,11 @@ Para obtener más información sobre cómo usar esta propiedad para obtener par�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemMethod<br/>                                                           |
@@ -62,7 +62,7 @@ Para obtener más información sobre cómo usar esta propiedad para obtener par�
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: be09292cad1181c9bac84a4ecb5346b01b0a58c73e2e545d7386658ac54a1f11
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 552db3afd07677777b47e939d659c0f6e333e496
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119120119"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360516"
 ---
 # <a name="msad4"></a>msad4
 
@@ -62,7 +62,7 @@ Compara un valor de referencia de 4 bytes y un valor de origen de 8 bytes y acum
 
 Vector de 4 sumas. Cada suma corresponde a la suma enmascarada de diferencias absolutas de diferentes alineaciones de bytes entre el valor de referencia y el valor de origen. **msad4** no incluye ninguna diferencia en la suma si esa diferencia está enmascarada (es decir, el byte de referencia es 0).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para usar la función intrínseca **msad4** en el código del sombreador, llame al método [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-checkfeaturesupport) con [**D3D11 \_ FEATURE \_ D3D11 \_ OPTIONS**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_feature) para comprobar que el dispositivo Direct3D admite la opción de característica [**SAD4ShaderInstructions.**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options) La **función intrínseca msad4** requiere un controlador de pantalla WDDM 1.2 y todos los controladores de pantalla de WDDM 1.2 deben admitir **msad4.** Si la aplicación crea un dispositivo de representación con el nivel [de](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) característica 11.0 o 11.1 y el destino de compilación es el modelo de sombreador 5 o posterior, el código fuente HLSL puede usar la función intrínseca **msad4.**
 
@@ -76,7 +76,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                | Compatible |
 |-------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5 o posterior](d3d11-graphics-reference-sm5.md) | Sí       |
+| [Modelo de sombreador 5 o posterior](d3d11-graphics-reference-sm5.md) | sí       |
 
 
 
@@ -131,7 +131,7 @@ buf_accum[DTid.x] = accum;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

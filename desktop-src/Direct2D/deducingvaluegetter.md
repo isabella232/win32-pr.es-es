@@ -1,6 +1,6 @@
 ---
 title: DeducingValueGetter (D2d1effecthelpers.h)
-description: Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del getter de propiedad member-function para una propiedad de tipo de valor.
+description: Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del getter de propiedad de función miembro para una propiedad de tipo de valor.
 ms.assetid: E2E5CCC3-B112-4D3C-8840-121A55C4F1A2
 keywords:
 - DeducingValueGetter Direct2D
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 743c4e457c9dc3f6e29c4bfc78e539256869a2d30a055168384d287911ca4d4c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6332dd6eac823457882513f97557939db884efcf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119652955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163422"
 ---
 # <a name="deducingvaluegetter"></a>DeducingValueGetter
 
-Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del getter de propiedad member-function para una propiedad de tipo de valor.
+Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del getter de propiedad de función miembro para una propiedad de tipo de valor.
 
 > [!Note]  
 > No se debe llamar directamente a DeducingValueGetter.
@@ -51,7 +51,7 @@ HRESULT DeducingValueGetter(
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -6,12 +6,12 @@ keywords:
 - D2D1 namespace,functions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2dc903ea53080794d6c249dcc18d76ab7207eabfbb024e78a6f0b14e5299676
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e94f20d2fcf5d954cacc62e24948ad2a29aa25cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119757905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163474"
 ---
 # <a name="direct2d-helper-functions"></a>Funciones auxiliares de Direct2D
 
@@ -69,9 +69,9 @@ El espacio de nombres D2D1 define las siguientes funciones.
 | [**RenderingControls**](/windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-renderingcontrols)<br/>                                                             | Devuelve una estructura D2D1 \_ RENDERING \_ CONTROLS rellena.<br/>                                                                                                                                                                               |
 | [**RoundedRect**](/windows/desktop/api/d2d1helper/nf-d2d1helper-roundedrect)<br/>                                                                         | Crea una [**estructura D2D1 \_ ROUNDED \_ RECT.**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_rounded_rect)<br/>                                                                                                                                                               |
 | [**SetDpiCompensatedEffectInput**](/windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-setdpicompensatedeffectinput)<br/>                                       | Establece un mapa de bits como entrada de efecto, al insertar un efecto de compensación de PPP para conservar la apariencia visual a medida que cambia el PPP del contexto del dispositivo.<br/>                                                                                      |
-| [**Size(Type)**](size-type-.md)<br/>                                                                           | Crea una estructura de tamaño que almacena su ancho y alto con el tipo de datos especificado.<br/>                                                                                                                                            |
+| [**Size(Type)**](size-type-.md)<br/>                                                                           | Crea una estructura de tamaño que almacena su ancho y alto utilizando el tipo de datos especificado.<br/>                                                                                                                                            |
 | [**SizeF**](/windows/desktop/api/d2d1helper/nf-d2d1helper-sizef)<br/>                                                                                     | Crea una [**estructura D2D1 \_ SIZE \_ F**](d2d1-size-f.md) que contiene el ancho y alto especificados.<br/>                                                                                                                              |
-| [**SizeU**](/windows/desktop/api/d2d1helper/nf-d2d1helper-sizeu)<br/>                                                                                     | Crea una [**estructura D2D1 \_ SIZE \_ U**](d2d1-size-u.md) que contiene el ancho y alto especificados.<br/>                                                                                                                              |
+| [**SizeU**](/windows/desktop/api/d2d1helper/nf-d2d1helper-sizeu)<br/>                                                                                     | Crea una [**estructura D2D1 \_ SIZE \_ U**](d2d1-size-u.md) que contiene el ancho y el alto especificados.<br/>                                                                                                                              |
 | [**StrokeStyleProperties**](/windows/desktop/api/d2d1helper/nf-d2d1helper-strokestyleproperties)<br/>                                                     | Crea una estructura [**D2D1 \_ STROKE \_ STYLE \_ PROPERTIES.**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_stroke_style_properties) <br/>                                                                                                                                       |
 | [**StrokeStyleProperties1**](/windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-strokestyleproperties1)<br/>                                                   | Devuelve una estructura D2D1 \_ STROKE \_ STYLE \_ PROPERTIES1 rellena.<br/>                                                                                                                                                                        |
 | [**Vector2F**](/windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-vector2f)<br/>                                                                               | Devuelve una estructura [**D2D1 \_ VECTOR \_ 2F**](/windows/win32/api/dcommon/ns-dcommon-d2d_vector_2f) rellena.<br/>                                                                                                                                                              |

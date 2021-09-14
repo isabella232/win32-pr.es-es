@@ -4,12 +4,12 @@ ms.assetid: 58f03dc2-cc31-4d76-b75a-f332da1f900f
 title: Cómo escribir un códec de WIC-Enabled
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e54339191626aefa8d6fb6cb53c88c9d2098d3e898e0805b796535323a9f98d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee694d9a857781e97a31cb37f5ef18c518dae964
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117668132"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359612"
 ---
 # <a name="how-to-write-a-wic-enabled-codec"></a>Cómo escribir un códec de WIC-Enabled
 
@@ -18,7 +18,7 @@ Esta sección de temas proporciona a los desarrolladores instrucciones sobre có
 <dl>
 
 [Introducción](-wic-howtowriteacodec-intro.md)  
-[Funcionamiento del Windows imaging component (WIC)](-wic-howwicworks.md)  
+[Funcionamiento del Windows de creación de imágenes (WIC)](-wic-howwicworks.md)  
 <dl>
 
 [Detección y arbitraje](-wic-howwicworks.md)  
@@ -69,7 +69,7 @@ Esta sección de temas proporciona a los desarrolladores instrucciones sobre có
 [Windows Almacén de propiedades](-wic-integrationregentries.md)  
 [Windows Vista Galería de fotos](-wic-integrationregentries.md)  
 [Windows Caché de miniaturas de Vista](-wic-integrationregentries.md)  
-</dl> </dd> </dl> </dd> <a href="-wic-codecinstallandreg.md">Actualización de la caché de miniaturas al instalar un códec</a> que hace que el códec de WIC-Enabled esté disponible para los [usuarios.](-wic-codecinstallandreg.md) </dl> </dd> <a href="-wic-howtowriteacodec-conclusion.md"></a>  
+</dl> </dd> </dl> </dd> <a href="-wic-codecinstallandreg.md">Actualización de la caché de miniaturas al instalar un códec</a> que hace que el códec WIC-Enabled esté disponible para los [usuarios.](-wic-codecinstallandreg.md) </dl> </dd> <a href="-wic-howtowriteacodec-conclusion.md"></a>  
 </dl>
 
 ## <a name="related-topics"></a>Temas relacionados

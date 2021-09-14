@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0709b24779d3aac90d496b38b4654596479ad7a9122660158b53b4b2e75ba622
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d517e13f8da103b1f9cee9498cce58a62eaf6462
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118336723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359492"
 ---
 # <a name="playlist-object"></a>Objeto de lista de reproducción
 
@@ -75,7 +75,7 @@ Se **tiene acceso** al objeto Playlist a través de las siguientes propiedades y
 
  
 
-Dado que es el medio de acceso más común, el *reproductor .* **currentPlaylist** se usa para fines ilustrativos en las secciones de sintaxis de referencia.
+Dado que es el medio de acceso más común, el *reproductor .* **currentPlaylist se** usa para fines ilustrativos en las secciones de sintaxis de referencia.
 
 ## <a name="see-also"></a>Vea también
 

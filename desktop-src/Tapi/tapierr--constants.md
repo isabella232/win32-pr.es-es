@@ -4,12 +4,12 @@ ms.assetid: 6d1cf18b-efeb-4703-9b8e-fce59b61b63f
 title: TAPIERR_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40f84e8f5cbe840ba428575d3ea6aeff40242fdbd2b97440d7538893421eab7d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e8a60e2a625ff456a4a8aa2730b80000e92ff54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119773045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361754"
 ---
 # <a name="tapierr_-constants"></a>Constantes \_ TAPIERR
 
@@ -212,12 +212,12 @@ El identificador de solicitud al que se hace referencia no es válido.
 
 
 
-Se hubo una referencia a un identificador de ventana desconocido.
+Se hace referencia a un identificador de ventana desconocido.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cualquier otro valor TAPIERR \_ está obsoleto y no se debe usar.
 
@@ -228,7 +228,7 @@ Cualquier otro valor TAPIERR \_ está obsoleto y no se debe usar.
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

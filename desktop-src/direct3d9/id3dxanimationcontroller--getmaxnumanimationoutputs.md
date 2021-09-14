@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3dd1c79d2b9738f5d99ec735c77a8b30b0b20b747e2604064466aff47890e892
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44060041bfb9368a8df0509ed72337aacfe3bc8b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119373165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174774"
 ---
 # <a name="id3dxanimationcontrollergetmaxnumanimationoutputs-method"></a>Método ID3DXAnimationController::GetMaxNumAnimationOutputs
 
@@ -55,7 +55,7 @@ Número máximo de salidas de animación que el controlador puede administrar.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

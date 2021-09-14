@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6238d3dbb45d4f832f44f3b67e83b9285a3bd206b3209c494121d78700a20763
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fcfcdc75bcf10b922a242574bfabe267c949fa52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007923"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244323"
 ---
 # <a name="iscardfileaccess-interface"></a>Interfaz ISCardFileAccess
 
@@ -35,13 +35,13 @@ A continuación se muestra un uso típico de **la interfaz ISCardFileAccess.** E
 
 1.  Llame [**a ISCardManage::CreateFileAccess para**](iscardmanage-createfileaccess.md) crear una interfaz **ISCardFileAccess.**
 2.  Llame [**a Abrir**](iscardfileaccess-open.md) para seleccionar y abrir el archivo.
-3.  Llame a [**Write**](iscardfileaccess-write.md).
+3.  Llame [**a Write**](iscardfileaccess-write.md).
 4.  Llame [**a Close**](iscardfileaccess-close.md).
 5.  Libere la **interfaz ISCardFileAccess.**
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **interfaz ISCardFileAccess** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **ISCardFileAccess** también tiene estos tipos de miembros:
+La **interfaz ISCardFileAccess** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **ISCardFileAccess también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -54,7 +54,7 @@ La **interfaz ISCardFileAccess** tiene estos métodos.
 | Método                                                              | Descripción                                                                                                                                  |
 |:--------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
 | [**ChangeDir**](iscardfileaccess-changedir.md)                     | Cambia el directorio de tarjeta inteligente actual al nuevo directorio especificado.<br/>                                                          |
-| [**Cerrar**](iscardfileaccess-close.md)                             | Cierra el archivo especificado.<br/>                                                                                                        |
+| [**Cerca**](iscardfileaccess-close.md)                             | Cierra el archivo especificado.<br/>                                                                                                        |
 | [**Crear**](iscardfileaccess-create.md)                           | Crea un archivo en una ubicación determinada dentro del sistema de archivos DE LAN.<br/>                                                                    |
 | [**Eliminar**](iscardfileaccess-delete.md)                           | Elimina un archivo especificado.<br/>                                                                                                         |
 | [**Directorio**](iscardfileaccess-directory.md)                     | Recupera una lista de archivos.<br/>                                                                                                        |
@@ -62,9 +62,9 @@ La **interfaz ISCardFileAccess** tiene estos métodos.
 | [**GetFileCapabilities**](iscardfileaccess-getfilecapabilities.md) | Recupera las funcionalidades de archivo.<br/>                                                                                                      |
 | [**GetProperties**](iscardfileaccess-getproperties.md)             | Recupera los datos primitivos a los que se hace referencia mediante etiquetas para el objeto especificado.<br/>                                                           |
 | [**Invalidate**](iscardfileaccess-invalidate.md)                   | Hace que el archivo especificado no sea válido.<br/>                                                                                               |
-| [**Abierto**](iscardfileaccess-open.md)                               | Abre el archivo especificado para su uso posterior.<br/>                                                                                         |
+| [**Abrir**](iscardfileaccess-open.md)                               | Abre el archivo especificado para su uso adicional.<br/>                                                                                         |
 | [**Lectura**](iscardfileaccess-read.md)                               | Lee y devuelve los datos especificados de un archivo determinado.<br/>                                                                           |
-| [**Rehabilitar**](iscardfileaccess-rehabilitate.md)               | Convierte un archivo (EF o DF), que se ha convertido previamente en no válido mediante el comando Invalidar, al que puede acceder la aplicación.<br/> |
+| [**Rehabilitar**](iscardfileaccess-rehabilitate.md)               | Hace que un archivo (EF o DF) que se haya convertido previamente en no válido mediante el comando Invalidar, accesible por la aplicación.<br/> |
 | [**Seek**](iscardfileaccess-seek.md)                               | Selecciona el objeto desde el que se realizará el permiso de lectura y escritura.<br/>                                                                 |
 | [**SetProperties**](iscardfileaccess-setproperties.md)             | Establece los datos primitivos a los que se hace referencia mediante etiquetas para el objeto especificado.<br/>                                                                |
 | [**Escritura**](iscardfileaccess-write.md)                             | Escribe datos en un archivo abierto actual.<br/>                                                                                             |
@@ -79,7 +79,7 @@ La **interfaz ISCardFileAccess** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                       |

@@ -4,12 +4,12 @@ ms.assetid: 6763a490-8d1a-42d2-a8cb-0743b7ba6866
 title: Propiedad MSIRMSHUTDOWN
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac31a924727217ac86937f4f7ac553717138461e0668a7e79916ffab796f8bd7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4011e4fad980913271012dd86de44eec8c514f7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169746"
 ---
 # <a name="msirmshutdown-property"></a>Propiedad MSIRMSHUTDOWN
 
@@ -21,7 +21,7 @@ La **propiedad MSIRMSHUTDOWN** determina cómo se deben apagar las aplicaciones 
 
 | Value                                                                        | Significado                                                                                                                                                                                                                                                                 |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl> | Los procesos o servicios que usan actualmente archivos afectados por la actualización se cierran.<br/>                                                                                                                                                                   |
+| <dl> <dt>0</dt> </dl> | Los procesos o servicios que actualmente usan archivos afectados por la actualización se cierran.<br/>                                                                                                                                                                   |
 | <dl> <dt>1</dt> </dl> | Los procesos o servicios que actualmente usan archivos afectados por la actualización y que no responden al Administrador de reinicio [se](../rstmgr/restart-manager-portal.md)ven obligados a cerrarse.<br/>                                                                                       |
 | <dl> <dt>2</dt> </dl> | Los procesos o servicios que actualmente usan archivos afectados por la actualización se cierran solo si todos se han registrado para un reinicio. Si no se ha registrado ningún proceso o servicio para un reinicio, no se cierra ningún proceso o servicio.<br/> |
 
@@ -29,7 +29,7 @@ La **propiedad MSIRMSHUTDOWN** determina cómo se deben apagar las aplicaciones 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **propiedad MSIRMSHUTDOWN** se omite si [el Administrador de reinicio](../rstmgr/restart-manager-portal.md) no está disponible o deshabilitado.
 

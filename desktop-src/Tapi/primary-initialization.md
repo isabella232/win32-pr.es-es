@@ -4,12 +4,12 @@ ms.assetid: 10df0fb4-08d6-4ba0-85f7-108cc4e237c1
 title: Inicialización principal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae187692f1eb64546398a273bc823ab93f622b6a0472848c31f9d94b9ecd7e95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4bcf37eecdee18861732dd27a4b134face9a17d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119060593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173082"
 ---
 # <a name="primary-initialization"></a>Inicialización principal
 

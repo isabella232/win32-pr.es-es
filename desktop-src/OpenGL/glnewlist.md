@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0103baa9786cdfed0d6e999021453e30da5083571c9a2c9054da701977a9493f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6135f67c07f69d24df67d4f1899404359efaa7aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119741345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375162"
 ---
 # <a name="glnewlist-function"></a>función glNewList
 
@@ -79,12 +79,12 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *list* era cero.<br/>                                                                                                           |
-| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *mode* no era un valor aceptado.<br/>                                                                                          |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *mode* no era un valor aceptado.<br/>                                                                                          |
 | <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las listas para mostrar son grupos de comandos OpenGL que se han almacenado para su posterior ejecución. Las listas para mostrar se crean **con glNewList.** Todos los comandos posteriores se colocan en la lista de visualización, en el orden emitido, hasta que **se llama a glEndList.**
 

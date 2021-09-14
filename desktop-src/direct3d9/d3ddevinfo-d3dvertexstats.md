@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 80edbdcdeea5df6ff020c0c4cc2179db5152c15cc4965efe6580db7fd7bdcc48
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f3baa6738e5d90d2353beb6c7d7bf0ab85770af4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174829"
 ---
 # <a name="d3ddevinfo_d3dvertexstats-structure"></a>D3DDEVINFO \_ D3DVERTEXSTATS (estructura)
 
@@ -36,7 +36,7 @@ typedef struct D3DDEVINFO_D3DVERTEXSTATS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -62,9 +62,9 @@ Número de triángulos nuevos generados por el recorte.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use el tiempo de ejecución de depuración y el procesamiento de vértices de software para obtener el número de primitivas no recortadas y recortadas para una escena determinada. Normalmente, las primitivas se recortarán en función de una banda de protección (si hay una). La banda de protección de recorte se establece con parámetros como GuardBandLeft en [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
+Use el tiempo de ejecución de depuración y el procesamiento de vértices de software para obtener el número de primitivas no recortadas y recortadas para una escena determinada. Las primitivas normalmente se recortarán en función de una banda de protección (si hay una). La banda de protección de recorte se establece con parámetros como GuardBandLeft en [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
 
 ## <a name="requirements"></a>Requisitos
 

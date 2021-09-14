@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INDEX_RANGE. startColumns'
-title: Propiedad JET_INDEX_RANGE. startColumns (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_INDEX_RANGE.startColumns'
+title: JET_INDEX_RANGE.startColumns (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'startColumns property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE.startColumns
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_range.startcolumns(v=EXCHG.10)
@@ -27,18 +27,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 6bbd80d9cec37131d53d6607b9ff17c59eaf73c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707034"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361228"
 ---
-# <a name="jet_index_rangestartcolumns-property"></a>Propiedad JET_INDEX_RANGE. startColumns
+# <a name="jet_index_rangestartcolumns-property"></a>JET_INDEX_RANGE.startColumns, propiedad
 
 Obtiene o establece los valores de columna para el inicio del índice.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public JET_INDEX_COLUMN[] startColumns { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Automáticamente \[\]  
+Tipo: \[\]  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEX_RANGE (clase)](./jet-index-range-class.md)
+[JET_INDEX_RANGE clase](./jet-index-range-class.md)
 
-[Miembros de JET_INDEX_RANGE](./jet-index-range-members.md)
+[JET_INDEX_RANGE miembros](./jet-index-range-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

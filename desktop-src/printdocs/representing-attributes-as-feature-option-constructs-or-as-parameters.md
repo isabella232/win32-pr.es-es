@@ -4,12 +4,12 @@ ms.assetid: 055e502d-631f-49d2-8577-65396373d478
 title: Representar atributos como construcciones de características o opciones o como parámetros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e0a1d1923eb019ae1985b2000896389fa9c945b25430eda77e59e9c673d8ba9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c93f4de56709ed310a7f0aa259b1dbfd3377ed42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120091695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359693"
 ---
 # <a name="representing-attributes-as-featureoption-constructs-or-as-parameters"></a>Representar atributos como construcciones de características o opciones o como parámetros
 

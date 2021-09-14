@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29b79b0f4e3ad18ed4e044f894d63ec5059477f80999a8b96dc461d9499b29cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a47b382da4ae214c9a830cc64fb1aa0d0edadbf6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118336568"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359486"
 ---
 # <a name="playlistrightstatus"></a>PLAYLIST.rightStatus
 
@@ -31,7 +31,7 @@ El **atributo rightStatus** especifica o recupera el texto de estado que se mues
 
 Este atributo es una cadena de lectura **y escritura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo puede combinar cualquier texto con palabras clave específicas que mostrarán la información deseada, como la duración total de la lista de reproducción. Las palabras clave están rodeados de símbolos de porcentaje (%) para mantenerlos distintos del texto normal.
 
@@ -44,7 +44,7 @@ Se pueden usar las siguientes palabras clave.
 | count                 | Número de elementos de la lista de reproducción.                                                                                                                                                                             |
 | tamaño                  | Tamaño total de la lista de reproducción.                                                                                                                                                                                  |
 | duration              | Duración total de la lista de reproducción.                                                                                                                                                                              |
-| *Xxx*                 | Hace un **elemento getItemInfo en** la lista de reproducción, *donde XXX* es el elemento que se va a recibir.                                                                                                                                 |
+| *XXX*                 | Hace un **elemento getItemInfo en** la lista de reproducción, *donde XXX* es el elemento que se va a recibir.                                                                                                                                 |
 | SelectedSize          | Tamaño total de las entradas seleccionadas en la lista de reproducción.                                                                                                                                                          |
 | SelectedCount         | Número total de entradas seleccionadas en la lista de reproducción.                                                                                                                                                            |
 | SelectedDuration      | Duración total de las entradas seleccionadas en la lista de reproducción.                                                                                                                                                      |
@@ -64,7 +64,7 @@ El valor "Tiempo total: %duration%" para una lista de reproducción que contiene
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 

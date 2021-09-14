@@ -4,12 +4,12 @@ description: Identifica la propiedad \_ CommandId de PKEY \_ de la interfaz de u
 ms.assetid: 81d389b0-e4c4-4e39-bdc8-b0a2ea8996dd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0aceb8a807667b9dcb4174bad8c4ed21d2d7b777e5c431d57df87f486cacc5e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 468456092014d0cc69cc1f57a40d56fbea3b4695
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117656463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359948"
 ---
 # <a name="ui_pkey_commandid"></a>UI \_ PKEY \_ CommandId
 
@@ -25,9 +25,9 @@ propertyDescription
       type = VT_UI4
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La interfaz de usuario PKEY CommandId la usa una aplicación para consultar los id. de \_ los comandos en un control de \_ galería.
+La interfaz de usuario PKEY CommandId la usa una aplicación para consultar los id. de \_ los comandos de un control de la \_ galería.
 
 El valor de propiedad es el identificador de un comando.
 

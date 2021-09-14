@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - prntvpt.dll
-ms.openlocfilehash: e6325ca61d18d571a3a3b346b18f6191b53e43d2ce96799c34a643477123f20c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cf05ab6739dad09332ebc6746a05f3c40ef32de6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120112685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168085"
 ---
 # <a name="convertprinttickettodevmodethunk2-function"></a>Función ConvertPrintTicketToDevModeThunk2
 

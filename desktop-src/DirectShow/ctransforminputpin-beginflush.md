@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8199543491c27272cea96e994e9fc301c0ed53e2783fb2abff5677241c75dde4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4d028634364ca59ae293d9ebb60a464974ccd74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246632"
 ---
 # <a name="ctransforminputpinbeginflush-method"></a>Método CTransformInputPin.BeginFlush
 
@@ -55,7 +55,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método llama al método [**CBaseInputPin::BeginFlush del**](cbaseinputpin-beginflush.md) pin. A continuación, llama al método [**CTransformFilter::BeginFlush**](ctransformfilter-beginflush.md) del filtro para entregar la llamada de nivel inferior.
 

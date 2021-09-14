@@ -1,11 +1,11 @@
 ---
-title: Network. setProxyPort (método)
-description: El método setProxyPort especifica el puerto del proxy que se va a usar. | Network. setProxyPort (método)
+title: Método Network.setProxyPort
+description: El método setProxyPort especifica el puerto proxy que se usará. | Método Network.setProxyPort
 ms.assetid: 09cfce4a-191c-4596-b678-15d9328d5c53
 keywords:
-- método setProxyPort de Windows Media Player
-- método setProxyPort Windows Media Player, clase de red
-- Clase de red Windows Media Player, método setProxyPort
+- Método setProxyPort Reproductor de Windows Media
+- Método setProxyPort Reproductor de Windows Media , clase Network
+- Clase de red Reproductor de Windows Media , método setProxyPort
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 2438688535e4727688ddbd5d67fd65cbed15864d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698496"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243225"
 ---
-# <a name="networksetproxyport-method"></a>Network. setProxyPort (método)
+# <a name="networksetproxyport-method"></a>Método Network.setProxyPort
 
-El método **setProxyPort** especifica el puerto del proxy que se va a usar.
+El **método setProxyPort** especifica el puerto proxy que se usará.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,17 +43,17 @@ Network.setProxyPort(
 
 <dl> <dt>
 
-*Protocolo* \[ de de\]
+*protocolo* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**Cadena** que especifica el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> <dt>
 
-*Puerto* \[ de de\]
+*puerto* \[ En\]
 </dt> <dd>
 
-**Número** (**largo**) que especifica el puerto del proxy que se va a usar.
+**Number** (**long**) que especifica el puerto de proxy que se usará.
 
 </dd> </dl>
 
@@ -63,15 +63,15 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Este método no tiene ningún efecto a menos que **getProxySettings** devuelva un valor de 2 (use la configuración manual).
+Este método no tiene ningún efecto a menos **que getProxySettings** devuelva un valor de 2 (use la configuración manual).
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **setProxyPort** para especificar el número de puerto del proxy de Windows Media Player para el protocolo MMS. El número de puerto se recupera de un elemento de entrada HTML con ID = "PORT". El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **setProxyPort para** especificar el número de puerto Reproductor de Windows Media proxy para el protocolo MMS. El número de puerto se recupera de un elemento HTML INPUT con id. = "PORT". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -100,7 +100,7 @@ alert("Proxy settings must be manual!");
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

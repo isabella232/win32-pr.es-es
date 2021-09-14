@@ -1,11 +1,11 @@
 ---
 title: Método INapEnforcementClientConnection GetSoHRequest (NapEnforcementClient.h)
-description: Obtiene el soH-request actual.
+description: Obtiene la solicitud SoH-Request actual.
 ms.assetid: 21397a0d-ef18-494e-9c5a-43d7f6216a67
 keywords:
-- Método NAP de GetSoHRequest
-- Método NAP de GetSoHRequest, interfaz INapEnforcementClientConnection
-- INapEnforcementClientConnection interface NAP , Método GetSoHRequest
+- Nap del método GetSoHRequest
+- Método NAP de GetSoHRequest , interfaz INapEnforcementClientConnection
+- INapEnforcementClientConnection interface NAP , método GetSoHRequest
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4cef3fc1368e3973a4643d1130cb10dbe307f102cb195a341332476bb42c691
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6115e607f810aef67911ec7d7800d35207368e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118939933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362151"
 ---
 # <a name="inapenforcementclientconnectiongetsohrequest-method"></a>Método INapEnforcementClientConnection::GetSoHRequest
 
@@ -30,7 +30,7 @@ ms.locfileid: "118939933"
 
  
 
-El **método INapEnforcementClientConnection::GetSoHRequest** obtiene el soH-request actual.
+El **método INapEnforcementClientConnection::GetSoHRequest** obtiene el soH-Request actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,11 +70,11 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Lo establece NapAgent y lo consultan los aplicadores para enviarlos en la conexión.
+Lo establece NapAgent y los aplicadores lo consultan para enviarlos en la conexión.
 
-Un paquete SoH de longitud de cero bytes no es válido.
+Un paquete SoH de longitud cero byte no es válido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,13 +84,13 @@ Un paquete SoH de longitud de cero bytes no es válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

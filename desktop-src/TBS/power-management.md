@@ -4,12 +4,12 @@ description: El TBS recibe eventos de administración de energía.
 ms.assetid: 21f76bea-a313-46b7-99b3-422f17376a5a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ece75e95065ca21d81ce7a3447cead33b6e3b8ae6693617fcb16bb27a30dd94d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71e21f2c6a2292b7d49fae3b15691703fa34667a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118880699"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243806"
 ---
 # <a name="power-management-tpm-base-services"></a>Administración de energía (Servicios base de TPM)
 

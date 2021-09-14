@@ -1,5 +1,5 @@
 ---
-description: El método estático de la clase WMI SetNumForwardPackets se usa para establecer el número de encabezados de paquetes IP asignados para la cola de paquetes del enrutador. Cuando todos los encabezados están en uso, el enrutador empezará a descartar paquetes de la cola de forma aleatoria.
+description: El método estático de la clase WMI SetNumForwardPackets se usa para establecer el número de encabezados de paquetes IP asignados para la cola de paquetes del enrutador. Cuando todos los encabezados estén en uso, el enrutador comenzará a descartar paquetes de la cola de forma aleatoria.
 ms.assetid: cadc7565-4cad-4e0f-a1eb-bf99d333bb28
 ms.tgt_platform: multiple
 title: Método SetNumForwardPackets de la Win32_NetworkAdapterConfiguration clase
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1962746cffb64733d6935bb4ef655a96cce051cc67fb1a4f2e730e4ff5ce0d7e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f46ecd62766b5df642dff1e52614171a513a8fca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174057"
 ---
 # <a name="setnumforwardpackets-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetNumForwardPackets de la clase \_ NetworkAdapterConfiguration de Win32
 
-El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetNumForwardPackets** se usa para establecer el número de encabezados de paquetes IP asignados para la cola de paquetes del enrutador. Cuando todos los encabezados están en uso, el enrutador empezará a descartar paquetes de la cola de forma aleatoria.
+El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetNumForwardPackets** se usa para establecer el número de encabezados de paquetes IP asignados para la cola de paquetes del enrutador. Cuando todos los encabezados estén en uso, el enrutador comenzará a descartar paquetes de la cola de forma aleatoria.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ uint32 SetNumForwardPackets(
 *NumForwardPackets* \[ En\]
 </dt> <dd>
 
-Número de encabezados de paquetes IP asignados para la cola de paquetes del enrutador. Debe ser al menos tan grande como el valor de la propiedad [**ForwardBufferMemory**](win32-networkadapterconfiguration.md) dividido por el tamaño máximo de datos IP de las redes conectadas al enrutador. No debe ser mayor que el valor **ForwardBufferMemory** dividido entre 256, ya que cada paquete requiere al menos 256 bytes de memoria de búfer de reenvío. El número óptimo de paquetes de reenvío para un tamaño **ForwardBufferMemory** determinado depende del tipo de tráfico que se lleva a cabo en la red y estará en algún lugar entre estos dos valores. Si el enrutador está deshabilitado, este parámetro se omite y no se asignan encabezados. Intervalo válido: 1 - 0xFFFFFFFE.
+Número de encabezados de paquetes IP asignados para la cola de paquetes del enrutador. Debe ser al menos tan grande como el valor de la propiedad [**ForwardBufferMemory**](win32-networkadapterconfiguration.md) dividida por el tamaño máximo de datos IP de las redes conectadas al enrutador. No debe ser mayor que el valor **ForwardBufferMemory** dividido entre 256, ya que cada paquete requiere al menos 256 bytes de memoria de búfer de reenvío. El número óptimo de paquetes de reenvío para un tamaño **ForwardBufferMemory** determinado depende del tipo de tráfico que se lleva a cabo en la red y estará en algún lugar entre estos dos valores. Si el enrutador está deshabilitado, este parámetro se omite y no se asignan encabezados. Intervalo válido: 1 - 0xFFFFFFFE.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no se requiere reinicio.
+Finalización correcta, no es necesario reiniciar.
 
 </dd> <dt>
 
@@ -73,12 +73,12 @@ Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
-**Método no admitido en esta plataforma**
+**Método no compatible con esta plataforma**
 </dt> <dd>
 
 64
 
-Método no admitido en esta plataforma.
+Método no compatible con esta plataforma.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión dhcp.
+No se puede renovar la concesión DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-Ip no habilitada en el adaptador.
+IP no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco/red**
+**Error de límites de número de marco o red**
 </dt> <dd>
 
 86
@@ -280,7 +280,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de fotograma no válido**
+**Tipo de marco no válido**
 </dt> <dd>
 
 87
@@ -312,7 +312,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de los límites.
+Parámetro fuera de límites.
 
 </dd> <dt>
 
@@ -321,11 +321,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -379,7 +379,7 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No todas las concesiones DHCP se pueden liberar o renovar**
+**No todas las concesiones DHCP se podrían liberar o renovar**
 </dt> <dd>
 
 98
@@ -406,13 +406,13 @@ DHCP no habilitado en el adaptador.
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo modificar el número de paquetes](https://Gallery.TechNet.Microsoft.Com/4123c28e-25c4-444e-818b-67bdbcc0cd4c) de reenvío permitidos de VBScript configura el número de paquetes de reenvío asignados a la cola de paquetes de enrutador.
+El ejemplo Modify the Number of Allowed Forward Packets VBScript (Modificar el número de paquetes de reenvío [permitidos](https://Gallery.TechNet.Microsoft.Com/4123c28e-25c4-444e-818b-67bdbcc0cd4c) de VBScript) configura el número de paquetes de reenvío asignados a la cola de paquetes del enrutador.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -432,7 +432,7 @@ El [ejemplo modificar el número de paquetes](https://Gallery.TechNet.Microsoft.
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: f68601acde884d15572871848eed2d2388c927cf04758ad1183343486d4cc0f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8bdfef0229a646e802878a96370d27d49a6bfc2d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118470284"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359692"
 ---
 # <a name="resetprinter-function"></a>Función ResetPrinter
 
-La **función ResetPrinter** especifica el tipo de datos y los valores de modo de dispositivo que se usarán para imprimir documentos enviados por la [**función StartDocPrinter.**](startdocprinter.md) Estos valores se pueden invalidar mediante la función [**SetJob**](setjob.md) después de que se haya iniciado la impresión de documentos.
+La **función ResetPrinter** especifica el tipo de datos y los valores de modo de dispositivo que se usarán para imprimir documentos enviados por [**la función StartDocPrinter.**](startdocprinter.md) Estos valores se pueden invalidar mediante la función [**SetJob**](setjob.md) después de que se haya iniciado la impresión de documentos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,7 +64,7 @@ Si la función se realiza correctamente, el valor devuelto es un valor distinto 
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
@@ -75,7 +75,7 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -86,7 +86,7 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

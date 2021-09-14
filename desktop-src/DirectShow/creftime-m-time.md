@@ -1,7 +1,7 @@
 ---
 description: Especifica el valor REFERENCE \_ TIME.
 ms.assetid: 8004f7a2-c882-40dd-a248-cf8da06eebec
-title: CRefTime::m_time miembro (Reftime.h)
+title: Miembro CRefTime::m_time (Reftime.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 15c0222bf22937be08d450f5b3f050e458c1bb4234015a895b3939019165a59d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 560373f0f0eca57b17210befc052a0d2c4d9ddbc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120108125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246693"
 ---
 # <a name="creftimem_time-member"></a>Miembro de hora CRefTime::m \_
 
@@ -43,7 +43,7 @@ REFERENCE_TIME m_time;
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | CRefTime (clase)<br/>                                                                                                                                                                  |
-| Header<br/>  | <dl> <dt>Reftime.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Reftime.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a3cc1815349a2194d5dd7e2a65eb1c9ae77a2947f41361a90e92bae73357f81
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86b723830ecdd0f8b7e3faa9da9adcb51161b297
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119499125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174866"
 ---
 # <a name="wm_paste-message"></a>Mensaje \_ DE WM PASTE
 
-Una aplicación envía un **mensaje WM \_ PASTE** a un control de edición o a un cuadro combinado para copiar el contenido actual del Portapapeles en el control de edición en la posición del cursor de diálogo actual. Los datos solo se insertan si el Portapapeles contiene datos en [**formato CF \_ TEXT.**](standard-clipboard-formats.md)
+Una aplicación envía un mensaje **WM \_ PASTE** a un control de edición o a un cuadro combinado para copiar el contenido actual del Portapapeles en el control de edición en la posición del cursor de cursor actual. Los datos solo se insertan si el Portapapeles contiene datos en [**formato CF \_ TEXT.**](standard-clipboard-formats.md)
 
 
 ```C++
@@ -54,9 +54,9 @@ Este parámetro no se usa y debe ser cero.
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se envía a un cuadro combinado, su control de edición controla el mensaje **\_ WM PASTE.** Este mensaje no tiene ningún efecto cuando se envía a un cuadro combinado con el estilo [**\_ DROPDOWNLIST de CBS.**](../controls/combo-box-styles.md)
+Cuando se envía a un cuadro combinado, el control de edición controla el mensaje **\_ WM PASTE.** Este mensaje no tiene ningún efecto cuando se envía a un cuadro combinado con el estilo [**\_ DROPDOWNLIST de CBS.**](../controls/combo-box-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 

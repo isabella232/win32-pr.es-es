@@ -4,7 +4,7 @@ description: Información de versión de los componentes del administrador de pr
 ms.assetid: C18EE6FE-57E1-4814-85CA-19C3ACE275D2
 keywords:
 - MPVERSION_INFO estructura heredada de Windows environment
-- PMPVERSION_INFO puntero de estructura Legacy Windows Environment Features
+- PMPVERSION_INFO puntero de estructura heredado Windows características del entorno
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50a89b03b8b310416f9b0b496c055f732f4e83859bb7eba50b7891abebc27d26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f30153c427b880600a3d8aeb3c411a8679cd64b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119608705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168265"
 ---
 # <a name="mpversion_info-structure"></a>Estructura DE \_ INFORMACIÓN DE MPVERSION
 
@@ -45,7 +45,7 @@ typedef struct tagMPVERSION_INFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -133,7 +133,7 @@ Tipo: **[ **MPCOMPONENT \_ VERSION**](mpcomponent-version.md)**
 
 </dd> <dd>
 
-Versión del componente de firma de firma de NIS.
+Versión del componente de firma de NIS.
 
 </dd> <dt>
 
@@ -152,11 +152,11 @@ Campos reservados.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c85ab6d4352be4984861569d0a9a5ce6a961857c563eac3623edc4911661cd81
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a08daa6b418214cbac48e5d4ef51feceba97c4b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117714859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359312"
 ---
 # <a name="esentcannotseparateintrinsiclvexception-constructor"></a>Constructor EsentCannotSeparateIntrinsicLVException
 

@@ -4,12 +4,12 @@ description: Identifica la propiedad Ui \_ PKEY \_ Categories.
 ms.assetid: 15f97307-ea3d-407a-a276-46b82f81bdbc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4aa812673f289b80b000710dd48a449656368f00d0beb51dcb489e60328e6a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c7666ee9eba6639f1f39b96f012b464854191ff0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119086557"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359952"
 ---
 # <a name="ui_pkey_categories"></a>Categorías \_ PKEY de la \_ interfaz de usuario
 
@@ -25,7 +25,7 @@ propertyDescription
       type = IUICollection
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las categorías PKEY de la interfaz de usuario las usa una aplicación para consultar las categorías que se usan para agrupar \_ elementos relacionados en un control de \_ galería.
 

@@ -4,12 +4,12 @@ description: Cada comando tiene una prioridad asociada.
 ms.assetid: 63f6ba9d-0b87-403b-916b-aa8550f98a11
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 221702ee9dcebb8da454637f53cc29de1607d03088e24eb4a9a250d4e3ce2512
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 06512f0748aa88f6b32de3291e2ed1c262212ba2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117954443"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243812"
 ---
 # <a name="command-scheduling"></a>Programación de comandos
 

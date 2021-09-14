@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 869168bfb970df9afc6399e6b1ec40e02b9ccdeaa2f2fef93fcbd86c16e9c6d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da5b588fbd55af9dfa66a03c7912d4918821168b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119314405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127173866"
 ---
 # <a name="cbn_selendcancel-notification-code"></a>Código de notificación \_ DE CBN SELENDCANCEL
 
@@ -53,7 +53,7 @@ Identificador del cuadro combinado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En un cuadro combinado con el estilo SIMPLE de [**CBS, \_**](combo-box-styles.md) no se envía el código de notificación \_ DE CBN SELENDCANCEL. El [código de notificación DE \_ CBN SELENDOK](cbn-selendok.md) se envía inmediatamente antes de cada [código de notificación DE \_ CBN SELCHANGE.](cbn-selchange.md)
 
@@ -65,11 +65,11 @@ En un cuadro combinado con el estilo SIMPLE de [**CBS, \_**](combo-box-styles.md
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

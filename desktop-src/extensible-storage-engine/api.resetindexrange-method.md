@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8152fd3a0cbfbed1a5ad6ff4e9e73f9a89df79157862713820cb0b463f8841bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 434740a549fa83d4601bf88ab09f307f4d19f189
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359195"
 ---
 # <a name="apiresetindexrange-method"></a>Método Api.ResetIndexRange
 
@@ -72,7 +72,7 @@ public static void ResetIndexRange(
     
     Cursor en el que se va a quitar el intervalo de índice.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

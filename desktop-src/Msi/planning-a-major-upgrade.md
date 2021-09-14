@@ -4,12 +4,12 @@ ms.assetid: 69ad4928-e750-47c2-8668-c9e3deff8066
 title: Planear una actualización principal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a07ece8acf0dbc37ecdfddaa3505e5e54a283a8e8efd7b4eb0dc1a0a365a461e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88ca6b82e53a38dde8131525eb885a5f17603ac6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118377376"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127169725"
 ---
 # <a name="planning-a-major-upgrade"></a>Planear una actualización principal
 
@@ -24,15 +24,15 @@ La instalación del producto original, MNP2000, seguida de la instalación del p
 | Redpark.exe   | Archivo ejecutable del editor de texto. Sin cambios con respecto a los productos anteriores. | C: \\ Ejemplo \\ Bloc de notas \\Redpark.exe                  | \[ProgramFilesFolder \] \\ Red Park \_ \\Redpark.exe          |
 | Readme.txt    | Un archivo de información. Sin cambios con respecto a los productos anteriores.         | C: \\ Ejemplo \\ Bloc de notas \\Readme.txt                   | \[ProgramFilesFolder \] \\ Red Park \_ \\Readme.txt           |
 | Help.txt      | Manual de ayuda. Sin cambios con respecto a los productos anteriores.                 | C: \\ Ejemplo \\ Bloc de notas \\Help.txt                     | No instalado. Ejecutar siempre desde el origen.                  |
-| Baseba01.txt  | Programación de juegos de béisbol para el año 2001.                          | C: \\ Ejemplo de Bloc de notas eventos \\ \\ \\Baseba01.txt         | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Baseball.txt |
-| Footba01.txt  | Programación del partido de fútbol para el año 2001.                          | C: \\ Ejemplo de Bloc de notas eventos \\ \\ \\Footba01.txt         | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Football.txt |
-| Basket01.txt  | Programación de juegos de calendario para el año 2001.                        | C: \\ Ejemplo de Bloc de notas eventos \\ \\ \\Basket01.txt         | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Basket01.txt |
-| Dance01.txt   | Presentaciones de performance para el año 2001.                              | C: \\ Ejemplo de Bloc de notas eventos \\ \\ \\Dance01.txt          | \[ProgramFilesFolder \] \\ Red Park Park \_ \\Dance.txt \\      |
-| Concert01.txt | Música rendimientos del año 2001.                              | C: \\ Ejemplo de Bloc de notas eventos \\ \\ \\Concer01.txt         | \[ProgramFilesFolder \] \\ Red Park Park \_ \\Concert.txt \\    |
-| Opera01.txt   | Representaciones de Opera del año 2001.                              | C: \\ Ejemplo de Bloc de notas eventos \\ \\ \\Opera01.txt          | \[ProgramFilesFolder \] \\ Red Park Park \_ \\Opera01.txt \\    |
+| Baseba01.txt  | Programación de juegos de béisbol para el año 2001.                          | C: \\ Eventos de Bloc de notas ejemplo \\ \\ \\Baseba01.txt         | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Baseball.txt |
+| Footba01.txt  | Programación del partido de fútbol para el año 2001.                          | C: \\ Eventos de Bloc de notas ejemplo \\ \\ \\Footba01.txt         | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Football.txt |
+| Basket01.txt  | Programación de juegos de calendario para el año 2001.                        | C: \\ Eventos de Bloc de notas ejemplo \\ \\ \\Basket01.txt         | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Basket01.txt |
+| Dance01.txt   | Presentaciones de performance para el año 2001.                              | C: \\ Eventos de Bloc de notas ejemplo \\ \\ \\Dance01.txt          | \[ProgramFilesFolder \] \\ Red Park Park \_ \\Dance.txt \\      |
+| Concert01.txt | Música rendimientos del año 2001.                              | C: \\ Eventos de Bloc de notas ejemplo \\ \\ \\Concer01.txt         | \[ProgramFilesFolder \] \\ Red Park Park \_ \\Concert.txt \\    |
+| Opera01.txt   | Representaciones de Opera del año 2001.                              | C: \\ Eventos de Bloc de notas ejemplo \\ \\ \\Opera01.txt          | \[ProgramFilesFolder \] \\ Red Park Park \_ \\Opera01.txt \\    |
 | Januar01.txt  | Admisiones en enero del año 2001.                            | C: \\ Ejemplo de Bloc de notas puerta \\ \\ \\Januar01.txt           | \[ProgramFilesFolder \] \\ Red Park Gate \_ \\ \\January.txt    |
 | NewYea01.txt  | Admisiones el Día de los Nuevos Años del año 2001.                      | C: \\ Ejemplo de Bloc de notas días \\ \\ \\ festivos de \\NewYea01.txt | \[ProgramFilesFolder \] \\ Red Park Gate \_ \\ \\NewYears.txt   |
-| Memori01.txt  | Admisiones en el Día de la Noche del año 2001.                       | C: \\ Ejemplo de Bloc de notas días \\ \\ \\ festivos de \\Memori01.txt | \[ProgramFilesFolder \] \\ Red Park Gate \_ \\ \\Memori01.txt   |
+| Memori01.txt  | Admisiones en el Día de LaN del año 2001.                       | C: \\ Ejemplo de Bloc de notas días \\ \\ \\ festivos de \\Memori01.txt | \[ProgramFilesFolder \] \\ Red Park Gate \_ \\ \\Memori01.txt   |
 
 
 
@@ -55,7 +55,7 @@ La instalación del paquete de actualización escribe los siguientes valores en 
 
 
 
-| Nombre             | Valor    |
+| Nombre             | Value    |
 |------------------|----------|
 | lfCharSet        | 0        |
 | lfClipPrecision  | 2        |
@@ -83,13 +83,13 @@ La actualización actualiza los accesos directos antiguos a los siguientes acces
 |-------------|-------------------------------------------|-----------------------------------------------------------|
 | sNotepad    | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park \_ \\Redpark.exe            |
 | sReadme     | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park \_ \\Readme.txt             |
-| sHelp       | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[Ejemplo programFilesFolder \] \\ \\ Bloc de notas \\Help.txt         |
+| sHelp       | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Sample Bloc de notas \\ \\Help.txt         |
 | sBaseball   | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Baseba01.txt   |
 | sFootball   | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Footba01.txt   |
 | sBasketball | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Basketba01.txt |
-| sDance      | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Park \_ \\Dance01.txt \\      |
-| sConcert    | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Park \_ \\Concer01.txt \\     |
-| sOpera      | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Park \_ \\Opera01.txt \\      |
+| sDance      | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Park \_ Park \\Dance01.txt \\      |
+| sConcert    | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Park \_ Park \\Concer01.txt \\     |
+| sOpera      | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Park \_ Park \\Opera01.txt \\      |
 | sJanuary    | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Gate \_ \\ \\Januar01.txt     |
 | sNewYears   | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Gate \_ \\ \\NewYea01.txt     |
 | sMemorial   | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Gate \_ \\ \\Memori01.txt     |
@@ -98,7 +98,7 @@ La actualización actualiza los accesos directos antiguos a los siguientes acces
 
  
 
-Cuando un usuario desinstala el paquete de actualización, Windows Instalador quita completamente todas las versiones del producto del equipo del usuario. El usuario no se queda con ninguna parte de MNP2000 o MNP2001.
+Cuando un usuario desinstala el paquete de actualización, Windows Installer quita completamente todas las versiones del producto del equipo del usuario. El usuario no se queda con ninguna parte de MNP2000 o MNP2001.
 
 [Continuar](importing-original-installation-database.md)
 

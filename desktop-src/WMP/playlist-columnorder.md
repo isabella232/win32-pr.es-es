@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e4dca1e740edc3066c82369c01ffb3313500b886d698c03ccd44d1283dc7d48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ab1a64f40987faa7daa43e9e371c7fa5d75f24e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118337130"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359520"
 ---
 # <a name="playlistcolumnorder"></a>PLAYLIST.columnOrder
 
@@ -35,7 +35,7 @@ Este atributo es una cadena de lectura y **escritura** que especifica una lista 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

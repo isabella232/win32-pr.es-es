@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: cfc95f8c4318dbc78e3cbd93faf18fd5e8e764ab251096cc0a2c321dedd00002
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae0aaae2157331d5d1bae2814c563c89dc73c757
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118922870"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244208"
 ---
 # <a name="iscardmanageattachbyifd-method"></a>Método ISCardManage::AttachByIFD
 
@@ -63,7 +63,7 @@ El método devuelve uno de los siguientes valores posibles:
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para adjuntar una [*llamada de tarjeta inteligente,*](../secgloss/s-gly.md) [**llame a AttachByHandle**](iscardmanage-attachbyhandle.md).
 
@@ -79,7 +79,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
@@ -88,14 +88,14 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**AttachByHandle**](iscardmanage-attachbyhandle.md)
 </dt> <dt>
 
-[**Desasociar**](iscardmanage-detach.md)
+[**Separar**](iscardmanage-detach.md)
 </dt> <dt>
 
 [**ISCardManage**](iscardmanage.md)

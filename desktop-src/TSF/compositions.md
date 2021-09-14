@@ -4,18 +4,18 @@ description: Una composición es un estado de entrada temporal que permite a un 
 ms.assetid: 3d9da4f2-ceb9-4abc-8979-d3756d948a57
 keywords:
 - Text Services Framework (TSF), composiciones
-- TSF (Text Services Framework),compositions
+- TSF (Text Services Framework), composiciones
 - servicios de texto, composiciones
 - Aplicaciones habilitadas para TSF, composiciones
 - compositions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61a27d468c770e0593f61a5d57aeaedca15f241300da71dc7b617c74b8f1e7c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b03f3e991f76ee7c6dca3830267796576c7b842
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117953842"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243704"
 ---
 # <a name="compositions"></a>Composiciones
 
@@ -23,17 +23,17 @@ Una composición es un estado de entrada temporal que permite a un servicio de t
 
 Un ejemplo del uso de una composición es durante la entrada de voz. Mientras el usuario habla, el servicio de texto de voz crea una composición. Esta composición permanecerá intacta hasta que se complete toda la entrada de voz. Cuando finaliza la sesión, el servicio de texto de voz finaliza la composición.
 
-Una aplicación usa la presencia y ausencia de una composición para determinar cómo mostrar texto y qué procesamiento, si existe, se debe realizar en el texto. Por ejemplo, si el usuario usa el motor de voz para escribir texto, la aplicación no debe realizar ninguna revisión ortográfica o gramatical en ningún texto de composición. El texto se considera incompleto hasta que finaliza la composición.
+Una aplicación usa la presencia y ausencia de una composición para determinar cómo mostrar texto y qué procesamiento, si existe, se debe realizar en el texto. Por ejemplo, si el usuario usa el motor de voz para escribir texto, la aplicación no debe realizar ninguna comprobación ortográfica o gramatical en ningún texto de composición. El texto se considera incompleto hasta que finaliza la composición.
 
 ## <a name="text-services"></a>Servicios de texto
 
 Un servicio de texto crea una composición mediante una [llamada a ITfContextComposition::StartComposition](/windows/desktop/api/msctf/nf-msctf-itfcontextcomposition-startcomposition). Opcionalmente, el servicio de texto puede implementar un [objeto ITfCompositionSink](/windows/desktop/api/msctf/nn-msctf-itfcompositionsink) que recibe notificaciones de eventos de composición. StartComposition devuelve un [objeto ITfComposition](/windows/desktop/api/msctf/nn-msctf-itfcomposition) al que el servicio de texto mantiene una referencia y usa para modificar y finalizar la composición. El servicio de texto finaliza la composición llamando a [ITfComposition::EndComposition](/windows/desktop/api/msctf/nf-msctf-itfcomposition-endcomposition).
 
-Si un servicio de texto va a crear composiciones, también debe admitir atributos de presentación para permitir que una aplicación muestre texto que forma parte de una composición de forma diferente que el texto estándar. Para obtener más información, vea [Proporcionar atributos para mostrar.](providing-display-attributes.md)
+Si un servicio de texto va a crear composiciones, también debe admitir atributos para mostrar para permitir que una aplicación muestre texto que forma parte de una composición de forma diferente que el texto estándar. Para obtener más información, vea [Proporcionar atributos para mostrar.](providing-display-attributes.md)
 
 ## <a name="applications"></a>Aplicaciones
 
-Una aplicación puede supervisar la creación, el cambio y la terminación de las composiciones mediante la instalación de un receptor [ITfContextOwnerCompositionSink.](/windows/desktop/api/msctf/nn-msctf-itfcontextownercompositionsink) Cuando se inicia una composición, [se llama a ITfContextOwnerCompositionSink::OnStartComposition.](/windows/desktop/api/msctf/nf-msctf-itfcontextownercompositionsink-onstartcomposition) Del mismo modo, cuando se cambia o finaliza una composición, se llama a [ITfContextOwnerCompositionSink::OnUpdateComposition](/windows/desktop/api/msctf/nf-msctf-itfcontextownercompositionsink-onupdatecomposition) e [ITfContextOwnerCompositionSink::OnEndComposition,](/windows/desktop/api/msctf/nf-msctf-itfcontextownercompositionsink-onendcomposition) respectivamente.
+Una aplicación puede supervisar la creación, el cambio y la terminación de las composiciones mediante la instalación de [un receptor ITfContextOwnerCompositionSink.](/windows/desktop/api/msctf/nn-msctf-itfcontextownercompositionsink) Cuando se inicia una composición, [se llama a ITfContextOwnerCompositionSink::OnStartComposition.](/windows/desktop/api/msctf/nf-msctf-itfcontextownercompositionsink-onstartcomposition) Del mismo modo, cuando se cambia o finaliza una composición, se llama a [ITfContextOwnerCompositionSink::OnUpdateComposition](/windows/desktop/api/msctf/nf-msctf-itfcontextownercompositionsink-onupdatecomposition) e [ITfContextOwnerCompositionSink::OnEndComposition,](/windows/desktop/api/msctf/nf-msctf-itfcontextownercompositionsink-onendcomposition) respectivamente.
 
 A continuación se muestra un procedimiento típico para actualizar un documento mediante una composición.
 

@@ -17,17 +17,17 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: e147b48ffb80e1114133b59018cef514eefd2ae7
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242972"
 ---
 # <a name="iwmpclosedcaptionsamistyle-property"></a>Propiedad IWMPClosedCaption::SAMIStyle
 
 La **propiedad SAMIStyle** obtiene o establece el estilo de subtítulos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public Property SAMIStyle As System.String
 
 **System.String que** es el nombre especificado en el identificador de estilo de un archivo SAMI.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un archivo SAMI puede contener varias definiciones de estilo de formato. Los estilos SAMI se definen entre &lt; style &gt; y </STYLE> etiquetas en el archivo SAMI. Un estilo se define con una cadena de texto precedida de un \# carácter. Por ejemplo:
 
@@ -69,7 +69,7 @@ Si no se especifica ningún estilo SAMI, el primer estilo definido en el archivo
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

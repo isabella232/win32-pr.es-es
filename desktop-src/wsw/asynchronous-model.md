@@ -5,21 +5,21 @@ ms.assetid: d0b3f154-2219-4085-a652-e9aeb126598c
 keywords:
 - Servicios web de modelo asincrónico para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54cc59df90c37d8bad0ba3db145f9a4a61185c9577152215b027545bbea32494
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c0c5e38dfbc0bc2ed397949da86f9a572a5b1ed5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119344935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360580"
 ---
 # <a name="asynchronous-model"></a>Modelo asincrónico
 
 La mayoría de las Windows API de servicios web se pueden realizar de forma sincrónica o asincrónica. Para llamar a una función sincrónicamente, pase un valor NULL para la [**estructura CONTEXT de WS \_ ASYNC. \_**](/windows/desktop/api/WebServices/ns-webservices-ws_async_context) Para especificar que una función se puede realizar de forma asincrónica, pase un **WS \_ ASYNC \_ CONTEXT** no NULL a la función.
 
-Cuando se llama de forma asincrónica, una función puede completarse sincrónica o asincrónicamente. Si la función se completa sincrónicamente, devuelve un valor que indica el éxito o error finales, y este valor siempre es algo distinto de **WS \_ S \_ ASYNC** (vea [Windows Valores](windows-web-services-return-values.md)devueltos de servicios web ). Sin embargo, un valor devuelto **de WS \_ S \_ ASYNC** indica que la función se completará de forma asincrónica. Cuando la función se completa de forma asincrónica, se invoca una devolución de llamada para indicar la finalización de la operación. Esta devolución de llamada indica el valor final correcto o error. No se llama a la devolución de llamada si la operación se completa sincrónicamente.
+Cuando se llama de forma asincrónica, una función puede completarse sincrónica o asincrónicamente. Si la función se completa de forma sincrónica, devuelve un valor que indica el éxito o error finales, y este valor siempre es algo distinto de **WS \_ S \_ ASYNC** (vea valores devueltos de servicios web de [Windows](windows-web-services-return-values.md)). Sin embargo, un valor devuelto **de WS \_ S \_ ASYNC** indica que la función se completará de forma asincrónica. Cuando la función se completa de forma asincrónica, se invoca una devolución de llamada para indicar la finalización de la operación. Esta devolución de llamada indica el valor final correcto o error. No se llama a la devolución de llamada si la operación se completa sincrónicamente.
 
 Para crear un contexto asincrónico, inicialice los campos **callback** **y callbackState** de la [**estructura CONTEXT de WS \_ ASYNC. \_**](/windows/desktop/api/WebServices/ns-webservices-ws_async_context) El **campo callbackState** se usa para especificar un puntero a datos definidos por el usuario que se pasan a la función [**WS \_ ASYNC \_ CALLBACK.**](/windows/desktop/api/WebServices/nc-webservices-ws_async_callback)
 

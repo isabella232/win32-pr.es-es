@@ -3,8 +3,8 @@ title: Método IWMDRMIndividualizationStatus GetStatus (Wmdrmsdk.h)
 description: El método GetStatus recupera información detallada sobre el progreso de la individualización.
 ms.assetid: 8985f3cc-006d-4fd5-b218-d3af3473b8e3
 keywords:
-- Método GetStatus windows Media Format
-- Método GetStatus windows Media Format , IWMDRMIndividualizationStatus (interfaz)
+- Formato multimedia de windows del método GetStatus
+- Método GetStatus windows Media Format , interfaz IWMDRMIndividualizationStatus
 - IWMDRMIndividualizationStatus interface windows Media Format , GetStatus method
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61b5408a71dcbedc98ccfdd70517cdae086620a05d8f648fcb327a608a2612bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f144f188de46d17702dd22aa12e2245156b59a21
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118701626"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359913"
 ---
 # <a name="iwmdrmindividualizationstatusgetstatus-method"></a>IWMDRMIndividualizationStatus::GetStatus (método)
 
@@ -77,7 +77,7 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

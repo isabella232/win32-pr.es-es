@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: fcc6c63b06614eb16379fbb18d59a5459a8e5085
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983038"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360740"
 ---
 # <a name="jet_tablecreate-structure"></a>Estructura de JET_TABLECREATE
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_tablecreate-structure"></a>Estructura de JET_TABLECREATE
 
-La **JET_TABLECREATE** contiene la información necesaria para crear una tabla rellenada con columnas e índices en una base de datos ESE. [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md) usa la estructura JET_TABLECREATE de datos. 
+La **JET_TABLECREATE** estructura contiene la información necesaria para crear una tabla rellenada con columnas e índices en una base de datos ese. [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md) **usa** la estructura de JET_TABLECREATE estructura.
 
 ```cpp
     typedef struct tagJET_TABLECREATE {
@@ -48,7 +48,7 @@ La **JET_TABLECREATE** contiene la información necesaria para crear una tabla r
     } JET_TABLECREATE;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **cbStruct**
 
@@ -58,13 +58,13 @@ Tamaño de esta estructura en bytes (para futuras expansiones). Debe establecers
 
 El objeto de la tabla que se va a crear.
 
-El nombre debe usar para cumplir las condiciones siguientes:
+El nombre debe usar cumplir las condiciones siguientes:
 
   - Tenga un valor menor que JET_cbNameMost, sin incluir el valor NULL final.
 
 <!-- end list -->
 
-  - Consta del siguiente conjunto de caracteres: de 0 a 9, de la A a la Z, de la a la z y de todos los demás signos de puntuación excepto el signo de exclamación ( ), la coma (,), el corchete de apertura ( ) y el corchete de cierre ( ), es decir, caracteres ASCII 0x20, 0x22 a través de 0x2d, 0x2f a través de 0x5a, 0x5c y 0x5d \! \[ a \] 0x7f.
+  - Consta del siguiente conjunto de caracteres: de 0 a 9, de A a Z, de a a z y de todos los demás signos de puntuación excepto el signo de exclamación ( ), la coma (,), el corchete de apertura ( ) y el corchete de cierre (), es decir, caracteres ASCII 0x20, 0x22 a 0x2d, 0x2f a 0x5a, 0x5c y 0x5d a \! \[ \] 0x7f.
 
 <!-- end list -->
 
@@ -84,7 +84,7 @@ Número inicial de páginas de base de datos que se asignarán a la tabla. Espec
 
 **ulDensity**
 
-Densidad de tabla, en puntos porcentuales. El número debe ser 0 o en el intervalo de 20 a 100. Pasar 0 significa que se debe usar el valor predeterminado. El valor predeterminado es 80.
+Densidad de tabla, en puntos porcentuales. El número debe ser 0 o estar entre 20 y 100. Pasar 0 significa que se debe usar el valor predeterminado. El valor predeterminado es 80.
 
 **rgcolumncreate**
 
@@ -104,13 +104,13 @@ Número de elementos [JET_INDEXCREATE](./jet-indexcreate-structure.md) en **rgin
 
 **grbit**
 
-Grupo de bits que contienen las opciones para esta llamada, que incluyen cero o más de los valores siguientes.
+Grupo de bits que contienen las opciones de esta llamada, que incluyen cero o más de los valores siguientes.
 
 
 | <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_bitTableCreateFixedDDL</p> | <p>Al JET_bitTableCreateFixedDDL se evitan las operaciones DDL en la tabla (por ejemplo, agregar o quitar columnas).</p> | 
-| <p>JET_bitTableCreateTemplateTable</p> | <p>Si JET_bitTableCreateTemplateTable hace que la tabla sea una tabla de plantilla. A continuación, las nuevas tablas pueden especificar el nombre de esta tabla como tabla de plantilla. Establecer JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p> | 
+| <p>JET_bitTableCreateFixedDDL</p> | <p>Establecer JET_bitTableCreateFixedDDL evita las operaciones DDL en la tabla (por ejemplo, agregar o quitar columnas).</p> | 
+| <p>JET_bitTableCreateTemplateTable</p> | <p>Si JET_bitTableCreateTemplateTable hace que la tabla sea una tabla de plantillas. A continuación, las nuevas tablas pueden especificar el nombre de esta tabla como tabla de plantillas. Establecer JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p> | 
 | <p>JET_bitTableCreateNoFixedVarColumnsInDerivedTables</p> | <p>Desusado. No utilizar.</p> | 
 
 
@@ -123,7 +123,7 @@ Campo de salida que contiene el [JET_TABLEID](./jet-tableid.md) de la nueva tabl
 
 Campo de salida que contiene el recuento de objetos creados si la llamada API se realiza correctamente. Si se produce un error en la llamada API, el valor no está definido.
 
-El recuento de objetos creados es igual a la suma de columnas, tablas e índices creados correctamente.
+El recuento de objetos que se crean es igual a la suma de columnas, tablas e índices creados correctamente.
 
 ### <a name="requirements"></a>Requisitos
 

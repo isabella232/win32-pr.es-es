@@ -17,17 +17,17 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: a9577f7d9030a12a12596fe2cdc2a999922658ce
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122887173"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359434"
 ---
 # <a name="iwmpclosedcaptionsamilang-property"></a>Propiedad IWMPClosedCaption::SAMILang
 
 La **propiedad SAMILang** obtiene o establece el idioma que se muestra para los subtítulos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public Property SAMILang As System.String
 
 **System.String que** es el nombre especificado en el identificador de idioma de un archivo SAMI.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un archivo SAMI puede contener texto para uno o varios idiomas. Los idiomas disponibles para los subtítulos se definen entre &lt; style &gt; y </STYLE> etiquetas en el archivo SAMI. Un identificador de idioma se especifica con una cadena alfanumérica única precedida de un punto (.). El nombre especificado para un idioma puede ser cualquier cadena. Por ejemplo, se podría usar lo siguiente para definir el inglés de EE. UU.:
 
@@ -75,7 +75,7 @@ La cadena que establezca mediante **SAMILang** debe coincidir con el **atributo 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

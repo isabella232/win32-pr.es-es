@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3d3591caf2a2e6a51099afb9a823c64bf49af32a6c6726771d8a24a24968b485
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d68eccf44b7e2c248e366d8e3d8f05f4e7dd4774
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360141"
 ---
 # <a name="credentialssource-eaptype-element"></a>Elemento CredentialsSource (EapType)
 
@@ -33,7 +33,7 @@ El **elemento CredentialsSource (EapType)** contiene información sobre la ubica
 
 El **elemento CredentialsSource** se define mediante el [**elemento EapType.**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **elemento CredentialSource** es opcional.
 
@@ -41,14 +41,14 @@ El **elemento CredentialSource** es opcional.
 
 
 
-| Rol | Versión mínima admitida del sistema operativo |
+| Role | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ El **elemento CredentialSource** es opcional.
 [Esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos de esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-elements.md)
+[Eaptlsconnectionpropertiesv1 Schema Elements](eaptlsconnectionpropertiesv1schema-elements.md)
 </dt> </dl>
 
  

@@ -4,16 +4,16 @@ ms.assetid: e4d9c95d-1b68-4af6-beb2-2014074e5089
 title: Método IEnumTime::Skip (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c36f92ead711c25b385c2a7109dbb113b8c5ca082fda9c3012204384350a3c13
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 190a98c14cb8f551276a173e2d73872d876f2ceb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117762954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127243596"
 ---
 # <a name="ienumtimeskip-method"></a>IEnumTime::Skip (método)
 
-\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
 El **método Skip** omite el siguiente número especificado de elementos en la secuencia de enumeración.
 
@@ -47,8 +47,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                             | Descripción                                           |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>    | El número de elementos omitido fue *celt.*<br/>     |
-| <dl> <dt>**S \_ FALSE**</dt> </dl> | El número de elementos omitido no *era de centígrados.*<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | El número de elementos omitido era *celta*.<br/>     |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | El número de elementos omitido no *era de centígrado.*<br/> |
 
 
 
@@ -61,13 +61,13 @@ Este método puede devolver uno de estos valores.
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

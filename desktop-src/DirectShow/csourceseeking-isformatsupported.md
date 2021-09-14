@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 92349ab37fb677b561f342e99882c27208287310b544880e397f4f5df6cb0c38
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6c58e8edd908c101c3045e221cc86420cbb5cb94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120083925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361364"
 ---
 # <a name="csourceseekingisformatsupported-method"></a>Método CSourceSeeking.IsFormatSupported
 
@@ -45,7 +45,7 @@ HRESULT IsFormatSupported(
 *pFormat* 
 </dt> <dd>
 
-Puntero a un GUID de formato de hora. Consulte [**GUID de formato de hora.**](time-format-guids.md)
+Puntero a un GUID de formato de hora. Consulte [**GUID de formato de hora**](time-format-guids.md).
 
 </dd> </dl>
 
@@ -57,15 +57,15 @@ Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.
 
 | Código devuelto                                                                               | Descripción                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>**S \_ FALSE**</dt> </dl>   | No se admite el formato.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | No se admite el formato .<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Se admite el formato .<br/>     |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | Argumento de puntero **NULL.**<br/>   |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | **Argumento de** puntero NULL.<br/>   |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El único formato de hora admitido por la clase base es TIME \_ FORMAT \_ MEDIA TIME \_ (unidades de 100 nanosegundos).
 
@@ -80,7 +80,7 @@ El único formato de hora admitido por la clase base es TIME \_ FORMAT \_ MEDIA 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

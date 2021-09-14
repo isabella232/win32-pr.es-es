@@ -10,12 +10,12 @@ keywords:
 - mostrar listas, porte desde IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fbb696673da7f4dc83abd625bb616b67449de64a40df1cfc99bd429a2a980e4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 77a856350a0a248bf7dcac51c36b9d35cf114956
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119962435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245060"
 ---
 # <a name="a-sample-port-of-a-display-list"></a>Un puerto de ejemplo de una lista de visualización
 

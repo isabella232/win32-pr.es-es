@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fb7786d03b79a78f067fbfb1c8447336405c8a2e87bac18819178b2e158a2a62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c371255d6f66204c356d6dd7f056bc765fa76615
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118522796"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174773"
 ---
 # <a name="id3dxanimationcontrollergetmaxnumevents-method"></a>Método ID3DXAnimationController::GetMaxNumEvents
 
@@ -55,7 +55,7 @@ Número máximo de eventos que el controlador puede administrar.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

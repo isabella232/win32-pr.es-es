@@ -1,5 +1,5 @@
 ---
-title: Recuperación de propiedades de Automatización de la interfaz de usuario elementos
+title: Recuperar propiedades de Automatización de la interfaz de usuario elementos
 description: Las propiedades de los objetos IUIAutomationElement contienen información sobre los elementos de la interfaz de usuario, normalmente controles.
 ms.assetid: e358fd67-22d0-4e43-a138-8afcc45f130e
 keywords:
@@ -15,14 +15,14 @@ keywords:
 - recuperar propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbbe524e6f82f8c7dba018b24895ade54ced3e6a4632e1caefed410753b56fab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e199522dbefaa2f722a67b0ede57fe910b8ed63b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118564376"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359249"
 ---
-# <a name="retrieving-properties-from-ui-automation-elements"></a>Recuperación de propiedades de Automatización de la interfaz de usuario elementos
+# <a name="retrieving-properties-from-ui-automation-elements"></a>Recuperar propiedades de Automatización de la interfaz de usuario elementos
 
 Las propiedades de [**los objetos IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) contienen información sobre los elementos de la interfaz de usuario, normalmente controles. Las propiedades de un elemento son genéricas; es decir, no es específico de un tipo de control. Las propiedades específicas del control de un elemento se exponen mediante sus interfaces de patrón de control.
 
@@ -46,7 +46,7 @@ Para obtener una lista de Automatización de la interfaz de usuario de propiedad
 
 ## <a name="property-conditions"></a>Condiciones de propiedad
 
-Los ID de propiedad se usan para construir [**objetos IUIAutomationPropertyCondition**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationpropertycondition) que se usan para buscar Automatización de la interfaz de usuario elementos. Por ejemplo, puede encontrar un elemento que tenga un nombre determinado o todos los controles habilitados. Cada condición de propiedad especifica un identificador de propiedad y el valor que debe coincidir con la propiedad.
+Los ID de propiedad se usan para construir objetos [**IUIAutomationPropertyCondition**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationpropertycondition) que se usan para buscar Automatización de la interfaz de usuario elementos. Por ejemplo, puede encontrar un elemento que tenga un nombre determinado o todos los controles habilitados. Cada condición de propiedad especifica un identificador de propiedad y el valor que debe coincidir con la propiedad.
 
 Para más información, consulte los temas de referencia siguientes:
 
@@ -57,7 +57,7 @@ Para más información, consulte los temas de referencia siguientes:
 
 ## <a name="retrieving-properties"></a>Recuperación de propiedades
 
-Algunas propiedades genéricas, y todas las propiedades de patrón de control, están disponibles como propiedades en [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) o la interfaz de patrón de control y se pueden recuperar mediante un accessor, como [**IUIAutomationElement::CurrentName**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentname) o [**CachedDockPosition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdockpattern-get_cacheddockposition).
+Algunas propiedades genéricas, y todas las propiedades de patrón de control, están disponibles como propiedades en [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) o la interfaz de patrón de control y se pueden recuperar mediante un accessor, como [**IUIAutomationElement::CurrentName**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentname) o [**CachedDockPosition.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdockpattern-get_cacheddockposition)
 
 Además, cualquier propiedad actual o almacenada en caché (que no sea las propiedades del patrón de control) se puede recuperar mediante uno de los métodos siguientes:
 

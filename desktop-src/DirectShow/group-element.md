@@ -4,17 +4,17 @@ ms.assetid: db2f1fdd-bcb1-4401-91f4-5e167e4da215
 title: elemento group (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eda120363540eaf467ebb9beaea4705c4b430077c55b5b05c46197d90920b40a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 31502cef89c8383e935f409d76b9e31ca53a2da1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119997844"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246446"
 ---
 # <a name="group-element"></a>group (Elemento)
 
 > [!Note]  
-> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -37,7 +37,7 @@ El **elemento group** define un grupo, el objeto de nivel superior en una escala
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Dentro de `group` un elemento, la prioridad de las capas anidadas se determina implícitamente por el orden en que aparecen dentro del elemento. La primera capa tiene prioridad 0 y las capas posteriores tienen valores de prioridad crecientes.
 

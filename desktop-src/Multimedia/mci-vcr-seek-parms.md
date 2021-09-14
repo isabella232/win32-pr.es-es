@@ -1,9 +1,9 @@
 ---
 title: MCI_VCR_SEEK_PARMS estructura (Vcr.h)
-description: La estructura MCI \_ VCR SEEK PARMS contiene parámetros para el comando MCI SEEK para \_ las \_ \_ grabadoras de vídeo.
+description: La estructura MCI VCR SEEK PARMS contiene parámetros para el \_ \_ comando \_ MCI SEEK para las \_ grabadoras de vídeo.
 ms.assetid: 40a9cef0-abdb-4698-b11e-5c3f67ea846b
 keywords:
-- MCI_VCR_SEEK_PARMS de Windows multimedia
+- MCI_VCR_SEEK_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 302011a3e4bf10eb3a81db4a163f94f4322dea98
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245918"
 ---
-# <a name="mci_vcr_seek_parms-structure"></a>Estructura \_ MCI VCR \_ SEEK \_ PARMS
+# <a name="mci_vcr_seek_parms-structure"></a>Estructura MCI \_ VCR \_ SEEK \_ PARMS
 
 La **estructura MCI \_ VCR SEEK \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ SEEK**](mci-seek.md) para las grabadoras de vídeo.
 
@@ -39,7 +39,7 @@ typedef struct tagMCI_VCR_SEEK_PARMS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 

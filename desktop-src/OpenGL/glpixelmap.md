@@ -4,12 +4,12 @@ description: Estas funciones establecen mapas de transferencia de píxeles.
 ms.assetid: 79a84334-355c-46d3-990c-4d273e2d2207
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e759abbb62560f18a52b32ab7f6dfb07d4ea3f1a7ceb85611b6d1535c5373b27
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ae0ded7bb2f3baeb9128dedf17c36c2d7533ace
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118615412"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127375103"
 ---
 # <a name="glpixelmap-functions"></a>Funciones glPixelMap
 

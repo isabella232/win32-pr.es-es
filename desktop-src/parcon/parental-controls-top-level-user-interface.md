@@ -4,16 +4,16 @@ ms.assetid: c6dfd3bc-191f-42d1-b9de-cc85a2da0a99
 title: Control parental Top-Level Interfaz de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 221c989a1c4aed25a15fe0942bb5f1f540246a40d349e452ce4efe518454d523
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 321475097e25b812aca8d1e65f8b88843ebb1055
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117869191"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360066"
 ---
 # <a name="parental-controls-top-level-user-interface"></a>Control parental Top-Level Interfaz de usuario
 
-La fuerte vinculación entre las cuentas de usuario de seguridad  de familia y Windows ha controlado una categoría combinada que aparece como Cuentas de usuario y Seguridad familiar en Panel de control para las SKU orientadas al consumidor de Windows Vista.
+La fuerte vinculación entre las cuentas de usuario de seguridad  de familia y Windows ha controlado una categoría combinada que aparece como Cuentas de usuario y Seguridad de familia en Panel de control para las SKU orientadas al consumidor de Windows Vista.
 
 > [!Note]  
 > La categoría aparecerá como **Cuentas de usuario cuando** se una un equipo con funcionalidad de unión a un dominio.
@@ -26,7 +26,7 @@ Una vez creada una cuenta, el Panel de control parental expone la funcionalidad 
 
 -   Restricciones generales de los controles parentales en los botones de radio o desactivados.
 -   Botones de Informe de actividades de control independientes.
--   Una Configuración con el vínculo Restricciones web implementadas por Microsoft que se muestra condicionalmente y los tipos de restricciones básicas implementadas por Microsoft sin conexión que se muestran.
+-   Una Configuración con el vínculo Restricciones web implementadas por Microsoft que se muestra condicionalmente y los tipos de restricciones básicas implementadas por Microsoft sin conexión disponibles se muestran.
 -   Área Más Configuración que aparece si Microsoft o terceros registran Interfaz de usuario extensiones.
 -   Un área de estado de resumen que muestra el nombre de usuario y el icono, el vínculo Ver informes de actividad y el estado de la configuración de los controles parentales. Si está activada, la pantalla incluye el nivel de configuración Filtro de contenido web (si el filtro de Microsoft está activo) o el nombre del filtro si se reemplaza por una extensión de terceros y el estado de la configuración sin conexión para el usuario.
 

@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene información general de las voces de XAudio2.
+description: Esta sección contiene información general de las voces XAudio2.
 ms.assetid: 96463b61-3d74-b64d-0fb9-bd0c6464c71b
 title: Voces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a64284b16356394471997da0a321d4a107a8d4c3e4a9d7d6f3859285186a30c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5cbaac12387dc9bc77d82bc48a67181e42c1d04b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119025963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359882"
 ---
 # <a name="voices"></a>Voces
 
-Esta sección contiene información general de las voces de XAudio2.
+Esta sección contiene información general de las voces XAudio2.
 
 <dl> <dt>
 
@@ -31,7 +31,7 @@ Describe cómo usar voces de submezcla XAudio2.
 
 </dd> <dt>
 
-<span id="XAudio2_Sample_Rate_Conversions"></span><span id="xaudio2_sample_rate_conversions"></span><span id="XAUDIO2_SAMPLE_RATE_CONVERSIONS"></span>[Conversiones de frecuencia de muestreo de XAudio2](xaudio2-sample-rate-conversions.md)
+<span id="XAudio2_Sample_Rate_Conversions"></span><span id="xaudio2_sample_rate_conversions"></span><span id="XAUDIO2_SAMPLE_RATE_CONVERSIONS"></span>[Conversiones de frecuencia de ejemplo de XAudio2](xaudio2-sample-rate-conversions.md)
 </dt> <dd>
 
 Explica el proceso de conversión de frecuencia de muestreo en XAudio2.
@@ -41,7 +41,7 @@ Explica el proceso de conversión de frecuencia de muestreo en XAudio2.
 <span id="XAudio2_Default_Channel_Mapping"></span><span id="xaudio2_default_channel_mapping"></span><span id="XAUDIO2_DEFAULT_CHANNEL_MAPPING"></span>[Asignación de canales predeterminada de XAudio2](xaudio2-default-channel-mapping.md)
 </dt> <dd>
 
-Describe la asignación de canales predeterminada de XAudio2.
+Describe la asignación de canal predeterminada de XAudio2.
 
 </dd> <dt>
 

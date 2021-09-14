@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3706b0ce96531e4e9ca1354570439d57f06a97ecb78844160b035dcd7d96917e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d5ee6f6893375e2604cb39247745fc2758ce8c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117915025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127174869"
 ---
 # <a name="wm_drawclipboard-message"></a>Mensaje \_ DRAWCLIPBOARD de WM
 
@@ -52,17 +52,17 @@ Este parámetro no se usa y debe ser cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Solo las ventanas del visor del Portapapeles reciben este mensaje. Se trata de ventanas que se han agregado a la cadena del visor del Portapapeles mediante la [**función SetClipboardViewer.**](/windows/desktop/api/Winuser/nf-winuser-setclipboardviewer)
+Solo las ventanas del visor del Portapapeles reciben este mensaje. Se trata de ventanas que se han agregado a la cadena de visores del Portapapeles mediante la [**función SetClipboardViewer.**](/windows/desktop/api/Winuser/nf-winuser-setclipboardviewer)
 
-Cada ventana que recibe el **mensaje \_ DRAWCLIPBOARD** de WM debe llamar a la función [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) para pasar el mensaje a la siguiente ventana de la cadena de visor del Portapapeles. [**SetClipboardViewer**](/windows/desktop/api/Winuser/nf-winuser-setclipboardviewer)devuelve el identificador de la siguiente ventana de la cadena y puede cambiar en respuesta a un mensaje [**\_ CHANGECBCHAIN**](wm-changecbchain.md) de WM.
+Cada ventana que recibe el **mensaje \_ DRAWCLIPBOARD** de WM debe llamar a la función [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) para pasar el mensaje a la siguiente ventana de la cadena de visor del Portapapeles. [**SetClipboardViewer**](/windows/desktop/api/Winuser/nf-winuser-setclipboardviewer)devuelve el identificador de la siguiente ventana de la cadena y puede cambiar en respuesta a un [**mensaje \_ CHANGECBCHAIN**](wm-changecbchain.md) de WM.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

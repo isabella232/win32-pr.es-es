@@ -4,12 +4,12 @@ description: Una interfaz representa una red a la que se puede acceder a través
 ms.assetid: 26eec1af-43b4-4719-bec9-bc3f9b0341e6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef716e0db05fe37a0a7d326fbf5f8da878a0628d1deec9e996fcc49d917cc051
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dea285a625377709a4eca3bc8b9947106c2f5cfd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120030145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127244772"
 ---
 # <a name="ras-interfaces"></a>Interfaces RAS
 

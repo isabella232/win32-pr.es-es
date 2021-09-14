@@ -4,12 +4,12 @@ ms.assetid: 2663c6fc-301e-4765-b37c-b5e29a714ce8
 title: Objetos de geometría XPS OM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db68127535b37e216d28423a034083e979f58c714cbbbee875bc3f1621974bfe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cca767de311d2f2d49b0b194c372c0e69eaa637c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120112095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168029"
 ---
 # <a name="xps-om-geometry-objects"></a>Objetos de geometría XPS OM
 
