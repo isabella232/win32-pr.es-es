@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM FRUPhysicalElements representa los elementos físicos que componen una unidad reemplazable en campo (FRU).
+description: La clase FRUPhysicalElements de CIM representa los elementos \_ físicos que representan una unidad reemplazable de campo (FRU).
 ms.assetid: ecdb19a8-5169-4370-8d2d-a21a0021ea5b
 ms.tgt_platform: multiple
-title: CIM_FRUPhysicalElements (clase)
+title: CIM_FRUPhysicalElements clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 5c47160b9053a323f693d76f5b84d922c5120992
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000618"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974567"
 ---
-# <a name="cim_fruphysicalelements-class"></a>\_Clase FRUPhysicalElements de CIM
+# <a name="cim_fruphysicalelements-class"></a>\_CIM FRUPhysicalElements (clase)
 
-La clase **CIM \_ FRUPhysicalElements** representa los elementos físicos que componen una unidad reemplazable en campo (FRU).
+La **clase \_ FRUPhysicalElements** de CIM representa los elementos físicos que representan una unidad reemplazable de campo (FRU).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,15 +45,15 @@ class CIM_FRUPhysicalElements
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La clase **CIM \_ FRUPhysicalElements** tiene estos tipos de miembros:
+La **clase \_ FRUPhysicalElements de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ FRUPhysicalElements** tiene estas propiedades.
+La **clase \_ FRUPhysicalElements de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -73,13 +73,13 @@ Referencia a un elemento físico que forma parte de la FRU.
 **FRU**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ FRU de CIM**
+Tipo de datos: **CIM \_ FRU**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**agregado**](/windows/desktop/WmiSdk/standard-qualifiers), [**máximo**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Referencia a la FRU.
@@ -90,7 +90,7 @@ Referencia a la FRU.
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

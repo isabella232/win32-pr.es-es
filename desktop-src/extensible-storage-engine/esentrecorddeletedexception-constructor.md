@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 58e26acbf8365a265b1c8ff05dafe4283ecaa1b8f4c819cea1e415750b2b51d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d22225c8926568663e8a9f1cffc40713a470d952
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118079689"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887908"
 ---
 # <a name="esentrecorddeletedexception-constructor"></a>Constructor EsentRecordDeletedException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentRecordDeletedException()
 public EsentRecordDeletedException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

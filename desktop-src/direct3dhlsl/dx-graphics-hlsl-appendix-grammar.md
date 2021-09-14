@@ -1,6 +1,6 @@
 ---
 title: Gramática
-description: Las instrucciones HLSL se construyen mediante las reglas siguientes para la gramática.
+description: Las instrucciones HLSL se construyen mediante las siguientes reglas para la gramática.
 ms.assetid: 683248e9-6fc7-451a-906b-6e0aab1b0c8c
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 86549f441752e72fd11a741a061fcaf839eca0140f4766b0932094d74dc78085
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b77f1050beaee2b269d12e69704018e3c5abee6e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119855075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974747"
 ---
 # <a name="grammar"></a>Gramática
 
-Las instrucciones HLSL se construyen mediante las reglas siguientes para la gramática.
+Las instrucciones HLSL se construyen mediante las siguientes reglas para la gramática.
 
 -   [Espacio en blanco](#whitespace)
 -   [Números de punto flotante](#floating-point-numbers)
@@ -35,13 +35,13 @@ Los caracteres siguientes se reconocen como espacios en blanco.
 
 - SPACE
 - TAB
-- Eol
-- Comentarios de estilo de C (/ \* \* /)
+- EOL
+- Comentarios de estilo C (/ \* \* /)
 - Comentarios de estilo de C++ (//)
 
 ## <a name="floating-point-numbers"></a>Números de punto flotante
 
-Los números de punto flotante se representan en HLSL de la manera siguiente:
+Los números de punto flotante se representan en HLSL de la siguiente manera:
 
 -   fractional-constant exponent-part(opt) floating-suffix(opt)
 
@@ -71,7 +71,7 @@ Los números de punto flotante se representan en HLSL de la manera siguiente:
 
 -   floating-suffix : one of
 
-    h H f F l l
+    h H f F l L
 
     Use el sufijo "L" para especificar un literal de punto flotante de precisión completa de 64 bits. El valor predeterminado es un literal float de 32 bits.
 
@@ -93,7 +93,7 @@ Los números de punto flotante se representan en HLSL de la manera siguiente:
 
 ## <a name="integer-numbers"></a>Números enteros
 
-Los números enteros se representan en HLSL como se muestra a continuación:
+Los números enteros se representan en HLSL de la siguiente manera:
 
 -   integer-constant integer-suffix(opt)
 -   integer-constant: uno de
@@ -117,9 +117,9 @@ Los caracteres se representan en HLSL de la siguiente manera:
 | Carácter                                          | Descripción                                                                |
 |-------------------------------------------|-----------------------------------------------------------------|
 | "c"                                       | (carácter)                                                     |
-| ' \\ a' ' \\ b' ' \\ f' ' \\ b' ' \\ r' \\ ' t' ' \\ v' | (escapes)                                                       |
+| \\'a' ' \\ b' ' \\ f' ' \\ b' ' \\ r' ' \\ t' ' \\ v' | (escapes)                                                       |
 | '\\\#\#\#'                                | (escape octal, cada \# uno es un dígito octal)                       |
-| ' \\ x \# '                                   | (escape hexadecimal, \# es número hexadecimal, cualquier número de dígitos)            |
+| ' \\ x \# '                                   | (escape hexadecimal, \# es un número hexadecimal, cualquier número de dígitos)            |
 | ' \\ c'                                     | (c es otro carácter, incluidas las barras diagonales inversas y las comillas) |
 
 
@@ -130,13 +130,13 @@ Los escapes no se admiten en expresiones de preprocesador.
 
 ## <a name="strings"></a>Cadenas
 
-Las cadenas se representan en HLSL como se muestra a continuación:
+Las cadenas se representan en HLSL de la siguiente manera:
 
 "s" (s es cualquier cadena con escapes).
 
 ## <a name="identifiers"></a>Identificadores
 
-Los identificadores se representan en HLSL como se muestra a continuación:
+Los identificadores se representan en HLSL de la siguiente manera:
 
 
 ```
@@ -155,13 +155,13 @@ Los identificadores se representan en HLSL como se muestra a continuación:
 
 
 
-También cualquier otro carácter individual que no coincida con otra regla.
+También cualquier otro carácter que no coincida con otra regla.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Apéndice (HLSL de DirectX)](dx-graphics-hlsl-appendix.md)
+[Apéndice (DirectX HLSL)](dx-graphics-hlsl-appendix.md)
 </dt> </dl>
 
  

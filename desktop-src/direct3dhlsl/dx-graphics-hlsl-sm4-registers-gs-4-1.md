@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 262f86490e95684f0db8ce972f8fc93528cb33ed26b09989399c15ccab766205
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a01f200bd4183843b1cfd2892fde5da442ca8d36
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119949"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974716"
 ---
 # <a name="registers---gs_4_1"></a>Registros: gs \_ 4 \_ 1
 
@@ -26,14 +26,14 @@ Esta sección contiene información de referencia para los registros de entrada 
 
 | Registrarse                 | Nombre | Count              | L/E | Dimensión        | Indexable by r\# | Valores predeterminados | Requiere DCL |
 |--------------------------|------|--------------------|-----|------------------|------------------|----------|--------------|
-| R\#                      |      | 4096(r \# +x \# \[ n \] ) | L/E | 4                | No               | None     | Sí          |
+| r\#                      |      | 4096(r \# +x \# \[ n \] ) | L/E | 4                | No               | None     | Sí          |
 | x \# \[ n\]                 |      | 4096(r \# +x \# \[ n \] ) | L/E | 4                | Sí              | None     | Sí          |
 | Elemento \# \[ de vértice \] \[ v\] |      | 32                 | R   | 4(comp) \* 6(vert) | Sí              | None     | Sí          |
 | vprim                    |      | 1                  | R   | 1                | No               | None     | Sí          |
-| t\#                      |      | 128                | R   | 1                | No               | None     | Sí          |
+| T\#                      |      | 128                | R   | 1                | No               | None     | Sí          |
 | s\#                      |      | 16                 | R   | 1                | No               | None     | Sí          |
-| cb \# \[ index\]            |      | 15                 | R   | 4                | Sí (contenido)    | Ninguno     | Sí          |
-| Índice \[ icb\]             |      | 1                  | R   | 4                | Sí (contenido)    | Ninguno     | Sí          |
+| cb \# \[ index\]            |      | 15                 | R   | 4                | Sí (contenido)    | None     | Sí          |
+| Índice \[ icb\]             |      | 1                  | R   | 4                | Sí (contenido)    | None     | Sí          |
 
 
 

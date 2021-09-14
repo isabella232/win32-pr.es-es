@@ -1,5 +1,5 @@
 ---
-description: Borrar la lista de vértices de un borde que influye.
+description: Borrar una lista de vértices que influye.
 ms.assetid: 1ba6f43a-1f85-4057-b0ed-247cc38d4932
 title: Método ID3DX10SkinInfo::ClearIonalInfluences (D3DX10.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0dfe086738d65336c3cc2d1dbdfd793cbe0b84d916b5815b8533db8a45612efd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6f161ba400b684b12d6b0a091abb1fa452d476b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117914301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888785"
 ---
 # <a name="id3dx10skininfoclearboneinfluences-method"></a>Método ID3DX10SkinInfo::ClearIonalInfluences
 
-Borrar la lista de vértices de un borde que influye.
+Borrar una lista de vértices que influye.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT ClearBoneInfluences(
 
 <dl> <dt>
 
-*IndexIndex* \[ En\]
+*Index deindex* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice que especifica un fragmento existente. Debe estar entre 0 y el valor devuelto por [**ID3DX10SkinInfo::GetNumPxs**](id3dx10skininfo-getnumbones.md).
+Índice que especifica un pórmico existente. Debe estar entre 0 y el valor devuelto por [**ID3DX10SkinInfo::GetNumPxs**](id3dx10skininfo-getnumbones.md).
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

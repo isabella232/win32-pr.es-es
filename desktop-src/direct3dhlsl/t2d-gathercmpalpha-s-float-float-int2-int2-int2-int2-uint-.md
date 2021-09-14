@@ -1,9 +1,9 @@
 ---
-title: Función Texture2D::GatherCmpAlpha(S,float,float,int2,int2,int2,int2,uint)
-description: Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente alfa con un valor de comparación junto con el estado de asignación de mosaicos. | Función Texture2D::GatherCmpAlpha(S,float,float,int2,int2,int2,int2,uint)
+title: Función Texture2D::GatherCmpAlpha(S,float,float,int2,int2,int2,int2,int2,uint)
+description: Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente alfa con un valor de comparación junto con el estado de asignación de mosaicos. | Función Texture2D::GatherCmpAlpha(S,float,float,int2,int2,int2,int2,int2,uint)
 ms.assetid: 4DB56BE2-503A-4D51-89FB-E4DD91EBF028
 keywords:
-- Función GatherCmpAlpha HLSL
+- Función HLSL de GatherCmpAlpha
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4db53509411c4b0d8e189f7ec9e2e3a1bee0fa7fa14fee94a7d5cc60a0703743
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5e1962dc10b5ef45ba3ad7d7196872fd4d27708c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120118145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974650"
 ---
-# <a name="texture2dgathercmpalphasfloatfloatint2int2int2int2uint-function"></a>Función Texture2D::GatherCmpAlpha(S,float,float,int2,int2,int2,int2,uint)
+# <a name="texture2dgathercmpalphasfloatfloatint2int2int2int2uint-function"></a>Función Texture2D::GatherCmpAlpha(S,float,float,int2,int2,int2,int2,int2,uint)
 
-Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente alfa con un valor de comparación junto con el estado de asignación de mosaicos.
+Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente alfa con un valor de comparación junto con el estado de asignación de mosaicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -114,7 +114,7 @@ Cuarto componente de desplazamiento aplicado a las coordenadas de textura antes 
 
 Tipo: **uint**
 
-Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -124,9 +124,9 @@ Tipo: **TemplateType**
 
 Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las muestras de textura se pueden usar para la interpolación bilineal.
+Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -140,7 +140,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

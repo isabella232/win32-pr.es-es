@@ -4,12 +4,12 @@ description: Mensajes del selector de fecha y hora
 ms.assetid: ace058fa-7410-4de9-b4c4-5dde88bbb8c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fed0d2e6ba0fbc74ad56137c0e454ac0027e05ee43bce05efb28b04f75993293
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 12c9137600b8c1077173eb010ae57ef014e25465
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119699585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974424"
 ---
 # <a name="date-and-time-picker-messages"></a>Mensajes del selector de fecha y hora
 

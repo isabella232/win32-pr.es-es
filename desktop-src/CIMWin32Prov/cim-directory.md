@@ -45,19 +45,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 38f41b28689ac8ae4bebc29248e27d8e6b17eae1b265237acd91ed2b03d97c9a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cebab65cc067018b3a57aa5f6890fffad1cb4c7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119321605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974230"
 ---
 # <a name="cim_directory-class"></a>Cim \_ Directory (clase)
 
 La **clase \_ Cim Directory** representa un tipo de archivo que agrupa lógicamente los archivos de datos que contiene y proporciona información de ruta de acceso para los archivos agrupados.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -103,7 +103,7 @@ class CIM_Directory : CIM_LogicalFile
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Cim Directory** tiene estos tipos de miembros:
 
@@ -122,12 +122,12 @@ La **clase \_ Cim Directory** tiene estos métodos.
 | [**ChangeSecurityPermissionsEx**](changesecuritypermissionsex-method-in-class-cim-directory.md) | Cambia los permisos de seguridad para el archivo lógico especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                   |
 | [**Comprimir**](compress-method-in-class-cim-directory.md)                                       | Comprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                              |
 | [**CompressEx**](compressex-method-in-class-cim-directory.md)                                   | Comprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                              |
-| [**Copiar**](copy-method-in-class-cim-directory.md)                                               | Copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada. Wmi no implementa .<br/> |
+| [**Copia**](copy-method-in-class-cim-directory.md)                                               | Copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada. Wmi no implementa .<br/> |
 | [**CopyEx**](copyex-method-in-class-cim-directory.md)                                           | Copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada. Wmi no implementa .<br/> |
 | [**Eliminar**](delete-method-in-class-cim-directory.md)                                           | Elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                                 |
 | [**DeleteEx**](deleteex-method-in-class-cim-directory.md)                                       | Elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                                 |
 | [**GetEffectivePermission**](geteffectivepermission-method-in-class-cim-directory.md)           | Determina si el autor de la llamada tiene los permisos agregados especificados por el **argumento Permission.** Wmi no implementa .<br/>                |
-| [**Renombrar**](rename-method-in-class-cim-directory.md)                                           | Cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                                 |
+| [**Cambiar nombre**](rename-method-in-class-cim-directory.md)                                           | Cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                                 |
 | [**TakeOwnerShip**](takeownership-method-in-class-cim-directory.md)                             | Obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                                   |
 | [**TakeOwnerShipEx**](takeownershipex-method-in-class-cim-directory.md)                         | Obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                                   |
 | [**Descomprimir**](uncompress-method-in-class-cim-directory.md)                                   | Descomprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Wmi no implementa .<br/>                                            |
@@ -383,7 +383,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSCreationClassName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Computer System Class Name")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSCreationClassName**"), [**Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre de clase del sistema de equipo")
 </dt> </dl>
 
 Clase del sistema del equipo.
@@ -401,7 +401,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Computer System Name")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Computer System Name")
 </dt> </dl>
 
 Nombre del sistema del equipo.
@@ -494,7 +494,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Método de cifrado")
 </dt> </dl>
 
-Cadena de forma libre que identifica el algoritmo o la herramienta que se usa para cifrar un archivo lógico. Si el esquema de cifrado no está en la lista (por motivos de seguridad, por ejemplo), use "Unknown". Si el archivo está cifrado, pero su esquema de cifrado es desconocido o no se ha divulgado, use "Encrypted". Si el archivo lógico no está cifrado, use "No cifrado".
+Cadena de forma libre que identifica el algoritmo o la herramienta que se usa para cifrar un archivo lógico. Si el esquema de cifrado no está en proceso (por motivos de seguridad, por ejemplo), use "Unknown". Si el archivo está cifrado, pero su esquema de cifrado es desconocido o no se ha divulgado, use "Encrypted". Si el archivo lógico no está cifrado, use "No cifrado".
 
 Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -512,7 +512,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("File Extension")
 </dt> </dl>
 
-Extensión de nombre de archivo sin el período anterior (punto).
+Extensión de nombre de archivo sin el punto anterior (punto).
 
 Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -549,18 +549,18 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Size"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tamaño"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
 Tamaño del archivo, en bytes.
 
 Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
-**FileType**
+**Eltipo**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -587,7 +587,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CreationClassName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("File System Class Name")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CreationClassName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre de clase del sistema de archivos")
 </dt> </dl>
 
 Clase del sistema de archivos.
@@ -605,7 +605,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("File System Name")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("File System Name")
 </dt> </dl>
 
 Nombre del sistema de archivos.
@@ -666,7 +666,7 @@ Número de "archivos que se abren" que están activos actualmente en el archivo.
 
 Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -682,7 +682,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Último acceso")
 </dt> </dl>
 
-Fecha y hora en que se tuvo acceso por última vez al archivo.
+Fecha y hora en que se ha accedido por última vez al archivo.
 
 Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -718,7 +718,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nombre heredado que actúa como clave de una instancia de archivo lógico dentro de un sistema de archivos (proporcione nombres de ruta de acceso completos).
+Nombre heredado que actúa como clave de una instancia de archivo lógica dentro de un sistema de archivos (proporcione nombres de ruta de acceso completos).
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -726,7 +726,7 @@ Ejemplo: "C: \\ Windows \\ sistema \\win.ini"
 
 </dd> <dt>
 
-**Ruta de acceso**
+**Path**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -740,7 +740,7 @@ Calificadores: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**
 
 Ruta de acceso del archivo, incluidas las barras diagonales inversas iniciales y finales. Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
-Ejemplo: " \\ sistema windows \\ \\ "
+Ejemplo: " \\ windows \\ system \\ "
 
 </dd> <dt>
 
@@ -805,28 +805,28 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -904,13 +904,13 @@ Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ Cim Directory** se deriva de CIM [**\_ LogicalFile**](cim-logicalfile.md).
 
 WMI no implementa esta clase. Para obtener más información sobre las clases derivadas del directorio CIM , vea [Clases Win32](win32-provider.md). **\_**
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -926,7 +926,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

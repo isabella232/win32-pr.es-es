@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b9ea1de5a0b9f7be9598a4011cbb6cd76f49e6d4bcc3d468093be1479ee2b59e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ae23a33c2c91dc0a141c6f377daf89708499aae7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120004605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974629"
 ---
 # <a name="writing-a-script-to-configure-the-virtual-directory"></a>Escribir un script para configurar el directorio virtual
 
-Puede usar los valores de propiedad de IIS bits predeterminados para cargar un archivo en el servidor. El archivo de carga se escribe en la dirección URL como se especifica en el nombre de archivo remoto del trabajo. Para cargar el archivo en una aplicación de servidor y recibir una respuesta, cambie la propiedad [BITSServerNotificationType](bits-iis-extension-properties.md) para enviar los datos por referencia (envía el nombre del archivo que contiene los datos) o por valor (envía los datos en el cuerpo de la solicitud).
+Puede usar los valores de propiedad de IIS de BITS predeterminados para cargar un archivo en el servidor. El archivo de carga se escribe en la dirección URL como se especifica en el nombre de archivo remoto del trabajo. Para cargar el archivo en una aplicación de servidor y recibir una respuesta, cambie la propiedad [BITSServerNotificationType](bits-iis-extension-properties.md) para enviar los datos por referencia (envía el nombre del archivo que contiene los datos) o por valor (envía los datos en el cuerpo de la solicitud).
 
-Para obtener una lista y una descripción de las propiedades que puede modificar, vea [Bits IIS Extension Properties](bits-iis-extension-properties.md). Use los métodos de [**la interfaz IBITSExtensionSetup**](/windows/desktop/api/Bitscfg/nn-bitscfg-ibitsextensionsetup) para habilitar y deshabilitar el directorio virtual para las cargas.
+Para obtener una lista y una descripción de las propiedades que puede modificar, vea [Bits Iis Extension Properties](bits-iis-extension-properties.md). Use los métodos de la [**interfaz IBITSExtensionSetup**](/windows/desktop/api/Bitscfg/nn-bitscfg-ibitsextensionsetup) para habilitar y deshabilitar el directorio virtual para las cargas.
 
 En el ejemplo siguiente se muestra cómo usar Windows host de script para crear, configurar y habilitar un directorio virtual de IIS para cargas de BITS.
 
@@ -57,7 +57,7 @@ WScript.Quit( 0 );
 
 
 
-Para cambiar el ejemplo anterior para cargar los datos en una aplicación de servidor, agregue el código siguiente antes **de SetInfo**.
+Para cambiar el ejemplo anterior para cargar los datos en una aplicación de servidor, agregue el código siguiente antes de **SetInfo**.
 
 
 ```JScript
@@ -69,7 +69,7 @@ VirtualDir.BITSServerNotificationURL = "https://myserver/mypath/myasp.asp";
 
 La ubicación del archivo de carga se pasa a la aplicación de servidor, myasp.asp, en el encabezado BITS-Request-DataFile-Name. Para recibir el archivo de carga en el cuerpo de la solicitud, establezca la [propiedad BITSServerNotificationType](bits-iis-extension-properties.md) en 2.
 
-Para obtener información sobre cómo recibir los datos de carga en la aplicación de servidor, consulte Uso de encabezados de [solicitud/respuesta de notificación de BITS.](using-bits-notification-request-response-headers.md)
+Para obtener información sobre cómo recibir los datos de carga en la aplicación de servidor, vea Uso de encabezados de [solicitud/respuesta de notificación de BITS.](using-bits-notification-request-response-headers.md)
 
  
 

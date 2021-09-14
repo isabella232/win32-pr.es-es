@@ -4,16 +4,16 @@ description: BITS usa la propiedad BITSServerNotificationType para determinar c�
 ms.assetid: d5193d0c-3ab4-47ab-a570-fea2904a4371
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a54e859730acaa1456624e9fa5c2302bc36efd9d085daeecdf234aef8f74729c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0d35f6f5fec1a1de9ebd5c2c244a55bc1806b06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120004945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974636"
 ---
 # <a name="notification-protocol-for-server-applications"></a>Protocolo de notificación para aplicaciones de servidor
 
-BITS usa la [propiedad BITSServerNotificationType para](bits-iis-extension-properties.md) determinar cómo BITS envía el contenido del archivo de carga a la aplicación de servidor. Si la propiedad BITSServerNotificationType está establecida en 1, BITS pasa la ubicación del archivo [de carga en un encabezado](#sending-the-location-of-the-upload-file-in-a-header). Si la propiedad BITSServerNotificationType está establecida en 2, BITS pasa el contenido del archivo de carga en el [cuerpo de la solicitud.](#sending-the-upload-file-in-the-body-of-the-request)
+BITS usa la [propiedad BITSServerNotificationType para](bits-iis-extension-properties.md) determinar cómo BITS envía el contenido del archivo de carga a la aplicación de servidor. Si la propiedad BITSServerNotificationType está establecida en 1, BITS pasa la ubicación del archivo [de carga en un encabezado](#sending-the-location-of-the-upload-file-in-a-header). Si la propiedad BITSServerNotificationType se establece en 2, BITS pasa el contenido del archivo de carga en el [cuerpo de la solicitud](#sending-the-upload-file-in-the-body-of-the-request).
 
 Para obtener más información sobre cómo BITS controla los errores de la aplicación de servidor, vea [Control de errores de aplicación de servidor.](#handling-server-application-errors)
 
@@ -39,7 +39,7 @@ En la tabla siguiente se muestran los encabezados de respuesta.
 
 | Encabezado de respuesta               | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BITS-Static-Response-URL      | Opcional. Contiene la dirección URL absoluta (no especifique una dirección URL relativa) a un archivo de datos estático que se usará como respuesta. El cliente de BITS debe tener acceso al archivo de datos estático. Si usa este encabezado, no cree el archivo de respuesta especificado en el encabezado de solicitud BITS-Response-DataFile-Name. Tenga en cuenta que BITS no elimina este archivo por usted.<br/>                                                                                                           |
+| BITS-Static-Response-URL      | Opcional. Contiene la dirección URL absoluta (no especifique una dirección URL relativa) a un archivo de datos estático que se usará como respuesta. El cliente bits debe tener acceso al archivo de datos estático. Si usa este encabezado, no cree el archivo de respuesta especificado en el encabezado de solicitud BITS-Response-DataFile-Name. Tenga en cuenta que BITS no elimina este archivo por usted.<br/>                                                                                                           |
 | BITS-Copy-File-to-Destination | Opcional. De forma predeterminada, si la propiedad [BITSServerNotificationType](bits-iis-extension-properties.md) está establecida en 1 o 2, el servidor BITS no copia el archivo de carga en la ubicación especificada por el nombre de archivo remoto en el trabajo. Para que BITS copie el archivo en la ubicación especificada por el nombre de archivo remoto en el trabajo, envíe este encabezado de respuesta. Puede especificar cualquier valor; BITS no usa el valor . Tenga en cuenta que deben existir las carpetas de la ruta de acceso del archivo remoto. |
 
 
@@ -68,7 +68,7 @@ Content-Length: 0
 
 ## <a name="sending-the-upload-file-in-the-body-of-the-request"></a>Envío del archivo de carga en el cuerpo de la solicitud
 
-BITS envía el archivo de carga en el cuerpo de la solicitud si la [propiedad BITSServerNotificationType](bits-iis-extension-properties.md) está establecida en 2. El envío del archivo de carga en el cuerpo de la solicitud permite que los scripts y las aplicaciones existentes funcionen con modificaciones mínimas. El archivo de carga y el archivo de respuesta se pasan en la solicitud y respuesta, respectivamente. En la tabla siguiente se muestra el encabezado de solicitud.
+BITS envía el archivo de carga en el cuerpo de la solicitud si la [propiedad BITSServerNotificationType](bits-iis-extension-properties.md) está establecida en 2. El envío del archivo de carga en el cuerpo de la solicitud permite que los scripts y las aplicaciones existentes funcionen con modificaciones mínimas. El archivo de carga y el archivo de respuesta se pasan en la solicitud y la respuesta, respectivamente. En la tabla siguiente se muestra el encabezado de solicitud.
 
 
 
@@ -86,14 +86,14 @@ En la tabla siguiente se muestran los encabezados de respuesta.
 
 | Encabezado de respuesta               | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BITS-Static-Response-URL      | Opcional. Contiene la dirección URL absoluta (no especifique una dirección URL relativa) a un archivo de datos estático que se usará como respuesta. El cliente de BITS debe tener acceso al archivo de datos estático. Si usa este encabezado, no incluya la respuesta en la secuencia. Tenga en cuenta que BITS no elimina este archivo por usted.<br/>                                                                                                                                      |
+| BITS-Static-Response-URL      | Opcional. Contiene la dirección URL absoluta (no especifique una dirección URL relativa) a un archivo de datos estático que se usará como respuesta. El cliente bits debe tener acceso al archivo de datos estático. Si usa este encabezado, no incluya la respuesta en la secuencia. Tenga en cuenta que BITS no elimina este archivo por usted.<br/>                                                                                                                                      |
 | BITS-Copy-File-to-Destination | Opcional. Si la [propiedad BITSServerNotificationType](bits-iis-extension-properties.md) se establece en 1 o 2, el servidor BITS no copia el archivo de carga en la ubicación especificada por el nombre de archivo remoto en el trabajo. Para que BITS copie el archivo en la ubicación especificada por el nombre de archivo remoto, envíe este encabezado de respuesta. Puede especificar cualquier valor; BITS no usa el valor . Tenga en cuenta que deben existir las carpetas de la ruta de acceso del archivo remoto. |
 
 
 
  
 
-La solicitud siguiente muestra BITS que pasan el archivo cargado a la aplicación de servidor en el cuerpo de la solicitud.
+La solicitud siguiente muestra bits que pasan el archivo cargado a la aplicación de servidor en el cuerpo de la solicitud.
 
 ``` syntax
 POST https://myserver/myvdir/handle_upload.asp?ACCOUNT=873112 HTTP/1.1
@@ -104,7 +104,7 @@ Content-Length: 80000
 80000 bytes of upload data goes here
 ```
 
-La siguiente respuesta muestra que la aplicación de servidor pasa los datos de respuesta a BITS en el cuerpo de la respuesta.
+La respuesta siguiente muestra que la aplicación de servidor pasa los datos de respuesta a BITS en el cuerpo de la respuesta.
 
 ``` syntax
 HTTP/1.1 200 - OK
@@ -115,7 +115,7 @@ Content-Length: 100
 
 ## <a name="handling-server-application-errors"></a>Control de errores de aplicación de servidor
 
-Consulte [Control de errores de aplicación de servidor.](handling-server-application-errors.md)
+Vea [Control de errores de aplicación de servidor.](handling-server-application-errors.md)
 
  
 

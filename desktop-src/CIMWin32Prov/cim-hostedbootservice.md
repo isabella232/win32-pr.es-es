@@ -1,5 +1,5 @@
 ---
-description: La clase \_ HostedBootService de CIM asocia un sistema de hospedaje y un servicio de arranque. Puesto que esta relación se subclasifica de CIM HostedService, hereda el esquema de ámbito y nomenclatura definido para el servicio, donde un servicio se aplaza a su \_ sistema de hospedaje.
+description: La clase \_ HostedBootService de CIM asocia un sistema de hospedaje y un servicio de arranque. Puesto que esta relación se subclasifica de CIM HostedService, hereda el esquema de ámbito y nomenclatura definido para el servicio, donde un servicio se aplaza a su sistema \_ de hospedaje.
 ms.assetid: 91621288-a231-4423-94df-7601bdf2ebe1
 ms.tgt_platform: multiple
 title: CIM_HostedBootService clase
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: abfd506a3962e05a8ab1087dc3a5dc43d4cd74fac08fac7344d3ff22fff49909
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12baa364653feda1400ad15d658e6739859b2521
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119921685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974555"
 ---
-# <a name="cim_hostedbootservice-class"></a>Clase \_ HostedBootService de CIM
+# <a name="cim_hostedbootservice-class"></a>Cim \_ HostedBootService (clase)
 
-La **clase \_ HostedBootService de CIM** asocia un sistema de hospedaje y un servicio de arranque. Puesto que esta relación se encuentra en subclases de [**CIM \_ HostedService,**](cim-hostedservice.md)hereda el esquema de ámbito y nomenclatura definido para el servicio, donde un servicio se aplaza a su sistema de hospedaje.
+La **clase \_ HostedBootService de CIM** asocia un sistema de hospedaje y un servicio de arranque. Puesto que esta relación se subclasifica de [**CIM \_ HostedService**](cim-hostedservice.md), hereda el esquema de ámbito y nomenclatura definido para el servicio, donde un servicio se aplaza a su sistema de hospedaje.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,15 +45,15 @@ class CIM_HostedBootService : CIM_HostedService
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ HostedBootService** de CIM tiene estos tipos de miembros:
+La **clase \_ HostedBootService de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ HostedBootService** de CIM tiene estas propiedades.
+La **clase \_ HostedBootService de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ Tipo de datos: **Sistema CIM \_**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) (antecedente)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) (Antecedente)
 </dt> </dl>
 
 Sistema [**CIM \_ que**](cim-system.md) describe el sistema de hospedaje.
@@ -82,20 +82,20 @@ Tipo de datos: **CIM \_ BootService**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
 Un [**servicio de \_ arranque CIM**](cim-bootservice.md) que describe el servicio de arranque hospedado en el sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ HostedBootService** de CIM se deriva de [**CIM \_ HostedService**](cim-hostedservice.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

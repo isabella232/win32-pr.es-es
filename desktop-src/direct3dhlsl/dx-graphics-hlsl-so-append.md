@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 956d4b2e37c4430e20fc4b75b2847c096c7832369d036f5224d8c36d86b7c66c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 19d767f3c501cc42e21bbc44a196ba08cd6f1883
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120068175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974704"
 ---
 # <a name="append-directx-hlsl-stream-output-object"></a>Append (objeto Stream-Output HLSL de DirectX)
 
@@ -44,7 +44,7 @@ None
 
 ## <a name="example"></a>Ejemplo
 
-Este fragmento de código (del ejemplo [CubeMapGS)](https://msdn.microsoft.com/library/Ee416398(v=VS.85).aspx)muestra un ejemplo parcial de anexar primitivas de franja de triángulo a un objeto de salida de flujo.
+Este fragmento de código (del ejemplo [CubeMapGS](https://msdn.microsoft.com/library/Ee416398(v=VS.85).aspx)) muestra un ejemplo parcial de anexar primitivas de franjas de triángulo a un objeto de salida de flujo.
 
 
 ```
@@ -79,10 +79,10 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

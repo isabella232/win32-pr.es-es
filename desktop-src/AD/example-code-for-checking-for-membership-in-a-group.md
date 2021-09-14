@@ -7,12 +7,12 @@ keywords:
 - Active Directory ejemplos Active Directory , comprobar la pertenencia a un grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c929580bec3717f0dd1bd82520af7755061112eca7a28226275f796f4d41af22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2043808dc31fb3c154a050fb77a7e4f44f44632d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118191156"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974259"
 ---
 # <a name="example-code-for-checking-for-membership-in-a-group"></a>Código de ejemplo para comprobar la pertenencia a un grupo
 

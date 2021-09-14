@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 26017eefec18e5c8cb2c2d9cadf00a45a367670032f3f55bd2b152e2294b0a0b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae125be35ae25424ecc1a396f3d57a763eb419fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118293486"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974765"
 ---
 # <a name="id3dxprtenginegetnumverts-method"></a>Método ID3DXPRTEngine::GetNumVerts
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de vértices de la malla, incluidos los nuevos vértices agregados como resultado del muestreo adaptable.
+Número de vértices en la malla, incluidos los nuevos vértices agregados como resultado del muestreo adaptable.
 
 ## <a name="requirements"></a>Requisitos
 

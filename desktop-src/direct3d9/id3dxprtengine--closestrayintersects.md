@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a2620140337807891efa739da4540e3895394f63bcc494396c13e7c15d0c1b29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4fd802f636077c9ec2a9f0f1060ffd43493aabf1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117729791"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974767"
 ---
 # <a name="id3dxprtengineclosestrayintersects-method"></a>Método ID3DXPRTEngine::ClosestRayIntersects
 
@@ -105,7 +105,7 @@ Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 Devuelve **TRUE** si el rayo forma una intersección con la malla actual; de lo contrario, **devuelve FALSE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use [**ID3DXPRTEngine::SetMinMaxIntersection**](id3dxprtengine--setminmaxintersection.md) para establecer distancias mínimas y máximas de intersección con el rayo.
 
@@ -126,7 +126,7 @@ Las coordenadas barítricas definen un punto dentro de un triángulo en término
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

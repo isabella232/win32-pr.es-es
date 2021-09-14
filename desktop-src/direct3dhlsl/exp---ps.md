@@ -1,6 +1,6 @@
 ---
-title: EXP-PS
-description: Proporciona el doble de precisión exponencial. | EXP-PS
+title: exp - ps
+description: Proporciona una precisión total exponencial de 2x. | exp - ps
 ms.assetid: 09e4446f-4149-4ec8-b3e3-2045b55bd591
 ms.topic: reference
 ms.date: 05/31/2018
@@ -10,21 +10,21 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: acd7c50c1f0d6ff08ee5d66e50fdd3e56939f0d9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104083626"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974676"
 ---
-# <a name="exp---ps"></a>EXP-PS
+# <a name="exp---ps"></a>exp - ps
 
-Proporciona una precisión completa exponencial 2<sup>x</sup>.
+Proporciona una precisión total exponencial de 2<sup>x</sup>.
 
 ## <a name="syntax"></a>Sintaxis
 
 
 
-| EXP DST, src |
+| exp dst, src |
 |--------------|
 
 
@@ -33,14 +33,14 @@ Proporciona una precisión completa exponencial 2<sup>x</sup>.
 
 , donde
 
--   DST es el registro de destino.
--   src es un registro de origen. El registro de origen requiere el uso explícito de replicate swizzle; es decir, se debe especificar exactamente uno de los componentes. x,. y,. z,. w swizzle (o. r,. g,. b,. a equivalentes). Consulte [source Register permutación](dx9-graphics-reference-asm-ps-registers-modifiers-source-register-swizzling.md).
+-   dst es el registro de destino.
+-   src es un registro de origen. El registro de origen requiere el uso explícito de replicate swzzle; Es decir, se debe especificar exactamente uno de los componentes .x, .y, .z, .w swzzle (o .r, .g, .b, .a equivalentes). Consulte [Source Register Swlingling](dx9-graphics-reference-asm-ps-registers-modifiers-source-register-swizzling.md).
 
 ## <a name="remarks"></a>Observaciones
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | exp                   |      |      |      |      | x    | x    | x     | x    | x     |
 
@@ -48,7 +48,7 @@ Proporciona una precisión completa exponencial 2<sup>x</sup>.
 
  
 
-En el fragmento de código siguiente se muestran las operaciones realizadas:
+El fragmento de código siguiente muestra las operaciones realizadas:
 
 
 ```

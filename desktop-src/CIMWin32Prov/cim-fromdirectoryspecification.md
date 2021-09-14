@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bcb08f58e744e9926a3c4734ac1b8ad4fb75e3288b96ae0c0a7622c5e4109b79
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7690514b46d89bdf1aa926438456c49598034700
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119320915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974572"
 ---
 # <a name="cim_fromdirectoryspecification-class"></a>Cim \_ FromDirectorySpecification (clase)
 
 La **\_ asociación FromDirectorySpecification** de CIM identifica el directorio de origen para la acción de archivo. Cuando se usa esta asociación, se supone que el directorio de origen ya existe. Esta asociación no puede existir con una [**asociación \_ FromDirectoryAction de CIM;**](cim-fromdirectoryaction.md) una acción de archivo solo puede implicar un único directorio de origen.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,28 +45,28 @@ class CIM_FromDirectorySpecification
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ FromDirectorySpecification** de CIM tiene estos tipos de miembros:
+La **clase CIM \_ FromDirectorySpecification** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ FromDirectorySpecification** de CIM tiene estas propiedades.
+La **clase CIM \_ FromDirectorySpecification** tiene estas propiedades.
 
 <dl> <dt>
 
 **FileName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **\_ CIM FileAction**
+Tipo de datos: **CIM \_ FileAction**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mínimo**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Referencia al nombre de archivo.
@@ -89,17 +89,17 @@ Referencia al directorio de origen.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f31473cf1efa0310669523f0481b58d8b54036f738a69191f19a0a52d804eb05
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f4090da88e8f5d31b0940b0c7d217a930a364b63
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118416820"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974462"
 ---
 # <a name="win32_sessionprocess-class"></a>Clase SessionProcess de Win32 \_
 
@@ -40,7 +40,7 @@ class Win32_SessionProcess : Win32_SessionResource
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SessionProcess de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Proceso [**win32 \_ que**](win32-processor.md) representa el proceso asociado a 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Win32 \_ SessionProcess** devuelve toda la sesión del administrador cuando se inicia sesión con privilegios elevados o cuando se ejecuta de forma remota. Se trata de una extensión para el comportamiento de la clase .
 
@@ -92,7 +92,7 @@ Proceso [**win32 \_ que**](win32-processor.md) representa el proceso asociado a 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

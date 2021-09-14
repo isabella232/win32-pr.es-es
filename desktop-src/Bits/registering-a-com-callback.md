@@ -10,12 +10,12 @@ keywords:
 - BITS de eventos de notificación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 753feb481a578c30322d18def07418c2dcb611d601fcb438b0e85e843697790b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cdcc52c772656c2168af9c10724ee43fac25aa80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118680009"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974257"
 ---
 # <a name="registering-a-com-callback"></a>Registro de una devolución de llamada COM
 

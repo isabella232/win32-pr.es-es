@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102491
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f9b255a4695abbd7062ae02bd1d5553e1e1ae64a59d51e15013ef306f8366a4d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dbbaff4d1b4219a136798696e2305c1f1d3f37b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119947265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887972"
 ---
 # <a name="esentoutofsequentialindexvaluesexception-methods"></a>Métodos de EsentOutOfSequentialIndexValuesException 
 
@@ -78,7 +78,7 @@ El [tipo EsentOutOfSequentialIndexValuesException](./esentoutofsequentialindexva
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -30,18 +30,18 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: f9148c30f14140edc89b8949b5731ea5c259e0fb
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122886484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974586"
 ---
 # <a name="cim_filespecification-class"></a>Cim \_ FileSpecification (clase)
 
-La **clase \_ Cim FileSpecification** representa un archivo que está en o fuera del sistema. El archivo se encuentra en el directorio identificado por la [**asociación \_ Cim DirectorySpecificationFile.**](cim-directoryspecificationfile.md) El [**método Invoke**](invoke-method-in-class-cim-filespecification.md) usa la información para comprobar la existencia del archivo. Tenga en cuenta que no se **comprueban las propiedades** con un valor NULL.
+La **clase \_ Cim FileSpecification** representa un archivo que está en o fuera del sistema. El archivo se encuentra en el directorio identificado por la [**asociación Cim \_ DirectorySpecificationFile.**](cim-directoryspecificationfile.md) El [**método Invoke**](invoke-method-in-class-cim-filespecification.md) usa la información para comprobar la existencia del archivo. Tenga en cuenta que no se **comprueban las propiedades** con un valor NULL.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -71,7 +71,7 @@ class CIM_FileSpecification : CIM_Check
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Cim FileSpecification** tiene estos tipos de miembros:
 
@@ -86,7 +86,7 @@ La **clase \_ Cim FileSpecification** tiene estos métodos.
 
 | Método                                                         | Descripción                                                      |
 |:---------------------------------------------------------------|:-----------------------------------------------------------------|
-| [**Invocar**](invoke-method-in-class-cim-filespecification.md) | Evalúa una comprobación determinada. Wmi no implementa.<br/> |
+| [**Invocar**](invoke-method-in-class-cim-filespecification.md) | Evalúa una comprobación determinada. Wmi no implementa .<br/> |
 
 
 
@@ -145,7 +145,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que el [**método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **TRUE**.
 
-Si **es FALSE,** no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que el [**método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
+Si **es FALSE,** no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
 
 Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
@@ -307,12 +307,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado del elemento de software de un elemento de software.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 <dt>
 
@@ -345,7 +345,7 @@ Describe los detalles necesarios para una instalación correcta y los detalles (
 
 </dt> <dd>
 
-Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado en ejecución (es decir, el siguiente estado).
+Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado de ejecución (es decir, el siguiente estado).
 
 </dd> <dt>
 
@@ -356,7 +356,7 @@ Describe los detalles necesarios para la ejecución correcta y los detalles (con
 
 </dt> <dd>
 
-Describe los detalles necesarios para supervisar y operar en un elemento start.
+Describe los detalles necesarios para supervisar y operar en un elemento de inicio.
 
 </dd> </dl>
 
@@ -371,12 +371,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
 </dt> </dl>
 
 Sistema operativo de destino del elemento de software.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 <dt>
 
@@ -444,7 +444,7 @@ Att UNIX
 
 </dt> <dd>
 
-Abrir máquinas virtuales
+Apertura de MÁQUINAS VIRTUALES
 
 </dd> <dt>
 
@@ -482,7 +482,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SISTEMA OPERATIVO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -701,7 +701,7 @@ BS2000/OSD
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estorba** (37)
 
 
 </dt> <dd></dd> <dt>
@@ -847,7 +847,7 @@ Mac OS 9
 
 </dt> <dd>
 
-So de mano
+So De remanso
 
 </dd> <dt>
 
@@ -911,7 +911,7 @@ Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase. Para las clases derivadas de **CIM \_ FileSpecification**, vea [Clases win32](win32-provider.md).
 
@@ -921,7 +921,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -931,7 +931,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

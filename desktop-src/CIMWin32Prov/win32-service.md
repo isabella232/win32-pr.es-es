@@ -40,18 +40,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a33265b3dfc3b114d55b381a229b717e291bbd258716e8305d9995282d29b3f6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b342282bfa3b49fe72e62cf79377a0ead11276eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974463"
 ---
 # <a name="win32_service-class"></a>Clase de servicio Win32 \_
 
 La **clase \_ WMI de servicio Win32** [representa](../wmisdk/retrieving-a-class.md) un servicio en un sistema informático que ejecuta Windows.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -88,9 +88,9 @@ class Win32_Service : Win32_BaseService
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ Servicio Win32** tiene estos tipos de miembros:
+La **clase De servicio \_ Win32** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
@@ -105,12 +105,12 @@ La **clase \_ Servicio Win32** tiene estos métodos.
 |:-------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
 | [**Change**](change-method-in-class-win32-service.md)                               | Modifica un servicio.<br/>                                                                       |
 | [**ChangeStartMode**](changestartmode-method-in-class-win32-service.md)             | Modifica el modo de inicio de un servicio.<br/>                                                     |
-| [**Creación**](create-method-in-class-win32-service.md)                               | Crea un nuevo servicio.<br/>                                                                    |
+| [**Crear**](create-method-in-class-win32-service.md)                               | Crea un nuevo servicio.<br/>                                                                    |
 | [**Eliminar**](delete-method-in-class-win32-service.md)                               | Elimina un servicio existente.<br/>                                                              |
 | [**GetSecurityDescriptor**](getsecuritydescriptor-method-in-class-win32-service.md) | Devuelve el descriptor de seguridad que controla el acceso al servicio.<br/>                      |
 | [**InterrogateService**](interrogateservice-method-in-class-win32-service.md)       | Solicita que un servicio actualice su estado al administrador de servicios.<br/>                          |
 | [**PauseService**](pauseservice-method-in-class-win32-service.md)                   | Intenta colocar un servicio en estado en pausa.<br/>                                          |
-| [**ResumeService**](resumeservice-method-in-class-win32-service.md)                 | Intenta colocar un servicio en el estado reanudado.<br/>                                         |
+| [**ResumeService**](resumeservice-method-in-class-win32-service.md)                 | Intenta colocar un servicio en estado reanudado.<br/>                                         |
 | [**SetSecurityDescriptor**](setsecuritydescriptor-method-in-class-win32-service.md) | Escribe una versión actualizada del descriptor de seguridad que controla el acceso al servicio.<br/> |
 | [**StartService**](startservice-method-in-class-win32-service.md)                   | Intenta colocar un servicio en el estado de inicio.<br/>                                       |
 | [**StopService**](stopservice-method-in-class-win32-service.md)                     | Coloca un servicio en estado detenido.<br/>                                                    |
@@ -174,7 +174,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
-Descripción breve del servicio: una cadena de una línea.
+Breve descripción del servicio: una cadena de una línea.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -192,7 +192,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwCheckPoint"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Check Point Count")
 </dt> </dl>
 
-Valor que el servicio incrementa periódicamente para informar de su progreso durante una operación larga de inicio, detenerse, pausar o continuar. Por ejemplo, el servicio incrementa este valor a medida que completa cada paso de su inicialización cuando se inicia. El programa de interfaz de usuario que invoca la operación en el servicio usa este valor para realizar un seguimiento del progreso del servicio durante una operación larga. Este valor no es válido y debe ser cero cuando el servicio no tiene una operación de inicio, detenerse, pausar o continuar pendiente.
+Valor que el servicio incrementa periódicamente para informar de su progreso durante una operación larga de inicio, detenerse, pausar o continuar. Por ejemplo, el servicio incrementa este valor a medida que completa cada paso de su inicialización cuando se inicia. El programa de interfaz de usuario que invoca la operación en el servicio usa este valor para realizar un seguimiento del progreso del servicio durante una operación larga. Este valor no es válido y debe ser cero cuando el servicio no tiene pendiente una operación de inicio, detenerse, pausar o continuar.
 
 </dd> <dt>
 
@@ -208,7 +208,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre de clase")
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
+Nombre de la primera clase concreta que aparece en la cadena de herencia usada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
 Esta propiedad se hereda del [**servicio CIM. \_**](cim-service.md)
 
@@ -377,7 +377,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwWin32ExitCode"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Código de salida")
 </dt> </dl>
 
-Windows código de error que define los errores detectados al iniciar o detener el servicio. Esta propiedad se establece en **\_ ERROR SERVICE SPECIFIC \_ \_ ERROR** (1066) cuando el error es único para el servicio representado por esta clase y la información sobre el error está disponible en la **propiedad ServiceSpecificExitCode.** El servicio establece este valor en **NO \_ ERROR cuando se** ejecuta y, de nuevo, en la finalización normal.
+Windows código de error que define los errores detectados al iniciar o detener el servicio. Esta propiedad se establece en **ERROR \_ SERVICE SPECIFIC \_ \_ ERROR** (1066) cuando el error es único para el servicio representado por esta clase y la información sobre el error está disponible en la **propiedad ServiceSpecificExitCode.** El servicio establece este valor en **NO \_ ERROR cuando se** ejecuta y, de nuevo, en la finalización normal.
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
@@ -576,7 +576,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Modo de inicio")
 </dt> </dl>
 
-Modo de inicio del Windows base de datos.
+Modo de inicio del Windows base.
 
 <dt>
 
@@ -593,7 +593,7 @@ Controlador de dispositivo iniciado por el cargador del sistema operativo (váli
 
 <span id="System"></span><span id="system"></span><span id="SYSTEM"></span>
 
-<span id="System"></span><span id="system"></span><span id="SYSTEM"></span>**Sistema** ("Sistema")
+<span id="System"></span><span id="system"></span><span id="SYSTEM"></span>**System** ("System")
 
 
 </dt> <dd>
@@ -620,7 +620,7 @@ Servicio que el administrador de control de servicios iniciará automáticamente
 
 </dt> <dd>
 
-Servicio que debe iniciar el Administrador de control de servicios cuando un proceso llame al [**método StartService.**](startservice-method-in-class-win32-service.md) Estos servicios no se inician a menos que un usuario inicie sesión y los inicie.
+Servicio que debe iniciar el Administrador de control de servicios cuando un proceso llame al [**método StartService.**](startservice-method-in-class-win32-service.md) Estos servicios no se inician a menos que un usuario inicie sesión e inicie estos servicios.
 
 </dd> <dt>
 
@@ -631,7 +631,7 @@ Servicio que debe iniciar el Administrador de control de servicios cuando un pro
 
 </dt> <dd>
 
-Servicio que no se puede iniciar hasta que startMode cambia a Automático o Manual.
+Servicio que no se puede iniciar hasta que startMode cambie a Auto o Manual.
 
 </dd> </dl>
 
@@ -651,7 +651,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| lpServiceStartName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Starting Account Name")
 </dt> </dl>
 
-Nombre de cuenta con el que se ejecuta un servicio. Según el tipo de servicio, el nombre de la cuenta puede tener el formato "NombreDeUsuario DeNombreDe DomainName" o \\ Formato UPN (" *Username@DomainName* "). El proceso de servicio se registra mediante uno de estos dos formularios cuando se ejecuta. Si la cuenta pertenece al dominio integrado, ". \\ Nombre de usuario" se puede especificar. En el caso de los controladores de kernel o de nivel de sistema, **StartName** contiene el nombre del objeto de controlador (es decir, \\ "FileSystem \\ Rdr" o \\ "Driver Xns") que el sistema de E/S usa para cargar el controlador de \\ dispositivo. Además, si **se especifica NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio.
+Nombre de cuenta con el que se ejecuta un servicio. Según el tipo de servicio, el nombre de la cuenta puede tener el formato "NombredeUsuario de nombreDe DomainName" o \\ Formato UPN (" *Username@DomainName* "). El proceso de servicio se registra mediante uno de estos dos formularios cuando se ejecuta. Si la cuenta pertenece al dominio integrado, ". \\ Nombre de usuario" se puede especificar. En el caso de los controladores de kernel o de nivel de sistema, **StartName** contiene el nombre del objeto de controlador (es decir, \\ "FileSystem \\ Rdr" o \\ "Driver Xns") que el sistema de E/S usa para cargar el controlador de \\ dispositivo. Además, si **se especifica NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio.
 
 Ejemplo: "DWDOM \\ Admin"
 
@@ -700,7 +700,7 @@ Los valores son:
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-**Ejecución** ("En ejecución")
+**En** ejecución ("En ejecución")
 
 
 </dt> <dd></dd> <dt>
@@ -721,19 +721,19 @@ Los valores son:
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-**En pausa** ("en pausa")
+**En pausa** ("En pausa")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> </dl>
 
-**Windows Server 2008 y Windows Vista:** Esta propiedad es de solo lectura antes de Windows 7 y Windows Server 2008 R2.
+**Windows Server 2008 y Windows Vista:** Esta propiedad es de solo lectura antes Windows 7 y Windows Server 2008 R2.
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
@@ -751,7 +751,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -782,7 +782,7 @@ Los valores son:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -796,14 +796,14 @@ Los valores son:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -854,10 +854,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Class Name")
+Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Class Name")
 </dt> </dl>
 
-Nombre de tipo del sistema que hospeda este servicio.
+Escriba el nombre del sistema que hospeda este servicio.
 
 Esta propiedad se hereda del [**servicio CIM. \_**](cim-service.md)
 
@@ -872,7 +872,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Name")
+Calificadores: [**Propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Name")
 </dt> </dl>
 
 Nombre del sistema que hospeda este servicio.
@@ -893,11 +893,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures QUERY SERVICE \| [**\_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwTagId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Id. de etiqueta")
 </dt> </dl>
 
-Valor de etiqueta único para este servicio en el grupo. Un valor de 0 (cero) indica que el servicio no tiene una etiqueta. Una etiqueta se puede usar para ordenar el inicio del servicio dentro de un grupo de pedidos de carga especificando un vector de orden de etiquetas en el registro ubicado en:
+Valor de etiqueta único para este servicio del grupo. Un valor de 0 (cero) indica que el servicio no tiene una etiqueta. Una etiqueta se puede usar para ordenar el inicio del servicio dentro de un grupo de pedidos de carga especificando un vector de orden de etiquetas en el registro ubicado en:
 
-**HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **GroupOrderList**    
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **GroupOrderList**    
 
-Las etiquetas solo se evalúan para los servicios de tipo de inicio Controlador de kernel y Controlador del sistema de archivos que tienen modos de inicio de arranque o sistema.
+Las etiquetas solo se evalúan para los servicios de tipo de inicio del controlador kernel y del controlador del sistema de archivos que tienen modos de inicio de arranque o sistema.
 
 Esta propiedad se hereda de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
@@ -915,31 +915,31 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwWaitHint"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Estimated Wait Time")
 </dt> </dl>
 
-Tiempo estimado necesario, en milisegundos, para una operación pendiente de inicio, detenerse, pausar o continuar. Una vez transcurrido el tiempo especificado, el servicio realiza su siguiente llamada al método **SetServiceStatus** con un valor **de CheckPoint** incrementado o un cambio en **CurrentState**. Si la cantidad de tiempo especificada por **WaitHint** pasa y **CheckPoint** no se ha incrementado o **CurrentState** no ha cambiado, el administrador de control de servicios o el programa de control de servicios asumen que se ha producido un error.
+Tiempo estimado necesario, en milisegundos, para una operación pendiente de inicio, detenerse, pausar o continuar. Una vez transcurrido el tiempo especificado, el servicio realiza su siguiente llamada al método **SetServiceStatus** con un valor **de CheckPoint** incrementado o un cambio en **CurrentState**. Si se supera la cantidad de tiempo especificada por **WaitHint** y **CheckPoint** no se ha incrementado o **CurrentState** no ha cambiado, el administrador de control de servicios o el programa de control de servicios asumen que se ha producido un error.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase De servicio \_ win32** se deriva de [**\_ BaseService de Win32.**](win32-baseservice.md)
+La **clase de servicio \_ Win32** se deriva de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
-La forma en que administra un equipo específico depende en gran medida del rol que desempeña ese equipo. Por ejemplo, generalmente supervisa distintos aspectos de un servidor DNS que un servidor DHCP. Aunque ninguna propiedad individual puede saber si un equipo determinado es un servidor de bases de datos, un servidor de correo electrónico o un servidor multimedia, a menudo puede identificar el rol que desempeña un equipo mediante la identificación de los servicios instalados en él.
+La forma en que administra un equipo específico depende en gran medida del rol que desempeña ese equipo. Por ejemplo, generalmente se supervisan distintos aspectos de un servidor DNS que de un servidor DHCP. Aunque ninguna propiedad única puede saber si un equipo determinado es un servidor de bases de datos, un servidor de correo electrónico o un servidor multimedia, a menudo puede identificar el rol que desempeña un equipo mediante la identificación de los servicios instalados en él.
 
-En organizaciones grandes, es probable que solo uno de los principales servicios (como el correo electrónico) esté instalado en un solo equipo. No sería habitual que un servidor de correo también actuara como servidor para los archivos de reproductor de microsoft® Windows Media® technologies. Por este problema, identificar un servicio instalado en un equipo puede ayudar a identificar el rol del equipo en la red. Si el servicio microsoft® Exchange Server está instalado y ejecutándose en un equipo, por lo general es seguro suponer que este equipo funciona como un servidor de correo.
+En organizaciones grandes, es probable que solo uno de los servicios principales (como el correo electrónico) esté instalado en un solo equipo. No sería habitual que un servidor de correo también se desempeñara como servidor para los archivos de reproductor de microsoft® Windows Media® tecnologías. Por este problema, identificar un servicio instalado en un equipo puede ayudar a identificar el rol del equipo en la red. Si el servicio microsoft® Exchange Server está instalado y ejecutándose en un equipo, por lo general es seguro suponer que este equipo funciona como un servidor de correo.
 
 Puede usar la clase de **servicio Win32 \_ de** WMI para enumerar los servicios instalados en un equipo. Además, puede usar esta clase para determinar si esos servicios se están ejecutando actualmente y devolver cualquier otra información necesaria sobre ese servicio y cómo se ha configurado.
 
 Una aplicación de servicio se ajusta a las reglas de interfaz del Administrador de control de servicios (SCM) y un usuario puede iniciarla automáticamente al iniciar el sistema a través de la utilidad del panel de control Servicios o mediante una aplicación que usa las funciones de servicio incluidas en la API de Windows. Los servicios se pueden iniciar cuando no hay usuarios que hayan iniciado sesión en el equipo.
 
-Un usuario que se conecta desde un equipo remoto debe tener habilitado el privilegio **SC \_ MANAGER \_ CONNECT** para poder enumerar esta clase. Para obtener más información, vea [Derechos de acceso y seguridad del servicio.](../services/service-security-and-access-rights.md)
+Un usuario que se conecta desde un equipo remoto debe tener habilitado el privilegio **SC \_ MANAGER \_ CONNECT** para poder enumerar esta clase. Para obtener más información, vea [Service Security and Access Rights](../services/service-security-and-access-rights.md).
 
 ## <a name="examples"></a>Ejemplos
 
 La consulta PS- WMI que devuelve el servicio ["Estado"](https://Gallery.TechNet.Microsoft.Com/0f1ab629-d463-4406-be54-ec2c4c23bc1f) en un grupo de dispositivos Ejemplo de PowerShell en la Galería de TechNet usa el servicio **\_ Win32** para crear una lista de dispositivos de Active Directory y, a continuación, consultar cada dispositivo que responde con ping para un servicio específico en ejecución.
 
-El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/Server-Report-7b4ac2fb) PowerShell del informe del servidor en la Galería de TechNet usa el servicio **\_ Win32** para recopilar información del servidor y publicar en el documento de Word.
+El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/Server-Report-7b4ac2fb) PowerShell de informe de servidor en la Galería de TechNet usa el servicio **\_ Win32** para recopilar información del servidor y publicar en el documento de Word.
 
-El siguiente ejemplo de código VBScript muestra todos los servicios instalados actualmente.
+En el siguiente ejemplo de código de VBScript se muestran todos los servicios instalados actualmente.
 
 
 ```VB
@@ -968,7 +968,7 @@ next
 
 
 
-En el siguiente ejemplo de código VBScript se describen los servicios en pausa, en ejecución y detenidos en el equipo especificado.
+En el ejemplo de código de VBScript siguiente se describen los servicios en pausa, en ejecución y detenidos en el equipo especificado.
 
 
 ```VB
@@ -992,7 +992,7 @@ Next
 
 
 
-El siguiente script de Perl muestra cómo recuperar una lista de servicios en ejecución de instancias del **servicio Win32 \_**.
+El siguiente script de Perl muestra cómo recuperar una lista de servicios en ejecución de instancias del **servicio Win32. \_**
 
 
 ```
@@ -1030,7 +1030,7 @@ else
 
 
 
-En el ejemplo \# c siguiente se usa [Microsoft.Management.Infrastructure para](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) recuperar todos los servicios en ejecución en el equipo local.
+En el ejemplo c \# siguiente se [usa Microsoft.Management.Infrastructure para](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) recuperar todos los servicios en ejecución en el equipo local.
 
 
 ```CSharp
@@ -1058,10 +1058,10 @@ static void QueryInstanceFunc()
 
 
 
-En el ejemplo \# de código C siguiente se usa el espacio de nombres [System.Management](/dotnet/api/system.management) para recuperar todos los servicios en ejecución en el equipo local.
+En el siguiente ejemplo de código de C \# se usa el espacio de nombres [System.Management](/dotnet/api/system.management) para recuperar todos los servicios en ejecución en el equipo local.
 
 > [!Note]  
-> [System.Management contiene](/dotnet/api/system.management) las clases originales usadas para tener acceso a WMI; sin embargo, se consideran más lentos y, por lo general, no se escalan, así como sus homólogos [de Microsoft.Management.Infrastructure.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85))
+> [System.Management contiene](/dotnet/api/system.management) las clases originales usadas para tener acceso a WMI; sin embargo, se consideran más lentos y, por lo general, no escalan, así como sus [homólogos de Microsoft.Management.Infrastructure.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85))
 
  
 
@@ -1107,11 +1107,11 @@ using System.Management;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**BaseService de Win32 \_**](win32-baseservice.md)
+[**Win32 \_ BaseService**](win32-baseservice.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

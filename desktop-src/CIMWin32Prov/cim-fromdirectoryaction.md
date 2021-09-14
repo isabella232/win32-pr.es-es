@@ -1,5 +1,5 @@
 ---
-description: La \_ asociación CIM FromDirectoryAction identifica el directorio de origen para la acción de archivo.
+description: La \_ asociación FromDirectoryAction de CIM identifica el directorio de origen para la acción de archivo.
 ms.assetid: 25d06dad-ae39-4cfc-9331-4be7ef02d87c
 ms.tgt_platform: multiple
 title: CIM_FromDirectoryAction clase
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2d9055b47448bf21543dd738f5378ac0e19d209ebb0a40346e07cd57e01c8f63
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f485fa32561e746afa16a899a1392b4fddc18f1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119923735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974575"
 ---
 # <a name="cim_fromdirectoryaction-class"></a>Cim \_ FromDirectoryAction (clase)
 
-La **\_ asociación CIM FromDirectoryAction** identifica el directorio de origen para la acción de archivo. Cuando se usa esta asociación, se supone que una acción anterior creó el directorio de origen. Esta asociación no puede existir con una [**asociación \_ FromDirectorySpecification**](cim-fromdirectoryspecification.md) de CIM; una acción de archivo solo puede implicar un único directorio de origen.
+La **\_ asociación FromDirectoryAction de CIM** identifica el directorio de origen para la acción de archivo. Cuando se usa esta asociación, se supone que una acción anterior creó el directorio de origen. Esta asociación no puede existir con una [**asociación \_ FromDirectorySpecification**](cim-fromdirectoryspecification.md) de CIM; una acción de archivo solo puede implicar un único directorio de origen.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,28 +45,28 @@ class CIM_FromDirectoryAction
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase CIM \_ FromDirectoryAction** tiene estos tipos de miembros:
+La **clase \_ FromDirectoryAction de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase CIM \_ FromDirectoryAction** tiene estas propiedades.
+La **clase \_ FromDirectoryAction de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
 **FileName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ FileAction**
+Tipo de datos: **\_ CIM FileAction**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: [**Mínimo**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Referencia al nombre de archivo.
@@ -89,17 +89,17 @@ Referencia al directorio de origen.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

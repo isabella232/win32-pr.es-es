@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: fab8b2c5c247e8b37134d0cb99280ca7f974bb32cf32fea8d0af0969e632b29d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 941fd0b4f0d69deb8dcdea95853ab5d81084af0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118505463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888132"
 ---
 # <a name="texturecubesamplegrad-methods"></a>Métodos TextureCube::SampleGrad
 

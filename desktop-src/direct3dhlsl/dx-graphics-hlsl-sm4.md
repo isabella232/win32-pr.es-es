@@ -10,11 +10,11 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: c863d952990cd05394244fe662650df59568eeaf
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466972"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974707"
 ---
 # <a name="shader-model-4"></a>Modelo de sombreador 4
 
@@ -26,7 +26,7 @@ Shader Model 4 es un superconjunto de las funcionalidades de [Shader Model 3](dx
 | Característica | Funcionalidad | 
 |---------|------------|
 | Conjunto de instrucciones | <a href="dx-graphics-hlsl-intrinsic-functions.md"><strong>Funciones HLSL</strong></a> | 
-| Conjunto de registro | El conjunto de registros es accesible a través de miembros en búferes constantes y de textura mediante semántica HLSL para cosas como el empaquetado de componentes.<ul><li>Registros del sombreador de píxeles (vea <a href="dx-graphics-hlsl-sm4-registers-ps-4-0.md">Registros - ps_4_0</a> y Registros - <a href="dx-graphics-hlsl-sm4-registers-ps-4-1.md">ps_4_1</a>)</li><li>Registros del sombreador de <a href="dx-graphics-hlsl-sm4-registers-vs-4-0.md">vértices</a> (vea Registros - vs_4_0 <a href="dx-graphics-hlsl-sm4-registers-vs-4-1.md">y Registros - vs_4_1</a>)</li><li>Registros del sombreador de geometría (vea <a href="dx-graphics-hlsl-sm4-registers-gs-4-0.md">Registros - gs_4_0</a> y Registros - <a href="dx-graphics-hlsl-sm4-registers-gs-4-1.md">gs_4_1</a>)</li></ul> | 
+| Conjunto de registro | El conjunto de registros es accesible a través de miembros en búferes constantes y de textura mediante semántica HLSL para cosas como el empaquetado de componentes.<ul><li>Registros de sombreador de píxeles (vea <a href="dx-graphics-hlsl-sm4-registers-ps-4-0.md">Registros - ps_4_0</a> y Registros - <a href="dx-graphics-hlsl-sm4-registers-ps-4-1.md">ps_4_1</a>)</li><li>Registros del sombreador de <a href="dx-graphics-hlsl-sm4-registers-vs-4-0.md">vértices</a> (vea Registros - vs_4_0 <a href="dx-graphics-hlsl-sm4-registers-vs-4-1.md">y Registros - vs_4_1</a>)</li><li>Registros del sombreador de geometría (vea <a href="dx-graphics-hlsl-sm4-registers-gs-4-0.md">Registros - gs_4_0</a> y Registros - <a href="dx-graphics-hlsl-sm4-registers-gs-4-1.md">gs_4_1</a>)</li></ul> | 
 | Máximo del sombreador de vértices | Sin restricción | 
 | Máximo de sombreador de píxeles | Sin restricción | 
 | Nuevos perfiles de sombreador agregados | gs_4_0, ps_4_0, vs_4_0, gs_4_1 *, ps_4_1*, gs_4_1* | 

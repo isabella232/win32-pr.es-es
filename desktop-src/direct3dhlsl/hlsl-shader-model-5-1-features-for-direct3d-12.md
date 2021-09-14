@@ -4,12 +4,12 @@ description: En esta sección se describen las características del modelo de so
 ms.assetid: 6EF38EB9-71CB-4591-AAE2-F3FFC23E73B8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37a42c9e8868cd4474df69ef6b1bf4dfafd8b5f656bafeb630510b6426214a12
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e13620fe81f3c1e7d3de1589f82171667834a26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119743845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974274"
 ---
 # <a name="hlsl-shader-model-51"></a>Modelo de sombreador HLSL 5.1
 

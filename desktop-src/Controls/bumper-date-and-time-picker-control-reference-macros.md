@@ -1,17 +1,17 @@
 ---
-title: Macros de selector de fecha y hora
-description: Macros de selector de fecha y hora
+title: Macros del selector de fecha y hora
+description: Macros del selector de fecha y hora
 ms.assetid: 732a20a6-305d-46ff-8e2e-d276b7cb061d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 443744a5423e2e0bb7ac14c33a2283a23934b6117db03ecf255fa9ff5555da15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c967b8ac3212114ae8e6378fef18b76750838a91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974432"
 ---
-# <a name="date-and-time-picker-macros"></a>Macros de selector de fecha y hora
+# <a name="date-and-time-picker-macros"></a>Macros del selector de fecha y hora
 
 ## <a name="in-this-section"></a>En esta sección
 

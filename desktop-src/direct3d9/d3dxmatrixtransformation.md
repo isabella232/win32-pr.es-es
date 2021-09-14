@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 59656e1716dcf3fbc7844c8369de032f5e6e69776e5b89452a35d71512aea87c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc3b6502a8015564207f208166cec15227d3b18a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119044813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974340"
 ---
 # <a name="d3dxmatrixtransformation-function-d3dx9mathh"></a>Función D3DXMatrixTransformation (D3dx9math.h)
 
@@ -115,7 +115,7 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es la matriz de transformación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función calcula la matriz de transformación con la fórmula siguiente, con la concatenación de matrices evaluada en orden de izquierda a derecha:
 
@@ -152,7 +152,7 @@ Para las transformaciones 2D, use [**D3DXMatrixTransformation2D.**](d3dxmatrixtr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

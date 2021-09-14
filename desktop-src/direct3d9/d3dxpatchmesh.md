@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: f3a7e74a4867b850a551eee5f2976d6a407283b080a026ab628d198cdda00950
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 54a41ac7ea2b8ebecd4cf3684016398c27c6924e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117731587"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974309"
 ---
 # <a name="d3dxpatchmesh-enumeration"></a>D3DXPATCHMESH (enumeración)
 
 No se usa. Use [**D3DXPATCHMESHTYPE en su**](./d3dxpatchmeshtype.md) lugar para especificar tipos de revisión de malla.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -57,7 +57,7 @@ No se usa.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

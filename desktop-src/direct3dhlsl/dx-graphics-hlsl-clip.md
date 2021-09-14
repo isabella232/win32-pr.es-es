@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0f12c9ea508aa960b0f3b1ec255867fc8e4f37fbee580ee5517ba40cf3ae0d20
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92a75f2839dbbb605d976e07fffa5c2f9b27fd86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118091073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888348"
 ---
 # <a name="clip"></a>clip
 
@@ -49,7 +49,7 @@ Descarta el píxel actual si el valor especificado es menor que cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use la **función intrínseca** HLSL de recorte para simular planos de recorte si cada componente del parámetro *x* representa la distancia desde un plano.
 
@@ -91,7 +91,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

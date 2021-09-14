@@ -1,5 +1,5 @@
 ---
-description: Determina si el usuario tiene todos los permisos necesarios especificados en el parámetro Permissions identificado para el objeto PageFile de Win32, el directorio y el recurso compartido donde se encuentra el archivo de paginación, si el archivo o directorio se encuentra en un recurso \_ compartido.
+description: Determina si el usuario tiene todos los permisos necesarios especificados en el parámetro Permissions identificado para el objeto PageFile de Win32, el directorio y el recurso compartido donde se encuentra el archivo de paginación, si el archivo o directorio están en un recurso \_ compartido.
 ms.assetid: 1c417ac2-6968-4faf-b596-8df9308f8647
 ms.tgt_platform: multiple
 title: Método GetEffectivePermission de la Win32_PageFile (Aclui.h)
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6330822566345a35f62af7016d130c5324a7b6838ed4250f5dbdc24c0ceaa6ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c3b9985d18e93f3a3dbcc8f65484bf3fd72284fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974506"
 ---
 # <a name="geteffectivepermission-method-of-the-win32_pagefile-class"></a>Método GetEffectivePermission de la clase PageFile de Win32 \_
 
-El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-shortcutfile.md) determina si el usuario tiene todos los permisos necesarios especificados en el parámetro *Permissions* identificado para el objeto [**\_ PageFile de Win32,**](win32-pagefile.md) el directorio y el recurso compartido donde se encuentra el archivo de paginación, si el archivo o directorio se encuentra en un recurso compartido.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-shortcutfile.md) determina si el usuario tiene todos los permisos necesarios especificados en el parámetro *Permissions identificados* para el objeto [**\_ PageFile de Win32,**](win32-pagefile.md) el directorio y el recurso compartido donde se encuentra el archivo de paginación, si el archivo o directorio están en un recurso compartido.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Mapa de bits de permisos que el autor de la llamada puede consultar.
 
 </dt> <dd>
 
-Concede el derecho a leer datos del archivo. Para un directorio, este valor concede el derecho a enumerar el contenido del directorio.
+Concede el derecho de leer datos del archivo. Para un directorio, este valor concede el derecho de enumerar el contenido del directorio.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Concede el derecho a leer datos del archivo. Para un directorio, este valor conc
 
 </dt> <dd>
 
-Concede el derecho de escribir datos en el archivo. Para un directorio, este valor concede el derecho a crear un archivo en el directorio .
+Concede el derecho de escribir datos en el archivo. Para un directorio, este valor concede el derecho de crear un archivo en el directorio.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Concede el derecho a anexar datos al archivo. Para un directorio, este valor con
 
 </dt> <dd>
 
-Concede el derecho a leer atributos extendidos.
+Concede el derecho de leer atributos extendidos.
 
 </dd> <dt>
 
@@ -128,7 +128,7 @@ Concede el derecho a eliminar un directorio y todos los archivos que contiene, i
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**FILE \_ ATRIBUTOS \_ DE** LECTURA (128 (0x80))
+<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**FILE \_ LEER \_ ATRIBUTOS** (128 (0x80))
 
 
 </dt> <dd>
@@ -172,7 +172,7 @@ Concede acceso de lectura al descriptor de seguridad y al propietario.
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-<span id="WRITE_DAC"></span><span id="write_dac"></span>**ESCRITURA \_ DAC** (262144 (0x40000))
+<span id="WRITE_DAC"></span><span id="write_dac"></span>**WRITE \_ DAC** (262144 (0x40000))
 
 
 </dt> <dd>
@@ -183,7 +183,7 @@ Concede acceso de escritura a la lista de control de acceso discrecional (DACL).
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-<span id="WRITE_OWNER"></span><span id="write_owner"></span>**ESCRITURA \_ OWNER** (524288 (0x80000))
+<span id="WRITE_OWNER"></span><span id="write_owner"></span>**WRITE \_ OWNER** (524288 (0x80000))
 
 
 </dt> <dd>
@@ -216,13 +216,13 @@ Devuelve **True** si el autor de la llamada tiene los permisos especificados y *
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
 | Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
-| Header<br/>                   | <dl> <dt>Aclui.h</dt> </dl>      |
+| Encabezado<br/>                   | <dl> <dt>Aclui.h</dt> </dl>      |
 | MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: 'Enumeración D3DXMESH: marcas que se usan para especificar opciones de creación para una malla.'
+description: 'Enumeración D3DXMESH: marcas que se usan para especificar las opciones de creación de una malla.'
 ms.assetid: c94e19ab-8024-4a28-9d1a-6d57707c3a52
 title: Enumeración D3DXMESH (D3dx9mesh.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 6b83389ae4d92027245877e24e01621f0d93f123dee9ff4f040586b3e7c5111d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a312c2618960691184182039afe38acc8947eb6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118525281"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974335"
 ---
-# <a name="d3dxmesh-enumeration"></a>D3DXMESH (enumeración)
+# <a name="d3dxmesh-enumeration"></a>Enumeración D3DXMESH
 
 Marcas usadas para especificar opciones de creación para una malla.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -60,7 +60,7 @@ typedef enum D3DXMESH {
 
 <dl> <dt>
 
-<span id="D3DXMESH_32BIT"></span><span id="d3dxmesh_32bit"></span>**D3DXMESH \_ 32 BITS**
+<span id="D3DXMESH_32BIT"></span><span id="d3dxmesh_32bit"></span>**D3DXMESH \_ 32BIT**
 </dt> <dd>
 
 La malla tiene índices de 32 bits en lugar de índices de 16 bits. Vea la sección Comentarios.
@@ -214,7 +214,7 @@ Equivalente a especificar D3DXMESH \_ VB \_ SOFTWAREPROCESSING y D3DXMESH \_ IB 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una malla de 32 bits (D3DXMESH de 32 BITS) puede admitir teóricamente \_ (2^32)-1 caras y vértices. Sin embargo, no es práctico asignar memoria para una malla que sea grande en un sistema operativo de 32 bits.
 
@@ -228,7 +228,7 @@ Una malla de 32 bits (D3DXMESH de 32 BITS) puede admitir teóricamente \_ (2^32)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

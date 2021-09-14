@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: deaefcae553e861ddbc079b0b3f66e442b1beb677b1b13be8e11df75378353c0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2b570bee337f1cb61a03701236d31b5256010a1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120023805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974675"
 ---
 # <a name="inline-format-conversion-reference"></a>Referencia de conversión de formato en línea
 

@@ -1,17 +1,17 @@
 ---
-title: Estructuras de selector de fecha y hora
-description: Estructuras de selector de fecha y hora
+title: Estructuras del selector de fecha y hora
+description: Estructuras del selector de fecha y hora
 ms.assetid: 4768d506-0dc2-4c05-8ff4-d2d09d8c9496
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f7dd888935c1d11caeeeafec8c16acc990f5f728
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974422"
 ---
-# <a name="date-and-time-picker-structures"></a>Estructuras de selector de fecha y hora
+# <a name="date-and-time-picker-structures"></a>Estructuras del selector de fecha y hora
 
 ## <a name="in-this-section"></a>En esta sección
 

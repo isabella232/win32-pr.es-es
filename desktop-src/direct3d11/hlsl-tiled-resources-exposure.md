@@ -4,12 +4,12 @@ description: Se requiere una nueva sintaxis de Lenguaje de sombreador de alto ni
 ms.assetid: B6CE51E6-1BA9-4D15-9654-86FE9BAAF585
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c66ded502bebefc1061028115a12026f67c26cad89ddc57f98a5ae6fee923591
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2b266b98045b38645e1e8d24ed0014a5f448a38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119633335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888753"
 ---
 # <a name="hlsl-tiled-resources-exposure"></a>Exposición de recursos en mosaico hlsl
 

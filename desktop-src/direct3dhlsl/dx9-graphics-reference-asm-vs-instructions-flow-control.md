@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d50d0e438357374069df7e884379fba98d819968fea1298ab85466123d69cc03
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4ebb5b491e074c2275081aa3fe629a2486a24c6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119854595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974685"
 ---
 # <a name="flow-control-nesting-limits"></a>Flow Límites de anidamiento de controles
 
@@ -27,7 +27,7 @@ Las instrucciones de control de flujo del sombreador de vértices tienen dos res
 
 ## <a name="depth-count-per-instruction-for-vs_2_0"></a>Recuento de profundidad por instrucción para frente \_ a 2 \_ 0
 
-Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento. En esta tabla se muestra el recuento de profundidad que cada instrucción suma o resta de la profundidad existente:
+Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento. En esta tabla se muestra el recuento de profundidad que cada instrucción agrega o resta de la profundidad existente:
 
 
 
@@ -61,7 +61,7 @@ La profundidad de anidamiento define cuántas instrucciones se pueden llamar ent
 
 
 
-| Tipo de instrucción  | Máximo                               |
+| Tipo de instrucción  | Máxima                               |
 |-------------------|---------------------------------------|
 | Anidamiento estático    | Solo limitado por el recuento de flujos estáticos |
 | Anidamiento dinámico   | N/D                                   |
@@ -73,9 +73,9 @@ La profundidad de anidamiento define cuántas instrucciones se pueden llamar ent
 
  
 
-## <a name="depth-count-per-instruction-for-vs_2_x"></a>Recuento de profundidad por instrucción para vs \_ 2 \_ x
+## <a name="depth-count-per-instruction-for-vs_2_x"></a>Recuento de profundidad por instrucción para frente \_ a 2 \_ x
 
-Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento. En esta tabla se muestra el recuento de profundidad que cada instrucción agrega o resta de la profundidad existente:
+Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento. En esta tabla se muestra el recuento de profundidad que cada instrucción suma o resta de la profundidad existente:
 
 
 
@@ -83,18 +83,18 @@ Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento
 |------------------------------------------|--------------------------------------|---------------------------------------------------------------------------|------------------|--------------|------------------------------------------|
 | [if bool - vs](if-bool---vs.md)         | 1                                    | 0                                                                         | 0                | 0            | 1                                        |
 | [if \_ comp - vs](if-comp---vs.md)        | 0                                    | 1                                                                         | 0                | 0            | 0                                        |
-| [si pred - vs](if-pred---vs.md)         | 0                                    | 1                                                                         | 0                | 0            | 0                                        |
+| [if pred - vs](if-pred---vs.md)         | 0                                    | 1                                                                         | 0                | 0            | 0                                        |
 | [else - vs](else---vs.md)               | 0                                    | 0                                                                         | 0                | 0            | 1([if bool - vs](if-bool---vs.md) only) |
 | [endif- vs](endif---vs.md)             | -1([if bool - vs](if-bool---vs.md)) | -1([si pred - vs](if-pred---vs.md) o if comp - [ \_ vs](if-comp---vs.md)) | 0                | 0            | 0                                        |
-| [rep- vs](rep---vs.md)                 | 0                                    | 0                                                                         | 1                | 0            | 1                                        |
-| [endrep- vs](endrep---vs.md)           | 0                                    | 0                                                                         | -1               | 0            | 0                                        |
-| [loop: vs](loop---vs.md)               | 0                                    | 0                                                                         | 1                | 0            | 1                                        |
+| [rep - vs](rep---vs.md)                 | 0                                    | 0                                                                         | 1                | 0            | 1                                        |
+| [endrep - vs](endrep---vs.md)           | 0                                    | 0                                                                         | -1               | 0            | 0                                        |
+| [loop - vs](loop---vs.md)               | 0                                    | 0                                                                         | 1                | 0            | 1                                        |
 | [endloop- vs](endloop---vs.md)         | 0                                    | 0                                                                         | -1               | 0            | 0                                        |
 | [break- vs](break---vs.md)             | 0                                    | 0                                                                         | 0                | 0            | 0                                        |
-| [break \_ comp: vs](break-comp---vs.md)  | 0                                    | 1, -1                                                                     | 0                | 0            | 0                                        |
-| [breakp: vs](breakp---vs.md)           | 0                                    | 0                                                                         | 0                | 0            | 0                                        |
+| [break \_ comp - vs](break-comp---vs.md)  | 0                                    | 1, -1                                                                     | 0                | 0            | 0                                        |
+| [breakp- vs](breakp---vs.md)           | 0                                    | 0                                                                         | 0                | 0            | 0                                        |
 | [call - vs](call---vs.md)               | 0                                    | 0                                                                         | 0                | 1            | 1                                        |
-| [callnz bool- vs](callnz-bool---vs.md) | 0                                    | 0                                                                         | 0                | 1            | 1                                        |
+| [callnz bool - vs](callnz-bool---vs.md) | 0                                    | 0                                                                         | 0                | 1            | 1                                        |
 | [callnz pred - vs](callnz-pred---vs.md) | 0                                    | 1                                                                         | 0                | 1            | 0                                        |
 | [ret - vs](ret---vs.md)                 | 0                                    | -1 ([callnz pred - vs](callnz-pred---vs.md))                             | 0                | -1           | 0                                        |
 | [setp \_ comp - vs](setp-comp---vs.md)    | 0                                    | 0                                                                         | 0                | 0            | 0                                        |
@@ -109,12 +109,12 @@ La profundidad de anidamiento define cuántas instrucciones se pueden llamar ent
 
 
 
-| Tipo de instrucción  | Máximo                                                                              |
+| Tipo de instrucción  | Máxima                                                                              |
 |-------------------|--------------------------------------------------------------------------------------|
 | Anidamiento estático    | Solo limitado por el recuento de flujos estáticos                                                |
 | Anidamiento dinámico   | 0 o 24, consulte D3DCAPS9. VS20Caps.DynamicFlowControlDepth                               |
 | anidamiento de loop/rep  | De 1 a 4, consulte D3DCAPS9. VS20Caps.StaticFlowControlDepth                                 |
-| anidamiento de llamadas      | De 1 a 4, consulte D3DCAPS9. VS20Caps.StaticFlowControlDepth (independiente del límite de bucles o réplicas) |
+| anidamiento de llamadas      | De 1 a 4, consulte D3DCAPS9. VS20Caps.StaticFlowControlDepth (independiente del límite de bucles y réplicas) |
 | Recuento de flujos estáticos | 16                                                                                   |
 
 
@@ -123,7 +123,7 @@ La profundidad de anidamiento define cuántas instrucciones se pueden llamar ent
 
 ## <a name="depth-count-per-instruction-for-vs_2_sw"></a>Recuento de profundidad por instrucción para vs \_ 2 \_ sw
 
-Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento. En esta tabla se muestra el recuento de profundidad que cada instrucción suma o resta de la profundidad existente:
+Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento. En esta tabla se muestra el recuento de profundidad que cada instrucción agrega o resta de la profundidad existente:
 
 
 
@@ -134,15 +134,15 @@ Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento
 | [if pred - vs](if-pred---vs.md)         | 0                                    | 1                                                                         | 0                | 0            | N/D               |
 | [else - vs](else---vs.md)               | 0                                    | 0                                                                         | 0                | 0            | N/D               |
 | [endif- vs](endif---vs.md)             | -1([if bool - vs](if-bool---vs.md)) | -1([si pred - vs](if-pred---vs.md) o if comp - [ \_ vs](if-comp---vs.md)) | 0                | 0            | N/D               |
-| [rep - vs](rep---vs.md)                 | 0                                    | 0                                                                         | 1                | 0            | N/D               |
-| [endrep - vs](endrep---vs.md)           | 0                                    | 0                                                                         | -1               | 0            | N/D               |
-| [loop - vs](loop---vs.md)               | 0                                    | 0                                                                         | 1                | 0            | N/D               |
+| [rep- vs](rep---vs.md)                 | 0                                    | 0                                                                         | 1                | 0            | N/D               |
+| [endrep- vs](endrep---vs.md)           | 0                                    | 0                                                                         | -1               | 0            | N/D               |
+| [loop: vs](loop---vs.md)               | 0                                    | 0                                                                         | 1                | 0            | N/D               |
 | [endloop- vs](endloop---vs.md)         | 0                                    | 0                                                                         | -1               | 0            | N/D               |
 | [break- vs](break---vs.md)             | 0                                    | 0                                                                         | 0                | 0            | N/D               |
-| [break \_ comp: vs](break-comp---vs.md)  | 0                                    | 1, -1                                                                     | 0                | 0            | N/D               |
-| [breakp: vs](breakp---vs.md)           | 0                                    | 0                                                                         | 0                | 0            | N/D               |
+| [break \_ comp - vs](break-comp---vs.md)  | 0                                    | 1, -1                                                                     | 0                | 0            | N/D               |
+| [breakp- vs](breakp---vs.md)           | 0                                    | 0                                                                         | 0                | 0            | N/D               |
 | [call - vs](call---vs.md)               | 0                                    | 0                                                                         | 0                | 1            | N/D               |
-| [callnz bool- vs](callnz-bool---vs.md) | 0                                    | 0                                                                         | 0                | 1            | N/D               |
+| [callnz bool - vs](callnz-bool---vs.md) | 0                                    | 0                                                                         | 0                | 1            | N/D               |
 | [callnz pred - vs](callnz-pred---vs.md) | 0                                    | 1                                                                         | 0                | 1            | N/D               |
 | [ret - vs](ret---vs.md)                 | 0                                    | -1 ([callnz pred - vs](callnz-pred---vs.md))                             | 0                | -1           | N/D               |
 | [setp \_ comp - vs](setp-comp---vs.md)    | 0                                    | 0                                                                         | 0                | 0            | N/D               |
@@ -157,7 +157,7 @@ La profundidad de anidamiento define cuántas instrucciones se pueden llamar ent
 
 
 
-| Tipo de instrucción  | Máximo  |
+| Tipo de instrucción  | Máxima  |
 |-------------------|----------|
 | Anidamiento estático    | 24       |
 | Anidamiento dinámico   | 24       |
@@ -169,9 +169,9 @@ La profundidad de anidamiento define cuántas instrucciones se pueden llamar ent
 
  
 
-## <a name="depth-count-per-instruction-for-vs_3_0"></a>Recuento de profundidad por instrucción para vs \_ 3 \_ 0
+## <a name="depth-count-per-instruction-for-vs_3_0"></a>Recuento de profundidad por instrucción para frente \_ a 3 \_ 0
 
-Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento. En esta tabla se muestra el recuento de profundidad que cada instrucción suma o resta de la profundidad existente:
+Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento. En esta tabla se muestra el recuento de profundidad que cada instrucción agrega o resta de la profundidad existente:
 
 
 
@@ -205,7 +205,7 @@ La profundidad de anidamiento define cuántas instrucciones se pueden llamar ent
 
 
 
-| Tipo de instrucción  | Máximo  |
+| Tipo de instrucción  | Máxima  |
 |-------------------|----------|
 | Anidamiento estático    | 24       |
 | Anidamiento dinámico   | 24       |
@@ -219,7 +219,7 @@ La profundidad de anidamiento define cuántas instrucciones se pueden llamar ent
 
 ## <a name="depth-count-per-instruction-for-vs_3_sw"></a>Recuento de profundidad por instrucción para vs \_ 3 \_ sw
 
-Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento. En esta tabla se muestra el recuento de profundidad que cada instrucción suma o resta de la profundidad existente:
+Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento. En esta tabla se muestra el recuento de profundidad que cada instrucción agrega o resta de la profundidad existente:
 
 
 
@@ -230,15 +230,15 @@ Cada instrucción cuenta con uno o varios límites de profundidad de anidamiento
 | [if pred - vs](if-pred---vs.md)         | 0                                    | 1                                                                         | 0                | 0            | N/D               |
 | [else - vs](else---vs.md)               | 0                                    | 0                                                                         | 0                | 0            | N/D               |
 | [endif- vs](endif---vs.md)             | -1([if bool - vs](if-bool---vs.md)) | -1([si pred - vs](if-pred---vs.md) o if comp - [ \_ vs](if-comp---vs.md)) | 0                | 0            | N/D               |
-| [rep - vs](rep---vs.md)                 | 0                                    | 0                                                                         | 1                | 0            | N/D               |
-| [endrep - vs](endrep---vs.md)           | 0                                    | 0                                                                         | -1               | 0            | N/D               |
-| [loop - vs](loop---vs.md)               | 0                                    | 0                                                                         | 1                | 0            | N/D               |
+| [rep- vs](rep---vs.md)                 | 0                                    | 0                                                                         | 1                | 0            | N/D               |
+| [endrep- vs](endrep---vs.md)           | 0                                    | 0                                                                         | -1               | 0            | N/D               |
+| [loop: vs](loop---vs.md)               | 0                                    | 0                                                                         | 1                | 0            | N/D               |
 | [endloop- vs](endloop---vs.md)         | 0                                    | 0                                                                         | -1               | 0            | N/D               |
 | [break- vs](break---vs.md)             | 0                                    | 0                                                                         | 0                | 0            | N/D               |
-| [break \_ comp: vs](break-comp---vs.md)  | 0                                    | 1, -1                                                                     | 0                | 0            | N/D               |
-| [breakp: vs](breakp---vs.md)           | 0                                    | 0                                                                         | 0                | 0            | N/D               |
+| [break \_ comp - vs](break-comp---vs.md)  | 0                                    | 1, -1                                                                     | 0                | 0            | N/D               |
+| [breakp- vs](breakp---vs.md)           | 0                                    | 0                                                                         | 0                | 0            | N/D               |
 | [call - vs](call---vs.md)               | 0                                    | 0                                                                         | 0                | 1            | N/D               |
-| [callnz bool- vs](callnz-bool---vs.md) | 0                                    | 0                                                                         | 0                | 1            | N/D               |
+| [callnz bool - vs](callnz-bool---vs.md) | 0                                    | 0                                                                         | 0                | 1            | N/D               |
 | [callnz pred - vs](callnz-pred---vs.md) | 0                                    | 1                                                                         | 0                | 1            | N/D               |
 | [ret - vs](ret---vs.md)                 | 0                                    | -1 ([callnz pred - vs](callnz-pred---vs.md))                             | 0                | -1           | N/D               |
 | [setp \_ comp - vs](setp-comp---vs.md)    | 0                                    | 0                                                                         | 0                | 0            | N/D               |
@@ -253,7 +253,7 @@ La profundidad de anidamiento define cuántas instrucciones se pueden llamar ent
 
 
 
-| Tipo de instrucción  | Máximo  |
+| Tipo de instrucción  | Máxima  |
 |-------------------|----------|
 | Anidamiento estático    | 24       |
 | Anidamiento dinámico   | 24       |

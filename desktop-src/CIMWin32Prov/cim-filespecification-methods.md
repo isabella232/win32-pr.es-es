@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: CIM_FileSpecification métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 504e57404163f8126f452c26182b10a181ca7cbb91f96a34b92bbbc212578cd3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 495c8cb269cb4adbfa69aaa1a80c2bf4ba613eca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119578655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974587"
 ---
 # <a name="cim_filespecification-methods"></a>Métodos \_ fileSpecification de CIM
 

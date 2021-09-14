@@ -36,12 +36,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f3add3a93cc974c2d6c5b20c360d099d46b688887f81cb646005568240a7cb52
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e9f6a8c821aa327e8b810b634c85bb06459910f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118416721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974456"
 ---
 # <a name="win32_thread-class"></a>Clase Thread de Win32 \_
 
@@ -80,7 +80,7 @@ class Win32_Thread : CIM_Thread
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Win32 \_ Thread** tiene estos tipos de miembros:
 
@@ -431,7 +431,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Override**](../wmisdk/standard-qualifiers.md) ("ProcessHandle"), [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ Process**](cim-process.md).**Handle**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32OwnerProcessID")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Override**](../wmisdk/standard-qualifiers.md) ("ProcessHandle"), [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ Process**](cim-process.md).**Controlar**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32OwnerProcessID")
 </dt> </dl>
 
 Proceso que creó el subproceso. El contenido de esta propiedad puede ser utilizado por Windows de la interfaz de programación de aplicaciones (API).
@@ -611,7 +611,7 @@ En ejecución: se está ejecutando.
 
 <span id="Standby"></span><span id="standby"></span><span id="STANDBY"></span>
 
-<span id="Standby"></span><span id="standby"></span><span id="STANDBY"></span>**En** espera (3)
+<span id="Standby"></span><span id="standby"></span><span id="STANDBY"></span>**En espera** (3)
 
 
 </dt> <dd>
@@ -849,21 +849,21 @@ Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("UserModeTime")
 
 Tiempo en modo de usuario, en unidades de 100 nanosegundos. Si esta información no está disponible, se debe usar un valor de 0 (cero).
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase Thread \_ de Win32** se deriva del [**subproceso CIM \_**](cim-thread.md).
 
 **Información general**
 
-Para la supervisión rutinaria del día a día, normalmente hay poca razón para tener una lista detallada de subprocesos y sus propiedades asociadas. Los equipos crean y eliminan miles de subprocesos durante el transcurso de un día, y algunas de estas creaciones o eliminaciones son significativas para cualquier persona, menos para el desarrollador que escribió el software.
+Para la supervisión diaria rutinaria, normalmente hay poca razón para tener una lista detallada de subprocesos y sus propiedades asociadas. Los equipos crean y eliminan miles de subprocesos durante el transcurso de un día, y algunas de estas creaciones o eliminaciones son significativas para cualquiera, menos para el desarrollador que escribió el software.
 
 Sin embargo, cuando se solucionan problemas con una aplicación, el seguimiento de los subprocesos individuales de un proceso permite identificar cuándo se crean los subprocesos y cuándo (o si) se destruyen. Dado que los subprocesos que se crean pero no se destruyen provocan pérdidas de memoria, el seguimiento de subprocesos individuales puede ser información útil para los técnicos de soporte técnico. Del mismo modo, la identificación de prioridades de subprocesos puede ayudar a identificar subprocesos que, al ejecutarse con una prioridad anómalamente alta, están adelantando los ciclos de CPU que necesitan otros subprocesos y otros procesos.
 
-**Uso de Win32 \_ Thread**
+**Uso del subproceso \_ Win32**
 
 Como se implícito en el bloque de sintaxis anterior, la clase Thread de **Win32 \_** no informa del nombre del proceso en el que se ejecuta cada subproceso. En su lugar, notifica el identificador del proceso en el que se ejecuta el subproceso. Para devolver el nombre de un proceso y una lista de todos sus subprocesos, el script debe:
 
@@ -899,7 +899,7 @@ Next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

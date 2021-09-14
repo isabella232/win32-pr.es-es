@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 67fb82897e6b07dad486d134c7d36004ed5bfb1e050ed80446c50df5842eac32
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 695b73cc14541505ee1b2d4391aac2d145eec8d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119671385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974669"
 ---
 # <a name="rwtexture1d"></a>RWTexture1D
 
@@ -29,7 +29,7 @@ Un recurso de lectura y escritura.
 | Método                                                        | Descripción                   |
 |---------------------------------------------------------------|-------------------------------|
 | [**GetDimensions**](sm5-object-rwtexture1d-getdimensions.md) | Obtiene las dimensiones de recursos. |
-| [**Cargar**](rwtexture1d-load.md)                              | Lee los datos de textura.           |
+| [**Carga**](rwtexture1d-load.md)                              | Lee los datos de textura.           |
 | [**Operador\[\]**](sm5-object-rwtexture1d-operatorindex.md)  | Obtiene una variable de recurso.     |
 
 
@@ -64,7 +64,7 @@ Este objeto se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | sí       |
 
 
 
@@ -82,7 +82,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

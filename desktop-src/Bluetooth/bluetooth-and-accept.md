@@ -9,12 +9,12 @@ keywords:
 - Bluetooth y aceptar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c5f12a7fd9fee508354dfcd9421f830e814eed09bb207cc6024b50705cc3566
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 28dff84ec05429411614e64a08ab159a5ee134b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120004615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974628"
 ---
 # <a name="bluetooth-and-accept"></a>Bluetooth y aceptar
 

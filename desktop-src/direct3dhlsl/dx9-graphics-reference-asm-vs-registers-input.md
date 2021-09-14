@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b6682d8987f2df3ba3fb06427d41b722abb5eb003a4226a155c104cc3239d0f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 983f0520ccc50fa1683d4b8254ac436fff7491a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119982765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974278"
 ---
 # <a name="input-register"></a>Registro de entrada
 
 Registro de entrada del sombreador de vértices.
 
-Los datos de cada vértice (mediante uno o varios flujos de vértices de entrada) se cargan en los registros de entrada de vértice antes de ejecutar el sombreador de vértices. Los registros de entrada constan de 16 vectores de punto flotante de cuatro componentes, designados como v0 a v15. Estos registros son de solo lectura. Un registro de entrada se enlaza a los datos de vértice a través de una declaración de vértice.
+Los datos de cada vértice (mediante uno o varios flujos de vértices de entrada) se cargan en los registros de entrada de vértices antes de ejecutar el sombreador de vértices. Los registros de entrada constan de 16 vectores de punto flotante de cuatro componentes, designados como v0 a v15. Estos registros son de solo lectura. Un registro de entrada se enlaza a los datos de vértice a través de una declaración de vértice.
 
-Las propiedades de registro siguientes controlan cómo se comporta cada registro:
+Las siguientes propiedades de registro controlan cómo se comporta cada registro:
 
 
 
@@ -31,7 +31,7 @@ Las propiedades de registro siguientes controlan cómo se comporta cada registro
 | Nombre            | v \[ n - n es un número de registro \] opcional. 0 es el valor predeterminado utilizado, si se omite.     |
 | Count           | Un máximo de 16 registros, v0 - v15.                                                          |
 | Permisos de E/S | Solo lectura. La API o el sombreador no pueden escribir este registro.                   |
-| Lectura de puertos      | 1. Este es el número de veces que se puede leer un registro dentro de una sola instrucción. Vea a continuación. |
+| Lectura de puertos      | 1. Este es el número de veces que se puede leer un registro dentro de una sola instrucción. Véase a continuación. |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6aaa14bbd2f82be7ac87857c05a863b6459440dcfdd383d2144fe1b4426019ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c74d56eaa0e41bc6ce9060ff291885a8a5c05a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974338"
 ---
 # <a name="d3dxmatrixtranslation-function-d3dx9mathh"></a>Función D3DXMatrixTranslation (D3dx9math.h)
 
@@ -66,7 +66,7 @@ Desplazamiento de coordenada X.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Desplazamiento de coordenadas Y.
+Desplazamiento de coordenada Y.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Desplazamiento de coordenadas Y.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Desplazamiento de la coordenada Z.
+Desplazamiento de coordenada Z.
 
 </dd> </dl>
 
@@ -85,9 +85,9 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que contiene una matriz de transformación traducida.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, D3DXMATRIXTranslation se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, D3DXMATRIXTranslation se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,7 +100,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

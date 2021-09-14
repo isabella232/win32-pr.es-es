@@ -75,18 +75,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f482ad184bd61c14caee07b49dedddd565b290cda1cba6b8f0a8f437bf01d7b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: deb6903ba6cf27170539281da90569a14471999c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119079619"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974454"
 ---
 # <a name="win32_videocontroller-class"></a>Clase VideoController de Win32 \_
 
-La **clase WMI \_ VideoController** [de](../wmisdk/retrieving-a-class.md) Win32 representa las capacidades y la capacidad de administración del controlador de vídeo en un sistema informático que ejecuta Windows.
+La clase WMI **\_ VideoController** [de](../wmisdk/retrieving-a-class.md) Win32 representa las capacidades y la capacidad de administración del controlador de vídeo en un sistema informático que ejecuta Windows.
 
-El hardware que no es compatible con Windows modelo de controlador de visualización (WDDM) devuelve valores de propiedad inexactos para las instancias de esta clase.
+El hardware que no es compatible con Windows modelo de controlador de pantalla (WDDM) devuelve valores de propiedad inexactos para instancias de esta clase.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -158,7 +158,7 @@ class Win32_VideoController : CIM_PCVideoController
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ VideoController de Win32** tiene estos tipos de miembros:
 
@@ -173,7 +173,7 @@ La **clase \_ VideoController de Win32** tiene estos métodos.
 
 | Método            | Descripción                                                                                                                                                                                            |
 |:------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Reset**         | Sin implementar. Para implementar este método, consulte el método [**Reset**](reset-method-in-class-cim-controller.md) en [**CIM \_ PCVideoController**](cim-pcvideocontroller.md).<br/>                 |
+| **Reset**         | Sin implementar. Para implementar este método, vea el método [**Reset**](reset-method-in-class-cim-controller.md) en [**CIM \_ PCVideoController**](cim-pcvideocontroller.md).<br/>                 |
 | **SetPowerState** | Sin implementar. Para implementar este método, vea el [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) en [**CIM \_ PCVideoController**](cim-pcvideocontroller.md).<br/> |
 
 
@@ -250,7 +250,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry")
 </dt> </dl>
 
-Conjunto de chips general usado para este controlador para comparar las compatibilidades con el sistema.
+Conjunto de chips general que se usa para que este controlador compare las compatibilidades con el sistema.
 
 </dd> <dt>
 
@@ -266,7 +266,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| HardwareInformation.DACType")
 </dt> </dl>
 
-Nombre o identificador del chip de convertidor digital a análogo (DAC). El juego de caracteres de esta propiedad es alfanumérico.
+Nombre o identificador del chip del convertidor digital a analógico (DAC). El juego de caracteres de esta propiedad es alfanumérico.
 
 </dd> <dt>
 
@@ -279,7 +279,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| HardwareInformation.MemorySize"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| HardwareInformation.MemorySize"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
 Tamaño de memoria del adaptador de vídeo.
@@ -302,7 +302,7 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMT
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -322,12 +322,12 @@ Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
 
 
 </dt> <dd>
 
-En ejecución o con energía completa
+Energía completa o en ejecución
 
 </dd> <dt>
 
@@ -393,7 +393,7 @@ Sin conexión
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
 
 
 </dt> <dd></dd> <dt>
@@ -462,7 +462,7 @@ El dispositivo está en pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
 
 
 </dt> <dd>
@@ -473,7 +473,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
 
 
 </dt> <dd>
@@ -484,12 +484,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo es silencioso.
+El dispositivo está silencioso.
 
 </dd> </dl>
 
@@ -1303,7 +1303,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Printing and Print Spooler Structures \| DevMode \| dmICMIntent")
 </dt> </dl>
 
-Valor específico de uno de los tres posibles métodos o intenciones de coincidencia de colores que se deben usar de forma predeterminada. Esta propiedad se usa principalmente para aplicaciones que no ICM aplicaciones. ICM aplicaciones establecen intenciones mediante el uso de las ICM funciones. Esta propiedad puede ser un valor predefinido o un valor definido por el controlador mayor o igual que 256. La coincidencia de colores basada en la saturación es la opción más adecuada para los gráficos de negocios cuando no se desea la dithering. La coincidencia de colores basada en el contraste es la opción más adecuada para imágenes exploradas o fotográficas cuando se desea el dithering. La coincidencia de colores optimizada para coincidir con el color exacto solicitado es más adecuada para su uso con logotipos empresariales u otras imágenes cuando se desea una coincidencia de color exacta.
+Valor específico de uno de los tres posibles métodos o intenciones de coincidencia de colores que se deben usar de forma predeterminada. Esta propiedad se usa principalmente para aplicaciones que no ICM aplicaciones. ICM aplicaciones establecen intenciones mediante las ICM de trabajo. Esta propiedad puede ser un valor predefinido o un valor definido por el controlador mayor o igual que 256. La coincidencia de colores basada en la saturación es la opción más adecuada para los gráficos de negocios cuando no se desea la dithering. La coincidencia de colores basada en el contraste es la opción más adecuada para imágenes exploradas o fotográficas cuando se desea el dithering. La coincidencia de colores optimizada para coincidir con el color exacto solicitado es más adecuada para su uso con logotipos empresariales u otras imágenes cuando se desea una coincidencia de color exacta.
 
 <dt>
 
@@ -1491,7 +1491,7 @@ Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Pue
 
 Número máximo de entidades direccionables directamente compatibles con este controlador. Se debe usar un valor de 0 (cero) si se desconoce el número.
 
-Esta propiedad se hereda del [**controlador CIM \_**](cim-controller.md).
+Esta propiedad se hereda del [**controlador CIM. \_**](cim-controller.md)
 
 </dd> <dt>
 
@@ -1507,7 +1507,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| Video \| 003.5"), [**Units**](../wmisdk/standard-qualifiers.md) ("hertz")
 </dt> </dl>
 
-Velocidad de actualización máxima del controlador de vídeo en hertz.
+Frecuencia de actualización máxima del controlador de vídeo en hertz.
 
 Esta propiedad se hereda de [**CIM \_ VideoController.**](cim-videocontroller.md)
 
@@ -1525,7 +1525,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| Video \| 003.4"), [**Units**](../wmisdk/standard-qualifiers.md) ("hertz")
 </dt> </dl>
 
-Velocidad de actualización mínima del controlador de vídeo en hertz.
+Frecuencia de actualización mínima del controlador de vídeo en hertz.
 
 Esta propiedad se hereda de [**CIM \_ VideoController.**](cim-videocontroller.md)
 
@@ -1556,7 +1556,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -1576,7 +1576,7 @@ Tipo de acceso: solo lectura
 
 Número actual de planos de color. Si este valor no es aplicable a la configuración de vídeo actual, escriba 0 (cero).
 
-Esta propiedad se hereda de [**CIM \_ PCVideoController**](cim-pcvideocontroller.md).
+Esta propiedad se hereda de [**CIM \_ PCVideoController.**](cim-pcvideocontroller.md)
 
 </dd> <dt>
 
@@ -1611,7 +1611,7 @@ Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
 Ejemplo: \* "PNP030b"
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1626,7 +1626,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1704,7 +1704,7 @@ El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) 
 
 Se admiten Power-On tiempo
 
-El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y la hora establecida en una fecha y hora específicas, o un intervalo, para la encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y el tiempo establecido en una fecha y hora específicas, o un intervalo, para el encendido.
 
 </dd> </dl>
 
@@ -1721,7 +1721,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar mediante energía (se puede poner en modo de suspensión, y así sucesivamente). La propiedad no indica que las características de administración de energía están habilitadas actualmente, solo que el dispositivo lógico es capaz de la administración de energía.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1734,12 +1734,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Puerto de bus DMTF \| \| 001.2", "MIF. Discos DMTF \| \| 003.3")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Dmtf \| Bus Port \| 001.2", "MIF. Discos DMTF \| \| 003.3")
 </dt> </dl>
 
 Protocolo utilizado por el controlador para acceder a dispositivos "controlados".
 
-Esta propiedad se hereda del [**controlador CIM \_**](cim-controller.md).
+Esta propiedad se hereda del [**controlador CIM. \_**](cim-controller.md)
 
 <dt>
 
@@ -2090,7 +2090,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funciones de contexto de dispositivo Win32API \| \| [**GetDeviceCaps")**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps)
 </dt> </dl>
 
-Número de entradas reservadas en la paleta del sistema. El sistema operativo puede reservar entradas para admitir colores estándar para las barras de tareas y otros elementos de visualización de escritorio. Este índice solo es válido si el controlador de dispositivo establece el bit **RC \_ PALETTE** en el índice RASTERCAPS y solo está disponible si el controlador es compatible con el controlador de 16 bits Windows. Si el sistema no usa una paleta, **ReservedSystemPaletteEntries** no está establecido.
+Número de entradas reservadas en la paleta del sistema. El sistema operativo puede reservar entradas para admitir colores estándar para las barras de tareas y otros elementos de visualización de escritorio. Este índice solo es válido si el controlador de dispositivo establece el bit **RC \_ PALETTE** en el índice RASTERCAPS y solo está disponible si el controlador es compatible con el controlador de 16 Windows. Si el sistema no usa una paleta, **ReservedSystemPaletteEntries** no está establecido.
 
 Ejemplo: 20
 
@@ -2124,7 +2124,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -2155,7 +2155,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -2321,7 +2321,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funciones de contexto de dispositivo Win32API \| \| [**GetDeviceCaps")**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps)
 </dt> </dl>
 
-Número actual de entradas de índice de color en la paleta del sistema. Este índice solo es válido si el controlador de dispositivo establece el bit **RC \_ PALETTE** en el índice RASTERCAPS y solo está disponible si el controlador es compatible con el controlador de 16 bits Windows. Si el sistema no usa una paleta, **SystemPaletteEntries** no está establecido.
+Número actual de entradas de índice de color en la paleta del sistema. Este índice solo es válido si el controlador de dispositivo establece el bit **RC \_ PALETTE** en el índice RASTERCAPS y solo está disponible si el controlador es compatible con el controlador de 16 Windows. Si el sistema no usa una paleta, **SystemPaletteEntries** no está establecido.
 
 Ejemplo: 20
 
@@ -2615,11 +2615,11 @@ Esta propiedad se hereda de [**CIM \_ VideoController.**](cim-videocontroller.md
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ VideoController de Win32** se deriva de [**CIM \_ PCVideoController**](cim-pcvideocontroller.md).
 
-Para obtener más información sobre el uso de esta clase, como la recuperación de información de varios monitores, vea Uso de PowerShell para detectar información [de varios monitores.](https://blogs.technet.com/b/heyscriptingguy/archive/2013/10/03/use-powershell-to-discover-multi-monitor-information.aspx)
+Para obtener más información sobre el uso de esta clase, como la recuperación de información de varios monitores, vea Usar PowerShell para detectar información [de varios monitores.](https://blogs.technet.com/b/heyscriptingguy/archive/2013/10/03/use-powershell-to-discover-multi-monitor-information.aspx)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -2704,7 +2704,7 @@ foreach ($objItem in $colItems) {
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

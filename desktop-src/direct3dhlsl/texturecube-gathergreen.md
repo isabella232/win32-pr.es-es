@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: acc46aec3c248fc89c69eba9f4a820e1b3c3c513a7ac36afa36b3f48aac521d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0eaac705ce15b0174903cc87e630b14df28becb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118283704"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888148"
 ---
 # <a name="texturecubegathergreen-methods"></a>Métodos TextureCube::GatherGreen
 
@@ -29,7 +29,7 @@ Devuelve los componentes verdes de los cuatro valores de texel que se usarían e
 
 | Método                                                               | Descripción                                                                                                                                       |
 |:---------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherGreen(S,float,uint)**](tcube-gathergreen-s-float-uint-.md)  | Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.<br/> |
+| [**GatherGreen(S,float,uint)**](tcube-gathergreen-s-float-uint-.md)  | Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi linear, junto con el estado de asignación de mosaicos.<br/> |
 
 
 

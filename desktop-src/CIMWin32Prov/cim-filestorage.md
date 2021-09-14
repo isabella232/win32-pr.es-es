@@ -1,5 +1,5 @@
 ---
-description: La \_ asociación Cim FileStorage vincula el sistema de archivos y los archivos lógicos que se abordan a través del sistema de archivos.
+description: La \_ asociación CIM FileStorage vincula el sistema de archivos y los archivos lógicos que se abordan a través del sistema de archivos.
 ms.assetid: 1d0b698b-4c57-4a1c-8b00-0a6079be8dcc
 ms.tgt_platform: multiple
 title: CIM_FileStorage clase
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c59e8e128ce5e82549db745f32387b66be9d578dbe222f91c6a51b413c3f584a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3630bdf3250ce93765809df17e9318d3cd44f393
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119321045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974582"
 ---
 # <a name="cim_filestorage-class"></a>Cim \_ FileStorage (clase)
 
-La **\_ asociación Cim FileStorage** vincula el sistema de archivos y los archivos lógicos que se abordan a través del sistema de archivos.
+La **\_ asociación CIM FileStorage** vincula el sistema de archivos y los archivos lógicos que se abordan a través del sistema de archivos.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_FileStorage : CIM_Component
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM FileStorage** tiene estos tipos de miembros:
 
@@ -69,14 +69,14 @@ Tipo de acceso: solo lectura
 Calificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Sistema [**de \_ archivos CIM**](cim-filesystem.md) que describe el sistema de archivos.
+Un [**sistema de \_ archivos CIM**](cim-filesystem.md) que describe el sistema de archivos.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ LogicalFile**
+Tipo de datos: **\_ Cim LogicalFile**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -89,11 +89,11 @@ Un [**archivo \_ lógico CIM**](cim-logicalfile.md) que describe el archivo lóg
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,7 +109,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

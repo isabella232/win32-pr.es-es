@@ -1,5 +1,5 @@
 ---
-description: Establece los pares de número de red y marco de Exchange (IPX) de Internetworking Packet (IPX) para este adaptador de red.
+description: Establece los pares de número de red y trama de Exchange (IPX) de Internetworking Packet Exchange (IPX) para este adaptador de red.
 ms.assetid: 8190564f-7d9f-4b05-9949-2e732ce36dba
 ms.tgt_platform: multiple
 title: Método SetIPXFrameTypeNetworkPairs de la Win32_NetworkAdapterConfiguration clase
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - cimwin32.dll
-ms.openlocfilehash: f914f996e26d64ae66c0be2acf1dee3988ccc2015109c6e7d3b340b406c0c23e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e4d53ec7b5600a767505e517a02fbf87b5a43d13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119973044"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974464"
 ---
 # <a name="setipxframetypenetworkpairs-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIPXFrameTypeNetworkPairs de la clase \_ NetworkAdapterConfiguration de Win32
 
-Establece los pares de número de red y marco de Exchange (IPX) de Internetworking Packet (IPX) para este adaptador de red.
+Establece los pares de número de red y trama de Exchange (IPX) de Internetworking Packet Exchange (IPX) para este adaptador de red.
 
-Windows 2000 y Windows NT 3.51 y posteriores usan un número de red IPX con fines de enrutamiento. Se asigna a cada combinación de adaptador de red o tipo de marco configurado en el sistema del equipo. Este número se conoce a veces como "número de red externa". Debe ser único para cada segmento de red. Si el tipo de marco se establece en AUTO, el número de red debe ser cero.
+Windows 2000 y Windows NT 3.51 y posteriores usan un número de red IPX con fines de enrutamiento. Se asigna a cada combinación de adaptador de red o tipo de marco configurado en el sistema del equipo. Este número se conoce a veces como "número de red externa". Debe ser único para cada segmento de red. Si el tipo de fotograma se establece en AUTO, el número de red debe ser cero.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ uint32 SetIPXFrameTypeNetworkPairs(
 *IPXNetworkNumber* \[ En\]
 </dt> <dd>
 
-Matriz de caracteres que identifican de forma única un adaptador en el sistema del equipo. El transporte compatible con NETWare Link (NWLink) IPX/SPX en Windows 2000 y Windows NT 3.51 o posterior usa dos tipos diferentes de números de red. Este número se conoce a veces como número de red externa. Debe ser único para cada segmento de red. Los valores de esta lista de cadenas deben tener un valor correspondiente en el parámetro IPXFrameType que identifica el tipo de marco de paquete usado para esta red.
+Matriz de caracteres que identifica de forma única un adaptador en el sistema informático. El transporte compatible con NETWare Link (NWLink) IPX/SPX en Windows 2000 y Windows NT 3.51 o posterior usa dos tipos diferentes de números de red. Este número se conoce a veces como número de red externa. Debe ser único para cada segmento de red. Los valores de esta lista de cadenas deben tener un valor correspondiente en el parámetro IPXFrameType que identifique el tipo de marco de paquete usado para esta red.
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ Matriz de enteros de identificadores de tipo de marco. Los valores de esta matri
 **Error desconocido** (65)
 </dt> <dt>
 
-**Máscara de subred no** válida (66)
+**Máscara de subred no válida** (66)
 </dt> <dt>
 
 **Error al procesar una instancia devuelta** (67)
@@ -135,16 +135,16 @@ Matriz de enteros de identificadores de tipo de marco. Los valores de esta matri
 **Nombre de host no** válido (74)
 </dt> <dt>
 
-**No hay ningún servidor WINS principal o secundario definido** (75)
+**No hay ningún servidor WINS principal** o secundario definido (75)
 </dt> <dt>
 
 **Archivo no** válido (76)
 </dt> <dt>
 
-**Ruta de acceso del sistema** no válida (77)
+**Ruta de acceso del sistema no** válida (77)
 </dt> <dt>
 
-**Error en la copia de** archivos (78)
+**Error de copia de** archivos (78)
 </dt> <dt>
 
 **Parámetro de seguridad no** válido (79)
@@ -156,10 +156,10 @@ Matriz de enteros de identificadores de tipo de marco. Los valores de esta matri
 **No se puede configurar el servicio DHCP** (81)
 </dt> <dt>
 
-**No se puede renovar la concesión DHCP** (82)
+**No se puede renovar la concesión dhcp** (82)
 </dt> <dt>
 
-**No se puede liberar la concesión DHCP** (83)
+**No se puede liberar la concesión dhcp** (83)
 </dt> <dt>
 
 **IP no habilitada en el adaptador** (84)
@@ -168,13 +168,13 @@ Matriz de enteros de identificadores de tipo de marco. Los valores de esta matri
 **IPX no habilitado en el adaptador** (85)
 </dt> <dt>
 
-**Error de límites de número de marco o red** (86)
+**Error de límites de número de red o marco** (86)
 </dt> <dt>
 
 **Tipo de fotograma no** válido (87)
 </dt> <dt>
 
-**Número de red no válido** (88)
+**Número de red no** válido (88)
 </dt> <dt>
 
 **Número de red duplicado** (89)
@@ -204,7 +204,7 @@ Matriz de enteros de identificadores de tipo de marco. Los valores de esta matri
 **Interfaz no configurable** (97)
 </dt> <dt>
 
-**No todas las concesiones DHCP se podrían liberar o renovar** (98)
+**No todas las concesiones DHCP se pudieron liberar o renovar** (98)
 </dt> <dt>
 
 **DHCP no habilitado en el adaptador** (100)
@@ -227,7 +227,7 @@ Matriz de enteros de identificadores de tipo de marco. Los valores de esta matri
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

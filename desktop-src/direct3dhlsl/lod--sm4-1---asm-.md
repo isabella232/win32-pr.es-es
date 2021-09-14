@@ -4,12 +4,12 @@ description: Devuelve el nivel de detalle (LOD) que se usaría para el filtrado 
 ms.assetid: A5931203-8CD7-4FC9-A4A4-CA981F38C7A3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0575ff4b7cd332375d6b4b172ec5f1df43c66ec0bed4158b993c244b8c5a0d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a1c1ca5a22a735945b76a60c175c665c5cf58fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117906929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974267"
 ---
 # <a name="lod-sm41---asm"></a>lod (sm4.1 - asm)
 
@@ -37,7 +37,7 @@ Devuelve el nivel de detalle (LOD) que se usaría para el filtrado de textura.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esto se comporta como la [instrucción de](sample--sm4---asm-.md) ejemplo, pero no se genera una muestra filtrada. La instrucción calcula el siguiente vector (ClampedLOD, NonClampedLOD, 0, 0). NonClampedLOD es un valor LOD calculado que omite cualquier fijación del muestreador o de la textura (es decir, puede devolver valores negativos). ClampedLOD es un valor de LOD calculado que se usaría en la instrucción de **ejemplo** real. Swzzle en *srcResource permite* que los valores devueltos se desdoleguen arbitrariamente antes de que se escriban en el destino.
 
@@ -69,12 +69,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

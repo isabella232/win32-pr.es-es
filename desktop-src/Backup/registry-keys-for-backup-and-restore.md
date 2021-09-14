@@ -3,7 +3,7 @@ title: Claves y valores del Registro para copias de seguridad y restauración
 ms.assetid: 83449f78-cca1-449b-8c5f-3c8a91c8b3e7
 description: 'Más información sobre: Claves y valores del Registro para copias de seguridad y restauración'
 keywords:
-- copia de seguridad de copia de seguridad, claves del Registro
+- copia de seguridad de copias de seguridad, claves del Registro
 - Copia de seguridad de claves del Registro
 - Copia de seguridad de CustomPerformanceSettings
 - DisableMonitoring Backup
@@ -13,17 +13,17 @@ keywords:
 - Copia de seguridad de LastInstance
 - Copia de seguridad de LastRestoreId
 - Copia de seguridad de MaxShadowCopies
-- Copia de seguridad de MinDiffAreaFileSize
+- MinDiffAreaFileSize Backup
 - OverallPerformanceSetting Backup
 - Copia de seguridad de SYSVOL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d825c6588242dccd5df16778de9c590e51b7cdbf6696be4f1a5e40ff2d967c4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7058378561072bdc0f51abb455c098a22a9ad5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119702195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974260"
 ---
 # <a name="registry-keys-and-values-for-backup-and-restore"></a>Claves y valores del Registro para copias de seguridad y restauración
 
@@ -52,7 +52,7 @@ En Windows plataformas cliente a partir de Windows 7, se solicita automáticamen
 
 Los OEM y desarrolladores de aplicaciones de copia de seguridad de terceros pueden usar el valor del Registro **DisableMonitoring** para desactivar estas notificaciones automáticas.
 
-Este valor no existe de forma predeterminada, por lo que debe crearse con la siguiente clave del Registro:
+Este valor no existe de forma predeterminada, por lo que debe crearse en la siguiente clave del Registro:
 
 **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **WindowsBackup**
 
@@ -92,13 +92,13 @@ En la tabla siguiente se muestran algunas entradas típicas.
  
 
 > [!Note]  
-> Las aplicaciones que realizan copias de seguridad de nivel de volumen generalmente lo hacen copiando todo el volumen en el nivel de bloque, por lo que no pueden respetar la clave del Registro **FilesNotToBackup** en el momento de la copia de seguridad. En su lugar, esperan hasta el tiempo de restauración para eliminar los archivos de los que no se va a realizar una copia de seguridad. En la mayoría de los casos, se trata de una estrategia razonable. Sin embargo, en el caso de los archivos Storage instancia única, los archivos del Almacén común de SIS no deben eliminarse en el momento de la restauración.
+> Por lo general, las aplicaciones que realizan copias de seguridad de nivel de volumen lo hacen copiando todo el volumen en el nivel de bloque, por lo que no pueden respetar la clave del Registro **FilesNotToBackup** en el momento de la copia de seguridad. En su lugar, esperan hasta el tiempo de restauración para eliminar los archivos de los que no se va a realizar una copia de seguridad. En la mayoría de los casos, se trata de una estrategia razonable. Sin embargo, en el caso de los archivos Storage instancia única, los archivos del Almacén común de SIS no deben eliminarse en el momento de la restauración.
 
  
 
-En el caso de las copias de seguridad de volúmenes de nivel de bloque, Windows Server Backup y la utilidad Windows Wbadmin respetan la clave del Registro **FilesNotToBackup** mediante la eliminación de los archivos adecuados en tiempo de restauración. Restaurar sistema y copia de seguridad del estado del sistema no respetan la clave del Registro **FilesNotToBackup.**
+En el caso de las copias de seguridad de volúmenes de nivel de bloque, Windows Server Backup y la utilidad Windows Wbadmin respetan la clave del Registro **FilesNotToBackup** mediante la eliminación de los archivos adecuados en tiempo de restauración. Restaurar sistema y copia de seguridad de estado del sistema no respetan la clave del Registro **FilesNotToBackup.**
 
-**Windows XP:** Restaurar sistema la clave del Registro **FilesNotToBackup.**
+**Windows XP:** Restaurar sistema la clave del **Registro FilesNotToBackup.**
 
 ## <a name="filesnottosnapshot"></a>FilesNotToSnapshot
 
@@ -160,7 +160,7 @@ Si el **valor del Registro LastRestoreId** no existe, la aplicación de copia de
 
 Cree un valor con el nombre **LastRestoreId** y escriba REG \_ SZ. El valor debe ser un valor opaco único, como un GUID.
 
-Cada vez que se realiza una nueva restauración del estado del sistema, la aplicación de copia de seguridad debe cambiar los datos del **valor LastRestoreId.**
+Cada vez que se realiza una nueva restauración del estado del sistema, la aplicación de copia de seguridad debe cambiar los datos **del valor LastRestoreId.**
 
 Otras aplicaciones que necesitan supervisar las restauraciones de estado del sistema deben almacenar los datos de este valor del Registro. Estos datos se pueden comparar con los datos actuales del valor del Registro **LastRestoreId** para determinar si se ha realizado una nueva restauración del estado del sistema.
 
@@ -168,7 +168,7 @@ Otras aplicaciones que necesitan supervisar las restauraciones de estado del sis
 
 ## <a name="maxshadowcopies"></a>MaxShadowCopies
 
-El valor del Registro **MaxShadowCopies** [](/windows/desktop/VSS/vssgloss-c) especifica el número máximo de instantáneas accesibles para el cliente que se pueden almacenar en cada volumen del equipo. Una instantánea accesible desde el cliente es una instantánea que se crea mediante el valor ACCESIBLE DE **CLIENTE DE VSS \_ CTX \_ \_** de la [**\_ enumeración SNAPSHOT \_ CONTEXT \_ de VSS.**](/windows/desktop/api/vss/ne-vss-vss_snapshot_context) La característica Instantáneas para carpetas compartidas usa las instantáneas accesibles para el cliente. Para obtener más información sobre las instantáneas, vea la [documentación de VSS.](/windows/desktop/VSS/volume-shadow-copy-service-portal)
+El valor del Registro **MaxShadowCopies** [](/windows/desktop/VSS/vssgloss-c) especifica el número máximo de instantáneas accesibles para el cliente que se pueden almacenar en cada volumen del equipo. Una instantánea accesible desde el cliente es una instantánea que se crea mediante el valor ACCESIBLE DE **CLIENTE DE VSS \_ \_ \_ CTX** de la [**\_ enumeración VSS \_ SNAPSHOT \_ CONTEXT.**](/windows/desktop/api/vss/ne-vss-vss_snapshot_context) La característica Instantáneas para carpetas compartidas usa las instantáneas accesibles para el cliente. Para obtener más información sobre las instantáneas, vea la [documentación de VSS.](/windows/desktop/VSS/volume-shadow-copy-service-portal)
 
 Si el **valor del Registro MaxShadowCopies** no existe, la aplicación de copia de seguridad puede crearlo con la siguiente clave del Registro:
 
@@ -181,7 +181,7 @@ Cree un valor con el nombre **MaxShadowCopies y** escriba DWORD. Los datos prede
 
  
 
-**Nota**  La **opción MaxShadowCopies** se admite en Windows Server 2003 o posterior.
+**Nota**  La **opción MaxShadowCopies se** admite en Windows Server 2003 o posterior.
 
 **Windows Server 2003:** En los servidores de clúster, es posible que los datos del valor del Registro **MaxShadowCopies** deba establecerse en un número inferior. Para obtener más información, vea "Cuando se usa Servicio de instantáneas de volumen en equipos basados en Windows Server 2003 que ejecutan muchas operaciones de E/S, los volúmenes de disco tardan más tiempo en estar en línea" en la página ayuda y soporte técnico Knowledge Base en [https://support.microsoft.com/kb/945058](https://support.microsoft.com/kb/945058) .
 
@@ -191,7 +191,7 @@ Cree un valor con el nombre **MaxShadowCopies y** escriba DWORD. Los datos prede
 
 [VSS](/windows/desktop/VSS/volume-shadow-copy-service-portal) asigna un área de almacenamiento de instantáneas (o "área de diferencias") para almacenar datos para instantáneas. El tamaño mínimo del área de almacenamiento de instantáneas es una configuración por equipo que se puede especificar mediante el valor del Registro **MinDiffAreaFileSize.**
 
-Si no se establece el valor del Registro **MinDiffAreaFileSize,** el tamaño mínimo del área de almacenamiento de instantáneas es de 32 MB para los volúmenes inferiores a 500 MB y 320 MB para los volúmenes mayores de 500 MB.
+Si no se establece el valor del Registro **MinDiffAreaFileSize,** el tamaño mínimo del área de almacenamiento de instantáneas es de 32 MB para los volúmenes menores de 500 MB y de 320 MB para los volúmenes mayores de 500 MB.
 
 **Windows Server 2008, Windows Server 2003 con SP1 y Windows Vista:** Si no se establece el valor del Registro **MinDiffAreaFileSize,** el área de almacenamiento de instantáneas tiene un tamaño mínimo de 300 MB. Si se establece el valor del Registro **MinDiffAreaFileSize,** sus datos deben estar entre 300 MB y 3000 MB (3 GB) y deben ser un múltiplo de 300 MB.
 
@@ -205,7 +205,7 @@ Si el valor del Registro **MinDiffAreaFileSize** no existe, la aplicación de co
 
 Cree un valor con el nombre **MinDiffAreaFileSize** y escriba REG \_ DWORD. Los datos de esta clave se especifican en megabytes. 320 es igual a 320 MB y 3200 es igual a 3,2 GB. Debe especificar un número que sea un múltiplo de 32. Si especifica un valor que no es un múltiplo de 32, se usará el siguiente múltiplo de 32.
 
-Es posible que las instantáneas no funcionen correctamente si el valor del Registro **MinDiffAreaFileSize** especifica un tamaño mínimo mayor que el tamaño máximo del área de almacenamiento de instantáneas. Para especificar el tamaño máximo del área de almacenamiento de instantáneas, use el comando [Vssadmin](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754968(v=ws.11)) add shadowstorage o el comando Vssadmin resize shadowstorage. Para ver el tamaño máximo actual, use el comando shadowstorage de lista [de vssadmin.](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754968(v=ws.11)) Si no ha establecido un tamaño máximo, no hay ningún límite en la cantidad de espacio que se puede usar.
+Es posible que las instantáneas no funcionen correctamente si el valor del Registro **MinDiffAreaFileSize** especifica un tamaño mínimo mayor que el tamaño máximo del área de almacenamiento de instantáneas. Para especificar el tamaño máximo del área de almacenamiento de instantáneas, use el comando [Vssadmin](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754968(v=ws.11)) add shadowstorage o el comando Vssadmin resize shadowstorage. Para ver el tamaño máximo actual, use el comando [shadowstorage de lista de vssadmin.](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754968(v=ws.11)) Si no ha establecido un tamaño máximo, no hay ningún límite en la cantidad de espacio que se puede usar.
 
 ## <a name="overallperformancesetting-and-customperformancesettings"></a>OverallPerformanceSetting y CustomPerformanceSettings
 
@@ -215,11 +215,11 @@ Los valores del Registro **OverallPerformanceSetting** y **CustomPerformanceSett
 
 Si estos valores del Registro no existen, la aplicación de copia de seguridad puede crearlos con la siguiente clave del Registro:
 
-**HKEY \_ SOFTWARE DE \_ MÁQUINA** \\ **LOCAL** \\ **Microsoft** \\ **Windows** Copia de seguridad de nivel de bloque Windows \\  \\ **CurrentVersion**
+**HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion Windows** de nivel de \\ **bloque**
 
 Para especificar la configuración de rendimiento de todos los volúmenes, cree un valor con el nombre **OverallPerformanceSetting** y escriba REG \_ DWORD. Los datos del valor deben establecerse en uno de los valores siguientes.
 
-| Valor | Significado                                                                                                                                                                                                                                   |
+| Value | Significado                                                                                                                                                                                                                                   |
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1     | Rendimiento normal de la copia de seguridad (mediante copias de seguridad completas). Esta configuración corresponde a la configuración Rendimiento de copia de seguridad normal que se describe en Optimización de la copia de [seguridad y el rendimiento del servidor.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759145(v=ws.11))            |
 | 2     | Rendimiento de copia de seguridad más rápido (mediante copias de seguridad incrementales). Esta configuración corresponde a la configuración rendimiento de copia de seguridad más rápida descrita en [Optimización de](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759145(v=ws.11))la copia de seguridad y el rendimiento del servidor .     |
@@ -229,13 +229,13 @@ Para especificar la configuración de rendimiento de todos los volúmenes, cree 
 
  
 
-Si establece **OverallPerformanceSetting en** 3, también debe especificar la configuración de rendimiento para cada volumen individualmente. Para ello, cree un valor con el nombre **CustomPerformanceSettings** y escriba REG \_ MULTI \_ SZ. Los datos de este valor deben establecerse de la siguiente manera:
+Si establece **OverallPerformanceSetting** en 3, también debe especificar la configuración de rendimiento para cada volumen individualmente. Para ello, cree un valor con el nombre **CustomPerformanceSettings** y escriba REG \_ MULTI \_ SZ. Los datos de este valor deben establecerse de la siguiente manera:
 
 -   Cada cadena de la secuencia \_ REG MULTI SZ de \_ cadenas contiene la configuración de un volumen.
 -   Cada cadena consta de un GUID de volumen, seguido de una coma, seguido de un valor DWORD.
 -   Cada uno de los valores DWORD es 1 (copia de seguridad completa) o 2 (copia de seguridad incremental).
 
-Por ejemplo, suponga que el equipo tiene dos volúmenes como sigue:
+Por ejemplo, supongamos que el equipo tiene dos volúmenes como sigue:
 
 -   Los dos volúmenes son C: \\ y D: \\ .
 -   El GUID del volumen C: es \\ 07c473ca4-2df8-11de-9d80-806e6f6e6963 y el GUID para el volumen D: \\ es 0ac22ea6c-712f-11de-adb0-00215a67606e.
@@ -247,7 +247,7 @@ Si establece **OverallPerformanceSetting** en 1 o 2, se omiten los datos del val
 
 ## <a name="sysvol"></a>SYSVOL
 
-El **valor del Registro SYSVOL** es una manera de notificar al servicio Sistema de archivos distribuido Replicación de datos (DFSR) que se ha iniciado una operación de restauración del estado del sistema. Cualquier aplicación de copia de seguridad que realice la restauración del estado del sistema de SYSVOL debe usar este valor para indicar si la operación de restauración es autoritativa o no autoritativa. El servicio DFSR lee este valor. Si no se establece este valor, la restauración de SYSVOL se realiza de forma no autenticativa de forma predeterminada.
+El **valor del Registro SYSVOL** es una manera de notificar al servicio Sistema de archivos distribuido Replicación geográfica (DFSR) que se ha iniciado una operación de restauración del estado del sistema. Cualquier aplicación de copia de seguridad que realice la restauración del estado del sistema de SYSVOL debe usar este valor para indicar si la operación de restauración es autoritativa o no autoritativa. El servicio DFSR lee este valor. Si no se establece este valor, la restauración de SYSVOL se realiza de forma no autenticativa de forma predeterminada.
 
 Si el **valor del Registro SYSVOL** no existe, la aplicación de copia de seguridad debe crearlo con la siguiente clave del Registro:
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9a6efea68568fa62705d463bbcdad367151d7e51ce820ff0a052b388724006dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f962038c8f0f6eb4bc836da5ad7b667d454fa5e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118512845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974695"
 ---
 # <a name="pixel-shaders"></a>Sombreadores de píxeles
 
@@ -30,7 +30,7 @@ ms.locfileid: "118512845"
 
 <dl> <dt>
 
-[Referencia del sombreador asm](dx9-graphics-reference-asm.md)
+[Referencia de sombreador de Asm](dx9-graphics-reference-asm.md)
 </dt> </dl>
 
  

@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: d4d26538832a698909ace59da42b13ae51aef93d2d4d622b687f324a62d8361e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db7c2a2411d1c846c7369fc1d925a8e5569df3b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974325"
 ---
 # <a name="d3dxmeshopt-enumeration"></a>D3DXMESHOPT (enumeración)
 
 Especifica el tipo de optimización de malla que se va a realizar.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -49,14 +49,14 @@ enum _D3DXMESHOPT {
 <span id="D3DXMESHOPT_COMPACT"></span><span id="d3dxmeshopt_compact"></span>**D3DXMESHOPT \_ COMPACT**
 </dt> <dd>
 
-Reordena las caras para quitar los vértices y las caras que no se usan.
+Reordena las caras para quitar los vértices y las caras no usados.
 
 </dd> <dt>
 
 <span id="D3DXMESHOPT_ATTRSORT"></span><span id="d3dxmeshopt_attrsort"></span>**D3DXMESHOPT \_ ATTRSORT**
 </dt> <dd>
 
-Reordena las caras para optimizar para obtener menos cambios de estado de agrupación de atributos y un rendimiento [**mejorado de ID3DXBaseMesh::D rawSubset.**](id3dxbasemesh--drawsubset.md)
+Reordena las caras para optimizar para menos cambios de estado de agrupación de atributos y rendimiento [**mejorado de ID3DXBaseMesh::D rawSubset.**](id3dxbasemesh--drawsubset.md)
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Reordena las caras para maximizar la longitud de los triángulos adyacentes.
 <span id="D3DXMESHOPT_IGNOREVERTS"></span><span id="d3dxmeshopt_ignoreverts"></span>**D3DXMESHOPT \_ IGNOREVERTS**
 </dt> <dd>
 
-Optimice solo las caras; no optimice los vértices.
+Optimizar solo las caras; no optimice los vértices.
 
 </dd> <dt>
 
@@ -91,15 +91,15 @@ Durante la ordenación de atributos, no divida los vértices que se comparten en
 <span id="D3DXMESHOPT_DEVICEINDEPENDENT"></span><span id="d3dxmeshopt_deviceindependent"></span>**D3DXMESHOPT \_ DEVICEINDEPENDENT**
 </dt> <dd>
 
-Afecta al tamaño de la caché de vértices. El uso de esta marca especifica un tamaño de caché de vértices predeterminado que funciona bien en hardware heredado.
+Afecta al tamaño de la caché de vértices. El uso de esta marca especifica un tamaño de caché de vértices predeterminado que funciona bien en el hardware heredado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las marcas de optimización D3DXMESHOPT \_ STRIPREORDER y D3DXMESHOPT \_ VERTEXCACHE son mutuamente excluyentes.
 
-La marca SHAREVB D3DXMESHOPT \_ se ha quitado de esta enumeración. Use D3DXMESH \_ VB \_ SHARE en su lugar, en [**D3DXMESH.**](./d3dxmesh.md)
+La marca SHAREVB D3DXMESHOPT \_ se ha quitado de esta enumeración. Use D3DXMESH VB SHARE en su \_ \_ lugar, en [**D3DXMESH**](./d3dxmesh.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ La marca SHAREVB D3DXMESHOPT \_ se ha quitado de esta enumeración. Use D3DXMESH
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

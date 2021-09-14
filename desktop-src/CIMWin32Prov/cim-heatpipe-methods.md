@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: CIM_HeatPipe métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c0e5fe2513a4c2c11abe4bedeafa16bec183a4a30ea254d0fb261df7ef0a5b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc5d53e233cfb1b04e0e6c09e3d9fc36b0991ca8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119700425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974565"
 ---
 # <a name="cim_heatpipe-methods"></a>Métodos \_ HeatPipe de CIM
 

@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 70ff3ca1fb2509cd5f788cc1965920c46af5791bec10bb833df19f4b4f9be533
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53bfc903f8bc1be56962e912b1c82f02faaf0c44
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119939"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974696"
 ---
 # <a name="state-objects"></a>Objetos de estados
 
-Con los modelos de sombreador 6.3 y versiones posteriores, las aplicaciones tienen la comodidad y flexibilidad de poder definir objetos de estado DXR directamente en el código del sombreador HLSL, además de usar las API de Direct3D 12.
+Con los modelos de sombreador 6.3 y versiones posteriores, las aplicaciones tienen la comodidad y flexibilidad de poder definir objetos de estado DXR directamente en el código de sombreador HLSL, además de usar las API de Direct3D 12.
 
 En HLSL, los objetos de estado se declaran con esta sintaxis:
 
@@ -75,7 +75,7 @@ StateObjectConfig MyStateObjectConfig =
 ## <a name="globalrootsignature"></a>GlobalRootSignature
 GlobalRootSignature corresponde a una [D3D12_GLOBAL_ROOT_SIGNATURE](/windows/win32/api/d3d12/ns-d3d12-d3d12_global_root_signature) estructura.
 
-Los campos constan de un número de cadenas que describen las partes de la firma raíz. Para obtener referencia sobre esto, vea [Especificar firmas raíz en HLSL.](../direct3d12/specifying-root-signatures-in-hlsl.md)
+Los campos constan de un número de cadenas que describen las partes de la firma raíz. Para obtener referencia al respecto, vea [Especificar firmas raíz en HLSL.](../direct3d12/specifying-root-signatures-in-hlsl.md)
 
 Ejemplo:
 ```
@@ -91,7 +91,7 @@ GlobalRootSignature MyGlobalRootSignature =
 ## <a name="localrootsignature"></a>LocalRootSignature
 LocalRootSignature corresponde a una [D3D12_LOCAL_ROOT_SIGNATURE](/windows/win32/api/d3d12/ns-d3d12-d3d12_local_root_signature) estructura.
 
-Al igual que el subobjeto de firma raíz global, los campos constan de un número de cadenas que describen las partes de la firma raíz. Para obtener referencia sobre esto, vea [Especificar firmas raíz en HLSL.](../direct3d12/specifying-root-signatures-in-hlsl.md)
+Al igual que el subobjeto de firma raíz global, los campos constan de un número de cadenas que describen las partes de la firma raíz. Para obtener referencia al respecto, vea [Especificar firmas raíz en HLSL.](../direct3d12/specifying-root-signatures-in-hlsl.md)
 
 Ejemplo:
 ```
@@ -120,7 +120,7 @@ SubobjectToExportsAssocation Name =
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nombre**<br/>     | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                 |
 | <span id="SubobjectName"></span><span id="subobjectname"></span><span id="SUBOBJECTNAME"></span>**SubobjectName**<br/>     | Cadena que identifica un subobjeto exportado.<br/> |
-| <span id="Exports"></span><span id="exports"></span><span id="EXPORTS"></span>**Exportaciones**<br/> | Cadena que contiene una lista delimitada por punto y coma de exportaciones.<br/> |
+| <span id="Exports"></span><span id="exports"></span><span id="EXPORTS"></span>**Exportaciones**<br/> | Cadena que contiene una lista de exportaciones delimitada por punto y coma.<br/> |
 
 
 Ejemplo:
@@ -132,7 +132,7 @@ SubobjectToExportsAssociation MyLocalRootSignatureAssociation =
 };
 ```
 
-Tenga en cuenta que ambos campos usan *nombres exportados.* Un nombre exportado puede ser diferente del nombre original en HLSL, si la aplicación decide realizar el cambio de nombre de exportación.
+Tenga en cuenta que ambos campos usan *nombres exportados.* Un nombre exportado puede ser diferente del nombre original en HLSL, si la aplicación decide realizar el cambio de nombre de la exportación.
 
 ## <a name="raytracingshaderconfig"></a>RaytracingShaderConfig
 
@@ -151,7 +151,7 @@ RaytracingShaderConfig Name =
 | Elemento                                                                                         | Descripción                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nombre**<br/>     | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                 |
-| <span id="MaxPayloadSize"></span><span id="maxpayloadsize"></span><span id="MAXPAYLOADSIZE"></span>**MaxPayloadSize**<br/>     | Valor numérico para el almacenamiento máximo para escalares (se cuenta como 4 bytes cada uno) en cargas de rayos para sombreadores de rayos asociados.<br/> |
+| <span id="MaxPayloadSize"></span><span id="maxpayloadsize"></span><span id="MAXPAYLOADSIZE"></span>**MaxPayloadSize**<br/>     | Valor numérico para el almacenamiento máximo de escalares (se cuenta como 4 bytes cada uno) en cargas de rayos para sombreadores de rayo asociados.<br/> |
 | <span id="MaxAttributeSize"></span><span id="maxattributesize"></span><span id="MAXATTRIBUTESIZE"></span>**MaxAttributeSize**<br/> | Valor numérico para el número máximo de escalares (se cuentan como 4 bytes cada uno) que se pueden usar para los atributos de los sombreadores de trazado de rayos asociados. El valor no puede superar [D3D12_RAYTRACING_MAX_ATTRIBUTE_SIZE_IN_BYTES](../direct3d12/constants.md).<br/> |
 
 
@@ -180,7 +180,7 @@ RaytracingPipelineConfig Name =
 | Elemento                                                                                         | Descripción                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nombre**<br/>     | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                 |
-| <span id="MaxTraceRecursionDepth"></span><span id="maxtracerecursiondepth"></span><span id="MAXTRACERECURSIONDEPTH"></span>**MaxTraceRecursionDepth**<br/>     | Límite numérico que se usará para la recursión de rayos en la canalización de rayos. Es un número entre 0 y 31, ambos inclusive. <br/> |
+| <span id="MaxTraceRecursionDepth"></span><span id="maxtracerecursiondepth"></span><span id="MAXTRACERECURSIONDEPTH"></span>**MaxTraceRecursionDepth**<br/>     | Límite numérico que se usará para la recursión de rayos en la canalización de rayos. Es un número entre 0 y 31, ambos incluidos. <br/> |
 
 
 Ejemplo:
@@ -190,13 +190,13 @@ RaytracingPipelineConfig MyPipelineConfig =
     1  // Max trace recursion depth
 };
 ```
-Dado que hay un costo de rendimiento para la recursividad prolongada, las aplicaciones deben usar la profundidad de recursividad más baja necesaria para los resultados deseados.
+Dado que hay un costo de rendimiento para la recursividad de rayos, las aplicaciones deben usar la profundidad de recursividad más baja necesaria para los resultados deseados.
 
-Si las invocaciones de sombreador aún no han alcanzado la profundidad máxima de recursión, pueden llamar a [TraceRay](../direct3d12/traceray-function.md) varias veces. Pero si alcanzan o superan la profundidad máxima de recursión, al llamar a TraceRay se coloca el dispositivo en estado eliminado. Por lo tanto, los sombreadores de seguimiento de rayos deben tener cuidado de dejar de llamar a TraceRay si han cumplido o superado la profundidad máxima de recursión.
+Si las invocaciones de sombreador aún no han alcanzado la profundidad de recursividad máxima, pueden llamar a [TraceRay](../direct3d12/traceray-function.md) en cualquier número de veces. Pero si alcanzan o superan la profundidad de recursividad máxima, al llamar a TraceRay se coloca el dispositivo en estado eliminado. Por lo tanto, los sombreadores raytracing deben tener cuidado de dejar de llamar a TraceRay si han cumplido o superado la profundidad de recursividad máxima.
 
 ## <a name="trianglehitgroup"></a>TriangleHitGroup
 
-Un TriangleHitGroup corresponde a una [estructura D3D12_HIT_GROUP_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_hit_group_desc) cuyo campo Type está establecido [en D3D12_HIT_GROUP_TYPE_TRIANGLES](/windows/win32/api/d3d12/ne-d3d12-d3d12_hit_group_type#constants).
+TriangleHitGroup corresponde a una estructura [D3D12_HIT_GROUP_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_hit_group_desc) cuyo campo Type está establecido [en D3D12_HIT_GROUP_TYPE_TRIANGLES](/windows/win32/api/d3d12/ne-d3d12-d3d12_hit_group_type#constants).
 
 Este subobjeto se declara con la sintaxis
 
@@ -212,7 +212,7 @@ TriangleHitGroup Name =
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nombre**<br/>     | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                 |
 | <span id="AnyHitShader"></span><span id="anyhitshader"></span><span id="ANYHITSHADER"></span>**AnyHitShader**<br/>     | Nombre de cadena del sombreador anyhit para el grupo de operaciones o una cadena vacía.<br/> |
-| <span id="ClosestHitShader"></span><span id="closesthitshader"></span><span id="CLOSESTHITSHADER"></span>**ClosestHitShader**<br/> | Nombre de cadena del sombreador de pulsaciones más cercano para el grupo de operaciones o una cadena vacía.<br/> |
+| <span id="ClosestHitShader"></span><span id="closesthitshader"></span><span id="CLOSESTHITSHADER"></span>**ClosestHitShader**<br/> | Nombre de cadena del sombreador de pulsaciones más cercano para el grupo de impacto o una cadena vacía.<br/> |
 
 
 Ejemplo:
@@ -224,11 +224,11 @@ TriangleHitGroup MyHitGroup =
 };
 ```
 
-Tenga en cuenta que ambos campos usan *nombres exportados.* Un nombre exportado puede ser diferente del nombre original en HLSL, si la aplicación decide realizar el cambio de nombre de exportación.
+Tenga en cuenta que ambos campos usan *nombres exportados.* Un nombre exportado puede ser diferente del nombre original en HLSL, si la aplicación decide realizar el cambio de nombre de la exportación.
 
 ## <a name="proceduralprimitivehitgroup"></a>ProceduralPrimitiveHitGroup
 
-Un objeto ProceduralPrimitiveHitGroup corresponde a una [estructura D3D12_HIT_GROUP_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_hit_group_desc) cuyo campo Type está establecido [en D3D12_HIT_GROUP_TYPE_PROCEDURAL_PRIMITIVE](/windows/win32/api/d3d12/ne-d3d12-d3d12_hit_group_type#constants).
+Un proceduralPrimitiveHitGroup corresponde a una [estructura D3D12_HIT_GROUP_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_hit_group_desc) cuyo campo Type está establecido [en D3D12_HIT_GROUP_TYPE_PROCEDURAL_PRIMITIVE](/windows/win32/api/d3d12/ne-d3d12-d3d12_hit_group_type#constants).
 
 Este subobjeto se declara con la sintaxis
 
@@ -244,9 +244,9 @@ ProceduralPrimitiveHitGroup Name =
 | Elemento                                                                                         | Descripción                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nombre**<br/>     | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                 |
-| <span id="AnyHitShader"></span><span id="anyhitshader"></span><span id="ANYHITSHADER"></span>**AnyHitShader**<br/>     | Nombre de cadena del sombreador anyhit para el grupo de impacto o una cadena vacía.<br/> |
-| <span id="ClosestHitShader"></span><span id="closesthitshader"></span><span id="CLOSESTHITSHADER"></span>**ClosestHitShader**<br/> | Nombre de cadena del sombreador de pulsaciones más cercano para el grupo de impacto o una cadena vacía.<br/> |
-| <span id="IntersectionShader"></span><span id="intersectionshader"></span><span id="INTERSECTIONSHADER"></span>**IntersectionShader**<br/> | Nombre de cadena del sombreador de intersección para el grupo de impacto o una cadena vacía.<br/> |
+| <span id="AnyHitShader"></span><span id="anyhitshader"></span><span id="ANYHITSHADER"></span>**AnyHitShader**<br/>     | Nombre de cadena del sombreador anyhit para el grupo de operaciones o una cadena vacía.<br/> |
+| <span id="ClosestHitShader"></span><span id="closesthitshader"></span><span id="CLOSESTHITSHADER"></span>**ClosestHitShader**<br/> | Nombre de cadena del sombreador de pulsaciones más cercano para el grupo de operaciones o una cadena vacía.<br/> |
+| <span id="IntersectionShader"></span><span id="intersectionshader"></span><span id="INTERSECTIONSHADER"></span>**IntersectionShader**<br/> | Nombre de cadena del sombreador de intersección para el grupo de operaciones o una cadena vacía.<br/> |
 
 
 Ejemplo:
@@ -262,11 +262,11 @@ ProceduralPrimitiveHitGroup MyProceduralHitGroup
 
 Tenga en cuenta que los tres campos usan *nombres exportados.* Un nombre exportado puede ser diferente del nombre original en HLSL, si la aplicación decide realizar el cambio de nombre de exportación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los subobjetos tienen la noción de "asociación" o "qué subobjeto va con qué exportación".
 
-Al especificar subobjetos a través del código del [sombreador,](https://microsoft.github.io/DirectX-Specs/d3d/Raytracing.html#subobject-association-behavior)la elección de "qué subobjeto va con qué exportación" sigue las reglas como se describe en la especificación DXR . En concreto, suponga que una aplicación tiene alguna exportación. Si una aplicación asocia esa exportación con la firma raíz A a través del código de sombreador y la firma raíz B a través del código de aplicación, B es la que se usa. El diseño de "usar B" en lugar de "generar un error" ofrece a las aplicaciones la capacidad de invalidar cómodamente las asociaciones DXIL mediante código de aplicación, en lugar de forzarse a volver a compilar sombreadores para resolver los errores de coincidencia.
+Al especificar subobjetos a través del código del [sombreador,](https://microsoft.github.io/DirectX-Specs/d3d/Raytracing.html#subobject-association-behavior)la elección de "qué subobjeto va con qué exportación" sigue las reglas descritas en la especificación DXR . En concreto, suponga que una aplicación tiene alguna exportación. Si una aplicación asocia esa exportación con la firma raíz A a través del código del sombreador y la firma raíz B a través del código de aplicación, B es el que se usa. El diseño de "usar B" en lugar de "generar un error" ofrece a las aplicaciones la capacidad de invalidar cómodamente las asociaciones DXIL mediante código de aplicación, en lugar de forzarse a volver a compilar sombreadores para resolver las discrepancias.
 
 ## <a name="related-topics"></a>Temas relacionados
 

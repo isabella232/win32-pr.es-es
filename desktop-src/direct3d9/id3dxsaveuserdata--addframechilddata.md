@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9b0b593010ec9ff8a56833c48b9667dfd0084f99283fc4bf29c9008e9e31ac98
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3e3017ec2dafa9d4188da4f50d14257a09ffe72f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120095725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974753"
 ---
 # <a name="id3dxsaveuserdataaddframechilddata-method"></a>Método ID3DXSaveUserData::AddFrameChildData
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Los valores devueltos de este método los implementa un programador de aplicaciones. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para devolver un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md), ya que esto hará que [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) también devuelva el error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [**ID3DXSaveUserData::RegisterTemplates**](id3dxsaveuserdata--registertemplates.md) e [**ID3DXSaveUserData::SaveTemplates**](id3dxsaveuserdata--savetemplates.md) proporcionan un mecanismo para agregar una plantilla a un archivo .x para guardar datos de usuario.
 
@@ -90,7 +90,7 @@ Los valores devueltos de este método los implementa un programador de aplicacio
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

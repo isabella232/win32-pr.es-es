@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d935321516dd0a05407b70aaa24acacec6f940b9f15c2d4c3d711129cfe7f472
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: be8b427e59ac520a89877d7097cc5066633f6259
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119459915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888489"
 ---
 # <a name="id3dxbuffergetbuffersize-method"></a>Método ID3DXBuffer::GetBufferSize
 
@@ -55,7 +55,7 @@ Devuelve el tamaño total de los datos del búfer, en bytes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -90,12 +90,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b6c3e52f03ac283af0dd89a67caeb46d884f47c7587917966cc3a89869fc5e8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 017647104d7cb7a71b400390a307a633666bc100
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117726665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974746"
 ---
 # <a name="keywords"></a>Palabras clave
 
@@ -117,12 +117,12 @@ El Lenguaje de sombreador de alto nivel (HLSL) de Microsoft reconoce las palabra
 - [**packoffset**](dx-graphics-hlsl-variable-packoffset.md), pass, [pixelfragment](fragment-declaration-syntax.md), [PixelShader](dx-graphics-hlsl-shader.md), [point](dx-graphics-hlsl-geometry-shader.md), [PointStream](dx-graphics-hlsl-so-type.md), [precise](dx-graphics-hlsl-variable-syntax.md)
 - RasterizerState, RenderTargetView, [](dx-graphics-hlsl-return.md)return , [register](dx-graphics-hlsl-variable-register.md), row [ \_ major](dx-graphics-hlsl-variable-syntax.md), [**RWBuffer**](sm5-object-rwbuffer.md), [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md), [**RWStructuredBuffer,**](sm5-object-rwstructuredbuffer.md) [**RWTexture1D,**](sm5-object-rwtexture1d.md) [**RWTexture1DArray,**](sm5-object-rwtexture1darray.md) [**RWTexture2D,**](sm5-object-rwtexture2d.md) [**RWTexture2DArray**](sm5-object-rwtexture2darray.md), [**RWTexture3D**](sm5-object-rwtexture3d.md)
 - [sample](dx-graphics-hlsl-struct.md), [sampler, SamplerState, SamplerComparisonState](dx-graphics-hlsl-sampler.md), [shared](dx-graphics-hlsl-variable-syntax.md), [snorm](dx-graphics-hlsl-scalar.md), stateblock, stateblock \_ state, static, [string](dx-graphics-hlsl-scalar.md), [struct](dx-graphics-hlsl-struct.md), [switch](dx-graphics-hlsl-switch.md), [**StructuredBuffer**](sm5-object-structuredbuffer.md)
-- [tbuffer](dx-graphics-hlsl-constants.md), technique, [technique10](/windows/desktop/direct3d10/d3d10-effect-technique-syntax), [technique11](/windows/desktop/direct3d10/d3d10-effect-technique-syntax) [,](dx-graphics-hlsl-texture.md)texture , [Texture1D](sm5-object-texture1d.md), [Texture1DArray](sm5-object-texture1darray.md), [Texture2D](sm5-object-texture2d.md) [, Texture2DArray](sm5-object-texture2darray.md), [Texture2DMS](sm5-object-texture2dms.md), [Texture2DMSArray](sm5-object-texture2dmsarray.md), [Texture3D](sm5-object-texture3d.md), [TextureCube](dx-graphics-hlsl-to-type.md), [TextureCubeArray](dx-graphics-hlsl-to-type.md), true, [typedef](dx-graphics-hlsl-user-defined.md), [triangle, triangleadj](dx-graphics-hlsl-geometry-shader.md), [TriangleStream](dx-graphics-hlsl-so-type.md)
+- [tbuffer](dx-graphics-hlsl-constants.md), technique, [technique10](/windows/desktop/direct3d10/d3d10-effect-technique-syntax), [technique11](/windows/desktop/direct3d10/d3d10-effect-technique-syntax) [,](dx-graphics-hlsl-texture.md)texture , [Texture1D](sm5-object-texture1d.md), [Texture1DArray](sm5-object-texture1darray.md), [Texture2D,](sm5-object-texture2d.md) [Texture2DArray](sm5-object-texture2darray.md), [Texture2DMS](sm5-object-texture2dms.md), [Texture2DMSArray](sm5-object-texture2dmsarray.md), [Texture3D](sm5-object-texture3d.md), [TextureCube](dx-graphics-hlsl-to-type.md), [TextureCubeArray](dx-graphics-hlsl-to-type.md), true, [typedef](dx-graphics-hlsl-user-defined.md), [triangle, triangleadj](dx-graphics-hlsl-geometry-shader.md), [TriangleStream](dx-graphics-hlsl-so-type.md)
 - [uint,](dx-graphics-hlsl-scalar.md) [uniform](dx-graphics-hlsl-function-parameters.md), [unorm,](dx-graphics-hlsl-scalar.md)unsigned
 - [vector](dx-graphics-hlsl-vector.md), [vertexfragment](fragment-declaration-syntax.md), [VertexShader](dx-graphics-hlsl-shader.md), void, [volatile](dx-graphics-hlsl-variable-syntax.md)
 - [while](dx-graphics-hlsl-while.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Estos tipos numéricos tienen expansiones escalares, vectoriales y de palabras clave de matriz:
 

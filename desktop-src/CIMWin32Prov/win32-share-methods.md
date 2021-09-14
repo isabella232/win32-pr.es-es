@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Win32_Share métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cdce241fe04cde7be2cf75efbac990b5e183e429bffbba7692d6d20c5db2c2d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e61ed1c3128e5f21d32be8702644f1195d5cf2c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118675006"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974457"
 ---
 # <a name="win32_share-methods"></a>Métodos de recurso compartido de Win32 \_
 

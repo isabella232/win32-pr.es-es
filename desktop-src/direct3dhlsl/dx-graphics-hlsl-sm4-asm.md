@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 805ffe89b1f9d14ca70da0a8121353e6bf766b8b6e433441350d1b55c4531415
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20c7ff5d2a171228223d52db28d3bae6007068c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119959"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974722"
 ---
 # <a name="shader-model-4-assembly"></a>Ensamblado del modelo de sombreador 4
 
@@ -47,7 +47,7 @@ El modelo de sombreador 4 requiere que programe sombreadores en HLSL. Sin embarg
 [dcl \_ output \_ sgv](dcl-output-sgv.md)  
 [siv \_ de salida de \_ dcl](dcl-output-siv.md)  
 [dcl \_ outputTopology](dcl-outputtopology.md)  
-[Recurso \_ dcl](dcl-resource.md)  
+[dcl \_ resource](dcl-resource.md)  
 [dcl \_ sampler](dcl-sampler.md)  
 [dcl \_ temps](dcl-temps.md)  
 [default](default--sm4---asm-.md)  

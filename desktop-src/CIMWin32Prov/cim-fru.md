@@ -1,5 +1,5 @@
 ---
-description: La clase FRU cim representa una colección definida por el proveedor de productos y elementos físicos que están asociados a una unidad reemplazable de campo (FRU) para admitir, mantener o actualizar un producto en la ubicación del \_ cliente.
+description: La clase CIM FRU representa una colección definida por el proveedor de productos y elementos físicos que están asociados a una unidad reemplazable de campo (FRU) para admitir, mantener o actualizar un producto en la ubicación del \_ cliente.
 ms.assetid: 4464ec3a-5509-4e15-9020-4abb2edd2570
 ms.tgt_platform: multiple
 title: CIM_FRU clase
@@ -21,19 +21,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b87d1cb3719da794f2f9cb89f4698c3452769c7213d6fc7d58885585c18c4a3c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d163c3c223159ad8e09aa6e36d63187ff0aa97f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119923705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974573"
 ---
-# <a name="cim_fru-class"></a>Cim \_ Fru (clase)
+# <a name="cim_fru-class"></a>CIM \_ FRU (clase)
 
-La **clase \_ FRU cim** representa una colección definida por el proveedor de productos y elementos físicos que están asociados a una unidad reemplazable de campo (FRU) para admitir, mantener o actualizar un producto en la ubicación del cliente.
+La **clase \_ CIM FRU** representa una colección definida por el proveedor de productos y elementos físicos que están asociados a una unidad reemplazable de campo (FRU) para admitir, mantener o actualizar un producto en la ubicación del cliente.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -55,7 +55,7 @@ class CIM_FRU
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM FRU** tiene estos tipos de miembros:
 
@@ -63,7 +63,7 @@ La **clase \_ CIM FRU** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase FRU DE \_ CIM** tiene estas propiedades.
+La **clase FRU \_ de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -179,17 +179,17 @@ Nombre del proveedor.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

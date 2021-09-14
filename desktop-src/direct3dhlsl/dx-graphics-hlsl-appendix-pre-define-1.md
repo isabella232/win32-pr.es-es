@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 06e3992dd81d2ffcc32a672e2d524fa51c1372c02ab90d8b6b8a905100ac9afb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: deae1ca92c2280cd31cbec2bf3482c61fcf2b88a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119855055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974745"
 ---
 # <a name="define-directive-constant"></a>\#define (directiva) (constante)
 
@@ -42,7 +42,7 @@ Directiva de preprocesador que asigna un nombre significativo a una constante de
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todas las instancias del parámetro *identifier* que se producen después de la directiva [ \# define](dx-graphics-hlsl-appendix-pre-define.md) en el archivo de origen se reemplazarán por el valor del *parámetro token-string.* El identificador solo se reemplaza cuando forma un token; Por ejemplo, el identificador no se reemplaza si aparece en un comentario, dentro de una cadena o como parte de un identificador más largo.
 

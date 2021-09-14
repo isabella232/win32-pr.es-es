@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bef527f9044c01b0696e86b44ddaef7ec72c336771ed136ddd071d11c0d73836
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5507a79a60b2ffcb3cf801ea0454c7306bcde056
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118293359"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974762"
 ---
 # <a name="id3dxprtengine-interface"></a>Interfaz ID3DXPRTEngine
 
 La interfaz ID3DXPRTEngine se usa para calcular una simulación de transferencia de base de datos precalutada (PRT). Sus métodos se usan normalmente sin conexión para calcular vectores de transferencia por vértice o por texel antes del modelado 3D en tiempo real.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ID3DXPRTEngine** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXPRTEngine** también tiene estos tipos de miembros:
 
@@ -76,7 +76,7 @@ La **interfaz ID3DXPRTEngine** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para convertir valores RGB a luminance, se usa la fórmula siguiente:
 
@@ -120,7 +120,7 @@ typedef interface ID3DXPRTEngine *LPD3DXPRTENGINE;
 [**D3DXCreatePRTEngine**](d3dxcreateprtengine.md)
 </dt> <dt>
 
-[Transferencia de radiancia precalutada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de radiancia precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

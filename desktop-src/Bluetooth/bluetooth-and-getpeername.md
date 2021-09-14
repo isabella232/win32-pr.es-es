@@ -8,12 +8,12 @@ keywords:
 - Bluetooth y getpeername Bluetooth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3f77d75c117be033576a1df72aa639ceecd3450be2a89675032bfad5caadd12
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bac7eaba20902a72caa27427b99a72d8a4bc0134
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119588446"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974617"
 ---
 # <a name="bluetooth-and-getpeername"></a>Bluetooth y getpeername
 

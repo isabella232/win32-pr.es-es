@@ -1,31 +1,31 @@
 ---
-title: Creación de SPN para un servicio RpcNs
-description: En el ejemplo de código siguiente se componen los nombres de entidad de seguridad de servicio (SPN) para un servicio RPC que tiene una entrada en el contenedor RpcServices en el directorio. Un servicio RPC utiliza la función RpcNsBindingExport para crear su entrada RpcServices.
+title: Composición de SPN para un servicio RpcNs
+description: En el ejemplo de código siguiente se componen los nombres de entidad de seguridad de servicio (SPN) para un servicio RPC que tiene una entrada en el contenedor RpcServices del directorio . Un servicio RPC usa la función RpcNsBindingExport para crear su entrada RpcServices.
 ms.assetid: 4fd585b3-3f9b-4f7f-bc1b-22879587a590
 ms.tgt_platform: multiple
 keywords:
-- Creación de SPN para un anuncio del servicio RpcNs
+- Composición de SPN para una ad de servicio rpcNs
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fb65b377b5bdd041c5a34b05262f7e62f43801c5
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104487487"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974643"
 ---
-# <a name="composing-spns-for-an-rpcns-service"></a>Creación de SPN para un servicio RpcNs
+# <a name="composing-spns-for-an-rpcns-service"></a>Composición de SPN para un servicio RpcNs
 
-En el ejemplo de código siguiente se componen los nombres de entidad de seguridad de servicio (SPN) para un servicio RPC que tiene una entrada en el contenedor RpcServices en el directorio. Un servicio RPC utiliza la función [**RpcNsBindingExport**](/windows/desktop/api/rpcnsi/nf-rpcnsi-rpcnsbindingexporta) para crear su entrada RpcServices.
+En el ejemplo de código siguiente se componen los nombres de entidad de seguridad de servicio (SPN) para un servicio RPC que tiene una entrada en el contenedor RpcServices del directorio . Un servicio RPC usa la [**función RpcNsBindingExport**](/windows/desktop/api/rpcnsi/nf-rpcnsi-rpcnsbindingexporta) para crear su entrada RpcServices.
 
-Un servicio RPC utiliza este ejemplo de código para compilar el SPN o SPN que identifican una instancia del servicio. El servicio utiliza esta rutina para realizar las siguientes tareas:
+Un servicio RPC usa este ejemplo de código para compilar el SPN o los SPN que identifican una instancia del servicio. El servicio usa esta rutina para realizar las siguientes tareas:
 
--   Para registrar o anular el registro de los SPN en el directorio, cuando el servicio se instala o se quita. Para obtener más información y un ejemplo de código, consulte [registrar los SPN para un servicio](registering-the-spns-for-a-service.md).
--   Regístrese con el servicio de autenticación RPC cuando se inicie el servicio. Para obtener más información, vea [autenticación mutua en aplicaciones RPC](mutual-authentication-in-rpc-applications.md).
+-   Para registrar o anular el registro de los SPN en el directorio, cuando se instala o quita el servicio. Para obtener más información y un ejemplo de código, [vea Registrar los SPN para un servicio](registering-the-spns-for-a-service.md).
+-   Regístrese en el servicio de autenticación RPC cuando se inicie el servicio. Para obtener más información, vea [Autenticación mutua en aplicaciones RPC.](mutual-authentication-in-rpc-applications.md)
 
-En este ejemplo de código se usa el nombre distintivo de la entrada RpcServices del servicio para crear el SPN. Antes de llamar a este código, llame a la función [**RpcNsBindingExport**](/windows/desktop/api/rpcnsi/nf-rpcnsi-rpcnsbindingexporta) para crear la entrada RpcServices del servicio.
+En este ejemplo de código se usa el nombre distintivo de la entrada RpcServices del servicio para crear el SPN. Antes de llamar a este código, llame a [**la función RpcNsBindingExport**](/windows/desktop/api/rpcnsi/nf-rpcnsi-rpcnsbindingexporta) para crear la entrada RpcServices del servicio.
 
-En este ejemplo de código se llama a la función [**DsGetSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsgetspna) para compilar un SPN. El SPN se compone del nombre de la clase de servicio y el nombre distintivo de la entrada RpcServices del servicio.
+En este ejemplo de código se llama a la función [**DsGetSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsgetspna) para compilar un SPN. El SPN se compone del nombre de clase de servicio y el nombre distintivo de la entrada rpcServices del servicio.
 
 
 ```C++
@@ -111,6 +111,6 @@ HRESULT SpnCompose(LPTSTR pszServiceName,
 
 
 
- 
+ 
 
- 
+ 
