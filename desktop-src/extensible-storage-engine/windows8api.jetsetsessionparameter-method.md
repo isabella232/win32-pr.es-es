@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b995fe5b749640ced2164cdbed72a421510f3bf23cb02e30acb18b47b262efa1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b73331c765e1f8026b39c28dde5268417601663c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117889384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263564"
 ---
 # <a name="windows8apijetsetsessionparameter-method"></a>Método Windows8Api.JetSetSessionParameter
 
-Establece un parámetro en el estado de sesión proporcionado, que se usa durante la duración de esta sesión o hasta que se restablece.
+Establece un parámetro en el estado de sesión proporcionado, que se usa durante la vigencia de esta sesión o hasta que se restablezca.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -70,7 +70,7 @@ public static void JetSetSessionParameter(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sesión en la que se establecerá el parámetro.
+    Sesión en la que se establece el parámetro.
 
 <!-- end list -->
 
@@ -93,7 +93,7 @@ public static void JetSetSessionParameter(
     
     Tamaño de los datos proporcionados.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

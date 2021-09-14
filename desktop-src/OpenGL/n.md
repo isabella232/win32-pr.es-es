@@ -7,22 +7,22 @@ keywords:
 - networks
 - nonconvex
 - normal
-- Normalizar
+- normalize
 - vector normal
-- SPLINEBS (spline B no uniforme lógica)
-- Spline B no uniforme lógica (SPLINEBS)
+- SPLINEBS (B-spline no uniforme lógica)
+- Spline B no uniforme lógica (SPLINE) (SPLINEBS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70fe10bf562a9623e195c691296a7a187b8428bbcd0e2662e021f4efb2adadbf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc8f81b022e92c0df932c2b3b308f58d3d7ffe54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118937054"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265644"
 ---
 # <a name="n-opengl"></a>N (OpenGL)
 
-[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) H [](h.md) [I](i.md) [J K](jk.md) [L](l.md) [M N](m.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) U [V](u-v.md) [W](w.md) X Y [Z](x-y-z.md)
+[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) G [H](g.md) [I](h.md) [](i.md) [J K](jk.md) L [M](l.md) [N](m.md) [O](o.md) P [P](p.md) [](q.md) [Q R](r.md) [S](s.md) [T](t.md) U [V](u-v.md) [W](w.md) X Y [Z](x-y-z.md)
 
 <dl> <dt>
 
@@ -61,10 +61,10 @@ Vea *normal*.
 
 </dd> <dt>
 
-<span id="opengl_nurbs"></span><span id="OPENGL_NURBS"></span>**Nurbs**
+<span id="opengl_nurbs"></span><span id="OPENGL_NURBS"></span>**NURBS**
 </dt> <dd>
 
-Spline B no uniforme lógica. Una manera común de especificar curvas y superficies paramétricas.
+B-Spline no uniforme. Una manera común de especificar curvas y superficies paramétricas.
 
 </dd> </dl>
 

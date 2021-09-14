@@ -1,19 +1,19 @@
 ---
-description: Después de evaluar la estrategia de propiedades, debe determinar qué propiedades mostrar en la interfaz de usuario Windows Explorer y dónde.
+description: Después de evaluar la estrategia de propiedades, debe determinar qué propiedades se mostrarán en la interfaz de usuario Windows Explorer y dónde.
 ms.assetid: b7af0491-2ece-42b5-8eea-32643854632f
 title: Usar listas de propiedades
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 72289612d61ebfb198ec0f2ee3d4a7d206209e91
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477401"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263031"
 ---
 # <a name="using-property-lists"></a>Usar listas de propiedades
 
-Después de evaluar la estrategia de propiedades, debe determinar qué propiedades mostrar en la interfaz de usuario Windows Explorer y dónde. Hay varias ubicaciones donde las propiedades se muestran de solo lectura. Por otro lado, la edición de propiedades solo está habilitada en el **cuadro de diálogo** Propiedades. Ese cuadro de diálogo se puede invocar mediante el vínculo **Editar** propiedades del panel vista previa **o** el menú contextual de un elemento.
+Después de evaluar la estrategia de propiedades, debe determinar qué propiedades se mostrarán en la interfaz de usuario Windows Explorer y dónde. Hay varias ubicaciones donde las propiedades se muestran de solo lectura. Por otro lado, la edición de propiedades solo está habilitada en el **cuadro de diálogo** Propiedades. Ese cuadro de diálogo se puede invocar mediante el vínculo **Editar** propiedades del panel vista previa **o** el menú contextual de un elemento.
 
 Las listas de propiedades son cadenas delimitadas por punto y coma que tienen el formato siguiente.
 
@@ -41,7 +41,7 @@ Después de definir una lista de propiedades, puede almacenar esa cadena en el R
 
 
 
-| Valor | Descripción | 
+| Value | Descripción | 
 |-------|-------------|
 | FullDetails | Las propiedades se muestran en la <strong>pestaña Detalles</strong> del cuadro <strong>de diálogo</strong> Propiedades . Esta es la lista completa de propiedades que admite el tipo de archivo. | 
 | PreviewDetails | Las propiedades se muestran en el panel <strong>vista previa</strong>. | 
@@ -66,7 +66,7 @@ HKEY_CLASSES_ROOT
       PreviewDetails = prop:*System.Title;*System.Author
 ```
 
-Como se explica en el tema [Asociación de archivos de Shell,](../shell/fa-file-types.md) las asociaciones de archivos se pueden describir para el formato más específico de la forma más general. El formulario más específico es la extensión de nombre de archivo único y el formulario más genérico es una clave que se aplica a todos los archivos y carpetas de archivos. Entre esos dos extremos, también puede definir un [PROGID](../shell/fa-progids.md) que agrupa un conjunto de extensiones de nombre de archivo (por ejemplo, los tipos .jpg y .jpeg agrupados como **jpegfile).** Al definir listas de propiedades, debe definirlas para ProgID o, en algunos casos, extensiones de nombre de archivo específicas. Evite confiar en entradas amplias, como la **clave AllFileSystemObjects.**
+Como se explica en el tema [Asociación de archivos de Shell,](../shell/fa-file-types.md) las asociaciones de archivos se pueden describir para el formato más específico de la forma más general. El formulario más específico es la extensión de nombre de archivo único y el formulario más genérico es una clave que se aplica a todos los archivos y carpetas de archivos. Entre esos dos extremos, también puede definir un [PROGID](../shell/fa-progids.md) que agrupa un conjunto de extensiones de nombre de archivo (por ejemplo, los tipos .jpg y .jpeg agrupados como **jpegfile**). Al definir listas de propiedades, debe definirlas para ProgID o, en algunos casos, extensiones de nombre de archivo específicas. Evite confiar en entradas amplias, como la **clave AllFileSystemObjects.**
 
 ## <a name="related-topics"></a>Temas relacionados
 

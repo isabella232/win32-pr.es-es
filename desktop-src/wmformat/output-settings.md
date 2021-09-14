@@ -18,12 +18,12 @@ keywords:
 - lectores sincrónicos, configuración de salida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 966cd350d379170f9f19c44967ef932bf41a15cb1910b865432ce499b006161e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f5a02d508f76057dd72e34558a7ca8d29de4847
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119929945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266956"
 ---
 # <a name="output-settings"></a>Opciones de salida
 
@@ -36,9 +36,9 @@ Las siguientes constantes globales se usan para identificar la configuración de
 | g \_ wszAllowInterlacedOutput    | **TIPO WMT \_ \_ BOOL**  | Si es True, el lector entregará fotogramas entrelazados, si es compatible con la salida.                                                                                                                                                                                                                                            |
 | g \_ wszDedicatedDeliveryThread  | **TIPO WMT \_ \_ BOOL**  | Si es True, esta salida tendrá un subproceso dedicado creado para la entrega de sus ejemplos. No se admite en el lector sincrónico.                                                                                                                                                                                            |
 | g \_ wszDeliverOnReceive         | **TIPO WMT \_ \_ BOOL**  | Si es True, los ejemplos de esta salida se entregarán en cuanto estén disponibles en el lector. Esto puede dar lugar a que las muestras de esta salida se entreguen fuera de orden y antes de las muestras correspondientes de otras salidas.                                                                                            |
-| g \_ wszDynamicRangeControl      | **DWORD \_ DE TIPO \_ WMT** | Especifica el nivel de control de intervalo dinámico que se va a usar para la salida. Se establece en un valor de 0 a 2, donde 0 indica que no hay control de intervalo dinámico (valor predeterminado) y 2 es el nivel máximo del control de intervalo dinámico (el intervalo dinámico más pequeño).                                                                                |
+| g \_ wszDynamicRangeControl      | **DWORD \_ DE TIPO \_ WMT** | Especifica el nivel de control de intervalo dinámico que se va a usar para la salida. Establezca en un valor de 0 a 2, donde 0 indica que no hay control de intervalo dinámico (valor predeterminado) y 2 es el nivel máximo del control de intervalo dinámico (el intervalo dinámico más pequeño).                                                                                |
 | g \_ wszEarlyDataDelivery        | **DWORD \_ DE TIPO \_ WMT** | Tiempo, en milisegundos, que especifica cuánto antes se deben entregar las muestras. Si es mayor que cero, las muestras de esta salida se recuperarán y descodificarán para que las muestras se entreguen antes que las muestras para otras salidas. Normalmente, el lector entrega muestras en orden de tiempo de presentación.         |
-| g \_ wszEnableDiscreteOutput     | **TIPO WMT \_ \_ BOOL**  | Si es True, el lector habilitará la salida de audio multicanal de alta definición. Esta configuración solo es válida para las secuencias de audio codificadas con el códec Windows Media Audio 9 Professional. Si esta configuración se establece en true, también debe especificar la configuración del hablante del equipo cliente estableciendo g \_ wszSpeakerConfig. |
+| g \_ wszEnableDiscreteOutput     | **TIPO WMT \_ \_ BOOL**  | Si es True, el lector habilitará la salida de audio multicanal de alta definición. Esta configuración solo es válida para las secuencias de audio codificadas con el códec Windows Media Audio 9 Professional formato. Si esta opción se establece en true, también debe especificar la configuración del hablante del equipo cliente estableciendo g \_ wszSpeakerConfig. |
 | g \_ wszEnableFrameInterpolation | **TIPO WMT \_ \_ BOOL**  | Si es True, el códec entregará la secuencia de vídeo a una velocidad de fotogramas [*mayor,*](wmformat-glossary.md)interpolando los fotogramas de forma algorítmica.                                                                                                                                                          |
 | g \_ wszJustInTimeDecode         | **TIPO WMT \_ \_ BOOL**  | Si es True, los datos se deben descodificar lo más tarde posible. No se admite en el lector sincrónico.                                                                                                                                                                                                                            |
 | g \_ wszNeedsPreviousSample      | **TIPO WMT \_ \_ BOOL**  | Si es true, el ejemplo requiere que se descomprima el ejemplo anterior. Esta configuración solo se aplica a los fotogramas delta en vídeo comprimido y es de solo lectura.                                                                                                                                                                       |

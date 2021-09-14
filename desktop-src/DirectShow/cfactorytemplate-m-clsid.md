@@ -1,7 +1,7 @@
 ---
 description: Puntero al CLSID del objeto .
 ms.assetid: 629675e9-4b8a-4c1d-a2be-9eb2764ff5a0
-title: CFactoryTemplate::m_ClsID miembro (Combase.h)
+title: Miembro CFactoryTemplate::m_ClsID (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: efe09727ba26a85c7318d67f003accdaea994b87b7c9a5e5718637ac1de91c4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b7d205525c0aebaa1217bb6ebffc785f0e16baa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074229"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266588"
 ---
-# <a name="cfactorytemplatem_clsid-member"></a>CFactoryTemplate::m \_ ClsID miembro
+# <a name="cfactorytemplatem_clsid-member"></a>CFactoryTemplate::m \_ Miembro ClsID
 
 Puntero al CLSID del objeto .
 
@@ -47,7 +47,7 @@ const CLSID *m_ClsID;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

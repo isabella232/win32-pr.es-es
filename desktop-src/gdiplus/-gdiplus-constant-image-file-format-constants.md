@@ -4,12 +4,12 @@ ms.assetid: ccc450fe-5b93-46f8-bfeb-b7b1aaf53f8e
 title: Constantes de formato de archivo de imagen (Gdiplusimaging.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad71973c870f90844a033679cd2961d988def604343af06539db3450d65461a1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0cd13a62f5b71680efc89ab8c65990302eedd328
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117696510"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263452"
 ---
 # <a name="image-file-format-constants"></a>Constantes de formato de archivo de imagen
 
@@ -19,7 +19,7 @@ El [**método Image::GetRawFormat**](/windows/desktop/api/Gdiplusheaders/nf-gdip
 
 | Constante                                                                                                                                                                                                                 | Descripción                                                               |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| <span id="ImageFormatBMP"></span><span id="imageformatbmp"></span><span id="IMAGEFORMATBMP"></span><dl> <dt>**ImageFormatBMP**</dt> </dl>                         | Indica el formato Windows BMP.<br/>                             |
+| <span id="ImageFormatBMP"></span><span id="imageformatbmp"></span><span id="IMAGEFORMATBMP"></span><dl> <dt>**ImageFormatBMP**</dt> </dl>                         | Indica la Windows formato BMP.<br/>                             |
 | <span id="ImageFormatEMF"></span><span id="imageformatemf"></span><span id="IMAGEFORMATEMF"></span><dl> <dt>**ImageFormatEMF**</dt> </dl>                         | Indica el formato EMF.<br/>                                      |
 | <span id="ImageFormatEXIF"></span><span id="imageformatexif"></span><span id="IMAGEFORMATEXIF"></span><dl> <dt>**ImageFormatEXIF**</dt> </dl>                     | Indica el formato Exif (archivo de imagen intercambiable).<br/>           |
 | <span id="ImageFormatGIF"></span><span id="imageformatgif"></span><span id="IMAGEFORMATGIF"></span><dl> <dt>**ImageFormatGIF**</dt> </dl>                         | Indica el formato GIF.<br/>                                      |

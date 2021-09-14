@@ -7,12 +7,12 @@ keywords:
 - multithread OpenGL drawing OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05d928a481e4334f97cad2f7009f008c899ad8378f3fd15cf9e117e6b9599393
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3bccb08d48bd8ccb62584f15911a1eb65080c4a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118937260"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265652"
 ---
 # <a name="multithread-opengl-drawing-strategies"></a>Estrategias de dibujo openGL multiproceso
 

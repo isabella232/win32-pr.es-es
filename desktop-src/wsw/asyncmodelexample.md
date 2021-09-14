@@ -5,15 +5,15 @@ ms.assetid: e71bd231-c69c-409f-874c-a0798b844ee6
 keywords:
 - Servicios web AsyncModelExample para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c2c5470596bf34a2d0d0e96311445de262f68c13f2684a26bac7f773cd2959f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fbfc0963ef1f62a5458f9353245e96959be2f32d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119444765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266767"
 ---
 # <a name="asynchronous-function-example"></a>Ejemplo de función asincrónica
 

@@ -8,12 +8,12 @@ keywords:
 - información de estado OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d13719964412bf8b74b9d2f4ef58d5a153a56fc2f8d15a3d8788cef94762637
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8329fd34fc68122be8d63e4dc28756f88faf7797
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144168"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265636"
 ---
 # <a name="obtaining-state-information"></a>Obtener información de estado
 
@@ -67,13 +67,13 @@ OpenGL mantiene muchas variables de estado que afectan al comportamiento de much
     :::column-end:::
 :::row-end:::
 
-Para obtener el valor de otras variables de estado, use [**glGetBooleanv**](glgetbooleanv.md), [**glGetDoublev**](glgetdoublev.md), [**glGetFloatv**](glgetfloatv.md)o [**glGetIntegerv**](glgetintegerv.md), según corresponda. Consulte [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) para obtener información sobre cómo usar estas funciones. Otras funciones de consulta que puede usar son [**glGetError,**](glgeterror.md) [**glGetString**](glgetstring.md)y [**glIsEnabled.**](glisenabled.md) (Consulte [Control de errores](handling-errors.md) para obtener más información sobre las funciones relacionadas con el control de errores). Para guardar y restaurar conjuntos de variables de estado, use [**glPushAttrib**](glpushattrib.md) y [**glPopAttrib**](glpopattrib.md).
+Para obtener el valor de otras variables de estado, use [**glGetBooleanv**](glgetbooleanv.md), [**glGetDoublev**](glgetdoublev.md), [**glGetFloatv**](glgetfloatv.md)o [**glGetIntegerv**](glgetintegerv.md), según corresponda. Consulte [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) para obtener información sobre cómo usar estas funciones. Otras funciones de consulta que puede usar son [**glGetError,**](glgeterror.md) [**glGetString**](glgetstring.md)y [**glIsEnabled.**](glisenabled.md) (Consulte [Control de errores para](handling-errors.md) obtener más información sobre las funciones relacionadas con el control de errores). Para guardar y restaurar conjuntos de variables de estado, use [**glPushAttrib**](glpushattrib.md) y [**glPopAttrib**](glpopattrib.md).
 
 -   [Uso de las funciones de consulta](using-the-query-functions.md)
 -   [Tratamiento de errores](error-handling.md)
 -   [Códigos de error de OpenGL](opengl-error-codes.md)
 -   [Guardar y restaurar conjuntos de variables de estado](saving-and-restoring-sets-of-state-variables.md)
--   [Variables de estado OpenGL](opengl-state-variables.md)
+-   [Variables de estado openGL](opengl-state-variables.md)
 -   [Referencia de información de estado](state-information-reference.md)
 
  

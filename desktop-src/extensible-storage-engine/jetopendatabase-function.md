@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c1b25e25a0b45b4925ddee23bd8d23d44b4e9456
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 3fc7f484921dab0967ea991ac4060e5af7d78ec0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478311"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263567"
 ---
 # <a name="jetopendatabase-function"></a>Función JetOpenDatabase
 
@@ -69,7 +69,7 @@ Puntero a un búfer que, en una llamada correcta, contiene el identificador de l
 Grupo de bits que especifican cero o más de las opciones siguientes.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitDbExclusive</p> | <p>Permite que solo una sola sesión adjunte una base de datos. Normalmente, varias sesiones pueden abrir una base de datos.</p> | 
 | <p>JET_bitDbReadOnly</p> | <p>Impide modificaciones en la base de datos.</p> | 
@@ -89,7 +89,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>JET_errDatabaseLocked</p> | <p>Otra sesión ya ha abierto la base de datos exclusivamente (mediante JET_bitDbExclusive).</p> | 
 | <p>JET_errDatabaseNotFound</p> | <p>La base de datos no se ha adjuntado previamente <a href="gg294074(v=exchg.10).md">(consulte JetAttachDatabase</a>).</p> | 
 | <p>JET_errInvalidDatabase</p> | <p>Se intentó abrir un archivo que no es un archivo de base de datos válido.</p> | 
-| <p>JET_errOneDatabasePerSession</p> | <p>Se intentó abrir más de una base de datos y <a href="gg269337(v=exchg.10).md">JET_paramOneDatabasePerSession</a> se estableció. Para obtener más información, vea <a href="gg294139(v=exchg.10).md">Parámetros del sistema</a>.</p> | 
+| <p>JET_errOneDatabasePerSession</p> | <p>Se intentó abrir más de una base de datos y JET_paramOneDatabasePerSession <a href="gg269337(v=exchg.10).md">se</a> estableció. Para obtener más información, vea <a href="gg294139(v=exchg.10).md">Parámetros del sistema</a>.</p> | 
 | <p>JET_wrnFileOpenReadOnly</p> | <p>El archivo se adjuntaba como de solo lectura, pero <strong>JetOpenDatabase</strong> no pasó JET_bitDbReadOnly. La base de datos sigue abierta con acceso de solo lectura.</p> | 
 
 
@@ -97,7 +97,14 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetOpenDatabaseW</strong> (Unicode) y <strong>JetOpenDatabaseA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetOpenDatabaseW</strong> (Unicode) y <strong>JetOpenDatabaseA</strong> (ANSI).</p> | 
 
 
 

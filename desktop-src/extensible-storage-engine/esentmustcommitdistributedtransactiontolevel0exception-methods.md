@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102274
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: c7fdfb1647de031c94c307d9f564727a28abddcbfb6a8c1d79335fe9c0bcba46
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff88f3ec3a7ca53527bf5ad2107c0cad57db2085
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117708495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263687"
 ---
 # <a name="esentmustcommitdistributedtransactiontolevel0exception-methods"></a>Métodos de EsentMustCommitDistributedTransactionToLevel0Exception 
 
@@ -78,7 +78,7 @@ El [tipo EsentMustCommitDistributedTransactionToLevel0Exception](./esentmustcomm
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3874f492c60b4362a79a5452ef83ecccbccc9873b86432a6d22873839efe51d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a0a73e1892c2d6de63bb92e54435d4328b95c19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117654490"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266991"
 ---
 # <a name="numberofframes"></a>NumberOfFrames
 
@@ -29,13 +29,13 @@ g \_ wszWMNumberOfFrames
 
 ## <a name="data-type"></a>Tipo de datos
 
-**QWORD \_ DE TIPO \_ WMT**
+**TIPO WMT \_ \_ QWORD**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El escritor agrega este valor para una secuencia de vídeo en el momento de la codificación. **NumberOfFrames** no es de solo lectura. Sin embargo, solo debe cambiar el valor si edita el archivo, cambiando el número de fotogramas de una secuencia de vídeo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

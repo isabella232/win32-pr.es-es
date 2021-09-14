@@ -6,12 +6,12 @@ keywords:
 - bits de trabajo de transferencia, progreso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09da4791bffd075d1fb0dd5868f0b78c1b949a0384ff9203555bf18c10ff39cc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 085ddcdeea106be2998f828879bc92273f22b328
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119323255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266671"
 ---
 # <a name="determining-the-progress-of-a-job"></a>Determinar el progreso de un trabajo
 

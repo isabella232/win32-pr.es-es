@@ -4,12 +4,12 @@ ms.assetid: 3aa3b1ad-4da2-439b-992f-ffda81c5302a
 title: Métodos Tint
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d92489f7adc2e2c52ef3d8891e996bd040a3923c19f93875b7bcd2b6382ac23
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0369177a25678e07172e01f34b6ceb9b5a2bd1f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118067689"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263463"
 ---
 # <a name="tint-methods"></a>Métodos Tint
 

@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6bce69d5f14a522f403eed54b56a340ab02316507766c0cc6d60ff897ec73541
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bdc33773a31a7c9ddfd7adb0f3fb20f8fcf6d520
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119998515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266447"
 ---
 # <a name="cvideotransformfilterreceive-method"></a>Método CVideoTransformFilter.Receive
 
-El método recibe un ejemplo multimedia, lo procesa y entrega una muestra `Receive` de salida al filtro de nivel inferior. Este método invalida el [**método CTransformFilter::Receive.**](ctransformfilter-receive.md)
+El método recibe un ejemplo multimedia, lo procesa y entrega un ejemplo `Receive` de salida al filtro de nivel inferior. Este método invalida el [**método CTransformFilter::Receive.**](ctransformfilter-receive.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,22 +57,22 @@ Devuelve un **valor HRESULT.** Entre los valores posibles figuran los siguientes
 
 | Código devuelto                                                                             | Descripción                                                 |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| <dl> <dt>**S \_ FALSE**</dt> </dl> | El filtro ascendente debe dejar de enviar muestras.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | El filtro ascendente debe dejar de enviar ejemplos.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Correcto.<br/>                                         |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método llama [**a CVideoTransformFilter::ShouldSkipFrame para**](cvideotransformfilter-shouldskipframe.md) determinar si debe entregar este ejemplo o simplemente descartarlo. Si **ShouldSkipFrame** devuelve **FALSE** (que indica que se debe entregar el ejemplo), el método hace lo siguiente:
+Este método llama [**a CVideoTransformFilter::ShouldSkipFrame para**](cvideotransformfilter-shouldskipframe.md) determinar si debe entregar este ejemplo o simplemente descartarlo. Si **ShouldSkipFrame** devuelve **FALSE** (lo que indica que se debe entregar el ejemplo), el método hace lo siguiente:
 
-1.  Llama [**a CTransformFilter::InitializeOutputSample para**](ctransformfilter-initializeoutputsample.md) preparar el ejemplo de salida.
+1.  Llama [**a CTransformFilter::InitializeOutputSample**](ctransformfilter-initializeoutputsample.md) para preparar el ejemplo de salida.
 2.  Llama [**a CTransformFilter::Transform para**](ctransformfilter-transform.md) procesar el ejemplo de entrada. Este método es virtual puro y debe implementarse en la clase derivada.
 3.  Llama [**a CBaseOutputPin::D eliver para**](cbaseoutputpin-deliver.md) entregar el ejemplo de salida.
 
-Además, este método comprueba los cambios de formato en el ejemplo de entrada o salida, llamando a [**IMediaSample::GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype). Si hay un cambio de formato, el método establece el tipo de conexión en el pin correspondiente. Antes de establecer el nuevo tipo, llama a **StopStreaming.** Después de establecer el nuevo tipo, llama **a StartStreaming.** La clase derivada puede usar estos métodos para actualizar su estado interno. Es posible que la clase derivada también tenga que comprobar el nuevo formato en su **método Transform.**
+Además, este método comprueba los cambios de formato en el ejemplo de entrada o salida mediante una llamada [**a IMediaSample::GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype). Si hay un cambio de formato, el método establece el tipo de conexión en el pin correspondiente. Antes de establecer el nuevo tipo, llama a **StopStreaming.** Después de establecer el nuevo tipo, llama a **StartStreaming.** La clase derivada puede usar estos métodos para actualizar su estado interno. Es posible que la clase derivada también tenga que comprobar el nuevo formato en su **método Transform.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ Además, este método comprueba los cambios de formato en el ejemplo de entrada 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

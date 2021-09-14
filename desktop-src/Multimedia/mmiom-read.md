@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 5715bf8db51017c16997530256c6dfb83b3b3fc5
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371107"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265812"
 ---
-# <a name="mmiom_read-message"></a>Mensaje DE LECTURA \_ DE MMIOM
+# <a name="mmiom_read-message"></a>MENSAJE DE LECTURA \_ DE MMIOM
 
 La función [**mmioRead**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioread) envía el mensaje **\_ MMIOM READ** a un procedimiento de E/S para solicitar que se lea un número especificado de bytes de un archivo abierto.
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c9f4a12c03e7e001845437f57f9799c7b0861f4f8f9b6cfac56aaa2bb80e51a6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b44181f926f77ecc7cc22673622d4a0d3dcb7d26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119566925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266583"
 ---
 # <a name="cfactorytemplatem_lpfninit-member"></a>Miembro CFactoryTemplate::m \_ lpfnInit
 
@@ -36,7 +36,7 @@ LPFNInitRoutine m_lpfnInit;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El tipo de puntero de función [**es LPFNInitRoutine.**](lpfninitroutine.md) Si proporciona esta función en el archivo DLL, la función de punto de entrada dll la llama con los parámetros siguientes:
 
@@ -54,7 +54,7 @@ El tipo de puntero de función [**es LPFNInitRoutine.**](lpfninitroutine.md) Si 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

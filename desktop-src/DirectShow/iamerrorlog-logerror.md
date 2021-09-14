@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d5652bf5fa60fda79a706179d1a8c0e86d91f3eaf6d66c7d3313dba1964846ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc94532639f325b53db850ebe8a5af489a8b3cf2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117999710"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266423"
 ---
 # <a name="iamerrorloglogerror-method"></a>IamErrorLog::LogError (método)
 
@@ -80,7 +80,7 @@ Valor HRESULT devuelto por la llamada al método que produjo el error.
 *pExtraInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una variant que contiene información adicional sobre el error.
+Puntero a un variant que contiene información adicional sobre el error.
 
 </dd> </dl>
 
@@ -88,13 +88,13 @@ Puntero a una variant que contiene información adicional sobre el error.
 
 Devuelve el valor del *parámetro hresult.*
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Dentro de este método, no libera la **variant** a la que apunta *pExtraInfo*. Además, **VARIANT deja de ser** válido después de que el método vuelva, por lo que no intente hacer referencia a él más adelante.
+Dentro de este método, no liberar la **VARIANT** a la que apunta *pExtraInfo*. Además, **VARIANT** deja de ser válido después de que el método vuelva, por lo que no intente hacer referencia a él más adelante.
 
 Implemente este método para devolver lo antes posible. No realice llamadas de función desde dentro de este método que puedan bloquear la ejecución del programa. Por ejemplo, no llame a funciones que envíen mensajes de ventana, bloqueen eventos o, de lo contrario, podrían bloquear la ejecución. Si lo hace, el equipo podría dejar de responder.
 
-Para obtener una lista de errores definidos por DES, junto con el significado y el tipo de datos de **variant** a los que apunta *pExtraInfo,* vea [Errores de representación](rendering-errors.md).
+Para obtener una lista de errores definidos por DES, junto con el significado y el tipo de datos de **variant** a los que apunta *pExtraInfo,* vea [Rendering Errors](rendering-errors.md).
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -102,7 +102,7 @@ Para obtener una lista de errores definidos por DES, junto con el significado y 
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -117,14 +117,14 @@ Para obtener una lista de errores definidos por DES, junto con el significado y 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IAMErrorLog (interfaz)**](iamerrorlog.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

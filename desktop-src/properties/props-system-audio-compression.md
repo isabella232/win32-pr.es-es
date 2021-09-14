@@ -4,12 +4,12 @@ ms.assetid: 60c10412-ceda-42f8-8271-6ac82819b72f
 title: System.Audio.Compression
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2b48c5370f160a1c7077638a2a4d7771c0bf7e30f2d7bd9dc3d0063d2bed60d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46713b8c4dee584fbfe8072c8f00af4d2d29df61
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119033713"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262892"
 ---
 # <a name="systemaudiocompression"></a>System.Audio.Compression
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

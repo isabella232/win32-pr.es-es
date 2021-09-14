@@ -4,12 +4,12 @@ description: Este tema contiene una aplicación de ejemplo que muestra cómo usa
 ms.assetid: 49952ff5-ac8b-4192-a446-5a117f9a8e52
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2e6db90d82f723614f6a49f83c4a0b2a63c6bde0159d72720bd2176a98b245b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42c659d007d6e9325c89b6cef40e8b56f22d376b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119682915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266191"
 ---
 # <a name="http-server-sample-application"></a>Aplicación de ejemplo de servidor HTTP
 

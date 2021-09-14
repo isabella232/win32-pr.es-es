@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 8af3f58f7d8f4625971dde5d7ec807c9f963d40f
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371018"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265796"
 ---
-# <a name="mom_done-message"></a>MENSAJE \_ DE MOM DONE
+# <a name="mom_done-message"></a>Mensaje \_ DE MOM DONE
 
 El **mensaje \_ MOM DONE** se envía a una función de devolución de llamada de salida DE MIDI cuando se ha reproducido el búfer de flujo o exclusivo del sistema especificado y se devuelve a la aplicación.
 
@@ -48,7 +48,7 @@ Puntero a una [**estructura MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midih
 <span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
 </dt> <dd>
 
-Reservado; no se usan.
+Reservado; no use.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Este mensaje no devuelve un valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

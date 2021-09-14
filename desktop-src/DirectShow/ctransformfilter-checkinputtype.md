@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6ef410ac8d96160b39ca9b7103e5125be8619169ba6b287a32b8769e57a0cbf4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63c48a0502ee074b0940f85386dca0619a3ad12d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266516"
 ---
 # <a name="ctransformfiltercheckinputtype-method"></a>Método CTransformFilter.CheckInputType
 
@@ -64,9 +64,9 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La clase derivada debe implementar este método. Devuelve S OK si el formato de entrada propuesto es aceptable o un código de error en caso \_ contrario.
+La clase derivada debe implementar este método. Devuelve S \_ OK si el formato de entrada propuesto es aceptable o, en caso contrario, un código de error.
 
 Este método no necesita comprobar que el formato de entrada es compatible con el formato de salida (si existe). El pin de entrada lo comprueba mediante una llamada al [**método CheckTransform.**](ctransformfilter-checktransform.md)
 
@@ -81,7 +81,7 @@ Este método no necesita comprobar que el formato de entrada es compatible con e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

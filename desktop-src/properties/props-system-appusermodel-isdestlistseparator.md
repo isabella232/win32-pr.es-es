@@ -4,12 +4,12 @@ ms.assetid: 6cee1c20-865c-4d53-98c5-5402855a0004
 title: System.AppUserModel.IsDestListSeparator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf64c287f9a8623e283894b32a9e8b07f449d306d21d25e7c206158f4c69df87
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7283daac4487dfc1872a0e93922e406d89be4f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118970874"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262948"
 ---
 # <a name="systemappusermodelisdestlistseparator"></a>System.AppUserModel.IsDestListSeparator
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

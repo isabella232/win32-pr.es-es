@@ -1,5 +1,5 @@
 ---
-description: Crea un objeto de sesión de clave multimedia con los datos de inicialización y los datos personalizados especificados. .
+description: Crea un objeto de sesión de clave multimedia utilizando los datos de inicialización y los datos personalizados especificados. .
 ms.assetid: 9f11433c-7cff-4a59-9d4a-7f4b56ba62cf
 title: MÉTODO IMFMediaKeys::CreateSession
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 2dd9bcc7a1151b042d275917e8bd8106eb079de3315137ca41fa7faecaf5c957
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 89d3abce0c1c15d472f7008fa0ef2c5f27bba6ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119942045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263388"
 ---
 # <a name="imfmediakeyscreatesession-method"></a>MÉTODO IMFMediaKeys::CreateSession
 
-Crea un objeto de sesión de clave multimedia con los datos de inicialización y los datos personalizados especificados. .
+Crea un objeto de sesión de clave multimedia utilizando los datos de inicialización y los datos personalizados especificados. .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -106,11 +106,11 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
-| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

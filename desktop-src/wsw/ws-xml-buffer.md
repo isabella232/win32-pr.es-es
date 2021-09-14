@@ -6,12 +6,12 @@ keywords:
 - WS_XML_BUFFER
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 576c901434bb1d05aecbadc52ce51b163023b99e3c7c8959f0169e2e9b0badad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22f84bc755d24d07e8e2ed9bacf91b644c883871
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266708"
 ---
 # <a name="ws_xml_buffer"></a>BÚFER XML DE WS \_ \_
 
@@ -24,7 +24,7 @@ typedef struct _WS_XML_BUFFER WS_XML_BUFFER;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este objeto no es seguro para subprocesos. Para obtener más información, vea [Seguridad para subprocesos.](thread-safety.md)
 
@@ -34,13 +34,13 @@ Este objeto no es seguro para subprocesos. Para obtener más información, vea [
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio aplicaciones para \| UWP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                           |
-| Header<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

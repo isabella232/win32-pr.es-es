@@ -4,12 +4,12 @@ ms.assetid: 2d4c72ec-05d7-4a03-b58a-3c1a567b16c1
 title: Propiedad MsiLogFileLocation
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dec682aa6e28211aa1a1b240bb3cf1e96479c6bec6dcbeaa1ef3ecffc35943f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 06dc64ae1f1c37f432147a66be66460002b382ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118627823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266183"
 ---
 # <a name="msilogfilelocation-property"></a>Propiedad MsiLogFileLocation
 
@@ -19,9 +19,9 @@ El valor de la **propiedad MsiLogFileLocation** se establece en la ruta de acces
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 4.5 en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 4.5 en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows installer.<br/> |
 
 
 

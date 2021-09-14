@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 36eb27060165eae014902d02243b95e35d8b75716cacf4c9a412f62995029749
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 189f0fed57d67d7632d07839ee82dd13494eb418
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120102725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266367"
 ---
-# <a name="iamseterrorlogput_errorlog-method"></a>IamSetErrorLog::p ut \_ ErrorLog (método)
+# <a name="iamseterrorlogput_errorlog-method"></a>Método IAMSetErrorLog::p ut \_ ErrorLog
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -56,7 +56,7 @@ Puntero a la interfaz [**IAMErrorLog**](iamerrorlog.md) del registro de errores.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -79,14 +79,14 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IAMSetErrorLog (interfaz)**](iamseterrorlog.md)
+[**IamSetErrorLog (interfaz)**](iamseterrorlog.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7a4c361092665f24aad2984d48879245529866f833b33b7ec842b91a57c0ff2c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68f933293f86a368bf333ec6d18b909b4d2e5bbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263871"
 ---
 # <a name="outputcontrolpoints"></a>outputcontrolpoints
 
@@ -27,7 +27,7 @@ outputcontrolpoints(X)
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este será el número de veces que se ejecutará la función principal.
 
@@ -35,7 +35,7 @@ Este atributo se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
@@ -50,7 +50,7 @@ Este atributo se admite en los siguientes tipos de sombreadores:
 [Atributos del modelo de sombreador 5](d3d11-graphics-reference-sm5-attributes.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

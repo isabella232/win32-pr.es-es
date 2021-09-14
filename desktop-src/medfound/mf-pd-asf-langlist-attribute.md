@@ -4,14 +4,14 @@ ms.assetid: 07b8a991-b392-47c1-a6d7-a1f5dcc82e5c
 title: MF_PD_ASF_LANGLIST atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba22004001df2ba6be8fb7a173a3ea9bed1b0a73863ae111e61d36efa853e079
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ecac5eac178c7fb315e0ca4cfdbd540a27eeac28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119103707"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263300"
 ---
-# <a name="mf_pd_asf_langlist-attribute"></a>Atributo \_ DE \_ ASF LANGLIST de MF PD \_
+# <a name="mf_pd_asf_langlist-attribute"></a>Atributo \_ MF PD \_ ASF \_ LANGLIST
 
 Especifica una lista de identificadores de idioma que especifica los idiomas contenidos en un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto language list, definido en la especificación de ASF.
 
@@ -19,7 +19,7 @@ Especifica una lista de identificadores de idioma que especifica los idiomas con
 
 Byte array
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
@@ -29,29 +29,29 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 
 | Campo Objeto de lista de idioma | Tipo de datos    | Size    | Descripción                            |
 |----------------------------|--------------|---------|----------------------------------------|
-| Recuento de registros de identificador de idioma  | **DWORD**    | 4 bytes | Número de idiomas                    |
-| Registros de identificador de idioma        | **Byte**\[\] | Varía  | Matriz de cadenas de lenguaje (consulte a continuación). |
+| Recuento de registros de id. de idioma  | **DWORD**    | 4 bytes | Número de idiomas                    |
+| Registros de identificador de idioma        | **BYTE**\[\] | Varía  | Matriz de cadenas de lenguaje (consulte a continuación). |
 
 
 
  
 
-El primer **DWORD es** el número de idiomas, seguido de una matriz de cadenas de identificador de idioma. Cada cadena tiene el formato siguiente:
+El primer **DWORD** es el número de idiomas, seguido de una matriz de cadenas de identificador de idioma. Cada cadena tiene el formato siguiente:
 
 
 
 | Campo Objeto de lista de idioma | Tipo de datos     | Size    | Descripción                                                                               |
 |----------------------------|---------------|---------|-------------------------------------------------------------------------------------------|
 | Longitud del identificador de idioma         | **DWORD**     | 4 bytes | Longitud de la cadena en bytes, incluido el tamaño del carácter **NULL** final. |
-| Id. de idioma                | **Wchar**\[\] | Varía  | Cadena terminada en NULL que contiene el nombre de idioma RFC 1766.                           |
+| Id. de idioma                | **WCHAR**\[\] | Varía  | Cadena terminada en NULL que contiene el nombre de idioma RFC 1766.                           |
 
 
 
  
 
-Cada cadena es una etiqueta de lenguaje compatible con RFC 1766.
+Cada cadena es una etiqueta de idioma compatible con RFC 1766.
 
-Para obtener la etiqueta de idioma de una secuencia determinada en el archivo ASF, consulte el descriptor de secuencia para el atributo [**MF \_ SD \_ ASF \_ EXTSTRMPROP \_ LANGUAGE ID \_ \_ INDEX.**](mf-sd-asf-extstrmprop-language-id-index-attribute.md)
+Para obtener la etiqueta de idioma de una secuencia determinada en el archivo ASF, consulte el descriptor de flujo para el atributo [**MF \_ SD \_ ASF \_ EXTSTRMPROP \_ LANGUAGE ID \_ \_ INDEX.**](mf-sd-asf-extstrmprop-language-id-index-attribute.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -201,11 +201,11 @@ private:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 

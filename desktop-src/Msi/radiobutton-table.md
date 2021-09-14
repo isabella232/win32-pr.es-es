@@ -4,12 +4,12 @@ ms.assetid: 7f8f278a-a737-4116-9938-2850dbb611fa
 title: Tabla RadioButton
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ffc91ece6b5c71cd6ba46143f33e49b90b0278139d194a218a2fddb797bb55a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 097f8fbe3081c865e3668631ed0fa9d43a4488cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119381055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266119"
 ---
 # <a name="radiobutton-table"></a>Tabla RadioButton
 
@@ -21,9 +21,9 @@ La tabla RadioButton tiene las siguientes columnas.
 
 | Columna   | Tipo                         | Clave | Nullable |
 |----------|------------------------------|-----|----------|
-| Propiedad | [Identificador](identifier.md) | Y   | N        |
+| Propiedad. | [Identificador](identifier.md) | Y   | N        |
 | Pedido    | [Entero](integer.md)       | Y   | N        |
-| Valor    | [Formato](formatted.md)   | N   | N        |
+| Value    | [Formato](formatted.md)   | N   | N        |
 | X        | [Entero](integer.md)       | N   | N        |
 | Y        | [Entero](integer.md)       | N   | N        |
 | Ancho    | [Entero](integer.md)       | N   | N        |
@@ -102,7 +102,7 @@ Cadenas de Ayuda usadas con el botón . El texto es opcional y es localizable. L
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores enteros de x, y, width y height se encuentran en las unidades [del instalador,](installer-units.md)no en las unidades de diálogo. Una unidad del instalador es igual a una duodécima parte del alto del tamaño de fuente de MS Sans Serif de 10 puntos. Las coordenadas de los controles son relativas a la ciudad.
 

@@ -1,21 +1,21 @@
 ---
-description: Crear el objeto divisor de ASF
+description: Creación del objeto divisor de ASF
 ms.assetid: 448e2b38-70f7-4491-aac8-ee988a6f7473
-title: Crear el objeto divisor de ASF
+title: Creación del objeto divisor de ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa5782f42b53607943704836c350b76e69d872e8d9654959d4453d8e029c21f0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d42c8033a0861102f6d66b22e43516a616d6428b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119600815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263404"
 ---
-# <a name="creating-the-asf-splitter-object"></a>Crear el objeto divisor de ASF
+# <a name="creating-the-asf-splitter-object"></a>Creación del objeto divisor de ASF
 
-El objeto *divisor* ASF es un objeto de capa WMContainer que analiza el objeto de datos ASF de un archivo de formato de sistemas avanzados (ASF). Para crear una nueva instancia del objeto divisor ASF, llame a [**la función MFCreateASFSplitter.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfsplitter) Esta función devuelve un puntero a la interfaz [**IMFASFSplitter**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfsplitter) que representa un objeto divisor vacío.
+El objeto *divisor* ASF es un objeto de capa WMContainer que analiza el objeto de datos ASF de un archivo de formato de sistemas avanzados (ASF). Para crear una nueva instancia del objeto divisor ASF, llame a la [**función MFCreateASFSplitter.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfsplitter) Esta función devuelve un puntero a la interfaz [**IMFASFSplitter**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfsplitter) que representa un objeto divisor vacío.
 
-Antes de que el divisor pueda empezar a analizar, la aplicación debe inicializar el divisor con información del objeto de encabezado de ASF. Para inicializar el divisor, llame al [**método IMFASFSplitter::Initialize.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-initialize) Este método toma un puntero al objeto [ContentInfo de ASF](asf-contentinfo-object.md) que contiene información de encabezado del archivo ASF que se va a analizar. La aplicación debe inicializar el objeto ContentInfo antes de pasarlo al divisor para que la aplicación conozca las características del archivo multimedia. El método **Initialize** del divisor extrae información de secuencia del objeto ContentInfo, como los números de secuencia, para que el divisor pueda analizar los paquetes de datos.
+Para que el divisor pueda empezar a analizar, la aplicación debe inicializar el divisor con información del objeto de encabezado asf. Para inicializar el divisor, llame al [**método IMFASFSplitter::Initialize.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-initialize) Este método toma un puntero al objeto ContentInfo de [ASF](asf-contentinfo-object.md) que contiene información de encabezado del archivo ASF que se va a analizar. La aplicación debe inicializar el objeto ContentInfo antes de pasarlo al divisor para que la aplicación conozca las características del archivo multimedia. El método **Initialize** del divisor extrae información de secuencia del objeto ContentInfo, como los números de secuencia, para que el divisor pueda analizar los paquetes de datos.
 
 ### <a name="example"></a>Ejemplo
 

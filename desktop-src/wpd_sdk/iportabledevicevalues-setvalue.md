@@ -14,14 +14,14 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: f6af975b2876a177207df4f57bfe1f76d78a4b7239ce6d9c4cfcab52f0cf9042
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4c2ba6c5b6f015e5961356ff8e246605bfeddd31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266879"
 ---
-# <a name="iportabledevicevaluessetvalue-method"></a>IPortableDeviceValues::SetValue (Método)
+# <a name="iportabledevicevaluessetvalue-method"></a>IPortableDeviceValues::SetValue (método)
 
 El **método SetValue** agrega un nuevo **valor PROPVARIANT** o sobrescribe uno existente.
 
@@ -69,9 +69,9 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando VARTYPE para *pValue* es VT VECTOR o VT UI1, no se admite el establecimiento de un búfer null o \_ \_ de tamaño  cero. Por ejemplo, no se permiten pValue.caub.pElems = **NULL** ni pValue.caub.cElems = 0.
+Cuando VARTYPE para *pValue* es VT VECTOR o VT UI1, no se admite el establecimiento de un búfer null \_ \_ o de tamaño cero.  Por ejemplo, no se permite pValue.caub.pElems = **NULL** ni pValue.caub.cElems = 0.
 
 Este método se puede usar para recuperar un valor de cualquier tipo de la colección. Sin embargo, si conoce el tipo de valor de antemano, use uno de los métodos **Set...** especializados de esta interfaz para evitar la sobrecarga de trabajar directamente con valores PROPVARIANT.
 
@@ -88,11 +88,11 @@ Si un valor existente tiene la misma clave especificada por el parámetro *key,*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::GetValue**](iportabledevicevalues-getvalue.md)

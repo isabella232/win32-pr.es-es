@@ -1,6 +1,6 @@
 ---
-title: HTTP_RESPONSE (http. h)
-description: La versión de la \_ estructura de respuesta http depende de la versión de la cola de solicitudes utilizada como sigue la API de servidor http versión 1,0, que es una \_ estructura de solicitud HTTP \_ v1. API de servidor HTTP versión 2,0 cola de solicitudes es una \_ estructura de solicitud HTTP \_ V2.
+title: HTTP_RESPONSE (Http.h)
+description: La versión de la estructura HTTP RESPONSE depende de la versión de la cola de solicitudes que se usa como se muestra a continuación en la cola de solicitudes de LA API del servidor HTTP 1.0. Se trata de una estructura \_ HTTP \_ REQUEST \_ V1. Cola de solicitudes de LA API del servidor HTTP versión 2.0. Se trata de una estructura HTTP \_ REQUEST \_ V2.
 ms.assetid: F94646C0-7293-4543-842B-F08D8C7E2247
 keywords:
 - HTTP_RESPONSE
@@ -9,20 +9,20 @@ keywords:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 4a8445021aa61b94ae83a55937b1db5ca4e3c577
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422183"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266287"
 ---
-# <a name="http_response"></a>\_respuesta http
+# <a name="http_response"></a>RESPUESTA \_ HTTP
 
-La versión de la estructura de **\_ respuesta http** depende de la versión de la cola de solicitudes utilizada como se indica a continuación:
+La versión de la estructura **HTTP \_ RESPONSE** depende de la versión de la cola de solicitudes que se usa de la siguiente manera:
 
--   API de servidor HTTP versión 1,0 cola de solicitudes: se trata de una estructura de [**\_ solicitud HTTP \_ v1**](/windows/desktop/api/Http/ns-http-http_request_v1) .
--   API de servidor HTTP versión 2,0 cola de solicitudes: se trata de una estructura de [**\_ solicitud HTTP \_ V2**](/windows/desktop/api/Http/ns-http-http_request_v2) .
+-   Cola de solicitudes de LA API del servidor HTTP versión 1.0: se trata de una [**estructura HTTP \_ REQUEST \_ V1.**](/windows/desktop/api/Http/ns-http-http_request_v1)
+-   Cola de solicitudes de LA API del servidor HTTP versión 2.0: se trata de una [**estructura HTTP \_ REQUEST \_ V2.**](/windows/desktop/api/Http/ns-http-http_request_v2)
 
-No use la [**\_ solicitud HTTP \_ v1**](/windows/desktop/api/Http/ns-http-http_request_v1) y [**la \_ solicitud HTTP \_ V2**](/windows/desktop/api/Http/ns-http-http_request_v2) directamente en el código; mediante el uso de la **\_ respuesta http** , se asegura de que se usa la versión adecuada de la estructura en función de la versión de la cola de solicitudes.
+No use [**HTTP \_ REQUEST \_ V1**](/windows/desktop/api/Http/ns-http-http_request_v1) y [**HTTP REQUEST \_ \_ V2**](/windows/desktop/api/Http/ns-http-http_request_v2) directamente en el código; en su lugar, el uso de **HTTP \_ RESPONSE** garantiza el uso de la versión adecuada de la estructura en función de la versión de la cola de solicitudes.
 
 
 ```C++
@@ -35,24 +35,24 @@ typedef HTTP_RESPONSE* PHTTP_RESPONSE;
 
 <dl> <dt>
 
-**\_respuesta http**
+**RESPUESTA \_ HTTP**
 </dt> <dd>
 
-La solicitud fue de una cola de solicitudes v1.
+La solicitud era de una cola de solicitudes v1.
 
 </dd> <dt>
 
-**\_respuesta http**
+**RESPUESTA \_ HTTP**
 </dt> <dd>
 
-La solicitud fue de una cola de solicitudes V2.
+La solicitud era de una cola de solicitudes v2.
 
 </dd> <dt>
 
-**respuesta de PHTTP \_**
+**RESPUESTA \_ PHTTP**
 </dt> <dd>
 
-Puntero a una estructura de **\_ respuesta http** .
+Puntero a una **estructura \_ HTTP RESPONSE.**
 
 </dd> </dl>
 
@@ -62,9 +62,9 @@ Puntero a una estructura de **\_ respuesta http** .
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>Http. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                              |
+| Encabezado<br/>                   | <dl> <dt>Http.h</dt> </dl> |
 
 
 

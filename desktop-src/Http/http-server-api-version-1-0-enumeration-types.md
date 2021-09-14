@@ -4,12 +4,12 @@ ms.assetid: 8f2f2361-3251-4e2a-9cac-8f678c8f5007
 description: 'Más información sobre: Tipos de enumeración de LA API de servidor HTTP versión 1.0'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1195e3798a2cf1f9d77e49b89c7823a5bd9758dccdd612b850ec39b35b56a4bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d4b2be03533e50e0337070f0e5cc9eb8825013b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118394356"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266271"
 ---
 # <a name="http-server-api-version-10-enumeration-types"></a>Tipos de enumeración de LA API del servidor HTTP versión 1.0
 

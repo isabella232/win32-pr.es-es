@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 0f98073c7e3a4be7fa57858440e540769eef50c44fae4ddcaed459146bfc788a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 894126bea8f40537602aa1fe8898038245215914
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119389145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266348"
 ---
 # <a name="iamtimelinecreateemptynode-method"></a>IamTimeline::CreateEmptyNode (método)
 
@@ -66,7 +66,7 @@ Miembro del tipo [**enumerado TIMELINE \_ MAJOR \_ TYPE,**](timeline-major-type.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No agregue el nuevo objeto a otra instancia de escala de tiempo. Cada objeto de una escala de tiempo debe crearse mediante esa escala de tiempo.
 
@@ -78,7 +78,7 @@ Si el método se realiza correctamente, la [**interfaz IAMTimelineObj**](iamtime
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 

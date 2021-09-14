@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 3079c537ddca056ca690537c27edd95826de1189
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265892"
 ---
 # <a name="mm_mim_moredata-message"></a>Mm \_ MIM \_ mensaje MOREDATA
 
@@ -54,7 +54,7 @@ Especifica el mensaje MIDI que se recibió. El mensaje se empaqueta en un valor 
 
 | Requisito | Value | Descripción |
 |-----------|-----------------|-----------------------------------------------------|
-| Palabra alta | Byte de orden superior | No se usa.                                           |
+| Palabra alta | Byte de orden superior | No se utiliza.                                           |
 |           | Byte de orden bajo  | Contiene un segundo byte de datos MIDI (cuando sea necesario).  |
 | Palabra baja  | Byte de orden superior | Contiene el primer byte de datos DE MIDI (cuando sea necesario). |
 |           | Byte de orden bajo  | Contiene el estado de MIDI.                           |
@@ -95,7 +95,7 @@ Este mensaje no se envía cuando se recibe un mensaje exclusivo del sistema MIDI
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

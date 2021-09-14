@@ -1,15 +1,15 @@
 ---
-description: Obtenga información Windows conceptos del instalador que comienzan por la letra Q, como el componente calificado.
+description: Obtenga información sobre Windows installer que comienzan por la letra Q, como el componente calificado.
 ms.assetid: b3fb665e-9acf-414d-97c4-c69b81dd7309
 title: Q (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd2e135facc7b6653fb05191841f7964cd7c78770b17527effabcdecc1a96b1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a75b4438be8ae6ce80204d8bc8d1c77568168de5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119558145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266143"
 ---
 # <a name="q-windows-installer"></a>Q (Windows instalador)
 

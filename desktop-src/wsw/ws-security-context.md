@@ -6,12 +6,12 @@ keywords:
 - WS_SECURITY_CONTEXT
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c34f201c40e3079a3c26ced97e2664679f04ccec6b7804844dd305422abadfdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c041307eadd1ebcea379f9de0880fc011bd137ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118192361"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266732"
 ---
 # <a name="ws_security_context"></a>CONTEXTO DE SEGURIDAD DE WS \_ \_
 
@@ -24,7 +24,7 @@ typedef struct _WS_SECURITY_CONTEXT WS_SECURITY_CONTEXT;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este objeto no es seguro para subprocesos. Para obtener más información, vea [Seguridad para subprocesos.](thread-safety.md)
 
@@ -32,11 +32,11 @@ Este objeto no es seguro para subprocesos. Para obtener más información, vea [
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                           |
-| Header<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 

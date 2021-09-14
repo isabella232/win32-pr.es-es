@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 26a0c35be9914641abfa053cd1ee00f46bb09222aecbebc55d45900331a2ee81
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7f845ac7ae52537bfadfb6c913537b32e4d44171
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120075945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266439"
 ---
-# <a name="cvideotransformfiltershouldskipframe-method"></a>Método CVideoTransformFilter.ShouldSkipFrame
+# <a name="cvideotransformfiltershouldskipframe-method"></a>CVideoTransformFilter.ShouldSkipFrame (método)
 
-El `ShouldSkipFrame` método determina si el filtro debe quitar una muestra especificada.
+El `ShouldSkipFrame` método determina si el filtro debe quitar un ejemplo especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Puntero a la [**interfaz IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-i
 
 Devuelve **TRUE** si el filtro debe quitar este ejemplo, o **FALSE** si el filtro debe procesar este ejemplo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método devuelve **TRUE si** se cumplen las condiciones siguientes:
 
@@ -68,7 +68,7 @@ Para los fines de este cálculo, el filtro registra la siguiente información a 
 -   Número de fotogramas desde el último fotograma clave (**m \_ nFramesSinceKeyFrame**)
 -   Una estimación de cuántos fotogramas hay entre fotogramas clave (**m \_ nKeyFramePeriod**)
 
-Una vez que el filtro quita un fotograma, continúa quitando fotogramas hasta que alcanza el siguiente fotograma clave. Si este método devuelve **TRUE**, también envía un evento [**EC QUALITY \_ \_ CHANGE**](ec-quality-change.md) al Administrador de Graph Manager.
+Una vez que el filtro quita un marco, continúa quitando fotogramas hasta que alcanza el siguiente fotograma clave. Si este método devuelve **TRUE**, también envía un evento [**EC QUALITY \_ \_ CHANGE**](ec-quality-change.md) al Administrador de Graph Datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,7 +81,7 @@ Una vez que el filtro quita un fotograma, continúa quitando fotogramas hasta qu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

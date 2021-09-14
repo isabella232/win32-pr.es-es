@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 2a0a58d4f06b30004620f7e222cdbf8a439c9bb57ab4f7ca97e3b86eaacb2e3e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4b3e3d91087a394efb7909d36d6244bfbf6115e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119684875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265748"
 ---
 # <a name="onex-element"></a>Elemento OneX
 
@@ -25,7 +25,7 @@ El elemento OneX especifica información de configuración 802.1X para un perfil
 
 El espacio de nombres de destino para el elemento OneX es `https://www.microsoft.com/networking/OneX/v1` . La mayoría de los elementos secundarios del elemento OneX están en el espacio de `OneX` nombres . Hay una excepción: el [**elemento EAPConfig**](onexschema-eapconfig-onex-element.md) está en el espacio de `https://www.microsoft.com/provisioning/EapHostConfig` nombres .
 
-**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** Solo se [**admite el elemento EAPConfig.**](onexschema-eapconfig-onex-element.md) Se omitirán otros elementos, si están presentes en un perfil.
+Windows XP con SP3 y la API de LAN inalámbrica **para Windows XP con SP2:** Solo se [**admite el elemento EAPConfig.**](onexschema-eapconfig-onex-element.md) Se omitirán otros elementos, si están presentes en un perfil.
 
 ``` syntax
 <xs:element name="OneX">
@@ -237,25 +237,25 @@ El espacio de nombres de destino para el elemento OneX es `https://www.microsoft
 | [**maxAuthFailures**](onexschema-maxauthfailures-onex-element.md)                 |         | Especifica el número máximo de errores de autenticación permitidos para un conjunto de credenciales.<br/>                                                                                                                         |
 | [**maxDelay**](onexschema-maxdelay-singlesignon-element.md)                       |         | Especifica, en segundos, el retraso máximo antes de que se produce un error en el intento de conexión de inicio de sesión único.<br/>                                                                                                                      |
 | [**maxStart**](onexschema-maxstart-onex-element.md)                               |         | Especifica el número máximo de mensajes EAPOL-Start enviados.<br/>                                                                                                                                                        |
-| [**singleSignOn**](onexschema-singlesignon-onex-element.md)                       |         | Especifica la información de configuración de red de inicio de sesión único.<br/>                                                                                                                                                       |
-| [**startPeriod**](onexschema-startperiod-onex-element.md)                         |         | Especifica el período de tiempo, en segundos, que se debe esperar antes de EAPOL-Start se envía una aplicación.<br/>                                                                                                                                  |
+| [**singleSignOn**](onexschema-singlesignon-onex-element.md)                       |         | Especifica información de configuración de red de inicio de sesión único.<br/>                                                                                                                                                       |
+| [**startPeriod**](onexschema-startperiod-onex-element.md)                         |         | Especifica el período de tiempo, en segundos, que se debe esperar antes de que se EAPOL-Start una aplicación.<br/>                                                                                                                                  |
 | [**supplicantMode**](onexschema-supplicantmode-onex-element.md)                   |         | Especifica el método de transmisión utilizado para los paquetes EAPOL.<br/>                                                                                                                                                      |
-| [**tipo**](onexschema-type-singlesignon-element.md)                               |         | Especifica cuándo se realiza el inicio de sesión único. Cuando se establece en `preLogon` , el inicio de sesión único se realiza antes de que el usuario inicie sesión. Cuando se establece en `postLogon` , el inicio de sesión único se realiza inmediatamente después de que el usuario inicie sesión.<br/> |
+| [**type**](onexschema-type-singlesignon-element.md)                               |         | Especifica cuándo se realiza el inicio de sesión único. Cuando se establece en `preLogon` , el inicio de sesión único se realiza antes de que el usuario inicie sesión. Cuando se establece en `postLogon` , el inicio de sesión único se realiza inmediatamente después de que el usuario inicie sesión.<br/> |
 | [**userBasedVirtualLan**](onexschema-userbasedvirtuallan-singlesignon-element.md) | boolean | Especifica si la LAN virtual (VLAN) usada por el dispositivo cambia en función de las credenciales del usuario.<br/>                                                                                                                   |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para ver la lista de elementos secundarios en una estructura similar a un árbol, vea [OneX Schema Elements](onexschema-elements.md).
+Para ver la lista de elementos secundarios en una estructura similar a un árbol, vea [Elementos de esquema de OneX](onexschema-elements.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 

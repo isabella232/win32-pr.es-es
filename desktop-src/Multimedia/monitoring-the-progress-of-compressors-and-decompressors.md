@@ -9,11 +9,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 39ef5449e8d4e985217ee60f075d22b16dcc5c3b
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372247"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265780"
 ---
 # <a name="monitoring-the-progress-of-compressors-and-decompressors"></a>Supervisar el progreso de los descompresores y descomprimir
 

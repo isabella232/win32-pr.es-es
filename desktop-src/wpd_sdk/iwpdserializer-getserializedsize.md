@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: ae6b8381928c64b7d16e9f5daa4dd9fd85acd9b61c13531365d871563ef6afe0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7b50f7f6158145cd71125b5e5f26649712bb065b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119704525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266855"
 ---
 # <a name="iwpdserializergetserializedsize-method"></a>IWpdSerializer::GetSerializedSize (método)
 
@@ -82,11 +82,11 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IWpdSerializer (Interfaz)**](iwpdserializer.md)
+[**IWpdSerializer (interfaz)**](iwpdserializer.md)
 </dt> </dl>
 
  

@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 476f618634ee42e1363a091f79c97410b3e3b765138696c5c12e8d3c3fcb5bdf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e871d1f91d89d0eb0ddadee34b5ac215916d0af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119043113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263831"
 ---
 # <a name="texcoord---ps"></a>texcoord - ps
 
 Interpreta los datos de coordenadas de textura (UVW1) como datos de color (RGBA).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,11 +31,11 @@ Interpreta los datos de coordenadas de textura (UVW1) como datos de color (RGBA)
 
  
 
-where
+, donde
 
 -   dst es el registro de destino.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -49,11 +49,11 @@ where
 
 Esta instrucción interpreta el conjunto de coordenadas de textura (UVW1) correspondiente al número de registro de destino como datos de color (RGBA). Si el conjunto de coordenadas de textura contiene menos de tres componentes, los componentes que faltan se establecen en 0. El cuarto componente siempre se establece en 1. Todos los valores se fijan entre 0 y 1.
 
-La ventaja de texcoord es que proporciona una manera de pasar datos de vértice interpolados con alta precisión directamente al sombreador de píxeles. Sin embargo, cuando los datos se escriben en el registro de destino, se perderá cierta precisión, en función del número de bits usados por el hardware para los registros.
+La ventaja de texcoord es que proporciona una manera de pasar los datos de vértice interpolados con alta precisión directamente al sombreador de píxeles. Sin embargo, cuando los datos se escriben en el registro de destino, se perderá cierta precisión, en función del número de bits usados por el hardware para los registros.
 
-Esta instrucción muestrea ninguna textura. Solo las coordenadas de textura establecidas en esta fase de textura son relevantes.
+Esta instrucción no muestrea ninguna textura. Solo son pertinentes las coordenadas de textura establecidas en esta fase de textura.
 
-Cualquier dato de textura (como la posición, la dirección normal y la dirección del origen de luz) se puede asignar mediante un sombreador de vértices a una coordenada de textura. Esto se hace asociando una textura a un registro de textura mediante [**SetTexture**](/windows/desktop/direct3d9/id3dxbaseeffect--settexture) y especificando cómo se realiza el muestreo de textura mediante [**SetTextureStageState**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexturestagestate). Si se usa la canalización de función fija, asegúrese de proporcionar la marca \_ TSS TEXCOORDINDEX.
+Cualquier dato de textura (como la posición, la dirección normal y la dirección de la fuente de luz) se puede asignar mediante un sombreador de vértices a una coordenada de textura. Para ello, se asocia una textura a un registro de textura mediante [**SetTexture**](/windows/desktop/direct3d9/id3dxbaseeffect--settexture) y se especifica cómo se realiza el muestreo de textura mediante [**SetTextureStageState.**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexturestagestate) Si se usa la canalización de función fija, asegúrese de proporcionar la marca \_ TSS TEXCOORDINDEX.
 
 Esta instrucción se usa de la siguiente manera:
 
@@ -64,11 +64,11 @@ texcoord tn
 
 
 
-Un [registro de coordenadas de textura](dx9-graphics-reference-asm-ps-registers-texture-coordinate.md) (tn) contiene cuatro valores de color (RGBA). Los datos también se pueden pensar como datos vectoriales (xyzw). texcoord recuperará tres de estos valores (xyz) del conjunto de coordenadas de textura x y el cuarto componente (w) se establece en 1. La dirección de textura se copia del conjunto de coordenadas de textura n. El resultado se fija entre 0 y 1.
+Un [registro de coordenadas de textura](dx9-graphics-reference-asm-ps-registers-texture-coordinate.md) (tn) contiene cuatro valores de color (RGBA). Los datos también se pueden pensar como datos vectoriales (xyzw). cada uno recuperará tres de estos valores (xyz) del conjunto de coordenadas de textura x y el cuarto componente (w) se establece en 1. La dirección de textura se copia del conjunto de coordenadas de textura n. El resultado se fija entre 0 y 1.
 
 Este ejemplo solo tiene propósitos ilustrativos. El código de C que acompaña al sombreador no se ha optimizado para el rendimiento.
 
-Este es un sombreador de ejemplo que usa texcoord.
+Este es un sombreador de ejemplo que usa texascoord.
 
 
 ```

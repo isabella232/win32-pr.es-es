@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: a1e1a1b717aeb2814b469fc34a9e038052abb6720dde0ed75982f27716978de5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 360f46eb7242de01d5e734c5efa17399f23adf7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119907015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266436"
 ---
 # <a name="cvideotransformfilter-class"></a>CVideoTransformFilter (clase)
 
@@ -42,7 +42,7 @@ Si el filtro quita un fotograma, continúa quitando fotogramas hasta que alcanza
 | Métodos protegidos                                                               | Descripción                                                                                    |
 | [**AbortPlayback**](cvideotransformfilter-abortplayback.md)                    | Se usa para señalar un error de streaming.                                                              |
 | [**AlterQuality**](cvideotransformfilter-alterquality.md)                      | Notifica al filtro que se solicita un cambio de calidad.                                        |
-| [**Recibir**](cvideotransformfilter-receive.md)                                | Recibe un ejemplo multimedia, lo procesa y entrega un ejemplo de salida al filtro de nivel inferior. |
+| [**Recepción**](cvideotransformfilter-receive.md)                                | Recibe un ejemplo multimedia, lo procesa y entrega un ejemplo de salida al filtro de nivel inferior. |
 | [**ShouldSkipFrame**](cvideotransformfilter-shouldskipframe.md)                | Determina si el filtro debe quitar un ejemplo especificado.                                  |
 | [**StartStreaming**](cvideotransformfilter-startstreaming.md)                  | Se llama cuando el filtro cambia al estado en pausa.                                           |
 | Métodos públicos                                                                  | Descripción                                                                                    |

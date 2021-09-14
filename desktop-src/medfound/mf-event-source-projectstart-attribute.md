@@ -1,17 +1,17 @@
 ---
 description: Especifica la hora de inicio de una topología de segmento.
 ms.assetid: d8902fb6-c758-4d3d-9230-e918948bda19
-title: MF_EVENT_SOURCE_PROJECTSTART atributo (mfapi. h)
+title: MF_EVENT_SOURCE_PROJECTSTART atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 512e2129c3104d9e7160163f03a9c28b2716273e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913734"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263324"
 ---
-# <a name="mf_event_source_projectstart-attribute"></a>\_ \_ PROJECTSTART atributo de origen de evento MF \_
+# <a name="mf_event_source_projectstart-attribute"></a>Atributo MF \_ EVENT \_ SOURCE \_ PROJECTSTART
 
 Especifica la hora de inicio de una topología de segmento.
 
@@ -19,15 +19,15 @@ Especifica la hora de inicio de una topología de segmento.
 
 **UINT64**
 
-Trata como un valor de **LONGLONG** .
+Tratar como un **valor LONGLONG.**
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo se usa con el evento [MESourceStarted](mesourcestarted.md) . El origen del secuenciador establece este atributo cuando la topología del segmento actual tiene el atributo [**\_ \_ PROJECTSTART de la topología MF**](mf-topology-projectstart-attribute.md) . Los dos atributos tienen el mismo valor.
+Este atributo se usa con el [evento MESourceStarted.](mesourcestarted.md) El origen del secuenciador establece este atributo cuando la topología del segmento actual tiene el atributo [**MF \_ TOPOLOGY \_ PROJECTSTART.**](mf-topology-projectstart-attribute.md) Los dos atributos tienen el mismo valor.
 
-Este atributo es un valor con signo, aunque se almacena como **UINT64**.
+Este atributo es un valor con firma, aunque se almacena como **UINT64.**
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,26 +35,26 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de eventos](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**ATTRIBUTEAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**ATTRIBUTEAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> </dl>
 
  

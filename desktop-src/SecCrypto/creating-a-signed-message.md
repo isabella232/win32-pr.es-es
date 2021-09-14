@@ -4,12 +4,12 @@ ms.assetid: 61896022-28c2-4f70-977a-c990b4b23c55
 title: Crear un mensaje firmado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9645509c140168267bf48915f68a884b51dee6e7f5a19b2a153e3fd6ff7d5afe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f68511c41a10fc0f690574e71c1dfe8a354efbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117769257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259564"
 ---
 # <a name="creating-a-signed-message"></a>Crear un mensaje firmado
 

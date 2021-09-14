@@ -4,16 +4,16 @@ ms.assetid: 816a5845-ca03-46c6-bdda-e6a7d02ff614
 title: Recorte con una región
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae2569350dd0d25066c42fc8ee102cad76e8e77c425bd075122da2179dd3249c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aa19426d62d5d3af99150bf9ac8e8099628fe2f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263460"
 ---
 # <a name="clipping-with-a-region"></a>Recorte con una región
 
-Una de las propiedades de la clase [**Graphics es**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) la región de recorte. Todo el dibujo realizado por un objeto **Graphics** determinado está restringido a la región de recorte de ese **objeto Graphics.** Puede establecer la región de recorte llamando al **método SetClip.**
+Una de las propiedades de la clase [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) es la región de recorte. Todo el dibujo realizado por un objeto **Graphics** determinado está restringido a la región de recorte de ese **objeto Graphics.** Puede establecer la región de recorte llamando al **método SetClip.**
 
 En el ejemplo siguiente se crea una ruta de acceso que consta de un único polígono. A continuación, el código crea una región basada en esa ruta de acceso. La dirección de la región se pasa al **método SetClip** de un [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) y, a continuación, se dibujan dos cadenas.
 

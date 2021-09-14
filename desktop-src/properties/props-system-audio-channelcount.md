@@ -4,12 +4,12 @@ ms.assetid: 8a028167-dc0f-4ed9-a710-568caf1b9a47
 title: System.Audio.ChannelCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e6de40e3c214b060955f011769dc4ce80660b936e7a576c6ed0f1516190568
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b9a370e517f8c3552e27bf034c4873b5e1cb593
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118232955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262895"
 ---
 # <a name="systemaudiochannelcount"></a>System.Audio.ChannelCount
 
@@ -69,7 +69,7 @@ propertyDescription
             defineName = AUDIO_CHANNELCOUNT_STEREO
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

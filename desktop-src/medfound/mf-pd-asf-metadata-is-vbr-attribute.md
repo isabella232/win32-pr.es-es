@@ -4,12 +4,12 @@ ms.assetid: 69888d66-8e96-4a20-b8c5-a01267ff3c05
 title: MF_PD_ASF_METADATA_IS_VBR atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e97d471c6a6466290c5b2ac490f88ae33de29aa3823af420ef8b8116a81192a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5863d5366fd94e230040f81d3f67f4c75fd3fe3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119955425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263292"
 ---
 # <a name="mf_pd_asf_metadata_is_vbr-attribute"></a>MF \_ PD \_ ASF METADATA IS \_ \_ \_ VBR attribute
 
@@ -21,9 +21,9 @@ Especifica si un archivo de formato de sistemas avanzados (ASF) usa la codificac
 
 Tratar como un valor booleano.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este atributo se aplica a los descriptores de presentación para el contenido de ASF. Si el valor es **TRUE**, el archivo se ha codificado mediante VBR. Si el valor es **FALSE o** el atributo no está presente, el archivo no usa la codificación VBR.
+Este atributo se aplica a los descriptores de presentación para el contenido de ASF. Si el valor es **TRUE,** el archivo se ha codificado mediante VBR. Si el valor es **FALSE o** el atributo no está presente, el archivo no usa la codificación VBR.
 
 El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera este atributo y lo establece en el descriptor de presentación.
 
@@ -40,11 +40,11 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

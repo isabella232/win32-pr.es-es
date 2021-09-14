@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f865bdc707b206a8528413a357a4e14bcfe88fff813e1f62a44d30e6f4843ab4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7beb4073052149e246a55ffbb1ff057e836704c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117821920"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266503"
 ---
 # <a name="cvideotransformfilterm_bskipping-member"></a>Miembro CVideoTransformFilter::m \_ bSkipping
 

@@ -4,12 +4,12 @@ ms.assetid: DEE0E2D4-7727-4C26-A6B6-12F96CFCCA49
 title: Comandos de extensión MTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf21145361bca87d7847b2769eade96b092d26aff69dd7d4319b9334f45cbf99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97624350fc3c0617b72238a023a4dfd2e9d6339e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119928325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266839"
 ---
 # <a name="mtp-extension-commands"></a>Comandos de extensión MTP
 

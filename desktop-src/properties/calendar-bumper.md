@@ -4,12 +4,12 @@ ms.assetid: fde5c85f-e620-4557-89f0-7dbbbea74f8c
 title: Calendario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ac312c6e85eabb7ab1d85e1213bcb785a3e684a50410e172a0316c473ebf078
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51056df2e412add722b10b896ac082fcb437b73e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119600185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262999"
 ---
 # <a name="calendar"></a>Calendario
 

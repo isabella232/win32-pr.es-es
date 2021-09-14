@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 5f2c6f8a5707780bae6c8a135e3ca940fb4a77408c3df835b321b5b190644fcc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a636bc95fd3d25de20c2df413576a504c4fa1b96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119703725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266775"
 ---
 # <a name="wpd_video_scan_types-enumeration"></a>Enumeración \_ WPD VIDEO \_ SCAN \_ TYPES
 
 El **tipo de \_ enumeración WPD VIDEO \_ SCAN \_ TYPES** describe cómo se codifican los campos de un archivo de vídeo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -102,7 +102,7 @@ Un archivo de vídeo con una combinación de modos entrelazados y progresivas.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta enumeración la usa la [propiedad WPD \_ VIDEO SCAN \_ \_ TYPE.](properties-and-attributes.md)
 
@@ -156,7 +156,7 @@ Campo 2: Línea 3
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

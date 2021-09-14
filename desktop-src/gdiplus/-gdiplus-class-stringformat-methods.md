@@ -4,18 +4,18 @@ ms.assetid: 5a24308a-b899-469b-b9e2-703f1f171e63
 title: Métodos StringFormat
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2265bde07f361883e5a34cc68df32f6f117039b1c23f8919e2ead38dfeadce34
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 725c30024b92495e03ce35a7bf0ef3165edd55b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120115245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263471"
 ---
 # <a name="stringformat-methods"></a>Métodos StringFormat
 
-En este tema se enumeran los métodos de [**la clase StringFormat.**](/windows/desktop/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) Para obtener una lista de clases completa, vea **StringFormat (Clase).**
+En este tema se enumeran los métodos de [**la clase StringFormat.**](/windows/desktop/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) Para obtener una lista de clases completa, **vea StringFormat (Clase).**
 
--   [**Clon**](/windows/desktop/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-clone)
+-   [**Clonar**](/windows/desktop/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-clone)
 -   [**GenericDefault**](/windows/desktop/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-genericdefault)
 -   [**GenericTypographic**](/windows/desktop/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-generictypographic)
 -   [**GetAlignment**](/windows/desktop/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-getalignment)

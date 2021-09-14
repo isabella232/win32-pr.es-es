@@ -4,12 +4,12 @@ ms.assetid: 0a1023ee-0cab-4978-ad4c-57637379def9
 title: Estructuras de contexto de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b31ef929f6be67943e7623ad5c129b6a9e3da2f970594bba3df33a1884bd810a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd4b2078eb3967fc459889f2e172cb95178f1b78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118761404"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263559"
 ---
 # <a name="device-context-structures"></a>Estructuras de contexto de dispositivo
 

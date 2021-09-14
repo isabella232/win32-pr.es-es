@@ -4,12 +4,12 @@ ms.assetid: d78a8c4d-377e-45eb-9cf6-2d61b34e82d6
 title: MF_MT_AUDIO_BITS_PER_SAMPLE atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b9697ff5ce97bc7dd9066b57f94e41ff02a599fcf14d1ea8f51c9dea69efc7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 896e77c937269b63208cb4bff73482a8df8596aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119104561"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263319"
 ---
 # <a name="mf_mt_audio_bits_per_sample-attribute"></a>Atributo \_ MF MT AUDIO BITS PER \_ \_ \_ \_ SAMPLE
 
@@ -19,7 +19,7 @@ Número de bits por muestra de audio en un tipo de medio de audio.
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo corresponde al miembro **wBitsPerSample** de la [**estructuraSAMPLEATEX.**](/previous-versions/dd757713(v=vs.85))
 
@@ -33,11 +33,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

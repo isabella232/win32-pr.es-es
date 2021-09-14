@@ -5,17 +5,17 @@ title: queryControl
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 3652a46d403bc258226de5a48f34ae16960ff517
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262980"
 ---
 # <a name="querycontrol"></a>queryControl
 
 No se admite en Windows 7 y versiones posteriores. Especifica qué control se va a usar en el generador de consultas. Solo debe haber un [elemento queryControl]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [queryControl,]() la configuración predeterminada del atributo se aplica a la descripción de la propiedad.
+Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [queryControl,]() la configuración de atributo predeterminada se aplica a la descripción de la propiedad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,7 +75,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <tbody>
 <tr class="odd">
 <td>control</td>
-<td>Público. Opcional. El valor predeterminado &quot; es Default &quot; . Estos son los valores válidos. 
+<td>Público. Opcional. El valor predeterminado &quot; es &quot; Default. Estos son los valores válidos. 
 <table>
 <colgroup>
 <col  />
@@ -89,8 +89,8 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </thead>
 <tbody>
 <tr class="odd">
-<td>Predeterminado</td>
-<td>Predeterminada. Usa el control predeterminado, basado en el <typeInfo type=&quot;&quot;> atributo . A continuación se enumeran los tipos predeterminados. Cualquier otro tipo da como resultado el uso del &quot; &quot; control Texto. 
+<td>Valor predeterminado</td>
+<td>Predeterminada. Usa el control predeterminado, basado en el <typeInfo type=&quot;&quot;> atributo . Los tipos predeterminados se enumeran a continuación. Cualquier otro tipo da como resultado el uso del &quot; &quot; control Texto. 
 <table>
 <thead>
 <tr class="header">

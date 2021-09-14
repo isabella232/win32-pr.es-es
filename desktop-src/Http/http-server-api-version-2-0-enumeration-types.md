@@ -4,12 +4,12 @@ description: Los siguientes son los tipos de enumeración HTTP versión 2.0 HTTP
 ms.assetid: 849b88a1-e60b-4a1d-a660-cc3fe429d39f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 544318c419b215a49b070219175dd9c2d4fa44c6238fd4a5564135d56f47f9ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 208c2f648208b04a1eb29634d883f2d41b08017d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266236"
 ---
 # <a name="http-server-api-version-20-enumeration-types"></a>Tipos de enumeración de LA API del servidor HTTP versión 2.0
 

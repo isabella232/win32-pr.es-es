@@ -4,7 +4,7 @@ description: Posibles marcas de bits de estado general del producto.
 ms.assetid: BF2E6506-E76A-4785-8E91-99937B413548
 keywords:
 - MPSTATUS_FLAG enumeración heredada de Windows environment
-- PMPSTATUS_FLAG puntero de enumeración heredados Windows environment
+- PMPSTATUS_FLAG puntero de enumeración Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d850f0e8de9a3b0ed18a1a1353dfdef40d41bcb1ce4d17265ec245e82ba73f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c7175980c09c63938be04626091c31b53335756
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118747039"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263431"
 ---
 # <a name="mpstatus_flag-enumeration"></a>Enumeración \_ MPSTATUS FLAG
 
 Posibles marcas de bits de estado general del producto.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -112,7 +112,7 @@ Pasos manuales pendientes debido a una acción de amenaza.
 <span id="MP_STATUS_FLAG_DUE_AV_SIGNATURE"></span><span id="mp_status_flag_due_av_signature"></span>**MARCA DE \_ ESTADO DE MP DUE AV \_ \_ \_ \_ SIGNATURE**
 </dt> <dd>
 
-Firmas de antivirus no actualizadas.
+Firmas antivirus no actualizadas.
 
 </dd> <dt>
 
@@ -238,7 +238,7 @@ La plataforma está a punto de estar obsoleta
 <span id="MP_STATUS_FLAG_END_OF_LIFE"></span><span id="mp_status_flag_end_of_life"></span>**FIN \_ DEL CICLO DE VIDA DE LA MARCA DE ESTADO DEL \_ \_ \_ \_ MP**
 </dt> <dd>
 
-El final del ciclo de vida de la firma o plataforma es pasado o está pendiente.
+La firma o el final del ciclo de vida de la plataforma han pasado o están pendientes.
 
 </dd> <dt>
 
@@ -260,11 +260,11 @@ Valor máximo posible.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

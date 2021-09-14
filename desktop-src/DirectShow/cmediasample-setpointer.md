@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: af6747eb9ed39a973d795d8701fd9d7afd1b88e9d0b0db577de6a8e963b840bd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 67d9fc5d260cc627919a458593328c36f0de9a94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119634355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266527"
 ---
 # <a name="cmediasamplesetpointer-method"></a>Método CMediaSample.SetPointer
 
@@ -46,7 +46,7 @@ HRESULT SetPointer(
 *Ptr* 
 </dt> <dd>
 
-Puntero a un búfer de memoria asignado por el autor de la llamada, de *tamaño cBytes*.
+Puntero a un búfer de memoria asignado por el autor de la llamada, de tamaño *cBytes*.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Longitud del búfer, en bytes.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método permite al asignador establecer un nuevo puntero para el ejemplo.
 
@@ -78,7 +78,7 @@ Este método no está disponible a través de la [**interfaz IMediaSample.**](/w
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

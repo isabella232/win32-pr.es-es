@@ -9,16 +9,16 @@ keywords:
 - HTTP_URL_CONTEXT tipo HTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 151ef975470ca21c6e82e5bc7bd7bd8b99a70573385375e8552b6660ce78f631
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 681e24c06334a9010287e2084d9d6a04428ca6a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950804"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266276"
 ---
 # <a name="http-server-api-version-10-data-types"></a>Tipos de datos de LA API del servidor HTTP versión 1.0
 
-La API del servidor HTTP usa varios tipos de identificadores de propósito especial declarados en el archivo de encabezado Http.h como enteros de 64 bits sin signo **(ULONGLONG**):
+La API del servidor HTTP usa varios tipos de identificadores de propósito especial declarados en el archivo de encabezado Http.h como enteros de 64 bits sin signo **(ULONGLONG):**
 
 -   IDENTIFICADOR \_ DE CONEXIÓN \_ HTTP
 -   IDENTIFICADOR \_ DE CONEXIÓN HTTP SIN \_ \_ PROCESAR

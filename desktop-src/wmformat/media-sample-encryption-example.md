@@ -20,12 +20,12 @@ keywords:
 - API extendidas de cliente, ejemplos de código
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccab97c5a27518d1a31c8c5cdcdbe0defe897bd2bdd47fee1c709a9192262bc2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a669ab957aa7510cdd57daca798ec3e3ac3bf73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117846572"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267023"
 ---
 # <a name="media-sample-encryption-example"></a>Ejemplo de cifrado de ejemplo de medios
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a148e9edbc1cef42ecc2d1158dd18afcc908cf4d7549912b52f363aaa54cedb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5927aac2fa58322c93a23489a22dc96a1e2a67f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953634"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127266524"
 ---
 # <a name="ctransformfiltercheckconnect-method"></a>Método CTransformFilter.CheckConnect
 
@@ -61,7 +61,7 @@ Puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los [**métodos CTransformInputPin::CheckConnect**](ctransforminputpin-checkconnect.md) y [**CTransformOutputPin::CheckConnect**](ctransformoutputpin-checkconnect.md) llaman a este método durante el proceso de conexión de pin. Este método no hace nada en la clase base. La clase derivada puede invalidarla. Por ejemplo, la clase derivada podría consultar el otro pin para una interfaz determinada.
 
@@ -76,7 +76,7 @@ Los [**métodos CTransformInputPin::CheckConnect**](ctransforminputpin-checkconn
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

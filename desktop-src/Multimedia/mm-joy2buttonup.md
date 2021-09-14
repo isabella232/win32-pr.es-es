@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d7a4f2d23739fc72a6898e2b53fc3e1c330687f7
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371149"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127265964"
 ---
 # <a name="mm_joy2buttonup-message"></a>Mensaje \_ MMMIENTO2BUTTONUP
 
-El **mensaje \_ MMMID2BUTTONUP** notifica a la ventana que ha capturado el botón DE BOTÓN2 que se ha liberado.
+El **mensaje \_ MMIJO2BUTTONUP** notifica a la ventana que ha capturado el botón DE BOTÓN2 que se ha liberado.
 
 
 ```C++
@@ -49,7 +49,7 @@ Identifica el botón que ha cambiado el estado y los botones que se presionan. P
 | Value                                                                                                                                                            | Significado                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 | <span id="JOY_BUTTON1CHG"></span><span id="joy_button1chg"></span><dl> <dt>**\_BUTTON1CHG DE BUTTON1 DE BUTTON1**</dt> </dl> | El primer botón button ha cambiado de estado.<br/>  |
-| <span id="JOY_BUTTON2CHG"></span><span id="joy_button2chg"></span><dl> <dt>**\_BUTTON2CHG DE BUTTON2**</dt> </dl> | El segundo botón button ha cambiado de estado.<br/> |
+| <span id="JOY_BUTTON2CHG"></span><span id="joy_button2chg"></span><dl> <dt>**\_BUTTON2CHG DE BUTTON2 DE BUTTON2**</dt> </dl> | El segundo botón button ha cambiado de estado.<br/> |
 | <span id="JOY_BUTTON3CHG"></span><span id="joy_button3chg"></span><dl> <dt>**\_BUTTON3CHG DE BUTTON3CHG**</dt> </dl> | El tercer botón button ha cambiado de estado.<br/>  |
 | <span id="JOY_BUTTON4CHG"></span><span id="joy_button4chg"></span><dl> <dt>**\_BUTTON4CHG DE BUTTON4CHG**</dt> </dl> | El cuarto botón button ha cambiado de estado.<br/> |
 
@@ -100,7 +100,7 @@ Coordenada y del ángulo con respecto a la esquina superior izquierda del área 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
