@@ -26,12 +26,12 @@ keywords:
 - Asistente para complementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1088d915715be44de092604d626bc24792f6d263a9765a1076ce1afa3f67ef4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13d236c2160c5783f909430e6b49ef2e6361de22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135548"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249573"
 ---
 # <a name="installing-the-online-store-plug-in-wizard"></a>Instalación del Asistente para complementos de la tienda en línea
 
@@ -39,7 +39,7 @@ Para configurar el entorno de desarrollo para crear complementos de tienda en l�
 
 -   Microsoft Visual Studio 2005 o posterior
 -   Reproductor de Windows Media 11 o posterior
--   Windows SDK, que incluye el SDK de Reproductor de Windows Media
+-   Windows SDK, que incluye el SDK Reproductor de Windows Media
 -   Asistente para complementos de tienda en línea
 
 ## <a name="installing-the-wizard"></a>Instalación del asistente
@@ -84,7 +84,7 @@ Siga estos pasos para instalar el Asistente para complementos de la tienda en l�
 
     Cambie `<path to wmpservices directory goes here>` a la ruta de acceso donde se encuentran los archivos del asistente.
 
-    Por ejemplo, supongamos que Visual Studio 2008 y los archivos del asistente están aquí: C: Archivos de programa Sdk de Microsoft Windows asistentes multimedia WMP de ejemplos \\ \\ \\ \\ v7.0. \\ \\ \\ \\ \\ A continuación, el archivo wmpservices.vsz tendría el siguiente aspecto:
+    Por ejemplo, supongamos que tiene Visual Studio 2008 y los archivos del asistente están aquí: C: Archivos de programa Sdk de Microsoft Windows asistentes multimedia WMP de ejemplos \\ \\ \\ \\ v7.0. \\ \\ \\ \\ \\ A continuación, el archivo wmpservices.vsz tendría el siguiente aspecto:
 
     ```
     VSWIZARD 7.0

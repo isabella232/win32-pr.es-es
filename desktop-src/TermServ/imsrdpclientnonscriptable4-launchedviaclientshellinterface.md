@@ -39,12 +39,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bf4b3af34d274ae2ebfc34aed2a4256272daca2365966795de14d6b156562d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d5854a4e75be455035fd9a123418bd486932379
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118607593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068623"
 ---
 # <a name="imsrdpclientnonscriptable4launchedviaclientshellinterface-property"></a>IMsRdpClientNonScriptable4::LaunchedViaClientShellInterface, propiedad
 
@@ -85,11 +85,11 @@ Devuelve **S \_ OK si** se realiza correctamente.
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>   |
-| IID<br/>                      | IMsRdpClientNonScriptable4 se define como f50fa8aa-1c7d-4f59-b15c-a90cae1fcb<br/> |
+| IID<br/>                      | IMsRdpClientNonScriptable4 se define como f50fa8aa-1c7d-4f59-b15c-a90cacae1fcb<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

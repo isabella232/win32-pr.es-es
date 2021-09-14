@@ -6,19 +6,19 @@ keywords:
 - Reproductor de Windows Media en línea, escriba 1 tienda en línea
 - tiendas en línea, escriba 1 tienda en línea
 - tiendas en línea de tipo 1, acerca de
-- Reproductor de Windows Media,tipo 1 tiendas en línea
+- Reproductor de Windows Media, escriba 1 tienda en línea
 - Reproductor de Windows Media en línea, escriba 2 tiendas en línea
 - tiendas en línea, escriba 2 tiendas en línea
 - tiendas en línea de tipo 2, acerca de
 - Reproductor de Windows Media,tipo 2 tiendas en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91bf8ac5b65507117e98424f80d62aab540c585914033c54d663d10e6becd7c9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8210a52e0c531f5043d75ff66a5c7eb46cc3e416
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249614"
 ---
 # <a name="information-common-to-type-1-and-type-2-online-stores"></a>Información común a los almacenes en línea de tipo 1 y 2
 
@@ -46,7 +46,7 @@ En las secciones siguientes se proporciona información que se aplica a las tien
 | [Establecimiento de la tienda en línea inicial](setting-the-initial-online-store.md)                                               | Describe las características disponibles para especificar la primera tienda en línea que el usuario ve después de instalar Reproductor de Windows Media.  |
 | [Co-Branding Online Stores](co-branding-online-stores.md)                                                             | Describe cómo los fabricantes de equipos pueden crear una marca con proveedores de tiendas en línea.                                                |
 | [Consideraciones para los mercados internacionales](considerations-for-international-markets.md)                               | Describe las consideraciones para las tiendas en línea que sirven a mercados internacionales.                                                  |
-| [Configuración de parámetros de la línea de comandos para almacenes en línea](setup-command-line-parameters-for-online-stores.md)                 | Proporciona información sobre los parámetros de línea de comandos para Reproductor de Windows Media instalación.                                            |
+| [Configuración de parámetros de línea de comandos para almacenes en línea](setup-command-line-parameters-for-online-stores.md)                 | Proporciona información sobre los parámetros de línea de comandos para Reproductor de Windows Media instalación.                                            |
 | [Tiendas en línea exclusivas](exclusive-online-stores.md)                                                                 | Describe cómo insertar el control Player en una aplicación y tener solo una tienda en línea disponible para el usuario.             |
 | [Tiendas privadas en línea](private-online-stores.md)                                                                     | Proporciona información sobre las entradas del Registro necesarias para las tiendas en línea privadas.                                           |
 | [Documento ServiceInfo](serviceinfo-document.md)                                                                       | Proporciona información sobre un documento XML que deben proporcionar los almacenes en línea.                                                   |

@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c918065515322696a33114d2d9b09b7b72d12eb6b74e120a7963835a23321fe5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a339a1549b76f61499b7192a48edc7c1b86a6c67
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119002483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068668"
 ---
 # <a name="emailaction-object"></a>Objeto EmailAction
 
@@ -28,7 +28,7 @@ ms.locfileid: "119002483"
 
 Objeto de scripting que representa una acción que envía un mensaje de correo electrónico.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto EmailAction** tiene estos tipos de miembros:
 
@@ -42,28 +42,28 @@ El **objeto EmailAction** tiene estas propiedades.
 
 | Propiedad                                                    | Tipo de acceso           | Descripción                                                                                               |
 |:------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------|
-| [**Datos adjuntos**](emailaction-attachments.md)<br/>   | Lectura/escritura<br/> | Obtiene o establece una matriz de datos adjuntos que se envía con el mensaje de correo electrónico.<br/>                      |
-| [**CCO**](emailaction-bcc.md)<br/>                   | Lectura/escritura<br/> | Obtiene o establece la dirección de correo electrónico o las direcciones que desea que se acomenten en el mensaje de correo electrónico.<br/>         |
-| [**Cuerpo**](emailaction-body.md)<br/>                 | Lectura/escritura<br/> | Obtiene o establece el cuerpo del correo electrónico que contiene el mensaje de correo electrónico.<br/>                            |
-| [**Cc**](emailaction-cc.md)<br/>                     | Lectura/escritura<br/> | Obtiene o establece la dirección de correo electrónico o las direcciones que desea cc en el mensaje de correo electrónico.<br/>          |
-| [**De**](emailaction-from.md)<br/>                 | Lectura/escritura<br/> | Obtiene o establece la dirección de correo electrónico desde la que desea enviar el correo electrónico.<br/>                           |
-| [**HeaderFields**](emailaction-headerfields.md)<br/> | Lectura/escritura<br/> | Obtiene o establece la información de encabezado del correo electrónico que desea enviar.<br/>                        |
-| [**Id**](action-id.md)<br/>                          | Lectura/escritura<br/> | Se hereda del [**objeto Action.**](action.md) Obtiene o establece el identificador de la acción.<br/> |
-| [**ReplyTo**](emailaction-replyto.md)<br/>           | Lectura/escritura<br/> | Obtiene o establece la dirección de correo electrónico a la que desea responder.<br/>                                      |
-| [**Servidor**](emailaction-server.md)<br/>             | Lectura/escritura<br/> | Obtiene o establece el nombre del servidor desde el que se usa para enviar correo electrónico.<br/>                           |
-| [**Asunto**](emailaction-subject.md)<br/>           | Lectura/escritura<br/> | Obtiene o establece el asunto del mensaje de correo electrónico.<br/>                                                 |
-| [**Para**](emailaction-to.md)<br/>                     | Lectura/escritura<br/> | Obtiene o establece la dirección de correo electrónico o las direcciones a las que desea enviar el correo electrónico.<br/>                |
-| [**Tipo**](/windows/win32/api/taskschd/nf-taskschd-iaction-get_type)<br/>                     | Solo lectura<br/>  | Se hereda del [**objeto**](action.md) Action. Obtiene el tipo de la acción.<br/>                   |
+| [**Datos adjuntos**](emailaction-attachments.md)<br/>   | Lectura y escritura<br/> | Obtiene o establece una matriz de datos adjuntos que se envían con el mensaje de correo electrónico.<br/>                      |
+| [**Bcc**](emailaction-bcc.md)<br/>                   | Lectura y escritura<br/> | Obtiene o establece la dirección de correo electrónico o las direcciones que desea que se oculte en el mensaje de correo electrónico.<br/>         |
+| [**Body**](emailaction-body.md)<br/>                 | Lectura y escritura<br/> | Obtiene o establece el cuerpo del correo electrónico que contiene el mensaje de correo electrónico.<br/>                            |
+| [**Cc**](emailaction-cc.md)<br/>                     | Lectura y escritura<br/> | Obtiene o establece la dirección de correo electrónico o las direcciones que desea cc en el mensaje de correo electrónico.<br/>          |
+| [**De**](emailaction-from.md)<br/>                 | Lectura y escritura<br/> | Obtiene o establece la dirección de correo electrónico desde la que desea enviar el correo electrónico.<br/>                           |
+| [**HeaderFields**](emailaction-headerfields.md)<br/> | Lectura y escritura<br/> | Obtiene o establece la información de encabezado en el correo electrónico que desea enviar.<br/>                        |
+| [**Id**](action-id.md)<br/>                          | Lectura y escritura<br/> | Se hereda del [**objeto Action.**](action.md) Obtiene o establece el identificador de la acción.<br/> |
+| [**ReplyTo**](emailaction-replyto.md)<br/>           | Lectura y escritura<br/> | Obtiene o establece la dirección de correo electrónico a la que desea responder.<br/>                                      |
+| [**Servidor**](emailaction-server.md)<br/>             | Lectura y escritura<br/> | Obtiene o establece el nombre del servidor desde el que se usa para enviar correo electrónico.<br/>                           |
+| [**Asunto**](emailaction-subject.md)<br/>           | Lectura y escritura<br/> | Obtiene o establece el asunto del mensaje de correo electrónico.<br/>                                                 |
+| [**En**](emailaction-to.md)<br/>                     | Lectura y escritura<br/> | Obtiene o establece la dirección de correo electrónico o las direcciones a las que desea enviar el correo electrónico.<br/>                |
+| [**Tipo**](/windows/win32/api/taskschd/nf-taskschd-iaction-get_type)<br/>                     | Solo lectura<br/>  | Se hereda del [**objeto Action.**](action.md) Obtiene el tipo de la acción.<br/>                   |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La acción de correo electrónico debe tener un valor válido para las propiedades [**Server**](emailaction-server.md), [**From**](emailaction-from.md)y [**To**](emailaction-to.md) o [**Cc**](emailaction-cc.md) para que la tarea se registre y se ejecute correctamente.
 
-Al leer o escribir su propio XML para una tarea, se especifica una acción de correo electrónico mediante el [**elemento SendEmail**](taskschedulerschema-sendemail-actiongroup-element.md) del esquema Programador de tareas datos.
+Al leer o escribir su propio XML para una tarea, se especifica una acción de correo electrónico mediante el [**elemento SendEmail**](taskschedulerschema-sendemail-actiongroup-element.md) del Programador de tareas esquema.
 
 ## <a name="examples"></a>Ejemplos
 

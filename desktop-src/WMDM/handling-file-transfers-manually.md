@@ -11,18 +11,18 @@ keywords:
 - transferencias de archivos manuales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b91877cf6c041ef4dfe869097863075d44034b59e980c4f1d12467342308d4f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a2bf12404e8cd83b6f0c0e4f1c8ec8b0b7bda205
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119957425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068519"
 ---
 # <a name="handling-file-transfers-manually"></a>Controlar las transferencias de archivos manualmente
 
 La aplicación puede implementar la [**interfaz IWMDMOperation para**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation) administrar parte del proceso de lectura o escritura. En una lectura desde el dispositivo, la implementación permite que la aplicación reciba bloques de datos sin procesar de un archivo de dispositivo. En un dispositivo de escritura, permite a la aplicación enviar bloques de datos sin procesar a un archivo en el dispositivo.
 
-En las operaciones de lectura y escritura, el método [**IWMDMOperation::TransferObjectData**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-transferobjectdata) pasa los datos entre el equipo y el dispositivo. Para conocer la dirección de la transferencia de datos, la aplicación debe establecer una marca cuando Windows Media Administrador de dispositivos a [**BeginRead**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-beginread) [**o BeginWrite**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-beginwrite). Cuando se [**llama al método End,**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-end) la aplicación debe restablecer esta marca.
+En las operaciones de lectura y escritura, el método [**IWMDMOperation::TransferObjectData**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-transferobjectdata) pasa los datos entre el equipo y el dispositivo. Para saber la dirección de la transferencia de datos, la aplicación debe establecer una marca cuando Windows Media Administrador de dispositivos a [**BeginRead**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-beginread) [**o BeginWrite**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-beginwrite). Cuando se [**llama al método End,**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-end) la aplicación debe restablecer esta marca.
 
 > [!Note]  
 > Si el proveedor de servicios y el dispositivo implementan correctamente [**IMDSPObject2**](/windows/desktop/api/mswmdm/nn-mswmdm-imdspobject2), primero llamará al método [IWMDMOperation3::TransferObjectDataOnClearChannel](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation3-transferobjectdataonclearchannel) de la aplicación, si se implementa. Este método es una manera más eficaz de transferir datos. **TransferObjectDataOnClearChannel** se controla de la misma manera que **TransferObjectData,** salvo que los datos nunca se cifran y no tienen valores MAC que comprobar.
@@ -47,7 +47,7 @@ Al leer un archivo desde un dispositivo, Windows Media Administrador de disposit
 
 **Escritura en un dispositivo**
 
-Al escribir un archivo en el dispositivo, Windows Media Administrador de dispositivos llama a los siguientes métodos **IWMDMOperation** en orden:
+Al escribir un archivo en el dispositivo, Windows Media Administrador de dispositivos llama a los métodos **IWMDMOperation** siguientes en orden:
 
 -   [**GetObjectName**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-getobjectname) Se llama para permitir que la aplicación especifique un nombre para el nuevo almacenamiento. Solo se llama a este método si la aplicación no especificó un nombre en el **método Insert.**
 -   [**GetObjectAttributes**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation-getobjectattributes) Se llama para permitir que la aplicación especifique atributos para el nuevo almacenamiento en el dispositivo.

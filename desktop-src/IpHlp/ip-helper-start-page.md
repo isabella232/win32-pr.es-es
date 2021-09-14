@@ -1,21 +1,21 @@
 ---
-description: La API del asistente de protocolos de Internet (asistente de IP) permite la recuperación y modificación de las opciones de configuración de red para el equipo local.
+description: La API del asistente de protocolos de Internet (asistente de IP) permite la recuperación y modificación de los valores de configuración de red para el equipo local.
 ms.assetid: 4896a9f8-0486-4380-bf49-d1c9ef114acc
 title: Asistente de IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6262543d1644fbe62858f2c90064f42d2c1348b2f3c56033813f453d33470ce3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1d50153e1ad890063f33a473058f6a850a9f171
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146778"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272519"
 ---
 # <a name="ip-helper"></a>Asistente de IP
 
 ## <a name="purpose"></a>Propósito
 
-La API del asistente de protocolos de Internet (asistente de IP) permite la recuperación y modificación de las opciones de configuración de red para el equipo local.
+La API del asistente de protocolos de Internet (asistente de IP) permite la recuperación y modificación de los valores de configuración de red para el equipo local.
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
@@ -23,11 +23,11 @@ La API del asistente de IP es aplicable en cualquier entorno informático en el 
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-La API del asistente de IP está diseñada para que la usen los programadores de C/C++. Los programadores también deben estar familiarizados con los Windows de red y de redes TCP/IP.
+La API del asistente de IP está diseñada para su uso por los programadores de C/C++. Los programadores también deben estar familiarizados con los Windows de red y de redes TCP/IP.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-La API del asistente de IP se puede usar en todas Windows plataformas. No todos los sistemas operativos admiten todas las funciones. Cuando existen ciertas implementaciones o funcionalidades de Windows Sockets 2, se anotan claramente en la documentación. Si se llama a una función del asistente de IP en una plataforma que no admite la función, se devuelve ERROR \_ NOT \_ SUPPORTED. Para obtener información más específica sobre qué sistemas operativos admiten una función determinada, consulte las secciones Requisitos de la documentación.
+La API del asistente de IP se puede usar en todas Windows plataformas. No todos los sistemas operativos admiten todas las funciones. Cuando existen ciertas implementaciones o funcionalidades de Windows sockets 2 de la plataforma, se anotan claramente en la documentación. Si se llama a una función auxiliar de IP en una plataforma que no admite la función, se devuelve ERROR \_ NOT \_ SUPPORTED. Para obtener información más específica sobre qué sistemas operativos admiten una función determinada, consulte las secciones Requisitos de la documentación.
 
 ## <a name="in-this-section"></a>En esta sección
 

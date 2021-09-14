@@ -1,6 +1,6 @@
 ---
 title: Win32_TSVirtualDesktopServerSettings clase
-description: Contiene información de configuración para un servidor Escritorio remoto Host de virtualización de Escritorio remoto ( Host de virtualización de Escritorio remoto).
+description: Contiene información de configuración para un servidor Escritorio remoto Virtualization Host (Host de virtualización de Escritorio remoto).
 ms.assetid: 749018aa-a8aa-433e-985b-40b44ef8aa7f
 ms.tgt_platform: multiple
 keywords:
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f40e7d51ee0c92e50afca023629bb92de9f506b3e47ee9e520aa16c09640375b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c39635aee7b32430ace0ead0e3b007051a3c049d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119137468"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068550"
 ---
 # <a name="win32_tsvirtualdesktopserversettings-class"></a>Clase \_ TSVirtualDesktopServerSettings de Win32
 
-Contiene información de configuración para un servidor Escritorio remoto Host de virtualización de Escritorio remoto ( Host de virtualización de Escritorio remoto).
+Contiene información de configuración para un servidor Escritorio remoto Virtualization Host (Host de virtualización de Escritorio remoto).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -44,7 +44,7 @@ class Win32_TSVirtualDesktopServerSettings
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSVirtualDesktopServerSettings de Win32** tiene estos tipos de miembros:
 
@@ -65,7 +65,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-El número máximo de solicitudes de aprovisionamiento simultáneas permitidas para este servidor de Escritorio virtual.
+Número máximo de solicitudes de aprovisionamiento simultáneas permitidas para este servidor de Escritorio virtual.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Nombre distintivo completo del agente de sesión para el servidor host de virtua
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                             |
-| Espacio de nombres<br/>                | \\TerminalServices \\ cimv2 raíz<br/>                                                   |
+| Espacio de nombres<br/>                | \\TerminalServices cimv2 \\ raíz<br/>                                                   |
 | MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 

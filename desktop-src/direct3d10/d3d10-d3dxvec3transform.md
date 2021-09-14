@@ -14,11 +14,11 @@ api_type:
 api_location:
 - D3DX10Math.h
 ms.openlocfilehash: 9b5cd69ce603f56e4837818cac6ee18fe3ab1e53
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063846"
 ---
 # <a name="d3dxvec3transform-function-d3dx10mathh"></a>Función D3DXVec3Transform (D3DX10Math.h)
 
@@ -74,9 +74,9 @@ Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
 Puntero a una estructura D3DXVECTOR4 que es el vector transformado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función transforma el vector, pV (x, y, z, 1), por la matriz pM.
+Esta función transforma el vector, pV (x, y, z, 1), por el pM de matriz.
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec3Transform se puede usar como parámetro para otra función.
 

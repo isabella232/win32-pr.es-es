@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: b50c6680a52ef64e46e8dace325f124362e4efa79576e0d386c445a3766bf943
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5b3e763d87503f9ca71911ad40ccf3c6ae9ca722
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119729915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063835"
 ---
 # <a name="d3dxvec3transformcoord-function-d3dx10mathh"></a>Función D3DXVec3TransformCoord (D3DX10Math.h)
 
@@ -74,7 +74,7 @@ Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
 Puntero a una estructura D3DXVECTOR3 que es el vector transformado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función transforma el vector, pV (x, y, z, 1), por la matriz, pM, proyectando el resultado de nuevo en w=1.
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: bf73ad8f063162db927c32737a7608614cd2c8d4456978d59be4dc6947bb54dd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 49a1fc5be13af304cfd21173e856db87c7768fa1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119912005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069392"
 ---
 # <a name="netauditread"></a>NetAuditRead
 

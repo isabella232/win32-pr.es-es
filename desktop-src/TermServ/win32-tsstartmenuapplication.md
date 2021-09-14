@@ -1,6 +1,6 @@
 ---
 title: Win32_TSStartMenuApplication clase
-description: Describe las aplicaciones que se encuentran en el menú Inicio de un Escritorio remoto host de sesión de Escritorio remoto.
+description: Describe las aplicaciones que se encuentran en la menú Inicio de un Escritorio remoto host de sesión de escritorio remoto.
 ms.assetid: 88b412b8-139f-4266-b7d8-c34f93940a72
 ms.tgt_platform: multiple
 keywords:
@@ -26,16 +26,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 32fa825963f76323512cfafc11e3e7471212bca4258094469c2a5d733b23168a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0dae7610381745f6ced2a01e76f8545b33d1205
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119137488"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068557"
 ---
 # <a name="win32_tsstartmenuapplication-class"></a>Clase TSStartMenuApplication de Win32 \_
 
-Describe las aplicaciones que se encuentran en el menú Inicio de un Escritorio remoto host de sesión de Escritorio remoto.
+Describe las aplicaciones que se encuentran en la menú Inicio de un Escritorio remoto host de sesión de escritorio remoto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ class Win32_TSStartMenuApplication : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSStartMenuApplication de Win32** tiene estos tipos de miembros:
 
@@ -172,7 +172,7 @@ Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystem
 
 </dd> <dt>
 
-**Ruta de acceso**
+**Path**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -277,11 +277,11 @@ Ruta de acceso virtual de la aplicación. Esto incluye variables de entorno del 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe ser miembro del grupo Administradores para usar esta clase.
 
-Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB

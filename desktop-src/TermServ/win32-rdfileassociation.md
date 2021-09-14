@@ -1,11 +1,11 @@
 ---
-title: Win32_RDFileAssociation (clase)
-description: Representa una asociación de tipo de archivo para RemoteApp.
+title: Win32_RDFileAssociation clase
+description: Representa una asociación de tipo de archivo para remoteApp.
 ms.assetid: 9ecf6fa5-36f0-4b37-9d59-781b41c1d90c
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDFileAssociation clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDFileAssociation de clase, se describe
+- Win32_RDFileAssociation clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -23,15 +23,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ac64cd38bdad748c64fe6f52cb7a6da8d8220cba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249740"
 ---
-# <a name="win32_rdfileassociation-class"></a>\_Clase Win32 RDFileAssociation
+# <a name="win32_rdfileassociation-class"></a>Clase \_ RDFileAssociation de Win32
 
-Representa una asociación de tipo de archivo para RemoteApp.
+Representa una asociación de tipo de archivo para remoteApp.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -49,7 +49,7 @@ class Win32_RDFileAssociation
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ RDFileAssociation de Win32** tiene estos tipos de miembros:
 
@@ -70,23 +70,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Nombre de la extensión de nombre de archivo, por ejemplo,. txt.
+Nombre de la extensión de nombre de archivo, por ejemplo, .txt.
 
 </dd> <dt>
 
-**IconContents**
+**IconoContents**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Contenido del icono para esta asociación de archivo.
+Contenido del icono de esta asociación de archivos.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso del archivo al icono de esta asociación de archivo.
+Ruta de acceso del archivo al icono de esta asociación de archivos.
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La sugerencia para ayudar a abrir documentos con esta asociación de archivo.
+Sugerencia para ayudar a abrir documentos con esta asociación de archivos.
 
 </dd> </dl>
 
@@ -150,8 +150,8 @@ La sugerencia para ayudar a abrir documentos con esta asociación de archivo.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ cimv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TsAllow. mof</dt> </dl>  |
+| Espacio de nombres<br/>                | \\TerminalServices cimv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TsAllow.mof</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 

@@ -1,17 +1,17 @@
 ---
-title: Ejemplo de código de C/C++ crear una tarea mediante NewWorkItem
+title: Ejemplo de código de C/C++ creación de una tarea mediante NewWorkItem
 description: En este ejemplo se crea una sola tarea.
 ms.assetid: a96bae5d-fa36-41ab-8baf-144683fc6b52
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c8573c5d5d097bdbe58c14329a5029046eecfae8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068670"
 ---
-# <a name="cc-code-example-creating-a-task-using-newworkitem"></a>Ejemplo de código de C/C++: crear una tarea mediante NewWorkItem
+# <a name="cc-code-example-creating-a-task-using-newworkitem"></a>Ejemplo de código de C/C++: Crear una tarea mediante NewWorkItem
 
 En este ejemplo se crea una sola tarea.
 
@@ -122,12 +122,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: En WMI, puede definir datos de rendimiento estadísticos basados en datos de clases de rendimiento con formato derivadas de Win32 \_ PerfFormattedData. Las estadísticas disponibles son el promedio, el mínimo, el máximo, el intervalo y la varianza, tal como se define en los tipos de contador estadísticos.
+description: En WMI, puede definir datos estadísticos de rendimiento basados en datos en clases de rendimiento con formato derivadas de \_ Win32 PerfFormattedData. Las estadísticas disponibles son promedio, mínimo, máximo, intervalo y varianza, tal como se define en Tipos de contadores estadísticos.
 ms.assetid: 5552d5fc-df8c-4353-8593-c106ee19dc84
 ms.tgt_platform: multiple
-title: Obtención de datos de rendimiento estadísticos
+title: Obtener datos estadísticos de rendimiento
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -11,39 +11,39 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 65892608e642b675440d81127ef9afa0badd1d36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063959"
 ---
-# <a name="obtaining-statistical-performance-data"></a>Obtención de datos de rendimiento estadísticos
+# <a name="obtaining-statistical-performance-data"></a>Obtener datos estadísticos de rendimiento
 
-En WMI, puede definir datos de rendimiento estadísticos basados en datos de clases de rendimiento con formato derivadas de [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata). Las estadísticas disponibles son el promedio, el mínimo, el máximo, el intervalo y la varianza, tal como se define en los [tipos de contador estadísticos](statistical-counter-types.md).
+En WMI, puede definir datos estadísticos de rendimiento basados en datos en clases de rendimiento con formato derivadas de [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata). Las estadísticas disponibles son promedio, mínimo, máximo, intervalo y varianza, tal y como se define en [Tipos de contadores estadísticos](statistical-counter-types.md).
 
-La lista siguiente incluye los tipos de contador estadísticos especiales:
+En la lista siguiente se incluyen los tipos de contadores estadísticos especiales:
 
--   [media de COOKER \_](cooker-average.md)
--   [COOKER \_ mín.](cooker-min.md)
--   [COOKER \_ máx.](cooker-max.md)
--   [\_intervalo Cooker](cooker-range.md)
--   [varianza de COOKER \_](cooker-variance.md)
+-   [COOKER \_ AVERAGE](cooker-average.md)
+-   [COOKER \_ MIN](cooker-min.md)
+-   [COOKER \_ MAX](cooker-max.md)
+-   [INTERVALO DE LA \_ COCINA](cooker-range.md)
+-   [VARIANZA DE LA \_ COCINA](cooker-variance.md)
 
-En los siguientes ejemplos se muestra cómo:
+En los ejemplos siguientes se muestra cómo:
 
 -   Cree un archivo MOF que defina una clase de datos calculados.
 -   Escriba un script que cree una instancia de la clase y actualice periódicamente los datos de la instancia con los valores estadísticos recalculados.
 
 ## <a name="mof-file"></a>Archivo MOF
 
-En el siguiente ejemplo de código MOF se crea una nueva clase de datos calculados denominada **Win32 \_ PerfFormattedData \_ AvailableMBytes**. Esta clase contiene datos de la propiedad **AvailableMBytes** de la clase sin formato [**Win32 PerfRawData de rendimiento de \_ \_ \_ memoria**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data). La **clase \_ \_ AvailableBytes de Win32 PerfFormattedData** define las propiedades **Average**, **min**, **Max**, **Range** y **Variance**.
+En el ejemplo de código MOF siguiente se crea una nueva clase de datos calculada denominada **Win32 \_ PerfFormattedData \_ AvailableMBytes**. Esta clase contiene datos de la **propiedad AvailableMBytes** de la clase sin formato [**\_ Win32 PerfRawData \_ PerfOS \_ Memory**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data). La **clase \_ PerfFormattedData \_ AvailableBytes de Win32** define las propiedades **Average**, **Min,** **Max,** **Range** y **Variance**.
 
-El archivo MOF utiliza los [**calificadores de propiedad para las clases de contador de rendimiento con formato**](property-qualifiers-for-performance-counter-classes.md) para definir el origen de datos de la propiedad y la fórmula de cálculo.
+El archivo MOF usa los calificadores de propiedad para [**las clases de contador**](property-qualifiers-for-performance-counter-classes.md) de rendimiento con formato para definir el origen de datos de propiedad y la fórmula de cálculo.
 
--   La propiedad **Average** obtiene datos sin procesar de la [**\_ \_ \_ memoria PerfRawData de rendimiento de Win32**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data).**Propiedad AvailableMBytes** .
--   El **calificador** de contador para la propiedad **Average** especifica el origen de datos sin procesar.
--   El calificador **CookingType** especifica la fórmula [Cooker \_ min](cooker-min.md) para calcular los datos.
--   El calificador **SampleWindow** especifica el número de muestras que se deben llevar a cabo antes de realizar el cálculo.
+-   La **propiedad Average** obtiene datos sin procesar de la memoria [**\_ PerfRawData \_ perfOS \_ de Win32.**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data)**Propiedad AvailableMBytes.**
+-   El **calificador Counter** para **la propiedad Average** especifica el origen de datos sin procesar.
+-   El **calificador CookType** especifica la fórmula [COOKER \_ MIN](cooker-min.md) para calcular los datos.
+-   El **calificador SampleWindow** especifica el número de muestras que se deben tomar antes de realizar el cálculo.
 
 
 ```mof
@@ -180,10 +180,10 @@ class Win32_PerfFormattedData_MemoryStatistics
 
 ## <a name="script"></a>Script
 
-En el siguiente ejemplo de código de script se obtienen estadísticas sobre la memoria disponible, en megabytes, con el MOF creado previamente. El script utiliza el objeto de scripting de [**SWbemRefresher**](swbemrefresher.md) para crear un actualizador que contenga una instancia de la clase Statistics que crea el archivo MOF, que es **Win32 \_ PerfFormattedData \_ MemoryStatistics**. Para obtener más información sobre el uso de scripts, vea [actualizar datos WMI en scripts](refreshing-wmi-data-in-scripts.md). Si trabaja en C++, vea [obtener acceso a los datos de rendimiento en c++](accessing-performance-data-in-c--.md).
+En el siguiente ejemplo de código de script se obtienen estadísticas sobre la memoria disponible, en megabytes, mediante el MOF creado anteriormente. El script usa el objeto de scripting [**SWbemRefresher**](swbemrefresher.md) para crear un actualizador que contiene una instancia de la clase de estadísticas que crea el archivo MOF, que es **\_ Win32 PerfFormattedData \_ MemoryStatistics.** Para obtener más información sobre el uso de scripts, vea [Actualizar datos WMI en scripts](refreshing-wmi-data-in-scripts.md). Si trabaja en C++, vea [Acceso a datos de rendimiento en C++.](accessing-performance-data-in-c--.md)
 
 > [!Note]  
-> Se debe llamar a [**SWbemRefreshableItem. Object**](swbemrefreshableitem-object.md) después de obtener el elemento de la llamada a [**SWbemRefresher. Add**](swbemrefresher-add.md) o se producirá un error en el script. Se debe llamar a [**SWbemRefresher. Refresh**](swbemrefresher-refresh.md) antes de escribir el bucle para obtener los valores de línea de base, o bien las propiedades estadísticas son cero (0) en el primer paso.
+> [**Se debe llamar a SWbemRefreshableItem.Object**](swbemrefreshableitem-object.md) después de obtener el elemento de la llamada a [**SWbemRefresher.Add**](swbemrefresher-add.md) o se producirá un error en el script. [**Se debe llamar a SWbemRefresher.Refresh**](swbemrefresher-refresh.md) antes de entrar en el bucle para obtener valores de línea base, o bien las propiedades estadísticas son cero (0) en el primer paso.
 
  
 
@@ -231,15 +231,15 @@ Next
 
 
 
-## <a name="running-the-script"></a>Ejecutar el script
+## <a name="running-the-script"></a>Ejecución del script
 
 En el procedimiento siguiente se describe cómo ejecutar el ejemplo.
 
 **Para ejecutar el script de ejemplo**
 
 1.  Copie el código MOF y el script en los archivos del equipo.
-2.  Asigne a la extensión. mof del archivo MOF y el archivo de script la descripción. vbs.
-3.  En la línea de comandos, cambie al directorio donde se almacenan los archivos y ejecute [**MOFCOMP**](mofcomp.md) en el archivo MOF. Por ejemplo, si se denomina el archivo *CalculatedData. mof*, el comando es **MOFCOMP** *CalculatedData. mof*
+2.  Dé al archivo MOF una extensión .mof y al archivo de script una descripción de .vbs.
+3.  En la línea de comandos, cambie al directorio donde se almacenan los archivos y ejecute [**Mofcomp**](mofcomp.md) en el archivo MOF. Por ejemplo, si se llama al *archivo CalculatedData.mof*, el comando es **Mofcomp** *CalculatedData.mof.*
 4.  Ejecute el script.
 
 ## <a name="related-topics"></a>Temas relacionados
@@ -249,10 +249,10 @@ En el procedimiento siguiente se describe cómo ejecutar el ejemplo.
 [Supervisión de datos de rendimiento](monitoring-performance-data.md)
 </dt> <dt>
 
-[Obtener acceso a las clases de rendimiento preinstaladas de WMI](accessing-wmi-preinstalled-performance-classes.md)
+[Acceso a clases de rendimiento preinstaladas de WMI](accessing-wmi-preinstalled-performance-classes.md)
 </dt> <dt>
 
-[**Calificadores de propiedad para las clases de contador de rendimiento con formato**](property-qualifiers-for-performance-counter-classes.md)
+[**Calificadores de propiedad para clases de contadores de rendimiento con formato**](property-qualifiers-for-performance-counter-classes.md)
 </dt> <dt>
 
 [Tipos de contadores estadísticos](statistical-counter-types.md)

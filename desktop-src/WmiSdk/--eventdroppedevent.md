@@ -18,12 +18,12 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 695381a3471dcc744cae10622ee9e7935b2770941a770bd0e4e4e93e591a9220
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e9f68328a3c5c455c98e85a65d53156da6eeada
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063963"
 ---
 # <a name="__eventdroppedevent-class"></a>\_\_EventDroppedEvent (clase)
 
@@ -43,7 +43,7 @@ class __EventDroppedEvent : __SystemEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **\_ \_ clase EventDroppedEvent** tiene estos tipos de miembros:
 
@@ -81,7 +81,7 @@ Referencia a una instancia de [**\_ \_ EventConsumer que**](--eventconsumer.md) 
 
 </dd> <dt>
 
-**\_DESCRIPTOR DE SEGURIDAD**
+**DESCRIPTOR \_ DE SEGURIDAD**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **matriz uint8**
@@ -109,7 +109,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **\_ \_ clase EventDroppedEvent** se deriva de [**\_ \_ SystemEvent**](--systemevent.md).
 
@@ -117,7 +117,7 @@ La **\_ \_ clase EventDroppedEvent** se deriva de [**\_ \_ SystemEvent**](--syst
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -125,7 +125,7 @@ La **\_ \_ clase EventDroppedEvent** se deriva de [**\_ \_ SystemEvent**](--syst
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

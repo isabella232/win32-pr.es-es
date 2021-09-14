@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: bfe65fe4033397fd5885eceb3bf0d2ac9ce9aa9b487a84ab7611cb253d979220
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ced0f32d45531a1220f7aae9fe0e660648e5d1bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250412"
 ---
 # <a name="sslgetproviderproperty-function"></a>Función SslGetProviderProperty
 
@@ -47,7 +47,7 @@ SECURITY_STATUS WINAPI SslGetProviderProperty(
 *hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador del proveedor [*Capa de sockets seguros protocolo*](/windows/desktop/SecGloss/s-gly) de acceso (SSL) para el que se va a recuperar la propiedad .
+Identificador del proveedor [*de Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo (SSL) para el que se va a recuperar la propiedad .
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ El llamador de la función debe liberar este búfer llamando a la [**función Ss
 
 </dd> <dt>
 
-*output* \[ out\]
+*pwOutput* \[ out\]
 </dt> <dd>
 
 Tamaño, en bytes, del *búfer pbOutput.*
@@ -79,7 +79,7 @@ Tamaño, en bytes, del *búfer pbOutput.*
 
 Dirección de un puntero **VOID** que recibe información de estado de enumeración que se usa en llamadas posteriores a esta función. Esta información solo tiene significado para el proveedor SSL y es opaca para el autor de la llamada. El proveedor SSL usa esta información para determinar qué elemento es el siguiente en la enumeración . Si la variable a la que apunta este parámetro **contiene NULL,** la enumeración se inicia desde el principio.
 
-El llamador de la función debe liberar esta memoria mediante una llamada a la [**función SslFreeBuffer.**](sslfreebuffer.md)
+El autor de la llamada de la función debe liberar esta memoria llamando a la [**función SslFreeBuffer.**](sslfreebuffer.md)
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 19e33f9f-a9c0-44db-becf-9af3895eb182
 title: Uso de la sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d78b41e8b3d8017febe7745207b02c3314d8f1b7a7a64a91ae89b8daccff46d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6a1e4d1970ea9e311bd44a9e53e006e488661fcb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119660885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068902"
 ---
 # <a name="using-synchronization"></a>Uso de la sincronización
 

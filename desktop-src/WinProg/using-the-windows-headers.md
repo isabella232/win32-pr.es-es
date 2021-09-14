@@ -1,6 +1,6 @@
 ---
 title: Uso de los Windows encabezados
-description: Use los Windows de encabezado para crear aplicaciones que usen la API Windows.
+description: Use los Windows de encabezado para crear aplicaciones que usen Windows API.
 ms.assetid: a4def563-8ddc-4630-ae8a-86c07cf98374
 keywords:
 - Windows API, archivos de encabezado
@@ -12,16 +12,16 @@ keywords:
 - WIN32_LEAN_AND_MEAN
 ms.topic: article
 ms.date: 01/22/2020
-ms.openlocfilehash: 886c5601683cc03fb2486f8be3b69f31c4619b721276babbc2c3e31e28c0a022
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d27b14a6e545db9a9a38c205012b149942adf7f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119643595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068316"
 ---
 # <a name="using-the-windows-headers"></a>Uso de los Windows encabezados
 
-Los archivos de encabezado de Windows API permiten crear aplicaciones de 32 y 64 bits. Incluyen declaraciones para las versiones Unicode y ANSI de la API. Para obtener más información, vea [Unicode en la API Windows](/windows/desktop/Intl/unicode-in-the-windows-api). Usan tipos [de datos](windows-data-types.md) que permiten compilar versiones de 32 y 64 bits de la aplicación desde una sola base de código fuente. Para obtener más información, vea [Getting Ready for 64-bit Windows](/windows/desktop/WinProg64/getting-ready-for-64-bit-windows). Entre las características adicionales [se incluyen anotaciones de encabezado y](header-annotations.md) comprobación de tipos [STRICT.](strict-type-checking.md)
+Los archivos de encabezado de Windows API permiten crear aplicaciones de 32 y 64 bits. Incluyen declaraciones para las versiones Unicode y ANSI de la API. Para obtener más información, [vea Unicode en la API Windows .](/windows/desktop/Intl/unicode-in-the-windows-api) Usan tipos [de datos](windows-data-types.md) que permiten compilar versiones de 32 y 64 bits de la aplicación desde una sola base de código fuente. Para obtener más información, vea [Getting Ready for 64-bit Windows](/windows/desktop/WinProg64/getting-ready-for-64-bit-windows). Entre las características adicionales [se incluyen anotaciones de encabezado y](header-annotations.md) comprobación de tipos [STRICT.](strict-type-checking.md)
 
 -   [Visual C++ y los archivos Windows encabezado](#visual-c-and-the-windows-header-files)
 -   [Macros para declaraciones condicionales](#macros-for-conditional-declarations)
@@ -40,7 +40,7 @@ Determinadas funciones que dependen de una versión determinada de Windows se de
 
 Los Windows de encabezado usan macros para indicar qué versiones de Windows admiten muchos elementos de programación. Por lo tanto, debe definir estas macros para usar la nueva funcionalidad introducida en cada versión principal del sistema operativo. (Los archivos de encabezado individuales pueden usar macros diferentes; por lo tanto, si se producen problemas de compilación, compruebe el archivo de encabezado que contiene la definición de definiciones condicionales). Para más información, consulte SdkDdkVer.h.
 
-En la tabla siguiente se describen las macros preferidas que se usan en Windows archivos de encabezado. Si define NTDDI \_ VERSION, también debe definir \_ \_ WINNT win32.
+En la tabla siguiente se describen las macros preferidas que se usan en los Windows de encabezado. Si define NTDDI \_ VERSION, también debe definir \_ \_ WINNT win32.
 
 
 
@@ -72,7 +72,7 @@ En la tabla siguiente se describen las macros preferidas que se usan en Windows 
 
  
 
-En las tablas siguientes se describen otras macros que se usan en Windows archivos de encabezado.
+En las tablas siguientes se describen otras macros usadas en los Windows de encabezado.
 
 
 
@@ -85,7 +85,7 @@ En las tablas siguientes se describen otras macros que se usan en Windows archiv
 | Windows Server 2008                               | **\_ WIN32 \_ WINNT \_ WS08** (0x0600)           |
 | Windows Vista                                     | **\_ WIN32 \_ WINNT \_ VISTA** (0x0600)          |
 | Windows Server 2003 con SP1, Windows XP con SP2 | **\_ WIN32 \_ WINNT \_ WS03** (0x0502)           |
-| Windows Server 2003, Windows XP                   | **\_ WINNT \_ \_ WINXP win32** (0x0501)          |
+| Windows Server 2003, Windows XP                   | **\_ WINNT \_ \_ WINXP WIN32** (0x0501)          |
 
 
 
@@ -113,7 +113,7 @@ En las tablas siguientes se describen otras macros que se usan en Windows archiv
 
 ## <a name="setting-winver-or-_win32_winnt"></a>Configuración de WINVER \_ o WIN32 \_ WINNT
 
-Puede definir estos símbolos mediante la instrucción define en cada archivo de origen o especificando la opción del compilador \# /D admitida por Visual C++.
+Puede definir estos símbolos mediante la instrucción define en cada archivo de origen o especificando la opción del compilador /D admitida \# por Visual C++.
 
 Por ejemplo, para establecer WINVER en el archivo de código fuente, use la siguiente instrucción:
 
@@ -133,7 +133,7 @@ Tenga en cuenta que algunas características introducidas en la versión más re
 
 ## <a name="controlling-structure-packing"></a>Controlar el empaquetado de la estructura
 
-Los proyectos deben compilarse para usar el empaquetado de estructura predeterminado, que actualmente es de 8 bytes porque el tipo entero más grande es de 8 bytes. Esto garantiza que todos los tipos de estructura dentro de los archivos de encabezado se compilan en la aplicación con la misma alineación que Windows API espera. También garantiza que las estructuras con valores de 8 bytes estén correctamente alineadas y no causen errores de alineación en los procesadores que aplican la alineación de datos.
+Los proyectos deben compilarse para usar el empaquetado de estructura predeterminado, que actualmente es de 8 bytes porque el tipo entero más grande es de 8 bytes. Esto garantiza que todos los tipos de estructura dentro de los archivos de encabezado se compilan en la aplicación con la misma alineación que espera Windows API. También garantiza que las estructuras con valores de 8 bytes estén correctamente alineadas y no causen errores de alineación en los procesadores que aplican la alineación de datos.
 
 Para obtener más información, vea [/Zp (alineación de miembros de estructura)](/cpp/build/reference/zp-struct-member-alignment) o [empaquetar](/cpp/preprocessor/pack).
 

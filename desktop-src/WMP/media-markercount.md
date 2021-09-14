@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00206991f81c6a445648a063a37bcc45bf91f647b60317772478142eefd1b20e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c97a874211c0c00ebf9f242887d4314ec490b552
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068393"
 ---
 # <a name="mediamarkercount"></a>Media.markerCount
 
 La **propiedad markerCount** recupera el número de marcadores del elemento multimedia.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player*. *currentMedia*. **markerCount**
 
@@ -33,7 +33,7 @@ La **propiedad markerCount** recupera el número de marcadores del elemento mult
 
 Esta propiedad es un número de solo **lectura** (**long**) que especifica el número de marcadores en el archivo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad devuelve cero si un archivo no tiene marcadores o si el elemento multimedia no es el mismo que el *reproductor*. **currentMedia**.
 
@@ -71,12 +71,12 @@ for (var i = 1; i < mcount + 1; i++){
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

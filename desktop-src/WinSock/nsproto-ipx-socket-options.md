@@ -4,12 +4,12 @@ ms.assetid: 0d5c8299-14d7-41e5-8ff6-f57a732acb26
 title: NSPROTO_IPX sockets (Wsnwlink.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6803b5ab6cdf3002a60726c30648a1ae61bb59430820f049aeb8b011f367e73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 433e1fabed1963c3549d2d5a34fb432cac795e07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118993635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063974"
 ---
 # <a name="nsproto_ipx-socket-options"></a>Opciones de socket IPX de NSPROTO \_
 
@@ -21,22 +21,22 @@ Para enumerar los protocolos y detectar las propiedades admitidas para cada prot
 
 | Opción                      | Obtener | Set | Tipo optval                  | Descripción                                                                                                                                                                                                                                                                     |
 |-----------------------------|-----|-----|------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DIRECCIÓN \_ IPX                | Sí |     | **DATOS DE DIRECCIONES IPX \_ \_**       | Devuelve información sobre el adaptador específico en el que está habilitado IPX.                                                                                                                                                                                                          |
-| NOTIFICACIÓN DE \_ DIRECCIÓN IPX \_        | Sí |     | **DATOS DE DIRECCIONES IPX \_ \_**       | Notifica de forma asincrónica cuando cambia el estado de un adaptador IPX.                                                                                                                                                                                                              |
-| IPX \_ DSTYPE                 | Sí | Sí | DWORD                        | Obtiene o establece el valor del campo de flujo de datos en el encabezado SPX con el que se envían paquetes.                                                                                                                                                                                          |
-| DIRECCIÓN EXTENDIDA DE IPX \_ \_      |     | Sí | DWORD (booleano)              | Habilita la opción de direccionamiento extendido en paquetes IPX.                                                                                                                                                                                                                          |
-| IPX \_ FILTERPTYPE            | Sí | Sí | DWORD                        | Obtiene o establece el tipo de paquete de filtro de recepción IPX actual. Solo se devolverán los paquetes IPX con un tipo de paquete igual al valor especificado en el parámetro optval. Se descartan los paquetes con un tipo de paquete que no coincide. Esto solo es aplicable a un socket de datagrama. |
-| IPX \_ GETNETINFO             | Sí |     | **IPX \_ NETNUM \_ DATA**        | Devuelve información relacionada con un número de red IPX específico. El miembro netnum de la estructura **IPX \_ NETNUM \_ DATA** debe establecerse en el número de red IPX que se va a devolver.                                                                                                     |
-| IPX \_ GETNETINFO \_ NORIP      | Sí |     | **IPX \_ NETNUM \_ DATA**        | Devuelve información relacionada con un número de red IPX específico sin enviar una solicitud RIP. El miembro netnum de la estructura **IPX \_ NETNUM \_ DATA** debe establecerse en el número de red IPX que se va a devolver.                                                                       |
-| IPX \_ IMMEDIATESPXACK        |     | Sí | DWORD (booleano)              | Si se establece **en TRUE,** no retrase el envío de ACKs en una conexión SPX.                                                                                                                                                                                                             |
-| NÚMERO DE ADAPTADOR DE IPX \_ MAX \_ \_      | Sí |     | DWORD                        | Devuelve el número de adaptadores habilitados para IPX presentes.                                                                                                                                                                                                                             |
-| MAXSIZE de IPX \_                | Sí |     | DWORD                        | Devuelve el tamaño máximo del datagrama IPX en bytes que se pueden enviar.                                                                                                                                                                                                                |
-| IPX \_ PTYPE                  | Sí | Sí | DWORD                        | Obtiene o establece el tipo de paquete. El valor especificado en el parámetro optval se establecerá como el tipo de paquete en cada paquete IPX enviado desde este socket.                                                                                                                             |
-| DIFUSIÓN DE RECEPCIÓN DE IPX \_ \_     |     | Sí | DWORD (booleano)              | Si se establece en **TRUE,** reciba paquetes IPX de difusión.                                                                                                                                                                                                                              |
-| IPX \_ RECVHDR                |     | Sí | DWORD (booleano)              | Si se establece en **TRUE,** reciba encabezados de protocolo IPX con datos.                                                                                                                                                                                                                     |
-| IPX \_ RERIPNETNUMBER         | Sí |     | **IPX \_ NETNUM \_ DATA**        | Devuelve información sobre un número de red IPX especificado mediante una nueva solicitud RIP. El miembro netnum de la estructura **IPX \_ NETNUM \_ DATA** debe establecerse en el número de red IPX que se va a devolver.                                                                            |
-| IPX \_ SPXGETCONNECTIONSTATUS | Sí |     | **DATOS \_ DE IPX SPXCONNSTATUS \_** | Devuelve información relacionada con las estadísticas de sockets SPX conectados.                                                                                                                                                                                                                |
-| IPX \_ STOPFILTERPTYPE        |     | Sí | DWORD                        | Quita el filtro y deja de filtrar por el tipo de paquete especificado en el parámetro optval.                                                                                                                                                                                        |
+| DIRECCIÓN \_ IPX                | sí |     | **DATOS DE DIRECCIONES IPX \_ \_**       | Devuelve información sobre el adaptador específico en el que está habilitado IPX.                                                                                                                                                                                                          |
+| NOTIFICACIÓN DE \_ DIRECCIÓN IPX \_        | sí |     | **DATOS DE DIRECCIONES IPX \_ \_**       | Notifica de forma asincrónica cuando cambia el estado de un adaptador IPX.                                                                                                                                                                                                              |
+| IPX \_ DSTYPE                 | sí | sí | DWORD                        | Obtiene o establece el valor del campo de flujo de datos en el encabezado SPX con el que se envían paquetes.                                                                                                                                                                                          |
+| DIRECCIÓN EXTENDIDA DE IPX \_ \_      |     | sí | DWORD (booleano)              | Habilita la opción de direccionamiento extendido en paquetes IPX.                                                                                                                                                                                                                          |
+| IPX \_ FILTERPTYPE            | sí | sí | DWORD                        | Obtiene o establece el tipo de paquete de filtro de recepción IPX actual. Solo se devolverán los paquetes IPX con un tipo de paquete igual al valor especificado en el parámetro optval. Se descartan los paquetes con un tipo de paquete que no coincide. Esto solo es aplicable a un socket de datagrama. |
+| IPX \_ GETNETINFO             | sí |     | **IPX \_ NETNUM \_ DATA**        | Devuelve información relacionada con un número de red IPX específico. El miembro netnum de la estructura **IPX \_ NETNUM \_ DATA** debe establecerse en el número de red IPX que se va a devolver.                                                                                                     |
+| IPX \_ GETNETINFO \_ NORIP      | sí |     | **IPX \_ NETNUM \_ DATA**        | Devuelve información relacionada con un número de red IPX específico sin enviar una solicitud RIP. El miembro netnum de la estructura **IPX \_ NETNUM \_ DATA** debe establecerse en el número de red IPX que se va a devolver.                                                                       |
+| IPX \_ IMMEDIATESPXACK        |     | sí | DWORD (booleano)              | Si se establece **en TRUE,** no retrase el envío de ACKs en una conexión SPX.                                                                                                                                                                                                             |
+| NÚMERO DE ADAPTADOR DE IPX \_ MAX \_ \_      | sí |     | DWORD                        | Devuelve el número de adaptadores habilitados para IPX presentes.                                                                                                                                                                                                                             |
+| MAXSIZE de IPX \_                | sí |     | DWORD                        | Devuelve el tamaño máximo del datagrama IPX en bytes que se pueden enviar.                                                                                                                                                                                                                |
+| IPX \_ PTYPE                  | sí | sí | DWORD                        | Obtiene o establece el tipo de paquete. El valor especificado en el parámetro optval se establecerá como el tipo de paquete en cada paquete IPX enviado desde este socket.                                                                                                                             |
+| DIFUSIÓN DE RECEPCIÓN DE IPX \_ \_     |     | sí | DWORD (booleano)              | Si se establece en **TRUE,** reciba paquetes IPX de difusión.                                                                                                                                                                                                                              |
+| IPX \_ RECVHDR                |     | sí | DWORD (booleano)              | Si se establece en **TRUE,** reciba encabezados de protocolo IPX con datos.                                                                                                                                                                                                                     |
+| IPX \_ RERIPNETNUMBER         | sí |     | **IPX \_ NETNUM \_ DATA**        | Devuelve información sobre un número de red IPX especificado mediante una nueva solicitud RIP. El miembro netnum de la estructura **IPX \_ NETNUM \_ DATA** debe establecerse en el número de red IPX que se va a devolver.                                                                            |
+| IPX \_ SPXGETCONNECTIONSTATUS | sí |     | **DATOS \_ DE IPX SPXCONNSTATUS \_** | Devuelve información relacionada con las estadísticas de sockets SPX conectados.                                                                                                                                                                                                                |
+| IPX \_ STOPFILTERPTYPE        |     | sí | DWORD                        | Quita el filtro y deja de filtrar por el tipo de paquete especificado en el parámetro optval.                                                                                                                                                                                        |
 
 
 
@@ -70,7 +70,7 @@ Para enumerar los protocolos y detectar las propiedades admitidas para cada prot
 
 </dt> </dl> </dd> </dl>
 
-Las siguientes opciones de socket **\_ IPX de NSPROTO** se definieron en Windows Sockets 2 Protocol-Specific Anexo, pero no se implementan mediante el protocolo IPX/SPX Windows.
+Las siguientes opciones de socket **\_ IPX de NSPROTO** se definieron en Windows Sockets 2 Protocol-Specific Anexo, pero no se implementan mediante el protocolo IPX/SPX de Windows.
 
 *level* **=** **NSPROTO \_ IPX**
 
@@ -89,7 +89,7 @@ Las siguientes opciones de socket **\_ IPX de NSPROTO** se definieron en Windows
 
  
 
-Las siguientes opciones de socket **\_ de SPX de NSPROTO** se definieron en el anexo de Windows Sockets 2 Protocol-Specific, pero no se implementan en Windows mediante el protocolo Windows IPX/SPX.
+Las siguientes opciones de socket **\_ de SPX de NSPROTO** se definieron en el anexo de Windows Sockets 2 Protocol-Specific, pero no se implementan en Windows mediante el protocolo WINDOWS IPX/SPX.
 
 *level* **=** **NSPROTO \_ SPX**
 
@@ -108,7 +108,7 @@ Las siguientes opciones de socket **\_ de SPX de NSPROTO** se definieron en el a
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las opciones de socket **\_ IPX de NSPROTO** y las estructuras usadas por estas opciones de socket se definen en el archivo de encabezado *Wsnwlink.h.*
 

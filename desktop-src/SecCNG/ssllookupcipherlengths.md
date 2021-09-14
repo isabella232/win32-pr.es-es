@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 3898b54946b9a1035ce8ec1fedabc218c750bff6579b39f195a1f60b378144f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e756fb84d47ed877ffe4afcd54ce93c53a768e69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118905996"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250352"
 ---
 # <a name="ssllookupcipherlengths-function"></a>Función SslLookupCipherLengths
 
@@ -48,7 +48,7 @@ SECURITY_STATUS WINAPI SslLookupCipherLengths(
 *hSslProvider* \[ En\]
 </dt> <dd>
 
-El identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo de seguridad (SSL).
+Identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo de protocolo de acceso (SSL).
 
 </dd> <dt>
 
@@ -62,21 +62,21 @@ Uno de los valores [**de Identificador de protocolo de proveedor SSL de CNG.**](
 *dwCipherSuite* \[ En\]
 </dt> <dd>
 
-Uno de los valores del identificador del conjunto de cifrado del proveedor SSL de [**CNG.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
+Uno de los valores de Identificador del conjunto de cifrado del [**proveedor SSL de CNG.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
 *dwKeyType* \[ En\]
 </dt> <dd>
 
-Uno de los valores de Identificador de tipo de clave del proveedor SSL de [**CNG.**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) Para los tipos de clave que no [*son criptografía de curva elíptica*](/windows/desktop/SecGloss/e-gly) (ECC), establezca este parámetro en cero.
+Uno de los valores [**de Identificador de tipo de clave del proveedor SSL de CNG.**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) Para los tipos de clave que no [*son criptografía de curva*](/windows/desktop/SecGloss/e-gly) elíptica (ECC), establezca este parámetro en cero.
 
 </dd> <dt>
 
 *pCipherLengths* \[ out\]
 </dt> <dd>
 
-Puntero a un búfer para recibir la estructura [**NCRYPT \_ SSL CIPHER \_ \_ LENGTHS.**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_LENGTHS**)
+Puntero a un búfer para recibir la estructura [**\_ NCRYPT SSL \_ CIPHER \_ LENGTHS.**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_LENGTHS**)
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 ## <a name="remarks"></a>Observaciones
 
-Se llama a la función **SslLookupCipherLengths** para las conversaciones del protocolo de seguridad de la capa de transporte [*(TLS)*](/windows/desktop/SecGloss/t-gly) 1.1 o posterior para consultar las longitudes de encabezado y finalizador del protocolo, conjunto de cifrado y tipo de clave solicitados.
+Se llama a la función **SslLookupCipherLengths** para las conversaciones del protocolo de seguridad de la capa de transporte [*(TLS)*](/windows/desktop/SecGloss/t-gly) 1.1 o posterior para consultar las longitudes de encabezado y finalizador del protocolo, el conjunto de cifrado y el tipo de clave solicitados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -124,9 +124,9 @@ Se llama a la función **SslLookupCipherLengths** para las conversaciones del pr
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

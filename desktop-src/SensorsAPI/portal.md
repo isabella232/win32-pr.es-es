@@ -4,12 +4,12 @@ ms.assetid: a6ea76e6-9721-453a-a657-96f53660e09d
 title: API de sensor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc5c3fd3cbdbf2aac9a161a6cb8bc150d2828c2d48a346b94843878cda49a6a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a36259910fb7583c91b695f69066aa2abf9be1e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118889676"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068960"
 ---
 # <a name="sensor-api"></a>API de sensor
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cc3c77c119090d34a8ed8314dd162c0a466bf53ec8ecca58cf155478f4c8782f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92219c5bfb921dc0d90774b17a572ba4ace3505b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120005974"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068532"
 ---
 # <a name="logging-channeltype-element"></a>Elemento logging (ChannelType)
 
@@ -43,7 +43,7 @@ El **elemento de** registro se define mediante el tipo complejo [**ChannelType.*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

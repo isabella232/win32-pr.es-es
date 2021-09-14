@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec3Hermite (D3DX10Math.h): realiza una interpolación spline hermite, mediante los vectores 3D especificados.'
+description: 'Función D3DXVec3Hermite (D3DX10Math.h): realiza una interpolación spline de Hermite con los vectores 3D especificados.'
 ms.assetid: d2212299-0478-48a6-b303-60c212528058
 title: Función D3DXVec3Hermite (D3DX10Math.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 955843e7171aaa64e5fa7027b0e0f6049613e31c2d3c647fd705623456ac4e56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cbed5ceaca1e4e404c47766fa41b8b095216b277
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118990625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063850"
 ---
 # <a name="d3dxvec3hermite-function-d3dx10mathh"></a>Función D3DXVec3Hermite (D3DX10Math.h)
 
@@ -49,7 +49,7 @@ D3DXVECTOR3* D3DXVec3Hermite(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
+Puntero a [**D3DXVECTOR3 que**](d3d10-d3dxvector3.md) es el resultado de la operación.
 
 </dd> <dt>
 
@@ -104,13 +104,13 @@ Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
 Puntero a una estructura D3DXVECTOR3 que es el resultado de la interpolación spline de Hermite.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función D3DXVec3Hermite** interpola de (positionA, tangentA) a (positionB, tangentB) mediante la interpolación spline hermite.
+La **función D3DXVec3Hermite** interpola de (positionA, tangentA) a (positionB, tangentB) mediante la interpolación spline de Hermite.
 
-La interpolación spline es una generalización de la spline de facilidad de entrada y salida. La rampa es una función de preguntas y respuestas con las siguientes propiedades.
+La interpolación spline es una generalización de la spline de facilidad de entrada y de salida. La rampa es una función de preguntas y respuestas con las siguientes propiedades.
 
-Q(s) = Asntes + Bs ' + Cs + D (y, por lo tanto, Q's) = 3Asmiento + 2B + C)
+Q(s) = Asntes + Bsmientos + Cs + D (y, por lo tanto, Q's) = 3Azos + 2B + C)
 
 a) Q(0) = v1, por lo que Q'(0) = t1
 
@@ -148,11 +148,11 @@ Q(s) = (2v1 - 2v2 + t2 + t1)s así + (3v2 - 3v1 - 2t1 - t2)sntes + t1 + v1
 
 Que se puede reorganizar como:
 
-Q(s) = (2sntes - 3s además de 1)v1 + (-2sntes + 3s): v2 + (sntes - 2s- s)t1 + (sntes - sntes)t2
+Q(s) = (2sntes - 3s): + 1)v1 + (-2sntes + 3sntes)v2 + (sntes - 2s): + s)t1 + (sntes - s): t2
 
 Las curvas spline de Hermite son útiles para controlar la animación porque la curva recorre todos los puntos de control. Además, dado que la posición y la tangente se especifican explícitamente en los extremos de cada segmento, es fácil crear una curva continua C2 siempre que se asegúrese de que la posición inicial y la tangente coinciden con los valores finales del último segmento.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXVec3Hermite** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXVec3Hermite** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -164,7 +164,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Recepción de notificaciones de eventos sincrónicas y semisincronosas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8657767150012124c3ccb0df8d95896f51b36ef47fa00998cf786df9beddf977
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15327c66f7ba3e59824c94d54a206ec348c85952
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118817264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063941"
 ---
 # <a name="receiving-synchronous-and-semisynchronous-event-notifications"></a>Recepción de notificaciones de eventos sincrónicas y semisincronosas
 
@@ -20,7 +20,7 @@ En el ejemplo de código siguiente se muestra cómo consultar los eventos de un 
 
 `Select * from Win32_NTLogEvent`
 
-Para obtener más información, vea [Determinar](determining-the-type-of-event-to-receive.md)el tipo de evento que se recibirá , Recibir notificaciones [de](receiving-event-notifications.md)eventos y [WQL (SQL para WMI).](wql-sql-for-wmi.md)
+Para obtener más información, vea [Determinar](determining-the-type-of-event-to-receive.md)el tipo de evento que se debe recibir , recibir notificaciones [de](receiving-event-notifications.md)eventos y [WQL (SQL para WMI).](wql-sql-for-wmi.md)
 
 La llamada predeterminada a [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md) usa la comunicación semisincronosa. El *parámetro iflags* tiene las marcas **wbemFlagForwardOnly** y **wbemFlagReturnImmediately** establecidas de forma predeterminada. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
 
@@ -36,7 +36,7 @@ En el procedimiento siguiente se describe cómo recibir notificaciones de evento
 
 4.  Especifique un intervalo de sondeo para Windows Management Instrumentation (WMI) en una consulta, como "WITHIN 10", para sondear cada 10 segundos. Para obtener más información, vea [CLÁUSULA WITHIN](within-clause.md).
 
-5.  Llame [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md) mediante la consulta .
+5.  Llame [**a SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md) mediante la consulta .
 
 6.  Recorrer en bucle la colección que recibe.
 

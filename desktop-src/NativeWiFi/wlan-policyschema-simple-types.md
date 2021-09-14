@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 91b1696d63374d3085e995f8e625ef697100a1eea60c09ecf7b8132436b70f89
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a3046c6c863552b8d51bd4598a6511508cd8e626
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119799945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069421"
 ---
 # <a name="wlan_policy-schema-simple-types"></a>Tipos simples de esquema de directiva WLAN \_
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 57556ccba8c09e1027ba10aefea9c8642dad579d82147b48012db3a017410c2b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 312d82494011207c8f424a90bf596f8c23bdd661
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119901805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068366"
 ---
 # <a name="minimizebutton"></a>MINIMIZEBUTTON
 
@@ -29,9 +29,9 @@ onclick="jscript:view.minimize();"
 upToolTip="Minimize"
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esto creará un control **BUTTON** que minimizará el reproductor. La información sobre herramientas se localiza. Todas las propiedades de **este BOTÓN** se pueden invalidar especificándolos explícitamente.
+Esto creará un control **BUTTON** que minimizará el reproductor. La información sobre herramientas está localizada. Todas las propiedades de **este BOTÓN** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,11 +39,11 @@ Esto creará un control **BUTTON** que minimizará el reproductor. La informaci�
 
 | Requisito | Value |
 |--------------------|----------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media 7.0 o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

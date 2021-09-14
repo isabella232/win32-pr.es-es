@@ -4,12 +4,12 @@ ms.assetid: b40d10aa-43bc-4c53-9e89-94c585d34238
 title: Publicación de un evento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 724dc94ddf9cc25ec3b11cc31376805241e9d6d67250f8a494f8b417b9d201a3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c060d8bf67e12fc7429b2afc768794468a1c49ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119990505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063894"
 ---
 # <a name="publishing-an-event"></a>Publicación de un evento
 

@@ -4,16 +4,16 @@ ms.assetid: 21b912d6-34aa-4ac0-b019-be3c851cc96d
 title: LINE_REMOVE mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f13f36123cb8cb77bd2d4b78c3e69a2da1c027aef4dad1fc9dfd7f3c6a00399
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 567ead3ad2941845dd22405f0d8706eca74bfbd8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119335925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250052"
 ---
-# <a name="line_remove-message"></a>Mensaje \_ LINE REMOVE
+# <a name="line_remove-message"></a>MENSAJE \_ LINE REMOVE
 
-El mensaje TAPI **LINE \_ REMOVE** se envía para informar a una aplicación de la eliminación (eliminación del sistema) de un dispositivo de línea. Por lo general, esto no se usa para eliminaciones temporales, como la extracción de dispositivos PCMCIA, sino solo para eliminaciones permanentes en las que el proveedor de servicios ya no notifica el dispositivo si se reinicializa TAPI.
+El mensaje TAPI **LINE \_ REMOVE** se envía para informar a una aplicación de la eliminación (eliminación del sistema) de un dispositivo de línea. Por lo general, esto no se usa para eliminaciones temporales, como la extracción de dispositivos PCMCIA, sino solo para eliminaciones permanentes en las que el proveedor de servicios ya no informaría del dispositivo si se reinicializaba TAPI.
 
 
 ```C++
@@ -65,16 +65,16 @@ Reservado. Establecer en cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las aplicaciones que admiten TAPI versión 2.0 o posterior se envían un **mensaje LINE \_ REMOVE.** Esto les informa de que el dispositivo se ha quitado del sistema. El **mensaje \_ LINE REMOVE** va precedido de un mensaje LINE [**\_ CLOSE**](line-close.md) en cada identificador de línea, si la aplicación tenía la línea abierta. Este mensaje se envía a todas las aplicaciones que admiten TAPI versión 2.0 o posterior que han llamado [**a lineInitializeEx,**](/windows/desktop/api/Tapi/nf-tapi-lineinitializeexa)incluidas aquellas que no tienen ningún dispositivo de línea abierto en ese momento.
+Las aplicaciones que admiten TAPI versión 2.0 o posterior se envían un **mensaje LINE \_ REMOVE.** Esto les informa de que el dispositivo se ha quitado del sistema. El **mensaje \_ LINE REMOVE** va precedido de un mensaje LINE [**\_ CLOSE**](line-close.md) en cada identificador de línea, si la aplicación tenía abierta la línea. Este mensaje se envía a todas las aplicaciones que admiten TAPI versión 2.0 o posterior que han llamado [**a lineInitializeEx,**](/windows/desktop/api/Tapi/nf-tapi-lineinitializeexa)incluidas aquellas que no tienen ningún dispositivo de línea abierto en ese momento.
 
-Las aplicaciones anteriores se envían un [**\_ mensaje LINE LINEDEVSTATE**](line-linedevstate.md) que especifica LINEDEVSTATE \_ REMOVED, seguido de un mensaje LINE \_ CLOSE. Sin embargo, a diferencia del mensaje **\_ LINE REMOVE,** estas aplicaciones anteriores solo pueden recibir estos mensajes si tienen la línea abierta cuando se quita. Si no tienen la línea abierta, su única indicación de que el dispositivo se quitó recibiría un error LINEERR NODEVICE al intentar acceder \_ al dispositivo.
+Las aplicaciones anteriores se envían un [**mensaje \_ LINE LINEDEVSTATE**](line-linedevstate.md) que especifica LINEDEVSTATE \_ REMOVED, seguido de un mensaje LINE \_ CLOSE. Sin embargo, a diferencia del mensaje **\_ LINE REMOVE,** estas aplicaciones anteriores solo pueden recibir estos mensajes si tienen la línea abierta cuando se quita. Si no tienen la línea abierta, su única indicación de que el dispositivo se quitó recibiría un error LINEERR NODEVICE al intentar acceder \_ al dispositivo.
 
-Una vez quitado un dispositivo, cualquier intento de acceder al dispositivo mediante su identificador de dispositivo produce un \_ error LINEERR NODEVICE. Después de que todas las aplicaciones TAPI se apaguen para que TAPI pueda reiniciarse y cuando se reinicialice TAPI, el dispositivo eliminado ya no ocupa un identificador de dispositivo.
+Una vez quitado un dispositivo, cualquier intento de acceder al dispositivo por su identificador de dispositivo produce un \_ error LINEERR NODEVICE. Una vez que todas las aplicaciones TAPI se han apagado para que TAPI se pueda reiniciar y cuando se reinicialice TAPI, el dispositivo eliminado ya no ocupa un identificador de dispositivo.
 
 > [!Note]  
-> Implementación: es TAPI el que devuelve este LINEERR NODEVICE; después de recibir un mensaje LINE REMOVE de un proveedor de servicios, no se realizan más llamadas a ese proveedor de servicios mediante ese identificador de dispositivo de \_ línea. **\_**
+> Implementación: es TAPI el que devuelve este LINEERR NODEVICE; después de recibir un mensaje LINE REMOVE de un proveedor de servicios; no se realizan más llamadas a ese proveedor de servicios mediante ese identificador de dispositivo de \_ línea. **\_**
 
  
 
@@ -82,14 +82,14 @@ Una vez quitado un dispositivo, cualquier intento de acceder al dispositivo medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

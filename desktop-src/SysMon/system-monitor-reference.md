@@ -4,12 +4,12 @@ description: La sección de referencia del Monitor de sistema (SYSMON) contiene 
 ms.assetid: d4efc073-3adf-466e-b877-917eefc3de12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fd70ca23698e34eede69273fa42fbdb3bf8eaa1c406f5aa3b72b04d5cab639a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90ebd6d6e814664dfcea93e3af0736fda1b5b6b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117956424"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068848"
 ---
 # <a name="system-monitor-reference"></a>Referencia del Monitor de sistema
 

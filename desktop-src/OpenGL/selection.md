@@ -8,12 +8,12 @@ keywords:
 - registros de llamadas OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c42c057014a4f5a1533e1f5c42683b93f08c31c287dc29f56ea797a5b360d545
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 851fac28cda979a383d183a12c79656bfebcbb0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069275"
 ---
 # <a name="selection"></a>Número de selección
 

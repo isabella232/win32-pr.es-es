@@ -6,12 +6,12 @@ keywords:
 - Archivos make estructurados Storage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0761cbdfb7a04b3e13cd003115dfdd1c9ea1f140421332df0b1ecaa31b7fc45
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a15fef5818c28986232e8c2a648f43bdc096832f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117961142"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068916"
 ---
 # <a name="makefiles"></a>Makefiles
 

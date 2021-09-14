@@ -1,7 +1,7 @@
 ---
 description: Define la sección del manifiesto de instrumentación que identifica el proveedor y los contadores que proporcionan.
 ms.assetid: c661f1af-ebe8-4f8a-b77e-a2229f45facd
-title: counters Tipo complejo
+title: counters Complex Type (Tipo complejo de contadores)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 14630fa4e0e9461e59d377b4defc3edacee8dca9560d1f7eb42acb317ffd1f57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ad87b79175b0cecdec17ad081340fa0be2b90b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250683"
 ---
-# <a name="counters-complex-type"></a>counters Tipo complejo
+# <a name="counters-complex-type"></a>counters Complex Type (Tipo complejo de contadores)
 
 Define la sección del manifiesto de instrumentación que identifica el proveedor y los contadores que proporcionan.
 
@@ -77,7 +77,7 @@ Define la sección del manifiesto de instrumentación que identifica el proveedo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

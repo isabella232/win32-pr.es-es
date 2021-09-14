@@ -7,12 +7,12 @@ keywords:
 - Servicios de Escritorio remoto Servicios de Escritorio remoto , novedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4db73a91003e24c46bef5016a5198361b1951aa42215c563f5f11959be03f945
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef1d67e98d9c5990d6cfc5e0a10dbd25cd59d089
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118850610"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249807"
 ---
 # <a name="whats-new-in-remote-desktop-services"></a>Novedades en Servicios de Escritorio remoto
 

@@ -1,5 +1,5 @@
 ---
-description: Contiene un hexBinary de 3 bytes que identifica el IHV.
+description: Contiene un hexBinary de 3 bytes que identifica la IHV.
 ms.assetid: 0b2e73fb-df3a-48c4-b38d-970c37de46eb
 title: Elemento OUI (OUIHeader)
 ms.topic: reference
@@ -13,17 +13,17 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 49a9cceffb308c64c8d1addf7c257b422751661f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272239"
 ---
 # <a name="oui-ouiheader-element"></a>Elemento OUI (OUIHeader)
 
 El elemento OUI (OUIHeader) contiene un hexBinary de 3 bytes que identifica el IHV.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="OUI">
@@ -39,7 +39,7 @@ El elemento OUI (OUIHeader) contiene un hexBinary de 3 bytes que identifica el I
 </xs:element>
 ```
 
-El elemento se define mediante el elemento [**OUIHeader**](wlan-profileschema-ouiheader-ihv-element.md) .
+El elemento [**OUIHeader**](wlan-profileschema-ouiheader-ihv-element.md) define el elemento .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,12 +47,12 @@ El elemento se define mediante el elemento [**OUIHeader**](wlan-profileschema-ou
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec4CatmullRom (D3DX10Math.h): realiza una interpolación Catmull-Rom mediante los vectores 4D especificados.'
+description: 'Función D3DXVec4CatmullRom (D3DX10Math.h): realiza una interpolación Catmull-Rom, mediante los vectores 4D especificados.'
 ms.assetid: e3a10989-e25e-46fa-b72e-bade936cacf1
 title: Función D3DXVec4CatmullRom (D3DX10Math.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 4d565d1e9b567ff0c3320d6e0ba6023a6c4917720a2a13f32f98164cb7632123
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e3665709564f578046273facbd3311253d8c2b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118990555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063829"
 ---
 # <a name="d3dxvec4catmullrom-function-d3dx10mathh"></a>Función D3DXVec4CatmullRom (D3DX10Math.h)
 
@@ -102,9 +102,9 @@ Factor de ponderación. Vea la sección Comentarios.
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Puntero a una estructura D3DXVECTOR4 que es el resultado del Catmull-Rom interpolación.
+Puntero a una estructura D3DXVECTOR4 que es el resultado de la Catmull-Rom interpolación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Dados cuatro puntos (p1, p2, p3, p4), busque una función Q(s) de modo que:
 
@@ -118,7 +118,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-La Catmull-Rom spline se puede derivar de la curva spline de Hermite estableciendo:
+El Catmull-Rom spline se puede derivar de la spline Hermite estableciendo:
 
 
 ```
@@ -140,7 +140,7 @@ p3 es el contenido de pV2.
 
 p4 es el contenido de pV3.
 
-Uso de la ecuación spline de Hermite:
+Uso de la ecuación spline hermite:
 
 
 ```
@@ -158,7 +158,7 @@ Q(s) = (2s3 - 3s2 + 1)p2 + (-2s3 + 3s2)p3 + (s3 - 2s2 + s)(p3 - p1) / 2 + (s3 - 
 
 
 
-Esto se puede reorganizar de la siguiente forma:
+Esto se puede reorganizar como:
 
 
 ```
@@ -177,7 +177,7 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

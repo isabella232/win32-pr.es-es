@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5d0e002133366527624a0954df9054272cc08d894ba8dc3121b8a86b807caab6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd25767ed311e9a6f0e75f8dec090d4b80d3f0af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117798036"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069448"
 ---
 # <a name="singlesignon-onex-element"></a>Elemento singleSignOn (OneX)
 
@@ -25,7 +25,7 @@ El elemento singleSignOn (OneX) especifica la información de configuración de 
 
 Este elemento es opcional. No use el elemento singleSignOn en un perfil si la red no lo requiere.
 
-Windows XP con SP3 y la API de LAN inalámbrica **para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
+**Windows XP con SP3 y la API de LAN inalámbrica para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
 
 ``` syntax
 <xs:element name="singleSignOn">
@@ -86,7 +86,7 @@ El **elemento singleSignOn** se define mediante el [**elemento OneX.**](onexsche
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este parámetro se puede establecer en la línea de comandos mediante el **comando netsh wlan set profileparameter.** Para obtener más información, [vea Netsh Commands for Wireless Local Area Network (wlan) (Comandos de Netsh para redes inalámbricas de área local [wlan]).](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc755301(v=ws.10))
 
@@ -94,7 +94,7 @@ Este parámetro se puede establecer en la línea de comandos mediante el **coman
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

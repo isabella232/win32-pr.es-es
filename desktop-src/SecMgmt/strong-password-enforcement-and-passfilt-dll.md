@@ -4,12 +4,12 @@ ms.assetid: a84f83b2-181b-4f65-82bd-bc7f0689aad3
 title: Aplicación de contraseñas seguras y Passfilt.dll
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c3e34e77b15ca9797240ce5647aa58decf3efa05f04cd431b3d723b148bf406
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63b7be524511d52048e06ae83ab110384c3bf5c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119004903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069019"
 ---
 # <a name="strong-password-enforcement-and-passfiltdll"></a>Aplicación de contraseñas seguras y Passfilt.dll
 

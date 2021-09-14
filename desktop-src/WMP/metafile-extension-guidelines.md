@@ -6,7 +6,7 @@ keywords:
 - Windows Metarchivos multimedia, extensiones
 - Windows Metarchivos multimedia, extensiones de nombre de archivo
 - metarchivos, extensiones
-- metarchivos, extensiones de nombre de archivo
+- metafiles,extensiones de nombre de archivo
 - Windows Multimedia, metarchivos
 - extensiones de nombre de archivo para Windows metarchivos multimedia
 ms.topic: article
@@ -16,18 +16,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4aaa31f1364271b1b968244494586ba5006e7c292ca2d9a207cdd1c758b5e432
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31d2793b19576e26096bc30c834666828cf9ed29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118836973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068370"
 ---
 # <a name="metafile-extension-guidelines"></a>Directrices de extensión de metarchivo
 
 Una extensión de nombre de archivo proporciona a un proveedor de software independiente (ISV) información sobre los requisitos de representación de una aplicación que usa la extensión y permite a los autores de contenido dirigirse a tipos generales de reproductores.
 
-Windows Las extensiones de nombre de metarchivo multimedia se usan para identificar el formato de los archivos Windows multimedia a los que hace referencia un metarchivo. Windows Metarchivos multimedia con archivos de referencia de extensiones .lot, .wvx o .asx con extensiones .wma, .wmv y .asf, respectivamente. Todos los metarchivos, independientemente de la extensión de nombre de archivo usada, tienen la etiqueta de elemento **ASX** al principio del archivo con el atributo **version** especificado.
+Windows Las extensiones de nombre de metarchivo multimedia se usan para identificar el formato de los archivos Windows multimedia a los que hace referencia un metarchivo. Windows Metarchivos multimedia con extensiones .lot, .wvx o .asx con extensiones .wma, .wmv y .asf, respectivamente. Todos los metarchivos, independientemente de la extensión de nombre de archivo usada, tienen la etiqueta de elemento **ASX** al principio del archivo con el atributo **version** especificado.
 
 En la tabla siguiente se muestran los tipos de archivo multimedia a los que hace referencia cada tipo de extensión de nombre de archivo de metarchivo. Las columnas muestran extensiones de nombre de archivo multimedia y las filas muestran extensiones de nombre de metarchivo. Una X de una columna indica un tipo de archivo multimedia al que se puede hacer referencia mediante una extensión de nombre de archivo de metarchivo determinada.
 

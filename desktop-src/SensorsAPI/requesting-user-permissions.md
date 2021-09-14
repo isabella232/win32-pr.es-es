@@ -4,12 +4,12 @@ ms.assetid: e43ad497-86f1-4804-a67a-0aeb56b80d7f
 title: Solicitud de permisos de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2bb6c977306ff68f40fb8d3a77b598114cb6f77feeb35d4beca96c05fbce224
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 41e103426388d2db49bb5a8fb01d3370207ec49b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119992685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068956"
 ---
 # <a name="requesting-user-permissions"></a>Solicitud de permisos de usuario
 

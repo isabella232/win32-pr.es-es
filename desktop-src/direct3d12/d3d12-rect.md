@@ -15,24 +15,24 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 951c0de8468b0384ae1a474740f9b46c2aa68dfc23c3394f8dae6a8064d9319e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d408832e800413f94e251ee27a57e5b326378c36
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119751735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249183"
 ---
 # <a name="d3d12_rect"></a>D3D12 \_ RECT
 
-D3D12 \_ RECT se declara como RECT. Para obtener más información sobre esta estructura de rectángulo GDI, vea [**RECT**](/previous-versions//dd162897(v=vs.85)).
+D3D12 \_ RECT se declara como RECT. Para obtener más información sobre esta estructura de rectánguloS GDI, vea [**RECT**](/previous-versions//dd162897(v=vs.85)).
 
 ``` syntax
 typedef RECT D3D12_RECT;
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los métodos siguientes usan esta estructura:
+Esta estructura se usa mediante los métodos siguientes:
 
 -   [**RSSetScissorRects**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-rssetscissorrects)
 -   [**ClearDepthStencilView**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-cleardepthstencilview)
@@ -52,7 +52,7 @@ Esta estructura es miembro de la estructura [**D3D12 \_ DISCARD \_ REGION.**](/w
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

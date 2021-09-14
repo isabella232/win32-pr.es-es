@@ -4,12 +4,12 @@ ms.assetid: 765cd702-a1a8-4ff6-bea5-54de9fb62c0b
 title: Establecer un contexto de cliente con el Administrador de autorización en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1b74cab7d6c113f5120a682250f85dca772e1764acf432317049da27ec091d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79afa31db547b28d129c5b8e90dcf3e4ba1e91c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119672125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069122"
 ---
 # <a name="establishing-a-client-context-with-authorization-manager-in-c"></a>Establecer un contexto de cliente con el Administrador de autorización en C++
 

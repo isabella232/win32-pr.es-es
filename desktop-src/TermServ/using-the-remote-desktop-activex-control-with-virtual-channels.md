@@ -5,12 +5,12 @@ ms.assetid: df537ffb-41dd-400e-8a49-9d8a10734eda
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dae33c059a84422788bc49d47f95e0011f78930054ed3884669e8f35763461b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 026c8fa23f1498270bd0d2a29c5f48d50f0b2463
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119868735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249855"
 ---
 # <a name="using-the-remote-desktop-activex-control-with-virtual-channels"></a>Uso del control Escritorio remoto ActiveX con canales virtuales
 
@@ -30,14 +30,14 @@ Si ha habilitado una aplicación de canales virtuales en la implementación de S
     MsRdpClient.AdvancedSettings.PluginDlls = "myplugin.dll,Vdriver.dll"
     ```
 
-    Por motivos de seguridad, **la propiedad PluginDlls** solo acepta una lista con nombre de archivos DLL de canal virtual. El control devuelve un error si se especifica cualquier forma de sistema de archivos o ruta de acceso UNC. Además, los nombres de los archivos DLL solo deben contener caracteres alfanuméricos.
+    Por motivos de seguridad, **la propiedad PluginDlls** solo acepta una lista con nombre de archivos DLL de canal virtual. El control devuelve un error si se especifica cualquier forma de sistema de archivos o ruta de acceso UNC. Además, los nombres de los archivos DLL deben contener solo caracteres alfanuméricos.
 
 2.  Asegúrese de que el módulo del lado cliente está instalado en el directorio %windir% \\ system32.
 
-La API de canal virtual no permite cargar varias instancias del mismo archivo DLL de canal virtual dentro de un único proceso. Por este problema, si hay varias instancias del control Escritorio remoto ActiveX que se ejecutan dentro del mismo proceso, solo la primera instancia del control podrá cargar el archivo DLL del canal virtual. Si va a diseñar una aplicación de canal virtual que debe admitir varias instancias dentro de un único proceso, debe usar la [API](dynamic-virtual-channels.md) de canales virtuales dinámicos para implementar la aplicación de canal virtual.
+La API de canal virtual no permite que varias instancias del mismo archivo DLL de canal virtual se carguen dentro de un único proceso. Por este problema, si hay varias instancias del control Escritorio remoto ActiveX que se ejecutan dentro del mismo proceso, solo la primera instancia del control podrá cargar el archivo DLL del canal virtual. Si va a diseñar una aplicación de canal virtual que debe admitir varias instancias dentro de un único proceso, debe usar la [API](dynamic-virtual-channels.md) de canales virtuales dinámicos para implementar la aplicación de canal virtual.
 
 > [!Note]  
-> De forma predeterminada, el control Escritorio remoto ActiveX carga archivos DLL de cliente de canal virtual desde el directorio %windir% \\ system32. Es posible que un administrador cambie este directorio DLL del complemento de cliente predeterminado. Para ello, edite la clave del Registro **HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **Terminal Server Client** \\ **vdllpath** en el equipo cliente. Esta ruta de acceso del directorio no se puede especificar en el formato UNC.
+> De forma predeterminada, el Escritorio remoto ActiveX carga archivos DLL de cliente de canal virtual desde el directorio %windir% \\ system32. Es posible que un administrador cambie este directorio DLL de complemento de cliente predeterminado. Para ello, edite la clave del Registro **HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **Terminal Server Client** \\ **vdllpath** en el equipo cliente. Esta ruta de acceso del directorio no se puede especificar en el formato UNC.
 
  
 

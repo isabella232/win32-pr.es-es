@@ -9,27 +9,27 @@ keywords:
 - Protocolo de escritorio remoto Servicios de Escritorio remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58d97f333cce6fd96ac7c41e5b61103cdc7c60600a58a0b63acc4e8d65c86b54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b06f575d5cffc16bd19f6bbe5fd4b3237dda7b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118850751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249873"
 ---
 # <a name="using-the-remote-desktop-activex-control"></a>Uso del control Escritorio remoto ActiveX control
 
 Los temas siguientes contienen información sobre cómo puede usar el control Escritorio remoto ActiveX para personalizar la experiencia Servicios de Escritorio remoto usuario.
 
-El Escritorio remoto ActiveX control está disponible en los formularios siguientes:
+El control Escritorio remoto ActiveX está disponible en los siguientes formularios:
 
--   **El control que permite scripts:** implementa interfaces que son seguras para el scripting. Esta forma del control se puede usar en clientes web o hosts de scripting (como VBScript).
--   **El control noscriptable** ofrece funcionalidad adicional que no es segura para el scripting. Esta forma del control se puede usar desde código nativo o administrado, pero este formulario no lo pueden usar clientes web ni hosts de solo scripting.
+-   **El control que permite scripts:** implementa interfaces que son seguras para scripting. Los clientes web o los hosts de scripting (como VBScript) pueden usar esta forma del control.
+-   **El control noscriptable** ofrece funcionalidad adicional que no es segura para el scripting. Esta forma del control se puede usar desde código nativo o administrado, pero los clientes web o los hosts de solo scripting no pueden usar este formulario.
 
-La lista siguiente contiene los **CLSID** de los distintos controles para las distintas versiones del sistema operativo. Cada uno de **los CLSID** es compatible con versiones posteriores del sistema. Por ejemplo, el **CLSID** del control que permite scripts en Windows Vista funcionará en versiones posteriores del sistema, como Windows 7.
+La lista siguiente contiene los **CLSID** de los distintos controles para las distintas versiones del sistema operativo. Cada uno de los **CLSID** es compatible con versiones posteriores del sistema. Por ejemplo, el **CLSID** del control que permite scripts en Windows Vista funcionará en versiones posteriores del sistema, como Windows 7.
 
 
 
-| Versión del sistema                          | CLSID de control que puede incluirse en scripts             | CLSID de control noscriptable          |
+| Versión del sistema                          | CLSID de control que permite scripts             | CLSID de control noscriptable          |
 |-----------------------------------------|--------------------------------------|--------------------------------------|
 | Windows 8.1, Windows Server 2012 R2     | 301B94BA-5D25-4A12-BFFE-3B6E7A616585 | 8B918B82-7985-4C24-89DF-C33AD2BBFBCD |
 | Windows 8, Windows Server 2012          | 5F681803-2900-4C43-A1CC-CF405404A676 | A3BC03A0-041D-42E3-AD22-882B7865C9C5 |
@@ -48,14 +48,14 @@ La lista siguiente contiene los **CLSID** de los distintos controles para las di
 [Inserción del control Escritorio remoto ActiveX en una página web](embedding-the-remote-desktop-activex-control-in-a-web-page.md)
 </dt> <dd>
 
-Ejemplo que muestra el uso de las interfaces que pueden incluirse en scripts.
+Ejemplo que muestra el uso de las interfaces que se pueden incluir en scripts.
 
 </dd> <dt>
 
-[Implementación de canales virtuales que pueden incluirse en scripts mediante Conexión web a Escritorio remoto](implementing-scriptable-virtual-channels-using-remote-desktop-web-connection.md)
+[Implementación de canales virtuales que pueden incluir scripts mediante Conexión web a Escritorio remoto](implementing-scriptable-virtual-channels-using-remote-desktop-web-connection.md)
 </dt> <dd>
 
-Ejemplos de código que muestran los pasos para implementar canales virtuales que pueden incluirse en scripts con Conexión web a Escritorio remoto.
+Ejemplos de código que muestran los pasos para implementar canales virtuales con scripts con Conexión web a Escritorio remoto.
 
 </dd> <dt>
 
@@ -66,10 +66,10 @@ Si ha habilitado una aplicación de canales virtuales en Servicios de Escritorio
 
 </dd> <dt>
 
-[Página web de ejemplo incluida con el control Escritorio remoto ActiveX datos](sample-web-page-included-with-the-remote-desktop-activex-control.md)
+[Página web de ejemplo incluida con el control Escritorio remoto ActiveX ejemplo](sample-web-page-included-with-the-remote-desktop-activex-control.md)
 </dt> <dd>
 
-Una página web de ejemplo (Default.htm) está en el directorio donde Conexión web a Escritorio remoto está instalado.
+Una página web de ejemplo (Default.htm) se encuentra en el directorio donde Conexión web a Escritorio remoto está instalado.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Para mejorar la seguridad, puede optar por deshabilitar Servicios de Escritorio 
 
 </dd> </dl>
 
-Para obtener más información sobre la página web de ejemplo que se incluye con la instalación del control Escritorio remoto ActiveX, vea Página web de ejemplo incluida con [el control Escritorio remoto ActiveX .](sample-web-page-included-with-the-remote-desktop-activex-control.md)
+Para obtener más información sobre la página web de ejemplo que se incluye con la instalación del control Escritorio remoto ActiveX, vea Página web de ejemplo incluida [con el control Escritorio remoto ActiveX .](sample-web-page-included-with-the-remote-desktop-activex-control.md)
 
  
 

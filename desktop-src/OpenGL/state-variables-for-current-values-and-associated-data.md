@@ -3,7 +3,7 @@ title: Variables de estado para los valores actuales y los datos asociados
 description: Variables de estado para los valores actuales y los datos asociados
 ms.assetid: 8e47b119-a065-43c5-b7f5-76deaf975ad8
 keywords:
-- Variables de estado para valores actuales y datos asociados OpenGL
+- Variables de estado para valores actuales y OpenGL de datos asociados
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d99a9504a673d23d6923d5faf0e99770f20fe55e1cdd6b63d9adcbe68282584
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 149139bc11698469ce0667c2ecf77bc7ab239adb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119553715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069263"
 ---
 # <a name="state-variables-for-current-values-and-associated-data"></a>Variables de estado para los valores actuales y los datos asociados
 
-<dl> <dt><span id="GL_CURRENT_COLOR"></span><span id="gl_current_color"></span>COLOR \_ ACTUAL DE \_ GL</dt> <dd> 
+<dl> <dt><span id="GL_CURRENT_COLOR"></span><span id="gl_current_color"></span>COLOR \_ ACTUAL \_ DE GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------------------------------------------|
 | Descripción:     | Color actual                                                                                                        |
 | Grupo de atributos: | actuales                                                                                                              |
@@ -34,9 +34,9 @@ ms.locfileid: "119553715"
 
  
 
-</dd> <dt><span id="GL_CURRENT_INDEX"></span><span id="gl_current_index"></span>GL \_ CURRENT \_ INDEX</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_INDEX"></span><span id="gl_current_index"></span>ÍNDICE \_ ACTUAL \_ DE GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción:     | Índice de color actual                                                                                                                                            |
 | Grupo de atributos: | actuales                                                                                                                                                        |
@@ -47,9 +47,9 @@ ms.locfileid: "119553715"
 
  
 
-</dd> <dt><span id="GL_CURRENT_TEXTURE_COORDS"></span><span id="gl_current_texture_coords"></span>\_ \_ COORDS DE TEXTURA \_ ACTUALES DE GL</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_TEXTURE_COORDS"></span><span id="gl_current_texture_coords"></span>\_ \_ COORDS DE \_ TEXTURA ACTUALES DE GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
 | Descripción:     | Coordenadas de textura actuales                                                    |
 | Grupo de atributos: | actuales                                                                        |
@@ -62,7 +62,7 @@ ms.locfileid: "119553715"
 
 </dd> <dt><span id="GL_CURRENT_NORMAL"></span><span id="gl_current_normal"></span>GL \_ CURRENT \_ NORMAL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
 | Descripción:     | Normal actual                                                                 |
 | Grupo de atributos: | actuales                                                                        |
@@ -75,7 +75,7 @@ ms.locfileid: "119553715"
 
 </dd> <dt><span id="GL_CURRENT_RASTER_POSITION"></span><span id="gl_current_raster_position"></span>POSICIÓN \_ DE TRAMA ACTUAL DE \_ GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
 | Descripción:     | Posición de trama actual                                                        |
 | Grupo de atributos: | actuales                                                                        |
@@ -86,7 +86,7 @@ ms.locfileid: "119553715"
 
  
 
-</dd> <dt><span id="GL_CURRENT_RASTER_DISTANCE"></span><span id="gl_current_raster_distance"></span>GL \_ CURRENT \_ RASTER \_ DISTANCE</dt> <dd> 
+</dd> <dt><span id="GL_CURRENT_RASTER_DISTANCE"></span><span id="gl_current_raster_distance"></span>DISTANCIA \_ DE TRAMA ACTUAL DE \_ \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
@@ -140,7 +140,7 @@ ms.locfileid: "119553715"
 
 </dd> <dt><span id="GL_CURRENT_RASTER_POSITION_VALID"></span><span id="gl_current_raster_position_valid"></span>POSICIÓN DE TRAMA ACTUAL DE GL \_ \_ \_ \_ VÁLIDA</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Bit válido de posición de trama                                                        |
 | Grupo de atributos: | actuales                                                                          |
@@ -151,11 +151,11 @@ ms.locfileid: "119553715"
 
  
 
-</dd> <dt><span id="GL_EDGE_FLAG"></span><span id="gl_edge_flag"></span>MARCA \_ DE BORDE DE \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_EDGE_FLAG"></span><span id="gl_edge_flag"></span>GL \_ EDGE \_ FLAG</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Marca perimetral                                                                        |
+| Descripción:     | Marca de borde                                                                        |
 | Grupo de atributos: | actuales                                                                          |
 | Valor inicial:   | GL \_ TRUE                                                                         |
 | Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |

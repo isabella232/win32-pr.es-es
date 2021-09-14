@@ -3,8 +3,8 @@ title: Método Counters.Add
 description: Agrega una instancia counterItem a la colección.
 ms.assetid: 9daecfe6-c2a9-48af-8b59-4f81f0325535
 keywords:
-- Agregar método SysMon
-- Add method SysMon , Counters (Clase)
+- Adición del método SysMon
+- Agregar método SysMon , clase Counters
 - Clase Counters SysMon , Add (método)
 topic_type:
 - apiref
@@ -17,11 +17,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: a8d8169980de00338c7fdd0b804013f986a5a7ca
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466012"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068862"
 ---
 # <a name="countersadd-method"></a>Método Counters.Add
 
@@ -65,21 +65,21 @@ Para obtener más información sobre cómo especificar una ruta de acceso de con
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si especifica un contador comodín en el parámetro *pathname,* el método **Add** crea un objeto [**CounterItem**](counteritem.md) para cada ruta de acceso expandida. A **continuación,** el método Add devuelve un puntero al primer **elemento CounterItem agregado.**
 
-Si el carácter comodín daría como resultado un contador duplicado, el error no se notifica y no se crea ningún duplicado. Si se produce una condición de error antes de crear todos los contadores, se notifica el error y no se crean los contadores restantes.
+Si el carácter comodín daría lugar a un contador duplicado, el error no se notifica y no se crea ningún duplicado. Si se produce una condición de error antes de crear todos los contadores, se notifica el error y no se crean los contadores restantes.
 
-No hay ningún límite en el número de contadores que puede agregar. sin embargo, SYSMON solo representará los primeros 1024 contadores de la colección. No hay ningún límite en el número de contadores que SYSMON mostrará en un informe.
+No hay ningún límite en el número de contadores que puede agregar; sin embargo, SYSMON representará solo los primeros 1024 contadores de la colección. No hay ningún límite en el número de contadores que SYSMON mostrará en un informe.
 
-Para recibir una notificación cuando se agrega un contador, implemente el [evento OnCounterAdded.](systemmonitor-oncounteradded.md)
+Para recibir una notificación cuando se agrega un contador, implemente [el evento OnCounterAdded.](systemmonitor-oncounteradded.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

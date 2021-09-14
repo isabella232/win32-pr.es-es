@@ -4,12 +4,12 @@ description: Las funciones de administración de red toman cadenas Unicode como 
 ms.assetid: 63ce93eb-3a5b-4650-aa6c-ffbb0f3ccf6e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 842ab308ee1aa56ae017f9d5ef2e12ad1f4d42e79092201254c04f7613544c5b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2a0285bed631546d086b395f218e75ff0e658b2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119745105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069366"
 ---
 # <a name="nls-support"></a>Compatibilidad con NLS
 

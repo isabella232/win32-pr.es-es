@@ -1,5 +1,5 @@
 ---
-description: Vínculos a la documentación de los métodos y propiedades del contenedor de interoperabilidad IAzBizRuleInterfaces.
+description: Vínculos a la documentación de las propiedades y métodos de contenedor de interoperabilidad de IAzBizRuleInterfaces.
 ms.assetid: 2c9474e3-01d0-412d-9028-89a377d5592d
 title: Interfaz Microsoft.Interop.Security.AzRoles.IAzBizRuleInterfaces
 ms.topic: reference
@@ -27,18 +27,18 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: e40a637e0c8689999fd22572e704956d5c5e3ac35442a4ca1f93df8fb8d4be49
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 67ff4b0742eb73eda1495cb8366e36cdfd2c8c3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119414255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069080"
 ---
 # <a name="microsoftinteropsecurityazrolesiazbizruleinterfaces-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzBizRuleInterfaces
 
 Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzBizRuleInterfaces** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz Microsoft.Interop.Security.AzRoles.IAzBizRuleInterfaces** tiene estos tipos de miembros:
 

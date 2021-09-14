@@ -1,21 +1,21 @@
 ---
-description: En la tabla siguiente se muestra el
+description: En la tabla siguiente se enumeran los
 ms.assetid: 3f47a52c-2d36-4a74-9d7f-df37645b8e72
 title: Herramientas de contadores de rendimiento
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: a4f1640a269b87cce7452e54a2557dcc9c34fe154ae9e9f95fdd3794e275b59e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc40dd5dfe640e09ac6f7258856389f04d60215f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250556"
 ---
 # <a name="performance-counters-tools"></a>Herramientas de contadores de rendimiento
 
 ## <a name="data-collection-tools"></a>Herramientas de recopilación de datos
 
-Las siguientes herramientas son útiles al consumir o manipular Windows contador de rendimiento.
+Las siguientes herramientas son útiles al consumir o manipular datos Windows contador de rendimiento.
 
 |Herramienta|Descripción
 |----|-----------

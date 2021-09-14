@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 5b15d8c711813251c7ad2593939a2d3284f79acaa4a3204ea89cb59bc26ce23c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f4a2cffa77b2a66267daf0a67a59698ae3e3b8eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118990585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063847"
 ---
 # <a name="d3dxvec3project-function-d3dx10mathh"></a>Función D3DXVec3Project (D3DX10Math.h)
 
@@ -104,7 +104,7 @@ Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
 Puntero a una estructura D3DXVECTOR3 que es el vector proyectado desde el espacio del objeto al espacio de pantalla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec3Project se puede usar como parámetro para otra función.
 
@@ -118,7 +118,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

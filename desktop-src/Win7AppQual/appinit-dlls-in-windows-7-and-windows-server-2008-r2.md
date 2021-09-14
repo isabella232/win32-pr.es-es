@@ -4,12 +4,12 @@ ms.assetid: 6d1f9703-6dc9-4fdc-b52f-e6bb60a2fe8d
 title: AppInit_DLLs en Windows 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8741039952b0ea15d32b19bc48d4197ea13751bc492ff82fc8e67b1662d0b682
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4820fcb9840bbec139ff78f3c6cc082b2dca4eeb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249410"
 ---
 # <a name="appinit_dlls-in-windows-7-and-windows-server-2008-r2"></a>Archivos DLL de AppInit \_ en Windows 7 y Windows Server 2008 R2
 
@@ -37,7 +37,7 @@ ms.locfileid: "120031075"
 
 ## <a name="description"></a>Descripción
 
-Los archivos DLL de AppInit son un mecanismo que permite cargar una lista arbitraria de archivos DLL en cada proceso de modo de usuario \_ del sistema. Microsoft está modificando la instalación de archivos DLL de AppInit en Windows 7 y Windows Server 2008 R2 para agregar un nuevo requisito de firma de código. Esto ayudará a mejorar la confiabilidad y el rendimiento del sistema, así como a mejorar la visibilidad del origen del software.
+Los archivos DLL de AppInit son un mecanismo que permite cargar una lista arbitraria de archivos DLL en cada proceso de modo de usuario \_ del sistema. Microsoft está modificando la instalación de archivos DLL AppInit en Windows 7 y Windows Server 2008 R2 para agregar un nuevo requisito de firma de código. Esto ayudará a mejorar la confiabilidad y el rendimiento del sistema, así como a mejorar la visibilidad del origen del software.
 
 ## <a name="configuration"></a>Configuración
 
@@ -92,11 +92,11 @@ Los valores almacenados en HKEY LOCAL MACHINE SOFTWARE Microsoft Windows NT Curr
 
 **Windows 7**
 
-Todos los archivos DLL cargados por la infraestructura de archivos DLL AppInit \_ deben estar firmados por código. En a favor de la compatibilidad de aplicaciones, el Windows operativo 7 cargará todos los archivos DLL de AppInit. Sin embargo, Microsoft recomienda que todos los desarrolladores de aplicaciones firmen sus archivos DLL para ayudar a mejorar la confiabilidad de Windows y prepararse para el cumplimiento de la firma de código en versiones futuras de Windows. La clave del Registro RequireSignedAppInit controla este comportamiento y su valor en Windows 7 se establece \_ en 0 de forma predeterminada.
+Todos los archivos DLL cargados por la infraestructura de archivos DLL De AppInit \_ deben estar firmados por código. En a favor de la compatibilidad de aplicaciones, el Windows operativo 7 cargará todos los archivos DLL de AppInit. Sin embargo, Microsoft recomienda que todos los desarrolladores de aplicaciones firmen sus archivos DLL para ayudar a mejorar la confiabilidad de Windows y prepararse para el cumplimiento de la firma de código en versiones futuras de Windows. La clave del Registro RequireSignedAppInit controla este comportamiento y su valor en Windows 7 se establece \_ en 0 de forma predeterminada.
 
 **Windows Server 2008 R2**
 
-Todos los archivos DLL cargados por la infraestructura de archivos DLL AppInit \_ deben estar firmados por código. La clave del Registro RequireSignedAppInit controla este comportamiento y su valor en Windows Server 2008 R2 está establecido en \_ 1 de forma predeterminada.
+Todos los archivos DLL cargados por la infraestructura de archivos DLL De AppInit \_ deben estar firmados por código. La clave del Registro RequireSignedAppInit dll controla este comportamiento y su valor en Windows Server 2008 R2 está establecido en \_ 1 de forma predeterminada.
 
 ## <a name="links-to-other-resources"></a>Vínculos a otros recursos
 

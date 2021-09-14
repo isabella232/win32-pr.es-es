@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6c20e3d693aa7d5be5be0236d9eefebe7efcb70bc236db3f84389e5a3ceeccf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44d479add519d8b7df346869e783c36560fc46dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068451"
 ---
 # <a name="displayartist-attribute"></a>Atributo DisplayArtist
 
@@ -27,9 +27,9 @@ El **atributo DisplayArtist** es el nombre del intérprete que se muestra para u
 
 -   [Elementos de audio](audio-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Por lo general, **DisplayArtist** tendrá el mismo valor que el atributo **WM/AlbumArtist** cuando se establezca ese atributo. De lo contrario, el valor será el nombre del intérprete que está asociado a la primera pista del álbum.
+Por lo general, **DisplayArtist** tendrá el mismo valor que el **atributo WM/AlbumArtist** cuando se establezca ese atributo. De lo contrario, el valor será el nombre del intérprete que está asociado con la primera pista del álbum.
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -39,11 +39,11 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 | Requisito | Value |
 |--------------------|------------------------------------|
-| Versión<br/> | Reproductor de Windows Media 11<br/> |
+| Version<br/> | Reproductor de Windows Media 11<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

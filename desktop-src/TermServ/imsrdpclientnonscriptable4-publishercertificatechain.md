@@ -1,22 +1,22 @@
 ---
-title: Propiedad PublisherCertificateChain de IMsRdpClientNonScriptable4
-description: Controla la cadena de certificados del publicador. La cadena se almacena en una variante de tipo VT \_ BYREF que contiene un puntero a una estructura de contexto de cadena de certificados \_ \_ . Para obtener información acerca de las estructuras de VT \_ BYREF, consulte Variant y VARIANTARG.
+title: Propiedad IMsRdpClientNonScriptable4 PublisherCertificateChain
+description: Controla la cadena de certificados del publicador. La cadena se almacena en una variante de tipo VT \_ BYREF que contiene un puntero a una estructura CERT \_ CHAIN \_ CONTEXT. Para obtener información sobre las \_ estructuras BYREF de VT, vea VARIANT y VARIANTARG.
 ms.assetid: 27ab0aff-1aef-4701-abe0-849bf32c9773
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad PublisherCertificateChain
-- Propiedad PublisherCertificateChain Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad PublisherCertificateChain
-- Propiedad PublisherCertificateChain Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad PublisherCertificateChain
-- Servicios de Escritorio remoto de la propiedad PublisherCertificateChain, objeto MsRdpClient6
-- Servicios de Escritorio remoto de objeto MsRdpClient6, propiedad PublisherCertificateChain
-- Servicios de Escritorio remoto de la propiedad PublisherCertificateChain, objeto MsRdpClient7
-- Servicios de Escritorio remoto de objeto MsRdpClient7, propiedad PublisherCertificateChain
-- Servicios de Escritorio remoto de la propiedad PublisherCertificateChain, objeto MsRdpClient8
-- Servicios de Escritorio remoto de objeto MsRdpClient8, propiedad PublisherCertificateChain
-- Servicios de Escritorio remoto de la propiedad PublisherCertificateChain, objeto MsRdpClient9
-- Servicios de Escritorio remoto de objeto MsRdpClient9, propiedad PublisherCertificateChain
+- Propiedad PublisherCertificateChain Servicios de Escritorio remoto
+- Propiedad PublisherCertificateChain Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , propiedad PublisherCertificateChain
+- Propiedad PublisherCertificateChain Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad PublisherCertificateChain
+- Propiedad PublisherCertificateChain Servicios de Escritorio remoto , objeto MsRdpClient6
+- Objeto MsRdpClient6 Servicios de Escritorio remoto , propiedad PublisherCertificateChain
+- Propiedad PublisherCertificateChain Servicios de Escritorio remoto , objeto MsRdpClient7
+- Objeto MsRdpClient7 Servicios de Escritorio remoto , propiedad PublisherCertificateChain
+- Propiedad PublisherCertificateChain Servicios de Escritorio remoto , objeto MsRdpClient8
+- Objeto MsRdpClient8 Servicios de Escritorio remoto , propiedad PublisherCertificateChain
+- Propiedad PublisherCertificateChain Servicios de Escritorio remoto , objeto MsRdpClient9
+- Objeto MsRdpClient9 Servicios de Escritorio remoto , propiedad PublisherCertificateChain
 topic_type:
 - apiref
 api_name:
@@ -37,15 +37,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 7552483c2fc651ace1a9401e0555f90fb2584423
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068611"
 ---
-# <a name="imsrdpclientnonscriptable4publishercertificatechain-property"></a>IMsRdpClientNonScriptable4::P propiedad ublisherCertificateChain
+# <a name="imsrdpclientnonscriptable4publishercertificatechain-property"></a>IMsRdpClientNonScriptable4::P ublisherCertificateChain
 
-Controla la cadena de certificados del publicador. La cadena se almacena en una variante de tipo **VT \_ BYREF** que contiene un puntero a una estructura de [**\_ \_ contexto de cadena de certificados**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_context) . Para obtener información acerca de las estructuras de **VT \_ BYREF** , consulte [Variant y VARIANTARG](/windows/win32/api/oaidl/ns-oaidl-variant).
+Controla la cadena de certificados del publicador. La cadena se almacena en una variante de tipo **VT \_ BYREF** que contiene un puntero a una [**estructura CERT CHAIN \_ \_ CONTEXT.**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_context) Para obtener información **sobre las \_ estructuras BYREF de VT,** vea VARIANT y [VARIANTARG.](/windows/win32/api/oaidl/ns-oaidl-variant)
 
 Esta propiedad es de lectura y escritura.
 
@@ -66,11 +66,11 @@ HRESULT get_PublisherCertificateChain(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece la cadena de certificados del publicador. La cadena se almacena en una variante de tipo **VT \_ BYREF** que contiene un puntero a una estructura de [**\_ \_ contexto de cadena de certificados**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_context) .
+Establece la cadena de certificados del publicador. La cadena se almacena en una variante de tipo **VT \_ BYREF** que contiene un puntero a una [**estructura CERT CHAIN \_ \_ CONTEXT.**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_context)
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Devuelve **S \_ correcto** si se realiza correctamente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: be43fa99021ec5612a148ba42db1b11e1fd6d885fa64fa003c0dfa672688d555
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f562443f9ca66def7e053f5958b17e70af50140
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012263"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069342"
 ---
 # <a name="expertreallocmemory-function"></a>Función ExpertReallocMemory
 
@@ -76,7 +76,7 @@ Si la función se realiza correctamente, el valor devuelto es un puntero a la me
 
 Si la función no se realiza correctamente, el valor devuelto es **NULL** y *pError* (si es un valor distinto de **NULL)** indica el motivo del error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Es importante tener en cuenta que un experto debe usar las Monitor de red de asignación de memoria para la administración de memoria. Si se produce un error en el experto durante el tiempo de ejecución, el uso de estas funciones Monitor de red liberar la memoria que ha asignado.
 

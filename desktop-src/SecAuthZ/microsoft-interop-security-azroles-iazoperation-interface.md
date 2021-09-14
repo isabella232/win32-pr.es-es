@@ -1,5 +1,5 @@
 ---
-description: Vínculos a la documentación de los métodos y propiedades del contenedor de interoperabilidad de IAzOperation.
+description: Vínculos a la documentación de los métodos y propiedades del contenedor de interoperabilidad IAzOperation.
 ms.assetid: 7f61f37d-2a9c-436e-914a-3fda899f0e49
 title: Interfaz Microsoft.Interop.Security.AzRoles.IAzOperation
 ms.topic: reference
@@ -47,18 +47,18 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: f2a156b026024d8de3f12810f2250f3d169f667977709db6166f2d25362f5e22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ff0162ab8c7086a951e113d482dd1fcd5ec10e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118912884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069063"
 ---
 # <a name="microsoftinteropsecurityazrolesiazoperation-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzOperation
 
 Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzOperation** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz Microsoft.Interop.Security.AzRoles.IAzOperation** tiene estos tipos de miembros:
 
@@ -89,10 +89,10 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzOperation** tiene estas prop
 
 | Propiedad                                                                       | Tipo de acceso           | Descripción                                                                                 |
 |:-------------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------|
-| **Microsoft.Interop.Security.Azroles.IAzOperation.ApplicationData**<br/> | Lectura/escritura<br/> | [**Propiedad ApplicationData de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_applicationdata)<br/> |
-| **Microsoft.Interop.Security.Azroles.IAzOperation.Description**<br/>     | Lectura/escritura<br/> | [**Propiedad Description de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_description)<br/>         |
-| **Microsoft.Interop.Security.Azroles.IAzOperation.Name**<br/>            | Lectura/escritura<br/> | [**Propiedad Name de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_name)<br/>                       |
-| **Microsoft.Interop.Security.Azroles.IAzOperation.OperationID**<br/>     | Lectura/escritura<br/> | [**Propiedad OperationID de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_operationid)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzOperation.ApplicationData**<br/> | Lectura y escritura<br/> | [**Propiedad ApplicationData de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_applicationdata)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzOperation.Description**<br/>     | Lectura y escritura<br/> | [**Propiedad Description de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_description)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzOperation.Name**<br/>            | Lectura y escritura<br/> | [**Propiedad Name de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_name)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzOperation.OperationID**<br/>     | Lectura y escritura<br/> | [**Propiedad OperationID de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_operationid)<br/>         |
 | **Microsoft.Interop.Security.Azroles.IAzOperation.Writable**<br/>        | Solo lectura<br/>  | [**Propiedad grabable de IAzOperation**](/windows/desktop/api/Azroles/nf-azroles-iazoperation-get_writable)<br/>               |
 
 
@@ -103,7 +103,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzOperation** tiene estas prop
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

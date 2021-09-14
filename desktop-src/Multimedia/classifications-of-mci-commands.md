@@ -7,11 +7,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1524e6aa2094679e91acddb9dbfbb8cb480eb39f
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069563"
 ---
 # <a name="classifications-of-mci-commands"></a>Clasificaciones de comandos de MCI
 
@@ -74,7 +74,7 @@ En la lista siguiente se resumen los comandos básicos. El uso de estos comandos
 | [**Reanudar**](resume.md) | [**MCI \_ RESUME**](mci-resume.md) | Reanuda la reproducción o grabación en un dispositivo en pausa.                                                                                                                                                                                        |
 | [**Salvar**](save.md)     | [**MCI \_ SAVE**](mci-save.md)     | Guarda los datos en un archivo de disco.                                                                                                                                                                                                              |
 | [**Buscar**](seek.md)     | [**MCI \_ SEEK**](mci-seek.md)     | Busca hacia delante o hacia atrás.                                                                                                                                                                                                              |
-| [**Establecer**](set.md)       | [**MCI \_ SET**](mci-set.md)       | Establece el estado operativo del dispositivo.                                                                                                                                                                                                 |
+| [**set**](set.md)       | [**MCI \_ SET**](mci-set.md)       | Establece el estado operativo del dispositivo.                                                                                                                                                                                                 |
 | [**status**](status.md) | [**ESTADO DE MCI**](mci-status.md)  | Obtiene información de estado sobre el dispositivo. También es un comando obligatorio; dado que algunas de sus marcas no son necesarias, también se muestra aquí. (Los elementos opcionales admiten dispositivos que usan medios lineales con posiciones identificables). |
 | [**Parada**](stop.md)     | [**MCI \_ STOP**](mci-stop.md)     | Deja de reproducirse.                                                                                                                                                                                                                          |
 
@@ -110,7 +110,7 @@ Los siguientes comandos extendidos están disponibles con los tipos de dispositi
 | [**Paso**](step.md)           | [**PASO \_ de MCI**](mci-step.md)           | digitalvideo, videodisc | Avanza o invierte la reproducción de uno o varios fotogramas.                                             |
 | [**Descongelar**](unfreeze.md)   | [**MCI \_ UNFREEZE**](mci-unfreeze.md)   | overlay                 | Permite que el búfer de fotogramas adquiera datos de vídeo.                                                   |
 | [**actualizar**](update.md)       | [**ACTUALIZACIÓN \_ de MCI**](mci-update.md)       | digitalvideo            | Vuelve a dibujar el marco actual en el contexto del dispositivo.                                               |
-| [**where**](where.md)         | [**MCI WHERE**](mci-where.md)          | digitalvideo, overlay   | Obtiene el rectángulo que especifica el origen, el destino o el área de marco.                          |
+| [**Dónde**](where.md)         | [**MCI WHERE**](mci-where.md)          | digitalvideo, overlay   | Obtiene el rectángulo que especifica el origen, el destino o el área de marco.                          |
 | [**Ventana**](window.md)       | [**VENTANA \_ MCI**](mci-window.md)       | digitalvideo, overlay   | Controla la ventana de presentación.                                                                      |
 
 

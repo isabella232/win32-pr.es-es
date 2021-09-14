@@ -1,19 +1,19 @@
 ---
-description: 'Ahora hay tres generaciones de SDK de Rights Management disponibles: Rights Management SDK 4.2, Microsoft Rights Management SDK 2.1 y Active Directory Rights Management Services SDK, así como una API de scripting, Active Directory Rights Management Services Scripting API, que permite la administración personalizada de un servidor RMS.'
+description: 'Ahora hay tres generaciones de SDK de Rights Management disponibles: Rights Management SDK 4.2, Sdk de Microsoft Rights Management 2.1 y SDK de Active Directory Rights Management Services, así como una API de scripting, Active Directory Rights Management Services Scripting API, que permite la administración personalizada de un servidor RMS.'
 ms.assetid: 7776559E-3950-4184-B3C0-BD12EE593510
 title: SDK de Microsoft Rights Management
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b579e01043145ffc0713827be00ae9f56e165f2cee68939c17d6d2c55b8ac7d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fce8f6e588fbff8f719e31da1696e0df4f1c92b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119663935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068937"
 ---
 # <a name="microsoft-rights-management-sdks"></a>SDK de Microsoft Rights Management
 
-Ahora hay tres generaciones de SDK de Rights Management disponibles: [Rights Management SDK 4.2,](/previous-versions/windows/desktop/msipcthin2/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal) [Sdk de Microsoft Rights Management 2.1](/previous-versions/windows/desktop/msipc/microsoft-information-protection-and-control-client-portal) y [SDK de Active Directory Rights Management Services,](/previous-versions/windows/desktop/adrms_sdk/active-directory-rights-management-services-sdk-portal)así como una API de scripting, [Active Directory Rights Management Services Scripting API,](/previous-versions/windows/desktop/adrms_script/adrms-script-portal)que permite la administración personalizada de un servidor RMS.
+Ahora hay tres generaciones de SDK de Rights Management disponibles: [Rights Management SDK 4.2,](/previous-versions/windows/desktop/msipcthin2/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal) [Microsoft Rights Management SDK 2.1](/previous-versions/windows/desktop/msipc/microsoft-information-protection-and-control-client-portal) y [Active Directory Rights Management Services SDK,](/previous-versions/windows/desktop/adrms_sdk/active-directory-rights-management-services-sdk-portal)así como una API de scripting, [Active Directory Rights Management Services Scripting API,](/previous-versions/windows/desktop/adrms_script/adrms-script-portal)que permite la administración personalizada de un servidor RMS.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -38,7 +38,7 @@ RMS SDK 2.1 es una eficaz oferta de SDK para Windows desarrolladores de aplicaci
 </dt> <dd>
 
 > [!Note]  
-> AD RMS SDK que aprovecha la funcionalidad expuesta por el cliente en Msdrm.dll está disponible para su uso en Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista. En versiones posteriores podría modificarse o no estar disponible. En su lugar, [use Microsoft Rights Management Services SDK 2.1](/previous-versions/windows/desktop/msipc/microsoft-information-protection-and-control-client-portal), que aprovecha la funcionalidad expuesta por el cliente en Msipc.dll.
+> AD RMS SDK que aprovecha la funcionalidad expuesta por el cliente en Msdrm.dll está disponible para su uso en Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista. En versiones posteriores podría modificarse o no estar disponible. En su lugar, use [Microsoft Rights Management Services SDK 2.1](/previous-versions/windows/desktop/msipc/microsoft-information-protection-and-control-client-portal), que aprovecha la funcionalidad expuesta por el cliente en Msipc.dll.
 
  
 
@@ -47,7 +47,7 @@ RMS SDK 2.1 es una eficaz oferta de SDK para Windows desarrolladores de aplicaci
 [API de scripting de Active Directory Rights Management Services](/previous-versions/windows/desktop/adrms_script/adrms-script-portal)
 </dt> <dd>
 
-La API de scripting Windows Active Directory Rights Management Services (AD RMS) se puede usar para crear scripts para administrar una AD RMS instalación.
+La WINDOWS ACTIVE DIRECTORY RIGHTS MANAGEMENT SERVICES (AD RMS) Scripting API se puede usar para crear scripts para administrar una AD RMS instalación.
 
 </dd> </dl>
 

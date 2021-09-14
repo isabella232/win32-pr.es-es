@@ -23,18 +23,18 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 280632767dd51de3e21876cee6e70efc60fff640af38cab78b3e514c6c6f24b6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1af9203abcbbbfdd14e8f6b3983aa2ebbfc6c35b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117781113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069083"
 ---
 # <a name="microsoftinteropsecurityazrolesiazapplications-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzApplications
 
 Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzApplications** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplications** tiene estos tipos de miembros:
 

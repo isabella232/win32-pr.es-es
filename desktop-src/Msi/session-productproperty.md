@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: a48c108b4263fc7729927e1bf6e1155a38552eaedd1f77c7ea8ca3e968262cb5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5a9061e96bf8dd553d749977e827ee7ebdcb1846
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119628905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272471"
 ---
 # <a name="sessionproductproperty-property"></a>Propiedad Session.ProductProperty
 

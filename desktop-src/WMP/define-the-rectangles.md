@@ -9,16 +9,16 @@ keywords:
 - rectángulos en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40d227b4adb0444e459c476fed084be4fe60dc129b872a10b99dffac22c9cc6e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f68db076e1ada91841dfafc8ec27752e394836bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119863545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068484"
 ---
 # <a name="define-the-rectangles"></a>Definir los rectángulos
 
-Dado que ningún elemento de la interfaz de usuario se puede superponer, resulta útil definir los rectángulos dentro de los que se dibujará cada elemento. Además, la creación de rectángulos será útil cuando tenga que escribir las coordenadas.
+Dado que no se pueden superponer elementos de interfaz de usuario, resulta útil definir los rectángulos dentro de los que se dibujará cada elemento. Además, la creación de rectángulos será útil cuando tenga que escribir las coordenadas.
 
 Active la cuadrícula de Photoshop con líneas de cuadrícula cada diez píxeles. Active el ajuste a la cuadrícula para facilitar el dibujo del rectángulo.
 

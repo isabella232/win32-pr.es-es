@@ -17,15 +17,15 @@ keywords:
 - Interfaz digital instrumentable (MIDI), funciones de devolución de llamada
 - FUNCIONES DE DEVOLUCIÓN DE LLAMADA (Interfaz digital instrumenta instrumentable), funciones de devolución de llamada
 - reproducir archivos MIDI, funciones de devolución de llamada
-- Función de devolución de llamada de MidiOutProc
+- Función de devolución de llamada Devolución de llamada de MidiOutProc
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: bccccd8e5fb052b89e8ca1804b89de6da26cd5b7
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371012"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272284"
 ---
 # <a name="using-a-callback-function-to-manage-buffered-playback"></a>Usar una función de devolución de llamada para administrar la reproducción en búfer
 

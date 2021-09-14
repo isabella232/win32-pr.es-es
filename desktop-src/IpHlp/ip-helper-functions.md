@@ -4,12 +4,12 @@ description: Las siguientes funciones recuperan y modifican los valores de confi
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
-ms.openlocfilehash: 050db5574a1c10f01dadd1f53bb8e5a5aee2625a922680fe44f50a76e07ada97
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee16bb0b65545c4abbef387c5b90d42fb9d3c629
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118389136"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272524"
 ---
 # <a name="ip-helper-functions"></a>Funciones auxiliares de IP
 
@@ -172,11 +172,11 @@ Las siguientes funciones recuperan y modifican los valores de configuración par
 -   [**CreateSortedAddressPairs**](/windows/win32/api/Netioapi/nf-netioapi-createsortedaddresspairs)
 -   [**ParseNetworkString**](/windows/win32/api/Iphlpapi/nf-iphlpapi-parsenetworkstring)
 
-## <a name="network-configuration"></a>Network configuration (Configuración de red)
+## <a name="network-configuration"></a>Configuración de red
 
 -   [**GetNetworkParams**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getnetworkparams)
 
-## <a name="notification"></a>Notificación
+## <a name="notification"></a>Notification
 
 -   [**CancelMibChangeNotify2**](/windows/win32/api/Netioapi/nf-netioapi-cancelmibchangenotify2)
 -   [**NotifyAddrChange**](/windows/win32/api/Iphlpapi/nf-iphlpapi-notifyaddrchange)
@@ -218,7 +218,7 @@ Estas funciones solo se definen en Windows Server 2003.
 -   [**NotifyTeredoPortChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyteredoportchange)
 -   [**NotifyStableUnicastIpAddressTable**](/windows/win32/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 
-## <a name="transmission-control-protocol-tcp-and-user-datagram-protocol-udp"></a>Protocolo de control de transmisión (TCP) y protocolo de datagramas de usuario (UDP)
+## <a name="transmission-control-protocol-tcp-and-user-datagram-protocol-udp"></a>Protocolo de control de transmisión (TCP) y Protocolo de datagramas de usuario (UDP)
 
 -   [**GetExtendedTcpTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getextendedtcptable)
 -   [**GetExtendedUdpTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getextendedudptable)
@@ -247,7 +247,7 @@ Estas funciones solo se definen en Windows Server 2003.
 ## <a name="deprecated-apis"></a>Interfaces API desusadas
 
 > [!Note]  
-> Estas funciones están en desuso y No son compatibles con Microsoft.
+> Estas funciones están en desuso y Microsoft no las admite.
 
 -   [**AllocateAndGetTcpExTableFromStack**](/windows/win32/api/Iphlpapi/nf-iphlpapi-allocateandgettcpextablefromstack)
 -   [**AllocateAndGetUdpExTableFromStack**](/windows/win32/api/Iphlpapi/nf-iphlpapi-allocateandgetudpextablefromstack)

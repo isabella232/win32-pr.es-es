@@ -4,12 +4,12 @@ ms.assetid: 0dd18add-6c7e-40a8-8b39-10c65bdfb2e0
 title: ItMedia::p ut_MediaName (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d77ffde28406b7fb527ed8679d1f65d6aba537e611b69d1ad31e8679f59fd0e9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 66dcbd4e29f59694d610fb4e6af9fd49aa53323d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119003343"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250268"
 ---
 # <a name="itmediaput_medianame-method"></a>ItMedia::p ut \_ MediaName (método)
 
@@ -57,7 +57,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación debe usar [**SysAllocString para**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) asignar memoria para el parámetro *pMediaName* y usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar la memoria cuando la variable ya no sea necesaria.
 
@@ -70,13 +70,13 @@ Esta función puede enviar datos a través de la conexión sin cifrar; por lo ta
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

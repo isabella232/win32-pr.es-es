@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102515
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3e2ddd6ff0973d87b387a3c0df1bc21ff4730d8a38d9c55317ca2726673b5c52
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1544120a641650fee095fef8deab394c652b4c9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119619985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248978"
 ---
 # <a name="esentoutofobjectidsexception-methods"></a>Métodos de EsentOutOfObjectIDsException 
 
@@ -78,7 +78,7 @@ El [tipo EsentOutOfObjectIDsException](./esentoutofobjectidsexception-class.md) 
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

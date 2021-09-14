@@ -1,7 +1,7 @@
 ---
-description: Se usa para escenarios que requieren la autenticación 802.1X antes de Windows inicio de sesión.
+description: Se usa para escenarios que requieren autenticación 802.1X antes de Windows inicio de sesión.
 ms.assetid: 76c8d416-3912-41b1-ac9d-3e6e86a76ceb
-title: Ejemplo de Sign-On de perfil único
+title: Ejemplo de Sign-On perfil único
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1f89f7e9c39123cd7bf55c8bc48ff69d007d150c086714c82c37619c477dd25b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 077ed95095150e81ad9a3d7412d1940dcb1b33e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117797964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069433"
 ---
-# <a name="single-sign-on-profile-sample"></a>Ejemplo de Sign-On de perfil único
+# <a name="single-sign-on-profile-sample"></a>Ejemplo de Sign-On perfil único
 
 El ejemplo de perfil de inicio de sesión único (SSO) se puede usar para escenarios que requieren autenticación 802.1X antes de Windows inicio de sesión.
 
@@ -24,7 +24,7 @@ Este ejemplo está configurado para usar Wi-Fi seguridad de acceso protegido 2 q
 
 Aunque este ejemplo está configurado para usar WPA2-Enterprise y PEAP-MSCHAPv2, los perfiles de SSO se pueden configurar con otros tipos de seguridad y autenticación.
 
-**Windows 7 y Windows Server 2008 R2 con el servicio LAN inalámbrica instalado:** Los cambios se implementan en Windows 7 y Windows Server 2008 R2 con el servicio laN inalámbrica instalado para optimizar el rendimiento de las redes inalámbricas. La configuración predeterminada de [**autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) cuando este elemento no está establecido en un perfil de LAN inalámbrica ha cambiado. La configuración predeterminada se cambia a "false" en Windows 7 y Windows Server 2008 R2 con el servicio laN inalámbrica instalado. El valor predeterminado era "true" en Windows Server 2008 y Windows Vista. Consulte la descripción del [**elemento de esquema autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obtener más información.
+**Windows 7 y Windows Server 2008 R2 con el servicio laN inalámbrica instalado:** Los cambios se implementan en Windows 7 y Windows Server 2008 R2 con el servicio laN inalámbrica instalado para optimizar el rendimiento de las redes inalámbricas. La configuración predeterminada de [**autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) cuando este elemento no está establecido en un perfil de LAN inalámbrica ha cambiado. La configuración predeterminada se cambia a "false" en Windows 7 y Windows Server 2008 R2 con el servicio laN inalámbrica instalado. El valor predeterminado era "true" en Windows Server 2008 y Windows Vista. Consulte la descripción del [**elemento de esquema autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obtener más información.
 
 **Windows XP con SP3 y la API de LAN inalámbrica para Windows XP con SP2:** Se [**omite**](wlan-profileschema-name-wlanprofile-element.md) el elemento secundario name del elemento [**WLANProfile.**](wlan-profileschema-wlanprofile-element.md) El nombre del perfil, tal como se almacena en el almacén de perfiles, se deriva del elemento secundario [**name**](wlan-profileschema-name-ssid-element.md) del [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md) Los elementos secundarios [**cacheUserData**](onexschema-cacheuserdata-onex-element.md), [**maxAuthFailures,**](onexschema-maxauthfailures-onex-element.md) [**authMode**](onexschema-authmode-onex-element.md)y [**singleSignOn**](onexschema-singlesignon-onex-element.md) del [**elemento OneX**](onexschema-onex-element.md) no se admiten y deben quitarse del perfil antes de su uso.
 

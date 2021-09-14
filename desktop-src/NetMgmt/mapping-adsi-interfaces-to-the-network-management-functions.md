@@ -4,12 +4,12 @@ description: Las Active Directory service interfaces (ADSI) son un conjunto de i
 ms.assetid: dfa81c58-3ce4-40ee-8bfc-a19a13781992
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5ed9411989d5db754326a7a89130deada129fa6a58322ddef7e118772960d71
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 49ec1a1055d3d016bf8b7b1bd3f357810b7ddd86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119912055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069398"
 ---
 # <a name="mapping-adsi-interfaces-to-the-network-management-functions"></a>Asignación de interfaces ADSI a las funciones de administración de redes
 

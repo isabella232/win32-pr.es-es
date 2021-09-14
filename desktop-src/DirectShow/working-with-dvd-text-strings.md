@@ -4,16 +4,16 @@ ms.assetid: 6d415ebb-5cd0-4631-9404-f2ebabef2476
 title: Trabajar con cadenas de texto de DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a514ff06047e6a35edb3e10c85e1e88aee9b799255c4108e801f64ea44340941
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 31d04a786e46c795f028edbe2b955e71715aaefb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119696695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272572"
 ---
 # <a name="working-with-dvd-text-strings"></a>Trabajar con cadenas de texto de DVD
 
-Algunos discos DE DVD, especialmente los discos de dvd, pueden contener una lista de cadenas de texto para complementar el contenido de vídeo o audio. Estas cadenas de texto contienen metadatos sobre el contenido, como títulos de canciones, nombres de intérpretes, información de género, entre otros. Las cadenas de texto pueden estar presentes en más de un idioma. Estas cadenas son opcionales y muchos discos no las tienen.
+Algunos discos DVD, especialmente los discos de audio, pueden contener una lista de cadenas de texto para complementar el contenido de audio o vídeo. Estas cadenas de texto contienen metadatos sobre el contenido, como títulos de canciones, nombres de intérpretes, información de género, entre otros. Las cadenas de texto pueden estar presentes en más de un idioma. Estas cadenas son opcionales y muchos discos no las tienen.
 
 Para recuperar cadenas de texto de un DVD, use la [**interfaz IDvdInfo2,**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2) que expone el navegador [de DVD.](dvd-navigator-filter.md) En realidad, no es necesario crear un gráfico de reproducción de DVD para recuperar las cadenas de texto. Simplemente puede crear el navegador de DVD, establecer el volumen de DVD y, a continuación, llamar a los métodos de cadena de texto pertinentes:
 
@@ -33,21 +33,21 @@ Para recuperar cadenas de texto de un DVD, use la [**interfaz IDvdInfo2,**](/win
 Este es el procedimiento básico para obtener cadenas de texto:
 
 1.  Llame [**a IDvdInfo2::GetDVDTextNumberOfLanguages**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextnumberoflanguages) para buscar el número total de idiomas en los que aparecen las cadenas de texto. Si el número es cero, significa que el DVD no tiene ninguna cadena de texto. (Este es quizás el caso más común, de hecho).
-2.  Si el número de idiomas es al menos uno, llame a [**IDvdInfo2::GetDVDTextLanguageInfo**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextlanguageinfo) para obtener información sobre cada idioma. El idioma se especifica por índice. El método devuelve el número total de cadenas de texto en ese idioma, el identificador de configuración regional (**LCID**) del idioma y la codificación de caracteres (Unicode u otro). Las cadenas de texto de DVD pueden usar varios juegos de caracteres diferentes; se enumeran en [**DVD \_ TextCharSet (Enumeración).**](/windows/desktop/api/strmif/ne-strmif-dvd_textcharset)
-3.  Para obtener una cadena de texto, llame a [**IDvdInfo2::GetDVDTextStringAsUnicode**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextstringasunicode) o [**IDvdInfo2::GetDVDTextStringAsNative**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextstringasnative). El primer método devuelve una cadena de caracteres anchos, pero no admite todos los juego de caracteres. El segundo método devuelve una matriz de bytes que contiene los datos de texto sin formato. Para ambos métodos, puede llamar al método con un puntero de búfer **NULL** para buscar el tamaño de la cadena y el tipo de texto. A continuación, asigne un búfer y llame al método de nuevo para obtener la cadena.
+2.  Si el número de idiomas es al menos uno, llame a [**IDvdInfo2::GetDVDTextLanguageInfo**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextlanguageinfo) para obtener información sobre cada idioma. El idioma se especifica mediante index. El método devuelve el número total de cadenas de texto en ese idioma, el identificador de configuración regional **(LCID)** del idioma y la codificación de caracteres (Unicode u otro). Las cadenas de texto de DVD pueden usar varios juegos de caracteres diferentes; se enumeran en [**DVD \_ TextCharSet (Enumeración).**](/windows/desktop/api/strmif/ne-strmif-dvd_textcharset)
+3.  Para obtener una cadena de texto, llame a [**IDvdInfo2::GetDVDTextStringAsUnicode**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextstringasunicode) o [**IDvdInfo2::GetDVDTextStringAsNative**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextstringasnative). El primer método devuelve una cadena de caracteres anchos, pero no admite todos los juego de caracteres. El segundo método devuelve una matriz de bytes que contiene los datos de texto sin formato. Para ambos métodos, puede llamar al método con un puntero de búfer **NULL** para buscar el tamaño de la cadena y el tipo de texto. A continuación, asigne un búfer y llame de nuevo al método para obtener la cadena.
 
-Cada cadena de texto tiene un código de identificador asociado, que indica el significado de la cadena de texto. El identificador se devuelve como un [**valor \_ TextStringType de DVD.**](/windows/desktop/api/strmif/ne-strmif-dvd_textstringtype) Hay dos categorías de identificador: *identificadores de estructura* e *identificadores de contenido.* Los identificadores de estructura tienen códigos numéricos en el intervalo 0x00–0x02F. Los identificadores de contenido tienen un intervalo de 0x30 y superiores. (La **\_ enumeración TextStringType** de DVD define un subconjunto de los identificadores más comunes, pero los métodos [**IDvdInfo2**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2) pueden devolver cualquier código de identificador). Un identificador de estructura describe una parte lógica del DVD, como volumen, título o parte del título (PTT). Un identificador de contenido indica el significado de una cadena de texto determinada, como el título de la película, el título de la canción o el género.
+Cada cadena de texto tiene un código de identificador asociado, que indica el significado de la cadena de texto. El identificador se devuelve como un [**valor \_ TextStringType de DVD.**](/windows/desktop/api/strmif/ne-strmif-dvd_textstringtype) Hay dos categorías de identificador: *identificadores de estructura* e *identificadores de contenido.* Los identificadores de estructura tienen códigos numéricos en el intervalo 0x00–0x02F. Los identificadores de contenido tienen un intervalo de 0x30 y superiores. (La **\_ enumeración TextStringType de DVD** define un subconjunto de los identificadores más comunes, pero los métodos [**IDvdInfo2**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2) pueden devolver cualquier código de identificador). Un identificador de estructura describe una parte lógica del DVD, como volumen, título o parte del título (PTT). Un identificador de contenido indica el significado de una cadena de texto determinada, como el título de la película, el título de la canción o el género.
 
-Los identificadores de estructura no tienen cadenas de texto asociadas. Cuando aparece un identificador de estructura en los datos de cadena de texto, indica que las siguientes cadenas de texto se aplican a esa parte lógica del DVD, hasta el siguiente identificador de estructura. La posición de los identificadores de estructura dentro de los datos de texto corresponde a la jerarquía lógica del volumen de DVD. Por ejemplo, la primera aparición del identificador de título de la estructura de DVD (0x02) representa el primer título del volumen y la siguiente aparición \_ \_ representa el segundo título.
+Los identificadores de estructura no tienen cadenas de texto asociadas. Cuando aparece un identificador de estructura en los datos de cadena de texto, indica que las siguientes cadenas de texto se aplican a esa parte lógica del DVD, hasta el siguiente identificador de estructura. La posición de los identificadores de estructura dentro de los datos de texto corresponde a la jerarquía lógica del volumen de DVD. Por ejemplo, la primera aparición del identificador de título de la estructura de DVD (0x02) representa el primer título del volumen y la siguiente repetición \_ \_ representa el segundo título.
 
-En la tabla siguiente se muestra cómo se podrían definir las cadenas de texto para un DVD con dos títulos.
+En la tabla siguiente se muestra cómo se pueden definir las cadenas de texto para un DVD con dos títulos.
 
 
 
 | DVD \_ TextStringType        | Cadena de texto  | Descripción                                    |
 |----------------------------|--------------|------------------------------------------------|
 | Volumen de estructura de DVD \_ \_ (0x01) | ""           | Identificador de estructura para todo el lado del disco. |
-| Nombre general de DVD \_ \_ (0x30)  | "Volumen de DVD" | Nombre del volumen de DVD.                               |
+| Nombre general de DVD \_ \_ (0x30)  | "Dvd Volume" (Volumen de DVD) | Nombre del volumen de DVD.                               |
 | Título de la estructura de DVD \_ \_ (0x02)  | ""           | Identificador de estructura del primer título.      |
 | Nombre general de DVD \_ \_ (0x30)  | "Título 1"    | Nombre del primer título.                       |
 | Título de la estructura de DVD \_ \_ (0x02)  | ""           | Identificador de estructura del segundo título.     |
@@ -57,7 +57,7 @@ En la tabla siguiente se muestra cómo se podrían definir las cadenas de texto 
 
  
 
-Los [**métodos GetDVDTextStringAsUnicode**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextstringasunicode) y [**GetDVDTextStringAsNative**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextstringasnative) tratan los identificadores de estructura y los identificadores de contenido del mismo modo. La única diferencia es que, para los identificadores de estructura, el búfer de texto asociado está vacío. Es decisión de la aplicación realizar un seguimiento de la relación entre las cadenas de texto y las partes lógicas del DVD.
+Los [**métodos GetDVDTextStringAsUnicode**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextstringasunicode) y [**GetDVDTextStringAsNative**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getdvdtextstringasnative) tratan los identificadores de estructura y los identificadores de contenido iguales. La única diferencia es que para los identificadores de estructura, el búfer de texto asociado está vacío. Es decisión de la aplicación realizar un seguimiento de la relación entre las cadenas de texto y las partes lógicas del DVD.
 
 En el ejemplo siguiente se muestra cómo obtener cadenas de texto de un DVD. En este ejemplo se omiten algunos detalles que requeriría una aplicación real. (Por ejemplo, omite los identificadores de estructura). El ejemplo solo está pensado para mostrar la secuencia correcta de llamadas.
 
@@ -150,7 +150,7 @@ done:
 
 
 
-Para obtener información sobre las cadenas de texto de DVD, vea el sitio [web del foro de DVD.](https://go.microsoft.com/fwlink/?LinkId=8677)
+Para obtener información sobre las cadenas de texto de [DVD,](https://go.microsoft.com/fwlink/?LinkId=8677)vea el sitio web del foro de DVD .
 
 El **método CDvdCore::GetDvdText** de la aplicación DVDSample muestra los pasos básicos para enumerar y mostrar cadenas de texto de DVD.
 

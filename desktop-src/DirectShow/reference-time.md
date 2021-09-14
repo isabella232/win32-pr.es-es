@@ -1,15 +1,15 @@
 ---
-description: El tipo de datos REFERENCE \_ TIME define las unidades para los tiempos de referencia en DirectShow. Cada unidad de tiempo de referencia es de 100 nanosegundos.
+description: El tipo \_ de datos REFERENCE TIME define las unidades para los tiempos de referencia en DirectShow. Cada unidad de tiempo de referencia es de 100 nanosegundos.
 ms.assetid: 862c95bc-2e0a-42c0-b907-45f64f27bd41
 title: REFERENCE_TIME (Strmif.h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08f1600e820ac59c53144743933701a61e4a7b753f814dde06c5c663a760938d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ab88576f611674f5b208c5c39d328c77dcf57aec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119747325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272988"
 ---
 # <a name="reference_time"></a>TIEMPO DE \_ REFERENCIA
 
@@ -22,7 +22,7 @@ typedef LONGLONG REFERENCE_TIME;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **tipo de datos REFERENCE \_ TIME** es un entero de 64 bits.
 
@@ -43,7 +43,7 @@ Para obtener más información sobre las horas de referencia, vea [Time and Cloc
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

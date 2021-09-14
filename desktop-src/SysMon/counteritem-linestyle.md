@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a60ce0c96f9e3eb25639cad9251d8cf3969d022001962e14ec9c3ef4d157ecf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bbff1dd78c6fd65d72c28fe8f13f7bbf5603c75f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118883710"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068882"
 ---
 # <a name="counteritemlinestyle-property"></a>CounterItem.LineStyle, propiedad
 
@@ -29,7 +29,7 @@ Recupera o establece el estilo de línea utilizado para representar el valor del
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -44,7 +44,7 @@ Estilo de línea utilizado para representar el valor del contador. Los valores c
 
 
 
-| Valor                                                                                                                                                                                                                                                                                                                                                                               | Significado                                                          |
+| Value                                                                                                                                                                                                                                                                                                                                                                               | Significado                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | <span id="System.Drawing.Drawing2D.DashStyle.Solid"></span><span id="system.drawing.drawing2d.dashstyle.solid"></span><span id="SYSTEM.DRAWING.DRAWING2D.DASHSTYLE.SOLID"></span><dl> <dt>**System.Drawing.Drawing2D.DashStyle.Solid**</dt> <dt>0</dt> </dl>                     | Línea continua. Este es el valor predeterminado.<br/>                |
 | <span id="System.Drawing.Drawing2D.DashStyle.Dash"></span><span id="system.drawing.drawing2d.dashstyle.dash"></span><span id="SYSTEM.DRAWING.DRAWING2D.DASHSTYLE.DASH"></span><dl> <dt>**System.Drawing.Drawing2D.DashStyle.Dash**</dt> <dt>1</dt> </dl>                         | Línea de puntos con segmentos largos y espacios estrechos.<br/>     |
@@ -68,7 +68,7 @@ Estilo de línea utilizado para representar el valor del contador. Los valores c
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para especificar un valor distinto de DashStyle.Solid, [**CounterItem.Width**](counteritem-width.md) debe establecerse en 1. Si el ancho es mayor que 1, SYSMON omite el estilo de línea especificado y usa DashStyle.Solid.
 
@@ -76,7 +76,7 @@ Para especificar un valor distinto de DashStyle.Solid, [**CounterItem.Width**](c
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

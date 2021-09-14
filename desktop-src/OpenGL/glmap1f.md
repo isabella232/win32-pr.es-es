@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7547e465f940942333c3bcff3e543e77c404ced289471ccff08924da83bfc2af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eafcbfc40b3359cd8faa6f52f6635c1c86f03f17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118359313"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272092"
 ---
 # <a name="glmap1f-function"></a>Función glMap1f
 
@@ -52,16 +52,16 @@ Tipo de valores generados por el evaluador. Constantes simbólicas. El *parámet
 
 
 
-| Valor                                                                                                                                                                                          | Significado                                                                                                                                                                                                                                                                                                                               |
+| Value                                                                                                                                                                                          | Significado                                                                                                                                                                                                                                                                                                                               |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="GL_MAP1_VERTEX_3"></span><span id="gl_map1_vertex_3"></span><dl> <dt>**GL \_ MAP1 \_ VERTEX \_ 3**</dt> </dl>                       | Cada punto de control es tres valores de punto flotante que *representan x, y y* *z.* Los [**comandos glVertex3**](glvertex-functions.md) internos se generan cuando se evalúa el mapa.<br/>                                                                                                                                         |
-| <span id="GL_MAP1_VERTEX_4"></span><span id="gl_map1_vertex_4"></span><dl> <dt>**GL \_ MAP1 \_ VERTEX \_ 4**</dt> </dl>                       | Cada punto de control es cuatro valores de punto flotante que *representan x, y, z* y *w*. Los [**comandos glVertex4**](glvertex-functions.md) internos se generan cuando se evalúa el mapa.<br/>                                                                                                                                       |
+| <span id="GL_MAP1_VERTEX_4"></span><span id="gl_map1_vertex_4"></span><dl> <dt>**GL \_ MAP1 \_ VERTEX \_ 4**</dt> </dl>                       | Cada punto de control es cuatro valores de punto flotante que *representan x, y, z y* *w*. Los [**comandos glVertex4**](glvertex-functions.md) internos se generan cuando se evalúa el mapa.<br/>                                                                                                                                       |
 | <span id="GL_MAP1_INDEX"></span><span id="gl_map1_index"></span><dl> <dt>**GL \_ MAP1 \_ INDEX**</dt> </dl>                                 | Cada punto de control es un valor de punto flotante único que representa un índice de color. Los [**comandos glIndex**](glindex-functions.md) internos se generan cuando se evalúa el mapa. Sin embargo, el índice actual no se actualiza con el valor de estos **comandos glIndex.**<br/>                                                    |
 | <span id="GL_MAP1_COLOR_4"></span><span id="gl_map1_color_4"></span><dl> <dt>**GL \_ MAP1 \_ COLOR \_ 4**</dt> </dl>                          | Cada punto de control es cuatro valores de punto flotante que representan rojo, verde, azul y alfa. Los [**comandos glColor4**](glcolor-functions.md) internos se generan cuando se evalúa el mapa. Sin embargo, el color actual no se actualiza con el valor de estos **comandos glColor4.**<br/>                                       |
 | <span id="GL_MAP1_NORMAL"></span><span id="gl_map1_normal"></span><dl> <dt>**GL \_ MAP1 \_ NORMAL**</dt> </dl>                              | Cada punto de control es tres valores de punto flotante que representan los *componentes x, y* *y z* de un vector normal. Los [**comandos glNormal**](glnormal-functions.md) internos se generan cuando se evalúa el mapa. Sin embargo, la normal actual no se actualiza con el valor de estos **comandos glNormal.**<br/>              |
 | <span id="GL_MAP1_TEXTURE_COORD_1"></span><span id="gl_map1_texture_coord_1"></span><dl> <dt>**GL \_ MAP1 \_ TEXTURE \_ COORD \_ 1**</dt> </dl> | Cada punto de control es un valor de punto flotante único que representa la *coordenada de* textura de la . Los [**comandos internos glTexCoord1**](gltexcoord-functions.md) se generan cuando se evalúa el mapa. Sin embargo, las coordenadas de textura actuales no se actualizan con el valor de estos **comandos glTexCoord.**<br/>              |
 | <span id="GL_MAP1_TEXTURE_COORD_2"></span><span id="gl_map1_texture_coord_2"></span><dl> <dt>**GL \_ MAP1 \_ TEXTURE \_ COORD \_ 2**</dt> </dl> | Cada punto de control es dos valores de punto flotante que representan las coordenadas de textura *s* y *t.* Los [**comandos internos glTexCoord2**](gltexcoord-functions.md) se generan cuando se evalúa el mapa. Sin embargo, las coordenadas de textura actuales no se actualizan con el valor de estos **comandos glTexCoord.**<br/>         |
-| <span id="GL_MAP1_TEXTURE_COORD_3"></span><span id="gl_map1_texture_coord_3"></span><dl> <dt>**GL \_ MAP1 \_ TEXTURE \_ COORD \_ 3**</dt> </dl> | Cada punto de control es tres valores de punto flotante que representan las coordenadas *de textura s, t* y *r.* Los [**comandos internos glTexCoord3**](gltexcoord-functions.md) se generan cuando se evalúa el mapa. Sin embargo, las coordenadas de textura actuales no se actualizan con el valor de estos **comandos glTexCoord.**<br/>   |
+| <span id="GL_MAP1_TEXTURE_COORD_3"></span><span id="gl_map1_texture_coord_3"></span><dl> <dt>**GL \_ MAP1 \_ TEXTURE \_ COORD \_ 3**</dt> </dl> | Cada punto de control es tres valores de punto flotante que representan las coordenadas de *textura s, t* y *r.* Los [**comandos internos glTexCoord3**](gltexcoord-functions.md) se generan cuando se evalúa el mapa. Sin embargo, las coordenadas de textura actuales no se actualizan con el valor de estos **comandos glTexCoord.**<br/>   |
 | <span id="GL_MAP1_TEXTURE_COORD_4"></span><span id="gl_map1_texture_coord_4"></span><dl> <dt>**GL \_ MAP1 \_ TEXTURE \_ COORD \_ 4**</dt> </dl> | Cada punto de control es cuatro valores de punto flotante que representan las coordenadas de textura *s, t, r* y *q.* Los [**comandos internos glTexCoord4**](gltexcoord-functions.md) se generan cuando se evalúa el mapa. Sin embargo, las coordenadas de textura actuales no se actualizan con el valor de estos **comandos glTexCoord.**<br/> |
 
 
@@ -125,13 +125,13 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los evaluadores proporcionan una manera de usar la asignación polinómica o polinómica racionalizada para generar vértices, normales, coordenadas de textura y colores. Los valores generados por un evaluador se envían a otras fases del procesamiento openGL como si se hubieran presentado mediante los comandos [**glVertex**](glvertex-functions.md), [**glNormal**](glnormal-functions.md), [**glTexCoord**](gltexcoord-functions.md)y [**glColor,**](glcolor-functions.md) salvo que los valores generados no actualizan la normal actual, las coordenadas de textura o el color.
 
-Todas las spline polinómicas o polinómicas racionalizas de cualquier grado (hasta el grado máximo admitido por la implementación de OpenGL) se pueden describir mediante evaluadores. Estos incluyen casi todas las curvas spline usadas en gráficos de equipo, incluidas las curvas B, curvas Bézier, curvas spline de Hermite, entre otras.
+Todas las curvas spline polinómicas o polinómicas racionalizas de cualquier grado (hasta el grado máximo admitido por la implementación de OpenGL) se pueden describir mediante evaluadores. Estos incluyen casi todas las curvas spline usadas en gráficos de equipo, incluidas las curvas B, curvas Bézier, curvas spline de Hermite, entre otras.
 
-Los evaluadores definen curvas basadas en polinómicos de Bernstein. Definir **p** () como
+Los evaluadores definen curvas basadas en polinómicos Derebo. Definir **p** () como
 
 ![Ecuación que muestra la definición de p ().](images/map01.png)
 
@@ -149,11 +149,11 @@ La **función glMap1** se usa para definir la base y especificar qué tipo de va
 
 Los *parámetros stride*, *order* y *points* definen el direccionamiento de la matriz para acceder a los puntos de control. El *parámetro points* es la ubicación del primer punto de control, que ocupa una, dos, tres o cuatro ubicaciones de memoria contiguas, en función de qué mapa se esté definindo. El *parámetro order* es el número de puntos de control de la matriz. El *parámetro stride* indica cuántas ubicaciones float o double tienen que avanzar el puntero de memoria interno para llegar al siguiente punto de control.
 
-Como sucede con todos los comandos de OpenGL que aceptan punteros  a datos, es como si **glMap1** copiara el contenido de los puntos antes de devolverlo. Los cambios en el contenido de *los puntos* no tienen ningún efecto después de llamar **a glMap1.**
+Como sucede con todos los comandos OpenGL que aceptan punteros a  datos, es como si **glMap1** copiara el contenido de los puntos antes de devolverlo. Los cambios en el contenido de *los puntos* no tienen ningún efecto después de llamar **a glMap1.**
 
-Las funciones siguientes recuperan información relacionada **con glMap1**:
+Las siguientes funciones recuperan información relacionada con **glMap1**:
 
-[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAX \_ EVAL \_ ORDER
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ MAX \_ EVAL \_ ORDER
 
 [**glGetMap**](glgetmap.md)
 
@@ -179,7 +179,7 @@ Las funciones siguientes recuperan información relacionada **con glMap1**:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

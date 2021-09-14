@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5e5ad77f05deff7d119c4dd4fe5409d53dba9deee51dd6eff05b73bce3c4c50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd2a00c0b898eaedbcd12827d5407f4783a845a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119650345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249680"
 ---
 # <a name="eventx"></a>event.x
 
@@ -35,13 +35,13 @@ Este atributo es un número de solo **lectura** (**long**).
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

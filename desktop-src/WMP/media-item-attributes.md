@@ -4,13 +4,13 @@ description: Atributos de elementos multimedia
 ms.assetid: d43addec-e06c-4ef3-9012-3ecf589b105c
 keywords:
 - Reproductor de Windows Media,library
-- Reproductor de Windows Media modelo de objetos,biblioteca
+- Reproductor de Windows Media modelo de objetos, biblioteca
 - object model,library
 - Reproductor de Windows Media Móvil, biblioteca para el modelo de objetos
 - Reproductor de Windows Media ActiveX control,library para el modelo de objetos
 - Reproductor de Windows Media Control de ActiveX móvil, biblioteca para el modelo de objetos
 - ActiveX control,library para el modelo de objetos
-- Reproductor de Windows Media,attributes para elementos multimedia
+- Reproductor de Windows Media,atributos para elementos multimedia
 - Reproductor de Windows Media modelo de objetos, atributos para elementos multimedia
 - modelo de objetos, atributos para elementos multimedia
 - Reproductor de Windows Media Móvil, atributos para elementos multimedia
@@ -22,12 +22,12 @@ keywords:
 - attributes,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b511fd3ed06a93f518a7ba8c3113a921cb2843d87f2451657b0e0e19c5b7a130
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5ac8595cc07504c9cd3e195431513a1f8565e87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054623"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068402"
 ---
 # <a name="media-item-attributes"></a>Atributos de elementos multimedia
 

@@ -4,12 +4,12 @@ description: Tratar con la pérdida de conectividad
 ms.assetid: a90fcb5a-773e-4c21-bf6c-c3519ec13a09
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eac02c4440cb2e31a29e810d78dfd51764be3ba0ed5a6dc32f8c3e10824bd70
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: de8e7a8088cfe09a4c4026c16cc3dc5ea36b3430
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120101685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069160"
 ---
 # <a name="dealing-with-loss-of-connectivity"></a>Tratar con la pérdida de conectividad
 

@@ -11,12 +11,12 @@ keywords:
 - Ejemplo de complemento DSP de eco, método CEchoPropPage OnInitDialog
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa7f525ad5279b1215d597a043d0c091d51ddd4bf9fca8546dbcb90317a525f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0874c750914b5caecf86ffa61a0c42d38bb1c02e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135608"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068426"
 ---
 # <a name="implementing-cechoproppageoninitdialog"></a>Implementación de CEchoPropPage::OnInitDialog
 

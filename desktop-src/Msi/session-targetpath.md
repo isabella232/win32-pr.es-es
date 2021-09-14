@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: bd265602e9a4d517ad01a07e79ace43722fcb6cfe0062091a5f0379a5ab264a7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6c5917f845da0eec944e797d5f49f52d0ec26913
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119628755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272436"
 ---
 # <a name="sessiontargetpath-property"></a>Propiedad Session.TargetPath
 
@@ -26,7 +26,7 @@ La **propiedad TargetPath** del objeto [**Session**](session-object.md) es una p
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```JScript
@@ -40,7 +40,7 @@ Session.TargetPath = propVal
 
 Nombre obligatorio que distingue mayúsculas de minúsculas de una propiedad de carpeta, tal y como especifica una clave principal de la [tabla Directory](directory-table.md). Se genera un error si la carpeta no existe.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No intente configurar la ruta de acceso de destino si los componentes que usan esas rutas de acceso ya están instalados para el usuario actual o para otro usuario. Compruebe la [**propiedad ProductState**](productstate.md) para determinar si el producto que contiene el componente está instalado.
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 26442633d1a4d5187b5e53ae53e0a898f759f91dc3719f09715b570108b701f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e509a081243f28293dc2d8abf8311f69eaf9a44
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119071909"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272732"
 ---
 # <a name="waitdispatchingmessages-function"></a>Función WaitDispatchingMessages
 
@@ -49,7 +49,7 @@ DWORD WINAPI WaitDispatchingMessages(
 *hObject* 
 </dt> <dd>
 
-Identificador del objeto que se espera.
+Identificador del objeto que se debe esperar.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Identificador opcional para un evento que se debe esperar.
 
 Devuelve el valor de la **función WaitForMultipleObjects.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si un objeto posee una ventana, debe enviar mensajes de ventana mientras espera. Esta función permite que el objeto espere un evento, un semáforo u otro objeto de exclusión mutua al enviar mensajes.
 
@@ -100,7 +100,7 @@ Si un objeto posee una ventana, debe enviar mensajes de ventana mientras espera.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

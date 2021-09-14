@@ -1,10 +1,10 @@
 ---
 title: Método IWMDRMDevice2 GetLicenseState
-description: El método GetLicenseState obtiene el estado de la licencia.
+description: El método GetLicenseState obtiene el estado de licencia.
 ms.assetid: a98847f6-00ec-4211-9716-79714d7ba169
 keywords:
-- Método GetLicenseState windows Media Administrador de dispositivos
-- Método GetLicenseState windows Media Administrador de dispositivos interfaz , IWMDRMDevice2
+- Método GetLicenseState de Windows Media Administrador de dispositivos
+- Método GetLicenseState de Windows Media Administrador de dispositivos , interfaz IWMDRMDevice2
 - Interfaz IWMDRMDevice2 windows Media Administrador de dispositivos , método GetLicenseState
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e068d537f460053800b0d52d667ba39b0577d717b08f83794a73b2bf8c854aeb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d075d123ae99b26767621fb1a958cd172bc9e42c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068502"
 ---
 # <a name="iwmdrmdevice2getlicensestate-method"></a>IWMDRMDevice2::GetLicenseState (método)
 
-El **método GetLicenseState** obtiene el estado de la licencia.
+El **método GetLicenseState** obtiene el estado de licencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ HRESULT GetLicenseState(
 *pbStateQueryData* \[ En\]
 </dt> <dd>
 
-Puntero a los datos consultados del estado de la licencia.
+Puntero a los datos consultados del estado de licencia.
 
 </dd> <dt>
 
@@ -115,11 +115,11 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IWMDRMDevice2 (interfaz)**](iwmdrmdevice2.md)
+[**Interfaz IWMDRMDevice2**](iwmdrmdevice2.md)
 </dt> </dl>
 
  

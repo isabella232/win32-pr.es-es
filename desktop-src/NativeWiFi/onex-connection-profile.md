@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 500e714b6f0728104987f53ff0a8c0e7083c1af5996679a78a986b5674d54514
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 21e02a1f09d3439c64fb8124cd0cfc8140732be9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119684895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069454"
 ---
 # <a name="onex_connection_profile-structure"></a>Estructura DE \_ PERFIL \_ DE CONEXIÓN ONEX
 
@@ -59,7 +59,7 @@ typedef struct _ONEX_CONNECTION_PROFILE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -175,7 +175,7 @@ Elemento supplicantMode del esquema 802.1X que especifica el método de transmis
 
 
 
-| Valor                                                                                                                                                                                                                                                                                                                                               | Significado                                                                                                                                                                             |
+| Value                                                                                                                                                                                                                                                                                                                                               | Significado                                                                                                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="OneXSupplicantModeInhibitTransmission"></span><span id="onexsupplicantmodeinhibittransmission"></span><span id="ONEXSUPPLICANTMODEINHIBITTRANSMISSION"></span><dl> <dt>**OneXSupplicantModeInhibitTransmission**</dt> <dt>0</dt> </dl> | EAPOL-Start mensajes no se transmiten. Válido solo para perfiles de LAN cableadas.<br/>                                                                                             |
 | <span id="OneXSupplicantModeLearn"></span><span id="onexsupplicantmodelearn"></span><span id="ONEXSUPPLICANTMODELEARN"></span><dl> <dt>**OneXSupplicantModeLearn**</dt> <dt>1</dt> </dl>                                                         | El cliente determina cuándo enviar paquetes EAPOL-Start en función de la funcionalidad de red. EAPOL-Start mensajes solo se envían cuando es necesario. Válido solo para perfiles de LAN cableadas.<br/> |
@@ -194,7 +194,7 @@ Elemento authMode del esquema 802.1X que especifica el tipo de credenciales usad
 
 
 
-| Valor                                                                                                                                                                                                                                                                                               | Significado                                                                                                                                                                            |
+| Value                                                                                                                                                                                                                                                                                               | Significado                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="OneXAuthModeMachineOrUser"></span><span id="onexauthmodemachineoruser"></span><span id="ONEXAUTHMODEMACHINEORUSER"></span><dl> <dt>**OneXAuthModeMachineOrUser**</dt> <dt>0</dt> </dl> | Use credenciales de máquina o usuario. Cuando un usuario ha iniciado sesión, las credenciales del usuario se usan para la autenticación. Cuando ningún usuario ha iniciado sesión, se usan las credenciales del equipo.<br/> |
 | <span id="OneXAuthModeMachineOnly"></span><span id="onexauthmodemachineonly"></span><span id="ONEXAUTHMODEMACHINEONLY"></span><dl> <dt>**OneXAuthModeMachineOnly**</dt> <dt>1</dt> </dl>         | Use solo credenciales de máquina.<br/>                                                                                                                                           |
@@ -232,7 +232,7 @@ Elemento startPeriod del esquema 802.1X que especifica el tiempo, en segundos, q
 **dwMaxStart**
 </dt> <dd>
 
-Elemento maxStart del esquema 802.1X que especifica el número máximo de EAPOL-Start mensajes enviados. Una vez enviado el número máximo EAPOL-Start mensajes, el cliente asume que no hay ningún autenticador presente en la red. Para obtener más información, [**vea el elemento maxStart (OneX)**](onexschema-maxstart-onex-element.md) del esquema 802.1X.
+Elemento maxStart del esquema 802.1X que especifica el número máximo de EAPOL-Start mensajes enviados. Una vez enviado el número máximo EAPOL-Start mensajes, el cliente asume que no hay ningún autenticador presente en la red. Para obtener más información, [**vea el elemento maxStart (OneX)**](onexschema-maxstart-onex-element.md) en el esquema 802.1X.
 
 </dd> <dt>
 
@@ -255,7 +255,7 @@ Tiempo, en segundos, que se debe esperar a la finalización de la autenticación
 
 El tiempo máximo de duración, en segundos, para esperar una conexión en caso de que se muestre un cuadro de diálogo de interfaz de usuario que requiera la entrada del usuario durante el inicio de sesión único por inicio de sesión.
 
-En Windows Vista con SP1 y versiones posteriores, este valor se codifica de forma rígida a 10 minutos y no es configurable. En Windows versión de Vista para fabricación, este valor predeterminado es 60 segundos en un perfil 802.1X y se controla mediante el elemento **maxDelayWithAdditionalDialogs** del esquema.
+En Windows Vista con SP1 y versiones posteriores, este valor se codifica de forma rígida a 10 minutos y no es configurable. En Windows versión de Vista para fabricación, este valor tiene como valor predeterminado 60 segundos en un perfil 802.1X y estaba controlado por el elemento **maxDelayWithAdditionalDialogs** del esquema.
 
 En Windows Vista con SP1 y versiones posteriores, el elemento **maxDelayWithAdditionalDialogs** del esquema 802.1X se omite y está en desuso.
 
@@ -275,13 +275,13 @@ Elemento userBasedVirtualLan del esquema 802.1X que especifica si la LAN virtual
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El módulo 802.1X usa la estructura **ONEX \_ CONNECTION \_ PROFILE,** un nuevo componente de configuración inalámbrica compatible con Windows Vista y versiones posteriores.
 
 [**ONEX \_ RESULT UPDATE DATA \_ \_ contiene**](/windows/desktop/api/dot1x/ns-dot1x-onex_result_update_data) información sobre un cambio de estado a la autenticación 802.1X. La estructura **ONEX \_ RESULT UPDATE \_ \_ DATA** se devuelve cuando el miembro **NotificationSource** de la estructura DE DATOS DE NOTIFICACIÓN DE WLAN es **WLAN NOTIFICATION SOURCE \_ \_ \_ ONEX** y el **miembro NotificationCode** de la estructura DE DATOS DE NOTIFICACIÓN DE WLAN para la notificación recibida **es OneXNotificationTypeResultUpdate.** [**\_ \_**](/previous-versions/windows/desktop/legacy/ms706902(v=vs.85)) **\_ \_** Para esta notificación, el miembro **pData** de la estructura **WLAN NOTIFICATION \_ \_ DATA** apunta a una estructura **ONEX RESULT UPDATE \_ \_ \_ DATA** que contiene información sobre el cambio de estado de autenticación 802.1X.
 
-Si se establece el miembro **fOneXAuthParams** de la estructura [**ONEX \_ RESULT UPDATE \_ \_ DATA,**](/windows/desktop/api/dot1x/ns-dot1x-onex_result_update_data) el miembro **authParams** de la estructura **ONEX RESULT UPDATE \_ \_ \_ DATA** contiene una estructura [**ONEX VARIABLE \_ \_ BLOB**](/windows/desktop/api/dot1x/ns-dot1x-onex_variable_blob) con una estructura [**ONEX \_ AUTH \_ PARAMS**](/windows/desktop/api/dot1x/ns-dot1x-onex_auth_params) incrustada a partir del **miembro dwOffset** del **BLOB DE VARIABLE \_ \_ ONEX.** El **miembro oneXConnProfile** de la estructura **ONEX \_ AUTH \_ PARAMS** contiene una estructura **\_ \_ ONEX VARIABLE BLOB** con una estructura **ONEX CONNECTION \_ \_ PROFILE** incrustada a partir del **miembro dwOffset** de **ONEX VARIABLE \_ \_ BLOB.**
+Si se establece el miembro **fOneXAuthParams** de la estructura [**ONEX \_ RESULT UPDATE \_ \_ DATA,**](/windows/desktop/api/dot1x/ns-dot1x-onex_result_update_data) el miembro **authParams** de la estructura **ONEX RESULT UPDATE \_ \_ \_ DATA** contiene una estructura [**\_ ONEX VARIABLE \_ BLOB**](/windows/desktop/api/dot1x/ns-dot1x-onex_variable_blob) con una estructura [**ONEX \_ AUTH \_ PARAMS**](/windows/desktop/api/dot1x/ns-dot1x-onex_auth_params) incrustada a partir del **miembro dwOffset** del **BLOB DE VARIABLE \_ \_ ONEX.** El **miembro oneXConnProfile** de la estructura **ONEX \_ AUTH \_ PARAMS** contiene una estructura **\_ \_ ONEX VARIABLE BLOB** con una estructura **ONEX CONNECTION \_ \_ PROFILE** incrustada a partir del **miembro dwOffset** de **ONEX VARIABLE \_ \_ BLOB.**
 
 La **estructura ONEX \_ CONNECTION \_ PROFILE** no se define en un archivo de encabezado público.
 
@@ -289,14 +289,14 @@ La **estructura ONEX \_ CONNECTION \_ PROFILE** no se define en un archivo de en
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

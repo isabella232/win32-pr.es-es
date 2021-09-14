@@ -4,12 +4,12 @@ ms.assetid: 1dc2fab9-b044-4ae3-8c16-fa450f9ef714
 title: PHONEPRIVILEGE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae9b3f3848af8c9858522bd924ccb77d7bf1682f09b66c0cfdcb5527b93416dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6d04c074e03d6f0b7f7a6c58e4268e0bd5057a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117761297"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068730"
 ---
 # <a name="phoneprivilege_-constants"></a>Constantes PHONEPRIVILEGE \_
 
@@ -22,7 +22,7 @@ Las constantes de marca de bits **PHONEPRIVILEGE \_** describen las distintas fo
 
 
 
-Se informa a una aplicación que abre un dispositivo telefónico con el privilegio de monitor sobre los eventos y los cambios de estado que se producen en el teléfono. La aplicación no puede invocar ninguna operación en el dispositivo telefónico que cambiaría su estado, por lo que solo se pueden invocar las operaciones de estado. Varias aplicaciones pueden supervisar un dispositivo de teléfono en un momento dado.
+Se informa a una aplicación que abre un dispositivo telefónico con el privilegio de monitor sobre los eventos y los cambios de estado que se producen en el teléfono. La aplicación no puede invocar ninguna operación en el dispositivo telefónico que cambiaría su estado, por lo que solo se pueden invocar operaciones de estado. Varias aplicaciones pueden supervisar un dispositivo de teléfono en un momento dado.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,12 +32,12 @@ Se informa a una aplicación que abre un dispositivo telefónico con el privileg
 
 
 
-Una aplicación que abre un dispositivo telefónico con el privilegio de propietario puede cambiar el estado de las bombillas, el timbre, la pantalla, el conmutador de enlace y los bloques de datos del teléfono. La apertura de un dispositivo de teléfono en modo de propietario también proporciona supervisión del dispositivo telefónico. Solo se permite que una aplicación sea el propietario de un dispositivo de teléfono en un momento dado.
+Una aplicación que abre un dispositivo de teléfono con el privilegio de propietario puede cambiar el estado de las bombillas, el timbre, la pantalla, el conmutador de enlace y los bloques de datos del teléfono. La apertura de un dispositivo de teléfono en modo de propietario también proporciona supervisión del dispositivo telefónico. Solo se permite que una aplicación sea el propietario de un dispositivo de teléfono en un momento dado.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
@@ -48,7 +48,7 @@ Sin extensibilidad. Los 32 bits están reservados.
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

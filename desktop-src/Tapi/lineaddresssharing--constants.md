@@ -1,19 +1,19 @@
 ---
-description: Las constantes de marca de bits LINEADDRESSSHARING describen varias maneras en que se puede compartir \_ una dirección entre líneas.
+description: Las constantes de marca de bits LINEADDRESSSHARING describen varias maneras de \_ compartir una dirección entre líneas.
 ms.assetid: f37ba549-c8dc-4a7c-bfe6-8e5f733d9750
 title: LINEADDRESSSHARING_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4fe92c92efd75a4f6e731944c487acff2ffd70e173dd04b03244ec9d55e8aba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 785c7e924ffc958d3fe14b739bb2eb28dec322a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119003133"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249999"
 ---
 # <a name="lineaddresssharing_-constants"></a>LINEADDRESSSHARING \_ (Constantes)
 
-Las constantes de marca de bits **LINEADDRESSSHARING \_** describen varias maneras en que se puede compartir una dirección entre líneas.
+Las constantes de marca de bits **LINEADDRESSSHARING \_** describen varias maneras de compartir una dirección entre líneas.
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ Se trata de una dirección cuyo estado inactivo o ocupado está disponible para 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
@@ -80,11 +80,11 @@ La manera en que una dirección se comparte entre líneas puede afectar al compo
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

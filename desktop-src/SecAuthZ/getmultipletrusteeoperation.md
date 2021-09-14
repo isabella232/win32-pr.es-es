@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 72f7ccb2edeb069a183cc066d245f1f658d8f460650a141cdffb8545b9275021
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fcb8113f098dff1c27720d118d01cd0f37f6a77f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119672105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069120"
 ---
 # <a name="getmultipletrusteeoperation-function"></a>Función GetMultipleTrusteeOperation
 

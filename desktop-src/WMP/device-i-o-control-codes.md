@@ -5,34 +5,34 @@ ms.assetid: 46a5d166-ca8d-42df-9455-145332437153
 keywords:
 - Reproductor de Windows Media,códigos de control de E/S de dispositivo
 - Reproductor de Windows Media,códigos de control
-- Windows Media Administrador de dispositivos
+- Windows Archivos Administrador de dispositivos
 - códigos de control de E/S de dispositivo
 - códigos de control
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63d610b396125cf190764b53106ca6535a214e2c8166f4e69de884c113fd77ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69c00e235ce0f0e68e98f4f0e37221eac0903682
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117935854"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068465"
 ---
 # <a name="device-io-control-codes"></a>Códigos de control de E/S de dispositivo
 
-Reproductor de Windows Media 10 o posterior define códigos de control de E/S Administrador de dispositivos dispositivo Windows Media. La tabla siguiente contiene los códigos de control y sus descripciones.
+Reproductor de Windows Media 10 o posterior define los Windows de control Administrador de dispositivos de E/S del dispositivo. La tabla siguiente contiene los códigos de control y sus descripciones.
 
 
 
-| Código de control de E/S                      | Valor      | Descripción                                                                                                                                                                                                                                                                                                                                                                  |
+| Código de control de E/S                      | Value      | Descripción                                                                                                                                                                                                                                                                                                                                                                  |
 |---------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **IOCTL \_ WMP \_ METADATA \_ ROUND \_ TRIP** | 0x31504d57 | Administra la transferencia de información sobre los cambios que se produjeron en los valores de metadatos. Consulte [Extensiones de dispositivo para la transferencia acelerada de metadatos.](device-extensions-for-accelerated-metadata-transfer.md)                                                                                                                                                                          |
-| **EL DISPOSITIVO \_ IOCTL WMP \_ PUEDE \_ \_ SINCRONIZARSE**     | 0x32504d57 | Indica si un dispositivo portátil admite la sincronización automática. Reproductor de Windows Media 10 o posterior no proporciona ningún búfer de entrada. El búfer de salida debe devolver un **valor DWORD.** Un valor de 1 significa que el dispositivo admite la sincronización. Un valor de 0 significa que el dispositivo no admite la sincronización automática.<br/> Vea Comentarios para obtener más información.<br/> |
+| **EL DISPOSITIVO \_ IOCTL WMP \_ SE PUEDE \_ \_ SINCRONIZAR**     | 0x32504d57 | Indica si un dispositivo portátil admite la sincronización automática. Reproductor de Windows Media 10 o posterior no proporciona ningún búfer de entrada. El búfer de salida debe devolver un **valor DWORD.** Un valor de 1 significa que el dispositivo admite la sincronización. Un valor de 0 significa que el dispositivo no admite la sincronización automática.<br/> Vea Comentarios para obtener más información.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Estos códigos de control se definen en wmpdevices.h.
 

@@ -4,16 +4,16 @@ description: Instalación de la máscara
 ms.assetid: ed2dad6c-a84d-4244-b766-ca37e9a3574f
 keywords:
 - Reproductor de Windows Media Máscaras móviles, instalación
-- skins,installing
+- máscaras, instalación
 - instalar Reproductor de Windows Media máscaras móviles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 833db89aa902c88f0e6394c31e722dd7a35044a7f6b08b2c48f6ff0f8b71c261
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9684e78cae2486acda6bad7c4816f3d9363ffd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117747951"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249561"
 ---
 # <a name="installing-your-skin"></a>Instalación de la máscara
 
@@ -22,7 +22,7 @@ Use el procedimiento siguiente para instalar la máscara:
 1.  Copie todos los archivos de máscara en una carpeta nueva.
 2.  Copie la carpeta que contiene los archivos de máscara en Reproductor de Windows Media carpeta del dispositivo portátil.
 
-    Inicie Reproductor de Windows Media Mobile. De este modo, se inicia **skin chooser,** que tiene dos botones de navegación que le permiten desplazarse por las máscaras disponibles y mostrará una vista previa de cada una. El nombre que se muestra para la máscara será el nombre del archivo de definición de máscara.
+    Inicie Reproductor de Windows Media Mobile. De este modo, se inicia **El elegidor** de máscara, que tiene dos botones de navegación que le permiten desplazarse por las máscaras disponibles y mostrará una vista previa de cada una. El nombre que se muestra para la máscara será el nombre del archivo de definición de máscara.
 
 3.  Pulse **Aceptar** para seleccionar la máscara.
 

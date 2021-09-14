@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: f29fad2ccfcac5cbca1c6ef13e0aeef5bdd0f4764e81dd14cabdfa58fd30fbde
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec9f497e687c52735784a5e3edad01905ac7a6a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118563223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068337"
 ---
 # <a name="iwinhttprequestresponsestream-property"></a>Propiedad IWinHttpRequest::ResponseStream
 
@@ -57,7 +57,7 @@ El valor devuelto es **S \_ OK on** success o un valor de error en caso contrari
 
 Será E **\_ PENDING si** la operación [**de envío**](iwinhttprequest-send.md) anterior no se ha completado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Llame [**a QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el puntero devuelto para obtener un puntero a una [**interfaz IStream.**](/windows/desktop/api/objidl/nn-objidl-istream) Esta propiedad devuelve los datos de respuesta como **IStream**. Esta propiedad solo se puede invocar después de llamar [**al**](iwinhttprequest-send.md) método Send.
 
@@ -68,7 +68,7 @@ Llame [**a QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryi
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer la respuesta como [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream). Los datos de **IStream se** escriben en el archivo Temp1.gif.
+En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer la respuesta como [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream). Los datos de **IStream** se escriben en el archivo Temp1.gif.
 
 
 ```C++
@@ -287,12 +287,12 @@ int main(int argc, char* argv[])
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
 | Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
-| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 

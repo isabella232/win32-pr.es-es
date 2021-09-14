@@ -1,6 +1,6 @@
 ---
 title: Método SetBrokerNonHAMode de la Win32_SessionBrokerServiceProperties clase
-description: Migra datos del centro de SQL Server a una base de datos local. También configura el servidor de agente para que use la base de datos local.
+description: Migra datos de la base de SQL Server a una base de datos local. También configura el servidor de agente para que use la base de datos local.
 ms.assetid: a73908be-0cc8-4512-842c-439d5cf18ed4
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34daa0817056975a6b15164dd29edcbcc86cd7cd9475f753e91500845ce089a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ef811bf8024f8e89f9739461dfa8499891077f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119058420"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249728"
 ---
 # <a name="setbrokernonhamode-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método SetBrokerNonHAMode de la clase \_ SessionBrokerServiceProperties de Win32
 
-Migra datos del centro de SQL Server a una base de datos local. También configura el servidor de agente para que use la base de datos local.
+Migra datos de la base de SQL Server a una base de datos local. También configura el servidor de agente para que use la base de datos local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,7 +64,7 @@ Cadena de conexión a la base de datos central.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

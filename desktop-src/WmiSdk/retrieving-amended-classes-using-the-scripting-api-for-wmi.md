@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 47d01af2515b26ca308a1b258aa40508f227a0c1d0eaa5b2b332c1e7b3200420
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cef1971232eabdb984ad4321b5cadbdedd8b2be7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119130887"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063919"
 ---
 # <a name="retrieving-amended-classes-using-the-scripting-api-for-wmi"></a>Recuperación de clases modificadas mediante la API de scripting para WMI
 

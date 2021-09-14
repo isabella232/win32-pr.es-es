@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: e96667af5e9c16097e951f3162082a6fb06b13d0504da3e8582b9f1b7ebfd4cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d61a0bd0d31c14f13edd9ef610e8f6d3ed20f037
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119004463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068996"
 ---
 # <a name="protectkeywithcertificatefile-method-of-the-win32_encryptablevolume-class"></a>Método ProtectKeyWithCertificateFile de la clase EncryptableVolume de Win32 \_
 
-El **método ProtectKeyWithCertificateFile** de la clase [**\_ EncryptableVolume de Win32**](win32-encryptablevolume.md) valida el identificador de objeto (EKU) uso mejorado de clave (EKU) del certificado proporcionado. [](../secgloss/o-gly.md)
+El **método ProtectKeyWithCertificateFile** de la clase [**\_ EncryptableVolume de Win32**](win32-encryptablevolume.md) valida el identificador de objeto (OID) uso mejorado de clave (EKU) del certificado proporcionado. [](../secgloss/o-gly.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,12 +41,12 @@ uint32 ProtectKeyWithCertificateFile(
 
 <dl> <dt>
 
-*FriendlyName* \[ en, opcional\]
+*FriendlyName* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **cadena**
 
-Cadena que especifica un identificador de cadena asignado por el usuario para este protector de clave. Si no se especifica este parámetro, el *parámetro FriendlyName* se crea mediante el nombre de sujeto en el certificado.
+Cadena que especifica un identificador de cadena asignado por el usuario para este protector de clave. Si no se especifica este parámetro, el parámetro *FriendlyName* se crea mediante el nombre de sujeto en el certificado.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Cadena que especifica un identificador de cadena asignado por el usuario para es
 
 Tipo: **cadena**
 
-Cadena que especifica la ubicación y el nombre del archivo .cer usado para habilitar BitLocker. Un certificado de cifrado debe exportarse en formato .cer ([*reglas de codificación distinguida*](../secgloss/d-gly.md) (DER) binario codificado [*X.509*](../secgloss/x-gly.md) o X.509 codificado en Base-64). El certificado de cifrado se puede generar a partir de PKI de Microsoft, PKI de terceros o autofirmado.
+Cadena que especifica la ubicación y el nombre del archivo .cer usado para habilitar BitLocker. Un certificado de cifrado debe exportarse en formato .cer [*(reglas de codificación distinguida*](../secgloss/d-gly.md) (DER) binario codificado [*X.509*](../secgloss/x-gly.md) o X.509 codificado en Base-64). El certificado de cifrado se puede generar a partir de PKI de Microsoft, PKI de terceros o autofirmado.
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 | Código o valor devuelto                                                                                                                                                                                           | Descripción                                                                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl>                                                           | Método realizado correctamente.<br/>                                                                                                                                                                                                                                                          |
-| <dl> <dt>**FVE \_ E \_ NON \_ BITLOCKER \_ OID**</dt> <dt>2150695022 (0x8031006E)</dt> </dl>                     | El atributo EKU del certificado especificado no permite su uso para Cifrado de unidad BitLocker. BitLocker no requiere que un certificado tenga un atributo EKU, pero si se configura uno, debe establecerse en un OID que coincida con el OID configurado para BitLocker.<br/> |
+| <dl> <dt>**FVE \_ E \_ \_ \_ OID no BITLOCKER**</dt> <dt>2150695022 (0x8031006E)</dt> </dl>                     | El atributo EKU del certificado especificado no permite que se utilice para Cifrado de unidad BitLocker. BitLocker no requiere que un certificado tenga un atributo EKU, pero si se configura uno, debe establecerse en un OID que coincida con el OID configurado para BitLocker.<br/> |
 | <dl> <dt>**FVE \_ E \_ POLICY USER CERTIFICATE NOT \_ \_ \_ \_ ALLOWED**</dt> <dt>2150695026 (0x80310072)</dt> </dl> | directiva de grupo no permite que los certificados de usuario, como las tarjetas inteligentes, se utilicen con BitLocker.<br/>                                                                                                                                                                                     |
 | <dl> <dt>**FVE \_ E \_ POLICY USER CERT DEBE SER \_ \_ \_ \_ \_ HW**</dt> <dt>2150695028 (0x80310074)</dt> </dl>        | directiva de grupo requiere que proporcione una tarjeta inteligente para usar BitLocker.<br/>                                                                                                                                                                                                                |
 | <dl> <dt>**FVE \_ E \_ POLICY PROHÍBE LOS \_ \_ 2150695046**</dt> <dt>AUTOSIGNADOS (0x80310086)</dt> </dl>           | directiva de grupo no permite el uso de certificados autofirmados.<br/>                                                                                                                                                                                                                   |
@@ -91,9 +91,9 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el OID no coincide con el asociado al controlador de servicio en el Registro, se produce un error en este método. Esto evita que el usuario ajuste manualmente los protectores del agente de recuperación de datos (DRA) en el volumen. El servicio solo debe establecer los DRA.
+Si el OID no coincide con el asociado al controlador de servicio en el Registro, se produce un error en este método. Esto impide que el usuario ajuste los protectores del agente de recuperación de datos (DRA) manualmente en el volumen. Los DRA solo los establecerá el servicio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,7 +108,7 @@ Si el OID no coincide con el asociado al controlador de servicio en el Registro,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

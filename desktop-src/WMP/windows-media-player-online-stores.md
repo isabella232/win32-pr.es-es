@@ -8,11 +8,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 11cba4cabcaaae5e55a4e93dbbfe9e4c19e73b37
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478590"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249543"
 ---
 # <a name="windows-media-player-online-stores"></a>Reproductor de Windows Media Tiendas en línea
 
@@ -29,27 +29,27 @@ Si desea que el almacén de medios digitales en línea se integre con Reproducto
 
 ## <a name="for-more-information"></a>Para obtener más información
 
-Para obtener instrucciones técnicas sobre el uso de diversos SDK de Windows Media para crear un servicio que ofrece contenido multimedia digital con licencia, vaya al Centro para desarrolladores de [Microsoft Windows Media](https://msdn.microsoft.com/windowsmedia/default.aspx) y busque "Creación de una tienda en línea de suscripción a Reproductor de Windows Media 10".
+Para obtener instrucciones técnicas sobre el uso de una variedad de SDK de Windows Media para crear un servicio que ofrece contenido multimedia digital con licencia, vaya al Centro para desarrolladores de [Microsoft Windows Media](https://msdn.microsoft.com/windowsmedia/default.aspx) y busque "Creación de una tienda en línea de suscripción de Reproductor de Windows Media 10".
 
 ## <a name="online-stores-in-windows-media-player-9-series"></a>Tiendas en línea de Reproductor de Windows Media serie 9
 
-Reproductor de Windows Media serie 9 introdujo el concepto de tiendas en línea. En Reproductor de Windows Media serie 9, los proveedores de tiendas en línea podían integrar sus servicios en la **característica Premium Services** de Reproductor de Windows Media.
+Reproductor de Windows Media serie 9 introdujo el concepto de tiendas en línea. En Reproductor de Windows Media serie 9, los proveedores de tiendas en línea podrían integrar sus servicios en la **característica Premium Services** de Reproductor de Windows Media.
 
 ## <a name="online-stores-in-windows-media-player-10"></a>Tiendas en línea en Reproductor de Windows Media 10
 
-En Reproductor de Windows Media 10, se cambió el nombre de los servicios Premium a las tiendas en línea y se agregaron las siguientes características nuevas:
+En Reproductor de Windows Media 10, se cambió el nombre de los servicios Premium a tiendas en línea y se agregaron las siguientes características nuevas:
 
 -   Reproductor de Windows Media proporciona hasta tres paneles de tareas para que los use el almacén en línea.
--   Cuando un usuario elige, en la interfaz de usuario del reproductor, ver más información sobre el contenido multimedia digital, Reproductor de Windows Media llamadas a en la tienda en línea para proporcionar la información.
+-   Cuando un usuario elige, en la interfaz de usuario del reproductor, ver más información sobre el contenido multimedia digital, Reproductor de Windows Media llamadas en la tienda en línea para proporcionar la información.
 -   Cuando el usuario elige, en la interfaz de usuario del reproductor, comprar un elemento multimedia, Reproductor de Windows Media llamar a en la tienda en línea para controlar la compra.
 -   La tienda en línea puede proporcionar un complemento que requiere Reproductor de Windows Media ayuda con la administración de derechos digitales y el tiempo de procesamiento en segundo plano.
--   Las tiendas en línea se pueden integrar Reproductor de Windows Media configuración.
+-   Las tiendas en línea se pueden integrar con Reproductor de Windows Media configuración.
 
 ## <a name="online-stores-in-windows-media-player-11"></a>Tiendas en línea en Reproductor de Windows Media 11
 
 Reproductor de Windows Media 11 presenta un nuevo tipo de tienda de música en línea, que está más integrado en la interfaz de usuario del reproductor. En Reproductor de Windows Media 11, se han agregado las siguientes características nuevas para admitir este nuevo tipo de tienda en línea.
 
--   Reproductor de Windows Media el catálogo multimedia de la tienda en línea, para que el usuario pueda examinar rápidamente el contenido de la tienda en línea.
+-   Reproductor de Windows Media descarga el catálogo multimedia de la tienda en línea para que el usuario pueda examinar rápidamente el contenido de la tienda en línea.
 -   Reproductor de Windows Media muestra el contenido de música de la tienda en línea en el control de vista de árbol de biblioteca.
 -   A medida que el usuario navega en la interfaz de usuario del reproductor, el reproductor llama a en la tienda en línea para proporcionar páginas web que mejoren la experiencia del usuario.
 -   La tienda en línea proporciona un complemento que controla todos los aspectos de la comunicación entre Reproductor de Windows Media y la tienda en línea. Por ejemplo, el complemento controla el inicio de sesión, la renovación de licencias, la actualización del catálogo, la descarga de contenido y la compra de contenido.
@@ -81,7 +81,7 @@ En la tabla siguiente se muestran las características disponibles para los dist
 |---------|-----------------------|--------------------|--------------|
 | Crear paneles de tareas de servicio<blockquote>[!Note]<br />Reproductor de Windows Media 10 tiene hasta tres paneles de tareas de servicio. Reproductor de Windows Media 11 solo tiene uno.</blockquote><br /> | Sí | Sí | Sí | 
 | Cambie la apariencia del almacén cambiando atributos como el color del botón, el color de la barra de tareas y el texto del botón. | Sí | Sí | Sí | 
-| Agregue imágenes de logotipo al menú Reproductor de Windows Media y la barra de tareas de la tienda en línea. | Sí | Sí | Sí | 
+| Agregue imágenes de logotipo al menú Reproductor de Windows Media tienda en línea y la barra de tareas. | Sí | Sí | Sí | 
 | Vaya de HTMLView a la tienda en línea. | Sí | Sí | Sí | 
 | Controle Reproductor de Windows Media solicitudes para comprar un CD o DVD. | No | Sí | Sí | 
 | Controle Reproductor de Windows Media solicitudes para proporcionar información completa del álbum. | No | Sí | Sí | 

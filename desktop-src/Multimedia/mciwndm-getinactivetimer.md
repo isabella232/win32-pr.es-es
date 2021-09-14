@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_GETINACTIVETIMER mensaje (Vfw.h)
-description: El mensaje MCIWNDM GETFRACCIÓNTIMER recupera el período de actualización utilizado cuando la \_ ventana MCIWnd es la ventana inactiva. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetCiónTimer.
+description: El mensaje GETINACTIVETIMER de MCIWNDM recupera el período de actualización utilizado cuando la \_ ventana MCIWnd es la ventana inactiva. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetInactiveTimer.
 ms.assetid: 84e00d2f-2cf8-4b6b-a8cb-7eb320754783
 keywords:
 - MCIWNDM_GETINACTIVETIMER mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: a270aeffdee59b7749aa87a0e711204960d74d7f
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069515"
 ---
-# <a name="mciwndm_getinactivetimer-message"></a>Mensaje GETCIÓNTIMER de MCIWNDM \_
+# <a name="mciwndm_getinactivetimer-message"></a>Mensaje GETINACTIVETIMER de MCIWNDM \_
 
-El **mensaje MCIWNDM \_ GETFRACCIÓNTIMER** recupera el período de actualización utilizado cuando la ventana MCIWnd es la ventana inactiva. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetCiónTimer.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetinactivetimer)
+El **mensaje \_ GETINACTIVETIMER de MCIWNDM** recupera el período de actualización utilizado cuando la ventana MCIWnd es la ventana inactiva. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetInactiveTimer.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetinactivetimer)
 
 
 ```C++
@@ -50,11 +50,11 @@ Devuelve el período de actualización, en milisegundos. El valor predeterminado
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MCIWndGetCiónTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetinactivetimer)
+[**MCIWndGetInactiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetinactivetimer)
 </dt> </dl>
 
  

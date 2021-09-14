@@ -4,12 +4,12 @@ ms.assetid: 7b24e3c3-bc69-488b-a698-cf17875bc3c5
 title: LINE_CALLSTATE mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90d82dfb5f0d5e306085ecd2d7f29270d19c2c9c101e30ac547fe246b7e6fddb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4159037c448307c99e759d8741ed19a14ab2562f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120012575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250203"
 ---
 # <a name="line_callstate-message"></a>Mensaje \_ LINE CALLSTATE
 
@@ -65,10 +65,10 @@ Nuevo estado de llamada. Este parámetro debe ser uno y solo una de las siguient
 *dwParam2* 
 </dt> <dd>
 
-Información dependiente del estado de llamada. Vea *dwParam1*.
+Información dependiente del estado de la llamada. Vea *dwParam1*.
 
 > [!Note]  
-> En circunstancias en las *que una respuesta* retrasada es adecuada, use LINEDISCONNECTMODE \_ TEMPFAILURE. Cuando una *respuesta en la lista de* bloqueos sea adecuada, use LINEDISCONNECT \_ BLOCKED. Para obtener más información, [**vea LINEDISCONNECTMODE \_ Constants**](linedisconnectmode--constants.md).
+> En circunstancias en *las que una respuesta* retrasada es adecuada, use LINEDISCONNECTMODE \_ TEMPFAILURE. Cuando una *respuesta en la lista de* bloqueos sea adecuada, use LINEDISCONNECT \_ BLOCKED. Para obtener más información, [**vea LINEDISCONNECTMODE \_ Constants**](linedisconnectmode--constants.md).
 
  
 
@@ -81,7 +81,7 @@ Si *dwParam1* es LINECALLSTATE \_ CONFERENCED, *dwParam2* contiene el parámetro
 
 Si es cero, este parámetro indica que no ha habido ningún cambio en el privilegio de la aplicación para la llamada.
 
-Si es distinto de cero, especifica el privilegio de la aplicación para la llamada. Esto sucede en las situaciones siguientes: (1) La primera vez que se le da un identificador a la aplicación para esta llamada; (2) Cuando la aplicación es el destino de una entrega de llamada (incluso si la aplicación ya era propietaria de la llamada). Este parámetro usa una de las siguientes [**constantes LINECALLPRIVILEGE \_**](linecallprivilege--constants.md).
+Si es distinto de cero, especifica el privilegio de la aplicación para la llamada. Esto sucede en las situaciones siguientes: (1) La primera vez que se da un identificador a la aplicación para esta llamada; (2) Cuando la aplicación es el destino de una entrega de llamada (incluso si la aplicación ya era propietaria de la llamada). Este parámetro usa una de las siguientes [**constantes LINECALLPRIVILEGE \_**](linecallprivilege--constants.md).
 
 </dd> </dl>
 
@@ -89,11 +89,11 @@ Si es distinto de cero, especifica el privilegio de la aplicación para la llama
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje se envía a cualquier aplicación que tenga un identificador para la llamada. El **mensaje LINE \_ CALLSTATE** también notifica a las aplicaciones que supervisan las llamadas en una línea sobre la existencia y el estado de las llamadas salientes establecidas por otras aplicaciones o manualmente por el usuario (por ejemplo, en un dispositivo telefónico conectado). El estado de llamada de estas llamadas refleja el estado real de la llamada, que *no* ofrece . Al examinar el estado de la llamada, la aplicación puede determinar si la llamada es una llamada entrante que debe responderse o no.
 
-Se puede enviar un mensaje **LINE \_ CALLSTATE** con un estado de llamada desconocido a una aplicación de supervisión como resultado de un [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall)correcto, [**lineForward,**](/windows/desktop/api/Tapi/nf-tapi-lineforward) [**lineUnpark**](/windows/desktop/api/Tapi/nf-tapi-lineunpark), [**lineSetupTransfer,**](/windows/desktop/api/Tapi/nf-tapi-linesetuptransfer) [**linePickup,**](/windows/desktop/api/Tapi/nf-tapi-linepickup) [**lineSetupConference**](/windows/desktop/api/Tapi/nf-tapi-linesetupconference)o [**linePrepareAddToConference**](/windows/desktop/api/Tapi/nf-tapi-lineprepareaddtoconference) solicitado por otra aplicación. Al mismo tiempo que se envía a la aplicación solicitante una respuesta LINE [**\_ REPLY**](line-reply.md) (correcta) para la operación solicitada, las aplicaciones de supervisión de la línea se envían al mensaje **LINE \_ CALLSTATE** (desconocido). Un **mensaje \_ LINE CALLSTATE** que indica el estado de llamada "real" de la llamada recién generada se envía (mediante la información proporcionada por el proveedor de servicios) a las aplicaciones que solicitan y supervisan poco después.
+Se puede enviar un mensaje **LINE \_ CALLSTATE** con un estado de llamada desconocido a una aplicación de supervisión como resultado de una instrucción [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall), [**lineForward,**](/windows/desktop/api/Tapi/nf-tapi-lineforward) [**lineUnpark,**](/windows/desktop/api/Tapi/nf-tapi-lineunpark) [**lineSetupTransfer,**](/windows/desktop/api/Tapi/nf-tapi-linesetuptransfer) [**linePickup,**](/windows/desktop/api/Tapi/nf-tapi-linepickup) [**lineSetupConference**](/windows/desktop/api/Tapi/nf-tapi-linesetupconference)o [**linePrepareAddToConference**](/windows/desktop/api/Tapi/nf-tapi-lineprepareaddtoconference) solicitada por otra aplicación. Al mismo tiempo que se envía a la aplicación solicitante una respuesta LINE [**\_ REPLY**](line-reply.md) (correcta) para la operación solicitada, las aplicaciones de supervisión de la línea se envían al mensaje **LINE \_ CALLSTATE** (desconocido). Un **mensaje \_ LINE CALLSTATE** que indica el estado de llamada "real" de la llamada recién generada se envía (mediante la información proporcionada por el proveedor de servicios) a las aplicaciones que solicitan y supervisan poco después.
 
 Se **envía un mensaje LINE \_ CALLSTATE** (desconocido) a las aplicaciones de supervisión solo si [**lineCompleteTransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer) hace que las llamadas se resuelvan en una conferencia triple.
 
@@ -108,11 +108,11 @@ Este mensaje no se puede deshabilitar.
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

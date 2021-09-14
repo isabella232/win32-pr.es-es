@@ -4,12 +4,12 @@ ms.assetid: c78eeb43-c713-42cc-a38f-f8aaa04f8dae
 title: Funciones de contadores de rendimiento para Visual Basic
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c68fa9b417f6db987110d03fc0c3c88a920adf8cd70cf0ff5f844f26c0ef5c35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c777aa887b9dc42a061de95fb6f33dbf9d3dff7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250647"
 ---
 # <a name="performance-counters-functions-for-visual-basic"></a>Funciones de contadores de rendimiento para Visual Basic
 
@@ -34,4 +34,4 @@ Puede usar las siguientes funciones para trabajar con datos de rendimiento en Vi
 - [**PdhVbUpdateLog**](pdhvbupdatelog.md)
 
 > [!NOTE]
-> Las funciones funcionan en una sesión por proceso y `PdhVb***` no son seguras para subprocesos. Estas funciones solo se deben usar desde aplicaciones sencillas de un solo subproceso.
+> Las `PdhVb***` funciones funcionan en una sesión por proceso y no son seguras para subprocesos. Estas funciones solo se deben usar desde aplicaciones sencillas de un solo subproceso.

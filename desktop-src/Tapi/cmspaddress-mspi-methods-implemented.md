@@ -4,12 +4,12 @@ ms.assetid: 22d4828e-f439-44ca-aa6c-f7f18c5fd64f
 title: Métodos MSPI de CMSPAddress implementados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 181a94cf7b1bdb1a2b73d9b976f5111639d331dd73f6f57f5cc1f3b0a43110c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ed19bbacc13990d052c35bda68f97db80ff68ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117947457"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250281"
 ---
 # <a name="cmspaddress-mspi-methods-implemented"></a>Métodos MSPI de CMSPAddress implementados
 
@@ -19,7 +19,7 @@ Los siguientes son métodos MSPI estándar que todos los MSP deben implementar. 
 
 | Métodos CMSPAddress                                                                          | Descripción                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Inicialización**](/windows/desktop/api/msp/nf-msp-itmspaddress-initialize)                                                | (Interfaz [**ITMSPAddress**](/windows/desktop/api/msp/nn-msp-itmspaddress)) TapI3 lo llama cuando se crea este MSP por primera vez.                                                                                                                                                                                                                                                                                                   |
+| [**Inicialización**](/windows/desktop/api/msp/nf-msp-itmspaddress-initialize)                                                | (Interfaz [**ITMSPAddress**](/windows/desktop/api/msp/nn-msp-itmspaddress)) Lo llama TAPI3 cuando se crea por primera vez este MSP.                                                                                                                                                                                                                                                                                                   |
 | [**Apagado**](/windows/desktop/api/msp/nf-msp-itmspaddress-shutdown)                                                    | (Interfaz [**ITMSPAddress**](/windows/desktop/api/msp/nn-msp-itmspaddress)) Lo llama TAPI3 cuando esta dirección ya no está en uso.                                                                                                                                                                                                                                                                                         |
 | [**ReceiveTSPData**](/windows/desktop/api/msp/nf-msp-itmspaddress-receivetspdata)                                        | (Interfaz [**ITMSPAddress**](/windows/desktop/api/msp/nn-msp-itmspaddress)) Lo llama TAPI3 cuando el TSP envía datos a este objeto de dirección MSP.                                                                                                                                                                                                                                                                               |
 | [**GetEvent**](/windows/desktop/api/msp/nf-msp-itmspaddress-getevent)                                                    | (Interfaz [**ITMSPAddress**](/windows/desktop/api/msp/nn-msp-itmspaddress)) TapI3 lo llama para obtener información detallada sobre un evento.                                                                                                                                                                                                                                                                                       |

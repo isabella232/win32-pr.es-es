@@ -1,19 +1,19 @@
 ---
 title: Buscar el nombre completo de un usuario
-description: Los equipos se pueden organizar en un dominio, que es una red de recopilación de equipos. El administrador de dominio mantiene la información centralizada de la cuenta de usuario y grupo.
+description: Los equipos se pueden organizar en un dominio, que es una colección de redes de equipos. El administrador de dominio mantiene información centralizada de cuentas de grupo y usuario.
 ms.assetid: 296ecfd0-1b65-482c-bee1-eff2130cc14e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 434bdff00483b38ef12355af4dcda4a48d60bf849a8fd5d6829640ae8907e426
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cb2daa6bc2bc7d7255e961537c641a999d5a0bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012523"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069402"
 ---
 # <a name="looking-up-a-users-full-name"></a>Buscar el nombre completo de un usuario
 
-Los equipos se pueden organizar en *un dominio*, que es una colección de redes de equipos. El administrador de dominio mantiene la información centralizada de la cuenta de usuario y grupo.
+Los equipos se pueden organizar en un *dominio*, que es una colección de redes de equipos. El administrador de dominio mantiene información centralizada de cuentas de grupo y usuario.
 
 Para buscar el nombre completo de un usuario, dados el nombre de usuario y el nombre de dominio:
 

@@ -4,12 +4,12 @@ ms.assetid: ae6ab5fc-598e-43b8-a260-2cd94dc2648f
 title: Referencia de api de inscripción de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72fc3e46d818ad229772878034adf64d8ac04e0aa774ad7446b69b910c7750ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 786b0b0fbfe6e9f2e551a03dc9f74eeeaa12ffc3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118902854"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069041"
 ---
 # <a name="certificate-enrollment-api-reference"></a>Referencia de api de inscripción de certificados
 

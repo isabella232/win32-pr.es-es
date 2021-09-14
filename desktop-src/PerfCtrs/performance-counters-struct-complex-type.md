@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 29796a259810cd03739c45338709966bd765f0c1fd9026777f435acb2c5de253
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dc59103a1a98b0baf1559ead159221ea42288936
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119978855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250580"
 ---
 # <a name="struct-complex-type"></a>Tipo complejo de struct
 
@@ -46,7 +46,7 @@ Define una estructura que contiene uno o varios valores de contador.
 | Nombre | Tipo                                                                    | Descripción                                                                                                                                      |
 |------|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | name | [**man:CSymbolType**](performance-counters-csymboltype-simple-type.md) | Nombre de la estructura.<br/>                                                                                                            |
-| tipo | [**man:CSymbolType**](performance-counters-csymboltype-simple-type.md) | Nombre simbólico que identifica la estructura. La [herramienta CTRPP](ctrpp.md) crea una variable de estructura con este nombre que puede usar.<br/> |
+| type | [**man:CSymbolType**](performance-counters-csymboltype-simple-type.md) | Nombre simbólico que identifica la estructura. La [herramienta CTRPP](ctrpp.md) crea una variable de estructura con este nombre que puede usar.<br/> |
 
 
 

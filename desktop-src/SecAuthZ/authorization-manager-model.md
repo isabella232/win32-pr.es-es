@@ -4,12 +4,12 @@ ms.assetid: c6d37b2e-b149-43e2-8155-cb2f669e421c
 title: Modelo del administrador de autorización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20973b8b3e1b35780cc771c04302430b44352a112745842dcbdb66e92b948aad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3455c9577f24b260bd02f947d0af99ec85570bd5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117784204"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250460"
 ---
 # <a name="authorization-manager-model"></a>Modelo del administrador de autorización
 
@@ -17,7 +17,7 @@ El Administrador de autorización ofrece un marco de trabajo flexible para integ
 
 Las aplicaciones del administrador de autorización almacenan la directiva de autorización en forma de almacenes de autorización que se guardan en Active Directory o archivos XML y aplican la directiva de autorización en tiempo de ejecución.
 
-A continuación, las aplicaciones llaman a un método de comprobación de acceso en tiempo de ejecución que comprueba el acceso con la información de directiva en el almacén de autorización.
+A continuación, las aplicaciones llaman a un método de comprobación de acceso en tiempo de ejecución que comprueba el acceso con la información de la directiva en el almacén de autorización.
 
 La directiva de autorización incluye las siguientes partes:
 

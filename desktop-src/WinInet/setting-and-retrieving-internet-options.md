@@ -7,11 +7,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: de9440af59efc763e034615f7919e94c4cfe9227
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122482491"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068319"
 ---
 # <a name="setting-and-retrieving-internet-options"></a>Configuración y recuperación de opciones de Internet
 
@@ -73,7 +73,7 @@ Estos identificadores tienen tres niveles:
 -   [**HINTERNET controla**](appendix-a-hinternet-handles.md) que se conectan a un servidor (creado mediante una llamada a [**InternetConnect)**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta)
 -   [**HINTERNET controla**](appendix-a-hinternet-handles.md) los identificadores asociados a un recurso o enumeración de recursos en un servidor determinado.
 
-Además de los distintos identificadores [**HINTERNET,**](appendix-a-hinternet-handles.md) una aplicación también puede usar **NULL** para establecer o recuperar los valores predeterminados de las opciones de Internet usadas por Internet Explorer y las funciones de WinINet. Al establecer opciones de Internet **cuando se usa NULL** como identificador, se cambian los valores predeterminados de las opciones, que actualmente se almacenan en el Registro. Las aplicaciones cliente no deben usar funciones del Registro para cambiar los valores predeterminados de las opciones de Internet, ya que la implementación de cómo se almacenan las opciones se puede modificar en el futuro.
+Además de los distintos identificadores [**HINTERNET,**](appendix-a-hinternet-handles.md) una aplicación también puede usar **NULL** para establecer o recuperar los valores predeterminados de las opciones de Internet usadas por Internet Explorer y las funciones winINet. Al establecer opciones de Internet **cuando se usa NULL** como identificador, se cambian los valores predeterminados de las opciones, que actualmente se almacenan en el Registro. Las aplicaciones cliente no deben usar funciones del Registro para cambiar los valores predeterminados de las opciones de Internet, ya que la implementación de cómo se almacenan las opciones se puede modificar en el futuro.
 
 En la tabla siguiente se muestra el tipo de [**identificadores HINTERNET**](appendix-a-hinternet-handles.md) y el ámbito de las opciones de Internet asociadas a ellos.
 
@@ -279,7 +279,7 @@ En Internet Explorer 5 y versiones posteriores, las opciones de Internet se pued
 6.  Liberar la memoria, asignada para contener los datos de la opción, mediante la [**función GlobalFree.**](/windows/desktop/api/winbase/nf-winbase-globalfree)
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones de servidor o los servicios, use [Microsoft Windows servicios HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para implementaciones de servidor o servicios, use [Microsoft Windows servicios HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
  
 

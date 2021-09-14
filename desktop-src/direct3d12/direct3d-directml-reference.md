@@ -1,20 +1,20 @@
 ---
 title: Referencia de DirectML
-description: En esta sección se tratan Machine Learning API de Direct Machine Learning (DirectML) declaradas en DirectML.h.
+description: En esta sección se tratan las API de Direct Machine Learning (DirectML) declaradas en DirectML.h.
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: 9d619a066fbbb323b957a7cbbe533f0852eabcd76a2389ee6855b6bcdc48a785
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 982b66e9ee07a6506e7b45ba67de7c44a8648cc4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119987825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249098"
 ---
 # <a name="directml-reference"></a>Referencia de DirectML
 
-En esta sección se tratan Machine Learning API de Direct Machine Learning (DirectML) declaradas en DirectML.h.
+En esta sección se tratan las API de Direct Machine Learning (DirectML) declaradas en DirectML.h.
 
 ## <a name="in-this-section"></a>En esta sección
 

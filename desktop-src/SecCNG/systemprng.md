@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ksecdd.sys
 - Cng.sys
-ms.openlocfilehash: eae1a46b43278c836ff6ce318dfdce7302bb0e052664a7326f9043a60eec72d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d847d34ffd11e158170f55599de0ceb3acf3c697
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118905634"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250334"
 ---
 # <a name="systemprng-function"></a>Función SystemPrng
 
@@ -72,7 +72,7 @@ Siempre devuelve **TRUE.**
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista solo con aplicaciones de \[ escritorio sp1\]<br/>                                                                                                                                                                                        |
+| Cliente mínimo compatible<br/> | Windows Vista solo con aplicaciones de escritorio de SP1 \[\]<br/>                                                                                                                                                                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                                                                                                           |
 | Archivo DLL<br/>                      | <dl> <dt>Ksecdd.sys en Windows Server 2008 y Windows Vista con SP1;</dt> <dt>Cng.sys en Windows 7 y Windows Server 2008 R2</dt> </dl> |
 

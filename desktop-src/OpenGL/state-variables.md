@@ -6,12 +6,12 @@ keywords:
 - OpenGL, variables de estado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b83ec5581d649ac5c7bca63bddd22954641d83af624d72bad3095af04f3c981
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71d0dd43b0876630e9f913224afb63e3886a0e8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120034625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069260"
 ---
 # <a name="state-variables"></a>Variables de estado
 

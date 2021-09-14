@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: ac075bcb61cb2eedded3b6d86f3dc821c387b3dca98e9325a0fdf1b016fb31d2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: abb5ff5f7a528ff654787e9b2ee3d935abee57d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119628815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272444"
 ---
 # <a name="sessionsetinstalllevel-method"></a>Método Session.SetInstallLevel
 
@@ -50,7 +50,7 @@ Se requiere el nuevo nivel de instalación solicitado.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [acción CostInitialize](costinitialize-action.md) debe ejecutarse antes de llamar a **SetInstallLevel**.
 

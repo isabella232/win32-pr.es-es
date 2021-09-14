@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 86fcd0195dc5f304d7f3bda8e9aa3a1a39f1ff97b684cd3c1a41be22a996d693
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88e424aa067e45c1e88caf1fa6079d62802ba16d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119011283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069182"
 ---
 # <a name="counterattribute-counterattributes-element"></a>elemento counterAttribute (counterAttributes)
 
@@ -39,7 +39,7 @@ El **tipo complejo counterAttributes** define el elemento [**counterAttributes.*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

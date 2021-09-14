@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41e5cfcc65c54f882f10e87a0f2aaebad0e1a55c94b6581031b034799987bc6b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac707dfaf2ed379884395a08128ddaeda771fa00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117956964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068878"
 ---
 # <a name="counteritemselected-property"></a>CounterItem.Selected, propiedad
 
@@ -29,7 +29,7 @@ Recupera o establece un valor que indica si el contador está seleccionado.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -42,7 +42,7 @@ Property Selected As Boolean
 
 True si el contador está seleccionado; de lo contrario, false.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede seleccionar uno o varios contadores de la colección de contadores. Al seleccionar un contador, selecciona el contador en leyenda, hace que el contador sea visible en la leyenda y genera un [**evento OnCounterSelected.**](-systemmonitor-oncounterselected.md)
 
@@ -50,7 +50,7 @@ Puede seleccionar uno o varios contadores de la colección de contadores. Al sel
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |

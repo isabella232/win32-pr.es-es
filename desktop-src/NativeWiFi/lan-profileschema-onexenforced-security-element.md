@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: bcaa8604fb8b813417299725133e9c6e51f7d7510b540cf8495ff9009b9d1c46
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6656238b0745f8bfef9aff5bcb0b80775dd1da2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117798445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069475"
 ---
 # <a name="onexenforced-security-element"></a>Elemento OneXEnforced (security)
 
-El **elemento OneXEnforced** (security) especifica si el servicio de configuración automática para redes cableadas requiere el uso de 802.1X para la autenticación de puertos. Cuando **OneXEnforced es** TRUE, el servicio de configuración automática debe usar 802.1X para la autenticación de puertos. Cuando **OneXEnforced** es FALSE, el servicio de configuración automática intentará usar 802.1X para la autenticación de puerto, pero el servicio no volverá a ninguna autenticación si se produce un error en la autenticación 802.1X por cualquier motivo.
+El **elemento OneXEnforced** (security) especifica si el servicio de configuración automática para redes cableadas requiere el uso de 802.1X para la autenticación de puertos. Cuando **OneXEnforced es** TRUE, el servicio de configuración automática debe usar 802.1X para la autenticación de puertos. Cuando **OneXEnforced** es FALSE, el servicio de configuración automática intentará usar 802.1X para la autenticación de puertos, pero el servicio no volverá a ninguna autenticación si se produce un error en la autenticación 802.1X por cualquier motivo.
 
 Este elemento es opcional. El valor predeterminado es FALSE.
 
@@ -33,13 +33,13 @@ Este elemento solo tiene un valor significativo si [**OneXEnabled**](lan-profile
  />
 ```
 
-El **elemento OneXEnforced** se define mediante el [**elemento de**](lan-profileschema-security-msm-element.md) seguridad.
+El **elemento OneXEnforced** se define mediante el [**elemento de**](lan-profileschema-security-msm-element.md) seguridad .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

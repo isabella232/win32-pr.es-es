@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: da6cc5b476373a55135d91d21163f15cb04379fff9d7c7c2cf1342451a5a201d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 980665372d49f483e3fb59b7571ec38fa9c2851a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061163"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069187"
 ---
 # <a name="pdhvbgetonecounterpath-function"></a>Función PdhVbGetOneCounterPath
 
@@ -91,7 +91,7 @@ La función devuelve el número de caracteres escritos en el búfer *PathString.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

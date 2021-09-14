@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26c05b0cf84b5b730d308cc3122a9f9b555eaedd7a7945c9d5cfc6341fa34b43
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97f810083c61fbd04d1c61349d57e7abd72ab95a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120036265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069321"
 ---
 # <a name="glvertex2i-function"></a>Función glVertex2i
 
@@ -59,7 +59,7 @@ Especifica la coordenada Y de un vértice.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los comandos de función glVertex se usan en pares [**glBegin**](glbegin.md)glEnd para especificar vértices de punto, línea / [](glend.md) y polígono. Las coordenadas de color, normal y textura actuales están asociadas al vértice cuando se llama a glVertex. Cuando solo *se especifican x* e *y,* *z* tiene como valor predeterminado 0,0 y *w* el valor predeterminado es 1,0. Cuando *se* especifican x , *y* y *z,* *w* tiene como valor predeterminado 1.0. La invocación de glVertex fuera de **un par glBegin** / **glEnd** produce un comportamiento indefinido.
 
@@ -77,7 +77,7 @@ Los comandos de función glVertex se usan en pares [**glBegin**](glbegin.md)glEn
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

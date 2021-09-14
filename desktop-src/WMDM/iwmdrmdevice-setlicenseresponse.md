@@ -1,11 +1,11 @@
 ---
 title: Método IWMDRMDevice SetLicenseResponse
-description: El método SetLicenseResponse establece la respuesta de la licencia.
+description: El método SetLicenseResponse establece la respuesta de licencia.
 ms.assetid: 1ef3ba9d-d14c-4a20-92d6-0bcb604fd9e2
 keywords:
 - Método SetLicenseResponse windows Media Administrador de dispositivos
 - Método SetLicenseResponse windows Media Administrador de dispositivos , interfaz IWMDRMDevice
-- Interfaz IWMDRMDispositivo windows Media Administrador de dispositivos , método SetLicenseResponse
+- Interfaz IWMDRMDevice windows Media Administrador de dispositivos , método SetLicenseResponse
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4161732002378449f196fdf83c4b880fcc2c02d345a0b08c6e6a464b81acb1dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f32a2d27fabe45081b13d658e49171af035b8cc6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068505"
 ---
-# <a name="iwmdrmdevicesetlicenseresponse-method"></a>IWMDRMDevice::SetLicenseResponse (método)
+# <a name="iwmdrmdevicesetlicenseresponse-method"></a>Método IWMDRMDevice::SetLicenseResponse
 
 El **método SetLicenseResponse** establece la respuesta de licencia.
 
@@ -83,11 +83,11 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IWMDRMDevice (interfaz)**](iwmdrmdevice.md)
+[**Interfaz IWMDRMDevice**](iwmdrmdevice.md)
 </dt> </dl>
 
  

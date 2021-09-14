@@ -8,12 +8,12 @@ keywords:
 - referencia de máscaras, atributos especializados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53a2dfd7f6a54b10b3997288b0b207713a4231caf96a0e7a9aaa7a6ab02f0959
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cafb901aceab1ada6af93ce03dafda6dac04fbfa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068365"
 ---
 # <a name="miscellaneous"></a>Varios
 

@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eb91b2544bf0ebf0e8767a611b422de9aaaf1d73161e47c7bf27768f4acecb4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8160c88b11fa109e8bbfaa06f0f6c45c9b7daed0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118304498"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063863"
 ---
 # <a name="wm_copydata-message"></a>Mensaje \_ COPYDATA de WM
 
-Una aplicación envía el **mensaje \_ COPYDATA de WM** para pasar datos a otra aplicación.
+Una aplicación envía el mensaje **\_ COPYDATA de WM** para pasar datos a otra aplicación.
 
 
 ```C++
@@ -54,23 +54,23 @@ Puntero a una [**estructura COPYDATASTRUCT**](/windows/win32/api/winuser/ns-winu
 
 Si la aplicación receptora procesa este mensaje, debe devolver **TRUE**; de lo contrario, debe devolver **FALSE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los datos que se pasan no deben contener punteros u otras referencias a objetos no accesibles para la aplicación que recibe los datos.
 
 Mientras se envía este mensaje, otro subproceso del proceso de envío no debe cambiar los datos a los que se hace referencia.
 
-La aplicación receptora debe tener en cuenta los datos de solo lectura. El *parámetro lParam* solo es válido durante el procesamiento del mensaje. La aplicación receptora no debe liberar la memoria a la que hace referencia *lParam.* Si la aplicación receptora debe tener acceso a los datos después de la devolución de [**SendMessage,**](/windows/desktop/api/winuser/nf-winuser-sendmessage) debe copiar los datos en un búfer local.
+La aplicación receptora debe tener en cuenta los datos de solo lectura. El *parámetro lParam* solo es válido durante el procesamiento del mensaje. La aplicación receptora no debe liberar la memoria a la que hace referencia *lParam.* Si la aplicación receptora debe tener acceso a los datos después de que [**sendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) vuelva, debe copiar los datos en un búfer local.
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo, vea [Using Data Copy](using-data-copy.md).
+Para obtener un ejemplo, vea [Usar copia de datos](using-data-copy.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

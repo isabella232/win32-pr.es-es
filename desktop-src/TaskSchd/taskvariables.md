@@ -3,7 +3,7 @@ title: Objeto TaskVariables
 description: Objeto de scripting que define variables de tarea que se pueden pasar como parámetros a controladores de tareas y ejecutables externos que inician las tareas.
 ms.assetid: 194babe0-16bd-4a78-af45-139c9c7eacbe
 keywords:
-- Objetos TaskVariables Programador de tareas
+- Objeto TaskVariables Programador de tareas
 - Objeto TaskVariables Programador de tareas , descrito
 topic_type:
 - apiref
@@ -15,18 +15,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ada89af03a735dca3957144e08857b03ca6824609b3c1ce6e50a46ce95d7fa0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 00fe20153b0d6d66ca6c7f263a8e76d5a4d480b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119575055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068648"
 ---
 # <a name="taskvariables-object"></a>Objeto TaskVariables
 
 Objeto de scripting que define variables de tarea que se pueden pasar como parámetros a controladores de tareas y ejecutables externos que inician las tareas.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto TaskVariables** tiene estos tipos de miembros:
 
@@ -52,7 +52,7 @@ El **objeto TaskVariables** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |

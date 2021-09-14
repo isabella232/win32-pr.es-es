@@ -1,6 +1,6 @@
 ---
 title: Win32_RDCentralPublishedDeploymentSettings clase
-description: Contiene la configuración de implementación que se usa para generar archivos RDP para los recursos publicados desde una granja.
+description: Contiene la configuración de implementación utilizada para generar archivos RDP para los recursos publicados desde una granja de servidores.
 ms.assetid: 6d1be0b2-e070-4c60-8068-b59ba121bf9f
 ms.tgt_platform: multiple
 keywords:
@@ -36,16 +36,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee16b557ab58a11b5994236137ddfd549a0eb0294f04c619f5245de78e379029
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd4dd1b118f2fabf22f10e47c0b8467b0ddf6388
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119868505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249783"
 ---
 # <a name="win32_rdcentralpublisheddeploymentsettings-class"></a>Clase \_ RDCentralPublishedDeploymentSettings de Win32
 
-Contiene la configuración de implementación que se usa para generar archivos RDP para los recursos publicados desde una granja.
+Contiene la configuración de implementación utilizada para generar archivos RDP para los recursos publicados desde una granja de servidores.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -78,7 +78,7 @@ class Win32_RDCentralPublishedDeploymentSettings : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ RDCentralPublishedDeploymentSettings de Win32** tiene estos tipos de miembros:
 
@@ -86,7 +86,7 @@ La **clase \_ RDCentralPublishedDeploymentSettings de Win32** tiene estos tipos 
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ RdCentralPublishedDeploymentSettings de Win32** tiene estas propiedades.
+La **clase \_ RDCentralPublishedDeploymentSettings de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -143,7 +143,7 @@ Tipo de datos: **sint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Contiene la profundidad de bits del color:
+Contiene la profundidad de bits de color:
 
 <dt>
 
@@ -260,7 +260,7 @@ Contiene el modo de autenticación de puerta de enlace:
 
 <span id="Password_0_"></span><span id="password_0_"></span><span id="PASSWORD_0_"></span>
 
-<span id="Password_0_"></span><span id="password_0_"></span><span id="PASSWORD_0_"></span>**Password(0)** (0)
+<span id="Password_0_"></span><span id="password_0_"></span><span id="PASSWORD_0_"></span>**Contraseña(0)** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -347,7 +347,7 @@ Use la puerta de enlace.
 
 </dt> <dd>
 
-Detecte la puerta de enlace.
+Detectar puerta de enlace.
 
 </dd> </dl>
 
@@ -362,7 +362,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-**true** para usar las mismas credenciales de usuario para la puerta de enlace de TS y el servidor TS cuando sea posible; de lo contrario, **false**.
+**true** para usar las mismas credenciales de usuario para la puerta de enlace de TS y el servidor de TS cuando sea posible; de lo contrario, **false**.
 
 </dd> <dt>
 

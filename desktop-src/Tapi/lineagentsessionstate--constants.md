@@ -4,12 +4,12 @@ ms.assetid: 8a0d06bb-51ba-4eaf-8719-120aed817f63
 title: LINEAGENTSESSIONSTATE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 702c9820fb6c2157a386241b13ea0593c4156195bc74bcfa7655c76db171083d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bdfd1be8cf846d0e23828f0a3540960a86a83ef1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119682205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249975"
 ---
 # <a name="lineagentsessionstate_-constants"></a>Constantes LINEAGENTSESSIONSTATE \_
 
@@ -81,10 +81,10 @@ Se ha publicado la sesión del agente.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

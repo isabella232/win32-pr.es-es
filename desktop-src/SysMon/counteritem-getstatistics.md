@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bea1be162d68bb02db4842a7140effe653231dcc5105c4bea3b557abb02beab0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c993ed8b9bb39a4d8bb3ff18663f2d884ece156
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118883781"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068885"
 ---
 # <a name="counteritemgetstatistics-method"></a>Método CounterItem.GetStatistics
 
@@ -73,7 +73,7 @@ Indica si los valores son válidos.
 
 
 
-| Valor                                                                                              | Significado                              |
+| Value                                                                                              | Significado                              |
 |----------------------------------------------------------------------------------------------------|--------------------------------------|
 | <dl> <dt>0</dt> </dl>                       | Los valores son válidos.<br/>     |
 | <dl> <dt>0xC0000BBA (3221228474)</dt> </dl> | Los valores no son válidos.<br/> |
@@ -88,7 +88,7 @@ Indica si los valores son válidos.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo se usan los valores de contador que están visibles en la ventana del gráfico para calcular los valores estadísticos.
 
@@ -96,7 +96,7 @@ Solo se usan los valores de contador que están visibles en la ventana del gráf
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

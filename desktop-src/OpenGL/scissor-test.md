@@ -7,12 +7,12 @@ keywords:
 - prueba de deserción OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e5dc42e9891b2fd1be7d9acc8579c498c0fd0ec7b03e8da9b0bbf340bac45b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c8cb4b0deb78bb91357c4bc0b6670eb4cb19835
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120034715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069281"
 ---
 # <a name="scissor-test"></a>Prueba de la indesa
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c371219502cd2388d29b100c745235de47aeef3585a667a84201dd4ae03c2af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d43617c9ec7d079001c02a6c73f525baa6085c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120000925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249524"
 ---
 # <a name="wmoriginallyricist-attribute"></a>Atributo WM/OriginalLyricist
 
@@ -27,7 +27,7 @@ El **atributo WM/Delicionista** es el nombre de la persona que escribió la obra
 
 -   [Música Archivos](music-file-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en un archivo de música que no está en la biblioteca.
 
@@ -45,7 +45,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

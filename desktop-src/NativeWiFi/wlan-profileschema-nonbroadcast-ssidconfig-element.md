@@ -1,7 +1,7 @@
 ---
-description: Indica si se va a conectar a una red oculta.
+description: Indica si se debe conectar a una red oculta.
 ms.assetid: 31b859e9-adc7-49e2-91d9-4fb63a35addb
-title: Elemento nonbroadcast (SSIDConfig)
+title: nonBroadcast (SSIDConfig) (Elemento)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 695bede631b19c028a55a2f3ca82ba994ca12ada
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272244"
 ---
-# <a name="nonbroadcast-ssidconfig-element"></a>Elemento nonbroadcast (SSIDConfig)
+# <a name="nonbroadcast-ssidconfig-element"></a>nonBroadcast (SSIDConfig) (Elemento)
 
-El elemento nonbroadcast (SSIDConfig) indica si se va a conectar a una red oculta. Si una red no emite su SSID, se denomina red oculta. Si se establecen varios SSID en el perfil, todos deben tener el mismo valor de no difusión.
+El elemento nonBroadcast (SSIDConfig) indica si se debe conectar a una red oculta. Si una red no difunde su SSID, se conoce como una red oculta. Si se establecen varios SSID dentro del perfil, todos deben tener el mismo valor nonBroadcast.
 
-Si [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) se establece en **ESS**, este valor puede ser "true" o "false". Si este elemento no está presente, el valor predeterminado es "false".
+Si [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) se establece en **ESS,** este valor puede ser "true" o "false". Si este elemento no está presente, el valor predeterminado es "false".
 
-Si [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) se establece en **IBSS**, este valor debe ser "false". Si este elemento no está presente, el valor predeterminado es "false".
+Si [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) se establece en **IBSS,** este valor debe ser "false". Si este elemento no está presente, el valor predeterminado es "false".
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="nonBroadcast"
@@ -36,11 +36,11 @@ Si [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md
  />
 ```
 
-El elemento se define mediante el elemento [**SSIDConfig**](wlan-profileschema-ssidconfig-wlanprofile-element.md) .
+El elemento [**SSIDConfig**](wlan-profileschema-ssidconfig-wlanprofile-element.md) define el elemento .
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver un perfil de ejemplo que usa el elemento de no **difusión** , vea [ejemplo de perfil sin difusión](non-broadcast-profile-sample.md).
+Para ver un perfil de ejemplo que usa el **elemento nonBroadcast,** vea [Non-Broadcast Profile Sample](non-broadcast-profile-sample.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,12 +48,12 @@ Para ver un perfil de ejemplo que usa el elemento de no **difusión** , vea [eje
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -7,18 +7,18 @@ keywords:
 - GLU (utilidad OpenGL), especificar funciones de devolución de llamada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e57a5f961a980f20451f594fa59885eda99d1e2de94a55fbfd2abd4b8301b4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6086448cf6f4a71ea6a49359d5656f12f613d760
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119553785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069265"
 ---
 # <a name="specifying-callbacks"></a>Especificar devoluciones de llamada
 
 Puede especificar hasta cinco funciones de devolución de llamada para una teselación. No se llama a las funciones que no especifique durante la teselación y no se obtiene ninguna información que puedan haber devuelto. Especifique las funciones de devolución de llamada [*con gluTessCallback*](glutess.md).
 
-La **función gluTessCallback** asocia la función de devolución de llamada *fn* con el *objeto de teselación tessobj*. El tipo de devolución de llamada viene determinado por el tipo de parámetro *,* que puede ser **GLU \_ BEGIN,** **GLU EDGE \_ \_ FLAG,** **GLU \_ VERTEX,** **GLU \_ END** o **GLU \_ ERROR**. Las cinco funciones de devolución de llamada posibles tienen los prototipos siguientes.
+La **función gluTessCallback** asocia la función de devolución de llamada *fn* con el *objeto de teselación tessobj*. El tipo de devolución de llamada viene determinado por el tipo de parámetro *,* que puede ser **GLU \_ BEGIN,** **GLU EDGE \_ \_ FLAG,** **GLU \_ VERTEX,** **GLU \_ END** o **GLU \_ ERROR**. Las cinco funciones de devolución de llamada posibles tienen los siguientes prototipos.
 
 
 

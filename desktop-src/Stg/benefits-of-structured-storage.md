@@ -6,12 +6,12 @@ keywords:
 - Structured Storage Strctd Stg , ventajas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a52159f37b3bf443419beaadbcf9f76aa9c5d7209e04b25506eea850c4d3d98
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e68b954fda33e18f654ccc0360f58ddb14e5d110
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119663583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068923"
 ---
 # <a name="benefits-of-structured-storage"></a>Ventajas de structured Storage
 

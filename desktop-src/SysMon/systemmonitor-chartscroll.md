@@ -1,10 +1,10 @@
 ---
-title: Propiedad SystemMonitor. ChartScroll
+title: Propiedad SystemMonitor.ChartScroll
 description: Recupera o establece un valor que determina si el gráfico de líneas se desplaza en la vista.
 ms.assetid: df4806be-dfd3-4ff7-985d-b46c00bb19f8
 keywords:
 - Propiedad ChartScroll SysMon
-- Propiedad ChartScroll SysMon, objeto SystemMonitor
+- Objeto SysMon, SystemMonitor de la propiedad ChartScroll
 - Objeto SystemMonitor SysMon, propiedad ChartScroll
 topic_type:
 - apiref
@@ -17,13 +17,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 51288af710e5ae94baf46acf0d2ed91732a1d310
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068826"
 ---
-# <a name="systemmonitorchartscroll-property"></a>Propiedad SystemMonitor. ChartScroll
+# <a name="systemmonitorchartscroll-property"></a>Propiedad SystemMonitor.ChartScroll
 
 Recupera o establece un valor que determina si el gráfico de líneas se desplaza en la vista.
 
@@ -38,11 +38,11 @@ Property ChartScroll As Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-True si el gráfico de líneas se desplaza continuamente de derecha a izquierda; en caso contrario, false si el gráfico de líneas se dibuja de izquierda a derecha y se ajusta en sí mismo en la vista. False es la opción predeterminada.
+True si el gráfico de líneas se desplaza continuamente de derecha a izquierda; De lo contrario, False si el gráfico de líneas se dibuja de izquierda a derecha y se encapsula en sí mismo en la vista. False es la opción predeterminada.
 
 ## <a name="remarks"></a>Observaciones
 
-Este valor se omite si [**SystemMonitor. DisplayType**](systemmonitor-displaytype.md) no es [**DisplayTypeConstants.sysmonLineGraph**](/windows/win32/api/isysmon/ne-isysmon-displaytypeconstants).
+Este valor se omite si [**SystemMonitor.DisplayType**](systemmonitor-displaytype.md) no [**es DisplayTypeConstants.sysmonLineGraph**](/windows/win32/api/isysmon/ne-isysmon-displaytypeconstants).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Este valor se omite si [**SystemMonitor. DisplayType**](systemmonitor-displaytyp
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 

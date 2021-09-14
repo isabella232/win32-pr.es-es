@@ -10,26 +10,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ee8c4737ff7513441532275e24f2cfe20f8e30fa2932e854cc566eb032c49d0a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2b3ec0c1bd771f59a4e456cb8e57c3bb3e9e394
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118555154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063960"
 ---
 # <a name="making-an-asynchronous-call-with-vbscript"></a>Realizar una llamada asincrónica con VBScript
 
-Realizar una llamada asincrónica a un método [*WMI*](gloss-w.md) o [*a*](gloss-p.md) un método de proveedor permite que un script continúe ejecutándose mientras los objetos vuelven a un objeto [**SWbemSink**](swbemsink.md) y se controlan mediante métodos como [**SWbemSink.OnObjectReady**](swbemsink-onobjectready.md). Sin embargo, no se recomiendan las llamadas asincrónicas porque es posible que los datos no se devuelvan en el mismo nivel de seguridad que se realiza la llamada.
+Realizar una llamada asincrónica a un [*método WMI*](gloss-w.md) o [*a*](gloss-p.md) un método de proveedor permite que un script continúe ejecutándose mientras los objetos vuelven a un objeto [**SWbemSink**](swbemsink.md) y se controlan mediante métodos como [**SWbemSink.OnObjectReady**](swbemsink-onobjectready.md). Sin embargo, no se recomiendan las llamadas asincrónicas porque es posible que los datos no se devuelvan en el mismo nivel de seguridad que se realiza la llamada.
 
-Al usar llamadas de receptor asincrónicas como [**SWbemSink.OnObjectReady para**](swbemsink-onobjectready.md) obtener datos devueltos, puede establecer el siguiente valor del Registro.
+Al usar llamadas de receptor asincrónicas como [**SWbemSink.OnObjectReady para**](swbemsink-onobjectready.md) obtener los datos devueltos, puede establecer el siguiente valor del Registro.
 
-**HKEY \_ SOFTWARE \_ DE MÁQUINA** \\ **LOCAL** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **UnsecAppAccessControlDefault**
+**HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **UnsecAppAccessControlDefault**
 
 Establecer este valor del Registro garantiza la autenticación de los objetos de datos devueltos al receptor. Si **UnsecAppAccessControlDefault** se establece en uno (1), WMI realiza la comprobación de acceso de la devolución de datos. Las comprobaciones de acceso comprueban que los datos proceden del origen correcto. Para obtener más información, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
 
-Los métodos asincrónicos con nombres que terminan en "Async" siempre devuelven inmediatamente después de llamarse para \_ que un programa pueda continuar ejecutándose. Por ejemplo, [**SWbemServices.ExecQuery es sincrónico**](swbemservices-execquery.md) y bloquea la ejecución hasta que se devuelven todos los objetos. El [**SWbemServices.Exemétodo cQueryAsync**](swbemservices-execqueryasync.md) es la versión asincrónica sin bloqueo. Una manera más segura de realizar la llamadaSWbemServices.Exeel bloqueo **de cQuery** es realizar la llamada de forma [*semisincronosa.*](gloss-s.md) Para obtener más información, vea [Establecer la seguridad en una llamada asincrónica](setting-security-on-an-asynchronous-call.md) y Realizar una llamada [semisincronosa con VBScript.](making-a-semisynchronous-call-with-vbscript.md)
+Los métodos asincrónicos con nombres que terminan en "Async" siempre devuelven inmediatamente después de llamarse para que un \_ programa pueda continuar ejecutándose. Por ejemplo, [**SWbemServices.ExecQuery**](swbemservices-execquery.md) es sincrónico y bloquea la ejecución hasta que se devuelven todos los objetos. El [**método SWbemServices.ExecQueryAsync**](swbemservices-execqueryasync.md) es la versión asincrónica sin bloqueo. Una manera más segura de realizar la llamada a **SWbemServices.ExecQuery** es mediante la realización de la llamada [*de forma semisincronosa.*](gloss-s.md) Para obtener más información, vea [Establecer la seguridad en una llamada asincrónica](setting-security-on-an-asynchronous-call.md) y Realizar una llamada [semisincronosa con VBScript.](making-a-semisynchronous-call-with-vbscript.md)
 
-El *parámetro iFlags* para las llamadas asincrónicas siempre tiene como valor predeterminado cero (0). Los métodos asincrónicos no suministran [**una colección SWbemObjectSet**](swbemobjectset.md) a la subrutina receptora. En su lugar, la subrutina de eventos [**SWbemSink.OnObjectReady**](swbemsink-onobjectready.md) en el script o la aplicación recibe cada objeto tal como se proporciona.
+El *parámetro iFlags* para las llamadas asincrónicas siempre tiene como valor predeterminado cero (0). Los métodos asincrónicos no suministran [**una colección SWbemObjectSet**](swbemobjectset.md) a la subrutina del receptor. En su lugar, la subrutina de eventos [**SWbemSink.OnObjectReady**](swbemsink-onobjectready.md) en el script o la aplicación recibe cada objeto tal como se proporciona.
 
 Una vez completada la llamada asincrónica original, llama al evento [**SWbemSink.OnCompleted**](swbemsink-oncompleted.md) del receptor del objeto y ejecuta el código que se coloca allí para procesar el resultado de la llamada.
 
@@ -68,7 +68,7 @@ En el procedimiento siguiente se describe cómo realizar una llamada asincrónic
 
 3.  Cree una subrutina para cada evento que un evento asincrónico pueda desencadenar. Estos eventos se definen como métodos en [**SWbemObject**](swbemobject.md). Por ejemplo, WMI realiza una devolución de llamada a [**SWbemSink.OnObjectReady a**](swbemsink-onobjectready.md) medida que se devuelve cada instancia.
 
-    Cuando cree la subrutina, coloque el código en la subrutina para controlar cada evento cuando se reciba.
+    Al crear la subrutina, coloque código en la subrutina para controlar cada evento cuando se reciba.
 
     ```VB
     Sub SINK_OnCompleted(
@@ -86,7 +86,7 @@ En el procedimiento siguiente se describe cómo realizar una llamada asincrónic
 
     
 
-    Examine el *parámetro iHresult* devuelto por el evento [**OnCompleted**](swbemsink-oncompleted.md) para determinar si la llamada asincrónica es correcta o no, o si se produjo un error. Si se realiza correctamente, el valor pasado en el *parámetro iHresult* es igual a cero (0). Cualquier otro valor puede indicar un error y debe comprobar los valores del objeto de error que se devuelve en el *parámetro objErrorObject.*
+    Examine el *parámetro iHresult* devuelto por el evento [**OnCompleted**](swbemsink-oncompleted.md) para determinar si la llamada asincrónica es correcta o no, o si se produjo un error. Si se realiza correctamente, el valor pasado en *el parámetro iHresult* es igual a cero (0). Cualquier otro valor puede indicar un error y debe comprobar los valores del objeto de error que se devuelve en el *parámetro objErrorObject.*
 
 4.  Realice una llamada asincrónica y pase el nombre del receptor en el *parámetro objWbemSink.*
 
@@ -126,7 +126,7 @@ En el procedimiento siguiente se describe cómo realizar una llamada asincrónic
 
     
 
-En el ejemplo de código siguiente se muestra una consulta asincrónica para todas las instancias de [**Proceso de Win32 \_**](/windows/desktop/CIMWin32Prov/win32-process) en el equipo local. Para obtener una versión semisincronosa del mismo método, vea [Llamar a un método](calling-a-method.md).
+En el ejemplo de código siguiente se muestra una consulta asincrónica para todas las instancias de [**Proceso win32 \_**](/windows/desktop/CIMWin32Prov/win32-process) en el equipo local. Para obtener una versión semisincronosa del mismo método, vea [Llamar a un método](calling-a-method.md).
 
 
 ```VB
@@ -171,7 +171,7 @@ end sub
 [Llamar a un método](calling-a-method.md)
 </dt> <dt>
 
-[Mantener la seguridad de WMI](maintaining-wmi-security.md)
+[Mantenimiento de la seguridad wmi](maintaining-wmi-security.md)
 </dt> </dl>
 
  

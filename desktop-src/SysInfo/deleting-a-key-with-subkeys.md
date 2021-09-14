@@ -5,11 +5,11 @@ title: Eliminación de una clave con subclaves
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 490020ff5a7bc6ea44f83b729bcbad4491aaa62e
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068899"
 ---
 # <a name="deleting-a-key-with-subkeys"></a>Eliminación de una clave con subclaves
 
@@ -17,9 +17,9 @@ En el ejemplo de este tema se usan las funciones [**RegOpenKeyEx**](/windows/des
 
 Para probar este ejemplo, cree la siguiente clave del Registro mediante Regedt32.exe y, a continuación, agregue algunos valores y subclaves:
 
-**HKEY \_ CURRENT \_ USER** \\ **Software** \\ **TestDir**
+**HKEY \_ Current \_ USER** \\ **Software** \\ **TestDir**
 
-Después de ejecutar el código, use la clave F5 para actualizar los datos del Registro y observe que se ha eliminado la clave **TestDir.**
+Después de ejecutar el código, use la tecla F5 para actualizar los datos del Registro y observe que se ha eliminado la clave **TestDir.**
 
 
 ```C++

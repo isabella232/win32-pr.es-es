@@ -1,37 +1,37 @@
 ---
-description: La versión 2.2 (TAPI/C) de la Interfaz de programación de aplicaciones de telefonía de Microsoft (TAPI) permite la implementación de aplicaciones de comunicaciones que van desde el control de módem básico hasta los centros de llamadas con varios agentes y conmutadores.
+description: Microsoft Telephony Application Programming Interface (TAPI) versión 2.2 (TAPI/C) permite la implementación de aplicaciones de comunicaciones que van desde el control de módem básico hasta los centros de llamadas con varios agentes y conmutadores.
 ms.assetid: 02bfe923-9915-439e-ac7c-a570416d054a
 title: Interfaz de programación de aplicaciones de telefonía versión 2.2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ea4317fbf603c4b0185440d71db5861db59af9dd7c5ae1e8fe49664100bb329
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8e0dc158210350979105d765dc939f600f61d8bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119060273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068707"
 ---
 # <a name="telephony-application-programming-interface-version-22"></a>Interfaz de programación de aplicaciones de telefonía versión 2.2
 
 ## <a name="purpose"></a>Propósito
 
-La versión 2.2 (TAPI/C) de la Interfaz de programación de aplicaciones de telefonía de Microsoft (TAPI) permite la implementación de aplicaciones de comunicaciones que van desde el control de módem básico hasta los centros de llamadas con varios agentes y conmutadores.
+Microsoft Telephony Application Programming Interface (TAPI) versión 2.2 (TAPI/C) permite la implementación de aplicaciones de comunicaciones que van desde el control de módem básico hasta los centros de llamadas con varios agentes y conmutadores.
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
 Las posibles aplicaciones TAPI 2.2 incluyen:
 
 -   Llamadas de voz básicas en la red telefónica conmutada pública (RTC)
--   Aplicaciones del centro de llamadas para el seguimiento de varios agentes
+-   Aplicaciones de centro de llamadas para el seguimiento de varios agentes
 -   Control de módem
 -   Control DE CONTROL DE CONTROL
 -   Sistemas de respuesta de voz interactiva (IVR)
 -   Buzón de voz
--   Control detallado de dispositivos de teléfono
+-   Control detallado de dispositivos telefónicos
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-TAPI/C está diseñado para su uso por parte de programadores de C/C++. La experiencia de desarrollo con telecomunicaciones u otras aplicaciones de telefonía es útil, pero no es necesaria.
+TAPI/C está diseñado para su uso por los programadores de C/C++. La experiencia de desarrollo con telecomunicaciones u otras aplicaciones de telefonía es útil, pero no es necesaria.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 

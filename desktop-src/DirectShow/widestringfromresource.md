@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 798f915536c491d32ccab7e7dbdc9b506d8b5df22b4459818472307e62356b71
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c7cbdccc76fc57e660109851ae5b8f141704d04
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119071819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272684"
 ---
 # <a name="widestringfromresource-function"></a>Función WideStringFromResource
 
@@ -61,9 +61,9 @@ Identificador de recurso de la cadena que se recuperará.
 
 Devuelve la misma cadena que *pBuffer.* Si la función no se realiza correctamente, devuelve una cadena null.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Normalmente, se llama a las páginas de propiedades a través de sus interfaces COM, que usan cadenas de caracteres anchos, independientemente de cómo se ha creado el binario. Esta función permite convertir una cadena de recursos en una cadena de caracteres anchos. La función convierte el recurso en una cadena de caracteres anchos (si aún no lo está) después de cargarlo.
+Normalmente, se llama a las páginas de propiedades a través de sus interfaces COM, que usan cadenas de caracteres anchos independientemente de cómo se compilara el binario. Esta función permite convertir una cadena de recursos en una cadena de caracteres anchos. La función convierte el recurso en una cadena de caracteres anchos (si aún no es una) después de cargarlo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Normalmente, se llama a las páginas de propiedades a través de sus interfaces 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

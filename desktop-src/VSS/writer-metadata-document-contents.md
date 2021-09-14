@@ -4,12 +4,12 @@ ms.assetid: 1a84790a-8f46-4e1b-8e45-5036830e8fee
 title: Contenido del documento de metadatos del escritor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbdb8cf4c2313d17cfd9059626f97356f27ba9168f9e19e4a796fae8797728d5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f222977f1c8d785e6f69613f219545dc3402af7f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119905055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068542"
 ---
 # <a name="writer-metadata-document-contents"></a>Contenido del documento de metadatos del escritor
 
@@ -58,7 +58,7 @@ Al establecer un método de restauración, un sistema de escritura indica la man
 
 La lista de exclusión permite ajustar las especificaciones de caracteres comodín en los componentes al impedir explícitamente que determinados archivos se incluyan en un conjunto de copia de seguridad.
 
-Por ejemplo, un componente podría tener un conjunto [*de archivos*](vssgloss-f.md) que contenga una especificación de archivo de c: Base de \\ datos \\ \* \* . Aunque esta es una definición cómoda, en ocasiones puede haber archivos temporales generados (quizás con el formato .tmp) y el escritor siempre quiere impedir \* su copia de seguridad.
+Por ejemplo, un componente podría tener un conjunto [*de archivos que*](vssgloss-f.md) contenga una especificación de archivo de c: Database \\ \\ \* \* . Aunque esta es una definición cómoda, en ocasiones puede haber archivos temporales generados (quizás con el formato .tmp) y el escritor siempre quiere impedir \* su copia de seguridad.
 
 En este caso, un escritor agregaría .tmp a su lista de exclusión mediante \* [**IVssCreateWriterMetadata::AddExcludeFiles**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscreatewritermetadata-addexcludefiles). Esta especificación podría ser recursiva.
 
@@ -101,7 +101,7 @@ Al agregar archivos a un componente durante la copia de seguridad, un escritor d
 
 Los escritores también pueden especificar una ruta [*de acceso alternativa*](vssgloss-a.md) para la copia de seguridad, que no debe confundirse con las asignaciones de ubicación [*alternativas mencionadas*](vssgloss-a.md) anteriormente. Esta ruta de acceso alternativa indica una ubicación no predeterminada desde la que se copiarán los archivos cuando se hace una copia de seguridad de un volumen.
 
-La información sobre un componente determinado en el documento de metadatos del escritor se puede obtener a través de una interfaz [**IVssWMComponent**](/windows/desktop/api/VsBackup/nl-vsbackup-ivsswmcomponent) devuelta por [**IVssExgvWriterMetadata::GetComponent**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getcomponent).
+La información sobre un componente determinado del documento de metadatos del escritor se puede obtener a través de una interfaz [**IVssWMComponent**](/windows/desktop/api/VsBackup/nl-vsbackup-ivsswmcomponent) devuelta por [**IVssExgvWriterMetadata::GetComponent**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getcomponent).
 
 Los archivos y las rutas de acceso se devuelven [**en IVssWMComponent**](/windows/desktop/api/VsBackup/nl-vsbackup-ivsswmcomponent) como [**objetos IVssWMFiledesc.**](/windows/desktop/api/VsWriter/nl-vswriter-ivsswmfiledesc)
 

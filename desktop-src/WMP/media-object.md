@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3c1dbcb3dc662a431f279e03697620b80c242c99eb32e3bbcdc26d71796f7e50
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 88eff6ee0a97e63df6a0c073ef18425cbb576e85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068387"
 ---
 # <a name="media-object"></a>Objeto multimedia
 
@@ -82,7 +82,7 @@ Se **tiene acceso** al objeto Multimedia a través de las siguientes propiedades
 
 Dado que es el medio de acceso más común, el *reproductor .* **currentMedia se** usa para fines ilustrativos en las secciones de sintaxis de referencia.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

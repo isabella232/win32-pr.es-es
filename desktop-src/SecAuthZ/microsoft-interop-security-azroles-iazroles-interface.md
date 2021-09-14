@@ -1,5 +1,5 @@
 ---
-description: Vínculos a la documentación de los métodos y propiedades del contenedor de interoperabilidad IAzRoles.
+description: Vínculos a la documentación de los métodos y propiedades de contenedor de interoperabilidad de IAzRoles.
 ms.assetid: 0952c79d-bf8d-45ca-82e5-cba0716d1e5f
 title: Interfaz Microsoft.Interop.Security.AzRoles.IAzRoles
 ms.topic: reference
@@ -23,18 +23,18 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: db39b47b03a92042eb8c37e41dabc9109453a38783aa479f221159d1a4e6e60b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93a236e8425da611b4dd8fc26098867d1a1b5c5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117780607"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069045"
 ---
 # <a name="microsoftinteropsecurityazrolesiazroles-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzRoles
 
 Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzRoles** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz Microsoft.Interop.Security.AzRoles.IAzRoles** tiene estos tipos de miembros:
 

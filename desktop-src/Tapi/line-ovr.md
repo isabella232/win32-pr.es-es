@@ -4,12 +4,12 @@ ms.assetid: 3e457c7d-da2e-4667-aade-053610abbb8a
 title: Línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c299924a69d3e6e4889d14a72a571ca11ed2dc9e97514702f8ba4836f4c5b99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8275555e0cb34f5831ce671e22a89a1499fb1796
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119660214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250088"
 ---
 # <a name="line"></a>Línea
 

@@ -1,5 +1,5 @@
 ---
-title: Propiedad SystemMonitor. BackColorCtl
+title: Propiedad SystemMonitor.BackColorCtl
 description: Recupera o establece el color de fondo del control.
 ms.assetid: c908ee1d-d7f3-4c31-b2e7-db992dbddd93
 keywords:
@@ -17,13 +17,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 81b112efcb85133f92125fe69bc04993bad5cf21
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491116"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068838"
 ---
-# <a name="systemmonitorbackcolorctl-property"></a>Propiedad SystemMonitor. BackColorCtl
+# <a name="systemmonitorbackcolorctl-property"></a>Propiedad SystemMonitor.BackColorCtl
 
 Recupera o establece el color de fondo del control.
 
@@ -50,18 +50,18 @@ Color de fondo del control.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> <dt>
 
-[**SystemMonitor. BackColor**](systemmonitor-backcolor.md)
+[**SystemMonitor.BackColor**](systemmonitor-backcolor.md)
 </dt> </dl>
 
  

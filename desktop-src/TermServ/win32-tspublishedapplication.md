@@ -33,14 +33,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f3330a2fb20238c34f6eecb0d78cd7d126a8895a5260abb338ab445713f988e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3825087d05b622818c74f011f30b325ed8ff7f60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119137668"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068568"
 ---
-# <a name="win32_tspublishedapplication-class"></a>Clase TSPublishedApplication de Win32 \_
+# <a name="win32_tspublishedapplication-class"></a>Clase \_ TSPublishedApplication de Win32
 
 Define las aplicaciones que están disponibles para su uso remoto mediante Windows Server 2008 R2 RemoteApp.
 
@@ -69,7 +69,7 @@ class Win32_TSPublishedApplication : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSPublishedApplication de Win32** tiene estos tipos de miembros:
 
@@ -124,7 +124,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Configuración de argumentos de línea de comandos para la aplicación. Los valores siguientes son posibles.
+Configuración de argumentos de línea de comandos para la aplicación. Los siguientes valores son posibles.
 
 <dt>
 
@@ -138,14 +138,14 @@ No permita argumentos de línea de comandos.
 1
 </dt> <dd>
 
-Permite cualquier argumento de línea de comandos.
+Permita cualquier argumento de línea de comandos.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Use siempre los argumentos de línea de comandos necesarios (especificados en **RequiredCommandLine**).
+Use siempre los argumentos de línea de comandos necesarios (especificados en **RequiredCommandLine).**
 
 </dd> </dl>
 
@@ -175,7 +175,7 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Contenido de bytes del icono que corresponde a la aplicación.
+Contenido de bytes del icono correspondiente a la aplicación.
 
 </dd> <dt>
 
@@ -238,7 +238,7 @@ Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystem
 
 </dd> <dt>
 
-**Ruta de acceso**
+**Path**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -299,7 +299,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Descriptor de seguridad que controla el acceso a la aplicación, en formato SDDL. Una cadena vacía implica permitir todo el acceso. Este descriptor de seguridad no admite LAS ACE DENY ni las ACE que hacen referencia a usuarios o grupos que no son dominios.
+Descriptor de seguridad que controla el acceso a la aplicación, en formato SDDL. Una cadena vacía implica permitir todo el acceso. Este descriptor de seguridad no admite LAS ACE DENY ni las AEE que hacen referencia a usuarios o grupos que no son de dominio.
 
 </dd> <dt>
 
@@ -328,7 +328,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -405,11 +405,11 @@ Ruta de acceso virtual de la aplicación, lo que significa la ruta de acceso con
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe ser miembro del grupo Administradores para establecer propiedades mediante esta clase.
 
-Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -420,7 +420,7 @@ Set objServices = GetObject( _
 
 
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 

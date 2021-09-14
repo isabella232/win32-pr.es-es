@@ -4,12 +4,12 @@ ms.assetid: aed7585a-88e5-4ca3-a8c3-e2ccfe13d35d
 title: ¿Qué es la infraestructura del mismo nivel?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e80a5cdcc190fe47ea0a37efd5348ec5f718eaff654543c68bd6e9d355d4d07
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 873717b3f90497fe9ab9f50bb9c18e6f0692a4e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119287645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069195"
 ---
 # <a name="what-is-the-peer-infrastructure"></a>¿Qué es la infraestructura del mismo nivel?
 

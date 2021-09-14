@@ -4,12 +4,12 @@ ms.assetid: 1D2847A7-15E9-42E0-90EB-7F43E76D3E44
 title: Actualización de compatibilidad de disco de emulación de 512 bytes (512e)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fd26cfe1b5417af75906431291a51650757c08464f0c1dc6966ef7f58223423
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74b654473fa8be5fbea997bd063df2c1f898a7d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134187"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249453"
 ---
 # <a name="512-byte-emulation-512e-disk-compatibility-update"></a>Actualización de compatibilidad de disco de emulación de 512 bytes (512e)
 
@@ -56,7 +56,7 @@ Una de las preocupaciones a la hora de introducir este cambio en el formato mult
 
 -   **Sector físico:** unidad para la que las operaciones de lectura y escritura en el dispositivo se completan en una sola operación. Esta es la unidad de escritura atómica.
 
-La mayoría de las API de Windows actuales, como **IOCTL \_ DISK GET \_ DRIVE \_ \_ GEOMETRY,** devolverán el tamaño del sector lógico, pero el tamaño del sector físico se puede recuperar a través del código de control [IOCTL STORAGE QUERY \_ \_ \_ PROPERTY,](/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_query_property) con la información pertinente contenida en el **campo BytesPerPhysicalSector en la** estructura [ \_ \_ \_ DESCRIPTOR](/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor) DE ALINEACIÓN DE ACCESO DE ALMACENAMIENTO. Esto se describe con más detalle más adelante en el artículo.
+La mayoría de las API de Windows actuales, como **IOCTL \_ DISK GET DRIVE \_ \_ \_ GEOMETRY,** devolverán el tamaño del sector lógico, pero el tamaño del sector físico se puede recuperar a través del código de control [IOCTL STORAGE QUERY \_ \_ \_ PROPERTY,](/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_query_property) con la información pertinente contenida en el **campo BytesPerPhysicalSector en** la estructura [ \_ \_ \_ DESCRIPTOR](/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor) DE ALINEACIÓN DE ACCESO DE ALMACENAMIENTO. Esto se describe con más detalle más adelante en el artículo.
 
 ## <a name="initial-types-of-large-sector-media"></a>Tipos iniciales de medios de sector grande
 
@@ -104,7 +104,7 @@ Cuando el administrador o el usuario crean particiones en el disco, es posible q
 
 Las API **IVdsPack::CreateVolume** **e IVdsPack2::CreateVolume2** no usan el parámetro de alineación especificado cuando se crea un nuevo volumen y, en su lugar, usan el valor predeterminado de alineación para el sistema operativo (Pre-Windows Vista SP1 usará 63 bytes y, después de Windows Vista SP1, usará los valores predeterminados indicados anteriormente). Por lo tanto, se recomienda que las aplicaciones que necesitan crear particiones usen las API **IVdsCreatePartitionEx::CreatePartitionEx** o **IVdsAdvancedDisk::CreatePartition** en su lugar, que usan el parámetro de alineación especificado.
 
-La mejor manera de ayudar a garantizar que la alineación es correcta es hacerlo correctamente al crear inicialmente la partición. De lo contrario, la aplicación tendrá que tener en cuenta la alineación al realizar escrituras o durante la inicialización, lo que puede ser una cuestión muy compleja. A Windows vista SP1, esto no suele ser un problema; sin embargo, las versiones anteriores de Windows pueden crear particiones no alineadas que pueden provocar problemas de rendimiento con algunos discos de formato avanzado.
+La mejor manera de ayudar a garantizar que la alineación es correcta es hacerlo correctamente al crear inicialmente la partición. De lo contrario, la aplicación tendrá que tener en cuenta la alineación al realizar escrituras o durante la inicialización, lo que puede ser una cuestión muy compleja. A Windows Vista SP1, esto no suele ser un problema; sin embargo, las versiones anteriores de Windows pueden crear particiones no alineadas que pueden provocar problemas de rendimiento con algunos discos de formato avanzado.
 
 ### <a name="issue-2-unbuffered-writes-not-aligned-to-physical-sector-size"></a>Problema 2: Escrituras no almacenadas en búfer no alineadas con el tamaño del sector físico
 
@@ -192,7 +192,7 @@ Se trata de un documento vivo y está pensado como ayuda para que los desarrolla
 -   **IOCTL \_ Código \_ de control STORAGE QUERY \_ PROPERTY**: [https://msdn.microsoft.com/library/ff800830.aspx](/windows/win32/api/winioctl/ni-winioctl-ioctl_storage_query_property)
 -   **Información general sobre STORAGE \_ ESTRUCTURA DESCRIPTOR \_ DE \_ ALINEACIÓN DE ACCESO:**[https://msdn.microsoft.com/library/ff566344.aspx](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_access_alignment_descriptor)
 -   **Descripción de la terminología estándar que se usa para describir las actualizaciones de software de Microsoft:**<https://support.microsoft.com/kb/824684/>
--   Código de ejemplo **de WDK** con detalles sobre cómo extraer la información de alineación de acceso de almacenamiento notificada de la estructura **\_ \_ \_ DESCRIPTOR** DE ALINEACIÓN DE ACCESO A STORAGE al realizar una llamada al código de control **IOCTL STORAGE QUERY \_ \_ \_ PROPERTY:** [/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor](/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor)
+-   Código de ejemplo **de WDK** con detalles sobre cómo extraer la información de alineación de acceso de almacenamiento notificada de la estructura **\_ \_ \_ DESCRIPTOR** DE ALINEACIÓN DE ACCESO DE ALMACENAMIENTO al realizar una llamada al código de control **IOCTL STORAGE QUERY \_ \_ \_ PROPERTY:** [/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor](/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor)
 -   **Información general sobre ImageX Command-Line opciones**:<https://technet.microsoft.com/library/dd799302(WS.10).aspx>
 -   **Requisitos del controlador Intel Intel Chips para admitir unidades de sector de 4 KB:**<https://www.intel.com/support/chipsets/imsm/sb/CS-031502.htm>
 -   Para más información sobre los discos de formato avanzado, visite los siguientes sitios web de IDEMA:

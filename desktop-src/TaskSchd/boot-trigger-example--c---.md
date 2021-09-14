@@ -4,12 +4,12 @@ description: Este tema contiene un ejemplo de código de C++ que muestra cómo c
 ms.assetid: d4dbbfe5-bde9-4a1c-8e11-24cd1e14646c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b1f556b2b0754d913e44c2874a7fa01f9aea7ea50f5ccc0aa15fa769dfdca95
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bdbd5a5a73d100394b90e91f8b9c30c1bd495ac0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120100514"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068684"
 ---
 # <a name="boot-trigger-example-c"></a>Ejemplo de desencadenador de arranque (C++)
 
@@ -36,7 +36,7 @@ En el procedimiento siguiente se describe cómo programar una tarea para iniciar
 
     Use el [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que desea crear un desencadenador de arranque. Puede establecer el límite de inicio y el retraso del desencadenador para que las acciones de tarea se programen para ejecutarse en un momento especificado cuando se inicie el sistema.
 
-6.  Cree una acción para que la tarea se ejecute mediante la propiedad Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la [**colección IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea.
+6.  Cree una acción para que la tarea se ejecute mediante la propiedad Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para acceder a la [**colección IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea.
 
     Use el [**método IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) que representa una acción que ejecuta una operación de línea de comandos.
 

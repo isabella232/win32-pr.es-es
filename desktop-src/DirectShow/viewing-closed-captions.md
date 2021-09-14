@@ -4,18 +4,18 @@ ms.assetid: 86c0c553-af35-4ad1-8918-63d9e4577c73
 title: Visualización de subtítulos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f52288b1c4fa5c43f7e0419d81bd9727a4db86848d368b600e1d713c53dc1593
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82ff2d6d213259ccce6e9b02272d0c9db3ad7b71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119903444"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272852"
 ---
 # <a name="viewing-closed-captions"></a>Visualización de subtítulos
 
-Para admitir subtítulos en televisión análoga, el filtro de captura expone un pin que proporciona datos de título cerrado o VBI. El pin tendrá una de las siguientes categorías de pin:
+Para admitir subtítulos en la televisión análoga, el filtro de captura expone un pin que proporciona datos de subtítulos o VBI. El pin tendrá una de las siguientes categorías:
 
--   Pin de VBI (PIN \_ CATEGORY \_ VBI). Proporciona una secuencia de muestras de forma de onda de VBI. Se pasan a un filtro de descodificador que extrae los datos de subtítulos.
+-   Pin de VBI (PIN \_ CATEGORY \_ VBI). Proporciona una secuencia de ejemplos de formas de onda de VBI. Se pasan a un filtro descodificador que extrae los datos de subtítulos.
 -   CC pin (PIN \_ CATEGORY \_ CC). Proporciona pares de bytes de subtítulos, extraídos de los datos de línea 21.
 -   Pin CC de cortar hardware (PINNAME \_ VIDEO \_ CC \_ CAPTURE).
 
@@ -39,8 +39,8 @@ En el diagrama siguiente se muestra un gráfico de filtros típico para mostrar 
 Este gráfico usa los siguientes filtros para la presentación de subtítulos:
 
 -   [Convertidor de tee/sink-to-sink](tee-sink-to-sink-converter.md). Acepta la información de VBI del filtro de captura y la divide en secuencias independientes para cada uno de los servicios de datos presentes en la señal. Microsoft proporciona códecs VBI para subtítulos, MPEGTS y teletexto estándar mundial (WST).
--   [Descodificador CC](cc-decoder-filter.md). Descodifica datos CC de las formas de onda de VBI muestreadas proporcionadas por el filtro de captura.
--   [Descodificador de línea 21.](line-21-decoder-filter.md) Traduce los pares de bytes CC y dibuja el texto del título en mapas de bits. El filtro de nivel inferior (en este caso, la propiedad Overlay Mixer) superpone los mapas de bits en el vídeo.
+-   [Descodificador CC](cc-decoder-filter.md). Descodifica los datos cc de las formas de onda de VBI muestreadas proporcionadas por el filtro de captura.
+-   [Descodificador de línea 21.](line-21-decoder-filter.md) Convierte los pares de bytes CC y dibuja el texto del título en mapas de bits. El filtro de bajada (en este caso, la propiedad Overlay Mixer) superpone los mapas de bits en el vídeo.
 
 El método [**RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) de Capture Graph Builder agrega estos filtros automáticamente. Si el filtro de captura tiene un pin CC en lugar de un pin de VBI, el pin CC se conecta directamente al filtro Descodificador de línea 21.
 
@@ -50,17 +50,17 @@ El método [**RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegrap
  
 
 > [!Note]  
-> El filtro descodificador CC se quitó en Windows Vista. Las nuevas aplicaciones deben usar el filtro VBICodec, que se documenta en la documentación de Microsoft TV Technologies.
+> El filtro cc decoder se quitó en Windows Vista. Las nuevas aplicaciones deben usar el filtro VBICodec, que se documenta en la documentación de Tecnologías de televisión de Microsoft.
 
  
 
 Si el dispositivo de captura usa un puerto de vídeo, el filtro de captura podría tener un pin de VBI de puerto de vídeo (PIN \_ CATEGORY \_ VIDEOPORT \_ VBI). Este pin debe estar conectado al filtro Asignador de superficie de [VBI,](vbi-surface-allocator.md) que asigna superficies para contener los datos de VBI capturados. El [**método RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) agrega este filtro si es necesario. En el diagrama siguiente se muestra un gráfico de filtros con el asignador de superficie de VBI.
 
-![gráfico de versión preliminar de subtítulos con asignador de superficie de vbi](images/vidcap09.png)
+![gráfico de vista previa de subtítulos con el asignador de superficie de vbi](images/vidcap09.png)
 
-### <a name="enabling-and-disabling-the-captions"></a>Habilitación y deshabilitación de los títulos
+### <a name="enabling-and-disabling-the-captions"></a>Habilitar y deshabilitar los títulos
 
-Para controlar la pantalla de subtítulos, use la [**interfaz IAMLine21Decoder**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) en el filtro Descodificador de línea 21. Por ejemplo, puede desactivar la presentación de subtítulos mediante el método [**IAMLine21Decoder::SetServiceState,**](/previous-versions/windows/desktop/api/il21dec/nf-il21dec-iamline21decoder-setservicestate) como se muestra a continuación:
+Para controlar la presentación de subtítulos, use la [**interfaz IAMLine21Decoder**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) en el filtro Descodificador de línea 21. Por ejemplo, puede desactivar la presentación de subtítulos mediante el método [**IAMLine21Decoder::SetServiceState,**](/previous-versions/windows/desktop/api/il21dec/nf-il21dec-iamline21decoder-setservicestate) como se muestra a continuación:
 
 
 ```C++
@@ -81,11 +81,11 @@ if (SUCCEEDED(hr))
 
 
 
-En este ejemplo se [**usa el método ICaptureGraphBuilder2::FindInterface**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findinterface) para buscar la [**interfaz IAMLine21Decoder.**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) El primer parámetro de **FindInterface** **es&LOOK \_ DOWNSTREAM \_ ONLY**, que especifica que se busque de bajada desde el filtro de captura (*pCap*).
+En este ejemplo se [**usa el método ICaptureGraphBuilder2::FindInterface**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findinterface) para buscar la [**interfaz IAMLine21Decoder.**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) El primer parámetro de **FindInterface** **es&LOOK \_ DOWNSTREAM \_ ONLY**, que especifica que se debe buscar de bajada desde el filtro de captura (*pCap*).
 
 ### <a name="capturing-closed-caption-bitmaps"></a>Captura de mapas de bits de subtítulos
 
-Puede capturar los mapas de bits de título en un archivo. Para ello, agregue la sección de escritura de archivos del gráfico de filtros, como se describe en [Captura de vídeo en un archivo](capturing-video-to-a-file.md). A continuación, represente el pin CC o VBI en el filtro mux:
+Puede capturar los mapas de bits de título en un archivo. Para ello, agregue la sección de escritura de archivos del gráfico de filtros, como se describe en Captura de [vídeo en un archivo](capturing-video-to-a-file.md). A continuación, represente la clavija CC o VBI en el filtro mux:
 
 
 ```C++
@@ -98,7 +98,7 @@ if (FAILED(hr))
 
 
 
-Si también captura el vídeo, se creará un archivo con dos secuencias de vídeo independientes. No capturará vídeo con subtítulos superados en la parte superior de la imagen.
+Si también va a capturar el vídeo, se creará un archivo con dos secuencias de vídeo independientes. No capturará vídeo con subtítulos superados en la parte superior de la imagen.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,27 +1,27 @@
 ---
-description: En los siguientes ejemplos se muestra el uso de las funciones de inicialización de una sola vez.
+description: En los ejemplos siguientes se muestra el uso de las funciones de inicialización únicas.
 ms.assetid: 47e68fbb-29f8-4930-beba-01d44263eb1e
-title: Usar la inicialización de One-Time
+title: Uso de One-Time inicialización
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f0f89cbe0e2d3e7c45d4f18863533c8c161037ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068905"
 ---
-# <a name="using-one-time-initialization"></a>Usar la inicialización de One-Time
+# <a name="using-one-time-initialization"></a>Uso de One-Time inicialización
 
-En los siguientes ejemplos se muestra el uso de las funciones de inicialización de una sola vez.
+En los ejemplos siguientes se muestra el uso de las funciones de inicialización únicas.
 
 ## <a name="synchronous-example"></a>Ejemplo sincrónico
 
-En este ejemplo, la `g_InitOnce` variable global es la estructura de inicialización única. Se inicializa de forma estática mediante **init \_ una vez \_ \_** el inicializador estático.
+En este ejemplo, la `g_InitOnce` variable global es la estructura de inicialización única. Se inicializa estáticamente mediante **INIT \_ ONCE STATIC \_ \_ INIT**.
 
-La `OpenEventHandleSync` función devuelve un identificador para un evento que se crea solo una vez. Llama a la función [**InitOnceExecuteOnce**](/windows/win32/api/synchapi/nf-synchapi-initonceexecuteonce) para ejecutar el código de inicialización contenido en la `InitHandleFunction` función de devolución de llamada. Si la función de devolución de llamada se ejecuta correctamente, `OpenEventHandleSync` devuelve el identificador de evento devuelto en *lpContext*; de lo contrario, devuelve un **\_ \_ valor de identificador no válido**.
+La `OpenEventHandleSync` función devuelve un identificador a un evento que se crea una sola vez. Llama a la [**función InitOnceExecuteOnce**](/windows/win32/api/synchapi/nf-synchapi-initonceexecuteonce) para ejecutar el código de inicialización contenido en la función `InitHandleFunction` de devolución de llamada. Si la función de devolución de llamada se realiza correctamente, devuelve el identificador de evento devuelto en `OpenEventHandleSync` *lpContext;* de lo contrario, **devuelve INVALID HANDLE \_ \_ VALUE**.
 
-La `InitHandleFunction` función es la [función de devolución de llamada de inicialización única](/windows/win32/api/synchapi/nc-synchapi-pinit_once_fn). `InitHandleFunction` llama a la función [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para crear el evento y devuelve el identificador de evento en el parámetro *lpContext* .
+La `InitHandleFunction` función es la función de devolución de llamada de [inicialización única](/windows/win32/api/synchapi/nc-synchapi-pinit_once_fn). `InitHandleFunction`llama a [**la función CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para crear el evento y devuelve el identificador de evento en el *parámetro lpContext.*
 
 
 ```C++
@@ -92,15 +92,15 @@ BOOL CALLBACK InitHandleFunction (
 
 ## <a name="asynchronous-example"></a>Ejemplo asincrónico
 
-En este ejemplo, la `g_InitOnce` variable global es la estructura de inicialización única. Se inicializa de forma estática mediante **init \_ una vez \_ \_** el inicializador estático.
+En este ejemplo, la `g_InitOnce` variable global es la estructura de inicialización única. Se inicializa estáticamente mediante **INIT \_ ONCE STATIC \_ \_ INIT**.
 
-La `OpenEventHandleAsync` función devuelve un identificador para un evento que se crea solo una vez. `OpenEventHandleAsync` llama a la función [**InitOnceBeginInitialize**](/windows/win32/api/synchapi/nf-synchapi-initoncebegininitialize) para entrar en el estado de inicialización.
+La `OpenEventHandleAsync` función devuelve un identificador a un evento que se crea una sola vez. `OpenEventHandleAsync` llama a [**la función InitOnceBeginInitialize**](/windows/win32/api/synchapi/nf-synchapi-initoncebegininitialize) para entrar en el estado de inicialización.
 
-Si la llamada se realiza correctamente, el código comprueba el valor del parámetro *fPending* para determinar si se debe crear el evento o simplemente devolver un identificador para el evento creado por otro subproceso. Si *fPending* es **false**, ya se ha completado la inicialización, por lo que `OpenEventHandleAsync` devuelve el identificador de evento devuelto en el parámetro *lpContext* . De lo contrario, llama a la función [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para crear el evento y la función [**InitOnceComplete**](/windows/win32/api/synchapi/nf-synchapi-initoncecomplete) para completar la inicialización.
+Si la llamada se realiza correctamente, el código comprueba el valor del parámetro *fPending* para determinar si se debe crear el evento o simplemente devolver un identificador al evento creado por otro subproceso. Si *fPending es* **FALSE,** la inicialización ya se ha completado, por lo que devuelve el identificador `OpenEventHandleAsync` de evento devuelto en el parámetro *lpContext.* De lo contrario, llama a [**la función CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para crear el evento y a la [**función InitOnceComplete**](/windows/win32/api/synchapi/nf-synchapi-initoncecomplete) para completar la inicialización.
 
-Si la llamada a [**InitOnceComplete**](/windows/win32/api/synchapi/nf-synchapi-initoncecomplete) se realiza correctamente, `OpenEventHandleAsync` devuelve el nuevo controlador de eventos. De lo contrario, cierra el identificador de eventos y llama a [**InitOnceBeginInitialize**](/windows/win32/api/synchapi/nf-synchapi-initoncebegininitialize) con **init \_ una vez \_ \_ solo** para determinar si otro subproceso ha producido un error de inicialización o ha finalizado.
+Si la llamada a [**InitOnceComplete**](/windows/win32/api/synchapi/nf-synchapi-initoncecomplete) se realiza correctamente, `OpenEventHandleAsync` devuelve el nuevo identificador de evento. De lo contrario, cierra el identificador de eventos y llama a [**InitOnceBeginInitialize**](/windows/win32/api/synchapi/nf-synchapi-initoncebegininitialize) con **INIT \_ ONCE CHECK \_ \_ ONLY** para determinar si la inicialización no se pudo realizar o si otro subproceso ha completado la inicialización.
 
-Si otro subproceso ha completado la inicialización, `OpenEventHandleAsync` devuelve el identificador de evento devuelto en *lpContext*. De lo contrario, devuelve un **\_ \_ valor de identificador no válido**.
+Si otro subproceso completó la inicialización, `OpenEventHandleAsync` devuelve el identificador de evento devuelto en *lpContext*. De lo contrario, devuelve **INVALID \_ HANDLE \_ VALUE**.
 
 
 ```C++

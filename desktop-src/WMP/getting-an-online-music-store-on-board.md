@@ -1,19 +1,19 @@
 ---
-title: Obtención de una Música en línea
-description: Obtención de una Música en línea
+title: Obtención de una Música store en línea
+description: Obtención de una Música store en línea
 ms.assetid: f7eff687-9832-41bc-8f3d-a2ab11917eb0
 keywords:
 - Reproductor de Windows Media Tiendas en línea
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fcff5aeed04ff2e60b03e7b546de23f1d0d747b9
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477211"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068433"
 ---
-# <a name="getting-an-online-music-store-on-board"></a>Obtención de una Música en línea
+# <a name="getting-an-online-music-store-on-board"></a>Obtención de una Música store en línea
 
 En este tema se describe el proceso de incorporar un almacén de medios digitales en línea para Reproductor de Windows Media. El tiempo necesario para el proceso de incorporación de principio a fin es aproximadamente de 45-60 DÍAS LABORABLES. Las dos fases del proceso de incorporación se describen en la tabla siguiente.
 
@@ -45,7 +45,7 @@ Tras recibir la información de contacto e inicio, Microsoft le enviará una cla
 Debe probar todos los aspectos de la tienda en línea, incluida su interfaz de usuario y su complemento. Como parte del proceso de pruebas, debe ejecutar las pruebas descritas en Pruebas de validación para el tipo [2 Online Música Stores](validation-tests-for-type-2-online-music-stores.md).
 
 > [!Note]  
-> Los almacenes de tipo 1 deben superar todas las pruebas de validación para los almacenes de tipo 2, además de algunas pruebas adicionales que son específicas de la experiencia de tipo 1. Para obtener información sobre las pruebas de validación de tipo 1, póngase en contacto con el equipo virtual de Reproductor de Windows Media Services en mpsvctm@microsoft.com .
+> Los almacenes de tipo 1 deben superar todas las pruebas de validación para los almacenes de tipo 2, además de algunas pruebas adicionales que son específicas de la experiencia de tipo 1. Para obtener información sobre las pruebas de validación de tipo 1, póngase en contacto con Reproductor de Windows Media Services Virtual Team en mpsvctm@microsoft.com .
 
  
 
@@ -60,14 +60,14 @@ En la tabla siguiente se muestra la información de contacto que Microsoft requi
 | Nombre de la tienda               | Nombre de marca de la tienda                                                            |
 | Nombre del proveedor            | Nombre de la empresa de la etiqueta blanca o proveedor (si es diferente)                               |
 | Configuración regional de la tienda             | Las Windows configuración regional del usuario que el almacén debe mostrar en                                |
-| Categoría de la tienda           | Música, Radio, Película, TELEVISIÓN, Deportes, Noticias, Audio Entretenimiento u Otros (describa) |
+| Categoría de la tienda           | Música, Radio, Película, TV, Deportes, Noticias, Audio Entretenimiento u Otros (describa) |
 | Modelo de compra           | Compra, alquiler, suscripción u otros (describa)                            |
 | Idioma de la tienda           |                                                                                           |
 | Almacenar nombres de contacto    |                                                                                           |
 | Correo electrónico de contacto de la tienda  |                                                                                           |
 | Cuentas de MSFT Passport | Esto es para posibles nominaciones futuras en programas de desarrollo beta y de asociados.         |
 | Dirección de envío         | Sin P.O. Cuadros                                                                             |
-| City (Ciudad)                     |                                                                                           |
+| City                     |                                                                                           |
 | State                    |                                                                                           |
 | Código postal              |                                                                                           |
 | País/región           |                                                                                           |
@@ -91,12 +91,12 @@ En la tabla siguiente se describe la información de inicio que Microsoft requie
 
 | Elemento                                                                                                     | Descripción                                                                                                                                                                                                                                   |
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dirección URL XML de información de servicio (límite de 2048 caracteres)                                                              | Dirección URL donde Reproductor de Windows Media el documento [XML de ServiceInfo](serviceinfo-document.md).                                                                                                                                         |
+| Dirección URL XML de información de servicio (límite de 2048 caracteres)                                                              | Dirección URL en la Reproductor de Windows Media obtiene el [documento XML de ServiceInfo](serviceinfo-document.md).                                                                                                                                         |
 | Clave de servicio (identificador único)                                                                                  | Cadena que identifica de forma única la tienda en línea. Debe crear uno para producción y otro para pruebas (por ejemplo, "MyStore" y "MyStoreTest"). Tenga en cuenta que una clave de servicio no es lo mismo que una clave de prueba.                        |
 | Nombre descriptivo (límite de 30 caracteres)                                                                       | Nombre del almacén que se muestra en el selector Reproductor de Windows Media servicio.                                                                                                                                                        |
-| Dirección URL de la imagen de menú (límite de 2048 caracteres)                                                                    | Dirección URL donde Reproductor de Windows Media el logotipo de 15 x 15 píxeles que muestra en el selector de servicios.                                                                                                                                 |
-| Comprar Música URL (límite de 2048 caracteres)<br/> (Solo tiendas de música integradas)<br/>                | Dirección URL que usan los vínculos "Comprar CD" y "Comprar CD" Música Online".                                                                                                                                                              |
-| DIRECCIÓN URL de compra de IU de 10 pies (límite de 2048 caracteres)<br/> (Solo tiendas de música integradas: opcional)<br/> | La dirección URL que usan los vínculos "Comprar CD" y "Comprar para Música Online" del reproductor en Windows XP Media Center Edition y en Windows Media Center en Windows Vista.                                                                              |
+| Dirección URL de la imagen de menú (límite de 2048 caracteres)                                                                    | Dirección URL donde Reproductor de Windows Media el logotipo de 15 x 15 píxeles que se muestra en el selector de servicios.                                                                                                                                 |
+| Comprar Música URL (límite de 2048 caracteres)<br/> (Solo tiendas de música integradas)<br/>                | La dirección URL que usan los vínculos "Comprar CD" y "Comprar cd" Música Online".                                                                                                                                                              |
+| DIRECCIÓN URL de compra de IU de 10 pies (límite de 2048 caracteres)<br/> (Solo tiendas de música integradas: opcional)<br/> | Dirección URL que usan los vínculos "Comprar CD" y "Comprar Música Online" del reproductor en Windows XP Media Center Edition y en Windows Media Center en Windows Vista.                                                                              |
 | Logotipo de la tienda (130w x 30h)<br/> (Adjunte el archivo PNG por separado).<br/>                              | Logotipo de la tienda que se muestra en la información sobre herramientas que aparece cuando el mouse está sobre la imagen de examinar todo. Este logotipo debe ser un archivo con formato PNG y preferiblemente con mezcla alfa para que pueda ajustarse a los cambios de color en Reproductor de Windows Media. |
 | Imagen de exploración completa (108w x 108h)<br/> (Adjunte el archivo PNG por separado).<br/>                       | Breve descripción en la información sobre herramientas que aparece cuando el mouse está sobre la imagen de exploración.                                                                                                                                               |
 | Texto de descripción del almacén (límite de 110 caracteres)                                                             | Texto que aparece en la información sobre herramientas debajo del texto de descripción del almacén.                                                                                                                                                                        |
@@ -124,13 +124,13 @@ Envíe el nombre de usuario y la contraseña de cada cuenta de validación a mps
 
 ## <a name="validation-stage"></a>Fase de validación
 
-Durante la fase de validación, Microsoft comprueba que las características principales de la tienda en línea funcionan correctamente. Para todos los almacenes (tipo 1 y tipo 2), Microsoft ejecuta las pruebas de comprobación que se detallan en Pruebas de validación para el tipo [2](validation-tests-for-type-2-online-music-stores.md)online Música Stores . Microsoft también ejecuta algunas pruebas de validación adicionales para almacenes de tipo 1. Si tiene preguntas sobre la fase de validación de almacenes de tipo 1, envíe un correo a mpsvctm@microsoft.com .
+Durante la fase de validación, Microsoft comprueba que las características principales de la tienda en línea funcionan correctamente. Para todos los almacenes (tipo 1 y tipo 2), Microsoft ejecuta las pruebas de comprobación que se detallan en Pruebas de validación para el tipo [2 En](validation-tests-for-type-2-online-music-stores.md)línea Música Almacenes . Microsoft también ejecuta algunas pruebas de validación adicionales para almacenes de tipo 1. Si tiene alguna pregunta sobre la fase de validación de almacenes de tipo 1, envíe un correo electrónico a mpsvctm@microsoft.com .
 
-Durante la fase de validación, Microsoft realiza dos pases de validación. El primer paso se aplica a Release Candidate 1 (RC1) de la tienda en línea. Si la tienda supera la validación RC1, debe bloquearla y no realizar más cambios. Microsoft realizará un segundo paso de validación en la tienda, incluso si la tienda supera la validación RC1.
+Durante la fase de validación, Microsoft realiza dos pases de validación. El primer pase se aplica a Release Candidate 1 (RC1) de la tienda en línea. Si la tienda pasa la validación RC1, debe bloquearla y no realizar más cambios. Microsoft realizará un segundo paso de validación en la tienda incluso si la tienda supera la validación RC1.
 
-Si la tienda produce un error en cualquier parte del paso de validación RC1, tendrá dos semanas para crear un segundo candidato de versión (RC2), que Microsoft validará durante el paso de validación rc2.
+Si la tienda produce un error en cualquier parte del paso de validación RC1, tendrá dos semanas para crear una segunda versión candidata para lanzamiento (RC2), que Microsoft validará durante el paso de validación rc2.
 
-Si el almacén produce un error en cualquier parte de la validación RC2, debe esperar hasta el siguiente inicio.
+Si el almacén produce un error en cualquier parte de la validación rc2, debe esperar hasta el siguiente inicio.
 
 ## <a name="test-and-production-keys"></a>Claves de prueba y producción
 
@@ -138,21 +138,21 @@ Recuerde que, durante la fase pendiente, envió a Microsoft dos conjuntos de inf
 
 La clave de prueba es completamente para su propio uso. Cuando la clave de prueba está en el Registro, Reproductor de Windows Media la dirección URL de ServiceInfo que envió para el almacén de pruebas.
 
-Cuando la clave de producción está en el Registro, Reproductor de Windows Media la dirección URL de ServiceInfo que envió para el almacén de producción. Microsoft usa la clave de producción durante la fase de validación. Microsoft nunca usa la clave de prueba para la validación.
+Cuando la clave de producción está en el registro, Reproductor de Windows Media la dirección URL de ServiceInfo que envió para el almacén de producción. Microsoft usa la clave de producción durante la fase de validación. Microsoft nunca usa la clave de prueba para la validación.
 
 Cuando la tienda esté en directo, Reproductor de Windows Media la dirección URL de ServiceInfo que envió para el almacén de producción.
 
-Como norma general, el almacén de pruebas debe ser el lugar donde desarrolle el servicio y realice cambios diarios. El almacén de producción debe ser el lugar donde mantenga una versión estable del servicio.
+Como regla general, el almacén de pruebas debe ser el lugar donde desarrolle el servicio y realice cambios diarios. El almacén de producción debe ser el lugar donde mantenga una versión estable del servicio.
 
 ## <a name="common-on-boarding-problems"></a>Problemas comunes de incorporación
 
 Estos son algunos problemas comunes que pueden hacer que el almacén no pueda realizar pruebas de validación.
 
--   Error al realizar la transición de servidores de prueba a servidores de producción. Esto conduce a muchos problemas, como la falta de páginas, la configuración de seguridad y IIS no válida y las cuentas de prueba que ya no funcionan.
--   El vínculo Comprar (o Vínculo a la tienda) del área Reproducción ahora no es válido. Esto puede hacer que el almacén no valide aunque todo lo demás funcione.
--   El equipo de validación de Microsoft probará varios escenarios de compra, desde compras pequeñas hasta compras muy grandes. Debe proporcionar una manera fácil de actuar como consumidor dentro de su tienda. La tienda no se puede validar si el equipo de validación no tiene suficientes créditos de compra para validar todos estos escenarios.
+-   Error al pasar de servidores de prueba a servidores de producción. Esto provoca muchos problemas, como páginas que faltan, configuración de seguridad y IIS no válida, y cuentas de prueba que ya no funcionan.
+-   El vínculo Comprar (o Vínculo a la tienda) del área Reproducción ahora no es válido. Esto puede hacer que la tienda no valide aunque todo lo demás funcione.
+-   El equipo de validación de Microsoft probará varios escenarios de compra que van desde compras pequeñas hasta compras muy grandes. Debe proporcionar una manera fácil de actuar como consumidor dentro de su tienda. No se puede validar la tienda si el equipo de validación no tiene suficientes créditos de compra para validar todos estos escenarios.
 
-Para obtener una lista más completa de los problemas comunes de incorporación y las preguntas más frecuentes compiladas por el equipo virtual de Reproductor de Windows Media Services, consulte [Common On-Board Problems for Online Música Stores](common-on-boarding-problems-for-online-music-stores.md).
+Para obtener una lista más completa de los problemas comunes de incorporación y las preguntas más frecuentes compiladas por el equipo virtual de Reproductor de Windows Media Services, consulte [Common On-Boarding Problems for Online Música Stores](common-on-boarding-problems-for-online-music-stores.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

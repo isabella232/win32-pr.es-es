@@ -5,21 +5,21 @@ ms.assetid: d7066fb4-f53f-4e55-ba12-fb4078ece144
 ms.tgt_platform: multiple
 keywords:
 - Propiedad HotKeyAltTab Servicios de Escritorio remoto
-- Propiedad HotKeyAltTab Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Propiedad HotKeyAltTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad HotKeyAltTab
-- Propiedad HotKeyAltTab Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Propiedad HotKeyAltTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad HotKeyAltTab
-- Propiedad HotKeyAltTab Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Propiedad HotKeyAltTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad HotKeyAltTab
-- Propiedad HotKeyAltTab Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Propiedad HotKeyAltTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad HotKeyAltTab
-- Propiedad HotKeyAltTab Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Propiedad HotKeyAltTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad HotKeyAltTab
-- Propiedad HotKeyAltTab Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Propiedad HotKeyAltTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad HotKeyAltTab
-- Propiedad HotKeyAltTab Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Propiedad HotKeyAltTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad HotKeyAltTab
-- Propiedad HotKeyAltTab Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Propiedad HotKeyAltTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
 - Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad HotKeyAltTab
 topic_type:
 - apiref
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e22b50679b98bb57f40108287a303de3097cfe0bb3dc2fd552a957dae6479b1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eec7834a95b83ec43553d0ced1e056860cfb5abe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120009895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068629"
 ---
-# <a name="imsrdpclientadvancedsettingshotkeyalttab-property"></a>IMsRdpClientAdvancedSettings::HotKeyAltTab, propiedad
+# <a name="imsrdpclientadvancedsettingshotkeyalttab-property"></a>Propiedad IMsRdpClientAdvancedSettings::HotKeyAltTab
 
 Especifica el código de clave virtual que se agregará a ALT para determinar el reemplazo de la tecla de acceso rápido para ALT+TAB.
 
@@ -69,7 +69,7 @@ Esta propiedad solo es válida cuando la [**propiedad KeyboardHookMode**](imsrdp
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -92,7 +92,7 @@ Nuevo código de clave virtual. **VK \_ PRIOR** es el valor predeterminado, con 
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -110,7 +110,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

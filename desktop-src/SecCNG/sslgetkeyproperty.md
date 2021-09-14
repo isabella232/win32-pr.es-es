@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: b86f8a2e76573122bcfcf809d5301bc6bf70690467527f4dc69a5ec12419f56b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42952b76bfb46eeeb31b9f76b1f677e7b3b8e3e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250406"
 ---
 # <a name="sslgetkeyproperty-function"></a>Función SslGetKeyProperty
 
-La **función SslGetKeyProperty** recupera el valor de una propiedad con nombre para un [*objeto de clave de*](/windows/desktop/SecGloss/s-gly) proveedor Capa de sockets seguros protocolo de seguridad (SSL).
+La **función SslGetKeyProperty** recupera el valor de una propiedad con nombre para un objeto [*de clave de*](/windows/desktop/SecGloss/s-gly) proveedor Capa de sockets seguros protocolo de seguridad (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Puntero a una cadena Unicode terminada en NULL que contiene el nombre de la prop
 *ppbOutput* \[ out\]
 </dt> <dd>
 
-Puntero a un búfer que recibe el valor de propiedad. El llamador de la función debe liberar este búfer llamando a la [**función SslFreeBuffer.**](sslfreebuffer.md)
+Puntero a un búfer que recibe el valor de propiedad. El autor de la llamada de la función debe liberar este búfer mediante una llamada a [**la función SslFreeBuffer.**](sslfreebuffer.md)
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

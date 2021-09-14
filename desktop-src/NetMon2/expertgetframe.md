@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: eba45f6ca01d4792a2093f5433b919794f1ac1c923f30c36f7a353babf5822f8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2bd02bde8caf157b6df6b1dd772a8f7574df0e57
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119911095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069348"
 ---
 # <a name="expertgetframe-function"></a>Función ExpertGetFrame
 
@@ -115,7 +115,7 @@ Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
 Si la función no se realiza correctamente, el valor devuelto indica el motivo del error. Si el valor devuelto es NMERR EXPERT TERMINATE, el experto debe limpiar y devolver inmediatamente; el usuario ha \_ \_ anulado la ejecución del experto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si establece FLAGS ATTACH PROPERTIES, la llamada requiere más recursos \_ que si no establece la \_ marca. Si no se establece la marca, un puntero apunta al marco sin formato y a los datos sobre el marco. Si se establece esta marca, Monitor de red todas las propiedades al marco llamando a todos los analizadores que reclaman una parte del marco. Puede ser un proceso lento.
 

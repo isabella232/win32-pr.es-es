@@ -4,12 +4,12 @@ ms.assetid: 7fc893a6-afa5-4ada-9295-29122b43b21e
 title: Ejemplo de VMRPlayer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85c6281147e2c140541ade480e5b2a5e0f0a1d4146dde59b4871441b68fec6f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2214d94628a90daf0dd543f4e3a7f0166f4968a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119071919"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272767"
 ---
 # <a name="vmrplayer-sample"></a>Ejemplo de VMRPlayer
 
@@ -33,7 +33,7 @@ También puede especificar el flujo de imagen principal desde la línea de coman
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Para descargar los ejemplos DirectShow SDK, instale la versión más reciente del [SDK de Windows.](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
+Para descargar los ejemplos DirectShow SDK, instale la versión más reciente de [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
 
 ## <a name="related-topics"></a>Temas relacionados
 

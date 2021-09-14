@@ -1,6 +1,6 @@
 ---
 title: Función glLogicOp (Gl.h)
-description: La función glLogicOp especifica una operación de píxeles lógicos para la representación del índice de color.
+description: La función glLogicOp especifica una operación de píxel lógico para la representación del índice de color.
 ms.assetid: 29edf9bd-f3b8-4de7-9afb-07714f4efd92
 keywords:
 - Función glLogicOp OpenGL
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 427bd338e416843418fa7551d4e1632dccaf268426ca2a910e164aeae50663dd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eb29e8f845e99f6d3c988dfd0c0201de129bee69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119492675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272103"
 ---
-# <a name="gllogicop-function"></a>función glLogicOp
+# <a name="gllogicop-function"></a>Función glLogicOp
 
-La **función glLogicOp** especifica una operación de píxeles lógicos para la representación del índice de color.
+La **función glLogicOp** especifica una operación de píxel lógico para la representación del índice de color.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,24 +47,24 @@ Constante simbólica que selecciona una operación lógica. Se aceptan los símb
 
 
 
-| Valor                                                                                                                                                                   | Significado              |
+| Value                                                                                                                                                                   | Significado              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | <span id="GL_CLEAR"></span><span id="gl_clear"></span><dl> <dt>**GL \_ CLEAR**</dt> </dl>                          | 0<br/>         |
 | <span id="GL_SET"></span><span id="gl_set"></span><dl> <dt>**GL \_ SET**</dt> </dl>                                | 1<br/>         |
 | <span id="GL_COPY"></span><span id="gl_copy"></span><dl> <dt>**GL \_ COPY**</dt> </dl>                             | s<br/>         |
-| <span id="GL_COPY_INVERTED"></span><span id="gl_copy_inverted"></span><dl> <dt>**COPIA DE GL \_ \_ INVERTIDA**</dt> </dl> | !s<br/>        |
+| <span id="GL_COPY_INVERTED"></span><span id="gl_copy_inverted"></span><dl> <dt>**GL \_ COPY \_ INVERTED**</dt> </dl> | !s<br/>        |
 | <span id="GL_NOOP"></span><span id="gl_noop"></span><dl> <dt>**GL \_ NOOP**</dt> </dl>                             | d<br/>         |
 | <span id="GL_INVERT"></span><span id="gl_invert"></span><dl> <dt>**GL \_ INVERT**</dt> </dl>                       | !d<br/>        |
 | <span id="GL_AND"></span><span id="gl_and"></span><dl> <dt>**GL \_ AND**</dt> </dl>                                | s & d<br/>     |
 | <span id="GL_NAND"></span><span id="gl_nand"></span><dl> <dt>**GL \_ NAND**</dt> </dl>                             | ! (s & d)<br/>  |
-| <span id="GL_OR"></span><span id="gl_or"></span><dl> <dt>**GL \_ O**</dt> </dl>                                   | s \| d<br/>    |
+| <span id="GL_OR"></span><span id="gl_or"></span><dl> <dt>**GL \_ OR**</dt> </dl>                                   | s \| d<br/>    |
 | <span id="GL_NOR"></span><span id="gl_nor"></span><dl> <dt>**GL \_ NI**</dt> </dl>                                | ! (s \| d)<br/> |
 | <span id="GL_XOR"></span><span id="gl_xor"></span><dl> <dt>**GL \_ XOR**</dt> </dl>                                | s ^ d<br/>     |
 | <span id="GL_EQUIV"></span><span id="gl_equiv"></span><dl> <dt>**GL \_ EQUIV**</dt> </dl>                          | ! (s ^ d)<br/>  |
 | <span id="GL_AND_REVERSE"></span><span id="gl_and_reverse"></span><dl> <dt>**GL \_ Y \_ REVERSE**</dt> </dl>       | s & !d<br/>    |
-| <span id="GL_AND_INVERTED"></span><span id="gl_and_inverted"></span><dl> <dt>**GL \_ E \_ INVERTED**</dt> </dl>    | !s & d<br/>    |
+| <span id="GL_AND_INVERTED"></span><span id="gl_and_inverted"></span><dl> <dt>**GL \_ E \_ INVERTIDO**</dt> </dl>    | !s & d<br/>    |
 | <span id="GL_OR_REVERSE"></span><span id="gl_or_reverse"></span><dl> <dt>**GL \_ O \_ REVERSE**</dt> </dl>          | s \| !d<br/>   |
-| <span id="GL_OR_INVERTED"></span><span id="gl_or_inverted"></span><dl> <dt>**GL \_ O \_ INVERTED**</dt> </dl>       | !s \| d<br/>   |
+| <span id="GL_OR_INVERTED"></span><span id="gl_or_inverted"></span><dl> <dt>**GL \_ O \_ INVERTIDO**</dt> </dl>       | !s \| d<br/>   |
 
 
 
@@ -89,11 +89,11 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función glLogicOp** especifica una operación lógica que, cuando está habilitada, se aplica entre el índice de color entrante y el índice de color en la ubicación correspondiente del búfer de fotogramas. La operación lógica está habilitada o deshabilitada [**con glEnable**](glenable.md) y **glDisable** mediante la constante simbólica GL \_ LOGIC \_ OP.
+La **función glLogicOp** especifica una operación lógica que, cuando está habilitada, se aplica entre el índice de color entrante y el índice de color en la ubicación correspondiente del búfer de fotogramas. La operación lógica está habilitada o deshabilitada con [**glEnable**](glenable.md) y **glDisable** mediante la constante simbólica GL \_ LOGIC \_ OP.
 
-El *parámetro opcode* es una constante simbólica elegida en la lista siguiente. En la explicación de las operaciones lógicas, *s* representa el índice de color entrante y *d* representa el índice en el búfer de fotogramas. Se usan operadores de lenguaje C estándar. Como sugieren estos operadores bit a bit, la operación lógica se aplica de forma independiente a cada par de bits de los índices de origen y destino.
+El *parámetro opcode* es una constante simbólica elegida en la lista siguiente. En la explicación de las operaciones lógicas, *s* representa el índice de color entrante y *d* representa el índice en el búfer de fotogramas. Se usan operadores estándar del lenguaje C. Como sugieren estos operadores bit a bit, la operación lógica se aplica de forma independiente a cada par de bits de los índices de origen y destino.
 
 Las operaciones de píxel lógico no se aplican a los búferes de color RGBA.
 
@@ -101,9 +101,9 @@ Cuando se habilita más de un búfer de índice de color para dibujar, las opera
 
 El *parámetro opcode* debe ser uno de los 16 valores aceptados. Otros valores producirán un error.
 
-Las siguientes funciones recuperan información relacionada con **glLogicOp**:
+Las funciones siguientes recuperan información relacionada **con glLogicOp**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ LOGIC \_ OP \_ MODE
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ LOGIC OP \_ \_ MODE
 
 [**glIsEnabled con**](glisenabled.md) el argumento GL \_ LOGIC \_ OP
 
@@ -111,7 +111,7 @@ Las siguientes funciones recuperan información relacionada con **glLogicOp**:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

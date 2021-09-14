@@ -1,17 +1,17 @@
 ---
-description: Las constantes LINEADDRFEATURE enumera \_ las operaciones que se pueden invocar en una dirección.
+description: Las constantes LINEADDRFEATURE \_ enumera las operaciones que se pueden invocar en una dirección.
 ms.assetid: dedeee7b-578b-4b19-8b99-5cd23779d661
 title: LINEADDRFEATURE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bb545bdf0195d9fd8ed35833150b9cfd1f6b10bfbd3d1ead7e8ebff65c93132
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 825902c2943806d1d495e14a0f0a5042f2949796
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119682225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249981"
 ---
-# <a name="lineaddrfeature_-constants"></a>Constantes LINEADDRFEATURE \_
+# <a name="lineaddrfeature_-constants"></a>LineADDRFEATURE \_ (Constantes)
 
 Las **constantes LINEADDRFEATURE \_** enumera las operaciones que se pueden invocar en una dirección.
 
@@ -42,7 +42,7 @@ Se puede colocar una llamada saliente en la dirección.
 
 
 
-Se puede seleccionar una llamada en la dirección .
+Se puede seleccionar una llamada en la dirección.
 
 
 </dt> </dl> </dd> <dt>
@@ -67,12 +67,12 @@ La [**función linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) se pu
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_PICKUPHELD"></span><span id="lineaddrfeature_pickupheld"></span>**LINEADDRFEATURE \_ PICKUP PICKUP (RECOGIDA DE LINEADDRFEATURE)**
+<span id="LINEADDRFEATURE_PICKUPHELD"></span><span id="lineaddrfeature_pickupheld"></span>**LINEADDRFEATURE \_ PICKUP (RECOGIDA DE LINEADDRFEATURE)**
 </dt> <dd> <dl> <dt>
 
 
 
-La [**función linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) (con **una** dirección de destino null) se puede usar para seleccionar una llamada que se mantiene en la dirección. Normalmente, esto solo se usa en una disposición exclusiva de puente.
+La [**función linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) (con una **dirección** de destino null) se puede usar para seleccionar una llamada que se mantiene en la dirección. Normalmente, esto solo se usa en una disposición exclusiva de puente.
 
 
 </dt> </dl> </dd> <dt>
@@ -82,7 +82,7 @@ La [**función linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) (con 
 
 
 
-La [**función linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) (con una **dirección** de destino null) se puede usar para seleccionar una llamada en espera de llamada. Tenga en cuenta que esto no indica necesariamente que realmente hay una llamada en espera, ya que a menudo es imposible que un dispositivo de telefonía detecte automáticamente una llamada de este tipo. Sin embargo, indica que se invocará la función hook-flash para intentar cambiar a dicha llamada.
+La [**función linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) (con una **dirección** de destino null) se puede usar para seleccionar una llamada en espera de llamada. Tenga en cuenta que esto no indica necesariamente que una llamada en espera está realmente presente, ya que a menudo es imposible que un dispositivo de telefonía detecte automáticamente dicha llamada. sin embargo, indica que se invocará la función hook-flash para intentar cambiar a dicha llamada.
 
 
 </dt> </dl> </dd> <dt>
@@ -112,7 +112,7 @@ Se pueden establecer los modos de terminal de esta dirección.
 
 
 
-Una llamada de conferencia con **una llamada inicial NULL** se puede configurar en esta dirección.
+En esta dirección se **puede** configurar una llamada de conferencia con una llamada inicial NULL.
 
 
 </dt> </dl> </dd> <dt>
@@ -132,10 +132,10 @@ Las solicitudes de finalización de llamadas se pueden cancelar en esta direcci�
 
 
 
-Las llamadas se pueden desesparparpar con esta dirección.
+Las llamadas se pueden desesparparpar mediante esta dirección.
 
 > [!Note]  
-> Si ninguno de los nuevos bits "PICKUP" modificados se establece en el miembro **dwAddressFeatures** en [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) pero se establece el bit LINEADDRFEATURE PICKUP, puede que cualquiera de los modos de recogida funcione; el proveedor de servicios simplemente no ha especificado \_ cuáles.
+> Si no se establece ninguno de los nuevos bits "PICKUP" modificados en el miembro **dwAddressFeatures** en [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) pero el bit LINEADDRFEATURE PICKUP está establecido, puede que cualquiera de los modos de recogida funcione; el proveedor de servicios simplemente no ha especificado \_ cuáles.
 
  
 
@@ -160,18 +160,18 @@ La [**función lineForward**](/windows/desktop/api/Tapi/nf-tapi-lineforward) (co
 La [**función lineForward**](/windows/desktop/api/Tapi/nf-tapi-lineforward) se puede usar para reenviar llamadas de la dirección a otros números. También se establecerá LINEADDRFEATURE \_ FORWARD.
 
 > [!Note]  
-> Si ninguno de los nuevos bits "FORWARD" modificados se establece en el miembro **dwAddressFeatures** en [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) pero se establece el bit LINEADDRFEATURE FORWARD, puede funcionar cualquiera de los modos de reenvío; el proveedor de servicios simplemente no ha especificado \_ cuáles.
+> Si ninguno de los nuevos bits "FORWARD" modificados se establece en el miembro **dwAddressFeatures** en [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) pero el bit LINEADDRFEATURE FORWARD está establecido, puede que cualquiera de los modos de reenvío funcione; el proveedor de servicios simplemente no ha especificado \_ cuáles.
 
  
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
-Esta constante se usa tanto en [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps) (devuelto por [**lineGetAddressCaps)**](/windows/desktop/api/Tapi/nf-tapi-linegetaddresscaps)como en [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) (devuelto por [**lineGetAddressStatus).**](/windows/desktop/api/Tapi/nf-tapi-linegetaddressstatus) **LINEADDRESSCAPS informa** de la disponibilidad de las características de dirección por parte del proveedor de servicios (principalmente el modificador) para una dirección determinada. Una aplicación tomaría esta determinación cuando se inicializa. La [**estructura LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) notifica, para una dirección determinada, qué características de dirección se pueden invocar realmente mientras la dirección está en el estado actual. Una aplicación realizaría esta determinación dinámicamente después de los cambios de estado de dirección, normalmente causados por actividades relacionadas con llamadas en la dirección.
+Esta constante se usa tanto en [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps) (devuelto por [**lineGetAddressCaps)**](/windows/desktop/api/Tapi/nf-tapi-linegetaddresscaps)como en [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) (devuelto por [**lineGetAddressStatus**](/windows/desktop/api/Tapi/nf-tapi-linegetaddressstatus)). **LINEADDRESSCAPS informa** de la disponibilidad de las características de dirección por parte del proveedor de servicios (principalmente el modificador) para una dirección determinada. Una aplicación tomaría esta determinación cuando se inicializa. La [**estructura LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) notifica, para una dirección determinada, qué características de dirección se pueden invocar realmente mientras la dirección está en el estado actual. Una aplicación tomaría esta determinación dinámicamente después de los cambios de estado de dirección, normalmente causados por actividades relacionadas con llamadas en la dirección.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -180,11 +180,11 @@ Esta constante se usa tanto en [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/n
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

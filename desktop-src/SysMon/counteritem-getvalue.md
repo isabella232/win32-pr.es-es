@@ -1,11 +1,11 @@
 ---
-title: Método de contraelemento. GetValue
+title: Método CounterItem.GetValue
 description: Recupera el último valor del contador.
 ms.assetid: cf50d878-a119-42b0-bc59-b0e37ed15321
 keywords:
 - Método GetValue SysMon
-- GetValue (método) SysMon, contraitem (clase)
-- Clase de contraelemento SysMon, método GetValue
+- Método GetValue SysMon , clase CounterItem
+- Clase CounterItem SysMon, método GetValue
 topic_type:
 - apiref
 api_name:
@@ -17,13 +17,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 94e40950ce4a8bf24a6a4301db133779b34ce4ec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105666049"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068883"
 ---
-# <a name="counteritemgetvalue-method"></a>Método de contraelemento. GetValue
+# <a name="counteritemgetvalue-method"></a>Método CounterItem.GetValue
 
 Recupera el último valor del contador.
 
@@ -43,14 +43,14 @@ CounterItem.GetValue( _
 
 <dl> <dt>
 
-*valor* \[ de enuncia\]
+*value* \[ out\]
 </dt> <dd>
 
 Último valor muestreado del contador.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*status* \[ out\]
 </dt> <dd>
 
 Indica si el valor es válido.
@@ -84,21 +84,21 @@ Si el origen de los datos del contador es de un archivo de registro, el valor es
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento de**](counteritem.md)
+[**CounterItem**](counteritem.md)
 </dt> <dt>
 
-[**Elemento de GetStatistics**](counteritem-getstatistics.md)
+[**CounterItem.GetStatistics**](counteritem-getstatistics.md)
 </dt> <dt>
 
-[**Valor de contraitem.**](counteritem-value.md)
+[**CounterItem.Value**](counteritem-value.md)
 </dt> </dl>
 
  

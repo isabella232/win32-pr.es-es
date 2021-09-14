@@ -3,7 +3,7 @@ title: EQUALIZERSETTINGS.bands
 description: El atributo de bandas recupera el número de bandas de frecuencia admitidas.
 ms.assetid: 602db39e-de47-4bee-be98-9e565a137591
 keywords:
-- EQUALIZERSETTINGS.bands Reproductor de Windows Media
+- EQUALIZERSETTINGS.Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd481f3565f7e58ffa480ed72b902f99578794bef9daa7089236947826f2e8e2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9146ba21c52af7ce152fdda8671e30e9f63aeebd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117748933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249686"
 ---
 # <a name="equalizersettingsbands"></a>EQUALIZERSETTINGS.bands
 
@@ -41,7 +41,7 @@ Este atributo es un número de solo **lectura** (**long**).
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

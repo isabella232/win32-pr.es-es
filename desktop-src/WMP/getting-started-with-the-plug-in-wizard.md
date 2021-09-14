@@ -11,12 +11,12 @@ keywords:
 - Asistente para complementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d2699d0316be93f6387bdc64c6671df868eaa70fb24a4ad3619026524106432
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a4feb9cfa60c120bfc5bb675ea8a8078b95ad14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118576584"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068432"
 ---
 # <a name="getting-started-with-the-plug-in-wizard"></a>Tareas iniciales con el Asistente para complementos
 
@@ -50,7 +50,7 @@ Realice los pasos siguientes para instalar el Asistente para Reproductor de Wind
 
     
 
-    | Valor              | Versión de Visual Studio   |
+    | Value              | Versión de Visual Studio   |
     |--------------------|-------------------------|
     | VsWizardEngine.7.1 | Visual Studio .NET 2003 |
     | VsWizardEngine.8.0 | Visual Studio 2005      |
@@ -70,7 +70,7 @@ Realice los pasos siguientes para instalar el Asistente para Reproductor de Wind
 
     Cambie `<path to wmpwiz directory goes here>` a la ruta de acceso donde se encuentran los archivos del asistente.
 
-    Por ejemplo, supongamos que Visual Studio 2008 y los archivos del asistente están aquí: C: Archivos de programa Sdk de Microsoft Windows asistentes multimedia WMP de ejemplos de \\ \\ \\ \\ v7.0 \\ \\ \\ \\ \\ wmpwiz. A continuación, el archivo wmpwiz.vsz tendría el siguiente aspecto:
+    Por ejemplo, supongamos que Visual Studio 2008 y los archivos del asistente están aquí: C: Archivos de programa SDK de Microsoft Windows asistentes multimedia WMP de ejemplos de \\ \\ \\ \\ v7.0 \\ \\ \\ \\ \\ wmpwiz. A continuación, el archivo wmpwiz.vsz tendría el siguiente aspecto:
 
     ```
     VSWIZARD 7.0

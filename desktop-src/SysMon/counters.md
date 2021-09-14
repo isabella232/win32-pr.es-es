@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8349c1425450491c3fc658f6ac1ac3c5fcf75d3e617a92f6e34b91f2f5802e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dbcbf8da93f13dce2ce2a290adeab9394ee8addb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118883342"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068856"
 ---
 # <a name="counters-collection"></a>Recopilación de contadores
 
@@ -28,7 +28,7 @@ Use esta clase para administrar la colección de [**objetos CounterItem.**](coun
 
 Para recuperar este objeto, llame [**a SystemMonitor.Counters**](systemmonitor-counters.md).
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección Counters** tiene estos tipos de miembros:
 
@@ -44,7 +44,7 @@ La **colección Counters** tiene estos métodos.
 | Método                            | Descripción                                                                           |
 |:----------------------------------|:--------------------------------------------------------------------------------------|
 | [**Añadir**](counters-add.md)       | Agrega una [**instancia counterItem**](counteritem.md) a la colección.<br/>      |
-| [**Quitar**](counters-remove.md) | Quita una [**instancia counterItem**](counteritem.md) de la colección.<br/> |
+| [**Remove**](counters-remove.md) | Quita una [**instancia counterItem**](counteritem.md) de la colección.<br/> |
 
 
 
@@ -58,14 +58,14 @@ La **colección Counters** tiene estas propiedades.
 
 | Propiedad                                   | Descripción                                                                                         |
 |:-------------------------------------------|:----------------------------------------------------------------------------------------------------|
-| [**Count**](counters-count.md)<br/> | Recupera el número de [**instancias CounterItem**](counteritem.md) de la colección.<br/>  |
+| [**Contar**](counters-count.md)<br/> | Recupera el número de [**instancias CounterItem**](counteritem.md) de la colección.<br/>  |
 | [**Elemento**](counters-item.md)<br/>   | Recupera la instancia de [**CounterItem especificada**](counteritem.md) de la colección.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **objeto Counters** es la propiedad predeterminada del [**objeto SystemMonitor.**](systemmonitor.md)
 
@@ -75,7 +75,7 @@ Agregue a esta colección los contadores que desea representar como gráficos. S
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

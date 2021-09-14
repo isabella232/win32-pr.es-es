@@ -1,20 +1,20 @@
 ---
-description: El primer tipo de objeto que se puede recuperar es una clase WMI.
+description: El primer tipo de objeto que puede recuperar es una clase WMI.
 ms.assetid: cfe4bcca-692e-45cd-a840-93ebfe4ae267
 ms.tgt_platform: multiple
 title: Recuperar una clase WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e2695a934436e6e53fe84ee11c6008615b3d6f5d1807039d76b72fa704a2cf8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9378854eb483c6cdac7ddee47d581d8876270e97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117739884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063922"
 ---
 # <a name="retrieving-a-wmi-class"></a>Recuperar una clase WMI
 
-El primer tipo de objeto que se puede recuperar es una clase WMI. Al recuperar una clase WMI, realmente se recupera una definición de clase, que es una lista de las propiedades, calificadores y métodos que describen completamente la clase. Sin embargo, una definición de clase es básicamente la propia clase.
+El primer tipo de objeto que puede recuperar es una clase WMI. Al recuperar una clase WMI, se recupera realmente una definición de clase, que es una lista de las propiedades, calificadores y métodos que describen completamente la clase. Sin embargo, una definición de clase es básicamente la propia clase.
 
 PowerShell usa una consulta estándar para recuperar definiciones de clase mediante la **clase meta \_ class.**
 
@@ -28,13 +28,13 @@ PowerShell usa una consulta estándar para recuperar definiciones de clase media
 
     
 
-    [Get-WmiObject es](https://technet.microsoft.com/library/dd315379.aspx) el cmdlet estándar que PowerShell usa para recuperar información de clase e instancia de WMI. La **clase \_ meta class** define la consulta como una consulta de esquema. Sin la **clase \_ meta** class, esta consulta devolvería todas las instancias de Win32 \_ LogicalDisk. Para obtener más información sobre cómo consultar WMI, vea [Instrucción SELECT para consultas de esquema.](select-statement-for-schema-queries.md)
+    [Get-WmiObject es](https://technet.microsoft.com/library/dd315379.aspx) el cmdlet estándar que PowerShell usa para recuperar información de clase e instancia de WMI. La **clase meta \_ class** define la consulta como una consulta de esquema. Sin la **clase meta, \_** esta consulta devolvería todas las instancias de \_ LogicalDisk de Win32. Para obtener más información sobre cómo consultar WMI, vea [Instrucción SELECT para consultas de esquema](select-statement-for-schema-queries.md).
 
-El proceso actual para recuperar una definición de WMI en C# es usar **la clase CIMInstance.**
+El proceso actual para recuperar una definición de WMI en C# es usar la **clase CIMInstance.**
 
 **Para recuperar una definición de clase en C# (Microsoft.Management.Infrastructure)**
 
-1.  Con el espacio **de nombres Microsoft.Management.Infrastructure,** cree una **clase CIMInstance** con el espacio de nombres y el nombre de clase especificados.
+1.  Con el **espacio de nombres Microsoft.Management.Infrastructure,** cree una **clase CIMInstance** con el espacio de nombres y el nombre de clase especificados.
 
     La clase creada contendrá toda la información de clase, pero no datos de instancia.
 
@@ -49,7 +49,7 @@ El proceso actual para recuperar una definición de WMI en C# es usar **la clase
 
     
 
-2.  Como alternativa, al igual que con PowerShell, también podría realizar una consulta mediante la **etiqueta de meta \_** class como parte de la consulta.
+2.  Como alternativa, al igual que con PowerShell, también puede realizar una consulta mediante la **etiqueta meta \_ class** como parte de la consulta.
 
     ```CSharp
     using Microsoft.Management.Infrastructure;
@@ -66,7 +66,7 @@ El proceso actual para recuperar una definición de WMI en C# es usar **la clase
 Al igual que con PowerShell, C# usa una **consulta de meta \_ class** para recuperar definiciones de clase. Como alternativa, puede crear un objeto **ManagementClass** para acceder directamente a la definición de clase.
 
 > [!Note]  
-> **System.Management era el** espacio de nombres .NET original que se usaba para acceder a WMI; Sin embargo, las API de este espacio de nombres suelen ser más lentas y no escalan tan bien con respecto a sus homólogos **de Microsoft.Management.Infrastructure** más modernos.
+> **System.Management era el** espacio de nombres original de .NET que se usaba para tener acceso a WMI; Sin embargo, las API de este espacio de nombres suelen ser más lentas y no escalan tan bien en relación con sus homólogos **microsoft.management.infrastructure** más modernos.
 
  
 
@@ -83,7 +83,7 @@ Al igual que con PowerShell, C# usa una **consulta de meta \_ class** para recup
 
     
 
-    [ManagementObjectSerarcher es](/dotnet/api/system.management.managementobjectsearcher) la clase estándar que .NET usa para recuperar información de clase e instancia de WMI. [ManagementObjectSerarcher.Get](/dotnet/api/system.management.managementobjectsearcher.get#System_Management_ManagementObjectSearcher_Get) devuelve [managementObjectCollection](/dotnet/api/system.management.managementobjectcollection) que contiene la clase de definición de esquema. La **clase \_ meta class** define la consulta como una consulta de esquema. Sin la **clase meta \_** class, esta consulta devolvería todas las instancias de [**\_ LogicalDisk de Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) Para obtener más información sobre cómo consultar WMI, vea [Instrucción SELECT para consultas de esquema.](select-statement-for-schema-queries.md)
+    [ManagementObjectSerarcher es](/dotnet/api/system.management.managementobjectsearcher) la clase estándar que .NET usa para recuperar información de clase e instancia de WMI. [ManagementObjectSerarcher.Get](/dotnet/api/system.management.managementobjectsearcher.get#System_Management_ManagementObjectSearcher_Get) devuelve [una clase ManagementObjectCollection](/dotnet/api/system.management.managementobjectcollection) que contiene la clase de definición de esquema. La **clase meta \_ class** define la consulta como una consulta de esquema. Sin la **clase meta \_** class, esta consulta devolvería todas las instancias de [**Win32 \_ LogicalDisk.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) Para obtener más información sobre cómo consultar WMI, vea [Instrucción SELECT para consultas de esquema](select-statement-for-schema-queries.md).
 
 2.  Como alternativa, cree un nuevo [objeto ManagementClass,](/dotnet/api/system.management.managementclass) con el nombre como ruta de acceso, para recuperar la clase.
 
@@ -95,7 +95,7 @@ Al igual que con PowerShell, C# usa una **consulta de meta \_ class** para recup
 
     
 
-Puede recuperar una definición de clase en VBScript de forma similar a la recuperación de una instancia específica.
+Puede recuperar una definición de clase en VBScript de forma similar a recuperar una instancia específica.
 
 **Para recuperar una definición de clase en VBScript**
 
@@ -118,10 +118,10 @@ Puede recuperar una definición de clase en VBScript de forma similar a la recup
 
     En Active Server Pages (ASP) use [**GetObject**](https://msdn.microsoft.com/library/e9waz863(v=VS.71).aspx) o [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) en el script del lado servidor. Para obtener más información, [vea Creating Active Server Pages for WMI](creating-active-server-pages-for-wmi.md).
 
-3.  También se puede especificar una clase o instancia, en cuyo caso el objeto devuelto es un objeto WMI, por ejemplo, una instancia de [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk), en lugar de un objeto de servicios. Tenga en cuenta que no se pueden usar las funciones [**GetObject**](https://msdn.microsoft.com/library/e9waz863(v=VS.71).aspx) de VBScript para crear una instancia del objeto [**genérico SWbemObject**](swbemobject.md).
-4.  En las páginas HTML que se ejecutan en Microsoft Internet Explorer (IE), [**GetObject**](https://msdn.microsoft.com/library/e9waz863(v=VS.71).aspx) y [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) pueden producir un error porque los objetos de scripting WMI, como los controles ActiveX, no están marcados como seguros para el scripting. La única excepción es [**el objeto SWbemDateTime.**](swbemdatetime.md) La única manera de que estas llamadas se puedan realizar correctamente es cuando se reduce la configuración de seguridad de IE, lo que no se recomienda.
+3.  También se puede especificar una clase o instancia, en cuyo caso el objeto devuelto es un objeto WMI, por ejemplo, una instancia de [**\_ Win32 LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk), en lugar de un objeto de servicios. Tenga en cuenta que no puede usar las funciones [**GetObject**](https://msdn.microsoft.com/library/e9waz863(v=VS.71).aspx) de VBScript para crear una instancia del objeto [**genérico SWbemObject**](swbemobject.md).
+4.  En las páginas HTML que se ejecutan en Microsoft Internet Explorer (IE), [**GetObject**](https://msdn.microsoft.com/library/e9waz863(v=VS.71).aspx) y [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) pueden producir un error porque los objetos de scripting WMI, como los controles ActiveX, no están marcados como seguros para scripting. La única excepción es [**el objeto SWbemDateTime.**](swbemdatetime.md) La única manera de que estas llamadas se puedan realizar correctamente es cuando se reduce la configuración de seguridad de IE, lo que no se recomienda.
 
-Al recuperar una clase en C++, llame a la [**versión IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) [**de GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject).
+Al recuperar una clase en C++, llame a la [**versión IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) de [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject).
 
 **Para recuperar una definición de clase en C++**
 

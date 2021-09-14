@@ -9,12 +9,12 @@ keywords:
 - Complementos de interfaz de usuario, mostrar cuadros de diálogo y mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: addacfe2a309808f949c59a8ec11498417cb05a17cd6ab160ca1c08d2017a0bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d96387ca46864064c7b6ff7b9cd3dba8187eed0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997246"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068448"
 ---
 # <a name="displaying-modal-user-interfaces"></a>Mostrar interfaces de usuario modales
 

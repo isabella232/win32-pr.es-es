@@ -14,11 +14,11 @@ api_type:
 api_location:
 - D3DX10Math.h
 ms.openlocfilehash: d391717056d1cd8a6957a6647612ed8b1ca65e41
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063839"
 ---
 # <a name="d3dxvec3transformnormalarray-function-d3dx10mathh"></a>Función D3DXVec3TransformNormalArray (D3DX10Math.h)
 
@@ -104,13 +104,13 @@ Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
 Puntero a una matriz D3DXVECTOR3 que es la matriz transformada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función transforma el vector (pV->x, pV->y, pV->z, 0) por la matriz a la que apunta pM.
 
-Si desea transformar un normal, la matriz que pase a esta función debe ser la transponer del inverso de la matriz que se usaría para transformar un punto.
+Si desea transformar un normal, la matriz que pasa a esta función debe ser la transpuesta de la inversa de la matriz que usaría para transformar un punto.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXVec3TransformNormalArray** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXVec3TransformNormalArray** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 

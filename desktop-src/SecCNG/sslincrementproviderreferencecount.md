@@ -1,5 +1,5 @@
 ---
-description: Incrementa el recuento de referencias a una Capa de sockets seguros de proveedor de protocolos (SSL).
+description: Incrementa el recuento de referencias a una instancia Capa de sockets seguros de protocolo de acceso automático (SSL).
 ms.assetid: 67e7b8b4-b073-4936-b1e0-3fc7c1c011a2
 title: Función SslIncrementProviderReferenceCount (Sslprovider.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: a177d4142d304834aea773e56a09703bc4d56e6b479a2f005f00e3b692980c72
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 862697035d978db082c303c6e1df6f2a444d8be3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250358"
 ---
 # <a name="sslincrementproviderreferencecount-function"></a>Función SslIncrementProviderReferenceCount
 
-La **función SslIncrementProviderReferenceCount** incrementa el recuento de referencias a una [*Capa de sockets seguros de proveedor*](/windows/desktop/SecGloss/s-gly) de protocolos (SSL).
+La **función SslIncrementProviderReferenceCount** incrementa el recuento de referencias a una Capa de sockets seguros de proveedor de [*protocolo*](/windows/desktop/SecGloss/s-gly) de Capa de sockets seguros (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ SECURITY_STATUS WINAPI SslIncrementProviderReferenceCount(
 *hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor del protocolo SSL.
+Identificador de la instancia del proveedor de protocolo SSL.
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -14,11 +14,11 @@ api_type:
 api_location:
 - D3DX10Math.h
 ms.openlocfilehash: 972238650fa23e8b7aa435cd91b36f2caf8a4d9b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102863"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063816"
 ---
 # <a name="d3dxvector2-structure-d3dx10mathh"></a>Estructura D3DXVECTOR2 (D3DX10Math.h)
 
@@ -36,7 +36,7 @@ typedef struct D3DXVECTOR2 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ Componente y.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **D3DXVECTOR2 tiene** las siguientes extensiones de C++.
 

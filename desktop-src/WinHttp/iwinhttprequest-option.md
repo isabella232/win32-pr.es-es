@@ -1,7 +1,7 @@
 ---
-description: Establece o recupera un valor de Windows servicios HTTP (WinHTTP) de Microsoft.
+description: Establece o recupera un valor de opción Windows servicios HTTP (WinHTTP) de Microsoft.
 ms.assetid: 913573e6-fad3-42a5-bb5d-25a3d2ac9616
-title: IWinHttpRequest::Option, propiedad
+title: Propiedad IWinHttpRequest::Option
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 05368f1a5179dcaa94bc07a32035e308e9848e867d89f42f4dffb94c765ee448
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c76df3f09871984da9f4bc093e9ac96d7484558f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133098"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068340"
 ---
-# <a name="iwinhttprequestoption-property"></a>IWinHttpRequest::Option, propiedad
+# <a name="iwinhttprequestoption-property"></a>Propiedad IWinHttpRequest::Option
 
 La **propiedad Option** establece o recupera un valor de Windows servicios HTTP (WinHTTP) de Microsoft.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -59,13 +59,13 @@ WinHttpRequest.Option = vtOption
 
 Valor **Variant** que contiene el valor de opción.
 
-El *parámetro Option* especifica la opción [**WinHttpRequestOption**](winhttprequestoption.md) que se establecerá o recuperará.
+El *parámetro Option* especifica el valor de [**WinHttpRequestOption**](winhttprequestoption.md) que se debe establecer o recuperar.
 
 ## <a name="error-codes"></a>Códigos de error
 
-El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error en caso contrario.
+El valor devuelto es **S \_ OK on** success o un valor de error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
@@ -74,7 +74,7 @@ El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo establecer y ver la opción [*de cadena*](glossary.md) del agente de usuario y ver otras opciones.
+En el ejemplo siguiente se muestra cómo establecer y ver la opción de cadena [*del agente*](glossary.md) de usuario y ver otras opciones.
 
 
 ```C++
@@ -207,7 +207,7 @@ int main()
 
 
 
-En el ejemplo de scripting siguiente se muestra cómo establecer y ver las opciones.
+En el ejemplo de scripting siguiente se muestra cómo establecer y ver opciones.
 
 
 ```JScript
@@ -246,16 +246,16 @@ WScript.Echo( 'Escape percents: '+
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
 | Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
-| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -265,7 +265,7 @@ WScript.Echo( 'Escape percents: '+
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versiones winHTTP](winhttp-versions.md)
+[Versiones de WinHTTP](winhttp-versions.md)
 </dt> <dt>
 
 [**WinHttpRequestOption**](winhttprequestoption.md)

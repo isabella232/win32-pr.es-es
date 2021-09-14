@@ -4,12 +4,12 @@ ms.assetid: d4dbba0d-8225-48d7-a66b-b189fdae70a8
 title: LINE_REQUEST mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce3cd49b14aafabfdd4d7ab37c5f2beec1487a08a53385ae8a1439b7443d49cd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 23987e370d5ae9c8eeb579780c5659f8075ac865
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120126235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250035"
 ---
 # <a name="line_request-message"></a>Mensaje \_ DE SOLICITUD DE LÍNEA
 
@@ -65,7 +65,7 @@ Si *dwParam1* se establece en LINEREQUESTMODE DROP, la palabra de orden bajo \_ 
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **mensaje \_ LINE REQUEST** se envía a la aplicación de prioridad más alta que se ha registrado para el modo de solicitud correspondiente. Este mensaje indica la llegada de una solicitud de telefonía asistida del modo de solicitud especificado. Si *dwParam1* es LINEREQUESTMODE MAKECALL, la aplicación puede invocar lineGetRequest mediante el modo de solicitud \_ correspondiente para recibir la solicitud. [](/windows/desktop/api/Tapi/nf-tapi-linegetrequest) Si *dwParam1* es LINEREQUESTMODE DROP, el mensaje contiene todos los datos que el destinatario de la solicitud \_ necesita para realizar la solicitud.
 
@@ -76,11 +76,11 @@ El **mensaje \_ LINE REQUEST** se envía a la aplicación de prioridad más alta
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

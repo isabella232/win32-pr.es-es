@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef9fc5eb55a306dad8b9d5de6d6501b615a9156c026c8e0fc12664795a23ab21
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41555bd5910ddb3151468a458c5becbf247ea484
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118574807"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068407"
 ---
 # <a name="mediaismemberof-method"></a>Método Media.isMemberOf
 
@@ -53,7 +53,7 @@ bRetVal = Media.isMemberOf(
 
 Este método devuelve un **valor booleano**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no puede comprobar las listas de reproducción recuperadas a través del **objeto MediaCollection.** Para probar si un elemento multimedia es miembro de una lista de reproducción con nombre determinada, recupere la lista de reproducción con el *reproductor*. *playlistCollection*. **getByName**(*name*). **item**(0). Este método también se puede usar con listas de reproducción de CD y listas de reproducción de metarchivo.
 
@@ -85,9 +85,9 @@ if (answer == "No"){
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

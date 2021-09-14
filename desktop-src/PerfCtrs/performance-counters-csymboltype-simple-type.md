@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e4ebba4d72b7bc79f2aaefccfa2d71e57abd82aa06efb09abc2e83cebdb513f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0771bb1dffc006abf8e02e6c391278f7d0b03f11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250652"
 ---
 # <a name="csymboltype-simple-type-performance-counters"></a>Tipo simple CSymbolType (contadores de rendimiento)
 
@@ -34,7 +34,7 @@ Define un nombre de símbolo de C/C++ válido.
 
 ## <a name="patterns"></a>Patrones
 
-El **tipo simple CSymbolType** es **un xs:string** restringido por el siguiente patrón:
+El **tipo simple CSymbolType** es **un xs:string** que está restringido por el siguiente patrón:
 
 -   `()|([_a-zA-Z][_0-9a-zA-Z]*)`
 

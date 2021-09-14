@@ -3,24 +3,24 @@ title: Sección Descripción
 description: Sección Descripción
 ms.assetid: 280a9a4d-935f-440d-a606-94aeba0007db
 keywords:
-- Aspectos de Windows Media Player Mobile, sección Descripción
-- aspectos, sección Descripción
+- Reproductor de Windows Media Máscaras móviles, sección Descripción
+- máscaras, sección Descripción
 - crear máscaras, sección Descripción
 - escribir código para máscaras, sección Descripción
-- Sección de descripción en máscaras
+- Sección Descripción en máscaras
 - archivos de definición de máscara, sección Descripción
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ce9518b6b1de128457dc3e6b3738ddab9be2a873
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903800"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068483"
 ---
 # <a name="description-section"></a>Sección Descripción
 
-A continuación, debe proporcionar una sección que describa el tamaño y la orientación de la máscara al crear una máscara para Windows Media Player 9 series para Windows Mobile 2003 y versiones posteriores:
+A continuación, debe proporcionar una sección que describa el tamaño y la orientación de la máscara al crear una máscara para la serie 9 de Reproductor de Windows Media para Windows Mobile 2003 y versiones posteriores:
 
 
 ```C++
@@ -37,11 +37,11 @@ A continuación, debe proporcionar una sección que describa el tamaño y la ori
 
 
 
-La sección Descripción debe empezar con la palabra Description entre corchetes y, a continuación, incluir una línea que especifique las dimensiones y la resolución de pantalla de la máscara.
+La sección Descripción debe comenzar con la palabra Descripción entre corchetes e incluir una línea que especifique las dimensiones y la resolución de visualización de la máscara.
 
-Las líneas que comienzan con dos barras diagonales no se procesan y se pueden usar para comentarios o, como se muestra en el código anterior, una plantilla para ayudarle a recordar lo que ocurre en una sección. También puede usar plantillas para ayudar a alinear todo en las columnas.
+Las líneas que comienzan con dos barras diagonales no se procesan y se pueden usar para comentarios o, como se muestra en el código anterior, una plantilla para ayudarle a recordar lo que aparece en una sección. También puede usar plantillas para ayudar a alinear todo en columnas.
 
-Para obtener más información sobre la sección de descripción, vea [Descripción](description.md) en la referencia de la máscara.
+Para obtener más información sobre la sección Descripción, vea [Descripción en](description.md) la referencia de máscara.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -50,9 +50,9 @@ Para obtener más información sobre la sección de descripción, vea [Descripci
 [**Escritura del código**](writing-the-code.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

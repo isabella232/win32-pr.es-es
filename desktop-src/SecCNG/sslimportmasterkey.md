@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 546cfeb39ac413b99b5b8021dc7dd6f0f57a89dbfb87880a63b0db2324cda0d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e21c4cd0f6e51662124e02881b82c905dba68c9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906066"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250382"
 ---
 # <a name="sslimportmasterkey-function"></a>Función SslImportMasterKey
 
-La **función SslImportMasterKey** realiza una operación de intercambio de claves [*Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) servidor (SSL).
+La **función SslImportMasterKey** realiza una operación de intercambio de claves [*Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) del lado servidor (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -116,7 +116,7 @@ Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
@@ -130,12 +130,12 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función descifra el secreto premaster, calcula el secreto maestro SSL y devuelve un identificador a este objeto al autor de la llamada. A continuación, esta clave maestra se puede usar para derivar la clave de sesión SSL y finalizar el protocolo de enlace SSL.
 
 > [!Note]  
-> Esta función se usa cuando se usa el algoritmo de intercambio de claves [*RSA.*](/windows/desktop/SecGloss/r-gly) Cuando [*se usa DH,*](/windows/desktop/SecGloss/d-gly) el código del servidor llama a [**SslGenerateMasterKey en**](sslgeneratemasterkey.md) su lugar.
+> Esta función se usa cuando se usa el algoritmo de intercambio de claves [*RSA.*](/windows/desktop/SecGloss/r-gly) Cuando [*se usa DH,*](/windows/desktop/SecGloss/d-gly) el código de servidor llama a [**SslGenerateMasterKey en**](sslgeneratemasterkey.md) su lugar.
 
  
 
@@ -147,7 +147,7 @@ Esta función descifra el secreto premaster, calcula el secreto maestro SSL y de
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

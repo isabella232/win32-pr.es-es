@@ -3,7 +3,7 @@ title: Counters.Item, propiedad
 description: Recupera la instancia de CounterItem especificada de la colección.
 ms.assetid: bf503371-c8bd-4e0d-ab8d-58de3f8fac5f
 keywords:
-- Propiedad De elemento SysMon
+- Propiedad de elemento SysMon
 - Propiedad De elemento SysMon , Clase Counters
 - Clase Counters SysMon , propiedad Item
 topic_type:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 451a6e43714a9ca5ee8e64bf48fdf80aa9e5a9d7b99db8f78f997eba9404e284
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 251a645f0a4ceacdbfb4e2ab7e650f41e44dd508
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118883413"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068858"
 ---
 # <a name="countersitem-property"></a>Counters.Item, propiedad
 
@@ -56,7 +56,7 @@ Property Item( _
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta es la propiedad predeterminada del [**objeto Counters.**](counters.md)
 
@@ -64,7 +64,7 @@ Esta es la propiedad predeterminada del [**objeto Counters.**](counters.md)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

@@ -5,12 +5,12 @@ ms.assetid: 0baaa937-f635-4500-8dcd-9dbbd6f4cd02
 title: A (Glosario de seguridad)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17940ea63513d5762abf54b5d33191aab05fd70db7eb111e97644f32e377f74c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39a3c9bd82d68a80d5a014c19e6c81dddf5e2b2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118895713"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069026"
 ---
 # <a name="a-security-glossary"></a>A (Glosario de seguridad)
 
@@ -30,7 +30,7 @@ Vea también descriptor [*de seguridad*](s-gly.md) y descriptor de seguridad [*a
 <span id="_security_abstract_syntax_notation_one_gly"></span><span id="_SECURITY_ABSTRACT_SYNTAX_NOTATION_ONE_GLY"></span>**Abstract Syntax Notation One**
 </dt> <dd>
 
-(ASN.1) Método que se usa para especificar objetos abstractos destinados a la transmisión en serie.
+(ASN.1) Método que se usa para especificar objetos abstractos que están diseñados para la transmisión en serie.
 
 </dd> <dt>
 
@@ -46,7 +46,7 @@ Blob de clave que contiene la clave del cifrado simétrico utilizado para cifrar
 
 (ACE) Entrada en una lista de control de acceso (ACL). Una ACE contiene un conjunto de derechos de acceso y un identificador de seguridad (SID) que identifica a un administrador de confianza para el que se permiten, deniegan o auditan los derechos.
 
-Consulte también lista *de control de acceso,* [*identificador de*](s-gly.md)seguridad y administrador [*de confianza.*](t-gly.md)
+Consulte también la *lista de control de acceso,* el identificador [*de*](s-gly.md)seguridad y el administrador [*de confianza.*](t-gly.md)
 
 </dd> <dt>
 
@@ -77,14 +77,14 @@ Consulte también [*token de suplantación, token*](i-gly.md) [*principal,*](p-g
 
 </dd> <dt>
 
-<span id="_security_ace_gly"></span><span id="_SECURITY_ACE_GLY"></span>**as**
+<span id="_security_ace_gly"></span><span id="_SECURITY_ACE_GLY"></span>**AS**
 </dt> <dd>
 
 Consulte la *entrada de control de acceso*.
 
 </dd> <dt>
 
-<span id="_security_acl_gly"></span><span id="_SECURITY_ACL_GLY"></span>**Acl**
+<span id="_security_acl_gly"></span><span id="_SECURITY_ACL_GLY"></span>**ACL**
 </dt> <dd>
 
 Consulte la *lista de control de acceso*.
@@ -156,7 +156,7 @@ Vea *Abstract Syntax Notation One*.
 
 </dd> <dt>
 
-<span id="_security_ascii_gly"></span><span id="_SECURITY_ASCII_GLY"></span>**Ascii**
+<span id="_security_ascii_gly"></span><span id="_SECURITY_ASCII_GLY"></span>**ASCII**
 </dt> <dd>
 
 American Standard Code for Information Interchange. Esquema de codificación que asigna valores numéricos a letras, números, signos de puntuación y otros caracteres.
@@ -166,14 +166,14 @@ American Standard Code for Information Interchange. Esquema de codificación que
 <span id="_security_asymmetric_algorithm_gly"></span><span id="_SECURITY_ASYMMETRIC_ALGORITHM_GLY"></span>**algoritmo asimétrico**
 </dt> <dd>
 
-Vea [*el algoritmo de clave pública*](p-gly.md).
+Vea el [*algoritmo de clave pública*](p-gly.md).
 
 </dd> <dt>
 
 <span id="_security_asymmetric_key_gly"></span><span id="_SECURITY_ASYMMETRIC_KEY_GLY"></span>**clave asimétrica**
 </dt> <dd>
 
-Una de un par de claves usadas con un algoritmo criptográfico asimétrico. Este algoritmo usa dos claves criptográficas: una "clave pública" para el cifrado y una "clave privada" para el descifrado. En la firma y la comprobación, los roles se invierten: la clave pública se usa para la comprobación y la clave privada para la generación de firmas. La característica más importante de estos algoritmos es que su seguridad no depende de mantener el secreto de clave pública (aunque puede requerir cierta garantía de autenticidad de las claves públicas, por ejemplo, que se obtienen de un origen de confianza). Se requiere confidencialidad de la clave privada. Algunos ejemplos de algoritmos de clave pública son el algoritmo de firma [*digital (DSA),*](d-gly.md)el algoritmo de firma digital de curva elíptica (ECDSA) y la familia de algoritmosZierst-Shamir-Adleman (RSA).
+Una de un par de claves usadas con un algoritmo criptográfico asimétrico. Este algoritmo usa dos claves criptográficas: una "clave pública" para el cifrado y una "clave privada" para el descifrado. En la firma y la comprobación, los roles se invierten: la clave pública se usa para la comprobación y la clave privada se usa para la generación de firmas. La característica más importante de estos algoritmos es que su seguridad no depende de mantener el secreto de clave pública (aunque puede requerir cierta garantía de autenticidad de las claves públicas, por ejemplo, que se obtienen de un origen de confianza). Se requiere confidencialidad de la clave privada. Algunos ejemplos de algoritmos de clave pública son el algoritmo de firma [*digital (DSA),*](d-gly.md)el algoritmo de firma digital de curva elíptica (ECDSA) y la familia de algoritmosZierst-Shamir-Adleman (RSA).
 
 </dd> <dt>
 

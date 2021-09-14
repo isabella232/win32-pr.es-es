@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cbd1c1ad8d2e75e886252147f4675bfa9ff901fe042a3b49a28a2a96ab2955a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae6d36c9077665a95512bc5374a35275e690f903
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118340046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068445"
 ---
 # <a name="editboxborder"></a>EDITBOX.border
 
@@ -31,7 +31,7 @@ El **atributo** border especifica o recupera un valor que indica si el control d
 
 Este atributo es un **valor booleano** especificado en tiempo de diseño y de solo lectura a partir de entonces. Tiene un valor predeterminado de true.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El borde aparece como un borde de dos píxeles alrededor del control de cuadro de edición con colores del sistema.
 
@@ -39,9 +39,9 @@ El borde aparece como un borde de dos píxeles alrededor del control de cuadro d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 

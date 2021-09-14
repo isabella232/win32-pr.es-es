@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Novedades de WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bec41c28985090368e9f16e0f75c663ca2b811db44ece6e930e04bb1dd2c8c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e60c096cf72fe3ee48559c95b6ba643fa46b1f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117921245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063907"
 ---
 # <a name="whats-new-in-wmi"></a>Novedades de WMI
 
 ## <a name="new-security-feature-in-windows-7"></a>Nueva característica de seguridad en Windows 7
 
-A continuación se muestra la nueva Windows de seguridad de Instrumental de administración de administración de recursos (WMI) que está disponible en Windows 7.
+A continuación se muestra la nueva Windows de seguridad de Instrumental de administración de recursos (WMI) que está disponible en Windows 7.
 
 <dl> <dt>
 

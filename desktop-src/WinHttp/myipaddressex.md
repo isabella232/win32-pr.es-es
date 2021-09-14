@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5db6107c061c845113e91590dab405bdd84cb4741f766abfeef6a1344652f115
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88c205dbd5ce071a809cf87f4f97bb6d42120dcb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117744167"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068322"
 ---
 # <a name="myipaddressex-function"></a>Función myIPAddressEx
 
@@ -31,7 +31,7 @@ Esta función no tiene parámetros.
 
 Cadena delimitada por punto y coma que contiene todas las direcciones IP de localhost (IPv6 o IPv4) o una cadena vacía si no se puede resolver localhost en una dirección IP.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los implementadores FindProxyforURLEx deben agregar código que divide la cadena de direcciones IP delimitadas por punto y coma en direcciones independientes.
 

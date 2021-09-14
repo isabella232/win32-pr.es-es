@@ -1,6 +1,6 @@
 ---
 title: elemento map (PatternMapType)
-description: Define las expresiones regulares utilizadas para buscar una cadena correspondiente en la cadena del mensaje y modificarla.
+description: Define las expresiones regulares usadas para buscar una cadena que coincida en la cadena del mensaje y modificarla.
 ms.assetid: e518fa42-d4b4-43ea-a23f-eec7df65eb0e
 keywords:
 - elemento map EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e6a3ccca0495516e088b7f3924f5a1ee8d6ab44e65608074cba10c122f34c3c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a17ca6e35f4ba19e8417ad9dad1d2f7f1a227bae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119136368"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068529"
 ---
 # <a name="map-patternmaptype-element"></a>elemento map (PatternMapType)
 
-Define las expresiones regulares utilizadas para buscar una cadena correspondiente en la cadena del mensaje y modificarla.
+Define las expresiones regulares usadas para buscar una cadena que coincida en la cadena del mensaje y modificarla.
 
 ``` syntax
 <xs:element name="map"
@@ -30,7 +30,7 @@ Define las expresiones regulares utilizadas para buscar una cadena correspondien
  />
 ```
 
-El **elemento map** se define mediante el tipo complejo [**PatternMapType.**](eventmanifestschema-patternmaptype-complextype.md)
+El **tipo** complejo [**PatternMapType**](eventmanifestschema-patternmaptype-complextype.md) define el elemento map.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ El **elemento map** se define mediante el tipo complejo [**PatternMapType.**](ev
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

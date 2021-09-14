@@ -4,12 +4,12 @@ ms.assetid: 56fa28d8-3b3a-4cd5-8448-c8c4ce8d0b2c
 title: Cómo Conectar a un grupo del mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bb1cfd08fde0fc733873648dfae1ffb4f86b713b3ed790430686b641a893d23
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d5bb3f41342573742e634a6e7ebce283188f3ffd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118612771"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069244"
 ---
 # <a name="how-to-connect-to-a-peer-group"></a>Cómo Conectar a un grupo del mismo nivel
 

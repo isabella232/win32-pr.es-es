@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6175055be13adb4ac7e3ddca44d310f275138f1ff2f59ac1857ced9e14f1c5e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5dd0cec7e4d0d6d3223da4486d4569f8bc611e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117956154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068831"
 ---
 # <a name="systemmonitorborderstyle-property"></a>Propiedad SystemMonitor.BorderStyle
 
@@ -46,7 +46,7 @@ Puede establecer esta propiedad en uno de los valores siguientes.
 
 
 
-| Valor                                                                                                                                                                                                                                                                                                                                                                                                   | Significado                                          |
+| Value                                                                                                                                                                                                                                                                                                                                                                                                   | Significado                                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | <span id="System.Windows.Forms.FormBorderStyle.VbBSNone"></span><span id="system.windows.forms.formborderstyle.vbbsnone"></span><span id="SYSTEM.WINDOWS.FORMS.FORMBORDERSTYLE.VBBSNONE"></span><dl> <dt>**Sistema. Windows. Forms.FormBorderStyle.VbBSNone**</dt> <dt>0</dt> </dl>                     | Sin borde. Este es el valor predeterminado.<br/> |
 | <span id="System.Windows.Forms.FormBorderStyle.VbFixedSingle"></span><span id="system.windows.forms.formborderstyle.vbfixedsingle"></span><span id="SYSTEM.WINDOWS.FORMS.FORMBORDERSTYLE.VBFIXEDSINGLE"></span><dl> <dt>**Sistema. Windows. Forms.FormBorderStyle.VbFixedSingle**</dt> <dt>1</dt> </dl> | Borde fijo y único.<br/>                 |
@@ -71,7 +71,7 @@ Puede establecer esta propiedad en uno de los valores siguientes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
@@ -79,7 +79,7 @@ Puede establecer esta propiedad en uno de los valores siguientes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

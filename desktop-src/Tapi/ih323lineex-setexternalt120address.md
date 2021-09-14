@@ -4,12 +4,12 @@ ms.assetid: 094b43b9-eb15-468a-9986-86313490e1c3
 title: Método IH323LineEx::SetExternalT120Address (H323priv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8889887c396c427c28ac2906206b3e3cbbcb102daa937720b6b879472b47bbdc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 09756aaf77ba36497b3059f7e93829d7d6a57b42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119992095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068749"
 ---
 # <a name="ih323lineexsetexternalt120address-method"></a>IH323LineEx::SetExternalT120Address (método)
 
@@ -76,7 +76,7 @@ Este método puede devolver uno de estos valores.
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Header<br/>       | <dl> <dt>H323priv.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>H323priv.h</dt> </dl> |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 

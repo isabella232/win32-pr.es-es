@@ -4,14 +4,14 @@ ms.assetid: 77674a45-7133-4518-af47-a9d58392b80b
 title: LINEINITIALIZEEXOPTION_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e92a1df7c4ea88cad126dcf5b542dbbdc33704814518dbc79cdf5d6bff5da402
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 86543c367877d74562cc0af13261881b7df19982
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120073045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068741"
 ---
-# <a name="lineinitializeexoption_-constants"></a>LINEINITIALIZEEXOPTION \_ (Constantes)
+# <a name="lineinitializeexoption_-constants"></a>Constantes LINEINITIALIZEEXOPTION \_
 
 Las **constantes LINEINITIALIZEEXOPTION \_** especifican qué mecanismo de notificación de eventos se va a usar al inicializar una sesión.
 
@@ -22,7 +22,7 @@ Las **constantes LINEINITIALIZEEXOPTION \_** especifican qué mecanismo de notif
 
 
 
-La aplicación desea usar el mecanismo de notificación de eventos de seguimiento del centro de llamadas. Esta constante solo se expone a las aplicaciones que negocian una versión TAPI de 3.0 o posterior.
+La aplicación desea usar el mecanismo de notificación de eventos de seguimiento del centro de llamadas. Esta constante solo se expone a las aplicaciones que negocian una versión TAPI de 3.0 o superior.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ La aplicación desea usar el mecanismo de notificación de eventos de seguimient
 
 
 
-La aplicación desea usar el mecanismo de notificación de eventos puerto de finalización. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 2.0 o posterior.
+La aplicación desea usar el mecanismo de notificación de eventos puerto de finalización. Esta marca solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o superior.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ La aplicación desea usar el mecanismo de notificación de eventos puerto de fin
 
 
 
-La aplicación desea usar el mecanismo de notificación de eventos event handle. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 2.0 o posterior.
+La aplicación desea usar el mecanismo de notificación de eventos event handle. Esta marca solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o superior.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,23 +52,23 @@ La aplicación desea usar el mecanismo de notificación de eventos event handle.
 
 
 
-La aplicación desea usar el mecanismo de notificación de eventos de ventana oculta. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 2.0 o posterior.
+La aplicación desea usar el mecanismo de notificación de eventos ventana oculta. Esta marca solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o superior.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Consulte [**lineInitializeEx para**](/windows/desktop/api/Tapi/nf-tapi-lineinitializeexa) obtener más información sobre el funcionamiento de estas opciones.
+Consulte [**lineInitializeEx para**](/windows/desktop/api/Tapi/nf-tapi-lineinitializeexa) obtener más detalles sobre el funcionamiento de estas opciones.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

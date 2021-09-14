@@ -16,12 +16,12 @@ keywords:
 - DDE (datos dinámicos Exchange),items
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad3a279e02b65d5540e5494512a44eefdfecdb18607cb12731cf7daa0d8569de
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9fe20c4dedc38303fe9bcb9c4b0fae42d03ee536
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119953675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063878"
 ---
 # <a name="using-dynamic-data-exchange"></a>Uso de datos dinámicos Exchange
 
@@ -75,7 +75,7 @@ En el ejemplo siguiente se muestra cómo el cliente inicia una conversación, do
 
  
 
-La aplicación cliente envía un [**mensaje \_ WM DDE \_ INITIATE**](wm-dde-initiate.md) con estos dos átomos en el *parámetro lParam* del mensaje. En la llamada a la [**función SendMessage,**](/windows/desktop/api/winuser/nf-winuser-sendmessage) el identificador de ventana especial –1 indica al sistema que envíe este mensaje a todas las demás aplicaciones activas. **SendMessage** no vuelve a la aplicación cliente hasta que todas las aplicaciones que reciben el mensaje han devuelto, a su vez, el control al sistema. Esto significa que se garantiza que el cliente procesó todos los mensajes wm [**\_ DDE \_ ACK**](wm-dde-ack.md) enviados en respuesta por las aplicaciones de servidor en el momento en que se ha devuelto la llamada **a SendMessage.**
+La aplicación cliente envía un [**mensaje \_ WM DDE \_ INITIATE**](wm-dde-initiate.md) con estos dos átomos en el *parámetro lParam* del mensaje. En la llamada a la [**función SendMessage,**](/windows/desktop/api/winuser/nf-winuser-sendmessage) el identificador de ventana especial –1 indica al sistema que envíe este mensaje a todas las demás aplicaciones activas. **SendMessage** no vuelve a la aplicación cliente hasta que todas las aplicaciones que reciben el mensaje han devuelto, a su vez, el control al sistema. Esto significa que se garantiza que el cliente procesó todos los mensajes [**\_ DDE \_ ACK**](wm-dde-ack.md) de WM enviados en respuesta por las aplicaciones de servidor en el momento en que se ha devuelto la llamada a **SendMessage.**
 
 Una [**vez que sendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) devuelve un valor, la aplicación cliente elimina los átomos globales.
 
@@ -403,7 +403,7 @@ En este ejemplo, el servidor llama [**a GlobalGetAtomName**](/windows/desktop/ap
 
 Si un servidor envía una confirmación negativa en respuesta a un mensaje [**\_ WM DDE \_ RADIUSE,**](wm-dde-poke.md) el cliente es responsable de liberar la memoria (pero no el parámetro *lParam)* a la que hace referencia el mensaje **WM \_ DDE \_ VMME** asociado a la confirmación negativa.
 
-## <a name="establishing-a-permanent-data-link"></a>Establecer un vínculo de datos permanente
+## <a name="establishing-a-permanent-data-link"></a>Establecimiento de un vínculo de datos permanente
 
 Una aplicación cliente puede usar DDE para establecer un vínculo a un elemento en una aplicación de servidor. Una vez establecido este vínculo, el servidor envía actualizaciones periódicas del elemento vinculado al cliente, normalmente, cada vez que cambia el valor del elemento. Por lo tanto, se establece un flujo de datos permanente entre las dos aplicaciones. este flujo de datos permanece en su lugar hasta que se desconecta explícitamente.
 
@@ -459,13 +459,13 @@ En general, las aplicaciones cliente no deben intentar establecer más de un ví
 
 ### <a name="initiating-a-data-link-with-the-paste-link-command"></a>Iniciar un vínculo de datos con el comando Pegar vínculo
 
-Las aplicaciones que admiten vínculos de datos en caliente o en caliente normalmente admiten un formato registrado del Portapapeles denominado Link. Cuando se asocia a los comandos Copiar y pegar vínculo de la aplicación, este formato del Portapapeles permite al usuario establecer conversaciones de DDE entre aplicaciones simplemente copiando un elemento de datos en la aplicación de servidor y pegando en la aplicación cliente.
+Las aplicaciones que admiten vínculos de datos en caliente o en caliente normalmente admiten un formato registrado del Portapapeles denominado Link. Cuando se asocia a los comandos Copiar y Pegar vínculo de la aplicación, este formato del Portapapeles permite al usuario establecer conversaciones de DDE entre aplicaciones simplemente copiando un elemento de datos en la aplicación de servidor y pegando en la aplicación cliente.
 
 Una aplicación de servidor admite el formato del Portapapeles Vincular colocando en el Portapapeles  una cadena que contiene los nombres de aplicación, tema y elemento cuando el usuario elige el comando Copiar en el **menú** Editar. A continuación se muestra el formato de vínculo estándar:
 
 *aplicación***\\ 0**_tema_*_\\ 0 elemento_**_\\ 0 \\ 0_*
 
-Un único carácter nulo separa los nombres y dos caracteres NULL finalizan toda la cadena.
+Un único carácter null separa los nombres y dos caracteres NULL finalizan toda la cadena.
 
 Tanto las aplicaciones cliente como las aplicaciones de servidor deben registrar el formato del Portapapeles De vínculo, como se muestra a continuación:
 
@@ -599,7 +599,7 @@ En este ejemplo, la aplicación cliente abre el Portapapeles y determina si cont
 
 Una vez que la aplicación cliente recupera un puntero a los datos del Portapapeles, analiza los datos para extraer los nombres de aplicación, tema y elemento.
 
-La aplicación cliente determina si ya existe una conversación sobre el tema entre ella y la aplicación de servidor. Si existe una conversación, el cliente comprueba si ya existe un vínculo para el elemento de datos. Si existe este tipo de vínculo, el cliente muestra un cuadro de mensaje al usuario; de lo contrario, llama a su propia *función SendAdvise* para enviar un mensaje [**DE WM \_ DDE \_ ADVISE**](wm-dde-advise.md) al servidor para el elemento.
+La aplicación cliente determina si ya existe una conversación sobre el tema entre ella y la aplicación de servidor. Si existe una conversación, el cliente comprueba si ya existe un vínculo para el elemento de datos. Si existe un vínculo de este tipo, el cliente muestra un cuadro de mensaje al usuario; de lo contrario, llama a su propia *función SendAdvise* para enviar un mensaje [**DE WM \_ DDE \_ ADVISE**](wm-dde-advise.md) al servidor para el elemento.
 
 Si aún no existe una conversación sobre el tema entre el cliente y el servidor, el cliente llama primero a su propia función *SendInitiate* para difundir el mensaje [**WM \_ DDE \_ INITIATE**](wm-dde-initiate.md) para solicitar una conversación y, en segundo lugar, llama a su propia función *FindServerGivenAppTopic* para establecer la conversación con la ventana que responde en nombre de la aplicación de servidor. Una vez iniciada la conversación, la aplicación cliente llama a *SendAdvise* para solicitar el vínculo.
 
@@ -772,7 +772,7 @@ if (!PostMessage(hwndServerDDE,
 
 
 
-En este ejemplo, el servidor intenta llevar a cabo la cadena de comando especificada. Si se realiza correctamente, el servidor envía al cliente un mensaje [**\_ DDE \_ ACK**](wm-dde-ack.md) de WM positivo; de lo contrario, envía un mensaje **\_ DDE \_ ACK** de WM negativo. Este **mensaje \_ DDE \_ ACK** de WM reutiliza el *identificador hCommand* pasado en el [**mensaje WM \_ DDE \_ EXECUTE**](wm-dde-execute.md) original.
+En este ejemplo, el servidor intenta llevar a cabo la cadena de comando especificada. Si se realiza correctamente, el servidor envía al cliente un mensaje [**\_ DDE \_ ACK**](wm-dde-ack.md) de WM positivo; de lo contrario, envía un mensaje DCK de **WM \_ DDE \_** negativo. Este **mensaje \_ DDE \_ ACK** de WM reutiliza el *identificador hCommand* pasado en el [**mensaje WM \_ DDE \_ EXECUTE**](wm-dde-execute.md) original.
 
 Si la cadena de ejecución de comandos del cliente solicita que finalice el servidor, el servidor debe responder mediante el envío de un mensaje DCK de WM DDE positivo y, a continuación, publicar un mensaje WM [**\_ \_ DDE**](wm-dde-ack.md) [**\_ \_ TERMINATE**](wm-dde-terminate.md) antes de finalizar. Todos los demás comandos enviados con un mensaje EXECUTE de [**\_ WM DDE \_**](wm-dde-execute.md) se deben ejecutar sincrónicamente; es decir, el servidor debe enviar un mensaje WM **\_ DDE \_ ACK** solo después de completar correctamente el comando.
 

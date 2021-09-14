@@ -4,16 +4,16 @@ ms.assetid: 5608f84f-9211-4043-bb53-60339191ee29
 title: Uso de listas vinculadas de Singly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fa3a99202637e7d7b0b64f964ca1452244d72f02d99770bcdc6cbe368d960be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95af2e8da519026731bf6fc461b193978d179cd8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117765019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068903"
 ---
 # <a name="using-singly-linked-lists"></a>Uso de listas vinculadas de Singly
 
-En el ejemplo siguiente se usa la [](interlocked-singly-linked-lists.md) [**función InitializeSListHead**](/windows/win32/api/interlockedapi/nf-interlockedapi-initializeslisthead) para inicializar una lista vinculada individualmente y la función [**InterlockedPushEntrySList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedpushentryslist) para insertar 10 elementos. En el ejemplo se usa la función [**InterlockedPopEntrySList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedpopentryslist) para quitar 10 elementos y la [**función InterlockedFlushSList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedflushslist) para comprobar que la lista está vacía.
+En el ejemplo siguiente se usa la [](interlocked-singly-linked-lists.md) [**función InitializeSListHead**](/windows/win32/api/interlockedapi/nf-interlockedapi-initializeslisthead) para inicializar una lista vinculada individualmente y la función [**InterlockedPushEntrySList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedpushentryslist) para insertar 10 elementos. En el ejemplo se usa la función [**InterlockedPopEntrySList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedpopentryslist) para quitar 10 elementos y la función [**InterlockedFlushSList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedflushslist) para comprobar que la lista está vacía.
 
 
 ```C++

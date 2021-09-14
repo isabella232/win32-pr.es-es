@@ -1,25 +1,25 @@
 ---
-title: Buscar texto para números de códigos de error
-description: A veces es necesario mostrar el texto de error asociado a los códigos de error devueltos por las funciones relacionadas con redes. Es posible que tenga que realizar esta tarea con las funciones de administración de red proporcionadas por el sistema.
+title: Buscar texto en busca de números de código de error
+description: A veces es necesario mostrar el texto de error asociado a los códigos de error devueltos por las funciones relacionadas con la red. Es posible que tenga que realizar esta tarea con las funciones de administración de red proporcionadas por el sistema.
 ms.assetid: 90ed87ca-7a08-4a66-b06a-e1bf668fb81a
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ea0811c2b2da283a9cd5eb776cdb33a175c63491
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105685732"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069400"
 ---
-# <a name="looking-up-text-for-error-code-numbers"></a>Buscar texto para números de códigos de error
+# <a name="looking-up-text-for-error-code-numbers"></a>Buscar texto en busca de números de código de error
 
-A veces es necesario mostrar el texto de error asociado a los códigos de error devueltos por las funciones relacionadas con redes. Es posible que tenga que realizar esta tarea con las funciones de administración de red proporcionadas por el sistema.
+A veces es necesario mostrar el texto de error asociado a los códigos de error devueltos por las funciones relacionadas con la red. Es posible que tenga que realizar esta tarea con las funciones de administración de red proporcionadas por el sistema.
 
-El texto de error de estos mensajes se encuentra en el archivo de tabla de mensajes denominado Netmsg.dll, que se encuentra en% systemroot% \\ system32. Este archivo contiene mensajes de error en el intervalo NERR \_ base (2100) hasta el máximo \_ NERR (NERR \_ base + 899). Estos códigos de error se definen en el archivo de encabezado del SDK lmerr. h.
+El texto de error de estos mensajes se encuentra en el archivo de tabla de mensajes denominado Netmsg.dll, que se encuentra en %systemroot% \\ system32. Este archivo contiene mensajes de error en el intervalo NERR \_ BASE (2100) a MAX \_ NERR(NERR \_ BASE+899). Estos códigos de error se definen en el archivo de encabezado del SDK lmerr.h.
 
-Las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**LoadLibraryEx**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) pueden cargar Netmsg.dll. La función [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) asigna un código de error al texto del mensaje, dado un identificador de módulo para el archivo de Netmsg.dll.
+Las [**funciones LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y LoadLibraryEx**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) pueden cargar Netmsg.dll. La [**función FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) asigna un código de error al texto del mensaje, dado un identificador de módulo al Netmsg.dll archivo.
 
-En el ejemplo siguiente se muestra cómo mostrar el texto de error asociado a las funciones de administración de red, además de mostrar el texto de error asociado a los códigos de error relacionados con el sistema. Si el número de error proporcionado está en un intervalo específico, el módulo de mensajes de netmsg.dll se carga y se utiliza para buscar el número de error especificado con la función [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) .
+En el ejemplo siguiente se muestra cómo mostrar el texto de error asociado a las funciones de administración de red, además de mostrar el texto de error asociado a códigos de error relacionados con el sistema. Si el número de error proporcionado está en un intervalo específico, se carga el módulo de mensaje netmsg.dll y se usa para buscar el número de error especificado con la [**función FormatMessage.**](/windows/desktop/api/winbase/nf-winbase-formatmessage)
 
 
 ```C++
@@ -135,6 +135,6 @@ C:\> netmsg 2453
 Could not find domain controller for this domain
 ```
 
- 
+ 
 
- 
+ 

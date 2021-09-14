@@ -1,19 +1,19 @@
 ---
-description: La API de distribución del mismo nivel, que admite la característica de caché de ramas en Windows 7, Windows Server 2008 R2, Windows 8 y Windows Server 2012 ofrece un conjunto de API de plataforma que pueden aumentar la capacidad de respuesta de la red de las aplicaciones centralizadas cuando se accede desde oficinas remotas y ayudar a reducir el uso general de la red de área extensa (WAN) sin interferir con las tecnologías de seguridad de red.
+description: La API de distribución del mismo nivel, que admite la característica de caché de rama en Windows 7, Windows Server 2008 R2, Windows 8 y Windows Server 2012 ofrece un conjunto de API de plataforma que pueden aumentar la capacidad de respuesta de la red de las aplicaciones centralizadas cuando se accede desde oficinas remotas y ayudar a reducir el uso general de la red de área extensa (WAN) sin interferir con las tecnologías de seguridad de red.
 ms.assetid: feb9666e-563a-49f4-ad1c-f166a0faff31
 title: Acerca de la distribución del mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11085b38819f8b102f71f59294924c7c6e079881c8af87f77923351ff424f959
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c996aed35ac691284ba61b757d6ff5a88033aad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119553485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069256"
 ---
 # <a name="about-peer-distribution"></a>Acerca de la distribución del mismo nivel
 
-La API de distribución del mismo nivel, que admite la característica de caché de ramas en Windows 7, Windows Server 2008 R2, Windows 8 y Windows Server 2012 ofrece un conjunto de API de plataforma que pueden aumentar la capacidad de respuesta de la red de las aplicaciones centralizadas cuando se accede desde oficinas remotas y ayudar a reducir el uso general de la red de área extensa (WAN) sin interferir con las tecnologías de seguridad de red.
+La API de distribución del mismo nivel, que admite la característica de caché de rama en Windows 7, Windows Server 2008 R2, Windows 8 y Windows Server 2012 ofrece un conjunto de API de plataforma que pueden aumentar la capacidad de respuesta de la red de las aplicaciones centralizadas cuando se accede desde oficinas remotas y ayudar a reducir el uso general de la red de área extensa (WAN) sin interferir con las tecnologías de seguridad de red.
 
 El sistema de distribución del mismo nivel ofrece un conjunto de API de plataforma que usan los publicadores que proporcionan contenido digital y los consumidores que lo solicitan. Para diferenciar fácilmente estos roles, puede ser más fácil pensar en el publicador en un rol de servidor y en el consumidor en un rol de cliente. Además, es importante recordar que, aparte de estos roles conceptuales, el servicio de distribución del mismo nivel es un verdadero sistema del mismo nivel, como se indica en la capacidad de cualquier nodo de distribución del mismo nivel de publicar y consumir contenido digital. Las API de la plataforma de distribución del mismo nivel se exponen a publicadores y consumidores mediante una biblioteca de importación de Win32 **(PeerDist.Lib**).
 
@@ -33,7 +33,7 @@ El ciclo de vida del contenido proporcionado por un publicador y recuperado por 
 
 ## <a name="asynchronous-completions"></a>Finalizaciones asincrónicas
 
-La API de distribución del mismo nivel admite un modelo de API asincrónico y, como resultado, las API de distribución del mismo nivel permiten el uso de puertos o eventos de finalización de E/S como mecanismos de señalización para procesar finalizaciones asincrónicas de operaciones de distribución del mismo nivel. Para cualquiera de los mecanismos, distribución del mismo nivel usa [**una estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) En general, distribución del mismo nivel toma la propiedad de una estructura **OVERLAPPED** y los parámetros out que el cliente pasa a las funciones de API asincrónicas. El cliente no debe tener acceso a estos recursos hasta que se complete la función asincrónica concreta. Tan pronto como se completen las funciones asincrónicas, el servicio de distribución del mismo nivel ya no requerirá acceso a estos recursos y se pueden reutilizar según la aplicación que realiza la llamada.
+La API de distribución del mismo nivel admite un modelo de API asincrónico y, como resultado, las API de distribución del mismo nivel permiten el uso de puertos o eventos de finalización de E/S como mecanismos de señalización para procesar finalizaciones asincrónicas de operaciones de distribución del mismo nivel. Para cualquiera de los mecanismos, distribución del mismo nivel usa [**una estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) En general, distribución del mismo nivel toma la propiedad de una estructura **OVERLAPPED** y los parámetros out que el cliente pasa a las funciones de API asincrónicas. El cliente no debe tener acceso a estos recursos hasta que se complete la función asincrónica concreta. En cuanto se completen las funciones asincrónicas, el servicio de distribución del mismo nivel ya no necesitará acceso a estos recursos y se pueden reutilizar según la aplicación que realiza la llamada.
 
 No habrá ninguna finalización asincrónica si la función devuelve cualquier código de error distinto de **ERROR \_ E/S \_ PENDIENTE.** La devolución de un valor distinto de **ERROR \_ IO \_ PENDING** significa que la llamada ha producido un error sincrónicamente. Si la API de distribución del mismo nivel devuelve **ERROR \_ \_ E/S PENDIENTE,** el autor de la llamada debe esperar a la finalización asincrónica.
 

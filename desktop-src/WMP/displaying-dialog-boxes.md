@@ -6,18 +6,18 @@ keywords:
 - Reproductor de Windows Media en línea, mostrar cuadros de diálogo
 - tiendas en línea, mostrar cuadros de diálogo
 - tiendas en línea de tipo 1, mostrar cuadros de diálogo
-- Reproductor de Windows Media en línea, cuadros de diálogo
+- Reproductor de Windows Media en línea,cuadros de diálogo
 - tiendas en línea, cuadros de diálogo
 - tiendas en línea de tipo 1, cuadros de diálogo
 - mostrar cuadros de diálogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00e71d177e7675822b1f2704bf62776e598c2e817d583020b0df962347dac4f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ebe008a6c3eac872edea497dc9d50da408aa7eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068450"
 ---
 # <a name="displaying-dialog-boxes"></a>Mostrar cuadros de diálogo
 

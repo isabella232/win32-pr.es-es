@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: c4a77c0e5687319bbea438127ce9c30b27ff3122f42359237df5d4cd158b1393
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f315629c810027e18dac3a337c126f4a4a4bcce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119004353"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068981"
 ---
 # <a name="protectkeywithtpmandpinandstartupkey-method-of-the-win32_encryptablevolume-class"></a>Método ProtectKeyWithTPMAndPINAndStartupKey de la clase EncryptableVolume de Win32 \_
 
@@ -148,12 +148,12 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 | Código o valor devuelto                                                                                                                                                                                | Descripción                                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl>                                                | Método realizado correctamente.<br/>                                                                                                                                                                                                                                             |
-| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>2147942487 (0x80070057)</dt> </dl>                        | Se proporciona el parámetro *PlatformValidationProfile,* pero sus valores no están dentro del intervalo conocido o no coincide con la configuración de directiva de grupo que está actualmente en vigor.<br/> Se proporciona el parámetro *ExternalKey,* pero no es una matriz de tamaño 32.<br/> |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>2147942487 (0x80070057)</dt> </dl>                        | Se proporciona el parámetro *PlatformValidationProfile,* pero sus valores no están dentro del intervalo conocido o no coinciden con la configuración de directiva de grupo que está actualmente en vigor.<br/> Se proporciona el parámetro *ExternalKey,* pero no es una matriz de tamaño 32.<br/> |
 | <dl> <dt>**FVE \_ E \_ BOOTABLE \_ CDDVD**</dt> <dt>2150694960 (0x80310030)</dt> </dl>              | En este equipo se encuentra un CD/DVD de arranque. Quite el CD/DVD y reinicie el equipo.<br/>                                                                                                                                                                               |
-| <dl> <dt>**FVE \_ E \_ FOREIGN \_ VOLUME 2150694947**</dt> <dt>(0x80310023)</dt> </dl>              | El TPM no puede proteger la clave de cifrado del volumen porque el volumen no contiene el sistema operativo que se está ejecutando actualmente.<br/>                                                                                                                                          |
-| <dl> <dt>**FVE \_ E \_ CARACTERES DE PIN NO \_ \_ VÁLIDOs**</dt> 2150695066 <dt>(0x8031009A)</dt> </dl>          | El *parámetro NewPIN* contiene caracteres que no son válidos. Cuando la opción "Permitir PIN mejorados para el inicio" directiva de grupo está deshabilitada, solo se admiten números.<br/>                                                                                                        |
-| <dl> <dt>**FVE \_ E \_ LOCKED \_ VOLUME 2150694912**</dt> <dt>(0x80310000)</dt> </dl>               | El volumen está bloqueado.<br/>                                                                                                                                                                                                                                                  |
-| <dl> <dt>**FVE \_ E \_ POLICY INVALID PIN LENGTH \_ \_ \_ 2150695016**</dt> <dt>(0x80310068)</dt> </dl> | El *parámetro NewPIN* proporcionado tiene más de 20 caracteres, menos de 4 caracteres o menor que la longitud mínima especificada por directiva de grupo.<br/>                                                                                                          |
+| <dl> <dt>**FVE \_ E \_ FOREIGN \_ VOLUME**</dt> <dt>2150694947 (0x80310023)</dt> </dl>              | El TPM no puede proteger la clave de cifrado del volumen porque el volumen no contiene el sistema operativo que se está ejecutando actualmente.<br/>                                                                                                                                          |
+| <dl> <dt>**FVE \_ E \_ PIN \_ \_ CHARS NO VÁLIDOs**</dt> <dt>2150695066 (0x8031009A)</dt> </dl>          | El *parámetro NewPIN* contiene caracteres que no son válidos. Cuando la opción "Permitir PIN mejorados para el inicio" directiva de grupo deshabilita, solo se admiten números.<br/>                                                                                                        |
+| <dl> <dt>**FVE \_ E \_ LOCKED \_ VOLUME**</dt> <dt>2150694912 (0x80310000)</dt> </dl>               | El volumen está bloqueado.<br/>                                                                                                                                                                                                                                                  |
+| <dl> <dt>**FVE \_ E \_ POLICY INVALID PIN \_ \_ \_ LENGTH**</dt> <dt>2150695016 (0x80310068)</dt> </dl> | El *parámetro NewPIN* proporcionado tiene más de 20 caracteres, menos de 4 caracteres o más corto que la longitud mínima especificada por directiva de grupo.<br/>                                                                                                          |
 | <dl> <dt>**FVE \_ E \_ PROTECTOR \_ EXISTS**</dt> <dt>2150694961 (0x80310031)</dt> </dl>            | Ya existe un protector de clave de este tipo.<br/>                                                                                                                                                                                                                           |
 | <dl> <dt>**TBS \_ E \_ SERVICE \_ NOT \_ RUNNING**</dt> <dt>2150121480 (0x80284008)</dt> </dl>        | No se encuentra ningún TPM compatible en este equipo.<br/>                                                                                                                                                                                                                           |
 
@@ -161,15 +161,15 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Como máximo, puede existir un protector de clave de tipo "TPM y PIN y clave de inicio" para un volumen en cualquier momento. Si desea cambiar el nombre para mostrar o el perfil de validación de plataforma usado por un protector de clave existente "TPM y PIN y clave de inicio", primero debe quitar el protector de clave existente y, a continuación, llamar a **ProtectKeyWithTPMAndPINAndStartupKey para** crear uno nuevo.
+Como máximo, puede existir un protector de clave de tipo "TPM y PIN y clave de inicio" para un volumen en cualquier momento. Si desea cambiar el nombre para mostrar o el perfil de validación de plataforma que usa un protector de clave "TPM y PIN y clave de inicio" existente, primero debe quitar el protector de clave existente y, a continuación, llamar a **ProtectKeyWithTPMAndPINAndStartupKey para** crear uno nuevo.
 
-Se deben especificar protectores de clave adicionales para desbloquear el volumen en escenarios de recuperación en los que no se puede obtener acceso a la clave de cifrado del volumen. por ejemplo, cuando el TPM no puede validar correctamente con el perfil de validación de la plataforma o cuando se pierde el PIN. Use [**ProtectKeyWithExternalKey**](protectkeywithexternalkey-win32-encryptablevolume.md) o [**ProtectKeyWithNumericalPassword**](protectkeywithnumericalpassword-win32-encryptablevolume.md) para crear uno o varios protectores de clave para recuperar un volumen bloqueado de otro modo.
+Se deben especificar protectores de clave adicionales para desbloquear el volumen en escenarios de recuperación en los que no se puede obtener acceso a la clave de cifrado del volumen; por ejemplo, cuando el TPM no se puede validar correctamente con el perfil de validación de la plataforma o cuando se pierde el PIN. Use [**ProtectKeyWithExternalKey**](protectkeywithexternalkey-win32-encryptablevolume.md) o [**ProtectKeyWithNumericalPassword**](protectkeywithnumericalpassword-win32-encryptablevolume.md) para crear uno o varios protectores de clave para recuperar un volumen bloqueado de otro modo.
 
-Aunque es posible tener un protector de clave del tipo "TPM" y otro del tipo "TPM y PIN y clave de inicio", la presencia del tipo de protector de clave "TPM" nega los efectos de otros protectores de clave basados en TPM.
+Aunque es posible tener un protector de clave del tipo "TPM" y otro del tipo "TPM y PIN y clave de inicio", la presencia del tipo de protector de clave "TPM" niega los efectos de otros protectores de clave basados en TPM.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -177,14 +177,14 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Enterprise con SP1, Windows Vista Ultimate solo con aplicaciones de escritorio sp1 \[\]<br/>     |
+| Cliente mínimo compatible<br/> | Windows Vista Enterprise con SP1, Windows Vista Ultimate solo con aplicaciones de escritorio de SP1 \[\]<br/>     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

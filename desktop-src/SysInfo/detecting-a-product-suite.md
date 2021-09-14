@@ -1,21 +1,21 @@
 ---
-description: En el ejemplo siguiente se usa la función VerifyVersionInfo para determinar si los conjuntos de productos especificados están instalados en el equipo local.
+description: En el ejemplo siguiente se usa la función VerifyVersionInfo para determinar si los grupos de productos especificados están instalados en el equipo local.
 ms.assetid: 9f405e99-28f5-4415-a274-682b87ae6842
 title: Detección de un conjunto de productos
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 594acbe22283e1c2a3be3ce60116076b2de6f3fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068886"
 ---
 # <a name="detecting-a-product-suite"></a>Detección de un conjunto de productos
 
-En el ejemplo siguiente se usa la función [**VerifyVersionInfo**](/windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa) para determinar si los conjuntos de productos especificados están instalados en el equipo local.
+En el ejemplo siguiente se usa [**la función VerifyVersionInfo**](/windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa) para determinar si los grupos de productos especificados están instalados en el equipo local.
 
-En este ejemplo se usa la \_ marca ver y. Si se especifican dos marcas en la máscara de conjunto, la función devuelve **true** solo si ambos conjuntos de productos están presentes. Si el ejemplo se ha cambiado para usar la \_ marca ver o, [**VerifyVersionInfo**](/windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa) devolvería **true** si algún conjunto de productos estuviera presente.
+En este ejemplo se usa la \_ marca VER AND. Si se especifican dos marcas en la máscara del conjunto de datos, la función devuelve **TRUE** solo si ambos conjuntos de productos están presentes. Si se cambió el ejemplo para usar la marca VER \_ OR, [**VerifyVersionInfo**](/windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa) devolvería **TRUE** si alguno de los dos grupos de productos estuviera presente.
 
 
 ```C++

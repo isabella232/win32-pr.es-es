@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec3TransformNormal (D3DX10Math.h): transforma el vector 3D normal por la matriz dada.'
+description: 'Función D3DXVec3TransformNormal (D3DX10Math.h): transforma el vector 3D normal por la matriz especificada.'
 ms.assetid: 8068b80f-6222-4f23-8b1c-2ff5592fa898
 title: Función D3DXVec3TransformNormal (D3DX10Math.h)
 ms.topic: reference
@@ -14,11 +14,11 @@ api_type:
 api_location:
 - D3DX10Math.h
 ms.openlocfilehash: 0fc1456b89f3e11f2076a8e7b6b960d15e9c7083
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063832"
 ---
 # <a name="d3dxvec3transformnormal-function-d3dx10mathh"></a>Función D3DXVec3TransformNormal (D3DX10Math.h)
 
@@ -74,13 +74,13 @@ Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
 Puntero a una estructura D3DXVECTOR3 que es el vector transformado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función transforma el vector (pV->x, pV->y, pV->z, 0) por la matriz a la que apunta pM.
 
 Si desea transformar un normal, la matriz que pase a esta función debe ser la transponer del inverso de la matriz que se usaría para transformar un punto.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXVec3TransformNormal** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXVec3TransformNormal** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 

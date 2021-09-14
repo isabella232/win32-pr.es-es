@@ -4,12 +4,12 @@ ms.assetid: 675a34d4-7a33-4125-86af-cd4ed73ad430
 title: Novedades de DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bd05d11931d7c23a078643724b99dfed84b65e3a7db3e4ed60df9cd2a3273f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74747349848a7b370cd4766113085c84d0c7a1d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119071889"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272676"
 ---
 # <a name="whats-new-in-directshow"></a>Novedades de DirectShow
 
@@ -38,15 +38,15 @@ Reproducción de DVD: nuevas opciones para [**el método IDvdControl2::SetOption
     -   Los componentes como los descodificadores pueden acceder a DXVA 2.0 directamente sin comunicarse a través del representador de vídeo.
     -   El Administrador de dispositivos Direct3D permite que los componentes compartan el mismo dispositivo Direct3D.
 
-    Para más información sobre DXVA 2.0, consulte la documentación de [DirectX Video Acceleration 2.0,](../medfound/directx-video-acceleration-2-0.md) que forma parte de la [documentación Microsoft Media Foundation](../medfound/microsoft-media-foundation-sdk.md) vídeo.
+    Para obtener más información sobre DXVA 2.0, consulte la documentación de [DirectX Video Acceleration 2.0,](../medfound/directx-video-acceleration-2-0.md) que forma parte de la [documentación Microsoft Media Foundation](../medfound/microsoft-media-foundation-sdk.md) vídeo.
 
 -   El [**representador de**](enhanced-video-renderer-filter.md) vídeo mejorado (EVR) es un nuevo representador de vídeo eficaz, que comparte el mismo modelo de complemento que la versión Media Foundation del EVR. Para obtener más información sobre evr, consulte la [documentación Microsoft Media Foundation.](../medfound/microsoft-media-foundation-sdk.md)
--   Compatibilidad con la Windows vista Display Driver Model (WDDM). Esta característica permite que los filtros aprovechen al máximo las tarjetas de vídeo con la captura de vídeo integrada para reducir las copias innecesarias entre la memoria de vídeo y la memoria del sistema. Para obtener más información, [vea Using WDDM Capture in DirectShow](using-wddm-capture-in-directshow.md).
+-   Compatibilidad con la Windows modelo de controlador de pantalla (WDDM) de Vista. Esta característica permite que los filtros aprovechen al máximo las tarjetas de vídeo con la captura de vídeo integrada para reducir las copias innecesarias entre la memoria de vídeo y la memoria del sistema. Para obtener más información, [vea Using WDDM Capture in DirectShow](using-wddm-capture-in-directshow.md).
 -   El descodificador de audio mpeg-1 capa II ahora usa aritmética de punto flotante para mejorar la calidad de descodificación.
--   Mejoras de reproducción de DVD. Para obtener más información, [vea Mejoras de reproducción de DVD Windows Vista](dvd-playback-enhancements-in-windows-vista.md).
+-   Mejoras de reproducción de DVD. Para obtener más información, [vea Mejoras de reproducción de DVD en Windows Vista](dvd-playback-enhancements-in-windows-vista.md).
     -   Mejor compatibilidad con el modo de truco: transiciones fluidas entre tasas; transiciones entre la reproducción hacia delante y la inversa; compatibilidad con la reproducción de audio durante el avance rápido y el retroceso.
     -   Almacenamiento en caché mejorado. Las aplicaciones pueden establecer la cantidad de datos que el navegador de DVD lee de antemano. El establecimiento de una memoria caché mayor puede extender la duración de la batería y habilitar la reproducción silenciosa (después de que la unidad se desvía). Para obtener más información, vea [**DVD \_ OPTION \_ FLAG**](/windows/win32/api/strmif/ne-strmif-dvd_option_flag).
--   Dispositivos de punto de conexión de audio: las aplicaciones pueden asociar el filtro [de representador de DirectSound](directsound-renderer-filter.md) con un dispositivo de punto de conexión de audio determinado. Las aplicaciones pueden usar la API de dispositivo multimedia (MMDevice) para enumerar y seleccionar el dispositivo de punto de conexión. Para obtener más información, consulte la documentación de Core Audio API en el SDK Windows.
+-   Dispositivos de punto de conexión de audio: las aplicaciones pueden asociar el filtro [de representador de DirectSound](directsound-renderer-filter.md) con un dispositivo de punto de conexión de audio determinado. Las aplicaciones pueden usar la API de dispositivo multimedia (MMDevice) para enumerar y seleccionar el dispositivo de punto de conexión. Para más información, consulte la documentación de Core Audio API en el SDK de Windows.
 -   Los siguientes filtros se han quitado de Windows Vista:
     -   [Filtro de receptor ip de BDA](/previous-versions/windows/desktop/mstv/bda-ip-sink-filter)
     -   [Filtro de deframer BDA SLIP](/previous-versions/windows/desktop/mstv/bda-slip-deframer-filter)
@@ -56,7 +56,7 @@ Reproducción de DVD: nuevas opciones para [**el método IDvdControl2::SetOption
     -   [Filtro de analizador de películas de QuickTime](quicktime-movie-parser-filter.md)
     -   [Filtro de códec WST](wst-codec-filter.md)
     -   [Filtro de descodificador de WST](wst-decoder-filter.md)
--   El código proxy/stub para muchas de las interfaces DirectShow se ha movido de quartz.dll a proppage.dll. Este código se quitó de quartz.dll porque no estaba diseñado para su uso por las aplicaciones. Sin embargo, es útil para la depuración, ya que permite que una aplicación de prueba se conecte de forma remota a un DirectShow de filtro en otro proceso. Para usar esta característica en Windows Vista, primero debe registrar proppage.dll. Este archivo DLL está disponible en el directorio Windows herramientas del SDK. (Para obtener más información, vea [Carga de Graph desde un proceso externo).](loading-a-graph-from-an-external-process.md)
+-   El código proxy/stub para muchas de las interfaces DirectShow se ha movido de quartz.dll a proppage.dll. Este código se quitó de quartz.dll porque no estaba pensado para su uso por las aplicaciones. Sin embargo, es útil para la depuración, ya que permite que una aplicación de prueba se conecte de forma remota a un DirectShow de filtro en otro proceso. Para usar esta característica en Windows Vista, primero debe registrar proppage.dll. Este archivo DLL está disponible en el directorio Windows herramientas del SDK. (Para obtener más información, vea [Carga de Graph desde un proceso externo).](loading-a-graph-from-an-external-process.md)
 
  
 

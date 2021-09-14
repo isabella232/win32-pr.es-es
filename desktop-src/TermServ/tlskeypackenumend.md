@@ -15,12 +15,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 176c5d6b03fabe2e085b2582043233cd5fdc2681ef04ef07723ba5435a465863
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 04723318b29adff7a647fe2cab39fb0b16f3f5a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249908"
 ---
 # <a name="tlskeypackenumend-function"></a>Función TLSKeyPackEnumEnd
 
@@ -74,7 +74,7 @@ La llamada se realiza correctamente.
 
 <span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>
 
-<span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>**LSERVER \_ E \_ IDENTIFICADOR \_ NO VÁLIDO** (5005)
+<span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>**LSERVER \_ E \_ IDENTIFICADOR NO \_ VÁLIDO** (5005)
 
 
 </dt> <dd>
@@ -89,14 +89,14 @@ Esta función devuelve los siguientes valores devueltos posibles.
 
 <dl> <dt>
 
-**RPC \_ S \_ OK**
+**RPC \_ S \_ CORRECTO**
 </dt> <dd>
 
-La llamada se ha realiza correctamente. Compruebe el valor del parámetro *pdwErrCode* para obtener el código de retorno de la llamada.
+La llamada se ha realiza correctamente. Compruebe el valor del *parámetro pdwErrCode* para obtener el código de retorno de la llamada.
 
 </dd> <dt>
 
-**RPC \_ S \_ INVALID \_ ARG**
+**RPC \_ S ARGUMENTO NO \_ \_ VÁLIDO**
 </dt> <dd>
 
 El argumento no era válido.
@@ -115,7 +115,7 @@ El argumento no era válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

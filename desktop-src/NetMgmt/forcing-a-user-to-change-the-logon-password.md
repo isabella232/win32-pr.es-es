@@ -1,21 +1,21 @@
 ---
 title: Forzar a un usuario a cambiar la contraseña de inicio de sesión
-description: En este ejemplo de código se muestra cómo forzar a un usuario a cambiar la contraseña de inicio de sesión en el siguiente inicio de sesión mediante las funciones NetUserGetInfo y NetUserSetInfo y la estructura de información de usuario \_ \_ 3.
+description: En este ejemplo de código se muestra cómo forzar a un usuario a cambiar la contraseña de inicio de sesión en el siguiente inicio de sesión mediante las funciones NetUserGetInfo y NetUserSetInfo y la estructura USER \_ INFO \_ 3.
 ms.assetid: 828f5d72-3e19-4b65-a1db-ac702fd4cfde
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c9f3d0910f77c2553a55a53f1393aae5c9535982
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903561"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069413"
 ---
 # <a name="forcing-a-user-to-change-the-logon-password"></a>Forzar a un usuario a cambiar la contraseña de inicio de sesión
 
-En este ejemplo de código se muestra cómo forzar a un usuario a cambiar la contraseña de inicio de sesión en el siguiente inicio de sesión mediante las funciones [**NetUserGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo) y [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) y la estructura de [**información de usuario \_ \_ 3**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_3) . Tenga en cuenta que, a partir de Windows XP, se recomienda que use la estructura [**User \_ info \_ 4**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_4) en su lugar.
+En este ejemplo de código se muestra cómo forzar a un usuario a cambiar la contraseña de inicio de sesión en el siguiente inicio de sesión mediante las funciones [**NetUserGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo) y [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) y la [**estructura USER INFO \_ \_ 3.**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_3) Tenga en cuenta que a Windows XP, se recomienda usar la estructura [**\_ USER INFO \_ 4**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_4) en su lugar.
 
-Establezca el miembro **usri3 \_ password \_ Expired** de la estructura **User \_ info \_ 3** en un valor distinto de cero mediante el siguiente fragmento de código:
+Establezca el **miembro usri3 \_ password \_ expired** de la **estructura USER INFO \_ \_ 3** en un valor distinto de cero mediante el siguiente fragmento de código:
 
 
 ```C++
@@ -74,9 +74,9 @@ void main( void )
 
 
 
- 
+ 
 
- 
+ 
 
 
 

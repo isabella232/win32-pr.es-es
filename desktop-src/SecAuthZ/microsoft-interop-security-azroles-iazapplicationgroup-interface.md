@@ -99,18 +99,18 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 54b2daa49ed9f9da82bdb2740e44621380e53c46272f201c10fddd96f23feefd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a21b28a2380ad1bcb88eea81fa3247ee7d44e4e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118913181"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069086"
 ---
 # <a name="microsoftinteropsecurityazrolesiazapplicationgroup-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzApplicationGroup
 
 Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzApplicationGroup** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplicationGroup** tiene estos tipos de miembros:
 
@@ -157,14 +157,14 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplicationGroup** tiene est
 |:-------------------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------|
 | **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AppMembers**<br/>     | Solo lectura<br/>  | [**Propiedad AppMembers de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appmembers)<br/>         |
 | **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AppNonMembers**<br/>  | Solo lectura<br/>  | [**Propiedad AppNonMembers de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appnonmembers)<br/>   |
-| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Description**<br/>    | Lectura/escritura<br/> | [**Propiedad Description de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_description)<br/>       |
-| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.LdapQuery**<br/>      | Lectura/escritura<br/> | [**Propiedad LdapQuery de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery)<br/>           |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Description**<br/>    | Lectura y escritura<br/> | [**Propiedad Description de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_description)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.LdapQuery**<br/>      | Lectura y escritura<br/> | [**Propiedad LdapQuery de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery)<br/>           |
 | **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Members**<br/>        | Solo lectura<br/>  | [**Propiedad Members de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members)<br/>               |
 | **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.MembersName**<br/>    | Solo lectura<br/>  | [**Propiedad MembersName de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_membersname)<br/>       |
-| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Name**<br/>           | Lectura/escritura<br/> | [**Propiedad Name de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_name)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Name**<br/>           | Lectura y escritura<br/> | [**Propiedad Name de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_name)<br/>                     |
 | **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.NonMembers**<br/>     | Solo lectura<br/>  | [**Propiedad NonMembers de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers)<br/>         |
 | **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.NonMembersName**<br/> | Solo lectura<br/>  | [**Propiedad NonMembersName de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembersname)<br/> |
-| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Type**<br/>           | Lectura/escritura<br/> | [**Propiedad Type de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_type)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Type**<br/>           | Lectura y escritura<br/> | [**Propiedad Type de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_type)<br/>                     |
 | **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Writable**<br/>       | Solo lectura<br/>  | [**Propiedad grabable de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_writable)<br/>             |
 
 

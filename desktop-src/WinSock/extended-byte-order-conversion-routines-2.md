@@ -4,12 +4,12 @@ ms.assetid: 517c21b5-4b56-49f8-88ae-103fdfce6441
 title: Rutinas Byte-Order de conversión de datos extendidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c2be1c217e89d19e607a64dfc943449351021506dc88f73ebcd4234a26b2b84
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9addb2b1527546b8a7d13eb90581a333f87c6f0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119132528"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068282"
 ---
 # <a name="extended-byte-order-conversion-routines"></a>Rutinas Byte-Order de conversión de datos extendidos
 

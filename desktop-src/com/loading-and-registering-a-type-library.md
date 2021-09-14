@@ -4,12 +4,12 @@ description: La biblioteca de vínculos dinámicos de Automation, Oleaut32.dll, 
 ms.assetid: b7404919-fa0a-4de8-8c85-41b7bc7c5a52
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e98ea3a28f3884cbd6a377e45f1b537d169f510fdc4ce9a433dff6e976d9c0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c5d533225913d6bcfbb74df3ac42bd00b18b00e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119854235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249267"
 ---
 # <a name="loading-and-registering-a-type-library"></a>Cargar y registrar una biblioteca de tipos
 

@@ -1,6 +1,6 @@
 ---
 title: MCI_SET comando (Mmsystem.h)
-description: El comando MCI \_ SET establece la información del dispositivo. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc, superposición de vídeo y audio de onda reconocen este comando.
+description: El comando MCI \_ SET establece la información del dispositivo. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc, superposición de vídeo y audio de forma de onda reconocen este comando.
 ms.assetid: c527f9d6-2119-4274-98b7-dc892e9b70f9
 keywords:
 - MCI_SET comando Windows Multimedia
@@ -15,18 +15,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 4e1da0da94c0d970b607a29548c773fa9302d26d
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369932"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272287"
 ---
 # <a name="mci_set-command"></a>Comando MCI \_ SET
 
 > [!NOTE]
-> La comunicación sin sesgos de Microsoft admite un entorno diverso e inclusario.  Dentro de este documento, hay referencias a la palabra "subordinada". La Guía de estilo de Microsoft [Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo reconoce como una palabra excluyente.  Esta redacción se usa, ya que actualmente es la que se usa en los comandos. Por coherencia, este documento contiene esta palabra. Cuando esta palabra se modifica en los comandos, corregiremos este documento para que esté alineado.
+> La comunicación sin sesgos de Microsoft admite un entorno diverso e inclusión.  Dentro de este documento, hay referencias a la palabra "slave". La Guía de estilo de Microsoft [Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo reconoce como una palabra excluyente.  Esta redacción se usa, ya que actualmente es la que se usa en los comandos. Por coherencia, este documento contiene esta palabra. Cuando esta palabra se modifica en los comandos, corregiremos este documento para que esté alineado.
 
-El comando MCI \_ SET establece la información del dispositivo. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc, superposición de vídeo y audio de onda reconocen este comando.
+El comando MCI \_ SET establece la información del dispositivo. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc, superposición de vídeo y audio de forma de onda reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -63,13 +63,13 @@ MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital y VCR, MCI \_ 
 <span id="lpSet"></span><span id="lpset"></span><span id="LPSET"></span>*lpSet*
 </dt> <dd>
 
-Puntero a una [**estructura MCI \_ SET \_ PARMS.**](mci-set-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI SET \_ PARMS.**](mci-set-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -80,7 +80,7 @@ Las siguientes marcas adicionales se aplican a todos los dispositivos que admite
 <span id="MCI_SET_AUDIO"></span><span id="mci_set_audio"></span>MCI \_ SET \_ AUDIO
 </dt> <dd>
 
-Se incluye un número de canal de audio en el miembro dwAudio de la estructura identificada *por lpSet*. Esta marca debe usarse con MCI \_ SET \_ ON o MCI SET \_ \_ OFF. Use una de las constantes siguientes para indicar el número de canal:
+Se incluye un número de canal de audio en el miembro dwAudio de la estructura identificada por *lpSet*. Esta marca debe usarse con MCI \_ SET \_ ON o MCI SET \_ \_ OFF. Use una de las constantes siguientes para indicar el número de canal:
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Habilita el canal de audio o vídeo especificado.
 
 </dd> <dt>
 
-<span id="MCI_SET_TIME_FORMAT"></span><span id="mci_set_time_format"></span>FORMATO DE HORA DE MCI \_ SET \_ \_
+<span id="MCI_SET_TIME_FORMAT"></span><span id="mci_set_time_format"></span>FORMATO DE HORA \_ DE MCI SET \_ \_
 </dt> <dd>
 
 Se incluye un parámetro de formato de hora en el **miembro dwTimeFormat** de la estructura identificada por *lpSet*. Las marcas siguientes se usan con esta marca:
@@ -143,18 +143,18 @@ Se incluye un parámetro de formato de hora en el **miembro dwTimeFormat** de la
 <span id="MCI_FORMAT_BYTES"></span><span id="mci_format_bytes"></span>BYTES DE FORMATO MCI \_ \_
 </dt> <dd>
 
-Dentro de un formato de datos PCM (pulse Code Estampada), cambia la descripción del miembro de hora a bytes para la entrada o salida. Reconocido por el tipo **de dispositivo waveaudio.**
+Dentro de un formato de datos PCM (pulse Code Estampada), cambia la descripción del miembro de tiempo a bytes para la entrada o salida. Reconocido por el tipo **de dispositivo waveaudio.**
 
 </dd> <dt>
 
 <span id="MCI_FORMAT_FRAMES"></span><span id="mci_format_frames"></span>MARCOS DE FORMATO MCI \_ \_
 </dt> <dd>
 
-Los comandos posteriores usarán fotogramas. Lo reconocen los tipos **de dispositivo digitalvideo,** **vcr** y **videodisc.**
+Los comandos posteriores usarán fotogramas. Reconocido por los tipos **de dispositivo digitalvideo,** **vcr** y **videodisc.**
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_HMS"></span><span id="mci_format_hms"></span>MCI \_ FORMAT \_ HMS
+<span id="MCI_FORMAT_HMS"></span><span id="mci_format_hms"></span>FORMATO MCI \_ \_ HMS
 </dt> <dd>
 
 Cambia el formato de hora a horas, minutos y segundos. Reconocido por los tipos **de dispositivo vcr** y **videodisc.**
@@ -171,25 +171,25 @@ Cambia el formato de hora a milisegundos. Reconocido por todos los tipos de disp
 <span id="MCI_FORMAT_MSF"></span><span id="mci_format_msf"></span>MCI \_ FORMAT \_ MSF
 </dt> <dd>
 
-Cambia el formato de hora a minutos, segundos y fotogramas. Reconocido por los tipos **de dispositivo cdaudio** **y vcr.**
+Cambia el formato de tiempo a minutos, segundos y fotogramas. Reconocido por los tipos **de dispositivo cdaudio** **y vcr.**
 
 </dd> <dt>
 
 <span id="MCI_FORMAT_SAMPLES"></span><span id="mci_format_samples"></span>EJEMPLOS DE FORMATO \_ MCI \_
 </dt> <dd>
 
-Cambia el formato de hora a ejemplos de entrada o salida. Reconocido por el tipo **de dispositivo waveaudio.**
+Cambia el formato de hora a los ejemplos de entrada o salida. Reconocido por el tipo **de dispositivo waveaudio.**
 
 </dd> <dt>
 
 <span id="MCI_FORMAT_SMPTE_24__MCI_FORMAT_SMPTE_25__and_MCI_FORMAT_SMPTE_30"></span><span id="mci_format_smpte_24__mci_format_smpte_25__and_mci_format_smpte_30"></span><span id="MCI_FORMAT_SMPTE_24__MCI_FORMAT_SMPTE_25__AND_MCI_FORMAT_SMPTE_30"></span>MCI \_ FORMAT \_ SMPTE \_ 24, MCI \_ FORMAT \_ SMPTE \_ 25 y MCI \_ FORMAT \_ SMPTE \_ 30
 </dt> <dd>
 
-Establece el formato de hora en 24, 25 y 30 fotogramas SMPTE (Society of Motion Picture and Tv Engineers), respectivamente. Reconocido por los tipos **de dispositivo sequencer** **y vcr.**
+Establece el formato de tiempo en 24, 25 y 30 fotogramas SMPTE (Society of Motion Picture and Tv Engineers), respectivamente. Reconocido por los tipos **de dispositivo sequencer** **y vcr.**
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_SMPTE_30DROP"></span><span id="mci_format_smpte_30drop"></span>MCI \_ FORMAT \_ SMPTE \_ 30DROP
+<span id="MCI_FORMAT_SMPTE_30DROP"></span><span id="mci_format_smpte_30drop"></span>FORMATO MCI \_ \_ SMPTE \_ 30DROP
 </dt> <dd>
 
 Establece el formato de hora en 30 SMPTE de fotogramas desplegables. Reconocido por los tipos **de dispositivo sequencer** **y vcr.**
@@ -223,7 +223,7 @@ Las siguientes marcas adicionales se usan con el **tipo de dispositivo digitalvi
 <span id="MCI_DGV_SET_FILEFORMAT"></span><span id="mci_dgv_set_fileformat"></span>MCI \_ DGV \_ SET \_ FILEFORMAT
 </dt> <dd>
 
-Se incluye un parámetro de formato de archivo en el **miembro dwFileFormat** de la estructura identificada *por lpSet*. En el caso de los dispositivos de vídeo digital, el formato de archivo se usa para los comandos de guardado o captura. Si se omite, esto podría tener como valor predeterminado un formato definido por el controlador de dispositivo. Si el formato de archivo especificado entra en conflicto con el algoritmo y la calidad seleccionados actualmente, se cambian a los valores predeterminados para el formato de archivo. Se definen las siguientes constantes de formato de archivo:
+Se incluye un parámetro de formato de archivo en el **miembro dwFileFormat** de la estructura identificada por *lpSet*. En el caso de los dispositivos de vídeo digital, el formato de archivo se usa para los comandos de guardado o captura. Si se omite, esto podría tener como valor predeterminado un formato definido por el controlador de dispositivo. Si el formato de archivo especificado entra en conflicto con el algoritmo y la calidad seleccionados actualmente, se cambian a los valores predeterminados para el formato de archivo. Se definen las siguientes constantes de formato de archivo:
 
 </dd> <dt>
 
@@ -237,7 +237,7 @@ Formato AVI.
 <span id="MCI_DGV_FF_AVSS"></span><span id="mci_dgv_ff_avss"></span>MCI \_ DGV \_ FF \_ AVSS
 </dt> <dd>
 
-Formato avss.
+Formato AVSS.
 
 </dd> <dt>
 
@@ -293,7 +293,7 @@ Establece el formato utilizado para el posicionamiento. Esta marca debe usarse c
 <span id="MCI_DGV_SET_SPEED"></span><span id="mci_dgv_set_speed"></span>MCI \_ DGV \_ SET \_ SPEED
 </dt> <dd>
 
-Se incluye un parámetro de velocidad en el **miembro dwSpeed** de la estructura identificada por *lpSet*. La velocidad se especifica como una relación entre la velocidad de fotogramas nominal y la velocidad de fotogramas deseada, donde la velocidad nominal de fotogramas se designa como 1000. La media velocidad es 500 y la doble es 2000. El intervalo de velocidad permitido depende del dispositivo y, posiblemente, del archivo también.
+Se incluye un parámetro de velocidad en el **miembro dwSpeed** de la estructura identificada por *lpSet*. La velocidad se especifica como una relación entre la velocidad de fotogramas nominal y la velocidad de fotogramas deseada, donde la velocidad nominal de fotogramas se designa como 1000. La media velocidad es 500 y la doble es 2000. El intervalo de velocidad permitido depende también del dispositivo y, posiblemente, del archivo.
 
 </dd> <dt>
 
@@ -310,7 +310,7 @@ Cuando se usa con MCI \_ DGV \_ SET \_ FILEFORMAT, MCI SET establece el formato 
 
 </dt> <dd></dd> </dl>
 
-En el caso de los dispositivos de vídeo digital, el *parámetro lpSet* apunta a una estructura [**\_ MCI DGV \_ SET \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_set_parms)
+En el caso de los dispositivos de vídeo digital, el parámetro *lpSet* apunta a una estructura [**\_ MCI DGV \_ SET \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_set_parms)
 
 Las siguientes marcas adicionales se usan con el **tipo de dispositivo sequencer:**
 
@@ -756,7 +756,7 @@ Cuando se crea el archivo para almacenar los datos, se definen varias propiedade
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

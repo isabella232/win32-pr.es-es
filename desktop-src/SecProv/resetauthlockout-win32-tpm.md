@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 779ae7e8578019215e0bab1091512c64d68a84675d702ea7a0d8a5c37e8f081f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d28287e410fbaf65ce5b1e617113c35cfece160b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119906305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068976"
 ---
-# <a name="resetauthlockout-method-of-the-win32_tpm-class"></a>Método ResetAuthLockOut de la clase Tpm \_ win32
+# <a name="resetauthlockout-method-of-the-win32_tpm-class"></a>Método ResetAuthLockOut de la clase Tpm de \_ Win32
 
 El **método ResetAuthLockOut** de la clase Tpm de [**Win32 \_**](win32-tpm.md) restablece el período de tiempo de espera u otro mecanismo que los fabricantes de TPM implementan para protegerse frente a ataques de diccionario en valores de autorización de TPM. En un ataque de diccionario, un atacante intenta adivinar un valor de autorización de TPM correcto intentando exhaustivamente todos los valores posibles.
 
@@ -74,13 +74,13 @@ Se pueden devolver todos los errores de TPM, así como los errores específicos 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método llama al comando \_ ResetLockValue de TPM en el TPM. El comportamiento exacto de este método varía entre los fabricantes de TPM. La documentación del equipo o del fabricante de TPM puede proporcionar información adicional sobre la implementación del mecanismo de ataque anti diccionario.
 
 En general, los fabricantes pueden detectar ataques de diccionario si se realiza un seguimiento de las autenticaciones con errores. Si el número o la frecuencia de los errores son lo suficientemente altos, el TPM bloqueará más comandos durante un tiempo determinado. Por lo general, el período de tiempo de espera inicial será breve, para permitir a un usuario legítimo tener la oportunidad de corregir la situación. Si los errores continúan, la duración de cada período de tiempo de espera posterior puede aumentar rápidamente.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,7 +96,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

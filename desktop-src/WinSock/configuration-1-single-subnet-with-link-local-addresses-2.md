@@ -4,12 +4,12 @@ ms.assetid: ceed4983-e088-44e8-9cfc-26afb3c35ba0
 title: 'Configuración 1: subred única con direcciones locales de vínculo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a541edd96175dc61ec0aba3b1358c2bbd9464668e6aa1a11aeb6f2097e5b13bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d09feb44c222b7213da18a6745fc632f3903209
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068294"
 ---
 # <a name="configuration-1-single-subnet-with-link-local-addresses"></a>Configuración 1: subred única con direcciones locales de vínculo
 

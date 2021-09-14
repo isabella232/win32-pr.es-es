@@ -4,12 +4,12 @@ ms.assetid: bc67ffbf-c29c-4545-911e-b70ecd43cdfc
 title: Información general de TAPI 2.2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b88b4d135dbbab1de8c9ad46878f7b8ebd4adc700540c3b8dfcf19f9ef16d3f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a8f6dfce45b3445dd78767984fadb5c7326da2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139928"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068709"
 ---
 # <a name="tapi-22-overview"></a>Información general de TAPI 2.2
 

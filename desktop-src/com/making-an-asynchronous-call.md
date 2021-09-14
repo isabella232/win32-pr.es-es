@@ -4,12 +4,12 @@ description: El procedimiento para realizar una llamada sincrónica es sencillo 
 ms.assetid: ab65d38d-836a-48d4-87c1-8812cbc8ff92
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 384a153b826e570920fca2a92f5b53ed2079c561cbcda899b793cef1f39473bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22dcd7a6509cd07e12357a96222baa04f9e4c942
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119755995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249236"
 ---
 # <a name="making-an-asynchronous-call"></a>Realizar una llamada asincrónica
 
@@ -43,7 +43,7 @@ El mecanismo para esta señalización y comprobación entre el cliente y el serv
 
 2.  Llame [**a ISynchronize::Wait**](/windows/win32/api/objidlbase/nf-objidlbase-isynchronize-wait).
 
-3.  Si [**Wait devuelve**](/windows/win32/api/objidlbase/nf-objidlbase-isynchronize-wait) RPC E \_ \_ TIMEOUT, el método Begin no finaliza el \_ procesamiento. El cliente puede continuar con otro trabajo y volver a llamar a **Wait** más adelante. No puede llamar al método Finish \_ hasta **que Wait** devuelva S \_ OK.
+3.  Si [**Wait devuelve**](/windows/win32/api/objidlbase/nf-objidlbase-isynchronize-wait) RPC E \_ \_ TIMEOUT, el método Begin no finaliza el \_ procesamiento. El cliente puede continuar con otro trabajo y volver a llamar a **Wait** más adelante. No puede llamar al método Finish \_ hasta que **Wait** devuelva S \_ OK.
 
     Si [**Wait**](/windows/win32/api/objidlbase/nf-objidlbase-isynchronize-wait) devuelve S \_ OK, se devuelve el método \_ Begin. Llame al método Finish \_ adecuado.
 

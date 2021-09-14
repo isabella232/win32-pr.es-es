@@ -6,23 +6,23 @@ keywords:
 - Reproductor de Windows Media,Objeto StringCollection
 - Reproductor de Windows Media modelo de objetos, objeto StringCollection
 - object model,StringCollection object
-- Reproductor de Windows Media ActiveX control,Objeto StringCollection
-- ActiveX control,Objeto StringCollection
-- Reproductor de Windows Media Control de ActiveX móvil,objeto StringCollection
-- Reproductor de Windows Media Objeto Mobile,StringCollection
+- Reproductor de Windows Media ActiveX control, objeto StringCollection
+- ActiveX control, objeto StringCollection
+- Reproductor de Windows Media Control ActiveX móvil,objeto StringCollection
+- Reproductor de Windows Media Mobile,StringCollection , objeto
 - Objeto StringCollection
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae871dbe749764b97fa6be1691ad6ba546ba2829dffcc52bc086fea6c49a61ab
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1dba88fcd4a87b0905fc2beca249a227ef4ac9cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120124085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068498"
 ---
 # <a name="about-the-stringcollection-object"></a>Acerca del objeto StringCollection
 
-El **objeto StringCollection** rige las colecciones de cadenas, que se usan para proporcionar funcionalidades de control de cadenas para el **objeto MediaCollection.** El **objeto StringCollection** se puede recuperar mediante el **método getAttributeStringCollection** del **objeto MediaCollection.** Puede usarlo para trabajar con colecciones de cadenas que representan los valores de varios atributos de elementos multimedia.
+El **objeto StringCollection** rige las colecciones de cadenas, que se usan para proporcionar funciones de control de cadenas para el **objeto MediaCollection.** El **objeto StringCollection** se puede recuperar mediante el **método getAttributeStringCollection** del **objeto MediaCollection.** Puede usarlo para trabajar con colecciones de cadenas que representan los valores de varios atributos de elementos multimedia.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -31,7 +31,7 @@ El **objeto StringCollection** rige las colecciones de cadenas, que se usan para
 [**Modelo de objetos del reproductor para lenguajes de scripting**](player-object-model-for-scripting-languages.md)
 </dt> <dt>
 
-[**StringCollection (objeto)**](stringcollection-object.md)
+[**Objeto StringCollection**](stringcollection-object.md)
 </dt> </dl>
 
  

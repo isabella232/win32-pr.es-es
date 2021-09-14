@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c8eaae47708a6857e93a8901d90c47cf8def2ccb91bef31859656d030910cc47
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1cfd94df2717c0da7256ee1fadcafbc809fa61f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068526"
 ---
 # <a name="map-valuemaptype-element"></a>elemento map (ValueMapType)
 
@@ -43,7 +43,7 @@ El tipo complejo **ValueMapType** define el [**elemento map.**](eventmanifestsch
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

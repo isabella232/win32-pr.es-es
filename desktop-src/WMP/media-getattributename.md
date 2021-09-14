@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b6b9a288830283b3711c6e4eb652be968979628af48d2ce5b718150b9018568
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d7134b68837a7a5d1b765c64320ae68c56c6fc56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068423"
 ---
 # <a name="mediagetattributename-method"></a>Método Media.getAttributeName
 
@@ -53,7 +53,7 @@ strRetVal = Media.getAttributeName(
 
 Este método devuelve una **cadena** que especifica el nombre del atributo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El nombre del atributo devuelto se puede usar junto con **getItemInfo** para recuperar el valor de un atributo con nombre específico.
 
@@ -94,12 +94,12 @@ for(var i=0; i < atCount; i++){
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

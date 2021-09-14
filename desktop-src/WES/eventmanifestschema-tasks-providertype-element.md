@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cd22a80ae0c4437aff35a3502ea0f43e638c58483042fe9109a387cb1317ea6c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1326bc8cfbdec0af707733db2da6e67ff3f9e47a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120005905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068524"
 ---
 # <a name="tasks-providertype-element"></a>elemento tasks (ProviderType)
 
@@ -43,7 +43,7 @@ El **elemento tasks** se define mediante el tipo complejo [**ProviderType.**](ev
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

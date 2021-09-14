@@ -1,7 +1,7 @@
 ---
 description: Identifica una lista de atributos que describe cómo se debe mostrar el contador.
 ms.assetid: d0935ce8-8182-4c83-97d9-0b44182934e0
-title: elemento counterAttributes (counter)
+title: Elemento counterAttributes (counter)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 118d144a70c422204f1c2603c6d6d65d13a970d15c676d4a00a090f4aa3f7d42
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64fb794d5ab38417d0ecd4ddabba9a28b33c28db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250701"
 ---
-# <a name="counterattributes-counter-element"></a>elemento counterAttributes (counter)
+# <a name="counterattributes-counter-element"></a>Elemento counterAttributes (counter)
 
 Identifica una lista de atributos que describe cómo se debe mostrar el contador.
 
@@ -39,7 +39,7 @@ El **elemento counterAttributes** se define mediante el [**tipo complejo**](perf
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

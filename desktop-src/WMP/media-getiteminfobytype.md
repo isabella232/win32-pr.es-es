@@ -5,7 +5,7 @@ ms.assetid: 9d3377c2-7ae8-48ce-a42e-9c965f6b79f9
 keywords:
 - Método getItemInfoByType Reproductor de Windows Media
 - Método getItemInfoByType Reproductor de Windows Media , clase Media
-- Clase multimedia Reproductor de Windows Media método , getItemInfoByType
+- Clase media Reproductor de Windows Media método , getItemInfoByType
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa180834d70c8dd078beafc360400c931e7058994f1cc46d4e9abb011987d158
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc2aff2bee7641075bbac1dd04526ee751ea077a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135128"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068413"
 ---
 # <a name="mediagetiteminfobytype-method"></a>Método Media.getItemInfoByType
 
@@ -85,7 +85,7 @@ Este método devuelve un **objeto Number**, **String**, **MetadataPicture** u **
 
 Para los atributos cuyo valor subyacente es **booleano,** este método devuelve la cadena "true" o "false".
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método recupera los metadatos de un elemento multimedia digital individual o un elemento multimedia que forma parte de una lista de reproducción.
 
@@ -97,7 +97,7 @@ El **método getAttributeCountByType** devuelve el número de atributos que corr
 
 Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
-Este método puede producir errores. Debe incluir código de control de errores al llamar a este método. Por ejemplo, en JScript puede implementar el control de errores mediante **el método try... atrapar... finally** (Estructura).
+Este método puede producir errores. Debe incluir código de control de errores al llamar a este método. Por ejemplo, en JScript puede implementar el control de errores mediante **el... atrapar... finally** (Estructura).
 
 **Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
@@ -107,12 +107,12 @@ Este método puede producir errores. Debe incluir código de control de errores 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
+| Version<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5deca3d7fa188c834f2ca952c9b6c4760a3a1b56c83eb8250e343257b8108de5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e67892f9e4cf6799f1b9311bb2cd47ec02744cb6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118883511"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068867"
 ---
 # <a name="counteritemwidth-property"></a>CounterItem.Width, propiedad
 
@@ -29,7 +29,7 @@ Recupera o establece el ancho de línea utilizado para representar el valor del 
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -56,7 +56,7 @@ Ancho de línea usado en un gráfico de líneas. Los valores válidos oscilan en
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El ancho de línea predeterminado para los primeros dieciséis contadores que agregue es 1. El ancho de línea predeterminado para los siguientes dieciséis contadores (contadores 17 - 32) que agregue es 2. El ancho de línea predeterminado para los siguientes dieciséis contadores (contadores 33 - 48) que agregue es 3. Después, SYSMON elige aleatoriamente el ancho de línea. Para obtener más información, [**vea CounterItem.Color**](counteritem-color.md).
 
@@ -66,7 +66,7 @@ Para especificar un [**estilo de línea**](counteritem-linestyle.md) distinto de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f308479e9dcf39a0fc54c5b6f22251eac3accd9eba3bf4730274898c6044d1a1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f052c76e664cd68153e9c395aed9224ba9ba90c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068443"
 ---
 # <a name="fourcc-attribute"></a>Atributo FourCC
 
@@ -27,7 +27,7 @@ El **atributo FourCC** es un valor hexadecimal que identifica el códec necesari
 
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -37,11 +37,11 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media 10 o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media 10 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

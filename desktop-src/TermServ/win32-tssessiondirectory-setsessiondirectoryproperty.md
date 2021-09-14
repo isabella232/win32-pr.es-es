@@ -1,6 +1,6 @@
 ---
 title: Método SetSessionDirectoryProperty de la Win32_TSSessionDirectory clase
-description: Establece la propiedad SessionDirectoryLocation o la propiedad SessionDirectoryClusterName de la clase .
+description: Establece la propiedad SessionDirectoryLocation o la propiedad SessionDirectoryClusterName para la clase .
 ms.assetid: 728e1991-294f-4b80-86f8-a0c2cfd10e9c
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf09cbf8e832446831a5b12ecce8cc00b61bc49b23a8ed1da7f291d6f0c3562c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32357e662ec9b2edb05d75a2814d5215fc9ec7f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119769305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068562"
 ---
 # <a name="setsessiondirectoryproperty-method-of-the-win32_tssessiondirectory-class"></a>Método SetSessionDirectoryProperty de la clase TSSessionDirectory de Win32 \_
 
-Establece la **propiedad SessionDirectoryLocation** o **la propiedad SessionDirectoryClusterName** de la clase .
+Establece la **propiedad SessionDirectoryLocation** o **la propiedad SessionDirectoryClusterName** para la clase .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ uint32 SetSessionDirectoryProperty(
 
 Tipo: **cadena**
 
-Especifica la propiedad que está estableciendo el método .
+Especifica la propiedad que el método está estableciendo.
 
 <dt>
 
@@ -80,7 +80,7 @@ El método establece la **propiedad SessionDirectoryClusterName.**
 
 Tipo: **cadena**
 
-Nuevo valor de la propiedad especificada por el *parámetro PropertyName.*
+Nuevo valor para la propiedad especificada por el *parámetro PropertyName.*
 
 </dd> </dl>
 
@@ -88,11 +88,11 @@ Nuevo valor de la propiedad especificada por el *parámetro PropertyName.*
 
 Tipo: **uint32**
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la configuración está bajo control de directiva de grupo.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la configuración está bajo control de directiva de grupo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,13 +102,13 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

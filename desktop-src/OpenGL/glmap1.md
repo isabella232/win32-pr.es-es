@@ -4,12 +4,12 @@ description: Estas funciones definen un evaluador unidimensional.
 ms.assetid: 47b0bd46-aa79-4146-8503-cddcc8b7b242
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd4a6cf5fc0a116651200435b1b4867d5f3cdd94b259cc2a2a48f16399dbc7aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8983ab1cabfd4bbc26d486382a9c7084ec7fc679
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272100"
 ---
 # <a name="glmap1-functions"></a>Funciones glMap1
 

@@ -9,12 +9,12 @@ keywords:
 - Administración de paletas OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53016764636cadd9fe85e0478905958788ca2557a308375bc8d6d9826462c6b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a2e04110d1dfe489a145a8de9bdc7c3d9b726acd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118932957"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069285"
 ---
 # <a name="rgba-mode-and-windows-palette-management"></a>Modo RGBA y administración Windows paletas
 

@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec4BaryCentric (D3DX10Math.h): devuelve un punto en coordenadas centradas en Barycentric mediante los vectores 4D especificados.'
+description: 'Función D3DXVec4BaryCentric (D3DX10Math.h): devuelve un punto en coordenadas baricéntricas, mediante los vectores 4D especificados.'
 ms.assetid: 44406135-3270-4f2e-bb53-29affb2510f2
 title: Función D3DXVec4BaryCentric (D3DX10Math.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 5ecd9a1882e268ae3f398dd42f16d97e00085f2797a98fb42ad4c1f8851ce89d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 935432d1634a7fd35401d92471b1f366075ac8b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119753975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063830"
 ---
 # <a name="d3dxvec4barycentric-function-d3dx10mathh"></a>Función D3DXVec4BaryCentric (D3DX10Math.h)
 
-Devuelve un punto en coordenadas centradas en Bary, utilizando los vectores 4D especificados.
+Devuelve un punto en coordenadas baricéntricas, utilizando los vectores 4D especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -89,7 +89,7 @@ Factor de ponderación. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*g* \[ en\]
+*g* \[ in\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -102,9 +102,9 @@ Factor de ponderación. Vea la sección Comentarios.
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Puntero a una estructura D3DXVECTOR4 en coordenadas centradas en Barycentric.
+Puntero a una estructura D3DXVECTOR4 en coordenadas centradas en baría.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La función D3DXVec4BaryCentric proporciona una manera de comprender los puntos dentro y alrededor de un triángulo, independientemente de dónde se encuentra realmente el triángulo. Esta función devuelve el punto resultante mediante la siguiente ecuación: V1 + f(V2-V1) + g(V3-V1).
 
@@ -117,11 +117,11 @@ Tenga en cuenta las siguientes relaciones.
 -   Si (f>=0 &, & g==0 &, & 1-f-g>=0), el punto está en la línea V1V2.
 -   Si (f>=0 &, & g>=0 &, & 1-f-g==0), el punto está en la línea V2V3.
 
-Las coordenadas centradas en barras son una forma de coordenadas generales. En este contexto, el uso de coordenadas centradas en Bary representa un cambio en los sistemas de coordenadas. Lo que es cierto para las coordenadas cartesianas es true para las coordenadas barícéntricas.
+Las coordenadas barycéntricas son una forma de coordenadas generales. En este contexto, el uso de coordenadas baricéntricas representa un cambio en los sistemas de coordenadas. Lo que se aplica a las coordenadas cartesianas es true para las coordenadas baríntricas.
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec4BaryCentric se puede usar como parámetro para otra función.
 
-Las coordenadas centradas en barras definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas centradas en barras, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Las coordenadas barítricas definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas baricéntricas, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -133,7 +133,7 @@ Las coordenadas centradas en barras definen un punto dentro de un triángulo en 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

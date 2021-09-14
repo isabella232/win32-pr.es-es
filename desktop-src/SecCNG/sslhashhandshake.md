@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 5a21bdb3fd655e5c3b39249937f04a4122c64e6c6176c0d39ae1164e48863edb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1dbfdbceb4242d389669a3eebf14260a3bb396fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250389"
 ---
 # <a name="sslhashhandshake-function"></a>Función SslHashHandshake
 
@@ -46,7 +46,7 @@ SECURITY_STATUS WINAPI SslHashHandshake(
 *hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo de seguridad (SSL).
+Identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo ssl (ssl).
 
 </dd> <dt>
 
@@ -86,9 +86,9 @@ Si la función se realiza correctamente, devuelve cero.
 
 La **función SslHashHandshake** es una de las tres funciones que se usan para generar un hash que se usará durante el protocolo de enlace SSL.
 
-1.  Se [**llama a la función SslCreateHandshakeHash**](sslcreatehandshakehash.md) para obtener un identificador hash.
-2.  Se **llama a la función SslHashHandshake** varias veces con el identificador hash para agregar datos al hash.
-3.  Se [**llama a la función SslComputeFinishedHash**](sslcomputefinishedhash.md) con el identificador hash para obtener el resumen de los datos con hash.
+1.  Se llama a la función [**SslCreateHandshakeHash**](sslcreatehandshakehash.md) para obtener un identificador hash.
+2.  La **función SslHashHandshake** se llama varias veces con el identificador hash para agregar datos al hash.
+3.  Se llama a la función [**SslComputeFinishedHash**](sslcomputefinishedhash.md) con el identificador hash para obtener la síntesis de los datos con hash.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,7 +98,7 @@ La **función SslHashHandshake** es una de las tres funciones que se usan para g
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

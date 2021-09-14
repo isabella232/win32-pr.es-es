@@ -4,20 +4,20 @@ description: Cuando se define una canalización en un archivo IDL, el compilador
 ms.assetid: f6c282e4-3056-48c4-bd12-dfcae6d238d7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbd237690f45fd6ca73d62f54a5dccf0409f4424e1e96407c116b39ef5d882a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 115be7fc5d00458d13df102afebe9ba5b55de070
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120022075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069149"
 ---
 # <a name="defining-pipes-in-idl-files"></a>Definir canalizaciones en archivos IDL
 
-Cuando se define una canalización en un archivo IDL, el compilador MIDL genera una estructura de control de canalización cuyos miembros son punteros a los procedimientos de inserción, extracción y asignación, así como una variable de estado que coordina estos procedimientos. La aplicación cliente inicializa los campos de la estructura de control de canalización, mantiene su variable de estado y administra la transferencia de datos con sus propias funciones de inserción, extracción y asignación. El código auxiliar de cliente llama a estas funciones de aplicación en bucles durante la transferencia de datos. Para una canalización de entrada, el código auxiliar del cliente serializa los datos de transferencia y los transmite al código auxiliar del servidor. Para una canalización de salida, el código auxiliar del cliente desmarshals los datos en un búfer y pasa un puntero a ese búfer de nuevo a la aplicación cliente.
+Cuando se define una canalización en un archivo IDL, el compilador MIDL genera una estructura de control de canalización cuyos miembros son punteros a los procedimientos de inserción, extracción y asignación, así como una variable de estado que coordina estos procedimientos. La aplicación cliente inicializa los campos de la estructura de control de canalización, mantiene su variable de estado y administra la transferencia de datos con sus propias funciones de inserción, extracción y asignación. El código auxiliar de cliente llama a estas funciones de aplicación en bucles durante la transferencia de datos. Para una canalización de entrada, el código auxiliar del cliente serializa los datos de transferencia y los transmite al código auxiliar del servidor. Para una canalización de salida, el código auxiliar de cliente desmarshals los datos en un búfer y pasa un puntero a ese búfer de vuelta a la aplicación cliente.
 
-El código auxiliar del servidor inicializa los campos de la estructura de control de canalización en una variable de estado, así como punteros a las rutinas de inserción y extracción. El código auxiliar del servidor mantiene el estado y administra su almacenamiento privado para los datos de transferencia. La aplicación de servidor llama a las rutinas de extracción e inserción en bucles durante la llamada a procedimiento remoto a medida que recibe y desmarte los datos del código auxiliar del cliente, o serializa y transmite datos al código auxiliar del cliente.
+El código auxiliar del servidor inicializa los campos de la estructura de control de canalización en una variable de estado, así como punteros a las rutinas de inserción y extracción. El código auxiliar del servidor mantiene el estado y administra su almacenamiento privado para los datos de transferencia. La aplicación de servidor llama a las rutinas de extracción e inserción en bucles durante la llamada a procedimiento remoto a medida que recibe y desmarda datos del código auxiliar del cliente, o serializa y transmite datos al código auxiliar del cliente.
 
-El siguiente archivo IDL de ejemplo define un tipo de canalización LONG PIPE, cuyo tamaño de elemento \_ se define como **long.** También declara prototipos de función para las llamadas a procedimiento remoto InPipe y OutPipe, para enviar y recibir datos, respectivamente. Cuando el compilador MIDL procesa el archivo IDL, genera el archivo de encabezado que se muestra en el ejemplo.
+El siguiente archivo IDL de ejemplo define un tipo de canalización LONG PIPE, cuyo tamaño de elemento \_ se define como **long**. También declara prototipos de función para que el procedimiento remoto llame a InPipe y OutPipe para enviar y recibir datos, respectivamente. Cuando el compilador MIDL procesa el archivo IDL, genera el archivo de encabezado que se muestra en el ejemplo.
 
 ## <a name="example"></a>Ejemplo
 

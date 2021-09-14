@@ -11,12 +11,12 @@ keywords:
 - Funciones de prueba alfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6234a80217c8ef540d31b5b4e7bb76718ef03fda9cfff8f07b6a965613055f3d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3abfd3ba46d99f8b70ecfb97c0160efea944ccd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118936234"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069303"
 ---
 # <a name="porting-afunction-test-functions"></a>Porte de funciones de prueba afunction
 

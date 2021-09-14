@@ -4,12 +4,12 @@ ms.assetid: 3de6a35d-41e9-4fce-ab92-e970c7c07e55
 title: Códigos de estado HTTP (Winhttp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86f145a2a7b5f7e807d1b393d9c4fd9b4f71c81052f0f023a04f72e139842637
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fcf4103cdc382bd5ab0d582fe99212083e2780ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117744576"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068349"
 ---
 # <a name="http-status-codes-winhttph"></a>Códigos de estado HTTP (Winhttp.h)
 
@@ -30,7 +30,7 @@ La solicitud se puede continuar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_SWITCH_PROTOCOLS"></span><span id="http_status_switch_protocols"></span>**PROTOCOLOS \_ DE MODIFICADOR DE ESTADO \_ \_ HTTP**
+<span id="HTTP_STATUS_SWITCH_PROTOCOLS"></span><span id="http_status_switch_protocols"></span>**PROTOCOLOS \_ DE CONMUTADOR DE ESTADO \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 101
@@ -64,7 +64,7 @@ La solicitud se completó correctamente.
 
 
 
-La solicitud se ha cumplido y ha dado lugar a la creación de un nuevo recurso.
+La solicitud se ha realizado y ha dado lugar a la creación de un nuevo recurso.
 
 
 </dt> </dl> </dd> <dt>
@@ -108,7 +108,7 @@ El servidor ha cumplido la solicitud, pero no hay información nueva que devolve
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_RESET_CONTENT"></span><span id="http_status_reset_content"></span>**CONTENIDO \_ DE \_ RESTABLECIMIENTO DE ESTADO \_ HTTP**
+<span id="HTTP_STATUS_RESET_CONTENT"></span><span id="http_status_reset_content"></span>**CONTENIDO DE \_ \_ RESTABLECIMIENTO DE ESTADO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 205
@@ -129,7 +129,7 @@ La solicitud se ha completado y el programa cliente debe restablecer la vista de
 
 
 
-El servidor ha cumplido la solicitud GET parcial para el recurso.
+El servidor ha cumplido la solicitud GET parcial del recurso.
 
 
 </dt> </dl> </dd> <dt>
@@ -142,7 +142,7 @@ El servidor ha cumplido la solicitud GET parcial para el recurso.
 
 
 
-Durante una World Wide Web distributed authoring and versioning (WebDAV), esto indica varios códigos de estado para una única respuesta. El cuerpo de respuesta contiene lenguaje de marcado extensible (XML) que describe los códigos de estado. Para obtener más información, [vea Extensiones HTTP para la creación distribuida.](../webdav/webdav-portal.md)
+Durante una World Wide Web de creación y control de versiones distribuidos (WebDAV), esto indica varios códigos de estado para una única respuesta. El cuerpo de la respuesta lenguaje de marcado extensible (XML) que describe los códigos de estado. Para obtener más información, [vea Extensiones HTTP para la creación distribuida.](../webdav/webdav-portal.md)
 
 
 </dt> </dl> </dd> <dt>
@@ -168,7 +168,7 @@ El recurso solicitado está disponible en una o varias ubicaciones.
 
 
 
-El recurso solicitado se ha asignado a un nuevo identificador uniforme de recursos (URI) permanente y cualquier referencia futura a este recurso debe realizarse mediante uno de los URI devueltos.
+El recurso solicitado se ha asignado a un nuevo identificador uniforme de recursos (URI) permanente y las referencias futuras a este recurso deben realizarse mediante uno de los URI devueltos.
 
 
 </dt> </dl> </dd> <dt>
@@ -186,7 +186,7 @@ El recurso solicitado reside temporalmente en un URI diferente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_REDIRECT_METHOD"></span><span id="http_status_redirect_method"></span>**MÉTODO DE \_ REDIRECCIÓN DE \_ ESTADO \_ HTTP**
+<span id="HTTP_STATUS_REDIRECT_METHOD"></span><span id="http_status_redirect_method"></span>**MÉTODO DE \_ REDIRECCIÓN \_ DE ESTADO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 303
@@ -194,7 +194,7 @@ El recurso solicitado reside temporalmente en un URI diferente.
 
 
 
-La respuesta a la solicitud se puede encontrar en un URI diferente y se debe recuperar mediante un [*verbo HTTP*](glossary.md) GET en ese recurso.
+La respuesta a la solicitud se puede encontrar en un URI diferente y debe recuperarse mediante un [*verbo HTTP*](glossary.md) GET en ese recurso.
 
 
 </dt> </dl> </dd> <dt>
@@ -225,7 +225,7 @@ Se debe acceder al recurso solicitado a través del proxy que proporciona el cam
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_REDIRECT_KEEP_VERB"></span><span id="http_status_redirect_keep_verb"></span>**HTTP \_ STATUS \_ REDIRECT \_ KEEP \_ VERB**
+<span id="HTTP_STATUS_REDIRECT_KEEP_VERB"></span><span id="http_status_redirect_keep_verb"></span>**VERBO KEEP KEEP DE REDIRECCIÓN DE ESTADO \_ \_ \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 307
@@ -233,12 +233,12 @@ Se debe acceder al recurso solicitado a través del proxy que proporciona el cam
 
 
 
-La solicitud redirigida mantiene el mismo [*verbo HTTP.*](glossary.md) Comportamiento de HTTP/1.1.
+La solicitud redirigida mantiene el mismo [*verbo HTTP*](glossary.md). Comportamiento http/1.1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_BAD_REQUEST"></span><span id="http_status_bad_request"></span>**SOLICITUD DE ESTADO HTTP \_ \_ NO \_ DISPONIBLE**
+<span id="HTTP_STATUS_BAD_REQUEST"></span><span id="http_status_bad_request"></span>**SOLICITUD \_ DE ESTADO HTTP NO \_ \_ DISPONIBLE**
 </dt> <dd> <dl> <dt>
 
 400
@@ -311,7 +311,7 @@ El servidor no ha encontrado nada que coincida con el URI solicitado.
 
 
 
-No [*se permite el verbo HTTP*](glossary.md) utilizado.
+No [*se permite el*](glossary.md) verbo HTTP utilizado.
 
 
 </dt> </dl> </dd> <dt>
@@ -329,7 +329,7 @@ No se encontraron respuestas aceptables para el cliente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_PROXY_AUTH_REQ"></span><span id="http_status_proxy_auth_req"></span>**SOLICITUD DE \_ \_ AUTENTICACIÓN DEL PROXY DE ESTADO HTTP \_ \_**
+<span id="HTTP_STATUS_PROXY_AUTH_REQ"></span><span id="http_status_proxy_auth_req"></span>**SOLICITUD DE \_ \_ AUTENTICACIÓN DE PROXY \_ DE ESTADO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 407
@@ -363,7 +363,7 @@ El servidor agotó el tiempo de espera para la solicitud.
 
 
 
-No se pudo completar la solicitud debido a un conflicto con el estado actual del recurso. El usuario debe volver a enviar más información.
+No se pudo completar la solicitud debido a un conflicto con el estado actual del recurso. El usuario debe volver a enviar con más información.
 
 
 </dt> </dl> </dd> <dt>
@@ -381,7 +381,7 @@ El recurso solicitado ya no está disponible en el servidor y no se conoce ningu
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_LENGTH_REQUIRED"></span><span id="http_status_length_required"></span>**LONGITUD \_ DE ESTADO HTTP \_ \_ NECESARIA**
+<span id="HTTP_STATUS_LENGTH_REQUIRED"></span><span id="http_status_length_required"></span>**LONGITUD \_ DE ESTADO HTTP \_ \_ REQUERIDA**
 </dt> <dd> <dl> <dt>
 
 411
@@ -394,7 +394,7 @@ El servidor no puede aceptar la solicitud sin una longitud de contenido definida
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_PRECOND_FAILED"></span><span id="http_status_precond_failed"></span>**ERROR \_ DE ESTADO HTTP \_ PRECOND \_**
+<span id="HTTP_STATUS_PRECOND_FAILED"></span><span id="http_status_precond_failed"></span>**ERROR \_ EN \_ EL PRECOND DE ESTADO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 412
@@ -402,7 +402,7 @@ El servidor no puede aceptar la solicitud sin una longitud de contenido definida
 
 
 
-La condición previa especificada en uno o varios de los campos de encabezado de solicitud se evaluó como false cuando se probó en el servidor.
+La condición previa dada en uno o varios de los campos de encabezado de solicitud se evaluó como false cuando se probó en el servidor.
 
 
 </dt> </dl> </dd> <dt>
@@ -545,11 +545,11 @@ El servidor no admite la versión del protocolo HTTP que se usó en el mensaje d
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>      |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>   |
-| Header<br/>                   | <dl> <dt>Winhttp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winhttp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -6,12 +6,12 @@ keywords:
 - TS_ATTRID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e1c40d56f1f8ff3deb59d0dd7664a197a672ade7b2d53beebd8e35ba5de7c0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18ea3823a95c123fe9942f69a2a133fd94a8567a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117950341"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068791"
 ---
 # <a name="ts_attrid"></a>TS \_ ATTRID
 
@@ -24,7 +24,7 @@ typedef GUID TS_ATTRID;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Hay una lista de GUID predefinidos para \_ TS ATTRID en tsattrs.h.
 
@@ -34,17 +34,17 @@ Los GUID TSATTRID Text VerticalWriting y \_ \_ TSATTRID Text Orientation son út
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                       |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                       |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                             |
 | Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                         |
-| Header<br/>                   | <dl> <dt>Textstor.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Textstor.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Textstor.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Textstor.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -78,7 +78,7 @@ Los GUID TSATTRID Text VerticalWriting y \_ \_ TSATTRID Text Orientation son út
 [**ITextStoreAnchorSink::OnAttrsChange**](/windows/desktop/api/Textstor/nf-textstor-itextstoreanchorsink-onattrschange)
 </dt> <dt>
 
-[**ATTRVAL de TS \_**](/windows/desktop/api/Textstor/ns-textstor-ts_attrval)
+[**TS \_ ATTRVAL**](/windows/desktop/api/Textstor/ns-textstor-ts_attrval)
 </dt> </dl>
 
  

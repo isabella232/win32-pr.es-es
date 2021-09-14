@@ -4,12 +4,12 @@ ms.assetid: dbe8d5a3-8927-4b95-a1a0-82c8e12ba8c1
 title: Registro de un paquete de notificación de Winlogon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2aa41948062458581d607b64432166b99ba4701865a3c7b593365c87342359ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25b353220727c828a0fa0b1d6f9b479bfa54832e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118919674"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069129"
 ---
 # <a name="registering-a-winlogon-notification-package"></a>Registro de un paquete de notificación de Winlogon
 

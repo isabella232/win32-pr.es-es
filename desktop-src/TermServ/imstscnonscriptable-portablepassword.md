@@ -47,12 +47,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fad57f972d3f33f199a3908f1c088f889fa7a56933878cd616feadd418f9424f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a5259e83087287395e6114bb8ffe3eb7e859ab52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119512045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249915"
 ---
 # <a name="imstscnonscriptableportablepassword-property"></a>Propiedad IMsTscNonScriptable::P ortablePassword
 
@@ -60,7 +60,7 @@ Esta propiedad ya no está disponible para su uso.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -87,7 +87,7 @@ Devuelve **E \_ NOTIMPL**.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
@@ -99,7 +99,7 @@ Devuelve **E \_ NOTIMPL**.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

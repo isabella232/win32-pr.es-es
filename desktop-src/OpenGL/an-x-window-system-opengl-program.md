@@ -1,6 +1,6 @@
 ---
 title: Un programa OpenGL del sistema de ventanas X
-description: El programa siguiente es un programa X Window System OpenGL con el mismo código OpenGL que se usa en AUXEDEMO. Programa de ejemplo de C proporcionado con el SDK de la plataforma de Microsoft. Compare este programa con el Windows OpenGL en El programa portado a Windows.
+description: El programa siguiente es un programa X Window System OpenGL con el mismo código OpenGL que se usa en EL AUXILIAREDEMO. Programa de ejemplo de C proporcionado con el SDK de plataforma de Microsoft. Compare este programa con el programa Windows OpenGL en El programa portado a Windows.
 ms.assetid: 8caab983-491f-46fa-b564-79191fa4a9ac
 keywords:
 - porting to OpenGL,sample
@@ -8,16 +8,16 @@ keywords:
 - X Window System,sample
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0fe7be4c09c27d0a4fceb591e52674a4bbdf54361e6e752e9306e6fc19b9280
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ac03fdc0dac707f2a14d62d7955fa7533957f4de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120128355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272116"
 ---
 # <a name="an-x-window-system-opengl-program"></a>Un programa OpenGL del sistema de ventanas X
 
-El programa siguiente es un programa X Window System OpenGL con el mismo código OpenGL que se usa en AUXEDEMO. Programa de ejemplo de C proporcionado con el SDK de la plataforma de Microsoft. Compare este programa con el Windows OpenGL en [El programa portado a Windows](the-program-ported-to-win32.md).
+El programa siguiente es un programa X Window System OpenGL con el mismo código OpenGL que se usa en EL AUXILIAREDEMO. Programa de ejemplo de C proporcionado con el SDK de plataforma de Microsoft. Compare este programa con el programa Windows OpenGL en [El programa portado a Windows](the-program-ported-to-win32.md).
 
 
 ```C++

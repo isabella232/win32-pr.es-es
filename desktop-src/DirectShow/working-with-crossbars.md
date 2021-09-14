@@ -4,12 +4,12 @@ ms.assetid: 6e8ee9c3-6776-498b-ad38-36f8172a27ae
 title: Trabajar con barras cruzadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53686250b423c0bed245650be604fd8ec4b6a6ce713e5cde8582c66c8c4dc88f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a3d3a1c43703ac662d44854b0fc6bad8b280c368
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119964445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272599"
 ---
 # <a name="working-with-crossbars"></a>Trabajar con barras cruzadas
 
@@ -61,7 +61,7 @@ Una vez que tenga un puntero a la interfaz **IAMCrossbar,** puede obtener inform
 -   Para determinar si puede enrutar un pin de entrada a un pin de salida determinado, llame al [**método IAMCrossbar::CanRoute.**](/windows/desktop/api/Strmif/nf-strmif-iamcrossbar-canroute)
 -   Para determinar el enrutamiento actual entre los pines, llame al [**método IAMCrossbar::get \_ IsRoutedTo.**](/windows/desktop/api/Strmif/nf-strmif-iamcrossbar-get_isroutedto)
 
-Todos los métodos anteriores especifican pins por número de índice, con pins de salida y de entrada indexados desde cero. Llame al **método IAMCrossbar::get \_ PinCounts** para buscar el número de pines en el filtro.
+Todos los métodos anteriores especifican los pins por número de índice, con los pins de salida y los de entrada indexados desde cero. Llame al **método IAMCrossbar::get \_ PinCounts** para buscar el número de pines en el filtro.
 
 Por ejemplo, el código siguiente muestra información sobre un filtro de barra cruzada en la ventana de consola:
 
@@ -166,7 +166,7 @@ Input pin 3 - Audio tuner
 
 
 
-En el lado de salida, S-Video y el afinador de vídeo están relacionados con el descodificador de audio. En el lado de entrada, el afinador de vídeo está relacionado con el afinador de audio y S-Video está relacionado con la línea de audio de . La entrada S-Video se enruta a la salida de S-Video. y la entrada del afinador de vídeo se enruta a la salida del afinador de vídeo. Actualmente no se enruta nada al descodificador de audio, pero la línea de audio de o el afinador de audio se podrían enrutar a él.
+En el lado de salida, S-Video y el afinador de vídeo están relacionados con el descodificador de audio. En el lado de entrada, el afinador de vídeo está relacionado con el afinador de audio y S-Video está relacionado con la línea de audio de . La entrada S-Video se enruta a la salida de S-Video; y la entrada del afinador de vídeo se enruta a la salida del afinador de vídeo. Actualmente no se enruta nada al descodificador de audio, pero la línea de audio de o el afinador de audio se podrían enrutar a él.
 
 Puede cambiar el enrutamiento existente llamando al [**método IAMCrossbar::Route.**](/windows/desktop/api/Strmif/nf-strmif-iamcrossbar-route)
 

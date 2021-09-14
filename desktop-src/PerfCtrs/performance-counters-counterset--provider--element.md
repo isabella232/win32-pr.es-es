@@ -1,7 +1,7 @@
 ---
 description: Contiene una lista de contadores que están relacionados lógicamente.
 ms.assetid: 0a0405c9-7487-43e0-afef-d6c6ba75c9bf
-title: counterSet (proveedor) (elemento)
+title: counterSet (provider) (Elemento)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -10,13 +10,13 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 642d5338f8ca60286ec2760e4fd19d3618670985
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360699"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250658"
 ---
-# <a name="counterset-provider-element"></a>counterSet (proveedor) (elemento)
+# <a name="counterset-provider-element"></a>counterSet (provider) (Elemento)
 
 Contiene una lista de contadores que están relacionados lógicamente.
 
@@ -26,7 +26,7 @@ Contiene una lista de contadores que están relacionados lógicamente.
  />
 ```
 
-El elemento **counterSet** se define mediante el tipo complejo del [**proveedor**](performance-counters-provider-complex-type.md) .
+El tipo complejo del proveedor [](performance-counters-provider-complex-type.md) define el elemento **counterSet.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,19 +34,19 @@ El elemento **counterSet** se define mediante el tipo complejo del [**proveedor*
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elementos primarios**
 </dt> <dt>
 
-[**proveedor (contadores)**](performance-counters-provider--counters--element.md)
+[**provider (contadores)**](performance-counters-provider--counters--element.md)
 </dt> </dl>
 
  

@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Proveedor de contador de rendimiento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0c846d66cd183e866623004cacfbcb630ac68480fab8dd58eca2b5a4dc6d2f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9288da5ac20bff6340950ba2a3506d9128200cfe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119050533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063944"
 ---
 # <a name="performance-counter-provider"></a>Proveedor de contador de rendimiento
 

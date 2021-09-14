@@ -4,12 +4,12 @@ ms.assetid: 80e0b229-ebdc-4ac1-8e8e-9e5b7cfc3ab5
 title: Protocolos por capas y cadenas de protocolo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e60943bac5545fd7bb2bc87709d08c59d3addab205d14cab80687596721b973
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bacf74a11dffca9d8c49c61af82132857f5510e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063975"
 ---
 # <a name="layered-protocols-and-protocol-chains"></a>Protocolos por capas y cadenas de protocolo
 

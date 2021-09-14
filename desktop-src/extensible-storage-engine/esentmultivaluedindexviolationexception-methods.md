@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102326
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 6513ab2791d582c15edd0931d8b38b4f99e9aff7367570a0a2e41262bf17ebe5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49ad284c3d9cb2c2d9715bd4ceac595233ace0b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119040581"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248991"
 ---
 # <a name="esentmultivaluedindexviolationexception-methods"></a>Métodos de EsentMultiValuedIndexViolationException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentMultiValuedIndexViolationException](./esentmultivaluedindexviolationexception-class.md) expone los siguientes miembros.
+El [tipo EsentMultiValuedIndexViolationException](./esentmultivaluedindexviolationexception-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -78,7 +78,7 @@ El [tipo EsentMultiValuedIndexViolationException](./esentmultivaluedindexviolati
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

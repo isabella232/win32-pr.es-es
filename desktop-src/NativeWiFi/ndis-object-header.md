@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - ntddndis.h
-ms.openlocfilehash: f9f4a4ef2a833081cde0c3c7ca4d395e59743944291a95d7680c241191988b35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe28a87eeb1457bace0b72a386bcb07667b24a64
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069456"
 ---
 # <a name="ndis_object_header-structure"></a>Estructura NDIS \_ OBJECT \_ HEADER
 
@@ -37,7 +37,7 @@ typedef struct _NDIS_OBJECT_HEADER {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -58,7 +58,7 @@ Especifica el número de revisión de esta estructura.
 **Tamaño**
 </dt> <dd>
 
-Especifica el tamaño total, en bytes, de la estructura NDIS que contiene **el NDIS \_ OBJECT \_ HEADER**. Este tamaño incluye el tamaño del miembro **\_ OBJECT HEADER \_ de NDIS** y de todos los demás miembros de la estructura.
+Especifica el tamaño total, en bytes, de la estructura NDIS que contiene **el encabezado de objeto \_ de \_ NDIS.** Este tamaño incluye el tamaño del miembro **\_ OBJECT HEADER \_ de NDIS** y todos los demás miembros de la estructura.
 
 </dd> </dl>
 
@@ -68,14 +68,14 @@ Especifica el tamaño total, en bytes, de la estructura NDIS que contiene **el N
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                       |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                                                        |
-| Header<br/>                   | <dl> <dt>Ntddndis.h (incluye Windot11.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntddndis.h (incluya Windot11.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

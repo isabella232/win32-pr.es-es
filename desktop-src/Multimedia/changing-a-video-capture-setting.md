@@ -8,11 +8,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 3b3f2629325c67bcad1fed26a9fed4d053372392
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371348"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272324"
 ---
 # <a name="changing-a-video-capture-setting"></a>Cambiar una configuración de captura de vídeo
 

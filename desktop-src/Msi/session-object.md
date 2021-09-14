@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 7b02d1f617f7e558acd9c0423dd785c84e0175f195ee0085b2fdc79d66054683
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c391249d5ccc58fe9a947c9db761a77521c9776d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119628925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272484"
 ---
 # <a name="session-object-windows-installer"></a>Objeto Session (Windows Installer)
 
@@ -26,7 +26,7 @@ El **objeto Session** controla el proceso de instalación. Se abre la base de da
 
 Tenga en cuenta que solo un **proceso** puede abrir un objeto Session.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto Session** tiene estos tipos de miembros:
 
@@ -45,7 +45,7 @@ El **objeto Session** tiene estos métodos.
 | [**EvaluateCondition**](session-evaluatecondition.md) | Evalúa una expresión lógica que contiene símbolos y valores y devuelve un entero de la enumeración msiEvaluateConditionErrorEnum.<br/>                                                                                                                          |
 | [**FeatureInfo**](session-featureinfo.md)             | Devuelve un [**objeto FeatureInfo**](featureinfo-object.md) que contiene información descriptiva para la característica especificada.<br/>                                                                                                                                       |
 | [**FormatRecord**](session-formatrecord.md)           | Devuelve una cadena con formato a partir de datos de plantilla y registro.<br/>                                                                                                                                                                                                      |
-| [**Message**](session-message.md)                     | Realiza las operaciones de registro habilitadas y aplaza la ejecución al objeto de controlador de interfaz de usuario asociado al motor.<br/>                                                                                                                                              |
+| [**Mensaje**](session-message.md)                     | Realiza las operaciones de registro habilitadas y aplaza la ejecución al objeto de controlador de interfaz de usuario asociado al motor.<br/>                                                                                                                                              |
 | [**Secuencia**](session-sequence.md)                   | Abre una consulta en la tabla especificada, ordenando las acciones por los números de la columna Secuencia. Para cada fila capturada, se llama al [**método DoAction,**](session-doaction.md) siempre que cualquier expresión de condición proporcionada no se evalúe como False.<br/> |
 | [**SetInstallLevel**](session-setinstalllevel.md)     | Establece el nivel de instalación de la instalación actual en un valor especificado y vuelve a calcular los estados Select e Installed para todas las características.<br/>                                                                                                                    |
 
@@ -67,15 +67,15 @@ El **objeto Session** tiene estas propiedades.
 | [**Base de datos**](session-database.md)<br/>                           |                       | Devuelve la base de datos de la sesión de instalación actual.<br/>                                                                                                      |
 | [**FeatureCost**](session-featurecost.md)<br/>                     |                       | Devuelve la cantidad total de espacio en disco (en unidades de 512 bytes) que requiere la característica especificada y sus características primarias (hasta la raíz de la tabla Característica).<br/> |
 | [**FeatureCurrentState**](session-featurecurrentstate.md)<br/>     |                       | Devuelve el estado instalado actual de la característica designada.<br/>                                                                                                  |
-| [**FeatureRequestState**](session-featurerequeststate.md)<br/>     | Lectura/escritura<br/> | Obtiene o solicita un cambio en el estado Select de los registros y subrecords de una característica.<br/>                                                                          |
+| [**FeatureRequestState**](session-featurerequeststate.md)<br/>     | Lectura y escritura<br/> | Obtiene o solicita un cambio en el estado Select de los registros y subrecords de una característica.<br/>                                                                          |
 | [**FeatureValidStates**](session-featurevalidstates.md)<br/>       |                       | Devuelve un entero que representa marcas de bits con cada bit pertinente que representa un estado de instalación válido para la característica especificada.<br/>                             |
 | [**Instalador**](session-installer.md)<br/>                         |                       | Devuelve el objeto del instalador activo.<br/>                                                                                                                            |
 | [**Language (objeto session)**](session-language.md)<br/>          |                       | Representa el identificador de idioma numérico utilizado por la sesión de instalación actual.<br/>                                                                            |
 | [**Modo**](session-mode.md)<br/>                                   |                       | Esta propiedad es un valor que representa la marca de modo designado para la sesión de instalación actual.<br/>                                                            |
 | [**ProductProperty**](session-productproperty.md)<br/>             |                       | Representa el valor de cadena de una propiedad de instalador con nombre.<br/>                                                                                                      |
-| [**Propiedad (objeto Session)**](session-session.md)<br/>           | Lectura/escritura<br/> | Recupera las propiedades del producto de la base de datos del producto.<br/>                                                                                                         |
+| [**Propiedad (objeto Session)**](session-session.md)<br/>           | Lectura y escritura<br/> | Recupera las propiedades del producto de la base de datos del producto.<br/>                                                                                                         |
 | [**SourcePath**](session-sourcepath.md)<br/>                       |                       | Proporciona la ruta de acceso completa a la carpeta designada en el medio de origen o la imagen del servidor.<br/>                                                                            |
-| [**TargetPath**](session-targetpath.md)<br/>                       | Lectura/escritura<br/> | Proporciona la ruta de acceso completa a la carpeta designada en la unidad de destino de instalación.<br/>                                                                               |
+| [**TargetPath**](session-targetpath.md)<br/>                       | Lectura y escritura<br/> | Proporciona la ruta de acceso completa a la carpeta designada en la unidad de destino de instalación.<br/>                                                                               |
 | [**VerifyDiskSpace**](session-verifydiskspace.md)<br/>             |                       | Devuelve true si existe suficiente espacio en disco y false si el disco está lleno.<br/>                                                                                        |
 
 
@@ -94,7 +94,7 @@ El **objeto Session** tiene estas propiedades.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

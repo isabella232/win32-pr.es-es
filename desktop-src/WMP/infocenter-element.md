@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a1d89e7a35d0d9daacd87d3ac840f0ee87fa7c82b317afd54c9283344e204f8a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef62e0f6b41090642400a7f0a8b88af72818da4c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118576264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249615"
 ---
 # <a name="infocenter-element"></a>Elemento InfoCenter
 
@@ -42,7 +42,7 @@ El **elemento InfoCenter** especifica la dirección URL de la página web que Re
 <span id="URL__required_"></span><span id="url__required_"></span><span id="URL__REQUIRED_"></span>**Dirección URL** (obligatorio)
 </dt> <dd>
 
-Dirección URL de la página web que Reproductor de Windows Media muestra.
+Dirección URL de la página web Reproductor de Windows Media muestra.
 
 </dd> </dl>
 
@@ -63,13 +63,13 @@ Dirección URL de la página web que Reproductor de Windows Media muestra.
 
 El usuario controla cuándo está activa la vista del Centro de información.
 
-Para recuperar información sobre el elemento multimedia que se está reproduciendo actualmente, debe insertar una instancia de control Reproductor de Windows Media en la página web y usar el modelo de objetos Player.
+Para recuperar información sobre el elemento multimedia que se está reproduciendo actualmente, debe insertar una instancia de Reproductor de Windows Media control en la página web y usar el modelo de objetos Player.
 
 En la tabla siguiente se detallan los parámetros enviados con la solicitud de dirección URL. Otros pueden estar presentes con fines de compatibilidad heredados.
 
 
 
-| Nombre         | Valor                                                                                                                                                               |
+| Nombre         | Value                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *Geoid*      | Windows de ubicación geográfica. El usuario especifica el identificador de  ubicación en el área Ubicación de la configuración Regional e Idioma de Panel de control. |
 | *locale*     | Reproductor de Windows Media de configuración regional.                                                                                                                                     |
@@ -84,7 +84,7 @@ En la tabla siguiente se detallan los parámetros enviados con la solicitud de d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|----------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 10 o posterior.<br/> |
 
@@ -94,7 +94,7 @@ En la tabla siguiente se detallan los parámetros enviados con la solicitud de d
 
 <dl> <dt>
 
-[**Documento ServiceInfo de ejemplo para una tienda en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo de ejemplo para un almacén en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo de ejemplo para una tienda en línea de tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)

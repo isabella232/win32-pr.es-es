@@ -4,14 +4,14 @@ ms.assetid: a0709367-9105-43af-9772-0161d94c098a
 title: LINE_AGENTSTATUSEX mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abc622d1df7b9d86009822f9920cf9f510c68b71a28952a4146e98bdbe69e9da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c9ff1a39fd6aacf69922693a54198426d267720
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119405235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250232"
 ---
-# <a name="line_agentstatusex-message"></a>MENSAJE \_ LINE AGENTSTATUSEX
+# <a name="line_agentstatusex-message"></a>MENSAJE \_ DE LINE AGENTSTATUSEX
 
 El **mensaje \_ LINE AGENTSTATUSEX** se envía cuando cambia el estado de un agente de ACD en un controlador de agente para el que la aplicación tiene actualmente una línea abierta. Este mensaje se genera mediante la [**función lineProxyMessage.**](/windows/desktop/api/Tapi/nf-tapi-lineproxymessage)
 
@@ -70,11 +70,11 @@ De lo contrario, *dwParam3* se establece en cero.
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

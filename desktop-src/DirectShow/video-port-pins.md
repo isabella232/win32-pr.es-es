@@ -4,12 +4,12 @@ ms.assetid: a6be24e5-7937-48f1-abeb-3f29c3deeafd
 title: Patillas de puerto de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94202e05cc467eabb77719a145a77310a62482e6f82772261b57e5ff544d2b63
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4d13ab4ad63995dd38460bf29064035c9c1802dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119696794"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272916"
 ---
 # <a name="video-port-pins"></a>Patillas de puerto de vídeo
 
@@ -23,7 +23,7 @@ Los distintos DirectShow representadores de vídeo proporcionan una compatibilid
 -   VMR-7: Conectar el pin de VP al filtro [Administrador](video-port-manager.md) de puertos de vídeo y conecte el Administrador de puertos de vídeo a VMR-7.
 -   VMR-9: no se puede usar VMR-9 si el dispositivo tiene un pin de VP, porque Direct3D 9 no admite puertos de vídeo. Use el representador de vídeo o VMR-7.
 
-En el caso de los escenarios de puerto de vídeo, se recomienda superponer Mixer y Representador de vídeo sobre el Administrador de puertos de vídeo y VMR-7, ya que no todos los controladores admiten el Administrador de puertos de vídeo. En general, el Mixer es la opción más confiable para los puertos de vídeo.
+En escenarios de puerto de vídeo, se recomienda superponer Mixer y Representador de vídeo sobre el Administrador de puertos de vídeo y VMR-7, ya que no todos los controladores admiten el Administrador de puertos de vídeo. En general, la opción Overlay Mixer es la opción más confiable para los puertos de vídeo.
 
 El [**método ICaptureGraphBuilder2::RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) inserta automáticamente la propiedad Overlay Mixer si hay un pin de VP. Si va a compilar el gráfico sin usar este método, debe comprobar si hay un pin de puerto de vídeo en el filtro de captura y, si hay alguno, conectarlo al filtro Overlay Mixer, como se muestra en el diagrama siguiente.
 

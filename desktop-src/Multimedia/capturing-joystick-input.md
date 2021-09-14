@@ -1,22 +1,22 @@
 ---
-title: Captura de entrada de entradas de entrada
-description: Captura de entrada de entradas de entrada
+title: Captura de entradas de entrada
+description: Captura de entradas de entrada
 ms.assetid: 1214fe5a-5a6a-4c6c-9b77-94eeb73f60da
 keywords:
 - entradas de captura
-- captura de entrada de input
+- captura de entrada de entrada
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b23fd3717ad09fd2e52f1a815f7d13b91963a13e
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371161"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272359"
 ---
-# <a name="capturing-joystick-input"></a>Captura de entrada de entradas de entrada
+# <a name="capturing-joystick-input"></a>Captura de entradas de entrada
 
-La mayor parte del código que controla el eje está en la función de ventana principal. En la siguiente parte del controlador de mensajes, la aplicación llama [**alegSetCapture para**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture) capturar la entrada desde el valor DEONID1.
+La mayor parte del código que controla el eje está en la función de ventana principal. En la siguiente parte del controlador de mensajes, la aplicación llama [**a hastasetCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture) para capturar la entrada de la entrada DELID1.
 
 
 ```C++

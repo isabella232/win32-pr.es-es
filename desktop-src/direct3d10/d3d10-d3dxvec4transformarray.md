@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 2c6fdcdd2a404e4122a0c8c66995fdabaf1284dfa67ebade888d2964c0c1fb8a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5571fb19786e19a61c85741bcf6d4acb5231e977
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119852805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063818"
 ---
 # <a name="d3dxvec4transformarray-function-d3dx10mathh"></a>Función D3DXVec4TransformArray (D3DX10Math.h)
 
@@ -104,7 +104,7 @@ Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
 Puntero a una [**estructura D3DXVECTOR4**](d3d10-d3dxvector4.md) que es la matriz transformada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función transforma la matriz pV (x, y, z, w) por la matriz pM.
 
@@ -120,7 +120,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

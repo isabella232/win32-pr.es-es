@@ -4,16 +4,16 @@ ms.assetid: 053edb70-8631-4fe4-a137-2fe54e02ab9e
 title: VMR con varias Secuencias (modo de combinación)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88f958d8c95372325229dffc1cc37aff579213c48940f93ad090d0fbd9359b79
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a21a954b0ad78afbceabf0fde493f920961b90dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119290785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272772"
 ---
 # <a name="vmr-with-multiple-streams-mixing-mode"></a>VMR con varias Secuencias (modo de combinación)
 
-VmR puede representar varios flujos de entrada. En esta configuración, denominada modo de combinación, vmr carga su mezclador y compositor para realizar la mezcla y la mezcla antes de la representación. El modo de combinación se puede usar mientras vmr está en modo de ventana o sin ventana.
+VmR puede representar varios flujos de entrada. En esta configuración, denominada modo de combinación, el VMR carga su mezclador y compositor para realizar la mezcla y la mezcla antes de la representación. El modo de combinación se puede usar mientras vmr está en modo de ventana o sin ventana.
 
 El modo de combinación requiere que el controlador de gráficos admita las marcas de funcionalidad DDCAPS \_ BLTFOURCC y DDCAPS BLTSTRETCH (conversión de espacio de color y borrado \_ elástico, respectivamente). Casi todos los controladores de gráficos nuevos tienen esas funcionalidades. Además, el controlador debe admitir la creación de destinos de representación de Direct3D para la profundidad de píxeles de presentación actual. Algunos dispositivos no admiten operaciones de Direct3D cuando la pantalla está establecida en 24 bits por píxel. Para más información, consulte la documentación del SDK de gráficos de DirectX.
 
@@ -34,7 +34,7 @@ Para representar varios flujos de entrada con VMR-7, haga lo siguiente:
 
 **Configuración de VMR-9 para varias Secuencias**
 
-De forma predeterminada, VMR-9 crea cuatro pines de entrada. Si desea mezclar más de cuatro secuencias de vídeo, llame a [**IVMRFilterConfig9::SetNumberOfStreams**](/previous-versions/windows/desktop/api/Vmr9/nf-vmr9-ivmrfilterconfig9-setnumberofstreams) antes de conectar los pines de entrada. Use la [**interfaz IVMRMixerControl9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrmixercontrol9) para establecer los parámetros de flujo, como alfa, orden Z y posición.
+De forma predeterminada, VMR-9 crea cuatro pines de entrada. Si desea mezclar más de cuatro secuencias de vídeo, llame a [**IVMRFilterConfig9::SetNumberOfStreams**](/previous-versions/windows/desktop/api/Vmr9/nf-vmr9-ivmrfilterconfig9-setnumberofstreams) antes de conectar los pines de entrada. Use la [**interfaz IVMRMixerControl9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrmixercontrol9) para establecer los parámetros de secuencia, como alfa, orden Z y posición.
 
 ## <a name="related-topics"></a>Temas relacionados
 

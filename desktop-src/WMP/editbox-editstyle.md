@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4d40d1933c68c4e34707f01a4d425045c773297e8567ba8ea13a88c6fbc57c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 229f225dfca0ec00dd4f45a4eb63f6b2503d5df1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117749466"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068444"
 ---
 # <a name="editboxeditstyle"></a>EDITBOX.editStyle
 
@@ -46,7 +46,7 @@ Este atributo es una cadena de **lectura** y escritura que contiene uno de los v
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se puede establecer en "contraseña" o "multilínea" en tiempo de diseño. Si se establece en "multilínea", el valor no se puede cambiar en tiempo de ejecución.
 
@@ -56,11 +56,11 @@ Este atributo solo se puede establecer en "contraseña" o "multilínea" en tiemp
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

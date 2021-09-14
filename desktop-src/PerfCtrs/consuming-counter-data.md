@@ -4,12 +4,12 @@ ms.assetid: a42f6cdd-47e9-4f43-aeaf-37a5abb0fa36
 title: Consumo de datos de contador
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: f3abcc6dd5a385ebffdc887516613efb76b53359e5f8995bc28ba7f6239187b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8c50b29d8f898f544b021f7fe3f3fd0d4a2094e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119775685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069193"
 ---
 # <a name="consuming-counter-data"></a>Consumo de datos de contador
 

@@ -13,12 +13,12 @@ keywords:
 - extensiones, transferencia acelerada de metadatos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a3a264b0233315d2fe1fb1c5f21121c7273c31d362724e073ba50672c5fb138
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cbe661dff0750f2ad46bef96e537b0852d480db8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117749817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068469"
 ---
 # <a name="device-extensions-for-accelerated-metadata-transfer"></a>Extensiones de dispositivo para la transferencia acelerada de metadatos
 

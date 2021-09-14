@@ -3,8 +3,8 @@ title: Método IWMDRMDevice GetDeviceCertificate
 description: El método GetDeviceCertificate recupera el certificado de dispositivo.
 ms.assetid: 9e345bf9-a158-4c0e-a9f1-e4ce3ec16b58
 keywords:
-- Método GetDeviceCertificate de Windows Media Administrador de dispositivos
-- Método GetDeviceCertificate de Windows Media Administrador de dispositivos , interfaz IWMDRMDevice
+- Método GetDeviceCertificate windows Media Administrador de dispositivos
+- Método GetDeviceCertificate windows Media Administrador de dispositivos , interfaz IWMDRMDevice
 - Interfaz IWMDRMDevice windows Media Administrador de dispositivos , método GetDeviceCertificate
 topic_type:
 - apiref
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 299233ff4344f44535933221141534ab2b0173ba54e47c9cc340020a2f462eb3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f9ceecca32f2455d73ca1dce76a4f8a17613a1ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119619825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068509"
 ---
-# <a name="iwmdrmdevicegetdevicecertificate-method"></a>Método IWMDRMDevice::GetDeviceCertificate
+# <a name="iwmdrmdevicegetdevicecertificate-method"></a>IWMDRMDevice::GetDeviceCertificate (método)
 
 El **método GetDeviceCertificate** recupera el certificado de dispositivo.
 
@@ -75,11 +75,11 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IWMDRMDevice**](iwmdrmdevice.md)
+[**IWMDRMDevice (interfaz)**](iwmdrmdevice.md)
 </dt> </dl>
 
  

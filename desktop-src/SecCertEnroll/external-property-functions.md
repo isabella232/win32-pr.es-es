@@ -4,12 +4,12 @@ ms.assetid: a6433416-fe77-4bb0-bd8e-9410a49ab861
 title: Funciones de propiedad externa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40196f4f42823ad44debeccc0fa85dc4615d58d1a0ccf521b2dd796e72574db3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 26c8148022bf604aa90780787c068b330c469ae6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117779635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069029"
 ---
 # <a name="external-property-functions"></a>Funciones de propiedad externa
 
@@ -77,7 +77,7 @@ Además, si inicializa una solicitud de CMC desde una solicitud interna y una pl
 
 La [**función ThumbPrintWStr**](/windows/desktop/api/xenroll/nf-xenroll-ienroll4-get_thumbprintwstr) Xenroll.dll especifica o recupera el valor del hash del certificado.
 
-En CertEnroll.dll, puede usar el objeto [**ICertPropertySHA1Hash**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertysha1hash) para recuperar un [*valor hash*](/windows/desktop/SecGloss/h-gly) [*(huella*](/windows/desktop/SecGloss/t-gly)digital) creado llamando al [**método InitializeFromCertificate.**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-initializefromcertificate)
+En CertEnroll.dll, puede usar el objeto [**ICertPropertySHA1Hash**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertysha1hash) para recuperar un [*valor hash*](/windows/desktop/SecGloss/h-gly) [*(huella*](/windows/desktop/SecGloss/t-gly)digital) creado mediante una llamada al [**método InitializeFromCertificate.**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs7-initializefromcertificate)
 
 ## <a name="related-topics"></a>Temas relacionados
 

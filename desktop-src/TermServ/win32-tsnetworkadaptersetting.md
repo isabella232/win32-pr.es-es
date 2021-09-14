@@ -29,16 +29,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bddc43fc651b8107d56b63876b251f7973c6a11ecbdbbd5ee22e6dfec4338f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f2f2f1ac7d6bf4b1fd3fb5f5a92fc4fd5260a92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118348550"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068569"
 ---
 # <a name="win32_tsnetworkadaptersetting-class"></a>Clase \_ TSNetworkAdapterSetting de Win32
 
-La clase WMI **Win32 \_ TSNetworkAdapterSetting** define varias opciones de configuración para la clase [**\_ Terminal Win32,**](win32-terminal.md) incluidas las propiedades relacionadas con el adaptador de red y el número máximo de conexiones permitidas.
+La clase WMI **\_ TSNetworkAdapterSetting de Win32** define varias opciones de configuración para la clase [**\_ terminal Win32,**](win32-terminal.md) incluidas las propiedades relacionadas con el adaptador de red y el número máximo de conexiones permitidas.
 
 La sintaxis siguiente se simplifica a partir del código MOF e incluye todas las propiedades definidas y heredadas, en orden alfabético. Para obtener información de referencia sobre los métodos, vea la tabla de métodos más adelante en este tema.
 
@@ -64,7 +64,7 @@ class Win32_TSNetworkAdapterSetting : Win32_TerminalSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSNetworkAdapterSetting de Win32** tiene estos tipos de miembros:
 
@@ -79,7 +79,7 @@ La **clase \_ TSNetworkAdapterSetting de Win32** tiene estos métodos.
 
 | Método                                                                                     | Descripción                                                                                              |
 |:-------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-| [**SelectAllNetworkAdapters**](win32-tsnetworkadaptersetting-selectallnetworkadapters.md) | Selecciona todos los adaptadores de red.<br/>                                                                 |
+| [**SeleccioneAllNetworkAdapters.**](win32-tsnetworkadaptersetting-selectallnetworkadapters.md) | Selecciona todos los adaptadores de red.<br/>                                                                 |
 | [**SeleccioneNetworkAdapterIP.**](win32-tsnetworkadaptersetting-selectnetworkadapterip.md)     | Selecciona un adaptador de red basado en la dirección IP del adaptador.<br/>                                  |
 | [**SetNetworkAdapterLanaID**](setnetworkadapterlanaid-win32-tsnetworkadaptersetting.md)   | Especifica el número de adaptador de red de área local (LANA) de NetBIOS del adaptador de red que se establecerá.<br/> |
 
@@ -135,7 +135,7 @@ Tipo de datos: **matriz de** cadenas
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de cadenas de los IDs de dispositivo disponibles devueltos en el orden de los adaptadores de red físicos devueltos en la **matriz de propiedades NetworkAdapterList.** El valor del identificador de dispositivo es la **propiedad DeviceID** [**en Win32 \_ NetworkAdapter.**](/windows/desktop/CIMWin32Prov/win32-networkadapter)
+Matriz de cadenas de los IDs de dispositivo disponibles devueltos en el orden de los adaptadores de red físicos devueltos en la **matriz de propiedades NetworkAdapterList.** El valor del identificador de dispositivo es la **propiedad DeviceID** [**en Win32 \_ NetworkAdapter**](/windows/desktop/CIMWin32Prov/win32-networkadapter)
 
 </dd> <dt>
 
@@ -220,7 +220,7 @@ Tipo de datos: **matriz de** cadenas
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de cadenas de adaptadores de red físicos disponibles y los correspondientes iDs de dispositivo. Los id. de dispositivo son la **propiedad DeviceID** en [**Win32 \_ NetworkAdapter.**](/windows/desktop/CIMWin32Prov/win32-networkadapter)
+Matriz de cadenas de adaptadores de red físicos disponibles y los correspondientes iDs de dispositivo. Los id. de dispositivo son la **propiedad DeviceID** en [**Win32 \_ NetworkAdapter**](/windows/desktop/CIMWin32Prov/win32-networkadapter).
 
 </dd> <dt>
 
@@ -267,7 +267,7 @@ Directiva de grupo
 2
 </dt> <dd>
 
-Predeterminado
+Valor predeterminado
 
 </dd> </dl>
 
@@ -285,7 +285,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -364,11 +364,11 @@ Esta propiedad se hereda de [**\_ TerminalSetting de Win32.**](win32-terminalset
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Tenga en cuenta que las winstations asociadas a la sesión de consola no pueden tener acceso a los métodos y propiedades de esta clase. Si se intenta hacerlo especificando "Console" como valor de la propiedad TerminalName, los métodos de este objeto **devuelven WBEM \_ E NOT \_ \_ SUPPORTED**. Este código de error también se devuelve si una estación de ventana intenta llamar a métodos de este objeto para agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
 
-Para conectarse al espacio de nombres \\ "Root CIMV2 TerminalServices", el nivel de autenticación \\ debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio de nombres \\ "Root CIMV2 TerminalServices", el nivel de autenticación \\ debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -385,7 +385,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -395,7 +395,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

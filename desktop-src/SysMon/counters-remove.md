@@ -3,9 +3,9 @@ title: Método Counters.Remove
 description: Quita una instancia counterItem de la colección.
 ms.assetid: 88e5907a-8c8f-4a24-9c5d-0c592f61dac0
 keywords:
-- Quitar el método SysMon
-- Remove method SysMon , Counters (Clase)
-- Clase Counters SysMon , Remove (método)
+- Método Remove SysMon
+- Método Remove SysMon , Clase Counters
+- Método SysMon , Remove de la clase Counters
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77226d87c49fdfd2e9d8d26c2699bcb4606de29a21bf2bd20a12ad0b70d6daa4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa82a1a988be3554c265c097ba2a582035547391
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117956657"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068865"
 ---
 # <a name="countersremove-method"></a>Método Counters.Remove
 
@@ -65,7 +65,7 @@ Este método no devuelve ningún valor.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para quitar todos los contadores de la colección, puede llamar a [**SystemMonitor.Reset**](systemmonitor-reset.md).
 
@@ -73,7 +73,7 @@ Para quitar todos los contadores de la colección, puede llamar a [**SystemMonit
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
@@ -81,7 +81,7 @@ Para quitar todos los contadores de la colección, puede llamar a [**SystemMonit
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

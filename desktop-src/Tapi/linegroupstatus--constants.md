@@ -4,14 +4,14 @@ ms.assetid: 18afe11d-24cc-4897-ad59-a47598fe507f
 title: LINEGROUPSTATUS_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99c40c9e850570d78f0079cd1c83ec700e60c825458617c6800a2a742cb9c28f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b006ca48a1ab25c925fa25ef810b1bd9e5880d22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119518955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068742"
 ---
-# <a name="linegroupstatus_-constants"></a>Constantes \_ LINEGROUPSTATUS
+# <a name="linegroupstatus_-constants"></a>LineGROUPSTATUS \_ (constantes)
 
 Las **constantes LINEGROUPSTATUS \_ especifican** el estado del grupo ACD.
 
@@ -41,10 +41,10 @@ Se ha agregado un grupo a la lista de los disponibles.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

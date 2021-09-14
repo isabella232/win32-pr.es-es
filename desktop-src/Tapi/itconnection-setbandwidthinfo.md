@@ -1,21 +1,21 @@
 ---
 description: El método SetBandwidthInfo establece la información de ancho de banda.
 ms.assetid: bf5db456-ea67-4a65-a681-df0741f73fc9
-title: 'ITConnection:: SetBandwidthInfo (método) (Sdpblb. h)'
+title: Método ITConnection::SetBandwidthInfo (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 5c17054743f6d47775e994dbfe3b80c7afe1ab68
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690198"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068744"
 ---
-# <a name="itconnectionsetbandwidthinfo-method"></a>ITConnection:: SetBandwidthInfo (método)
+# <a name="itconnectionsetbandwidthinfo-method"></a>ItConnection::SetBandwidthInfo (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **SetBandwidthInfo** establece la información de ancho de banda.
+El **método SetBandwidthInfo** establece la información de ancho de banda.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,17 +33,17 @@ HRESULT SetBandwidthInfo(
 
 <dl> <dt>
 
-*pModifier* \[ de\]
+*pModifier* \[ En\]
 </dt> <dd>
 
-Puntero a un **BSTR** que indica el ámbito del ancho de banda que se establece. Para obtener más información, vea la sección Comentarios que se muestra más adelante.
+Puntero a un **BSTR que** indica el ámbito del ancho de banda que se va a establecer. Para obtener más información, vea la sección Comentarios que se muestra más adelante.
 
 </dd> <dt>
 
-*Ancho de banda* \[ de\]
+*Ancho de banda* \[ En\]
 </dt> <dd>
 
-Consumo.
+Banda.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Este método puede devolver uno de estos valores.
 
 | Value                                                                                         | Significado                                                           |
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                      |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El parámetro *pModifier* o *Bandwidth* no es válido.<br/> |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/>   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                      |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El *parámetro pModifier* *o Bandwidth* no es válido.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/>   |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                     |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                    |
 
@@ -67,19 +67,19 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Observaciones
 
-La aplicación debe usar [**SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) para asignar memoria para el parámetro *PModifier* y usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar memoria cuando la variable ya no se necesite.
+La aplicación debe usar [**SysAllocString para**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) asignar memoria para el parámetro *pModifier* y usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar la memoria cuando la variable ya no sea necesaria.
 
 Referencia: RFC 2327.
 
-Normalmente, el modificador de ancho de banda será CT o como:
+Normalmente, el modificador de ancho de banda será CT o AS:
 
-**Total de la Conferencia CT:** Un ancho de banda máximo implícito se asocia a cada [*período*](t-tapgloss.md) de vida (TTL) en MBONE o en una región de ámbito administrativo de multidifusión determinada (las preguntas más frecuentes sobre el ancho de banda de MBONE en comparación con los límites de TTL). Si el ancho de banda de una sesión o un medio en una sesión es diferente del ancho de banda implícito del ámbito, a \` b = CT:... debe proporcionarse la línea para la sesión y proporcionar el límite superior propuesto al ancho de banda usado. El objetivo principal de esto es dar una idea aproximada de si dos o más conferencias pueden coexistir simultáneamente.
+**Total de conferencias de CT:** Se asocia un ancho [](t-tapgloss.md) de banda máximo implícito a cada período de vida (TTL) en Mional o dentro de una región de ámbito administrativo de multidifusión determinada (el ancho de banda de Mhz frente a los límites de TTL se dan en las preguntas más frecuentes de MBone). Si el ancho de banda de una sesión o un medio de una sesión es diferente del ancho de banda implícito del ámbito, \` b=CT:...' line debe proporcionarse para la sesión, lo que proporciona el límite superior propuesto al ancho de banda utilizado. El propósito principal de esto es dar una idea aproximada de si dos o más conferencias pueden coexistir simultáneamente.
 
-**Como Application-Specific máximo:** El ancho de banda se interpreta como específico de la aplicación, es decir, será el concepto de ancho de banda máximo de la aplicación. Normalmente, esto coincidirá con lo que se establece en el control de "ancho de banda máximo" de la aplicación, si procede.
+**As Application-Specific máximo:** El ancho de banda se interpreta como específico de la aplicación, es decir, será el concepto de ancho de banda máximo de la aplicación. Normalmente, esto coincidirá con lo que se establece en el control "ancho de banda máximo" de la aplicación, si procede.
 
-Tenga en cuenta que CT proporciona una figura de ancho de banda total para todos los medios en todos los sitios. COMO proporciona una figura de ancho de banda para un solo medio en un único sitio, aunque puede haber muchos sitios que se envíen simultáneamente.
+Tenga en cuenta que CT proporciona una cifra de ancho de banda total para todos los medios en todos los sitios. AS proporciona una figura de ancho de banda para un único medio en un único sitio, aunque puede haber muchos sitios enviando simultáneamente.
 
-**Mecanismo de extensión:** Los escritores de herramientas pueden definir modificadores de ancho de banda experimental al prefijar los modificadores con "X-".
+**Mecanismo de extensión:** Los escritores de herramientas pueden definir modificadores de ancho de banda experimentales antefiriendo sus modificadores con "X-".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,14 +87,14 @@ Tenga en cuenta que CT proporciona una figura de ancho de banda total para todos
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

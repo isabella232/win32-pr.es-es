@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50903baa9fe85685ef3390ee3d545dd7defff5288d0960d6a2d7ec6ebe2276ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ecf17cea6ffc19743868b266236738839f9f917
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119001703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249939"
 ---
 # <a name="cb_address_type-enumeration"></a>Enumeración \_ CB ADDRESS \_ TYPE
 
 Especifica el tipo de dirección.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -72,7 +72,7 @@ La dirección es una dirección IPv6.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                        |
-| Header<br/>                   | <dl> <dt>Cbclient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Cbclient.h</dt> </dl> |
 
 
 

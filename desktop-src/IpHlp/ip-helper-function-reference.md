@@ -4,12 +4,12 @@ ms.assetid: 2de88e92-5fa5-4d8d-9448-67a33bf02f05
 title: Referencia de aplicación auxiliar IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f4dd055c4d1c1d41e7a779292067147d24ba91b990b0ef10ecb1ecfbe2961a9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 42d8b59aed27565e65d1a6122abbece34178ccce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119822415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272532"
 ---
 # <a name="ip-helper-reference"></a>Referencia de aplicación auxiliar IP
 

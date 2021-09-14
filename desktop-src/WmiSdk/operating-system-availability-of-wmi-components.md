@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Disponibilidad del sistema operativo de los componentes WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e93ff29479fcba7d30a5872189d5db6894a16124c2f8667828511acddf92672
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f9261bd0c636c8f7fd7777d2ad38685ff3ea765
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119050603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063956"
 ---
 # <a name="operating-system-availability-of-wmi-components"></a>Disponibilidad del sistema operativo de los componentes WMI
 

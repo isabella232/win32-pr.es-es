@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ff02bef70b4003c4e7b6e9aff03e2d615f24d7e15707cddcae3a4637ff2b11f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72b7735c607dfc39b848532a70e4d24b1a14d346
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119002523"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068683"
 ---
 # <a name="boot-trigger-example-scripting"></a>Ejemplo de desencadenador de arranque (scripting)
 
 En este ejemplo de scripting se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando se inicia el sistema. La tarea contiene un desencadenador de arranque que especifica un límite de inicio y un tiempo de retraso para que la tarea se inicie después de arrancar el sistema. La tarea también contiene una acción que especifica la tarea que se ejecutará Bloc de notas. La tarea se registra mediante la cuenta de servicio local como contexto de seguridad para ejecutar la tarea.
 
-En el procedimiento siguiente se describe cómo programar un ejecutable como Bloc de notas iniciarse cuando se inicia el sistema.
+En el procedimiento siguiente se describe cómo programar un ejecutable como Bloc de notas iniciarse cuando se arranca el sistema.
 
 **Para programar Bloc de notas que se inicie cuando se arranque el sistema**
 
@@ -31,7 +31,7 @@ En el procedimiento siguiente se describe cómo programar un ejecutable como Blo
 5.  Cree una acción para que la tarea se ejecute mediante la [**propiedad TaskDefinition.Actions.**](taskdefinition-actions.md) Esta propiedad proporciona acceso al [**objeto ActionCollection.**](actioncollection.md) Use el [**método ActionCollection.Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto ExecAction,**](execaction.md) que representa una acción que inicia un ejecutable.
 6.  Registre la tarea mediante el [**método TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md) La tarea se registra mediante la cuenta de servicio local como contexto de seguridad para ejecutar la tarea.
 
-En el siguiente ejemplo de VBScript se muestra cómo programar una tarea para que se ejecute Bloc de notas 30 segundos después de arrancar el sistema.
+En el siguiente ejemplo de VBScript se muestra cómo programar una tarea para Bloc de notas 30 segundos después de que se inicie el sistema.
 
 
 ```VB

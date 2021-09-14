@@ -4,12 +4,12 @@ ms.assetid: 8600f48f-0ef5-4ac2-bdb9-6d9700cae306
 title: Referencia de contadores de rendimiento
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: ca2d7f0593aff143ab4612c5ed9489bb8a48c76e7726d2289f8387fcb38a257e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e716d44c08a847f7f64dc07bc4382faa9adf8f0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119775305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250593"
 ---
 # <a name="performance-counters-reference"></a>Referencia de contadores de rendimiento
 
@@ -28,7 +28,7 @@ En esta sección también se describe lo siguiente:
 - Los [elementos de esquema](performance-counters-schema.md) que se usan en el manifiesto del proveedor V2 para definir los contadores de rendimiento.
 - La [herramienta CTRPP](ctrpp.md) que analiza el manifiesto y genera el código que define el diseño de los datos del contador en el proveedor V2.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Acerca de los contadores de rendimiento](about-performance-counters.md)
 

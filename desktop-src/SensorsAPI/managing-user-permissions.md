@@ -4,22 +4,22 @@ ms.assetid: c755edcf-18c1-43d5-9dfe-c073e1f96b5f
 title: Administración de permisos de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f02fac57959b493683d0fe0a007602e5a7af3f78dc959d0e7eca2811595c23dc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ecb65fa5a9962be4850aa4711cafa03fb7658212
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119576264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068962"
 ---
 # <a name="managing-user-permissions"></a>Administración de permisos de usuario
 
 Sensor API proporciona un método que puede usar para solicitar al usuario permisos para usar un sensor o una colección de sensores.
 
-Dado que los sensores pueden revelar información confidencial, Windows que los usuarios habiliten los sensores antes de que el programa pueda acceder a cualquier dato.
+Dado que los sensores pueden revelar información confidencial, Windows que los usuarios habiliten sensores antes de que el programa pueda acceder a cualquier dato.
 
 Es posible que quiera solicitar permiso cuando desee usar sensores para los que [**sensorState**](/windows/win32/api/sensorsapi/ne-sensorsapi-sensorstate) actual sea SENSOR \_ STATE ACCESS \_ \_ DENIED.
 
-Para solicitar permisos, llame al [**método ISensorManager::RequestPermissions.**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensormanager-requestpermissions) Al llamar a este método, Windows el **cuadro** de diálogo Habilitar sensores para pedir al usuario que habilite los sensores que solicitó. Este cuadro de diálogo proporciona al usuario los nombres de los sensores que solicitó. El usuario puede elegir una de las siguientes opciones:
+Para solicitar permisos, llame al [**método ISensorManager::RequestPermissions.**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensormanager-requestpermissions) Al llamar a este método, Windows el **cuadro** de diálogo Habilitar sensores para solicitar al usuario que habilite los sensores solicitados. Este cuadro de diálogo proporciona al usuario los nombres de los sensores solicitados. El usuario puede elegir una de las siguientes opciones:
 
 -   **Habilite estos sensores.**
 -   **No habilite estos sensores.**
@@ -31,7 +31,7 @@ Si un usuario elige **No** habilitar estos sensores, Windows  volverá a mostrar
 
 El [**método RequestPermissions**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensormanager-requestpermissions) toma un argumento  **booleano** que determina si el cuadro de diálogo Habilitar sensores se muestra como una ventana modal o no modal. Esta configuración también afecta a si el comportamiento del código de retorno del cuadro de diálogo es sincrónico o asincrónico.
 
-Cuando es modal, el cuadro de diálogo tiene un foco exclusivo entre las ventanas de la aplicación hasta que el usuario elige una opción y el código de retorno **HRESULT** de la llamada a [**RequestPermissions**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensormanager-requestpermissions) indica la elección del usuario. Cuando se modela, el cuadro de diálogo no tiene el foco exclusivo y la llamada a **RequestPermissions** se devuelve inmediatamente. En este caso, el código de retorno indica si el método se ha correcto, pero no se puede usar para determinar la elección del usuario. A continuación, puede determinar qué sensores se han habilitado controlando el evento [**OnStateChanged**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-onstatechanged) y comprobando cada sensor para SENSOR \_ STATE \_ READY.
+Cuando es modal, el cuadro de diálogo tiene un foco exclusivo entre las ventanas de la aplicación hasta que el usuario elige una opción y el código de retorno **HRESULT** de la llamada a [**RequestPermissions**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensormanager-requestpermissions) indica la elección del usuario. Cuando se modela, el cuadro de diálogo no tiene un foco exclusivo y la llamada a **RequestPermissions** se devuelve inmediatamente. En este caso, el código de retorno indica si el método se ha correcto, pero no se puede usar para determinar la elección del usuario. A continuación, puede determinar qué sensores se han habilitado controlando el evento [**OnStateChanged**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-onstatechanged) y comprobando cada sensor para SENSOR \_ STATE \_ READY.
 
 Para obtener más información sobre los códigos de retorno, vea la [**página de referencia RequestPermissions.**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensormanager-requestpermissions)
 

@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 05cd80cbccf2c67baaeac2982c896a0c74ead227619bfb17517a039fadf24a52
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36fe1b9ceee1211a3b09ce70e03044b7af57eac2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119050543"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063950"
 ---
 # <a name="optional-qualifiers"></a>Calificadores opcionales
 
-Los calificadores opcionales abordan situaciones periódicas no comunes a todas las implementaciones compatibles con CIM, que no son necesarias para interpretar estos calificadores. En la especificación se proporcionan calificadores opcionales para evitar calificadores aleatorios definidos por el usuario que puedan producirse en estas situaciones periódicas.
+Los calificadores opcionales abordan situaciones periódicas no comunes a todas las implementaciones compatibles con CIM, que no son necesarias para interpretar estos calificadores. Los calificadores opcionales se proporcionan en la especificación para evitar calificadores aleatorios definidos por el usuario que puedan producirse en estas situaciones periódicas.
 
 <dt>
 
@@ -37,7 +37,7 @@ En el caso de las asociaciones, indica si se debe eliminar la asociación califi
 
 Para las referencias, este calificador indica si se debe eliminar el objeto al que se hace referencia si la asociación que contiene la referencia se elimina y se califica con **IfDeleted,** o si se elimina cualquiera de los objetos a los que se hace referencia en la asociación y el objeto correspondiente al que se hace referencia en la asociación se califica con **IfDeleted.**
 
-Uso: las aplicaciones deben realizar un seguimiento de las asociaciones y las referencias marcadas con el **calificador Delete** y eliminar la asociación o referencia adecuadamente. Si se ha eliminado un objeto de la asociación pero no está marcado con **IfDeleted**, no se debe eliminar la asociación.
+Uso: las aplicaciones deben realizar un seguimiento de las asociaciones y las referencias marcadas con **el calificador Eliminar** y eliminar la asociación o referencia adecuadamente. Si se ha eliminado un objeto de la asociación pero no está marcado con **IfDeleted**, no se debe eliminar la asociación.
 
 Esta regla de uso debe comprobarse cuando se define el modelo de seguridad CIM.
 
@@ -224,14 +224,14 @@ Tenga en cuenta que este calificador no se puede invalidar. No es razonable perm
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

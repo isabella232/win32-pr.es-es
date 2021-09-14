@@ -1,12 +1,12 @@
 ---
 title: Método GetSecondaryConnectionString de la Win32_RDMSDeploymentSettings clase
-description: Recupera la cadena de conexión secundaria de la base de datos de nivel de implementación, que se puede usar para admitir la expiración de la contraseña.
+description: Recupera la cadena de conexión secundaria de base de datos de nivel de implementación, que se puede usar para admitir la expiración de la contraseña.
 ms.assetid: 0de02752-6cbf-4c21-b752-a57ed58aeef1
 ms.tgt_platform: multiple
 keywords:
 - Método GetSecondaryConnectionString Servicios de Escritorio remoto
 - Método GetSecondaryConnectionString Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
-- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto método , GetSecondaryConnectionString
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto , método GetSecondaryConnectionString
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac54d0d5ce9207070d03028ba53175d964e93d77a93d51b28345089fcea99dcd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2c09f4fcacabbe928fcda00447e252077bd8a51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119868315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249729"
 ---
 # <a name="getsecondaryconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetSecondaryConnectionString de la clase RDMSDeploymentSettings de Win32 \_
 
-Recupera la cadena de conexión secundaria de la base de datos de nivel de implementación, que se puede usar para admitir la expiración de la contraseña.
+Recupera la cadena de conexión secundaria de base de datos de nivel de implementación, que se puede usar para admitir la expiración de la contraseña.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Cadena de conexión que se recuperará
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

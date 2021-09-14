@@ -4,12 +4,12 @@ ms.assetid: 293f732f-0288-46d1-b542-d948c6179158
 title: TAPI 1.4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50f22833639813268420cc1ea202ef260964b42ce2e5119fafc8d0aa18593686
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c32f4320043ada2e2ae5477a698bde63f28d2f25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119060363"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068722"
 ---
 # <a name="tapi-14"></a>TAPI 1.4
 
@@ -23,7 +23,7 @@ Los archivos de encabezado TAPI y TSPI se usan para desarrollar ambas aplicacion
 ```
 
 > [!Note]  
-> TAPI \_ CURRENT VERSION debe \_ definirse para todas las aplicaciones TAPI. Aunque no es estrictamente necesario para el desarrollo de TAPI 2.x, podrían producirse cambios futuros para requerir esto.
+> LA VERSIÓN ACTUAL DE TAPI \_ \_ debe definirse para todas las aplicaciones TAPI. Aunque no es estrictamente necesario para el desarrollo de TAPI 2.x, podrían producirse cambios futuros para requerir esto.
 
  
 

@@ -4,12 +4,12 @@ description: Página de navegación Estructuras del asistente de IP.
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: d53c3821-00a0-4eaa-9a06-69ec7aa98d84
-ms.openlocfilehash: a63c85c5cfe167aeb3bdf9d500979ece6ed8d24e5d7aa6235da0d82fed11dd0d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac8a8f9a143cd661050204483d9dca9a66ce5255
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272516"
 ---
 # <a name="ip-helper-structures"></a>Estructuras de aplicación auxiliar IP
 

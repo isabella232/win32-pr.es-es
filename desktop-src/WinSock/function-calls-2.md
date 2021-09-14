@@ -4,18 +4,18 @@ ms.assetid: 83262f2b-a335-4bbd-b2e3-6c7744b3ee50
 title: Llamadas de función para aplicaciones IPv6 Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 241db1f7e07264fe4f0c776834d17c48cff4780b06e6a42816d36a50fa22cef7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a56fe5087e17a9a4eb1337ac803b8500b1fe9c27
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068279"
 ---
 # <a name="function-calls-for-ipv6-winsock-applications"></a>Llamadas de función para aplicaciones IPv6 Winsock
 
 Se han introducido nuevas funciones en la interfaz Windows Sockets diseñada específicamente para facilitar la programación Windows Sockets. Una de las ventajas de estas nuevas funciones Windows Sockets es la compatibilidad integrada con IPv6 e IPv4.
 
-Estas nuevas Windows sockets incluyen lo siguiente:
+Estas nuevas Windows Sockets incluyen las siguientes:
 
 -   [**WSAConnectByName**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbynamea)
 -   [**WSAConnectByList**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbylist)
@@ -183,9 +183,9 @@ SOCKET OpenAndConnect(SOCKET_ADDRESS_LIST *AddressList)
 
 ## <a name="getaddrinfo"></a>getaddrinfo
 
-La **función getaddrinfo** también realiza el trabajo de procesamiento de muchas funciones. Anteriormente, se requerían llamadas a una serie de Windows sockets para crear, abrir y, a continuación, enlazar una dirección a un socket. Con la **función getaddrinfo,** las líneas de código fuente necesarias para realizar este trabajo se pueden reducir significativamente. En los dos ejemplos siguientes se muestra el código fuente necesario para realizar estas tareas con y sin la **función getaddrinfo.**
+La **función getaddrinfo** también realiza el trabajo de procesamiento de muchas funciones. Anteriormente, se requerían llamadas a una serie de Windows sockets para crear, abrir y enlazar una dirección a un socket. Con la **función getaddrinfo,** las líneas de código fuente necesarias para realizar este trabajo se pueden reducir significativamente. En los dos ejemplos siguientes se muestra el código fuente necesario para realizar estas tareas con y sin la **función getaddrinfo.**
 
-Realizar un open, Conectar y bind mediante **getaddrinfo**
+Realizar un comando Open, Conectar y Bind mediante **getaddrinfo**
 
 
 ```C++
@@ -297,7 +297,7 @@ En las plataformas donde se usan IPv4 e IPv6, la familia de direcciones del nomb
 
 La mayoría de las aplicaciones IPv4 crean primero un socket para la familia de direcciones AF INET, luego hacen la resolución de nombres y, a continuación, usan el socket para conectarse a la \_ dirección IP resuelta. Al hacer que estas aplicaciones sean compatibles con IPv6, la llamada a la función de [**socket**](/windows/desktop/api/Winsock2/nf-winsock2-socket) debe retrasarse hasta después de la resolución de nombres cuando se haya destereminado la familia de direcciones. Tenga en cuenta que si la resolución de nombres devuelve direcciones IPv4 e IPv6, se deben usar sockets IPv4 e IPv6 independientes para conectarse a estas direcciones de destino. Todas estas complejidades se pueden evitar mediante la función [**WSAConnectByName**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbynamea) en Windows Vista y versiones posteriores, por lo que se recomienda a los desarrolladores de aplicaciones que usen esta nueva función.
 
-En el ejemplo de código siguiente se muestra la secuencia adecuada para realizar primero la resolución de nombres (realizada en la cuarta línea del ejemplo de código fuente siguiente) y, a continuación, abrir un socket (realizado en la línea<sup>19</sup> en el ejemplo de código siguiente). Este ejemplo es un extracto del archivo Client.c que se encuentra en el código de cliente habilitado para [IPv6](ipv6-enabled-client-code-2.md) en el Apéndice B. La función PrintError a la que se llama en el ejemplo de código siguiente se muestra en el ejemplo Client.c.
+En el ejemplo de código siguiente se muestra la secuencia adecuada para realizar primero la resolución de nombres (realizada en la cuarta línea del siguiente ejemplo de código fuente) y, a continuación, abrir un socket (realizado en la línea<sup>19</sup> en el ejemplo de código siguiente). Este ejemplo es un extracto del archivo Client.c que se encuentra en el código de cliente habilitado para [IPv6](ipv6-enabled-client-code-2.md) en el Apéndice B. La función PrintError a la que se llama en el ejemplo de código siguiente se muestra en el ejemplo Client.c.
 
 
 ```C++
@@ -381,13 +381,13 @@ SOCKET OpenAndConnect(char *Server, char *PortName, int Family, int SocketType)
 
 ## <a name="ip-helper-functions"></a>Funciones de aplicación auxiliar IP
 
-Por último, las aplicaciones que usan la función del asistente de IP [**GetAdaptersInfo**](/windows/win32/api/iphlpapi/nf-iphlpapi-getadaptersinfo)y su estructura asociada [**IP ADAPTER \_ \_ INFO**](/windows/win32/api/iptypes/ns-iptypes-ip_adapter_info)deben reconocer que tanto esta función como la estructura están limitadas a las direcciones IPv4. Los reemplazos habilitados para IPv6 para esta función y estructura son la función [**GetAdaptersAddresses**](/windows/win32/api/iphlpapi/nf-iphlpapi-getadaptersaddresses) y la estructura [**DIRECCIONES DEL ADAPTADOR \_ \_ DE IP.**](/windows/win32/api/iptypes/ns-iptypes-ip_adapter_addresses_lh) Las aplicaciones habilitadas para IPv6 que usan la API del asistente de IP deben usar la función **GetAdaptersAddresses** y la correspondiente estructura DIRECCIONES DEL ADAPTADOR **DE IP \_ \_** habilitado para IPv6, ambas definidas en el Kit de desarrollo de software (SDK) de Microsoft Windows.
+Por último, las aplicaciones que usan la función del asistente de IP [**GetAdaptersInfo**](/windows/win32/api/iphlpapi/nf-iphlpapi-getadaptersinfo)y su estructura asociada [**IP ADAPTER \_ \_ INFO**](/windows/win32/api/iptypes/ns-iptypes-ip_adapter_info)deben reconocer que tanto esta función como la estructura están limitadas a las direcciones IPv4. Los reemplazos habilitados para IPv6 para esta función y estructura son la función [**GetAdaptersAddresses**](/windows/win32/api/iphlpapi/nf-iphlpapi-getadaptersaddresses) y la estructura [**DIRECCIONES DEL ADAPTADOR \_ \_ DE IP.**](/windows/win32/api/iptypes/ns-iptypes-ip_adapter_addresses_lh) Las aplicaciones habilitadas para IPv6 que usan la API del asistente de IP deben usar la función **GetAdaptersAddresses** y la correspondiente estructura **IP ADAPTER \_ \_ ADDRESSES** habilitada para IPv6, ambas definidas en el Kit de desarrollo de software (SDK) de Microsoft Windows.
 
 ## <a name="recommendations"></a>Recomendaciones
 
-El mejor enfoque para asegurarse de que la aplicación usa llamadas de función compatibles con IPv6 es usar la función [**getaddrinfo**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) para obtener la traducción de host a dirección. A partir de Windows XP, la función **getaddrinfo** hace que la función [**gethostbyname**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyname) no sea necesaria y, por tanto, la aplicación debe usar la función **getaddrinfo** en su lugar para proyectos de programación futuros. Aunque Microsoft seguirá siendo compatible **con gethostbyname,** esta función no se extenderá para admitir IPv6. Para obtener una compatibilidad transparente con la obtención de información de host IPv6 e IPv4, debe usar **getaddrinfo**.
+El mejor enfoque para asegurarse de que la aplicación usa llamadas de función compatibles con IPv6 es usar la función [**getaddrinfo**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) para obtener la traducción de host a dirección. A partir de Windows XP, la función **getaddrinfo** hace que la función [**gethostbyname**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyname) sea innecesaria y, por tanto, la aplicación debe usar la función **getaddrinfo** en su lugar para proyectos de programación futuros. Aunque Microsoft seguirá siendo compatible **con gethostbyname,** esta función no se extenderá para admitir IPv6. Para obtener una compatibilidad transparente con la obtención de información de host IPv6 e IPv4, debe usar **getaddrinfo**.
 
-En el ejemplo siguiente se muestra cómo usar mejor la **función getaddrinfo.** Tenga en cuenta que la función, cuando se usa correctamente como se muestra en este ejemplo, controla correctamente la traducción de host a dirección de IPv6 e IPv4, pero también obtiene otra información útil sobre el host, como el tipo de sockets admitidos. Este ejemplo es un extracto del ejemplo Client.c que se encuentra en el Apéndice B.
+En el ejemplo siguiente se muestra cómo usar mejor la **función getaddrinfo.** Tenga en cuenta que la función, cuando se usa correctamente como se muestra en este ejemplo, controla la traducción de host a dirección IPv6 e IPv4 correctamente, pero también obtiene otra información útil sobre el host, como el tipo de sockets admitidos. Este ejemplo es un extracto del ejemplo Client.c que se encuentra en el Apéndice B.
 
 
 ```C++
@@ -452,11 +452,11 @@ Tareas de codificación
 
 **Para modificar una aplicación IPv4 existente para agregar compatibilidad con IPv6**
 
-1.  Adquiera la utilidad Checkv4.exe. Esta utilidad se instala como parte del SDK de Windows. El SDK Windows está disponible a través de una suscripción a MSDN y también se puede descargar desde el sitio web de Microsoft ( https://msdn.microsoft.com) . También se incluyó una versión anterior de *Checkv4.exe* herramienta como parte de Microsoft IPv6 Technology Preview para Windows 2000.
+1.  Adquiera la Checkv4.exe de datos. Esta utilidad se instala como parte del SDK Windows. El SDK Windows está disponible a través de una suscripción a MSDN y también se puede descargar desde el sitio web de Microsoft ( https://msdn.microsoft.com) . También se incluyó una versión anterior de *la* herramientaCheckv4.execomo parte de Microsoft IPv6 Technology Preview para Windows 2000.
 2.  Ejecute la *utilidadCheckv4.exe* en el código. Consulte [Uso de la utilidad Checkv4.exe para](using-the-checkv4-exe-utility-2.md) obtener información sobre cómo ejecutar la utilidad de versión en los archivos.
 3.  La utilidad le avisa del uso de [**gethostbyname**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyname), [**gethostbyaddr**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyaddr)y otras funciones solo IPv4, y proporciona recomendaciones sobre cómo reemplazarlas por la función compatible con IPv6, como [**getaddrinfo**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) y [**getnameinfo.**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getnameinfo)
-4.  Reemplace todas las instancias de la **función gethostbyname** y el código asociado según corresponda por la **función getaddrinfo.** En Windows Vista, use la [**función WSAConnectByName**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbynamea) o [**WSAConnectByList**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbylist) cuando corresponda.
-5.  Reemplace todas las instancias de la [**función gethostbyaddr**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyaddr) y el código asociado, según corresponda, por la [**función getnameinfo.**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getnameinfo)
+4.  Reemplace las instancias de la **función gethostbyname** y el código asociado según corresponda por la **función getaddrinfo.** En Windows Vista, use la [**función WSAConnectByName**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbynamea) o [**WSAConnectByList**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbylist) cuando corresponda.
+5.  Reemplace las instancias de la [**función gethostbyaddr**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyaddr) y el código asociado según corresponda por la [**función getnameinfo.**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getnameinfo)
 
 Como alternativa, puede buscar en la base de código instancias de las funciones **gethostbyname** y [**gethostbyaddr,**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyaddr) y cambiar todo ese uso (y otro código asociado, según corresponda) a las funciones **getaddrinfo** y [**getnameinfo.**](/windows/desktop/api/Ws2tcpip/nf-ws2tcpip-getnameinfo)
 
@@ -464,13 +464,13 @@ Como alternativa, puede buscar en la base de código instancias de las funciones
 
 <dl> <dt>
 
-[Guía de IPv6 para Windows sockets](ipv6-guide-for-windows-sockets-applications-2.md)
+[Guía de IPv6 para Windows Sockets](ipv6-guide-for-windows-sockets-applications-2.md)
 </dt> <dt>
 
-[Cambio de estructuras de datos para aplicaciones Winsock de IPv6](changing-data-structures-2.md)
+[Cambio de estructuras de datos para aplicaciones Winsock IPv6](changing-data-structures-2.md)
 </dt> <dt>
 
-[Sockets de pila doble para aplicaciones Winsock IPv6](dual-stack-sockets.md)
+[Sockets de doble pila para aplicaciones IPv6 Winsock](dual-stack-sockets.md)
 </dt> <dt>
 
 [Uso de direcciones IPv4 codificadas de forma rígida](use-of-hardcoded-ipv4-addresses-2.md)

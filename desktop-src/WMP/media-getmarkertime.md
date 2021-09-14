@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f90d1382302e4a053a6dee4dac911d2cc0c0aa67066469c8143f6f38b3bd889
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4398f89055a1996acb3f921d33c7675e52100ddd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119508415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068410"
 ---
 # <a name="mediagetmarkertime-method"></a>Método Media.getMarkerTime
 
@@ -53,7 +53,7 @@ retVal = Media.getMarkerTime(
 
 Este método devuelve un **valor Number** (**double**) que especifica la ubicación del marcador en segundos desde el principio del clip.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método devuelve **NULL** si el marcador especificado no existe.
 
@@ -93,14 +93,14 @@ for (var i = 1;i < mcount + 1; i++){
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

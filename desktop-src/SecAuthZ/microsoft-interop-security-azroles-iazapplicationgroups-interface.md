@@ -1,5 +1,5 @@
 ---
-description: Vínculos a la documentación de las propiedades y métodos contenedores de interoperabilidad de IAzApplicationGroups.
+description: Vínculos a la documentación de los métodos y propiedades de contenedor de interoperabilidad de IAzApplicationGroups.
 ms.assetid: dab61aee-46b0-4e5a-8e56-63e485bca659
 title: Interfaz Microsoft.Interop.Security.AzRoles.IAzApplicationGroups
 ms.topic: reference
@@ -23,18 +23,18 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 11a460e06eb4d6e43fc7dbcf8c7cb00dbea1c34347ce15ce90f13264d79c3c22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 48f44dfbc4c1b9708ed0310e1518a3157467b599
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118913120"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069084"
 ---
 # <a name="microsoftinteropsecurityazrolesiazapplicationgroups-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzApplicationGroups
 
 Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzApplicationGroups** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplicationGroups** tiene estos tipos de miembros:
 
@@ -74,7 +74,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplicationGroups** tiene es
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

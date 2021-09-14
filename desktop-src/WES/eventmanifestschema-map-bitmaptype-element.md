@@ -1,9 +1,9 @@
 ---
-title: Elemento Map (BitMapType)
-description: Define la asignación entre un valor de bit y un valor de cadena. | Elemento Map (BitMapType)
+title: elemento map (BitMapType)
+description: Define la asignación entre un valor de bits y un valor de cadena. | elemento map (BitMapType)
 ms.assetid: 9673b736-9c1b-4b53-8c85-ed34f83084f1
 keywords:
-- elemento de mapa EventLog
+- elemento map EventLog
 topic_type:
 - apiref
 api_name:
@@ -14,15 +14,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: b88a546941bc886b25376060e74fa57321249fcc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698057"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068531"
 ---
-# <a name="map-bitmaptype-element"></a>Elemento Map (BitMapType)
+# <a name="map-bitmaptype-element"></a>elemento map (BitMapType)
 
-Define la asignación entre un valor de bit y un valor de cadena.
+Define la asignación entre un valor de bits y un valor de cadena.
 
 ``` syntax
 <xs:element name="map"
@@ -30,7 +30,7 @@ Define la asignación entre un valor de bit y un valor de cadena.
  />
 ```
 
-El elemento de **mapa** se define mediante el tipo complejo de [**BitMapType**](eventmanifestschema-bitmaptype-complextype.md) .
+El **tipo** complejo [**BitMapType**](eventmanifestschema-bitmaptype-complextype.md) define el elemento map.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,19 +38,19 @@ El elemento de **mapa** se define mediante el tipo complejo de [**BitMapType**](
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elemento primario**
 </dt> <dt>
 
-[**Mapa de bits (MapType)**](eventmanifestschema-bitmap-maptype-element.md)
+[**bitMap (MapType)**](eventmanifestschema-bitmap-maptype-element.md)
 </dt> </dl>
 
  

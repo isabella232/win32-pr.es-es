@@ -1,9 +1,9 @@
 ---
-title: Media. imageSourceHeight
+title: Media.imageSourceHeight
 description: La propiedad ImageSourceHeight recupera el alto del elemento multimedia actual en píxeles.
 ms.assetid: fa98ec62-4c58-46ab-98f3-8017096d46d8
 keywords:
-- Media Player Windows Media. imageSourceHeight
+- Media.imageSourceHeight Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -15,33 +15,33 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0de364243e71c6653085b4c9c9ff81f148dc299d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068408"
 ---
-# <a name="mediaimagesourceheight"></a>Media. imageSourceHeight
+# <a name="mediaimagesourceheight"></a>Media.imageSourceHeight
 
-La propiedad **ImageSourceHeight** recupera el alto del elemento multimedia actual en píxeles.
+La **propiedad ImageSourceHeight** recupera el alto del elemento multimedia actual en píxeles.
 
 ## <a name="syntax"></a>Sintaxis
 
-*reproductor*. *currentMedia*. **imageSourceHeight**
+*player*. *currentMedia*. **imageSourceHeight**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
 ## <a name="remarks"></a>Observaciones
 
 Si el elemento multimedia no es el actual, esta propiedad devuelve cero.
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se utiliza *media*. imageSourceHeight para mostrar el tamaño de la imagen, en píxeles, del elemento multimedia actual. La información se imprime en un elemento TEXTAREA HTML denominado videosize. El objeto **Player** se creó con ID = "Player".
+En el JScript siguiente se *usa* media .imageSourceHeight para mostrar el tamaño de la imagen, en píxeles, del elemento multimedia actual. La información se imprime en un elemento TEXTAREA HTML denominado VideoSize. El **objeto Player** se creó con id. = "player".
 
 
 ```JScript
@@ -76,25 +76,25 @@ if (NewState == 13){
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto multimedia**](media-object.md)
 </dt> <dt>
 
-[**Player. currentMedia**](player-currentmedia.md)
+[**Player.currentMedia**](player-currentmedia.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

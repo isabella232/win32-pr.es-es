@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 074ed96c2f63ac59ad9997696f9b90ec312ac43b628f85760e0cd4172da07a84
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34a8540ba556bb74dd9779e49c628df1bfe7f9a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118883683"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068881"
 ---
 # <a name="counteritempath-property"></a>CounterItem.Path, propiedad
 
@@ -40,13 +40,13 @@ Property Path As String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Ruta de acceso del contador, por ejemplo, "Procesador( \_ Total) \\ % tiempo de procesador".
+Ruta de acceso del contador, por ejemplo, "Processor( \_ Total) \\ % Processor Time".
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

@@ -4,7 +4,7 @@ description: El método getItemInfo recupera el valor del atributo especificado 
 ms.assetid: a1ee0d40-b979-424b-bd4e-d1acf6354d8d
 keywords:
 - Método getItemInfo Reproductor de Windows Media
-- Método getItemInfo Reproductor de Windows Media , clase Media
+- Método getItemInfo Reproductor de Windows Media , Clase Media
 - Clase media Reproductor de Windows Media , método getItemInfo
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab885a8505f3637d21f4a406e5a7c324ee6b9ec90e5ad0434a385e321072ccaf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef7e7348e73e3550ed668f6694ccfe9ed615215b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068421"
 ---
 # <a name="mediagetiteminfo-method"></a>Método Media.getItemInfo
 
@@ -53,7 +53,7 @@ strRetVal = Media.getItemInfo(
 
 Este método devuelve un **objeto String** que representa el valor del atributo especificado. Para los atributos cuyo valor subyacente **es booleano,** devuelve la cadena "true" o "false".
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método recupera los metadatos de un elemento multimedia digital individual o un elemento multimedia que forma parte de una lista de reproducción.
 
@@ -92,12 +92,12 @@ Esta sintaxis tiene el significado siguiente:
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

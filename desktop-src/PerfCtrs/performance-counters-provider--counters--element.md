@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fc6b1ee4d5f20c0d91c996e20844d3f1a356aeef59f779c110af9c0718ca59ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bec1c1cccd46290ea9336f3e2a3055a5a2eece61
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061072"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250622"
 ---
 # <a name="provider-counters-element"></a>provider (counters) (Elemento)
 
@@ -39,7 +39,7 @@ El **tipo complejo** de contadores define el elemento provider. [](performance-c
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

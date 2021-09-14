@@ -4,12 +4,12 @@ ms.assetid: 3ca8518d-42f0-428c-b94c-ff244d17b314
 title: 'Configuración 2: Tráfico IPv6 entre nodos en subredes diferentes de una red de Internet IPv4 (6to4)'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d976aa3ea21d990ea22f861fbf05a816866e6b0d21502211e23a0e331a2f851
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1abd5477005e6a1e71c13aaf19a734e9191097d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118112510"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068293"
 ---
 # <a name="configuration-2-ipv6-traffic-between-nodes-on-different-subnets-of-an-ipv4-internetwork-6to4"></a>Configuración 2: Tráfico IPv6 entre nodos en subredes diferentes de una red de Internet IPv4 (6to4)
 
@@ -19,15 +19,15 @@ En la ilustración siguiente se muestra la configuración de dos nodos en subred
 
 ![nodos que usan 6to4 para comunicarse a través de un enrutador ipv4.](images/v6mig-2.png)
 
-El requisito principal para usar 6to4 es una dirección IPv4 enrutable globalmente para el sitio. Supongamos que el sitio consta de una colección de equipos IPv6 que administra (algunos que ejecutan el protocolo IPv6 de Microsoft y otros ejecutan otras implementaciones de IPv6). Supongamos también que todos los equipos IPv6 están conectados directamente mediante Ethernet o 6 sobre 4. La dirección IPv4 enrutable globalmente debe asignarse a uno de los equipos que ejecutan el protocolo IPv6 de Microsoft. Este equipo será la puerta de enlace 6to4.
+El requisito principal para usar 6to4 es una dirección IPv4 enrutable globalmente para el sitio. Supongamos que el sitio consta de una colección de equipos IPv6 que administra (algunos que ejecutan el protocolo IPv6 de Microsoft y otros que ejecutan otras implementaciones de IPv6). Supongamos también que todos los equipos IPv6 están conectados directamente mediante Ethernet o 6 sobre 4. La dirección IPv4 enrutable globalmente debe asignarse a uno de los equipos que ejecutan el protocolo IPv6 de Microsoft. Este equipo será la puerta de enlace 6to4.
 
-Si tiene una dirección IPv4 que forma parte del espacio de direcciones privadas (10.0.0.0/8, 172.16.0.0/12 o 192.168.0.0/16) o el espacio de direcciones IP privadas automáticas (APIPA) de 169.254.0.0/16 usado por Windows 2000, no es enrutable globalmente. De lo contrario, es probablemente una dirección IP pública y es enrutable globalmente. Consulte el [tema Debugging 6to4 Configuration](#debugging-6to4-configuration) (Configuración de depuración 6to4) de este documento para obtener más ayuda para determinar si la conexión de ISP admite 6to4.
+Si tiene una dirección IPv4 que forma parte del espacio de direcciones privadas (10.0.0.0/8, 172.16.0.0/12 o 192.168.0.0/16) o el espacio de direcciones IP privadas automáticas (APIPA) de 169.254.0.0/16 usado por Windows 2000, no es enrutable globalmente. De lo contrario, probablemente sea una dirección IP pública y sea enrutable globalmente. Consulte el [tema Debugging 6to4 Configuration](#debugging-6to4-configuration) (Configuración de depuración 6to4) de este documento para obtener más ayuda para determinar si la conexión de ISP admite 6to4.
 
 ## <a name="the-6to4cfgexe-tool"></a>La herramienta 6to4cfg.exe herramientas
 
 La 6to4cfg.exe automatización de la configuración 6to4, detecta automáticamente la dirección IPv4 enrutable globalmente y crea un prefijo 6to4. Realiza la configuración directamente o puede escribir un script de configuración que puede inspeccionar y ejecutar más adelante.
 
-La sintaxis 6to4cfg.exe de comandos es la siguiente.
+La sintaxis básica 6to4cfg.exe comandos es la siguiente.
 
 ``` syntax
 6to4cfg [-r] [-s] [-u] [-R relay] [-b] [-S address] [filename]
@@ -40,7 +40,7 @@ La sintaxis 6to4cfg.exe de comandos es la siguiente.
 
 Escribe el script de configuración en un archivo, si especifica un nombre de archivo. El script de configuración usa Ipv6.exe.
 
-Puede especificar con para que el nombre de archivo escriba el script de configuración en la salida de la consola, lo que es útil para ver lo que 6to4cfg.exe en un escenario de prueba.
+Puede especificar con para que el nombre de archivo escriba el script de configuración en la salida de la consola, lo que resulta útil para ver lo que 6to4cfg.exe en un escenario de prueba.
 
 Si no especifica un nombre de archivo, 6to4cfg.exe directamente la configuración de IPv6 en el equipo.
 
@@ -49,7 +49,7 @@ Si no especifica un nombre de archivo, 6to4cfg.exe directamente la configuració
 <span id="-r"></span><span id="-R"></span>-r
 </dt> <dd>
 
-Se convierte en un enrutador de puerta de enlace 6to4 para la red local, lo que permite el enrutamiento en todas las interfaces y prefijos de subred asignados.
+Se convierte en un enrutador de puerta de enlace 6to4 para la red local, lo que habilita el enrutamiento en todas las interfaces y los prefijos de subred asignados.
 
 </dd> <dt>
 
@@ -88,16 +88,16 @@ Especifica la dirección IPv4 local para el prefijo 6to4.
 
 </dd> </dl>
 
-## <a name="manual-6to4-configuration"></a>Configuración manual 6to4
+## <a name="manual-6to4-configuration"></a>Configuración manual de 6to4
 
-En este ejemplo, la dirección de la puerta de enlace 6to4 es 172.31.42.239. Necesita su propia dirección IPv4 enrutable globalmente para usar 6to4.
+En este ejemplo, la dirección de la puerta de enlace 6to4 es 172.31.42.239. Necesita su propia dirección IPv4 globalmente enrutable para usar 6to4.
 
 > [!Note]  
 > La dirección IP 172.31.42.239 solo se usa con fines de ejemplo. Se trata de una dirección privada y no es enrutable globalmente en Internet.
 
  
 
-La dirección IPv4 enrutable globalmente de 32 bits se combina con el prefijo de 16 bits 2002::/16 para formar un prefijo de dirección IPv6 de 48 bits para el sitio. En este ejemplo, el prefijo de sitio 6to4 es 2002:ac1f:2aef::/48. Tenga en cuenta que ac1f:2aef es la codificación hexadecimal de 172.31.42.239 (por supuesto, usará un prefijo diferente basado en su propia dirección IPv4 globalmente enrutable). Con el prefijo de sitio 6to4, puede asignar direcciones y prefijos de subred dentro del sitio.
+La dirección IPv4 global enrutable de 32 bits se combina con el prefijo de 16 bits 2002::/16 para formar un prefijo de dirección IPv6 de 48 bits para el sitio. En este ejemplo, el prefijo de sitio 6to4 es 2002:ac1f:2aef::/48. Tenga en cuenta que ac1f:2aef es la codificación hexadecimal de 172.31.42.239 (por supuesto, usará un prefijo diferente basado en su propia dirección IPv4 enrutable globalmente). Con el prefijo de sitio 6to4, puede asignar direcciones y prefijos de subred dentro del sitio.
 
 En este ejemplo se supone que usa la subred 0 para configurar manualmente una dirección 6to4 en el equipo de puerta de enlace 6to4 y que usa la subred 1 para configurar automáticamente direcciones en el segmento de red Ethernet. Sin embargo, otras opciones son posibles.
 
@@ -105,11 +105,11 @@ En este ejemplo se supone que usa la subred 0 para configurar manualmente una di
 
     **ipv6 rtu 2002::/16 2**
 
-    El **comando ipv6 rtu** realiza una actualización de tabla de enrutamiento. Se puede usar para agregar, quitar o actualizar una ruta. En este caso, está habilitando 6to4.
+    El **comando ipv6 rtu** realiza una actualización de la tabla de enrutamiento. Se puede usar para agregar, quitar o actualizar una ruta. En este caso, está habilitando 6to4.
 
-    El argumento 2002::/16 es el prefijo de la ruta, especificando el prefijo 6to4 único.
+    El argumento 2002::/16 es el prefijo de la ruta y especifica el prefijo 6to4 único.
 
-    El argumento 2 especifica la interfaz en el vínculo para este prefijo. La interfaz 2 es la "pseudo-interfaz" que se usa para los túneles \# configurados, la tunelización automática y 6to4. Cuando una dirección de destino IPv6 coincide con el prefijo 2002::/16, los 32 bits que siguen al prefijo de la dirección de destino se extraen para formar una dirección de destino IPv4. El paquete se encapsula con un encabezado IPv4 y se envía a la dirección de destino IPv4.
+    El argumento 2 especifica la interfaz en el vínculo para este prefijo. La interfaz 2 es la "pseudo-interfaz" que se usa para los túneles \# configurados, la tunelización automática y 6to4. Cuando una dirección de destino IPv6 coincide con el prefijo 2002::/16, los 32 bits que siguen al prefijo en la dirección de destino se extraen para formar una dirección de destino IPv4. El paquete se encapsula con un encabezado IPv4 y se envía a la dirección de destino IPv4.
 
 2.  Configure una dirección 6to4 en el equipo de puerta de enlace 6to4:
 
@@ -117,35 +117,35 @@ En este ejemplo se supone que usa la subred 0 para configurar manualmente una di
 
     El **comando ipv6 adu** realiza una actualización de direcciones. Se puede usar para agregar, quitar o actualizar una dirección en una interfaz. En este caso, está configurando la dirección 6to4 del equipo.
 
-    El argumento 2/2002:ac1f:2aef::ac1f:2aef especifica la interfaz y la dirección. Requiere configurar la dirección 2002:ac1f:2aef::ac1f:2aef en la interfaz \# 2. La dirección se crea con el prefijo de sitio 2002:ac1f:2aef::/48, subred 0 para proporcionar un prefijo de subred 2002:ac1f:2aef::/64 y un identificador de interfaz de 64 bits. La convención demostrada usa la dirección IPv4 del equipo para el identificador de interfaz para las direcciones asignadas a la interfaz \# 2. Para su uso, ac1f:2aef debe reemplazarse por la codificación hexadecimal de su propia dirección IPv4 globalmente enrutable.
+    El argumento 2/2002:ac1f:2aef::ac1f:2aef especifica la interfaz y la dirección. Requiere configurar la dirección 2002:ac1f:2aef::ac1f:2aef en la \# interfaz 2. La dirección se crea con el prefijo de sitio 2002:ac1f:2aef::/48, subred 0 para proporcionar un prefijo de subred 2002:ac1f:2aef::/64 y un identificador de interfaz de 64 bits. La convención demostrada usa la dirección IPv4 del equipo para el identificador de interfaz para las direcciones asignadas a la interfaz \# 2. Para su uso, ac1f:2aef debe reemplazarse por la codificación hexadecimal de su propia dirección IPv4 globalmente enrutable.
 
-Los dos comandos anteriores son suficientes para permitir la comunicación con otros sitios 6to4. Por ejemplo, puede intentar hacer ping en el sitio de Microsoft 6to4:
+Los dos comandos anteriores son suficientes para permitir la comunicación con otros sitios 6to4. Por ejemplo, puede intentar hacer ping al sitio de Microsoft 6to4:
 
 **ping6 2002:836b:9820::836b:9820**
 
-Para habilitar la comunicación con el servidor 6, debe crear un túnel configurado de forma predeterminada a una retransmisión 6to4. Puede usar el enrutador de retransmisión de Microsoft 6to4, 131.107.152.32:
+Para habilitar la comunicación con el 6-6, debe crear un túnel configurado de forma predeterminada a una retransmisión 6to4. Puede usar el enrutador de retransmisión de Microsoft 6to4, 131.107.152.32:
 
 **ipv6 rtu ::/0 2/::131.107.152.32 pub life 1800**
 
-El **comando ipv6 rtu** realiza una actualización de tabla de enrutamiento, estableciendo, en esta instancia, una ruta predeterminada a la retransmisión 6to4.
+El **comando ipv6 restablecimiento realiza** una actualización de tabla de enrutamiento, estableciendo, en esta instancia, una ruta predeterminada a la retransmisión 6to4.
 
 El argumento ::/0 es el prefijo de ruta. El prefijo de longitud cero indica que es una ruta predeterminada.
 
 El argumento 2/::131.107.152.32 especifica el vecino del próximo salto para este prefijo. Requiere que los paquetes que coincidan con el prefijo se reenván a la dirección ::131.107.152.32 mediante la \# interfaz 2. El reenvío de un paquete a ::131.107.152.32 en la interfaz 2 hace que se encapsula con un encabezado v4 y se envía \# a 131.107.152.32.
 
-El argumento pub hace que sea una ruta publicada. Dado que esto solo es relevante para los enrutadores, no tiene ningún efecto hasta que se habilita el enrutamiento. Del mismo modo, la duración de 30 minutos solo pertenece si el enrutamiento está habilitado.
+El argumento pub hace que sea una ruta publicada. Dado que esto solo es relevante para los enrutadores, no tiene ningún efecto hasta que se habilita el enrutamiento. De forma similar, la duración de 30 minutos solo se refiere a si el enrutamiento está habilitado.
 
-Debería poder acceder a 6 sitios de 6 y 6to4 sitios. Puede usar el siguiente comando para probar esto:
+Debe poder acceder a sitios de 6 y 6to4 sitios. Puede usar el siguiente comando para probar esto:
 
 **ping6 3ffe:1cff:0:f5::1**
 
-El último paso es habilitar el enrutamiento en la puerta de enlace 6to4. En este ejemplo se supone que la interfaz 3 del equipo de puerta de enlace es una interfaz Ethernet y la \# \# interfaz 4 es 6 sobre 4. El equipo podría numerar sus interfaces de forma diferente. Los dos comandos siguientes asignan prefijos de subred a los dos vínculos. Los prefijos de subred se derivan del prefijo 6to4 del sitio 2002:ac1f:2aef::/48:
+El último paso es habilitar el enrutamiento en la puerta de enlace 6to4. En este ejemplo se supone que la interfaz 3 del equipo de puerta de enlace es una interfaz Ethernet y la \# \# interfaz 4 es 6 sobre 4. El equipo puede numerar sus interfaces de forma diferente. Los dos comandos siguientes asignan prefijos de subred a los dos vínculos. Los prefijos de subred se derivan del prefijo 6to4 del sitio 2002:ac1f:2aef::/48:
 
 **ipv6 rtu 2002:ac1f:2aef:1::/64 3 pub life 1800**
 
 **ipv6 rtu 2002:ac1f:2aef:2::/64 4 pub life 1800**
 
-El **comando ipv6 rtu** especifica que el prefijo 2002:ac1f:2aef:1::/64 está en el vínculo a la \# interfaz 3. Está configurando el primer prefijo de subred en la interfaz Ethernet. La ruta se publica con una duración de 30 minutos.
+El **comando ipv6 fan** especifica que el prefijo 2002:ac1f:2aef:1::/64 está en el vínculo a la \# interfaz 3. Está configurando el primer prefijo de subred en la interfaz Ethernet. La ruta se publica con una duración de 30 minutos.
 
 De forma similar, el prefijo 2002:ac1f:2aef:2::/64 está configurado en la interfaz 6 sobre 4.
 
@@ -157,11 +157,11 @@ Los tres comandos siguientes permiten que el equipo de puerta de enlace 6to4 fun
 
 **ipv6 ifc 4 forw adv**
 
-El **comando ifc de ipv6** controla los atributos de una interfaz. Un enrutador reenvía paquetes y envía anuncios de enrutador. En la implementación de Microsoft IPv6, estos atributos por interfaz se controlan por separado.
+El **comando ifc de ipv6** controla los atributos de una interfaz. Un enrutador reenvía paquetes y envía anuncios de enrutador. En la implementación de IPv6 de Microsoft, estos atributos por interfaz se controlan por separado.
 
-La \# interfaz 2 no es necesaria para la publicidad porque es una pseudo-interfaz.
+La \# interfaz 2 no es necesaria para la publicidad porque es una pseudo interface.
 
-Si el equipo tiene interfaces adicionales, también se deben configurar para que sean de reenvío y publicidad.
+Si el equipo tiene interfaces adicionales, también se deben configurar para reenviar y anunciar.
 
 Después de ejecutar estos comandos, el protocolo IPv6 de Microsoft configurará automáticamente las direcciones en las interfaces 3 y 4 con los prefijos de subred respectivos y las dos interfaces comenzarán a enviar anuncios de enrutador en intervalos de aproximadamente 3 a \# \# 10 minutos.
 
@@ -175,7 +175,7 @@ Los hosts que reciben estos anuncios de enrutador se configurarán automáticame
 
     **ping 6to4.ipv6.microsoft.com**
 
-    Si se produce un error, no tendrá conectividad global a Internet.
+    Si se produce un error, no tendrá conectividad a Internet global.
 
 2.  Compruebe la encapsulación IPv6 mediante la tunelización automática:
 
@@ -183,10 +183,10 @@ Los hosts que reciben estos anuncios de enrutador se configurarán automáticame
 
     Si se produce un error, es posible que tenga un firewall o un traductor de direcciones de red (NAT) entre el equipo e Internet. Si esto se realiza correctamente, la conexión a Internet puede admitir 6to4.
 
-3.  Compruebe la visualización del comando ipv6 rt. Debería ver una ruta 2002::/16 -> 2. Compruebe la visualización del comando ipv6 if 2. Debería ver una dirección preferida con un prefijo 2002::/16.
+3.  Compruebe la visualización del comando ipv6 rt. Debería ver una ruta 2002::/16 -> 2. Compruebe la visualización del comando ipv6 si 2. Debería ver una dirección preferida con un prefijo 2002::/16.
 
 > [!Note]  
-> La dirección IPv4 del enrutador de retransmisión de Microsoft 6to4 de 131.107.152.32 está sujeta a cambios. Si el paso 2 anterior no funciona, compruebe la salida del comando ping en el paso 1 para comprobar la dirección IPv4 del enrutador de retransmisión de Microsoft 6to4.
+> La dirección IPv4 del enrutador de retransmisión de Microsoft 6to4 de 131.107.152.32 está sujeta a cambios. Si el paso 2 anterior no funciona, compruebe la salida del comando ping del paso 1 para comprobar la dirección IPv4 del enrutador de retransmisión de Microsoft 6to4.
 
  
 

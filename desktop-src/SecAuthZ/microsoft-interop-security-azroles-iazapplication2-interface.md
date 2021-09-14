@@ -177,18 +177,18 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 6e2105be6cbcfab98b71f4986285eed2d6a21a997f9821bd681718f57380f820
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3bf3493efe82c944cc269688f2d2fb08523746db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117781103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069098"
 ---
 # <a name="microsoftinteropsecurityazrolesiazapplication2-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzApplication2
 
 Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzApplication2** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplication2** tiene estos tipos de miembros:
 
@@ -253,15 +253,15 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplication2** tiene estas p
 
 | Propiedad                                                                                   | Tipo de acceso           | Descripción                                                                                                       |
 |:-------------------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------------------------------|
-| **Microsoft.Interop.Security.Azroles.IAzApplication2.ApplicationData**<br/>          | Lectura/escritura<br/> | [**Propiedad ApplicationData de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applicationdata)<br/>                   |
+| **Microsoft.Interop.Security.Azroles.IAzApplication2.ApplicationData**<br/>          | Lectura y escritura<br/> | [**Propiedad ApplicationData de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applicationdata)<br/>                   |
 | **Microsoft.Interop.Security.Azroles.IAzApplication2.ApplicationGroups**<br/>        | Solo lectura<br/>  | [**Propiedad ApplicationGroups de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applicationgroups)<br/>               |
-| **Microsoft.Interop.Security.Azroles.IAzApplication2.ApplyStoreSacl**<br/>           | Lectura/escritura<br/> | [**Propiedad ApplyStoreSacl de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applystoresacl)<br/>                     |
-| **Microsoft.Interop.Security.Azroles.IAzApplication2.AuthzInterfaceClsid**<br/>      | Lectura/escritura<br/> | [**Propiedad AuthzInterfaceClsid de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_authzinterfaceclsid)<br/>           |
+| **Microsoft.Interop.Security.Azroles.IAzApplication2.ApplyStoreSacl**<br/>           | Lectura y escritura<br/> | [**Propiedad ApplyStoreSacl de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_applystoresacl)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication2.AuthzInterfaceClsid**<br/>      | Lectura y escritura<br/> | [**Propiedad AuthzInterfaceClsid de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_authzinterfaceclsid)<br/>           |
 | **Microsoft.Interop.Security.Azroles.IAzApplication2.DelegatedPolicyUsers**<br/>     | Solo lectura<br/>  | [**Propiedad DelegatedPolicyUsers de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_delegatedpolicyusers)<br/>         |
 | **Microsoft.Interop.Security.Azroles.IAzApplication2.DelegatedPolicyUsersName**<br/> | Solo lectura<br/>  | [**Propiedad DelegatedPolicyUsersName de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_delegatedpolicyusersname)<br/> |
-| **Microsoft.Interop.Security.Azroles.IAzApplication2.Description**<br/>              | Lectura/escritura<br/> | [**Propiedad Description de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_description)<br/>                           |
-| **Microsoft.Interop.Security.Azroles.IAzApplication2.GenerateAudits**<br/>           | Lectura/escritura<br/> | [**Propiedad GenerateAudits de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_generateaudits)<br/>                     |
-| **Microsoft.Interop.Security.Azroles.IAzApplication2.Name**<br/>                     | Lectura/escritura<br/> | [**Propiedad Name de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_name)<br/>                                         |
+| **Microsoft.Interop.Security.Azroles.IAzApplication2.Description**<br/>              | Lectura y escritura<br/> | [**Propiedad Description de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_description)<br/>                           |
+| **Microsoft.Interop.Security.Azroles.IAzApplication2.GenerateAudits**<br/>           | Lectura y escritura<br/> | [**Propiedad GenerateAudits de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_generateaudits)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplication2.Name**<br/>                     | Lectura y escritura<br/> | [**Propiedad Name de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_name)<br/>                                         |
 | **Microsoft.Interop.Security.Azroles.IAzApplication2.Operations**<br/>               | Solo lectura<br/>  | [**Propiedad Operations de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_operations)<br/>                             |
 | **Microsoft.Interop.Security.Azroles.IAzApplication2.PolicyAdministrators**<br/>     | Solo lectura<br/>  | [**Propiedad PolicyAdministrators de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyadministrators)<br/>         |
 | **Microsoft.Interop.Security.Azroles.IAzApplication2.PolicyAdministratorsName**<br/> | Solo lectura<br/>  | [**Propiedad PolicyAdministratorsName de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyadministratorsname)<br/> |
@@ -270,7 +270,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzApplication2** tiene estas p
 | **Microsoft.Interop.Security.Azroles.IAzApplication2.Roles**<br/>                    | Solo lectura<br/>  | [**Propiedad Roles de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_roles)<br/>                                       |
 | **Microsoft.Interop.Security.Azroles.IAzApplication2.Scopes**<br/>                   | Solo lectura<br/>  | [**Propiedad Scopes de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_scopes)<br/>                                     |
 | **Microsoft.Interop.Security.Azroles.IAzApplication2.Tasks**<br/>                    | Solo lectura<br/>  | [**Propiedad Tasks de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_tasks)<br/>                                       |
-| **Microsoft.Interop.Security.Azroles.IAzApplication2.Version**<br/>                  | Lectura/escritura<br/> | [**Propiedad Version de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_version)<br/>                                   |
+| **Microsoft.Interop.Security.Azroles.IAzApplication2.Version**<br/>                  | Lectura y escritura<br/> | [**Propiedad Version de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_version)<br/>                                   |
 | **Microsoft.Interop.Security.Azroles.IAzApplication2.Writable**<br/>                 | Solo lectura<br/>  | [**Propiedad grabable de IAzApplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_writable)<br/>                                 |
 
 

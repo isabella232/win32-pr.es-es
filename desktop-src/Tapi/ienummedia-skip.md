@@ -4,16 +4,16 @@ ms.assetid: 825972c9-5303-4c5a-9475-dc67c185af91
 title: Método IEnumMedia::Skip (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e17dadb1db502dfa76645d0142b98da3a030efb9e391a029985460c89526d37
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d8c600a201d6800fcb04dba5f208fd5cb810078
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118865781"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068761"
 ---
-# <a name="ienummediaskip-method"></a>IEnumMedia::Skip (Método)
+# <a name="ienummediaskip-method"></a>IEnumMedia::Skip (método)
 
-\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de la conferencia de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
 El **método Skip** omite el siguiente número especificado de elementos en la secuencia de enumeración.
 
@@ -47,8 +47,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                             | Descripción                                           |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>    | El número de elementos omitido fue *celt.*<br/>     |
-| <dl> <dt>**S \_ FALSE**</dt> </dl> | El número de elementos omitido no *era de centígrados.*<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | El número de elementos omitido era *celta*.<br/>     |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | El número de elementos omitido no *era de centígrado.*<br/> |
 
 
 
@@ -58,10 +58,10 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 

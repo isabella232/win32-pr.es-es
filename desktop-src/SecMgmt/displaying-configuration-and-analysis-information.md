@@ -4,12 +4,12 @@ ms.assetid: 503bc283-c1cd-4258-a27e-4046553882fa
 title: Mostrar información de configuración y análisis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d33971f413058279aa840db4a61e529eb25ee7f317145a66bcb4474142a35c76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc2f0d598ced5f789d9b417d79df591a71f82ab4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118894788"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069021"
 ---
 # <a name="displaying-configuration-and-analysis-information"></a>Mostrar información de configuración y análisis
 

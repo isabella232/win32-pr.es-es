@@ -1,17 +1,17 @@
 ---
 description: Los componentes Windows de red de Microsoft se han desarrollado para mejorar el rendimiento y la escalabilidad.
 ms.assetid: 2160b93e-c126-4592-972c-d9cc14eec745
-title: Aplicaciones de sockets Windows alto rendimiento
+title: Aplicaciones de sockets de Windows alto rendimiento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9df2b050ac45bf0bf7788a356f4fdba98197d481dd99180f99f7dbf8cdfb5b7d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0496198ef3a8f11e6a840fd75d0083899d23d5a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117927874"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063977"
 ---
-# <a name="high-performance-windows-sockets-applications"></a>Aplicaciones de sockets Windows alto rendimiento
+# <a name="high-performance-windows-sockets-applications"></a>Aplicaciones de sockets de Windows alto rendimiento
 
 Los componentes Windows de red de Microsoft se han desarrollado para mejorar el rendimiento y la escalabilidad. Esto permite a las aplicaciones maximizar el ancho de banda de red disponible. Windows Los sockets y la Windows pila del protocolo TCP/IP se han optimizado y optimizado. Como resultado, las aplicaciones de Windows correctamente escritas pueden lograr un rendimiento y un rendimiento excepcionales, como se muestra en los hechos siguientes:
 

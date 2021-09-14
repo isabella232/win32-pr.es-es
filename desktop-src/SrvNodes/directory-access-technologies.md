@@ -4,12 +4,12 @@ ms.assetid: 9880a969-b72a-4fb3-b1db-0c16425affa9
 title: Tecnologías de acceso a directorios
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2da6424e0b50598b79c4194c918183b591d673b0b82308dba8cc894e2ed3454
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0102f33c77fee9ea154dc018e444c7f2b238b707
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117963287"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068943"
 ---
 # <a name="directory-access-technologies"></a>Tecnologías de acceso a directorios
 

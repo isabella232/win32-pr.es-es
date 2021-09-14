@@ -1,12 +1,12 @@
 ---
-title: Método GetConnectionString de la clase Win32_RDMSDeploymentSettings
+title: Método GetConnectionString de la Win32_RDMSDeploymentSettings clase
 description: Recupera la cadena de conexión de base de datos de nivel de implementación.
 ms.assetid: 91a90883-9b87-42e5-af52-90226f0344bf
 ms.tgt_platform: multiple
 keywords:
 - Método GetConnectionString Servicios de Escritorio remoto
-- Método GetConnectionString Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método GetConnectionString
+- Método GetConnectionString Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto método , GetConnectionString
 topic_type:
 - apiref
 api_name:
@@ -18,13 +18,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: e6476c938f62e0cd0e1f9d034c89fded50994946
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249734"
 ---
-# <a name="getconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetConnectionString de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="getconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetConnectionString de la clase RDMSDeploymentSettings de Win32 \_
 
 Recupera la cadena de conexión de base de datos de nivel de implementación.
 
@@ -43,7 +43,7 @@ uint32 GetConnectionString(
 
 <dl> <dt>
 
-*ConnectionString* \[ enuncia\]
+*ConnectionString* \[ out\]
 </dt> <dd>
 
 La cadena de conexión
@@ -52,7 +52,7 @@ La cadena de conexión
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,17 +62,17 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

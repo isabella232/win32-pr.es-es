@@ -4,19 +4,19 @@ ms.assetid: 0a245187-4120-4003-9a8f-6b1e8fa40d38
 title: Trabajar con RGB de 16 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 660d5b0223bab6c19a89e4316f7dffce56ec0545f83c72f7316b9278dfa3e4c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3f6bf4b3217af4d0261d4ab26ca011881762a2a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119071799"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272607"
 ---
 # <a name="working-with-16-bit-rgb"></a>Trabajar con RGB de 16 bits
 
 Se definen dos formatos para RGB sin comprimir de 16 bits:
 
--   MEDIASUBTYPE 555 usa cinco bits cada uno para los componentes rojo, verde \_ y azul en un píxel. Se omite el bit más significativo de **WORD.**
--   MEDIASUBTYPE \_ 565 usa cinco bits para los componentes rojo y azul, y seis bits para el componente verde. Este formato refleja el hecho de que la visión humana es más sensible a las partes verdes del espectro visible.
+-   MEDIASUBTYPE \_ 555 usa cinco bits cada uno para los componentes rojo, verde y azul de un píxel. Se omite el bit más significativo de **WORD.**
+-   MEDIASUBTYPE 565 usa cinco bits para los componentes rojo y azul, y \_ seis bits para el componente verde. Este formato refleja el hecho de que la visión humana es más sensible a las partes verdes del espectro visible.
 
 **RGB 565**
 
@@ -54,7 +54,7 @@ BYTE blue  = blue_value << 3;
 
 
 
-Invierta este proceso para crear un RGB de 565 píxeles. Suponiendo que los valores de color se hayan truncado hasta el número correcto de bits:
+Invierta este proceso para crear un RGB de 565 píxeles. Suponiendo que los valores de color se hayan truncado al número correcto de bits:
 
 
 ```C++
@@ -65,7 +65,7 @@ WORD pixel565 = (red_value << 11) | (green_value << 5) | blue_value;
 
 **RGB 555**
 
-Trabajar con RGB 555 es básicamente lo mismo que RGB 565, salvo que las operaciones de desplazamiento de bits y máscaras de bits son diferentes. Para obtener los componentes de color de un píxel RGB de 555 píxeles, haga lo siguiente:
+Trabajar con RGB 555 es básicamente lo mismo que RGB 565, salvo que las operaciones de desplazamiento de bits y máscaras de bits son diferentes. Para obtener los componentes de color de un RGB de 555 píxeles, haga lo siguiente:
 
 
 ```C++
@@ -85,7 +85,7 @@ BYTE blue  = blue_value << 3;
 
 
 
-Para empaquetar los valores de color rojo, verde y azul en un píxel RGB de 555 píxeles, haga lo siguiente:
+Para empaquetar los valores de color rojo, verde y azul en un RGB de 555 píxeles, haga lo siguiente:
 
 
 ```C++

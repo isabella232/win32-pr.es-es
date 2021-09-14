@@ -7,12 +7,12 @@ keywords:
 - contextos de representación OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4783990534a866697c8383196cbcbeccdd5042fa1a3ff75c4271b5fe775b686
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 399bdfd763663a344fae9533907f0fbfb52b45b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117794688"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069293"
 ---
 # <a name="rendering-context-tasks"></a>Tareas de contexto de representación
 

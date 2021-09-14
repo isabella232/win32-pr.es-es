@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 93ccf8c35fb618257fdf3c9014b59a0745b19091b61d5eb83ab2e92f97bb71f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 963d9b6a027180ace8263f81888b57f638c5ff5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012503"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069378"
 ---
 # <a name="neterrorlogwrite"></a>NetErrorLogWrite
 

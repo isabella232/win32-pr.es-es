@@ -1,5 +1,5 @@
 ---
-title: Propiedad EventTrigger.ValueQueries
+title: EventTrigger.ValueQueries, propiedad
 description: Para el scripting, obtiene o establece una colección de consultas XPath con nombre. Cada consulta de la colección se aplica al último XML de evento correspondiente que se devuelve de la consulta de suscripción especificada en la propiedad Subscription.
 ms.assetid: 9ff92b66-f63c-4736-b086-df7dd8cd2b10
 keywords:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f8fd28cd616af56a9b51ecf4e709df5f07674c6d1f307320128645364f3bfc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd2061f9d910e67855cc0dcb6d64248067fcb9e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119253885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068661"
 ---
-# <a name="eventtriggervaluequeries-property"></a>Propiedad EventTrigger.ValueQueries
+# <a name="eventtriggervaluequeries-property"></a>EventTrigger.ValueQueries, propiedad
 
 Para el scripting, obtiene o establece una colección de consultas XPath con nombre. Cada consulta de la colección se aplica al último XML de evento correspondiente que se devuelve de la consulta de suscripción especificada en la [**propiedad Subscription.**](eventtrigger-subscription.md)
 
@@ -38,7 +38,7 @@ EventTrigger.ValueQueries As String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Colección de pares nombre-valor. Cada par nombre-valor de la colección define un nombre único para un valor de propiedad del evento que desencadena el desencadenador de eventos. El valor de propiedad del evento se define como una consulta de eventos XPath. Para obtener más información sobre las consultas de eventos XPath, vea [Selección de eventos](/previous-versions//aa385231(v=vs.85)).
+Colección de pares nombre-valor. Cada par nombre-valor de la colección define un nombre único para un valor de propiedad del evento que desencadena el desencadenador de eventos. El valor de propiedad del evento se define como una consulta de eventos XPath. Para obtener más información sobre las consultas de eventos XPath, vea [Selección de eventos.](/previous-versions//aa385231(v=vs.85))
 
 ## <a name="remarks"></a>Observaciones
 
@@ -83,7 +83,7 @@ Para obtener más información sobre cómo escribir una cadena de consulta para 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

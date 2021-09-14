@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 88e6d129e123b043c5223a5a129ceb08ce7bb497bf5798cf48920dad8f86c9c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3f1317b1b8887b9ff306fcaed2cb6da2d077010f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063849"
 ---
 # <a name="d3dxvec3normalize-function-d3dx10mathh"></a>Función D3DXVec3Normalize (D3DX10Math.h)
 
@@ -45,7 +45,7 @@ D3DXVECTOR3* D3DXVec3Normalize(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
+Puntero a [**D3DXVECTOR3 que**](d3d10-d3dxvector3.md) es el resultado de la operación.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
 Puntero a una estructura D3DXVECTOR3 que es la versión normalizada del vector especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec3Normalize se puede usar como parámetro para otra función.
 
@@ -78,7 +78,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

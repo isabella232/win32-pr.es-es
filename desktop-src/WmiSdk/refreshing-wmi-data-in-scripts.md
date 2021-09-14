@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Actualizar datos WMI en scripts
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 969a97c6300ac256e08c79e4f4aaeaa8d05bda072a2c310812ce3b2061c791fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae0f17ce718fcf5b57e4f3204337634af4129d24
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119050453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063936"
 ---
 # <a name="refreshing-wmi-data-in-scripts"></a>Actualizar datos WMI en scripts
 

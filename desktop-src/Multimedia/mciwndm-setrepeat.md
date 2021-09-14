@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: aeae2ac3cb57f8ddbb2343ee3f42d30fa8def370
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370754"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250736"
 ---
-# <a name="mciwndm_setrepeat-message"></a>Mensaje de MCIWNDM \_ SETREPEAT
+# <a name="mciwndm_setrepeat-message"></a>Mensaje MCIWNDM \_ SETREPEAT
 
-El **mensaje MCIWNDM \_ SETREPEAT** establece la marca de repetición asociada a la reproducción continua. El **mensaje MCIWNDM \_ SETREPEAT** funciona junto con el comando [MCI \_ PLAY](mci-play.md) para proporcionar un bucle de reproducción continua. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetRepeat.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetrepeat)
+El **mensaje MCIWNDM \_ SETREPEAT** establece la marca de repetición asociada a la reproducción continua. El **mensaje MCIWNDM \_ SETREPEAT** funciona junto con el [comando MCI \_ PLAY](mci-play.md) para proporcionar un bucle de reproducción continua. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetRepeat.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetrepeat)
 
 
 ```C++
@@ -65,7 +65,7 @@ Actualmente, MCIAVI es el único dispositivo que admite la reproducción continu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

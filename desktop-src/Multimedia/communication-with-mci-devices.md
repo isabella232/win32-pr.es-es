@@ -9,20 +9,20 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c1b5bfb7909b94bf8e71745adeeaeda61cae20ae
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372091"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069545"
 ---
 # <a name="communication-with-mci-devices"></a>Comunicación con dispositivos MCI
 
-Cada dispositivo MCI puede usar uno o varios de los siguientes elementos como identificadores:
+Es posible que cada dispositivo MCI use uno o varios de los siguientes elementos como identificadores:
 
 -   un identificador de dispositivo
 -   un nombre de dispositivo
 -   un alias
--   el nombre de archivo del contenido cargado actualmente.
+-   nombre de archivo del contenido cargado actualmente.
 
 MCIWnd proporciona macros que puede usar para recuperar esta información. A continuación, puede usar esta información para comunicarse a través de MCI directamente con dispositivos MCI asociados a ventanas MCIWnd.
 
@@ -32,7 +32,7 @@ Para recuperar el nombre del dispositivo MCI actual, use la macro [**MCIWndGetDe
 
 Puede recuperar el alias del dispositivo MCI actual mediante la macro [**MCIWndGetAlias.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetalias) La aplicación puede usar este alias al comunicarse con un dispositivo MCI mediante la [**función mciSendString.**](/previous-versions//dd757161(v=vs.85))
 
-Por último, puede recuperar el nombre de archivo usado por un dispositivo MCI mediante la macro [**MCIWndGetFileName.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetfilename) El nombre de archivo identifica el contenido asociado actualmente a una ventana de MCIWnd. La aplicación puede usar este nombre de archivo al comunicarse con un dispositivo MCI mediante **mciSendCommand** o **mciSendString**.
+Por último, puede recuperar el nombre de archivo utilizado por un dispositivo MCI mediante la macro [**MCIWndGetFileName.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetfilename) El nombre de archivo identifica el contenido asociado actualmente a una ventana de MCIWnd. La aplicación puede usar este nombre de archivo al comunicarse con un dispositivo MCI mediante **mciSendCommand** o **mciSendString**.
 
  
 

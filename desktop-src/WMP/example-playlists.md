@@ -13,7 +13,7 @@ keywords:
 - listas de reproducción, listas de reproducción de ejemplo
 - listas de reproducción de metarchivo, listas de reproducción de ejemplo
 - Reproductor de Windows Media,ejemplos de lista de reproducción
-- Reproductor de Windows Media listas de reproducción de ejemplo
+- Reproductor de Windows Media,listas de reproducción de ejemplo
 - Reproductor de Windows Media,listas de reproducción de ejemplo
 - ejemplos de lista de reproducción
 - listas de reproducción de ejemplo
@@ -25,12 +25,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6131e14f8bc6b0cbd93cd3e2aec853e5ec6b3629b4cda05862b6ec461d8e32cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59fa7266985d2d08234f2bfdcac8b1518e355a6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119650225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249674"
 ---
 # <a name="example-playlists"></a>Listas de reproducción de ejemplo
 
@@ -40,7 +40,7 @@ A continuación se muestra tres listas de reproducción de ejemplo. Para usar es
 
 | Lista de reproducción de ejemplo                                                           | Descripción                                               |
 |----------------------------------------------------------------------------|-----------------------------------------------------------|
-| [Lista de reproducción básica](a-basic-playlist.md)                                   | Una lista de reproducción sencilla.                                        |
+| [Lista de reproducción básica](a-basic-playlist.md)                                   | Lista de reproducción simple.                                        |
 | [Lista de reproducción avanzada](an-advanced-playlist.md)                           | Lista de reproducción con un conjunto más completo de elementos de lista de reproducción. |
 | [Lista de reproducción de una estación de radio de ejemplo](an-example-radio-station-playlist.md) | Lista de reproducción que examina tres estaciones de radio.               |
 

@@ -5,52 +5,52 @@ ms.assetid: 377fb2cc-5b46-481a-8222-9291e504ae2c
 keywords:
 - portapapeles, cortar datos
 - clipboard,copying data
-- clipboard, pegar datos
-- clipboard,selecting data
+- portapapeles, pegar datos
+- portapapeles, selección de datos
 - clipboard,Editar comandos de menú
 - clipboard,viewers
-- clipboard,viewer windows
+- portapapeles, ventanas de visor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41b2b0a12af9bac8c1bbe7c895a1951c9c02513bc8222ace107e39b23bf3d6ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d7c7e7d6db6f25bc1016eefbcc5afc9f5e0db44
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118811561"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063877"
 ---
 # <a name="using-the-clipboard"></a>Uso del Portapapeles
 
 En esta sección se muestran ejemplos de código para las siguientes tareas:
 
 -   [Implementación de los comandos Cortar, Copiar y Pegar](#implementing-the-cut-copy-and-paste-commands)
-    -   [Seleccionar datos](#selecting-data)
+    -   [Selección de datos](#selecting-data)
     -   [Crear un menú Editar](#creating-an-edit-menu)
     -   [Procesamiento del mensaje \_ WM INITMENUPOPUP](#processing-the-wm_initmenupopup-message)
-    -   [Procesamiento del mensaje DE \_ COMANDO DE WM](#processing-the-wm_command-message)
+    -   [Procesamiento del mensaje \_ WM COMMAND](#processing-the-wm_command-message)
     -   [Copiar información en el Portapapeles](#copying-information-to-the-clipboard)
     -   [Pegar información desde el Portapapeles](#pasting-information-from-the-clipboard)
-    -   [Registro de un formato de Portapapeles](#registering-a-clipboard-format)
+    -   [Registrar un formato de Portapapeles](#registering-a-clipboard-format)
     -   [Procesamiento de los mensajes \_ RENDERFORMAT y WM \_ RENDERALLFORMATS](#processing-the-wm_renderformat-and-wm_renderallformats-messages)
     -   [Procesamiento del mensaje \_ WM DESTROYCLIPBOARD](#processing-the-wm_destroyclipboard-message)
-    -   [Usar el formato Owner-Display Clipboard](#using-the-owner-display-clipboard-format)
+    -   [Usar el formato Owner-Display clipboard](#using-the-owner-display-clipboard-format)
 -   [Supervisión del contenido del Portapapeles](#monitoring-clipboard-contents)
 -   [Consulta del número de secuencia del Portapapeles](#querying-the-clipboard-sequence-number)
--   [Crear un agente de escucha de formato del Portapapeles](#creating-a-clipboard-format-listener)
+-   [Creación de un agente de escucha de formato del Portapapeles](#creating-a-clipboard-format-listener)
 -   [Crear una ventana del Visor del Portapapeles](#creating-a-clipboard-viewer-window)
--   [Agregar una ventana a la cadena del Visor del Portapapeles](#adding-a-window-to-the-clipboard-viewer-chain)
+-   [Agregar una ventana a la cadena del visor del Portapapeles](#adding-a-window-to-the-clipboard-viewer-chain)
     -   [Procesamiento del mensaje \_ CHANGECBCHAIN de WM](#processing-the-wm_changecbchain-message)
-    -   [Quitar una ventana de la cadena del Visor del Portapapeles](#removing-a-window-from-the-clipboard-viewer-chain)
+    -   [Quitar una ventana de la cadena de visor del Portapapeles](#removing-a-window-from-the-clipboard-viewer-chain)
     -   [Procesamiento del mensaje \_ DRAWCLIPBOARD de WM](#processing-the-wm_drawclipboard-message)
     -   [Ejemplo de visor del Portapapeles](#example-of-a-clipboard-viewer)
 
 ## <a name="implementing-the-cut-copy-and-paste-commands"></a>Implementación de los comandos Cortar, Copiar y Pegar
 
-En esta sección se describe cómo  se **implementan** los comandos estándar **Cortar,** Copiar y Pegar en una aplicación. En el ejemplo de esta sección se usan estos métodos para colocar datos en el Portapapeles mediante un formato registrado del Portapapeles, el formato **\_ OWNERDISPLAY** de CF y el **formato CF \_ TEXT.** El formato registrado se usa para representar ventanas de texto rectangulares o elípticas, denominadas etiquetas.
+En esta sección se describe cómo  se **implementan** los comandos **estándar Cortar,** Copiar y Pegar en una aplicación. En el ejemplo de esta sección se usan estos métodos para colocar datos en el Portapapeles mediante un formato de Portapapeles registrado, el formato **\_ OWNERDISPLAY** de CF y el formato **CF \_ TEXT.** El formato registrado se usa para representar ventanas de texto rectangulares o elípticas, denominadas etiquetas.
 
 ### <a name="selecting-data"></a>Seleccionar datos
 
-Para poder copiar información en el Portapapeles, el usuario debe seleccionar información específica que se va a copiar o cortar. Una aplicación debe proporcionar un medio para que el usuario seleccione información dentro de un documento y algún tipo de comentarios visuales para indicar los datos seleccionados.
+Para poder copiar información en el Portapapeles, el usuario debe seleccionar información específica para copiarla o cortarla. Una aplicación debe proporcionar un medio para que el usuario seleccione información dentro de un documento y algún tipo de comentarios visuales para indicar los datos seleccionados.
 
 ### <a name="creating-an-edit-menu"></a>Crear un menú Editar
 
@@ -58,9 +58,9 @@ Una aplicación debe cargar una tabla de aceleradores que contenga los acelerado
 
 ### <a name="processing-the-wm_initmenupopup-message"></a>Procesamiento del mensaje \_ WM INITMENUPOPUP
 
-No todos los comandos del Portapapeles están disponibles para el usuario en un momento dado. Una aplicación debe procesar el mensaje [**WM \_ INITMENUPOPUP**](/windows/desktop/menurc/wm-initmenupopup) para habilitar los elementos de menú para los comandos disponibles y deshabilitar los comandos no disponibles.
+No todos los comandos del Portapapeles están disponibles para el usuario en un momento dado. Una aplicación debe procesar el mensaje [**\_ WM INITMENUPOPUP**](/windows/desktop/menurc/wm-initmenupopup) para habilitar los elementos de menú de los comandos disponibles y deshabilitar los comandos no disponibles.
 
-A continuación se muestra el caso [**\_ WM INITMENUPOPUP**](/windows/desktop/menurc/wm-initmenupopup) para una aplicación denominada Label.
+A continuación se [**muestra el \_ caso INITMENUPOPUP de WM**](/windows/desktop/menurc/wm-initmenupopup) para una aplicación denominada Label.
 
 
 ```
@@ -71,7 +71,7 @@ case WM_INITMENUPOPUP:
 
 
 
-La función InitMenu se define como se muestra a continuación.
+La función InitMenu se define de la siguiente manera.
 
 
 ```
@@ -128,9 +128,9 @@ void WINAPI InitMenu(HMENU hmenu)
 
 
 
-### <a name="processing-the-wm_command-message"></a>Procesamiento del mensaje DE \_ COMANDO DE WM
+### <a name="processing-the-wm_command-message"></a>Procesamiento del mensaje \_ WM COMMAND
 
-Para procesar comandos de menú, agregue el caso [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) al procedimiento de ventana principal de la aplicación. A continuación se muestra el caso **\_ WM COMMAND** para el procedimiento de ventana de la aplicación Label.
+Para procesar comandos de menú, agregue el caso [**\_ WM COMMAND**](/windows/desktop/menurc/wm-command) al procedimiento de ventana principal de la aplicación. A continuación se **muestra el caso WM \_ COMMAND** para el procedimiento de ventana de la aplicación Label.
 
 
 ```
@@ -162,18 +162,18 @@ case WM_COMMAND:
 
 
 
-Para llevar a cabo **los comandos Copiar** y Cortar, el procedimiento de ventana llama a la función EditCopy definida por la aplicación.  Para obtener más información, [vea Copiar información en el Portapapeles.](#copying-information-to-the-clipboard) Para llevar a cabo el **comando Pegar,** el procedimiento de ventana llama a la función EditPaste definida por la aplicación. Para obtener más información sobre la función EditPaste, vea [Pegar información desde el Portapapeles.](#pasting-information-from-the-clipboard)
+Para llevar a cabo los **comandos Copy** y **Cut,** el procedimiento de ventana llama a la función EditCopy definida por la aplicación. Para obtener más información, [vea Copiar información en el Portapapeles.](#copying-information-to-the-clipboard) Para llevar a cabo el **comando Pegar,** el procedimiento de ventana llama a la función EditPaste definida por la aplicación. Para obtener más información sobre la función EditPaste, vea [Pegar información desde el Portapapeles.](#pasting-information-from-the-clipboard)
 
 ### <a name="copying-information-to-the-clipboard"></a>Copiar información en el Portapapeles
 
-En la aplicación Label, la función EditCopy definida por la aplicación copia la selección actual en el Portapapeles. Esta función hace lo siguiente:
+En la aplicación Etiqueta, la función EditCopy definida por la aplicación copia la selección actual en el Portapapeles. Esta función hace lo siguiente:
 
-1.  Abre el Portapapeles mediante una llamada [**a la función OpenClipboard.**](/windows/desktop/api/Winuser/nf-winuser-openclipboard)
-2.  Vacía el Portapapeles mediante una llamada [**a la función EmptyClipboard.**](/windows/desktop/api/Winuser/nf-winuser-emptyclipboard)
-3.  Llama una vez [**a la función SetClipboardData**](/windows/desktop/api/Winuser/nf-winuser-setclipboarddata) para cada formato del Portapapeles que proporciona la aplicación.
+1.  Abre el Portapapeles mediante una llamada a la [**función OpenClipboard.**](/windows/desktop/api/Winuser/nf-winuser-openclipboard)
+2.  Vacía el Portapapeles mediante una llamada a [**la función EmptyClipboard.**](/windows/desktop/api/Winuser/nf-winuser-emptyclipboard)
+3.  Llama a [**la función SetClipboardData una**](/windows/desktop/api/Winuser/nf-winuser-setclipboarddata) vez para cada formato del Portapapeles que proporciona la aplicación.
 4.  Cierra el Portapapeles mediante una llamada a [**la función CloseClipboard.**](/windows/desktop/api/Winuser/nf-winuser-closeclipboard)
 
-Según la selección actual, la función EditCopy copia un intervalo de texto o copia una estructura definida por la aplicación que representa una etiqueta completa. La estructura, denominada LABELBOX, se define de la siguiente manera.
+En función de la selección actual, la función EditCopy copia un intervalo de texto o copia una estructura definida por la aplicación que representa una etiqueta completa. La estructura, denominada LABELBOX, se define de la siguiente manera.
 
 
 ```
@@ -311,9 +311,9 @@ BOOL WINAPI EditCopy(VOID)
 
 ### <a name="pasting-information-from-the-clipboard"></a>Pegar información desde el Portapapeles
 
-En la aplicación Label, la función EditPaste definida por la aplicación pega el contenido del Portapapeles. Esta función hace lo siguiente:
+En la aplicación Etiqueta, la función EditPaste definida por la aplicación pega el contenido del Portapapeles. Esta función hace lo siguiente:
 
-1.  Abre el Portapapeles mediante una llamada [**a la función OpenClipboard.**](/windows/desktop/api/Winuser/nf-winuser-openclipboard)
+1.  Abre el Portapapeles mediante una llamada a la [**función OpenClipboard.**](/windows/desktop/api/Winuser/nf-winuser-openclipboard)
 2.  Determina cuál de los formatos de Portapapeles disponibles se va a recuperar.
 3.  Recupera el identificador de los datos en el formato seleccionado llamando a la [**función GetClipboardData.**](/windows/desktop/api/Winuser/nf-winuser-getclipboarddata)
 4.  Inserta una copia de los datos en el documento.
@@ -322,7 +322,7 @@ En la aplicación Label, la función EditPaste definida por la aplicación pega 
 
 5.  Cierra el Portapapeles mediante una llamada a [**la función CloseClipboard.**](/windows/desktop/api/Winuser/nf-winuser-closeclipboard)
 
-Si se selecciona una etiqueta y contiene un punto de inserción, la función EditPaste inserta el texto del Portapapeles en el punto de inserción. Si no hay ninguna selección o si se selecciona una etiqueta, la función crea una nueva etiqueta mediante la estructura LABELBOX definida por la aplicación en el Portapapeles. La estructura LABELBOX se coloca en el Portapapeles mediante un formato registrado del Portapapeles.
+Si se selecciona una etiqueta y contiene un punto de inserción, la función EditPaste inserta el texto del Portapapeles en el punto de inserción. Si no hay ninguna selección o si se selecciona una etiqueta, la función crea una nueva etiqueta, utilizando la estructura LABELBOX definida por la aplicación en el Portapapeles. La estructura LABELBOX se coloca en el Portapapeles mediante un formato registrado del Portapapeles.
 
 La estructura, denominada LABELBOX, se define de la siguiente manera.
 
@@ -433,9 +433,9 @@ VOID WINAPI EditPaste(VOID)
 
 
 
-### <a name="registering-a-clipboard-format"></a>Registro de un formato del Portapapeles
+### <a name="registering-a-clipboard-format"></a>Registrar un formato de Portapapeles
 
-Para registrar un formato del Portapapeles, agregue una llamada a la función [**RegisterClipboardFormat**](/windows/desktop/api/Winuser/nf-winuser-registerclipboardformata) a la función de inicialización de la instancia de la aplicación, como se muestra a continuación.
+Para registrar un formato de Portapapeles, agregue una llamada a la función [**RegisterClipboardFormat**](/windows/desktop/api/Winuser/nf-winuser-registerclipboardformata) a la función de inicialización de instancias de la aplicación, como se muestra a continuación.
 
 
 ```
@@ -457,11 +457,11 @@ if (uLabelFormat == 0)
 
 Si una ventana pasa un identificador **NULL** a la función [**SetClipboardData,**](/windows/desktop/api/Winuser/nf-winuser-setclipboarddata) debe procesar los mensajes [**WM \_ RENDERFORMAT**](wm-renderformat.md) y [**WM \_ RENDERALLFORMATS**](wm-renderallformats.md) para representar los datos a petición.
 
-Si una ventana retrasa la representación de un formato específico y, a continuación, otra aplicación solicita datos en ese formato, se envía un mensaje [**\_ DE WM RENDERFORMAT**](wm-renderformat.md) a la ventana. Además, si una ventana retrasa la representación de uno o varios formatos y algunos de esos formatos permanecen sin representar cuando la ventana está a punto de destruirse, se envía un mensaje [**\_ RENDERALLFORMATS**](wm-renderallformats.md) de WM a la ventana antes de su destrucción.
+Si una ventana retrasa la representación de un formato específico y, a continuación, otra aplicación solicita datos en ese formato, se envía un mensaje [**\_ RENDERFORMAT**](wm-renderformat.md) de WM a la ventana. Además, si una ventana retrasa la representación de uno o varios formatos, y si algunos de esos formatos permanecen sin representar cuando la ventana está a punto de destruirse, se envía un mensaje [**\_ RENDERALLFORMATS**](wm-renderallformats.md) wm a la ventana antes de su destrucción.
 
-Para representar un formato del Portapapeles, el procedimiento de ventana debe colocar un identificador de datos que no sea **NULL** en el Portapapeles mediante la [**función SetClipboardData.**](/windows/desktop/api/Winuser/nf-winuser-setclipboarddata) Si el procedimiento de ventana representa un formato en respuesta al mensaje [**\_ RENDERFORMAT de WM,**](wm-renderformat.md) no debe abrir el Portapapeles antes de llamar a **SetClipboardData**. Pero si representa uno o varios formatos en respuesta al mensaje [**\_ RENDERALLFORMATS**](wm-renderallformats.md) de WM, debe abrir el Portapapeles y comprobar que la ventana sigue siendo propietaria del Portapapeles antes de llamar a **SetClipboardData** y debe cerrar el Portapapeles antes de volver.
+Para representar un formato de Portapapeles, el procedimiento de ventana debe colocar un identificador de datos que no sea **NULL** en el Portapapeles mediante la [**función SetClipboardData.**](/windows/desktop/api/Winuser/nf-winuser-setclipboarddata) Si el procedimiento de ventana está representando un formato en respuesta al mensaje [**\_ RENDERFORMAT de WM,**](wm-renderformat.md) no debe abrir el Portapapeles antes de llamar a **SetClipboardData**. Pero si está representando uno o varios formatos en respuesta al mensaje [**\_ RENDERALLFORMATS**](wm-renderallformats.md) de WM, debe abrir el Portapapeles y comprobar que la ventana sigue siendo propietaria del Portapapeles antes de llamar a **SetClipboardData** y debe cerrar el Portapapeles antes de volver.
 
-La aplicación Label procesa los [**mensajes \_ WM RENDERFORMAT**](wm-renderformat.md) y [**WM \_ RENDERALLFORMATS**](wm-renderallformats.md) como se muestra a continuación.
+La aplicación Label procesa los [**mensajes WM \_ RENDERFORMAT**](wm-renderformat.md) y [**WM \_ RENDERALLFORMATS**](wm-renderallformats.md) como se muestra a continuación.
 
 
 ```
@@ -579,13 +579,13 @@ case WM_DESTROYCLIPBOARD:
 
 
 
-### <a name="using-the-owner-display-clipboard-format"></a>Usar el formato Owner-Display Clipboard
+### <a name="using-the-owner-display-clipboard-format"></a>Usar el formato Owner-Display clipboard
 
 Si una ventana coloca información en el Portapapeles mediante el formato del Portapapeles **\_ CF OWNERDISPLAY,** debe hacer lo siguiente:
 
 -   [**Procese el \_ mensaje PAINTCLIPBOARD de WM.**](wm-paintclipboard.md) Este mensaje se envía al propietario del Portapapeles cuando se debe volver a dibujar una parte de la ventana del visor del Portapapeles.
 
--   [**Procese el mensaje WM \_ SIZECLIPBOARD.**](wm-sizeclipboard.md) Este mensaje se envía al propietario del Portapapeles cuando se ha cambiado el tamaño de la ventana del visor del Portapapeles o su contenido.
+-   [**Procese el \_ mensaje SIZECLIPBOARD de WM.**](wm-sizeclipboard.md) Este mensaje se envía al propietario del Portapapeles cuando se ha cambiado el tamaño de la ventana del visor del Portapapeles o se ha cambiado su contenido.
 
     Normalmente, una ventana responde a este mensaje estableciendo las posiciones de desplazamiento y los intervalos de la ventana del visor del Portapapeles. En respuesta a este mensaje, la aplicación Etiqueta también actualiza una [**estructura SIZE**](/previous-versions//dd145106(v=vs.85)) para la ventana del visor del Portapapeles.
 
@@ -687,7 +687,7 @@ Cada vez que cambia el contenido del Portapapeles, se incrementa un valor de 32 
 
 Un agente de escucha de formato del Portapapeles es una ventana que se ha registrado para recibir notificaciones cuando el contenido del Portapapeles ha cambiado. Este método se recomienda sobre la creación de una ventana del visor del Portapapeles porque es más fácil de implementar y evita problemas si los programas no mantienen correctamente la cadena del visor del Portapapeles o si una ventana de la cadena del visor del Portapapeles deja de responder a los mensajes.
 
-Una ventana se registra como un agente de escucha de formato del Portapapeles mediante una llamada a [**la función AddClipboardFormatListener.**](/windows/desktop/api/Winuser/nf-winuser-addclipboardformatlistener) Cuando cambia el contenido del Portapapeles, la ventana se publica un [**mensaje WM \_ CLIPBOARDUPDATE.**](wm-clipboardupdate.md) El registro sigue siendo válido hasta que la ventana se anule el registro mediante una llamada a [**la función RemoveClipboardFormatListener.**](/windows/desktop/api/Winuser/nf-winuser-removeclipboardformatlistener)
+Una ventana se registra como un agente de escucha de formato del Portapapeles mediante una llamada a [**la función AddClipboardFormatListener.**](/windows/desktop/api/Winuser/nf-winuser-addclipboardformatlistener) Cuando cambia el contenido del Portapapeles, la ventana se publica un [**mensaje WM \_ CLIPBOARDUPDATE.**](wm-clipboardupdate.md) El registro sigue siendo válido hasta que la ventana se anule el registro mediante una llamada a la [**función RemoveClipboardFormatListener.**](/windows/desktop/api/Winuser/nf-winuser-removeclipboardformatlistener)
 
 ## <a name="creating-a-clipboard-viewer-window"></a>Crear una ventana del Visor del Portapapeles
 

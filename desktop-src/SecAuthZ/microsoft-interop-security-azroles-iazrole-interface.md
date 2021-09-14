@@ -85,18 +85,18 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: e72a2c76bad4eaf35ac82327ddeec921de63c153616995a94c13c777dbbc4194
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f1f6147cc14f199ffd309c85388d0e95785ecfc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118912691"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069059"
 ---
 # <a name="microsoftinteropsecurityazrolesiazrole-interface"></a>Interfaz Microsoft.Interop.Security.AzRoles.IAzRole
 
 Los métodos y propiedades del contenedor de interoperabilidad **Microsoft.Interop.Security.Azroles.IAzRole** se documentan en la versión COM del método o propiedad. Un vínculo a la documentación COM correlacionada sigue a cada nombre de miembro.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz Microsoft.Interop.Security.AzRoles.IAzRole** tiene estos tipos de miembros:
 
@@ -139,12 +139,12 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzRole** tiene estas propiedad
 
 | Propiedad                                                                  | Tipo de acceso           | Descripción                                                                       |
 |:--------------------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------|
-| **Microsoft.Interop.Security.Azroles.IAzRole.ApplicationData**<br/> | Lectura/escritura<br/> | [**Propiedad ApplicationData de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_applicationdata)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzRole.ApplicationData**<br/> | Lectura y escritura<br/> | [**Propiedad ApplicationData de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_applicationdata)<br/> |
 | **Microsoft.Interop.Security.Azroles.IAzRole.AppMembers**<br/>      | Solo lectura<br/>  | [**Propiedad AppMembers de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_appmembers)<br/>           |
-| **Microsoft.Interop.Security.Azroles.IAzRole.Description**<br/>     | Lectura/escritura<br/> | [**Propiedad Description de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_description)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzRole.Description**<br/>     | Lectura y escritura<br/> | [**Propiedad Description de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_description)<br/>         |
 | **Microsoft.Interop.Security.Azroles.IAzRole.Members**<br/>         | Solo lectura<br/>  | [**Propiedad Members de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_members)<br/>                 |
 | **Microsoft.Interop.Security.Azroles.IAzRole.MembersName**<br/>     | Solo lectura<br/>  | [**Propiedad MembersName de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_membersname)<br/>         |
-| **Microsoft.Interop.Security.Azroles.IAzRole.Name**<br/>            | Lectura/escritura<br/> | [**Propiedad Name de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_name)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzRole.Name**<br/>            | Lectura y escritura<br/> | [**Propiedad Name de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_name)<br/>                       |
 | **Microsoft.Interop.Security.Azroles.IAzRole.Operations**<br/>      | Solo lectura<br/>  | [**Propiedad Operations de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_operations)<br/>           |
 | **Microsoft.Interop.Security.Azroles.IAzRole.Tasks**<br/>           | Solo lectura<br/>  | [**Propiedad Tasks de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_tasks)<br/>                     |
 | **Microsoft.Interop.Security.Azroles.IAzRole.Writable**<br/>        | Solo lectura<br/>  | [**Propiedad grabable de IAzRole**](/windows/desktop/api/Azroles/nf-azroles-iazrole-get_writable)<br/>               |
@@ -157,7 +157,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzRole** tiene estas propiedad
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

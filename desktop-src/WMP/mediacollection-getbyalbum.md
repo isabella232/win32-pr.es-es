@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c17b7113b66f49822bad5586033312c9ec50711e6290c3f655a0a1b75adc54c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d94cdfa880288893e9659b73b01bc754ac59bbf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118574678"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068381"
 ---
 # <a name="mediacollectiongetbyalbum-method"></a>Método MediaCollection.getByAlbum
 
@@ -42,7 +42,7 @@ retVal = MediaCollection.getByAlbum(
 
 <dl> <dt>
 
-*album* \[ En\]
+*álbum* \[ En\]
 </dt> <dd>
 
 **Cadena** que contiene el nombre del álbum.
@@ -53,13 +53,13 @@ retVal = MediaCollection.getByAlbum(
 
 Este método devuelve un objeto **Playlist.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se *usa MediaCollection*. **getByAlbum para recuperar** una lista de reproducción de elementos multimedia. La lista de reproducción contiene elementos con el álbum especificado por el usuario en un elemento de entrada HTML TEXT denominado GetAlbum. El **objeto Player** se creó con id. = "Player".
+En el ejemplo siguiente se *usa MediaCollection*. **getByAlbum para** recuperar una lista de reproducción de elementos multimedia. La lista de reproducción contiene elementos con el álbum especificado por el usuario en un elemento de entrada HTML TEXT denominado GetAlbum. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -92,9 +92,9 @@ onClick = "
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

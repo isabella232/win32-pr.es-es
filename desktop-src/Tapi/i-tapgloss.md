@@ -5,12 +5,12 @@ ms.assetid: 2908cd44-9334-48c7-a3ba-82629f24ba35
 title: I (API de telefonía)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb1f9f84058f66ab0b6972ef8de0714166ebeab7b4352b2fb147078fd3f12704
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22758023f96edf10b9509fc87203c60a6baf0f7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119140518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068765"
 ---
 # <a name="i-telephony-api"></a>I (API de telefonía)
 
@@ -21,7 +21,7 @@ ms.locfileid: "119140518"
 <span id="tapi2.integrated_services_digital_network_isdn__tapgloss"></span><span id="TAPI2.INTEGRATED_SERVICES_DIGITAL_NETWORK_ISDN__TAPGLOSS"></span>**Red digital de servicios integrados (ISDN)**
 </dt> <dd>
 
-Una red de telefonía/telecomunicaciones completamente digital para transportar voz, datos, imágenes y vídeo a alta velocidad mediante el envío de señales codificadas digitalmente a velocidades de hasta 144 000 bps en líneas de interfaz de velocidad básica (BRI-ISDN) y mucho más alta en líneas de interfaz de velocidad principal (PRI-ISDN). ISDN se compone de al menos tres canales y hasta 32 canales, para la transmisión simultánea e independiente de voz y datos. Vea [*Basic Rate Interface (BRI-ISDN)*](b-tapgloss.md), Primary Rate Interface (PRI-ISDN) (Interfaz de frecuencia básica (BRI-ISDN), Interfaz de tasa principal [*(PRI-ISDN).*](p-tapgloss.md)
+Una red de teléfono y telecomunicaciones completamente digital para transportar voz, datos, imágenes y vídeo a alta velocidad mediante el envío de señales codificadas digitalmente a velocidades de hasta 144 000 bps en líneas de interfaz de velocidad básica (BRI-ISDN) y mucho más alta en líneas de interfaz de velocidad primaria (PRI-ISDN). ISDN se compone de al menos tres canales y hasta 32 canales, para la transmisión simultánea e independiente de voz y datos. Vea [*Basic Rate Interface (BRI-ISDN)*](b-tapgloss.md), Primary Rate Interface (PRI-ISDN) (Interfaz de frecuencia básica (BRI-ISDN), Interfaz de tasa principal [*(PRI-ISDN).*](p-tapgloss.md)
 
 </dd> <dt>
 
@@ -46,7 +46,7 @@ La multidifusión IP es un esquema para enviar los mismos datos a varias máquin
 
 </dd> <dt>
 
-<span id="tapi2.isdn_tapgloss"></span><span id="TAPI2.ISDN_TAPGLOSS"></span>**Isdn**
+<span id="tapi2.isdn_tapgloss"></span><span id="TAPI2.ISDN_TAPGLOSS"></span>**ISDN**
 </dt> <dd>
 
 Consulte *Red digital de servicios integrados (ISDN).*

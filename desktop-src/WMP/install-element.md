@@ -3,7 +3,7 @@ title: Elemento Install
 description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El elemento Install especifica los valores usados por Reproductor de Windows Media para instalar un almacén en línea.
 ms.assetid: 9a5e15ee-ec36-48d3-a1c2-bf20b6d2da48
 keywords:
-- Elemento Install Reproductor de Windows Media
+- Install Element Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 05a946cbab6a6334faa7483c0f3201a98ff0abe32dca32fe1f4f7eed5d0a2408
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bba56240651f789b45c18b006b16e5e07b10676e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249603"
 ---
 # <a name="install-element"></a>Elemento Install
 
@@ -27,7 +27,7 @@ ms.locfileid: "118996525"
 
  
 
-El **elemento Install** especifica los valores usados por Reproductor de Windows Media para instalar una tienda en línea.
+El **elemento Install** especifica los valores usados por Reproductor de Windows Media para instalar un almacén en línea.
 
 ``` syntax
 <Install
@@ -47,7 +47,7 @@ El **elemento Install** especifica los valores usados por Reproductor de Windows
 <span id="EULAURL__required_"></span><span id="eulaurl__required_"></span><span id="EULAURL__REQUIRED_"></span>**EULAURL** (obligatorio)
 </dt> <dd>
 
-Dirección URL completa de un archivo con una extensión .txt nombre de archivo que Reproductor de Windows Media usa para mostrar un Contrato de licencia de usuario final (CLUF). Este archivo debe codificarse en formato ANSI.
+Dirección URL completa de un archivo con una extensión .txt nombre de archivo que Reproductor de Windows Media para mostrar un Contrato de licencia de usuario final (CLUF). Este archivo debe codificarse en formato ANSI.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Dirección URL completa del catálogo compilado de la tienda en línea.
 
 ## <a name="remarks"></a>Observaciones
 
-Si falta alguno de los atributos necesarios o no está disponible, Reproductor de Windows Media instalación no intentará descargar e instalar el código del proveedor de la tienda en línea. El programa de instalación configurará los valores predeterminados sin conexión como se especifica en el **documento ServiceInfo.** **ServiceInfo** se puede usar cuando no está conectado a Internet pasando el nombre del proveedor predeterminado y la **información de ServiceInfo** como parámetros de línea de comandos. Consulte [Redistributing Reproductor de Windows Media Software para](redistributing-windows-media-player-software.md) obtener más información sobre las opciones de la línea de comandos.
+Si falta alguno de los atributos necesarios o no está disponible, Reproductor de Windows Media programa de instalación no intentará descargar e instalar el código del proveedor de la tienda en línea. El programa de instalación configurará los valores predeterminados sin conexión como se especifica en el **documento ServiceInfo.** **ServiceInfo** se puede usar cuando no está conectado a Internet pasando el nombre del proveedor predeterminado y la **información de ServiceInfo** como parámetros de línea de comandos. Consulte [Redistributing Reproductor de Windows Media Software para](redistributing-windows-media-player-software.md) obtener más información sobre las opciones de la línea de comandos.
 
 > [!Note]  
 > El uso de este elemento requiere que firme un contrato de redistribución con Microsoft. Póngase en contacto con su representante empresarial para obtener más información.
@@ -118,7 +118,7 @@ Si falta alguno de los atributos necesarios o no está disponible, Reproductor d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

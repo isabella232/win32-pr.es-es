@@ -4,12 +4,12 @@ ms.assetid: 99b3395b-8775-4fe8-b173-187fa359978f
 title: Visualización del texto teletexto estándar del mundo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2129538d91a7ac48fea26fd5f1987473896760c164fb3e2b1d4a2b1d142a1f04
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5f9b0885c08403de9578a8dee1eca6e000408ee5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272847"
 ---
 # <a name="viewing-world-standard-teletext"></a>Visualización del texto teletexto estándar del mundo
 
@@ -26,11 +26,11 @@ Este gráfico usa los siguientes filtros para la presentación de WST:
 
 -   [Convertidor de tee/sink-to-sink](tee-sink-to-sink-converter.md). Acepta la información de VBI del filtro de captura y la divide en secuencias independientes para cada uno de los servicios de datos presentes en la señal.
 -   [Códec WST](wst-codec-filter.md). Descodifica los datos de teletexto de los ejemplos de VBI.
--   [Descodificador WST](wst-decoder-filter.md). Traduce los datos de teletexto y dibuja el texto en mapas de bits. El filtro de nivel inferior (en este caso, la propiedad Overlay Mixer) superpone los mapas de bits en el vídeo.
+-   [Descodificador WST](wst-decoder-filter.md). Traduce los datos de teletexto y dibuja el texto en mapas de bits. El filtro de bajada (en este caso, la propiedad Overlay Mixer) superpone los mapas de bits en el vídeo.
 
 El método **RenderStream** de Capture Graph Builder no admite directamente los filtros WST, por lo que la aplicación debe realizar algún trabajo adicional.
 
-1.  Agregue el filtro Overlay Mixer al gráfico de filtros. El código siguiente usa la función AddFilterByCLSID descrita en [Agregar un filtro por CLSID.](add-a-filter-by-clsid.md) (AddFilterByCLSID no es DirectShow API).
+1.  Agregue el filtro Overlay Mixer al gráfico de filtros. El código siguiente usa la función AddFilterByCLSID descrita en [Agregar un filtro por CLSID](add-a-filter-by-clsid.md). (AddFilterByCLSID no es DirectShow API).
     ```C++
     IBaseFilter *pOvMix = NULL;  // Pointer to the Overlay Mixer filter.
     hr = AddFilterByCLSID(pGraph, CLSID_OverlayMixer, L"OVMix", &pOvMix);
@@ -84,7 +84,7 @@ El método **RenderStream** de Capture Graph Builder no admite directamente los 
 
     
 
-6.  Vuelva **a llamar a RenderStream** para conectar el filtro de códec WST al filtro Overlay Mixer. El filtro descodificador de WST se incluye automáticamente en el gráfico.
+6.  Vuelva **a llamar a RenderStream** para conectar el filtro de códec WST al filtro Overlay Mixer. El filtro descodificador WST se incluye automáticamente en el gráfico.
     ```C++
     hr = pBuild->RenderStream(0, 0, pWstCodec, 0, pOvMix);
     ```

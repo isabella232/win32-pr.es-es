@@ -1,7 +1,7 @@
 ---
-description: Especifica el número de entradas en la caché de PMK en el cliente.
+description: Especifica el número de entradas de la caché de PMK en el cliente.
 ms.assetid: 3a53f7fd-7f12-43d3-94e6-a11bec389a34
-title: Elemento PMKCacheSize (Security)
+title: Elemento PMKCacheSize (seguridad)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 1b21054ddc97c51212ea3a06207617ad85228270
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677334"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272199"
 ---
-# <a name="pmkcachesize-security-element"></a>Elemento PMKCacheSize (Security)
+# <a name="pmkcachesize-security-element"></a>Elemento PMKCacheSize (seguridad)
 
-El elemento PMKCacheSize (Security) especifica el número de entradas en la caché de PMK en el cliente. Este elemento solo es válido para redes definidas por WPA2 con [**PMKCacheMode**](wlan-profileschema-pmkcachemode-security-element.md) establecido en "habilitado". Si **PMKCacheMode** está habilitado y este elemento no está presente, el tamaño de la memoria caché tiene como valor predeterminado 128 entradas.
+El elemento PMKCacheSize (security) especifica el número de entradas de la caché de PMK en el cliente. Este elemento solo es válido para redes definidas por WPA2 con [**PMKCacheMode**](wlan-profileschema-pmkcachemode-security-element.md) establecido en "enabled". Si **PMKCacheMode** está habilitado y este elemento no está presente, el tamaño de la memoria caché tiene como valor predeterminado 128 entradas.
 
-El almacenamiento en caché PMK se describe en la especificación [802.11 i](https://standards.ieee.org/findstds/standard/802.11i-2004.html) .
+El almacenamiento en caché de PMK se describe en la [especificación 802.11i.](https://standards.ieee.org/findstds/standard/802.11i-2004.html)
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+**Windows XP con SP3 y la API de LAN inalámbrica para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="PMKCacheSize"
@@ -46,7 +46,7 @@ El almacenamiento en caché PMK se describe en la especificación [802.11 i](htt
 </xs:element>
 ```
 
-El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema-security-msm-element.md) .
+El elemento de seguridad define [**el**](wlan-profileschema-security-msm-element.md) elemento .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,19 +54,19 @@ El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**bursátil**](wlan-profileschema-security-msm-element.md)
+[**Seguridad**](wlan-profileschema-security-msm-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**

@@ -5,12 +5,12 @@ ms.assetid: 7F136EB8-2866-47BC-8F1E-04DAFDB4D4D1
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43ab9fcf1451d0a227777046e523267fcb9392a576b0d6ed5f71e6d2f17b065b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7817ee817c692a9a5677d8fffe131a0a1cb60cbc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119137758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068566"
 ---
 # <a name="win32_tspermissionssetting-methods"></a>Métodos \_ TSPermissionsSetting de Win32
 

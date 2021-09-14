@@ -27,12 +27,12 @@ api_type:
 - DllExport
 api_location:
 - Wbemcons.dll
-ms.openlocfilehash: dfa2a1dcf15b65808af758820604df6aa62d7bc59d4e1c69e8d4d6e06b1d93a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e98948688b0fee37316102b2c37039de1c139310
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118555175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063961"
 ---
 # <a name="nteventlogeventconsumer-class"></a>NTEventLogEventConsumer (clase)
 
@@ -60,7 +60,7 @@ class NTEventLogEventConsumer : __EventConsumer
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase NTEventLogEventConsumer** tiene estos tipos de miembros:
 
@@ -139,7 +139,7 @@ Evento correcto
 
 <span id="EVENTLOG_ERROR_TPYE"></span><span id="eventlog_error_tpye"></span>
 
-<span id="EVENTLOG_ERROR_TPYE"></span><span id="eventlog_error_tpye"></span>**EVENTLOG \_ ERROR \_ TPYE** (1 (0x1))
+<span id="EVENTLOG_ERROR_TPYE"></span><span id="eventlog_error_tpye"></span>**REGISTRO DE EVENTOS \_ ERROR \_ TPYE** (1 (0x1))
 
 
 </dt> <dd>
@@ -161,7 +161,7 @@ Evento de advertencia
 
 <span id="EVENTLOG_INFORMATION_TYPE"></span><span id="eventlog_information_type"></span>
 
-<span id="EVENTLOG_INFORMATION_TYPE"></span><span id="eventlog_information_type"></span>**EVENTLOG \_ TIPO \_ DE** INFORMACIÓN (4 (0x4))
+<span id="EVENTLOG_INFORMATION_TYPE"></span><span id="eventlog_information_type"></span>**REGISTRO DE EVENTOS \_ TIPO \_ DE** INFORMACIÓN (4 (0x4))
 
 
 </dt> <dd>
@@ -183,7 +183,7 @@ Tipo de auditoría correcto
 
 <span id="EVENTLOG_AUDIT_FAILURE"></span><span id="eventlog_audit_failure"></span>
 
-<span id="EVENTLOG_AUDIT_FAILURE"></span><span id="eventlog_audit_failure"></span>**EVENTLOG \_ ERROR \_ DE** AUDITORÍA (16 (0x10))
+<span id="EVENTLOG_AUDIT_FAILURE"></span><span id="eventlog_audit_failure"></span>**REGISTRO DE EVENTOS \_ ERROR \_ DE AUDITORÍA** (16 (0x10))
 
 
 </dt> <dd>
@@ -325,7 +325,7 @@ Los usuarios autenticados no pueden, de forma predeterminada, registrar eventos 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase NTEventLogEventConsumer** se deriva de la [**\_ \_ clase abstracta EventConsumer.**](--eventconsumer.md)
 
@@ -337,7 +337,7 @@ Para obtener un ejemplo del uso **de NTEventLogEventConsumer** para crear un con
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

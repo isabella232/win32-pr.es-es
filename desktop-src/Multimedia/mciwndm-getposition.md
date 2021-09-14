@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_GETPOSITION mensaje (Vfw.h)
-description: El mensaje GETPOSITION de MCIWNDM recupera el valor numérico de \_ la posición actual dentro del contenido del dispositivo MCI.
+description: El mensaje GETPOSITION de MCIWNDM recupera el valor numérico de la posición actual dentro \_ del contenido del dispositivo MCI.
 ms.assetid: 6dc5d3bd-8515-4514-a2a5-c1bee07f7acf
 keywords:
 - MCIWNDM_GETPOSITION mensaje Windows Multimedia
@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: c2e7468b0e3698a72d3dce82bbd1591d59940d9a
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069507"
 ---
 # <a name="mciwndm_getposition-message"></a>Mensaje GETPOSITION de MCIWNDM \_
 
@@ -68,7 +68,7 @@ Devuelve un entero correspondiente a la posición actual. Las unidades del valor
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

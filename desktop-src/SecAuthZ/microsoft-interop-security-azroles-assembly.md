@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4287a9d0ed1351e9fab04fd0f7b5f1602af1487f125d9df30d4ad1cb98dba49b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c5d3a1692d30baedacffdd3e7ff6ae89990b50d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119414335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069102"
 ---
 # <a name="microsoftinteropsecurityazroles-assembly"></a>Ensamblado Microsoft.Interop.Security.AzRoles
 

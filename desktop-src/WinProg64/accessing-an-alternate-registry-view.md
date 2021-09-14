@@ -7,12 +7,12 @@ keywords:
 - WOW64 64 bits de programación Windows , vistas del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1642de971a2342ab26114803689b8de21dd66194618a8db23f97170bc8da576a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad3bca57367394e1b2fffc6486065e93c966f224
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119859085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068313"
 ---
 # <a name="accessing-an-alternate-registry-view"></a>Acceso a una vista alternativa del Registro
 

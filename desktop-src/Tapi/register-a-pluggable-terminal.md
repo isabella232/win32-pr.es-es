@@ -4,12 +4,12 @@ ms.assetid: d88a8d2c-4b05-4c31-928f-0baf1dbc218c
 title: Registro de un terminal conectable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca70081c5ffbee5d038488a245c528992015ed8679c35263666f456479e249dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7be84d9e2063c28a320c49d5249ea6434094b9a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119060433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068723"
 ---
 # <a name="register-a-pluggable-terminal"></a>Registro de un terminal conectable
 

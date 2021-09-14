@@ -17,12 +17,12 @@ keywords:
 - Contenido protegido por DRM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95bab3bc1fd03d98bf9c04242b6630d0bcc051d23f88a5bcd71a589cdb49e6bf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 94d10cf9078cf9aaf631b65de968f01491a97781
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119957365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068514"
 ---
 # <a name="handling-protected-content-in-the-service-provider"></a>Control del contenido protegido en el proveedor de servicios
 

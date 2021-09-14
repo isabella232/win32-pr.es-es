@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Bibliotecas de rendimiento y WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 877623bcf27dffe71146df4f9c117da83941bd1d8e2ed46436a04c1d7ace95df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4dedc9b98f492b3ab57e22cd1507f9e3651980a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119996415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063942"
 ---
 # <a name="performance-libraries-and-wmi"></a>Bibliotecas de rendimiento y WMI
 

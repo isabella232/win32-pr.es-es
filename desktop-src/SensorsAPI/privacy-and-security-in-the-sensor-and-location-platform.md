@@ -4,12 +4,12 @@ ms.assetid: 24425ed2-7b94-4b05-b117-9118d2074f49
 title: Privacidad y seguridad en la plataforma Windows sensor y ubicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff5f2109b3f581e48537c135444dae2afa8cb20582fbc559da01809d77e11e4f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8cb0bf50cd27de1fc7fd4f42bd7a8455a549eea3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119666975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068957"
 ---
 # <a name="privacy-and-security-in-the-windows-sensor-and-location-platform"></a>Privacidad y seguridad en la plataforma Windows sensor y ubicación
 

@@ -1,17 +1,17 @@
 ---
 description: En este tema se describe el proceso de invitar a un elemento del mismo nivel a unirse a un grupo del mismo nivel mediante las API de agrupación del mismo nivel.
 ms.assetid: 6afcbfec-b1df-45cd-8a43-221dfe5d8c33
-title: Invitar a un punto a un grupo
+title: Invitar a un par a un grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8760c2fb6023d5332da74402726669367fee4f5102c99269fa8e603653a1e2eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68b1e8852f58387d424944d4a8821f56b5e11e8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118612655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069225"
 ---
-# <a name="inviting-a-peer-to-a-group"></a>Invitar a un punto a un grupo
+# <a name="inviting-a-peer-to-a-group"></a>Invitar a un par a un grupo
 
 En este tema se describe el proceso de invitar a un elemento del mismo nivel a unirse a un grupo del mismo nivel mediante las API de agrupación del mismo nivel.
 
@@ -50,9 +50,9 @@ La [**estructura PEER \_ CREDENTIAL \_ INFO**](/windows/desktop/api/P2P/ns-p2p-p
 Se invita a un miembro a unirse al grupo del mismo nivel de una de las dos maneras siguientes:
 
 -   Un administrador de grupo del mismo nivel llama a [**PeerGroupCreateInvitation**](/windows/desktop/api/P2P/nf-p2p-peergroupcreateinvitation), pasando la cadena XML de información de identidad obtenida del posible invitado a través de un mecanismo fuera de banda común, como el correo electrónico o una sesión de mensajería instantánea. La invitación también se pasa a través de algún proceso o mecanismo externo al elemento del mismo nivel, que en última instancia la recibirá como una cadena XML o un archivo de texto.
--   Un administrador de grupo del mismo [**nivel llama a PeerGroupIssueCredentials**](/windows/desktop/api/P2P/nf-p2p-peergroupissuecredentials). Para usar esta función, el elemento del mismo nivel debe haber publicado ya la información de pertenencia al grupo del mismo nivel [**(MIEMBRO \_**](/windows/desktop/api/P2P/ns-p2p-peer_member)DEL MISMO NIVEL) o tener una clave pública disponible (del par de claves RSA usado para crear la identidad del sujeto). En el primer caso, la estructura [**PEER \_ CREDENTIAL \_ INFO**](/windows/desktop/api/P2P/ns-p2p-peer_credential_info) necesaria para **PeerGroupIssueCredentials** se puede obtener de la estructura **PEER \_ MEMBER;** en el último caso, se puede rellenar una nueva estructura PEER **\_ CREDENTIAL \_ INFO** con la clave pública.
+-   Un administrador de grupo del mismo [**nivel llama a PeerGroupIssueCredentials**](/windows/desktop/api/P2P/nf-p2p-peergroupissuecredentials). Para usar esta función, el elemento del mismo nivel debe haber publicado ya la información de pertenencia al grupo del mismo nivel [**(MIEMBRO \_**](/windows/desktop/api/P2P/ns-p2p-peer_member)DEL MISMO NIVEL) o tener una clave pública disponible (del par de claves RSA usado para crear la identidad del sujeto). En el primer caso, la estructura [**PEER \_ CREDENTIAL \_ INFO**](/windows/desktop/api/P2P/ns-p2p-peer_credential_info) necesaria para **PeerGroupIssueCredentials** se puede obtener de la estructura **PEER \_ MEMBER;** en el último caso, se puede rellenar una nueva estructura **PEER \_ CREDENTIAL \_ INFO** con la clave pública.
 
-Después de recibir la cadena de invitación, el mismo nivel la pasa a [**PeerGroupJoin**](/windows/desktop/api/P2P/nf-p2p-peergroupjoin) para unirse al grupo del mismo nivel. Si la llamada a **PeerGroupJoin** se realiza correctamente, el mismo nivel puede abrir más adelante el grupo del mismo nivel llamando a [**PeerGroupOpen**](/windows/desktop/api/P2P/nf-p2p-peergroupopen).
+Después de recibir la cadena de invitación, el mismo nivel la pasa a [**PeerGroupJoin**](/windows/desktop/api/P2P/nf-p2p-peergroupjoin) para unirse al grupo del mismo nivel. Si la llamada a **PeerGroupJoin** se realiza correctamente, el mismo nivel puede abrir el grupo del mismo nivel llamando a [**PeerGroupOpen**](/windows/desktop/api/P2P/nf-p2p-peergroupopen).
 
 ## <a name="parsing-an-invitation"></a>Análisis de una invitación
 

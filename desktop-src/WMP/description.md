@@ -6,22 +6,22 @@ keywords:
 - Reproductor de Windows Media Máscaras móviles, sección Descripción
 - máscaras, sección Descripción
 - referencia de máscaras, sección Descripción
-- Sección descripción en máscaras
+- Sección Descripción en máscaras
 - archivos de definición de máscara, sección Descripción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 486ca5235939352ffabb924aaf38a706b436d4c1358a92b9aef4996614c53623
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4a1b714fb917f9d13ee710509cfc5bf696e3eef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117749962"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068478"
 ---
 # <a name="description-windows-media-player-sdk"></a>Descripción (Reproductor de Windows Media SDK)
 
-Al crear una máscara para Reproductor de Windows Media serie 9 para Windows Mobile 2003 o posterior, debe incluir una sección Descripción. La sección Descripción permite especificar el ancho y alto de la pantalla, la resolución de la pantalla y la orientación de la pantalla para la que se diseñó la máscara. La sección Descripción debe aparecer en el archivo de definición de máscara antes de cualquier otra sección y justo después de la declaración de versión inicial.
+Al crear una máscara para Reproductor de Windows Media serie 9 para Windows Mobile 2003 o posterior, debe incluir una sección Descripción. La sección Descripción permite especificar el ancho y alto de la pantalla, la resolución de la pantalla y la orientación de la pantalla para la que se diseñó la máscara. La sección Descripción debe aparecer en el archivo de definición de máscara antes que cualquier otra sección y justo después de la declaración de versión inicial.
 
-La sección Descripción del archivo de definición de máscara debe comenzar con la línea siguiente:
+La sección Descripción del archivo de definición de máscara debe comenzar con la siguiente línea:
 
 
 ```C++
@@ -45,7 +45,7 @@ A continuación, debe agregar información sobre las dimensiones de la máscara 
 
 
 
-Esto especifica que ha diseñado la máscara para que se muestre con 240 píxeles de ancho, 320 píxeles de alto y con una resolución de pantalla de 96 PPP. Tenga en cuenta que esto implica una orientación en modo vertical.
+Esto especifica que ha diseñado la máscara para que se muestre a 240 píxeles de ancho, 320 píxeles de alto y con una resolución de pantalla de 96 PPP. Tenga en cuenta que esto implica una orientación en modo vertical.
 
 Opcionalmente, puede especificar el modo de orientación para el que diseñó la máscara en la sección de descripción. En el ejemplo siguiente se muestra cómo especificar la orientación:
 
@@ -80,7 +80,7 @@ En la tabla siguiente se enumeran los valores que puede usar para Orientation.
 
  
 
-Debe tener cuidado de especificar siempre las dimensiones, la resolución y la orientación correctas para las que se autorizó la máscara. Por ejemplo, si las dimensiones especificadas por la máscara describen una orientación horizontal, la máscara no estará disponible cuando el dispositivo esté en modo vertical, incluso si especifica Vertical en la línea de orientación.
+Debe tener cuidado de especificar siempre las dimensiones, resolución y orientación correctas para las que se ha escrito la máscara. Por ejemplo, si las dimensiones especificadas por la máscara describen una orientación horizontal, la máscara no estará disponible cuando el dispositivo esté en modo vertical, incluso si especifica Vertical en la línea de orientación.
 
 ## <a name="related-topics"></a>Temas relacionados
 

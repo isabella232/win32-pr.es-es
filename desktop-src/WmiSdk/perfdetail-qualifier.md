@@ -13,12 +13,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6e9622955a0a01a813638f14364fdc774beb46c0d755a3b232d47fe698316b33
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 905683bdaa6e143f4280e72593982715012d7d8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119050553"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063946"
 ---
 # <a name="perfdetail-qualifier"></a>Calificador perfDetail
 
@@ -28,14 +28,14 @@ No se usa el calificador **PerfDetail** de las clases [**\_ PerfRawData de Win32
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 74e6300f-0d72-4b0f-8b95-fc1c8d0d0293
 title: Funciones de dispositivo de línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09d7b45a6cc25ede14da6b105cd0ce3da00adbade49e19f8ed2e44fb1d1baac9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fcaa65f996d31514b6fdd7ecfd8e50115fc43a5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119405265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250160"
 ---
 # <a name="line-device-functions"></a>Funciones de dispositivo de línea
 

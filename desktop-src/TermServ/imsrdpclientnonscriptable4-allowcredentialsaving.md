@@ -1,6 +1,6 @@
 ---
-title: IMsRdpClientNonScriptable4 AllowCredentialSaving, propiedad
-description: Especifica si el cuadro de diálogo de credenciales muestra una casilla que permite guardar las credenciales.
+title: Propiedad IMsRdpClientNonScriptable4 AllowCredentialSaving
+description: Especifica si el cuadro de diálogo credenciales muestra una casilla que permite guardar las credenciales.
 ms.assetid: c5148ff0-0d7f-413d-b2a8-ff942668bee6
 ms.tgt_platform: multiple
 keywords:
@@ -36,16 +36,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cca6f61b8cbcc315eb93e6e9c3ab0f89684e4d29c3fcb8313af0198ee594cc9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 240e2eb8e80209ee5c90d63f2996231cf84bb2dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118607740"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068625"
 ---
-# <a name="imsrdpclientnonscriptable4allowcredentialsaving-property"></a>IMsRdpClientNonScriptable4::AllowCredentialSaving, propiedad
+# <a name="imsrdpclientnonscriptable4allowcredentialsaving-property"></a>Propiedad IMsRdpClientNonScriptable4::AllowCredentialSaving
 
-Especifica si el cuadro de diálogo de credenciales muestra una casilla que permite guardar las credenciales.
+Especifica si el cuadro de diálogo credenciales muestra una casilla que permite guardar las credenciales.
 
 Esta propiedad es de lectura y escritura.
 
@@ -66,7 +66,7 @@ HRESULT get_AllowCredentialSaving(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece si el cuadro de diálogo de credenciales muestra una casilla que permite guardar las credenciales.
+Establece si el cuadro de diálogo credenciales muestra una casilla que permite guardar las credenciales.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -86,7 +86,7 @@ Devuelve **S \_ OK si** se realiza correctamente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

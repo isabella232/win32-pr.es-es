@@ -4,12 +4,12 @@ ms.assetid: 8c5f8072-b74f-4e15-8991-73bcc4145fd2
 title: Trabajar con menús de DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 936f1331dcf3851b31922472d3bc50d866912777075bf5aff8c640921e73206e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 113647a37200762b5eaf0a9ac231dea74ad19925
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119964325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272580"
 ---
 # <a name="working-with-dvd-menus"></a>Trabajar con menús de DVD
 
@@ -25,9 +25,9 @@ Además, hay varias maneras de activar un botón:
 
 -   Para activar un botón por número, llame a [**IDvdControl2::SelectAndActivateButton**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-selectandactivatebutton).
 -   Para activar un botón por sus coordenadas, llame a [**IDvdControl2::ActivateAtPosition**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-activateatposition).
--   Para activar el botón seleccionado actualmente, llame a [**IDvdControl2::ActivateButton**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-activatebutton). Si no se selecciona ningún botón, el método devuelve VFW \_ E \_ DVD NO \_ \_ BUTTON.
+-   Para activar el botón que está seleccionado actualmente, llame a [**IDvdControl2::ActivateButton**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-activatebutton). Si no se selecciona ningún botón, el método devuelve VFW \_ E \_ DVD NO \_ \_ BUTTON.
 
-Tenga en cuenta que al seleccionar un botón simplemente se resaltan sus bordes. Para que se active el comando asociado, se debe activar el botón. La activación de un botón mediante programación se puede realizar de varias maneras, pero el botón siempre debe seleccionarse antes de que se pueda activar.
+Tenga en cuenta que la selección de un botón simplemente resalta sus bordes. Para hacer que se desactive el comando asociado, se debe activar el botón. La activación de un botón mediante programación se puede realizar de varias maneras, pero el botón siempre debe seleccionarse antes de que se pueda activar.
 
 ## <a name="related-topics"></a>Temas relacionados
 

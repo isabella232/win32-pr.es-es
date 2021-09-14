@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: bf56f199ae0d367517558a12a0e84bf8ce26e7bdf5f70625b878066152d0b696
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7aff6c9e08351ce771669535a98ec817bfc4aaf5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118905615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250347"
 ---
 # <a name="ssllookupciphersuiteinfo-function"></a>Función SslLookupCipherSuiteInfo
 
@@ -47,7 +47,7 @@ SECURITY_STATUS WINAPI SslLookupCipherSuiteInfo(
 *hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia [*del proveedor Capa de sockets seguros protocolo*](/windows/desktop/SecGloss/s-gly) de seguridad (SSL).
+Identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo ssl (ssl).
 
 </dd> <dt>
 
@@ -61,14 +61,14 @@ Uno de los valores [**de Identificador de protocolo de proveedor SSL de CNG.**](
 *dwCipherSuite* \[ En\]
 </dt> <dd>
 
-Uno de los valores del conjunto de cifrado del [**proveedor SSL de CNG.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
+Uno de los valores de Identificadores del conjunto de cifrado [**del proveedor SSL de CNG.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
 *dwKeyType* \[ En\]
 </dt> <dd>
 
-Uno de los valores de Identificadores de tipo de clave del proveedor [**SSL de CNG.**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx)
+Uno de los valores de Identificadores de tipo de clave [**del proveedor SSL de CNG.**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx)
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

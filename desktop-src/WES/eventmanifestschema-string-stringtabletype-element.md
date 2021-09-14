@@ -1,5 +1,5 @@
 ---
-title: string (StringTableType) (Elemento)
+title: elemento string (StringTableType)
 description: Define una cadena localizada.
 ms.assetid: 845476a9-bcf4-4821-824c-06c9a9f64649
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 82eae0fa7007790995617b2c26bc5aff2bca720fb689b9ac468ef551d3400e05
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c46fc43366d6472e8047b529d847eefd5369c263
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119136178"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068525"
 ---
-# <a name="string-stringtabletype-element"></a>string (StringTableType) (Elemento)
+# <a name="string-stringtabletype-element"></a>elemento string (StringTableType)
 
 Define una cadena localizada.
 
@@ -43,7 +43,7 @@ Define una cadena localizada.
 </xs:element>
 ```
 
-El **tipo complejo StringTableType** define el elemento [**string.**](eventmanifestschema-stringtabletype-complextype.md)
+El **tipo** complejo [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) define el elemento string.
 
 ## <a name="attributes"></a>Atributos
 
@@ -68,7 +68,7 @@ El **tipo complejo StringTableType** define el elemento [**string.**](eventmanif
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

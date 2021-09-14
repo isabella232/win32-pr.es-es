@@ -11,22 +11,22 @@ keywords:
 - Objeto de lista de reproducción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f2acb01de41b753a85fee1c69e0bf015c687da04f50a10531ee5c67b0a13cc7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fd9c6301e33307fc49e50b8aa9042752e020e32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118340924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068468"
 ---
 # <a name="device-extensions-for-playlist-object-preferences"></a>Extensiones de dispositivo para las preferencias de objetos de lista de reproducción
 
-Como parte del proceso de sincronización, Reproductor de Windows Media 10 o posterior copia objetos de lista de reproducción en dispositivos portátiles habilitados para MTP. Reproductor de Windows Media 11 presenta una nueva funcionalidad que permite a los dispositivos portátiles limitar los tipos de objetos de lista de reproducción copiados. (Reproductor de Windows Media siempre sincroniza el contenido de la lista de reproducción según lo especificado por las reglas de sincronización. Esta característica solo afecta a la sincronización de objetos de lista de reproducción). Reproductor de Windows Media copia tres tipos de objetos de lista de reproducción del equipo al dispositivo:
+Como parte del proceso de sincronización, Reproductor de Windows Media o posterior copia objetos de lista de reproducción en dispositivos portátiles habilitados para MTP. Reproductor de Windows Media 11 presenta una nueva funcionalidad que permite a los dispositivos portátiles limitar los tipos de objetos de lista de reproducción copiados. (Reproductor de Windows Media siempre sincroniza el contenido de la lista de reproducción según lo especificado por las reglas de sincronización. Esta característica solo afecta a la sincronización de objetos de lista de reproducción). Reproductor de Windows Media copia tres tipos de objetos de lista de reproducción del equipo al dispositivo:
 
 -   **Listas de reproducción normales.** Se trata de listas de reproducción que están visibles en la **característica Biblioteca** de Reproductor de Windows Media. Estas incluyen listas de reproducción creadas por el usuario, listas de reproducción agregadas a la biblioteca por tiendas en línea y listas de reproducción de ejemplo instaladas con el reproductor. Reproductor de Windows Media solo copia estas listas de reproducción en el dispositivo cuando el usuario las ha seleccionado para la sincronización.
--   **Listas de reproducción de sincronización de existencias.** Se trata de listas de reproducción especiales que se instalan con Reproductor de Windows Media se usan solo para la sincronización. Estas listas de reproducción solo son visibles en el Reproductor de Windows Media dispositivo Asistente para instalación.
+-   **Listas de reproducción de sincronización de existencias.** Se trata de listas de reproducción especiales que se instalan con Reproductor de Windows Media se usan solo para la sincronización. Estas listas de reproducción solo son visibles en Reproductor de Windows Media Device Asistente para instalación.
 -   **Listas de reproducción creadas implícitamente.** Estas listas de reproducción se crean cuando el usuario arrastra y coloca una carpeta de categorías, como **Artist** o **Album,** en el panel que muestra los elementos que se van a sincronizar.
 
-El archivo de encabezado denominado wmpdevices.h, que se ha actualizado para esta versión, define las estructuras y constantes necesarias para admitir Reproductor de Windows Media de dispositivo.
+El archivo de encabezado denominado wmpdevices.h, que se ha actualizado para esta versión, define las estructuras y constantes necesarias para admitir Reproductor de Windows Media extensiones de dispositivo.
 
 Para que un dispositivo se reconozca como compatible con las preferencias de objeto de lista de reproducción a través del conjunto de extensiones de dispositivo Reproductor de Windows Media MTP, debe incluir la siguiente información en el conjunto de datos DeviceInfo. (Para obtener más información sobre este conjunto de datos, vea la sección 4.6.1 de la especificación de MTP).
 
@@ -67,7 +67,7 @@ En la tabla siguiente se proporcionan detalles sobre la operación MTP para las 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La implementación de esta característica es opcional para dispositivos portátiles. Reproductor de Windows Media los objetos de lista de reproducción normales, los objetos de lista de reproducción de sincronización de existencias y los objetos de lista de reproducción creados implícitamente de forma predeterminada.
 

@@ -1,24 +1,24 @@
 ---
-title: Instalación del Asistente para Project de instalación
-description: Instalación del Asistente para Project de instalación
+title: Instalar el Asistente para Project aplicación
+description: Instalar el Asistente para Project aplicación
 ms.assetid: bb27e5f0-d49e-46e5-a15f-be1a0a752c1c
 keywords:
 - Reproductor de Windows Media en línea, complementos
 - tiendas en línea, complementos
 - tiendas en línea de tipo 2, complementos
-- Reproductor de Windows Media en línea, asistente para complementos
-- online stores,plug-in wizard
-- tienda en línea de tipo 2, asistente para complementos
-- Reproductor de Windows Media en línea, asistente para proyectos
+- Reproductor de Windows Media tiendas en línea, asistente para complementos
+- tiendas en línea, asistente para complementos
+- tiendas en línea de tipo 2, asistente para complementos
+- Reproductor de Windows Media tiendas en línea,Asistente para proyectos
 - tiendas en línea, asistente para proyectos
 - tiendas en línea de tipo 2, asistente para proyectos
-- Reproductor de Windows Media en línea, asistente para instalar complementos
-- online stores,installing plug-in wizard
+- Reproductor de Windows Media tiendas en línea, asistente para instalación de complementos
+- tiendas en línea, asistente para instalación de complementos
 - tiendas en línea de tipo 2, asistente para instalación de complementos
-- Reproductor de Windows Media en línea, asistente para instalar proyectos
+- Reproductor de Windows Media tiendas en línea, instalar el Asistente para proyectos
 - tiendas en línea, asistente para instalar proyectos
-- tiendas en línea de tipo 2, asistente para instalar proyectos
-- complementos, Reproductor de Windows Media en línea
+- tienda en línea de tipo 2, asistente para instalación de proyectos
+- complementos, Reproductor de Windows Media tiendas en línea
 - complementos, tiendas en línea
 - complementos, escriba 2 tiendas en línea
 - complementos, asistente para instalar complementos
@@ -26,9 +26,9 @@ keywords:
 - complementos, asistente para instalar proyectos
 - complementos, asistente para proyectos
 - Reproductor de Windows Media complementos, escriba 2 tiendas en línea
-- Reproductor de Windows Media complementos, tiendas en línea
-- Reproductor de Windows Media complementos, Reproductor de Windows Media en línea
-- Reproductor de Windows Media complementos, asistente para instalar complementos
+- Reproductor de Windows Media complementos,tiendas en línea
+- Reproductor de Windows Media complementos, Reproductor de Windows Media tiendas en línea
+- Reproductor de Windows Media complementos, instalar el Asistente para complementos
 - Reproductor de Windows Media complementos, asistente para complementos
 - Reproductor de Windows Media complementos, asistente para instalar proyectos
 - Reproductor de Windows Media complementos, asistente para proyectos
@@ -38,27 +38,27 @@ keywords:
 - Asistente para proyectos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f00e0430791fb36285ba365eed752083889f2b55bd126c4a588d2a506f58acd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bc37754a028d73114b1b425dcbc80e268559355d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249572"
 ---
-# <a name="installing-the-project-wizard"></a>Instalación del Asistente para Project de instalación
+# <a name="installing-the-project-wizard"></a>Instalar el Asistente para Project aplicación
 
 Para configurar el entorno de desarrollo para crear complementos de tienda en línea de tipo 2, debe instalar los siguientes elementos:
 
 -   Microsoft Visual Studio .NET 2003 o posterior
 -   Reproductor de Windows Media serie 9 o posterior
--   Windows SDK, que incluye el SDK Reproductor de Windows Media
+-   Windows SDK, que incluye el SDK de Reproductor de Windows Media
 -   Asistente para complementos de tienda en línea
 
 ## <a name="installing-the-wizard"></a>Instalación del asistente
 
-Siga estos pasos para instalar el asistente para complementos de la tienda en línea en Visual Studio.
+Siga estos pasos para instalar el Asistente para complementos de tienda en línea en Visual Studio.
 
-1.  Busque la carpeta donde instaló el SDK Windows. Expanda la carpeta para ver sus subcarpetas y vaya a Ejemplos \\ de servicios de \\ asistentes de WMP \\ \\ multimedia.
+1.  Busque la carpeta donde instaló el SDK Windows. Expanda la carpeta para ver sus subcarpetas y vaya a Ejemplos \\ de servicios \\ de asistentes de WMP \\ \\ multimedia.
 2.  Busque los tres archivos siguientes:
     -   wmpservices.vsz
     -   wmpservices.vsdir
@@ -73,7 +73,7 @@ Siga estos pasos para instalar el asistente para complementos de la tienda en l�
 
     
 
-    Cambie `<VsWizardEngine version goes here>` a uno de los siguientes valores, en función de la versión de Visual Studio que haya instalado.
+    Cambie a uno de los siguientes valores, en función de la versión de `<VsWizardEngine version goes here>` Visual Studio que haya instalado.
 
     
 
@@ -97,7 +97,7 @@ Siga estos pasos para instalar el asistente para complementos de la tienda en l�
 
     Cambie `<path to wmpservices directory goes here>` a la ruta de acceso donde se encuentran los archivos del asistente.
 
-    Por ejemplo, supongamos que Visual Studio 2008 y los archivos del asistente están aquí: C: Archivos de programa Sdk de Microsoft Windows asistentes multimedia WMP de ejemplos \\ \\ \\ \\ v7.0. \\ \\ \\ \\ \\ A continuación, el archivo wmpservices.vsz tendría el siguiente aspecto:
+    Por ejemplo, supongamos que tiene Visual Studio 2008 y los archivos del asistente están aquí: C: Archivos de programa SDK de Microsoft Windows asistentes de WMP multimedia de ejemplos \\ \\ \\ \\ v7.0. \\ \\ \\ \\ \\ A continuación, el archivo wmpservices.vsz tendría este aspecto:
 
     ```
     VSWIZARD 7.0
@@ -110,7 +110,7 @@ Siga estos pasos para instalar el asistente para complementos de la tienda en l�
 
     
 
-4.  Busque la carpeta donde instaló Visual Studio. Expanda la carpeta para ver sus subcarpetas y busque una carpeta denominada vcprojects.
+4.  Busque la carpeta en la que instaló Visual Studio. Expanda la carpeta para ver sus subcarpetas y busque una carpeta denominada vcprojects.
 5.  Copie los tres archivos enumerados en el paso 2 en la carpeta vcprojects. El asistente ya está instalado.
 
 ## <a name="related-topics"></a>Temas relacionados

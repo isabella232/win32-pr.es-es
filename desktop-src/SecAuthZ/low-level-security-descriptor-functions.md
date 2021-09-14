@@ -5,11 +5,11 @@ title: 'Funciones de descriptor de seguridad de bajo nivel '
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d77c717b554a670eebed4e7df67760fe7e08eb8a
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470981"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069104"
 ---
 # <a name="low-level-security-descriptor-functions"></a>Funciones de descriptor de seguridad de bajo nivel 
 
@@ -25,7 +25,7 @@ Hay varios pares de funciones de bajo nivel para establecer y recuperar el descr
 | <ul><li><a href="/windows/desktop/winstation/window-station-security-and-access-rights">Estaciones de ventana</a></li><li><a href="/windows/desktop/winstation/desktop-security-and-access-rights">Escritorios</a></li></ul> | Use las <a href="/windows/desktop/api/Winuser/nf-winuser-getuserobjectsecurity"><strong>funciones GetUserObjectSecurity</strong></a> <a href="/windows/desktop/api/Winuser/nf-winuser-setuserobjectsecurity"><strong>y SetUserObjectSecurity.</strong></a> | 
 | <ul><li><a href="/windows/desktop/SysInfo/registry-key-security-and-access-rights">Claves del Registro</a></li></ul> | Use las <a href="/windows/desktop/api/Winreg/nf-winreg-reggetkeysecurity"><strong>funciones RegGetKeySecurity</strong></a> <a href="/windows/desktop/api/Winreg/nf-winreg-regsetkeysecurity"><strong>y RegSetKeySecurity.</strong></a> | 
 | <ul><li><a href="/windows/desktop/Services/service-security-and-access-rights">Windows de servicio</a></li></ul> | Use las <a href="/windows/desktop/api/Winsvc/nf-winsvc-queryserviceobjectsecurity"><strong>funciones QueryServiceObjectSecurity</strong></a> <a href="/windows/desktop/api/Winsvc/nf-winsvc-setserviceobjectsecurity"><strong>y SetServiceObjectSecurity.</strong></a> | 
-| <ul><li>Objetos de impresora</li></ul> | Use la <a href="/windows/desktop/printdocs/printer-info-2"><strong>PRINTER_INFO_2</strong></a> con las <a href="/windows/desktop/printdocs/getprinter"><strong>funciones GetPrinter</strong></a> <a href="/windows/desktop/printdocs/setprinter"><strong>y SetPrinter.</strong></a> | 
+| <ul><li>Objetos de impresora</li></ul> | Use la <a href="/windows/desktop/printdocs/printer-info-2"><strong>PRINTER_INFO_2</strong></a> con las <a href="/windows/desktop/printdocs/getprinter"><strong>funciones GetPrinter</strong></a> y <a href="/windows/desktop/printdocs/setprinter"><strong>SetPrinter.</strong></a> | 
 | <ul><li><a href="/windows/desktop/NetMgmt/security-requirements-for-the-network-management-functions">Recursos compartidos de red</a></li></ul> | Use el nivel 502 con las <a href="/windows/desktop/api/lmshare/nf-lmshare-netsharegetinfo"><strong>funciones NetShareGetInfo</strong></a> <a href="/windows/desktop/api/lmshare/nf-lmshare-netsharesetinfo"><strong>y NetShareSetInfo.</strong></a> | 
 | <ul><li><a href="acl-based-access-control.md">Objetos privados (objetos privados para la aplicación de creación)</a></li></ul> | Use las <a href="/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity"><strong>funciones CreatePrivateObjectSecurity</strong></a>, <a href="/windows/desktop/api/securitybaseapi/nf-securitybaseapi-destroyprivateobjectsecurity"><strong>DestroyPrivateObjectSecurity,</strong></a> <a href="/windows/desktop/api/securitybaseapi/nf-securitybaseapi-getprivateobjectsecurity"><strong>GetPrivateObjectSecurity</strong></a> <a href="/windows/desktop/api/securitybaseapi/nf-securitybaseapi-setprivateobjectsecurity"><strong>y SetPrivateObjectSecurity.</strong></a> | 
 

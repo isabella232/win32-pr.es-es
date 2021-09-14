@@ -3,7 +3,7 @@ title: elemento localization (instrumentationManifest)
 description: Define un grupo de recursos localizados a los que se hace referencia en el manifiesto. | elemento localization (instrumentationManifest)
 ms.assetid: 20c41456-cba2-4c8c-9c7e-2ffa0d1b37e5
 keywords:
-- Elemento eventLog de localización
+- elemento de localización EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 40cbee0cd5a8e9254b1fa6bf613c1153bb77eaebd8327e752aca24cdc8bb7330
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: df7629a2fb4662527426271892bd10da490daee4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119863335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068539"
 ---
 # <a name="localization-instrumentationmanifest-element"></a>elemento localization (instrumentationManifest)
 
@@ -30,7 +30,7 @@ Define un grupo de recursos localizados a los que se hace referencia en el manif
  />
 ```
 
-El **elemento de localización** se define mediante el [**elemento instrumentationManifest.**](eventmanifestschema-instrumentationmanifest-element.md)
+El **elemento** [**instrumentationManifest**](eventmanifestschema-instrumentationmanifest-element.md) define el elemento de localización.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ El **elemento de localización** se define mediante el [**elemento instrumentati
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

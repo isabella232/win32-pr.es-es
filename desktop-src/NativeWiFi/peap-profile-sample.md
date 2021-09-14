@@ -1,19 +1,19 @@
 ---
-description: Se usa para conectarse a una red que usa el protocolo de autenticación extensible protegido con el protocolo de autenticación de desafío de Microsoft versión 2 (PEAP-MSCHAPv2) con UserName/Password para la autenticación 802.1X.
+description: Se usa para conectarse a una red que usa el Protocolo de autenticación extensible protegido con el protocolo de autenticación de desafío de Microsoft versión 2 (PEAP-MSCHAPv2) con nombre de usuario/contraseña para la autenticación 802.1X.
 ms.assetid: b5dde0d0-940f-40ec-b24d-95a76325ff1b
-title: Ejemplo de perfil peap
+title: Ejemplo de perfil PEAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a2529efb7db131d03807bc5b09c7599a66a7e49d5938edfdde9b98c07291b3f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: db34a3a99305f3506e3b34fde48f41e5a4c72ac8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119800685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069439"
 ---
-# <a name="peap-profile-sample"></a>Ejemplo de perfil peap
+# <a name="peap-profile-sample"></a>Ejemplo de perfil PEAP
 
-En este ejemplo de perfil se muestra un perfil de red cableada que se usa para conectarse a una red que usa el Protocolo de autenticación extensible protegido con el Protocolo de autenticación de desafío de Microsoft versión 2 (PEAP-MSCHAPv2) con *UserName* Contraseña para la autenticación **/**  802.1X. Se pide al usuario que escriba las credenciales.
+En este ejemplo de perfil se muestra un perfil de red cableada que se usa para conectarse a una red que usa el Protocolo de autenticación extensible protegido con el protocolo de autenticación de desafío de Microsoft versión 2 (PEAP-MSCHAPv2) con la contraseña *UserName* para la autenticación **/**  802.1X. Se pide al usuario que escriba las credenciales.
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

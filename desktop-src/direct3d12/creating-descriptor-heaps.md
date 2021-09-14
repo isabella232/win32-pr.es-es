@@ -5,12 +5,12 @@ ms.assetid: 58677023-692C-4BA4-90B7-D568F3DD3F73
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 218d21d462dd393360e9ebfcb07ab5b35524b9d8d8c01c8ab1ef28ef90166eb2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1e472a0749634d5cbaa9cbf1cde5e11202d4c4f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119857995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249195"
 ---
 # <a name="creating-descriptor-heaps"></a>Creación de montones de descriptores
 

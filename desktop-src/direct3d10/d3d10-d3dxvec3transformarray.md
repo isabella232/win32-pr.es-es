@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 00e8c2325b395a929af42abda4218a2458a8d964116a04f28ebac1ff72a877f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc38f0ef634763d9a5be85795a897b483431aede
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117914698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063836"
 ---
 # <a name="d3dxvec3transformarray-function-d3dx10mathh"></a>Función D3DXVec3TransformArray (D3DX10Math.h)
 
@@ -58,7 +58,7 @@ Puntero a la [**matriz D3DXVECTOR4**](d3d10-d3dxvector4.md) que es el resultado 
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pasos entre vectores en el flujo de datos de salida.
+Paso entre vectores en el flujo de datos de salida.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Puntero a la matriz [**D3DXVECTOR3 de**](d3d10-d3dxvector3.md) origen.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pasos entre vectores en el flujo de datos de entrada.
+Paso entre vectores en el flujo de datos de entrada.
 
 </dd> <dt>
 
@@ -104,11 +104,11 @@ Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
 Puntero a una [**matriz transformada D3DXVECTOR4.**](d3d10-d3dxvector4.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función transforma la matriz pV (x, y, z, 1) por el pM de matriz.
+Esta función transforma la matriz pV (x, y, z, 1) por la matriz pM.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXVec3TransformArray se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec3TransformArray se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -120,7 +120,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

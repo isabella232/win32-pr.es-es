@@ -17,12 +17,12 @@ keywords:
 - listas de reproducción de sincronización, estado de sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a14af59f66d1b21eac00208ecc805f756761256e47a35042694bcd65e6f96558
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9758cfbb73c698a40d6d4f48e645e57750d8a332
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118579464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068472"
 ---
 # <a name="determining-playlist-synchronization-state"></a>Determinar el estado de sincronización de la lista de reproducción
 
@@ -32,7 +32,7 @@ El código de ejemplo siguiente crea una función que recupera esta información
 
 -   *pMedia*. Puntero a una **interfaz IWMPMedia** que representa el archivo multimedia digital que se inspeccionará.
 -   *lPsIndex*. Índice de asociación del dispositivo actual.
--   *pulOnDevice*. Puntero a una variable **larga** que recibe el valor que indica si el archivo multimedia digital se ha copiado en el dispositivo.
+-   *pulOnDevice*. Puntero **a** una variable larga que recibe el valor que indica si el archivo multimedia digital se ha copiado en el dispositivo.
 -   *pulDidNotFit*. Puntero a una variable **larga** que recibe el valor que indica si la operación de copia no se pudo hacer porque el dispositivo no tenía suficiente memoria.
 
 La información contenida en el **atributo SyncState** se codifica bit a bit. Puede ver cómo se usa esta función en el código de ejemplo de [Enumeración de los elementos multimedia](enumerating-the-media-items.md).

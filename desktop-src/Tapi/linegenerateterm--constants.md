@@ -4,12 +4,12 @@ ms.assetid: 5cdc43c0-2349-4ffc-9bf7-3b498b35db95
 title: LINEGENERATETERM_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c34d119f503c677e5c251bb494c5ea991dbd0fccf0bfbdb3affecf4c4ff1914
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6804b09879471a77780a95ca4ed35b7aaa5b6e1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119518975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068743"
 ---
 # <a name="linegenerateterm_-constants"></a>LINEGENERATETERM \_ (Constantes)
 
@@ -37,7 +37,7 @@ El número solicitado de dígitos o los tonos solicitados se han generado durant
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
@@ -45,10 +45,10 @@ Sin extensibilidad. Los 32 bits están reservados.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

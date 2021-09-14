@@ -1,22 +1,22 @@
 ---
-title: Propiedad MarkRdpSettingsSecure de IMsRdpClientNonScriptable4
-description: Especifica si los valores de Protocolo de escritorio remoto (RDP) se marcan como seguros.
+title: IMsRdpClientNonScriptable4 Propiedad MarkRdpSettingsSecure
+description: Especifica si la Protocolo de escritorio remoto (RDP) está marcada como segura.
 ms.assetid: 04b419ed-821e-43e0-ac76-b8d6f6dfcc30
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad MarkRdpSettingsSecure
-- Propiedad MarkRdpSettingsSecure Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad MarkRdpSettingsSecure
-- Propiedad MarkRdpSettingsSecure Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad MarkRdpSettingsSecure
-- Servicios de Escritorio remoto de la propiedad MarkRdpSettingsSecure, objeto MsRdpClient6
-- Servicios de Escritorio remoto de objeto MsRdpClient6, propiedad MarkRdpSettingsSecure
-- Servicios de Escritorio remoto de la propiedad MarkRdpSettingsSecure, objeto MsRdpClient7
-- Servicios de Escritorio remoto de objeto MsRdpClient7, propiedad MarkRdpSettingsSecure
-- Servicios de Escritorio remoto de la propiedad MarkRdpSettingsSecure, objeto MsRdpClient8
-- Servicios de Escritorio remoto de objeto MsRdpClient8, propiedad MarkRdpSettingsSecure
-- Servicios de Escritorio remoto de la propiedad MarkRdpSettingsSecure, objeto MsRdpClient9
-- Servicios de Escritorio remoto de objeto MsRdpClient9, propiedad MarkRdpSettingsSecure
+- MarkRdpSettingsSecure, propiedad Servicios de Escritorio remoto
+- Propiedad MarkRdpSettingsSecure Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , propiedad MarkRdpSettingsSecure
+- Propiedad MarkRdpSettingsSecure Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad MarkRdpSettingsSecure
+- Propiedad MarkRdpSettingsSecure Servicios de Escritorio remoto , objeto MsRdpClient6
+- Objeto MsRdpClient6 Servicios de Escritorio remoto , propiedad MarkRdpSettingsSecure
+- Propiedad MarkRdpSettingsSecure Servicios de Escritorio remoto , objeto MsRdpClient7
+- Objeto MsRdpClient7 Servicios de Escritorio remoto , propiedad MarkRdpSettingsSecure
+- Propiedad MarkRdpSettingsSecure Servicios de Escritorio remoto , objeto MsRdpClient8
+- Objeto MsRdpClient8 Servicios de Escritorio remoto , propiedad MarkRdpSettingsSecure
+- Propiedad MarkRdpSettingsSecure Servicios de Escritorio remoto , objeto MsRdpClient9
+- Objeto MsRdpClient9 Servicios de Escritorio remoto , propiedad MarkRdpSettingsSecure
 topic_type:
 - apiref
 api_name:
@@ -37,15 +37,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: df0b551e043432b6f6e66efbbe5a6e0f9095024a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534450"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068619"
 ---
-# <a name="imsrdpclientnonscriptable4markrdpsettingssecure-property"></a>IMsRdpClientNonScriptable4:: MarkRdpSettingsSecure (propiedad)
+# <a name="imsrdpclientnonscriptable4markrdpsettingssecure-property"></a>IMsRdpClientNonScriptable4::MarkRdpSettingsSecure, propiedad
 
-Especifica si los valores de [Protocolo de escritorio remoto](remote-desktop-protocol.md) (RDP) se marcan como seguros. Esto indica que los valores aplicados al control están firmados por un editor de terceros o de confianza.
+Especifica si la [Protocolo de escritorio remoto](remote-desktop-protocol.md) (RDP) está marcada como segura. Esto indica que la configuración aplicada al control la ha firmado un publicador de confianza o de terceros.
 
 Esta propiedad es de lectura y escritura.
 
@@ -70,7 +70,7 @@ Establece si la configuración de RDP está marcada como segura.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Devuelve **S \_ correcto** si se realiza correctamente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

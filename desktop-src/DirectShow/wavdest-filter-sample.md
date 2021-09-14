@@ -4,12 +4,12 @@ ms.assetid: b7102e39-b3c7-42fb-a89b-f05f3ee75df7
 title: Ejemplo de filtro WavDest
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 845c2cea35fbe3c43a556cb7e047488597ce6192c3b577c55c5490f8db95c037
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a13a5b1ef3cf6189042db152a2c47d578d63147
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119903245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272711"
 ---
 # <a name="wavdest-filter-sample"></a>Ejemplo de filtro WavDest
 
@@ -19,7 +19,7 @@ El filtro WavDes escribe una secuencia de audio en un archivo WAV. Toma una sola
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Para descargar los ejemplos DirectShow SDK, instale la versión más reciente del [SDK de Windows.](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
+Para descargar los ejemplos DirectShow SDK, instale la versión más reciente de [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
 
 Este ejemplo se instala en la siguiente ruta de acceso: *\[ Sdk \] Root* Samples Multimedia DirectShow Filters \\ \\ \\ \\ \\ WavDest.
 

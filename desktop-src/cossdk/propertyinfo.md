@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: cf5c354711ec9ca34af1809707a7a869d39a3026ca5cb7ca11d2245c02be049b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd9fdd2262d4499efd6a86fbc5b99bae786016f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118547661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063895"
 ---
 # <a name="propertyinfo-collection"></a>Colección PropertyInfo
 
 Recupera información sobre las propiedades que admite una colección especificada. La **colección PropertyInfo** es accesible desde cualquier [**objeto COMAdminCatalogCollection**](comadmincatalogcollection.md) mediante el [**método GetCollection.**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) La **colección PropertyInfo** contiene un objeto para cada propiedad admitida por la colección original.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección PropertyInfo** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -38,7 +38,7 @@ Puede navegar a esta colección desde cada colección.
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades dentro de la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
 
 -   [Nombre](#name)
 
@@ -46,10 +46,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | El nombre de la propiedad. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | ReadOnly                                                                                                                                                                                         |
+| Acceso         | ReadOnly                                                                                                                                                                                         |
 | Tipo           | String                                                                                                                                                                                           |
 | Valor predeterminado        | None                                                                                                                                                                                             |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                     |

@@ -16,11 +16,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 99eec4e29ec1c38cddb5a5f92f27643e2c9c3e6c
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371209"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272316"
 ---
 # <a name="changing-pitch-and-playback-rate"></a>Cambiar el tono y la velocidad de reproducción
 
@@ -46,7 +46,7 @@ Windows proporciona las siguientes funciones para consultar y establecer velocid
 
  
 
-Las velocidades de inclinación y reproducción cambian por un factor especificado con un número de punto fijo empaquetado en un valor doubleword. Los 16 bits superiores especifican la parte entera del número; los 16 bits inferiores especifican la parte fraccionera. Por ejemplo, el valor 1.5 se representa como 0x00018000L. El valor 0,75 se representa como 0x0000C000L. Un valor de 1,0 (0x00010000) significa que la velocidad de lanzamiento o reproducción no cambia.
+Las velocidades de inclinación y reproducción cambian por un factor especificado con un número de punto fijo empaquetado en un valor doubleword. Los 16 bits superiores especifican la parte entera del número; los 16 bits inferiores especifican la parte fraccionera. Por ejemplo, el valor 1.5 se representa como 0x00018000L. El valor 0,75 se representa como 0x0000C000L. Un valor de 1,0 (0x00010000) significa que la velocidad de inclinación o reproducción no cambia.
 
  
 

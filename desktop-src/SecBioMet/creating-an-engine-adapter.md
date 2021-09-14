@@ -4,12 +4,12 @@ description: Estructura básica de un complemento de adaptador de motor implemen
 ms.assetid: d443ee2d-6b45-44ac-9d79-f71033d8b7f4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 142cdbbec089a27cecb55b69b78bc5e9849cb1641060d1e044c42edd3c7c7f0f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d16b111af0840fcdafa7fea7482f5ab65532de5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119622715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127250400"
 ---
 # <a name="creating-an-engine-adapter"></a>Crear un adaptador de motor
 

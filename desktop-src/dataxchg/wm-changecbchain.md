@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25dac74784a214f77f8b2912e2fd643624ae767027121e2262d81989d54d3831
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ab91640320e3659d0e9fb130f5c773ccbb7c4e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117736319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127063868"
 ---
-# <a name="wm_changecbchain-message"></a>Mensaje \_ CHANGECBCHAIN de WM
+# <a name="wm_changecbchain-message"></a>Mensaje \_ DE WM CHANGECBCHAIN
 
 Se envía a la primera ventana de la cadena de visor del Portapapeles cuando se quita una ventana de la cadena.
 
@@ -41,7 +41,7 @@ Una ventana recibe este mensaje a través de su [**función WindowProc.**](/prev
 *wParam* 
 </dt> <dd>
 
-Identificador de la ventana que se va a quitar de la cadena de visor del Portapapeles.
+Identificador de la ventana que se va a quitar de la cadena del visor del Portapapeles.
 
 </dd> <dt>
 
@@ -56,11 +56,11 @@ Identificador de la siguiente ventana de la cadena que sigue a la ventana que se
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cada ventana del visor del Portapapeles guarda el identificador en la siguiente ventana de la cadena de visor del Portapapeles. Inicialmente, este identificador es el valor devuelto de la [**función SetClipboardViewer.**](/windows/desktop/api/Winuser/nf-winuser-setclipboardviewer)
+Cada ventana del visor del Portapapeles guarda el identificador en la siguiente ventana de la cadena del visor del Portapapeles. Inicialmente, este identificador es el valor devuelto de la [**función SetClipboardViewer.**](/windows/desktop/api/Winuser/nf-winuser-setclipboardviewer)
 
-Cuando una ventana del visor del Portapapeles recibe el mensaje **\_ CHANGECBCHAIN** de WM, debe llamar a la función [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) para pasar el mensaje a la siguiente ventana de la cadena, a menos que la ventana siguiente sea la ventana que se va a quitar. En este caso, el visor del Portapapeles debe guardar el identificador especificado por el parámetro *lParam* como la siguiente ventana de la cadena.
+Cuando una ventana del visor del Portapapeles recibe el mensaje **\_ WM CHANGECBCHAIN,** debe llamar a la función [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) para pasar el mensaje a la siguiente ventana de la cadena, a menos que se quite la ventana siguiente. En este caso, el visor del Portapapeles debe guardar el identificador especificado por el parámetro *lParam* como la siguiente ventana de la cadena.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Cuando una ventana del visor del Portapapeles recibe el mensaje **\_ CHANGECBCHA
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

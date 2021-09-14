@@ -16,18 +16,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: cd5f4023209ac5728baf7fc84c16675302f4161fba73cc4203572d9ccb9fb63d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3646b35909e3058833455d6a08d253fab22355f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068367"
 ---
 # <a name="metafile-playlists"></a>Listas de reproducción de metarchivo
 
-Windows Las listas de reproducción de metarchivos multimedia se usan para organizar el contenido y la presentación de secuencias. Una lista de reproducción puede redirigir Reproductor de Windows Media al contenido que se va a transmitir, pero normalmente proporcionará una lista de archivos que se reproducirán secuencialmente. Una lista de reproducción más compleja puede contener repeticiones, inserciones comerciales e información sobre los elementos de la lista.
+Windows Las listas de reproducción de metarchivos multimedia se usan para organizar el contenido y la presentación de la secuencia. Una lista de reproducción puede simplemente redirigir Reproductor de Windows Media al contenido que se va a transmitir, pero normalmente proporcionará una lista de archivos que se reproducirán secuencialmente. Una lista de reproducción más compleja puede contener repeticiones, inserciones comerciales e información sobre los elementos de la lista.
 
-Otra ventaja de las listas de reproducción es que, en lugar de reproducir una secuencia, detenerse, iniciar la siguiente secuencia y, a continuación, esperar a que finalice el almacenamiento en búfer, Servicios de Windows Media y Reproductor de Windows Media funcionan conjuntamente para reproducir los clips uno tras otro con un tiempo de almacenamiento en búfer mínimo o una interrupción.
+Otra ventaja de las listas de reproducción es que, en lugar de reproducir una secuencia, detener, iniciar la siguiente secuencia y, a continuación, esperar a que finalice el almacenamiento en búfer, Servicios de Windows Media y Reproductor de Windows Media funcionan conjuntamente para reproducir los clips uno tras otro con un tiempo de almacenamiento en búfer mínimo o interrupción.
 
 En las secciones siguientes se proporciona más información sobre las listas de reproducción de metarchivo:
 

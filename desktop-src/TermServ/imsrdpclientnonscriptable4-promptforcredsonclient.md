@@ -1,22 +1,22 @@
 ---
-title: Propiedad PromptForCredsOnClient de IMsRdpClientNonScriptable4
-description: Especifica si el control de cliente muestra un cuadro de diálogo que solicita las credenciales.
+title: IMsRdpClientNonScriptable4 PromptForCredsOnClient, propiedad
+description: Especifica si el control de cliente muestra un cuadro de diálogo que solicita credenciales.
 ms.assetid: 426676be-0150-4a33-acd0-26423966f32a
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad PromptForCredsOnClient
-- Propiedad PromptForCredsOnClient Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad PromptForCredsOnClient
-- Propiedad PromptForCredsOnClient Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad PromptForCredsOnClient
-- Servicios de Escritorio remoto de la propiedad PromptForCredsOnClient, objeto MsRdpClient6
-- Servicios de Escritorio remoto de objeto MsRdpClient6, propiedad PromptForCredsOnClient
-- Servicios de Escritorio remoto de la propiedad PromptForCredsOnClient, objeto MsRdpClient7
-- Servicios de Escritorio remoto de objeto MsRdpClient7, propiedad PromptForCredsOnClient
-- Servicios de Escritorio remoto de la propiedad PromptForCredsOnClient, objeto MsRdpClient8
-- Servicios de Escritorio remoto de objeto MsRdpClient8, propiedad PromptForCredsOnClient
-- Servicios de Escritorio remoto de la propiedad PromptForCredsOnClient, objeto MsRdpClient9
-- Servicios de Escritorio remoto de objeto MsRdpClient9, propiedad PromptForCredsOnClient
+- Propiedad PromptForCredsOnClient Servicios de Escritorio remoto
+- Propiedad PromptForCredsOnClient Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , propiedad PromptForCredsOnClient
+- Propiedad PromptForCredsOnClient Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad PromptForCredsOnClient
+- Propiedad PromptForCredsOnClient Servicios de Escritorio remoto , objeto MsRdpClient6
+- Objeto MsRdpClient6 Servicios de Escritorio remoto , propiedad PromptForCredsOnClient
+- Propiedad PromptForCredsOnClient Servicios de Escritorio remoto , objeto MsRdpClient7
+- Objeto MsRdpClient7 Servicios de Escritorio remoto , propiedad PromptForCredsOnClient
+- Propiedad PromptForCredsOnClient Servicios de Escritorio remoto , objeto MsRdpClient8
+- Objeto MsRdpClient8 Servicios de Escritorio remoto , propiedad PromptForCredsOnClient
+- Propiedad PromptForCredsOnClient Servicios de Escritorio remoto , objeto MsRdpClient9
+- Objeto MsRdpClient9 Servicios de Escritorio remoto , propiedad PromptForCredsOnClient
 topic_type:
 - apiref
 api_name:
@@ -37,15 +37,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 6443c503e107bb2edb164a17beedddb1bbbc88a5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068615"
 ---
-# <a name="imsrdpclientnonscriptable4promptforcredsonclient-property"></a>IMsRdpClientNonScriptable4::P propiedad romptForCredsOnClient
+# <a name="imsrdpclientnonscriptable4promptforcredsonclient-property"></a>IMsRdpClientNonScriptable4::P romptForCredsOnClient
 
-Especifica si el control de cliente muestra un cuadro de diálogo que solicita las credenciales.
+Especifica si el control de cliente muestra un cuadro de diálogo que solicita credenciales.
 
 Esta propiedad es de lectura y escritura.
 
@@ -66,11 +66,11 @@ HRESULT get_PromptForCredsOnClient(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece si el control de cliente muestra un cuadro de diálogo que solicita las credenciales.
+Establece si el control de cliente muestra un cuadro de diálogo que solicita credenciales.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Devuelve **S \_ correcto** si se realiza correctamente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -50,12 +50,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0519e7379eab529cc5275c85a11116764417d524a03dff2e1eab74a914b6560b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1aad33d7d85c6a5c331efe8383815e079150fb65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120125055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127249921"
 ---
 # <a name="imstscnonscriptablecleartextpassword-property"></a>Propiedad IMsTscNonScriptable::ClearTextPassword
 
@@ -63,7 +63,7 @@ Establece la contraseña Escritorio remoto ActiveX control en formato de texto n
 
 Esta propiedad es de solo escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -82,7 +82,7 @@ Contraseña que se va a usar para conectarse, especificada en formato de texto n
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La contraseña se pasa al servidor en el canal de comunicaciones RDP cifrado de forma segura. Una vez establecida una contraseña de texto no cifrado, no se puede recuperar en formato de texto no cifrado.
 
@@ -118,7 +118,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

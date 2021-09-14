@@ -4,12 +4,12 @@ ms.assetid: d0a58e1d-c867-4277-916e-f408627b5269
 title: Implementar FormatProperties
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50e7b927f15ccb2c216e345b37bc87593e33339671f906e28d33759ca9db0abc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 660b581bf29fd8e5d40af65f5ff90e1e9223ad2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119778984"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069335"
 ---
 # <a name="implementing-formatproperties"></a>Implementar FormatProperties
 
@@ -22,7 +22,7 @@ Al llamar [**a FormatProperties**](formatproperties.md), Monitor de red proporci
 
  
 
-Monitor de red identifica la función de formato a la que se llamará para cada instancia de propiedad. El **miembro InstanceData** de la [**estructura PROPERTYINFO**](propertyinfo.md) puede especificar lo siguiente:
+Monitor de red identifica la función de formato a la que se debe llamar para cada instancia de propiedad. El **miembro InstanceData** de la [**estructura PROPERTYINFO**](propertyinfo.md) puede especificar lo siguiente:
 
 -   La [**función FormatPropertyInstance**](formatpropertyinstance.md) para usar el [*formateador genérico*](g.md) que Monitor de red proporciona.
 

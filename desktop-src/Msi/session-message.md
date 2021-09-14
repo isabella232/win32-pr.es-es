@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 6d14d59e801afcdf69bec2f1169d5c5b14469e8b13ac3f4c593955c7e235c7b4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e20cfebe0a3359a99770cbd242501649bf93f86e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272500"
 ---
 # <a name="sessionmessage-method"></a>Método Session.Message
 
@@ -42,10 +42,10 @@ Session.Message(
 
 <dl> <dt>
 
-*Tipo* 
+*kind* 
 </dt> <dd>
 
-El *parámetro kind* debe ser uno de los siguientes valores. Para mostrar un cuadro de mensaje con botones de inserción e iconos, calcule el valor de tipo agregando los estilos de cuadro de mensaje estándar utilizados por [**MessageBox**](/windows/win32/api/winuser/nf-winuser-messagebox) y [**MessageBoxEx**](/windows/win32/api/winuser/nf-winuser-messageboxexa) a **msiMessageTypeError,** **msiMessageTypeWarning** o **msiMessageTypeUser**.  Para más información, consulte la sección Comentarios a continuación.
+El *parámetro kind* debe ser uno de los siguientes valores. Para mostrar un cuadro de mensaje con botones de inserción e iconos, calcule el valor de tipo agregando los estilos de cuadro de mensaje estándar utilizados por [**MessageBox**](/windows/win32/api/winuser/nf-winuser-messagebox) y [**MessageBoxEx**](/windows/win32/api/winuser/nf-winuser-messageboxexa) a **msiMessageTypeError**, **msiMessageTypeWarning** o **msiMessageTypeUser**.  Para más información, consulte la sección Comentarios a continuación.
 
 
 
@@ -62,7 +62,7 @@ El *parámetro kind* debe ser uno de los siguientes valores. Para mostrar un cua
 | <span id="msiMessageTypeActionStart"></span><span id="msimessagetypeactionstart"></span><span id="MSIMESSAGETYPEACTIONSTART"></span><dl> <dt>**msiMessageTypeActionStart**</dt> <dt>&H08000000</dt> </dl>             | Inicio de la acción, \[ 1 nombre \] de acción, \[ 2 \] descripción, \[ 3 \] plantilla para mensajes ACTIONDATA.<br/>                                    |
 | <span id="msiMessageTypeActionData"></span><span id="msimessagetypeactiondata"></span><span id="MSIMESSAGETYPEACTIONDATA"></span><dl> <dt>**msiMessageTypeActionData**</dt> <dt>&H09000000</dt> </dl>                 | Datos de acción. Los campos de registro corresponden a la plantilla del mensaje ACTIONSTART.<br/>                                                     |
 | <span id="msiMessageTypeProgress"></span><span id="msimessagetypeprogress"></span><span id="MSIMESSAGETYPEPROGRESS"></span><dl> <dt>**msiMessageTypeProgress**</dt> <dt>&H0A0000000</dt> </dl>                         | Información de la barra de progreso. Consulte la descripción de los campos de registro a continuación.<br/>                                                             |
-| <span id="msiMessageTypeCommonData_"></span><span id="msimessagetypecommondata_"></span><span id="MSIMESSAGETYPECOMMONDATA_"></span><dl> <dt> **msiMessageTypeCommonData**</dt> <dt>&H0B0000000</dt> </dl>             | Para habilitar el botón Cancelar, \[ establezca 1 \] en 2 y \[ 2 en \] 1. <br/> Para deshabilitar el botón Cancelar, \[ establezca 1 \] en 2 y \[ 2 en \] 0.<br/> |
+| <span id="msiMessageTypeCommonData_"></span><span id="msimessagetypecommondata_"></span><span id="MSIMESSAGETYPECOMMONDATA_"></span><dl> <dt> **msiMessageTypeCommonData**</dt> <dt>&H0B000000</dt> </dl>             | Para habilitar el botón Cancelar, \[ establezca 1 \] en 2 y \[ 2 en \] 1. <br/> Para deshabilitar el botón Cancelar, \[ establezca 1 \] en 2 y \[ 2 en \] 0.<br/> |
 
 
 
@@ -97,7 +97,7 @@ Objeto [**Record**](record-object.md) requerido que contiene un campo específic
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Campos de registro de mensajes**
 
@@ -142,7 +142,7 @@ El significado del campo 3 depende del valor del campo 1 como se muestra a conti
 | 0             | 0             | Barra de progreso hacia delante (de izquierda a derecha)                                                                            |
 |               | 1             | Barra de progreso hacia atrás (de derecha a izquierda)                                                                           |
 | 1             | 0             | La acción actual enviará mensajes ProgressReport explícitos.                                                  |
-|               | 1             | Incremente la barra de progreso en el número de pasos especificados en el campo 2 cada vez que se envía un mensaje ActionData. |
+|               | 1             | Incremente la barra de progreso por el número de tics especificado en el campo 2 cada vez que se envía un mensaje ActionData. |
 | 2             | No utilizado        |                                                                                                                 |
 | 3             | No utilizado        |                                                                                                                 |
 
@@ -179,7 +179,7 @@ Session.Message &H01000034, record
 
 
 
-Si una acción personalizada llama al **método Message,** la acción personalizada debe ser capaz de controlar una cancelación por parte del usuario y debe devolver **msiDoActionStatusUserExit**.
+Si una acción personalizada llama al método **Message,** la acción personalizada debe ser capaz de controlar una cancelación por parte del usuario y debe devolver **msiDoActionStatusUserExit**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -187,9 +187,9 @@ Si una acción personalizada llama al **método Message,** la acción personaliz
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID ISession se define como \_ 000C109E-0000-0000-C000-000000000046<br/>                                                                                                                                                                             |
+| IID<br/>     | IID ISession se define como \_ 000C109E-0000-0000-C000-00000000046<br/>                                                                                                                                                                             |
 
 
 

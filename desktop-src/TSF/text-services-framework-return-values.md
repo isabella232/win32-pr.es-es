@@ -12,16 +12,16 @@ keywords:
 - valores devueltos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 225f074d11080c7b4a97ca3ba20f6ad85560c0c3216f836dd9e5a360f1538fb9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 65d6a405dcb1f65b53f7863333ec2f32060c50d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117950972"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127068819"
 ---
 # <a name="text-services-framework-return-values"></a>Text Services Framework valores devueltos
 
-Los métodos de interfaz de Text Services Framework generan valores devueltos en el intervalo de 0x *HHHH* 0200 a 0x *HHHH* 0600, donde *HHHH* es un valor hexadecimal que depende del código de gravedad y el código de la instalación de un valor devuelto específico.
+Los métodos de interfaz del Text Services Framework generan valores devueltos en el intervalo de 0x *HHHH* 0200 a 0x *HHHH* 0600, donde *HHHH* es un valor hexadecimal que depende del código de gravedad y el código de instalación de un valor devuelto específico.
 
 Los valores devueltos se agrupan en las categorías siguientes.
 

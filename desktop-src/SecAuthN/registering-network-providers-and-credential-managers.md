@@ -4,12 +4,12 @@ ms.assetid: 4c58671d-d11d-4f32-866b-e278fc8e6114
 title: Registro de proveedores de red y administradores de credenciales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eec3b3eff5fc396a112986d8c736dba095701a02ffb9e72c21422b83e3596235
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de34c97b61f685c3e779bd487fbc2c5b21fa7af2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118919593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127069125"
 ---
 # <a name="registering-network-providers-and-credential-managers"></a>Registro de proveedores de red y administradores de credenciales
 
