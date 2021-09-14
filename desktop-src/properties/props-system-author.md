@@ -4,12 +4,12 @@ ms.assetid: 07a411c2-9e88-4d14-b9f7-e3a5d8d1630e
 title: System.Author
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: becd7938a2558cfb15fc58e1d5b21efc4d602d1905a2038777fdb575e0268d97
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a49954591a1965b6737e14e4f39d49a417f26bc8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118232596"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262831"
 ---
 # <a name="systemauthor"></a>System.Author
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

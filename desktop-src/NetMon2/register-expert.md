@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: 1203682e82b01b7665c9661c3f58c14bbf2cd479cac62c72a64505b0e25feaa1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 085d5c59b17b10949ad39d07354906f40e123988
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119889575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074096"
 ---
 # <a name="register-expert-callback-function"></a>Registrar función de devolución de llamada de experto
 
-El experto debe implementar la **función register** expert. Monitor de red llama a la **función de experto Register** para obtener información sobre el experto.
+El experto debe implementar la **función register** expert. Monitor de red llama a **la función register** expert para obtener información sobre el experto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Si la función se realiza correctamente, el valor devuelto es **TRUE** y la func
 
 Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **miembro Version** de la estructura [**EXPERTENUMINFO**](expertenuminfo.md) debe ser cero.
 

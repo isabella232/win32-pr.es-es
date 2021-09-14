@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 90332ff65754d9e2c8648d9b4d93882b2fe990bce5bc165b8d9c6f95319b6b9a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5514b987e67fe89ff28e9bf9a5170bd982e2b714
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261524"
 ---
 # <a name="cbaserendererm_rendererlock-member"></a>Miembro CBaseRenderer::m \_ RendererLock
 
@@ -47,7 +47,7 @@ CCritSec m_RendererLock;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

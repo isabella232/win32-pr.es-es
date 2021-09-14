@@ -1,7 +1,7 @@
 ---
 description: La función DestroyBlob libera toda la memoria asociada al BLOB y, a continuación, destruye el BLOB.
 ms.assetid: 46cde0b7-1b59-426e-b19b-3c73af3d461a
-title: Función DestroyBlob (Netmon. h)
+title: Función DestroyBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Npptools.dll
 ms.openlocfilehash: e90630981c16f38d601d4e06d04f9326174ef721
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669676"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260500"
 ---
-# <a name="destroyblob-function"></a>DestroyBlob función)
+# <a name="destroyblob-function"></a>Función DestroyBlob
 
-La función **DestroyBlob** libera toda la memoria asociada al BLOB y, a continuación, destruye el BLOB.
+La **función DestroyBlob** libera toda la memoria asociada al BLOB y, a continuación, destruye el BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,18 +39,18 @@ DWORD DestroyBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
-Identificador del objeto al BLOB que se destruye.
+Controlar al blob que se destruye.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que describe el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que describe el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,13 +60,13 @@ Si la función no es correcta, el valor devuelto es un valor de NMERR que descri
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: dd39cb83c90c566f0022679e70680e916daeb2a43a4d62e993e096930ee2f14e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 498beda4f2f6c61af918d542542c4ed7b789ba1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074122"
 ---
 # <a name="iespresume-method"></a>IESP::Resume (método)
 
@@ -42,13 +42,13 @@ Este método no tiene parámetros.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                                | Descripción                                                                                                               |
 |------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**CAPTURA DE NMERR \_ \_ NO EN \_ PAUSA**</dt> </dl> | La captura no está en pausa. Llame [**a IESP::P ause para**](iesp-pause.md) pausar la captura.<br/>                        |
+| <dl> <dt>**CAPTURA DE NMERR \_ \_ NO \_ PAUSADA**</dt> </dl> | La captura no está en pausa. Llame [**a IESP::P ause para**](iesp-pause.md) pausar la captura.<br/>                        |
 | <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>       | El NPP no está conectado a la red. Llame [**a IESP::Conectar**](iesp-connect.md) para conectarse a la red.<br/> |
 | <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>             | El NPP está conectado a la red, pero no con el [**método IESP::Conectar.**](iesp-connect.md)<br/>            |
 
@@ -56,11 +56,11 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Mientras la captura está en estado en pausa, no [](c.md) se agregan nuevos datos al archivo de captura actual hasta que se llama a **IESP::Resume** para reiniciar la captura. Cuando **se** usan **Pausar y reanudar** para detener y reiniciar la captura, toda la información capturada se coloca en el mismo archivo de captura.
 
-Al usar **Pausar** **y reanudar** para controlar la captura, Monitor de red continúa agregando estadísticas de conversación a las [*estadísticas*](c.md) existentes para la captura actual.
+Al usar **Pausar** **y reanudar** para controlar la captura, Monitor de red sigue agregando [*estadísticas*](c.md) de conversación a las estadísticas existentes para la captura actual.
 
 Para detener la captura, llame a [**IESP::Stop**](iesp-stop.md).
 
@@ -77,7 +77,7 @@ Para detener la captura, llame a [**IESP::Stop**](iesp-stop.md).
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

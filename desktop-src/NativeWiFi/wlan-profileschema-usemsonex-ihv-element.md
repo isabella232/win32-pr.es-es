@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 4a62f2f25ef2a4a52fae82e2ce8ddb097a4b434d7c2f8f35a2783703a617ad8b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aa9f2092ac0e76feae89b02f333ae3098288ccef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119912645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074177"
 ---
 # <a name="usemsonex-ihv-element"></a>Elemento useMSOneX (IHV)
 
@@ -25,7 +25,7 @@ El **elemento useMSOneX** (IHV) especifica el origen de la configuración de seg
 
 Cuando **useMSOneX es** true, los componentes de seguridad de IHV usan la configuración 802.1X definida por Microsoft. Cuando **useMSOneX es** false, los componentes de seguridad de IHV usan la configuración 802.1X proporcionada por el proveedor.
 
-Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se admite este elemento.
+Windows XP con SP3 y la API de LAN inalámbrica **para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="useMSOneX"
@@ -47,7 +47,7 @@ El elemento [**IHV**](wlan-profileschema-ihv-wlanprofile-element.md) define el e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

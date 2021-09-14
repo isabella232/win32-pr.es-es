@@ -12,21 +12,21 @@ keywords:
 - Windows SDK de formato multimedia, índices basados en fotogramas
 - Formato de sistemas avanzados (ASF), índices basados en fotogramas
 - ASF (formato de sistemas avanzados), índices basados en fotogramas
-- Windows SDK de formato multimedia, códigos de tiempo SMPTE
-- Formato de sistemas avanzados (ASF), códigos de tiempo SMPTE
-- ASF (formato de sistemas avanzados), códigos de tiempo SMPTE
+- Windows SDK de formato multimedia, códigos de tiempo de SMPTE
+- Formato de sistemas avanzados (ASF), códigos de tiempo de SMPTE
+- ASF (formato de sistemas avanzados), códigos de tiempo de SMPTE
 - indexes,about
 - índices temporales
 - índices basados en fotogramas
 - Códigos de tiempo de SMPTE, índices
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71af891ba2986d3ece1eb2d4cc7eb7ff4086c06eee1f60eabb2210bdc8b6bacd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d2e5a194f9c495720cbc40ccdb192509723eee0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118702489"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262143"
 ---
 # <a name="indexes"></a>Índices
 
@@ -34,11 +34,11 @@ Un requisito común para las aplicaciones que leen archivos multimedia digitales
 
 El objeto indexador del SDK Windows Media Format puede crear tres tipos diferentes de índices: índices temporales, índices basados en fotogramas e índices de código de tiempo SMPTE.
 
-Los índices temporales son el tipo más común. Simplemente equivalen los ejemplos de vídeo con los tiempos de presentación correspondientes.
+Los índices temporales son el tipo más común. Simplemente equivalen ejemplos de vídeo con los tiempos de presentación correspondientes.
 
 Un índice basado en fotogramas equivale a ejemplos de vídeo con números de fotogramas de vídeo y tiempos de presentación. Los números de fotogramas son especialmente útiles en las aplicaciones que editan vídeo.
 
-Un índice de código de tiempo SMTPE es el tipo de índice más poco frecuente. Usa el código de tiempo SMPTE como base del índice y solo se puede usar en secuencias que tienen marcas de tiempo de SMPTE incluidas con sus ejemplos. Para obtener más información sobre el código de hora de SMPTE, vea Compatibilidad con código [de tiempo de SMPTE.](smpte-time-code-support.md)
+Un índice de código de tiempo SMTPE es el tipo de índice más poco frecuente. Usa el código de tiempo de SMPTE como base del índice y solo se puede usar en secuencias que tienen marcas de tiempo de SMPTE incluidas en sus ejemplos. Para obtener más información sobre el código de hora de SMPTE, vea Compatibilidad con código de [tiempo de SMPTE.](smpte-time-code-support.md)
 
 Un archivo ASF puede contener un índice de cada tipo para cada secuencia de vídeo que contiene. De forma predeterminada, se incluye un índice temporal para cada secuencia de vídeo en los archivos creados por el objeto de escritor. Puede cambiar la configuración de indexación automática de los archivos para que se adapte a sus necesidades.
 
@@ -52,7 +52,7 @@ Un archivo ASF puede contener un índice de cada tipo para cada secuencia de ví
 [**Trabajar con índices**](working-with-indexes.md)
 </dt> <dt>
 
-[**Lectura de archivos con el lector asincrónico**](reading-files-with-the-asynchronous-reader.md)
+[**Leer archivos con el lector asincrónico**](reading-files-with-the-asynchronous-reader.md)
 </dt> <dt>
 
 [**Lectura de archivos con el lector sincrónico**](reading-files-with-the-synchronous-reader.md)

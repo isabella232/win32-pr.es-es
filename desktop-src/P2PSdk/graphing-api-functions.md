@@ -4,12 +4,12 @@ ms.assetid: cd05d4da-ca65-471b-bb97-82885f22e6f9
 title: Funciones de graphing API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b26c40770e8fcbc18b08ccb73dcfea5f1f6c4eab65be615ed76d8088ddc90954
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e343f3f5ff1e53180cced98cbebbd66af1d28e64
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073922"
 ---
 # <a name="graphing-api-functions"></a>Funciones de graphing API
 
@@ -133,8 +133,8 @@ Peer Graphing API usa las siguientes funciones:
 | Función                                                     | Descripción                                                                                                  |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | [**PeerGraphGetEventData**](/windows/desktop/api/P2P/nf-p2p-peergraphgeteventdata)       | Recupera eventos del mismo nivel.                                                                                       |
-| [**PeerGraphRegisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent)     | Registra la solicitud de un mismo nivel para recibir una notificación de los cambios asociados a un grafo del mismo nivel y al tipo de evento.            |
-| [**PeerGraphUnregisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphunregisterevent) | Solicita que la aplicación ya no sea notificada de los cambios asociados a un grafo del mismo nivel y al tipo de registro. |
+| [**PeerGraphRegisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent)     | Registra la solicitud de un mismo nivel para recibir una notificación de los cambios asociados a un grafo del mismo nivel y un tipo de evento.            |
+| [**PeerGraphUnregisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphunregisterevent) | Solicita que ya no se notifique a la aplicación los cambios asociados con un gráfico del mismo nivel y un tipo de registro. |
 
 
 

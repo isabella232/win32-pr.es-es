@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e99aa3e88a13327d7de133b8207ee9626db23a4cbbef9c9ffcaca5582d8e10d3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a81ac091dc1905c1cbcd2c41575c907ce957e60c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120111515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262540"
 ---
 # <a name="ishelldispatch2getsysteminformation-method"></a>Método IShellDispatch2.GetSystemInformation
 
@@ -72,7 +72,7 @@ Tipo: **Variant**
 
 Devuelve el valor de la información solicitada del sistema. El tipo de valor devuelto depende de la información del sistema que se solicite. Para obtener información detallada, consulte la sección Comentarios.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método se implementa y se accede a través del [**método Shell.GetSystemInformation.**](./shell-getsysteminformation.md)
 
@@ -96,7 +96,7 @@ DoubleClickTime
 
 **Entero**
 
-Hora de doble clic, en milisegundos.
+Tiempo de doble clic, en milisegundos.
 
 ProcessorLevel
 
@@ -114,7 +114,7 @@ ProcessorArchitecture
 
 **Entero**
 
-Arquitectura del procesador. Para más información, consulte la explicación del **miembro wProcessorArchitecture** de la [**estructura SYSTEM \_ INFO.**](/windows/win32/api/sysinfoapi/ns-sysinfoapi-system_info)
+Arquitectura del procesador. Para obtener más información, vea la explicación del **miembro wProcessorArchitecture** de la [**estructura SYSTEM \_ INFO.**](/windows/win32/api/sysinfoapi/ns-sysinfoapi-system_info)
 
 PhysicalMemoryInstalled
 
@@ -142,7 +142,7 @@ DomainMember de IsOS \_
 
 **Boolean**
 
-Establezca en **true** si el equipo es miembro de un dominio; de lo contrario, **false**.
+Se establece **en true** si el equipo es miembro de un dominio; de lo contrario, **false**.
 
 
 
@@ -152,7 +152,7 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso de **GetSystemInformation** para JScript y VBScript.
+En los ejemplos siguientes se muestra el uso **de GetSystemInformation** para JScript y VBScript.
 
 JScript:
 
@@ -199,10 +199,10 @@ Vbscript:
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

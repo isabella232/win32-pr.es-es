@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre el elemento configurable por el usuario PageInputBin. Este tema no está actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario PageInputBin. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 78eb3119-a52f-4ff8-83bb-903e181c8a11
 title: PageInputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04499e22d3e0ebb10d00aa3cd966c4efea569f291f0eb0d9871a03ca001a8217
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc53d377106b95b26e694d531af2952cea98a8b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118234745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263068"
 ---
 # <a name="pageinputbin"></a>PageInputBin
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe la ubicación de entrada instalada en un dispositivo o la lista completa de ubicaciones admitidas para un dispositivo. Permite la especificación de la ubicación de entrada por página. Las palabras clave JobInputBin, DocumentInputBin y PageInputBin son mutuamente excluyentes. Ambos no deben especificarse simultáneamente en un documento PrintTicket o Capacidades de impresión.
 
@@ -25,7 +25,7 @@ Describe la ubicación de entrada instalada en un dispositivo o la lista complet
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Página<br/>    |
@@ -91,7 +91,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                                   | Tipo de datos          | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                             |
 |----------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>              | string<br/>  | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                  |
+| \_OptionName\_<br/>              | string<br/>  | caracteres<br/> | Nombre completo válido tal y como lo definen los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                  |
 | \_IdentityOptionValue\_<br/>     | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>        |
 | \_EnvelopeOptionValue\_<br/>     | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>        |
 | \_BinTypeValue\_<br/>            | string<br/>  | N/D<br/>        | ContinuousFeed, SheetFeed.<br/>                                                                                                                                                 | Especifica el tipo de la ubicación.<br/>                                           |
@@ -101,8 +101,8 @@ En la tabla siguiente se describen las características de las variables definid
 | \_MediaTypeAutoSenseValue\_<br/> | string<br/>  | N/D<br/>        | Compatible, Ninguno.<br/>                                                                                                                                                           | Especifica la funcionalidad de detección automática del tipo de medio del dispositivo.<br/>                |
 | \_MediaSheetCapacityValue\_<br/> | integer<br/> | Hojas<br/>     | Restricción de entero máxima permitida por el dispositivo.<br/>                                                                                                                              | Especifica la capacidad multimedia en número de páginas (nivel completo) de la ubicación.<br/> |
 | \_MediaPathValue\_<br/>          | string<br/>  | N/D<br/>        | Recta, íntea.<br/>                                                                                                                                                      | Especifica las características de la ruta de acceso del medio.<br/>                         |
-| \_FeedFaceValue\_<br/>           | string<br/>  | N/D<br/>        | FaceUp, FaceDown<br/>                                                                                                                                                           | Especifica si los medios se imprimirán de cara hacia arriba o hacia abajo.<br/>           |
-| \_FeedDirectionValue\_<br/>      | string<br/>  | N/D<br/>        | LongEdgeFirst, ShortEdgeFirst<br/>                                                                                                                                              | Especifica si los medios se alimentan primero con un borde largo o con un borde corto primero.<br/>      |
+| \_FeedFaceValue\_<br/>           | string<br/>  | N/D<br/>        | FaceUp, FaceDown<br/>                                                                                                                                                           | Especifica si el medio se va a imprimir de cara hacia arriba o hacia abajo.<br/>           |
+| \_FeedDirectionValue\_<br/>      | string<br/>  | N/D<br/>        | LongEdgeFirst, ShortEdgeFirst<br/>                                                                                                                                              | Especifica si los medios se alimentan primero con un borde largo o con un borde corto.<br/>      |
 
 
 
@@ -110,7 +110,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:PageInputBin">

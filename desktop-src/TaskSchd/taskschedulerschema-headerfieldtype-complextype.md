@@ -1,9 +1,9 @@
 ---
-title: tipo complejo headerFieldType
+title: headerFieldType Complex Type
 description: Define los elementos que se usan para crear un campo de encabezado en un mensaje de correo electrónico.
 ms.assetid: 66036875-1116-46eb-b2f5-8c8ad8373ab1
 keywords:
-- Tipo complejo headerFieldType Programador de tareas
+- tipo complejo headerFieldType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 78c4fb3a8ca85cea5b765fc1fc4521f968efd76e9169613dc4a1565a43ee1b36
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ddbc0ae22c6baf3fd288cbe2ead19dac506afee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118131834"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259295"
 ---
-# <a name="headerfieldtype-complex-type"></a>tipo complejo headerFieldType
+# <a name="headerfieldtype-complex-type"></a>headerFieldType Complex Type
 
 Define los elementos que se usan para crear un campo de encabezado en un mensaje de correo electrónico.
 
@@ -52,7 +52,7 @@ Define los elementos que se usan para crear un campo de encabezado en un mensaje
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

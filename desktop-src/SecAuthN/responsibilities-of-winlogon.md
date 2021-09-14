@@ -4,12 +4,12 @@ ms.assetid: 5aef4164-11bd-4acc-b851-de982e35d2b5
 title: Responsabilidades de Winlogon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6561bea11c48eb474c0ff56c5c0aa5ebfa0c22d9d6689aa55a6a208bbbc683e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7842df1d4194dc7086f658a13f6725af8fa0d88
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118919033"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259620"
 ---
 # <a name="responsibilities-of-winlogon"></a>Responsabilidades de Winlogon
 
@@ -17,7 +17,7 @@ ms.locfileid: "118919033"
 
 -   Estación de ventana y protección de escritorio
 
-    Winlogon establece la protección de la estación de ventana y los escritorios correspondientes para asegurarse de que cada uno de ellos sea accesible correctamente. En general, esto significa que el sistema local tendrá acceso total a estos objetos y que un usuario que ha iniciado sesión de forma interactiva tendrá acceso de lectura al objeto de estación de ventana y acceso completo al objeto de escritorio de la aplicación.
+    Winlogon establece la protección de la estación de ventana y los escritorios correspondientes para asegurarse de que cada uno sea accesible correctamente. En general, esto significa que el sistema local tendrá acceso total a estos objetos y que un usuario que ha iniciado sesión de forma interactiva tendrá acceso de lectura al objeto de estación de ventana y acceso completo al objeto de escritorio de la aplicación.
 
 -   Reconocimiento de SAS estándar
 

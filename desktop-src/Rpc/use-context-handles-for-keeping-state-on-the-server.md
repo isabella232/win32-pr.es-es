@@ -4,12 +4,12 @@ description: Usar identificadores de contexto para mantener el estado en el serv
 ms.assetid: ee511745-04cf-445d-a02b-41734aabc193
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cc9360d4edf95c06cef30a0e07f0e541a89823e89b163d5bbb61e0fb686a4e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b90bf14632ed1821a1a097a64951f6ca9aef751d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071378"
 ---
 # <a name="use-context-handles-for-keeping-state-on-the-server"></a>Usar identificadores de contexto para mantener el estado en el servidor
 

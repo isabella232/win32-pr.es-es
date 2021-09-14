@@ -4,16 +4,16 @@ ms.assetid: f115ee54-3333-4109-8004-d71904a7a943
 title: ACCESS_MASK (Winnt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d13378b44d17bedd818efd5fc84310b304a2f683a3331237e8cca208be8de810
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d10d9e8db246c2705911cc57221400f40da014d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785479"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073753"
 ---
 # <a name="access_mask"></a>MÁSCARA DE \_ ACCESO
 
-El **tipo de datos ACCESS \_ MASK** es un **valor DWORD** que define derechos estándar, específicos y genéricos. Estos derechos se usan en las entradas de [*control*](/windows/desktop/SecGloss/a-gly) de acceso (ACE) y son el medio principal para especificar el acceso solicitado o concedido a un objeto.
+El **tipo de datos ACCESS \_ MASK** es un **valor DWORD** que define derechos estándar, específicos y genéricos. Estos derechos se usan en [*las entradas*](/windows/desktop/SecGloss/a-gly) de control de acceso (ACE) y son el medio principal para especificar el acceso solicitado o concedido a un objeto.
 
 
 ```C++
@@ -23,7 +23,7 @@ typedef ACCESS_MASK* PACCESS_MASK;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los bits de este valor se asignan como se muestra a continuación.
 
@@ -33,13 +33,13 @@ Los bits de este valor se asignan como se muestra a continuación.
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 15<br/>  | Derechos específicos. Contiene la máscara de acceso específica del tipo de objeto asociado a la máscara.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 16 23<br/> | Derechos estándar. Contiene los derechos de acceso estándar del objeto.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| 24<br/>    | Acceso a la seguridad del sistema (**ACCESS \_ SYSTEM \_ SECURITY**). Se usa para indicar el acceso a una lista [*de control de acceso*](/windows/desktop/SecGloss/s-gly) del sistema (SACL). Este tipo de acceso requiere que el proceso de llamada tenga el **privilegio SE \_ SECURITY \_ NAME** (Manage auditing and security log) (Administrar registro de seguridad y auditoría). Si esta marca se establece en la máscara de acceso de una ACE de acceso de auditoría (acceso correcto o no correcto), se auditará el acceso SACL.<br/> |
-| 25<br/>    | Máximo permitido **(MÁXIMO \_ PERMITIDO).**<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 24<br/>    | Acceso a la seguridad del sistema (**ACCESS \_ SYSTEM \_ SECURITY**). Se usa para indicar el acceso a una lista [*de control de acceso del sistema*](/windows/desktop/SecGloss/s-gly) (SACL). Este tipo de acceso requiere que el proceso de llamada tenga el **SE \_ SECURITY \_ NAME** (Manage auditing and security log) (Administrar registro de seguridad y auditoría). Si esta marca se establece en la máscara de acceso de una ACE de acceso de auditoría (acceso correcto o no correcto), se auditará el acceso SACL.<br/> |
+| 25<br/>    | Máximo permitido (**MAXIMUM \_ ALLOWED**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | 26 27<br/> | Reservado.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | 28<br/>    | Todo genérico (**GENERIC \_ ALL**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 29<br/>    | Ejecución genérica (**GENERIC \_ EXECUTE**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| 30<br/>    | Escritura genérica **(ESCRITURA \_ GENÉRICA).**<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 31<br/>    | Lectura genérica **(LECTURA \_ GENÉRICA).**<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 30<br/>    | Escritura genérica (**GENERIC \_ WRITE**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| 31<br/>    | Lectura genérica (**GENERIC \_ READ**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 
 
@@ -52,10 +52,10 @@ Los bits de derechos estándar, de 16 a 23, contienen los derechos de acceso est
 | bit           | Marca                         | Significado                                                                                                                                                                                                                                  |
 |---------------|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 16<br/> | **DELETE**<br/>        | Eliminar acceso.<br/>                                                                                                                                                                                                                |
-| 17<br/> | **CONTROL DE \_ LECTURA**<br/> | Acceso de lectura al propietario, grupo y [*lista de control*](/windows/desktop/SecGloss/d-gly) de acceso discrecional (DACL) del descriptor de seguridad.<br/> |
+| 17<br/> | **CONTROL DE \_ LECTURA**<br/> | Acceso de lectura al propietario, grupo y lista [*de control de acceso discrecional*](/windows/desktop/SecGloss/d-gly) (DACL) del descriptor de seguridad.<br/> |
 | 18<br/> | **ESCRIBIR \_ DAC**<br/>    | Acceso de escritura a la DACL.<br/>                                                                                                                                                                                                     |
-| 19<br/> | **PROPIETARIO \_ DE ESCRITURA**<br/>  | Acceso de escritura al propietario.<br/>                                                                                                                                                                                                        |
-| 20<br/> | **Sincronizar**<br/>   | Sincronizar el acceso.<br/>                                                                                                                                                                                                           |
+| 19<br/> | **PROPIETARIO DE \_ ESCRITURA**<br/>  | Acceso de escritura al propietario.<br/>                                                                                                                                                                                                        |
+| 20<br/> | **SINCRONIZAR**<br/>   | Sincronizar el acceso.<br/>                                                                                                                                                                                                           |
 
 
 
@@ -90,9 +90,9 @@ Las siguientes constantes definidas en Winnt.h representan los derechos de acces
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                            |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                   |
-| Header<br/>                   | <dl> <dt>Winnt.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winnt.h (incluir Windows.h)</dt> </dl> |
 
 
 

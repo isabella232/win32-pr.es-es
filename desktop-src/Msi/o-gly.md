@@ -1,15 +1,15 @@
 ---
-description: Obtenga información Windows conceptos del instalador que comienzan con la letra O, como Over The Estorba.
+description: Obtenga información Windows conceptos del instalador que comienzan con la letra O, como Over The Aldo.
 ms.assetid: 67f9755c-2f0f-4ee6-8252-b4e5b84a2acc
 title: O (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0577d54b03b9a3b17d2a56fc49edbc1e49a22be266595e81109102d15870fc1f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d2209d1000739e94f09760a659c36f069ab39d01
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119381345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074338"
 ---
 # <a name="o-windows-installer"></a>O (Windows instalador)
 

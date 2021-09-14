@@ -6,12 +6,12 @@ keywords:
 - DCE_C_ERROR_STRING_LEN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abb7fbfec5a7931a6ed46f1ba6a6c8f4b941e101e4292325c093a00bdfbe20a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4087117fb36983f41e59a248b256184e8a3373c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118931144"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259799"
 ---
 # <a name="dce_c_error_string_len"></a>DCE \_ C \_ ERROR \_ STRING \_ LEN
 

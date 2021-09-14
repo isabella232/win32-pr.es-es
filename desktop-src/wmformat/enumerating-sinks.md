@@ -10,12 +10,12 @@ keywords:
 - sinks,enumerating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b51b46f3efdf95902b1ca5b359227da845292c4b0f23dbf0bd52039fba151cd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff35124a8c88108082544b270aa4d9813ff67ea9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118029085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262159"
 ---
 # <a name="enumerating-sinks"></a>Enumeración de receptores
 

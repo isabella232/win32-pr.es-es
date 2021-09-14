@@ -4,16 +4,16 @@ ms.assetid: a26e40c2-1717-4a13-8bf0-e41376a8d317
 title: Proveedores de metadatos en Windows Vista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1edf65b59e0f47e603b057f49a76d8721b8733849937cb29fd0afbe0b9b44920
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a1726e04058a7b15e387fca4f3faa94fce7c91c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119827075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263343"
 ---
 # <a name="metadata-providers-in-windows-vista"></a>Proveedores de metadatos en Windows Vista
 
-En Windows Vista, Microsoft Media Foundation expone metadatos a través de la [**interfaz DE METADATOSMetadata.**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata)
+En Windows Vista, Microsoft Media Foundation los metadatos a través de la [**interfaz DE METADATOSMetadata.**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata)
 
 ## <a name="reading-metadata"></a>Leer metadatos
 

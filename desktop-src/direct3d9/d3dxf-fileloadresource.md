@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9xof.h
-ms.openlocfilehash: ddc105d3df7732e1572e41c3d9cb47a285caf69cba0a24f6ea65090706394592
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ee5dc27b551382a5fa5d1c7f4833c94b205e5521
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119564935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072806"
 ---
 # <a name="d3dxf_fileloadresource-structure"></a>Estructura FILELOADRESOURCE de D3DXF \_
 
@@ -37,7 +37,7 @@ typedef struct D3DXF_FILELOADRESOURCE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -74,7 +74,7 @@ Puntero a una cadena que especifica el tipo definido por el usuario que identifi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta estructura identifica un recurso que se va a cargar cuando una aplicación usa el [**método CreateEnumObject**](id3dxfile--createenumobject.md) y especifica la marca [ \_ FILELOAD \_ FROMRESOURCE de D3DXF.](d3dxf.md)
 
@@ -88,7 +88,7 @@ Esta estructura identifica un recurso que se va a cargar cuando una aplicación 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

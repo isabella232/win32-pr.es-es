@@ -4,12 +4,12 @@ ms.assetid: 570711c2-ef9b-4b3a-9b5f-94a6601fa3d4
 title: System.Audio.EncodingBitrate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce2aa4f560ee0efc63838f11be2a66370f06c06e3f7b1f34c9af736d4e350d32
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2fd0325ea0e8971e7764346b3dada2784d9209cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118232900"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262879"
 ---
 # <a name="systemaudioencodingbitrate"></a>System.Audio.EncodingBitrate
 
@@ -95,7 +95,7 @@ propertyDescription
             minValue = 4294967295
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

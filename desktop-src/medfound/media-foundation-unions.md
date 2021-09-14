@@ -4,12 +4,12 @@ ms.assetid: 03d97d26-714d-4aec-bb92-0772f09b7cca
 title: Media Foundation uniones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ddc421dab926a1a30471b7b053fdd5a068ba39d6402653956d606e9692fd44b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32514148a7620f15ff38df9f124bc93aa752e92f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119957465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263351"
 ---
 # <a name="media-foundation-unions"></a>Media Foundation uniones
 

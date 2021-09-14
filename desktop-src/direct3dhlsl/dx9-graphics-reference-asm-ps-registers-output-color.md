@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 038446bb7d588222e04028727a447b6a47c941ab6a18a3ba4216f46e93440961
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 316160e39ce172d56e4ecac17dfbd1d53077005b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119709"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263972"
 ---
 # <a name="output-color-register"></a>Registro de color de salida
 
 Los registros de salida de color del sombreador de píxeles (oC#) son registros de solo escritura que muestran resultados en varios destinos de representación.
 
-Syntax
+Sintaxis
 
 
 
@@ -46,7 +46,7 @@ Donde:
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 -   Si oCn está escrito pero no hay ningún destino de representación correspondiente, se omite esta escritura en oCn.
 -   Los estados de representación D3DRS \_ COLORWRITEENABLE, D3DRS \_ COLORWRITEENABLE1, D3DRS \_ COLORWRITEENABLE2 y D3DRS COLORWRITEENABLE3 determinan qué componentes de oCn se escriben en última instancia en el destino de representación (después de \_ blend, si procede). Si el sombreador escribe algunos de los componentes definidos por los estados de representación COLORWRITEENABLE de D3DRS para un registro \_ oCn determinado, los canales no escritos generan valores no definidos en el destino de representación \* correspondiente. Si no se escribe ninguno de los componentes de un oCn, el destino de representación correspondiente no se debe actualizar en absoluto (como se indicó anteriormente), por lo que no se aplican los estados de representación \_ COLORWRITEENABLE de D3DRS. \*

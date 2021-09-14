@@ -10,18 +10,18 @@ keywords:
 - DRM (administración de derechos digitales), habilitar la compatibilidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dca900089e93b9f2c149f1e349bdf5b91f88a7c3d549b5f54147839a8ed9296
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 936210eb9d560bffe12acf5cc33fb9f864f8404c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120089755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262183"
 ---
 # <a name="enabling-drm-support"></a>Habilitación de la compatibilidad con DRM
 
 Puede usar el Kit de desarrollo de software (SDK) de formato multimedia (SDK) de Microsoft Windows para compilar aplicaciones que puedan aplicar la protección de administración de derechos digitales (DRM) y reproducir secuencias DRM en vivo o archivos protegidos con DRM. También se proporciona compatibilidad para realizar copias de seguridad y restaurar las licencias DRM de un reproductor y para [*individualizar reproductores.*](wmformat-glossary.md)
 
-En esta documentación se supone que está familiarizado con la tecnología de administración de derechos digitales de Microsoft. En la sección Características Rights Management digitales de [](digital-rights-management-features.md) esta documentación se proporciona una introducción básica de Windows DRM multimedia. Para obtener más información sobre DRM, vea la página de Rights Management digital en el sitio [web de Microsoft](https://windows.microsoft.com/windows/products/windows-media).
+En esta documentación se supone que está familiarizado con la tecnología de administración de derechos digitales de Microsoft. En la sección Características de Windows digitales de esta documentación se proporciona información general Windows [Rights Management](digital-rights-management-features.md) DRM multimedia. Para obtener más información sobre DRM, vea la página de Rights Management digital en el [sitio web de Microsoft](https://windows.microsoft.com/windows/products/windows-media).
 
 > [!Note]  
 > DRM no es compatible con la versión basada en x64 de este SDK.
@@ -44,7 +44,7 @@ En las secciones siguientes se describe cómo habilitar la compatibilidad con DR
 | [Copia de seguridad y restauración de licencias](backing-up-and-restoring-licenses.md)                                                     | Describe cómo los usuarios pueden administrar sus licencias de contenido mediante la copia de seguridad y la restauración en su equipo actual o en otros equipos.                                                         |
 | [Individualización de aplicaciones DRM](individualizing-drm-applications.md)                                                       | Describe cómo la característica [*de individualización*](wmformat-glossary.md) aumenta la seguridad en un sistema DRM.                                                           |
 | [Trabajar con niveles de protección de salida](working-with-output-protection-levels.md)                                             | Describe cómo admitir los niveles de protección de salida, que se usan para registrar las acciones permitidas en licencias drm versión 10.                                                                         |
-| [Uso de Windows Drm 10 multimedia para el protocolo de dispositivos de red](using-the-windows-media-drm-10-for-network-devices-protocol.md) | Describe cómo admitir el streaming de dispositivos seguros mediante el Windows drm multimedia 10 para dispositivos de red.                                                                                |
+| [Uso de Windows DRM 10 multimedia para el protocolo de dispositivos de red](using-the-windows-media-drm-10-for-network-devices-protocol.md) | Describe cómo admitir el streaming de dispositivos seguros mediante el Windows drm multimedia 10 para dispositivos de red.                                                                                |
 | [Implementación de la revocación de licencias](implementing-license-revocation.md)                                                         | Describe el proceso de revocación de licencias y las acciones que debe realizar la aplicación para implementarla.                                                                                        |
 | [Grabación de listas de reproducción que contienen archivos seguros](burning-playlists-that-contain-secure-files.md)                                 | Describe cómo implementar la reproducción de listas de reproducción en la aplicación.                                                                                                                                |
 

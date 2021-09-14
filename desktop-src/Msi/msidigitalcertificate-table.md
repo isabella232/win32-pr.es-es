@@ -4,16 +4,16 @@ ms.assetid: 834534b8-540a-48c2-8eb0-3511d5a20cb4
 title: Tabla MsiDigitalCertificate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 443e5f27d13ebd823fa8e5362de474082d39e4b09b9e240b9ee16e9924342e41
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ff4765dee433cfab989e79c7ef4663d8939381ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119828785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071873"
 ---
 # <a name="msidigitalcertificate-table"></a>Tabla MsiDigitalCertificate
 
-La tabla MsiDigitalCertificate almacena los certificados en formato de secuencia binaria y asocia cada certificado a una clave principal. La clave principal se usa para compartir certificados entre varios objetos firmados digitalmente. Un certificado digital es una credencial que proporciona un medio para comprobar la identidad. Para más información, consulte [Certificados digitales en](../seccrypto/digital-certificates.md) la sección [Criptografía](../seccrypto/cryptography-portal.md) del Kit de desarrollo de software (SDK) de Microsoft Windows Software.
+La tabla MsiDigitalCertificate almacena los certificados en formato de secuencia binaria y asocia cada certificado a una clave principal. La clave principal se usa para compartir certificados entre varios objetos firmados digitalmente. Un certificado digital es una credencial que proporciona un medio para comprobar la identidad. Para obtener más información, [vea Certificados digitales](../seccrypto/digital-certificates.md) en la sección [Criptografía](../seccrypto/cryptography-portal.md) de Microsoft Windows Software Development Kit (SDK).
 
 Las [tablas MsiDigitalSignature](msidigitalsignature-table.md) y MsiDigitalCertificate están disponibles a partir de Windows Installer versión 2.0.
 
@@ -74,7 +74,7 @@ Representación binaria del certificado digital. La columna CertData contiene la
 [Tabla MsiDigitalSignature](msidigitalsignature-table.md)
 </dt> <dt>
 
-[Instalador de firmas digitales Windows datos](digital-signatures-and-windows-installer.md)
+[Firma digital e instalador de Windows](digital-signatures-and-windows-installer.md)
 </dt> </dl>
 
  

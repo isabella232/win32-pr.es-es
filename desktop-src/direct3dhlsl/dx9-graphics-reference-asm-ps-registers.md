@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3a9c26ae1b3b763388e2ea1b85c728c480f9131f8c64f3098233f775bad4732c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a13c771a4c1f136c500c324de4f5b458f31bc8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118512855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263911"
 ---
 # <a name="registers"></a>Registros
 

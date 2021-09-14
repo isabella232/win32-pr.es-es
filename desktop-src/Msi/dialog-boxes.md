@@ -1,17 +1,17 @@
 ---
 description: Los cuadros de diálogo se especifican en la columna Diálogo de la tabla Diálogo. Para obtener más información sobre cómo agregar un cuadro de diálogo o un cuadro de diálogo a una interfaz de usuario, vea Uso del Interfaz de usuario.
 ms.assetid: 7cecb1c6-3dc3-48a1-94b9-1976c72b7764
-title: Cuadros de diálogo (Windows instalador)
+title: Cuadros de diálogo (Windows Instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a38da0e4d562854abc32064eee06a303747c2587591a5526ae98177a13e0462a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5695a8d936d0933983407ba52a531ea839137c09
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158582"
 ---
-# <a name="dialog-boxes-windows-installer"></a>Cuadros de diálogo (Windows instalador)
+# <a name="dialog-boxes-windows-installer"></a>Cuadros de diálogo (Windows Instalador)
 
 Los cuadros de diálogo se especifican en la columna Diálogo de la [tabla Dialog](dialog-table.md). Para obtener más información sobre cómo agregar un cuadro de diálogo o un cuadro de diálogo a una interfaz de usuario, vea [Using the Interfaz de usuario](using-the-user-interface.md).
 
@@ -33,7 +33,7 @@ Los siguientes nombres de cuadro de diálogo están reservados por Windows Insta
 
 ## <a name="required-dialog-boxes"></a>Cuadros de diálogo obligatorios
 
-Durante la instalación, algunos eventos hacen que [](using-a-sequence-table.md) Windows Installer compruebe las tablas de secuencia de la interfaz de usuario en el paquete y muestre el cuadro de diálogo especificado. Por ejemplo, en el caso de un error irresal, Windows Installer muestra el cuadro de diálogo que aparece con un número de secuencia de -3 en la tabla de secuencias de la interfaz de usuario independientemente de cómo se llame a ese cuadro de diálogo en la tabla [Dialog](dialog-table.md). En la tabla siguiente se enumeran los eventos específicos y su número de secuencia correspondiente en la tabla de secuencias de la interfaz de usuario:
+Durante la instalación, algunos eventos hacen que [](using-a-sequence-table.md) Windows Installer compruebe las tablas de secuencia de la interfaz de usuario en el paquete y muestre el cuadro de diálogo especificado. Por ejemplo, en el caso de un error irresal, Windows Installer muestra el cuadro de diálogo que aparece con un número de secuencia de -3 en la tabla de secuencias de la interfaz de usuario, independientemente de cómo se llame a ese cuadro de diálogo en la tabla [Dialog](dialog-table.md). En la tabla siguiente se enumeran los eventos específicos y su número de secuencia correspondiente en la tabla de secuencias de la interfaz de usuario:
 
 
 

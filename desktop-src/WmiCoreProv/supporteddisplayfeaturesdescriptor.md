@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: a9e71eeda4ab47cba5e88a548421c89815b7d0d87d511709b9a73573e2582077
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 30350d477533b7e51ba8b3130c5a24d81c12f10e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118321541"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073105"
 ---
 # <a name="supporteddisplayfeaturesdescriptor-class"></a>SupportedDisplayFeaturesDescriptor (clase)
 
-**SupportedDisplayFeaturesDescriptor representa** las características de visualización admitidas del monitor. La información de esta clase corresponde a los datos del estándar Definición de entrada de vídeo del estándar Detección de pantalla extendida mejorada (E-EDID) de Video Electronics Standard Association (VESA).
+**SupportedDisplayFeaturesDescriptor representa** las características de visualización admitidas del monitor. La información de esta clase corresponde a los datos del estándar E-EDID (Definición de entrada de vídeo) del estándar Enhanced Extended Display Identification Data (E-EDID) de Video Electronics Standard Association (VESA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ class SupportedDisplayFeaturesDescriptor
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase SupportedDisplayFeaturesDescriptor** tiene estos tipos de miembros:
 
@@ -67,7 +67,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Compatibilidad con apagado activo y muy baja potencia. La pantalla consume menos energía cuando recibe una señal de tiempo que está fuera del intervalo operativo activo declarado. La pantalla volverá al funcionamiento normal si la señal de tiempo vuelve al intervalo de funcionamiento normal. Ejemplos de señales de control de tiempo fuera del intervalo de funcionamiento normal son ninguna señal de sincronización o ninguna señal DE.
+Compatibilidad con apagado activo y muy baja potencia. La pantalla consume menos energía cuando recibe una señal de tiempo que está fuera del intervalo operativo activo declarado. La pantalla volverá al funcionamiento normal si la señal de tiempo vuelve al intervalo de funcionamiento normal. Los ejemplos de señales de tiempo fuera del intervalo de funcionamiento normal son ninguna señal de sincronización o ninguna señal DE.
 
 </dd> <dt>
 
@@ -84,11 +84,11 @@ Tipo de presentación del monitor. En la tabla siguiente se enumeran los valores
 
 
 
-| Valor                                                                              | Significado                                 |
+| Value                                                                              | Significado                                 |
 |------------------------------------------------------------------------------------|-----------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | Pantalla monocromática/escala de grises<br/> |
-| <dl> <dt>1 (0x1)</dt> </dl> | Pantalla de color RGB<br/>            |
-| <dl> <dt>2 (0x2)</dt> </dl> | Pantalla de rgb no rgb<br/>   |
+| <dl> <dt>1 (0x1)</dt> </dl> | Presentación de color RGB<br/>            |
+| <dl> <dt>2 (0x2)</dt> </dl> | Pantalla de color no RGB<br/>   |
 
 
 
@@ -105,7 +105,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la pantalla tiene compatibilidad con GTF. Si **es True,** la pantalla admite intervalos basados en el estándar GTF mediante valores de parámetro GTF predeterminados.
+Indica si la pantalla tiene compatibilidad con GTF. Si **es True,** la pantalla admite intervalos basados en el estándar GTF mediante los valores de parámetro GTF predeterminados.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la pantalla tiene un modo de control de tiempo preferido. Si **es True,** el primer bloque de control de tiempo detallado contiene el modo de control de tiempo preferido del monitor. EDID v.1.3 y superior requiere el uso del modo de control de tiempo preferido.
+Indica si la pantalla tiene un modo de tiempo preferido. Si **es True**, el primer bloque de control de tiempo detallado contiene el modo de control de tiempo preferido del monitor. EDID v.1.3 y posteriores requieren el uso del modo de tiempo preferido.
 
 </dd> <dt>
 
@@ -144,7 +144,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la pantalla admite la señal de administración de energía de pantalla VESA (DPMS) en espera. Si **es True,** se admite el modo en espera de DPMS.
+Indica si la pantalla admite el modo de espera de vesa display power management signaling (DPMS). Si **es True,** se admite el modo en espera de DPMS.
 
 </dd> <dt>
 
@@ -157,7 +157,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la pantalla admite la suspensión de la señalización de administración de energía de la pantalla VESA (DPMS). Si **es True,** se admite la suspensión de DPMS.
+Indica si la pantalla admite la suspensión de la señalización de administración de energía de visualización (DPMS) de VESA. Si **es True,** se admite la suspensión de DPMS.
 
 </dd> </dl>
 
@@ -165,7 +165,7 @@ Indica si la pantalla admite la suspensión de la señalización de administraci
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

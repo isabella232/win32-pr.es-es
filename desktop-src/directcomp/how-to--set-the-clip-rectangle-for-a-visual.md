@@ -1,24 +1,24 @@
 ---
 title: Cómo recortar con un objeto de recorte de rectángulo
-description: En este tema se muestra cómo usar un objeto de recorte de rectángulo para recortar un objeto visual o un árbol visual.
+description: En este tema se muestra cómo usar un objeto de recorte de rectángulo para recortar un árbol visual o visual.
 ms.assetid: 377EF49A-F9F2-4A72-9D22-DEC33803AD0D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10386f3e99dead7fff04a57463c2ee753bd1d712e9a59e6b928136c32f25ae75
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d26019f37949b0111ee9b5958fa3fba2c9507cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119108"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263804"
 ---
 # <a name="how-to-clip-with-a-rectangle-clip-object"></a>Cómo recortar con un objeto de recorte de rectángulo
 
 > [!NOTE]
 > Para las aplicaciones Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
-En este tema se muestra cómo usar un objeto de recorte de rectángulo para recortar un objeto visual o un árbol visual.
+En este tema se muestra cómo usar un objeto de recorte de rectángulo para recortar un árbol visual o visual.
 
-En el ejemplo de este tema se define un clip rectangular que se centra en la ubicación del mouse y se aplica a un objeto visual que se centra en el área cliente de la ventana de destino de composición. Esta captura de pantalla muestra el resultado de aplicar el objeto de recorte de rectángulo al objeto visual.
+En el ejemplo de este tema se define un clip rectangular centrado en la ubicación del mouse y se aplica el clip a un objeto visual centrado en el área cliente de la ventana de destino de composición. Esta captura de pantalla muestra el resultado de aplicar el objeto de recorte de rectángulo al objeto visual.
 
 ![resultado de aplicar un objeto de recorte de rectángulo a un objeto visual](images/clipwithrectangleclipobject.png)
 
@@ -30,7 +30,7 @@ En el ejemplo de este tema se define un clip rectangular que se centra en la ubi
 -   [Gráficos de Direct3D 11](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11)
 -   [Infraestructura de gráficos de DirectX (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
 -   Microsoft Win32
@@ -43,11 +43,11 @@ En el ejemplo de este tema se define un clip rectangular que se centra en la ubi
 1.  Cree el objeto de dispositivo y el objeto de destino de composición.
 2.  Cree un objeto visual, establezca su contenido y agrégrélo al árbol visual.
 
-Para obtener más información, [vea Cómo inicializar DirectComposition](initialize-directcomposition.md).
+Para obtener más información, [vea How to initialize DirectComposition](initialize-directcomposition.md).
 
-### <a name="step-2-create-the-rectangle-clip-object"></a>Paso 2: Crear el objeto de recorte del rectángulo
+### <a name="step-2-create-the-rectangle-clip-object"></a>Paso 2: Crear el objeto de recorte de rectángulo
 
-Use el [**método IDCompositionDevice::CreateRectangleClip**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createrectangleclip) para crear una instancia del objeto de recorte del rectángulo.
+Use el [**método IDCompositionDevice::CreateRectangleClip**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createrectangleclip) para crear una instancia del objeto de recorte de rectángulo.
 
 
 ```C++
@@ -66,7 +66,7 @@ Use el [**método IDCompositionDevice::CreateRectangleClip**](/windows/win32/api
 
 Llame a los métodos de la interfaz [**IDCompositionRectangleClip**](/windows/win32/api/dcomp/nn-dcomp-idcompositionrectangleclip) del objeto de recorte del rectángulo para establecer las propiedades del rectángulo de recorte.
 
-En el ejemplo siguiente se define un rectángulo de recorte centrado alrededor de la ubicación actual del mouse. Las variables miembro y contienen los valores de las propiedades `m_offsetX` `m_offsetY` OffsetX y OffsetY del objeto visual.
+En el ejemplo siguiente se define un rectángulo de recorte centrado alrededor de la ubicación actual del mouse. Las variables miembro y contienen los valores de las propiedades OffsetX y `m_offsetX` `m_offsetY` OffsetY del objeto visual.
 
 
 ```C++
@@ -98,7 +98,7 @@ Tenga en cuenta [**que la interfaz IDCompositionRectangleClip**](/windows/win32/
 
 ### <a name="step-4-set-the-clip-property-of-the-visual"></a>Paso 4: Establecer la propiedad Clip del objeto visual
 
-Use el [**método IDCompositionVisual::SetClip**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(idcompositionclip)) para asociar la propiedad Clip del objeto visual con el objeto de recorte del rectángulo.
+Use el [**método IDCompositionVisual::SetClip**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(idcompositionclip)) para asociar la propiedad Clip del objeto visual con el objeto de recorte de rectángulo.
 
 
 ```C++

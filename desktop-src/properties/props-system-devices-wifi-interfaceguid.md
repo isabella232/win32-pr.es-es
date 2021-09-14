@@ -1,19 +1,19 @@
 ---
-description: Wi-Fi guid de interfaz.
+description: Wi-Fi guid de interfaz de usuario.
 ms.assetid: 21f3710e-5248-4e58-b8b8-6acfddb6a931
 title: System.Devices.WiFi.InterfaceGuid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e7433048c49a111454c559dd5b10e7cc2e7f01ef19d9461d11629f5b03d174c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86c46a611944491dc753f7abefbdfd24b7293c22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118467225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262668"
 ---
 # <a name="systemdeviceswifiinterfaceguid"></a>System.Devices.WiFi.InterfaceGuid
 
-Wi-Fi guid de interfaz
+Wi-Fi Guid de interfaz de usuario
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

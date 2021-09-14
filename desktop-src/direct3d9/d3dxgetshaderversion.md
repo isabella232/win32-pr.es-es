@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4cc76ebcb9a3b62b0097db5f1575e50416a89b9bfffdc9a17820388da4362aab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2c4a65db8706f6d8648096cf0822654e562687a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119123181"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072776"
 ---
 # <a name="d3dxgetshaderversion-function"></a>Función D3DXGetShaderVersion
 
@@ -66,7 +66,7 @@ Devuelve la versión del sombreador del sombreador dado o cero si la función de
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

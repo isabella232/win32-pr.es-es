@@ -4,12 +4,12 @@ ms.assetid: c016fcba-0d54-4b99-bcdd-36967b2c9da0
 title: Generar una transformación de personalización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b790917100cc06da97e09fd8aabf45b580e62008d23c9fc5065e6005112d8d4e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f73609b7be60dbfe236d31ed5a865e86ff6e310
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118636003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074742"
 ---
 # <a name="generating-a-customization-transform"></a>Generar una transformación de personalización
 

@@ -4,12 +4,12 @@ ms.assetid: 407f0e42-07c8-4ec6-81c6-f8bde005adb0
 title: Identificadores Storage propiedad clave (Ncrypt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20b8fca27591837a555e4f75040ba16056c42e16ce488c0bb99f2d8f7de70bd1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 813a15ba106989cb558eba181bc893d75c6d1bf2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118907631"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073659"
 ---
 # <a name="key-storage-property-identifiers"></a>Identificadores de Storage clave
 
@@ -65,7 +65,7 @@ L"SmartCardAssociatedECDHKey"
 
 
 
-Valor **LPWSTR** que indica el nombre del contenedor de la clave elíptica curve Diffie-Hellman (ECDH) que se usará durante el inicio de sesión para un identificador determinado en una clave del algoritmo de firma digital de curva elíptica (ECDSA). Si no hay claves ECDH en la tarjeta, el proveedor [*de*](/windows/desktop/SecGloss/k-gly) almacenamiento de claves (KSP) devuelve **NTE \_ NOT \_ FOUND**. Esta propiedad se aplica a las claves ECDSA para el inicio de sesión con tarjetas inteligentes. La propiedad es compatible con el proveedor de almacenamiento de claves de tarjeta inteligente de Microsoft y no con el proveedor de almacenamiento de claves de software de Microsoft.
+Valor **LPWSTR** que indica el nombre del contenedor de la clave elíptica curve Diffie-Hellman (ECDH) que se usará durante el inicio de sesión para un identificador determinado en una clave del Algoritmo de firma digital de curva elíptica (ECDSA). Si no hay claves ECDH en la tarjeta, el proveedor [*de*](/windows/desktop/SecGloss/k-gly) almacenamiento de claves (KSP) devuelve **NTE \_ NOT \_ FOUND**. Esta propiedad se aplica a las claves ECDSA para el inicio de sesión con tarjetas inteligentes. La propiedad es compatible con el proveedor de almacenamiento de claves de tarjeta inteligente de Microsoft y no con el proveedor de almacenamiento de claves de software de Microsoft.
 
 **Windows Server 2008 y Windows Vista:** Este valor no se admite.
 
@@ -168,7 +168,7 @@ DWORD **que** contiene un conjunto de marcas que definen los detalles de impleme
 <span id="NCRYPT_KEY_TYPE_PROPERTY"></span><span id="ncrypt_key_type_property"></span>**PROPIEDAD DE TIPO \_ DE \_ CLAVE NCRYPT \_**
 </dt> <dd> <dl> <dt>
 
-L"Tipo de clave"
+L"Key Type"
 </dt> <dt>
 
 
@@ -179,7 +179,7 @@ DWORD **que** contiene un conjunto de marcas que definen el tipo de clave. Esta 
 
 | Identificador                     | Value      | Descripción                                                                                              |
 |--------------------------------|------------|----------------------------------------------------------------------------------------------------------|
-| **MARCA DE \_ CLAVE DE \_ MÁQUINA NCRYPT \_** | 0x00000001 | La clave se aplica al equipo local. Si esta marca no está presente, la clave se aplica al usuario actual. |
+| **MARCA DE \_ CLAVE \_ DE MÁQUINA NCRYPT \_** | 0x00000001 | La clave se aplica al equipo local. Si esta marca no está presente, la clave se aplica al usuario actual. |
 
 
 
@@ -227,7 +227,7 @@ Indica cuándo se modificó la clave por última vez. Este tipo de datos es un p
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_LENGTH_PROPERTY"></span><span id="ncrypt_length_property"></span>**PROPIEDAD NCRYPT \_ \_ LENGTH**
+<span id="NCRYPT_LENGTH_PROPERTY"></span><span id="ncrypt_length_property"></span>**PROPIEDAD NCRYPT \_ LENGTH \_**
 </dt> <dd> <dl> <dt>
 
 L"Length"
@@ -256,7 +256,7 @@ Indica los tamaños de clave admitidos por la clave. Este tipo de datos es un pu
 <span id="NCRYPT_MAX_NAME_LENGTH_PROPERTY"></span><span id="ncrypt_max_name_length_property"></span>**PROPIEDAD NCRYPT \_ MAX \_ NAME \_ \_ LENGTH**
 </dt> <dd> <dl> <dt>
 
-L"Longitud máxima del nombre"
+L"Max Name Length"
 </dt> <dt>
 
 
@@ -294,7 +294,7 @@ Este valor no se admite.
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_PIN_PROPERTY"></span><span id="ncrypt_pin_property"></span>**PROPIEDAD DE PIN de NCRYPT \_ \_**
+<span id="NCRYPT_PIN_PROPERTY"></span><span id="ncrypt_pin_property"></span>**PROPIEDAD DE \_ PIN NCRYPT \_**
 </dt> <dd> <dl> <dt>
 
 L"SmartCardPin"
@@ -307,7 +307,7 @@ Puntero a una cadena Unicode terminada en NULL que contiene el PIN. El PIN se us
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_PROVIDER_HANDLE_PROPERTY"></span><span id="ncrypt_provider_handle_property"></span>**PROPIEDAD DE \_ IDENTIFICADOR DEL \_ PROVEEDOR NCRYPT \_**
+<span id="NCRYPT_PROVIDER_HANDLE_PROPERTY"></span><span id="ncrypt_provider_handle_property"></span>**PROPIEDAD DE IDENTIFICADOR \_ DEL \_ PROVEEDOR NCRYPT \_**
 </dt> <dd> <dl> <dt>
 
 L"Provider Handle"
@@ -315,7 +315,7 @@ L"Provider Handle"
 
 
 
-Identificador **de \_ prov de NCRYPT \_** que contiene el identificador del proveedor de almacenamiento de claves CNG. Cuando haya terminado de usar el identificador, debe llamar a [**NCryptFreeObject**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfreeobject) para liberarlo.
+Identificador **prov de NCRYPT \_ \_** que contiene el identificador del proveedor de almacenamiento de claves CNG. Cuando haya terminado de usar el identificador, debe llamar a [**NCryptFreeObject para**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfreeobject) liberarlo.
 
 
 </dt> </dl> </dd> <dt>
@@ -333,7 +333,7 @@ Puntero a una cadena Unicode terminada en NULL que contiene el nombre del lector
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_ROOT_CERTSTORE_PROPERTY"></span><span id="ncrypt_root_certstore_property"></span>**PROPIEDAD \_ CERTSTORE RAÍZ \_ DE NCRYPT \_**
+<span id="NCRYPT_ROOT_CERTSTORE_PROPERTY"></span><span id="ncrypt_root_certstore_property"></span>**PROPIEDAD \_ \_ CERTSTORE \_ RAÍZ DE NCRYPT**
 </dt> <dd> <dl> <dt>
 
 L"SmartcardRootCertStore"
@@ -354,7 +354,7 @@ L"SmartCardPinId"
 
 
 
-Puntero al valor de **identificador \_ de PIN** asociado a una clave [*criptográfica determinada*](/windows/desktop/SecGloss/c-gly) en una tarjeta [*inteligente.*](/windows/desktop/SecGloss/s-gly) Se trata de una propiedad de solo lectura. El **tipo de datos pin \_ ID** se define en Cardmod.h.
+Puntero al valor de **identificador \_ de PIN** asociado a una clave [*criptográfica determinada*](/windows/desktop/SecGloss/c-gly) en una tarjeta [*inteligente.*](/windows/desktop/SecGloss/s-gly) Se trata de una propiedad de solo lectura. El **tipo de datos \_ DE** PIN se define en Cardmod.h.
 
 **Windows Server 2008 y Windows Vista:** Este valor no se admite.
 
@@ -369,14 +369,14 @@ L"SmartCardPinInfo"
 
 
 
-Puntero a la [**estructura DE \_ INFORMACIÓN**](/windows/desktop/api/mbnapi/ns-mbnapi-mbn_pin_info) de PIN del PIN asociado a una clave criptográfica determinada en la tarjeta inteligente. El autor de la llamada proporciona el identificador de clave. Esta propiedad es de solo lectura. La **estructura \_ DE INFORMACIÓN** de PIN se define en Cardmod.h.
+Puntero a la [**estructura \_ DE INFORMACIÓN**](/windows/desktop/api/mbnapi/ns-mbnapi-mbn_pin_info) de PIN del PIN asociado a una clave criptográfica determinada en la tarjeta inteligente. El autor de la llamada proporciona el identificador de clave. Esta propiedad es de solo lectura. La **estructura \_ DE INFORMACIÓN** de PIN se define en Cardmod.h.
 
 **Windows Server 2008 y Windows Vista:** Este valor no se admite.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_SECURE_PIN_PROPERTY"></span><span id="ncrypt_secure_pin_property"></span>**NCRYPT \_ SECURE \_ PIN \_ PROPERTY**
+<span id="NCRYPT_SECURE_PIN_PROPERTY"></span><span id="ncrypt_secure_pin_property"></span>**PROPIEDAD DE PIN \_ \_ SEGURO DE NCRYPT \_**
 </dt> <dd> <dl> <dt>
 
 L"SmartCardSecurePin"
@@ -391,7 +391,7 @@ Puntero a una cadena Unicode terminada en NULL que contiene el PIN de sesión de
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_SECURITY_DESCR_PROPERTY"></span><span id="ncrypt_security_descr_property"></span>**NCRYPT \_ SECURITY \_ DESCR \_ PROPERTY**
+<span id="NCRYPT_SECURITY_DESCR_PROPERTY"></span><span id="ncrypt_security_descr_property"></span>**PROPIEDAD \_ \_ DESCR DESCR DE SEGURIDAD DE NCRYPT \_**
 </dt> <dd> <dl> <dt>
 
 L"Security Descr"
@@ -399,7 +399,7 @@ L"Security Descr"
 
 
 
-Puntero a una estructura [**\_ DE DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contiene información de control de acceso para la clave. Esta propiedad solo se aplica a las claves persistentes. El *parámetro dwFlags* de la función [**NCryptGetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptgetproperty) o [**NCryptSetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsetproperty) identifica la parte del descriptor de seguridad que se va a obtener o establecer.
+Puntero a una estructura [**\_ DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contiene información de control de acceso para la clave. Esta propiedad solo se aplica a las claves persistentes. El *parámetro dwFlags* de la función [**NCryptGetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptgetproperty) o [**NCryptSetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsetproperty) identifica la parte del descriptor de seguridad que se va a obtener o establecer.
 
 
 </dt> </dl> </dd> <dt>
@@ -561,11 +561,11 @@ Los siguientes valores se usan para definir límites de datos de propiedad.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
-| Header<br/>                   | <dl> <dt>Ncrypt.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ncrypt.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

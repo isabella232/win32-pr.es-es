@@ -4,12 +4,12 @@ ms.assetid: 591d1ad1-3f3e-4fc2-87fe-8e9bce7e9ec1
 title: Comunicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbdf600f867f5c7136794ff3a838f6469f8e82ff2d23d891187c942aa0550975
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c362ad9ea3b27e1e5975ee2228f99b3e6fc6d4a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120011565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262988"
 ---
 # <a name="communication"></a>Comunicación
 

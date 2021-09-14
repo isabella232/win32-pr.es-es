@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a08d2954b478bd6afd0c52d517e07a82ba3ee148dd07f839ec7d8787d93c2134
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf4c71641003d460e9752dcf33f983c70a82e4f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118510988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072695"
 ---
 # <a name="loop---ps"></a>loop - ps
 
 Inicia un bucle... [endloop: bloque ps.](endloop---ps.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -54,7 +54,7 @@ Donde:
 -   i \# .z especifica el tamaño del paso o el intervalo. El intervalo legal es \[ -128, 127 \] .
 -   El bloque de bucle no usa i \# .w y debe ser 0.
 -   Los bloques de bucle pueden estar anidados. Vea [Flow control de datos](dx9-graphics-reference-asm-ps-instructions-flow-control.md).
--   Cuando se anida, el valor del registro de [contador](dx9-graphics-reference-asm-ps-registers-loop-counter.md) de bucles (aL) hace referencia al bloque de bucle de encierre inmediato.
+-   Cuando está anidado, el valor del registro de [contadores](dx9-graphics-reference-asm-ps-registers-loop-counter.md) de bucles (aL) hace referencia al bloque de bucle de encierre inmediato.
 -   Los bloques de bucle pueden estar completamente dentro de un bloque if \* o rodearse completamente. No se permite ningún estrango.
 
 ## <a name="example"></a>Ejemplo

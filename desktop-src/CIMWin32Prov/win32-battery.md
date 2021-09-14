@@ -49,16 +49,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 142e602e6f3f75a50e45aa22fd6ddd7d7cf9dc638cdebfb81fba7bc0e92409c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 75477bcf670bcc0cf16c63f130f95d4c38d7b783
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261647"
 ---
 # <a name="win32_battery-class"></a>Clase Battery de Win32 \_
 
-La **clase Wmi de \_ batería Win32** [representa](/windows/desktop/WmiSdk/retrieving-a-class) una batería conectada al sistema informático.
+La **clase WMI de \_ batería Win32** [representa](/windows/desktop/WmiSdk/retrieving-a-class) una batería conectada al sistema informático.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -104,7 +104,7 @@ class Win32_Battery : CIM_Battery
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Battery \_ de Win32** tiene estos tipos de miembros:
 
@@ -113,13 +113,13 @@ La **clase Battery \_ de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La **clase Battery \_ de Win32** tiene estos métodos.
+La **clase \_ Battery de Win32** tiene estos métodos.
 
 
 
 | Método            | Descripción                                                                                                                                                                                          |
 |:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Reset**         | Sin implementar. Para implementar este método, consulte el método [**reset**](reset-method-in-class-cim-controller.md) en [**CIM Battery \_ para**](cim-battery.md) obtener documentación.<br/>                 |
+| **Reset**         | Sin implementar. Para implementar este método, consulte el método [**Reset**](reset-method-in-class-cim-controller.md) en [**CIM Battery \_ para**](cim-battery.md) obtener documentación.<br/>                 |
 | **SetPowerState** | Sin implementar. Para implementar este método, consulte el método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) en [**CIM Battery \_ para**](cim-battery.md) obtener documentación.<br/> |
 
 
@@ -146,7 +146,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -166,12 +166,12 @@ Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
 
 
 </dt> <dd>
 
-En ejecución o con energía completa
+Energía completa o en ejecución
 
 </dd> <dt>
 
@@ -233,7 +233,7 @@ En ejecución o con energía completa
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
 
 
 </dt> <dd></dd> <dt>
@@ -302,7 +302,7 @@ El dispositivo está en pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
 
 
 </dt> <dd>
@@ -313,7 +313,7 @@ El dispositivo no está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
 
 
 </dt> <dd>
@@ -324,12 +324,12 @@ El dispositivo no está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
 
 
 </dt> <dd>
 
-El dispositivo es silencioso.
+El dispositivo está silencioso.
 
 </dd> </dl>
 
@@ -363,9 +363,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.14")
 </dt> </dl>
 
-Estado de la batería. El valor 10 (sin definir) no es válido en el esquema CIM porque en DMI representa que no hay ninguna batería instalada. En este caso, no se debe crear una instancia del objeto.
+Estado de la batería. El valor 10 (undefined) no es válido en el esquema CIM porque en DMI representa que no hay batería instalada. En este caso, no se debe crear una instancia del objeto.
 
-Esta propiedad se hereda de [**la batería CIM. \_**](cim-battery.md)
+Esta propiedad se hereda de [**cim \_ battery**](cim-battery.md).
 
 <dt>
 
@@ -387,7 +387,7 @@ La batería se está descargando.
 
 </dt> <dd>
 
-El sistema tiene acceso a la ca, por lo que no se descarga ninguna batería. Sin embargo, la batería no se está cargando necesariamente.
+El sistema tiene acceso a la ca, por lo que no se descarga batería. Sin embargo, la batería no se está cargando necesariamente.
 
 </dd> <dt>
 
@@ -435,7 +435,7 @@ El sistema tiene acceso a la ca, por lo que no se descarga ninguna batería. Sin
 
 <span id="Charging_and_Critical"></span><span id="charging_and_critical"></span><span id="CHARGING_AND_CRITICAL"></span>
 
-<span id="Charging_and_Critical"></span><span id="charging_and_critical"></span><span id="CHARGING_AND_CRITICAL"></span>**Carga y crítico** (9)
+<span id="Charging_and_Critical"></span><span id="charging_and_critical"></span><span id="CHARGING_AND_CRITICAL"></span>**Carga y crítica** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -488,7 +488,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Enumeración que describe la química de la batería.
 
-Esta propiedad se hereda de [**la batería CIM. \_**](cim-battery.md)
+Esta propiedad se hereda de [**cim \_ battery**](cim-battery.md).
 
 <dt>
 
@@ -543,7 +543,7 @@ Esta propiedad se hereda de [**la batería CIM. \_**](cim-battery.md)
 
 <span id="Lithium_Polymer"></span><span id="lithium_polymer"></span><span id="LITHIUM_POLYMER"></span>
 
-**Iones de iones** (8)
+**Lithium Estaciones** (8)
 
 
 </dt> <dd></dd> </dl>
@@ -888,12 +888,12 @@ El dispositivo está deshabilitado. El firmware del dispositivo no proporcionaba
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que usa otro dispositivo.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que otro dispositivo está usando.** (30)
 
 
 </dt> <dd>
 
-El dispositivo usa un recurso IRQ que usa otro dispositivo.
+El dispositivo usa un recurso IRQ que está usando otro dispositivo.
 
 </dd> <dt>
 
@@ -924,7 +924,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Si **es True,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -937,12 +937,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -973,12 +973,12 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.8"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milivatio-hora")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.8"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("militio-hora")
 </dt> </dl>
 
-Diseñe la capacidad de la batería en milivatio-hora. Si no se admite la propiedad, escriba 0 (cero).
+Diseñe la capacidad de la batería en milivatios-hora. Si no se admite la propiedad, escriba 0 (cero).
 
-Esta propiedad se hereda de [**cim \_ battery**](cim-battery.md).
+Esta propiedad se hereda de [**la batería CIM. \_**](cim-battery.md)
 
 </dd> <dt>
 
@@ -991,14 +991,14 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.9"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milivolts")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.9"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milivoltios")
 </dt> </dl>
 
-Diseñe el voltaje de la batería en milivotios. Si no se admite el atributo, escriba 0 (cero).
+Diseñe el voltaje de la batería en milivoltios. Si no se admite el atributo, escriba 0 (cero).
 
-Esta propiedad se hereda de [**cim \_ battery**](cim-battery.md).
+Esta propiedad se hereda de [**la batería CIM. \_**](cim-battery.md)
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -1016,7 +1016,7 @@ Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](
 
 Identifica la batería.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: "Batería interna"
 
@@ -1033,7 +1033,7 @@ Tipo de acceso: solo lectura
 
 Si **es True**, ahora se borra el error notificado en la propiedad **LastErrorCode.**
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1048,7 +1048,7 @@ Tipo de acceso: solo lectura
 
 Cadena de forma libre que proporciona más información sobre el error registrado en la propiedad **LastErrorCode** e información sobre las acciones correctivas que se pueden realizar.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1066,7 +1066,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("por
 
 Estimación del porcentaje de cargo total restante.
 
-Esta propiedad se hereda de [**cim \_ battery**](cim-battery.md).
+Esta propiedad se hereda de [**la batería CIM. \_**](cim-battery.md)
 
 </dd> <dt>
 
@@ -1082,9 +1082,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.15"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("minutes")
 </dt> </dl>
 
-Calcule en minutos el tiempo para agotar la carga de la batería en las condiciones de carga actuales si la energía de la utilidad está apagada, se pierde y permanece apagada, o si un portátil está desconectado de una fuente de alimentación.
+Calcule en minutos el tiempo para agotar la carga de la batería en las condiciones actuales de carga si la alimentación de la utilidad está apagada, se pierde y permanece apagada, o si un portátil está desconectado de una fuente de alimentación.
 
-Esta propiedad se hereda de [**cim \_ battery**](cim-battery.md).
+Esta propiedad se hereda de [**la batería CIM. \_**](cim-battery.md)
 
 </dd> <dt>
 
@@ -1116,9 +1116,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("minutos")
 </dt> </dl>
 
-Duración esperada de la batería en minutos, suponiendo que la batería está totalmente cargada. La propiedad representa la duración total esperada de la batería, no su duración restante actual, lo que se indica mediante **la propiedad EstimatedRunTime.**
+Duración esperada de la batería en minutos, suponiendo que la batería esté totalmente cargada. La propiedad representa la duración total esperada de la batería, no su vida restante actual, lo que se indica mediante la **propiedad EstimatedRunTime.**
 
-Esta propiedad se hereda de [**cim \_ battery**](cim-battery.md).
+Esta propiedad se hereda de [**la batería CIM. \_**](cim-battery.md)
 
 </dd> <dt>
 
@@ -1131,12 +1131,12 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.11"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milivatio-hora")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.11"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milivatios-hora")
 </dt> </dl>
 
-Capacidad de carga completa de la batería en milivatio-hora. La comparación del valor con la **propiedad DesignCapacity** determina cuándo la batería requiere reemplazo. El final de la batería suele ser cuando la propiedad **FullChargeCapacity** está por debajo del 80 % de la **propiedad DesignCapacity.** Si no se admite la propiedad, escriba 0 (cero).
+Capacidad de carga completa de la batería en milivatios-hora. La comparación del valor con la **propiedad DesignCapacity** determina cuándo es necesario reemplazar la batería. El final de una batería suele ser cuando la propiedad **FullChargeCapacity** está por debajo del 80 % de la **propiedad DesignCapacity.** Si no se admite la propiedad, escriba 0 (cero).
 
-Esta propiedad se hereda de [**cim \_ battery**](cim-battery.md).
+Esta propiedad se hereda de [**la batería CIM. \_**](cim-battery.md)
 
 </dd> <dt>
 
@@ -1240,7 +1240,7 @@ Tipo de acceso: solo lectura
 
 Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda de **CIM \_ LogicalDevice.**
+Esta propiedad se hereda de **CIM \_ LogicalDevice**.
 
 <dt>
 
@@ -1294,7 +1294,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase [**\_ logicalDevice**](cim-logicaldevice.md) de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase [**\_ logicalDevice**](cim-logicaldevice.md) de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1581,7 +1581,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.16"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("minutes")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Portable Battery \| 002.16"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("minutos")
 </dt> </dl>
 
 Tiempo restante para cargar la batería completamente en minutos a la velocidad de carga y el uso actuales.
@@ -1590,15 +1590,15 @@ Esta propiedad se hereda de [**la batería CIM. \_**](cim-battery.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase Battery \_ de Win32** se deriva de [**CIM \_ Battery,**](cim-battery.md) que deriva de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+La clase Battery de **Win32 \_** se deriva de [**CIM \_ Battery,**](cim-battery.md) que deriva de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Windows Server 2008 contiene los controladores UPS (APC) del sistema operativo, lo que le permite tratar el UPS como una fuente de batería. Esto le permite supervisar el estado de UPS mediante un script y realizar acciones cuando sea necesario.
 
 ## <a name="examples"></a>Ejemplos
 
-En [Toggle-Wireless.ps1](https://Gallery.TechNet.Microsoft.Com/Toggle-Wirelessps1-2d244a8f) ejemplo de código de PowerShell se consulta **Win32 \_ Battery** para determinar si se debe activar o no la conexión inalámbrica para ahorrar energía.
+El [Toggle-Wireless.ps1](https://Gallery.TechNet.Microsoft.Com/Toggle-Wirelessps1-2d244a8f) ejemplo de código de PowerShell consulta **Win32 \_ Battery** para determinar si se debe activar o no la conexión inalámbrica para ahorrar energía.
 
 En el ejemplo List UPS Information Perl (Enumerar información de [UPS)](https://Gallery.TechNet.Microsoft.Com/7196121e-97de-4290-9939-26d0ce266270) se muestra información sobre las fuentes de alimentación ininterrumpidas conectadas a un equipo.
 
@@ -1616,7 +1616,7 @@ En el ejemplo List UPS Information Perl (Enumerar información de [UPS)](https:/
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

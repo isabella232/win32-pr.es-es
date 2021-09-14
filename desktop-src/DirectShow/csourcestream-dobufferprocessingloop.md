@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d23df592abd125fd64362af89b6f81c5e9dcc20f0aa6cc998974a8fd2d4d87f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 809694cacf0c30acf88ddf7d14c7f5ea1f654436
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072239"
 ---
 # <a name="csourcestreamdobufferprocessingloop-method"></a>Método CSourceStream.DoBufferProcessingLoop
 
@@ -55,7 +55,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método implementa el bucle main que procesa los datos y los entrega de bajada. Cada vez que se recorre el bucle, el método recupera un ejemplo multimedia vacío del asignador. Pasa el ejemplo al método [**CSourceStream::FillBuffer.**](csourcestream-fillbuffer.md) El **método FillBuffer,** que la clase derivada debe implementar, genera datos multimedia y los coloca en el búfer de ejemplo.
 
@@ -78,7 +78,7 @@ El `DoBufferProcessingLoop` método controla la notificación de fin de flujo. S
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

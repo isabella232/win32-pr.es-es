@@ -5,15 +5,15 @@ ms.assetid: 9688756b-3c5e-42ca-a9da-f258d4be2360
 keywords:
 - MulticastUdpServerExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11dbb427dfc0a957bb08f42b63d54c3121cf6444ad8f7ad507262f59d60c1375
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 74497f99c384d082671b01b4874a6f54e6805de3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120089485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261999"
 ---
 # <a name="multicastudpserverexample"></a>MulticastUdpServerExample
 

@@ -5,11 +5,11 @@ title: Muestras de SDK de Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5482fabe5e4bfdfe5d451fd8ccb9c0ba0504a5ff
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122482721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263372"
 ---
 # <a name="media-foundation-sdk-samples"></a>Muestras de SDK de Media Foundation
 
@@ -44,7 +44,7 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 |---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [BasicPlayback](/previous-versions//bb970475(v=vs.85))          | Reproduce archivos de audio y vídeo mediante la [sesión multimedia](media-session.md). En este ejemplo se muestra cómo crear topologías de reproducción, controlar la sesión multimedia y recibir eventos de sesión durante la reproducción. |
 | [MFPlayer](/previous-versions//bb970516(v=vs.85))                    | Muestra algunas funciones de reproducción que no se incluyen en el [ejemplo BasicPlayback.](/previous-versions//bb970475(v=vs.85))                                                                                              |
-| [ProtectedPlayback](protectedplayback-sample.md) | Reproduce archivos de audio y vídeo protegidos. En este ejemplo se muestra cómo usar la sesión de ruta de acceso multimedia protegida (PMP) y cómo usar objetos de habilitador de contenido.                                                              |
+| [ProtectedPlayback](protectedplayback-sample.md) | Reproduce archivos de audio y vídeo protegidos. En este ejemplo se muestra cómo usar la sesión de ruta de acceso multimedia protegida (PMP) y cómo usar objetos habilitador de contenido.                                                              |
 
 
 
@@ -115,7 +115,7 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 
 | Muestra | Descripción | 
 |--------|-------------|
-| <a href="mfplayer2-sample.md">MFPlayer2</a> | Muestra algunas características avanzadas de reproducción de <a href="using-mfplay-for-audio-video-playback.md">MFPlay</a> API. | 
+| <a href="mfplayer2-sample.md">MFPlayer2</a> | Muestra algunas características avanzadas de reproducción de la API <a href="using-mfplay-for-audio-video-playback.md">MFPlay.</a> | 
 | <a href="/previous-versions//bb970336(v=vs.85)">PlaybackFX</a> | Aplica un efecto de escala de grises al vídeo. Muestra cómo insertar mfts en una topología de reproducción.<br /><blockquote>[!Note]<br />Este ejemplo ya no se incluye en el SDK.</blockquote><br /> | 
 | <a href="playlist-sample.md">Lista de reproducción</a> | Reproduce una secuencia de archivos de audio mediante el origen del secuenciador.<br /><blockquote>[!Note]<br />Este ejemplo ya no se incluye en el SDK.</blockquote><br /> | 
 | <a href="simplecapture-sample.md">SimpleCapture</a> | Muestra cómo obtener una vista previa del vídeo desde un dispositivo de captura de vídeo mediante la API MFPlay. | 

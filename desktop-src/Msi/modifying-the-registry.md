@@ -4,12 +4,12 @@ ms.assetid: b3b39471-85b1-4361-94fd-19d0f0ee2b78
 title: Modificar el Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06f1bd6145811097fcaf74f0622ac35412891d6aa0007c4411099ade6afddd36
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ff6ff79ce340b0487c179cb37e44dff9f42e4be8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120082865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261220"
 ---
 # <a name="modifying-the-registry"></a>Modificar el Registro
 

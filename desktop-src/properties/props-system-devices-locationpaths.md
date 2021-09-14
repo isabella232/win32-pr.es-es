@@ -4,12 +4,12 @@ ms.assetid: 454ee045-3abb-4ca0-bf01-b5d21ec85725
 title: System.Devices.LocationPaths
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fb62c8294d3d57ef02965ab38156481d70e54daf7b8555de1600494c33e5e6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 326646757e2a25a6804365780985be74cc57d0bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119097619"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262700"
 ---
 # <a name="systemdeviceslocationpaths"></a>System.Devices.LocationPaths
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

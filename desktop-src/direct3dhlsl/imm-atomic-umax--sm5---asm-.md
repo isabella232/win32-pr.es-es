@@ -1,19 +1,19 @@
 ---
 title: imm_atomic_umax (sm5 - asm)
-description: Máximo atómico inmediato sin signo en memoria. Devuelve el valor en memoria antes de la operación máxima.
+description: Número máximo atómico inmediato sin signo en memoria. Devuelve el valor en memoria antes de la operación máxima.
 ms.assetid: 6C9D2CA3-1502-41E1-8535-C94DF31201E1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 399142e182cbf33a8adea3ac8236fdc81e4f4b100e562e65bbb39057b6e6e192
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 072ef5a2a8e91a17501015bdc34738465880d91e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072703"
 ---
 # <a name="imm_atomic_umax-sm5---asm"></a>imm \_ atomic \_ umax (sm5 - asm)
 
-Máximo atómico inmediato sin signo en memoria. Devuelve el valor en memoria antes de la operación máxima.
+Número máximo atómico inmediato sin signo en memoria. Devuelve el valor en memoria antes de la operación máxima.
 
 
 
@@ -37,7 +37,7 @@ Máximo atómico inmediato sin signo en memoria. Devuelve el valor en memoria an
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta instrucción realiza un único componente de 32 bits sin signo máximo de *operando src0* con *dst1* a 32 bits por dirección de componente *dstAddress*.
 
@@ -61,7 +61,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -73,7 +73,7 @@ Dado que los UAV están disponibles en todas las fases del sombreador para Direc
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -89,7 +89,7 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |

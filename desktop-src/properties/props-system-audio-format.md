@@ -4,12 +4,12 @@ ms.assetid: 58cb9e95-7ac8-42f1-ad2a-a3979ec800eb
 title: System.Audio.Format
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77ed979896503ebc67f72390726389d17ae1d0f14db245a924b0480facde8ad7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9895c36c4ce196d29bb4b370b805253f5dfaad3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118970814"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262871"
 ---
 # <a name="systemaudioformat"></a>System.Audio.Format
 
@@ -47,7 +47,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

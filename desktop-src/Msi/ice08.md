@@ -4,16 +4,16 @@ ms.assetid: c8ff53f3-6587-479d-afb8-b09d0df3b673
 title: ICE08
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c6075b7c895242fe5cfa7608a414643a9e3491787fc59037f8761fa66b18354
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 051f32aa983fdae39fc3717d3c9036b542f14369
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119745325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074673"
 ---
 # <a name="ice08"></a>ICE08
 
-ICE08 valida que la [tabla Component](component-table.md) no contiene GUID [duplicados.](guid.md) Cada componente debe tener un GUID único. No se realiza ninguna validación si la tabla Component no existe.
+ICE08 valida que la tabla [Component](component-table.md) no contiene GUID [duplicados.](guid.md) Cada componente debe tener un GUID único. No se realiza ninguna validación si la tabla Component no existe.
 
 ## <a name="result"></a>Resultado
 

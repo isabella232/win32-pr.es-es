@@ -23,21 +23,21 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 18a85af664a4be8ef96b1882477e2fadec0f0b1a
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882280"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261639"
 ---
 # <a name="win32_environment-class"></a>Clase De entorno de Win32 \_
 
-La **clase WMI de entorno \_ win32** representa una configuración de entorno o entorno del sistema en un Windows equipo. [](/windows/desktop/WmiSdk/retrieving-a-class) Al consultar esta clase, se devuelven las variables de entorno que se encuentran en:
+La **clase \_ WMI de entorno win32** [representa](/windows/desktop/WmiSdk/retrieving-a-class) una configuración de entorno o entorno del sistema en un Windows equipo. Al consultar esta clase, se devuelven las variables de entorno que se encuentran en:
 
-**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **Sessionmanager** \\ **Environment**
+**HKEY \_ Local \_ Machine** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **Sessionmanager** \\ **Environment**
 
 y
 
-**HKEY \_ Entorno** \\ **< *de usuario* >** de \\ **USUARIOS**
+**HKEY \_ Entorno** \\ **< *de usuario* >** DE \\ **USUARIOS**
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -58,7 +58,7 @@ class Win32_Environment : CIM_SystemResource
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Win32 \_ Environment** tiene estos tipos de miembros:
 
@@ -136,9 +136,9 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet Control Session Manager \\ \\ \\ \\ \\ \\ Environment")
 </dt> </dl>
 
-Cadena de caracteres que especifica el nombre de una variable de entorno Windows basada en caracteres. Al especificar el nombre de una variable que aún no existe, una aplicación crea una nueva variable de entorno.
+Cadena de caracteres que especifica el nombre de una variable Windows de entorno basada en el servidor. Al especificar el nombre de una variable que aún no existe, una aplicación crea una nueva variable de entorno.
 
-Ejemplo: "Ruta de acceso"
+Ejemplo: "Path"
 
 </dd> <dt>
 
@@ -156,7 +156,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -187,7 +187,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -201,14 +201,14 @@ Los valores son los siguientes:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -278,7 +278,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (260), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet Control Session Manager \\ \\ \\ \\ \\ \\ Environment")
 </dt> </dl>
 
-Nombre del propietario de la configuración del entorno. Se establece en SYSTEM para las configuraciones que son específicas del sistema basado en Windows (en lugar de un usuario específico) y DEFAULT para la configuración &lt; &gt; de usuario &lt; &gt; predeterminada.
+Nombre del propietario de la configuración del entorno. Se establece en SYSTEM para la configuración específica del sistema basado en Windows (en lugar de un usuario específico) y DEFAULT para la &lt; &gt; configuración de usuario &lt; &gt; predeterminada.
 
 Ejemplo: "JSmith"
 
@@ -296,23 +296,23 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session \\ \\ \\ \\ Manager Environment")
 </dt> </dl>
 
-Variable de marcador de posición de Windows variable de entorno basada en una base de datos. Información como el directorio del sistema de archivos puede cambiar de equipo a equipo. El sistema operativo sustituye los marcadores de posición por estos.
+Variable de marcador de posición de una Windows de entorno basada en una variable de entorno. Información como el directorio del sistema de archivos puede cambiar de equipo a equipo. El sistema operativo sustituye los marcadores de posición por estos.
 
 Ejemplo: "%SystemRoot%"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase Win32 \_ Environment** se deriva de CIM [**\_ SystemResource**](cim-systemresource.md). Puede usar esta clase para buscar las rutas de acceso de carpetas especiales, como la carpeta System o archivos de programa en un equipo remoto. Algunos ejemplos son: windir, systemroot, programfiles y userprofile. **Win32 \_ El** entorno devuelve básicamente lo que se puede encontrar en:
+La **clase Win32 \_ Environment** se deriva de CIM [**\_ SystemResource**](cim-systemresource.md). Puede usar esta clase para buscar las rutas de acceso de carpetas especiales, como la carpeta Sistema o archivos de programa en un equipo remoto. Algunos ejemplos son: windir, systemroot, programfiles y userprofile. **Win32 \_ El** entorno devuelve básicamente lo que se puede encontrar en:
 
-**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **Sessionmanager** \\ **Environment**
+**HKEY \_ Local \_ Machine** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **Sessionmanager** \\ **Environment**
 
 y
 
-**HKEY \_ Entorno** \\ **< *de usuario* >** de \\ **USUARIOS**
+**HKEY \_ Entorno** \\ **< *de usuario* >** DE \\ **USUARIOS**
 
-El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, vea [Ejecutar operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
+El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, [vea Ejecutar operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -370,7 +370,7 @@ End If
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -380,7 +380,7 @@ End If
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

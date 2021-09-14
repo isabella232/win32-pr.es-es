@@ -4,12 +4,12 @@ ms.assetid: 95afc397-2f28-4ab9-8d95-d071c2f1f498
 title: AVAILABLEFREEREG, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b45508494f9ba87ec8261b38ea18f83d0b3ad9796f7390b70349211cbf244df3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 517073748195c47ee27b68adbe70d6c69f3f585b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119650075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159001"
 ---
 # <a name="availablefreereg-property"></a>AVAILABLEFREEREG, propiedad
 
@@ -19,7 +19,7 @@ El valor máximo de la **propiedad AVAILABLEFREEREG** es 200 0000 kilobytes.
 
 Esta propiedad solo se establece en Windows 2000.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **propiedad AVAILABLEFREEREG** debe establecerse en un valor lo suficientemente grande como para garantizar el espacio suficiente en el Registro para toda la información de registro agregada por la instalación. El valor mínimo necesario para garantizar que haya espacio suficiente depende de dónde se encuentra la acción [AllocateRegistrySpace](allocateregistryspace-action.md) en la secuencia de acciones porque el instalador aumenta automáticamente el espacio según sea necesario al registrar información en las tablas [Registry](registry-table.md), [Class](class-table.md), [SelfReg](selfreg-table.md), [Extension](extension-table.md), [MIME](mime-table.md)y [Verb.](verb-table.md) El instalador no aumenta el espacio total del Registro a la cantidad especificada por **AVAILABLEFREEREG** hasta llegar a AllocateRegistrySpace en la secuencia de acción.
 
@@ -31,9 +31,9 @@ Si la acción AllocateRegistrySpace se puede crear [](standard-actions.md) en la
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
 
 
 

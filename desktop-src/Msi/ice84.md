@@ -4,16 +4,16 @@ ms.assetid: 0d1bbf4b-ffab-409e-a292-891dfa823433
 title: ICE84
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2af31c343db973481bd69599fadc9c632bbc6dc58a473a69015b3eb0fbe781d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8960f53f5a01e9bec95a02bb3241487aa31aaae5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119895005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074523"
 ---
 # <a name="ice84"></a>ICE84
 
-ICE84 comprueba la tabla [](standard-actions.md) [AdvtExecuteSequence,](advtexecutesequence-table.md)la tabla [AdminExecuteSequence](adminexecutesequence-table.md)y la tabla [InstallExecuteSequence](installexecutesequence-table.md) para comprobar que las siguientes acciones estándar no se han establecido con condiciones en el campo Condición.
+ICE84 comprueba la [tabla AdvtExecuteSequence](advtexecutesequence-table.md), la tabla [AdminExecuteSequence](adminexecutesequence-table.md)y la tabla [](standard-actions.md) [InstallExecuteSequence](installexecutesequence-table.md) para comprobar que las siguientes acciones estándar no se han establecido con condiciones en el campo Condición.
 
 -   [Acción CostInitialize](costinitialize-action.md)
 -   [Acción CostFinalize](costfinalize-action.md)
@@ -35,7 +35,7 @@ ICE84 publica la advertencia siguiente.
 
 
 
-| Error ICE84                                                             | Descripción                                           |
+| Error ice84                                                             | Descripción                                           |
 |-------------------------------------------------------------------------|-------------------------------------------------------|
 | La acción \[ '1' \] que se encuentra en la tabla %s es una acción necesaria con una condición. | Se ha escrito una acción necesaria con una condición . |
 

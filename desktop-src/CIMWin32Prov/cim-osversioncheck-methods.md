@@ -1,23 +1,23 @@
 ---
-description: La clase \_ CIM OSVersionCheck expone los métodos siguientes.
+description: La clase CIM \_ OSVersionCheck expone los métodos siguientes.
 ms.assetid: F1CA0689-D6CD-4900-ACEA-AE4AD9E294E5
 ms.tgt_platform: multiple
 title: CIM_OSVersionCheck métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e556a29de484a3cddaa0ab1b05f507f13f98a2da520ced6c41aec2b12b09fec
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc4a854c626b01f85010bd2265c01327e384d519
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119820775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261767"
 ---
 # <a name="cim_osversioncheck-methods"></a>Métodos \_ CIM OSVersionCheck
 
-La [**clase \_ CIM OSVersionCheck**](cim-osversioncheck.md) expone los métodos siguientes.
+La [**clase CIM \_ OSVersionCheck**](cim-osversioncheck.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

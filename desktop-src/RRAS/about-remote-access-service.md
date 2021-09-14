@@ -6,12 +6,12 @@ keywords:
 - Ras del servicio de acceso remoto , descrito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0263e5168bf1aac990f94850f26b7be7abd71c4730bea691d18b11c00373f48e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a86b173f4ff9f23fffa2ff532e4f67a0ff5a7402
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120030845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259887"
 ---
 # <a name="about-remote-access-service"></a>Acerca del servicio de acceso remoto
 

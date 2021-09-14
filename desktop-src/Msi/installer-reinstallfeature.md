@@ -1,7 +1,7 @@
 ---
 description: El método ReinstallFeature del objeto Installer reinstala las características o corrige los problemas con las características instaladas.
 ms.assetid: cfe2aef4-7742-49cd-b7a3-7d484e1f85e3
-title: Método Installer.ReinstallFeature
+title: Installer.ReinstallFeature (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: dfe4cb96ccac85fb5b94f3a2a8ec3dcca48f6fa4300a6bceb338b2ebbe01da22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6bac008ee7121bbcb985b9a8ff5ba02df122266
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118946291"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072096"
 ---
-# <a name="installerreinstallfeature-method"></a>Método Installer.ReinstallFeature
+# <a name="installerreinstallfeature-method"></a>Installer.ReinstallFeature (método)
 
 El **método ReinstallFeature** del objeto [**Installer**](installer-object.md) reinstala las características o corrige los problemas con las características instaladas.
 
@@ -97,7 +97,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

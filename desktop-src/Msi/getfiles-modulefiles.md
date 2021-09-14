@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: b4b7d498979c94de048e72058df4c8bf87fb8607220efe808554d66deb5d89ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d13d624f2cfb24bfa6946ca6c45fe799602f55b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118635945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074732"
 ---
 # <a name="getfilesmodulefiles-property"></a>GetFiles.ModuleFiles, propiedad
 
@@ -38,7 +38,7 @@ propVal = GetFiles.ModuleFiles
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Tenga en cuenta que es posible que el orden de los archivos enumerados en la colección no esté en la misma secuencia que en la tabla Archivo.
 
@@ -52,10 +52,10 @@ Consulte [**la función get \_ ModuleFiles.**](/windows/win32/api/mergemod/nf-me
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

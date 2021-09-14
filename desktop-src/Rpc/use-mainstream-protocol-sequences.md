@@ -4,12 +4,12 @@ description: Use ncacn \_ ip \_ tcp, ncacn \_ http o ncacn \_ np para las llamad
 ms.assetid: 60692247-bc39-448d-b92a-1879c08df8f1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef63a7ecc1ade0f6ad4e2ee744e8d2118408b5ae2bb5ac681833e40ee6d490e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42d80354d03f568415f7c8a32d58605bf3156b59
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071376"
 ---
 # <a name="use-mainstream-protocol-sequences"></a>Usar secuencias de protocolo estándar
 

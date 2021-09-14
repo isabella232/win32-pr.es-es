@@ -1,11 +1,11 @@
 ---
 title: Método INapSystemHealthAgentRequest GetCacheSoHFlag (NapSystemHealthAgent.h)
-description: NapAgent solo lo usa.
+description: Solo lo usa NapAgent.
 ms.assetid: 97dd4e95-30c2-48e2-9359-b1019299581d
 keywords:
 - Método NAP de GetCacheSoHFlag
-- Método NAP de GetCacheSoHFlag, interfaz INapSystemHealthAgentRequest
-- INapSystemHealthAgentRequest interface NAP , GetCacheSoHFlag method
+- Método NAP de GetCacheSoHFlag , interfaz INapSystemHealthAgentRequest
+- Interfaz NAP de INapSystemHealthAgentRequest, método GetCacheSoHFlag
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9268e620f38ef314c0699612436518315e44cf7f554bb393d2259ae4664519cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53d8b458e4a49b690fe1f0f53482a72dd253c7c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118133680"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071631"
 ---
-# <a name="inapsystemhealthagentrequestgetcachesohflag-method"></a>INapSystemHealthAgentRequest::GetCacheSoHFlag (método)
+# <a name="inapsystemhealthagentrequestgetcachesohflag-method"></a>Método INapSystemHealthAgentRequest::GetCacheSoHFlag
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
@@ -47,10 +47,10 @@ HRESULT GetCacheSoHFlag(
 
 <dl> <dt>
 
-*cacheSmioForLaterUse* 
+*cacheSijoForLaterUse* 
 </dt> <dd>
 
-Valor **BOOL que** es **TRUE si** NapAgent debe almacenar en caché [**soH**](/windows/win32/api/naptypes/ns-naptypes-soh) y **FALSE** en caso contrario.
+Un **VALOR BOOL** que es **TRUE si** NapAgent debe almacenar en caché [**soH**](/windows/win32/api/naptypes/ns-naptypes-soh) y **FALSE** en caso contrario.
 
 </dd> </dl>
 
@@ -74,12 +74,12 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagentrt.dll</dt> </dl>             |
 
 

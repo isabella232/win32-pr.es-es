@@ -4,16 +4,16 @@ ms.assetid: f521cfb8-32a8-4b62-b258-5b99cc3e0416
 title: Un ejemplo de acceso directo de MUI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3b38f674a63e854fbcd4439229c5aded5b0efe6cfc17d3e475f8a52f30db949
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0392713c1eaedabaa989baecd79478a9b329e955
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118640292"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159273"
 ---
 # <a name="a-mui-shortcut-example"></a>Un ejemplo de acceso directo de MUI
 
-En esta sección se describe cómo agregar cadenas de recursos a la tabla de accesos directos Windows [Installer](shortcut-table.md) para su uso con interfaces de usuario multilingües (MUI).
+En esta sección se describe cómo agregar cadenas de recursos a la tabla de accesos directos Windows [Installer](shortcut-table.md) para su uso con interfaces de usuario multilingües (MSI).
 
 **Windows Installer 2.0 y Windows Installer 3.0:** No se admite. Este ejemplo requiere Windows Installer 4.0.
 
@@ -47,7 +47,7 @@ Para agregar las cadenas de recursos que usa Windows interfaces de usuario multi
     | Componente       | Directorio\_   | KeyPath     |
     |-----------------|---------------|-------------|
     | MSIMSG \_ MSIG MSI \_ JA | FOLDERFolder \_ JA | msimsgmuija |
-    | MSIMSG \_ MUI \_ CS | FOLDERFolder \_ CS | msimsgmuics |
+    | MSIMSG \_ MUI \_ CS | CS deFOLDERFolder \_ | msimsgmuics |
     | MSIMSG \_ MSIG MSI \_ EN | FOLDERFolder \_ EN | msimsgmuien |
     | MSIMSG          | FOLDERFolder     | msimsgdll   |
 
@@ -65,9 +65,9 @@ Para agregar las cadenas de recursos que usa Windows interfaces de usuario multi
     |---------------|-------------------|------------|
     | TARGETDIR     |                   | SourceDir  |
     | MsiTest       | TARGETDIR         | MsiTest:.  |
-    | FOLDERFolder     | MsiTest           | Mui        |
-    | FOLDERFolder \_ CS | FOLDERFolder         | cs-CZ      |
-    | FOLDERFolder \_ EN | FOLDERFolder         | en-US      |
+    | FOLDERFolder     | MsiTest           | MUI        |
+    | CS deFOLDERFolder \_ | FOLDERFolder         | cs-CZ      |
+    | FOLDERFolder \_ EN | FOLDERFolder         | es-ES      |
     | FOLDERFolder \_ JA | FOLDERFolder         | ja-JP      |
     | DesktopFolder | TARGETDIR         | .          |
 
@@ -90,7 +90,7 @@ Para agregar las cadenas de recursos que usa Windows interfaces de usuario multi
 
      
 
-5.  Agregue información a la tabla [tabla de](feature-table.md) características a la que pertenece el acceso directo propietario de la característica. Cuando se activa el acceso directo, el instalador comprueba que todos los componentes que pertenecen a esta característica están instalados antes de iniciar el archivo de clave del componente especificado en la columna Componente de la tabla \_ [Acceso](shortcut-table.md) directo. En el caso de este ejemplo, se puede agregar la siguiente información a la tabla Tabla de características de la característica Local \_ FeatureParent1.
+5.  Agregue información a la tabla [tabla de](feature-table.md) características a la que pertenece el acceso directo propietario de la característica. Cuando se activa el acceso directo, el instalador comprueba que todos los componentes que pertenecen a esta característica están instalados antes de iniciar el archivo de clave del componente especificado en la columna Componente de la tabla \_ [Acceso](shortcut-table.md) directo. En el caso de este ejemplo, se puede agregar la siguiente información a la tabla de características de la característica Local \_ FeatureParent1.
 
     [Tabla de características](feature-table.md) (parcial)
 

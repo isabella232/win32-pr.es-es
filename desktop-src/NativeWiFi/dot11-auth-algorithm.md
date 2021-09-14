@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - wlantypes.h
-ms.openlocfilehash: 774b2218a451f4cbaa85e6b77559c0d5761b0b132ebdf9d3f11c15ea6658e7bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b14886c62448194b79eab2e0302ce5608ad282d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117798475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071620"
 ---
 # <a name="dot11_auth_algorithm-enumeration"></a>Enumeración DOT11 \_ AUTH \_ ALGORITHM
 
 El **tipo enumerado DOT11 \_ AUTH \_ ALGORITHM** define un algoritmo de autenticación LAN inalámbrica.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -139,7 +139,7 @@ El **enumerador DOT11 \_ AUTH \_ ALGO \_ IHV \_ END** solo es válido cuando el 
 | Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                        |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                                                         |
-| Header<br/>                   | <dl> <dt>Wlantypes.h (incluye Windot11.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wlantypes.h (incluye Windot11.h)</dt> </dl> |
 
 
 

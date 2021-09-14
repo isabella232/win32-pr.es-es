@@ -4,12 +4,12 @@ description: El mejor método para autenticar un cliente es instalar una funció
 ms.assetid: 3e858a71-9190-44a3-bc63-08cfbd02d443
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb00a03740d99b137f97b085525e4c7232483dc15db487daf486ad51560b4427
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3508e99b351cd57fb67a3727710b60562ffe25dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118931242"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259868"
 ---
 # <a name="controlling-client-authentication"></a>Control de la autenticación de cliente
 

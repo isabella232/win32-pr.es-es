@@ -4,12 +4,12 @@ ms.assetid: 2fbed651-2fa0-441b-b174-6be6d49430bf
 title: System.Calendar.RequiredAttataeAddresses
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b54cdba67a86b18f5c8656870e78167ccf02b9f866ce229bfaf6cdfce6efcbe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e20df36eb8e7a473afb8cff9c0cbc7087b0b787e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119098532"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262759"
 ---
 # <a name="systemcalendarrequiredattendeeaddresses"></a>System.Calendar.RequiredAttataeAddresses
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

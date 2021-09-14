@@ -4,12 +4,12 @@ ms.assetid: c560441e-89c5-4f82-837b-988c3f404d37
 title: Componentes y características
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11cea0d384b3ad2bc3238178ae0f5811c3bad7b501068bcecd35d4c5b36d922a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7b21241c98fbb701bd6a3ef5869045ef8c46da1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118144561"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158828"
 ---
 # <a name="components-and-features"></a>Componentes y características
 

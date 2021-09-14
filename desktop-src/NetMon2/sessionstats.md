@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 231c94d2abda40974249f6c3cc82c8efc7518cb21d5881f44e63f647bcb21de2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4eddfa6b0a45627c59e61fd083eb11b8d5f26caf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120128835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260383"
 ---
 # <a name="sessionstats-structure"></a>Estructura SESSIONSTATS
 
@@ -39,7 +39,7 @@ typedef struct _SESSIONSTATS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -78,9 +78,9 @@ Número de paquetes enviados en la sesión.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Monitor de red almacena la información de la sesión y la estación en dos matrices asociadas, cuyos elementos son **estructuras SESSIONSTATS** y [STATIONSTATS](stationstats.md) respectivamente. Los miembros de estas estructuras se pueden usar para navegar entre ellas. Por ejemplo, para pasar a la siguiente sesión para un propietario de estación específico, use **NextSession**. Para saltar a la estación propietaria y asociada de la sesión en la matriz STATIONSTATS, use el índice proporcionado en **StationOwner** y **StationPartner**.
+Monitor de red almacena la información de la sesión y la estación en dos matrices asociadas, cuyos elementos son **estructuras SESSIONSTATS** y [STATIONSTATS,](stationstats.md) respectivamente. Los miembros de estas estructuras se pueden usar para navegar entre ellas. Por ejemplo, para pasar a la siguiente sesión para un propietario de estación específico, use **NextSession**. Para saltar a la estación propietaria y asociada de la sesión en la matriz STATIONSTATS, use el índice proporcionado en **StationOwner** y **StationPartner**.
 
 > [!Note]  
 > La matriz SESSIONSTATS contiene un elemento para cada sesión de la captura actual. El algoritmo Monitor de red para agregar elementos a la matriz SESSIONSTATS se basa en la grabación eficaz de información mientras la captura está en curso. Por lo tanto, la siguiente sesión para una estación de propietario específica no siempre es el siguiente elemento de la matriz.
@@ -99,7 +99,7 @@ Monitor de red almacena la información de la sesión y la estación en dos matr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

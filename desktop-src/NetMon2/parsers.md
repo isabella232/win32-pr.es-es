@@ -4,12 +4,12 @@ ms.assetid: 6c135a24-5718-429a-988b-a2abd6b563d1
 title: Analizador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5dfdf6f7c799782a75905d366c56157a99fd6f774f5682e302dcec4a9d6c788
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74aa86a17e87ab139ad48583285da943f23d330c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119555524"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074106"
 ---
 # <a name="parser"></a>Analizador
 

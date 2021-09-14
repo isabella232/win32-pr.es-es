@@ -4,16 +4,16 @@ description: Uniones encapsuladas y nocapsuladas y su formato con llamada a proc
 ms.assetid: de13151a-f4a4-4440-b287-454df4a1e3e1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e5948a0557ea968a385324244d569d3578ec5d6c0dec4af5261866ed3ba2dc8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9f35f0ff23132705330bf1f8566443ac8aa81d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119011023"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071388"
 ---
 # <a name="rpc-unions"></a>Uniones RPC
 
-Tanto las uniones encapsuladas como las nocapsuladas comparten un selector de arm de unión \_ \_ común<> formato:
+Tanto las uniones encapsuladas como las nocapsuladas comparten un selector de arm de \_ \_ unión común<> formato:
 
 ``` syntax
 union_arms<2>
@@ -23,15 +23,15 @@ armN_case_value<4> offset_to_arm_description<2>
 default_arm_description<2>
 ```
 
-Los<\_ de unión> dos partes. Si la unión es una unión de estilo MIDL 1.0, los 4 bits superiores contienen la alineación del arm de unión (alineación del mayor arm alineado). De lo contrario, los 4 bits superiores son cero. Los 12 bits inferiores contienen el número de manos en la unión. En otras palabras:
+Los dos \_<de> de unión constan de dos partes. Si la unión es una unión de estilo MIDL 1.0, los 4 bits superiores contienen la alineación del arm de unión (alineación del mayor arm alineado). De lo contrario, los 4 bits superiores son cero. Los 12 bits inferiores contienen el número de manos en la unión. En otras palabras:
 
 ``` syntax
 alignment<highest nibble> arm_counter<three lower nibbles>
 ```
 
-La descripción de desplazamiento a arm<2 campos> contienen un desplazamiento con firma relativa con respecto a la \_ descripción de tipo del \_ \_ arm. Sin embargo, el campo está sobrecargado con optimización para tipos simples. Para estos, el byte superior de este campo de desplazamiento es FC \_ MAGIC \_ UNION BYTE (0x80) y el byte inferior del short es el tipo de carácter de formato real \_ del arm. Por lo tanto, hay dos intervalos para los valores de desplazamiento: "80 *xx"* significa que *xx* es una cadena de formato de tipo; y todo lo demás dentro del intervalo (80 FF . 7f FF) significa un desplazamiento real. Esto hace que los desplazamientos <80 00 .. 80 FF > disponible como desplazamientos. El compilador lo comprueba a partir de la versión 5.1.164 de MIDL.
+La descripción de desplazamiento a arm<2 campos> contienen un desplazamiento con firma relativa con respecto a la \_ descripción de tipo del \_ \_ arm. Sin embargo, el campo está sobrecargado con optimización para tipos simples. Para estos, el byte superior de este campo de desplazamiento es FC \_ MAGIC \_ UNION BYTE (0x80) y el byte inferior del short es el tipo de carácter de formato real \_ del arm. Por lo tanto, hay dos intervalos para los valores de desplazamiento: "80 *xx"* significa que *xx* es una cadena de formato de tipo; y todo lo demás dentro del intervalo (80 FF . 7f FF) significa un desplazamiento real. Esto realiza desplazamientos del intervalo <80 00 .. 80 FF > disponible como desplazamientos. El compilador lo comprueba a partir de la versión 5.1.164 de MIDL.
 
-La descripción de arm predeterminada<campo 2> indica el tipo de arm de unión para el arm \_ \_ predeterminado, si lo hay. Si no se especifica ningún arm predeterminado para la unión, el campo predeterminado arm description<2> es 0xFFFF y se produce una excepción si el valor de switch es no coincide con ninguno de los valores de arm \_ \_ \_ case. Si se especifica el arm predeterminado pero está vacío, la descripción predeterminada del<2> \_ \_ campo es cero. De lo contrario, la descripción de arm<2> campo tiene la misma semántica que el desplazamiento para la descripción de arm \_ \_<\_ \_ \_ 2> campos.
+La descripción de arm predeterminada<campo 2> indica el tipo de arm de unión para el arm \_ \_ predeterminado, si lo hay. Si no se especifica ningún arm predeterminado para la unión, el campo predeterminado arm description<2> es 0xFFFF y se produce una excepción si el valor de switch es no coincide con ninguno de los valores de arm \_ \_ \_ case. Si se especifica el arm predeterminado pero está vacío, la descripción predeterminada del<2> \_ \_ campo es cero. De lo contrario, la descripción predeterminada del<2> campo tiene la misma semántica que el desplazamiento para la descripción de arm<\_ \_ \_ \_ \_ 2> campos.
 
 A continuación se muestra un resumen:
 
@@ -52,7 +52,7 @@ union_arm_selector<>
 
 El tipo de modificador de una unión \_ encapsulada<1> campo tiene dos partes. El nibble inferior proporciona el tipo de modificador real, y el nibble superior proporciona el incremento de memoria para ir paso a paso, que es una cantidad que el puntero de memoria debe incrementarse para omitir más allá del campo switch is, que incluye cualquier relleno entre el campo switch is() de la estructura construida con código auxiliar y el \_ \_ campo de unión real.
 
-El tamaño de memoria<2> campo es el tamaño de la unión solo y es idéntico a las uniones \_ nocapsuladas. Para obtener el tamaño total de la estructura que contiene la unión, agregue el tamaño de memoria<2> al incremento de memoria para ir paso a paso por instrucciones, es decir, al nibble superior del tipo de modificador<1 campo> y, a continuación, alinee por la alineación correspondiente \_ \_ al incremento.
+El tamaño de memoria<2> campo es el tamaño de la unión solo y es idéntico a las uniones \_ nocapsuladas. Para obtener el tamaño total de la estructura que contiene la unión, agregue el tamaño de memoria<2> al incremento de memoria para ir paso a paso por instrucciones, es decir, al nibble superior del tipo de conmutador<1 campo> y, a continuación, alinee por la alineación correspondiente \_ \_ al incremento.
 
 ## <a name="nonencapsulated-unions"></a>Uniones no superadas
 

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: e2f676360636395e0df811abed225c1a53be69a7da07f38a8acb08fc8d45e2ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f929028f96faaab6ddb03538e854db01196ae180
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119141018"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073776"
 ---
 # <a name="iscardverify-interface"></a>Interfaz ISCardVerify
 
@@ -29,7 +29,7 @@ La **clase ISCardVerify** se define para las aplicaciones que implementan la dir
 
 A continuación se muestra un uso típico de **la interfaz ISCardVerify.**
 
-En el procedimiento siguiente se **usa ISCardVerify** para cambiar el código CHV.
+En el procedimiento siguiente **se usa ISCardVerify** para cambiar el código CHV.
 
 **Para cambiar el código CHV de una tarjeta inteligente**
 
@@ -37,7 +37,7 @@ En el procedimiento siguiente se **usa ISCardVerify** para cambiar el código CH
 2.  Llame al [**método ChangeCode**](iscardverify-changecode.md) y proporcione código nuevo, especificando si es local o global y si está habilitado o deshabilitado.
 3.  Libere la **interfaz ISCardVerify.**
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ISCardVerify** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **ISCardVerify** también tiene estos tipos de miembros:
 
@@ -54,7 +54,7 @@ La **interfaz ISCardVerify** tiene estos métodos.
 | [**ChangeCode**](iscardverify-changecode.md)                 | Cambia el código CHV actual.<br/>                                                                                                    |
 | [**ResetSecurityState**](iscardverify-resetsecuritystate.md) | Restablece el contexto [*de seguridad*](../secgloss/s-gly.md) de la tarjeta inteligente.<br/> |
 | [**Desbloquear**](/previous-versions/windows/desktop/legacy/aa377269(v=vs.85))                       | Vuelve a habilitar el [*contexto de seguridad*](../secgloss/s-gly.md).<br/>               |
-| [**Verificación**](iscardverify-verify.md)                         | Autentica al usuario.<br/>                                                                                                          |
+| [**Verify**](iscardverify-verify.md)                         | Autentica al usuario.<br/>                                                                                                          |
 
 
 

@@ -1,25 +1,25 @@
 ---
-description: Especifica los marcadores en un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto Marker en el encabezado ASF, definido en la especificación asf.
+description: Especifica los marcadores en un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto marker en el encabezado ASF, definido en la especificación de ASF.
 ms.assetid: 6458eb5f-72a2-4723-b26b-b63516aa2df3
 title: MF_PD_ASF_MARKER atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89210324b8cde1952fdee137723024f2f6911d6b295b213a4959cc113e01b8ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2ae9c5a6cfd79924b95a3b15a7146539d630aad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117691937"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127263295"
 ---
-# <a name="mf_pd_asf_marker-attribute"></a>Atributo \_ MF PD \_ ASF \_ MARKER
+# <a name="mf_pd_asf_marker-attribute"></a>Atributo MF \_ PD \_ ASF \_ MARKER
 
-Especifica los marcadores en un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto Marker en el encabezado ASF, definido en la especificación asf.
+Especifica los marcadores en un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto marker en el encabezado ASF, definido en la especificación de ASF.
 
 ## <a name="data-type"></a>Tipo de datos
 
 Byte array
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
@@ -27,10 +27,10 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 
 
 
-| Campo Objeto de marcador | Tipo de datos    | Size    | Descripción       |
+| Campo Objeto marcador | Tipo de datos    | Size    | Descripción       |
 |---------------------|--------------|---------|-------------------|
 | Recuento de marcadores       | **DWORD**    | 4 bytes | Número de marcadores |
-| Marcadores             | **Byte**\[\] | Varía  | Matriz de marcadores  |
+| Marcadores             | **BYTE**\[\] | Varía  | Matriz de marcadores  |
 
 
 
@@ -40,12 +40,12 @@ El primer **DWORD** es el número de marcadores, seguido de una matriz de marcad
 
 
 
-| Campo Objeto de marcador       | Tipo de datos     | Size    | Descripción                                                                       |
+| Campo Objeto marcador       | Tipo de datos     | Size    | Descripción                                                                       |
 |---------------------------|---------------|---------|-----------------------------------------------------------------------------------|
 | Longitud de descripción del marcador | **DWORD**     | 4 bytes | Tamaño de la cadena de descripción, en bytes, incluido el carácter NULL.           |
-| Descripción del marcador        | **Wchar**\[\] | Varía  | Cadena terminada en NULL que describe el marcador.                                 |
+| Descripción del marcador        | **WCHAR**\[\] | Varía  | Cadena terminada en NULL que describe el marcador.                                 |
 | Tiempo de presentación         | **LONGLONG**  | 8 bytes | Tiempo de presentación del marcador, en unidades de 100 nanosegundos.                         |
-| Hora de envío                 | **LONGLONG**  | 8 bytes | Hora de envío de la entrada del marcador, en milisegundos.                                   |
+| Tiempo de envío                 | **LONGLONG**  | 8 bytes | Hora de envío de la entrada del marcador, en milisegundos.                                   |
 | Offset                    | **UINT64**    | 8 bytes | Desplazamiento, en bytes, en el objeto de datos que especifica la posición del mercado. |
 
 
@@ -60,11 +60,11 @@ El primer **DWORD** es el número de marcadores, seguido de una matriz de marcad
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

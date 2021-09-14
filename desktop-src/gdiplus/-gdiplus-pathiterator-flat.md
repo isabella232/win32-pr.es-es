@@ -4,12 +4,12 @@ ms.assetid: 07408bce-88c7-43ef-b437-7b2ce37fca91
 title: Funciones pathIterator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9307e2a71cd6b66d0f0f8425916484b4ccfb6c19c1c2e9b81062a6f6b9f7f792
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69a7fb23096a03837d68030d3f78d4c25c773390
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119036483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072413"
 ---
 # <a name="pathiterator-functions"></a>Funciones pathIterator
 
@@ -21,7 +21,7 @@ La clase de C++ [**GraphicsPathIterator**](/windows/desktop/api/gdipluspath/nl-g
 
 
 
-| Función plana                                                                                                                                                    | Método contenedor                                                                                                                                                                                                     | Comentarios                                                                                                                                                                         |
+| Función plana                                                                                                                                                    | Método contenedor                                                                                                                                                                                                     | Observaciones                                                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | GpStatus WINGDIPAPI GdipCreatePathIter(GpPathIterator \* \* iterator, GpPath \* path)<br/>                                                                    | [**GraphicsPathIterator::GraphicsPathIterator(IN const GraphicsPath \* path)**](/windows/win32/api/gdipluspath/nf-gdipluspath-graphicspathiterator-graphicspathiterator(constgraphicspathiterator_))<br/>                                                      | Crea un nuevo [**objeto GraphicsPathIterator**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspathiterator) y lo asocia a un objeto GraphicsPath.                                    |
 | GpStatus WINGDIPAPI GdipDeletePathIter(GpPathIterator \* iterator)<br/>                                                                                     | GraphicsPathIterator::~GraphicsPathIterator() <br/>                                                                                                                                                          | Libera los recursos utilizados por el [**objeto GraphicsPathIterator.**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspathiterator)                                                                |
@@ -36,7 +36,7 @@ La clase de C++ [**GraphicsPathIterator**](/windows/desktop/api/gdipluspath/nl-g
 | GpStatus WINGDIPAPI GdipPathIterHasCurve(GpPathIterator \* iterator, BOOL \* hasCurve)<br/>                                                                  | [**BOOL GraphicsPathIterator::HasCurve() const**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-graphicspathiterator-hascurve)<br/>                                                                                                    | Determina si la ruta de acceso tiene curvas.                                                                                                                                     |
 | GpStatus WINGDIPAPI GdipPathIterRewind(GpPathIterator \* iterator)<br/>                                                                                     | [**VOID GraphicsPathIterator::Rewind()**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-graphicspathiterator-rewind)<br/>                                                                                                              | Rebobina este iterador al principio de su ruta de acceso asociada.                                                                                                                  |
 | GpStatus WINGDIPAPI GdipPathIterEnumerate(GpPathIterator \* iterator, INT \* resultCount, GpPointF \* points, BYTE \* types, INT count)<br/>                   | [**INT GraphicsPathIterator::Enumerate(OUT PointF \* points, OUT BYTE \* types, IN INT count)**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-graphicspathiterator-enumerate)<br/>                                   | Copia los puntos de datos de la ruta de acceso a una [**matriz PointF**](/windows/desktop/api/gdiplustypes/nl-gdiplustypes-pointf) y copia los tipos de punto de la ruta de acceso en una **matriz BYTE.**                                   |
-| GpStatus WINGDIPAPI GdipPathIterCopyData(GpPathIterator \* iterator, INT \* resultCount, GpPointF \* points, BYTE \* types, INT startIndex, INT endIndex)<br/> | [**INT GraphicsPathIterator::CopyData(OUT PointF \* points, OUT BYTE \* types, IN INT startIndex, IN INT endIndex)**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-graphicspathiterator-copydata)<br/> | Copia un subconjunto de los puntos de datos de la ruta de acceso a una matriz PointF y copia un subconjunto de los tipos de punto de la ruta de acceso en una **matriz BYTE.**                                                  |
+| GpStatus WINGDIPAPI GdipPathIterCopyData(GpPathIterator \* iterator, INT \* resultCount, GpPointF \* points, BYTE \* types, INT startIndex, INT endIndex)<br/> | [**INT GraphicsPathIterator::CopyData(OUT PointF \* points, OUT BYTE \* types, IN INT startIndex, IN INT endIndex)**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-graphicspathiterator-copydata)<br/> | Copia un subconjunto de los puntos de datos de la ruta de acceso a una matriz PointF y copia un subconjunto de los tipos de punto de la ruta de acceso a una **matriz BYTE.**                                                  |
 
 
 

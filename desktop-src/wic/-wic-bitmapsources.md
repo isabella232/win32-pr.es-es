@@ -1,19 +1,19 @@
 ---
-description: En este tema se presentan los orígenes de mapa de bits, un componente Windows imaging component (WIC) principal que representa los píxeles de mapa de bits de una imagen.
+description: En este tema se presentan los orígenes de mapa de bits, un Windows componente de creación de imágenes (WIC) que representa los píxeles de mapa de bits de una imagen.
 ms.assetid: cff0c088-ca22-4d55-9cf0-9cbe9803923e
 title: Información general sobre orígenes de mapa de bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9a72558458787c69af8440eb08d956e0670835954886144a5d19f06c13b5fb6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 910bfc253798058639b98a1d1beaacec9bd4d1bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117668661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262276"
 ---
 # <a name="bitmap-sources-overview"></a>Información general sobre orígenes de mapa de bits
 
-En este tema se presentan los orígenes de mapa de bits, un componente Windows imaging component (WIC) principal que representa los píxeles de mapa de bits de una imagen.
+En este tema se presentan los orígenes de mapa de bits, un Windows componente de creación de imágenes (WIC) que representa los píxeles de mapa de bits de una imagen.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -61,7 +61,7 @@ Para obtener un ejemplo [**con objetos IWICBitmap**](/windows/desktop/api/Wincod
 
 ## <a name="transform-bitmap-sources"></a>Transformar orígenes de mapa de bits
 
-WIC proporciona varias [**interfaces IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) que transforman los datos de píxeles. En concreto, WIC proporciona transformaciones de origen de mapa de bits para escalar, recortar, girar y voltear datos de píxeles. Estas transformaciones de origen de mapa de bits son [**IWICBitmapClipper,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper) [**IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler)e [**IWICBitmapFlipRotator.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) Cada uno de estos orígenes de mapa de bits tiene un método para inicializar y crear un nuevo origen de mapa de bits transformado. Por ejemplo, **IWICBitmapClipper incluye** el [**método Initialize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapclipper-initialize) Este método inicializa el origen de mapa de bits del clipper con los datos de píxel recortados del origen de mapa de bits de entrada en el [**WICRect especificado.**](/windows/desktop/api/Wincodec/ns-wincodec-wicrect)
+WIC proporciona varias [**interfaces IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) que transforman los datos de píxeles. En concreto, WIC proporciona transformaciones de origen de mapa de bits para escalar, recortar, girar y voltear datos de píxeles. Estas transformaciones de origen de mapa de bits son [**IWICBitmapClipper,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper) [**IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler)e [**IWICBitmapFlipRotator.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) Cada uno de estos orígenes de mapa de bits tiene un método para inicializar y crear un nuevo origen de mapa de bits transformado. Por ejemplo, **IWICBitmapClipper** incluye el [**método Initialize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapclipper-initialize) Este método inicializa el origen de mapa de bits del clipper con los datos de píxel recortados del origen de mapa de bits de entrada en el [**WICRect especificado.**](/windows/desktop/api/Wincodec/ns-wincodec-wicrect)
 
 En los siguientes temas de procedimientos se muestran los distintos usos de los orígenes de mapa de bits de transformación.
 
@@ -71,7 +71,7 @@ En los siguientes temas de procedimientos se muestran los distintos usos de los 
 
 ## <a name="pixel-format-and-color-context-converters"></a>Convertidores de formato de píxel y contexto de color
 
-WIC también proporciona orígenes de mapa de bits que convierten el formato de píxel y el contexto de color de un origen de mapa de bits. WIC proporciona [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) e [**IWICColorTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolortransform) para estas operaciones.
+WIC también proporciona orígenes de mapa de bits que convierten el formato de píxel y el contexto de color de un origen de mapa de bits. WIC proporciona [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) [**e IWICColorTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolortransform) para estas operaciones.
 
 [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) convierte un origen de mapa de bits determinado de un formato de píxel a otro.
 
@@ -79,7 +79,7 @@ Para obtener un ejemplo con [**IWICFormatConverter,**](/windows/desktop/api/Winc
 
 ## <a name="drawing-bitmap-sources"></a>Dibujar orígenes de mapa de bits
 
-WIC es una tecnología de códec de imágenes fijas que se usa para administrar metadatos y datos de imágenes y no proporciona de forma inherente una manera de representar imágenes. Sin embargo, los orígenes de mapa de bits se pueden dibujar mediante varias tecnologías Windows gráficos como Direct2D, Windows Interfaz de dispositivo gráfico (GDI) y Windows GDI+. Cada una de estas tecnologías tiene un nivel diferente de interoperabilidad con WIC. Direct2D proporciona interoperabilidad directa a través de la interfaz [ID2D1Bitmap](../direct2d/render-targets-overview.md) y el método [ID2D1RenderTarget::CreateBitmapFromWicBitmap,](../direct2d/id2d1rendertarget-createbitmapfromwicbitmap.md) mientras que GDI y GDI+ requieren que los usuarios copien los píxeles de origen del mapa de bits en un mapa [de bits](../gdi/bitmaps.md).
+WIC es una tecnología de códec de imágenes fijas que se usa para administrar los metadatos y los datos de la imagen y no proporciona de forma inherente una manera de representar imágenes. Sin embargo, los orígenes de mapa de bits se pueden dibujar mediante varias tecnologías Windows gráficos como Direct2D, Windows Interfaz de dispositivo gráfico (GDI) y Windows GDI+. Cada una de estas tecnologías tiene un nivel diferente de interoperabilidad con WIC. Direct2D proporciona interoperabilidad directa a través de la interfaz [ID2D1Bitmap](../direct2d/render-targets-overview.md) y el método [ID2D1RenderTarget::CreateBitmapFromWicBitmap,](../direct2d/id2d1rendertarget-createbitmapfromwicbitmap.md) mientras que GDI y GDI+ requieren que los usuarios copien los píxeles de origen del mapa de bits en un mapa [de bits](../gdi/bitmaps.md).
 
 En el ejemplo siguiente se muestra cómo dibujar orígenes de mapa de bits mediante Direct2D.
 

@@ -1,19 +1,19 @@
 ---
-description: ICE23 valida el orden de tabulación de control para cada cuadro de diálogo.
+description: ICE23 valida el orden de tabulación de cada cuadro de diálogo.
 ms.assetid: d425f8c6-4615-439d-8194-3a0325eb3cc3
 title: ICE23
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbab2d50c07fce208edc845e64cff0061f513c102a55da2d56b49c4a4c17e867
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c1823a70e50d7dd3c42c2e90d6a2d0f11f2fa5b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119529005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074644"
 ---
 # <a name="ice23"></a>ICE23
 
-ICE23 valida el orden de tabulación de control para cada cuadro de diálogo.
+ICE23 valida el orden de tabulación de cada cuadro de diálogo.
 
 ICE23 valida lo siguiente en las tablas [Dialog y](dialog-table.md) [Control](control-table.md):
 
@@ -88,7 +88,7 @@ No todas las filas de la tabla Dialog tienen un control especificado en la colum
 
 Seguir las entradas De control siguiente de la tabla Control desde el control al control no \_ realiza un bucle cerrado en todos los casos. Cambie la columna Control \_ Siguiente de ControlB en Dialog3 a ControlA.
 
-Seguir las entradas De control siguiente de la tabla Control desde el control al control no lleva de nuevo al \_ control inicial en todos los casos. Cambie la columna Control \_ Siguiente para ControlC en el cuadro de diálogo 4 para hacer referencia a ControlA.
+Seguir las entradas De control siguiente de la tabla Control del control al control no lleva de nuevo al \_ control inicial en todos los casos. Cambie la columna Control \_ Siguiente para ControlC en el cuadro de diálogo 4 para hacer referencia a ControlA.
 
 Si sigue las entradas Control Siguiente de la tabla Control desde el control al control , no pasará a través de todos los controles del cuadro de diálogo que tengan una entrada en \_ la columna Control \_ Siguiente. Cambie la columna Control \_ Siguiente de ControlC en dialog5 a ControlD.
 

@@ -4,12 +4,12 @@ ms.assetid: 576070e9-8f7a-4df7-ba3a-0872aa96a0ab
 title: System.Audio.PeakValue
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d28242ac01db0e96b5b1e9eb69948450534beff55d2354f613eb402a0c2a38a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 905236f61a86a41fb6034274e21b1d828c2b9989
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118970784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262855"
 ---
 # <a name="systemaudiopeakvalue"></a>System.Audio.PeakValue
 
@@ -29,7 +29,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

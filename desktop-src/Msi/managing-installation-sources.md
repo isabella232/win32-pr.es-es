@@ -1,19 +1,19 @@
 ---
-description: Los usuarios y las aplicaciones con privilegios administrativos pueden recuperar y modificar la información de red, dirección URL y lista de orígenes multimedia para Windows Installer y revisiones en el sistema.
+description: Los usuarios y las aplicaciones con privilegios administrativos pueden recuperar y modificar la información de la red, la dirección URL y la lista de orígenes multimedia para Windows Installer en el sistema.
 ms.assetid: e8c66bad-f594-4926-b3b4-c8b245dcfa83
 title: Administración de orígenes de instalación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e7555bc9595ba10d9ce569c15c2a8138a05348e503d86a025f0cfe1783843fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7fc45253af20ae5f9792ee3a5ec7dd318c80295
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071918"
 ---
 # <a name="managing-installation-sources"></a>Administración de orígenes de instalación
 
-Los usuarios y las aplicaciones con privilegios administrativos pueden recuperar y modificar la información de red, dirección URL y lista de orígenes multimedia para Windows Installer y revisiones en el sistema.
+Los usuarios y las aplicaciones con privilegios administrativos pueden recuperar y modificar la información de la red, la dirección URL y la lista de orígenes multimedia para Windows Installer en el sistema.
 
 **Windows Installer 2.0:** No se admite. Los administradores no pueden leer, reordenar ni reemplazar las entradas de la lista de origen y no pueden modificar ni recuperar las propiedades de la lista de origen. Es posible administrar orígenes de red, pero no orígenes de direcciones URL ni multimedia. Los administradores solo pueden administrar listas de origen para aplicaciones por máquina o aplicaciones instaladas por usuario para el usuario actual. Esto impide que los administradores que usan versiones anteriores a Windows Installer versión 3.0 puedan administrar la información de la lista de origen para todos los usuarios del sistema.
 
@@ -70,7 +70,7 @@ Use las [**funciones MsiSourceListGetInfo**](/windows/desktop/api/Msi/nf-msi-msi
 Se puede acceder a las propiedades de la lista de origen, como [**MEDIAPACKAGEPATH,**](mediapackagepath.md) [**DiskPrompt,**](diskprompt.md) **LastUsedSource,** **LastUsedType** y **PackageName.**
 
 > [!Note]  
-> La **propiedad de lista de origen LastUsedType** solo se puede leer. No se puede establecer directamente mediante [**la función MsiSourceListSetInfo.**](/windows/desktop/api/Msi/nf-msi-msisourcelistsetinfoa)
+> La **propiedad de lista de origen LastUsedType** solo se puede leer. No se puede establecer directamente mediante la [**función MsiSourceListSetInfo.**](/windows/desktop/api/Msi/nf-msi-msisourcelistsetinfoa)
 
  
 

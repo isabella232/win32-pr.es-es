@@ -4,12 +4,12 @@ ms.assetid: eaca30cb-fec1-49ca-8b23-5e54c583e3e2
 title: Tabla de directorios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f19e9b5994062ac55564799854fc36016fc6ddb9887bc36aa9a94652ef31aeb1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 273445aef67e3f166255321d0ac0ccf1aee37515
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118947349"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158574"
 ---
 # <a name="directory-table"></a>Tabla de directorios
 
@@ -64,7 +64,7 @@ Los nombres de directorio de esta columna pueden tener el formato de pares de no
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada registro de la tabla representa un directorio en las imágenes de origen y de destino. La tabla Directory debe especificar un único directorio raíz con un valor de columna Directory igual a la [**propiedad TARGETDIR.**](targetdir.md)
 

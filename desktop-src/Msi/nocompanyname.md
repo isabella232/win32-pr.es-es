@@ -4,12 +4,12 @@ ms.assetid: 257d5082-6a40-4f32-abcb-23269c49091c
 title: Propiedad NOCOMPANYNAME
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a4aa0f4358bcdd96d1cb2e1b56d6cc01616f2884e390a82ca6b19ee9d25f5d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e94df001ee63d8dbc22c071b9a200a2811e33600
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119558795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261007"
 ---
 # <a name="nocompanyname-property"></a>Propiedad NOCOMPANYNAME
 
@@ -23,9 +23,9 @@ Sin establecer. El instalador establece automáticamente [**la propiedad COMPANY
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

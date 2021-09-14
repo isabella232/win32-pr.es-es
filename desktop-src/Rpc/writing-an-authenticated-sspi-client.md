@@ -6,12 +6,12 @@ keywords:
 - Procedimiento remoto Llamar a RPC, tareas, escribir un cliente SSPI autenticado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7445d5340b03f07805a9e2ab89deb8c915a76160db67b504259ae8de0bbabee5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c8476772a2ed652f6646b078c2876234cbcc0d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010363"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073824"
 ---
 # <a name="writing-an-authenticated-sspi-client"></a>Escritura de un cliente SSPI autenticado
 
@@ -65,7 +65,7 @@ El nivel de autenticación permanece en vigor hasta que el cliente elige otro ni
 
 Los servidores usan la información de enlace del cliente para aplicar la seguridad. Los clientes siempre pasan un identificador de enlace como primer parámetro de una llamada a procedimiento remoto. Sin embargo, los servidores no pueden usar el identificador a menos que se declare como el primer parámetro para los procedimientos remotos en el archivo IDL o en el archivo de configuración de la aplicación (ACF) del servidor. Puede elegir enumerar el identificador de enlace en el archivo IDL, pero esto obliga a todos los clientes a declarar y manipular el identificador de enlace en lugar de usar el enlace automático o implícito. Para obtener más información, [vea The IDL and ACF Files](the-idl-and-acf-files.md).
 
-Otro método consiste en dejar los identificadores de enlace **\_** fuera del archivo IDL y colocar el atributo de identificador explícito en el ACF del servidor. De esta manera, el cliente puede usar el tipo de enlace más adecuado para la aplicación, mientras que el servidor usa el identificador de enlace como si se declarara explícitamente.
+Otro método consiste en dejar los identificadores de enlace **\_** fuera del archivo IDL y colocar el atributo de identificador explícito en el ACF del servidor. De este modo, el cliente puede usar el tipo de enlace más adecuado para la aplicación, mientras que el servidor usa el identificador de enlace como si se declarara explícitamente.
 
 El proceso de extracción de las credenciales de cliente del identificador de enlace se produce de la manera siguiente:
 

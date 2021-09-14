@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 0132ab8b4b3b2f646639c1618a9f2ca7e67fad1ce2c2fcec38590c7608802091
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9282c0a922a1f8c8daff07c31dcafa7e47e923a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071253"
 ---
 # <a name="iscardauthgetchallenge-method"></a>Método ISCardAuth::GetChallenge
 
@@ -43,7 +43,7 @@ HRESULT GetChallenge(
 
 <dl> <dt>
 
-*lAlgoID* \[ in, opcional\]
+*lAlgoID* \[ en, opcional\]
 </dt> <dd>
 
 Algoritmo que se va a usar en el proceso de autenticación.
@@ -60,7 +60,7 @@ Longitud máxima de la respuesta esperada.
 *pParam* \[ En\]
 </dt> <dd>
 
-Objeto [**IByteBuffer**](ibytebuffer.md) que contiene parámetros específicos del proveedor del proceso de autenticación.
+Objeto [**IByteBuffer que**](ibytebuffer.md) contiene parámetros específicos del proveedor del proceso de autenticación.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una lista de todos los métodos proporcionados por esta interfaz, vea [**ISCardAuth**](iscardauth.md).
 
@@ -102,14 +102,14 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

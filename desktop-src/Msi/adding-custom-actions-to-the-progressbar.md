@@ -4,12 +4,12 @@ ms.assetid: 101e6b59-3791-450c-9dc6-8930bd665a93
 title: Agregar acciones personalizadas a la barra de progreso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d83dfeb806eb0ed6f1e251dd48b97911d8e0f583c8b65cb48ef0d04df059ebb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2ff2b6da9e72a37329b26cfce7590bab5f9792db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119811065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159210"
 ---
 # <a name="adding-custom-actions-to-the-progressbar"></a>Agregar acciones personalizadas a la barra de progreso
 
@@ -30,7 +30,7 @@ Tenga en cuenta que se deben agregar dos acciones personalizadas al paquete Wind
 4.  Separe la acción personalizada en dos secciones de código: una sección que se ejecuta durante la fase de generación de scripts y una sección que se ejecuta durante la fase de ejecución de la instalación. Puede hacerlo mediante dos archivos o puede usar un archivo mediante el a acondicionador en el modo de ejecución del instalador. En el ejemplo siguiente se usa un archivo y se comprueba el estado de instalación. Las secciones del ejemplo están condiciones para ejecutarse en función de si el instalador está en la fase de ejecución o generación de scripts de la instalación.
 5.  La sección que se ejecuta durante la generación de scripts debe aumentar la estimación de la longitud total final de [ProgressBar](progressbar-control.md) en el número total de pasos de la acción personalizada. Para ello, se envía un **mensaje de progreso ProgressAddition.**
 6.  La sección que se ejecuta durante la fase de ejecución de la instalación debe configurar plantillas y texto de mensaje para informar al usuario sobre lo que está haciendo la acción personalizada y dirigir al instalador sobre la actualización del control [ProgressBar.](progressbar-control.md) Por ejemplo, informe al instalador para que mueva la barra de progreso hacia delante un incremento y envíe un mensaje de progreso explícito con cada actualización. Normalmente hay un bucle en esta sección si la acción personalizada está instalando algo. Con cada paso de este bucle, el instalador puede instalar un elemento de referencia, como una clave del Registro, y actualizar el control ProgressBar.
-7.  Agregue una acción personalizada de ejecución inmediata al paquete Windows Installer. Esta acción personalizada informa a [ProgressBar](progressbar-control.md) de cuánto avanzar durante las fases de adquisición y generación de scripts de la instalación. En el ejemplo siguiente, el origen es el archivo DLL creado mediante la compilación del código de ejemplo y el destino es el punto de entrada, CAProgress.
+7.  Agregue una acción personalizada de ejecución inmediata al paquete Windows Installer. Esta acción personalizada informa a [ProgressBar](progressbar-control.md) cuánto avanzar durante las fases de adquisición y generación de scripts de la instalación. En el ejemplo siguiente, el origen es el archivo DLL creado mediante la compilación del código de ejemplo y el destino es el punto de entrada, CAProgress.
 8.  Agregue una acción personalizada de ejecución diferida al paquete Windows Installer. Esta acción personalizada completa los pasos de la instalación real e informa a [ProgressBar](progressbar-control.md) cuánto se debe avanzar en la barra en el momento en que el instalador ejecuta el script de instalación. En el ejemplo siguiente, el origen es el archivo DLL creado mediante la compilación del código de ejemplo y el destino es el punto de entrada, CAProgress.
 9.  Programe ambas acciones personalizadas [entre InstallInitialize](installinitialize-action.md) [e InstallFinalize en](installfinalize-action.md) la tabla [InstallExecuteSequence.](installexecutesequence-table.md) La acción personalizada diferida debe programarse inmediatamente después de la acción personalizada de ejecución inmediata. El instalador no ejecutará la acción personalizada diferida hasta que se ejecute el script.
 

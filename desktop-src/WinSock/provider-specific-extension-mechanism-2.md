@@ -4,12 +4,12 @@ ms.assetid: 8b0d86ad-2f8b-4f5e-a8a6-839cb8dba4d8
 title: Provider-Specific de extensión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed627aefdfefda2bf4b395098f6680086fd37dd7a302d977d9bf238f77d89d3d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e58a8bba3c83e7dbf973ff8fe5b7d91c1065cfc6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119733575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073110"
 ---
 # <a name="provider-specific-extension-mechanism"></a>Provider-Specific de extensión
 

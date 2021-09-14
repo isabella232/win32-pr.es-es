@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: b1227c94edbf5816a8f1e867436462a743e6961e3ca70bb7b8a521c289312f18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2607ea2e13be2dcccc3c1b6beebd40c86822d0a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071274"
 ---
 # <a name="iscardattachbyreader-method"></a>Método ISCard::AttachByReader
 
@@ -59,8 +59,8 @@ Modo en el que se va a reclamar el acceso a la tarjeta inteligente.
 
 | Value                                                                                                                                            | Significado                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="EXCLUSIVE"></span><span id="exclusive"></span><dl> <dt>**Exclusivo**</dt> </dl> | Nadie más usa esta conexión a la tarjeta inteligente.<br/> |
-| <span id="SHARED"></span><span id="shared"></span><dl> <dt>**Compartido**</dt> </dl>          | Otras aplicaciones pueden usar esta conexión.<br/>        |
+| <span id="EXCLUSIVE"></span><span id="exclusive"></span><dl> <dt>**EXCLUSIVO**</dt> </dl> | Nadie más usa esta conexión a la tarjeta inteligente.<br/> |
+| <span id="SHARED"></span><span id="shared"></span><dl> <dt>**COMPARTIDO**</dt> </dl>          | Otras aplicaciones pueden usar esta conexión.<br/>        |
 
 
 
@@ -81,7 +81,7 @@ Valor de protocolo preferido.
 **T1**
 </dt><span id="RAW"></span><span id="raw"></span><dt>
 
-**Crudo**
+**RAW**
 </dt><span id="T0_T1"></span><span id="t0_t1"></span><dt>
 
 **T0 \| T1**
@@ -102,7 +102,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de [*error*](../secgloss/s-gly.md) de tarjeta inteligente si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [Valores devueltos de tarjeta inteligente.](authentication-return-values.md)
 
@@ -163,21 +163,21 @@ void main()
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCard se define como \_ 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**AttachByHandle**](iscard-attachbyhandle.md)
 </dt> <dt>
 
-[**Desasociar**](iscard-detach.md)
+[**Separar**](iscard-detach.md)
 </dt> <dt>
 
 [**ISCard**](iscard.md)

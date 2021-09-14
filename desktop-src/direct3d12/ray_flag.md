@@ -12,18 +12,18 @@ api_name:
 - RAY_FLAG
 api_type:
 - NA
-ms.openlocfilehash: 894847b5d7dd89e42fd06ca58abad6cc3b85b9f5c6131e8b77ca3837c17d86d4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 31d6a002e5f3f4eeb5f86e671be0904d61cb916d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119952865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072910"
 ---
 # <a name="ray_flag-enumeration"></a>Enumeración \_ RAY FLAG
 
 Marcas que se pasan a la [**función TraceRay**](traceray-function.md) para invalidar la transparencia, la selección y el comportamiento de salida anticipada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```

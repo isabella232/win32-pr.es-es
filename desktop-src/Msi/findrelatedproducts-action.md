@@ -4,12 +4,12 @@ ms.assetid: 7efcb767-9bdf-43a4-83b8-61b6fc84adf6
 title: Acción FindRelatedProducts
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8201a2e86f9dec09931b17cd4dd594c45e4bf78de32ba438b8824a6f540563fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a87973631e51315df17a156bc8c57aa9facd84f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118142884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074776"
 ---
 # <a name="findrelatedproducts-action"></a>Acción FindRelatedProducts
 
@@ -27,7 +27,7 @@ Esta acción consulta la tabla siguiente:
 
 La acción FindRelatedProducts usa la propiedad [**UpgradeCode**](upgradecode.md) y la información de versión e idioma que se ha creado en la tabla Upgrade para detectar los productos instalados afectados por la actualización pendiente. Anexa el código de producto de los productos detectados a la propiedad de la columna ActionProperty de UpgradeTable.
 
-FindRelatedProducts solo reconoce los productos existentes que se han instalado mediante el instalador de Windows con un .msi que define una propiedad [**UpgradeCode,**](upgradecode.md) una [**propiedad ProductVersion**](productversion.md) y un valor para la propiedad [**ProductLanguage**](productlanguage.md) que es uno de los idiomas enumerados en la propiedad [**Resumen**](template-summary.md) de plantilla.
+FindRelatedProducts solo reconoce los productos existentes que se han instalado mediante el instalador de Windows con un .msi que define una propiedad [**UpgradeCode,**](upgradecode.md) una propiedad [**ProductVersion**](productversion.md) y un valor para la propiedad [**ProductLanguage**](productlanguage.md) que es uno de los idiomas enumerados en la propiedad [**Resumen**](template-summary.md) de plantilla.
 
 Tenga en cuenta que FindRelatedProducts usa el lenguaje devuelto [**por MsiGetProductInfo.**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa) Para que FindRelatedProducts funcione correctamente, el autor del paquete debe asegurarse de que la propiedad [**ProductLanguage**](productlanguage.md) de la tabla [Property](property-table.md) está establecida en un idioma que también aparece en la propiedad [**Resumen**](template-summary.md) de plantilla. Consulte [Preparar una aplicación para futuras actualizaciones principales.](preparing-an-application-for-future-major-upgrades.md)
 

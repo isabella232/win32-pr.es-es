@@ -1,6 +1,6 @@
 ---
 title: RAS_PPP_IPCP_RESULT estructura (Rassapi.h)
-description: La estructura RAS PPP IPCP RESULT se usa para notificar el resultado de una operación de proyección del Protocolo \_ \_ de Internet PPP \_ (IP) para un puerto.
+description: La estructura RAS PPP IPCP RESULT se usa para notificar el resultado de una operación de proyección del Protocolo \_ \_ de Internet \_ (IP) de PPP para un puerto.
 ms.assetid: edbdc8f2-ba56-4d34-8908-f7eccc2ebf61
 keywords:
 - RAS_PPP_IPCP_RESULT ras de estructura
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa0425289b7ffd686f0d908f9789a2c24606978f37e05dfada5b937b8ce05b21
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eedcd7c7390e01849371eee2cbb24ffa2593900d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117789619"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073863"
 ---
-# <a name="ras_ppp_ipcp_result-structure"></a>Estructura DE \_ \_ RESULTADOS de IPCP de RAS PPP \_
+# <a name="ras_ppp_ipcp_result-structure"></a>Estructura DE \_ \_ RESULTADOS DE IPCP de RAS PPP \_
 
-\[La **estructura RAS PPP \_ \_ IPCP \_ RESULT** no se admite a Windows Vista.\]
+\[La **estructura RAS PPP \_ \_ IPCP \_ RESULT** no se admite desde Windows Vista.\]
 
-La **estructura RAS PPP \_ \_ IPCP \_ RESULT** se usa para notificar el resultado de una operación de proyección del Protocolo de Internet PPP (IP) para un puerto.
+La **estructura RAS PPP \_ \_ IPCP \_ RESULT** se usa para notificar el resultado de una operación de proyección del Protocolo de Internet (IP) de PPP para un puerto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ typedef struct _RAS_PPP_IPCP_RESULT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -67,11 +67,11 @@ Cadena Unicode terminada en NULL que especifica la dirección IP asignada al cli
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

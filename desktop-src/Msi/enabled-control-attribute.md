@@ -4,12 +4,12 @@ ms.assetid: d84b1b55-34e1-4173-b945-39a809014d55
 title: Atributo de control habilitado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a40de14ac0205c52cce46c6050de0282e62df90d50f3bcdeb576771c9107ffc5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eb7c5cbbbc12353fc07cf50404a1feae1d98f1b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119763925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158494"
 ---
 # <a name="enabled-control-attribute"></a>Atributo de control habilitado
 
@@ -23,7 +23,7 @@ Si no se establece este bit, el control se crea como deshabilitado.
 
 Todos los controles. La apariencia de algunos controles que no están asociados a una propiedad, como mapas de bits e iconos, no se ven afectados al establecer este atributo.
 
-## <a name="value"></a>Valor
+## <a name="value"></a>Value
 
 
 
@@ -35,7 +35,7 @@ Todos los controles. La apariencia de algunos controles que no están asociados 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 También puede usar la [tabla ControlCondition para](controlcondition-table.md) deshabilitar o habilitar un control según el valor de una propiedad o instrucción condicional.
 

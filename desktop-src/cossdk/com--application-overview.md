@@ -4,12 +4,12 @@ ms.assetid: 82e94acb-e7ce-4423-a720-26ee65d0d7b4
 title: Introducción a la aplicación COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c964d760b5ba0ef260bc9dcb0658b564a4b211075692ce6301a0445eee0eb7a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3365e0c0e7598d8f1eb2f466e8a2cea2d93edf4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119991885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073006"
 ---
 # <a name="com-application-overview"></a>Introducción a la aplicación COM+
 

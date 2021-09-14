@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 7e8fe02540cd68047e3e74c052a8ea833a67d829228979da31bb12e13e84d9f8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 578c08c48ada4859b69e00655c5eea8c075515fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073077"
 ---
 # <a name="wmimonitordescriptormethods-class"></a>Clase WmiMonitorDescriptorMethods
 
-La clase WMI **WmiMonitorDescriptorMethods** contiene métodos que obtienen el contenido sin procesar de los bloques de datos de 128 bytes estándar de video definition of Video Electronics Standard Association (VESA) Enhanced Extended Display Identification Data (E-EDID) v.1.x estándar.
+La clase WMI **WmiMonitorDescriptorMethods** contiene métodos que obtienen el contenido sin procesar de los bloques de datos de 128 bytes estándar de definición de entrada de vídeo de Video Electronics Standard Association (VESA) Enhanced Extended Display Identification Data (E-EDID) v.1.x estándar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ class WmiMonitorDescriptorMethods : MSMonitorClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase WmiMonitorDescriptorMethods** tiene estos tipos de miembros:
 
@@ -51,7 +51,7 @@ La **clase WmiMonitorDescriptorMethods** tiene estos métodos.
 
 | Método                                                                                           | Descripción                                                                   |
 |:-------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------|
-| [**WmiGetMonitorRawEEdidV1Block**](wmigetmonitorraweedidv1block-wmimonitordescriptormethods.md) | Tiene acceso a los datos sin procesar de un bloque de descriptor EDID v.1.x especificado.<br/> |
+| [**WmiGetMonitorRawEEdidV1Block**](wmigetmonitorraweedidv1block-wmimonitordescriptormethods.md) | Accede a los datos sin procesar de un bloque de descriptor edid v.1.x especificado.<br/> |
 
 
 
@@ -106,7 +106,7 @@ Nombre de la instancia de monitor específica.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

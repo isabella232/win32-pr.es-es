@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cbc04a7fe79f14976e509928e243030b641e8a89703e638861e95d60653fc081
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d175fdfc931d24742d61f962a45e690a5c49c2be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119275295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072615"
 ---
 # <a name="apitrysetindexrange-method"></a>Método Api.TrySetIndexRange
 
-Limita temporalmente el conjunto de entradas de índice que el cursor puede recorrer mediante JetMove a los que comienzan desde la entrada de índice actual y terminan en la entrada de índice que coincide con los criterios de búsqueda especificados por la clave de búsqueda en ese cursor y los criterios enlazados especificados. Una clave de búsqueda se debe haber construido previamente mediante JetMakeKey. Devuelve true si el intervalo de índice no está vacío; de lo contrario, devuelve false.
+Limita temporalmente el conjunto de entradas de índice que el cursor puede recorrer mediante JetMove a las que comienzan desde la entrada de índice actual y terminan en la entrada de índice que coincide con los criterios de búsqueda especificados por la clave de búsqueda en ese cursor y los criterios enlazados especificados. Una clave de búsqueda se debe haber construido previamente mediante JetMakeKey. Devuelve true si el intervalo de índice no está vacío; de lo contrario, false.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -91,11 +91,11 @@ public static bool TrySetIndexRange(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si la búsqueda se ha realizado correctamente.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

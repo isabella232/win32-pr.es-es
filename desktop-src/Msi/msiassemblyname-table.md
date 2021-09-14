@@ -1,23 +1,23 @@
 ---
-description: La tabla MsiAssembly y la tabla MsiAssemblyName especifican Windows instalador para ensamblados de Common Language Runtime y ensamblados Win32.
+description: La tabla MsiAssembly y la tabla MsiAssemblyName especifican Windows del instalador para ensamblados de Common Language Runtime y ensamblados Win32.
 ms.assetid: cfe9a0a3-e40f-4c59-b2e4-ad7654528e3b
 title: Tabla MsiAssemblyName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b62c494f9669ad2c119606f3950a0ec34b6bfd6ba78ad7a965c45398a71ebafe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 12008682c82d7be20ed8713d8dc1c416f9c7065c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120129255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071884"
 ---
 # <a name="msiassemblyname-table"></a>Tabla MsiAssemblyName
 
-La [tabla MsiAssembly y](msiassembly-table.md) la tabla MsiAssemblyName especifican Windows installer para ensamblados de Common Language Runtime y ensamblados Win32. Para obtener información, [vea Instalación de ensamblados en la caché global de ensamblados](installation-of-assemblies-to-the-global-assembly-cache.md) e [Instalación de ensamblados Win32](installation-of-win32-assemblies.md).
+La [tabla MsiAssembly y](msiassembly-table.md) la tabla MsiAssemblyName especifican Windows del instalador para ensamblados de Common Language Runtime y ensamblados Win32. Para obtener información, [vea Instalación de ensamblados en la caché global](installation-of-assemblies-to-the-global-assembly-cache.md) de ensamblados e Instalación de [ensamblados Win32.](installation-of-win32-assemblies.md)
 
 La tabla MsiAssemblyName especifica el esquema para los elementos de un nombre de caché de ensamblados segura para un ensamblado .NET Framework o Win32. El nombre se construye anexando todos los elementos con la misma clave de \_ componente. Consulte el ejemplo siguiente.
 
-Windows El instalador puede instalar ensamblados Win32 como [ensamblados en paralelo.](side-by-side-assemblies.md) Para obtener más información, consulte [la API de ensamblado en paralelo](../sbscs/side-by-side-assembly-api.md).
+Windows El instalador puede instalar ensamblados win32 como [ensamblados en paralelo.](side-by-side-assemblies.md) Para obtener más información, consulte la API de [ensamblado en paralelo](../sbscs/side-by-side-assembly-api.md).
 
 La tabla MsiAssemblyName tiene las columnas siguientes.
 
@@ -47,7 +47,7 @@ Clave en la [tabla de componentes](component-table.md) que especifica el Windows
 <span id="Name"></span><span id="name"></span><span id="NAME"></span>Nombre
 </dt> <dd>
 
-Nombre del atributo asociado al valor especificado en la columna Valor .
+Nombre del atributo asociado al valor especificado en la columna Valor.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Valor asociado al nombre especificado en la columna Nombre.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La información que se ha escrito en la tabla MsiAssemblyName debe coincidir con la información del archivo de manifiesto del ensamblado. Si la información del manifiesto y la tabla MsiAssemblyName no coinciden, la eliminación de la aplicación puede dejar el ensamblado en el equipo.
 
@@ -70,7 +70,7 @@ Para los ensamblados globales de Common Language Runtime (.NET Framework version
 
 La .NET Framework versión 1.1 es la versión mínima que se puede usar para realizar una actualización local de un ensamblado global de Common Language Runtime. Puede comprobar la [**propiedad MsiNetAssemblySupport**](msinetassemblysupport.md) para la versión. La tabla MsiAssemblyName también debe tener un campo FileVersion porque este tipo de actualización de ensamblado solo cambia FileVersion. Para obtener más información, vea [Actualizar ensamblados](updating-assemblies.md).
 
-Por ejemplo, el manifiesto de ensamblado para ComponentA podría tener una sección assemblyIdentity como se muestra a continuación para un ensamblado Win32.
+Por ejemplo, el manifiesto de ensamblado para ComponentA podría tener una sección assemblyIdentity como se muestra a continuación para un ensamblado win32.
 
 ``` syntax
 <assemblyIdentity type="win32" name="ms-sxstest-simple" version="1.0.0.0" language="en" publicKeyToken="1111111111222222" processorArchitecture="x86"/>
@@ -82,12 +82,12 @@ En este caso, rellene la tabla MsiAssemblyName como se muestra a continuación.
 
 | Componente  | Nombre                  | Value             |
 |------------|-----------------------|-------------------|
-| Componente A | tipo                  | win32             |
-| Componente A | name                  | ms-sxstest-simple |
-| Componente A | version               | 1.0.0.0           |
-| Componente A | language              | en                |
-| Componente A | Publickeytoken        | 1111111111222222  |
-| Componente A | processorArchitecture | x86               |
+| ComponenteA | type                  | win32             |
+| ComponenteA | name                  | ms-sxstest-simple |
+| ComponenteA | version               | 1.0.0.0           |
+| ComponenteA | language              | en                |
+| ComponenteA | Publickeytoken        | 1111111111222222  |
+| ComponenteA | processorArchitecture | x86               |
 
 
 

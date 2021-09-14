@@ -4,18 +4,18 @@ ms.assetid: 7227846d-b755-4af9-acc3-e27742a5097a
 title: Tabla AdminUISequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12feb7080d6d97ee86456bee694cdad57eee9873c9c7f64aecf0f4bd05817cc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8fb460f65d223e75ebd50a7587f5b3f4adeced8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118381703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159171"
 ---
 # <a name="adminuisequence-table"></a>Tabla AdminUISequence
 
 En la tabla AdminUISequence se enumeran las acciones a las que llama el instalador en secuencia cuando se ejecuta la acción [admin](admin-action.md) de nivel superior y el nivel de interfaz de usuario interno se establece en interfaz de usuario completa o interfaz de usuario reducida. El instalador omite las acciones de esta tabla si el nivel de interfaz de usuario está establecido en interfaz de usuario básica o sin interfaz de usuario. Vea [Acerca de la Interfaz de usuario](about-the-user-interface.md).
 
-Las acciones admin de la secuencia de instalación hasta la acción [InstallValidate](installvalidate-action.md)y los cuadros de diálogo de salida se encuentran en la tabla AdminUISequence. Todas las acciones desde InstallValidate hasta el final de la secuencia de instalación se encuentran en la [tabla AdminExecuteSequence](adminexecutesequence-table.md). Dado que la tabla AdminExecuteSequence debe ser independiente, también contiene las acciones de inicialización necesarias, como [LaunchConditions,](launchconditions-action.md) [CostInitialize,](costinitialize-action.md) [FileCost](filecost-action.md)y [CostFinalize.](costfinalize-action.md) También tiene la [acción ExecuteAction](executeaction-action.md).
+Las acciones de administración de la secuencia de instalación hasta la acción [InstallValidate](installvalidate-action.md)y los cuadros de diálogo de salida se encuentran en la tabla AdminUISequence. Todas las acciones desde InstallValidate hasta el final de la secuencia de instalación se encuentran en la [tabla AdminExecuteSequence](adminexecutesequence-table.md). Dado que la tabla AdminExecuteSequence debe ser independiente, también contiene las acciones de inicialización necesarias, como [LaunchConditions,](launchconditions-action.md) [CostInitialize,](costinitialize-action.md) [FileCost](filecost-action.md)y [CostFinalize.](costfinalize-action.md) También tiene la [acción ExecuteAction](executeaction-action.md).
 
 Las columnas son idénticas a las de [la tabla InstallUISequence](installuisequence-table.md). La tabla AdminUISequence tiene las columnas siguientes.
 
@@ -58,7 +58,7 @@ Un valor positivo indica la posición de secuencia de la acción. Los siguientes
 
 
 
-| Marca de terminación          | Valor | Descripción                                                                          |
+| Marca de terminación          | Value | Descripción                                                                          |
 |---------------------------|-------|--------------------------------------------------------------------------------------|
 | msiDoActionStatusSuccess  | -1    | Finalización correcta. Se usa con [los cuadros de](exit-dialog.md) diálogo Salir.               |
 | msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. Se usa con [los cuadros de diálogo UserExit.](userexit-dialog.md)     |

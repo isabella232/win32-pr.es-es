@@ -4,12 +4,12 @@ description: Archivos de marcador de posición
 ms.assetid: E14655DA-CEA0-4106-B882-C9E9116FC234
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8891fef6c7fc54a66c093507b1831ab7cc6525ea96d685d06cf6fa8d9ded1e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93c15037b0daec7a6521a299b6c4587c956e0be3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119452505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127262375"
 ---
 # <a name="placeholder-files"></a>Archivos de marcador de posición
 

@@ -1,21 +1,21 @@
 ---
-title: Escribir un servidor SSPI autenticado
+title: Escritura de un servidor SSPI autenticado
 description: Antes de que se pueda realizar la comunicación autenticada entre los programas cliente y servidor, el servidor debe registrar su información de autenticación.
 ms.assetid: 723ae1ee-d729-4748-9ef1-062a0c6f60d0
 keywords:
-- Llamada a procedimiento remoto RPC, tareas, escritura de un servidor SSPI autenticado
+- Remote Procedure Call RPC , tasks, writing an authenticated SSPI server
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 462f153905d6b654a0533c7bd05bff0e9627869d6910fb1fea05fe9340b788a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 19b1cb06cfc626bc8130f3c4b0cee0a7b6d7893e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010353"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071366"
 ---
-# <a name="writing-an-authenticated-sspi-server"></a>Escribir un servidor SSPI autenticado
+# <a name="writing-an-authenticated-sspi-server"></a>Escritura de un servidor SSPI autenticado
 
-Antes de que se pueda realizar la comunicación autenticada entre los programas cliente y servidor, el servidor debe registrar su información de autenticación. En concreto, el servidor debe registrar su nombre principal y especificar el servicio de autenticación que usa. Para obtener más información sobre los nombres de entidad de seguridad, vea [Nombres de entidad de seguridad](principal-names.md). Para obtener más información sobre los servicios de autenticación, vea [Authentication Services](authentication-services.md).
+Antes de que se pueda realizar la comunicación autenticada entre los programas cliente y servidor, el servidor debe registrar su información de autenticación. En concreto, el servidor debe registrar su nombre principal y especificar el servicio de autenticación que usa. Para obtener más información sobre los nombres de entidad de seguridad, vea [Nombres de entidad de seguridad](principal-names.md). Para obtener más información sobre los servicios de autenticación, vea [Servicios de autenticación](authentication-services.md).
 
 Para registrar su información de autenticación, los servidores llaman a [**la función RpcServerRegisterAuthInfo.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverregisterauthinfo) Pase un puntero al nombre principal como valor del primer parámetro. Establezca el segundo parámetro en una constante que indique el servicio de autenticación que usará la aplicación. Para obtener una descripción de los servicios de autenticación, vea [Authentication-Service Constants](authentication-service-constants.md).
 
@@ -43,7 +43,7 @@ rpcStatus = RpcServerRegisterAuthInfo (
 
 Además, el servidor puede proporcionar a la biblioteca en tiempo de ejecución rpc una función de autorización. Para establecer una función de autorización, llame a [**la función RpcMgmtSetAuthorizationFn.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcmgmtsetauthorizationfn)
 
-La parte del servidor de una aplicación distribuida puede llamar a la [**función RpcBindingInqAuthClient**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindinginqauthclient) o [**RpcBindingInqAuthClientEx**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindinginqauthclientex) para consultar un identificador de enlace para obtener información de autenticación.
+La parte del servidor de una aplicación distribuida puede llamar a la función [**RpcBindingInqAuthClient**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindinginqauthclient) o [**RpcBindingInqAuthClientEx**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindinginqauthclientex) para consultar un identificador de enlace para obtener información de autenticación.
 
 Si el servidor se registra con un proveedor de soporte técnico de seguridad, no se enviarán las llamadas de cliente con credenciales no válidas. Sin embargo, se enviarán las llamadas sin credenciales. Hay tres maneras de evitar que esto suceda:
 

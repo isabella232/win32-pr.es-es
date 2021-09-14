@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f3a30ece3dbac004fdccbc9aab7b9d1803564fd88120c32e36e8cb3eae999cb4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 340dfe06254183b8ebbd371944f99b6dbc6617e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118079959"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072593"
 ---
 # <a name="esentlsnotsetexception-constructor"></a>Constructor EsentLSNotSetException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLSNotSetException()
 public EsentLSNotSetException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

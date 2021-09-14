@@ -4,12 +4,12 @@ ms.assetid: d1ddadd5-b4ec-4c7c-aee4-b2d688a57eb4
 title: Determinar el nivel de la interfaz de usuario a partir de una acción personalizada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af88753b5ea44927ac58b13bcb4742e7992e50e1499aa04964b60b632d68ec53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2586cd03bfda2b22e721c0ae9c3393d4bbc525a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118947572"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158590"
 ---
 # <a name="determining-ui-level-from-a-custom-action"></a>Determinar el nivel de la interfaz de usuario a partir de una acción personalizada
 

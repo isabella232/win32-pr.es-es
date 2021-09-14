@@ -4,12 +4,12 @@ ms.assetid: 8c8e8af0-bf50-4a4b-945c-83bae1eff7dd
 title: Funciones de proceso y subproceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f187244e65008e3b4e082578af56a734d7e7571747fa7e3a565b0aa99904de66
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2ebb1e281feb83b4a0da0c230792399d8e21684f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071437"
 ---
 # <a name="process-and-thread-functions"></a>Funciones de proceso y subproceso
 
@@ -96,7 +96,7 @@ Las funciones siguientes se usan con [procesos](child-processes.md).
 | [**SetPriorityClass**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setpriorityclass)                             | Establece la clase de prioridad para el proceso especificado.                                                                                                                                            |
 | [**SetProcessAffinityMask**](/windows/desktop/api/WinBase/nf-winbase-setprocessaffinitymask)                 | Establece una máscara de afinidad de procesador para los subprocesos de un proceso especificado.                                                                                                                        |
 | [**SetProcessAffinityUpdateMode**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocessaffinityupdatemode)     | Establece el modo de actualización de afinidad del proceso especificado.                                                                                                                                       |
-| [**SetProcessInformation**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocessinformation)                   | Establece información para el proceso especificado.                                                                                                                                                   |
+| [**SetProcessInformation**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocessinformation)                   | Establece la información del proceso especificado.                                                                                                                                                   |
 | [**SetProcessMitigationPolicy**](/windows/desktop/api/Processthreadsapi/nf-processthreadsapi-setprocessmitigationpolicy)         | Establece la directiva de mitigación para el proceso de llamada.                                                                                                                                           |
 | [**SetProcessPriorityBoost**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocesspriorityboost)               | Deshabilita la capacidad del sistema de aumentar temporalmente la prioridad de los subprocesos del proceso especificado.                                                                                 |
 | [**SetProcessRestrictionExemption**](/windows/desktop/api/Winuser/nf-winuser-setprocessrestrictionexemption) | Excluye el proceso de llamada de restricciones que impiden que los procesos de escritorio interactúen con el entorno de Windows store. Esta función la usan las herramientas de desarrollo y depuración. |
@@ -119,7 +119,7 @@ Las funciones siguientes se usan para enumerar los procesos.
 |-------------------------------------------------------------|------------------------------------------------------------------------------------|
 | [**EnumProcesses**](/windows/win32/api/psapi/nf-psapi-enumprocesses)                     | Recupera el identificador de proceso para cada objeto de proceso del sistema.            |
 | [**Process32First**](/windows/win32/api/tlhelp32/nf-tlhelp32-process32first)                   | Recupera información sobre el primer proceso encontrado en una instantánea del sistema.    |
-| [**Process32Next**](/windows/win32/api/tlhelp32/nf-tlhelp32-process32next)                     | Recupera información sobre el siguiente proceso registrado en una instantánea del sistema.        |
+| [**Process32Siguiente**](/windows/win32/api/tlhelp32/nf-tlhelp32-process32next)                     | Recupera información sobre el siguiente proceso registrado en una instantánea del sistema.        |
 | [**WTSEnumerateProcesses**](/windows/win32/api/wtsapi32/nf-wtsapi32-wtsenumerateprocessesa) | Recupera información sobre los procesos activos en el servidor de terminal especificado. |
 
 
@@ -152,7 +152,7 @@ Las funciones siguientes se usan con [subprocesos](multiple-threads.md).
 | [**AttachThreadInput**](/windows/desktop/api/Winuser/nf-winuser-attachthreadinput)                     | Asocia el mecanismo de procesamiento de entrada de un subproceso al de otro subproceso.                                                                          |
 | [**CreateRemoteThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createremotethread)                   | Crea un subproceso que se ejecuta en el espacio de direcciones virtuales de otro proceso.                                                                               |
 | [**CreateRemoteThreadEx**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createremotethreadex)               | Crea un subproceso que se ejecuta en el espacio de direcciones virtuales de otro proceso y, opcionalmente, especifica atributos extendidos, como la afinidad de grupo de procesadores. |
-| [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread)                               | Crea un subproceso que se ejecutará dentro del espacio de direcciones virtuales del proceso de llamada.                                                                      |
+| [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread)                               | Crea un subproceso para ejecutarlo dentro del espacio de direcciones virtuales del proceso de llamada.                                                                      |
 | [**ExitThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread)                                   | Finaliza el subproceso que realiza la llamada.                                                                                                                                  |
 | [**GetCurrentThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthread)                       | Recupera un pseudo identificador para el subproceso actual.                                                                                                         |
 | [**GetCurrentThreadId**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthreadid)                   | Recupera el identificador de subproceso del subproceso que realiza la llamada.                                                                                                    |
@@ -165,7 +165,7 @@ Las funciones siguientes se usan con [subprocesos](multiple-threads.md).
 | [**GetThreadIOPendingFlag**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadiopendingflag)           | Determina si un subproceso especificado tiene solicitudes de E/S pendientes.                                                                                       |
 | [**GetThreadPriority**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadpriority)                     | Recupera el valor de prioridad para el subproceso especificado.                                                                                                    |
 | [**GetThreadPriorityBoost**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadpriorityboost)           | Recupera el estado de control de aumento de prioridad del subproceso especificado.                                                                                       |
-| [**GetThreadTimes**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadtimes)                           | Recupera información de tiempo para el subproceso especificado.                                                                                                    |
+| [**GetThreadTimes**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadtimes)                           | Recupera información de control de tiempo para el subproceso especificado.                                                                                                    |
 | [**OpenThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-openthread)                                   | Abre un objeto de subproceso existente.                                                                                                                          |
 | [**QueryIdleProcessorCycleTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryidleprocessorcycletime) | Recupera el tiempo de ciclo para el subproceso inactivo de cada procesador del sistema.                                                                             |
 | [**QueryThreadCycleTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-querythreadcycletime)               | Recupera el tiempo de ciclo para el subproceso especificado.                                                                                                        |
@@ -310,7 +310,7 @@ Las siguientes funciones se usan con grupos [de subprocesos](thread-pools.md).
 | [**TpSetCallbackThreadpool**](/windows/desktop/api/winnt/nf-winnt-tpsetcallbackthreadpool)                                 | Asigna un grupo de subprocesos a un entorno de devolución de llamada.                                                                                                                                                                                                    |
 | [**TrySubmitThreadpoolCallback**](/windows/win32/api/threadpoolapiset/nf-threadpoolapiset-trysubmitthreadpoolcallback)                         | Solicita que un subproceso de trabajo del grupo de subprocesos llame a la función de devolución de llamada especificada.                                                                                                                                                                     |
 | [**WaitForThreadpoolIoCallbacks**](/windows/win32/api/threadpoolapiset/nf-threadpoolapiset-waitforthreadpooliocallbacks)                       | Espera a que se completen las devoluciones de llamada de finalización de E/S pendientes y, opcionalmente, cancela las devoluciones de llamada pendientes que aún no se han iniciado para ejecutarse.                                                                                                           |
-| [**WaitForThreadpoolTimerCallbacks**](/windows/win32/api/threadpoolapiset/nf-threadpoolapiset-waitforthreadpooltimercallbacks)                 | Espera a que se completen las devoluciones de llamada de temporizador pendientes y, opcionalmente, cancela las devoluciones de llamada pendientes que aún no se han iniciado para ejecutarse.                                                                                                                    |
+| [**WaitForThreadpoolTimerCallbacks**](/windows/win32/api/threadpoolapiset/nf-threadpoolapiset-waitforthreadpooltimercallbacks)                 | Espera a que se completen las devoluciones de llamada del temporizador pendientes y, opcionalmente, cancela las devoluciones de llamada pendientes que aún no se han iniciado para ejecutarse.                                                                                                                    |
 | [**WaitForThreadpoolWaitCallbacks**](/windows/win32/api/threadpoolapiset/nf-threadpoolapiset-waitforthreadpoolwaitcallbacks)                   | Espera a que se completen las devoluciones de llamada de espera pendientes y, opcionalmente, cancela las devoluciones de llamada pendientes que aún no se han iniciado para ejecutarse.                                                                                                                     |
 | [**WaitForThreadpoolWorkCallbacks**](/windows/win32/api/threadpoolapiset/nf-threadpoolapiset-waitforthreadpoolworkcallbacks)                   | Espera a que se completen las devoluciones de llamada de trabajo pendientes y, opcionalmente, cancela las devoluciones de llamada pendientes que aún no se han iniciado para ejecutarse.                                                                                                                     |
 
@@ -324,9 +324,9 @@ Las siguientes funciones forman parte de la API de [agrupación de subprocesos](
 
 | Función                                                            | Descripción                                                                                                                                                                                                            |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**BindIoCompletionCallback**](/windows/desktop/api/WinBase/nf-winbase-bindiocompletioncallback)        | Asocia el puerto de finalización de E/S propiedad del grupo de subprocesos con el identificador de archivo especificado. Al finalizar una solicitud de E/S que implica este archivo, un subproceso de trabajo que no es de E/S ejecutará la función de devolución de llamada especificada. |
+| [**BindIoCompletionCallback**](/windows/desktop/api/WinBase/nf-winbase-bindiocompletioncallback)        | Asocia el puerto de finalización de E/S propiedad del grupo de subprocesos con el identificador de archivo especificado. Al finalizar una solicitud de E/S que implique este archivo, un subproceso de trabajo que no sea de E/S ejecutará la función de devolución de llamada especificada. |
 | [**QueueUserWorkItem**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-queueuserworkitem)                      | Pone en cola un elemento de trabajo en un subproceso de trabajo del grupo de subprocesos.                                                                                                                                                              |
-| [**RegisterWaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) | Dirige a un subproceso de espera del grupo de subprocesos para que espere en el objeto .                                                                                                                                                        |
+| [**RegisterWaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) | Dirige a un subproceso de espera del grupo de subprocesos a esperar en el objeto .                                                                                                                                                        |
 | [**UnregisterWaitEx**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-unregisterwaitex)                       | Espera hasta que uno o todos los objetos especificados estén en el estado señalado o hasta que transcurra el intervalo de tiempo de espera.                                                                                                            |
 
 
@@ -335,7 +335,7 @@ Las siguientes funciones forman parte de la API de [agrupación de subprocesos](
 
 ## <a name="thread-ordering-service-functions"></a>Funciones del servicio de ordenación de subprocesos
 
-Las funciones siguientes se usan con el servicio [de ordenación de subprocesos](thread-ordering-service.md).
+Las siguientes funciones se usan con el servicio [de ordenación de subprocesos](thread-ordering-service.md).
 
 
 
@@ -355,7 +355,7 @@ Las funciones siguientes se usan con el servicio [de ordenación de subprocesos]
 
 ## <a name="multimedia-class-scheduler-service-functions"></a>Funciones del servicio Programador de clases multimedia
 
-Las siguientes funciones se usan con el servicio [programador de clases multimedia](multimedia-class-scheduler-service.md).
+Las funciones siguientes se usan con el servicio [programador de clases multimedia](multimedia-class-scheduler-service.md).
 
 
 
@@ -364,7 +364,7 @@ Las siguientes funciones se usan con el servicio [programador de clases multimed
 | [**AvRevertMmThreadCharacteristics**](/windows/desktop/api/Avrt/nf-avrt-avrevertmmthreadcharacteristics) | Indica que un subproceso ya no realiza el trabajo asociado a la tarea especificada.              |
 | [**AvSetMmMaxThreadCharacteristics**](/windows/desktop/api/Avrt/nf-avrt-avsetmmmaxthreadcharacteristicsa) | Asocia el subproceso que realiza la llamada a las tareas especificadas.                                               |
 | [**AvSetMmThreadCharacteristics**](/windows/desktop/api/Avrt/nf-avrt-avsetmmthreadcharacteristicsa)       | Asocia el subproceso que realiza la llamada a la tarea especificada.                                                |
-| [**AvSetMmThreadPriority**](/windows/desktop/api/Avrt/nf-avrt-avsetmmthreadpriority)                     | Ajusta la prioridad de subproceso del subproceso que realiza la llamada en relación con otros subprocesos que realizan la misma tarea. |
+| [**AvSetMmThreadPriority**](/windows/desktop/api/Avrt/nf-avrt-avsetmmthreadpriority)                     | Ajusta la prioridad del subproceso que realiza la llamada en relación con otros subprocesos que realizan la misma tarea. |
 
 
 
@@ -386,9 +386,9 @@ Las funciones siguientes se usan con [fibras](fibers.md).
 | [**DeleteFiber**](/windows/desktop/api/WinBase/nf-winbase-deletefiber)                       | Elimina una fibra existente.                                                                                   |
 | [**FiberProc**](/windows/win32/api/winbase/nc-winbase-pfiber_start_routine)                           | Función definida por la aplicación que se usa con [**la función CreateFiber.**](/windows/desktop/api/WinBase/nf-winbase-createfiber)                   |
 | [**FlsAlloc**](/windows/win32/api/fibersapi/nf-fibersapi-flsalloc)                             | Asigna un índice de almacenamiento local de fibra (FLS).                                                                 |
-| [**FlsFree**](/windows/win32/api/fibersapi/nf-fibersapi-flsfree)                               | Libera un índice fls.                                                                                       |
-| [**FlsGetValue**](/windows/win32/api/fibersapi/nf-fibersapi-flsgetvalue)                       | Recupera el valor de la ranura FLS de la fibra de llamada para un índice FLS especificado.                               |
-| [**FlsSetValue**](/windows/win32/api/fibersapi/nf-fibersapi-flssetvalue)                       | Almacena un valor en la ranura FLS de la fibra que realiza la llamada para un índice FLS especificado.                                    |
+| [**FlsFree**](/windows/win32/api/fibersapi/nf-fibersapi-flsfree)                               | Libera un índice FLS.                                                                                       |
+| [**FlsGetValue**](/windows/win32/api/fibersapi/nf-fibersapi-flsgetvalue)                       | Recupera el valor de la ranura FLS de la fibra que realiza la llamada para un índice de FLS especificado.                               |
+| [**FlsSetValue**](/windows/win32/api/fibersapi/nf-fibersapi-flssetvalue)                       | Almacena un valor en la ranura FLS de la fibra que realiza la llamada para un índice de FLS especificado.                                    |
 | [**IsThreadAFiber**](/windows/win32/api/fibersapi/nf-fibersapi-isthreadafiber)                 | Determina si el subproceso actual es una fibra.                                                            |
 | [**SwitchToFiber**](/windows/desktop/api/WinBase/nf-winbase-switchtofiber)                   | Programa una fibra.                                                                                           |
 
@@ -433,7 +433,7 @@ Las siguientes funciones se usan con procesadores lógicos y [grupos de procesad
 | [**GetActiveProcessorCount**](/windows/desktop/api/WinBase/nf-winbase-getactiveprocessorcount)                   | Devuelve el número de procesadores activos en un grupo de procesadores o en el sistema.                                       |
 | [**GetActiveProcessorGroupCount**](/windows/desktop/api/WinBase/nf-winbase-getactiveprocessorgroupcount)         | Devuelve el número de grupos de procesadores activos del sistema.                                                         |
 | [**GetCurrentProcessorNumber**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocessornumber)               | Recupera el número del procesador en el que se estaba ejecutando el subproceso actual durante la llamada a esta función.            |
-| [**GetCurrentProcessorNumberEx**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocessornumberex)           | Recupera el grupo de procesadores y el número del procesador lógico en el que se ejecuta el subproceso que realiza la llamada.            |
+| [**GetCurrentProcessorNumberEx**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocessornumberex)           | Recupera el grupo de procesadores y el número del procesador lógico en el que se ejecuta el subproceso de llamada.            |
 | [**GetLogicalProcessorInformation**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getlogicalprocessorinformation)     | Recupera información sobre procesadores lógicos y hardware relacionado.                                                 |
 | [**GetLogicalProcessorInformationEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getlogicalprocessorinformationex) | Recupera información sobre las relaciones de los procesadores lógicos y el hardware relacionado.                            |
 | [**GetMaximumProcessorCount**](/windows/desktop/api/WinBase/nf-winbase-getmaximumprocessorcount)                 | Devuelve el número máximo de procesadores lógicos que puede tener un grupo de procesadores o el sistema.                      |
@@ -453,16 +453,16 @@ Las siguientes funciones se usan con la programación en modo de usuario (UMS).
 
 | Función                                                               | Descripción                                                                                               |
 |------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [**CreateUmsCompletionList**](/windows/desktop/api/WinBase/nf-winbase-createumscompletionlist)             | Crea una lista de finalización de UMS.                                                                            |
+| [**CreateUmsCompletionList**](/windows/desktop/api/WinBase/nf-winbase-createumscompletionlist)             | Crea una lista de finalización ums.                                                                            |
 | [**CreateUmsThreadContext**](/windows/desktop/api/WinBase/nf-winbase-createumsthreadcontext)               | Crea un contexto de subproceso UMS para representar un subproceso de trabajo UMS.                                            |
 | [**DeleteUmsCompletionList**](/windows/desktop/api/WinBase/nf-winbase-deleteumscompletionlist)             | Elimina la lista de finalización de UMS especificada. La lista debe estar vacía.                                        |
-| [**DeleteUmsThreadContext**](/windows/desktop/api/WinBase/nf-winbase-deleteumsthreadcontext)               | Elimina el contexto de subproceso UMS especificado. El subproceso debe terminarse.                                  |
-| [**DequeueUmsCompletionListItems**](/windows/desktop/api/WinBase/nf-winbase-dequeueumscompletionlistitems) | Recupera subprocesos de trabajo UMS de la lista de finalización de UMS especificada.                                      |
+| [**DeleteUmsThreadContext**](/windows/desktop/api/WinBase/nf-winbase-deleteumsthreadcontext)               | Elimina el contexto de subproceso UMS especificado. El subproceso debe terminar.                                  |
+| [**DequeueUmsCompletionListItems**](/windows/desktop/api/WinBase/nf-winbase-dequeueumscompletionlistitems) | Recupera los subprocesos de trabajo de UMS de la lista de finalización de UMS especificada.                                      |
 | [**EnterUmsSchedulingMode**](/windows/desktop/api/WinBase/nf-winbase-enterumsschedulingmode)               | Convierte el subproceso que realiza la llamada en un subproceso del programador UMS.                                                  |
 | [**ExecuteUmsThread**](/windows/desktop/api/WinBase/nf-winbase-executeumsthread)                           | Ejecuta el subproceso de trabajo UMS especificado.                                                                     |
 | [**GetCurrentUmsThread**](/windows/desktop/api/WinBase/nf-winbase-getcurrentumsthread)                     | Devuelve el contexto del subproceso UMS del subproceso UMS que realiza la llamada.                                                 |
 | [**GetNextUmsListItem**](/windows/desktop/api/WinBase/nf-winbase-getnextumslistitem)                       | Devuelve el siguiente contexto de subproceso UMS en una lista de contextos de subproceso UMS.                                     |
-| [**GetUmsCompletionListEvent**](/windows/desktop/api/WinBase/nf-winbase-getumscompletionlistevent)         | Recupera un identificador para el evento asociado a la lista de finalización ums especificada.                        |
+| [**GetUmsCompletionListEvent**](/windows/desktop/api/WinBase/nf-winbase-getumscompletionlistevent)         | Recupera un identificador para el evento asociado a la lista de finalización de UMS especificada.                        |
 | [**GetUmsSystemThreadInformation**](/windows/desktop/api/WinBase/nf-winbase-getumssystemthreadinformation) | Consulta si el subproceso especificado es un subproceso de programador UMS, un subproceso de trabajo UMS o un subproceso que no es UMS. |
 | [**QueryUmsThreadInformation**](/windows/desktop/api/WinBase/nf-winbase-queryumsthreadinformation)         | Recupera información sobre el subproceso de trabajo UMS especificado.                                              |
 | [**SetUmsThreadInformation**](/windows/desktop/api/WinBase/nf-winbase-setumsthreadinformation)             | Establece la información de contexto específica de la aplicación para el subproceso de trabajo UMS especificado.                        |

@@ -4,18 +4,18 @@ description: Un descriptor de correlación es una cadena de formato que describe
 ms.assetid: 9f5f5077-d6a9-4253-bddf-b8cd0c868973
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbbeb682a7c558cd8c45050d27ea9bf64c39016a056a88566aef7048f3c0d610
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35f13f0793b99b80b7abb0b493c249b30ad53d76
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120022365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127259860"
 ---
 # <a name="correlation-descriptors"></a>Descriptores de correlación
 
-Un descriptor de correlación es una cadena de formato que describe una expresión basada en un argumento relacionado con otro argumento. Se necesita un descriptor de correlación para controlar la semántica relacionada con atributos como \[ **size \_ is()** \] , length \[ **\_ is()** \] , switch \[ **\_ is()** \] e \[ **iid \_ is()** \] . Los descriptores de correlación se usan con matrices, punteros de tamaño, uniones y punteros de interfaz. El valor de expresión final puede ser un tamaño, una longitud, un discriminador de unión o un puntero a un IID, respectivamente. En términos de cadenas de formato, los descriptores de correlación se usan con matrices, uniones y punteros de interfaz. Un puntero de tamaño se describe en cadenas de formato como un puntero a una matriz.
+Un descriptor de correlación es una cadena de formato que describe una expresión basada en un argumento relacionado con otro argumento. Se necesita un descriptor de correlación para controlar la semántica relacionada con atributos como \[ **size \_ is()** \] , length \[ **\_ is()** \] , switch \[ **\_ is()** \] e \[ **iid \_ is().** \] Los descriptores de correlación se usan con matrices, punteros de tamaño, uniones y punteros de interfaz. El valor de expresión final puede ser un tamaño, una longitud, un discriminador de unión o un puntero a un IID, respectivamente. En términos de cadenas de formato, los descriptores de correlación se usan con matrices, uniones y punteros de interfaz. Un puntero de tamaño se describe en cadenas de formato como un puntero a una matriz.
 
-Hay dos rutinas que realizan cálculos de expresiones básicos: MidpComputeConformance se usa para tamaños, modificadores e IID, mientras que PlatpComputeVariance se usa para las \* longitudes. También hay una sola rutina para realizar una validación del valor de correlación para la funcionalidad de denegación de ataque.
+Hay dos rutinas que realizan cálculos de expresiones básicos: ComposiciónComputeConformance se usa para tamaños, modificadores e IID, mientras que PlatpComputeVariance se usa para las \* longitudes. También hay una sola rutina para realizar una validación del valor de correlación para la funcionalidad de denegación de ataque.
 
 Los descriptores de correlación se han diseñado para admitir solo expresiones muy limitadas. En situaciones complicadas, el compilador genera una rutina de evaluación de expresiones a la que llamará el motor cuando sea necesario.
 
@@ -30,7 +30,7 @@ offset<2>
 
 El tipo de correlación del descriptor de correlación<1> consta de dos nibbles: los 4 bits superiores describen dónde se puede encontrar la expresión y los 4 bits inferiores describen el tipo del valor de \_ expresión.
 
-La nibble superior puede tener uno de estos cinco valores:
+El nibble superior puede tener uno de estos cinco valores:
 
 ``` syntax
 00  FC_NORMAL_CONFORMANCE
@@ -42,7 +42,7 @@ La nibble superior puede tener uno de estos cinco valores:
 
 <dl> <dt>
 
-<span id="FC_NORMAL_CONFORMANCE"></span><span id="fc_normal_conformance"></span>\_CONFORMIDAD NORMAL DE FC \_
+<span id="FC_NORMAL_CONFORMANCE"></span><span id="fc_normal_conformance"></span>\_CONFORMIDAD NORMAL DE \_ FC
 </dt> <dd>
 
 Un caso normal de conformidad, como el descrito en un campo de una estructura.
@@ -52,11 +52,11 @@ Un caso normal de conformidad, como el descrito en un campo de una estructura.
 <span id="FC_POINTER_CONFORMANCE"></span><span id="fc_pointer_conformance"></span>CONFORMIDAD \_ CON EL PUNTERO \_ FC
 </dt> <dd>
 
-Para los punteros con atributos **(size \_ is()**, **length \_ is()**) que son campos de una estructura. Esto afecta a la forma en que se establece el puntero de memoria base.
+Para los punteros con atributos (**size \_ is()**, **length \_ is()**) que son campos de una estructura . Esto afecta a la forma en que se establece el puntero de memoria base.
 
 </dd> <dt>
 
-<span id="FC_TOP_LEVEL_CONFORMANCE"></span><span id="fc_top_level_conformance"></span>CONFORMIDAD \_ DE NIVEL SUPERIOR \_ \_ DE FC
+<span id="FC_TOP_LEVEL_CONFORMANCE"></span><span id="fc_top_level_conformance"></span>CONFORMIDAD \_ DE NIVEL SUPERIOR DE \_ \_ FC
 </dt> <dd>
 
 Para la conformidad de nivel superior descrita por otro parámetro.
@@ -69,20 +69,20 @@ Para la conformidad de nivel superior descrita por otro parámetro.
 Para la conformidad de nivel superior de una matriz multidimensional descrita por otro parámetro.
 
 > [!Note]  
-> Las matrices de tamaño multidimensional y los punteros desencadenan un modificador a [**–Oicf**](/windows/desktop/Midl/-oi).
+> Los punteros y matrices de tamaño multidimensional desencadenan un modificador a [**–Oicf**](/windows/desktop/Midl/-oi).
 
  
 
 </dd> <dt>
 
-<span id="FC_CONSTANT_CONFORMANCE"></span><span id="fc_constant_conformance"></span>CONFORMIDAD \_ DE CONSTANTE DE \_ FC
+<span id="FC_CONSTANT_CONFORMANCE"></span><span id="fc_constant_conformance"></span>CONFORMIDAD \_ CON FC CONSTANT \_
 </dt> <dd>
 
-Para un valor constante. El compilador precalcula el valor de una expresión constante proporcionada por el usuario. Cuando este es el caso, los 3 bytes posteriores de la descripción de conformidad contienen los 3 bytes inferiores de un largo que describe el tamaño de conformidad. No se requiere ningún cálculo adicional.
+Para un valor constante. El compilador precalcula el valor de una expresión constante proporcionada por el usuario. En este caso, los 3 bytes posteriores de la descripción de conformidad contienen los 3 bytes inferiores de un largo que describe el tamaño de conformidad. No se requiere ningún cálculo adicional.
 
 </dd> </dl>
 
-El valor nibble inferior proporciona el tipo del valor que se debe extraer de la memoria:
+El nibble inferior proporciona el tipo del valor que se debe extraer de la memoria:
 
 ``` syntax
 FC_LONG | FC_ULONG | 
@@ -92,13 +92,13 @@ FC_HYPER
 ```
 
 > [!Note]
-> No se admiten expresiones de 64 bits. FC \_ HYPER solo se usa para **iid \_ is()** en plataformas de 64 bits para extraer el valor del puntero para IID. \*
+> No se admiten expresiones de 64 bits. FC \_ HYPER solo se usa para **iid \_ is()** en plataformas de 64 bits para extraer el valor de puntero para IID \* .
 >
 > El compilador establece el tipo nibble en cero para los siguientes casos: expresión constante mencionada anteriormente y cuando es necesario llamar a la rutina de expresión de evaluación, por ejemplo, cuando se usan FC CONSTANT CONFORMANCE y \_ \_ FC \_ CALLBACK.
 
  
 
-El tamaño es op<1> campo permite aplicar una de las siguientes operaciones a \_ \_ la variable de conformidad:
+El tamaño es op<un campo> permite aplicar una de las siguientes operaciones \_ a la variable de \_ conformidad:
 
 ``` syntax
 FC_DEREFERENCE | 
@@ -106,19 +106,19 @@ FC_DIV_2 | FC_MULT_2 | FC_SUB_1 | FC_ADD_1 |
 FC_CALLBACK
 ```
 
-La constante FC DEREFERENCE se usa para que la correlación sea un valor máximo, como \_ para size **\[ \_ is( \* pL). \]** Los operadores aritméticos solo usan la constante indicada. La constante FC CALLBACK indica que es necesario llamar a una rutina de evaluación \_ de expresiones.
+La constante FC DEREFERENCE se usa para que la correlación sea una constante, como \_ para **\[ size \_ is( \* pL). \]** Los operadores aritméticos solo usan la constante indicada. La constante FC CALLBACK indica que es necesario llamar a una rutina de evaluación \_ de expresiones.
 
-El desplazamiento<2> es normalmente un desplazamiento de memoria relativa a la variable de argumento de expresión. También puede ser un índice rutinario de evaluación de expresiones. Como se mencionó anteriormente en este documento, para las expresiones constantes forma parte del valor de expresión final real.
+El desplazamiento<2 campos> suele ser un desplazamiento de memoria relativa a la variable de argumento de expresión. También puede ser un índice rutinario de evaluación de expresiones. Como se mencionó anteriormente en este documento, para las expresiones constantes forma parte del valor de expresión final real.
 
 La interpretación del campo offset<2> como desplazamiento de memoria depende de la complejidad de la expresión, la ubicación de la variable de expresión y, en el caso de una matriz, si la matriz es realmente un puntero con atributos.
 
-Si la matriz es un puntero con atributos y la variable de conformidad es un campo de una estructura, el campo de desplazamiento contiene el desplazamiento desde el principio de la estructura hasta el campo que describe la conformidad. Si la matriz no es un puntero con atributos y la variable de conformidad es un campo de una estructura, el campo de desplazamiento contiene el desplazamiento desde el final de la parte no conforme de la estructura hasta el campo que describe la conformidad. Normalmente, la matriz conforme está al final de la estructura.
+Si la matriz es un puntero con atributos y la variable de conformidad es un campo de una estructura, el campo de desplazamiento contiene el desplazamiento desde el principio de la estructura hasta el campo de descripción de conformidad. Si la matriz no es un puntero con atributos y la variable de conformidad es un campo de una estructura, el campo de desplazamiento contiene el desplazamiento desde el final de la parte no conforme de la estructura hasta el campo de descripción de conformidad. Normalmente, la matriz compatible está al final de la estructura .
 
-Para la conformidad de nivel superior, el campo de desplazamiento contiene el desplazamiento desde la ubicación del primer parámetro del código auxiliar en la pila hasta el parámetro que describe la conformidad. Esto no se usa en **el modo –OS.** Hay otras excepciones a la interpretación del campo de desplazamiento; Estas excepciones se describen en la descripción de esos tipos.
+Para la conformidad de nivel superior, el campo de desplazamiento contiene el desplazamiento desde la ubicación del primer parámetro del código auxiliar en la pila hasta el parámetro que describe la conformidad. Esto no se usa en **el modo –Os.** Hay otras excepciones a la interpretación del campo de desplazamiento; Estas excepciones se describen en la descripción de esos tipos.
 
-Cuando offset<2> se usa con FC CALLBACK, contiene un índice en la tabla rutinaria de evaluación de expresiones generada \_ por el compilador. El mensaje de código auxiliar se pasa a la rutina de evaluación, que calcula el valor de conformidad y lo asigna al campo MaxCount del mensaje de código auxiliar.
+Cuando offset<2> se usa con FC CALLBACK, contiene un índice en la tabla de rutinas de evaluación de expresiones generada \_ por el compilador. El mensaje de código auxiliar se pasa a la rutina de evaluación, que luego calcula el valor de conformidad y lo asigna al campo MaxCount del mensaje de código auxiliar.
 
-Las marcas sólidas<campo 2> se han agregado para \_ Windows 2000 para admitir [**/robust,**](/windows/desktop/Midl/-robust)como la característica de denegación de ataques. Las marcas siguientes se definen en el primer byte:
+Las marcas sólidas<campo> 2 se han agregado para \_ Windows 2000 para admitir [**/robust,**](/windows/desktop/Midl/-robust)como la característica de denegación de ataques. Las marcas siguientes se definen en el primer byte:
 
 ``` syntax
 typedef  struct  _NDR_CORRELATION_FLAGS
@@ -131,17 +131,17 @@ typedef  struct  _NDR_CORRELATION_FLAGS
   } NDR_CORRELATION_FLAGS;
 ```
 
-La marca Early indica una correlación temprana frente a tardía. Una correlación temprana es cuando el argumento de expresión precede al argumento descrito, por ejemplo, un argumento de tamaño es anterior a un argumento de puntero de tamaño. Una correlación tardía es cuando el argumento de expresión viene después del argumento relacionado. El motor realiza la validación de los valores de correlación temprana inmediatamente; los valores de correlación en tiempo de ejecución se almacenan para la comprobación una vez que se realiza la desmarque.
+La marca Early indica la correlación temprana frente a la tardía. Una correlación temprana es cuando el argumento de expresión precede al argumento descrito, por ejemplo, un argumento de tamaño es anterior a un argumento de puntero de tamaño. Una correlación tardía es cuando el argumento de expresión viene después del argumento relacionado. El motor realiza la validación de los valores de correlación temprana de inmediato, los valores de correlación en tiempo de ejecución se almacenan para la comprobación una vez que se realiza la desmarque.
 
-La marca Split indica una división asincrónica entre \[ los argumentos de \] entrada \[ y \] salida. Por ejemplo, un argumento de tamaño puede estar en mientras que el puntero de tamaño \[ \] puede ser out \[ \] . En el contexto asincrónico de DCOM, estos argumentos se pueden encontrar en pilas diferentes, por lo que el motor debe tener esto en cuenta.
+La marca Split indica una división asincrónica entre \[ \] \[ \] argumentos de entrada y salida. Por ejemplo, un argumento de tamaño puede \[ estar en mientras que el puntero de tamaño puede estar fuera \] \[ \] . En el contexto asincrónico de DCOM, estos argumentos se pueden encontrar en pilas diferentes, por lo que el motor debe tener en cuenta esto.
 
-La marca IsIidIs indica una correlación **de iid \_ is().** La rutina ComposiciónComputeConformance está complicada para obtener un puntero a IID como un valor de expresión, pero la rutina de validación no puede comparar dichos valores (serían punteros) y, por tanto, la marca indica que es necesario comparar los IID reales.
+La marca IsIidIs indica una correlación **de iid \_ is().** La rutina ComputeConformance se ha complicado para obtener un puntero a IID como un valor de expresión, pero la rutina de validación no puede comparar estos valores (serían punteros) y, por tanto, la marca indica que es necesario comparar los IID reales.
 
 ### <a name="variance-description-and-other-array-attributes"></a>Descripción de varianza y otros atributos de matriz
 
-El formato del campo de descripción de varianza es idéntico al campo de descripción de conformidad. La diferencia es que un campo de mensaje de código auxiliar diferente se usa en el motor TEMPORARI como una variable temporal. En el caso de la descripción de varianza, es la longitud que se evalúa y el campo correspondiente se denomina ActualLength.
+El formato del campo de descripción de varianza es idéntico al campo de descripción de conformidad. La diferencia es que el motor TEMPORARI usa un campo de mensaje de código auxiliar diferente como variable temporal. En el caso de la descripción de varianza, es la longitud que se evalúa y el campo correspondiente se denomina ActualLength.
 
-Con la varianza, el desplazamiento inicial suele ser cero y el motor se optimiza en consecuencia. Si el **primer \_ atributo is()** se aplica a una matriz de variación compatible, se fuerza una devolución de llamada a una rutina de evaluación de expresiones.
+Con la varianza, el desplazamiento inicial suele ser cero y el motor se optimiza en consecuencia. Si el **primer \_ atributo is()** se aplica a una matriz variable compatible, se fuerza una devolución de llamada a una rutina de evaluación de expresiones.
 
  
 

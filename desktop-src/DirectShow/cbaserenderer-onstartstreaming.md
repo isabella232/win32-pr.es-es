@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1b0f050222b0ca6a88c7cf1d9348597e4d7b68f2a2ed431b4f6843afe97efd5b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 66433795b0674e1d2d5b7a7de5b1dcd1b50eb424
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118157678"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261447"
 ---
 # <a name="cbaserendereronstartstreaming-method"></a>Método CBaseRenderer.OnStartStreaming
 
-Se `OnStartStreaming` llama al método cuando el filtro comienza la transmisión por secuencias.
+Se `OnStartStreaming` llama al método cuando el filtro comienza a transmitirse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método CBaseRenderer::StartStreaming**](cbaserenderer-startstreaming.md) llama a este método. No hace nada en la clase base, pero la clase derivada puede invalidarla.
 
@@ -59,7 +59,7 @@ El [**método CBaseRenderer::StartStreaming**](cbaserenderer-startstreaming.md) 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

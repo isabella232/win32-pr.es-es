@@ -1,17 +1,17 @@
 ---
 description: La tabla CompLocator contiene la información necesaria para buscar un archivo o directorio que use los datos de configuración del instalador.
 ms.assetid: 8b527307-51bf-47b3-a0b2-3421cc5278b7
-title: CompLocator (tabla)
+title: CompLocator Table
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad6a51ad618521ff49b2a5b13f76fcfbae4207b5cdf4d77e76d3e128816bbb82
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e9fcb4a3c4f2e2c6f3ca3c92f6dc7466326bd11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118145084"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158848"
 ---
-# <a name="complocator-table"></a>CompLocator (tabla)
+# <a name="complocator-table"></a>CompLocator Table
 
 La tabla CompLocator contiene la información necesaria para buscar un archivo o directorio que use los datos de configuración del instalador.
 
@@ -43,7 +43,7 @@ Esta columna representa una firma de archivo única y también es la clave exter
 <span id="ComponentId"></span><span id="componentid"></span><span id="COMPONENTID"></span>Componentid
 </dt> <dd>
 
-Identificador de componente del componente cuya ruta de acceso de clave se va a usar para la búsqueda. Debe ser el GUID de un componente que aparece en el campo ComponentId de la [tabla de componentes](component-table.md). Puede ser el identificador de componente de un componente que pertenece a otro producto instalado en el equipo. No debe ser el GUID de un componente publicado que aparezca en el campo ComponentId de la [tabla PublishComponent](publishcomponent-table.md).
+Identificador de componente del componente cuya ruta de acceso de clave se va a usar para la búsqueda. Debe ser el GUID de un componente que aparece en el campo ComponentId de la [tabla de componentes](component-table.md). Puede ser el identificador de componente de un componente que pertenece a otro producto instalado en el equipo. No debe ser el GUID de un componente publicado que aparezca en el campo ComponentId de [la tabla PublishComponent](publishcomponent-table.md).
 
 Para buscar el valor guid del identificador de componente para un archivo instalado por otro producto, vaya al paquete de instalación del producto. Vaya a la [tabla de archivos](file-table.md) y busque la fila que contiene el identificador de archivo del archivo. La columna \_ Componente de esta fila contiene el identificador de componente para el componente que controla el archivo. Vaya a la [tabla Componente y](component-table.md) busque la fila que contiene este identificador de componente en la columna Componente . La columna ComponentId de esta fila contiene el GUID del identificador de componente.
 
@@ -69,13 +69,13 @@ En la tabla siguiente se enumeran los valores válidos. Si no está presente, Ty
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta tabla se usa con la [tabla de AppSearch](appsearch-table.md).
 
 Normalmente, las columnas de esta tabla no están localizadas. Si un autor decide buscar productos en varios idiomas, puede haber una entrada independiente incluida en la tabla para cada idioma.
 
-Para obtener más información, vea Buscar aplicaciones, archivos, entradas del Registro o [.ini de archivos existentes.](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)
+Para obtener más información, vea [Buscar aplicaciones, archivos, entradas del Registro o .ini de archivos existentes.](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)
 
 ## <a name="validation"></a>Validación
 

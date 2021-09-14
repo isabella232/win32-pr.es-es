@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 459bf16513003fcaea04b31cb6e014594895b8ef3f0c48c019fba69521c642c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f4ee85e2e9b1b7288aa8954c42d76c33b3be29b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117896923"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127070266"
 ---
 # <a name="esentslvrootpathinvalidexception-class"></a>Clase EsentSLVRootPathInvalidException
 
@@ -46,7 +46,7 @@ ms.locfileid: "117896923"
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

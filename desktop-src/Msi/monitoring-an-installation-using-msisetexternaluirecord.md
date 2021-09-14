@@ -1,19 +1,19 @@
 ---
-description: Los autores de paquetes pueden supervisar los mensajes internos del instalador de Windows mediante la creación de una aplicación ejecutable que contiene un controlador de devolución de llamada basado en registros para recibir los mensajes y la funcionalidad para iniciar una instalación.
+description: Los autores de paquetes pueden supervisar los mensajes internos de Windows Installer mediante la creación de una aplicación ejecutable que contiene un controlador de devolución de llamada basado en registros para recibir los mensajes y la funcionalidad para iniciar una instalación.
 ms.assetid: 5d9e51dd-7918-491f-aea9-01a6e0317c57
 title: Supervisión de una instalación mediante MsiSetExternalUIRecord
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fc74001a52d7eb1ef2cfbc3a052eaad1a2d72e127571f6f51d5afac992343a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce3fd0caf3d24eed49ff8a373b6f4d38037f840f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118945090"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127261100"
 ---
 # <a name="monitoring-an-installation-using-msisetexternaluirecord"></a>Supervisión de una instalación mediante MsiSetExternalUIRecord
 
-Los autores de paquetes pueden supervisar los mensajes internos del instalador de Windows mediante la creación de una aplicación ejecutable que contiene un controlador de devolución de llamada basado en registros para recibir los mensajes y la funcionalidad para iniciar una instalación.
+Los autores de paquetes pueden supervisar los mensajes internos de Windows Installer mediante la creación de una aplicación ejecutable que contiene un controlador de devolución de llamada basado en registros para recibir los mensajes y la funcionalidad para iniciar una instalación.
 
 El controlador basado en registros del ejemplo siguiente se ajusta al prototipo [**INSTALLUI \_ HANDLER \_ RECORD**](/windows/win32/api/msi/nc-msi-installui_handler_record) y se pasa un puntero a este controlador de devolución de llamada a la función [**MsiSetExternalUIRecord.**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord)
 

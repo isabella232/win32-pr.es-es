@@ -11,12 +11,12 @@ keywords:
 - doble búfer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ebc4d797371a966020fbdaff3d62d845ecbbfdc5f21f6e37393e01b2defad5d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97cb068f06135c6ba29e8a61f472d98907090a78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119554625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127260287"
 ---
 # <a name="d-opengl"></a>D (OpenGL)
 
