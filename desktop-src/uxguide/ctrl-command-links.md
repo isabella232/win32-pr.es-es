@@ -4,12 +4,12 @@ description: Con los vínculos de comandos, los usuarios seleccionan una única 
 ms.assetid: a77819b1-9a32-4468-94fb-3f73a469fb81
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: ac24618b70d96b1b625549582af27e47b5386f354f09e7147000fc5ed438a36f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b579f554d46d48fd7e373d28df516ae1c0baca6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119091131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267551"
 ---
 # <a name="command-links"></a>Vínculos de comandos
 
@@ -39,7 +39,7 @@ Para decidirte, intenta responder a estas preguntas:
 
     ![captura de pantalla de un elemento del panel de control personalizar ](images/ctrl-command-links-image2.png)
 
-    Aunque el elemento personalization Panel de control parece que usa vínculos de comandos, [](winenv-ctrl-panels.md) las opciones son vínculos normales porque esta página central es para la navegación pura.
+    Aunque el elemento personalization Panel de control parece que usa vínculos de comandos, [](winenv-ctrl-panels.md) las opciones son vínculos normales porque esta página central es para navegación pura.
 
 -   **¿Se usa el control para elegir una respuesta de un conjunto de respuestas mutuamente excluyentes?** Si no es así, usa otro control. Para permitir que los usuarios elijan comandos individuales, use botones de comando o vínculos.
 -   **Para los cuadros de diálogo, ¿al hacer clic en el control se cierra la ventana?** Si no es así, use un control que no requiera cerrar la ventana, como botones de radio, botones de comando o vínculos.

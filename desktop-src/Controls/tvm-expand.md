@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 025527dc86e832cf24a86cf9c973d1e2e5103fa23e597bc14cb35e00dba276a5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 14d5cd7577c6f4581865569c3aefca93f13aa305
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120104425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165770"
 ---
 # <a name="tvm_expand-message"></a>Mensaje \_ DE EXPANSIÓN DE TVM
 
@@ -53,7 +53,7 @@ Marca de acción. Este parámetro puede ser uno o varios de los valores siguient
 *lParam* 
 </dt> <dd>
 
-Controlar el elemento primario que se expandirá o contraerá.
+Identificador del elemento primario que se expandirá o contraerá.
 
 </dd> </dl>
 
@@ -61,13 +61,13 @@ Controlar el elemento primario que se expandirá o contraerá.
 
 Devuelve un valor distinto de cero si la operación se ha realizado correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La expansión de un nodo que ya está expandido se considera una operación correcta y [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) devuelve un valor distinto de cero. Al contraer un nodo, se devuelve cero si el nodo ya está contraído; de lo contrario, devuelve distinto de cero. El intento de expandir o contraer un nodo que no tiene ningún nodo secundario se considera un error y **SendMessage** devuelve cero.
+La expansión de un nodo que ya está expandido se considera una operación correcta y [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) devuelve un valor distinto de cero. Al contraer un nodo, se devuelve cero si el nodo ya está contraído; de lo contrario, devuelve un valor distinto de cero. El intento de expandir o contraer un nodo que no tiene ningún nodo secundario se considera un error y **SendMessage** devuelve cero.
 
-Cuando un elemento se expande por primera vez mediante un mensaje EXPAND de **TVM, \_** la acción genera los códigos de notificación [TVN \_ ITEMEXPANDING](tvn-itemexpanding.md) y [TVN \_ ITEMEXPANDED](tvn-itemexpanded.md) y se establece la marca de estado [**TVIS \_ EXPANDEDONCE**](tree-view-control-item-states.md) del elemento. Mientras esta marca de estado permanezca establecida, los mensajes EXPAND de **\_ TVM** subsiguientes no generarán notificaciones \_ ITEMEXPANDING de TVN o \_ ITEMEXPANDED de TVN. Para restablecer la marca de estado **TVIS \_ EXPANDEDONCE,** debe enviar un mensaje **TVM \_ EXPAND** con las marcas TVE COLLAPSE y \_ TVE \_ COLLAPSERESET establecidas. Si se intenta establecer explícitamente **TVIS \_ EXPANDEDONCE,** se provocará un comportamiento impredecible.
+Cuando un elemento se expande por primera vez mediante un mensaje EXPAND de **TVM, \_** la acción genera los códigos de notificación [TVN \_ ITEMEXPANDING](tvn-itemexpanding.md) y [TVN \_ ITEMEXPANDED](tvn-itemexpanded.md) y se establece la marca de estado [**TVIS \_ EXPANDEDONCE**](tree-view-control-item-states.md) del elemento. Mientras esta marca de estado permanezca establecida, los mensajes EXPAND de **\_ TVM** subsiguientes no generarán notificaciones \_ ITEMEXPANDING de TVN o \_ ITEMEXPANDED de TVN. Para restablecer la marca de estado **TVIS \_ EXPANDEDONCE,** debe enviar un mensaje **\_ TVM EXPAND** con las marcas TVE COLLAPSE y \_ TVE \_ COLLAPSERESET establecidas. Si se intenta establecer explícitamente **TVIS \_ EXPANDEDONCE,** se provocará un comportamiento impredecible.
 
-La operación de expansión puede producir un error si el propietario del control treeview deniega la operación en respuesta a una notificación [ \_ ITEMEXPANDING de TVN.](tvn-itemexpanding.md)
+La operación de expansión puede producir un error si el propietario del control treeview deniega la operación en respuesta a una [notificación \_ ITEMEXPANDING de TVN.](tvn-itemexpanding.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,7 +77,7 @@ La operación de expansión puede producir un error si el propietario del contro
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

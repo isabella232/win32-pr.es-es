@@ -1,6 +1,6 @@
 ---
 title: STN_CLICKED de notificación (Winuser.h)
-description: El código de notificación CLICKED de STN se envía cuando el usuario hace clic en un control estático \_ que tiene el estilo NOTIFY de SS. \_ La ventana primaria del control recibe este código de notificación a través del mensaje \_ WM COMMAND.
+description: El código de notificación DE STN CLICKED se envía cuando el usuario hace clic en un control estático \_ que tiene el estilo NOTIFY de SS. \_ La ventana primaria del control recibe este código de notificación a través del mensaje \_ WM COMMAND.
 ms.assetid: deeac9e9-c23e-4ffb-a1d7-18782efb7a5c
 keywords:
 - STN_CLICKED código de notificación Windows controles
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 984bbe63444593707de7e410ebd9cb47fb60bac4766ea6ee57660f034e45924d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91f63bc496469f6edc26b4f9176f3f9157464bdd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119797875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166990"
 ---
-# <a name="stn_clicked-notification-code"></a>Código de notificación DE STN \_ CLICKED
+# <a name="stn_clicked-notification-code"></a>Código de notificación CLICKED de STN \_
 
-El código de notificación CLICKED de STN se envía cuando el usuario hace clic en un control estático \_ que tiene el estilo NOTIFY [**\_ de SS.**](static-control-styles.md) La ventana primaria del control recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
+El código de notificación DE STN CLICKED se envía cuando el usuario hace clic en un control estático \_ que tiene el estilo NOTIFY [**\_ de SS.**](static-control-styles.md) La ventana primaria del control recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ STN_CLICKED
 *wParam* 
 </dt> <dd>
 
-Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador del control estático. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
+LOWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador del control estático. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -57,11 +57,11 @@ Identificador del control estático.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Identificador del control estático.
 **Referencia**
 </dt> <dt>
 
-[\_DBLCLK de STN](stn-dblclk.md)
+[STN \_ DBLCLK](stn-dblclk.md)
 </dt> <dt>
 
 **Conceptual**

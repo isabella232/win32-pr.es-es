@@ -4,12 +4,12 @@ ms.assetid: 7E5E7C60-9C3F-406B-A7DD-A953181CD314
 title: MFStreamExtension_PinholeCameraIntrinsics atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c0a77f7d49770e084dfe258169863a713311be02f1711c6f637c7bfc16b4e55
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ee9ad848f0b8cc12c2496544d98b4ef17332151
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118973184"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268783"
 ---
 # <a name="mfstreamextension_pinholecameraintrinsics-attribute"></a>Atributo MFStreamExtension \_ PinholeCameraIntrinsics
 
@@ -23,7 +23,7 @@ Byte array
 
 Para obtener este atributo, llame [**a IMFMediaSourceEx::GetStreamAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourceex-getstreamattributes).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor del atributo es [**MFPinholeCameraIntrinsics.**](/windows/desktop/api/mfapi/ns-mfapi-mfpinholecameraintrinsics)
 
@@ -35,7 +35,7 @@ El valor del atributo es [**MFPinholeCameraIntrinsics.**](/windows/desktop/api/m
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                            |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

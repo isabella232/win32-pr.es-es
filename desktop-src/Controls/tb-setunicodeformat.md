@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9736018fd528f4e59d6fc010e6a1c0c9f95a9f5dbdd056ff5a2eabc96500fb90
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d27689668eadd65ebabe1d34427699a9e7ebc5c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118167438"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166550"
 ---
 # <a name="tb_setunicodeformat-message"></a>Mensaje \_ SETUNICODEFORMAT de TB
 
@@ -43,7 +43,7 @@ Determina el juego de caracteres utilizado por el control . Si este valor es dis
 
 Devuelve la marca de formato Unicode anterior para el control .
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Consulte los comentarios de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodeformat.md) obtener una explicación de este mensaje.
 
@@ -51,11 +51,11 @@ Consulte los comentarios de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodefor
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

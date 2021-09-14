@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 60c4e1081dec3e44107778e45fd911e0c4bb673d27b5e19874508ddbacb270ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 17c2de88749b4dd4a0ab756b77866c16e8878486
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118342649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242553"
 ---
 # <a name="cdrom-object"></a>Cdrom (objeto)
 
@@ -31,7 +31,7 @@ El **objeto Cdrom** admite las siguientes propiedades.
 | Propiedad                                   | Descripción                                                                                                                                             |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [driveSpecifier](cdrom-drivespecifier.md) | Recupera la letra de unidad de CD o DVD.                                                                                                                   |
-| [Reproducción](cdrom-playlist.md)             | Recupera un objeto [Playlist que](playlist-object.md) representa las pistas del CD actualmente en la unidad de CD o las entradas de título de nivel raíz para DVD. |
+| [Reproducción](cdrom-playlist.md)             | Recupera un objeto [Playlist que](playlist-object.md) representa las pistas del CD actualmente en la unidad de CD o las entradas de título de nivel de raíz para DVD. |
 
 
 
@@ -49,7 +49,7 @@ El **objeto Cdrom** admite el método siguiente.
 
  
 
-Se accede al objeto **Cdrom** mediante el método siguiente.
+Se **accede al objeto Cdrom** mediante el método siguiente.
 
 
 

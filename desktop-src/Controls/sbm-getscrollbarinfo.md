@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11f779f237d0ad04fe3e3d8f3348c51c195470280c9b0c20d12c1e245d04a089
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b8bdd78eb665bd069d854538bb2bdfae1a946765
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119503985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167081"
 ---
-# <a name="sbm_getscrollbarinfo-message"></a>Mensaje \_ SBM GETSCROLLBARINFO
+# <a name="sbm_getscrollbarinfo-message"></a>Mensaje SBM \_ GETSCROLLBARINFO
 
 Enviado por una aplicación para recuperar información sobre la barra de desplazamiento especificada.
 
@@ -45,7 +45,7 @@ Puntero a una [**estructura SCROLLBARINFO**](/windows/win32/api/winuser/ns-winus
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero en caso contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
 Para obtener información de error extendida, llame a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
@@ -57,7 +57,7 @@ Para obtener información de error extendida, llame a [**GetLastError**](/window
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

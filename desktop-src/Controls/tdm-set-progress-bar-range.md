@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54d94da64bd01b17addeb8f65def177e7e7e5d7daccbafb1629d1158f8c6636d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d17ebb6caa2c33282dccbb117980fc970cd45477
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119875915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166113"
 ---
 # <a name="tdm_set_progress_bar_range-message"></a>Mensaje TDM \_ SET \_ PROGRESS BAR \_ \_ RANGE
 
@@ -45,7 +45,7 @@ Debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve los valores mínimo y máximo anteriores, si se realiza correctamente, o cero en caso contrario. LOWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el valor mínimo y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contiene el valor máximo.
+Devuelve los valores mínimo y máximo anteriores, si se realiza correctamente, o cero en caso contrario. LOWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el valor mínimo y [**hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contiene el valor máximo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Devuelve los valores mínimo y máximo anteriores, si se realiza correctamente, 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

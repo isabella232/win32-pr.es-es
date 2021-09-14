@@ -4,19 +4,19 @@ description: Notificaciones de menú
 ms.assetid: 8ff5671e-a666-483c-9ac1-f8be6eb58ffa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7370da93f430c62618b5d459e40bfa56cb7a9ff9f960f95eb6ce614cc7273e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f593e3007dff82241dc9e917a6cfa140cc443679
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118734261"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268519"
 ---
 # <a name="menu-notifications"></a>Notificaciones de menú
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**COMANDO \_ WM**](wm-command.md)
--   [**WM \_ CONTEXTMENU**](wm-contextmenu.md)
+-   [**CONTEXTMENU de WM \_**](wm-contextmenu.md)
 -   [**WM \_ ENTERMENULOOP**](wm-entermenuloop.md)
 -   [**WM \_ EXITMENULOOP**](wm-exitmenuloop.md)
 -   [**WM \_ GETTITLEBARINFOEX**](wm-gettitlebarinfoex.md)

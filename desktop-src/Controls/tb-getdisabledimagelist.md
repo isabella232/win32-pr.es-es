@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8eec9285e9a516547aece30d059f1fabd9d590e445d2124e9bccad5cb6cfc354
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2fc847927ef14312c76e26303bec5de07b788266
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118669948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166834"
 ---
 # <a name="tb_getdisabledimagelist-message"></a>Mensaje \_ GETDISABLEDIMAGELIST de TB
 
@@ -47,7 +47,7 @@ Devuelve el identificador a la lista de imágenes inactivas o **NULL** si no se 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

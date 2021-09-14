@@ -1,19 +1,19 @@
 ---
-description: Evento por usuario generado por un cliente de correo electrónico cuando se intenta recibir un mensaje en controles parentales.
+description: Evento por usuario generado por un cliente de correo electrónico cuando se intenta recibir un mensaje en los controles parentales.
 ms.assetid: 3b8d9bac-16b0-49e9-b360-b2d6e82f1753
 title: WPCEVENT_EMAIL_RECEIVED evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a81a51e79125403504aae2ed6e823c10044ffc35ed36ff139e8333f955338d81
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f14d583cadb6bc976b85953bb09ea34811a5061
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268415"
 ---
 # <a name="wpcevent_email_received-event"></a>Evento WPCEVENT \_ EMAIL \_ RECEIVED
 
-Evento por usuario generado por un cliente de correo electrónico cuando se intenta recibir un mensaje en controles parentales.
+Evento por usuario generado por un cliente de correo electrónico cuando se intenta recibir un mensaje en los controles parentales.
 
 
 ```C++
@@ -43,7 +43,7 @@ Nombre de la aplicación de correo electrónico que genera el evento.
 *AppVersion* 
 </dt> <dd>
 
-La versión de la aplicación de correo electrónico que genera el evento.
+Versión de la aplicación de correo electrónico que genera el evento.
 
 </dd> <dt>
 
@@ -111,11 +111,11 @@ Nombre de la cuenta de correo electrónico de este usuario.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

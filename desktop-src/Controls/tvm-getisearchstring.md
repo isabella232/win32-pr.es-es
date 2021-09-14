@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79838b2b0d2f109216caf970d33d51b4a3c1369da7b1fc47f5a53e45c3ee82fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa968d78a1a99dd3b1eb90055cf2c1d2de51db86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120060245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165745"
 ---
-# <a name="tvm_getisearchstring-message"></a>Mensaje \_ GETISEARCHSTRING de TVM
+# <a name="tvm_getisearchstring-message"></a>Mensaje \_ DE TVM GETISEARCHSTRING
 
-Recupera la cadena de búsqueda incremental para un control de vista de árbol. El control de vista de árbol usa la cadena de búsqueda incremental para seleccionar un elemento basado en los caracteres especificados por el usuario. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ GetISearchString.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getisearchstring)
+Recupera la cadena de búsqueda incremental para un control de vista de árbol. El control de vista de árbol usa la cadena de búsqueda incremental para seleccionar un elemento en función de los caracteres que escribe el usuario. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ GetISearchString.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getisearchstring)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,9 +45,9 @@ Puntero al búfer que recibe la cadena de búsqueda incremental.
 
 Devuelve el número de caracteres de la cadena de búsqueda incremental.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-**Advertencia de seguridad:** El uso incorrecto de este mensaje podría poner en peligro la seguridad del programa. Debe asignar un búfer lo suficientemente grande como para contener la cadena. En primer lugar, llame al mensaje **pasando NULL** *en lParam*. Esto devuelve el número de caracteres, excepto **NULL,** que son necesarios. A continuación, llame al mensaje una segunda vez para recuperar la cadena. Debe revisar [Consideraciones de seguridad: Controles de Windows Microsoft](sec-comctls.md) antes de continuar.
+**Advertencia de seguridad:** El uso incorrecto de este mensaje podría poner en peligro la seguridad del programa. Debe asignar un búfer lo suficientemente grande para contener la cadena. En primer lugar, llame al mensaje **que pasa NULL** en *lParam*. Esto devuelve el número de caracteres, excepto **NULL,** que son necesarios. A continuación, llame al mensaje una segunda vez para recuperar la cadena. Debe revisar Security [Considerations: Microsoft Windows Controls](sec-comctls.md) (Consideraciones de seguridad: Microsoft Windows controles antes de continuar).
 
 Si el control de vista de árbol no está en modo de búsqueda incremental, el valor devuelto es cero.
 
@@ -59,7 +59,7 @@ Si el control de vista de árbol no está en modo de búsqueda incremental, el v
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVM \_ GETISEARCHSTRINGW** (Unicode) y **TVM \_ GETISEARCHSTRINGA** (ANSI)<br/> |
 
 

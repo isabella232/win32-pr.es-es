@@ -1,6 +1,6 @@
 ---
 title: Acerca de los menús
-description: En este tema se de abordan los menús.
+description: En este tema se deba a los menús.
 ms.assetid: fd0b26f1-93cd-421b-9097-8502ab7681e9
 keywords:
 - resources,menus
@@ -15,12 +15,12 @@ keywords:
 - menús, lista desplegable
 - nombres de menú
 - menús, acceso directo
-- menus,Window
-- menus,System
+- menús,Ventana
+- menús,Sistema
 - menus,Control
 - menús contextuales
 - Menú Ventana
-- Menú Del sistema
+- Menú Sistema
 - Menú Control
 - identificadores de ayuda
 - identificadores de menú
@@ -34,24 +34,24 @@ keywords:
 - menús, propietario dibujado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34d35ddf55ad31ed27cc12c6adffa5517e0081db6d70b4d01d3b88780a8797bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed5d42eb42aaaaa16eef0b5b118adcfe0f91156e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034502"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268583"
 ---
 # <a name="about-menus"></a>Acerca de los menús
 
-Un *menú* es una lista de elementos que especifican opciones o grupos de opciones (un submenú) para una aplicación. Al hacer clic en un elemento de menú, se abre un submenú o se hace que la aplicación lleve a cabo un comando. En esta sección se proporciona información sobre los temas siguientes:
+Un *menú* es una lista de elementos que especifican opciones o grupos de opciones (un submenú) para una aplicación. Al hacer clic en un elemento de menú se abre un submenú o se hace que la aplicación lleve a cabo un comando. En esta sección se proporciona información sobre los temas siguientes:
 
--   [Menús y barras de menús](#menu-bars-and-menus)
+-   [Barras de menús y menús](#menu-bars-and-menus)
     -   [Menús contextuales](#shortcut-menus)
     -   [Menú Ventana](#the-window-menu)
     -   [Identificador de ayuda](#help-identifier)
 -   [Acceso mediante teclado a los menús](#keyboard-access-to-menus)
     -   [Interfaz de teclado estándar](#standard-keyboard-interface)
-    -   [Teclas de acceso de menú](#menu-access-keys)
+    -   [Teclas de acceso del menú](#menu-access-keys)
     -   [Teclas de método abreviado de menú](#menu-shortcut-keys)
 -   [Creación de menús](#menu-creation)
     -   [Recursos de plantilla de menú](#menu-template-resources)
@@ -74,13 +74,13 @@ Un *menú* es una lista de elementos que especifican opciones o grupos de opcion
 -   [Mensajes usados con menús](#messages-used-with-menus)
 -   [Destrucción de menús](#menu-destruction)
 
-## <a name="menu-bars-and-menus"></a>Menús y barras de menús
+## <a name="menu-bars-and-menus"></a>Barras de menús y menús
 
-Un menú se organiza en una jerarquía. En el nivel superior de la jerarquía se encuentra la barra *de menús*; que contiene una lista de *menús*, que a su vez pueden contener *submenús*. A veces, una barra de menús se denomina menú de nivel superior y los menús y submenús también se conocen como *menús emergentes.*
+Un menú se organiza en una jerarquía. En el nivel superior de la jerarquía se encuentra la barra *de menús*; que contiene una lista de *menús* que, a su vez, pueden contener *submenús*. Una barra de menús *a* veces se denomina menú de nivel superior y los menús y submenús también se conocen como *menús emergentes.*
 
 Un elemento de menú puede llevar a cabo un comando o abrir un submenú. Un elemento que lleva a cabo un comando se denomina elemento *de comando* o *comando*.
 
-Un elemento de la barra de menús casi siempre abre un menú. Las barras de menús rara vez contienen elementos de comando. Un menú abierto desde la barra de menús baja de la barra de menús y, a veces, se denomina *menú desplegable*. Cuando se muestra un menú desplegable, se adjunta a la barra de menús. Un elemento de menú de la barra de menús que abre un menú desplegable también se denomina nombre *de menú*.
+Un elemento de la barra de menús casi siempre abre un menú. Las barras de menús rara vez contienen elementos de comando. Un menú abierto desde la barra de menús se coloca en la barra de menús y, a veces, se *denomina menú desplegable*. Cuando se muestra un menú desplegable, se adjunta a la barra de menús. Un elemento de menú de la barra de menús que abre un menú desplegable también se denomina nombre *de menú*.
 
 Los nombres de menú de una barra de menús representan las categorías principales de comandos que proporciona una aplicación. Al seleccionar un nombre de menú en la barra de menús, normalmente se abre un menú cuyos elementos de menú corresponden a los comandos de una categoría. Por ejemplo, una barra  de menús podría contener un nombre de menú Archivo que, cuando el usuario hace clic en él, activa un menú con elementos de menú como **Nuevo,** **Abrir** y **Guardar.** Para obtener información sobre una barra de menús, llame a [**GetMenuBarInfo**](/windows/desktop/api/Winuser/nf-winuser-getmenubarinfo).
 
@@ -88,7 +88,7 @@ Solo una ventana superpuesta o emergente puede contener una barra de menús; una
 
 Cada menú debe tener una ventana de propietario. El sistema envía mensajes a la ventana de propietario de un menú cuando el usuario selecciona el menú o elige un elemento del menú.
 
-En esta sección se tratan los temas siguientes.
+En esta sección se de tratan los temas siguientes.
 
 -   [Menús contextuales](#shortcut-menus)
 -   [Menú Ventana](#the-window-menu)
@@ -96,9 +96,9 @@ En esta sección se tratan los temas siguientes.
 
 ### <a name="shortcut-menus"></a>Menús contextuales
 
-El sistema también proporciona *menús contextuales.* Un menú contextual no está asociado a la barra de menús; puede aparecer en cualquier parte de la pantalla. Normalmente, una aplicación asocia un menú contextual con una parte de una ventana, como el área de cliente, o con un objeto específico, como un icono. Por esta razón, estos menús también se *denominan menús contextuales.*
+El sistema también proporciona *menús contextuales*. Un menú contextual no está asociado a la barra de menús; puede aparecer en cualquier lugar de la pantalla. Normalmente, una aplicación asocia un menú contextual con una parte de una ventana, como el área de cliente, o con un objeto específico, como un icono. Por este motivo, estos menús también se *denominan menús contextuales.*
 
-Un menú contextual permanece oculto hasta que el usuario lo activa, normalmente haciendo clic con el botón derecho en una selección, una barra de herramientas o un botón de la barra de tareas. Normalmente, el menú se muestra en la posición del cursor del cursor del mouse o del cursor de cursor.
+Un menú contextual permanece oculto hasta que el usuario lo activa, normalmente haciendo clic con el botón derecho en una selección, una barra de herramientas o un botón de la barra de tareas. Normalmente, el menú se muestra en la posición del cursor del mouse o del cursor de cursor.
 
 ### <a name="the-window-menu"></a>Menú Ventana
 
@@ -106,13 +106,13 @@ El **menú** Ventana (también  conocido como menú Sistema o **Control)** es un
 
 El **menú** Ventana proporciona un conjunto estándar de elementos de menú que el usuario puede elegir para cambiar el tamaño o la posición de una ventana, o cerrar la aplicación. Los elementos del menú de la ventana se pueden agregar, eliminar y modificar, pero la mayoría de las aplicaciones solo usan el conjunto estándar de elementos de menú. Una ventana superpuesta, emergente o secundaria puede tener un menú de ventana. No es habitual que una ventana superpuesta o emergente no incluya un menú de ventana.
 
-Cuando el usuario elige un comando en el menú **Ventana,** el sistema envía un mensaje [**WM \_ SYSCOMMAND**](wm-syscommand.md) a la ventana de propietario del menú. En la mayoría de las aplicaciones, el procedimiento de ventana no procesa mensajes desde el menú de la ventana. En su lugar, simplemente pasa los mensajes a la [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para el procesamiento predeterminado del sistema del mensaje. Si una aplicación agrega un comando al menú de ventana, el procedimiento de ventana debe procesar el comando.
+Cuando el usuario elige un comando en el menú **Ventana,** el sistema envía un mensaje [**WM \_ SYSCOMMAND**](wm-syscommand.md) a la ventana de propietario del menú. En la mayoría de las aplicaciones, el procedimiento de ventana no procesa mensajes desde el menú de la ventana. En su lugar, simplemente pasa los mensajes a la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para el procesamiento predeterminado del sistema del mensaje. Si una aplicación agrega un comando al menú de ventana, el procedimiento de ventana debe procesar el comando.
 
 Una aplicación puede usar la [**función GetSystemMenu**](/windows/desktop/api/Winuser/nf-winuser-getsystemmenu) para crear una copia del menú de ventana predeterminado que se modificará. Cualquier ventana que no use la **función GetSystemMenu** para realizar su propia copia del menú de ventana recibe el menú de ventana estándar.
 
 ### <a name="help-identifier"></a>Identificador de ayuda
 
-Asociado a cada barra de menús, menú, submenú y menú contextual es un identificador de ayuda. Si el usuario presiona la tecla F1 mientras el menú está activo, este valor se envía a la ventana de propietario como parte de un [**mensaje DE AYUDA \_ de WM.**](../shell/wm-help.md)
+Asociado a cada barra de menús, menú, submenú y menú contextual es un identificador de ayuda. Si el usuario presiona la tecla F1 mientras el menú está activo, este valor se envía a la ventana de propietario como parte de un [**mensaje DE AYUDA \_ DE WM.**](../shell/wm-help.md)
 
 ## <a name="keyboard-access-to-menus"></a>Acceso mediante teclado a los menús
 
@@ -147,15 +147,15 @@ El sistema está diseñado para funcionar con o sin un mouse u otro dispositivo 
 
 ### <a name="menu-access-keys"></a>Teclas de acceso del menú
 
-La interfaz de teclado estándar para los menús se puede mejorar agregando teclas de acceso (mnemotécnicas) a los elementos de menú. Una clave de acceso es una letra subrayada en el texto de un elemento de menú. Cuando un menú está activo, el usuario puede seleccionar un elemento de menú presionando la tecla que corresponde a la letra subrayada del elemento. El usuario activa la barra de menús presionando la tecla ALT para resaltar el primer elemento de la barra de menús. Un menú está activo cuando se muestra.
+La interfaz de teclado estándar para los menús se puede mejorar agregando teclas de acceso (mnemónicas) a los elementos de menú. Una clave de acceso es una letra subrayada en el texto de un elemento de menú. Cuando un menú está activo, el usuario puede seleccionar un elemento de menú presionando la tecla correspondiente a la letra subrayada del elemento. El usuario activa la barra de menús presionando la tecla ALT para resaltar el primer elemento de la barra de menús. Un menú está activo cuando se muestra.
 
-Para crear una clave de acceso para un elemento de menú, preceda cualquier carácter de la cadena de texto del elemento con una y comercial. Por ejemplo, la cadena de texto "&Move" hace que el sistema subrayado la letra "M".
+Para crear una clave de acceso para un elemento de menú, preceda a cualquier carácter de la cadena de texto del elemento con una y comercial. Por ejemplo, la cadena de texto "&Move" hace que el sistema subrayado la letra "M".
 
 ### <a name="menu-shortcut-keys"></a>Teclas de método abreviado de menú
 
-Además de tener una clave de acceso, un elemento de menú puede tener una tecla de método abreviado asociada. Una tecla de método abreviado es diferente de una clave de acceso, porque el menú no tiene que estar activo para que la tecla de método abreviado funcione. Además, una tecla de acceso *siempre* está asociada a un elemento de menú, mientras que una tecla de método abreviado suele estar *asociada* (pero no tiene que estar) con un elemento de menú.
+Además de tener una clave de acceso, un elemento de menú puede tener asociada una tecla de método abreviado. Una tecla de método abreviado es diferente de una clave de acceso, porque el menú no tiene que estar activo para que la tecla de método abreviado funcione. Además, una tecla de acceso *siempre* está asociada a un elemento de menú, mientras que una tecla de método abreviado suele estar *asociada* (pero no tiene que estar) con un elemento de menú.
 
-El texto que identifica la tecla de método abreviado se agrega a la cadena de texto del elemento de menú. El texto del método abreviado aparece a la derecha del nombre del elemento de menú, después de una barra diagonal inversa y un carácter de tabulación \\ (t). Por ejemplo, "&Cerrar tAlt+F4" representa un comando Cerrar con la combinación de teclas ALT+F4 como tecla de método abreviado y con la letra "C" como clave de \\ acceso. Para obtener más información, vea [Aceleradores de teclado](keyboard-accelerators.md).
+El texto que identifica la tecla de método abreviado se agrega a la cadena de texto del elemento de menú. El texto del método abreviado aparece a la derecha del nombre del elemento de menú, después de una barra diagonal inversa y un carácter de tabulación \\ (t). Por ejemplo, "&Cerrar tAlt+F4" representa un comando Cerrar con la combinación de teclas ALT+F4 como tecla de método abreviado y con la letra "C" como clave de \\ acceso. Para obtener más información, vea [Keyboard Accelerators](keyboard-accelerators.md).
 
 ## <a name="menu-creation"></a>Creación de menús
 
@@ -194,11 +194,11 @@ Para recuperar un identificador en la barra de menús de un menú que se ha crea
 
 ### <a name="menu-creation-functions"></a>Funciones de creación de menús
 
-Con las funciones de creación de menús, puede crear menús en tiempo de ejecución o agregar elementos de menú a los menús existentes. Puede usar la función [**CreateMenu**](/windows/desktop/api/Winuser/nf-winuser-createmenu) para crear una barra de menús vacía y la [**función CreatePopupMenu**](/windows/desktop/api/Winuser/nf-winuser-createpopupmenu) para crear un menú vacío. Puede guardar cierta información de configuración para un menú mediante la [**estructura MENUINFO.**](/windows/win32/api/winuser/ns-winuser-menuinfo) Para obtener o recuperar la configuración de un menú, use [**GetMenuInfo**](/windows/desktop/api/Winuser/nf-winuser-getmenuinfo) o [**SetMenuInfo**](/windows/desktop/api/Winuser/nf-winuser-setmenuinfo). Para agregar elementos a un menú, use la [**función InsertMenuItem.**](/windows/desktop/api/Winuser/nf-winuser-insertmenuitema) Todavía se [**admiten las**](/windows/desktop/api/Winuser/nf-winuser-appendmenua) funciones AppendMenu e [**InsertMenu**](/windows/desktop/api/Winuser/nf-winuser-insertmenua) anteriores, pero **InsertMenuItem** debe usarse para las nuevas aplicaciones.
+Con las funciones de creación de menús, puede crear menús en tiempo de ejecución o agregar elementos de menú a los menús existentes. Puede usar la función [**CreateMenu**](/windows/desktop/api/Winuser/nf-winuser-createmenu) para crear una barra de menús vacía y la [**función CreatePopupMenu**](/windows/desktop/api/Winuser/nf-winuser-createpopupmenu) para crear un menú vacío. Puede guardar cierta información de configuración para un menú mediante la [**estructura MENUINFO.**](/windows/win32/api/winuser/ns-winuser-menuinfo) Para obtener o recuperar la configuración de un menú, use [**GetMenuInfo**](/windows/desktop/api/Winuser/nf-winuser-getmenuinfo) o [**SetMenuInfo**](/windows/desktop/api/Winuser/nf-winuser-setmenuinfo). Para agregar elementos a un menú, use la [**función InsertMenuItem.**](/windows/desktop/api/Winuser/nf-winuser-insertmenuitema) Todavía se [**admiten las**](/windows/desktop/api/Winuser/nf-winuser-appendmenua) funciones AppendMenu e [**InsertMenu**](/windows/desktop/api/Winuser/nf-winuser-insertmenua) anteriores, pero **insertMenuItem** debe usarse para las nuevas aplicaciones.
 
 ### <a name="menu-display"></a>Presentación del menú
 
-Una vez cargado o creado un menú, debe asignarse a una ventana para que el sistema pueda mostrarlo. Puede asignar un menú definiendo un menú de clase. Para obtener más información, vea [Menús de clase de ventana](#window-class-menus). También puede asignar un menú a una ventana especificando un identificador para el menú como el parámetro *hMenu* de la función [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o llamando a la [**función SetMenu.**](/windows/desktop/api/Winuser/nf-winuser-setmenu)
+Una vez cargado o creado un menú, debe asignarse a una ventana para que el sistema pueda mostrarlo. Puede asignar un menú definiendo un menú de clases. Para obtener más información, vea [Menús de clase de ventana](#window-class-menus). También puede asignar un menú a una ventana especificando un identificador para el menú como el parámetro *hMenu* de la función [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o llamando a la [**función SetMenu.**](/windows/desktop/api/Winuser/nf-winuser-setmenu)
 
 Para mostrar un menú contextual, use [**la función TrackPopupMenuEx.**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenuex) Los menús contextuales, también denominados menús emergentes flotantes o menús contextuales, se muestran normalmente cuando se procesa el mensaje [**\_ CONTEXTMENU**](wm-contextmenu.md) de WM.
 
@@ -247,7 +247,7 @@ Para recuperar el identificador del elemento de menú en una posición especific
 
 Además de tener un identificador único, cada elemento de menú de una barra de menús o un menú tiene un valor de posición único. El elemento situado más a la izquierda en una barra de menús o el elemento superior de un menú tiene la posición cero. El valor de posición se incrementa para los elementos de menú posteriores. El sistema asigna un valor de posición a todos los elementos de un menú, incluidos los separadores. En la ilustración siguiente se muestran los valores de posición de los elementos en una barra de menús y en un menú.
 
-![barra de menús y menú](images/csemn-01.png)
+![menú y barra de menús](images/csemn-01.png)
 
 Al llamar a una función de menú que modifica o recupera información sobre un elemento de menú específico, puede especificar el elemento mediante su identificador o su posición. Para obtener más información, vea la siguiente sección.
 
@@ -273,7 +273,7 @@ A veces, un grupo de elementos de menú corresponde a un conjunto de opciones mu
 
 De forma predeterminada, el sistema muestra una marca de verificación o un mapa de bits de viñeta junto a los elementos de menú seleccionados y ningún mapa de bits junto a los elementos de menú borrados. Sin embargo, puede usar la función [**SetMenuItemBitmaps**](/windows/desktop/api/Winuser/nf-winuser-setmenuitembitmaps) para asociar mapas de bits seleccionados y borrados definidos por la aplicación con un elemento de menú. A continuación, el sistema usa los mapas de bits especificados para indicar el estado seleccionado o borrado del elemento de menú.
 
-Los mapas de bits definidos por la aplicación asociados a un elemento de menú deben tener el mismo tamaño que el mapa de bits de marca de verificación predeterminado, cuyas dimensiones pueden variar en función de la resolución de pantalla. Para recuperar las dimensiones correctas, use la [**función GetSystemMetrics.**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) Puede crear varios recursos de mapa de bits para diferentes resoluciones de pantalla. crear un recurso de mapa de bits y escalarlo, si es necesario; o cree un mapa de bits en tiempo de ejecución y dibuje una imagen en él. Los mapas de bits pueden ser monocromáticos o de color. Sin embargo, dado que los elementos de menú se invierten cuando se resaltan, la apariencia de ciertos mapas de bits de color invertidos puede no ser deseable. Para obtener más información, vea [Mapas de bits.](/windows/desktop/gdi/bitmaps)
+Los mapas de bits definidos por la aplicación asociados a un elemento de menú deben tener el mismo tamaño que el mapa de bits de marca de verificación predeterminado, cuyas dimensiones pueden variar en función de la resolución de la pantalla. Para recuperar las dimensiones correctas, use la [**función GetSystemMetrics.**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) Puede crear varios recursos de mapa de bits para diferentes resoluciones de pantalla. crear un recurso de mapa de bits y escalarlo, si es necesario; o cree un mapa de bits en tiempo de ejecución y dibuje una imagen en él. Los mapas de bits pueden ser monocromáticos o de color. Sin embargo, dado que los elementos de menú se invierten cuando se resaltan, la apariencia de ciertos mapas de bits de color invertidos puede no ser deseable. Para obtener más información, vea [Mapas de bits.](/windows/desktop/gdi/bitmaps)
 
 ### <a name="enabled-grayed-and-disabled-menu-items"></a>Elementos de menú Habilitado, Atenuado y Deshabilitado
 
@@ -309,7 +309,7 @@ Si usa las funciones [**AppendMenu,**](/windows/desktop/api/Winuser/nf-winuser-a
 
 El sistema notifica la actividad relacionada con el menú mediante el envío de mensajes al procedimiento de ventana de la ventana propietaria del menú. El sistema envía una serie de mensajes cuando el usuario selecciona elementos en la barra de menús o hace clic en el botón derecho del mouse para mostrar un menú contextual.
 
-Cuando el usuario activa un elemento en la barra de menús, la ventana de propietario recibe primero un [**mensaje \_ SYSCOMMAND de WM.**](wm-syscommand.md) Este mensaje incluye una marca que indica si el usuario activó el menú mediante el teclado (SC KEYMENU) o el \_ mouse (SC \_ MOUSEMENU). Para obtener más información, vea [Acceso mediante teclado a los menús](#keyboard-access-to-menus).
+Cuando el usuario activa un elemento en la barra de menús, la ventana de propietario recibe primero un [**mensaje \_ SYSCOMMAND de WM.**](wm-syscommand.md) Este mensaje incluye una marca que indica si el usuario activó el menú mediante el teclado (SC KEYMENU) o el \_ mouse (SC \_ MOUSEMENU). Para obtener más información, vea [Acceso mediante teclado a menús.](#keyboard-access-to-menus)
 
 A continuación, antes de mostrar los menús, el sistema envía el mensaje [**\_ WM INITMENU**](wm-initmenu.md) al procedimiento de ventana para que una aplicación pueda modificar los menús antes de que el usuario los vea. El sistema envía el mensaje **WM \_ INITMENU** solo una vez por activación del menú.
 
@@ -319,13 +319,13 @@ Cada vez que el usuario mueve el resaltado de un elemento a otro, el sistema env
 
 Cuando el usuario elige un elemento de comando de un menú, el sistema envía un mensaje [**WM \_ COMMAND**](wm-command.md) al procedimiento de ventana. La palabra de orden bajo del parámetro *wParam* del mensaje **WM \_ COMMAND** contiene el identificador del elemento elegido. El procedimiento de ventana debe examinar el identificador y procesar el mensaje en consecuencia.
 
-Puede guardar la información de un menú mediante la [**estructura MENUINFO.**](/windows/win32/api/winuser/ns-winuser-menuinfo) Si el menú se define con **menuINFO**. **Valor dwStyle** de MNS NOTIFYBYPOS, el sistema envía \_ [**WM \_ MENUCOMMAND**](wm-menucommand.md) en lugar del [**comando WM \_**](wm-command.md) cuando se selecciona un elemento. Esto le permite acceder a la información de la **estructura MENUINFO** y también proporciona el índice del elemento seleccionado directamente.
+Puede guardar la información de un menú mediante la [**estructura MENUINFO.**](/windows/win32/api/winuser/ns-winuser-menuinfo) Si el menú se define con **un elemento MENUINFO**. **Valor dwStyle** de MNS NOTIFYBYPOS, el sistema envía \_ [**WM \_ MENUCOMMAND**](wm-menucommand.md) en lugar del [**comando WM \_**](wm-command.md) cuando se selecciona un elemento. Esto le permite acceder a la información de la **estructura MENUINFO** y también proporciona el índice del elemento seleccionado directamente.
 
 No todos los menús son accesibles a través de la barra de menús de una ventana. Muchas aplicaciones muestran menús contextuales cuando el usuario hace clic con el botón derecho del mouse en una ubicación específica. Estas aplicaciones deben procesar el mensaje [**\_ CONTEXTMENU de WM**](wm-contextmenu.md) y mostrar un menú contextual, si procede. Si una aplicación no muestra un menú contextual, debe pasar el mensaje **\_ CONTEXTMENU** de WM a la [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para el procesamiento predeterminado.
 
-El [**mensaje \_ WM MENURBUTTONUP**](wm-menurbuttonup.md) se envía cuando el usuario suelta el botón derecho del mouse mientras el cursor está en un elemento de menú. Este mensaje se proporciona para que las aplicaciones puedan mostrar un menú contextual o contextual para un elemento de menú.
+El [**mensaje \_ MENURBUTTONUP de WM**](wm-menurbuttonup.md) se envía cuando el usuario suelta el botón derecho del mouse mientras el cursor está en un elemento de menú. Este mensaje se proporciona para que las aplicaciones puedan mostrar un menú contextual o contextual para un elemento de menú.
 
-Hay algunos mensajes que solo implican menús de arrastrar y colocar. [**EL \_ ELEMENTO MENUGETOBJECT**](wm-menugetobject.md) de WM se envía al propietario de un menú de arrastrar y colocar cuando el cursor del mouse entra en un elemento de menú o se mueve desde el centro de un elemento a la parte superior o inferior de un elemento. El [**mensaje \_ WM MENUDRAG**](wm-menudrag.md) se envía cuando el usuario arrastra realmente un elemento de menú.
+Hay algunos mensajes que solo implican menús de arrastrar y colocar. EL [**\_ ELEMENTO MENUGETOBJECT**](wm-menugetobject.md) de WM se envía al propietario de un menú de arrastrar y colocar cuando el cursor del mouse entra en un elemento de menú o se mueve desde el centro de un elemento a la parte superior o inferior de un elemento. El [**mensaje \_ WM MENUDRAG**](wm-menudrag.md) se envía cuando el usuario arrastra realmente un elemento de menú.
 
 Cuando se ha destruido un menú desplegable o un submenú, el sistema envía un mensaje [**\_ WM UNINITMENUPOPUP.**](wm-uninitmenupopup.md)
 

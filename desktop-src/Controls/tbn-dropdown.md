@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e2cdee38176b2ed72d42aaa29ca685a5e73dd30ceb7e315b5cbe0971161dc13
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad7adbb9e0e2ed3d77f8ca8bfb6b09dedd2265be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166370"
 ---
-# <a name="tbn_dropdown-notification-code"></a>Código de notificación DE LISTA DESPLEGABLE de TBN \_
+# <a name="tbn_dropdown-notification-code"></a>Código de notificación DE LISTA DESPLEGABLE DE TBN \_
 
 Enviado por un control de barra de herramientas cuando el usuario hace clic en un botón desplegable. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -41,7 +41,7 @@ TBN_DROPDOWN
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura NMTOOLBAR**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) que contiene información sobre este código de notificación. Para este código de notificación, solo los **miembros hdr** **e iItem** de esta estructura son válidos.
+Puntero a una [**estructura NMTOOLBAR**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) que contiene información sobre este código de notificación. Para este código de notificación, solo son válidos los miembros **hdr** **e iItem** de esta estructura.
 
 </dd> </dl>
 
@@ -61,10 +61,10 @@ Devuelve uno de los valores siguientes:
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> Los botones desplegables pueden ser sin formato (estilo [**BTNS \_ DROPDOWN),**](toolbar-control-and-button-styles.md) mostrar una flecha junto a la imagen de botón (estilo [**\_ BTNS WHOLEDROPDOWN)**](toolbar-control-and-button-styles.md) o mostrar una flecha separada de la imagen (estilo [**TBSTYLE \_ EX \_ DRAWDDARROWS).**](toolbar-extended-styles.md) Si se usa una flecha separada, la lista desplegable de TBN solo se envía si el usuario hace clic en la parte \_ de flecha del botón. Si el usuario hace clic en la parte principal del botón, se envía un mensaje [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) con el identificador del botón, igual que con un botón estándar. Para los otros dos estilos del botón desplegable, se envía TBN DROPDOWN cuando el usuario hace clic \_ en cualquier parte del botón.
+> Los botones desplegables pueden ser sin formato (estilo [**\_ BTNS DROPDOWN),**](toolbar-control-and-button-styles.md) mostrar una flecha junto a la imagen de botón (estilo [**\_ BTNS WHOLEDROPDOWN)**](toolbar-control-and-button-styles.md) o mostrar una flecha separada de la imagen (estilo [**TBSTYLE EX \_ \_ DRAWDDARROWS).**](toolbar-extended-styles.md) Si se usa una flecha separada, LA LISTA DESPLEGABLE DE TBN solo se envía si el usuario hace clic en la parte \_ de la flecha del botón. Si el usuario hace clic en la parte principal del botón, se envía un mensaje [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) con el identificador del botón, al igual que con un botón estándar. Para los otros dos estilos del botón desplegable, SE ENVÍA LA LISTA DESPLEGABLE DE TBN cuando el \_ usuario hace clic en cualquier parte del botón.
 
  
 
@@ -72,11 +72,11 @@ Devuelve uno de los valores siguientes:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

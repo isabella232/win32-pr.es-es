@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bd3a5a15ac1983d93ca161dae20876159e5f633cf580d485686d67889276747
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f954e9a133f78a9415358d1c7f61d68008cd3d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118168528"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166913"
 ---
 # <a name="tb_addbuttons-message"></a>Mensaje \_ ADDBUTTONS de TB
 
@@ -49,11 +49,11 @@ Puntero a una matriz de [**estructuras TBBUTTON**](/windows/desktop/api/Commctrl
 
 Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la barra de herramientas se creó mediante la función [**CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) debe enviar el mensaje [**\_ TB BUTTONSTRUCTSIZE**](tb-buttonstructsize.md) a la barra de herramientas antes de enviar **TB \_ ADDBUTTONS**.
 
-Consulte [**TB \_ SETIMAGELIST para**](tb-setimagelist.md) obtener una explicación sobre cómo asignar mapas de bits a botones de la barra de herramientas de una o varias listas de imágenes.
+Consulte [**TB \_ SETIMAGELIST para**](tb-setimagelist.md) obtener una explicación sobre cómo asignar mapas de bits a los botones de la barra de herramientas de una o varias listas de imágenes.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -96,11 +96,11 @@ SendMessage(hWndToolbar, TB_ADDBUTTONS, numButtons, (LPARAM)tbButtonsAdd);
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TB \_ ADDBUTTONSW** (Unicode) y **TB \_ ADDBUTTONSA** (ANSI)<br/>               |
 
 

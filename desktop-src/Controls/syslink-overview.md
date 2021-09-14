@@ -4,12 +4,12 @@ description: Un control SysLink es una ventana que representa texto marcado y no
 ms.assetid: 38cfac3d-de60-4882-a434-4f498330b77d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc4a5d64af48fc0b48b15f22fff55e5cb563339ac8d90446981c74e07f5d4713
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: deb0d15cac479b844b0ea8510c34cc57f56822be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118168565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166949"
 ---
 # <a name="about-syslink-controls"></a>Acerca de los controles SysLink
 
@@ -30,7 +30,7 @@ El control SysLink admite la etiqueta delimitadora( a ) junto &lt; &gt; con los 
 
 ## <a name="link-attributes"></a>Atributos de vínculo
 
-Los atributos de cada vínculo se pueden establecer dentro de la etiqueta delimitadora de cada vínculo o mediante el envío [**del \_ mensaje SETITEM de LM.**](lm-setitem.md) Si se establece un atributo mediante su especificación dentro de la cadena de inicialización, simplemente se inicializa el valor. Puede cambiar el valor de un atributo mediante el uso posterior del **mensaje \_ SETITEM de LM.**
+Los atributos de cada vínculo se pueden establecer dentro de la etiqueta delimitadora de cada vínculo o mediante el envío [**del \_ mensaje SETITEM de LM.**](lm-setitem.md) Si se establece un atributo mediante su especificación dentro de la cadena de inicialización, simplemente se inicializa el valor. Puede cambiar el valor de un atributo mediante el uso posterior del **mensaje \_ LM SETITEM.**
 
 ## <a name="link-states"></a>Estados de vínculo
 
@@ -50,7 +50,7 @@ Los elementos de vínculo pueden estar en cualquiera de los tres estados, repres
 
 ## <a name="limitations-on-bidirectional-text-display"></a>Limitaciones de la presentación de texto bidireccional
 
-Algunos idiomas, como árabe o hebreo, se escriben de derecha a izquierda (RTL); El inglés se escribe de izquierda a derecha (LTR). La combinación de RTL con LTR se denomina texto bidireccional. La combinación de construcciones de marcado unicode o HTML LTR y RTL en cadenas de recursos, como marcadores de flujo bidireccionales para controlar el flujo de cadenas, puede que no produzca el resultado esperado al usar un control SysLink. Por ejemplo, es posible que una oración marcada con LTR no se muestre correctamente en el contexto RTL.
+Algunos idiomas, como árabe o hebreo, se escriben de derecha a izquierda (RTL); El inglés se escribe de izquierda a derecha (LTR). La combinación de RTL con LTR se denomina texto bidireccional. La combinación de construcciones de marcado direccional UNICODE o HTML LTR y RTL en cadenas de recursos, como marcadores de flujo bidireccional para controlar el flujo de cadenas, puede que no produzca el resultado esperado al usar un control SysLink. Por ejemplo, es posible que una oración marcada con LTR no se muestre correctamente en el contexto RTL.
 
 > [!Note]  
 > Los controles SysLink no admiten la presentación bidireccional en todos los escenarios. Use un control SysLink solo si sabe que un diseño LTR o RTL simple es adecuado. De lo contrario, considere la posibilidad de usar una tecnología más avanzada, [como MSHTML](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753630(v=vs.85)).

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1fac4fa28daa876b273d71e4cf80bf5e76fce8fe01c0a5517dc63fb31b4273e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db36f289a05fecfb2a0795965820324a9ce68057
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078239"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166706"
 ---
 # <a name="tb_isbuttonhidden-message"></a>Mensaje \_ ISBUTTONHIDDEN de TB
 
@@ -47,11 +47,11 @@ Devuelve un valor distinto de cero si el botón está oculto o cero en caso cont
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

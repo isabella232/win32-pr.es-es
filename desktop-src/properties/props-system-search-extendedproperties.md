@@ -4,12 +4,12 @@ ms.assetid: 35e38d70-3029-4e22-ab70-718911654979
 title: System.Search.ExtendedProperties
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f55f99988395bcb76efcad79f30c0044ef62686ffafd5c1c9bbdced5b9fb4ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f2e4ef139b0bc5b33c0ce1a50ca7fa26a7c91c2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117865176"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363378"
 ---
 # <a name="systemsearchextendedproperties"></a>System.Search.ExtendedProperties
 
@@ -28,7 +28,7 @@ propertyDescription
       type = Blob
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

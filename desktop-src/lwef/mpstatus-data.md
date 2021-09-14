@@ -4,7 +4,7 @@ description: Contiene datos sobre el estado actual de un componente del producto
 ms.assetid: 6AEF485C-30D1-47DB-92B6-048B8CAA7833
 keywords:
 - MPSTATUS_DATA estructura heredada de Windows environment
-- PMPSTATUS_DATA puntero de estructura heredado Windows características del entorno de ejecución
+- PMPSTATUS_DATA puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78989b055e6de79c3da733ff8bc498a3fb6717c5dec226db73b80c4e5c9d899c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f5da4ea9c8c51d8ee74d3242e5020df23f758228
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119887915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269452"
 ---
-# <a name="mpstatus_data-structure"></a>Estructura DE DATOS DE MPSTATUS \_
+# <a name="mpstatus_data-structure"></a>Estructura DE \_ DATOS MPSTATUS
 
 Contiene datos sobre el estado actual de un componente del producto.
 
@@ -51,7 +51,7 @@ typedef struct tagMPSTATUS_DATA {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -80,7 +80,7 @@ Estado solicitado para el componente. **hResult en** los datos de devolución de
 **ComponentStatus**
 </dt> <dd>
 
-Datos de estado adicionales según el valor de **ComponentID.**
+Datos de estado adicionales en función del valor **de ComponentID.**
 
 > [!Note]  
 > Actualmente, da como resultado un puntero a una estructura ficticia para todos los valores posibles de **ComponentID**.
@@ -140,7 +140,7 @@ Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ \_ IOAV PROTECTION**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ IOAV \_ PROTECTION**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
@@ -218,11 +218,11 @@ Cuando **ComponentID**  ==  **MPCOMPONENT \_ ELAM**. Vea [**MPSTATUS \_ DATAEX \
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

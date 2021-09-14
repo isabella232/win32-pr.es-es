@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aee89d91bc65556179d14c7e86a69a9e6399223f38bb1bcc44f746d7cd8f8a80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92e81377a40f8b6054f5d8cfae16837621b77b61
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119798475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167301"
 ---
 # <a name="rb_setbandinfo-message"></a>Mensaje \_ SETBANDINFO de RB
 
@@ -41,7 +41,7 @@ Establece las características de una banda existente en un control rebar.
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) que define la banda que se va a modificar y la nueva configuración. Antes de enviar este mensaje, debe establecer el **miembro cbSize** de esta estructura en la **estructura sizeof**(REBARBANDINFO). Además, debe establecer el miembro **cch** de la estructura **REBARBANDINFO** en el tamaño del búfer **lpText** cuando se especifica RBBIM \_ TEXT.
+Puntero a una [**estructura REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) que define la banda que se va a modificar y la nueva configuración. Antes de enviar este mensaje, debe establecer el **miembro cbSize** de esta estructura en **la estructura sizeof**(REBARBANDINFO). Además, debe establecer el miembro **cch** de la estructura **REBARBANDINFO** en el tamaño del búfer **lpText** cuando se especifica RBBIM \_ TEXT.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Devuelve un valor distinto de cero si se realiza correctamente o cero en caso co
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **RB \_ SETBANDINFOW** (Unicode) y **RB \_ SETBANDINFOA** (ANSI)<br/>             |
 
 

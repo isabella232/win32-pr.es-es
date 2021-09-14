@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ab059933c2019009ebc746cc59df6affb840f09c40a201a4ee4048dc2498a17
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f80bc4f4ad45e5c1c75366e0890f3fd76ec1fa74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166830"
 ---
-# <a name="tb_getextendedstyle-message"></a>Mensaje \_ GETEXTENDEDSTYLE de TB
+# <a name="tb_getextendedstyle-message"></a>MENSAJE \_ GETEXTENDEDSTYLE DE TB
 
 Recupera los estilos extendidos para un control de barra de herramientas.
 
@@ -47,7 +47,7 @@ Devuelve un **DWORD que** representa los estilos actualmente en uso para el cont
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

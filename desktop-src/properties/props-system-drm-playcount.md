@@ -1,17 +1,17 @@
 ---
 description: Indica el número de veces que se ha reproducido el archivo.
 ms.assetid: c46fea02-5ca7-4b15-816a-7e2aeac0ad30
-title: System. DRM. PlayCount
+title: System.DRM.PlayCount
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 25624b38f3d1f3ca134062582d7afad93bd8e681
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278890"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267999"
 ---
-# <a name="systemdrmplaycount"></a>System. DRM. PlayCount
+# <a name="systemdrmplaycount"></a>System.DRM.PlayCount
 
 Indica el número de veces que se ha reproducido el archivo.
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

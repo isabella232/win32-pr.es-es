@@ -4,12 +4,12 @@ ms.assetid: 4e1450aa-bf89-4d44-b463-4016660f5508
 title: Propiedad MSINODISABLEMEDIA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfd4179995de7d509699b642ea7314497206d300850c3a83915dcdbd9901d2a6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 93510263cbe182c66305dcc08c10d908709e1259
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120082845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074366"
 ---
 # <a name="msinodisablemedia-property"></a>Propiedad MSINODISABLEMEDIA
 
@@ -25,9 +25,9 @@ Si [**DISABLEMEDIA aparece**](-disablemedia.md) en la [**propiedad AdminProperti
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003, Windows XP y Windows 2000. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003, Windows XP y Windows 2000. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows installer.<br/> |
 
 
 

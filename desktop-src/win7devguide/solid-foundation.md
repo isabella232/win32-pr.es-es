@@ -4,12 +4,12 @@ description: Windows 7 proporciona una plataforma para desarrolladores altamente
 ms.assetid: 2ca82ec9-639d-4122-b9ce-b1d5b397f880
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36e1f4c29c69ca62e07042bf1c07bf66824ce865bb8067c89ab700912de4df8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 28e5f22275267f4c07d14ea1ae0972e27993f415
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118203822"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267319"
 ---
 # <a name="solid-foundation"></a>Solid Foundation
 

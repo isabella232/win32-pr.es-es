@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33c6bd1f2e750a2fd71dc053d31ca452fa581891037db73d356e5405476b28de
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 58eb513780da464ead40f8a4fb1264f6268d4370
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119293374"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166297"
 ---
 # <a name="tbn_wraphotitem-notification-code"></a>Código de notificación \_ WRAPHOTITEM de TBN
 
@@ -41,7 +41,7 @@ TBN_WRAPHOTITEM
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura que contiene el elemento de acceso rápido antiguo (**iStart**) y si el nuevo elemento de acceso rápido está delante de él (**iDir** = -1) o después de él (**iDir** = 1), así como un motivo por el que cambia el elemento de acceso rápido.
+Puntero a una estructura que contiene el elemento de acceso rápido anterior (**iStart**) y si el nuevo elemento de acceso rápido está delante de él (**iDir** = -1) o después de él (**iDir** = 1), así como un motivo por el que el elemento de acceso rápido está cambiando.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Puntero a una estructura que contiene el elemento de acceso rápido antiguo (**i
 
 **TRUE** si la aplicación está controlando el propio cambio de elemento de acceso. en caso **contrario, FALSE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación debe definir la estructura **NMTBWRAPHOTITEM** de la siguiente manera:
 
@@ -66,11 +66,11 @@ typedef struct tagNMTBWRAPHOTITEM {
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

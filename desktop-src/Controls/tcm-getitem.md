@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5403bb85e1b2747d1ab6081d33c25ec20a3b2099fc83b2b15e66b014f558584
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b6f94f26a0893416847df052ff47731391a86f5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119876585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166262"
 ---
 # <a name="tcm_getitem-message"></a>Mensaje \_ GETITEM de TCM
 
@@ -41,17 +41,17 @@ Recupera información sobre una pestaña en un control de ficha. Puede enviar es
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura TCITEM**](/windows/win32/api/commctrl/ns-commctrl-tcitema) que especifica la información que se va a recuperar y recibe información sobre la pestaña. Cuando se envía el mensaje, el **miembro mask** especifica qué atributos se devuelven. Si el miembro **mask** especifica el valor TEXT de TCIF, el miembro pszText debe contener la dirección del búfer que recibe el texto del elemento y el miembro \_  **cchTextMax** debe especificar el tamaño del búfer.
+Puntero a una [**estructura TCITEM**](/windows/win32/api/commctrl/ns-commctrl-tcitema) que especifica la información que se va a recuperar y recibe información sobre la pestaña. Cuando se envía el mensaje, el **miembro mask** especifica qué atributos se devuelven. Si el miembro **mask** especifica el valor TCIF TEXT, el miembro pszText debe contener la dirección del búfer que recibe el texto del elemento y el miembro \_  **cchTextMax** debe especificar el tamaño del búfer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si la marca TEXT de TCIF se establece en el miembro mask de la estructura TCITEM, el control puede cambiar el miembro \_ **pszText**  de la estructura para que apunte al nuevo texto en lugar de rellenar el búfer con el texto solicitado. [](/windows/win32/api/commctrl/ns-commctrl-tcitema) El control puede establecer el **miembro pszText** en **NULL** para indicar que no hay ningún texto asociado al elemento.
+Si la marca TCIF TEXT se establece en el miembro mask de la estructura TCITEM, el control puede cambiar el miembro \_ **pszText**  de la estructura para que apunte al nuevo texto en lugar de rellenar el búfer con el texto solicitado. [](/windows/win32/api/commctrl/ns-commctrl-tcitema) El control puede establecer el **miembro pszText** en **NULL** para indicar que no hay ningún texto asociado al elemento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Si la marca TEXT de TCIF se establece en el miembro mask de la estructura TCITEM
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TCM \_ GETITEMW** (Unicode) y **TCM \_ GETITEMA** (ANSI)<br/>                   |
 
 

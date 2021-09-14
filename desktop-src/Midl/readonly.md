@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d0d534efe8df1f4d05cd0b536a78094f903870d896114ee8b614511e067025b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b4ef4ca5f32b96146ed5ab0ec085d32b24dca3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013683"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159404"
 ---
 # <a name="readonly-attribute"></a>atributo de solo lectura
 
@@ -52,7 +52,7 @@ Nombre por el que el software puede hacer referencia a la ubicación de almacena
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **\[ atributo \] readonly** prohíbe la asignación a una variable. **\[ Readonly \]** solo se admite en el nivel de parámetro, no en el nivel de método.
 

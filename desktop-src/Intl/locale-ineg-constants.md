@@ -5,11 +5,11 @@ title: LOCALE_INEG* Constantes
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fb5c40b2fc53e93653753eeb61048251a7fe55c6
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626771"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127274500"
 ---
 # <a name="locale_ineg-constants"></a>Constantes \_ INEG de LOCALE \*
 
@@ -74,7 +74,7 @@ En este tema se definen las constantes \_ INEG de LOCALE \* usadas por NLS.
 </tr>
 <tr class="odd">
 <td>8</td>
-<td>Signo negativo, número, espacio, símbolo monetario (como #5, pero con un espacio delante del símbolo monetario); por ejemplo, -1,1 $</td>
+<td>Signo negativo, número, espacio, símbolo monetario (como #5, pero con un espacio antes del símbolo monetario); por ejemplo, -1,1 $</td>
 </tr>
 <tr class="even">
 <td>9</td>
@@ -82,7 +82,7 @@ En este tema se definen las constantes \_ INEG de LOCALE \* usadas por NLS.
 </tr>
 <tr class="odd">
 <td>10</td>
-<td>Número, espacio, símbolo monetario, signo negativo (como #7, pero con un espacio antes del símbolo monetario); por ejemplo, 1,1 $-</td>
+<td>Número, espacio, símbolo monetario, signo negativo (como #7, pero con un espacio delante del símbolo monetario); por ejemplo, 1,1 $-</td>
 </tr>
 <tr class="even">
 <td>11</td>
@@ -94,7 +94,7 @@ En este tema se definen las constantes \_ INEG de LOCALE \* usadas por NLS.
 </tr>
 <tr class="even">
 <td>13</td>
-<td>Número, signo negativo, espacio, símbolo monetario (como #6, pero con un espacio antes del símbolo monetario); por ejemplo, 1,1- $</td>
+<td>Número, signo negativo, espacio, símbolo monetario (como #6, pero con un espacio delante del símbolo monetario); por ejemplo, 1,1- $</td>
 </tr>
 <tr class="odd">
 <td>14</td>

@@ -4,12 +4,12 @@ ms.assetid: 4b3871c0-f452-4935-9ee3-78b0ac847e67
 title: Creación de módulos de combinación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 078956c0e3586e12105fc5ea33b1d7e8908c19461aaa4533c7b3cccc32c014ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3ece67151872a8d065d321c6adaae660be643ad8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119328425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159029"
 ---
 # <a name="authoring-merge-modules"></a>Creación de módulos de combinación
 
@@ -23,14 +23,14 @@ En el procedimiento siguiente se describen los pasos generales para crear módul
 4.  Agregue un registro a la [tabla Component para](component-table.md) cada componente entregado por la combinación. Se requiere una tabla De componentes en cada módulo de combinación. Tenga en cuenta que los módulos de combinación funcionan con componentes y no con características. Sin embargo, en algunos casos, una entrada de tabla de base de datos puede necesitar hacer referencia a una característica. Para obtener más información, vea [Hacer referencia a características en módulos de mezcla.](referencing-features-in-merge-modules.md)
 5.  Agregue una [tabla Directory al](directory-table.md) módulo merge que especifique el diseño de los directorios que el módulo de combinación agrega a la base de datos de destino. Se requiere una tabla Directory en cada módulo de combinación.
 6.  Importe una tabla [FeatureComponents en blanco en la](featurecomponents-table.md) base de datos del módulo merge. Esta tabla vacía proporciona una guía para la herramienta de combinación en los casos en los que el archivo .msi no contiene su propia tabla FeatureComponents.
-7.  Recopile todos los archivos entregados por este módulo de combinación y cree elMergeModule.CABarchivo de archivo de conjunto de [inet.](mergemodule-cabinet.md) Agregue el archivador al módulo merge como una secuencia dentro del archivo .msm.
+7.  Recopile todos los archivos entregados por este módulo de combinación y cree el archivo de archivado [MergeModule.CABinet.](mergemodule-cabinet.md) Agregue el archivador al módulo merge como una secuencia dentro del archivo .msm.
 8.  Agregue un registro a la tabla File para cada archivo almacenado en MergeModule.CABinet.
 9.  Agregue la información necesaria para identificar el módulo de combinación en la [tabla ModuleSignature](modulesignature-table.md). Cada módulo de combinación requiere una tabla ModuleSignature.
-10. Enumera los componentes del módulo merge en la [tabla ModuleComponents](modulecomponents-table.md). Cada módulo de combinación requiere una tabla ModuleComponents.
+10. Enumera los componentes del módulo de combinación en la [tabla ModuleComponents](modulecomponents-table.md). Cada módulo de combinación requiere una tabla ModuleComponents.
 11. Agregue tablas de secuencia de módulo de mezcla al archivo .msm solo si el módulo de mezcla necesita modificar las tablas de secuencia de la base de datos de instalación de destino. [](s-gly.md)
 12. Agregue una \_ tabla Validation al módulo merge. Un módulo de combinación requiere una \_ tabla De validación para pasar la validación.
 13. Los módulos de combinación requieren una interfaz de usuario en raras ocasiones. No se recomienda incluir una interfaz de usuario con un módulo de combinación. En los casos en los que se requiere una interfaz de usuario, las tablas de interfaz de usuario se pueden combinar en .msi archivo igual que otras tablas.
-14. Agregue información del Registro a las tablas del Registro adecuadas en la base de datos del módulo merge. Agregue información del Registro para bibliotecas de tipos, clases, extensiones y verbos en las tablas [TypeLib](typelib-table.md), [Class](class-table.md), [AppId](appid-table.md), [ProgId](progid-table.md), [Extension](extension-table.md), [Verb](verb-table.md) [o MIME.](mime-table.md) Toda la información del Registro puede ir a la [tabla del Registro](registry-table.md). No se recomienda el uso de la tabla SelfReg.
+14. Agregue información del Registro a las tablas del Registro adecuadas en la base de datos del módulo merge. Agregue información del Registro para bibliotecas de tipos, clases, extensiones y verbos en las tablas [TypeLib](typelib-table.md), [Class](class-table.md), [AppId](appid-table.md), [ProgId](progid-table.md), [Extension](extension-table.md), [Verb](verb-table.md)o [MIME.](mime-table.md) Toda la información del Registro puede ir a la [tabla del Registro](registry-table.md). No se recomienda el uso de la tabla SelfReg.
 15. Agregue la información de resumen al flujo [de información de resumen del módulo de mezcla](merge-module-summary-information-stream-reference.md).
 16. Ejecute la validación en todos los módulos de combinación antes de intentar la instalación.
 
@@ -56,7 +56,7 @@ En el procedimiento siguiente se describen los pasos generales para crear módul
 [Creación de características de módulo de mezclaComponentes Tablas](authoring-merge-module-featurecomponents-tables.md)
 </dt> <dt>
 
-[Generación de MergeModule.CABarchivos de archivo de conjunto](generating-mergemodule-cabinet-cabinet-files.md)
+[Generar archivos de archivador MergeModule.CABinet](generating-mergemodule-cabinet-cabinet-files.md)
 </dt> <dt>
 
 [Creación de tablas de archivos de módulo de mezcla](authoring-merge-module-file-tables.md)
@@ -68,7 +68,7 @@ En el procedimiento siguiente se describen los pasos generales para crear módul
 [Creación de tablas moduleComponents](authoring-modulecomponents-tables.md)
 </dt> <dt>
 
-[Creación de tablas de secuencias de módulos de mezcla](authoring-merge-module-sequence-tables.md)
+[Creación de tablas de secuencias de módulos de combinación](authoring-merge-module-sequence-tables.md)
 </dt> <dt>
 
 [Validación de módulos de combinación](validating-merge-modules.md)

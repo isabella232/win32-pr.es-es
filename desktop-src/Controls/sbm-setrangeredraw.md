@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70da860ac52e34a32ca72ae5c3cff36fe4a23feb7b0c78bdeac0294ff7d20df3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37c77a8f062ba3c7a8b73adc4338a11cdcf59442
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167062"
 ---
 # <a name="sbm_setrangeredraw-message"></a>Mensaje \_ SETRANGEREDRAW de SBM
 
@@ -49,7 +49,7 @@ Especifica la posición de desplazamiento máxima.
 
 **ComCtl32.dll versión 6.0:** la posición actual del cuadro de desplazamiento, independientemente de si ha cambiado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores de posición mínimo y máximo predeterminados son cero. La diferencia entre los valores especificados por los parámetros *wParam* y *lParam* no debe ser mayor que MAXLONG.
 
@@ -59,11 +59,11 @@ Si los valores de posición mínima y máxima son iguales, el control de barra d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

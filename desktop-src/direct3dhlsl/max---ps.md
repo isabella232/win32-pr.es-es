@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: da2c6a21b7d3c415d4ae5339349bf929cbe6818795e2ea22de449aa0bbb237f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6186f0bd57acd4862a62a4c0a30ae92118b75ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241413"
 ---
 # <a name="max---ps"></a>max - ps
 
 Calcula el máximo de los orígenes.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,25 +31,25 @@ Calcula el máximo de los orígenes.
 
  
 
-where
+, donde
 
 -   dst es el registro de destino.
 -   src0 es un registro de origen.
 -   src1 es un registro de origen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
 | Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| máx.                   |      |      |      |      | x    | x    | x     | x    | x     |
+| max                   |      |      |      |      | x    | x    | x     | x    | x     |
 
 
 
  
 
-El siguiente fragmento de código muestra las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```

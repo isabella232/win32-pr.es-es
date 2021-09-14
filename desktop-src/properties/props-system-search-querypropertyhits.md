@@ -1,17 +1,17 @@
 ---
 description: Contiene la lista de propiedades coincidentes de una consulta.
 ms.assetid: 4cd21925-d563-42ad-96bb-9a28d0a758a4
-title: System. Search. QueryPropertyHits
+title: System.Search.QueryPropertyHits
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a70fd8d96b0c7361d22217dba2c740cf71defae5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363363"
 ---
-# <a name="systemsearchquerypropertyhits"></a>System. Search. QueryPropertyHits
+# <a name="systemsearchquerypropertyhits"></a>System.Search.QueryPropertyHits
 
 Contiene la lista de propiedades coincidentes de una consulta.
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

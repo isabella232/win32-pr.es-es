@@ -4,12 +4,12 @@ ms.assetid: 06a77b35-b593-47e6-9083-46a6b65b7481
 title: Tabla ImageFamilies (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c528faae7db4e485956a5eacb23a3421354c3f030011e1291bd2946d9783f67f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33ece99e3c42626eb2155f16f2198703dc31b682
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074449"
 ---
 # <a name="imagefamilies-table-patchwizdll"></a>Tabla ImageFamilies (Patchwiz.dll)
 
@@ -25,12 +25,12 @@ La tabla ImageFamilies tiene las columnas siguientes. Se puede usar un valor NUL
 
 | Columna            | Tipo    | Clave | Nullable |
 |-------------------|---------|-----|----------|
-| Familia            | texto    | Y   | N        |
-| MediaSrcPropName  | texto    |     | Y        |
+| Familia            | text    | Y   | N        |
+| MediaSrcPropName  | text    |     | Y        |
 | MediaDiskId       | integer |     | Y        |
 | FileSequenceStart | integer |     | Y        |
-| DiskPrompt        | texto    |     | Y        |
-| VolumeLabel       | texto    |     | Y        |
+| DiskPrompt        | text    |     | Y        |
+| VolumeLabel       | text    |     | Y        |
 
 
 
@@ -43,7 +43,7 @@ La tabla ImageFamilies tiene las columnas siguientes. Se puede usar un valor NUL
 <span id="Family"></span><span id="family"></span><span id="FAMILY"></span>Familia
 </dt> <dd>
 
-El valor especificado en este campo es un identificador para un grupo de imágenes de producto relacionadas que se han actualizado a la versión más reciente del producto. Limitado a un total de 8 caracteres alfanuméricos o caracteres de subrayado. El instalador inserta una secuencia contenedora en el archivo de revisión Windows Installer (archivo .msp) para cada familia de la tabla. El archivador contiene las revisiones binarias y los nuevos archivos necesarios para actualizar una imagen de destino en una imagen actualizada del producto. El instalador prefida el nombre de familia con CAB de PCW para generar el nombre de secuencia del gabinete que escribe en el campo Gabinete de la nueva entrada \_ \_ de la [tabla](media-table.md) Multimedia.
+El valor especificado en este campo es un identificador para un grupo de imágenes de producto relacionadas que se han actualizado a la versión más reciente del producto. Limitado a un total de 8 caracteres alfanuméricos o caracteres de subrayado. El instalador inserta un flujo de archivador en Windows archivo de revisión del instalador (archivo .msp) para cada familia de la tabla. El archivador contiene las revisiones binarias y los nuevos archivos necesarios para actualizar una imagen de destino en una imagen actualizada del producto. El instalador prefida el nombre de familia con CAB de PCW para generar el nombre de secuencia del gabinete que escribe en el campo Gabinete de la nueva entrada \_ \_ de la [tabla](media-table.md) Multimedia.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ El instalador escribe este valor en el campo VolumeLabel del nuevo registro Mult
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La revisión agrega el nombre del gabinete en el archivo .msp al campo Gabinete del nuevo registro agregado a la [tabla Media](media-table.md). Dado que es un gabinete incrustado, el nombre tiene como prefijo un carácter \# ''. La revisión agrega una propiedad al campo Origen del nuevo registro en la tabla Media. No dos revisiones pueden tener la misma propiedad de origen.
 

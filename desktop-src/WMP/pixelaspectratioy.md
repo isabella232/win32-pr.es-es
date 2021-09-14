@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 256e3a5a0ac17493e4a0caf280834ff72aa132f02e381d8fd9a10f6c44d41888
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 981816eab204b493f94f240e0de97d94417e4df8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134858"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242474"
 ---
 # <a name="pixelaspectratioy"></a>PixelAspectRatioY
 
@@ -27,7 +27,7 @@ El **atributo PixelAspectRatioY** es la parte vertical de la relación de aspect
 
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para un vídeo con una relación de aspecto de 16:9, **PixelAspectRatioY** sería igual a "9".
 

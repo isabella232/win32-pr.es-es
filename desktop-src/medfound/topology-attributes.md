@@ -4,12 +4,12 @@ ms.assetid: 50102096-a29f-4c00-a685-179ba5d71089
 title: Atributos de topología
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1db599a9d55e960bbb38043aa8932cd66ae0cbb6d9b376f403c1886faf3155c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 286b6dbfe922461083b49d77ad2351e98d562d3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118972854"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268727"
 ---
 # <a name="topology-attributes"></a>Atributos de topología
 
@@ -32,7 +32,7 @@ Los atributos siguientes se aplican a las topologías.
 | [**ESTADO \_ DE RESOLUCIÓN DE TOPOLOGÍA DE \_ \_ MF**](mf-topology-resolution-status-attribute.md)                      | Especifica el estado de un intento de resolver una topología.                                                                                                                                                                          |
 | [HORA \_ DE INICIO DE LA TOPOLOGÍA MF EN EL CONMUTADOR DE \_ \_ \_ \_ \_ PRESENTACIÓN](mf-topology-start-time-on-presentation-switch.md) | Especifica la hora de inicio de las presentaciones que se ponen en cola después de la primera presentación.                                                                                                                                           |
 | [OPTIMIZACIONES \_ DE REPRODUCCIÓN ESTÁTICA DE TOPOLOGÍA \_ \_ \_ MF](mf-topology-static-playback-optimizations.md)           | Habilita las optimizaciones estáticas en la canalización de vídeo.                                                                                                                                                                                |
-| [Atributo \_ MFT FIELDOFUSE \_ UNLOCK \_](mft-fieldofuse-unlock-attribute.md)                                | Contiene un [**puntero DE TIPO IMFFieldOfUseMFTUnlock,**](/windows/desktop/api/mfidl/nn-mfidl-imffieldofusemftunlock) que se usa para desbloquear un MFT con restricciones de campo de uso. Para obtener más información, vea [Restricciones de campo de uso.](field-of-use-restrictions.md) |
+| [Atributo \_ MFT FIELDOFUSE \_ UNLOCK \_](mft-fieldofuse-unlock-attribute.md)                                | Contiene un [**puntero DE TIPO IMFFieldOfUseMFTUnlock,**](/windows/desktop/api/mfidl/nn-mfidl-imffieldofusemftunlock) que se usa para desbloquear un MFT con restricciones de campo de uso. Para obtener más información, [vea Restricciones de campo de uso.](field-of-use-restrictions.md) |
 
 
 

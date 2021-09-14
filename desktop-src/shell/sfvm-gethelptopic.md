@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c60749b69df30e89c3ffda7a8664b901ee57f9ff0cb586f13d61abd9ca66997e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ebe078934f467407710f0ad493b6088b34d0c8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118968714"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267772"
 ---
-# <a name="sfvm_gethelptopic-message"></a>Mensaje GETHELPTOPIC de SFVM \_
+# <a name="sfvm_gethelptopic-message"></a>Mensaje \_ GETHELPTOPIC de SFVM
 
 Permite que el objeto de devolución de llamada especifique un archivo de Ayuda HTML y un tema dentro de él. Usado por [**IShellFolderViewCB::MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
@@ -42,7 +42,7 @@ SFVM_GETHELPTOPIC
 *phtd* \[ out\]
 </dt> <dd>
 
-Dirección de una estructura [**DE DATOS \_ HELPTOPIC \_ de SFVM**](/windows/desktop/api/shlobj_core/ns-shlobj_core-sfvm_helptopic_data) que especifica el archivo y el tema de ayuda HTML.
+Dirección de una estructura [**DE DATOS \_ HELPTOPIC \_ de SFVM**](/windows/desktop/api/shlobj_core/ns-shlobj_core-sfvm_helptopic_data) que especifica el tema y el archivo de Ayuda HTML.
 
 </dd> </dl>
 

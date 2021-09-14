@@ -1,15 +1,15 @@
 ---
-description: Los desarrolladores de Windows installer pueden optar por usar una acción personalizada de tipo 53 cuando las acciones estándar no son suficientes para ejecutar la instalación.
+description: Los desarrolladores Windows paquetes del instalador pueden optar por usar una acción personalizada de tipo 53 cuando las acciones estándar no son suficientes para ejecutar la instalación.
 ms.assetid: d024c73e-c2dc-4187-a8ae-ed96dc7c107e
 title: Tipo de acción personalizada 53
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 776b78c2dbc8aa233175eeacfa8d16521968dfceeb6b97504e639946c6284b84
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 65a016d3b3f5a282567b909215d6ab7b32759417
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118947896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158676"
 ---
 # <a name="custom-action-type-53"></a>Tipo de acción personalizada 53
 
@@ -65,9 +65,9 @@ Incluya bits de marca opcionales en la columna Tipo de la [tabla CustomAction](c
 
 Las funciones opcionales escritas en script deben devolver uno de los valores descritos en Valores devueltos [de JScript y Acciones personalizadas de VBScript](return-values-of-jscript-and-vbscript-custom-actions.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una acción personalizada escrita en JScript requiere el objeto [**Session de**](session-object.md) instalación. Dado que es posible que el objeto **Session** no exista durante una reversión de la instalación, una acción personalizada diferida escrita en script usa uno de los métodos descritos en Obtención de información de contexto para acciones personalizadas de ejecución [aplazada.](obtaining-context-information-for-deferred-execution-custom-actions.md)
+Una acción personalizada que se escribe en JScript requiere el objeto [**Session de**](session-object.md) instalación. Dado que es posible que el objeto **Session** no exista durante una reversión de la instalación, una acción personalizada diferida escrita en script usa uno de los métodos descritos en Obtención de información de contexto para acciones personalizadas de ejecución [aplazada.](obtaining-context-information-for-deferred-execution-custom-actions.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

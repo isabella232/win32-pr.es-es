@@ -4,12 +4,12 @@ ms.assetid: 82366686-8661-466b-881D-EBB2E03993C5
 title: System.DeviceInterface.PrinterDriverName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 045cdfc276a952a4255fc66bdaf1387c9559b4af874a69c1a9af7fd89634bcdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c06e9bc6fa5fcbb4a6dcf34b872417c24b8663b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119823065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268124"
 ---
 # <a name="systemdeviceinterfaceprinterdrivername"></a>System.DeviceInterface.PrinterDriverName
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

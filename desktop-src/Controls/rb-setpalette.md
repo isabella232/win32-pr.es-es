@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85cd2968fa5fa74915e37f40f30dd47751e2316e8d91d0f51f9d3c7145b893fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7ee47985c05bcd8a857620e7fe501bddf53bdec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119434945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167278"
 ---
 # <a name="rb_setpalette-message"></a>Mensaje \_ SETPALETTE de RB
 
@@ -35,17 +35,17 @@ Establece la paleta actual del control rebar.
 *lParam* 
 </dt> <dd>
 
-**HPATTE que** especifica la nueva paleta que usará el control rebar.
+**HPALETTE que** especifica la nueva paleta que usará el control rebar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **HPATTE** que especifica la paleta anterior del control rebar.
+Devuelve una **HPALETTE** que especifica la paleta anterior del control rebar.
 
 ## <a name="remarks"></a>Observaciones
 
-Es responsabilidad de la aplicación que envía este mensaje eliminar el **HPATTE** pasado en este mensaje (vea [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)). El control rebar no eliminará un **conjunto de HPATTE** con este mensaje.
+Es responsabilidad de la aplicación que envía este mensaje eliminar el **HPALETTE** pasado en este mensaje (vea [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)). El control rebar no eliminará un **conjunto HPALETTE** con este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Es responsabilidad de la aplicación que envía este mensaje eliminar el **HPATT
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: e34d17e9-cd6b-4a21-9abc-9562ee648c59
 title: Tabla ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fec4837fa7d98289495bbb0773ae7260f957485cd87214dabf1999b1e1a876c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 721dc7ac9a729b8df0623a2958a4d0fe32851307
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119693005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158768"
 ---
 # <a name="controlevent-table"></a>Tabla ControlEvent
 
@@ -84,11 +84,11 @@ Entero que se usa para ordenar varios eventos asociados al mismo control. Debe s
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En [la tabla EventMapping](eventmapping-table.md) se enumeran los controles que se suscriben a algún evento de control y se muestra el atributo de control que se va a cambiar cuando el otro control o el instalador publique ese evento.
 
-En Windows XP o sistemas operativos anteriores, los usuarios pueden publicar un evento de control solo mediante la interacción con un [control checkbox o](checkbox-control.md) un control [pushbutton](pushbutton-control.md). Con Windows Server 2003, los usuarios pueden publicar un evento de control solo mediante la interacción con un [control Checkbox](checkbox-control.md), [selectiontree control](selectiontree-control.md)y [pushbutton control](pushbutton-control.md). Enumerar otros controles en el campo \_ Control no tiene ningún efecto.
+En Windows XP o sistemas operativos anteriores, los usuarios pueden publicar un evento de control solo mediante la interacción con un [control de](checkbox-control.md) casilla o un control de botón [de inserción](pushbutton-control.md). Con Windows Server 2003, los usuarios pueden publicar un evento de control solo mediante la interacción con un [control Checkbox](checkbox-control.md), [SelectionTree Control](selectiontree-control.md)y [pushbutton Control](pushbutton-control.md). Enumerar otros controles en el campo \_ Control no tiene ningún efecto.
 
 ## <a name="validation"></a>Validación
 

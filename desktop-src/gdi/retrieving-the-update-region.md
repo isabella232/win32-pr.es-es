@@ -4,12 +4,12 @@ ms.assetid: c0729c4f-3b00-4ab9-91b2-4a2fecee8727
 title: Recuperar la región de actualización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28bf72bfcfd28ec0fc9a90485a94e19d0514bb0206de660c11a56d12f33671e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8115f47a6c585d5b660d73bbf4fb3de21334b6c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117698248"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072455"
 ---
 # <a name="retrieving-the-update-region"></a>Recuperar la región de actualización
 

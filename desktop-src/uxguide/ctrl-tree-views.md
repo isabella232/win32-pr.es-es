@@ -4,12 +4,12 @@ description: Con una vista de árbol, los usuarios pueden ver e interactuar con 
 ms.assetid: f0206485-e028-41d8-9be2-5d59f0a0b677
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: b0b5a456673338fec7240bb3b3a11047327239f70675786f26add1bbecdb7211
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ade51b421350dc90bf72e2ff1a683bf1d352f7c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118217738"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267439"
 ---
 # <a name="tree-views"></a>Vistas de árbol
 
@@ -281,5 +281,5 @@ Al hacer referencia a las casillas de una vista de árbol:
 -   Para describir la interacción del usuario, use seleccionar y borrar.
 -   Cuando sea posible, formatee la etiqueta con texto en negrita. De lo contrario, coloque la etiqueta entre comillas solo si es necesario para evitar confusiones.
 
-Ejemplo: en la **lista Elementos de los que realizar una copia de** seguridad, active **Mis documentos** casilla.
+Ejemplo: en la **lista Elementos de los que realizar una** copia de seguridad, active **Mis documentos** casilla.
 

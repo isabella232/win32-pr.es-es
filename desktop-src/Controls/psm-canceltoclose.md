@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65c37c46e1232d8f99b8666e86058a13b840fbc975d94355d75ef40a810ee23c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec1377801fddeeb52badee55869ace7e9c2277c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118169821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167594"
 ---
 # <a name="psm_canceltoclose-message"></a>Mensaje \_ CANCELTOCLOSE de PSM
 
-Enviado por una aplicación cuando ha realizado cambios desde la notificación APPLY de [PSN \_ más](psn-apply.md) reciente que no se puede cancelar. Puede enviar este mensaje explícitamente o mediante la [**macro PropSheet \_ CancelToClose.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_canceltoclose)
+Enviado por una aplicación cuando ha realizado cambios desde la notificación APPLY de [PSN \_ más](psn-apply.md) reciente que no se puede cancelar. Puede enviar este mensaje explícitamente o mediante la macro [**PropSheet \_ CancelToClose.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_canceltoclose)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,14 +47,14 @@ Debe ser cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **PSM \_ CANCELTOCLOSE** deshabilita el botón **Cancelar** y cambia el texto **del** botón Aceptar a "Cerrar".
 
 La mayoría de las hojas de propiedades esperan para realizar cambios irreversibles hasta que se recibe una \_ notificación APPLY de PSN. Sin embargo, en algunas circunstancias, una hoja de propiedades puede realizar cambios irreversibles fuera de la secuencia ESTÁNDAR DE PSN \_ APPLY/PSN \_ RESET. Un ejemplo es una hoja de propiedades que contiene un **botón Editar** que se usa para mostrar un cuadro de diálogo secundario para editar una propiedad. Cuando el usuario hace clic **en Aceptar** para enviar el cambio, la página de la hoja de propiedades tiene varias opciones.
 
--   Puede registrar los cambios, pero esperar hasta que reciba una notificación DE PSN \_ APPLY para aplicarlos. Este es el método preferido.
--   Puede aplicar los cambios inmediatamente después de salir del cuadro de diálogo secundario, pero recordar la configuración original. Esta configuración se puede usar para restaurar el estado original si se recibe una notificación \_ DE RESTABLECIMIENTO de PSN.
+-   Puede registrar los cambios, pero esperar hasta que reciba una notificación \_ PSN APPLY para aplicarlos. Este es el método preferido.
+-   Puede aplicar los cambios inmediatamente después de salir del cuadro de diálogo secundario, pero recordar la configuración original. Esta configuración se puede usar para restaurar el estado original si se recibe una notificación \_ de RESTABLECIMIENTO de PSN.
 -   Puede aplicar los cambios inmediatamente y no intentar restaurar la configuración original cuando recibe una notificación [de RESTABLECIMIENTO \_ de PSN.](psn-reset.md) Este enfoque no se recomienda, pero puede ser necesario si los cambios son demasiado largos para que las otras dos opciones sean prácticas.
 
 Para la tercera opción, las aplicaciones deben enviar un **mensaje \_ CANCELTOCLOSE de PSM** a la hoja de propiedades. Indica al usuario que los cambios realizados con el cuadro de diálogo secundario no se pueden invertir haciendo clic en **el botón** Cancelar.
@@ -72,7 +72,7 @@ Para la tercera opción, las aplicaciones deben enviar un **mensaje \_ CANCELTOC
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

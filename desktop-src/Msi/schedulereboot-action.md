@@ -4,12 +4,12 @@ ms.assetid: 36f24f57-f1f0-4eca-9b6d-1b25fb73fa96
 title: Acción ScheduleReboot
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e796338c04f47ff4b2907dcf8d1531d438622a2f28a653e8ac4672a8b445e1b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 460e3f25283c233fac80b25edd91d4bd102de435
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074303"
 ---
 # <a name="schedulereboot-action"></a>Acción ScheduleReboot
 
@@ -21,7 +21,7 @@ Si el instalador determina que es necesario reiniciar, se solicita automáticame
 
 Puede suprimir ciertas solicitudes de reinicio estableciendo la [**propiedad REBOOT.**](reboot.md)
 
-Si el Windows encuentra la acción [ForceReboot](forcereboot-action.md) o ScheduleReboot durante una instalación de varios [paquetes,](multiple-package-installations.md)el instalador detendrá y revertirá la instalación. Se pueden instalar otros paquetes que pertenecen a la instalación de varios paquetes, que no contienen una acción ForceReboot o ScheduleReboot.
+Si el instalador de Windows encuentra la acción [ForceReboot](forcereboot-action.md) [](multiple-package-installations.md)o ScheduleReboot durante una instalación de varios paquetes, el instalador detendrá y revertirá la instalación. Se pueden instalar otros paquetes que pertenecen a la instalación de varios paquetes, que no contienen una acción ForceReboot o ScheduleReboot.
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
@@ -31,7 +31,7 @@ No hay restricciones de secuencia.
 
 No hay ningún mensaje ActionData.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Por ejemplo, esta acción se puede usar para forzar al instalador a solicitar un reinicio después de instalar los controladores que requieren un reinicio. Si el instalador intenta reemplazar los archivos que están en uso, solicita automáticamente al usuario que se reinicie aunque no se haya usado ScheduleReboot.
 

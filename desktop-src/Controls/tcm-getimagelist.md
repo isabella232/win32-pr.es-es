@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17a8c91e5e88397ed436ae14c3500aadd6e450a14d168d1f6bb874c12b24da69
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5c4d471ef4d072e4305507f4f5ebc4a8f2745ed9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120104895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166266"
 ---
 # <a name="tcm_getimagelist-message"></a>Mensaje \_ GETIMAGELIST de TCM
 
@@ -47,7 +47,7 @@ Devuelve el identificador a la lista de imágenes si se realiza correctamente o 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

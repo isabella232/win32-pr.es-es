@@ -4,20 +4,20 @@ ms.assetid: 3E297366-0863-4E89-A0D5-438CD1FC5AF9
 title: 'Tutorial: Uso del escritor de receptores para codificar vídeo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5347a82fd40355c8006b15492a59543018ae5868cb02fcefeeb1812bd26930c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a3e6095355e18db6c8335cadcbc4afc56b35406
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118972784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127268620"
 ---
 # <a name="tutorial-using-the-sink-writer-to-encode-video"></a>Tutorial: Uso del escritor de receptores para codificar vídeo
 
-En este tutorial se usa [sink writer](sink-writer.md) para codificar un archivo de vídeo.
+En este tutorial se usa [sink writer para](sink-writer.md) codificar un archivo de vídeo.
 
 ## <a name="define-the-video-format"></a>Definir el formato de vídeo
 
-Para simplificar, en este tutorial se usa un formato de vídeo fijo, definido por las constantes siguientes:
+Para simplificar, en este tutorial se usa un formato de vídeo fijo, definido por las siguientes constantes:
 
 
 ```C++
@@ -40,7 +40,7 @@ Estas constantes especifican los parámetros siguientes del formato de vídeo:
 -   Tamaño del marco (ancho y alto)
 -   Fotogramas por segundo.
 -   Velocidad de bits codificada.
--   Formato de codificación, que Windows Media Video 9 (**MFVideoFormat \_ WMV3**).
+-   Formato de codificación, Windows Media Video 9 (**MFVideoFormat \_ WMV3**).
 -   Formato de entrada, que es RGB de 32 bits.
 -   Duración del archivo de salida.
 
@@ -48,7 +48,7 @@ El programa usa estas constantes para crear los tipos de medios que describen el
 
 ## <a name="create-an-uncompressed-video-frame"></a>Creación de un fotograma de vídeo sin comprimir
 
-También para simplificar, en este tutorial se usa un fotograma de vídeo estático como entrada. El marco de vídeo contiene un rectángulo verde sólido y se genera mediante programación. El fotograma de vídeo se almacena en una variable global como una matriz **de DWORD:**
+Además, para simplificar, en este tutorial se usa un fotograma de vídeo estático como entrada. El marco de vídeo contiene un rectángulo verde sólido y se genera mediante programación. El fotograma de vídeo se almacena en una variable global como una matriz de **DWORD:**
 
 
 ```C++
@@ -71,11 +71,11 @@ El código siguiente establece cada píxel del marco en verde:
 
 
 
-## <a name="initialize-the-sink-writer"></a>Inicialización del escritor de receptores
+## <a name="initialize-the-sink-writer"></a>Inicializar el escritor de receptores
 
 Para inicializar el escritor de receptores, realice los pasos siguientes.
 
-1.  Llame [**a MFCreateSinkWriterFromURL**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfromurl) para crear una nueva instancia del escritor de receptores.
+1.  Llame [**a MFCreateSinkWriterFromURL para**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfromurl) crear una nueva instancia del escritor receptor.
 2.  Cree un tipo de medio que describa el vídeo codificado.
 3.  Pase este tipo de medio al [**método IMFSinkWriter::AddStream.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-addstream)
 4.  Cree un segundo tipo de medio que describa la entrada sin comprimir.
@@ -196,14 +196,14 @@ HRESULT InitializeSinkWriter(IMFSinkWriter **ppWriter, DWORD *pStreamIndex)
 
 La mayoría de los pasos del ejemplo de código anterior son establecer los atributos de tipo de medio para los dos tipos de medios. Los detalles de los tipos de medios dependerán del contenido de origen y del perfil de codificación deseado.
 
-## <a name="send-video-frames-to-the-sink-writer"></a>Envío de fotogramas de vídeo al escritor de receptores
+## <a name="send-video-frames-to-the-sink-writer"></a>Envío de fotogramas de vídeo al escritor receptor
 
-Para enviar un fotograma de vídeo al escritor de receptores, llame al [**método IMFSinkWriter::WriteSample.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-writesample) El **método WriteSample** toma un puntero a la [**interfaz IMFSample,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) que representa un *objeto de ejemplo multimedia.* El ejemplo multimedia contiene un *objeto de búfer multimedia,* que a su vez contiene un puntero al fotograma de vídeo. Para obtener más información sobre los ejemplos multimedia y el búfer, vea los temas siguientes.
+Para enviar un fotograma de vídeo al escritor del receptor, llame al método [**IMFSinkWriter::WriteSample.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-writesample) El **método WriteSample** toma un puntero a la [**interfaz IMFSample,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) que representa un *objeto de ejemplo multimedia.* El ejemplo de medios contiene un *objeto de búfer multimedia,* que a su vez contiene un puntero al marco de vídeo. Para obtener más información sobre los ejemplos de medios y el búfer, vea los temas siguientes.
 
 -   [Ejemplos de medios](media-samples.md)
--   [Búferes de medios](media-buffers.md)
+-   [Búferes multimedia](media-buffers.md)
 
-En función de la aplicación, puede obtener los ejemplos multimedia del Lector [de origen.](source-reader.md) Como alternativa, puede crear los ejemplos multimedia y manipular directamente los datos en el búfer. En el código siguiente se muestra el segundo enfoque. Crea un búfer de memoria y escribe un único fotograma de vídeo en el búfer. A continuación, agrega ese búfer a un ejemplo multimedia y envía el ejemplo multimedia al sistema de escritura del receptor.
+Dependiendo de la aplicación, es posible que obtenga los ejemplos multimedia del Lector [de origen.](source-reader.md) Como alternativa, puede crear los ejemplos de medios y manipular directamente los datos en el búfer. El código siguiente muestra el segundo enfoque. Crea un búfer de memoria y escribe un único fotograma de vídeo en el búfer. A continuación, agrega ese búfer a un ejemplo multimedia y envía el ejemplo multimedia al sistema de escritura del receptor.
 
 
 ```C++
@@ -296,25 +296,25 @@ Este código realiza los pasos siguientes.
      
 
 4.  Llame [**a IMFMediaBuffer::Unlock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-unlock) para desbloquear el búfer.
-5.  Llame [**a IMFMediaBuffer::SetCurrentLength para**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-setcurrentlength) actualizar la longitud de los datos válidos en el búfer. (De lo contrario, el valor predeterminado de este valor es cero).
+5.  Llame [**aBUFFERMediaBuffer::SetCurrentLength para**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-setcurrentlength) actualizar la longitud de los datos válidos en el búfer. (De lo contrario, este valor tiene como valor predeterminado cero).
 6.  Llame [**a MFCreateSample**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatesample) para crear un objeto de ejemplo multimedia.
-7.  Llame [**a IMFSample::AddBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-addbuffer) para agregar el búfer multimedia al ejemplo multimedia.
-8.  Llame [**a IMFSample::SetSampleTime para**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampletime) establecer la marca de tiempo del fotograma de vídeo.
-9.  Llame [**a IMFSample::SetSampleDuration**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampleduration) para establecer la duración del fotograma de vídeo.
+7.  Llame [**a IMFSample::AddBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-addbuffer) para agregar el búfer multimedia al ejemplo de medios.
+8.  Llame [**aSAMPLESample::SetSampleTime para**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampletime) establecer la marca de tiempo del fotograma de vídeo.
+9.  Llame [**aSAMPLESample::SetSampleDuration para**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampleduration) establecer la duración del fotograma de vídeo.
 10. Llame [**a IMFSinkWriter::WriteSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-writesample) para enviar el ejemplo multimedia al escritor receptor.
 
-## <a name="write-the-main-function"></a>Escritura de la función principal
+## <a name="write-the-main-function"></a>Escritura de la función main
 
 Dentro de `main` la función , realice los pasos siguientes.
 
-1.  Llame [**a CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) para inicializar la biblioteca COM.
-2.  Llame [**a MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) para inicializar Microsoft Media Foundation.
-3.  Cree el escritor de receptores.
-4.  Envíe fotogramas de vídeo al escritor de receptores.
-5.  Llame [**a IMFSinkWriter::Finalize**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-finalize) para finalizar el archivo de salida.
-6.  Suelte el puntero al escritor del receptor.
+1.  Llame [**a CoInitializeEx para**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) inicializar la biblioteca COM.
+2.  Llame [**a MFStartup para**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) inicializar Microsoft Media Foundation.
+3.  Cree el escritor del receptor.
+4.  Enviar fotogramas de vídeo al escritor receptor.
+5.  Llame [**a IMFSinkWriter::Finalize para**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-finalize) finalizar el archivo de salida.
+6.  Suelte el puntero al sistema de escritura del receptor.
 7.  Llame [**a MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown).
-8.  Llame [**a CoUninitialize**](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize).
+8.  Llame [**a CoUninitialize.**](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize)
 
 
 ```C++

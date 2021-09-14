@@ -4,12 +4,12 @@ ms.assetid: 53d976fe-07d2-4b68-ae21-1dbd00d76942
 title: ICE49
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa16dfb082186fd13fccc4cde95abf35b99894cdc18e322eb3e57e67d29465ad
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5edc5ba319380e92fe7d1b7410673c1c688eb337
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119381805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074593"
 ---
 # <a name="ice49"></a>ICE49
 
@@ -29,13 +29,13 @@ Reg Entry 'Reg1' is not of type REG_SZ. Default types must be REG_SZ
     to never be installed on Win95 machines.
 ```
 
-El valor \# "123" es un valor del Registro **DWORD.**
+El valor \# '123' es un valor del Registro **DWORD.**
 
 [Tabla del Registro](registry-table.md) (parcial)
 
 
 
-| Registro | Name | Valor |
+| Registro | Nombre | Value |
 |----------|------|-------|
 | Reg1     |      | \#123 |
 
@@ -43,7 +43,7 @@ El valor \# "123" es un valor del Registro **DWORD.**
 
  
 
-Para corregir esta advertencia, cambie el valor al tipo **REG \_ SZ**.
+Para corregir esta advertencia, cambie el valor para escribir **REG \_ SZ**.
 
 Los componentes con **\_ SZ no REG** son válidos.
 

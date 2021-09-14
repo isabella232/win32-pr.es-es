@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 5fc3d4700305100cab3c62d96c881830f6ea02c1c6060b1076709b5190833064
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c0eff0e9c8a96149d26ee5bdc514e5067c0abb2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267927"
 ---
 # <a name="using-hardware-autoplay"></a>Uso de la reproducción automática de hardware
 
-Reproducción automática es una nueva característica que se introdujo en Windows XP que detecta contenido como imágenes, música o archivos de vídeo en medios extraíbles y dispositivos extraíbles. A continuación, La reproducción automática inicia automáticamente las aplicaciones para reproducir o mostrar ese contenido. Esto simplifica el uso de dispositivos periféricos especializados, como reproductores MPEG-Layer 3 (MP3) y lectores de fotos digitales. También facilita a los usuarios que no están familiarizados con el software necesario para acceder a varios tipos de contenido.
+Reproducción automática es una nueva característica que se introdujo en Windows XP que detecta contenido como imágenes, música o archivos de vídeo en medios extraíbles y dispositivos extraíbles. A continuación, La reproducción automática inicia automáticamente las aplicaciones para reproducir o mostrar ese contenido. Esto simplifica el uso de dispositivos periféricos especializados, como MPEG-Layer 3 reproductores (MP3) y lectores de fotos digitales. También facilita a los usuarios que no están familiarizados con el software necesario para acceder a varios tipos de contenido.
 
 Se incluye una selección ampliada de iconos, incluidos los iconos de marca para los principales fabricantes, para ofrecer una diferenciación visual mejorada de las unidades y otros dispositivos conectados **en Mi PC**. Los iconos para dispositivos con medios extraíbles, a excepción de las unidades de disquete, se proporcionan en versiones listas y no listas para indicar el estado actual del dispositivo. Esto confirma que un dispositivo conectado en caliente al sistema está listo para su uso y ayuda a evitar mensajes "dispositivo no listo" de dispositivos sin medios insertados.
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ceed10eec9038b338d060f28acdab8a10aa88aecef6b264b6d6d0682168f4937
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7187c1f4cb45306fd293c7eb74ef8807f395ba22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166897"
 ---
 # <a name="tb_buttonstructsize-message"></a>Mensaje \_ BUTTONSTRUCTSIZE de TB
 
@@ -43,11 +43,11 @@ Tamaño, en bytes, de la [**estructura TBBUTTON.**](/windows/desktop/api/Commctr
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El sistema usa el tamaño para determinar qué versión de la biblioteca de vínculos dinámicos (DLL) de control común se está utilizando.
 
-Si una aplicación usa la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para crear la barra de herramientas, la aplicación debe enviar este mensaje a la barra de herramientas antes de enviar el mensaje [**\_ ADDBITMAP**](tb-addbitmap.md) o [**TB \_ ADDBUTTONS de TB.**](tb-addbuttons.md) La [**función CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) envía automáticamente **TB \_ BUTTONSTRUCTSIZE** y el tamaño de la [**estructura TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) es un parámetro de la función.
+Si una aplicación usa la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para crear la barra de herramientas, la aplicación debe enviar este mensaje a la barra de herramientas antes de enviar el mensaje [**\_ TB ADDBITMAP**](tb-addbitmap.md) o [**TB \_ ADDBUTTONS.**](tb-addbuttons.md) La [**función CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) envía automáticamente **TB \_ BUTTONSTRUCTSIZE** y el tamaño de la estructura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) es un parámetro de la función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Si una aplicación usa la función [**CreateWindowEx**](/windows/desktop/api/win
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

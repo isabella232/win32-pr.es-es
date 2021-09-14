@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb340b69f8e7ebba1da1ade7869308b2caacc29f37125c9ab5075a6401e89bc6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec898ed09b20f15023ef04a399f5644df746e495
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046156"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166462"
 ---
 # <a name="tbm_setlinesize-message"></a>Mensaje \_ SETLINESIZE de TBM
 
@@ -43,7 +43,7 @@ Nuevo tamaño de línea.
 
 Devuelve un valor de 32 bits que especifica el tamaño de línea anterior.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor predeterminado para el tamaño de línea es 1.
 
@@ -57,7 +57,7 @@ La barra de seguimiento también envía un mensaje [**WM \_ HSCROLL**](wm-hscrol
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5aa2a661342b305155717f4f11336f540e1ae53524ff2d303a2ab790e2c73af7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74fde522e043adb8b11c25bede763bed6b252f2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118573589"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242510"
 ---
 # <a name="peakvalue-attribute"></a>Atributo PeakValue
 
@@ -26,9 +26,9 @@ El **atributo PeakValue** es un valor de amplitud de 16 bits que indica el nivel
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
--   [Archivos multimedia de Windows usados con frecuencia](commonly-used-windows-media-file-attributes.md)
+-   [Archivos multimedia de Windows usados habitualmente](commonly-used-windows-media-file-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se almacena tanto en la biblioteca como en el archivo multimedia digital.
 
@@ -45,13 +45,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

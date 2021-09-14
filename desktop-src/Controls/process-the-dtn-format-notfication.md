@@ -1,17 +1,17 @@
 ---
-title: Cómo procesar la notificación DTN_FORMAT notificación
+title: Cómo procesar la notificación de DTN_FORMAT notificación
 description: En este tema se muestra cómo procesar una notificación de formato enviada por el control selector de fecha y hora (DTP).
 ms.assetid: 7B559846-FE52-4181-B25D-888BE90EB038
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 070d1234dbd9d09159335539309deec86e2d3e1e05547d933cd18f16b9d7162d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25271ff33ee6978ebcb0bc474492f884ed7faaa2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117829916"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167641"
 ---
-# <a name="how-to-process-the-dtn_format-notification"></a>Cómo procesar la notificación DE FORMATO DE DTN \_
+# <a name="how-to-process-the-dtn_format-notification"></a>Cómo procesar la notificación DTN \_ FORMAT
 
 En este tema se muestra cómo procesar una notificación de formato enviada por el control selector de fecha y hora (DTP).
 
@@ -21,17 +21,17 @@ En este tema se muestra cómo procesar una notificación de formato enviada por 
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Instrucciones
 
 
 Un control DTP envía la [notificación DTN \_ FORMAT](dtn-format.md) para solicitar texto que se mostrará en un campo de devolución de llamada del control. La aplicación debe controlar esta notificación para permitir que el control DTP muestre información que no admite de forma nativa.
 
-El siguiente ejemplo de código de C++ es una función definida por la aplicación (**DoFormat**) que procesa códigos de notificación [ \_ DTN FORMAT](dtn-format.md) proporcionando una cadena de texto para un campo de devolución de llamada. La aplicación llama a la función definida por la aplicación **GetDayNum** para solicitar el número de día que se usará en la cadena de devolución de llamada.
+El siguiente ejemplo de código de C++ es una función definida por la aplicación (**DoFormat**) que procesa códigos de [notificación \_ DTN FORMAT](dtn-format.md) proporcionando una cadena de texto para un campo de devolución de llamada. La aplicación llama a la función definida por la aplicación **GetDayNum** para solicitar el número de día que se usará en la cadena de devolución de llamada.
 
 
 ```C++
@@ -63,7 +63,7 @@ else
 
 **Función definida por la aplicación GetDayNum**
 
-La función de ejemplo definida por la aplicación **DoFormat** llama a la siguiente función definida por la aplicación **GetDayNum** para solicitar el número de día en función de la fecha actual. **GetDayNum** devuelve un **valor INT** que representa el día actual del año, de 0 a 366. Esta función llama a otra función definida por la aplicación, **IsLeapYr,** durante el procesamiento.
+La función de ejemplo Definida por la aplicación **DoFormat** llama a la siguiente función definida por la aplicación **GetDayNum** para solicitar el número de día en función de la fecha actual. **GetDayNum devuelve** un valor **INT** que representa el día actual del año, de 0 a 366. Esta función llama a otra función definida por la aplicación, **IsLeapYr,** durante el procesamiento.
 
 
 ```C++
@@ -126,7 +126,7 @@ BOOL WINAPI IsLeapYr(int iYear)
 [Usar controles selectores de fecha y hora](using-date-and-time-picker.md)
 </dt> <dt>
 
-[Referencia del control Selector de fecha y hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[Referencia del control selector de fecha y hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
 [Selector de fecha y hora](date-and-time-picker-control-reference.md)

@@ -5,11 +5,11 @@ title: Entrelazado de vídeo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 340c727f8faaaf20ff82eff58d0c651601071dea
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474341"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363631"
 ---
 # <a name="video-interlacing"></a>Entrelazado de vídeo
 
@@ -17,29 +17,29 @@ En este tema se describe cómo los descodificadores y los orígenes multimedia d
 
 Para descodificar y representar vídeo entrelazado correctamente, se necesita la siguiente información:
 
--   Progresiva o entrelazada. Una secuencia de vídeo puede contener fotogramas progresivas, fotogramas entrelazados o una combinación de ambos.
+-   Progresiva o entrelazada. Una secuencia de vídeo puede contener fotogramas progresivas, entrelazados o una combinación de ambos.
 
 -   Dominación de campo. La dominación de campo describe qué campo aparece primero, el campo superior o el campo inferior.
 
 -   Repita el primer campo. Esta marca se usa en la extracción 3:2, cuando el marco es progresiva pero la secuencia está entrelazada. En este contexto, el primer campo puede ser el campo superior o inferior.
 
--   Campos intercalados o campo único. Un ejemplo puede contener un solo campo o dos campos intercalados. Si un ejemplo contiene un solo campo, el alto de la muestra es la mitad del alto del marco, porque la muestra contiene solo la mitad de las líneas de examen de un marco. Se recomiendan los campos intercalados a menos que las características del contenido de origen indiquen lo contrario.
+-   Campos intercalados o campo único. Un ejemplo puede contener un solo campo o dos campos intercalados. Si una muestra contiene un solo campo, el alto de la muestra es la mitad del alto del marco, ya que la muestra contiene solo la mitad de las líneas de examen de un marco. Se recomiendan los campos intercalados a menos que las características del contenido de origen indiquen lo contrario.
 
-Cualquiera de estas características puede cambiar de una muestra a la siguiente. Sin embargo, los componentes de vídeo deben saber algo sobre el contenido general antes de comenzar el streaming. Por ejemplo, si el vídeo está entrelazado, el representador de vídeo mejorado (EVR) debe reservar memoria de vídeo para el desinterlazado. Por otro lado, si el vídeo es totalmente progresiva, el EVR puede optimizar la canalización de representación. Agregar un paso de desinteresado a la canalización aumenta la latencia de representación.
+Cualquiera de estas características puede cambiar de un ejemplo a otro. Sin embargo, los componentes de vídeo deben saber algo sobre el contenido general antes de comenzar el streaming. Por ejemplo, si el vídeo está entrelazado, el representador de vídeo mejorado (EVR) debe reservar memoria de vídeo para el desenlazado. Por otro lado, si el vídeo es totalmente progresiva, la EVR puede optimizar la canalización de representación. Agregar un paso de desenlazado a la canalización aumenta la latencia de representación.
 
 La información sobre el entrelazado se almacena en dos lugares:
 
 -   La información general sobre el entrelazado en una secuencia se coloca en el tipo de medio. Para obtener más información sobre los tipos de medios, vea [Tipos de medios](media-types.md).
 
--   La información que puede cambiar con cada muestra se coloca en el ejemplo como un atributo. Para obtener más información sobre los ejemplos, vea [Ejemplos multimedia.](media-samples.md)
+-   La información que puede cambiar con cada muestra se coloca en el ejemplo como un atributo. Para obtener más información sobre los ejemplos, vea [Ejemplos de medios](media-samples.md).
 
 ## <a name="interlace-information-in-the-media-type"></a>Información de intercalación en el tipo de medio
 
 El [**atributo MF MT \_ \_ INTERLACE \_ MODE**](mf-mt-interlace-mode-attribute.md) en el tipo de medio describe cómo se entrelaza la secuencia como un todo. El valor de este atributo es un miembro de la [**enumeración MFVideoInterlaceMode.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideointerlacemode) Un tipo de medio de vídeo siempre debe tener este atributo.
 
--   Si la secuencia solo contiene fotogramas progresivas, sin fotogramas entrelazados, use MFVideoInterlace \_ Progressive.
--   Si la secuencia solo contiene fotogramas entrelazados y cada ejemplo contiene dos campos intercalados, use MFVideoInterlace \_ FieldInterleavedUpperFirst o MFVideoInterlace \_ FieldInterleavedLowerFirst.
--   Si la secuencia solo contiene fotogramas entrelazados y cada ejemplo contiene un solo campo, use MFVideoInterlace \_ FieldSingleUpper o MFVideoInterlace \_ FieldSingleLower. Si los campos alternan entre superior e inferior, no importa cuál de estos dos valores se utilice. Si el formato contiene solo campos superiores o simplemente campos inferiores, establezca el valor correspondiente al contenido.
+-   Si la secuencia solo contiene fotogramas progresivas, sin marcos entrelazados, use MFVideoInterlace \_ Progressive.
+-   Si la secuencia contiene solo fotogramas entrelazados y cada muestra contiene dos campos intercalados, use MFVideoInterlace \_ FieldInterleavedUpperFirst o MFVideoInterlace \_ FieldInterleavedLowerFirst.
+-   Si la secuencia contiene solo fotogramas entrelazados y cada muestra contiene un solo campo, use MFVideoInterlace \_ FieldSingleUpper o MFVideoInterlace \_ FieldSingleLower. Si los campos alternan entre superior e inferior, no importa cuál de estos dos valores se utilice. Si el formato contiene solo campos superiores o simplemente campos inferiores, establezca el valor correspondiente al contenido.
 -   Si la secuencia contiene una combinación de fotogramas entrelazados y progresivas, o si la dominación de campo cambia, establezca el tipo de medio en MFVideoInterlace \_ MixedInterlaceOrProgressive. Use atributos de ejemplo para describir cada fotograma.
 
 En la tabla siguiente se resume este atributo.
@@ -48,7 +48,7 @@ En la tabla siguiente se resume este atributo.
 
 | MODO \_ DE \_ INTERLACE MF \_ MT                       | ¿Entrelazado? | Ejemplos                                  | Primer campo    |
 |-----------------------------------------------|-------------|------------------------------------------|----------------|
-| MFVideoInterlace \_ Progresiva                 | No          | Marco progresiva                        | No aplicable |
+| MFVideoInterlace \_ Progressive                 | No          | Marco progresiva                        | No aplicable |
 | MFVideoInterlace \_ FieldInterleavedUpperFirst  | Sí         | Campos intercalados                       | Upper first    |
 | MFVideoInterlace \_ FieldInterleavedLowerFirst  | Sí         | Campos intercalados                       | Lower first    |
 | MFVideoInterlace \_ FieldSingleUpper            | Sí         | Campo único                             | Upper first    |
@@ -63,7 +63,7 @@ Los campos intercalados y los campos individuales no se pueden mezclar. Cambiar 
 
 ## <a name="interlace-flags-on-samples"></a>Marcas de intercalación en ejemplos
 
-La información que puede cambiar de una muestra a la siguiente se indica mediante atributos de ejemplo. Use la [**interfaz IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) para obtener o establecer estos atributos.
+La información que puede cambiar de una muestra a la siguiente se indica mediante atributos de ejemplo. Use la [**interfazSAMPLESample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) para obtener o establecer estos atributos.
 
 Todos los atributos de entrelazado enumerados en esta sección tienen valores booleanos. De hecho, cada uno de estos atributos puede tener tres valores: **TRUE,** **FALSE** o no establecido. Si no se establece un atributo, el valor se toma del tipo de medio. Si se establece un atributo, el valor invalida el tipo de medio. Algunas combinaciones de marcas y tipos de medios no son válidas.
 
@@ -73,8 +73,8 @@ Todos los atributos de entrelazado enumerados en esta sección tienen valores bo
 | Atributo | Descripción | 
 |-----------|-------------|
 | <a href="mfsampleextension-interlaced-attribute.md">MFSampleExtension_Interlaced</a> | Si <strong>es TRUE,</strong>el marco está entrelazado. Si <strong>es FALSE,</strong>el marco es progresiva.<br /> Establezca este atributo en cada ejemplo si el tipo de medio es MFVideoInterlace_MixedInterlaceOrProgressive.<br /> | 
-| <a href="mfsampleextension-bottomfieldfirst-attribute.md">MFSampleExtension_BottomFieldFirst</a> | El significado de esta marca depende de si los ejemplos contienen campos intercalados o campos individuales.<br /><ul><li>Campos intercalados: si <strong>es TRUE,</strong>el campo inferior es el primero. Si <strong>es FALSE,</strong>el campo superior es el primero.<br /></li><li>Campos únicos: si <strong>es TRUE,</strong>el ejemplo contiene un campo inferior. Si <strong>es FALSE,</strong>el ejemplo contiene un campo superior.<br /></li></ul>Establezca este atributo en cada ejemplo de interlace si el tipo de medio es MFVideoInterlace_FieldSingleUpper, MFVideoInterlace_FieldSingleLower o MFVideoInterlace_MixedInterlaceOrProgressive.<br /> | 
-| <a href="mfsampleextension-repeatfirstfield-attribute.md">MFSampleExtension_RepeatFirstField</a> | Si <strong>es TRUE,</strong>se repite el primer campo. Si <strong>es FALSE</strong> o no se establece, el primer campo no se repite. | 
+| <a href="mfsampleextension-bottomfieldfirst-attribute.md">MFSampleExtension_BottomFieldFirst</a> | El significado de esta marca depende de si las muestras contienen campos intercalados o campos individuales.<br /><ul><li>Campos intercalados: si <strong>es TRUE,</strong>el campo inferior es el primero. Si <strong>es FALSE,</strong>el campo superior es primero.<br /></li><li>Campos únicos: si <strong>es TRUE,</strong>el ejemplo contiene un campo inferior. Si <strong>es FALSE,</strong>el ejemplo contiene un campo superior.<br /></li></ul>Establezca este atributo en cada ejemplo de intercalación si el tipo de medio es MFVideoInterlace_FieldSingleUpper, MFVideoInterlace_FieldSingleLower o MFVideoInterlace_MixedInterlaceOrProgressive.<br /> | 
+| <a href="mfsampleextension-repeatfirstfield-attribute.md">MFSampleExtension_RepeatFirstField</a> | Si <strong>es TRUE</strong>, se repite el primer campo. Si <strong>es FALSE</strong> o no se establece, el primer campo no se repite. | 
 | <a href="mfsampleextension-singlefield-attribute.md">MFSampleExtension_SingleField</a> | Si <strong>es TRUE,</strong>el ejemplo contiene un solo campo. Si <strong>es FALSE,</strong>el ejemplo contiene campos intercalados. | 
 
 
@@ -82,11 +82,11 @@ Todos los atributos de entrelazado enumerados en esta sección tienen valores bo
 
  
 
-En la tabla siguiente se muestran las marcas necesarias, opcionales o prohibidas, en función del tipo de medio.
+En la tabla siguiente se muestran las marcas necesarias, opcionales o prohibidas, según el tipo de medio.
 
 
 
-| Tipo de soporte         | Marca entrelazada                      | BottomFieldFirst Flag                    | Marca RepeatFirstField | SingleField Flag                     |
+| Tipo de soporte         | Marca entrelazada                      | BottomFieldFirst Flag                    | RepeatFirstField Flag | SingleField Flag                     |
 |--------------------|--------------------------------------|------------------------------------------|-----------------------|--------------------------------------|
 | progresivo        | Opcional; si se establece, debe ser **FALSE.** | No lo establezca.                              | No lo establezca.           | No lo establezca.                          |
 | Campos intercalados | Opcional; si se establece, debe ser **TRUE.**  | Opcional; si se establece, debe coincidir con el tipo de medio. | No lo establezca.           | Opcional; si se establece, debe ser **FALSE.** |
@@ -155,7 +155,7 @@ Para el contenido MPEG-2, use las siguientes asignaciones para convertir las mar
 
 
 
-| Valor         | Atributo de ejemplo                                                                                                        |
+| Value         | Atributo de ejemplo                                                                                                        |
 |---------------|-------------------------------------------------------------------------------------------------------------------------|
 | frame         | **MFSampleExtension \_ SingleField**  =  **FALSE**                                                                          |
 | campo \_ superior    | **MFSampleExtension \_ SingleField**  =  **TRUE**<br/> **MFSampleExtension \_ BottomFieldFirst**  =  **FALSE**<br/> |
@@ -169,7 +169,7 @@ Para el contenido MPEG-2, use las siguientes asignaciones para convertir las mar
 
 
 
-| Valor | Atributo de ejemplo                              |
+| Value | Atributo de ejemplo                              |
 |-------|-----------------------------------------------|
 | 0     | **MFSampleExtension \_ TRUE entrelazado**  =    |
 | 1     | **MFSampleExtension \_ FALSE entrelazado**  =   |
@@ -182,7 +182,7 @@ Para el contenido MPEG-2, use las siguientes asignaciones para convertir las mar
 
 
 
-| Valor | Atributo de ejemplo                                    |
+| Value | Atributo de ejemplo                                    |
 |-------|-----------------------------------------------------|
 | 0     | **MFSampleExtension \_ BottomFieldFirst**  =  **TRUE**  |
 | 1     | **MFSampleExtension \_ BottomFieldFirst**  =  **FALSE** |
@@ -195,7 +195,7 @@ Para el contenido MPEG-2, use las siguientes asignaciones para convertir las mar
 
 
 
-| Valor | Atributo de ejemplo                                    |
+| Value | Atributo de ejemplo                                    |
 |-------|-----------------------------------------------------|
 | 0     | **MFSampleExtension \_ RepeatFirstField**  =  **FALSE** |
 | 1     | **MFSampleExtension \_ RepeatFirstField**  =  **TRUE**  |
@@ -212,7 +212,7 @@ La misma regla se aplica a la apertura geométrica (atributo[ \_ MF MT GEOMETRIC
 
 ## <a name="directshow-mappings"></a>DirectShow Asignaciones
 
-En DirectShow, la información de entrelazado por ejemplo se encuentra en el **miembro dwTypeSpecificFlags** de la **estructura PROPERTIES DE AM \_ SAMPLE2. \_** En la tabla siguiente se muestran los atributos equivalentes para Media Foundation.
+En DirectShow, la información de entrelazado por ejemplo se encuentra en el **miembro dwTypeSpecificFlags** de la estructura **PROPERTIES DE AM \_ SAMPLE2. \_** En la tabla siguiente se muestran los atributos equivalentes para Media Foundation.
 
 
 

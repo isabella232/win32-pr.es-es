@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba09a88f12a25b87f507d70961a816412f2679da0fb9e1cb6ed6c760ecca320e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c9c1612a4f6c2fc436f858807fca59112c376a35
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166293"
 ---
 # <a name="tcm_adjustrect-message"></a>Mensaje \_ ADJUSTRECT de TCM
 
@@ -47,7 +47,7 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que e
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje solo se aplica a los controles de tabulación que se encuentran en la parte superior. No se aplica a los controles de tabulación que están en los lados o en la parte inferior.
 
@@ -59,7 +59,7 @@ Este mensaje solo se aplica a los controles de tabulación que se encuentran en 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

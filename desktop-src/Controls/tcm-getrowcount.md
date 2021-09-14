@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e67b2ac40834075b31ccf2415a52c96448b8143dde3d6bc67f9c515e1f601a4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c9bc3d9985591a08b96be2f21d55b8a6cade9b7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120104875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166253"
 ---
 # <a name="tcm_getrowcount-message"></a>Mensaje \_ GETROWCOUNT de TCM
 
@@ -39,9 +39,9 @@ Recupera el número actual de filas de pestañas en un control de ficha. Puede e
 
 Devuelve el número de filas de pestañas.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Solo los controles de pestaña que [**tengan el estilo \_ MULTILINE**](tab-control-styles.md) de TCS pueden tener varias filas de pestañas.
+Solo los controles de pestaña que [**tengan el estilo \_ MULTILINE de TCS**](tab-control-styles.md) pueden tener varias filas de pestañas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Solo los controles de pestaña que [**tengan el estilo \_ MULTILINE**](tab-contr
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

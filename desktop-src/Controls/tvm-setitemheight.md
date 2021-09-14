@@ -1,6 +1,6 @@
 ---
 title: TVM_SETITEMHEIGHT mensaje (Commctrl.h)
-description: Establece el alto de los elementos de la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ SetItemHeight.
+description: Establece el alto de los elementos de la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro \_ SetItemHeight de TreeView.
 ms.assetid: 23f6f2a4-cdd9-441d-af24-ed40513d2721
 keywords:
 - TVM_SETITEMHEIGHT controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9afff57188a9683d18c6bff780b4a9f61479526d44ea77985742520a47e66cca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 114769f689cbf8d9475460e40d205c4282a1a787
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118669650"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165622"
 ---
 # <a name="tvm_setitemheight-message"></a>Mensaje \_ SETITEMHEIGHT de TVM
 
-Establece el alto de los elementos de la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ SetItemHeight.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setitemheight)
+Establece el alto de los elementos de la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetItemHeight de TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setitemheight)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece el alto de los elementos de la vista de árbol. Puede enviar este mens
 *wParam* 
 </dt> <dd>
 
-Nuevo alto de cada elemento de la vista de árbol, en píxeles. Las alturas inferiores a 1 se establecerán en 1. Si este argumento no es par y el control de vista de árbol no tiene el estilo [**\_ TVS NONEVENHEIGHT,**](tree-view-control-window-styles.md) este valor se redondeará hacia abajo al valor par más cercano. Si este argumento es -1, el control volverá a usar su alto de elemento predeterminado.
+Nuevo alto de cada elemento de la vista de árbol, en píxeles. Las alturas inferiores a 1 se establecerán en 1. Si este argumento no es par y el control de vista de árbol no tiene el estilo [**\_ NONEVENHEIGHT de TVS,**](tree-view-control-window-styles.md) este valor se redondeará hacia abajo al valor par más cercano. Si este argumento es -1, el control volverá a usar su alto de elemento predeterminado.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Devuelve el alto anterior de los elementos, en píxeles.
 
 ## <a name="remarks"></a>Observaciones
 
-El control de vista de árbol usa este valor para el alto de todos los elementos. Para modificar el alto de elementos individuales, vea la descripción del **miembro iIntegral** de la [**estructura TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
+El control de vista de árbol usa este valor para el alto de todos los elementos. Para modificar el alto de los elementos individuales, vea la descripción del **miembro iIntegral** de la [**estructura TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ El control de vista de árbol usa este valor para el alto de todos los elementos
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ead93634131483ab1a79c396453f7fa5918c8c5f82eae8bf253a70e74a6d7f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 324ab0f14b83621651869e715c1fd4a882ceb650
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118836226"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127242409"
 ---
 # <a name="playerenablecontextmenu"></a>Player.enableContextMenu
 
 La **propiedad enableContextMenu** especifica o recupera un valor que indica si se debe habilitar el menú contextual, que aparece cuando se hace clic con el botón derecho del mouse.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player*. **enableContextMenu**
 
@@ -35,7 +35,7 @@ Esta propiedad es un booleano de lectura y escritura.
 
 
 
-| Valor | Descripción                       |
+| Value | Descripción                       |
 |-------|-----------------------------------|
 | true  | Predeterminada. Habilite el menú contextual. |
 | false | No habilite el menú contextual.   |
@@ -44,7 +44,7 @@ Esta propiedad es un booleano de lectura y escritura.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Durante la reproducción a pantalla completa, Reproductor de Windows Media el cursor del mouse cuando **enableContextMenu** es igual a false y **uiMode** es igual a "none".
 

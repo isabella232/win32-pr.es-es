@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9fce4cb5edb9765e7f69726188e5ed0ba2017df7d6fa90cae0bfa059b89fc939
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de2b852ffc9a12622a4560ae834a3347b1e07552
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072280"
 ---
 # <a name="ccritsecccritsec-constructor"></a>Constructor CCritSec.CCritSec
 
@@ -40,7 +40,7 @@ CCritSec();
 
 Este constructor no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método llama a la [**función InitializeCriticalSection**](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection) para inicializar la sección crítica.
 
@@ -55,7 +55,7 @@ Este método llama a la [**función InitializeCriticalSection**](/windows/deskto
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

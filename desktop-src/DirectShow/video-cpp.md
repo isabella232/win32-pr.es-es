@@ -1,19 +1,19 @@
 ---
-description: Este artículo contiene código para el archivo video.cpp para el tutorial Reproducción de audio y vídeo en DirectShow.
+description: Este artículo contiene código para el archivo video.cpp del tutorial Reproducción de audio y vídeo en DirectShow.
 ms.assetid: c406a099-4956-46a8-b1f4-6d2e6ab3427a
 title: video.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d594bb850944fde6803d26ec49a547402e3d1a1bcdf5dba2814d4ce8299f7288
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f24d7bd3f27ce995d69e3f1425b7cae95d8997f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119964645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272956"
 ---
 # <a name="videocpp"></a>video.cpp
 
-Este tema contiene código para el tutorial [Reproducción de audio y](audio-video-playback-in-directshow.md)vídeo en DirectShow .
+Este tema contiene código para el tutorial [Reproducción de audio y vídeo en DirectShow](audio-video-playback-in-directshow.md).
 
 
 ```C++

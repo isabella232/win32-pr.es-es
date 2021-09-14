@@ -14,14 +14,14 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 3d41bf7b6cd0d6da360804159d6d81435175cfba15752b2ad87599abf79f3374
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd1d6aad071879b6559ed1472c0463f8f87dd4cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118378875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158602"
 ---
-# <a name="dependencylanguage-property"></a>Dependency.Language, propiedad
+# <a name="dependencylanguage-property"></a>Propiedad Dependency.Language
 
 La propiedad **Language** de solo lectura devuelve **el LANGID** del módulo necesario.
 
@@ -46,10 +46,10 @@ Vea get Language Function (Dependency Object) ( Obtener [**\_ función de lengua
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cb42d878840ad05f0854ec7ca9cb50dc1b3be2a55b3b65ddf652d961b6d818b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35586d3483d1d487f740a1a3d991c884c814f452
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119312445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167782"
 ---
 # <a name="pbm_getbarcolor-message"></a>Mensaje \_ GETBARCOLOR de PBM
 
@@ -39,7 +39,7 @@ Obtiene el color de la barra de progreso.
 
 Devuelve el color de la barra de progreso.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este es el color establecido por el [**mensaje \_ SETBARCOLOR de PBM.**](pbm-setbarcolor.md) El valor predeterminado es CLR \_ DEFAULT, que se define en commctrl.h.
 
@@ -53,7 +53,7 @@ Esta función solo afecta al modo clásico, no a ningún estilo visual.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

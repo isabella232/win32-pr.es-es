@@ -1,6 +1,6 @@
 ---
 title: TB_GETRECT mensaje (Commctrl.h)
-description: Recupera el rectángulo delimitador para un botón de la barra de herramientas especificado.
+description: Recupera el rectángulo delimitador de un botón de barra de herramientas especificado.
 ms.assetid: a93885eb-7eb7-4434-ad51-80fb30d3bfa1
 keywords:
 - TB_GETRECT controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc9a2b12fd2331a8346addbb5702a7837c9c0b28108850d3a4fd0d8e35432fa5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 889d067eb282e3d834ba4dc0cf6711c0561d86e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119078309"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166773"
 ---
-# <a name="tb_getrect-message"></a>Mensaje \_ DE TB GETRECT
+# <a name="tb_getrect-message"></a>Mensaje \_ GETRECT de TB
 
-Recupera el rectángulo delimitador para un botón de la barra de herramientas especificado.
+Recupera el rectángulo delimitador de un botón de barra de herramientas especificado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,7 +47,7 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que r
 
 Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje no recupera el rectángulo delimitador para los botones cuyo estado se establece en el [**valor TBSTATE \_ HIDDEN.**](toolbar-button-states.md)
 
@@ -55,11 +55,11 @@ Este mensaje no recupera el rectángulo delimitador para los botones cuyo estado
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cc9e90ab63e34545628019cd9dcde74c7b4e953fb6ee0b9eed138151129e7b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ad4f57b63c154ee98fc48a59ac81bf4fd61ba5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077879"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166286"
 ---
 # <a name="tcm_deleteitem-message"></a>Mensaje \_ DELETEITEM de TCM
 
-Quita un elemento de un control de ficha. Puede enviar este mensaje explícitamente o mediante la [**macro TabCtrl \_ DeleteItem.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_deleteitem)
+Quita un elemento de un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ DeleteItem.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_deleteitem)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -41,17 +41,17 @@ Quita un elemento de un control de ficha. Puede enviar este mensaje explícitame
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

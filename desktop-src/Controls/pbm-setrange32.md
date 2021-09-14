@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8e29022b4b3cb1c42c8e661e8366324ac10ae9853f104f31722dae8852edf71
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 55fcf91c794ec9ae3880d67f8df947f87fec413d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118169861"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167741"
 ---
 # <a name="pbm_setrange32-message"></a>Mensaje \_ SETRANGE32 de PBM
 
@@ -45,9 +45,9 @@ Valor máximo del intervalo. Este valor debe ser mayor que *wParam.* De forma pr
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **valor DWORD** que contiene el límite inferior de 16 bits anterior en [**su LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) y el límite superior de 16 bits anterior en [**su HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)). Si los intervalos anteriores eran valores de 32 bits, el valor devuelto consta de **loword** de ambos límites de 32 bits.
+Devuelve un **valor DWORD** que contiene el límite inferior de 16 bits anterior en su [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) y el límite superior de 16 bits anterior en [**su HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)). Si los intervalos anteriores eran valores de 32 bits, el valor devuelto consta de **loword** de ambos límites de 32 bits.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para recuperar todos los valores altos y bajos de 32 bits, use el [**mensaje \_ GETRANGE de PBM.**](pbm-getrange.md)
 
@@ -55,11 +55,11 @@ Para recuperar todos los valores altos y bajos de 32 bits, use el [**mensaje \_ 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

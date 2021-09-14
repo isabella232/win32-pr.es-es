@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 72ea9d96be976f1b09e1cdc9721eb5eebe7adce2905d7a028d70a9ff50ff58bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27e3ab5cc2a631cb54c926824c2f3410413cd981
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072214"
 ---
-# <a name="iamtimelinetrackzerobetween2-method"></a>Método IAMTimelineTrack::ZeroBetween2
+# <a name="iamtimelinetrackzerobetween2-method"></a>IamTimelineTrack::ZeroBetween2 (método)
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `ZeroBetween2` método quita todo de la pista entre las horas especificadas. Este método es equivalente a [**IAMTimelineTrack::ZeroBetween**](iamtimelinetrack-zerobetween.md), pero toma [**valores REFTIME.**](reftime.md)
+El `ZeroBetween2` método quita todo el elemento de la pista entre las horas especificadas. Este método es equivalente a [**IAMTimelineTrack::ZeroBetween**](iamtimelinetrack-zerobetween.md), pero toma [**valores REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,7 +75,7 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -98,14 +98,14 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IamTimelineTrack (interfaz)**](iamtimelinetrack.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

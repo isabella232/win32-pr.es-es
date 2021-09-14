@@ -1,5 +1,5 @@
 ---
-description: El método SetPowerState de la clase CIM VolatileStorage establece el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo \_ en ese estado.
+description: El método SetPowerState de la clase VOLATILEStorage de CIM establece el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo \_ en ese estado.
 ms.assetid: e96a9a99-74c3-48a6-b697-9fcbc14abc27
 ms.tgt_platform: multiple
 title: Método SetPowerState de la CIM_VolatileStorage clase
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c47c9ba54fbc5fb906d6ac4484e298e6cc1fac15cb4083bbb7856c02af4910ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c72cba61a41a76b604554fe3a36e463d6c3e35d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118958964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072349"
 ---
 # <a name="setpowerstate-method-of-the-cim_volatilestorage-class"></a>Método SetPowerState de la clase \_ VOLATILEStorage de CIM
 
-El **método SetPowerState** de la clase CIM VolatileStorage establece el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo \_ en ese estado. En una subclase, el conjunto de códigos de retorno posibles debe especificarse mediante un [**calificador ValueMap**](/windows/desktop/WmiSdk/standard-qualifiers) en el método . Las cadenas a las que se traduce el contenido de **ValueMap** también deben especificarse en la subclase como calificador de **matriz Values.** Este método se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+El **método SetPowerState** de la clase VOLATILEStorage de CIM establece el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo \_ en ese estado. En una subclase, el conjunto de códigos de retorno posibles debe especificarse mediante un [**calificador ValueMap**](/windows/desktop/WmiSdk/standard-qualifiers) en el método . Las cadenas a las que se traduce el contenido de **ValueMap** también se deben especificar en la subclase como calificador de **matriz Values.** Este método se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -56,21 +56,21 @@ Valor [**valueMap**](/windows/desktop/WmiSdk/standard-qualifiers) que especifica
 1
 </dt> <dd>
 
-Potencia completa.
+Energía completa.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Modo de bajo consumo de energía de Ahorro de energía.
+Ahorro de energía en modo de bajo consumo.
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-Ahorro de energía en espera.
+Espera de ahorro de energía.
 
 </dd> <dt>
 
@@ -106,17 +106,17 @@ Especifica cuándo se debe establecer el estado de energía, ya sea como un valo
 
 Devuelve 0 (cero) si se realiza correctamente, 1 (uno) si no se admite la solicitud *PowerState* y *Time* especificadas y otro valor si se produjo cualquier otro error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

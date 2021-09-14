@@ -4,14 +4,14 @@ ms.assetid: 8c62db36-1332-4565-9fc0-885b9fc148e1
 title: MF_PD_ASF_FILEPROPERTIES_MIN_PACKET_SIZE atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da6a2f90e1f1f5c6b467710a931b7e741424dc0979dbdb8bf780dc9bb47a3723
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 15e7b9016184096696ffd74cde6bd51f305778e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119777065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269108"
 ---
-# <a name="mf_pd_asf_fileproperties_min_packet_size-attribute"></a>Atributo MF \_ PD \_ ASF \_ FILEPROPERTIES \_ MIN PACKET \_ \_ SIZE
+# <a name="mf_pd_asf_fileproperties_min_packet_size-attribute"></a>Atributo \_ MIN PACKET SIZE de MF PD \_ ASF \_ FILEPROPERTIES \_ \_ \_
 
 Especifica el tamaño mínimo del paquete, en bytes, para un archivo de formato de sistemas avanzados (ASF).
 
@@ -19,7 +19,7 @@ Especifica el tamaño mínimo del paquete, en bytes, para un archivo de formato 
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
@@ -33,11 +33,11 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

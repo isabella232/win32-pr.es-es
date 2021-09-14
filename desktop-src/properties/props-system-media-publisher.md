@@ -4,12 +4,12 @@ ms.assetid: 64de54af-6900-4361-a7b5-f29fbd5cd0e0
 title: System.Media. Publisher
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6688102cbe6729e2f25ccabc71251e6d2877a9406ff8eb0d147000df31b7c698
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a03f4bdb89f10c35f9837b28f20e8d5f62d11b55
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120090935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363402"
 ---
 # <a name="systemmediapublisher"></a>System.Media. Publisher
 
@@ -43,7 +43,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

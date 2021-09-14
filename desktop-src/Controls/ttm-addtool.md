@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb66c43033e54ce51b396ff5bb11efe3b2a99e8eb2578a2e9fe4d4bc4487ccf0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 29dad3e297f8c3430f18286afa9a998eaf578a26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119769545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165946"
 ---
 # <a name="ttm_addtool-message"></a>Mensaje \_ ADDTOOL de TTM
 
@@ -43,7 +43,7 @@ Puntero a una [**estructura TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TTM \_ ADDTOOLW** (Unicode) y **TTM \_ ADDTOOLA** (ANSI)<br/>                   |
 
 

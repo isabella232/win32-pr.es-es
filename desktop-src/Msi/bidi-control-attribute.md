@@ -1,15 +1,15 @@
 ---
-description: Se trata de una combinación de los atributos RTLRO, RightAligned y LeftScroll del orden de lectura de derecha a izquierda.
+description: Se trata de una combinación del orden de lectura de derecha a izquierda RTLRO, los atributos RightAligned y LeftScroll.
 ms.assetid: 4eaec16f-ee1c-437b-8b76-7ebbdc4e2f71
 title: Atributo de control BiDi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5fd152bbff384961a51350d31759b35ea2b0b4444cac20c78df3dbc7af13bfd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 556195c1b3170983083473598f69acb99cdcfaf7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120045265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158992"
 ---
 # <a name="bidi-control-attribute"></a>Atributo de control BiDi
 
@@ -67,7 +67,7 @@ Se trata de una combinación del orden de lectura de derecha a izquierda [RTLRO,
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para establecer este atributo en un control, incluya el bit BiDi en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 

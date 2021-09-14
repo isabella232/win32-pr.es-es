@@ -5,11 +5,11 @@ ms.assetid: 7c39987d-807b-41c1-9788-65c3d468b976
 ms.topic: article
 ms.date: 10/20/2020
 ms.openlocfilehash: 90d8c342f24c1c34f20a7a8d7ec5f0e9e150fb80
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127267567"
 ---
 # <a name="check-boxes"></a>Casillas
 
@@ -18,12 +18,12 @@ ms.locfileid: "122884324"
 
 Con una casilla, los usuarios tomarán una decisión entre dos opciones claramente opuestas. La etiqueta de casilla indica el estado seleccionado, mientras que el significado del estado borrado debe ser el opuesto inequívoco del estado seleccionado. Por lo tanto, solo se deben usar casillas para activar o desactivar una opción o para seleccionar o **anular la selección de un elemento.**
 
-![captura de pantalla de una de las cuatro casillas seleccionadas ](images/ctrl-check-boxes-image1.png)
+![captura de pantalla de una de las cuatro casillas activadas ](images/ctrl-check-boxes-image1.png)
 
 Un grupo típico de casillas.
 
 > [!Note]  
-> Las instrucciones relacionadas [con el diseño](vis-layout.md) se presentan en un artículo independiente.
+> Las directrices relacionadas [con el](vis-layout.md) diseño se presentan en un artículo independiente.
 
  
 
@@ -32,18 +32,18 @@ Un grupo típico de casillas.
 Para decidirte, intenta responder a estas preguntas:
 
 -   **¿Se usa la casilla para activar o desactivar una opción o para seleccionar o anular la selección de un elemento?** Si no es así, usa otro control.
--   **¿Los estados seleccionados y borrados son opuestos claros e inequívocos?** Si no es así, use [botones](ctrl-radio-buttons.md) de radio o [una lista](/windows/desktop/uxguide/ctrl-drop) desplegable para poder etiquetar los estados de forma independiente.
--   **Cuando se usa en un grupo, ¿consta el grupo de opciones independientes, de las que los usuarios pueden elegir cero o más?** Si no es así, tenga en cuenta los controles para las opciones dependientes, como los botones de radio y las [vistas de árbol de casillas](ctrl-tree-views.md).
--   **Cuando se usa en un grupo, ¿consta el grupo de opciones dependientes, entre las que los usuarios deben elegir uno o varios?** Si es así, use un grupo de casillas y controle el error cuando no se seleccione ninguna de las opciones.
--   **¿El número de opciones de un grupo es 10 o menos?** Puesto que el espacio de pantalla utilizado es proporcional al número de opciones, mantenga el número de casillas en 10 o menos. Para más de 10 opciones, use una lista [de casillas](ctrl-list-boxes.md).
--   **¿Sería mejor un botón de radio?** Cuando las casillas solo son adecuadas para activar o desactivar una opción, se pueden usar botones de radio para opciones completamente diferentes. Si ambas soluciones son posibles:
+-   **¿Los estados seleccionados y borrados son opuestos claros e inequívocos?** Si no es así, use [botones de radio](ctrl-radio-buttons.md) o [una lista desplegable](/windows/desktop/uxguide/ctrl-drop) para poder etiquetar los estados de forma independiente.
+-   **Cuando se usa en un grupo, ¿consta el grupo de opciones independientes, entre las que los usuarios pueden elegir cero o más?** Si no es así, considere la posibilidad de usar controles para opciones dependientes, como botones de radio y [vistas de árbol de casilla.](ctrl-tree-views.md)
+-   **Cuando se usa en un grupo, ¿consta el grupo de opciones dependientes, entre las que los usuarios deben elegir una o varias?** Si es así, use un grupo de casillas y controle el error cuando no se seleccione ninguna de las opciones.
+-   **¿El número de opciones de un grupo es 10 o menos?** Puesto que el espacio de pantalla utilizado es proporcional al número de opciones, mantenga el número de casillas en 10 o menos. Para más de 10 opciones, use una [lista de casillas](ctrl-list-boxes.md).
+-   **¿Sería mejor un botón de radio?** Cuando las casillas solo son adecuadas para activar o desactivar una opción, los botones de radio se pueden usar para opciones completamente diferentes. Si ambas soluciones son posibles:
     -   Use botones de radio si el significado de la casilla desactivada no es completamente obvio.
 
         **Incorrecto:**
 
         ![captura de pantalla de una casilla con la etiqueta horizontal ](images/ctrl-check-boxes-image2.png)
 
-        En este ejemplo, la opción opuesta de Horizontal no está clara, por lo que la casilla no es una buena opción.
+        En este ejemplo, la opción opuesta de Landscape no está clara, por lo que la casilla no es una buena opción.
 
         **Correcto:**
 
@@ -51,7 +51,7 @@ Para decidirte, intenta responder a estas preguntas:
 
         En este ejemplo, las opciones no son opuestas, por lo que los botones de radio son la mejor opción.
 
-    -   Use botones de radio en las páginas del asistente para borrar las alternativas, aunque una casilla sea aceptable de lo contrario.
+    -   Use botones de radio en las páginas del asistente para que las alternativas se desactiven, aunque una casilla sea aceptable de otro modo.
     -   Use botones de radio si tiene suficiente espacio en la pantalla y las opciones son lo suficientemente importantes como para ser un buen uso de ese espacio de pantalla. De lo contrario, use una casilla o una lista desplegable.
 
         **Incorrecto:**
@@ -62,12 +62,12 @@ Para decidirte, intenta responder a estas preguntas:
 
         **Correcto:**
 
-        ![captura de pantalla de la casilla con no mostrar el mensaje ](images/ctrl-check-boxes-image5.png)
+        ![captura de pantalla de la casilla con no mostrar mensaje ](images/ctrl-check-boxes-image5.png)
 
         En este ejemplo, una casilla es un uso eficaz del espacio de pantalla para esta opción de periférico.
 
 -   Use una casilla si hay otras casillas en la ventana.
--   **¿La opción presenta una opción de programa, en lugar de datos?** Los valores de la opción no deben basarse en el contexto ni en otros datos. Para los datos, use una lista de casillas o [una lista de selección múltiple](ctrl-list-boxes.md).
+-   **¿La opción presenta una opción de programa, en lugar de datos?** Los valores de la opción no deben basarse en el contexto ni en otros datos. Para los datos, use una lista de casillas o [una lista de selección múltiple.](ctrl-list-boxes.md)
 
 ## <a name="usage-patterns"></a>Patrones de uso
 
@@ -77,10 +77,10 @@ Las casillas tienen varios patrones de uso:
 
 |    Uso                                                                          |         Ejemplo                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Una opción individual** Se usa una sola casilla para seleccionar una opción individual. <br/>                                                                                                             | ![captura de pantalla de una casilla con recordatorios etiqueta ](images/ctrl-check-boxes-image6.png)<br/> Se usa una sola casilla para una opción individual.<br/>                                                                                                                                                                                                                                                                                                                        |
-| **Opciones independientes (cero o más)** Se usa un grupo de casillas para seleccionar entre un conjunto de cero o más opciones.<br/>                                                                              | A diferencia de los controles de selección única, como los [botones de radio,](ctrl-radio-buttons.md)los usuarios pueden seleccionar cualquier combinación de opciones en un grupo de casillas.<br/> ![captura de pantalla de dos de tres casillas activadas ](images/ctrl-check-boxes-image7.png)<br/> Se usa un grupo de casillas para las opciones independientes.<br/>                                                                                                                                                  |
-| **Opciones dependientes (una o varias)** También se puede usar un grupo de casillas para seleccionar entre un conjunto de una o varias opciones.<br/>                                                                         | **es posible que tenga que representar una selección de una o varias opciones dependientes.** Dado que microsoft?windows no tiene un control que admita directamente este tipo de entrada, la mejor solución es usar un grupo de casillas y controlar el error cuando no se selecciona ninguna de las opciones.<br/> ![captura de pantalla de una de las dos casillas activadas ](images/ctrl-check-boxes-image8.png)<br/> Se usa un grupo de casillas donde se debe seleccionar al menos un protocolo.<br/> |
-| **Opción mixta** Además de sus estados seleccionados y desactivados, las casillas también tienen un estado mixto para varias selecciones para indicar que la opción está establecida para algunos objetos, pero no para todos.<br/> | ![captura de pantalla de una casilla azul sólido de solo lectura ](images/ctrl-check-boxes-image9.png)<br/> Casilla de verificación de estado mixto.<br/>                                                                                                                                                                                                                                                                                                                                                      |
+| **Una opción individual** Se usa una sola casilla para seleccionar una opción individual. <br/>                                                                                                             | ![captura de pantalla de una casilla con recordatorios etiqueta ](images/ctrl-check-boxes-image6.png)<br/> Se usa una sola casilla para una elección individual.<br/>                                                                                                                                                                                                                                                                                                                        |
+| **Opciones independientes (cero o más)** Se usa un grupo de casillas para seleccionar entre un conjunto de opciones cero o más.<br/>                                                                              | A diferencia de los controles de selección única, como los [botones de radio,](ctrl-radio-buttons.md)los usuarios pueden seleccionar cualquier combinación de opciones en un grupo de casillas.<br/> ![captura de pantalla de dos de las tres casillas activadas ](images/ctrl-check-boxes-image7.png)<br/> Se usa un grupo de casillas para las opciones independientes.<br/>                                                                                                                                                  |
+| **Opciones dependientes (una o varias)** También se puede usar un grupo de casillas para seleccionar entre un conjunto de una o varias opciones.<br/>                                                                         | **es posible que deba representar una selección de una o varias opciones dependientes.** dado que microsoft?windows no tiene un control que admita directamente este tipo de entrada, la mejor solución es usar un grupo de casillas y controlar el error cuando no se selecciona ninguna de las opciones.<br/> ![captura de pantalla de una de las dos casillas activadas ](images/ctrl-check-boxes-image8.png)<br/> Se usa un grupo de casillas donde se debe seleccionar al menos un protocolo.<br/> |
+| **Opción mixta** Además de sus estados seleccionados y desactivados, las casillas también tienen un estado mixto para varias selecciones para indicar que la opción está establecida para algunos objetos, pero no para todos.<br/> | ![captura de pantalla de una casilla azul sólida de solo lectura ](images/ctrl-check-boxes-image9.png)<br/> Casilla de verificación de estado mixto.<br/>                                                                                                                                                                                                                                                                                                                                                      |
 
 
 
@@ -92,12 +92,12 @@ Las casillas tienen varios patrones de uso:
 
 -   **Casillas relacionadas con el grupo**. Combine opciones relacionadas y separe las opciones no relacionadas en grupos de 10 o menos, mediante varios grupos si es necesario.
 
-    ![captura de pantalla de casillas relacionadas y no relacionadas ](images/ctrl-check-boxes-image10.png)
+    ![captura de pantalla de las casillas relacionadas y no relacionadas ](images/ctrl-check-boxes-image10.png)
 
-    Un ejemplo de grupos de opciones relacionadas e independientes.
+    Ejemplo de grupos de opciones relacionadas e independientes.
 
 -   **El uso de cuadros de grupo para organizar grupos de casillas** suele dar lugar a un desorden innecesario en la pantalla.
--   **Active las casillas en** un orden lógico, como agrupar opciones muy relacionadas, colocar primero las opciones más comunes o seguir alguna otra progresión natural. No se recomienda el orden alfabético porque depende del idioma y, por tanto, no se puede localizar.
+-   **Mostrar las casillas en** un orden lógico, como agrupar opciones muy relacionadas, colocar primero las opciones más comunes o seguir alguna otra progresión natural. No se recomienda el orden alfabético porque depende del idioma y, por tanto, no es localizable.
 -   **Alinee las casillas verticalmente, no horizontalmente.** La alineación horizontal es más difícil de leer.
 
     **Correcto:**
@@ -112,11 +112,11 @@ Las casillas tienen varios patrones de uso:
 
     En este ejemplo, la alineación horizontal es más difícil de leer.
 
--   **No use el estado mixto para representar un tercer estado.** El estado mixto se usa para indicar que se ha establecido una opción para algunos objetos secundarios, pero no para todos. Los usuarios no deben poder establecer un estado mixto directamente, sino que el estado mixto es un reflejo de los objetos secundarios. El estado mixto no se usa como tercer estado para un elemento individual. Para representar un tercer estado, use botones de radio o una lista desplegable en su lugar.
+-   **No use el estado mixto para representar un tercer estado.** El estado mixto se usa para indicar que se establece una opción para algunos objetos secundarios, pero no todos. Los usuarios no deben ser capaces de establecer un estado mixto directamente, sino que el estado mixto es un reflejo de los objetos secundarios. El estado mixto no se usa como tercer estado para un elemento individual. Para representar un tercer estado, use botones de radio o una lista desplegable en su lugar.
 
     **Incorrecto:**
 
-    ![captura de pantalla del servicio de tema azul sólido ](images/ctrl-check-boxes-image13.png)
+    ![captura de pantalla de la casilla del servicio de tema azul sólido ](images/ctrl-check-boxes-image13.png)
 
     En este ejemplo, se supone que el estado mixto indica que el servicio Theme no está instalado.
 
@@ -126,8 +126,8 @@ Las casillas tienen varios patrones de uso:
 
     En este ejemplo, los usuarios pueden elegir entre una lista de tres opciones claras.
 
--   **Al hacer clic en una casilla de estado mixto, debe recorrer todos los estados seleccionados, desactivados y mixtos originales.** Por motivos de restauración, es importante poder restaurar el estado mixto original porque la configuración puede ser compleja o desconocida para el usuario. De lo contrario, la única manera de restaurar el estado mixto con confianza sería cancelar la tarea e iniciar de nuevo.
--   **No use casillas como indicador de progreso.** En su lugar, use un control [de indicador](progress-bars.md) de progreso.
+-   **Al hacer clic en una casilla de verificación de estado mixto, debe recorrer todos los estados seleccionados, todos desactivados y los estados mixtos originales.** Por motivos de tolerancia, es importante poder restaurar el estado mixto original porque la configuración puede ser compleja o desconocida para el usuario. De lo contrario, la única manera de restaurar el estado mixto con confianza sería cancelar la tarea e iniciar de nuevo.
+-   **No use las casillas como indicador de progreso.** En su lugar, use un control [de indicador](progress-bars.md) de progreso.
 
     **Incorrecto:**
 
@@ -137,11 +137,11 @@ Las casillas tienen varios patrones de uso:
 
     **Correcto:**
 
-    ![captura de pantalla de una barra de progreso parcialmente rellenada ](images/ctrl-check-boxes-image16.png)
+    ![captura de pantalla de una barra de progreso parcialmente rellena ](images/ctrl-check-boxes-image16.png)
 
     Ejemplo de una barra de progreso típica.
 
--   **Mostrar las casillas deshabilitadas con el estado de selección correcto.** Aunque los usuarios no puedan cambiarlos, las casillas deshabilitadas transmiten información para que sean coherentes con los resultados.
+-   **Mostrar las casillas deshabilitadas con el estado de selección correcto.** Aunque los usuarios no pueden cambiarlos, las casillas deshabilitadas transmiten información para que sean coherentes con los resultados.
 
     **Incorrecto:**
 
@@ -156,7 +156,7 @@ Las casillas tienen varios patrones de uso:
 
 ### <a name="dont-show-this-ltitemgt-again"></a>No volver a mostrar este &lt; &gt; elemento
 
--   **Considere la posibilidad de usar una opción No volver a mostrar este elemento para permitir a los usuarios suprimir un cuadro de diálogo periódico solo si no &lt; &gt; hay una alternativa mejor.** Intente determinar de antemano si los usuarios realmente necesitan el cuadro de diálogo. Si lo hace, muestre siempre el diálogo y, si no lo hace, elimine el diálogo.
+-   **Considere la posibilidad de usar una opción No volver a mostrar este elemento para permitir a los usuarios suprimir un cuadro de diálogo periódico solo si &lt; no hay una alternativa &gt; mejor.** Intente determinar con antelación si los usuarios realmente necesitan el cuadro de diálogo. Si lo hacen, muestre siempre el diálogo y, si no lo hace, elimine el diálogo.
 
 Para obtener más instrucciones y ejemplos, vea [Cuadros de diálogo](win-dialog-box.md).
 
@@ -172,17 +172,17 @@ Para obtener más instrucciones y ejemplos, vea [Cuadros de diálogo](win-dialog
 
     ![captura de pantalla de cuadros de texto de encabezado y pie de página ](images/ctrl-check-boxes-image19.png)
 
-    En este ejemplo, si se escribe un encabezado o un pie de página, se selecciona automáticamente la opción .
+    En este ejemplo, al escribir un encabezado o pie de página, se selecciona automáticamente la opción .
 
 -   Si anida casillas con botones de radio u otras casillas, **deshabilite** estos controles subordinados hasta que se seleccione la opción de alto nivel . Al hacerlo, se evita la confusión sobre el significado de los controles subordinados.
--   Haga que los controles subordinados en una casilla contigua con la casilla en el orden de tabulación.
+-   Convertir los controles subordinados en una casilla contigua con la casilla en el orden de tabulación.
 -   **Si la selección de una opción implica la selección de casillas subordinadas, active explícitamente esas casillas para que la relación sea clara.**
 
     **Incorrecto:**
 
     ![captura de pantalla: botón seleccionado, casillas desactivadas ](images/ctrl-check-boxes-image20.png)
 
-    En este ejemplo, no se seleccionan las casillas subordinadas.
+    En este ejemplo, las casillas subordinadas no están activadas.
 
     **Correcto:**
 
@@ -196,19 +196,19 @@ Para obtener más instrucciones y ejemplos, vea [Cuadros de diálogo](win-dialog
 
     ![captura de pantalla de botones y casillas confusos ](images/ctrl-check-boxes-image22.png)
 
-    En este ejemplo, el uso de botones de radio es preciso, pero crea complejidad innecesaria.
+    En este ejemplo, el uso de botones de radio es preciso, pero crea una complejidad innecesaria.
 
     **Mejor:**
 
-    ![captura de pantalla de las casillas solo ](images/ctrl-check-boxes-image23.png)
+    ![captura de pantalla de casillas solo ](images/ctrl-check-boxes-image23.png)
 
     En este ejemplo, el uso de casillas es más sencillo y permite a los usuarios centrarse en seleccionar las opciones deseadas en lugar de en su relación compleja.
 
-    **Importante: Aplique esta directriz solo en circunstancias** extremadamente poco frecuentes, al mostrar las dependencias agrega una complejidad significativa sin agregar claridad. En el ejemplo anterior, es poco probable que los usuarios intenten elegir superíndice y subíndice, y si lo hacen, sería fácil entender que eran opciones exclusivas.
+    **Importante: Aplique esta guía solo en circunstancias muy poco** frecuentes, cuando se muestren las dependencias agrega una complejidad significativa sin agregar claridad. En el ejemplo anterior, es poco probable que los usuarios intenten elegir superíndices y subíndices y, si lo hicieran, sería fácil entender que eran opciones exclusivas.
 
 ### <a name="default-values"></a>Valores predeterminados
 
--   Si una casilla es para una opción de usuario, establezca el estado más seguro (para evitar la pérdida de datos o el acceso del sistema), el estado más seguro y privado **de forma predeterminada.** Si la seguridad y la seguridad no son factores, seleccione el valor más probable o práctico.
+-   Si una casilla es para una opción de usuario, establezca el estado más seguro (para evitar la pérdida de datos o del sistema), el estado más seguro y privado **de forma predeterminada.** Si la seguridad y la seguridad no son factores, seleccione el valor más probable o conveniente.
 
 ## <a name="recommended-sizing-and-spacing"></a>Tamaño y espaciado recomendados
 
@@ -222,13 +222,13 @@ Tamaño y espaciado recomendados para las casillas.
 
 -   Etiquete cada casilla.
 -   Asigne una clave [de acceso única](glossary.md) a cada etiqueta. Para obtener instrucciones, vea [Teclado.](inter-keyboard.md)
--   Use [mayúsculas de estilo oración.](glossary.md)
+-   Use [el uso de mayúsculas y mayúsculas de estilo oración.](glossary.md)
 -   Escriba la etiqueta como frase o frase imperativa y no use ningún signo de puntuación final.
-    -   **Excepción:** Si una etiqueta de casilla también etiqueta un control subordinado que le sigue, finalice la etiqueta con dos puntos.
+    -   **Excepción:** Si una etiqueta de casilla también etiqueta un control subordinado que le sigue, termine la etiqueta con dos puntos.
 -   Escriba la etiqueta para que describa el estado seleccionado de la casilla.
 -   Para un grupo de casillas, use expresiones paralelas e intente mantener la longitud aproximadamente igual para todas las etiquetas.
 -   Para un grupo de casillas, centre el texto de la etiqueta en las diferencias entre las opciones. Si todas las opciones tienen el mismo texto introductorio, mueva ese texto a la etiqueta de grupo.
--   Use expresiones positivas. No frasee una etiqueta para que al activar una casilla no se realice una acción.
+-   Use expresiones positivas. No frasee una etiqueta para que la selección de una casilla signifique no realizar una acción.
 
     -   **Excepción: no vuelva a mostrar este &lt; elemento. &gt;**
 
@@ -238,7 +238,7 @@ Tamaño y espaciado recomendados para las casillas.
 
     En este ejemplo, la opción no usa expresiones positivas.
 
--   Describa solo la opción con la etiqueta . Mantenga las etiquetas breves para que sea fácil hacer referencia a ellas en mensajes y documentación. Si la opción requiere una explicación adicional, proporcione la explicación en un [control](./glossary.md) de texto estático mediante oraciones completas y signos de puntuación finales.
+-   Describa solo la opción con la etiqueta . Mantenga las etiquetas breves para que sea fácil hacer referencia a ellas en mensajes y documentación. Si la opción requiere una explicación adicional, proporcione la explicación en un control [de](./glossary.md) texto estático mediante oraciones completas y signos de puntuación finales.
 
     > [!Note]
     >
@@ -250,9 +250,9 @@ Tamaño y espaciado recomendados para las casillas.
 
     En este ejemplo, una etiqueta de casilla tiene texto explicativo adicional debajo.
 
--   Si se recomienda encarecidamente una opción, considere la posibilidad de agregar "(recommended)" a la etiqueta. Asegúrese de agregar a la etiqueta de control, no a las notas complementarias.
+-   Si se recomienda encarecidamente una opción, considere la posibilidad de agregar "(recomendado)" a la etiqueta. Asegúrese de agregar a la etiqueta de control, no a las notas complementarias.
 -   Si debe usar etiquetas de varias líneas, alinee la parte superior de la etiqueta con la casilla.
--   No use un control subordinado, los valores que contiene o su etiqueta de unidades para crear una frase o frase. Este diseño no es localizable porque la estructura de oraciones varía según el lenguaje.
+-   No use un control subordinado, los valores que contiene ni su etiqueta de unidades para crear una frase o frase. Este diseño no es localizable porque la estructura de oraciones varía según el lenguaje.
 
     **Incorrecto:**
 
@@ -264,7 +264,7 @@ Tamaño y espaciado recomendados para las casillas.
 
 -   Use la etiqueta de grupo para explicar el propósito del grupo, no cómo realizar la selección. Supongamos que los usuarios saben cómo usar las casillas. Por ejemplo, no diga "Seleccionar cualquiera de las siguientes opciones".
 -   Termine cada etiqueta con dos puntos.
--   No asigne una clave de acceso a la etiqueta. No es necesario hacerlo y dificulta la asignación de las otras claves de acceso.
+-   No asigne una clave de acceso a la etiqueta. Esto no es necesario y dificulta la asignación de las demás claves de acceso.
 -   Para una selección de una o varias opciones dependientes, explique el requisito en la etiqueta.
 
     **Correcto:**
@@ -283,8 +283,8 @@ Tamaño y espaciado recomendados para las casillas.
 
 Al hacer referencia a las casillas:
 
--   Use el texto exacto de la etiqueta, incluida su inclusión en mayúsculas, pero no incluya el carácter de subrayado ni los dos puntos de la clave de acceso. Incluya la casilla de palabras.
--   Haga referencia a una casilla como una casilla, no una opción, una casilla o simplemente una casilla, ya que la casilla por sí sola es ambigua para los localizadores.
+-   Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado o dos puntos de la clave de acceso. Incluya la casilla de palabras.
+-   Consulte una casilla como una casilla, no una opción, una casilla o simplemente una casilla, porque la casilla por sí sola es ambigua para los localizadores.
 -   Para describir la interacción del usuario, use seleccionar y borrar.
 -   Cuando sea posible, formatee la etiqueta con texto en negrita. De lo contrario, coloque la etiqueta entre comillas solo si es necesario para evitar confusiones.
 

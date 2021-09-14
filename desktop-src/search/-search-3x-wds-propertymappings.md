@@ -4,12 +4,12 @@ ms.assetid: 5daee939-a6b7-4746-9821-15f4169042e6
 title: Asignaciones de propiedades (de WDS 2.x a 3.x)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 906af17f70ece1c97046e38b80c20921770a8094addbebe17636b8bba0da3552
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 516ae708a636f5d342e48621c2d19a713b3211b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118052202"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363271"
 ---
 # <a name="property-mappings-from-wds-2x-to-3x"></a>Asignaciones de propiedades (de WDS 2.x a 3.x)
 
@@ -20,7 +20,7 @@ Esta tabla asigna las estructuras PROPERTYKEY del esquema 2.6.5 a las estructura
 
 
 
-| Propiedad                                    | 2.x PROPERTYKEY                                                     | 3.x PROPERTYKEY                            |
+| Propiedad.                                    | 2.x PROPERTYKEY                                                     | 3.x PROPERTYKEY                            |
 |---------------------------------------------|---------------------------------------------------------------------|--------------------------------------------|
 | System.ItemFolderPathDisplay                | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'DisplayFolder'                | E3E0584C-B788-4A5A-BB20-7F5A44C9ACDD/6     |
 | System.ItemPathDisplay                      | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'DisplayUrl'                   | E3E0584C-B788-4A5A-BB20-7F5A44C9ACDD/7     |
@@ -72,25 +72,25 @@ Esta tabla asigna las estructuras PROPERTYKEY del esquema 2.6.5 a las estructura
 | System.Contact.Anniversary                  | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Anniversary'                  | 9AD5BADB-CEA7-4470-A03D-B84E51B9949E/100   |
 | System.Contact.AssistantName                | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'AssistantName'                | CD102C9C-5540-4A88-A6F6-64E4981C8CD1/100   |
 | System.Contact.AssistantTelephone           | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'AssistantTelephone'           | 9A93244D-A7AD-4FF8-9B99-45EE4CC09AF6/100   |
-| System.Contact.Birthday                     | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Secuescencia'                     | 176DC63C-2688-4E89-8143-A347800F25E9/47    |
+| System.Contact.Birthday                     | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Birthday'                     | 176DC63C-2688-4E89-8143-A347800F25E9/47    |
 | System.Contact.BusinessAddressCity          | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'BusinessAddressCity'          | 402B5934-EC5A-48C3-93E6-85E86A2D934E/100   |
 | System.Contact.BusinessAddressPostalCode    | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'BusinessAddressPostalCode'    | E1D4A09E-D758-4CD1-B6EC-34A8B5A73F80/100   |
-| System.Contact.BusinessAddressPostOfficeBox | D5CDD505-2E9C-101B-9397-08002B2CF9AE/"BusinessAddressPostOfficeBox" | BC4E71CE-17F9-48D5-BEE9-021DF0EA5409/100   |
-| System.Contact.BusinessAddressState         | D5CDD505-2E9C-101B-9397-08002B2CF9AE/"BusinessAddressState"         | 446F787F-10C4-41CB-A6C4-4D0343551597/100   |
+| System.Contact.BusinessAddressPostOfficeBox | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'BusinessAddressPostOfficeBox' | BC4E71CE-17F9-48D5-BEE9-021DF0EA5409/100   |
+| System.Contact.BusinessAddressState         | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'BusinessAddressState'         | 446F787F-10C4-41CB-A6C4-4D0343551597/100   |
 | System.Contact.BusinessAddressAddress        | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'BusinessAddressAddress'        | DDD1460F-C0BF-4553-8CE4-10433C908FB0/100   |
 | System.Contact.BusinessAddressCountry       | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'BusinessAddressCountry'       | B0B87314-FCF6-4FEB-8DFF-A50DA6AF561C/100   |
-| System.Contact.BusinessHomePage             | D5CDD505-2E9C-101B-9397-08002B2CF9AE/"BusinessHomePage"             | 56310920-2491-4919-99CE-EADB06FAFDB2/100   |
+| System.Contact.BusinessHomePage             | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'BusinessHomePage'             | 56310920-2491-4919-99CE-EADB06FAFDB2/100   |
 | System.Contact.CallbackTelephone            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'CallbackTelephone'            | BF53D1C3-49E0-4F7F-8567-5A821D8AC542/100   |
-| System.Contact.CarTelephone                 | D5CDD505-2E9C-101B-9397-08002B2CF9AE/"CarTelephone"                 | 8FDC6DEA-B929-412B-BA90-397A257465FE/100   |
+| System.Contact.CarTelephone                 | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'CarTelephone'                 | 8FDC6DEA-B929-412B-BA90-397A257465FE/100   |
 | System.Keywords                             | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Categories'                   | F29F85E0-4FF9-1068-AB91-08002B27B3D9/5     |
 | System.Contact.Children                     | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Children'                     | D4729704-8EF1-43EF-9024-2BD381187FD5/100   |
-| System.Contact.CompanyMainTelephone         | D5CDD505-2E9C-101B-9397-08002B2CF9AE/"CompanyMainTelephone"         | 8589E481-6040-473D-B171-7FA89C2708ED/100   |
+| System.Contact.CompanyMainTelephone         | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'CompanyMainTelephone'         | 8589E481-6040-473D-B171-7FA89C2708ED/100   |
 | System.Contact.EmailAddress                 | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'EmailAddress'                 | F8FA7FA3-D12B-4785-8A4E-691A94F7A3E7/100   |
 | System.Contact.EmailName                    | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'EmailName'                    | CC6F4F24-6083-4BD4-8754-674D0DE87AB8/100   |
 | System.Contact.FirstName                    | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'FirstName'                    | 14977844-6B49-4AAD-A714-A4513BF60460/100   |
 | System.Contact.FullName                     | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'FullName'                     | 635E9051-50A5-4BA2-B9DB-4ED056C77296/100   |
 | System.Contact.Gender                       | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Gender'                       | 3C8CEE58-D4F0-4CF9-B756-4E5D24447BCD/100   |
-| System.Contact.Bies                      | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Seg'                        | 5DC2253F-5E11-4ADF-9CFE-910DD01E3E70/100   |
+| System.Contact.Biebies                      | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Seg'                        | 5DC2253F-5E11-4ADF-9CFE-910DD01E3E70/100   |
 | System.Contact.HomeAddressCity              | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'HomeAddressCity'              | 176DC63C-2688-4E89-8143-A347800F25E9/65    |
 | System.Contact.HomeAddressCountry           | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'HomeAddressCountry'           | 08A65AA1-F4C9-43DD-9DDF-A33D8E7EAD85/100   |
 | System.Contact.HomeAddressPostalCode        | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'HomeAddressPostalCode'        | 8AFCC170-8A46-4B53-9EEE-90BAE7151E62/100   |
@@ -102,23 +102,23 @@ Esta tabla asigna las estructuras PROPERTYKEY del esquema 2.6.5 a las estructura
 | System.Contact.IMAddress                    | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'IMAddress'                    | D68DBD8A-3374-4B81-9972-3EC30682DB3D/100   |
 | System.Contact.JobTitle                     | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'JobTitle'                     | 176DC63C-2688-4E89-8143-A347800F25E9/6     |
 | System.Contact.MiddleName                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'MiddleName'                   | 176DC63C-2688-4E89-8143-A347800F25E9/71    |
-| System.Contact.MobileTelephone              | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'MobileTelephone'              | 176DC63C-2688-4E89-8143-A347800F25E9/35    |
-| System.Contact.NickName                     | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'AliasName'                     | 176DC63C-2688-4E89-8143-A347800F25E9/74    |
+| System.Contact.MobileTelephone              | D5CDD505-2E9C-101B-9397-08002B2CF9AE/"MobileTelephone"              | 176DC63C-2688-4E89-8143-A347800F25E9/35    |
+| System.Contact.MbreName                     | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'AliasName'                     | 176DC63C-2688-4E89-8143-A347800F25E9/74    |
 | System.Contact.OfficeLocation               | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Office'                       | 176DC63C-2688-4E89-8143-A347800F25E9/7     |
-| System.Contact.BusinessTelephone            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'OfficeTelephone'              | 6A15E5A0-0A1E-4CD7-BB8C-D2F1B0C929BC/100   |
+| System.Contact.BusinessTelephone            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/"OfficeTelephone"              | 6A15E5A0-0A1E-4CD7-BB8C-D2F1B0C929BC/100   |
 | System.Contact.PagerTelephone               | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'PagerTelephone'               | D6304E01-F8F5-4F45-8B15-D024A6296789/100   |
 | System.Contact.LastName                     | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'LastName'                     | 8F367200-C270-457C-B1D4-E07C5BCD90C7/100   |
 | System.Contact.PersonalTitle                | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'PersonalTitle'                | 176DC63C-2688-4E89-8143-A347800F25E9/69    |
 | System.Contact.PrimaryTelephone             | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'PrimaryTelephone'             | 176DC63C-2688-4E89-8143-A347800F25E9/25    |
-| System.Contact.Sesos                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Secuescencia'                   | 7268AF55-1CE4-4F6E-A41F-B6E4EF10E4A9/100   |
-| System.Contact.ElnombreDeMeseso                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Secuescencia'                       | 9D2408B6-3167-422B-82B0-F583B7A7CFE3/100   |
+| System.Contact.Estadística                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Secuescencia'                   | 7268AF55-1CE4-4F6E-A41F-B6E4EF10E4A9/100   |
+| System.Contact.EstadistaNombre                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Secuescencia'                       | 9D2408B6-3167-422B-82B0-F583B7A7CFE3/100   |
 | System.Contact.Suffix                       | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'Suffix'                       | 176DC63C-2688-4E89-8143-A347800F25E9/73    |
 | System.Contact.TelexNumber                  | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'TelexNumber'                  | C554493C-C1F7-40C1-A76C-EF8C0614003E/100   |
 | System.Contact.TTYTDDTelephone              | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'TTYTDDTelephone'              | AAF16BAC-2B55-45E6-9F6D-415EB94910DF/100   |
 | System.Contact.WebPage                      | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'WebPage'                      | E3E0584C-B788-4A5A-BB20-7F5A44C9ACDD/18    |
 | System.Media.Duration                       | 56A3372E-CE9C-11D2-9F0E-006097C686F6/8                              | 64440490-4C8B-11D1-8B70-080036B11A03/3     |
-| System.Photo.DateTaken                      | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'DateTaken'                    | 14B81DA1-0135-4D31-96D9-6CBFC9671A99/36867 |
-| System.Image.ColorSpace                     | 6444048F-4C8B-11D1-8B70-080036B11A03/8                              | 14B81DA1-0135-4D31-96D9-6CBFC9671A99/40961 |
+| System.Photo.DateTaken                      | D5CDD505-2E9C-101B-9397-08002B2CF9AE/'DateTaken'                    | 14B81DA1-0135-4D31-96D9-6CBFC9671A999/36867 |
+| System.Image.ColorSpace                     | 6444048F-4C8B-11D1-8B70-080036B11A03/8                              | 14B81DA1-0135-4D31-96D9-6CBFC9671A999/40961 |
 | System.Image.Compression                    | 6444048F-4C8B-11D1-8B70-080036B11A03/9                              | 14B81DA1-0135-4D31-96D9-6CBFC9671A999/259   |
 | System.Video.StreamNumber                   | 64440491-4C8B-11D1-8B70-080036B11A03/7                              | 64440491-4C8B-11D1-8B70-080036B11A03/11    |
 

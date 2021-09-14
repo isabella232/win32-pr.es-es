@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 222a6de62f7ee416f32648956b6ad5430958a311f5f7d3b34969d116beea2580
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 18ae2030f432e8c52ed6208be34d429b4579edb6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120088625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167522"
 ---
 # <a name="psm_recalcpagesizes-message"></a>Mensaje \_ PSM RECALCPAGESIZES
 
-Vuelve a calcular el tamaño de página de una hoja de propiedades estándar o del asistente después de agregar o quitar páginas. Puede enviar este mensaje explícitamente o usar la macro [**\_ PropSheet RecalcPageSizes.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_recalcpagesizes)
+Vuelve a calcular el tamaño de página de una hoja de propiedades estándar o del asistente después de agregar o quitar páginas. Puede enviar este mensaje explícitamente o usar la macro [**PropSheet \_ RecalcPageSizes.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_recalcpagesizes)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,7 +47,7 @@ Debe ser cero.
 
 Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando se crea una hoja de propiedades, su tamaño se ajusta a su colección inicial de páginas. Para mantener la compatibilidad con versiones anteriores de los controles comunes, las hojas de propiedades y los asistentes no cambian automáticamente de tamaño cuando las páginas se agregan o quitan posteriormente. Con los controles comunes versión [5.80,](common-control-versions.md)las aplicaciones deben enviar un mensaje **\_ PSM RECALCPAGESIZES** después de agregar o quitar páginas con [**PSM \_ ADDPAGE,**](psm-addpage.md) [**PSM \_ INSERTPAGE,**](psm-insertpage.md) [**PSM \_ REMOVEPAGE**](psm-removepage.md)o sus macros equivalentes. Garantiza que la hoja de propiedades tiene el tamaño adecuado para su colección actual de páginas. Si no se envía este mensaje, algunas páginas de la hoja de propiedades pueden truncarse o ser demasiado grandes.
 
@@ -60,11 +60,11 @@ Cuando se crea una hoja de propiedades, su tamaño se ajusta a su colección ini
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

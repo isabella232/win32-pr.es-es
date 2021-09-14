@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Acceso a dispositivos SNMP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3acf8fd67ee9153167cd328b7a50f6aafc5853327a64baf80c3b2e20b663d3ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37a349053f054f3e8ad9dffb7c108d2bee6c6d8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118320307"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241473"
 ---
 # <a name="accessing-snmp-devices"></a>Acceso a dispositivos SNMP
 
@@ -21,7 +21,7 @@ El proveedor del Protocolo simple de administración de redes (SNMP) permite a l
 
  
 
-Las variables de objeto de base de información de administración (MIB) de SNMP se pueden leer y escribir en ellos, y las capturas de SNMP se pueden asignar automáticamente a eventos WMI, que se pueden definir para cualquier operación arbitraria de creación, eliminación o actualización de datos más allá de las capturas definidas por MIB. Esta característica de funciones WMI como una extensión de las funcionalidades estándar de SNMP. Para obtener más información, vea [Monitoring Events](monitoring-events.md).
+Las variables de objeto de base de información de administración (MIB) de SNMP se pueden leer y escribir en , y las capturas de SNMP se pueden asignar automáticamente a eventos WMI, que se pueden definir para cualquier operación arbitraria de creación, eliminación o actualización de datos más allá de las capturas definidas por MIB. Esta característica de funciones WMI como una extensión de las funcionalidades estándar de SNMP. Para obtener más información, vea [Monitoring Events](monitoring-events.md).
 
 Las herramientas descritas en los temas siguientes están diseñadas para su uso por parte de Windows scripting y programadores de C/C++. Se recomienda estar familiarizado con WMI, SNMPv1 y SNMPv2C, así como un conocimiento práctico de los conceptos de administración de redes y redes.
 

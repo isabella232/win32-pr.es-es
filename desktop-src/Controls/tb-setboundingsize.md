@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d409769e08e489d922dbdc2361779953555000dca784a6f7b977bbbcd3a5e65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 419595da16148f7382da5053d3187e9cce9e00a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118167748"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166654"
 ---
-# <a name="tb_setboundingsize-message"></a>Mensaje \_ SETBOUNDINGSIZE de TB
+# <a name="tb_setboundingsize-message"></a>Mensaje \_ DE TB SETBOUNDINGSIZE
 
-\[Destinado a uso interno; no se recomienda para su uso en aplicaciones. Es posible que este mensaje no se pueda usar en versiones futuras de Windows.\]
+\[Diseñado para uso interno; no se recomienda para su uso en aplicaciones. Es posible que este mensaje no se pueda usar en versiones futuras de Windows.\]
 
 Establece el tamaño de límite de un control de barra de herramientas de varias columnas.
 
@@ -41,7 +41,7 @@ Debe ser cero.
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura SIZE**](/previous-versions//dd145106(v=vs.85)) cuyo **miembro cy** contiene el alto delimitador. Se **omite** el miembro cx (el ancho).
+Puntero a una [**estructura SIZE**](/previous-versions//dd145106(v=vs.85)) cuyo **miembro cy** contiene el alto delimitador. Se omite el miembro **cx** (el ancho).
 
 </dd> </dl>
 
@@ -49,11 +49,11 @@ Puntero a una [**estructura SIZE**](/previous-versions//dd145106(v=vs.85)) cuyo 
 
 No se usa el valor devuelto.
 
-## <a name="security-considerations"></a>Consideraciones sobre la seguridad
+## <a name="security-considerations"></a>Consideraciones de seguridad
 
-El uso de este mensaje puede poner en peligro la seguridad del programa.
+El uso de este mensaje podría poner en peligro la seguridad del programa.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El tamaño de límite controla cómo se organizan los botones en columnas. Si el control de barra de herramientas no tiene el [**estilo TBSTYLE \_ EX \_ MULTICOLUMN,**](toolbar-extended-styles.md) este mensaje no tiene ningún efecto.
 
@@ -61,11 +61,11 @@ El tamaño de límite controla cómo se organizan los botones en columnas. Si el
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

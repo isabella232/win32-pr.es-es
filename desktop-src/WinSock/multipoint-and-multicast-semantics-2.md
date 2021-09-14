@@ -4,12 +4,12 @@ ms.assetid: 7e9c55dc-8b19-4730-ad76-ed83db0b7b64
 title: Semántica de multipunto y multidifusión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56d8e899ebb1923407862d815024a0ef67ca9c9be7ad5615c04cd6b1e0f5cc91
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c7828c1281c37516e9ec16fb5768bc61a2e45af2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119569525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127241683"
 ---
 # <a name="multipoint-and-multicast-semantics"></a>Semántica de multipunto y multidifusión
 

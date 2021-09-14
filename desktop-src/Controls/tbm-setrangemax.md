@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f26b4a588e67164b96db8256116466206d0274a5bc64caedbcb1ccf25135ce62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b43997725e2fa88db3f9d4dc2fec1d51255cbb0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117829599"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127166441"
 ---
-# <a name="tbm_setrangemax-message"></a>Mensaje \_ SETRANGEMAX de TBM
+# <a name="tbm_setrangemax-message"></a>Mensaje \_ TBM SETRANGEMAX
 
 Establece la posición lógica máxima del control deslizante en una barra de seguimiento.
 
@@ -32,7 +32,7 @@ Establece la posición lógica máxima del control deslizante en una barra de se
 *wParam* 
 </dt> <dd>
 
-Vuelva a dibujar la marca. Si este parámetro es **TRUE**, la barra de seguimiento se vuelve a dibujar después de establecer el intervalo. Si este parámetro es **FALSE**, el mensaje establece el intervalo, pero no vuelve a dibujar la barra de seguimiento.
+Volver a dibujar la marca. Si este parámetro es **TRUE,** la barra de seguimiento se vuelve a dibujar después de establecer el intervalo. Si este parámetro es **FALSE,** el mensaje establece el intervalo, pero no vuelve a dibujar la barra de seguimiento.
 
 </dd> <dt>
 
@@ -47,23 +47,23 @@ Posición máxima del control deslizante.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si la posición del control deslizante actual es mayor que el nuevo máximo, el mensaje **\_ SETRANGEMAX** de TBM establece la posición del control deslizante en el nuevo valor máximo.
+Si la posición del control deslizante actual es mayor que el nuevo máximo, el mensaje **\_ TBM SETRANGEMAX** establece la posición del control deslizante en el nuevo valor máximo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

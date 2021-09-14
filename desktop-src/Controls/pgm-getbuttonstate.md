@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2014b6e36a0ab883155d786760ef54f02c89ee0d17192d6082d40ad19eec95a3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d8c9eebbc0aa91651a01de1fe193544f0c8afcf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117830196"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127167706"
 ---
 # <a name="pgm_getbuttonstate-message"></a>Mensaje \_ GETBUTTONSTATE de PGM
 
@@ -39,9 +39,9 @@ Indica para qué botón se va a recuperar el estado. Puede ser uno de los siguie
 
 
 
-| Valor                                                                                                                                                                     | Significado                                                                                                                                                                                                  |
+| Value                                                                                                                                                                     | Significado                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PGB_TOPORLEFT"></span><span id="pgb_toporleft"></span><dl> <dt>**PGB \_ TOPORLEFT**</dt> </dl>             | Indica el botón superior de un control de paginación [**\_ PGS VERT**](pager-control-styles.md) o el botón izquierdo de un control de paginación [**\_ HORZ de PGS.**](pager-control-styles.md) <br/>     |
+| <span id="PGB_TOPORLEFT"></span><span id="pgb_toporleft"></span><dl> <dt>**PGB \_ TOPORLEFT**</dt> </dl>             | Indica el botón superior de un control de paginación [**\_ PGS VERT**](pager-control-styles.md) o el botón izquierdo de un control de paginación [**\_ PGS HORZ.**](pager-control-styles.md) <br/>     |
 | <span id="PGB_BOTTOMORRIGHT"></span><span id="pgb_bottomorright"></span><dl> <dt>**PGB \_ BOTTOMORRIGHT**</dt> </dl> | Indica el botón inferior de un control de paginación [**\_ PGS VERT**](pager-control-styles.md) o el botón derecho en un control de paginación [**\_ HORZ de PGS.**](pager-control-styles.md) <br/> |
 
 
@@ -52,7 +52,7 @@ Indica para qué botón se va a recuperar el estado. Puede ser uno de los siguie
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el estado del botón especificado en *lParam*. Este será uno o varios de los siguientes valores (si se devuelve más de un valor, se combinarán mediante un OR bit a bit):
+Devuelve el estado del botón especificado en *lParam*. Será uno o varios de los siguientes valores (si se devuelve más de un valor, se combinarán mediante un OR bit a bit):
 
 
 
@@ -72,11 +72,11 @@ Devuelve el estado del botón especificado en *lParam*. Este será uno o varios 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

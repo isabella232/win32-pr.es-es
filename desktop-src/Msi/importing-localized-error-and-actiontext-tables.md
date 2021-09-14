@@ -4,20 +4,20 @@ ms.assetid: 8de687c8-c7da-497e-8a90-2404096ad100
 title: Importar tablas De error localizadas y ActionText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bda0916f634d986874cd17f9871fa602277b180e1ba436e9d9786fb061f3ac4c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15d48a68ca1053a1a1c66899a17802ac337c3ba2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118142255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074440"
 ---
 # <a name="importing-localized-error-and-actiontext-tables"></a>Importar tablas De error localizadas y ActionText
 
-Las versiones de idioma localizadas [de la tabla Error y](error-table.md) la tabla [ActionText](actiontext-table.md) se proporcionan mediante el SDK Windows Installer. Las versiones en francés de estas tablas, Error.FRA y ActionTe.FRA, se encuentran en la carpeta Intl del SDK Windows Installer.
+Las versiones de idioma localizadas [de la tabla Error](error-table.md) y la tabla [ActionText](actiontext-table.md) se proporcionan mediante el SDK Windows Installer. Las versiones en francés de estas tablas, Error.FRA y ActionTe.FRA, se encuentran en la carpeta Intl del SDK Windows Installer.
 
 Puede usar el editor de tablas Orca o la utilidad Msidb.exe con el SDK para importar las versiones en francés de estas tablas en la base de datos.
 
-En el SDK del instalador de Windows se proporciona un ejemplo del uso de [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta) y el método [**Import**](database-import.md) del objeto [**Database**](database-object.md) como la utilidad WiImport.vbs. El siguiente fragmento de código, Imp.vbs, también muestra el uso del método Import y se usa con Windows host de script.
+Se proporciona un ejemplo de uso [**de MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta) y el método [**Import**](database-import.md) del objeto [**Database**](database-object.md) en el SDK del instalador de Windows como la utilidad WiImport.vbs. El siguiente fragmento de código, Imp.vbs, también muestra el uso del método Import y se usa con Windows host de script.
 
 
 ```VB
@@ -52,13 +52,13 @@ Wscript.Quit 0
 
 Para importar y reemplazar la tabla Error por Error.FRA, puede usar una línea de comandos como la siguiente.
 
-**Cscript Imp.vbs MNPFren.msi C: Nota \\ \_ Instalador Francés \\ Error.FRA**
+**Cscript Imp.vbs MNPFren.msi C: \\ Nota \_ \\ Error.FRA en francés del instalador**
 
 Para importar y reemplazar la tabla ActionText por ActionTe.FRA, puede usar una línea de comandos como la siguiente.
 
-**Cscript Imp.vbs MNPFren.msi C: \\ Nota Installer French \_ \\ ActionTe.FRA**
+**Cscript Imp.vbs MNPFren.msi C: \\ Nota \_ Acción en francés del \\ instaladorTe.FRA**
 
-Vuelva a ejecutar la validación MNPFren.msi como se describe [en Validación de una actualización de instalación](validating-an-installation-upgrade.md).
+Vuelva a ejecutar la validación MNPFren.msi, como se describe [en Validación de una actualización de instalación.](validating-an-installation-upgrade.md)
 
 [Continuar](localizing-database-columns.md)
 

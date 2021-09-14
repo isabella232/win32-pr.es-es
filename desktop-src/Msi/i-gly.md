@@ -4,12 +4,12 @@ ms.assetid: b8e0a14f-ebdc-4b8f-a884-f6276dccda49
 title: I (Windows Installer)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c8894b61907062c7b68cdb0a70e9b20e49729b8a3a04c76b9a59d82efbefdbb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e33b5cfb9c4545a5482b214e0413ab3e3d981109
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120129455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074704"
 ---
 # <a name="i-windows-installer"></a>I (Windows Installer)
 
@@ -41,7 +41,7 @@ Funcionalidades integradas del instalador que se pueden usar para crear una inte
 <span id="_msi_install_level_gly"></span><span id="_MSI_INSTALL_LEVEL_GLY"></span>**nivel de instalación**
 </dt> <dd>
 
-Valor de instalación especificado. Una aplicación solo se instala si su propio nivel es menor o igual que el nivel de instalación. Por lo tanto, el conjunto de aplicaciones elegido para la instalación se puede cambiar modificando el nivel de instalación. Para obtener más información, vea [Tabla de características](feature-table.md).
+Valor de instalación especificado. Una aplicación solo se instala si su propio nivel es menor o igual que el nivel de instalación. Por lo tanto, el conjunto de aplicaciones elegidas para la instalación se puede cambiar modificando el nivel de instalación. Para obtener más información, vea [Tabla de características](feature-table.md).
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ La combinación de derechos de instalación y tipos de instalación genera tres 
 <span id="_msi_installer_gly"></span><span id="_MSI_INSTALLER_GLY"></span>**Instalador**
 </dt> <dd>
 
-El [*Windows de instalación*](m-gly.md)de .
+El [*Windows instalador de .*](m-gly.md)
 
 </dd> <dt>
 

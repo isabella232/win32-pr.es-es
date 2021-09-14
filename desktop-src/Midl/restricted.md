@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc68bbea9e1834fd1b1953f8dbf16a79e5356f49bf6058615904d78c244668a7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eca610c0dcf29ebc3a767005b4c22e3231947e88
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119822095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159393"
 ---
 # <a name="restricted-attribute"></a>restricted (atributo)
 
@@ -66,7 +66,7 @@ Elementos de lenguaje MIDL que definen el contenido de esta instrucción.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo permite controlar el acceso a elementos de interfaces, bibliotecas, módulos e interfaces dispinterface. Por ejemplo, puede impedir que un programador de macros utilice un elemento de datos. Puede aplicar este atributo a un miembro de una [**coclase**](coclass.md), independientemente de si el miembro es una interfaz o interfaz dispinterface e independientemente de si el miembro es un receptor (entrante) o de origen (saliente). Un miembro de una **coclase** no puede tener los atributos **\[ \] restringidos** **\[ y predeterminados. \]**
 

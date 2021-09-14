@@ -4,12 +4,12 @@ ms.assetid: 023FD791-BD43-41F6-95D0-8BE800F51579
 title: CODECAPI_AVEncVideoMaxNumRefFrame propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e11e7325628f0e7c1e6560d3fc734b34e8a032a3fbf3630aa1fb5959cec33a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 84e8f5a7794410012bd1a025e794e1fd23f4b332
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119606425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269263"
 ---
 # <a name="codecapi_avencvideomaxnumrefframe-property"></a>Propiedad CODECAPI \_ AVEncVideoMaxNumRefFrame
 
@@ -23,7 +23,7 @@ Especifica los fotogramas de referencia máximos admitidos por el codificador.
 
 **CODECAPI \_ AVEncVideoMaxNumRefFrame**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para H.264, esto se asigna a la variable Set de parámetros de secuencia **max \_ num ref \_ \_ frames** tal como se define en la especificación H.264.
 
@@ -44,12 +44,12 @@ El valor predeterminado recomendado es 2.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                   |
-| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| para aplicaciones para UWP\]<br/>                        |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

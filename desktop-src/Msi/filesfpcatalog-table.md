@@ -4,12 +4,12 @@ ms.assetid: 70c8b64a-cf15-411c-8388-4a7e3051f45c
 title: Tabla FileSFPCatalog
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41bec6e31cba93730cc65b04ffdfb4a509f0cd817ba709cc029edfb47c4c4e60
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a2300b73cc1639d8a54e206ea609043cf657c91f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119581595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074778"
 ---
 # <a name="filesfpcatalog-table"></a>Tabla FileSFPCatalog
 
@@ -48,7 +48,7 @@ Clave externa a la [tabla SFPCatalog](sfpcatalog-table.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [acción InstallSFPCatalogFile](installsfpcatalogfile-action.md) consulta la tabla [Component](component-table.md), la [tabla File,](file-table.md)la tabla FileSFPCatalog y [la tabla SFPCatalog](sfpcatalog-table.md).
 
