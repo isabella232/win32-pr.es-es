@@ -1,11 +1,11 @@
 ---
 title: Método INapEnforcementClientConnection GetEnforcerPrivateData (NapEnforcementClient.h)
-description: Lo usa el ejecutor para obtener datos privados.
+description: Lo usa el aplicador para obtener datos privados.
 ms.assetid: a1f5b5a7-c862-4e5b-bf9c-b137f99f6165
 keywords:
 - Método NAP de GetEnforcerPrivateData
 - Método NAP de GetEnforcerPrivateData, interfaz INapEnforcementClientConnection
-- INapEnforcementClientConnection interface NAP , GetEnforcerPrivateData method
+- INapEnforcementClientConnection interface NAP , Método GetEnforcerPrivateData
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60765a6cfd90ae1ea244b9b521e58bb5aeb3c4afd4217d5e39c51c94de02c324
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d592ad0b11abf2b349b0810d67b05f2ee4086060
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118940068"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362159"
 ---
 # <a name="inapenforcementclientconnectiongetenforcerprivatedata-method"></a>Método INapEnforcementClientConnection::GetEnforcerPrivateData
 
@@ -30,7 +30,7 @@ ms.locfileid: "118940068"
 
  
 
-El **ejecutor usa el método INapEnforcementClientConnection::GetEnforcerPrivateData** para obtener datos privados.
+El aplicador usa el método **INapEnforcementClientConnection::GetEnforcerPrivateData** para obtener datos privados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,13 +78,13 @@ También se pueden devolver otros códigos de error específicos de COM.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

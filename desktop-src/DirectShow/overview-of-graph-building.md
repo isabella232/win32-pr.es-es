@@ -4,16 +4,16 @@ ms.assetid: 5753f06c-ecfd-48d7-a8e9-768b798e9279
 title: Información general de Graph Building
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c16b943714e2e559286b805a8489152805d9b0e037a77603bacd00f8b0135cc9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f69ef9ea0f4f9e21d33372ad2a37a59b512d5dcc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118152951"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362358"
 ---
 # <a name="overview-of-graph-building"></a>Información general de Graph Building
 
-Para crear un gráfico de filtros, empiece por crear una instancia de Filter Graph Manager:
+Para crear un gráfico de filtros, comience por crear una instancia de Filter Graph Manager:
 
 
 ```C++
@@ -25,7 +25,7 @@ HRESULT hr = CoCreateInstance(CLSID_FilterGraph,
 
 
 
-Filter Graph Manager admite los siguientes métodos de creación de gráficos:
+Filter Graph Manager admite los siguientes métodos de creación de grafos:
 
 -   [**IFilterGraph::ConnectDirect**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-connectdirect) intenta establecer una conexión directa entre dos pines. Si los pines no se pueden conectar, se produce un error en el método .
 -   [**IGraphBuilder::Conectar**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-connect) conecta dos pines. Si es posible, realiza una conexión directa. De lo contrario, usa filtros intermedios para completar la conexión.
@@ -35,7 +35,7 @@ Filter Graph Manager admite los siguientes métodos de creación de gráficos:
 
 Estos métodos proporcionan tres enfoques básicos para crear el gráfico:
 
-1.  El Administrador Graph filtro compila todo el gráfico.
+1.  El administrador Graph filtro compila todo el gráfico.
 2.  Filter Graph Manager compila parte del gráfico.
 3.  La aplicación compila todo el gráfico.
 
@@ -51,11 +51,11 @@ Para compilar el resto del gráfico, el Administrador de filtros Graph usa un pr
 -   El tipo de medio describe qué tipo de datos puede aceptar el filtro como entrada o entregar como salida.
 -   El *resultado* determina el orden en el que se van a probar los filtros. Si dos filtros de la misma categoría de filtro admiten los mismos tipos de entrada, filter Graph Manager selecciona el que tiene el valor más alto. A algunos filtros se les da a propósito un valor bajo porque están diseñados para fines especializados y la aplicación solo debe agregar al gráfico.
 
-Filter Graph Manager usa el [objeto Filter Mapper](filter-mapper.md) para buscar en el Registro.
+El Administrador Graph filtro usa el [objeto Asignador de](filter-mapper.md) filtros para buscar en el Registro.
 
-A medida que se agrega cada filtro, el Administrador de Graph intenta conectarlo a la marca de salida del filtro anterior. Los filtros negocian para determinar si se pueden conectar y, si es así, qué tipo de medio usar para la conexión. Si el nuevo filtro no se puede conectar, Graph Administrador de filtros lo descarta e intenta otro filtro. Este proceso continúa hasta que se representa cada secuencia.
+A medida que se agrega cada filtro, el administrador de Graph intenta conectarlo al pin de salida del filtro anterior. Los filtros negocian para determinar si se pueden conectar y, si es así, qué tipo de medio usar para la conexión. Si el nuevo filtro no se puede conectar, Graph Administrador de filtros lo descarta e intenta otro filtro. Este proceso continúa hasta que se representa cada secuencia.
 
-**El administrador de Graph compila parte de la Graph**
+**La parte de Graph Administrador de filtros del administrador de Graph**
 
 Para hacer algo más allá de simplemente reproducir un archivo, la aplicación debe realizar al menos parte del trabajo de creación de grafos. Por ejemplo, una aplicación de captura de vídeo debe seleccionar un filtro de origen de captura y agregarlo al gráfico. Si escribe datos en un archivo AVI, debe agregar los filtros Mux y File Writer de AVI al gráfico. Sin embargo, a menudo es posible permitir que filter Graph Manager complete el gráfico. Por ejemplo, puede representar un pin para la vista previa mediante una llamada al **método Render.**
 
@@ -76,7 +76,7 @@ En algunos escenarios, es posible que la aplicación tenga que compilar el gráf
 [Enumerar objetos en un filtro Graph](enumerating-objects-in-a-filter-graph.md)
 </dt> <dt>
 
-[Técnicas Graph-Building generales](general-graph-building-techniques.md)
+[Técnicas de Graph-Building generales](general-graph-building-techniques.md)
 </dt> <dt>
 
 [Creación del filtro Graph](building-the-filter-graph.md)

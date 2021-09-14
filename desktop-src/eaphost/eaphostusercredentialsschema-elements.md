@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b6012733a16f7eab84b4242828ce94113e52fc5df7fc62240f9dfce7193d868a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 762200967b5d1127dc1904d1a3348d50950c04a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118274307"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252879"
 ---
 # <a name="eaphostusercredentials-schema-elements"></a>elementos de esquema eaphostusercredentials
 
-El [esquema eaphostusercredentials](eaphostusercredentialsschema-schema.md) se conste de los siguientes elementos de esquema.
+El [esquema eaphostusercredentials](eaphostusercredentialsschema-schema.md) se crea con los siguientes elementos de esquema.
 
 -   [**CredentialsBlob (EapHostUserCredentials)**](eaphostusercredentialsschema-credentialsblob-eaphostusercredentials-element.md)
 -   [**Credenciales (EapHostUserCredentials)**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md)

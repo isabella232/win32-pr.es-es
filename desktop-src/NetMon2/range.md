@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 0e0135a6210aebbca38bfdede00231315dd2680461f366930b24925eda830604
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf465636f315e60e43350bb370e2002b8a96e635
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119063725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362120"
 ---
 # <a name="range-structure"></a>Estructura RANGE
 
@@ -36,7 +36,7 @@ typedef struct range {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -54,7 +54,7 @@ Valor más alto posible en un intervalo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **estructura RANGE** se usa para especificar un intervalo válido de números para una propiedad de protocolo. Si el **miembro DataQualifier** de la estructura **PROPERTYINFO** se establece en **PROP QUAL \_ \_ RANGE**, el miembro **lpRange** de la estructura [PROPERTYINFO](propertyinfo.md) debe proporcionar un puntero a una **estructura RANGE.**
 
@@ -62,7 +62,7 @@ La **estructura RANGE** se usa para especificar un intervalo válido de números
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -74,7 +74,7 @@ La **estructura RANGE** se usa para especificar un intervalo válido de números
 
 <dl> <dt>
 
-[Propertyinfo](propertyinfo.md)
+[PROPERTYINFO](propertyinfo.md)
 </dt> </dl>
 
  

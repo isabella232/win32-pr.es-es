@@ -4,12 +4,12 @@ ms.assetid: 8a7ba726-c2a6-4b7b-b664-3c6fcfbfb221
 title: Control de cuentas de usuario (autorización)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da0092ed5d8de1c141ba4ee2ea31a498bd6954ba8401aafeb08e6a69b8d130f3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: be7f3cd8f31dda8f1b15145bc4003fc9ede8782c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119906835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253646"
 ---
 # <a name="user-account-control-authorization"></a>Control de cuentas de usuario (autorización)
 
@@ -27,7 +27,7 @@ Por ejemplo, si realiza los pasos siguientes para cambiar la configuración "No 
 6.  Pulse o haga clic **en Inicio** y, a continuación, **en Ejecutar.** En el **cuadro** Abrir, escriba "Cmd.exe". Tenga en cuenta que el título de la ventana no contiene la cadena "Administrador".
 7.  Escriba "echo > %windir% \\ system32 \\File.txt".
 
-UAC se agregó en Windows Server 2008 y Windows Vista. Una cuenta de usuario estándar es sinónimo de una cuenta de usuario en Windows XP. Las cuentas de usuario que son miembros del grupo local Administradores ejecutarán la mayoría de las aplicaciones como un usuario estándar.
+UAC se agregó en Windows Server 2008 y Windows Vista. Una cuenta de usuario estándar es sinónimo de una cuenta de usuario Windows XP. Las cuentas de usuario que son miembros del grupo local Administradores ejecutarán la mayoría de las aplicaciones como un usuario estándar.
 
 Para obtener información sobre UAC, consulte los temas siguientes.
 

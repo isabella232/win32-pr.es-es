@@ -4,12 +4,12 @@ ms.assetid: 750a7992-e2ef-4149-b1c8-c5201f6af035
 title: Tipos de datos de streaming multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13a47bf2209f1b784c99a06fe4893dfae9f9acc7bb5a2bcaf92240b738d66804
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 790aad321c72e1efaa7fd78b74bce24f42637ba8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952194"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254325"
 ---
 # <a name="multimedia-streaming-data-types"></a>Tipos de datos de streaming multimedia
 

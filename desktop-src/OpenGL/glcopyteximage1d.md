@@ -3,7 +3,7 @@ title: Función glCopyTexImage1D (Gl.h)
 description: La función glCopyTexImage1D copia píxeles del búfer de fotogramas en una imagen de textura unidimensional.
 ms.assetid: 3b4d12d5-5efe-40d2-ac5f-95ea5ef243dd
 keywords:
-- Función GlCopyTexImage1D OpenGL
+- Función glCopyTexImage1D OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e3dd966aa08eb5c74fa15235ed51f07a671c4e6f1378a990c6686fdc801e1d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e63180386c094f0c4e4de0f1a361bc3bcb1c6e5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118617353"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362092"
 ---
 # <a name="glcopyteximage1d-function"></a>Función glCopyTexImage1D
 
@@ -56,7 +56,7 @@ Destino para el que se cambiarán los datos de la imagen. Debe tener el valor GL
 *level* 
 </dt> <dd>
 
-Número de nivel de detalle. El nivel 0 es la imagen base. El *nivel n* es la imagen *de* reducción de mipmap n.
+Número de nivel de detalle. El nivel 0 es la imagen base. El *nivel n* es la *enésima* imagen de reducción de mapa mip.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Formato interno y resolución de los datos de textura. Este parámetro debe ser 
 | GL \_ LUMINANCE12 \_ ALPHA4  |        |        |        | 4      | 12     |        |
 | GL \_ LUMINANCE12 \_ ALPHA12 |        |        |        | 12     | 12     |        |
 | GL \_ LUMINANCE16 \_ ALPHA16 |        |        |        | 16     | 16     |        |
-| GL \_ INTENSITY            |        |        |        |        |        |        |
+| INTENSIDAD \_ DE GL            |        |        |        |        |        |        |
 | GL \_ INTENSITY4           |        |        |        |        |        | 4      |
 | GL \_ INTENSITY8           |        |        |        |        |        | 8      |
 | GL \_ INTENSITY12          |        |        |        |        |        | 12     |
@@ -197,7 +197,7 @@ La función siguiente recupera información relacionada con **glCopyTexImage1D**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 43c2e5aa0f99824d87b865a56fe336161b8963bb9ba1da338bb8603f722085cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eec570200234f455467c30a3eb12429226400c60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119879865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253520"
 ---
 # <a name="attributesclear-method"></a>Método Attributes.Clear
 
-\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use [**la clase CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) en el [**espacio de nombres System.Security.Cryptography.**](/previous-versions/windows/)\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use [**la clase CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) en el espacio [**de nombres System.Security.Cryptography.**](/previous-versions/windows/)\]
 
 El **método Clear** borra todos los objetos [**Attribute**](attribute.md) de la colección.
 
@@ -56,11 +56,11 @@ Este método no devuelve ningún valor. Una aplicación que usa este método deb
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Objetos de criptografía](cryptography-objects.md)
+[Objetos criptografía](cryptography-objects.md)
 </dt> <dt>
 
 [**Atributos**](attributes.md)

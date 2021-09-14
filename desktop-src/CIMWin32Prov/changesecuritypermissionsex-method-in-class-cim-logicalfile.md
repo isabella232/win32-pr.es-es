@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9b550ca2c3297d4f2185918036bc283138e619dda2e1facff696ec8fe868e07b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af2dc82ef54b6f32eee20f17cd61c0769cc64b1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119081029"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361466"
 ---
 # <a name="changesecuritypermissionsex-method-of-the-cim_logicalfile-class"></a>Método ChangeSecurityPermissionsEx de la clase \_ LogicalFile de CIM
 
 El **método ChangeSecurityPermissionsEx** cambia los permisos de seguridad para el archivo lógico especificado en la ruta de acceso del objeto (este método es una versión extendida del [**método ChangeSecurityPermissions).**](changesecuritypermissions-method-in-class-cim-logicalfile.md) Si el archivo lógico es un directorio, este método actuará de forma recursiva, cambiando los permisos de seguridad para todos los archivos y subdirectorios que contiene el directorio.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Especifica la información de seguridad.
 *Opción* \[ En\]
 </dt> <dd>
 
-Privilegio de seguridad que se debe modificar. Por ejemplo, para cambiar el propietario y la seguridad de DACL, use
+Privilegio de seguridad que se modificará. Por ejemplo, para cambiar el propietario y la seguridad de DACL, use
 
 `Option = 1 + 4`
 
@@ -106,7 +106,7 @@ Cambie la ACL del archivo lógico.
 
 <span id="Change_Sacl_Security_Information"></span><span id="change_sacl_security_information"></span><span id="CHANGE_SACL_SECURITY_INFORMATION"></span>
 
-<span id="Change_Sacl_Security_Information"></span><span id="change_sacl_security_information"></span><span id="CHANGE_SACL_SECURITY_INFORMATION"></span>**Cambio \_ Información de \_ seguridad \_ de Sacl** (8)
+<span id="Change_Sacl_Security_Information"></span><span id="change_sacl_security_information"></span><span id="CHANGE_SACL_SECURITY_INFORMATION"></span>**Cambio \_ Sacl \_ Security \_ Information** (8)
 
 
 </dt> <dd>
@@ -122,17 +122,17 @@ Cadena que representa el nombre del archivo (o directorio) en el que se ha falla
 
 </dd> <dt>
 
-*StartFileName* \[ in, opcional\]
+*StartFileName* \[ en, opcional\]
 </dt> <dd>
 
-Cadena que representa el archivo secundario (o directorio) que se va a usar como punto de partida para este método. Normalmente, el *parámetro StartFileName* es el *parámetro StopFileName* que especifica el archivo (o directorio) en el que se produjo un error de la llamada al método anterior. Si el valor del parámetro **es null,** la operación se realiza en el archivo o directorio especificado en la [**llamada a ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
+Cadena que representa el archivo secundario (o directorio) que se va a usar como punto de partida para este método. Normalmente, el *parámetro StartFileName* es el parámetro *StopFileName* que especifica el archivo (o directorio) en el que se produjo un error de la llamada al método anterior. Si el valor del parámetro **es NULL,** la operación se realiza en el archivo o directorio especificado en la [**llamada a ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
-*Recursiva* \[ in, opcional\]
+*Recursivo* \[ en, opcional\]
 </dt> <dd>
 
-Si **es TRUE,** los permisos de seguridad se aplican de forma recursiva a los archivos y directorios del directorio especificado por la instancia [**de \_ LogicalFile**](cim-logicalfile.md) de CIM. En el caso de las instancias de archivo, este parámetro se omite.
+Si **es TRUE,** los permisos de seguridad se aplican de forma recursiva a los archivos y directorios dentro del directorio especificado por la instancia [**de \_ LogicalFile de CIM.**](cim-logicalfile.md) En el caso de las instancias de archivo, este parámetro se omite.
 
 </dd> </dl>
 
@@ -156,7 +156,7 @@ Correcto.
 
 2
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
@@ -192,7 +192,7 @@ El objeto ya existe.
 
 11
 
-Sistema de archivos no NTFS.
+El sistema de archivos no es NTFS.
 
 </dd> <dt>
 
@@ -246,7 +246,7 @@ Archivo de inicio no válido.
 
 17
 
-Privilegio no mantenido.
+Privilegios no mantenidos.
 
 </dd> <dt>
 
@@ -259,7 +259,7 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
@@ -267,7 +267,7 @@ Wmi no implementa actualmente este método. Para usar este método, debe impleme
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -277,7 +277,7 @@ Wmi no implementa actualmente este método. Para usar este método, debe impleme
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

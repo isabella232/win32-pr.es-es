@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a18922ef19bd828067ddb0153aa7c6369ecfeebd0446f5a6481f91fa64ca21b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 690770091219e51b3ebb550a1a72e50f76b20542
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118274425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252884"
 ---
 # <a name="eaphostusercredentials-element"></a>Elemento EapHostUserCredentials
 
@@ -57,13 +57,13 @@ El **elemento EapHostUserCredentials** contiene el [**elemento EapMethod**](eaph
 
 | Elemento                                                                                                | Tipo                                                                                                                | Descripción                                                                                      |
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [**Credenciales**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md)         | [**BaseEapMethodUserCredentials**](baseeapmethodusercredentialsschema-baseeapmethodusercredentials-complextype.md) | Se usa cuando la configuración del método está en formato de texto XML en lugar de un blob binario.<br/>   |
+| [**Credenciales**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md)         | [**BaseEapMethodUserCredentials**](baseeapmethodusercredentialsschema-baseeapmethodusercredentials-complextype.md) | Se usa cuando la configuración del método está en formato de texto XML en lugar de blob binario.<br/>   |
 | [**CredentialsBlob**](eaphostusercredentialsschema-credentialsblob-eaphostusercredentials-element.md) | hexBinary                                                                                                           | Se usa cuando la configuración del método es un BLOB binario en lugar de en formato de texto XML.<br/> |
 | [**EapMethod**](eaphostusercredentialsschema-eapmethod-eaphostusercredentials-element.md)             | [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md)                                                  | Identifica el método al que se hace referencia. <br/>                                             |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los [**elementos Credentials**](eaphostusercredentialsschema-credentials-eaphostusercredentials-element.md) y [**CredentialsBlob**](eaphostusercredentialsschema-credentialsblob-eaphostusercredentials-element.md) no se pueden usar simultáneamente.
 
@@ -75,7 +75,7 @@ El **elemento processContents** permite futuras mejoras en el esquema. El **elem
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
@@ -89,7 +89,7 @@ El **elemento processContents** permite futuras mejoras en el esquema. El **elem
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema eaphostusercredentials](eaphostusercredentialsschema-schema.md)
+[esquema eaphostusercredentials](eaphostusercredentialsschema-schema.md)
 </dt> </dl>
 
  

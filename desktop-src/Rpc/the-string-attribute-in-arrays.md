@@ -6,12 +6,12 @@ keywords:
 - string
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9d56099c9cc2be3638642b20f6d3572786ea0a93f47f8660c2e847c4c06dd3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e8bd2f7234b2713b6a7df05cfb5d6ae4c08b2d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120016665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361884"
 ---
 # <a name="the-string-attribute-in-arrays"></a>Atributo \[ de cadena en \] matrices
 

@@ -4,12 +4,12 @@ description: Por componente, extraiga el componente fraccionario.
 ms.assetid: 17C88BCE-7F2F-446C-9BB4-860098B5E42A
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d7726837a8c88e21b1756c08963a08f3714a9cdb4d93159ed80848166d84e37
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f59b747f38fb970b92b5e48610873efe781d63d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117907618"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361574"
 ---
 # <a name="frc-sm4---asm"></a>frc (sm4 - asm)
 
@@ -35,7 +35,7 @@ Por componente, extraiga el componente fraccionario.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En la tabla siguiente se muestran los resultados obtenidos al ejecutar la instrucción con varias clases de números.
 
@@ -71,9 +71,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |

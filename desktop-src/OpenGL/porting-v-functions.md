@@ -12,17 +12,17 @@ keywords:
 - Porte de IRIS GL, funciones v
 - porte de funciones GL,v de IRIS
 - porte a OpenGL desde IRIS GL,v functions
-- Porte de OpenGL desde IRIS GL, funciones v
+- Porte de OpenGL desde iris gl,v funciones
 - funciones de dibujo, funciones v
 - Funciones de v
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e84fd5eb036afaf5291902ab00f91f3b155f7507d8fce7135dc8030323c1a05
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bfd5e40915f891817606ac8517c0b3b980b436be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119888075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362033"
 ---
 # <a name="porting-v-functions"></a>Porting v Functions
 

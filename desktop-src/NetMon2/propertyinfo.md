@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 8dc20b94fbf889b4c04712eadbee5d7d834d3cf260962fe01ef7837e5893c4a4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 435b08c5dd5e020dce2bde9be03a0d41299836c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120128955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362136"
 ---
 # <a name="propertyinfo-structure"></a>PROPERTYINFO (estructura)
 
@@ -49,7 +49,7 @@ typedef struct _PROPERTYINFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -137,9 +137,9 @@ Calificador de datos de una propiedad. Este miembro proporciona información pre
 | <span id="PROP_QUAL_SET"></span><span id="prop_qual_set"></span><dl> <dt>**PROP \_ QUAL \_ SET**</dt> </dl>                                         | El valor de una propiedad se compara con un conjunto de valores que se especifican en el **miembro lpSet** de la unión de la estructura. El valor de una propiedad puede ser **BYTE,** **WORD,** **DWORD,** **LARGEINT** o **TIME.**<br/>                                                                                                |
 | <span id="PROP_QUAL_BITFIELD"></span><span id="prop_qual_bitfield"></span><dl> <dt>**CAMPO DE \_ BITS DE PROP QUAL \_**</dt> </dl>                          | Obsoleto.<br/>                                                                                                                                                                                                                                                                                                            |
 | <span id="PROP_QUAL_LABELED_SET"></span><span id="prop_qual_labeled_set"></span><dl> <dt>**PROP \_ QUAL \_ LABELED \_ SET**</dt> </dl>                | El valor de una propiedad se compara con un valor de un conjunto de pares de etiquetas de valor. Los pares de etiquetas de valor se especifican en el **miembro lpSet** de la unión de la estructura. <br/> En el momento de la presentación, si el valor de la propiedad coincide con un valor del conjunto, se muestran tanto un valor como la etiqueta asociada.<br/> |
-| <span id="PROP_QUAL_LABELED_BITFIELD"></span><span id="prop_qual_labeled_bitfield"></span><dl> <dt>**CAMPO \_ DE BITS CON ETIQUETA \_ PROP QUAL \_**</dt> </dl> | Obsoleto. Use PROP \_ QUAL \_ FLAGS en su lugar.<br/>                                                                                                                                                                                                                                                                             |
+| <span id="PROP_QUAL_LABELED_BITFIELD"></span><span id="prop_qual_labeled_bitfield"></span><dl> <dt>**CAMPO \_ DE BITS CON LA ETIQUETA \_ PROP QUAL \_**</dt> </dl> | Obsoleto. Use PROP \_ QUAL \_ FLAGS en su lugar.<br/>                                                                                                                                                                                                                                                                             |
 | <span id="PROP_QUAL_CONST"></span><span id="prop_qual_const"></span><dl> <dt>**PROP \_ QUAL \_ CONST**</dt> </dl>                                   | El valor de una propiedad se compara con una constante especificada en el **miembro Value** de la unión. <br/> En el momento de la presentación, si los valores de propiedad y la constante no coinciden, aparece un mensaje de error con formato con el valor establecido como Normal.<br/>                                                             |
-| <span id="PROP_QUAL_FLAGS"></span><span id="prop_qual_flags"></span><dl> <dt>**MARCAS \_ DE PROP \_ QUAL**</dt> </dl>                                   | El valor de la propiedad se compara con los bit específicos identificados en el **miembro lpSet** de la unión.<br/>                                                                                                                                                                                                              |
+| <span id="PROP_QUAL_FLAGS"></span><span id="prop_qual_flags"></span><dl> <dt>**MARCAS \_ DE PROP QUAL \_**</dt> </dl>                                   | El valor de la propiedad se compara con los BIT específicos identificados en el **miembro lpSet** de la unión.<br/>                                                                                                                                                                                                              |
 | <span id="PROP_QUAL_ARRAY"></span><span id="prop_qual_array"></span><dl> <dt>**PROP \_ QUAL \_ ARRAY**</dt> </dl>                                   | El valor de una propiedad especifica una matriz de valores. La longitud de los datos adjuntos determina la longitud de una matriz. <br/> Cuando se establece el valor PROP QUAL ARRAY, el miembro de unión de la estructura de datos PROPERTYINFO se \_ \_ establece en **NULL** y se omite. <br/>                                                    |
 
 
@@ -158,14 +158,14 @@ Reservado (miembro de unión).
 **lpRange**
 </dt> <dd>
 
-Puntero a una [estructura RANGE](range.md) que define un intervalo de valores. Este miembro debe establecerse si el **miembro DataQualifier** de esta estructura está establecido en PROP \_ QUAL RANGE \_ (miembro de union).
+Puntero a una [estructura RANGE](range.md) que define un intervalo de valores. Este miembro debe establecerse si el **miembro DataQualifier** de esta estructura está establecido en PROP \_ QUAL RANGE \_ (miembro de unión).
 
 </dd> <dt>
 
 **lpSet**
 </dt> <dd>
 
-Puntero a una [estructura SET](set.md) que especifica un conjunto de valores o etiquetas. Este miembro debe establecerse si el miembro **DataQualifier** de la estructura está establecido en PROP \_ QUAL \_ SET, PROP QUAL LABELED SET o PROP \_ QUAL \_ \_ \_ \_ FLAGS (miembro de unión).
+Puntero a una [estructura SET](set.md) que especifica un conjunto de valores o etiquetas. Este miembro debe establecerse si el **miembro DataQualifier** de la estructura se establece en PROP \_ QUAL SET, PROP QUAL LABELED SET o PROP QUAL \_ \_ \_ \_ \_ \_ FLAGS (miembro de unión).
 
 </dd> <dt>
 
@@ -179,14 +179,14 @@ Obsoleto (miembro de unión).
 **Valor**
 </dt> <dd>
 
-Valor constante utilizado cuando **DataQualifier** se establece en PROP \_ QUAL \_ CONST (miembro de union).
+Valor constante utilizado cuando **DataQualifier** se establece en PROP \_ QUAL \_ CONST (miembro de unión).
 
 </dd> <dt>
 
 **FormatStringSize**
 </dt> <dd>
 
-Tamaño máximo utilizado solo para la descripción de la propiedad.
+Tamaño máximo usado solo para la descripción de la propiedad.
 
 </dd> <dt>
 
@@ -197,9 +197,9 @@ Especifique la función de formato a la que se llama para dar formato a los dato
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **estructura PROPERTYINFO** se usa en las llamadas a [la función AddProperty.](/previous-versions/bb251873(v=msdn.10)) La **función AddProperty** agrega una definición de propiedad única a la base de datos de propiedades [*del analizador*](p.md).
+La **estructura PROPERTYINFO** se usa en las llamadas a [la función AddProperty.](/previous-versions/bb251873(v=msdn.10)) La **función AddProperty** agrega una definición de propiedad única a la base de datos de propiedades [*del analizador.*](p.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -213,14 +213,14 @@ La **estructura PROPERTYINFO** se usa en las llamadas a [la función AddProperty
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [AddProperty](/previous-versions/bb251873(v=msdn.10))
 </dt> <dt>
 
-[Gama](range.md)
+[GAMA](range.md)
 </dt> <dt>
 
 [SET](set.md)

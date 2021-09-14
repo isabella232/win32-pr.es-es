@@ -4,12 +4,12 @@ ms.assetid: 20a30e87-e209-45ae-bf1b-722568758c47
 title: 'Paso 2: Extender una transacción entre varios componentes'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96aa168eca7bfba29a4b00a6cd24b45d06c7610c76d47a4d6454e77295e57bc4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 99c6fc80016904a3ea51b7aea7fa0ec93edc47a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117915817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361644"
 ---
 # <a name="step-2-extending-a-transaction-across-components"></a>Paso 2: Extender una transacción entre componentes
 

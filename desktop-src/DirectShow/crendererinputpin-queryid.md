@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 732bf7aa6d0d247c93c0334db48b86bccd2ac15715dd2da9a4d60a0d315966bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b56ae2a846b4d89da4c6a9d4c8f88bd3094c5cff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054581"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362474"
 ---
 # <a name="crendererinputpinqueryid-method"></a>Método CRendererInputPin.QueryId
 
@@ -65,7 +65,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método asigna la cadena de caracteres anchos "In" y la asigna al *parámetro Id.* El autor de la llamada debe liberar la memoria asignada mediante la **función CoTaskMemFree.**
 
@@ -80,7 +80,7 @@ Este método asigna la cadena de caracteres anchos "In" y la asigna al *parámet
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

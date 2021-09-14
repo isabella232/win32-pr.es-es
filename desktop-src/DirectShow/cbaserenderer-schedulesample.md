@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 88e728b90078ab11a6215dad60a88b819b2c513071637e2aa5c6b6ed7226189b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c340e54f35b353820b128681cfbc0c5798d38849
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118157597"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254462"
 ---
 # <a name="cbaserendererschedulesample-method"></a>Método CBaseRenderer.ScheduleSample
 
@@ -51,11 +51,11 @@ Puntero a la interfaz [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strm
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si el ejemplo se programó o **FALSE** si se ha eliminado.
+Devuelve **TRUE** si la muestra se programó o **FALSE** si se ha eliminado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método determina primero si el ejemplo debe representarse inmediatamente, representarse en el futuro o descartarse. (Para ello, llama al método [**CBaseRenderer::GetSampleTimes).**](cbaserenderer-getsampletimes.md) Si el ejemplo se debe representar inmediatamente, el método señala el evento [**CBaseRenderer::m \_ RenderEvent.**](cbaserenderer-m-renderevent.md) Si el ejemplo se debe representar en el futuro, el método llama al método [**IReferenceClock::AdviseTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-advisetime) para la programación.
+Este método determina primero si el ejemplo debe representarse inmediatamente, representarse en el futuro o eliminarse. (Para ello, llama al método [**CBaseRenderer::GetSampleTimes).**](cbaserenderer-getsampletimes.md) Si el ejemplo se debe representar inmediatamente, el método señala el evento [**CBaseRenderer::m \_ RenderEvent.**](cbaserenderer-m-renderevent.md) Si el ejemplo se debe representar en el futuro, el método llama al método [**IReferenceClock::AdviseTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-advisetime) para la programación.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 7d7b1f2213fc6de3ec08a9c9b568222f5dd54a6de6f9bdb3adb27e052e8c088e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34a750b34f483342966ed1fcb3831d08b8df8f39
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117773510"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253515"
 ---
 # <a name="attributescount-property"></a>Propiedad Attributes.Count
 
@@ -41,7 +41,7 @@ Attributes.Count As Long
 
 Número de objetos [**Attribute**](attribute.md) de la colección. Cada **objeto Attribute** representa un único atributo de la colección.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **propiedad Count** se puede usar para especificar el último objeto [**Attribute**](attribute.md) de la colección al recuperar un objeto **Attribute** específico mediante la [**propiedad Attributes.Item.**](attributes-item.md)
 

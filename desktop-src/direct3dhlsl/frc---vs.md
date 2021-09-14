@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b2ecc6a1c903f78fb7c03442809f792e3ddb984d04975d3f5ecb0b5c918f7ab4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6990d5489058d217888f34caf0305badc4cab46d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117907648"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361578"
 ---
 # <a name="frc---vs"></a>frc - vs
 
 Devuelve la parte fraccionera de cada componente de entrada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,12 +31,12 @@ Devuelve la parte fraccionera de cada componente de entrada.
 
  
 
-where
+, donde
 
 -   dst es el registro de destino.
 -   src es un registro de origen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -48,7 +48,7 @@ where
 
  
 
-El fragmento de código siguiente muestra conceptualmente cómo funciona la instrucción.
+El siguiente fragmento de código muestra conceptualmente cómo funciona la instrucción.
 
 
 ```

@@ -4,12 +4,12 @@ description: Recopila los cuatro elementos de textura que se usarían en una ope
 ms.assetid: 219B25AE-CBF9-4B68-B2DB-6D8C3C5B4CEA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb39918bdb421123cb3e2bfe41931740e271f85a27cf36b8994d493656d91c21
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 84387bfe027e30b338b4701ec941a9d4e1b5e242
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119457585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361570"
 ---
 # <a name="gather4-sm41---asm"></a>gather4 (sm4.1 - asm)
 
@@ -41,7 +41,7 @@ Recopila los cuatro elementos de textura que se usarían en una operación de fi
 
 Esta operación solo funciona con texturas de canal único 2D o CubeMap. En el caso de las texturas 2D, solo se usan los modos de direccionamiento del muestreador y se usa el nivel superior de cualquier pirámide de mip.
 
-Esta instrucción se comporta como la [instrucción de](sample--sm4---asm-.md) ejemplo, pero no se genera una muestra filtrada. Los cuatro ejemplos que contribuirían al filtrado se colocan en xyzw en orden en sentido contrario a las agujas del reloj, empezando por la muestra en la parte inferior izquierda de la ubicación consultada. Esto es lo mismo que el muestreo de puntos con deltas de coordenadas de textura (u,v) en las siguientes ubicaciones: (-,+),(+,+),(+,-),(-,-), donde la magnitud de los deltas siempre es la mitad de un texel.
+Esta instrucción se comporta como la [instrucción de](sample--sm4---asm-.md) ejemplo, pero no se genera una muestra filtrada. Los cuatro ejemplos que contribuirían al filtrado se colocan en xyzw en orden en sentido contrario a las agujas del reloj, empezando por la muestra en la parte inferior izquierda de la ubicación consultada. Esto es lo mismo que el muestreo de puntos con (u,v) diferencias de coordenadas de textura en las siguientes ubicaciones: (-,+), (+,+),(+,-),(-,-), donde la magnitud de los deltas siempre es la mitad de un texel.
 
 En el caso de las texturas de CubeMap cuando una superficie bi lineal abarca un borde, se usan los elementos de textura de la cara adyacente. Las esquinas usan las mismas reglas que la **instrucción de** ejemplo; que es la esquina que no está en la esquina se considera el promedio de las tres esquinas de caras que se están imponiendo.
 
@@ -71,10 +71,10 @@ Esta función se admite en los siguientes modelos de sombreador.
 |-----------------------------------------------------------|-----------|
 | [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 

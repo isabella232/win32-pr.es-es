@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 344783d8e8aac755d157f125b02827c9f362ca96271dccb84134f451b31d1bc3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f04e4c8c90796aafb64870a9d59d38b0a33e7435
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254457"
 ---
 # <a name="cbaserenderersendendofstream-method"></a>Método CBaseRenderer.SendEndOfStream
 
@@ -55,7 +55,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla sig
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El filtro podría recibir una notificación de fin de flujo antes de la hora de detenerse del ejemplo actual. Si es así, el filtro debe esperar antes de publicar una [**notificación EC \_ COMPLETE**](ec-complete.md) en el administrador de gráficos de filtros.
 

@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 500706531d7e7a934681dabe3bcd00b7de0d80e42b8bbf27a5456a8fd4415f21
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c4b53cc5ce1b209cc7de9d68648b68096e5c4911
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361408"
 ---
 # <a name="cbasecontrolwindow-class"></a>CBaseControlWindow (clase)
 
-![Jerarquía de clases cbasecontrolwindow](images/wctrl01.png)
+![cbasecontrolwindow (jerarquía de clases)](images/wctrl01.png)
 
-La **clase CBaseControlWindow** implementa la [**interfaz IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) y controla el acceso externo a su filtro asociado. Debe sincronizar el objeto **CBaseControlWindow** con el filtro pasando un puntero a un objeto de sincronización de sección crítica. La **clase CBaseControlWindow** proporciona una serie de métodos que devuelven la configuración de propiedades sin tratar con esta sección crítica. Por ejemplo, llamar [**a CBaseControlWindow::get \_ AutoShow**](cbasecontrolwindow-get-autoshow.md) para recuperar el valor del miembro de datos **m \_ bAutoShow** bloquea la sección crítica. Sin embargo, es posible que el filtro ya tenga una sección crítica interna bloqueada, lo que podría infringir la jerarquía de bloqueos del filtro. En su lugar, al llamar a la función miembro [**CBaseControlWindow::IsAutoShowEnabled**](cbasecontrolwindow-isautoshowenabled.md) se devuelve el valor necesario sin que ello afecte a la sección crítica.
+La **clase CBaseControlWindow** implementa la [**interfaz IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) y controla el acceso externo a su filtro asociado. Debe sincronizar el objeto **CBaseControlWindow** con el filtro pasando un puntero a un objeto de sincronización de sección crítica. La **clase CBaseControlWindow proporciona** una serie de métodos que devuelven la configuración de propiedades sin tratar con esta sección crítica. Por ejemplo, llamar [**a CBaseControlWindow::get \_ AutoShow**](cbasecontrolwindow-get-autoshow.md) para recuperar el valor del miembro de datos **m \_ bAutoShow** bloquea la sección crítica. Sin embargo, es posible que el filtro ya tenga una sección crítica interna bloqueada, lo que podría infringir la jerarquía de bloqueos del filtro. En su lugar, al llamar a la función miembro [**CBaseControlWindow::IsAutoShowEnabled**](cbasecontrolwindow-isautoshowenabled.md) se devuelve el valor necesario sin que ello afecte a la sección crítica.
 
 Todos los métodos [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) implementados por **CBaseControlWindow** requieren que el filtro se conecte correctamente con su filtro ascendente. Por este motivo, los objetos de clase requieren un pin de sincronización, que se establece mediante una llamada al [**método CBaseControlWindow::SetControlWindowPin.**](cbasecontrolwindow-setcontrolwindowpin.md) Cada vez que se llama a **un método IVideoWindow,** el objeto **CBaseControlWindow** comprueba que el pin sigue conectado.
 
@@ -32,7 +32,7 @@ Todos los métodos [**IVideoWindow**](/windows/desktop/api/Control/nn-control-iv
 | Miembros de datos protegidos                                                     | Descripción                                                                                                                                 |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | m \_ bAutoShow                                                               | Resultado cuando cambia el estado.                                                                                                              |
-| m \_ bCursorHidden                                                           | Determinación de si se muestra u oculta el cursor.                                                                                 |
+| m \_ bCursorHidden                                                           | Determinación de si el cursor se muestra u oculta.                                                                                 |
 | m \_ BorderColour                                                            | Color del borde de la ventana actual.                                                                                                         |
 | m \_ hwndDrain                                                               | Identificador de ventana en el que se publican los mensajes recibidos.                                                                                        |
 | m \_ hwndOwner                                                               | Ventana propietaria.                                                                                                                              |
@@ -60,7 +60,7 @@ Todos los métodos [**IVideoWindow**](/windows/desktop/api/Control/nn-control-iv
 | [**GetMaxIdealImageSize**](cbasecontrolwindow-getmaxidealimagesize.md)    | Recupera el tamaño máximo de la imagen ideal.                                                                                              |
 | [**get \_ MessageDrain**](cbasecontrolwindow-get-messagedrain.md)           | Recupera la purga del mensaje actual.                                                                                                        |
 | [**GetMinIdealImageSize**](cbasecontrolwindow-getminidealimagesize.md)    | Recupera el tamaño mínimo de la imagen ideal.                                                                                              |
-| [**get \_ Owner**](cbasecontrolwindow-get-owner.md)                         | Recupera el identificador de la ventana primaria.                                                                                                         |
+| [**get \_ Owner**](cbasecontrolwindow-get-owner.md)                         | Recupera el identificador de ventana primaria.                                                                                                         |
 | [**GetRestorePosition**](cbasecontrolwindow-getrestoreposition.md)        | Recupera la posición en la que se restaurará la ventana cuando se maximice o minimice.                                                    |
 | [**get \_ Top**](cbasecontrolwindow-get-top.md)                             | Recupera la coordenada Y de la parte superior de la ventana.                                                                                       |
 | [**obtener \_ visible**](cbasecontrolwindow-get-visible.md)                     | Recupera la configuración de visibilidad actual de la ventana.                                                                                     |
@@ -70,7 +70,7 @@ Todos los métodos [**IVideoWindow**](/windows/desktop/api/Control/nn-control-iv
 | [**get \_ WindowStyle**](cbasecontrolwindow-get-windowstyle.md)             | Recupera los estilos de ventana estándar.                                                                                                       |
 | [**get \_ WindowStyleEx**](cbasecontrolwindow-get-windowstyleex.md)         | Recupera los estilos de ventana extendidos.                                                                                                       |
 | [**HideCursor**](cbasecontrolwindow-hidecursor.md)                        | Oculta o muestra el cursor.                                                                                                               |
-| [**IsCursorHidden**](cbasecontrolwindow-iscursorhidden.md)                | Recupera el estado actual del miembro de datos **m \_ bCursorHidden.**                                                                        |
+| [**IsCursorHidden**](cbasecontrolwindow-iscursorhidden.md)                | Recupera el estado actual del miembro de datos **\_ m bCursorHidden.**                                                                        |
 | [**NotifyOwnerMessage**](cbasecontrolwindow-notifyownermessage.md)        | Pasa los mensajes que se envían a las ventanas propietarias.                                                                                         |
 | [**put \_ AutoShow**](cbasecontrolwindow-put-autoshow.md)                   | Establece la propiedad AutoShow.                                                                                                                 |
 | [**put \_ BackgroundPalette**](cbasecontrolwindow-put-backgroundpalette.md) | Establece una marca para realizar la paleta en segundo plano.                                                                                       |
@@ -79,7 +79,7 @@ Todos los métodos [**IVideoWindow**](/windows/desktop/api/Control/nn-control-iv
 | [**put \_ FullScreenMode**](cbasecontrolwindow-put-fullscreenmode.md)      | Establece el modo de pantalla completa.                                                                                                                  |
 | [**put \_ Height**](cbasecontrolwindow-put-height.md)                       | Establece el alto actual de la ventana.                                                                                                             |
 | [**put \_ Left**](cbasecontrolwindow-put-left.md)                           | Establece la coordenada izquierda de la ventana.                                                                                                    |
-| [**put \_ MessageDrain**](cbasecontrolwindow-put-messagedrain.md)           | Establece la ventana de purga de mensajes.                                                                                                              |
+| [**put \_ MessageDrain**](cbasecontrolwindow-put-messagedrain.md)           | Establece la ventana de purga del mensaje.                                                                                                              |
 | [**put \_ Owner**](cbasecontrolwindow-put-owner.md)                         | Establece el identificador de ventana principal de Microsoft Win32.                                                                                              |
 | [**put \_ Top**](cbasecontrolwindow-put-top.md)                             | Establece la posición de la parte superior de la ventana.                                                                                                |
 | [**put \_ Visible**](cbasecontrolwindow-put-visible.md)                     | Oculta o muestra la ventana.                                                                                                                  |
@@ -94,7 +94,7 @@ Todos los métodos [**IVideoWindow**](/windows/desktop/api/Control/nn-control-iv
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

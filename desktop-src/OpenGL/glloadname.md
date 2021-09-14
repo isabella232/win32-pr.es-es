@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f362862d2d4b57c43e12e522e2dac1767bbd36d88bda4ce3fb27f3c525fb3ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb47a0389cda13523104ee429bca46838970e15a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119520395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253779"
 ---
-# <a name="glloadname-function"></a>función glLoadName
+# <a name="glloadname-function"></a>Función glLoadName
 
 La **función glLoadName** carga un nombre en la pila de nombres.
 
@@ -64,13 +64,13 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función glLoadName** hace *que name* reemplace el valor de la parte superior de la pila de nombres, que inicialmente está vacío. La pila de nombres se usa durante el modo de selección para permitir que los conjuntos de comandos de representación se identifiquen de forma única. Consta de un conjunto ordenado de enteros sin signo.
+La **función glLoadName** hace *que name* reemplace el valor de la parte superior de la pila de nombres, que está inicialmente vacío. La pila de nombres se usa durante el modo de selección para permitir que los conjuntos de comandos de representación se identifiquen de forma única. Consta de un conjunto ordenado de enteros sin signo.
 
 La pila de nombres siempre está vacía, mientras que el modo de representación no es GL \_ SELECT. Se **omiten las llamadas a glLoadName** mientras el modo de representación no es GL \_ SELECT.
 
-Las siguientes funciones recuperan información relacionada **con glLoadName**:
+Las funciones siguientes recuperan información relacionada **con glLoadName**:
 
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ NAME STACK \_ \_ DEPTH
 
@@ -90,7 +90,7 @@ Las siguientes funciones recuperan información relacionada **con glLoadName**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: f7fad383-4081-4a49-aa03-59861fcefc97
 title: Transacciones y activación JIT de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c2b496f46652dc8ab9f6d573e712a0aa83575cac0adbb86a7dc4cfa88b565ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 281691ebc9c8d5c654ea6ff0c3035d7e285f62c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118546052"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361611"
 ---
 # <a name="transactions-and-com-jit-activation"></a>Transacciones y activación JIT de COM+
 

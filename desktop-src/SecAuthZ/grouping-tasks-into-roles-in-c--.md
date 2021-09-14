@@ -4,16 +4,16 @@ ms.assetid: d2671c52-8d34-45e2-9c49-4ed399f3c220
 title: Agrupación de tareas en roles en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c5e074fb4c83c906d688efa9f0fd4c85ed26d557b6e9c903d4ca814694d8aef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: abb4952d9ece250ddfacc53d955bce3a107281a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119671995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361847"
 ---
 # <a name="grouping-tasks-into-roles-in-c"></a>Agrupación de tareas en roles en C++
 
-En el Administrador de autorización, un rol representa una categoría de usuarios y las tareas que dichos usuarios están autorizados a realizar. Las tareas se agrupan y se asignan a una definición de rol, representada por un objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) con su [**propiedad IsRoleDefinition**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_isroledefinition) establecida en **TRUE.** A continuación, la definición de roles se puede asignar a un objeto [**IAzRole**](/windows/desktop/api/Azroles/nn-azroles-iazrole) y, a continuación, se asignan usuarios o grupos de usuarios a ese objeto. Para obtener más información sobre las tareas y los roles, vea [Roles](roles.md).
+En el Administrador de autorización, un rol representa una categoría de usuarios y las tareas que dichos usuarios están autorizados a realizar. Las tareas se agrupan y se asignan a una definición de rol, que se representa mediante un objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) con su [**propiedad IsRoleDefinition**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_isroledefinition) establecida en **TRUE.** A continuación, la definición de rol se puede asignar a un objeto [**IAzRole**](/windows/desktop/api/Azroles/nn-azroles-iazrole) y, a continuación, los usuarios o grupos de usuarios se asignan a ese objeto. Para obtener más información sobre tareas y roles, vea [Roles](roles.md).
 
 En el ejemplo siguiente se muestra cómo asignar tareas a una definición de rol, crear un objeto de rol y asignar la definición de rol al objeto de rol. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C, que este almacén contiene una aplicación denominada Expense y que esta aplicación contiene tareas denominadas Submit Expense y Approve Expense.
 

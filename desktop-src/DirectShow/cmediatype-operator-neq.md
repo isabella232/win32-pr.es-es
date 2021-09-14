@@ -1,5 +1,5 @@
 ---
-description: Este operador comprueba si hay desigualdad entre objetos CMediaType.
+description: Este operador comprueba la desigualdad entre objetos CMediaType.
 ms.assetid: 9caf4cb9-f049-42e7-abe4-79f8bf0ea542
 title: Método CMediaType.CMediaType::operator!= (Mtype.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c17db60821be2f5243afab83ed62ec9b5b5b50e5d7a3f500d159ec185260a402
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe3d5b60ed1990423d5ad9375ffdf192da313b8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118156243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362507"
 ---
 # <a name="cmediatypecmediatypeoperator-method"></a>Método CMediaType.CMediaType::operator!=
 
-Este operador comprueba si hay desigualdad entre [**objetos CMediaType.**](cmediatype.md)
+Este operador comprueba la desigualdad entre [**objetos CMediaType.**](cmediatype.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Referencia al **objeto CMediaType** que se comparará.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si *rt* no es igual a este objeto. De lo contrario, **devuelve FALSE**.
+Devuelve **TRUE** si *rt* no es igual a este objeto. De lo contrario, **devuelve FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Devuelve **TRUE** si *rt* no es igual a este objeto. De lo contrario, **devuelve
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

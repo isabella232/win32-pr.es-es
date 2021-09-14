@@ -5,34 +5,34 @@ ms.assetid: f17042c3-ba1a-408f-af55-5f171b0dee33
 title: K (Glosario de seguridad)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7c92abf9b3df1eb49f0caaee90ccbce8755d003478683aba35570d9ea99fa2b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33e7d1b474b774b5cdb7a0b8d05a512a8d291573
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118895598"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361819"
 ---
 # <a name="k-security-glossary"></a>K (Glosario de seguridad)
 
-[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) F [G](g-gly.md) H [](h-gly.md) [I](i-gly.md) J K [L](l-gly.md) [M N](m-gly.md) [O](n-gly.md) [](o-gly.md) [P](p-gly.md) Q [R](r-gly.md) [S](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) [W](w-gly.md) [X](x-gly.md) Y Z
+[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) F G [H](g-gly.md) [](h-gly.md) [I](i-gly.md) J K [L M](l-gly.md) [N](m-gly.md) [O](n-gly.md) [](o-gly.md) [P P](p-gly.md) [Q R](r-gly.md) [S](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) [W](w-gly.md) [X](x-gly.md) Y Z
 
 <dl> <dt>
 
-<span id="_security_kca_gly"></span><span id="_SECURITY_KCA_GLY"></span>**Kca**
+<span id="_security_kca_gly"></span><span id="_SECURITY_KCA_GLY"></span>**KCA**
 </dt> <dd>
 
 Consulte la *entidad de certificación clave*.
 
 </dd> <dt>
 
-<span id="_security_kdc_gly"></span><span id="_SECURITY_KDC_GLY"></span>**Kdc**
+<span id="_security_kdc_gly"></span><span id="_SECURITY_KDC_GLY"></span>**KDC**
 </dt> <dd>
 
 Vea *Centro de distribución de claves*.
 
 </dd> <dt>
 
-<span id="_security_kea_gly"></span><span id="_SECURITY_KEA_GLY"></span>**Kea**
+<span id="_security_kea_gly"></span><span id="_SECURITY_KEA_GLY"></span>**KEA**
 </dt> <dd>
 
 Consulte el *algoritmo de intercambio de claves*.
@@ -49,7 +49,7 @@ Un protocolo que define cómo los clientes interactúan con un servicio de auten
 <span id="_security_key_blob_gly"></span><span id="_SECURITY_KEY_BLOB_GLY"></span>**blob de clave**
 </dt> <dd>
 
-Blob que contiene una clave privada cifrada. Los blobs en claves proporcionan una manera de almacenar claves fuera del CSP. Los BLOB de clave se crean mediante la exportación de una clave existente desde el CSP mediante una llamada a la **función CryptExportKey.** Más adelante, el blob de clave se puede importar en un proveedor (a menudo un CSP diferente en un equipo diferente) mediante una llamada a la **función CryptImportKey.** Esto crea una clave en el CSP que es un duplicado del que se exportó.
+Blob que contiene una clave privada cifrada. Los blobs en claves proporcionan una manera de almacenar claves fuera del CSP. Los blobs en claves se crean mediante la exportación de una clave existente desde el CSP mediante una llamada a la **función CryptExportKey.** Más adelante, el blob de clave se puede importar en un proveedor (a menudo un CSP diferente en un equipo diferente) llamando a la **función CryptImportKey.** Esto crea una clave en el CSP que es un duplicado de la que se exportó.
 
 Consulte también [*blob de clave simple,*](s-gly.md) [*blob de clave pública*](p-gly.md)y blob de [*clave privada.*](p-gly.md)
 
@@ -58,7 +58,7 @@ Consulte también [*blob de clave simple,*](s-gly.md) [*blob de clave pública*]
 <span id="_security_key_blob_format_gly"></span><span id="_SECURITY_KEY_BLOB_FORMAT_GLY"></span>**formato blob de clave**
 </dt> <dd>
 
-Formato del BLOB de clave cuando se exporta una clave de sesión o pública desde un CSP. El formato se especifica mediante el tipo de proveedor del CSP de exportación. Se crea un BLOB de clave mediante una **llamada a CryptExportKey**.
+Formato del blob de clave cuando se exporta una clave pública o de sesión desde un CSP. El formato se especifica mediante el tipo de proveedor del CSP de exportación. Se crea un blob de clave mediante una **llamada a CryptExportKey.**
 
 Consulte también [*blob de clave pública*](p-gly.md) y blob de clave [*simple.*](s-gly.md)
 
@@ -67,14 +67,14 @@ Consulte también [*blob de clave pública*](p-gly.md) y blob de clave [*simple.
 <span id="_security_key_certification_authority_gly"></span><span id="_SECURITY_KEY_CERTIFICATION_AUTHORITY_GLY"></span>**entidad de certificación clave**
 </dt> <dd>
 
-(KCA) Una entidad de confianza que normalmente mantiene una base de datos segura de mensajes compuestos firmados con la clave privada del KCA. En implementaciones prácticas, los mensajes compuestos constan del nombre del usuario, la clave pública del usuario y cualquier otra información importante sobre el usuario. Cuando la aplicación receptora recibe un mensaje firmado de un usuario, la aplicación puede comprobar la clave pública recibida con el mensaje comparándolo con la clave pública almacenada en la base de datos de KCA.
+(KCA) Una entidad de confianza que normalmente mantiene una base de datos segura de mensajes compuestos firmados con la clave privada de KCA. En implementaciones prácticas, los mensajes compuestos constan del nombre del usuario, la clave pública del usuario y cualquier otra información importante sobre el usuario. Cuando la aplicación receptora recibe un mensaje firmado de un usuario, la aplicación puede comprobar la clave pública recibida con el mensaje comparándolo con la clave pública almacenada en la base de datos KCA.
 
 </dd> <dt>
 
 <span id="_security_key_container_gly"></span><span id="_SECURITY_KEY_CONTAINER_GLY"></span>**contenedor de claves**
 </dt> <dd>
 
-Una parte de la base de datos de claves que contiene todos los pares de claves (pares de claves de intercambio y firma) que pertenecen a un usuario específico. Cada contenedor tiene un nombre único que se usa al llamar a la **función CryptAcquireContext** para obtener un identificador para el contenedor.
+Una parte de la base de datos de claves que contiene todos los pares de claves (pares de claves de intercambio y firma) que pertenecen a un usuario específico. Cada contenedor tiene un nombre único que se usa al llamar a la función **CryptAcquireContext** para obtener un identificador para el contenedor.
 
 </dd> <dt>
 
@@ -92,21 +92,21 @@ Consulte también contenedor *de claves*.
 
 (KDC) Un servicio de red que proporciona vales de sesión y claves de sesión temporales que se usan en el protocolo de autenticación Kerberos V5. El KDC se ejecuta como un proceso con privilegios en todos los controladores de dominio.
 
-Consulte también el *protocolo Kerberos*.
+Consulte también protocolo *Kerberos*.
 
 </dd> <dt>
 
 <span id="_security_key_exchange_algorithm_gly"></span><span id="_SECURITY_KEY_EXCHANGE_ALGORITHM_GLY"></span>**algoritmo de intercambio de claves**
 </dt> <dd>
 
-Algoritmo que se usa para cifrar y descifrar claves de intercambio (claves de sesión simétricas). Algunos algoritmos comunes de intercambio de claves incluyen Diffie-Hellman y KEA, el algoritmo de intercambio de claves especificado por un tipo de proveedor \_ FORTEZZA de PROV. El algoritmo KEA es una versión mejorada del algoritmo Diffie-Hellman estándar. Cada tipo de proveedor solo puede especificar un algoritmo de intercambio de claves.
+Algoritmo que se usa para cifrar y descifrar claves de intercambio (claves de sesión simétricas). Algunos algoritmos comunes de intercambio de claves incluyen Diffie-Hellman y KEA, el algoritmo de intercambio de claves especificado por un tipo de proveedor \_ PROV FORTEZZA. El algoritmo KEA es una versión mejorada del algoritmo de Diffie-Hellman. Cada tipo de proveedor solo puede especificar un algoritmo de intercambio de claves.
 
 </dd> <dt>
 
 <span id="_security_key_exchange_algorithm_name_gly"></span><span id="_SECURITY_KEY_EXCHANGE_ALGORITHM_NAME_GLY"></span>**Algoritmo de Exchange clave**
 </dt> <dd>
 
-(KEA) Algoritmo de intercambio de claves especificado por un tipo de proveedor \_ FORTEZZA de PROV. Este algoritmo es una versión mejorada del algoritmo Diffie-Hellman datos.
+(KEA) Algoritmo de intercambio de claves especificado por un tipo de proveedor \_ FORTEZZA de PROV. Este algoritmo es una versión mejorada del algoritmo de Diffie-Hellman.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Conjunto de funciones que se usan para intercambiar o transmitir claves. Las fun
 <span id="_security_key_exchange_key_pair_gly"></span><span id="_SECURITY_KEY_EXCHANGE_KEY_PAIR_GLY"></span>**par de claves de intercambio de claves**
 </dt> <dd>
 
-Vea [*Par de claves de intercambio.*](e-gly.md)
+Consulte [*par de claves de intercambio*](e-gly.md).
 
 </dd> <dt>
 
@@ -159,7 +159,7 @@ Vea también exchange key pair ( [*Par de claves de intercambio).*](e-gly.md)
 <span id="_security_key_generation_functions_gly"></span><span id="_SECURITY_KEY_GENERATION_FUNCTIONS_GLY"></span>**funciones de generación de claves**
 </dt> <dd>
 
-Conjunto de funciones que usan las aplicaciones para generar y personalizar claves criptográficas. Estas funciones incluyen compatibilidad total para cambiar los modos de encadenamiento, los vectores de inicialización y otras características de cifrado.
+Conjunto de funciones que usan las aplicaciones para generar y personalizar claves criptográficas. Estas funciones incluyen compatibilidad completa para cambiar los modos de encadenamiento, los vectores de inicialización y otras características de cifrado.
 
 </dd> <dt>
 
@@ -184,10 +184,10 @@ Una clave privada y su clave pública relacionada.
 
 </dd> <dt>
 
-<span id="_security_ksp_gly"></span><span id="_SECURITY_KSP_GLY"></span>**Ksp**
+<span id="_security_ksp_gly"></span><span id="_SECURITY_KSP_GLY"></span>**KSP**
 </dt> <dd>
 
-Consulte proveedor *de almacenamiento de claves.*
+Consulte *el proveedor de almacenamiento de claves*.
 
 </dd> </dl>
 

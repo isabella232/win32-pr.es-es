@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7bd4d7bd27c3698f1e30c690f755f445ffaffeff37c88f27d0a5c8ba58cd2d32
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 22e861c61f01a7594d720833e2b3a4b923a1e183
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119768175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362503"
 ---
 # <a name="cmediatypereallocformatbuffer-method"></a>Método CMediaType.ReallocFormatBuffer
 
-El `ReallocFormatBuffer` método reallocate el bloque de formato a un nuevo tamaño.
+El `ReallocFormatBuffer` método realloca el bloque de formato a un nuevo tamaño.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,11 +53,11 @@ Nuevo tamaño necesario para el bloque de formato, en bytes. Debe ser mayor que 
 
 Devuelve un puntero al nuevo bloque si se realiza correctamente. De lo contrario, devuelve un puntero al bloque de formato antiguo o **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método asigna un nuevo bloque de formato. Copia tanto como sea posible del bloque de formato existente en el nuevo bloque de formato. Si el nuevo bloque es menor que el bloque existente, se trunca el bloque de formato existente. Si el nuevo bloque es mayor, el contenido del espacio adicional no está definido. No se establecen explícitamente en cero.
 
-El método actualiza los **miembros cbFormat** y **pbFormat** de la **estructura AM MEDIA \_ \_ TYPE.**
+El método actualiza los **miembros cbFormat** **y pbFormat** de la **estructura AM MEDIA \_ \_ TYPE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ El método actualiza los **miembros cbFormat** y **pbFormat** de la **estructura
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

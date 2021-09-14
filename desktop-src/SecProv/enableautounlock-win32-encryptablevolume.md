@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 712a5460769009f9e10e2b9730ad78632bc5ad10c2af2d1eaf63bcb2c91d7c70
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39456e9130081e52820cd91ba3e191ee40ab2374
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118892463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253436"
 ---
 # <a name="enableautounlock-method-of-the-win32_encryptablevolume-class"></a>Método EnableAutoUnlock de la clase EncryptableVolume de Win32 \_
 
@@ -66,7 +66,7 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 | <dl> <dt>**FVE \_ E \_ LOCKED \_ VOLUME 2150694912**</dt> <dt>(0x80310000)</dt> </dl>          | El volumen está bloqueado.<br/>                                                                                                                                             |
 | <dl> <dt>**FVE \_ E \_ NOT \_ ACTIVATED**</dt> <dt>2150694920 (0x80310008)</dt> </dl>          | BitLocker no está habilitado en el volumen. Agregue un protector de clave para habilitar BitLocker. <br/>                                                                                 |
 | <dl> <dt>**E \_ INVALIDARG**</dt> <dt>2147942487 (0x80070057)</dt> </dl>                   | El *parámetro VolumeKeyProtectorID* no hace referencia a un protector de clave válido del tipo "External Key".<br/>                                                          |
-| <dl> <dt>**FVE \_ E \_ NOT \_ DATA \_ VOLUME**</dt> <dt>2150694937 (0x80310019)</dt> </dl>       | El método no se puede ejecutar para el volumen del sistema operativo que se está ejecutando actualmente.<br/>                                                                                       |
+| <dl> <dt>**FVE \_ E \_ NOT DATA VOLUME \_ \_ 2150694937**</dt> <dt>(0x80310019)</dt> </dl>       | El método no se puede ejecutar para el volumen del sistema operativo que se está ejecutando actualmente.<br/>                                                                                       |
 | <dl> <dt>**FVE \_ E \_ OS \_ NOT \_ PROTECTED**</dt> <dt>2150694944 (0x80310020)</dt> </dl>      | El método no se puede ejecutar si el volumen del sistema operativo que se está ejecutando actualmente no está protegido por Cifrado de unidad BitLocker o no tiene cifrado en curso.<br/> |
 | <dl> <dt> **FVE \_ E VOLUME BOUND ALREADY \_ \_ \_ 2150694943**</dt> <dt>(0x8031001F)</dt> </dl> | El desbloqueo automático en el volumen se ha habilitado previamente.<br/>                                                                                                    |
 
@@ -74,7 +74,7 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Dado un protector de clave de volumen válido del tipo "Clave externa", la clave externa de 256 bits relacionada se extrae del protector y se almacena en el registro del sistema operativo que se está ejecutando actualmente, junto con el identificador del protector de clave de volumen.
 
@@ -85,22 +85,22 @@ Si se elimina la clave externa asociada al identificador del protector de clave 
 
  
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista Ultimate \[\]<br/>                       |
+| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/>                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

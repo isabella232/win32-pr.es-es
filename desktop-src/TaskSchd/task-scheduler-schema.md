@@ -11,12 +11,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7b03744b864aea8903cb77482d2ce377186266be5ad160c2c037f996d7b5ed91
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 143633fbc983a4ff828c3406b5015995b4bc7842
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120080375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253401"
 ---
 # <a name="task-scheduler-schema"></a>Programador de tareas esquema
 

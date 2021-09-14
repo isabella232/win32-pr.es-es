@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e77555094625bfc6a31a0527fc3223a124b012e72c28ea76e5774de289d63391
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3534eac01a6769e090c8c808f16cc6ad5c6b84c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361426"
 ---
 # <a name="cbaseallocatorfree-method"></a>CBaseAllocator.Free (método)
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de [**llamar al método Decommit,**](cbaseallocator-decommit.md) el asignador llama a este método cuando libera el último ejemplo multimedia. La clase derivada debe implementar este método.
 
@@ -59,7 +59,7 @@ Después de [**llamar al método Decommit,**](cbaseallocator-decommit.md) el asi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

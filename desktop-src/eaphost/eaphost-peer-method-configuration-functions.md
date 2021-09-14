@@ -4,12 +4,12 @@ description: Obtenga información sobre las funciones de configuración del mét
 ms.assetid: ba5c90b2-5185-4810-84a2-d08e62e8105c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 355784647be6c6e13d4110303d544670e80ce09e7f9f99be02b662205e8ead82
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3081f8a54482c48c7c506a25bfaf7f18cf3193ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118785200"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252921"
 ---
 # <a name="eaphost-peer-method-configuration-functions"></a>Funciones de configuración del método del mismo nivel eaphost
 
@@ -40,7 +40,7 @@ Las funciones de configuración de EAP Peer Method API son las siguientes.
 
 <dl> <dt>
 
-[Funciones del método del mismo nivel eaphost Run-Time](eaphost-peer-method-run-time-functions.md)
+[Funciones del método del mismo nivel EAPHost Run-Time](eaphost-peer-method-run-time-functions.md)
 </dt> </dl>
 
  

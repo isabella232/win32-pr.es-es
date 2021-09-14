@@ -5,11 +5,11 @@ title: Técnicas de mitigación de amenazas
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 315a79ec1db48a16de858d655bd1550fa1458720
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122482451"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253611"
 ---
 # <a name="threat-mitigation-techniques"></a>Técnicas de mitigación de amenazas
 
@@ -47,7 +47,7 @@ Las siguientes técnicas de mitigación de amenazas usan una o varias de las cua
 
 Cuando permita que el usuario configure una contraseña, fuerce el uso de contraseñas seguras. Por ejemplo, requerir que las contraseñas sean de una longitud mínima, como ocho caracteres o más. Las contraseñas también deben incluir letras mayúsculas y minúsculas, números y otros caracteres de teclado, como el signo de dólar ($), el signo de exclamación (!) o mayor que (>).
 
-Después de obtener una contraseña, úsela rápidamente (con el menos código posible) y, a continuación, borre todos los vestigios de la contraseña. Esto minimiza el tiempo disponible para que un intrusista "trapee" la contraseña. El intercambio con esta técnica es la frecuencia con la que se debe recuperar la contraseña del usuario. sin embargo, el principio debe emplearse siempre que sea posible. Para obtener información sobre cómo obtener correctamente contraseñas, vea [Asking the User for Credentials](asking-the-user-for-credentials.md).
+Después de obtener una contraseña, úsela rápidamente (con el menos código posible) y, a continuación, borre todos los vestigios de la contraseña. Esto minimiza el tiempo disponible para que un intrusista "atrase" la contraseña. El intercambio con esta técnica es la frecuencia con la que se debe recuperar la contraseña del usuario. sin embargo, el principio debe emplearse siempre que sea posible. Para obtener información sobre cómo obtener correctamente contraseñas, vea [Asking the User for Credentials](asking-the-user-for-credentials.md).
 
 Evite proporcionar opciones de interfaz de usuario "recordar mi contraseña". A menudo, los usuarios exigirán tener esta opción. Si debe proporcionarla, como mínimo, asegúrese de que la contraseña se guarda de forma segura. Para obtener información, vea la sección Almacenamiento de contraseñas, más adelante en este tema.
 
@@ -55,7 +55,7 @@ Limitar los intentos de entrada de contraseña. Después de un número determina
 
 ## <a name="storing-passwords"></a>Almacenamiento de contraseñas
 
-No almacene nunca las contraseñas en texto no cifrado (sin cifrar). El cifrado de contraseñas aumenta significativamente su seguridad. Para obtener información sobre cómo almacenar contraseñas cifradas, vea [**CryptProtectData**](/windows/desktop/api/dpapi/nf-dpapi-cryptprotectdata). Para obtener información sobre el cifrado de contraseñas en memoria, vea [**CryptProtectMemory**](/windows/desktop/api/dpapi/nf-dpapi-cryptprotectmemory). Almacene las contraseñas en el menor número de lugares posible. Entre más lugares se almacene una contraseña, mayor será la posibilidad de que un intruso la encuentre. Nunca almacene contraseñas en una página web o en un archivo basado en web. El almacenamiento de contraseñas en una página web o en un archivo basado en web permite que se comprometan fácilmente.
+Nunca almacene contraseñas en texto no cifrado (sin cifrar). El cifrado de contraseñas aumenta significativamente su seguridad. Para obtener información sobre cómo almacenar contraseñas cifradas, vea [**CryptProtectData**](/windows/desktop/api/dpapi/nf-dpapi-cryptprotectdata). Para obtener información sobre el cifrado de contraseñas en memoria, vea [**CryptProtectMemory**](/windows/desktop/api/dpapi/nf-dpapi-cryptprotectmemory). Almacene las contraseñas en el menor número de lugares posible. Entre más lugares se almacene una contraseña, mayor será la posibilidad de que un intruso la encuentre. Nunca almacene contraseñas en una página web o en un archivo basado en web. El almacenamiento de contraseñas en una página web o en un archivo basado en web permite que se comprometan fácilmente.
 
 Después de cifrar una contraseña y almacenarla, use ACL seguras para limitar el acceso al archivo. Como alternativa, puede almacenar contraseñas y claves de cifrado en dispositivos extraíbles. El almacenamiento de contraseñas y claves de cifrado en un medio extraíble, como una tarjeta inteligente, ayuda a crear un sistema más seguro. Después de recuperar una contraseña para una sesión determinada, se puede quitar la tarjeta, lo que elimina la posibilidad de que un intruso pueda obtener acceso a ella.
 

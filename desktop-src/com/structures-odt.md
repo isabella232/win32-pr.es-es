@@ -1,24 +1,24 @@
 ---
-title: Estructuras (OLE y Transferencia de datos)
-description: Las siguientes estructuras se utilizan para implementar documentos compuestos y realizar la transferencia de datos entre aplicaciones.
+title: Estructuras (OLE y transferencia de datos)
+description: Las estructuras siguientes se usan para implementar documentos compuestos y realizar la transferencia de datos entre aplicaciones.
 ms.assetid: 76fef2dd-4cfb-4526-a1e0-8e3218aa6145
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fa9dde7f81d388943dbc05b2d38065be262d7f29
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104078714"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253155"
 ---
-# <a name="structures-ole-and-data-transfer"></a>Estructuras (OLE y Transferencia de datos)
+# <a name="structures-ole-and-data-transfer"></a>Estructuras (OLE y transferencia de datos)
 
-Las siguientes estructuras se utilizan para implementar documentos compuestos y realizar la transferencia de datos entre aplicaciones.
+Las estructuras siguientes se usan para implementar documentos compuestos y realizar la transferencia de datos entre aplicaciones.
 
 -   [**DVASPECTINFO**](/windows/win32/api/ocidl/ne-ocidl-dvaspectinfoflag)
 -   [**DVEXTENTINFO**](/windows/win32/api/ocidl/ns-ocidl-dvextentinfo)
 -   [**DVTARGETDEVICE**](/windows/win32/api/objidl/ns-objidl-dvtargetdevice)
--   [**FORMATETC@**](/windows/desktop/api/ObjIdl/nn-objidl-ienumformatetc)
+-   [**FORMATETC**](/windows/desktop/api/ObjIdl/nn-objidl-ienumformatetc)
 -   [**OBJECTDESCRIPTOR**](/windows/win32/api/oleidl/ns-oleidl-objectdescriptor)
 -   [**OLECMD**](/windows/desktop/api/DocObj/ns-docobj-olecmd)
 -   [**OLECMDTEXT**](/windows/desktop/api/DocObj/ns-docobj-olecmdtext)

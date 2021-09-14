@@ -4,12 +4,12 @@ ms.assetid: 4ED8B6BC-E52D-4DE9-A9AE-1FDF61A978A9
 title: WinHttpAutoLogonLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79fe6c5fe37d44cb74cb0257d3296917905a41a2dc09f84bc13a716a3ee1c1d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7760faa94e24b7fe5b33717c504b03e4de42c0aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253976"
 ---
 # <a name="winhttpautologonlevel"></a>WinHttpAutoLogonLevel
 
@@ -21,7 +21,7 @@ Puede establecer este valor en **L** para WINHTTP AUTOLOGON SECURITY LEVEL LOW ,
 
 ## <a name="registry-key"></a>Clave del Registro
 
-**HKEY \_ Local \_ Machine** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
 
 ## <a name="data-type"></a>Tipo de datos
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9057d1ff733c30da3b3b0d7e960607eadd033dcee0b26994478c6da9156a183e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3a88f0c1dae54cb5d9be1e4e9ad3e9677bdd958
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954794"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254451"
 ---
 # <a name="cbaserenderersendrepaint-method"></a>Método CBaseRenderer.SendRepaint
 
@@ -44,13 +44,13 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método envía un [**evento \_ EC REPAINT**](ec-repaint.md) al administrador de gráficos de filtros si se cumplen las condiciones siguientes:
 
 -   El pin de entrada está conectado.
 -   El filtro no vacía los datos.
--   No se alcanzó el final de la secuencia.
+-   No se alcanzó el final del flujo.
 -   La [**marca CBaseRenderer::m \_ bAbort**](cbaserenderer-m-babort.md) es **FALSE.**
 -   La [**marca CBaseRenderer::m \_ bRepaintStatus**](cbaserenderer-m-brepaintstatus.md) es **TRUE.**
 

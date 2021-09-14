@@ -4,12 +4,12 @@ ms.assetid: 840656f9-ea85-49e7-8842-f779228c30d6
 title: Trabajar con características y componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18b77fd93a9f2ee8181020f6c436d7e61e09a0f6d7858f0159fb70a7c7d8eeef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d579b82dfb312c1588b500d8959fad8a09e44753
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145178"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253964"
 ---
 # <a name="working-with-features-and-components"></a>Trabajar con características y componentes
 

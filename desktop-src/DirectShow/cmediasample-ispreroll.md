@@ -1,5 +1,5 @@
 ---
-description: El método IsPreroll determina si este ejemplo es un ejemplo de preinselección. No se debe mostrar un ejemplo de inscripción previa. Este método implementa el método IMediaSample::IsPreroll.
+description: El método IsPreroll determina si este ejemplo es un ejemplo de inscripción previa. No se debe mostrar un ejemplo de inscripción previa. Este método implementa el método IMediaSample::IsPreroll.
 ms.assetid: fbcf7aab-473c-49c1-9a8f-4a619f4e28f4
 title: Método CMediaSample.IsPreroll (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7f4c4b192d72c5edcfdb9c318f7420ca6ae5797446ec4f99cb6871aad2abd241
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b40cf8fd6a1adb5186309f47da0f0ae3dc30412a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119634645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254420"
 ---
 # <a name="cmediasampleispreroll-method"></a>Método CMediaSample.IsPreroll
 
@@ -42,9 +42,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S OK si el ejemplo es un ejemplo de inscripción previa y S FALSE en caso \_ \_ contrario.
+Devuelve S \_ OK si el ejemplo es un ejemplo de inscripción previa y S FALSE en caso \_ contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La variable [**miembro CMediaSample::m \_ dwFlags**](cmediasample-m-dwflags.md) especifica esta propiedad.
 

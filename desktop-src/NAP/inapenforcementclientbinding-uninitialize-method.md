@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 613646eb169ab12c788cc294ab012962606a77b5f9fe5dfc8c041e6a4ad6fa35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4132ff1a498a598483758623a588fa26e8b75021
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118940159"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362174"
 ---
 # <a name="inapenforcementclientbindinguninitialize-method"></a>INapEnforcementClientBinding::Uninitialize (Método)
 
@@ -61,13 +61,13 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-NapAgent bloquea el procesamiento adicional hasta que se completen todas las llamadas existentes en las interfaces [**INapEnforcementClientBinding**](inapenforcementclientbinding.md) e [**INapEnforcementClientCallback.**](inapenforcementclientcallback.md) Al final de esta llamada, NapAgent libera todas sus referencias en los punteros COM del cliente de cumplimiento.
+NapAgent bloquea el procesamiento adicional hasta que se completan todas las llamadas existentes en las interfaces [**INapEnforcementClientBinding**](inapenforcementclientbinding.md) e [**INapEnforcementClientCallback.**](inapenforcementclientcallback.md) Al final de esta llamada, NapAgent libera todas sus referencias en los punteros COM del cliente de cumplimiento.
 
-Antes de llamar a esta función, el ejecutor debe llamar a [**INapEnforcementClientBinding::NotifyConnectionStateDown**](inapenforcementclientbinding-notifyconnectionstatedown-method.md) en todas sus conexiones activas, por lo que se puede notificar a los SHA si alguno de sus SoH-Requests estaban huérfanos.
+Antes de llamar a esta función, el ejecutor debe llamar a [**INapEnforcementClientBinding::NotifyConnectionStateDown**](inapenforcementclientbinding-notifyconnectionstatedown-method.md) en todas sus conexiones activas, de modo que se pueda notificar a los SHA si alguno de sus SoH-Requests estaban huérfanos.
 
-El cliente de cumplimiento debe llamar al método [**INapEnforcementClientBinding::Initialize**](inapenforcementclientbinding-initialize-method.md) antes de llamar a este o a cualquier otro método de la interfaz [**INapEnforcementClientBinding.**](inapenforcementclientbinding.md)
+El cliente de cumplimiento debe llamar al método [**INapEnforcementClientBinding::Initialize**](inapenforcementclientbinding-initialize-method.md) antes de llamar a este o a cualquier otro método de la [**interfaz INapEnforcementClientBinding.**](inapenforcementclientbinding.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,13 +77,13 @@ El cliente de cumplimiento debe llamar al método [**INapEnforcementClientBindin
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

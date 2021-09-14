@@ -4,12 +4,12 @@ description: Atributos de campo (atributos aplicados a campos de una matriz, est
 ms.assetid: 4508479d-ff0a-4698-94aa-588837032067
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e6d14bab0cf14710e91fceb466111c4af32d3d2828e4b7bdacc9494fa27b7d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79b9421ddf4ea7e7bc4c70af0ecd826e2681875d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118930004"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361951"
 ---
 # <a name="field-attributes"></a>Atributos de los campos
 

@@ -4,12 +4,12 @@ description: Los controladores ligeros del lado cliente permiten crear controlad
 ms.assetid: b712237c-55d7-4f52-9cf6-19c6e5fb3182
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a868b6152a13b79bc4475dca14810821065ddfe5c3590ed4e20687bc6d3614b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f1e8df5be24e8773a660a4d0208b27a2f585e32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118103672"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253101"
 ---
 # <a name="the-lightweight-client-side-handler"></a>Controlador de Client-Side ligero
 

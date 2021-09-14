@@ -4,12 +4,12 @@ ms.assetid: df2fe03b-2f5f-4958-926f-17e3a025a9b5
 title: Interpretación de códigos de error
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5b15dfbfd183178132e6917aac04aab46c5ce90fac0fb59cdbb52cc30143159
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 659ee7def9feff50d375a07ab201e1cca25bffd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119990886"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361697"
 ---
 # <a name="interpreting-error-codes"></a>Interpretación de códigos de error
 
@@ -17,7 +17,7 @@ Después de determinar qué aplicación es el origen de un problema, debe averig
 
 En Microsoft Visual C++, los valores correctos, de advertencia y de error se devuelven mediante un número de 32 bits conocido como **HRESULT**. Para obtener una lista de valores **HRESULT** definidos por el sistema, consulte el archivo de encabezado Winerror.h incluido con el SDK Windows. Este archivo incluye todos los códigos de error y descripciones de COM+. Para obtener más información sobre **los valores HRESULT,** vea [Control de errores.](/windows/desktop/com/error-handling-in-com)
 
-En el lenguaje Java, se produce una instancia de com.ms.com.ComFailException para indicar un error, donde el objeto ComFailException especifica un **HRESULT**. Una instancia de com.ms.com.ComSuccessException indica que se ha hecho correctamente con un valor devuelto de False. Para obtener información sobre cómo interpretar estas excepciones, vea la documentación de Microsoft Visual J++.
+En el lenguaje Java, se inicia una instancia de com.ms.com.ComFailException para indicar un error, donde el objeto ComFailException especifica un **HRESULT**. Una instancia de com.ms.com.ComSuccessException indica que se ha hecho correctamente con un valor devuelto de False. Para obtener información sobre cómo interpretar estas excepciones, vea la documentación de Microsoft Visual J++.
 
 > [!Note]  
 > Los procesos del servidor de aplicaciones COM+ que hospedan objetos de Visual J++ no se inactivarán (incluso con cero objetos activos) a menos que desactive la depuración JIT en el IDE de VJ6. Para obtener información sobre cómo hacerlo, vea la documentación de Visual J++.
@@ -82,7 +82,7 @@ En la tabla siguiente se proporcionan descripciones de códigos de error comunes
 | COMADMIN \_ E \_ CANTCOPYFILE<br/>                          | Error al copiar el archivo.<br/>                                                                                                                                                                   |
 | COMADMIN \_ E \_ CLSIDORIIDMISMATCH<br/>                    | Los CLID o IID del archivo de aplicación no coinciden con los archivos DLL correspondientes.<br/>                                                                                                                                      |
 | COMADMIN \_ E \_ COMP \_ MOVE \_ BAD \_ DEST<br/>                 | Error al mover el componente porque la aplicación de destino ya no existe.<br/>                                                                                                                       |
-| COMADMIN \_ E \_ COMP \_ MOVE \_ LOCKED<br/>                    | No se ha permitido el traslado del componente porque la aplicación de origen o de destino es una aplicación del sistema o está bloqueada actualmente contra los cambios.<br/>                                                |
+| COMADMIN \_ E \_ COMP \_ MOVE \_ LOCKED<br/>                    | No se ha permitido el traslado del componente porque la aplicación de origen o de destino es una aplicación del sistema o está bloqueada actualmente en caso de cambios.<br/>                                                |
 | COMADMIN \_ E \_ COMPFILE \_ BADTLB<br/>                      | No se pudo cargar la biblioteca de tipos.<br/>                                                                                                                                                                 |
 | COMADMIN \_ E \_ COMPFILE \_ CLASSNOTAVAIL<br/>               | El archivo DLL no admite los componentes enumerados en la biblioteca de tipos.<br/>                                                                                                                                   |
 | COMADMIN \_ E \_ COMPFILE \_ DOESNOTEXIST<br/>                | Este archivo no existe.<br/>                                                                                                                                                                             |
@@ -99,7 +99,7 @@ En la tabla siguiente se proporcionan descripciones de códigos de error comunes
 | COMADMIN \_ E \_ LIB \_ APP \_ PROXY \_ INCOMPATIBLE<br/>         | Las aplicaciones de biblioteca y los servidores proxy de aplicación son incompatibles. Este error se devuelve cuando se intenta exportar un proxy de aplicación y la propiedad de activación de la aplicación es una biblioteca. <br/> |
 | COMADMIN \_ E \_ NOREGISTRYCLSID<br/>                       | Falta el CLSID del componente o está dañado.<br/>                                                                                                                                                          |
 | COMADMIN \_ E \_ NOSERVERSHARE<br/>                         | No hay ningún recurso compartido de archivos de servidor disponible.<br/>                                                                                                                                                                    |
-| COMADMIN \_ E \_ NOTCHANGEABLE<br/>                         | Se han deshabilitado los cambios realizados en este objeto y sus subelementos.<br/>                                                                                                                                        |
+| COMADMIN \_ E \_ NOTCHANGEABLE<br/>                         | Se han deshabilitado los cambios en este objeto y sus subelementos.<br/>                                                                                                                                        |
 | COMADMIN \_ E \_ NOTDELETEABLE<br/>                         | La función delete se ha deshabilitado para este objeto.<br/>                                                                                                                                                |
 | COMADMIN \_ E \_ NOTINREGISTRY<br/>                         | No se encontró el objeto en el Registro.<br/>                                                                                                                                                                     |
 | COMADMIN \_ E \_ NOUSER<br/>                                | Uno o varios usuarios no son válidos.<br/>                                                                                                                                                                      |
@@ -107,25 +107,25 @@ En la tabla siguiente se proporcionan descripciones de códigos de error comunes
 | FALTA EL ELEMENTO \_ PRIMARIO \_ DEL \_ OBJETO COMADMIN E \_<br/>               | Uno de los objetos que se insertan o actualizan no pertenece a una colección primaria válida.<br/>                                                                                                            |
 | COMADMIN \_ E \_ OBJECTERRORS<br/>                          | Se produjeron errores al acceder a uno o varios objetos. Para obtener más información, vea la [**colección ErrorInfo.**](errorinfo.md)<br/>                                                                               |
 | COMADMIN \_ E \_ OBJECTEXISTS<br/>                          | El objeto que está intentando agregar o cambiar de nombre ya existe.<br/>                                                                                                                                        |
-| COMADMIN \_ E \_ OBJECTINVALID<br/>                         | Faltan una o varias de las propiedades del objeto o no son válidas.<br/>                                                                                                                                        |
+| COMADMIN \_ E \_ OBJECTINVALID<br/>                         | Faltan una o varias propiedades del objeto o no son válidas.<br/>                                                                                                                                        |
 | COMADMIN \_ E \_ OBJECTNOTPOOLABLE<br/>                     | Este objeto no se puede agrupar.<br/>                                                                                                                                                                      |
-| COMADMIN \_ E \_ PROPERTYSAVEFAILED<br/>                    | Una o varias configuraciones de propiedad no son válidas o están en conflicto entre sí.<br/>                                                                                                                      |
+| COMADMIN \_ E \_ PROPERTYSAVEFAILED<br/>                    | Una o varias configuraciones de propiedades no son válidas o están en conflicto entre sí.<br/>                                                                                                                      |
 | COMADMIN \_ E \_ PROPERTY \_ OVERFLOW<br/>                    | El valor de propiedad es demasiado grande.<br/>                                                                                                                                                                      |
-| COMADMIN \_ E \_ REGFILE \_ DAÑADO<br/>                      | El archivo de registro está dañado.<br/>                                                                                                                                                                     |
+| COMADMIN \_ E \_ REGFILE \_ CORRUPT<br/>                      | El archivo de registro está dañado.<br/>                                                                                                                                                                     |
 | COMADMIN \_ E \_ REGISTERTLB<br/>                           | El sistema no pudo registrar la biblioteca de tipos.<br/>                                                                                                                                                   |
 | COMADMIN \_ E \_ REGISTRARFAILED<br/>                       | Se produjeron errores en el registrador de componentes.<br/>                                                                                                                                                     |
-| COMADMIN \_ E \_ REMOTEINTERFACE<br/>                       | Falta información de interfaz o se ha cambiado.<br/>                                                                                                                                                   |
+| COMADMIN \_ E \_ REMOTEINTERFACE<br/>                       | Falta o se cambia la información de la interfaz.<br/>                                                                                                                                                   |
 | COMADMIN \_ E REQUIERE UNA PLATAFORMA \_ \_ \_ DIFERENTE<br/>         | Esta operación no está habilitada en esta plataforma.<br/>                                                                                                                                                       |
-| EL ROL E DE COMADMIN \_ \_ NO \_ \_ \_ EXISTE<br/>                | Un rol asignado a un componente, interfaz o método no existe en la aplicación.<br/>                                                                                                               |
+| EL ROL \_ COMADMIN E \_ NO \_ \_ \_ EXISTE<br/>                | Un rol asignado a un componente, interfaz o método no existe en la aplicación.<br/>                                                                                                               |
 | COMADMIN \_ E \_ ROLEEXISTS<br/>                            | El rol ya existe.<br/>                                                                                                                                                                              |
 | COMADMIN \_ E \_ SERVICENOTINSTALLED<br/>                   | El servicio no está instalado.<br/>                                                                                                                                                                         |
-| SESIÓN \_ E DE \_ COMADMIN<br/>                               | No se admite la versión del catálogo de servidores.<br/>                                                                                                                                                          |
+| COMADMIN \_ E \_ SESSION<br/>                               | No se admite la versión del catálogo de servidores.<br/>                                                                                                                                                          |
 | COMADMIN \_ S \_ SOMEALREADYPAUSED<br/>                     | Uno o varios de los procesos de aplicación especificados ya estaban en pausa.<br/>                                                                                                                               |
 | COMADMIN \_ S \_ SOMEALREADYRUNNING<br/>                    | Uno o varios de los procesos de aplicación especificados ya se estaban ejecutando.<br/>                                                                                                                              |
 | COMADMIN \_ E \_ START \_ APP \_ NEEDS \_ COMPONENTS<br/>         | Para iniciar la aplicación, debe tener componentes en una aplicación.<br/>                                                                                                                                 |
-| COMADMIN \_ E \_ SVCAPP NO ES \_ \_ AGRUPABLE NI \_ \_ RECICLABLE<br/> | Es posible que las aplicaciones COM+ que se ejecutan como un servicio NT no se marquen como agrupadas o recicladas.<br/>                                                                                                               |
+| COMADMIN \_ E \_ SVCAPP \_ NOT \_ POOLABLE \_ OR \_ RECYCLABLE<br/> | Es posible que las aplicaciones COM+ que se ejecutan como un servicio NT no se marquen como agrupadas o recicladas.<br/>                                                                                                               |
 | COMADMIN \_ E \_ SYSTEMAPP<br/>                             | Esta operación no se puede realizar en la aplicación del sistema.<br/>                                                                                                                                         |
-| USUARIO COMADMIN \_ E \_ EN \_ \_ SET<br/>                         | Uno o varios usuarios ya están asignados a un conjunto de particiones local.<br/>                                                                                                                                      |
+| USUARIO \_ DE COMADMIN E \_ \_ EN \_ SET<br/>                         | Uno o varios usuarios ya están asignados a un conjunto de particiones local.<br/>                                                                                                                                      |
 | COMADMIN \_ E \_ USERPASSWDNOTVALID<br/>                    | La identidad o contraseña establecida en la aplicación no es válida.<br/>                                                                                                                                         |
 
 
@@ -136,13 +136,13 @@ En la tabla siguiente se proporcionan descripciones de códigos de error comunes
 
 <dl> <dt>
 
-[Aislamiento de errores y directiva de conmutación por error](fault-isolation-and-failfast-policy.md)
+[Aislamiento de errores y directiva de error](fault-isolation-and-failfast-policy.md)
 </dt> <dt>
 
 [Buscar el origen de un error](finding-the-source-of-an-error.md)
 </dt> <dt>
 
-[Cómo modifica COM+ los valores devueltos](how-com--modifies-return-values.md)
+[Cómo com+ modifica los valores devueltos](how-com--modifies-return-values.md)
 </dt> <dt>
 
 [Estrategias para controlar errores en COM+](strategies-for-handling-errors-in-com-.md)

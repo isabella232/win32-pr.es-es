@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5a1ffd021ac917a7aa1e12f3d3dc9c4a62ea1f883f126bca1d9c1300d335bdae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a91f0015756d2ccfb545c4039d67434eb6d3c403
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954984"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362542"
 ---
 # <a name="cbasereferenceclockgettime-method"></a>Método CBaseReferenceClock.GetTime
 
@@ -57,7 +57,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 | Código devuelto                                                                               | Descripción                                                 |
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | Argumento de puntero **NULL.**<br/>                       |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | **Argumento de** puntero NULL.<br/>                       |
 | <dl> <dt>**S \_ FALSE**</dt> </dl>   | El tiempo devuelto es el mismo que el valor anterior.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Correcto.<br/>                                         |
 
@@ -65,9 +65,9 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método llama al [**método CBaseReferenceClock::GetPrivateTime**](cbasereferenceclock-getprivatetime.md) para determinar la hora real del reloj. Si la hora del reloj es estrictamente mayor que el valor anterior, usa la `GetTime` hora del reloj y devuelve S \_ OK. De lo `GetTime` contrario, usa el valor anterior y devuelve S \_ FALSE. Por lo tanto, el reloj interno puede ejecutarse hacia atrás durante un breve período, sin hacer que el tiempo de referencia se ejecute hacia atrás. En su lugar, la hora de referencia se "detiene" en el mismo valor hasta que el reloj interno se activa.
+Este método llama al [**método CBaseReferenceClock::GetPrivateTime**](cbasereferenceclock-getprivatetime.md) para determinar la hora del reloj real. Si la hora del reloj es estrictamente mayor que el valor anterior, `GetTime` usa la hora del reloj y devuelve S \_ OK. De lo `GetTime` contrario, usa el valor anterior y devuelve S \_ FALSE. Por lo tanto, el reloj interno puede ejecutarse hacia atrás durante un breve período, sin hacer que el tiempo de referencia se ejecute hacia atrás. En su lugar, la hora de referencia se "detiene" en el mismo valor hasta que el reloj interno se activa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Este método llama al [**método CBaseReferenceClock::GetPrivateTime**](cbaseref
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

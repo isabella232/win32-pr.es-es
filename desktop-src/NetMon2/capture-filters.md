@@ -4,12 +4,12 @@ ms.assetid: 3edc265e-6788-4381-a06e-be833b14acc2
 title: Filtros de captura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54c44a4d44789ff1a874daedfdf1384cbec3920ca7c2e7187188da5179420b64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d15be29356b71dcbda96247443501aca2be4dc00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119064215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253923"
 ---
 # <a name="capture-filters"></a>Filtros de captura
 

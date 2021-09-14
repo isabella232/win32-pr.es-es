@@ -1,17 +1,17 @@
 ---
-title: referencia Interfaz de usuario elemento
+title: Interfaz de usuario de elementos
 description: En la tabla siguiente se enumeran los elementos de la interfaz de usuario proporcionados por el sistema proporcionados por Microsoft Active Accessibility.
 ms.assetid: c09c14bd-61c4-4d4a-895c-0eaa26be0998
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d18b4a69ce0bb017bc1528f9e66ba7aff43b24d535e1115973076882678b786
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e68ecc782f7a30bc7e6019ca4ef08774e8974da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117744971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253232"
 ---
-# <a name="user-interface-element-reference"></a>referencia Interfaz de usuario elemento
+# <a name="user-interface-element-reference"></a>Interfaz de usuario de elementos
 
 En la tabla siguiente se enumeran los elementos de la interfaz de usuario proporcionados por el sistema proporcionados por Microsoft Active Accessibility.
 

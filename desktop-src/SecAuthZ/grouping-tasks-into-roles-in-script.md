@@ -1,7 +1,7 @@
 ---
-description: En Administrador de autorización, un rol representa una categoría de usuarios y las tareas a las que están autorizados los usuarios.
+description: En el Administrador de autorización, un rol representa una categoría de usuarios y las tareas que dichos usuarios están autorizados a realizar.
 ms.assetid: a4981774-0f5c-4032-8a7d-d9ef44c76abe
-title: Agrupar tareas en roles en el script
+title: Agrupación de tareas en roles en script
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,17 +10,17 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: c84ec45bba8da9d76e2a4fe0b31324429374a74b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002752"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361845"
 ---
-# <a name="grouping-tasks-into-roles-in-script"></a>Agrupar tareas en roles en el script
+# <a name="grouping-tasks-into-roles-in-script"></a>Agrupación de tareas en roles en script
 
-En Administrador de autorización, un rol representa una categoría de usuarios y las tareas a las que están autorizados los usuarios. Las tareas se agrupan y se asignan a una definición de roles, que se representa mediante un objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) con su propiedad [**IsRoleDefinition**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_isroledefinition) establecida en **true**. La definición de roles se puede asignar a un objeto [**IAzRole**](/windows/desktop/api/Azroles/nn-azroles-iazrole) y, a continuación, se asignan usuarios o grupos de usuarios a ese objeto. Para obtener más información sobre tareas y roles, vea [roles](roles.md).
+En el Administrador de autorización, un rol representa una categoría de usuarios y las tareas que dichos usuarios están autorizados a realizar. Las tareas se agrupan y se asignan a una definición de rol, que se representa mediante un objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) con su [**propiedad IsRoleDefinition**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_isroledefinition) establecida en **True.** A continuación, la definición de rol se puede asignar a un objeto [**IAzRole**](/windows/desktop/api/Azroles/nn-azroles-iazrole) y, a continuación, los usuarios o grupos de usuarios se asignan a ese objeto. Para obtener más información sobre tareas y roles, vea [Roles](roles.md).
 
-En el ejemplo siguiente se muestra cómo asignar tareas a una definición de roles, crear un objeto de rol y asignar la definición de rol al objeto de rol. En el ejemplo se da por supuesto que hay un almacén de directivas XML con el nombre MyStore.xml en el directorio raíz de la unidad C, que este almacén contiene una aplicación denominada gasto y que esta aplicación contiene tareas denominadas enviar gastos y aprobar gastos.
+En el ejemplo siguiente se muestra cómo asignar tareas a una definición de rol, crear un objeto de rol y asignar la definición de rol al objeto de rol. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C, que este almacén contiene una aplicación denominada Expense y que esta aplicación contiene tareas denominadas Submit Expense y Approve Expense.
 
 
 ```VB

@@ -3,7 +3,7 @@ title: Función glCopyTexImage2D (Gl.h)
 description: La función glCopyTexImage2D copia píxeles del búfer de fotogramas en una imagen de textura bidimensional.
 ms.assetid: 4b9d7be6-054d-4590-b3f0-a2a670786c4b
 keywords:
-- Función glCopyTexImage2D OpenGL
+- Función GlCopyTexImage2D OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e91481e94d247f5572ac2a65093c4af825c720200aee6daf3e429fad2a70886
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 61d04a979e9bb026da904687506f3201d12c12c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118617218"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362091"
 ---
 # <a name="glcopyteximage2d-function"></a>Función glCopyTexImage2D
 
@@ -57,7 +57,7 @@ Destino al que se cambiarán los datos de la imagen. Debe tener el valor GL \_ T
 *level* 
 </dt> <dd>
 
-Número de nivel de detalle. El nivel 0 es la imagen base. El *nivel n* es la *enésima* imagen de reducción de mapa mip.
+Número de nivel de detalle. El nivel 0 es la imagen base. El *nivel n* es la imagen *de* reducción de mipmap n.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Formato interno y resolución de los datos de textura. Los valores 1, 2, 3 y 4 n
 | GL \_ LUMINANCE12 \_ ALPHA4  |        |        |        | 4      | 12     |        |
 | GL \_ LUMINANCE12 \_ ALPHA12 |        |        |        | 12     | 12     |        |
 | GL \_ LUMINANCE16 \_ ALPHA16 |        |        |        | 16     | 16     |        |
-| INTENSIDAD \_ DE GL            |        |        |        |        |        |        |
+| GL \_ INTENSITY            |        |        |        |        |        |        |
 | GL \_ INTENSITY4           |        |        |        |        |        | 4      |
 | GL \_ INTENSITY8           |        |        |        |        |        | 8      |
 | GL \_ INTENSITY12          |        |        |        |        |        | 12     |
@@ -162,21 +162,21 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *target* no era un valor aceptado.<br/>                                                                                                               |
-| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *level* era menor que cero o mayor que log2 *max,* donde *max* es el valor devuelto de GL \_ MAX TEXTURE \_ \_ SIZE.<br/>                               |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *target* no era un valor aceptado.<br/>                                                                                                               |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *level* era menor que cero o mayor que log2 *max*, donde *max* es el valor devuelto de GL \_ MAX TEXTURE \_ \_ SIZE.<br/>                               |
 | <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *border* no era cero o 1.<br/>                                                                                                                       |
-| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *width* era menor que cero, mayor que 2 + GL MAX TEXTURE SIZE, o el ancho no se puede representar como \_ \_ \_  2n + 2 \* *borde* para algún entero n .<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *width* era menor que cero, mayor que 2 + GL MAX TEXTURE SIZE, o el ancho no se puede representar como \_ \_ \_ 2n + 2  \* *borde* para algún entero *n*.<br/> |
 | <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/>                        |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-La **función glCopyTexImage2D** define una imagen de textura bidimensional mediante píxeles del búfer de fotogramas actual, en lugar de desde la memoria principal, como es el caso de [**glTexImage2D.**](glteximage2d.md)
+La **función glCopyTexImage2D** define una imagen de textura bidimensional con píxeles del búfer de fotogramas actual, en lugar de desde la memoria principal, como es el caso de [**glTexImage2D.**](glteximage2d.md)
 
-Con el nivel de mapa mip especificado con el nivel *,* las matrices de textura se definen como un rectángulo de píxeles con la esquina inferior izquierda ubicada en las coordenadas *x* e *y*, ancho igual al ancho *+* (2 borde ) y un alto igual a \*  *alto* + (2 \* *borde*). El formato interno de la matriz de texturas se especifica con el *parámetro internalFormat.*
+Con el nivel mipmap especificado con el nivel *,* las matrices de textura se definen como un rectángulo de píxeles con la esquina inferior izquierda ubicada en las coordenadas *x* e *y*, ancho igual al ancho *+* (2 borde) y un alto igual a \*  *alto* + (2 \* *borde*). El formato interno de la matriz de texturas se especifica con el *parámetro internalFormat.*
 
-La función **glCopyTexImage2D** procesa los píxeles de una fila de la misma manera que [**glCopyPixels,**](glcopypixels.md) salvo que antes de la conversión final de los píxeles, todos los valores de los componentes de píxeles se fijan al intervalo 0,1 y se convierten al formato interno de la textura para el almacenamiento en la matriz \[ \] de textura. La ordenación de píxeles se determina con las *coordenadas x* *e y inferiores* correspondientes a las coordenadas de textura *s* y *t* inferiores. Si alguno de los píxeles de una fila especificada del búfer de fotogramas actual está fuera de la ventana asociada al contexto de representación actual, sus valores no están definidos.
+La función **glCopyTexImage2D** procesa los píxeles de una fila de la misma manera que [**glCopyPixels,**](glcopypixels.md) salvo que antes de la conversión final de los píxeles, todos los valores del componente de píxel se fijan al intervalo 0,1 y se convierten al formato interno de la textura para el almacenamiento en la matriz de \[ \] texturas. El orden de los píxeles se determina con las *coordenadas x* *e y inferiores* correspondientes a las coordenadas de textura *s* y *t* inferiores. Si alguno de los píxeles de una fila especificada del búfer de fotogramas actual está fuera de la ventana asociada al contexto de representación actual, sus valores no están definidos.
 
 No se pueden incluir llamadas **a glCopyTexImage2D** en listas para mostrar.
 
@@ -185,7 +185,7 @@ No se pueden incluir llamadas **a glCopyTexImage2D** en listas para mostrar.
 
  
 
-El texto no tiene ningún efecto en el modo de índice de color. Las [**funciones glPixelStore**](glpixelstore-functions.md) y [**glPixelTransfer**](glpixeltransfer.md) afectan a las imágenes de textura exactamente de la manera en que afectan [**a glDrawPixels.**](gldrawpixels.md)
+El texturing no tiene ningún efecto en el modo de índice de color. Las [**funciones glPixelStore**](glpixelstore-functions.md) y [**glPixelTransfer**](glpixeltransfer.md) afectan a las imágenes de textura exactamente de la manera en que afectan [**a glDrawPixels.**](gldrawpixels.md)
 
 La función siguiente recupera información relacionada con **glCopyTexImage2D**:
 
@@ -205,7 +205,7 @@ La función siguiente recupera información relacionada con **glCopyTexImage2D**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dbf010482472077a876fcb8bf06fddd0d57ffa32e2ea1203c0401e56fd69b5d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9877300a2135b7082677193696cd2d11811ab3dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119081009"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361452"
 ---
 # <a name="changestartmode-method-of-the-win32_baseservice-class"></a>Método ChangeStartMode de la clase BaseService Win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeStartMode** modifica el modo de inicio de un objeto de servicio derivado de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ uint32 ChangeStartMode(
 *StartMode* \[ En\]
 </dt> <dd>
 
-Modo de inicio del Windows base. El valor predeterminado es "Automático".
+Modo de inicio del servicio Windows base. El valor predeterminado es "Automático".
 
 <dt>
 
@@ -356,14 +356,14 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**BaseService de Win32 \_**](win32-baseservice.md)
+[**Win32 \_ BaseService**](win32-baseservice.md)
 </dt> </dl>
 
  

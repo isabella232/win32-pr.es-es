@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8d90a6a76067421c3b23c0ec5124fa5da85e029e81d0307a2b4b66d01231fe56
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4bcadd4a4ad115a1a367db4f2a2f645eb6a4742c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119323035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361462"
 ---
-# <a name="changesecuritypermissionsex-method-of-the-win32_directory-class"></a>Método ChangeSecurityPermissionsEx de la clase Directory de Win32 \_
+# <a name="changesecuritypermissionsex-method-of-the-win32_directory-class"></a>Método ChangeSecurityPermissionsEx de la clase Directory de \_ Win32
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeSecurityPermissionsEx** cambia los permisos de seguridad para el archivo de entrada de directorio especificado en la ruta de acceso del objeto (este método es una versión extendida del [**método ChangeSecurityPermissions).**](changesecuritypermissions-method-in-class-win32-directory.md) Si el archivo lógico es un directorio, este método es recursivo y cambia los permisos de seguridad de todos los archivos y subdirectorios que contiene el directorio.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ uint32 ChangeSecurityPermissionsEx(
 *SecurityDescriptor* \[ En\]
 </dt> <dd>
 
-Expresión que se resuelve en una instancia de [**\_ SecurityDescriptor de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Este parámetro contiene nuevos permisos de seguridad para la instancia de [**Win32 \_ PageFile**](win32-pagefile.md).
+Expresión que se resuelve en una instancia de [**\_ SecurityDescriptor de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Este parámetro contiene nuevos permisos de seguridad para la instancia de [**\_ PageFile de Win32.**](win32-pagefile.md)
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ O bien
 
 <span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>
 
-<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**CAMBIO \_ INFORMACIÓN \_ DE \_ SEGURIDAD DEL** PROPIETARIO (1)
+<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**CAMBIO \_ INFORMACIÓN \_ DE SEGURIDAD DEL \_ PROPIETARIO** (1)
 
 
 </dt> <dd>
@@ -117,19 +117,19 @@ Nombre del archivo o directorio en el que se **ha fallado el método ChangeSecur
 
 </dd> <dt>
 
-*StartFileName* \[ en, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
-Denomina el archivo o directorio secundario que se usará como punto de partida para **ChangeSecurityPermissionsEx.** Normalmente, el *parámetro StartFileName* es el *parámetro StopFileName* que especifica el archivo o directorio donde se produjo un error de la llamada al método anterior. Si este parámetro es NULL, la operación se realiza en el archivo o directorio especificado en la **llamada a ExecMethod.** Este parámetro es opcional.
+Denomina el archivo o directorio secundario que se usará como punto de partida **para ChangeSecurityPermissionsEx.** Normalmente, el *parámetro StartFileName* es el *parámetro StopFileName* que especifica el archivo o directorio donde se produjo un error de la llamada al método anterior. Si este parámetro es NULL, la operación se realiza en el archivo o directorio especificado en la **llamada a ExecMethod.** Este parámetro es opcional.
 
 Si *se usa StartFileName,* *Recursive* también debe establecerse en true.
 
 </dd> <dt>
 
-*Recursivo* \[ en, opcional\]
+*Recursiva* \[ in, opcional\]
 </dt> <dd>
 
-Si **es true**, el cambio de propiedad se aplica de forma recursiva a los archivos y directorios del directorio especificado por la instancia de [**\_ LogicalFile de CIM.**](cim-logicalfile.md) En el caso de las instancias de archivo, se omite el parámetro de entrada *recursivo.* Este parámetro es opcional.
+Si **es true,** el cambio de propiedad se aplica de forma recursiva a los archivos y directorios del directorio especificado por la instancia [**de \_ LogicalFile de CIM.**](cim-logicalfile.md) En el caso de las instancias de archivo, se omite el parámetro de entrada *recursivo.* Este parámetro es opcional.
 
 </dd> </dl>
 
@@ -270,14 +270,14 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Directorio \_ Win32**](win32-directory.md)
+[**Directorio \_ win32**](win32-directory.md)
 </dt> </dl>
 
  

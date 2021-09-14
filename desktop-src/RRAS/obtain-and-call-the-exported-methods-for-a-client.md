@@ -4,12 +4,12 @@ description: El código de ejemplo siguiente muestra cómo obtener una lista de 
 ms.assetid: 55b2a03f-498c-4321-891b-747f4baea10d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c8ffc39ea210537ed2248f374e3898464cb2be560fe09ef93a8f3acbdc380ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d9610922f9b0bffcacf477887103fea47e75de0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117790068"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253695"
 ---
 # <a name="obtain-and-call-the-exported-methods-for-a-client"></a>Obtener y llamar a los métodos exportados para un cliente
 

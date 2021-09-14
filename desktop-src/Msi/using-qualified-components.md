@@ -4,12 +4,12 @@ ms.assetid: 45a05ab2-d951-415d-bdb8-cb0a73eb9967
 title: Uso de componentes calificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46c92d165bc06640efea4b8678eeaefa5eb04c36f1b47b6c965faeea00c66adb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d11233a91e8883d1a4151957d3e73d18ebdcff25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118622951"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254018"
 ---
 # <a name="using-qualified-components"></a>Uso de componentes calificados
 
@@ -32,7 +32,7 @@ En el ejemplo siguiente se muestra cómo se crea la categoría "Plantillas de FA
 
 
 
-| Componentid                  | Qualifier | AppData             | Característica\_   | Componente\_    |
+| Componentid                  | Calificador: | AppData             | Característica\_   | Componente\_    |
 |------------------------------|-----------|---------------------|-------------|----------------|
 | {GUID de categoría de plantilla de FAX} | 3082      | Plantilla en inglés de EE. UU. | FAXTemplate | FAXTemplateENU |
 |                              | 1041      | Plantilla japonesa   | FAXTemplate | FAXTemplateTEMPLATETEMPLATEN |

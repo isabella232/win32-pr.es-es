@@ -13,27 +13,27 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: c3e07c771a34e89cfbcbba5695450e195ef55482e0a27bee008f3ea8251bf8bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34c0800874dc9380b8c9034df2867fc3d1fb578d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119879875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253527"
 ---
 # <a name="attribute-object"></a>Attribute, objeto
 
-\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use [**la clase CryptographicAttributeObject**](/dotnet/api/system.security.cryptography.cryptographicattributeobject?view=dotnet-plat-ext-3.1&preserve-view=true) en el espacio [**de nombres System.Security.Cryptography.**](/previous-versions/windows/)\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use [**la clase CryptographicAttributeObject en**](/dotnet/api/system.security.cryptography.cryptographicattributeobject?view=dotnet-plat-ext-3.1&preserve-view=true) el espacio de nombres [**System.Security.Cryptography.**](/previous-versions/windows/)\]
 
 El **objeto Attribute** representa un único atributo autenticado.
 
 ## <a name="when-to-use"></a>Cuándo se usa
 
-El **objeto Attribute** se usa para realizar las siguientes tareas:
+El **objeto Attribute** se usa para realizar las tareas siguientes:
 
 -   Establezca o recupere el nombre CAPICOM del atributo.
 -   Establezca o recupere el valor del atributo, como la hora de firma, el nombre del documento firmado o una descripción del documento firmado.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto Attribute** tiene estos tipos de miembros:
 
@@ -47,14 +47,14 @@ El **objeto Attribute** tiene estas propiedades.
 
 | Propiedad                                    | Tipo de acceso           | Descripción                                                                                   |
 |:--------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------|
-| [**Nombre**](attribute-name.md)<br/>   | Lectura/escritura<br/> | Establece o recupera el nombre CAPICOM del atributo. Esta es la propiedad predeterminada.<br/> |
-| [**Value**](attribute-value.md)<br/> | Lectura/escritura<br/> | Establece o recupera el valor del atributo.<br/>                                      |
+| [**Nombre**](attribute-name.md)<br/>   | Lectura y escritura<br/> | Establece o recupera el nombre CAPICOM del atributo. Esta es la propiedad predeterminada.<br/> |
+| [**Value**](attribute-value.md)<br/> | Lectura y escritura<br/> | Establece o recupera el valor del atributo.<br/>                                      |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se **puede crear** el objeto Attribute y es seguro para el scripting. El ProgID del **objeto Attribute** es CAPICOM. Attribute.1.
 
@@ -71,11 +71,11 @@ Se **puede crear** el objeto Attribute y es seguro para el scripting. El ProgID 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objetos criptografía**](cryptography-objects.md)
+[**Objetos de criptografía**](cryptography-objects.md)
 </dt> </dl>
 
  

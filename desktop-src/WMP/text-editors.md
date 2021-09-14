@@ -9,12 +9,12 @@ keywords:
 - Editores de texto en archivos de definición de máscara
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f105b1de8564d5c455aa7ae6c13b726a228710e707ac4e9b467fa215ce6c22d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 60518a3ec1d9a96197b2e57acb16002fa8e44197
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118118365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253275"
 ---
 # <a name="text-editors"></a>Editores de texto
 

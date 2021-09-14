@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e4664c715ee536426fad246ef0cf526d8b6e4461637c8915fe17bec796e826e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe512ac4443f670ac73964a422bd9606d903055a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361546"
 ---
 # <a name="apitrymoveprevious-method"></a>Método Api.TryMovePrevious
 
@@ -81,7 +81,7 @@ public static bool TryMovePrevious(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si el traslado se ha realizado correctamente.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

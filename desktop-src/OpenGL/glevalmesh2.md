@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75d5f1a16b1ceda2c13f24a779032b0e920d364db46167a9dc02ca2b27277262
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 531e9f1f6288116d052c728654cd2cf03f38550a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118616111"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253803"
 ---
 # <a name="glevalmesh2-function"></a>Función glEvalMesh2
 
@@ -61,7 +61,7 @@ Primer valor entero para la variable de dominio de cuadrícula i.
 *i2* 
 </dt> <dd>
 
-Último valor entero de la variable de dominio de cuadrícula i.
+Último valor entero para la variable de dominio de cuadrícula i.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Primer valor entero para la variable de dominio de cuadrícula j.
 *j2* 
 </dt> <dd>
 
-Último valor entero de la variable de dominio de cuadrícula j.
+Último valor entero para la variable de dominio de cuadrícula j.
 
 </dd> </dl>
 
@@ -91,14 +91,14 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | Indica que *el modo* no es un valor aceptado. <br/>                                                                            |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | Indica que *el modo* no es un valor aceptado. <br/>                                                                            |
 | <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). <br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-Use [**glMapGrid**](glmapgrid-functions.md) y [**glEvalMesh**](glevalmesh-functions.md) conjuntamente para generar y evaluar eficazmente una serie de valores de dominio de mapa espaciados uniformemente. La **función glEvalMesh** pasa por el dominio entero de una cuadrícula unidimensional o bidimensional, cuyo intervalo es el dominio de los mapas de evaluación especificados por [**glMap1**](glmap1.md) y [**glMap2.**](glmap2.md) El parámetro mode determina si los vértices resultantes están conectados como puntos, líneas o polígonos rellenos.
+Use [**glMapGrid**](glmapgrid-functions.md) y [**glEvalMesh**](glevalmesh-functions.md) conjuntamente para generar y evaluar eficazmente una serie de valores de dominio de mapa espaciados uniformemente. La **función glEvalMesh** atraviesa el dominio entero de una cuadrícula unidimensional, cuyo intervalo es el dominio de los mapas de evaluación especificados por [**glMap1**](glmap1.md) y [**glMap2.**](glmap2.md) El parámetro mode determina si los vértices resultantes están conectados como puntos, líneas o polígonos rellenos.
 
 En el caso bidimensional, **glEvalMesh2**, let
 
@@ -106,7 +106,7 @@ En el caso bidimensional, **glEvalMesh2**, let
 
 ? v = (v2 v1)/m,
 
-donde n, u1, u2, m, v1 y v2 son los argumentos de la función [**glMapGrid2 más**](glmapgrid-functions.md) reciente. A continuación, *si el modo* es GL \_ FILL, **glEvalMesh2** equivale a:
+donde n, u1, u2, m, v1 y v2 son los argumentos de la función [**glMapGrid2**](glmapgrid-functions.md) más reciente. A continuación, *si el modo* es GL \_ FILL, **glEvalMesh2** equivale a:
 
 for (j = j1; j < j2; j += 1)
 
@@ -184,11 +184,11 @@ for (i = i1; i <= i2; i += 1)
 
 [**glEnd**](glend.md)( );
 
-En los tres casos, los únicos requisitos numéricos absolutos son que si i = n, ¿entonces el valor calculado a partir de i? u + u1 es exactamente u2, y si j = m, ¿entonces el valor calculado a partir de j? v + v1 es exactamente v2. Las siguientes funciones recuperan información relacionada con **glEvalMesh**:
+En los tres casos, los únicos requisitos numéricos absolutos son que, si i = n, el valor calculado a partir de i? u + u1 es exactamente u2 y, si j = m, ¿el valor calculado a partir de j? v + v1 es exactamente v2. Las siguientes funciones recuperan información relacionada **con glEvalMesh**:
 
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP1 \_ GRID \_ DOMAIN
 
-[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP2 \_ GRID \_ DOMAIN
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ MAP2 \_ GRID \_ DOMAIN
 
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP1 \_ GRID \_ SEGMENTS
 

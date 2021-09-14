@@ -4,18 +4,18 @@ description: Porte a OpenGL
 ms.assetid: 6799e10b-2f7c-4516-92ea-43667784f8e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dc6b5d32e39958fbd97c5e6aecf854be6833b5926ef58015f668162fc61f6ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f8efd2a34ac5d7fb6fc52aef3f24a556712b2c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119888265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362040"
 ---
 # <a name="porting-to-opengl"></a>Porte a OpenGL
 
-OpenGL está diseñado para ofrecer compatibilidad entre hardware y sistemas operativos. Este diseño facilita a los programadores el puerto de programas OpenGL de un sistema a otro. Aunque cada sistema operativo tiene requisitos únicos, gran parte del código OpenGL de los programas actuales se puede usar tal y como está. Para portabilidad de la aplicación OpenGL a Microsoft Windows, tendrá que modificar los programas para que funcionen con los Windows de ventana.
+OpenGL está diseñado para la compatibilidad entre hardware y sistemas operativos. Este diseño facilita a los programadores el puerto de programas OpenGL de un sistema a otro. Aunque cada sistema operativo tiene requisitos únicos, gran parte del código OpenGL de los programas actuales se puede usar tal y como está. Para portabilidad de la aplicación OpenGL a Microsoft Windows, tendrá que modificar los programas para que funcionen con los Windows de ventana.
 
-En general, las aplicaciones se porte a OpenGL Windows desde una de estas dos plataformas:
+En general, las aplicaciones se porte a OpenGL Windows desde una de las dos plataformas:
 
 -   Aplicaciones OpenGL desarrolladas para el sistema de ventanas X y la biblioteca X (Xlib)
 -   Aplicaciones DE IRIS GL

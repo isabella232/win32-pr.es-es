@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ec0ffac68119f6f2080ef6ca96ec63fbd35176d3541464a89b6c31f4941b4c7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c11ae41273cba5bd050a62ea330cef9da0647769
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362080"
 ---
 # <a name="gldeletelists-function"></a>Función glDeleteLists
 
@@ -51,7 +51,7 @@ Nombre entero de la primera lista para mostrar que se eliminará.
 *range* 
 </dt> <dd>
 
-Número de listas para mostrar que se eliminarán.
+Número de listas de visualización que se eliminarán.
 
 </dd> </dl>
 
@@ -72,11 +72,11 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función glDeleteLists** hace que se elimine un grupo contiguo de listas para mostrar. El *parámetro list* es el nombre de la primera lista para mostrar que se va a eliminar y *el* intervalo es el número de listas para mostrar que se van a eliminar. Se eliminan todas las *listas para mostrar d* con *el* intervalo de  =    =  *lista*  +  *d :* 1.
+La **función glDeleteLists** hace que se elimine un grupo contiguo de listas para mostrar. El *parámetro* list es el nombre de la primera lista para mostrar que se va a eliminar y *el* intervalo es el número de listas para mostrar que se van a eliminar. Se eliminan todas las *listas de* visualización d *con el* intervalo de lista d de la lista d :  =    =    +   1.
 
-Se liberan todas las ubicaciones de almacenamiento asignadas a las listas de presentación especificadas y los nombres están disponibles para su reutilización más adelante. Los nombres dentro del intervalo que no tienen una lista de visualización asociada se omiten. Si *range* es cero, no ocurre nada.
+Se liberan todas las ubicaciones de almacenamiento asignadas a las listas de presentación especificadas y los nombres están disponibles para reutilizarse más adelante. Los nombres dentro del intervalo que no tienen una lista de presentación asociada se omiten. Si *el intervalo* es cero, no ocurre nada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,7 +92,7 @@ Se liberan todas las ubicaciones de almacenamiento asignadas a las listas de pre
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

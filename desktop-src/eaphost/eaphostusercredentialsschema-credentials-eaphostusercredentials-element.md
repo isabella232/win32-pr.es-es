@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1e47e63dd6c29d4fbd85111cc5821688610d72c3f2858a371c392e16bee75207
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 043b82d5fb1ebc89f454ff6680672bda19e1c01e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252885"
 ---
 # <a name="credentials-eaphostusercredentials-element"></a>Elemento Credentials (EapHostUserCredentials)
 
-El **elemento Credentials (EapHostUserCredentials)** se usa cuando la configuración del método está en formato de texto XML en lugar de blob binario.
+El **elemento Credentials (EapHostUserCredentials)** se usa cuando la configuración del método está en formato de texto XML en lugar de un blob binario.
 
 ``` syntax
 <xs:element name="Credentials"
@@ -44,7 +44,7 @@ El **elemento Credentials** se define mediante el elemento [**EapHostUserCredent
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ El **elemento Credentials** se define mediante el elemento [**EapHostUserCredent
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema eaphostusercredentials](eaphostusercredentialsschema-schema.md)
+[esquema eaphostusercredentials](eaphostusercredentialsschema-schema.md)
 </dt> </dl>
 
  

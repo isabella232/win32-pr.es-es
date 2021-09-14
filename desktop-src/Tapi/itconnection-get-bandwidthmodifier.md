@@ -1,21 +1,21 @@
 ---
-description: El método get BandwidthModifier obtiene el modificador de ancho de banda, que es una sola palabra alfanumérica que da el significado de \_ la figura de ancho de banda. Los dos modificadores definidos son CT (total de conferencias) y AS (máximo específico de la aplicación).
+description: El método get BandwidthModifier obtiene el modificador de ancho de banda, que es una sola palabra alfanumérica que da el significado de \_ la figura de ancho de banda. Los dos modificadores definidos son CT (total de conferencia) y AS (máximo específico de la aplicación).
 ms.assetid: 29bf137d-e88b-437f-8bf1-824e335d47a1
 title: Método ITConnection::get_BandwidthModifier (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4624ee0dce757f3e7d94327ad52e4c45f57f364c6e1e6286d183b50ff15243d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e278edfbdc9ae56d89547c0bcf64f90fde77baf4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119406155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361781"
 ---
 # <a name="itconnectionget_bandwidthmodifier-method"></a>ItConnection::get \_ BandwidthModifier (método)
 
-\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El **método get \_ BandwidthModifier** obtiene el modificador de ancho de banda, que es una sola palabra alfanumérica que da el significado de la figura de ancho de banda. Los dos modificadores definidos son CT (total de conferencias) y AS (máximo específico de la aplicación).
+El **método get \_ BandwidthModifier** obtiene el modificador de ancho de banda, que es una sola palabra alfanumérica que da el significado de la figura de ancho de banda. Los dos modificadores definidos son CT (total de conferencia) y AS (máximo específico de la aplicación).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,7 +35,7 @@ HRESULT get_BandwidthModifier(
 *ppModifier* \[ out\]
 </dt> <dd>
 
-Puntero a un **BSTR** que contiene el modificador de ancho de banda.
+Puntero a un **BSTR que** contiene el modificador de ancho de banda.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación debe usar [**SysFreeString para**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) liberar la memoria asignada para el *parámetro ppModifier.*
 
@@ -65,10 +65,10 @@ La aplicación debe usar [**SysFreeString para**](/windows/win32/api/oleauto/nf-
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 

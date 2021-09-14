@@ -1,17 +1,17 @@
 ---
 description: Las funciones de servicio de línea adicionales se enumeran por categoría en los temas siguientes.
 ms.assetid: d4338b3c-cd84-4abb-b74e-9df895c8355b
-title: Funciones de servicio de línea complementarias
+title: Funciones de servicio de línea complementaria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0f2bdd609f092adebd5270a4cc8a3fe35bedce17ad57d8e4e85b5875001255f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 21a29831369fd6b886d57cfae075b5b8bf7a83b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119476348"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253412"
 ---
-# <a name="supplementary-line-service-functions"></a>Funciones de servicio de línea complementarias
+# <a name="supplementary-line-service-functions"></a>Funciones de servicio de línea complementaria
 
 Las funciones de servicio de línea adicionales se enumeran por categoría en los temas siguientes. Una función se identifica como [*asincrónica*](a-tapgloss.md) si indica la finalización en un mensaje REPLY a la aplicación. Si la función siempre devuelve su resultado a la aplicación inmediatamente, la función se considera [*sincrónica.*](s-tapgloss.md)
 
@@ -34,10 +34,10 @@ A continuación se muestra una agrupación funcional de las funciones de servici
 -   [Realización de llamadas](basic-telephony-services-reference.md)
 -   [Control multimedia](#media-control)
 -   [Supervisión de medios](#media-monitoring)
--   [Servidores proxy](#proxies)
+-   [Proxies](#proxies)
 -   [Calidad de servicio](#quality-of-service)
 -   [Envío de información a una entidad remota](#sending-information-to-remote-party)
--   [Administración del proveedor de servicios](#service-provider-management)
+-   [Administración de proveedores de servicios](#service-provider-management)
 -   [Establecimiento de un terminal para conversaciones telefónicas](#setting-a-terminal-for-phone-conversations)
 -   [Supervisión del tono](#tone-monitoring)
 
@@ -98,7 +98,7 @@ También hay varias [funciones de](#miscellaneous) servicio de línea complement
 
 | Función                                           | Descripción                                                                                                          |
 |----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [**lineSetMediaControl**](/windows/desktop/api/Tapi/nf-tapi-linesetmediacontrol) | Configura el flujo multimedia de una llamada para el control multimedia. Synchronous.                                                        |
+| [**lineSetMediaControl**](/windows/desktop/api/Tapi/nf-tapi-linesetmediacontrol) | Configura la secuencia multimedia de una llamada para el control multimedia. Synchronous.                                                        |
 | [**lineSetMediaMode**](/windows/desktop/api/Tapi/nf-tapi-linesetmediamode)       | Establece los modos multimedia de la llamada especificada en su [**estructura LINECALLINFO.**](/windows/desktop/api/Tapi/ns-tapi-linecallinfo) Synchronous. |
 
 
@@ -112,7 +112,7 @@ También hay varias [funciones de](#miscellaneous) servicio de línea complement
 | Función                                         | Descripción                                                   |
 |--------------------------------------------------|---------------------------------------------------------------|
 | [**lineGenerateDigits**](/windows/desktop/api/Tapi/nf-tapi-linegeneratedigits) | Genera dígitos de la banda en una llamada. Synchronous.               |
-| [**lineGenerateTone**](/windows/desktop/api/Tapi/nf-tapi-linegeneratetone)     | Genera un conjunto determinado de tonos en banda en una llamada. Synchronous. |
+| [**lineGenerateTone**](/windows/desktop/api/Tapi/nf-tapi-linegeneratetone)     | Genera un conjunto determinado de tonos inband en una llamada. Synchronous. |
 
 
 
@@ -124,7 +124,7 @@ También hay varias [funciones de](#miscellaneous) servicio de línea complement
 
 | Función                             | Descripción                                                                                               |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [**lineAccept**](/windows/desktop/api/Tapi/nf-tapi-lineaccept)     | Acepta una llamada ofrecida y comienza a alertar tanto al autor de la llamada (anillo) como a la entidad llamada (anillo). Asincrónica |
+| [**lineAccept**](/windows/desktop/api/Tapi/nf-tapi-lineaccept)     | Acepta una llamada ofrecida y comienza a alertar tanto al llamador (anillo) como a la entidad llamada (anillo). Asincrónica |
 | [**lineRedirect**](/windows/desktop/api/Tapi/nf-tapi-lineredirect) | Redirige una llamada de oferta a otra dirección. Asincrónica                                              |
 
 
@@ -149,7 +149,7 @@ También hay varias [funciones de](#miscellaneous) servicio de línea complement
 
 | Función                         | Descripción                                           |
 |----------------------------------|-------------------------------------------------------|
-| [**lineHold**](/windows/desktop/api/Tapi/nf-tapi-linehold)     | Coloca la llamada especificada en espera. Asincrónica |
+| [**lineHold**](/windows/desktop/api/Tapi/nf-tapi-linehold)     | Coloca la llamada especificada en un estado de retención. Asincrónica |
 | [**lineUnhold**](/windows/desktop/api/Tapi/nf-tapi-lineunhold) | Recupera una llamada retenido. Asincrónica                  |
 
 
@@ -190,7 +190,7 @@ También hay varias [funciones de](#miscellaneous) servicio de línea complement
 | Función                                                         | Descripción                                                                                                                                                                                          |
 |------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**lineSetupConference**](/windows/desktop/api/Tapi/nf-tapi-linesetupconference)               | Prepara una llamada determinada para la adición de otra parte. Asincrónica                                                                                                                               |
-| [**linePrepareAddToConference**](/windows/desktop/api/Tapi/nf-tapi-lineprepareaddtoconference) | Se prepara para agregar una entidad a una llamada de conferencia existente colocando la llamada de conferencia en estado de espera y creando una llamada de consulta que se puede agregar más adelante a la llamada de conferencia. Asincrónica |
+| [**linePrepareAddToConference**](/windows/desktop/api/Tapi/nf-tapi-lineprepareaddtoconference) | Se prepara para agregar una entidad a una llamada de conferencia existente colocando la llamada de conferencia en un estado de espera y creando una llamada de consulta que se puede agregar más adelante a la llamada de conferencia. Asincrónica |
 | [**lineAddToConference**](/windows/desktop/api/Tapi/nf-tapi-lineaddtoconference)               | Agrega una llamada de consulta a una llamada de conferencia existente. Asincrónica                                                                                                                               |
 | [**lineRemoveFromConference**](/windows/desktop/api/Tapi/nf-tapi-lineremovefromconference)     | Quita una entidad de una llamada de conferencia. Asincrónica                                                                                                                                                |
 

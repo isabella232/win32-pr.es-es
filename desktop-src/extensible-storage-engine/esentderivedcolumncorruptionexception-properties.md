@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101609
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: ffbdeaa37884d315345b5bd7686258cddaa4b28043444565ec862b15a5d9bb44
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76728e9b1e6d4b423318cf0ff4de9f1449aa6eda
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117711618"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361534"
 ---
 # <a name="esentderivedcolumncorruptionexception-properties"></a>Propiedades de EsentDerivedColumnCorruptionException
 
@@ -34,7 +34,7 @@ El [tipo EsentDerivedColumnCorruptionException](./esentderivedcolumncorruptionex
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

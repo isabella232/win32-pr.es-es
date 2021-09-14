@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102906
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 89cc7b1c77dec5a134d06b3c1d8ab948f4ff1bc44bb19f4d3aa779c5e83dd262
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bad636da29522e8a5e130adce94ad1f6bb727969
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120116598"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361514"
 ---
 # <a name="esentslvrootpathinvalidexception-properties"></a>Propiedades de EsentSLVRootPathInvalidException
 
@@ -34,7 +34,7 @@ El [tipo EsentSLVRootPathInvalidException](./esentslvrootpathinvalidexception-cl
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentSLVRootPathInvalidException](./esentslvrootpathinvalidexception-cl
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

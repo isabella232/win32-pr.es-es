@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: abaca8c703e71806b9d0f736ac2bcb5e333df3af64e251472834fad73b19c604
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0984a4a7e1bf69c4d650963b8e50431fdd0b3107
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017213"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361407"
 ---
 # <a name="cbasedispatchcbasedispatch-destructor"></a>Destructor CBaseDispatch.~CBaseDispatch
 
@@ -47,7 +47,7 @@ Método destructor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

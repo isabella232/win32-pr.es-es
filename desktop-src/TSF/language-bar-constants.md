@@ -11,12 +11,12 @@ keywords:
 - barra de idioma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e042f96fc02d9ec80042649942e911d3e4373bceedce6fe235da86a90cba8f30
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c181a49a93f7040c1869e5c39d6eca9c1b84ef51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118876835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361793"
 ---
 # <a name="language-bar-constants"></a>Constantes de la barra de lenguaje
 

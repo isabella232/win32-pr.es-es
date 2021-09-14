@@ -5,11 +5,11 @@ title: Filtro descodificador de vídeo MPEG-1
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e5dc10284b7f0c75ce408c39dbcea642e9423d76
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982168"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254379"
 ---
 # <a name="mpeg-1-video-decoder-filter"></a>Filtro descodificador de vídeo MPEG-1
 
@@ -38,7 +38,7 @@ Descodifica vídeo MPEG-1.
 
 ## <a name="remarks"></a>Observaciones
 
-Este filtro se puede descodificar en una superficie de DirectDraw. El filtro usa MMX si la máquina admite MMX.
+Este filtro se puede descodificar en una superficie directdraw. El filtro usa MMX si la máquina admite MMX.
 
 ## <a name="related-topics"></a>Temas relacionados
 

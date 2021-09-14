@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: c9b09e745fd3d2a6819a756ff6a012c85330f327739dae28445c2e376189d293
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 426f943014f3b6cfbdba5a25d331c0ea621048cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361701"
 ---
 # <a name="msmcaevent_header-class"></a>Clase Header de MSMCAEvent \_
 
 La **clase Header de MSMCAEvent \_** representa el encabezado común que usan todas [las clases MSMCA.](msmca-classes.md) Los archivos de encabezado se usan para que el código de C y C++ pueda tener una estructura de datos que describa el encabezado común para todos los eventos. Esta clase está reservada para uso interno. Esta clase solo está disponible en sistemas de 64 Windows bits.
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ class MSMCAEvent_Header
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Header de MSMCAEvent \_** tiene estos tipos de miembros:
 
@@ -154,7 +154,7 @@ Tipo de mensaje del registro de eventos. Estos mensajes corresponden a los códi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |
@@ -164,7 +164,7 @@ Tipo de mensaje del registro de eventos. Estos mensajes corresponden a los códi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

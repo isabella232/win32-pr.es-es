@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101547
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0481795df26314ae7ebad8c42f2f38660d22e8c31f5e97bcc301e81fa699e9f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9aed82e2fdc9a91fac9b13f68dbdc3e8b60f892f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118270392"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252824"
 ---
 # <a name="esentdistributedtransactionnotyetpreparedtocommitexception-members"></a>Miembros de EsentDistributedTransactionNotYetPreparedToCommitException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones DistributedTransactionNotYetPreparedToCommit.
+Clase base para JET_err. DistributedTransactionNotYetPreparedToCommit exceptions.
 
 El [tipo EsentDistributedTransactionNotYetPreparedToCommitException](./esentdistributedtransactionnotyetpreparedtocommitexception-class.md) expone los miembros siguientes.
 

@@ -4,12 +4,12 @@ ms.assetid: 61ed2e28-ec6e-48ee-8640-29152b15c9ad
 title: Mute (propiedad)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6974210fa28e510f4cb44e49c5affb80259a83aebe4d7e7add3ce255d5b5dbfa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 80ed5fe5e8803dd2966c41c79c5384a57d999f6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118153011"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254270"
 ---
 # <a name="mute-property"></a>Mute (propiedad)
 
@@ -28,7 +28,7 @@ La `Mute` propiedad activa o desactiva la salida de la secuencia de audio.
 
 Devuelve un valor booleano que indica si la secuencia de audio se debe silenciar.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad es de lectura y escritura con un valor predeterminado de false.
 

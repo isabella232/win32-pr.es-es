@@ -7,18 +7,18 @@ keywords:
 - descarga BITS, evitando costosos
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 7cb09dbd277d9ec74ce4988db210bf80c22d97ccaa3054a170fc1c9913282cfe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6326838f08f1879929d9a6be67ef94c4aa035e00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118959494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361486"
 ---
 # <a name="control-a-bits-download-over-an-expensive-connection"></a>Control de una descarga de BITS a través de una conexión costosa
 
 En este tema se muestra cómo bloquear la descarga de un trabajo de BITS a través de una conexión costosa, como un vínculo móvil. BITS es una API asincrónica donde la aplicación crea un trabajo, agrega direcciones URL a ese trabajo y llama a la función Resume del [**objeto de**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) trabajo. Desde ese punto, BITS elige cuándo se descarga el trabajo en función de factores como la prioridad del trabajo y la directiva de transferencia. Una vez que el trabajo ha terminado de descargarse, BITS notifica a la aplicación que se ha descargado la dirección URL (si la aplicación se ha registrado para la notificación de finalización). Durante la vigencia del trabajo, si cambia la red del usuario final (por ejemplo, si el usuario viaja y actualmente está incurriendo en tarifas de itinerancia), BITS suspenderá el trabajo hasta que las condiciones de red sean óptimas. Las siguientes instrucciones paso a paso muestran cómo crear el trabajo y especificar la configuración de directiva de transferencia adecuada.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   Microsoft Visual Studio
 

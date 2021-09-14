@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 961a0cb7843f2545c81ea21048a9b68d0507153735708e5baaeca3f68cba5527
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ab1e0495d3fbea490f7b1be6cc67e45d97bc89d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119947705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361547"
 ---
 # <a name="apitrymovelast-method"></a>Método Api.TryMoveLast
 
@@ -79,13 +79,13 @@ public static bool TryMoveLast(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
-True si el traslado se ha realizado correctamente.  
+True si el movimiento se ha realizado correctamente.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

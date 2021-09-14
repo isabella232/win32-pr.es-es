@@ -9,12 +9,12 @@ keywords:
 - Porte de OpenGL,maps
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e50448c254b8d3e01097f1faec2b4df8aeed56be8ae3abb4f5ce13432582559
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed0dbd7f94736f25346a9136d60feb4fa1bb6c68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362047"
 ---
 # <a name="porting-glx-pixmap-code"></a>Porting GLXMap Code
 
@@ -24,7 +24,7 @@ En el caso de los programas OpenGL, se usan las funciones GLX, **glXCreateGLXPix
 
 Windows mapas de bits independientes del dispositivo que cumplen la misma función que los mapas del sistema de ventanas X. Use el estándar Windows de mapa de bits para crear y destruir mapas de bits.
 
-En la tabla siguiente se enumeran las funciones glxmap y sus funciones de mapa Windows mapa de bits equivalentes.
+En la tabla siguiente se enumeran las funciones glxmap y sus funciones de mapa de bits Windows equivalentes.
 
 
 

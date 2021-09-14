@@ -6,16 +6,16 @@ keywords:
 - enteros grandes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7266b36f7e6a6efb11eaa2d73d752f03e46e3f9d022637558fe6b04db8e8ee4b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68ab6276ff6879ce5b72f198e3ccbd247f456e70
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119859135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361711"
 ---
 # <a name="large-integers"></a>Enteros grandes
 
-Las funciones y estructuras de enteros grandes proporcionaron originalmente compatibilidad con valores de 64 bits en valores de 32 Windows. Ahora, el compilador de C puede admitir enteros de 64 bits de forma nativa. Por ejemplo, Microsoft Visual C++ admite el tipo entero de tamaño [**\_ \_ int64.**](/windows/desktop/Midl/--int64) Para obtener más información, vea la documentación incluida con el compilador de C.
+Las funciones y estructuras de enteros grandes proporcionaron originalmente compatibilidad con valores de 64 bits en valores de 32 Windows. Ahora, el compilador de C puede admitir enteros de 64 bits de forma nativa. Por ejemplo, Microsoft Visual C++ admite el [**\_ \_ tipo entero de tamaño int64.**](/windows/desktop/Midl/--int64) Para obtener más información, vea la documentación incluida con el compilador de C.
 
 Para obtener información sobre los enteros de 64 bits en Windows de 64 bits, vea [Los nuevos tipos de datos](/windows/desktop/WinProg64/the-new-data-types).
 

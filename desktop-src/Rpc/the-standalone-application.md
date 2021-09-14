@@ -4,12 +4,12 @@ description: Esta aplicación independiente, que consta de una llamada a una sol
 ms.assetid: 640f5d01-84c8-4fe8-9dae-f4d55cc6f06b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 946d76d0259fd3db971da345a10108cb3dbe11c23184b4ea9a88254e4ecb5e0f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ddf1b11df2372a1db5c74659d1800b62e53b7309
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118923869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361883"
 ---
 # <a name="the-standalone-application"></a>La aplicación independiente
 

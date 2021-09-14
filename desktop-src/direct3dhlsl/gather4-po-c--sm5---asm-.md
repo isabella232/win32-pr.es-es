@@ -4,12 +4,12 @@ description: Se comporta igual que gather4 po, salvo que realiza la comparación
 ms.assetid: B128EEF3-3440-4F00-9792-20FB1AE075E9
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83342aed97663c027b0915f612b13b288192d937d29d364257004cfc8966aec9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36b07dcad08b4d117a453a3c97e461e6b9b4cab6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119743875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361567"
 ---
 # <a name="gather4_po_c-sm5---asm"></a>gather4 \_ po \_ c (sm5 - asm)
 
@@ -39,7 +39,7 @@ Se comporta igual que [**gather4 \_ po**](gather4-po--sm5---asm-.md), excepto qu
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Vea [**el \_ ejemplo c**](sample-c--sm4---asm-.md) para obtener información sobre cómo se compara *srcReferenceValue* con cada texel capturado. A **diferencia del ejemplo \_ c**, *gather4 po \_ \_ c* devuelve cada resultado de comparación, en lugar de filtrarlos.
 
@@ -57,7 +57,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -73,8 +73,8 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
 | [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
@@ -88,7 +88,7 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblado del modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

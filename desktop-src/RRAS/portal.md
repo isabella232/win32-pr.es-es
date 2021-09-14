@@ -4,18 +4,18 @@ description: Servicio de acceso remoto y enrutamiento
 ms.assetid: fa0a183a-0254-401e-8b78-441cb3f83e8b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d827150b84806afe4a9290436620def7675ee03163bf5f63c0c0d6556932a1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49d81e743f640e600588413f0c15c44e0410c5ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120029005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253689"
 ---
 # <a name="routing-and-remote-access-service"></a>Servicio de acceso remoto y enrutamiento
 
 ## <a name="purpose"></a>Propósito
 
-El servicio de acceso remoto (RAS) se puede usar para crear aplicaciones cliente. Estas aplicaciones muestran cuadros de diálogo comunes de RAS, administran dispositivos y conexiones de acceso remoto, y manipulan entradas de la libreta de teléfonos.
+El Servicio de acceso remoto (RAS) se puede usar para crear aplicaciones cliente. Estas aplicaciones muestran cuadros de diálogo comunes de RAS, administran dispositivos y conexiones de acceso remoto, y manipulan entradas de la libreta de teléfonos.
 
 Las API de enrutamiento hacen posible crear aplicaciones para administrar las funcionalidades de enrutamiento del sistema operativo.
 
@@ -35,7 +35,7 @@ Para obtener información más específica sobre qué sistemas operativos admite
 
 | Tema                                                                                                             | Descripción                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Arquitectura de enrutamiento y Access Services remoto](routing-and-remote-access-services-architecture.md)<br/> | Información general sobre la arquitectura de enrutamiento y Access Services remoto.<br/>                                           |
+| [Arquitectura de enrutamiento y Access Services remoto](routing-and-remote-access-services-architecture.md)<br/> | Información general sobre la arquitectura de enrutamiento y Access Services remota.<br/>                                           |
 | [Diseño del Registro de enrutamiento y acceso remoto](routing-and-remote-access-registry-layout.md)<br/>             | Un diseño de registro de ejemplo para el servicio de enrutador<br/>                                                          |
 | [Códigos de error de enrutamiento y acceso remoto](routing-and-remote-access-error-codes.md)<br/>                     | Lista de todos los códigos de error de enrutamiento y acceso remoto.<br/>                                                         |
 | [Acceso remoto](remote-access-start-page.md)<br/>                                                          | Documentación de LAS API de administración de RAS y RAS.<br/>                                                         |

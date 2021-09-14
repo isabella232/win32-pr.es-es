@@ -4,12 +4,12 @@ ms.assetid: 9872128c-4e3d-4ac8-afc4-b3dc516a0925
 title: Tipos de medios de negociación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccdf3294ed1f7ff31037f0720b7e1644d688f419263962a764de5ea7e40e6b3d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0bdcb78cfef6b8396d866ea148267c5a899cd353
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119072929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254258"
 ---
 # <a name="negotiating-media-types"></a>Tipos de medios de negociación
 
@@ -23,7 +23,7 @@ Si los pines se conectan, la conexión siempre tiene un tipo de medio completo. 
 
 Durante el proceso de negociación, el pin de salida propone un tipo de medio llamando al método [**IPin::ReceiveConnection**](/windows/desktop/api/Strmif/nf-strmif-ipin-receiveconnection) del pin de entrada. El pin de entrada puede aceptar o rechazar el tipo propuesto. Este proceso se repite hasta que el pin de entrada acepta un tipo o el pin de salida se queda sin tipos y se produce un error en la conexión.
 
-La forma en que un pin de salida selecciona los tipos de medios que se propongan depende de la implementación. En la DirectShow base, el pin de salida llama a [**IPin::EnumMediaTypes**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes) en el pin de entrada. Este método devuelve un enumerador que enumera los tipos de medios preferidos del pin de entrada. Si no lo hace, el pin de salida enumera sus propios tipos preferidos.
+La forma en que un pin de salida selecciona los tipos de medios que se propongan depende de la implementación. En las DirectShow base, el pin de salida llama a [**IPin::EnumMediaTypes**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes) en el pin de entrada. Este método devuelve un enumerador que enumera los tipos de medios preferidos del pin de entrada. Si no lo hace, el pin de salida enumera sus propios tipos preferidos.
 
 **Trabajar con tipos de medios**
 

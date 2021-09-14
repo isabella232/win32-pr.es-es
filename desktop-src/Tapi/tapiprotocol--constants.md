@@ -4,12 +4,12 @@ ms.assetid: 4704eedb-12e7-440e-b1ca-2afd78d2499d
 title: TAPIPROTOCOL_ constantes (Tapi3if.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b68631549e2d8abbf9bb0e14bff17e8b92054ca3888b2f5f0d11d908ab873dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1e9bd1b12c8b417087899abb2ea3f2c0e9dfd3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119002643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361749"
 ---
 # <a name="tapiprotocol_-constants"></a>Constantes TAPIPROTOCOL \_
 
@@ -47,7 +47,7 @@ Protocolo de multidifusión.
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Las versiones BSTR** de las constantes de protocolo se declaran para el uso de Visual Basic aplicaciones.
 
@@ -62,7 +62,7 @@ Protocolo de multidifusión.
 | Requisito | Value |
 |-------------------------|--------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                |
-| Header<br/>       | <dl> <dt>Tapi3if.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi3if.h</dt> </dl> |
 
 
 

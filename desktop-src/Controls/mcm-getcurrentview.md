@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50f7fce3c1a22ec14ec34e849bd2e3fc4634118b11613913da4e6fae0b9b7b51
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eebbd6a2b33043294b64b8b65308520b52dbe449
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119319685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362559"
 ---
 # <a name="mcm_getcurrentview-message"></a>Mensaje \_ GETCURRENTVIEW de MCM
 
@@ -51,7 +51,7 @@ Vista actual. Uno de los siguientes valores.
 
 | Código devuelto                                                                                  | Descripción              |
 |----------------------------------------------------------------------------------------------|--------------------------|
-| <dl> <dt>**MES DE \_ MCMV**</dt> </dl>   | Vista mensual.<br/> |
+| <dl> <dt>**MCMV \_ MONTH**</dt> </dl>   | Vista mensual.<br/> |
 | <dl> <dt>**MCMV \_ YEAR**</dt> </dl>    | Vista anual.<br/>  |
 | <dl> <dt>**MCMV \_ DECADE**</dt> </dl>  | Vista de década.<br/>  |
 | <dl> <dt>**MCMV \_ CENTURY**</dt> </dl> | Vista del siglo.<br/> |
@@ -68,7 +68,7 @@ Vista actual. Uno de los siguientes valores.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

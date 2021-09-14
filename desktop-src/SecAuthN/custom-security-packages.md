@@ -4,12 +4,12 @@ ms.assetid: 915ef590-c427-4ac2-a2f7-aed328776cb7
 title: Paquetes de seguridad personalizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3799edb3eb8e0551afe7d7f7bcdc54924228445d6ffb28cb4773af843b5c2d9c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a4c447f1a24a3edc2f25a55f83d82c174094c50
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361867"
 ---
 # <a name="custom-security-packages"></a>Paquetes de seguridad personalizados
 

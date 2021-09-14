@@ -4,12 +4,12 @@ ms.assetid: 00d72a39-f848-47ea-8460-8b826684eeea
 title: Vista previa de la Project
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d17d5fd0c87d98db2dac0a7ace97a72e2107eeb252561bbc535a5bd8b4a56d3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2bdf38fe19e500cfe9bd9a8dfb77f7ff56528a2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119748265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254205"
 ---
 # <a name="previewing-the-project"></a>Vista previa de la Project
 
@@ -17,7 +17,7 @@ ms.locfileid: "119748265"
 
 Para obtener una vista previa del proyecto, necesita un componente denominado motor de representación *,* que compila un DirectShow gráfico de filtros a partir de una escala de tiempo. El gráfico de filtro es lo que representa realmente el proyecto. Puede usar el motor de representación para obtener una vista previa de un proyecto o para escribir el archivo de salida final.
 
-En este artículo no se detalla el motor de representación. Para la versión preliminar, solo necesita algunas llamadas de método. Puede encontrar una explicación más exhaustiva, incluida la escritura de archivos de salida, en [Representación de un Project](rendering-a-project.md). En el ejemplo de código siguiente se muestra cómo construir un gráfico de vista previa.
+En este artículo no se detalla el motor de representación. Para la versión preliminar, solo necesita algunas llamadas de método. Puede encontrar una explicación más exhaustiva, incluido cómo escribir archivos de salida, en [Representación de un Project](rendering-a-project.md). En el ejemplo de código siguiente se muestra cómo construir un gráfico de vista previa.
 
 
 ```C++

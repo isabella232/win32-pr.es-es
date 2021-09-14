@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 79b9db0043e04d3ab6399677a9e103961d5f1a9b5c5214558bcf53359bedc61a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1de392c50f6665d793883582e2679cd502efbe37
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118892544"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253448"
 ---
 # <a name="disablekeyprotectors-method-of-the-win32_encryptablevolume-class"></a>Método DisableKeyProtectors de la clase EncryptableVolume de Win32 \_
 
@@ -39,7 +39,7 @@ uint32 DisableKeyProtectors(
 
 <dl> <dt>
 
-*DisableCount* \[ in, opcional\]
+*DisableCount* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **uint32**
@@ -59,27 +59,27 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 | Código o valor devuelto                                                                                                                                                                  | Descripción                           |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl>                                  | Método realizado correctamente.<br/> |
-| <dl> <dt>**FVE \_ E \_ LOCKED \_ VOLUME**</dt> <dt>2150694912 (0x80310000)</dt> </dl> | El volumen está bloqueado.<br/>      |
+| <dl> <dt>**FVE \_ E \_ LOCKED \_ VOLUME 2150694912**</dt> <dt>(0x80310000)</dt> </dl> | El volumen está bloqueado.<br/>      |
 
 
 
  
 
-## <a name="security-considerations"></a>Consideraciones sobre la seguridad
+## <a name="security-considerations"></a>Consideraciones de seguridad
 
 Este método expone la clave de cifrado del volumen sin cifrar en el disco duro, desactivando cualquier protección del volumen. Se recomienda no tener ninguna contraseña o clave de cifrado en texto no cifrado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se pueden agregar nuevos protectores de clave incluso cuando los protectores de clave están deshabilitados o suspendidos. Estos protectores de clave permanecerán deshabilitados a menos que se llame a [**EnableKeyProtectors.**](enablekeyprotectors-win32-encryptablevolume.md)
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |

@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3611d36cfe19623840f102b820b2b312138b1e116d32fc399927da57e7f47300
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d8e1731060021b61eb5037e1baeeda95021e8f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362530"
 ---
-# <a name="cmediatypeisvalid-method"></a>CMediaType.IsValid (método)
+# <a name="cmediatypeisvalid-method"></a>Método CMediaType.IsValid
 
 El método determina si se ha asignado un tipo `IsValid` principal a este objeto.
 
@@ -42,9 +42,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si se ha asignado un tipo principal a este objeto. De lo contrario, **devuelve FALSE**.
+Devuelve **TRUE** si se ha asignado un tipo principal a este objeto. De lo contrario, **devuelve FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, [**los objetos CMediaType**](cmediatype.md) se inicializan con un tipo principal de GUID \_ NULL. Llame a este método para determinar si el objeto se ha inicializado correctamente.
 
@@ -59,7 +59,7 @@ De forma predeterminada, [**los objetos CMediaType**](cmediatype.md) se iniciali
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

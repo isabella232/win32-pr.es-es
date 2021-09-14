@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102426
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e28fd7dc7cbc74f377a32c7428f1399bdcee4a5efc16bf7de15241587bfbc2dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97968a0574cdeda2f35b7a4fc409bac323d3264c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117898857"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252795"
 ---
 # <a name="esentossnapshotinvalidsnapidexception-methods"></a>Métodos de EsentOSSnapshotInvalidSnapIdException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentOSSnapshotInvalidSnapIdException](./esentossnapshotinvalidsnapidexception-class.md) expone los miembros siguientes.
+El [tipo EsentOSSnapshotInvalidSnapIdException](./esentossnapshotinvalidsnapidexception-class.md) expone los siguientes miembros.
 
 ## <a name="methods"></a>Métodos
 
@@ -78,7 +78,7 @@ El [tipo EsentOSSnapshotInvalidSnapIdException](./esentossnapshotinvalidsnapidex
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

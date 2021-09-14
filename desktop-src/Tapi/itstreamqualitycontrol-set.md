@@ -4,12 +4,12 @@ ms.assetid: 57029d1c-ac63-45c0-9d07-43c7b46a27b1
 title: ItStreamQualityControl::Set (Método) (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a01d01a71b01b1db194734f463246379d993dc6938eb9bdaec2822ab5d97cac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 61deed4d6edc9b08d7c11fcc8d44d8cf91e11f99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118864008"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361766"
 ---
 # <a name="itstreamqualitycontrolset-method"></a>ItStreamQualityControl::Set (método)
 
@@ -61,7 +61,7 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Valor                                                                                         | Significado                                                         |
+| Value                                                                                         | Significado                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
@@ -74,16 +74,16 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|--------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                         |
-| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Encabezado<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

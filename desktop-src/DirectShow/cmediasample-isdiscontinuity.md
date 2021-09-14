@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: db45e2921e04d798c9b2a155472843e7d82c25b90e582c5895dd3fa57962c801
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4e222ea813793dd537c8623f74403baed9a320a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119832255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254427"
 ---
 # <a name="cmediasampleisdiscontinuity-method"></a>Método CMediaSample.IsDiscontinuity
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK si el ejemplo es una interrupción en el flujo de datos y S FALSE en caso \_ contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La variable [**miembro CMediaSample::m \_ dwFlags**](cmediasample-m-dwflags.md) especifica esta propiedad.
 

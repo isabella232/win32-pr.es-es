@@ -6,12 +6,12 @@ keywords:
 - size_is
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae585e058332979823e5c1f4c7de7e9a1de6037c1c53c12585e17c2bbc309365
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7159c68d6bc3c1485c14db20d97c488916cb7b22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120016695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361882"
 ---
 # <a name="the-size_is-attribute"></a>El \[ tamaño \_ es \] Attribute
 

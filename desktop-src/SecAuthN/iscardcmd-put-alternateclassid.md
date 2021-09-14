@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: fd1f74dee017cb72a67ecb4a9fc42da85153966336b25e54819be13464b3b7e6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ee1ee5da5875ec2fa1f4f7f6e474f551befdaf8b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119481565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361862"
 ---
 # <a name="iscardcmdput_alternateclassid-method"></a>Método ISCardCmd::p ut \_ AlternateClassId
 
@@ -65,11 +65,11 @@ El método devuelve uno de los siguientes valores posibles.
 
 ## <a name="remarks"></a>Observaciones
 
-Con las comunicaciones que usan el protocolo [*T=0,*](../secgloss/t-gly.md)la APDU puede generar automáticamente comandos de tarjeta adicionales y enviarse a la unidad de datos del protocolo de transmisión (TPDU). Los comandos adicionales suelen usar el mismo identificador de clase que el comando original; Especificar un nuevo identificador de clase mediante este método permite que los comandos generados automáticamente usen el nuevo identificador de clase.
+Con las comunicaciones que usan el protocolo [*T=0,*](../secgloss/t-gly.md)la APDU puede generar automáticamente comandos de tarjeta adicionales y enviarlos a la unidad de datos del protocolo de transmisión (TPDU). Los comandos adicionales suelen usar el mismo identificador de clase que el comando original; La especificación de un nuevo identificador de clase mediante este método permite que los comandos generados automáticamente usen el nuevo identificador de clase.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo establecer un nuevo identificador de clase alternativa en la unidad de [*datos del protocolo de aplicación*](../secgloss/a-gly.md) (APDU). En el ejemplo se supone que pISCardCmd es un puntero válido a una instancia de la [**interfaz ISCardCmd.**](iscardcmd.md)
+En el ejemplo siguiente se muestra cómo establecer un nuevo identificador de clase alternativa en la unidad [*de datos del protocolo de aplicación*](../secgloss/a-gly.md) (APDU). En el ejemplo se supone que pISCardCmd es un puntero válido a una instancia de la [**interfaz ISCardCmd.**](iscardcmd.md)
 
 
 ```C++
@@ -92,18 +92,18 @@ if (FAILED(hr))
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardCmd se define como \_ D5778AE3-43DE-11D0-9171-00AA00C18068<br/>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

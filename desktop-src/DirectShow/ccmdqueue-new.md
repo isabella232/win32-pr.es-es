@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c8b6ad22b67df863e699649f22f513a98ca1306751a1d449a683f306c9cc2938
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58c3aee63005010b9ed7366cfb63a69fcc7348b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119910395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362547"
 ---
 # <a name="ccmdqueuenew-method"></a>Método CCmdQueue.New
 
@@ -133,7 +133,7 @@ Valor que indica si el *parámetro time* es un valor de tiempo de secuencia **(T
 
 Devuelve S \_ OK si se realiza correctamente. Devuelve E \_ OUTOFMEMORY si *ppCmd* devuelve al crear el nuevo [**objeto CDeferredCommand**](cdeferredcommand.md) con un valor **null.** De lo contrario, **devuelve un valor HRESULT** que indica un error al intentar crear un nuevo **objeto CDeferredCommand.** Si se produce un error, no se ha puesto en cola ningún objeto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El nuevo [**objeto CDeferredCommand**](cdeferredcommand.md) se inicializará con los parámetros y se agregará a la cola durante la construcción. Este método es similar al **método IDispatch::Invoke.**
 
@@ -163,7 +163,7 @@ Entre los valores del *parámetro wFlags* se incluyen los siguientes:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

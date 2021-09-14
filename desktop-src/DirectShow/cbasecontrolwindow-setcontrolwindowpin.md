@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e9ab7cbb5d199b0908c2eb51ffb5a70eda7eb1336bd66a1645daad61b3202d69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c1aa3d4960799c2286e17709258ea90b76332bc2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361412"
 ---
 # <a name="cbasecontrolwindowsetcontrolwindowpin-method"></a>Método CBaseControlWindow.SetControlWindowPin
 
@@ -53,7 +53,7 @@ Puntero al pin con el que se sincroniza la interfaz.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro establece la variable miembro m \_ pPin igual al parámetro pPin. Como se describe en el constructor, solo se puede llamar a la interfaz cuando el filtro se ha conectado correctamente. El objeto se pasa a través de esta función miembro al pin con el que debe sincronizarse. En la mayoría de los casos, determinará si el pin está conectado siempre que tenga un método de interfaz llamado y devolverá VFW E NOT CONNECTED si se produce \_ \_ un \_ error.
 
@@ -68,7 +68,7 @@ Esta función miembro establece la variable miembro m \_ pPin igual al parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

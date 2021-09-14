@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1bd8582d16022c9d5dfd60eb87847d564ef69203e329ff37eaa9c2964a11794c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 267748fe4ce1eeec4650544a2f72069df897a366
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119317515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362451"
 ---
 # <a name="csourcestreamqueryid-method"></a>Método CSourceStream.QueryId
 
@@ -66,11 +66,11 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método implementa el [**método IPin::QueryId.**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid) Para construir una cadena de identificador, el pin llama al [**método CSource::FindPinNumber**](csource-findpinnumber.md) con sí mismo como parámetro. El **método FindPinNumber** devuelve el número de pin, indexado a partir de cero. `QueryId` incrementa el valor devuelto en uno y convierte el resultado en una cadena. Por ejemplo, el primer pin se convierte en "1"; el segundo pin se convierte en "2"; y así sucesivamente.
+Este método implementa el [**método IPin::QueryId.**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid) Para construir una cadena de identificador, el pin llama al [**método CSource::FindPinNumber**](csource-findpinnumber.md) con sí mismo como parámetro. El **método FindPinNumber** devuelve el número de pin, indexado a partir de cero. `QueryId` incrementa el valor devuelto en uno y convierte el resultado en una cadena. Por ejemplo, el primer pin se convierte en "1"; el segundo pin se convierte en "2"; etc.
 
-Si este método devuelve VFW E NOT FOUND, indica que la matriz de pines del filtro no es \_ \_ válida, presumiblemente causada por un \_ error en el filtro.
+Si este método devuelve VFW E NOT FOUND, indica que la matriz de pines del filtro no es \_ \_ válida, presumiblemente debido a un error en \_ el filtro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,7 +83,7 @@ Si este método devuelve VFW E NOT FOUND, indica que la matriz de pines del filt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

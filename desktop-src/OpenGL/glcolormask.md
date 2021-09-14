@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e8b3e9e00eaa294f77813f8e994358cbb473fc4e5c02fce8e5115dc517cae20
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3a9aa36eeceeae4aaa9373d73b50fda09663edb7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362105"
 ---
 # <a name="glcolormask-function"></a>Función glColorMask
 
@@ -46,14 +46,14 @@ void WINAPI glColorMask(
 *Rojo* 
 </dt> <dd>
 
-Especifique si el color rojo puede o no escribirse en el búfer de fotogramas. Los valores predeterminados son GL TRUE, lo que indica que se puede escribir \_ el componente de color.
+Especifique si el color rojo se puede escribir o no en el búfer de fotogramas. Los valores predeterminados son GL TRUE, lo que indica que se puede escribir \_ el componente de color.
 
 </dd> <dt>
 
 *Verde* 
 </dt> <dd>
 
-Especifique si el verde puede o no escribirse en el búfer de fotogramas. El valor predeterminado es GL \_ TRUE, lo que indica que se puede escribir el componente de color.
+Especifique si el verde se puede escribir o no en el búfer de fotogramas. El valor predeterminado es GL \_ TRUE, lo que indica que se puede escribir el componente de color.
 
 </dd> <dt>
 
@@ -87,17 +87,17 @@ La función [**glGetError**](glgeterror.md) puede recuperar el código de error 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glColorMask** especifica si los componentes de color individuales del búfer de fotogramas se pueden escribir o no. Si *el color* rojo es GL FALSE, por ejemplo, no se realiza ningún cambio en el componente rojo de ningún píxel en ninguno de los búferes de color, independientemente de la operación de dibujo que se haya \_ intentado.
 
-No se pueden controlar los cambios en los bits individuales de los componentes. En su lugar, los cambios se habilitan o deshabilitan para componentes de color completos.
+No se pueden controlar los cambios en los bits individuales de los componentes. En su lugar, los cambios están habilitados o deshabilitados para componentes de color completos.
 
 Las funciones siguientes recuperan información relacionada **con glColorMask**:
 
-[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ COLOR \_ WRITEMASK
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ COLOR \_ WRITEMASK
 
-**glGet con** el argumento GL \_ RGBA \_ MODE
+**glGet** con el argumento GL \_ RGBA \_ MODE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -113,7 +113,7 @@ Las funciones siguientes recuperan información relacionada **con glColorMask**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

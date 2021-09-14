@@ -1,5 +1,5 @@
 ---
-description: El método SendNotifyWindow notifica al filtro ascendente del identificador de ventana de vídeo.
+description: El método SendNotifyWindow notifica al filtro ascendente del identificador de la ventana de vídeo.
 ms.assetid: f46390b1-d03a-4520-8c1d-b3f870d3bb0b
 title: Método CBaseRenderer.SendNotifyWindow (Renbase.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2b4956ad2b20040b0d22903d2ffaa2c7b460af9250fe057d106db545173d53a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 727ab16604df5b908085208e1d127e5dffad92fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118157502"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254456"
 ---
 # <a name="cbaserenderersendnotifywindow-method"></a>Método CBaseRenderer.SendNotifyWindow
 
@@ -61,7 +61,7 @@ Identificador de la ventana de vídeo o **NULL.**
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el pin de salida del filtro ascendente admite la interfaz [**IMediaEventSink,**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) este método le envía el código de evento [**EC NOTIFY \_ \_ WINDOW**](ec-notify-window.md) junto con el identificador de ventana.
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 29ee0ab0a9a927b3860760877457735198465b7c28789a542c040fc9e9e788a6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2597b3f83a65dafd2da0198aade5243acc1184fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118367421"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253922"
 ---
 # <a name="capturefile_header_values-structure"></a>Estructura CAPTUREFILE \_ HEADER \_ VALUES
 
@@ -51,7 +51,7 @@ typedef struct _CAPTUREFILE_HEADER_VALUES {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -86,7 +86,7 @@ Tipo de topología.
 **Timestamp**
 </dt> <dd>
 
-Hora de captura.
+Tiempo de captura.
 
 </dd> <dt>
 
@@ -178,7 +178,7 @@ Este miembro no se usa.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

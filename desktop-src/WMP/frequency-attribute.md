@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81d75a542963a8587ad25ead39090ec77fb7d10f72119804c3c43280fd588a54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2bbc3ca8dde29c5729446c54e36b3d10b9c9825f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119648215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361739"
 ---
 # <a name="frequency-attribute"></a>Atributo Frequency
 
@@ -27,7 +27,7 @@ El **atributo Frequency** es la frecuencia de la estación de radio o "Net only"
 
 -   [Elementos de radio](radio-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 
@@ -37,13 +37,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 solo<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

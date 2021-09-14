@@ -13,14 +13,14 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: b9f8fcbfccdb306038b7b654e947ff1a11654267012c7527799d8633ed8a9410
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2660629cecfa279377794749714102077fb6979
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119889705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362119"
 ---
-# <a name="recognizeframe-callback-function"></a>Función de devolución de llamada recognizeframe
+# <a name="recognizeframe-callback-function"></a>Función de devolución de llamada RecognizeFrame
 
 La **función de exportación RecognizeFrame** indica si un fragmento de datos se reconoce como el protocolo que detecta el analizador. La **función de exportación RecognizeFrame** debe implementarse para cada analizador que admita el archivo DLL del analizador.
 
@@ -72,15 +72,15 @@ Puntero al inicio de los datos no reclamados. Normalmente, los datos no reclamad
 *MacType* \[ En\]
 </dt> <dd>
 
-Valor MAC del primer protocolo en un marco. Normalmente, el *valor MacType* se usa cuando el analizador debe identificar el primer protocolo de un marco. El *valor MacType* puede ser uno de los siguientes:
+Valor MAC del primer protocolo en un marco. Normalmente, el *valor MacType* se usa cuando el analizador debe identificar el primer protocolo de un marco. El *valor macType* puede ser uno de los siguientes:
 
 
 
 | Value                                                                                                                                                                         | Significado                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| <span id="MAC_TYPE_ETHERNET"></span><span id="mac_type_ethernet"></span><dl> <dt>**MAC \_ TYPE \_ ETHERNET**</dt> </dl>    | 802.3 <br/>       |
+| <span id="MAC_TYPE_ETHERNET"></span><span id="mac_type_ethernet"></span><dl> <dt>**ETHERNET \_ DE TIPO \_ MAC**</dt> </dl>    | 802.3 <br/>       |
 | <span id="MAC_TYPE_TOKENRING"></span><span id="mac_type_tokenring"></span><dl> <dt>**TOKENRING \_ DE \_ TIPO MAC**</dt> </dl> | 802.5 <br/>       |
-| <span id="MAC_TYPE_FDDI"></span><span id="mac_type_fddi"></span><dl> <dt>**FDDI \_ DE \_ TIPO MAC**</dt> </dl>                | ANSI X3T9.5 <br/> |
+| <span id="MAC_TYPE_FDDI"></span><span id="mac_type_fddi"></span><dl> <dt>**FDDI \_ DE TIPO \_ MAC**</dt> </dl>                | ANSI X3T9.5 <br/> |
 
 
 
@@ -118,10 +118,10 @@ Indicador de estado del protocolo. El archivo DLL del analizador debe establecer
 
 | Value                                                                                                                                                                                                              | Significado                                                                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PROTOCOL_STATUS_RECOGNIZED"></span><span id="protocol_status_recognized"></span><dl> <dt>**ESTADO \_ DE \_ PROTOCOLO RECONOCIDO**</dt> </dl>              | El analizador reconoce los datos, pero no sabe qué protocolo sigue. Después de establecer el código, devuelva un puntero a los datos no reclamados restantes que siguen al protocolo reconocido. Monitor de red usa el [*siguiente conjunto*](f.md) del protocolo para continuar el análisis. <br/> |
-| <span id="PROTOCOL_STATUS_NOT_RECOGNIZED"></span><span id="protocol_status_not_recognized"></span><dl> <dt>**ESTADO \_ DEL PROTOCOLO NO \_ \_ RECONOCIDO**</dt> </dl> | El analizador no reconoce los datos. Después de establecer este código, devuelva el puntero al principio de los datos mediante el puntero que el parámetro *lpProtocol* pasa al archivo DLL del analizador. Monitor de red usa el *siguiente conjunto* del protocolo anterior para continuar el análisis. <br/>                |
-| <span id="PROTOCOL_STATUS_CLAIMED"></span><span id="protocol_status_claimed"></span><dl> <dt>**ESTADO \_ DEL PROTOCOLO \_ RECLAMADO**</dt> </dl>                       | El analizador reconoce los datos y reclama los datos restantes. Después de establecer el código, devuelva **NULL** para Monitor de red finalizar el análisis de un marco. <br/>                                                                                                                                           |
-| <span id="PROTOCOL_STATUS_NEXT_PROTOCOL"></span><span id="protocol_status_next_protocol"></span><dl> <dt>**ESTADO \_ DEL PROTOCOLO PROTOCOLO SIGUIENTE \_ \_ PROTOCOLO**</dt> </dl>    | El analizador reconoce los datos y sabe qué protocolo sigue. Después de establecer el código, establezca el parámetro *phNextProtocol* y devuelva un puntero a los datos no reclamados restantes que siguen al protocolo reconocido. Monitor de red continúa analizando el marco. <br/>                               |
+| <span id="PROTOCOL_STATUS_RECOGNIZED"></span><span id="protocol_status_recognized"></span><dl> <dt>**ESTADO \_ DE \_ PROTOCOLO RECONOCIDO**</dt> </dl>              | El analizador reconoce los datos, pero no sabe qué protocolo sigue. Después de establecer el código, devuelva un puntero a los datos no reclamados restantes que siguen el protocolo reconocido. Monitor de red el siguiente [*conjunto*](f.md) del protocolo para continuar el análisis. <br/> |
+| <span id="PROTOCOL_STATUS_NOT_RECOGNIZED"></span><span id="protocol_status_not_recognized"></span><dl> <dt>**ESTADO \_ DEL PROTOCOLO NO \_ \_ RECONOCIDO**</dt> </dl> | El analizador no reconoce los datos. Después de establecer este código, devuelva el puntero al principio de los datos mediante el puntero que el parámetro *lpProtocol* pasa al archivo DLL del analizador. Monitor de red el siguiente *conjunto* del protocolo anterior para continuar el análisis. <br/>                |
+| <span id="PROTOCOL_STATUS_CLAIMED"></span><span id="protocol_status_claimed"></span><dl> <dt>**ESTADO \_ DE PROTOCOLO \_ RECLAMADO**</dt> </dl>                       | El analizador reconoce los datos y reclama los datos restantes. Después de establecer el código, devuelva **NULL** para Monitor de red finalizar el análisis de un marco. <br/>                                                                                                                                           |
+| <span id="PROTOCOL_STATUS_NEXT_PROTOCOL"></span><span id="protocol_status_next_protocol"></span><dl> <dt>**PROTOCOLO DE \_ ESTADO DE PROTOCOLO SIGUIENTE \_ \_ PROTOCOLO**</dt> </dl>    | El analizador reconoce los datos y sabe qué protocolo sigue. Después de establecer el código, establezca el parámetro *phNextProtocol* y devuelva un puntero a los datos no reclamados restantes que siguen el protocolo reconocido. Monitor de red continúa analizando el marco. <br/>                               |
 
 
 
@@ -141,7 +141,7 @@ Puntero al identificador del protocolo siguiente. Este parámetro se establece c
 
 En la entrada, puntero a los datos de instancia del protocolo anterior.
 
-En la salida, puntero a los datos de instancia del protocolo actual. Los datos de instancia no pueden tener una longitud superior a \_ DWORD PTR.
+En la salida, puntero a los datos de instancia para el protocolo actual. Los datos de instancia no pueden tener una longitud superior a \_ DWORD PTR.
 
 </dd> </dl>
 
@@ -151,7 +151,7 @@ Si la función se realiza correctamente, el valor devuelto es un puntero al prim
 
 Si la función no se realiza correctamente, el valor devuelto es un puntero inicial que pasa el parámetro *lpProtocol.*
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función RecognizeFrame** determina si el analizador reconoce los datos sin procesar a partir del *puntero lpProtocol.*
 
@@ -165,16 +165,16 @@ La **función RecognizeFrame** determina si el analizador reconoce los datos sin
 
 **Conjunto de entrega y seguimiento del conjunto**
 
-Un analizador puede usar un conjunto de entregas o un conjunto de seguimiento para identificar Monitor de red el protocolo que sigue a los datos reconocidos.
+Un analizador puede usar un conjunto de entrega o un conjunto de seguimiento para identificar para Monitor de red protocolo que sigue a los datos reconocidos.
 
--   Si la información está disponible en datos reconocidos, el analizador usa su conjunto de entregas para obtener un identificador al protocolo siguiente y, a continuación, pasa ese identificador a Monitor de red.
+-   Si la información está disponible en datos reconocidos, el analizador usa su conjunto de entregas para obtener un identificador para el protocolo siguiente y, a continuación, pasa ese identificador a Monitor de red.
 -   Si la información no está disponible, el analizador no pasa un identificador y Monitor de red el conjunto de seguimiento del analizador para determinar qué protocolo sigue.
 
 **Pasar información entre protocolos**
 
 Use el *parámetro lpInstData* para pasar información entre protocolos. En la entrada, puede recuperar la información del protocolo anterior. En la salida, puede pasar información al protocolo siguiente.
 
-Los datos de instancia pueden ser datos menores o iguales que DWORD PTR de longitud, o un puntero a datos, como los datos de marco sin procesar, que el analizador no necesita asignar ni \_ liberar.
+Los datos de instancia pueden ser datos menores o iguales que un PTR DWORD de longitud, o un puntero a datos, como datos de fotogramas sin procesar, que el analizador no necesita asignar o \_ liberar.
 
 
 
@@ -183,7 +183,7 @@ Los datos de instancia pueden ser datos menores o iguales que DWORD PTR de longi
 | Qué son los analizadores y cómo funcionan con Monitor de red. | [Analizadores](parsers.md)                                                                                                    |
 | Qué puntos de entrada se incluyen en el archivo DLL del analizador.        | [Arquitectura dll del analizador](parser-dll-architecture.md)                                                                    |
 | La implementación de **RecognizeFrame**  incluye un ejemplo. | [Implementación de RecognizeFrame](implementing-recognizeframe.md)                                                            |
-| Cómo especificar un conjunto de entrega y seguir el conjunto.              | [Especificar un conjunto de entrega Especificación](specifying-a-handoff-set.md)[de un conjunto siguiente](specifying-a-follow-set.md)<br/> |
+| Cómo especificar un conjunto de entrega y seguir el conjunto.              | [Especificar un conjunto de entrega especificando](specifying-a-handoff-set.md)[un conjunto siguiente](specifying-a-follow-set.md)<br/> |
 
 
 
@@ -201,7 +201,7 @@ Los datos de instancia pueden ser datos menores o iguales que DWORD PTR de longi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

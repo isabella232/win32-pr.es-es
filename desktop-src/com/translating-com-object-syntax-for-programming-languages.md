@@ -4,12 +4,12 @@ description: Traducción de la sintaxis de objetos COM para lenguajes de program
 ms.assetid: 021e0085-c720-401e-9637-76580e67b307
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb6871046a80537dd39b4c9b502d945e28e46e719e637c4e6a629179dd3c6454
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf9d1ec65e5b4ff8f3b61106a4b7a8c9ee3134b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119500085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253076"
 ---
 # <a name="translating-com-object-syntax-for-programming-languages"></a>Traducción de la sintaxis de objetos COM para lenguajes de programación
 
@@ -17,7 +17,7 @@ Para llamar a un objeto COM desde una aplicación escrita en un lenguaje de prog
 
 1.  Vea la biblioteca de tipos del objeto COM en la sintaxis del lenguaje de programación. Esto proporciona descripciones de las clases, interfaces, métodos, propiedades y eventos del objeto en la sintaxis del lenguaje que se usa.
 
-    Los productos para desarrolladores de Microsoft proporcionan varias herramientas para ayudarle a ver y convertir bibliotecas de tipos. Para obtener más información, vea [Visores y](type-library-viewers-and-conversion-tools.md) herramientas de conversión de bibliotecas de tipos y [How Herramientas de desarrollo Use Type Libraries](how-developer-tools-use-type-libraries.md).
+    Los productos para desarrolladores de Microsoft proporcionan varias herramientas para ayudarle a ver y convertir bibliotecas de tipos. Para obtener más información, vea [Visores y](type-library-viewers-and-conversion-tools.md) herramientas de conversión de bibliotecas de tipos y Cómo [Herramientas de desarrollo usar bibliotecas de tipos](how-developer-tools-use-type-libraries.md).
 
     Una vez que pueda ver la biblioteca de tipos del objeto en el lenguaje de programación que prefiera, puede comparar su sintaxis con la de la documentación del objeto. Si el objeto está documentado en un lenguaje de programación distinto del que está usando, los tipos de datos y la sintaxis pueden diferir, pero las descripciones de los parámetros, los valores devueltos y la funcionalidad del objeto deben ser las mismas.
 

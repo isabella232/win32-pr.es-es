@@ -4,8 +4,8 @@ description: El método ISoftKbd CreateSoftKeyboardLayoutFromXMLFile crea un dis
 ms.assetid: e665adab-1d75-4e41-87bf-c8ce0f7a0399
 keywords:
 - Método CreateSoftKeyboardLayoutFromXMLFile Text Services Framework
-- Método CreateSoftKeyboardLayoutFromXMLFile Text Services Framework , interfaz ISoftKbd
-- Interfaz ISoftKbd Text Services Framework , método CreateSoftKeyboardLayoutFromXMLFile
+- Método CreateSoftKeyboardLayoutFromXMLFile Text Services Framework interfaz , ISoftKbd
+- Interfaz ISoftKbd Text Services Framework método CreateSoftKeyboardLayoutFromXMLFile
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b53d4ddeabdf343270664e2d65e17d44aeb7ba8f05a23d6f759a51fcc8e99579
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9252db845c5e1cc732adc295e1989fee83d4ac6e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118877913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361810"
 ---
 # <a name="isoftkbdcreatesoftkeyboardlayoutfromxmlfile-method"></a>ISoftKbd::CreateSoftKeyboardLayoutFromXMLFile (método)
 
@@ -61,7 +61,7 @@ Cadena terminada en cero que indica la longitud del archivo XML.
 *pdwLayoutCookie* \[ out\]
 </dt> <dd>
 
-Puntero al búfer en el que este método recupera una cookie de diseño de teclado flexible.
+Puntero al búfer en el que este método recupera una cookie de diseño de teclado soft.
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Valor                                                                                        | Descripción                                    |
+| Value                                                                                        | Descripción                                    |
 |----------------------------------------------------------------------------------------------|------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Método realizado correctamente.<br/>          |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o varios parámetros no son válidos.<br/> |
@@ -84,18 +84,18 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                        |
-| Header<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
-| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| IDL<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

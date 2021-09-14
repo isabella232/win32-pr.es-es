@@ -4,12 +4,12 @@ ms.assetid: afa520fc-c206-49de-8d73-8f6566ec4fb6
 title: Ejecución con privilegios de administrador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87533e71fbce613ff01ec2cf4670f1632d46786eb2a5b77900f950357a9eaa8a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dc28843195e9b5cabadc13aa2317b0bdd8058ef8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119622725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253628"
 ---
 # <a name="running-with-administrator-privileges"></a>Ejecución con privilegios de administrador
 

@@ -1,6 +1,6 @@
 ---
 title: Traducción de tevdef
-description: El ejemplo de código siguiente es una definición de entorno de textura DECAL de IRIS que especifica el parámetro \_ de textura-entorno DECAL de TV
+description: El ejemplo de código siguiente es una definición de entorno de textura DECAL de IRIS que especifica el parámetro de textura y entorno \_ DECAL de TV.
 ms.assetid: bb4c8231-8102-4ecb-a5d2-c41243c2682d
 keywords:
 - Porte de IRIS GL, textura
@@ -15,12 +15,12 @@ keywords:
 - tevdef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7feef33c2aa725c6e5bb91782fe43fdc6a84d23db8aa412f02c07b6ec588f719
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dac2610d1467adb6faa1ea105fc8e8734bfb9c4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119887893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361996"
 ---
 # <a name="translating-tevdef"></a>Traducción de tevdef
 
@@ -44,13 +44,13 @@ glTexEnvfv(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
 
 
 
-En la tabla siguiente se enumeran los parámetros de entorno de textura DE IRIS GL y sus parámetros OpenGL equivalentes.
+En la tabla siguiente se enumeran los parámetros de entorno de textura DE IRIS GL y sus parámetros de OpenGL equivalentes.
 
 
 
 | Parámetro GL de IRIS     | Parámetro OpenGL             |
 |-----------------------|------------------------------|
-| \_TV MODULARTE          | \_GLMODULTE                 |
+| \_TVMODULTE          | \_GLMODULTE                 |
 | DECAL \_ DE TV             | GL \_ DECAL                    |
 | TV \_ BLEND             | GL \_ BLEND                    |
 | COLOR DE \_ TELEVISIÓN             | COLOR DE \_ \_ ENV DE TEXTURA \_ GL      |

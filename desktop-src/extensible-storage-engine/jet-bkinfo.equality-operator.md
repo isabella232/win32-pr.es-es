@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 566c64643013fca37d2478ca856dfe4bae8c056478e6dda190a5b8aaa96569c9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a20cc09e55ce2bbb194561d4e371b81f9bcb2a6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120116318"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252728"
 ---
 # <a name="jet_bkinfoequality-operator"></a>JET_BKINFO. Operador de igualdad
 
@@ -81,7 +81,7 @@ public static bool operator ==(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

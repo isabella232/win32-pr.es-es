@@ -4,12 +4,12 @@ ms.assetid: 53d639e2-8717-4552-b0d3-b8c500bd38a8
 title: Multimedia Streaming Interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b38200d98b0f01b7260508cbf7bd19c6e65efdfb3af78f2efff77be38294e8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d654bae73ee822f553a1494e3b374cf35b8ac4a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118152961"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254319"
 ---
 # <a name="multimedia-streaming-interfaces"></a>Multimedia Streaming Interfaces
 
@@ -27,7 +27,7 @@ Esta sección contiene entradas de referencia para todas las interfaces de strea
 | [**IAMMediaStream**](/previous-versions/windows/desktop/api/amstream/nn-amstream-iammediastream)                   | Controla las conexiones internas entre DirectShow filtros y gráficos de filtro en aplicaciones que usan streaming multimedia.                            |
 | [**IAMMediaTypeSample**](/previous-versions/windows/desktop/api/amstream/nn-amstream-iammediatypesample)           | Contiene métodos para manipular ejemplos de secuencias con tipos de medios arbitrarios.                                                                            |
 | [**IAMMediaTypeStream**](/previous-versions/windows/desktop/api/amstream/nn-amstream-iammediatypestream)           | Contiene métodos para crear secuencias multimedia con tipos de medios arbitrarios.                                                                            |
-| [**IAMMultiMediaStream**](/previous-versions/windows/desktop/api/amstream/nn-amstream-iammultimediastream)         | Expone DirectShow funcionalidad a los desarrolladores de secuencias multimedia.                                                                                       |
+| [**IAMMultiMediaStream**](/previous-versions/windows/desktop/api/amstream/nn-amstream-iammultimediastream)         | Expone la funcionalidad DirectShow a los desarrolladores de secuencias multimedia.                                                                                       |
 | [**IAudioData**](/previous-versions/windows/desktop/api/austream/nn-austream-iaudiodata)                           | Proporciona métodos que permiten a las aplicaciones establecer y obtener los datos de audio subyacentes a los que se hará referencia a las secuencias de audio.                                   |
 | [**IAudioMediaStream**](/previous-versions/windows/desktop/api/austream/nn-austream-iaudiomediastream)             | Controla las secuencias multimedia de audio proporcionando métodos que establecen y obtienen el formato de la secuencia.                                                                 |
 | [**IAudioStreamSample**](/previous-versions/windows/desktop/api/austream/nn-austream-iaudiostreamsample)           | Recupera información de los objetos de datos [**IAudioData**](/previous-versions/windows/desktop/api/austream/nn-austream-iaudiodata) subyacentes.                                                                |

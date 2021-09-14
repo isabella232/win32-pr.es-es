@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: f6d611395ad8989ea551fb98d1a3d538786881b0a5afc908a030367cac52ee80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e0f3ac58df4e74926d2163705261ffad4551e69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254385"
 ---
-# <a name="iamtimelinesrcmodifystoptime-method"></a>Método IAMTimelineSrc::ModifyStopTime
+# <a name="iamtimelinesrcmodifystoptime-method"></a>IamTimelineSrc::ModifyStopTime (método)
 
 > [!Note]  
-> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -56,9 +56,9 @@ Nueva hora de detenerse, en unidades de 100 nanosegundos.
 
 Devuelve S \_ OK o E \_ INVALIDARG si la hora especificada no es válida.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método equivale a llamar a [**IAMTimelineObj::SetStartStop con**](iamtimelineobj-setstartstop.md) la hora de inicio original y una nueva hora de detenerse.
+Este método equivale a llamar a [**IAMTimelineObj::SetStartStop**](iamtimelineobj-setstartstop.md) con la hora de inicio original y una nueva hora de detenerse.
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -88,7 +88,7 @@ Este método equivale a llamar a [**IAMTimelineObj::SetStartStop con**](iamtimel
 [**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

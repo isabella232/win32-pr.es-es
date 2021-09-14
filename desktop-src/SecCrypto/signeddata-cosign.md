@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: ed4feb55420ebf9d3bc43496fe3004a4d1b55e1ae8add4e3d5b40ec2ac4ba4ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ab2a24a20fd65fad9622b775bedc59cfa28301a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117973895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361828"
 ---
 # <a name="signeddatacosign-method"></a>Método SignedData.CoSign
 
@@ -74,7 +74,7 @@ Este método devuelve una cadena que contiene los datos codificados y firmados.
 
 Si se produce un error en este método, se producirá un error. El **objeto Err** contendrá información adicional sobre el error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!IMPORTANT]
 > Cuando se llama a este método desde un script web, el script debe usar la [*clave privada*](../secgloss/p-gly.md) para crear una firma digital. Permitir que sitios web que no son de confianza usen su clave privada es un riesgo para la seguridad. Aparece un cuadro de diálogo que pregunta si el sitio web puede usar la clave privada cuando se llama por primera vez a este método. Si permite que el script use la clave privada para crear una firma digital y selecciona "No volver a mostrar este cuadro de diálogo", el cuadro de diálogo ya no aparecerá para ningún script dentro de ese dominio que use la clave privada para crear una firma digital. Sin embargo, los scripts fuera de ese dominio que intenten usar la clave privada para crear una firma digital seguirán haciendo que aparezca este cuadro de diálogo. Si no permite que el script use la clave privada y selecciona "No volver a mostrar este cuadro de diálogo", se rechazará automáticamente la capacidad de usar la clave privada para crear firmas digitales.
@@ -87,7 +87,7 @@ Los resultados siguientes se aplican al valor del parámetro *Signer:*
 
 -   Si el *parámetro Signer* no es **NULL,** este método usa la clave privada a la que apunta el certificado asociado para cifrar la cofirma. Si la clave privada a la que apunta el certificado no está disponible, se produce un error en el método.
 -   Si el *parámetro Signer* es **NULL** y hay exactamente un certificado en el almacén CURRENT USER MY que tiene acceso a una clave privada, ese certificado se usa para crear la \_ cofirma.
--   Si el *parámetro Signer* es **NULL**, [**Configuración. El**](settings-enablepromptforcertificateui.md) valor de la propiedad EnablePromptForCertificateUI es true y hay más de un certificado en el almacén MY DEL USUARIO ACTUAL con una clave privada disponible. Aparece un cuadro de diálogo que permite al usuario seleccionar qué certificado se \_ usa.
+-   Si el *parámetro Signer* es **NULL,** [**Configuración. El**](settings-enablepromptforcertificateui.md) valor de la propiedad EnablePromptForCertificateUI es true y hay más de un certificado en el almacén MY DEL USUARIO ACTUAL con una clave privada disponible. Aparece un cuadro de diálogo que permite al usuario seleccionar qué certificado se \_ usa.
 -   Si el *parámetro Signer* es **NULL** y el [**Configuración. La propiedad EnablePromptForCertificateUI**](settings-enablepromptforcertificateui.md) es false y se produce un error en el método.
 -   Si el *parámetro Signer* es **NULL** y no hay ningún certificado en el almacén CURRENT USER MY con una clave privada disponible, se produce \_ un error en el método.
 
@@ -95,14 +95,14 @@ Los resultados siguientes se aplican al valor del parámetro *Signer:*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

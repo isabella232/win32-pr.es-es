@@ -1,7 +1,7 @@
 ---
 description: Devuelve una colección de las extensiones asociadas al certificado.
 ms.assetid: 07793061-6f94-4467-bb01-aa65db657658
-title: ICertificate2::Extensions (Método)
+title: ICertificate2::Extensions (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: e700fda2fb99e0ea0a3dfd8690fdfedbdeecb21bc84bfdb08cbf1f179536cbef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc96dee9c33bb3f76e1fb17acb2000f9740d1b5b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117771617"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253472"
 ---
-# <a name="icertificate2extensions-method"></a>ICertificate2::Extensions (Método)
+# <a name="icertificate2extensions-method"></a>ICertificate2::Extensions (método)
 
 \[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use [**la clase X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 

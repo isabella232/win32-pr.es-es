@@ -4,12 +4,12 @@ ms.assetid: 4ea1cb84-0558-4c4a-9483-1b0f2a8f76f8
 title: Tipos de medios MPEG-1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64f6486b455fc2045ceb0256f6b6344f06a8923ef767c397068022acec052627
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e44db1f4423365efb7814d61b35c1985142aa14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119684935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254390"
 ---
 # <a name="mpeg-1-media-types"></a>Tipos de medios MPEG-1
 
@@ -19,7 +19,7 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-----------------------|-------------------------------------------------|
 | Tipo principal            | Secuencia \_ MEDIATYPE                               |
 | Subtype               | MEDIASUBTYPE \_ MPEG1System                       |
@@ -31,7 +31,7 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 
  
 
-## <a name="mpeg-1-system-stream-from-video-cd"></a>Secuencia del sistema MPEG-1 desde CD de vídeo (VCD)
+## <a name="mpeg-1-system-stream-from-video-cd"></a>Flujo del sistema MPEG-1 desde CD de vídeo (VCD)
 
 
 
@@ -40,7 +40,7 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 | Tipo principal            | Secuencia \_ MEDIATYPE          |
 | Subtype               | MEDIASUBTYPE \_ MPEG1VideoCD |
 | Tipo de formato           | GUID \_ NULL                 |
-| Estructura de formato      | Ninguno                       |
+| Estructura de formato      | None                       |
 | Contenido de ejemplo multimedia | Secuencia de bytes; sin alineación. |
 
 
@@ -83,9 +83,9 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-----------------------|------------------------------------------------|
-| Tipo principal            | Vídeo \_ MEDIATYPE                               |
+| Tipo principal            | VÍDEO \_ MEDIATYPE                               |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Packet                      |
 | Tipo de formato           | FORMAT \_ MPEGVideo                              |
 | Estructura de formato      | [**MPEG1VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-mpeg1videoinfo)       |
@@ -99,9 +99,9 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-----------------------|------------------------------------------|
-| Tipo principal            | Vídeo \_ MEDIATYPE                         |
+| Tipo principal            | VÍDEO \_ MEDIATYPE                         |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Payload               |
 | Tipo de formato           | FORMAT \_ MPEGVideo                        |
 | Estructura de formato      | [**MPEG1VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-mpeg1videoinfo) |
@@ -115,12 +115,12 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-----------------------|------------------------------------------------|
 | Tipo principal            | Secuencia \_ MEDIATYPE                              |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Video                      |
 | Tipo de formato           | GUID \_ NULL                                     |
-| Estructura de formato      | Ninguno                                           |
+| Estructura de formato      | None                                           |
 | Contenido de ejemplo multimedia | Matriz de bytes de secuencia de vídeo (sin capa del sistema). |
 
 
@@ -136,27 +136,27 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 | Tipo principal            | Secuencia \_ MEDIATYPE                              |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Audio                      |
 | Tipo de formato           | GUID \_ NULL                                     |
-| Estructura de formato      | Ninguno                                           |
+| Estructura de formato      | None                                           |
 | Contenido de ejemplo multimedia | Matriz de bytes de secuencia de audio (sin capa del sistema). |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los DirectShow MPEG-1 admiten estos tipos como se muestra a continuación.
+Los DirectShow mpeg-1 admiten estos tipos como se muestra a continuación.
 
 
 
-| Filter               | Dirección | Tipos de medios admitidos                                                                                             |
+| Filtrar               | Dirección | Tipos de medios admitidos                                                                                             |
 |----------------------|-----------|-------------------------------------------------------------------------------------------------------------------|
 | Divisor MPEG-1      | Entrada     | Flujo del sistema MPEG-1 StreamMPEG-1 del sistema desde CD de vídeo (VCD)<br/>                                                 |
-| Divisor MPEG-1      | Salida    | Paquete de audio MPEG-1Mpeg-1 Carga de audio<br/> Paquete de vídeo MPEG-1<br/> Carga de vídeo MPEG-1<br/> |
+| Divisor MPEG-1      | Output    | Paquete de audio MPEG-1Mpeg-1 Carga de audio<br/> Paquete de vídeo MPEG-1<br/> Carga de vídeo MPEG-1<br/> |
 | Códec de audio de software | Entrada     | Paquete de audio MPEG-1Mpeg-1 Carga de audio<br/>                                                                |
 | Códec de vídeo de software | Entrada     | Carga de vídeo MPEG-1 Video packetMPEG-1<br/>                                                                |
-| Códec de audio de software | Salida    | Audio de PCM                                                                                                         |
-| Códec de vídeo de software | Salida    | Vídeo sin comprimir (Y41P, YUY2, UYVY, RGB-24, RGB-32, RGB-565, RGB-555, RGB-8)                                    |
+| Códec de audio de software | Output    | Audio de PCM                                                                                                         |
+| Códec de vídeo de software | Output    | Vídeo sin comprimir (Y41P, YUY2, UYVY, RGB-24, RGB-32, RGB-565, RGB-555, RGB-8)                                    |
 
 
 

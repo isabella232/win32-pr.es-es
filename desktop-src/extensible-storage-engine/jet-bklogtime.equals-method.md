@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_BKLOGTIME. Equals (método)'
-title: JET_BKLOGTIME. Equals (método)
+description: 'Más información sobre: JET_BKLOGTIME. Método Equals'
+title: JET_BKLOGTIME. Método Equals
 TOCTitle: 'Equals method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_BKLOGTIME.Equals
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_bklogtime.equals(v=EXCHG.10)
@@ -15,13 +15,13 @@ dev_langs:
 - VB
 - other
 ms.openlocfilehash: 29c7b2fd95708e38ab4a849069cfc2c43c69cb27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104550130"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252711"
 ---
-# <a name="jet_bklogtimeequals-method"></a>JET_BKLOGTIME. Equals (método)
+# <a name="jet_bklogtimeequals-method"></a>JET_BKLOGTIME. Método Equals
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -39,13 +39,13 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh578873(v=exchg.10).md">Equals (Object)</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de. (Invalida <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>).</td>
+<td><a href="hh578873(v=exchg.10).md">Equals(Object)</a></td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia. (Invalida <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh596744(v=exchg.10).md">Es igual a (JET_BKLOGTIME)</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td><a href="hh596744(v=exchg.10).md">Equals(JET_BKLOGTIME)</a></td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 </tbody>
 </table>
@@ -53,12 +53,12 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_BKLOGTIME](./jet-bklogtime-structure2.md)
+[JET_BKLOGTIME estructura](./jet-bklogtime-structure2.md)
 
-[Miembros de JET_BKLOGTIME](./jet-bklogtime-members.md)
+[JET_BKLOGTIME miembros](./jet-bklogtime-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

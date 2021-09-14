@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: b29d57c3d56136103fb1948340472343f56727c2df0268a5036dc148fdd0493a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e89ca9a7d00559724edc6679a0ed99e4bdf9c2d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117796345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253910"
 ---
-# <a name="ccheapfree-function"></a>Función CCHeapFree
+# <a name="ccheapfree-function"></a>CCHeapFree , función
 
 La **función CCHeapFree** libera la memoria asignada por la **función CCHeapAlloc.**
 
@@ -42,13 +42,13 @@ BOOL WINAPI CCHeapFree(
 *lpMem* 
 </dt> <dd>
 
-Puntero a la memoria que esta función libera.
+Puntero a la memoria que libera esta función.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la **función CCHeapFree** es correcta, el valor devuelto es **TRUE.**
+Si la **función CCHeapFree** se realiza correctamente, el valor devuelto es **TRUE.**
 
 Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 

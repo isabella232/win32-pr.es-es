@@ -4,12 +4,12 @@ ms.assetid: 14f9cfa3-5ef6-419c-9196-2e4060549c03
 title: Data Flow en el navegador de DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56e649edfacf0a1fad56cfbe8e73a5e1e9aaf099b9c17463858bf776ab06605c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29a981d2d7b528163abb53478e9e8f2ab88d46c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953364"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362455"
 ---
 # <a name="data-flow-in-the-dvd-navigator"></a>Data Flow en el navegador de DVD
 
@@ -18,7 +18,7 @@ DVD Navigator tiene métodos para detener y pausar la reproducción. Estos méto
 -   Los **métodos IDvdControl2** cambian lo que el navegador de DVD lee del disco. No cambian el estado del gráfico.
 -   Los **métodos IMediaControl** cambian el estado del gráfico. No cambian lo que el navegador de DVD lee del disco. (Hay una excepción importante, que se explica en la sección siguiente, relacionada con el **método Stop).**
 
-Por ejemplo, [**el método IDvdControl2::P ause**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-pause) emite el comando "Pausar" del anexo J, pero no pausa el \_ gráfico de filtros. Por otro [**lado, el :P IMediaControl::P ause**](/windows/desktop/api/Control/nf-control-imediacontrol-pause) pausa el gráfico, pero no emite ningún comando de DVD.
+Por ejemplo, [**el método IDvdControl2::P ause**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-pause) emite el comando "Pausar" del anexo J, pero no pausa el \_ gráfico de filtros. Por otro [**lado, el :P IMediaControl::P ause**](/windows/desktop/api/Control/nf-control-imediacontrol-pause) pausa el gráfico, pero no emite ningún comando DE DVD.
 
 En general, use los **métodos IMediaControl::P ause** y **Stop** en lugar de los métodos **IDvdControl2 correspondientes.** Los **métodos IMediaControl** tienen latencias muy pequeñas, mientras que los métodos **IDvdControl2** pueden tener hasta dos segundos de latencia.
 

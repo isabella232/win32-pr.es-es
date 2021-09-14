@@ -1,26 +1,26 @@
 ---
 title: Biblioteca DE IRIS GL Sphere
-description: OpenGL no admite la biblioteca de esferas IRIS GL. Puede reemplazar las llamadas a la biblioteca de Sphere por rutinas cuadrúbricas de la biblioteca GLU. Para obtener más información sobre la biblioteca GLU, vea la Guía de programación de Open GL y la Biblioteca de la utilidad OpenGL.
+description: OpenGL no admite la biblioteca iris gl sphere. Puede reemplazar las llamadas a la biblioteca sphere por rutinas de cuádricas de la biblioteca GLU. Para obtener más información sobre la biblioteca GLU, vea la Guía de programación de Open GL y la Biblioteca de la utilidad OpenGL.
 ms.assetid: 2b7e6a3d-d2d0-4b54-8dff-8c4d6b113007
 keywords:
 - Porte de IRIS GL, biblioteca sphere
-- porting from IRIS GL,sphere library
-- porting to OpenGL from IRIS GL,sphere library
+- porte desde IRIS GL, biblioteca sphere
+- porte a OpenGL desde IRIS GL, biblioteca sphere
 - Porte de OpenGL desde IRIS GL, biblioteca sphere
 - funciones de dibujo, biblioteca sphere
 - Biblioteca sphere
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e842f18aa699ab3f719c7aefed765d84c60684dd2ab654325d9d1f5cbb93c03b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 586974c5874aee73121e536cbadca4564a18c250
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362006"
 ---
 # <a name="the-iris-gl-sphere-library"></a>Biblioteca DE IRIS GL Sphere
 
-OpenGL no admite la biblioteca de esferas IRIS GL. Puede reemplazar las llamadas a la biblioteca de Sphere por rutinas cuadrúbricas de la biblioteca GLU. Para obtener más información sobre la biblioteca GLU, vea la Guía de programación de *Open GL* y la Biblioteca de la [utilidad OpenGL](opengl-utility-library.md).
+OpenGL no admite la biblioteca iris gl sphere. Puede reemplazar las llamadas a la biblioteca sphere por rutinas de cuádricas de la biblioteca GLU. Para obtener más información sobre la biblioteca GLU, vea la Guía de programación de *Open GL* y la Biblioteca de la [utilidad OpenGL](opengl-utility-library.md).
 
 En la tabla siguiente se enumeran las funciones de cuádigos de OpenGL.
 

@@ -4,12 +4,12 @@ description: En esta sección se describe la implementación de la conversión d
 ms.assetid: 2e1af786-f507-453f-bb10-74805ef6b1a9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d54c03ce7e467c7c34ad1ef473078006f24012231d1175b3b6b4b9d43bd3874
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16760091479a306b9dc9c815c7f3a41b25012ca2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118923724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361881"
 ---
 # <a name="the-transmit_as-and-represent_as-attributes"></a>Transmitir \_ como y representar \_ como atributos
 

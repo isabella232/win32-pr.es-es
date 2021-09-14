@@ -4,12 +4,12 @@ ms.assetid: 07f65855-f529-4d57-81fe-150167a03901
 description: 'Más información sobre: Estructuras (COM)'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 638d1f4421a5fe70ec8a4ab1fd499f9a6f3c4f7d2883b5e7638edf4687bca8e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb4926110161f103e3cdac9f55c17945e58d03fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119129657"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253154"
 ---
 # <a name="structures-com"></a>Estructuras (COM)
 

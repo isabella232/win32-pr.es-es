@@ -4,12 +4,12 @@ ms.assetid: 2940b1b2-a0ca-4f81-a576-ae6d53ffd4a8
 description: 'Más información sobre: Registro para Application Recovery'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ce2a67a36b26895fdc16652dd271b3b244d0860c14c268144c1357fa3cf51c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 056232bc2a8a10857ff07900ce261d95ed719b81
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120024595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361964"
 ---
 # <a name="registering-for-application-recovery"></a>Registro para Application Recovery
 
@@ -35,7 +35,7 @@ Debe considerar la posibilidad de guardar periódicamente copias temporales de l
 
 ## <a name="saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update"></a>Guardar los datos y el estado de la aplicación cuando la aplicación se cierra debido a una actualización de software
 
-Si se puede Windows aplicación, la aplicación también debe procesar los mensajes [**\_ WM QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) [**y WM \_ ENDSESSION.**](/windows/desktop/Shutdown/wm-endsession) El instalador envía estos mensajes cuando el instalador necesita que la aplicación se apague para completar la instalación o cuando se requiera un reinicio para completar la instalación. Tenga en cuenta que, en este caso, la aplicación tiene menos tiempo para realizar la recuperación. Por ejemplo, la aplicación debe responder a cada mensaje en un plazo de cinco segundos.
+Si se puede Windows aplicación, la aplicación también debe procesar los mensajes [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) [**y WM \_ ENDSESSION.**](/windows/desktop/Shutdown/wm-endsession) El instalador envía estos mensajes cuando el instalador necesita que la aplicación se apague para completar la instalación o cuando se requiera un reinicio para completar la instalación. Tenga en cuenta que, en este caso, la aplicación tiene menos tiempo para realizar la recuperación. Por ejemplo, la aplicación debe responder a cada mensaje en un plazo de cinco segundos.
 
 En el caso de las aplicaciones de consola que se podrían actualizar, debe considerar la posibilidad de controlar las notificaciones CTRL \_ C \_ EVENT. Para obtener un ejemplo, vea [Registro para reiniciar la aplicación.](registering-for-application-restart.md) El instalador envía esta notificación cuando necesita que la aplicación se apague para completar la actualización. La aplicación tiene 30 segundos para controlar la notificación.
 

@@ -13,12 +13,12 @@ keywords:
 - triángulos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6668b791eed8d2ed3c14fdaa229e4b96126fb28e83fb14b683283e759bd20c4f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e1cb324179137dbf9f9046c0c19acfffdf7394e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119580045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362014"
 ---
 # <a name="t-opengl"></a>T (OpenGL)
 
@@ -50,7 +50,7 @@ Imagen unidimensional que se usa para modificar el color de los fragmentos gener
 <span id="opengl_texture_mapping"></span><span id="OPENGL_TEXTURE_MAPPING"></span>**asignación de textura**
 </dt> <dd>
 
-Proceso de aplicar una imagen (la textura) a una primitiva. La asignación de texturas se usa a menudo para agregar realismo a una escena. Por ejemplo, podría aplicar una imagen de una fachada de edificio a un polígono que representa una pared. Consulte también textura.
+Proceso de aplicación de una imagen (la textura) a una primitiva. La asignación de texturas se usa a menudo para agregar realismo a una escena. Por ejemplo, podría aplicar una imagen de una fachada de edificio a un polígono que representa una pared. Consulte también textura.
 
 </dd> <dt>
 

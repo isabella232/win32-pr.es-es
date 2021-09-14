@@ -4,12 +4,12 @@ ms.assetid: dbb6dc3b-b55e-4f6c-918f-068308e2dba9
 title: Jerarquía de interfaz y objetos de streaming multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b73da4777c2d05ff6455758ebde6e64a9a4c8277e8445ed59dca7f17088baea0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 52339644730139af22fd21fa2c24b8448a1afaf3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120075783"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254318"
 ---
 # <a name="multimedia-streaming-object-and-interface-hierarchy"></a>Jerarquía de interfaz y objetos de streaming multimedia
 

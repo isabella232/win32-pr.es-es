@@ -14,11 +14,11 @@ api_type:
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
 ms.openlocfilehash: 968ff7f64a9a98a711210a4cfae64006c5a8f965
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122481031"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253430"
 ---
 # <a name="encrypt-method-of-the-win32_encryptablevolume-class"></a>Método Encrypt de la clase EncryptableVolume de Win32 \_
 
@@ -60,7 +60,7 @@ El valor predeterminado de Windows 7 o inferior es: 1 (AES \_ 128 \_ WITH \_ DIF
 
 El valor predeterminado de Windows 8, Windows 8.1 o Windows 10 versión 1507 es: 3 (AES \_ 128).
 
-El valor predeterminado de Windows 10 versión 1511 o posterior es: 6 (XTS \_ AES \_ 128).
+El valor predeterminado Windows 10 versión 1511 o posterior es: 6 \_ (XTS AES \_ 128).
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Combinación de 32 bits con los siguientes bits definidos actualmente.
 
 
 
-| Valor                                                                                  | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Value                                                                                  | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0x00000001</dt> </dl>  | Realizar el cifrado de volumen en modo de cifrado solo de datos al iniciar el nuevo proceso de cifrado. Si el cifrado se ha pausado o detenido, al llamar al método **Encrypt** se reanuda de forma eficaz la conversión y se omite el valor de este bit. Este bit solo tiene efecto cuando los métodos **Encrypt** o [**EncryptAfterHardwareTest**](encryptafterhardwaretest-win32-encryptablevolume.md) inician el cifrado desde el estado completamente descifrado, descifrado en estado en curso o estado en pausa de descifrado. Si este bit es cero, lo que significa que no está establecido, al iniciar el nuevo proceso de cifrado, se realizará la conversión en modo completo.<br/> |
 | <dl> <dt>0x00000002</dt> </dl>  | Realice el borrado a petición del espacio libre del volumen. Solo se permite llamar al método **Encrypt** con este conjunto de bits cuando el volumen no se está convirtiendo o limpiando actualmente y está en un estado "cifrado".<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -115,7 +115,7 @@ Este método devuelve inmediatamente. Si el volumen ya está totalmente cifrado 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando se usa este método sin el segundo parámetro opcional (según la definición de Windows 7 y Windows Vista Enterprise), el método siempre iniciará la conversión en modo completo para mantener el comportamiento compatible con versiones anteriores. De este modo, la expectativa de seguridad de las aplicaciones y scripts existentes no se verá rota con la adición del segundo parámetro opcional en Windows 8 y Windows Server 2012.
 
@@ -123,15 +123,15 @@ Puede llamar a [**GetConversionStatus para**](getconversionstatus-win32-encrypta
 
 Una vez que el volumen está totalmente cifrado y si se han agregado y habilitado protectores de clave, el estado de protección del volumen cambia a "activado".
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista Ultimate \[\]<br/>                       |
+| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/>                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |

@@ -4,12 +4,12 @@ ms.assetid: f5fda405-8a09-495e-aa8c-b808a2f02b0f
 title: Actualizar tabla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab3085de7bb834e907ce7b5f1edbee388f5e48b5f72489954aacf3d9e85c2de3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b48ce49f0f931209ccf472cd74b352c270353a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039202"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254133"
 ---
 # <a name="upgrade-table"></a>Actualizar tabla
 
@@ -21,13 +21,13 @@ La tabla Upgrade contiene las columnas que se muestran en la tabla siguiente.
 
 | Columna         | Tipo                         | Clave | Nullable |
 |----------------|------------------------------|-----|----------|
-| UpgradeCode    | [GUID](guid.md)             | Y   | N        |
+| UpgradeCode    | [GUID](guid.md)             | Y   | No        |
 | VersionMin     | [Texto](text.md)             | Y   | Y        |
 | VersionMax     | [Texto](text.md)             | Y   | Y        |
 | Lenguaje       | [Texto](text.md)             | Y   | Y        |
-| Atributos     | [Entero](integer.md)       | Y   | N        |
-| Quitar         | [Formato](formatted.md)   | N   | Y        |
-| ActionProperty | [Identificador](identifier.md) | N   | N        |
+| Atributos     | [Entero](integer.md)       | Y   | No        |
+| Remove         | [Formato](formatted.md)   | No   | Y        |
+| ActionProperty | [Identificador](identifier.md) | No   | No        |
 
 
 
@@ -56,7 +56,7 @@ VersionMin debe ser una versión válida del producto como se describe para la [
 <span id="VersionMax"></span><span id="versionmax"></span><span id="VERSIONMAX"></span>VersionMax
 </dt> <dd>
 
-Límite superior del intervalo de versiones de producto detectado por la [acción FindRelatedProducts.](findrelatedproducts-action.md) Escriba **msidbUpgradeAttributesVersionMaxInclusive** en Atributos para incluir VersionMax en el intervalo. Si VersionMax es una cadena vacía (""), se evalúa igual que 0. Si VersionMax es null, FindRelatedProducts omite **msidbUpgradeAttributesVersionMaxInclusive** y detecta todas las versiones del producto mayores (o mayores o iguales que) el límite inferior especificado por VersionMin y **msidbUpgradeAttributesVersionMinInclusive**. VersionMin y VersionMax no deben ser null.
+Límite superior del intervalo de versiones de producto detectado por la [acción FindRelatedProducts.](findrelatedproducts-action.md) Escriba **msidbUpgradeAttributesVersionMaxInclusive** en Atributos para incluir VersionMax en el intervalo. Si VersionMax es una cadena vacía (""), se evalúa igual que 0. Si VersionMax es NULL, FindRelatedProducts omite **msidbUpgradeAttributesVersionMaxInclusive** y detecta todas las versiones del producto mayores (o mayores o iguales que) el límite inferior especificado por VersionMin y **msidbUpgradeAttributesVersionMinInclusive.** VersionMin y VersionMax no deben ser null.
 
 VersionMax debe ser una versión de producto válida como se describe para la [**propiedad ProductVersion.**](productversion.md) Tenga en cuenta Windows instalador usa solo los tres primeros campos de la versión del producto. Si incluye un cuarto campo en la versión del producto, el instalador omite el cuarto campo.
 
@@ -91,17 +91,17 @@ Esta columna contiene marcas de bits que especifican los atributos de la tabla U
 
 </dd> <dt>
 
-<span id="Remove"></span><span id="remove"></span><span id="REMOVE"></span>eliminar
+<span id="Remove"></span><span id="remove"></span><span id="REMOVE"></span>Eliminar
 </dt> <dd>
 
-El instalador establece la [**propiedad REMOVE**](remove.md) en las características especificadas en esta columna. Las características que se quitarán se pueden determinar en tiempo de ejecución. La [cadena con formato](formatted.md) especificada en este campo debe evaluarse como una lista delimitada por comas de nombres de características. Por ejemplo: \[ Feature1 \] , \[ Feature2 \] , \[ Feature3 \] . No se quita ninguna características si el campo contiene texto con formato que se evalúa como una cadena vacía (""). El instalador establece REMOVE=ALL solo si el campo Quitar está vacío. Observe la diferencia entre una cadena vacía y un campo vacío. Si el campo está vacío, es null.
+El instalador establece la [**propiedad REMOVE**](remove.md) en las características especificadas en esta columna. Las características que se quitarán se pueden determinar en tiempo de ejecución. La [cadena con formato](formatted.md) especificada en este campo debe evaluarse como una lista delimitada por comas de nombres de características. Por ejemplo: \[ Feature1 \] , \[ Feature2 \] , \[ Feature3 \] . No se quita ninguna características si el campo contiene texto con formato que se evalúa como una cadena vacía (""). El instalador establece REMOVE=ALL solo si el campo Quitar está vacío. Observe la diferencia entre una cadena vacía y un campo vacío. Si el campo está vacío, es NULL.
 
 </dd> <dt>
 
 <span id="ActionProperty"></span><span id="actionproperty"></span><span id="ACTIONPROPERTY"></span>ActionProperty
 </dt> <dd>
 
-Cuando la [acción FindRelatedProducts](findrelatedproducts-action.md) detecta un producto relacionado instalado en el sistema, anexa el código de producto a la propiedad especificada en este campo. La propiedad especificada en esta columna debe ser una propiedad pública y el autor del paquete debe agregar la propiedad a la [**propiedad SecureCustomProperties.**](securecustomproperties.md) Cada fila de la tabla Upgrade debe tener un valor ActionProperty único. Después de FindRelatedProducts, el valor de esta propiedad es una lista de códigos de producto, separados por punto y coma (;), detectados en el sistema.
+Cuando la [acción FindRelatedProducts](findrelatedproducts-action.md) detecta un producto relacionado instalado en el sistema, anexa el código de producto a la propiedad especificada en este campo. La propiedad especificada en esta columna debe ser una propiedad pública y el autor del paquete debe agregar la propiedad a [**la propiedad SecureCustomProperties.**](securecustomproperties.md) Cada fila de la tabla Upgrade debe tener un valor ActionProperty único. Después de FindRelatedProducts, el valor de esta propiedad es una lista de códigos de producto, separados por punto y coma (;), detectados en el sistema.
 
 </dd> </dl>
 

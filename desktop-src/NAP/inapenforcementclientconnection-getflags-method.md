@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aea1815a8892f5d072f72d32d433070038b35cd663f10dfba08422a81153660
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a35e183b5d4f606d21f4afce8cca68135732a35c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119781055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362158"
 ---
 # <a name="inapenforcementclientconnectiongetflags-method"></a>INapEnforcementClientConnection::GetFlags (método)
 
@@ -74,17 +74,17 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

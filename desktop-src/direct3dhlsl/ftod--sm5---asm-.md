@@ -4,12 +4,12 @@ description: Conversión por componente de datos de punto flotante de precisión
 ms.assetid: 95297556-41ED-4ED0-8F9A-16B7A440AF25
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d31396aa0f2b82dc4ea366bbdde704d55fa850d0d0a9f2f1f3de539a763facb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6790735745805426d32aefcc5d5d771ade644e43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119982435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361573"
 ---
 # <a name="ftod-sm5---asm"></a>ftod (sm5 - asm)
 
@@ -35,7 +35,7 @@ Conversión por componente de datos de punto flotante de precisión sencilla a d
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada componente del origen se convierte de la representación de precisión sencilla a la representación de precisión doble.
 
@@ -43,7 +43,7 @@ Las máscaras *dest* válidas son .xy, .zw y .xyzw. .xy recibe el resultado de l
 
 *dest* es un vec2 doble entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
 
-*src* es un vec2 float a través de x e y (zw ignored) (post swconfle).
+*src* es un vec2 flotante entre x e y (zw omitido) (después de swzzle).
 
 Para las conversiones<->float32, las implementaciones pueden respetar los desnormados float32 o vaciarlos.
 
@@ -51,7 +51,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -67,9 +67,9 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |

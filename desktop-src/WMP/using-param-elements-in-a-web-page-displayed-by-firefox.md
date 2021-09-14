@@ -1,6 +1,6 @@
 ---
-title: Usar elementos PARAM en una página web mostrada por Firefox
-description: Usar elementos PARAM en una página web mostrada por Firefox
+title: Uso de elementos PARAM en una página web mostrada por Firefox
+description: Uso de elementos PARAM en una página web mostrada por Firefox
 ms.assetid: 8403c6f4-f221-4411-b49c-f0c9c22943df
 keywords:
 - Reproductor de Windows Media,PARAM en el elemento OBJECT
@@ -15,23 +15,23 @@ keywords:
 - Elementos PARAM del elemento OBJECT
 - Reproductor de Windows Media,Firefox
 - Reproductor de Windows Media modelo de objetos,Firefox
-- object model,Firefox
+- modelo de objetos, Firefox
 - Reproductor de Windows Media Mobile,Firefox
-- Reproductor de Windows Media ActiveX control,Firefox
+- control Reproductor de Windows Media ActiveX, Firefox
 - Reproductor de Windows Media Control de ActiveX móvil,Firefox
 - ActiveX control, Firefox
 - Elementos Firefox,PARAM en el elemento OBJECT
-- Inserción de páginas web, Firefox
+- Inserción de páginas web,Firefox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 767b9b0d5e4367a17f07f68600ff8e9cac488ca9e4c950165d84677fd7d03956
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b045d111ff3cd0de09f54a8cf7ac25028fa1dc6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118117310"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361726"
 ---
-# <a name="using-param-elements-in-a-web-page-displayed-by-firefox"></a>Usar elementos PARAM en una página web mostrada por Firefox
+# <a name="using-param-elements-in-a-web-page-displayed-by-firefox"></a>Uso de elementos PARAM en una página web mostrada por Firefox
 
 Puede usar elementos PARAM dentro de un elemento OBJECT para establecer el estado inicial del control Player. Por ejemplo, los elementos PARAM del ejemplo siguiente especifican que el control debe reproducir seattle.wmv automáticamente.
 

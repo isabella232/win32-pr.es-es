@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c08e22ad44cb1eec461ebe70361a8ee4640a7fdf5a7eb7040b2774a520be7a05
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bfb26f6c71d544e0c0a6a4d833b40a5d15ae5485
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119904365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361745"
 ---
 # <a name="event-schema"></a>Esquema de eventos
 
-El esquema de eventos define los siguientes elementos y tipos que identifican los elementos y atributos de un evento registrado:
+El esquema event define los siguientes elementos y tipos que identifican los elementos y atributos de un evento registrado:
 
 -   [Elementos EventSchema](eventschema-elements.md)
 -   [Tipos simples de EventSchema](eventschema-simple-types.md)
@@ -28,11 +28,11 @@ La sección elements contiene los nombres de los elementos que encontraría en u
 
 El SDK Windows incluye el esquema en el \\ archivo \\ Include Event.xsd.
 
-Puede usar este esquema para identificar los elementos y atributos al llamar a la función [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para representar secciones o propiedades específicas del evento. Para obtener un ejemplo que muestra cómo usar este esquema al representar eventos, vea [Eventos de representación](rendering-events.md).
+Puede usar este esquema para identificar los elementos y atributos al llamar a la función [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para representar secciones o propiedades específicas del evento. Para obtener un ejemplo en el que se muestra cómo usar este esquema al representar eventos, vea [Rendering Events](rendering-events.md).
 
 Además del esquema de eventos, Windows registro de eventos también define los esquemas siguientes:
 
--   [Esquema EventManifest:](eventmanifestschema-schema.md)define los elementos y tipos usados para escribir un manifiesto de instrumentación.
+-   [Esquema eventManifest:](eventmanifestschema-schema.md)define los elementos y tipos usados para escribir un manifiesto de instrumentación.
 -   [Esquema de](queryschema-schema.md)consulta: define los elementos y tipos usados para escribir una consulta para recuperar eventos de uno o varios canales.
 
  

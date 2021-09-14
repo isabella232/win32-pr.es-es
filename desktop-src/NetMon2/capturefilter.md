@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: de5ab95ab395d50afb41223a458342706da1df7434d524f21c230436b3b9c7b6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 129575ba401aed0e78f52695a49139f4143c9c87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117796365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253917"
 ---
 # <a name="capturefilter-structure"></a>Estructura CAPTUREFILTER
 
@@ -44,7 +44,7 @@ typedef struct _CAPTUREFILTER {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -55,11 +55,11 @@ Marcas que describen el contenido del filtro de captura.
 
 
 
-| Valor                                                                                                                                                                                                                                                                                                   | Significado                                             |
+| Value                                                                                                                                                                                                                                                                                                   | Significado                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | <span id="CAPTUREFILTER_FLAGS_INCLUDE_ALL_SAPS"></span><span id="capturefilter_flags_include_all_saps"></span><dl> <dt>**CAPTUREFILTER \_ LAS MARCAS \_ INCLUYEN \_ TODAS las \_ 0x0001**</dt> <dt></dt> </dl>       | Incluye todas las SAP como fotogramas aceptables.<br/>  |
 | <span id="CAPTUREFILTER_FLAGS_INCLUDE_ALL_ETYPES"></span><span id="capturefilter_flags_include_all_etypes"></span><dl> <dt>**CAPTUREFILTER \_ LAS MARCAS \_ INCLUYEN \_ TODOS LOS \_ ETYPES**</dt> <dt>0x0002</dt> </dl> | Incluya todos los Etypes como fotogramas aceptables.<br/> |
-| <span id="CAPTUREFILTER_FLAGS_LOCAL_ONLY"></span><span id="capturefilter_flags_local_only"></span><dl> <dt>**CAPTUREFILTER \_ MARCA SOLO \_ \_ LAS 0X0008**</dt> <dt></dt> </dl>                          | Sin modo P<br/>                                |
+| <span id="CAPTUREFILTER_FLAGS_LOCAL_ONLY"></span><span id="capturefilter_flags_local_only"></span><dl> <dt>**CAPTUREFILTER \_ MARCA SOLO \_ \_ LA CONFIGURACIÓN**</dt> <dt>0X0008</dt> </dl>                          | Sin modo P<br/>                                |
 | <span id="CAPTUREFILTER_FLAGS_KEEP_RAW"></span><span id="capturefilter_flags_keep_raw"></span><dl> <dt>**CAPTUREFILTER \_ FLAGS \_ KEEP \_ RAW**</dt> <dt>0x0020</dt> </dl>                                | Mantenga tramas MAC de anillo de token y SMT.<br/>      |
 
 
@@ -131,7 +131,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La combinación de marcas, valores y expresiones determina qué marcos pasará el controlador que usa estos datos de estructura. Para obtener más información sobre cómo implementar una **estructura CAPTUREFILTER,** vea [Filtros de captura](capture-filters.md).
 
@@ -139,7 +139,7 @@ La combinación de marcas, valores y expresiones determina qué marcos pasará e
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -147,7 +147,7 @@ La combinación de marcas, valores y expresiones determina qué marcos pasará e
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -157,7 +157,7 @@ La combinación de marcas, valores y expresiones determina qué marcos pasará e
 [ADDRESSPAIR](addresspair.md)
 </dt> <dt>
 
-[Expresión](expression.md)
+[EXPRESIÓN](expression.md)
 </dt> <dt>
 
 [ANDEXP](andexp.md)

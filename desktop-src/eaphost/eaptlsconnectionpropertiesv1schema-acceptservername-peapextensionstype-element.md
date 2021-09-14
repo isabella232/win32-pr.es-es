@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 245fcac23de64c6f392cccfbacf1def48fc6465c0f1fbaf7fc004ac628f5864c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 886f1ab2a6f00a4a8a9d530fa41865b2fd0cf0b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252878"
 ---
 # <a name="tlsextensions-v1-schema"></a>TLSExtensions (esquema v1)
 
@@ -35,7 +35,7 @@ El **elemento TLSExtensions (EapType)** permite futuras mejoras en el esquema.
 
 El elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) define el elemento .
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **elemento TLSExtensions** es opcional.
 
@@ -43,14 +43,14 @@ El **elemento TLSExtensions** es opcional.
 
 
 
-| Rol | Versión mínima admitida del sistema operativo |
+| Role | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Cliente<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Remoto<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>              |
 | Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

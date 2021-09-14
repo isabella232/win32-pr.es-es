@@ -1,7 +1,7 @@
 ---
-description: La función CCHeapAlloc asigna memoria en función de la captura.
+description: La función CCHeapAlloc asigna memoria en función de la captura por captura.
 ms.assetid: 6403c35f-d78f-48dc-90cc-0b76260bbab7
-title: Función CCHeapAlloc (Netmon. h)
+title: Función CCHeapAlloc (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Nmapi.dll
 ms.openlocfilehash: 14fce9f56103803e575d295799a5c5971ed1c459
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909417"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253916"
 ---
-# <a name="ccheapalloc-function"></a>CCHeapAlloc función)
+# <a name="ccheapalloc-function"></a>Función CCHeapAlloc
 
-La función **CCHeapAlloc** asigna memoria en función de la captura.
+La **función CCHeapAlloc** asigna memoria en función de la captura por captura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,22 +43,22 @@ LPVOID WINAPI CCHeapAlloc(
 *dwBytes* 
 </dt> <dd>
 
-Longitud de memoria solicitada asignada.
+Longitud de memoria asignada solicitada.
 
 </dd> <dt>
 
 *bZeroInit* 
 </dt> <dd>
 
-Indicador de si se inicializó la memoria asignada. Si el valor del parámetro es **true**, la memoria asignada se inicializa en cero.
+Indicador de si se inicializó la memoria asignada. Si el valor del parámetro **es TRUE**, la memoria asignada se inicializa en cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es un puntero a la memoria asignada. Cuando haya terminado de usar la memoria asignada, libere la memoria mediante una llamada a la función [**CCHeapFree**](ccheapfree.md) .
+Si la función se realiza correctamente, el valor devuelto es un puntero a la memoria asignada. Cuando haya terminado de usar la memoria asignada, liberar la memoria mediante una llamada a la [**función CCHeapFree.**](ccheapfree.md)
 
-Si la función no se realiza correctamente, el valor devuelto es **null**.
+Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,8 +68,8 @@ Si la función no se realiza correctamente, el valor devuelto es **null**.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

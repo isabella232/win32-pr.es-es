@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 7c07f6f3e4569c06f0b3890e3ef3a26bca10b3272849fc005dfb3be6cbc2836b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2955aa3367648c4e9e23fd748fa27d6343ef78a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118367222"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253833"
 ---
 # <a name="createpropertydatabase-function"></a>Función CreatePropertyDatabase
 
@@ -72,17 +72,17 @@ Si la función no se realiza correctamente, el valor devuelto es un código de e
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo se debe llamar a la función **CreatePropertyDatabase** al implementar la [función Register.](register-parser.md) El analizador usa **CreatePropertyDatabase para** crear una base de datos de propiedades que describe las propiedades de un protocolo. Monitor de red utiliza la base de datos para interpretar la información dentro del protocolo.
 
-La **función CreatePropertyDatabase** asigna las estructuras que Monitor de red para mantener una base de datos de propiedades.
+La **función CreatePropertyDatabase** asigna las estructuras que Monitor de red debe mantener una base de datos de propiedades.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

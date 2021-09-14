@@ -4,16 +4,16 @@ ms.assetid: 99c69290-545a-4368-8f51-74e547c9466d
 title: Reproducción de audio WMA multicanal en DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3e7f7841677a7b7bc4087b2644632bbf6ec9cd48bccc15274506c6c57f96f89
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 400ee9f0cede6c7268bcd3632365db1b423d114e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119830985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254330"
 ---
 # <a name="multichannel-wma-audio-playback-in-directshow"></a>Reproducción de audio WMA multicanal en DirectShow
 
-Para reproducir un archivo de audio multimedia Windows multicanal en DirectShow, debe establecer la propiedad **MFPKEY \_ WMADEC \_ HIRESOUTPUT** directamente en el descodificador después de que se haya conectado al lector ASF de WM. Esta propiedad se define en el archivo de encabezado wmcodecdsp.h, que está disponible en Windows SDK.
+Para reproducir un archivo de audio multimedia Windows multicanal en DirectShow, debe establecer la propiedad **MFPKEY \_ WMADEC \_ HIRESOUTPUT** directamente en el descodificador después de que se haya conectado al lector ASF wm. Esta propiedad se define en el archivo de encabezado wmcodecdsp.h, que está disponible en el SDK Windows.
 
 > [!Note]  
 > Este procedimiento de configuración solo se admite para los archivos que no están protegidos por Digital Rights Management.
@@ -24,12 +24,12 @@ Los pasos básicos para habilitar la salida multicanal son los siguientes:
 
 1.  Llame **a RenderFile** para crear el gráfico de filtro.
 2.  Obtenga un puntero al filtro DMO contenedor.
-3.  Desconecte el contenedor DMO del representador de audio.
+3.  Desconecte el DMO contenedor del representador de audio.
 4.  Use la **interfaz IPropertyBag** para establecer la **propiedad MFPKEY \_ WMADEC \_ HIRESOUTPUT** en el descodificador. El nombre de propiedad se define mediante la constante global **g \_ wszWMACHiResOutput**.
 5.  Vuelva a conectar DMO contenedor y el representador de audio.
 6.  Ejecute el gráfico.
 
-Los fragmentos de código siguientes muestran estos pasos. Este código supone que el archivo de origen contiene una secuencia de audio y ninguna secuencia de vídeo. El códec de DMO no admite la **propiedad MFPKEY \_ WMADEC \_ HIRESOUTPUT.**
+Los siguientes fragmentos de código muestran estos pasos. Este código supone que el archivo de origen contiene una secuencia de audio y ninguna secuencia de vídeo. El códec de DMO no admite la **propiedad MFPKEY \_ WMADEC \_ HIRESOUTPUT.**
 
 
 ```C++

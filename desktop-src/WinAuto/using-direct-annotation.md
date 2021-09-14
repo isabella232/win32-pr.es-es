@@ -4,12 +4,12 @@ description: Usar anotación directa
 ms.assetid: d9d78e74-dcab-4974-945f-e8c5d42c04b7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e8543b5aa4e6beb86b6119d13fe71ad45c1a34776e19095170cb48d8d9f48e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78f0bdea5af896329b6836d21ca1dcee25bc2739
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117744890"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253227"
 ---
 # <a name="using-direct-annotation"></a>Usar anotación directa
 

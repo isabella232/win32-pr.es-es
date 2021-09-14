@@ -4,12 +4,12 @@ ms.assetid: 51607aad-9fa8-4db6-bd2a-3821dce619e7
 title: 'Programa C de ejemplo: uso de CryptProtectData'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6639bc3f0dbabc3b82c41aaa858d9ad1c8a5b9e7b10661a3a53f7b1730baad40
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 87359bf6e4d90c4e46140aa9e114ffabf0a5ad80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119140778"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253466"
 ---
 # <a name="example-c-program-using-cryptprotectdata"></a>Programa C de ejemplo: uso de CryptProtectData
 
@@ -22,7 +22,7 @@ En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 -   Usar [**CryptUnprotectData para**](/windows/desktop/api/Dpapi/nf-dpapi-cryptunprotectdata) descifrar los datos.
 -   Usar [**LocalFree para**](/windows/win32/api/winbase/nf-winbase-localfree) liberar memoria asignada.
 
-En este ejemplo se usa [**la función MyHandleError.**](myhandleerror.md) El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se muestra [en De uso general Functions](general-purpose-functions.md).
+En este ejemplo se usa [**la función MyHandleError.**](myhandleerror.md) El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 En el ejemplo siguiente se muestra cómo proteger los datos.
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 70709223d5dcebcae819389feb8623006b793126a911fc674491b1d665268056
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 450bb4e4b158a937d48d753a5ff5c831f8fa58c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119911205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253850"
 ---
 # <a name="createhandofftable-function"></a>Función CreateHandoffTable
 
@@ -84,7 +84,7 @@ Si la función se realiza correctamente, el valor devuelto es el número de entr
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La tabla de entrega creada por Monitor de red se basa en la información proporcionada en la ini del analizador. El identificador devuelto a la tabla de entrega se puede usar para obtener un identificador para uno de los protocolos incluidos en la tabla. Para obtener un identificador de uno de estos protocolos, llame a [GetProtocolFromTable](getprotocolfromtable.md).
 
@@ -104,7 +104,7 @@ Observe que la aplicación de analizador nunca accede directamente a la **estruc
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

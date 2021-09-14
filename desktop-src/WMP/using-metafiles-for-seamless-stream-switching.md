@@ -25,12 +25,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d4efc4a23f0464446675d9de20d57750bd230d2eef26d31714e2129e380ae9e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29496c71c0c849480bae029f246bfd544667071e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120001575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361727"
 ---
 # <a name="using-metafiles-for-seamless-stream-switching"></a>Uso de metarchivos para la conmutación de secuencias sin problemas
 

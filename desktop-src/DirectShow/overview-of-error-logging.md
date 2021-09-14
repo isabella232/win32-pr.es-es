@@ -4,12 +4,12 @@ ms.assetid: 1037f354-0415-4a5c-a96c-20ae714981af
 title: Información general sobre el registro de errores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcde3e0366ffca12dfcb5674259273ba1bbf25c1feed9be3ead57fa64cc42dc4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4af82c35cdb34a238e280641015407c7a5d6f837
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119904635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362355"
 ---
 # <a name="overview-of-error-logging"></a>Información general sobre el registro de errores
 
@@ -21,7 +21,7 @@ El método de devolución de llamada de registro de errores se encuentra en una 
 
 Tiene varias opciones para implementar estas interfaces COM. Puede usar el Active Template Library (ATL), que proporciona implementaciones estándar de los **métodos IUnknown.** DirectShow también proporciona una clase base de C++, [**CUnknown,**](cunknown.md)que facilita la implementación de una interfaz COM. Para obtener información sobre **el uso de CUnknown,** [vea How to Implement IUnknown](how-to-implement-iunknown.md).
 
-El código de ejemplo de este artículo define una clase de C++ autocontenida, que implementa **IUnknown** y **IAMErrorLog**. El resultado no es un objeto COM verdadero, porque no admite **CoCreateInstance**. Sin embargo, este enfoque es adecuado para el propósito del ejemplo.
+El código de ejemplo de este artículo define una clase de C++ independiente, que implementa **tanto IUnknown** como **IAMErrorLog**. El resultado no es un objeto COM verdadero, porque no admite **CoCreateInstance**. Sin embargo, este enfoque es adecuado para el propósito del ejemplo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

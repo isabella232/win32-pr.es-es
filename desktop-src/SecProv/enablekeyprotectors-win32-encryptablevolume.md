@@ -14,11 +14,11 @@ api_type:
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
 ms.openlocfilehash: d90e37f800a9c224abefb21253f7e74c2bc08401
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474931"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253431"
 ---
 # <a name="enablekeyprotectors-method-of-the-win32_encryptablevolume-class"></a>Método EnableKeyProtectors de la clase EncryptableVolume de Win32 \_
 
@@ -64,7 +64,7 @@ Si los protectores de clave ya están habilitados y no se producen otros errores
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el volumen está totalmente cifrado, la ejecución correcta de este método garantiza que el volumen está protegido. Si el volumen está cifrado parcialmente, ejecutar correctamente este método implica que el volumen se protegerá cuando se cifra completamente. Para obtener más información, vea el [**método GetProtectionStatus.**](getprotectionstatus-win32-encryptablevolume.md)
 
@@ -76,9 +76,9 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows aplicaciones de escritorio de Vista Ultimate \[\]<br/>                       |
+| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista Ultimate \[\]<br/>                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |

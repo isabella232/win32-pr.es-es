@@ -5,12 +5,12 @@ ms.assetid: d007cbb9-b547-4dc7-bc22-b526f650f7c2
 title: D (Glosario de seguridad)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db61a5543bd15111bfa2ee0b717d01ab0c22ca278a2e5c50120509edc4ae7b39
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f81a17b2ba2c34b6d5367c1f920ad4b2a4048b2b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117970368"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361827"
 ---
 # <a name="d-security-glossary"></a>D (Glosario de seguridad)
 
@@ -18,14 +18,14 @@ ms.locfileid: "117970368"
 
 <dl> <dt>
 
-<span id="_security_dac_gly"></span><span id="_SECURITY_DAC_GLY"></span>**Dac**
+<span id="_security_dac_gly"></span><span id="_SECURITY_DAC_GLY"></span>**DAC**
 </dt> <dd>
 
 Consulte *control de acceso dinámico.*
 
 </dd> <dt>
 
-<span id="_security_dacl_gly"></span><span id="_SECURITY_DACL_GLY"></span>**Dacl**
+<span id="_security_dacl_gly"></span><span id="_SECURITY_DACL_GLY"></span>**DACL**
 </dt> <dd>
 
 Consulte *la lista de control de acceso discrecional*.
@@ -92,7 +92,7 @@ Configuración predeterminada, como el modo de cifrado de cifrado de bloques o e
 
 </dd> <dt>
 
-<span id="_security_der_gly"></span><span id="_SECURITY_DER_GLY"></span>**Der**
+<span id="_security_der_gly"></span><span id="_SECURITY_DER_GLY"></span>**DER**
 </dt> <dd>
 
 Vea *reglas de codificación distinguida*.
@@ -106,14 +106,14 @@ Clave criptográfica creada por una llamada a la **función CryptDeriveKey.** Se
 
 </dd> <dt>
 
-<span id="_security_des_gly"></span><span id="_SECURITY_DES_GLY"></span>**Des**
+<span id="_security_des_gly"></span><span id="_SECURITY_DES_GLY"></span>**DES**
 </dt> <dd>
 
 Consulte *Estándar de cifrado de datos.*
 
 </dd> <dt>
 
-<span id="_security_dh_gly"></span><span id="_SECURITY_DH_GLY"></span>**Dh**
+<span id="_security_dh_gly"></span><span id="_SECURITY_DH_GLY"></span>**DH**
 </dt> <dd>
 
 Consulte *el algoritmo Diffie-Hellman*.
@@ -141,7 +141,7 @@ Vea también *Diffie-Hellman (almacenar* y reenviar) el algoritmo de intercambio
 <span id="_security_diffie_hellman_store_and_forward_key_exchange_algorithm_gly"></span><span id="_SECURITY_DIFFIE_HELLMAN_STORE_AND_FORWARD_KEY_EXCHANGE_ALGORITHM_GLY"></span>**Algoritmo de intercambio de claves Diffie-Hellman (almacenamiento y reenvío)**
 </dt> <dd>
 
-Algoritmo Diffie-Hellman donde se conservan los valores de clave de intercambio (en el CSP) una vez que se ha destruyedo el identificador de clave.
+Algoritmo Diffie-Hellman donde se conservan los valores de clave de intercambio (en el CSP) después de destruir el identificador de clave.
 
 Vea también *Diffie-Hellman (efímero) algoritmo* de intercambio de claves .
 
@@ -221,21 +221,21 @@ Consulte también [*lista de control de acceso*](a-gly.md) y lista de control de
 
 </dd> <dt>
 
-<span id="_security_dll_gly"></span><span id="_SECURITY_DLL_GLY"></span>**Dll**
+<span id="_security_dll_gly"></span><span id="_SECURITY_DLL_GLY"></span>**DLL**
 </dt> <dd>
 
 Vea *biblioteca de vínculos dinámicos.*
 
 </dd> <dt>
 
-<span id="_security_dsa_gly"></span><span id="_SECURITY_DSA_GLY"></span>**Dsa**
+<span id="_security_dsa_gly"></span><span id="_SECURITY_DSA_GLY"></span>**DSA**
 </dt> <dd>
 
 Vea *Algoritmo de firma digital*.
 
 </dd> <dt>
 
-<span id="_security_dss_gly"></span><span id="_SECURITY_DSS_GLY"></span>**Dss**
+<span id="_security_dss_gly"></span><span id="_SECURITY_DSS_GLY"></span>**DSS**
 </dt> <dd>
 
 Consulte *Estándar de firma digital.*

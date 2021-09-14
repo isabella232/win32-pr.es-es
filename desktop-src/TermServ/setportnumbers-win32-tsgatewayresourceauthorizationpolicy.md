@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método SetPortNumbers Servicios de Escritorio remoto
 - Método SetPortNumbers Servicios de Escritorio remoto , Win32_TSGatewayResourceAuthorizationPolicy clase
-- Win32_TSGatewayResourceAuthorizationPolicy clase Servicios de Escritorio remoto método , SetPortNumbers
+- Win32_TSGatewayResourceAuthorizationPolicy clase Servicios de Escritorio remoto , método SetPortNumbers
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c151302abfda0b6bc42566770c0e8b8fb10dbab789cf2ece886be557efb023e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b938435abab23e3ad27cf13dbe65e64b9ec859eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119987775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253305"
 ---
 # <a name="setportnumbers-method-of-the-win32_tsgatewayresourceauthorizationpolicy-class"></a>Método SetPortNumbers de la clase \_ TSGatewayResourceAuthorizationPolicy de Win32
 
@@ -46,11 +46,11 @@ uint32 SetPortNumbers(
 *PortNumbers* \[ En\]
 </dt> <dd>
 
-Lista de números de puerto separados por punto y coma que se permiten para esta directiva Escritorio remoto autorización de recursos de escritorio remoto (RD RAP). Para permitir cualquier número de puerto, establezca " \* ".
+Lista de números de puerto separados por punto y coma que se permiten para esta directiva Escritorio remoto autorización de recursos (RD RAP). Para permitir cualquier número de puerto, establezca " \* ".
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
@@ -62,17 +62,17 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_TSGatewayResourceAuthorizationPolicy de Win32**](win32-tsgatewayresourceauthorizationpolicy.md)
+[**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> </dl>
 
  

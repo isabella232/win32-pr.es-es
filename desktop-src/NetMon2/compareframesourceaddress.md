@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 8738f1322f30baeb5152f5f453cc8d77c74405889caaf667a3d73413d9cdad96
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a100273c37e25a7b1deba86ed2704886dbfccc7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119891105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253863"
 ---
 # <a name="compareframesourceaddress-function"></a>Función CompareFrameSourceAddress
 
@@ -60,7 +60,7 @@ Si las direcciones son las mismas, el valor devuelto es **TRUE.**
 
 Si las direcciones no son las mismas, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para que **la función CompareFrameSourceAddress** se haga correctamente, el tipo de dirección de origen debe coincidir con el tipo de dirección especificado en el *parámetro lpAddress.*
 
@@ -82,7 +82,7 @@ Monitor de red proporciona otras dos funciones para comparar direcciones: [Compa
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

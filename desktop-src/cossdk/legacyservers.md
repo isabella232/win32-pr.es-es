@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 3968b3cb7068f994d3ff44e7182add2b1e3cb7a44c0d73019cf583a0e8c7f70f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ea542fa539ea1eb1cceae0f4cb8ba8dc2012085
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118306363"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361688"
 ---
 # <a name="legacyservers-collection"></a>Colección LegacyServers
 
@@ -25,7 +25,7 @@ Idéntico a la [**colección InprocServers,**](inprocservers.md) salvo que esta 
 
 Esta colección no admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección LegacyServers** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -46,7 +46,7 @@ Puede navegar a esta colección desde las siguientes colecciones:
 El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
 
 -   [Classname](#classname)
--   [Clsid](#clsid)
+-   [CLSID](#clsid)
 -   [InprocServer32](#inprocserver32)
 -   [LocalServer32](#localserver32)
 -   [ProgID](#progid)
@@ -131,7 +131,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

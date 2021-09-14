@@ -4,12 +4,12 @@ description: En el servidor, el compilador MIDL crea una variable de estado que 
 ms.assetid: 7cc59cb3-cf41-40f7-a28f-b896c319ae64
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d12c5ef5549d89f3aee2833599f5930f2617478e66e16c3b78188eb63a40e7d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6d7ec8af1907c98b7cf2098f4979dac62ef573a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118924075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361894"
 ---
 # <a name="the-pipe-state"></a>Estado de canalización
 

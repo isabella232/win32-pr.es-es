@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 323afb66d251d58bf13670fd335da2bd26ad2193ce03d5aa799ddb0f28e875fc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fd72ef0281615c0b56176e86ee9bb3659b498a0b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119744725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253880"
 ---
 # <a name="compareaddresses-function"></a>Función CompareAddresses
 
@@ -62,11 +62,11 @@ Si el *parámetro lpAddress1* especifica una dirección que es menor que la dire
 
 Si el *parámetro lpAddress1* especifica una dirección mayor que la dirección especificada por el parámetro *lpAddress2,* el valor devuelto es un número positivo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una dirección que es menor que otra dirección indica un marco anterior. Una dirección mayor que otra dirección indica un marco posterior.
 
-Monitor de red proporciona otras dos funciones, [CompareFrameDestAddress](compareframedestaddress.md) y [CompareFrameSourceAddress](compareframesourceaddress.md), que puede usar para comparar direcciones. La **función CompareFrameDestAddress** compara una dirección determinada con la dirección de destino del marco y la **función CompareFrameSourceAddress** compara una dirección determinada con la dirección de origen del marco.
+Monitor de red proporciona otras dos funciones, [CompareFrameDestAddress](compareframedestaddress.md) y [CompareFrameSourceAddress,](compareframesourceaddress.md)que puede usar para comparar direcciones. La **función CompareFrameDestAddress** compara una dirección determinada con la dirección de destino del marco y la **función CompareFrameSourceAddress** compara una dirección determinada con la dirección de origen del marco.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Monitor de red proporciona otras dos funciones, [CompareFrameDestAddress](compar
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

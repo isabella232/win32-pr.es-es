@@ -1,5 +1,5 @@
 ---
-description: Obtiene información de rotación para un fotograma clave específico del conjunto de animaciones.
+description: Obtenga información de rotación para un fotograma clave específico del conjunto de animaciones.
 ms.assetid: d62b8d5e-328e-4227-b2e8-cb6e5ccc4b3f
 title: Método ID3DXKeyframedAnimationSet::GetRotationKey (D3dx9anim.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5abb39061b1782b7794ec475a6217677c8723625e2752237c122a694435f2862
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8f5bf30eaf261e4baa032ed1411b3d70bddc706c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253022"
 ---
 # <a name="id3dxkeyframedanimationsetgetrotationkey-method"></a>Método ID3DXKeyframedAnimationSet::GetRotationKey
 
-Obtiene información de rotación para un fotograma clave específico del conjunto de animaciones.
+Obtenga información de rotación para un fotograma clave específico del conjunto de animaciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

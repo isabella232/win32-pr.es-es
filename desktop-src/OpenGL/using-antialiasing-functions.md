@@ -10,12 +10,12 @@ keywords:
 - suavizado de contorno
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab36f41e3b639447b4f246d706e11c134d8f920528cde1e946d26af057a95951
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 896d02dec050c72e59762ff5ee139b0bd091d9a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117980351"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361985"
 ---
 # <a name="using-antialiasing-functions"></a>Uso de funciones de suavizado de contorno
 
@@ -23,7 +23,7 @@ En la tabla siguiente se enumeran las funciones de suavizado de contorno de IRIS
 
 
 
-| Función GL de IRIS | Función OpenGL                                      | Significado                           |
+| Función IRIS GL | Función OpenGL                                      | Significado                           |
 |------------------|------------------------------------------------------|-----------------------------------|
 | **pntsmooth**    | [**glEnable**](glenable.md) ( GL \_ POINT \_ SMOOTH )   | Habilita el suavizado de contorno de puntos.   |
 | **linesmooth**   | **glEnable**( GL \_ LINE \_ SMOOTH )                     | Habilita el suavizado de contorno de líneas.    |
@@ -44,7 +44,7 @@ linesmooth(SML_ON + SML_SMOOTHER);
 
 
 
-OpenGL proporciona un control similaruse [**glHint**](glhint.md):
+OpenGL proporciona un control similar [**glHint:**](glhint.md)
 
 
 ```C++

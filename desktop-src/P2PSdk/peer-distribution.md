@@ -4,12 +4,12 @@ ms.assetid: ad959586-7488-49ff-a237-4da409b81dd6
 title: Distribución del mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f49e675a93891ec4383ed5238238809996c1b7e093201bcbc5cce270b04aa8f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3382df432e8cedc40bf5679171563eb672a1a6a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061393"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253742"
 ---
 # <a name="peer-distribution"></a>Distribución del mismo nivel
 

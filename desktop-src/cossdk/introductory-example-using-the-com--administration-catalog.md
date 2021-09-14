@@ -1,25 +1,25 @@
 ---
-description: Ejemplo introductorio con el catálogo de administración de COM+
+description: Ejemplo introductorio de uso del catálogo de administración de COM+
 ms.assetid: e9ce25aa-4fb1-4357-9f4e-5bf649e29447
-title: Ejemplo introductorio con el catálogo de administración de COM+
+title: Ejemplo introductorio de uso del catálogo de administración de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bfd085cbe9a829a1248ddf36057c9d9f79de9d576236a2621b237063340cf95
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: db24f3985538b7189534c9fef3ef279ed240e3a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120070595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361690"
 ---
-# <a name="introductory-example-using-the-com-administration-catalog"></a>Ejemplo introductorio con el catálogo de administración de COM+
+# <a name="introductory-example-using-the-com-administration-catalog"></a>Ejemplo introductorio de uso del catálogo de administración de COM+
 
 Cuando se usa mediante programación el catálogo de administración de COM+, normalmente se llevan a cabo los siguientes pasos generales (no se indican en un orden estricto aquí):
 
 -   Abra una sesión con el catálogo de COM+ en el equipo local. Opcionalmente, conéctese al catálogo de COM+ en un equipo remoto.
 -   Realice acciones como iniciar o detener servicios, acciones que no pertenecen a una aplicación COM+ determinada.
--   Realice acciones como la instalación o exportación de aplicaciones COM+ o la instalación de componentes en aplicaciones, acciones que pertenecen a la lectura o escritura en archivos.
--   Agregue nuevos elementos a colecciones, como la creación de una nueva aplicación COM+ mediante la adición de un nuevo elemento a la colección "Aplicaciones".
--   Establecer u obtener propiedades en un elemento de una colección.
+-   Realice acciones como la instalación o exportación de aplicaciones COM+, o la instalación de componentes en aplicaciones, acciones relacionadas con la lectura o escritura en archivos.
+-   Agregue nuevos elementos a las colecciones, como la creación de una nueva aplicación COM+ mediante la adición de un nuevo elemento a la colección "Aplicaciones".
+-   Establezca u obtenga propiedades en un elemento de una colección.
 -   Guarde o descarte los cambios pendientes en el catálogo.
 -   Controle los errores que puedan producirse.
 
@@ -29,13 +29,13 @@ En el ejemplo siguiente, realizará las siguientes acciones:
 
 1.  Cree una nueva aplicación COM+, "MyHomeZoo".
 2.  Instale algunos componentes, Cat y Dog, en la aplicación. Ambos componentes están contenidos en un único archivo DLL que ya debe existir: MyZoo.dll.
-3.  Configure la seguridad basada en roles para la aplicación mediante la definición de dos roles: ZooKeeper y EstoreoToCats.
-4.  Asigne el acceso de rol de ZooKeeper a toda la aplicación.
-5.  Asigne el acceso de rol DesasignatoCats solo al componente Dog.
+3.  Configure la seguridad basada en roles para la aplicación mediante la definición de dos roles: ZooKeeper y DesenlaceToCats.
+4.  Asigne el acceso del rol ZooKeeper a toda la aplicación.
+5.  Asigne el acceso de rol Desasignatos solo al componente Dog.
 6.  Active las propiedades de seguridad para que se aplique la comprobación de roles para la aplicación.
 7.  Exporte la aplicación MyHomeZoo a un archivo para que se pueda instalar en otros equipos.
 
-Para usar este ejemplo de Visual Basic, agregue una referencia a la biblioteca de tipos de administrador de COM+.
+Para usar este ejemplo desde Visual Basic, agregue una referencia a la biblioteca de tipos de administrador de COM+.
 
 
 ```VB
@@ -189,7 +189,7 @@ Exit Function
 [Información general de los objetos COMAdmin](overview-of-the-comadmin-objects.md)
 </dt> <dt>
 
-[Recuperar colecciones en el catálogo de COM+](retrieving-collections-on-the-com--catalog.md)
+[Recuperación de colecciones en el catálogo de COM+](retrieving-collections-on-the-com--catalog.md)
 </dt> <dt>
 
 [Establecimiento de propiedades y guardado de cambios en el catálogo de COM+](setting-properties-and-saving-changes-to-the-com--catalog.md)

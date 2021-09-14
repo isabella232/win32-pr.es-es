@@ -4,12 +4,12 @@ ms.assetid: e2a16a6e-8cd4-4fd3-adeb-461faed948e4
 title: CounterDetails
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef429f7f90c38d53f085ed0243e1c799c1d1cfa808c7aa052d8a37ed3a1faf1d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 751073cdc2f2646ad1f2351bff0bdc02c498d428
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119011363"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253736"
 ---
 # <a name="counterdetails"></a>CounterDetails
 
@@ -21,7 +21,7 @@ La **tabla CounterDetails** define los campos siguientes:
 -   **MachineName:** Nombre del equipo que registró este conjunto de datos.
 -   **ObjectName:** Nombre del objeto de rendimiento.
 -   **CounterName:** Nombre del contador.
--   **CounterType:** Tipo de contador. Para obtener una lista de tipos de contadores y sus fórmulas, vea la sección Tipos de contadores del Kit de implementación de [Windows Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)).
+-   **CounterType:** Tipo de contador. Para obtener una lista de tipos de contadores y sus fórmulas, vea la sección Tipos de contador del Kit de implementación de [Windows Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)).
 -   **DefaultScale:** Escalado predeterminado que se va a aplicar a los datos del contador de rendimiento sin procesar.
 -   **InstanceName:** Nombre de la instancia del contador.
 -   **InstanceIndex:** Número de índice de la instancia del contador.

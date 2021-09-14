@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 83f248e15c3965305719269a19a1f2ff2c8feddfe0e57b6349985d9133e38789
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca70878f8f6358a3297c22cbb9ac8e49ba0ce310
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362463"
 ---
 # <a name="crendererinputpinsetmediatype-method"></a>Método CRendererInputPin.SetMediaType
 
@@ -64,7 +64,7 @@ Devuelve un **valor HRESULT.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

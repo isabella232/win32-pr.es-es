@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 153d1a5768791a33fd4f7629e071a125a4ee2ee46feaae366e2c1a21d8118f01
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9ce0ff776588c06b8fddc34240e9c2170ceca69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118367393"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253869"
 ---
 # <a name="compareframedestaddress-function"></a>Función CompareFrameDestAddress
 
@@ -60,9 +60,9 @@ Si las direcciones son las mismas, el valor devuelto es **TRUE.**
 
 Si las direcciones no son las mismas, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para que **la función CompareFrameDestAddress** se devuelva correctamente, el tipo de dirección de destino debe coincidir con el tipo de dirección especificado en el *parámetro lpAddress.*
+Para que **la función CompareFrameDestAddress** devuelva correctamente, el tipo de dirección de destino debe coincidir con el tipo de dirección especificado en el *parámetro lpAddress.*
 
 Monitor de red proporciona otras dos funciones, [CompareFrameSourceAddress](compareframesourceaddress.md) y [CompareAddresses,](compareaddresses.md)que puede usar para comparar direcciones. La **función CompareFrameSourceAddress** compara una dirección determinada con la dirección de origen del marco y la **función CompareAddress** compara dos direcciones determinadas.
 
@@ -72,7 +72,7 @@ Monitor de red proporciona otras dos funciones, [CompareFrameSourceAddress](comp
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 819f279d20192ff82d9021e03780713f714682abf47aaf854b4568312572e8d8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 70527d5e43ccab4df7b2110a33df8d813bd16d28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119526544"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254450"
 ---
 # <a name="cbaserenderersetabortsignal-method"></a>Método CBaseRenderer.SetAbortSignal
 
-El método establece una marca que indica si se `SetAbortSignal` debe detener la representación y rechazar más muestras.
+El `SetAbortSignal` método establece una marca que indica si se debe detener la representación y rechazar más muestras.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void SetAbortSignal(
 *bAbort* 
 </dt> <dd>
 
-Valor booleano que indica si se debe detener la representación. Si **es TRUE,** el filtro no representará más ejemplos.
+Valor booleano que indica si se va a detener la representación. Si **es TRUE,** el filtro no representará más ejemplos.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Valor booleano que indica si se debe detener la representación. Si **es TRUE,**
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método establece la [**marca CBaseRenderer::m \_ bAbort.**](cbaserenderer-m-babort.md)
 

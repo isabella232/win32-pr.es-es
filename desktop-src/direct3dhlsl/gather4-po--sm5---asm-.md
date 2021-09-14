@@ -4,12 +4,12 @@ description: Variante de gather4, pero en lugar de admitir un desplazamiento inm
 ms.assetid: A77A32B4-BD4F-46E7-9999-13EAA8A26974
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e18859c2df7b26511f89e6e791573fe74a69f6bd548706ac65e6b268ca08e2be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9197fee97645333d37d589db36c3774852b12229
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118089895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361569"
 ---
 # <a name="gather4_po-sm5---asm"></a>gather4 \_ po (sm5 - asm)
 
@@ -38,7 +38,7 @@ Variante de [gather4](gather4--sm5---asm-.md), pero en lugar de admitir un despl
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los dos primeros componentes del parámetro de desplazamiento de 4 vectores suministran desplazamientos enteros de 32 bits. Los demás componentes de este parámetro se omiten.
 
@@ -76,7 +76,7 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
 | [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |

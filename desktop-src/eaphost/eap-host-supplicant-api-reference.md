@@ -4,12 +4,12 @@ description: Obtenga información sobre la documentación de referencia de la AP
 ms.assetid: 127d8f2e-ede5-4667-8272-6a6a38dcd5a6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4948b0c89bf08f2bcef7fd1243fffbe1263ebc142ec320b1360c7e24a6ae72bd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0961a43bca48dc82f5aaeb35df83d5791d98edca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119786769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252980"
 ---
 # <a name="eaphost-supplicant-api-reference"></a>Referencia de API de suplicación de EAPHost
 

@@ -10,16 +10,16 @@ keywords:
 - ver volumen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70be6896f4c0a4dfa73c9e7bc683b6b8465c52c17482dcf8dcef3d90e6975ab4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 643cb8597c07d8ef013ef8eb968acf16137084e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119887895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361988"
 ---
 # <a name="u-v"></a>U V
 
-[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) G [H](g.md) [](h.md) [I](i.md) [J K](jk.md) L [M](l.md) [N](m.md) [O](n.md) [](o.md) [P P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) U V [W](w.md) X Y [Z](x-y-z.md)
+[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) H [I](h.md) [](i.md) [J K](jk.md) [L](l.md) M [N](m.md) [O](n.md) [](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) U V [W](w.md) X Y [Z](x-y-z.md)
 
 <dl> <dt>
 
@@ -40,7 +40,7 @@ Plural preferido de vértice. Vea *vértice*.
 <span id="opengl_viewpoint"></span><span id="OPENGL_VIEWPOINT"></span>**Mirador**
 </dt> <dd>
 
-Origen del sistema de coordenada de recorte o ojo, según el contexto. Por ejemplo, al analizar la iluminación, el punto de vista es el origen del sistema de coordenadas oculares. Al analizar la proyección, el punto de vista es el origen del sistema de coordenadas de recorte. Con una matriz de proyección típica, los orígenes de coordenada de los ojos y coordenada de recorte se encuentran en la misma ubicación.
+Origen del sistema de coordenadas de los ojos o del clip, en función del contexto. Por ejemplo, al analizar la iluminación, el punto de vista es el origen del sistema de coordenadas oculares. Al analizar la proyección, el punto de vista es el origen del sistema de coordenadas de recorte. Con una matriz de proyección típica, los orígenes de coordenada de los ojos y coordenada de recorte se encuentran en la misma ubicación.
 
 </dd> <dt>
 

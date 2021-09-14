@@ -4,12 +4,12 @@ ms.assetid: 24aa41b1-756f-47b0-9818-ceb309ce8cb3
 title: ITSubStream (MSPI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5523d3af2bea679913d312296d7165aa78eb5c01691e061c7eecb4cbb5e67e50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: def0ea9d2752c4cc87318d356a25a252f2314e71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119140208"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361765"
 ---
 # <a name="itsubstream-mspi"></a>ITSubStream (MSPI)
 

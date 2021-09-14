@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55cc846cfbc400d2372186f9af4a09db08e5ad769d1e8fec5f5f6f757e1ff447
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d32823eaa82e6a260790dd6fa23747f2b4228649
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118360476"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362100"
 ---
 # <a name="glcolormaterial-function"></a>Función glColorMaterial
 
@@ -44,7 +44,7 @@ void WINAPI glColorMaterial(
 *Cara* 
 </dt> <dd>
 
-Especifica si los parámetros front, back o front y back material deben realizar un seguimiento del color actual. Los valores aceptados son GL \_ FRONT, GL \_ BACK y GL FRONT AND \_ \_ \_ BACK. El valor predeterminado es GL \_ FRONT \_ AND \_ BACK.
+Especifica si los parámetros front, back o front y back material deben realizar un seguimiento del color actual. Los valores aceptados \_ son GL FRONT, GL \_ BACK y GL FRONT AND \_ \_ \_ BACK. El valor predeterminado es GL \_ FRONT \_ AND \_ BACK.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glColorMaterial** especifica qué parámetros de material realiza un seguimiento del color actual. Al habilitar GL COLOR MATERIAL, para cada uno de los materiales o materiales especificados por la cara , el parámetro de material o los parámetros especificados por el modo realizarán un seguimiento del \_ color actual en todo \_ momento.   Habilite y deshabilite GL COLOR MATERIAL con las funciones \_ \_ [**glEnable**](glenable.md) y [**glDisable**](gldisable.md), a las que se llama con \_ GL COLOR MATERIAL como \_ argumento. De forma predeterminada, GL \_ COLOR \_ MATERIAL está deshabilitado.
 
@@ -90,7 +90,7 @@ Las siguientes funciones recuperan información relacionada **con glColorMateria
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

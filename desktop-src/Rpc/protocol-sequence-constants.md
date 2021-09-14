@@ -24,12 +24,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 72c28486bfa3981870ac331ae83f0cbb532bba4d27c44062ce902823e4e3c259
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e2dd716cdd969040f5315ef05200912acc54878
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118927142"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361920"
 ---
 # <a name="protocol-sequence-constants"></a>Constantes de secuencia de protocolo
 
@@ -51,12 +51,12 @@ Rpc de Microsoft admite las siguientes secuencias de protocolo.
 | <span id="ncadg_ip_udp"></span><span id="NCADG_IP_UDP"></span><dl> <dt>**ncadg \_ ip \_ udp**</dt> <dt>Datagram (sin conexión) Protocolo de datagramas de usuario/Protocolo de Internet (UDP/IP)</dt> </dl>   | Solo cliente: MS-DOS, Windows 3. *x* Cliente y servidor: Windows Server 2003, Windows XP, Windows 2000, Windows NT<br/>                                                          |
 | <span id="ncadg_ipx"></span><span id="NCADG_IPX"></span><dl> <dt>**ncadg \_ ipx**</dt> <dt>Datagram (sin conexión) IPX</dt> </dl>                                                           | Solo cliente: MS-DOS, Windows 3. *x* Cliente y servidor: Windows Server 2003, Windows XP, Windows 2000, Windows NT<br/>                                                          |
 | <span id="ncadg_mq"></span><span id="NCADG_MQ"></span><dl> <dt>**ncadg \_ mq**</dt> <dt>Datagram (sin conexión) a través de Microsoft Message Queue Server (MSMQ)</dt> </dl>                   | Solo cliente: Windows Me/98/95 Cliente y servidor: Windows Server 2003, Windows XP, Windows 2000, Windows NT Server 4.0 con SP3 y versiones posteriores<br/>                                 |
-| <span id="ncacn_http"></span><span id="NCACN_HTTP"></span><dl> <dt>**ncacn \_ http**</dt> <dt>Connection-oriented TCP/IP using Microsoft Internet Information Server as HTTP proxy</dt> </dl> | Solo cliente: Windows Cliente y servidor del 98/98/95: Windows Server 2003, Windows XP, Windows 2000<br/>                                                                           |
+| <span id="ncacn_http"></span><span id="NCACN_HTTP"></span><dl> <dt>**ncacn \_ http**</dt> <dt>Connection-oriented TCP/IP using Microsoft Internet Information Server as HTTP proxy</dt> </dl> | Solo cliente: Windows Cliente y servidor 98/98/95: Windows Server 2003, Windows XP, Windows 2000<br/>                                                                           |
 | <span id="ncalrpc"></span><span id="NCALRPC"></span><dl> <dt>**ncalrpc**</dt> <dt>Local procedure call</dt> </dl>                                                                           | Cliente y servidor: Windows Server 2003, Windows XP, Windows 2000, Windows NT, Windows Me, Windows 98, Windows 95<br/>                                                         |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**transporte ncalrpc**](/windows/desktop/Midl/ncalrpc) solo admite la autenticación WINNT de \_ RPC C \_ \_ AUTHN. Para obtener más información, vea [Security](security.md) and [Authentication-Service Constants](authentication-service-constants.md).
 

@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXKeyframedAnimationSet::GetPlaybackType: obtiene el tipo del bucle de reproducción del conjunto de animación.'
+description: 'Método ID3DXKeyframedAnimationSet::GetPlaybackType: obtiene el tipo del bucle de reproducción del conjunto de animaciones.'
 ms.assetid: f3c3a553-fa6e-4518-8b0f-e1b8a9931e07
 title: Método ID3DXKeyframedAnimationSet::GetPlaybackType (D3dx9anim.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bd8b980120d85866cd8623696c8312aa443932e88ce95c5f64f19faed123a856
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 22984874d7f835eea6c2e1be309aa57c81caaee6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119856625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253028"
 ---
 # <a name="id3dxkeyframedanimationsetgetplaybacktype-method"></a>Método ID3DXKeyframedAnimationSet::GetPlaybackType
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md)**
 
-Tipo del bucle de reproducción del conjunto de animación. Vea [**D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md).
+Tipo del bucle de reproducción del conjunto de animaciones. Vea [**D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Tipo del bucle de reproducción del conjunto de animación. Vea [**D3DXPLAYBACK 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,11 +13,11 @@ api_type:
 - COM
 api_location: ''
 ms.openlocfilehash: 1b73c495a1af1dec9114e5a59274e457c1d09694
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105543"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361595"
 ---
 # <a name="usersinrole-collection"></a>Colección UsersInRole
 
@@ -25,7 +25,7 @@ Contiene un objeto para cada usuario del rol con el que está relacionada la col
 
 Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección UsersInRole** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -51,13 +51,13 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Nombre de usuario. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | WriteOnce                                                                                                                                                                             |
+| Acceso         | WriteOnce                                                                                                                                                                             |
 | Tipo           | String                                                                                                                                                                                |
 | Predeterminado        | "Nuevo usuario"                                                                                                                                                                            |
-| Sistema mínimo | Windows 2000                                                                                                                                                                          |
+| Sistema mínimo | Windows 2000                                                                                                                                                                          |
 
 
 

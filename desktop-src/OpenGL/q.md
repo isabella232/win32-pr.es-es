@@ -7,12 +7,12 @@ keywords:
 - Cuadriláteros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae5a594cd0d7b5aec784b80e2984b3b64058e4adbe92ad056657e1dd4e897fb2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef65401552b4fc9392ae7df21dcbe3dc439ae367
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118357758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362020"
 ---
 # <a name="q-opengl"></a>Q (OpenGL)
 

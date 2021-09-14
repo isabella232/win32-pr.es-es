@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f92287690ae87ea2ecd2db39a00ac36ed82889b21ff5d79fd85b17ab130638b0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6ffa9b8cad37bf681ae01bac3a80746547e4980f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119640215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254511"
 ---
 # <a name="cbaseinputpinm_breadonly-member"></a>Miembro CBaseInputPin::m \_ bReadOnly
 

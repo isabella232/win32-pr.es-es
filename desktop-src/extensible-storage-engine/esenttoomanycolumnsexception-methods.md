@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103082
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: db632a8544011d878ad938ff6ed37d675bd74a387ccc134dac32b21cadb0d6eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f1d56720b5410dafba58a111215497c9938d7416
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119113681"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252753"
 ---
 # <a name="esenttoomanycolumnsexception-methods"></a>Métodos de EsentTooManyColumnsException 
 

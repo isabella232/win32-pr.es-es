@@ -4,12 +4,12 @@ ms.assetid: 34097283-f5df-46e0-aed2-89505d32ac08
 title: Control ActiveX MSWebDVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 481a016c809fa4ca498d291e4a3753bb73cc6646f834ba0a92e9c1118c1e5c2b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10a451b7087fd159bb9e8eb2bc295f5d16f214fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119302885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254367"
 ---
 # <a name="mswebdvd-activex-control"></a>Control ActiveX MSWebDVD
 
@@ -19,11 +19,11 @@ ms.locfileid: "119302885"
  
 
 > [!Note]  
-> Este componente está en desuso. Para obtener información sobre la reproducción de DVD y la navegación en DirectShow, vea [Aplicaciones de DVD](dvd-applications.md).
+> Este componente está en desuso. Para obtener información sobre la reproducción y navegación de DVD DirectShow, vea [Aplicaciones de DVD.](dvd-applications.md)
 
  
 
-El control ® MSWebDVD de Microsoft ActiveX® se puede usar para crear una aplicación de DVD basada en scripts. Expone los siguientes objetos y eventos a una aplicación.
+El control® ActiveX® MSWebDVD de Microsoft se puede usar para crear una aplicación de DVD basada en scripts. Expone los siguientes objetos y eventos a una aplicación.
 
 -   [MSWebDVD](mswebdvd-object.md)
 -   [MSDVDAdm](msdvdadm-object.md)

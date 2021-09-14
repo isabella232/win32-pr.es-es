@@ -1,19 +1,19 @@
 ---
 description: Muestra la relación entre esos parámetros de función que apuntan a estructuras o matrices y sus datos inicializados, con un ejemplo de código.
 ms.assetid: b1ad0f13-fb4d-421f-b054-a99c8ad9c83a
-title: 'Programa C de ejemplo: uso de CryptEncryptMessage y CryptDecryptMessage'
+title: 'Programa de C de ejemplo: uso de CryptEncryptMessage y CryptDecryptMessage'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ab2398b24e183d62844e716cc50247f38882b61421b55f661741890bb937dc3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b776ea1e0286717da94ed1b92caccfc19652e70
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119140798"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253467"
 ---
-# <a name="example-c-program-using-cryptencryptmessage-and-cryptdecryptmessage"></a>Programa C de ejemplo: uso de CryptEncryptMessage y CryptDecryptMessage
+# <a name="example-c-program-using-cryptencryptmessage-and-cryptdecryptmessage"></a>Programa de C de ejemplo: uso de CryptEncryptMessage y CryptDecryptMessage
 
-[**CryptEncryptMessage es**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) la única llamada de función necesaria para realizar todas las tareas enumeradas en [Cifrado de un mensaje.](../secauthn/encrypting-a-message.md) Es necesaria la inicialización de estructuras de datos. En la ilustración siguiente se muestra la relación entre los parámetros de función que apuntan a estructuras o matrices y sus datos inicializados. En este ejemplo también se descifra el mensaje [**mediante CryptDecryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptmessage).
+[**CryptEncryptMessage es**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage) la única llamada de función necesaria para realizar todas las tareas enumeradas en [Cifrado de un mensaje](../secauthn/encrypting-a-message.md). Es necesaria la inicialización de estructuras de datos. En la ilustración siguiente se muestra la relación entre los parámetros de función que apuntan a estructuras o matrices y sus datos inicializados. En este ejemplo también se descifra el mensaje [**mediante CryptDecryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptmessage).
 
 ![mapa de inicialización para una llamada a cryptencryptmessage](images/crypenc.png)
 
@@ -21,8 +21,8 @@ ms.locfileid: "119140798"
 
 1.  Obtenga un puntero al contenido que se va a cifrar.
 2.  Determine el tamaño del contenido que se va a cifrar.
-3.  Adquiera un identificador para un proveedor de servicios criptográficos.
-4.  Abra un almacén [*de certificados*](../secgloss/c-gly.md).
+3.  Adquirir un identificador para un proveedor de servicios criptográficos.
+4.  Abra un [*almacén de certificados*](../secgloss/c-gly.md).
 5.  Obtenga el certificado de destinatario.
 6.  Cree la matriz de certificados de destinatario.
 7.  Inicialice la [**estructura CRYPT \_ ALGORITHM \_ IDENTIFIER.**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier)
@@ -31,7 +31,7 @@ ms.locfileid: "119140798"
 
 En el ejemplo siguiente se implementa este procedimiento.
 
-Los comentarios relacionan fragmentos de código con cada paso del procedimiento. Para obtener más información sobre la función , vea [**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage). Para obtener más información sobre las estructuras de datos, vea [**CRYPT \_ ALGORITHM \_ IDENTIFIER**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) y [**CRYPT \_ ENCRYPT MESSAGE \_ \_ PARA**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_encrypt_message_para).
+Los comentarios relacionan los fragmentos de código con cada paso del procedimiento. Para obtener más información sobre la función , vea [**CryptEncryptMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencryptmessage). Para obtener más información sobre las estructuras de datos, vea [**CRYPT \_ ALGORITHM \_ IDENTIFIER**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) y [**CRYPT \_ ENCRYPT MESSAGE \_ \_ PARA**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_encrypt_message_para).
 
 En este ejemplo se usan las [**funciones MyHandleError**](myhandleerror.md) [**y ByteToStr**](bytetostr.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 

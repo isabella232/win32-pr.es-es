@@ -10,12 +10,12 @@ keywords:
 - Función de representación, rectángulos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79dd46928ccf8f8a0a465fa71fbb6b1bc1b4f48cbdb5c37b4b93ffd21c78c6b8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b48f16888d8e71c052d216a838683f2b7127e75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118117300"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361724"
 ---
 # <a name="using-rectangles-windows-media-player-sdk"></a>Uso de rectángulos (Reproductor de Windows Media SDK)
 

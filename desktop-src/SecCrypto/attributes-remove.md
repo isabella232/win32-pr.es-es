@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: ea18aab32153c998a0ddbaced65727e1ecb43dc8c54a7e3989aadcb698693970
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5981176afb332254d98171d40027e43383cb557
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119879775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253491"
 ---
 # <a name="attributesremove-method"></a>Método Attributes.Remove
 
-\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use [**la clase CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) en el [**espacio de nombres System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use [**la clase CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) en el espacio [**de nombres System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
 El **método Remove** quita un objeto [**Attribute**](attribute.md) indexado de la colección.
 
@@ -44,7 +44,7 @@ Attributes.Remove( _
 *Índice* \[ En\]
 </dt> <dd>
 
-Índice del objeto [**Attribute**](attribute.md) que se va a quitar.
+Índice del [**objeto Attribute que**](attribute.md) se va a quitar.
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Attributes.Remove( _
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las aplicaciones que usan este método deben contener código para controlar una excepción que genera este método.
 
@@ -69,11 +69,11 @@ Las aplicaciones que usan este método deben contener código para controlar una
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Objetos de criptografía](cryptography-objects.md)
+[Objetos criptografía](cryptography-objects.md)
 </dt> <dt>
 
 [**Atributos**](attributes.md)

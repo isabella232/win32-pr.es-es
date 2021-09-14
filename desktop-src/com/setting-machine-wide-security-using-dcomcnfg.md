@@ -5,11 +5,11 @@ ms.assetid: 23d1e222-c00b-497c-adc8-4ae14c5bdd98
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c7feaaf356263a48c2c93eb9b3b3764b7352cd39
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369660"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361704"
 ---
 # <a name="setting-system-wide-security-using-dcomcnfg"></a>Establecer System-Wide seguridad mediante DCOMCNFG
 
@@ -23,7 +23,7 @@ Al habilitar la seguridad en todo el sistema, debe establecer el nivel de autent
 
 -   [Establecer System-Wide nivel de autenticación predeterminado](#setting-system-wide-default-authentication-level)
 -   [Establecer System-Wide permisos de inicio](#setting-system-wide-launch-permissions)
--   [Configuración System-Wide permisos de acceso](#setting-system-wide-access-permissions)
+-   [Establecer System-Wide permisos de acceso](#setting-system-wide-access-permissions)
 -   [Establecer System-Wide nivel de suplantación](#setting-system-wide-impersonation-level)
 -   [Configuración del System-Wide de referencia](#setting-system-wide-reference-tracking)
 -   [Habilitación y deshabilitación de DCOM](#enabling-and-disabling-dcom)
@@ -49,7 +49,7 @@ Los permisos de inicio que establece con Dcomcnfg.exe determinan una lista de us
 
 **Para establecer permisos de inicio para un equipo**
 
-1.  En la **página de propiedades Seguridad** predeterminada  Dcomcnfg.exe, elija el botón Editar predeterminado en el área Permisos de **inicio predeterminados.**
+1.  En la **página de propiedades Seguridad** predeterminada  Dcomcnfg.exe, elija el botón Editar valor predeterminado en el área Permisos de **inicio predeterminados.**
 
 2.  Para quitar usuarios o grupos, seleccione el usuario o grupo que desea quitar y elija el **botón** Quitar. El usuario o grupo seleccionado ya no aparecerá en el cuadro de lista. Cuando haya terminado de quitar usuarios y grupos, elija **Aceptar.**
 
@@ -61,7 +61,7 @@ Los permisos de inicio que establece con Dcomcnfg.exe determinan una lista de us
 
 6.  Para agregar usuarios que tendrán un tipo de acceso diferente, repita los pasos 4 y 5. De lo contrario, **elija Aceptar** para aplicar los cambios.
 
-## <a name="setting-system-wide-access-permissions"></a>Configuración System-Wide permisos de acceso
+## <a name="setting-system-wide-access-permissions"></a>Establecer System-Wide permisos de acceso
 
 Dcomcnfg.exe permite establecer permisos de acceso para controlar la lista de usuarios a los que se concede o deniega el acceso a los métodos de esos servidores que no proporcionan sus propios permisos de acceso. Puede agregar usuarios o grupos a la lista, especificando si se concede o se deniega el permiso de acceso. También puede quitar usuarios de la lista.
 
@@ -71,7 +71,7 @@ El proceso de configuración de permisos de acceso para un equipo es similar a e
 
 **Para establecer permisos de acceso para un equipo**
 
-1.  En la **página de propiedades Seguridad** predeterminada de Dcomcnfg.exe, elija el botón **Editar** predeterminado en el área Permisos de **acceso predeterminados.**
+1.  En la **página de propiedades Seguridad** predeterminada  Dcomcnfg.exe, elija el botón Editar predeterminado en el área Permisos de **acceso predeterminados.**
 
 2.  Para quitar usuarios o grupos, seleccione el usuario o grupo que desea quitar y elija el **botón** Quitar. El usuario o grupo seleccionado ya no aparecerá en el cuadro de lista. Cuando haya terminado de quitar usuarios y grupos, elija **Aceptar.**
 
@@ -91,7 +91,7 @@ Al establecer el nivel de suplantación predeterminado para todo el equipo, se i
 
 **Para establecer el nivel de suplantación de un equipo**
 
-1.  Con Dcomcnfg.exe en ejecución, elija la **pestaña Propiedades predeterminadas.**
+1.  Cuando Dcomcnfg.exe, elija la **pestaña Propiedades predeterminadas.**
 
 2.  En el **cuadro de lista Nivel** de suplantación predeterminado , elija el nivel de suplantación que desee.
 
@@ -103,7 +103,7 @@ Al habilitar el seguimiento de referencias, pide a COM que realice comprobacione
 
 **Para establecer el seguimiento de referencias de un equipo**
 
-1.  Con Dcomcnfg.exe en ejecución, elija la **pestaña Propiedades predeterminadas.**
+1.  Cuando Dcomcnfg.exe, elija la **pestaña Propiedades predeterminadas.**
 
 2.  Para habilitar (o deshabilitar) el seguimiento de referencias, active (o desactive) la casilla Proporcionar seguridad adicional para el seguimiento de **referencias** cerca de la parte inferior de la página.
 

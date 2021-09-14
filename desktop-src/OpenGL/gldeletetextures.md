@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 408019d3bfe226c9e7ecdc2ea00182a0b11c78fa64a0210be658ded4556850cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e37893874f143a210bde0099caa7b5ec266f8948
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118617051"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362079"
 ---
 # <a name="gldeletetextures-function"></a>Función glDeleteTextures
 
@@ -76,7 +76,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 La **función glDeleteTextures** elimina *n texturas* denominadas por los elementos de las *texturas de matriz*. Después de eliminar una textura, no tiene contenido ni dimensionalidad, y su nombre es libre para su reutilización (por ejemplo, **por glGenTextures**). La **función glDeleteTextures** omite los ceros y los nombres que no corresponden a las texturas existentes.
 
-Si se elimina una textura enlazada actualmente, el enlace se revierte a cero (la textura predeterminada).
+Si se elimina una textura que está enlazada actualmente, el enlace se revierte a cero (la textura predeterminada).
 
 No se pueden incluir llamadas **a glDeleteTextures en** listas para mostrar.
 
@@ -103,7 +103,7 @@ La función siguiente recupera información relacionada con **glDeleteTextures**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: En el código de ejemplo siguiente se muestra cómo marcar un desti
 ms.assetid: bdc97fad-4805-4432-96ca-9225a51c92eb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efed37238afff1606585f044b1f8366213a79dc0ea88a3622f231a01f37a1f96
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bcdff6b05f254b03d5aff30b177135702d64f3db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120035545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361968"
 ---
 # <a name="use-the-route-hold-down-state"></a>Uso del estado de Hold-Down ruta
 

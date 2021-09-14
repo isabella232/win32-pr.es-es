@@ -4,12 +4,12 @@ description: Los punteros de referencia son los punteros más sencillos y requie
 ms.assetid: 393aec84-8e8f-41b9-956f-d28a80d3a8c4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6338b1017f05bdf004fee2b288c4eae1ee9775eaa2ad225d5f4b6afa3e74d8ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 427605f330b1a73c541c95019f8ca4bdd6cc8ef4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118927045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361905"
 ---
 # <a name="reference-pointers"></a>Punteros de referencia
 

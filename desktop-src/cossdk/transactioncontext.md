@@ -11,20 +11,20 @@ api_name:
 - TransactionContext
 api_type:
 - COM
-ms.openlocfilehash: aa0a90cee2b0af7d5ebe3679dca46aa04c6326fb5fd62fe5f57699d610b9efe8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 595b5a3192b87420855eb43f1e1e33df37a45c23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119678155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361612"
 ---
-# <a name="transactioncontext-class"></a>Clase TransactionContext
+# <a name="transactioncontext-class"></a>TransactionContext (clase)
 
-Crea un objeto transaccional genérico que comienza una transacción. Al llamar a los métodos de esta clase, puede componer el trabajo de varios objetos COM en una sola transacción y confirmar o anular explícitamente la transacción.
+Crea un objeto transaccional genérico que comienza una transacción. Al llamar a los métodos de esta clase, puede crear el trabajo de varios objetos COM en una sola transacción y confirmar o anular explícitamente la transacción.
 
 ## <a name="when-to-implement"></a>Cuándo implementar
 
-COM+implementa esta clase.
+ESTA clase se implementa mediante COM+.
 
 
 
@@ -42,9 +42,9 @@ COM+implementa esta clase.
 
 Un cliente no transaccional usa esta clase para iniciar una transacción. Con los métodos de esta clase, el cliente puede llamar a objetos COM adicionales que, si están configurados para participar en una transacción, se ejecutan dentro del límite de transacción del objeto de contexto de transacción. En función de su lógica de negocios, el cliente puede confirmar o anular explícitamente la transacción.
 
-La **clase TransactionContext** limita la reutilización de la lógica de negocios que controla la transacción. Por esta razón, se recomienda usar con moderación los objetos a los que se crea una instancia de la clase **TransactionContext.**
+La **clase TransactionContext** limita la reutilización de la lógica de negocios que impulsa la transacción. Por este motivo, se recomienda usar con moderación los objetos creados a partir de la clase **TransactionContext.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para crear este objeto, llame a [**IObjectContext::CreateInstance**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-createinstance).
 
@@ -62,7 +62,7 @@ Para usar esta clase de Microsoft Visual Basic, agregue una referencia a la bibl
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

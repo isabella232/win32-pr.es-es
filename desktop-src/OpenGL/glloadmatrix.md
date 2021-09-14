@@ -4,12 +4,12 @@ description: Estas funciones reemplazan la matriz actual por una matriz arbitrar
 ms.assetid: a55575a8-fd1d-4f5b-a5c7-c158c1ef0fee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7104f6ee434ff8442f365e3e68026b1a3b66b1495ef1fc8bf04485ece4d629
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 167735b7545c1b9bff462fb0202a4d59527e43d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119520475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253790"
 ---
 # <a name="glloadmatrix-functions"></a>funciones glLoadMatrix
 

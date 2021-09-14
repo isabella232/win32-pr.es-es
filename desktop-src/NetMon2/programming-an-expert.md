@@ -4,12 +4,12 @@ ms.assetid: 6a3834b7-753f-42cc-986f-3d7e8bf79fd9
 title: Programación de un experto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38de0a60c8224ce0912039ea5fbb06e2cdc958e317eccfb83d524ce632b0d539
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: df633d971558f9b14374680b09a22771e10ea0d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119979185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362137"
 ---
 # <a name="programming-an-expert"></a>Programación de un experto
 
@@ -26,7 +26,7 @@ En la tabla siguiente se enumeran los puntos de entrada de DLL y las funciones d
 | [**DllMain**](dllmain-expert.md)                    | Función de entrada dll | Sí                                             |
 | [**Registro de un experto**](register-expert.md)           | Función de entrada dll | Sí                                             |
 | [**Ejecutar**](run.md)                                   | Función de entrada dll | Sí                                             |
-| [**Configurar**](configure.md)                       | Función de entrada dll | Solo si el experto proporciona la configuración del usuario. |
+| [**Configuración**](configure.md)                       | Función de entrada dll | Solo si el experto proporciona la configuración del usuario. |
 | [**ExpertIndicateStatus**](expertindicatestatus.md) | Función expert    | Sí                                             |
 | [**ExpertSubmitEvent**](expertsubmitevent.md)       | Función expert    | Sí                                             |
 
@@ -44,7 +44,7 @@ Los archivos DLL expertos requieren la convención de llamada de C, no C++, porq
 
 Las funciones exportadas del experto se llaman de la siguiente manera:
 
--   Cuando Monitor de red la lista de expertos que se va a presentar al usuario, Monitor de red llama a la [**función Register Expert.**](register-expert.md)
+-   Cuando Monitor de red la lista de expertos que se va a presentar al usuario, Monitor de red llama a [**la función Register Expert.**](register-expert.md)
 -   Después de llamar a **Register**, si el experto es configurable, Monitor de red llama a la [**función Configure.**](configure.md)
 -   Cuando el Monitor de red hace clic en **Ejecutar** experto, Monitor de red llama a la [**función Run.**](run.md)
 

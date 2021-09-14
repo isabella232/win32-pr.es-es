@@ -4,12 +4,12 @@ ms.assetid: 6b733638-a665-4638-8257-a36232119ba9
 title: Actualizar tablas de secuencia para una actualización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4db017ff92d108018ff601dcd808952e12d4d53d9ca81eef717b4cc3989bc19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21f45f1cda29a4570f3ea27a2c6611be9c274449
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012862"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254144"
 ---
 # <a name="updating-sequence-tables-for-an-upgrade"></a>Actualizar tablas de secuencia para una actualización
 

@@ -4,12 +4,12 @@ ms.assetid: 3a663fc7-cdcf-4ac3-8251-836ba0d3cc11
 title: Buscar una entrada del Registro y crear una propiedad que mantiene el valor del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57a1d02c7c39b6de07ddc0e76d202420386ae2c55d3f70106cd88432a53ec854
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82bd7572c0176f4870eed199800715190d9bbbf9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254198"
 ---
 # <a name="searching-for-a-registry-entry-and-creating-a-property-holding-the-value-of-the-registry"></a>Buscar una entrada del Registro y crear una propiedad que mantiene el valor del Registro
 

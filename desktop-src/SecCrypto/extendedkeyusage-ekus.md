@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 6b6cb0ee020935ea80bc0d676ad8979267396589a46604f49a5cb833d68eefa1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24bcf7b4332e75afad0e21415a7dfe8eb690c32b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007403"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253460"
 ---
 # <a name="extendedkeyusageekus-property"></a>Propiedad ExtendedKeyUsage.EKUs
 
 \[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la clase [**X509EnhancedKeyUsageExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509enhancedkeyusageextension?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-La **propiedad EKUs** devuelve la [**colección EKUs**](ekus.md) del certificado.
+La **propiedad EKUs** devuelve la [**colección de EKUs**](ekus.md) para el certificado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -37,7 +37,7 @@ ExtendedKeyUsage.EKUs As EKUs
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Colección [**EKUs**](ekus.md) que contiene los [**objetos EKU**](eku.md) para el certificado.
+Colección [**de EKUs**](ekus.md) que contiene los [**objetos EKU**](eku.md) para el certificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Colección [**EKUs**](ekus.md) que contiene los [**objetos EKU**](eku.md) para e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

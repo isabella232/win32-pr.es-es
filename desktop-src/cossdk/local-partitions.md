@@ -4,12 +4,12 @@ ms.assetid: 629c4915-00b8-46da-b52a-2d274056eb6c
 title: Particiones locales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ea29bacd8bcb094fa26534a3508df39b2d237173c204bac11997a140150d554
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41f1a8524b0ebada203d6b42ac7b6cae000f5a51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118813496"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361683"
 ---
 # <a name="local-partitions"></a>Particiones locales
 

@@ -4,12 +4,12 @@ ms.assetid: D721167E-B04B-4B06-A9EE-56711A7A1942
 title: Herramientas para desarrolladores de Internet Explorer 8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ba91fbd3277fc1aa26ed21617464bad52ae2e40d5a7119a0bf2079008f0fe8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1a4314d5d0392b9bc4933b945f7da32040e1570
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118994995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127253250"
 ---
 # <a name="internet-explorer-8-developer-tools"></a>Herramientas para desarrolladores de Internet Explorer 8
 
@@ -19,7 +19,7 @@ En las secciones siguientes se describen las características importantes del He
 
 ## <a name="integrated-and-simple-to-use"></a>Integrado y fácil de usar
 
-Los Herramientas de desarrollo se incluyen con cada instalación de Internet Explorer 8, por lo que puede depurar problemas en cualquier equipo que Internet Explorer 8. Además, las herramientas solo se cargan cuando las necesita para limitar cómo afectan al rendimiento del explorador. Mediante el uso de Herramientas de desarrollo, puede depurar rápidamente solo el proceso de Internet Explorer actual, en lugar de depurar para todos los Internet Explorer.
+Los Herramientas de desarrollo se incluyen con cada instalación de Internet Explorer 8, por lo que puede depurar problemas en cualquier equipo que ejecute Internet Explorer 8. Además, las herramientas solo se cargan cuando las necesita para limitar cómo afectan al rendimiento del explorador. Mediante el uso de Herramientas de desarrollo, puede depurar rápidamente solo el proceso de Internet Explorer actual, en lugar de depurar para todos los Internet Explorer.
 
 ## <a name="provide-a-visual-interface-to-the-platform"></a>Proporcionar una interfaz visual a la plataforma
 
@@ -27,7 +27,7 @@ En lugar de realizar ingeniería inversa sobre cómo funciona el sitio web o mod
 
 ## <a name="enable-fast-experimentation"></a>Habilitación de la experimentación rápida
 
-Al crear prototipos de un nuevo diseño o probar correcciones en versiones anteriores de Internet Explorer, es probable que edite el origen, guárdelo, actualice la página en el explorador y repita la sesión. El Herramientas de desarrollo este escenario al permitirle editar el sitio en el explorador y ver los cambios inmediatamente.
+Al crear prototipos de un nuevo diseño o correcciones de pruebas en versiones anteriores de Internet Explorer, es probable que edite el origen, guárdelo, actualice la página en el explorador y repita. El Herramientas de desarrollo este escenario al permitirle editar el sitio en el explorador y ver los cambios inmediatamente.
 
 ## <a name="optimize-application-performance"></a>Optimización del rendimiento de la aplicación
 

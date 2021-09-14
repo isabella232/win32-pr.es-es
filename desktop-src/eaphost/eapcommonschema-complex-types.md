@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4b855a5148183ffac7a26ae614aa468463827e44ccb4ca6aea9453fef2fb8549
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f1f6a82519447529e88c9c47dfa80091b100dc8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118275173"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252944"
 ---
 # <a name="eapcommon-schema-complex-types"></a>Tipos complejos de esquema eapcommon
 

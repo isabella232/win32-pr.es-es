@@ -2,7 +2,7 @@
 description: Copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro FileName.
 ms.assetid: 534d8b73-fc22-4a42-b8e6-24a54353bb14
 ms.tgt_platform: multiple
-title: Método CopyEx de la CIM_LogicalFile clase
+title: Método CopyEx de la CIM_LogicalFile de datos
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e63c4b588c4ff4c22bf0d1e8998163884634e4545537de3c275503652dbb81c9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec7c44ec3fc01074a0f4af70249236aa366d64bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361449"
 ---
 # <a name="copyex-method-of-the-cim_logicalfile-class"></a>Método CopyEx de la clase \_ LogicalFile de CIM
 
 El **método CopyEx** copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el *parámetro FileName.* No se admite una copia si se requiere sobrescribir un archivo lógico existente. Este método es una versión extendida del [**método Copy.**](copy-method-in-class-cim-logicalfile.md)
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,17 +66,17 @@ Cadena que representa el nombre del archivo (o directorio) en el que se ha falla
 
 </dd> <dt>
 
-*StartFileName* \[ en, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
 Cadena que denomina el archivo secundario (o directorio) que se va a usar como punto de partida para este método. Normalmente, el *parámetro StartFileName* es el *parámetro StopFileName* que especifica el archivo (o directorio) en el que se produjo un error de la llamada al método anterior. Si este parámetro es **null,** la operación se realiza en el archivo o directorio especificado en la [**llamada a ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
-*Recursiva* \[ en, opcional\]
+*Recursiva* \[ in, opcional\]
 </dt> <dd>
 
-Si es TRUE, el método también se aplica de forma recursiva a archivos y directorios dentro del directorio especificado por la instancia [**\_ de Cim LogicalFile.**](cim-logicalfile.md) En el caso de las instancias de archivo, este parámetro se omite.
+Si es TRUE, el método también se aplica de forma recursiva a archivos y directorios dentro del directorio especificado por la [**instancia \_ de LogicalFile de CIM.**](cim-logicalfile.md) En el caso de las instancias de archivo, este parámetro se omite.
 
 </dd> </dl>
 
@@ -100,7 +100,7 @@ Correcto.
 
 2
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
@@ -190,7 +190,7 @@ Archivo de inicio no válido.
 
 17
 
-Privilegios no mantenidos.
+Privilegio no mantenido.
 
 </dd> <dt>
 
@@ -203,11 +203,11 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -223,7 +223,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

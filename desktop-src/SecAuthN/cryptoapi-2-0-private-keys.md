@@ -4,12 +4,12 @@ ms.assetid: 3d2deb61-8e86-4461-8f2a-4880ca5b9d34
 title: CryptoAPI 2.0 claves privadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 653ca6356849894ac5d15c07a0116bee7c2a2ba84df8c79de360d96f1e147fef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b5180515b529e33ae385fa94688a7e8fb436bd32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361868"
 ---
 # <a name="cryptoapi-20-private-keys"></a>CryptoAPI 2.0 claves privadas
 

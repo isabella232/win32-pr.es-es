@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0a317b23b4870ad6e68032ed23f846a81019be358974ebbe75e2a5859db71303
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f9bf14132660045afbd171173a38d3ea320ba1aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119585885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362499"
 ---
 # <a name="cmediatypeset-method-mtypeh---cmtype-ref-parameter"></a>Método CMediaType.Set (Mtype.h): parámetro cmtype [ref]
 
@@ -53,7 +53,7 @@ Referencia a un [**objeto CMediaType.**](cmediatype.md)
 
 Devuelve S \_ OK o E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método copia todo el tipo de medio de *cmtype*.
 
@@ -64,7 +64,7 @@ Este método copia todo el tipo de medio de *cmtype*.
 | Encabezado  | Mtype.h (incluir Secuencias.h)                                                                                     |
 | Biblioteca | Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

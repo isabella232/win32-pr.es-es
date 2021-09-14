@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9691ff65709c451efc5de92099a6ec37d333a476d2997b365ba6b1df73546fbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85c7df5649ea430518ee7e848645680336a37b86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118274779"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252891"
 ---
 # <a name="eapmethod-eaphostconfig-element"></a>Elemento EapMethod (EapHostConfig)
 
@@ -37,10 +37,10 @@ El **elemento EapMethod** se define mediante el [**elemento EapHostConfig.**](ea
 
 
 
-| Rol | Versión de SO mínima |
+| Role | Versión de SO mínima |
 |------|--------------------|
-| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>              |
-| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>              |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

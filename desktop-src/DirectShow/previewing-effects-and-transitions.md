@@ -4,12 +4,12 @@ ms.assetid: aa13bd57-69c1-462c-86e3-64026a03bfc4
 title: Vista previa de efectos y transiciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8baa5f35511ca9b01990e1c3e0562a3a564204a52026c08e2e2827c154b166b4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 25506b7e50fe83c2e4fca7bb4166748ec43d33dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119748305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254199"
 ---
 # <a name="previewing-effects-and-transitions"></a>Vista previa de efectos y transiciones
 

@@ -15,22 +15,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b73a48b2ea93d696f2b8780edec90dfcf0522e2353c508e31d96dd7a404d0d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f3b462c431a136745974dcde5716c3bd81226f15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361737"
 ---
 # <a name="iwmpmetadatapicture-vb-and-c-interface"></a>Interfaz IWMPMetadataPicture (VB y C#)
 
-Proporciona propiedades para obtener información sobre la imagen contenida en un archivo multimedia digital representado por un [**atributo de metadatos WM/Picture.**](/windows/desktop/wmformat/wmpicture) Este atributo corresponde a las imágenes de arte del álbum contenidas en un archivo multimedia digital, no a las imágenes de álbum descargadas a través de Internet.
+Proporciona propiedades para obtener información sobre la imagen contenida en un archivo multimedia digital representado por un [**atributo de metadatos WM/Picture.**](/windows/desktop/wmformat/wmpicture) Este atributo corresponde a las imágenes de arte del álbum contenidas en un archivo multimedia digital, no al arte del álbum descargado a través de Internet.
 
 La **interfaz IWMPMetadataPicture** expone las siguientes propiedades.
 
 
 
-| Propiedad                                                                                   | Descripción                                                               |
+| Propiedad.                                                                                   | Descripción                                                               |
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | [**Descripción**](wmplibiwmpmetadatapicture-iwmpmetadatapicture-description--vb-and-c.md) | Obtiene la descripción de la imagen representada por el atributo de metadatos.  |
 | [**mimeType**](wmplibiwmpmetadatapicture-iwmpmetadatapicture-mimetype--vb-and-c.md)       | Obtiene el tipo MIME de la imagen representada por el atributo de metadatos.    |
@@ -45,7 +45,7 @@ Obtenga una **interfaz IWMPMetadataPicture** pasando el nombre de atributo [**WM
 
 
 
-| Interfaz                                  | Propiedad                                                                             |
+| Interfaz                                  | Propiedad.                                                                             |
 |--------------------------------------------|--------------------------------------------------------------------------------------|
 | [**IWMPMedia3**](iwmpmedia3--vb-and-c.md) | [**getItemInfoByType**](wmplibiwmpmedia3-iwmpmedia3-getiteminfobytype--vb-and-c.md) |
 
@@ -53,7 +53,7 @@ Obtenga una **interfaz IWMPMetadataPicture** pasando el nombre de atributo [**WM
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IWMPMetadataPicture (VB y C#)** no define ningún miembro.
 
@@ -67,7 +67,7 @@ La **interfaz IWMPMetadataPicture (VB y C#)** no define ningún miembro.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTooManyIndexesException'
-title: Constructor de EsentTooManyIndexesException
+description: 'Más información sobre: Constructor EsentTooManyIndexesException'
+title: Constructor EsentTooManyIndexesException
 TOCTitle: 'EsentTooManyIndexesException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTooManyIndexesException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanyindexesexception.esenttoomanyindexesexception(v=EXCHG.10)
@@ -25,18 +25,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 75a543c67f95aeb84e70b2f118b20e973e25aee5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127252746"
 ---
-# <a name="esenttoomanyindexesexception-constructor"></a>Constructor de EsentTooManyIndexesException
+# <a name="esenttoomanyindexesexception-constructor"></a>Constructor EsentTooManyIndexesException
 
 Inicializa una nueva instancia de la clase EsentTooManyIndexesException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentTooManyIndexesException()
 
 [Miembros de EsentTooManyIndexesException](./esenttoomanyindexesexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,19 +1,19 @@
 ---
-description: 'Evalcom2.dll se puede usar para implementar operaciones de validación para los paquetes de instalación y los módulos de combinación mediante evaluadores de coherencia internos: TIC.'
+description: 'Evalcom2.dll se puede usar para implementar operaciones de validación para paquetes de instalación y módulos de combinación mediante evaluadores de coherencia internos: TIC.'
 ms.assetid: df38e75e-554c-4a6d-b9ad-8eee5123a16f
 title: Uso de Evalcom2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f89ba0215e697cb03111daa80510e6ba6c677c2e74f31e74b5640340d2d0d9a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c49a165115b505d5c78ebe5b5e714b8a3c359d72
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119527131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254042"
 ---
 # <a name="using-evalcom2"></a>Uso de Evalcom2
 
-Evalcom2.dll se puede usar para implementar operaciones de validación para paquetes de instalación y módulos de combinación mediante evaluadores de coherencia [internos: ICE](internal-consistency-evaluators-ices.md). El objeto principal implementa interfaces para programas de C/C++.
+Evalcom2.dll se puede usar para implementar operaciones de validación para los paquetes de instalación y los módulos de combinación mediante evaluadores de coherencia [internos: TIC](internal-consistency-evaluators-ices.md). El objeto principal implementa interfaces para programas de C/C++.
 
 El objeto principal también implementa interfaces [Evalcom2](evalcom2-interfaces.md) para programas de C/C++. El CLSID necesario para obtener la interfaz de [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) es {6E5E1910-8053-4660-B795-6B612E29BC58}. EL REFIID es {E482E5C6-E31E-4143-A2E6-DBC3D8E4B8D3}.
 

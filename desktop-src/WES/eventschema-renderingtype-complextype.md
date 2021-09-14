@@ -3,7 +3,7 @@ title: Tipo complejo RenderingInfoType
 description: Define los mensajes representados para el evento.
 ms.assetid: 85a4cfc6-6277-4af8-af4e-cae3bd3aac13
 keywords:
-- Tipo complejo EventLog renderingInfoType
+- EventLog de tipo complejo RenderingInfoType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2d4a70c8bc97abc3dea7cd04e9ce491b64cb62dcc892fcde318d69dcdc996e2d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d0e4224ec9b90e84cbacbf5ede852763edd8e4f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118588468"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361746"
 ---
 # <a name="renderinginfotype-complex-type"></a>Tipo complejo RenderingInfoType
 
@@ -104,13 +104,13 @@ Define los mensajes representados para el evento.
 
 | Nombre    | Tipo     | Descripción                                                                                                      |
 |---------|----------|------------------------------------------------------------------------------------------------------------------|
-| culture | language | Nombre de idioma (por ejemplo, en-US) que identifica la configuración regional usada para representar las cadenas de mensaje.<br/> |
+| culture | language | Nombre de idioma (por ejemplo, en-US) que identifica la configuración regional utilizada para representar las cadenas de mensaje.<br/> |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Solo los eventos que se han recopilado mediante [el Windows recopilador](/windows/desktop/WEC/windows-event-collector) de eventos contendrán esta sección.
+Esta sección solo contendrá los eventos recopilados [mediante Windows recopilador](/windows/desktop/WEC/windows-event-collector) de eventos.
 
 ## <a name="requirements"></a>Requisitos
 

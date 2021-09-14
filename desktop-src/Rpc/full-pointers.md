@@ -4,12 +4,12 @@ description: A diferencia de los punteros únicos, los punteros completos admite
 ms.assetid: 38023942-a4c2-4de7-b7d5-10d508cf083b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bdbdc223125889eeb1849e60d162e5690b5c307b18b6667d43c578a46282400
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18687b496ddd28dca9e70afca8deafb18774500a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120021265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361936"
 ---
 # <a name="full-pointers"></a>Punteros completos
 
@@ -19,9 +19,9 @@ A [diferencia de](unique-pointers.md) los punteros únicos, los punteros complet
 
 Un puntero completo tiene las siguientes características:
 
--   Puede tener el valor null.
--   Puede cambiar de null a non-null durante la llamada. Cuando el valor cambia a distinto de NULL, el código auxiliar del cliente asigna nueva memoria asignada en la devolución. El programa cliente debe liberar esta memoria antes de que finalice.
--   Puede cambiar de distinto de NULL a NULL durante la llamada. Cuando el valor cambia a null, la aplicación es responsable de liberar la memoria.
+-   Puede tener el valor NULL.
+-   Puede cambiar de null a non-null durante la llamada. Cuando el valor cambia a distinto de NULL, el código auxiliar del cliente asigna nueva memoria asignada en la devolución. El programa cliente debe liberar esta memoria antes de finalizar.
+-   Puede cambiar de distinto de NULL a NULL durante la llamada. Cuando el valor cambia a NULL, la aplicación es responsable de liberar la memoria.
 -   El valor puede cambiar de un valor distinto de NULL a otro.
 -   Otro puntero o nombre de la operación puede tener acceso al almacenamiento al que apunta un puntero completo.
 -   Los datos devueltos se escriben en el almacenamiento existente si el puntero no tiene el valor NULL.

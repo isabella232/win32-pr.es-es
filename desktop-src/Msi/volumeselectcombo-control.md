@@ -4,12 +4,12 @@ ms.assetid: 5d486ca8-4c8a-4a15-9d38-7430d0a169ed
 title: VolumeSelectCombo Control
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebaed2e7aa4445c7a147cad359a1d7b8a9985939c61ee49e8bde832c1764a95f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed67391d77259cb4306de09ce92464fe6fcffa92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118375857"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362310"
 ---
 # <a name="volumeselectcombo-control"></a>VolumeSelectCombo Control
 
@@ -29,9 +29,9 @@ Puede usar los siguientes atributos con este control. Para cambiar el valor de u
 | [Position](position-control-attribute.md)                         |                                  | Posición del control en el cuadro de diálogo. Escriba el ancho, el alto y las coordenadas del control de la esquina izquierda del control en las columnas Ancho, Alto, X e Y de la [tabla Control](control-table.md). Use [las unidades del](installer-units.md) instalador para la longitud y la distancia.<br/>                                                                                            |
 | [PropertyName](propertyname-control-attribute.md)                 |                                  | Este es el nombre de la propiedad asociada a este control. Si no se establece el bit de atributo indirecto, el control muestra o cambia el valor de la propiedad que tiene este nombre. Este atributo se especifica en la columna Property de la [tabla Control](control-table.md).                                                                                                   |
 | [PropertyValue](propertyvalue-control-attribute.md)               |                                  | Valor actual de la propiedad mostrada o modificada por este control. Si no se establece el bit de atributo indirecto, este es el valor de PropertyName. Si se establece el bit de atributo indirecto, este es el valor de IndirectPropertyName. Si el atributo cambia, el control refleja el nuevo valor.                                                                                      |
-| [Texto](text-control-attribute.md)                                 |                                  | Para establecer la fuente y el estilo de fuente de una cadena de texto, antefise la cadena de caracteres mostrados con { style} o \\ {&style}. Donde style es un identificador enumerado en la columna TextStyle de la [tabla TextStyle](textstyle-table.md). Si ninguno de ellos está presente, pero la [**propiedad DefaultUIFont**](defaultuifont.md) se define como un estilo de texto válido, se usará esa fuente. |
+| [Texto](text-control-attribute.md)                                 |                                  | Para establecer la fuente y el estilo de fuente de una cadena de texto, antefirima la cadena de caracteres mostrados con { style} o \\ {&style}. Donde style es un identificador enumerado en la columna TextStyle de la [tabla TextStyle](textstyle-table.md). Si ninguno de ellos está presente, pero la [**propiedad DefaultUIFont**](defaultuifont.md) se define como un estilo de texto válido, se usará esa fuente. |
 | [Visible](visible-control-attribute.md)                           | 0x00000000 0x00000001<br/> | Control oculto. Control visible.<br/> Incluya este bit en la palabra de bits de la columna Atributos de la [tabla Control](control-table.md) para que el control sea visible u oculto tras su creación.<br/> También puede ocultar o mostrar un control mediante la [tabla ControlCondition](controlcondition-table.md).<br/>                                                |
-| [Habilitado](enabled-control-attribute.md)                           | 0x00000000 0x00000002<br/> | Control en estado deshabilitado. Control en un estado habilitado.<br/> Incluya este bit en la palabra bit en la columna Atributos del [control para](control-table.md) habilitar el control durante la creación.<br/> También puede habilitar o deshabilitar un control mediante la [tabla ControlCondition](controlcondition-table.md).<br/>                                              |
+| [Enabled](enabled-control-attribute.md)                           | 0x00000000 0x00000002<br/> | Control en estado deshabilitado. Control en un estado habilitado.<br/> Incluya este bit en la palabra bit en la columna Atributos del [control para](control-table.md) habilitar el control durante la creación.<br/> También puede habilitar o deshabilitar un control mediante la [tabla ControlCondition](controlcondition-table.md).<br/>                                              |
 | [Sunken](sunken-control-attribute.md)                             | 0x00000000 0x00000004<br/> | Muestra el estilo visual predeterminado. Muestra el control con un aspecto 3D desconsolado.<br/> Incluya estos bits en la palabra de bits en la columna Atributos de la [tabla Control](control-table.md).<br/>                                                                                                                                                                       |
 | [Indirecto](indirect-control-attribute.md)                         | 0x00000000 0x00000008<br/> | El control muestra o cambia el valor de la propiedad en la columna Propiedad de la [tabla Control](control-table.md). El control muestra o cambia el valor de la propiedad que tiene el identificador enumerado en la columna Propiedad de la tabla Control .<br/> Determina si se hace referencia indirectamente a la propiedad asociada a este control.<br/>            |
 | [RTLRO](rtlro-control-attribute.md)                               | 0x00000000 0x00000020<br/> | El texto del control se muestra en orden de lectura de izquierda a derecha. El texto del control se muestra en orden de lectura de derecha a izquierda.<br/>                                                                                                                                                                                                                                         |
@@ -49,9 +49,9 @@ Puede usar los siguientes atributos con este control. Para cambiar el valor de u
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este control se puede crear a partir de la clase COMBOBOX mediante [**la función CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Tiene los estilos **\_ DROPDOWNLIST** de **CBS, CBS \_ OWNERDRAWFIXED,** **CBS \_ HASSTRINGS,** **WS \_ VSCROLL,** **WS \_ CHILD,** **WS \_ GROUP,** **WS \_ TABSTOP** y **CBS \_ SORT.** Para obtener información sobre cómo desarrollar una interfaz de usuario con Windows, vea [Interfaz de usuario Diseño y desarrollo.](/previous-versions/aa286531(v=msdn.10))
+Este control se puede crear a partir de la clase COMBOBOX mediante [**la función CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Tiene los estilos **\_ DROPDOWNLIST** de **CBS, CBS \_ OWNERDRAWFIXED,** **CBS \_ HASSTRINGS,** **WS \_ VSCROLL,** **WS \_ CHILD,** **WS \_ GROUP,** **WS \_ TABSTOP** y **CBS \_ SORT.** Para obtener información sobre cómo desarrollar una interfaz de usuario con Windows, [vea Interfaz de usuario Diseño y desarrollo.](/previous-versions/aa286531(v=msdn.10))
 
 Por compatibilidad con lectores de pantalla, al crear un cuadro de diálogo con un control VolumeSelectCombo como primer control activo, debe convertir el campo de texto que pertenece al campo de edición en el primer control activo de la tabla [Dialog](dialog-table.md). Puesto que el texto estático no puede centrarse, cuando se crea el cuadro de diálogo, el campo de edición tendrá el foco inicialmente según lo previsto. Esto garantiza que los lectores de pantalla muestren la información correcta.
 

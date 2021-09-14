@@ -4,12 +4,12 @@ description: En esta sección se documenta las funciones en tiempo de ejecución
 ms.assetid: 135bef8d-1794-420e-a111-604d02dbcc06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba02695198ad29e677f38c01eff75bd8be44976592ee4279df27a6569353b100
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 163c68f56a483d3eb7f62596c4a3d78ba2b5774a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118929623"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361930"
 ---
 # <a name="function-reference"></a>Referencia de funciones
 

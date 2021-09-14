@@ -15,13 +15,13 @@ api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
 ms.openlocfilehash: 43acb88e2c7b6108a162c4715de02375121021f8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362150"
 ---
-# <a name="irtcdisconnect-method"></a>Método IRTC::D isconnect
+# <a name="irtcdisconnect-method"></a>IRTC::D isconnect (método)
 
 El **método Disconnect** desconecta el NPP de la red.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
@@ -50,13 +50,13 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**CAPTURA DE \_ NMERR**</dt> </dl>      | El NPP captura datos. No se puede desconectar de la red mientras la captura de datos está en curso.<br/> |
 | <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red.<br/>                                                                 |
-| <dl> <dt>**NMERR \_ NOT \_ REALTIME**</dt> </dl>  | El NPP está conectado a la red, pero no con el [método IRTC::Connect.](irtc-connect.md)<br/>           |
+| <dl> <dt>**NMERR \_ NOT \_ REALTIME**</dt> </dl>  | El NPP está conectado a la red, pero no con el método [IRTC::Conectar.](irtc-connect.md)<br/>           |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se puede llamar a este método cuando el NPP captura datos. Debe llamar al método [IRTC::Stop](irtc-stop.md) antes de llamar a IRTC::D isconnect.
 
@@ -64,7 +64,7 @@ No se puede llamar a este método cuando el NPP captura datos. Debe llamar al m�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -80,7 +80,7 @@ No se puede llamar a este método cuando el NPP captura datos. Debe llamar al m�
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC::Connect](irtc-connect.md)
+[IRTC::Conectar](irtc-connect.md)
 </dt> <dt>
 
 [IRTC::Stop](irtc-stop.md)

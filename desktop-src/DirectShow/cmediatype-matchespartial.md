@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6049ad4526d8776b25e81fe4d75b727196f8fa1251a1959662cca71b161fbc1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f4d2d4232b64857ca209e6b43cd7081a42495fee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073979"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362527"
 ---
 # <a name="cmediatypematchespartial-method"></a>Método CMediaType.MatchesPartial
 
-El método determina si este tipo de medio coincide con un tipo de medio especificado `MatchesPartial` parcialmente.
+El `MatchesPartial` método determina si este tipo de medio coincide con un tipo de medio especificado parcialmente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,11 +51,11 @@ Puntero al tipo de medio que se debe coincidir.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** los tipos de medios coinciden. De lo contrario, **devuelve FALSE**.
+Devuelve **TRUE si** coinciden los tipos de medios. De lo contrario, **devuelve FALSE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El tipo de medio especificado por *ppartial* puede tener un valor de GUID NULL para el tipo \_ principal, subtipo o tipo de formato. No se prueban los miembros \_ con valores NULL guid. (En efecto, GUID \_ NULL actúa como un carácter comodín). Los miembros con valores distintos de GUID \_ NULL deben coincidir para que el tipo de medio coincida.
+El tipo de medio especificado por *ppartial* puede tener un valor de GUID NULL para el tipo \_ principal, subtipo o tipo de formato. No se prueban los miembros \_ con valores NULL de GUID. (En efecto, GUID \_ NULL actúa como un carácter comodín). Los miembros con valores distintos de GUID \_ NULL deben coincidir para que el tipo de medio coincida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ El tipo de medio especificado por *ppartial* puede tener un valor de GUID NULL p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

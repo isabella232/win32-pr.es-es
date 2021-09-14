@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c17ec8fac190cd98803a0dfa85acff015d0ac2c18ce712cc87316dd2dca181bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 305e5df628244293b643da8882f57dd83041c4c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952124"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362335"
 ---
-# <a name="remind"></a>Recordar
+# <a name="remind"></a>RECORDAR
 
 La `REMIND` macro genera un recordatorio en tiempo de compilación. Esta macro genera una cadena que incluye la cadena de parámetro, el nombre del archivo de origen y el número de línea.
 
@@ -42,7 +42,7 @@ Cadena de texto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta macro es útil para generar advertencias en tiempo de compilación:
 
@@ -64,7 +64,7 @@ Esta macro es útil para generar advertencias en tiempo de compilación:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

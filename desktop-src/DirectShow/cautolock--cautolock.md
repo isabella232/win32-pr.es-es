@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 81ccad647e47f5805c8cdc7bc070c336864ec455275396631338d8265d5b144c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4bace2c4a7c79755249e78fbecd0238e6f5961bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362550"
 ---
 # <a name="cautolockcautolock-destructor"></a>Destructor CAutoLock.~CAutoLock
 
@@ -47,7 +47,7 @@ Método destructor. El destructor desbloquea el objeto de sección crítica.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

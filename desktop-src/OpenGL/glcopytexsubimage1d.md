@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38c35e28a37608ebbbdbaf331e2837f83022768cf4eb4033cad2a482d477b37f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64006f9cec7e5fd2f3ca6f860249e579b16dbf10
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118617140"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362088"
 ---
 # <a name="glcopytexsubimage1d-function"></a>Función glCopyTexSubImage1D
 
@@ -116,7 +116,7 @@ Una fila de píxeles que comienza con las coordenadas  de ventana especificadas 
 
 La función **glCopyTexSubImage1D** procesa los píxeles de una fila de la misma manera que [**glCopyPixels,**](glcopypixels.md) salvo que antes de la conversión final de los píxeles, todos los valores de los componentes de píxeles se fijan al intervalo 0,1 y se convierten al formato interno de la textura para el almacenamiento en la matriz de \[ \] texturas. La ordenación de píxeles se determina con las *coordenadas x inferiores* correspondientes a las coordenadas de textura inferiores. Si alguno de los píxeles de una fila especificada del búfer de fotogramas actual está fuera de la ventana asociada al contexto de representación actual, sus valores no están definidos.
 
-No se realiza ningún cambio en el *parámetro internalFormat*, *width* o *border* de la matriz de textura especificada o en valores de textura fuera de la sub image de textura especificada.
+No se realiza ningún cambio en el *parámetro internalFormat*, *width* o *border* de la matriz de texturas especificada o en valores de textura fuera de la sub image de textura especificada.
 
 No se pueden incluir llamadas **a glCopyTexSubImage1D** en listas para mostrar.
 
@@ -147,7 +147,7 @@ Las siguientes funciones recuperan información relacionada **con glCopyTexSubIm
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

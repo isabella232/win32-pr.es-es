@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8cc73e7db70997461cb9cdcb18feaaa3b74749605d1a2252f8cc6bbdf0175ef1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e803e89e7eb736116dd5c7caad55e6514168d667
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118770512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361512"
 ---
 # <a name="esentspavailextcacheoutofmemoryexception-constructor"></a>Constructor EsentSPAvailExtCacheOutOfMemoryException
 

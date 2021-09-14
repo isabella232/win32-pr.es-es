@@ -1,6 +1,6 @@
 ---
 title: Win32_TSVirtualIPSetting clase
-description: Representa la asociación entre una clase de elemento TerminalService de Win32 y una clase de \_ configuración \_ TSVirtualIP de Win32.
+description: Representa la asociación entre una clase de elemento TerminalService de Win32 y una clase \_ de configuración \_ TSVirtualIP de Win32.
 ms.assetid: 06a78b4d-973a-4912-b7e6-bc490197c4a6
 ms.tgt_platform: multiple
 keywords:
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f53ec34bf936efba313adb1144bf6a67c80c7ea35b738fbe8f4dbef83095d0f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7368b3b2e932f45d047d4ca4db724030b2dd82ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119769035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361747"
 ---
 # <a name="win32_tsvirtualipsetting-class"></a>Clase \_ TSVirtualIPSetting de Win32
 
-Representa la asociación entre una clase de elemento [**\_ TerminalService de Win32**](win32-terminalservice.md) y una clase de [**configuración \_ TSVirtualIP de Win32.**](win32-tsvirtualip.md)
+Representa la asociación entre una [**clase de elemento \_ TerminalService de Win32**](win32-terminalservice.md) y una clase de configuración [**\_ TSVirtualIP de Win32.**](win32-tsvirtualip.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -52,7 +52,7 @@ class Win32_TSVirtualIPSetting : CIM_ElementSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSVirtualIPSetting de Win32** tiene estos tipos de miembros:
 
@@ -106,7 +106,7 @@ Tipo de datos: **[ **\_ TerminalService de Win32**](win32-terminalservice.md)**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Referencia a un objeto [**\_ TerminalService de Win32**](win32-terminalservice.md) que es la clase de elemento para la asociación.
@@ -149,13 +149,13 @@ Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystem
 **Configuración**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **Win32 \_ TSVirtualIP**](win32-tsvirtualip.md)**
+Tipo de datos: **[ **\_ Win32 TSVirtualIP**](win32-tsvirtualip.md)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Referencia a un [**objeto \_ TSVirtualIP de Win32**](win32-tsvirtualip.md) que es la clase de configuración de la asociación.
@@ -174,7 +174,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -246,13 +246,13 @@ Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystem
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -262,7 +262,7 @@ Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystem
 [**TerminalService de Win32 \_**](win32-terminalservice.md)
 </dt> <dt>
 
-[**TSVirtualIP de Win32 \_**](win32-tsvirtualip.md)
+[**Win32 \_ TSVirtualIP**](win32-tsvirtualip.md)
 </dt> </dl>
 
  

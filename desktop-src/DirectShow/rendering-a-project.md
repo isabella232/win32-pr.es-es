@@ -4,12 +4,12 @@ ms.assetid: e4751329-3533-47a4-8390-766512021923
 title: Representación de un Project
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4ea28f1937f54ad093c22dd28f9c672379030a04e53380b0ccd72129442f4cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 650d023692167ae9e68ffef0b80c55ffb9b6e633
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120050625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362332"
 ---
 # <a name="rendering-a-project"></a>Representación de un Project
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ac72155449e70a59265e4ffd2576245059a547906092df2a932e84f221e48fd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d0bd6a22ae91877c9b20fa5387edd9438942a07d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362074"
 ---
 # <a name="gldepthrange-function"></a>Función glDepthRange
 
@@ -71,7 +71,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar el código de error 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después del recorte y la división *por w*, las coordenadas *z* oscilan entre 0,0 y 1,0, correspondientes a los planos de recorte cercanos y lejanos. La **función glDepthRange** especifica una asignación lineal de las coordenadas *z* normalizadas de este intervalo a las *coordenadas z* de la ventana. Independientemente de la implementación real del búfer de profundidad, los valores de profundidad de coordenadas de ventana se tratan como si oscilase entre 0,0 y 1,0 (como los componentes de color). Por lo tanto, los valores aceptados por **glDepthRange** se fijan a este intervalo antes de que se acepten.
 
@@ -97,7 +97,7 @@ La función siguiente recupera información relacionada con **glDepthRange**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

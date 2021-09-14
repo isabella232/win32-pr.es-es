@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 89b87bd4e706e5270b49ca94d1c86a6c5a5326fd3efccb1dcc45b9681e6e2fca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a4b754c8937b87a547f4583b3270f5782a6a415
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017563"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127361430"
 ---
 # <a name="cbaseallocatorcbaseallocator-destructor"></a>Destructor CBaseAllocator.~CBaseAllocator
 
@@ -36,9 +36,9 @@ Método destructor.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Llame siempre al [**método CBaseAllocator::D ecommit**](cbaseallocator-decommit.md) antes de destruir el objeto. El destructor de clase base no puede llamar **a Decommit**, porque ese método llama al método virtual [**puro CBaseAllocator::Free**](cbaseallocator-free.md). Las clases derivadas deben invalidar este destructor y llamar **a Decommit**.
+Llame siempre al [**método CBaseAllocator::D ecommit**](cbaseallocator-decommit.md) antes de destruir el objeto. El destructor de clase base no puede llamar **a Decommit**, porque ese método llama al método virtual puro [**CBaseAllocator::Free**](cbaseallocator-free.md). Las clases derivadas deben invalidar este destructor y llamar **a Decommit**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Llame siempre al [**método CBaseAllocator::D ecommit**](cbaseallocator-decommit
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

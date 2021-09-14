@@ -4,12 +4,12 @@ ms.assetid: d037cd8d-9c88-4851-a9da-b2179f53cee6
 title: Uso de una interfaz de usuario insertadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3153e0cb3ba79bd9c5cb6f1ee9b801c12ae828bb7d4dd332d04832bcd5200ea4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f187e50461cfe88adc9c2cabbf8dd8b88ca97a5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119527305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254091"
 ---
 # <a name="using-an-embedded-ui"></a>Uso de una interfaz de usuario insertadas
 
@@ -17,7 +17,7 @@ Se puede incrustar una interfaz de usuario personalizada en el paquete Windows I
 
 El archivo DLL que contiene la interfaz de usuario personalizada y los archivos de recursos usados por la interfaz de usuario personalizada deben aparecer en la [tabla MsiEmbeddedUI.](msiembeddedui-table.md) Por ejemplo, esta tabla MsiEmbeddedUI contiene una fila para el archivo DLL que contiene la interfaz de usuario insertada y una fila para un archivo de mapa de bits utilizado por la interfaz de usuario.
 
-| MsiEmbeddedUI | FileName    | Atributos | MessageFilter | data            |
+| MsiEmbeddedUI | FileName    | Atributos | MessageFilter | Datos            |
 |---------------|-------------|------------|---------------|-----------------|
 | EmbeddedUI    | embedui.dll | 3          | 201359327     | \[Binary Data\] |
 | CustomBitmap  | custom.bmp  | 0          |               | \[Binary Data\] |

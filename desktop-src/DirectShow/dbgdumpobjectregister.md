@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d82d7b419949210e19460880126a07ad52f63ae59f6055e5a2b968a2dd5c7beb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 727d9c00ebbe3d48bb46797a1e27b9dd27c7b2c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117821582"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362426"
 ---
 # <a name="dbgdumpobjectregister-function"></a>Función DbgDumpObjectRegister
 
@@ -44,9 +44,9 @@ Esta función no tiene parámetros.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-En las compilaciones de depuración, la biblioteca de depuración mantiene una lista de objetos activos. La lista incluye los objetos que derivan de [**CBaseObject**](cbaseobject.md), creados por el módulo actual y no se han destruyedo. Los métodos de constructor y destructor **CBaseObject** actualizan la lista.
+En las compilaciones de depuración, la biblioteca de depuración mantiene una lista de objetos activos. La lista incluye todos los objetos que derivan de [**CBaseObject**](cbaseobject.md), creados por el módulo actual y no se han destruido. Los métodos de constructor y destructor **CBaseObject** actualizan la lista.
 
 Esta función genera varios mensajes LOG \_ MEMORY. En el nivel de registro 1, la función muestra solo el número total de objetos. En el nivel de registro 2 o superior, muestra una lista de los objetos .
 

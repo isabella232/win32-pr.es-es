@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 760ec066a9d4876dd6ef754783c41ae12765db10c1595d08aef0a73258de087f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36316815ae1d9fde1a18fb36029da92ae6263f20
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254493"
 ---
 # <a name="cbaseinputpinpassnotify-method"></a>Método CBaseInputPin.PassNotify
 
@@ -64,7 +64,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en l
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Llame a este método si el filtro no controla los mensajes de control de calidad. Este método pasa el mensaje a uno de los siguientes objetos, en orden de preferencia:
 

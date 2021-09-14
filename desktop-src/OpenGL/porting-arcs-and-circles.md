@@ -15,12 +15,12 @@ keywords:
 - funciones de dibujo, círculos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72298caac6495d39c8a5d6cf7441b3b3664180d9e5396fb22106d9e138019b09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ce17546ce17f24adf80641549d8843a473c8754
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118936224"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362048"
 ---
 # <a name="porting-arcs-and-circles"></a>Porte de arcos y círculos
 

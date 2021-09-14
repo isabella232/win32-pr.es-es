@@ -9,12 +9,12 @@ keywords:
 - comandos OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0729b71e9c25abf22045884910fcec3780d50aff2fe94dbe485f83f640cdeced
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba52cad8436fbe97c83a6d0e214b6c7ba500d195
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119888065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362029"
 ---
 # <a name="primitives-and-commands"></a>Primitivas y comandos
 
