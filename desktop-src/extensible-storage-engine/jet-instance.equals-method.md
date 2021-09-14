@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 75d66bb036092dab531721ac920711b0a600f46b9a7f97844536a7d344c718ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8401fbc9bfcfe238fac3d6219eba84dd5d256e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118074606"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887476"
 ---
 # <a name="jet_instanceequals-method"></a>JET_INSTANCE. Método Equals
 
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

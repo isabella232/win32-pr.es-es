@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a1e63e96950093bb7cc5760032d0b1f622c5df93a6f31673c595f54e5ea8e70
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aaf51c3f4297f238e51bbe8677303730c04b89d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017403"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974025"
 ---
 # <a name="cbasecontrolwindowget_messagedrain-method"></a>CBaseControlWindow.get \_ MessageDrain (método)
 
@@ -53,7 +53,7 @@ Puntero a la ventana actual que recibe mensajes de ventana.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los mensajes enviados al filtro del representador de vídeo se pueden publicar en otra ventana. La ventana registrada para recibir estos mensajes (mediante la función miembro **CBaseControlWindow::get \_ MessageDrain)** es la purga del mensaje actual.
 
@@ -68,7 +68,7 @@ Los mensajes enviados al filtro del representador de vídeo se pueden publicar e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

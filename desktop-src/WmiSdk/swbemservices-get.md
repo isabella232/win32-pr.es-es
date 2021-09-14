@@ -1,5 +1,5 @@
 ---
-description: Recupera un objeto , que es una definición de clase o una instancia de , en función de la ruta de acceso del objeto.
+description: Recupera un objeto , que es una definición de clase o una instancia de , basándose en la ruta de acceso del objeto.
 ms.assetid: 3071aeb2-adab-47aa-a10c-9796766bb630
 ms.tgt_platform: multiple
 title: Método SWbemServices.Get (Wbemdisp.h)
@@ -16,16 +16,16 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: d448d92cddf24e98f05cf023116e7087ad8cc3dcd310b7ccd3657571ee7650ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8998a1ca04206362fcc0e7405fccf8c923d74d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118312664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973713"
 ---
 # <a name="swbemservicesget-method"></a>Método SWbemServices.Get
 
-El **método Get** del objeto [**SWbemServices**](swbemservices.md) recupera un objeto , que es una definición de clase o una instancia de , en función de la ruta de acceso del objeto. Este método recupera solo los objetos del espacio de nombres asociado al objeto **SWbemServices** actual.
+El **método Get** del objeto [**SWbemServices**](swbemservices.md) recupera un objeto , que es una definición de clase o una instancia de , basándose en la ruta de acceso del objeto. Este método solo recupera objetos del espacio de nombres asociado al objeto **SWbemServices** actual.
 
 Se llama al método en modo sincrónico. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
 
@@ -69,14 +69,14 @@ Entero que determina el comportamiento de la consulta. Este parámetro puede ace
 
 </dt> <dd>
 
-Hace que WMI devuelva datos de modificación de clase con la definición de clase base. Para obtener más información sobre los calificadores modificados, vea [Localización de información de clase WMI](localizing-wmi-class-information.md).
+Hace que WMI devuelva datos de modificación de clase con la definición de clase base. Para obtener más información sobre los calificadores modificados, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
 *objWbemNamedValueSet* \[ Opcional\]
 </dt> <dd>
 
-Normalmente, esto no está definido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
+Normalmente, esto es indefinido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
 
 </dd> </dl>
 
@@ -118,7 +118,7 @@ La ruta de acceso especificada no era válida.
 
 </dd> <dt>
 
-**wbemErrNotFound** : 2147749890 (0x80041002)
+**wbemErrNotFound:** 2147749890 (0x80041002)
 </dt> <dd>
 
 No se encontró el objeto solicitado.
@@ -132,7 +132,7 @@ No hay suficiente memoria para completar la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 A diferencia [**de los métodos ExecQuery**](/windows/desktop/api/Provider/nf-provider-provider-execquery) e [**InstancesOf,**](swbemservices-instancesof.md) el método Get siempre devuelve [**un objeto SWbemObject**](swbemobject.md) que representa una instancia específica de un recurso administrado por WMI. Para obtener una instancia específica de un recurso administrado por WMI mediante el método Get, debe decir a Get que recupere la instancia pasando al método la ruta de acceso del objeto, como se muestra en el siguiente script.
 
@@ -151,17 +151,17 @@ Wscript.Echo "Name:         " & objSWbemObject.Name        & vbCrLf & _
 
 Puede usar este método para obtener objetos [*singleton,*](gloss-s.md) como [**\_ \_ CIMOMIdentification**](--cimomidentification.md), que contiene información de versión sobre la instalación de WMI que se está ejecutando.
 
-Puede examinar el repositorio con una herramienta de visualización como [CIM Studio](further-information.md) para comprobar que aparecen la nueva clase y la instancia. Para obtener un ejemplo de cómo quitar una clase y una instancia del repositorio, vea [**SWbemServices.Delete**](swbemservices-delete.md) o [**SWbemObject.Delete. \_**](swbemobject-delete-.md)
+Puede examinar el repositorio con una herramienta de visualización como [CIM Studio](further-information.md) para comprobar que aparecen la nueva clase e instancia. Para obtener un ejemplo de cómo quitar una clase y una instancia del repositorio, vea [**SWbemServices.Delete**](swbemservices-delete.md) o [**SWbemObject.Delete. \_**](swbemobject-delete-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |

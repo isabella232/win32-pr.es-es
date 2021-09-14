@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 5264bd28e40c8bf20d2c5c514b24d5150eec261a6a25422ff5b1bafc91a13e62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b88289381641edcef5922557862729acbb81f54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119687445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973854"
 ---
 # <a name="csourceposition-class"></a>CSourcePosition (clase)
 

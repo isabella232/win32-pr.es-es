@@ -4,18 +4,18 @@ ms.assetid: 7247758e-f486-4ce2-afca-f0d10fffe626
 title: Role-Based administración de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c72ed2f1fdd5eb0b650b991b776364bf982c774b3ffcaff1358ea2c3ed1ee4d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 714cede74e105a68b0a5fed2371858054add954e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118547077"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973516"
 ---
 # <a name="role-based-security-administration"></a>Role-Based administración de seguridad
 
 La seguridad basada en roles es un servicio automático proporcionado por COM+ que le permite construir y aplicar administrativamente una directiva de control de acceso para la aplicación COM+. Con un modelo de configuración de seguridad flexible y extensible, la seguridad basada en roles ofrece una ventaja considerable sobre la aplicación de toda la seguridad dentro de los componentes y proporciona las siguientes ventajas:
 
--   Puede configurar la seguridad administrativamente, mediante la herramienta administrativa Servicios de componentes o las funciones administrativas.
+-   Puede configurar la seguridad de forma administrativa mediante la herramienta administrativa Servicios de componentes o las funciones administrativas.
 -   No es preciso escribir lógica relacionada con la seguridad en los componentes cuando la protección de roles en el nivel de método le proporciona un control de acceso lo suficientemente preciso.
 -   No es necesario tener en cuenta la seguridad en el diseño de interfaces o componentes. En su lugar, puede establecer la seguridad método a método.
 -   Puede centrarse en la estructura de la directiva de seguridad que desea aplicar y, a través de roles, esa directiva se puede expresar claramente a los administradores que implementan la aplicación.

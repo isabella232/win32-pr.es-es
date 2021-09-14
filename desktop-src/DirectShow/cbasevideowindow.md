@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ba320000701020df65f6db2eaa7a71e309a6c6709b236ac0ce6edf7dbe40ffb8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a807b1386dbb53522a0f8190aff2a47bf0d16368
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074669"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973942"
 ---
 # <a name="cbasevideowindow-class"></a>CBaseVideoWindow (clase)
 
-![Jerarquía de clases de cbasevideowindow](images/wctrl01.png)
+![Jerarquía de clases cbasevideowindow](images/wctrl01.png)
 
 La `CBaseVideoWindow` clase implementa los métodos **IDispatch** de la [**interfaz IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Los métodos **IVideoWindow** restantes se quedan como métodos virtuales puros y deben implementarse mediante una clase derivada.
 
@@ -42,7 +42,7 @@ Los **métodos IDispatch** de esta clase son implementaciones estándar y no se 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

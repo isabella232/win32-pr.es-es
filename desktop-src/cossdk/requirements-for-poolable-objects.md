@@ -4,12 +4,12 @@ ms.assetid: 2cd4211e-be12-4197-8b43-5cb9f2321016
 title: Requisitos para objetos agrupables
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1af3e3b67f7d796c199649b64f711ec32a75374bff60ebf900b34871ed4bc310
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78d6834210f180ad8b514b51b6926b5cd30714fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047293"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973518"
 ---
 # <a name="requirements-for-poolable-objects"></a>Requisitos para objetos agrupables
 
@@ -24,7 +24,7 @@ Para mantener la seguridad, la coherencia y el aislamiento, los objetos agrupabl
 Los objetos agrupables no se pueden enlazar a un subproceso determinado; De lo contrario, el rendimiento podría ser potencialmente desastroso. Por esta razón, los objetos agrupables no se pueden marcar para ejecutarse en el modelo de apartamento; deben ejecutarse en el apartamento multiproceso o en el apartamento neutro. Además, los objetos agrupables no deben usar el almacenamiento local de subprocesos ni deben agregar el serializador de subprocesos libres. Para obtener más información sobre el subprocesamiento en COM+, vea [Modelos de subprocesamiento de COM+.](com--threading-models.md)
 
 > [!Note]  
-> Microsoft Visual Basic 6.0 y entornos de desarrollo anteriores solo pueden crear componentes de modelo de apartamento. Sin embargo, en Visual Basic .NET, los componentes se pueden agrupar.
+> Microsoft Visual Basic 6.0 y entornos de desarrollo anteriores solo pueden crear componentes de modelos de apartamento. Sin embargo, en Visual Basic .NET, los componentes se pueden agrupar.
 
  
 

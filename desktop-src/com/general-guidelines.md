@@ -1,28 +1,28 @@
 ---
-title: Directrices generales
-description: Directrices generales
+title: Instrucciones generales
+description: Instrucciones generales
 ms.assetid: 34801488-debb-4327-8ee6-1e4b350f21ab
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8877a5af1553e55fa256dba555d1eebdaa87e1d4533a89fdfb3e89eb666f9605
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0babf4a3106f7a27e374fa89d8efd7314ee19070
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973649"
 ---
-# <a name="general-guidelines"></a>Directrices generales
+# <a name="general-guidelines"></a>Instrucciones generales
 
-En los temas siguientes se describen varias características, sugerencias y sugerencias para los desarrolladores de contenedores ActiveX Control y ActiveX Control para ayudar a mantener una buena interoperabilidad entre controles y contenedores de controles:
+En los temas siguientes se describen varias características, sugerencias y sugerencias para que los desarrolladores de contenedores ActiveX Control y ActiveX Control ayuden a mantener una buena interoperabilidad entre los controles y los contenedores de controles:
 
 -   [Sobrecarga de IPropertyNotifySink](overloading-ipropertynotifysink.md)
 -   [Interfaces privadas específicas del contenedor](container-specific-private-interfaces.md)
--   [Problemas multiproceso](multithreaded-issues.md)
+-   [Problemas de varios subprocesos](multithreaded-issues.md)
 -   [Inmovilización de eventos](event-freezing.md)
 -   [Controles de contenedor](container-controls.md)
 -   [Marcas \_ TABSTOP de WS GROUP y \_ WS en controles](ws-group-and-ws-tabstop-flags-in-controls.md)
 -   [Varios controles en un archivo DLL](multiple-controls-in-one-dll.md)
--   [El método IOleContainer::EnumObjects](the-iolecontainer--enumobjects-method.md)
+-   [IOleContainer::EnumObjects (Método)](the-iolecontainer--enumobjects-method.md)
 -   [Metarchivos mejorados](enhanced-metafiles.md)
 -   [Licencias](licensing.md)
 -   [Interfaces duales](dual-interfaces.md)

@@ -1,19 +1,19 @@
 ---
-description: Puede usar com+ Compensating Resource Manager (CRM) para integrar fácilmente y rápidamente los recursos de la aplicación con Microsoft DTC (Coordinador de transacciones distribuidas) transacciones de Microsoft DTC (Coordinador de transacciones distribuidas) (DTC).
+description: Puede usar com+ Compensating Resource Manager (CRM) para integrar fácilmente y rápidamente los recursos de la aplicación con Microsoft DTC (Coordinador de transacciones distribuidas) transacciones (DTC).
 ms.assetid: 8d1d034f-8a09-40ae-842a-5251135bd3c8
 title: Conceptos de compensación Resource Manager COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b546f10e9a99f827c512e6dd7662ead05476774f7ff8dc32c40fa123b0ffe272
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14206a54ffcb4f7e06ddf7362736a722393b0791
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047633"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973551"
 ---
 # <a name="com-compensating-resource-manager-concepts"></a>Conceptos de compensación Resource Manager COM+
 
-Puede usar com+ Compensating Resource Manager (CRM) para integrar fácilmente y rápidamente los recursos de la aplicación con Microsoft DTC (Coordinador de transacciones distribuidas) transacciones de Microsoft DTC (Coordinador de transacciones distribuidas) (DTC). Los recursos de la aplicación pueden votar el resultado de una transacción y pueden recibir la notificación final de su resultado. Se genera un registro duradero para que los recursos de la aplicación puedan escribir registros que sobreviven a errores, y CRM recupera este archivo de registro cuando se reinicia la aplicación.
+Puede usar com+ Compensating Resource Manager (CRM) para integrar fácilmente y rápidamente los recursos de la aplicación con Microsoft DTC (Coordinador de transacciones distribuidas) transacciones (DTC). Los recursos de la aplicación pueden votar el resultado de una transacción y pueden recibir la notificación final de su resultado. Se genera un registro duradero para que los recursos de la aplicación puedan escribir registros que sobreviven a errores, y CRM recupera este archivo de registro cuando se reinicia la aplicación.
 
 Un CRM consta de los dos componentes siguientes:
 
@@ -29,7 +29,7 @@ Durante los errores anteriores a la recuperación de la aplicación de servidor 
 CRM define tres tipos de interfaz para las funciones básicas de CRM:
 
 -   [**ICrmLogControl se**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmlogcontrol) implementa en el empleado de CRM y lo usa el trabajador de CRM para escribir registros en el registro. También lo puede usar el compensador de CRM.
--   [**ICrmCompensator**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmcompensator) e [**ICrmCompensatorVariants**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmcompensatorvariants) se implementan en CRM Compensator. Estas interfaces se usan para entregar notificaciones de resultados de transacciones y sus registros asociados al compensador crm. Normalmente, crm Compensator implementaría solo una de estas interfaces, dependiendo de si requería registros estructurados o no estructurados. *Los registros estructurados* son aquellos que se han creado como una colección de variantes y que suelen ser usados por Microsoft Visual Basic. *Las entradas de registro no estructuradas* son solo un búfer de bytes y normalmente son para su uso por Microsoft Visual C++. Un compensador crm puede implementar ambas interfaces de compensador; sin embargo, solo se usa de uno en uno para entregar las entradas de registro.
+-   [**ICrmCompensator**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmcompensator) e [**ICrmCompensatorVariants**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmcompensatorvariants) se implementan en CRM Compensator. Estas interfaces se usan para entregar notificaciones de resultados de transacciones y sus registros asociados al compensador crm. Normalmente, crm Compensator implementaría solo una de estas interfaces, dependiendo de si requería registros estructurados o no estructurados. *Los registros estructurados* son aquellos que se han creado como una colección de variantes y suelen ser usados por Microsoft Visual Basic. *Las entradas de registro no estructuradas* son solo un búfer de bytes y normalmente son para su uso por Microsoft Visual C++. Un compensador crm puede implementar ambas interfaces de compensador; sin embargo, solo se usa de uno en uno para entregar las entradas de registro.
 -   Las interfaces de supervisión de COM+ CRM se usan para supervisar las CRM dentro de una aplicación de servidor determinada. Para obtener información detallada sobre las interfaces de supervisión, vea Interfaces de supervisión de [CRM de COM+](com--crm-monitoring-interfaces.md).
 
 Los temas siguientes de esta sección proporcionan más detalles sobre el servicio CRM de COM+:

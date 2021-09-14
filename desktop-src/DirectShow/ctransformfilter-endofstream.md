@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ade419666b1df36e851d5d945e14d9035c1377145cecd472244c9178758f45f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5dea676a42f6df46d0035fdbb6e812b1df15fbb2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119907635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973836"
 ---
 # <a name="ctransformfilterendofstream-method"></a>Método CTransformFilter.EndOfStream
 
-El método notifica al filtro que no se espera ningún dato `EndOfStream` adicional del pin de entrada.
+El método notifica al filtro que no se espera ningún `EndOfStream` dato adicional del pin de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK u otro valor **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El método [**CTransformInputPin::EndOfStream**](ctransforminputpin-endofstream.md) del pin de entrada llama a este método. Este método entrega la notificación de final de secuencia de bajada. Si la clase derivada usa un subproceso de trabajo para entregar ejemplos multimedia, debe invalidar este método y poner en cola la notificación de fin de flujo.
+El método [**CTransformInputPin::EndOfStream**](ctransforminputpin-endofstream.md) del pin de entrada llama a este método. Este método entrega la notificación de fin de flujo de bajada. Si la clase derivada usa un subproceso de trabajo para entregar ejemplos multimedia, debe invalidar este método y poner en cola la notificación de fin de flujo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ El método [**CTransformInputPin::EndOfStream**](ctransforminputpin-endofstream.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

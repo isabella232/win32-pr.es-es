@@ -1,6 +1,6 @@
 ---
-title: RWTexture1DArray::GetDimensions (Función)
-description: Devuelve las dimensiones del recurso. | RWTexture1DArray::GetDimensions (Función)
+title: FUNCIÓN RWTexture1DArray::GetDimensions
+description: Devuelve las dimensiones del recurso. | FUNCIÓN RWTexture1DArray::GetDimensions
 ms.assetid: 64f2757e-c03c-4f72-b081-1c57656d6e95
 keywords:
 - Función GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7a522fe31a62619134e86b2ed98da54570d693d1360ede1a8c0d41d28975b367
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d31d04ccf62b42fede209589a5e4a6760a3091d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884121"
 ---
-# <a name="rwtexture1darraygetdimensions-function"></a>RWTexture1DArray::GetDimensions (Función)
+# <a name="rwtexture1darraygetdimensions-function"></a>FUNCIÓN RWTexture1DArray::GetDimensions
 
 Devuelve las dimensiones del recurso.
 
@@ -59,7 +59,7 @@ Número de elementos de la matriz.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta es una lista de las versiones sobrecargadas de este método.
 
@@ -86,7 +86,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

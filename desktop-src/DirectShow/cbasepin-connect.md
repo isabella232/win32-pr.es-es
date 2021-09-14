@@ -1,5 +1,5 @@
 ---
-description: El Conectar de conexión conecta el pin a otro pin. Este método implementa el método IPin::Conectar.
+description: El Conectar método conecta el pin a otro pin. Este método implementa el método IPin::Conectar.
 ms.assetid: 8ea99d2f-09da-4b15-a3b0-04ceb7888bc1
 title: CBasePin. Conectar método (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a134b87e9c7c4d0f665ae37df7ec9cd0ecb3a37c0d0548f27835ead7b8ecca21
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed8bcdab7e0909e59e7d9ec00645786f8ce48c02
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074799"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973987"
 ---
 # <a name="cbasepinconnect-method"></a>CBasePin. Conectar método
 
@@ -75,7 +75,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla sig
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El *parámetro pmt* puede ser **NULL.** También puede especificar un tipo de medio parcial, con un valor de GUID NULL para \_ el tipo principal, subtipo o formato.
 
@@ -92,7 +92,7 @@ En la clase base, este método comprueba si el pin ya está conectado y si el fi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

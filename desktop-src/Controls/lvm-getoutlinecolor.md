@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3958fbb5e041f8d4c600550ec8248ac3515a4e4b41331c46f265860a537c49ff
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 489f21f2f6d4dcca2c79d92a13a85d7718a85693
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120088875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974084"
 ---
 # <a name="lvm_getoutlinecolor-message"></a>Mensaje \_ LVM GETOUTLINECOLOR
 
@@ -39,7 +39,7 @@ Recupera el color del borde de un control de vista de lista si se establece el e
 
 Devuelve una **estructura COLORREF** que contiene el color del borde de un control de vista de lista.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
@@ -50,11 +50,11 @@ Devuelve una **estructura COLORREF** que contiene el color del borde de un contr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

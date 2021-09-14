@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101289
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 6b8555ef634b02088b9b2813d589f929fe2715b36b5e39ce47d8004ffb1f0154
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba202fcc5b5e84e47e0b7cff0de9f6ddeee17e2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119116555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883644"
 ---
 # <a name="esentcommittedlogfilesmissingexception-methods"></a>Métodos de EsentCommittedLogFilesMissingException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentCommittedLogFilesMissingException](./esentcommittedlogfilesmissingexception-class.md) expone los miembros siguientes.
+El [tipo EsentCommittedLogFilesMissingException](./esentcommittedlogfilesmissingexception-class.md) expone los siguientes miembros.
 
 ## <a name="methods"></a>Métodos
 

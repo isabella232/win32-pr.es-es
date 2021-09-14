@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 848bf348a35ee171f23e499464b65c847b67f920c53175fcf920d56e7e30fb90
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a1d546e1236fa4f0800c0353810beb5b427ba4fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119698785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974105"
 ---
 # <a name="lvm_enablegroupview-message"></a>Mensaje \_ ENABLEGROUPVIEW de LVM
 
@@ -30,7 +30,7 @@ Habilita o deshabilita si los elementos de un control de vista de lista se muest
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>Un **valor BOOL** que indica si se debe habilitar un control de vista de lista para agrupar los elementos mostrados. Use **TRUE** para habilitar la agrupación, **FALSE** para deshabilitarla. </dd> <dt>
+</dt> <dd>Valor **BOOL que** indica si se debe habilitar un control de vista de lista para agrupar los elementos mostrados. Use **TRUE** para habilitar la agrupación, **FALSE** para deshabilitarla. </dd> <dt>
 
 *lParam* 
 </dt> <dd>Debe ser **NULL.**</dd> </dl>
@@ -51,7 +51,7 @@ Devuelve uno de los valores siguientes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **LVM \_ ENABLEGROUPVIEW no** se admite en el [**estilo \_ OWNERDATA de LVS.**](list-view-window-styles.md)
 
@@ -68,7 +68,7 @@ Devuelve uno de los valores siguientes.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

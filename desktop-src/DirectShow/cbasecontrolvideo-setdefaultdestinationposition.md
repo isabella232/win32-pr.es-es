@@ -1,5 +1,5 @@
 ---
-description: El método SetDefaultDestinationPosition vuelve a establecer el representador en usando la posición de destino predeterminada (normalmente el área cliente de la ventana completa).
+description: El método SetDefaultDestinationPosition vuelve a establecer el representador en usando la posición de destino predeterminada (normalmente el área de cliente de ventana completa).
 ms.assetid: 228259d7-2f1f-4528-8c8a-d20d7542523c
 title: Método CBaseControlVideo.SetDefaultDestinationPosition (Ctlutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d984370150ff069b31c99abd61456037e36d01121d3abc0ed9464c9e1071d020
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a959f462d410b83588fb1a8df87cebffd879d8ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118158788"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974060"
 ---
 # <a name="cbasecontrolvideosetdefaultdestinationposition-method"></a>Método CBaseControlVideo.SetDefaultDestinationPosition
 
@@ -56,9 +56,9 @@ Devuelve un **valor HRESULT** que depende de la implementación; puede ser uno d
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a través de la [**interfaz IBasicVideo.**](/windows/desktop/api/Control/nn-control-ibasicvideo) El rectángulo de origen afecta a la sección del origen de vídeo nativo que aparecerá en la pantalla; el rectángulo de destino afecta a dónde aparecerá el vídeo cuando se reproduce. El rectángulo de destino es relativo al área de cliente de la ventana en la que se reproduce. La esquina superior izquierda de la ventana es coordenada (0,0).
+Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a través de la [**interfaz IBasicVideo.**](/windows/desktop/api/Control/nn-control-ibasicvideo) El rectángulo de origen afecta a qué sección del origen de vídeo nativo aparecerá en la pantalla; el rectángulo de destino afecta a dónde aparecerá el vídeo cuando se reproduce. El rectángulo de destino es relativo al área de cliente de la ventana en la que se reproduce. La esquina superior izquierda de la ventana es coordenada (0,0).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

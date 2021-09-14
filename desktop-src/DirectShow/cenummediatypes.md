@@ -16,23 +16,23 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1729407f1022c2781fc97f8638ea8748323c151e9bd67c5ad31b30ae05fdff0f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ad5e1de9eb2edbdb63eb6f476391ae8387c8d01e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120131284"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973882"
 ---
 # <a name="cenummediatypes-class"></a>CEnumMediaTypes (clase)
 
-![jerarquía de clases cenummediatypes](images/filter04.png)
+![cenummediatypes (jerarquía de clases)](images/filter04.png)
 
 La `CEnumMediaTypes` clase implementa un enumerador para los tipos de medios preferidos.
 
-Esta clase implementa la [**interfaz IEnumMediaTypes.**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) Llama a los siguientes [**métodos de CBasePin:**](cbasepin.md)
+Esta clase implementa la [**interfaz IEnumMediaTypes.**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) Llama a los métodos [**CBasePin**](cbasepin.md) siguientes:
 
 -   [**CBasePin::GetMediaType**](cbasepin-getmediatype.md):Recupera un tipo de medio al que hace referencia un índice de base cero.
--   [**CBasePin::GetMediaTypeVersion:**](cbasepin-getmediatypeversion.md)determina si ha cambiado el conjunto de tipos preferidos.
+-   [**CBasePin::GetMediaTypeVersion:**](cbasepin-getmediatypeversion.md)determina si el conjunto de tipos preferidos ha cambiado.
 
 Cada vez que un pin modifica su lista de tipos de medios preferidos, el pin incrementa el número de versión del tipo de medio. Cuando esto sucede, el objeto enumerador ya no se sincroniza con el pin y los métodos de clase devuelven VFW \_ E \_ ENUM \_ OUT OF \_ \_ SYNC. Llame al [**método CEnumMediaTypes::Reset**](cenummediatypes-reset.md) para volver a sincronizar el enumerador.
 
@@ -43,10 +43,10 @@ Cada vez que un pin modifica su lista de tipos de medios preferidos, el pin incr
 | [**CEnumMediaTypes**](cenummediatypes-cenummediatypes.md)   | Método constructor.                                             |
 | [**~CEnumMediaTypes**](cenummediatypes--cenummediatypes.md) | Método destructor. Virtual.                                     |
 | Métodos IEnumMediaTypes                                      | Descripción                                                     |
-| [**Clon**](cenummediatypes-clone.md)                       | Realiza una copia del enumerador con el mismo estado de enumeración. |
+| [**Clonar**](cenummediatypes-clone.md)                       | Realiza una copia del enumerador con el mismo estado de enumeración. |
 | [**Next**](cenummediatypes-next.md)                         | Recupera un número especificado de tipos de medios.                    |
-| [**Restablecer**](cenummediatypes-reset.md)                       | Restablece la secuencia de enumeración al principio.               |
-| [**Omitir**](cenummediatypes-skip.md)                         | Omite un número especificado de tipos de medios.                   |
+| [**Reset**](cenummediatypes-reset.md)                       | Restablece la secuencia de enumeración al principio.               |
+| [**Saltar**](cenummediatypes-skip.md)                         | Omite un número especificado de tipos de medios.                   |
 
 
 

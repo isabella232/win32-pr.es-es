@@ -4,12 +4,12 @@ ms.assetid: 23ca463c-b305-496b-a1e3-58dbb793f17e
 title: elemento events
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fea6d4d3c87ac15ee14864f7e12c419f13d97503eeab27d28c5bdec5dbcc1414
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6883f1bcca9b62c3d8b60ca86f47b0e688d513c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119049693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973691"
 ---
 # <a name="events-element"></a>elemento events
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores posibles son 1 (eventos incluidos) y 0 (valor predeterminado, eventos excluidos).
 
@@ -51,7 +51,7 @@ Los valores posibles son 1 (eventos incluidos) y 0 (valor predeterminado, evento
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

@@ -1,33 +1,33 @@
 ---
-description: Instrumental de administración de Windows (WMI) tiene una nueva clave del registro para habilitar o deshabilitar la característica de repositorio de restauración.
+description: Windows Instrumental de administración (WMI) tiene una nueva clave del Registro para habilitar o deshabilitar la característica de repositorio AutoRestore.
 ms.assetid: 6c93fc40-b5d8-42da-9d02-7fa04fce3f65
 ms.tgt_platform: multiple
-title: Clave del registro para la configuración del repositorio
+title: Clave del Registro para la configuración del repositorio
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ed981da7c0540378746c78fecceefab8fc62559b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706096"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973735"
 ---
-# <a name="registry-key-for-repository-configuration"></a>Clave del registro para la configuración del repositorio
+# <a name="registry-key-for-repository-configuration"></a>Clave del Registro para la configuración del repositorio
 
-Instrumental de administración de Windows (WMI) tiene una nueva clave del registro para habilitar o deshabilitar la característica de repositorio de restauración. Para obtener más información acerca de la restauración del repositorio WMI, vea [copia de seguridad o restauración del repositorio WMI](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731460(v=ws.11)).
+Windows Instrumental de administración (WMI) tiene una nueva clave del Registro para habilitar o deshabilitar la característica de repositorio AutoRestore. Para obtener más información sobre cómo restaurar el repositorio WMI, vea [Copia de seguridad o restauración del repositorio WMI](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731460(v=ws.11)).
 
-En Windows 7, el comportamiento predeterminado es la restauración automática de un repositorio a partir de una versión de copia de seguridad si se detecta un daño en el repositorio. WMI proporciona el valor del registro **AutoRestoreEnabled** para deshabilitar esta característica.
+En Windows 7, el comportamiento predeterminado es restaurar automáticamente un repositorio desde una versión de copia de seguridad si se detectan daños en un repositorio. WMI proporciona el **valor del Registro AutoRestoreEnabled** para deshabilitar esta característica.
 
-Las claves del registro para WMI se encuentran en el registro en **HKEY \_ local \_ Machine** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ .
+Las claves del Registro para WMI se encuentran en el registro en **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ .
 
 <dl> <dt>
 
 <span id="AutoRestoreEnabled"></span><span id="autorestoreenabled"></span><span id="AUTORESTOREENABLED"></span>**AutoRestoreEnabled**
 </dt> <dd>
 
-Permite al usuario determinar si se usa o no la característica de repositorio de restauración. De forma predeterminada, esta clave se establece en 1 y está habilitada la característica de repositorio de restauración.
+Permite al usuario determinar si se debe usar o no la característica de repositorio AutoRestore. De forma predeterminada, esta clave se establece en 1 y la característica Repositorio de AutoRestore está habilitada.
 
-Las siguientes opciones son posibles:
+La siguiente configuración es posible:
 
 <dl> <dt>
 
@@ -45,21 +45,21 @@ habilitado
 
 </dd> </dl> </dd> </dl>
 
-El valor del registro **AutoRestoreEnabled** se puede modificar mediante el consola de administración de directivas de grupo (GPMC). Para obtener más información, vea [consola de administración de directivas de grupo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal).
+El **valor del Registro AutoRestoreEnabled** se puede modificar mediante Consola de administración de directivas de grupo (GPMC). Para obtener más información, [vea Consola de administración de directivas de grupo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal).
 
-En este procedimiento se proporcionan detalles acerca de cómo habilitar o deshabilitar la característica de repositorio de restauración.
+En este procedimiento se proporcionan detalles sobre cómo habilitar o deshabilitar la característica de repositorio AutoRestore:
 
-**Para cambiar el valor predeterminado de la clave **AutoRestoreEnabled** mediante Directiva de grupo**
+**Para cambiar el valor predeterminado de la **clave AutoRestoreEnabled** mediante directiva de grupo**
 
 1.  Abra GPMC.
-2.  Cree un objeto de directiva de grupo (GPO).
+2.  Cree un directiva de grupo de datos (GPO).
 3.  Edite el GPO.
-4.  Vaya a preferencias/configuración de Windows/registro.
-5.  Haga clic con el botón derecho y seleccione **nuevo... Registro**. Esta acción presenta una interfaz de usuario donde puede especificar la información del registro.
-6.  Seleccione el comando de **actualización** .
-7.  Seleccione la siguiente ruta de acceso de clave del registro: **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ WBEM \\ CIMOM**.
-8.  En el campo **nombre** , escriba **AutoRestoreEnabled**.
-9.  En el campo de **datos** , escriba 0 para deshabilitar o 1 para habilitar la característica de repositorio de restauración.
+4.  Vaya a Preferencias/Windows Configuración/Registro.
+5.  Haga clic con el botón derecho y **seleccione Nuevo... Registro**. Esta acción presenta una interfaz de usuario donde puede escribir información del Registro.
+6.  Seleccione el **comando** Actualizar.
+7.  Seleccione la siguiente ruta de acceso de clave del Registro: **HKEY \_ LOCAL MACHINE SOFTWARE Microsoft \_ \\ \\ \\ WBEM \\ CIMOM**.
+8.  En el **campo nombre,** escriba **AutoRestoreEnabled.**
+9.  En el **campo de** datos, escriba 0 para deshabilitar o 1 para habilitar la característica de repositorio AutoRestore.
 10. Haga clic en Aceptar.
 
  

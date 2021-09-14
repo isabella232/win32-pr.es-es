@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ffc07a15f7c34744be52c5e2c7b5233e1885b58c5b9b7d078871277f8fc0efd1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e8b0c5548d3089a6e619f88db5e4eed19b12be8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117823337"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973978"
 ---
 # <a name="cbasepinm_bruntimeerror-member"></a>Miembro CBasePin::m \_ bRunTimeError
 
@@ -36,7 +36,7 @@ bool m_bRunTimeError;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor predeterminado de esta **marca es FALSE.** Establezca la marca en **TRUE si** se produce un error en tiempo de ejecución durante el streaming. El [**método CBasePin::Inactive**](cbasepin-inactive.md) restablece la marca a **FALSE.**
 

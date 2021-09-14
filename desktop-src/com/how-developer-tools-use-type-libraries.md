@@ -4,12 +4,12 @@ description: Cómo usan las herramientas de desarrolladores las bibliotecas de t
 ms.assetid: 260aa694-1055-4a43-93aa-69a9d7359881
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18e829459176d96beab3fd818b7bafe3cddfb7969ff46531d26709ef6391ecc8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0cc0f5249075aa861a1301466f86a0f769b8bf3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119993084"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973626"
 ---
 # <a name="how-developer-tools-use-type-libraries"></a>Cómo usan las herramientas de desarrolladores las bibliotecas de tipos
 

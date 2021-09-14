@@ -1,27 +1,27 @@
 ---
-title: Definición de eventos
+title: Definir eventos
 description: Los proveedores deben definir todos los eventos que escriben. Para definir un evento, use el elemento de evento .
 ms.assetid: f282612c-cfa5-42fe-af8a-5b35c033abe2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8b28dd6f9453a0b3272e6c9e7efcc40613319591174444d14abf55d6d9f385f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a4c1da0e54d1e9fc328978ebe447c8e843b540c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119056043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885553"
 ---
-# <a name="defining-events"></a>Definición de eventos
+# <a name="defining-events"></a>Definir eventos
 
 Los proveedores deben definir todos los eventos que escriben. Para definir un evento, use el **elemento de** evento .
 
-El **atributo** value es el identificador de evento y debe ser único para los eventos que defina. Si establece los demás atributos depende de quién consumirá los eventos y de dónde. Si los administradores van a consumir los eventos mediante una herramienta como Windows Visor de eventos, debe establecer el **atributo de** canal. Si el tipo de canal es Admin, también debe especificar el atributo **level** y establecerlo en uno de los niveles definidos en Winmeta.xml (win:Critical a win:Verbose).
+El **atributo** value es el identificador de evento y debe ser único para los eventos que defina. Si establece los demás atributos, dependerá de quién consumirá los eventos y de dónde. Si los administradores van a consumir los eventos mediante una herramienta como Windows Visor de eventos, debe establecer el atributo **channel.** Si el tipo de canal es Admin, también debe especificar el atributo **level** y establecerlo en uno de los niveles definidos en Winmeta.xml (win:Critical a win:Verbose).
 
-Si el evento contiene datos específicos  del evento, debe establecer el atributo de plantilla en el identificador de la plantilla que define los datos específicos del evento. Los **atributos de** nivel , palabras **clave,** **tarea** y **código** de operación se usan para agrupar o agrupar eventos de cubo. Aunque estos atributos son opcionales, debe considerar la posibilidad de especificar el nivel, la tarea, el código de operación y las palabras clave, para que los consumidores puedan acceder fácilmente solo a los eventos de interés. Una  sesión **de** seguimiento de ETW también puede usar los atributos de nivel y palabras clave para limitar los eventos que se escriben en el archivo de registro de seguimiento de eventos. El **atributo keywords** contiene una lista delimitada por espacios de nombres de palabra clave definidos en el manifiesto. Si se especifican varias palabras clave, sus valores de máscara se unen para crear el valor de palabra clave que usará el evento.
+Si el evento contiene datos específicos del evento, debe establecer el atributo **de** plantilla en el identificador de la plantilla que define los datos específicos del evento. Los **atributos de** nivel , palabras **clave,** **tarea** y **código** de operación se usan para agrupar o agrupar eventos de cubo. Aunque estos atributos son opcionales, debe considerar la posibilidad de especificar el nivel, la tarea, el código de operación y las palabras clave, para que los consumidores puedan acceder fácilmente solo a los eventos de interés. Una  sesión **de** seguimiento de ETW también puede usar los atributos de nivel y palabras clave para limitar los eventos que se escriben en el archivo de registro de seguimiento de eventos. El **atributo keywords** contiene una lista delimitada por espacios de nombres de palabras clave definidos en el manifiesto. Si se especifican varias palabras clave, sus valores de máscara son OR'ed juntos para crear el valor de palabra clave que usará el evento.
 
-Debe establecer el atributo **de** símbolo para especificar la constante simbólica que el compilador genera para identificar el descriptor de eventos del evento: se usa el descriptor de eventos al escribir el evento. Si no especifica el símbolo, el compilador generará un nombre automáticamente.
+Debe establecer el atributo **de** símbolo para especificar la constante simbólica que el compilador genera para identificar el descriptor de eventos del evento; se usa el descriptor de eventos al escribir el evento. Si no especifica el símbolo, el compilador generará un nombre automáticamente.
 
-El **atributo** message contiene la cadena de mensaje localizada que se muestra con el evento . Para incluir datos específicos del evento en la cadena, agregue cadenas de inserción al texto del mensaje. Por ejemplo, para incluir el tercer elemento de datos en la plantilla, incluya %3.
+El **atributo message** contiene la cadena de mensaje localizada que se muestra con el evento . Para incluir datos específicos del evento en la cadena, agregue cadenas de inserción al texto del mensaje. Por ejemplo, para incluir el tercer elemento de datos en la plantilla, incluya %3.
 
 En el ejemplo siguiente se muestra un manifiesto completo que define eventos.
 

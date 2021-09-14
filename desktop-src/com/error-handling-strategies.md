@@ -4,22 +4,22 @@ description: Estrategias de control de errores
 ms.assetid: 8d03ede8-0661-43dc-adaf-3c1f5fc1687e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0527edbb8bab4b4a0b0ca9e0d135bc5cf8c2827497a36fb9cad021680868f764
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 36c594a8b1e5baf0eab3d928b8f1b861b7f0160d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120029975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973666"
 ---
 # <a name="error-handling-strategies"></a>Estrategias de control de errores
 
 Dado que los métodos de interfaz son virtuales, no es posible que un llamador conozca el conjunto completo de valores que se pueden devolver desde una sola llamada. Una implementación de un método puede devolver cinco valores; otro puede devolver ocho.
 
-En la documentación se enumeran los valores comunes que se pueden devolver para cada método; estos son los valores que debe comprobar y controlar en el código porque tienen significados especiales. Se pueden devolver otros valores, pero como no son significativos, no es necesario escribir código especial para controlarlos. Una comprobación simple de cero o distinto de cero es adecuada.
+En la documentación se enumeran los valores comunes que se pueden devolver para cada método. estos son los valores que debe comprobar y controlar en el código porque tienen significados especiales. Se pueden devolver otros valores, pero como no son significativos, no es necesario escribir código especial para controlarlos. Una comprobación simple de cero o distinto de cero es adecuada.
 
 ## <a name="hresult-values"></a>Valores HRESULT
 
-El valor devuelto de los métodos y funciones COM es **un valor HRESULT.** Los valores de algunos HRESULT se han cambiado en COM para eliminar toda duplicación y superponerse con los códigos de error del sistema. Los que duplican los códigos de error del sistema se han cambiado a FACILITY \_ WIN32 y los que se superponen permanecen en FACILITY \_ NULL. Los **valores HRESULT** comunes y sus valores se enumeran en la tabla siguiente.
+El valor devuelto de funciones y métodos COM es **un HRESULT**. Los valores de algunos HULT se han cambiado en COM para eliminar toda duplicación y superponerse con los códigos de error del sistema. Los códigos de error del sistema duplicados se han cambiado a FACILITY WIN32 y los que se \_ superponen permanecen en FACILITY \_ NULL. Los **valores HRESULT** comunes y sus valores se enumeran en la tabla siguiente.
 
 
 
@@ -30,13 +30,13 @@ El valor devuelto de los métodos y funciones COM es **un valor HRESULT.** Los v
 | E \_ FAIL<br/>         | 0x80004005<br/> | Se ha producido un error no especificado.<br/>                                                                                                    |
 | IDENTIFICADOR \_ E<br/>       | 0x80070006<br/> | Se usó un identificador no válido.<br/>                                                                                                             |
 | E \_ INVALIDARG<br/>   | 0x80070057<br/> | Uno o varios argumentos no son válidos.<br/>                                                                                                      |
-| E \_ NOINTERFACE<br/>  | 0x80004002<br/> | El [**método QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)) no reconocía la interfaz solicitada. No se admite la interfaz .<br/> |
+| E \_ NOINTERFACE<br/>  | 0x80004002<br/> | El [**método QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)) no reconoce la interfaz solicitada. No se admite la interfaz .<br/> |
 | E \_ NOTIMPL<br/>      | 0x80004001<br/> | El método no está implementado.<br/>                                                                                                          |
 | E \_ OUTOFMEMORY<br/>  | 0x8007000E<br/> | El método no pudo asignar la memoria necesaria.<br/>                                                                                         |
 | E \_ PENDIENTE<br/>      | 0x8000000A<br/> | Los datos necesarios para completar la operación aún no están disponibles.<br/>                                                                      |
 | PUNTERO \_ E<br/>      | 0x80004003<br/> | Se usó un puntero no válido.<br/>                                                                                                            |
 | E \_ UNEXPECTED<br/>   | 0x8000FFFF<br/> | Se ha producido un error catastrófico.<br/>                                                                                                    |
-| S \_ FALSE<br/>        | 0x00000001<br/> | El método se ha devuelto correctamente y el valor booleano **FALSE.**<br/>                                                                          |
+| S \_ FALSE<br/>        | 0x00000001<br/> | El método se ha agregado correctamente y ha devuelto el valor **booleano FALSE.**<br/>                                                                          |
 | S \_ OK<br/>           | 0x00000000<br/> | El método se ha llevado a cabo de forma correcta. Si se espera un valor devuelto booleano, el valor devuelto es **TRUE.**<br/>                                            |
 
 

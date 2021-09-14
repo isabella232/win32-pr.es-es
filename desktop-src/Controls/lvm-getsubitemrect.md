@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 651be72c23113940fc30adb2e7a9de581289a8f4ddf580f27d01e2edf337c053
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cd1184c52d60b86e008685b87c9f5555cf801b35
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119293895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974081"
 ---
 # <a name="lvm_getsubitemrect-message"></a>Mensaje \_ GETSUBITEMRECT de LVM
 
-Recupera información sobre el rectángulo delimitador de un subelemento en un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView GetSubItemRect**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getsubitemrect) (recomendado). Este mensaje está pensado para usarse solo con controles de vista de lista que usan el estilo [**\_ DE INFORME LVS.**](list-view-window-styles.md)
+Recupera información sobre el rectángulo delimitador de un subelemento en un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView GetSubItemRect**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getsubitemrect) (recomendado). Este mensaje está pensado para usarse solo con controles de vista de lista que usan el [**estilo LVS \_ REPORT.**](list-view-window-styles.md)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,14 +39,14 @@ Recupera información sobre el rectángulo delimitador de un subelemento en un c
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que recibirá la información del rectángulo delimitador del subelemento. Sus miembros se deben inicializar según las siguientes relaciones miembro-valor:
+Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que recibirá la información del rectángulo delimitador de subelemento. Sus miembros se deben inicializar según las siguientes relaciones miembro-valor:
 
 
 
-| Valor                                                                                                                             | Significado                                                                                                                           |
+| Value                                                                                                                             | Significado                                                                                                                           |
 |-----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| <span id="top"></span><span id="TOP"></span><dl> <dt>**Arriba**</dt> </dl>    | Índice basado en uno del subelemento.<br/>                                                                                    |
-| <span id="left"></span><span id="LEFT"></span><dl> <dt>**Izquierda**</dt> </dl> | Valor de marca (vea comentarios). Indica la parte del subelemento de vista de lista para el que se va a recuperar el rectángulo delimitador.<br/> |
+| <span id="top"></span><span id="TOP"></span><dl> <dt>**top**</dt> </dl>    | Índice basado en uno del subelemento.<br/>                                                                                    |
+| <span id="left"></span><span id="LEFT"></span><dl> <dt>**izquierda**</dt> </dl> | Valor de marca (vea comentarios). Indica la parte del subelemento de vista de lista para el que se va a recuperar el rectángulo delimitador.<br/> |
 
 
 
@@ -58,13 +58,13 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que r
 
 Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-A continuación se encuentran los valores de marca que se pueden establecer.
+Estos son los valores de marca que se pueden establecer.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------|
 | **Valor de marca** | **Significado**                                                                                                         |
 | LÍMITES DE LVIR \_   | Devuelve el rectángulo delimitador de todo el elemento, incluidos el icono y la etiqueta.                                    |
@@ -79,11 +79,11 @@ A continuación se encuentran los valores de marca que se pueden establecer.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

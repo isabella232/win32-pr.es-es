@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6c1e64e314478793a5b421d1f0a6a76c2eb028708410a14ea426f52fbd41dfe4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c97d524e3fc516086db3a815396d6d59f9369b31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119637045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973500"
 ---
 # <a name="rolesforpartition-collection"></a>Colección RolesForPartition
 
@@ -25,7 +25,7 @@ La **colección RolesForPartition** siempre está relacionada con un objeto de l
 
 Esta colección no admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección RolesForPartition** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -56,7 +56,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 | Entrada | Value |
 |----------------|----------------------------|
 | Descripción    | Descripción del rol. |
-| Access         | ReadOnly                   |
+| Acceso         | ReadOnly                   |
 | Tipo           | String                     |
 | Predeterminado        | ""                         |
 | Sistema mínimo | Windows Server 2003        |
@@ -72,7 +72,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Nombre del rol. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | ReadOnly                                                                                                                                                                                                                                                    |
+| Acceso         | ReadOnly                                                                                                                                                                                                                                                    |
 | Tipo           | String                                                                                                                                                                                                                                                      |
 | Predeterminado        | ""                                                                                                                                                                                                                                                          |
 | Sistema mínimo | Windows Server 2003                                                                                                                                                                                                                                         |
@@ -81,7 +81,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

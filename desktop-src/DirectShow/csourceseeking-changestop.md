@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 09473b5bbe20c6c31748f0079594424f7e0afa62e2594ff1cc80f33cb1f5e6bb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eefcc64b4692363c8caa8f39a3a0db9beb0d08b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120103125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973846"
 ---
 # <a name="csourceseekingchangestop-method"></a>CSourceSeeking.ChangeStop (método)
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método CSourceSeeking::SetPositions**](csourceseeking-setpositions.md) llama a este método si cambia la posición de detenerse. Este método es virtual puro; la clase derivada debe implementarla. En el ejemplo siguiente se muestra una posible implementación:
 
@@ -70,7 +70,7 @@ HRESULT CMyStream::ChangeStop( )
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

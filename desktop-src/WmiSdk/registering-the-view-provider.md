@@ -1,20 +1,20 @@
 ---
-description: WMI registra automáticamente el archivo DLL del proveedor de vistas durante el proceso de instalación de WMI. Sin embargo, todavía debe registrar el proveedor de vistas con WMI para cada espacio de nombres que contendrá clases de vista.
+description: WMI registra automáticamente el archivo DLL del proveedor de vistas durante el proceso de instalación de WMI. Sin embargo, debe registrar el proveedor de vistas con WMI para cada espacio de nombres que contendrá clases de vista.
 ms.assetid: 62db8cdc-0bbf-4784-bfc4-6fd5cb53368a
 ms.tgt_platform: multiple
 title: Registro del proveedor de vistas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77a119816d388e07f1f032557af1171bb2666ef02a63d959b843b99b7942a790
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 530a701d3ffc39523b1b3432dd2d94a3da256605
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973736"
 ---
 # <a name="registering-the-view-provider"></a>Registro del proveedor de vistas
 
-WMI registra automáticamente el archivo DLL del proveedor de vistas durante el proceso de instalación de WMI. Sin embargo, todavía debe registrar el proveedor de vistas con WMI para cada espacio de nombres que contendrá clases de vista.
+WMI registra automáticamente el archivo DLL del proveedor de vistas durante el proceso de instalación de WMI. Sin embargo, debe registrar el proveedor de vistas con WMI para cada espacio de nombres que contendrá clases de vista.
 
 En el procedimiento siguiente se describe cómo registrar el proveedor de vistas.
 
@@ -74,7 +74,7 @@ En el procedimiento siguiente se describe cómo registrar el proveedor de vistas
     Mofcomp /N:<NamespacePath> Viewtest.mof
     ```
 
-    Para obtener más información, [vea Compilar archivos MOF](compiling-mof-files.md).
+    Para obtener más información, [vea Compilar archivos MOF.](compiling-mof-files.md)
 
 Para obtener más información, [vea Registrar un proveedor.](registering-a-provider.md)
 

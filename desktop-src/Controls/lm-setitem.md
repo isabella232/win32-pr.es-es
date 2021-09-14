@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8dccdb37536352c8783f7dd6af6a9475f5bea69111e2f7f09e5395b0ebf25b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11888a76b11ccec7e8e659ca3a33bb23a71667ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974104"
 ---
 # <a name="lm_setitem-message"></a>Mensaje \_ SETITEM de LM
 
@@ -39,7 +39,7 @@ Establece los estados y atributos de un elemento.
 
 Devuelve **TRUE** si el mensaje establece correctamente los valores y atributos especificados.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Con el [**mensaje \_ LM GETITEM,**](lm-getitem.md) solo se puede acceder a los vínculos a través del índice numérico devuelto en el **miembro iLink** [**de LITEM**](/windows/win32/api/commctrl/ns-commctrl-litem). No se admite el acceso al vínculo a través del nombre de identificador devuelto en **szID.**
 
@@ -56,7 +56,7 @@ Con el [**mensaje \_ LM GETITEM,**](lm-getitem.md) solo se puede acceder a los v
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

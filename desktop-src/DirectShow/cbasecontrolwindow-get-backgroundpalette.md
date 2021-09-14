@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 63ea3fa8ecbc6e644ccc5f4b1fac7a2fcd9c18270474f45dc08faa164f76cbec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd06bcec9b3c435370ec3f12340c1c3aede3904c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118660780"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974038"
 ---
 # <a name="cbasecontrolwindowget_backgroundpalette-method"></a>Método CBaseControlWindow.get \_ BackgroundPalette
 
@@ -45,7 +45,7 @@ HRESULT get_BackgroundPalette(
 *pBackgroundPalette* 
 </dt> <dd>
 
-Puntero a una marca booleana de Automation (0 está desactivado, 1 está en).
+Puntero a una marca booleana de Automation (0 está desactivado, 1 está on).
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Esta función miembro implementa el [**método IVideoWindow::get \_ BackgroundPa
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

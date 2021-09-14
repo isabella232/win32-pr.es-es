@@ -4,12 +4,12 @@ ms.assetid: eba4e794-0929-450c-a172-6de6c2f2f2c4
 title: Guardar o descartar cambios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a01c000a6fc9fbe7e8e25e50c041f1b5a0e1250dfe089245ef035213905e5737
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4946574facd0d41d68f4de8cf2f2f48410eb6e99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117915936"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973498"
 ---
 # <a name="saving-or-discarding-changes"></a>Guardar o descartar cambios
 

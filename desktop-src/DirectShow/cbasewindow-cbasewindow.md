@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d8873ee896d910d1596138a8d116c93ae0190534bac48b6ceb19165074f07b72
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 05205750810294076bf005d0e5b73fda6b2143d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973945"
 ---
 # <a name="cbasewindowcbasewindow-constructor"></a>Constructor CBaseWindow.CBaseWindow
 
@@ -57,11 +57,11 @@ Valor booleano que especifica la variable [**miembro CBaseWindow::m \_ bDoPostTo
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Después de crear el objeto , llame al [**método CBaseWindow::P repareWindow**](cbasewindow-preparewindow.md) para crear la ventana. **PrepareWindow** es un método virtual. Llama a [**CBaseWindow::InitialiseWindow,**](cbasewindow-initialisewindow.md)también un método virtual. Estos métodos están separados del constructor para que las clases derivadas puedan invalidarlos, si es necesario.
+Después de crear el objeto, llame al [**método CBaseWindow::P repareWindow**](cbasewindow-preparewindow.md) para crear la ventana. **PrepareWindow** es un método virtual. Llama a [**CBaseWindow::InitialiseWindow,**](cbasewindow-initialisewindow.md)también un método virtual. Estos métodos están separados del constructor para que las clases derivadas puedan invalidarlos, si es necesario.
 
-Si el valor del *parámetro bDoGetDC* es **TRUE,** el objeto recupera un identificador en el contexto de dispositivo (DC) de la ventana y lo almacena en la variable miembro `CBaseWindow` [**\_ hdc CBaseWindow::m.**](cbasewindow-m-hdc.md) El objeto también crea un controlador de dominio de memoria compatible, que almacena en la variable miembro [**CBaseWindow::m \_ MemoryDC.**](cbasewindow-m-memorydc.md) Estas acciones se producen en el **método InitialiseWindow.**
+Si el valor del parámetro *bDoGetDC* es **TRUE,** el objeto recupera un identificador en el contexto de dispositivo (DC) de la ventana y lo almacena en la variable miembro `CBaseWindow` [**\_ hdc CBaseWindow::m.**](cbasewindow-m-hdc.md) El objeto también crea un controlador de dominio de memoria compatible, que almacena en la variable miembro [**\_ MemoryDC CBaseWindow::m.**](cbasewindow-m-memorydc.md) Estas acciones se producen en el **método InitialiseWindow.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Si el valor del *parámetro bDoGetDC* es **TRUE,** el objeto recupera un identif
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

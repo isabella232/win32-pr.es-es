@@ -21,12 +21,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f987ee23b3dd7b65ec391e88200e59c86055e49a5cda23be4c529500359e789c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1ee38b827aed2dfffe1e7ef4f5049b16eee50791
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974149"
 ---
 # <a name="win32_printercontroller-class"></a>Clase PrinterController de Win32 \_
 
@@ -49,7 +49,7 @@ class Win32_PrinterController : CIM_ControlledBy
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ PrinterController de Win32** tiene estos tipos de miembros:
 
@@ -70,7 +70,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado del acceso del controlador al dispositivo. Esta información es necesaria cuando varios controladores pueden usar o acceder a un dispositivo lógico.
+Estado del acceso del controlador al dispositivo. Esta información es necesaria cuando varios controladores pueden usar o tener acceso a un dispositivo lógico.
 
 Esta propiedad se hereda de [**CIM \_ ControlledBy**](cim-controlledby.md).
 
@@ -94,7 +94,7 @@ Unknown
 
 </dt> <dd>
 
-Active
+Activo
 
 </dd> <dt>
 
@@ -209,7 +209,7 @@ Esta propiedad se hereda de [**CIM \_ ControlledBy**](cim-controlledby.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ PrinterController de Win32** se deriva de [**CIM \_ ControlledBy**](cim-controlledby.md).
 
@@ -227,7 +227,7 @@ La **clase \_ PrinterController de Win32** se deriva de [**CIM \_ ControlledBy**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

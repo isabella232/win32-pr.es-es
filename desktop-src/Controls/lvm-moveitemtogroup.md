@@ -6,12 +6,12 @@ keywords:
 - LVM_MOVEITEMTOGROUP controles de Windows mensaje
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa09df4af175b58b0be2fe635e271fca0cee0b2e960d2dd0225c3ae8c31d56a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a534388dd76672c6eb5d00fc9f1339c87f6e3d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118670888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974062"
 ---
 # <a name="lvm_moveitemtogroup-message"></a>Mensaje \_ MOVEITEMTOGROUP de LVM
 

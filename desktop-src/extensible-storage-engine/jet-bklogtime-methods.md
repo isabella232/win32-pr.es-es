@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_BKLOGTIME métodos'
+description: 'Más información acerca de: JET_BKLOGTIME métodos'
 title: JET_BKLOGTIME métodos
 TOCTitle: JET_BKLOGTIME methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_BKLOGTIME
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39509770
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 141ec3b7de393abd9b490cb53272bcf23a71982fa94f4290bd7a565a376db269
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bb0f54aeae87d5624e2415f19aa439fb871bed8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119731655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887604"
 ---
 # <a name="jet_bklogtime-methods"></a>JET_BKLOGTIME métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_BKLOGTIME](./jet-bklogtime-structure2.md) expone los miembros siguientes.
+El [JET_BKLOGTIME](./jet-bklogtime-structure2.md) muestra los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -78,7 +78,7 @@ El [JET_BKLOGTIME](./jet-bklogtime-structure2.md) expone los miembros siguientes
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

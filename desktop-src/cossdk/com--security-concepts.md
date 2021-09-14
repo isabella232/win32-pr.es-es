@@ -4,12 +4,12 @@ ms.assetid: 686fb391-d337-41b4-bb51-b70f27a0c300
 title: Conceptos de seguridad de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b93ac113cf4ff2b1c679936fd610c2d44f29689ff175930c6a67274002457d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ca5126f4b715f84c2b8801c8ec1adc29b3cbb83
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973526"
 ---
 # <a name="com-security-concepts"></a>Conceptos de seguridad de COM+
 
@@ -23,7 +23,7 @@ Sin embargo, cuando los servicios de seguridad automáticos de COM+ no hacen exa
 -   Suplantación: para cuando quiera usar la identidad de un cliente para acceder a un recurso protegido.
 -   Características de auditoría basadas en información de contexto de llamada de seguridad, también disponible cuando la seguridad basada en roles está habilitada.
 
-Los mecanismos que use para ayudar a proteger una aplicación determinada dependerán de los requisitos concretos de esa aplicación. Algunas opciones de seguridad pueden afectar a la forma de escribir componentes y otras pueden afectar significativamente al diseño de la aplicación. Antes de tomar decisiones sobre cómo implementar una estrategia de seguridad para una aplicación, debe tener en cuenta sus requisitos de seguridad en el contexto de su diseño general (requisitos de rendimiento, acceso a datos, diseño físico) y elegir la combinación más adecuada de características de seguridad. Para obtener más información sobre cómo implementar la seguridad mediante programación, vea [Seguridad de componentes de programación](programmatic-component-security.md).
+Los mecanismos que use para ayudar a proteger una aplicación determinada dependerán de los requisitos concretos de esa aplicación. Algunas opciones de seguridad pueden afectar a la forma de escribir componentes y otras pueden afectar significativamente al diseño de la aplicación. Antes de tomar decisiones sobre cómo implementar una estrategia de seguridad para una aplicación, debe tener en cuenta sus requisitos de seguridad en el contexto de su diseño general (requisitos de rendimiento, acceso a datos, diseño físico) y elegir la combinación más adecuada de características de seguridad. Para obtener más información sobre cómo implementar la seguridad mediante programación, vea [Seguridad de componentes mediante programación](programmatic-component-security.md).
 
 Aquí se proporcionan breves descripciones de categorías de seguridad, características y problemas de COM+, con vínculos a temas de esta sección que proporcionan una explicación detallada de cada una de las áreas importantes.
 
@@ -50,7 +50,7 @@ En algunos casos, la aplicación debe funcionar en nombre de un cliente mediante
 
 ## <a name="using-the-software-restriction-policy-in-com"></a>Uso de la directiva de restricción de software en COM+
 
-Una directiva de restricción de software proporciona una manera de ejecutar código que no es de confianza y, por tanto, potencialmente perjudicial, en un entorno restringido para que no pueda usar incorrectamente los privilegios del usuario. Para ello, asigna niveles de confianza a los archivos que el usuario puede ejecutar. Por ejemplo, ciertos archivos del sistema pueden ser de plena confianza y tener acceso sin restricciones a los privilegios del usuario, mientras que un archivo que se descargó de Internet podría no ser de plena confianza y, por tanto, puede ejecutarse solo en un entorno restringido en el que no se permite el uso de privilegios de usuario que tienen en cuenta la seguridad.
+Una directiva de restricción de software proporciona una manera de ejecutar código que no es de confianza y, por tanto, potencialmente perjudicial, en un entorno restringido para que no pueda usar incorrectamente los privilegios del usuario. Para ello, asigna niveles de confianza a los archivos que el usuario puede ejecutar. Por ejemplo, ciertos archivos del sistema pueden ser de plena confianza y tener acceso sin restricciones a los privilegios del usuario, mientras que un archivo que se descargó de Internet podría no ser de plena confianza y, por lo tanto, puede ejecutarse solo en un entorno restringido en el que no se permite el uso de privilegios de usuario confidenciales para la seguridad.
 
 La directiva de restricción de software de todo el sistema se controla a través de la herramienta administrativa Directiva de seguridad local, que permite a los administradores configurar niveles de confianza para archivos individuales. Sin embargo, todas las aplicaciones de servidor COM+ se ejecutan en dllhost.exe archivo. Por lo tanto, COM+ proporciona una manera de especificar la directiva de restricción de software para cada aplicación de servidor para que no tenga que depender de la directiva de restricción del archivo dllhost.exe servidor. Para obtener una explicación sobre cómo usar la directiva de restricción de software en COM+, consulte Uso de la directiva de restricción [de software en COM+.](using-the-software-restriction-policy-in-com-.md)
 

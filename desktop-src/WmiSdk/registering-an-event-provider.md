@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 44c6521e56441c929ef108ce4c4b624c11b06ca26dc508c8f2f924e2f87babba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a4aa77c5c5936639435844179f259080085e02c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973743"
 ---
 # <a name="registering-an-event-provider"></a>Registro de un proveedor de eventos
 
@@ -30,7 +30,7 @@ En el procedimiento siguiente se describe cómo registrar un proveedor de evento
 
     La [**\_ \_ clase EventProviderRegistration**](--eventproviderregistration.md) hereda muchas propiedades de la clase primaria [**\_ \_ ObjectProviderRegistration.**](--objectproviderregistration.md) Las propiedades locales de **\_ \_ la clase EventProviderRegistration** son la ruta de acceso del objeto al proveedor y una lista de consultas que describen los eventos que admite el proveedor. Para obtener más información, vea [Consulta de WMI.](querying-wmi.md)
 
-3.  Cargue la implementación de las [**\_ \_ clases Win32Provider**](--win32provider.md) y [**\_ \_ EventProviderRegistration**](--eventproviderregistration.md) en el repositorio WMI.
+3.  Cargue la implementación de las [**\_ \_ clases Win32Provider**](--win32provider.md) [**\_ \_ y EventProviderRegistration**](--eventproviderregistration.md) en el repositorio WMI.
 
     WMI usa la definición de clase para registrar y acceder al proveedor de eventos. Para obtener más información, [vea Registrar un proveedor.](registering-a-provider.md)
 

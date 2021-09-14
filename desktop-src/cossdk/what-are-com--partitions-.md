@@ -4,12 +4,12 @@ ms.assetid: c1290d10-968f-44f0-8099-d69c9e706c9e
 title: ¿Qué son las particiones COM+?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edc678089948770181d98af065afa414741055062ed2e942215de5d7cb8bc7b5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 69acdae724bb0c9211d147a985f7571c5e7c052f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120070274"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973488"
 ---
 # <a name="what-are-com-partitions"></a>¿Qué son las particiones COM+?
 
@@ -28,11 +28,11 @@ El uso de particiones COM+ ofrece varias ventajas, entre las que se incluyen las
 -   Las organizaciones pueden reducir su costo total de propiedad (TCO) mediante el uso de menos servidores de aplicaciones físicos para admitir usuarios que necesitan varias configuraciones de aplicación.
 -   Se reduce la sobrecarga administrativa. En lugar de tener que configurar y administrar varios equipos, los administradores solo necesitan configurar y administrar varias particiones en el mismo equipo. Además, las particiones se pueden administrar mediante programación mediante la adición de una nueva interfaz de programación COM+.
 -   La seguridad se puede implementar y administrar en función de la partición para usuarios locales, usuarios de dominio y unidades organizativas (UO).
--   Los programadores y administradores pueden usar las herramientas administrativas y de desarrollo de Microsoft, como el SDK de Windows, Usuarios y equipos de Active Directory y la herramienta administrativa Servicios de componentes, para administrar particiones com+. La característica de particiones está totalmente integrada en estas herramientas.
+-   Los programadores y administradores pueden usar las herramientas administrativas y de desarrollo de Microsoft, como el SDK de Windows, Usuarios y equipos de Active Directory y la herramienta administrativa servicios de componentes, para administrar particiones com+. La característica de particiones está totalmente integrada en estas herramientas.
 
 ## <a name="primary-usage-scenario"></a>Escenario de uso principal
 
-Una razón principal para que los clientes implemente la característica de particiones COM+ es hospedar aplicaciones basadas en web. Por ejemplo, suponga que una pequeña empresa de software desarrolla una aplicación COM+ para que la use el personal del hospital. La aplicación, que es una aplicación distribuida basada en Web, proporciona una manera de que los hospitales almacenen y recuperen los registros médicos de los pacientes mediante una base de datos SQL Server datos.
+Una razón principal para que los clientes implemente la característica de particiones COM+ es hospedar aplicaciones basadas en web. Por ejemplo, suponga que una pequeña empresa de software desarrolla una aplicación COM+ para que la use el personal del hospital. La aplicación, que es una aplicación distribuida basada en Web, proporciona una manera de que los hospitales almacenen y recuperen los registros médicos de los pacientes mediante una base SQL Server datos.
 
 Supongamos que la empresa de software tiene tres clientes: Hospital A, Hospital B y Hospital C. Mientras que cada cliente ejecuta el lado cliente de la aplicación COM+ localmente en sus equipos de escritorio, el lado servidor de la aplicación COM+ reside en el servidor web local de la empresa de software y sus clientes acceden a ellos a través de la Web.
 

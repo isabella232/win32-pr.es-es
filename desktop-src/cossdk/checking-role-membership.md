@@ -1,25 +1,25 @@
 ---
-description: Comprobando la pertenencia al rol
+description: Comprobación de la pertenencia a roles
 ms.assetid: 690cab3f-4476-4fce-b842-d63a4d0d5c6f
-title: Comprobando la pertenencia al rol
+title: Comprobación de la pertenencia a roles
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 777d47b36d2eea79d8b16e7025839b696c38ff87
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973572"
 ---
-# <a name="checking-role-membership"></a>Comprobando la pertenencia al rol
+# <a name="checking-role-membership"></a>Comprobación de la pertenencia a roles
 
-Puede llamar al método [**ISecurityCallContext:: IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole) para determinar si el llamador directo de un objeto es miembro de un rol determinado. Esta funcionalidad es útil cuando desea asegurarse de que no se ejecuta un determinado bloque de código, a menos que el llamador sea miembro de un rol determinado.
+Puede llamar al método [**ISecurityCallContext::IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole) para determinar si el llamador directo de un objeto es miembro de un rol determinado. Esta funcionalidad es útil cuando se desea asegurarse de que un determinado bloque de código no se ejecuta a menos que el autor de la llamada sea miembro de un rol determinado.
 
-Por ejemplo, puede usar [**IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole) para asegurarse de que las transacciones que superen una cantidad especificada, como $1000, solo las realizan los miembros de un rol de administrador. Si el autor de la llamada no es un administrador y la transacción es superior a $1000, no se realiza la transacción y se muestra un mensaje de error.
+Por ejemplo, podría usar [**IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole) para asegurarse de que las transacciones sobre una cantidad especificada, como 1000 USD, solo las realizan los miembros de un rol De administradores. Si el autor de la llamada no es un administrador y la transacción supera los 1000 USD, la transacción no se realiza y se muestra un mensaje de error.
 
-La mejor manera de tener acceso a [**IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole) es a través del objeto de contexto de llamada de seguridad, ya que puede usar la misma referencia al objeto de contexto de llamada de seguridad para obtener las propiedades de seguridad. Sin embargo, también puede tener acceso al método **IsCallerInRole** desde el objeto **ObjectContext** . (Consulte [**ObjectContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-objectcontext) o [**IObjectContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectcontext) para obtener más información).
+La manera preferida de acceder a [**IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole) es a través del objeto de contexto de llamada de seguridad porque puede usar la misma referencia al objeto de contexto de llamada de seguridad para obtener propiedades de seguridad. Sin embargo, también puede acceder al **método IsCallerInRole** desde el **objeto ObjectContext.** (Vea [**ObjectContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-objectcontext) o [**IObjectContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-iobjectcontext) para obtener más información).
 
-Si va a desarrollar componentes para una aplicación de Microsoft Visual Basic, llame a la función [**GetSecurityCallContext**](/windows/desktop/api/ComSvcs/nf-comsvcs-igetsecuritycallcontext-getsecuritycallcontext) y, a continuación, use el contexto de la llamada de seguridad para llamar a [**IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole), tal como se muestra en el ejemplo siguiente:
+Si va a desarrollar componentes para una aplicación de Microsoft Visual Basic, llame a la función [**GetSecurityCallContext**](/windows/desktop/api/ComSvcs/nf-comsvcs-igetsecuritycallcontext-getsecuritycallcontext) y, a continuación, use el contexto de llamada de seguridad para llamar a [**IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole), como se muestra en el ejemplo siguiente:
 
 
 ```VB
@@ -32,7 +32,7 @@ End If
 
 
 
-Si está desarrollando una aplicación de C o C++, use [**CoGetCallContext**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetcallcontext) para recuperar un puntero a la interfaz [**ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext) . Después, llame a [**ISecurityCallContext:: IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole), tal como se muestra en el ejemplo siguiente:
+Si va a desarrollar una aplicación de C o C++, use [**CoGetCallContext**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetcallcontext) para recuperar un puntero a la [**interfaz ISecurityCallContext.**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext) A continuación, [**llame a ISecurityCallContext::IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole), como se muestra en el ejemplo siguiente:
 
 
 ```C++
@@ -56,10 +56,10 @@ return hr;
 
 <dl> <dt>
 
-[Obtener acceso a la información de contexto de llamada de seguridad](accessing-security-call-context-information.md)
+[Acceso a la información de contexto de llamada de seguridad](accessing-security-call-context-information.md)
 </dt> <dt>
 
-[Determinar si está habilitada la seguridad de Role-Based](determining-whether-role-based-security-is-enabled.md)
+[Determinar si la Role-Based seguridad está habilitada](determining-whether-role-based-security-is-enabled.md)
 </dt> <dt>
 
 [Seguridad de componentes mediante programación](programmatic-component-security.md)

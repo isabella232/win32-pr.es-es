@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: c0afa9ce750016001ddbe054d8cb9a589a2c68d8856e8e4db5c59043eb881129
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b338889836bf78a334784ea66c0e346e9f6b672
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117820532"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973804"
 ---
 # <a name="ec_dvd_error"></a>ERROR \_ DE DVD DE \_ EC
 
@@ -42,7 +42,7 @@ El significado depende del valor *de lParam1.* Consulte [**ERROR \_ DE DVD**](/p
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este evento se genera en todos los dominios.
 

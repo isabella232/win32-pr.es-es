@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2a37eafe9abf226be20cf5d573abc91bc52ee070e7667dbab3a8799f74022c92
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5003154011f93b2b70ddd49dab00dcc1659eb2f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973986"
 ---
 # <a name="cbasepinconnectedto-method"></a>Método CBasePin.ConnectedTo
 
@@ -65,7 +65,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla sig
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el método se realiza correctamente, la **interfaz IPin** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberarlo cuando haya terminado.
 
@@ -80,7 +80,7 @@ Si el método se realiza correctamente, la **interfaz IPin** que devuelve tiene 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

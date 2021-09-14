@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Constructor EsentKeyTruncatedException'
-title: Constructor EsentKeyTruncatedException
+title: Constructor de EsentKeyTruncatedException
 TOCTitle: 'EsentKeyTruncatedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentKeyTruncatedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentkeytruncatedexception.esentkeytruncatedexception(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: aae4fd709cbb956e8e59776bcf242f87c9deb1ee4fd53b653a4d9a71f5019d90
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 26571c95c810b9b89005a212f35d265c5968ce7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118264758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883369"
 ---
-# <a name="esentkeytruncatedexception-constructor"></a>Constructor EsentKeyTruncatedException
+# <a name="esentkeytruncatedexception-constructor"></a>Constructor de EsentKeyTruncatedException
 
 Inicializa una nueva instancia de la clase EsentKeyTruncatedException.
 

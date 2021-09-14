@@ -4,12 +4,12 @@ ms.assetid: c72bbd47-0219-40ba-a7d5-2a6b725972d0
 title: Suposiciones y principios de diseño de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28b87c5ae631cd5517b215efae3a09968649cd49ea94fe33b33d9b826082e911
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7dea86c404896a3d6095d39ebd6031767f6ccdd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118549412"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973538"
 ---
 # <a name="com-design-assumptions-and-principles"></a>Suposiciones y principios de diseño de COM+
 
@@ -29,7 +29,7 @@ Las suposiciones son las siguientes:
 
 Además de estas tres suposiciones, los siguientes principios están basados en el modelo de programación com+:
 
--   **La lógica de la aplicación residirá en equipos servidor, no en equipos cliente.** Hay tres razones principales para hacerlo:
+-   **La lógica de aplicación residirá en equipos servidor, no en equipos cliente.** Hay tres razones principales para hacerlo:
     -   Es posible que el equipo cliente no tenga la potencia de procesamiento o las características necesarias para ejecutar la lógica de la aplicación. Además, mantener la lógica de aplicación en el servidor simplifica la implementación.
     -   Los equipos servidor suelen estar más cerca de los datos, y estos datos suelen estar en una base de datos. Dado que la aplicación tiene acceso a las bases de datos, quiere ser muy sensible al costo de las conexiones de base de datos. Al colocar la mayor parte de la lógica en los equipos servidor, puede compartir conexiones de base de datos y obtener una mejora significativa del rendimiento. Hay otros recursos en los equipos servidor que también se pueden compartir, de nuevo con una ventaja de rendimiento.
     -   El hecho de que la lógica de la aplicación resida en equipos servidor mantiene el control del contexto de seguridad con la aplicación. Tiene más control sobre la seguridad si mantiene esa seguridad en los componentes de aplicación que se ejecutan en equipos servidor en lugar de en equipos cliente.

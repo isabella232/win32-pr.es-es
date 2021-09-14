@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 45ea97228038b173ef89cac85b9efab1385938fcaac3b2bf0d733be9f34dabe0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d600872c4efab5560f4fd794cac63beb4365841c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973740"
 ---
 # <a name="registering-the-system-registry-provider"></a>Registro del proveedor del Registro del sistema
 
@@ -27,7 +27,7 @@ En el procedimiento siguiente se describe cómo registrar el proveedor del Regis
 
 1.  Registre el proveedor como un servidor COM.
 
-    Si es necesario, es posible que tenga que crear entradas del Registro. Este proceso se aplica a todos los servidores COM y no está relacionado con WMI. Para obtener más información, consulte la [documentación de COM](https://msdn.microsoft.com/library/aa139695.aspx) en Microsoft Windows Software Development Kit (SDK).
+    Si es necesario, es posible que tenga que crear entradas del Registro. Este proceso se aplica a todos los servidores COM y no está relacionado con WMI. Para más información, consulte la [documentación de COM](https://msdn.microsoft.com/library/aa139695.aspx) en el Kit de desarrollo de software (SDK) de Microsoft Windows.
 
 2.  Cree una instancia de la [**\_ \_ clase Win32Provider**](--win32provider.md) para describir la implementación del proveedor del Registro del sistema.
 

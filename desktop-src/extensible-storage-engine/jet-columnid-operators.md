@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Hh565023(v=EXCHG.10)
 ms:contentKeyID: 39512694
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8109b5af007c7b12818d032beae48a577f819b6da951ebefc706bf6ca89e536b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44dfa44d2303d5fdc3550cbc71983f534798b5ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119968465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887572"
 ---
 # <a name="jet_columnid-operators"></a>JET_COLUMNID operadores
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_COLUMNID](./jet-columnid-structure.md) expone los miembros siguientes.
+El [JET_COLUMNID](./jet-columnid-structure.md) muestra los miembros siguientes.
 
 ## <a name="operators"></a>Operadores
 
@@ -45,7 +45,7 @@ El [JET_COLUMNID](./jet-columnid-structure.md) expone los miembros siguientes.
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="hh556917(v=exchg.10).md">GreaterThanOrEqual</a></td>
-<td>Determine si un columnid es posterior o igual a otro columnid.</td>
+<td>Determine si un columnid es posterior o igual que otro columnid.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -68,7 +68,7 @@ El [JET_COLUMNID](./jet-columnid-structure.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

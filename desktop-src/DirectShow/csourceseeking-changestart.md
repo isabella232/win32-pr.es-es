@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7f7c0d9a86d33d13c95295c5ef1ef46a3e6c02371d1b6520572750450320b1f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0a2751cf0ad1ecc6fddeeffd97b97c32b4a31b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073369"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973847"
 ---
 # <a name="csourceseekingchangestart-method"></a>Método CSourceSeeking.ChangeStart
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método CSourceSeeking::SetPositions**](csourceseeking-setpositions.md) llama a este método si cambia la posición inicial. Este método es virtual puro; la clase derivada debe implementarla. Después de una operación de búsqueda, las marcas de tiempo deben reiniciarse desde cero. Las horas de los medios deben reflejar la nueva hora de inicio. En el ejemplo siguiente se muestra una posible implementación:
 
@@ -72,7 +72,7 @@ HRESULT CMyStream::ChangeStart( )
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

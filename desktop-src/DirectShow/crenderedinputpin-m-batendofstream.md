@@ -1,7 +1,7 @@
 ---
-description: La variable miembro m \_ bAtEndOfStream es una marca booleana que indica si se ha alcanzado el final de la secuencia.
+description: La variable miembro m \_ bAtEndOfStream es una marca booleana que indica si se alcanzó el final de la secuencia.
 ms.assetid: 96cad18e-6a3e-409a-9949-5e050683e384
-title: CRenderedInputPin::m_bAtEndOfStream miembro (Arendertra.h)
+title: Miembro CRenderedInputPin::m_bAtEndOfStream (Amextra.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b1f4d5ccf336daaa62c4df8f73086dc61d30e8b981813790f195234a41eb2aab
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dfd0f3a02865f7945cbe875ca2dab7df339cf8ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119652065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973855"
 ---
 # <a name="crenderedinputpinm_batendofstream-member"></a>Miembro CRenderedInputPin::m \_ bAtEndOfStream
 
-La variable miembro m \_ bAtEndOfStream es una marca booleana que indica si se ha alcanzado el final de la secuencia.
+La variable miembro m \_ bAtEndOfStream es una marca booleana que indica si se alcanzó el final de la secuencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,12 +42,12 @@ BOOL m_bAtEndOfStream;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Anicetra.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Amextra.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

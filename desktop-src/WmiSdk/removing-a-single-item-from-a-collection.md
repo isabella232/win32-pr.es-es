@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Quitar un único elemento de una colección WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50364173aff9f28362878e84d5f3ddb496e430521dc5b1bb92bbc11e7e6b528c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6dabeb3ff2e7e70cf6fe25f1ddfb0b14032119d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119995905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973734"
 ---
 # <a name="removing-a-single-item-from-a-wmi-collection"></a>Quitar un único elemento de una colección WMI
 
 Uno de los propósitos principales de acceder a una colección es quitar un elemento de la colección. Puede quitar un elemento de una colección con una llamada al [**método SWbemPropertySet.Remove.**](swbempropertyset-remove.md) Este método no está disponible para [**SWbemObjectSet**](swbemobjectset.md) o [**SWbemMethodSet**](swbemmethodset.md).
 
-Los elementos se quitan por nombre de [**SWbemPropertySet**](swbempropertyset.md), [**SWbemQualifierSet**](swbemqualifierset.md)y [**SWbemNamedValueSet**](swbemnamedvalueset.md). Sin embargo, los [**elementos de SWbemRefresher**](swbemrefresher.md) se quitan por índice y de [**SWbemPrivilegeSet**](swbemprivilegeset.md) por la constante que representa el nombre de privilegio.
+Los elementos se quitan por nombre de [**SWbemPropertySet**](swbempropertyset.md), [**SWbemQualifierSet y**](swbemqualifierset.md) [**SWbemNamedValueSet**](swbemnamedvalueset.md). Sin embargo, los elementos [**de SWbemRefresher**](swbemrefresher.md) se quitan por índice y de [**SWbemPrivilegeSet**](swbemprivilegeset.md) mediante la constante que representa el nombre de privilegio.
 
 **Para quitar un elemento de una colección**
 

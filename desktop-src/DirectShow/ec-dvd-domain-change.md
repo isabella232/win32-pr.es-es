@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: a43c44e779d8ad64852b673fb053467687c50daec85acb9bc87999675200d5f1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 815b6b2dd318d0b7716f4cf640ef3f83dacd0d60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119965665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973805"
 ---
 # <a name="ec_dvd_domain_change"></a>CAMBIO \_ DE DOMINIO DE DVD DE \_ \_ EC
 
@@ -42,7 +42,7 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El reproductor de DVD señala este evento cada vez que cambia de dominio.
 
@@ -58,7 +58,7 @@ Este evento se genera en todos los dominios de DVD.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

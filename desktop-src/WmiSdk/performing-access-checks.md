@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Realizar comprobaciones de acceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e06f2bccab886b38b53ecc3592371555b8c93a0ed12cdad0a4f039b62d62752
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9af65605b6e96a5ad8b820de876d553f8d19202
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119050513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973757"
 ---
 # <a name="performing-access-checks"></a>Realizar comprobaciones de acceso
 

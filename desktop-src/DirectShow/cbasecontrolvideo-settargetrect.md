@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3af420d9280d21ccf11bfdc6a23b63b33f10c1bf5a360f1770647dcb51655cf2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3868e7d8df93940829fb96c7152a55048a5cae82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017413"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974043"
 ---
 # <a name="cbasecontrolvideosettargetrect-method"></a>Método CBaseControlVideo.SetTargetRect
 
@@ -53,7 +53,7 @@ Puntero al rectángulo de destino.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las clases derivadas deben invalidar esto para saber cuándo cambia el rectángulo de destino. Se llama desde las siguientes funciones miembro.
 
@@ -89,7 +89,7 @@ En este ejemplo, CVideoText es una clase derivada de [**CBaseControlVideo,**](cb
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

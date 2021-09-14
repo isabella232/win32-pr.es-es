@@ -1,7 +1,7 @@
 ---
 description: El método DoCreateWindow crea la ventana.
 ms.assetid: bbe38a71-bbf7-4380-96a3-074b992a1d1e
-title: CBaseWindow.DoCmétodo reateWindow (Winutil.h)
+title: Método CBaseWindow.DoCreateWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f2502d1c07efbb5fa15c8113d11504b9a61a64321686e2b0e7e4939fabad7395
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76bea1523f48a6e22a3c2d9370fa32bcea022621
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118658229"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973939"
 ---
-# <a name="cbasewindowdocreatewindow-method"></a>CBaseWindow.DoCmétodo reateWindow
+# <a name="cbasewindowdocreatewindow-method"></a>Método CBaseWindow.DoCreateWindow
 
 El `DoCreateWindow` método crea la ventana.
 
@@ -59,7 +59,7 @@ El [**método CBaseWindow::P repareWindow**](cbasewindow-preparewindow.md) llama
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

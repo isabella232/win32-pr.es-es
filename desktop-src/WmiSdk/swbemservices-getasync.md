@@ -1,5 +1,5 @@
 ---
-description: Recupera un objeto , que es una definición de clase o una instancia de , en función de la ruta de acceso del objeto.
+description: Recupera un objeto , que es una definición de clase o una instancia de , basándose en la ruta de acceso del objeto.
 ms.assetid: 8da46851-52b8-4b5a-8c9d-1d492f57f4b6
 ms.tgt_platform: multiple
 title: Método SWbemServices.GetAsync (Wbemdisp.h)
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: d507779493563556d250823cc1be0228731c55ced66911b4f530936b75afdf70
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 451f13bde9458e7d57ec393f42b92a4092c99924
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120071485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973712"
 ---
 # <a name="swbemservicesgetasync-method"></a>Método SWbemServices.GetAsync
 
-El **método GetAsync** del objeto [**SWbemServices**](swbemservices.md) recupera un objeto , que es una definición de clase o una instancia, en función de la ruta de acceso del objeto.
+El **método GetAsync** del objeto [**SWbemServices**](swbemservices.md) recupera un objeto , que es una definición de clase o una instancia, basándose en la ruta de acceso del objeto.
 
-Este método recupera solo los objetos del espacio de nombres asociado al objeto [**SWbemServices**](swbemservices.md) actual.
+Este método solo recupera objetos del espacio de nombres asociado al objeto [**SWbemServices**](swbemservices.md) actual.
 
 Se llama a este método en el modo asincrónico. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
 
@@ -55,7 +55,7 @@ SWbemServices.GetAsync( _
 *objWbemSink* 
 </dt> <dd>
 
-Obligatorio. Receptor de objetos que obtiene objetos de forma asincrónica. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos .
+Necesario. Receptor de objetos que obtiene objetos de forma asincrónica. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Entero que determina el comportamiento de la llamada. Este parámetro puede acep
 
 </dt> <dd>
 
-Hace que las llamadas asincrónicas envíen actualizaciones de estado al controlador de eventos [**OnProgress**](swbemsink-onprogress.md) para el receptor del objeto.
+Hace que las llamadas asincrónicas envíen actualizaciones de estado al controlador de eventos [**OnProgress**](swbemsink-onprogress.md) para el receptor de objetos.
 
 </dd> <dt>
 
@@ -102,14 +102,14 @@ Impide que las llamadas asincrónicas envíen actualizaciones de estado al contr
 
 </dt> <dd>
 
-Hace que WMI devuelva datos de modificación de clase con la definición de clase base. Para obtener más información, vea [Localización de información de clase WMI](localizing-wmi-class-information.md).
+Hace que WMI devuelva datos de modificación de clase con la definición de clase base. Para obtener más información, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
 *objwbemNamedValueSet* \[ Opcional\]
 </dt> <dd>
 
-Normalmente, este valor no está definido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
+Normalmente, este valor es indefinido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ La ruta de acceso especificada no era válida.
 
 </dd> <dt>
 
-**wbemErrNotFound** : 2147749890 (0x80041002)
+**wbemErrNotFound:** 2147749890 (0x80041002)
 </dt> <dd>
 
 No se encontró el objeto solicitado.
@@ -172,21 +172,21 @@ No hay suficiente memoria para completar la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta llamada se devuelve inmediatamente. El objeto y el estado solicitados se devuelven al autor de la llamada a través de una devolución de llamada entregada al receptor que se especifica en *objWbemSink*. Para procesar el objeto cuando vuelva, cree *un objeto objWbemSink.* [**OnObjectReady**](swbemsink-onobjectready.md)o *objWbemSink*. [**Subrutina de eventos OnCompleted.**](swbemsink-oncompleted.md)
+Esta llamada se devuelve inmediatamente. El objeto y el estado solicitados se devuelven al autor de la llamada a través de una devolución de llamada entregada al receptor especificado en *objWbemSink*. Para procesar el objeto cuando vuelva, cree *un objeto objWbemSink*. [**OnObjectReady**](swbemsink-onobjectready.md)o *objWbemSink*. [**Subrutina de eventos OnCompleted.**](swbemsink-oncompleted.md)
 
-Una devolución de llamada asincrónica permite que un usuario no autenticado proporcione datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, use la comunicación semisincronosa o sincrónica. Para obtener más información, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
+Una devolución de llamada asincrónica permite a un usuario no autenticado proporcionar datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, use la comunicación semisincronosa o sincrónica. Para obtener más información, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
@@ -194,7 +194,7 @@ Una devolución de llamada asincrónica permite que un usuario no autenticado pr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

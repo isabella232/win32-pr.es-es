@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 64e833ef495ace41a9dcd1614b69e4a081befce0e429fa7aad800a73ce490439
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4185c02b396f7d0d570081ba1401e0ec9e301d46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973980"
 ---
-# <a name="cbasepinisstopped-method"></a>CBasePin.IsStopped (método)
+# <a name="cbasepinisstopped-method"></a>Método CBasePin.IsStopped
 
 El `IsStopped` método determina si se detiene el filtro que contiene este pin.
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si se detiene el filtro. De lo contrario, **devuelve FALSE.**
+Devuelve **TRUE** si se detiene el filtro. De lo contrario, **devuelve FALSE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-No llame a este método desde dentro del método de constructor **CBasePin,** ya que es posible que el filtro no se haya inicializado todavía.
+No llame a este método desde dentro del método constructor **CBasePin,** ya que es posible que el filtro no se inicialice todavía.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ No llame a este método desde dentro del método de constructor **CBasePin,** ya
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

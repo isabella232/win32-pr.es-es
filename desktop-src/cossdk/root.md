@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 0aba7a308a37ee531adf0886b8d06d4fd8c17369f73bd2bddf3211c2c184a4fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad896c69ab6fad75179c9bb30668143aa2ea741e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118547022"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973499"
 ---
 # <a name="root-collection"></a>Colección raíz
 
@@ -27,7 +27,7 @@ La **colección** Raíz no admite los [**métodos Add**](/windows/desktop/api/Co
 
 No puede navegar a la **colección raíz** desde ninguna colección.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección** Raíz hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -44,7 +44,7 @@ Estas son las colecciones de nivel superior del catálogo:
 -   [**FilesForImport**](filesforimport.md)
 -   [**InprocServers**](inprocservers.md)
 -   [**LegacyServers**](legacyservers.md)
--   [**LocalComputer**](localcomputer.md)
+-   [**Equipo local**](localcomputer.md)
 -   [**Particiones**](partitions.md)
 -   [**PartitionUsers**](partitionusers.md)
 -   [**Propertyinfo**](propertyinfo.md)

@@ -4,12 +4,12 @@ description: Inmovilización de eventos
 ms.assetid: 1e537503-f7e7-42f4-aa3c-3c71715b84fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba439ebce12a48d78e1eb1d2daa31990c02f4a42082d3425e9b6ef2f842b3ba1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e403448d53949c263b8e146961690de1200436c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117736805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973661"
 ---
 # <a name="event-freezing"></a>Inmovilización de eventos
 

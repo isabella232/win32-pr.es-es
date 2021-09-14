@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a3c077b6cf00f61565124f3d79ad905f6d34a3d8da50d58396e2df1bd35b0d60
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6e7a54372743d430cd904f47c79414d149cf033
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973909"
 ---
 # <a name="cbasewindowperformancealignwindow-method"></a>Método CBaseWindow.PerformanceAlignWindow
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método alinea los bordes izquierdo y superior de la ventana con los límites DWORD, lo que puede mejorar el rendimiento. Si la ventana tiene un elemento primario, el método devuelve S \_ OK pero realiza la alineación.
 
@@ -59,7 +59,7 @@ Este método alinea los bordes izquierdo y superior de la ventana con los límit
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

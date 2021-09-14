@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bf6c7793af3cb7866ddaaaae8823acd91ed10ac71d939af8bc9e71eff768d75f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9020510030d3b3d4b30e066adfe67367618fb3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118657660"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973917"
 ---
 # <a name="cbasewindowonsize-method"></a>CBaseWindow.OnSize (método)
 
@@ -76,7 +76,7 @@ Este método almacena el nuevo ancho y alto. Para recuperar estos valores, llame
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

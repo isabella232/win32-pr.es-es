@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a81d186ac648d2dcf617def0069c486b888e791c301cb45d4661e95b44dcbc25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 555533b11c96073763af0d2b52823af44e3797be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118397576"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886673"
 ---
 # <a name="irenderenginesetrenderrange2-method"></a>IRenderEngine::SetRenderRange2 (método)
 
@@ -28,7 +28,7 @@ ms.locfileid: "118397576"
 
  
 
-El `SetRenderRange2` método establece el intervalo de tiempo de la escala de tiempo que se va a representar. Este método es equivalente a [**IRenderEngine::SetRenderRange**](irenderengine-setrenderrange.md), pero toma valores de tipo **double**.
+El `SetRenderRange2` método establece el intervalo de tiempo en la escala de tiempo que se va a representar. Este método es equivalente a [**IRenderEngine::SetRenderRange**](irenderengine-setrenderrange.md), pero toma valores de tipo **double**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,7 +75,7 @@ Devuelve uno de los siguientes **valores HRESULT:**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -102,10 +102,10 @@ Devuelve uno de los siguientes **valores HRESULT:**
 
 <dl> <dt>
 
-[**IRenderEngine (Interfaz)**](irenderengine.md)
+[**IRenderEngine (interfaz)**](irenderengine.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

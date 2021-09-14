@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: aff56542dd1c71eb2269d3ada60070c9b263a883fef5e3c4175bad40c6e88ca7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6800084717be6db9140e045cf8bf9e39c40e63dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119480215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883273"
 ---
 # <a name="esentlogbuffertoosmallexception-constructor"></a>Constructor EsentLogBufferTooSmallException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLogBufferTooSmallException()
 public EsentLogBufferTooSmallException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

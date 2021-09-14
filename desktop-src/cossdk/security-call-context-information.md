@@ -4,12 +4,12 @@ ms.assetid: 8b170c17-f095-4c25-9ee2-480681b7e5f6
 title: Información de contexto de llamada de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0aed07f79fdba16f0ea6139a58cc50871d795e1eacbf94737b04dbf5f1fe900
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 213e21d684d004ed18e5b9aa536e03ae8292307e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118546872"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973496"
 ---
 # <a name="security-call-context-information"></a>Información de contexto de llamada de seguridad
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbcf634870ce232543cd20ccd42c9e8ca255705810e81af39cc6e81f8e41658d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 87a9e80aa342065ee88c8e1d7aa44c1fd598e411
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118544880"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884884"
 ---
 # <a name="wm_vscrollclipboard-message"></a>Mensaje \_ VSCROLLCLIPBOARD de WM
 
@@ -73,7 +73,7 @@ La palabra de orden superior de *lParam* especifica la posición actual del cuad
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El propietario del Portapapeles puede usar la [**función ScrollWindow**](https://msdn.microsoft.com/library/Cc410994(v=MSDN.10).aspx) para desplazar la imagen en la ventana del visor del Portapapeles e invalidar la región adecuada.
 
@@ -81,7 +81,7 @@ El propietario del Portapapeles puede usar la [**función ScrollWindow**](https:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

@@ -1,31 +1,31 @@
 ---
-description: Mensaje WS-Discovery que usa un cliente para buscar servicios en la red por tipo de servicio.
+description: Mensaje WS-Discovery utilizado por un cliente para buscar servicios en la red por tipo de servicio.
 ms.assetid: a0ede1d9-2e13-4d5e-8ccd-9e0c0217cac7
 title: Mensaje de sondeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55358cfb8414fafabba6024fb448fe334d2f7cc6
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 58f186de4f68faceca096ddaa231b57d1112bc1e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122627891"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973685"
 ---
 # <a name="probe-message"></a>Mensaje de sondeo
 
-Un mensaje de sondeo es un WS-Discovery utilizado por un cliente para buscar servicios en la red por tipo de servicio. Para obtener más información sobre los mensajes de sondeo, vea la sección 5.2 de la [especificación de WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
+Un mensaje de sondeo es WS-Discovery un mensaje usado por un cliente para buscar servicios en la red por tipo de servicio. Para obtener más información sobre los mensajes de sondeo, vea la sección 5.2 de [la especificación WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
 La multidifusión UDP envía un mensaje de sondeo al puerto 3702. No se admiten mensajes de sondeo de unidifusión.
 
 Los clientes DPWS envían mensajes de sondeo. En la lista siguiente se muestran escenarios en los que WSDAPI enviará un mensaje de sondeo.
 
 -   Los clientes de detección de funciones envían mensajes de sondeo.
--   Los clientes de WSDAPI que [**llaman a IWSDiscoveryProvider::SearchByAddress**](/windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoveryprovider-searchbyaddress) envían mensajes de sondeo.
--   Los clientes de WSDAPI que [**llaman a IWSDiscoveryProvider::SearchByType**](/windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoveryprovider-searchbytype) envían mensajes de sondeo.
+-   Los clientes WSDAPI que [**llaman a IWSDiscoveryProvider::SearchByAddress**](/windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoveryprovider-searchbyaddress) envían mensajes de sondeo.
+-   Los clientes WSDAPI que [**llaman a IWSDiscoveryProvider::SearchByType**](/windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoveryprovider-searchbytype) envían mensajes de sondeo.
 -   Las aplicaciones que usan la detección dirigida envían mensajes de sondeo a través de HTTP o HTTPS.
 
 > [!Note]  
-> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la herramienta de interoperabilidad básica de [WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
+> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la [herramienta de interoperabilidad básica WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
 
  
 
@@ -76,22 +76,22 @@ Un mensaje de sondeo tiene los siguientes puntos de enfoque.
 <tbody>
 <tr class="odd">
 <td>Sondeo</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Action>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Action&gt;
     https://schemas.xmlsoap.org/ws/2005/04/discovery/Probe
-</wsa:Action></code></pre></td>
+&lt;/wsa:Action&gt;</code></pre></td>
 <td>La acción SOAP de sondeo identifica el mensaje como un mensaje de sondeo.</td>
 </tr>
 <tr class="even">
 <td>MessageID</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:MessageID>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:MessageID&gt;
     urn:uuid:29cf10da-5c41-4d55-b184-5ee15e38ce23
-</wsa:MessageID></code></pre></td>
+&lt;/wsa:MessageID&gt;</code></pre></td>
 <td>Contiene el identificador del mensaje, al que hace referencia el elemento RelatesTo en un <a href="probematches-message.md">mensaje ProbeMatches.</a></td>
 </tr>
 <tr class="odd">
 <td>Tipos</td>
-<td><pre class="syntax" data-space="preserve"><code><wsd:Types>wsdp:Device</wsd:Types></code></pre></td>
-<td>Contiene los WS-Discovery para los que el cliente está buscando. Este elemento no debe estar vacío.</td>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsd:Types&gt;wsdp:Device</wsd:Types></code></pre></td>
+<td>Contiene los WS-Discovery que busca el cliente. Este elemento no debe estar vacío.</td>
 </tr>
 </tbody>
 </table>

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1da667e5479cc33312375920c1d573f0e2c19607b2399ff6f4fe34b130ca61e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: faadae626dd5ac0314c4140e3f9d82ab645ef9b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118580993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885305"
 ---
 # <a name="closedcaptioncaptioningid"></a>ClosedCaption.captioningID
 
@@ -33,7 +33,7 @@ player.closedCaption.captioningID
 
 Esta propiedad es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El nombre del elemento especificado puede ser cualquier elemento HTML de la página web, siempre que admita el atributo innerHTML. Si la página web contiene varios fotogramas, el nombre del elemento solo puede hacer referencia a un elemento en el mismo marco que el control Player.
 
@@ -72,9 +72,9 @@ En el siguiente ejemplo JScript de Microsoft se *usa ClosedCaption*. **captionin
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

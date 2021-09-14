@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c275e4d683bcc698c8f04c5a85017b081b6aad17f93c91d66e0a75f2da88692e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ceeadd0ec7a61422f0127c957125caa9a01dcefb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118657497"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973906"
 ---
 # <a name="cbasewindowuninitialisewindow-method"></a>Método CBaseWindow.UninitialiseWindow
 
@@ -59,7 +59,7 @@ Este método libera los recursos adquiridos por el [**método CBaseWindow::Initi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

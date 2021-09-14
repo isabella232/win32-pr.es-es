@@ -5,19 +5,19 @@ ms.tgt_platform: multiple
 title: Object-TYPE (Macro)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ef71bcdd915dfaa59ace008c28a5d63a323c2cd1d0f119b9d91e5a0720e192e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c605a414c402f2cf2d18be2d966db6408f23cdc9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118818011"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973761"
 ---
 # <a name="object-type-macro"></a>Object-TYPE (Macro)
 
 La macro OBJECT-TYPE contiene cláusulas obligatorias y opcionales que describen las características básicas de un objeto MIB. El proveedor SNMP convierte un MIB en las partes correspondientes de la macro OBJECT-TYPE.
 
 > [!Note]  
-> Para obtener más información sobre cómo instalar el proveedor, vea [Configuración del entorno SNMP de WMI.](setting-up-the-wmi-snmp-environment.md)
+> Para obtener más información sobre cómo instalar el proveedor, vea [Configurar el entorno SNMP de WMI.](setting-up-the-wmi-snmp-environment.md)
 
  
 
@@ -35,7 +35,7 @@ Objeto que contiene la mayoría de los datos en cuestión.
 <span id="Object_descriptor"></span><span id="object_descriptor"></span><span id="OBJECT_DESCRIPTOR"></span>Descriptor de objetos
 </dt> <dd>
 
-Nombre único o descriptor de objeto que identifica cada objeto MIB. Cada descriptor de objetos MIB se asigna exactamente a un nombre de propiedad CIM. Por ejemplo, **ifIndex** se traduce a **ifIndex**.
+Nombre único o descriptor de objeto que identifica cada objeto MIB. Cada descriptor de objeto MIB se asigna exactamente a un nombre de propiedad CIM. Por ejemplo, **ifIndex se** traduce a **ifIndex**.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ En este caso, las reglas de asignación anteriores especificadas para la cláusu
 <span id="OBJECT-IDENTIFIER_clause"></span><span id="object-identifier_clause"></span><span id="OBJECT-IDENTIFIER_CLAUSE"></span>Cláusula OBJECT-IDENTIFIER
 </dt> <dd>
 
-Contiene un identificador de objeto único para un objeto MIB. Este identificador de objeto se asigna al identificador de objeto calificador de **\_ propiedad CIM**.
+Contiene un identificador de objeto único para un objeto MIB. Este identificador de objeto se asigna al identificador de objeto calificador de **\_ propiedad** CIM .
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Defina los derechos de acceso al objeto MIB.
 
 </dd> <dt>
 
-<span id="DESCRIPTION_clause"></span><span id="description_clause"></span><span id="DESCRIPTION_CLAUSE"></span>DESCRIPTION (cláusula)
+<span id="DESCRIPTION_clause"></span><span id="description_clause"></span><span id="DESCRIPTION_CLAUSE"></span>CLÁUSULA DESCRIPTION
 </dt> <dd>
 
 Proporciona una descripción de texto del objeto , que se asigna al calificador de propiedad CIM **Description**. Esta cláusula puede estar vacía.
@@ -115,7 +115,7 @@ Proporciona una definición precisa de lo que representa el objeto. Esta cláusu
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La macro OBJECT-TYPE describe las características básicas de un objeto MIB individual. Un conjunto de macros OBJECT-TYPE se puede considerar como un grupo de objetos relacionados. En SNMPv2C, use la macro OBJECT-GROUP para agrupar formalmente conjuntos de objetos relacionados en una colección. Sin embargo, no hay ningún mecanismo formal para crear colecciones en SNMPv1. Para los fines del proveedor SNMP, se omite la macro OBJECT-GROUP, pero puede inventar relaciones de agrupación y crear colecciones.
 

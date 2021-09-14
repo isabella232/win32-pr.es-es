@@ -1,26 +1,26 @@
 ---
-title: Propiedad singleConnectionTimeout de IMsRdpClientAdvancedSettings
-description: Especifica el período de tiempo máximo, en segundos, que el control de cliente espera para una conexión a una dirección IP.
+title: Propiedad IMsRdpClientAdvancedSettings singleConnectionTimeout
+description: Especifica el tiempo máximo, en segundos, que el control de cliente espera una conexión a una dirección IP.
 ms.assetid: 57fb2397-8229-4446-88fd-e75cb96c7ac5
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad singleConnectionTimeout
-- propiedad singleConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad singleConnectionTimeout
-- propiedad singleConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad singleConnectionTimeout
-- propiedad singleConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad singleConnectionTimeout
-- propiedad singleConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad singleConnectionTimeout
-- propiedad singleConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad singleConnectionTimeout
-- propiedad singleConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad singleConnectionTimeout
-- propiedad singleConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad singleConnectionTimeout
-- propiedad singleConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad singleConnectionTimeout
+- Propiedad singleConnectionTimeout Servicios de Escritorio remoto
+- Propiedad singleConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad singleConnectionTimeout
+- Propiedad singleConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad singleConnectionTimeout
+- Propiedad singleConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad singleConnectionTimeout
+- Propiedad singleConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad singleConnectionTimeout
+- Propiedad singleConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad singleConnectionTimeout
+- Propiedad singleConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad singleConnectionTimeout
+- Propiedad singleConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad singleConnectionTimeout
+- Propiedad singleConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad singleConnectionTimeout
 topic_type:
 - apiref
 api_name:
@@ -55,17 +55,17 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 55a0d2eb34235c874b4408e5e4c6f0a349a1ab93
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421930"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886273"
 ---
-# <a name="imsrdpclientadvancedsettingssingleconnectiontimeout-property"></a>IMsRdpClientAdvancedSettings:: singleConnectionTimeout (propiedad)
+# <a name="imsrdpclientadvancedsettingssingleconnectiontimeout-property"></a>Propiedad IMsRdpClientAdvancedSettings::singleConnectionTimeout
 
-Especifica el período de tiempo máximo, en segundos, que el control de cliente espera para una conexión a una dirección IP.
+Especifica el tiempo máximo, en segundos, que el control de cliente espera una conexión a una dirección IP.
 
-Durante la conexión, es posible que el control intente conectarse a varias direcciones IP.
+Durante la conexión, el control puede intentar conectarse a varias direcciones IP.
 
 Esta propiedad es de lectura y escritura.
 
@@ -90,11 +90,11 @@ La nueva hora, en segundos. El valor máximo es 600.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,7 +110,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

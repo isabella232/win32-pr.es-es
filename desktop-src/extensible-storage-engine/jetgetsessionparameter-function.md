@@ -20,11 +20,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 183169f8356a664b450e74534558286607fed62c
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984778"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887268"
 ---
 # <a name="jetgetsessionparameter-function"></a>JetGetSessionParameter (Función)
 
@@ -88,7 +88,7 @@ El parámetro session se usa durante la duración de la sesión o hasta que se r
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2012.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

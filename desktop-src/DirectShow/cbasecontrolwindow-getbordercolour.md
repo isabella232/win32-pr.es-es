@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9b5b94e0fa58c95e74fd140c04710e8aaacef9402397fa475983c0e01e586528
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ba6e1be9babf96d03235c49d9cde0f11cae1b83
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017373"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974006"
 ---
 # <a name="cbasecontrolwindowgetbordercolour-method"></a>Método CBaseControlWindow.GetBorderColour
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve el color del borde.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una aplicación puede establecer un rectángulo de destino para mostrar el vídeo. Este rectángulo debe ser relativo al área de cliente de la ventana. Si esto se hace (el valor predeterminado es pintar siempre toda la ventana), hay un área que rodea el vídeo. es decir, el borde. El color del borde se puede establecer a través de la función miembro [**CBaseControlWindow::p ut \_ BorderColor.**](cbasecontrolwindow-put-bordercolor.md) Esta propiedad afecta al color del borde. Use esta función miembro en lugar de [**CBaseControlWindow::get \_ BorderColor**](cbasecontrolwindow-get-bordercolor.md), a menos que llame a esta función externamente a través del método [**IVideoWindow::get \_ BorderColor.**](/windows/desktop/api/Control/nf-control-ivideowindow-get_bordercolor)
+Una aplicación puede establecer un rectángulo de destino para mostrar el vídeo. Este rectángulo debe ser relativo al área de cliente de la ventana. Si esto se hace (el valor predeterminado es pintar siempre toda la ventana), hay un área que rodea el vídeo; es decir, el borde. El color del borde se puede establecer a través de la función miembro [**CBaseControlWindow::p ut \_ BorderColor.**](cbasecontrolwindow-put-bordercolor.md) Esta propiedad afecta al color del borde. Use esta función miembro en lugar de [**CBaseControlWindow::get \_ BorderColor**](cbasecontrolwindow-get-bordercolor.md), a menos que llame a esto externamente a través del método [**IVideoWindow::get \_ BorderColor.**](/windows/desktop/api/Control/nf-control-ivideowindow-get_bordercolor)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Una aplicación puede establecer un rectángulo de destino para mostrar el víde
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

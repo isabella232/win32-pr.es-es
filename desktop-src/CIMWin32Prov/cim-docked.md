@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6988606cc419c2a5340b4a964a8fa8328b989f286fe544153452fcce48fa7c8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 899b85d63293861f0a36df3d3c30610f8cff05ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119438845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974194"
 ---
 # <a name="cim_docked-class"></a>Cim \_ Docked (clase)
 
@@ -45,7 +45,7 @@ class CIM_Docked : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Docked de CIM** tiene estos tipos de miembros:
 
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

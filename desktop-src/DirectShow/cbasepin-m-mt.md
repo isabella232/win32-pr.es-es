@@ -1,7 +1,7 @@
 ---
 description: Tipo de medio para la conexión de pin actual.
 ms.assetid: ab5d9d3a-a9f6-4c14-b872-7e1d03c86fb0
-title: CBasePin::m_mt miembro (Amfilter.h)
+title: Miembro CBasePin::m_mt (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f48fb7a80bad7d868281b0797ef3f18c7f31644b7479caa4565c1fe45fc353e9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ff990c9473a5ff65a2a4e0818d1f77c7fb414b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118158194"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973965"
 ---
 # <a name="cbasepinm_mt-member"></a>Miembro CBasePin::m \_ mt
 
@@ -47,7 +47,7 @@ CMediaType m_mt;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

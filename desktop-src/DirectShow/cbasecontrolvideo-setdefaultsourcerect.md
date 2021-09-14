@@ -1,5 +1,5 @@
 ---
-description: El método SetDefaultSourceRect establece el rectángulo de vídeo de origen predeterminado (virtual puro). Esto en una función miembro interna a la que se llama cuando se restablece el rectángulo de origen.
+description: El método SetDefaultSourceRect establece el rectángulo de vídeo de origen predeterminado (virtual puro). En una función miembro interna a la que se llama cuando se restablece el rectángulo de origen.
 ms.assetid: d0dae0a9-8763-485e-b9d3-80076a3f2f35
 title: Método CBaseControlVideo.SetDefaultSourceRect (Ctlutil.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ae7f2e88e170b0c21187b2615029fcb4ed2bed4717af09b60eb4309aee2bea0f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 82fe2001a42ca75fff4f3172c8ce05da18881d73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119432615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974056"
 ---
 # <a name="cbasecontrolvideosetdefaultsourcerect-method"></a>Método CBaseControlVideo.SetDefaultSourceRect
 
-El `SetDefaultSourceRect` método establece el rectángulo de vídeo de origen predeterminado (virtual puro). Esto en una función miembro interna a la que se llama cuando se restablece el rectángulo de origen.
+El `SetDefaultSourceRect` método establece el rectángulo de vídeo de origen predeterminado (virtual puro). En una función miembro interna a la que se llama cuando se restablece el rectángulo de origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las clases derivadas deben invalidar esto para restablecer el rectángulo de origen. Se llama desde [**CBaseControlVideo::SetDefaultSourcePosition**](cbasecontrolvideo-setdefaultsourceposition.md).
 
@@ -65,7 +65,7 @@ HRESULT CVideoText::SetDefaultSourceRect()
 
 
 
-En este ejemplo, CVideoText es una clase derivada de [**CBaseControlVideo,**](cbasecontrolvideo.md)m pRenderer contiene un objeto de una clase derivada de CBaseVideoRenderer y el miembro de datos m DrawImage, definido en la clase derivada, contiene un objeto \_ [](cbasevideorenderer.md) \_ [**CDrawImage.**](cdrawimage.md) El miembro de datos m mtIn, también definido en la clase derivada, contiene un objeto CMediaType con el tipo de medio \_ del pin de entrada. [](cmediatype.md)
+En este ejemplo, CVideoText es una clase derivada de [**CBaseControlVideo,**](cbasecontrolvideo.md)m pRenderer contiene un objeto de una clase derivada de CBaseVideoRenderer y el miembro de datos m DrawImage, definido en la clase derivada, contiene un objeto \_ [](cbasevideorenderer.md) \_ [**CDrawImage.**](cdrawimage.md) El miembro de datos m mtIn, también definido en la clase derivada, contiene un objeto CMediaType con el tipo de medio \_ de la patilla de entrada. [](cmediatype.md)
 
 ## <a name="requirements"></a>Requisitos
 

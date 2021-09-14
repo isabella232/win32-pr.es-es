@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102129
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3ae43ae166e971f57f6de08fde2bffc19d5c81636b564ae5e164701b3553617e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24f6e553e5cfa05204a47a484e49d0f27aed188c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118777197"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883332"
 ---
 # <a name="esentkeytruncatedexception-properties"></a>Propiedades de EsentKeyTruncatedException
 
@@ -34,7 +34,7 @@ El [tipo EsentKeyTruncatedException](./esentkeytruncatedexception-class.md) expo
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4737be14f3e975f87a6cbea460ef53dd40ecbb7b6a2d06c39a247dbe8aa0a14e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 817b355e78f22c01c289f681d256ee6b4d0aa882
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118958304"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974087"
 ---
 # <a name="lvm_getitemstate-message"></a>Mensaje GETITEMSTATE de LVM \_
 
@@ -62,7 +62,7 @@ Información de estado que se recuperará. Este parámetro puede ser una combina
 
 Devuelve el estado actual del elemento especificado. Los únicos bits válidos del valor devuelto son los que corresponden a los bits establecidos en el *parámetro lParam.*
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La información de estado de un elemento incluye un conjunto de marcas de bits, así como índices de lista de imágenes que indican la imagen de estado y la imagen de superposición del elemento.
 
@@ -74,11 +74,11 @@ La información de estado de un elemento incluye un conjunto de marcas de bits, 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

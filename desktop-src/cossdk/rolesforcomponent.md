@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: e0acd1bfd374c4d0cdb2eb43b49288f0527847abeec97d8bb96c0c5aecd74585
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 701921f8f88656753857707c045da0c8e231e1a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118547012"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973508"
 ---
 # <a name="rolesforcomponent-collection"></a>Colección RolesForComponent
 
@@ -25,7 +25,7 @@ Contiene un objeto para cada rol asignado al componente al que está relacionada
 
 Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección RolesForComponent** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -51,10 +51,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Nombre del rol. Ya debe ser un rol asignado a la aplicación (que aparece en la colección Roles). Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | WriteOnce                                                                                                                                                                                                                                                                                                                                           |
+| Acceso         | WriteOnce                                                                                                                                                                                                                                                                                                                                           |
 | Tipo           | String                                                                                                                                                                                                                                                                                                                                              |
 | Predeterminado        | "Nuevo rol"                                                                                                                                                                                                                                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                                                                        |

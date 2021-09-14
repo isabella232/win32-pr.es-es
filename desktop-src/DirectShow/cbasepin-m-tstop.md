@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5bb974e64ae8d12707367f32fc9d70c48d1c995baffe56322c1362e08ae8629b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a24bbae4ae302c829da4f1138adc97623664c2b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973949"
 ---
 # <a name="cbasepinm_tstop-member"></a>Miembro TStop de CBasePin::m \_
 
@@ -47,7 +47,7 @@ CRefTime m_tStop;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

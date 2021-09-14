@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d551dfa7b14ecff8c9fd1efe015e173403c1b5981f294a18b3180a42cc03de63
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ace975b178fee85e2794b518a78b40b375c65ae7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118412003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974107"
 ---
 # <a name="lvm_createdragimage-message"></a>Mensaje LVM \_ CREATEDRAGIMAGE
 
@@ -47,7 +47,7 @@ Puntero a una [**estructura POINT**](/previous-versions//dd162805(v=vs.85)) que 
 
 Devuelve el identificador a la lista de imágenes de arrastre si se realiza correctamente o **NULL** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación es responsable de destruir la lista de imágenes cuando ya no sea necesaria.
 
@@ -55,11 +55,11 @@ La aplicación es responsable de destruir la lista de imágenes cuando ya no sea
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

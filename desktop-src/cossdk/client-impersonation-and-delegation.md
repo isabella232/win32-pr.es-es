@@ -4,12 +4,12 @@ ms.assetid: fd75eb54-eefe-411f-a7aa-0bc8628f8778
 title: Suplantación y delegación de cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f8b0262f3d8dd6736d183fa76eb5d3f0946d50b2724e76bcea73843644aaefb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7557dcde4cadf559dd8e116cf4e7bece4221aaae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119129377"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973571"
 ---
 # <a name="client-impersonation-and-delegation"></a>Suplantación y delegación de cliente
 
@@ -30,7 +30,7 @@ La suplantación requiere la participación tanto del cliente como del servidor 
 Para usar eficazmente la forma más eficaz de suplantación, delegación , que es la suplantación de clientes a través de la red, las cuentas de usuario de cliente y servidor deben configurarse correctamente en el servicio Active Directory para admitirlo (además de la autoridad de concesión de cliente para realizar la suplantación de nivel de delegado), como se muestra a continuación:
 
 -   La identidad del servidor debe marcarse como "Trusted for delegation" (Confianza para la delegación) en Active Directory Service.
--   La identidad del cliente no debe marcarse como "La cuenta es confidencial y no se puede delegar" en Active Directory Service.
+-   La identidad del cliente no debe marcarse como "La cuenta es confidencial y no se puede delegar" en el servicio Active Directory cliente.
 
 Estas características de configuración dan al administrador del dominio un alto grado de control sobre la delegación, lo que es deseable, dada la confianza (y, por tanto, el riesgo de seguridad) que implica. Para obtener más información sobre la delegación, vea [Delegación y suplantación.](/windows/desktop/com/delegation-and-impersonation)
 

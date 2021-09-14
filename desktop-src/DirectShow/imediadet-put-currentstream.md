@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: ba8b9cfe7cf898e9645d0f1caf8ef789bb45967bfc268f08555a5bdea53c4127
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 864848f646e4a9e06ca12e2bfec742c1741d77e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886860"
 ---
-# <a name="imediadetput_currentstream-method"></a>IMediaDet::p ut \_ Método CurrentStream
+# <a name="imediadetput_currentstream-method"></a>Método IMediaDet::p ut \_ CurrentStream
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -56,7 +56,7 @@ Número de secuencia.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de llamar a este método, llame a [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) para establecer el nombre de archivo. Llame [**a IMediaDet::get \_ OutputStreams**](imediadet-get-outputstreams.md) para determinar el número de secuencias contenidas en el archivo de origen.
 
@@ -83,7 +83,7 @@ Si el detector de medios está en modo de captura de mapa de bits, este método 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 12de8b1b-63ed-43d1-9644-44770497c866
 title: Aplicaciones COM+ que se ejecutan como aplicaciones de servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92c605fe8e16021f5e866f34f1e426ceda1a6f104f6331f165cd21efcca97434
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9069a788c3446018e590e3a2d19790ea9d24e2d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118103206"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973555"
 ---
 # <a name="com-applications-running-as-service-applications"></a>Aplicaciones COM+ que se ejecutan como aplicaciones de servicio
 

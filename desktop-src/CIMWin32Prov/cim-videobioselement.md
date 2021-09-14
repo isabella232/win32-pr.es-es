@@ -32,18 +32,18 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 317bbf71b166ea51e665ad96c58657927412cbab
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882027"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974178"
 ---
 # <a name="cim_videobioselement-class"></a>Cim \_ VideoBIOSElement (clase)
 
 La **clase \_ CIM VideoBIOSElement** representa el software de bajo nivel que se carga en el almacenamiento no volátil y se usa para configurar y acceder al controlador de vídeo y la pantalla de un sistema informático.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -75,7 +75,7 @@ class CIM_VideoBIOSElement : CIM_SoftwareElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ VideoBIOSElement de CIM** tiene estos tipos de miembros:
 
@@ -360,7 +360,7 @@ Describe los detalles necesarios para una instalación correcta y los detalles (
 
 </dt> <dd>
 
-Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado de ejecución (es decir, el siguiente estado).
+Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado en ejecución (es decir, el siguiente estado).
 
 </dd> <dt>
 
@@ -371,7 +371,7 @@ Describe los detalles necesarios para la ejecución correcta y los detalles (con
 
 </dt> <dd>
 
-Describe los detalles necesarios para supervisar y operar en un elemento de inicio.
+Describe los detalles necesarios para supervisar y operar en un elemento start.
 
 </dd> </dl>
 
@@ -418,28 +418,28 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -493,7 +493,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OSType**")
 </dt> </dl>
 
-Entorno de sistema operativo. El valor de esta propiedad no garantiza la ejecución binaria. La versión del sistema operativo debe especificarse mediante la comprobación de la versión del sistema operativo. También es necesaria la arquitectura en la que se ejecuta el sistema operativo. La combinación de estas construcciones permite al proveedor identificar claramente el nivel de sistema operativo necesario para un elemento de software determinado.
+Entorno de sistema operativo. El valor de esta propiedad no garantiza la ejecución binaria. La versión del sistema operativo debe especificarse mediante la comprobación de versión del sistema operativo. También es necesaria la arquitectura en la que se ejecuta el sistema operativo. La combinación de estas construcciones permite al proveedor identificar claramente el nivel de sistema operativo necesario para un elemento de software determinado.
 
 Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
@@ -563,7 +563,7 @@ Att UNIX
 
 </dt> <dd>
 
-Apertura de MÁQUINAS VIRTUALES
+Abrir máquinas virtuales
 
 </dd> <dt>
 
@@ -601,7 +601,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**SISTEMA OPERATIVO/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -820,7 +820,7 @@ BS2000/OSD
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estorba** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
 
 
 </dt> <dd></dd> <dt>
@@ -1030,7 +1030,7 @@ Esta propiedad se hereda de la [**clase \_ SoftwareElement de CIM.**](cim-softwa
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CIM VideoBIOSElement** se deriva de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
@@ -1042,7 +1042,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -1052,7 +1052,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

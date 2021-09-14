@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1ab9cf310ffc35df07ecd9e332325bb5f20f3cb4884ee17e672294b89c5abc9d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 54b31268935cb296543b3992bf67b7a2193c1a92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974049"
 ---
 # <a name="cbasecontrolvideosetdefaulttargetrect-method"></a>Método CBaseControlVideo.SetDefaultTargetRect
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las clases derivadas deben invalidar esto para restablecer el rectángulo de vídeo de destino. Se llama desde la [**función miembro CBaseControlVideo::SetDefaultDestinationPosition.**](cbasecontrolvideo-setdefaultdestinationposition.md)
 
@@ -78,7 +78,7 @@ En este ejemplo, CVideoText es una clase derivada de [**CBaseControlVideo,**](cb
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

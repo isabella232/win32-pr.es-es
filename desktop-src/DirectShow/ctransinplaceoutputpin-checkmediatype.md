@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2816d148af2a7514dc28a71036402f3781e47a0144848a2ea81bbb94d339f961
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 66cd29758e0b2d63db88db8b998cc79ec12efdd9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973819"
 ---
 # <a name="ctransinplaceoutputpincheckmediatype-method"></a>Método CTransInPlaceOutputPin.CheckMediaType
 
@@ -58,13 +58,13 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 | Código devuelto                                                                                                | Descripción                         |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | Correcto.<br/>                 |
-| <dl> <dt>**TIPO VFW \_ E \_ NO \_ \_ ACEPTADO**</dt> </dl> | Tipo de medio no aceptado.<br/> |
+| <dl> <dt>**TIPO E VFW \_ \_ NO \_ \_ ACEPTADO**</dt> </dl> | Tipo de medio no aceptado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el [**método CTransformOutputPin::CheckMediaType.**](ctransformoutputpin-checkmediatype.md)
 
@@ -81,7 +81,7 @@ Si el filtro ya está transmitiendo y usa dos asignadores, este método rechaza 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

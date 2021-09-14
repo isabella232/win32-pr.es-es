@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 332e5fc461a39eff7ebfc70aa32a9a4d1a28a6928c15f6222e3804e2a542f6ed
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2f537973ac6c8f084ea42ba915a6293e581debef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973843"
 ---
 # <a name="csourceseekingcheckcapabilities-method"></a>Método CSourceSeeking.CheckCapabilities
 
@@ -65,7 +65,7 @@ Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Tal y como se implementó, este método comprueba el valor de *\* pCapabilities* con la variable miembro [**CSourceSeeking::m \_ dwSeekingCaps.**](csourceseeking-m-dwseekingcaps.md) Sin embargo, no establece *\* pCapabilities* igual a **m \_ dwSeekingCaps,** como se describe para el [**método IMediaSeeking::CheckCapabilities.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-checkcapabilities) Además, en el caso de que ninguna de las funcionalidades especificadas esté disponible, el método no devuelve E \_ FAIL. Una implementación más completa sería la siguiente:
 
@@ -111,7 +111,7 @@ STDMETHODIMP CheckCapabilities(DWORD *pCapabilities)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

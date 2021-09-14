@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d3b1f72ace792f13f88fbf0ce1e0edaf7b08789ecba88aede0b4094e9e75ae52
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: db88c5818d31d65f361ae1a805bd50c285d4a5c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119640894"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974041"
 ---
 # <a name="cbasecontrolwindowdosetwindowstyle-method"></a>CBaseControlWindow.DoSetWindowStyle (método)
 
@@ -53,7 +53,7 @@ Estilos de ventana adecuados.
 *WindowLong* 
 </dt> <dd>
 
-Valor que especifica los estilos que se establecerán. Debe ser una de las siguientes:
+Valor que especifica los estilos que se deben establecer. Debe ser una de las siguientes:
 
 
 
@@ -72,7 +72,7 @@ Valor que especifica los estilos que se establecerán. Debe ser una de las sigui
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro llama a la función **SetWindowLong** de Win32 para establecer el estilo de ventana y, a continuación, vuelve a mostrar la ventana en la posición actual. Las funciones miembro [**CBaseControlWindow::p ut \_ WindowStyle**](cbasecontrolwindow-put-windowstyle.md) y [**CBaseControlWindow::p ut \_ WindowStyleEx**](cbasecontrolwindow-put-windowstyleex.md) llaman a esta función miembro.
 
@@ -87,7 +87,7 @@ Esta función miembro llama a la función **SetWindowLong** de Win32 para establ
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

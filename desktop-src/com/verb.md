@@ -3,15 +3,15 @@ title: Verbo
 description: Especifica los verbos que se registrarán para una aplicación.
 ms.assetid: bfcad36d-a52a-4117-bf0b-6135b197a7ee
 keywords:
-- Com de clave del Registro de verbo
+- Com de clave del Registro de verbos
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5ef025ee0807ca3e75577f26f81951db22dfb0ac
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973591"
 ---
 # <a name="verb"></a>Verbo
 
@@ -30,7 +30,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
 
 ## <a name="remarks"></a>Observaciones
 
-Cada verbo es un **valor REG \_ SZ** con el formato "*name*, *menu \_ flag*, *verb \_ flag*". Los verbos se deben numerar consecutivamente.
+Cada verbo es un **valor REG \_ SZ** de la forma "*name*, *menu \_ flag*, *verb \_ flag*". Los verbos deben numerarse consecutivamente.
 
 El *nombre* describe cómo se anexa el verbo mediante una llamada de [**función AppendMenu.**](/windows/win32/api/winuser/nf-winuser-appendmenua) Por ejemplo, "&Play".
 
@@ -38,7 +38,7 @@ El *valor \_ de la* marca de menú indica cómo debe aparecer el verbo en el men
 
 El *valor \_ de marca* de verbo describe los atributos de los verbos. Use uno de los valores de [**OLEVERBATTRIB**](/windows/win32/api/oleidl/ne-oleidl-oleverbattrib)o 0.
 
-Para obtener más información, vea [**OLEVERB**](/windows/win32/api/oleidl/ns-oleidl-oleverb), [**IOleObject::D oVerb e**](/windows/desktop/api/OleIdl/nf-oleidl-ioleobject-doverb) [**IOleObject::EnumVerbs**](/windows/desktop/api/OleIdl/nf-oleidl-ioleobject-enumverbs).
+Para obtener más información, vea [**OLEVERB**](/windows/win32/api/oleidl/ns-oleidl-oleverb), [**IOleObject::D oVerb**](/windows/desktop/api/OleIdl/nf-oleidl-ioleobject-doverb)e [**IOleObject::EnumVerbs**](/windows/desktop/api/OleIdl/nf-oleidl-ioleobject-enumverbs).
 
 ## <a name="related-topics"></a>Temas relacionados
 

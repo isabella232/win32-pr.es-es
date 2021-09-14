@@ -4,16 +4,16 @@ description: Los niveles se usan para agrupar eventos y normalmente indican la g
 ms.assetid: dfa4e0a9-4d89-4f50-aef9-1dae0dc11726
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b3c3c5e663e476f98bef5c9be3f20cae5e0e88a74a7996f6f515d1d92599eb0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1c8e2e979e75057a77cca267e540b3ec5469562f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119863685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885537"
 ---
 # <a name="defining-severity-levels"></a>Definir niveles de gravedad
 
-Los niveles se usan para agrupar eventos y normalmente indican la gravedad o el nivel de detalle de un evento. Para definir un nivel, use el **elemento level.** El Winmeta.xml define los siguientes niveles de gravedad que se usan con frecuencia:
+Los niveles se usan para agrupar eventos y normalmente indican la gravedad o el nivel de detalle de un evento. Para definir un nivel, use el **elemento level.** El Winmeta.xml archivo define los siguientes niveles de gravedad usados habitualmente:
 
 -   win:Critical
 -   win:Error

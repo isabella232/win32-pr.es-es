@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cab33ac28153f2a22ef4ca07f4c7f83d700377909d404dbfe6d707037423f248
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24eeb4cdb5972f81e6dd66a812c9a38b61dcab91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118158457"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974002"
 ---
 # <a name="cbasecontrolwindowgetminidealimagesize-method"></a>Método CBaseControlWindow.GetMinIdealImageSize
 
@@ -61,11 +61,11 @@ Puntero al alto ideal mínimo, en píxeles.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Varios representadores tienen restricciones de rendimiento en cuanto al tamaño de las imágenes que pueden mostrar. Aunque seguirán funcionando correctamente cuando se les solicite para mostrar imágenes mayores que el máximo especificado, los representadores pueden designar los tamaños ideales mínimo y máximo a través de la interfaz [**IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Solo se puede llamar a esta interfaz cuando el gráfico de filtros está en pausa o en ejecución, porque no es hasta entonces cuando se asignan los recursos y el representador puede reconocer sus restricciones. Si no existen restricciones, el representador rellena los parámetros *pWidth* y *pHeight* con las dimensiones de vídeo nativas y devuelve S \_ FALSE. Si existen restricciones, se introducen el ancho y el alto restringidos, y la función miembro devuelve S \_ OK.
+Varios representadores tienen restricciones de rendimiento en cuanto al tamaño de las imágenes que pueden mostrar. Aunque seguirán funcionando correctamente cuando se les solicite para mostrar imágenes mayores que el máximo especificado, los representadores pueden designar los tamaños ideales mínimo y máximo a través de la interfaz [**IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Solo se puede llamar a esta interfaz cuando el gráfico de filtros está en pausa o en ejecución, porque no es hasta entonces cuando se asignan recursos y el representador puede reconocer sus restricciones. Si no existen restricciones, el representador rellena los parámetros *pWidth* y *pHeight* con las dimensiones de vídeo nativas y devuelve S \_ FALSE. Si existen restricciones, se introducen el ancho y el alto restringidos, y la función miembro devuelve S \_ OK.
 
-Las dimensiones se aplican al tamaño del vídeo de destino y no al tamaño total de la ventana. Por lo tanto, al calcular el tamaño de la ventana que se establece, debe tener en cuenta los estilos de ventana actuales (por ejemplo, WS \_ CAPTION y WS \_ BORDER).
+Las dimensiones se aplican al tamaño del vídeo de destino y no al tamaño general de la ventana. Por lo tanto, al calcular el tamaño de la ventana que se establece, debe tener en cuenta los estilos de ventana actuales (por ejemplo, WS \_ CAPTION y WS \_ BORDER).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,7 +78,7 @@ Las dimensiones se aplican al tamaño del vídeo de destino y no al tamaño tota
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

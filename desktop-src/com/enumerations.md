@@ -4,12 +4,12 @@ ms.assetid: 57faa6ef-76fa-4b81-8aae-aa3263b952fd
 description: 'Más información sobre: Enumeraciones (COM)'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c88b1f4d72d0d0770566d59212f1403c309a28aaa4b6703ed55f5fe8269224a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb24dc014342027a6f3a34c35b8eedfcf4c3a81c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973674"
 ---
 # <a name="enumerations-com"></a>Enumeraciones (COM)
 
@@ -33,7 +33,7 @@ COM proporciona las enumeraciones siguientes:
 -   [**FUNCIONALIDADES DE AUTENTICACIÓN DE EOLE \_ \_**](/windows/win32/api/objidlbase/ne-objidlbase-eole_authentication_capabilities)
 -   [**EXTCONN**](/windows/win32/api/objidlbase/ne-objidlbase-extconn)
 -   [**PROPIEDADES DE \_ GLOBALOPT**](/windows/win32/api/objidl/ne-objidl-globalopt_properties)
--   [**VALORES DE DIRECTIVA \_ DE DESMARQUE GLOBALOPT \_ \_**](/windows/win32/api/objidl/ne-objidl-globalopt_unmarshaling_policy_values)
+-   [**GLOBALOPT \_ UNMARSHALING \_ POLICY \_ VALUES**](/windows/win32/api/objidl/ne-objidl-globalopt_unmarshaling_policy_values)
 -   [**MKRREDUCE**](/windows/win32/api/objidl/ne-objidl-mkrreduce)
 -   [**MKSYS**](/windows/win32/api/objidl/ne-objidl-mksys)
 -   [**MSHCTX**](/windows/win32/api/wtypesbase/ne-wtypesbase-mshctx)

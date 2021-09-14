@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e7d136b5b3bbdcd8a6b21fcbd9f854de7a78a91be87a199c990e294ce8b28fb6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0081b4cec45ed4cac5b4f0883032631983824cec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119640485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973989"
 ---
 # <a name="cbasefiltergetpincount-method"></a>Método CBaseFilter.GetPinCount
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve el número de pines.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La clase derivada debe implementar este método virtual puro. Devuelve el número de pines que están disponibles actualmente en este filtro. Los filtros pueden crear o destruir de forma dinámica los pins.
+La clase derivada debe implementar este método virtual puro. Devuelve el número de pines que están disponibles actualmente en este filtro. Los filtros pueden crear o destruir pins dinámicamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ La clase derivada debe implementar este método virtual puro. Devuelve el númer
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

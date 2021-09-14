@@ -4,12 +4,12 @@ ms.assetid: 2d616b56-4b6a-4c3b-bbd8-d5ca03c4911f
 title: COM+ Services Primer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faa10e1fe951c883149f5870515839cfbece1b3cf919ecd043971d70a99d6e9c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9fd9d256b0213d3b1c58cae7d9670f87e4f4423
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119129037"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973523"
 ---
 # <a name="com-services-primer"></a>COM+ Services Primer
 

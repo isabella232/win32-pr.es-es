@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7e9cd1e7d5ae161ca2b66f59faee4252a8e1c02b0d4cd47d1db0aefb73dc53db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25548953ff624e88690c4a5a5bed4510a4236be6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074599"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973920"
 ---
 # <a name="cbasewindowm_windowstylesex-member"></a>Miembro CBaseWindow::m \_ WindowStylesEx
 
@@ -47,7 +47,7 @@ DWORD m_WindowStylesEx;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: La colección Roles siempre está relacionada con un objeto de la colección Applications. Contiene un objeto para cada rol asignado a la aplicación con la que está relacionado.
+description: La colección Roles siempre está relacionada con un objeto de la colección Applications. Contiene un objeto para cada rol asignado a la aplicación a la que está relacionado.
 ms.assetid: 87f39c2a-ad66-4390-9220-06751dcebd95
 title: Colección de roles
 ms.topic: reference
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 133477d82f718b992a628bde8af58f22d8d50a9e4974816c7c8f56be7ba8e33f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f676a53f5fe54e42ca2a489ad834b9c91e4e0ef5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120029475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973513"
 ---
 # <a name="roles-collection"></a>Colección de roles
 
-La **colección Roles** siempre está relacionada con un objeto de la [**colección**](applications.md) Applications. Contiene un objeto para cada rol asignado a la aplicación con la que está relacionado.
+La **colección Roles** siempre está relacionada con un objeto de la colección [**Applications.**](applications.md) Contiene un objeto para cada rol asignado a la aplicación a la que está relacionado.
 
 Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección Roles** hereda de la interfaz [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -40,11 +40,11 @@ Puede navegar desde esta colección a cualquiera de las siguientes colecciones:
 
 Puede navegar a esta colección desde las siguientes colecciones:
 
--   [**APLICACIONES**](applications.md)
+-   [**Aplicaciones**](applications.md)
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades dentro de la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
 
 -   [Descripción](#description)
 -   [Nombre](#name)
@@ -56,7 +56,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 | Entrada | Value |
 |----------------|----------------------------|
 | Descripción    | Descripción del rol. |
-| Access         | ReadWrite                  |
+| Acceso         | ReadWrite                  |
 | Tipo           | String                     |
 | Predeterminado        | ""                         |
 | Sistema mínimo | Windows 2000               |
@@ -72,7 +72,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Nombre del rol. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | WriteOnce                                                                                                                                                                                                                                                   |
+| Acceso         | WriteOnce                                                                                                                                                                                                                                                   |
 | Tipo           | String                                                                                                                                                                                                                                                      |
 | Predeterminado        | "Nuevo rol"                                                                                                                                                                                                                                                  |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                |
@@ -81,7 +81,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

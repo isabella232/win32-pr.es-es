@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1972533b86215e34563b9b1aa8f1b8ac3c14450b804fdae01ed7c7eafa78def4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: caa27dfe0190df15be1e41b7128c06249f1ae2b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120131245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973879"
 ---
 # <a name="cenumpinscenumpins-constructor"></a>Constructor CEnumPins.CEnumPins
 
@@ -57,7 +57,7 @@ Puntero a la [**interfaz IEnumPins**](/windows/desktop/api/Strmif/nn-strmif-ienu
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si *pEnumPins* es **NULL,** este método inicializa el enumerador al principio de la secuencia de enumeración. De lo contrario, duplica el estado interno del enumerador especificado por *pEnumPins*.
 
@@ -72,7 +72,7 @@ Si *pEnumPins* es **NULL,** este método inicializa el enumerador al principio d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

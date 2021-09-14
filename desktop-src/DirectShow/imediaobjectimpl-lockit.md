@@ -4,12 +4,12 @@ ms.assetid: f516ce22-17ad-488e-a768-3f3849c56087
 title: IMediaObjectImpl::LockIt (Clase, Dmoimpl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2c541fe73d36c29cf58944ba90a19a439d9c637ff3d378f3f6b0f436910ed0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24fe896ea293ec5e60b038f908cab794274d26e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117998184"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886793"
 ---
 # <a name="imediaobjectimpllockit-class"></a>IMediaObjectImpl::LockIt (Clase)
 
@@ -32,9 +32,9 @@ Puntero al objeto derivado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El `LockIt` constructor bloquea el DMO y el destructor desbloquea el DMO. Para bloquear el objeto desde dentro de la clase derivada, declare una variable local de tipo `LockIt` . El DMO está bloqueado mientras el `LockIt` objeto permanece en el ámbito:
+El constructor bloquea el DMO y el destructor desbloquea `LockIt` el DMO. Para bloquear el objeto desde dentro de la clase derivada, declare una variable local de tipo `LockIt` . El DMO está bloqueado mientras el `LockIt` objeto permanece en el ámbito:
 
 
 ```C++
@@ -64,7 +64,7 @@ Los métodos **de IMediaObjectImpl** bloquean automáticamente el DMO.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

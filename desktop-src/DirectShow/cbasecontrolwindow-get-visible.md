@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ef75aaf396e8677e9c470239d5dfca747729b534b67f8fef53a065280175f017
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3bc38a0b35f46de223ed84174c3b10f5300cc94d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017383"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974019"
 ---
 # <a name="cbasecontrolwindowget_visible-method"></a>Método CBaseControlWindow.get \_ Visible
 
@@ -53,7 +53,7 @@ Puntero a una marca booleana de Automation (0 está desactivado, 1 está on).
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro devuelve 1 si la ventana tiene el estilo VISIBLE de \_ WS; 0 en caso contrario.
 
@@ -68,7 +68,7 @@ Esta función miembro devuelve 1 si la ventana tiene el estilo VISIBLE de \_ WS;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

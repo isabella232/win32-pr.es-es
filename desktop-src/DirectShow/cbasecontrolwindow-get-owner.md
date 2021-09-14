@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3a64325fddebc410c5a75a5c2fb8811241012feb6a046b9059897f9b13e0206f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8f8e3d4a331dbc66397a7b0058fcefcede2cdbb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118660518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974021"
 ---
 # <a name="cbasecontrolwindowget_owner-method"></a>Método CBaseControlWindow.get \_ Owner
 
@@ -55,9 +55,9 @@ Devuelve un **valor HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-La ventana de vídeo puede reproducirse dentro de un entorno de documento. Para ello, la ventana debe ser un elemento secundario de otra ventana (para que se recorte y se mueve correctamente). Esta propiedad permite establecer y recuperar el propietario de la ventana. Cuando la ventana pertenece a otra ventana, simplemente llama a la función **SetParent** de Microsoft Win32. Una aplicación que llame a esta función cambiará los estilos de ventana para establecer el \_ bit CHILD de WS.
+La ventana de vídeo puede reproducirse dentro de un entorno de documento. Para ello, la ventana debe ser un elemento secundario de otra ventana (para que se recorte y se mueve correctamente). Esta propiedad permite establecer y recuperar el propietario de la ventana. Cuando la ventana es propiedad de otra ventana, simplemente llama a la función **SetParent** de Microsoft Win32. Una aplicación que llame a esta función cambiará los estilos de ventana para establecer el \_ bit SECUNDARIO de WS.
 
-Cuando la ventana es propiedad de otra ventana, reenviará automáticamente determinados conjuntos de mensajes (en particular, mensajes del mouse y del teclado). Esto permite que una aplicación realice una edición de acceso en caliente simple y otras interacciones.
+Cuando la ventana es propiedad de otra ventana, reenviará automáticamente determinados conjuntos de mensajes (en particular, mensajes de mouse y teclado). Esto permite que una aplicación realice una edición de acceso en caliente simple y otras interacciones.
 
 Esta función miembro está pensada para que la llamen objetos externos a través de la interfaz [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) y, por tanto, bloquea la sección crítica para sincronizarse con el filtro asociado. Llame a [**la función miembro CBaseControlWindow::GetOwnerWindow**](cbasecontrolwindow-getownerwindow.md) para recuperar esta propiedad si no llama a desde un objeto externo.
 
@@ -72,7 +72,7 @@ Esta función miembro está pensada para que la llamen objetos externos a travé
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

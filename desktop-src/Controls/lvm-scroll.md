@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 604ef35b6d7e62e626aa7cbee32c1563224794781275c470a1b3cd1727b926bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c05c3ed991cfc933a4436baf332b49c67a907b11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119019233"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974066"
 ---
 # <a name="lvm_scroll-message"></a>Mensaje LVM \_ SCROLL
 
@@ -47,9 +47,9 @@ Valor de tipo **int** que especifica la cantidad de desplazamiento vertical, en 
 
 Devuelve **TRUE si** se realiza correctamente; de lo contrario, **FALSE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando el control list-view está en la vista de informe, el control solo se puede desplazar verticalmente en incrementos de línea entera. Por lo tanto, *el parámetro lParam* se redondeará al número más cercano de píxeles que forman un incremento de línea completa. Por ejemplo, si el alto de una línea es de 16 píxeles y se pasa 8 para *lParam,* la lista se desplazará por 16 píxeles (1 línea). Si se pasa 7 para *lParam*, la lista se desplazará 0 píxeles (0 líneas).
+Cuando el control list-view está en la vista de informe, el control solo se puede desplazar verticalmente en incrementos de línea completa. Por lo tanto, *el parámetro lParam* se redondeará al número más cercano de píxeles que forman un incremento de línea completa. Por ejemplo, si el alto de una línea es de 16 píxeles y se pasa 8 para *lParam,* la lista se desplazará por 16 píxeles (1 línea). Si se pasa 7 para *lParam*, la lista se desplazará 0 píxeles (0 líneas).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Cuando el control list-view está en la vista de informe, el control solo se pue
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

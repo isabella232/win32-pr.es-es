@@ -4,12 +4,12 @@ description: Las enumeraciones siguientes se usan para implementar documentos co
 ms.assetid: daff8e11-c7b8-4f34-910c-5fabbbae8de9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 301e3b6cc78e5619a0340d5070a0bd674d805562a92efa42f49fb9a95f447634
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43214c221cbf80585358014a90237afaffd40457
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119382035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973675"
 ---
 # <a name="enumerations-ole-and-data-transfer"></a>Enumeraciones (OLE y transferencia de datos)
 
@@ -17,7 +17,7 @@ Las enumeraciones siguientes se usan para implementar documentos compuestos y re
 
 -   [**ACTIVATEFLAGS**](/windows/win32/api/ocidl/ne-ocidl-activateflags)
 -   [**ADVF**](/windows/win32/api/objidl/ne-objidl-advf)
--   [**Datadir**](/windows/win32/api/objidl/ne-objidl-datadir)
+-   [**DATADIR**](/windows/win32/api/objidl/ne-objidl-datadir)
 -   [**DISCARDCACHE**](/windows/win32/api/oleidl/ne-oleidl-discardcache)
 -   [**DOCMISC**](/windows/win32/api/docobj/ne-docobj-docmisc)
 -   [**DVASPECT**](/windows/win32/api/wtypes/ne-wtypes-dvaspect)

@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Números (WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f3441988bb91d4bb2f3742016f01cb69996e3dcb55081a6723d851ed74cc1cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ad348820e0294e76ba059a06b6daa6f1c916d8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118555155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973762"
 ---
 # <a name="numbers-wmi"></a>Números (WMI)
 
@@ -24,12 +24,12 @@ En MOF, los números son dígitos que describen valores numéricos. MOF proporci
 | **sint16** | **VT \_ I2**      | Entero de 16 bits con signo.<br/>                                                                                                                                       |
 | **sint32** | VT \_ I4          | Entero de 32 bits con signo.<br/>                                                                                                                                       |
 | **sint64** | **VT \_ BSTR**    | Entero de 64 bits con signo en forma de cadena. Este tipo sigue el formato hexadecimal o decimal según las American National Standards Institute (ANSI) de C.<br/> |
-| **real32** | **VT \_ R4**      | Valor de punto flotante de 4 bytes que sigue el estándar institute of Electrical and Electronics Engineers, Inc. (IEEE).<br/>                                        |
+| **real32** | **VT \_ R4**      | Valor de punto flotante de 4 bytes que sigue el estándar instituto de ingenieros eléctricos y electrónicos, Inc. (IEEE).<br/>                                        |
 | **real64** | **VT \_ R8**      | Valor de punto flotante de 8 bytes que sigue el estándar IEEE.<br/>                                                                                                  |
 | **uint8**  | **VT \_ UI1**     | Entero de 8 bits sin signo.<br/>                                                                                                                                      |
 | **uint16** | **VT \_ I4**      | Entero de 16 bits sin signo.<br/>                                                                                                                                     |
 | **uint32** | **VT \_ I4**      | Entero de 32 bits sin signo.<br/>                                                                                                                                     |
-| **uint64** | **VT \_ BSTR**    | Entero de 64 bits sin signo en forma de cadena. Este tipo sigue el formato hexadecimal o decimal según las reglas ansi C.<br/>                                           |
+| **uint64** | **VT \_ BSTR**    | Entero de 64 bits sin signo en forma de cadena. Este tipo sigue el formato hexadecimal o decimal según las reglas ANSI C.<br/>                                           |
 
 
 
@@ -49,7 +49,7 @@ Aunque es flexible, el código MOF encuentra algunos cambios al tratar con Autom
 
     Automation admite VT \_ UI1, un tipo de 8 bits sin signo.
 
-MOF admite constantes largas. Una constante larga se declara mediante una serie simple de dígitos con un signo negativo opcional. Una constante long no puede superar el tamaño de la variable declarada para contenerla. Algunos ejemplos de constantes largas son 1000 y 12310.
+MOF admite constantes largas. Una constante larga se declara mediante una serie simple de dígitos con un signo negativo opcional. Una constante larga no puede superar el tamaño de la variable declarada para contenerla. Algunos ejemplos de constantes largas son 1000 y 12310.
 
 MOF también admite formatos numéricos alternativos. En la tabla siguiente se enumeran los caracteres especiales que debe usar para describir las constantes hexadecimales, binarias y octales.
 
@@ -57,7 +57,7 @@ MOF también admite formatos numéricos alternativos. En la tabla siguiente se e
 
 | Constante               | Carácter especial     | Ejemplo                   |
 |------------------------|-----------------------|---------------------------|
-| Decimal<br/>     | Ninguno<br/>       | val = 65<br/>       |
+| Decimal<br/>     | None<br/>       | val = 65<br/>       |
 | Hexadecimal<br/> | Prefijo 0x<br/>  | val = 0x41<br/>     |
 | Octal<br/>       | Inicial 0<br/>  | val = 0101<br/>     |
 | Binary<br/>      | Final B<br/> | val = 1000001B<br/> |
@@ -74,7 +74,7 @@ Puede usar una constante de punto flotante para representar la notación cientí
 -1.2778E+02
 ```
 
-WMI considera constantes de punto flotante como **tipos VT \_ R8** para Automation.
+WMI considera constantes de punto flotante como **tipos \_ VT R8** para Automation.
 
 En el ejemplo siguiente se describen declaraciones de clase e instancia que muestran cómo usar cada uno de los tipos de datos numéricos para establecer propiedades:
 

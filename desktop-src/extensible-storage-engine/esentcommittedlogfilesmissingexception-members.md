@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101294
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: c9a09bd96a16247998b95c6de26f8538d25dd98e9fd019af0712a99cb73341b2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc52a0c8ebd724da2d8884746389782b04b8721e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118783040"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883633"
 ---
 # <a name="esentcommittedlogfilesmissingexception-members"></a>Miembros de EsentCommittedLogFilesMissingException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err.CommittedLogFilesMissing exceptionsing.
+Clase base para JET_err.CommittedLogFilesMissing exceptions.
 
-El [tipo EsentCommittedLogFilesMissingException](./esentcommittedlogfilesmissingexception-class.md) expone los miembros siguientes.
+El [tipo EsentCommittedLogFilesMissingException](./esentcommittedlogfilesmissingexception-class.md) expone los siguientes miembros.
 
 ## <a name="constructors"></a>Constructores
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

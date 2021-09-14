@@ -4,12 +4,12 @@ description: Las tareas se registran y ejecutan en un contexto de seguridad espe
 ms.assetid: be86eb9f-f6ec-4dce-afe8-e3314a74062a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb6f49ef07818b1fe729fa96a2b5e0712979a17f300e4f411f96cefd2f3917f9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 329f354518daeb11a5f330ae3fdc2c332b66d5c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886540"
 ---
 # <a name="security-contexts-for-tasks"></a>Contextos de seguridad para tareas
 
@@ -23,7 +23,7 @@ Se especifica una cuenta de usuario o un grupo al registrar una tarea o al espec
 
 Las tareas registradas con la marca TASK LOGON PASSWORD o \_ \_ TASK LOGON \_ S4U solo se iniciarán si el usuario especificado tiene habilitado el privilegio Iniciar sesión \_ como lote. Los usuarios del grupo Administradores y Operadores de copia de seguridad tienen este privilegio habilitado de forma predeterminada.
 
-Cuando se llama al método [**ITaskService::Conectar**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-connect) ([**TaskService.Conectar**](taskservice-connect.md) for scripting), las llamadas de método subsiguientes al servicio Programador de tareas usarán las credenciales que se pasaron al método **Conectar.** Esto es importante tener en cuenta al registrar tareas con un tipo de inicio de sesión interactivo. Cuando registra una tarea con el tipo de inicio de sesión igual a TASK LOGON INTERACTIVE TOKEN y la tarea no tiene credenciales especificadas en la propiedad Principal de la definición de tarea, especificadas en los parámetros \_ \_ para \_ [**RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)o [](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_principal) [](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask)especificadas en el XML que se pasa a RegisterTask , la tarea se registrará con las credenciales del usuario que llamó al método **Conectar.**
+Al llamar al método [**ITaskService::Conectar**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-connect) ([**TaskService.Conectar**](taskservice-connect.md) for scripting), las llamadas de método subsiguientes al servicio Programador de tareas usarán las credenciales que se pasaron al método **Conectar.** Esto es importante tener en cuenta al registrar tareas con un tipo de inicio de sesión interactivo. Cuando registra una tarea con el tipo de inicio de sesión igual a TASK LOGON INTERACTIVE TOKEN y la tarea no tiene credenciales especificadas en la propiedad Principal de la definición de tarea, especificadas en los parámetros \_ \_ para \_ [**RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)o [](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_principal) [](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask)especificadas en el XML que se pasa a RegisterTask , la tarea se registrará con las credenciales del usuario que llamó al método **Conectar.**
 
 ## <a name="user-account-control-uac-security-for-tasks"></a>Seguridad de Control de cuentas de usuario (UAC) para tareas
 

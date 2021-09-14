@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Método Api.TryGetLock'
+description: Más información sobre el método Api.TryGetLock
 title: Método Api.TryGetLock
 TOCTitle: 'TryGetLock method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.TryGetLock(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.GetLockGrbit)
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a6a8d4ac8b5b81b1238e7847846a1e95122bc53cf8912d591acb221d666d6e24
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ecd4e0e66226d438b4e5a78b2397f5637154096
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883777"
 ---
 # <a name="apitrygetlock-method"></a>Método Api.TryGetLock
 
@@ -84,18 +84,18 @@ public static bool TryGetLock(
   - grbit  
     Tipo: [Microsoft.Isam.Esent.Interop.GetLockGrbit](./getlockgrbit-enumeration.md)  
     
-    Opciones de bloqueo, úsese esta opción para especificar qué tipo de bloqueo se va a obtener.
+    Opciones de bloqueo, úsese esta opción para especificar el tipo de bloqueo que se va a obtener.
 
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si se obtuvo el bloqueo; de lo contrario, false. Se produce una excepción si se encuentra un error inesperado.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

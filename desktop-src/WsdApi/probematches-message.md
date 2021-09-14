@@ -5,24 +5,24 @@ title: Mensaje ProbeMatches
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 813549091edc6cbb1202d746c7a7f62ecf3e03b5
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973684"
 ---
 # <a name="probematches-message"></a>Mensaje ProbeMatches
 
-Un mensaje ProbeMatches es WS-Discovery mensaje enviado por un servicio en respuesta al mensaje probe de [un](probe-message.md) cliente. Para obtener más información sobre los mensajes ProbeMatches, vea la sección 5.3 de la [especificación de WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
+Un mensaje ProbeMatches es WS-Discovery mensaje enviado por un servicio en respuesta al mensaje probe de [un](probe-message.md) cliente. Para obtener más información sobre los mensajes ProbeMatches, vea la sección 5.3 de [la especificación de WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
-El unidifusión UDP envía un mensaje ProbeMatches al puerto desde el que se envió el mensaje [probe](probe-message.md) del cliente. ProbeMatches debe enviarse en un plazo de 4 segundos desde el mensaje probe; De lo contrario, Windows firewall puede quitar el paquete.
+Unidifusión UDP envía un mensaje ProbeMatches al puerto desde el que se envió el mensaje [probe](probe-message.md) del cliente. ProbeMatches debe enviarse en un plazo de 4 segundos después del mensaje probe; De lo contrario, Windows Firewall puede quitar el paquete.
 
-Si no se incluye ningún XAddrs en el mensaje ProbeMatches, el cliente puede enviar un mensaje [resolve](resolve-message.md) mediante multidifusión UDP al puerto 3702. El cliente solo enviará un mensaje Resolver cuando [](get--metadata-exchange--http-request-and-message.md) se envíe un mensaje HTTP (como una solicitud de intercambio de metadatos Get o un mensaje de servicio).
+Si no se incluye ningún XAddrs en el mensaje ProbeMatches, el cliente puede enviar un mensaje [resolver](resolve-message.md) por multidifusión UDP al puerto 3702. El cliente solo enviará un mensaje Resolver cuando se envíe un mensaje HTTP (como una solicitud [de](get--metadata-exchange--http-request-and-message.md) intercambio de metadatos Get o un mensaje de servicio).
 
 Cualquier aplicación DPWS que envíe mensajes [de](probe-message.md) sondeo recibirá mensajes ProbeMatches.
 
 > [!Note]  
-> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la herramienta de interoperabilidad básica de [WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
+> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la [herramienta de interoperabilidad básica WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
 
  
 
@@ -102,7 +102,7 @@ Un mensaje ProbeMatches tiene los siguientes puntos de enfoque.
 <td><pre class="syntax" data-space="preserve"><code>&lt;wsa:RelatesTo&gt;
     urn:uuid:29cf10da-5c41-4d55-b184-5ee15e38ce23
 &lt;/wsa:RelatesTo&gt;</code></pre></td>
-<td>Identificador del mensaje al que responde el servicio. Este encabezado coincide con el MessageId del <a href="probe-message.md">mensaje de</a> sondeo.</td>
+<td>Identificador del mensaje al que responde el servicio. Este encabezado coincide con messageId en el <a href="probe-message.md">mensaje de</a> sondeo.</td>
 </tr>
 <tr class="odd">
 <td>AppSequence</td>
@@ -110,7 +110,7 @@ Un mensaje ProbeMatches tiene los siguientes puntos de enfoque.
     SequenceId=&quot;urn:uuid:369a7d7b-5f87-48a4-aa9a-189edf2a8772&quot;
     MessageNumber=&quot;9&quot;>
 &lt;/wsd:AppSequence&gt;</code></pre></td>
-<td>Contiene información de secuenciación de la aplicación, que ayuda a mantener la secuencia de mensajes incluso si se reciben sin orden. AppSequence se valida como se describe en <a href="appsequence-validation-rules.md">Reglas de validación de AppSequence</a>.</td>
+<td>Contiene información de secuenciación de aplicaciones, que ayuda a mantener la secuencia de mensajes incluso si se reciben sin orden. AppSequence se valida como se describe en <a href="appsequence-validation-rules.md">Reglas de validación de AppSequence</a>.</td>
 </tr>
 <tr class="even">
 <td>Dirección</td>
@@ -124,7 +124,7 @@ Un mensaje ProbeMatches tiene los siguientes puntos de enfoque.
 <td><pre class="syntax" data-space="preserve"><code>&lt;wsd:XAddrs&gt;
     https://192.168.0.2:5357/37f86d35-e6ac-4241-964f-1d9ae46fb366
 &lt;/wsd:XAddrs&gt;</code></pre></td>
-<td>XAddrs son direcciones de transporte que se pueden usar para la comunicación entre el cliente y el servicio. Los adidores se validan como se describe <a href="xaddr-validation-rules.md">en Reglas de validación de XAddr</a>.</td>
+<td>XAddrs son direcciones de transporte que se pueden usar para la comunicación entre el cliente y el servicio. Los agregarres se validan como se describe en <a href="xaddr-validation-rules.md">Reglas de validación de XAddr</a>.</td>
 </tr>
 </tbody>
 </table>

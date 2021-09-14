@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4afa6fe382bfbeca400a4862f60572cb24a59006eeacb40b68b9f281f309b590
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f4dd94e7ef2ac3970fe652f4b7a3ad7117f047e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074429"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973900"
 ---
 # <a name="ccmdqueueccmdqueue-constructor"></a>Constructor CCmdQueue.CCmdQueue
 
@@ -51,7 +51,7 @@ Este constructor no tiene parámetros.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

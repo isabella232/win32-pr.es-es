@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3818ef4356f11a2d003abe4e9442c4de06108aa32e50f480a3d097ea5db0c343
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2bbef9b051a42597b2585a432f544eead4e2e0a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119017193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973998"
 ---
 # <a name="cbasefilterfindpin-method"></a>Método CBaseFilter.FindPin
 
-El `FindPin` método recupera el pin con el identificador especificado. Este método implementa el [**método IBaseFilter::FindPin.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-findpin)
+El `FindPin` método recupera el pin con el identificador especificado. Este método implementa el método [**IBaseFilter::FindPin.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-findpin)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,7 +73,7 @@ Devuelve uno de los siguientes **valores HRESULT.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método llama al [**método CBasePin::Name**](cbasepin-name.md) para comparar el nombre de cada pin con la cadena especificada por el *parámetro Id.*
 
@@ -90,7 +90,7 @@ Si el método se realiza correctamente, la **interfaz IPin** tiene un recuento d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

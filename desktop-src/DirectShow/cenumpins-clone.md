@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a0d14f0caf30f6037d53639ff54d2e21d6d0fb0eee5cfa493aba248e84d48e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2aa3e4604b260779a5d203e75e8e0790a7378b11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973880"
 ---
 # <a name="cenumpinsclone-method"></a>Método CEnumPins.Clone
 
@@ -59,7 +59,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | Correcto.<br/>                                                                    |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>              | Memoria insuficiente.<br/>                                                        |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>                  | Argumento de puntero **NULL.**<br/>                                                  |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>                  | **Argumento de** puntero NULL.<br/>                                                  |
 | <dl> <dt>**VFW \_ E \_ ENUM \_ OUT \_ OF \_ SYNC**</dt> </dl> | El estado del filtro ha cambiado y ahora es incoherente con el enumerador.<br/> |
 
 
@@ -77,7 +77,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

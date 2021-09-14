@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: c4e80edf41a83f205747c269cad98e4f5175030a
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982848"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887457"
 ---
 # <a name="jet_instance"></a>JET_INSTANCE
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_instance"></a>JET_INSTANCE
 
-El **JET_INSTANCE** de datos contiene un identificador para la instancia de la base de datos que se usará para una llamada a la API jet.
+El **JET_INSTANCE** tipo de datos contiene un identificador para la instancia de la base de datos que se usará para una llamada a la API jet.
 
 ```cpp
     typedef JET_API_PTR JET_INSTANCE;
@@ -39,7 +39,7 @@ El **JET_INSTANCE** de datos contiene un identificador para la instancia de la b
 
 JET_INSTANCE
 
-Null **o** [JET_instanceNil](./invalid-handle-constants.md) pueden usarse para indicar un identificador de instancia no válido.
+Null **o** [JET_instanceNil](./invalid-handle-constants.md) se pueden usar para indicar un identificador de instancia no válido.
 
 ### <a name="remarks"></a>Observaciones
 

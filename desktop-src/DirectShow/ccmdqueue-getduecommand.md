@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f6e7c8d133537dc2b185c755e65f3a4febbee762c5c2306de37ad0c627434df7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a1297a3f0d514215270acf7e73b18cba46fca1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973901"
 ---
 # <a name="ccmdqueuegetduecommand-method"></a>Método CCmdQueue.GetDueCommand
 
@@ -61,7 +61,7 @@ Cantidad de tiempo de espera antes de llevar a cabo el tiempo de espera.
 
 Devuelve E \_ ABORT si se produce un tiempo de espera. Devuelve S \_ OK si se realiza correctamente; de lo contrario, devuelve un error. Devuelve un objeto que se ha incrementado mediante **IUnknown::AddRef**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro se bloquea hasta que se debe un comando pendiente. La función miembro se bloquea durante la cantidad de tiempo, en milisegundos, especificada en el *parámetro msTimeout.* Los comandos en tiempo de secuencia solo se deben entre las funciones miembro [**CCmdQueue::Run**](ccmdqueue-run.md) y [**CCmdQueue::EndRun.**](ccmdqueue-endrun.md) El comando permanece en cola hasta que se ejecuta o se cancela.
 
@@ -76,7 +76,7 @@ Esta función miembro se bloquea hasta que se debe un comando pendiente. La func
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

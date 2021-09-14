@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4c7166f981c0351054a2a6c359127a4ce1959b45a6e71c44db9e2546825bc5f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4fdc0998bfda2144e900c099919bc75c01e8ee3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119496105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884444"
 ---
 # <a name="d3dxchecktexturerequirements-function"></a>Función D3DXCheckTextureRequirements
 
@@ -105,7 +105,7 @@ Puntero a un miembro del [tipo enumerado D3DFORMAT.](d3dformat.md) Especifica el
 
 Tipo: **[ **D3DPOOL**](./d3dpool.md)**
 
-Miembro del [**tipo enumerado D3DPOOL,**](./d3dpool.md) que describe la clase de memoria en la que se debe colocar la textura.
+Miembro del tipo [**enumerado D3DPOOL,**](./d3dpool.md) que describe la clase de memoria en la que se debe colocar la textura.
 
 </dd> </dl>
 
@@ -115,14 +115,14 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DERR \_ NOTAVAILABLE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si los parámetros de esta función no son válidos, esta función devuelve los parámetros corregidos.
 
 Esta función usa la heurística siguiente al comparar los requisitos solicitados con los formatos disponibles:
 
 -   No elija un formato que tenga menos canales.
--   Evite [los formatos FOURCC](d3dformat.md) y de 24 bits a menos que se soliciten explícitamente.
+-   Evite [los formatos FOURCC](d3dformat.md) y de 24 bits a menos que se solicite explícitamente.
 -   Intente no agregar nuevos canales.
 -   Intente no cambiar el número de bits por canal.
 -   Intente evitar la conversión entre tipos de formatos. Por ejemplo, evite convertir un formato ARGB a un formato de profundidad.
@@ -138,7 +138,7 @@ Esta función usa la heurística siguiente al comparar los requisitos solicitado
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

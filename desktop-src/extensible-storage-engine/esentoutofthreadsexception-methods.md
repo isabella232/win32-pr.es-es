@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102455
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 33c33c109cf70ca4dc4a68bc8c51973627b00f10688e2df44288b98010abcad5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 875afd159c4384d77362cc7ff8bd5786e65207ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120018885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883196"
 ---
 # <a name="esentoutofthreadsexception-methods"></a>Métodos de EsentOutOfThreadsException 
 
@@ -78,7 +78,7 @@ El [tipo EsentOutOfThreadsException](./esentoutofthreadsexception-class.md) expo
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

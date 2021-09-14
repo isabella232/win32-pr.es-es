@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Método Api.SetColumns'
+description: Más información sobre el método Api.SetColumns
 title: Método Api.SetColumns
 TOCTitle: 'SetColumns method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.SetColumns(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.ColumnValue[])
@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b7d1fa66826fc32c02d8a33fb42d86e1ad0ca62941c52c8cc432fadb10a99466
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f4ed75c668c0000c1d01d521a57ead46055bc8e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883785"
 ---
 # <a name="apisetcolumns-method"></a>Método Api.SetColumns
 
-Establece columnas a partir de objetos ColumnValue.
+Establece columnas de objetos ColumnValue.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -84,11 +84,11 @@ public static void SetColumns(
     
     Valores que se establecerán.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

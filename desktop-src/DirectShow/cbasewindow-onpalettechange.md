@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c881c519706ca0288847a7dc603cf513a99cdd76e4c83f0e53bec16df840e509
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9abcb2d9f5cdc875f70f5c1db1fd2f625ce911f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118657958"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973919"
 ---
 # <a name="cbasewindowonpalettechange-method"></a>Método CBaseWindow.OnPaletteChange
 
@@ -76,7 +76,7 @@ Este método controla los mensajes \_ WM PALETTECHANGED y WM \_ QUERYNEWPALETTE.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

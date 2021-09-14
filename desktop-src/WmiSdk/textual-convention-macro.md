@@ -1,53 +1,53 @@
 ---
-description: Las convenciones de texto de SNMP se asignan a tipos definidos por CIM.
+description: Las convenciones textuales de SNMP se asignan a tipos definidos por CIM.
 ms.assetid: 73bb6c22-0a68-4a4b-8de2-8326ec67a059
 ms.tgt_platform: multiple
-title: Macro de Convención de texto
+title: TEXTUAL-CONVENTION (Macro)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 329508ce3d124c0b3954675b3142aeb33c402923
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706031"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973710"
 ---
-# <a name="textual-convention-macro"></a>Macro de Convención de texto
+# <a name="textual-convention-macro"></a>TEXTUAL-CONVENTION (Macro)
 
-Las convenciones de texto de SNMP se asignan a tipos definidos por CIM.
+Las convenciones textuales de SNMP se asignan a tipos definidos por CIM.
 
 > [!Note]  
-> Para obtener más información acerca de cómo instalar el proveedor, consulte [configuración del entorno WMI SNMP](setting-up-the-wmi-snmp-environment.md).
+> Para obtener más información sobre cómo instalar el proveedor, vea [Configuración del entorno SNMP de WMI.](setting-up-the-wmi-snmp-environment.md)
 
  
 
-Las siguientes reglas de asignación se aplican a las convenciones de texto de SNMP:
+Las siguientes reglas de asignación se aplican a las convenciones textuales de SNMP:
 
--   La definición de tipo con nombre de la cláusula de sintaxis se asigna literalmente a **la \_ Sintaxis de objeto** de calificador de propiedad CIM.
--   Use la tabla siguiente para asignar convenciones de texto cuando la cláusula de sintaxis hace referencia de forma explícita a una Convención textual de una macro de Convención de texto SNMPv2C o hace referencia a una Convención textual implícita. El valor predeterminado es siempre **null**.
+-   La definición de tipo con nombre de la cláusula SYNTAX asigna textualmente a la sintaxis del objeto calificador de **\_ propiedad** CIM .
+-   Use la tabla siguiente para asignar convenciones textuales cuando la cláusula SYNTAX hace referencia explícitamente a una convención textual de una macro TEXTUAL-CONVENTION de SNMPv2C o hace referencia a una convención de texto implícita. El valor predeterminado es siempre **NULL.**
 
 
 
-| Convención textual | Tipo de variante CIM | Calificador de CIM                                                                                                                                                        |
+| Convención textual | Tipo de variante CIM | Calificador CIM                                                                                                                                                        |
 |--------------------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DateAndTime        | **VT \_ BSTR**     | **\_ Convención textual**: DateAndTime<br/> **codificación**: OCTETSTRING<br/> **\_ Sintaxis de objeto**: DateAndTime<br/> **CIMTYPE**: cadena<br/>       |
-| Displaystring      | **VT \_ BSTR**     | **\_ Convención textual**: Displaystring<br/> **codificación**: OCTETSTRING<br/> **\_ Sintaxis de objeto**: Displaystring<br/> **CIMTYPE**: cadena<br/>   |
-| MacAddress         | **VT \_ BSTR**     | **\_ Convención textual**: MacAddress<br/> **codificación**: OCTETSTRING<br/> **\_ Sintaxis de objeto**: MacAddress<br/> **CIMTYPE**: cadena<br/>         |
-| PhysAddress        | **VT \_ BSTR**     | **\_ Convención textual**: PhysAddress<br/> **codificación**: OCTETSTRING<br/> **\_ Sintaxis de objeto**: PhysAddress<br/> **CIMTYPE**: cadena<br/>       |
-| SnmpUDPAddress     | **VT \_ BSTR**     | **\_ Convención textual**: SnmpUDPAddress<br/> **codificación**: OCTETSTRING<br/> **\_ Sintaxis de objeto**: SnmpUDPAddress<br/> **CIMTYPE**: cadena<br/> |
-| SnmpOSIAddress     | **VT \_ BSTR**     | **\_ Convención textual**: SnmpOSIAddress<br/> **codificación**: OCTETSTRING<br/> **\_ Sintaxis de objeto**: SnmpOSIAddress<br/> **CIMTYPE**: cadena<br/> |
-| SnmpIPXAddress     | **VT \_ BSTR**     | **\_ Convención textual**: SnmpIPXAddress<br/> **codificación**: OCTETSTRING<br/> **\_ Sintaxis de objeto**: SnmpIPXAddress<br/> **CIMTYPE**: cadena<br/> |
+| DateAndTime        | **VT \_ BSTR**     | **convención \_ textual:** DateAndTime<br/> **encoding:** OCTETSTRING<br/> **Sintaxis \_ de objeto**: DateAndTime<br/> **cimtype**: string<br/>       |
+| Displaystring      | **VT \_ BSTR**     | **convención \_ textual:** Displaystring<br/> **encoding:** OCTETSTRING<br/> **Sintaxis \_ de objeto:** Displaystring<br/> **cimtype**: string<br/>   |
+| MacAddress         | **VT \_ BSTR**     | **convención \_ textual:** MacAddress<br/> **encoding:** OCTETSTRING<br/> **Sintaxis \_ de objeto:** MacAddress<br/> **cimtype**: string<br/>         |
+| PhysAddress        | **VT \_ BSTR**     | **convención \_ textual:** PhysAddress<br/> **encoding:** OCTETSTRING<br/> **Sintaxis \_ de objeto**: PhysAddress<br/> **cimtype**: string<br/>       |
+| SnmpUDPAddress     | **VT \_ BSTR**     | **convención \_ textual:** SnmpUDPAddress<br/> **encoding:** OCTETSTRING<br/> **Sintaxis \_ de objeto:** SnmpUDPAddress<br/> **cimtype**: string<br/> |
+| SnmpOSIAddress     | **VT \_ BSTR**     | **convención \_ textual:** SnmpOSIAddress<br/> **encoding:** OCTETSTRING<br/> **Sintaxis \_ de objeto:** SnmpOSIAddress<br/> **cimtype**: string<br/> |
+| SnmpIPXAddress     | **VT \_ BSTR**     | **convención \_ textual:** SnmpIPXAddress<br/> **encoding:** OCTETSTRING<br/> **Sintaxis \_ de objeto:** SnmpIPXAddress<br/> **cimtype**: string<br/> |
 
 
 
  
 
--   El tipo Variant definido por CIM y los calificadores de propiedad CIM, la **\_ Convención textual**, la **codificación**, la **\_ Sintaxis de objeto** y la asignación **CIMTYPE** mediante el tipo primitivo subyacente.
--   La cláusula DISPLAY-HINT de la macro de Convención de texto SNMPv2C se asigna literalmente a la **\_ sugerencia de presentación** del calificador de propiedad CIM. Este calificador no se genera si no hay ninguna macro de Convención de texto o la macro no contiene una cláusula de sugerencia de presentación.
+-   El tipo de variante definido por CIM y los calificadores de propiedad CIM textual convención **, \_** codificación **,** sintaxis de objeto **y \_** **asignación cimtype** mediante el tipo primitivo subyacente.
+-   La cláusula DISPLAY-HINT de la macro TEXTUAL-CONVENTION de SNMPv2C asigna textualmente a la sugerencia para mostrar del calificador **de \_ propiedad CIM**. Este calificador no se genera si no hay ninguna macro TEXTUAL-CONVENTION o la macro no contiene una cláusula DISPLAY-HINT.
 
 ## <a name="example-code"></a>Código de ejemplo
 
-En el siguiente ejemplo se describe una Convención textual de SNMPv1.
+En el ejemplo siguiente se describe una convención textual SNMPv1.
 
 ``` syntax
 myNamedType ::= DISPLAYSTRING (SIZE (0..127))
@@ -59,7 +59,7 @@ STATUS MANDATORY
 DESCRIPTION ""
 ```
 
-Este ejemplo genera los siguientes calificadores CIM.
+En este ejemplo se generan los siguientes calificadores CIM.
 
 ``` syntax
 object_syntax("myNamedType"),
@@ -68,7 +68,7 @@ encoding("OCTETSTRING"),
 variable_length("0..127")
 ```
 
-En el siguiente ejemplo se describe una Convención textual de SNMPv2.
+En el ejemplo siguiente se describe una convención textual SNMPv2.
 
 ``` syntax
 myDisplaystring ::= TEXTUAL-CONVENTION
@@ -84,7 +84,7 @@ STATUS current
 DESCRIPTION ""
 ```
 
-Este ejemplo genera los siguientes calificadores CIM.
+En este ejemplo se generan los siguientes calificadores CIM.
 
 ``` syntax
 object_syntax("myDisplaystring"),

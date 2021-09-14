@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33b85b83e8df1e29eedcfa5c9b5aac38d962d0787a497c03a901de943f5cbc91
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b23f0e8d1d87e2cc7dd60d32ac3dd4943611a36f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974083"
 ---
 # <a name="lvm_getselectedcount-message"></a>Mensaje DE \_ LVM GETSELECTEDCOUNT
 
@@ -47,7 +47,7 @@ Devuelve el número de elementos seleccionados.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

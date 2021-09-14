@@ -7,7 +7,7 @@ keywords:
 - Windows Interfaz de usuario,datos dinámicos Exchange Management Library (DDEML)
 - datos dinámicos Exchange (DDE),interacción del servidor cliente
 - DDE (datos dinámicos Exchange),interacción del servidor cliente
-- intercambio de datos,datos dinámicos Exchange (DDE)
+- intercambio de datos, datos dinámicos Exchange (DDE)
 - intercambio de datos,datos dinámicos Exchange Management Library (DDEML)
 - datos dinámicos Exchange (DDE),aplicaciones cliente
 - DDE (datos dinámicos Exchange),aplicaciones cliente
@@ -25,24 +25,24 @@ keywords:
 - DDE (datos dinámicos Exchange),nombres de tema
 - datos dinámicos Exchange (DDE),Tema del sistema
 - DDE (datos dinámicos Exchange),Tema del sistema
-- datos dinámicos Exchange Management Library (DDEML),initialization
-- DDEML (datos dinámicos Exchange management library),initialization
+- datos dinámicos Exchange management library (DDEML),initialization
+- DDEML (biblioteca datos dinámicos Exchange administración), inicialización
 - datos dinámicos Exchange Management Library (DDEML), funciones de devolución de llamada
-- DDEML (biblioteca datos dinámicos Exchange administración de eventos), funciones de devolución de llamada
+- DDEML (biblioteca datos dinámicos Exchange administración), funciones de devolución de llamada
 - datos dinámicos Exchange Management Library (DDEML), administración de cadenas
 - DDEML (biblioteca datos dinámicos Exchange administración de cadenas), administración de cadenas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fae271c359afd571cf6c51fb3387a15f1496416e5eb54b055ef518fd213f30fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c564bffbcbb06ddc3a0e0fa4e0a9ed398d3ca55
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119128627"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884905"
 ---
 # <a name="basic-concepts-dde"></a>Conceptos básicos (DDE)
 
-Estos conceptos son clave para comprender datos dinámicos Exchange (DDE) y datos dinámicos Exchange Management Library (DDEML).
+Estos conceptos son clave para comprender datos dinámicos Exchange (DDE) y la biblioteca datos dinámicos Exchange Management Library (DDEML).
 
 -   [Interacción de cliente y servidor](#client-and-server-interaction)
 -   [Transacciones y la función de devolución de llamada DDE](#transactions-and-the-dde-callback-function)
@@ -101,7 +101,7 @@ Un servidor debe admitir los siguientes nombres de elemento dentro del tema Sist
 
  
 
-Estos nombres de elemento son valores definidos en DDEML. Archivo de encabezado H. Para obtener identificadores de cadena para estas cadenas, una aplicación debe usar las funciones de administración de cadenas DDEML, como lo haría con cualquier otra cadena de una aplicación DDEML. Para obtener más información sobre cómo administrar cadenas, vea [Administración de cadenas.](#string-management)
+Estos nombres de elemento son valores definidos en DDEML. Archivo de encabezado H. Para obtener identificadores de cadena para estas cadenas, una aplicación debe usar las funciones de administración de cadenas DDEML, como lo haría con cualquier otra cadena de una aplicación DDEML. Para obtener más información sobre la administración de cadenas, vea [Administración de cadenas.](#string-management)
 
 ## <a name="initialization"></a>Inicialización
 

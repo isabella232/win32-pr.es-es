@@ -1,7 +1,7 @@
 ---
 description: Puntero al pin que está conectado a este pin.
 ms.assetid: 358f17d4-fc27-4fb2-b18a-f384fbca40a0
-title: Miembro CBasePin::m_Connected (Amfilter.h)
+title: CBasePin::m_Connected miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c58607ac16d5d67dd30a2d652da40b89ab15d446da799091434a7918ce781eb0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eab47440f54435953978aea35c62de8ca1b085ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973968"
 ---
-# <a name="cbasepinm_connected-member"></a>Miembro conectado CBasePin::m \_
+# <a name="cbasepinm_connected-member"></a>CBasePin::m \_ Connected member
 
 Puntero al pin que está conectado a este pin.
 
@@ -47,7 +47,7 @@ IPin *m_Connected;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

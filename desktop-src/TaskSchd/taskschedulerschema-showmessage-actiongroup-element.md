@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 474bc44550408591616d3a8d2c6c3c69a5a0d073c90297c60b4a831627c996e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a1344aadfa5fe67e411048bac2a83330ea704c50
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118611303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886436"
 ---
 # <a name="showmessage-actiongroup-element"></a>Elemento ShowMessage (actionGroup)
 
@@ -59,7 +59,7 @@ Para el desarrollo de scripting, se especifica una acción de cuadro de mensaje 
 
 Para el desarrollo de C++, se especifica una acción de cuadro de mensaje mediante la [**interfaz IShowMessageAction.**](/windows/desktop/api/taskschd/nn-taskschd-ishowmessageaction)
 
-**Windows 8 y Windows Server 2012:** Este elemento se ha quitado. Puede usar IExecAction con la función Windows [**msgBox de scripting**](/previous-versions/sfw6660x(v=vs.80)) para mostrar un mensaje en la sesión de usuario.
+**Windows 8 y Windows Server 2012:** Este elemento se ha quitado. Puede usar IExecAction con la función Windows scripting [**MsgBox**](/previous-versions/sfw6660x(v=vs.80)) para mostrar un mensaje en la sesión de usuario.
 
 ## <a name="examples"></a>Ejemplos
 

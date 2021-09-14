@@ -4,12 +4,12 @@ ms.assetid: 0c858567-e17a-46a0-b3ff-a0dc8089b0cd
 title: elemento autoStatic
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f6b9a447e964c90354c909fc0399276d8ed69e7d1dfb3a493d5590a6470d0cd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9414470f56021d475fb7cf52e570ac2793228445
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117738678"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973706"
 ---
 # <a name="autostatic-element"></a>elemento autoStatic
 
@@ -39,9 +39,9 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **elemento autoStatic** no es necesario y se puede omitir en el archivo de configuración XML. El elemento se puede usar para deshabilitar la marcación de los campos generados como estáticos o para forzar explícitamente la marcación de determinados campos generados como estáticos.
+El **elemento autoStatic** no es necesario y se puede omitir en el archivo de configuración XML. El elemento se puede usar para deshabilitar la marcación de campos generados como estáticos o para forzar explícitamente la marcación de determinados campos generados como estáticos.
 
 Los valores posibles son 1 (habilitado, predeterminado) y 0 (deshabilitado). La **habilitación de autoStatic** puede provocar problemas de compilación en función de cómo se dirija el generador de código a los datos de salida.
 

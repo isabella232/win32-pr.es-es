@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Registro de un proveedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 265d3a9f8617c68793fc30c0dc23fd3e9f0106ee98a9e3c757754e2fe589dda8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53592ecb452de1b6071cbb8f59cfaaef42b57f1b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119995925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973752"
 ---
 # <a name="registering-a-provider"></a>Registro de un proveedor
 

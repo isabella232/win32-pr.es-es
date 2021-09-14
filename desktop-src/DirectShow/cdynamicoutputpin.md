@@ -16,20 +16,20 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6e0b8903f83c372aa85bd1c41fb12ce9065798d79dc4dbd940df926a395f8bc9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 54c6dab41c122456076299df22bf90d886c905cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119871805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973898"
 ---
 # <a name="cdynamicoutputpin-class"></a>CDynamicOutputPin (clase)
 
 La `CDynamicOutputPin` clase implementa un pin de salida que admite reconexiones dinámicas y cambios de formato.
 
-Esta clase se deriva de la [**clase CBaseOutputPin**](cbaseoutputpin.md) e implementa la [**interfaz IPinFlowControl.**](/windows/desktop/api/Strmif/nn-strmif-ipinflowcontrol) Admite varias operaciones que son importantes para la creación dinámica de grafos:
+Esta clase deriva de la [**clase CBaseOutputPin**](cbaseoutputpin.md) e implementa la [**interfaz IPinFlowControl.**](/windows/desktop/api/Strmif/nn-strmif-ipinflowcontrol) Admite varias operaciones que son importantes para la creación dinámica de grafos:
 
--   Reconexión dinámica: el pin puede desconectarse y volver a conectarse mientras el filtro sigue activo (en pausa o en ejecución).
+-   Reconexión dinámica: el pin se puede desconectar y volver a conectar mientras el filtro sigue activo (en pausa o en ejecución).
 -   Cambio de formato dinámico: el pin puede negociar un nuevo tipo de medio mientras el filtro sigue activo, sin volver a conectarse.
 -   Flow control: el filtro propietario (o una aplicación) puede bloquear el flujo de datos desde el pin sin detener el filtro.
 
@@ -37,7 +37,7 @@ Para obtener más información, vea [Dynamic Graph Building](dynamic-graph-build
 
 El pin tiene tres estados posibles: bloqueado, desbloqueado y pendiente. En el *estado pendiente,* el pin está esperando a que se complete alguna operación en otro subproceso, antes de que el pin pase al estado bloqueado. Mientras el pin está bloqueado, el filtro no puede entregar datos a través del pin ni cambiar la conexión del pin.
 
-Para coordinar entre varios subprocesos, el filtro propietario debe seguir ciertas reglas. (Para obtener más información sobre los subprocesos en el gráfico de filtros, vea [Subprocesos y secciones críticas).](threads-and-critical-sections.md) En primer lugar, el subproceso de streaming siempre debe llamar al método [**CDynamicOutputPin::StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) antes de llamar a cualquiera de los métodos siguientes:
+Para coordinar entre varios subprocesos, el filtro propietario debe seguir determinadas reglas. (Para obtener más información sobre los subprocesos en el gráfico de filtros, vea [Subprocesos y secciones críticas).](threads-and-critical-sections.md) En primer lugar, el subproceso de streaming siempre debe llamar al método [**CDynamicOutputPin::StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) antes de llamar a cualquiera de los métodos siguientes:
 
 -   [**CDynamicOutputPin::ChangeOutputFormat**](cdynamicoutputpin-changeoutputformat.md)
 -   [**CDynamicOutputPin::ChangeMediaType**](cdynamicoutputpin-changemediatype.md)
@@ -52,38 +52,38 @@ Para coordinar entre varios subprocesos, el filtro propietario debe seguir ciert
 
 Después, debe llamar al [**método CDynamicOutputPin::StopUsingOutputPin.**](cdynamicoutputpin-stopusingoutputpin.md)
 
-En segundo lugar, el subproceso de aplicación no debe llamar a ninguno de los métodos de la lista anterior. En tercer lugar, el subproceso de streaming no debe llamar a los métodos de clase que bloquean o desbloquean el pin. Estos métodos son: [**CDynamicOutputPin::Block**](cdynamicoutputpin-block.md), [**CDynamicOutputPin::SynchronousBlockOutputPin,**](cdynamicoutputpin-synchronousblockoutputpin.md) [**CDynamicOutputPin::AsynchronousBlockOutputPin**](cdynamicoutputpin-asynchronousblockoutputpin.md)y [**CDynamicOutputPin::UnblockOutputPin**](cdynamicoutputpin-unblockoutputpin.md).
+En segundo lugar, el subproceso de aplicación no debe llamar a ninguno de los métodos de la lista anterior. En tercer lugar, el subproceso de streaming no debe llamar a los métodos de clase que bloquean o desbloquean el pin. Estos métodos son: [**CDynamicOutputPin::Block**](cdynamicoutputpin-block.md), [**CDynamicOutputPin::SynchronousBlockOutputPin**](cdynamicoutputpin-synchronousblockoutputpin.md), [**CDynamicOutputPin::AsynchronousBlockOutputPin**](cdynamicoutputpin-asynchronousblockoutputpin.md)y [**CDynamicOutputPin::UnblockOutputPin**](cdynamicoutputpin-unblockoutputpin.md).
 
-Estas reglas garantizan que el subproceso de aplicación no puede bloquear el pin mientras el subproceso de streaming lo usa, y viceversa. Después de que el subproceso de streaming haya llamado **a StartUsingOutputPin,** el pin no se bloqueará hasta que el subproceso de streaming llame a **StopUsingOutputPin**. Por el contrario, si el pin está bloqueado, **StartUsingOutputPin** espera hasta que se desbloquea el pin.
+Estas reglas garantizan que el subproceso de aplicación no puede bloquear el pin mientras el subproceso de streaming lo usa, y viceversa. Después de que el subproceso de streaming haya llamado **a StartUsingOutputPin**, el pin no se bloqueará hasta que el subproceso de streaming llame a **StopUsingOutputPin**. Por el contrario, si el pin está bloqueado, **StartUsingOutputPin** espera hasta que se desbloquea el pin.
 
-Para evitar el abandono de llamar a **StopUsingOutputPin,** puede usar la [**clase CAutoUsingOutputPin.**](cautousingoutputpin-cautousingoutputpin.md) Llama a **StopUsingOutputPin** automáticamente cuando sale del ámbito.
+Para evitar olvidarse de llamar a **StopUsingOutputPin,** puede usar la [**clase CAutoUsingOutputPin.**](cautousingoutputpin-cautousingoutputpin.md) Llama a **StopUsingOutputPin** automáticamente cuando sale del ámbito.
 
-Cuando el filtro propietario une o deja el gráfico de filtro (en su método [**IBaseFilter::JoinFilterGraph),**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-joinfiltergraph) debe llamar al método [**CDynamicOutputPin::SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md) del pin.
+Cuando el filtro propietario se une o deja el gráfico de filtro (en su método [**IBaseFilter::JoinFilterGraph),**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-joinfiltergraph) debe llamar al método [**CDynamicOutputPin::SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md) del pin.
 
 
 
-| Variables de miembro protegido                                                                      | Descripción                                                                                                                   |
+| Variables miembro protegidas                                                                      | Descripción                                                                                                                   |
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | [**m \_ BlockStateLock**](cdynamicoutputpin-m-blockstatelock.md)                                 | Sección crítica que protege el estado de bloqueo.                                                                            |
 | [**m \_ hUnblockOutputPinEvent**](cdynamicoutputpin-m-hunblockoutputpinevent.md)                 | Evento que se señala cuando el pin no está bloqueado.                                                                           |
 | [**m \_ hNotifyCallerPinBlockedEvent**](cdynamicoutputpin-m-hnotifycallerpinblockedevent.md)     | Evento que se señala cuando el pin se bloquea correctamente o el usuario cancela un bloque pendiente.                                 |
 | [**m \_ BlockState**](cdynamicoutputpin-m-blockstate.md)                                         | Estado de bloqueo.                                                                                                               |
 | [**m \_ dwBlockCallerThreadID**](cdynamicoutputpin-m-dwblockcallerthreadid.md)                   | Identificador del subproceso que llamó por última vez al [**método IPinFlowControl::Block**](/windows/desktop/api/Strmif/nf-strmif-ipinflowcontrol-block) en este pin. |
-| [**m \_ dwNumOutstandingOutputPinUsers**](cdynamicoutputpin-m-dwnumoutstandingoutputpinusers.md) | Número de subprocesos de streaming mediante este pin.                                                                                   |
+| [**m \_ dwNumOutstandingOutputPinUsers**](cdynamicoutputpin-m-dwnumoutstandingoutputpinusers.md) | Número de subprocesos de streaming con este pin.                                                                                   |
 | [**m \_ hStopEvent**](cdynamicoutputpin-m-hstopevent.md)                                         | Evento que se señala cuando el filtro se detiene o el pin vacía los datos.                                                         |
 | [**m \_ pGraphConfig**](cdynamicoutputpin-m-pgraphconfig.md)                                     | Puntero a la [**interfaz IGraphConfig**](/windows/desktop/api/Strmif/nn-strmif-igraphconfig) para realizar reconexiones dinámicas.                           |
-| [**m \_ bPinUsesReadOnlyAllocator**](cdynamicoutputpin-m-bpinusesreadonlyallocator.md)           | Marca que especifica si los ejemplos del asignador del pin son de solo lectura.                                                   |
+| [**m \_ bPinUsesReadOnlyAllocator**](cdynamicoutputpin-m-bpinusesreadonlyallocator.md)           | Marca que especifica si las muestras del asignador del pin son de solo lectura.                                                   |
 | Métodos protegidos                                                                               | Descripción                                                                                                                   |
 | [**SynchronousBlockOutputPin**](cdynamicoutputpin-synchronousblockoutputpin.md)                | Bloquea el pin; no devuelve hasta que se bloquea el pin.                                                                     |
 | [**AsynchronousBlockOutputPin**](cdynamicoutputpin-asynchronousblockoutputpin.md)              | Bloquea el pin; puede devolver antes de que se bloquee el pin.                                                                       |
 | [**UnblockOutputPin**](cdynamicoutputpin-unblockoutputpin.md)                                  | Desbloquea el pin.                                                                                                             |
 | [**BlockOutputPin**](cdynamicoutputpin-blockoutputpin.md)                                      | Bloquea el pin.                                                                                                               |
-| [**WaitEvent**](cdynamicoutputpin-waitevent.md)                                                | Espera hasta que se señala el evento especificado.                                                                                  |
+| [**WaitEvent**](cdynamicoutputpin-waitevent.md)                                                | Espera hasta que se señale el evento especificado.                                                                                  |
 | Métodos públicos                                                                                  | Descripción                                                                                                                   |
 | [**CDynamicOutputPin**](cdynamicoutputpin-cdynamicoutputpin.md)                                | Método constructor.                                                                                                           |
 | [**~CDynamicOutputPin**](cdynamicoutputpin--cdynamicoutputpin.md)                              | Método destructor.                                                                                                            |
 | [**SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md)                                        | Especifica el puntero [**IGraphConfig**](/windows/desktop/api/Strmif/nn-strmif-igraphconfig) y el evento stop.                                                |
-| [**DeliverBeginFlush**](cdynamicoutputpin-deliverbeginflush.md)                                | Solicita el pin de entrada conectado para iniciar una operación de vaciado.                                                                  |
+| [**DeliverBeginFlush**](cdynamicoutputpin-deliverbeginflush.md)                                | Solicita el pin de entrada conectado para comenzar una operación de vaciado.                                                                  |
 | [**DeliverEndFlush**](cdynamicoutputpin-deliverendflush.md)                                    | Solicita el pin de entrada conectado para finalizar una operación de vaciado.                                                                    |
 | [**Inactivo**](cdynamicoutputpin-inactive.md)                                                  | Notifica al pin que el filtro se ha detenido.                                                                                 |
 | [**Activo**](cdynamicoutputpin-active.md)                                                      | Notifica al pin que el filtro ahora está activo.                                                                               |

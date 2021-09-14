@@ -5,11 +5,11 @@ ms.assetid: 4af9d356-402b-4e69-9f6e-8589057d3ac4
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0476d36390e7077e7fdd75eef8d95e8173683891
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369771"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973672"
 ---
 # <a name="getting-a-pointer-to-an-object"></a>Obtener un puntero a un objeto
 

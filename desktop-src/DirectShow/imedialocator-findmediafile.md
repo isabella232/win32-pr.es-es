@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: cc1acda4a3bc6e2d93ae8b7024ef34f759c11c5c4d487a09d3be3a3542e0c445
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3561b77873c90b2d4bd0202bed8e2da822a0362f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117818942"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886817"
 ---
 # <a name="imedialocatorfindmediafile-method"></a>IMediaLocator::FindMediaFile (método)
 
@@ -28,7 +28,7 @@ ms.locfileid: "117818942"
 
  
 
-El método busca un archivo y, si se realiza `FindMediaFile` correctamente, recupera la ruta de acceso al archivo.
+El `FindMediaFile` método busca un archivo y, si se realiza correctamente, recupera la ruta de acceso al archivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,14 +51,14 @@ HRESULT FindMediaFile(
 *Entrada* 
 </dt> <dd>
 
-Nombre de archivo, incluida la ruta de acceso, donde se sabe que reside por última vez el archivo. Para los objetos de origen de la escala de tiempo, use el nombre del medio actual.
+Nombre de archivo, incluida la ruta de acceso, donde se sabe que el archivo residía por última vez. Para los objetos de origen de la escala de tiempo, use el nombre de medio actual.
 
 </dd> <dt>
 
 *FilterString* 
 </dt> <dd>
 
-BSTR **que** contiene pares de cadenas de filtro, con el formato requerido por el miembro **lpstrFilter** de la [**estructura OPENFILENAME.**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) El localizador de medios usa este filtro si muestra un cuadro de diálogo Abrir archivo. El valor puede ser **NULL si** el *parámetro Flags* no incluye la marca \_ POPUP VALIDATEF de SFN. \_
+BSTR **que** contiene pares de cadenas de filtro, con el formato requerido por el miembro **lpstrFilter** de la [**estructura OPENFILENAME.**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) El localizador de medios usa este filtro si muestra un cuadro de diálogo Abrir archivo. El valor puede ser **NULL si** el *parámetro Flags* no incluye la marca \_ SFN VALIDATEF \_ POPUP.
 
 </dd> <dt>
 
@@ -80,9 +80,9 @@ Combinación bit a bit de cero o más marcas. Para obtener una lista de las marc
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La cadena de filtro del cuadro de diálogo Abrir archivo, especificada por el *parámetro FilterString,* contiene caracteres NULL internos. Por ejemplo, Video \\ 0 \*.avi\\ 0 \\ 0 es una cadena de filtro válida. No se puede usar la función **SysAllocStr** para asignar el BSTR, porque esa función espera una cadena terminada en NULL y truncará la cadena en el primer carácter NULL. Por lo tanto, use una función como **SysAllocStringLen**, que incluye un parámetro explícito para la longitud:
+La cadena de filtro del cuadro de diálogo Abrir archivo, que especifica el *parámetro FilterString,* contiene caracteres NULL internos. Por ejemplo, Video \\ 0 \*.avi\\ \\ 0 0 es una cadena de filtro válida. No puede usar la función **SysAllocStr** para asignar el BSTR, ya que esa función espera una cadena terminada en NULL y truncará la cadena en el primer carácter NULL. Por lo tanto, use una función como **SysAllocStringLen**, que incluye un parámetro explícito para la longitud:
 
 
 ```C++
@@ -117,14 +117,14 @@ El método asigna memoria para **el BSTR** en *pOutput*. La aplicación debe lla
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IMediaLocator (interfaz)**](imedialocator.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

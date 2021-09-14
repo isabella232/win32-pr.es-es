@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6e8c2d0c379ce8690a7ca5306d880aad777905d4164bbaf8873c2a43624994f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b3df98a58c666b1e1bbb1f626004e09fa66d086
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117822301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973922"
 ---
 # <a name="cbasewindowm_width-member"></a>Miembro CBaseWindow::m \_ Width
 

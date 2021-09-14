@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 6911d4ad044e0b2080007f9751bd7090b182d8474673da98d35dd91544947e03
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c98d32960e2ab6a21633899164b3ff84525f2aaf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119997925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973808"
 ---
-# <a name="ec_dvd_disc_inserted"></a>DISCO \_ DE DVD EC \_ \_ INSERTADO
+# <a name="ec_dvd_disc_inserted"></a>DISCO \_ DE DVD DE EC \_ \_ INSERTADO
 
 Indica que se insertó un disco de DVD en la unidad.
 
@@ -42,9 +42,9 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La reproducción comienza automáticamente cuando se inserta un disco. La aplicación no tiene que realizar ninguna acción especial en respuesta a este evento.
+La reproducción se inicia automáticamente cuando se inserta un disco. La aplicación no tiene que realizar ninguna acción especial en respuesta a este evento.
 
 Este evento se genera en todos los dominios.
 
@@ -58,7 +58,7 @@ Este evento se genera en todos los dominios.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

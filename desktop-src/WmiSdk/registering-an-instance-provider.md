@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Registro de un proveedor de instancias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc97668a41327eabbeab43760703519fa9009c855c25cf77638459050bb5c71d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bde8189559b04f2e45ac8357ab47cc17bd253fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118817083"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973741"
 ---
 # <a name="registering-an-instance-provider"></a>Registro de un proveedor de instancias
 
-Para crear un proveedor de [*instancias*](gloss-i.md) WMI, debe registrar la instancia [**\_ \_ de Win32Provider**](--win32provider.md) que representa al proveedor mediante una instancia de [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md). Como objeto COM, el proveedor debe registrarse con el sistema operativo y WMI. En el procedimiento siguiente se da por supuesto que ya ha implementado el proceso de registro como se describe en [Registro de un proveedor.](registering-a-provider.md)
+Para crear un proveedor [*de instancias*](gloss-i.md) WMI, debe registrar la instancia [**\_ \_ de Win32Provider**](--win32provider.md) que representa al proveedor mediante una instancia de [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md). Como objeto COM, el proveedor debe registrarse con el sistema operativo y WMI. En el procedimiento siguiente se da por supuesto que ya ha implementado el proceso de registro como se describe [en Registro de un proveedor](registering-a-provider.md).
 
 En el procedimiento siguiente se describe cómo registrar un proveedor de instancias.
 

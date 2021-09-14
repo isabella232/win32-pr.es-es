@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7eefa95c4fd6ab19c895b4d1d47dba3a19302023985a4631708c3cf7ccc10d06
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3445d9af4ec9c7abe6a4401e219fc305e254d555
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119585645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973863"
 ---
 # <a name="cmsgthreadputthreadmsg-method"></a>Método CMsgThread.PutThreadMsg
 
@@ -77,7 +77,7 @@ Puntero opcional a un objeto de evento que se va a señalar tras la finalizació
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función miembro pone en cola una solicitud de ejecución por parte del subproceso de trabajo. Los parámetros de esta función miembro se pondrán en cola (en un objeto [**CMsg)**](cmsg.md) y se pasarán a la función miembro [**CMsgThread::ThreadMessageProc**](cmsgthread-threadmessageproc.md) del subproceso de trabajo. Esta función miembro devuelve inmediatamente después de hacer cola la solicitud y no espera a que el subproceso cumpla la solicitud. La **función miembro CMsgThread::ThreadMessageProc** de la clase derivada define los cuatro parámetros.
 
@@ -94,7 +94,7 @@ Esta función miembro usa una lista segura para multiproceso, por lo que se pued
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

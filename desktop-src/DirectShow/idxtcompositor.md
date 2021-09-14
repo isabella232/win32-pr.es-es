@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: dd59f62a4382ae6023a18792ce3547f67b49c9e8ae49e9de7c9c8409bccd788d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c2e19f555fe01cbec3763bc1dc76d11aeb5f5ecb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119997704"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973768"
 ---
 # <a name="idxtcompositor-interface"></a>Interfaz IDxtCompositor
 
@@ -36,7 +36,7 @@ La transición compositora compone una imagen de primer plano en una imagen de f
 
 ![propiedades de transición de compositor](images/compmeasure.png)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IDxtCompositor** hereda de **IDXEffect.** **IDxtCompositor** también tiene estos tipos de miembros:
 
@@ -71,7 +71,7 @@ La **interfaz IDxtCompositor** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.

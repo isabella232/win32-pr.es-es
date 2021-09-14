@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9969a09700391c497cfb052c329101712a5f76dabc6d937c87d2fef73f201509
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a2e09f47d1fe6bf3f50b54661b363921d11c49e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120131265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973881"
 ---
 # <a name="cenumpinscenumpins-destructor"></a>Destructor CEnumPins.~CEnumPins
 
@@ -47,7 +47,7 @@ virtual ~CEnumPins();
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

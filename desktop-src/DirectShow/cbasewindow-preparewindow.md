@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7b2811e307b370323c331d3f894116ad0ff01af25ad76e1ea775dae5489dfb15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91331ede15feb756f3ddd08d0d368621b35eda00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074569"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973907"
 ---
 # <a name="cbasewindowpreparewindow-method"></a>Método CBaseWindow.PrepareWindow
 
@@ -55,7 +55,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Llame a este método después de crear el objeto . Este método realiza una contabilidad inicial y, a continuación, llama al método [**CBaseWindow::D oCreateWindow**](cbasewindow-docreatewindow.md) para crear la ventana.
 
@@ -70,7 +70,7 @@ Llame a este método después de crear el objeto . Este método realiza una cont
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

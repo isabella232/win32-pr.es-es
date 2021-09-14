@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2397ea32d9069352207eba6a4a5b9709b1c7514fa7d2c5acd16a9539090dba3e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ca15be5dc1893a393e6052832cc7522f27355eeb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973825"
 ---
 # <a name="ctransinplaceinputpinnotifyallocator-method"></a>CTransInPlaceInputPin.NotifyAllocator (método)
 
@@ -53,7 +53,7 @@ Puntero a la interfaz [**IMemAllocator del asignador.**](/windows/desktop/api/St
 *bReadOnly* 
 </dt> <dd>
 
-Marca que especifica si los ejemplos de este asignador son de solo lectura. Si **es TRUE,** los ejemplos son de solo lectura.
+Marca que especifica si las muestras de este asignador son de solo lectura. Si **es TRUE,** los ejemplos son de solo lectura.
 
 </dd> </dl>
 
@@ -73,12 +73,12 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El filtro intenta usar el mismo asignador para ambas conexiones de pin.
 
--   Si el pin de salida no está conectado, el pin de entrada acepta automáticamente el asignador. Cuando el pin de salida está conectado, el filtro volverá a conectar el pin de entrada. En ese momento, el filtro volverá a intentar usar un solo asignador.
--   Si el pin de salida está conectado, el pin de entrada acepta el asignador. El pin de salida también usa el mismo asignador. Llama a `NotifyAllocator` en el pin de entrada de bajada.
+-   Si el pin de salida no está conectado, el pin de entrada acepta automáticamente el asignador. Cuando el pin de salida está conectado, el filtro volverá a conectar el pin de entrada. En ese momento, el filtro intentará de nuevo usar un solo asignador.
+-   Si el pin de salida está conectado, el pin de entrada acepta el asignador. La patilla de salida también usa el mismo asignador. Llama a `NotifyAllocator` en el pin de entrada de bajada.
 
 El caso anterior tiene la siguiente excepción:
 
@@ -95,7 +95,7 @@ El caso anterior tiene la siguiente excepción:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

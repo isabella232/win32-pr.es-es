@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e00c3ccc43e2583ce8664e62967a22f753148cfa271dd1995e2374c2bfa53c71
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f747f108bb6c7e42e90a0ff8503ec59a83c59699
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118658249"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973944"
 ---
 # <a name="cbasewindowactivatewindow-method"></a>Método CBaseWindow.ActivateWindow
 
@@ -72,7 +72,7 @@ Si la ventana ya está activa, la llamada a mueve la ventana a la parte superior
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

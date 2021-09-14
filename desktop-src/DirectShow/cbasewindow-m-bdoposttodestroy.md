@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 070b94cc75fa3fb2d9b5983901abc2406b2e601ec3370323854905708ee681f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 804d0910760ddac5ea4d74979293f43e5b189225
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973938"
 ---
 # <a name="cbasewindowm_bdoposttodestroy-member"></a>Miembro CBaseWindow::m \_ bDoPostToDestroy
 
@@ -47,7 +47,7 @@ BOOL m_bDoPostToDestroy;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

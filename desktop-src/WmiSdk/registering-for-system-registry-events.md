@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1c6f60b21dee729a879aaeab676da67b06ca0a822bcfd6509bc0f406f96fecec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 886046f5ffef366cdba2efb86629019f2ee0b5e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118554250"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973742"
 ---
 # <a name="registering-for-system-registry-events"></a>Registro de eventos del Registro del sistema
 
 Para recibir notificaciones del proveedor [del Registro del](/previous-versions/windows/desktop/regprov/system-registry-provider) sistema, una aplicación de administración debe registrarse como consumidor de eventos temporal. La mayoría de los requisitos para registrarse para el proveedor del Registro del sistema son los mismos que cualquier otro registro de eventos, excepto que también debe realizar el procedimiento siguiente.
 
-El proveedor del Registro proporciona clases de eventos para eventos en el registro del sistema. Para obtener más información sobre el registro de eventos general, vea [Recibir un evento WMI](receiving-a-wmi-event.md).
+El proveedor del Registro proporciona clases de eventos para eventos en el registro del sistema. Para obtener más información sobre el registro de eventos generales, vea [Recibir un evento WMI](receiving-a-wmi-event.md).
 
 En el procedimiento siguiente se describe cómo registrarse para eventos del registro del sistema.
 
@@ -29,7 +29,7 @@ En el procedimiento siguiente se describe cómo registrarse para eventos del reg
 
 1.  Llame a un método de consulta de notificación.
 
-    En script o C++, use una consulta de notificación [**comoSWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md) o [**IWbemServices::ExecNotificationQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationqueryasync). Cree una cadena de consulta para el *parámetro bstrQuery* de **IWbemServices::ExecNotificationQueryAsync** o *strQuery* en el script.
+    En script o C++, use una consulta de notificación como [**SWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md) o [**IWbemServices::ExecNotificationQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationqueryasync). Cree una cadena de consulta para el *parámetro bstrQuery* de **IWbemServices::ExecNotificationQueryAsync** o *strQuery* en el script.
 
 2.  Determine qué tipo de evento desea recibir y cree la consulta.
 
@@ -54,13 +54,13 @@ En el procedimiento siguiente se describe cómo registrarse para eventos del reg
 
 3.  Cree la cláusula WHERE para el registro de eventos.
 
-    El proveedor del Registro del sistema tiene reglas específicas para las cláusulas WHERE. Para obtener más información, vea [Creating a Proper WHERE Clause for the Registry Provider](creating-a-proper-where-clause-for-the-registry-provider.md). Para obtener más información general sobre cómo crear una cláusula WHERE, vea [Consulta con WQL.](querying-with-wql.md)
+    El proveedor del Registro del sistema tiene reglas específicas para las cláusulas WHERE. Para obtener más información, vea [Crear una cláusula WHERE adecuada para el proveedor del Registro](creating-a-proper-where-clause-for-the-registry-provider.md). Para obtener más información general sobre cómo crear una cláusula WHERE, vea [Consulta con WQL.](querying-with-wql.md)
 
 4.  Determine si el consumidor está recibiendo eventos.
 
     El proveedor del Registro del sistema no garantiza que se entreguen todos los eventos enviados. Para obtener más información, vea [Recepción de eventos del Registro.](receiving-registry-events.md)
 
-En el ejemplo de código de VBScript siguiente se muestra cómo detectar un cambio del Registro en el subárbol o subárbol de Microsoft **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE.** \\  Se trata de un script de supervisión que, con fines de demostración, se ejecuta en un proceso denominado Wscript.exe hasta que finaliza en **Administrador de tareas**, WMI se detiene o se reinicia el sistema operativo. El script usa una [*llamada semisincronosa*](gloss-s.md) [**aSWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md). Para obtener más información sobre las llamadas semisincronosas, vea Realizar una llamada [semisincronosa con VBScript.](making-a-semisynchronous-call-with-vbscript.md)
+En el ejemplo de código de VBScript siguiente se muestra cómo detectar un cambio del Registro en el subárbol o subárbol de Microsoft **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE.** \\  Se trata de un script de supervisión que, con fines de demostración, se ejecuta en un proceso denominado Wscript.exe hasta que finaliza en **Administrador de tareas**, WMI se detiene o se reinicia el sistema operativo. El script usa [*una llamada semisincronosa*](gloss-s.md) a [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md). Para obtener más información sobre las llamadas semisincronosas, vea Realizar una llamada [semisincronosa con VBScript.](making-a-semisynchronous-call-with-vbscript.md)
 
 
 ```VB
@@ -81,7 +81,7 @@ Wend
 
 
 
-En el ejemplo de código de VBScript siguiente se muestra cómo supervisar el cambio en los valores de una clave mediante el registro para el tipo de evento del proveedor del Registro [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent). El script llama a un método asincrónico, [**SWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md). Para obtener más información sobre las llamadas asincrónicas y la seguridad, vea [Realizar una llamada asincrónica con VBScript.](making-an-asynchronous-call-with-vbscript.md)
+En el ejemplo de código de VBScript siguiente se muestra cómo supervisar el cambio en los valores de una clave mediante el registro para el tipo de evento del proveedor del Registro [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent). El script llama a un método asincrónico, [**SWbemServices.ExecNotificationQueryAsync.**](swbemservices-execnotificationqueryasync.md) Para obtener más información sobre las llamadas asincrónicas y la seguridad, vea [Realizar una llamada asincrónica con VBScript.](making-an-asynchronous-call-with-vbscript.md)
 
 El siguiente script se ejecuta indefinidamente hasta que se reinicia el equipo, se detiene WMI o se detiene el script. Para detener el script manualmente, use Administrador de tareas para detener el proceso. Para detenerla mediante programación, use el [**método Terminate**](/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process) en la clase Process de Win32. \_
 

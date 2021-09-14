@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d3a8a358eb5c81ae3ca1b1e10d24fa36ea9dc1862f9bbcd101cd78fb4d091cdb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7e3e8cb2e4552aceb53cf447125ddcc42659d575
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119639415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973795"
 ---
 # <a name="idxtcompositorget_offsety-method"></a>IDxtCompositor::get \_ OffsetY (método)
 
@@ -56,7 +56,7 @@ Recibe el desplazamiento vertical del rectángulo de destino, en píxeles.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -79,7 +79,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

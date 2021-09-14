@@ -4,12 +4,12 @@ ms.assetid: ba303691-d331-4831-8416-47bb9eeb70da
 title: elemento eventSourceBuilderDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dc5f553aef289ea37657b3524db91897f3f7910b474859b627fd35af91b3c23
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0baba3dd7013b2e684713e801caa87316266fc2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119130817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973692"
 ---
 # <a name="eventsourcebuilderdeclarations-element"></a>elemento eventSourceBuilderDeclarations
 
@@ -49,7 +49,7 @@ proxyClass
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
+| [**file**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
 
 
 

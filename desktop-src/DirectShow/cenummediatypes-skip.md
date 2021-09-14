@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a9930472b5c8a2873ca0a7f3280565bd41ac6b0aac7e1e33303464d3a2c1ca3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e09217bc45b866cfb08aa2ab0cae5a7a28815fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118656450"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973883"
 ---
 # <a name="cenummediatypesskip-method"></a>CEnumMediaTypes.Skip (método)
 
@@ -76,7 +76,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

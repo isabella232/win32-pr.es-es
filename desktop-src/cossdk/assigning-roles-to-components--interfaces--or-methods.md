@@ -4,12 +4,12 @@ ms.assetid: 687d5692-4a83-4de8-b99d-859aaaddd16d
 title: Asignación de roles a componentes, interfaces o métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22fcec11a52182bc0c9ac6f643c6c9cd75cb7b7462c35bbdea1ad0bc401f6ed4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5efb66c9de865cbfcdc6e9cb047af92c95f6bc0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120029865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973577"
 ---
 # <a name="assigning-roles-to-components-interfaces-or-methods"></a>Asignación de roles a componentes, interfaces o métodos
 
@@ -17,7 +17,7 @@ Puede asignar explícitamente un rol a cualquier elemento dentro de una aplicaci
 
 Los autores de la llamada solo pueden acceder a un método si se le asigna un rol, ya sea asignando explícitamente el rol directamente al método o asignando un rol a la interfaz del método o al componente del método, en cuyo caso el rol lo heredará el método. Si no se asigna ningún rol y las comprobaciones de acceso están habilitadas, se producirá un error en todas las llamadas al método.
 
-Para poder asignar un rol, debe [definirlo](defining-roles-for-an-application.md) para la aplicación. Todos los roles definidos para la aplicación aparecerán en la ventana  **Roles** establecidos explícitamente para los elementos seleccionados en la pestaña Seguridad de todos los componentes, métodos e interfaces de la aplicación.
+Para poder asignar un rol, debe [definirlo](defining-roles-for-an-application.md) para la aplicación. Todos los roles definidos para la aplicación aparecerán en la ventana  **Roles** establecidos explícitamente para los elementos seleccionados en la pestaña Seguridad de los componentes, métodos e interfaces de la aplicación.
 
 **Para asignar roles a un componente, método o interfaz**
 
@@ -29,7 +29,7 @@ Para poder asignar un rol, debe [definirlo](defining-roles-for-an-application.md
 
 4.  En el **cuadro Roles establecidos explícitamente** para los elementos seleccionados, seleccione los roles que desea asignar al elemento.
 
-5.  Haga clic en **Aceptar**.
+5.  Haga clic en **OK**.
 
 Los roles que haya establecido explícitamente para un elemento los heredarán los elementos de nivel inferior que contenga y se mostrarán en la ventana **Roles** heredados por elementos seleccionados para esos elementos.
 

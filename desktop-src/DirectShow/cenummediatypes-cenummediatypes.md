@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 189073bbf1f9c3f2d6475ecacacdbae7c7e7725bad392f726b9ee6faf0de3763
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2d243ed25cc48c5d30d467f97e2ec20e1f0f2b58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120131305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973889"
 ---
 # <a name="cenummediatypescenummediatypes-constructor"></a>Constructor CEnumMediaTypes.CEnumMediaTypes
 
@@ -57,7 +57,7 @@ Puntero a la [**interfaz IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si *pEnumMediaTypes* es **NULL,** este método inicializa el enumerador al principio de la secuencia de enumeración. De lo contrario, duplica el estado interno del enumerador especificado por *pEnumMediaTypes*.
 
@@ -72,7 +72,7 @@ Si *pEnumMediaTypes* es **NULL,** este método inicializa el enumerador al princ
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

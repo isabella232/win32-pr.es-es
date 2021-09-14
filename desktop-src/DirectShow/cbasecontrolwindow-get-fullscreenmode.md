@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cebd74fd51551249c339100ac2dd3eda4a171cc316cca575f27f5194480978ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc77b43db2bb420e6cfe2eace44e96e1ab43b0cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118660538"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974027"
 ---
 # <a name="cbasecontrolwindowget_fullscreenmode-method"></a>Método CBaseControlWindow.get \_ FullScreenMode
 
@@ -68,7 +68,7 @@ Esta función miembro devuelve E \_ NOTIMPL de forma predeterminada. Esto inform
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

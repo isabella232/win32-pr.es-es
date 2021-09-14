@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 87b84a7608272292edd77652fe0f97e7a5f1798a7cda18c23b45950378f5c970
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57eb2f9383b218409ebee927cc4d6ad1283f3e8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118979995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887372"
 ---
 # <a name="jet_lgposlessthanorequal-operator"></a>JET_LGPOS. Operador LessThanOrEqual
 
@@ -67,7 +67,7 @@ public static bool operator <=(
   - Lhs  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
-    Primera posición de registro que se compara.
+    Primera posición del registro que se compara.
 
 <!-- end list -->
 
@@ -79,7 +79,7 @@ public static bool operator <=(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
-True si lhs va antes que o es igual a rhs.  
+True si lhs es anterior o es igual a rhs.  
 
 ## <a name="see-also"></a>Consulte también
 

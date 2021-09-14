@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 6ee25645398b44c44049b2a1546b6218ee5036989ee6c638dd7866341b816254
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 80697a3c4a159256389f48273e66ca86547478fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119914925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973780"
 ---
-# <a name="idxtcompositorput_srcheight-method"></a>IDxtCompositor::p ut \_ SrcHeight (método)
+# <a name="idxtcompositorput_srcheight-method"></a>IDxtCompositor::p ut \_ SrcHeight
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -56,7 +56,7 @@ Alto del rectángulo de origen, en píxeles.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -79,11 +79,11 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IDxtCompositor (interfaz)**](idxtcompositor.md)
+[**Interfaz IDxtCompositor**](idxtcompositor.md)
 </dt> </dl>
 
  

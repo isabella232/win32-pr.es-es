@@ -1,6 +1,6 @@
 ---
 title: Propiedad IMsRdpClientTransportSettings GatewayUsageMethod
-description: Especifica cuándo se debe usar un servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
+description: Especifica cuándo se debe usar un servidor Escritorio remoto gateway (puerta de enlace de Escritorio remoto).
 ms.assetid: 0644c413-9ff7-42c1-a38e-e1ce546972ff
 ms.tgt_platform: multiple
 keywords:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14a177d191d3303cf44778713ebdef88db955d28ede58691bda1e9ad05aa51a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f07bc10c67d01f957e588d1b50085e57b0fa10b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119001045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886033"
 ---
 # <a name="imsrdpclienttransportsettingsgatewayusagemethod-property"></a>Propiedad IMsRdpClientTransportSettings::GatewayUsageMethod
 
-Especifica cuándo se debe usar un servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
+Especifica cuándo se debe usar un servidor Escritorio remoto gateway (puerta de enlace de Escritorio remoto).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -99,7 +99,7 @@ Use la configuración predeterminada del servidor de puerta de enlace de Escrito
 
 <span id="TSC_PROXY_MODE_NONE_DETECT"></span><span id="tsc_proxy_mode_none_detect"></span>
 
-<span id="TSC_PROXY_MODE_NONE_DETECT"></span><span id="tsc_proxy_mode_none_detect"></span>**TSC \_ DETECCIÓN \_ DE NINGUNO EN MODO \_ \_ PROXY** (4 (0x4))
+<span id="TSC_PROXY_MODE_NONE_DETECT"></span><span id="tsc_proxy_mode_none_detect"></span>**TSC \_ MODO PROXY \_ \_ NINGUNA \_ DETECCIÓN** (4 (0x4))
 
 
 </dt> <dd>
@@ -126,7 +126,7 @@ Devuelve **S \_ OK si** se realiza correctamente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

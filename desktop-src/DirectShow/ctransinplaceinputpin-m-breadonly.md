@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 526955ba60d9b54d80035f3feebebbc3a32efbdd00721a171c71f187ce9584de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac2f66296c08b2461440e0615b225c62405fd99a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118654837"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973830"
 ---
 # <a name="ctransinplaceinputpinm_breadonly-member"></a>Miembro CTransInPlaceInputPin::m \_ bReadOnly
 
@@ -47,7 +47,7 @@ BOOL m_bReadOnly;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

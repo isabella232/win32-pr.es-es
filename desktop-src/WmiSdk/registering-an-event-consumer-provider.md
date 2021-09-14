@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Registro de un proveedor de consumidores de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1922970838b99e2a4a371ed7b00ae0f506a0381f0018509bfd6874074e0dd8f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df6bf47e11b1b9df072f9efbca0ba0f620e96d78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992549"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973747"
 ---
 # <a name="registering-an-event-consumer-provider"></a>Registro de un proveedor de consumidores de eventos
 
-Para crear un [*proveedor*](gloss-e.md) de consumidores de eventos WMI, debe registrar la instancia de [**\_ \_ Win32Provider**](--win32provider.md) que representa al proveedor mediante una instancia de [**\_ \_ EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md). Como objeto COM, el proveedor debe registrarse con el sistema operativo y WMI. En el procedimiento siguiente se da por supuesto que ya ha implementado el proceso de registro como se describe en [Registro de un proveedor.](registering-a-provider.md)
+Para crear un [*proveedor*](gloss-e.md) de consumidores de eventos WMI, debe registrar la instancia de [**\_ \_ Win32Provider**](--win32provider.md) que representa al proveedor mediante una instancia de [**\_ \_ EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md). Como objeto COM, el proveedor debe registrarse con el sistema operativo y WMI. En el procedimiento siguiente se da por supuesto que ya ha implementado el proceso de registro como se describe [en Registro de un proveedor](registering-a-provider.md).
 
 En el procedimiento siguiente se describe cómo registrar un proveedor de consumidores de eventos.
 
@@ -25,7 +25,7 @@ En el procedimiento siguiente se describe cómo registrar un proveedor de consum
 
     Las propiedades definidas por [**\_ \_ EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md) incluyen la ruta de acceso del objeto al proveedor y los nombres de las clases de consumidor lógico que admite el proveedor de consumidores de eventos.
 
-    Asegúrese de etiquetar la clase con los calificadores **Dynamic** [**y Provider.**](/windows/desktop/api/Provider/nl-provider-provider) El **calificador** dinámico indica que WMI debe usar un proveedor para recuperar las instancias de clase. El **calificador** Provider especifica el nombre del proveedor que WMI debe usar.
+    Asegúrese de etiquetar la clase con los calificadores **Dynamic** [**y Provider.**](/windows/desktop/api/Provider/nl-provider-provider) El **calificador** Dinámico indica que WMI debe usar un proveedor para recuperar las instancias de clase. El **calificador** Provider especifica el nombre del proveedor que WMI debe usar.
 
 En el ejemplo de código siguiente se muestra cómo registrar un proveedor de consumidores de eventos.
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 250585fea10846e10238132c5150f5ace9f8e00c474e763023c36c8566fbc752
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3bdb82e924b4a5d74d152917f52c4039e0aca81b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974072"
 ---
 # <a name="lvm_insertmarkhittest-message"></a>Mensaje \_ INSERTMARKHITTEST de LVM
 
@@ -39,7 +39,7 @@ Recupera el punto de inserción más cercano a un punto especificado.
 
 Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario. **Se** devuelve FALSE si el tamaño del miembro **cbSize** de la estructura [**LVINSERTMARK**](/windows/desktop/api/Commctrl/ns-commctrl-lvinsertmark) no es igual al tamaño real de la estructura o cuando no se aplica un punto de inserción en la vista actual.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un punto de inserción solo puede aparecer si el control list-view está en la vista de iconos, la vista de icono pequeña o la vista de mosaico y no está en modo de vista de grupo.
 
@@ -58,7 +58,7 @@ Si los puntos de inserción no se aplican a la vista, la estructura [**LVINSERTM
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

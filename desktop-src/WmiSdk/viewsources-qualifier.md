@@ -13,18 +13,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b2a0cadf3e1469fbdaf347b269813e76b780348d28482a00b4de290aaf4e0f28
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1f39146f8065401052c352472b28c4946cca6b98
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973709"
 ---
 # <a name="viewsources-qualifier"></a>Calificador ViewSources
 
 Todas las clases de vista deben tener un calificador de matriz de cadenas denominado **ViewSources.** El **calificador ViewSources** contiene las consultas de origen que definen las instancias de origen usadas en la clase de vista. El valor del **calificador ViewSources** es una matriz de cadenas [*que lenguaje de consulta de WMI consultas (WQL).*](gloss-w.md) Puede definir clases de origen y restringir las instancias de origen que usa la clase de vista con la cláusula[WHERE](where-clause.md) de Consulta con [WQL](querying-with-wql.md)para crear una vista filtrada.
 
-El [proveedor de](view-provider.md) vistas coincide con las consultas de origen del calificador **ViewSources** con los espacios de nombres enumerados en el calificador [ViewSpaces](viewspaces-qualifier.md) en el orden en que se enumeran las consultas y los espacios de nombres. El número de consultas de origen debe coincidir con el número de espacios de nombres enumerados en el calificador ViewSpaces. El orden en el que se enumeran las consultas de origen determina los espacios de nombres a partir de los cuales se dibujan las instancias de origen.
+El [proveedor de](view-provider.md) vistas coincide con las consultas de origen del calificador **ViewSources** con los espacios de nombres enumerados en el calificador [ViewSpaces](viewspaces-qualifier.md) en el orden en que se enumeran las consultas y los espacios de nombres. El número de consultas de origen debe coincidir con el número de espacios de nombres enumerados en el calificador ViewSpaces. El orden en el que se enumeran las consultas de origen determina los espacios de nombres de los que se extraen las instancias de origen.
 
 En el ejemplo siguiente solo se seleccionan las instancias de la clase **LocalDisk** donde el valor de la propiedad **FileSystem** es "NTFS" y las instancias de la clase **RemoteDisk** donde el valor de la propiedad **FreeSpace** es superior a 45 megabytes:
 
@@ -65,7 +65,7 @@ ViewSources{
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

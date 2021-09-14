@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102054
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 6628250ff5e93d44b92965e5f121858dac2b575b0d84457d8eba7ad953adce93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e38e68970c0548cc1402d3ffe17d9d6c7e2ed9ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119480425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883348"
 ---
 # <a name="esentkeytruncatedexception-methods"></a>Métodos de EsentKeyTruncatedException 
 
@@ -78,7 +78,7 @@ El [tipo EsentKeyTruncatedException](./esentkeytruncatedexception-class.md) expo
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

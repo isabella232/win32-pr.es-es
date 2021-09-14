@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 82dd6ff798136f6e97ddfcbcb181ea9fa1cc91d593b762a2b555e958b9073294
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81451b1a01e873d380da6c341977af0028d5160b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118656420"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973885"
 ---
 # <a name="cenummediatypesreset-method"></a>Método CEnumMediaTypes.Reset
 
@@ -55,7 +55,7 @@ Devuelve S \_ OK.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

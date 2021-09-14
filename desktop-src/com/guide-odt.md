@@ -4,12 +4,12 @@ description: En esta guía se describen los documentos compuestos y el mecanismo
 ms.assetid: df23df8f-08be-4b70-9c73-a5e0c2203af6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 117bb7a83d022d9122a4118820aef247f030554de6e14a5130a75c1dbe95b800
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 25a042cff718aa9808194ada9d2ad24e344f7ea6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119678675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126973646"
 ---
 # <a name="guide-ole-and-data-transfer"></a>Guía (OLE y transferencia de datos)
 

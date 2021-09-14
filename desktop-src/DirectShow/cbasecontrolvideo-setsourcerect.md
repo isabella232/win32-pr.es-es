@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 50643db31fa28f4e1587bc682222b15eb745010b9b0ff6be517fb708d8a7693d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e3be6cc3819e1452fd196d4906377204a6e90bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126974045"
 ---
 # <a name="cbasecontrolvideosetsourcerect-method"></a>Método CBaseControlVideo.SetSourceRect
 
@@ -53,7 +53,7 @@ Puntero al rectángulo de origen.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las clases derivadas deben invalidar esta función miembro para saber cuándo cambia el rectángulo de origen. Se llama desde las siguientes funciones miembro.
 
@@ -89,7 +89,7 @@ En este ejemplo, CVideoText es una clase derivada de [**CBaseControlVideo,**](cb
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
