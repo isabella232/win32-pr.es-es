@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 28f239fb57ec0bccec120c5b2ea493a094e9cc6acc5b47fb19e9f7495ecde46f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b5138ddf540c3e4a87fe65f29938cb3557b2360
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119495315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969743"
 ---
 # <a name="d3dxloadsurfacefromsurface-function"></a>Función D3DXLoadSurfaceFromSurface
 
@@ -70,7 +70,7 @@ Puntero a una [**estructura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi
 
 Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Puntero a una [**estructura RECT.**](/previous-versions//dd162897(v=vs.85)) Especifica el rectángulo de destino. Establezca este parámetro en **NULL** para especificar toda la superficie.
+Puntero a una [**estructura RECT.**](/previous-versions//dd162897(v=vs.85)) Especifica el rectángulo de destino. Establezca este parámetro en **NULL para** especificar toda la superficie.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Puntero a una [**estructura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi
 
 Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Puntero a una [**estructura RECT.**](/previous-versions//dd162897(v=vs.85)) Especifica el rectángulo de origen. Establezca este parámetro en **NULL** para especificar toda la superficie.
+Puntero a una [**estructura RECT.**](/previous-versions//dd162897(v=vs.85)) Especifica el rectángulo de origen. Establezca este parámetro en **NULL para** especificar toda la superficie.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Puntero a una [**estructura RECT.**](/previous-versions//dd162897(v=vs.85)) Espe
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de uno o varios filtros [ \_ D3DX,](d3dx-filter.md)que controlan cómo se filtra la imagen. Especificar D3DX DEFAULT para este parámetro equivale a especificar \_ D3DX \_ FILTER \_ TRIANGLE \| D3DX \_ FILTER \_ DITHER.
+Combinación de uno o varios [filtros D3DX, \_ ](d3dx-filter.md)que controlan cómo se filtra la imagen. Especificar D3DX DEFAULT para este parámetro equivale a especificar \_ D3DX \_ FILTER \_ TRIANGLE \| D3DX \_ FILTER \_ DITHER.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Combinación de uno o varios filtros [ \_ D3DX,](d3dx-filter.md)que controlan c�
 
 Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
 
-[**Valor D3DCOLOR**](d3dcolor.md) que se reemplazará por negro transparente o 0 para deshabilitar la clave de color. Siempre es un color ARGB de 32 bits, independientemente del formato de imagen de origen. Alfa es significativo y normalmente debe establecerse en FF para las claves de color opacas. Por lo tanto, para el negro opaco, el valor sería igual a 0xFF000000.
+[**Valor D3DCOLOR que**](d3dcolor.md) se reemplazará por negro transparente o 0 para deshabilitar la clave de color. Siempre es un color ARGB de 32 bits, independientemente del formato de imagen de origen. Alfa es significativo y normalmente debe establecerse en FF para las claves de color opacas. Por lo tanto, para el negro opaco, el valor sería igual a 0xFF000000.
 
 </dd> </dl>
 
@@ -125,11 +125,11 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función controla la conversión a y desde formatos de textura comprimidos.
 
-Escribir en una superficie que no sea de nivel cero no hará que se actualice el rectángulo desnuciado. Si se llama a **D3DXLoadSurfaceFromSurface** y la superficie aún no estaba desa prueba (es poco probable en escenarios de uso normal), la aplicación debe llamar explícitamente a [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) en la superficie.
+Escribir en una superficie que no sea de nivel cero no hará que se actualice el rectángulo desnuciado. Si se llama a **D3DXLoadSurfaceFromSurface** y la superficie aún no estaba desasegada (es poco probable en escenarios de uso normal), la aplicación debe llamar explícitamente a [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) en la superficie.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -142,7 +142,7 @@ Escribir en una superficie que no sea de nivel cero no hará que se actualice el
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

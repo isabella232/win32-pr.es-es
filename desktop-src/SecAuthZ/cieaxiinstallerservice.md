@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d8e96600762db414fa93316098d5ba87dabfbc3138f516d3d69f1740d0d33d2b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b5ae7ec2a2c904a523f3388fa08a3bf2e44fec9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117783091"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160849"
 ---
 # <a name="cieaxiinstallerservice-object"></a>Objeto CIeAxiInstallerService
 
@@ -43,7 +43,7 @@ Este objeto no se declara en un encabezado público. Las aplicaciones deben defi
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                 |
 
 

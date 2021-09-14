@@ -15,14 +15,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d467d60444588001a115f9b1ad3667f35fc9edab69a64402f42b4885d70a86d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ba382552d700ddddee02cdc1343936e6bcf6837
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117912964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969872"
 ---
-# <a name="cd3dx12_pipeline_state_stream_input_layout-structure"></a>Estructura DE DISEÑO DE ENTRADA DE \_ FLUJO DE ESTADO DE \_ \_ CANALIZACIÓN \_ \_ CD3DX12
+# <a name="cd3dx12_pipeline_state_stream_input_layout-structure"></a>Estructura DE DISEÑO DE ENTRADA DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12 \_ \_ \_ \_ \_
 
 Estructura auxiliar que se usa para describir un diseño de entrada como un único objeto adecuado para una descripción de secuencia.
 
@@ -40,7 +40,7 @@ struct CD3DX12_PIPELINE_STATE_STREAM_INPUT_LAYOUT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -51,10 +51,10 @@ Crea una nueva instancia sin inicializar de un DISEÑO DE ENTRADA DE FLUJO DE ES
 
 </dd> <dt>
 
-**DISEÑO DE ENTRADA DE FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ \_ \_ \_ CD3DX12(D3D12 \_ INPUT \_ LAYOUT \_ DESC const &i)**
+**CD3DX12 \_ PIPELINE STATE STREAM INPUT \_ \_ \_ \_ LAYOUT(D3D12 \_ INPUT LAYOUT \_ \_ DESC const &i)**
 </dt> <dd>
 
-Crea una nueva instancia de un DISEÑO DE ENTRADA DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12, inicializado con un tipo de subobjeto D3D12 PIPELINE STATE SUBOBJECT TYPE INPUT LAYOUT y datos de subobjeto copiados de i , una estructura \_ \_ \_ \_ \_ [**\_ \_ \_ DESC INPUT LAYOUT de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_input_layout_desc) **\_ \_ \_ \_ \_ \_** 
+Crea una nueva instancia de UN DISEÑO DE ENTRADA DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12, inicializado con un tipo de subobjeto D3D12 PIPELINE STATE SUBOBJECT TYPE INPUT LAYOUT y datos de subobjetos copiados de i , una estructura \_ \_ \_ \_ \_ [**\_ \_ \_ DESC INPUT LAYOUT de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_input_layout_desc) **\_ \_ \_ \_ \_ \_** 
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Conversión implícita a una [**estructura \_ \_ \_ DESC D3D12 INPUT LAYOUT.**](
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 CD3DX12 PIPELINE STATE STREAM INPUT LAYOUT es una especialización typedef de la plantilla \_ \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
 
@@ -95,7 +95,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_INPUT_LAYOUT_DESC, D3D12_P
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -105,7 +105,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_INPUT_LAYOUT_DESC, D3D12_P
 [**SUBOBJETO CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**TIPO DE \_ SUBOBJETO DE ESTADO \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE SUBOBJETO DE ESTADO \_ \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

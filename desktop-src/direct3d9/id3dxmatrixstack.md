@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b8fa483be72d29cc869b2bd468cff25033a80187bef69317af4894fc05b096dc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 62681c468fa7e78e6fd08c458798d98b467b992e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119856455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969647"
 ---
 # <a name="id3dxmatrixstack-interface"></a>Interfaz ID3DXMATRIXStack
 
 Las aplicaciones usan los métodos de la interfaz ID3DXMATRIXStack para manipular una pila de matrices.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ID3DXMATRIXStack** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXMATRIXStack** también tiene estos tipos de miembros:
 
@@ -46,11 +46,11 @@ La **interfaz ID3DXMATRIXStack** tiene estos métodos.
 | [**MultMatrixLocal**](id3dxmatrixstack--multmatrixlocal.md)                 | Determina el producto de la matriz dada y la matriz actual.<br/>                                                              |
 | [**Pop**](id3dxmatrixstack--pop.md)                                         | Quita la matriz actual de la parte superior de la pila.<br/>                                                                           |
 | [**Empuje**](id3dxmatrixstack--push.md)                                       | Agrega una matriz a la pila.<br/>                                                                                                     |
-| [**RotateAxis**](id3dxmatrixstack--rotateaxis.md)                           | Gira (en relación con el espacio de coordenadas universal) alrededor de un eje arbitrario.<br/>                                                          |
+| [**RotateAxis**](id3dxmatrixstack--rotateaxis.md)                           | Gira (en relación con el espacio de coordenadas del mundo) alrededor de un eje arbitrario.<br/>                                                          |
 | [**RotateAxisLocal**](id3dxmatrixstack--rotateaxislocal.md)                 | Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.<br/>                                             |
-| [**RotateYawPitchRoll**](id3dxmatrixstack--rotateyawpitchroll.md)           | Gira (en relación con el espacio de coordenadas universal) alrededor de un eje arbitrario.<br/>                                                          |
+| [**RotateYawPitchRoll**](id3dxmatrixstack--rotateyawpitchroll.md)           | Gira (en relación con el espacio de coordenadas del mundo) alrededor de un eje arbitrario.<br/>                                                          |
 | [**RotateYawPitchRollLocal**](id3dxmatrixstack--rotateyawpitchrolllocal.md) | Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.<br/>                                             |
-| [**Escala**](id3dxmatrixstack--scale.md)                                     | Escale la matriz actual sobre el origen de la coordenada mundial.<br/>                                                                     |
+| [**Escala**](id3dxmatrixstack--scale.md)                                     | Escale la matriz actual sobre el origen de coordenadas del mundo.<br/>                                                                     |
 | [**ScaleLocal**](id3dxmatrixstack--scalelocal.md)                           | Escale la matriz actual sobre el origen del objeto.<br/>                                                                               |
 | [**Traducir**](id3dxmatrixstack--translate.md)                             | Determina el producto de la matriz actual y la matriz de traducción calculada determinada por los factores especificados (x, y y z).<br/> |
 | [**TranslateLocal**](id3dxmatrixstack--translatelocal.md)                   | Determina el producto de la matriz de traducción calculada determinada por los factores especificados (x, y y z) y la matriz actual.<br/> |
@@ -59,7 +59,7 @@ La **interfaz ID3DXMATRIXStack** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **interfaz ID3DXMATRIXStack** se obtiene mediante una llamada a la función [**D3DXCreateMatrixStack.**](d3dxcreatematrixstack.md)
 
@@ -84,7 +84,7 @@ typedef interface ID3DXMATRIXStack *LPD3DXMATRIXSTACK;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

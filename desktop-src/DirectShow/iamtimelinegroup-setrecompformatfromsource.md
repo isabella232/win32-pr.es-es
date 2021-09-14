@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: dd54f8a555e104fecd87b755cf5938cf9c67654e1d8e2ba07b88920c0c047604
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adf4bfcf9d76ed40092eba7c612f4213c7aacb0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119905025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892036"
 ---
 # <a name="iamtimelinegroupsetrecompformatfromsource-method"></a>Método IAMTimelineGroup::SetRecompFormatFromSource
 
@@ -70,7 +70,7 @@ Devuelve valores **HRESULT.** Estos son algunos de los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método busca el archivo de origen asociado a *pSource,* recupera el tipo de medio de la primera secuencia de vídeo del archivo y establece el formato de compresión de grupo con ese tipo. Para obtener más información sobre los formatos de compresión, [**vea IAMTimelineGroup::SetSmartRecompressFormat**](iamtimelinegroup-setsmartrecompressformat.md).
 
@@ -95,7 +95,7 @@ Este método busca el archivo de origen asociado a *pSource,* recupera el tipo d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

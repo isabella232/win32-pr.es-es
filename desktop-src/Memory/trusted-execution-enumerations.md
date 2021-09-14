@@ -4,12 +4,12 @@ ms.assetid: 7B122E1F-AAF8-4834-B262-CD641D16DA4E
 title: Enumeraciones de ejecución de confianza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eeb4c3664bf4d8575377a2c24549a1b1160528cfc1f475dc3c03efe922d6918
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46d9ac546d7fdb25244580ccee1ce9abf2fbcd90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118386293"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159809"
 ---
 # <a name="trusted-execution-enumerations"></a>Enumeraciones de ejecución de confianza
 

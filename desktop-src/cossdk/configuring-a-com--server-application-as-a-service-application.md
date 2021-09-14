@@ -4,12 +4,12 @@ ms.assetid: 56487746-328d-4435-af58-368aaa15b32a
 title: Configuración de una aplicación de servidor COM+ como aplicación de servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11ad6ec0af4ddf6d7ac7bf703209af2412e1ca4e128a942e7e1ecd089b69e278
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3b3bbf8b691221590d6588c48dbef5198772439
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119991195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160510"
 ---
 # <a name="configuring-a-com-server-application-as-a-service-application"></a>Configuración de una aplicación de servidor COM+ como aplicación de servicio
 
@@ -19,7 +19,7 @@ Una aplicación de servidor COM+ se puede crear como servicio para iniciarse aut
 
 1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, busque la aplicación de servidor COM+ que desea ejecutar como servicio.
 
-2.  Haga clic con el botón derecho en la aplicación de servidor COM+ y, a continuación, haga clic **en Propiedades.**
+2.  Haga clic con el botón derecho en la aplicación de servidor COM+ y, a continuación, haga clic en **Propiedades**.
 
 3.  En el cuadro **de** diálogo Propiedades , haga clic en **la pestaña** Activación .
 

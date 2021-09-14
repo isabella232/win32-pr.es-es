@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a2a4b3fc716ba0865a010155e2f1e8a592cab396f5efb0c2d4afa3264da4a337
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fa6e9cbb69da504a929e23722068583489063b9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119756045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160154"
 ---
 # <a name="iamtimelinesrcgetmediatimes-method"></a>IamTimelineSrc::GetMediaTimes (método)
 
@@ -64,7 +64,7 @@ Recibe el tiempo de detenerse del medio, en unidades de 100 nanosegundos.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las horas de los medios son relativas al archivo multimedia original. Para obtener más información, vea [Time in DirectShow Editing Services](time-in-directshow-editing-services.md).
 
@@ -89,7 +89,7 @@ Las horas de los medios son relativas al archivo multimedia original. Para obten
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

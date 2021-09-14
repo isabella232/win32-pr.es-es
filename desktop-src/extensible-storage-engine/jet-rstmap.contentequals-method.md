@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a656a537b4f5bff9547d4e5f94971c304d2bf524c6f077a6e2f170eb3a52741a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4c03c9dcb0cb9b0362a7c9efa348ba4c479f16cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120093395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160375"
 ---
 # <a name="jet_rstmapcontentequals-method"></a>JET_RSTMAP. Método ContentEquals
 
@@ -61,7 +61,7 @@ public bool ContentEquals(
 
 #### <a name="parameters"></a>Parámetros
 
-  - Otros  
+  - otro  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_RSTMAP](./jet-rstmap-class.md)  
     
     Instancia de que se va a comparar con esta instancia.

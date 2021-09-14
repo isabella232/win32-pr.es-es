@@ -4,12 +4,12 @@ ms.assetid: 8caad40f-ab8e-db2f-da11-18f3d3ccf6ef
 title: Funciones de comparación de vectores
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c294388aaa7e29454b189729468076f3266347ab2b0876aed71d9d0b5adad3c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a283c9c6510fba76f82e7c5de0741021008aac1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118500365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966308"
 ---
 # <a name="vector-comparison-functions"></a>Funciones de comparación de vectores
 
@@ -30,7 +30,7 @@ Enumera las funciones de comparación de vectores.
 | [**XMVectorGreaterOrEqualR**](/windows/win32/api/directxmath/nf-directxmath-xmvectorgreaterorequalr)<br/> | Realiza una prueba por componente para un valor mayor o igual que entre dos vectores y establece un valor de comparación que se puede examinar mediante funciones como [**XMComparisonAllTrue**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonalltrue).<br/>                                                       |
 | [**XMVectorGreaterR**](/windows/win32/api/directxmath/nf-directxmath-xmvectorgreaterr)<br/>               | Realiza una prueba por componente para un valor mayor que entre dos vectores y establece un valor de comparación que se puede examinar mediante funciones como [**XMComparisonAllTrue**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonalltrue).<br/>                                                                |
 | [**XMVectorLess**](/windows/win32/api/directxmath/nf-directxmath-xmvectorless)<br/>                       | Realiza una prueba por componente para menos de entre dos vectores.<br/>                                                                                                                                                                                               |
-| [**XMVectorLessOrEqual**](/windows/win32/api/directxmath/nf-directxmath-xmvectorlessorequal)<br/>         | Realiza una prueba por componente para menos o igual que entre dos vectores.<br/>                                                                                                                                                                                      |
+| [**XMVectorLessOrEqual**](/windows/win32/api/directxmath/nf-directxmath-xmvectorlessorequal)<br/>         | Realiza una prueba por componente para menos de o igual entre dos vectores.<br/>                                                                                                                                                                                      |
 | [**XMVectorNearEqual**](/windows/win32/api/directxmath/nf-directxmath-xmvectornearequal)<br/>             | Realiza una prueba por componente para comprobar la igualdad de dos vectores dentro de un umbral determinado. <br/>                                                                                                                                                                           |
 
 

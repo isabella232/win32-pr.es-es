@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 55df5e579b724a26e30223a0a0df7ffa815bda5a64b6f7d7e7e2c2c7f02f2fc1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14753500ac15fb0ed30d46b1121431af78e1fe93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118804581"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970864"
 ---
 # <a name="d3dxcreateeffectpool-function"></a>Función D3DXCreateEffectPool
 
@@ -59,7 +59,7 @@ Si los argumentos no son válidos, el método devolverá D3DERR \_ INVALIDCALL.
 
 Si se produce un error en el método, el valor devuelto será E \_ FAIL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para los efectos dentro de un grupo, los parámetros compartidos con los mismos valores de recurso compartido de nombres.
 

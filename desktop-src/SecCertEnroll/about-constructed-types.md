@@ -4,12 +4,12 @@ ms.assetid: 90c52d71-5d5b-479c-8e29-06c9f0f6da4a
 title: Tipos construidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85ed62c4a59bfc0944ad5e31673ab0ea9031c0175014c8fc1c6b6f2cc071b153
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a515e6e03ebf3c95ff1cabc1bf7f12eb423df27d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118904494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160762"
 ---
 # <a name="constructed-types"></a>Tipos construidos
 
@@ -30,7 +30,7 @@ Una extensión consta de un [*identificador*](/windows/desktop/SecGloss/o-gly) d
 
 Etiqueta de codificación: 0x30
 
-Contiene una serie ordenada de campos de uno o varios tipos. Los campos se pueden marcar **como OPTIONAL** o **DEFAULT.** Además, para evitar ambigüedades al decodificar, los campos opcionales sucesivos deben diferir entre sí mediante el uso de un identificador único (un entero entre corchetes como 1) y de un campo obligatorio siguiente, como se muestra en el ejemplo \[ \] siguiente.
+Contiene una serie ordenada de campos de uno o varios tipos. Los campos se pueden marcar **como OPTIONAL** o **DEFAULT.** Además, para evitar ambigüedades alcoding, los campos opcionales sucesivos deben diferir entre sí mediante el uso de un identificador único (un entero entre corchetes como 1 ) y de un siguiente campo obligatorio, como se muestra en el ejemplo \[ \] siguiente.
 
 ``` syntax
 SomeValue ::= SEQUENCE 
@@ -60,7 +60,7 @@ Otra manera de ver la diferencia entre **SEQUENCE** y **SEQUENCE OF** es compara
 
 Etiqueta de codificación: 0x31
 
-Contiene una serie desordenada de campos de uno o varios tipos. Esto difiere de una **secuencia que** contiene una lista ordenada. La especificación de una lista desordenada permite a una aplicación proporcionar los campos de estructura al codificador en el orden más adecuado. Al igual que **con SEQUENCE**, los campos de una **construcción SET** se pueden marcar con **OPTIONAL** o **DEFAULT,** y los identificadores únicos deben usarse para eliminar la ambigüedad del proceso de descodificado. La diferencia entre **SET** y **SET OF** es que los elementos de una construcción **SET OF** deben ser del mismo tipo.
+Contiene una serie desordenada de campos de uno o varios tipos. Esto difiere de una **secuencia que** contiene una lista ordenada. La especificación de una lista desordenada permite que una aplicación proporcione los campos de estructura al codificador en el orden más adecuado. Al igual que **con SEQUENCE**, los campos de una construcción **SET** se pueden marcar con **OPTIONAL** o **DEFAULT,** y los identificadores únicos deben usarse para eliminar la ambigüedad del proceso de descodificador. La diferencia entre **SET** y **SET OF** es que los elementos de una construcción **SET OF** deben ser del mismo tipo.
 
 ``` syntax
 Name ::= SEQUENCE OF RelativeDistinguishedName
@@ -74,11 +74,11 @@ AttributeTypeValue ::= SEQUENCE
 }
 ```
 
-## <a name="choice"></a>Elección
+## <a name="choice"></a>ELECCIÓN
 
 Etiqueta de codificación: no aplicable
 
-Define una opción entre alternativas. Cada alternativa debe identificarse de forma única mediante un entero entre corchetes para evitar ambigüedades alcoding. Cuando se codifica, la **construcción CHOICE** tendrá el valor de etiqueta de codificación de la alternativa elegida.
+Define una opción entre alternativas. Cada alternativa debe identificarse de forma única mediante un entero entre corchetes para evitar ambigüedades al decodificar. Cuando se codifica, la **construcción CHOICE** tendrá el valor de etiqueta de codificación de la alternativa elegida.
 
 ``` syntax
 AltNames ::= SEQUENCE OF GeneralName

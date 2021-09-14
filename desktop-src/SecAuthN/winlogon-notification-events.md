@@ -4,12 +4,12 @@ ms.assetid: 48b0f389-5b3c-4b13-ad23-a8bc6bcd1850
 title: Eventos de notificación de Winlogon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ea7359ef4d1d053e438d30564fcededbf3a0ccb10275cd6e4f669c2a20c54b1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58827dc2699c92dfc3a814d2366608e1bd3fb662
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160878"
 ---
 # <a name="winlogon-notification-events"></a>Eventos de notificación de Winlogon
 
@@ -27,7 +27,7 @@ ms.locfileid: "117785725"
 | **StartScreenSaver**<br/>     | Este evento tiene lugar cuando se ha iniciado el protector de pantalla. Normalmente, esto sucede después de que un usuario haya estado inactivo durante un período de tiempo establecido.<br/> Las funciones que administran este evento no deben mostrar una interfaz de usuario. **La notificación de eventos StartScreenSaver** está pensada solo con fines informativos.<br/> |
 | **StartShell**<br/>           | Este evento se produce después de que el usuario haya iniciado sesión en el sistema, se hayan establecido conexiones de red y se haya iniciado el programa de shell especificado por el usuario (normalmente Windows Explorer).<br/>                                                                                                                |
 | **Startup**<br/>              | Este evento tiene lugar cuando se inicia o reinicia el sistema.<br/>                                                                                                                                                                                                                                               |
-| **StopScreenSaver**<br/>      | Este evento tiene lugar cuando se ha detenido el protector de pantalla. Normalmente esto sucede cuando hay actividad de teclado o mouse.<br/> Las funciones que administran este evento no deben mostrar una interfaz de usuario. **La notificación de eventos StopScreenSaver** está pensada solo con fines informativos.<br/>                  |
+| **StopScreenSaver**<br/>      | Este evento tiene lugar cuando se detiene el protector de pantalla. Normalmente esto sucede cuando hay actividad de teclado o mouse.<br/> Las funciones que administran este evento no deben mostrar una interfaz de usuario. **La notificación de eventos StopScreenSaver** está pensada solo con fines informativos.<br/>                  |
 | **Desbloquear**<br/>               | Este evento tiene lugar cuando el usuario desbloquea la estación de trabajo o cuando un administrador del sistema invalida el bloqueo y cierra la sesión del usuario.<br/>                                                                                                                                                                         |
 
 

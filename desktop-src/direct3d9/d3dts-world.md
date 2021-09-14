@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 68b0a3435df2ec36fca34fb8a8e4f2638ae9d432a009870ce85cbbdf2a42f1ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c3c8f0ac30230a747fba34d9962791b4b331d647
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119850085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966776"
 ---
 # <a name="d3dts_world-macro"></a>Macro D3DTS \_ WORLD
 
@@ -41,7 +41,7 @@ Esta macro no tiene parámetros.
 
 [**D3DTRANSFORMSTATETYPE equivalente**](./d3dtransformstatetype.md) a [**D3DTS \_ WORLDMATRIX(0).**](./d3dts-worldmatrix.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta macro se proporciona para facilitar la porción de aplicaciones existentes a Direct3D 9.
 
@@ -55,7 +55,7 @@ Esta macro se proporciona para facilitar la porción de aplicaciones existentes 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

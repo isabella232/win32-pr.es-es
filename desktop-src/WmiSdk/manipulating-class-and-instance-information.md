@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1074fd6bd6fd75cb838b3c399dcb1505c5644145522f552862e77e05da70a0c4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86e3e84deae73e206f41e9ea25e02b5d11373f3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119996425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967164"
 ---
 # <a name="manipulating-class-and-instance-information"></a>Manipulación de la información de clase e instancia
 
-WMI proporciona una variedad de técnicas para recuperar y manipular información de instancias y clases WMI, mediante Microsoft PowerShell, Visual Basic Scripting Edition (VBScript) y C++.
+WMI proporciona una variedad de técnicas para recuperar y manipular información de clase e instancia de WMI, mediante Microsoft PowerShell, Visual Basic Scripting Edition (VBScript) y C++.
 
-En la tabla siguiente se enumeran los temas que analizan las técnicas para recuperar y manipular información de instancias y clases WMI.
+En la tabla siguiente se enumeran los temas que tratan las técnicas para recuperar y manipular información de instancias y clases WMI.
 
 
 
@@ -42,11 +42,11 @@ En la tabla siguiente se enumeran los temas que analizan las técnicas para recu
 
 ## <a name="manipulating-data-using-vbscript"></a>Manipulación de datos mediante VBScript
 
-Puede usar el acceso directo para tener acceso a las propiedades WMI de una clase o instancia de WMI directamente en [**un objeto SWbemObject,**](swbemobject.md)en lugar de a través de la colección de propiedades [de](accessing-a-collection.md) ese objeto. También puede ejecutar métodos en ese objeto en el estilo nativo del lenguaje de programación en lugar de usar [**SWbemServices.Exellamada a cMethod.**](swbemservices-execmethod.md) Por ejemplo, el método [**Create**](/windows/desktop/CIMWin32Prov/create-method-in-class-win32-process) del proceso [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-process) tenía tres parámetros en Windows 2000, pero tiene cuatro parámetros en Windows Server 2003.
+Puede usar el acceso directo para tener acceso a las propiedades WMI de una clase [](accessing-a-collection.md) o instancia de WMI directamente en [**un objeto SWbemObject,**](swbemobject.md)en lugar de a través de la colección de propiedades de ese objeto. También puede ejecutar métodos en ese objeto en el estilo nativo del lenguaje de programación en lugar de usar la [**llamada SWbemServices.ExecMethod.**](swbemservices-execmethod.md) Por ejemplo, el [**método Create**](/windows/desktop/CIMWin32Prov/create-method-in-class-win32-process) del proceso [**\_ win32**](/windows/desktop/CIMWin32Prov/win32-process) tenía tres parámetros en Windows 2000, pero tiene cuatro parámetros en Windows Server 2003.
 
 Mediante el acceso directo, puede tratar las propiedades y los métodos wmi como si fueran propiedades de automatización y métodos [**de SWbemObject**](swbemobject.md).
 
-En el ejemplo siguiente se muestra cómo puede acceder a una propiedad.
+En el ejemplo siguiente se muestra cómo puede acceder a una propiedad .
 
 
 ```VB
@@ -84,9 +84,9 @@ valueOfElement = MyDisk.MyArrayProperty(3)
 
 
 
-En el ejemplo de código de VBScript siguiente se muestra cómo generar una instancia de los parámetros de entrada para el método [**Create**](/windows/desktop/CIMWin32Prov/create-method-in-class-win32-process) en la clase Process de [**\_ Win32**](/windows/desktop/CIMWin32Prov/win32-process) como [**SWbemObject,**](swbemobject.md)rellenar las propiedades de entrada y, a continuación, ejecutar el método **Create** mediante [**SWbemServices.ExecMethod**](swbemservices-execmethod.md).
+En el ejemplo de código de VBScript siguiente se muestra cómo generar una instancia de los parámetros de entrada para el método [**Create**](/windows/desktop/CIMWin32Prov/create-method-in-class-win32-process) en la clase Process de [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-process) como [**SWbemObject,**](swbemobject.md)rellenar las propiedades de entrada y, a continuación, ejecutar el método **Create** mediante [**SWbemServices.ExecMethod**](swbemservices-execmethod.md).
 
-La [**propiedad SWbemObject.Methods \_**](swbemobject-methods-.md) devuelve una colección [**SWbemMethodSet**](swbemmethodset.md) de los [**métodos Process \_ de Win32.**](/windows/desktop/CIMWin32Prov/win32-process) Los miembros del conjunto de métodos son [**objetos SWbemMethod**](swbemmethod.md) y [**SWbemMethod.InParameters**](swbemmethod-inparameters.md) devuelve los parámetros de entrada para [**el método Create.**](/windows/desktop/CIMWin32Prov/create-method-in-class-win32-process) El parámetro *de entrada CommandLine* necesario se establece en "calc.exe". A continuación, el método se ejecuta [**SWbemServices.ExecMethod**](swbemservices-execmethod.md), lo que da lugar al inicio de un proceso calc.exe ejecución.
+La [**propiedad SWbemObject.Methods \_**](swbemobject-methods-.md) devuelve una colección [**SWbemMethodSet**](swbemmethodset.md) de los [**métodos Process \_ de Win32.**](/windows/desktop/CIMWin32Prov/win32-process) Los miembros del conjunto de métodos son [**objetos SWbemMethod**](swbemmethod.md) y [**SWbemMethod.InParameters**](swbemmethod-inparameters.md) devuelve los parámetros de entrada para [**el método Create.**](/windows/desktop/CIMWin32Prov/create-method-in-class-win32-process) El parámetro *de entrada CommandLine* necesario se establece en "calc.exe". A continuación, [**SWbemServices.ExecMethod**](swbemservices-execmethod.md)ejecuta el método , lo que da lugar al inicio de un proceso calc.exe ejecución.
 
 
 ```VB

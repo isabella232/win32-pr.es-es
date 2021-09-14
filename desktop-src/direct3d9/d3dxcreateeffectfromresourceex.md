@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: b72e17e648360a535f8090dc28323a3762a5cec0517f07ae78e9bb6d88045969
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d0ae7a0ee43f93019f3c4c1f6145b3d8aa0e4367
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120096255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970871"
 ---
 # <a name="d3dxcreateeffectfromresourceex-function"></a>Función D3DXCreateEffectFromResourceEx
 
@@ -108,7 +108,7 @@ Cadena de parámetros de efecto que el sistema de efectos omitirá. La cadena de
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Si *pSrcResource contiene* un efecto de texto, flags puede ser una combinación de marcas [D3DXSHADER](d3dxshader-flags.md) y [marcas D3DXFX;](d3dxfx.md) De lo contrario, *pSrcResource* contiene un efecto binario y las únicas marcas respetadas son las marcas D3DXFX. El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
+Si *pSrcResource contiene* un efecto de texto, las marcas pueden ser una combinación de marcas [D3DXSHADER](d3dxshader-flags.md) y [marcas D3DXFX;](d3dxfx.md) De lo contrario, *pSrcResource contiene* un efecto binario y las únicas marcas respetadas son las marcas D3DXFX. El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
 
 </dd> <dt>
 
@@ -145,20 +145,20 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función es una versión extendida de [**D3DXCreateEffectFromResource**](d3dxcreateeffectfromresource.md) que permite a una aplicación especificar qué constantes de efecto administrará la aplicación. El sistema de efectos omite una constante administrada por la aplicación. Es decir, la aplicación es responsable de inicializar la constante, así como de guardar y restaurar su estado siempre que sea necesario.
+Esta función es una versión extendida de [**D3DXCreateEffectFromResource**](d3dxcreateeffectfromresource.md) que permite a una aplicación especificar qué constantes de efecto administrará la aplicación. El sistema de efectos omite una constante administrada por la aplicación. Es decir, la aplicación es responsable de inicializar la constante, así como de guardar y restaurar su estado siempre que corresponda.
 
 Esta función comprueba cada constante de pSkipConstants para ver lo siguiente:
 
 -   Está enlazado a un registro constante.
 -   Solo se usa en el código del sombreador HLSL.
 
-Si una constante se denomina en la cadena que no está presente en el efecto, se omite.
+Si se denomina una constante en la cadena que no está presente en el efecto, se omite.
 
-Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos LPCTSTR se resuelve como LPCSTR.
+Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos LPCTSTR se resuelve en LPCSTR.
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en D3DXCreateEffectFromResourceW. De lo contrario, la llamada de función se resuelve en D3DXCreateEffectFromResourceA porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en D3DXCreateEffectFromResourceW. De lo contrario, la llamada de función se resuelve en D3DXCreateEffectFromResourceA porque se usan cadenas ANSI.
 
 D3DXCreateEffectFromResource carga datos de un recurso de tipo RT \_ RCDATA. Consulte MSDN para obtener más información sobre Windows recursos.
 
@@ -173,7 +173,7 @@ D3DXCreateEffectFromResource carga datos de un recurso de tipo RT \_ RCDATA. Con
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

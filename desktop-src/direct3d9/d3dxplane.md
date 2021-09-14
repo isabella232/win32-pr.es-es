@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 5fa7e7155cdcf5c5dc1996dee1dcf02d0190e4bb91b4c319231e2f03168722c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3df0c94dbd49cf38d9230a2c5392df8497c64761
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118095463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970860"
 ---
 # <a name="d3dxplane-structure-d3dx9mathh"></a>Estructura D3DXPLANE (D3dx9math.h)
 
@@ -38,7 +38,7 @@ typedef struct D3DXPLANE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -86,7 +86,7 @@ Coeficiente d del plano de recorte en la ecuación del plano general. Vea la sec
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los miembros de la **estructura D3DXPLANE** toman la forma de la ecuación de plano general. Encajan en la ecuación del plano general para que **x**+ **b** y + **c** z + **d** w = 0.
 
@@ -102,7 +102,7 @@ Los programadores de C++ pueden aprovechar la sobrecarga de operadores y la conv
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 58d75e358216e14df52f26b3f25d9cfb7d32490cf705b3fc80c4b61dfef7b310
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e5a9fdd92a2d978c746543fbbbeec6503d07404
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118095191"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969704"
 ---
 # <a name="d3dxvec4transform-function-d3dx9mathh"></a>Función D3DXVec4Transform (D3dx9math.h)
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
 Puntero a una [**estructura D3DXVECTOR4**](d3dxvector4.md) que es el vector 4D transformado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec4Transform** se puede usar como parámetro para otra función.
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

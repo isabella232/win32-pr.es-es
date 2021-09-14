@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8a9ac757f5d02b6991073a99d67f6962f0370e9c8269e371311d6bbbc72a4e78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 149274a7dcb185f362ae8f58915b81af07a2bf5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118155163"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160167"
 ---
-# <a name="iamtimelineobjsetdirtyrange2-method"></a>IamTimelineObj::SetDirtyRange2 (método)
+# <a name="iamtimelineobjsetdirtyrange2-method"></a>Método IAMTimelineObj::SetDirtyRange2
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -64,7 +64,7 @@ Reservado.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -87,11 +87,11 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IamTimelineObj (interfaz)**](iamtimelineobj.md)
+[**IAMTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> </dl>
 
  

@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f2e2c891e303bf6e10c79ec06a71ef18a11b2df6e85d9f509f306f7515f4bf6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: df5ab5854ceddfb1a969742924c8063450e611bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120119705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969883"
 ---
 # <a name="cd3dx12_pipeline_state_stream_gs-structure"></a>Estructura GS de \_ FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ CD3DX12 \_
 
@@ -40,7 +40,7 @@ struct CD3DX12_PIPELINE_STATE_STREAM_GS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -54,7 +54,7 @@ Crea una nueva instancia sin inicializar de un GS DE FLUJO DE ESTADO DE CANALIZA
 **CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ GS(D3D12 \_ SHADER \_ BYTECODE const &i)**
 </dt> <dd>
 
-Crea una nueva instancia de un GS DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12, inicializado con un \_ \_ tipo de subobjeto \_ \_ **D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT TYPE \_ \_ GS** y datos de subobjeto copiados de i , una estructura BYTECODE DEL SOMBREADOR [**D3D12. \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
+Crea una nueva instancia de un GS DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12, inicializado con un \_ \_ tipo de subobjeto \_ \_ **D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT TYPE \_ \_ GS** y datos de subobjeto copiados de i , una estructura BYTECODE de SOMBREADOR [**D3D12. \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Conversión implícita a una [**estructura \_ \_ BYTECODE de SOMBREADOR D3D12.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 CD3DX12 PIPELINE STATE STREAM GS es una especialización typedef de la plantilla \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
 
@@ -95,7 +95,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_SHADER_BYTECODE, D3D12_PIP
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

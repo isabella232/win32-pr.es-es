@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102380
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: fbf143b2d6d1a1ef2f83b3d9bf8357f5f134cbc71d291e43258d765c0f9f71bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ece2850f2444f40f96382076de74a0f35785aa9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119040393"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966080"
 ---
 # <a name="esentntsystemcallfailedexception-members"></a>Miembros de EsentNTSystemCallFailedException
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

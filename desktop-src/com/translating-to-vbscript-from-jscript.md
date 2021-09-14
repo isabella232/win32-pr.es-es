@@ -4,16 +4,16 @@ description: Traducción a VBScript desde JScript
 ms.assetid: db1115e1-2abd-4b06-ad8d-c1f917cd3087
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3900ba82b258e6ee19cf06edb2f97247033778da5fcabaffe4a854e66a5fef73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 704f5ac608e94f883edc3b319fd04625e9a08d18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119992255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160534"
 ---
 # <a name="translating-to-vbscript-from-jscript"></a>Traducción a VBScript desde JScript
 
-En VBScript, **for**... **Cada** bucle enumera los miembros de una colección; en JScript, **para**... **En** el bucle in se enumeran los miembros de una JScript o una matriz. Para enumerar una colección en JScript, use un objeto Enumerador.
+En VBScript, **for**... **Cada** bucle enumera los miembros de una colección; en JScript, **para**... **El** bucle in enumera los miembros de una JScript o matriz. Para enumerar una colección en JScript, use un objeto Enumerador.
 
 JScript proporciona el objeto Error, que se puede usar para capturar y controlar los errores. El objeto Error es análogo al objeto Err de VBScript.
 

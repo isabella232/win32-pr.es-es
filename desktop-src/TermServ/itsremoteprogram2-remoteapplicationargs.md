@@ -1,5 +1,5 @@
 ---
-title: ItsRemoteProgram2 RemoteApplicationArgs, propiedad
+title: Propiedad ITSRemoteProgram2 RemoteApplicationArgs
 description: Argumentos de línea de comandos para RemoteApp.
 ms.assetid: c1c36876-df3d-4ef9-a5ac-f623bc51fe7b
 ms.tgt_platform: multiple
@@ -22,20 +22,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd5ac7f2d909666e5938d28a313a6ac1b893204312c729880e7987e3fd10e263
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b77cc7259520156321140c8f85713095f02e2b78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117756777"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160588"
 ---
-# <a name="itsremoteprogram2remoteapplicationargs-property"></a>ITSRemoteProgram2::RemoteApplicationArgs, propiedad
+# <a name="itsremoteprogram2remoteapplicationargs-property"></a>Propiedad ITSRemoteProgram2::RemoteApplicationArgs
 
 Argumentos de línea de comandos para RemoteApp.
 
 Esta propiedad es de solo escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -63,7 +63,7 @@ Argumentos de la línea de comandos de RemoteApp.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: WMI tiene varias herramientas de línea de comandos que usan los administradores y los escritores de proveedores WMI.
+description: WMI tiene varias herramientas de línea de comandos utilizadas por administradores y escritores de proveedores WMI.
 ms.assetid: 4766ca5b-81da-4167-b4f1-a215178a828a
 ms.tgt_platform: multiple
 title: Herramientas de la línea de comandos wmi
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f21685c91dd613d7b5c066dd6fa8ea174e493dbbac07c345da6b145d410e2c69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27331ccdc0decb030656e5497f3458720672e507
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118553149"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967019"
 ---
 # <a name="wmi-command-line-tools"></a>Herramientas de la línea de comandos wmi
 
-WMI tiene varias herramientas de línea de comandos que usan los administradores y los escritores de proveedores WMI.
+WMI tiene varias herramientas de línea de comandos utilizadas por administradores y escritores de proveedores WMI.
 
 
 

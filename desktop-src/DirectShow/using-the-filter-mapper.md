@@ -4,12 +4,12 @@ ms.assetid: 3f774350-4508-437f-98d1-cca91220f339
 title: Uso del asignador de filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48758c40b97477200b4fab1215eaccac53823771add86d6a8b915370776495a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2c2d7acf85a7b415fc161cd21e17d069b46c3f40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120049624"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891585"
 ---
 # <a name="using-the-filter-mapper"></a>Uso del asignador de filtros
 
@@ -97,7 +97,7 @@ El [**método EnumMatchingFilters**](/windows/desktop/api/Strmif/nf-strmif-ifilt
 
 -   Valor mínimo de meritorio: el filtro debe tener un valor de meritorio por encima de LA PROPIEDAD \_ \_ NO \_ USE.
 -   Tipos de entrada: el autor de la llamada pasa una matriz que contiene pares de tipos principales y subtipos. Solo coincidirán los filtros que admiten al menos uno de estos pares.
--   Coincidencia exacta: un filtro puede registrar **valores NULL** para el tipo principal, el subtipo, la categoría pin o el medio. A menos que especifique la coincidencia exacta, un **valor NULL** actúa como un carácter comodín, que coincide con cualquier valor que especifique. Con la coincidencia exacta, el filtro debe coincidir exactamente con los criterios. Sin embargo, si se da un parámetro **NULL** en los criterios de búsqueda, siempre actúa como un valor comodín o "no importa" y coincide con cualquier filtro.
+-   Coincidencia exacta: un filtro puede registrar **valores NULL** para el tipo principal, el subtipo, la categoría pin o el medio. A menos que especifique la coincidencia exacta, un **valor NULL** actúa como un carácter comodín y coincide con cualquier valor que especifique. Con la coincidencia exacta, el filtro debe coincidir exactamente con los criterios. Sin embargo, si se da un parámetro **NULL** en los criterios de búsqueda, siempre actúa como un valor comodín o "no importa" y coincide con cualquier filtro.
 
 ## <a name="related-topics"></a>Temas relacionados
 

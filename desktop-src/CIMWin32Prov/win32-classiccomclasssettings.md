@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI ClassicCOMClassSettings Association de Win32 relaciona una clase de modelo de objetos componentes (com) y la configuración utilizada para configurar las instancias de la clase com.
+description: La clase WMI de asociación ClassicCOMClassSettings de Win32 relaciona una clase de Modelo de objetos componentes (COM) y la configuración utilizada para configurar instancias de \_ la clase COM.
 ms.assetid: 50f253cc-b8ae-41ac-b01f-ea816f5ca3d4
 ms.tgt_platform: multiple
-title: Win32_ClassicCOMClassSettings (clase)
+title: Win32_ClassicCOMClassSettings clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,15 +17,15 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: fb9c190157742aeca7c1ba6008a784005d054ca6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160330"
 ---
-# <a name="win32_classiccomclasssettings-class"></a>\_Clase Win32 ClassicCOMClassSettings
+# <a name="win32_classiccomclasssettings-class"></a>Clase ClassicCOMClassSettings de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ ClassicCOMClassSettings** Association de Win32 relaciona una clase de modelo de objetos componentes (com) y la configuración utilizada para configurar las instancias de la clase com.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) de asociación **\_ ClassicCOMClassSettings de Win32** relaciona una clase de Modelo de objetos componentes (COM) y la configuración utilizada para configurar instancias de la clase COM.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -40,7 +40,7 @@ class Win32_ClassicCOMClassSettings : CIM_ElementSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ClassicCOMClassSettings de Win32** tiene estos tipos de miembros:
 
@@ -48,7 +48,7 @@ La **clase \_ ClassicCOMClassSettings de Win32** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ ClassicCOMClassSettings de Win32** tiene estas propiedades.
+La **clase Win32 \_ ClassicCOMClassSettings** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -61,10 +61,10 @@ Tipo de datos: **Win32 \_ ClassicCOMClass**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Element"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Element"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
 </dt> </dl>
 
-[**\_ ClassicCOMClass de Win32**](win32-classiccomclass.md) que representa la clase com donde se aplica la configuración.
+Clase [**\_ ClassicCOMClass de Win32**](win32-classiccomclass.md) que representa la clase COM donde se aplica la configuración.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo de datos: **Win32 \_ ClassicCOMClassSetting**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("configuración"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClassSetting")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Setting"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClassSetting")
 </dt> </dl>
 
-[**\_ ClassicCOMClassSetting de Win32**](win32-classiccomclasssetting.md) que representa los valores de configuración asociados a la clase com.
+[**Win32 \_ ClassicCOMClassSetting que**](win32-classiccomclasssetting.md) representa los valores de configuración asociados a la clase COM.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La **clase \_ ClassicCOMClassSettings de Win32** se deriva de [**\_ ElementSetting de CIM**](cim-elementsetting.md).
+La **clase \_ ClassicCOMClassSettings de Win32** se deriva del [**elemento \_ CIMSetting**](cim-elementsetting.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,17 +96,17 @@ La **clase \_ ClassicCOMClassSettings de Win32** se deriva de [**\_ ElementSetti
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_ELEMENTSETTING CIM**](cim-elementsetting.md)
+[**CIM \_ ElementSetting**](cim-elementsetting.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

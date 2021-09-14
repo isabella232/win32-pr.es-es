@@ -1,5 +1,5 @@
 ---
-description: La clase Dependency de CIM \_ representa una asociación que establece relaciones de dependencia entre objetos.
+description: La clase \_ de dependencia CIM representa una asociación que establece relaciones de dependencia entre objetos .
 ms.assetid: ff0d6b50-0920-443e-a984-e6a9ab4402b1
 ms.tgt_platform: multiple
 title: CIM_Dependency clase (proveedores WMI CIMWin32)
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1a2c1c568eeb8a3d753479c8663cc04293e76d38c5efb9919ab494b198657efa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b95d45efff51128b08dc5b6395309f49e85a79e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119921945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160355"
 ---
 # <a name="cim_dependency-class-cimwin32-wmi-providers"></a>CIM_Dependency clase (proveedores WMI CIMWin32)
 
-La **clase Dependency \_ de CIM** representa una asociación que establece relaciones de dependencia entre objetos.
+La **clase \_ de dependencia** CIM representa una asociación que establece relaciones de dependencia entre objetos .
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,15 +45,15 @@ class CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase Dependency \_ de CIM** tiene estos tipos de miembros:
+La **clase \_ de dependencia** CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase Dependency \_ de CIM** tiene estas propiedades.
+La **clase \_ de dependencia** CIM tiene estas propiedades.
 
 <dl> <dt>
 
@@ -83,11 +83,11 @@ Referencia al objeto que depende de la **propiedad Antecedente.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de la dependencia **CIM \_**, vea [Clases win32](win32-provider.md).
+WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de la dependencia CIM , vea [Clases win32](win32-provider.md). **\_**
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 

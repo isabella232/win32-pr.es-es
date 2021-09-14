@@ -9,12 +9,12 @@ keywords:
 - ADSI de recuperación de intervalos, mediante IDirectorySearch e IDirectoryObject
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 506d061dd49c98bdb3b8cc731a28d0dc0ee5fe9a0df5816abf259ece17e456ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 591d2cf7b65b7a8159a92de324f18fbe93164f0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119023063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970387"
 ---
 # <a name="using-idirectorysearch-and-idirectoryobject-for-range-retrieval"></a>Uso de IDirectorySearch e IDirectoryObject para la recuperación de intervalos
 
@@ -57,7 +57,7 @@ hr = pdo->ExecuteSearch(L"(objectClass=user)", pszAttrs, 2, &hSearch);
 
 
 
-Cuando se usa la [**interfaz IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) para la recuperación de intervalos, hay un problema que se debe solucionar específicamente. Cuando el intervalo solicitado supera el número de valores restantes, [**IDirectorySearch::GetColumn**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getcolumn) devolverá **E ADS COLUMN NOT \_ \_ \_ \_ SET**. Para recuperar los valores restantes, es necesario usar el carácter comodín de intervalo ' \* '. Por ejemplo, si un grupo contiene 150 miembros, los valores de miembro 0-100 se pueden recuperar normalmente mediante la recuperación por intervalos. Si se solicita entonces el intervalo 101-200, **IDirectorySearch::GetColumn** devolverá **E ADS COLUMN NOT \_ \_ \_ \_ SET**. Este problema se puede evitar mediante el método [**IDirectorySearch::GetNextColumnName.**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextcolumnname) Normalmente, **GetNextColumnName devolverá** la cadena de consulta original. Sin embargo, cuando el intervalo solicitado supera el número de valores restantes, **GetNextColumnName** devolverá una versión modificada de la cadena de consulta reemplazando el valor de intervalo alto por el carácter comodín de intervalo ' \* '. En el ejemplo anterior, la primera consulta se realizaría con una cadena de atributo de "member;range=0-100" y **GetNextColumnName** devolverá "member;range=0-100". En la segunda consulta, la cadena de atributo sería "member;range=101-200", pero **GetNextColumnName** devolverá "member;range=101- \* ". Este caso se puede determinar comparando la cadena de atributo original con el resultado de **GetNextColumnName**. Si las cadenas son diferentes, el último bloque de valores debe solicitarse de nuevo con el carácter comodín de intervalo.
+Cuando se usa la [**interfaz IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) para la recuperación de intervalos, hay un problema que se debe solucionar específicamente. Cuando el intervalo solicitado supera el número de valores restantes, [**IDirectorySearch::GetColumn**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getcolumn) devolverá **E ADS COLUMN NOT \_ \_ \_ \_ SET**. Para recuperar los valores restantes, es necesario usar el carácter comodín de intervalo ' \* '. Por ejemplo, si un grupo contiene 150 miembros, los valores de miembro 0-100 se pueden recuperar normalmente mediante la recuperación por intervalos. Si se solicita el intervalo 101-200, **IDirectorySearch::GetColumn** devolverá **E ADS COLUMN NOT \_ \_ \_ \_ SET**. Este problema se puede evitar mediante el método [**IDirectorySearch::GetNextColumnName.**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextcolumnname) Normalmente, **GetNextColumnName devolverá** la cadena de consulta original. Sin embargo, cuando el intervalo solicitado supera el número de valores restantes, **GetNextColumnName** devolverá una versión modificada de la cadena de consulta reemplazando el valor de intervalo alto por el carácter comodín de intervalo ' \* '. En el ejemplo anterior, la primera consulta se realizaría con una cadena de atributo de "member;range=0-100" y **GetNextColumnName** devolverá "member;range=0-100". En la segunda consulta, la cadena de atributo sería "member;range=101-200", pero **GetNextColumnName** devolverá "member;range=101- \* ". Este caso se puede determinar comparando la cadena de atributo original con el resultado de **GetNextColumnName**. Si las cadenas son diferentes, el último bloque de valores debe solicitarse de nuevo con el carácter comodín de intervalo.
 
 Para obtener más información y un ejemplo de código que muestra cómo usar la interfaz [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) para la recuperación de intervalos, vea Example [Code for Ranging with IDirectorySearch](example-code-for-ranging-with-idirectorysearch.md).
 

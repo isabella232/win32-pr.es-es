@@ -1,31 +1,31 @@
 ---
-description: Si desea ver una parte del archivo que no comienza al principio del archivo, debe crear un objeto de asignación de archivos.
+description: Si desea ver una parte del archivo que no se inicia al principio del archivo, debe crear un objeto de asignación de archivos.
 ms.assetid: e47a0e79-3000-479b-afba-dcd36210ea3d
 title: Crear una vista dentro de un archivo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 9425a1c491a5c7d8ae7861d53418ee0f349bf212
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159882"
 ---
 # <a name="creating-a-view-within-a-file"></a>Crear una vista dentro de un archivo
 
-Si desea ver una parte del archivo que no comienza al principio del archivo, debe crear un objeto de asignación de archivos. Este objeto es el tamaño de la parte del archivo que desea ver más el desplazamiento en el archivo. Por ejemplo, si desea ver el 1 kilobyte (1K) que empieza 131.072 bytes (128K) en el archivo, debe crear un objeto de asignación de archivos de al menos 132.096 bytes (129K) en tamaño. La vista inicia 131.072 bytes (128K) en el archivo y se extiende para al menos 1.024 bytes. En este ejemplo se presupone una granularidad de asignación de archivos de 64 KB.
+Si desea ver una parte del archivo que no se inicia al principio del archivo, debe crear un objeto de asignación de archivos. Este objeto es el tamaño de la parte del archivo que desea ver más el desplazamiento en el archivo. Por ejemplo, si desea ver el 1 kilobyte (1K) que comienza con 131 072 bytes (128 000) en el archivo, debe crear un objeto de asignación de archivos de al menos 132 096 bytes (129 090) de tamaño. La vista inicia 131 072 bytes (128 000) en el archivo y se extiende al menos durante 1024 bytes. En este ejemplo se supone una granularidad de asignación de archivos de 64 000.
 
-La granularidad de asignación de archivos afecta a la ubicación en la que se puede iniciar una vista de mapa. Una vista de mapa debe comenzar en un desplazamiento en el archivo que sea un múltiplo de la granularidad de asignación de archivos. Por tanto, es posible que los datos que desea ver sean el módulo de desplazamiento de archivos de la granularidad de la asignación en la vista. El tamaño de la vista es el desplazamiento del módulo de datos que es la granularidad de la asignación, más el tamaño de los datos que desea examinar.
+La granularidad de asignación de archivos afecta a dónde se puede iniciar una vista de mapa. Una vista de mapa debe comenzar en un desplazamiento en el archivo que es un múltiplo de la granularidad de asignación de archivos. Por lo tanto, los datos que desea ver pueden ser el módulo de desplazamiento de archivo de la granularidad de asignación en la vista. El tamaño de la vista es el desplazamiento del módulo de datos de la granularidad de asignación, más el tamaño de los datos que desea examinar.
 
-Por ejemplo, supongamos que la función [**GetSystemInfo**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsysteminfo) indica una granularidad de asignación de 64 KB. Para examinar 1 k de datos de 138.240 bytes (135K) en el archivo, haga lo siguiente:
+Por ejemplo, suponga que la [**función GetSystemInfo**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsysteminfo) indica una granularidad de asignación de 64 000. Para examinar 1K de datos de 138 240 bytes (135 000) en el archivo, haga lo siguiente:
 
-1.  Cree un objeto de asignación de archivos de al menos 139.264 bytes (136K) en tamaño.
-2.  Cree una vista de archivo que se inicie en un desplazamiento de archivo que sea el múltiplo más grande de la granularidad de asignación de archivos menos que el desplazamiento que necesite. En este caso, la vista de archivo comienza en el desplazamiento 131.072 (128K) en el archivo. La vista es 139264 bytes (136K) menos 131.072 bytes (128K) o 8.192 bytes (8K), en tamaño.
-3.  Cree un desplazamiento de puntero 7K en la vista para tener acceso al 1 k en el que está interesado.
+1.  Cree un objeto de asignación de archivos de al menos 139 264 bytes (136 000) de tamaño.
+2.  Cree una vista de archivo que comience en un desplazamiento de archivo que sea el múltiplo más grande de la granularidad de asignación de archivos menor que el desplazamiento que necesita. En este caso, la vista de archivo comienza en el desplazamiento 131 072 (128 000) en el archivo. La vista tiene 139264 bytes (136 000) menos 131 072 bytes (128 000) o 8192 bytes (8K), de tamaño.
+3.  Cree un desplazamiento de puntero 7K en la vista para acceder a la 1K en la que está interesado.
 
-Si los datos que desea se colocan en un límite de granularidad de asignación de archivos, podría hacer que la vista sea mayor que la granularidad de asignación de archivos. Esto evita dividir los datos en partes.
+Si los datos que desea delimitan un límite de granularidad de asignación de archivos, podría hacer que la vista sea mayor que la granularidad de asignación de archivos. Esto evita dividir los datos en partes.
 
-El siguiente programa ilustra el segundo ejemplo anterior.
+En el programa siguiente se muestra el segundo ejemplo anterior.
 
 
 ```C++

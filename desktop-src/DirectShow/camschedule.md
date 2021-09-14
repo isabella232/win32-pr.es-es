@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d2236eb66086bb590892401cab052f39d81a41941db38d2a73dedd5edb4c53ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1bef8ad07347284c53a3490c21032070788fa3ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118955414"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160272"
 ---
 # <a name="camschedule-class"></a>CLASE CAMSchedule
 
@@ -37,14 +37,14 @@ La `CAMSchedule` clase implementa un programador para los relojes de referencia.
 | [**GetNextAdviseTime**](camschedule-getnextadvisetime.md) | Recupera la hora de la siguiente solicitud de aviso.                                       |
 | [**AddAdvisePacket**](camschedule-addadvisepacket.md)     | Agrega una solicitud de asesoramiento a la lista de solicitudes pendientes.                              |
 | [**Unadvise**](camschedule-unadvise.md)                   | Quita una solicitud de asesoramiento.                                                           |
-| [**consejo**](camschedule-advise.md)                       | Envía todas las solicitudes programadas para una hora especificada o anterior.          |
+| [**Consejo**](camschedule-advise.md)                       | Envía todas las solicitudes programadas para una hora especificada o anterior.          |
 | [**GetEvent**](camschedule-getevent.md)                   | Recupera un identificador de evento, que se usa para indicar un cambio en la próxima hora de aviso. |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este objeto auxiliar mantiene una lista de solicitudes de aviso para un reloj de referencia. La [**clase CBaseReferenceClock**](cbasereferenceclock.md) la usa para ayudar a programar solicitudes de asesoramiento. Los relojes usan este objeto de la siguiente manera:
 

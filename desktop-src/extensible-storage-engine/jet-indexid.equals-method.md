@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 149a69d230f0cfca9bd1dc810d25109c3d5cbfd253b0666c05644c6a7ada1945
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 11b2c4c67706c8953aa42dedf32cb78cabfc3314
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119720395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965712"
 ---
 # <a name="jet_indexidequals-method"></a>JET_INDEXID. Método Equals
 
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

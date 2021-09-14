@@ -1,5 +1,5 @@
 ---
-description: La \_ enumeración TIMELINE MAJOR TYPE especifica el tipo principal de un \_ objeto.
+description: La \_ enumeración TIMELINE MAJOR \_ TYPE especifica el tipo principal de un objeto .
 ms.assetid: 1a5fde83-2a0a-4bcf-bffe-340a9d914885
 title: TIMELINE_MAJOR_TYPE enumeración (Qedit.h)
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: b18088a9d01b263c80a4ff941a6b7720043da708eaeaebf4f79a2084d1ed258f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 25c3e829aa73d1da78c110ffd148fb0ebaaebdd9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119501725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891657"
 ---
-# <a name="timeline_major_type-enumeration"></a>Timeline \_ MAJOR \_ TYPE (enumeración)
+# <a name="timeline_major_type-enumeration"></a>TIMELINE \_ MAJOR \_ TYPE (enumeración)
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -29,7 +29,7 @@ ms.locfileid: "119501725"
 
 La `TIMELINE_MAJOR_TYPE` enumeración especifica el tipo principal de un objeto .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -56,14 +56,14 @@ Objeto compuesto. Contiene una o varias pistas.
 
 </dd> <dt>
 
-<span id="TIMELINE_MAJOR_TYPE_TRACK"></span><span id="timeline_major_type_track"></span>**SEGUIMIENTO DE \_ TIPO PRINCIPAL DE ESCALA DE \_ \_ TIEMPO**
+<span id="TIMELINE_MAJOR_TYPE_TRACK"></span><span id="timeline_major_type_track"></span>**PISTA DE \_ TIPO PRINCIPAL DE ESCALA DE \_ \_ TIEMPO**
 </dt> <dd>
 
-Objeto de seguimiento. Contiene uno o varios orígenes.
+Realizar un seguimiento del objeto. Contiene uno o varios orígenes.
 
 </dd> <dt>
 
-<span id="TIMELINE_MAJOR_TYPE_SOURCE"></span><span id="timeline_major_type_source"></span>**ORIGEN \_ DE TIPO PRINCIPAL DE ESCALA DE \_ \_ TIEMPO**
+<span id="TIMELINE_MAJOR_TYPE_SOURCE"></span><span id="timeline_major_type_source"></span>**ORIGEN DE \_ TIPO PRINCIPAL DE ESCALA DE \_ \_ TIEMPO**
 </dt> <dd>
 
 Objeto de origen. Contiene una referencia a un origen multimedia.
@@ -73,18 +73,18 @@ Objeto de origen. Contiene una referencia a un origen multimedia.
 <span id="TIMELINE_MAJOR_TYPE_TRANSITION"></span><span id="timeline_major_type_transition"></span>**TRANSICIÓN \_ DE TIPO PRINCIPAL DE ESCALA DE \_ \_ TIEMPO**
 </dt> <dd>
 
-Objeto de transición. Define una transición entre compuestos, pistas u orígenes.
+Objeto de transición. Define una transición entre compuestos, pistas o orígenes.
 
 </dd> <dt>
 
 <span id="TIMELINE_MAJOR_TYPE_EFFECT"></span><span id="timeline_major_type_effect"></span>**EFECTO DE \_ TIPO PRINCIPAL DE ESCALA DE \_ \_ TIEMPO**
 </dt> <dd>
 
-Objeto de efecto. Define un efecto de entrada única que se va a aplicar a un objeto compuesto, de seguimiento u de origen.
+Objeto de efecto. Define un efecto de entrada única que se va a aplicar a un objeto compuesto, de seguimiento o de origen.
 
 </dd> <dt>
 
-<span id="TIMELINE_MAJOR_TYPE_GROUP"></span><span id="timeline_major_type_group"></span>**GRUPO \_ DE TIPOS PRINCIPALES DE ESCALA DE \_ \_ TIEMPO**
+<span id="TIMELINE_MAJOR_TYPE_GROUP"></span><span id="timeline_major_type_group"></span>**GRUPO \_ DE TIPOS PRINCIPAL DE ESCALA DE \_ \_ TIEMPO**
 </dt> <dd>
 
 Objeto de grupo. Contiene una o varias pistas de un tipo determinado.
@@ -101,7 +101,7 @@ Objeto de grupo. Contiene una o varias pistas de un tipo determinado.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

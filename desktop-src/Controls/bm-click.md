@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97fdf1e206546bcdb3fa0888276414bd44b927e96a8478be4ae8a5ce2d2a5169
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b86c4809ac1ded3a9b7c57d1b73b70ab1cebc3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118674987"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968732"
 ---
 # <a name="bm_click-message"></a>Mensaje \_ BM CLICK
 
@@ -49,7 +49,7 @@ Este mensaje no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Si el botón está en un cuadro de diálogo y el cuadro de diálogo no está activo, el mensaje **\_ BM CLICK** podría producir un error. Para asegurarse de que esta situación se ha establecido correctamente, llame a la función [**SetActiveWindow**](/windows/desktop/api/winuser/nf-winuser-setactivewindow) para activar el cuadro de diálogo antes de enviar el mensaje **BM \_ CLICK** al botón.
+Si el botón está en un cuadro de diálogo y el cuadro de diálogo no está activo, el mensaje **BM \_ CLICK** podría producir un error. Para asegurarse de que esta situación se ha establecido correctamente, llame a la función [**SetActiveWindow**](/windows/desktop/api/winuser/nf-winuser-setactivewindow) para activar el cuadro de diálogo antes de enviar el mensaje **BM \_ CLICK** al botón.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Si el botón está en un cuadro de diálogo y el cuadro de diálogo no está act
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

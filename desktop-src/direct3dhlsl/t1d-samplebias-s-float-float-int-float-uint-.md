@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 894f70de8757d79b5d9fe4d547e334fa15a0d45bee8db512a974072caac0a279
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb9443512c350ed701d7752bd529834e24d227c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118508285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966508"
 ---
 # <a name="samplebiassamplebiassfloatfloatintfloatuint-function-for-texture1d"></a>Función SampleBias::SampleBias(S,float,float,int,float,uint) para Texture1D
 
@@ -130,7 +130,7 @@ Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi
 
 El formato de textura, que es uno de los valores con tipo enumerados en [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

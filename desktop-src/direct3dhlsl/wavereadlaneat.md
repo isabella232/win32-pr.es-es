@@ -1,6 +1,6 @@
 ---
 title: Función WaveReadLaneAt
-description: Devuelve el valor de la expresión para el índice de lane especificado dentro de la ola especificada.
+description: Devuelve el valor de la expresión para el índice de la calle especificado dentro de la onda especificada.
 ms.assetid: CA9467D9-8885-4A5D-87F3-5BA40AE78993
 keywords:
 - Función HLSL de WaveReadLaneAt
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 08fa669f8c4284c26052dd68bdbe9ab4f5b99b80b8bdf9445aa3375f0a87a9c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 573730053a93a110381637ef8e62dc08a4aa1535
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118504625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970448"
 ---
 # <a name="wavereadlaneat-function"></a>Función WaveReadLaneAt
 
-Devuelve el valor de la expresión para el índice de lane especificado dentro de la ola especificada.
+Devuelve el valor de la expresión para el índice de la calle especificado dentro de la onda especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ La expresión que se va a evaluar.
 *laneIndex* 
 </dt> <dd>
 
-Índice del carril para el que se devolverá el resultado de *expr.*
+Índice del lane para el que se devolverá el resultado *expr.*
 
 </dd> </dl>
 
@@ -55,13 +55,13 @@ La expresión que se va a evaluar.
 
 El valor resultante es el resultado de *expr*. Será uniforme si *laneIndex* es uniforme.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función es realmente una difusión del valor en *el laneIndex*'th lane.
+Esta función es efectivamente una difusión del valor en *el laneIndex*'th lane.
 
 Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
-* [Shader Model 6](shader-model-6-0.md)
+* [Modelo de sombreador 6](shader-model-6-0.md)

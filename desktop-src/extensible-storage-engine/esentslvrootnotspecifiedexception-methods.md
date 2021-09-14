@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102901
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 56f44cf80f0f48667cc6235189f3692fee122e7dbf44e177f577a7094d94d40a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c94afe4b8c93099bbdb72e36e848d7a278eca2b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118771970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969328"
 ---
 # <a name="esentslvrootnotspecifiedexception-methods"></a>Métodos de EsentSLVRootNotSpecifiedException 
 

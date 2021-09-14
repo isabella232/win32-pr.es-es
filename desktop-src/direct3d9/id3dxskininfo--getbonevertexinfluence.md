@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8dfeff1f6c3e8fc7030fa33f8a23c89278a9dd2b1e59f043db7723eac7d32801
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e3cb7c530ed72a65f9a3e8de6b0735b1a7ae5e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118801151"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969616"
 ---
 # <a name="id3dxskininfogetbonevertexinfluence-method"></a>Método ID3DXSkinInfo::GetIonalVertexInfluence
 
@@ -43,12 +43,12 @@ HRESULT GetBoneVertexInfluence(
 
 <dl> <dt>
 
-*numnum* \[ En\]
+*ynum* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Índice de la estructura. Debe estar entre 0 y el número de tordos.
+Índice de la estructura. Debe estar entre 0 y el número de esqueletos.
 
 </dd> <dt>
 

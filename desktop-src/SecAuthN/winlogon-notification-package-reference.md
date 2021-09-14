@@ -4,12 +4,12 @@ ms.assetid: 84b242d1-7c46-4692-a1f2-48d5b3eea8e8
 title: Referencia del paquete de notificación de Winlogon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dd87c22ed5e7045bd8c5ce6c358ece83ad383de5f914a59edcc72795cdd07ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 836d73e1cba1cc1896a778b68fdd973e3bf1df34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118915044"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160877"
 ---
 # <a name="winlogon-notification-package-reference"></a>Referencia del paquete de notificación de Winlogon
 

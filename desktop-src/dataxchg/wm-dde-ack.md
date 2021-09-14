@@ -1,9 +1,9 @@
 ---
 title: WM_DDE_ACK mensaje (Dde.h)
-description: El mensaje DDE ACK de WM notifica a una aplicación datos dinámicos Exchange (DDE) la recepción y el procesamiento de los siguientes mensajes \_ \_ WM \_ DDE WM \_ WM, WM \_ DDE \_ EXECUTE, WM \_ DDE \_ DATA, WM \_ \_ DDE ADVISE, WM \_ DDE \_ UNADVISE, WM DDE INITIATE o \_ WM \_ \_ DDE REQUEST (en algunos \_ casos). Para publicar este mensaje, llame a la función PostMessage con los parámetros siguientes.
+description: El mensaje WM DDE ACK notifica a una aplicación datos dinámicos Exchange (DDE) la recepción y el procesamiento de los siguientes mensajes \_ \_ WM \_ DDE WM \_ WM, WM \_ DDE \_ EXECUTE, WM \_ DDE \_ DATA, WM \_ \_ DDE ADVISE, WM \_ DDE \_ UNADVISE, WM DDE INITIATE o \_ WM \_ \_ DDE REQUEST (en algunos \_ casos). Para publicar este mensaje, llame a la función PostMessage con los parámetros siguientes.
 ms.assetid: aca47dbf-e1f2-4725-8364-0aa7fcd98bd9
 keywords:
-- WM_DDE_ACK mensaje De datos Exchange
+- WM_DDE_ACK mensaje Datos Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf1aad39115e1bdb68208a9ccbb0d83eea934ef2ff8c6521a0602e081c7ed811
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a407fc6cad7077586539f119dd65be59a507cacd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119636245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160491"
 ---
 # <a name="wm_dde_ack-message"></a>Mensaje \_ DDE \_ ACK de WM
 
-El mensaje **WM \_ DDE \_ ACK** notifica a una aplicación datos dinámicos Exchange (DDE) la recepción y el procesamiento de los mensajes siguientes: [**WM \_ DDE WM \_ WM,**](wm-dde-poke.md) [**WM \_ DDE \_ EXECUTE,**](wm-dde-execute.md) [**WM \_ DDE \_ DATA,**](wm-dde-data.md) [**WM \_ DDE \_ ADVISE,**](wm-dde-advise.md) [**WM \_ DDE \_ UNADVISE,**](wm-dde-unadvise.md) [**WM \_ DDE \_ INITIATE**](wm-dde-initiate.md)o [**WM \_ DDE \_ REQUEST**](wm-dde-request.md) (en algunos casos).
+El mensaje **\_ DDE \_ ACK** de WM notifica a una aplicación datos dinámicos Exchange (DDE) la recepción y el procesamiento de los mensajes siguientes: [**WM \_ DDE \_ WM WM,**](wm-dde-poke.md) [**WM \_ DDE \_ EXECUTE,**](wm-dde-execute.md) [**WM \_ DDE \_ DATA,**](wm-dde-data.md) [**WM \_ DDE \_ ADVISE,**](wm-dde-advise.md) [**WM \_ DDE \_ UNADVISE,**](wm-dde-unadvise.md) [**WM \_ DDE \_ INITIATE**](wm-dde-initiate.md)o [**WM \_ DDE \_ REQUEST**](wm-dde-request.md) (en algunos casos).
 
 Para publicar este mensaje, llame a la [**función PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con los parámetros siguientes.
 
@@ -60,7 +60,7 @@ Al responder a todos los demás mensajes, la palabra de orden bajo especifica un
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ### <a name="posting"></a>Publicar
 
@@ -78,7 +78,7 @@ Si una aplicación ha iniciado la finalización de una conversación mediante la
 
 La aplicación que recibe un **mensaje \_ wm DDE \_ ACK** debe eliminar todos los átomos que acompañan al mensaje. Si la aplicación recibe un **\_ DDE \_ ACK** de WM en respuesta a un mensaje con un objeto de memoria global adjunto y el objeto se envió con las marcas **fRelease** establecidas en **FALSE,** la aplicación es responsable de eliminar el objeto.
 
-Si la aplicación recibe un mensaje **\_ DDE \_ ACK** de WM negativo publicado en respuesta a un mensaje [**DE WM \_ DDE \_ ADVISE,**](wm-dde-advise.md) la aplicación debe eliminar el objeto de memoria global publicado con el mensaje **WM \_ DDE \_ ADVISE** original. Si la aplicación recibe un mensaje **\_ DDE \_ ACK** de WM negativo publicado en respuesta a un mensaje WM [**\_ DDE \_ DATA**](wm-dde-data.md), [**WM \_ DDE \_ WM WM O**](wm-dde-poke.md)WM [**\_ DDE \_ EXECUTE,**](wm-dde-execute.md) la aplicación debe eliminar el objeto de memoria global publicado con el mensaje **ORIGINAL WM \_ DDE \_ DATA,** **WM \_ DDE WM \_ WME** o **WM \_ DDE \_ EXECUTE.**
+Si la aplicación recibe un mensaje **\_ DDE \_ ACK** de WM negativo publicado en respuesta a un mensaje [**DE WM \_ DDE \_ ADVISE,**](wm-dde-advise.md) la aplicación debe eliminar el objeto de memoria global publicado con el mensaje **WM \_ DDE \_ ADVISE** original. Si la aplicación recibe un mensaje **\_ DDE \_ ACK** de WM negativo publicado en respuesta a un mensaje WM [**\_ DDE \_ DATA**](wm-dde-data.md), WM DDE WM WM O [**WM \_ DDE \_ EXECUTE,**](wm-dde-execute.md) la aplicación debe eliminar el objeto de memoria global publicado con el mensaje **ORIGINAL WM \_ DDE \_ DATA**, **WM \_ DDE WM \_** [**\_ \_ WME**](wm-dde-poke.md)o **WM \_ DDE \_ EXECUTE.**
 
 La aplicación que recibe un mensaje **wm \_ DDE \_ ACK** publicado debe liberar el parámetro *lParam* mediante la [**función FreeDDElParam.**](/windows/desktop/api/Dde/nf-dde-freeddelparam)
 
@@ -94,7 +94,7 @@ La aplicación que recibe un mensaje **wm \_ DDE \_ ACK** publicado debe liberar
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

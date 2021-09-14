@@ -35,12 +35,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5c59adebd2fdf3c0727016473e6c347be3af139d539bb007c794eb2aafb4c1e8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1d005104cb663a680bac080b7ff9b6529fd9b7a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120002885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970232"
 ---
 # <a name="win32_desktop-class"></a>Clase de escritorio Win32 \_
 
@@ -78,7 +78,7 @@ class Win32_Desktop : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Win32 \_ Desktop** tiene estos tipos de miembros:
 
@@ -218,7 +218,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \\ \\ \| IconSpacing"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \\ \\ \| IconSpacing"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
 </dt> </dl>
 
 Espaciado entre iconos.
@@ -236,7 +236,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \\ \\ IconMetricsFont") \|
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \\ \\ IconMetricsFont") \|
 </dt> </dl>
 
 Fuente utilizada para los nombres de los iconos.
@@ -338,7 +338,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \|SCRNSAVE.EXE")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \|SCRNSAVE.EXE")
 </dt> </dl>
 
 Nombre del archivo ejecutable del protector de pantalla actual.
@@ -372,7 +372,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \| ScreenSaveTimeOut"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("segundos")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \| ScreenSaveTimeOut"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("seconds")
 </dt> </dl>
 
 Cantidad de tiempo que pasa antes de que se inicie el protector de pantalla.
@@ -393,7 +393,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -406,7 +406,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \| Wallpaper")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \| Wallpaper")
 </dt> </dl>
 
 Nombre de archivo para el diseño del papel tapiz en el fondo del escritorio.
@@ -424,7 +424,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \| WallpaperStyle")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \| WallpaperStyle")
 </dt> </dl>
 
 El papel tapiz se extiende para rellenar toda la pantalla. Microsoft Plus! debe instalarse antes de que esta opción esté disponible. Si **es FALSE,** el papel tapiz conserva sus dimensiones originales en el fondo del escritorio.
@@ -440,18 +440,18 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control \\ \\ Desktop \| TileWallpaper")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . DEFAULT \\ \\ Panel de control Desktop \\ \\ \| TileWallpaper")
 </dt> </dl>
 
 El papel tapiz está en mosaico o centrado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ de escritorio Win32** se deriva de [**la configuración cim \_**](cim-setting.md).
+La **clase Win32 \_ Desktop** se deriva de [**cim \_ setting**](cim-setting.md).
 
-El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, vea [Ejecutar operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
+El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, [vea Ejecutar operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -505,7 +505,7 @@ Foreach ($dt in $desktops) {
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

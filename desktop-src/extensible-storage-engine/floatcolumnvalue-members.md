@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: miembros de FloatColumnValue'
-title: Miembros de FloatColumnValue
+description: 'Más información sobre: Miembros FloatColumnValue'
+title: Miembros FloatColumnValue
 TOCTitle: FloatColumnValue members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.FloatColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.floatcolumnvalue_members(v=EXCHG.10)
@@ -8,20 +8,20 @@ ms:contentKeyID: 55103206
 ms.date: 07/30/2014
 ms.topic: article
 ms.openlocfilehash: 04d30d4dbbbbb5e9559b691020d0526e19a87909
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001462"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969211"
 ---
-# <a name="floatcolumnvalue-members"></a>Miembros de FloatColumnValue
+# <a name="floatcolumnvalue-members"></a>Miembros FloatColumnValue
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Valor de una [sola](/dotnet/api/system.single) columna.
+Un [valor de](/dotnet/api/system.single) columna única.
 
-El tipo [FloatColumnValue](./floatcolumnvalue-class.md) expone los siguientes miembros.
+El [tipo FloatColumnValue](./floatcolumnvalue-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -59,47 +59,47 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334166(v=exchg.10).md">Columnid</a></td>
-<td>Obtiene o establece el columnid que se va a establecer o recuperar. (Se hereda de <a href="dn334206(v=exchg.10).md">ColumnValue</a>).</td>
+<td>Obtiene o establece el columnid que se va a establecer o recuperar. (Se hereda de <a href="dn334206(v=exchg.10).md">ColumnValue).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334212(v=exchg.10).md">Error</a></td>
-<td>Obtiene la advertencia generada al recuperar o establecer esta columna. (Se hereda de <a href="dn334206(v=exchg.10).md">ColumnValue</a>).</td>
+<td>Obtiene la advertencia generada al recuperar o establecer esta columna. (Se hereda de <a href="dn334206(v=exchg.10).md">ColumnValue).</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334165(v=exchg.10).md">ItagSequence</a></td>
-<td>Obtiene o establece la secuencia de iTag de columnas. (Se hereda de <a href="dn334206(v=exchg.10).md">ColumnValue</a>).</td>
+<td>Obtiene o establece la secuencia de itag de columna. (Se hereda de <a href="dn334206(v=exchg.10).md">ColumnValue).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334225(v=exchg.10).md">Duración</a></td>
-<td>Obtiene la longitud de bytes de un valor de columna, que es cero si la columna es null; de lo contrario, coincide con el tamaño de esta columna de tamaño fijo. (Se hereda <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>).</td>
+<td>Obtiene la longitud de bytes de un valor de columna, que es cero si la columna es null; de lo contrario, coincide con el tamaño de esta columna de tamaño fijo. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334169(v=exchg.10).md">RetrieveGrbit</a></td>
-<td>Obtiene o establece las opciones de recuperación de columnas. (Se hereda de <a href="dn334206(v=exchg.10).md">ColumnValue</a>).</td>
+<td>Obtiene o establece las opciones de recuperación de columnas. (Se hereda de <a href="dn334206(v=exchg.10).md">ColumnValue).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334215(v=exchg.10).md">SetGrbit</a></td>
-<td>Obtiene o establece las opciones de actualización de la columna. (Se hereda de <a href="dn334206(v=exchg.10).md">ColumnValue</a>).</td>
+<td>Obtiene o establece las opciones de actualización de columna. (Se hereda de <a href="dn334206(v=exchg.10).md">ColumnValue).</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propiedad protegida" alt="Protected property" /></td>
 <td><a href="dn350901(v=exchg.10).md">Tamaño</a></td>
-<td>Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binary y String). (Invalida <a href="dn334172(v=exchg.10).md">ColumnValue. Size</a>).</td>
+<td>Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binario y cadena). (Invalida <a href="dn334172(v=exchg.10).md">ColumnValue.Size</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334180(v=exchg.10).md">Valor</a></td>
-<td>Obtiene o establece el valor de la estructura. (Se hereda <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>).</td>
+<td>Obtiene o establece el valor de la estructura . (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334226(v=exchg.10).md">ValueAsObject</a></td>
-<td>Obtiene el último valor establecido o recuperado de la columna. El valor se devuelve como un objeto genérico. (Se hereda <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>).</td>
+<td>Obtiene el último valor establecido o recuperado de la columna. El valor se devuelve como un objeto genérico. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 </tbody>
 </table>
@@ -121,7 +121,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn334178(v=exchg.10).md">CheckDataCount</a></td>
-<td>Asegúrese de que los datos recuperados sean exactamente el tamaño necesario para la estructura. Se produce una excepción si hay un error de coincidencia. (Se hereda <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>).</td>
+<td>Asegúrese de que los datos recuperados son exactamente el tamaño necesario para la estructura. Se produce una excepción si hay una discrepancia. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -130,7 +130,7 @@ Superior
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="even">
@@ -140,13 +140,13 @@ Superior
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn350900(v=exchg.10).md">GetValueFromBytes</a></td>
-<td>Dados los datos recuperados de ESENT, descodifique los datos y establezca el valor en el objeto ColumnValue. (Invalida <a href="dn334208(v=exchg.10).md">ColumnValue. GetValueFromBytes ([], Int32, Int32, Int32)</a>).</td>
+<td>Dados los datos recuperados de ESENT, descodifique los datos y establezca el valor en el objeto ColumnValue. (Invalida <a href="dn334208(v=exchg.10).md">ColumnValue.GetValueFromBytes([], Int32, Int32, Int32)</a>).)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
@@ -156,7 +156,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334223(v=exchg.10).md">ToString</a></td>
-<td>Obtiene una representación de cadena de este objeto. (Se hereda <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>).</td>
+<td>Obtiene una representación de cadena de este objeto . (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 </tbody>
 </table>
@@ -164,10 +164,10 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase FloatColumnValue](./floatcolumnvalue-class.md)
+[FloatColumnValue (clase)](./floatcolumnvalue-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

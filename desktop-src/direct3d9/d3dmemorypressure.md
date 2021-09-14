@@ -1,7 +1,7 @@
 ---
-description: Contiene datos de informes de presión de memoria.
+description: Contiene datos para los informes de presión de memoria.
 ms.assetid: bdf65d35-281f-4795-a2c1-0d4e91bfa7bc
-title: Estructura D3DMEMORYPRESSURE (D3d9types. h)
+title: Estructura D3DMEMORYPRESSURE (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - d3d9types.h
 ms.openlocfilehash: 5917d1e61817f401106ae14aa5a0f98cd75b0d42
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970987"
 ---
-# <a name="d3dmemorypressure-structure-d3d9typesh"></a>Estructura D3DMEMORYPRESSURE (D3d9types. h)
+# <a name="d3dmemorypressure-structure-d3d9typesh"></a>Estructura D3DMEMORYPRESSURE (D3d9types.h)
 
-Contiene datos de informes de presión de memoria.
+Contiene datos para los informes de presión de memoria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,7 +37,7 @@ typedef struct _D3DMEMORYPRESSURE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -48,7 +48,7 @@ Tipo: **[ **UINT64**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de bytes expulsados por el proceso durante la ejecución de la consulta.
+Número de bytes que el proceso expulsó durante la consulta.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Tipo: **[ **UINT64**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número total de bytes colocados en segmentos de memoria no óptimos debido a un espacio inadecuado dentro de los segmentos de memoria preferidos.
+Número total de bytes colocados en segmentos de memoria no inadecuados, debido a un espacio inadecuado dentro de los segmentos de memoria preferidos.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-La eficiencia general de las asignaciones de memoria que se colocaron en memoria no óptima. El valor se expresa como un porcentaje. Por ejemplo, el valor 95 indica que las asignaciones colocadas en segmentos de memoria no preferidos son un 95% eficaz. Este número no se debe considerar una medida exacta.
+La eficacia general de las asignaciones de memoria que se colocaron en memoria no óptima. El valor se expresa como un porcentaje. Por ejemplo, el valor 95 indica que las asignaciones colocadas en segmentos de memoria no mencionados son un 95 % eficientes. Este número no debe considerarse una medida exacta.
 
 </dd> </dl>
 
@@ -80,11 +80,11 @@ La eficiencia general de las asignaciones de memoria que se colocaron en memoria
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 70c4af327fad5014c5d6dec80dd29441f51a03639a108249991c83f53e5d2be8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eacfedc3ed23a7a4cf1f60e6c6ac21936c3c94f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120016255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160995"
 ---
 # <a name="ibytebufferseek-method"></a>IByteBuffer::Seek (método)
 
@@ -78,11 +78,11 @@ Puntero a la ubicación donde este método escribe el valor del nuevo puntero de
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **un HRESULT.** Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
+El valor devuelto es **un HRESULT**. Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **método Seek** cambia el puntero de búsqueda para que las operaciones de lectura y escritura posteriores puedan tener lugar en una ubicación diferente en el objeto de secuencia. Es un error buscar antes del principio de la secuencia. Sin embargo, no es un error buscar más allá del final de la secuencia. Buscar más allá del final de la secuencia es útil para las operaciones de escritura posteriores, ya que la secuencia se extenderá en ese momento a la posición de búsqueda inmediatamente antes de que se haga la operación de escritura.
+El **método Seek** cambia el puntero de búsqueda para que las operaciones de lectura y escritura posteriores puedan tener lugar en una ubicación diferente del objeto de secuencia. Es un error buscar antes del principio de la secuencia. Sin embargo, no es un error buscar más allá del final de la secuencia. Buscar más allá del final de la secuencia es útil para las operaciones de escritura posteriores, ya que la secuencia se extenderá en ese momento a la posición de búsqueda inmediatamente antes de que se haga la operación de escritura.
 
 También puede usar este método para obtener el valor actual del puntero seek llamando a este método con el parámetro *dwOrigin* establecido en STREAM SEEK CUR y el parámetro \_ \_ *dlibMove* establecido en cero para que el puntero seek no cambie. El puntero de búsqueda actual se devuelve en el *parámetro plibNewPosition.*
 
@@ -115,7 +115,7 @@ else
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardssp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IByteBuffer se define como E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |

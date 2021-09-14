@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d2f7834ecd57fa10aaaabfa21945f1e908834d535d50f94b4dd21e6ca45c0a62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11e3d0a367f2385e78cf1ec56231bbf7632fe05b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891524"
 ---
 # <a name="disallowstartonremoteappsession-settingstype-element"></a>Elemento DisallowStartOnRemoteAppSession (settingsType)
 
@@ -32,7 +32,7 @@ Especifica que la tarea no se iniciará si se desencadena para ejecutarse en una
  />
 ```
 
-El tipo complejo [**settingsType**](taskschedulerschema-settingstype-complextype.md) define el elemento **DisallowStartOnRemoteAppSession.**
+El **elemento DisallowStartOnRemoteAppSession** se define mediante el [**tipo complejo settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -44,9 +44,9 @@ El tipo complejo [**settingsType**](taskschedulerschema-settingstype-complextype
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor predeterminado para este elemento es False.
+El valor predeterminado de este elemento es False.
 
 Para el desarrollo de C++, se tiene acceso a esta información a través de la propiedad [**ITaskSettings2::D isallowStartOnRemoteAppSession.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings2-get_disallowstartonremoteappsession)
 
@@ -70,12 +70,12 @@ El xml siguiente define un elemento de configuración que no permite que la tare
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

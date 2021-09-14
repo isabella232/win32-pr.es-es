@@ -4,12 +4,12 @@ ms.assetid: e807da7e-ba7d-4c54-957a-7cff7b9f399b
 title: Interfaces de ensamblado en paralelo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a021ff8497f1619317dc6709e07f8e55e7ca86286acdc1353358a14092af034
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dd3c9ad74f32b622021df395831123085a3a9f6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119977185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161016"
 ---
 # <a name="side-by-side-assembly-interfaces"></a>Interfaces de ensamblado en paralelo
 

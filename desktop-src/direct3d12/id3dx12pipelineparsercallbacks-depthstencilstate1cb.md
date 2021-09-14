@@ -17,12 +17,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97deca53ffc4de474896b89993f84cebf359acd9045956243c5ece4e215e31cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a42cf85f60dcf27a5751f77a346931bfad6b03e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118528973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966807"
 ---
 # <a name="id3dx12pipelineparsercallbacksdepthstencilstate1cb-method"></a>Método ID3DX12PipelineParserCallbacks::D epthStencilState1Cb
 
@@ -78,7 +78,7 @@ No devuelve nada.
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**GALERÍA DE SÍMBOLOS DE PROFUNDIDAD D3D12 \_ \_ \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)
+[**D3D12 \_ DEPTH \_ STENCIL \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)
 </dt> </dl>
 
  

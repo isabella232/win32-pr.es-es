@@ -20,16 +20,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4b7ea09ae36160fc83fbee4dc3b7f94222f55125b992039aa15035c1d958c696
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5b6eeaf8d728cf63304141614caaf9598bcc6c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117718723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969455"
 ---
 # <a name="apijetmove-method-jet_sesid-jet_tableid-jet_move-movegrbit"></a>Método Api.JetMove (JET_SESID, JET_TABLEID, JET_Move, MoveGrbit)
 
-Navegue por un índice. El cursor se puede colocar al principio o al final del índice y moverse hacia atrás y hacia delante mediante un número especificado de entradas de índice. Vea también [TryMoveFirst(JET_SESID, JET_TABLEID),](./api.trymovefirst-method.md) [TryMoveLast(JET_SESID, JET_TABLEID),](./api.trymovelast-method.md) [TryMoveNext(JET_SESID, JET_TABLEID)](./api.trymovenext-method.md), [TryMovePrevious(JET_SESID, JET_TABLEID).](./api.trymoveprevious-method.md)
+Navegue por un índice. El cursor se puede colocar al principio o al final del índice y moverse hacia atrás y hacia delante mediante un número especificado de entradas de índice. Vea también [TryMoveFirst(JET_SESID, JET_TABLEID)](./api.trymovefirst-method.md), [TryMoveLast(JET_SESID, JET_TABLEID),](./api.trymovelast-method.md) [TryMoveNext(JET_SESID, JET_TABLEID)](./api.trymovenext-method.md), [TryMovePrevious(JET_SESID, JET_TABLEID).](./api.trymoveprevious-method.md)
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -89,11 +89,11 @@ public static void JetMove(
     
     Opciones de movimiento.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

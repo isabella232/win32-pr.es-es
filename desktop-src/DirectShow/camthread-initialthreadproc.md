@@ -1,7 +1,7 @@
 ---
 description: El método InitialThreadProc llama al procedimiento del subproceso principal.
 ms.assetid: 1546c214-7ea9-4484-974b-dbd4b2b3e296
-title: CAMThread.Inimétodo tialThreadProc (Wxutil.h)
+title: Método CAMThread.InitialThreadProc (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d12e8d41ac0c6e1fd2af06c21accbb5c62e4eb25f2fc3f6c36988101a9b64d89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd7fd0aa12d0659776db7e39fb223095762fc209
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119540305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160250"
 ---
-# <a name="camthreadinitialthreadproc-method"></a>CAMThread.Inimétodo tialThreadProc
+# <a name="camthreadinitialthreadproc-method"></a>Método CAMThread.InitialThreadProc
 
 El `InitialThreadProc` método llama al procedimiento del subproceso principal.
 
@@ -53,7 +53,7 @@ DWORD InitialThreadProc(
 
 Devuelve el **DWORD** devuelto por [**CAMThread::ThreadProc**](camthread-threadproc.md). La clase derivada define este valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método CAMThread::Create**](camthread-create.md) usa este método para el procedimiento de subproceso cuando crea el subproceso. Usa el puntero `this` como argumento del subproceso.
 
@@ -70,7 +70,7 @@ Este método llama al [**método CAMThread::CoInitializeHelper**](camthread-coin
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

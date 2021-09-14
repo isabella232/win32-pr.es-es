@@ -13,11 +13,11 @@ api_type:
 - COM
 api_location: ''
 ms.openlocfilehash: 9953bc1119d7e203936ca7e78048a4083a996ec2
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122881048"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160499"
 ---
 # <a name="errorinfo-collection"></a>Colección ErrorInfo
 
@@ -29,7 +29,7 @@ Debe llamar a [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icat
 
 Esta colección no admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección ErrorInfo** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -55,10 +55,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|----------------------------------------|
 | Descripción    | Código de error para el objeto o archivo. |
-| Access         | ReadOnly                               |
+| Acceso         | ReadOnly                               |
 | Tipo           | String                                 |
 | Valor predeterminado        | None                                   |
 | Sistema mínimo | Windows 2000                           |
@@ -71,10 +71,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Valor [**de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propiedad Key para el objeto que tiene un error. Por ejemplo, si se produce un error en una llamada [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) para una colección en un objeto determinado de la colección, el valor de la propiedad **Key** de ese objeto se notifica como el valor MajorRef. Use esta propiedad para ver el elemento que no se puede actualizar o para buscar el componente o dll que no se puede instalar. |
-| Access         | ReadOnly                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Acceso         | ReadOnly                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Tipo           | String                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Valor predeterminado        | None                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -87,10 +87,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Especificación precisa del elemento que tiene un error, como un nombre de propiedad. Si se producen varios errores o en contextos en los que esto no se aplica, MinorRef no &lt; es &gt; válido. |
-| Access         | ReadOnly                                                                                                                                                                          |
+| Acceso         | ReadOnly                                                                                                                                                                          |
 | Tipo           | String                                                                                                                                                                            |
 | Valor predeterminado        | None                                                                                                                                                                              |
 | Sistema mínimo | Windows 2000                                                                                                                                                                      |
@@ -103,10 +103,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Nombre del objeto o archivo que tiene un error. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | ReadOnly                                                                                                                                                                                                                 |
+| Acceso         | ReadOnly                                                                                                                                                                                                                 |
 | Tipo           | String                                                                                                                                                                                                                   |
 | Valor predeterminado        | None                                                                                                                                                                                                                     |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                             |
@@ -115,7 +115,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

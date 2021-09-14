@@ -1,21 +1,21 @@
 ---
-description: 'Una transacción es un grupo de operaciones que tienen las siguientes propiedades: atomic, consistent, isolated y durable (ACID).'
+description: 'Una transacción es un grupo de operaciones que tienen las siguientes propiedades: atómicas, coherentes, aisladas y durables (ACID).'
 ms.assetid: b3da52a3-1c52-4577-a997-7e72ebc03fa8
 title: ¿Qué es una transacción?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f04a21eaec081a42e1cd4bcd60cb7cf48d609075eec772ed18fd41494c47d1c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0c459462d3aee3d7eef556ce0951ede537e8109
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119289725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160018"
 ---
 # <a name="what-is-a-transaction"></a>¿Qué es una transacción?
 
-Una transacción es un grupo de operaciones que tienen las siguientes propiedades: atomic, consistent, isolated y durable (ACID). La compatibilidad con transacciones permite desarrollar nuevos tipos de aplicaciones, a la vez que simplifica el proceso de desarrollo y hace que la aplicación sea más sólida. En el resto de este tema se proporcionan escenarios que muestran la necesidad de estas propiedades y, a continuación, una tabla que define cada propiedad.
+Una transacción es un grupo de operaciones que tienen las siguientes propiedades: atómicas, coherentes, aisladas y durables (ACID). La compatibilidad con transacciones permite desarrollar nuevos tipos de aplicaciones, a la vez que simplifica el proceso de desarrollo y hace que la aplicación sea más sólida. En el resto de este tema se proporcionan escenarios que muestran la necesidad de estas propiedades y, a continuación, una tabla que define cada propiedad.
 
-En un *grupo atómico* de operaciones, todas las operaciones del grupo deben realizarse correctamente o los efectos de todas ellas deben deshacerse (también conocidas como revertir *).* Por ejemplo, una transferencia bancaria debe ser un conjunto atómico de dos operaciones: un débito de una cuenta y un crédito a otra cuenta. El débito y el crédito deben implementarse como un grupo atómico. Si esas dos operaciones no se realizaron correctamente, la transferencia se realiza de forma imparcial en favor del banco o del titular de la cuenta.
+En un *grupo atómico* de operaciones, todas las operaciones del grupo deben realizarse correctamente o los efectos de todas ellas deben deshacerse (también conocidas como revertir *).* Por ejemplo, una transferencia bancaria debe ser un conjunto atómico de dos operaciones: un adeudo de una cuenta y un crédito a otra cuenta. El débito y el crédito deben implementarse como un grupo atómico. Si esas dos operaciones no se realizaron correctamente, la transferencia se realiza de forma imparcial en favor del banco o del titular de la cuenta.
 
 El requisito de *coherencia* significa que los datos son coherentes después de la transacción (suponiendo que se inició con un sistema coherente antes de la transacción). En el ejemplo de transferencia bancaria, la coherencia se puede definir como que el saldo de cuenta combinado de las dos cuentas sea una constante. Para implementar la coherencia en el ejemplo de transferencia bancaria, las operaciones de débito y crédito simplemente deben ser para la misma cantidad de dinero.
 
@@ -40,7 +40,7 @@ Las propiedades de una transacción se resumen en la tabla siguiente.
 
  
 
-Estas propiedades garantizan que el software puede controlar errores inesperados, ya que simplemente puede anular una transacción cuando una situación inesperada impide una finalización correcta. La infraestructura de la transacción garantiza que todos los efectos de la transacción anulada se revierte, devolviendo los datos a un estado coherente. Por lo tanto, un sistema transaccional permite una recuperación correcta de errores del sistema.
+Estas propiedades garantizan que el software pueda controlar errores inesperados, ya que simplemente puede anular una transacción cuando una situación inesperada impide una finalización correcta. La infraestructura de la transacción garantiza que todos los efectos de la transacción anulada se revierte, devolviendo los datos a un estado coherente. Por lo tanto, un sistema transaccional permite una recuperación correcta de errores del sistema.
 
 Para garantizar las propiedades ACID, un sistema que admita transacciones debe tener una sólida funcionalidad de registro que se pueda usar para confirmar o revertir transacciones según sea necesario. Para obtener más información, [vea Sistema de archivos de registro común](/previous-versions/windows/desktop/clfs/common-log-file-system-portal).
 

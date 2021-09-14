@@ -1,22 +1,22 @@
 ---
-title: Client-Side de canalización
+title: Client-Side implementación de canalización
 description: Implementación de canalización del lado cliente en llamada a procedimiento remoto (RPC).
 ms.assetid: d790f859-47a9-4b6c-a218-8cbe05db21b6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11ecae4d01e8da37c3ce65ee530643dc84abdc47da71c0e4dacbcdff21c37317
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5666656f1f7296c252395255c17902a91cb32a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120022664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161052"
 ---
-# <a name="client-side-pipe-implementation"></a>Client-Side de canalización
+# <a name="client-side-pipe-implementation"></a>Client-Side implementación de canalización
 
 La aplicación cliente debe implementar los procedimientos siguientes, a los que llamará el código auxiliar de cliente durante la transferencia de datos:
 
 -   Procedimiento de extracción (para una canalización de entrada)
--   Un procedimiento de inserción (para una canalización de salida)
+-   Procedimiento de inserción (para una canalización de salida)
 -   Procedimiento de asignación para asignar un búfer para los datos de transferencia
 
 Todos estos procedimientos deben usar los argumentos especificados por el archivo de encabezado generado por MIDL. Además, la aplicación cliente debe tener una variable de estado para identificar dónde buscar o colocar los datos.

@@ -4,12 +4,12 @@ description: BITS puede enviar la ubicación del archivo de carga (por referenci
 ms.assetid: b80f9077-54e7-4d10-909a-dee7d8822627
 ms.topic: article
 ms.date: 11/29/2018
-ms.openlocfilehash: 3db568f483468cbc92474f24f830da5bf1be94a2165cbb69a2d1751cc58965dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5dcbee8b82d96a4f13db0ae4de6441e9df40ce83
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119021073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968899"
 ---
 # <a name="using-bits-notification-requestresponse-headers"></a>Uso de encabezados de solicitud/respuesta de notificación de BITS
 

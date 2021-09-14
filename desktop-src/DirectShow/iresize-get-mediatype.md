@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d9e23c78a25f1cda141cb0c3ce55688c12bdf3aab447aca596326e01544b4e8c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b03bad7f8686fd580f7dd5fc347c347ade1c1c97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117818236"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891769"
 ---
 # <a name="iresizeget_mediatype-method"></a>IResize::get \_ MediaType (método)
 
@@ -48,7 +48,7 @@ HRESULT get_MediaType(
 *pmt* \[ out\]
 </dt> <dd>
 
-Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) asignada por el autor de la llamada. El método rellena esta estructura con el tipo de medio. El autor de la llamada debe liberar el bloque de formato, si lo hay.
+Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) asignada por el autor de la llamada. El método rellena esta estructura con el tipo de medio. El autor de la llamada debe liberar el bloque de formato, si lo hubiera.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si no se ha establecido el tipo de medio de salida, devuelva un tipo de medio predeterminado. El filtro debe actualizar su tipo de medio de salida cuando se llama a los métodos **\_ put MediaType** o **put \_ Size;** el tipo de medio devuelto por `get_MediaType` debe reflejar estos cambios.
 
@@ -74,15 +74,15 @@ Si no se ha establecido el tipo de medio de salida, devuelva un tipo de medio pr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | DirectX 9.0 o posterior<br/>                                                         |
-| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,20 +1,20 @@
 ---
-description: Los metaclasifiquen la definición de meta constructos en el modelo CIM aclarando el uso real de una declaración de clase o propiedad dentro de la sintaxis de MOF.
+description: Los meta calificadores refinan la definición de meta construcciones en el modelo CIM aclarando el uso real de una declaración de clase o propiedad dentro de la sintaxis MOF.
 ms.assetid: 3674a051-3756-4d09-a70e-46a57b442104
 ms.tgt_platform: multiple
 title: Meta calificadores
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76609fecca3e3831372ea813e7210cd449c2e1e4fc527df605bc523efd4c1be8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8618ef8258f403a43e08be54b3acbd5bb1e923c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119131186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967143"
 ---
 # <a name="meta-qualifiers"></a>Meta calificadores
 
-Los metaclasifiquen la definición de meta constructos en el modelo CIM aclarando el uso real de una declaración de clase o propiedad dentro de la sintaxis de MOF.
+Los meta calificadores refinan la definición de meta construcciones en el modelo CIM aclarando el uso real de una declaración de clase o propiedad dentro de la sintaxis MOF.
 
 <dt>
 
@@ -25,7 +25,7 @@ Tipo de datos: **booleano**
 
 Se aplica a: clases
 
-Indica si la clase es una clase de asociación que se usa para describir una relación entre otras dos clases. La ausencia de este calificador indica que la clase no es una clase de asociación. Este calificador es mutuamente excluyente con **Indicación**. Para obtener más información, vea [Declarar una clase de asociación](declaring-an-association-class.md).
+Indica si la clase es una clase de asociación utilizada para describir una relación entre otras dos clases. La ausencia de este calificador indica que la clase no es una clase de asociación. Este calificador es mutuamente excluyente con **indicación**. Para obtener más información, vea [Declarar una clase de asociación](declaring-an-association-class.md).
 
 </dd> <dt>
 
@@ -36,7 +36,7 @@ Tipo de datos: **booleano**
 
 Se aplica a: clases
 
-Indica si la clase de objeto define una indicación. Este calificador es mutuamente excluyente con **Association**. El valor predeterminado es **FALSE.**
+Indica si la clase de objeto define una indicación. Este calificador es mutuamente excluyente con **association**. El valor predeterminado es **FALSE.**
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Indica si la clase de objeto define una indicación. Este calificador es mutuame
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

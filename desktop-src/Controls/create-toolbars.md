@@ -1,38 +1,38 @@
 ---
 title: Cómo crear barras de herramientas
-description: Para crear una barra de herramientas, utilice la función CreateWindowEx, especificando la clase de ventana TOOLBARCLASSNAME.
+description: Para crear una barra de herramientas, use la función CreateWindowEx, especificando la clase de ventana TOOLBARCLASSNAME.
 ms.assetid: 5D060291-6ACF-478C-97EC-CD8BD55D1FFF
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a69cd40338eaebc0d9de852519dce34dc9bc8aa4
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103793960"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892404"
 ---
 # <a name="how-to-create-toolbars"></a>Cómo crear barras de herramientas
 
-Para crear una barra de herramientas, utilice la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , especificando la clase de ventana [**TOOLBARCLASSNAME**](common-control-window-classes.md) . La barra de herramientas resultante no contiene inicialmente ningún botón. Agregue botones a la barra de herramientas mediante el mensaje [**TB \_ ADDBUTTONS**](tb-addbuttons.md) o [**TB \_ INSERTBUTTON**](tb-insertbutton.md) . Debe enviar el mensaje [**de \_ tamaño de TB automático**](tb-autosize.md) después de que todos los elementos y las cadenas se hayan insertado en el control para que la barra de herramientas recalcule su tamaño en función de su contenido.
+Para crear una barra de herramientas, use [**la función CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) especificando la clase de ventana [**TOOLBARCLASSNAME.**](common-control-window-classes.md) Inicialmente, la barra de herramientas resultante no contiene botones. Agregue botones a la barra de herramientas mediante el [**mensaje \_ TB ADDBUTTONS**](tb-addbuttons.md) o [**TB \_ INSERTBUTTON.**](tb-insertbutton.md) Debe enviar el mensaje [**\_ TB AUTOSIZE**](tb-autosize.md) una vez insertados todos los elementos y cadenas en el control para que la barra de herramientas recalcule su tamaño en función de su contenido.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="create-a-toolbar"></a>Crear una barra de herramientas
 
-En el código de ejemplo siguiente se crea la barra de herramientas que se muestra en la ilustración, utilizando los iconos del sistema estándar. El botón **Guardar** está deshabilitado inicialmente.
+En el código de ejemplo siguiente se crea la barra de herramientas que se muestra en la ilustración, mediante iconos estándar del sistema. El **botón** Guardar está deshabilitado inicialmente.
 
-![captura de pantalla que muestra un cuadro de diálogo con tres elementos de la barra de herramientas dispuestos horizontalmente, cada uno de los cuales tiene un icono y una etiqueta de texto](images/tb-codesample1.png)
+![captura de pantalla que muestra un cuadro de diálogo con tres elementos de la barra de herramientas organizados horizontalmente, cada uno de los cuales tiene un icono y una etiqueta de texto](images/tb-codesample1.png)
 
 
 ```C++
@@ -94,7 +94,7 @@ HWND CreateSimpleToolbar(HWND hWndParent)
 
 
 
-En el ejemplo siguiente se crea la misma barra de herramientas prácticamente de la misma manera, pero en este caso, las cadenas se leen desde un recurso.
+En el ejemplo siguiente se crea la misma barra de herramientas de la misma manera, pero en este caso, las cadenas se leen desde un recurso.
 
 
 ```C++
@@ -170,12 +170,12 @@ HWND CreateToolbarFromResource(HWND hWndParent)
 
 <dl> <dt>
 
-[Usar controles Toolbar](using-toolbar-controls.md)
+[Usar controles de barra de herramientas](using-toolbar-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

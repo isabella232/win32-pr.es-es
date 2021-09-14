@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e647e9bbffe723bff0a8079c2776c48db0f23f89306fdb732fed8c62ac420d61
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e81259ca84c62327bea67ae70d3f9ec3363450fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117932638"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160580"
 ---
 # <a name="textscrollingdelay"></a>TEXT.scrollingDelay
 
@@ -29,11 +29,11 @@ El **atributo scrollingDelay** especifica o recupera el retraso de tiempo entre 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un número de lectura y **escritura** (**int**) que especifica el retraso en milisegundos. Tiene un valor mínimo de 30 y un valor predeterminado de 85. Si se especifica un valor menor que el mínimo, se usa el valor predeterminado.
+Este atributo es un  número de lectura/escritura (**int**) que especifica el retraso en milisegundos. Tiene un valor mínimo de 30 y un valor predeterminado de 85. Si se especifica un valor menor que el mínimo, se usa el valor predeterminado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si **el desplazamiento** se establece en false, se omite **scrollingDelay.**
+Si **el desplazamiento** se establece en false, **scrollingDelay** se omite.
 
 Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 
@@ -41,13 +41,13 @@ Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

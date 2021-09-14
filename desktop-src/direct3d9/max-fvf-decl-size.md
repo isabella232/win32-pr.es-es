@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 52ac939cc77bbd87dbecffc07253f0fadc5cbbdaa48e07f938f163c453c21e14
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7204308e6b9355b416218f31af301b5ea6d8fff5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118798801"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966603"
 ---
-# <a name="max_fvf_decl_size-enumeration"></a>Enumeración MAX \_ FVF \_ DECL \_ SIZE
+# <a name="max_fvf_decl_size-enumeration"></a>Enumeración \_ MAX FVF \_ DECL \_ SIZE
 
 Esta constante es el número máximo de declaradores de vértices para una malla.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -46,9 +46,9 @@ Número máximo de elementos de la declaración de vértice. El adicional (+1) e
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-MAXD3DDECLLENGTH se define como un máximo de 64 (vea d3d9types.h). Esto no incluye el elemento de vértice de marcador "end".
+MAXD3DDECLLENGTH se define como un máximo de 64 (vea d3d9types.h). Esto no incluye el elemento de vértice del marcador "end".
 
 ## <a name="requirements"></a>Requisitos
 

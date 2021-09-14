@@ -3,8 +3,8 @@ title: WINBIO_CREDENTIAL_STATE enumeración (Winbio \_ types.h)
 description: Define valores que especifican si una credencial se ha asociado a los datos biométricos de un usuario final.
 ms.assetid: c24f1771-7a1f-403e-8100-dfb3f4cd77a1
 keywords:
-- WINBIO_CREDENTIAL_STATE enumeración Windows Biometric Framework API
-- PWINBIO_CREDENTIAL_STATE puntero de enumeración Windows Biometric Framework API
+- WINBIO_CREDENTIAL_STATE enumeración Windows BIOMETRIC Framework API
+- PWINBIO_CREDENTIAL_STATE puntero de enumeración Windows API de marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce0e176479a68d39b017e852e17a73691b8349d7c6faa6be62130007a09dcef0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3f8b8292cbbaefeeda0f6bf349f55e8f825f1756
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119868065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160771"
 ---
 # <a name="winbio_credential_state-enumeration"></a>Enumeración \_ CREDENTIAL STATE de WINBIO \_
 
 Define valores que especifican si una credencial se ha asociado a los datos biométricos de un usuario final. La función [**WinBioGetCredentialState**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate) usa esta enumeración.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -62,13 +62,13 @@ No se ha asociado una credencial al usuario final.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

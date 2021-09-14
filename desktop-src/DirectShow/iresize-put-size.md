@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d2da95cca7bf19182dd4c0f5f385715256ae9c5253c356094110c028fb1b016d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 579cee086798e64abd07b25cc4f7bb14405157dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117818135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891732"
 ---
 # <a name="iresizeput_size-method"></a>Método IResize::p ut \_ Size
 
@@ -64,7 +64,7 @@ Ancho del vídeo, en píxeles.
 *Marcas* \[ En\]
 </dt> <dd>
 
-Modo de ajuste. Vea [**Cambiar el tamaño de las marcas**](resize-flags.md) para ver los valores posibles.
+Modo de ajuste. Consulte [**Cambiar el tamaño de las marcas**](resize-flags.md) para ver los valores posibles.
 
 </dd> </dl>
 
@@ -72,11 +72,11 @@ Modo de ajuste. Vea [**Cambiar el tamaño de las marcas**](resize-flags.md) para
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-DES puede llamar a este método antes o después de llamar a **put \_ MediaType**. Si DES llama a este método antes de llamar a **put \_ MediaType**, el filtro debe seleccionar un valor predeterminado para la profundidad de bits y usar los valores de tamaño para construir un tipo de medio de salida. Si DES llama a este método después de llamar a **put \_ MediaType,** el filtro debe modificar su tipo de salida actual con los nuevos tamaños.
+DES puede llamar a este método antes o después de llamar a **put \_ MediaType**. Si DES llama a este método antes de llamar a **put \_ MediaType**, el filtro debe seleccionar un valor predeterminado para la profundidad de bits y usar los valores de tamaño para construir un tipo de medio de salida. Si DES llama a este método después de llamar a **put \_ MediaType**, el filtro debe modificar su tipo de salida actual con los nuevos tamaños.
 
-DES también puede llamar a este método una vez conectado el pin de salida. En ese caso, modifique el tipo de salida y vuelva a conectar el pin de salida con el nuevo tipo. Consulte [Volver a conectar los pines](reconnecting-pins.md) para obtener más información.
+DES también puede llamar a este método una vez conectada la marca de salida. En ese caso, modifique el tipo de salida y vuelva a conectar el pin de salida con el nuevo tipo. Consulte [Volver a conectar los pins](reconnecting-pins.md) para obtener más información.
 
 El *parámetro Flags* especifica cómo debe realizar el filtro la operación de tamaño.
 
@@ -94,10 +94,10 @@ El *parámetro Flags* especifica cómo debe realizar el filtro la operación de 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | DirectX 9.0 o posterior<br/>                                                         |
-| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ El *parámetro Flags* especifica cómo debe realizar el filtro la operación de 
 
 <dl> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> <dt>
 
 [**IResize (Interfaz)**](iresize.md)

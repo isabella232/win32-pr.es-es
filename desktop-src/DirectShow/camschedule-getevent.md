@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9e5126fde495c9553975daaf2db9e82de4ab4530a4629d217eba51818e20d1f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 360a4b88c8c03d2f04ad55bc65eebf6be3797c92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119689085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160278"
 ---
 # <a name="camschedulegetevent-method"></a>Método CAMSchedule.GetEvent
 
-El `GetEvent` método recupera un identificador de evento, que se usa para señalar un cambio en la próxima hora de aviso.
+El `GetEvent` método recupera un identificador de evento, que se usa para señalar un cambio en la siguiente hora de aviso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve un identificador a un evento.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si la hora del aviso siguiente cambia en otras palabras, si se agrega una nueva solicitud de aviso al frente de la lista, el programador señala este evento. El reloj debe llamar al [**método CAMSchedule::Advise**](camschedule-advise.md) para determinar la siguiente hora de aviso.
+Si la siguiente hora de aviso cambia en otras palabras, si se agrega una nueva solicitud de aviso al frente de la lista, el programador señala este evento. El reloj debe llamar al [**método CAMSchedule::Advise**](camschedule-advise.md) para determinar la siguiente hora de aviso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Si la hora del aviso siguiente cambia en otras palabras, si se agrega una nueva 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

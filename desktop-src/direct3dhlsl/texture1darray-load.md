@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 330672a54f1d66b0c8674828d3e1f2c8538ba9cda9f1621d42e7c517813d7d6e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d73360f6c9bc10478bd8d0b0ade9ea984d0b998b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118283932"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970463"
 ---
 # <a name="texture1darrayload-methods"></a>Métodos Texture1DArray::Load
 

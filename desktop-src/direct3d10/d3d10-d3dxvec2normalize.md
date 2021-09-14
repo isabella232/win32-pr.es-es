@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 771b8d20fd24a3f22ebf856a4d76dfb6c504bcb50995f9ade76282d2ff6425ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aaa7bde759b9023b69204d6cb39259f0905b9928
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970016"
 ---
 # <a name="d3dxvec2normalize-function-d3dx10mathh"></a>Función D3DXVec2Normalize (D3DX10Math.h)
 
@@ -65,9 +65,9 @@ Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
 Puntero a una estructura D3DXVECTOR2 que es la versión normalizada del vector.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec2Normalize se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXVec2Normalize se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

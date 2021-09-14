@@ -4,12 +4,12 @@ ms.assetid: 445fe6b9-9d5b-45fd-9c9e-8c632c5228ae
 title: Marcas de tiempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ed14f0155a0bfbf209719f4aff97cbbd19501e6aa32d57e9f0c1cbb2df0964b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 855d2c472d7964ccad6ec8bbc87efd39b1c4cdd6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119072319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891676"
 ---
 # <a name="time-stamps"></a>Marcas de tiempo
 
@@ -31,7 +31,7 @@ Para establecer la marca de tiempo en un ejemplo, llame al [**método IMediaSamp
 
 Opcionalmente, el filtro también puede especificar un *tiempo multimedia* para el ejemplo. En una secuencia de vídeo, el tiempo del medio representa el número de fotograma. En una secuencia de audio, el tiempo del medio representa el número de muestra en el paquete. Por ejemplo, si cada paquete contiene un segundo de audio de 44,1 kilohercios (kHz), el primer paquete tiene una hora de inicio multimedia de cero y una hora de detención de medios de 44100. En una secuencia que se puede buscar, la hora del medio siempre es relativa a la hora de inicio de la secuencia. Por ejemplo, supongamos que busca a 2 segundos desde el inicio de una secuencia de vídeo de 15 fps. El primer ejemplo multimedia después de la búsqueda tiene una marca de tiempo de cero, pero un tiempo de medios de 30.
 
-Los filtros de representador y mux pueden usar el tiempo de medios para determinar si se han eliminado fotogramas o muestras, comprobando si hay espacios. Sin embargo, no se necesitan filtros para establecer el tiempo de los medios. Para establecer la hora del medio en un ejemplo, llame al [**método IMediaSample::SetMediaTime.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setmediatime)
+Los filtros de representador y mux pueden usar el tiempo de medios para determinar si se han eliminado fotogramas o muestras, comprobando si hay espacios. Sin embargo, los filtros no son necesarios para establecer la hora del medio. Para establecer la hora del medio en un ejemplo, llame al [**método IMediaSample::SetMediaTime.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setmediatime)
 
 ## <a name="related-topics"></a>Temas relacionados
 

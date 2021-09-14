@@ -1,5 +1,5 @@
 ---
-description: Obtiene los vértices y pesos que influye en un influjo.
+description: Obtiene los vértices y pesos que influye en un pórtico.
 ms.assetid: 84cb064b-b6b2-402d-81cc-8c02de6f8b52
 title: Método ID3DXSkinInfo::GetIonalInfluence (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8f49afb4175559bb5338c01c0ebb22fb89801aef5e7cafa62386e25c095ea139
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b4b31ab08aca476ced1cb28dfc5ed5bfe61d044
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119847314"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966611"
 ---
 # <a name="id3dxskininfogetboneinfluence-method"></a>Método ID3DXSkinInfo::GetIonalInfluence
 
-Obtiene los vértices y pesos que influye en un influjo.
+Obtiene los vértices y pesos que influye en un pórtico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ HRESULT GetBoneInfluence(
 
 <dl> <dt>
 
-*Desótola* \[ En\]
+*Insólote* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -65,7 +65,7 @@ Obtenga la matriz de vértices influenciados por un pórtico.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Obtiene la matriz de pesos influenciada por un póreo.
+Obtenga la matriz de pesos influenciada por un póreo.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Obtiene la matriz de pesos influenciada por un póreo.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use [**ID3DXSkinInfo::GetNumIonalInfluences**](id3dxskininfo--getnumboneinfluences.md) para averiguar cuántos vértices influye el insómalo.
+Use [**ID3DXSkinInfo::GetNumMutInfluences**](id3dxskininfo--getnumboneinfluences.md) para averiguar cuántos vértices influye el tejido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Use [**ID3DXSkinInfo::GetNumIonalInfluences**](id3dxskininfo--getnumboneinfluenc
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

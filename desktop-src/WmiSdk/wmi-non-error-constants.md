@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Constantes de error de WMI (WbemCli.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 651013d89577e1f8c336dd1b070cdb0c8476fe73206c681371c0ad84bfa99fa2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0880c9fda00f03c1fa8b174242bfc84ed9d75ad8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118107026"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967016"
 ---
 # <a name="wmi-non-error-constants"></a>Constantes wmi sin errores
 
@@ -213,16 +213,16 @@ Reservado para uso futuro.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Header<br/>                   | <dl> <dt>WbemCli.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>WbemCli.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WbemCli.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>WbemCli.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

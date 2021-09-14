@@ -4,12 +4,12 @@ ms.assetid: 3e71aa0f-d135-4311-96f3-305762543627
 title: Comprobación de un mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a90850a88ede875ae41549bca79aceb2d7bdea17db6f50eeb1a3a5e6dfb9a921
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ebf62be707efcbd3ab3a5eca5345261ca1a0fde
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118915094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160886"
 ---
 # <a name="verifying-a-message"></a>Comprobación de un mensaje
 

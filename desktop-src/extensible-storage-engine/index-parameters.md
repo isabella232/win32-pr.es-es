@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 3971f8093b9f1578a9b84d19a3927e45262acbad
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987028"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965799"
 ---
 # <a name="index-parameters"></a>Parámetros de índice
 
@@ -34,7 +34,7 @@ Este tema contiene parámetros que se usan para el índice.
 *JET_paramIndexTupleIncrement*  
 132  
 
-Este parámetro especifica el valor predeterminado para el incremento de desplazamiento utilizado para desplazarse paso a paso por el valor de la columna de origen al generar cada tupla. Para obtener más información, vea la [estructura JET_TUPLELIMITS](./jet-tuplelimits-structure.md) datos.
+Este parámetro especifica el valor predeterminado para el incremento de desplazamiento utilizado para desplazarse por el valor de la columna de origen al generar cada tupla. Para obtener más información, vea la [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) estructura.
 
 
 | Etiqueta | Value |
@@ -56,7 +56,7 @@ Este parámetro especifica el valor predeterminado para el incremento de desplaz
 *JET_paramIndexTupleStart*  
 133  
 
-Este parámetro especifica el valor predeterminado para el desplazamiento en el valor de la columna de origen en el que se iniciará la generación de tupla. Para obtener más información, vea la [estructura JET_TUPLELIMITS](./jet-tuplelimits-structure.md) datos.
+Este parámetro especifica el valor predeterminado para el desplazamiento en el valor de la columna de origen en el que se iniciará la generación de tuplas. Para obtener más información, vea la [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) estructura.
 
 
 | Etiqueta | Value |
@@ -78,9 +78,9 @@ Este parámetro especifica el valor predeterminado para el desplazamiento en el 
 *JET_paramIndexTuplesLengthMax*  
 111  
 
-Este parámetro especifica el valor predeterminado para la longitud máxima de tupla en un índice de tupla. Para obtener más información, vea la [estructura JET_TUPLELIMITS](./jet-tuplelimits-structure.md) datos.
+Este parámetro especifica el valor predeterminado para la longitud máxima de tupla en un índice de tupla. Para obtener más información, vea la [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) estructura.
 
-**Windows Vista:**  Antes de Windows Vista, establecer este parámetro en cero lo establecería de nuevo en su valor predeterminado. Para Windows Vista, ya no se admite.
+**Windows Vista:**  Antes de Windows Vista, al establecer este parámetro en cero, se vuelve a establecer en su valor predeterminado. Para Windows Vista, ya no se admite.
 
 
 | Etiqueta | Value |
@@ -102,9 +102,9 @@ Este parámetro especifica el valor predeterminado para la longitud máxima de t
 *JET_paramIndexTuplesLengthMin*  
 110  
 
-Este parámetro especifica el valor predeterminado para la longitud mínima de tupla en un índice de tupla. Consulte [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) para obtener más información.
+Este parámetro especifica el valor predeterminado para la longitud mínima de la tupla en un índice de tupla. Consulte [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) para obtener más información.
 
-**Windows Vista:**  Antes de Windows Vista, establecer este parámetro en cero lo establecería de nuevo en su valor predeterminado. Para Windows Vista, ya no se admite.
+**Windows Vista:**  Antes de Windows Vista, al establecer este parámetro en cero, se vuelve a establecer en su valor predeterminado. Para Windows Vista, ya no se admite.
 
 
 | Etiqueta | Value |
@@ -128,7 +128,7 @@ Este parámetro especifica el valor predeterminado para la longitud mínima de t
 
 Este parámetro especifica el valor predeterminado para la longitud máxima de una cadena de origen que se interrumpirá en tuplas para un índice de tupla. Consulte [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) para obtener más información.
 
-**Windows Vista:**  Antes de Windows Vista, al establecer este parámetro en cero, se vuelve a establecer en su valor predeterminado. Para Windows Vista, ya no se admite.
+**Windows Vista:**  Antes de Windows Vista, establecer este parámetro en cero lo establecería de nuevo en su valor predeterminado. Para Windows Vista, ya no se admite.
 
 
 | Etiqueta | Value |
@@ -150,11 +150,11 @@ Este parámetro especifica el valor predeterminado para la longitud máxima de u
 *JET_paramUnicodeIndexDefault*  
 72  
 
-Este parámetro controla los parámetros Unicode predeterminados utilizados por cualquier índice sobre una columna de clave Unicode. El tipo de este parámetro se [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) y se pasa realmente mediante un puntero de búfer almacenado en el parámetro entero [de JetGetSystemParameter](./jetgetsystemparameter-function.md) y [JetSetSystemParameter](./jetsetsystemparameter-function.md). El tamaño del búfer debe ser igual al tamaño de [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) y debe pasarse a [JetGetSystemParameter](./jetgetsystemparameter-function.md) mediante el parámetro de tamaño de búfer de cadena. Esto es claramente incoherente, pero ese es el comportamiento de este parámetro.
+Este parámetro controla los parámetros Unicode predeterminados utilizados por cualquier índice sobre una columna de clave Unicode. El tipo de este parámetro es [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) y se pasa realmente mediante un puntero de búfer almacenado en el parámetro entero [de JetGetSystemParameter](./jetgetsystemparameter-function.md) y [JetSetSystemParameter](./jetsetsystemparameter-function.md). El tamaño del búfer debe ser igual al tamaño de [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) debe pasarse a [JetGetSystemParameter](./jetgetsystemparameter-function.md) mediante el parámetro de tamaño de búfer de cadena. Esto es claramente incoherente, pero ese es el comportamiento de este parámetro.
 
 El valor predeterminado de este parámetro contiene un LCID para la configuración regional del inglés de EE. UU. y las siguientes marcas [LCMapStringW:](/windows/win32/api/winnls/nf-winnls-lcmapstringa)LCMAP_SORTKEY, NORM_IGNORECASE, NORM_IGNOREKANATYPE y NORM_IGNOREWIDTH.
 
-**Windows 2000:**  El SORTID del LCID se omite. Siempre se usa un SORTID de SORT_DEFAULT se usa.
+**Windows 2000:**  El SORTID del LCID se omite. Un SORTID de SORT_DEFAULT se usa siempre.
 
 **Windows 2000:**  Las [marcas LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa) deben contener las marcas siguientes: LCMAP_SORTKEY, NORM_IGNORECASE, NORM_IGNOREKANATYPE y NORM_IGNOREWIDTH. Además, las [marcas LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa)pueden contener las marcas siguientes: NORM_IGNORENONSPACE.
 

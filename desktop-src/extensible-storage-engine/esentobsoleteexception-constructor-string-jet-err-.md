@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 45aa611b9c91e548047a71466e2e86ca7a600ac7a9d2d24711b578f4399b8eef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 435a3db75cb09a47bccc311733b90fae30563c86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119851711"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966036"
 ---
 # <a name="esentobsoleteexception-constructor-string-jet_err"></a>EsentObsoleteException constructor (String, JET_err)
 
@@ -71,7 +71,7 @@ protected EsentObsoleteException(
     
     Código de error de la excepción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -41,12 +41,12 @@ api_type:
 - DllExport
 api_location:
 - Wbemcore.dll
-ms.openlocfilehash: 39c976a6a8b4c25fbc42561b7d0a8db52b9029f679ad72993f931efa596d2d6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f94524d18074e3a35c7bcad09e9b9fba80e8470
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119079579"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968775"
 ---
 # <a name="win32_wmisetting-class"></a>Clase WMISetting de Win32 \_
 
@@ -90,7 +90,7 @@ class Win32_WMISetting : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ WMISetting de Win32** tiene estos tipos de miembros:
 
@@ -352,7 +352,7 @@ Si **es True**, el subsistema de eventos WMI debe estar habilitado.
 
 Esta propiedad refleja el valor de la clave del Registro.
 
-**HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM \| CIMOM \| EnableEvents**
+**HKEY \_ SOFTWARE \_ DE MÁQUINA LOCAL** \\  \\ **Microsoft** \\ **WBEM \| CIMOM \| EnableEvents**
 
 </dd> <dt>
 
@@ -384,7 +384,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM High Threshold On Client \| Objects"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("objetos por segundo")
 </dt> </dl>
 
-Velocidad máxima a la que se pueden entregar los objetos creados por el proveedor a los clientes. Para dar cabida a las diferencias de velocidad entre proveedores y clientes, WMI contiene objetos en colas antes de entregarlos a los consumidores. Para obtener más eficacia, los consumidores deben recopilar los objetos a un ritmo que coincida con el proveedor. Si la memoria que mantienen los objetos no recopilados alcanza **LowThresholdOnObjects,** WMI ralentiza la adición de nuevos objetos a la cola. Si se siguen acumulando eventos no recopilados y se alcanza la espera máxima para entregar eventos en **MaxWaitOnClientObjects** mientras la memoria usada se encuentra en el valor de **HighThresholdOnClientObjects,** WMI no acepta más objetos de los proveedores y devuelve **WBEM \_ E OUT \_ OF \_ \_ MEMORY** a los clientes.
+Velocidad máxima a la que se pueden entregar los objetos creados por el proveedor a los clientes. Para dar cabida a las diferencias de velocidad entre proveedores y clientes, WMI contiene objetos en colas antes de entregarlos a los consumidores. Para obtener más eficacia, los consumidores deben recopilar los objetos a un ritmo que coincida con el proveedor. Si la memoria que mantienen los objetos no recopilados alcanza **LowThresholdOnObjects**, WMI ralentiza la adición de nuevos objetos a la cola. Si se siguen acumulando eventos no recopilados y se alcanza la espera máxima para entregar eventos en **MaxWaitOnClientObjects** mientras la memoria usada se encuentra en el valor de **HighThresholdOnClientObjects**, WMI no acepta más objetos de los proveedores y devuelve **WBEM \_ E OUT OF \_ \_ \_ MEMORY** a los clientes.
 
 </dd> <dt>
 
@@ -400,7 +400,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM High Threshold On \| Events"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("eventos por segundo")
 </dt> </dl>
 
-Velocidad máxima a la que se van a entregar los eventos a los clientes. Para adaptarse a las diferencias de velocidad entre proveedores y clientes, WMI pone en cola los eventos antes de entregarlos a los consumidores. Para obtener más eficacia, los consumidores deben recopilar los eventos a un ritmo que coincida con el proveedor. Si la memoria que mantienen los eventos no recopilados alcanza **LowThresholdOnObjects,** WMI ralentiza la adición de nuevos eventos a la cola. Si se siguen acumulando eventos no recopilados y se alcanza la espera máxima para entregar eventos en **MaxWaitOnEvents** mientras la memoria usada se encuentra en el valor de **HighThresholdOnEvents,** WMI no acepta más eventos de los proveedores y devuelve **WBEM \_ E OUT OF \_ \_ \_ MEMORY** a los clientes.
+Velocidad máxima a la que se van a entregar los eventos a los clientes. Para dar cabida a las diferencias de velocidad entre proveedores y clientes, WMI pone en cola los eventos antes de entregarlos a los consumidores. Para obtener más eficacia, los consumidores deben recopilar los eventos a un ritmo que coincida con el proveedor. Si la memoria que mantienen los eventos no recopilados alcanza **LowThresholdOnObjects,** WMI ralentiza la adición de nuevos eventos a la cola. Si los eventos no recopilados se siguen acumulando y se alcanza la espera máxima para entregar eventos en **MaxWaitOnEvents** mientras la memoria usada se encuentra en el valor de **HighThresholdOnEvents,** WMI no acepta más eventos de los proveedores y devuelve **WBEM \_ E OUT OF \_ \_ \_ MEMORY** a los clientes.
 
 > [!Note]  
 > La limitación solo se realiza para los consumidores de eventos permanentes, por lo que los consumidores temporales no deben esperar limitación cuando se realiza una copia de seguridad de eventos en la cola de eventos interna de WMI.
@@ -409,7 +409,7 @@ Velocidad máxima a la que se van a entregar los eventos a los clientes. Para ad
 
 Esta propiedad refleja el valor de la clave del Registro.
 
-**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM \| High Threshold on Client Objects (B)**    
+**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM \| High Threshold On Client Objects (B)**    
 
 </dd> <dt>
 
@@ -429,7 +429,7 @@ Ruta de acceso del directorio donde se ha instalado el software WMI. La ubicaci�
 
 Esta propiedad refleja el valor de la clave del Registro.
 
-**HKEY \_ Directorio de \_ instalación** de \\  \\ **Microsoft** \\ **WBEM de \|** SOFTWARE LOCAL MACHINE
+**HKEY \_ Directorio \_ de instalación** \\ **de** \\ **Microsoft** \\ **WBEM de \|** SOFTWARE LOCAL MACHINE
 
 </dd> <dt>
 
@@ -442,14 +442,14 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM \| LastStartupHeapPreallocation"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM \| LastStartupHeapPreallocation"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Tamaño del montón asignado previamente creado por WMI durante la inicialización.
+Tamaño del montón preasignado creado por WMI durante la inicialización.
 
 Esta propiedad refleja el valor de la clave del Registro.
 
-**HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM \| CIMOM \| LastStartupHeapPreallocation**
+**HKEY \_ SOFTWARE \_ DE MÁQUINA LOCAL** \\  \\ **Microsoft** \\ **WBEM \| CIMOM \| LastStartupHeapPreallocation**
 
 </dd> <dt>
 
@@ -469,7 +469,7 @@ Ruta de acceso del directorio que contiene la ubicación de los archivos de regi
 
 Esta propiedad refleja el valor de la clave del Registro.
 
-**HKEY \_ Directorio \_ de registro** CIMOM de \\  \\ **Microsoft** \\ **WBEM de \| \|** SOFTWARE LOCAL MACHINE
+**HKEY \_ Directorio \_ de registro** DE \\  \\ **CIMOM** de Microsoft \\ **WBEM de \| \|** SOFTWARE LOCAL MACHINE
 
 </dd> <dt>
 
@@ -489,7 +489,7 @@ Habilitación del registro de eventos y el nivel de detalle del registro usado.
 
 Esta propiedad refleja el valor de la clave del Registro.
 
-**HKEY \_ Registro \_ CIMOM** \\ **de** \\ **Microsoft** \\ **WBEM de \| \|** SOFTWARE LOCAL MACHINE
+**HKEY \_ Registro \_ CIMOM** de Microsoft \\  \\  \\ **WBEM de \| \|** SOFTWARE LOCAL MACHINE
 
 <dt>
 
@@ -525,14 +525,14 @@ Tipo de datos: **uint32**
 Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Low Threshold On Client \| Objects"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("objetos por segundo")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Low Threshold On Client \| Objects"), [**Units**](../wmisdk/standard-qualifiers.md) ("objects per second")
 </dt> </dl>
 
-Velocidad a la que WMI empieza a ralentizar la creación de nuevos objetos creados para los clientes. Para dar cabida a las diferencias de velocidad entre proveedores y clientes, WMI contiene objetos en colas antes de entregarlos a los consumidores. Para obtener más eficacia, los consumidores deben recopilar los objetos a un ritmo que coincida con el proveedor. Si la tasa de solicitudes de objetos alcanza **LowThresholdOnClientObjects,** WMI ralentiza gradualmente la creación de nuevos objetos para que coincidan con la tasa de uso del cliente. Esta ralentización se inicia cuando la velocidad a la que se crean los objetos supera el valor de esta propiedad. Vea **HighThresholdOnClientObjects**.
+Velocidad a la que WMI comienza a ralentizar la creación de nuevos objetos creados para los clientes. Para dar cabida a las diferencias de velocidad entre proveedores y clientes, WMI contiene objetos en colas antes de entregarlos a los consumidores. Para obtener más eficacia, los consumidores deben recopilar los objetos a un ritmo que coincida con el proveedor. Si la tasa de solicitudes de objetos alcanza **LowThresholdOnClientObjects,** WMI ralentiza gradualmente la creación de nuevos objetos para que coincidan con la tasa de uso del cliente. Esta ralentización se inicia cuando la velocidad a la que se crean los objetos supera el valor de esta propiedad. Vea **HighThresholdOnClientObjects.**
 
 Esta propiedad refleja el valor del Registro.
 
-**KEY \_ Local \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM \| High Threshold on Client Objects (B)**    
+**KEY \_ Local \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM \| High Threshold On Client Objects (B)**    
 
 </dd> <dt>
 
@@ -548,7 +548,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Low Threshold On \| Events"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("eventos por segundo")
 </dt> </dl>
 
-Velocidad a la que WMI empieza a ralentizar la entrega de nuevos eventos. Para adaptarse a las diferencias de velocidad entre proveedores y clientes, WMI pone en cola los eventos antes de entregarlos a los consumidores. Para obtener más eficacia, los consumidores deben recopilar los objetos a un ritmo que coincida con el proveedor. Si la cola crece fuera de control, WMI limita (ralentiza) la entrega de eventos gradualmente para alinearse con la velocidad del cliente. Esta ralentización se inicia cuando la velocidad a la que se generan los eventos supera el valor de esta propiedad. Vea **HighThresholdOnEvents.**
+Velocidad a la que WMI comienza a ralentizar la entrega de nuevos eventos. Para dar cabida a las diferencias de velocidad entre proveedores y clientes, WMI pone en cola los eventos antes de entregarlos a los consumidores. Para obtener más eficacia, los consumidores deben recopilar los objetos a un ritmo que coincida con el proveedor. Si la cola crece fuera de control, WMI limita (ralentiza) la entrega de eventos gradualmente para alinearse con la velocidad del cliente. Esta ralentización se inicia cuando la velocidad a la que se generan los eventos supera el valor de esta propiedad. Vea **HighThresholdOnEvents.**
 
 > [!Note]  
 > La limitación solo se realiza para los consumidores de eventos permanentes, por lo que los consumidores temporales no deben esperar limitación cuando se realiza una copia de seguridad de eventos en la cola de eventos interna de WMI.
@@ -557,7 +557,7 @@ Velocidad a la que WMI empieza a ralentizar la entrega de nuevos eventos. Para a
 
 Esta propiedad refleja el valor del Registro.
 
-**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM \| High Threshold on Client Objects {B}**    
+**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM \| High Threshold On Client Objects {B}**    
 
 </dd> <dt>
 
@@ -577,7 +577,7 @@ Tamaño máximo de los archivos de registro generados por el servicio WMI.
 
 Esta propiedad refleja el valor de la clave del Registro.
 
-**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM \| CIMOM Log File Max \| Size**
+**HKEY \_ Tamaño \_ máximo del** archivo de registro \\  \\ CIMOM de **Microsoft** \\ **WBEM \| SOFTWARE LOCAL \| MACHINE** Software
 
 </dd> <dt>
 
@@ -593,7 +593,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Max Wait On \| Events"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("milisegundos")
 </dt> </dl>
 
-Cantidad de tiempo que un objeto recién creado espera a que el cliente lo utilice antes de que se descarte y se devuelva un valor de error. Esta propiedad interactúa con las propiedades **LowThresholdOnClientObjects** y **HighThresholdOnClientObjects** para limitar (ralentizar) la entrega de objetos a los consumidores cuando el consumidor recibe los objetos demasiado lentamente.
+Cantidad de tiempo que un objeto recién creado espera a ser utilizado por el cliente antes de que se descarte y se devuelva un valor de error. Esta propiedad interactúa con las propiedades **LowThresholdOnClientObjects** y **HighThresholdOnClientObjects** para limitar (ralentizar) la entrega de objetos a los consumidores cuando el consumidor recibe los objetos demasiado lentamente.
 
 </dd> <dt>
 
@@ -629,7 +629,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \| MOF Self-Install Directory")
 </dt> </dl>
 
-Ruta de acceso del directorio para las aplicaciones que instalan archivos MOF en el repositorio WMI. WMI compila automáticamente los archivos MOF colocados en este directorio y, en función de su éxito, mueve el MOF a un subdirectorio etiquetado como bueno o malo. Si se incluye el comando \# [pragma autorecover,](../wmisdk/pragma-autorecover.md) el nombre de archivo completo se agrega a la lista **AutorecoverMofs** que se usa cuando WMI inicializa o recupera el repositorio. La lista determina el orden en que se compilan los MOF.
+Ruta de acceso del directorio para las aplicaciones que instalan archivos MOF en el repositorio WMI. WMI compila automáticamente los archivos MOF colocados en este directorio y, en función de su éxito, mueve el MOF a un subdirectorio etiquetado como correcto o no correcto. Si se incluye el comando \# [pragma autorecover,](../wmisdk/pragma-autorecover.md) el nombre de archivo completo se agrega a la lista **AutorecoverMofs** que se usa cuando WMI inicializa o recupera el repositorio. La lista determina el orden en que se compilan los MOF.
 
 Esta propiedad refleja el valor de la clave del Registro.
 
@@ -651,15 +651,15 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ WMISetting de Win32** se deriva de [**cim \_ setting**](cim-setting.md). Solo puede existir una instancia de esta clase en un equipo.
 
-Saber cómo se configura WMI en un equipo puede ser muy útil cuando se depuran scripts o se solucionan problemas con el propio servicio WMI. Por ejemplo, muchos scripts WMI se escriben bajo la suposición de que \\ root cimv2 es el espacio de nombres predeterminado en el equipo de destino. Como resultado, los escritores de scripts que necesitan acceder a una clase en "ROOT CIMv2" a menudo no pueden incluir el espacio de nombres en el moniker GetObject, como se muestra en el ejemplo de código \\ siguiente:
+Saber cómo se configura WMI en un equipo puede ser muy útil cuando se depuran scripts o se solucionan problemas con el propio servicio WMI. Por ejemplo, muchos scripts WMI se escriben bajo la suposición de que la raíz cimv2 es el espacio de nombres \\ predeterminado en el equipo de destino. Como resultado, los escritores de scripts que necesitan acceder a una clase en "ROOT CIMv2" suelen no incluir el espacio de nombres en el moniker GetObject, como se muestra en el ejemplo de código \\ siguiente:
 
 `Set colServices = GetObject("winmgmts:").ExecQuery ("SELECT * FROM Win32_Service")`
 
@@ -667,27 +667,27 @@ Si root \\ cimv2 no es el espacio de nombres predeterminado en el equipo de dest
 
 `Set colServices = GetObject("winmgmts:root\cimv2").ExecQuery("SELECT * FROM Win32_Service")`
 
-Si el espacio de nombres predeterminado del equipo de destino es diferente del espacio de nombres asumido por un script, se producirá un error en el script. Además, se mostrará al usuario el mensaje de error algo confuso "Clase no válida". En realidad, el error no se debe a que la clase no es válida, sino a que la clase no se encuentra en el espacio de nombres predeterminado. Se trata de un problema difícil de solucionar, ya que es probable que investigue posibles problemas con la clase en lugar de problemas con el espacio de nombres que se especificó (o, en este caso, no).
+Si el espacio de nombres predeterminado del equipo de destino es diferente del espacio de nombres asumido por un script, se producirá un error en el script. Además, se mostrará al usuario el mensaje de error algo engañoso "Clase no válida". En realidad, el error no se debe a que la clase no es válida, sino a que la clase no se encuentra en el espacio de nombres predeterminado. Se trata de un problema difícil de solucionar, ya que es probable que investigue posibles problemas con la clase en lugar de problemas con el espacio de nombres especificado (o, en este caso, no).
 
 Puede usar la clase **\_ WMISetting de Win32** para determinar cómo se ha configurado WMI en un equipo. Los detalles de configuración, como el espacio de nombres predeterminado o el número de compilación wmi, pueden ser útiles para solucionar problemas de script. Esta configuración también proporciona información administrativa importante, como cómo o incluso si se registran errores de WMI en un equipo y qué proveedores WMI se volverán a cargar automáticamente si necesita volver a generar el repositorio WMI.
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo de código](https://Gallery.TechNet.Microsoft.Com/aa80d174-3592-4fed-9c50-11f34e541445) Modify WMI Configuración VBScript de la Galería de TechNet usa la clase **\_ WMISetting de Win32** para configurar el intervalo de copia de seguridad wmi y el nivel de registro.
+El [ejemplo de código Modify WMI Configuración](https://Gallery.TechNet.Microsoft.Com/aa80d174-3592-4fed-9c50-11f34e541445) VBScript de la Galería de TechNet usa la clase **\_ WMISetting de Win32** para configurar el intervalo de copia de seguridad de WMI y el nivel de registro.
 
-El [](https://Gallery.TechNet.Microsoft.Com/3fc69acd-ead0-4dd1-9ea1-e15a7331cfa0) ejemplo de código VBScript Enumerar el espacio de nombres predeterminado de la Galería de TechNet usa la clase **\_ WMISetting de Win32** para recuperar y mostrar la configuración actual de WMI "Espacio de nombres predeterminado para scripting".
+El ejemplo [de](https://Gallery.TechNet.Microsoft.Com/3fc69acd-ead0-4dd1-9ea1-e15a7331cfa0) código DE VBScript Enumerar el espacio de nombres predeterminado de la Galería de TechNet usa la clase **\_ WMISetting de Win32** para recuperar y mostrar la configuración actual de WMI "Espacio de nombres predeterminado para scripting".
 
-El ejemplo de código [DESCRIPT](https://Gallery.TechNet.Microsoft.Com/6dbb20e6-036d-43a2-ad6d-58325ada6a19) Modificar el espacio de nombres WMI predeterminado de la Galería de TechNet usa la propiedad **ASPScriptDefaultNamespace** para establecer el valor "Espacio de nombres predeterminado para scripting" de WMI en "root \\ cimv2".
+El ejemplo de código [VBScript](https://Gallery.TechNet.Microsoft.Com/6dbb20e6-036d-43a2-ad6d-58325ada6a19) Modificar el espacio de nombres WMI predeterminado de la Galería de TechNet usa la propiedad **ASPScriptDefaultNamespace** para establecer el valor "Espacio de nombres predeterminado para scripting" de WMI en "root \\ cimv2".
 
-El ejemplo de código List [All the WMI Configuración](https://Gallery.TechNet.Microsoft.Com/29c04301-e9b2-46d1-8714-2dbb51014c92) VBSCript usa varias propiedades en **\_ WMISetting de Win32** para devolver una lista de las opciones de WMI configuradas en un equipo.
+El ejemplo de código List [All the WMI Configuración](https://Gallery.TechNet.Microsoft.Com/29c04301-e9b2-46d1-8714-2dbb51014c92) VBSCript usa varias propiedades en **\_ WMISetting de Win32** para devolver una lista de la configuración de WMI configurada en un equipo.
 
-En [el ejemplo de código](https://Gallery.TechNet.Microsoft.Com/0427cfde-4cd9-4a3d-9140-3bb622a1df5d) de JavaScript List WMI Setting Information se usan varias propiedades en **\_ WMISetting de Win32** para devolver una lista de las opciones de WMI configuradas en un equipo.
+El [ejemplo de código de](https://Gallery.TechNet.Microsoft.Com/0427cfde-4cd9-4a3d-9140-3bb622a1df5d) JavaScript List WMI Setting Information usa varias propiedades en **\_ WMISetting de Win32** para devolver una lista de la configuración de WMI configurada en un equipo.
 
-El [ejemplo de código](https://Gallery.TechNet.Microsoft.Com/370e7fbe-ea3c-4290-8a56-1e38519f518d) de Python List WMI Setting Information usa una serie de propiedades en **\_ WMISetting de Win32** para devolver una lista de las opciones de WMI configuradas en un equipo.
+El [ejemplo de código](https://Gallery.TechNet.Microsoft.Com/370e7fbe-ea3c-4290-8a56-1e38519f518d) de Python List WMI Setting Information usa varias propiedades en **\_ WMISetting de Win32** para devolver una lista de la configuración de WMI configurada en un equipo.
 
-El [ejemplo de código](https://Gallery.TechNet.Microsoft.Com/9309e4c5-2ca6-4662-9451-f1342d5171d2) REXX del objeto list WMI Setting Information usa varias propiedades en **\_ WMISetting de Win32** para devolver una lista de las opciones de WMI configuradas en un equipo.
+El [ejemplo de código](https://Gallery.TechNet.Microsoft.Com/9309e4c5-2ca6-4662-9451-f1342d5171d2) REXX Del objeto list WMI Setting Information usa varias propiedades en **\_ WMISetting de Win32** para devolver una lista de la configuración de WMI configurada en un equipo.
 
-En el ejemplo de código de VBScript siguiente se muestra cómo obtener la versión de WMI que se ejecuta en el equipo local. "Win32 \_ WMISetting=@" indica la instancia única de la clase . Para obtener más información, vea Versiones de WMI.
+En el siguiente ejemplo de código de VBScript se muestra cómo obtener la versión de WMI que se ejecuta en el equipo local. "Win32 \_ WMISetting=@" indica la instancia única de la clase . Para obtener más información, vea Versiones de WMI.
 
 
 ```VB
@@ -704,7 +704,7 @@ WScript.Echo  objWMISetting.BuildVersion
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 359478d7cf6069e17ae02358f4ea48ffc44169f6822f4f8b3e33dad332fab020
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fda1f1305904fa919bb2080fe5de02f0e5850a8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119546375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160329"
 ---
 # <a name="win32_clientapplicationsetting-class"></a>Clase \_ ClientApplicationSetting de Win32
 
@@ -40,7 +40,7 @@ class Win32_ClientApplicationSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ClientApplicationSetting de Win32** tiene estos tipos de miembros:
 
@@ -64,14 +64,14 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
 </dt> </dl>
 
-Referencia a la instancia de que representa la aplicación COM que contiene opciones de configuración del archivo ejecutable.
+Referencia a la instancia de que representa la aplicación COM que contiene las opciones de configuración del archivo ejecutable.
 
 </dd> <dt>
 
 **Cliente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Cim \_ DataFile**
+Tipo de datos: **CIM \_ DataFile**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -84,7 +84,7 @@ Referencia a la instancia de que representa el archivo ejecutable que usa la con
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Win32 \_ ClientApplicationSetting** no admite la enumeración .
 
@@ -92,7 +92,7 @@ Referencia a la instancia de que representa el archivo ejecutable que usa la con
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -102,7 +102,7 @@ Referencia a la instancia de que representa el archivo ejecutable que usa la con
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

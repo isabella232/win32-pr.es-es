@@ -13,11 +13,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 01b6455807aedb99d7bd525c69fffc524dbe25d4
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882783"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159706"
 ---
 # <a name="ltsystemgt-switch"></a>/&lt;conmutador &gt; del sistema
 
@@ -69,7 +69,7 @@ Un entorno de Windows de 64 bits basado en Micro Devices estadounidense, como Wi
 
 </dd> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **/ &lt; modificador &gt;** del sistema es funcionalmente el mismo que la opción MIDL [**/env**](-env.md) y el compilador de MIDL lo reconoce únicamente por compatibilidad con versiones anteriores con MkTypLib. Si va a generar un nuevo archivo Make, use el **modificador /env.**
 
@@ -77,7 +77,7 @@ El **/ &lt; modificador &gt;** del sistema es funcionalmente el mismo que la opc
 
 **midl /win32 filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

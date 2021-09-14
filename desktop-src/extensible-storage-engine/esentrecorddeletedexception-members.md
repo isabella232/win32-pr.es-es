@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102512
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 60fc0de3a4908dfcc99a4232836750d9e4bea5cd6901c08432c2e417cdffcc80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6396693c9563bf2cce0b75c89feba726ee94d3ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118079716"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965931"
 ---
 # <a name="esentrecorddeletedexception-members"></a>Miembros de EsentRecordDeletedException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. RecordDeleted exceptions.
+Clase base para JET_err. RecordDeleted exceptions( Excepciones de RecordDeleted).
 
-El [tipo EsentRecordDeletedException](./esentrecorddeletedexception-class.md) expone los miembros siguientes.
+El [tipo EsentRecordDeletedException](./esentrecorddeletedexception-class.md) expone los siguientes miembros.
 
 ## <a name="constructors"></a>Constructores
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

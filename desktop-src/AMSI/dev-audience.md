@@ -3,12 +3,12 @@ title: Audiencia de desarrolladores y código de ejemplo
 description: En este tema se describen los grupos de desarrolladores para los que está diseñada la interfaz de examen antimalware.
 ms.topic: article
 ms.date: 03/20/2019
-ms.openlocfilehash: 4ac11c75d5714d0706bed28264f9fa1bf03432af82107826178007e2c42243c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22cf1156a8fa0aedc212b2ab70e34b984d13470f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119579915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968931"
 ---
 # <a name="developer-audience-and-sample-code"></a>Audiencia de desarrolladores y código de ejemplo
 
@@ -23,7 +23,7 @@ AMSI está diseñado en particular para combatir el "malware sin archivos". Entr
 
 Hay dos maneras de establecer una interfaz con AMSI en la aplicación.
 
-- Mediante las API win32 de AMSI. Vea [Funciones de la interfaz de examen de Antimalware (AMSI).](/windows/desktop/amsi/antimalware-scan-interface-functions)
+- Mediante las API win32 de AMSI. Vea [Funciones de la interfaz de examen antimalware (AMSI).](/windows/desktop/amsi/antimalware-scan-interface-functions)
 - Mediante las interfaces COM de AMSI. Vea [ **IAmsiStream interface ( Interfaz IAmsiStream**](/windows/desktop/api/amsi/nn-amsi-iamsistream)).
 
 Para obtener código de ejemplo que muestra cómo consumir AMSI dentro de la aplicación COM, vea la aplicación de ejemplo [de interfaz IAmsiStream](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/AmsiStream).
@@ -43,7 +43,7 @@ Para empezar, debe asegurarse de que existen Windows claves del Registro.
 - HKLM\SOFTWARE\Microsoft\AMSI\Providers
 - HKLM\SOFTWARE\Classes\CLSID
 
-Un proveedor AMSI es un servidor COM en proceso. Por lo tanto, debe registrarse en COM. Las clases COM se registran en `HKLM\SOFTWARE\Classes\CLSID` .
+Un proveedor AMSI es un servidor COM en proceso. Por lo tanto, debe registrarse con COM. Las clases COM se registran en `HKLM\SOFTWARE\Classes\CLSID` .
 
 En el código siguiente se muestra cómo registrar un proveedor de AMSI, cuyo GUID (en este ejemplo) se supone que es `2E5D8A62-77F9-4F7B-A90C-2744820139B2` .
 

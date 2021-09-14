@@ -4,20 +4,20 @@ ms.assetid: ef37d644-473f-4e51-9785-5b44fe0dce42
 title: Enumerar un montón
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c8e995dde36911947e1c510103503a99a307219bc2661a7efb9569fdab4ca20
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 79ad6ea7e23f480b4d4e27885d296f1be1632053
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119869845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159875"
 ---
 # <a name="enumerating-a-heap"></a>Enumerar un montón
 
-En el ejemplo siguiente se muestra el uso de la [**función HeapWalk**](/windows/desktop/api/HeapApi/nf-heapapi-heapwalk) para enumerar un montón.
+En el ejemplo siguiente se muestra el uso de [**la función HeapWalk**](/windows/desktop/api/HeapApi/nf-heapapi-heapwalk) para enumerar un montón.
 
 En primer lugar, en el ejemplo se crea un montón privado con [**la función HeapCreate.**](/windows/desktop/api/HeapApi/nf-heapapi-heapcreate) A continuación, [**usa HeapLock para**](/windows/desktop/api/HeapApi/nf-heapapi-heaplock) bloquear el montón para que otros subprocesos no puedan acceder al montón mientras se enumera. A continuación, el ejemplo llama a [**HeapWalk**](/windows/desktop/api/HeapApi/nf-heapapi-heapwalk) con un puntero a una estructura [**PROCESS \_ HEAP \_ ENTRY**](/windows/win32/api/minwinbase/ns-minwinbase-process_heap_entry) y recorre en iteración el montón e imprime cada entrada en la consola.
 
-Una vez finalizada la enumeración, en el ejemplo se [**usa HeapUnlock para**](/windows/desktop/api/HeapApi/nf-heapapi-heapunlock) desbloquear el montón para que otros subprocesos puedan acceder a él. Por último, en el ejemplo [**se llama a HeapDestroy**](/windows/desktop/api/HeapApi/nf-heapapi-heapdestroy) para destruir el montón privado.
+Una vez finalizada la enumeración, en el ejemplo se [**usa HeapUnlock**](/windows/desktop/api/HeapApi/nf-heapapi-heapunlock) para desbloquear el montón para que otros subprocesos puedan acceder a él. Por último, en el ejemplo [**se llama a HeapDestroy**](/windows/desktop/api/HeapApi/nf-heapapi-heapdestroy) para destruir el montón privado.
 
 
 ```C++
@@ -120,7 +120,7 @@ int __cdecl _tmain()
 
 
 
-La siguiente salida muestra los resultados típicos de un montón recién creado.
+En la salida siguiente se muestran los resultados típicos de un montón recién creado.
 
 ``` syntax
 Walking heap 0X00530000...

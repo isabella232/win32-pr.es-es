@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 941aaa775a3f286bf25187bbb0ce75e3d39037be9c3ce33571aff755335a3ad5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d57ce492db24ac9920662d4de5baed4650dd801
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119122915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969727"
 ---
 # <a name="d3dxloadvolumefromresource-function"></a>Función D3DXLoadVolumeFromResource
 
@@ -80,7 +80,7 @@ Puntero a una [**estructura D3DBOX.**](d3dbox.md) Especifica el cuadro de destin
 
 Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Controle el módulo donde se encuentra el recurso o **NULL** para el módulo asociado a la imagen que el sistema operativo usó para crear el proceso actual.
+Identificador del módulo donde se encuentra el recurso o **NULL** para el módulo asociado a la imagen que el sistema operativo usó para crear el proceso actual.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Controle el módulo donde se encuentra el recurso o **NULL** para el módulo aso
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntero a una cadena que especifica el nombre de archivo de la imagen de origen. Si se definen UNICODE o UNICODE, este tipo de parámetro \_ es LPCWSTR; de lo contrario, el tipo es LPCSTR.
+Puntero a una cadena que especifica el nombre de archivo de la imagen de origen. Si se definen \_ UNICODE o UNICODE, este tipo de parámetro es LPCWSTR; de lo contrario, el tipo es LPCSTR.
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Combinación de uno o varios [filtros D3DX, \_ ](d3dx-filter.md)que controlan c�
 
 Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
 
-[**Valor D3DCOLOR que**](d3dcolor.md) se reemplazará por negro transparente o 0 para deshabilitar la clave de color. Siempre es un color ARGB de 32 bits, independientemente del formato de imagen de origen. Alfa es significativo y normalmente debe establecerse en FF para las claves de color opacas. Por lo tanto, para el negro opaco, el valor sería igual a 0xFF000000.
+[**Valor D3DCOLOR**](d3dcolor.md) que se reemplazará por negro transparente o 0 para deshabilitar la clave de color. Siempre es un color ARGB de 32 bits, independientemente del formato de imagen de origen. Alfa es significativo y normalmente debe establecerse en FF para las claves de color opacas. Por lo tanto, para el negro opaco, el valor sería igual a 0xFF000000.
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
 
 Tipo: **[ **D3DXIMAGE \_ INFO**](d3dximage-info.md)\***
 
-Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con una descripción de los datos del archivo de imagen de origen, o **NULL.**
+Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con una descripción de los datos en el archivo de imagen de origen, o **NULL.**
 
 </dd> </dl>
 
@@ -135,13 +135,13 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El recurso que se va a cargar debe ser un recurso de mapa de bits (RT \_ BITMAP).
+El recurso que se carga debe ser un recurso de mapa de bits (RT \_ BITMAP).
 
 Esta función controla la conversión a y desde formatos de textura comprimidos.
 
-Escribir en una superficie que no sea de nivel cero de la textura del volumen no hará que el rectángulo desnuciado se actualice. Si se llama a [**D3DXLoadVolumeFromFile**](d3dxloadvolumefromfile.md) y la textura aún no estaba desa prueba (es poco probable en escenarios de uso normal), la aplicación debe llamar explícitamente a [**IDirect3DVolumeTexture9::AddDirtyBox**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvolumetexture9-adddirtybox) en la textura del volumen.
+Escribir en una superficie que no sea de nivel cero de la textura del volumen no hará que se actualice el rectángulo sucio. Si se llama a [**D3DXLoadVolumeFromFile**](d3dxloadvolumefromfile.md) y la textura aún no está desa prueba (es poco probable en escenarios de uso normal), la aplicación debe llamar explícitamente a [**IDirect3DVolumeTexture9::AddDirtyBox**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvolumetexture9-adddirtybox) en la textura del volumen.
 
 Esta función admite cadenas Unicode y ANSI.
 
@@ -156,7 +156,7 @@ Esta función admite cadenas Unicode y ANSI.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

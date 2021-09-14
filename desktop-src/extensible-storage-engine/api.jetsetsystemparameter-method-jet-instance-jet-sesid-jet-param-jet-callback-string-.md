@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 600155fd91dea4091e84e81db42b9781ea72e6d5bc8274c743738b3e76e3e3e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d8d9d65af803a011c0a6a79fdaec2fb0a44755b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118497812"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969452"
 ---
 # <a name="apijetsetsystemparameter-method-jet_instance-jet_sesid-jet_param-jet_callback-string"></a>Método Api.JetSetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, JET_CALLBACK, String)
 
@@ -72,7 +72,7 @@ public static JET_wrn JetSetSystemParameter(
   - instance  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia en la que se establece la opción o [Nil](./jet-instance.nil-property.md) para establecer la opción en todas las instancias.
+    Instancia de en la que se establece la opción en [o Nulo](./jet-instance.nil-property.md) para establecer la opción en todas las instancias.
 
 <!-- end list -->
 
@@ -86,7 +86,7 @@ public static JET_wrn JetSetSystemParameter(
   - paramid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_param](./jet-param-enumeration.md)  
     
-    Parámetro que se establecerá.
+    Parámetro que se establece.
 
 <!-- end list -->
 
@@ -105,13 +105,13 @@ public static JET_wrn JetSetSystemParameter(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-Código de advertencia de ESENT.  
+Un código de advertencia de ESENT.  
 
 ## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

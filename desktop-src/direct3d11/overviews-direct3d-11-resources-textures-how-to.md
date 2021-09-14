@@ -4,16 +4,16 @@ description: En este tema se muestra cómo usar Windows Imaging Component (WIC) 
 ms.assetid: ea3c6003-191d-47d1-8931-f43598728ad4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b3e8035e630a7b2182c114e329cf4b08428ab3a83ca218b933cb2b922ff305c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1bf6ba4296c2103d7f84f934899f906500e712cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120027945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966916"
 ---
 # <a name="how-to-initialize-a-texture-from-a-file"></a>Cómo: Inicializar una textura a partir de un archivo
 
-Puede usar la API [Windows Imaging Component](/windows/desktop/wic/-wic-lh) para inicializar una [textura](overviews-direct3d-11-resources-textures.md) desde un archivo. Para cargar una textura, debe crear una textura y una vista de textura. En este tema se muestra cómo usar Windows Imaging Component (WIC) para crear la textura y la vista por separado.
+Puede usar la API [Windows Imaging Component](/windows/desktop/wic/-wic-lh) para inicializar una [textura](overviews-direct3d-11-resources-textures.md) a partir de un archivo. Para cargar una textura, debe crear una textura y una vista de textura. En este tema se muestra cómo usar Windows Imaging Component (WIC) para crear la textura y la vista por separado.
 
 > [!Note]  
 > Este tema es útil para las imágenes que se crean como texturas 2D simples. Para recursos más complejos, use [DDS](/windows/desktop/direct3ddds/dx-graphics-dds). Para obtener una canalización completa de procesamiento de texturas, escritura y lector de archivos DDS, consulte [DirectXTex](https://github.com/Microsoft/DirectXTex) y [DirectXTK.](https://github.com/Microsoft/DirectXTK)
@@ -56,7 +56,7 @@ Al final de este tema, encontrará el código de ejemplo completo. En el tema se
 
     \* Los formatos DXGI de un solo canal son todos de color rojo, por lo que necesita deslizar el sombreador HLSL como .rrr para representarlos como escala de grises.
 
-6.  Llame al [**método IWICBitmapSource::CopyPixels**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapsource-copypixels) para copiar los píxeles de la imagen en un búfer. Use el [**tipo DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) y el búfer para inicializar el recurso de textura 2D y el objeto shader-resource-view.
+6.  Llame al [**método IWICBitmapSource::CopyPixels**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapsource-copypixels) para copiar los píxeles de la imagen en un búfer. Use el [**tipo DXGI \_ FORMAT y**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) el búfer para inicializar el recurso de textura 2D y el objeto shader-resource-view.
 7.  Llame al [**método ID3D11Device::CreateTexture2D**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createtexture2d) para inicializar el recurso de textura 2D. En esta llamada, pase la dirección de un puntero de interfaz [**ID3D11Texture2D.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11texture2d)
 
     ```C++

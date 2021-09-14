@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 52052a24c34c99260a68cd5cdeaa7487e6b71c086ac30922a06de241de8319ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0194c8c9c6806f96cbe75394e6650ca3e7dc74b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118801178"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966651"
 ---
 # <a name="id3dxsaveuserdataaddtopleveldataobjectspre-method"></a>Método ID3DXSaveUserData::AddTopLevelDataObjectsPre
 

@@ -23,23 +23,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 75795792a0ddfc5147538b6988c9ee00c9618ce8b0bc64eede132063bfb9fdf5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3959f7b99170cf1470d3688a101e4858f70e9a99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118421224"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160340"
 ---
 # <a name="cim_softwarefeature-class"></a>Cim \_ SoftwareFeature (clase)
 
-La **clase \_ CIM SoftwareFeature** representa una función o funcionalidad determinadas de un producto o sistema de aplicaciones. Esta clase refleja un nivel de granularidad que es significativo para un usuario de un producto en lugar de las unidades que reflejan cómo se ha creado o empaquetado el producto (capturado mediante una clase [**\_ SoftwareElement de CIM).**](cim-softwareelement.md) Cuando una característica de software puede existir en varias plataformas o sistemas operativos, la característica de software es una colección de elementos de software para las distintas plataformas. En ese caso, los usuarios del modelo normalmente estarán interesados en una subacopilación de los elementos de software necesarios para una plataforma determinada. Dado que las características se entregan a través de productos, las características de software siempre se definen en el contexto de una clase de producto [**CIM \_**](cim-product.md) mediante la [**asociación \_ ProductSoftwareFeatures de CIM.**](cim-productsoftwarefeatures.md) Opcionalmente, las características de software de uno o varios productos se pueden organizar en sistemas de aplicaciones mediante la asociación [**\_ CIM ApplicationSystemSoftwareFeature.**](cim-applicationsystemsoftwarefeature.md)
+La **clase \_ CIM SoftwareFeature** representa una función o funcionalidad determinadas de un producto o sistema de aplicaciones. Esta clase refleja un nivel de granularidad que es significativo para un usuario de un producto en lugar de las unidades que reflejan cómo se ha creado o empaquetado el producto (capturado mediante una clase [**\_ SoftwareElement**](cim-softwareelement.md) de CIM). Cuando una característica de software puede existir en varias plataformas o sistemas operativos, la característica de software es una colección de elementos de software para las distintas plataformas. En ese caso, los usuarios del modelo normalmente estarán interesados en una subacopilación de los elementos de software necesarios para una plataforma determinada. Dado que las características se entregan a través de productos, las características de software siempre se definen en el contexto de una clase de producto [**CIM \_**](cim-product.md) mediante la [**asociación \_ ProductSoftwareFeatures de CIM.**](cim-productsoftwarefeatures.md) Opcionalmente, las características de software de uno o varios productos se pueden organizar en sistemas de aplicaciones mediante la asociación [**\_ CIM ApplicationSystemSoftwareFeature.**](cim-applicationsystemsoftwarefeature.md)
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ class CIM_SoftwareFeature : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM SoftwareFeature** tiene estos tipos de miembros:
 
@@ -116,7 +116,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**IdentifyingNumber**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.4")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**IdentifyingNumber**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.4")
 </dt> </dl>
 
 Identificación del producto, como un número de serie en software o un número de dado en un chip de hardware.
@@ -168,10 +168,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**Name**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.2")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**Name**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.2")
 </dt> </dl>
 
-Nombre de producto que se usa con frecuencia.
+Nombre de producto usado con frecuencia.
 
 </dd> <dt>
 
@@ -225,7 +225,7 @@ Los valores son los siguientes:
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
@@ -239,7 +239,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -290,10 +290,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**Vendor**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.1")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**Vendor**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.1")
 </dt> </dl>
 
-Nombre del proveedor del producto, que corresponde a la propiedad **Vendor** del objeto product de la solución DMTF Exchange Standard.
+Nombre del proveedor del producto, que corresponde a la propiedad **Vendor** en el objeto product de la solución DMTF Exchange Standard.
 
 </dd> <dt>
 
@@ -306,14 +306,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**Version**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.3")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**Version**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Información de la versión del producto, que corresponde a la **propiedad Version** en el objeto product de la solución DMTF Exchange Standard.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CIM SoftwareFeature** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
@@ -325,7 +325,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -335,7 +335,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b331c9bb9daf7d20fae5cce4b7f721feb1cbb4366d3f92a74bf78fc9a05b5e63
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1730abf9058f5068def4a01f0d7e7601b9c69e53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119656455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160308"
 ---
 # <a name="win32_componentcategory-class"></a>Clase ComponentCategory de Win32 \_
 
-La **clase WMI \_ ComponentCategory** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa una categoría de componente. Las categorías de componentes son grupos de clases de Modelo de objetos componentes (COM) con un conjunto de funcionalidades definido compartido entre ellas. Un cliente que usa estas interfaces consulta al Registro el título de categoría y el identificador único denominado **CategoryID**, que se crea a partir de un identificador único global (GUID).
+La clase WMI **\_ ComponentCategory** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa una categoría de componente. Las categorías de componentes son grupos de clases de Modelo de objetos componentes (COM) con un conjunto de funcionalidades definido compartido entre ellas. Un cliente que usa estas interfaces consulta al Registro el título de categoría y el identificador único denominado **CategoryID**, que se crea a partir de un identificador único global (GUID).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -48,7 +48,7 @@ class Win32_ComponentCategory : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ComponentCategory de Win32** tiene estos tipos de miembros:
 
@@ -160,7 +160,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -191,28 +191,28 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -254,7 +254,7 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ ComponentCategory de Win32** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
@@ -272,7 +272,7 @@ La **clase \_ ComponentCategory de Win32** se deriva de [**CIM \_ LogicalElement
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

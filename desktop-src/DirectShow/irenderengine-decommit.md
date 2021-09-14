@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 7be0db3d8e6aabe8f854272940454ee7be9ebf48b45a83ef98aaff629fadb28e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 83909eb6d0ff0929b9f94b0d79f87fe1fcef6eb7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120131025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160144"
 ---
 # <a name="irenderenginedecommit-method"></a>IRenderEngine::D ecommit (método)
 
@@ -45,7 +45,7 @@ Este método no tiene parámetros.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -57,7 +57,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

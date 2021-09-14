@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Win32_DCOMApplicationSetting métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af8ffd4f2a264c74409052921b0985a622f3097ab2adc17f51a2c09cc5da5288
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46de2d900de05b4ef7af56e1f87763662f769c2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118172258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970248"
 ---
 # <a name="win32_dcomapplicationsetting-methods"></a>Métodos \_ DCOMApplicationSetting de Win32
 

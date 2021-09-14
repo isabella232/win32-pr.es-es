@@ -19,14 +19,14 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 111cb3893f835483320b1875636c3715b756f9328d15e402e25ce5e3161ee9eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b64ea80fe1304a0991e592a582ea16db76722b0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118417638"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968808"
 ---
-# <a name="win32_pnpdevicepropertyboolean-class"></a>Clase Win32 \_ PnPDevicePropertyBoolean
+# <a name="win32_pnpdevicepropertyboolean-class"></a>Clase \_ PnPDevicePropertyBoolean de Win32
 
 Representa una propiedad de dispositivo PnP de tipo **booleano**.
 
@@ -45,9 +45,9 @@ class Win32_PnPDevicePropertyBoolean : Win32_PnPDeviceProperty
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase Win32 \_ PnPDevicePropertyBoolean** tiene estos tipos de miembros:
+La **clase \_ PnPDevicePropertyBoolean de Win32** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -57,7 +57,7 @@ La **clase Win32 \_ PnPDevicePropertyBoolean** tiene estas propiedades.
 
 <dl> <dt>
 
-**Datos**
+**Data**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -502,7 +502,7 @@ Los valores posibles son.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                          |

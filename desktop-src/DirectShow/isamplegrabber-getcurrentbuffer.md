@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 88af9469a1470a02be62b7684a66990c5622820e370518ed53267bd87d981879
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4df4c825761b42533590f10432bf62e5e4e0298
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117818054"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891737"
 ---
 # <a name="isamplegrabbergetcurrentbuffer-method"></a>ISampleGrabber::GetCurrentBuffer (método)
 
@@ -68,7 +68,7 @@ Devuelve uno de los valores siguientes.
 
 | Código devuelto                                                                                           | Descripción                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Los ejemplos no se están almacenando en búfer. Llame [**a ISampleGrabber::SetBufferSamples**](isamplegrabber-setbuffersamples.md).<br/> |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Los ejemplos no se están almacenando en búfer. Llame [**a ISampleGrabber::SetBufferSamples.**](isamplegrabber-setbuffersamples.md)<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | El búfer especificado no es lo suficientemente grande.<br/>                                                                         |
 | <dl> <dt>**PUNTERO \_ E**</dt> </dl>             | **Argumento de** puntero NULL.<br/>                                                                                        |
 | <dl> <dt>**S \_ OK**</dt> </dl>                  | Correcto.<br/>                                                                                                          |
@@ -79,13 +79,13 @@ Devuelve uno de los valores siguientes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para activar el almacenamiento en búfer, llame a [**ISampleGrabber::SetBufferSamples**](isamplegrabber-setbuffersamples.md) con un valor de **TRUE.**
 
-Llame a este método dos veces. En la primera llamada, establezca *pBuffer* en **NULL.** El tamaño del búfer se devuelve en *pBufferSize*. A continuación, asigne una matriz y vuelva a llamar al método . En la segunda llamada, pase el tamaño de la matriz en *pBufferSize* y pase la dirección de la matriz en *pBuffer*. Si la matriz no es lo suficientemente grande, el método devuelve E \_ OUTOFMEMORY.
+Llame a este método dos veces. En la primera llamada, establezca *pBuffer* en **NULL.** El tamaño del búfer se devuelve en *pBufferSize*. A continuación, asigne una matriz y llame al método de nuevo. En la segunda llamada, pase el tamaño de la matriz en *pBufferSize* y pase la dirección de la matriz en *pBuffer*. Si la matriz no es lo suficientemente grande, el método devuelve E \_ OUTOFMEMORY.
 
-El *parámetro pBuffer* se escribe como **un puntero largo,** pero el contenido del búfer depende del formato de los datos. Llame [**a ISampleGrabber::GetConnectedMediaType para**](isamplegrabber-getconnectedmediatype.md) obtener el tipo de medio del formato.
+El *parámetro pBuffer* se escribe como un **puntero** largo, pero el contenido del búfer depende del formato de los datos. Llame [**a ISampleGrabber::GetConnectedMediaType para**](isamplegrabber-getconnectedmediatype.md) obtener el tipo de medio del formato.
 
 No llame a este método mientras se ejecuta el gráfico de filtros. Mientras se ejecuta el gráfico de filtros, el filtro Sample Grabber sobrescribe el contenido del búfer cada vez que recibe un nuevo ejemplo. La mejor manera de usar este método es usar el "modo de una sola toma", que detiene el gráfico después de recibir la primera muestra. Para establecer el modo de una sola toma, llame [**a ISampleGrabber::SetOneShot**](isamplegrabber-setoneshot.md).
 

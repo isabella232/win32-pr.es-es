@@ -4,18 +4,18 @@ ms.assetid: vs|directx_sdk|~\tokens.htm
 title: Tokens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf3e3654d90566fa6c4a6208c965518ce54acd3dd31669038de1b9a8ab38684d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1df253327b1256ea5e04f8b80b7e1da89f13e32c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120095585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966567"
 ---
 # <a name="tokens"></a>Tokens
 
 Los tokens se escriben como WORD little-endian. La siguiente lista de valores de token se divide en tokens independientes y de registro.
 
-Los tokens de registro se definen como se muestra a continuación.
+Los tokens que llevan registros se definen de la siguiente manera.
 
 
 ```
@@ -29,7 +29,7 @@ Los tokens de registro se definen como se muestra a continuación.
 
 
 
-Los tokens independientes se definen como se muestra a continuación.
+Los tokens independientes se definen de la siguiente manera.
 
 
 ```

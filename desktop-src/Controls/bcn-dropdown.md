@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fbacf22cdabbac7c5d2932c604fab634dbc185207acda8cee311d434478e5ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e78512419f62beaa82aff42ccaf951d34130fe3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118674981"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968731"
 ---
 # <a name="bcn_dropdown-notification-code"></a>Código de notificación \_ DE BCN DROPDOWN
 
@@ -51,7 +51,7 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El receptor de notificaciones convierte **LPARAM** para recuperar la estructura [**NMBCDROPDOWN.**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown) **WPARAM** contiene el identificador del control que envía este mensaje. El control de botón debe tener un estilo de botón desplegable.
+El receptor de notificaciones convierte **LPARAM** para recuperar la [**estructura NMBCDROPDOWN.**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown) **WPARAM** contiene el identificador del control que envía este mensaje. El control de botón debe tener un estilo de botón desplegable.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ El receptor de notificaciones convierte **LPARAM** para recuperar la estructura 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

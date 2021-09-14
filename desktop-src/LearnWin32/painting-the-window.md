@@ -1,19 +1,19 @@
 ---
 title: Pintar la ventana
-description: Ha creado la ventana. Ahora quiere mostrar algo dentro de él. En Windows terminología, esto se denomina pintar la ventana. Para mezclar metáforas, una ventana es un lienzo en blanco, esperando a que la rellene.
+description: Ha creado la ventana. Ahora quiere mostrar algo dentro de él. En Windows terminología, esto se denomina pintar la ventana. Para mezclar metáforas, una ventana es un lienzo en blanco, esperando a que lo rellene.
 ms.assetid: db97a4c9-7592-42d1-a5de-9c468169eefc
 ms.topic: article
 ms.date: 08/16/2019
-ms.openlocfilehash: 93d0cb0234975b61ee7ffc05a680b5e1e6b1e01b9d4de7235fc4239ec5573f29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f0f9d5c2759ea1735e370eb258743364980daee8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897023"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159944"
 ---
 # <a name="painting-the-window"></a>Pintar la ventana
 
-Ha creado la ventana. Ahora quiere mostrar algo dentro de él. En Windows terminología, esto se denomina pintar la ventana. Para mezclar metáforas, una ventana es un lienzo en blanco, esperando a que la rellene.
+Ha creado la ventana. Ahora quiere mostrar algo dentro de él. En Windows terminología, esto se denomina pintar la ventana. Para mezclar metáforas, una ventana es un lienzo en blanco, esperando a que lo rellene.
 
 A veces, el programa iniciará la pintura para actualizar la apariencia de la ventana. En otras ocasiones, el sistema operativo le notificará que debe volver a dibujar una parte de la ventana. Cuando esto sucede, el sistema operativo envía a la ventana un [**mensaje \_ WM PAINT.**](/windows/desktop/gdi/wm-paint) La parte de la ventana que se debe pintar se denomina región *de actualización*.
 
@@ -51,7 +51,7 @@ switch (uMsg)
 }
 ```
 
-Inicie la operación de dibujo llamando a [**la función BeginPaint.**](/windows/desktop/api/winuser/nf-winuser-beginpaint) Esta función rellena la estructura [**PAINTSTRUCT**](/windows/win32/api/winuser/ns-winuser-paintstruct) con información sobre la solicitud de repintado. La región de actualización actual se indica en el **miembro rcPaint** de **PAINTSTRUCT**. Esta región de actualización se define en relación con el área de cliente:
+Inicie la operación de dibujo mediante una llamada a [**la función BeginPaint.**](/windows/desktop/api/winuser/nf-winuser-beginpaint) Esta función rellena la estructura [**PAINTSTRUCT**](/windows/win32/api/winuser/ns-winuser-paintstruct) con información sobre la solicitud de repintado. La región de actualización actual se indica en el **miembro rcPaint** de **PAINTSTRUCT**. Esta región de actualización se define en relación con el área de cliente:
 
 ![ilustración que muestra el origen del área cliente](images/painting04.png)
 
@@ -68,9 +68,9 @@ La siguiente línea de código rellena la región de actualización con un únic
 FillRect(hdc, &ps.rcPaint, (HBRUSH) (COLOR_WINDOW+1));
 ```
 
-Los detalles de [**FillRect**](/windows/desktop/api/winuser/nf-winuser-fillrect) no son importantes para este ejemplo, pero el segundo parámetro proporciona las coordenadas del rectángulo que se va a rellenar. En este caso, se pasa toda la región de actualización (el **miembro rcPaint** de [**PAINTSTRUCT**](/windows/win32/api/winuser/ns-winuser-paintstruct)). En el primer [**mensaje \_ DE WM PAINT,**](/windows/desktop/gdi/wm-paint) es necesario pintar todo el área de cliente, por lo que **rcPaint** contendrá todo el área de cliente. En los **mensajes \_ WM PAINT** posteriores, **rcPaint** podría contener un rectángulo más pequeño.
+Los detalles de [**FillRect**](/windows/desktop/api/winuser/nf-winuser-fillrect) no son importantes para este ejemplo, pero el segundo parámetro proporciona las coordenadas del rectángulo que se va a rellenar. En este caso, se pasa toda la región de actualización (el **miembro rcPaint** de [**PAINTSTRUCT**](/windows/win32/api/winuser/ns-winuser-paintstruct)). En el primer [**mensaje \_ WM PAINT,**](/windows/desktop/gdi/wm-paint) es necesario pintar todo el área de cliente, por lo que **rcPaint** contendrá todo el área de cliente. En los **mensajes \_ WM PAINT** posteriores, **rcPaint** podría contener un rectángulo más pequeño.
 
-La [**función FillRect**](/windows/desktop/api/winuser/nf-winuser-fillrect) forma parte de la Interfaz de dispositivo gráfico (GDI), que ha encendido Windows gráficos durante mucho tiempo. En Windows 7, Microsoft introdujo un nuevo motor gráfico, denominado Direct2D, que admite operaciones de gráficos de alto rendimiento, como la aceleración de hardware. Direct2D también está disponible para Windows Vista a través de la actualización de plataforma para [Windows Vista](../win7ip/platform-update-for-windows-vista-overview.md) y para Windows Server 2008 a través de la actualización de plataforma para Windows Server 2008. (GDI sigue siendo totalmente compatible).
+La [**función FillRect**](/windows/desktop/api/winuser/nf-winuser-fillrect) forma parte de la Interfaz de dispositivo gráfico (GDI), que ha Windows gráficos durante mucho tiempo. En Windows 7, Microsoft introdujo un nuevo motor de gráficos, denominado Direct2D, que admite operaciones de gráficos de alto rendimiento, como la aceleración de hardware. Direct2D también está disponible para Windows Vista a través de la actualización de plataforma para [Windows Vista](../win7ip/platform-update-for-windows-vista-overview.md) y para Windows Server 2008 a través de la actualización de plataforma para Windows Server 2008. (GDI sigue siendo totalmente compatible).
 
 Cuando haya terminado de pintar, llame a [**la función EndPaint.**](/windows/desktop/api/winuser/nf-winuser-endpaint) Esta función borra la región de actualización, que indica Windows que la ventana ha terminado de pintarse.
 

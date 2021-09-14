@@ -4,12 +4,12 @@ description: Contención de sitio de marco simple
 ms.assetid: 85c3565f-f557-43af-8d36-58414d0790cd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d356d6cc4993702ac571a800ad2abbfe378e8a8fe06ddc80225d81f0fe21a36
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0106bc88d9f69f380590e808741e0b1a0bdc2f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119129867"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160540"
 ---
 # <a name="simple-frame-site-containment"></a>Contención de sitio de marco simple
 

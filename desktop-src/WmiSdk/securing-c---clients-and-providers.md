@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Protección de clientes y proveedores de C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4151440f9e85f7cd9e6590842ffd3d103242410b38f52287dba83ba3bb3faec5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac93ee88f710bf17a2b6199b3a9b2e89279b4651
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118316164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967132"
 ---
 # <a name="securing-c-clients-and-providers"></a>Protección de clientes y proveedores de C++
 
 Tanto los proveedores de C++ como las aplicaciones cliente deben realizar muchas de las mismas operaciones para mantener la seguridad de WMI.
 
-Las aplicaciones cliente deben establecer correctamente los niveles de [suplantación y](setting-the-default-process-security-level-using-c-.md) [autenticación de](setting-authentication-in-wmi.md) DCOM al conectarse a WMI. Las devoluciones de llamada de [llamadas asincrónicas](setting-security-on-an-asynchronous-call.md) [](performing-access-checks.md) tienen riesgos de seguridad, por lo que las aplicaciones cliente deben realizar comprobaciones de acceso para asegurarse de que la devolución de llamada es de un origen de confianza. Los clientes necesitan proteger los consumidores de eventos temporales [y permanentes.](securing-wmi-events.md)
+Las aplicaciones cliente deben establecer correctamente los niveles de [suplantación y](setting-the-default-process-security-level-using-c-.md) [autenticación](setting-authentication-in-wmi.md) de DCOM al conectarse a WMI. Las devoluciones de [llamada](setting-security-on-an-asynchronous-call.md) de llamadas asincrónicas [](performing-access-checks.md) tienen riesgos de seguridad, por lo que las aplicaciones cliente deben realizar comprobaciones de acceso para asegurarse de que la devolución de llamada es de un origen de confianza. Los clientes necesitan proteger los [consumidores de eventos temporales y permanentes.](securing-wmi-events.md)
 
 Un proveedor puede [realizar comprobaciones de acceso](performing-access-checks.md) para asegurarse de que solo los clientes adecuados acceden a los recursos que crea.
 

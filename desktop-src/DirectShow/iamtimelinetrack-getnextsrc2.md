@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: ca9b18ba6ddd56771ac738f0ff831e4ea284d995fb28582a578386321e7ef856
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c934cfd6c4f58c5fca59e78e120fee89af3f73a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118154826"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891868"
 ---
-# <a name="iamtimelinetrackgetnextsrc2-method"></a>Método IAMTimelineTrack::GetNextSrc2
+# <a name="iamtimelinetrackgetnextsrc2-method"></a>IamTimelineTrack::GetNextSrc2 (método)
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -64,7 +64,7 @@ En la entrada, contiene la hora de inicio de la búsqueda, en segundos. Si el m�
 
 Devuelve S OK si el método recupera un origen o S FALSE en caso \_ \_ contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -87,14 +87,14 @@ Devuelve S OK si el método recupera un origen o S FALSE en caso \_ \_ contrario
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IamTimelineTrack (interfaz)**](iamtimelinetrack.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

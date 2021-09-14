@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6bc9b1c964d698e1c1323846c7a25a29f60c0cd71009fbb60f1a09a6757b50b2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25dd70a46fcc2b6572500b3164b64fd0facbcbe0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160273"
 ---
 # <a name="camscheduleunadvise-method"></a>Método CAMSchedule.Unadvise
 
-El `Unadvise` método quita una solicitud de asesoramiento.
+El `Unadvise` método quita una solicitud de aviso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,7 +75,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

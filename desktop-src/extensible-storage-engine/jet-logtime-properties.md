@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_LOGTIME propiedades'
+description: 'Obtenga más información sobre: JET_LOGTIME propiedades'
 title: JET_LOGTIME propiedades
 TOCTitle: JET_LOGTIME properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_LOGTIME
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39511854
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a70f4b9649af91edf32a7be73e659758fc4ff107f6b49782e2062183ef99070d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a7283c7164f3b4caaff1cef6d825afade8fa17bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119272408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965676"
 ---
 # <a name="jet_logtime-properties"></a>JET_LOGTIME propiedades
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_LOGTIME](./jet-logtime-structure2.md) expone los miembros siguientes.
+El [JET_LOGTIME](./jet-logtime-structure2.md) muestra los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -48,7 +48,7 @@ El [JET_LOGTIME](./jet-logtime-structure2.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

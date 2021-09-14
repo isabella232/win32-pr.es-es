@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bf139e200ca12fee3fc1ec2b610ec37f71e404a8b3a3ee31c31be2173a366c05
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ecf32eebc51d2438deb1b1990836a7e723a2b103
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119946195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969300"
 ---
 # <a name="esentslvstreamingfilefullexception-constructor"></a>Constructor EsentSLVStreamingFileFullException
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVStreamingFileFullException()
 public EsentSLVStreamingFileFullException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

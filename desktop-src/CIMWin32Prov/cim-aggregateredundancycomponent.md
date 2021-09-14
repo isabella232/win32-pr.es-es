@@ -1,5 +1,5 @@
 ---
-description: La clase AggregateRedundancyComponent de CIM describe la extensión física agregada \_ en un grupo de redundancia de almacenamiento.
+description: La clase \_ AggregateRedundancyComponent de CIM describe la extensión física agregada en un grupo de redundancia de almacenamiento.
 ms.assetid: 3407e888-e17c-4f65-a33f-056002accbf7
 ms.tgt_platform: multiple
 title: CIM_AggregateRedundancyComponent clase
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dec68f7c5464774f6b9aa8ef91ec427857dd09cb73bf709c207f0e8bfb4d319c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9a5e638730578bad8d64f35b29a5152898c23fd6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119322785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968895"
 ---
-# <a name="cim_aggregateredundancycomponent-class"></a>Clase \_ AggregateRedundancyComponent de CIM
+# <a name="cim_aggregateredundancycomponent-class"></a>Cim \_ AggregateRedundancyComponent (clase)
 
 La **clase \_ AggregateRedundancyComponent de CIM** describe la extensión física agregada en un grupo de redundancia de almacenamiento.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_AggregateRedundancyComponent : CIM_RedundancyComponent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ AggregateRedundancyComponent de CIM** tiene estos tipos de miembros:
 
@@ -66,7 +66,7 @@ Tipo de datos: **CIM \_ StorageRedundancyGroup**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
 Un [**\_ storageRedundancyGroup**](cim-storageredundancygroup.md) de CIM que contiene el grupo de redundancia de almacenamiento.
@@ -85,17 +85,17 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-[**\_ AggregatePExtent**](cim-aggregatepextent.md) de CIM que contiene la extensión física agregada que participa en el grupo de redundancia.
+Agregado [**DE \_ CIMPExtent que**](cim-aggregatepextent.md) contiene la extensión física agregada que participa en el grupo de redundancia.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ AggregateRedundancyComponent de CIM** se deriva de Redundancia de [**\_ CIMComponent.**](cim-redundancycomponent.md)
+La **clase \_ AggregateRedundancyComponent de CIM** se deriva de Cim [**\_ RedundancyComponent**](cim-redundancycomponent.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,11 +111,11 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**CIM \_ RedundancyComponent**](cim-redundancycomponent.md)
+[**Redundancia \_ de CIMComponent**](cim-redundancycomponent.md)
 </dt> </dl>
 
  

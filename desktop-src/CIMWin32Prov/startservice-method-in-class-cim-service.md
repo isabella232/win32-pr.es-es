@@ -1,5 +1,5 @@
 ---
-description: 'Método StartService de la CIM_Service clase (proveedores WMI CIMWin32): el método StartService coloca el servicio en estado iniciado.'
+description: 'Método StartService de la CIM_Service (proveedores WMI CIMWin32): el método StartService coloca el servicio en un estado iniciado.'
 ms.assetid: 0f2880ed-1643-4211-8684-12493711b1f8
 ms.tgt_platform: multiple
 title: Método StartService de la clase CIM_Service (proveedores WMI CIMWin32)
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 87fcdad650ea93461850bab3e3e66d9543025a2b468b9f7948f6d949d5838c4e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6027112323fc14abf4c4a8dc667b921025a5e652
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119752445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968816"
 ---
 # <a name="startservice-method-of-the-cim_service-class-cimwin32-wmi-providers"></a>Método StartService de la clase CIM_Service (proveedores WMI CIMWin32)
 
@@ -30,7 +30,7 @@ El **método StartService** coloca el servicio en estado iniciado.
 
  
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ Este método no tiene parámetros.
 
 Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error. En una subclase, el conjunto de códigos de retorno posibles se puede especificar mediante un **calificador ValueMap** en el método . Las cadenas a las que se traduce el contenido **de ValueMap** también se pueden especificar en la subclase como calificador de **matriz Values.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
@@ -69,7 +69,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

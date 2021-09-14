@@ -4,12 +4,12 @@ ms.assetid: 5a2a7a62-0bda-4a0d-93d2-25b4898871fd
 title: Funciones de administración de memoria
 ms.topic: article
 ms.date: 11/06/2018
-ms.openlocfilehash: 635fa59b6a5b6a549438d8bfed71781d6d9e6fa6a9d2c12524684ded28a0f3df
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a203583016a127a550f609068df8e86da384fa34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119822195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159845"
 ---
 # <a name="memory-management-functions"></a>Funciones de administración de memoria
 
@@ -20,7 +20,7 @@ ms.locfileid: "119822195"
 - [Funciones de montón](#heap-functions)
 - [Funciones de memoria virtual](#virtual-memory-functions)
 - [Funciones globales y locales](#global-and-local-functions)
-- [Funciones de memoria no funciona](#bad-memory-functions)
+- [Funciones de memoria no necesarias](#bad-memory-functions)
 - [Funciones de enclave](#enclave-functions)
 - [Funciones thunk atl](#atl-thunk-functions)
 - [Funciones obsoletas](#obsolete-functions)
@@ -71,13 +71,13 @@ Estas funciones se usan en la [asignación de archivos](file-mapping.md).
 | [**FlushViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-flushviewoffile) | Escribe en el disco un intervalo de bytes dentro de una vista asignada de un archivo. |
 | [**GetMappedFileName**](/windows/win32/api/psapi/nf-psapi-getmappedfilenamea) | Comprueba si la dirección especificada está dentro de un archivo asignado a memoria en el espacio de direcciones del proceso especificado. Si es así, la función devuelve el nombre del archivo asignado a la memoria. |
 | [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) | Mapas una vista de una asignación de archivos en el espacio de direcciones de un proceso de llamada. |
-| [**MapViewOfFile2**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile2) | Mapas una vista de un archivo o una sección con copia de seguridad de archivos de página en el espacio de direcciones del proceso especificado. |
-| [**MapViewOfFile3**](/windows/desktop/api/MemoryApi/nf-memoryapi-mapviewoffile3) | Mapas una vista de un archivo o una sección con copia de seguridad de archivos de página en el espacio de direcciones del proceso especificado. |
+| [**MapViewOfFile2**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile2) | Mapas una vista de un archivo o una sección con copia de seguridad de archivos de paginación en el espacio de direcciones del proceso especificado. |
+| [**MapViewOfFile3**](/windows/desktop/api/MemoryApi/nf-memoryapi-mapviewoffile3) | Mapas una vista de un archivo o una sección con copia de seguridad de archivos de paginación en el espacio de direcciones del proceso especificado. |
 | [**MapViewOfFile3FromApp**](/windows/desktop/api/MemoryApi/nf-memoryapi-mapviewoffile3fromapp) | Mapas una vista de una asignación de archivos en el espacio de direcciones de un proceso de llamada desde una Windows Store. |
 | [**MapViewOfFileEx**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) | Mapas una vista de una asignación de archivos en el espacio de direcciones de un proceso de llamada. Opcionalmente, un llamador puede especificar una dirección de memoria sugerida para la vista. |
 | [**MapViewOfFileExNuma**](/windows/desktop/api/WinBase/nf-winbase-mapviewoffileexnuma) | Mapas una vista de una asignación de archivos en el espacio de direcciones de un proceso de llamada y especifica el nodo NUMA para la memoria física. |
 | [**MapViewOfFileFromApp**](/windows/desktop/api/MemoryApi/nf-memoryapi-mapviewoffilefromapp) | Mapas una vista de una asignación de archivos en el espacio de direcciones de un proceso de llamada desde una Windows Store. |
-| [**MapViewOfFileNuma2**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffilenuma2) | Mapas una vista de un archivo o una sección con copia de seguridad de archivos de página en el espacio de direcciones del proceso especificado. |
+| [**MapViewOfFileNuma2**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffilenuma2) | Mapas una vista de un archivo o una sección con copia de seguridad de archivos de paginación en el espacio de direcciones del proceso especificado. |
 | [**OpenFileMapping**](/windows/win32/api/winbase/nf-winbase-openfilemappinga) | Abre un objeto de asignación de archivos con nombre. |
 | [**OpenFileMappingFromApp**](/windows/win32/api/winbase/nf-winbase-openfilemappingafromapp) | Abre un objeto de asignación de archivos con nombre. |
 | [**UnmapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-unmapviewoffile) | Desasigna una vista asignada de un archivo del espacio de direcciones del proceso de llamada. |
@@ -103,9 +103,9 @@ Estas son las [funciones del montón](heap-functions.md).
 | Función | Descripción |
 |-|-|
 | [**GetProcessHeap**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheap) | Obtiene un identificador para el montón del proceso de llamada. |
-| [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) | Obtiene los identificadores de todos los montones que son válidos para el proceso de llamada. |
-| [**HeapAlloc**](/windows/desktop/api/HeapApi/nf-heapapi-heapalloc) | Asigna un bloque de memoria de un montón. |
-| [**HeapCompact**](/windows/desktop/api/HeapApi/nf-heapapi-heapcompact) | Une bloques de memoria libres adyacentes en un montón. |
+| [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) | Obtiene identificadores para todos los montones que son válidos para el proceso de llamada. |
+| [**HeapAlloc**](/windows/desktop/api/HeapApi/nf-heapapi-heapalloc) | Asigna un bloque de memoria desde un montón. |
+| [**HeapCompact**](/windows/desktop/api/HeapApi/nf-heapapi-heapcompact) | Une bloques libres adyacentes de memoria en un montón. |
 | [**HeapCreate**](/windows/desktop/api/HeapApi/nf-heapapi-heapcreate) | Crea un objeto de montón. |
 | [**HeapDestroy**](/windows/desktop/api/HeapApi/nf-heapapi-heapdestroy) | Destruye el objeto de montón especificado. |
 | [**HeapFree**](/windows/desktop/api/HeapApi/nf-heapapi-heapfree) | Libera un bloque de memoria asignado de un montón. |
@@ -124,12 +124,12 @@ Estas son las [funciones de memoria virtual](virtual-memory-functions.md).
 
 | Función | Descripción |
 |-|-|
-| [**DiscardVirtualMemory**](/windows/win32/api/memoryapi/nf-memoryapi-discardvirtualmemory) | Descarta el contenido de memoria de un intervalo de páginas de memoria, sin confirmar la memoria. El contenido de la memoria descartada no está definido y la aplicación debe volver a escribirlo. |
-| [**OfferVirtualMemory**](/windows/win32/api/memoryapi/nf-memoryapi-offervirtualmemory) | Indica que la aplicación ya no necesita los datos contenidos en un intervalo de páginas de memoria y el sistema puede descartarlos si es necesario. |
+| [**DiscardVirtualMemory**](/windows/win32/api/memoryapi/nf-memoryapi-discardvirtualmemory) | Descarta el contenido de memoria de un intervalo de páginas de memoria, sin desacomprimir la memoria. El contenido de la memoria descartada no está definido y la aplicación debe volver a escribirlo. |
+| [**OfferVirtualMemory**](/windows/win32/api/memoryapi/nf-memoryapi-offervirtualmemory) | Indica que la aplicación ya no necesita los datos contenidos en un intervalo de páginas de memoria y que el sistema puede descartarlos si es necesario. |
 | [**Captura previaVirtualMemory**](/windows/win32/api/memoryapi/nf-memoryapi-prefetchvirtualmemory) | Captura previamente los intervalos de direcciones virtuales en la memoria física. |
 | [**QueryVirtualMemoryInformation**](/windows/desktop/api/MemoryApi/nf-memoryapi-queryvirtualmemoryinformation) | Devuelve información sobre una página o un conjunto de páginas dentro del espacio de direcciones virtuales del proceso especificado. |
 | [**ReclaimVirtualMemory**](/windows/win32/api/memoryapi/nf-memoryapi-reclaimvirtualmemory) | Reclama un intervalo de páginas de memoria que se ofrecían al sistema [**con OfferVirtualMemory**](/windows/win32/api/memoryapi/nf-memoryapi-offervirtualmemory). |
-| [**SetProcessValidCallTargets**](/windows/desktop/api/MemoryApi/nf-memoryapi-setprocessvalidcalltargets) | Proporciona a CFG una lista de destinos de llamadas indirectas válidos y especifica si deben marcarse como válidos o no. |
+| [**SetProcessValidCallTargets**](/windows/desktop/api/MemoryApi/nf-memoryapi-setprocessvalidcalltargets) | Proporciona CFG con una lista de destinos de llamadas indirectas válidos y especifica si deben marcarse como válidos o no. |
 | [**VirtualAlloc**](/windows/desktop/api/MemoryApi/nf-memoryapi-virtualalloc) | Reserva o confirma una región de páginas en el espacio de direcciones virtuales del proceso de llamada. |
 | [**VirtualAlloc2**](/windows/desktop/api/MemoryApi/nf-memoryapi-virtualalloc2) | Reserva, confirma o cambia el estado de una región de memoria dentro del espacio de direcciones virtuales de un proceso especificado. La función inicializa la memoria que asigna a cero. |
 | [**VirtualAlloc2FromApp**](/windows/desktop/api/MemoryApi/nf-memoryapi-virtualallocfromapp) | Reserva, confirma o cambia el estado de una región de páginas en el espacio de direcciones virtuales del proceso de llamada. La memoria asignada por esta función se inicializa automáticamente en cero. |
@@ -153,14 +153,14 @@ Consulte también funciones [globales y locales.](global-and-local-functions.md)
 | Función | Descripción | Función de montón correspondiente |
 |-|-|-|
 | [**GlobalAlloc**](/windows/desktop/api/WinBase/nf-winbase-globalalloc), [ **LocalAlloc**](/windows/desktop/api/WinBase/nf-winbase-localalloc) | Asigna el número especificado de bytes del montón. | [**HeapAlloc**](/windows/desktop/api/HeapApi/nf-heapapi-heapalloc) |
-| [**GlobalDiscard,**](/windows/desktop/api/WinBase/nf-winbase-globaldiscard) [ **LocalDiscard**](/windows/win32/api/minwinbase/nf-minwinbase-localdiscard) | Descarta el bloque de memoria global especificado. | No es aplicable. |
-| [**GlobalFlags**](/windows/desktop/api/WinBase/nf-winbase-globalflags), [ **LocalFlags**](/windows/desktop/api/WinBase/nf-winbase-localflags) | Devuelve información sobre el objeto de memoria global especificado. | No es aplicable. Use [**HeapValidate para**](/windows/desktop/api/HeapApi/nf-heapapi-heapvalidate) validar el montón. |
+| [**GlobalDiscard,**](/windows/desktop/api/WinBase/nf-winbase-globaldiscard) [ **LocalDiscard**](/windows/win32/api/minwinbase/nf-minwinbase-localdiscard) | Descarta el bloque de memoria global especificado. | No aplicable. |
+| [**GlobalFlags**](/windows/desktop/api/WinBase/nf-winbase-globalflags), [ **LocalFlags**](/windows/desktop/api/WinBase/nf-winbase-localflags) | Devuelve información sobre el objeto de memoria global especificado. | No aplicable. Use [**HeapValidate para**](/windows/desktop/api/HeapApi/nf-heapapi-heapvalidate) validar el montón. |
 | [**GlobalFree**](/windows/desktop/api/WinBase/nf-winbase-globalfree), [ **LocalFree**](/windows/desktop/api/WinBase/nf-winbase-localfree) | Libera el objeto de memoria global especificado. | [**HeapFree**](/windows/desktop/api/HeapApi/nf-heapapi-heapfree) |
-| [**GlobalHandle**](/windows/desktop/api/WinBase/nf-winbase-globalhandle), [ **LocalHandle**](/windows/desktop/api/WinBase/nf-winbase-localhandle) | Recupera el identificador asociado al puntero especificado a un bloque de memoria global. Esta función solo debe usarse con funciones OLE y del Portapapeles que la requieran. | No es aplicable. |
-| [**GlobalLock**](/windows/desktop/api/WinBase/nf-winbase-globallock), [ **LocalLock**](/windows/desktop/api/WinBase/nf-winbase-locallock) | Bloquea un objeto de memoria global y devuelve un puntero al primer byte del bloque de memoria del objeto. | No es aplicable. |
+| [**GlobalHandle**](/windows/desktop/api/WinBase/nf-winbase-globalhandle), [ **LocalHandle**](/windows/desktop/api/WinBase/nf-winbase-localhandle) | Recupera el identificador asociado al puntero especificado a un bloque de memoria global. Esta función solo debe usarse con funciones OLE y del Portapapeles que la requieran. | No aplicable. |
+| [**GlobalLock**](/windows/desktop/api/WinBase/nf-winbase-globallock), [ **LocalLock**](/windows/desktop/api/WinBase/nf-winbase-locallock) | Bloquea un objeto de memoria global y devuelve un puntero al primer byte del bloque de memoria del objeto. | No aplicable. |
 | [**GlobalReAlloc**](/windows/desktop/api/WinBase/nf-winbase-globalrealloc), [ **LocalReAlloc**](/windows/desktop/api/WinBase/nf-winbase-localrealloc) | Cambia el tamaño o los atributos de un objeto de memoria global especificado. | [**HeapReAlloc**](/windows/desktop/api/HeapApi/nf-heapapi-heaprealloc) |
 | [**GlobalSize**](/windows/desktop/api/WinBase/nf-winbase-globalsize), [ **LocalSize**](/windows/desktop/api/WinBase/nf-winbase-localsize) | Recupera el tamaño actual del objeto de memoria global especificado. | [**HeapSize**](/windows/desktop/api/HeapApi/nf-heapapi-heapsize) |
-| [**GlobalUnlock**](/windows/desktop/api/WinBase/nf-winbase-globalunlock), [ **LocalUnlock**](/windows/desktop/api/WinBase/nf-winbase-localunlock) | Disminuye el número de bloqueos asociado a un objeto de memoria. Esta función solo debe usarse con funciones OLE y del Portapapeles que la requieran. | No es aplicable. |
+| [**GlobalUnlock**](/windows/desktop/api/WinBase/nf-winbase-globalunlock), [ **LocalUnlock**](/windows/desktop/api/WinBase/nf-winbase-localunlock) | Disminuye el número de bloqueos asociado a un objeto de memoria. Esta función solo debe usarse con funciones OLE y del Portapapeles que la requieran. | No aplicable. |
 
 ## <a name="bad-memory-functions"></a>Funciones de memoria no necesarias
 
@@ -168,7 +168,7 @@ Consulte también funciones [globales y locales.](global-and-local-functions.md)
 |-|-|
 | [**BadMemoryCallbackRoutine**](/previous-versions/windows/desktop/legacy/hh691011(v=vs.85)) | Función definida por la aplicación registrada con la función [**RegisterBadMemoryNotification**](/windows/win32/api/memoryapi/nf-memoryapi-registerbadmemorynotification) a la que se llama cuando se detecta una o varias páginas de memoria no correctas. |
 | [**GetMemoryErrorHandlingCapabilities**](/windows/win32/api/memoryapi/nf-memoryapi-getmemoryerrorhandlingcapabilities) | Obtiene las funcionalidades de control de errores de memoria del sistema. |
-| [**RegisterBadMemoryNotification**](/windows/win32/api/memoryapi/nf-memoryapi-registerbadmemorynotification) | Registra una notificación de memoria no buena a la que se llama cuando se detecta una o varias páginas de memoria no buena. |
+| [**RegisterBadMemoryNotification**](/windows/win32/api/memoryapi/nf-memoryapi-registerbadmemorynotification) | Registra una notificación de memoria no detectada a la que se llama cuando se detectan una o varias páginas de memoria no buena. |
 | [**UnregisterBadMemoryNotification**](/windows/win32/api/memoryapi/nf-memoryapi-unregisterbadmemorynotification) | Cierra el identificador de notificación de memoria no disponible especificado. |
 
 ## <a name="enclave-functions"></a>Funciones de enclave
@@ -186,12 +186,12 @@ Consulte también funciones [globales y locales.](global-and-local-functions.md)
 |-|-|
 | [**AtlThunk_AllocateData**](/windows/desktop/api/atlthunk/nf-atlthunk-atlthunk_allocatedata) | Asigna espacio en memoria para un thunk ATL. |
 | [**AtlThunk_DataToCode**](/windows/desktop/api/atlthunk/nf-atlthunk-atlthunk_datatocode) | Devuelve una función ejecutable correspondiente al parámetro AtlThunkData_t. |
-| [**AtlThunk_FreeData**](/windows/desktop/api/atlthunk/nf-atlthunk-atlthunk_freedata) | Libera la memoria asociada a un thunk ATL. |
+| [**AtlThunk_FreeData**](/windows/desktop/api/atlthunk/nf-atlthunk-atlthunk_freedata) | Libera la memoria asociada a un código thunk ATL. |
 | [**AtlThunk_InitData**](/windows/desktop/api/atlthunk/nf-atlthunk-atlthunk_initdata) | Inicializa un código thunk atl. |
 
 ## <a name="obsolete-functions"></a>Funciones obsoletas
 
-Estas funciones solo se proporcionan por compatibilidad con versiones de 16 bits de Windows:
+Estas funciones solo se proporcionan para la compatibilidad con versiones de 16 bits de Windows:
 
 - [**IsBadCodePtr**](/windows/desktop/api/WinBase/nf-winbase-isbadcodeptr)
 - [**IsBadReadPtr**](/windows/desktop/api/WinBase/nf-winbase-isbadreadptr)

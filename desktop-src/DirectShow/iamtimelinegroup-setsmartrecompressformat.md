@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8bf19ee67c08fc674681ade174966fe415a950103099011f52102e8c6edede7d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9c8505f54d6ee9f6b2ec02216fd875fddbc619de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120083885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892025"
 ---
 # <a name="iamtimelinegroupsetsmartrecompressformat-method"></a>Método IAMTimelineGroup::SetSmartRecompressFormat
 
@@ -58,13 +58,13 @@ Puntero a una estructura que describe el formato de compresión. Actualmente, so
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de llamar a este método, llame al método [**IAMTimelineGroup::SetMediaType**](iamtimelinegroup-setmediatype.md) del mismo grupo para especificar un formato sin comprimir.
 
 Si el `SetSmartRecompressFormat` método se realiza correctamente, puede usar el motor de representación inteligente para generar una secuencia de vídeo comprimida. El vídeo comprimido tendrá el ancho, el alto y la velocidad de fotogramas que se especificó en el *parámetro pFormat.* Estos valores invalidarán los especificados para el formato sin comprimir en el **método SetMediaType.** Sin embargo, para obtener las ventajas de la recompresión inteligente, los dos formatos deben coincidir. En otras palabras, los formatos comprimidos y sin comprimir deben tener el mismo alto, ancho y velocidad de fotogramas.
 
-Si el motor de representación inteligente no puede generar el formato comprimido, producirá una secuencia de vídeo sin comprimir en su lugar. Si esto ocurre, el motor de representación inteligente notifica un error de representación DEX IDS CANT FIND DISPOSE durante el \_ \_ método \_ \_ [**IRenderEngine::ConnectFrontEnd.**](irenderengine-connectfrontend.md) La aplicación puede detectar este error a través del [**método IAMErrorLog::LogError.**](iamerrorlog-logerror.md) (Para obtener más información, vea [Errores de registro y](logging-errors.md) errores de [representación).](rendering-errors.md)
+Si el motor de representación inteligente no puede generar el formato comprimido, producirá una secuencia de vídeo sin comprimir en su lugar. Si esto ocurre, el motor de representación inteligente notifica un error de representación DEX IDS CANT FIND DISPOSE durante el \_ \_ método \_ \_ [**IRenderEngine::ConnectFrontEnd.**](irenderengine-connectfrontend.md) La aplicación puede detectar este error a través del [**método IAMErrorLog::LogError.**](iamerrorlog-logerror.md) (Para obtener más información, vea [Registro de errores y](logging-errors.md) errores de [representación).](rendering-errors.md)
 
 El formato de recompresión inteligente no es persistente. Si una aplicación usa la recompresión inteligente, debe establecer el formato de recompresión cada vez que cargue un archivo de proyecto.
 
@@ -89,7 +89,7 @@ El formato de recompresión inteligente no es persistente. Si una aplicación us
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

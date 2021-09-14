@@ -4,16 +4,16 @@ ms.assetid: b3272a75-87b0-4afc-b2e2-2d65e4b49300
 title: PHONEHOOKSWITCHDEV_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a77e6b776b89adf6224d6feaef8deeef1f9f71b9888929f3aea08b5342adc1dd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 14a6727bf8103c35402bebc048de4ed9286650be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119796755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160622"
 ---
 # <a name="phonehookswitchdev_-constants"></a>Constantes PHONEHOOKSWITCHDEV \_
 
-Las constantes de marca de bits **PHONEHOOKSWITCHDEV \_** describen varios dispositivos de E/S de audio cada uno con su propio conmutador de enlace controlable desde el equipo.
+Las constantes de marca de bits **PHONEHOOKSWITCHDEV \_** describen varios dispositivos de E/S de audio, cada uno con su propio conmutador de enlace controlable desde el equipo.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las constantes de marca de bits **PHONEHOOKSWITCHDEV \_** describen varios dispo
 
 
 
-Se trata de un teléfono estándar de auriculares y auriculares.
+Se trata de un teléfono estándar para el oído y la pieza de cocina.
 
 
 </dt> </dl> </dd> <dt>
@@ -47,7 +47,7 @@ Se trata de un altavoz y micrófono integrados. También podría ser un altavoz 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
@@ -60,7 +60,7 @@ Estas constantes se usan en la estructura de datos [**PHONECAPS**](/windows/desk
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

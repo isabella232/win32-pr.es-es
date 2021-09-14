@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2d4c2e268e456f1e4462b033a046ce71f10a8e854e377e4d4104ee5abde3accc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 664a1b1a214b49eb731a3a0766a255e5f5acadd9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119748885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969660"
 ---
 # <a name="id3dxconstanttablegetconstant-method"></a>Método ID3DXConstantTable::GetConstant
 
@@ -65,7 +65,7 @@ Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
 Devuelve un identificador único a la constante.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una constante de una matriz de constantes, use [**ID3DXConstantTable::GetConstantElement**](id3dxconstanttable--getconstantelement.md).
 
@@ -80,7 +80,7 @@ Para obtener una constante de una matriz de constantes, use [**ID3DXConstantTabl
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: c768a21d4e08e6900f3a46f3e398f5040aaf6b6b0bc45c9187ac07821500a372
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9fab426b7bcad1a12895f632a719a40b4aaa8da4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117818000"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891716"
 ---
 # <a name="isamplegrabbersetbuffersamples-method"></a>ISampleGrabber::SetBufferSamples (método)
 
@@ -56,7 +56,7 @@ Valor booleano que especifica si se deben almacenar en búfer los datos de ejemp
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener el búfer copiado, llame a [**ISampleGrabber::GetCurrentBuffer.**](isamplegrabber-getcurrentbuffer.md)
 

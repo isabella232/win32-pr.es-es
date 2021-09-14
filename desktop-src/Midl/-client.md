@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8361a41aa0e7c87c42eb41508fee0973d6fd4dd821e2008aa2148c8460fc63ea
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cbf7e17e1893b918d926cd94a93eb8b1c372ee75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159770"
 ---
 # <a name="client-switch"></a>Modificador /client
 
@@ -27,7 +27,7 @@ El **modificador /client** dirige al compilador MIDL para generar archivos de c�
 midl /client { stub | none }
 ```
 
-## <a name="switch-options"></a>Opciones de cambio
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
@@ -38,7 +38,7 @@ midl /client { stub | none }
 
 <span id="stub"></span><span id="STUB"></span>
 
-<span id="stub"></span><span id="STUB"></span>stub***
+<span id="stub"></span><span id="STUB"></span>stub**
 
 
 </dt> <dd>
@@ -58,9 +58,9 @@ No genera ningún archivo del lado cliente.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando no se especifica el modificador **/client,** el compilador MIDL genera el archivo de código auxiliar de cliente. Este modificador no afecta a las interfaces OLE.
+Cuando no se especifica el modificador **/client,** el compilador midl genera el archivo de código auxiliar de cliente. Este modificador no afecta a las interfaces OLE.
 
 El **modificador /client** tiene prioridad sobre [**el modificador /cstub.**](-cstub.md)
 
@@ -70,7 +70,7 @@ El **modificador /client** tiene prioridad sobre [**el modificador /cstub.**](-c
 
 **midl /client stub filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: Visualización del almacenamiento en caché
 ms.assetid: d19c111c-1367-43a2-97a9-35dc0ff5dcc8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b155c0a9d3229db85a52b0589c4854bdee9a2e8e4171e231480036c512af737
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 592c5bc2555e907cdc4e600465b807387c3a5548
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047692"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160515"
 ---
 # <a name="view-caching"></a>Visualización del almacenamiento en caché
 
@@ -17,11 +17,11 @@ Una aplicación contenedora debe ser capaz de obtener una presentación de un ob
 
 Los contenedores pueden mantener presentaciones de dibujo para uno o varios dispositivos de destino específicos, además del necesario para mantener el objeto en pantalla. Además, si portar el objeto de una plataforma a otra, OLE convierte automáticamente los formatos de datos del objeto en los admitidos en la nueva plataforma. Por ejemplo, si mueve un objeto de Windows a Macintosh, OLE convertirá sus presentaciones de metarchivo a formatos DE NIF.
 
-Para presentar al usuario una representación precisa de un objeto incrustado, la aplicación contenedora del objeto inicia un diálogo con el controlador de objetos, solicitando datos e instrucciones de dibujo. Para poder satisfacer las solicitudes del contenedor, el controlador debe implementar las interfaces [**IDataObject**](/windows/desktop/api/ObjIdl/nn-objidl-idataobject), [**IViewObject2**](/windows/desktop/api/OleIdl/nn-oleidl-iviewobject2)e [**IOleCache.**](/windows/desktop/api/OleIdl/nn-oleidl-iolecache)
+Para presentar una representación precisa de un objeto incrustado al usuario, la aplicación contenedora del objeto inicia un diálogo con el controlador de objetos, solicitando datos e instrucciones de dibujo. Para poder satisfacer las solicitudes del contenedor, el controlador debe implementar las interfaces [**IDataObject**](/windows/desktop/api/ObjIdl/nn-objidl-idataobject), [**IViewObject2**](/windows/desktop/api/OleIdl/nn-oleidl-iviewobject2)e [**IOleCache.**](/windows/desktop/api/OleIdl/nn-oleidl-iolecache)
 
 [**IDataObject permite**](/windows/desktop/api/ObjIdl/nn-objidl-idataobject) que una aplicación contenedora OLE obtenga datos de y envíe datos a sus objetos incrustados o vinculados. Cuando los datos cambian en un objeto, esta interfaz proporciona una manera de que el objeto haga que sus nuevos datos estén disponibles para su contenedor y proporciona al contenedor una manera de actualizar los datos en su copia del objeto. (Para obtener una explicación de la transferencia de datos en general, vea el capítulo 4, Transferencia de datos).
 
-La interfaz [**IViewObject2**](/windows/desktop/api/OleIdl/nn-oleidl-iviewobject2) es muy parecido a la interfaz [**IDataObject,**](/windows/desktop/api/ObjIdl/nn-objidl-idataobject) salvo que pide a un objeto que se dibuje en un contexto de dispositivo, como una pantalla, impresora o metarchivo, en lugar de mover o copiar sus datos en la memoria o en algún otro medio de transferencia. El propósito de la interfaz es permitir que un contenedor OLE obtenga representaciones gráficas alternativas de sus objetos incrustados, cuyos datos ya tiene, lo que evita la sobrecarga de tener que transferir instancias completamente nuevas de los mismos objetos de datos simplemente para obtener nuevas instrucciones de dibujo. En su lugar, la **interfaz IViewObject2** permite que el contenedor pida a un objeto que proporcione una representación gráfica de sí mismo dibujando en un contexto de dispositivo especificado por el contenedor.
+La interfaz [**IViewObject2**](/windows/desktop/api/OleIdl/nn-oleidl-iviewobject2) es muy parecido a la interfaz [**IDataObject,**](/windows/desktop/api/ObjIdl/nn-objidl-idataobject) salvo que pide a un objeto que se dibuje en un contexto de dispositivo, como una pantalla, impresora o metarchivo, en lugar de mover o copiar sus datos en la memoria o en algún otro medio de transferencia. El propósito de la interfaz es permitir que un contenedor OLE obtenga representaciones gráficas alternativas de sus objetos incrustados, cuyos datos ya tiene, lo que evita la sobrecarga de tener que transferir instancias completamente nuevas de los mismos objetos de datos simplemente para obtener nuevas instrucciones de dibujo. En su lugar, la **interfaz IViewObject2** permite al contenedor pedir a un objeto que proporcione una representación gráfica de sí mismo dibujando en un contexto de dispositivo especificado por el contenedor.
 
 Al llamar a la [**interfaz IViewObject2,**](/windows/desktop/api/OleIdl/nn-oleidl-iviewobject2) una aplicación contenedora también puede especificar que el objeto se dibuje en un dispositivo de destino diferente del en el que se representará realmente. Esto permite que el contenedor, según sea necesario, genere diferentes representaciones a partir de un solo objeto. Por ejemplo, el autor de la llamada podría pedir al objeto que se componga para una impresora, aunque el dibujo resultante se represente en pantalla. Por supuesto, el resultado sería una vista previa de impresión del objeto.
 

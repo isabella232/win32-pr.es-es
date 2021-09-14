@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Método Api.JetSetTableSequential'
+description: Más información sobre el método Api.JetSetTableSequential
 title: Método Api.JetSetTableSequential
 TOCTitle: 'JetSetTableSequential method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetTableSequential(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.SetTableSequentialGrbit)
@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6eaae486d2792d5b13b7e728a160c5176f5090db44402f5c89a4256925ca0309
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 879eca53c4867bb41ee0a231bff9adce39aa58a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117902651"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969447"
 ---
 # <a name="apijetsettablesequential-method"></a>Método Api.JetSetTableSequential
 
-Notifica al motor de base de datos que la aplicación está analizando todo el índice en el que se encuentra el cursor. Por lo tanto, los métodos que se usan para acceder a los datos de índice se ajustarán para que este escenario sea lo más rápido posible. Consulte también [JetResetTableSequential(JET_SESID, JET_TABLEID, ResetTableSequentialGrbit).](./api.jetresettablesequential-method.md)
+Notifica al motor de base de datos que la aplicación está analizando todo el índice en el que se encuentra el cursor. Por lo tanto, los métodos que se usan para acceder a los datos de índice se optimizarán para que este escenario sea lo más rápido posible. Consulte también [JetResetTableSequential(JET_SESID, JET_TABLEID, ResetTableSequentialGrbit).](./api.jetresettablesequential-method.md)
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -83,11 +83,11 @@ public static void JetSetTableSequential(
     
     Reservado para uso futuro.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdd83776939e9746103b2f12598a53832d767cebb93767142649a09b804339a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 131be3dd1890967f7107bea64c3dc2634833653d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119014073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159705"
 ---
 # <a name="sstub-switch"></a>Modificador /sstub
 
@@ -38,7 +38,7 @@ Especifica un nombre de archivo que invalida el nombre de archivo de código aux
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El nombre de archivo especificado reemplaza el nombre de archivo predeterminado. De forma predeterminada, el nombre de archivo se obtiene \_ agregando S.C al nombre del archivo IDL. Este modificador no afecta a las interfaces OLE.
 
@@ -52,7 +52,7 @@ El **modificador /server** none tiene prioridad sobre **el modificador /sstub.**
 
 **midl /sstub my \_ sstub.c filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8208d886cd23dab797a9f89d3c050c9f46eff60c8cdd78c27c89dae7396c557a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c4750e6127c0d57758e46b2309f4d91afc110e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118397586"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160136"
 ---
 # <a name="irenderenginegetfiltergraph-method"></a>IRenderEngine::GetFilterGraph (método)
 
@@ -28,7 +28,7 @@ ms.locfileid: "118397586"
 
  
 
-El método recupera el gráfico de filtro que ha construido `GetFilterGraph` el motor de representación, si lo hay.
+El método recupera el gráfico de filtro que ha construido el motor de `GetFilterGraph` representación, si lo hay.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,9 +68,9 @@ Devuelve uno de los siguientes **valores HRESULT:**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use el [**método IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md) para compilar el front-end del gráfico de filtros. Para obtener una vista previa, [**use IRenderEngine::RenderOutputPins**](irenderengine-renderoutputpins.md) para completar el gráfico. Para la salida del archivo, conecte el front-end a una combinación mux/escritor de archivos. Para obtener más información, vea [Representación de un Project](rendering-a-project.md).
+Use el [**método IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md) para compilar el front-end del gráfico de filtro. Para obtener una vista previa, [**use IRenderEngine::RenderOutputPins**](irenderengine-renderoutputpins.md) para completar el gráfico. Para la salida del archivo, conecte el front-end a una combinación de mux/escritor de archivos. Para obtener más información, vea [Representación de un Project](rendering-a-project.md).
 
 El gráfico resultante se puede ejecutar, pausar, detener y buscar; Sin embargo, no se puede cambiar la velocidad de reproducción.
 
@@ -101,10 +101,10 @@ En la devolución, si el valor de *\* ppFG* no es **NULL,** la **interfaz IGraph
 
 <dl> <dt>
 
-[**IRenderEngine (Interfaz)**](irenderengine.md)
+[**IRenderEngine (interfaz)**](irenderengine.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

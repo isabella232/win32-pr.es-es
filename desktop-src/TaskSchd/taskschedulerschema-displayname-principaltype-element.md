@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0ff653a2b2991622b2446bcc0fc74d7063319c2bb6b45556313034a3afb42480
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8ef310869ea8558bca231e866ddeefc0dc35944
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118356918"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891513"
 ---
 # <a name="displayname-principaltype-element"></a>Elemento DisplayName (principalType)
 
@@ -30,7 +30,7 @@ Especifica el nombre de la entidad de seguridad que se muestra en la interfaz Pr
  />
 ```
 
-El tipo complejo [**principalType**](taskschedulerschema-principaltype-complextype.md) define el elemento **DisplayName.**
+El **elemento DisplayName** se define mediante el [**tipo complejo principalType.**](taskschedulerschema-principaltype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -42,15 +42,15 @@ El tipo complejo [**principalType**](taskschedulerschema-principaltype-complexty
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de scripting, el nombre para mostrar de la entidad de seguridad se especifica mediante la [**propiedad Principal.DisplayName.**](principal-displayname.md)
 
-Para el desarrollo de C++, el nombre para mostrar de la entidad de seguridad se especifica mediante la [**propiedad IPrincipal::D isplayName.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_displayname)
+Para el desarrollo de C++, el nombre para mostrar de la entidad de seguridad se especifica mediante la propiedad [**IPrincipal::D isplayName.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_displayname)
 
 ## <a name="examples"></a>Ejemplos
 
-El xml siguiente define un mediante un identificador de grupo y un nombre para mostrar.
+En el siguiente XML se define mediante un identificador de grupo y un nombre para mostrar.
 
 
 ```XML
@@ -62,7 +62,7 @@ El xml siguiente define un mediante un identificador de grupo y un nombre para m
 
 
 
-El xml siguiente define una entidad de seguridad mediante un identificador de usuario y un nombre para mostrar.
+El código XML siguiente define una entidad de seguridad mediante un identificador de usuario y un nombre para mostrar.
 
 
 ```XML
@@ -79,7 +79,7 @@ El xml siguiente define una entidad de seguridad mediante un identificador de us
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

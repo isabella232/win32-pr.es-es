@@ -4,12 +4,12 @@ ms.assetid: 7ae672d3-e11d-453c-b9c0-354d21830ae4
 title: Envío de un mensaje de datos sobres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d93c73e22a9ac98e08d12164e78aa585a6b2ba3da6f47bf53675a7320bc206e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f59c04418a2f1d0186ddc0d88c30e7cc790c715b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118900365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160744"
 ---
 # <a name="sending-an-enveloped-data-message"></a>Envío de un mensaje de datos sobres
 

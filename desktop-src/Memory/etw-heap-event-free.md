@@ -1,7 +1,7 @@
 ---
-description: Evento de traza de administración de memoria para una operación libre del montón.
+description: Evento de seguimiento de administración de memoria para una operación sin montón.
 ms.assetid: 0CCC59F1-AB96-4B7A-9A86-19CA4FBA4A8A
-title: Evento ETW_HEAP_EVENT_FREE (Ntwmi. h)
+title: ETW_HEAP_EVENT_FREE evento (Ntwmi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - ntwmi.h
 ms.openlocfilehash: fd30eccb5848917d752441df79881078dc14d36e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907879"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159871"
 ---
-# <a name="etw_heap_event_free-event"></a>\_ \_ Evento libre de evento de montón ETW \_
+# <a name="etw_heap_event_free-event"></a>Evento ETW \_ HEAP \_ EVENT \_ FREE
 
-El **evento \_ \_ \_ gratuito del montón ETW** es un evento de seguimiento de administración de memoria para una operación libre del montón.
+El **evento ETW \_ HEAP EVENT FREE \_ \_ es** un evento de seguimiento de administración de memoria para una operación libre del montón.
 
 
 ```C++
@@ -38,34 +38,34 @@ typedef struct ETW_HEAP_EVENT_FREE
 *HeapHandle* 
 </dt> <dd>
 
-Identificador del montón en el que se asignó la memoria. Este es el montón que controla una aplicación pasada a la función [**AllocateHeap**](/previous-versions/windows/desktop/legacy/aa374721(v=vs.85)) cuando se asignó la memoria.
+Identificador del montón donde se asignó la memoria. Este es el identificador del montón que una aplicación pasó a la [**función AllocateHeap**](/previous-versions/windows/desktop/legacy/aa374721(v=vs.85)) cuando se asignó la memoria.
 
 </dd> <dt>
 
 *Dirección* 
 </dt> <dd>
 
-Dirección de la memoria que se liberó.
+Dirección de la memoria que se ha liberado.
 
 </dd> <dt>
 
 *Origen* 
 </dt> <dd>
 
-El origen de la memoria que el asignador utilizó para la asignación del montón.
+Origen de la memoria que el asignador usó para la asignación del montón.
 
-En la tabla siguiente se enumeran los posibles valores para el parámetro *source* tal y como se define en el archivo de encabezado *ntetw. h* :
+En la tabla siguiente se enumeran los valores posibles para *el parámetro Source* tal como se define en el archivo de encabezado *ntetw.h:*
 
 
 
 | Value                                                                                                                                                                                                                                                                               | Significado                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="MEMORY_FROM_LOOKASIDE"></span><span id="memory_from_lookaside"></span><dl> <dt>**Memoria \_ de DESDE \_**</dt> la <dt>primera</dt> de la </dl>                                       | Memoria de la lista de direcciones.<br/>                                   |
-| <span id="MEMORY_FROM_LOWFRAG"></span><span id="memory_from_lowfrag"></span><dl> <dt>**Memoria \_ de DESDE \_ LOWFRAG**</dt> <dt>2</dt> </dl>                                             | Memoria del montón de fragmentación baja.<br/>                           |
-| <span id="MEMORY_FROM_MAINPATH"></span><span id="memory_from_mainpath"></span><dl> <dt>**Memoria \_ de DESDE \_ MAINPATH**</dt> <dt>3</dt> </dl>                                          | Memoria de la ruta de acceso del código principal.<br/>                                       |
-| <span id="MEMORY_FROM_SLOWPATH____________________"></span><span id="memory_from_slowpath____________________"></span><dl> <dt> **Memoria \_ de \_ SLOWPATH**</dt> <dt>4</dt> </dl> | Memoria de c lentamente.<br/>                                               |
-| <span id="MEMORY_FROM_INVALID"></span><span id="memory_from_invalid"></span><dl> <dt>**Memoria \_ de DESDE \_ 5 no válidos**</dt> <dt></dt> </dl>                                             | Memoria no válida.<br/>                                        |
-| <span id="MEMORY_FROM_SEGMENT_HEAP"></span><span id="memory_from_segment_heap"></span><dl> <dt>**Memoria \_ de DEL \_ \_ montón de segmentos**</dt> <dt>6</dt> </dl>                             | Este valor se reserva para uso futuro y nunca se devolverá.<br/> |
+| <span id="MEMORY_FROM_LOOKASIDE"></span><span id="memory_from_lookaside"></span><dl> <dt>**MEMORY \_ DE \_ LOOKASIDE**</dt> <dt>1</dt> </dl>                                       | Memoria de la lista de aspecto.<br/>                                   |
+| <span id="MEMORY_FROM_LOWFRAG"></span><span id="memory_from_lowfrag"></span><dl> <dt>**MEMORY \_ DESDE \_ LOWFRAG**</dt> <dt>2</dt> </dl>                                             | Memoria del montón de fragmentación baja.<br/>                           |
+| <span id="MEMORY_FROM_MAINPATH"></span><span id="memory_from_mainpath"></span><dl> <dt>**MEMORY \_ DESDE \_ MAINPATH**</dt> <dt>3</dt> </dl>                                          | Memoria de la ruta de acceso del código principal.<br/>                                       |
+| <span id="MEMORY_FROM_SLOWPATH____________________"></span><span id="memory_from_slowpath____________________"></span><dl> <dt> **MEMORIA \_ DE \_ SLOWPATH**</dt> <dt>4</dt> </dl> | Memoria de c lenta.<br/>                                               |
+| <span id="MEMORY_FROM_INVALID"></span><span id="memory_from_invalid"></span><dl> <dt>**MEMORY \_ FROM \_ INVALID**</dt> <dt>5</dt> </dl>                                             | Memoria que no era válida.<br/>                                        |
+| <span id="MEMORY_FROM_SEGMENT_HEAP"></span><span id="memory_from_segment_heap"></span><dl> <dt>**MEMORY \_ FROM \_ SEGMENT \_ HEAP**</dt> <dt>6</dt> </dl>                             | Este valor está reservado para uso futuro y nunca se devolverá.<br/> |
 
 
 
@@ -75,7 +75,7 @@ En la tabla siguiente se enumeran los posibles valores para el parámetro *sourc
 
 ## <a name="remarks"></a>Observaciones
 
-El **evento \_ \_ \_ gratuito del montón ETW** se registra en todas las operaciones libres del montón.
+El **evento ETW \_ HEAP EVENT \_ \_ FREE** se registra en todas las operaciones gratuitas del montón.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,13 +83,13 @@ El **evento \_ \_ \_ gratuito del montón ETW** se registra en todas las operaci
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Ntwmi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Encabezado<br/>                   | <dl> <dt>Ntwmi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

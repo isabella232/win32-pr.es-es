@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b29c97438c0db1a60d94a8ae88ed99f73c33ea16a820d1aec5ca7a6be737e5d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d688f17957170c6f3a8887030ea2c67140c0ff8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119014103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159720"
 ---
 # <a name="out-switch"></a>/out (modificador)
 
@@ -27,7 +27,7 @@ El **modificador /out** especifica el directorio predeterminado donde el compila
 midl /out path-specification
 ```
 
-## <a name="switch-options"></a>Cambiar opciones
+## <a name="switch-options"></a>Opciones de cambio
 
 <dl> <dt>
 
@@ -38,9 +38,9 @@ Especifica la ruta de acceso al directorio en el que se generan los archivos de 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El directorio de salida se puede especificar con una letra de unidad, un nombre de ruta de acceso absoluto o ambos. La **opción /out** se puede usar con cualquiera de los modificadores que habilitan la especificación del archivo de salida individual.
+El directorio de salida se puede especificar con una letra de unidad, un nombre de ruta de acceso absoluto o ambos. La **opción /out** se puede usar con cualquiera de los modificadores que habilitan la especificación individual del archivo de salida.
 
 Cuando no se especifica el modificador **/out,** los archivos se escriben en el directorio actual.
 
@@ -54,7 +54,7 @@ El directorio predeterminado especificado por el modificador **/out** se puede r
 
 **midl /out \\ mydir \\ mysubdir \\ another filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

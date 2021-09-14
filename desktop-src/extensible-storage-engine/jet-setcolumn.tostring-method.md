@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_SETCOLUMN. ToString (método)'
-title: JET_SETCOLUMN. ToString (método)
+description: 'Más información sobre: JET_SETCOLUMN. Método ToString'
+title: JET_SETCOLUMN. Método ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SETCOLUMN.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_setcolumn.tostring(v=EXCHG.10)
@@ -25,18 +25,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 20aaed147387b9dc8e63834dd0cbc8b357042a47
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696297"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969047"
 ---
-# <a name="jet_setcolumntostring-method"></a>JET_SETCOLUMN. ToString (método)
+# <a name="jet_setcolumntostring-method"></a>JET_SETCOLUMN. Método ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el [JET_SETCOLUMN](./jet-setcolumn-class.md)actual.
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el objeto [JET_SETCOLUMN](./jet-setcolumn-class.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa el [JET_SETCOLUMN](./jet-setcolumn-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa el objeto [JET_SETCOLUMN](./jet-setcolumn-class.md).  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_SETCOLUMN (clase)](./jet-setcolumn-class.md)
+[JET_SETCOLUMN clase](./jet-setcolumn-class.md)
 
-[Miembros de JET_SETCOLUMN](./jet-setcolumn-members.md)
+[JET_SETCOLUMN miembros](./jet-setcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

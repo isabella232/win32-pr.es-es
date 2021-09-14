@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXSphereBoundProbe (D3DX10math.h): determina si un rayo forma una intersección con el volumen del cuadro de límite de una esfera.'
+description: 'Función D3DXSphereBoundProbe (D3DX10math.h): determina si un rayo forma una intersección con el volumen del rectángulo de selección de una esfera.'
 ms.assetid: 5984a1a6-d36c-4a05-8c74-0ece7443356c
 title: Función D3DXSphereBoundProbe (D3DX10math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 39e2b3871365cddd70b942f6d9d9f0fc9af85eca23944f388e3afd6ad9b4fc63
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb5a329e39631dff626ff1c7945ad4b05f9dcd58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970028"
 ---
 # <a name="d3dxsphereboundprobe-function-d3dx10mathh"></a>Función D3DXSphereBoundProbe (D3DX10math.h)
 
-Determina si un rayo forma una intersección con el volumen del rectángulo delimitador de una esfera.
+Determina si un rayo forma una intersección con el volumen del rectángulo de selección de una esfera.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -83,11 +83,11 @@ Puntero a una [**estructura D3DXVECTOR3,**](d3d10-d3dxvector3.md) especificando 
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Devuelve **TRUE** si el rayo forma una intersección con el volumen del cuadro de límite de la esfera. De lo contrario, **devuelve FALSE.**
+Devuelve **TRUE** si el rayo forma una intersección con el volumen del rectángulo de selección de la esfera. De lo contrario, **devuelve FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-**D3DXSphereBoundProbe** determina si el rayo forma una intersección con el volumen del cuadro de límite de la esfera, no solo con la superficie de la esfera.
+**D3DXSphereBoundProbe** determina si el rayo forma una intersección con el volumen del rectángulo de selección de la esfera, no solo con la superficie de la esfera.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,7 +100,7 @@ Devuelve **TRUE** si el rayo forma una intersección con el volumen del cuadro d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -17,12 +17,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 356ddf6ea86980ee882ad7544096811db420ae0cf8224f315801b708b95ae98d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fdf1cc03f60259c395ca8c459ddd5a308e3dcd6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045454"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966796"
 ---
 # <a name="id3dx12pipelineparsercallbacksnodemaskcb-method"></a>Método ID3DX12PipelineParserCallbacks::NodemaskCb
 
@@ -70,7 +70,7 @@ No devuelve nada.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

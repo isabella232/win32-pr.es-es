@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0646a057fdc2fb96e5f72e7451b9b273191ced22f5092a14fab11a9042c5de25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3070883b167d26cf31f7d7f388f6bd3736a4bde
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118788114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966448"
 ---
 # <a name="tex---ps"></a>tex - ps
 
 Carga el registro de destino con datos de color (RGBA) muestreados a partir de una textura. La textura debe enlazarse a una fase de textura determinada (n) mediante [**SetTexture**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture). El muestreo de textura se controla [**mediante SetSamplerState.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setsamplerstate)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,11 +31,11 @@ Carga el registro de destino con datos de color (RGBA) muestreados a partir de u
 
  
 
-where
+, donde
 
 -   dst es el registro de destino.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

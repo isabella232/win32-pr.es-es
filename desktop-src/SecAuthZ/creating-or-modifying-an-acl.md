@@ -4,12 +4,12 @@ ms.assetid: 71301aab-1040-4f61-855f-2b891c8b6077
 title: Creación o modificación de una ACL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 120b445d37f8c4b82c2b0b2a775a06d68faa46ab5752cc25e913d43676e9a72e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a0deb72bcd1a1c805dd8524027601952dda0eac1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117782170"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160825"
 ---
 # <a name="creating-or-modifying-an-acl"></a>Creación o modificación de una ACL
 

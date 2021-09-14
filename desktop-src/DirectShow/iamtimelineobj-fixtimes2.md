@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 74890c2b094172ac3ced0c9fd192a755d051b56df22301b4d64d9003eaa74e9c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 48b487d8dc17d6b815ea9dff79fc58af953b0bd8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118400910"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892004"
 ---
 # <a name="iamtimelineobjfixtimes2-method"></a>IamTimelineObj::FixTimes2 (método)
 
@@ -56,7 +56,7 @@ Puntero a una variable que contiene la hora de inicio, en segundos. Si la llamad
 *pStop* 
 </dt> <dd>
 
-Puntero a una variable que contiene la hora de detenerse, en segundos. Si la llamada se realiza correctamente, esta variable se establece en el tiempo redondeado.
+Puntero a una variable que contiene el tiempo de detenerse, en segundos. Si la llamada se realiza correctamente, esta variable se establece en el tiempo redondeado.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Puntero a una variable que contiene la hora de detenerse, en segundos. Si la lla
 
 Devuelve S \_ OK si se realiza correctamente o E \_ NOTINTREE si el objeto no forma parte de un grupo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -91,10 +91,10 @@ Devuelve S \_ OK si se realiza correctamente o E \_ NOTINTREE si el objeto no fo
 
 <dl> <dt>
 
-[**IAMTimelineObj (interfaz)**](iamtimelineobj.md)
+[**IamTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

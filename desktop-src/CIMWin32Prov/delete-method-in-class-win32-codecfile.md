@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ecdd0989530810ee4eafc33fb447c35b6f97c90388a5145df0b423b9726d84c5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9d9395f5c5ebaf2948043fe43e84685e4c39d4d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968859"
 ---
 # <a name="delete-method-of-the-win32_codecfile-class"></a>Método Delete de la clase CodecFile de Win32 \_
 
-El **método de** clase WMI [Delete](/windows/desktop/WmiSdk/retrieving-a-class) elimina el archivo lógico de códec de audio o vídeo (o directorio) especificado en la ruta de acceso del objeto.
+El **método eliminar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) elimina el archivo lógico de códec de audio o vídeo (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha infringido el uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -151,14 +151,14 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**CódecFile de \_ Win32**](win32-codecfile.md)
+[**CodecFile de Win32 \_**](win32-codecfile.md)
 </dt> </dl>
 
  

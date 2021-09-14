@@ -4,12 +4,12 @@ description: Según la especificación de DCE, cada archivo IDL debe definir atr
 ms.assetid: ab8821ce-d52a-42bf-aa5e-582bb24adf93
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcf0b365cecf2880fa2746536c3f1d80505f5d7534b95017f8abb18ceecd9d09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 182b7d46774484a9520424fd82bcff2d7103aa3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161040"
 ---
 # <a name="pointer-attribute-type-inheritance"></a>Pointer-Attribute de tipos
 
@@ -25,7 +25,7 @@ El compilador MIDL asigna atributos de puntero a punteros mediante las siguiente
 |----------|----------------------------------------------------------------------------------------------------------------------------|
 | 1        | Los atributos de puntero explícitos se aplican al puntero en el sitio de definición o uso.                                      |
 | 2        | El valor predeterminado es **\[ el atributo predeterminado \_ del \]** puntero en el archivo IDL que define el tipo.                               |
-| 3        | El valor predeterminado es el **\[ atributo predeterminado \_ del \]** puntero en el archivo IDL que importa el tipo.                               |
+| 3        | El valor predeterminado es **\[ el atributo predeterminado \_ del \]** puntero en el archivo IDL que importa el tipo.                               |
 | 4        | El valor predeterminado \[ [es ptr](/windows/desktop/Midl/ptr) en modo de compatibilidad con \] DCE o \[ [único en](/windows/desktop/Midl/unique) el modo \] de extensiones de Microsoft. |
 
 

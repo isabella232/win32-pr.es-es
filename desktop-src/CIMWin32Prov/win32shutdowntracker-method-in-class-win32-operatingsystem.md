@@ -1,8 +1,8 @@
 ---
-description: El método Win32ShutdownTracker proporciona el mismo conjunto de opciones de cierre admitido por el método Win32Shutdown en el OperatingSystem de Win32 \_ , pero también permite especificar comentarios, un motivo para el apagado o un tiempo de espera.
+description: El método Win32ShutdownTracker proporciona el mismo conjunto de opciones de apagado compatibles con el método Win32Shutdown en Win32 OperatingSystem, pero también permite especificar comentarios, un motivo de apagado o un tiempo de \_ espera.
 ms.assetid: 2c5502c9-9ec0-4f9e-b661-1f8015556008
 ms.tgt_platform: multiple
-title: Método Win32ShutdownTracker de la clase Win32_OperatingSystem
+title: Método Win32ShutdownTracker de la Win32_OperatingSystem clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,15 +15,15 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 44c86972d014da906b98ad8d3bd8e98d01f1cfcb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968776"
 ---
-# <a name="win32shutdowntracker-method-of-the-win32_operatingsystem-class"></a>Método Win32ShutdownTracker de la \_ clase Win32 OperatingSystem
+# <a name="win32shutdowntracker-method-of-the-win32_operatingsystem-class"></a>Método Win32ShutdownTracker de la clase OperatingSystem win32 \_
 
-El método **Win32ShutdownTracker** proporciona el mismo conjunto de opciones de cierre admitido por el método [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md) en el [**\_ OperatingSystem de Win32**](win32-operatingsystem.md), pero también permite especificar comentarios, un motivo para el apagado o un tiempo de espera.
+El método **Win32ShutdownTracker** proporciona el mismo conjunto de opciones de apagado compatibles con el método [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md) en [**Win32 \_ OperatingSystem,**](win32-operatingsystem.md)pero también permite especificar comentarios, un motivo de apagado o un tiempo de espera.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,35 +43,35 @@ uint32 Win32ShutdownTracker(
 
 <dl> <dt>
 
-*Tiempo de espera* \[ de\]
+*Tiempo de espera* \[ En\]
 </dt> <dd>
 
-Tiempo, en segundos, antes de que tenga lugar el apagado. El valor predeterminado es 0 (cero).
+Tiempo, en segundos, antes de que se lleve a cabo el apagado. El valor predeterminado es 0 (cero).
 
 </dd> <dt>
 
-*Comentario* \[ de de\]
+*Comentario* \[ En\]
 </dt> <dd>
 
 Mensaje que se va a mostrar en el cuadro de diálogo de apagado que también se almacena como comentario en la entrada del registro de eventos.
 
 </dd> <dt>
 
-*ReasonCode* \[ de\]
+*ReasonCode* \[ En\]
 </dt> <dd>
 
-Motivo por el que se inicia el apagado.
+Motivo para iniciar el apagado.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
-Conjunto de mapas Dete de marcas para apagar el equipo. Para forzar un comando, agregue la marca Force (4) al valor del comando. Al usar forzar junto con el apagado o el reinicio de un equipo remoto, se cierra inmediatamente todo (incluido WMI, COM, etc.) o se reinicia el equipo remoto. Esto da como resultado un valor devuelto indeterminado.
+Conjunto de marcas de mapa de bits para apagar el equipo. Para forzar un comando, agregue la marca Force (4) al valor del comando. El uso de Forzar junto con Apagar o Reiniciar en un equipo remoto apaga inmediatamente todo (incluido WMI, COM, entre otros) o reinicia el equipo remoto. Esto da como resultado un valor devuelto indeterminado.
 
 <dt>
 
-0 (0X0)
+0 (0x0)
 </dt> <dd>
 
 Cerrar sesión
@@ -92,17 +92,17 @@ Apagar
 
 </dd> <dt>
 
-5 (0X5)
+5 (0x5)
 </dt> <dd>
 
-Cierre forzado (1 + 4)
+Apagado forzado (1 + 4)
 
 </dd> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dd>
 
-Reboot
+Reiniciar
 
 </dd> <dt>
 
@@ -129,23 +129,23 @@ Apagado forzado (8 + 4)
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero (0) para indicar que la operación se ha realizado correctamente. Cualquier otro número indica que hubo un error. Para ver los códigos de error, consulte [**constantes error de WMI**](../wmisdk/wmi-error-constants.md) o [**WbemErrorEnum**](/windows/win32/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](../debug/system-error-codes.md).
+Devuelve cero (0) para indicar que se ha correcto. Cualquier otro número indica que hubo un error. Para obtener códigos de error, [**vea Wmi Error Constants**](../wmisdk/wmi-error-constants.md) o [**WbemErrorEnum**](/windows/win32/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](../debug/system-error-codes.md).
 
 <dl> <dt>
 
 **Correcto** (0)
 </dt> <dt>
 
-**Otro** (1 – 4294967295)
+**Otros** (1-4294967295)
 </dt> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El proceso de llamada debe tener el privilegio de **\_ \_ nombre de cierre de se** .
+El proceso de llamada debe tener el **SE \_ SHUTDOWN \_ NAME.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código de VBScript se describe cómo llamar a **Win32ShutdownTracker**.
+En el siguiente ejemplo de código VBScript se describe cómo llamar a **Win32ShutdownTracker**.
 
 
 ```VB
@@ -177,20 +177,20 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)
 </dt> <dt>
 
-[**OperatingSystem de Win32 \_**](win32-operatingsystem.md)
+[**Sistema operativo \_ Win32**](win32-operatingsystem.md)
 </dt> <dt>
 
 [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md)

@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e111ce65f5902d7acce95a3e7ca000f4309706eca396d3693ddac56bd7bae0a1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d8e1869e5d6cde35404ff9c12eabd35631b3227c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119972055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968815"
 ---
-# <a name="win32_pnpdeviceproperty-class"></a>Clase \_ PnPDeviceProperty de Win32
+# <a name="win32_pnpdeviceproperty-class"></a>Clase Win32 \_ PnPDeviceProperty
 
-Tipo base de las clases que representan una propiedad devuelta por el [**método Win32 \_ PnPEntity**](win32-pnpentity.md)::[**GetDeviceProperties.**](getdeviceproperties-win32-pnpentity.md)
+Tipo base de las clases que representan una propiedad devuelta por el método [**Win32 \_ PnPEntity**](win32-pnpentity.md)::[**GetDeviceProperties.**](getdeviceproperties-win32-pnpentity.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -44,15 +44,15 @@ class Win32_PnPDeviceProperty
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ PnPDeviceProperty de Win32** tiene estos tipos de miembros:
+La **clase Win32 \_ PnPDeviceProperty** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ PnPDeviceProperty de Win32** tiene estas propiedades.
+La **clase Win32 \_ PnPDeviceProperty** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -91,7 +91,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del par de Name-Value clave que identifica la **propiedad** Data.
+Nombre del par clave Name-Value que identifica la **propiedad** Data.
 
 </dd> <dt>
 
@@ -455,7 +455,7 @@ Los valores posibles son.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Desconocido: check in devpropdef.h** (4120)
+**Desconocido: comprobación de devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>
@@ -490,7 +490,7 @@ Los valores posibles son.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

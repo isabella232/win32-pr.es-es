@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0a1126563b00861ab8b8168832f72189c3a3828378f5d89c4b74e49f68b09bd4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f2fd5953d770d541e704b7dc7fe8580e98b3066
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118417915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160313"
 ---
 # <a name="win32_comapplicationsettings-class"></a>Clase COMApplicationSettings de Win32 \_
 
@@ -40,7 +40,7 @@ class Win32_COMApplicationSettings : CIM_ElementSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ COMApplicationSettings de Win32** tiene estos tipos de miembros:
 
@@ -64,7 +64,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Element"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
 </dt> </dl>
 
-Una [**aplicación \_ DCOM de Win32**](win32-dcomapplication.md) que representa la aplicación DCOM donde se aplica la configuración.
+[**DCOMApplication \_ de Win32**](win32-dcomapplication.md) que representa la aplicación DCOM donde se aplica la configuración.
 
 </dd> <dt>
 
@@ -84,15 +84,15 @@ Un [**\_ DCOMApplicationSetting de Win32**](win32-dcomapplicationsetting.md) que
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ COMApplicationSettings de Win32** se deriva del [**elemento \_ CIMSetting**](cim-elementsetting.md).
+La **clase \_ COMApplicationSettings de Win32** se deriva de [**\_ ElementSetting de CIM.**](cim-elementsetting.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

@@ -4,12 +4,12 @@ ms.assetid: a1105754-a57f-4a0d-9797-bec22b99900c
 title: Administrador de credenciales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57a33b1a47ff17123a1974823d7fee1421df7755850d46d2992fec51f62f5fac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20165a5e6145de0a2c042c38923c41d793bd641d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008833"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160996"
 ---
 # <a name="credential-manager"></a>Administrador de credenciales
 

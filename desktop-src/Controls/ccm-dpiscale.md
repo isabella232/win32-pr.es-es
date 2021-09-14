@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7e72cb8ac3acf413e4381580a4ecf38a4f5bd4b2f5b03d6cff7d7abb85c1f0f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 56ef978f486f370adf9872d28e1accbacc37a6de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119320255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160292"
 ---
 # <a name="ccm_dpiscale-message"></a>Mensaje \_ DE CCM PPPSCALE
 
-Habilita el escalado automático de puntos altos por pulgada (ppp) en los controles [Tree-View,](tree-view-controls.md) [List-View,](list-view-control-reference.md) [ComboBoxEx,](comboboxex-controls.md) [Header controls](header-controls.md), [Buttons](buttons.md), [Toolbar controls](toolbar-controls-overview.md), [Animation controls](animation-control-overview.md)y [Image Lists](image-lists.md).
+Habilita el escalado automático de puntos altos por pulgada (ppp) en los controles [Tree-View,](tree-view-controls.md) [List-View](list-view-control-reference.md), [ComboBoxEx](comboboxex-controls.md)controls , [Header controls](header-controls.md), [Buttons](buttons.md), [Toolbar controls](toolbar-controls-overview.md), [Animation controls](animation-control-overview.md)y [Image Lists](image-lists.md).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,7 +47,7 @@ Debe ser cero.
 
 No se usa el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 inicio rápido y [la barra de](/windows/desktop/shell/taskbar) tareas no deben especificar un escalado de ppp, porque las imágenes ya se han escalado.
 
@@ -66,7 +66,7 @@ Cualquier control que use una lista de imágenes creada con la métrica SmallIco
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

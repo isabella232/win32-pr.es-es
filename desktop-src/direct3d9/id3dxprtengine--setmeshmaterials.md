@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7c24ff96b4582e86580774a1f7ac7cd889547018a5b0f138d5e43685c50e1701
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c90ae72cab5d7a20c2c65b940d28a9b57902d2d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118293389"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966688"
 ---
 # <a name="id3dxprtenginesetmeshmaterials-method"></a>Método ID3DXPRTEngine::SetMeshMaterials
 

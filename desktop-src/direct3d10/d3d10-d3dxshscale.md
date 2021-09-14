@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 46018d83a473202066ac22c9e4bda88a096154ffd6fc79b13c604d8937d1140c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0fab96575e5542eaaed725a88f9ba52c3289a4ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118990755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970036"
 ---
 # <a name="d3dxshscale-function-d3dx10h"></a>Función D3DXSHScale (D3DX10.h)
 
@@ -48,7 +48,7 @@ FLOAT* D3DXSHScale(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación genera coeficientes order-to-order. Vea la sección Comentarios.
+Puntero a coeficientes de salida de armónica esférica (SH). La evaluación genera coeficientes order-to-order. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación gene
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntero a coeficientes de salida sh.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria lmiento + m + l, donde:
 
@@ -103,7 +103,7 @@ Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

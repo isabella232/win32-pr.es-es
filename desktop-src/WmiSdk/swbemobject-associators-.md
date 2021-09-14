@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 87458cec77a6b003a6dd35d0fc0f1a39fb785522401b46fa50a515f869760889
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f9ff4536936661ece54b5bff29e500ce6e98d3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119857435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967067"
 ---
 # <a name="swbemobjectassociators_-method"></a>Método SWbemObject.Associators \_
 
@@ -216,7 +216,7 @@ No hay suficiente memoria para completar la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre la consulta, las instancias de origen y los puntos de conexión asociados de ASSOCIATORS OF, vea [INSTRUCCIÓN ASSOCIATORS OF](associators-of-statement.md).
 
@@ -228,7 +228,7 @@ Para obtener más información sobre la consulta, las instancias de origen y los
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObject<br/>                                                           |
@@ -236,7 +236,7 @@ Para obtener más información sobre la consulta, las instancias de origen y los
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

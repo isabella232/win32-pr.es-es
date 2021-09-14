@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103147
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: dfa1f6d5d48f6322e73441f075318dcc42c4a3c0aed5d5ce6e34ac66f94c7055
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3fd4ae02866f3b8d0feb05658bfdffff1cda2a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118078096"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969212"
 ---
 # <a name="esentunicodetranslationbuffertoosmallexception-methods"></a>Métodos de EsentUnicodeTranslationBufferTooSmallException 
 
@@ -78,7 +78,7 @@ El [tipo EsentUnicodeTranslationBufferTooSmallException](./esentunicodetranslati
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

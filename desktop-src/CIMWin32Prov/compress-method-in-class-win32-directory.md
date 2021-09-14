@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 15d9142abb95998fce803c30c439632775cd8ff807f3b7d99653875d08e534e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea694c09e11e5801016a4ea85b9774448c542991
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968863"
 ---
 # <a name="compress-method-of-the-win32_directory-class"></a>Método Compress de la clase Directory de \_ Win32
 
 El **método comprimir** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) comprime el archivo de entrada de directorio lógico (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -137,7 +137,7 @@ Un parámetro especificado no es válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La compresión proporciona una manera de liberar espacio de almacenamiento adicional en una unidad de disco sin adquirir hardware nuevo y sin quitar archivos o carpetas. Según el tamaño del disco duro y el tipo de archivos almacenados en ese disco, es posible que pueda recuperar cientos de megabytes de espacio en disco y, por tanto, impedir la necesidad de adquirir una nueva unidad de disco duro y desconectar el equipo hasta que se instale la nueva unidad.
 
@@ -145,7 +145,7 @@ El método Compress comprime todos los archivos y subcarpetas dentro de una carp
 
 Dado que la compresión presenta una ligera reducción del rendimiento, no se recomienda para los archivos o carpetas a los que se accede de forma rutinaria; Por ejemplo, es probable que no quiera comprimir archivos de base de datos, archivos de registro o carpetas de perfil de usuario. Los mejores candidatos para la compresión son archivos y carpetas a los que no se accede con mucha frecuencia. Por ejemplo, podría escribir un script para devolver una colección de carpetas en una unidad a la que no se ha accedido durante un mes o más y, a continuación, comprimir cada una de esas carpetas.
 
-La cantidad de espacio en disco liberada mediante la compresión de carpetas varía en función del tipo de archivos almacenados en esa carpeta. Por ejemplo, .jpg archivos ya están comprimidos y la compresión adicional tiene poco efecto en el tamaño del archivo. Sin embargo, con otros tipos de archivo, el ahorro puede ser considerable. Por ejemplo, se creó una nueva carpeta en un equipo de prueba basado en Windows 2000 y se copiaron en esa carpeta 33 documentos Microsoft Word, con un total de 15 megabytes (MB) de espacio en disco. Cuando se comprimían los documentos, la carpeta solo tenía 7 MB de espacio en disco.
+La cantidad de espacio en disco liberada mediante la compresión de carpetas varía en función del tipo de archivos almacenados en esa carpeta. Por ejemplo, .jpg archivos ya están comprimidos y la compresión adicional tiene poco efecto en el tamaño del archivo. Sin embargo, con otros tipos de archivo, el ahorro puede ser considerable. Por ejemplo, se creó una nueva carpeta en un equipo de prueba basado en Windows 2000 y se copiaron en esa carpeta 33 documentos Microsoft Word, que suman un total de 15 megabytes (MB) de espacio en disco. Cuando se comprimían los documentos, la carpeta solo tenía 7 MB de espacio en disco.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -180,7 +180,7 @@ Next
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

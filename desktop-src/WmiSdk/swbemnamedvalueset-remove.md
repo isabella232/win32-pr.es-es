@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 1c733f932588c5c0d7ccfe3c906f28244d37fee0c649451c05fb8f72742edef4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d41ecd7d28b95534c8e6d88d1c57756c269cf790
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119611925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967084"
 ---
 # <a name="swbemnamedvaluesetremove-method"></a>Método SWbemNamedValueSet.Remove
 
@@ -48,11 +48,11 @@ SWbemNamedValueSet.Remove( _
 *strName* \[ En\]
 </dt> <dd>
 
-Obligatorio. Nombre del valor que se quitará.
+Necesario. Nombre del valor que se quitará.
 
 </dd> <dt>
 
-*iFlags* \[ en, opcional\]
+*iFlags* \[ in, opcional\]
 </dt> <dd>
 
 Reservado. Este valor debe ser cero si se especifica.
@@ -94,11 +94,11 @@ No se encontró el elemento solicitado.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemNamedValueSet<br/>                                                    |
@@ -106,7 +106,7 @@ No se encontró el elemento solicitado.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

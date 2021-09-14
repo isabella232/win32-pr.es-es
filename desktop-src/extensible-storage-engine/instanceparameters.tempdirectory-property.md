@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bb78759c1c85e86f03a3938f2b2243a03cd703d6a4e8d0e849a483aec3462297
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0bbe31b7f437f045f601b18daf92877784d58512
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117705717"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969176"
 ---
 # <a name="instanceparameterstempdirectory-property"></a>Propiedad InstanceParameters.TempDirectory
 
@@ -40,7 +40,7 @@ Obtiene o establece la ruta de acceso del sistema de archivos relativa o absolut
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,12 +64,12 @@ public string TempDirectory { get; set; }
 
 Tipo: [System.String](/dotnet/api/system.string)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

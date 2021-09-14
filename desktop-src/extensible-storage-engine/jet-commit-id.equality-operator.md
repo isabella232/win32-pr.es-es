@@ -25,14 +25,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6fb259e54141e3e94e6ee106724e4e737334519398c42ceb11c86026417407db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 36815693c078146faec7d604dd28e5d74d475af2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119112374"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969167"
 ---
-# <a name="jet_commit_idequality-operator"></a>JET_COMMIT_ID.Equality (Operador)
+# <a name="jet_commit_idequality-operator"></a>operador JET_COMMIT_ID.Equality
 
 Determine si un commitid es igual a otro commitid.
 

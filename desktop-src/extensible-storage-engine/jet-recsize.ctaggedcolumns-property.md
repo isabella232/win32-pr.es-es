@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 566e79819a978ff5227474ee70cbf9d757de0a0e3d6ec30d93cc9d6cc6e33a0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 531a2a453737e03b66ad1a5a86a80f3ba61c4711
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118763643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969067"
 ---
 # <a name="jet_recsizectaggedcolumns-property"></a>JET_RECSIZE.cTaggedColumns, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el número total de columnas etiquetadas establecidas en este registro.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

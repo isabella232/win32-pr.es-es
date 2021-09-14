@@ -4,12 +4,12 @@ ms.assetid: b1dfd7dc-cc00-4f1a-a157-c60b5d0f0b13
 title: Operaciones de tiempo de espera de servicio de cuadro de diálogo admitidas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7715cafb426a59bd9773791788dd9914fff0c1fac4a5b820e9cc06416e966eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 274950cadd45cd4e7e3be890da0e4350a4d0c5ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118916454"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160953"
 ---
 # <a name="supported-dialog-box-service-time-out-operations"></a>Operaciones de tiempo de espera de servicio de cuadro de diálogo admitidas
 
@@ -24,7 +24,7 @@ Los servicios de cuadro de diálogo de Winlogon se proporcionan mediante las sig
 | Función de soporte técnico                                               | Descripción                                                                                      |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | [**WlxMessageBox**](/windows/win32/api/winwlx/nc-winwlx-pwlx_message_box)                         | Similar a la Windows [**MessageBox.**](/windows/win32/api/winuser/nf-winuser-messagebox)                         |
-| [**WlxDialogBox**](/windows/win32/api/winwlx/nc-winwlx-pwlx_dialog_box)                           | Similar a la función Windows [**DialogBox.**](/windows/win32/api/winuser/nf-winuser-dialogboxa)                           |
+| [**WlxDialogBox**](/windows/win32/api/winwlx/nc-winwlx-pwlx_dialog_box)                           | Similar a la Windows [**DialogBox.**](/windows/win32/api/winuser/nf-winuser-dialogboxa)                           |
 | [**WlxDialogBoxIndirect**](/windows/win32/api/winwlx/nc-winwlx-pwlx_dialog_box_indirect)           | Similar a la Windows [**dialogBoxIndirect.**](/windows/win32/api/winuser/nf-winuser-dialogboxindirecta)           |
 | [**WlxDialogBoxParam**](/windows/win32/api/winwlx/nc-winwlx-pwlx_dialog_box_param)                 | Similar a la Windows [**DialogBoxParam.**](/windows/win32/api/winuser/nf-winuser-dialogboxparama)                 |
 | [**WlxDialogBoxIndirectParam**](/windows/win32/api/winwlx/nc-winwlx-pwlx_dialog_box_indirect_param) | Similar a la Windows [**dialogBoxIndirectParam.**](/windows/win32/api/winuser/nf-winuser-dialogboxindirectparama) |

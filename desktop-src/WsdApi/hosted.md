@@ -4,12 +4,12 @@ ms.assetid: f901a88f-7e01-4e7f-a0f2-59f2a01b03cd
 title: elemento hospedado
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afc3ea8dae3e705800cb4a1d2733bc86bcd491a25f2888ca258a47d6e765b796
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e3d281b5e058f8716c12c655ebcdb9a17bdfa4fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117738425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966983"
 ---
 # <a name="hosted-element"></a>elemento hospedado
 
@@ -61,13 +61,13 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada servicio proporcionado por un host  de servicio debe tener su propia información de elemento hospedado para asegurarse de que el servicio se publica correctamente en respuestas a solicitudes de metadatos.
 
 Los [**elementos PnPXHardwareId**](pnpxhardwareid.md) y [**PnPXCompatibleId**](pnpxcompatibleid.md) son opcionales, pero cuando se usan, deben usarse juntos. Si uno está presente, el otro también debe estar presente.
 
-Si hay [**un elemento PnPXDeviceCategory,**](pnpxdevicecategory.md)  al menos un elemento hospedado debe contener los elementos [**PnPXHardwareId**](pnpxhardwareid.md) y [**PnPXCompatibleId.**](pnpxcompatibleid.md) Del mismo modo, si los elementos **PnPXHardwareId** y  **PnPXCompatibleId** están presentes en un elemento hospedado, debe haber al menos un elemento **PnPXDeviceCategory** dentro del [**elemento thisModelMetadata.**](thismodelmetadata.md)
+Si hay [**un elemento PnPXDeviceCategory**](pnpxdevicecategory.md) presente, al menos un elemento hospedado debe contener los elementos [**PnPXHardwareId**](pnpxhardwareid.md) y [**PnPXCompatibleId.**](pnpxcompatibleid.md)  Del mismo modo, si los elementos **PnPXHardwareId** y  **PnPXCompatibleId** están presentes en un elemento hospedado, debe haber al menos un elemento **PnPXDeviceCategory** dentro del elemento [**thisModelMetadata.**](thismodelmetadata.md)
 
 ## <a name="element-information"></a>Información de elemento
 

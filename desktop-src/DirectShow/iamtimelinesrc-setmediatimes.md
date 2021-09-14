@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 5de058e31da605b96f7b013c03e9c0d020daa11ec676618b4a13f5ff92e701f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd8255c7744a155ff8328682005e2aacafaf2d13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118154934"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891940"
 ---
 # <a name="iamtimelinesrcsetmediatimes-method"></a>Método IAMTimelineSrc::SetMediaTimes
 
@@ -28,7 +28,7 @@ ms.locfileid: "118154934"
 
  
 
-El `SetMediaTimes` método establece las horas de detención e inicio de los medios.
+El `SetMediaTimes` método establece las horas de detenerse e iniciar los medios.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Hora de inicio del medio, en unidades de 100 nanosegundos.
 *Detención* 
 </dt> <dd>
 
-Tiempo de detención de medios, en unidades de 100 nanosegundos.
+Tiempo de detenerse multimedia, en unidades de 100 nanosegundos.
 
 </dd> </dl>
 
@@ -64,15 +64,15 @@ Tiempo de detención de medios, en unidades de 100 nanosegundos.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las horas de medios son las horas de detenerse e iniciar con respecto al archivo multimedia original. Establezca siempre las horas multimedia cuando agregue un origen de audio o vídeo a la escala de tiempo. De lo contrario, podrían producirse problemas de representación. La hora de detenerse debe ser mayor que la hora de inicio.
+Las horas de medios son las horas de detenerse e iniciar con respecto al archivo multimedia original. Establezca siempre las horas de los medios al agregar un origen de audio o vídeo a la escala de tiempo. De lo contrario, podrían producirse problemas de representación. La hora de detenerse debe ser mayor que la hora de inicio.
 
-Para usar un fotograma de un origen de vídeo, establezca la hora de detenerse en una cantidad fraccionria mayor que la hora de inicio, como 100 nanosegundos. Si se establece en el mismo valor, se produce un error de representación.
+Para usar un fotograma todavía desde un origen de vídeo, establezca la hora de detenerse en una cantidad fraccionera superior a la hora de inicio, como 100 nanosegundos. Si se establece en el mismo valor, se produce un error de representación.
 
 Si la duración de la escala de tiempo no coincide con la duración del medio, el origen se extiende o reduce en consecuencia. Esto hace que el clip se reprodgue más lento o más rápido que la velocidad de creación. (El cambio de tono se producirá en un origen de audio). Para obtener más información, vea [Time in DirectShow Editing Services](time-in-directshow-editing-services.md).
 
-Puede especificar la duración del archivo de origen llamando al [**método SetMediaLength.**](iamtimelinesrc-setmedialength.md) Si establece un tiempo de detención de medios que supera la duración, DES trunca la hora de detenerse.
+Puede especificar la duración del archivo de origen llamando al [**método SetMediaLength.**](iamtimelinesrc-setmedialength.md) Si establece un tiempo de detenerse de medios que supera la duración, DES trunca la hora de detenerse.
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -95,14 +95,14 @@ Puede especificar la duración del archivo de origen llamando al [**método SetM
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

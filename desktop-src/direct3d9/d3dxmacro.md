@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: fa78c69ffe0c25b66e73da6fd9139c3b1f69661e5237c3c03e4dd2d8a377461d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fd6c52b94c3fb6f36c9b3a8e2b4b513fb8903f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118095952"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969728"
 ---
 # <a name="d3dxmacro-structure"></a>D3DXMACRO (estructura)
 
@@ -36,7 +36,7 @@ typedef struct D3DXMACRO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ Nombre de definición.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para usar **D3DXMACRO** en más de una línea, antefija cada nuevo carácter de línea con una barra diagonal inversa (como una \# definición en el lenguaje C). Por ejemplo:
 
@@ -89,7 +89,7 @@ Observe los tres caracteres de barra diagonal inversa al final de la línea. Los
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: d72371f9-fe55-468d-b15b-0f8948674619
 title: Bytes de longitud y valor codificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea44ec9892e9407cbe587dbb60219b758ac95392e64dfabcf4866e02a1ad9343
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b45eaec36875446d7493f37fc150f7b5f9d1a59c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118904484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160750"
 ---
 # <a name="encoded-length-and-value-bytes"></a>Bytes de longitud y valor codificados
 

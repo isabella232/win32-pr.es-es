@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c3357322b2f05ba5d9abfd51dbb7d53778cabcd5dbf6f8163af0163e8cce07f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d71149bfeceeb6c17cafa27f56bb15bb184ead06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118611511"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968708"
 ---
 # <a name="randomdelay-calendartriggertype-element"></a>Elemento RandomDelay (calendarTriggerType)
 

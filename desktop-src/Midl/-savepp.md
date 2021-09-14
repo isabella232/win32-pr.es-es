@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c574d1032d9e392973478bc1df1e22cde6a49145b6f4775d928aac0b35e6988b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5d3ab7032768cacfab6415548a09def453ab4f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159710"
 ---
 # <a name="savepp-switch"></a>Modificador /savePP
 
@@ -31,11 +31,11 @@ midl /savePP
 
 Este modificador no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este modificador permite a los desarrolladores distinguir lo que está analizando el compilador midl y es útil para la depuración. La salida del preprocesador se escribe en uno o varios archivos temporales en el directorio indicado por la variable de entorno TEMP. El nombre del archivo de salida, o archivos, sigue una convención de nomenclatura de MID \* .tmp. Tenga en cuenta que una sola compilación puede generar varios flujos de entrada preprocesados; Esto se debe a que la importación de un archivo IDL, en lugar de usar **\# ,** provoca una ejecución de preprocesador independiente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

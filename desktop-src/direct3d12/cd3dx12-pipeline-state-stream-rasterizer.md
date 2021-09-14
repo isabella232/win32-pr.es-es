@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_PIPELINE_STATE_STREAM_RASTERIZER estructura (D3dx12. h)
-description: Una estructura de aplicación auxiliar que se usa para describir una descripción de rasterizador como un solo objeto adecuado para una descripción de flujo.
+title: CD3DX12_PIPELINE_STATE_STREAM_RASTERIZER estructura (D3dx12.h)
+description: Estructura auxiliar que se usa para describir una descripción de rasterizador como un único objeto adecuado para una descripción de secuencia.
 ms.assetid: 650C2DA3-63FB-44D1-BE9A-E21E13DA24DB
 keywords:
-- Estructura de CD3DX12_PIPELINE_STATE_STREAM_RASTERIZER
+- CD3DX12_PIPELINE_STATE_STREAM_RASTERIZER estructura
 topic_type:
 - apiref
 api_name:
@@ -16,15 +16,15 @@ ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: f656ad354430b00e757ece0aa2ce482de1f06e2e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698187"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969852"
 ---
-# <a name="cd3dx12_pipeline_state_stream_rasterizer-structure"></a>\_Estructura del \_ \_ rasterizador de flujo de estado de CANALización de CD3DX12 \_
+# <a name="cd3dx12_pipeline_state_stream_rasterizer-structure"></a>Estructura RASTERIZER de FLUJO DE ESTADO DE \_ \_ CANALIZACIÓN \_ CD3DX12 \_
 
-Una estructura de aplicación auxiliar que se usa para describir una descripción de rasterizador como un solo objeto adecuado para una descripción de flujo.
+Estructura auxiliar que se usa para describir una descripción de rasterizador como un único objeto adecuado para una descripción de secuencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,41 +40,41 @@ struct CD3DX12_PIPELINE_STATE_STREAM_RASTERIZER {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
-**\_ \_ \_ Rasterizador de flujo de estado de CANALización de CD3DX12 \_**
+**RASTERIZADOR DE FLUJO DE ESTADO DE \_ \_ CANALIZACIÓN \_ CD3DX12 \_**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de un rasterizador de \_ flujo de estado de la canalización CD3DX12 \_ \_ \_ .
+Crea una nueva instancia sin inicializar de un RASTERIZER DE FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ \_ CD3DX12. \_
 
 </dd> <dt>
 
-**\_Rasterizador de flujo de estado de canalización de CD3DX12 \_ \_ \_ (CD3DX12 \_ rasterizador \_ DESC const &i)**
+**RASTERIZER DE FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ \_ \_ CD3DX12(CD3DX12 \_ RASTERIZER \_ DESC const &i)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ rasterizador de flujo de estado de canalización de CD3DX12 \_ \_ \_ , inicializada con un tipo de subobjeto de **D3D12 de \_ \_ \_ \_ tipo \_ de subobjeto de estado de canalización de** y datos de subobjeto copiados de *i*, una estructura de [**\_ \_ DESC del rasterizador CD3DX12**](cd3dx12-rasterizer-desc.md) .
+Crea una nueva instancia de UN RASTERIZER DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12, inicializado con un \_ tipo de subobjeto D3D12 PIPELINE STATE SUBOBJECT TYPE RASTERIZER y datos de subobjeto copiados de i , una estructura \_ \_ \_ [**CD3DX12 \_ RASTERIZER \_ DESC.**](cd3dx12-rasterizer-desc.md) **\_ \_ \_ \_ \_** 
 
 </dd> <dt>
 
-**Operator = (CD3DX12 \_ rasterizador \_ DESC const& i)**
+**operator=(CD3DX12 \_ RASTERIZER \_ DESC const& i)**
 </dt> <dd>
 
 Operador de asignación de copia.
 
 </dd> <dt>
 
-**Operator CD3DX12 \_ rasterizator \_ DESC () Const**
+**operador CD3DX12 \_ RASTERIZER \_ DESC() const**
 </dt> <dd>
 
-Conversión implícita a una [**estructura \_ \_ DESC de rasterizador CD3DX12**](cd3dx12-rasterizer-desc.md) .
+Conversión implícita a una [**estructura \_ \_ DESC de RASTERIZER CD3DX12.**](cd3dx12-rasterizer-desc.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-\_ \_ \_ \_ El rasterizador de flujo de estado de canalización de CD3DX12 es una especialización de TypeDef de la plantilla de [**\_ \_ \_ \_ subobjeto de flujo de estado de canalización CD3DX12**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
+CD3DX12 PIPELINE STATE STREAM RASTERIZER es una especialización typedef de la plantilla \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
 
 
 ```C++
@@ -91,21 +91,21 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<CD3DX12_RASTERIZER_DESC, D3D12_P
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**Subobjeto de \_ flujo de estado de canalización CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
+[**SUBOBJETO CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**\_Tipo de \_ subobjeto de estado de CANALización D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE \_ SUBOBJETO DE ESTADO \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb887997642b0d0ff81314d6cf81dc148e57547727a09b1fe646f04d0391f967
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2936401d59bb8c2c2bcfdcffce27ba9ed978d506
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119014123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159721"
 ---
 # <a name="osf-switch"></a>Modificador /osf
 
@@ -31,7 +31,7 @@ midl /osf
 
 Este modificador no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use este modificador si la aplicación requiere una compatibilidad estricta con OSF DCE por motivos de portabilidad.
 
@@ -43,7 +43,7 @@ Las siguientes características extendidas por Microsoft no están disponibles a
 -   Definiciones de interfaz para objetos COM.
 -   Nombres de interfaz con más de 17 caracteres.
 -   Atributos de solo MIDL, como las referencias de conexión, las referencias de usuario y las extensiones de la biblioteca de tipos (ODL). [**\_**](wire-marshal.md) [**\_**](user-marshal.md)
--   Usar palabras clave ACF en un archivo IDL (la opción midl **/app \_ config).**
+-   Usar palabras clave de ACF en un archivo IDL (la opción midl **/app \_ config).**
 -   Funciones de devolución de llamada estáticas en el cliente.
 -   Atributo [**asincrónico.**](async.md)
 -   [**cpp \_ quote**](cpp-quote.md) y **\# pragma midl \_ echo**.
@@ -79,7 +79,7 @@ Las siguientes extensiones de lenguaje C/C++ no están disponibles al compilar c
 
 **midl /osf /app \_ config filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

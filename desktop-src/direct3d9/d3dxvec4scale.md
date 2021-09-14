@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 12f030330d01e004d80de92920c84f8cc8ffc47fe009582d64d34497bb684418
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a29ee7b8519c802deb0542b6b7ba3ea22692f36d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120118965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969712"
 ---
 # <a name="d3dxvec4scale-function"></a>Función D3DXVec4Scale
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
 Puntero a la [**estructura D3DXVECTOR4**](d3dxvector4.md) que es el vector escalado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec4Scale** se puede usar como parámetro para otra función.
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

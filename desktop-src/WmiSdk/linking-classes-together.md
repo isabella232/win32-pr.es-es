@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Vincular clases juntas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da48ab6b816eece1184915026ca32ed152b896f0555ca6c546d0b8ed4d6a7640
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89c36956d20d9390462577332e7ac7b644d4ffc7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119131227"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967168"
 ---
 # <a name="linking-classes-together"></a>Vincular clases juntas
 

@@ -5,11 +5,11 @@ title: Estado de guardado y restauración de bloques de estado (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 104010f2ea057870b70e9887e5b325f1de68c463
-ms.sourcegitcommit: 8d7ce0c4827f8a4fd501cc6487f1a8360e944577
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122767659"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160430"
 ---
 # <a name="state-blocks-save-and-restore-state-direct3d-9"></a>Estado de guardado y restauración de bloques de estado (Direct3D 9)
 

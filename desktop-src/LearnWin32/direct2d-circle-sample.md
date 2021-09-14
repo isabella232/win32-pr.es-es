@@ -4,12 +4,12 @@ description: En esta aplicación de ejemplo se muestra cómo dibujar un círculo
 ms.assetid: C4413C3D-FE7E-4DA1-83CF-EDD23E2DB3F8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec0c2b275f97a2204a7dc2b55c79c880579e257ba0eec15869dbc4659ee151c6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 142ed6f52fda382ea73f5c1494569f2e69f8e37e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119870055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159994"
 ---
 # <a name="direct2d-circle-sample"></a>Ejemplo de círculo de Direct2D
 
@@ -17,9 +17,9 @@ En esta aplicación de ejemplo se muestra cómo dibujar un círculo mediante Dir
 
 ## <a name="description"></a>Descripción
 
-La aplicación de ejemplo Direct2D Circle dibuja un círculo, como se muestra en la captura de pantalla siguiente. Este ejemplo se describe en [Módulo 3: Windows Gráficos](module-3---windows-graphics.md).
+La aplicación de ejemplo Direct2D Circle dibuja un círculo, como se muestra en la captura de pantalla siguiente. Este ejemplo se describe en [Módulo 3:](module-3---windows-graphics.md)Windows Gráficos .
 
-![una captura de pantalla del programa del círculo.](images/graphics08.png)
+![una captura de pantalla del programa de círculo.](images/graphics08.png)
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
@@ -28,6 +28,6 @@ Este ejemplo está disponible [aquí.](https://github.com/microsoft/Windows-clas
 ## <a name="related-topics"></a>Temas relacionados
 
 * [Aprender a programar para Windows: código de ejemplo](learn-to-program-for-windows--sample-code.md)
-* [Primer programa direct2D](your-first-direct2d-program.md)
+* [Primer programa de Direct2D](your-first-direct2d-program.md)
 * [Módulo 3: Windows gráficos](module-3---windows-graphics.md)
 

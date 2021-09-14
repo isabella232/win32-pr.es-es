@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102745
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8165b9f8bc016b5566184562c0676711fd861808c86f6683e0086ec418874536
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 18482637295b74b8abdffe74de8468c45a891e84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119946495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965888"
 ---
 # <a name="esentslvdatabasemissingexception-methods"></a>Métodos de EsentSLVDatabaseMissingException 
 
@@ -78,7 +78,7 @@ El [tipo EsentSLVDatabaseMissingException](./esentslvdatabasemissingexception-cl
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

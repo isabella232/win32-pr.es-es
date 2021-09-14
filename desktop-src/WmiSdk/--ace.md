@@ -21,12 +21,12 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: ad6713cea39f02e59b49b69e2fa2a8a060cb7a6f78d3b6143bc2c2dbc0de1965
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea2a765225145ce3d44e0aff89aeaca0a7563e0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967192"
 ---
 # <a name="__ace-class"></a>\_\_Ace (clase)
 
@@ -49,7 +49,7 @@ class  __ACE : __SecurityRelatedClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **\_ \_ clase ACE** tiene estos tipos de miembros:
 
@@ -83,7 +83,7 @@ Tipo de datos:
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Marcas de bits que especifican la herencia de la ACE. Para obtener más información y una descripción de las marcas, vea AceFlags property in the Win32 ACE class **(Propiedad AceFlags** en la [**clase \_ ACE de Win32).**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
+Marcas de bits que especifican la herencia de la ACE. Para obtener más información y una descripción de las marcas, vea La propiedad **AceFlags** en la [**clase \_ ACE de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Administrador de confianza de la entrada ace representada por esta instancia de 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta clase proporciona las propiedades heredadas por la clase [**\_ ACE de Win32,**](/previous-versions/windows/desktop/secrcw32prov/win32-ace) que es miembro de la clase [**\_ SecurityDescriptor de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Para obtener más información, vea [Objetos de descriptor de seguridad WMI](wmi-security-descriptor-objects.md) y Cambiar la seguridad de acceso en objetos [protegibles.](changing-access-security-on-securable-objects.md) Para obtener más información sobre las ACE, [vea Access Control Components](/windows/desktop/SecAuthZ/access-control-components).
 
@@ -160,7 +160,7 @@ Esta clase proporciona las propiedades heredadas por la clase [**\_ ACE de Win32
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -168,7 +168,7 @@ Esta clase proporciona las propiedades heredadas por la clase [**\_ ACE de Win32
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

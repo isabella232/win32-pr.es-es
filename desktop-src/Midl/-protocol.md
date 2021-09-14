@@ -13,11 +13,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 555482677afff83d9f52e06c7b8e445504d222c8
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122887381"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159716"
 ---
 # <a name="protocol-switch"></a>Modificador /protocol
 
@@ -27,7 +27,7 @@ El **modificador /protocol** especifica qué protocolo de conexión es compatibl
 midl /protocol (dce | ndr64 | all)
 ```
 
-## <a name="switch-options"></a>Cambiar opciones
+## <a name="switch-options"></a>Opciones de cambio
 
 <dl> <dt>
 
@@ -54,7 +54,7 @@ El código auxiliar generado solo admite el protocolo DCE.
 
 </dt> <dd>
 
-El código auxiliar generado solo admite el protocolo Microsoft TLS64.
+El código auxiliar generado solo admite el protocolo TLS64 de Microsoft.
 
 </dd> <dt>
 
@@ -69,15 +69,15 @@ El código auxiliar generado admite todos los protocolos disponibles para un ent
 
 </dd> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Rpc serializa y desmarúa los datos según un protocolo de conexión estricto, también denominado sintaxis de transferencia, que define la representación de la conexión de datos, como el orden en que se serializan los miembros de datos, la alineación de los datos en la conexión, información adicional incluida con los datos, entre otros. Rpc de Microsoft es compatible con el protocolo OMISIÓN (representación de datos de red) de OSF DCE. En la versión de 64 bits de Windows XP, Microsoft presenta un protocolo experimental CELA64 optimizado para transferir datos de 64 bits. SMTP64 no es compatible con versiones anteriores con el protocolo DCE.
+Las referencias RPC y los datos no semarshals según un protocolo de conexión estricto, también denominado sintaxis de transferencia, que define la representación de la conexión de datos, como el orden en que se serializan los miembros de datos, la alineación de los datos en la conexión, la información adicional incluida con los datos, entre otros. Rpc de Microsoft es compatible con el protocolo TLS (representación de datos de red) de OSF DCE. En la versión de 64 bits de Windows XP, Microsoft presenta un protocolo experimental KERBEROS64 optimizado para transferir datos de 64 bits. SMTP64 no es compatible con versiones anteriores del protocolo DCE.
 
-El **protocolo dce** es compatible con la sintaxis de transferencia OMISIÓN de OSF DCE. Este protocolo está optimizado para transferir datos de 32 bits.
+El **protocolo dce** es compatible con la sintaxis de transferencia de QL de OSF DCE. Este protocolo está optimizado para transferir datos de 32 bits.
 
-El **protocolo facult64** solo se admite actualmente cuando se usa junto con el [**modificador /win64.**](-win64.md) Si un cliente de vice64 solo intenta conectarse a un servidor solo dce, o viceversa, la llamada se rechaza con RPC \_ S \_ \_ UNSUPPORTED TRANS \_ SYN.
+El **protocolo press64** solo se admite actualmente cuando se usa junto con el [**modificador /win64.**](-win64.md) Si un solo cliente biz64 intenta conectarse a un servidor solo dce, o viceversa, la llamada se rechaza con RPC \_ S \_ \_ UNSUPPORTED TRANS \_ SYN.
 
-La **opción all** crea un código auxiliar que puede usar cualquier protocolo disponible. En el caso de los códigos auxiliares de 32 bits, el único protocolo disponible actualmente es DCE. En el caso de los códigos auxiliares de 64 bits, creados mediante el modificador [**/win64,**](-win64.md) están disponibles DCE y GAS64.
+La **opción all** crea un código auxiliar que puede usar cualquier protocolo disponible. En el caso de los códigos auxiliares de 32 bits, el único protocolo disponible actualmente es DCE. En el caso de los códigos auxiliares de 64 bits, creados mediante el modificador [**/win64,**](-win64.md) están disponibles DCE y MUTACIÓN64.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -87,7 +87,7 @@ La **opción all** crea un código auxiliar que puede usar cualquier protocolo d
 
 <dl> <dt>
 
-[**/&lt;sistema&gt;**](-system-.md)
+[**/&lt;Sistema&gt;**](-system-.md)
 </dt> </dl>
 
  

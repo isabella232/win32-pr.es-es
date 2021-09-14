@@ -4,12 +4,12 @@ description: Exposición de Owner-Drawn de menú
 ms.assetid: 93b51cbb-b7b4-4a38-ba69-d6345a269944
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c84a2630b5227937d4a1c9621360d9fb028676bba03516970f93e314b382035b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e79668115cedd5fb6b8c20b0d4df361d6d1d800
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119860505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160568"
 ---
 # <a name="exposing-owner-drawn-menu-items"></a>Exposición de Owner-Drawn de menú
 

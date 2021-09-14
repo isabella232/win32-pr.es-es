@@ -4,12 +4,12 @@ ms.assetid: 65db8ba5-193c-439b-8e8c-6cb4a9bd4efd
 title: NOTIFICATION_MASK (KtmTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c17391d2b406b3f7a3ee9a3a868bc1b6734050c787fdbb432785e5be0b917468
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f3650c10f619cf45db34d9172476261838897a5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146548"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160028"
 ---
 # <a name="notification_mask"></a>MÁSCARA DE \_ NOTIFICACIÓN
 
@@ -38,7 +38,7 @@ Máscara que indica todos los bits válidos para una notificación de transacci�
 
 
 
-Se llama a esta notificación después de que un cliente llame a [**CommitTransaction**](/windows/desktop/api/Ktmw32/nf-ktmw32-committransaction) y ningún administrador de recursos (RM) admita la confirmación de una sola fase o un administrador de transacciones (TM) superior llame a [**PrePrepareEnlistment**](/windows/desktop/api/KtmW32/nf-ktmw32-preprepareenlistment). Los ADMINISTRADORes reciben esta notificación que indica que deben completar cualquier trabajo que pueda provocar que otros HSM necesiten dar de alta en una transacción, como vaciar su memoria caché. Después de completar estas operaciones, el rm debe llamar [**a PrePrepareComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-prepreparecomplete). Para recibir esta notificación, el RM también debe admitir **TRANSACTION \_ NOTIFY \_ PREPARE** y **TRANSACTION NOTIFY \_ \_ COMMIT**.
+Se llama a esta notificación después de que un cliente llame a [**CommitTransaction**](/windows/desktop/api/Ktmw32/nf-ktmw32-committransaction) y ningún administrador de recursos (RM) admita la confirmación de una sola fase o un administrador de transacciones superior (TM) llame a [**PrePrepareEnlistment**](/windows/desktop/api/KtmW32/nf-ktmw32-preprepareenlistment). Los ADMINISTRADORes reciben esta notificación que indica que deben completar cualquier trabajo que pueda provocar que otros HSM necesiten dar de alta en una transacción, como vaciar la memoria caché. Después de completar estas operaciones, el rm debe llamar [**a PrePrepareComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-prepreparecomplete). Para recibir esta notificación, el RM también debe admitir **TRANSACTION \_ NOTIFY \_ PREPARE** y **TRANSACTION NOTIFY \_ \_ COMMIT**.
 
 
 </dt> </dl> </dd> <dt>
@@ -64,7 +64,7 @@ Se llama a esta notificación una vez completado el procesamiento **\_ de TRANSA
 
 
 
-Esta notificación indica al RM que complete todo el trabajo asociado a esta alta. Normalmente, el rm libera los bloqueos y libera la información necesaria para revertir la transacción. El rm debe responder llamando a [**la función CommitComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-commitcomplete) cuando haya finalizado estas operaciones.
+Esta notificación indica al RM que complete todo el trabajo asociado a esta alta. Normalmente, el RM libera los bloqueos y libera la información necesaria para revertir la transacción. El rm debe responder llamando a [**la función CommitComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-commitcomplete) cuando haya finalizado estas operaciones.
 
 
 </dt> </dl> </dd> <dt>
@@ -116,7 +116,7 @@ Esta notificación indica a la tm superior que una operación de preparación se
 
 
 
-Esta notificación indica a la tm superior que una operación de confirmación se completó correctamente.
+Esta notificación indica a la TM superior que una operación de confirmación se completó correctamente.
 
 
 </dt> </dl> </dd> <dt>
@@ -134,7 +134,7 @@ Esta notificación indica a la tm superior que una operación de reversión se c
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_RECOVER"></span><span id="transaction_notify_recover"></span>**RECUPERACIÓN \_ DE NOTIFICACIÓN DE \_ TRANSACCIÓN**
+<span id="TRANSACTION_NOTIFY_RECOVER"></span><span id="transaction_notify_recover"></span>**TRANSACTION \_ NOTIFY \_ RECOVER**
 </dt> <dd> <dl> <dt>
 
 0x00000100
@@ -220,7 +220,7 @@ Esta notificación indica que la operación de recuperación se ha completado pa
 
 
 
-La transacción especificada está en un estado dudoso. El administrador de transacciones recibe esta notificación durante las operaciones de recuperación cuando se ha preparado una transacción, pero no hay ningún administrador de transacciones (TM) superior disponible. Por ejemplo, cuando una transacción implica una TM remota y ese nodo no está disponible, su nodo no está disponible o el servicio [Coordinador de transacciones distribuidas](/previous-versions/windows/desktop/ms684146(v=vs.85)) local no está disponible, el estado de la transacción es dudoso.
+La transacción especificada está en un estado dudoso. El administrador de recursos recibe esta notificación durante las operaciones de recuperación cuando se ha preparado una transacción, pero no hay ningún administrador de transacciones (TM) superior disponible. Por ejemplo, cuando una transacción implica una TM remota y ese nodo no está disponible, su nodo no está disponible o el servicio [Coordinador de transacciones distribuidas](/previous-versions/windows/desktop/ms684146(v=vs.85)) local no está disponible, el estado de la transacción es dudoso.
 
 
 </dt> </dl> </dd> <dt>
@@ -272,11 +272,11 @@ Reservado.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                            |
-| Header<br/>                   | <dl> <dt>KtmTypes.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>KtmTypes.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

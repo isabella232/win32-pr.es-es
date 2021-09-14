@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ec879ad172b5cfc615a67797dd91c1461d844444326df6485b120179f6ecb74e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a6873a6aee9e31b1f28ba2755b1869cddb177306
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119853875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970699"
 ---
 # <a name="rep---ps"></a>rep - ps
 
 Iniciar un representante... [endrep: bloque ps.](endrep---ps.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -33,7 +33,7 @@ Iniciar un representante... [endrep: bloque ps.](endrep---ps.md)
 
 donde i \# es un registro entero que especifica el recuento de repeticiones en el componente .x. Vea [Registro de enteros constantes.](dx9-graphics-reference-asm-ps-registers-constant-integer.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -48,8 +48,8 @@ donde i \# es un registro entero que especifica el recuento de repeticiones en e
 -   i \# .x especifica el recuento de iteraciones. El intervalo legal es \[ 0, 255 \] . Tenga en cuenta que esta instrucción no incrementa ni disminuye el valor de i \# .x.
 -   El bloque repeat no usa i \# .yzw.
 -   Los bloques de repetición pueden estar anidados. Vea [Flow control de datos](dx9-graphics-reference-asm-ps-instructions-flow-control.md).
--   Los bloques de repetición pueden estar completamente dentro de un bloque if \* o rodeando por completo. No se permite ningún estrango.
--   El uso de la misma i para instrucciones de representantes diferentes o anidadas es \# perfecto: cada bucle iterará en función del recuento especificado.
+-   Los bloques de repetición pueden estar completamente dentro de un bloque if \* o rodearse completamente. No se permite ningún estrango.
+-   El uso de la misma i para instrucciones de representantes diferentes o anidadas está bien: cada bucle \# iterará en función del recuento especificado.
 
 ## <a name="example"></a>Ejemplo
 

@@ -4,12 +4,12 @@ description: Cada atributo de puntero (\ ref\ , \ unique\ y \ ptr\ ) tiene carac
 ms.assetid: 25a609cd-efe7-4cbb-b80e-b6a3ad8cda38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bcc6649dc663d7b029a7d7f345719330719d2eb19b6b7a63fa02797c17df16c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c7710fb3c39702b2b2fdb789ed1218dc88d44ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118927500"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161037"
 ---
 # <a name="pointer-attributes-applied-to-the-parameter"></a>Atributos de puntero aplicados al parámetro
 

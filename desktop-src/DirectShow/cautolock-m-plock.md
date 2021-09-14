@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c7ec0c0ca50147f5bb37f975f9f69c9b433168d622b0a4f12cacfc5934bcdd59
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adf70b38cfd9502248bca658e71d968cdd48aa0b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119540175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160214"
 ---
-# <a name="cautolockm_plock-member"></a>Miembro PLock de CAutoLock::m \_
+# <a name="cautolockm_plock-member"></a>Miembro CAutoLock::m \_ pLock
 
 Sección crítica para este bloqueo.
 
@@ -47,7 +47,7 @@ CCritSec *m_pLock;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

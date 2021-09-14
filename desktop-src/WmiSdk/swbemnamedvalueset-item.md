@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 688c78aa644b7a5eab3fd6be9ae806ec254a7a50647dc9e87539e96049d6df04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4932409fa7b8ac9e0f326e5de7e8ecf0f89c2b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967088"
 ---
 # <a name="swbemnamedvaluesetitem-method"></a>Método SWbemNamedValueSet.Item
 
@@ -48,11 +48,11 @@ objNamedValue = .Item( _
 *strName* \[ En\]
 </dt> <dd>
 
-Obligatorio. Nombre del valor que se recuperará.
+Necesario. Nombre del valor que se recuperará.
 
 </dd> <dt>
 
-*iFlags* \[ in, opcional\]
+*iFlags* \[ en, opcional\]
 </dt> <dd>
 
 Reservado. Este valor debe ser cero si se especifica.
@@ -90,14 +90,14 @@ No hay suficiente memoria para completar la operación.
 
 </dd> <dt>
 
-**wbemErrNotFound** : 2147749890 (0x80041002)
+**wbemErrNotFound:** 2147749890 (0x80041002)
 </dt> <dd>
 
 No se encontró el elemento solicitado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener ejemplos de cómo agregar y recuperar valores con nombre, vea [**SWbemNamedValue.Value**](swbemnamedvalue-value.md).
 
@@ -105,11 +105,11 @@ Para obtener ejemplos de cómo agregar y recuperar valores con nombre, vea [**SW
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemNamedValueSet<br/>                                                    |

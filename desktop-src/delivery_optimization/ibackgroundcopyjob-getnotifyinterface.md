@@ -17,12 +17,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ef8eab6c101cadde2b715c48fe3dae2443e72e93f623b397036e2467bcbf0b5b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6586a90de5783ceb24e5a7677f699a9cf6dfa60c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119755385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970096"
 ---
 # <a name="ibackgroundcopyjobgetnotifyinterface-method"></a>IBackgroundCopyJob::GetNotifyInterface (método)
 
@@ -46,7 +46,7 @@ HRESULT GetNotifyInterface(
 *ppNotifyInterface* \[ out\]
 </dt> <dd>
 
-Puntero de interfaz a la implementación de la [**interfaz IBackgroundCopyCallback.**](ibackgroundcopycallback.md) Cuando haya terminado, suelte *ppNotifyInterface*.
+Puntero de interfaz a la implementación de la [**interfaz IBackgroundCopyCallback.**](ibackgroundcopycallback.md) Cuando haya terminado, libere *ppNotifyInterface*.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Este método devuelve los siguientes **valores HRESULT,** así como otros.
 
 | Código devuelto                                                                              | Descripción                                                           |
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <dl> <dt>S_OK**</dt> </dl> | El puntero de la interfaz de notificación se recuperó correctamente.<br/> |
+| <dl> <dt>S_OK**</dt> </dl> | El puntero de interfaz de notificación se recuperó correctamente.<br/> |
 
 
 
@@ -72,15 +72,15 @@ Este método devuelve los siguientes **valores HRESULT,** así como otros.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob se define como 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

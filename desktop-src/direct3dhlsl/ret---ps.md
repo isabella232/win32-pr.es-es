@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b77d2bb63655a83716d74621a5ece097259b0a90461f902801c375a079f118f6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b0535a4fcd66a1872b5eaa9ec97c292de710b48c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119853785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970695"
 ---
 # <a name="ret---ps"></a>ret - ps
 
 Toma la dirección de una instrucción de la pila de direcciones de devolución y continúa la ejecución desde ella. En el caso de la función main, esta instrucción detiene la ejecución del sombreador.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,7 +31,7 @@ Toma la dirección de una instrucción de la pila de direcciones de devolución 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

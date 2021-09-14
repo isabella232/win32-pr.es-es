@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.inde
 ms:contentKeyID: 55103257
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e8f35e37aa789580204bf69474825b0dee7501f936d93f8711e30c119d0ce10a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a2ef11be23a0c17dd7fc9b85008d390c5d7761c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965779"
 ---
 # <a name="indexinfo-properties"></a>Propiedades de IndexInfo
 

@@ -1,5 +1,5 @@
 ---
-description: 'WorldToObject4x3: matriz para transformar del espacio del mundo al espacio de objetos.'
+description: 'WorldToObject4x3: matriz para la transformación del espacio del mundo al espacio de objetos.'
 ms.assetid: ''
 title: WorldToObject4x3
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - WorldToObject4x3
 api_type:
 - NA
-ms.openlocfilehash: 26775e10723a768aa5b526fadfae55414dafa2311b020b1683a99e2b2139dc30
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 334a79352345fb35fbbafe68248a221bdaab9f6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119565565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160448"
 ---
 # <a name="worldtoobject4x3"></a>WorldToObject4x3
 
-Matriz para transformar del espacio del mundo al espacio de objetos. Espacio de objeto hace referencia al espacio de la estructura de aceleración de nivel inferior actual.
+Matriz para la transformación del espacio del mundo al espacio de objetos. Espacio de objeto hace referencia al espacio de la estructura de aceleración de nivel inferior actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,9 +33,9 @@ void WorldToObject4x3();
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La matriz es una transformación de **la matriz WorldToObject3x4.**
+La matriz es una contracción de **la matriz WorldToObject3x4.**
 
 Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
@@ -47,7 +47,7 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador de rayt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

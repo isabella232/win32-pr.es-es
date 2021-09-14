@@ -4,12 +4,12 @@ ms.assetid: vs|directx_sdk|~\effectinstance.htm
 title: EffectInstance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c2db15886dc940fc22c31442d7877270e1c4f5f3ece5c2626034948360e3fc8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: be5eb81824372808c93ebd3d979b04d7cea54006
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969700"
 ---
 # <a name="effectinstance"></a>EffectInstance
 
@@ -29,7 +29,7 @@ Donde:
 -   EffectFilename: nombre de archivo del efecto.
 -   \[ ... \] - Cualquier plantilla de archivo .x se puede usar aquí. Esto hace que la arquitectura sea extensible.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

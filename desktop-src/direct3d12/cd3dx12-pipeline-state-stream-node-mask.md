@@ -15,14 +15,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f4850ff986f2006c506d79a8ece1ced873529c2a4939869cd704a4b7c3c4b03
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f9c364ecd20459d8c20bdd3d30b969cc3b9ae46d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120119685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969864"
 ---
-# <a name="cd3dx12_pipeline_state_stream_node_mask-structure"></a>Estructura DE MÁSCARA DE NODO DE FLUJO DE ESTADO DE \_ \_ CANALIZACIÓN \_ \_ CD3DX12 \_
+# <a name="cd3dx12_pipeline_state_stream_node_mask-structure"></a>Estructura DE MÁSCARA DE NODO DE FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ \_ CD3DX12 \_ \_
 
 Estructura auxiliar que se usa para describir una máscara de nodo como un único objeto adecuado para una descripción de secuencia.
 
@@ -40,21 +40,21 @@ struct CD3DX12_PIPELINE_STATE_STREAM_NODE_MASK {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
-**MÁSCARA DE NODO DE FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ \_ CD3DX12 \_ \_**
+**MÁSCARA DE NODO DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12 \_ \_ \_ \_ \_**
 </dt> <dd>
 
-Crea una nueva instancia sin inicializar de una MÁSCARA DE NODO DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12. \_ \_ \_ \_ \_
+Crea una nueva instancia sin inicializar de UNA MÁSCARA DE NODO DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12. \_ \_ \_ \_ \_
 
 </dd> <dt>
 
 **CD3DX12 \_ PIPELINE STATE STREAM NODE \_ \_ \_ \_ MASK(UINT const &i)**
 </dt> <dd>
 
-Crea una nueva instancia de UNA MÁSCARA DE NODO DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12, inicializada con un \_ \_ tipo de subobjeto \_ \_ \_ **D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT TYPE NODE \_ \_ \_ MASK**   y datos de subobjeto copiados de i , una máscara de nodo UINT.
+Crea una nueva instancia de UN OBJETO CD3DX12 PIPELINE STATE STREAM NODE MASK, inicializado con un \_ \_ tipo de subobjeto \_ \_ \_ **D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT TYPE NODE \_ \_ \_ MASK** y datos de subobjetos  copiados de i , una máscara de nodo UINT.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Conversión implícita en una **máscara de nodo UINT.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 CD3DX12 PIPELINE STATE STREAM NODE MASK es una especialización typedef de la plantilla \_ \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
 
@@ -95,7 +95,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<UINT, D3D12_PIPELINE_STATE_SUBOB
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -105,7 +105,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<UINT, D3D12_PIPELINE_STATE_SUBOB
 [**SUBOBJETO CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**TIPO DE \_ SUBOBJETO DE ESTADO \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE SUBOBJETO DE ESTADO \_ \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

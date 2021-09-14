@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 890f49a0609367dcf91c91146f786568fdd83f0f207f7aa69d8dd7c4019b4d1d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c591b92b64641e169023f30663d8f5c6ef8a6c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118507388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970483"
 ---
 # <a name="texture2dloadintintuint-function"></a>Función Texture2D::Load(int,int,uint)
 
@@ -74,7 +74,7 @@ Escriba:
 
 El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto Texture2D.**](sm5-object-texture2d.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

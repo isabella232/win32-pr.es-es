@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8451e3332b61d7e6e993de7df0832a78c0c45c0240633fd5f421998816f7f26f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3c4f2e8e57efdfe0681b8ae691e0b5de42624e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119122066"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969684"
 ---
 # <a name="id3dxanimationsetgetperiodicposition-method"></a>Método ID3DXAnimationSet::GetPeriodicPosition
 
@@ -55,7 +55,7 @@ Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 Posición de tiempo medida en el período de tiempo del conjunto de animación. Este valor se delimitará por el período del conjunto de animación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La posición de hora devuelta por este método se puede usar como parámetro PeriodicPosition de [**ID3DXAnimationSet::GetSRT**](id3dxanimationset--getsrt.md).
 

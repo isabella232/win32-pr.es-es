@@ -1,5 +1,5 @@
 ---
-description: Obtiene información de escala para un fotograma clave específico del conjunto de animaciones.
+description: Obtenga información de escala para un fotograma clave específico del conjunto de animaciones.
 ms.assetid: 7f4a0bf3-2922-4fd7-bb85-b387d3e983a7
 title: Método ID3DXKeyframedAnimationSet::GetScaleKey (D3dx9anim.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 199b5596e05bd013f3384c2a182bbe8e905cb609ae869c194d811fb97d3d254b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58cbd432404fcd511140a7368999161f5e44f77f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119121162"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966720"
 ---
 # <a name="id3dxkeyframedanimationsetgetscalekey-method"></a>Método ID3DXKeyframedAnimationSet::GetScaleKey
 
-Obtiene información de escala para un fotograma clave específico del conjunto de animaciones.
+Obtenga información de escala para un fotograma clave específico del conjunto de animaciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,7 +65,7 @@ Fotograma clave.
 
 Tipo: **[ **LPD3DXKEY \_ VECTOR3**](d3dxkey-vector3.md)**
 
-Puntero a los datos de escala. Vea [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md).
+Puntero a los datos de escala. Vea [**D3DXKEY \_ VECTOR3.**](d3dxkey-vector3.md)
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntero a los datos de escala. Vea [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

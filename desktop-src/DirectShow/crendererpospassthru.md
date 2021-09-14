@@ -1,5 +1,5 @@
 ---
-description: La clase CRendererPosPassThru controla los comandos de búsqueda para los filtros de representador, pasandolos de nivel superior al filtro siguiente.
+description: La clase CRendererPosPassThru controla los comandos de búsqueda para los filtros del representador, pasándolos de nivel superior al filtro siguiente.
 ms.assetid: 7b532177-939c-4cb7-a6fa-c0133f65c768
 title: CRendererPosPassThru (clase, Ctlutil.h)
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 68d880a50b66190c64de19f98fd4ac9f06dffa79932d19c7f90654689e51811c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7154dde8adefdb3292107e9c33d7b6a2b54f6af0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119831465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160188"
 ---
 # <a name="crendererpospassthru-class"></a>CRendererPosPassThru (clase)
 
 ![crendererpospassthru (jerarquía de clases)](images/cutil14.png)
 
-La `CRendererPosPassThru` clase controla los comandos de búsqueda para los filtros de representador, pasándolos de nivel superior al filtro siguiente.
+La clase controla los comandos de búsqueda para los filtros `CRendererPosPassThru` del representador, pasándolos de nivel superior al filtro siguiente.
 
 Esta clase se deriva de la [**clase CPosPassThru.**](cpospassthru.md) Agrega compatibilidad para almacenar en caché las marcas de tiempo de los ejemplos a medida que llegan. Use esta clase de la misma manera que la **clase CPosPassThru.** Consulte la documentación **de CPosPassThru** para obtener más información.
 
@@ -46,8 +46,8 @@ Para obtener un ejemplo de cómo usar esta clase, consulte el código fuente [**
 | [**CRendererPosPassThru**](crendererpospassthru-crendererpospassthru.md) | Método constructor.                                                 |
 | [**GetMediaTime**](crendererpospassthru-getmediatime.md)                 | Recupera las marcas de tiempo del ejemplo actual.                    |
 | [**RegisterMediaTime**](crendererpospassthru-registermediatime.md)       | Almacena en caché las marcas de tiempo del ejemplo actual.                     |
-| [**ResetMediaTime**](crendererpospassthru-resetmediatime.md)             | Restablece las marcas de tiempo almacenadas en caché en cero.                              |
-| [**Eos**](crendererpospassthru-eos.md)                                   | Actualiza las marcas de tiempo almacenadas en caché después de una notificación de fin de flujo. |
+| [**ResetMediaTime**](crendererpospassthru-resetmediatime.md)             | Restablece las marcas de tiempo almacenadas en caché a cero.                              |
+| [**EOS**](crendererpospassthru-eos.md)                                   | Actualiza las marcas de tiempo almacenadas en caché después de una notificación de fin de secuencia. |
 
 
 

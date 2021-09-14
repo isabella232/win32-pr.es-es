@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 759a0d66c3de0ad622a494c8f2d1eef89ada16a8c84aa19b054b1393f6f82b27
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da1a1722fea0c601cf0188c4a2c2530ee6afb92a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119757745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160279"
 ---
 # <a name="camschedulegetadvisecount-method"></a>Método CAMSchedule.GetAdviseCount
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el número de solicitudes de asesoramiento pendientes.
+Devuelve el número de solicitudes de aviso pendientes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Devuelve el número de solicitudes de asesoramiento pendientes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

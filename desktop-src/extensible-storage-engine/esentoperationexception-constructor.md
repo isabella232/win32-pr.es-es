@@ -1,6 +1,6 @@
 ---
-description: Más información sobre el constructor EsentOperationException
-title: Constructor EsentOperationException
+description: 'Más información sobre: Constructor esentOperationException'
+title: Constructor esentOperationException
 TOCTitle: 'EsentOperationException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentOperationException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentoperationexception.esentoperationexception(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: faa3dbac425e8503b38916c787737f285ce205acb3926c7b796f81d3937a5263
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a35cd416e79f6bafa1867d8466ee9d80c53bbd7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117899026"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966015"
 ---
-# <a name="esentoperationexception-constructor"></a>Constructor EsentOperationException
+# <a name="esentoperationexception-constructor"></a>Constructor esentOperationException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,6 +1,6 @@
 ---
 title: DTM_GETMCSTYLE mensaje (Commctrl.h)
-description: Obtiene el estilo de un control selector de fecha y hora (DTP). Envíe este mensaje explícitamente o mediante la macro \_ DateTime GetMonthCalStyle.
+description: Obtiene el estilo de un control selector de fecha y hora (DTP). Envíe este mensaje explícitamente o mediante la \_ macro DateTime GetMonthCalStyle.
 ms.assetid: 8983898f-e23a-4247-838c-56364f695429
 keywords:
 - DTM_GETMCSTYLE controles de Windows mensaje
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 639c573f8a49b0ea2dd4b313b11620fa7fa4bed6c158b85fef3afffcee03bf3d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8cae82d271d0e9aece54046527dfa3bedcef657f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119878095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892324"
 ---
 # <a name="dtm_getmcstyle-message"></a>Mensaje \_ GETMCSTYLE de DTM
 
@@ -41,7 +41,7 @@ Debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de estilo del control. Para obtener más información, vea [Estilos de control de calendario mensual.](month-calendar-control-styles.md)
+Devuelve el valor de estilo del control. Para obtener más información, vea [Estilos de control de calendario mensual](month-calendar-control-styles.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Devuelve el valor de estilo del control. Para obtener más información, vea [Es
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

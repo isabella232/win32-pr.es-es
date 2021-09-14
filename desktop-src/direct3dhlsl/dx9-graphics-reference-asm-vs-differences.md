@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 411a3a742fca508839651d56912fa00b2a6d8b82908b159694a3b1eff88f2318
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c74603f9eab4ea91e9220bbaa172c0262aeda99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119982825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966556"
 ---
 # <a name="vertex-shader-differences"></a>Diferencias del sombreador de vértices
 
-## <a name="instruction-slots"></a>Ranuras de instrucción
+## <a name="instruction-slots"></a>Ranuras de instrucciones
 
-Cada versión admite un número diferente de espacios de instrucciones máximos.
+Cada versión admite un número diferente de ranuras de instrucción máximas.
 
 
 
-| Versión  | Número máximo de espacios de instrucciones                                                                                               |
+| Versión  | Número máximo de ranuras de instrucción                                                                                               |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------|
 | vs \_ 1 \_ 1 | 128                                                                                                                               |
 | vs \_ 2 \_ 0 | 256                                                                                                                               |
@@ -35,23 +35,23 @@ Cada versión admite un número diferente de espacios de instrucciones máximos.
 
  
 
-Para obtener información sobre las limitaciones de los sombreadores de software, vea [Sombreadores de software.](dx9-graphics-reference-asm-software-shaders.md)
+Para obtener información sobre las limitaciones de los sombreadores de software, vea [Sombreadores de software](dx9-graphics-reference-asm-software-shaders.md).
 
-## <a name="flow-control-nesting-limits"></a>Flow Límites de anidamiento de controles
+## <a name="flow-control-nesting-limits"></a>Flow Controlar límites de anidamiento
 
--   Vea [Flow límites de anidamiento de controles .](dx9-graphics-reference-asm-vs-instructions-flow-control.md)
+-   Vea [Flow control de anidamiento de controles](dx9-graphics-reference-asm-vs-instructions-flow-control.md).
 
 ## <a name="vs_1_1-features"></a>Frente \_ a \_ 1 1 Características
 
 Nuevas instrucciones:
 
-Vea [Instrucciones: vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-instructions-vs-1-1.md).
+Vea [Instructions - vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-instructions-vs-1-1.md).
 
 Nuevos registros:
 
-Vea [Registros: vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-registers-vs-1-1.md).
+Vea [Registros: frente \_ a \_ 1 1.](dx9-graphics-reference-asm-vs-registers-vs-1-1.md)
 
-## <a name="vs_2_0-features"></a>Vs \_ 2 \_ 0 Features
+## <a name="vs_2_0-features"></a>Vs \_ 2 \_ 0 Features (Características de vs 2 0)
 
 Características nuevas:
 
@@ -60,9 +60,9 @@ Características nuevas:
 
 Nuevas instrucciones:
 
--   Instrucciones de configuración: [defb - vs](defb---vs.md), [defi - vs](defi---vs.md)
--   Instrucciones aritméticas - [abs - vs](abs---vs.md), [crs - vs](crs---vs.md), [lrp - vs](lrp---vs.md), [mova - vs](mova---vs.md), [nrm - vs](nrm---vs.md), [pow - vs](pow---vs.md), [sgn - vs](sgn---vs.md), [sincos - vs](sincos---vs.md)
--   Instrucciones de control de flujo estático - llamada [-](call---vs.md)vs , [callnz bool -](callnz-bool---vs.md)vs , else [-](else---vs.md)vs , [endif - vs](endif---vs.md), [endloop - vs](endloop---vs.md), [endrep - vs](endrep---vs.md), if [bool - vs](if-bool---vs.md), label - [vs](label---vs.md), loop [- vs](loop---vs.md), rep - [vs](rep---vs.md), ret [- vs](ret---vs.md)
+-   Instrucciones de instalación : [defb - vs](defb---vs.md), [defi - vs](defi---vs.md)
+-   Instrucciones aritméticas [- abs - vs](abs---vs.md), [crs - vs](crs---vs.md), [lrp - vs](lrp---vs.md), [mova - vs](mova---vs.md), [nrm - vs](nrm---vs.md), [pow - vs](pow---vs.md), [sgn - vs](sgn---vs.md), [sincos - vs](sincos---vs.md)
+-   Instrucciones de control de flujo estático - llamada [-](call---vs.md)frente a , [callnz bool -](callnz-bool---vs.md)vs , else [-](else---vs.md)vs , [endif - vs](endif---vs.md), [endloop - vs](endloop---vs.md), [endrep - vs](endrep---vs.md), if [bool - vs](if-bool---vs.md), label - [vs](label---vs.md), loop [- vs](loop---vs.md), rep - [vs](rep---vs.md), ret [- vs](ret---vs.md)
 
 Nuevos registros:
 
@@ -70,7 +70,7 @@ Nuevos registros:
 -   [Registro de enteros constantes](dx9-graphics-reference-asm-vs-registers-constant-integer.md) (i \# )
 -   [Registro de contadores de](dx9-graphics-reference-asm-vs-registers-loop-counter.md) bucles (aL)
 
-## <a name="vs_2_x-features"></a>frente \_ a 2 \_ x características
+## <a name="vs_2_x-features"></a>vs \_ 2 \_ x Features
 
 Nuevas características (D3DCAPS9. VS20Caps:
 
@@ -81,24 +81,24 @@ Nuevas características (D3DCAPS9. VS20Caps:
 
 Nuevas instrucciones:
 
--   Instrucciones de control de flujo dinámico - [break -](break---vs.md)vs , break comp [- \_ vs](break-comp---vs.md), [breakp - vs](breakp---vs.md), [callnz pred - vs](callnz-pred---vs.md), if comp - [ \_ vs](if-comp---vs.md), [if pred - vs](if-pred---vs.md), [setp comp - \_ vs](setp-comp---vs.md)
+-   Instrucciones de control de flujo dinámico : [break -](break---vs.md)vs , break comp [- \_ vs](break-comp---vs.md), [breakp - vs](breakp---vs.md), [callnz pred - vs](callnz-pred---vs.md), if comp - [ \_ vs](if-comp---vs.md), si [pred - vs](if-pred---vs.md), [setp comp - \_ vs](setp-comp---vs.md)
 
 Nuevos registros:
 
 -   [Registro de predicado](dx9-graphics-reference-asm-vs-registers-predicate.md) (p0)
 
-## <a name="vs_3_0-features"></a>Vs \_ 3 \_ 0 Features
+## <a name="vs_3_0-features"></a>Vs \_ 3 \_ 0 Features (Frente a 3 0 características)
 
 Nuevas características:
 
--   Búsqueda de texturas
+-   Búsqueda de textura
 -   Registros de [salida indexables](dx9-graphics-reference-asm-vs-registers-vs-3-0.md) (o \# )
--   El número [de registros temporales](dx9-graphics-reference-asm-vs-registers-temporary.md)(r) \# aumentó a 32
+-   Número de [registros temporales](dx9-graphics-reference-asm-vs-registers-temporary.md)(r) aumentado \# a 32
 
 Nuevas instrucciones:
 
--   Instrucción de [configuración: dcl \_ samplerType (sm3 - vs asm)](dcl-samplertype---vs.md)
--   Instrucción de [textura- texldl - vs](texldl---vs.md)
+-   Instrucción de instalación: [dcl \_ samplerType (sm3 - vs asm)](dcl-samplertype---vs.md)
+-   Instrucción de textura [- texldl - vs](texldl---vs.md)
 
 Nuevos registros:
 

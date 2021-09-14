@@ -1,5 +1,5 @@
 ---
-description: UserAccount de Win32 \_&\# 32; La clase WMI contiene información sobre una cuenta de usuario en un sistema informático que ejecuta Windows.
+description: La cuenta de usuario de Win32 \_&\# 32; La clase WMI contiene información sobre una cuenta de usuario en un sistema informático que ejecuta Windows.
 ms.assetid: 747b2ce2-ae38-47de-bf3a-97058df56a7a
 ms.tgt_platform: multiple
 title: Win32_UserAccount clase
@@ -30,19 +30,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: df907b1686677db8ea895d8788055567e24dc7be7ffe758bcfa82801591a0dfb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b5af83f7a52e9f3db9dbaa4a959bfe01ae740746
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119922755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892444"
 ---
 # <a name="win32_useraccount-class"></a>Clase UserAccount de Win32 \_
 
 La **clase WMI \_ UserAccount** [de](../wmisdk/retrieving-a-class.md) Win32 contiene información sobre una cuenta de usuario en un equipo que ejecuta Windows.
 
 > [!Note]  
-> Dado que name **y** **domain son propiedades** clave, la enumeración de UserAccount de **Win32 \_** en una red grande puede afectar negativamente al rendimiento. Llamar **a GetObject** o consultar una instancia específica tiene menos impacto.
+> Dado que el **nombre y** **el dominio** son propiedades clave, enumerar UserAccount de **Win32 \_** en una red grande puede afectar negativamente al rendimiento. Llamar **a GetObject** o consultar una instancia específica tiene menos impacto.
 
  
 
@@ -73,7 +73,7 @@ class Win32_UserAccount : Win32_Account
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ UserAccount de Win32** tiene estos tipos de miembros:
 
@@ -88,7 +88,7 @@ La **clase \_ UserAccount de Win32** tiene estos métodos.
 
 | Método                                                     | Descripción                                             |
 |:-----------------------------------------------------------|:--------------------------------------------------------|
-| [**Renombrar**](rename-method-in-class-win32-useraccount.md) | Permite cambiar el nombre de la cuenta de usuario.<br/> |
+| [**Cambiar nombre**](rename-method-in-class-win32-useraccount.md) | Permite cambiar el nombre de la cuenta de usuario.<br/> |
 
 
 
@@ -164,7 +164,7 @@ Cuenta de un dominio del sistema que confía en otros dominios.
 
 **CUENTA DE CONFIANZA \_ DE LA ESTACIÓN DE TRABAJO DE \_ \_ UF**
 
-Cuenta de equipo para un sistema de equipo Windows que es miembro de este dominio.
+Cuenta de equipo para un sistema informático que Windows que es miembro de este dominio.
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystem
 
 </dd> <dt>
 
-**Deshabilitado**
+**Deshabilitada**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -396,10 +396,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Corregido,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Identificadores de seguridad \| (SID) de Win32API")
+Calificadores: [**Fixed**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Security Identifiers (SIDs)")
 </dt> </dl>
 
-Identificador de seguridad (SID) de esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar a un administrador de confianza. Cada cuenta tiene un SID único que una autoridad, como un dominio Windows, emite. El SID se almacena en la base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID de usuario de la base de datos, coloca el SID en el token de acceso de usuario y, a continuación, usa el SID en el token de acceso de usuario para identificar al usuario en todas las interacciones posteriores con Windows seguridad. Cada SID es un identificador único para un usuario o grupo, y un usuario o grupo diferente no puede tener el mismo SID.
+Identificador de seguridad (SID) de esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar a un administrador de confianza. Cada cuenta tiene un SID único que una autoridad, como un Windows, emite. El SID se almacena en la base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID de usuario de la base de datos, coloca el SID en el token de acceso de usuario y, a continuación, usa el SID en el token de acceso de usuario para identificar al usuario en todas las interacciones posteriores con la seguridad de Windows. Cada SID es un identificador único para un usuario o grupo, y un usuario o grupo diferente no puede tener el mismo SID.
 
 Esta propiedad se hereda de la [**cuenta de \_ Win32.**](win32-account.md)
 
@@ -414,7 +414,7 @@ Tipo de datos: **uint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Fixed**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Access Control enumeration types \| [**SID NAME \_ \_ USE**](/windows/win32/api/winnt/ne-winnt-sid_name_use)")
+Calificadores: [**Fixed**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Access Control Enumeration Types \| [**SID NAME \_ \_ USE**](/windows/win32/api/winnt/ne-winnt-sid_name_use)")
 </dt> </dl>
 
 Valor enumerado que especifica el tipo de SID.
@@ -500,7 +500,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual de un objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail", que es un elemento como una unidad de disco duro habilitada para SMART que puede funcionar correctamente, pero predice un error en un futuro próximo. Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service", que se pueden aplicar durante la resilización reflejada de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo.
+Estado actual de un objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail", que es un elemento como una unidad de disco duro habilitada para SMART que puede funcionar correctamente, pero predice un error en un futuro próximo. Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service", que se pueden aplicar durante la resilización reflejada de un disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -531,28 +531,28 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**A partir** de ("Starting")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
@@ -594,7 +594,7 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ UserAccount de Win32** se deriva de [**la cuenta de Win32. \_**](win32-account.md)
 
@@ -605,11 +605,11 @@ La **clase \_ UserAccount de Win32** se deriva de [**la cuenta de Win32. \_**](w
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de código List [Local User Accounts Using WMI](https://Gallery.TechNet.Microsoft.Com/827623f5-eb55-4035-8f57-25c4afb444cd) VBScript de la Galería de TechNet usa UserAccount de **Win32 \_** para devolver información sobre las cuentas de usuario locales que se encuentran en un equipo.
+El ejemplo de código List [Local User Accounts Using WMI](https://Gallery.TechNet.Microsoft.Com/827623f5-eb55-4035-8f57-25c4afb444cd) VBScript (Enumerar cuentas de usuario locales que usan WMI VBScript) de la Galería de TechNet usa **Win32 \_ UserAccount** para devolver información sobre las cuentas de usuario locales que se encuentran en un equipo.
 
-[Traducir SID a cuenta de usuario y cuenta de usuario a SID](https://Gallery.TechNet.Microsoft.Com/f1c83aed-fe60-48d5-90ab-22388fcbd54f) El ejemplo de código de PowerShell de la Galería de TechNet usa **\_ UserAccount de Win32** para traducir un SID a una cuenta de usuario o a una cuenta de usuario a SID.
+[Traducir SID a cuenta de usuario y cuenta de usuario a SID](https://Gallery.TechNet.Microsoft.Com/f1c83aed-fe60-48d5-90ab-22388fcbd54f) El ejemplo de código de PowerShell en la Galería de TechNet usa **\_ UserAccount de Win32** para traducir un SID a una cuenta de usuario o una cuenta de usuario a SID.
 
-En el siguiente ejemplo de código VBScript se muestra cómo obtener el nombre completo de un usuario en un equipo local. El nombre completo es el nombre de idioma humano, por ejemplo, una persona puede tener el nombre de usuario "kensandomain" y el nombre completo puede ser "Ken Sandomain", por lo que sustituya el nombre de dominio real y el nombre de usuario por "MyDomainName" y "MyUserName". Para una consulta eficaz, debe especificar las propiedades de dominio y nombre de usuario.
+En el ejemplo de código de VBScript siguiente se muestra cómo obtener el nombre completo de un usuario en un equipo local. El nombre completo es el nombre de idioma humano, por ejemplo, una persona puede tener el nombre de usuario "kensandominio" y el nombre completo puede ser "Ken Sandominio", por lo que puede sustituir el nombre de dominio real y el nombre de usuario por "MyDomainName" y "MyUserName". Para una consulta eficaz, debe especificar las propiedades de dominio y nombre de usuario.
 
 Si es administrador en un equipo remoto, puede asignar el nombre del equipo remoto para strComputer (en lugar de ".") y, a continuación, usar el siguiente tipo de script para obtener el nombre completo de una cuenta de usuario en un equipo local, desde un equipo remoto.
 
@@ -652,7 +652,7 @@ using System.Management;
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

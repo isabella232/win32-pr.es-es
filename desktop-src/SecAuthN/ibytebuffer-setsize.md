@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: e0d210d7868542bf02b544c91b6f33e3ba6e5381f25462f2cfedce555858cecb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85a6abc11f3e007f3c8d1057cb5c8785c8519ebf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120016245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160994"
 ---
 # <a name="ibytebuffersetsize-method"></a>IByteBuffer::SetSize (método)
 
@@ -50,9 +50,9 @@ Nuevo tamaño de la secuencia como un número de bytes
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **un HRESULT.** Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
+El valor devuelto es **un HRESULT**. Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método IByteBuffer::SetSize** cambia el tamaño del objeto de secuencia. Llame a este método para preasignar el espacio de la secuencia. Si el *parámetro libNewSize* es mayor que el tamaño de secuencia actual, la secuencia se extiende al tamaño indicado rellenando el espacio que interviene con bytes de valor indefinido. Esta operación es similar al [**método IByteBuffer::Write**](ibytebuffer-write.md) si el puntero seek está más allá del final del flujo actual.
 
@@ -89,7 +89,7 @@ if (FAILED(hr))
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardssp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IByteBuffer se define como E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |

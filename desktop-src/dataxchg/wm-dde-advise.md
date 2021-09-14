@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c651144b4f09cf53f07c0f1860625cab8277e5c8a9532ee864b9ec1b1c927323
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 832c6991169b71955c0ab21b59d2b55b0b54fc9a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119636225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160488"
 ---
 # <a name="wm_dde_advise-message"></a>Mensaje \_ DDE ADVISE de WM \_
 
@@ -54,7 +54,7 @@ La palabra de orden superior contiene un átomo que identifica el elemento de da
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si una aplicación cliente admite más de un formato de Portapapeles para un único tema y elemento, puede publicar varios mensajes **DE WM \_ DDE \_ ADVISE** para el tema y el elemento, especificando un formato de Portapapeles diferente con cada mensaje. Tenga en cuenta que un servidor solo puede admitir varios formatos para vínculos de datos de acceso rápido, no vínculos de datos de acceso directo.
 
@@ -88,7 +88,7 @@ El servidor debe crear o reutilizar el parámetro *lParam* [**wm \_ DDE \_ ACK**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

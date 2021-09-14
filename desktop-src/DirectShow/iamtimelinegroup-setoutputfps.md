@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 332e9ea33e0ca559800e560409066946247d1cff34b8e6b48fd1fadbdb91e38f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bbec5de572dd2ed2a0e6b3062b208f1084bafd07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052709"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892073"
 ---
 # <a name="iamtimelinegroupsetoutputfps-method"></a>Método IAMTimelineGroup::SetOutputFPS
 
@@ -56,7 +56,7 @@ Velocidad de fotogramas de salida para este grupo, en fotogramas por segundo. El
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La salida representada de este grupo se ejecuta a la velocidad de fotogramas especificada y todas las ediciones del material de origen se redondean al límite de fotogramas más cercano, tal como se define en la velocidad de fotogramas. Para obtener el mejor rendimiento, use la misma velocidad de fotogramas para todos los grupos, vídeo y audio.
 
@@ -83,7 +83,7 @@ El [**método IAMTimelineGroup::SetSmartRecompressFormat**](iamtimelinegroup-set
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

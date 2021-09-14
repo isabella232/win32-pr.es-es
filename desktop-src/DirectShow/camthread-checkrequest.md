@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 292f8a7fb1ed4f12ad558993d6b1932b2ddff4656bada5e0a89067bac1baa9c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a004e0f5303cf6702c03e78c292a6a2d832a489
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118662361"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160267"
 ---
 # <a name="camthreadcheckrequest-method"></a>Método CAMThread.CheckRequest
 
@@ -51,13 +51,13 @@ Puntero a una variable que recibe el valor pasado en la última llamada al [**m�
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si hay una solicitud pendiente o **FALSE** en caso contrario.
+Devuelve **TRUE** si hay una solicitud pendiente o FALSE en **caso** contrario.
 
 ## <a name="remarks"></a>Observaciones
 
 Este método es una versión sin bloqueo del [**método CAMThread::GetRequest.**](camthread-getrequest.md)
 
-Si otro subproceso está esperando una llamada a CallWorker, este método recupera el parámetro de solicitud y devuelve **TRUE**. De lo contrario, devuelve **FALSE.** Si el método devuelve **TRUE,** llame al [**método CAMThread::Reply**](camthread-reply.md) para liberar el subproceso solicitante.
+Si otro subproceso está esperando una llamada a CallWorker, este método recupera el parámetro de solicitud y devuelve **TRUE.** De lo contrario, devuelve **FALSE.** Si el método devuelve **TRUE,** llame al [**método CAMThread::Reply**](camthread-reply.md) para liberar el subproceso solicitante.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Si otro subproceso está esperando una llamada a CallWorker, este método recupe
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

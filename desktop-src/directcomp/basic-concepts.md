@@ -7,17 +7,17 @@ keywords:
 - Conceptos básicos de DirectComposition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c2dadcea55ec18089380d7dbe17d99e5dba92b06dd15774c43cd604f28f991c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0550dc12cb0dcc5262701658d8e3883ee1ce8d82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118282061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970427"
 ---
 # <a name="basic-concepts"></a>Conceptos básicos
 
 > [!NOTE]
-> Para las aplicaciones Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para las aplicaciones de Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 En este tema se proporciona información general sobre los conceptos básicos de Microsoft DirectComposition. Contiene las secciones siguientes:
 
@@ -95,7 +95,7 @@ Para obtener más información, vea [Recorte de](clipping.md).
 
 La propiedad BorderMode especifica cómo crear los bordes de los mapas de bits y los clips asociados a este objeto visual, o bien con los objetos visuales del subárbol con raíz en este objeto visual.
 
-El modo de borde afecta a cómo se componen los bordes de un mapa de bits cuando el mapa de bits se transforma de forma que los bordes no están alineados con el eje con coordenadas de enteros. También afecta a cómo se recorta el contenido en las esquinas de un clip que tiene esquinas redondeadas y en el borde de un clip que se transforma de forma que los bordes no están alineados con el eje con coordenadas de enteros.
+El modo de borde afecta a cómo se componen los bordes de un mapa de bits cuando el mapa de bits se transforma de forma que los bordes no están alineados con el eje con coordenadas de enteros. También afecta a cómo se recorta el contenido en las esquinas de un clip que tiene esquinas redondeadas y en el borde de un clip que se transforma de forma que los bordes no están alineados con coordenadas de enteros.
 
 Para obtener más información, [**vea IDCompositionVisual::SetBorderMode**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setbordermode).
 
@@ -163,7 +163,7 @@ DirectComposition permite que una aplicación enlace un máximo de dos árboles 
 
 ## <a name="transactional-composition"></a>Composición transaccional
 
-DirectComposition usa un modelo transaccional donde se crea un conjunto por lotes de cambios en un objeto visual y, a continuación, se "confirma" el conjunto en DirectComposition para procesar todos a la vez. Puede modificar el mismo objeto visual DirectComposition y confirmar los cambios en cualquier número de veces. Cuando el Administrador de ventanas de escritorio (DWM) recoge lotes, recoge todos los lotes pendientes y los aplica al siguiente fotograma en el orden en que se han confirmado.
+DirectComposition usa un modelo transaccional donde se crea un conjunto por lotes de cambios en un objeto visual y, a continuación, se "confirma" el conjunto en DirectComposition para procesar todos a la vez. Puede modificar el mismo objeto visual DirectComposition y confirmar los cambios en cualquier número de veces. Cuando el Administrador de ventanas de escritorio (DWM) recoge los lotes, recoge todos los lotes pendientes y los aplica al siguiente fotograma en el orden en que se han confirmado.
 
 Se garantiza que todos los cambios dentro de una sola confirmación se aplicarán a un único fotograma. Dado que DWM recopila lotes una vez por fotograma, puede modificar cualquier objeto determinado solo una vez por fotograma. Las confirmaciones posteriores que modifican objetos diferentes también se pueden aplicar al marco actual, pero DirectComposition no garantiza que los cambios se produzcan en el mismo marco.
 

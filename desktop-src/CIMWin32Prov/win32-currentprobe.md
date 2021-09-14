@@ -51,16 +51,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f20fb9a81b0917586f7534de45f78a371c6c82aeb6220de56529f400a8ddf8d9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: be834e56eb3d958a8cd6ee653dc9a248c14ae3bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119504175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970260"
 ---
 # <a name="win32_currentprobe-class"></a>Clase CurrentProbe de Win32 \_
 
-La **clase WMI \_ CurrentProbe** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa las propiedades de un sensor de supervisión actual (ammeter).
+La **clase \_ WMI CurrentProbe** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa las propiedades de un sensor de supervisión actual (ammeter).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -108,7 +108,7 @@ class Win32_CurrentProbe : CIM_CurrentSensor
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CurrentProbe de Win32** tiene estos tipos de miembros:
 
@@ -124,7 +124,7 @@ La **clase \_ CurrentProbe de Win32** tiene estos métodos.
 | Método            | Descripción                                                                                                                                                                                                      |
 |:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reset**         | Sin implementar. Para implementar este método, consulte el método [**Reset**](reset-method-in-class-cim-controller.md) en [**CIM \_ CurrentSensor**](cim-currentsensor.md) para obtener documentación.<br/>                 |
-| **SetPowerState** | Sin implementar. Para implementar este método, consulte el método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) en [**CIM \_ CurrentSensor**](cim-currentsensor.md) para obtener documentación.<br/> |
+| **SetPowerState** | Sin implementar. Para implementar este método, consulte el método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) en [**CIM \_ CurrentSensor para**](cim-currentsensor.md) obtener documentación.<br/> |
 
 
 
@@ -148,9 +148,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.19")
 </dt> </dl>
 
-Precisión del sensor para la propiedad medida. El valor se registra como centésimas más o menos de un porcentaje. La precisión, junto con la resolución y la tolerancia, se usa para calcular el valor real de la propiedad física medida. La precisión puede variar y depende de si el dispositivo es lineal sobre su intervalo dinámico.
+Precisión del sensor para la propiedad medida. El valor se registra como centésimas más o menos de un porcentaje. La precisión, junto con la resolución y la tolerancia, se usa para calcular el valor real de la propiedad física medida. La precisión puede variar y depende de si el dispositivo es lineal en su intervalo dinámico.
 
-Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -188,12 +188,12 @@ Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
 
 
 </dt> <dd>
 
-Energía completa o en ejecución
+En ejecución o con energía completa
 
 </dd> <dt>
 
@@ -255,7 +255,7 @@ Energía completa o en ejecución
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -324,7 +324,7 @@ En pausa.
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No está listo** (19)
+<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**No listo** (19)
 
 
 </dt> <dd>
@@ -335,7 +335,7 @@ No está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
 
 
 </dt> <dd>
@@ -346,7 +346,7 @@ No configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**En modo de quiesced** (21)
 
 
 </dt> <dd>
@@ -389,7 +389,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -585,7 +585,7 @@ El dispositivo solicita un tipo de recurso desconocido.
 
 <span id="Reinstall_the_drivers_for_this_device."></span><span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>
 
-<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores de este dispositivo.** (18)
+<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores para este dispositivo.** (18)
 
 
 </dt> <dd>
@@ -614,7 +614,7 @@ Es posible que el Registro esté dañado.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si esto no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
@@ -821,7 +821,7 @@ Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](
 
 Identificador único del sondeo actual.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -834,9 +834,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** ahora se borra el error notificado en **LastErrorCode.**
+Si **es TRUE,** ahora se borra el error **notificado en LastErrorCode.**
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -851,7 +851,7 @@ Tipo de acceso: solo lectura
 
 Más información sobre el error registrado en **LastErrorCode** e información sobre las acciones correctivas que se pueden realizar.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -884,7 +884,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el sensor es lineal sobre su intervalo dinámico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -899,7 +899,7 @@ Tipo de acceso: solo lectura
 
 Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -915,9 +915,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.13"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona o no en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** entre **LowerThresholdCritical** y **LowerThresholdFatal,** el estado actual es crítico.
+Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** entre **LowerThresholdCritical** y **LowerThresholdFatal,** el estado actual es crítico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -933,9 +933,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.15"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** por **debajo de LowerThresholdFatal,** el estado actual es grave.
+Los valores de umbral del sensor especifican los intervalos (valores mínimo y máximo) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** por **debajo de LowerThresholdFatal,** el estado actual es grave.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -951,9 +951,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.11"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical,** el sensor informa de un valor normal. Si **CurrentReading está** entre **LowerThresholdNonCritical** y **LowerThresholdCritical,** el estado actual no es crítico.
+Los valores de umbral del sensor especifican los intervalos (valores mínimo y máximo) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical,** el sensor informa de un valor normal. Si **CurrentReading está** entre **LowerThresholdNonCritical** y **LowerThresholdCritical,** el estado actual no es crítico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -966,12 +966,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.9"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.9"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milamps")
 </dt> </dl>
 
 Valor más grande de la propiedad medida que puede leer el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -989,7 +989,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Valor más pequeño de la propiedad medida que puede leer el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1002,7 +1002,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
 Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
@@ -1020,12 +1020,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.6"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.6"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milamps")
 </dt> </dl>
 
 Valor normal o esperado para el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1043,7 +1043,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Valor normal o esperado para el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1061,7 +1061,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Instrucciones para el usuario sobre el intervalo mínimo normal para el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1079,7 +1079,7 @@ Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win3
 
 Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 Ejemplo: \* "PNP030b"
 
@@ -1150,7 +1150,7 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 </dt> <dd>
 
-Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
@@ -1191,7 +1191,7 @@ Tipo de acceso: solo lectura
 
 Si **es TRUE,** el dispositivo se puede administrar mediante energía (se puede poner en modo de suspensión, y así sucesivamente). La propiedad no indica que las características de administración de energía están habilitadas actualmente, solo que el dispositivo lógico es capaz de la administración de energía.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1263,7 +1263,7 @@ Los valores son los siguientes:
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
@@ -1277,7 +1277,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -1333,7 +1333,7 @@ Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1383,12 +1383,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Valor de la propiedad **CreationClassName** del equipo de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1401,12 +1401,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -1476,13 +1476,13 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.12"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical,** el sensor informa de un valor normal. Si **CurrentReading está** entre **UpperThresholdNonCritical** y **UpperThresholdCritical,** el estado actual no es crítico.
+Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical,** el sensor informa de un valor normal. Si **CurrentReading** está entre **UpperThresholdNonCritical** y **UpperThresholdCritical,** el estado actual no es crítico.
 
 Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ CurrentProbe de Win32** se deriva de [**CIM \_ CurrentSensor**](cim-currentsensor.md).
 
@@ -1500,7 +1500,7 @@ La **clase \_ CurrentProbe de Win32** se deriva de [**CIM \_ CurrentSensor**](ci
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

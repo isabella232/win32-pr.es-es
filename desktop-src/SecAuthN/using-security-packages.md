@@ -4,12 +4,12 @@ ms.assetid: f5999d41-b334-49be-8883-d9b9042d20dc
 title: Uso de paquetes de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9253ee2ac4cec98e3c68a1f3dab80a71b216e6235af78722864ee0e0958897c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df24bba0f910ba74a633e8a43f961cee4fb505db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118915198"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160897"
 ---
 # <a name="using-security-packages"></a>Uso de paquetes de seguridad
 
@@ -26,7 +26,7 @@ Los servicios del sistema y las aplicaciones de nivel de transporte acceden a un
 
 Los métodos de SSPI son rutinas genéricas que los desarrolladores pueden usar sin conocer los detalles de un protocolo [*de seguridad determinado.*](../secgloss/s-gly.md) Por ejemplo, cuando se autentica una conexión cliente/servidor:
 
-1.  La aplicación en el lado cliente de la conexión [*envía*](../secgloss/c-gly.md) credenciales al servidor mediante la función de SSPI [**InitializeSecurityContext (General).**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta)
+1.  La aplicación del lado cliente de la conexión [*envía*](../secgloss/c-gly.md) credenciales al servidor mediante la función de SSPI [**InitializeSecurityContext (General).**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta)
 2.  La aplicación del lado servidor de la conexión responde con la función de SSPI [**AcceptSecurityContext (General).**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext)
 3.  Una vez autenticada la conexión, el LSA del servidor usa información del cliente para crear un [*token de acceso.*](../secgloss/a-gly.md)
 4.  A continuación, el servidor puede llamar a la función [**ImpersonateSecurityContext**](/windows/desktop/api/Sspi/nf-sspi-impersonatesecuritycontext) de SSPI para adjuntar el token de acceso a un subproceso de suplantación para el servicio.

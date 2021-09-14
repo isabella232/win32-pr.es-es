@@ -1,5 +1,5 @@
 ---
-description: La clase CIM SoftwareElement descompone un objeto \_ SoftwareFeature de CIM en un conjunto de elementos que se pueden administrar individualmente o que se pueden implementar \_ para una plataforma determinada.
+description: La clase CIM SoftwareElement descompone un objeto Cim SoftwareFeature en un conjunto de elementos administrables individualmente o \_ \_ implementables para una plataforma determinada.
 ms.assetid: b2418735-b738-411a-a620-acc31662f824
 ms.tgt_platform: multiple
 title: CIM_SoftwareElement clase (proveedores WMI CIMWin32)
@@ -31,24 +31,24 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 9baf3dea6a5ba68044142aed023006ebfecc2d34
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884087"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160349"
 ---
 # <a name="cim_softwareelement-class-cimwin32-wmi-providers"></a>CIM_SoftwareElement clase (proveedores WMI CIMWin32)
 
 La **clase \_ CIM SoftwareElement** descompone un objeto [**Cim \_ SoftwareFeature**](cim-softwarefeature.md) en un conjunto de elementos administrables individualmente o implementables para una plataforma determinada. La plataforma de un elemento de software se identifica de forma única por su arquitectura de hardware y sistema operativo subyacentes.
 
-Por lo tanto, para comprender los detalles de cómo se proporciona la funcionalidad de una característica de software determinada en una plataforma determinada, los objetos **\_ Cim SoftwareElement** a los que hacen referencia las asociaciones [**CIM \_ SoftwareFeatureSoftwareElements**](cim-softwarefeaturesoftwareelements.md) se organizan en conjuntos no unidos basados en la propiedad **TargetOperatingSystem.** Un **objeto \_ SoftwareElement** cim captura los detalles de administración de un elemento o componente en uno de los cuatro estados que caracteriza la **propiedad SoftwareElementState.**
+Por lo tanto, para comprender los detalles de cómo se proporciona la funcionalidad de una característica de software determinada en una plataforma determinada, los objetos **\_ SoftwareElement** cim a los que hacen referencia las asociaciones [**\_ CIM SoftwareFeatureSoftwareElements**](cim-softwarefeaturesoftwareelements.md) se organizan en conjuntos no ordenados basados en la propiedad **TargetOperatingSystem.** Un **\_ objeto SoftwareElement** cim captura los detalles de administración de un elemento o componente en uno de los cuatro estados que caracteriza la **propiedad SoftwareElementState.**
 
 > [!IMPORTANT]
 > Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,7 +75,7 @@ class CIM_SoftwareElement : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Cim SoftwareElement** tiene estos tipos de miembros:
 
@@ -83,7 +83,7 @@ La **clase \_ Cim SoftwareElement** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ Cim SoftwareElement** tiene estas propiedades.
+La **clase \_ CIM SoftwareElement** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -249,7 +249,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OtherTypeDescription**")
 </dt> </dl>
 
-Fabricante y tipo de sistema operativo para un elemento de software cuando la **propiedad TargetOperatingSystem** tiene un valor de 1 ("Other"). Cuando la **propiedad TargetOperatingSystem** tiene un valor de 1, esta propiedad debe tener un valor distinto de NULL. Para todos los **demás valores targetOperatingSystem,** esta propiedad es null.
+Fabricante y tipo de sistema operativo para un elemento de software cuando la propiedad **TargetOperatingSystem** tiene un valor de 1 ("Other"). Cuando la **propiedad TargetOperatingSystem** tiene un valor de 1, esta propiedad debe tener un valor distinto de NULL. Para todos los **demás valores targetOperatingSystem,** esta propiedad es null.
 
 </dd> <dt>
 
@@ -397,7 +397,7 @@ Los valores son los siguientes:
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error de pred")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
@@ -411,7 +411,7 @@ Los valores son los siguientes:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("Deteniendo")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -936,7 +936,7 @@ Mac OS 9
 
 </dt> <dd>
 
-So de mano
+So De remanso
 
 </dd> <dt>
 
@@ -991,26 +991,26 @@ Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/w
 
 Versión de la operación.
 
-La versión de la operación debe tener uno de los siguientes formatos:
+La versión de la operación debe tener uno de los formatos siguientes:
 
 -   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
 -   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ Cim SoftwareElement** se deriva de [**\_ LOGICALElement de CIM.**](cim-logicalelement.md)
+La **clase \_ Cim SoftwareElement** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
-WMI no implementa esta clase. Para las clases WMI derivadas de **\_ CIM SoftwareElement**, vea [Clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ SoftwareElement**, vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -1020,7 +1020,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

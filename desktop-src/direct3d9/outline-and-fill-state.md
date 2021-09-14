@@ -4,12 +4,12 @@ ms.assetid: 8a7ed4b1-25a1-4984-baea-6e176f0545ea
 title: Esquema y estado de relleno (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db18c38b7511d6fd7954ffdbf18b9e5681cb884414373fd7a22dba2ade3bebf8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 65092fb2e4bfe29ac5e9f9291250a0c78b80626d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120068945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966575"
 ---
 # <a name="outline-and-fill-state-direct3d-9"></a>Esquema y estado de relleno (Direct3D 9)
 

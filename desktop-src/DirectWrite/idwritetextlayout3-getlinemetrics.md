@@ -4,8 +4,8 @@ description: Recupera las propiedades de cada línea.
 ms.assetid: 352ca3e3-7b08-823c-0881-0b051d4ce574
 keywords:
 - Escritura directa del método GetLineMetrics
-- Método GetLineMetrics direct write , interfaz IDWriteTextLayout3
-- Método GetLineMetrics de la interfaz IDWriteTextLayout3
+- Método GetLineMetrics Direct Write , interfaz IDWriteTextLayout3
+- IdWriteTextLayout3 interface Direct Write , Método GetLineMetrics
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 180bc764d31aaeadba7b42d31cff02cdbefc0220499572160873dc43b58005ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d10a06cbf123b71e1308b45c747ac8a840a5fe1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119070735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160088"
 ---
 # <a name="idwritetextlayout3getlinemetrics-method"></a>Método IDWriteTextLayout3::GetLineMetrics
 
@@ -61,7 +61,7 @@ Tamaño máximo de la matriz lineMetrics.
 *actualLineCount* \[ out\]
 </dt> <dd>
 
-Tamaño real de la matriz lineMetrics que se necesita.
+Tamaño real de la matriz lineMetrics necesaria.
 
 </dd> </dl>
 
@@ -69,9 +69,9 @@ Tamaño real de la matriz lineMetrics que se necesita.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si maxLineCount no es lo suficientemente grande como E NOT SUFFICIENT BUFFER, que es equivalente a \_ \_ \_ HRESULT \_ FROM \_ WIN32(ERROR \_ INSUFFICIENT BUFFER), se devuelve y \_ actualLineCount se establece en el número de líneas necesarias.
+Si maxLineCount no es lo suficientemente grande como para E NOT SUFFICIENT BUFFER, que es equivalente a \_ \_ \_ HRESULT \_ FROM \_ WIN32(ERROR \_ INSUFFICIENT BUFFER), se devuelve y \_ realLineCount se establece en el número de líneas necesarias.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,7 +87,7 @@ Si maxLineCount no es lo suficientemente grande como E NOT SUFFICIENT BUFFER, qu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

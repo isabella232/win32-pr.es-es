@@ -1,21 +1,21 @@
 ---
-description: El método Delete elimina el medio correspondiente al índice especificado.
+description: El método Delete elimina los medios correspondientes al índice especificado.
 ms.assetid: 5fcbd026-75a8-4db2-a701-e080dc222537
-title: ITMediaCollection::D método iminar (Sdpblb. h)
+title: ItMediaCollection::D elete (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: f0ffabee84bd7d04f517ef26ad5259f642cfed48
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680506"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160660"
 ---
-# <a name="itmediacollectiondelete-method"></a>ITMediaCollection::D iminar (método)
+# <a name="itmediacollectiondelete-method"></a>ITMediaCollection::D elete (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Delete** elimina el medio correspondiente al índice especificado.
+El **método Delete** elimina los medios correspondientes al índice especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ HRESULT Delete(
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*Índice* \[ En\]
 </dt> <dd>
 
-Índice de los medios que se van a eliminar.
+Índice de medios que se va a eliminar.
 
 </dd> </dl>
 
@@ -47,12 +47,12 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                                                              | Descripción                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                                                     | El método se realizó correctamente.<br/>                                                                             |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>                                             | El parámetro de *Índice* tiene un valor menor que 1 o mayor que el número actual de elementos.<br/> |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>                                            | No hay memoria suficiente para realizar la operación.<br/>                                          |
-| <dl> <dt>**E \_ FAIL**</dt> </dl>                                                   | Error interno (solo se debe producir si una llamada anterior ha devuelto un error).<br/>                      |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                                     | El método se realizó correctamente.<br/>                                                                             |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>                                             | El *parámetro Index* tiene un valor menor que 1 o mayor que el número actual de elementos.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>                                            | No existe memoria suficiente para realizar la operación.<br/>                                          |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                                                   | Error interno (solo debe producirse si una llamada anterior devolvió un error).<br/>                      |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>                                                | Este método aún no se ha implementado.<br/>                                                           |
-| <dl> <dt>**HRESULT \_ del \_ código de error \_ (SDPBLB \_ conf \_ BLOB \_ destruido)**</dt> </dl> | El BLOB SDP no existe.<br/>                                                                   |
+| <dl> <dt>**HRESULT \_ FROM \_ ERROR \_ CODE(SDPBLB \_ CONF \_ BLOB \_ DESTROYED)**</dt> </dl> | El blob SDP no existe.<br/>                                                                   |
 
 
 
@@ -60,7 +60,7 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Observaciones
 
-La mayoría de las listas de C y C++ están basadas en 0, pero este índice está basado en 1 para la compatibilidad de Visual Basic, lo que significa que el primer elemento tiene un número de índice de 1.
+La mayoría de las listas de C y C++ se basan en 0, pero este índice se basa en 1 para la compatibilidad de Visual Basic, lo que significa que el primer elemento tiene un número de índice de 1.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,14 +68,14 @@ La mayoría de las listas de C y C++ están basadas en 0, pero este índice est�
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

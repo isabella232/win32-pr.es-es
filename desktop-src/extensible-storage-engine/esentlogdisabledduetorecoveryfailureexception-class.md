@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7c7636bbe6c00cd247ed84adeb7dd31d47857f638c03ed8323d757889d2bfd6b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1a631dc6e0495a958555547f8e7c540263dfc53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119363843"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969411"
 ---
 # <a name="esentlogdisabledduetorecoveryfailureexception-class"></a>Clase EsentLogDisabledDueToRecoveryFailureException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones logDisabledDueToRecoveryFailure.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

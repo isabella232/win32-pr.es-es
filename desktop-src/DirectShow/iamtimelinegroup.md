@@ -1,5 +1,5 @@
 ---
-description: La interfaz IAMTimelineGroup establece y recupera propiedades en grupos de DirectShow Editing Services (DES). Un grupo contiene una o varias pistas, y posiblemente una o varias composiciones, que a su vez contienen clips de origen de un tipo uniforme, como vídeo o audio. Los grupos son las composiciones más destacadas de una escala de tiempo y también exponen la interfaz IAMTimelineComp. Una escala de tiempo puede contener varios grupos. Cada grupo tiene los siguientes atributos. Tipo de medio asociado. Velocidad de fotogramas a la que se representa el grupo, en fotogramas por segundo (FPS). Todas las ediciones se producen a la vez redondeadas al límite del marco más cercano, tal y como se define en la configuración de FPS del grupo. Nivel de prioridad para escribir archivos con varias secuencias del mismo tipo de medio (por ejemplo, un archivo AVI de dos secuencias de vídeo). Para crear un objeto de grupo, llame a IAMTimeline::CreateEmptyNode con el valor TIMELINE \_ MAJOR \_ TYPE \_ GROUP. Puede consultar el puntero IAMTimelineObj devuelto para la interfaz IAMTimelineGroup.
+description: La interfaz IAMTimelineGroup establece y recupera propiedades en grupos de DirectShow Editing Services (DES). Un grupo contiene una o varias pistas y, posiblemente, una o varias composiciones, que a su vez contienen clips de origen de un tipo uniforme, como vídeo o audio. Los grupos son las composiciones más destacadas de una escala de tiempo y también exponen la interfaz IAMTimelineComp. Una escala de tiempo puede contener varios grupos. Cada grupo tiene los siguientes atributos. Tipo de medio asociado. Velocidad de fotogramas a la que se representa el grupo, en fotogramas por segundo (FPS). Todas las ediciones se producen a la vez redondeadas al límite del marco más cercano, tal como se define en la configuración de FPS del grupo. Un nivel de prioridad, para escribir archivos con varias secuencias del mismo tipo de medio (por ejemplo, un archivo AVI de dos secuencias de vídeo). Para crear un objeto de grupo, llame a IAMTimeline::CreateEmptyNode con el valor TIMELINE \_ MAJOR \_ TYPE \_ GROUP. Puede consultar el puntero IAMTimelineObj devuelto para la interfaz IAMTimelineGroup.
 ms.assetid: c24e5e0a-43a5-4ba7-ac28-6e2ebb341a38
 title: Interfaz IAMTimelineGroup (Qedit.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 9356e3edef0b61c119ec4cca774e9ec5976ac3732e0f0a508d103bc22bb0fef0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e82a11db65183e343048f594a7457c0a8febf8bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118155511"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892028"
 ---
 # <a name="iamtimelinegroup-interface"></a>Interfaz IAMTimelineGroup
 
@@ -30,17 +30,17 @@ ms.locfileid: "118155511"
 
 La interfaz establece y recupera propiedades en grupos de `IAMTimelineGroup` [DirectShow Editing Services](directshow-editing-services.md) (DES).
 
-Un grupo contiene una o varias pistas, y posiblemente una o varias composiciones, que a su vez contienen clips de origen de un tipo uniforme, como vídeo o audio. Los grupos son las composiciones más destacadas de una escala de tiempo y también exponen la [**interfaz IAMTimelineComp.**](iamtimelinecomp.md) Una escala de tiempo puede contener varios grupos.
+Un grupo contiene una o varias pistas y, posiblemente, una o varias composiciones, que a su vez contienen clips de origen de un tipo uniforme, como vídeo o audio. Los grupos son las composiciones más destacadas de una escala de tiempo y también exponen [**la interfaz IAMTimelineComp.**](iamtimelinecomp.md) Una escala de tiempo puede contener varios grupos.
 
 Cada grupo tiene los siguientes atributos.
 
 -   Tipo de medio asociado.
--   Velocidad de fotogramas a la que se representa el grupo, en fotogramas por segundo (FPS). Todas las ediciones se producen a la vez redondeadas al límite del marco más cercano, tal y como se define en la configuración de FPS del grupo.
--   Nivel de prioridad para escribir archivos con varias secuencias del mismo tipo de medio (por ejemplo, un archivo AVI de dos secuencias de vídeo).
+-   Velocidad de fotogramas a la que se representa el grupo, en fotogramas por segundo (FPS). Todas las ediciones se producen a la vez redondeadas al límite del marco más cercano, tal como se define en la configuración de FPS del grupo.
+-   Un nivel de prioridad, para escribir archivos con varias secuencias del mismo tipo de medio (por ejemplo, un archivo AVI de dos secuencias de vídeo).
 
-Para crear un objeto de grupo, llame [**a IAMTimeline::CreateEmptyNode**](iamtimeline-createemptynode.md) con el valor TIMELINE \_ MAJOR TYPE \_ \_ GROUP. Puede consultar el puntero [**IAMTimelineObj devuelto**](iamtimelineobj.md) para la **interfaz IAMTimelineGroup.**
+Para crear un objeto de grupo, llame a [**IAMTimeline::CreateEmptyNode**](iamtimeline-createemptynode.md) con el valor TIMELINE \_ MAJOR TYPE \_ \_ GROUP. Puede consultar el puntero [**IAMTimelineObj**](iamtimelineobj.md) devuelto para la **interfaz IAMTimelineGroup.**
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IAMTimelineGroup** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IAMTimelineGroup** también tiene estos tipos de miembros:
 
@@ -79,7 +79,7 @@ La **interfaz IAMTimelineGroup** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -87,7 +87,7 @@ La **interfaz IAMTimelineGroup** tiene estos métodos.
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: 'Método CBaseOutputPin.DecideBufferSize: el método DecideBufferSize establece los requisitos de búfer.'
+description: 'Método CBaseOutputPin.DecideBufferSize: el método DecideBufferSize establece los requisitos del búfer.'
 ms.assetid: 1f7a3424-18ba-4a10-b09f-947ee8585ffa
 title: Método CBaseOutputPin.DecideBufferSize (Amfilter.h)
 ms.topic: reference
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b671b32069f97e498ea9b369ecf8d305055880d4b06bb04ab4eeb6121fef6ee2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a76f058e2f9c07a344453db87046704e26280a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793220"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160204"
 ---
-# <a name="cbaseoutputpindecidebuffersize-method"></a>Método CBaseOutputPin.DecideBufferSize
+# <a name="cbaseoutputpindecidebuffersize-method"></a>CBaseOutputPin.DecideBufferSize (método)
 
 El `DecideBufferSize` método establece los requisitos del búfer.
 
@@ -61,7 +61,7 @@ Puntero a una [**estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif
 
 Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Invalide este método en la clase derivada. Llame al [**método IMemAllocator::SetProperties**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-setproperties) para especificar los requisitos del búfer. Normalmente, la clase derivada respetará los requisitos de búfer del pin de entrada, pero no es necesario.
 
@@ -76,7 +76,7 @@ Invalide este método en la clase derivada. Llame al [**método IMemAllocator::S
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

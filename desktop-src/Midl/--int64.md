@@ -1,6 +1,6 @@
 ---
 title: __int64 atributo
-description: La palabra \_ \_ clave int64 especifica un entero válido admitido por el compilador MIDL.
+description: La palabra clave \_ \_ int64 especifica un entero válido admitido por el compilador MIDL.
 ms.assetid: 52fafae2-003c-4eae-b6e1-a49f69db204e
 keywords:
 - __int64 atributo MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0379ad61cdd0296ef672f62063b9c3ca7bdae250e5a3f6c1bf940aaa54cf7254
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0859152ae2561fce70cc21a4dc1fe36e53524df0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120129735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159780"
 ---
-# <a name="__int64-attribute"></a>\_\_Atributo int64
+# <a name="__int64-attribute"></a>\_\_atributo int64
 
-La palabra **\_ \_ clave int64** especifica un entero válido admitido por el compilador MIDL.
+La palabra clave **\_ \_ int64** especifica un entero válido admitido por el compilador MIDL.
 
 ``` syntax
 __int64 identifier-name;
@@ -38,11 +38,11 @@ Especifica un identificador MIDL válido. Los identificadores MIDL válidos cons
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para obtener una explicación sobre cómo usar **\_ \_ int64**, vea [**Hyper**](hyper.md).
+Para obtener una explicación sobre cómo usar **\_ \_ int64,** vea [**Hyper**](hyper.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

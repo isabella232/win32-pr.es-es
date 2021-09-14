@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5ceff1f9a4ef2f6c95a8dac12ff689995efe4fdd3619cf48e11043967fec053
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 370548bb9899ce84173f2321a129aaeda1c6fe81
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118385518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159746"
 ---
 # <a name="lcid-switch"></a>Modificador /lcid
 
@@ -38,7 +38,7 @@ Especifica el identificador de configuración regional de 32 bits que se usa Win
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Dentro de los archivos de entrada, puede usar comentarios localizados, cadenas, cadenas de ayuda e identificadores. En concreto, el **modificador /lcid** proporciona compatibilidad completa con DBCS, para representar idiomas asiáticos como japonés, chino y coreano.
 

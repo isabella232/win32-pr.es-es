@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 33aeb4bd59730c48407220fede0cec0a606614f4a9692cd0e9852d56757a7f9c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0bcf439c8a282e42a28126824ffb70630a341e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133218"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160545"
 ---
 # <a name="getclientversion-function"></a>Función getClientVersion
 
@@ -38,7 +38,7 @@ Cadena delimitada por punto y coma que contiene direcciones IP.
 
 Lista de direcciones IP delimitadas por punto y coma ordenadas o una cadena vacía si no se puede ordenar la lista de direcciones IP.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Actualmente, esta función devuelve la versión 1.0.
 

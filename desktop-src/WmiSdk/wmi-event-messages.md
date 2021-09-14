@@ -1,29 +1,29 @@
 ---
-description: En la lista siguiente se enumeran los eventos admitidos por los registros wmi en Windows Vista y sistemas operativos posteriores.
+description: En la lista siguiente se enumeran los eventos admitidos por los registros wmi Windows Vista y sistemas operativos posteriores.
 ms.assetid: ad8891cc-0b76-404d-81fc-961bcdbfae32
 ms.tgt_platform: multiple
 title: Mensajes de eventos WMI
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7bb2b0a732d79c8b8c11e8bd14a217ef1ee81eb29bead4a885003ea98f82898
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 543e7131ac0c73a9f1e0f111dafe90197989a33d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967023"
 ---
 # <a name="wmi-event-messages"></a>Mensajes de eventos WMI
 
-En la lista siguiente se enumeran los eventos admitidos por los registros wmi en Windows Vista y sistemas operativos posteriores.
+En la lista siguiente se enumeran los eventos admitidos por los registros wmi Windows Vista y sistemas operativos posteriores.
 
 > [!Note]  
-> La siguiente documentación está diseñada para desarrolladores y administradores de TI. Si está intentando resolver un mensaje de error de WMI en el sistema principal, consulte el sitio [web Soporte técnico de Microsoft](https://support.microsoft.com/) web.
+> La siguiente documentación está diseñada para desarrolladores y administradores de TI. Si está intentando resolver un mensaje de error de WMI en el sistema principal, consulte el sitio [web Soporte técnico de Microsoft](https://support.microsoft.com/) wmi.
 
  
 
 <dl> <dt>
 
-<span id="WBEM_MC_REPOSITORY_INCONSISTENT"></span><span id="wbem_mc_repository_inconsistent"></span>**INCOHERENTE DEL REPOSITORIO WBEM \_ MC \_ \_**
+<span id="WBEM_MC_REPOSITORY_INCONSISTENT"></span><span id="wbem_mc_repository_inconsistent"></span>**REPOSITORIO WBEM \_ MC \_ \_ INCOHERENTE**
 </dt> <dd> <dl> <dt>
 
 1073747424 (0x400015E0)
@@ -44,7 +44,7 @@ El servicio de instrumentación de administración de Windows detectó una incoh
 
 
 
-Se ha registrado un proveedor, %1, en el espacio de nombres %2 de Windows Management Instrumentation para usar la cuenta LocalSystem. Esta cuenta tiene privilegios y el proveedor puede provocar una infracción de seguridad si no suplanta correctamente las solicitudes de usuario.
+Se ha registrado un proveedor, %1, en el espacio de nombres %2 Windows Management Instrumentation para usar la cuenta LocalSystem. Esta cuenta tiene privilegios y el proveedor puede producir una infracción de seguridad si no suplanta correctamente las solicitudes de usuario.
 
 
 </dt> </dl> </dd> <dt>
@@ -57,7 +57,7 @@ Se ha registrado un proveedor, %1, en el espacio de nombres %2 de Windows Manage
 
 
 
-Error %1 al intentar cargar MOF %2 al recuperar . Archivo MOF marcado con autorrecuperación.
+Error %1 encontrado al intentar cargar MOF %2 al recuperar . Archivo MOF marcado con autorrecuperación.
 
 
 </dt> </dl> </dd> <dt>
@@ -88,7 +88,7 @@ El proveedor de eventos %1 intentó registrar una consulta sintácticamente no v
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_MC_INVALID_EVENT_PROVIDER_INTRINSIC_QUERY"></span><span id="wbem_mc_invalid_event_provider_intrinsic_query"></span>**CONSULTA INTRÍNSECA DEL PROVEEDOR DE EVENTOS NO \_ \_ VÁLIDO \_ \_ \_ DE \_ WBEM MC**
+<span id="WBEM_MC_INVALID_EVENT_PROVIDER_INTRINSIC_QUERY"></span><span id="wbem_mc_invalid_event_provider_intrinsic_query"></span>**WBEM MC INVALID EVENT PROVIDER INTRINSIC QUERY (CONSULTA INTRÍNSECA DEL PROVEEDOR DE EVENTOS NO VÁLIDO DE WBEM \_ \_ \_ \_ \_ \_ MC)**
 </dt> <dd> <dl> <dt>
 
 3221225494 (0xC0000016)
@@ -114,7 +114,7 @@ El proveedor de eventos %1 intentó registrar la consulta "%2" en el espacio de 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_MC_EVENT_PROVIDER_QUERY_NOT_FOUND"></span><span id="wbem_mc_event_provider_query_not_found"></span>**NO SE ENCONTRÓ LA CONSULTA DEL PROVEEDOR DE EVENTOS WBEM \_ \_ \_ \_ \_ \_ MC**
+<span id="WBEM_MC_EVENT_PROVIDER_QUERY_NOT_FOUND"></span><span id="wbem_mc_event_provider_query_not_found"></span>**NO SE ENCONTRÓ \_ LA CONSULTA DEL PROVEEDOR DE \_ \_ \_ EVENTOS \_ \_ WBEM MC**
 </dt> <dd> <dl> <dt>
 
 3221225496 (0xC0000018)
@@ -135,7 +135,7 @@ El proveedor de eventos %1 intentó registrar la consulta "%2" cuya clase de des
 
 
 
-El proveedor de eventos %1 intentó registrar la &quot; consulta %2 &quot; cuya clase de destino &quot; %3 &quot; no es una clase de eventos. La consulta se omitirá. Póngase en contacto con el proveedor de la aplicación.
+El proveedor de eventos %1 intentó registrar la &quot; consulta %2 cuya clase de destino &quot; &quot; %3 &quot; no es una clase de eventos. La consulta se omitirá. Póngase en contacto con el proveedor de la aplicación.
 
 
 </dt> </dl> </dd> <dt>
@@ -148,12 +148,12 @@ El proveedor de eventos %1 intentó registrar la &quot; consulta %2 &quot; cuya 
 
 
 
-No se pudo inicializar wmi core o subsistema del proveedor o subsistema de eventos con el número de error %1. Esto podría deberse a una versión de WMI mal instalada, a un error de actualización del repositorio WMI, a un espacio en disco insuficiente o a una memoria insuficiente.
+No se pudo inicializar wmi core o subsistema del proveedor o subsistema de eventos con el número de error %1. Esto podría deberse a una versión mal instalada de WMI, a un error de actualización del repositorio WMI, a un espacio en disco insuficiente o a una memoria insuficiente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_MC_ADAP_CONNECTION_FAILURE"></span><span id="wbem_mc_adap_connection_failure"></span>**ERROR DE CONEXIÓN DE WBEM \_ MC \_ \_ \_ ADAP**
+<span id="WBEM_MC_ADAP_CONNECTION_FAILURE"></span><span id="wbem_mc_adap_connection_failure"></span>**WBEM \_ MC \_ ADAP \_ CONNECTION \_ FAILURE**
 </dt> <dd> <dl> <dt>
 
 3221225515 (0xC000002B)
@@ -161,7 +161,7 @@ No se pudo inicializar wmi core o subsistema del proveedor o subsistema de event
 
 
 
-Windows El ADAP de instrumentación de administración no pudo conectarse al espacio de nombres %1 con el siguiente error %2.
+Windows ADAP de instrumentación de administración no pudo conectarse al espacio de nombres %1 con el siguiente error %2.
 
 
 </dt> </dl> </dd> <dt>
@@ -174,7 +174,7 @@ Windows El ADAP de instrumentación de administración no pudo conectarse al esp
 
 
 
-Windows El ADAP de instrumentación de administración no pudo guardar el objeto %1 en el espacio de nombres %2 debido al siguiente error %3.
+Windows ADAP de instrumentación de administración no pudo guardar el objeto %1 en el espacio de nombres %2 debido al siguiente error %3.
 
 
 </dt> </dl> </dd> <dt>
@@ -187,7 +187,7 @@ Windows El ADAP de instrumentación de administración no pudo guardar el objeto
 
 
 
-Windows Management Instrumentation ADAP no pudo crear la clase base Win32 \_ Perf en %1:Result=%2.
+Windows ADAP de instrumentación de administración no pudo crear la clase base Perf de Win32 \_ en %1:Result=%2.
 
 
 </dt> </dl> </dd> <dt>
@@ -200,7 +200,7 @@ Windows Management Instrumentation ADAP no pudo crear la clase base Win32 \_ Per
 
 
 
-Windows Management Instrumentation ADAP no pudo crear la clase \_ base Win32 PerfRawData %1.
+Windows ADAP de instrumentación de administración no pudo crear la clase \_ base Win32 PerfRawData %1.
 
 
 </dt> </dl> </dd> <dt>
@@ -213,7 +213,7 @@ Windows Management Instrumentation ADAP no pudo crear la clase \_ base Win32 Per
 
 
 
-El Windows management instrumentation service no pudo cargar los archivos del repositorio en el directorio *%windir% \\ system32 \\ wbem \\ repository*. Esto puede deberse a daños en los archivos del repositorio, la configuración de seguridad de este directorio, la falta de espacio en disco u otros problemas de recursos del sistema, como la falta de memoria. Si este error se produce cada vez que se reinicia el equipo, es posible que el administrador de este equipo tenga que detener el servicio WMI, revisar la configuración de seguridad en esta carpeta y los archivos de esta carpeta y ejecutar WMIDiag para validar el estado de Windows Management Instrumentation.
+El Windows management instrumentation service no pudo cargar los archivos del repositorio en el directorio *%windir% \\ system32 \\ wbem \\ repository*. Esto puede deberse a daños en los archivos del repositorio, la configuración de seguridad en este directorio, la falta de espacio en disco u otros problemas de recursos del sistema, como la falta de memoria. Si este error se produce cada vez que se reinicia el equipo, es posible que el administrador de este equipo tenga que detener el servicio WMI, revisar la configuración de seguridad en esta carpeta y los archivos de esta carpeta y ejecutar WMIDiag para validar el estado de Windows Management Instrumentation.
 
 
 </dt> </dl> </dd> <dt>
@@ -226,7 +226,7 @@ El Windows management instrumentation service no pudo cargar los archivos del re
 
 
 
-Se denegó el acceso al espacio de nombres %1 porque el espacio de nombres está marcado con RequiresEncryption, pero el script o la aplicación intentaron conectarse a este espacio de nombres con un nivel de autenticación por debajo de **Pkt \_ Privacy**. Cambie el nivel de autenticación **a Pkt \_ Privacy** y vuelva a ejecutar el script o la aplicación.
+Se denegó el acceso al espacio de nombres %1 porque el espacio de nombres está marcado con RequiresEncryption, pero el script o la aplicación intentaron conectarse a este espacio de nombres con un nivel de autenticación por debajo de **Pkt \_ Privacy**. Cambie el nivel de autenticación a **Pkt \_ Privacy** y vuelva a ejecutar el script o la aplicación.
 
 
 </dt> </dl> </dd> <dt>
@@ -270,7 +270,7 @@ Durante el inicio del servicio, el Windows Management Instrumentation no pudo en
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_MC_WBEM_STARTED_SUCESSFULLY"></span><span id="wbem_mc_wbem_started_sucessfully"></span>**WBEM \_ MC \_ WBEM \_ STARTED \_ SUCESSFULLY**
+<span id="WBEM_MC_WBEM_STARTED_SUCESSFULLY"></span><span id="wbem_mc_wbem_started_sucessfully"></span>**WBEM \_ MC \_ WBEM SE \_ INICIÓ \_ CORRECTAMENTE**
 </dt> <dd> <dl> <dt>
 
 3221231087 (0xC00015EF)
@@ -304,7 +304,7 @@ Windows Subsistemas del servicio de instrumentación de administración iniciali
 
 
 
-Se devolvió el número de error %1 al intentar inicializar Windows Management Instrumentation Service. Esto podría deberse a una versión de WMI mal instalada, a un error de actualización del repositorio WMI, a un espacio en disco insuficiente o a una memoria insuficiente.
+Se devolvió el número de error %1 al intentar inicializar Windows Management Instrumentation Service. Esto podría deberse a una versión mal instalada de WMI, a un error de actualización del repositorio WMI, a un espacio en disco insuficiente o a una memoria insuficiente.
 
 
 </dt> </dl> </dd> <dt>
@@ -317,7 +317,7 @@ Se devolvió el número de error %1 al intentar inicializar Windows Management I
 
 
 
-Windows El repositorio de instrumentación de administración se ha creado correctamente mediante el mecanismo de recuperación automática.
+Windows Repositorio de instrumentación de administración que se ha creado correctamente mediante el mecanismo de recuperación automática.
 
 
 </dt> </dl> </dd> </dl>
@@ -333,7 +333,7 @@ Windows El repositorio de instrumentación de administración se ha creado corre
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: En esta aplicación de ejemplo se muestra cómo crear un programa W
 ms.assetid: ec316ad8-d01d-4558-91b6-19fdbba3d520
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a437c1b576ab7c1f46341abee1c446d69aaec29585a1ed3966bd1dd289747cef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e932d3b0c524c643022904b08402507d4a603adb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118387455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159917"
 ---
 # <a name="windows-hello-world-sample"></a>Windows Hello Ejemplo de mundo
 
@@ -29,7 +29,7 @@ Para descargarlo, vaya a la raíz del repositorio de ejemplo en GitHub[(microsof
 
 Para abrir el ejemplo en Visual Studio, seleccione Archivo / Abrir **/ Project / Solución** y vaya a la ubicación en la que descomprimió la carpeta y **Windows-classic-samples-master / Samples / Win7Samples / begin / LearnWin32 / HelloWorld / cpp**. Abra el archivo **HelloWorld.sln**.
 
-Una vez cargado el ejemplo, deberá actualizarlo para que funcione con Windows 10. En el **menú Project** de Visual Studio, seleccione **Propiedades.** Actualice la **versión Windows SDK** a un SDK de Windows 10, como 10.0.17763.0 o una versión posterior. A **continuación,** cambie Conjunto de herramientas de plataforma Visual Studio 2017 o una versión posterior. Ahora puede ejecutar el ejemplo presionando F5.
+Una vez cargado el ejemplo, deberá actualizarlo para que funcione con Windows 10. En el **Project** de Visual Studio, seleccione **Propiedades.** Actualice la **versión Windows SDK** a un SDK de Windows 10, como 10.0.17763.0 o una versión posterior. A **continuación,** cambie Conjunto de herramientas de Visual Studio 2017 o una versión posterior. Ahora puede ejecutar el ejemplo presionando F5.
 
 
 ## <a name="related-topics"></a>Temas relacionados

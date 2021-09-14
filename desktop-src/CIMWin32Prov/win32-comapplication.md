@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 21ebf568ca35bd42f555eb09b69579c34d36cf359460a0bc606be90ae811e729
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 705f0f7b3c17ffca809de9a124748a74b5537f26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160318"
 ---
 # <a name="win32_comapplication-class"></a>Clase COMApplication de Win32 \_
 
@@ -46,7 +46,7 @@ class Win32_COMApplication : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ COMApplication de Win32** tiene estos tipos de miembros:
 
@@ -175,7 +175,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("Desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
@@ -238,9 +238,9 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ COMApplication de Win32** se deriva de [**\_ LOGICALElement de CIM.**](cim-logicalelement.md)
+La **clase \_ COMApplication de Win32** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -256,7 +256,7 @@ La **clase \_ COMApplication de Win32** se deriva de [**\_ LOGICALElement de CIM
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

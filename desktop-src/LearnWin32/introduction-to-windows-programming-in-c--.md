@@ -4,12 +4,12 @@ description: En esta sección se describen algunas de las convenciones básicas 
 ms.assetid: 95e9fe47-1a68-45a1-b841-1b1acef2ec92
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3c184df09db92c16bdba013ec9fdac7297cf1e378a8f0f365796a04b89efe87
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb4bc32cb1d9b19ad339b1a00c2a22844fd1fb9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159976"
 ---
 # <a name="intro-to-win32-programming-in-c"></a>Introducción a la programación de Win32 en C++
 

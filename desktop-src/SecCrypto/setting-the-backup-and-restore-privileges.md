@@ -4,12 +4,12 @@ ms.assetid: 409a9fad-7141-4ba8-ab3d-fb590366001e
 title: Establecimiento de los privilegios de copia de seguridad y restauración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 990f1009ec5b57d6dcc9f11ef505e705fb483362518d6e54f5d0c9a0167cc211
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9dd70c3726c435efa1f000add101bbf50b725bb5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118900315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160741"
 ---
 # <a name="setting-the-backup-and-restore-privileges"></a>Establecimiento de los privilegios de copia de seguridad y restauración
 

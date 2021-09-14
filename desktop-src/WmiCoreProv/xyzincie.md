@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: bc84f1550d2ba20daa0fb92dd3ce6f8d934207cff09de6d8b3e8b961bd341b6c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba7f781a83f3e6ba5aa4683003386a0478d65088
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118110786"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967183"
 ---
 # <a name="xyzincie-class"></a>XYZinCIE (clase)
 
@@ -36,7 +36,7 @@ class XYZinCIE : WmiMonitorColorCharacteristics
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase XYZinCIE** tiene estos tipos de miembros:
 
@@ -74,7 +74,7 @@ Coordenada Y.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**clase WmiMonitorColorCharacteristics**](wmimonitorcolorcharacteristics.md) contiene instancias incrustadas de la **clase XYZinCIE** para describir las características de color de un monitor.
 
@@ -84,7 +84,7 @@ Para calcular la coordenada z, en función de los valores x e y, use la relació
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -94,7 +94,7 @@ Para calcular la coordenada z, en función de los valores x e y, use la relació
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

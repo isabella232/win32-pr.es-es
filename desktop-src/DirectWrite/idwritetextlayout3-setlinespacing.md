@@ -5,7 +5,7 @@ ms.assetid: 1bfca257-189c-4d18-628c-aff8217d2775
 keywords:
 - SetLineSpacing method Direct Write
 - Método SetLineSpacing Direct Write , interfaz IDWriteTextLayout3
-- Interfaz IDWriteTextLayout3 Escritura directa, método SetLineSpacing
+- IdWriteTextLayout3 interface Direct Write , SetLineSpacing (método)
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d1c054fd63beb85303a7d163a16b55f07613b687085be53e22d814b0003c63c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 794df5b0dc993688c8bab15c927ae2c03bc18d69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118649383"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160077"
 ---
 # <a name="idwritetextlayout3setlinespacing-method"></a>Método IDWriteTextLayout3::SetLineSpacing
 
@@ -57,7 +57,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                 |

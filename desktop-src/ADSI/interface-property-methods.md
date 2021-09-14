@@ -8,20 +8,20 @@ keywords:
 - ADSI ADSI, referencia, métodos de propiedad explicados
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26fa872ea1711b23d850fe7063364712bba19d28d3e1157a81f5289f247944db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 018999d4834859cdb465bba2e6cdb9a05bd38a98
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118017092"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970419"
 ---
 # <a name="interface-property-methods"></a>Métodos de propiedad de interfaz
 
-Muchas interfaces ADSI están diseñadas para admitir Automation y, por tanto, son interfaces duales, ya que admiten el acceso de cliente a través de las interfaces [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) e [**IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) Los clientes que no son de Automatización, como los escritos en C/C++, resuelven directamente la invocación de métodos mediante el método [**IUnknown::QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) y llaman al método directamente. Los clientes de Automation, también conocidos como clientes enlazados a nombres, como los escritos en Visual Basic o Visual Basic Scripting Edition (VBScript), deben resolver indirectamente la invocación de método mediante el método [**dispinterface.**](/previous-versions/windows/desktop/automat/dispinterface)
+Muchas interfaces ADSI están diseñadas para admitir Automation y, por tanto, son interfaces duales, ya que admiten el acceso de cliente a través de las interfaces [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) e [**IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) Los clientes que no son de Automation, como los escritos en C/C++, resuelven la invocación de métodos directamente mediante el método [**IUnknown::QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) y llaman al método directamente. Los clientes de Automation, también conocidos como clientes enlazados a nombres, como los escritos en Visual Basic o Visual Basic Scripting Edition (VBScript), deben resolver indirectamente la invocación de método mediante el método [**dispinterface.**](/previous-versions/windows/desktop/automat/dispinterface)
 
 Una interfaz ADSI que admite Automation define métodos de propiedad para recuperar y modificar las propiedades de un objeto que implementa la interfaz. Los métodos de propiedad tienen nombres que tienen **get** y put anteponer a los nombres de propiedad adecuados, por \_  \_ ejemplo, **get \_ User** y **put \_ Name**.
 
-Cada **\_ método get** toma un único parámetro como salida. Este parámetro es una dirección asignada por el método de una variable del tipo de datos de propiedad. En la devolución, esta variable asume el valor actual de la propiedad solicitada. El autor de la llamada debe liberar la memoria asignada de la variable cuando la propiedad ya no sea necesaria.
+Cada **\_ método get** toma un único parámetro como salida. Este parámetro es una dirección asignada por método de una variable del tipo de datos de propiedad . En la devolución, esta variable asume el valor actual de la propiedad solicitada. El autor de la llamada debe liberar la memoria asignada de la variable cuando la propiedad ya no sea necesaria.
 
 Cada **\_ método put** toma un único parámetro como entrada para el tipo de datos de la propiedad correspondiente. El parámetro contiene un nuevo valor de la propiedad .
 
@@ -36,7 +36,7 @@ pADs->get_Name(&bstrName);
 
 
 
-En el ejemplo de código siguiente se muestra la invocación de los métodos de propiedad en clientes de automatización, que pueden ser algo diferentes. Por ejemplo, Visual Basic utiliza la notación de puntos.
+En el ejemplo de código siguiente se muestra la invocación de los métodos de propiedad en clientes de automatización, que puede ser algo diferente. Por ejemplo, Visual Basic utiliza la notación de puntos.
 
 
 ```VB

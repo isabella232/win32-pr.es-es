@@ -1,5 +1,5 @@
 ---
-description: La clase de producto CIM es una clase concreta que representa una colección de elementos físicos, características de software y otros productos \_ adquiridos como una unidad.
+description: La clase Cim Product es una clase concreta que representa una colección de elementos físicos, características de software y otros productos \_ adquiridos como una unidad.
 ms.assetid: beb20f61-de39-4221-8d29-4727104518d5
 ms.tgt_platform: multiple
 title: CIM_Product clase
@@ -21,19 +21,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a51da26b1cc7fdc0a1122b2b2d70700637465e03a0a8b39933dc0aa480d051b8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16c8541a18185d721bbdcbf23acaeb67adf508c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119921205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970311"
 ---
 # <a name="cim_product-class"></a>Cim \_ Product (clase)
 
 La **clase \_ Cim Product** es una clase concreta que representa una colección de elementos físicos, características de software y otros productos adquiridos como una unidad. La adquisición implica un acuerdo entre el proveedor y el consumidor, lo que puede tener implicaciones en las licencias de productos, el soporte técnico y la garantía.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -55,7 +55,7 @@ class CIM_Product
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Product \_ de CIM** tiene estos tipos de miembros:
 
@@ -124,7 +124,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.2")
 </dt> </dl>
 
-Nombre de producto que se usa con frecuencia.
+Nombre de producto usado con frecuencia.
 
 </dd> <dt>
 
@@ -176,7 +176,7 @@ Información de la versión del producto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase. Para las clases WMI que se derivan del **producto CIM, \_** vea [Clases Win32](win32-provider.md).
 

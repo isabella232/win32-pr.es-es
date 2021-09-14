@@ -4,7 +4,7 @@ description: Estas funciones controlan la generación de coordenadas de textura.
 ms.assetid: 958c2932-c220-412c-a85e-eed613332dea
 keywords:
 - Funciones OpenGL,glTexGen
-- Referencia de OpenGL,funciones glTexGen
+- Referencia de OpenGL, funciones glTexGen
 - referencia de las funciones OpenGL,glTexGen
 - Funciones glTexGen
 - OpenGL, funciones de textura
@@ -13,12 +13,12 @@ keywords:
 - funciones de textura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ca4079c282362e2a673e4a5e784f97388e8c8ac562b700304dad71c2a36dedd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e61dfeba97b0b208864a36f7bf60d0e85f397c9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120036345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161073"
 ---
 # <a name="gltexgen-functions"></a>Funciones glTexGen
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6eed9ee85c1977f84cff5b21d24b02e770f28eecadbd9479b129f355b4a6772c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b5bdd060ccd8ae3fb042ac3c6bf5c9e5dff306b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118259203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969260"
 ---
 # <a name="esentslvstreamingfilereadonlyexception-constructor"></a>Constructor EsentSLVStreamingFileReadOnlyException
 

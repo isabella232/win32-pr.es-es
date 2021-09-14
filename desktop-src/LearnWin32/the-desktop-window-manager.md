@@ -4,12 +4,12 @@ description: El Administrador de ventanas de escritorio
 ms.assetid: 79250d49-dad5-46c6-892d-b92dac14b417
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b99585a75bf2b25b086f09a17a0d8d93391b1f94f5018c5d4f83f90937fde620
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4fca8550134ba0c1cdafe0bd5c349061ef900a9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119896894"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159933"
 ---
 # <a name="the-desktop-window-manager"></a>El Administrador de ventanas de escritorio
 
@@ -19,7 +19,7 @@ Antes Windows Vista, un Windows programa se dibujaba directamente en la pantalla
 
 El final se debe a que ambas ventanas pintan en la misma área de memoria. A medida que se arrastra la ventana superior, se debe volver a dibujar la ventana debajo de ella. Si el repintado es demasiado lento, provoca los artefactos que se muestran en la imagen anterior.
 
-Windows Vista cambió fundamentalmente la forma en que se dibujan las ventanas, al introducir Administrador de ventanas de escritorio (DWM). Cuando el DWM está habilitado, una ventana ya no se dibuja directamente en el búfer de presentación. En su lugar, cada ventana se dibuja en un búfer de memoria fuera de pantalla, también denominado *superficie fuera de pantalla*. A continuación, el DWM compone estas superficies en la pantalla.
+Windows Vista cambió fundamentalmente la forma en que se dibujan las ventanas, al presentar Administrador de ventanas de escritorio (DWM). Cuando el DWM está habilitado, una ventana ya no se dibuja directamente en el búfer de presentación. En su lugar, cada ventana se dibuja en un búfer de memoria fuera de pantalla, también denominado *superficie fuera de pantalla*. A continuación, el DWM compone estas superficies en la pantalla.
 
 ![diagrama que muestra cómo el dwm compone el escritorio.](images/graphics05.png)
 

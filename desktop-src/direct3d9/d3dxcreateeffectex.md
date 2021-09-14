@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 19321dde9f44a2262ee3875d40bd5822e65eff9b84d1fc01656993ea584a8dc6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 979b09f852e692b4c25414607f79cd8792342755
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118988655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970884"
 ---
 # <a name="d3dxcreateeffectex-function"></a>Función D3DXCreateEffectEx
 
@@ -108,7 +108,7 @@ Cadena de parámetros de efecto que el sistema de efectos omitirá. La cadena de
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Si *pSrcData contiene* un efecto de texto, flags puede ser una combinación de marcas [D3DXSHADER](d3dxshader-flags.md) y [marcas D3DXFX;](d3dxfx.md) De lo contrario, *pSrcData* contiene un efecto binario y las únicas marcas respetadas son las marcas D3DXFX. El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
+Si *pSrcData contiene un* efecto de texto, las marcas pueden ser una combinación de marcas [D3DXSHADER](d3dxshader-flags.md) y [marcas D3DXFX;](d3dxfx.md) De lo contrario, *pSrcData contiene* un efecto binario y las únicas marcas respetadas son las marcas D3DXFX. El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
 
 </dd> <dt>
 
@@ -145,16 +145,16 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función es una versión extendida de [**D3DXCreateEffect**](d3dxcreateeffect.md) que permite a una aplicación especificar qué constantes de efecto administrará la aplicación. El sistema de efectos omite una constante administrada por la aplicación. Es decir, la aplicación es responsable de inicializar la constante, así como de guardar y restaurar su estado siempre que sea necesario.
+Esta función es una versión extendida de [**D3DXCreateEffect**](d3dxcreateeffect.md) que permite a una aplicación especificar qué constantes de efecto administrará la aplicación. El sistema de efectos omite una constante administrada por la aplicación. Es decir, la aplicación es responsable de inicializar la constante, así como de guardar y restaurar su estado siempre que corresponda.
 
 Esta función comprueba cada constante de pSkipConstants para ver lo siguiente:
 
 -   Está enlazado a un registro constante.
 -   Solo se usa en el código del sombreador HLSL.
 
-Si una constante se denomina en la cadena que no está presente en el efecto, se omite.
+Si se denomina una constante en la cadena que no está presente en el efecto, se omite.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -167,7 +167,7 @@ Si una constante se denomina en la cadena que no está presente en el efecto, se
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
