@@ -1,7 +1,7 @@
 ---
 description: Marca que indica si la calidad ha cambiado.
 ms.assetid: 9084ab1d-b6a0-4e87-a653-86e64c74b07f
-title: Miembro CTransformFilter::m_bQualityChanged (Transfrm.h)
+title: CTransformFilter::m_bQualityChanged miembro (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 454d8bad4ced2291b061b09992ad450d9e483f269e3fd72b192adbbacb077d7c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: abd0371389d6c17a074580643a06c3fe25bdf433
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246669"
 ---
 # <a name="ctransformfilterm_bqualitychanged-member"></a>Miembro CTransformFilter::m \_ bQualityChanged
 
-Marca que indica si la calidad ha cambiado. La primera vez que el filtro quita una muestra, envía un evento [**EC \_ QUALITY \_ CHANGE**](ec-quality-change.md) al administrador de gráficos de filtros y establece esta marca en **TRUE.** No envía este evento de nuevo hasta que el filtro se detiene y se reinicia, aunque siga colocando muestras mientras tanto.
+Marca que indica si la calidad ha cambiado. La primera vez que el filtro quita un ejemplo, envía un evento [**EC \_ QUALITY \_ CHANGE**](ec-quality-change.md) al administrador de gráficos de filtros y establece esta marca en **TRUE.** No envía este evento de nuevo hasta que el filtro se detiene y se reinicia, incluso si sigue colocando muestras mientras tanto.
 
 ## <a name="syntax"></a>Sintaxis
 

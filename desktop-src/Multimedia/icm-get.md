@@ -1,6 +1,6 @@
 ---
 title: ICM_GET mensaje (Vfw.h)
-description: El ICM GET recupera un valor DWORD definido por la aplicación \_ de un controlador de compresión de vídeo.
+description: El ICM get recupera un valor DWORD definido por la aplicación \_ de un controlador de compresión de vídeo.
 ms.assetid: 288c0053-16a1-4547-b748-da218a0b588c
 keywords:
 - ICM_GET mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: e23cd994546be41b5f938331b2dc632897635c32
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370580"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246273"
 ---
 # <a name="icm_get-message"></a>\_ICM Mensaje GET
 
-El **ICM \_ GET** recupera un valor **DWORD** definido por la aplicación de un controlador de compresión de vídeo.
+El **ICM \_ get** recupera un valor **DWORD** definido por la aplicación de un controlador de compresión de vídeo.
 
 
 ```C++

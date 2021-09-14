@@ -9,12 +9,12 @@ keywords:
 - ASF (formato de sistemas avanzados), pasar muestras comprimidas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eaa6bf5298e465716fe7a60eb5de2459f09be405611ac7322b534804bbbc997
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0c43fed30aa89e83c157479257e78fbab4acd98
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117843659"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247137"
 ---
 # <a name="writing-compressed-samples"></a>Escribir ejemplos comprimidos
 

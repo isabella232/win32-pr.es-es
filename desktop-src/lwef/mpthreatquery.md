@@ -1,9 +1,9 @@
 ---
-title: Función MpThreatQuery (MpClient. h)
-description: Se usa para consultar información estática (como gravedad y categoría) o localizada (como descripción de la categoría y consejos) sobre una amenaza determinada.
+title: Función MpThreatQuery (MpClient.h)
+description: Se usa para consultar información estática (como gravedad y categoría) o localizada (por ejemplo, descripción de categoría y consejos) sobre una amenaza determinada.
 ms.assetid: A06854B2-8444-46A4-A53F-FD5FEAFF47B7
 keywords:
-- Función MpThreatQuery características de entorno heredado de Windows
+- Función MpThreatQuery Características heredadas del Windows entorno
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 21d38a3734f9d98f3bd61143d4fe58bd606c7508
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168274"
 ---
-# <a name="mpthreatquery-function"></a>MpThreatQuery función)
+# <a name="mpthreatquery-function"></a>Función MpThreatQuery
 
-Se usa para consultar información estática (como gravedad y categoría) o localizada (como descripción de la categoría y consejos) sobre una amenaza determinada.
+Se usa para consultar información estática (como gravedad y categoría) o localizada (por ejemplo, descripción de categoría y consejos) sobre una amenaza determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,39 +43,39 @@ HRESULT WINAPI MpThreatQuery(
 
 <dl> <dt>
 
-*hMpHandle* \[ de\]
+*hMpHandle* \[ En\]
 </dt> <dd>
 
 Tipo: **MPHANDLE**
 
-Identificador de la interfaz del administrador de protección contra malware. La función [**MpManagerOpen**](mpmanageropen.md) devuelve este identificador.
+Controle la interfaz del administrador de protección contra malware. La función [**MpManagerOpen**](mpmanageropen.md) devuelve este identificador.
 
 </dd> <dt>
 
-*ThreatID* \[ de\]
+*ThreatID* \[ En\]
 </dt> <dd>
 
-Tipo: **\_ ID. de MPTHREAT**
+Tipo: **Id. \_ de MPTHREAT**
 
-Identificador de amenaza para el que se solicita información.
+Identificador de amenazas para el que se solicita información.
 
 </dd> <dt>
 
-*ppThreatInfo* \[ enuncia\]
+*ppThreatInfo* \[ out\]
 </dt> <dd>
 
-Tipo: **PMPTHREAT \_ info \** _
+Tipo: **PMPTHREAT \_ \* INFO**
 
-Devuelve un puntero a una estructura de información de amenazas, [_ *MPTHREAT \_ info* *](mpthreat-info.md). La estructura contiene información como el identificador, el nombre y la gravedad de la amenaza.
+Devuelve un puntero a una estructura de información de amenazas, [**MPTHREAT \_ INFO**](mpthreat-info.md). La estructura contiene información como el identificador de amenaza, el nombre y la gravedad.
 
 </dd> <dt>
 
 *ppThreatLocalizedInfo* \[ out, opcional\]
 </dt> <dd>
 
-Tipo: **PMPTHREAT \_ \_ información \* localizada* _
+Tipo: **PMPTHREAT \_ LOCALIZED \_ INFO \***
 
-Devuelve un puntero a una estructura que contiene información localizada sobre la amenaza. Puede pasar _ *null** si no está interesado en información localizada sobre la amenaza. Consulte [**\_ \_ información localizada de MPTHREAT**](mpthreat-localized-info.md).
+Devuelve un puntero a una estructura que contiene información localizada sobre la amenaza. Puede pasar **NULL si** no está interesado en la información localizada sobre la amenaza. Vea [**MPTHREAT LOCALIZED INFO ( \_ INFORMACIÓN \_ LOCALIZADA DE MPTHREAT).**](mpthreat-localized-info.md)
 
 </dd> </dl>
 
@@ -83,9 +83,9 @@ Devuelve un puntero a una estructura que contiene información localizada sobre 
 
 Tipo: **HRESULT**
 
-Si la función se ejecuta correctamente, el valor devuelto es **S \_ OK**.
+Si la función se realiza correctamente, el valor devuelto es **S \_ OK**.
 
-Si se produce un error en la función, el valor devuelto es un código **HRESULT** erróneo. El autor de la llamada puede usar la función [**MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
+Si se produce un error en la función, el valor devuelto es un **código HRESULT con** errores. El autor de la llamada puede usar [**la función MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,9 +93,9 @@ Si se produce un error en la función, el valor devuelto es un código **HRESULT
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
@@ -107,13 +107,13 @@ Si se produce un error en la función, el valor devuelto es un código **HRESULT
 [**MpErrorMessageFormat**](mperrormessageformat.md)
 </dt> <dt>
 
-[**MpManagerOpen**](mpmanageropen.md)
+[**MpManagerAbrir**](mpmanageropen.md)
 </dt> <dt>
 
-[**información de MPTHREAT \_**](mpthreat-info.md)
+[**INFORMACIÓN DE \_ MPTHREAT**](mpthreat-info.md)
 </dt> <dt>
 
-[**\_información localizada de MPTHREAT \_**](mpthreat-localized-info.md)
+[**INFORMACIÓN LOCALIZADA DE MPTHREAT \_ \_**](mpthreat-localized-info.md)
 </dt> </dl>
 
  

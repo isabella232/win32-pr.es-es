@@ -4,12 +4,12 @@ ms.assetid: f7a3598f-57dd-4178-896f-31b4d2f65e56
 title: Esquema de perfil de banda ancha móvil v3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3fb4e939da9cbedadf8549539f73d0776e1636c6a0aea64a2cee2e7134e3edc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea42c0c4b6384b85e5373d6537f52cf8c9499e8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117881578"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168182"
 ---
 # <a name="mobile-broadband-profile-schema-v3"></a>Esquema de perfil de banda ancha móvil v3
 

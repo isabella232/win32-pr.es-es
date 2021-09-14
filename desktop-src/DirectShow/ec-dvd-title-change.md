@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 667d8f11270865f1caa4549377db2cccb278053ea9848b71aa38f0d5f7528689
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9539d29704797b1c7b001d426250762d2ed27b3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119686215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246501"
 ---
 # <a name="ec_dvd_title_change"></a>CAMBIO \_ DE TÍTULO DEL DVD DE \_ \_ EC
 
@@ -42,9 +42,9 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los números de título oscilan entre 1 y 99. Este número indica el TTN, que es el número de título con respecto a todo el disco, no el TTN de VTS, que es el número de título con respecto a solo un \_ VTS actual.
+Los números de título oscilan entre 1 y 99. Este número indica el TTN, que es el número de título con respecto a todo el disco, no el TTN vts, que es el número de título con respecto a solo un \_ VTS actual.
 
 Este evento se genera en el dominio de título.
 

@@ -9,12 +9,12 @@ keywords:
 - ADSI del proveedor WinNT, ejemplos de administración de usuarios,Usuario no puede cambiar contraseña, lectura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 761a1ef0a332f1cdfd7dad1b20426b749618ed2286832c7ff16b207cee57c176
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dd075bfb6700779b60f9e578a4e89957487a2646
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119637555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246981"
 ---
 # <a name="reading-user-cannot-change-password-winnt-provider"></a>Leer que el usuario no puede cambiar la contraseña (proveedor winNT)
 

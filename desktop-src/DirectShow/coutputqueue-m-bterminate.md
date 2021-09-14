@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b4f85cdc52ed96b2a370ba5e4e02a5981e05fbcf540492e3de91a74363600c70
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aaa51bad8e1c5c133497666b6272dee0b590e43e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119634215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246746"
 ---
-# <a name="coutputqueuem_bterminate-member"></a>Miembro COutputQueue::m \_ bTerminate
+# <a name="coutputqueuem_bterminate-member"></a>COutputQueue::m \_ bTerminate member
 
 Marca que especifica si el subproceso debe finalizar. Si **es TRUE,** el subproceso finaliza.
 

@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Win32_NetworkAdapter métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b13463ffa929a035344c58ea95d157f536949b4bce51514f0ce7ba5d167d100
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 915fa1e5afdaf1fd26cd0c8f7806b435d26ec962
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246975"
 ---
 # <a name="win32_networkadapter-methods"></a>Métodos networkAdapter de Win32 \_
 
@@ -19,7 +19,7 @@ La [**clase \_ NetworkAdapter de Win32**](win32-networkadapter.md) expone los m�
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Método Enable**](enable-method-in-class-win32-networkadapter.md)
--   [**Método Disable**](disable-method-in-class-win32-networkadapter.md)
+-   [**Disable (método)**](disable-method-in-class-win32-networkadapter.md)
 
  
 

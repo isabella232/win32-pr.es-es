@@ -4,18 +4,18 @@ ms.assetid: ae1ec184-afc3-4ec1-9b92-f53656293446
 title: Datos DV en formato de archivo AVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c048cb42fa3ba49457c115944075c064b9cfd4c31263519e9d5af3e5f0a268a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 65f1393bfe4bbee4d080d90755f33cfa7f4a7fa4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119749117"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246620"
 ---
 # <a name="dv-data-in-the-avi-file-format"></a>Datos DV en formato de archivo AVI
 
 Microsoft ha especificado el formato para el almacenamiento de datos de vídeo digital (DV) en archivos AVI. El cumplimiento de esta especificación garantizará que los archivos AVI creados en este formato sean compatibles con versiones futuras de la arquitectura de vídeo digital de DirectShow para Windowsplatform.
 
-En este artículo se describe el formato de los archivos AVI que contienen datos DV. Se definen los FOURCC específicos (códigos de cuatro caracteres) para los flujos de datos DV intercalados y los controladores de flujo de descompresión/descompresión de DV. Se define la estructura de formato de secuencia para los datos DV. Se especifican especificaciones para dos métodos de almacenamiento de datos DV en el formato de archivo AVI.
+En este artículo se describe el formato de los archivos AVI que contienen datos DV. Se definen los FOURCC específicos (códigos de cuatro caracteres) para los flujos de datos DV intercalados y los controladores de flujo de dv-and-descompresión/dv. Se define la estructura de formato de secuencia para los datos DV. Se especifican especificaciones para dos métodos de almacenamiento de datos DV en formato de archivo AVI.
 
 Se supone que el lector está familiarizado con el formato de datos DV. (Este formato se define en la Especificación de *VCR digitales* de uso del consumidor, también denominada libro azul).
 
@@ -23,24 +23,24 @@ Hay dos tipos de archivos DV AVI: archivos AVI que contienen un flujo de datos D
 
 **Archivos AVI que contienen un flujo de datos DV (tipo 1)**
 
-Los datos DV intercalados se pueden almacenar en su formato nativo como una sola secuencia dentro de un archivo AVI RIFF. Esto tiene la ventaja de usar la cantidad mínima de almacenamiento de datos para DV. La principal desventaja es que este formato de archivo no es compatible con versiones anteriores de Video para Windows, ya que no contiene una secuencia de vídeo "vids" ni de audio "auds". Se proporciona compatibilidad con la secuencia DV intercalada a través de los filtros [DV Muxer](dv-muxer-filter.md) y [DV Splitter](dv-splitter-filter.md) proporcionados con DirectShow.
+Los datos DV intercalados se pueden almacenar en su formato nativo como una sola secuencia dentro de un archivo AVI RIFF. Esto tiene la ventaja de usar la cantidad mínima de almacenamiento de datos para DV. La desventaja principal es que este formato de archivo no es compatible con versiones anteriores de Video para Windows, ya que no contiene una secuencia de vídeo "vids" ni una secuencia de audio "auds". Se proporciona compatibilidad con la secuencia DV intercalada a través de los filtros [DV Muxer](dv-muxer-filter.md) y [DV Splitter](dv-splitter-filter.md) proporcionados con DirectShow.
 
-Los datos DV se pueden almacenar en una sola secuencia dentro de un archivo AVI RIFF especificando los FOURCC "iavs" (secuencia de audio y vídeo intercalados) (código de cuatro caracteres) en el miembro **fccType** y cualquiera de los FOURC "dvsd", "dvhd" o "dvsl" en el miembro **fccHandler** del fragmento de encabezado de secuencia "strh". Los fotogramas por segundo de la secuencia de vídeo deben especificarse en los miembros **dwRate** y **dwScale** y en el número total de bloques de vídeo del fragmento "mgula" del **miembro dwLength.**
+Los datos dv se pueden almacenar en una sola secuencia dentro de un archivo AVI RIFF especificando los FOURCC "iavs" (secuencia de audio y vídeo intercalada) FOURCC (código de cuatro caracteres) en el miembro **fccType** y cualquiera de los FOURC 'dvsd', 'dvhd' o 'dvsl' en el miembro **fccHandler** del fragmento de encabezado de secuencia 'strh'. Los fotogramas por segundo de la secuencia de vídeo deben especificarse en los miembros **dwRate** y **dwScale** y el número total de bloques de vídeo en el fragmento "mtran" del **miembro dwLength.**
 
-El controlador de secuencias 'dvsd' FOURCC especifica que los datos DV se definen en la parte 2 de la especificación de vcrs digitales de uso *del consumidor.* El vídeo tiene el formato de 525 líneas a 29,97 Hz (525-60) o 625 líneas a 25,00 Hz (625-50).
+El controlador de secuencias "dvsd" FOURCC especifica que los datos de DV se definen en la parte 2 de la especificación de *vcrs digitales* de uso del consumidor. El vídeo tiene el formato de 525 líneas a 29,97 Hz (525-60) o 625 líneas a 25,00 Hz (625-50).
 
-El controlador de secuencias 'dvhd' FOURCC especifica que los datos DV se definen en la parte 3 de la especificación de vcrs digitales de uso *del consumidor.* El vídeo tiene el formato de 1125 líneas a 30,00 Hz (1125-60) o 1250 líneas a 25,00 Hz (1250-50).
+El controlador de secuencias 'dvhd' FOURCC especifica que los datos de DV se definen en la parte 3 de la especificación de *vcrs digitales* de uso del consumidor. El vídeo tiene el formato de 1125 líneas a 30,00 Hz (1125-60) o 1250 líneas a 25,00 Hz (1250-50).
 
-El controlador de secuencias 'dvsl' FOURCC especifica que los datos DV se definen en la parte 6 de la especificación de vcrs digitales de uso *del consumidor.* El vídeo tiene el formato de SD (SDL) de compresión alta.
+El controlador de secuencias "dvsl" FOURCC especifica que los datos de DV se definen en la parte 6 de especificación de *vcrs digitales* de uso del consumidor. El vídeo tiene el formato de SD de alta compresión (SDL).
 
 > [!Note]  
 > En el resto de este artículo se proporcionan definiciones para secuencias "dvsd".
 
  
 
-El fragmento de encabezado de secuencia debe ir seguido de un fragmento de formato de secuencia [**DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo)
+El fragmento de encabezado de flujo debe ir seguido de un [**fragmento de formato de secuencia DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo)
 
-Los datos dv reales se almacenan como fragmentos "dc" en el fragmento \# "mtransmisión" (el en el formato \# representa el identificador de \# \# flujo). Cada fragmento contiene un fotograma de datos, ya sea 10 o 12 secuencias DV DIF para sistemas 525-60 o 625-50, respectivamente. El formato de secuencia DIF DV SD ('dvsd') se define en la parte 2 de la especificación de *vcrs digitales* de uso del consumidor.
+Los datos de DV reales se almacenan como fragmentos de "dc" en el fragmento "m "). El objeto en formato \# \# representa el identificador \# \# de flujo. Cada fragmento contiene un marco de datos, ya sea 10 o 12 secuencias DV DIF para sistemas 525-60 o 625-50, respectivamente. El formato de secuencia DIF DV SD ('dvsd') se define en la parte 2 de la especificación de *vcrs digitales* de uso del consumidor.
 
 En el ejemplo siguiente se muestra el formulario RIFF de AIFF para un archivo AVI con un flujo de datos DV, expandido con fragmentos de encabezado completados.
 
@@ -92,22 +92,22 @@ En el ejemplo siguiente se muestra el formulario RIFF de AIFF para un archivo AV
 
 **Archivos AVI que contienen vídeo DV y audio DV Secuencias (tipo 2)**
 
-Los datos DV intercalados se pueden dividir en una secuencia de vídeo y de una a cuatro secuencias de audio dentro de un archivo AVI RIFF. Esto tiene la ventaja de ser compatible con versiones anteriores de Video para Windows, ya que contiene una secuencia de vídeo estándar "vids" y al menos una secuencia de audio estándar "auds". La principal desventaja es que este formato de archivo requiere que los datos de audio se almacenen redundantemente como secuencias de audio. La secuencia de "vídeo" es realmente el flujo de datos DV intercalado nativo. Sin embargo, como una secuencia estándar "vids" con un tipo de controlador de "dvsd", se usa el descodificador de vídeo [DV.](dv-video-decoder-filter.md) Este formato también requiere el uso del filtro [divisor DV](dv-splitter-filter.md) para dividir los archivos "capturados" antes de escribirlos como archivos AVI.
+Los datos dv intercalados se pueden dividir en una secuencia de vídeo y entre una y cuatro secuencias de audio dentro de un archivo AVI RIFF. Esto tiene la ventaja de ser compatible con versiones anteriores de Video para Windows, ya que contiene una secuencia de vídeo estándar "vids" y al menos una secuencia de audio estándar "auds". La principal desventaja es que este formato de archivo requiere que los datos de audio se almacenen de forma redundante como secuencias de audio. La secuencia de "vídeo" es realmente el flujo de datos DV intercalado nativo. Sin embargo, como una secuencia estándar "vids" con un tipo de controlador de "dvsd", se usa el descodificador de vídeo [DV.](dv-video-decoder-filter.md) Este formato también requiere el uso del filtro [divisor DV](dv-splitter-filter.md) para dividir los archivos "capturados" antes de escribirlos como archivos AVI.
 
-Los datos DV se pueden almacenar como una secuencia de vídeo con un número independiente de secuencias de audio en un archivo AVI RIFF. La secuencia de vídeo se especifica con un encabezado de secuencia de vídeo estándar (el valor del miembro **fccType** es "vids"). El **miembro fccHandler** se especifica como "dvsd", "dvhd" o "dvsl". Los fotogramas por segundo de la secuencia de vídeo deben especificarse en los miembros **dwRate** y **dwScale** y en el número total de bloques de vídeo del fragmento "mgula" del **miembro dwLength.**
+Los datos DV se pueden almacenar como una secuencia de vídeo con un número independiente de secuencias de audio en un archivo AVI RIFF. La secuencia de vídeo se especifica con un encabezado de secuencia de vídeo estándar (el valor del miembro **fccType** es "vids"). El **miembro fccHandler** se especifica como "dvsd", "dvhd" o "dvsl". Los fotogramas por segundo de la secuencia de vídeo deben especificarse en los miembros **dwRate** y **dwScale** y el número total de bloques de vídeo en el fragmento "mtran" del **miembro dwLength.**
 
-En este archivo AVI que contiene vídeo DV como secuencia "vids" y audio DV como secuencias "auds" forma de DV, el fragmento de formato de secuencia de vídeo es una estructura [**BITMAPINFOHEADER estándar.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) Opcionalmente, el fragmento de formato de secuencia se puede ampliar para incluir el fragmento [**DVINFO,**](/windows/desktop/api/strmif/ns-strmif-dvinfo) aumentando el tamaño del fragmento de formato de secuencia de 40 bytes (tamaño de la estructura **BITMAPINFOHEADER)** a 72 bytes (tamaño de **bitmapinfoheader** más estructuras **DVINFO)** y siguiendo inmediatamente la estructura de datos **BITMAPINFOHEADER** con una estructura de datos **DVINFO.**
+En este archivo AVI que contiene vídeo DV como secuencia "vids" y audio DV como secuencias "auds" forma de DV, el fragmento de formato de secuencia de vídeo es una estructura [**BITMAPINFOHEADER estándar.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) Opcionalmente, el fragmento de formato de secuencia se puede ampliar para incluir el fragmento [**DVINFO,**](/windows/desktop/api/strmif/ns-strmif-dvinfo) al aumentar el tamaño del fragmento de formato de secuencia de 40 bytes (tamaño de la estructura **BITMAPINFOHEADER)** a 72 bytes (tamaño de las estructuras **BITMAPINFOHEADER** más **DVINFO)** e inmediatamente después de la estructura de datos **BITMAPINFOHEADER** con una estructura de datos **DVINFO.**
 
-Las secuencias de audio se especifican con un encabezado de secuencia de audio estándar (el valor del miembro **fccType** es "auds"). El **miembro fccHandler** no se usa para las secuencias de audio.
+Las secuencias de audio se especifican con un encabezado de secuencia de audio estándar (el valor del miembro **fccType** es "auds"). El **miembro fccHandler** no se usa para secuencias de audio.
 
-Los datos de vídeo DV se almacenan como fragmentos "dc", tal y como se define en la descripción anterior de un archivo AVI con un solo dato DV, y los datos de audio se almacenan como fragmentos "wb" en el fragmento \# \# \# \# "munión".
+Los datos de vídeo DV se almacenan como fragmentos "dc", tal y como se define en la descripción anterior de un archivo AVI con un dato DV, y los datos de audio se almacenan como fragmentos "wb" en el fragmento \# \# \# \# "mmiento".
 
 > [!Note]  
 > Es *posible que la especificación de los VCR digitales* de uso del consumidor no esté disponible en algunos idiomas y países.
 
  
 
-En el ejemplo siguiente se muestra el formulario RIFF de AIFF para un archivo AVI que contiene vídeo DV como una secuencia "vids" y audio DV como secuencias "auds" expandida con fragmentos de encabezado completados (incluidos los datos [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) opcionales que sigue a [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) en el sub fragmento "strf" para la secuencia "vids").
+En el ejemplo siguiente se muestra el formulario RIFF de AIFF para un archivo AVI que contiene vídeo DV como una secuencia "vids" y audio DV como secuencias "auds" expandida con fragmentos de encabezado completados (incluidos los datos [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) opcionales que se encuentran después de [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) en el sub fragmento "strf" para la secuencia "vids").
 
 
 ```C++

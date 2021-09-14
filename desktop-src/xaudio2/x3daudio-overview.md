@@ -4,12 +4,12 @@ ms.assetid: 1638e848-4186-5dea-18e8-5369eee544ae
 title: Información general sobre X3DAudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2eb39239027bf8c7387fbe4cb25b80cef88bb241b74facf0b7bd7ee35c77965b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff509b16556ee1932d2a2543ad5008ddcbaa5b92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962554"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246986"
 ---
 # <a name="x3daudio-overview"></a>Información general sobre X3DAudio
 

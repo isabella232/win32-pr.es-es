@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b1cb56b07232c6b55a85b7387cf7b2fafd40ac29e5dc0520b45e1aa50cadcb6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 345367b25790051a444363bb9bbc02af3d6fb0fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119915995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246872"
 ---
 # <a name="em_canundo-message"></a>Mensaje \_ DE EM CANUNDO
 
@@ -49,15 +49,15 @@ Si hay acciones en la cola de deshacer del control, el valor devuelto es distint
 
 Si la cola de deshacer está vacía, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la cola de deshacer no está vacía, puede enviar el mensaje [**EM \_ UNDO**](em-undo.md) al control para deshacer la operación más reciente.
 
-**Editar controles y Rich Edit 1.0:** La cola de deshacer solo contiene la operación más reciente.
+**Controles de edición y Edición enriquecte 1.0:** La cola de deshacer solo contiene la operación más reciente.
 
 **Rich Edit 2.0 y versiones posteriores:** La cola de deshacer puede contener varias operaciones.
 
-**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Si la cola de deshacer no está vacía, puede enviar el mensaje [**EM \_ UNDO**]
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

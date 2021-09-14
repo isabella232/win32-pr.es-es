@@ -4,12 +4,12 @@ description: En el ejemplo de esta sección se muestra cómo crear un cuadro de 
 ms.assetid: DBF7FBDF-AADC-45CE-833E-F893C1129FC0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fa2ad8ba22c2972c6bdd502728af413d4800dabf0ab5c9196a4033a52267115
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fa0b84a8a77d18903ddbdb29687cc2b97b88872b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119920715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246969"
 ---
 # <a name="how-to-create-a-tabbed-dialog-box"></a>Cómo crear un cuadro de diálogo con pestañas
 
@@ -28,7 +28,7 @@ La plantilla del cuadro de diálogo principal simplemente define dos controles d
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
@@ -55,7 +55,7 @@ typedef struct tag_dlghdr {
 
 La función siguiente procesa el [**mensaje WM \_ INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) para el cuadro de diálogo principal. La función asigna la estructura , carga los recursos de plantilla de cuadro de diálogo para los cuadros de diálogo secundarios y `DLGHDR` crea el control de ficha.
 
-La estructura [**DLGTEMPLATEEX**](/windows/desktop/dlgbox/dlgtemplateex) especifica el tamaño de cada cuadro de diálogo secundario. La función examina el tamaño de cada cuadro de diálogo y usa la macro para el mensaje [**\_ ADJUSTRECT**](tcm-adjustrect.md) de TCM para calcular un tamaño adecuado para el control de ficha. A continuación, puede cambiar el tamaño del cuadro de diálogo y colocar los dos botones en consecuencia. En este ejemplo se **envía \_ TCM ADJUSTRECT** mediante la [**macro TabCtrl \_ AdjustRect.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_adjustrect)
+La estructura [**DLGTEMPLATEEX**](/windows/desktop/dlgbox/dlgtemplateex) especifica el tamaño de cada cuadro de diálogo secundario. La función examina el tamaño de cada cuadro de diálogo y usa la macro para el mensaje [**\_ ADJUSTRECT**](tcm-adjustrect.md) de TCM para calcular un tamaño adecuado para el control de ficha. A continuación, el tamaño del cuadro de diálogo y coloca los dos botones en consecuencia. En este ejemplo se **envía \_ TCM ADJUSTRECT** mediante la [**macro TabCtrl \_ AdjustRect.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_adjustrect)
 
 
 ```C++

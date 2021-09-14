@@ -1,7 +1,7 @@
 ---
 description: El método InitializeOutputSample recupera un nuevo ejemplo de salida y lo inicializa.
 ms.assetid: a4f8f514-cf1a-4f8f-ac17-17378705c2ea
-title: CTransformFilter.Inimétodo tializeOutputSample (Transfrm.h)
+title: Método CTransformFilter.InitializeOutputSample (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 083867f2ef6b2e40462112036dbbb000c25bc3ad2bb443f011235e36bf245ab2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: efe7e62936c6feb1984a339a67783cdbc1e4f124
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953624"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246680"
 ---
-# <a name="ctransformfilterinitializeoutputsample-method"></a>CTransformFilter.Inimétodo tializeOutputSample
+# <a name="ctransformfilterinitializeoutputsample-method"></a>Método CTransformFilter.InitializeOutputSample
 
 El `InitializeOutputSample` método recupera un nuevo ejemplo de salida y lo inicializa.
 
@@ -61,9 +61,9 @@ Recibe un puntero a la interfaz **IMediaSample** del ejemplo de salida.
 
 Devuelve S \_ OK u otro valor **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El método [**CTransformFilter::Receive**](ctransformfilter-receive.md) llama a este método para preparar el ejemplo de salida. Por lo general, no es necesario llamar a este método en la clase derivada, a menos que invalide el **método Receive.**
+El método [**CTransformFilter::Receive**](ctransformfilter-receive.md) llama a este método para preparar el ejemplo de salida. Por lo general, no tiene que llamar a este método en la clase derivada, a menos que invalide el **método Receive.**
 
 Este método recupera un nuevo ejemplo del asignador del pin de salida. A continuación, copia las propiedades de ejemplo del ejemplo de entrada al ejemplo de salida. Las propiedades de ejemplo se definen en la [**estructura PROPIEDADES DE AM \_ SAMPLE2. \_**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties)
 

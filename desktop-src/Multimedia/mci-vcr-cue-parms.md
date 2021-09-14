@@ -1,6 +1,6 @@
 ---
 title: MCI_VCR_CUE_PARMS estructura (Vcr.h)
-description: La estructura MCI VCR CUE PARMS contiene parámetros para el \_ \_ comando \_ MCI CUE para las \_ grabadoras de video-recorder.
+description: La estructura MCI VCR CUE PARMS contiene parámetros para el comando MCI CUE para las \_ \_ \_ \_ grabadoras de vídeo.
 ms.assetid: b2ac0c43-93ea-41c9-b886-542bda57b59e
 keywords:
 - MCI_VCR_CUE_PARMS estructura Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 8eeae20495281640718f95066476f0f3ac89dc6f
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369979"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245954"
 ---
 # <a name="mci_vcr_cue_parms-structure"></a>Estructura MCI \_ VCR \_ CUE \_ PARMS
 
-La **estructura MCI \_ VCR CUE \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ CUE**](mci-cue.md) para las grabadoras de video-recorder.
+La **estructura MCI \_ VCR CUE \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ CUE**](mci-cue.md) para las grabadoras de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ typedef struct tagMCI_VCR_CUE_PARMS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 

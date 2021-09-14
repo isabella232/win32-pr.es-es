@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 4ae4a68263b8a2f85186f62c40708871ba6d7563acd50f78f701f1e2d6da597f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eefd45ac1d147a0409417f215e56a4db490dfdbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119792675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246524"
 ---
 # <a name="ec_dvd_program_chain_change"></a>EC \_ DVD \_ PROGRAM \_ CHAIN \_ CHANGE
 
@@ -42,7 +42,7 @@ Identificador de configuración regional (LCID) del idioma de audio.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **\_ DVD NotifyPositionChange** en **TRUE.**
 

@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: bf143bb0d895dc03df38bbb0a657467d506eac77
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370178"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246009"
 ---
 # <a name="mci_sysinfo_parms-structure"></a>Estructura \_ MCI SYSINFO \_ PARMS
 
@@ -40,7 +40,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -75,7 +75,7 @@ Número que indica la posición del dispositivo en la tabla de dispositivos MCI 
 **wDeviceType**
 </dt> <dd>
 
-Tipo de dispositivo. Este miembro puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI](mci-device-types.md).
+Tipo de dispositivo. Este miembro puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI.](mci-device-types.md)
 
 </dd> </dl>
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 118167d0068c058c925e5b63e2e951ff860917c40a5c3533daf9f02e6927649a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4621a639b3bc18382bc41ae9425c4de50db920ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119073969"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246813"
 ---
 # <a name="cmediatypesetvariablesize-method"></a>Método CMediaType.SetVariableSize
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método establece el **miembro bFixedSizeSamples** en **FALSE.** Las llamadas posteriores [**al método CMediaType::GetSampleSize**](cmediatype-getsamplesize.md) devuelven cero.
 

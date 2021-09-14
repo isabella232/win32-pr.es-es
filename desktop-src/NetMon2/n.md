@@ -5,28 +5,28 @@ ms.assetid: a9b0e907-45c0-4301-9e83-398dd1c1c39a
 title: N (Monitor de red)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 881fb15f4432f6d2bb4b92025c28fc88c1862fa018e9e01df06c5ea8e79ced53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 54404640b13bff3b098b9d223e656e8f1905c055
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119555795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245336"
 ---
 # <a name="n-network-monitor"></a>N (Monitor de red)
 
 <dl> <dt>
 
-<span id="_netmon_ndis_gly"></span><span id="_NETMON_NDIS_GLY"></span>**Ndis**
+<span id="_netmon_ndis_gly"></span><span id="_NETMON_NDIS_GLY"></span>**NDIS**
 </dt> <dd>
 
-Consulte especificación de la interfaz del controlador de red.
+Consulte Especificación de la interfaz del controlador de red.
 
 </dd> <dt>
 
-<span id="_netmon_network_driver_interface_specification_gly"></span><span id="_NETMON_NETWORK_DRIVER_INTERFACE_SPECIFICATION_GLY"></span>**especificación de interfaz de controlador de red (NDIS)**
+<span id="_netmon_network_driver_interface_specification_gly"></span><span id="_NETMON_NETWORK_DRIVER_INTERFACE_SPECIFICATION_GLY"></span>**Especificación de la interfaz del controlador de red (NDIS)**
 </dt> <dd>
 
-Especificación de la interfaz entre los controladores de dispositivo y una red. Todos los transportes llaman a la interfaz NDIS para acceder a las tarjetas de interfaz de red y trabajar con estas.
+Especificación de la interfaz entre los controladores de dispositivo y una red. Todos los transportes llaman a la interfaz NDIS para acceder y trabajar con tarjetas de interfaz de red.
 
 </dd> <dt>
 
@@ -40,11 +40,11 @@ Componente Monitor de red. El agente permite que un equipo remoto capture datos 
 <span id="_netmon_network_packet_provider_gly"></span><span id="_NETMON_NETWORK_PACKET_PROVIDER_GLY"></span>**proveedor de paquetes de red (NPP)**
 </dt> <dd>
 
-Componente Monitor de red que recopila el tráfico de red en fotogramas y, a continuación, los pasa a un experto y a una aplicación NPP. Un NPP usa el controlador del sistema Monitor de red (Nmnt.sys) para obtener los fotogramas recopilados de la red y proporciona varias interfaces COM que pasan los fotogramas a una aplicación de proveedor de paquetes de red (NPP) experto, monitor y donde se pueden mostrar y analizar.
+Componente Monitor de red que recopila el tráfico de red en fotogramas y, a continuación, los pasa a un experto y a una aplicación NPP. Un NPP usa el controlador del sistema de Monitor de red (Nmnt.sys) para obtener los fotogramas recopilados de la red y proporciona varias interfaces COM que pasan los fotogramas a una aplicación de experto, monitor y proveedor de paquetes de red (NPP) donde se pueden mostrar y analizar.
 
 </dd> <dt>
 
-<span id="_netmon_npp_gly"></span><span id="_NETMON_NPP_GLY"></span>**Npp**
+<span id="_netmon_npp_gly"></span><span id="_NETMON_NPP_GLY"></span>**NPP**
 </dt> <dd>
 
 Consulte proveedor de paquetes de red.

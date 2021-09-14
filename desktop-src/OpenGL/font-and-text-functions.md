@@ -7,12 +7,12 @@ keywords:
 - Funciones WGL,font
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1341dab969178a08e43c1af0a32c4cac817072ad2d5315cd051df2c87ac3c3fc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e205549346cccc2c44b7670db91530cfbc24017d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120082445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245030"
 ---
 # <a name="font-and-text-functions-opengl"></a>Funciones de fuente y texto (OpenGL)
 
@@ -41,7 +41,7 @@ Las **funciones wglUseFontBitmaps** y **wglUseFontOutlines** representan un glif
 
 Las listas para mostrar creadas por una llamada a **wglUseFontBitmaps** o **wglUseFontOutlines** se numeran automáticamente de forma consecutiva.
 
-Después de llamar a [**la función wglUseFontBitmaps**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontbitmapsa) o [**wglUseFontOutlines,**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontoutlinesa) llame a [**glCallLists**](glcalllists.md) para dibujar una cadena de caracteres. Vea Drawing Text in a Double-Buffered OpenGL Window (Dibujar texto [en Double-Buffered opengl)](drawing-text-in-a-double-buffered-opengl-window.md) para obtener código de ejemplo. En este contexto, **glCallLists** usa cada carácter de una cadena como índice en la matriz de listas de visualización numeradas consecutivamente creadas por **wglUseFontBitmaps** o **wglUseFontOutlines.**
+Después de llamar a [**la función wglUseFontBitmaps**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontbitmapsa) o [**wglUseFontOutlines,**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontoutlinesa) llame a [**glCallLists**](glcalllists.md) para dibujar una cadena de caracteres. Vea Drawing Text in a Double-Buffered OpenGL Window (Dibujar [texto en una ventana de OpenGL)](drawing-text-in-a-double-buffered-opengl-window.md) para obtener código de ejemplo. En este contexto, **glCallLists** usa cada carácter de una cadena como índice en la matriz de listas de visualización numeradas consecutivamente creadas por **wglUseFontBitmaps** o **wglUseFontOutlines.**
 
 Cuando termine de dibujar texto, llame a la función [**glDeleteLists**](gldeletelists.md) para liberar el conjunto contiguo de listas de visualización creado por **wglUseFontBitmaps** y **wglUseFontOutlines.**
 

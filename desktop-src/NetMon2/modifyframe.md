@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 04bc22af11d83078ecf98d0386b061b520fbf9a8dcab6f6beb360c45b1c6fe96
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af3ef6c2c5ccae2b6410ac8fc81c815f790b17a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119555825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245343"
 ---
 # <a name="modifyframe-function"></a>Función ModifyFrame
 
@@ -84,7 +84,7 @@ Si la función se realiza correctamente, el valor devuelto es un identificador p
 
 Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la llamada se realiza correctamente, **la función ModifyFrame** destruye el fotograma original.
 
@@ -94,7 +94,7 @@ Si la llamada se realiza correctamente, **la función ModifyFrame** destruye el 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

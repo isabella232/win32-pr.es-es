@@ -4,12 +4,12 @@ description: Las funciones de administración de red se pueden dividir en los si
 ms.assetid: 4b5d3554-f81a-4ecf-bf31-ee4753509f38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3e49a8c45c59031a12653f5cb863fef320a33c93bc60cabdd4cd6fb4aece9dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1bce5c0fb3dd70facb0ebbbb2479b968d428c49e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245427"
 ---
 # <a name="network-management-function-groups"></a>Grupos de funciones de administración de redes
 

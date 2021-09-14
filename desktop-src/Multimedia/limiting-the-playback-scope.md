@@ -10,11 +10,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 465bcf7a7b6b5811de8413a1c89f7befcf81037f
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370832"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246110"
 ---
 # <a name="limiting-the-playback-scope"></a>Limitar el ámbito de reproducción
 
@@ -22,9 +22,9 @@ El control de la reproducción comienza con la macro [**MCIWndPlay,**](/windows/
 
 También debe establecer un formato de hora adecuado. El formato de hora determina si el contenido se mide en fotogramas, milisegundos, pistas u otras unidades.
 
-En el ejemplo siguiente se crea una ventana MCIWnd y se proporcionan comandos de menú para reproducir el último tercero, el primer tercero o el tercero medio del contenido. Estos comandos de menú usan **MCIWndPlayFrom**, **MCIWndPlayTo** y **MCIWndPlayFromTo** para reproducir los segmentos de contenido. En el ejemplo también se usan las macros [**MCIWndGetStart**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetstart) y [**MCIWndGetEnd**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetend) para identificar el principio y el final del contenido, y se usa la macro [**MCIWndHome**](/windows/desktop/api/Vfw/nf-vfw-mciwndhome) para mover la posición de reproducción al principio del contenido.
+En el ejemplo siguiente se crea una ventana de MCIWnd y se proporcionan comandos de menú para reproducir el último tercero, primer tercero o tercer medio del contenido. Estos comandos de menú usan **MCIWndPlayFrom,** **MCIWndPlayTo** y **MCIWndPlayFromTo** para reproducir los segmentos de contenido. En el ejemplo también se usan las macros [**MCIWndGetStart**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetstart) y [**MCIWndGetEnd**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetend) para identificar el principio y el final del contenido, y se usa la macro [**MCIWndHome**](/windows/desktop/api/Vfw/nf-vfw-mciwndhome) para mover la posición de reproducción al principio del contenido.
 
-La función [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea) usa los estilos WS CAPTION y MCIWNDF SHOWALL, además de los estilos de ventana estándar para mostrar el nombre de archivo, el modo y la posición de reproducción actual en la barra de título de la \_ \_ ventana MCIWnd.
+La función [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea) usa los estilos WS CAPTION y MCIWNDF SHOWALL además de los estilos de ventana estándar para mostrar el nombre de archivo, el modo y la posición de reproducción actual en la barra de título de la \_ \_ ventana MCIWnd.
 
 
 ```C++

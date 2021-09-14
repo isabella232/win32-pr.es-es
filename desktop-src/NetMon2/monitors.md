@@ -4,12 +4,12 @@ ms.assetid: 96d04352-5f1c-4964-94d2-692c6b642cb8
 title: Monitores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29adc2e3abaa165903b78ac10683f76ce07719b7513cd25b8b4a7ca4377bb6c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76ed9ad355ab02b5e130b896efd6654df81e492e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118364638"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245337"
 ---
 # <a name="monitors"></a>Monitores
 

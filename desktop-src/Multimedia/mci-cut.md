@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: c564451596f115daca8514785449abf001e224ef
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246086"
 ---
 # <a name="mci_cut-command"></a>Comando MCI \_ CUT
 
@@ -66,7 +66,7 @@ Puntero a una [**estructura MCI \_ DGV \_ CUT \_ PARMS.**](/windows/desktop/api/
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -84,7 +84,7 @@ Se incluye un rectángulo en el **miembro rc** de la estructura identificada por
 <span id="MCI_DGV_CUT_AUDIO_STREAM"></span><span id="mci_dgv_cut_audio_stream"></span>SECUENCIA DE AUDIO DE \_ CORTE DE MCI DGV \_ \_ \_
 </dt> <dd>
 
-Se incluye un número de secuencia de audio en el **miembro dwAudioStream** de la estructura identificada por *lpCut*. Si usa esta marca y también desea cortar vídeo, también debe usar la marca MCI \_ DGV \_ CUT VIDEO \_ \_ STREAM. (Si no se especifica ninguna marca, se cortan los datos de todas las secuencias de audio y vídeo).
+Se incluye un número de secuencia de audio en el **miembro dwAudioStream** de la estructura identificada por *lpCut*. Si usa esta marca y también quiere cortar vídeo, también debe usar la marca \_ MCI DGV \_ CUT VIDEO \_ \_ STREAM. (Si no se especifica ninguna marca, se cortan los datos de todas las secuencias de audio y vídeo).
 
 </dd> <dt>
 

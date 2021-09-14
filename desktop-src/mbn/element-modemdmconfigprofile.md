@@ -7,12 +7,12 @@ MSHAttr:
 title: ModemDMConfigProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c6de7275b092cd0cd95683d6b4de2ca28322f69
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 80684cdf2d47d203318afbfd7b5e6bc02de1d3dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475141"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168189"
 ---
 # <a name="span-idwwan_profile_v4element_modemdmconfigprofilespanmodemdmconfigprofile"></a><span id="WWAN_profile_v4.element_ModemDMConfigProfile"></span>MódemDMConfigProfile
 
@@ -20,9 +20,9 @@ Perfil de configuración de DM de módem.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-**<ModemDMConfigProfile>**
+**&lt;ModemDMConfigProfile&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <ModemDMConfigProfile>
@@ -79,7 +79,9 @@ Este elemento más externo (documento) no puede estar contenido en ningún otro 
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

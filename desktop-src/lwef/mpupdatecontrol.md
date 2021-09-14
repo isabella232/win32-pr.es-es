@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69926f26b470ba41226883bdb32fab13c5d776858595c256fe70e7f95e898c04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91ea28c6ace349fd04fb9241d7eddbe7c1e5fbbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118476277"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168269"
 ---
 # <a name="mpupdatecontrol-function"></a>Función MpUpdateControl
 
-Permite el control de una operación de actualización de firma que se inició de forma asincrónica a través de [**MpUpdateStart**](mpupdatestart.md). Llamar a esta función requiere privilegios de administrador, ya que permite la cancelación de una actualización de firma en todo el sistema.
+Permite el control de una operación de actualización de firma que se inició de forma asincrónica a través [**de MpUpdateStart**](mpupdatestart.md). Llamar a esta función requiere privilegios de administrador, ya que permite la cancelación de una actualización de firma en todo el sistema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ Especifica la opción de control de actualización de firma. Debe ser el valor s
 
 
 
-| Valor                                                                                                                                                               | Significado                                          |
+| Value                                                                                                                                                               | Significado                                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | <span id="MPCONTROL_ABORT"></span><span id="mpcontrol_abort"></span><dl> <dt>**MPCONTROL \_ ABORT**</dt> </dl> | Anule la operación de actualización de firma.<br/> |
 
@@ -81,16 +81,16 @@ Si se produce un error en la función, el valor devuelto es un **código HRESULT
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

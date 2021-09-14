@@ -1,7 +1,7 @@
 ---
 description: Marca que especifica si el objeto entrega muestras en lotes exactos.
 ms.assetid: 1a37c78f-4499-4ebb-92b4-b71ba3ff1a02
-title: Miembro COutputQueue::m_bBatchExact (Outputq.h)
+title: COutputQueue::m_bBatchExact miembro (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6b5859744c3670ccc789ae5d87a619b3b32c3731580d473ff8cc6d775348771f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a5f38d8a0e7335025688f52015ff9ed4d4892820
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246753"
 ---
 # <a name="coutputqueuem_bbatchexact-member"></a>Miembro COutputQueue::m \_ bBatchExact
 
@@ -36,9 +36,9 @@ const BOOL m_bBatchExact;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el valor es **TRUE,** el objeto espera hasta que tenga un lote completo de ejemplos multimedia antes de entregar cualquiera. De lo contrario, entrega muestras a medida que llegan. La variable [**miembro COutputQueue::m \_ lBatchSize**](coutputqueue-m-lbatchsize.md) define el tamaño del lote.
+Si el valor es **TRUE**, el objeto espera hasta que tenga un lote completo de ejemplos multimedia antes de entregar cualquiera. De lo contrario, entrega ejemplos a medida que llegan. La variable [**miembro COutputQueue::m \_ lBatchSize**](coutputqueue-m-lbatchsize.md) define el tamaño del lote.
 
 ## <a name="requirements"></a>Requisitos
 

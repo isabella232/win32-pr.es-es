@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 666562f7a476505dbb0ff23d5354e0f073505d9dd5195bcae17543294cc5f176
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6bc214f50788fdc6965a1ce429c5c2919846cf72
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119799895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245511"
 ---
 # <a name="hex-ssid-element"></a>Elemento hexadecimal (SSID)
 
@@ -44,7 +44,7 @@ El elemento hexadecimal (SSID) contiene el SSID de una LAN inalámbrica en forma
 
 El elemento se define mediante el [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Aunque los **elementos hexadecimal** y [**name**](wlan-profileschema-name-ssid-element.md) son opcionales, al menos un **elemento hexadecimal** o [**name**](wlan-profileschema-name-ssid-element.md) debe aparecer como elemento secundario del [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
 
@@ -60,7 +60,7 @@ Para ver un perfil de ejemplo que usa el **elemento hexadecimal,** vea [Ejemplo 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
@@ -75,7 +75,7 @@ Para ver un perfil de ejemplo que usa el **elemento hexadecimal,** vea [Ejemplo 
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Ssid**](wlan-profileschema-ssid-ssidconfig-element.md)
+[**SSID**](wlan-profileschema-ssid-ssidconfig-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**

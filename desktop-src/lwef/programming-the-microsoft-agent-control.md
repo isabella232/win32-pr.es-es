@@ -4,12 +4,12 @@ description: Programación del control microsoft agent
 ms.assetid: 06a145fe-bac9-493a-bac5-e80cb2ef3159
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81a299c7be5b9e826a152d6de49586694ca4bf1d7d7e480dcd49e02595e70fc6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c61a147aa6da14371bd425923781612b4050d687
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118246971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168241"
 ---
 # <a name="programming-the-microsoft-agent-control"></a>Programación del control microsoft agent
 

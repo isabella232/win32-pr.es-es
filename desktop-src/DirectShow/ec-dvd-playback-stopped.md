@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 7a5f0b1b66e9d78309e33981910da467757a2b606b967cee5b78e86c4cc0049b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2304d83aea532b764777b683c57c3bdd4d5df79a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117820461"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246555"
 ---
-# <a name="ec_dvd_playback_stopped"></a>REPRODUCCIÓN \_ DE DVD DE EC \_ \_ DETENIDA
+# <a name="ec_dvd_playback_stopped"></a>REPRODUCCIÓN \_ DE DVD EC \_ \_ DETENIDA
 
-Indica que se ha detenido la reproducción de DVD. Este evento se envía cuando se completa un título o capítulo y el navegador [de DVD](dvd-navigator-filter.md) no encuentra ninguna otra instrucción de bifurcación para la reproducción posterior. El evento no se envía cuando la aplicación detiene la reproducción.
+Indica que se ha detenido la reproducción de DVD. Este evento se envía cuando se completa un título o capítulo y el navegador de [DVD](dvd-navigator-filter.md) no encuentra ninguna otra instrucción de bifurcación para la reproducción posterior. El evento no se envía cuando la aplicación detiene la reproducción.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -42,7 +42,7 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este evento se genera en todos los dominios.
 
@@ -56,7 +56,7 @@ Este evento se genera en todos los dominios.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

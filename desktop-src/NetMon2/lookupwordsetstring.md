@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 15b529076660eec093df370df47823fb21aa13e53cce61565fe82de7fbb7e017
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7487becb195571e1eb88044195293b2c0b226e8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118364723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245372"
 ---
 # <a name="lookupwordsetstring-function"></a>Función LookupWordSetString
 
@@ -56,7 +56,7 @@ Valor de un conjunto etiquetado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función es correcta, el valor devuelto es una cadena que corresponde al valor solicitado.
+Si la función se realiza correctamente, el valor devuelto es una cadena que corresponde al valor solicitado.
 
 Si la función no se realiza correctamente, el valor especificado no está en el conjunto, el valor devuelto es **NULL.**
 
@@ -64,7 +64,7 @@ Si la función no se realiza correctamente, el valor especificado no está en el
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

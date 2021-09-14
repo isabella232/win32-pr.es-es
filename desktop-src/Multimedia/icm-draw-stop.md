@@ -1,6 +1,6 @@
 ---
 title: ICM_DRAW_STOP mensaje (Vfw.h)
-description: El ICM DRAW STOP notifica a un controlador de representación que detenga su reloj interno para el \_ tiempo de dibujo de \_ fotogramas. Puede enviar este mensaje explícitamente o mediante la macro ICDrawStop.
+description: El ICM DRAW STOP notifica a un controlador de representación que detenga su reloj interno para el tiempo \_ \_ de dibujo de fotogramas. Puede enviar este mensaje explícitamente o mediante la macro ICDrawStop.
 ms.assetid: 9ffda595-e3d6-48f0-9487-69f7e95979c2
 keywords:
 - ICM_DRAW_STOP mensaje Windows Multimedia
@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: b3bde99dfcf483e67aa6a601de2718814cc22439
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370567"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246315"
 ---
 # <a name="icm_draw_stop-message"></a>\_ICM Draw \_ STOP message
 

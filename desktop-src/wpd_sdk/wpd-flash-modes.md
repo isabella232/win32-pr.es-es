@@ -1,5 +1,5 @@
 ---
-description: El tipo de enumeración WPD FLASH MODES describe un modo flash que se usará \_ al capturar imágenes con un \_ dispositivo.
+description: El tipo de enumeración WPD FLASH MODES describe un modo flash que se usará al \_ capturar imágenes con un \_ dispositivo.
 ms.assetid: 4e92c86d-2f35-4bc6-8d37-ec1ab5c518b2
 title: WPD_FLASH_MODES enumeración (PortableDevice.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 72e9b6cb2b52f1d90c584b6f425711769b25ea0c5d44065b5aa377d2811592e9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 09a2a5b95e86d9d17267cafcfbf723e734ffc74f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120005925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247083"
 ---
 # <a name="wpd_flash_modes-enumeration"></a>Enumeración WPD \_ FLASH \_ MODES
 
-El **tipo de enumeración \_ \_ WPD FLASH MODES** describe un modo flash que se usará al capturar imágenes con un dispositivo.
+El **tipo de \_ enumeración WPD FLASH \_ MODES** describe un modo flash que se usará al capturar imágenes con un dispositivo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -55,7 +55,7 @@ No se ha especificado ningún modo flash.
 <span id="WPD_FLASH_MODE_AUTO"></span><span id="wpd_flash_mode_auto"></span>**MODO \_ FLASH WPD \_ \_ AUTO**
 </dt> <dd>
 
-Especifica que el flash debe usarse en el modo automático, tal y como especifica el dispositivo.
+Especifica que el flash debe usarse en el modo automático, tal como lo especifica el dispositivo.
 
 </dd> <dt>
 
@@ -76,27 +76,27 @@ Especifica un flash de tipo de relleno.
 <span id="WPD_FLASH_MODE_RED_EYE_AUTO"></span><span id="wpd_flash_mode_red_eye_auto"></span>**WPD \_ FLASH \_ MODE \_ RED \_ EYE \_ AUTO**
 </dt> <dd>
 
-Especifica que se debe usar el flash de reducción de ojos rojos.
+Especifica que se debe usar el flash de reducción de los ojos rojos.
 
 </dd> <dt>
 
-<span id="WPD_FLASH_MODE_RED_EYE_FILL"></span><span id="wpd_flash_mode_red_eye_fill"></span>**RELLENO DE LOS OJOS \_ ROJOS EN MODO FLASH \_ \_ \_ \_ WPD**
+<span id="WPD_FLASH_MODE_RED_EYE_FILL"></span><span id="wpd_flash_mode_red_eye_fill"></span>**RELLENO CON LOS OJOS ROJOS DEL MODO FLASH WPD \_ \_ \_ \_ \_**
 </dt> <dd>
 
 Especifica que se debe usar el flash de relleno de los ojos rojos.
 
 </dd> <dt>
 
-<span id="WPD_FLASH_MODE_EXTERNAL_SYNC"></span><span id="wpd_flash_mode_external_sync"></span>**SINCRONIZACIÓN EXTERNA DEL MODO FLASH WPD \_ \_ \_ \_**
+<span id="WPD_FLASH_MODE_EXTERNAL_SYNC"></span><span id="wpd_flash_mode_external_sync"></span>**SINCRONIZACIÓN EXTERNA \_ DEL MODO FLASH WPD \_ \_ \_**
 </dt> <dd>
 
-Especifica que el flash debe sincronizarse con otros dispositivos flash externos.
+Especifica que la memoria flash debe sincronizarse con otros dispositivos flash externos.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta enumeración la usa la propiedad [ \_ WPD STILL \_ IMAGE FLASH \_ \_ MODE.](still-image-properties.md)
+Esta enumeración la usa la [propiedad \_ WPD STILL \_ IMAGE FLASH \_ \_ MODE.](still-image-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 

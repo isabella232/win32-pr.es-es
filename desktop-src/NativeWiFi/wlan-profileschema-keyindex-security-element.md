@@ -1,7 +1,7 @@
 ---
-description: Especifica qué índice de clave se debe usar para cifrar el tráfico inalámbrico. Solo se utiliza cuando keyType está establecido en &\# 0034; networkKey&\# 0034;.
+description: Especifica qué índice de clave se debe usar para cifrar el tráfico inalámbrico. Esto solo se usa cuando keyType se establece en \# &0034;networkKey&\# 0034;.
 ms.assetid: 5629605d-4c23-4318-8f09-939e13302552
-title: Elemento keyIndex (Security)
+title: Elemento keyIndex (security)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,15 +13,15 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 43bb802d46abb3c4684b63206377d3464078e2c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245469"
 ---
-# <a name="keyindex-security-element"></a>Elemento keyIndex (Security)
+# <a name="keyindex-security-element"></a>Elemento keyIndex (security)
 
-El elemento keyIndex (Security) especifica qué índice de clave se debe usar para cifrar el tráfico inalámbrico. Solo se utiliza cuando [**KeyType**](wlan-profileschema-keytype-sharedkey-element.md) está establecido en "networkKey".
+El elemento keyIndex (seguridad) especifica qué índice de clave se debe usar para cifrar el tráfico inalámbrico. Solo se usa cuando [**keyType**](wlan-profileschema-keytype-sharedkey-element.md) se establece en "networkKey".
 
 ``` syntax
 <xs:element name="keyIndex"
@@ -42,7 +42,7 @@ El elemento keyIndex (Security) especifica qué índice de clave se debe usar pa
 </xs:element>
 ```
 
-El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema-security-msm-element.md) .
+El elemento de seguridad define [**el**](wlan-profileschema-security-msm-element.md) elemento .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 
@@ -63,7 +63,7 @@ El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**bursátil**](wlan-profileschema-security-msm-element.md)
+[**Seguridad**](wlan-profileschema-security-msm-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e7c53df29b1d106c537543983f1734aef7facaaca5d0965c3a2588f285a7391
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5cc8f76b89e5e8aa529084b5c8c0898200e28ed2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120049435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246914"
 ---
 # <a name="em_autourldetect-message"></a>Mensaje EM \_ AUTOURLDETECT
 
@@ -39,12 +39,12 @@ Especifique 0 para deshabilitar la detección automática de vínculos o uno de 
 | Value                                                                                                                                                                                       | Significado                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="AURL_DISABLEMIXEDLGC"></span><span id="aurl_disablemixedlgc"></span><dl> <dt>**AURL \_ DISABLEMIXEDLGC**</dt> </dl>          | **Windows 8:** deshabilite el reconocimiento de nombres de dominio que contienen etiquetas con caracteres que pertenecen a más de uno de los scripts siguientes: latino, griego y cirílico. <br/> |
-| <span id="AURL_ENABLEDRIVELETTERS"></span><span id="aurl_enabledriveletters"></span><dl> <dt>**AURL \_ ENABLEDRIVELETTERS**</dt> </dl> | **Windows 8:** reconocer nombres de archivo que tienen una especificación de unidad inicial, como c: \\ temp.<br/>                                                                           |
+| <span id="AURL_ENABLEDRIVELETTERS"></span><span id="aurl_enabledriveletters"></span><dl> <dt>**AURL \_ ENABLEDRIVELETTERS**</dt> </dl> | **Windows 8:** reconocer los nombres de archivo que tienen una especificación de unidad inicial, como c: \\ temp.<br/>                                                                           |
 | <span id="AURL_ENABLEEA"></span><span id="aurl_enableea"></span><dl> <dt>**AURL \_ ENABLEEA**</dt> </dl>                               | Este valor está en desuso; use **AURL \_ ENABLEEAURLS en** su lugar.<br/>                                                                                                            |
 | <span id="AURL_ENABLEEAURLS"></span><span id="aurl_enableeaurls"></span><dl> <dt>**AURL \_ ENABLEEAURLS**</dt> </dl>                   | Reconocer direcciones URL que contienen caracteres de Este de Asia. <br/>                                                                                                                      |
 | <span id="AURL_ENABLEEMAILADDR"></span><span id="aurl_enableemailaddr"></span><dl> <dt>**AURL \_ ENABLEEMAILADDR**</dt> </dl>          | **Windows 8:** reconocer direcciones de correo electrónico.<br/>                                                                                                                                |
 | <span id="AURL_ENABLETELNO"></span><span id="aurl_enabletelno"></span><dl> <dt>**AURL \_ ENABLETELNO**</dt> </dl>                      | **Windows 8:** reconocer números de teléfono.<br/>                                                                                                                              |
-| <span id="AURL_ENABLEURL"></span><span id="aurl_enableurl"></span><dl> <dt>**AURL \_ ENABLEURL**</dt> </dl>                            | **Windows 8:** reconocer las direcciones URL que incluyen la ruta de acceso.<br/>                                                                                                                     |
+| <span id="AURL_ENABLEURL"></span><span id="aurl_enableurl"></span><dl> <dt>**AURL \_ ENABLEURL**</dt> </dl>                            | **Windows 8:** reconocer direcciones URL que incluyen la ruta de acceso.<br/>                                                                                                                     |
 
 
 
@@ -67,9 +67,9 @@ Si se produce un error en el mensaje, el valor devuelto es un valor distinto de 
 
 Si *lParam contiene* más de 50 nombres de esquema, se produce un error en el mensaje con un valor devuelto **de E \_ INVALIDARG**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si la detección automática de direcciones URL está habilitada (es decir, *wParam* incluye **AURL \_ ENABLEURL),** el control rich edit examina cualquier texto modificado para determinar si el texto coincide con el formato de una dirección URL (o más generalmente en Windows 8 o posterior un identificador de recursos internacional de IRI). Si *lParam* es NULL, el control detecta las direcciones URL que comienzan por los siguientes nombres de esquema:
+Si la detección automática de direcciones URL está habilitada (es decir, *wParam* incluye **AURL \_ ENABLEURL),** el control de edición enriquecte examina cualquier texto modificado para determinar si el texto coincide con el formato de una dirección URL (o más generalmente en Windows 8 o posterior un identificador de recursos internacional de IRI). Si *lParam* es NULL, el control detecta las direcciones URL que comienzan por los siguientes nombres de esquema:
 
 -   callto
 -   archivo
@@ -101,7 +101,7 @@ Un control de edición enriquecido envía la notificación [EN \_ LINK](en-link.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -112,7 +112,7 @@ Un control de edición enriquecido envía la notificación [EN \_ LINK](en-link.
 [**CHARFORMAT2**](/windows/desktop/api/Richedit/ns-richedit-charformat2a)
 </dt> <dt>
 
-[VÍNCULO DE EN \_](en-link.md)
+[VÍNCULO DE \_ EN](en-link.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: El sistema procesa automáticamente todas las operaciones de texto 
 ms.assetid: 9af3a1bc-4c87-4cc9-966d-50742be7c811
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8698fbd38241a0e5c3f40e69f7ab401fc22e3982e2bc70001733bc71daf49689
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9640616cf70b9a2933ef9d4c3fdb2accbfdcabf0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119826375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246920"
 ---
 # <a name="edit-control-text-operations"></a>Editar operaciones de texto de control
 
@@ -58,7 +58,7 @@ Estos tres mensajes se aplican a los controles de edición de una sola línea y 
 
 Una aplicación puede reemplazar el texto seleccionado en un control de edición enviando al control un mensaje [**EM \_ REPLACESEL**](em-replacesel.md) con un puntero al texto de reemplazo. Si no hay ninguna selección actual, **EM \_ REPLACESEL** inserta el texto de reemplazo en el punto de inserción. La aplicación puede recibir un código [de notificación EN \_ ERRSPACE](en-errspace.md) si el texto de reemplazo supera la memoria disponible. Este mensaje se aplica a los controles de edición de línea única y multilínea.
 
-Una aplicación puede usar [**EM \_ REPLACESEL**](em-replacesel.md) para reemplazar parte del texto de un control de edición o la función [**SetDlgItemText**](/windows/desktop/api/winuser/nf-winuser-setdlgitemtexta) para reemplazarlo todo.
+Una aplicación puede usar [**EM \_ REPLACESEL**](em-replacesel.md) para reemplazar parte del texto de un control de edición o la función [**SetDlgItemText**](/windows/desktop/api/winuser/nf-winuser-setdlgitemtexta) para reemplazar todo.
 
 ## <a name="changing-the-font-used-by-an-edit-control"></a>Cambiar la fuente utilizada por un control Edit
 
@@ -100,13 +100,13 @@ El sistema proporciona tres mensajes que una aplicación puede enviar a un contr
 
 El [**mensaje EM \_ SCROLL**](em-scroll.md) desplaza verticalmente un control de edición de varias líneas. El *parámetro wParam* especifica la acción de desplazamiento. El **mensaje EM \_ SCROLL** solo se aplica a los controles de edición multilínea. **EM \_ SCROLL** tiene el mismo efecto que el [**mensaje \_ VSCROLL de WM.**](wm-vscroll.md)
 
-El [**mensaje EM \_ SCROLLCARET**](em-scrollcaret.md) desplaza el aviso a la vista en un control de edición.
+El [**mensaje EM \_ SCROLLCARET**](em-scrollcaret.md) desplaza el elemento de careta a la vista en un control de edición.
 
 ## <a name="setting-tab-stops-and-margins"></a>Establecer tabulaciones y márgenes
 
 Una aplicación puede establecer tabulaciones en un control de edición multilínea mediante el mensaje [**EM \_ SETTABSTOPS.**](em-settabstops.md) (El valor predeterminado para un tabulador es de ocho caracteres). Cuando una aplicación agrega texto al control de edición, los caracteres de tabulación del texto generan automáticamente espacio hasta la siguiente detenerse. El **mensaje \_ EM SETTABSTOPS** no hace que el sistema vuelva a dibujar el texto automáticamente. Para ello, una aplicación puede llamar a [**la función InvalidateRect.**](/windows/desktop/api/winuser/nf-winuser-invalidaterect) El **mensaje EM \_ SETTABSTOPS** solo se aplica a los controles de edición multilínea.
 
-Una aplicación puede establecer el ancho de los márgenes izquierdo y derecho de un control de edición mediante el mensaje [**\_ EM SETMARGINS.**](em-setmargins.md) Después de enviar este mensaje, el sistema vuelve a dibujar el control de edición para reflejar la nueva configuración de margen. Una aplicación puede recuperar el ancho del margen izquierdo o derecho mediante el envío del [**mensaje EM \_ GETMARGINS.**](em-getmargins.md) De forma predeterminada, los márgenes de control de edición se establecen lo suficientemente anchos como para dar cabida al mayor sobresalgo horizontal de caracteres (anchos abc negativos) para la fuente actual que se usa en el control de edición.
+Una aplicación puede establecer el ancho de los márgenes izquierdo y derecho de un control de edición mediante el mensaje [**\_ SETMARGINS de EM.**](em-setmargins.md) Después de enviar este mensaje, el sistema vuelve a dibujar el control de edición para reflejar la nueva configuración de margen. Una aplicación puede recuperar el ancho del margen izquierdo o derecho mediante el envío del [**mensaje EM \_ GETMARGINS.**](em-getmargins.md) De forma predeterminada, los márgenes de control de edición se establecen lo suficientemente anchos como para dar cabida al mayor sobresalgo horizontal de caracteres (anchos abc negativos) para la fuente actual que se usa en el control de edición.
 
 ## <a name="concealing-user-input"></a>Ocultación de la entrada del usuario
 
@@ -114,13 +114,13 @@ Una aplicación puede usar un carácter de contraseña en un control de edición
 
 ## <a name="using-integers"></a>Usar enteros
 
-Hay dos funciones de conversión de enteros para controles de edición diseñados para contener solo números. La [**función SetDlgItemInt**](/windows/desktop/api/winuser/nf-winuser-setdlgitemint) crea la representación de cadena de un entero especificado (con o sin signo) y envía la cadena a un control de edición. **SetDlgItemInt** no devuelve ningún valor. La [**función GetDlgItemInt**](/windows/desktop/api/winuser/nf-winuser-getdlgitemint) crea un entero (con o sin signo) a partir de su representación de cadena en un control de edición. **GetDlgItemInt devuelve** el entero (o un valor de error).
+Hay dos funciones de conversión de enteros para los controles de edición diseñados para contener solo números. La [**función SetDlgItemInt**](/windows/desktop/api/winuser/nf-winuser-setdlgitemint) crea la representación de cadena de un entero especificado (con o sin signo) y envía la cadena a un control de edición. **SetDlgItemInt** no devuelve ningún valor. La [**función GetDlgItemInt**](/windows/desktop/api/winuser/nf-winuser-getdlgitemint) crea un entero (con o sin signo) a partir de su representación de cadena en un control de edición. **GetDlgItemInt devuelve** el entero (o un valor de error).
 
 ## <a name="undoing-text-operations"></a>Operaciones de deshacer texto
 
-Cada control de edición mantiene una marca de deshacer que indica si una aplicación puede invertir o deshacer la operación más reciente en el control de edición (por ejemplo, deshacer una eliminación de texto). El control de edición establece la marca de deshacer para indicar que la operación se puede deshacer y la restablece para indicar que la operación no se puede deshacer. Una aplicación puede determinar la configuración de la marca de deshacer enviando al control un [**mensaje EM \_ CANUNDO.**](em-canundo.md)
+Cada control de edición mantiene una marca de deshacer que indica si una aplicación puede invertir o deshacer la operación más reciente en el control de edición (por ejemplo, deshacer una eliminación de texto). El control de edición establece la marca de deshacer para indicar que la operación se puede deshacer y la restablece para indicar que la operación no se puede deshacer. Una aplicación puede determinar la configuración de la marca de deshacer enviando al control [**un mensaje EM \_ CANUNDO.**](em-canundo.md)
 
-Una aplicación puede deshacer la operación más reciente enviando al control un [**mensaje EM \_ UNDO.**](em-undo.md) Una operación se puede deshacer siempre que no se produzca antes ninguna otra operación de control de edición. Por ejemplo, el usuario puede eliminar texto, reemplazar el texto (deshacer la eliminación) y, a continuación, eliminar el texto de nuevo (deshacer el reemplazo). El **mensaje EM \_ UNDO** se aplica a los controles de edición de línea única y multilínea y siempre funciona para los controles de edición de una sola línea.
+Una aplicación puede deshacer la operación más reciente enviando al control un [**mensaje EM \_ UNDO.**](em-undo.md) Una operación se puede deshacer siempre que no se produzca antes ninguna otra operación de control de edición. Por ejemplo, el usuario puede eliminar texto, reemplazar el texto (deshacer la eliminación) y, a continuación, eliminar el texto de nuevo (deshacer el reemplazo). El **mensaje EM \_ UNDO** se aplica a los controles de edición de línea única y multilínea y siempre funciona para controles de edición de una sola línea.
 
 Una aplicación puede restablecer la marca de deshacer de un control de edición enviando al control [**un mensaje EM \_ EMPTYUNDOBUFFER.**](em-emptyundobuffer.md) El sistema restablece automáticamente la marca de deshacer cada vez que un control de edición recibe un mensaje [**EM \_ SETHANDLE**](em-sethandle.md) [**o WM \_ SETTEXT.**](/windows/desktop/winmsg/wm-settext) La [**función SetDlgItemText**](/windows/desktop/api/winuser/nf-winuser-setdlgitemtexta) envía un **mensaje \_ SETTEXT de WM.**
 

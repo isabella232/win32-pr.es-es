@@ -1,6 +1,6 @@
 ---
 title: MCI_GETDEVCAPS_PARMS estructura (Mciapi.h)
-description: La estructura MCI GETDEVCAPS PARMS contiene información de funcionalidad del dispositivo para el comando \_ \_ \_ GETDEVCAPS de MCI.
+description: La estructura MCI GETDEVCAPS PARMS contiene información sobre la funcionalidad del dispositivo para el comando \_ \_ \_ GETDEVCAPS de MCI.
 ms.assetid: a7b128c5-2121-49cd-b668-3a8466d49a73
 keywords:
 - MCI_GETDEVCAPS_PARMS estructura Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 5a981f6fb9f156cecfa1b4b73046b1b3c654b32e
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246027"
 ---
 # <a name="mci_getdevcaps_parms-structure"></a>Estructura \_ MCI GETDEVCAPS \_ PARMS
 
-La **estructura \_ MCI GETDEVCAPS \_ PARMS** contiene información de funcionalidad del dispositivo para el comando [**\_ GETDEVCAPS de MCI.**](mci-getdevcaps.md)
+La **estructura \_ MCI GETDEVCAPS \_ PARMS** contiene información sobre la funcionalidad del dispositivo para el comando [**\_ GETDEVCAPS de MCI.**](mci-getdevcaps.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -59,7 +59,7 @@ Contiene información sobre la salida.
 **dwItem**
 </dt> <dd>
 
-Funcionalidad que se está consultando. Este miembro puede ser una de las constantes enumeradas en el material de referencia para el comando [**\_ GETDEVCAPS de MCI.**](mci-getdevcaps.md)
+Funcionalidad que se está consultando. Este miembro puede ser una de las constantes enumeradas en el material de referencia para el [**comando \_ GETDEVCAPS de MCI.**](mci-getdevcaps.md)
 
 </dd> </dl>
 

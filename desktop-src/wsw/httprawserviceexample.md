@@ -1,23 +1,23 @@
 ---
 title: HttpRawServiceExample
-description: En este ejemplo se muestra cómo usar el host de servicio para controlar solicitudes HTTP sin formato (no SOAP).
+description: En este ejemplo se muestra cómo usar el host de servicio para controlar las solicitudes HTTP sin procesar (que no son SOAP).
 ms.assetid: fbe5ad9c-f3f4-40c2-86e0-03b945aab89f
 keywords:
 - HttpRawServiceExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc1aa7e7aec653aa5bdff294cfd86346cec06378e5a5e9a3923540642f44bef5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e137bf1770856b51e50ce0dc8cca827662c7925
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117841532"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247016"
 ---
 # <a name="httprawserviceexample"></a>HttpRawServiceExample
 
-En este ejemplo se muestra cómo usar el host de servicio para controlar solicitudes HTTP sin formato (no SOAP).
+En este ejemplo se muestra cómo usar el host de servicio para controlar las solicitudes HTTP sin procesar (que no son SOAP).
 
 ## <a name="httprawservicecpp"></a>HttpRawService.cpp
 

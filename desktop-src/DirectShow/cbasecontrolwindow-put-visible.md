@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f2c8565d14c58d520a91c682e55d3dbc2ba079cf956213bdc61d044834d690c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7bf713b4ccb9932b1201e7ced40fddcd87407ef6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793296"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246860"
 ---
 # <a name="cbasecontrolwindowput_visible-method"></a>CBaseControlWindow.put \_ (método Visible)
 

@@ -1,5 +1,5 @@
 ---
-title: MCI_FREEZE (Mmsystem.h)
+title: MCI_FREEZE comando (Mmsystem.h)
 description: El comando MCI \_ FREEZE inmoviliza el movimiento en la pantalla. Los dispositivos de vídeo digital, superposición de vídeo y VCR reconocen este comando.
 ms.assetid: 6f90984a-24dc-4046-8234-986b2125bab4
 keywords:
@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 705117aef85fe69382657c647240849b515afa07
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246044"
 ---
 # <a name="mci_freeze-command"></a>Comando MCI \_ FREEZE
 
@@ -60,13 +60,13 @@ MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital y VCR, MCI \_ 
 <span id="lpFreeze"></span><span id="lpfreeze"></span><span id="LPFREEZE"></span>*lpFreeze*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con parámetros adicionales pueden reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con parámetros adicionales podrían reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -94,7 +94,7 @@ El tipo de dispositivo **vcr** usa las siguientes marcas adicionales:
 
 <dl> <dt>
 
-<span id="MCI_VCR_FREEZE_FIELD"></span><span id="mci_vcr_freeze_field"></span>CAMPO \_ INMOVILIZAR VCR DE MCI \_ \_
+<span id="MCI_VCR_FREEZE_FIELD"></span><span id="mci_vcr_freeze_field"></span>CAMPO \_ INMOVILIZAR VCR \_ DE MCI \_
 </dt> <dd>
 
 Inmovilizar solo un miembro del marco actual.
@@ -104,7 +104,7 @@ Inmovilizar solo un miembro del marco actual.
 <span id="MCI_VCR_FREEZE_FRAME"></span><span id="mci_vcr_freeze_frame"></span>FOTOGRAMA \_ INMOVILIZADO DE VCR de MCI \_ \_
 </dt> <dd>
 
-Inmoviliza ambos campos del marco actual.
+Inmovilizar ambos campos del marco actual.
 
 </dd> <dt>
 
@@ -115,16 +115,16 @@ Inmovilizar el marco actual en la pantalla (se usa para la grabación).
 
 </dd> <dt>
 
-<span id="MCI_VCR_FREEZE_OUTPUT"></span><span id="mci_vcr_freeze_output"></span>SALIDA DE \_ INMOVILIZACIÓN DE VCR \_ de MCI \_
+<span id="MCI_VCR_FREEZE_OUTPUT"></span><span id="mci_vcr_freeze_output"></span>SALIDA DE \_ INMOVILIZACIÓN DE VCR DE MCI \_ \_
 </dt> <dd>
 
 Inmovilizar el fotograma actual del VCR (se usa con la captura de fotogramas).
 
 </dd> </dl>
 
-En el caso de los dispositivos VCR, el *parámetro lpFreeze* apunta a una estructura [**\_ \_ parms genérica de MCI.**](mci-generic-parms.md)
+En el caso de los dispositivos *VCR, el parámetro lpFreeze* apunta a una estructura [**\_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md)
 
-El tipo de dispositivo de superposición usa la **siguiente** marca adicional:
+El tipo de dispositivo superpuesto usa la **siguiente marca** adicional:
 
 <dl> <dt>
 
@@ -135,7 +135,7 @@ El **miembro rc** de la estructura identificada por *lpFreeze* contiene un rect�
 
 </dd> </dl>
 
-En el caso de los dispositivos de superposición de vídeo, el parámetro *lpFreeze* apunta a una estructura [**\_ MCI OVLY \_ RECT \_ PARMS.**](mci-ovly-rect-parms.md)
+En el caso de los dispositivos de superposición de vídeo, el parámetro *lpFreeze* apunta a una estructura [**\_ \_ MCI OVLY RECT \_ PARMS.**](mci-ovly-rect-parms.md)
 
 ## <a name="requirements"></a>Requisitos
 

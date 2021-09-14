@@ -1,7 +1,7 @@
 ---
 description: Evento opcional que se señala cada vez que el objeto quita un ejemplo de la cola. El valor es inicialmente NULL. Llame al método COutputQueue::SetPopEvent para especificar un identificador de evento.
 ms.assetid: f2602532-b045-4384-b87c-b28cc34c81b0
-title: Miembro COutputQueue::m_hEventPop (Outputq.h)
+title: COutputQueue::m_hEventPop miembro (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bb401cf9755260c797ebfb382d9f2248d9d04c5f8d9e9b49e319c390de1664c5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 88ab5235a3d4df5b60b53279c444ae99b12fe0c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246740"
 ---
 # <a name="coutputqueuem_heventpop-member"></a>Miembro COutputQueue::m \_ hEventPop
 

@@ -4,12 +4,12 @@ ms.assetid: 1eeece25-4f24-4efe-879d-66ebbb6a9391
 title: Propiedad Resumen de recuento de palabras
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eb167c50db0894ea658bb93b97bfb9f49362d32cca8976a2ea3ec590b716450
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2c4200cb946f6948770d0c900c2df651b8fbff11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145238"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246369"
 ---
 # <a name="word-count-summary-property"></a>Propiedad Resumen de recuento de palabras
 
@@ -42,13 +42,13 @@ Se combinan para proporcionar a la **propiedad Resumen de recuento** de palabras
 | 3     | Archivos de origen comprimidos mediante nombres de archivo cortos. Coincide con los archivos y los archivadores de [la tabla multimedia](media-table.md). Se pueden tener privilegios elevados para instalar este paquete.                                                                                                                  |
 | 4     | Imagen administrativa con nombres de archivo largos. Coincide con el árbol de [la tabla de directorios](directory-table.md). Se pueden tener privilegios elevados para instalar este paquete.                                                                                                                                |
 | 5     | Imagen administrativa con nombres de archivo cortos. Coincide con el árbol de [la tabla de directorios](directory-table.md). Se pueden tener privilegios elevados para instalar este paquete.                                                                                                                               |
-| 8     | No se requieren privilegios elevados para instalar este paquete. Use este valor al [crear paquetes sin el cuadro de diálogo UAC](authoring-packages-without-the-uac-dialog-box.md). Disponible a partir de Windows Installer versión 4.0 y Windows Vista o Windows Server 2008.<br/> |
+| 8     | No se requieren privilegios elevados para instalar este paquete. Use este valor al [crear paquetes sin el cuadro de diálogo UAC](authoring-packages-without-the-uac-dialog-box.md). Disponible a partir Windows Installer versión 4.0 y Windows Vista o Windows Server 2008.<br/> |
 
 
 
  
 
-Tenga en cuenta que si el paquete está marcado como comprimido (se establece el bit 1), el instalador de Windows solo instala los archivos ubicados en la raíz del origen. En este caso, incluso los archivos marcados como sin comprimir en la tabla [de](file-table.md) archivos deben encontrarse en la raíz para instalarse. Para especificar una imagen de origen que tenga un archivo contenedor (archivos comprimidos) y archivos sin comprimir que coincidan con el árbol de  la tabla de directorios [,](directory-table.md)marque el paquete como sin comprimir dejando bit 1 [](file-table.md) sin establecer (valor = 0) en la propiedad Resumen de recuento de palabras y establezca **msidbFileAttributesCompressed** (valor =16384) en la columna Atributos de la tabla de archivos para cada archivo del archivador.
+Tenga en cuenta que si el paquete está marcado como comprimido (se establece el bit 1), Windows Installer solo instala los archivos ubicados en la raíz del origen. En este caso, incluso los archivos marcados como sin comprimir en la tabla [de](file-table.md) archivos deben encontrarse en la raíz para instalarse. Para especificar una imagen de origen que tenga un archivo contenedor (archivos comprimidos) y archivos sin comprimir que coincidan con el árbol de  la tabla de directorios [,](directory-table.md)marque el paquete como sin comprimir dejando bit 1 [](file-table.md) sin establecer (valor = 0) en la propiedad Resumen de recuento de palabras y establezca **msidbFileAttributesCompressed** (valor =16384) en la columna Atributos de la tabla de archivos para cada archivo del archivador.
 
 En una transformación, la **propiedad Resumen del recuento de palabras** debe ser Null.
 
@@ -59,9 +59,9 @@ En el flujo de información de  resumen de un paquete de revisión, la propiedad
 | Value | Significado                                                                                                                                                                              |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1     | Valor predeterminado, que indica que se usó MSPATCH para crear la revisión.                                                                                                        |
-| 2     | Requiere como mínimo Windows Installer 1.2 para que se aplique la revisión. Se produce un error inmediatamente en una revisión con un recuento de palabras de "2" si se usa con una versión Windows Installer anterior a la 1.2. |
+| 2     | Requiere como mínimo Windows Installer 1.2 para que se aplique la revisión. Se produce un error inmediatamente en una revisión con un recuento de palabras de "2" si se usa con una Windows installer anterior a la 1.2. |
 | 3     | Requiere como mínimo Windows Installer 2.0 para que se aplique la revisión. Se produce un error inmediatamente en una revisión con un recuento de palabras de "3" si se usa con una versión Windows Installer anterior a la 2.0. |
-| 4     | Requiere como mínimo Windows Installer 3.0 para que se aplique la revisión. Se produce un error en una revisión con un recuento de palabras de "4" si se usa con una versión Windows Installer anterior a la 3.0.             |
+| 4     | Requiere como mínimo Windows Installer 3.0 para que se aplique la revisión. Se produce un error en una revisión con un recuento de palabras de "4" si se usa con una Windows installer anterior a la 3.0.             |
 | 5     | Requiere como mínimo Windows Installer 3.1 para que se aplique la revisión.                                                                                                               |
 
 

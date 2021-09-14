@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd447c4b36822e25d70f0aa387040a76738f280a2b22393b53732941a087ff45
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ff783a108f5cb1ac34141c6c57f47b16e23531a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118358337"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245006"
 ---
 # <a name="glpushname-function"></a>Función glPushName
 
@@ -64,7 +64,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glPushName** hace que el nombre se inserta en la pila de nombres, que inicialmente está vacía. La [**función glPopName**](glpopname.md) devuelve un nombre de la parte superior de la pila. La pila de nombres se usa durante el modo de selección para permitir que los conjuntos de comandos de representación se identifiquen de forma única. Consta de un conjunto ordenado de enteros sin signo.
 
@@ -80,7 +80,7 @@ Las siguientes funciones recuperan información relacionada **con glPushName** y
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -90,7 +90,7 @@ Las siguientes funciones recuperan información relacionada **con glPushName** y
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

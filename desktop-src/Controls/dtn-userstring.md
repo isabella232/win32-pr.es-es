@@ -3,7 +3,7 @@ title: DTN_USERSTRING de notificación (Commctrl.h)
 description: Enviado por un control selector de fecha y hora (DTP) cuando un usuario termina de editar una cadena en el control .
 ms.assetid: a5b13582-323b-4804-912c-a988d902547d
 keywords:
-- DTN_USERSTRING código de notificación Windows controles
+- DTN_USERSTRING de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6eabae4ed5a4fbe9ff0652b77fb7b6fbaf709b9030e3aa982af486ad6b7ed0d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4878875d23a0a5fce95aa4cc9ebfedfbdf24cb93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246933"
 ---
 # <a name="dtn_userstring-notification-code"></a>Código de notificación USERSTRING de DTN \_
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMDATETIMESTRING**](/windows/win32/api/commctrl/ns-c
 
 El propietario del control debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El control de este código de notificación permite al propietario proporcionar respuestas personalizadas a las cadenas especificadas en el control por el usuario. El propietario debe estar preparado para analizar la cadena de entrada y tomar medidas si es necesario.
 
@@ -63,7 +63,7 @@ El control de este código de notificación permite al propietario proporcionar 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **DTN \_ USERSTRINGW** (Unicode) y **DTN \_ USERSTRINGA** (ANSI)<br/>             |
 
 

@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: f50665768d62d8155bd0ac9001f4ae5029766d7d5b27a942941f8f41b9492e10
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 528008edbb74d5eda626b9868814ad621e676fa9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119026753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247035"
 ---
 # <a name="wpdparameterattributeform-enumeration"></a>WpdParameterAttributeForm (enumeración)
 
 El [**tipo de enumeración WpdParameterAttributeForm**](/previous-versions/windows/hardware/drivers/ff597895(v=vs.85)) describe cómo un parámetro (método o evento) almacena su valor.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -50,14 +50,14 @@ No se especifica el formato del parámetro.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_FORM_RANGE"></span><span id="wpd_parameter_attribute_form_range"></span>**INTERVALO DE FORMULARIO \_ DEL ATRIBUTO DE PARÁMETRO \_ \_ \_ WPD**
+<span id="WPD_PARAMETER_ATTRIBUTE_FORM_RANGE"></span><span id="wpd_parameter_attribute_form_range"></span>**INTERVALO DE \_ FORMULARIOS DEL \_ ATRIBUTO DE \_ PARÁMETRO WPD \_**
 </dt> <dd>
 
 El parámetro especifica un intervalo.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_FORM_ENUMERATION"></span><span id="wpd_parameter_attribute_form_enumeration"></span>**ENUMERACIÓN DE FORMULARIO \_ DE ATRIBUTO DE PARÁMETRO \_ \_ \_ WPD**
+<span id="WPD_PARAMETER_ATTRIBUTE_FORM_ENUMERATION"></span><span id="wpd_parameter_attribute_form_enumeration"></span>**ENUMERACIÓN DE \_ FORMULARIO DE ATRIBUTO DE PARÁMETRO \_ \_ WPD \_**
 </dt> <dd>
 
 El parámetro es una enumeración.

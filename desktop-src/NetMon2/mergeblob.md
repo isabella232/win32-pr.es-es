@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 5c0ce93235a0c46286b9bfbef0773a5584f3db774aa52991b4e0eaa9dd38352f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ea28f5bb6f337b20858baa544c890d5f71bf0c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119677195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245354"
 ---
 # <a name="mergeblob-function"></a>MergeBlob ( Función)
 
@@ -60,7 +60,7 @@ Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
 Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las entradas comunes a los archivos de origen y destino se sobrescribirán con datos del blob de origen.
 
@@ -68,7 +68,7 @@ Las entradas comunes a los archivos de origen y destino se sobrescribirán con d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

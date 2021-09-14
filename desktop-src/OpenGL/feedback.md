@@ -6,12 +6,12 @@ keywords:
 - modo feedback,OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb5d307b9033a60a03b585cb4df6109293d3b9b0b276bde822ca595eb37fcd19
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: af46ecbef5c371c4c4344cb480ef77f4fcc6a7d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120082455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245031"
 ---
 # <a name="feedback-mode"></a>Modo de comentarios
 

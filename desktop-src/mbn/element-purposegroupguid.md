@@ -7,12 +7,12 @@ MSHAttr:
 title: PurposeGroupGuid
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 091ccd49a30e554806cea1472ca940042283472a
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: a704d035371d6d7febc2f2d86e4d67736ab02ad2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122883471"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168185"
 ---
 # <a name="span-idwwan_profile_v4element_purposegroupguidspanpurposegroupguid"></a><span id="WWAN_profile_v4.element_PurposeGroupGuid"></span>PurposeGroupGuid
 
@@ -37,7 +37,7 @@ Se definen cuatro valores GUID, como se muestra en la tabla siguiente.
 [&lt;PurposeGroups&gt;](element-purposegroups.md)  
 **&lt;PurposeGroupGuid&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <PurposeGroupGuid>
@@ -70,7 +70,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

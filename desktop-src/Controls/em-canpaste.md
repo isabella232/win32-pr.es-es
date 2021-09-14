@@ -1,5 +1,5 @@
 ---
-title: EM_CANPASTE mensaje (Richedit.h)
+title: EM_CANPASTE (Richedit.h)
 description: Determina si un control de edición enriquecido puede pegar un formato de Portapapeles especificado.
 ms.assetid: 1b858ad8-1312-407b-b12a-c63668ba9f72
 keywords:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24f2d831cd3b3d04fcb7859d2b5936b7354fbb6b638558d605c9f8c5a6ee6333
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aad400b610a033b6f67177da99876a892d294ec8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246885"
 ---
 # <a name="em_canpaste-message"></a>Mensaje \_ DE EM CANPASTE
 
@@ -57,7 +57,7 @@ Si no se puede pegar el formato del Portapapeles, el valor devuelto es cero.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

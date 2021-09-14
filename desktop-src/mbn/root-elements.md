@@ -13,12 +13,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: a3197339b755db93ac36d6d0cd8ba163ee255a67c2473a1ab650c73b1667d0e5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bf3cf21886797a551ab61e0f259b482c08676933
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119449895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168178"
 ---
 # <a name="span-idwwan_profile_v4root_elementsspanmobile-broadband-profile-schema-v4-elements"></a><span id="WWAN_profile_v4.root_elements"></span>Elementos del esquema de perfil de banda ancha móvil v4
 
@@ -50,9 +50,9 @@ En la lista siguiente se resumen las jerarquías permitidas para este esquema, e
         -   [PurposeGroupGuid](element-purposegroupguid.md)
     -   [ProfileConditionedOn](element-profileconditionedon.md)
         -   [CellularClass](element-cellularclass.md)
-        -   [ESCALABILIDADAplicidad](element-ratapplicability.md)
+        -   [CAPACIDADAplicidad](element-ratapplicability.md)
         -   [RoamApplicability](element-roamapplicability.md)
-        -   [Imsi](element-imsi.md)
+        -   [IMSI](element-imsi.md)
         -   [IwlanApplicability](element-iwlanapplicability.md)
     -   [IsProvisioningProfile](element-isprovisioningprofile.md)
     -   [ApnID](element-apnid.md)

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2f32175fe2b86f3b05105f5627cf1e02b2509e25ee12cc415cd88ea2baba5536
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5235e2b842b26f3f05c31c9f19a16c7630c80c13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119635715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246861"
 ---
 # <a name="cbasecontrolwindowput_width-method"></a>Método CBaseControlWindow.put \_ Width
 
@@ -53,7 +53,7 @@ Nuevo ancho de ventana, en píxeles.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La ventana tiene una posición en el escritorio. Esto se expresa en píxeles mediante cuatro coordenadas (izquierda, superior, derecha e inferior). Las interfaces automatizadas por OLE suelen expresar esta posición a través de la izquierda, la parte superior, el ancho y el alto; esta es la convención que se usa en DirectShow. Todas las coordenadas se expresan en píxeles y el cambio de cualquier coordenada actualizará la ventana inmediatamente.
 

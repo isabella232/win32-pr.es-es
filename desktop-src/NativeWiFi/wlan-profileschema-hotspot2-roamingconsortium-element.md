@@ -1,5 +1,5 @@
 ---
-description: Lista de identificadores únicos organizativos (OUI) asignados por IEEE.
+description: Lista de identificadores únicos de organización (OUI) asignados por IEEE.
 ms.assetid: 4a9885b6-2e57-4a16-8e1d-b5b0797e09db
 title: Elemento RoamingConsortium (Hotspot2)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: ca2ee96deaddad14d8def14c59b490eaea54803d779e288dbf826f6514d674a0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5e53fa274cbc56de6be026ef0e466ec501cf9124
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119684155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245480"
 ---
 # <a name="roamingconsortium-hotspot2-element"></a>Elemento RoamingConsortium (Hotspot2)
 
-Lista de identificadores únicos organizativos (OUI) asignados por IEEE.
+Lista de identificadores únicos de organización (OUI) asignados por IEEE.
 
 ``` syntax
 <xs:element name="RoamingConsortium"
@@ -59,7 +59,7 @@ El elemento se define mediante el [**elemento Hotspot2.**](wlan-profileschema-ho
 
 | Elemento | Tipo | Descripción                                                               |
 |---------|------|---------------------------------------------------------------------------|
-| Oui     |      | Una única OUI, con formato de número hexadecimal de tamaño variable.<br/> |
+| OUI     |      | Una única OUI, con formato de número hexadecimal de tamaño variable.<br/> |
 
 
 

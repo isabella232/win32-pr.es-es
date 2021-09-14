@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 6fbca42d3a9f0056bfd040b49e1426275a71bd7e6aaa8a71032389ab636f4cfe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e81dbf108868cbaec4c44a436f2c8271bb5f282a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119303365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246567"
 ---
 # <a name="ec_dvd_navigationcommand"></a>EC \_ DVD \_ NavigationCommand
 
@@ -42,9 +42,9 @@ Los 32 bits superiores del comando de navegación sin formato.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **\_ EnableLoggingEvents** de DVD en **TRUE.**
+Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **DVD \_ EnableLoggingEvents** en **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Este evento está deshabilitado de forma predeterminada. Para habilitar este eve
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

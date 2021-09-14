@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - WinSpool.drv
-ms.openlocfilehash: 90c5907f86f7586710e8a65e60874587491674f2dc4d73d0632279f8b1b3c119
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fa90cb1344e7c087a601a74991598e509daed226
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119950505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168098"
 ---
 # <a name="commitspooldata-function"></a>Función CommitSpoolData
 
@@ -68,9 +68,9 @@ Si la función se realiza correctamente, devuelve un identificador al archivo sp
 
 Si se produce un error en la función, devuelve INVALID \_ HANDLE \_ VALUE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las aplicaciones que envían un trabajo de impresión de cola pueden llamar a [**GetSpoolFileHandle**](getspoolfilehandle.md) y, a continuación, escribir datos directamente en el identificador de archivo de cola mediante una llamada [**a WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile). Para notificar al colador de impresión que el archivo contiene datos que están listos para representarse, la aplicación debe llamar a **CommitSpoolData** y proporcionar el número de bytes disponibles.
+Las aplicaciones que envían un trabajo de impresión de cola pueden llamar a [**GetSpoolFileHandle**](getspoolfilehandle.md) y, a continuación, escribir datos directamente en el identificador de archivo de cola mediante una llamada [**a WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile). Para notificar al cola de impresión que el archivo contiene datos que están listos para representarse, la aplicación debe llamar a **CommitSpoolData** y proporcionar el número de bytes disponibles.
 
 Si **se llama a CommitSpoolData** varias veces, cada llamada debe usar el identificador de archivo spool devuelto por la llamada anterior. Cuando no se escribirán más datos en el archivo spool, se debe llamar a [**CloseSpoolFileHandle**](closespoolfilehandle.md) para el identificador de archivo devuelto por la última llamada a **CommitSpoolData**.
 
@@ -84,7 +84,7 @@ Antes de **llamar a CommitSpoolData,** las aplicaciones deben establecer el punt
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
-| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | Archivo DLL<br/>                      | <dl> <dt>WinSpool.drv</dt> </dl>                   |
 

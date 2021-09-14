@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 309261b7c8ad0c91a50fa1e0f292c6785d18cdd222c5e463eb62ae3728b39b93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de28f2169e5ac854163854ac95959d941100aaae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119584595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247191"
 ---
 # <a name="wmasfsecurityobjectssize"></a>WM/ASFSecurityObjectsSize
 
@@ -29,9 +29,9 @@ g \_ wszWMASFSecurityObjectsSize
 
 ## <a name="data-type"></a>Tipo de datos
 
-**TIPO WMT \_ \_ QWORD**
+**QWORD \_ DE TIPO \_ WMT**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo es de solo lectura y se aplica a todo el archivo (secuencia 0).
 

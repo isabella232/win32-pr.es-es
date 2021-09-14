@@ -1,19 +1,19 @@
 ---
 title: Windows Funciones de servicios web
-description: Las Windows Web Services Functions admiten el modelo de programación basado en métodos de Windows Web Services API.
+description: Las Windows web services admiten el modelo de programación basado en métodos de la API Windows Web Services.
 ms.assetid: 7eb62c55-d01e-43aa-aeb7-2940bf505b66
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee4daf5f1442f0badba0a9d6e222c9c986063e4f9cac0a26485f02e08ada1006
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38a49f6cca4ea6a4ac1bcfdc8ad4a5de4cbb10aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118192415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247011"
 ---
 # <a name="windows-web-services-functions"></a>Windows Funciones de servicios web
 
-Las Windows Web Services Functions admiten el modelo de programación basado en métodos de Windows Web Services API. El [entorno de tiempo de ejecución](service-host.md) del host de servicio de la capa de API [del](service-model-layer-overview.md) modelo de servicio proporciona el modelo de programación del lado servidor. Una aplicación del lado servidor se abre, cierra y libera un recurso de host de servicio según sea necesario para procesar las solicitudes de cliente. El proxy de servicio proporciona el modelo de programación de API del lado cliente. Las aplicaciones del lado cliente pueden enviar y recibir mensajes a través de un canal a través del proxy de servicio como llamadas de método.
+Las Windows web services admiten el modelo de programación basado en métodos de la API Windows Web Services. El [entorno de tiempo de ejecución](service-host.md) del host de servicio de la capa de API [del](service-model-layer-overview.md) modelo de servicio proporciona el modelo de programación del lado servidor. Una aplicación del lado servidor se abre, cierra y libera un recurso de host de servicio según sea necesario para procesar las solicitudes de cliente. El proxy de servicio proporciona el modelo de programación de API del lado cliente. Las aplicaciones del lado cliente pueden enviar y recibir mensajes a través de un canal a través del proxy de servicio como llamadas de método.
 
 La API Windows Web Services incluye las siguientes funciones:
 

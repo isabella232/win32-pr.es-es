@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 86553ac759a362c1ea4abb53a47d0e9376cbc526
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370112"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246021"
 ---
 # <a name="mci_status-command"></a>Comando MCI \_ STATUS
 
 > [!NOTE]
-> La comunicación sin sesgos de Microsoft admite un entorno diverso e inclusión.  Dentro de este documento, hay referencias a la palabra "subordinado". La Guía de estilo de Microsoft [Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo reconoce como una palabra excluyente.  Esta redacción se usa, ya que actualmente es la que se usa en los comandos. Por coherencia, este documento contiene esta palabra. Cuando esta palabra se modifica en los comandos, corregiremos este documento para que esté alineado.
+> Comunicación sin sesgos Microsoft admite un entorno diverso e inclusión.  Dentro de este documento, hay referencias a la palabra "subordinado". La Guía de estilo de Microsoft [Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo reconoce como una palabra excluyente.  Esta redacción se usa, ya que actualmente es la que se usa en los comandos. Por coherencia, este documento contiene esta palabra. Cuando esta palabra se modifica en los comandos, corregiremos este documento para que esté alineado.
 
 El comando MCI \_ STATUS recupera información sobre un dispositivo MCI. Todos los dispositivos reconocen este comando. Se devuelve información en el **miembro dwReturn** de la estructura identificada por el *parámetro lpStatus.*
 

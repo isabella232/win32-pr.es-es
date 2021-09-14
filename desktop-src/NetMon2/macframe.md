@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: dcff7294d2800e797b43b3a05bd25c35418c6fb466c95130b97be73f25040d3a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7901daf467a63586543c52ca8a214d5d0094982
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118364713"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245361"
 ---
 # <a name="macframe-union"></a>Unión de MACFRAME
 
@@ -38,7 +38,7 @@ typedef union {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -70,15 +70,15 @@ Puntero FDDI a un marco.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta estructura se usa con más frecuencia como superposición. Para que las propiedades del primer protocolo puedan ser accesibles, convierte el marco en el mismo tipo que el protocolo.
+Esta estructura se usa con más frecuencia como superposición. Para que las propiedades del primer protocolo se puedan acceder, convierte el marco en el mismo tipo que el protocolo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

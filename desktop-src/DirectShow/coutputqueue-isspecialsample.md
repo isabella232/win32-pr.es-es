@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c192196869f86e8d78da2f6b38a661373e115753d99e554f4b7a868eb0b484fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc57847d6a977c740bbf50bae220a89b0ed6fab1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246765"
 ---
 # <a name="coutputqueueisspecialsample-method"></a>Método COutputQueue.IsSpecialSample
 
@@ -53,7 +53,7 @@ Puntero a un elemento de la cola.
 
 Devuelve **TRUE si** *pSample* es un mensaje de control o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**método COutputQueue::QueueSample**](coutputqueue-queuesample.md) puede recibir mensajes de control además de ejemplos multimedia. Un mensaje de control es una constante definida (conversión a un tipo LONG PTR) que indica al subproceso \_ que realice una acción. Los mensajes de control no contienen datos multimedia. Para obtener más información, **vea COutputQueue::QueueSample**.
 

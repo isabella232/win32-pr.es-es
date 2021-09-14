@@ -4,12 +4,12 @@ description: Etiqueta Mrk
 ms.assetid: 1bc04853-f919-4f6f-90c2-21ac836bb1e4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb91ed828073ca059a291350fdd7d8f5c3056cd9bfa04b61976b9d71386441e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 805a66b9ce5863bda7b7b95317bcab9cf1d80f32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118475895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168262"
 ---
 # <a name="mrk-tag"></a>Etiqueta Mrk
 
@@ -41,9 +41,9 @@ Define un marcador en el texto hablado.
 
 </dd> </dl>
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
-Cuando el servidor procesa un marcador, genera un evento bookmark. Debe especificar un número mayor que cero (0) y no igual a 2147483647 o 2147483646.
+Cuando el servidor procesa un marcador, genera un evento de marcador. Debe especificar un número mayor que cero (0) y no igual a 2147483647 o 2147483646.
 
  
 

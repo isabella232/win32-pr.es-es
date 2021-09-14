@@ -4,12 +4,12 @@ ms.assetid: 503d0b11-2113-4df4-8b6b-250f24d09b1f
 title: WPD_CONTENT_TYPE_TASK
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d42761fa8cbd96b4ce5b4085544906d2333b9d1317181b397140468145a4b37
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6823a6707cac184ca5e04eda90a036f39f7b89a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118193539"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247095"
 ---
 # <a name="wpd_content_type_task"></a>TAREA TIPO \_ DE \_ CONTENIDO \_ WPD
 
@@ -22,11 +22,11 @@ Este tipo de objeto admite las siguientes propiedades.
 | Nombre de la propiedad       | Obligatorio u opcional         |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [IDENTIFICADOR DE OBJETO \_ \_ WPD](object-properties.md)                                                                | Obligatorio, de solo lectura. Un cliente no puede establecer esta propiedad, incluso en el momento de la creación. |
-| [IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD](object-properties.md)                                                 | Obligatorio.                                                                      |
+| [IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD](object-properties.md)                                                 | Necesario.                                                                      |
 | [NOMBRE DE OBJETO \_ \_ WPD](object-properties.md)                                                            | Obligatorio si el objeto representa un archivo.                                      |
 | [IDENTIFICADOR ÚNICO \_ PERSISTENTE \_ DEL OBJETO \_ \_ WPD](object-properties.md)                          | Obligatorio, de solo lectura. Un cliente no puede establecer esta propiedad, incluso en el momento de la creación. |
-| [FORMATO DE OBJETO \_ \_ WPD](object-properties.md)                                                        | Obligatorio.                                                                      |
-| [TIPO DE CONTENIDO \_ DE \_ OBJETO \_ WPD](object-properties.md)                                           | Obligatorio.                                                                      |
+| [FORMATO DE OBJETO \_ \_ WPD](object-properties.md)                                                        | Necesario.                                                                      |
+| [TIPO DE CONTENIDO \_ DE \_ OBJETO \_ WPD](object-properties.md)                                           | Necesario.                                                                      |
 | [\_ISHIDDEN DEL \_ OBJETO WPD](object-properties.md)                                                    | Obligatorio si el objeto está oculto.                                              |
 | [ISSYSTEM DEL \_ OBJETO \_ WPD](object-properties.md)                                                    | Obligatorio si el objeto es un objeto del sistema (representa un archivo del sistema).          |
 | [TAMAÑO DEL OBJETO \_ \_ WPD](object-properties.md)                                                            | Obligatorio si el objeto tiene al menos un recurso.                              |
@@ -44,7 +44,7 @@ Este tipo de objeto admite las siguientes propiedades.
 | [OBJETO WPD \_ \_ GENERACIÓN \_ DE \_ MINIATURAS A PARTIR DEL \_ RECURSO](object-properties.md) | Opcional.                                                                      |
 | [EL OBJETO \_ WPD \_ PUEDE \_ ELIMINAR](object-properties.md)                                                                     | Obligatorio si no se puede eliminar el objeto.                                      |
 | [CONFIGURACIÓN REGIONAL DEL \_ \_ LENGUAJE DE OBJETOS \_ WPD](object-properties.md)                                                                | Opcional.                                                                      |
-| [ASUNTO DE INFORMACIÓN \_ COMÚN \_ DE \_ WPD](object-properties.md)                                                            | Obligatorio.                                                                      |
+| [ASUNTO DE INFORMACIÓN \_ COMÚN \_ DE \_ WPD](object-properties.md)                                                            | Necesario.                                                                      |
 | [TEXTO DEL CUERPO \_ DE INFORMACIÓN COMÚN DE \_ \_ \_ WPD](object-properties.md)                                                         | Se recomienda su uso.                                                                   |
 | [PRIORIDAD DE INFORMACIÓN \_ \_ COMÚN DE \_ WPD](object-properties.md)                                                           | Se recomienda su uso.                                                                   |
 | [FECHA Y HORA DE INICIO DE INFORMACIÓN COMÚN \_ \_ \_ \_ DE WPD](object-properties.md)                                                    | Se recomienda su uso.                                                                   |

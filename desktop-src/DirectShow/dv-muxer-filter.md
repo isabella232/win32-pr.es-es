@@ -4,16 +4,16 @@ ms.assetid: 4dd57202-f4de-40d9-b720-efaba8a60a7c
 title: Filtro dv muxer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6ad8189d7430a150c6860ef9e390a0e66aabd00971b56197ffe8651cde8967b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 013251f2f9c1946aaa0f7b3c95edfd2de81c4d78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120102975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246615"
 ---
 # <a name="dv-muxer-filter"></a>Filtro dv muxer
 
-Este filtro combina un vídeo digital (DV): secuencia de vídeo codificada con una o dos secuencias de audio para generar una secuencia DV intercalada. Para escribir la secuencia en un archivo AVI, conecte este filtro al filtro [AVI Mux](avi-mux-filter.md) y conecte el *Mux* avi al filtro [file writer.](file-writer-filter.md) Para obtener más información, vea [Vídeo digital en DirectShow](digital-video-in-directshow.md).
+Este filtro combina un vídeo digital (DV): secuencia de vídeo codificada con una o dos secuencias de audio para generar una secuencia DV intercalada. Para escribir la secuencia en un archivo AVI, conecte este filtro al filtro [AVI Mux](avi-mux-filter.md) y conecte el *Mux* avi al filtro [file writer.](file-writer-filter.md) Para obtener más información, [vea Vídeo digital en DirectShow](digital-video-in-directshow.md).
 
 
 
@@ -34,7 +34,7 @@ Este filtro combina un vídeo digital (DV): secuencia de vídeo codificada con u
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Dv Muxer puede crear dos pines de entrada de audio. Admite los formatos de audio que se muestran en la tabla siguiente.
 
@@ -182,7 +182,7 @@ Canal SD 2
 
 Para esta tabla, el pin de audio 1 se define como el primer pin de entrada conectado a un origen de audio y el pin de audio 2 se define como el segundo pin de entrada conectado a un origen de audio. Una vez conectada una clavija de audio, este esquema de numeración permanece en vigor a menos que se desconecten ambas clavijas de audio. Por ejemplo, si conecta ambas clavijas de audio y, a continuación, desconecta el pin de audio 1, el pin restante todavía se considera el pin 2.
 
-El audio proporcionado para anclar 1 se graba en el primer bloque de audio de los fotogramas DV (CH1) y el audio proporcionado para anclar 2 se graba en el segundo bloque de audio (CH2). Excepción: si el filtro tiene una única entrada estéreo a 44,1 kHz o 48 kHz, el canal de audio izquierdo se graba en el primer bloque de audio y el canal de audio derecho se graba en el segundo bloque de audio.
+El audio proporcionado para anclar 1 se graba en el primer bloque de audio de los marcos DV (CH1) y el audio proporcionado para anclar 2 se graba en el segundo bloque de audio (CH2). Excepción: si el filtro tiene una única entrada estéreo a 44,1 kHz o 48 kHz, el canal de audio izquierdo se graba en el primer bloque de audio y el canal de audio derecho se graba en el segundo bloque de audio.
 
 Para la salida sd de 4 canales: si la entrada es estéreo, la pista izquierda se graba en CHa o CHc y la pista derecha se registra en CHb o CHd. Si la entrada es mono, el audio se graba en CHa o CHc, y CHb y CHd son silenciosos.
 

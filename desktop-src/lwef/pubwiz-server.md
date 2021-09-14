@@ -4,18 +4,18 @@ description: Las funciones del lado servidor se comunican con el asistente de cl
 ms.assetid: 7cc8b814-f230-4326-a9df-a491ed35483e
 keywords:
 - asistentes para publicación, diseño del lado servidor
-- window.external,publishing wizards
+- window.external, asistentes para publicación
 - asistentes para publicación,window.external
 - asistentes para publicación, funciones de script de navegación
 - scripts, asistentes para publicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 075e5a18b2150e504b6424fae2591ed83fdf707a6a20231b8f1186ddb6f3a67b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 20b3b218bbca297be446016335d90fe717a88bba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119555815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168225"
 ---
 # <a name="server-side-design"></a>Server-Side diseño
 
@@ -34,20 +34,20 @@ En este documento se tratan los temas siguientes.
 
 ## <a name="implementing-navigation-script-functions"></a>Implementar funciones de script de navegación
 
-El script del lado servidor de cada página HTML responde a los botones de navegación a través de funciones para **OnBack**, **OnNext** y **OnCancel**. Estas funciones deben ser accesibles a través **de IHTMLDocument::get \_ Script** en el cliente y no toman ningún parámetro.
+El script del lado servidor de cada página HTML responde a los botones de navegación a través de funciones para **OnBack**, **OnNext** y **OnCancel**. Estas funciones deben ser accesibles a través **de IHTMLDocument::get \_ Script** en el cliente y no tomar ningún parámetro.
 
 ### <a name="onback"></a>OnBack()
 
 -   Responde cuando el usuario hace clic en **Atrás** en el asistente.
--   Si la página actual del lado servidor es la primera página del lado servidor, llame a **window.external.FinalBack** para indicar al cliente que vaya a la página del lado cliente anterior.
+-   Si la página del lado servidor actual es la primera página del lado servidor, llame a **window.external.FinalBack** para indicar al cliente que vaya a la página del lado cliente anterior.
 -   Si la página del lado servidor actual no es la primera página del lado servidor, vaya a la página anterior del lado servidor.
 -   Esta función debe implementarse para cada página. Cualquier página que no lo haga se considera no válida y muestra una página de error.
 
 ### <a name="onnext"></a>OnNext()
 
 -   Responde cuando el usuario hace clic en **Siguiente** en el asistente.
--   Si la página actual del lado servidor es la última página del lado servidor, llame a **window.external.FinalNext** para indicar al cliente que vaya a la siguiente página del lado cliente o que complete el asistente.
--   Si la página actual del lado servidor no es la última página del lado servidor, vaya a la siguiente página del lado servidor.
+-   Si la página del lado servidor actual es la última página del lado servidor, llame a **window.external.FinalNext** para indicar al cliente que vaya a la siguiente página del lado cliente o que complete el asistente.
+-   Si la página del lado servidor actual no es la última página del lado servidor, vaya a la siguiente página del lado servidor.
 
 ### <a name="oncancel"></a>OnCancel()
 

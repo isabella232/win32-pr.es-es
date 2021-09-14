@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d6255ea99b9177819dee6d227c45d2229deab57f
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370531"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246380"
 ---
-# <a name="icm_decompress_get_palette-message"></a>\_ICM MENSAJE GET PALETTE DE DECOMPRESS \_ \_
+# <a name="icm_decompress_get_palette-message"></a>\_ICM Mensaje GET PALETTE de DESCOMPRESS \_ \_
 
 El ICM mensaje GET PALETTE de **\_ DECOMPRESS \_ \_** solicita que el controlador de descompresión de vídeo proporcione la tabla de colores de la estructura [**BITMAPINFOHEADER de**](/previous-versions//dd183376(v=vs.85)) salida. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressGetPalette.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetpalette)
 
@@ -48,7 +48,7 @@ Puntero a una [**estructura BITMAPINFOHEADER**](/previous-versions//dd183376(v=v
 <span id="lpbiOutput"></span><span id="lpbioutput"></span><span id="LPBIOUTPUT"></span>*lpbiOutput*
 </dt> <dd>
 
-Puntero a una [**estructura BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)) que contiene la tabla de colores. El espacio reservado para la tabla de colores siempre es de al menos 256 colores. Puede especificar cero para que este parámetro devuelva solo el tamaño de la tabla de colores.
+Puntero a una [**estructura BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)) para contener la tabla de colores. El espacio reservado para la tabla de colores siempre es de al menos 256 colores. Puede especificar cero para que este parámetro devuelva solo el tamaño de la tabla de colores.
 
 </dd> </dl>
 

@@ -4,12 +4,12 @@ ms.assetid: 4e0217bf-7550-40a2-b47c-8e898a586005
 title: Funciones de estadísticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2261f0c4f8f8249b401e658759827d6471d3ac47b6eb10df769ad5f37d8ce7af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce62e12f3c4894ba86ff5e5aaaa38801d272195c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119063595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245090"
 ---
 # <a name="statistics-functions"></a>Funciones de estadísticas
 

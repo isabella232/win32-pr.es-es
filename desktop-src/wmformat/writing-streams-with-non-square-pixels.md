@@ -1,13 +1,13 @@
 ---
-title: Escritura Secuencias con píxeles no cuadrados
-description: Escritura Secuencias con píxeles no cuadrados
+title: Escribir Secuencias con píxeles no cuadrados
+description: Escribir Secuencias con píxeles no cuadrados
 ms.assetid: 4af7dedc-e2b8-4dc2-add4-84424e93c297
 keywords:
 - Windows SDK de formato multimedia, escritura de secuencias de vídeo
 - Windows SDK de formato multimedia, secuencias de vídeo
 - Windows SDK de formato multimedia, píxeles no cuadrados
 - Windows SDK de formato multimedia, píxeles (no cuadrados)
-- Formato de sistemas avanzados (ASF), escribir secuencias de vídeo
+- Formato de sistemas avanzados (ASF), escritura de secuencias de vídeo
 - ASF (formato de sistemas avanzados), escribir secuencias de vídeo
 - Formato de sistemas avanzados (ASF), secuencias de vídeo
 - ASF (formato de sistemas avanzados), secuencias de vídeo
@@ -22,14 +22,14 @@ keywords:
 - píxeles (no cuadrados)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08b44df1e4b4ce3f2bf2cb0e1d795b4caf396b6396e3e70b68b9040ad9a5456f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f1349840f151ab787ba0e0512cfab8fea08aacf1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119657955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247136"
 ---
-# <a name="writing-streams-with-non-square-pixels"></a>Escritura Secuencias con píxeles no cuadrados
+# <a name="writing-streams-with-non-square-pixels"></a>Escribir Secuencias con píxeles no cuadrados
 
 Hay dos maneras de crear secuencias de vídeo con píxeles no cuadrados que se mostrarán correctamente en Reproductor de Windows Media. La primera técnica implica establecer atributos de nivel de flujo en el encabezado de archivo. La segunda técnica implica agregar una extensión de unidad de datos a una secuencia del perfil y, a continuación, establecer un valor para ella en cada ejemplo que se escribe.
 

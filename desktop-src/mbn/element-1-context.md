@@ -17,11 +17,11 @@ topic_type:
 - APIRef
 - kbSyntax
 ms.openlocfilehash: 36007bc1a7aecb25c2b6d61f74dd826e888a314b
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624761"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168209"
 ---
 # <a name="span-idwwan_profile_v4element_1_contextspanmodemdmconfigprofilecontext-v4"></a><span id="WWAN_profile_v4.element_1_Context"></span>Contexto de MódemDMConfigProfile \/ (v4)
 
@@ -58,7 +58,7 @@ Especifica los parámetros necesarios para establecer una conexión de datos.
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Atributos
 
-Ninguna.
+Ninguno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos secundarios
 
@@ -103,7 +103,7 @@ Ninguna.
 </thead>
 <tbody>
 <tr class="odd">
-<td>Predeterminado</td>
+<td>Valor predeterminado</td>
 <td>El tipo de IP se debe seleccionar por capas inferiores.</td>
 </tr>
 <tr class="even">

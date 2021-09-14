@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eaf822cc5eb8d1d8bdeca6b0853766774105af07cda77f55743d60d0fb12cdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce2e7d0761308805746278d2f542f5e9458b56d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119019983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246932"
 ---
 # <a name="dtn_wmkeydown-notification-code"></a>Código de notificación \_ WMKEYDOWN de DTN
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMDATETIMEWMKEYDOWN**](/windows/win32/api/commctrl/n
 
 El propietario del control debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El control de este código de notificación permite al propietario del control proporcionar respuestas específicas a las pulsaciones de tecla dentro de los campos de devolución de llamada del control.
 
@@ -63,7 +63,7 @@ El control de este código de notificación permite al propietario del control p
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **DTN \_ WMKEYDOWNW** (Unicode) y **DTN \_ WMKEYDOWNA** (ANSI)<br/>               |
 
 

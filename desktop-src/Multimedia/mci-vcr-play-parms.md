@@ -1,6 +1,6 @@
 ---
 title: MCI_VCR_PLAY_PARMS estructura (Vcr.h)
-description: La estructura MCI VCR PLAY PARMS contiene parámetros para el \_ \_ comando \_ MCI PLAY para las \_ grabadoras de vídeo.
+description: La estructura MCI VCR PLAY PARMS contiene parámetros para el comando MCI PLAY para \_ \_ \_ \_ grabadoras de vídeo-grabadora.
 ms.assetid: e180c203-3113-4fdb-bcf1-ea3e45e646e2
 keywords:
 - MCI_VCR_PLAY_PARMS estructura Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ae15eedc69accc88ef7a58a6d7ad435e872de7ea
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369962"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245925"
 ---
 # <a name="mci_vcr_play_parms-structure"></a>Estructura MCI \_ VCR \_ PLAY \_ PARMS
 
-La **estructura MCI \_ VCR PLAY \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ PLAY**](mci-play.md) para las grabadoras de vídeo.
+La **estructura MCI \_ VCR PLAY \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ PLAY**](mci-play.md) para grabadoras de vídeo-grabadora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ typedef struct tagMCI_VCR_PLAY_PARMS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ Posición en la que se reproducirá.
 **dwAt**
 </dt> <dd>
 
-Valor de hora que afecta al [**comando \_ MCI PLAY**](mci-play.md) o [**MCI \_ CUE.**](mci-cue.md) Para [**MCI \_ PLAY,**](mci-play-parms.md)es el momento en que comienza la reproducción. Para **MCI \_ CUE**, es la hora en que el dispositivo cued alcanza la posición dada en **dwFrom**.
+Valor de tiempo que afecta al [**comando MCI \_ PLAY**](mci-play.md) [**o MCI \_ CUE.**](mci-cue.md) Para [**MCI \_ PLAY,**](mci-play-parms.md)es el momento en que comienza la reproducción. Para **MCI \_ CUE**, es el momento en que el dispositivo cued alcanza la posición dada en **dwFrom**.
 
 </dd> </dl>
 

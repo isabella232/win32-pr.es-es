@@ -1,5 +1,5 @@
 ---
-description: Indica que el disco de DVD no tiene un PGC fp (cadena de programas de primera reproducción) y que el navegador de DVD no cargará automáticamente ningún PGC e iniciará \_ la reproducción.
+description: Indica que el disco de DVD no tiene una FP PGC (Cadena de programas de primera reproducción) y que el navegador de DVD no cargará automáticamente ningún PGC e iniciará \_ la reproducción.
 ms.assetid: c6b37256-5f99-41bb-98f0-b9519d260c8a
 title: EC_DVD_NO_FP_PGC (Dvdevcode.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 7c633ccef617e5f6d83beba09f3c45b50f23c145ab48ed927e835a0858681227
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6cdc32c74d1e659001227e33863bf0445c06c78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119906085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246566"
 ---
 # <a name="ec_dvd_no_fp_pgc"></a>EC \_ DVD \_ NO \_ FP \_ PGC
 
-Indica que el disco de DVD no tiene un PGC fp (cadena de programas de primera reproducción) y que el navegador de DVD no cargará automáticamente ningún PGC e iniciará \_ la reproducción.
+Indica que el disco de DVD no tiene una FP PGC (Cadena de programas de primera reproducción) y que el navegador de DVD no cargará automáticamente ningún PGC e iniciará \_ la reproducción.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este evento se genera desde el dominio First Play.
 

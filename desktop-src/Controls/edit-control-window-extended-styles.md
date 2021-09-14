@@ -17,11 +17,11 @@ api_type:
 ms.topic: reference
 ms.date: 10/19/2018
 ms.openlocfilehash: 74da183ad411db5db65fb4cb9c3f32325310023c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465612"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246921"
 ---
 # <a name="edit-control-extended-styles"></a>Editar estilos extendidos de control
 

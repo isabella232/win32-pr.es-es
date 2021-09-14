@@ -1,6 +1,6 @@
 ---
 title: MCI_DELETE comando (Mmsystem.h)
-description: El comando MCI \_ DELETE quita los datos del archivo. Los dispositivos de audio y vídeo digital reconocen este comando.
+description: El comando \_ MCI DELETE quita los datos del archivo. Los dispositivos de audio y vídeo digital reconocen este comando.
 ms.assetid: cf7fae86-e81e-4006-9755-fd01f81aeb62
 keywords:
 - MCI_DELETE comando Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: a8c1b9f81712c842e06085c323ca2110c8e06784
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246081"
 ---
-# <a name="mci_delete-command"></a>Comando MCI \_ DELETE
+# <a name="mci_delete-command"></a>Comando DELETE de MCI \_
 
-El comando MCI \_ DELETE quita los datos del archivo. Los dispositivos de audio y vídeo digital reconocen este comando.
+El comando \_ MCI DELETE quita los datos del archivo. Los dispositivos de audio y vídeo digital reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -60,13 +60,13 @@ MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital, MCI \_ TEST. 
 <span id="lpDelete"></span><span id="lpdelete"></span><span id="LPDELETE"></span>*lpDelete*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -77,14 +77,14 @@ Las marcas siguientes se aplican al tipo **de dispositivo digitalvideo:**
 <span id="MCI_DGV_DELETE_AT"></span><span id="mci_dgv_delete_at"></span>MCI \_ DGV \_ DELETE \_ AT
 </dt> <dd>
 
-Se incluye un rectángulo en el **miembro rc** de la estructura identificada por *lpDelete*. El rectángulo especifica la parte de cada marco que se eliminará. Cuando se usa esta marca, el marco se conserva en el área de trabajo y el área especificada por el rectángulo se vuelve negra. Si se omite la marca, MCI DELETE tiene como valor predeterminado todo el marco y lo quita \_ del área de trabajo.
+Se incluye un rectángulo en el **miembro rc** de la estructura identificada por *lpDelete*. El rectángulo especifica la parte de cada marco que se debe eliminar. Cuando se usa esta marca, el marco se conserva en el área de trabajo y el área especificada por el rectángulo se convierte en negro. Si se omite la marca, MCI DELETE tiene como valor predeterminado todo el marco y lo quita \_ del área de trabajo.
 
 </dd> <dt>
 
 <span id="MCI_DGV_DELETE_AUDIO_STREAM"></span><span id="mci_dgv_delete_audio_stream"></span>MCI \_ DGV \_ DELETE \_ AUDIO \_ STREAM
 </dt> <dd>
 
-Se incluye un número de secuencia de audio en el **miembro dwAudioStream** de la estructura identificada *por lpDelete*. Si usa esta marca y también desea eliminar vídeo, también debe usar la marca MCI \_ DGV \_ DELETE VIDEO \_ \_ STREAM. (Si no se especifica ninguna marca, se eliminan los datos de todas las secuencias de audio y vídeo).
+Se incluye un número de secuencia de audio en el **miembro dwAudioStream** de la estructura identificada *por lpDelete*. Si usa esta marca y también quiere eliminar vídeo, también debe usar la marca \_ MCI DGV \_ DELETE VIDEO \_ \_ STREAM. (Si no se especifica ninguna marca, se eliminan los datos de todas las secuencias de audio y vídeo).
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Las marcas siguientes se aplican al tipo **de dispositivo waveaudio:**
 <span id="MCI_FROM"></span><span id="mci_from"></span>MCI \_ FROM
 </dt> <dd>
 
-Se incluye una ubicación inicial en el **miembro dwFrom** de la estructura identificada por *lpDelete*. Las unidades asignadas a los valores de posición se especifican con la marca MCI \_ SET TIME FORMAT de \_ \_ [MCI \_ SET.](mci-set.md)
+Se incluye una ubicación inicial en el **miembro dwFrom** de la estructura identificada por *lpDelete*. Las unidades asignadas a los valores de posición se especifican con la marca MCI \_ SET TIME FORMAT de \_ \_ [MCI \_ SET](mci-set.md).
 
 </dd> <dt>
 
@@ -129,7 +129,7 @@ Se incluye una ubicación final en el **miembro dwTo** de la estructura identifi
 
 </dd> </dl>
 
-En el caso de los dispositivos de audio de forma de onda, el parámetro *lpDelete* apunta a una estructura [**\_ MCI WAVE \_ DELETE \_ PARMS.**](mci-wave-delete-parms.md)
+En el caso de los dispositivos de audio de forma de onda, el *parámetro lpDelete* apunta a una [**estructura MCI WAVE DELETE \_ \_ \_ PARMS.**](mci-wave-delete-parms.md)
 
 ## <a name="requirements"></a>Requisitos
 

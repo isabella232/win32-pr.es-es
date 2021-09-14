@@ -4,18 +4,18 @@ description: Aunque un control de barra de desplazamiento proporciona una interf
 ms.assetid: 249D0077-6E61-479A-91D5-A4BD9752B82E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f25994639a40a6380bbf2f9cc0075e8a78b9e15787dbdf1babf0e6a15550faf1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43b739638d95d9f3e530718f8e9b9e6168069420
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119698745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246974"
 ---
 # <a name="how-to-create-a-keyboard-interface-for-standard-scroll-bars"></a>Cómo crear una interfaz de teclado para barras de desplazamiento estándar
 
-Aunque un control de barra de desplazamiento proporciona una interfaz de teclado integrada, una barra de desplazamiento estándar no lo hace. Para implementar una interfaz de teclado para una barra de desplazamiento estándar, un procedimiento de ventana debe procesar el mensaje [**WM \_ KEYDOWN**](/windows/desktop/inputdev/wm-keydown) y examinar el código de clave virtual especificado por el *parámetro wParam.* Si el código de clave virtual corresponde a una tecla de flecha, el procedimiento de ventana se envía a sí mismo un mensaje [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) con la palabra de orden bajo del parámetro *wParam* establecida en el código de solicitud de barra de desplazamiento adecuado.
+Aunque un control de barra de desplazamiento proporciona una interfaz de teclado integrada, una barra de desplazamiento estándar no lo hace. Para implementar una interfaz de teclado para una barra de desplazamiento estándar, un procedimiento de ventana debe procesar el mensaje [**WM \_ KEYDOWN**](/windows/desktop/inputdev/wm-keydown) y examinar el código de clave virtual especificado por el *parámetro wParam.* Si el código de clave virtual corresponde a una tecla de flecha, el procedimiento de ventana se envía a sí mismo un mensaje [**\_ WM HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) con la palabra de orden bajo del parámetro *wParam* establecida en el código de solicitud de barra de desplazamiento adecuado.
 
-Por ejemplo, cuando el usuario presiona la tecla de flecha ARRIBA, el procedimiento de ventana recibe un mensaje [**WM \_ KEYDOWN**](/windows/desktop/inputdev/wm-keydown) con *wParam* igual a VK \_ UP. En respuesta, el procedimiento de ventana se envía a sí mismo un mensaje [**\_ VSCROLL de WM**](wm-vscroll.md) con la palabra de orden bajo *de wParam* establecida en el código de \_ solicitud LINEUP de SB.
+Por ejemplo, cuando el usuario presiona la tecla de flecha ARRIBA, el procedimiento de ventana recibe un mensaje [**WM \_ KEYDOWN**](/windows/desktop/inputdev/wm-keydown) con *wParam* igual a VK \_ UP. En respuesta, el procedimiento de ventana se envía a sí mismo un mensaje [**\_ VSCROLL**](wm-vscroll.md) de WM con la palabra de orden bajo *de wParam* establecida en el código de solicitud \_ DE SB LINEUP.
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -23,7 +23,7 @@ Por ejemplo, cuando el usuario presiona la tecla de flecha ARRIBA, el procedimie
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación

@@ -11,16 +11,16 @@ api_name:
 - contextType
 api_type:
 - Schema
-ms.openlocfilehash: 58189cf27f667b3d7e5e6c387a52143b8c757724106e8d9941d31d2582002b0d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63d221c6bd388196abfb73a8ac38a26de516d0df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118744452"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168146"
 ---
 # <a name="contexttype-complex-type"></a>contextType Complex Type
 
-El **tipo complejo contextType** especifica el contexto de conexiones de un dispositivo de banda ancha móvil.
+El **tipo complejo contextType** especifica el contexto de conexión de un dispositivo de banda ancha móvil.
 
 ``` syntax
 <xs:complexType name="contextType">
@@ -114,7 +114,7 @@ El **tipo complejo contextType** especifica el contexto de conexiones de un disp
 | [**IgnorePassword**](schema-ignorepassword-userlogoncred-element.md) | boolean                                        | Cómo controlar contraseñas al actualizar perfiles.<br/>                                    |
 | [**Contraseña**](schema-password-userlogoncred-element.md)             | string                                         | Contraseña usada para autenticar a un usuario<br/>                                                |
 | [**UserLogonCred**](schema-userlogoncred-contexttype-element.md)     |                                                | Credenciales de inicio de sesión para una conexión.<br/>                                                |
-| [**nombre de usuario**](schema-username-userlogoncred-element.md)             | [**nameType**](schema-nametype-simpletype.md) | Nombre de usuario para el inicio de sesión<br/>                                                                 |
+| [**Nombre de usuario**](schema-username-userlogoncred-element.md)             | [**nameType**](schema-nametype-simpletype.md) | Nombre de usuario para el inicio de sesión<br/>                                                                 |
 
 
 
@@ -122,7 +122,7 @@ El **tipo complejo contextType** especifica el contexto de conexiones de un disp
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |

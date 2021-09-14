@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e6ae9920589d93afe05d56654da6bf80e9ef09aaef6e787d23919f2ac48c09ba
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b786afa24f974d5eab7e13062105f26386da1c30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246735"
 ---
 # <a name="coutputqueuem_hr-member"></a>Miembro COutputQueue::m \_ hr
 
@@ -36,7 +36,7 @@ HRESULT m_hr;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta variable miembro se usa para coordinar actividades entre subprocesos. Si el pin de entrada de bajada rechaza un ejemplo o si el objeto comienza a vaciarse, el valor se establece en S \_ FALSE o en un código de error. El objeto no entregará más muestras hasta que se complete el vaciado o hasta que se llame al método [**COutputQueue::Reset.**](coutputqueue-reset.md)
 

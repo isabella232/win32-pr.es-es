@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a133907b29857abdc1663d3283bc4b4164878f3fa0976769e6d42daef2c4cb1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1156d69c012faa0141726c00ab880d954fe2857
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119915965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246867"
 ---
 # <a name="em_charfrompos-message"></a>Mensaje \_ CHARFROMPOS EM
 
@@ -51,11 +51,11 @@ Coordenadas de un punto en el área cliente del control. Las coordenadas están 
 
 **Controles de edición enriquecciones:** El valor devuelto especifica el índice de caracteres de base cero del carácter más cercano al punto especificado. El valor devuelto indica el último carácter del control de edición si el punto especificado está más allá del último carácter del control.
 
-**Editar controles:** Loword [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el índice de base cero del carácter más cercano al punto especificado. Este índice es relativo al principio del control, no al principio de la línea. Si el punto especificado está más allá del último carácter del control de edición, el valor devuelto indica el último carácter del control. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el índice de base cero de la línea que contiene el carácter. Para los controles de edición de una sola línea, este valor es cero. El índice indica el delimitador de línea si el punto especificado está más allá del último carácter visible de una línea.
+**Editar controles:** LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el índice de base cero del carácter más cercano al punto especificado. Este índice es relativo al principio del control, no al principio de la línea. Si el punto especificado está más allá del último carácter del control de edición, el valor devuelto indica el último carácter del control. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el índice de base cero de la línea que contiene el carácter. Para los controles de edición de una sola línea, este valor es cero. El índice indica el delimitador de línea si el punto especificado está más allá del último carácter visible de una línea.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 Si se pasa un punto a **EM \_ CHARFROMPOS** como *lParam* y el punto está fuera de los límites del control de edición, *lResult* es (65535, 65535).
 
@@ -67,7 +67,7 @@ Si se pasa un punto a **EM \_ CHARFROMPOS** como *lParam* y el punto está fuera
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

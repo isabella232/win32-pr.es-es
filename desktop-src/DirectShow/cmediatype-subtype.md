@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 222441a6f7f457b7ff8f467c0e1af22a30d84ca4196adcdc89611e3c358e712a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: db458160a37b029bf1bf435152d1820f98eab577
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119832085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246812"
 ---
 # <a name="cmediatypesubtype-method"></a>Método CMediaType.Subtype
 

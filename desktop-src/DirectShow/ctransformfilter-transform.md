@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a03b32006aecfb79f90a5f5aefeff542c53341b205031352974341926ed8eb26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8498a9a6ce266e0646dbbdcb4f322c093d6e0cc3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119907505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246633"
 ---
 # <a name="ctransformfiltertransform-method"></a>Método CTransformFilter.Transform
 
@@ -74,7 +74,7 @@ La clase derivada debe devolver un **valor HRESULT,** lo que indica que se ha he
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Invalide este método para generar datos de salida. Lea los datos de entrada del ejemplo especificado por el parámetro *pIn* y escriba los nuevos datos en el ejemplo especificado por el *parámetro pOut.*
 

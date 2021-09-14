@@ -11,12 +11,12 @@ api_name:
 - Compression
 api_type:
 - Schema
-ms.openlocfilehash: 9715114bc44cebef9f342795e2c46283b8737c2478d9af9bd983deca50d3114e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0da6665f69c2791669f75b91e847081dbcc351e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119959855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168150"
 ---
 # <a name="compression-contexttype-element"></a>Elemento Compression (contextType)
 
@@ -60,7 +60,7 @@ El **elemento Compression** se define mediante el tipo complejo [**contextType.*
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio aplicaciones para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

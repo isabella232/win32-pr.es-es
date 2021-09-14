@@ -5,17 +5,17 @@ ms.assetid: 34e48f35-13d7-4649-a8b2-ed6510b16f88
 keywords:
 - Windows SDK de formato multimedia, objetos receptores de inserción de escritor
 - Formato de sistemas avanzados (ASF), escribir objetos receptores de inserción
-- ASF (formato de sistemas avanzados), escritura de objetos receptores de inserción
+- ASF (formato de sistemas avanzados), escribir objetos receptores de inserción
 - objects,writer push sink objects
-- objetos de receptor de inserción de escritor
+- objetos receptores de inserción de escritor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 859e4d2d5cf2530e655b74705b1d6f9ef93960d28f523c00e0da7a7336ab258d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a19ea9855219dcb4572ef187ad93e03696b88492
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120006335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247143"
 ---
 # <a name="writer-push-sink-object"></a>Objeto receptor de inserción de escritor
 
@@ -41,7 +41,7 @@ La aplicación puede implementar la siguiente interfaz de devolución de llamada
 
 | Interfaz                                      | Descripción                                                                    |
 |------------------------------------------------|--------------------------------------------------------------------------------|
-| [**IWMStatusCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstatuscallback) | Se requiere cuando se debe comunicar la información de estado a la aplicación host. |
+| [**IWMStatusCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstatuscallback) | Se requiere cuando la información de estado se debe comunicar a la aplicación host. |
 
 
 

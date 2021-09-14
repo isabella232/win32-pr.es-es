@@ -12,16 +12,16 @@ keywords:
 - ASF (formato de sistemas avanzados), crear archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff4bec466a9f38dfedaa7e860fdc5e3eda56e0ca5fa1f1240bc18c54dfd51513
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c13c1af0d3699c89d26f007e00675ea563639c4e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119590625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247142"
 ---
 # <a name="writing-asf-files"></a>Escritura de archivos ASF
 
-Puede usar el objeto de escritor del SDK Windows Media Format para crear archivos ASF a partir de datos multimedia digitales. Para crear una instancia del objeto writer, llame a la [**función WMCreateWriter.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatewriter) El objeto de escritor coordina la funcionalidad de varios componentes, incluidos códecs, que son externos al SDK Windows Media Format.
+Puede usar el objeto de escritor del SDK Windows Media Format para crear archivos ASF a partir de datos multimedia digitales. Para crear una instancia del objeto writer, llame a la [**función WMCreateWriter.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatewriter) El objeto de escritor coordina la funcionalidad de varios componentes, incluidos los códecs, que son externos al SDK Windows Media Format.
 
 La funcionalidad básica del objeto de escritor se puede dividir en los pasos siguientes. En estos pasos, "la aplicación" hace referencia al programa que escribe con el SDK Windows Media Format.
 
@@ -42,7 +42,7 @@ El escritor también admite una funcionalidad más avanzada, lo que le permite h
 -   Escriba en receptores de archivos para obtener opciones avanzadas de control de archivos.
 -   Escriba en receptores de inserción para su distribución en servidores que entregarán contenido a los usuarios finales.
 -   Entregar ejemplos de vista posterior para la comprobación de la salida.
--   Proporcionar estadísticas de rendimiento del escritor.
+-   Entregar estadísticas de rendimiento del escritor.
 
 En las secciones siguientes se describe el uso del objeto de escritor en detalle.
 

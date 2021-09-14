@@ -4,12 +4,12 @@ ms.assetid: e55775d2-1166-4f14-9553-207c69202b69
 title: Esquema de perfil de banda ancha móvil v1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b34e8e45218666cebf320a03bb3051f0f945930387c3773e2d7bc941cd31e38
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8f02be0cf77923b6802ea1bc58944eb26108858
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118744617"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168181"
 ---
 # <a name="mobile-broadband-profile-schema-v1"></a>Esquema de perfil de banda ancha móvil v1
 
@@ -17,7 +17,7 @@ El Windows 7 Esquema de perfil de banda ancha móvil v1 está disponible en el e
 
 -   [Elementos del esquema de perfil de banda ancha móvil v1](schema-elements.md)
 -   [Tipos simples de esquema de perfil de banda ancha móvil v1](schema-simple-types.md)
--   [Tipos complejos del esquema de perfil de banda ancha móvil v1](schema-complex-types.md)
+-   [Tipos complejos de esquema de perfil de banda ancha móvil v1](schema-complex-types.md)
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8" ?>

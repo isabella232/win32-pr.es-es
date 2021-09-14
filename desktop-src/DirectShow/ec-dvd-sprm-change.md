@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: e242fb17bfd80826b4bd165a2008789a2df7e478e5f526342bcbbe17ddf9d081
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1af5b8637a197973bca2129a8b8a0198d20248eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119537025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246513"
 ---
-# <a name="ec_dvd_sprm_change"></a>EC \_ DVD \_ SPRM \_ Change
+# <a name="ec_dvd_sprm_change"></a>Cambio \_ de \_ SPRM de DVD de \_ EC
 
 Se envía cuando cambia el valor de un registro de parámetros del sistema (SPRM).
 
@@ -31,7 +31,7 @@ Se envía cuando cambia el valor de un registro de parámetros del sistema (SPRM
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Índice de base cero del valor de SPRM que cambió.
+Índice de base cero del valor de SPRM que ha cambiado.
 
 </dd> <dt>
 
@@ -42,9 +42,9 @@ Los 16 bits inferiores contienen el nuevo valor de SPRM.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **DVD \_ EnableLoggingEvents** en **TRUE.**
+Este evento está deshabilitado de forma predeterminada. Para habilitar este evento, llame a [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) y establezca la opción **\_ EnableLoggingEvents** de DVD en **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 

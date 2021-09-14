@@ -4,21 +4,24 @@ ms.assetid: cb8f25b3-a0f0-48fa-843f-88a5a5d17019
 title: Asignador de filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea3e94fb4220066207f64b0c484e49c1e75c939b
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 3eb106312f24e3267e9e62631c6475ac4ae1b4c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246447"
 ---
 # <a name="filter-mapper"></a>Asignador de filtros
 
-El Asignador de filtros busca filtros registrados en el Registro. El Administrador Graph filtros usa este componente para generar gráficos de filtro. Las aplicaciones pueden usarla para buscar filtros que coincidan con los criterios de búsqueda especificados. Cree este objeto mediante una llamada **a CoCreateInstance**.
+El Asignador de filtros busca filtros registrados en el Registro. El Administrador de Graph usa este componente para generar gráficos de filtro. Las aplicaciones pueden usarla para buscar filtros que coincidan con los criterios de búsqueda especificados. Cree este objeto mediante una llamada **a CoCreateInstance**.
 
 
 
 
-| | | Identificador de clase | CLSID_FilterMapper2 | | Interfaces | <ul><li><a href="/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2"><strong>IFilterMapper2</strong></a></li><li><a href="iamfilterdata.md"><strong>IAMFilterData</strong></a> (en desuso)</li><li><a href="/windows/desktop/api/Strmif/nn-strmif-ifiltermapper3"><strong>IFilterMapper3</strong></a> (en desuso)</li></ul> | 
+| Etiqueta | Value |
+|--------|-------|
+| Identificador de clase | CLSID_FilterMapper2 | 
+| Interfaces | <ul><li><a href="/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2"><strong>IFilterMapper2</strong></a></li><li><a href="iamfilterdata.md"><strong>IAMFilterData</strong></a> (en desuso)</li><li><a href="/windows/desktop/api/Strmif/nn-strmif-ifiltermapper3"><strong>IFilterMapper3</strong></a> (en desuso)</li></ul> | 
 
 
 

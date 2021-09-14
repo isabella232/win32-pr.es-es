@@ -1,5 +1,5 @@
 ---
-description: Contiene una clave o frase de contraseña de red.
+description: Contiene una clave de red o frase de contraseña.
 ms.assetid: d2ed407e-5eaa-477b-8c4d-a47795048e0b
 title: Elemento keyMaterial (sharedKey)
 ms.topic: reference
@@ -13,15 +13,15 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 59f3fc25fda5f4bf4221417636ac25ab7d0f9a15
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277027"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245462"
 ---
 # <a name="keymaterial-sharedkey-element"></a>Elemento keyMaterial (sharedKey)
 
-El elemento keyMaterial (sharedKey) contiene una clave de red o frase de contraseña. Si el elemento [**protegido**](wlan-profileschema-protected-sharedkey-element.md) tiene un valor de true, se cifra este material de clave. de lo contrario, el material de clave no está cifrado. El material de clave cifrada se expresa en formato hexadecimal.
+El elemento keyMaterial (sharedKey) contiene una clave de red o frase de contraseña. Si el [**elemento**](wlan-profileschema-protected-sharedkey-element.md) protegido tiene el valor TRUE, se cifra este material de clave; De lo contrario, el material de clave no está cifrado. El material de clave cifrado se expresa en formato hexadecimal.
 
 ``` syntax
 <xs:element name="keyMaterial"
@@ -29,37 +29,37 @@ El elemento keyMaterial (sharedKey) contiene una clave de red o frase de contras
  />
 ```
 
-El elemento se define mediante el elemento [**sharedKey**](wlan-profileschema-sharedkey-security-element.md) .
+El elemento [**sharedKey**](wlan-profileschema-sharedkey-security-element.md) define el elemento .
 
 ## <a name="remarks"></a>Observaciones
 
-El intervalo de valores válidos para el elemento keyMaterial varía según el tipo de autenticación y el cifrado utilizado, tal y como se especifica en los elementos de [**autenticación**](wlan-profileschema-authentication-authencryption-element.md) y [**cifrado**](wlan-profileschema-encryption-authencryption-element.md) . También varía según [**KeyType**](wlan-profileschema-keytype-sharedkey-element.md).
+El intervalo de valores válidos para el elemento keyMaterial varía según el tipo de autenticación y cifrado usados, según lo especificado por los elementos [**de**](wlan-profileschema-authentication-authencryption-element.md) autenticación [**y cifrado.**](wlan-profileschema-encryption-authencryption-element.md) También varía según [**keyType.**](wlan-profileschema-keytype-sharedkey-element.md)
 
-En la tabla siguiente se muestran los valores válidos de **keyMaterial** para algunos pares de cifrado y autenticación.
+En la tabla siguiente se muestran los **valores válidos de keyMaterial** para algunos pares de autenticación y cifrado.
 
 
 
-| valor de [**autenticación**](wlan-profileschema-authentication-authencryption-element.md) | valor de [**cifrado**](wlan-profileschema-encryption-authencryption-element.md) | valor de [**KeyType**](wlan-profileschema-keytype-sharedkey-element.md) | Valores válidos de **keyMaterial**                                                                                                                                                                   |
+| [**valor de autenticación**](wlan-profileschema-authentication-authencryption-element.md) | [**valor de**](wlan-profileschema-encryption-authencryption-element.md) cifrado | [**valor keyType**](wlan-profileschema-keytype-sharedkey-element.md) | Valores **válidos de keyMaterial**                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abrir o compartir                                                                           | WEP                                                                              | networkKey                                                            | Este elemento contiene una clave WEP de 5 u 13 caracteres ANSI, o de 10 o 26 caracteres hexadecimales.                                                                                             |
-| WPAPSK o WPA2PSK                                                                        | TKIP o AES                                                                      | passPhrase                                                            | Este elemento contiene una frase de contraseña de 8 a 63 caracteres ASCII, es decir, de 8 a 63 caracteres ANSI en el intervalo de 32 a 126. Los valores de clave deben cumplir los requisitos especificados por 802.11 i. |
+| abrir o compartir                                                                           | WEP                                                                              | networkKey                                                            | Este elemento contiene una clave WEP de 5 o 13 caracteres ANSI, o de 10 o 26 caracteres hexadecimales.                                                                                             |
+| WPAPSK o WPA2PSK                                                                        | TKIP o AES                                                                      | passPhrase                                                            | Este elemento contiene una frase de contraseña de 8 a 63 caracteres ASCII, es decir, de 8 a 63 caracteres ANSI en el intervalo de 32 a 126. Los valores de clave deben cumplir los requisitos especificados por 802.11i. |
 | WPAPSK o WPA2PSK                                                                        | TKIP o AES                                                                      | networkKey                                                            | Este elemento contiene una clave de 64 caracteres hexadecimales.                                                                                                                                      |
 
 
 
  
 
-Se pueden escribir caracteres Unicode donde se especifican los caracteres ANSI o ASCII anteriores. Sin embargo, si los caracteres Unicode proporcionados no se pueden asignar a caracteres ANSI o ASCII, se rechazará el material de clave proporcionado.
+Se pueden especificar caracteres Unicode donde se especifican caracteres ANSI o ASCII anteriormente. Sin embargo, si los caracteres Unicode proporcionados no se pueden asignar a caracteres ANSI o ASCII, se rechaza el material de clave proporcionado.
 
-El material de clave devuelto por [**WlanGetProfile**](/windows/desktop/api/wlanapi/nf-wlanapi-wlangetprofile) está siempre cifrado. Además, si el material de clave sin cifrado se pasa a [**WlanSetProfile**](/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofile), el material de clave se cifra automáticamente antes de almacenarse en el almacén de perfiles.
+El material de clave devuelto [**por WlanGetProfile**](/windows/desktop/api/wlanapi/nf-wlanapi-wlangetprofile) siempre se cifra. Además, si se pasa material de clave sin cifrar a [**WlanSetProfile,**](/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofile)el material de clave se cifra automáticamente antes de almacenarse en el almacén de perfiles.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** El material de clave nunca está cifrado.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** El material de clave nunca se cifra.
 
-Si el proceso se ejecuta en el contexto de la cuenta LocalSystem, puede descifrar el material de clave llamando a [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata).
+Si el proceso se ejecuta en el contexto de la cuenta LocalSystem, puede descifrar el material de clave mediante una llamada [**a CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata).
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el elemento **keyMaterial** , vea ejemplo [de perfil sin difusión](non-broadcast-profile-sample.md), ejemplo de perfil [de WPA-Personal](wpa-personal-profile-sample.md)y [ejemplo de perfil WPA2-Personal](wpa2-personal-profile-sample.md).
+Para ver perfiles de ejemplo que usan el elemento **keyMaterial,** vea [Ejemplo](non-broadcast-profile-sample.md)de perfil no de difusión, Ejemplo de perfil [wpa-personal](wpa-personal-profile-sample.md)y [Ejemplo de perfil wpa2-personal](wpa2-personal-profile-sample.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Para ver los perfiles de ejemplo que usan el elemento **keyMaterial** , vea ejem
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 

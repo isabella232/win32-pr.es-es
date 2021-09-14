@@ -1,6 +1,6 @@
 ---
 title: MCI_VCR_SET_PARMS estructura (Vcr.h)
-description: La estructura MCI VCR SET PARMS contiene parámetros para el \_ \_ comando \_ MCI SET para las \_ grabadoras de vídeo.
+description: La estructura MCI VCR SET PARMS contiene parámetros para el comando MCI SET para las \_ \_ \_ \_ grabadoras de vídeo.
 ms.assetid: f55515f5-14f6-47e4-8be2-4524975fc950
 keywords:
 - MCI_VCR_SET_PARMS estructura Windows Multimedia
@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0066adf80446843fe5a3e1e3defbb2109484cbb6
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245901"
 ---
-# <a name="mci_vcr_set_parms-structure"></a>Estructura \_ PARMS de MCI VCR \_ SET \_
+# <a name="mci_vcr_set_parms-structure"></a>Estructura \_ MCI VCR \_ SET \_ PARMS
 
 La **estructura MCI \_ VCR SET \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ SET**](mci-set.md) para las grabadoras de vídeo.
 
@@ -50,7 +50,7 @@ typedef struct tagMCI_VCR_SET_PARMS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -78,7 +78,7 @@ No se usa.
 **dwTimeMode**
 </dt> <dd>
 
-Constante que especifica el origen de control de tiempo utilizado por el dispositivo. El origen de tiempo es un código de tiempo registrado en la cinta de vídeo o los contadores del dispositivo que detectan el movimiento de la cinta de vídeo.
+Constante que especifica el origen de tiempo utilizado por el dispositivo. El origen de tiempo es un código de tiempo registrado en la cinta de vídeo o los contadores del dispositivo que detectan el movimiento de la cinta de vídeo.
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ Ajuste de velocidad utilizado al realizar el seguimiento de la velocidad de repr
 **dwSpeed**
 </dt> <dd>
 
-Velocidad de reproducción usada por el dispositivo como un entero. La velocidad de reproducción normal es 1000, la velocidad doble es 2000 y la media velocidad es 500.
+Velocidad de reproducción que usa el dispositivo como un entero. La velocidad de reproducción normal es 1000, la velocidad doble es 2000 y la media velocidad es 500.
 
 </dd> <dt>
 

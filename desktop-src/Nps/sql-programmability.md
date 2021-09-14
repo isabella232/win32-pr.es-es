@@ -5,12 +5,12 @@ ms.assetid: 55152f56-9ca4-4d0b-a0e9-223168dba83f
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33aab125b8e4d00e0be06206dbdd855b7768638a8dd2545e71448a0e1a0f4f8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7dcc3d68519e6e260613d2729cabdb1e9991540a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118618550"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245067"
 ---
 # <a name="sql-programmability"></a>SQL Programación
 
@@ -26,7 +26,7 @@ De forma predeterminada, el registro está deshabilitado para NPS. Para habilita
 ## <a name="sample-stored-procedure"></a>Procedimiento almacenado de ejemplo
 
 > [!Note]  
-> Un procedimiento almacenado en la base SQL Server de datos a la que llama NPS debe denominarse evento de informe **o \_** se producirá un error en el registro de SQL Server NPS.
+> Un procedimiento almacenado en la base SQL Server de datos a la que llama NPS debe denominarse evento de informe **o \_** se producirá un error en el registro de SQL Server nps.
 
  
 
@@ -400,7 +400,7 @@ GO
 
 <dl> <dt>
 
-[TechNet: Conceptos clave para el registro de SQL Server IAS](/previous-versions/windows/it-pro/windows-server-2003/cc778830(v=ws.10))
+[TechNet: conceptos clave para el registro de SQL Server IAS](/previous-versions/windows/it-pro/windows-server-2003/cc778830(v=ws.10))
 </dt> </dl>
 
  

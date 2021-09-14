@@ -1,6 +1,6 @@
 ---
 title: ICM_GETINFO mensaje (Vfw.h)
-description: El ICM mensaje GETINFO consulta un controlador de compresión de vídeo para devolver una descripción de sí mismo \_ en una estructura ICINFO.
+description: El ICM getinfo consulta un controlador de compresión de vídeo para devolver una descripción de sí \_ mismo en una estructura ICINFO.
 ms.assetid: 8029f247-9777-4a34-9e84-908482094493
 keywords:
 - ICM_GETINFO mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 634803b7dd9a3b8900c35fabedcadb99908c2b31
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370591"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246261"
 ---
 # <a name="icm_getinfo-message"></a>\_ICM Mensaje GETINFO
 
-El **ICM \_ mensaje GETINFO** consulta un controlador de compresión de vídeo para devolver una descripción de sí mismo en una [**estructura ICINFO.**](/windows/desktop/api/Vfw/ns-vfw-icinfo)
+El **ICM \_ getinfo** consulta un controlador de compresión de vídeo para devolver una descripción de sí mismo en una [**estructura ICINFO.**](/windows/desktop/api/Vfw/ns-vfw-icinfo)
 
 
 ```C++
@@ -41,7 +41,7 @@ lParam = sizeof(ICINFO);
 <span id="lpicinfo"></span><span id="LPICINFO"></span>*lpicinfo*
 </dt> <dd>
 
-Puntero a una **estructura ICINFO** que contiene información.
+Puntero a una **estructura ICINFO** para contener información.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Devuelve el tamaño, en bytes, de [**ICINFO**](/windows/desktop/api/Vfw/ns-vfw-i
 
 ## <a name="remarks"></a>Observaciones
 
-Normalmente, las aplicaciones envían este mensaje para mostrar una lista de los programas instalados.
+Normalmente, las aplicaciones envían este mensaje para mostrar una lista de los dispositivos instalados.
 
 El controlador debe rellenar todos los miembros de la [**estructura ICINFO,**](/windows/desktop/api/Vfw/ns-vfw-icinfo) excepto **szDriver**.
 

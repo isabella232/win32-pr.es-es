@@ -11,12 +11,12 @@ api_name:
 - DataRoamingPartners
 api_type:
 - Schema
-ms.openlocfilehash: 21b3b218a55fa3f56c5069b53ca45769a726b4a9aabab2d080f547d479c0be26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f721abd608dd241c399f16eee90369ebcf19594
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118066159"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168145"
 ---
 # <a name="dataroamingpartners-mbnprofile-element"></a>Elemento DataRoamingPartners (MBNProfile)
 
@@ -61,7 +61,7 @@ El **elemento DataRoamingPartners** se define mediante el [**elemento MBNProfile
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |

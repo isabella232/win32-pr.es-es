@@ -11,12 +11,12 @@ keywords:
 - IWMCodecInfo3,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68982a47b743aaa12397e937ad9bd213fbd7ac0a78b41087d01929c1d42bb622
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 664bbafd6c628588aa3b45b0a62a216db7bd7749
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247167"
 ---
 # <a name="working-with-profiles"></a>Trabajar con perfiles
 
@@ -24,7 +24,7 @@ En esta sección se describe cómo diseñar, crear y modificar perfiles. Cada pe
 
 El propósito principal de los perfiles es proporcionar información de configuración de secuencias al objeto de escritor. El escritor usa la información de un perfil para coordinar con los códecs el proceso de compresión de entradas. Al configurar una secuencia multimedia comprimida, se especifica el códec que se usa para comprimir los datos y la configuración que usa el códec. También puede crear perfiles para secuencias sin comprimir. Se admiten varios tipos de secuencias sin comprimir. Aunque no requieren un códec, estos tipos tienen sus propios requisitos para la configuración de secuencias. Para obtener más información, vea [Configuring Secuencias](configuring-streams.md) [and Using Uncompressed Audio and Video Secuencias](using-uncompressed-audio-and-video-streams.md).
 
-La información de configuración de secuencias de una secuencia mediante uno de los códecs Windows Media debe obtenerse del códec mediante los métodos de la interfaz [**IWMCodecInfo3.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo3) El procedimiento para usar formatos de secuencia es diferente para los códecs de vídeo que para los códecs de audio, pero en ambos casos debe empezar por obtener el formato del códec. Nunca debe intentar configurar manualmente una secuencia mediante uno de los códecs de Windows Media, ya que los pequeños errores del perfil pueden tener un efecto profundo en el archivo ASF.
+La información de configuración de secuencias de una secuencia mediante uno de los códecs Windows Media se debe obtener del códec mediante los métodos de la interfaz [**IWMCodecInfo3.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo3) El procedimiento para usar formatos de secuencia es diferente para los códecs de vídeo que para los códecs de audio, pero en ambos casos debe empezar por obtener el formato del códec. Nunca debe intentar configurar manualmente una secuencia mediante uno de los códecs Windows Media, ya que los pequeños errores en el perfil pueden tener un efecto profundo en el archivo ASF.
 
 Los pasos básicos para crear o modificar perfiles son:
 
@@ -54,7 +54,7 @@ En las secciones siguientes se explica el proceso de creación y edición de per
 
  
 
-**Nota** Los usuarios de versiones anteriores del SDK Windows Media Format pueden estar acostumbrados a usar perfiles del sistema sin modificaciones para crear sus archivos. El SDK Windows Media Format 9 o posterior no incluye ningún perfil de sistema nuevo que use los códecs de la serie Windows Media 9 o versiones posteriores. Esto se debe al creciente número de perfiles que se necesitan para cubrir las distintas características que ahora ofrecen los códecs. Todavía puede usar los perfiles del sistema de la versión 8 como punto de partida para los perfiles. Para obtener más información, [vea Using System Profiles](using-system-profiles.md). Para obtener información sobre el nuevo mecanismo para dirigir perfiles a dispositivos de entrega específicos, consulte [Trabajar con plantillas de conformidad de dispositivos.](working-with-device-conformance-templates.md)
+**Nota** Los usuarios de versiones anteriores del SDK Windows Media Format pueden estar acostumbrados a usar perfiles del sistema sin modificaciones para crear sus archivos. El SDK de Windows Media Format 9 o posterior no incluye ningún perfil de sistema nuevo que use los códecs de la serie Windows Media 9 o versiones posteriores. Esto se debe al creciente número de perfiles que se necesitan para cubrir las distintas características que ahora ofrecen los códecs. Todavía puede usar los perfiles del sistema de la versión 8 como punto de partida para los perfiles. Para obtener más información, [vea Using System Profiles](using-system-profiles.md). Para obtener información sobre el nuevo mecanismo para dirigir perfiles a dispositivos de entrega específicos, consulte [Trabajar con plantillas de conformidad de dispositivos.](working-with-device-conformance-templates.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d8898ba469d52e4098c2430dff5234a3522a6fbd3569bec823ff776a3f1c420
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ccfb12f8e72bdf5321151cd3a70b74f322a46591
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119916055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246873"
 ---
 # <a name="em_canredo-message"></a>Mensaje \_ DE EM CANREDO
 
@@ -49,7 +49,7 @@ Si hay acciones en la cola de rehacer del control, el valor devuelto es distinto
 
 Si la cola de puesta al día está vacía, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para rehacer la operación de deshacer más reciente, envíe el mensaje [**\_ EM REDO.**](em-redo.md)
 
@@ -61,7 +61,7 @@ Para rehacer la operación de deshacer más reciente, envíe el mensaje [**\_ EM
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

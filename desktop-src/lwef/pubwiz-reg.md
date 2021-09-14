@@ -10,12 +10,12 @@ keywords:
 - register,Online Print Ordering Wizard
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9f5e3f43fe981558fcbf8573eb8768646f112f4816486159cc7c16d71e40e5e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 497133d7f0a769fce987745a2341a2e501fe7a2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119608645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168226"
 ---
 # <a name="registering-a-service"></a>Registro de un servicio
 
@@ -43,7 +43,7 @@ HKEY_CURRENT_USER
                               SupportedTypes
 ```
 
-Para agregar el servicio a la lista de proveedores del Asistente para ordenación de impresión en línea, agregue una clave como se muestra a continuación.
+Para agregar el servicio a la lista de proveedores del Asistente para pedidos de impresión en línea, agregue una clave como se muestra a continuación.
 
 ```
 HKEY_CURRENT_USER
@@ -70,7 +70,7 @@ Cada uno de los valores es una cadena de tipo REG \_ SZ. Proporcione sus datos c
 | IconPath       | Ruta de acceso completa al archivo de icono, incluido el nombre de archivo.                                                                                                                                                                                                                                                                                                                                                                        |
 | DisplayName    | Nombre que se muestra para el servicio en la lista de proveedores del asistente.                                                                                                                                                                                                                                                                                                                                                             |
 | Descripción    | Descripción breve del servicio. Esta descripción también se muestra en la lista de proveedores del asistente directamente debajo del nombre del servicio.                                                                                                                                                                                                                                                                                    |
-| Href           | Dirección URL de la primera página del servicio.                                                                                                                                                                                                                                                                                                                                                                                      |
+| HREF           | Dirección URL de la primera página del servicio.                                                                                                                                                                                                                                                                                                                                                                                      |
 | SupportedTypes | Los tipos de archivo admitidos por el servicio. Por ejemplo, *\*.jpg*. Al especificar solo determinados tipos de archivo, el servicio solo aparece cuando se han seleccionado esos tipos de archivo. Si se ha seleccionado más de un tipo de archivo, el servicio aparece si alguno de esos tipos de archivo es compatible con el servicio. Si desea especificar varios tipos de archivo, separelos en la lista con punto y coma. Por ejemplo, *\*.jpg; \*.bmp*. |
 
 

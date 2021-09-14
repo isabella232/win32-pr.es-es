@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - WinSpool.drv
-ms.openlocfilehash: f7bbeda17f5cbafa46785577243df9e50b3bf7109631166ffb8894bbb678393e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9af428533d111300d31f6529a0a030fc3b81ee7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119950435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168086"
 ---
 # <a name="connecttoprinterdlg-function"></a>Función ConnectToPrinterDlg
 
@@ -60,16 +60,16 @@ Si la función se realiza correctamente y el usuario selecciona una impresora, e
 
 Si se produce un error en la función o el usuario cancela el cuadro de diálogo sin seleccionar una impresora, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-La **función ConnectToPrinterDlg** intenta crear una conexión a la impresora seleccionada. Sin embargo, si el servidor en el que reside la impresora no tiene instalado un controlador adecuado, la función ofrece al usuario la opción de crear una impresora localmente. Una aplicación que realiza la llamada puede determinar si la función ha creado una impresora localmente mediante una llamada a [**GetPrinter**](getprinter.md) con una estructura [**PRINTER INFO \_ \_ 2**](printer-info-2.md) y, a continuación, examinar el miembro Attributes de **esa** estructura.
+La **función ConnectToPrinterDlg** intenta crear una conexión a la impresora seleccionada. Sin embargo, si el servidor en el que reside la impresora no tiene instalado un controlador adecuado, la función ofrece al usuario la opción de crear una impresora localmente. Una aplicación de llamada puede determinar si la función ha creado una impresora localmente llamando a [**GetPrinter**](getprinter.md) con una estructura [**PRINTER INFO \_ \_ 2**](printer-info-2.md) y, a continuación, examinando el miembro Attributes de **esa** estructura.
 
-Una aplicación debe llamar [**a DeletePrinter**](deleteprinter.md) para eliminar una impresora local. Una aplicación debe llamar [**a DeletePrinterConnection para**](deleteprinterconnection.md) eliminar una conexión a una impresora.
+Una aplicación debe llamar a [**DeletePrinter para**](deleteprinter.md) eliminar una impresora local. Una aplicación debe llamar a [**DeletePrinterConnection para**](deleteprinterconnection.md) eliminar una conexión a una impresora.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,7 +110,7 @@ Una aplicación debe llamar [**a DeletePrinter**](deleteprinter.md) para elimina
 [**GetPrinter**](getprinter.md)
 </dt> <dt>
 
-[**PRINTER \_ INFO \_ 2**](printer-info-2.md)
+[**INFORMACIÓN \_ DE IMPRESORA \_ 2**](printer-info-2.md)
 </dt> </dl>
 
  

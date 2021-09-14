@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: e25155755b6bfbb893905e6facad890dbf98f175
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370501"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246381"
 ---
 # <a name="icm_decompress_end-message"></a>\_ICM MENSAJE FINAL DE \_ DECOMPRESS
 
-El **ICM END de \_ DECOMPRESS \_** notifica a un controlador de descompresión de vídeo que finalice la descompresión y los recursos gratuitos asignados para la descompresión. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressEnd.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend)
+El **ICM \_ END de \_ DECOMPRESS** notifica a un controlador de descompresión de vídeo que finalice la descompresión y los recursos gratuitos asignados para la descompresión. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressEnd.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend)
 
 
 ```C++
@@ -42,7 +42,7 @@ Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso c
 
 El controlador debe liberar todos los recursos asignados para [**el ICM \_ DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
 
-[**ICM \_ DECOMPRESS \_ BEGIN y**](icm-decompress-begin.md) ICM END de **\_ DECOMPRESS \_** no anidan. Si el controlador recibe **ICM \_ DECOMPRESS \_ BEGIN** antes de detener la descompresión con ICM **\_ DECOMPRESS \_ END,** debe reiniciar la descompresión con nuevos parámetros.
+[**ICM \_ DECOMPRESS \_ BEGIN y**](icm-decompress-begin.md) ICM END de **\_ DECOMPRESS \_** no anidan. Si el controlador recibe ICM **\_ DECOMPRESS \_ BEGIN** antes de detener la descompresión con ICM **END de \_ DECOMPRESS, \_** debe reiniciar la descompresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,12 +4,12 @@ ms.assetid: 099d1cc7-f0c5-4c50-a1d5-f2defde7e104
 title: Filtro de divisor DV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 323593fd5b55fdbd65cb05e83d1097d0d764c94c30141125dcc1cc6fc5ed60d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74ca8e856f1a49ff22ee05f7dc0ae341fad6aa91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117820677"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246614"
 ---
 # <a name="dv-splitter-filter"></a>Filtro de divisor DV
 
@@ -17,7 +17,7 @@ Este filtro divide una secuencia de vídeo digital intercalado (DV) en sus secue
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfaces de filtro                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [ **IDVSplitter**](/windows/desktop/api/Strmif/nn-strmif-idvsplitter)                                                                             |
 | Tipos de medios de pin de entrada                    | MEDIATYPE \_ intercalado, MEDIASUBTYPE \_ dvsd, FORMAT \_ DvInfo                                                                                         |
@@ -34,7 +34,7 @@ Este filtro divide una secuencia de vídeo digital intercalado (DV) en sus secue
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los marcos DV contienen audio y vídeo en el mismo fotograma. El filtro divisor DV extrae los datos de audio y los entrega como una o dos secuencias de audio, de las patillas de salida de audio. El fotograma DV original se entrega desde el pin de salida del vídeo, como un fotograma de vídeo. El tipo de medio en el fotograma de vídeo se cambia de MEDIATYPE intercalado a MEDIATYPE Video, pero de lo contrario los datos \_ \_ no se modifican. El tipo de medio se cambia para indicar que se deben omitir los datos de audio en el marco. El divisor DV no establece un tiempo de medios en sus ejemplos de salida; Si va a escribir un filtro de nivel inferior que requiere las horas de medios, puede derivar las horas del recuento de fotogramas.
 

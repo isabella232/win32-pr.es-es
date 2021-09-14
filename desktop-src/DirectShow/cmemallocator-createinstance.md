@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a8682a667685f38cd7a73e091067a86f528f64e1ec110c473f50000c18ba4d87
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ef85de95db74e8a9d7aa6a7b1ba977620a29826
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118156024"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246795"
 ---
 # <a name="cmemallocatorcreateinstance-method"></a>Método CMemAllocator.CreateInstance
 
@@ -59,7 +59,7 @@ Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o er
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a un **nuevo objeto CMemAllocator,** con el tipo **CUnknown.**
+Devuelve un puntero a un **nuevo objeto CMemAllocator,** que se escribe como **un objeto CUnknown.**
 
 ## <a name="requirements"></a>Requisitos
 

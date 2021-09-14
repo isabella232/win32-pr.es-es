@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 2a165493142fc25ea64adc2678e8bc4ccbeace32e245422f0fcea419063a26ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76c2594339c6fa4997e4d646fc89e8c30dcdf8fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117842285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247089"
 ---
 # <a name="wpd_exposure_metering_modes-enumeration"></a>Enumeración \_ WPD EXPOSURE \_ METERING \_ MODES
 
 El **tipo de \_ enumeración WPD EXPOSURE \_ METERING \_ MODES** describe el modo de medición que se usará al calcular la exposición para la captura de imágenes fijas por un dispositivo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -78,7 +78,7 @@ Use una técnica de promedio de punto central.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Indica el modo de medición del dispositivo. Esta enumeración la usa la propiedad [ \_ WPD STILL \_ IMAGE EXPOSURE \_ \_ METERING \_ MODE.](still-image-properties.md)
 

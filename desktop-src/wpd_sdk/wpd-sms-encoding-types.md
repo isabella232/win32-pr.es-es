@@ -1,5 +1,5 @@
 ---
-description: El tipo de enumeración \_ WPD SMS \_ ENCODING TYPES describe el tipo de codificación de un mensaje corto del servicio de mensajes \_ (SMS).
+description: El tipo de enumeración WPD SMS ENCODING TYPES describe el tipo de codificación de un mensaje de servicio de \_ \_ mensajes cortos \_ (SMS).
 ms.assetid: 5a9752e5-4e09-42a4-8fed-b4ea551fa36f
 title: WPD_SMS_ENCODING_TYPES enumeración (PortableDevice.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 648815f8a82248151b19f5c753bf3e42643d61eb507501d907c5ac54a2b226b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7deae3cdc560e27e19b5ff7664e5566cff6d7e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119927685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247028"
 ---
 # <a name="wpd_sms_encoding_types-enumeration"></a>Enumeración WPD \_ SMS \_ ENCODING \_ TYPES
 
-El **tipo de enumeración \_ WPD SMS \_ ENCODING \_ TYPES** describe el tipo de codificación de un mensaje corto del servicio de mensajes (SMS).
+El **tipo de enumeración \_ WPD SMS \_ ENCODING \_ TYPES** describe el tipo de codificación de un mensaje de servicio de mensajes cortos (SMS).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -62,7 +62,7 @@ Codificación de 16 bits (UTF).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta enumeración la usa la [propiedad WPD \_ SMS \_ ENCODING.](sms-properties.md)
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 21fb23a595b1f479f2468f0006cca7cd9218de03fc2cc76b794caae79ea45a24
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8334ca57d552681afeb77d0b213eca8b92bc1234
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120129125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246429"
 ---
 # <a name="productcontext-property"></a>Propiedad Product.Context
 
@@ -37,7 +37,7 @@ propVal = Product.Context
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad puede devolver uno de los siguientes valores.
 

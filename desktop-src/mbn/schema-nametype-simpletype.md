@@ -11,16 +11,16 @@ api_name:
 - nameType
 api_type:
 - Schema
-ms.openlocfilehash: 9b07bfb62e23b0c82ef69bc924147675caad10d61258a5c49edc906c4b6bf2a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8c6032e17eaf2d067dc23030a7a6279bd41eafa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117881409"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168133"
 ---
 # <a name="nametype-simple-type-mobile-broadband"></a>tipo simple nameType (banda ancha móvil)
 
-El **tipo simple nameType** define un tipo de cadena para el perfil de banda ancha móvil. Esta cadena tiene al menos un carácter de longitud y un máximo de 255 caracteres.
+El **tipo simple nameType** define un tipo de cadena para el perfil de banda ancha móvil. Esta cadena tiene al menos un carácter de longitud y 255 caracteres como máximo.
 
 ``` syntax
 <xs:simpleType name="nameType">
@@ -41,9 +41,9 @@ El **tipo simple nameType** define un tipo de cadena para el perfil de banda anc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio aplicaciones para \| UWP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

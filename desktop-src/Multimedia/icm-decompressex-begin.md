@@ -1,6 +1,6 @@
 ---
 title: ICM_DECOMPRESSEX_BEGIN mensaje (Vfw.h)
-description: El ICM DECOMPRESSEX BEGIN notifica a un controlador de compresión de vídeo \_ que se prepare para \_ descomprimir los datos.
+description: El ICM DECOMPRESSEX BEGIN notifica a un controlador de compresión \_ de vídeo que se prepare para \_ descomprimir los datos.
 ms.assetid: 35298274-91b5-4df0-b4b0-4a71d6a49990
 keywords:
 - ICM_DECOMPRESSEX_BEGIN mensaje Windows Multimedia
@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 77ea082c91d48a9964348b762ce13631cd80af30
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246333"
 ---
 # <a name="icm_decompressex_begin-message"></a>\_ICM Mensaje BEGIN de \_ DECOMPRESSEX
 
@@ -58,7 +58,7 @@ Devuelve ICERR \_ OK si se admite la descompresión especificada o ICERR \_ BADF
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando el controlador recibe este mensaje, debe asignar búferes y realizar las operaciones que requieren mucho tiempo para que pueda procesar ICM [**\_ mensajes DECOMPRESSEX**](icm-decompressex.md) de forma eficaz.
+Cuando el controlador recibe este mensaje, debe asignar búferes y realizar operaciones que requieren mucho tiempo para que pueda procesar ICM [**\_ mensajes DECOMPRESSEX**](icm-decompressex.md) de forma eficaz.
 
 Si desea que el controlador descomprima los datos directamente en la pantalla, envíe el [**ICM \_ DRAW \_ BEGIN.**](icm-draw-begin.md)
 

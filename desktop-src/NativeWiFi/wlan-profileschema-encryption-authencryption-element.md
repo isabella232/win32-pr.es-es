@@ -1,7 +1,7 @@
 ---
-description: Especifica el tipo de cifrado de datos que se va a usar para conectarse a una LAN inalámbrica.
+description: Especifica el tipo de cifrado de datos que se usará para conectarse a una LAN inalámbrica.
 ms.assetid: 0ba24106-bd6f-465a-af80-ce85501756b9
-title: Elemento Encryption (authEncryption)
+title: elemento encryption (authEncryption)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,15 +13,15 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 7efd9e0865cb489a7d033772112b0aaeb8a8fb23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154576"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245523"
 ---
-# <a name="encryption-authencryption-element"></a>Elemento Encryption (authEncryption)
+# <a name="encryption-authencryption-element"></a>elemento encryption (authEncryption)
 
-El elemento Encryption (authEncryption) especifica el tipo de cifrado de datos que se va a usar para conectarse a una LAN inalámbrica.
+El elemento encryption (authEncryption) especifica el tipo de cifrado de datos que se usará para conectarse a una LAN inalámbrica.
 
 ``` syntax
 <xs:element name="encryption">
@@ -46,17 +46,17 @@ El elemento Encryption (authEncryption) especifica el tipo de cifrado de datos q
 </xs:element>
 ```
 
-El elemento se define mediante el elemento [**authEncryption**](wlan-profileschema-authencryption-security-element.md) .
+El elemento se define mediante el [**elemento authEncryption.**](wlan-profileschema-authencryption-security-element.md)
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando el elemento de **cifrado** tiene un valor de WEP, [**KeyType**](wlan-profileschema-keytype-sharedkey-element.md) debe establecerse en **networkKey**.
+Cuando el **elemento de** cifrado tiene un valor de WEP, [**keyType**](wlan-profileschema-keytype-sharedkey-element.md) debe establecerse en **networkKey.**
 
-El método de cifrado AES se especifica en las especificaciones de [802.1 x](https://ieeexplore.ieee.org/document/1438730) y [802.11 i](https://standards.ieee.org/findstds/standard/802.11i-2004.html) .
+El método de cifrado AES se especifica en las [especificaciones 802.1X](https://ieeexplore.ieee.org/document/1438730) y [802.11i.](https://standards.ieee.org/findstds/standard/802.11i-2004.html)
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el elemento de **cifrado** , consulte [ejemplos de perfiles inalámbricos](wireless-profile-samples.md).
+Para ver los perfiles de ejemplo que usan el **elemento de** cifrado, vea Ejemplos de [perfil inalámbrico](wireless-profile-samples.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ Para ver los perfiles de ejemplo que usan el elemento de **cifrado** , consulte 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 

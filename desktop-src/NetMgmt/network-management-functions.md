@@ -4,12 +4,12 @@ description: Las funciones de administración de red se pueden agrupar como se m
 ms.assetid: dd159e2e-f37e-46b2-b980-008b73d40b39
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9e9aba93607e3609f0d20f7208184f169fb871ee67f5f2917445683f70e4f04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a169d097fbe86c95aa9aa3120c3f732a8edd2c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117796966"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245415"
 ---
 # <a name="network-management-functions"></a>Funciones de administración de redes
 
@@ -22,7 +22,7 @@ Las funciones de administración de red se pueden agrupar como se muestra a cont
 | Función                                   | Descripción                                                                                                                                                                                            |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**NetAlertRaise**](/windows/desktop/api/Lmalert/nf-lmalert-netalertraise)     | Notifica a todos los clientes registrados que se ha producido un evento determinado.                                                                                                                                  |
-| [**NetAlertRaiseEx**](/windows/desktop/api/Lmalert/nf-lmalert-netalertraiseex) | Simplifica la notificación a los clientes registrados de que se ha producido un evento determinado, ya que, a diferencia de **NetAlertRaise,** **NetAlertRaiseEx** no requiere una [**estructura STD \_ ALERT.**](/windows/desktop/api/Lmalert/ns-lmalert-std_alert) |
+| [**NetAlertRaiseEx**](/windows/desktop/api/Lmalert/nf-lmalert-netalertraiseex) | Simplifica la notificación a los clientes registrados de que se ha producido un evento determinado, porque, a diferencia de **NetAlertRaise,** **NetAlertRaiseEx** no requiere una [**estructura DE \_ ALERTAS DE STD.**](/windows/desktop/api/Lmalert/ns-lmalert-std_alert) |
 
 
 
@@ -49,7 +49,7 @@ Las funciones de administración de red se pueden agrupar como se muestra a cont
 
 | Función                                                       | Descripción                                                                                                                                                                                                                                                     |
 |----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**NetFreeAadJoinInformation**](/windows/desktop/api/lmjoin/nf-lmjoin-netfreeaadjoininformation) | Libera la memoria asignada para la estructura [**info DSREG \_ JOIN \_ especificada,**](/windows/desktop/api/lmjoin/ns-lmjoin-dsreg_join_info) que contiene información de combinación para un inquilino y que recuperó llamando a la función [**NetGetAadJoinInformation.**](/windows/desktop/api/lmjoin/nf-lmjoin-netgetaadjoininformation) |
+| [**NetFreeAadJoinInformation**](/windows/desktop/api/lmjoin/nf-lmjoin-netfreeaadjoininformation) | Libera la memoria asignada para la estructura [**DSREG \_ JOIN \_ INFO**](/windows/desktop/api/lmjoin/ns-lmjoin-dsreg_join_info) especificada, que contiene información de combinación para un inquilino y que recuperó llamando a la función [**NetGetAadJoinInformation.**](/windows/desktop/api/lmjoin/nf-lmjoin-netgetaadjoininformation) |
 | [**NetGetAadJoinInformation**](/windows/desktop/api/lmjoin/nf-lmjoin-netgetaadjoininformation)   | Recupera la información de combinación para el inquilino especificado. Esta función examina la información de combinación para Microsoft Azure Active Directory y la cuenta de trabajo que agregó el usuario actual.                                                                     |
 
 
@@ -71,8 +71,8 @@ Las funciones de administración de red se pueden agrupar como se muestra a cont
 | [**NetProvisionComputerAccount**](/windows/desktop/api/Lmjoin/nf-lmjoin-netprovisioncomputeraccount)                   | Aprovisiona una cuenta de equipo para su uso posterior en una operación de unión a un dominio sin conexión.                                                                                                                                                                                       |
 | [**NetRemoveAlternateComputerName**](/windows/desktop/api/Lmjoin/nf-lmjoin-netremovealternatecomputername)             | Quita un nombre alternativo para el equipo especificado.                                                                                                                                                                                                                   |
 | [**NetRenameMachineInDomain**](/windows/desktop/api/Lmjoin/nf-lmjoin-netrenamemachineindomain)                         | Cambia el nombre de un equipo de un dominio.                                                                                                                                                                                                                             |
-| [**NetRequestOfflineDomainJoin**](/windows/desktop/api/Lmjoin/nf-lmjoin-netrequestofflinedomainjoin)                   | Se ejecuta localmente en una máquina para modificar una Windows de sistema operativo montada en un volumen. El registro se carga para la imagen y los datos del blob de aprovisionamiento se escriben donde se pueden recuperar durante la fase de finalización de una operación de unión a un dominio sin conexión.     |
-| [**NetRequestProvisioningPackageInstall**](/windows/desktop/api/Lmjoin/nf-lmjoin-netrequestprovisioningpackageinstall) | Se ejecuta localmente en una máquina para modificar una Windows de sistema operativo montada en un volumen. El registro se carga desde la imagen y los datos del paquete de aprovisionamiento se escriben donde se pueden recuperar durante la fase de finalización de una operación de unión a un dominio sin conexión. |
+| [**NetRequestOfflineDomainJoin**](/windows/desktop/api/Lmjoin/nf-lmjoin-netrequestofflinedomainjoin)                   | Se ejecuta localmente en un equipo para modificar una imagen Windows de sistema operativo montada en un volumen. El registro se carga para la imagen y los datos del blob de aprovisionamiento se escriben donde se pueden recuperar durante la fase de finalización de una operación de unión a un dominio sin conexión.     |
+| [**NetRequestProvisioningPackageInstall**](/windows/desktop/api/Lmjoin/nf-lmjoin-netrequestprovisioningpackageinstall) | Se ejecuta localmente en un equipo para modificar una imagen Windows de sistema operativo montada en un volumen. El registro se carga desde la imagen y los datos del paquete de aprovisionamiento se escriben donde se pueden recuperar durante la fase de finalización de una operación de unión a un dominio sin conexión. |
 | [**NetSetPrimaryComputerName**](/windows/desktop/api/Lmjoin/nf-lmjoin-netsetprimarycomputername)                       | Establece el nombre del equipo principal para el equipo especificado.                                                                                                                                                                                                              |
 | [**NetUnjoinDomain**](/windows/desktop/api/Lmjoin/nf-lmjoin-netunjoindomain)                                           | Une un equipo de un grupo de trabajo o un dominio.                                                                                                                                                                                                                        |
 | [**NetValidateName**](/windows/desktop/api/Lmjoin/nf-lmjoin-netvalidatename)                                           | Comprueba la validez de un nombre de equipo, nombre de grupo de trabajo o nombre de dominio.                                                                                                                                                                                               |
@@ -89,7 +89,7 @@ Las funciones de administración de red se pueden agrupar como se muestra a cont
 |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | [**NetGetAnyDCName**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgetanydcname)                             | Devuelve el nombre de cualquier controlador de dominio para un dominio de confianza directa por un servidor especificado.                                   |
 | [**NetGetDCName**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgetdcname)                                   | Devuelve el nombre del controlador de dominio principal (PDC) para el dominio especificado.                                                        |
-| [**NetGetDisplayInformationIndex**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgetdisplayinformationindex) | Devuelve el índice de la primera entrada de información para mostrar cuyo nombre comienza con una cadena especificada o sigue alfabéticamente la cadena. |
+| [**NetGetDisplayInformationIndex**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgetdisplayinformationindex) | Devuelve el índice de la primera entrada de información para mostrar cuyo nombre comienza con una cadena especificada o sigue alfabéticamente a la cadena. |
 | [**NetQueryDisplayInformation**](/windows/desktop/api/Lmaccess/nf-lmaccess-netquerydisplayinformation)       | Devuelve información de cuentas de usuario, equipo o grupo global.                                                                             |
 
 
@@ -110,7 +110,7 @@ Las funciones de administración de red se pueden agrupar como se muestra a cont
 | [**NetGroupGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgroupgetinfo)   | Devuelve información sobre un grupo global determinado.                              |
 | [**NetGroupGetUsers**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgroupgetusers) | Enumera todos los miembros de un grupo global determinado.                                   |
 | [**NetGroupSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgroupsetinfo)   | Establece información general sobre un grupo global.                                    |
-| [**NetGroupSetUsers**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgroupsetusers) | Asigna miembros a un nuevo grupo global; reemplaza los miembros de un grupo existente. |
+| [**NetGroupSetUsers**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgroupsetusers) | Asigna miembros a un nuevo grupo global; reemplaza a los miembros de un grupo existente. |
 
 
 
@@ -270,7 +270,7 @@ Las funciones de administración de red se pueden agrupar como se muestra a cont
 
 | Función                                     | Descripción                                                                                                                                                                                             |
 |----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**NetUserModalsGet**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusermodalsget) | Devuelve información global para todos los usuarios y grupos globales de la base de datos de seguridad, que es la base de datos del administrador de cuentas de seguridad (SAM) o, en el caso de los controladores de dominio, Active Directory. |
+| [**NetUserModalsGet**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusermodalsget) | Devuelve información global para todos los usuarios y grupos globales de la base de datos de seguridad, que es la base de datos del administrador de cuentas de seguridad (SAM) o, en el caso de los controladores de dominio, el Active Directory. |
 | [**NetUserModalsSet**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusermodalsset) | Establece información global para todos los usuarios y grupos globales de la base de datos de seguridad.                                                                                                                       |
 
 
@@ -283,8 +283,8 @@ Las funciones de administración de red se pueden agrupar como se muestra a cont
 
 | Función                                                               | Descripción                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**NetValidatePasswordPolicyFree**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicyfree) | Libera la memoria que la [**función NetValidatePasswordPolicy**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy) asigna para el *parámetro OutputArg.*                                                                                      |
-| [**NetValidatePasswordPolicy**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy)         | Permite que una aplicación compruebe el cumplimiento de contraseñas con una base de datos de cuenta proporcionada por la aplicación y compruebe que las contraseñas cumplen los requisitos de complejidad, edad, longitud mínima y reutilización del historial de una directiva de contraseñas. |
+| [**NetValidatePasswordPolicyFree**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicyfree) | Libera la memoria que la función [**NetValidatePasswordPolicy**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy) asigna para el *parámetro OutputArg.*                                                                                      |
+| [**NetValidatePasswordPolicy**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy)         | Permite a una aplicación comprobar el cumplimiento de contraseñas con una base de datos de cuenta proporcionada por la aplicación y comprobar que las contraseñas cumplen los requisitos de complejidad, edad, longitud mínima y reutilización del historial de una directiva de contraseñas. |
 
 
 
@@ -308,7 +308,7 @@ Las funciones de administración de red se pueden agrupar como se muestra a cont
 
 ## <a name="obsolete-functions"></a>Funciones obsoletas
 
--   [**NetAccessAgregue**](/windows/desktop/api/lmaccess/nf-lmaccess-netaccessadd)
+-   [**NetAccessAdd**](/windows/desktop/api/lmaccess/nf-lmaccess-netaccessadd)
 -   [**NetAccessCheck**](/previous-versions/windows/desktop/legacy/aa370291(v=vs.85))
 -   [**NetAccessDel**](/windows/desktop/api/lmaccess/nf-lmaccess-netaccessdel)
 -   [**NetAccessEnum**](/windows/desktop/api/lmaccess/nf-lmaccess-netaccessenum)

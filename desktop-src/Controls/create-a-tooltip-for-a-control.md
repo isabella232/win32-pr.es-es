@@ -4,12 +4,12 @@ description: La siguiente función de ejemplo crea una información sobre herram
 ms.assetid: FDA3B2A0-1256-4DAC-86CF-8F123894E760
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9883dc90e8a150c7cc863b59e8388df676ed0f1663aaea7b356cb45292a6c8c0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f341c1be1e749c4e0d6f18caf97a3f897cf429e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119826575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246944"
 ---
 # <a name="how-to-create-a-tooltip-for-a-control"></a>Cómo crear una información sobre herramientas para un control
 
@@ -84,7 +84,7 @@ HWND CreateToolTip(int toolID, HWND hDlg, PTSTR pszText)
 
 <dl> <dt>
 
-[Uso de controles de información sobre herramientas](using-tooltip-contro.md)
+[Usar controles de información sobre herramientas](using-tooltip-contro.md)
 </dt> </dl>
 
  

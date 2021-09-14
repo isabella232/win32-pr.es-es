@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6d4a0c6e0e047819c208c8e592b971f013f9ed40d456a5b73ad64ea9153ddeaa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50df2db2aada7f96744af5e553f474818594d399
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118953434"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127246639"
 ---
 # <a name="ctransformfilterstartstreaming-method"></a>Método CTransformFilter.StartStreaming
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no hace nada en la clase base, pero la clase derivada puede invalidarla.
 

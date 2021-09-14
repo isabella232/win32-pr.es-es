@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 045762837727308beb9b80a5854258b04cb02c0886cce9c2318032f5395b57fb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5fbf17b76631da6dbff9ef2077776106505a37b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119742185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127245096"
 ---
 # <a name="writeblobtofile-function"></a>Función WriteBlobToFile
 
