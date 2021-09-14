@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 989abe860848b943e77b02910e9760f8fcaecc97fd8a2634f8147605577613d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf6fe61899ea1daac37fd678e9f0e70dfcc3af69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118631279"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171658"
 ---
 # <a name="installerfeaturestate-property"></a>Installer.FeatureState, propiedad
 
@@ -37,16 +37,16 @@ propVal = Installer.FeatureState
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad devuelve uno de los valores siguientes.
 
 
 
-| Valor                     | Descripción                                      |
+| Value                     | Descripción                                      |
 |---------------------------|--------------------------------------------------|
 | msiInstallStateAbsent     | La característica no está instalada.                    |
-| msiInstallStateAdvertised | Se anuncia la característica.                       |
+| msiInstallStateAdvertised | La característica se anuncia.                       |
 | msiInstallStateLocal      | La característica se instala para ejecutarse localmente.         |
 | msiInstallStateSource     | La característica se instala para ejecutarse desde el origen.     |
 | msiInstallStateInvalidArg | Se pasó un parámetro no válido a la función. |
@@ -65,7 +65,7 @@ La **propiedad FeatureState** no valida que la característica sea accesible.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |

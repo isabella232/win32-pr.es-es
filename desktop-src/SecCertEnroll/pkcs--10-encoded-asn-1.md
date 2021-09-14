@@ -1,19 +1,19 @@
 ---
-description: El ejemplo siguiente contiene una solicitud PKCS \# 10 que se muestra en formato ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf usado como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud PKCS \# 10 que se muestra en formato ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe herramientas. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: 5001d641-a121-421a-90bf-f2e6e5f88dc8
 title: ASN con codificación PKCS \# 10.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21da0b55a9494bde480f00aea9d2b36f1ea0ecc6aebfa47d7d0268a90024c1cd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e1699ce6b73fb22a38e74f570f848db70fabf38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117774698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171201"
 ---
 # <a name="pkcs-10-encoded-asn1"></a>ASN con codificación PKCS \# 10.1
 
-El ejemplo siguiente contiene una solicitud PKCS \# 10 que se muestra en formato ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf usado como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud PKCS \# 10 que se muestra en formato ASN.1. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe herramientas. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]
@@ -27,7 +27,7 @@ CertificateTemplate=User
 Esta configuración genera la siguiente salida de ejemplo. La configuración especifica el asunto, el tipo de solicitud (PKCS \# 10) y la plantilla de certificado (usuario). La plantilla Usuario especifica que:
 
 -   La solicitud debe usar el proveedor criptográfico base de Microsoft 1.0 o el proveedor criptográfico mejorado de Microsoft 1.0.
--   El nombre del sujeto debe crearse a partir Active Directory.
+-   El nombre del sujeto debe crearse a partir de Active Directory.
 -   La solicitud incluye las extensiones Nombre de plantilla de certificado, Uso mejorado de clave (EKU) y Uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación de cliente.
 
 ``` syntax

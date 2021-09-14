@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 5f757ead06e5d1769e109bcbfc8e3510f4298f32145d60c4c0bc992a01f3ab36
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 53ba18626a7d2bb703ed4d11953fb4872cf9257c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119993045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170950"
 ---
 # <a name="iscrdenrsetcerttemplatename-method"></a>Método ISCrdEnr::setCertTemplateName
 
@@ -55,7 +55,7 @@ SCrdEnr.setCertTemplateName( _
 *dwFlags* \[ En\]
 </dt> <dd>
 
-Valor que determina si se establece el nombre real o el nombre para mostrar de la plantilla de certificado. Si *dwFlags tiene el* valor SCARD ENROLL CERT TEMPLATE DISPLAY NAME, se establece el nombre para mostrar de la plantilla de \_ \_ \_ \_ \_ certificado. De lo contrario, se establece el nombre real de la plantilla de certificado.
+Valor que determina si se establece el nombre real o el nombre para mostrar de la plantilla de certificado. Si *dwFlags tiene* el valor SCARD ENROLL CERT TEMPLATE DISPLAY NAME, se establece el nombre para mostrar de la \_ plantilla de \_ \_ \_ \_ certificado. De lo contrario, se establece el nombre real de la plantilla de certificado.
 
 </dd> <dt>
 
@@ -72,11 +72,11 @@ Nombre de la plantilla de certificado que se usará en la solicitud de certifica
 
 Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si no establece el nombre de la plantilla de certificado mediante una llamada a **ISCrdEnr::setCertTemplateName**, el nombre tiene como valor predeterminado el nombre de la lista de plantillas de certificado disponibles.
+Si no establece el nombre de la plantilla de certificado llamando a **ISCrdEnr::setCertTemplateName**, el nombre tiene como valor predeterminado el nombre de la lista de plantillas de certificado disponibles.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,7 +91,7 @@ Si no establece el nombre de la plantilla de certificado mediante una llamada a 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

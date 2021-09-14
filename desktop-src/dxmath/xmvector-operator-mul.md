@@ -12,11 +12,11 @@ api_type:
 - NA
 api_location: ''
 ms.openlocfilehash: 99f584bac1e31773a5264d4bf3a37931ba9ae793
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122482021"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170429"
 ---
 # <a name="operator--operators"></a>operadores \* de operador
 
@@ -27,7 +27,7 @@ Operadores de multiplicación
 
 
 
-| Operador | Descripción | 
+| Operator | Descripción | 
 |----------|-------------|
 | <a href="/previous-versions/windows/desktop/legacy/ee421390(v=vs.85)"><strong>XMVECTOR::operator * (float,XMVECTOR)</strong></a> | Multiplique un valor de punto flotante por una instancia de <code>XMVECTOR</code> , devolviendo el resultado una nueva instancia de <code>XMVECTOR</code> .<br /> multiplica un valor de punto flotante con cada componente de una instancia de tipo de datos XMVECTOR y devuelve una nueva instancia <code>operator *</code> cuyos componentes contienen el <a href="xmvector-data-type.md"><strong></strong></a> <code>XMVECTOR</code> resultado. <br /><blockquote>[!Note]<br />Este operador solo está disponible en C++.</blockquote><br /> | 
 | <a href="/previous-versions/windows/desktop/legacy/ee421391(v=vs.85)"><strong>XMVECTOR::operator * (XMVECTOR,float)</strong></a> | Multiplique una instancia <code>XMVECTOR</code> de por un valor de punto flotante y devuelva al resultado una nueva instancia de <code>XMVECTOR</code> .<br /> multiplica cada componente de una instancia de tipo de datos XMVECTOR por un valor de punto flotante y devuelve una nueva instancia cuyos componentes <code>operator *</code> contienen el <a href="xmvector-data-type.md"><strong></strong></a> <code>XMVECTOR</code> resultado. <br /><blockquote>[!Note]<br />Este operador solo está disponible en C++.</blockquote><br /> | 
@@ -36,7 +36,7 @@ Operadores de multiplicación
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

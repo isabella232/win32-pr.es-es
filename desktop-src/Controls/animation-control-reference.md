@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre los elementos de programa
 ms.assetid: 16994f93-e0fd-4c71-9c8a-15642408b8de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7241199dc92004f9b3616e2666dd96eadbf43fc6c4dfe9081369e13cca26e082
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cd2a3fc7377c7258ba49b5a4188e6074270b5862
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119921785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170157"
 ---
 # <a name="animation-control"></a>Control de animación
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 255f9c5bfbd9f7ed476314e8ac1c9ed58568c083b8f6ea7704bbe5cfef15b769
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7286fdbc9fab6b3db6752284bf86db05f920bd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118632922"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171737"
 ---
 # <a name="installercollectuserinfo-method"></a>Método Installer.CollectUserInfo
 
@@ -50,7 +50,7 @@ Especifica el código [**de producto**](productcode.md) del producto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación debe llamar al **método CollectUserInfo** la primera vez que se ejecuta. El **método CollectUserInfo** abre el paquete de instalación del producto e invoca una secuencia del asistente de interfaz de usuario que recopila información del usuario. Tras la finalización de la secuencia del asistente, se registra la información de usuario recopilada. La [**propiedad UILevel**](installer-uilevel.md) debe establecerse en msiUILevelFull porque esta API requiere una interfaz de usuario de creación.
 
@@ -60,11 +60,11 @@ El **método CollectUserInfo** invoca el [cuadro de diálogo FirstRun](firstrun-
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 

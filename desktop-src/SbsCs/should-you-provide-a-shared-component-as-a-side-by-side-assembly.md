@@ -4,12 +4,12 @@ ms.assetid: 543451cd-0608-4302-a85b-ddce79a5cfd6
 title: ¿Debe proporcionar un componente compartido como ensamblado en paralelo?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92dbd205db37c769050614c60ce4cc3637b27be9108f25b3c1c8f553851df82d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 733adf400ba9ce019d9f749fcd79a1a71380c9e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119141898"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171266"
 ---
 # <a name="should-you-provide-a-shared-component-as-a-side-by-side-assembly"></a>¿Debe proporcionar un componente compartido como ensamblado en paralelo?
 
@@ -25,7 +25,7 @@ No todos los componentes son candidatos adecuados para un ensamblado en paralelo
 -   El componente controla la comunicación entre las aplicaciones. Por ejemplo, las partes de OLE32 no crearían un buen ensamblado en paralelo porque no desearía tener dos versiones diferentes de las partes que coordinan la comunicación entre las aplicaciones que se ejecutan en el sistema.
 -   El componente administra un dispositivo físico o virtual para el sistema. Por ejemplo, un controlador de dispositivo para un administrador de trabajos de impresión.
 
-En algunos casos, es posible que el desarrollador del componente rediseñar un componente existente para que sea adecuado para su publicación como un ensamblado en paralelo. Para obtener más información, vea Directrices para [crear ensamblados en paralelo.](guidelines-for-creating-side-by-side-assemblies.md)
+En algunos casos, es posible que el desarrollador del componente rediseñar un componente existente para que sea adecuado para su publicación como ensamblado en paralelo. Para obtener más información, vea Directrices para [crear ensamblados en paralelo.](guidelines-for-creating-side-by-side-assemblies.md)
 
  
 

@@ -4,12 +4,12 @@ description: Esta sección contiene una lista de libros y recursos recomendados 
 ms.assetid: a7a5aee9-e31f-42d1-bf90-2fa91365ef2f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 426ab7734abdf8f7b07bb123c09b557fdfed78ba098930a2b5053e062e9647a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5916c128ce7bedc7993804d7cfecf711684140ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119021393"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170197"
 ---
 # <a name="other-resources"></a>Otros recursos
 
@@ -46,7 +46,7 @@ Este libro se centra en las técnicas para medir eficazmente la facilidad de uso
 
 (Currency/Doubleday, 1988; ISBN: 0385267746)
 
-En este libro se analizan los principios éticos en el trabajo que hacen que las interfaces sea tan difíciles de usar. Se recomienda para cualquier persona interesada en las interfaces de usuario y que quiera una amplia comprensión de los problemas implicados. Entre los ejemplos se incluyen electrodomésticos, puertas de oficina y máquinas de cocina.
+En este libro se analizan los principios emocionales en el trabajo que hacen que las interfaces sea tan difíciles de usar. Se recomienda para cualquier persona interesada en las interfaces de usuario y que quiera una amplia comprensión de los problemas implicados. Entre los ejemplos se incluyen electrodomésticos, puertas de oficina y máquinas de cocina.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Este libro sigue siendo un punto de referencia en el que se resumen varios enfoq
 
 </dd> <dt>
 
-<span id="Microsoft_Windows_User_Experience"></span><span id="microsoft_windows_user_experience"></span><span id="MICROSOFT_WINDOWS_USER_EXPERIENCE"></span>*Experiencia del usuario Windows Microsoft*
+<span id="Microsoft_Windows_User_Experience"></span><span id="microsoft_windows_user_experience"></span><span id="MICROSOFT_WINDOWS_USER_EXPERIENCE"></span>*Experiencia Windows usuario de Microsoft*
 </dt> <dd>
 
 (Microsoft Press, 1999; ISBN 0735605661)
@@ -84,14 +84,14 @@ Las directrices oficiales de Microsoft para crear interfaces de usuario bien dis
 
 </dd> <dt>
 
-<span id="Contextual_Design__Defining_Customer-Centered_Systems_by_Hugh_Beyer_and_Karen_Holtzblatt"></span><span id="contextual_design__defining_customer-centered_systems_by_hugh_beyer_and_karen_holtzblatt"></span><span id="CONTEXTUAL_DESIGN__DEFINING_CUSTOMER-CENTERED_SYSTEMS_BY_HUGH_BEYER_AND_KAREN_HOLTZBLATT"></span>*Diseño contextual: Definición de Customer-Centered sistemas de* diseño de Unix Beyer y Holtzblatt
+<span id="Contextual_Design__Defining_Customer-Centered_Systems_by_Hugh_Beyer_and_Karen_Holtzblatt"></span><span id="contextual_design__defining_customer-centered_systems_by_hugh_beyer_and_karen_holtzblatt"></span><span id="CONTEXTUAL_DESIGN__DEFINING_CUSTOMER-CENTERED_SYSTEMS_BY_HUGH_BEYER_AND_KAREN_HOLTZBLATT"></span>*Diseño contextual: Definición de Customer-Centered de* Sistemas de diseño de Unix Beyer y Holtzblatt de Holtzblatt
 </dt> <dd>
 
 (San Francisco: Kaufmann, 1997; ISBN 1558604111)
 
 </dd> <dt>
 
-<span id="A_Practical_Guide_to_Usability_Testing_by_Joseph_S._Dumas_and_Janice_C._Redish"></span><span id="a_practical_guide_to_usability_testing_by_joseph_s._dumas_and_janice_c._redish"></span><span id="A_PRACTICAL_GUIDE_TO_USABILITY_TESTING_BY_JOSEPH_S._DUMAS_AND_JANICE_C._REDISH"></span>*Una guía práctica para las pruebas de* facilidad de uso deUtut S. Dumas y Janice C. Redish
+<span id="A_Practical_Guide_to_Usability_Testing_by_Joseph_S._Dumas_and_Janice_C._Redish"></span><span id="a_practical_guide_to_usability_testing_by_joseph_s._dumas_and_janice_c._redish"></span><span id="A_PRACTICAL_GUIDE_TO_USABILITY_TESTING_BY_JOSEPH_S._DUMAS_AND_JANICE_C._REDISH"></span>*A Practical Guide to Usability Testing (Guía* práctica para las pruebas de facilidad de uso) de Tests S. Dumas y Janice C. Redish
 </dt> <dd>
 
 (Londres: Libros de inectect, 1999; ISBN 1841500208)
@@ -123,7 +123,7 @@ Comunicaciones del ACM (enero de 1991): 72-86
 
 <dl> <dt>
 
-<span id="ACM_Special_Interest_Group_on_Computer-Human_Interaction__SIGCHI_"></span><span id="acm_special_interest_group_on_computer-human_interaction__sigchi_"></span><span id="ACM_SPECIAL_INTEREST_GROUP_ON_COMPUTER-HUMAN_INTERACTION__SIGCHI_"></span>[Grupo de interés especial de ACM sobre Computer-Human interacción (SIGCHI)](https://sigchi.org/)
+<span id="ACM_Special_Interest_Group_on_Computer-Human_Interaction__SIGCHI_"></span><span id="acm_special_interest_group_on_computer-human_interaction__sigchi_"></span><span id="ACM_SPECIAL_INTEREST_GROUP_ON_COMPUTER-HUMAN_INTERACTION__SIGCHI_"></span>[Grupo de interés especial de ACM Computer-Human interacción (SIGCHI)](https://sigchi.org/)
 </dt> <dd>
 
 La organización más grande de profesionales de la interfaz de usuario.
@@ -157,7 +157,7 @@ Columna de Quesés sobre la facilidad de uso web.
 
 <dl> <dt>
 
-<span id="HCI_Bibliography___Human-Computer_Interaction_Resources"></span><span id="hci_bibliography___human-computer_interaction_resources"></span><span id="HCI_BIBLIOGRAPHY___HUMAN-COMPUTER_INTERACTION_RESOURCES"></span>[Biblioteca de HCI: recursos Human-Computer interacción](https://www.hcibib.org/)
+<span id="HCI_Bibliography___Human-Computer_Interaction_Resources"></span><span id="hci_bibliography___human-computer_interaction_resources"></span><span id="HCI_BIBLIOGRAPHY___HUMAN-COMPUTER_INTERACTION_RESOURCES"></span>[Biblioteca HCI: recursos Human-Computer interacción](https://www.hcibib.org/)
 </dt> <dd>
 
 Busque más de 58 000 publicaciones sobre Human-Computer Interaction.

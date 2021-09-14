@@ -6,12 +6,12 @@ keywords:
 - type_to_xmit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 970d4a0de9675ac7a5f1b1c1449521177ecb661a1a80fd9ef609a6dc630605a3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd6a6b250d661fc19b0ee8fb68d21f171960e512
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120016505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171297"
 ---
 # <a name="the-type_to_xmit-function"></a>El tipo \_ para \_ xmit (Función)
 

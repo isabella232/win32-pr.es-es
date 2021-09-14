@@ -4,12 +4,12 @@ ms.assetid: cf3dc6cd-7b24-464a-9d2b-5e35c4e8825e
 title: Salida de formateador genérico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d76a67fadbed3bde5eb3e5534c8f104e918ac870df27c767b98575058a0a188
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ecf4b334dd717c7ff332c3b730afb57d4be611ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119743975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171490"
 ---
 # <a name="generic-formatter-output"></a>Salida de formateador genérico
 
@@ -30,7 +30,7 @@ Para obtener más información y un ejemplo de la salida de un tipo de datos de 
 -   PROP \_ TYPE \_ BYTESWAPPED \_ WORD (Obsoleto. Para obtener más información, vea [PROP \_ TYPE \_ WORD](/windows))
 -   TIPO \_ PROP \_ BYTESWAPPED \_ DWORD (obsoleto. Para obtener más información, [vea PROP \_ TYPE \_ DWORD](/windows))
 -   PROP \_ TYPE \_ TYPED STRING \_ (obsoleto)
--   [DATOS \_ SIN PROCESAR DE TIPO \_ \_ PROP](/windows)
+-   [DATOS SIN \_ \_ PROCESAR DE TIPO \_ PROP](/windows)
 -   [COMENTARIO \_ DE TIPO \_ PROP](/windows)
 -   PROP \_ TYPE \_ SRCFRIENDLYNAME (el formateador genérico no admite)
 -   PROP \_ TYPE \_ DSTFRIENDLYNAME (el formateador genérico no admite)
@@ -53,7 +53,7 @@ En la columna de salida del formateador, el valor de los datos de la captura es 
 |-------------------------------|-------------------------------------------------------|
 | PROP \_ QUAL \_ NONE              | XYZ                                                   |
 | PROP \_ QUAL \_ RANGE             | XYZ                                                   |
-| CAMPO \_ DE BITS DE PROP QUAL \_          | Obsoletos                                              |
+| CAMPO DE \_ BITS DE PROP QUAL \_          | Obsoletos                                              |
 | PROP \_ QUAL \_ LABELED \_ SET      | XYZ                                                   |
 | CAMPO \_ DE BITS CON ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para más información, consulte PROP \_ QUAL \_ FLAGS |
 | PROP \_ QUAL \_ CONST             | XYZ                                                   |
@@ -76,7 +76,7 @@ En la columna de salida de ejemplo, el valor de los datos de la captura es XYZ.
 |-------------------------------|-------------------------------------------------------|
 | PROP \_ QUAL \_ NONE              | XYZ                                                   |
 | PROP \_ QUAL \_ RANGE             | XYZ                                                   |
-| CAMPO \_ DE BITS DE PROP QUAL \_          | Obsoletos                                              |
+| CAMPO DE \_ BITS DE PROP QUAL \_          | Obsoletos                                              |
 | PROP \_ QUAL \_ LABELED \_ SET      | XYZ                                                   |
 | CAMPO \_ DE BITS CON ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para más información, consulte PROP \_ QUAL \_ FLAGS |
 | PROP \_ QUAL \_ CONST             | XYZ                                                   |
@@ -89,7 +89,7 @@ En la columna de salida de ejemplo, el valor de los datos de la captura es XYZ.
 
 ## <a name="prop_type_byte"></a>BYTE \_ DE TIPO \_ PROP
 
-En la tabla siguiente se muestra la salida de formato genérico para las propiedades del tipo de datos **\_ BYTE \_ PROP TYPE.**
+En la tabla siguiente se muestra la salida de formato genérico para las propiedades del tipo de **\_ datos BYTE \_ PROP TYPE.**
 
 En la columna de salida de ejemplo, el valor de los datos de la captura es 10.
 
@@ -100,11 +100,11 @@ En la columna de salida de ejemplo, el valor de los datos de la captura es 10.
 | PROP \_ QUAL \_ NONE              | 10 (0xa)"                                                                                                     |
 | PROP \_ QUAL \_ RANGE             | Intervalo de 10 (0xa): (1 (0x1) - 20 (0x14))                                                                          |
 | PROP \_ QUAL \_ SET               | 10 (0xa) coincide con el valor establecido o<br/> 10 (0xa) Valor de conjunto desconocido<br/>                                |
-| CAMPO \_ DE BITS DE PROP QUAL \_          | Obsoleto.                                                                                                     |
+| CAMPO DE \_ BITS DE PROP QUAL \_          | Obsoleto.                                                                                                     |
 | PROP \_ QUAL \_ LABELED \_ SET      | Etiqueta correspondiente en un conjunto de etiquetas o número.                                                                 |
 | CAMPO \_ DE BITS CON ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, vea PROP \_ QUAL \_ FLAGS.                                                        |
 | PROP \_ QUAL \_ CONST             | Sin salida. No se muestra ningún dato en el panel de detalles.                                                           |
-| MARCAS \_ DE PROP \_ QUAL             | ....... 0 = Etiquetar cadena desactivada ...... 1. = Etiqueta en la cadena ...... 0.. = Etiqueta de cadena desactivada... 1... = Etiqueta en cadena |
+| MARCAS \_ DE PROP \_ QUAL             | ....... 0 = Etiquetar cadena desactivada ...... 1. = Etiqueta en la cadena ...... 0.. = Etiquetar cadena desactivada... 1... = Etiqueta en cadena |
 | PROP \_ QUAL \_ ARRAY             | 0a ff ...                                                                                                     |
 
 
@@ -113,7 +113,7 @@ En la columna de salida de ejemplo, el valor de los datos de la captura es 10.
 
 ## <a name="prop_type_word"></a>PROP \_ TYPE \_ WORD
 
-En la tabla siguiente se muestra la salida de formato genérico para una propiedad de tipo de datos **PROP \_ TYPE \_ WORD.**
+En la tabla siguiente se muestra la salida de formato genérico para una **propiedad de tipo de datos PROP TYPE \_ \_ WORD.**
 
 > [!Note]  
 > En el caso de las propiedades DWORD que no son intel y intercambiadas por bytes, debe cambiar los datos a un formato Intel. Para cambiar el formato, establezca el parámetro *IFlags* de la función de instancia de propiedad **Attach** IFLAG SWAPPED al asignar la instancia de \_ propiedad a una ubicación.
@@ -131,16 +131,16 @@ En la columna de salida de ejemplo, el valor de los datos de la captura es 10.
 | PROP \_ QUAL \_ SET               | 10 (0xa) coincide con el valor establecido o<br/> 10 (0xa) Valor de conjunto desconocido<br/>                                                                                                                                                |
 | CAMPO DE \_ BITS DE PROP QUAL \_          | Obsoleto.                                                                                                                                                                                                                     |
 | PROP \_ QUAL \_ LABELED \_ SET      | Etiqueta correspondiente en el conjunto de etiquetas o número.                                                                                                                                                                               |
-| CAMPO \_ DE BITS CON ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, consulte PROP \_ QUAL \_ FLAGS.                                                                                                                                                                        |
+| CAMPO \_ DE BITS CON LA ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, vea PROP \_ QUAL \_ FLAGS.                                                                                                                                                                        |
 | PROP \_ QUAL \_ CONST             | Sin salida. No se muestra ningún dato en el panel de detalles.                                                                                                                                                                           |
-| MARCAS \_ DE PROP \_ QUAL             | ....... 0 = Etiquetar cadena desactivada ...... 0. = Etiqueta de cadena desactivada...... 0.. = Etiquetar cadena desactivada... 0... = Etiquetar cadena desactivada ... 0.... = Etiquetar cadena desactivada . 1..... = Etiqueta en la cadena .0...... = Etiqueta de cadena desactivada 1......... = Etiqueta en cadena |
+| MARCAS \_ DE PROP QUAL \_             | ....... 0 = Etiquetar cadena desactivada ...... 0. = Etiquetar cadena desactivada ...... 0.. = Etiquetar cadena desactivada... 0... = Etiquetar cadena desactivada... 0.... = Etiquetar cadena desactivada . 1..... = Etiqueta en la cadena .0...... = Etiqueta desactivada Cadena 1...... = Etiqueta en cadena |
 | PROP \_ QUAL \_ ARRAY             | 000a ffff ...                                                                                                                                                                                                                 |
 
 
 
  
 
-## <a name="prop_type_dword"></a>PROP \_ TYPE \_ DWORD
+## <a name="prop_type_dword"></a>TIPO \_ DE \_ PROP DWORD
 
 En la tabla siguiente se muestra la salida de formato genérico para las propiedades del tipo de datos **\_ PROP TYPE \_ DWORD.**
 
@@ -159,19 +159,19 @@ En la columna de salida de ejemplo, el valor de los datos de la captura es 10.
 | PROP \_ QUAL \_ RANGE             | Intervalo de 10 (0xa): (1 (0x1) - 20 (0x14))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | PROP \_ QUAL \_ SET               | 10 (0xa) coincide con el valor establecido o<br/> 10 (0xa) Valor de conjunto desconocido<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | CAMPO DE \_ BITS DE PROP QUAL \_          | Obsoleto.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| PROP \_ QUAL \_ LABELED \_ SET      | Etiqueta correspondiente en el conjunto de etiquetas o número.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| CAMPO \_ DE BITS CON ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, consulte PROP \_ QUAL \_ FLAGS.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| PROP \_ QUAL \_ LABELED \_ SET      | Etiqueta correspondiente en el número o conjunto de etiquetas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| CAMPO \_ DE BITS CON LA ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, vea PROP \_ QUAL \_ FLAGS.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | PROP \_ QUAL \_ CONST             | Sin salida. No se muestra ningún dato en el panel de detalles.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| MARCAS \_ DE PROP \_ QUAL             | ............... 0 = Etiquetar cadena desactivada .............. 0. = Etiquetar cadena desactivada ................ 0.. = Etiquetar cadena desactivada ............ 0... = Etiquetar cadena desactivada ............ 0.... = Etiquetar cadena desactivada ............. 0..... = Etiquetar cadena desactivada ......... 0...... = Etiquetar cadena desactivada ......... 0....... = Etiquetar cadena desactivada ...... 0........ = Etiquetar cadena desactivada ...... 0......... = Etiquetar cadena desactivada ..... 0.......... = Etiquetar cadena desactivada ...... 0........... = Etiquetar cadena desactivada... 0............ = Etiquetar cadena desactivada . 1.................. = Etiqueta en la cadena .0................ = Etiquetar cadena desactivada 1............... = Etiqueta en cadena |
+| MARCAS \_ DE PROP QUAL \_             | ............... 0 = Etiquetar cadena desactivada ............... 0. = Etiquetar cadena desactivada .................. 0.. = Etiquetar cadena desactivada ............ 0... = Etiquetar cadena desactivada ............ 0.... = Etiquetar cadena desactivada ............. 0..... = Etiquetar cadena desactivada ......... 0...... = Etiquetar cadena desactivada ......... 0....... = Etiquetar cadena desactivada ...... 0........ = Etiquetar cadena desactivada ...... 0......... = Etiquetar cadena desactivada ..... 0.......... = Etiquetar cadena desactivada ...... 0........... = Etiquetar cadena desactivada... 0............ = Etiquetar cadena desactivada . 1.................. = Etiqueta en la cadena .0................ = Etiquetar cadena desactivada 1............... = Etiqueta en cadena |
 | PROP \_ QUAL \_ ARRAY             | 0000000a ffffffff ...                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 
 
  
 
-## <a name="prop_type_raw_data"></a>DATOS SIN \_ \_ PROCESAR DE TIPO \_ PROP
+## <a name="prop_type_raw_data"></a>DATOS \_ SIN PROCESAR DE TIPO \_ \_ PROP
 
-En la tabla siguiente se muestra la salida de formato genérico para una propiedad de tipo de **datos PROP TYPE RAW \_ \_ \_ DATA.** Tenga en cuenta que la salida del formateador no muestra los datos sin procesar, pero sí la etiqueta de propiedad.
+En la tabla siguiente se muestra la salida de formato genérico para una propiedad de tipo de **datos PROP TYPE RAW \_ \_ \_ DATA.** Tenga en cuenta que la salida del formateador no muestra los datos sin procesar, pero muestra la etiqueta de propiedad.
 
 
 
@@ -181,20 +181,20 @@ En la tabla siguiente se muestra la salida de formato genérico para una propied
 | PROP \_ QUAL \_ RANGE             | Etiqueta de propiedad.  |
 | CAMPO DE \_ BITS DE PROP QUAL \_          | Etiqueta de propiedad.  |
 | PROP \_ QUAL \_ LABELED \_ SET      | Etiqueta de propiedad.  |
-| CAMPO \_ DE BITS CON ETIQUETA \_ PROP QUAL \_ | Etiqueta de propiedad.  |
+| CAMPO \_ DE BITS CON LA ETIQUETA \_ PROP QUAL \_ | Etiqueta de propiedad.  |
 | PROP \_ QUAL \_ CONST             | Etiqueta de propiedad.  |
-| MARCAS \_ DE PROP \_ QUAL             | Etiqueta de propiedad.  |
+| MARCAS \_ DE PROP QUAL \_             | Etiqueta de propiedad.  |
 | PROP \_ QUAL \_ ARRAY             | Etiqueta de propiedad.  |
 
 
 
  
 
-## <a name="prop_type_time"></a>PROP \_ TYPE \_ TIME
+## <a name="prop_type_time"></a>HORA \_ DEL TIPO DE \_ PROP
 
-En la tabla siguiente se muestra la salida de formato genérico para una propiedad de tipo de **datos PROP \_ TYPE \_ TIME.** Tenga en cuenta que la salida con formato puede variar en función del calificador de datos de la propiedad.
+En la tabla siguiente se muestra la salida de formato genérico para una propiedad de tipo de datos **\_ PROP TYPE \_ TIME.** Tenga en cuenta que la salida con formato puede variar en función del calificador de datos de la propiedad .
 
-El formateador genérico llama a [**GetDateFormat para**](/windows/desktop/api/datetimeapi/nf-datetimeapi-getdateformata) obtener una hora que se basa en el reloj del sistema del equipo local.
+El formateador genérico llama a [**GetDateFormat**](/windows/desktop/api/datetimeapi/nf-datetimeapi-getdateformata) para obtener una hora que se basa en el reloj del sistema del equipo local.
 
 
 
@@ -204,7 +204,7 @@ El formateador genérico llama a [**GetDateFormat para**](/windows/desktop/api/d
 | PROP \_ QUAL \_ RANGE             | Muestra la hora del sistema según el reloj del equipo local. |
 | CAMPO DE \_ BITS DE PROP QUAL \_          | Obsoleto.                                                   |
 | PROP \_ QUAL \_ LABELED \_ SET      | Muestra la hora del sistema según el reloj del equipo local. |
-| CAMPO \_ DE BITS CON LA ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, consulte PROP \_ QUAL \_ FLAGS.      |
+| CAMPO \_ DE BITS CON LA ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, vea PROP \_ QUAL \_ FLAGS.      |
 | PROP \_ QUAL \_ CONST             | Muestra la hora del sistema según el reloj del equipo local. |
 | MARCAS \_ DE PROP QUAL \_             | Muestra la hora del sistema según el reloj del equipo local. |
 | PROP \_ QUAL \_ ARRAY             | Muestra la hora del sistema según el reloj del equipo local. |
@@ -225,7 +225,7 @@ En la tabla siguiente se muestra la salida de formato genérico para las propied
 | PROP \_ QUAL \_ RANGE             | Cadena adjunta.                                       |
 | CAMPO DE \_ BITS DE PROP QUAL \_          | Obsoleto.                                              |
 | PROP \_ QUAL \_ LABELED \_ SET      | Cadena adjunta.                                       |
-| CAMPO \_ DE BITS CON LA ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, consulte PROP \_ QUAL \_ FLAGS. |
+| CAMPO \_ DE BITS CON LA ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, vea PROP \_ QUAL \_ FLAGS. |
 | PROP \_ QUAL \_ CONST             | Cadena adjunta.                                       |
 | MARCAS \_ DE PROP QUAL \_             | Cadena adjunta.                                       |
 | PROP \_ QUAL \_ ARRAY             | Cadena adjunta.                                       |
@@ -248,7 +248,7 @@ En la columna de salida de ejemplo, el valor de los datos de la captura es "129.
 | PROP \_ QUAL \_ RANGE             | 129.65.100.2                                           |
 | CAMPO DE \_ BITS DE PROP QUAL \_          | Obsoleto.                                              |
 | PROP \_ QUAL \_ LABELED \_ SET      | 129.65.100.2                                           |
-| CAMPO \_ DE BITS CON LA ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, consulte PROP \_ QUAL \_ FLAGS. |
+| CAMPO \_ DE BITS CON LA ETIQUETA \_ PROP QUAL \_ | Obsoleto. Para obtener más información, vea PROP \_ QUAL \_ FLAGS. |
 | PROP \_ QUAL \_ CONST             | 129.65.100.2                                           |
 | MARCAS \_ DE PROP QUAL \_             | 129.65.100.2                                           |
 | PROP \_ QUAL \_ ARRAY             | 129.65.100.2                                           |

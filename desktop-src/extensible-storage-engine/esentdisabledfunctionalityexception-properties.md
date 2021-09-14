@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101619
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0e625d2933ce4841c77ccdf0bcb599cac3c84d45a94b1770cedcf6381cee7503
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b482f4bd3fe2cf6cd0d1e082889ec2e920ea8ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119839828"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170342"
 ---
 # <a name="esentdisabledfunctionalityexception-properties"></a>Propiedades de EsentDisabledFunctionalityException
 
@@ -34,7 +34,7 @@ El [tipo EsentDisabledFunctionalityException](./esentdisabledfunctionalityexcept
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

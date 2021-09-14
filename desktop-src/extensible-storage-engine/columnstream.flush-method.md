@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4652bcbe90e33737262cbc63914bda5467e27b2d04acaa786c676b4ecdc9fe79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee686c2f7f1ed94474275bb5cdb23a8f3f0eff47
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119042373"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170358"
 ---
 # <a name="columnstreamflush-method"></a>Método ColumnStream.Flush
 
@@ -53,12 +53,12 @@ instance.Flush()
 public override void Flush()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [ColumnStream (clase)](./columnstream-class.md)
 
-[Miembros ColumnStream](./columnstream-members.md)
+[Miembros columnStream](./columnstream-members.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

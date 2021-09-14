@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a6eedf739d9d0b4285d0198ae905672dbbb7848a2b7d9ba106abb6a59fcdc4d5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d857179e97586974e11815ced5ec7c50ca276789
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119742655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171417"
 ---
 # <a name="largeint"></a>LARGEINT
 
@@ -28,18 +28,18 @@ typedef LARGE_INTEGER UNALIGNED* ULPLARGEINT;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **miembro lpLargeIntTable** de la estructura [**SET**](set.md) apunta a una matriz de estructuras **SET** que definen uno o varios valores LARGEINT. Cuando se especifica este tipo de estructura **SET,** Monitor de red muestra una de las siguientes etiquetas con cada valor LARGEINT que encuentra en el paquete de protocolo.
+El **miembro lpLargeIntTable** de la [**estructura SET**](set.md) apunta a una matriz de estructuras **SET** que definen uno o varios valores LARGEINT. Cuando se especifica este tipo de estructura **SET,** Monitor de red muestra una de las etiquetas siguientes con cada valor LARGEINT que encuentra en el paquete de protocolo.
 
 -   Coincide con el valor establecido. El valor LARGEINT se incluye en el conjunto.
--   Valor de conjunto desconocido. El valor LARGEINT no se incluye en el conjunto.
+-   Valor establecido desconocido. El valor LARGEINT no se incluye en el conjunto.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
@@ -47,7 +47,7 @@ El **miembro lpLargeIntTable** de la estructura [**SET**](set.md) apunta a una m
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

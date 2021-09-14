@@ -4,12 +4,12 @@ ms.assetid: babc89f0-aea5-4341-8cf9-40d11e73fb10
 title: Constantes del codificador de imágenes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37a47f533a490fe3428964c9e469df6fbe89800f95bfe89daf7bf05d6c49a75c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8130b90ad7f1d559ca480a581a0b157ff152fc0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118248889"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170273"
 ---
 # <a name="image-encoder-constants"></a>Constantes del codificador de imágenes
 

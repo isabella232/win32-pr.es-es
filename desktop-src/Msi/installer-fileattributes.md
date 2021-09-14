@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 7fe43028d856ca26b1c5e8fa21a88a3b77381670ccc044a79f10d3b922f38c21
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9a4d2b956c7d325fabcda7d6950274249120a0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118630918"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171653"
 ---
 # <a name="installerfileattributes-property"></a>Installer.FileAttributes, propiedad
 
@@ -39,13 +39,13 @@ propVal = Installer.FileAttributes
 
 Ruta de acceso necesaria al archivo o carpeta. Una ruta de acceso parcial asume el directorio actual.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **propiedad FileAttributes** devuelve los valores siguientes.
 
 
 
-| Atributo de archivo              | Valor      | Valor |
+| Atributo de archivo              | Value      | Value |
 |-----------------------------|------------|-------|
 | FILE\_ATTRIBUTE\_READONLY   | 0x00000001 | 1     |
 | FILE\_ATTRIBUTE\_HIDDEN     | 0x00000002 | 2     |
@@ -65,10 +65,10 @@ Devuelve –1 si el archivo o carpeta no existe o no es accesible.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
-| Header<br/>  | <dl> <dt>Windows.storage.h</dt> </dl>                                                                                                                                                            |
+| Encabezado<br/>  | <dl> <dt>Windows.storage.h</dt> </dl>                                                                                                                                                            |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 

@@ -4,16 +4,16 @@ ms.assetid: 11e995b7-30c7-4992-b436-3af289ac3966
 title: Desinstalación de revisiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b10024d82bde0e902fb7f49f9af3bcfa041ca46efb1e6e19466c4acd09c805fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff9418704bdeeb5ccc57839cbe2416faa5692265
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119893365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171614"
 ---
 # <a name="uninstalling-patches"></a>Desinstalación de revisiones
 
-A partir Windows Installer 3.0, es posible desinstalar algunas revisiones de las aplicaciones. La revisión debe ser [una revisión que se pueda desinstalar.](uninstallable-patches.md) Cuando se usa una versión de Windows Installer inferior [](removing-patches.md) a la versión 3.0, la eliminación de revisiones requiere desinstalar el producto de revisión y volver a instalar el producto sin aplicar la revisión.
+A partir Windows Installer 3.0, es posible desinstalar algunas revisiones de las aplicaciones. La revisión debe ser [una revisión que se pueda desinstalar.](uninstallable-patches.md) Cuando se usa una versión del instalador de Windows [](removing-patches.md) anterior a la versión 3.0, la eliminación de revisiones requiere desinstalar el producto de revisión y reinstalar el producto sin aplicar la revisión.
 
 **Windows Installer 2.0:** No se admite. Las revisiones aplicadas mediante una versión de Windows Installer anterior a Windows Installer 3.0 no se pueden desinstalar.
 
@@ -21,26 +21,26 @@ Al invocar una desinstalación de una revisión mediante cualquiera de los méto
 
 ## <a name="uninstalling-a-patch-using-msipatchremove-on-a-command-line"></a>Desinstalación de una revisión mediante MSIPATCHREMOVE en una línea de comandos
 
-Puede desinstalar revisiones de un comando mediante msiexec.exe y las opciones [de la línea de comandos](command-line-options.md). En la siguiente línea de comandos de ejemplo se quita una revisión desinstalable [,](uninstallable-patches.md)example.msp, de una aplicación, example.msi, mediante la propiedad [**MSIPATCHREMOVE**](msipatchremove.md) y la opción de línea de comandos /i. Cuando se usa /i, la aplicación con revisión se puede identificar mediante la ruta de acceso al paquete de la aplicación (.msi archivo) o al código de producto de [la aplicación.](product-codes.md) En este ejemplo, el paquete de instalación de la aplicación se encuentra en "ejemplo de productos de recurso compartido de servidorexample.msi" y la propiedad ProductCode de la aplicación es \\ \\ \\ \\ \\ \\ "{0C9840E7-7F0B-C648-10F0-4641926FE463}". [](productcode.md) El paquete de revisión se encuentra en "server share products example patches example.msp" y el GUID del código de revisión es \\ \\ \\ \\ \\ \\ \\ "{EB8C947C-78B2-85A0-644D-86CEEF8E07C0}".
+Puede desinstalar revisiones de un comando mediante msiexec.exe y las opciones [de línea de comandos](command-line-options.md). En la siguiente línea de comandos de ejemplo se quita una revisión desinstalable [,](uninstallable-patches.md)example.msp, de una aplicación, example.msi, mediante la propiedad [**MSIPATCHREMOVE**](msipatchremove.md) y la opción de línea de comandos /i. Al usar /i, la aplicación con revisión se puede identificar mediante la ruta de acceso al paquete de la aplicación (archivo .msi) o al código de producto [de la aplicación.](product-codes.md) En este ejemplo, el paquete de instalación de la aplicación se encuentra en "ejemplo de productos de recurso compartido de servidorexample.msi" y la propiedad ProductCode de la aplicación es \\ \\ \\ \\ \\ \\ "{0C9840E7-7F0B-C648-10F0-4641926FE463}". [](productcode.md) El paquete de revisión se encuentra en "server share products example patches example.msp" y el GUID del código de revisión es \\ \\ \\ \\ \\ \\ \\ "{EB8C947C-78B2-85A0-644D-86CEEF8E07C0}".
 
 **Msiexec /I {0C9840E7-7F0B-C648-10F0-4641926FE463} MSIPATCHREMOVE={EB8C947C-78B2-85A0-644D-86CEEF8E07C0} /qb**
 
 ## <a name="uninstalling-a-patch-using-the-standard-command-line-options"></a>Desinstalación de una revisión mediante las opciones de línea de comandos estándar
 
-A partir de Windows Installer versión 3.0, puede usar las opciones de línea de comandos estándar que usan las actualizaciones del sistema operativo de Microsoft Windows (update.exe) para desinstalar las revisiones del instalador de Windows desde una línea de comandos. [](standard-installer-command-line-options.md)
+A partir de Windows Installer versión 3.0, [](standard-installer-command-line-options.md) puede usar las opciones de línea de comandos estándar que usan las actualizaciones del sistema operativo de Microsoft Windows (update.exe) para desinstalar las revisiones del instalador de Windows desde una línea de comandos.
 
-La siguiente línea de comandos es el equivalente estándar de la línea de comandos Windows Installer que se usa para desinstalar una revisión mediante la [**propiedad MSIPATCHREMOVE.**](msipatchremove.md) La opción /uninstall usada con la opción /package indica la desinstalación de una revisión. La ruta de acceso completa a la revisión o el GUID del código de revisión pueden hacer referencia a la revisión.
+La siguiente línea de comandos es el equivalente estándar de la línea de comandos Windows Installer que se usa para desinstalar una revisión mediante la [**propiedad MSIPATCHREMOVE.**](msipatchremove.md) La opción /uninstall utilizada con la opción /package indica la desinstalación de una revisión. La ruta de acceso completa a la revisión o el GUID del código de revisión pueden hacer referencia a la revisión.
 
 **Msiexec /package {0C9840E7-7F0B-C648-10F0-4641926FE463} /uninstall {EB8C947C-78B2-85A0-644D-86CEEF8E07C0} /passive**
 
 > [!Note]  
-> La opción /passive standard no es un equivalente exacto de la Windows installer /qb.
+> La opción /passive standard no es un equivalente exacto de la opción Windows Installer /qb.
 
  
 
 ## <a name="uninstalling-a-patch-using-the-removepatches-method"></a>Desinstalación de una revisión mediante el método RemovePatches
 
-Puede desinstalar revisiones del script mediante la interfaz de automatización Windows [instalador](automation-interface.md). En el ejemplo de scripting siguiente se quita una revisión desinstalable [,](uninstallable-patches.md)example.msp, de una aplicación, example.msi, mediante el [**método RemovePatches**](installer-removepatches.md) del [objeto Installer.](installer-object.md) Cada revisión que se va a desinstalar se puede representar mediante la ruta de acceso completa al paquete de revisión o el GUID del código de revisión. En este ejemplo, el paquete de instalación de la aplicación se encuentra en "ejemplo de productos de recurso compartido de servidorexample.msi" y la propiedad ProductCode de la aplicación es \\ \\ \\ \\ \\ \\ "{0C9840E7-7F0B-C648-10F0-4641926FE463}". [](productcode.md) El paquete de revisión se encuentra en "server share products example patches example.msp" y el GUID del código de revisión es \\ \\ \\ \\ \\ \\ \\ "{EB8C947C-78B2-85A0-644D-86CEEF8E07C0}".
+Puede desinstalar revisiones del script mediante la interfaz de automatización Windows [instalador](automation-interface.md). En el ejemplo de scripting siguiente se quita una revisión desinstalable [,](uninstallable-patches.md)example.msp, de una aplicación, example.msi, mediante el método [**RemovePatches**](installer-removepatches.md) del [objeto Installer.](installer-object.md) Cada revisión que se va a desinstalar se puede representar mediante la ruta de acceso completa al paquete de revisión o el GUID del código de revisión. En este ejemplo, el paquete de instalación de la aplicación se encuentra en "ejemplo de productos de recurso compartido de servidorexample.msi" y la propiedad ProductCode de la aplicación es \\ \\ \\ \\ \\ \\ "{0C9840E7-7F0B-C648-10F0-4641926FE463}". [](productcode.md) El paquete de revisión se encuentra en "server share products example patches example.msp" y el GUID del código de revisión es \\ \\ \\ \\ \\ \\ \\ "{EB8C947C-78B2-85A0-644D-86CEEF8E07C0}".
 
 
 ```VB
@@ -62,7 +62,7 @@ Con Windows XP, puede desinstalar revisiones mediante Agregar o quitar programas
 
 ## <a name="uninstalling-a-patch-using-the-msiremovepatches-function"></a>Desinstalación de una revisión mediante la función MsiRemovePatches
 
-Las aplicaciones pueden desinstalar revisiones de otras aplicaciones mediante el Windows [Installer Functions](installer-functions.md). En el ejemplo de código siguiente se quita una revisión desinstalable [,](uninstallable-patches.md)example.msp, de una aplicación, example.msi, mediante la [**función MsiRemovePatches.**](/windows/desktop/api/Msi/nf-msi-msiremovepatchesa) La ruta de acceso completa al paquete de revisión o el GUID del código de revisión pueden hacer referencia a una revisión. En este ejemplo, el paquete de instalación de la aplicación se encuentra en "ejemplo de productos de recurso compartido de servidorexample.msi" y la propiedad ProductCode de la aplicación es \\ \\ \\ \\ \\ \\ "{0C9840E7-7F0B-C648-10F0-4641926FE463}". [](productcode.md) El paquete de revisión se encuentra en "server share products example patches example.msp" y el GUID del código de revisión es \\ \\ \\ \\ \\ \\ \\ "{EB8C947C-78B2-85A0-644D-86CEEF8E07C0}".
+Las aplicaciones pueden desinstalar revisiones de otras aplicaciones mediante el Windows [Installer Functions](installer-functions.md). En el ejemplo de código siguiente se quita una revisión desinstalable [,](uninstallable-patches.md)example.msp, de una aplicación, example.msi, mediante la [**función MsiRemovePatches.**](/windows/desktop/api/Msi/nf-msi-msiremovepatchesa) Se puede hacer referencia a una revisión mediante la ruta de acceso completa al paquete de revisión o al GUID del código de revisión. En este ejemplo, el paquete de instalación de la aplicación se encuentra en "ejemplo de productos de recurso compartido de servidorexample.msi" y la propiedad ProductCode de la aplicación es \\ \\ \\ \\ \\ \\ "{0C9840E7-7F0B-C648-10F0-4641926FE463}". [](productcode.md) El paquete de revisión se encuentra en "server share products example patches example.msp" y el GUID del código de revisión es \\ \\ \\ \\ \\ \\ \\ "{EB8C947C-78B2-85A0-644D-86CEEF8E07C0}".
 
 
 ```C++
@@ -195,10 +195,10 @@ UINT RemovePatchFromAllVisibleapplications(LPCWSTR wszPatchToRemove)
 [Secuenciación de revisiones](sequencing-patches.md)
 </dt> <dt>
 
-[Quitar revisiones](removing-patches.md)
+[Eliminación de revisiones](removing-patches.md)
 </dt> <dt>
 
-[Revisiones desinstalables](uninstallable-patches.md)
+[Revisiones que se pueden desinstalar](uninstallable-patches.md)
 </dt> <dt>
 
 [Acciones personalizadas de desinstalación de revisiones](patch-uninstall-custom-actions.md)

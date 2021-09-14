@@ -4,12 +4,12 @@ ms.assetid: 3b29e150-26ac-46c6-8aa5-984aeb03392a
 title: Métodos Graphics.DrawCurve (Gdiplusgraphics.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 95365a11cc28aace7e16046e3b39ef8517e625f52ff0fb29f07f8736fe81c4ce
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9d9d9c044955700d7c442c1e9081419c8a47aa21
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119888845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170290"
 ---
 # <a name="graphicsdrawcurve-methods"></a>Métodos Graphics.DrawCurve
 

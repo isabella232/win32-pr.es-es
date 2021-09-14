@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: JetOSSnapshotEnd (Función)'
-title: Función JetOSSnapshotEnd
+title: JetOSSnapshotEnd (Función)
 TOCTitle: JetOSSnapshotEnd Function
 ms:assetid: f7f4db8b-8e40-48d7-bc7b-0c80d0d0f77f
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294136(v=EXCHG.10)
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 890114147950d74dcf2c9004a34cc2c0ab30f61c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: b57528899b8d78ecee31f6dd54c2ac8decece383
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471741"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170334"
 ---
-# <a name="jetossnapshotend-function"></a>Función JetOSSnapshotEnd
+# <a name="jetossnapshotend-function"></a>JetOSSnapshotEnd (Función)
 
 
 _**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetossnapshotend-function"></a>Función JetOSSnapshotEnd
+## <a name="jetossnapshotend-function"></a>JetOSSnapshotEnd (Función)
 
-La **función JetOSSnapshotEnd** notifica al motor que la sesión de instantáneas finalizó.
+La **función JetOSSnapshotEnd** notifica al motor que la sesión de instantánea ha finalizado.
 
-**Windows Vista:****JetOSSnapshotEnd** se introdujo en Windows Vista:.  
+**Windows Vista:****JetOSSnapshotEnd** se presenta en Windows Vista:.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotEnd(
@@ -51,13 +51,13 @@ Identificador de la sesión de instantánea.
 
 *grbit*
 
-Opciones de esta llamada. Este parámetro puede tener una combinación de los siguientes valores.
+Opciones para esta llamada. Este parámetro puede tener una combinación de los valores siguientes.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>0</p> | <p>Final correcto de la sesión de instantánea.</p> | 
-| <p>JET_bitAbortSnapshot</p> | <p>Sesión de instantánea anulada.</p> | 
+| <p>0</p> | <p>Final correcto de la sesión de instantáneas.</p> | 
+| <p>JET_bitAbortSnapshot</p> | <p>Se anuló la sesión de instantánea.</p> | 
 
 
 
@@ -72,30 +72,36 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>JET_errInvalidGrbit</p> | <p>Una de las opciones solicitadas no es válida, se usa incorrectamente o no se implementa.</p> | 
 | <p>JET_errOSSnapshotInvalidSequence</p> | <p>Ya hay una sesión de instantánea en curso. Esto no está permitido.</p> | 
 | <p>JET_errOSSnapshotInvalidSnapId</p> | <p>El identificador de la sesión de instantánea no es válido.</p> | 
-| <p>JET_errOSSnapshotTimeOut</p> | <p>La sesión de instantánea tenía un tiempo de espera interno antes de que se produjese esta llamada. Como resultado, las operaciones de E/S han vuelto a la normalidad antes de que se realizara esta llamada.</p> | 
+| <p>JET_errOSSnapshotTimeOut</p> | <p>La sesión de instantánea tenía un tiempo de espera interno antes de que se produjese esta llamada. Como resultado, las operaciones de E/S regresaron a la normalidad antes de realizar esta llamada.</p> | 
 
 
 
 Si esta función se realiza correctamente, se completará una sesión de instantáneas y se reanudará el comportamiento normal del motor. Más adelante se puede iniciar una nueva sesión de instantáneas.
 
-Si se produce un error en esta función, JET_errOSSnapshotTimeOut el código devuelto y finaliza la sesión de instantánea actual, pero la inmovilización de las E/S durante el período de instantánea no se respeta internamente. Para todos los demás errores, no se cambiará el estado de la sesión de instantánea.
+Si se produce un error en esta función, JET_errOSSnapshotTimeOut devuelve el código devuelto y finaliza la sesión de instantánea actual, pero la inmovilización de las E/S durante el período de instantánea no se respeta internamente. Para todos los demás errores, no se cambiará el estado de la sesión de instantánea.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-Se llama a esta función solo si se llamó [a JetOSSnapshotThaw](./jetossnapshotthaw-function.md) con JET_bitContinueAfterThaw.
+Solo se llama a esta función si se llamó [a JetOSSnapshotThaw](./jetossnapshotthaw-function.md) con JET_bitContinueAfterThaw.
 
-La sesión de instantánea debe completarse para que se lleve a cabo la comprobación de instantáneas y el truncamiento del registro. Las entradas del registro de eventos se generarán para los distintos pasos de la instantánea.
+La sesión de instantánea debe completarse para que se lleve a cabo la comprobación de la instantánea y el truncamiento del registro. Las entradas del registro de eventos se generarán para los distintos pasos de la instantánea.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 
 #### <a name="see-also"></a>Consulte también
 
 [Parámetros de control de errores](./error-handling-parameters.md)  
-[Errores extensibles Storage motor de ejecución](./extensible-storage-engine-errors.md)  
+[Errores extensibles Storage motor de datos](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JetOSSnapshotThaw](./jetossnapshotthaw-function.md)

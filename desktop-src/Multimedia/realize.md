@@ -13,11 +13,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 33accaa9638210adf4385a1776fcd8d2bd2021e7
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370249"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171570"
 ---
 # <a name="realize-command"></a>comando realize
 
@@ -73,15 +73,15 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Use este comando solo si la aplicación usa un identificador de ventana y recibe un mensaje **\_ WM QUERYNEWPALLETTE** **o WM \_ PALETTECHANGED.**
+Use este comando solo si la aplicación usa un identificador de ventana y recibe un mensaje **\_ WM QUERYNEWPALVARIABLE** **o WM \_ PALETTECHANGED.**
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente indica al dispositivo "myvideo" que se des cuenta de su paleta.
+El comando siguiente indica al dispositivo "myvideo" que se dé cuenta de su paleta.
 
 ``` syntax
 realize myvideo normal
@@ -98,7 +98,7 @@ realize myvideo normal
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

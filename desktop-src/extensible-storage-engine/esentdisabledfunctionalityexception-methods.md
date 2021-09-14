@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101518
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0dfd846db5a9ddde0f08a318bec705ba76d5d35d39094dfd8341542da42e0c71
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9f3c071c7573caf66a62ac5db4bef331751378b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119839905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170345"
 ---
 # <a name="esentdisabledfunctionalityexception-methods"></a>Métodos de EsentDisabledFunctionalityException 
 

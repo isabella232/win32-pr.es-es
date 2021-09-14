@@ -7,12 +7,12 @@ keywords:
 - Prueba de propiedad de píxeles OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12cfefe133b3951fa70d51736f664ec5a7cb9942c4c05f892115dd222013f294
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85ad5ae57dbbff9f3551ecc222cd0a628193c97f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118936254"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171341"
 ---
 # <a name="pixel-ownership-test"></a>Prueba de propiedad de píxeles
 

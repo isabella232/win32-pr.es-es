@@ -4,18 +4,18 @@ ms.assetid: fd4e2a13-f257-4ba9-a11d-35f49c5a6c00
 title: Atributos PKCS \# 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24436a918afe2d9bd85d7c28ae330b8c022bd4e3d34d30e58aae7b9c57c4963a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce0c7bc9b991a6625cae36ae9857275a9d86786a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117774590"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171185"
 ---
 # <a name="pkcs-7-attributes"></a>Atributos PKCS \# 7
 
 PKCS \# 7 es un estándar de sintaxis de mensajes criptográficos. Un mensaje PKCS 7 no constituye, por sí solo, una solicitud de certificado, pero puede encapsular una solicitud PKCS 10 o CMC en una estructura \# \# ASN.1 de **ContentInfo** mediante uno de los siguientes tipos de contenido. La encapsulación le permite agregar funcionalidad adicional, como varias firmas, que no está disponible de otro modo.
 
--   **Datos**
+-   **Data**
 -   **SignedData**
 -   **EnvelopedData**
 -   **SignedAndEnvelopedData**

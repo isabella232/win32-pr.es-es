@@ -1,7 +1,7 @@
 ---
-description: La función GetNPPEtypeSapFilter recupera el filtro ETYPE/SAP de un BLOB determinado.
+description: La función GetNPPEtypeSapFilter recupera el filtro Etype/Sap de un BLOB determinado.
 ms.assetid: c4891eff-ab2d-43ff-8d2b-3aa299570c0a
-title: Función GetNPPEtypeSapFilter (Netmon. h)
+title: Función GetNPPEtypeSapFilter (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Npptools.dll
 ms.openlocfilehash: 5359332d96fb85343300c5def12070c812bd99d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678582"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171457"
 ---
-# <a name="getnppetypesapfilter-function"></a>GetNPPEtypeSapFilter función)
+# <a name="getnppetypesapfilter-function"></a>Función GetNPPEtypeSapFilter
 
-La función **GetNPPEtypeSapFilter** recupera el filtro ETYPE/SAP de un BLOB determinado.
+La **función GetNPPEtypeSapFilter** recupera el filtro Etype/Sap de un BLOB determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,64 +45,64 @@ DWORD GetNPPEtypeSapFilter(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador del BLOB.
 
 </dd> <dt>
 
-*pnSaps* \[ enuncia\]
+*pnSaps* \[ out\]
 </dt> <dd>
 
-Puntero al número de protocolos devuelto en la tabla de SAP.
+Puntero al número devuelto de protocolos en la tabla de SAP.
 
 </dd> <dt>
 
-*pnEtypes* \[ enuncia\]
+*pnEtypes* \[ out\]
 </dt> <dd>
 
-Puntero al número de ETYPE devuelto en la tabla ETYPE.
+Puntero al número devuelto de Etypes en la tabla Etype.
 
 </dd> <dt>
 
-*ppSapTable* \[ enuncia\]
+*ppSapTable* \[ out\]
 </dt> <dd>
 
 Puntero a la tabla de SAP devuelta.
 
 </dd> <dt>
 
-*ppEtypeTable* \[ enuncia\]
+*ppEtypeTable* \[ out\]
 </dt> <dd>
 
-Puntero a la tabla ETYPE devuelta.
+Puntero a la tabla Etype devuelta.
 
 </dd> <dt>
 
-*pFilterFlags* \[ enuncia\]
+*pFilterFlags* \[ out\]
 </dt> <dd>
 
 Puntero a las marcas de filtro devueltas.
 
 </dd> <dt>
 
-*hErrorBlob* \[ enuncia\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error, que especifica la ubicación en el BLOB original donde se produjo el error (si existe).
+Controlar un BLOB de error, que especifica la ubicación en el BLOB original donde se produjo el error (si lo hubiera).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
 ## <a name="remarks"></a>Observaciones
 
-La información de ETYPE/SAP se almacena en la categoría **configuración** de la sección de **propietario** NPP.
+La información de Etype/Sap se almacena en la **categoría Config** de la sección Propietario **de** NPP.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,13 +112,13 @@ La información de ETYPE/SAP se almacena en la categoría **configuración** de 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

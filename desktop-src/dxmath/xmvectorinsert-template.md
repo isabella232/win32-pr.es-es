@@ -4,12 +4,12 @@ ms.assetid: m:microsoft.directx_sdk.template.xmvectorinsert(xmvector,xmvector)
 title: Plantilla XMVectorInsert (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b90eb7348639e6993cb69ef9e82ab78ed989999ea8423f1f6ff8bd9deb7c70d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3250ad52ab19a127b110b02ecf71543f44708681
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119739764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170410"
 ---
 # <a name="xmvectorinsert-template"></a>Plantilla XMVectorInsert
 
@@ -28,14 +28,14 @@ template<uint32_t VSLeftRotateElements, uint32_t Select0, uint32_t Select1, uint
 
 <dl> <dt>
 
-<span id="VD"></span><span id="vd"></span>*Vd*
+<span id="VD"></span><span id="vd"></span>*VD*
 </dt> <dd>
 
 \[en \] Vector en el que se insertará.
 
 </dd> <dt>
 
-<span id="VS"></span><span id="vs"></span>*Vs*
+<span id="VS"></span><span id="vs"></span>*VS*
 </dt> <dd>
 
 \[en \] Vector para girar a la izquierda.
@@ -46,7 +46,7 @@ template<uint32_t VSLeftRotateElements, uint32_t Select0, uint32_t Select1, uint
 
 Devuelve el [**XMVECTOR**](xmvector-data-type.md) que resulta de la rotación y la inserción.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es una versión de plantilla de [**XMVectorInsert donde**](/windows/win32/api/directxmath/nf-directxmath-xmvectorinsert) los *argumentos Select \** son valores de plantilla.
 

@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 312cc5fed863241c1af8c8f69acfd74277cb355f91291f702e976bea71eba2f6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a4ef3be0ef16797597f57c12e90736ba50109601
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120080665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170973"
 ---
 # <a name="iscrdenrselectsigningcertificate-method"></a>Método ISCrdEnr::selectSigningCertificate
 
-El **método selectSigningCertificate** muestra un cuadro de diálogo Seleccionar certificado, lo que permite seleccionar un certificado de firma (también conocido como certificado del *agente* de inscripción). 
+El **método selectSigningCertificate** muestra un cuadro de diálogo Seleccionar certificado, lo que permite seleccionar un certificado de firma (también conocido como certificado del agente de inscripción). 
 
-Antes de inscribirse en nombre de los usuarios, debe seleccionar un certificado de firma. La [*clave privada asociada*](../secgloss/p-gly.md) a este certificado de firma se usa para firmar una solicitud PKCS \# 7. PkCS 7, a su vez, contiene la solicitud PKCS 10 del usuario (que está firmada con la \# \# clave privada del usuario).
+Antes de inscribirse en nombre de los usuarios, debe seleccionar un certificado de firma. La [*clave privada*](../secgloss/p-gly.md) asociada a este certificado de firma se usa para firmar una solicitud PKCS \# 7. PkCS 7, a su vez, contiene la solicitud \# PKCS 10 del usuario (que está firmada con la clave \# privada del usuario).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,9 +74,9 @@ Cadena que representa el nombre de la plantilla de certificado para el certifica
 
 Si el método se realiza correctamente, el método devuelve **S \_ OK**.
 
-Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de inscribirse en nombre de un usuario, primero debe obtener un certificado de firma. Puede obtener un certificado de firma mediante el complemento MMC del Administrador de certificados. El **método selectSigningCertificate** no obtiene el certificado de firma, pero muestra un cuadro de diálogo de certificados de firma obtenidos previamente, lo que le permite elegir qué certificado se usará para firmar las solicitudes de inscripción en nombre.
 
@@ -88,7 +88,7 @@ Una vez seleccionado un certificado de firma, su nombre se puede recuperar llama
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
@@ -97,7 +97,7 @@ Una vez seleccionado un certificado de firma, su nombre se puede recuperar llama
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

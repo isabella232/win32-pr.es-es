@@ -5,12 +5,12 @@ title: Windows Propiedades del instalador de la clave del Registro de desinstala
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: contperf-fy21q3
-ms.openlocfilehash: b898cd2a83a05783141ddf1fb4a7cbebb783bbcd7640526c5b653afa434d2175
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 90174cabed7a1d9ff0ca21b532c459a1026787a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119810325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171621"
 ---
 # <a name="windows-installer-properties-for-the-uninstall-registry-key"></a>Windows Propiedades del instalador de la clave del Registro de desinstalación
 
@@ -22,7 +22,7 @@ Los valores se almacenan en una subclave identificada por el GUID del código de
 
 
 
-| Valor               | Windows Propiedad installer                                                                                                                                                                                                                                                                                                                                           |
+| Value               | Windows Propiedad installer                                                                                                                                                                                                                                                                                                                                           |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | DisplayName         | [**ProductName,**](productname.md) propiedad                                                                                                                                                                                                                                                                                                                          |
 | DisplayVersion      | Derivado de la [**propiedad ProductVersion**](productversion.md)                                                                                                                                                                                                                                                                                                       |
@@ -40,9 +40,9 @@ Los valores se almacenan en una subclave identificada por el GUID del código de
 | AuthorizedCDFPrefix | [**Propiedad ARPAUTHORIZEDCDFPREFIX**](arpauthorizedcdfprefix.md)                                                                                                                                                                                                                                                                                                    |
 | Comentarios            | [**Propiedad ARPCOMMENTS**](arpcomments.md) <br/> Comentarios proporcionados en el panel de control **Agregar o** quitar programas.<br/>                                                                                                                                                                                                                                |
 | Contacto             | [**Propiedad ARPCONTACT**](arpcontact.md) <br/> Póngase en contacto con el panel de control **Agregar o quitar** programas.<br/>                                                                                                                                                                                                                                   |
-| EstimatedSize       | Determinado y establecido por el Windows instalador.                                                                                                                                                                                                                                                                                                                         |
+| EstimatedSize       | Determinado y establecido por el Windows programa de instalación.                                                                                                                                                                                                                                                                                                                         |
 | Lenguaje            | [**ProductLanguage, propiedad**](productlanguage.md)                                                                                                                                                                                                                                                                                                                  |
-| ModifyPath          | Determinado y establecido por el Windows instalador.                                                                                                                                                                                                                                                                                                                         |
+| ModifyPath          | Determinado y establecido por el Windows programa de instalación.                                                                                                                                                                                                                                                                                                                         |
 | Léame              | [**Propiedad ARPREADME**](arpreadme.md) <br/> Léame proporcionado en **el panel de** control Agregar o quitar programas.<br/>                                                                                                                                                                                                                                      |
 | UninstallString     | Determinado y establecido por Windows Instalador.                                                                                                                                                                                                                                                                                                                             |
 | ConfiguraciónIdentifier  | [**Propiedad MSIARPSETTINGSIDENTIFIER**](msiarpsettingsidentifier.md)                                                                                                                                                                                                                                                                                                |

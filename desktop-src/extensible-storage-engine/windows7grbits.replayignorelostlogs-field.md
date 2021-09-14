@@ -1,5 +1,5 @@
 ---
-description: Más información sobre el campo Windows7Grbits.ReplayIgnoreLostLogs
+description: 'Más información sobre: Campo Windows7Grbits.ReplayIgnoreLostLogs'
 title: Campo Windows7Grbits.ReplayIgnoreLostLogs (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: ReplayIgnoreLostLogs field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits.ReplayIgnoreLostLogs
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7677907a0709d77b5fed6d086d824fd670a23426a160d1d4abf752ae82e12e5a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3234836a5582b2ba431788e0ec2b6ea434830f29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119603475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170326"
 ---
 # <a name="windows7grbitsreplayignorelostlogs-field"></a>Campo Windows7Grbits.ReplayIgnoreLostLogs
 

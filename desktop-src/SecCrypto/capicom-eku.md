@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 365721c1378c4c0231b00dcf34ab32490d5006ed3bfd8e6dc585a90b9ac8b916
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1d2f4f435fa31df00b87e20254aad57b690b047
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119879366"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171182"
 ---
-# <a name="capicom_eku-enumeration"></a>Enumeración \_ CAPICOM EKU
+# <a name="capicom_eku-enumeration"></a>CAPICOM \_ EKU (enumeración)
 
 El **tipo de enumeración \_ CAPICOM EKU** define los nombres de uso de clave extendidos en función de dónde se pueden usar.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 
 
@@ -32,15 +32,15 @@ El **tipo de enumeración \_ CAPICOM EKU** define los nombres de uso de clave ex
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
 | **CAPICOM \_ EKU \_ OTHER**                    | El certificado tiene usos definidos en la directiva local. Se usa si el EKU necesario no está predefinido y la aplicación debe establecer el valor de OID.<br/> | 0     |
 | **CAPICOM \_ EKU \_ SERVER \_ AUTH**             | El certificado se puede usar para autenticar un servidor.<br/>                                                                                                | 1     |
-| **AUTENTICACIÓN DE \_ CLIENTE CAPICOM \_ \_ EKU**             | El certificado se puede usar para autenticar un cliente.<br/>                                                                                                | 2     |
+| **CAPICOM \_ EKU \_ CLIENT \_ AUTH**             | El certificado se puede usar para autenticar un cliente.<br/>                                                                                                | 2     |
 | **FIRMA DE CÓDIGO \_ CAPICOM EKU \_ \_**            | El certificado se puede usar para crear una firma digital.<br/>                                                                                           | 3     |
-| **CAPICOM \_ EKU \_ EMAIL \_ PROTECTION**        | El certificado se puede usar para la protección por correo electrónico.<br/>                                                                                                    | 4     |
+| **CAPICOM \_ EKU \_ EMAIL \_ PROTECTION**        | El certificado se puede usar para la protección de correo electrónico.<br/>                                                                                                    | 4     |
 | **INICIO DE SESIÓN \_ DE TARJETA INTELIGENTE CAPICOM EKU \_ \_**         | El certificado se puede usar para el inicio de sesión con tarjeta inteligente. Introducido en CAPICOM 2.0.<br/>                                                                         | 5     |
-| **SISTEMA DE ARCHIVOS \_ DE CIFRADO DE CAPICOM EKU \_ \_ \_** | El certificado se puede usar para EFS. Introducido en CAPICOM 2.0.<br/>                                                                                      | 6     |
+| **CAPICOM \_ EKU \_ ENCRYPTING \_ FILE \_ SYSTEM** | El certificado se puede usar para EFS. Introducido en CAPICOM 2.0.<br/>                                                                                      | 6     |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El EKU usa el tipo de enumeración **\_ CAPICOM EKU.** [**Propiedad**](eku-name.md) Name.
 
@@ -51,7 +51,7 @@ El EKU usa el tipo de enumeración **\_ CAPICOM EKU.** [**Propiedad**](eku-name.
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
+| Encabezado<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

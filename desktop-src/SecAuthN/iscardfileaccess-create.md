@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: cc6609e2b39c8e0e6b2c034d9220d78b3e28194ca1d92a383236411e77802164
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2cfc7e1492505191a7912f23e5471f5fa72fdcd8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119481315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171229"
 ---
 # <a name="iscardfileaccesscreate-method"></a>MÉTODO ISCardFileAccess::Create
 
@@ -51,10 +51,10 @@ Tipo de referencia usado en *bstrPathSpec.*
 
 <dl><span id="SC_TYPE_BY_NAME"></span><span id="sc_type_by_name"></span><dt>
 
-**SC \_ TYPE \_ BY \_ NAME**
+**TIPO DE SC \_ \_ POR \_ NOMBRE**
 </dt><span id="SC_TYPE_BY_ID"></span><span id="sc_type_by_id"></span><dt>
 
-**SC \_ TYPE \_ BY \_ ID**
+**TIPO DE SC \_ \_ POR \_ IDENTIFICADOR**
 </dt><span id="SC_TYPE_BY_SHORT"></span><span id="sc_type_by_short"></span><dt>
 
 **SC \_ TYPE \_ BY \_ SHORT**
@@ -66,14 +66,14 @@ Tipo de referencia usado en *bstrPathSpec.*
 *bstrPathSpec* \[ En\]
 </dt> <dd>
 
-Id. de archivo que se va a crear en el contexto actual.
+Identificador de archivo que se va a crear en el contexto actual.
 
 </dd> <dt>
 
 *TLV* \[ En\]
 </dt> <dd>
 
-Lista de estructuras TLV (etiqueta, longitud, valor) cuyos valores se deben establecer.
+Lista de estructuras TLV (etiqueta, longitud, valor) que deben establecerse valores.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Especifica si se debe usar la mensajería segura y los datos se han preasignado.
 **MENSAJERÍA SEGURA DE SC \_ FL \_ \_**
 </dt><span id="SC_FL_PREALLOCATED"></span><span id="sc_fl_preallocated"></span><dt>
 
-**SC \_ FL \_ PREALLOCATED**
+**SC \_ FL \_ PREASIGNADO**
 </dt> </dl> </dd> <dt>
 
 *pDataBuffer* \[ En\]
@@ -114,7 +114,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una lista de todos los métodos definidos por esta interfaz, vea [**ISCardFileAccess.**](iscardfileaccess.md)
 
@@ -124,9 +124,9 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                       |

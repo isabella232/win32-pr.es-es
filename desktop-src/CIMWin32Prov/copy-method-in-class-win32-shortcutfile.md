@@ -2,7 +2,7 @@
 description: Copia el archivo o directorio de acceso directo lógico especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada.
 ms.assetid: 1c8e9eac-340b-4c37-a52e-6cfade47ccf6
 ms.tgt_platform: multiple
-title: Método Copy de la clase Win32_ShortcutFile copia
+title: Método Copy de la Win32_ShortcutFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e32043747b7493d8f59b2028587d60b5b9593a73ac60bf99a81beea8b5c97ae3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58de9d1b2a88a7fa02504f5eac91e9a55e286304
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080199"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170174"
 ---
 # <a name="copy-method-of-the-win32_shortcutfile-class"></a>Método Copy de la clase ShortcutFile de Win32 \_
 
 El **método de** clase Copy [WMI](/windows/desktop/WmiSdk/retrieving-a-class) copia el archivo o directorio de acceso directo lógico especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada. No se admite una copia si se requiere sobrescribir un archivo lógico existente.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -152,7 +152,7 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -162,7 +162,7 @@ Un parámetro especificado no es válido.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

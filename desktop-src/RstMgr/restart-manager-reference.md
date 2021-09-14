@@ -6,12 +6,12 @@ keywords:
 - Restart Manager Restart Mgr , reference
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 863e7f21894fed6d84dca7fd40baaceba39e3250170a909109464c3e0a02538e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a30a8030ed69d183a3f5d82dfbac10dafdc0b52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119010093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171290"
 ---
 # <a name="restart-manager-reference"></a>Referencia del Administrador de reinicio
 

@@ -4,12 +4,12 @@ ms.assetid: 62bb9d17-c221-4bd2-bd7f-9930e28bb946
 title: Acción UnregisterExtensionInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e8dae707bc4dd517402d8a85fb64402637a815f8249d4677f18818c855ba4e1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 85d069a686c5f0e517a0cc9556634895216dd8cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119810235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171581"
 ---
 # <a name="unregisterextensioninfo-action"></a>Acción UnregisterExtensionInfo
 
@@ -21,7 +21,7 @@ La acción UnregisterExtensionInfo debe ir después de [la acción InstallInitia
 
 [RemoveRegistryValues](removeregistryvalues-action.md) debe ir antes que UnregisterExtensionInfo en la secuencia.
 
-La secuenciación de las acciones del siguiente grupo está restringida. Si algún subconjunto de estas acciones se produce junto en una tabla de secuencia, debe tener el mismo orden de secuencia relativo que se muestra:
+La secuenciación de las acciones del siguiente grupo está restringida. Si algún subconjunto de estas acciones se produce conjuntamente en una tabla de secuencias, deben tener el mismo orden de secuencia relativo que se muestra:
 
 -   [UnregisterClassInfo](unregisterclassinfo-action.md)
 -   UnregisterExtensionInfo
@@ -46,9 +46,9 @@ Por ejemplo, UnregisterExtensionInfo debe ir antes [que UnregisterProgIdInfo en]
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el sistema no admite la instalación a petición de servidores de extensiones, [](extension-table.md) UnregisterExtensionInfo quita todos los servidores de extensiones de la tabla De extensión asociados a una característica desinstalada o a una característica instalada como se anuncia desde el Registro. De lo contrario, esta acción quita los servidores de extensión asociados a una característica que se selecciona para quitarse del Registro.
+Si el sistema no admite la instalación a petición de los servidores de [](extension-table.md) extensiones, UnregisterExtensionInfo quita todos los servidores de extensiones de la tabla de extensiones asociados a una característica desinstalada o a una característica instalada como se anuncia desde el Registro. De lo contrario, esta acción quita los servidores de extensión asociados a una característica que se selecciona para quitarse del Registro.
 
 ## <a name="related-topics"></a>Temas relacionados
 

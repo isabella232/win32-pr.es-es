@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 726b1d6d6a31831e5db192b5a71dea9efa32f624333ee7f6d6d2eea432dacae9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 46dcd9294337c088b9e1b0ab68bddefe4308ed27
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119960275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170961"
 ---
 # <a name="iscrdenrsetcaname-method"></a>Método ISCrdEnr::setCAName
 
@@ -79,9 +79,9 @@ Nombre de ca que se va a usar con la plantilla de certificado especificada *por 
 
 ### <a name="vb"></a>VB
 
-El valor devuelto es **un HRESULT**. Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
+El valor devuelto es **un HRESULT.** Un valor de S \_ OK indica que la llamada se ha realizado correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use este método para especificar una entidad de certificación para una plantilla de certificado.
 
@@ -98,7 +98,7 @@ Use este método para especificar una entidad de certificación para una plantil
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

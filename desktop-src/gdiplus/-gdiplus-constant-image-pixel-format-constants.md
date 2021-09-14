@@ -4,12 +4,12 @@ ms.assetid: 362204c5-5dd7-461a-b90b-15826c025689
 title: Constantes de formato de píxel de imagen (Gdipluspixelformats.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38465f02f2dc79b8bbbfc5b04596327b823c4b97132e1cb80685950634b7fe01
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b62abc8b0ed606b958764e27171f8b45e619d23b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117696443"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170265"
 ---
 # <a name="image-pixel-format-constants"></a>Constantes de formato de píxel de imagen
 
@@ -36,7 +36,7 @@ Las siguientes constantes, definidas en Gdipluspixelformats.h, especifican vario
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **PixelFormat48bppRGB,** **PixelFormat64bppARGB** y **PixelFormat64bppPARGB** usan 16 bits por componente de color (canal). Windows GDI+ versión 1.0 puede leer imágenes de 16 bits por canal, pero dichas imágenes se convierten a un formato de 8 bits por canal para procesar, mostrar y guardar.
 

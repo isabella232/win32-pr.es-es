@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 16562f3b954c9968899b7af63729a105956c7f809d094bdfa6c508a160a6d51d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a27dc275ce900bfd6412599cb81ad14038f96405
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119006653"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171026"
 ---
 # <a name="hasheddataalgorithm-property"></a>Propiedad HashedData.Algorithm
 
@@ -26,7 +26,7 @@ ms.locfileid: "119006653"
 
 La **propiedad Algorithm** establece o recupera el tipo de algoritmo hash utilizado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -68,7 +68,7 @@ Valor de la enumeración [**CAPICOM \_ HASH \_ ALGORITHM**](capicom-hash-algorit
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

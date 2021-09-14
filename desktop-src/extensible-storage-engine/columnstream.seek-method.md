@@ -1,5 +1,5 @@
 ---
-description: Más información sobre el método ColumnStream.Seek
+description: 'Más información sobre: Método ColumnStream.Seek'
 title: Método ColumnStream.Seek
 TOCTitle: 'Seek method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnStream.Seek(System.Int64,System.IO.SeekOrigin)
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 883739bed33c17877dc86c33670233aab1afc67e9348009bb11c4e67ab27011c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d5489bb0ee9a4a1550166e14a945a2a6d58c45af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170350"
 ---
 # <a name="columnstreamseek-method"></a>Método ColumnStream.Seek
 

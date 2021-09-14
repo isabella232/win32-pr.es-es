@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f040b3e44ee34d819752bae5deffbf1a02f0d38ab1249f2e32de67c262bd5f2c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23d133243c1655432842a939b8da0f3a981fdffd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118615211"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171398"
 ---
 # <a name="glpolygonmode-function"></a>Función glPolygonMode
 
@@ -44,7 +44,7 @@ void WINAPI glPolygonMode(
 *Cara* 
 </dt> <dd>
 
-Polígonos a los *que se* aplica el modo. Debe ser GL FRONT para polígonos orientados al frente, GL BACK para polígonos orientados hacia atrás o GL FRONT AND BACK para \_ \_ \_ \_ polígonos orientados hacia delante \_ y hacia atrás.
+Los polígonos a *los que se* aplica el modo. Debe ser GL FRONT para polígonos orientados al frente, GL BACK para polígonos orientados hacia atrás o GL FRONT AND BACK para \_ \_ \_ \_ polígonos orientados hacia delante \_ y hacia atrás.
 
 </dd> <dt>
 
@@ -57,9 +57,9 @@ La forma en que se rasterizarán los polígonos. Se definen los modos siguientes
 
 | Value                                                                                                                                          | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_POINT"></span><span id="gl_point"></span><dl> <dt>**GL \_ POINT**</dt> </dl> | Los vértices de polígono que están marcados como el inicio de un borde de límite se dibujan como puntos. Los atributos de punto como GL \_ POINT SIZE y GL POINT SMOOTH controlan la \_ \_ \_ rasterización de los puntos. Los atributos de rasterización de polígono que no son GL \_ POLYGON MODE no tienen ningún \_ efecto.<br/>                                                                                                                                                    |
-| <span id="GL_LINE"></span><span id="gl_line"></span><dl> <dt>**GL \_ LINE**</dt> </dl>    | Los bordes de límite del polígono se dibujan como segmentos de línea. Se tratan como segmentos de línea conectados para el contrabando de líneas; El contador y el patrón de stipple de línea no se restablecen entre segmentos (vea [**glLineStipple).**](gllinestipple.md) Los atributos de línea como GL \_ LINE WIDTH y GL LINE SMOOTH controlan la \_ \_ \_ rasterización de las líneas. Los atributos de rasterización de polígono que no son GL \_ POLYGON MODE no tienen ningún \_ efecto.<br/> |
-| <span id="GL_FILL"></span><span id="gl_fill"></span><dl> <dt>**GL \_ FILL**</dt> </dl>    | El interior del polígono se rellena. Los atributos de polígono como GL \_ POLYGON \_ STIPPLE y GL \_ POLYGON SMOOTH controlan la \_ rasterización del polígono.<br/>                                                                                                                                                                                                                                                                       |
+| <span id="GL_POINT"></span><span id="gl_point"></span><dl> <dt>**GL \_ POINT**</dt> </dl> | Los vértices de polígono que se marcan como el inicio de un borde de límite se dibujan como puntos. Los atributos de punto como GL POINT SIZE y \_ GL POINT SMOOTH controlan la \_ \_ \_ rasterización de los puntos. Los atributos de rasterización de polígono que no son GL \_ POLYGON MODE no tienen ningún \_ efecto.<br/>                                                                                                                                                    |
+| <span id="GL_LINE"></span><span id="gl_line"></span><dl> <dt>**LÍNEA \_ GL**</dt> </dl>    | Los bordes de límite del polígono se dibujan como segmentos de línea. Se tratan como segmentos de línea conectados para el contrabando de líneas; El contador y el patrón de latippla de línea no se restablecen entre [**segmentos (vea glLineStipple).**](gllinestipple.md) Los atributos de línea como GL \_ LINE WIDTH y GL LINE SMOOTH controlan la \_ \_ \_ rasterización de las líneas. Los atributos de rasterización de polígono que no son GL \_ POLYGON MODE no tienen ningún \_ efecto.<br/> |
+| <span id="GL_FILL"></span><span id="gl_fill"></span><dl> <dt>**GL \_ FILL**</dt> </dl>    | Se rellena el interior del polígono. Los atributos de polígono como GL \_ POLYGON \_ STIPPLE y GL \_ POLYGON SMOOTH controlan la \_ rasterización del polígono.<br/>                                                                                                                                                                                                                                                                       |
 
 
 
@@ -86,13 +86,13 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 ## <a name="remarks"></a>Observaciones
 
-La **función glPolygonMode** controla la interpretación de polígonos para la rasterización. El *parámetro face* describe a qué modo de polígonos se aplica: polígonos orientados al frente (GL FRONT), polígonos orientados hacia atrás (GL BACK) o ambos  \_ \_ (GL FRONT Y \_ \_ \_ BACK). El modo de polígono solo afecta a la rasterización final de los polígonos. En concreto, los vértices de un polígono están encendidos y el polígono se recorta y posiblemente se recorta antes de aplicar estos modos.
+La **función glPolygonMode** controla la interpretación de polígonos para la rasterización. El *parámetro face* describe a qué modo de polígonos se aplica: polígonos frontales (GL FRONT), polígonos orientados hacia atrás (GL BACK) o ambos  \_ \_ (GL FRONT Y \_ \_ \_ BACK). El modo de polígono solo afecta a la rasterización final de los polígonos. En concreto, los vértices de un polígono se encienden y el polígono se recorta y posiblemente se recorta antes de aplicar estos modos.
 
-Para dibujar una superficie con polígonos orientados hacia atrás rellenos y polígonos frontales descritos, llame a
+Para dibujar una superficie con polígonos de orientación hacia atrás rellenos y polígonos frontales descritos, llame a
 
 **glPolygonMode**(GL \_ FRONT, GL \_ LINE);
 
-Los vértices se marcan como límite o no delimitadores con una marca perimetral. OpenGL genera internamente marcas perimetrales cuando descompone polígonos y se pueden establecer explícitamente mediante [**glEdgeFlag**](gledgeflag-functions.md).
+Los vértices se marcan como límite o no delimitadores con una marca de borde. OpenGL genera internamente marcas perimetrales cuando descompone polígonos y se pueden establecer explícitamente mediante [**glEdgeFlag.**](gledgeflag-functions.md)
 
 La función siguiente recupera información relacionada con **glPolygonMode**:
 
@@ -112,7 +112,7 @@ La función siguiente recupera información relacionada con **glPolygonMode**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

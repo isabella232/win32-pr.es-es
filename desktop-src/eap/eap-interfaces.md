@@ -4,12 +4,12 @@ description: Implemente la siguiente interfaz COM al implementar un protocolo de
 ms.assetid: 1f720c0c-d490-48af-830f-9a25cbc24014
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de038ba39b6d48a594ecc94aeef4cc7a5b06b698fc530ca32846d0f1da30ae1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 207a6056aa6aca0f090abccf5d356fc630cbd22c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170390"
 ---
 # <a name="eap-interfaces"></a>EAP Interfaces
 

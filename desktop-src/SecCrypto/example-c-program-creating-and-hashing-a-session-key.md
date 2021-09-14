@@ -1,31 +1,31 @@
 ---
 description: Crea y aplica un algoritmo hash a una clave de sesión que se puede usar para cifrar un mensaje, texto o archivo.
 ms.assetid: 15d4a05d-5888-4532-91fd-6cd94afe0b99
-title: 'Programa de C de ejemplo: Crear y hashar una clave de sesión'
+title: 'Programa C de ejemplo: creación y hash de una clave de sesión'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3264e8b7d78506f2aed663d14a4bd8278059152ce085f460ddbbc8e75325d91
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dbfb1dae0f331a80a2b2c473f0446cf2a1623dda
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007862"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171138"
 ---
-# <a name="example-c-program-creating-and-hashing-a-session-key"></a>Programa de C de ejemplo: Crear y hashar una clave de sesión
+# <a name="example-c-program-creating-and-hashing-a-session-key"></a>Programa C de ejemplo: creación y hash de una clave de sesión
 
-En el ejemplo siguiente se crea [*y aplica un algoritmo hash*](../secgloss/h-gly.md) a una clave de [*sesión*](../secgloss/s-gly.md) que se puede usar para cifrar un mensaje, texto o archivo.
+En el ejemplo siguiente se crea [*y se aplica un algoritmo hash*](../secgloss/h-gly.md) a una clave de [*sesión*](../secgloss/s-gly.md) que se puede usar para cifrar un mensaje, texto o archivo.
 
 En este ejemplo también se muestra el uso de las siguientes funciones cryptoAPI:
 
--   [**CryptAcquireContext para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) adquirir un [*proveedor de servicios criptográficos*](../secgloss/c-gly.md).
+-   [**CryptAcquireContext para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) adquirir un [*proveedor de servicios criptográficos.*](../secgloss/c-gly.md)
 -   [**CryptCreateHash para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) crear un objeto hash vacío.
 -   [**CryptGenKey para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey) crear una clave de [*sesión aleatoria.*](../secgloss/s-gly.md)
--   [**CryptHashSessionKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashsessionkey) para convertir en hash la clave de sesión creada.
+-   [**CryptHashSessionKey para**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashsessionkey) convertir en hash la clave de sesión creada.
 -   [**CryptDestroyHash para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroyhash) destruir el hash.
 -   [**CryptDestroyKey para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey) destruir la clave creada.
 -   [**CryptReleaseContext para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext) liberar el CSP.
 
-En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

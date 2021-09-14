@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 1b92b81fa00834c3a4038a6a6bb9f295246a7c0b217c99779a5d2c569dbbf982
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9dbfb086ccc27ad2f4c35018c3384a4b81ef0528
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118366816"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171465"
 ---
 # <a name="getcapturecommentfromfilename-function"></a>Función GetCaptureCommentFromFilename
 
@@ -81,7 +81,7 @@ Si la función no se realiza correctamente, el valor devuelto es un código de e
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a la **función GetCaptureCommentFromFilename.**
 
@@ -91,7 +91,7 @@ Para recuperar el comentario de una captura en tiempo real, llame a la [función
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

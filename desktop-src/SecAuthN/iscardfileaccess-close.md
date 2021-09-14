@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: a68f779425bfe6af56a44a8b4210f5e809abddccbaab83abfb15ab2a5b147e18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac08d62e71045df49503eb4c05fcb5ea273b4cf6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118923454"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171233"
 ---
 # <a name="iscardfileaccessclose-method"></a>MÉTODO ISCardFileAccess::Close
 
@@ -63,7 +63,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para abrir un archivo, llame a [**Abrir**](iscardfileaccess-open.md).
 
@@ -75,7 +75,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
@@ -91,7 +91,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 [**ISCardFileAccess**](iscardfileaccess.md)
 </dt> <dt>
 
-[**Abierto**](iscardfileaccess-open.md)
+[**Abrir**](iscardfileaccess-open.md)
 </dt> </dl>
 
  

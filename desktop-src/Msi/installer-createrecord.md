@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: da9c6132b79706cca2135ffcea1bff09040e15a90af5b8b3b1b7175a41229dc7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8095e35a7e424a50448f1f0d948b9224bcdaa423
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118631916"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171694"
 ---
 # <a name="installercreaterecord-method"></a>Método Installer.CreateRecord
 
@@ -42,7 +42,7 @@ Installer.CreateRecord(
 *count* 
 </dt> <dd>
 
-Número necesario de campos, que pueden ser 0. El número máximo de campos de un registro está limitado a 65535.
+Número necesario de campos, que pueden ser 0. El número máximo de campos de un registro se limita a 65535.
 
 </dd> </dl>
 

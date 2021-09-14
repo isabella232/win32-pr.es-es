@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 812b76bdcad166b9f766957032f232293d4083c0
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371528"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171529"
 ---
-# <a name="wm_cap_set_scroll-message"></a>Mensaje \_ WM CAP SET \_ \_ SCROLL
+# <a name="wm_cap_set_scroll-message"></a>Mensaje DE DESPLAZAMIENTO de WM \_ CAP \_ SET \_
 
 El **mensaje WM CAP SET \_ \_ \_ SCROLL** define la parte del fotograma de vídeo que se mostrará en la ventana de captura. Este mensaje establece la esquina superior izquierda del área cliente de la ventana de captura en las coordenadas de un píxel especificado dentro del marco de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capSetScrollPos.**](/windows/desktop/api/Vfw/nf-vfw-capsetscrollpos)
 
@@ -47,7 +47,7 @@ Dirección que contiene la posición de desplazamiento deseada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -65,7 +65,7 @@ La posición de desplazamiento afecta a la imagen en los modos de vista previa y
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

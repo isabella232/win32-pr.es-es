@@ -1,36 +1,36 @@
 ---
-description: 'El ejemplo siguiente funciona junto con el programa en El programa de ejemplo C: Enviar y recibir un mensaje firmado y cifrado. Lee el mensaje firmado y cifrado y, a continuación, descifra y comprueba el mensaje.'
+description: 'El ejemplo siguiente funciona junto con el programa en El programa de ejemplo C: Envío y recepción de un mensaje firmado y cifrado. Lee el mensaje firmado y cifrado y, a continuación, descifra y comprueba el mensaje.'
 ms.assetid: 65ca30ba-a184-46ef-808c-e2fedcc86079
 title: 'Programa C de ejemplo: recepción de un mensaje firmado y cifrado'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b9e468eeb2204534bff13e756c72a0a6c7ca583b5493338864b52fef6f44590
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a1d97b50eb401568ebf1732f347f800eed0c26f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171074"
 ---
 # <a name="example-c-program-receiving-a-signed-and-encrypted-message"></a>Programa C de ejemplo: recepción de un mensaje firmado y cifrado
 
 El ejemplo siguiente funciona junto con el programa en El programa [de ejemplo C: Enviar y recibir un mensaje firmado y cifrado](example-c-program-sending-and-receiving-a-signed-and-encrypted-message.md). Lee el mensaje firmado y cifrado y, a continuación, descifra y comprueba el mensaje.
 
-Para descifrar y comprobar [](../secgloss/p-gly.md) el mensaje, debe estar disponible la clave privada del receptor previsto del mensaje. El certificado del firmante se incluye en el [*mensaje BLOB*](../secgloss/b-gly.md) leído del archivo.
+Para descifrar y comprobar el mensaje, la [*clave privada*](../secgloss/p-gly.md) del receptor previsto del mensaje debe estar disponible. El certificado del firmante se incluye en el blob del [*mensaje*](../secgloss/b-gly.md) leído desde el archivo.
 
 En este ejemplo se muestran las tareas siguientes:
 
 -   Abrir y cerrar almacenes de certificados del sistema.
--   Lectura de [**un BLOB DE NOMBRE DE \_ \_ CERTIFICADO**](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) de un archivo.
--   Inicializar estructuras de datos necesarias para descifrar y comprobar un mensaje.
--   Llamar a una función CryptoAPI para buscar el tamaño necesario de un búfer, asignar el búfer del tamaño necesario y llamar de nuevo a la función CryptoAPI para rellenar el búfer. Para obtener más información, vea [Recuperar datos de longitud desconocida.](retrieving-data-of-unknown-length.md)
+-   Lectura de [**un BLOB DE NOMBRE DE \_ \_ CERTIFICADO**](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) desde un archivo.
+-   Inicializar las estructuras de datos necesarias para descifrar y comprobar un mensaje.
+-   Llamar a una función CryptoAPI para encontrar el tamaño necesario de un búfer, asignar el búfer del tamaño necesario y llamar de nuevo a la función CryptoAPI para rellenar el búfer. Para obtener más información, [vea Recuperar datos de longitud desconocida.](retrieving-data-of-unknown-length.md)
 
-En este ejemplo se usan las siguientes funciones CryptoAPI:
+En este ejemplo se usan las siguientes funciones de CryptoAPI:
 
 -   [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore)
 -   [**CryptDecryptAndVerifyMessageSignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptandverifymessagesignature)
 -   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-En este ejemplo [**se usa MyHandleError**](myhandleerror.md) para salir del programa correctamente en caso de error. El código **MyHandleError se** incluye con el ejemplo y también se puede encontrar junto con otras funciones auxiliares en [De uso general Functions](general-purpose-functions.md).
+En este ejemplo [**se usa MyHandleError**](myhandleerror.md) para salir correctamente del programa en caso de error. El código **MyHandleError se** incluye con el ejemplo y también se puede encontrar junto con otras funciones auxiliares en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

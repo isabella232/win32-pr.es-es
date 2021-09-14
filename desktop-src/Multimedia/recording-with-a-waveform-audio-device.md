@@ -1,19 +1,19 @@
 ---
-title: Grabación con un Waveform-Audio dispositivo
-description: Grabación con un Waveform-Audio dispositivo
+title: Grabación con un dispositivo Waveform-Audio
+description: Grabación con un dispositivo Waveform-Audio
 ms.assetid: b29a07d1-1b92-4d66-9f2d-ccfbf4074876
 keywords:
 - Función mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: eb7ab9df07cbe9748fb082239bac20f511010ab3
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371749"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171549"
 ---
-# <a name="recording-with-a-waveform-audio-device"></a>Grabación con un Waveform-Audio dispositivo
+# <a name="recording-with-a-waveform-audio-device"></a>Grabación con un dispositivo Waveform-Audio
 
 En el ejemplo siguiente se abre un dispositivo de audio de forma de onda con un nuevo archivo, se registra durante el tiempo especificado, se reproduce la grabación y se pide al usuario que guarde la grabación si lo desea. Usa la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 

@@ -7,16 +7,16 @@ keywords:
 - Sistema de ventanas X
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf74315bd63b83a52a1c4c53be65ccb57def5f00f2ed2d2a86af44d3ca9a0e05
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8b5b5ac28d0b92c4d27d1b3bab617e2961fe468
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117980268"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171337"
 ---
 # <a name="x-y-z"></a>X Y Z
 
-[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) H [I](h.md) [](i.md) [J K](jk.md) [L](l.md) M [N](m.md) [](n.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) U [V](u-v.md) [W](w.md) X Y Z
+[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) G [H](g.md) [I](h.md) [](i.md) [J K](jk.md) L [M](l.md) [N](m.md) [O](n.md) [](o.md) [P P](p.md) [](q.md) [Q R](r.md) [S](s.md) [T](t.md) U [V](u-v.md) [W](w.md) X Y Z
 
 <dl> <dt>
 

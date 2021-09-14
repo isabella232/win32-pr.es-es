@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3e9ee84732aeaed5d8854008fc8dff7edf703a48d7427f289e5aeb4f525126be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9dd50d38aa320f433dbb9972cb8bf6e615a2125
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119976675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170362"
 ---
 # <a name="columnstreamcanwrite-property"></a>Propiedad ColumnStream.CanWrite
 
@@ -39,7 +39,7 @@ Obtiene un valor que indica si la secuencia admite operaciones de escritura.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -66,6 +66,6 @@ Tipo: [System.Boolean](/dotnet/api/system.boolean)
 
 [ColumnStream (clase)](./columnstream-class.md)
 
-[Miembros ColumnStream](./columnstream-members.md)
+[Miembros columnStream](./columnstream-members.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

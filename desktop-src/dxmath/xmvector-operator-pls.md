@@ -12,11 +12,11 @@ api_type:
 - NA
 api_location: ''
 ms.openlocfilehash: db275db4900d7e909033aab6dc0dd26964b0a7b5
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466802"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170426"
 ---
 # <a name="operator--operators"></a>operador + operadores
 
@@ -27,15 +27,15 @@ Operadores de suma.
 
 
 
-| Operador | Descripción | 
+| Operator | Descripción | 
 |----------|-------------|
-| <a href="/previous-versions/windows/desktop/legacy/ee421395(v=vs.85)"><strong>XMVECTOR::operator + (XMVECTOR)</strong></a> | Rendimiento de una operación de identidad en una <code>XMVECTOR</code> instancia.<br /> toma una instancia del tipo de datos XMVECTOR y devuelve una nueva instancia de , con un operador <code>operator +</code> de identidad aplicado a cada <a href="xmvector-data-type.md"><strong></strong></a> <code>XMVECTOR</code> componente.<br /><blockquote>[!Note]<br />Este operador solo está disponible en C++.</blockquote><br /> | 
-| <a href="/previous-versions/windows/desktop/legacy/ee421396(v=vs.85)"><strong>XMVECTOR::operator + (XMVECTOR,XMVECTOR)</strong></a> | Agrega dos instancias de <code>XMVECTOR</code> , devolviendo el resultado en una nueva instancia de .<br /> agrega cada componente de dos instancias del tipo de datos <code>operator +</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a>y, a continuación, devuelve el resultado en una nueva <code>XMVECTOR</code> instancia. <br /><blockquote>[!Note]<br />Este operador solo está disponible en C++.</blockquote><br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/ee421395(v=vs.85)"><strong>XMVECTOR::operator + (XMVECTOR)</strong></a> | Rendimiento de una operación de identidad en una <code>XMVECTOR</code> instancia de .<br /> toma una instancia del tipo de datos XMVECTOR y devuelve una nueva instancia de , con un operador <code>operator +</code> de identidad aplicado a cada <a href="xmvector-data-type.md"><strong></strong></a> <code>XMVECTOR</code> componente.<br /><blockquote>[!Note]<br />Este operador solo está disponible en C++.</blockquote><br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/ee421396(v=vs.85)"><strong>XMVECTOR::operator + (XMVECTOR,XMVECTOR)</strong></a> | Agrega dos instancias de <code>XMVECTOR</code> , devolviendo el resultado en una nueva instancia.<br /> agrega cada componente de dos instancias del tipo de datos <code>operator +</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a>y, a continuación, devuelve el resultado en una nueva <code>XMVECTOR</code> instancia. <br /><blockquote>[!Note]<br />Este operador solo está disponible en C++.</blockquote><br /> | 
 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

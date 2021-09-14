@@ -4,12 +4,12 @@ description: Propiedad AutoPopupMenu
 ms.assetid: 499092cb-0990-4edb-915c-12e3011de142
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29659fac026323ec5b2db4794443ff680df9d378c43ecfec415e78c9d4ce7e5b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 25d4ebfc559c88c3750a338f30b5dee4aad66ec3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120114845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170233"
 ---
 # <a name="autopopupmenu-property"></a>Propiedad AutoPopupMenu
 
@@ -27,7 +27,7 @@ Devuelve o establece si al hacer clic con el botón derecho en el carácter o en
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agent.***Characters*"("**_CharacterID_*_"). AutoPopupMenu_ *  \[  =  *booleano*\]
+*agent.***Characters*("CharacterID***_"). AutoPopupMenu_ *  \[  =  *booleano*\]
 
 
 
@@ -41,7 +41,7 @@ Devuelve o establece si al hacer clic con el botón derecho en el carácter o en
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al establecer esta propiedad en **False**, puede crear su propio comportamiento de control de menús. Para mostrar el menú después de establecer esta propiedad en **False,** use el [**método ShowPopupMenu.**](showpopupmenu-method.md)
 

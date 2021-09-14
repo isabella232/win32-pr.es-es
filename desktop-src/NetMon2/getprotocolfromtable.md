@@ -1,7 +1,7 @@
 ---
-description: La función GetProtocolFromTable devuelve un identificador a un protocolo&\# 8212; basándose en una tabla de entrega y un valor determinados.
+description: La función GetProtocolFromTable devuelve un identificador a un protocolo&8212; basado en una tabla y un valor de entrega \# determinados.
 ms.assetid: 34b07079-0b20-40d8-a529-4179ecc68ebf
-title: Función GetProtocolFromTable (Netmon. h)
+title: Función GetProtocolFromTable (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Nmapi.dll
 ms.openlocfilehash: 498892fc2cc5ada2e177b8fb3f70f40a1ef10dfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000923"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171442"
 ---
-# <a name="getprotocolfromtable-function"></a>GetProtocolFromTable función)
+# <a name="getprotocolfromtable-function"></a>Función GetProtocolFromTable
 
-La función **GetProtocolFromTable** devuelve un identificador a un protocolo basado en una tabla de entrega y un valor determinados.
+La **función GetProtocolFromTable** devuelve un identificador a un protocolo basado en una tabla y un valor de entrega determinados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,40 +41,40 @@ HPROTOCOL WINAPI GetProtocolFromTable(
 
 <dl> <dt>
 
-*hTable* \[ de\]
+*hTable* \[ En\]
 </dt> <dd>
 
 Identificador de una tabla de entrega.
 
 </dd> <dt>
 
-*ItemToFind* \[ de\]
+*ItemToFind* \[ En\]
 </dt> <dd>
 
-Valor usado para buscar el protocolo en una tabla de entrega. El valor debe estar disponible en los datos del protocolo.
+Valor utilizado para buscar el protocolo en una tabla de entrega. El valor debe estar disponible en los datos del protocolo.
 
 </dd> <dt>
 
-*lpInstData* \[ enuncia\]
+*lpInstData* \[ out\]
 </dt> <dd>
 
-Si está disponible en la tabla de entrega, datos de instancia para el protocolo siguiente. Los datos de instancia no pueden tener más de una \_ longitud de DWORD PTR.
+Si está disponible en la tabla de entrega, los datos de instancia para el protocolo siguiente. Los datos de instancia no pueden tener una longitud superior a \_ DWORD PTR.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es un identificador de protocolo.
+Si la función es correcta, el valor devuelto es un identificador de protocolo.
 
-Si la función no se realiza correctamente, el valor devuelto es **null**.
+Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
 ## <a name="remarks"></a>Observaciones
 
-Al implementar la función de exportación [RecognizeFrame](recognizeframe.md) , se usa la función **GetProtocolFromTable** para obtener un identificador del protocolo siguiente. Se llama a la función **GetProtocolFromTable** para recuperar un identificador del protocolo siguiente si el protocolo identifica el protocolo que sigue.
+Al implementar la [función de exportación RecognizeFrame,](recognizeframe.md) la función **GetProtocolFromTable** se usa para obtener un identificador para el protocolo siguiente. Se **llama a la función GetProtocolFromTable** para recuperar un identificador del protocolo siguiente si el protocolo identifica qué protocolo sigue.
 
 **Datos de instancia**
 
-Los datos de instancia pueden ser cualquier dato que sea menor o igual que \_ la longitud de un valor DWORD PTR, o un puntero a los datos, como los datos de fotogramas sin formato, que no es necesario que el analizador asigne o libere.
+Los datos de instancia pueden ser datos menores o iguales que un PTR DWORD de longitud, o un puntero a datos, como datos de fotogramas sin procesar, que el analizador no necesita asignar o \_ liberar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,13 +84,13 @@ Los datos de instancia pueden ser cualquier dato que sea menor o igual que \_ la
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

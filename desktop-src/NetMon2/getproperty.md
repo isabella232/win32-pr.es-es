@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 07bd5a88017ee16f3bdb1773973283d9ad0f7bc6a942fa4441fb134b5f1930da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 297d68d68731181ed56324a4e1d174467f622e13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118365978"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171450"
 ---
 # <a name="getproperty-function"></a>Función GetProperty
 
@@ -60,7 +60,7 @@ Si la función se realiza correctamente, el valor devuelto es el identificador d
 
 Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función GetProperty** se puede usar para obtener el identificador de propiedad necesario para buscar instancias de la propiedad . Las funciones que se usan para buscar instancias de propiedad son [FindPropertyInstance](findpropertyinstance.md) (que busca la primera instancia) y [FindPropertyInstanceRestart](findpropertyinstancerestart.md) (que busca la instancia siguiente).
 
@@ -70,7 +70,7 @@ La **función GetProperty** se puede usar para obtener el identificador de propi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

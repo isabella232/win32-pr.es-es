@@ -7,11 +7,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f42bd7ce6d9d107fe24affc895ba802e73ee8fe0
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171293"
 ---
 # <a name="the-type_usermarshal-function"></a>El tipo \_ UserMarshal (Función)
 

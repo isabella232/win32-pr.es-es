@@ -4,12 +4,12 @@ ms.assetid: bafaa59f-fd1b-e252-cbbd-903df796fde0
 title: Tipo de datos XMVECTORF32 (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c1a39de246e3e0e4ab9a96197dbe4a286cb6ecabe327d60e5c506795af79dd11
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8e56e79ea678ede0afcac3523c09da725ede00d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119739785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170422"
 ---
 # <a name="xmvectorf32-data-type"></a>Tipo de datos XMVECTORF32
 
@@ -22,7 +22,7 @@ typedef XMVECTORF32 vectorf32;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una lista de funcionalidades adicionales, como constructores y operadores, disponibles al programar en `XMVECTORF32` C++, vea [Extensiones XMVECTORF32](ovw-xmvectorf32-extensions.md).
 

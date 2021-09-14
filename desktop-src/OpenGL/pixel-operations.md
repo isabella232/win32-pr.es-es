@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62d64647ef68d9171c3dd52559dd87c963a40fe73d89c35c833bd3a8f1ad79d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45d36fc22ace4ee18303ce0eb16c5a10f901510f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119553875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171342"
 ---
 # <a name="pixel-operations"></a>Operaciones de píxeles
 
-<dl> <dt><span id="GL_SCISSOR_TEST"></span><span id="gl_scissor_test"></span>PRUEBA \_ DE RESALTE \_ DE GL</dt> <dd> 
+<dl> <dt><span id="GL_SCISSOR_TEST"></span><span id="gl_scissor_test"></span>PRUEBA \_ DE RESERCIÓN \_ DE GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|------------------------------------|
 | Descripción:     | Habilitación de la asociación                 |
 | Grupo de atributos: | y habilitar                     |
@@ -88,7 +88,7 @@ ms.locfileid: "119553875"
 
 </dd> <dt><span id="GL_STENCIL_REF"></span><span id="gl_stencil_ref"></span>GL \_ STENCIL \_ REF</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Valor de referencia de galería de símbolos                                                          |
 | Grupo de atributos: | stencil-buffer                                                                   |
@@ -138,9 +138,9 @@ ms.locfileid: "119553875"
 
  
 
-</dd> <dt><span id="GL_ALPHA_TEST"></span><span id="gl_alpha_test"></span>PRUEBA \_ ALFA DE \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_ALPHA_TEST"></span><span id="gl_alpha_test"></span>GL \_ ALPHA \_ TEST</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|------------------------------------|
 | Descripción:     | Prueba alfa habilitada                 |
 | Grupo de atributos: | color-buffer/enable                |
@@ -153,7 +153,7 @@ ms.locfileid: "119553875"
 
 </dd> <dt><span id="GL_ALPHA_TEST_FUNC"></span><span id="gl_alpha_test_func"></span>GL \_ ALPHA \_ TEST \_ FUNC</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Función de prueba alfa                                                              |
 | Grupo de atributos: | búfer de color                                                                     |
@@ -195,7 +195,7 @@ ms.locfileid: "119553875"
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Función de prueba de búfer de profundidad                                                       |
-| Grupo de atributos: | búfer de profundidad                                                                     |
+| Grupo de atributos: | depth-buffer                                                                     |
 | Valor inicial:   | GL \_ LESS                                                                         |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
@@ -207,7 +207,7 @@ ms.locfileid: "119553875"
 
 | Propiedad | Value |
 |------------------|------------------------------------|
-| Descripción:     | Mezcla habilitada                   |
+| Descripción:     | Blending enabled                   |
 | Grupo de atributos: | color-buffer/enable                |
 | Valor inicial:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
@@ -220,7 +220,7 @@ ms.locfileid: "119553875"
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Combinación de la función de origen                                                         |
+| Descripción:     | Función de origen de combinación                                                         |
 | Grupo de atributos: | búfer de color                                                                     |
 | Valor inicial:   | GL \_ ONE                                                                          |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -257,7 +257,7 @@ ms.locfileid: "119553875"
 
 </dd> <dt><span id="GL_LOGIC_OP"></span><span id="gl_logic_op"></span>GL \_ LOGIC \_ OP</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|------------------------------------|
 | Descripción:     | Operación lógica habilitada          |
 | Grupo de atributos: | color-buffer/enable                |
@@ -270,7 +270,7 @@ ms.locfileid: "119553875"
 
 </dd> <dt><span id="GL_LOGIC_OP_MODE"></span><span id="gl_logic_op_mode"></span>GL \_ LOGIC \_ OP \_ MODE</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Función de operación lógica                                                       |
 | Grupo de atributos: | búfer de color                                                                     |

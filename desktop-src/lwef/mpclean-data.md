@@ -4,7 +4,7 @@ description: Datos de notificación pasados a la función de devolución de llam
 ms.assetid: 475A6525-5BD8-4B29-A684-53EE2758C790
 keywords:
 - MPCLEAN_DATA estructura heredada de Windows environment
-- PMPCLEAN_DATA puntero de estructura Legacy Windows Environment Features
+- PMPCLEAN_DATA puntero de estructura heredados Windows environment features
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ece20324fc06fb68a813b374a698b2e27264068c9051bb2a5fff328c7ad328d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89f0c7e867918b6567279be7c41ce72e7e396576
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118476343"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170226"
 ---
 # <a name="mpclean_data-structure"></a>Estructura DE \_ DATOS MPCLEAN
 
@@ -40,7 +40,7 @@ typedef struct tagMPCLEAN_DATA {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Tipo: **PMPRESOURCE \_ INFO**
 
 </dd> <dd>
 
-Información de recursos para los **eventos MPNOTIFY \_ CLEAN THREAT \_ \_ START** / **MPNOTIFY \_ CLEAN THREAT \_ \_ SUCCEEDED** / **MPNOTIFY \_ CLEAN THREAT \_ \_ FAILED.** Consulte [**MPRESOURCE \_ INFO**](mpresource-info.md).
+Información de recursos para los eventos **MPNOTIFY \_ CLEAN \_ THREAT \_ START** / **MPNOTIFY \_ CLEAN THREAT \_ \_ SUCCEEDED** / **MPNOTIFY \_ CLEAN THREAT \_ \_ FAILED.** Vea [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> </dl>
 
@@ -92,15 +92,15 @@ Información de recursos para los **eventos MPNOTIFY \_ CLEAN THREAT \_ \_ START
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: El método de clase WMI DisableIPSec se usa para deshabilitar la seguridad del protocolo de Internet (IPsec) en este adaptador de red habilitado para TCP/IP.
+description: El método de clase WMI DisableIPSec se usa para deshabilitar la seguridad de protocolo de Internet (IPsec) en este adaptador de red habilitado para TCP/IP.
 ms.assetid: 6fff2721-1ee2-42b4-bbf9-fd36b97318e3
 ms.tgt_platform: multiple
 title: Método DisableIPSec de la Win32_NetworkAdapterConfiguration clase
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 61fc210f02891755c04d170a4b329b1aa9e27c343bf2e2b6e973016ee84c530b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b2a17bbfa0f10c08edb581b4a4bf51173facfea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020503"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170165"
 ---
 # <a name="disableipsec-method-of-the-win32_networkadapterconfiguration-class"></a>Método DisableIPSec de la clase NetworkAdapterConfiguration de Win32 \_
 
-El método de clase WMI **DisableIPSec** [](/windows/desktop/WmiSdk/retrieving-a-class) se usa para deshabilitar la seguridad del protocolo de Internet (IPsec) en este adaptador de red habilitado para TCP/IP.
+El método de clase WMI **DisableIPSec** [](/windows/desktop/WmiSdk/retrieving-a-class) se usa para deshabilitar la seguridad de protocolo de Internet (IPsec) en este adaptador de red habilitado para TCP/IP.
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no se requiere reinicio.
+Finalización correcta, no es necesario reiniciar.
 
 </dd> <dt>
 
@@ -64,12 +64,12 @@ Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
-**Método no admitido en esta plataforma**
+**Método no compatible con esta plataforma**
 </dt> <dd>
 
 64
 
-Método no admitido en esta plataforma.
+Método no compatible con esta plataforma.
 
 </dd> <dt>
 
@@ -231,7 +231,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión dhcp.
+No se puede renovar la concesión DHCP.
 
 </dd> <dt>
 
@@ -249,7 +249,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-Ip no habilitada en el adaptador.
+IP no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -262,7 +262,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco/red**
+**Error de límites de número de marco o red**
 </dt> <dd>
 
 86
@@ -271,7 +271,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de fotograma no válido**
+**Tipo de marco no válido**
 </dt> <dd>
 
 87
@@ -303,7 +303,7 @@ Número de red duplicado.
 
 90
 
-Parámetro fuera de límites.
+Parámetro fuera de los límites.
 
 </dd> <dt>
 
@@ -312,11 +312,11 @@ Parámetro fuera de límites.
 
 91
 
-Acceso denegado:
+Acceso denegado.
 
 </dd> <dt>
 
-**No hay memoria suficiente**
+**Memoria sin memoria**
 </dt> <dd>
 
 92
@@ -442,7 +442,7 @@ Next
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

@@ -1,5 +1,5 @@
 ---
-description: Más información sobre el método ColumnStream.Read
+description: 'Más información sobre: Método ColumnStream.Read'
 title: Método ColumnStream.Read
 TOCTitle: 'Read method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnStream.Read(System.Byte[],System.Int32,System.Int32)
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 34c2bd13a2cc436ea192433e4f70098e328d1658a484c5dca9b092fe18f99a50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e407a9069807d10eaabf4f7ac3fce3919576bc7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119976635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170357"
 ---
 # <a name="columnstreamread-method"></a>Método ColumnStream.Read
 
@@ -82,7 +82,7 @@ public override int Read(
 
 <!-- end list -->
 
-  - recuento  
+  - count  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de bytes que se va a leer.
@@ -98,6 +98,6 @@ Número de bytes leídos en el búfer.
 
 [ColumnStream (clase)](./columnstream-class.md)
 
-[Miembros ColumnStream](./columnstream-members.md)
+[Miembros columnStream](./columnstream-members.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

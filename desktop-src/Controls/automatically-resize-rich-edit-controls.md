@@ -4,12 +4,12 @@ description: Una aplicación puede cambiar el tamaño de un control de edición 
 ms.assetid: CCAFC039-AC9E-4BC4-ABE1-8C56FA9DD3F5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ef3fa798da0a7747464d42535c638f437154124dd76b0324add35b5ba01931a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4ee9ead05c4c04526a9290dc115f7a2fa7741397
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119921725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170153"
 ---
 # <a name="how-to-automatically-resize-rich-edit-controls"></a>Cómo cambiar automáticamente el tamaño de los controles Rich Edit
 
@@ -21,12 +21,12 @@ Una aplicación puede cambiar el tamaño de un control de edición enriquecido s
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Instrucciones
 
 ### <a name="automatically-resize-a-rich-edit-control"></a>Cambiar automáticamente el tamaño de un control Rich Edit
 
@@ -34,7 +34,7 @@ Al procesar el código de notificación [EN \_ REQUESTRESIZE,](en-requestresize.
 
 Puede forzar un control de edición enriquecido sin fondo para enviar un código de notificación [EN \_ REQUESTRESIZE](en-requestresize.md) mediante el mensaje [**EM \_ REQUESTRESIZE.**](em-requestresize.md) Este mensaje puede ser útil al procesar el [**mensaje WM \_ SIZE.**](/windows/desktop/winmsg/wm-size)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para recibir [los códigos de notificación EN \_ REQUESTRESIZE,](en-requestresize.md) debe habilitar la notificación mediante el mensaje [EM \_ SETEVENTMASK.](em-seteventmask.md)
 

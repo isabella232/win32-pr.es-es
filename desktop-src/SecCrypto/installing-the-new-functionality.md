@@ -4,12 +4,12 @@ ms.assetid: f6e5fc6a-a186-4648-af63-0555307f53d8
 title: Instalación de la nueva funcionalidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3c71167f8226ad78f449b3f529e2e22bdb060bc0c5d984671cf4c5a30cc6f66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7147a1a70ffe57f4948d7db94aab0184d29e5dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119005303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170990"
 ---
 # <a name="installing-the-new-functionality"></a>Instalación de la nueva funcionalidad
 

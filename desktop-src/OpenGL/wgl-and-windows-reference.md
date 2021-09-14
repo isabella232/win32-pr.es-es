@@ -1,19 +1,19 @@
 ---
-title: Referencia de WGL y Windows
-description: Referencia de WGL y Windows
+title: WGL y Windows referencia
+description: WGL y Windows referencia
 ms.assetid: 76775ae9-0467-487f-afbd-a995d2c157d9
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e1cc45e4fafa8657954758be6e2f49fc5c812954
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171338"
 ---
-# <a name="wgl-and-windows-reference"></a>Referencia de WGL y Windows
+# <a name="wgl-and-windows-reference"></a>WGL y Windows referencia
 
-A continuación se indican las funciones:
+Estas son las funciones:
 
 -   [**ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat)
 -   [**DescribePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-describepixelformat)
@@ -38,16 +38,16 @@ A continuación se indican las funciones:
 -   [**wglUseFontBitmaps**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontbitmapsa)
 -   [**wglUseFontOutlines**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontoutlinesa)
 
-A continuación se indican las estructuras:
+Estas son las estructuras:
 
 -   [**GLYPHMETRICSFLOAT**](/windows/desktop/api/wingdi/ns-wingdi-glyphmetricsfloat)
 -   [**LAYERPLANEDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-layerplanedescriptor)
 -   [**PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor)
 -   [**POINTFLOAT**](/windows/desktop/api/wingdi/ns-wingdi-pointfloat)
 
- 
+ 
 
- 
+ 
 
 
 

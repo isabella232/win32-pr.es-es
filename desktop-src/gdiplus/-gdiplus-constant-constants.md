@@ -4,12 +4,12 @@ description: 'Windows GDI+ define constantes en las siguientes categorías: Cons
 ms.assetid: 70f067f1-3257-444e-88ab-dce5ed6d3e4b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac83677bcd07b49e9fbfeaf3ef50e81fa536f1cedcc2d3f0546fb9308022e8d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd224b6e1b8190ad187d5c7ebd6c46c9fad9e847
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117696487"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170274"
 ---
 # <a name="constants-gdi"></a>Constantes (GDI+)
 

@@ -4,12 +4,12 @@ ms.assetid: f34f8f39-f03c-4adf-afa8-9cb9ed48d149
 title: Buscar ensamblados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1d5ffe20d7453581bd76e8d2e737fde6cab5f470d22b516c6fc28a7182e9382
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f257b7da8099508fb268623a175d8ebd8e9d8337
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119141928"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171273"
 ---
 # <a name="searching-for-assemblies"></a>Buscar ensamblados
 

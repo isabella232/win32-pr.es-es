@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1647d8ff4c7a4625151a9ec099800549d831f6b55a7ef6cc6b5ead365e80e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 025f33dc8ba236965a98ca984446b04846ecd2ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120063314"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170109"
 ---
 # <a name="cb_setlocale-message"></a>Mensaje \_ SETLOCALE de CB
 
@@ -32,7 +32,7 @@ Una aplicación envía un **mensaje \_ CB SETLOCALE** para establecer la configu
 *wParam* 
 </dt> <dd>
 
-Especifica el identificador de configuración regional del cuadro combinado que se usará para ordenar al agregar texto.
+Especifica el identificador de configuración regional del cuadro combinado que se usará para la ordenación al agregar texto.
 
 </dd> <dt>
 
@@ -47,7 +47,7 @@ Este parámetro no se utiliza.
 
 El valor devuelto es el identificador de configuración regional anterior. Si *wParam especifica* una configuración regional no instalada en el sistema, el valor devuelto es CB ERR y la configuración regional del cuadro combinado actual \_ no cambia.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use la [**macro MAKELCID para**](/windows/desktop/api/winnt/nf-winnt-makelcid) construir un identificador de configuración regional y la macro [**MAKELANGID**](/windows/desktop/api/winnt/nf-winnt-makelangid) para construir un identificador de idioma. El identificador de idioma se forma de un identificador de idioma principal y un identificador de sublenguaje.
 
@@ -59,7 +59,7 @@ Use la [**macro MAKELCID para**](/windows/desktop/api/winnt/nf-winnt-makelcid) c
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

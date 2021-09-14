@@ -4,12 +4,12 @@ ms.assetid: a7f2fdd1-9514-4cda-bae2-2f379dd9a27d
 title: 'Programa de C de ejemplo: Exportación de una clave de sesión'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d10e3f8ea93d11460522383584d5847473a17497ad13ccfae72b0415e958bf52
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5252e5eced86dd4e671f5080cf6dab5e1ec96b9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119140918"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171101"
 ---
 # <a name="example-c-program-exporting-a-session-key"></a>Programa de C de ejemplo: Exportación de una clave de sesión
 
@@ -24,7 +24,7 @@ En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 -   Destruir una clave de sesión y acceder a los dos pares de claves públicas y privadas mediante [**CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey).
 -   Liberar el contexto de CSP mediante [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext).
 
-En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

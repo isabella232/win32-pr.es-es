@@ -4,12 +4,12 @@ ms.assetid: 8ec6b392-06bc-4717-8657-7ea9a43d03fb
 title: HCRYPTPROV (Wincrypt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70641dcaf0381a5c6489f2b4e462d9334108a8f251f03e1b9c3db9fd26e9f960
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c14c74770b0cca86adaaa72ad38bff3397fa15b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119006203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171013"
 ---
 # <a name="hcryptprov"></a>HCRYPTPROV
 
@@ -28,9 +28,9 @@ typedef ULONG_PTR HCRYPTPROV;
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Wincrypt.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wincrypt.h</dt> </dl> |
 
 
 

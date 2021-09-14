@@ -1,7 +1,7 @@
 ---
 description: Operador de asignación de división.
 ms.assetid: 59dee8a1-48c5-4748-8eca-1d0939e90fe0
-title: operadores /=
+title: operador /= operadores
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,13 +12,13 @@ api_type:
 - NA
 api_location: ''
 ms.openlocfilehash: 5626b28db7145c3ceaeeba9f013d7ed8a614f7b5
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622511"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170433"
 ---
-# <a name="operator--operators"></a>operadores /=
+# <a name="operator--operators"></a>operador /= operadores
 
 Operador de asignación de división.
 
@@ -33,7 +33,7 @@ Operador de asignación de división.
 </colgroup>
 <thead>
 <tr class="header">
-<th >Operador</th>
+<th >Operator</th>
 <th >Descripción</th>
 </tr>
 </thead>

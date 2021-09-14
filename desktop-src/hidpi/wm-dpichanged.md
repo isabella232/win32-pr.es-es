@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d77a7d7608e9facc1e0fc6973b19a3d9db36900fa8d550896cc3058389f367bc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aafbce1e784e1f205f0d32e045785125c1fb5aaa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119666385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170249"
 ---
 # <a name="wm_dpichanged-message"></a>Mensaje \_ DE PPPCHANGED de WM
 
@@ -59,9 +59,9 @@ Puntero a una [**estructura RECT**](/windows/desktop/api/windef/ns-windef-rect) 
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este mensaje solo es relevante para los subprocesos **PROCESS PER MONITOR DPI AWARE \_ \_ \_ \_ o** **DPI AWARENESS PER MONITOR \_ \_ \_ \_ AWARE.** Se puede recibir en determinados cambios de PPP si el proceso o ventana de nivel superior se ejecuta como **PPP** no consciente o compatible con **PPP** del sistema, pero en esas situaciones se puede omitir de forma segura. Para obtener más información sobre los distintos tipos de reconocimiento, vea PROCESAR RECONOCIMIENTO [**\_ de PPP \_ y**](/windows/desktop/api/ShellScalingApi/ne-shellscalingapi-process_dpi_awareness) [**RECONOCIMIENTO DE \_ PPP.**](/windows/desktop/api/windef/ne-windef-dpi_awareness) Las versiones anteriores de Windows que el reconocimiento de PPP se vinculase en el nivel de una aplicación. Esas aplicaciones usan **PROCESS \_ DPI \_ AWARENESS**. Actualmente, el reconocimiento de PPP está vinculado a subprocesos y ventanas individuales en lugar de a toda la aplicación. Estas aplicaciones usan **RECONOCIMIENTO DE \_ PPP.**
+Este mensaje solo es relevante para los subprocesos **PROCESS PER MONITOR DPI AWARE \_ \_ \_ \_ o** **DPI AWARENESS PER MONITOR \_ \_ \_ \_ AWARE.** Se puede recibir en determinados cambios de PPP si el proceso o ventana de nivel superior se ejecuta como **PPP** no consciente o compatible con **PPP** del sistema, pero en esas situaciones se puede omitir de forma segura. Para obtener más información sobre los distintos tipos de reconocimiento, vea PROCESAR RECONOCIMIENTO [**\_ de PPP \_ y**](/windows/desktop/api/ShellScalingApi/ne-shellscalingapi-process_dpi_awareness) [**RECONOCIMIENTO DE \_ PPP.**](/windows/desktop/api/windef/ne-windef-dpi_awareness) Las versiones anteriores Windows reconocimiento de PPP se vinculan en el nivel de una aplicación. Esas aplicaciones usan **PROCESS \_ DPI \_ AWARENESS**. Actualmente, el reconocimiento de PPP está vinculado a subprocesos y ventanas individuales en lugar de a toda la aplicación. Estas aplicaciones usan **RECONOCIMIENTO DE \_ PPP.**
 
 Solo tiene que usar el eje X o el valor del eje Y al escalar la aplicación, ya que son los mismos.
 
@@ -73,7 +73,7 @@ El valor base de PPP se define como PPP DE PANTALLA PREDETERMINADO DEL USUARIO, 
 
 | Valor de PPP | Porcentaje de escalado |
 |-----------|--------------------|
-| 96        | 100 %               |
+| 96        | 100%               |
 | 120       | 125%               |
 | 144       | 150%               |
 | 192       | 200%               |
@@ -130,11 +130,11 @@ Una manera alternativa de escalar un valor es convertir el valor de PPP en un fa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                              |
-| Header<br/>                   | <dl> <dt>WinUser.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinUser.h</dt> </dl> |
 
 
 

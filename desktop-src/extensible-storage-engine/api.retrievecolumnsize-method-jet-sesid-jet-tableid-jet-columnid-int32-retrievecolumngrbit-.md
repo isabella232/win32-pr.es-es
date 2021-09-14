@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 53265560bab9d348d9631b8163aeb651b63026ed3797de7d32a91d7c462c4b8f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: afd09ecca0362487d6c8e78f8e7c8d943f2f3269
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117717994"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170373"
 ---
 # <a name="apiretrievecolumnsize-method-jet_sesid-jet_tableid-jet_columnid-int32-retrievecolumngrbit"></a>Método Api.RetrieveColumnSize (JET_SESID, JET_TABLEID, JET_COLUMNID, Int32, RetrieveColumnGrbit)
 
@@ -94,7 +94,7 @@ public static Nullable<int> RetrieveColumnSize(
   - itagSequence  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Número de secuencia del valor de una columna con varios valores. La matriz de valores se basa en uno. El primer valor es la secuencia 1, no 0. Si la columna de registro solo tiene un valor, se debe pasar 1 como itagSequence.
+    Número de secuencia del valor de una columna de varios valores. La matriz de valores se basa en uno. El primer valor es la secuencia 1, no 0. Si la columna de registro solo tiene un valor, se debe pasar 1 como itagSequence.
 
 <!-- end list -->
 
@@ -106,16 +106,16 @@ public static Nullable<int> RetrieveColumnSize(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Nullable](/dotnet/api/system.nullable-1)\<[Int32](/dotnet/api/system.int32)\>  
-Tamaño de la columna. 0 si la columna es null.  
+Tamaño de la columna. 0 si la columna es NULL.  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 
-[Sobrecarga de RetrieveColumnSize](./api.retrievecolumnsize-method.md)
+[Sobrecarga retrieveColumnSize](./api.retrievecolumnsize-method.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

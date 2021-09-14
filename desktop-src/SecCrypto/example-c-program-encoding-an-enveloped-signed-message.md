@@ -4,12 +4,12 @@ ms.assetid: 1d9d8a7a-0088-41a7-98fe-4f0e9cb21f31
 title: 'Programa C de ejemplo: codificación de un mensaje con sobres con firma'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da56213c11d0cd6d7241ff60c1f77252f1e21682feff9f5913e0a43fdaf3034b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c5ae8008794dc7f8fa32f39543cf2ddc61827bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171118"
 ---
 # <a name="example-c-program-encoding-an-enveloped-signed-message"></a>Programa C de ejemplo: codificación de un mensaje con sobres con firma
 
@@ -21,7 +21,7 @@ En el ejemplo siguiente se crea, firma y sobres un mensaje y se ilustran las sig
 -   Inicializar las estructuras de datos adecuadas para firmar un mensaje con sobres.
 -   Buscar la longitud del mensaje con sobre mediante [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength).
 -   Crear y firma el mensaje mediante [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)y [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
--   Envolver el mensaje firmado y codificado para un receptor mediante [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)y [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
+-   Enveloping the signed and encoded message for a receiver using [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)y [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
 
 Este ejemplo producirá un error si no existe una clave privada utilizable en el contenedor [*de claves predeterminado*](../secgloss/k-gly.md). Si la clave privada necesaria no está disponible, se puede usar el código que usa [**CryptAcquireCertificatePrivateKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecertificateprivatekey), como se muestra en el ejemplo de código Programa [C:](example-c-program-sending-and-receiving-a-signed-and-encrypted-message.md)Enviar y recibir un mensaje firmado y cifrado.
 

@@ -3,7 +3,7 @@ title: WM_GETDPISCALEDSIZE mensaje (Winuser.h)
 description: Este mensaje indica al sistema operativo que la ventana tendrá un tamaño distinto del predeterminado.
 ms.assetid: 038CAA21-0944-45D3-8C40-A6498F36D9E4
 keywords:
-- WM_GETDPISCALEDSIZE con valores altos de PPP
+- WM_GETDPISCALEDSIZE mensaje Valores altos de PPP
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3386a0f38187e375f9dae0e390a413a1e64565f15d39e1e9f1e436c9238bea99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b95631e51247d7919307f36dd0af10c72621a612
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118759296"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170246"
 ---
 # <a name="wm_getdpiscaledsize-message"></a>Mensaje \_ GETDPISCALEDSIZE de WM
 
 Este mensaje indica al sistema operativo que la ventana tendrá un tamaño distinto del predeterminado.
 
-Este mensaje se envía a ventanas de nivel superior con un CONTEXTO DE RECONOCIMIENTO DE [PPP \_ \_](dpi-awareness-context.md) de Por monitor v2 antes de enviar un mensaje [**WM \_ PPPCHANGED**](wm-dpichanged.md) y permite que la ventana calcule el tamaño deseado para el cambio de PPP pendiente. Como el ajuste de escala de PPP lineal es el comportamiento predeterminado, esto solo es útil en escenarios en los que la ventana quiere escalar de forma no lineal. Si la aplicación responde a este mensaje, el tamaño resultante será el rectángulo candidato que se enviará a **WM \_ PPPCHANGED.**
+Este mensaje se envía a ventanas de nivel superior con un CONTEXTO DE RECONOCIMIENTO DE [PPP \_ \_](dpi-awareness-context.md) de Por monitor v2 antes de enviar un mensaje [**WM \_ PPPCHANGED**](wm-dpichanged.md) y permite que la ventana calcule el tamaño deseado para el cambio de PPP pendiente. Como el ajuste de escala de PPP lineal es el comportamiento predeterminado, esto solo es útil en escenarios en los que la ventana quiere escalar de forma no lineal. Si la aplicación responde a este mensaje, el tamaño resultante será el rectángulo candidato enviado a **WM \_ PPPCHANGED.**
 
 Use este mensaje para modificar el tamaño del rect que se proporciona con [**WM \_ PPPCHANGED**](wm-dpichanged.md).
 
@@ -60,23 +60,23 @@ La aplicación debe escribir el valor Out del LPARAM para especificar el tamaño
 
 La función devuelve un valor BOOL. Devolver TRUE indica que se ha calculado un nuevo tamaño. Devolver FALSE indica que el mensaje no se controlará y el escalado de PPP lineal predeterminado se aplicará a la ventana.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este mensaje solo se envía a ventanas de nivel superior que tienen un contexto de reconocimiento de PPP por monitor v2.
+Este mensaje solo se envía a las ventanas de nivel superior que tienen un contexto de reconocimiento de PPP de Per Monitor v2.
 
-Este evento es necesario para facilitar el escalado no lineal estable y garantiza que la posición de las ventanas permanece constante en relación con el cursor y al moverse de un lado a otro entre monitores.
+Este evento es necesario para facilitar el escalado no lineal correcto y garantiza que la posición de las ventanas permanece constante en relación con el cursor y al moverse entre monitores.
 
-No hay ningún control predeterminado específico de este mensaje en [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca). Al igual que para todos los mensajes que no controla explícitamente, [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca) devolverá cero para este mensaje. Como se indicó anteriormente, esta devolución indica al sistema que use el comportamiento lineal predeterminado.
+No hay ningún control predeterminado específico de este mensaje en [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca). En cuanto a todos los mensajes que no controla explícitamente, [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca) devolverá cero para este mensaje. Como se indicó anteriormente, esta devolución indica al sistema que use el comportamiento lineal predeterminado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                 |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

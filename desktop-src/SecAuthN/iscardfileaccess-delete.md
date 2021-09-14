@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 721830ea3d446585e7f52c699642b1534c78d34826722b5737e191dfce94c817
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6331225cd3baf105682e2d275ad6be53f16f5b64
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171226"
 ---
 # <a name="iscardfileaccessdelete-method"></a>Método ISCardFileAccess::D elete
 
@@ -75,7 +75,7 @@ Especifica si se debe usar la mensajería segura y los datos se han preasignado.
 
 <dl><span id="SC_FL_SECURE_MESSAGING"></span><span id="sc_fl_secure_messaging"></span><dt>
 
-**SC \_ FL \_ SECURE \_ MESSAGING**
+**MENSAJERÍA SEGURA DE SC \_ FL \_ \_**
 </dt><span id="SC_FL_PREALLOCATED"></span><span id="sc_fl_preallocated"></span><dt>
 
 **SC \_ FL \_ PREASIGNADO**
@@ -97,7 +97,7 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una lista de todos los métodos definidos por esta interfaz, vea [**ISCardFileAccess.**](iscardfileaccess.md)
 
@@ -116,7 +116,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

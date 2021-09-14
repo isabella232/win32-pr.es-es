@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 24dd78e8e96da6fc0e910a6ba7323c500cb775e747273e3f6d418599c51adc92
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e7bba587b56300cd02efd81758288d3b77c65a66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119425865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170978"
 ---
 # <a name="iscrdenrenumcspname-method"></a>Método ISCrdEnr::enumCSPName
 
-El **método enumCSPName** enumera el nombre de los proveedores de servicios [*criptográficos*](../secgloss/c-gly.md) (CSP) disponibles.
+El **método enumCSPName** enumera el nombre de los proveedores de [*servicios criptográficos*](../secgloss/c-gly.md) (CSP) disponibles.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -81,7 +81,7 @@ Puntero a una cadena que devuelve el nombre del CSP enumerado.
 
 Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
@@ -100,7 +100,7 @@ Cadena que representa el nombre del CSP enumerado.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 127618e483a300024201798f7c8728d9ab8c0c0807e6dcac07ba580798a1ea4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e6b9525e302cad1eb940184eb5eb83e11744bba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118132826"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171409"
 ---
 # <a name="glpointsize-function"></a>función glPointSize
 
@@ -64,7 +64,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glPointSize** especifica el contorno rasterizado de los puntos con alias y suavizado de contorno. El uso de un tamaño de punto distinto de 1.0 tiene efectos diferentes, dependiendo de si está habilitado el suavizado de contorno de punto. El suavizado de contorno de punto se controla mediante una llamada [**a glEnable**](glenable.md) y **glDisable** con el argumento GL \_ POINT \_ SMOOTH.
 
@@ -80,7 +80,7 @@ y los centros del fragmento rasterizado son las coordenadas de ventana de medio 
 
 Si el suavizado de contorno está habilitado, la rasterización de punto genera un fragmento para cada cuadrado de píxeles que forma una intersección con la región situada dentro del círculo que tiene un ancho igual al tamaño del punto actual y centrado en los puntos *(x*<sub>w</sub> ,*y*<sub>w</sub> ). El valor de cobertura de cada fragmento es el área de coordenadas de ventana de la intersección de la región circular con el cuadrado de píxeles correspondiente. Este valor se guarda y se usa en el paso de rasterización final. Los datos asociados a cada fragmento son los datos asociados al punto que se va a rasterizar.
 
-No todos los tamaños se admiten cuando el suavizado de contorno de punto está habilitado. Si se solicita un tamaño no admitido, se usa el tamaño admitido más cercano. Solo se garantiza que se admite el tamaño 1.0; otros dependen de la implementación. El intervalo de tamaños admitidos y la diferencia de tamaño entre los tamaños admitidos dentro del intervalo se pueden consultar mediante una llamada [**a glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con los argumentos GL POINT SIZE RANGE y \_ GL POINT SIZE \_ \_ \_ \_ \_ GRANULARITY.
+No todos los tamaños se admiten cuando el suavizado de contorno de punto está habilitado. Si se solicita un tamaño no compatible, se usa el tamaño admitido más cercano. Solo se garantiza que se admite el tamaño 1.0; otros dependen de la implementación. El intervalo de tamaños admitidos y la diferencia de tamaño entre los tamaños admitidos dentro del intervalo se pueden consultar mediante una llamada [**a glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con los argumentos GL POINT SIZE RANGE y \_ GL POINT SIZE \_ \_ \_ \_ \_ GRANULARITY.
 
 El tamaño de punto especificado por **glPointSize** siempre se devuelve cuando se consulta GL \_ POINT \_ SIZE. La fijación y el redondeo de los puntos con alias y suavizado de contorno no tienen ningún efecto en el valor especificado.
 
@@ -110,7 +110,7 @@ Las siguientes funciones recuperan información relacionada con **glPointSize**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

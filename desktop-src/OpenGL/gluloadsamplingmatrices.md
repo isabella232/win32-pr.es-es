@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e41b2f6b25e0cecf0d13d87760a941d5ea68baa1fdd85495c8a316e862c77aec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 293b8bace0dff7d89bfcffa2af33738e0e59de7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119777535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171378"
 ---
 # <a name="gluloadsamplingmatrices-function"></a>Función gluLoadSamplingMatrices
 
@@ -75,9 +75,9 @@ Una ventanilla (como desde una [**llamada a glGetIntegerv).**](glgetbooleanv--gl
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función gluLoadSamplingMatrices** usa *modelMatrix*, *projMatrix* y *viewport* para volver a compilar las matrices de muestreo y de selección almacenadas *en nobj*. La matriz de muestreo determina la forma en que se debe teselar una curva o una superficie DE ASBS para satisfacer la tolerancia de muestreo (según lo determinado por la propiedad GLU \_ SAMPLING \_ TOLERANCE). La matriz de selección se usa para decidir si se debe realizar la selección de una curva o una superficie DE LABS antes de la representación (cuando se ha activado la propiedad GLU \_ CULLING).
+La **función gluLoadSamplingMatrices** usa *modelMatrix*, *projMatrix* y *viewport* para volver a compilar las matrices de muestreo y de selección almacenadas *en nobj*. La matriz de muestreo determina la forma en que se debe teselar una curva o una superficie DE LABS para satisfacer la tolerancia de muestreo (según lo determinado por la propiedad GLU \_ SAMPLING \_ TOLERANCE). La matriz de selección se usa para decidir si se debe realizar la selección de una curva o una superficie DE LABS antes de la representación (cuando se ha activado la propiedad GLU \_ CULLING).
 
 La **función gluLoadSamplingMatrices** solo es necesaria si la propiedad GLU AUTO LOAD MATRIX está desactivada \_ \_ \_ (vea [**gluNurbsProperty**](glunurbsproperty.md)). Aunque puede ser conveniente dejar activada la propiedad GLU AUTO LOAD MATRIX, para ello es necesario realizar un recorrido de ida y vuelta al servidor OpenGL para obtener los valores actuales de la matriz modelview, la matriz de proyección y la \_ \_ \_ ventanilla).
 
@@ -85,7 +85,7 @@ La **función gluLoadSamplingMatrices** solo es necesaria si la propiedad GLU AU
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -95,7 +95,7 @@ La **función gluLoadSamplingMatrices** solo es necesaria si la propiedad GLU AU
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

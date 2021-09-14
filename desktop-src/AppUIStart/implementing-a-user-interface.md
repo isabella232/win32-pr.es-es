@@ -4,12 +4,12 @@ description: En esta sección se describen algunas de las tareas asociadas a la 
 ms.assetid: 889791a7-d12c-4ec6-9b04-8fed14ecdb2c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7967474781e180ab29a42fce6884cc391515eef0211107852659eace3490e712
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0941458e046a85dc6e27a684d8aa3a7ea609e889
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119702345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170198"
 ---
 # <a name="implementing-a-user-interface"></a>Implementación de un Interfaz de usuario
 
@@ -41,11 +41,11 @@ Al implementar la interfaz de usuario para una aplicación, tenga en cuenta lo s
 
 -   Estructura de comandos
 
-    Determine si se debe implementar una estructura de comandos tradicional basada en menús y barras de herramientas, o una estructura de comandos alternativa basada en el marco Windows cinta de opciones. Para obtener más información, vea [Menús,](../menurc/menus.md) [barras de herramientas](../controls/toolbar-control-reference.md)y Windows marco de la cinta de [opciones](../windowsribbon/-uiplat-windowsribbon-entry.md).
+    Determine si se debe implementar una estructura de comandos tradicional basada en menús y barras de herramientas, o una estructura de comandos alternativa basada en el marco de Windows cinta de opciones. Para obtener más información, vea [Menús,](../menurc/menus.md) [barras de herramientas](../controls/toolbar-control-reference.md)y Windows marco de la cinta de [opciones](../windowsribbon/-uiplat-windowsribbon-entry.md).
 
 -   Windows y cuadros de diálogo
 
-    En función del diseño de la interfaz de usuario y del trabajo de creación de prototipos, implemente las ventanas de aplicación, incluidas la ventana principal, las ventanas secundarias, los cuadros de diálogo y los cuadros de mensaje. Siga las directrices de UX para determinar qué estilos y controles usar en las ventanas y los cuadros de diálogo. Para obtener más información, [vea Windows](../winmsg/windows.md), Cuadros [de diálogo](../dlgbox/dialog-boxes.md)y Windows [controles](../controls/window-controls.md).
+    En función del diseño de la interfaz de usuario y del trabajo de creación de prototipos, implemente las ventanas de aplicación, incluidas la ventana principal, las ventanas secundarias, los cuadros de diálogo y los cuadros de mensaje. Siga las directrices de UX para determinar qué estilos y controles usar en las ventanas y los cuadros de diálogo. Para obtener más información, [vea Windows](../winmsg/windows.md), Cuadros [de diálogo](../dlgbox/dialog-boxes.md)y [Windows controles](../controls/window-controls.md).
 
 -   Controles personalizados
 
@@ -53,15 +53,15 @@ Al implementar la interfaz de usuario para una aplicación, tenga en cuenta lo s
 
 -   Compatibilidad con dispositivos de entrada de usuario estándar
 
-    La mayoría Windows aplicaciones necesitan admitir la entrada del usuario a través del teclado y el mouse. La capacidad de navegar y acceder a toda la funcionalidad de la aplicación solo a través del teclado es especialmente importante para los usuarios con discapacidades visuales o con problemas de movilidad. Para obtener más información, vea [Entrada de usuario](../inputdev/user-input.md) y el libro electrónico Software de ingeniería para [accesibilidad](https://www.microsoft.com/download/details.aspx?id=19262).
+    La mayoría Windows aplicaciones necesitan admitir la entrada del usuario mediante el teclado y el mouse. La capacidad de navegar y acceder a toda la funcionalidad de la aplicación solo a través del teclado es especialmente importante para los usuarios con discapacidades visuales o con problemas de movilidad. Para obtener más información, vea [Entrada del usuario](../inputdev/user-input.md) y el libro electrónico Software de ingeniería para [accesibilidad](https://www.microsoft.com/download/details.aspx?id=19262).
 
 -   Estilos visuales, animaciones y efectos visuales
 
-    Windows incluye varias tecnologías que puede usar para agregar interés visual y diferenciar la interfaz de usuario de la de otras aplicaciones. Entre ellas se incluyen la especificación de los estilos visuales de los controles, la adición de animaciones a los elementos de la interfaz de usuario y la implementación de diversos efectos visuales en la interfaz de usuario. Para obtener más información, [vea Visual Styles](../controls/themes-overview.md), Windows Animation [Manager](../uianimation/-main-portal.md)y [Administrador de ventanas de escritorio](../dwm/dwm-overview.md).
+    Windows incluye varias tecnologías que puede usar para agregar interés visual y establecer la interfaz de usuario aparte de la de otras aplicaciones. Entre ellas se incluyen la especificación de los estilos visuales de los controles, la adición de animaciones a los elementos de la interfaz de usuario y la implementación de diversos efectos visuales en la interfaz de usuario. Para obtener más información, [vea Visual Styles](../controls/themes-overview.md), Windows Animation [Manager](../uianimation/-main-portal.md)y [Administrador de ventanas de escritorio](../dwm/dwm-overview.md).
 
 ## <a name="simplify"></a>Simplificación de 
 
-Una experiencia de usuario correcta depende del enfoque, la perspectiva y las suposiciones del desarrollador durante el proceso de diseño. Lograr una comprensión básica de cómo la audiencia de destino puede usar una aplicación requiere la capacidad de pensar ampliamente, más allá de las restricciones de lo que se adapta a las necesidades del desarrollador. Invertir este tiempo, esfuerzo e investigación al principio de un proyecto pagará dividendos al final.
+Una experiencia de usuario correcta depende del enfoque, la perspectiva y las suposiciones del desarrollador durante el proceso de diseño. Lograr una comprensión básica de cómo la audiencia de destino puede usar una aplicación requiere la capacidad de pensar en términos generales, más allá de las restricciones de lo que se adapta a las necesidades del desarrollador. Invertir este tiempo, esfuerzo e investigación al principio de un proyecto pagará dividendos al final.
 
 ### <a name="reduce-reuse-declutter"></a>Reducir, reutilizar, Declutter
 
@@ -75,7 +75,7 @@ La interfaz de usuario implica que el usuario tiene que interactuar con la aplic
 
 En muchos casos, no es posible quitar completamente la interacción de la interfaz de usuario de la experiencia del usuario. Sin embargo, mientras menos interacción del usuario requiera una aplicación, mejor.
 
-Identifique las actividades más comunes y esenciales que realizarán los usuarios con la aplicación y haga que esas funciones sea la más destacada en la interfaz de usuario. Relegue otras funciones y actividades a un estado menor, ya sea visual, jerárquicamente o a través de la configuración opcional de la aplicación y las preferencias del usuario.
+Identificar las actividades más comunes y esenciales que realizarán los usuarios con la aplicación y convertir esas funciones en las más destacadas en la interfaz de usuario. Relegue otras funciones y actividades a un estado menor, ya sea visual, jerárquicamente o a través de la configuración opcional de la aplicación y las preferencias del usuario.
 
 -   Reemplazar en lugar de agregar
 
@@ -93,7 +93,7 @@ Identifique las actividades más comunes y esenciales que realizarán los usuari
 
 -   Simple puede ser eficaz
 
-    Una interfaz de usuario simple no implica una falta de funcionalidad. Normalmente, el resultado de una interfaz de usuario más sencilla es una curva de aprendizaje acortada, una mayor eficacia y una productividad mejorada. Esto permite a un usuario aumentar su competencia con la aplicación.
+    Una interfaz de usuario sencilla no implica una falta de funcionalidad. Normalmente, el resultado de una interfaz de usuario más sencilla es una curva de aprendizaje acortada, una mayor eficacia y una productividad mejorada. Esto permite a un usuario aumentar su competencia con la aplicación.
 
 ### <a name="consistent-ui-is-good-ui"></a>La interfaz de usuario coherente es una buena interfaz de usuario
 

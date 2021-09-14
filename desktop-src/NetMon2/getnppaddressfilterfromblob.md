@@ -1,7 +1,7 @@
 ---
-description: La función GetNPPAddressFilterFromBlob rellena el filtro de direcciones determinado con información almacenada en el BLOB.
+description: La función GetNPPAddressFilterFromBlob rellena el filtro de direcciones dado con la información almacenada en el BLOB.
 ms.assetid: b34e0e52-1b2a-4d61-b60c-f1b19ff8ff38
-title: Función GetNPPAddressFilterFromBlob (Netmon. h)
+title: Función GetNPPAddressFilterFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Npptools.dll
 ms.openlocfilehash: 944821620123d63f654e286a77018232c79981e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171461"
 ---
-# <a name="getnppaddressfilterfromblob-function"></a>GetNPPAddressFilterFromBlob función)
+# <a name="getnppaddressfilterfromblob-function"></a>Función GetNPPAddressFilterFromBlob
 
-La función **GetNPPAddressFilterFromBlob** rellena el filtro de direcciones determinado con información almacenada en el BLOB.
+La **función GetNPPAddressFilterFromBlob** rellena el filtro de direcciones dado con la información almacenada en el BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ DWORD GetNPPAddressFilterFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador de un BLOB.
@@ -55,22 +55,22 @@ Puntero a la tabla de direcciones asignadas por el usuario.
 
 </dd> <dt>
 
-*hErrorBlob* \[ enuncia\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error que especifica dónde se produjo el error (si existe) en el BLOB original.
+Controlar un BLOB de error que especifica dónde se produjo el error (si lo hubiera) en el BLOB original.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que describe el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que describe el error.
 
 ## <a name="remarks"></a>Observaciones
 
-La información de la dirección se almacena en la sección de **configuración** de la categoría de **propietario** BLOB NPP.
+La información de dirección se almacena en la **sección Config (Configuración)** de la categoría Blob NPP **Owner (Propietario** de NPP blob).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,13 +80,13 @@ La información de la dirección se almacena en la sección de **configuración*
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

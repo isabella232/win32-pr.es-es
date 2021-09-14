@@ -7,11 +7,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e852f18380ef3df01b3428badc7c7c75b70e0b03
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885667"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171294"
 ---
 # <a name="the-type_userfree-function"></a>El tipo \_ UserFree (Función)
 
@@ -25,7 +25,7 @@ void __RPC_USER  <type>_UserFree(
 
 El tipo en el nombre de función significa el tipo userm especificado en la definición &lt; &gt; **\[ de \_ \]** **\[ \_ \]** tipo de serialización de conexión o de cálculo de referencias de usuario.
 
-El *parámetro pFlags* es un puntero a **un campo de marca larga** sin signo. La palabra superior de la marca contiene marcas de representación de datos de BYTE tal y como se define en OSF DCE para las representaciones de punto flotante, orden de bytes y caracteres. La palabra inferior contiene una marca de contexto de serialización tal como se define en el canal COM. El diseño exacto de las marcas dentro del campo se describe en [El tipo \_ Función UserSize](the-type-usersize-function.md).
+El *parámetro pFlags* es un puntero a **un campo de marca larga** sin signo. La palabra superior de la marca contiene marcas de representación de datos de BYTE tal y como se define en OSF DCE para las representaciones de punto flotante, orden de bytes y caracteres. La palabra inferior contiene una marca de contexto de cálculo de referencias tal como se define en el canal COM. El diseño exacto de las marcas dentro del campo se describe en [El tipo \_ Función UserSize](the-type-usersize-function.md).
 
 El *parámetro pMyObj* es un puntero a un objeto de tipo de usuario. El motor FORMAT libera el objeto de nivel superior. Usted es responsable de liberar los objetos a los que pueda apuntar el objeto de nivel superior.
 

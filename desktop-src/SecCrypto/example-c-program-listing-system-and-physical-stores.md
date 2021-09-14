@@ -4,16 +4,16 @@ ms.assetid: bc4268ea-f657-4789-9d0a-6e5354508f86
 title: 'Programa C de ejemplo: enumeración de almacenes físicos y del sistema'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f98242d6ae5fd1c7af8732646786a8370a45108c446b051d0e7e7513c7faecae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a94fb8d4a6b7d20735b6918d78119796379e16d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119007643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171097"
 ---
 # <a name="example-c-program-listing-system-and-physical-stores"></a>Programa C de ejemplo: enumeración de almacenes físicos y del sistema
 
-En el ejemplo siguiente se enumeran las ubicaciones del almacén de [*certificados*](../secgloss/c-gly.md) del sistema, los almacenes de certificados del sistema y los almacenes físicos asociados a cada almacén del sistema. En este ejemplo se muestra la creación de funciones de devolución de llamada y funciones de devolución de llamada que llaman a otras funciones de devolución de llamada.
+En el ejemplo siguiente se enumeran las ubicaciones del almacén de certificados del [*sistema,*](../secgloss/c-gly.md) los almacenes de certificados del sistema y los almacenes físicos asociados a cada almacén del sistema. En este ejemplo se muestra la creación de funciones de devolución de llamada y funciones de devolución de llamada que llaman a otras funciones de devolución de llamada.
 
 En este ejemplo se muestran las siguientes [*funciones de CryptoAPI:*](../secgloss/c-gly.md)
 

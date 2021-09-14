@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b57cc9423fd8e6ef7ccfe94ad70195204ab0f3fe566f008b4c7606938a1349fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c56f259a35026bb47a5e58b7b364b52d9bedbc5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118498175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170374"
 ---
 # <a name="apijetsetcurrentindex3-method"></a>Método Api.JetSetCurrentIndex3
 
@@ -101,13 +101,13 @@ public static void JetSetCurrentIndex3(
   - itagSequence  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Número de secuencia del valor de columna multivalor que se usará para colocar el cursor en el nuevo índice. Este parámetro solo se usa junto con [NoMove](./setcurrentindexgrbit-enumeration.md). Cuando este parámetro no está presente o está establecido en cero, se supone que su valor es 1.
+    Número de secuencia del valor de columna multivalor que se usará para colocar el cursor en el nuevo índice. Este parámetro solo se usa junto con [NoMove](./setcurrentindexgrbit-enumeration.md). Cuando este parámetro no está presente o se establece en cero, se supone que su valor es 1.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

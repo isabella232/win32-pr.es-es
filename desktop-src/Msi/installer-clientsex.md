@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 54ecc8c0d76ae5105aec07a85adb18d93a8e7a9b75162f8124bb32fdd7f64597
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a609ab0ba6edc5b0e3e9bbd26bc3539858ebdee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118632932"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171734"
 ---
 # <a name="installerclientsex-property"></a>Installer.ClientsEx, propiedad
 
 Esta propiedad devuelve un [**objeto RecordList**](recordlist-object.md) que enumera los productos que usan un componente instalado especificado. Esta propiedad llama [**a MsiEnumClientsEx.**](/windows/desktop/api/Msi/nf-msi-msienumclientsexa)
 
-**[Windows Instalador 4.5 o anterior:](not-supported-in-windows-installer-4-5.md)** No se admite. Esta propiedad está disponible a partir de Windows Installer 5.0.
+**[Windows Installer 4.5 o versiones anteriores:](not-supported-in-windows-installer-4-5.md)** No se admite. Esta propiedad está disponible a partir de Windows Installer 5.0.
 
 Esta propiedad es de solo lectura.
 
@@ -43,7 +43,7 @@ propVal = Installer.ClientsEx
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                      |

@@ -1,17 +1,17 @@
 ---
 title: La type_free_xmit función
-description: Los códigos auxiliares llaman a la función xmit libre \_ de tipo para liberar memoria asociada a los datos \_ transmitidos.
+description: Los códigos auxiliares llaman a la \_ función \_ xmit libre de tipo para liberar memoria asociada a los datos transmitidos.
 ms.assetid: f15ce25b-d36c-4ee5-b796-f0aba1997047
 keywords:
 - type_free_xmit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4c192e30ec4f18d70d6e694e6097cb77ee7a2338230868730dc37c1c3207010
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b33d5cb8079d50923de2161b0384550829a5f22f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120016585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171298"
 ---
 # <a name="the-type_free_xmit-function"></a>Función \_ \_ xmit libre de tipos
 

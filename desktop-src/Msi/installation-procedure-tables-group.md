@@ -4,12 +4,12 @@ ms.assetid: dff7cf4a-89a2-47b0-9038-93b79c0d915a
 title: Grupo de tablas de procedimientos de instalación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98c66cc377fdf36969699f0e150fc30a02363ed24aa1848c4492917bffda7bc9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fbb3c5eb0306941d3cdd02bf7f994270ca0d6490
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118633590"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171770"
 ---
 # <a name="installation-procedure-tables-group"></a>Grupo de tablas de procedimientos de instalación
 
@@ -31,7 +31,7 @@ La [tabla CustomAction proporciona](customaction-table.md) los medios para integ
 Las tablas siguientes amplían las funcionalidades del instalador para manipular archivos y carpetas durante la instalación.
 
 -   La [tabla RemoveFile contiene](removefile-table.md) una lista de archivos que se quitan durante la instalación.
--   La [tabla RemoveIniFile](removeinifile-table.md) contiene la información que una aplicación debe quitar de .ini archivos.
+-   La [tabla RemoveIniFile](removeinifile-table.md) contiene la información que una aplicación necesita quitar de .ini archivos.
 -   La [tabla RemoveRegistry](removeregistry-table.md) contiene la información que se elimina del registro del sistema cuando se selecciona instalar el componente correspondiente.
 -   En [la tabla CreateFolder se](createfolder-table.md) enumeran las carpetas que se deben crear durante la instalación. Aunque el instalador crea carpetas a medida que son necesarias, se quitan en cuanto están vacías. La lista de carpetas de la tabla CreateFolder no se elimina hasta que se desinstala el componente.
 -   La [tabla MoveFile](movefile-table.md) contiene una lista de archivos que se van a mover o copiar desde un directorio de origen especificado del equipo del usuario a un directorio de destino. No es necesario usar la tabla MoveFile para describir los archivos asociados a los componentes que va a instalar.

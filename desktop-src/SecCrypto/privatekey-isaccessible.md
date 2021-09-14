@@ -1,7 +1,7 @@
 ---
-description: Devuelve un valor booleano que indica si se puede tener acceso a la clave privada.
+description: Devuelve un valor booleano que indica si la clave privada es accesible.
 ms.assetid: ee5e89af-745e-4a4d-9943-fecbaee5d3e3
-title: PrivateKey. IsAccessible, método
+title: Método PrivateKey.IsAccessible
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - Capicom.dll
 ms.openlocfilehash: 9997fad702ab1eddbf4c60fa2304df8185ef4c63
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170941"
 ---
-# <a name="privatekeyisaccessible-method"></a>PrivateKey. IsAccessible, método
+# <a name="privatekeyisaccessible-method"></a>Método PrivateKey.IsAccessible
 
-\[El método **IsAccessible** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En su lugar, use la [**propiedad X509Certificate2. PrivateKey**](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2.privatekey?view=netcore-3.1) en el espacio de nombres [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[El **método IsAccessible** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En su lugar, use la propiedad [**X509Certificate2.PrivateKey**](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2.privatekey?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-El método **IsAccessible** devuelve un valor booleano que indica si se puede tener acceso a la clave privada.
+El **método IsAccessible** devuelve un valor booleano que indica si la clave privada es accesible.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,11 +41,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si es true, se puede tener acceso a la clave privada.
+Si es true, se puede acceder a la clave privada.
 
 ## <a name="remarks"></a>Observaciones
 
-El valor devuelto de este método depende del [*proveedor de servicios criptográficos*](../secgloss/c-gly.md) (CSP) utilizado. Este método devolverá un valor de confianza si se usa un CSP de Microsoft. Si el CSP no es un CSP de Microsoft, el valor devuelto no puede ser de confianza para ser preciso.
+El valor devuelto de este método depende del proveedor [*de servicios criptográficos*](../secgloss/c-gly.md) (CSP) utilizado. Este método devolverá un valor de confianza si se usa un CSP de Microsoft. Si el CSP no es un CSP de Microsoft, no se puede confiar en que el valor devuelto sea preciso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,12 +53,12 @@ El valor devuelto de este método depende del [*proveedor de servicios criptogr�
 
 | Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

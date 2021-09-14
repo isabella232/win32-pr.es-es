@@ -4,18 +4,18 @@ ms.assetid: 95a5365c-e2ae-4e35-9aeb-67d04e67c7df
 title: Revisiones que se pueden desinstalar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9a3abea369a09dd51e995ba28dcab1463032bb6e5dec9648d3eae39be4cbf21
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ad46d85318378ed81d2278d3ea1290152723704
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119527645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171618"
 ---
 # <a name="uninstallable-patches"></a>Revisiones que se pueden desinstalar
 
 Si se puede desinstalar una revisión depende de cómo se haya creado la revisión, de la versión de Windows Installer usada para instalar la revisión y de los cambios realizados por la revisión en la aplicación. Si una revisión no se puede desinstalar, la única manera de quitar la revisión es desinstalar toda la aplicación y volver a instalarla sin aplicar la revisión que se va a quitar.
 
-Puede llamar a para la desinstalación de las revisiones aplicadas con la versión 3.0 del instalador de Windows mediante opciones de [](uninstalling-patches.md) línea de [comandos,](command-line-options.md)la función [**MsiRemovePatches**](/windows/desktop/api/Msi/nf-msi-msiremovepatchesa) o el método [**RemovePatches,**](installer-removepatches.md) tal y como se describe en la sección Desinstalación de revisiones. El Windows de aplicaciones comprueba que se puede desinstalar cada una de las revisiones enumeradas para su eliminación en la propiedad [**MSIPATCHREMOVE.**](msipatchremove.md) Si el usuario no tiene privilegios para quitar la revisión, la revisión es desconocida para el producto, la directiva de revisión impide la eliminación o la revisión se ha marcado como no desinstalable, el instalador devuelve un error que indica una transacción de instalación con errores.
+Puede llamar a para la desinstalación de las revisiones aplicadas con la versión 3.0 del instalador de Windows mediante opciones de [](uninstalling-patches.md) línea de [comandos,](command-line-options.md)la función [**MsiRemovePatches**](/windows/desktop/api/Msi/nf-msi-msiremovepatchesa) o el método [**RemovePatches,**](installer-removepatches.md) como se describe en la sección Desinstalación de revisiones. El Windows de aplicaciones comprueba que se puede desinstalar cada una de las revisiones enumeradas para su eliminación en la propiedad [**MSIPATCHREMOVE.**](msipatchremove.md) Si el usuario no tiene privilegios para quitar la revisión, la revisión es desconocida para el producto, la directiva de revisión impide la eliminación o la revisión se ha marcado como no desinstalable, el instalador devuelve un error que indica una transacción de instalación con errores.
 
 **Windows Installer 2.0:** No se admite. Las revisiones aplicadas mediante una versión de Windows Installer anterior a Windows Installer 3.0 no se pueden desinstalar.
 
@@ -28,7 +28,7 @@ Una revisión (archivo .msp) aplicada a una aplicación instalada no se puede de
 -   Las revisiones que no tienen una [tabla MsiPatchMetadata](msipatchmetadata-table.md) en su base de datos no se pueden desinstalar.
 -   Las revisiones que no incluyen la fila siguiente en su [tabla MsiPatchMetadata](msipatchmetadata-table.md) no se pueden desinstalar. La revisión no se puede desinstalar para otros valores de Company, Property y Value.
 
-    | Compañía | Propiedad     | Valor |
+    | Compañía | Propiedad     | Value |
     |---------|--------------|-------|
     | {Null}  | AllowRemoval | 1     |
 
@@ -42,7 +42,7 @@ Una revisión (archivo .msp) aplicada a una aplicación instalada no se puede de
     |-----------------------------------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Per-Machine                             | Permitido                          | Generalmente no permitido La única excepción es si la revisión se aplicó mediante la aplicación de revisiones (LUA). Los administradores o no administradores pueden desinstalar una revisión marcada como revisión de LUA. La aplicación de revisiones de LUA solo está disponible para los paquetes instalados por equipo desde medios y requieren una creación especial.<br/> |
     | Per-User no administrado para el usuario actual   | Permitida                          | Permitida                                                                                                                                                                                                                                                                                                          |
-    | Per-User no administrado para distintos usuarios | No permitida                      | No permitida                                                                                                                                                                                                                                                                                                      |
+    | Per-User no administrado para otro usuario | No permitida                      | No permitida                                                                                                                                                                                                                                                                                                      |
     | Per-User administrado para el usuario actual       | Permitido                          | No permitida                                                                                                                                                                                                                                                                                                      |
     | Per-User administrado para distintos usuarios     | No permitida                      | No permitida                                                                                                                                                                                                                                                                                                      |
 
@@ -62,12 +62,12 @@ Una revisión (archivo .msp) aplicada a una aplicación instalada no se puede de
     -   [DuplicateFile](duplicatefile-table.md)
     -   [Entorno](environment-table.md)
     -   [Extensión](extension-table.md)
-    -   [Fuente](font-table.md)
+    -   [Font](font-table.md)
     -   [IniFile](inifile-table.md)
     -   [IsolatedComponent](isolatedcomponent-table.md)
     -   [LockPermissions](lockpermissions-table.md)
     -   [MsiLockPermissionsEx](msilockpermissionsex-table.md)
-    -   [Mime](mime-table.md)
+    -   [MIME](mime-table.md)
     -   [MoveFile](movefile-table.md)
     -   [MsiServiceConfig](msiserviceconfig-table.md)
     -   [MsiServiceConfigFailureActions](msiserviceconfigfailureactions-table.md)
@@ -83,7 +83,7 @@ Una revisión (archivo .msp) aplicada a una aplicación instalada no se puede de
     -   [ServiceControl](servicecontrol-table.md)
     -   [ServiceInstall](serviceinstall-table.md)
     -   [Typelib](typelib-table.md)
-    -   [Verbo](verb-table.md)
+    -   [Verb](verb-table.md)
     -   [!Note]  
         > Si una revisión agrega contenido nuevo a las tablas [RemoveFile](removefile-table.md) o [RemoveRegistry,](removeregistry-table.md) Windows Installer no marca la revisión como no desinstalable. Sin embargo, la revisión no se puede desinstalar a menos que el recurso para quitar el nuevo contenido no exista en el paquete de instalación original. Por ejemplo, si la revisión agrega una nueva fila a la tabla RemoveFile, el archivo quitado no se puede restaurar desinstalando la revisión si el archivo es externo a la [tabla File](file-table.md). El archivo debe haber sido creado en la tabla Archivo del paquete original más las revisiones aplicadas para que la revisión se pueda desinstalar.
 

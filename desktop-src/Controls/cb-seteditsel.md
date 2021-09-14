@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e8deb133559332ea8f727758086e19cb17483b4c343f8b3f8f1a3694911eedd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a54e09697e266b4e0c4260104e90f454a5e3edfb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117832273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170114"
 ---
-# <a name="cb_seteditsel-message"></a>Mensaje \_ DE CB SETEDITSEL
+# <a name="cb_seteditsel-message"></a>Mensaje \_ SETEDITSEL de CB
 
 Una aplicación envía un mensaje **\_ CB SETEDITSEL** para seleccionar caracteres en el control de edición de un cuadro combinado.
 
@@ -39,9 +39,9 @@ Este parámetro no se utiliza.
 *lParam* \[ En\]
 </dt> <dd>
 
-El [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) de *lParam* especifica la posición inicial. Si **loword es** -1, se quita la selección, si existe.
+El [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) de *lParam* especifica la posición inicial. Si **LOWORD es** -1, se quita la selección, si existe.
 
-HiWORD [**de**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) *lParam* especifica la posición final. Si **HIWORD es** -1, se selecciona todo el texto desde la posición inicial hasta el último carácter del control de edición.
+[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) de *lParam* especifica la posición final. Si **HIWORD es** -1, se selecciona todo el texto desde la posición inicial hasta el último carácter del control de edición.
 
 </dd> </dl>
 
@@ -49,23 +49,23 @@ HiWORD [**de**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) *lP
 
 Si el mensaje se realiza correctamente, el valor devuelto es **TRUE.** Si el mensaje se envía a un cuadro combinado con el estilo [**\_ DROPDOWNLIST de CBS,**](combo-box-styles.md) es CB \_ ERR.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las posiciones están basadas en cero. El primer carácter del control de edición está en la posición cero. El primer carácter después del último carácter seleccionado está en la posición final. Por ejemplo, para seleccionar los cuatro primeros caracteres del control de edición, use una posición inicial de 0 y una posición final de 4.
+Las posiciones son de base cero. El primer carácter del control de edición está en la posición cero. El primer carácter después del último carácter seleccionado está en la posición final. Por ejemplo, para seleccionar los cuatro primeros caracteres del control de edición, use una posición inicial de 0 y una posición final de 4.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

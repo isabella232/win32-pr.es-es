@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a9790c43141ef836c1dec86304f260b0490854b593b7005b594d2a718332296
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac88155424c0b1ecf6c91f398e7a9a2d437eff90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120063325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170094"
 ---
 # <a name="cb_setminvisible-message"></a>Mensaje \_ DE CB SETMINVISIBLE
 
@@ -39,7 +39,7 @@ Especifica el número mínimo de elementos visibles.
 *lParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza; debe ser cero.
+Este parámetro no se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -47,7 +47,7 @@ Este parámetro no se utiliza; debe ser cero.
 
 Si el mensaje es correcto, el valor devuelto es **TRUE.** De lo contrario, el valor devuelto **es FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el número de elementos de la lista desplegable es mayor que el mínimo, el cuadro combinado usa una barra de desplazamiento. De forma predeterminada, 30 es el número mínimo de elementos visibles.
 
@@ -63,7 +63,7 @@ Para usar **CB \_ SETMINVISIBLE,** la aplicación debe especificar comctl32.dll 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

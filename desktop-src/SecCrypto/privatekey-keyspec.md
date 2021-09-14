@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 9b28694c639260fccfce5d703e43aea4040fe0966cb9f330c2dc625892bd6907
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9d0ba55ca48d5257a038845f84374544b7615b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117978019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170909"
 ---
 # <a name="privatekeykeyspec-property"></a>Propiedad PrivateKey.KeySpec
 
@@ -26,7 +26,7 @@ ms.locfileid: "117978019"
 
 La **propiedad KeySpec** recupera la especificación de clave.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -54,14 +54,14 @@ Valor de la [**enumeración CAPICOM \_ KEY \_ SPEC**](capicom-key-spec.md) que i
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

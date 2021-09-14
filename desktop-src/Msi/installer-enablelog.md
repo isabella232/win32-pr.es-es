@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 48481a701b7e78de372f5579dab5c9d5976a68063958b0812d6ae1ddc08b109a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 573b56dda0479f58595b0849f6443fd8a2e67e71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118631701"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171673"
 ---
 # <a name="installerenablelog-method"></a>Método Installer.EnableLog
 
@@ -47,7 +47,7 @@ Cadena necesaria que contiene letras que representan los tipos de mensaje que se
 
 
 
-| Valor | Descripción                                                                                            |
+| Value | Descripción                                                                                            |
 |-------|--------------------------------------------------------------------------------------------------------|
 | I     | Mensajes de solo información.                                                                             |
 | w     | Mensajes de advertencia no irreales.                                                                            |
@@ -82,7 +82,7 @@ Cadena necesaria que contiene la ruta de acceso al archivo de registro que se va
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La ruta de acceso a la ubicación del archivo de registro ya debe existir cuando se usa este método. El instalador no crea la estructura de directorios para el archivo de registro.
 
@@ -108,7 +108,7 @@ El siguiente script de ejemplo activa el registro detallado para una instalació
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92034154138ab3747ce190c05716e2df0d82ed3f6b26aba38da780873ce03721
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e2258b0f16e6f61e660384931abc394300a29516
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171385"
 ---
 # <a name="glpopattrib-function"></a>Función glPopAttrib
 
@@ -55,7 +55,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**función glPushAttrib**](glpushattrib.md) toma un argumento, una máscara que indica qué grupos de variables de estado se deben guardar en la pila de atributos. Las constantes simbólicas se usan para establecer bits en la máscara. Normalmente, el parámetro mask se construye mediante **or** que une varias de estas constantes. La máscara especial GL \_ ALL \_ ATTRIB \_ BITS se puede usar para guardar todos los estados apilables.
 
@@ -89,7 +89,7 @@ Las siguientes funciones recuperan información relacionada [**con glPushAttrib*
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

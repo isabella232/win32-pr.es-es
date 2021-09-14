@@ -1,17 +1,17 @@
 ---
 title: Información legal (OpenGL)
-description: En este artículo se proporciona información legal sobre OpenGL, incluida la información sobre los derechos de autor y las marcas comerciales.
+description: En este artículo se proporciona información legal sobre OpenGL, incluida información sobre los derechos de autor y las marcas comerciales.
 ms.assetid: c17525c3-b438-4529-abf7-a55f532398f8
 keywords:
 - OpenGL, información legal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64f80933231af06e1925bf888c5dcc18803de1d687320182480465bee19db97f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a41d5cfbe3d14b57d2d71312736f4006f08c7f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119777385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171377"
 ---
 # <a name="legal-information-opengl"></a>Información legal (OpenGL)
 
@@ -27,7 +27,7 @@ TrueType es una marca comercial registrada de Apple Computer, Inc.
 
 UNIX es una marca comercial registrada de Open Group.
 
-Fragmentos de Silicon Graphics, Inc. de la Guía *de programación de OpenGL* y el *Manual de referencia de OpenGL*. Se vuelve a imprimir con el permiso de Silicon Graphics, Inc.
+Fragmentos de Silicon Graphics, Inc. de la Guía *de programación de OpenGL* y el *Manual de referencia de OpenGL.* Se vuelve a imprimir con el permiso de Silicon Graphics, Inc.
 
 Los nombres de las compañías y productos reales mencionados en el presente documento pueden ser marcas comerciales de sus respectivos propietarios.
 

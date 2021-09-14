@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b97e83d13e66d0a8252fdc1974c775188f8009958a3f286916b0e46ea4f0e88c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8e46be007cdea17857e5d8ec42a12228821539d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119699445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170110"
 ---
 # <a name="cb_setitemheight-message"></a>Mensaje \_ DE CB SETITEMHEIGHT
 
@@ -41,27 +41,27 @@ Este parámetro debe ser 1 para establecer el alto del campo de selección. Debe
 *lParam* 
 </dt> <dd>
 
-Especifica el alto, en píxeles, del componente de cuadro combinado identificado por *wParam*.
+Especifica el alto, en píxeles, del componente de cuadro combinado identificado *por wParam*.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el índice o el alto no son válidos, el valor devuelto es CB \_ ERR.
+Si el índice o alto no es válido, el valor devuelto es CB \_ ERR.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El alto del campo de selección de un cuadro combinado se establece independientemente del alto de los elementos de lista. Una aplicación debe asegurarse de que el alto del campo de selección no sea menor que el alto de un elemento de lista determinado.
+El alto del campo de selección en un cuadro combinado se establece independientemente del alto de los elementos de lista. Una aplicación debe asegurarse de que el alto del campo de selección no sea menor que el alto de un elemento de lista determinado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

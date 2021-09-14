@@ -1,19 +1,19 @@
 ---
-description: Las extensiones se incluyen en una solicitud de certificado PKCS 10 agregándolos al campo atributos de la estructura CertificationRequestInfo que se muestra en el siguiente ejemplo de sintaxis \# de ASN.1. Para obtener más información, vea el tema Atributos.
+description: Las extensiones se incluyen en una solicitud de certificado PKCS 10 agregándolos al campo de atributos de la estructura CertificationRequestInfo que se muestra en el siguiente ejemplo de sintaxis \# de ASN.1. Para obtener más información, vea el tema Atributos.
 ms.assetid: 26fa8476-a0ad-4114-a1e7-ed3d4fc9d30e
 title: Extensiones PKCS \# 10
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e6db808250b2c3c2a7e29980b115dae3a22f0f37b4912c74332433e2dcf4f2c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9ba71f0a24f50503fd92b3b9670b787dea3b9ad2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119993285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171197"
 ---
 # <a name="pkcs-10-extensions"></a>Extensiones PKCS \# 10
 
-Las extensiones se incluyen en una solicitud de certificado PKCS 10 agregándolos al campo atributos de la estructura CertificationRequestInfo que se muestra en el siguiente ejemplo de sintaxis \# de ASN.1.   Para obtener más información, vea el [tema Atributos.](attributes.md)
+Las extensiones se incluyen en una solicitud de certificado PKCS 10 agregándolos al campo de atributos de la estructura CertificationRequestInfo que se muestra en el siguiente ejemplo de sintaxis \# de ASN.1.   Para obtener más información, vea el [tema Atributos.](attributes.md)
 
 ``` syntax
 CertificationRequestInfo ::= SEQUENCE 

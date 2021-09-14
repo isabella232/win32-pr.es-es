@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 385cb5d7694818a0e0e03ab74bcc31b76d13f5d304c7415b1f70a0fd43e1b31b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1b33c5245778481033bd97326c3d66a40bf03210
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119921665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170125"
 ---
 # <a name="bcm_getnotelength-message"></a>Mensaje \_ GETNOTELENGTH de BCM
 
@@ -45,13 +45,13 @@ Debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la longitud del texto de la nota en **WCHARs,** sin incluir ningún valor **NULL** final, o cero si no hay texto de nota.
+Devuelve la longitud del texto de la nota en **WCHARs**, sin incluir ningún valor **NULL** de terminación, o cero si no hay texto de nota.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 A partir de comctl32 DLL versión 6.01, los botones de vínculo de comando pueden tener una nota. Para obtener información sobre las versiones de DLL, vea [Versiones de control comunes](common-control-versions.md).
 
-El **mensaje \_ GETNOTELENGTH** de BCM solo funciona con los estilos de botón COMMANDLINK y [**BS \_ DEFCOMMANDLINK de BS.**](button-styles.md) [**\_**](button-styles.md)
+El **mensaje \_ GETNOTELENGTH** de BCM solo funciona con los estilos de botón [**\_ BS COMMANDLINK**](button-styles.md) y [**BS \_ DEFCOMMANDLINK.**](button-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ El **mensaje \_ GETNOTELENGTH** de BCM solo funciona con los estilos de botón C
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

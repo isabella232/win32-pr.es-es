@@ -1,7 +1,7 @@
 ---
 description: Contiene un número de puerto utilizado para los protocolos IP o IPX.
 ms.assetid: 730f6ee6-7b7d-4e10-91ee-a4ba87aae5aa
-title: GENERIC_PORT union (Netmon.h)
+title: GENERIC_PORT unión (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 353faa17a505742f9e5b31feeb1c0108add7895f8039f12905c399d515bb2bb0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3b684ffea65e85854d2928931f492fb247cc0b70
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119910875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127171489"
 ---
 # <a name="generic_port-union"></a>Unión \_ DE PUERTO GENÉRICO
 
-La **estructura \_ GENERIC PORT** contiene un número de puerto que se usa para los protocolos IP o IPX.
+La **estructura \_ GENERIC PORT** contiene un número de puerto utilizado para los protocolos IP o IPX.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ typedef union {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 

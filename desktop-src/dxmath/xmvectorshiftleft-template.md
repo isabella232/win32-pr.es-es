@@ -4,12 +4,12 @@ ms.assetid: m:microsoft.directx_sdk.template.xmvectorshiftleft(xmvector,xmvector
 title: Plantilla XMVectorShiftLeft (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ab92e2fb64a101251a7531ca1d96b8b06f3e9af6e2b7dabe7958673a61bd8c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 115604871d9e8402157a82bf3c420e5762b3a424
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118499284"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170402"
 ---
 # <a name="xmvectorshiftleft-template"></a>Plantilla XMVectorShiftLeft
 
@@ -44,9 +44,9 @@ template<uint32_t Elements> XMVECTOR XMVectorShiftLeft(
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el desplazamiento y rellenado en [**XMVECTOR.**](xmvector-data-type.md)
+Devuelve el archivo desplazado y rellenado en [**XMVECTOR.**](xmvector-data-type.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es una versión de plantilla de [**XMVectorShiftLeft**](/windows/win32/api/directxmath/nf-directxmath-xmvectorshiftleft) donde el *argumento Elements* es un valor de plantilla.
 

@@ -4,7 +4,7 @@ description: Origen de la detección.
 ms.assetid: 9FEE2FAD-3E44-4134-B968-53E971F6B092
 keywords:
 - MPDETECTION_ORIGIN enumeración heredada de Windows environment
-- PMPDETECTION_ORIGIN puntero de enumeración Legacy Windows Environment Features
+- PMPDETECTION_ORIGIN puntero de enumeración heredado Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70b46ed86276ccb3fc3bd4d2b26388d778c102c1c1fa3bb7ced8f1ad64cd0203
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ed4224aafef2c72db2a8d3b27f338ca83feaf64f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120092365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170213"
 ---
 # <a name="mpdetection_origin-enumeration"></a>Enumeración MPDETECTION \_ ORIGIN
 
 Origen de la detección.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -96,7 +96,7 @@ Amenaza detectada en una conexión entrante.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

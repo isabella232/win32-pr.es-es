@@ -5,12 +5,12 @@ title: WM_PAINT mensaje (Winuser.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 05/31/2018
-ms.openlocfilehash: b5efec4bc92fcb3c90a8def59b2e85d98342cf641dfe959fc2a651f81ffc1f77
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b13e1779fb54a3db7905cb8fc738ef45558400f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120092515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127170293"
 ---
 # <a name="wm_paint-message"></a>Mensaje \_ DE WM PAINT
 
@@ -82,7 +82,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 Ejemplo de [Windows ejemplos clásicos](https://github.com/microsoft/Windows-classic-samples/blob/18cbd05ee44455cd7552804dcf2c9d6db619b412/Samples/Win7Samples/begin/LearnWin32/HelloWorld/cpp/main.cpp) en GitHub.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El sistema genera el mensaje **WM \_ PAINT** y no lo debe enviar una aplicación. Para forzar que una ventana dibuje en un contexto de dispositivo específico, use el mensaje [**WM \_ PRINT**](wm-print.md) o [**WM \_ PRINTCLIENT.**](wm-printclient.md) Tenga en cuenta que esto requiere que la ventana de destino admita el **\_ mensaje PRINTCLIENT de WM.** Los controles más comunes admiten el **\_ mensaje PRINTCLIENT de WM.**
 
