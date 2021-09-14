@@ -4,16 +4,16 @@ ms.assetid: 3f350312-3f1f-4020-90d0-85521ea9c7c8
 title: Agregar una letra de unidad a un LUN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 388c59a2e1b719e792855460f45fa0c04add7502f8e06aba56f0416a212a9aaa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 426a4f3bf720b21a02462edde4a381012d2084d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117755504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890444"
 ---
 # <a name="adding-a-drive-letter-to-a-lun"></a>Agregar una letra de unidad a un LUN
 
-\[A partir Windows 8 y Windows Server 2012, la interfaz COM [de Virtual Disk Service](virtual-disk-service-portal.md) se sustituye por el [Windows Storage API de Administración](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[A partir Windows 8 y Windows Server 2012, la interfaz COM [del](virtual-disk-service-portal.md) servicio virtual de disco se sustituye por el [Windows Storage API de Administración](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Puede asignar letras de unidad a objetos de volumen directamente; sin embargo, si el disco es un objeto LUN, tiene algunos pasos adicionales.
 

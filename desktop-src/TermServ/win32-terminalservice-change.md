@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c10e8c7b0a26ce2ca1e602478a64a888a1ad6b299f8ab7965303832bba7a3fc3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fa34ea0c9c38cd0b11f97a0bbf651f1aebf37a46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118604437"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890820"
 ---
-# <a name="change-method-of-the-win32_service-class-mbnapih---terminalservice"></a>Cambio del método de Win32_Service clase (Mbnapi.h): TerminalService
+# <a name="change-method-of-the-win32_service-class-mbnapih---terminalservice"></a>Método de cambio de Win32_Service clase (Mbnapi.h): TerminalService
 
-El **método de** clase CHANGE [WMI](/windows/desktop/WmiSdk/retrieving-a-class) modifica un [**\_ terminalService de Win32.**](win32-terminalservice.md)
+El **método de** la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) Change modifica un [**\_ terminalService de Win32.**](win32-terminalservice.md)
 
-En este tema se Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ uint32 Change(
 *DisplayName* \[ En\]
 </dt> <dd>
 
-Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva entre mayúsculas y minúsculas en el administrador de control de servicios. *Las comparaciones* de DisplayName siempre no tienen en cuenta las mayúsculas y minúsculas.
+Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva entre mayúsculas y minúsculas en el administrador de control de servicios. *Las comparaciones* de DisplayName siempre no tienen en cuenta mayúsculas de minúsculas.
 
 Restricciones: acepta el mismo valor que la **propiedad Name.**
 
@@ -83,7 +83,7 @@ Tipo de servicios proporcionados a los procesos que los llaman.
 1 (0x1)
 </dt> <dd>
 
-Controlador kernel
+Kernel Driver
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Adapter (Adaptador)
 8 (0x8)
 </dt> <dd>
 
-Controlador recognizer
+Controlador de reconocedor
 
 </dd> <dt>
 
@@ -132,21 +132,21 @@ Proceso interactivo
 *ErrorControl* \[ En\]
 </dt> <dd>
 
-Gravedad del error si este servicio no se puede iniciar durante el inicio. El valor indica la acción realizada por el programa de inicio si se produce un error. El sistema registra todos los errores.
+Gravedad del error si este servicio no se inicia durante el inicio. El valor indica la acción realizada por el programa de inicio si se produce un error. El sistema registra todos los errores.
 
 <dt>
 
 0
 </dt> <dd>
 
-**Ignore**. El inicio continúa. No se envía ninguna notificación al usuario de que se ha dado un error en el servicio.
+**Ignore**. El inicio continúa. No se envía ninguna notificación al usuario de que se ha registrado un error en el servicio.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-**Normal.** El inicio continúa. Antes de que el usuario inicie sesión, el usuario recibe la notificación "Al menos un servicio o dispositivo ha generado un error durante el inicio".
+**Normal.** El inicio continúa. Antes de que el usuario inicie sesión, el usuario recibe la notificación "Al menos un servicio o dispositivo no se pudo realizar durante el inicio".
 
 </dd> <dt>
 
@@ -160,14 +160,14 @@ Gravedad del error si este servicio no se puede iniciar durante el inicio. El va
 3
 </dt> <dd>
 
-**Crítico.** El equipo intenta reiniciarse con la última configuración buena conocida. Si se produce un error en el servicio de nuevo, el inicio se detiene.
+**Crítico.** El equipo intenta reiniciarse con la última configuración buena conocida. Si se produce un error de nuevo en el servicio, el inicio se detiene.
 
 </dd> </dl> </dd> <dt>
 
 *StartMode* \[ En\]
 </dt> <dd>
 
-Modo de inicio del servicio Windows base. Para obtener más información, vea la sección Comentarios.
+Modo de inicio del Windows base. Para obtener más información, vea la sección Comentarios.
 
 <dt>
 
@@ -211,7 +211,7 @@ El administrador de control de servicios inicia automáticamente el servicio dur
 
 </dt> <dd>
 
-Servicio que va a iniciar el administrador de control de servicios cuando un proceso llama al [**método StartService.**](win32-terminalservice-startservice.md) Aunque los servicios manuales deben ser iniciados específicamente por un usuario (o por un script), siguen en ejecución incluso si el usuario cierra la sesión. Los servicios manuales se conocen a menudo como servicios a petición.
+Servicio que va a iniciar el administrador de control de servicios cuando un proceso llame al [**método StartService.**](win32-terminalservice-startservice.md) Aunque los servicios manuales deben ser iniciados específicamente por un usuario (o por un script), siguen funcionando incluso si el usuario cierra la sesión. Los servicios manuales a menudo se conocen como servicios a petición.
 
 </dd> <dt>
 
@@ -236,16 +236,16 @@ Si **es True,** el servicio puede crear o comunicarse con una ventana en el escr
 *StartName* \[ En\]
 </dt> <dd>
 
-Nombre de cuenta en el que se ejecuta el servicio. Según el tipo de servicio, el nombre de la cuenta puede tener el formato nombreDeServidor nombreDe \\ DomainName o . \\ nombre de usuario. El proceso de servicio se registrará mediante uno de estos dos formularios cuando se ejecute. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica **NULL,** el servicio se registrará como la cuenta LocalSystem. En el caso de los controladores de kernel o de nivel de sistema, *StartName* contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que usa el sistema de entrada y salida \\ \\ \\ (E/S) para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S en función del nombre del servicio, por ejemplo, "DWDOM \\ Admin".
+Nombre de cuenta en el que se ejecuta el servicio. Dependiendo del tipo de servicio, el nombre de cuenta puede tener el formato nombreDeUsuario nombreDeServidor o \\ . \\ Nombre de usuario. El proceso de servicio se registrará mediante uno de estos dos formularios cuando se ejecute. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica **NULL,** el servicio se inicia sesión como la cuenta LocalSystem. Para los controladores de kernel o de nivel de sistema, *StartName* contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio, por ejemplo, "DWDOM \\ Admin".
 
-También puede usar el formato de nombre principal de usuario (UPN) para especificar **startName**, por ejemplo, *Username@DomainName* .
+También puede usar el formato de nombre principal de usuario (UPN) para especificar **startName,** por ejemplo, *Username@DomainName* .
 
 </dd> <dt>
 
 *StartPassword* \[ En\]
 </dt> <dd>
 
-Contraseña en el nombre de cuenta especificado por el *parámetro StartName.* Especifique **NULL** si no va a cambiar la contraseña. Especifique una cadena vacía si el servicio no tiene contraseña.
+Contraseña del nombre de cuenta especificado por el *parámetro StartName.* Especifique **NULL** si no va a cambiar la contraseña. Especifique una cadena vacía si el servicio no tiene contraseña.
 
 > [!Note]  
 > Al cambiar un servicio de un sistema local a una red o de una red a un sistema local, *StartPassword* debe ser una cadena vacía ("") y no **NULL.**
@@ -257,11 +257,11 @@ Contraseña en el nombre de cuenta especificado por el *parámetro StartName.* E
 *LoadOrderGroup* \[ En\]
 </dt> <dd>
 
-Nombre de grupo al que está asociado. Los grupos de pedidos de carga se encuentran en el registro del sistema y determinan la secuencia en la que se cargan los servicios en el sistema operativo. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no pertenece a un grupo. Para obtener más información, vea la sección Comentarios.
+Nombre de grupo al que está asociado. Los grupos de orden de carga se encuentran en el registro del sistema y determinan la secuencia en la que se cargan los servicios en el sistema operativo. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no pertenece a un grupo. Para obtener más información, vea la sección Comentarios.
 
-Las dependencias entre grupos deben aparecer en el *parámetro LoadOrderGroupDependencies.* Los servicios de la lista de grupos de ordenación de carga se inician primero, seguidos de los servicios de los grupos que no están en la lista de grupos de ordenación de carga, seguidos de los servicios que no pertenecen a un grupo. El registro del sistema tiene una lista de grupos de ordenación de carga ubicados en:
+Las dependencias entre grupos deben aparecer en el *parámetro LoadOrderGroupDependencies.* Los servicios de la lista de grupos de ordenación de carga se inician primero, seguidos de los servicios de los grupos que no están en la lista de grupos de ordenación de carga, seguidos de los servicios que no pertenecen a un grupo. El registro del sistema tiene una lista de grupos de pedidos de carga ubicados en:
 
-**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
+**HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
 
 </dd> <dt>
 
@@ -323,7 +323,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 **5**
 </dt> <dd>
 
-El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State** property) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**Propiedad** State) es igual a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -489,7 +489,7 @@ El SCM almacena la contraseña de la cuenta en la base de datos de servicios. Si
 -   . Configure un servicio para que se ejecute en una cuenta de usuario determinada.
 -   El servicio se inicia en esa cuenta mediante la contraseña de la cuenta actual.
 -   La contraseña de la cuenta de usuario se cambia.
--   El servicio continúa en ejecución. Sin embargo, si el servicio se detiene, no se puede reiniciar porque el SCM sigue utilizando la contraseña antigua no válida. Al cambiar la contraseña en Active Directory no se cambia la contraseña almacenada en la base de datos de servicios.
+-   El servicio continúa en ejecución. Sin embargo, si el servicio se detiene, no se puede reiniciar porque el SCM sigue utilizando la contraseña antigua no válida. El cambio de la contraseña Active Directory no cambia la contraseña almacenada en la base de datos de servicios.
 
 Si ejecuta servicios con cuentas de usuario normales, debe actualizar esas contraseñas de servicio cada vez que cambie la contraseña de la cuenta de usuario. Esto puede llevar mucho tiempo si no está seguro de qué servicios se ejecutan en esa cuenta o qué equipos tienen servicios que se ejecutan en esa cuenta. Afortunadamente, puede usar WMI para comprobar las cuentas de servicio en todos los equipos y, si es necesario, cambiar la contraseña de la cuenta de servicio.
 
@@ -554,18 +554,18 @@ Next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
 | Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
-| Header<br/>                   | <dl> <dt>Mbnapi.h</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Mbnapi.h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

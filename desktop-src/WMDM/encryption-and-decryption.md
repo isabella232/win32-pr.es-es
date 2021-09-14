@@ -4,11 +4,11 @@ description: Cifrado y descifrado
 ms.assetid: 6aef4138-0391-4edd-b4fc-d6d0ec3c735b
 keywords:
 - Windows Media Administrador de dispositivos,encryption
-- Administrador de dispositivos,cifrado
+- Administrador de dispositivos,encryption
 - aplicaciones de escritorio, cifrado
 - proveedores de servicios, cifrado
 - guía de programación, cifrado
-- cifrar
+- El cifrado
 - Windows Media Administrador de dispositivos,decryption
 - Administrador de dispositivos,decryption
 - aplicaciones de escritorio, descifrado
@@ -17,21 +17,21 @@ keywords:
 - descifrado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1c154910709007e502c1505fc6fc3274665942c9eabe8e24de5b30fe932d813
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78688c1b4ca9991d8b322c6991de96a51e7e8d22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118584673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890329"
 ---
 # <a name="encryption-and-decryption"></a>Cifrado y descifrado
 
-Windows El Administrador de dispositivos multimedia requiere el cifrado de los archivos enviados entre el proveedor de servicios y la aplicación. Esto se puede hacer de dos maneras:
+Windows El Administrador de dispositivos requiere el cifrado de archivos enviados entre el proveedor de servicios y la aplicación. Esto se puede hacer de dos maneras:
 
 -   Si el proveedor de servicios solo admite [**IMDSPObject::Read**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-read) e [**IMDSPObject::Write**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-write), la aplicación y el proveedor de servicios deben cifrar y descifrar los datos mediante los métodos [CSecureChannelClient](csecurechannelclient-class.md) y [CSecureChannelServer,](csecurechannelserver-class.md) respectivamente.
--   Si el proveedor de servicios admite [**IMDSPObject2::ReadOnClearChannel**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspobject2-readonclearchannel) e [**IMDSPObject2::WriteOnClearChannel,**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspobject2-writeonclearchannel)la aplicación puede evitar la costosa autenticación segura de mensajes del canal. (El canal seguro se conserva para que los proveedores de servicios heredados que no implementan [**IMDSPObject2**](/windows/desktop/api/mswmdm/nn-mswmdm-imdspobject2) puedan seguir funcionando).
+-   Si el proveedor de servicios admite [**IMDSPObject2::ReadOnClearChannel**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspobject2-readonclearchannel) e [**IMDSPObject2::WriteOnClearChannel,**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspobject2-writeonclearchannel)la aplicación puede evitar la costosa autenticación de mensajes de canal segura. (El canal seguro se conserva para que los proveedores de servicios heredados que no implementan [**IMDSPObject2**](/windows/desktop/api/mswmdm/nn-mswmdm-imdspobject2) puedan seguir funcionando).
 
-El requisito de cifrado impide que las aplicaciones malintencionadas obtengan datos que se pasan entre los componentes de software y también protege la integridad de los datos que se envían al dispositivo o desde este.
+El requisito de cifrado impide que las aplicaciones malintencionadas obtengan datos que se pasan entre componentes de software y también protege la integridad de los datos que se envían al dispositivo o desde este.
 
 Los tres métodos siguientes requieren cifrado o descifrado.
 
@@ -47,7 +47,7 @@ Los tres métodos siguientes requieren cifrado o descifrado.
 
  
 
-Tanto el cifrado como el descifrado se realizan mediante llamadas de método único. El cifrado lo realiza [**CSecureChannelClient::EncryptParam**](/previous-versions/bb231587(v=vs.85)) para aplicaciones o [**CSecureChannelServer::EncryptParam**](/previous-versions/ms868509(v=msdn.10)) para proveedores de servicios. [**CSecureChannelClient::D ecryptParam**](/previous-versions/bb231586(v=vs.85)) para aplicaciones o [**CSecureChannelServer::D ecryptParam**](/previous-versions/bb231598(v=vs.85)) para proveedores de servicios. Los parámetros son idénticos entre los métodos cliente y servidor.
+El cifrado y el descifrado se realizan mediante llamadas de método único. El cifrado lo realiza [**CSecureChannelClient::EncryptParam**](/previous-versions/bb231587(v=vs.85)) para aplicaciones o [**CSecureChannelServer::EncryptParam**](/previous-versions/ms868509(v=msdn.10)) para proveedores de servicios. El descifrado lo realiza [**CSecureChannelClient::D ecryptParam**](/previous-versions/bb231586(v=vs.85)) para aplicaciones o [**CSecureChannelServer::D ecryptParam**](/previous-versions/bb231598(v=vs.85)) para proveedores de servicios. Los parámetros son idénticos entre los métodos cliente y servidor.
 
 En los pasos siguientes se muestra cómo cifrar y descifrar datos. (Estos pasos son importantes solo si la aplicación se comunica con un proveedor de servicios heredado que no implementa [IWMDMOperation3::TransferObjectDataOnClearChannel).](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmoperation3-transferobjectdataonclearchannel)
 
@@ -56,7 +56,7 @@ En los pasos siguientes se muestra cómo cifrar y descifrar datos. (Estos pasos 
 1.  Cree la clave MAC para los datos cifrados, como se describe en [Autenticación de mensajes.](message-authentication.md)
 2.  Llame **a EncryptParam** con los datos que se cifran para realizar el cifrado en contexto.
 
-En el ejemplo de código siguiente se muestra la implementación de [**IMDSPObject::Read**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-read)de un proveedor de servicios. Este método crea la clave MAC mediante los datos para cifrar y el tamaño de los datos, y los envía a la aplicación.
+En el ejemplo de código siguiente se muestra la implementación de [**IMDSPObject::Read**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-read)de un proveedor de servicios. Este método crea la clave MAC con los datos para cifrar y el tamaño de los datos, y los envía a la aplicación.
 
 
 ```C++
@@ -140,9 +140,9 @@ Error:
 **Descifrado**
 
 1.  Llame **a DecryptParam** con los datos que se cifran para realizar el descifrado local.
-2.  Compruebe la clave MAC de los datos descifrados, como se describe en [Autenticación de mensajes.](message-authentication.md)
+2.  Compruebe la clave MAC para los datos descifrados, como se describe en [Autenticación de mensajes.](message-authentication.md)
 
-En el ejemplo de código siguiente se muestra la implementación de [**IMDSPObject::Write**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-write)de un proveedor de servicios. Este método crea la clave MAC mediante los datos para cifrar y el tamaño de los datos, y los envía a la aplicación.
+En el ejemplo de código siguiente se muestra la implementación de [**IMDSPObject::Write**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspobject-write)de un proveedor de servicios. Este método crea la clave MAC con los datos para cifrar y el tamaño de los datos, y los envía a la aplicación.
 
 
 ```C++

@@ -1,11 +1,11 @@
 ---
-title: Win32_TerminalError (clase)
+title: Win32_TerminalError clase
 description: Representa un error de terminal.
 ms.assetid: d3f622cd-e4ce-4c7e-999e-940b67fd116c
 ms.tgt_platform: multiple
 keywords:
 - Win32_TerminalError clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TerminalError de clase, se describe
+- Win32_TerminalError clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -23,13 +23,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: f99724badc6c1ca7a2e4168e5c062b4dd1495ea6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150026"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890825"
 ---
-# <a name="win32_terminalerror-class"></a>\_Clase Win32 TerminalError
+# <a name="win32_terminalerror-class"></a>Clase TerminalError de Win32 \_
 
 Representa un error de terminal.
 
@@ -49,7 +49,7 @@ class Win32_TerminalError : __ExtendedStatus
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TerminalError de Win32** tiene estos tipos de miembros:
 
@@ -70,13 +70,13 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cualquier cadena definida por el usuario que describa un estado operativo o de error.
+Cualquier cadena definida por el usuario que describa un error o un estado operativo.
 
-Esta propiedad se hereda de [**\_ \_ ExtendedStatus**](/windows/desktop/WmiSdk/--extendedstatus).
+Esta propiedad se hereda de [**\_ \_ ExtendedStatus.**](/windows/desktop/WmiSdk/--extendedstatus)
 
 </dd> <dt>
 
-**Operación**
+**operación**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -85,9 +85,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Operación que tiene lugar en el momento en que se produce un error o una anomalía. Normalmente, WMI establece esta propiedad en el nombre de una API COM para un método WMI como el siguiente: [**IWbemServices:: CreateInstanceEnum**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-createinstanceenum).
+Operación que tiene lugar en el momento de un error o anomalía. Normalmente, WMI establece esta propiedad en el nombre de una API COM para el método WMI como el siguiente: [**IWbemServices::CreateInstanceEnum**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-createinstanceenum).
 
-Esta propiedad se hereda de [**\_ \_ ExtendedStatus**](/windows/desktop/WmiSdk/--extendedstatus).
+Esta propiedad se hereda de [**\_ \_ ExtendedStatus.**](/windows/desktop/WmiSdk/--extendedstatus)
 
 </dd> <dt>
 
@@ -100,9 +100,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Los parámetros implicados en un error o un cambio de estado. Por ejemplo, si una aplicación intenta recuperar una clase que no existe, esta propiedad se establece en el nombre de clase infractora.
+Parámetros implicados en un error o cambio de estado. Por ejemplo, si una aplicación intenta recuperar una clase que no existe, esta propiedad se establece en el nombre de clase infractora.
 
-Esta propiedad se hereda de [**\_ \_ ExtendedStatus**](/windows/desktop/WmiSdk/--extendedstatus).
+Esta propiedad se hereda de [**\_ \_ ExtendedStatus.**](/windows/desktop/WmiSdk/--extendedstatus)
 
 </dd> <dt>
 
@@ -115,22 +115,22 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identifica el proveedor que produce o informa de un error o un cambio de estado. Si un proveedor no está implicado, esta cadena se establece en "administración de Windows".
+Identifica el proveedor que produce o notifica un error o cambio de estado. Si un proveedor no está implicado, esta cadena se establece en "Windows Management".
 
-Esta propiedad se hereda de [**\_ \_ ExtendedStatus**](/windows/desktop/WmiSdk/--extendedstatus).
+Esta propiedad se hereda de [**\_ \_ ExtendedStatus.**](/windows/desktop/WmiSdk/--extendedstatus)
 
 </dd> <dt>
 
 **StatusCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Contiene un código de error o de información para una operación. Puede ser cualquier valor definido por el proveedor, pero el valor 0 (cero) normalmente se reserva para indicar que la operación se ha realizado correctamente. Esta propiedad se hereda de [**\_ \_ NotifyStatus**](/windows/desktop/WmiSdk/--notifystatus).
+Contiene un error o código de información para una operación. Puede ser cualquier valor definido por el proveedor, pero el valor 0 (cero) normalmente se reserva para indicar que se ha establecido correctamente. Esta propiedad se hereda de [**\_ \_ NotifyStatus.**](/windows/desktop/WmiSdk/--notifystatus)
 
 </dd> <dt>
 
@@ -143,7 +143,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del terminal sin el que se produjo el error.
+Nombre del sin terminal en el que se produjo el error.
 
 </dd> </dl>
 
@@ -155,13 +155,13 @@ Nombre del terminal sin el que se produjo el error.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ cimv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices cimv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

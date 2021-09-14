@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84bbd9c6f44c120d5a47e74219ed071a6e405e70ab0a46b54f707671ff5b2e6f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc7432d69fc8cd088af5d5a44a07b90f9d697348
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118609441"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891156"
 ---
 # <a name="disableplugandplaydevices-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método DisablePlugAndPlayDevices de la clase \_ TSGatewayConnectionAuthorizationPolicy de Win32
 
-Establece la **propiedad PlugAndPlayDevicesDisabled.** Si la propiedad **DeviceRedirectionType** tiene un valor de "2", la propiedad **PlugAndPlayDevicesDisabled** controla la redirección de dispositivos Plug and Play para las sesiones que se establecen a través del servidor de Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
+Establece la **propiedad PlugAndPlayDevicesDisabled.** Si la propiedad **DeviceRedirectionType** tiene el valor "2", la propiedad **PlugAndPlayDevicesDisabled** controla el redireccionamiento de dispositivos Plug and Play para las sesiones que se establecen a través del servidor de puerta de enlace de Escritorio remoto (puerta de enlace de Escritorio remoto).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ Si el método se realiza correctamente, devuelve cero. Si el método no se reali
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

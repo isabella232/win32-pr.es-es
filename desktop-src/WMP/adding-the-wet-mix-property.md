@@ -11,12 +11,12 @@ keywords:
 - Ejemplo de complemento DSP de eco, propiedad de combinación con efectos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f743cc25ce25aed1e7ff5695c022d65e30c1680eee4121eb3952698d6f0da94f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad6af8e7b4857ccbf6b725044575d1b8524aaf50
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055423"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890209"
 ---
 # <a name="adding-the-wet-mix-property"></a>Agregar la propiedad Mezcla mezclada
 
@@ -24,7 +24,7 @@ Debe agregar el código para proporcionar la propiedad adicional para el nivel d
 
 En la sección [Adding Properties to the Sample Audio DSP Plug-in](adding-properties-to-the-sample-audio-dsp-plug-in.md) (Agregar propiedades al complemento DSP de audio de ejemplo) se proporcionan detalles sobre cómo agregar una nueva propiedad mediante Visual C++. En esta sección se muestra cómo agregar el código manualmente. Esto implica agregar código en los mismos tres lugares donde se modificó el código para la propiedad delay time.
 
-Agregue los prototipos para get wetmix y coloque los métodos demezclado inmediatamente después de los otros prototipos de método \_ \_ de propiedad en Echo.h. Use la sintaxis siguiente:
+Agregue los prototipos para get wetmix y coloque los métodos demezclado inmediatamente después de los otros prototipos de métodos de propiedad \_ \_ en Echo.h. Use la sintaxis siguiente:
 
 
 ```C++

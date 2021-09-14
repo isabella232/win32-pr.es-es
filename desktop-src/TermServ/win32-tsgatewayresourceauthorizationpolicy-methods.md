@@ -5,12 +5,12 @@ ms.assetid: A30CB78B-7A60-4582-802C-3742CB5B84CC
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f4dd5bd303d888d7b5113d2474af1b1c2b432c820adf1c348569c1d22671551
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 349573a2839c3f9dfa7faa980a80d9bb208554c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117940042"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890620"
 ---
 # <a name="win32_tsgatewayresourceauthorizationpolicy-methods"></a>Métodos \_ TSGatewayResourceAuthorizationPolicy de Win32
 

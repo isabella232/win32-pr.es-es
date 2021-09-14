@@ -1,25 +1,25 @@
 ---
-title: Arte del álbum
-description: Arte del álbum
+title: Álbum de arte
+description: Álbum de arte
 ms.assetid: a5996232-e1ee-41ae-a6ca-f841321644fe
 keywords:
 - Reproductor de Windows Media Máscaras móviles, arte de álbum
-- skins,album art
+- máscaras, arte de álbum
 - referencia de máscaras, arte de álbum
 - archivos de arte para máscaras, arte de álbum
 - arte de álbum en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8183c7de25c891c59ef68f5938de532a66700400d916c3fc7610a761b2024d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a0974f8683da98469e75a4472d086dcb1a244c75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119865125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890185"
 ---
-# <a name="album-art"></a>Arte del álbum
+# <a name="album-art"></a>Álbum de arte
 
-Al crear una máscara para Reproductor de Windows Media 10 Mobile o posterior, es posible que quiera mostrar el arte del álbum relacionado con el elemento multimedia que se está reproduciendo actualmente. Al diseñar la máscara, querrá reservar espacio en la imagen de fondo para contener el arte del álbum.
+Al crear una máscara para Reproductor de Windows Media 10 Mobile o versiones posteriores, es posible que quiera mostrar el material de álbum relacionado con el elemento multimedia que se está reproduciendo actualmente. Al diseñar la máscara, querrá reservar espacio en la imagen de fondo para que contenga el arte del álbum.
 
 La sección Album Art del archivo de definición de máscara debe comenzar con la siguiente línea:
 
@@ -31,7 +31,7 @@ La sección Album Art del archivo de definición de máscara debe comenzar con l
 
 
 
-A continuación, debe agregar información que especifique la ubicación y el tamaño de la imagen del álbum en la máscara. Debe escribir cuatro enteros positivos, separados por comas que definan la izquierda, la parte superior, el ancho y el alto del arte del álbum, en píxeles, con respecto a la imagen de fondo. En el ejemplo siguiente se muestra cómo especificar dimensiones:
+A continuación, debe agregar información que especifique la ubicación y el tamaño de la imagen del álbum en la máscara. Debe escribir cuatro enteros positivos, separados por comas que definen la izquierda, la parte superior, el ancho y el alto de la imagen del álbum, en píxeles, con respecto a la imagen de fondo. En el ejemplo siguiente se muestra cómo especificar dimensiones:
 
 
 ```C++
@@ -43,7 +43,7 @@ A continuación, debe agregar información que especifique la ubicación y el ta
 
 
 
-Si planea incluir una sección de vídeo en la máscara, puede usar el mismo tamaño y la misma ubicación para que el arte del álbum conserve espacio.
+Si planea incluir una sección de vídeo en la máscara, puede usar el mismo tamaño y ubicación para el arte del álbum a la hora de ahorrar espacio.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -19,12 +19,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f1dba262ddb332f03c7f398c4f205e73a9c9e94054d4164fb94c8c01dc8b505
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3979dbe5403ca8f18e941b01e95774dabefe3211
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118127085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890833"
 ---
 # <a name="win32_sessiondirectorycluster-class"></a>Clase SessionDirectoryCluster de Win32 \_
 
@@ -47,7 +47,7 @@ class Win32_SessionDirectoryCluster
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SessionDirectoryCluster de Win32** tiene estos tipos de miembros:
 
@@ -68,7 +68,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nombre de la granja en agente de conexión a Escritorio remoto.
@@ -84,7 +84,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de servidores de la granja en agente de conexión a Escritorio remoto.
+Número de servidores de la granja en el Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Modo de sesión única de la granja en agente de conexión a Escritorio remoto.
+Modo de sesión única de la granja en el Agente de conexión a Escritorio remoto.
 
 <dt>
 
@@ -117,9 +117,9 @@ La granja de servidores del Agente de conexión a Escritorio remoto está en mod
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -135,7 +135,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

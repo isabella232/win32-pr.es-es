@@ -1,11 +1,11 @@
 ---
-title: Propiedad IMsRdpClient10 RemoteProgram3
+title: IMsRdpClient10 RemoteProgram3, propiedad
 description: Objeto que admite la interfaz ITSRemoteProgram3.
 ms.assetid: afb26152-32eb-45de-a228-a6f7ca7eea2b
 ms.tgt_platform: multiple
 keywords:
 - Propiedad RemoteProgram3 Servicios de Escritorio remoto
-- Propiedad RemoteProgram3 Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Propiedad RemoteProgram3 Servicios de Escritorio remoto interfaz , IMsRdpClient10
 - Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad RemoteProgram3
 topic_type:
 - apiref
@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f332985777d6b83e04724e6bf0af65b06b3cac50d73ba437647dc93944f76e8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 334b0cd4e71cb1dde48bd7868a3dbe23fc2a4a97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118130297"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890993"
 ---
 # <a name="imsrdpclient10remoteprogram3-property"></a>Propiedad IMsRdpClient10::RemoteProgram3
 
@@ -59,7 +59,7 @@ Devuelve un [**puntero de interfaz ITSRemoteProgram3.**](itsremoteprogram3.md)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

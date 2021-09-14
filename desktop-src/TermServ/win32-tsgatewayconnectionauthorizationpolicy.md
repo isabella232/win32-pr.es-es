@@ -1,6 +1,6 @@
 ---
 title: Win32_TSGatewayConnectionAuthorizationPolicy clase
-description: Describe una directiva de Escritorio remoto de autorización de conexión (Rd\ 160; CAP). Rd \ 160; Las CAP se usan para determinar si un usuario puede conectarse al servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
+description: Describe una directiva de Escritorio remoto de autorización de conexión (Escritorio remoto \ 160; CAP). Escritorio remoto \ 160; Las CAP se usan para determinar si un usuario puede conectarse al servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 ms.assetid: 50ff3f97-0818-4e9c-9db7-a822cfed0e82
 ms.tgt_platform: multiple
 keywords:
@@ -36,12 +36,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bfaefb0a3062db27622afe90023928507c6d127c64edb60041347f73c1b261c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27384ec3a5f17c3e41fe0ceccf0ee1f7f9d08044
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118349250"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890692"
 ---
 # <a name="win32_tsgatewayconnectionauthorizationpolicy-class"></a>Clase \_ TSGatewayConnectionAuthorizationPolicy de Win32
 
@@ -76,7 +76,7 @@ class Win32_TSGatewayConnectionAuthorizationPolicy
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TSGatewayConnectionAuthorizationPolicy de Win32** tiene estos tipos de miembros:
 
@@ -93,7 +93,7 @@ La **clase \_ TSGatewayConnectionAuthorizationPolicy de Win32** tiene estos mét
 |:----------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AddComputerGroupNames**](addcomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                   | Agrega los nombres de grupo de equipos especificados a **la propiedad ComputerGroupNames.**<br/>                                                                                      |
 | [**AddUserGroupNames**](addusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Agrega los nombres de grupo de usuarios especificados a **la propiedad UserGroupNames.**<br/>                                                                                              |
-| [**Creación**](create-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Crea un CAP de Escritorio remoto.<br/>                                                                                                                                                   |
+| [**Crear**](create-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Crea un CAP de Escritorio remoto.<br/>                                                                                                                                                   |
 | [**Eliminar**](delete-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Elimina el CAP de Escritorio remoto actual.<br/>                                                                                                                                          |
 | [**DisableClipboard**](disableclipboard-win32-tsgatewayconnectionauthorizationpolicy.md)                             | Establece la **propiedad ClipboardDisabled.**<br/>                                                                                                                             |
 | [**DisableDiskDrives**](disablediskdrives-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Establece la **propiedad DiskDrivesDisabled.**<br/>                                                                                                                            |
@@ -137,7 +137,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si las conexiones solo permiten proteger servidores RDS de redireccionamiento de dispositivos (SDR). Esta propiedad se puede establecer mediante el [**método EnableAllowOnlySDRServers.**](win32-tsgatewayconnectionauthorizationpolicy-enableallowonlysdrservers.md)
+Indica si las conexiones solo permiten proteger servidores RDS de redirección de dispositivos (SDR). Esta propiedad se puede establecer mediante [**el método EnableAllowOnlySDRServers.**](win32-tsgatewayconnectionauthorizationpolicy-enableallowonlysdrservers.md)
 
 **Windows Server 2008:** Esta propiedad no está disponible antes de Windows Server 2008 R2.
 
@@ -165,7 +165,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Lista de nombres de grupos de equipos separados por punto y coma. Este valor puede estar vacío. Los nombres tienen el formato *Domain \\ ComputerGroupName*. Si se especifica un valor, el equipo cliente debe pertenecer a uno de estos grupos de equipos para que el usuario acceda al servidor de puerta de enlace de Escritorio remoto.
+Lista de nombres de grupos de equipos separados por punto y coma. Este valor puede estar vacío. Los nombres tienen el formato *Dominio \\ ComputerGroupName*. Si se especifica un valor, el equipo cliente debe pertenecer a uno de estos grupos de equipos para que el usuario acceda al servidor de puerta de enlace de Escritorio remoto.
 
 </dd> <dt>
 
@@ -233,7 +233,7 @@ Indica si se deshabilitará el redireccionamiento de la unidad de disco. Esta pr
 
 </dd> <dt>
 
-**Habilitado**
+**Enabled**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -366,7 +366,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si se deshabilitará el redireccionamiento del puerto serie. Esta propiedad solo tiene efecto si la **propiedad DeviceRedirectionType** tiene un valor de "2".
+Indica si se deshabilitará la redirección de puertos serie. Esta propiedad solo tiene efecto si la **propiedad DeviceRedirectionType** tiene un valor de "2".
 
 </dd> <dt>
 
@@ -444,17 +444,17 @@ Lista de nombres de grupos de usuarios separados por punto y coma. Los nombres t
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe ser miembro del grupo Administradores para usar esta clase.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las clases Windows Management Instrumentation (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
@@ -464,7 +464,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

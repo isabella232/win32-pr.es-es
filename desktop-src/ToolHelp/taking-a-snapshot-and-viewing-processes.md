@@ -4,18 +4,18 @@ description: La siguiente aplicación de consola simple obtiene una lista de pro
 ms.assetid: 318d166f-858f-4f33-9422-977e0c4beb3f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cdf74ec3d0d0d47e91b385598b06a672ee17e63681f2c82305474db06993ca2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b90a90ea3456d2783c6015ae230d0f0b9e84806e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118603798"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890524"
 ---
 # <a name="taking-a-snapshot-and-viewing-processes"></a>Tomar una instantánea y ver procesos
 
 La siguiente aplicación de consola simple obtiene una lista de procesos en ejecución. En primer lugar, la función toma una instantánea de los procesos que se están ejecutando actualmente en el sistema mediante `GetProcessList` [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot)y, a continuación, recorre la lista registrada en la instantánea mediante [**Process32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32first) y [**Process32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32next). Para cada proceso a su vez, llama a la función que se describe en Recorrido de la lista de módulos y a la función que se describe en `GetProcessList` Recorrido de la lista de `ListProcessModules` [](traversing-the-module-list.md) `ListProcessThreads` [subprocesos](traversing-the-thread-list.md).
 
-Una función sencilla de generación de informes de errores, , muestra la razón de los errores, que `printError` normalmente son el resultado de restricciones de seguridad. Por ejemplo, [**OpenProcess produce**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) un error en los procesos Inactivo y CSRSS porque sus restricciones de acceso impiden que el código de nivel de usuario los abra.
+Una función sencilla de generación de informes de errores, , muestra el motivo de los errores, que `printError` normalmente son resultado de restricciones de seguridad. Por ejemplo, [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) produce un error en los procesos Inactivo y CSRSS porque sus restricciones de acceso impiden que el código de nivel de usuario los abra.
 
 
 ```C++

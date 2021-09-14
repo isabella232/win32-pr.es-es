@@ -3,7 +3,7 @@ title: Autenticación de mensajes
 description: Autenticación de mensajes
 ms.assetid: 6cb49f6b-e303-4840-9343-9891e75e07a4
 keywords:
-- Windows Autenticación de Administrador de dispositivos,mensaje
+- Windows Media Administrador de dispositivos,message authentication
 - Administrador de dispositivos,autenticación de mensajes
 - aplicaciones de escritorio, autenticación de mensajes
 - proveedores de servicios, autenticación de mensajes
@@ -13,38 +13,38 @@ keywords:
 - MAC (código de autenticación de mensajes)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2921b80d42207bab608c6a8260e6756d3e9f323eab70742acc787ff731ad4b80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14805e2074509e918902aae9eb9e9680ca52a6d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118584489"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890276"
 ---
 # <a name="message-authentication"></a>Autenticación de mensajes
 
-La autenticación de mensajes es un proceso que permite a las aplicaciones y proveedores de servicios comprobar que los datos pasados entre ellos no se han alterado. Windows El Administrador de dispositivos permite a las aplicaciones y proveedores de servicios realizar la autenticación de mensajes mediante códigos de autenticación de mensajes (MAC). Este es el funcionamiento de la autenticación mac:
+La autenticación de mensajes es un proceso que permite a las aplicaciones y proveedores de servicios comprobar que los datos pasados entre ellos no se han alterado. Windows El Administrador de dispositivos permite que las aplicaciones y los proveedores de servicios realicen la autenticación de mensajes mediante códigos de autenticación de mensajes (MAC). Este es el funcionamiento de la autenticación mac:
 
-El remitente de datos, normalmente el proveedor de servicios, pasa uno o varios fragmentos de datos a través de una función criptográfica un solo sentido que genera una sola firma, el MAC, para todos los datos. A continuación, el remitente envía todos los datos firmados junto con el MAC al receptor (normalmente la aplicación). El receptor pasa los datos a través de la misma función criptográfica para generar un MAC y los compara con el MAC que se envió. Si el MAC coincide, los datos no se han modificado.
+El remitente de datos, normalmente el proveedor de servicios, pasa uno o varios fragmentos de datos a través de una función criptográfica un solo uso que genera una sola firma, mac, para todos los datos. A continuación, el remitente envía todos los datos firmados junto con el MAC al receptor (normalmente la aplicación). El receptor pasa los datos a través de la misma función criptográfica para generar un MAC y los compara con el MAC que se envió. Si el EQUIPO MAC coincide, los datos no se han modificado.
 
-Para realizar la autenticación mac, la aplicación o el proveedor de servicios requiere una clave de cifrado y un certificado correspondiente. Para obtener información sobre dónde obtener estos datos, vea [Herramientas de desarrollo.](tools-for-development.md)
+Para realizar la autenticación mac, la aplicación o el proveedor de servicios requiere una clave de cifrado y un certificado correspondiente. Para obtener información sobre dónde obtener estos datos, vea [Herramientas para el desarrollo.](tools-for-development.md)
 
-En los pasos siguientes se describe cómo el remitente firma los datos y, posteriormente, lo comprueba el receptor. En Windows Media Administrador de dispositivos, el proveedor de servicios usa la clase [CSecureChannelServer](csecurechannelserver-class.md) para generar LOS MAC y la aplicación usa la [clase CSecureChannelClient.](csecurechannelclient-class.md) Ambas clases proporcionan funciones idénticas con parámetros idénticos, por lo que los pasos siguientes se aplican a ambas clases.
+En los pasos siguientes se describe cómo firman los datos el remitente y, posteriormente, el receptor lo comprueba. En Windows Media Administrador de dispositivos, el proveedor de servicios usa la clase [CSecureChannelServer](csecurechannelserver-class.md) para generar macs y la aplicación usa la [clase CSecureChannelClient.](csecurechannelclient-class.md) Ambas clases proporcionan funciones idénticas con parámetros idénticos, por lo que los pasos siguientes se aplican a ambas clases.
 
 El remitente (normalmente el proveedor de servicios):
 
 1.  Obtenga los datos que se firmarán.
-2.  Cree un nuevo identificador MAC mediante una llamada **a MACInit**.
+2.  Cree un nuevo identificador mac mediante una llamada **a MACInit**.
 3.  Agregue un fragmento de datos que se va a firmar en el identificador mediante una llamada a **MACUpdate**. Esta función acepta el identificador creado anteriormente, además de un fragmento de datos que se debe firmar.
-4.  Repita el paso 3 con cada dato adicional que se deba firmar. No importa en qué orden se agregan los datos al EQUIPO MAC.
-5.  Copie el MAC del identificador en un nuevo búfer de bytes mediante una llamada a **MACFinal**. Esta función acepta el identificador MAC y un búfer que asigne, y copia el MAC del identificador en el búfer proporcionado.
+4.  Repita el paso 3 con cada dato adicional que se debe firmar. No importa en qué orden se agregan los datos al equipo MAC.
+5.  Copie el MAC del identificador en un nuevo búfer de bytes mediante una llamada a **MACFinal.** Esta función acepta el identificador MAC y un búfer que asigne, y copia el MAC del identificador en el búfer proporcionado.
 
-Al realizar la autenticación mac, es importante que tanto el remitente como el receptor estén colocando los mismos datos en el EQUIPO MAC. Para los métodos de aplicación que proporcionan un MAC, normalmente todos los parámetros se incluyen en el valor mac (excepto el propio MAC, por supuesto). Por ejemplo, considere el **método IWMDMOperation::TransferObjectData:**
+Al realizar la autenticación de MAC, es importante que tanto el remitente como el receptor estén colocando los mismos datos en el EQUIPO MAC. Para los métodos de aplicación que proporcionan un MAC, normalmente todos los parámetros se incluyen en el valor mac (excepto el propio MAC, por supuesto). Por ejemplo, considere el **método IWMDMOperation::TransferObjectData:**
 
 `HRESULT TransferObjectData(BYTE* pData, DWORD* pdwSize, BYTE[WMDM_MAC_LENGTH] abMac);`
 
-En este método, el MAC incluiría *pData* y *pdwSize*. Si no incluye ambos parámetros, el MAC que cree no coincidirá con el MAC pasado *a abMac*. Un proveedor de servicios debe asegurarse de colocar todos los parámetros necesarios en el método de aplicación en el valor de MAC.
+En este método, el mac incluiría *pData* y *pdwSize.* Si no incluye ambos parámetros, el EQUIPO MAC que cree no coincidirá con el MAC pasado *a abMac*. Un proveedor de servicios debe asegurarse de colocar todos los parámetros necesarios en el método de aplicación en el valor de MAC.
 
-El siguiente código de C++ muestra cómo crear un MAC en la implementación de [**IMDSPStorageGlobals::GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getserialnumber)de un proveedor de servicios.
+El siguiente código de C++ muestra cómo crear un EQUIPO MAC en la implementación de [**IMDSPStorageGlobals::GetSerialNumber**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspstorageglobals-getserialnumber)de un proveedor de servicios.
 
 
 ```C++

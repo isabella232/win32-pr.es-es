@@ -5,12 +5,12 @@ ms.assetid: FEB05240-A2D9-41E9-A0E7-71AE99DD8DC4
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2c2e4f36800b843f9087f640cd602680bd1bbfd949380e3d3980644e74eb145
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4871afe6183095f3bd39ae93f013424189a566c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119137948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890844"
 ---
 # <a name="win32_terminal-methods"></a>Métodos de terminal Win32 \_
 

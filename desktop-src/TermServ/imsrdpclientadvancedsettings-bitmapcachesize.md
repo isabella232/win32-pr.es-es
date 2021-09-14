@@ -5,7 +5,7 @@ ms.assetid: a2a4b739-0fa3-4a76-87ae-3cba913b7703
 ms.tgt_platform: multiple
 keywords:
 - Propiedad BitmapCacheSize Servicios de Escritorio remoto
-- Propiedad BitmapCacheSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Propiedad BitmapCacheSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad BitmapCacheSize
 - Propiedad BitmapCacheSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad BitmapCacheSize
@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af56056cbdd62bb041ba9ab08e83a4f09e69037a3f9bd6799fa0c0facc9da75e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a38376bb0b06bd4efea36d3c4cad4e4aec0f35b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118609056"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890900"
 ---
 # <a name="imsrdpclientadvancedsettingsbitmapcachesize-property"></a>IMsRdpClientAdvancedSettings::BitmapCacheSize, propiedad
 
@@ -108,7 +108,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
