@@ -4,7 +4,7 @@ description: Proporciona métodos que se usan para admitir validadores de estado
 ms.assetid: 12094203-bb6c-4028-9baf-a2a9b124ce6d
 keywords:
 - NAP de la interfaz INapSystemHealthValidationRequest2
-- Interfaz NAP INapSystemHealthValidationRequest2 , descrita
+- Interfaz NAP de INapSystemHealthValidationRequest2 , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b6438394120ecd901c6de6d7a8ccac40f742d9f73d27a36682de894d9c5a7ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12fdbfc46578a4e64a92accc46f6b910a44dd946
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118620854"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161275"
 ---
 # <a name="inapsystemhealthvalidationrequest2-interface"></a>Interfaz INapSystemHealthValidationRequest2
 
@@ -36,7 +36,7 @@ La **interfaz INapSystemHealthValidationRequest2** proporciona métodos que se u
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz INapSystemHealthValidationRequest2** hereda de [**INapSystemHealthValidationRequest.**](inapsystemhealthvalidationrequest.md) **INapSystemHealthValidationRequest2** también tiene estos tipos de miembros:
 
@@ -68,13 +68,13 @@ Si una SHV no admite [**INapComponentConfig3,**](inapcomponentconfig3.md)esta in
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
-| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

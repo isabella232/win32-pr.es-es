@@ -1,15 +1,15 @@
 ---
-description: Wi-Fi de dispositivo directo.
+description: Wi-Fi dirección del dispositivo directo.
 ms.assetid: 06f7d944-f94b-4afc-8381-f60a329cb689
 title: System.Devices.WiFiDirect.DeviceAddress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ec76d56d5cd4c2321ece628e2436bacb381da03ae33c16ea90d117aff5fc20b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f2f430127383fea0e9af561df07127aeaed384e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119097014"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248252"
 ---
 # <a name="systemdeviceswifidirectdeviceaddress"></a>System.Devices.WiFiDirect.DeviceAddress
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

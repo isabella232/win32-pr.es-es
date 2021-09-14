@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Hh578119(v=EXCHG.10)
 ms:contentKeyID: 39511390
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8fa71240dc3741a96b587cb4706d8a29bbe9954b9932609a5e59d024b128180b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3566cb7c11ef62a2a2c2f67d287cf3be8bb5be7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258143"
 ---
 # <a name="icontentequatablet-members"></a>Miembros IContentEquatable \<T\>
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Interfaz para objetos que pueden comparar su contenido entre sí. Esto se debe usar para comparaciones de igualdad en objetos de referencia mutables donde invalidar Equals() y GetHashCode() no es una buena idea.
+Interfaz para objetos que pueden comparar su contenido entre sí. Esto debe usarse para las comparaciones de igualdad en objetos de referencia mutable donde invalidar Equals() y GetHashCode() no es una buena idea.
 
 El [tipo IContentEquatable \<T\> ](./icontentequatable-t-interface.md) expone los miembros siguientes.
 
@@ -45,7 +45,7 @@ El [tipo IContentEquatable \<T\> ](./icontentequatable-t-interface.md) expone lo
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

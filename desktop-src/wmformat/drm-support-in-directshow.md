@@ -8,7 +8,7 @@ keywords:
 - Windows SDK de formato multimedia, administración de derechos digitales (DRM)
 - Formato de sistemas avanzados (ASF), compatibilidad con DRM en DirectShow
 - ASF (formato de sistemas avanzados), compatibilidad con DRM en DirectShow
-- Formato de sistemas avanzados (ASF),DirectShow
+- Formato de sistemas avanzados (ASF), DirectShow
 - ASF (formato de sistemas avanzados),DirectShow
 - Formato de sistemas avanzados (ASF), administración de derechos digitales (DRM)
 - ASF (formato de sistemas avanzados), administración de derechos digitales (DRM)
@@ -17,16 +17,16 @@ keywords:
 - DRM (administración de derechos digitales),DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4b3de3ca80d1b3b2fe27c9af590fe0cba0202b1fdd9b6fc322d8ed1c1871536
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85a211a3d3b438bac246c0bd90759f648818ac2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119930885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247353"
 ---
 # <a name="drm-support-in-directshow"></a>Compatibilidad con DRM en DirectShow
 
-La lectura y escritura de archivos protegidos con DRM en DirectShow se realiza básicamente de la misma manera que cuando se usa el SDK Windows Media Format directamente. Para empezar, necesita la biblioteca estática wmstubdrm, que se obtiene por separado de Microsoft. Además, debe implementar la interfaz **IKeyProvider** para permitir que la aplicación acceda a los objetos en tiempo de ejecución del SDK de formato multimedia de Windows cuando drm está habilitado.
+La lectura y escritura de archivos protegidos con DRM en DirectShow se realiza básicamente de la misma manera que cuando se usa el SDK Windows Media Format directamente. Para empezar, necesita la biblioteca estática wmstubdrm, que se obtiene por separado de Microsoft. Además, debe implementar la interfaz **IKeyProvider** para permitir que la aplicación acceda a los objetos en tiempo de ejecución del SDK de Windows Media Format cuando drm está habilitado.
 
 Al aplicar la protección de la versión 1 de DRM, use la interfaz [**IWMHeaderInfo,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) que se obtiene como se describe en Lectura de archivos [ASF en DirectShow](reading-asf-files-in-directshow.md). Al aplicar la protección de la versión 7 de DRM, obtenga la interfaz [**IWMDRMWriter**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmwriter) llamando a **QueryService** en el filtro [WM ASF Writer,](wm-asf-writer-filter.md) como se muestra en el fragmento de código más adelante en este tema.
 

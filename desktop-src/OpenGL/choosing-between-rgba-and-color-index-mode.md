@@ -1,24 +1,24 @@
 ---
-title: Elegir entre RGBA y Color-Index automático
-description: En general, use el modo RGBA para las aplicaciones OpenGL; proporciona más flexibilidad que el modo de índice de color para efectos como sombreado, iluminación, asignación de colores, paleta, suavizado de contorno y combinación.
+title: Elegir entre RGBA y Color-Index modo
+description: En general, use el modo RGBA para las aplicaciones OpenGL; proporciona más flexibilidad que el modo de índice de color para efectos como sombreado, iluminación, asignación de colores, sonido, suavizado de contorno y combinación.
 ms.assetid: 13644a7c-bdc6-4dac-ba16-4723c72b15e5
 keywords:
-- OpenGL en Windows modo RGBA
+- OpenGL en Windows, modo RGBA
 - OpenGL en Windows, modo de índice de color
 - OpenGL en modo RGBA
-- color-index mode OpenGL
+- modo de índice de colores OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa78096369ec9ba01d6e0dcd3d67535a0d368ef7a5018d3679f9f64dcdf74d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0368461d6ece7b823a8627f664daace027fd76c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119554635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161132"
 ---
-# <a name="choosing-between-rgba-and-color-index-mode"></a>Elegir entre RGBA y Color-Index automático
+# <a name="choosing-between-rgba-and-color-index-mode"></a>Elegir entre RGBA y Color-Index modo
 
-En general, use el modo RGBA para las aplicaciones OpenGL; proporciona más flexibilidad que el modo de índice de color para efectos como sombreado, iluminación, asignación de colores, paleta, suavizado de contorno y combinación.
+En general, use el modo RGBA para las aplicaciones OpenGL; proporciona más flexibilidad que el modo de índice de color para efectos como sombreado, iluminación, asignación de colores, sonido, suavizado de contorno y combinación.
 
 Considere la posibilidad de usar el modo de índice de color en los casos siguientes:
 

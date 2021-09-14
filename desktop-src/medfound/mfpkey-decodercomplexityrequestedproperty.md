@@ -1,19 +1,19 @@
 ---
-description: Especifica la plantilla de conformidad del dispositivo que desea usar para la codificación de vídeo.
+description: Especifica la plantilla de conformidad de dispositivos que desea usar para la codificación de vídeo.
 ms.assetid: cd2c068a-dbbc-42c5-bc92-bbb73f0259d1
 title: MFPKEY_DECODERCOMPLEXITYREQUESTED propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83330e3e413967d3b97d6531f8bbaf6ebd7809f732885849d0bf7b8f62d55ef5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e017361d7e8267d33ecb2cfdbce2a6e79758fac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119954235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257615"
 ---
-# <a name="mfpkey_decodercomplexityrequested-property"></a>Propiedad MFPKEY \_ DECODERCOMPLEXITYREQUESTED
+# <a name="mfpkey_decodercomplexityrequested-property"></a>Propiedad \_ DECODERCOMPLEXITYREQUESTED de MFPKEY
 
-Especifica la plantilla de conformidad del dispositivo que desea usar para la codificación de vídeo.
+Especifica la plantilla de conformidad de dispositivos que desea usar para la codificación de vídeo.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -35,7 +35,7 @@ VT \_ BSTR
 
 "MP"
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El códec intentará codificar el contenido mediante la plantilla de conformidad del dispositivo especificada por este valor. La plantilla real a la que se ajusta el contenido codificado se puede recuperar de la propiedad [MFPKEY \_ DECODERCOMPLEXITYPROFILE](mfpkey-decodercomplexityprofileproperty.md) después de la codificación.
 
@@ -59,13 +59,13 @@ Esta propiedad debe ser uno de los siguientes valores.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

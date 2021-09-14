@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 48b9bb16bdcb145b94e94de61ed011bb9931982511ddfb8ac9076d047c01ad0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b19a060cfeb09d5d1a92e5e7a1a1f25b58e64f4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119121471"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060614"
 ---
 # <a name="id3dxeffectstatemanagersettransform-method"></a>Método ID3DXEffectStateManager::SetTransform
 
@@ -79,7 +79,7 @@ El método implementado por el usuario debe devolver S \_ OK. Si se produce un e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

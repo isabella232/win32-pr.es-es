@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 41634a89-15b9-41c8-ba3f-4bf19b786f6f
-ms.openlocfilehash: 5141b35b9fb71b09b9b269016d0b38cdb0b9f01ec88a02070a0f936934159930
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2edaa79bd62dcee40e4f197700d2128cb0b2070d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119941505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247946"
 ---
 # <a name="shelluihelperadddesktopcomponent-method"></a>Método ShellUIHelper.AddDesktopComponent
 
@@ -93,7 +93,7 @@ Posición del borde izquierdo del componente, en coordenadas de pantalla.
 
 </dd> <dt>
 
-*Parte superior* \[ en, opcional\]
+*Top* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **Variant**
@@ -122,7 +122,7 @@ Alto del componente, en unidades de pantalla.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertados en HTML y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertado en HTML y Visual Basic.
 
 JScript:
 
@@ -175,7 +175,7 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |

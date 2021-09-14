@@ -1,22 +1,22 @@
 ---
-description: Una alternativa es una posible coincidencia de palabras para un segmento de reconocimiento. Un reconocedor genera alternativas y las basa en coincidencias aceptables de la entrada de entrada de lápiz o audio en un diccionario o factoid.
+description: Una alternativa es una posible coincidencia de palabras para un segmento de reconocimiento. Un reconocedor genera alternativas y las basa en coincidencias aceptables de la entrada de lápiz o audio en un diccionario o factoid.
 ms.assetid: 69327f1d-f240-4b8a-8bee-0a96a0c425c2
 title: Alternativas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b76faf27b82a6bfc064fddbad3d2d4ca6c2dddc098d56bca340b677cea17a319
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 350c9ac97f0af1451a0ded6445cf658dad4ee4c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119337045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247875"
 ---
 # <a name="alternates"></a>Alternativas
 
-Una alternativa es una posible coincidencia de palabras para un segmento de reconocimiento. Un reconocedor genera alternativas y las basa en coincidencias aceptables de la entrada de entrada de lápiz o audio en un diccionario o factoid.
+Una alternativa es una posible coincidencia de palabras para un segmento de reconocimiento. Un reconocedor genera alternativas y las basa en coincidencias aceptables de la entrada de lápiz o audio en un diccionario o factoid.
 
 > [!Note]  
-> La evaluación de confianza solo está disponible actualmente para el inglés de Microsoft (Estados Unidos) y los reconocedores de gestos.
+> Actualmente, la evaluación de confianza solo está disponible para el inglés de Microsoft (Estados Unidos) y los reconocedores de gestos.
 
  
 

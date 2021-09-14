@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c7a16417528d1adbd9ba54f9bd7120057654d14e0ef4bddad829e8f232445069
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d69cbcd6c14bb3a874a382f46fe5aee6619b8168
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119856745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060628"
 ---
 # <a name="id3dxeffectcompiler-interface"></a>Interfaz ID3DXEffectCompiler
 
 La **interfaz ID3DXEffectCompiler** compila un efecto de una función o de un sombreador de vértices.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ID3DXEffectCompiler** hereda de [**ID3DXBaseEffect**](id3dxbaseeffect.md). **ID3DXEffectCompiler** también tiene estos tipos de miembros:
 
@@ -48,9 +48,9 @@ La **interfaz ID3DXEffectCompiler** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La interfaz ID3DXEffectCompiler se obtiene llamando a [**D3DXCreateEffectCompiler**](d3dxcreateeffectcompiler.md), [**D3DXCreateEffectCompilerFromFile**](d3dxcreateeffectcompilerfromfile.md)o [**D3DXCreateEffectCompilerFromResource**](d3dxcreateeffectcompilerfromresource.md).
+La interfaz ID3DXEffectCompiler se obtiene mediante una llamada a [**D3DXCreateEffectCompiler,**](d3dxcreateeffectcompiler.md) [**D3DXCreateEffectCompilerFromFile**](d3dxcreateeffectcompilerfromfile.md)o [**D3DXCreateEffectCompilerFromResource**](d3dxcreateeffectcompilerfromresource.md).
 
 El tipo LPD3DXEFFECTCOMPILER se define como un puntero a esta interfaz.
 
@@ -73,7 +73,7 @@ typedef interface ID3DXEffectCompiler *LPD3DXEFFECTCOMPILER;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

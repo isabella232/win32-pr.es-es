@@ -4,12 +4,12 @@ ms.assetid: d19d851c-ab4a-4a9d-bcc4-8dd4e993fa2c
 title: MF_EVENT_START_PRESENTATION_TIME atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd623677de67d2101f4b1cbb3e17ce429f37f0788d99f802be0889a35dd3471e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 65bf6142ce12a7bf921fd26373ea5d10ab384560
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119104831"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127257879"
 ---
 # <a name="mf_event_start_presentation_time-attribute"></a>Atributo MF \_ EVENT \_ START PRESENTATION \_ \_ TIME
 
@@ -19,9 +19,9 @@ Hora de inicio de la presentación, en unidades de 100 nanosegundos, medida por 
 
 **UINT64**
 
-Tratar como **un valor LONGLONG.**
+Tratar como un **valor LONGLONG.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se usa con el [evento MESessionNotifyPresentationTime.](mesessionnotifypresentationtime.md)
 
@@ -33,11 +33,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

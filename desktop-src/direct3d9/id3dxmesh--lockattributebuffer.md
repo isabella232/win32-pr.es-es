@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8ca767c6bc223c40d6013b93162de057aac9f4fb1b71303990f9128e4eca1ee6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 901cb98a9d75d08b6412d6fdca841d403064354b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118802158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060560"
 ---
 # <a name="id3dxmeshlockattributebuffer-method"></a>Método ID3DXMesh::LockAttributeBuffer
 
@@ -70,9 +70,9 @@ Dirección de un puntero a un búfer que contiene un DWORD para cada cara de la 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se ha llamado a [**ID3DXMesh::Optimize,**](id3dxmesh--optimize.md) la malla también tendrá una tabla de atributos a la que se puede acceder mediante el método [**ID3DXBaseMesh::GetAttributeTable.**](id3dxbasemesh--getattributetable.md)
 

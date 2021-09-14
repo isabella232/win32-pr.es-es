@@ -4,12 +4,12 @@ ms.assetid: c2b30722-bc02-443b-9bdc-8b6c1c20d354
 title: System.IsSendToTarget
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1f9dcb4b631517761c7560b8f78a0d300a913246b3618ed8d2af56dba9df876
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d67698db16be68c3a6de16f1661d7c2ce7dad612
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119822395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248157"
 ---
 # <a name="systemissendtotarget"></a>System.IsSendToTarget
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

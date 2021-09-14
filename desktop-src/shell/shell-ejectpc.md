@@ -1,7 +1,7 @@
 ---
-description: 'Método Shell.DisposePC: expulsa el equipo de su estación de acoplamiento. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar Expulsar PC, si el equipo admite este comando.'
+description: 'Método Shell.EjectPC: expulsa el equipo de su estación de acoplamiento. Esto es lo mismo que hacer clic en menú Inicio y seleccionar Expulsar PC, si el equipo admite este comando.'
 ms.assetid: eaba3dce-8fea-453f-90c2-4a9b5cb05ecc
-title: Método Shell.DisposePC (Shldisp.h)
+title: Método Shell.EjectPC (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 3f774b666647ebf8a255950fe8427a87e55ca514db9ed841a5fc7f2e7edb2e69
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5ec08aaa82d2f752fa06537434adede86b9d5a3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119883885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247977"
 ---
-# <a name="shellejectpc-method"></a>Método Shell.DisposePC
+# <a name="shellejectpc-method"></a>Método Shell.EjectPC
 
-Expulsa el equipo de su estación de acoplamiento. Esto es lo mismo que hacer clic en el **menú** Inicio y seleccionar **Expulsar PC**, si el equipo admite este comando.
+Expulsa el equipo de su estación de acoplamiento. Esto es lo mismo que hacer clic en el **menú** Inicio y seleccionar **Expulsar PC** si el equipo admite este comando.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **muestra Desanudpc** en uso. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra La aplicación Desanudópc** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -118,7 +118,7 @@ End Sub
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

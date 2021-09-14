@@ -1,26 +1,26 @@
 ---
-description: Las siguientes funciones se usan con espacios de coordenadas y transformaciones.
+description: Las funciones siguientes se usan con espacios de coordenadas y transformaciones.
 ms.assetid: 3ebcabf2-9718-47b2-aba0-7cc28fa42e5a
 title: Funciones de espacio de coordenadas y transformación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe24e78002393d7a840e99d33840dfa4ba0d9e2ac89d941f998261955683e13f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 38e561f5cc9784439f5bef4f696e98d5919cb052
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119718085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258087"
 ---
 # <a name="coordinate-space-and-transformation-functions"></a>Funciones de espacio de coordenadas y transformación
 
-Las siguientes funciones se usan con espacios de coordenadas y transformaciones.
+Las funciones siguientes se usan con espacios de coordenadas y transformaciones.
 
 
 
 | Función                                                                       | Descripción                                                                                                                      |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | [**ClientToScreen**](/windows/desktop/api/Winuser/nf-winuser-clienttoscreen)                                       | Convierte las coordenadas de área de cliente de un punto especificado en coordenadas de pantalla.                                                 |
-| [**CombineTransform**](/windows/desktop/api/Wingdi/nf-wingdi-combinetransform)                                   | Concatena dos transformaciones de espacio del mundo a espacio de página.                                                                      |
+| [**CombineTransform**](/windows/desktop/api/Wingdi/nf-wingdi-combinetransform)                                   | Concatena dos transformaciones de espacio mundial a espacio de página.                                                                      |
 | [**DPtoLP**](/windows/desktop/api/Wingdi/nf-wingdi-dptolp)                                                       | Convierte las coordenadas del dispositivo en coordenadas lógicas.                                                                            |
 | [**GetCurrentPositionEx**](/windows/desktop/api/Wingdi/nf-wingdi-getcurrentpositionex)                           | Recupera la posición actual en coordenadas lógicas.                                                                           |
 | [**GetDisplayAutoRotationPreferences**](/previous-versions//dn376360(v=vs.85)) | Obtiene las preferencias de orientación de la presentación.                                                                                 |

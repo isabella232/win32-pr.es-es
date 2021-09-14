@@ -1,5 +1,5 @@
 ---
-description: Windows Los dispositivos de hardware de adquisición de imágenes (WIA) tienen valores de propiedad que se almacenan en Windows registro. Para obtener más información, vea Constantes de propiedad de dispositivo común.
+description: Windows Los dispositivos de hardware de adquisición de imágenes (WIA) tienen valores de propiedad que se almacenan en el registro Windows imágenes. Para obtener más información, vea Constantes de propiedad de dispositivo común.
 ms.assetid: 7893137b-194c-4ea1-b15c-59d2f41f972a
 title: Constantes de propiedad de dispositivo de cámara (Wiadef.h)
 ms.topic: reference
@@ -56,17 +56,17 @@ api_type:
 api_location:
 - wiadef.h
 ms.openlocfilehash: f33e7f2dfd17e535e47026aee173feccb7c69584
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624201"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247622"
 ---
 # <a name="camera-device-property-constants"></a>Constantes de propiedad de dispositivo de cámara
 
-Windows Los dispositivos de hardware de adquisición de imágenes (WIA) tienen valores de propiedad que se almacenan en Windows registro. Para obtener más información, [**vea Constantes comunes de propiedades de dispositivo.**](-wia-wiaitempropcommondevice.md)
+Windows Los dispositivos de hardware de adquisición de imágenes (WIA) tienen valores de propiedad que se almacenan en el registro Windows imágenes. Para obtener más información, [**vea Constantes comunes de propiedades de dispositivo.**](-wia-wiaitempropcommondevice.md)
 
-Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas, son específicas de las cámaras digitales. El prefijo "WIA DPC" indica una propiedad de dispositivo para cámaras y es la convención de \_ \_ nomenclatura usada en C/C++. Con fines de scripting, estas constantes usan el prefijo "CameraDevice" y forman parte del tipo enumerado [WiaItemPropertyId.](-wia-wiaitempropertyid.md) El nombre de miembro correspondiente de esa enumeración de script aparece entre paréntesis junto al nombre de constante de C/C++ en la lista siguiente.
+Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas, son específicas de las cámaras digitales. El prefijo "WIA DPC" indica una propiedad de dispositivo para cámaras y es la convención \_ de nomenclatura usada en \_ C/C++. Con fines de scripting, estas constantes usan el prefijo "CameraDevice" y forman parte del tipo enumerado [WiaItemPropertyId.](-wia-wiaitempropertyid.md) El nombre de miembro correspondiente de esa enumeración de script aparece entre paréntesis junto al nombre de constante de C/C++ en la lista siguiente.
 
 > [!Note]  
 > WIA no admite cámaras en Windows Vista ni versiones posteriores. Para esas versiones de Windows, use la API de dispositivo portátil (WPD) de Windows descrita en el Kit de desarrollo de controladores (DDK) de Windows para adquirir imágenes de las cámaras.
@@ -141,12 +141,12 @@ Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPC_EXPOSURE_COMP"></span><span id="wia_dpc_exposure_comp"></span><dl> <dt><strong>WIA_DPC_EXPOSURE_COMP</strong></dt> <dt>CameraDeviceExposureComp</dt> </dl></td>
-<td ><p>Permite el ajuste del punto de conjunto del control de exposición automática de la cámara digital. Por ejemplo, una configuración de cero no cambia el nivel de exposición automática del conjunto de fábrica. Las unidades están en &quot; paradas &quot; que se escalan por un factor de 1000, para permitir valores de detenciones fraccionales. Un valor de 2000 corresponde a dos detendrá más exposición (cuatro veces más energía en el sensor), lo que genera imágenes más brillantes. Un valor de -1000 corresponde a una detención menos exposición (la mitad de la energía del sensor) que produce imágenes más oscuras. Los valores de configuración están en unidades del Sistema aditivo de exposición fotográfica (APEX). Esta propiedad puede expresarse como una lista o un intervalo de valores. Normalmente, esta propiedad solo se usa cuando el dispositivo tiene la <strong>WIA_DPC_EXPOSURE_MODE</strong> establecida en EXPOSUREMODE_MANUAL.</p>
+<td ><p>Permite el ajuste del punto de conjunto del control de exposición automática de la cámara digital. Por ejemplo, una configuración de cero no cambia el nivel de exposición automática del conjunto de fábrica. Las unidades están en paradas que se escalan por un &quot; &quot; factor de 1000, para permitir valores de detenciones fraccionales. Un valor de 2000 corresponde a dos detendrá más exposición (cuatro veces más energía en el sensor), lo que produce imágenes más brillantes. Un valor de -1000 corresponde a una detención menos exposición (la mitad de la energía del sensor) que produce imágenes más oscuras. Los valores de configuración están en unidades del Sistema aditivo de exposición fotográfica (APEX). Esta propiedad puede expresarse como una lista o un intervalo de valores. Esta propiedad se usa normalmente solo cuando el dispositivo tiene la <strong>propiedad WIA_DPC_EXPOSURE_MODE</strong> establecida en EXPOSUREMODE_MANUAL.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a> o WIA_PROP_LIST</p></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_DPC_EXPOSURE_TIME"></span><span id="wia_dpc_exposure_time"></span><dl> <dt><strong>WIA_DPC_EXPOSURE_TIME</strong></dt> <dt>CameraDeviceExposureTime</dt> </dl></td>
-<td ><p>Corresponde a la velocidad de obturación, en segundos que se escalan en 10 000. Normalmente, el dispositivo usa esta propiedad solo cuando la <strong>propiedad WIA_DPC_EXPOSURE_MODE</strong> está establecida en EXPOSUREMODE_MANUAL o EXPOSUREMODE_SHUTTER_PRIORITY.</p>
+<td ><p>Corresponde a la velocidad de obturación, en segundos que se escalan en 10 000. Normalmente, el dispositivo usa esta propiedad solo cuando la propiedad <strong>WIA_DPC_EXPOSURE_MODE</strong> está establecida en EXPOSUREMODE_MANUAL o EXPOSUREMODE_SHUTTER_PRIORITY.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a> o WIA_PROP_LIST</p></td>
 </tr>
 <tr class="even">
@@ -383,7 +383,7 @@ Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPC_SHARPNESS"></span><span id="wia_dpc_sharpness"></span><dl> <dt><strong>WIA_DPC_SHARPNESS</strong></dt> <dt>CameraDeviceSharpness</dt> </dl></td>
-<td ><p>La nidez percibida de una imagen capturada. Esta propiedad puede usar una lista de valores o un intervalo de valores. El valor mínimo representa la menor cantidad de niguidad, mientras que el valor máximo representa la niguidad máxima. Normalmente, un valor en medio del intervalo representa una niguidad normal o predeterminada.</p>
+<td ><p>Nijez percibido de una imagen capturada. Esta propiedad puede usar una lista de valores o un intervalo de valores. El valor mínimo representa la menor cantidad de ni sharpness, mientras que el valor máximo representa la niguidad máxima. Normalmente, un valor en medio del intervalo representa la niguidad normal o predeterminada.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_LIST</a> o WIA_PROP_RANGE</p></td>
 </tr>
 <tr class="odd">
@@ -393,7 +393,7 @@ Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPC_CAPTURE_MODE"></span><span id="wia_dpc_capture_mode"></span><dl> <dt><strong>WIA_DPC_CAPTURE_MODE</strong></dt> <dt>CameraDeviceCaptureMode</dt> </dl></td>
-<td ><p>Establece el modo de captura de imagen.</p>
+<td ><p>Establece el modo de captura de imágenes.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_LIST</a></p>
 <p>La tabla siguiente tiene las tres constantes que son válidas con esta propiedad.</p>
 
@@ -411,7 +411,7 @@ Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas
 </tr>
 <tr class="even">
 <td>CAPTUREMODE_BURST</td>
-<td>Capture más de una imagen en sucesión rápida, tal y como se define en los valores de las <strong>propiedades WIA_DPC_BURST_NUMBER</strong> y <strong>WIA_DPC_BURST_INTERVAL</strong> personalizadas.</td>
+<td>Capture más de una imagen en una sucesión rápida, tal como se define en los valores de las propiedades <strong>WIA_DPC_BURST_NUMBER</strong> y <strong>WIA_DPC_BURST_INTERVAL</strong> propiedades.</td>
 </tr>
 <tr class="odd">
 <td>CAPTUREMODE_TIMELAPSE</td>
@@ -424,12 +424,12 @@ Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas
 </tr>
 <tr class="odd">
 <td ><span id="WIA_DPC_CAPTURE_DELAY"></span><span id="wia_dpc_capture_delay"></span><dl> <dt><strong>WIA_DPC_CAPTURE_DELAY</strong></dt> <dt>CameraDeviceCaptureDelay</dt> </dl></td>
-<td ><p>Valor que representa la cantidad de retraso de tiempo, en milisegundos, que se debe insertar entre el desencadenador de captura y el inicio real de la captura de datos. Esta propiedad no está diseñada para usarse para describir el tiempo entre fotogramas de inicio único, <strong></strong> varias capturas como ráfagas o intervalos de tiempo, que tienen propiedades de intervalo independientes WIA_DPC_BURST_INTERVAL y <strong>WIA_DPC_TIMELAPSE_INTERVAL</strong>. En esos casos, sigue funcionando como un retraso inicial antes de capturar la primera imagen de la serie, independientemente del tiempo entre fotogramas. Si no hay ningún retraso de la captura previa, esta propiedad debe establecerse en cero.</p>
+<td ><p>Valor que representa la cantidad de retraso de tiempo, en milisegundos, que se debe insertar entre el desencadenador de captura y el inicio real de la captura de datos. Esta propiedad no está pensada para usarse para describir el tiempo entre fotogramas para una sola iniciación, varias capturas como ráfagas o intervalos de tiempo, que tienen propiedades de intervalo independientes WIA_DPC_BURST_INTERVAL y <strong>WIA_DPC_TIMELAPSE_INTERVAL</strong>. <strong></strong> En esos casos, sigue funcionando como un retraso inicial antes de capturar la primera imagen de la serie, independientemente del tiempo entre fotogramas. Si no hay ningún retraso de captura previa, esta propiedad debe establecerse en cero.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_LIST</a> o WIA_PROP_RANGE</p></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPC_EXPOSURE_INDEX"></span><span id="wia_dpc_exposure_index"></span><dl> <dt><strong>WIA_DPC_EXPOSURE_INDEX</strong></dt> <dt>CameraDeviceExposureIndex</dt> </dl></td>
-<td ><p>Permite la emulación de la configuración de velocidad de película en una cámara digital. La configuración corresponde a las designaciones ISO (ASA/ASA/ASA). Normalmente, un dispositivo admite valores enumerados discretos, pero es posible un control continuo sobre un intervalo de valores. Un valor de 0xFFFF corresponde a la configuración ISO automática.</p>
+<td ><p>Permite la emulación de la configuración de velocidad de película en una cámara digital. La configuración corresponde a las designaciones ISO (ASA/LOD). Normalmente, un dispositivo admite valores enumerados discretos, pero es posible un control continuo sobre un intervalo de valores. Un valor de 0xFFFF corresponde a la configuración ISO automática.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_LIST</a> o WIA_PROP_RANGE</p></td>
 </tr>
 <tr class="odd">
@@ -451,7 +451,7 @@ Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas
 </tr>
 <tr class="even">
 <td>EXPOSUREMETERING_CENTERWEIGHT</td>
-<td>Establezca la exposición en función de una media ponderada en el centro.</td>
+<td>Establezca la exposición en función de un promedio ponderado en el centro.</td>
 </tr>
 <tr class="odd">
 <td>EXPOSUREMETERING_MULTISPOT</td>
@@ -510,14 +510,14 @@ Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPC_WHITE_BALANCE"></span><span id="wia_dpc_white_balance"></span><dl> <dt><strong>WIA_DPC_WHITE_BALANCE</strong></dt> <dt>CameraDeviceWhiteBalance</dt> </dl></td>
-<td ><p>Especifica cómo la cámara digital pondera los canales de color.</p>
+<td ><p>Especifica cómo pondera la cámara digital los canales de color.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_LIST</a></p>
 <p>A continuación se muestra una lista de valores posibles para esta propiedad.</p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Saldo en blanco</th>
+<th>Saldo blanco</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -536,11 +536,11 @@ Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas
 </tr>
 <tr class="even">
 <td>WHITEBALANCE_DAYLIGHT</td>
-<td>La cámara establece el equilibrio de blanco en un valor adecuado para su uso en las condiciones de verano.</td>
+<td>La cámara establece el equilibrio de blanco en un valor adecuado para su uso en condiciones de verano.</td>
 </tr>
 <tr class="odd">
 <td>WHITEBALANCE_FLORESCENT</td>
-<td>La cámara establece el equilibrio de blanco en un valor adecuado para su uso con una fuente de luz de color azul.</td>
+<td>La cámara establece el equilibrio de blanco en un valor adecuado para su uso con una fuente de luz blanca.</td>
 </tr>
 <tr class="even">
 <td>WHITEBALANCE_TUNGSTEN</td>
@@ -557,7 +557,7 @@ Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas
 </tr>
 <tr class="odd">
 <td ><span id="WIA_DPC_UPLOAD_URL"></span><span id="wia_dpc_upload_url"></span><dl> <dt><strong>WIA_DPC_UPLOAD_URL</strong></dt> <dt>CameraDeviceUploadURL</dt> </dl></td>
-<td ><p>Describe una dirección URL. La dirección URL descrita por esta prólogo es aquella en la que se pueden cargar imágenes u objetos, una vez que se adquieren desde el dispositivo, según uno de los escenarios siguientes.</p>
+<td ><p>Describe una dirección URL. La dirección URL descrita por esta proroperty es aquella en la que se pueden cargar imágenes u objetos, una vez adquiridos desde el dispositivo, según uno de los escenarios siguientes.</p>
 <ul>
 <li>Una aplicación WIA lee esta propiedad y permite al usuario cargar automáticamente imágenes en la dirección URL.</li>
 <li>Una aplicación establece la dirección URL y otros dispositivos (quioscos, etc.) usan esta propiedad.</li>
@@ -586,7 +586,7 @@ Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                |
 | Encabezado<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 

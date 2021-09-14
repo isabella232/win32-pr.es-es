@@ -4,12 +4,12 @@ ms.assetid: dd9fab39-b346-43bf-8141-8a1874940d88
 title: Elemento Date
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6b56d9ab50b934d63cb4bb15792920c90bd2a3a7ce61a00e82d4c87c77f6464
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8edb372e33214924f95933134440bed7a83d334f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118045562"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247845"
 ---
 # <a name="date-element"></a>Elemento Date
 

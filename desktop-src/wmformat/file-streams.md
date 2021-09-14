@@ -1,6 +1,6 @@
 ---
 title: File Secuencias (Windows Media Format 11 SDK)
-description: Archivos Secuencias
+description: Archivo Secuencias
 ms.assetid: 6a4ad6ef-dc53-4d31-8de5-ce35c343244b
 keywords:
 - Windows SDK de formato multimedia, secuencias de archivos
@@ -12,14 +12,14 @@ keywords:
 - secuencias de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7bc05663ab9f2d81ac94bd1483ac5bc22c903333a8e477cc94e88141ff671ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a2a850c938d9582bd128980ef59329a5d5aa6a08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118703913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247323"
 ---
-# <a name="file-streams"></a>Archivos Secuencias
+# <a name="file-streams"></a>Archivo Secuencias
 
 Una secuencia de archivos contiene uno o varios archivos de datos. Al transferir información de archivo como una secuencia, debe adjuntar el nombre de archivo a cada ejemplo de la secuencia. Para obtener información sobre cómo adjuntar información relacionada a ejemplos, vea [Extensiones de unidad de datos](data-unit-extensions.md).
 

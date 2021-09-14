@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_SEQUENCE mensaje (Vfw.h)
-description: El mensaje \_ WM CAP SEQUENCE inicia la captura de vídeo y audio de streaming a un \_ archivo. Puede enviar este mensaje explícitamente o mediante la macro capCaptureSequence.
+description: El mensaje WM \_ CAP SEQUENCE inicia la captura de vídeo y audio de streaming a un \_ archivo. Puede enviar este mensaje explícitamente o mediante la macro capCaptureSequence.
 ms.assetid: 33d53abc-e37e-48c6-bfc8-9cd02fde5cb6
 keywords:
 - WM_CAP_SEQUENCE mensaje Windows Multimedia
@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: e2ef945510d0d71f1aa0e0cb5827288a613f5991
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371486"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161341"
 ---
 # <a name="wm_cap_sequence-message"></a>Mensaje \_ DE SECUENCIA DE WM CAP \_
 
@@ -49,7 +49,7 @@ De forma predeterminada, la ventana de captura no permite que otras aplicaciones
 Durante la captura de streaming, la ventana de captura puede, opcionalmente, emitir notificaciones a la aplicación de tipos específicos de condiciones. Para instalar procedimientos de devolución de llamada para estas notificaciones, use los mensajes siguientes:
 
 -   [**ERROR DE \_ DEVOLUCIÓN \_ DE LLAMADA DEL CONJUNTO \_ DE LÍMITES DE \_ WM**](wm-cap-set-callback-error.md)
--   [**ESTADO DE DEVOLUCIÓN DE LLAMADA DEL CONJUNTO DE \_ \_ \_ LÍMITES \_ DE WM**](wm-cap-set-callback-status.md)
+-   [**ESTADO DE \_ DEVOLUCIÓN \_ DE LLAMADA DEL CONJUNTO \_ DE LÍMITES DE \_ WM**](wm-cap-set-callback-status.md)
 -   [**RENDIMIENTO DE DEVOLUCIÓN DE LLAMADA DEL CONJUNTO DE \_ \_ \_ LÍMITES \_ DE WM**](wm-cap-set-callback-yield.md)
 -   [**WM \_ CAP \_ SET \_ CALLBACK \_ VIDEOSTREAM**](wm-cap-set-callback-videostream.md)
 -   [**WM \_ CAP \_ SET \_ CALLBACK \_ WAVESTREAM**](wm-cap-set-callback-wavestream.md)
@@ -66,7 +66,7 @@ Durante la captura de streaming, la ventana de captura puede, opcionalmente, emi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

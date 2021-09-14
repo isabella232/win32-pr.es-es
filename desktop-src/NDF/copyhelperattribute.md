@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57226d3497639107db9378926734a8a6d4507c3436aa65a89109d88d15f91d32
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 59fac3449ee48659980681c836d24406c4db7e2b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119685865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161219"
 ---
 # <a name="copyhelperattribute-function"></a>Función CopyHelperAttribute
 
@@ -53,7 +53,7 @@ Estructura que se va a actualizar.
 *Origen* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**HELPER \_ ATTRIBUTE**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute) \***
+Tipo: **atributo auxiliar const [**\_**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute) \***
 
 Estructura existente que se va a copiar.
 
@@ -70,7 +70,7 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 | Código devuelto                                                                                   | Descripción                                                                 |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | La operación se realizó correctamente.<br/>                                         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Uno o varios parámetros no se han proporcionado correctamente.<br/>          |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | No se han proporcionado correctamente uno o varios parámetros.<br/>          |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay suficiente memoria disponible para completar esta operación.<br/> |
 
 
@@ -85,11 +85,11 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

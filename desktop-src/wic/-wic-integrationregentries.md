@@ -4,12 +4,12 @@ ms.assetid: 4d88806a-68a6-4394-a704-c7a47a0fdc70
 title: Integración con Windows Galería de fotos y Windows Explorer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85e20b690e2640fb40830721f1c6a3211641d81311724be2c70efae3781171e8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0b2ab2bb725b151a069f53a94a8fb2e31766132d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119549445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247562"
 ---
 # <a name="integration-with-windows-photo-gallery-and-windows-explorer"></a>Integración con Windows Galería de fotos y Windows Explorer
 
@@ -23,11 +23,11 @@ Este tema se aplica a Windows Vista y versiones posteriores. Contiene las seccio
 
 ## <a name="introduction"></a>Introducción
 
-Para permitir que Windows Galería de fotos y Windows Explorer muestren miniaturas y busquen y actualicen metadatos de imagen estándar, un códec debe tener asociada una implementación de las interfaces [IThumbnailProvider](/windows/win32/api/thumbcache/nn-thumbcache-ithumbnailprovider) e [IPropertyStore.](/windows/win32/api/propsys/nn-propsys-ipropertystore) La interfaz IThumbnailProvider se usa para recuperar miniaturas y rellenar la caché de miniaturas, y la interfaz IPropertyStore se usa para buscar y actualizar los metadatos asociados a un archivo. A Windows Vista, todos los tipos de archivo tienen miniaturas y metadatos, pero los distintos tipos de archivo requieren implementaciones diferentes de estas interfaces para recuperar o generar las miniaturas y los metadatos para ellas. El sistema proporciona implementaciones predeterminadas de estas interfaces. La implementación predeterminada de IThumbnailProvider se puede usar para cualquier formato de imagen Windows Imaging Component (WIC) habilitado. La implementación predeterminada de IPropertyStore se puede usar con cualquier formato de imagen habilitado para WIC que se base en un contenedor Tagged Image File Format (TIFF) o JPEG. Para asociar el formato de imagen a las implementaciones predeterminadas de ambas interfaces, debe agregar solo algunas entradas del Registro.
+Para permitir que Windows Galería de fotos y Windows Explorer muestren miniaturas y busquen y actualicen metadatos de imagen estándar, un códec debe tener asociada una implementación de las interfaces [IThumbnailProvider](/windows/win32/api/thumbcache/nn-thumbcache-ithumbnailprovider) e [IPropertyStore.](/windows/win32/api/propsys/nn-propsys-ipropertystore) La interfaz IThumbnailProvider se usa para recuperar miniaturas y rellenar la caché de miniaturas, y la interfaz IPropertyStore se usa para buscar y actualizar los metadatos asociados a un archivo. A Windows Vista, todos los tipos de archivo tienen miniaturas y metadatos, pero los distintos tipos de archivo requieren implementaciones diferentes de estas interfaces para recuperar o generar las miniaturas y los metadatos para ellos. El sistema proporciona implementaciones predeterminadas de estas interfaces. La implementación predeterminada de IThumbnailProvider se puede usar para cualquier formato de imagen Windows Imaging Component (WIC) habilitado. La implementación predeterminada de IPropertyStore se puede usar con cualquier formato de imagen habilitado para WIC basado en un contenedor Tagged Image File Format (TIFF) o JPEG. Para asociar el formato de imagen a las implementaciones predeterminadas de ambas interfaces, debe agregar solo algunas entradas del Registro.
 
-Las siguientes entradas indican al explorador de Windows Galería de fotos y Windows que una extensión de nombre de archivo (.ext) y su tipo MIME asociado están asociados a un formato de imagen.
+Las siguientes entradas indican al explorador Windows Galería de fotos y Windows que una extensión de nombre de archivo (.ext) y su tipo MIME asociado están asociados a un formato de imagen.
 
-La entrada siguiente indica a Windows y aplicaciones que usan el tipo de contenido (también conocido como tipo mime) que un archivo con una extensión determinada (.ext) es un formato de imagen. El propietario del tipo de archivo debe elegir un que identifique de forma única el formato de archivo y este valor de tipo de contenido debe `<image sub type value>` registrarse en IANA.
+La entrada siguiente indica a Windows y aplicaciones que usan el tipo de contenido (también conocido como tipo mime) que un archivo con una extensión determinada (.ext) es un formato de imagen. El propietario del tipo de archivo debe elegir un que identifique de forma única el formato de archivo y este valor de tipo de contenido debe registrarse `<image sub type value>` en IANA.
 
 ```
 HKEY_CLASSES_ROOT
@@ -35,7 +35,7 @@ HKEY_CLASSES_ROOT
       ContentType = image/<image sub type>
 ```
 
-La entrada siguiente indica a Windows, Windows búsqueda y aplicaciones que usan [System.Kind](../properties/props-system-kind.md) que una extensión de nombre de archivo (.ext) debe tratarse como una imagen. En concreto, indica que la propiedad System.Kind de la extensión de archivo debe establecerse en Imagen.
+La entrada siguiente indica Windows, Windows búsqueda y aplicaciones que usan [System.Kind](../properties/props-system-kind.md) que una extensión de nombre de archivo (.ext) debe tratarse como una imagen. En concreto, indica que la propiedad System.Kind de la extensión de archivo debe establecerse en Picture.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -50,9 +50,9 @@ HKEY_LOCAL_MACHINE
 
 ## <a name="integration-with-the-windows-property-store"></a>Integración con el Windows Almacén de propiedades
 
-A veces, las mismas propiedades de metadatos se exponen en esquemas de metadatos diferentes, a menudo con nombres de propiedad diferentes. Cuando se actualiza una de estas propiedades, pero las demás no, los metadatos del archivo pueden salir de la sincronización. El controlador de propiedades photo proporciona la implementación predeterminada de **IPropertyStore** para las imágenes y lo usan las aplicaciones, así como el Explorador de Windows Galería de fotos y Windows para garantizar que todos los metadatos de una imagen permanecen sincronizados y que las propiedades mostradas por las aplicaciones son coherentes con las mostradas por el Explorador de Windows Galería de fotos y Windows. Cuando el controlador de propiedades photo actualiza los metadatos, se asegura de que estas propiedades se actualizan de forma coherente en todos los formatos de metadatos comunes que están presentes en el archivo.
+A veces, las mismas propiedades de metadatos se exponen en esquemas de metadatos diferentes, a menudo con nombres de propiedad diferentes. Cuando se actualiza una de estas propiedades, pero las demás no, los metadatos del archivo pueden no estar sincronizados. El controlador de propiedades photo proporciona la implementación predeterminada de **IPropertyStore** para las imágenes, y lo usan las aplicaciones, así como el explorador de Windows Galería de fotos y Windows para garantizar que todos los metadatos de una imagen permanecen sincronizados y que las propiedades mostradas por las aplicaciones son coherentes con las mostradas por el Explorador de Windows Galería de fotos y Windows. Cuando el controlador de propiedades photo actualiza los metadatos, se asegura de que estas propiedades se actualizan de forma coherente en todos los formatos de metadatos comunes que están presentes en el archivo.
 
-El controlador de propiedades photo debe comprender el formato del contenedor y cómo buscar las distintas propiedades dentro de él. En general, no es posible que el controlador de propiedades de foto sepa cómo se han diseñado los distintos bloques de metadatos en un formato de contenedor propietario. Sin embargo, si los metadatos en el formato de contenedor se establecen de la misma manera que los metadatos en un formato de contenedor TIFF o en un formato de contenedor JPEG, el controlador de propiedades de foto también puede aprovechar ese conocimiento para actualizar los metadatos de forma coherente en el formato de contenedor.
+El controlador de propiedades photo debe comprender el formato del contenedor y cómo localizar las distintas propiedades dentro de él. En general, no es posible que el controlador de propiedades de foto sepa cómo se han diseñado los distintos bloques de metadatos en un formato de contenedor propietario. Sin embargo, si los metadatos en el formato de contenedor se establecen de la misma manera que los metadatos en un formato de contenedor TIFF o en un formato de contenedor JPEG, el controlador de propiedades de foto puede aprovechar ese conocimiento para actualizar los metadatos de forma coherente también en el formato de contenedor.
 
 Puede registrar esta asociación mediante la creación de la siguiente entrada del Registro. Esta entrada notifica al controlador de propiedades photo que el formato de contenedor identificado por este GUID entiende las mismas rutas de acceso del lenguaje de consulta de metadatos que el formato de contenedor con el GUID 163bcc30-e2e9-4f0b-961d-a3e9fdb788a3. (163bcc30-e2e9-4f0b-961d-a3e9fdb788a3 es el GUID del formato de contenedor TIFF).
 
@@ -67,7 +67,7 @@ HKEY_LOCAL_MACHINE
                      {Container Format GUID} = {163bcc30-e2e9-4f0b-961d-a3e9fdb788a3}
 ```
 
-La entrada siguiente asocia la implementación predeterminada del controlador de propiedades photo de **IPropertyStore** con archivos que tienen la extensión ".ext". El primer GUID es el IID de la **interfaz IPropertyStore** y el segundo es el GUID de la implementación del controlador de propiedades de foto.
+La entrada siguiente asocia la implementación predeterminada del controlador de propiedades photo de **IPropertyStore** con los archivos que tienen la extensión ".ext". El primer GUID es el IID de la interfaz **IPropertyStore** y el segundo es el GUID de la implementación del controlador de propiedades photo de él.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -122,13 +122,13 @@ HKEY_CLASSES_ROOT
                (Default) = %SystemRoot%\System32\rundll32.exe "%SystemRoot%\System32\shimgvw.dll", ImageView_PrintTo /pt "%1" "%2" "%3" "%4"
 ```
 
-El ProgID suele ser la extensión de nombre de archivo anexada con la palabra "archivo". (Por ejemplo, si la extensión de nombre de archivo .txt, el ProgID normalmente sería "txtfile").
+El ProgID suele ser la extensión de nombre de archivo anexada con la palabra "file". (Por ejemplo, si la extensión de nombre de archivo .txt, el ProgID normalmente sería "txtfile").
 
-Hay otras entradas del Registro estándar que puede que necesite crear para admitir asociaciones de archivo. sin embargo, dado que las 'y no son específicas de WIC, están fuera del ámbito de este tema.
+Hay otras entradas estándar del Registro que puede que necesite crear para admitir asociaciones de archivos. sin embargo, dado que y no son específicos de WIC, están fuera del ámbito de este tema.
 
 ## <a name="integration-with-the-windows-thumbnail-cache"></a>Integración con la caché Windows miniaturas
 
-Las dos entradas siguientes indican que la implementación estándar del proveedor de miniaturas wic se puede usar para recuperar miniaturas de archivos con esta extensión. El primer GUID es el IID de la [interfaz IThumbnailProvider](/windows/win32/api/thumbcache/nn-thumbcache-ithumbnailprovider) y el segundo es el GUID de la implementación del sistema estándar de esta interfaz. (Todas las entradas de HLCR .ext ShellEx se repiten en \\ \\ \\ HKCR \\ SystemFileAssociations \\ .ext \\ ShellEx \\ ).
+Las dos entradas siguientes indican que la implementación del proveedor de miniaturas de WIC estándar se puede usar para recuperar miniaturas de archivos con esta extensión. El primer GUID es el IID de la [interfaz IThumbnailProvider](/windows/win32/api/thumbcache/nn-thumbcache-ithumbnailprovider) y el segundo es el GUID de la implementación estándar del sistema de esta interfaz. (Todas las entradas de HLCR \\ .ext \\ ShellEx se repiten en \\ HKCR \\ SystemFileAssociations \\ .ext \\ ShellEx \\ ).
 
 ```
 HKEY_CLASSES_ROOT
@@ -152,10 +152,10 @@ HKEY_CLASSES_ROOT
 [Instalación y registro de CODEC](-wic-codecinstallandreg.md)
 </dt> <dt>
 
-[Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)
+[Cómo escribir un códec WIC-Enabled datos](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> </dl>
 
  

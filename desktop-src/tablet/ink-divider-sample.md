@@ -4,12 +4,12 @@ ms.assetid: 3350b643-11b3-4474-8dd0-bc3eb1b7121e
 title: Ejemplo de divisor de entrada manuscrita
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c74592606ba98ec913dd419deda1b2b766066e17545e95f18a14980f36dafde
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a272d6a5530938e6fecfeefc9f46ffdd0835d045
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118452102"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247785"
 ---
 # <a name="ink-divider-sample"></a>Ejemplo de divisor de entrada manuscrita
 
@@ -98,7 +98,7 @@ myInkOverlay.Enabled = true;
 
 
 
-La colección [Strokes](/previous-versions/ms839422(v=msdn.10)) del objeto [Divider](/previous-versions/ms839398(v=msdn.10)) debe mantenerse sincronizada con la colección [Strokes](/previous-versions/ms827799(v=msdn.10)) del objeto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) (a la que se accede a través de la propiedad [Ink](/previous-versions/ms833110(v=msdn.10)) del objeto InkOverlay). Para asegurarse de que esto sucede, el controlador de eventos [Stroke](/previous-versions/ms835344(v=msdn.10)) para el objeto InkOverlay se escribe como se muestra a continuación. Tenga en cuenta que el controlador de eventos comprueba primero si [EditingMode](/previous-versions/ms833105(v=msdn.10)) está establecido en **Ink** para filtrar los trazos del borrador. Si el usuario ha solicitado el análisis de diseño automático, la aplicación llama al método DivideInk del formulario y actualiza el área de dibujo.
+La colección [Strokes](/previous-versions/ms839422(v=msdn.10)) del objeto [Divider](/previous-versions/ms839398(v=msdn.10)) debe mantenerse sincronizada con la colección [Strokes](/previous-versions/ms827799(v=msdn.10)) del objeto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) (a la que se accede a través de la propiedad Ink del objeto Ink del [objeto](/previous-versions/ms833110(v=msdn.10)) Ink). Para asegurarse de que esto sucede, el controlador de eventos [Stroke](/previous-versions/ms835344(v=msdn.10)) para el objeto InkOverlay se escribe como se muestra a continuación. Tenga en cuenta que el controlador de eventos comprueba primero si [EditingMode](/previous-versions/ms833105(v=msdn.10)) está establecido en **Ink** para filtrar los trazos del borrador. Si el usuario ha solicitado el análisis de diseño automático, la aplicación llama al método DivideInk del formulario y actualiza el área de dibujo.
 
 
 ```C++

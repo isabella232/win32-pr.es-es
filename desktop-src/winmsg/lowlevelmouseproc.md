@@ -32,12 +32,12 @@ api_name: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 53f75d14395388ce22ce86ef73f8819892c3fe7285909b1f38c801af476636a6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df6f246e5824099d01ab2a42f887464c7177cfa5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118705791"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247479"
 ---
 # <a name="lowlevelmouseproc-function"></a>Función LowLevelMouseProc
 
@@ -90,12 +90,12 @@ Tipo: **LRESULT**
 
 Si *nCode* es menor que cero, el procedimiento de enlace debe devolver el valor devuelto por **CallNextHookEx**.
 
-Si *nCode* es mayor o igual que cero y el procedimiento de enlace no procesó el mensaje, se recomienda encarecidamente llamar a **CallNextHookEx** y devolver el valor que devuelve. De lo contrario, otras aplicaciones que [WH_MOUSE_LL](about-hooks.md) enlaces no recibirán notificaciones de enlace y pueden comportarse incorrectamente como resultado.
+Si *nCode* es mayor o igual que cero y el procedimiento de enlace no procesó el mensaje, se recomienda encarecidamente llamar a **CallNextHookEx** y devolver el valor que devuelve. De lo contrario, otras aplicaciones que tengan instalados [WH_MOUSE_LL](about-hooks.md) de enlace no recibirán notificaciones de enlace y pueden comportarse incorrectamente como resultado.
 Si el procedimiento de enlace procesó el mensaje, puede devolver un valor distinto de cero para evitar que el sistema pase el mensaje al resto de la cadena de enlace o al procedimiento de ventana de destino.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una aplicación instala el procedimiento de  enlace especificando WH_MOUSE_LL tipo de enlace y un puntero al procedimiento de enlace en una llamada a la **función SetWindowsHookEx.**
+Una aplicación instala el procedimiento de enlace especificando WH_MOUSE_LL tipo de enlace y un puntero al procedimiento de enlace en una llamada **a** la **función SetWindowsHookEx.**
 
 Se llama a este enlace en el contexto del subproceso que lo instaló.
 La llamada se realiza mediante el envío de un mensaje al subproceso que instaló el enlace.
@@ -103,11 +103,11 @@ Por lo tanto, el subproceso que instaló el enlace debe tener un bucle de mensaj
 
 La entrada del mouse puede procede del controlador del mouse local o de las llamadas [a](/windows/desktop/api/winuser/nf-winuser-mouse_event) mouse_event función.
 Si la entrada procede de una llamada a **mouse_event**, la entrada se "inyectó".
-Sin embargo, **WH_MOUSE_LL** enlace no se inserta en otro proceso.
+Sin embargo, **el WH_MOUSE_LL** enlace no se inserta en otro proceso.
 En su lugar, el contexto vuelve al proceso que instaló el enlace y se llama a él en su contexto original.
 A continuación, el contexto vuelve a la aplicación que generó el evento.
 
-El procedimiento de enlace debe procesar un mensaje en menos tiempo que la entrada de datos especificada en el valor **LowLevelHooksTimeout** en la siguiente clave del **Registro:HKEY_CURRENT_USER\Control Panel\Desktop**.
+El procedimiento de enlace debe procesar un mensaje en menos tiempo que la entrada de datos especificada en el valor **LowLevelHooksTimeout** en la siguiente clave del Registro: **HKEY_CURRENT_USER\Control Panel\Desktop**.
 
 El valor se expresa en milisegundos.
 Si se supera el tiempo de espera del procedimiento de enlace, el sistema pasa el mensaje al siguiente enlace.
@@ -120,7 +120,7 @@ En la mayoría de los casos en los que la aplicación necesita usar enlaces de b
 Esto se debe a que la entrada sin procesar puede supervisar de forma asincrónica los mensajes del mouse y el teclado destinados a otros subprocesos de forma más eficaz que los enlaces de bajo nivel.
 Para obtener más información sobre la entrada sin procesar, vea [Raw Input](/windows/desktop/inputdev/raw-input).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex)
 
