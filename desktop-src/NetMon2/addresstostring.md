@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 58c105fb8fa646fbffcc7d7d4a3f1dad3a9cd86e7bb6ef8cc426dc982873f720
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c7c659a05167055b18c36e5c6c36465538af483
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117796375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074170"
 ---
 # <a name="addresstostring-function"></a>Función AddressToString
 
@@ -40,7 +40,7 @@ LPSTR WINAPI AddressToString(
 
 <dl> <dt>
 
-*cadena* \[ out\]
+*string* \[ out\]
 </dt> <dd>
 
 Cadena a la que se convierte la dirección.

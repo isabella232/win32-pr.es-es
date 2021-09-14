@@ -4,12 +4,12 @@ ms.assetid: aad719e8-86b3-4b2b-b417-db55013f8d3a
 title: Bits de estilo de diálogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43742c61c8dfe0827d0d51c7f9c8a2de60116500b6fdca3e404a08e120ac4348
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f22392ef9a88c547bd8fde5bc7df2f4839d66ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118947447"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158580"
 ---
 # <a name="dialog-style-bits"></a>Bits de estilo de diálogo
 

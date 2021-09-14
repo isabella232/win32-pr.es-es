@@ -1,5 +1,5 @@
 ---
-description: Recupera el índice generado automáticamente de la primitiva dentro de la geometría dentro de la instancia de la estructura de aceleración de nivel inferior.
+description: Recupera el índice generado automáticamente de la primitiva dentro de la geometría dentro de la instancia de estructura de aceleración de nivel inferior.
 ms.assetid: ''
 title: PrimitiveIndex
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - PrimitiveIndex
 api_type:
 - NA
-ms.openlocfilehash: 809fda35a63addebfa95764e91d09996834a5911a3634976810d42917a035c1d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6d1e8ba338a3fb567b583b42074210b514ef360
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117912347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072925"
 ---
 # <a name="primitiveindex-function"></a>Función PrimitiveIndex
 
-Recupera el índice generado automáticamente de la primitiva dentro de la geometría dentro de la instancia de la estructura de aceleración de nivel inferior.
+Recupera el índice generado automáticamente de la primitiva dentro de la geometría dentro de la instancia de estructura de aceleración de nivel inferior.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,7 +29,7 @@ Recupera el índice generado automáticamente de la primitiva dentro de la geome
 uint PrimitiveIndex();
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para **D3D12 \_ RAYTRACING \_ GEOMETRY TYPE \_ \_ TRIANGLES**, este es el índice de triángulo dentro del objeto geometry.
 
@@ -41,6 +41,6 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador de rayt
 * [**Sombreador del acierto más cercano**](closest-hit-shader.md)
 * [**Sombreador de intersección**](intersection-shader.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Reference de HLSL de Direct3D 12 Raytracing](direct3d-12-raytracing-hlsl-reference.md)

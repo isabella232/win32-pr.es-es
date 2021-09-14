@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: ccc37b72dd44064172672d1067dae293da30048853f3ca83f82fb50b0a90cfaf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8dc62ca38bfe28980da71ecf63eda8e6c39aaf0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118947528"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158635"
 ---
 # <a name="databaseopenview-method"></a>Método Database.OpenView
 
@@ -50,7 +50,7 @@ Se requiere SQL cadena de consulta.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener información sobre SQL sintaxis implementada en el instalador, vea [sintaxis SQL .](sql-syntax.md)
 
@@ -63,13 +63,13 @@ Si se produce un error en el método , puede obtener información de error exten
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
-| Header<br/>  | <dl> <dt>Certview.h</dt> </dl>                                                                                                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Certview.h</dt> </dl>                                                                                                                                                                   |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID IDatabase se define como \_ 000C109D-0000-0000-C000-000000000046<br/>                                                                                                                                                                            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

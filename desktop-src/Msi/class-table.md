@@ -4,25 +4,25 @@ ms.assetid: 0fa00a3f-2a5d-411d-9fc6-9486a600f018
 title: Tabla de clases
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48985bd2d7e9670c89df53993e7170dc3e0e43a2b6e60f63d29e9f43e8d2ab3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29e7584fcb0440b8754179d8e274158cc64e3b74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158910"
 ---
 # <a name="class-table"></a>Tabla de clases
 
 La tabla Clase contiene información relacionada con el servidor COM que se debe generar como parte del anuncio del producto. Cada fila puede generar un conjunto de claves y valores del Registro. La información de ProgId asociada se incluye en esta tabla.
 
-La tabla Class tiene las columnas siguientes.
+La tabla Class tiene las siguientes columnas.
 
 
 
 | Columna           | Tipo                         | Clave | Nullable |
 |------------------|------------------------------|-----|----------|
 | CLSID            | [GUID](guid.md)             | Y   | N        |
-| Contexto          | [Identificador](identifier.md) | Y   | N        |
+| Context          | [Identificador](identifier.md) | Y   | N        |
 | Componente\_      | [Identificador](identifier.md) | Y   | N        |
 | ProgId \_ predeterminado  | [Texto](text.md)             | N   | Y        |
 | Descripción      | [Texto](text.md)             | N   | Y        |
@@ -43,7 +43,7 @@ La tabla Class tiene las columnas siguientes.
 
 <dl> <dt>
 
-<span id="CLSID"></span><span id="clsid"></span>Clsid
+<span id="CLSID"></span><span id="clsid"></span>CLSID
 </dt> <dd>
 
 Identificador de clase (ID) de un servidor COM.
@@ -53,7 +53,7 @@ Identificador de clase (ID) de un servidor COM.
 <span id="Context"></span><span id="context"></span><span id="CONTEXT"></span>Contexto
 </dt> <dd>
 
-Contexto de servidor para este servidor. Escriba uno de los siguientes valores para la clave CLSID.
+Contexto del servidor para este servidor. Escriba uno de los siguientes valores para la clave CLSID.
 
 
 
@@ -61,7 +61,7 @@ Contexto de servidor para este servidor. Escriba uno de los siguientes valores p
 |---------------------------------------|---------------------------------------------------------------------------|
 | [LocalServer](../com/localserver.md)       | Especifica la ruta de acceso completa a una aplicación de servidor local de 16 bits.             |
 | [LocalServer32](../com/localserver32.md)   | Especifica la ruta de acceso completa a una aplicación de servidor local de 32 bits.             |
-| [InprocServer](../com/inprocserver.md)     | Especifica la ruta de acceso a un archivo DLL de servidor en proceso.                           |
+| [InprocServer](../com/inprocserver.md)     | Especifica la ruta de acceso a un archivo DLL del servidor en proceso.                           |
 | [InprocServer32](../com/inprocserver32.md) | Especifica la ruta de acceso a un servidor en proceso de 32 bits y el modelo de subprocesos. |
 
 
@@ -73,21 +73,21 @@ Contexto de servidor para este servidor. Escriba uno de los siguientes valores p
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Clave externa en la [tabla Component que](component-table.md) especifica el componente cuyo archivo de clave proporciona el servidor COM.
+Clave externa en la [tabla Component](component-table.md) que especifica el componente cuyo archivo de clave proporciona el servidor COM.
 
 </dd> <dt>
 
 <span id="ProgId_Default"></span><span id="progid_default"></span><span id="PROGID_DEFAULT"></span>ProgId \_ predeterminado
 </dt> <dd>
 
-Identificador de programa predeterminado asociado a este identificador de clase. Esta columna es una clave externa en la [tabla ProgID](progid-table.md).
+Id. de programa predeterminado asociado a este identificador de clase. Esta columna es una clave externa en la [tabla ProgID](progid-table.md).
 
 </dd> <dt>
 
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descripción
 </dt> <dd>
 
-Descripción localizada asociada al id. de clase y al id. de programa.
+Descripción localizada asociada con el id. de clase y el identificador de programa.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Si existen varios patrones, deben delimitarse mediante un punto y coma y se gene
 <span id="Icon_"></span><span id="icon_"></span><span id="ICON_"></span>Icono\_
 </dt> <dd>
 
-Archivo que proporciona el icono asociado a este CLSID. El instalador escribe la entrada de esta columna bajo la clave DefaultIcon asociada al ProgId. Si no es NULL, la columna es una clave externa en la [tabla Icon](icon-table.md). Si es null, el servidor COM proporciona el recurso de icono. Las asociaciones y los accesos directos de archivos anunciados requieren un valor distinto de NULL en esta columna para mostrarse correctamente.
+Archivo que proporciona el icono asociado a este CLSID. El instalador escribe la entrada de esta columna en la clave DefaultIcon asociada al ProgId. Si no es NULL, la columna es una clave externa en la [tabla Icon](icon-table.md). Si es NULL, el servidor COM proporciona el recurso de icono. Las asociaciones de archivo y los accesos directos anunciados requieren un valor distinto de NULL en esta columna para mostrarse correctamente.
 
 </dd> <dt>
 
@@ -183,7 +183,7 @@ Si **msidbClassAttributesRelativePath** se establece en esta columna, se puede u
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se hace referencia a esta tabla cuando se ejecuta [la acción RegisterClassInfo](registerclassinfo-action.md) o [la acción UnregisterClassInfo.](unregisterclassinfo-action.md)
 

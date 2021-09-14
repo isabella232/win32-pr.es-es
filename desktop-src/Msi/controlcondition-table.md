@@ -4,12 +4,12 @@ ms.assetid: e36d20ec-cd7b-494f-b517-c07b40d2a338
 title: Tabla ControlCondition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 637d9470af21ad1f8a15c2697ba34a6c9866c822c21c6f3a85241bac1309f76b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 671dcdee6e2ed1067c51a04084693c276b8db2d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105262"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158773"
 ---
 # <a name="controlcondition-table"></a>Tabla ControlCondition
 
@@ -76,7 +76,7 @@ Instrucción condicional que especifica en qué condiciones se debe desencadenar
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si desea ocultar y deshabilitar un [control PushButton](pushbutton-control.md) o [un control CheckBox](checkbox-control.md) basado en una instrucción condicional en el campo Condición de la tabla ControlCondition, debe usar cuatro registros para que cada control se deshabilite y oculte el control. Todavía se puede acceder a los controles PushButton o CheckBox que solo se han ocultado mediante teclas de método abreviado.
 

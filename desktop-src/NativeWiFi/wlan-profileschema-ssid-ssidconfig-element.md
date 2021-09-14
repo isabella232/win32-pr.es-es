@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5d58ed866e79269e604fe49ad8afe65d557f27a90d0be03904b8d27da5ac5c2c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 644a4afbd10fbfff870007befda964fc9babd593
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118619062"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074186"
 ---
 # <a name="ssid-ssidconfig-element"></a>Elemento SSID (SSIDConfig)
 
 El elemento SSID (SSIDConfig) contiene un SSID para una LAN inalámbrica.
 
-Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** Como máximo, **un elemento SSID** puede aparecer en un perfil.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** Como máximo, un **elemento SSID** puede aparecer en un perfil.
 
 ``` syntax
 <xs:element name="SSID"
@@ -91,13 +91,13 @@ El **elemento SSID** se define mediante el [**elemento SSIDConfig.**](wlan-profi
 
 Aunque los [**elementos hexadecimal**](wlan-profileschema-hex-ssid-element.md) y [**name**](wlan-profileschema-name-ssid-element.md) son opcionales, al menos un **elemento hexadecimal** o [**name**](wlan-profileschema-name-ssid-element.md) debe aparecer como elemento secundario del **elemento SSID.**
 
-Cuando la información del perfil se convierte en un SSID, el elemento [**hexadecimal**](wlan-profileschema-hex-ssid-element.md) [](wlan-profileschema-name-ssid-element.md) se convierte al SSID (si está presente) y se omite el elemento name. Si el **elemento hexadecimal** no está presente, el [**elemento name**](wlan-profileschema-name-ssid-element.md) se convierte en un SSID mediante la conversión unicode a ASCII.
+Cuando la información del perfil se convierte en un SSID, el elemento [**hexadecimal**](wlan-profileschema-hex-ssid-element.md) [](wlan-profileschema-name-ssid-element.md) se convierte al SSID (si está presente) y se omite el elemento name. Si el **elemento hexadecimal** no está presente, el elemento [**name**](wlan-profileschema-name-ssid-element.md) se convierte en un SSID mediante la conversión unicode a ASCII.
 
-Cuando se almacena un SSID en un perfil, siempre [**se genera**](wlan-profileschema-hex-ssid-element.md) el elemento hexadecimal. El [**elemento name**](wlan-profileschema-name-ssid-element.md) solo se genera si la conversión ASCII a Unicode del SSID y la generación del perfil XML son correctas. Es posible que se pierda cierta información del SSID original cuando se convierte en un [**nombre**](wlan-profileschema-name-ssid-element.md).
+Cuando un SSID se almacena en un perfil, siempre [**se**](wlan-profileschema-hex-ssid-element.md) genera el elemento hexadecimal. El [**elemento name**](wlan-profileschema-name-ssid-element.md) solo se genera si la conversión ASCII a Unicode del SSID y la generación del perfil XML son correctas. Es posible que se pierda cierta información del SSID original cuando se convierte a un [**nombre**](wlan-profileschema-name-ssid-element.md).
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el **elemento SSID,** vea [Ejemplos de perfil inalámbrico.](wireless-profile-samples.md)
+Para ver perfiles de ejemplo que usan el **elemento SSID,** vea [Ejemplos de perfil inalámbrico.](wireless-profile-samples.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,13 +105,13 @@ Para ver los perfiles de ejemplo que usan el **elemento SSID,** vea [Ejemplos de
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/> |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

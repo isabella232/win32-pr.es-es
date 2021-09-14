@@ -4,12 +4,12 @@ description: Para registrar la aplicación que se va a reiniciar, llame a la fun
 ms.assetid: 4dfbced7-77db-4042-823f-b4b81b2b27a6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe5777d3ed6b99d421f7eba6b5b104b92a1c2c71462c675b2573f18da0ba69f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 717f8984f26570284a70b40eef70a9d6f753d66a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120024575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073843"
 ---
 # <a name="registering-for-application-restart"></a>Registro para el reinicio de la aplicación
 

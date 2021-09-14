@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a574f14b60a3ead08da6e0dfa6577dff397d429b0972ce78a885bb4b5e5b121e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1c128c7cdf986f41568134ee0754a3ab402b88f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119478975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072587"
 ---
 # <a name="esentnobackupdirectoryexception-constructor"></a>Constructor EsentNoBackupDirectoryException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentNoBackupDirectoryException()
 public EsentNoBackupDirectoryException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

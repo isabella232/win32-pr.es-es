@@ -1,5 +1,5 @@
 ---
-description: La función RegCreateBlobKey almacena un BLOB en la clave del Registro determinada.
+description: La función RegCreateBlobKey almacena un BLOB en la clave del Registro dada.
 ms.assetid: 14f3763e-aa04-4d51-b388-81ebf0d3952c
 title: Función RegCreateBlobKey (Netmon.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 3267fd0ba5e6fe56b99b5d465f69718fe5509a7ead58acf1d8dafb642397af5e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc46b38919b37dc004c1065b0cc8d5f80e65984c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119889655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074097"
 ---
 # <a name="regcreateblobkey-function"></a>Función RegCreateBlobKey
 
-La **función RegCreateBlobKey** almacena un BLOB en la clave del Registro determinada.
+La **función RegCreateBlobKey** almacena un BLOB en la clave del Registro dada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -82,7 +82,7 @@ Si la función no se realiza correctamente, el valor devuelto es un valor NMERR 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

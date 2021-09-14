@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 838c946a38f9c2fda0c9178a36107af73f539a03
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370532"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074228"
 ---
 # <a name="icm_decompress_query-message"></a>\_ICM Mensaje DE CONSULTA \_ DECOMPRESS
 
-El ICM mensaje **\_ DECOMPRESS \_ QUERY** consulta un controlador de descompresión de vídeo para determinar si admite un formato de entrada específico o si puede descomprimir un formato de entrada específico a un formato de salida específico. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressQuery.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery)
+El **ICM \_ mensaje DECOMPRESS \_ QUERY** consulta un controlador de descompresión de vídeo para determinar si admite un formato de entrada específico o si puede descomprimir un formato de entrada específico a un formato de salida específico. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressQuery.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery)
 
 
 ```C++
@@ -68,7 +68,7 @@ Devuelve ICERR \_ OK si se admite la descompresión especificada o ICERR \_ BADF
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

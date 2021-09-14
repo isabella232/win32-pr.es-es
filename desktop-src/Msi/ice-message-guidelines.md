@@ -5,11 +5,11 @@ title: Instrucciones de mensajes ICE
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d603175dbecc12b0b9524db1a02d9ca677f61c87
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122887450"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074692"
 ---
 # <a name="ice-message-guidelines"></a>Instrucciones de mensajes ICE
 
@@ -25,7 +25,7 @@ El campo Tipo de mensaje especifica si el ICE notifica un mensaje de error, erro
 
 
 
-| Valor | Tipo de mensaje                                                                                                                                                          |
+| Value | Tipo de mensaje                                                                                                                                                          |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | Mensaje de error que informa del error de la acción personalizada de ICE.                                                                                                       |
 | 1     | Mensaje de error que informa de la creación de bases de datos que provocan un comportamiento incorrecto.                                                                                             |

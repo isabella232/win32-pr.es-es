@@ -4,18 +4,18 @@ ms.assetid: 1281ee21-a154-4275-a9e6-6e92fff548ed
 title: ICEM13
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 678b89e14cb699bb6207be5c2e14473de2a743494b47ff5ae5e0ccda2a9cc9cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3286906cf162f24dce7105835544c3a387993ac6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074471"
 ---
 # <a name="icem13"></a>ICEM13
 
 ICEM13 comprueba que el módulo de combinación no contiene ensamblados de configuración y directivas de publicador. Publisher ensamblados de configuración y directiva no deben incluirse en módulos de combinación destinados a la redistribución, ya que esto puede afectar a otras aplicaciones en el equipo de un usuario.
 
-Este ICEM está disponible en el archivo Mergemod.uu proporcionado en el SDK Windows Installer 2.0 y versiones posteriores. Para obtener más información, [consulte Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
+Este ICEM está disponible en el archivo Mergemod.uu proporcionado en el SDK de Windows Installer 2.0 y versiones posteriores. Para obtener más información, [consulte Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
 
 ## <a name="result"></a>Resultado
 

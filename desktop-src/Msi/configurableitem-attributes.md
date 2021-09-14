@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: ba591ab8565390514e8fe6f8f7d5182184d1372b824d5262f87bd9ad4b412035
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c381ce3d1bf07c03ff4bdcb687cca239ec715b17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118144193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158808"
 ---
 # <a name="configurableitemattributes-property"></a>ConfigurableItem.Attributes, propiedad
 
@@ -46,10 +46,10 @@ Consulte [**la función get \_ Attributes.**](/windows/desktop/api/Mergemod/nf-m
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

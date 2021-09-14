@@ -4,12 +4,12 @@ ms.assetid: 63666848-cbac-4853-8b91-89303f9854c0
 title: Funciones de servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55553e29b2ae9fb8e60db2f421fd8aa68cee1c6b79542c7d3d61ef5bcef490f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0431a672e93c94e06a71812471aa3c74d0ac2f96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118888967"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073554"
 ---
 # <a name="service-functions"></a>Funciones de servicio
 
@@ -24,7 +24,7 @@ Los servicios usan o implementan las siguientes funciones.
 | [**RegisterServiceCtrlHandler**](/windows/desktop/api/Winsvc/nf-winsvc-registerservicectrlhandlera)     | Registra una función para controlar las solicitudes de control de servicio.                                                                              |
 | [**RegisterServiceCtrlHandlerEx**](/windows/desktop/api/Winsvc/nf-winsvc-registerservicectrlhandlerexa) | Registra una función para controlar las solicitudes de control de servicio extendidas.                                                                     |
 | [**ServiceMain**](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona)                                   | Función definida por la aplicación que actúa como punto de partida para un servicio.                                                      |
-| [**SetServiceBits**](/windows/desktop/api/Lmserver/nf-lmserver-setservicebits)                             | Registra un tipo de servicio con el administrador de control de servicios y el servicio Servidor.                                                     |
+| [**SetServiceBits**](/windows/desktop/api/Lmserver/nf-lmserver-setservicebits)                             | Registra un tipo de servicio con el administrador de control de servicios y el servicio Server.                                                     |
 | [**SetServiceStatus**](/windows/desktop/api/Winsvc/nf-winsvc-setservicestatus)                         | Actualiza la información de estado del administrador de control de servicios para el servicio que realiza la llamada.                                                     |
 | [**StartServiceCtrlDispatcher**](/windows/desktop/api/Winsvc/nf-winsvc-startservicectrldispatchera)     | Conecta el subproceso principal de un proceso de servicio al administrador de control de servicios.                                                         |
 
@@ -46,7 +46,7 @@ Los programas que controlan, configuran o interactúan con los servicios usan la
 | [**CreateService**](/windows/desktop/api/Winsvc/nf-winsvc-createservicea)                                   | Crea un objeto de servicio y lo agrega a la base de datos del administrador de control de servicios especificada.                                                     |
 | [**DeleteService**](/windows/desktop/api/Winsvc/nf-winsvc-deleteservice)                                   | Marca el servicio especificado para su eliminación de la base de datos del administrador de control de servicios.                                                         |
 | [**EnumDependentServices**](/windows/desktop/api/Winsvc/nf-winsvc-enumdependentservicesa)                   | Recupera el nombre y el estado de cada servicio que depende del servicio especificado.                                                        |
-| [**EnumServicesStatusEx**](/windows/desktop/api/Winsvc/nf-winsvc-enumservicesstatusexa)                     | Enumera los servicios de la base de datos del administrador de control de servicios especificada en función del nivel de información especificado.                             |
+| [**EnumServicesStatusEx**](/windows/desktop/api/Winsvc/nf-winsvc-enumservicesstatusexa)                     | Enumera los servicios de la base de datos del administrador de control de servicios especificado en función del nivel de información especificado.                             |
 | [**GetServiceDisplayName**](/windows/desktop/api/Winsvc/nf-winsvc-getservicedisplaynamea)                   | Recupera el nombre para mostrar del servicio especificado.                                                                                        |
 | [**GetServiceKeyName**](/windows/desktop/api/Winsvc/nf-winsvc-getservicekeynamea)                           | Recupera el nombre de servicio del servicio especificado.                                                                                        |
 | [**NotifyBootConfigStatus**](/windows/desktop/api/Winsvc/nf-winsvc-notifybootconfigstatus)                 | Notifica el estado de arranque al administrador de control de servicios.                                                                                     |

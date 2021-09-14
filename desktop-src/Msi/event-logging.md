@@ -4,16 +4,16 @@ ms.assetid: 1f28cbce-b759-4293-8af2-15f86f23228c
 title: Registro de eventos (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08c1aa4808727a220ec104cb3e7bfdff2741dcb2366ca1468288a082baab813b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce7fdaf29ec0c638d3c85b82c74cca2bbede63c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118636929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158446"
 ---
 # <a name="event-logging-windows-installer"></a>Registro de eventos (Windows instalador)
 
-[Windows Events proporciona](../events/windows-events.md) una manera estándar y centralizada para que las aplicaciones (y el sistema operativo) registren eventos importantes de software y hardware. El servicio de registro de eventos almacena eventos de varios orígenes en una sola colección denominada registro *de eventos*. Antes de Windows Vista, usaría Seguimiento de eventos [para](../etw/event-tracing-portal.md) Windows (ETW) o Registro de eventos para [registrar](../eventlog/event-logging.md) eventos. Windows Vista introdujo un nuevo modelo de eventos que unifica ETW y la API [Windows Event Log](../wes/windows-event-log.md) API.
+[Windows Events proporciona](../events/windows-events.md) una manera estándar y centralizada para que las aplicaciones (y el sistema operativo) registren eventos importantes de software y hardware. El servicio de registro de eventos almacena eventos de varios orígenes en una sola colección denominada registro *de eventos*. Antes de Windows Vista, usaría seguimiento de eventos [para Windows](../etw/event-tracing-portal.md) (ETW) o registro de eventos [para](../eventlog/event-logging.md) registrar eventos. Windows Vista introdujo un nuevo modelo de eventos que unifica ETW y Windows [Event Log](../wes/windows-event-log.md) API.
 
 El instalador también escribe entradas en el registro de eventos. Estos eventos de registro son los siguientes:
 
@@ -21,11 +21,11 @@ El instalador también escribe entradas en el registro de eventos. Estos eventos
 -   Errores que se producen durante la configuración del producto.
 -   Detección de datos de configuración dañados.
 
-Si se escribe una gran cantidad de información, el archivo de registro de eventos puede estar lleno y el instalador muestra el mensaje "El archivo de registro de aplicaciones está lleno".
+Si se escribe una gran cantidad de información, el archivo de registro de eventos puede estar lleno y el instalador muestra el mensaje "El archivo de registro de aplicación está lleno".
 
 El instalador puede escribir las siguientes entradas en el registro de eventos. Todos los mensajes del registro de eventos tienen un identificador de evento único. Todos los errores generales que se han escrito en la tabla [Error](error-table.md) que se devuelven para una instalación que produce un error se registran en el registro de eventos de la aplicación con un identificador de mensaje igual al error + 10 000. Por ejemplo, el número de error de la tabla Error de una instalación completada correctamente es 1707. La instalación correcta se registra en el registro de eventos de la aplicación con un identificador de mensaje de 11707 (1707 + 10 000).
 
-Para obtener información sobre cómo habilitar el registro detallado en el equipo de un usuario al solucionar problemas de implementación, vea Windows procedimientos recomendados [del instalador.](windows-installer-best-practices.md)
+Para obtener información sobre cómo habilitar el registro detallado en el equipo de un usuario al solucionar problemas de implementación, vea Windows [procedimientos](windows-installer-best-practices.md)recomendados del instalador .
 
 
 
@@ -34,7 +34,7 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 <tr class="header">
 <th>Id. de evento</th>
 <th>Message</th>
-<th>Comentarios</th>
+<th>Observaciones</th>
 </tr>
 </thead>
 <tbody>
@@ -55,7 +55,7 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 </tr>
 <tr class="even">
 <td>1004</td>
-<td>Detección del producto "%1", característica "%2", error del componente "%3" <strong>Nota:</strong> A partir de la versión 2.0 del instalador de Windows, este mensaje es: Error de detección del producto "%1", característica "%2", componente "%3". El recurso '%4' no existe.<br/></td>
+<td>Detección del producto "%1", característica "%2", componente "%3" error <strong>Nota:</strong> A partir de la versión 2.0 del instalador de Windows, este mensaje es: Detección del producto '%1', característica '%2', error del componente '%3'. El recurso '%4' no existe.<br/></td>
 <td>Mensaje de advertencia. Vea también <a href="searching-for-a-broken-feature-or-component.md">Buscar una característica o componente rotos.</a></td>
 </tr>
 <tr class="odd">
@@ -65,8 +65,8 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 </tr>
 <tr class="even">
 <td>1006</td>
-<td>No se puede realizar la comprobación de la firma digital del gabinete '%1'. WinVerifyTrust no está disponible en el equipo.</td>
-<td>Mensaje de advertencia. Se ha escrito un contenedor en la <a href="msidigitalsignature-table.md">tabla MsiDigitalSignature</a> para que se realice una <a href="/windows/desktop/api/wintrust/nf-wintrust-winverifytrust"><strong>comprobación de WinVerifyTrust.</strong></a> Esta acción no se pudo realizar porque el equipo no tiene instalados los archivos DLL de criptografía adecuados.</td>
+<td>No se puede realizar la comprobación de la firma digital para el gabinete '%1'. WinVerifyTrust no está disponible en el equipo.</td>
+<td>Mensaje de advertencia. Se hizo un archivador en la <a href="msidigitalsignature-table.md">tabla MsiDigitalSignature</a> para que se realizara una <a href="/windows/desktop/api/wintrust/nf-wintrust-winverifytrust"><strong>comprobación de WinVerifyTrust.</strong></a> Esta acción no se pudo realizar porque el equipo no tiene instalados los archivos DLL de criptografía adecuados.</td>
 </tr>
 <tr class="odd">
 <td>1007</td>
@@ -90,7 +90,7 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 </tr>
 <tr class="odd">
 <td>1014</td>
-<td>Windows La información del proxy del instalador no está registrada correctamente</td>
+<td>Windows Información del proxy del instalador no registrada correctamente</td>
 <td>Mensaje de error que indica que la información del proxy no se registró correctamente.</td>
 </tr>
 <tr class="even">
@@ -100,18 +100,18 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 </tr>
 <tr class="odd">
 <td>1016</td>
-<td>Error de detección del producto "%1", característica "%2", componente "%3". No se pudo encontrar el recurso '%4' en un componente de ejecución desde origen porque no se encontró ningún origen válido y accesible.</td>
+<td>Error de detección del producto "%1", característica "%2", componente "%3". No se pudo encontrar el recurso '%4' en un componente de ejecución desde el origen porque no se encontró ningún origen válido y accesible.</td>
 <td>Mensaje de advertencia. Para obtener más información, <a href="searching-for-a-broken-feature-or-component.md">vea Buscar una característica o componente rotos.</a></td>
 </tr>
 <tr class="even">
 <td>1017</td>
-<td>El SID del usuario ha cambiado de '%1' a '%2', pero la aplicación administrada y las claves de datos de usuario no se pueden actualizar. Error = '%3'.</td>
+<td>El SID del usuario ha cambiado de "%1" a "%2", pero la aplicación administrada y las claves de datos de usuario no se pueden actualizar. Error = '%3'.</td>
 <td>Mensaje de error que indica que se produjo un error al intentar actualizar el registro del usuario después de cambiar el SID del usuario.</td>
 </tr>
 <tr class="odd">
 <td>1018</td>
 <td>No se puede instalar la aplicación '%1' porque no es compatible con esta versión de Windows.</td>
-<td>Mensaje de error que indica que la instalación no es compatible con la versión actual de Windows. Póngase en contacto con el fabricante del software que se va a instalar para obtener una actualización.</td>
+<td>Mensaje de error que indica que la instalación no es compatible con la versión en ejecución de Windows. Póngase en contacto con el fabricante del software que se va a instalar para obtener una actualización.</td>
 </tr>
 <tr class="even">
 <td>1019</td>
@@ -126,11 +126,11 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 <tr class="even">
 <td>1021</td>
 <td>Producto: %1: no se pudo quitar la actualización "%2". Código de error %3.</td>
-<td>Mensaje de error que indica que el instalador no pudo quitar la actualización. Para obtener información sobre cómo activar el registro, vea Habilitar el registro detallado en el equipo del usuario al solucionar problemas <a href="windows-installer-best-practices.md">de implementación.</a> <strong>Windows Installer 2.0:</strong> No disponible.<br/></td>
+<td>Mensaje de error que indica que el instalador no pudo quitar la actualización. Para obtener información sobre cómo activar el registro, vea Habilitar el registro detallado en el equipo del usuario <a href="windows-installer-best-practices.md">al solucionar problemas de implementación.</a> <strong>Windows Installer 2.0:</strong> No disponible.<br/></td>
 </tr>
 <tr class="odd">
 <td>1022</td>
-<td>Producto: %1- Actualización "%2" instalada correctamente.</td>
+<td>Producto: %1: actualización "%2" instalada correctamente.</td>
 <td>Mensaje informativo que indica que el instalador ha instalado la actualización correctamente. <strong>Windows Installer 2.0:</strong> No disponible.<br/></td>
 </tr>
 <tr class="even">
@@ -186,22 +186,22 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 <tr class="even">
 <td>3082</td>
 <td>Producto: %1. Versión: %2. Idioma: %3. Instalación completada con el estado: %4. Fabricante: %5.</td>
-<td>Campo 1- <a href="productname.md"><strong>ProductName</strong></a> Field 2 - <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3: <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/> Campo 5: <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Installer 4.5 y versiones anteriores:</a></strong> El campo 5 no está disponible.<br/></td>
+<td>Campo 1- <a href="productname.md"><strong>ProductName</strong></a> Field 2 - <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3: <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/> Campo 5: <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows instalador 4.5 y versiones anteriores:</a></strong> El campo 5 no está disponible.<br/></td>
 </tr>
 <tr class="odd">
 <td>1034</td>
 <td>Producto: %1. Versión: %2. Idioma: %3. Eliminación completada con el estado: %4. Fabricante: %5.</td>
-<td>Campo 1- <a href="productname.md"><strong>ProductName</strong></a> Field 2 - <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3: <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/> Campo 5: <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Installer 4.5 y versiones anteriores:</a></strong> El campo 5 no está disponible.<br/></td>
+<td>Campo 1- <a href="productname.md"><strong>ProductName</strong></a> Field 2 - <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3: <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/> Campo 5: <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows instalador 4.5 y versiones anteriores:</a></strong> El campo 5 no está disponible.<br/></td>
 </tr>
 <tr class="even">
 <td>1035</td>
 <td>Producto: %1. Versión: %2. Idioma: %3. Cambio de configuración completado con el estado: %4. Fabricante: %5.</td>
-<td>Campo 1- <a href="productname.md"><strong>ProductName</strong></a> Field 2 - <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3: <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> Campo 5: <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Installer 4.5 y versiones anteriores:</a></strong> El campo 5 no está disponible.<br/></td>
+<td>Campo 1- <a href="productname.md"><strong>ProductName</strong></a> Field 2 - <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3: <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> Campo 5: <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows instalador 4.5 y versiones anteriores:</a></strong> El campo 5 no está disponible.<br/></td>
 </tr>
 <tr class="odd">
 <td>1036</td>
 <td>Producto: %1. Versión: %2. Idioma: %3. Actualización: %4. Actualización de la instalación completada con el estado: %5. Fabricante: %6.</td>
-<td>Campo 1- <a href="productname.md"><strong>ProductName</strong></a> Field 2 - <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3: <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> Campo 4: este es el nombre descriptivo si la tabla <a href="msipatchmetadata-table.md">MsiPatchMetadata</a> está presente en el paquete de revisión. De lo contrario, este es el GUID del código de revisión de la revisión.<br/> Campo 5: Estado de la instalación de la actualización.<br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/> Campo 6: <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Installer 4.5 y versiones anteriores:</a></strong> El campo 6 no está disponible.<br/></td>
+<td>Campo 1- <a href="productname.md"><strong>ProductName</strong></a> Field 2 - <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3: <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> Campo 4: este es el nombre descriptivo si la tabla <a href="msipatchmetadata-table.md">MsiPatchMetadata</a> está presente en el paquete de revisión. De lo contrario, este es el GUID del código de revisión de la revisión.<br/> Campo 5: Estado de la instalación de la actualización.<br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3.1 y versiones anteriores:</a></strong> No disponible.<br/> Campo 6: <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows instalador 4.5 y versiones anteriores:</a></strong> El campo 6 no está disponible.<br/></td>
 </tr>
 <tr class="even">
 <td>1037</td>
@@ -213,7 +213,7 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 <td>Producto: %1. Versión: %2. Idioma: %3. Se requiere reiniciar. Tipo de reinicio: %4. Motivo del reinicio: %5. Fabricante: %6.</td>
 <td>Campo 1- <a href="productname.md"><strong>ProductName</strong></a> Field 2 - <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3: <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <dl> Campo 4: constante que indica el tipo de reinicio: <br/> <dl> <strong>msirbRebootImmediate</strong> (1): se ha reiniciado inmediatamente el equipo.<br />
 <strong>msirbRebootDeferred</strong> (2): un usuario o administrador ha aplazado un reinicio necesario del equipo mediante la interfaz de usuario o <a href="reboot.md"><strong>REBOOT</strong></a>=ReallySuppress.<br />
-</dl> </dd> Field 5 - A constant indicating the reason for the restart:<br/> <dl> <strong>msirbRebootUndeterminedReason</strong> (0):se requiere reiniciar por un motivo no especificado.<br />
+</dl> </dd> Field 5 - A constant indicating the reason for the restart:<br/> <dl> <strong>msirbRebootUndeterminedReason</strong> (0): se requiere reiniciar por un motivo no especificado.<br />
 <strong>msirbRebootInUseFilesReason</strong> (1): se requiere un reinicio para reemplazar los archivos en uso.<br />
 <strong>msirbRebootScheduleRebootReason</strong> (2): el paquete contiene una <a href="schedulereboot-action.md">acción ScheduleReboot.</a><br />
 <strong>msirbRebootForceRebootReason</strong> (3): el paquete contiene una <a href="forcereboot-action.md">acción ForceReboot.</a><br />
@@ -223,7 +223,7 @@ Para obtener información sobre cómo habilitar el registro detallado en el equi
 <tr class="even">
 <td>10005</td>
 <td>El instalador ha detectado un error inesperado al instalar este paquete. Esto puede deberse a un problema del paquete. El código de error es [1]. {{Los argumentos son: [2], [3], [4]}}</td>
-<td>Mensaje de error que indica que se ha producido un error interno. El texto de este mensaje se basa en el texto escrito para el error 5 en la tabla Error.</td>
+<td>Mensaje de error que indica que se ha producido un error interno. El texto de este mensaje se basa en el texto que se ha escrito para el error 5 en la tabla Error.</td>
 </tr>
 <tr class="odd">
 <td>11707</td>

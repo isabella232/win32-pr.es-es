@@ -4,12 +4,12 @@ ms.assetid: 0bbec06a-0a2b-430a-a361-317a319da615
 title: AlwaysInstallElevated
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc015dad8096db16d8b70238a5fd7e07544b83f9a9e3d1a5045be9d12bbb30cd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c07e705e3e46a28049b6fb85eda96930d645a867
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119650245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159145"
 ---
 # <a name="alwaysinstallelevated"></a>AlwaysInstallElevated
 
@@ -25,15 +25,15 @@ Para instalar un paquete con privilegios elevados (sistema), establezca el valor
 
 **HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
 
-Si el valor AlwaysInstallElevated no se establece en "1" en las dos claves del Registro anteriores, el instalador usa privilegios elevados para instalar aplicaciones administradas y usa el nivel de privilegios del usuario actual para las aplicaciones no administradas.
+Si el valor AlwaysInstallElevated no está establecido en "1" en las dos claves del Registro anteriores, el instalador usa privilegios elevados para instalar aplicaciones administradas y usa el nivel de privilegios del usuario actual para las aplicaciones no administradas.
 
-Dado que esta directiva permite a los usuarios instalar aplicaciones que requieren acceso a directorios y claves del Registro para las que es posible que el usuario no tenga permiso para ver o cambiar, debe considerar si proporciona a los usuarios un nivel de seguridad adecuado. Al establecer esta directiva, Windows instalador debe usar permisos del sistema cuando instala la aplicación en el sistema. Si no se establece esta directiva, las aplicaciones no distribuidas por el administrador se instalan con los privilegios del usuario y solo las aplicaciones administradas obtienen privilegios elevados.
+Dado que esta directiva permite a los usuarios instalar aplicaciones que requieren acceso a directorios y claves del Registro para las que es posible que el usuario no tenga permiso para ver o cambiar, debe considerar si proporciona a los usuarios un nivel de seguridad adecuado. Al establecer esta directiva, Windows instalador use permisos del sistema al instalar la aplicación en el sistema. Si no se establece esta directiva, las aplicaciones no distribuidas por el administrador se instalan con los privilegios del usuario y solo las aplicaciones administradas obtienen privilegios elevados.
 
 Tenga en cuenta que una vez habilitada la directiva por equipo para AlwaysInstallElevated, cualquier usuario puede establecer su configuración por usuario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para obtener información sobre la interacción de esta directiva con los orígenes de instalación, vea [Administrar orígenes de instalación](managing-installation-sources.md).
+Para obtener información sobre la interacción de esta directiva con los orígenes de instalación, vea [Managing Installation Sources](managing-installation-sources.md).
 
 ## <a name="data-type"></a>Tipo de datos
 

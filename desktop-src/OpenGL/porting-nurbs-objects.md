@@ -12,16 +12,16 @@ keywords:
 - Spline B no uniforme lógica (SPLINE) (SPLINEBS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af6990d2292399cb1ccaf00ba6ec42d680c5ace887b2495daf8640db2da30ac5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e0e56c06eea4e4a9a48f9062205277f8b999499
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118132414"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074006"
 ---
 # <a name="porting-nurbs-objects"></a>Porte de objetos DE BASE DE DATOS
 
-OpenGL trata ASEBS como objetos, de forma similar a la forma en que trata los cuádigos: se crea un objeto DE LABS y, a continuación, se especifica cómo se debe representar. En la tabla siguiente se enumeran las funciones GLU de OpenGL para administrar objetos DE LABS.
+OpenGL trata ASEBS como objetos, de forma similar a la forma en que trata los cuádigos: se crea un objeto GAMMABS y, a continuación, se especifica cómo se debe representar. En la tabla siguiente se enumeran las funciones GLU de OpenGL para administrar objetos DE LABS.
 
 
 

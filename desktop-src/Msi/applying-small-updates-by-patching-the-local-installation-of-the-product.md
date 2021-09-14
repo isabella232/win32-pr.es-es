@@ -4,12 +4,12 @@ ms.assetid: 2a04ffd0-d5b6-44f3-bef2-73f59179aed1
 title: Aplicación de actualizaciones pequeñas mediante la aplicación de revisiones a la instalación local del producto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4519a8e9e5f50968e9b11bc8154cd73254c3fb81e4a7f4e4a69bb3136033df3c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bced3e7f69761ff3e270046718eedb9032cab8a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159112"
 ---
 # <a name="applying-small-updates-by-patching-the-local-installation-of-the-product"></a>Aplicación de actualizaciones pequeñas mediante la aplicación de revisiones a la instalación local del producto
 

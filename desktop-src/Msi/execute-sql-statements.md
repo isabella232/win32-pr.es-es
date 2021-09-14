@@ -4,12 +4,12 @@ ms.assetid: 1027b187-1237-43d1-9905-8fcdaec63903
 title: Ejecutar SQL instrucciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed7893da9c49ad1aaff4d19726cbcfce86f80293d9ffaa4c8e01569dd83a2d3b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 99da54f85b02ee867003b140d505f5754f58cc00
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120044495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158435"
 ---
 # <a name="execute-sql-statements"></a>Ejecutar SQL instrucciones
 
@@ -26,11 +26,11 @@ El uso de este ejemplo requiere la CScript.exe o WScript.exe de Windows host de 
 
 **Ruta de acceso WiRunSQL.vbs cscript \[ a consultas de SQL base de \] \[ datos\]**
 
-Especifique la ruta de acceso a una base de Windows instalador. Especifique las SQL que se van a ejecutar. Tenga en cuenta que SQL consulta debe incluirse entre comillas dobles. Las consultas SELECT muestran las filas de la lista de resultados especificada en la consulta. No se muestran las columnas de datos binarios seleccionadas por una consulta.
+Especifique la ruta de acceso a una base Windows de datos del instalador. Especifique las SQL que se van a ejecutar. Tenga en cuenta que SQL consulta debe incluirse entre comillas dobles. Las consultas SELECT muestran las filas de la lista de resultados especificada en la consulta. No se muestran las columnas de datos binarios seleccionadas por una consulta.
 
-Para obtener ejemplos de scripting adicionales, [Windows Ejemplos de scripting del instalador de .](windows-installer-scripting-examples.md) Para obtener utilidades de ejemplo que no requieren Windows host de script, [vea Windows Herramientas de](windows-installer-development-tools.md)desarrollo del instalador .
+Para obtener ejemplos de scripting adicionales, [vea Windows de scripting del instalador.](windows-installer-scripting-examples.md) Para obtener utilidades de ejemplo que no requieren Windows host de script, vea Windows Herramientas de desarrollo [del instalador .](windows-installer-development-tools.md)
 
-Para obtener más información, vea [Trabajar con consultas y](working-with-queries.md) ejemplos de consultas de base de datos mediante SQL y [script](examples-of-database-queries-using-sql-and-script.md). En el [ejemplo A Localization Example (Ejemplo](a-localization-example.md) de localización) se muestra SQL [para](localizing-database-columns.md) la localización de columnas de base de datos y la actualización de una secuencia de información [de resumen](updating-a-summary-information-stream.md).
+Para obtener más información, vea [Trabajar con consultas y](working-with-queries.md) ejemplos de consultas de base de datos mediante SQL y [script](examples-of-database-queries-using-sql-and-script.md). En el ejemplo [A Localization Example (Ejemplo](a-localization-example.md) de localización) se muestra SQL [para](localizing-database-columns.md) la localización de columnas de base de datos y la actualización de una secuencia de información [de resumen](updating-a-summary-information-stream.md).
 
  
 

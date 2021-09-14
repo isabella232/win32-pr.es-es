@@ -1,21 +1,21 @@
 ---
-description: El método recomendado para generar un paquete de revisión es usar herramientas de creación de revisiones como Msimsp.exe y Patchwiz.dll. La herramienta Msimsp.exe solo está disponible en los componentes Windows SDK para desarrolladores Windows Instalador.
+description: El método recomendado para generar un paquete de revisión es usar herramientas de creación de revisiones como Msimsp.exe y Patchwiz.dll. La herramienta Msimsp.exe solo está disponible en los componentes del SDK de Windows para Windows instaladores.
 ms.assetid: fa8e9d68-3db1-4d17-aa99-2ca0ed421c7a
 title: Msimsp.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa82f2fbefc9046877f4f98cf4a3c126d94e6542b60076f0491bd0f311ee00a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1810fd0c544695742273bbb0e63b22138529c129
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118627803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074375"
 ---
 # <a name="msimspexe"></a>Msimsp.exe
 
-El método recomendado para generar un paquete de revisión es usar herramientas de creación de revisiones como Msimsp.exe y [Patchwiz.dll](patchwiz-dll.md). La herramienta Msimsp.exe solo está disponible en los componentes del SDK de Windows [para desarrolladores Windows installer .](platform-sdk-components-for-windows-installer-developers.md)
+El método recomendado para generar un paquete de revisión es usar herramientas de creación de revisiones como Msimsp.exe y [Patchwiz.dll](patchwiz-dll.md). La herramienta Msimsp.exe solo está disponible en los componentes del SDK de Windows [para Windows programadores del instalador](platform-sdk-components-for-windows-installer-developers.md).
 
-Msimsp.exe es un archivo ejecutable que llama a [Patchwiz.dll](patchwiz-dll.md). La herramienta se puede usar para crear un paquete de revisión pasando la ruta de acceso a un archivo de propiedades de creación de revisiones (archivo .pack) y la ruta de acceso al paquete de revisión que se está creando. Msimsp.ex también se puede usar para crear un archivo de registro y para especificar una carpeta temporal en la que se guardan las transformaciones, los archivadores y los archivos que se usan para crear el paquete de revisión.
+Msimsp.exe es un archivo ejecutable que llama a [Patchwiz.dll](patchwiz-dll.md). La herramienta se puede usar para crear un paquete de revisión pasando la ruta de acceso a un archivo de propiedades de creación de revisiones (archivo .csv) y la ruta de acceso al paquete de revisión que se está creando. Msimsp.ex también se puede usar para crear un archivo de registro y para especificar una carpeta temporal en la que se guardan las transformaciones, los archivadores y los archivos que se usan para crear el paquete de revisión.
 
 La sintaxis de línea de comandos Msimsp.exe es:
 
@@ -32,14 +32,14 @@ Esto es necesario y debe ir seguido de la ruta de acceso al archivo de propiedad
 
 </dd> <dt>
 
-<span id="-ppath_to_.msp_file"></span><span id="-PPATH_TO_.MSP_FILE"></span>**-p ruta**_de acceso al archivo .msp_
+<span id="-ppath_to_.msp_file"></span><span id="-PPATH_TO_.MSP_FILE"></span>**-p**_ruta de acceso al archivo .msp_
 </dt> <dd>
 
 Esto es necesario y seguido de la ruta de acceso al paquete de revisión que se está creando (extensión .msp).
 
 </dd> <dt>
 
-<span id="-fpath_to_temporary_folder"></span><span id="-FPATH_TO_TEMPORARY_FOLDER"></span>**-f ruta**_de acceso a la carpeta temporal_
+<span id="-fpath_to_temporary_folder"></span><span id="-FPATH_TO_TEMPORARY_FOLDER"></span>**-f ruta de**_acceso a la carpeta temporal_
 </dt> <dd>
 
 Opcional. Seguido de la ruta de acceso a la carpeta temporal. La ubicación predeterminada es %TMP% \\ ~pcw \_ tmp.tmp \\ .
@@ -49,21 +49,21 @@ Opcional. Seguido de la ruta de acceso a la carpeta temporal. La ubicación pred
 <span id="-k"></span><span id="-K"></span>**-k**
 </dt> <dd>
 
-Opcional. Error si la carpeta temporal ya existe.
+Opcional. Se producirá un error si la carpeta temporal ya existe.
 
 </dd> <dt>
 
 <span id="-lpath_to_log_file"></span><span id="-LPATH_TO_LOG_FILE"></span>**-l ruta**_de acceso al archivo de registro_
 </dt> <dd>
 
-Opcional. Seguido de la ruta de acceso al archivo de registro que describe los errores y el proceso de creación de revisiones. Para obtener más información, [vea Valores devueltos para UiCreatePatchPackage.](return-values-for-uicreatepatchpackage.md)
+Opcional. Seguido de la ruta de acceso al archivo de registro que describe el proceso de creación de revisiones y los errores. Para obtener más información, vea [Valores devueltos para UiCreatePatchPackage.](return-values-for-uicreatepatchpackage.md)
 
 </dd> <dt>
 
 <span id="-lppath_to_log_file_with_performance_data"></span><span id="-LPPATH_TO_LOG_FILE_WITH_PERFORMANCE_DATA"></span>**-lp ruta de**_acceso al archivo de registro con datos de rendimiento_
 </dt> <dd>
 
-Opcional. Seguido de la ruta de acceso al archivo de registro que describe los errores y el proceso de creación de revisiones. Esta opción escribe datos de rendimiento en el archivo de registro. Esta opción requiere la versión 4.0 de Patchwiz.dll.
+Opcional. Seguido de la ruta de acceso al archivo de registro que describe el proceso de creación de revisiones y los errores. Esta opción escribe datos de rendimiento en el archivo de registro. Esta opción requiere la versión 4.0 de Patchwiz.dll.
 
 </dd> <dt>
 
@@ -82,9 +82,9 @@ Muestra la ayuda de la línea de comandos.
 </dd> </dl>
 
 > [!Note]
-> Msimsp.exe puede producir un error cuando llama a Makecab.exe si hay valores [](file-table.md) en la columna Archivo de la tabla Archivo del paquete de instalación que solo difieren por mayúsculas y minúsculas. Windows El instalador distingue mayúsculas de minúsculas y permite un paquete de instalación como en la tabla siguiente solo cuando Comp1 y Comp2 se instalan en directorios diferentes. Sin embargo, en este escenario no puede usar Msimsp.exe o [Patchwiz.dll](patchwiz-dll.md) para generar una revisión para el paquete, ya que Msimsp.exe y Patchwiz.dll llaman a Makecab.exe, que no tiene en cuenta mayúsculas de minúsculas.
+> Msimsp.exe puede producir un error cuando llama a Makecab.exe si hay [](file-table.md) valores en la columna Archivo de la tabla Archivo del paquete de instalación que solo difieren por mayúsculas y minúsculas. Windows El instalador distingue mayúsculas de minúsculas y permite un paquete de instalación, como en la tabla siguiente, solo cuando Comp1 y Comp2 se instalan en directorios diferentes. Sin [ embargo, ](patchwiz-dll.md) en este escenario no puede usar Msimsp.exe oPatchwiz.dllpara generar una revisión para el paquete, ya que Msimsp.exe y Patchwiz.dll llaman Makecab.exe, que no tiene en cuenta las mayúsculas y minúsculas.
 > 
-> Evite la creación de un paquete de instalación, como la siguiente tabla [de archivos parcial.](file-table.md)
+> Evite crear un paquete de instalación como la siguiente tabla [de archivos parcial.](file-table.md)
 > 
 > | Archivo       | Componente\_ | FileName   |
 > |------------|-------------|------------|
@@ -96,10 +96,10 @@ Muestra la ayuda de la línea de comandos.
 
 <dl> <dt>
 
-[Creación de un paquete de revisión](creating-a-patch-package.md)
+[Crear un paquete de revisión](creating-a-patch-package.md)
 </dt> <dt>
 
-[Ejemplo de aplicación de revisiones de actualización pequeña](a-small-update-patching-example.md)
+[Ejemplo pequeño de aplicación de revisiones de actualizaciones](a-small-update-patching-example.md)
 </dt> <dt>
 
 [Windows Herramientas de desarrollo del instalador](windows-installer-development-tools.md)

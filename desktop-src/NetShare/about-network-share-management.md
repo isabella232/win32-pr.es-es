@@ -1,19 +1,19 @@
 ---
-description: 'En los temas siguientes se describe la administración de recursos compartidos de red:'
+description: 'En los temas siguientes se describe administración de recursos compartidos de red:'
 ms.assetid: 7669049d-de56-4485-be4f-939900ca6a4f
-title: Acerca de la administración de recursos compartidos
+title: Acerca de la administración de recursos compartidos de red
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 882b8d9ac423b8088f8979a48573793e3167fd50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074066"
 ---
-# <a name="about-network-share-management"></a>Acerca de la administración de recursos compartidos
+# <a name="about-network-share-management"></a>Acerca de la administración de recursos compartidos de red
 
-En los temas siguientes se describe la administración de recursos compartidos de red:
+En los temas siguientes se describe administración de recursos compartidos de red:
 
 ## <a name="in-this-section"></a>En esta sección
 

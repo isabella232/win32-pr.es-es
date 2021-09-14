@@ -4,12 +4,12 @@ ms.assetid: 9b1b25b5-b190-47c2-8d43-fa3964e87a6f
 title: ICE94
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dd203fe35b6bedc7d36f3e5a5c18fc6a235d3e65924b41909803e67ab79337e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8ce52e88a31e246eb4d69defba77b64c2955eb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074504"
 ---
 # <a name="ice94"></a>ICE94
 

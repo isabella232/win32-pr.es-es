@@ -1,20 +1,20 @@
 ---
 title: Consultas de predicación
-description: El ejemplo D3D12PredicationQueries muestra la selección de oclusión mediante montones de consultas y predicados de DirectX 12. En el tutorial se describe el código adicional necesario para ampliar el ejemplo HelloConstBuffer para controlar las consultas de predicado.
+description: El ejemplo D3D12PredicationQueries muestra la selección de oclusión mediante montones de consultas y predicados de DirectX 12. En el tutorial se describe el código adicional necesario para extender el ejemplo HelloConstBuffer para controlar las consultas de predicado.
 ms.assetid: F61817BB-45BC-4977-BE4A-EE0FDAFBCB57
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d37bd4653ec7610e36214cce31955f1742e5b27a42a381cc2aa7d758daaf5b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad14e55864ee8d568acc0c9eb46134834d27ff54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117733412"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072927"
 ---
 # <a name="predication-queries"></a>Consultas de predicación
 
-El **ejemplo D3D12PredicationQueries** muestra la selección de oclusión mediante montones de consultas y predicados de DirectX 12. En el tutorial se describe el código adicional necesario para ampliar el ejemplo **HelloConstBuffer** para controlar las consultas de predicado.
+El **ejemplo D3D12PredicationQueries** muestra la selección de oclusión mediante montones de consultas y predicados de DirectX 12. En el tutorial se describe el código adicional necesario para extender el ejemplo **HelloConstBuffer** para controlar las consultas de predicado.
 
 -   [Creación de un montón de descriptores de galería de símbolos de profundidad y un montón de consultas de oclusión](#create-a-depth-stencil-descriptor-heap-and-an-occlusion-query-heap)
 -   [Habilitación de la combinación alfa](#enable-alpha-blending)
@@ -64,7 +64,7 @@ En el **método LoadPipeline,** cree un montón de descriptores de galería de s
 
  
 
-En el **método LoadAssets,** cree un montón para consultas de oclusión.
+En el **método LoadAssets,** cree un montón para las consultas de oclusión.
 
 ``` syntax
      // Describe and create a heap for occlusion queries.
@@ -87,7 +87,7 @@ En el **método LoadAssets,** cree un montón para consultas de oclusión.
 
 ## <a name="enable-alpha-blending"></a>Habilitación de la combinación alfa
 
-Este ejemplo dibuja dos quads e ilustra una consulta de oclusión binaria. El quad delante anima a través de la pantalla y, en ocasiones, se ocluye el de atrás. En el **método LoadAssets,** la combinación alfa está habilitada para este ejemplo, de modo que podamos ver en qué punto D3D considera el cuatro en la parte posterior ocluida.
+En este ejemplo se dibujan dos cuatro cuadrados y se muestra una consulta de oclusión binaria. El cuadránime situado delante anima a través de la pantalla y, en ocasiones, el de atrás se oclusa. En el **método LoadAssets,** la combinación alfa está habilitada para este ejemplo para que podamos ver en qué momento D3D considera el cuadránd detrás ocluido.
 
 ``` syntax
      // Enable alpha blending so we can visualize the occlusion query results.
@@ -130,7 +130,7 @@ Este ejemplo dibuja dos quads e ilustra una consulta de oclusión binaria. El qu
 
 ## <a name="disable-color-and-depth-writes"></a>Deshabilitación de las escrituras de color y profundidad
 
-La consulta de oclusión se realiza mediante la representación de un cuadrándido que cubre la misma área que el cuadrándido cuya visibilidad queremos probar. En escenas más complejas, es probable que la consulta sea un volumen delimitador, en lugar de un cuadrándiclo simple. En cualquier caso, se crea un nuevo estado de canalización que deshabilita la escritura en el destino de representación y el búfer z para que la propia consulta de oclusión no afecte a la salida visible del paso de representación.
+La consulta de oclusión se realiza mediante la representación de un cuadrándido que cubre la misma área que el cuadrándido cuya visibilidad queremos probar. En escenas más complejas, es probable que la consulta sea un volumen delimitador, en lugar de un cuadrándular simple. En cualquier caso, se crea un nuevo estado de canalización que deshabilita la escritura en el destino de representación y el búfer z para que la propia consulta de oclusión no afecte a la salida visible del paso de representación.
 
 En el **método LoadAssets,** deshabilite las escrituras de color y las escrituras de profundidad para el estado de la consulta de oclusión.
 
@@ -146,7 +146,7 @@ En el **método LoadAssets,** deshabilite las escrituras de color y las escritur
 
 | Flujo de llamadas                                                                            | Parámetros                                                  |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [**D3D12 ESTADO DE CANALIZACIÓN \_ \_ DE \_ \_ GRÁFICOS DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) | [**MÁSCARA DE ESCRITURA DE PROFUNDIDAD D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_depth_write_mask) |
+| [**D3D12 \_ GRAPHICS \_ PIPELINE \_ STATE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) | [**MÁSCARA DE ESCRITURA EN PROFUNDIDAD D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_depth_write_mask) |
 | [**CreateGraphicsPipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-creategraphicspipelinestate)      |                                                             |
 
 
@@ -155,7 +155,7 @@ En el **método LoadAssets,** deshabilite las escrituras de color y las escritur
 
 ## <a name="create-a-buffer-to-store-the-results-of-the-query"></a>Creación de un búfer para almacenar los resultados de la consulta
 
-En el **método LoadAssets,** es necesario crear un búfer para almacenar los resultados de la consulta. Cada consulta requiere 8 bytes de espacio en la memoria de GPU. Este ejemplo solo realiza una consulta y, por motivos de simplicidad y legibilidad, crea un búfer exactamente de ese tamaño (aunque esta llamada de función asignará una página de 64 K de memoria de GPU: la mayoría de las aplicaciones reales probablemente crearían un búfer mayor).
+En el **método LoadAssets,** es necesario crear un búfer para almacenar los resultados de la consulta. Cada consulta requiere 8 bytes de espacio en la memoria de GPU. Este ejemplo solo realiza una consulta y, por motivos de simplicidad y legibilidad, crea un búfer exactamente de ese tamaño (aunque esta llamada de función asignará una página de 64 000 de memoria de GPU: la mayoría de las aplicaciones reales probablemente crearían un búfer mayor).
 
 ``` syntax
  // Create the query result buffer.
@@ -199,9 +199,9 @@ En el **método LoadAssets,** es necesario crear un búfer para almacenar los re
 
 ## <a name="draw-the-quads-and-perform-and-resolve-the-occlusion-query"></a>Dibuje los quads y realice y resuelva la consulta de oclusión.
 
-Una vez realizado el programa de instalación, el bucle main se actualiza en **el método PopulateCommandLists.**
+Una vez realizada la instalación, el bucle main se actualiza en el **método PopulateCommandLists.**
 
-<dl> 1. Dibuje los quads de atrás hacia delante para que el efecto de transparencia funcione correctamente. Dibujar el cuatro hacia delante se basa en el resultado de la consulta del marco anterior y es una técnica bastante común para esto.  
+<dl> 1. Dibuje los cuatros de atrás hacia delante para que el efecto de transparencia funcione correctamente. Dibujar el cuadrándido hacia delante se basa en el resultado de la consulta del marco anterior y es una técnica bastante común para esto.  
 2. Cambie el PSO para deshabilitar las escrituras de galería de símbolos de profundidad y destino de representación.  
 3. Realice la consulta de oclusión.  
 4. Resuelva la consulta de oclusión.  

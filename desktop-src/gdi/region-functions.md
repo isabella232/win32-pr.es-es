@@ -4,12 +4,12 @@ ms.assetid: 3a42fc7a-4c07-4540-99a7-520f99532f33
 title: Funciones de región (Windows GDI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04e60239eae9f1a4de4d310e3a4288ab74b36d33c117314ee2e5356f4a7c0a5e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de0f55549f978dd2868f231b9ff042f6f825459d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119037663"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072462"
 ---
 # <a name="region-functions-windows-gdi"></a>Funciones de región (Windows GDI)
 
@@ -35,7 +35,7 @@ Las siguientes funciones se usan con regiones.
 | [**GetRegionData**](/windows/desktop/api/Wingdi/nf-wingdi-getregiondata)                         | Rellena el búfer especificado con datos que describen una región.                                    |
 | [**GetRgnBox**](/windows/desktop/api/Wingdi/nf-wingdi-getrgnbox)                                 | Recupera el rectángulo delimitador de la región especificada.                                    |
 | [**InvertRgn**](/windows/desktop/api/Wingdi/nf-wingdi-invertrgn)                                 | Invierte los colores de la región especificada.                                                  |
-| [**OffsetRgn**](/windows/desktop/api/Wingdi/nf-wingdi-offsetrgn)                                 | Mueve una región por los desplazamientos especificados.                                                     |
+| [**OffsetRgn**](/windows/desktop/api/Wingdi/nf-wingdi-offsetrgn)                                 | Mueve una región según los desplazamientos especificados.                                                     |
 | [**PaintRgn**](/windows/desktop/api/Wingdi/nf-wingdi-paintrgn)                                   | Pinta la región especificada mediante el pincel seleccionado actualmente en el contexto del dispositivo.   |
 | [**PtInRegion**](/windows/desktop/api/Wingdi/nf-wingdi-ptinregion)                               | Determina si el punto especificado está dentro de la región especificada.                       |
 | [**RectInRegion**](/windows/desktop/api/Wingdi/nf-wingdi-rectinregion)                           | Determina si alguna parte del rectángulo especificado está dentro de los límites de una región. |

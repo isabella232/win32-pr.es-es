@@ -1,17 +1,17 @@
 ---
 description: Use la marca de opción siguiente para especificar que el instalador ejecute la acción personalizada solo cuando se desinstale una revisión. Para establecer la opción, agregue el valor de esta tabla al valor del campo ExtendedType de la tabla CustomAction.
 ms.assetid: aa4d9e21-5316-42b5-a22e-c7a5becd3cae
-title: Opción de desinstalación de revisión de acción personalizada
+title: Opción de desinstalación de revisiones de acción personalizada
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 24636181ec8fb9695b9d959a25b055a7e7c21d34
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885038"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158722"
 ---
-# <a name="custom-action-patch-uninstall-option"></a>Opción de desinstalación de revisión de acción personalizada
+# <a name="custom-action-patch-uninstall-option"></a>Opción de desinstalación de revisiones de acción personalizada
 
 Use la marca de opción siguiente para especificar que el instalador ejecute la acción personalizada solo cuando se desinstale una revisión. Para establecer la opción , agregue el valor de esta tabla al valor del campo ExtendedType de la [tabla CustomAction](customaction-table.md).
 
@@ -27,17 +27,17 @@ Use la marca de opción siguiente para especificar que el instalador ejecute la 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este atributo se puede agregar a una acción personalizada mediante su creación en el paquete Windows instalador (.msi archivo). Una revisión puede agregar una nueva acción personalizada con este atributo. Una acción personalizada con este atributo se puede actualizar mediante una revisión. Este atributo no se puede agregar ni quitar mediante una revisión a una acción personalizada existente.
+Este atributo se puede agregar a una acción personalizada mediante su creación en el paquete Windows Installer (.msi archivo). Una revisión puede agregar una nueva acción personalizada con este atributo. Una acción personalizada que tenga este atributo se puede actualizar mediante una revisión. Este atributo no se puede agregar ni quitar mediante una revisión a una acción personalizada existente.
 
-Si una revisión agrega o actualiza una acción personalizada con este atributo, Windows Installer ejecuta la acción personalizada nueva o actualizada cuando se desinstala la revisión. Windows El instalador hace que las actualizaciones dentro de la revisión que se va a desinstalar estén disponibles para la acción personalizada de desinstalación de revisiones. La revisión debe incluir [una tabla *&lt; PatchGUID &gt;* de MsiTransformView](msitransformview.md) para proporcionar esta información a Windows Instalador.
+Si una revisión agrega o actualiza una acción personalizada con este atributo, Windows Installer ejecuta la acción personalizada nueva o actualizada cuando se desinstala la revisión. Windows El instalador hace que las actualizaciones de la revisión que se va a desinstalar estén disponibles para la acción personalizada de desinstalación de revisiones. La revisión debe incluir [una tabla *&lt; PatchGUID &gt;* de MsiTransformView](msitransformview.md) para proporcionar esta información a Windows Installer.
 
 Cuando un paquete que contiene una acción personalizada con el atributo **msidbCustomActionTypePatchUninstall** se instala con una versión del instalador anterior a Windows Installer 4.0, el instalador no llama a la acción personalizada cuando se desinstala la revisión. La instalación puede ejecutar la acción personalizada durante la instalación, reparación o actualización del paquete.
 
-Las acciones personalizadas con el atributo **msidbCustomActionTypePatchUninstall** deben estar condicióndas mediante la propiedad [**MSIPATCHREMOVE**](msipatchremove.md) para evitar que la acción personalizada se ejecute al instalar, reparar o actualizar mediante un sistema con Windows Installer 4.0 o versiones anteriores. Cuando se Windows Installer 4.5 y versiones posteriores, todas las revisiones del sistema que tienen acciones personalizadas marcadas con el atributo **msidbCustomActionTypePatchUninstall** ejecutan la acción personalizada durante la desinstalación de revisiones. Si Windows instalador 4.5 o posterior se quita del sistema, las revisiones perderán la funcionalidad de desinstalación de revisiones de acción personalizada.
+Las acciones personalizadas con el atributo **msidbCustomActionTypePatchUninstall** deben estar condicionadas mediante la propiedad [**MSIPATCHREMOVE**](msipatchremove.md) para evitar que la acción personalizada se ejecute al instalar, reparar o actualizar mediante un sistema con Windows Installer 4.0 o versiones anteriores. Cuando Windows Installer 4.5 y versiones posteriores están instalados, todas las revisiones del sistema que tienen acciones personalizadas marcadas con el atributo **msidbCustomActionTypePatchUninstall** ejecutan la acción personalizada durante la desinstalación de revisiones. Si Windows installer 4.5 o posterior se quita del sistema, las revisiones perderán la funcionalidad de desinstalación de revisiones de acción personalizada.
 
-Para obtener información sobre cómo ejecutar una acción personalizada durante la desinstalación de una revisión con una versión anterior a Windows Installer 4.5, vea Acciones personalizadas de desinstalación de [revisiones.](patch-uninstall-custom-actions.md)
+Para obtener información sobre cómo ejecutar una acción personalizada durante la desinstalación de una revisión con una versión anterior a Windows Installer 4.5, vea Acciones personalizadas de desinstalación de [revisiones](patch-uninstall-custom-actions.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

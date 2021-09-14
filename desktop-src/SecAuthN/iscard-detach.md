@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 527197be4b62820da818d4cc8ea9b6d344630d6d1cdcd8d4bd4ae1e618080015
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f9fd2b2a6d9ea2df8e886c6ff9851706c2030a1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119482265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071272"
 ---
 # <a name="iscarddetach-method"></a>Método ISCard::D etach
 
@@ -50,10 +50,10 @@ Indica lo que se debe hacer con la tarjeta en el lector [*conectado.*](../secglo
 
 | Value                                                                                                                                      | Significado                                                                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| <span id="LEAVE"></span><span id="leave"></span><dl> <dt>**Salir**</dt> </dl>       | Deja la tarjeta inteligente en el estado [*actual.*](../secgloss/s-gly.md)<br/> |
-| <span id="RESET"></span><span id="reset"></span><dl> <dt>**RESET**</dt> </dl>       | Restablece la tarjeta inteligente a un estado conocido.<br/>                                                              |
+| <span id="LEAVE"></span><span id="leave"></span><dl> <dt>**SALIR**</dt> </dl>       | Deja la tarjeta inteligente en el estado [*actual.*](../secgloss/s-gly.md)<br/> |
+| <span id="RESET"></span><span id="reset"></span><dl> <dt>**RESTABLECER**</dt> </dl>       | Restablece la tarjeta inteligente a un estado conocido.<br/>                                                              |
 | <span id="UNPOWER"></span><span id="unpower"></span><dl> <dt>**UNPOWER**</dt> </dl> | Quita la energía de la tarjeta inteligente.<br/>                                                                      |
-| <span id="EJECT"></span><span id="eject"></span><dl> <dt>**Expulsar**</dt> </dl>       | Expulsa la tarjeta inteligente si el lector tiene capacidades de expulsión.<br/>                                             |
+| <span id="EJECT"></span><span id="eject"></span><dl> <dt>**EXPULSAR**</dt> </dl>       | Expulsa la tarjeta inteligente si el lector tiene capacidades de expulsión.<br/>                                             |
 
 
 
@@ -109,14 +109,14 @@ if (FAILED(hr))
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCard se define como \_ 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

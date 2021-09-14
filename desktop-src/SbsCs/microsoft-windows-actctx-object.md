@@ -12,20 +12,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 7e84eadbc7489ddd91c34c0c9494515e89205849829625e850ad31dce3e92fc1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58290ec9d36d8e8428000422d0e1014335870149
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119142008"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071350"
 ---
 # <a name="microsoftwindowsactctx-object"></a>Microsoft. Windows. Objeto ActCtx
 
 **Microsoft.Windows. El objeto ActCtx** hace referencia a manifiestos y proporciona una manera de que los motores de scripting accedan a ensamblados en paralelo. **Microsoft.Windows. El objeto ActCtx** se puede usar para crear una instancia de un ensamblado en paralelo con componentes COM.
 
-**Microsoft.Windows. El objeto ActCtx** se incluye como un ensamblado en Windows Server 2003. También se puede instalar mediante aplicaciones que usan el instalador de Windows para la instalación e incluirlo como un módulo de combinación en su paquete de instalación.
+**Microsoft.Windows. El objeto ActCtx** se incluye como un ensamblado en Windows Server 2003. También se puede instalar mediante aplicaciones que usan el instalador de Windows para el programa de instalación e incluirlo como un módulo de combinación en su paquete de instalación.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 **Microsoft.Windows. El objeto ActCtx** tiene estos tipos de miembros:
 
@@ -53,7 +53,7 @@ ms.locfileid: "119142008"
 
 
 
-| Propiedad                                | Tipo de acceso          | Descripción                                    |
+| Propiedad.                                | Tipo de acceso          | Descripción                                    |
 |:----------------------------------------|:---------------------|:-----------------------------------------------|
 | [**Manifiesto**](manifest.md)<br/> | Solo lectura<br/> | Obtiene el contexto de activación activo.<br/> |
 

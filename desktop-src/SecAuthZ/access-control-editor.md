@@ -4,12 +4,12 @@ ms.assetid: ca709f27-8463-4f11-92ac-2148796e640a
 title: Access Control Editor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3ed7c210c747278d35537fc010c66b60f0057d9a61b407eb04e993f8928f2d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 65117fe086b6a374dbd973f2cb657ec9c19cc3a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118914683"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073763"
 ---
 # <a name="access-control-editor"></a>Access Control Editor
 

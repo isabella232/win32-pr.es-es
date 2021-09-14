@@ -4,12 +4,12 @@ ms.assetid: 813a2b4b-6577-4cdf-a2e6-e06870638354
 title: D3DXF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d286ad4cf64133683de026893beb9fa081899e6b170e4b3adb478798eb4b3edf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e230fc08ac4d7f8713959f2025f67262046ecea5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118096080"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072804"
 ---
 # <a name="d3dxf"></a>D3DXF
 

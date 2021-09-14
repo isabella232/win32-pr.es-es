@@ -1,17 +1,17 @@
 ---
 description: Cuando se usa la seguridad basada en roles, se puede usar el objeto de contexto de llamada de seguridad para acceder a la información de seguridad sobre la llamada actual.
 ms.assetid: 9fc0a9e5-934c-4510-8fbb-1fb2817aa0ea
-title: Acceso a información de contexto de llamada de seguridad
+title: Acceso a la información de contexto de llamada de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38e438ce3cfa137ece28bce70d2c820becede231b1b0381da38dd7c6bcc21cb1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6d7e5160c766783b6d43822571d624e0a595c9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119639125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073033"
 ---
-# <a name="accessing-security-call-context-information"></a>Acceso a información de contexto de llamada de seguridad
+# <a name="accessing-security-call-context-information"></a>Acceso a la información de contexto de llamada de seguridad
 
 Cuando se usa la seguridad basada en roles, se puede usar el objeto de contexto de llamada de seguridad para acceder a la información de seguridad sobre la llamada actual.
 
@@ -26,7 +26,7 @@ Las siguientes colecciones de propiedades están disponibles en el objeto de con
 
 
 
-| Propiedad                          | Descripción                                                                                                                            |
+| Propiedad.                          | Descripción                                                                                                                            |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | NumCallers<br/>             | Número de autores de llamadas en la cadena de llamadas.<br/>                                                                                |
 | MinAuthenticationLevel<br/> | Nivel de autenticación menos seguro de todos los llamadores de la cadena.<br/>                                                          |
@@ -50,7 +50,7 @@ Para obtener más información sobre esta colección, Visual Basic desarrollador
 
 
 
-| Propiedad                         | Descripción                                                                                                                                                          |
+| Propiedad.                         | Descripción                                                                                                                                                          |
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SID<br/>                   | Identificador de seguridad del autor de la llamada.<br/>                                                                                                                   |
 | AccountName<br/>           | Nombre de cuenta del autor de la llamada.<br/>                                                                                                                           |
@@ -62,7 +62,7 @@ Para obtener más información sobre esta colección, Visual Basic desarrollador
 
  
 
-Para obtener más información sobre esta colección, Visual Basic desarrolladores deben ver la [**clase SecurityIdentity.**](securityidentity.md) Los desarrolladores de C y C++ deben hacer referencia a [**ISecurityIdentityColl**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecurityidentitycoll).
+Para obtener más información sobre esta colección, Visual Basic desarrolladores deben ver la [**clase SecurityIdentity.**](securityidentity.md) Los desarrolladores de C y C++ deben hacer referencia a [**ISecurityIdentityColl.**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecurityidentitycoll)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -71,7 +71,7 @@ Para obtener más información sobre esta colección, Visual Basic desarrollador
 [Comprobación de la pertenencia a roles](checking-role-membership.md)
 </dt> <dt>
 
-[Determinar si la Role-Based seguridad está habilitada](determining-whether-role-based-security-is-enabled.md)
+[Determinar si Role-Based seguridad está habilitada](determining-whether-role-based-security-is-enabled.md)
 </dt> <dt>
 
 [Seguridad de componentes mediante programación](programmatic-component-security.md)

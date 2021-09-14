@@ -4,12 +4,12 @@ ms.assetid: 2ab31a32-6d33-46b7-a295-199560efa7fb
 title: Tabla BBControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70198167c866195204ec6cbcf644b92f3489a4ff44e14e719efbf5c6647e30c2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dfebbdbc474ef88cbf26f34555deb4874840d005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119754375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158993"
 ---
 # <a name="bbcontrol-table"></a>Tabla BBControl
 
@@ -51,7 +51,7 @@ Clave externa para la columna uno de la [tabla DeÓnón](billboard-table.md).
 <span id="BBControl"></span><span id="bbcontrol"></span><span id="BBCONTROL"></span>BBControl
 </dt> <dd>
 
-Nombre del control. Este nombre debe ser único dentro de un cuadro, pero se puede repetir en diferentes estaciones. Esta columna combinada con la columna Column \_ forma la clave principal de la tabla.
+Nombre del control. Este nombre debe ser único dentro de un conjunto, pero se puede repetir en diferentes alaaciones. Esta columna combinada con la columna Column \_ forma la clave principal de la tabla.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Esta columna contiene una cadena localizable que se usa para establecer el texto
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores enteros de x, y, width y height se encuentran en las unidades [del instalador,](installer-units.md)no en las unidades de diálogo. Una unidad del instalador es igual a la duodécima altura del tamaño de fuente MS Sans Serif de 10 puntos. Las coordenadas de los controles son relativas al control no al cuadro de diálogo.
 

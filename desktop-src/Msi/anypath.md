@@ -4,12 +4,12 @@ ms.assetid: fe8a4d2a-1960-40af-a0e4-4d65accdd388
 title: AnyPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ab5d8e7aaf4e92c2b33379b92b00263df07366ff340346aa19518478f8f2394
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 80ab6265874616bb0bb1a2f61098cdbabfa8ea24
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120045785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159134"
 ---
 # <a name="anypath"></a>AnyPath
 
@@ -20,7 +20,7 @@ Ejemplos de datos AnyPath válidos:
 -   \\\\server \\ share \\ temp
 -   c: \\ temp
 -   \\Temp
--   projec~1 \| Project status
+-   projec~1 \| Project estado
 
 Ejemplos de datos AnyPath no válidos:
 

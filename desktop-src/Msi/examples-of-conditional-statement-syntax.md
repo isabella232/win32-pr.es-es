@@ -4,12 +4,12 @@ ms.assetid: 8b6bae7a-20ae-494c-bd96-66bd537c8630
 title: Ejemplos de sintaxis de instrucciones condicionales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88445e1e4b371669c43b47d1ca54e9fd677c5414985ade3908b95e00717de887
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ca91a2b3e89160fad19ad5d9b1c6a3d33929e5d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119811035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158440"
 ---
 # <a name="examples-of-conditional-statement-syntax"></a>Ejemplos de sintaxis de instrucciones condicionales
 

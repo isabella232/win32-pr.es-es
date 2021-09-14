@@ -1,6 +1,6 @@
 ---
 title: Valores de sintaxis de aplicación SNMP (Snmp.h)
-description: Los valores de sintaxis de la aplicación SNMP los usan las aplicaciones de administración que emplean el protocolo SNMP de Microsoft API de Administración.
+description: Las aplicaciones de administración que emplean el protocolo SNMP de Microsoft usan los valores de sintaxis de la aplicación SNMP API de Administración.
 ms.assetid: fa269f97-f9d3-49f4-b29b-8c4d71f075d0
 topic_type:
 - apiref
@@ -19,18 +19,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 787723780d5920aafc3c37c40ea995a675943d1e45873d5f30cd8cebb77b5b64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d79ab6535c97fe4124aa1cb3f7ca11ce3eb02582
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119009033"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073822"
 ---
 # <a name="snmp-application-syntax-values"></a>Valores de sintaxis de aplicación SNMP
 
 \[SNMP está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, [Windows administración remota](/windows/desktop/WinRM/portal), que es la implementación de Microsoft de WS-Man.\]
 
-Los valores de sintaxis de la aplicación SNMP los usan las aplicaciones de administración que emplean el protocolo SNMP de Microsoft API de Administración.
+Las aplicaciones de administración que emplean el protocolo SNMP de Microsoft usan los valores de sintaxis de la aplicación SNMP API de Administración.
 
 
 
@@ -59,7 +59,7 @@ Los valores de sintaxis de la aplicación SNMP los usan las aplicaciones de admi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
 title: Aplicar una técnica (Direct3D 11)
-description: Obtenga información sobre cómo establecer el estado de efecto en el dispositivo para Direct3D 11 después de declarar e inicializar las constantes, las texturas y el estado del sombreador.
+description: Obtenga información sobre cómo establecer el estado de efecto en el dispositivo para Direct3D 11 después de que se declaren e inicialicen las constantes, las texturas y el estado del sombreador.
 ms.assetid: 16001913-7ae2-4629-a625-eb850e29fc77
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b53eb5f60c80baf69199885f8036a9e92ac1572fe8339bd6d4a96454adb0121
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 136d03f92957eaf1b3d501c0acd54aafde7e16d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119792045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072971"
 ---
 # <a name="apply-a-technique-direct3d-11"></a>Aplicar una técnica (Direct3D 11)
 
-Con las constantes, texturas y el estado del sombreador declarados e inicializados, lo único que queda por hacer es establecer el estado de efecto en el dispositivo.
+Con las constantes, las texturas y el estado del sombreador declarados e inicializados, lo único que queda por hacer es establecer el estado de efecto en el dispositivo.
 
 ## <a name="set-non-shader-state-in-the-device"></a>Establecer el estado que no es de sombreador en el dispositivo
 
@@ -31,9 +31,9 @@ Un efecto no establece ningún estado de canalización. Por ejemplo, al borrar u
 
 
 
-## <a name="set-effect-state-in-the-device"></a>Establecer el estado del efecto en el dispositivo
+## <a name="set-effect-state-in-the-device"></a>Establecer el estado de efecto en el dispositivo
 
-Para establecer el estado del efecto, se aplica el estado del efecto dentro del bucle de representación. Esto se hace desde fuera de . Es decir, seleccione una técnica y, a continuación, establezca el estado de cada uno de los pases (en función del resultado deseado).
+Para establecer el estado del efecto, se aplica el estado de efecto dentro del bucle de representación. Esto se hace desde fuera de . Es decir, seleccione una técnica y, a continuación, establezca el estado de cada uno de los pases (en función del resultado deseado).
 
 
 ```

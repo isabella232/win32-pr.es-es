@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 075fba028dd045c831adb84a7133fd524398fc74037b7e3c31116b76a4c95a1c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c0de387c0101e7b79e64486089abcbd49f5d60d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120086045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158474"
 ---
 # <a name="errordatabasekeys-property"></a>Error.DatabaseKeys, propiedad
 
@@ -38,7 +38,7 @@ propVal = Error.DatabaseKeys
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El cliente es responsable de liberar la colección de cadenas cuando ya no es necesaria.
 
@@ -46,7 +46,7 @@ La colección está vacía si los valores no se aplican al tipo del error. Puede
 
 ### <a name="c"></a>C++
 
-Vea get DatabaseKeys function (Obtener [**\_ función DatabaseKeys).**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_databasekeys)
+Vea get DatabaseKeys function ( obtener [**\_ función DatabaseKeys).**](/windows/win32/api/mergemod/nf-mergemod-imsmerror-get_databasekeys)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Vea get DatabaseKeys function (Obtener [**\_ función DatabaseKeys).**](/windows
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

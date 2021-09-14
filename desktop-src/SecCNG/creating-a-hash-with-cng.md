@@ -4,12 +4,12 @@ ms.assetid: f36b7e36-4377-4940-8951-6caba6e3ce8a
 title: Creación de un hash con CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f57d56c4be7dc2f947dbb1869e63fb1789f57e9b4fe6b3a7a06e3cce15580ab8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 735f95182b63facee687f408ea4a07e09399e562
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118907824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073668"
 ---
 # <a name="creating-a-hash-with-cng"></a>Creación de un hash con CNG
 
@@ -49,7 +49,7 @@ Para crear un hash mediante CNG, realice los pasos siguientes:
 
         Si va a crear más objetos hash, se recomienda reutilizar el proveedor de algoritmos en lugar de crear y destruir el mismo tipo de proveedor de algoritmos muchas veces.
 
-    4.  Cuando haya terminado de usar la memoria del valor hash, descúbala.
+    4.  Cuando haya terminado de usar la memoria de valor hash, la liberará.
 
 En el ejemplo siguiente se muestra cómo crear un valor hash mediante CNG.
 
@@ -226,7 +226,7 @@ Cleanup:
 
 ## <a name="creating-a-reusable-hashing-object"></a>Crear un objeto hash reutilizable
 
-A partir de Windows 8 y Windows Server 2012, puede crear un objeto hash reutilizable para escenarios que requieren que calcule varios hashes o TCC en una sucesión rápida. Para ello, especifique **BCRYPT \_ HASH REUSABLE \_ \_ FLAG** al llamar a la función [**BCryptOpenAlgorithmProvider.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) Todos los proveedores de algoritmos hash de Microsoft admiten esta marca. Un objeto hash creado mediante esta marca se puede reutilizar inmediatamente después de llamar a [**BCryptFinishHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptfinishhash) como si se hubiera creado recientemente llamando a [**BCryptCreateHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptcreatehash). Realice los pasos siguientes para crear un objeto hash reutilizable:
+A partir de Windows 8 y Windows Server 2012, puede crear un objeto hash reutilizable para escenarios que requieren que calcule varios hashes o TIG en una sucesión rápida. Para ello, especifique **BCRYPT \_ HASH REUSABLE \_ \_ FLAG** al llamar a la función [**BCryptOpenAlgorithmProvider.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) Todos los proveedores de algoritmos hash de Microsoft admiten esta marca. Un objeto hash creado mediante esta marca se puede reutilizar inmediatamente después de llamar a [**BCryptFinishHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptfinishhash) como si se hubiera creado recientemente llamando a [**BCryptCreateHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptcreatehash). Realice los pasos siguientes para crear un objeto hash reutilizable:
 
 1.  Abra un proveedor de algoritmos que admita el algoritmo hash deseado. Llame a la función [**BCryptOpenAlgorithmProvider**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) y especifique el identificador de algoritmo adecuado en el parámetro *pszAlgId* y **BCRYPT \_ HASH REUSABLE \_ \_ FLAG** en el *parámetro dwFlags.* La función devuelve un identificador al proveedor.
 2.  Realice los pasos siguientes para crear el objeto hash:
@@ -242,17 +242,17 @@ A partir de Windows 8 y Windows Server 2012, puede crear un objeto hash reutiliz
     2.  Asigne memoria para contener el valor.
     3.  Obtenga el valor hash mediante una llamada [**a BCryptFinishHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptfinishhash).
 
-5.  Para reutilizar el objeto hash con datos nuevos, vaya al paso 3.
+5.  Para reutilizar el objeto hash con nuevos datos, vaya al paso 3.
 6.  Para completar este procedimiento, debe realizar los siguientes pasos de limpieza:
 
     1.  Cierre el objeto hash pasando el identificador hash a la [**función BCryptDestroyHash.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptdestroyhash)
     2.  Liberar la memoria que asignó para el objeto hash.
     3.  Si no va a crear más objetos hash, cierre el proveedor de algoritmos pasando el identificador del proveedor a la función [**BCryptCloseAlgorithmProvider.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptclosealgorithmprovider)
-    4.  Cuando haya terminado de usar la memoria del valor hash, descúbala.
+    4.  Cuando haya terminado de usar la memoria de valor hash, la liberará.
 
 ## <a name="duplicating-a-hash-object"></a>Duplicación de un objeto hash
 
-En algunas circunstancias, puede ser útil crear un algoritmo hash de alguna cantidad de datos comunes y, a continuación, crear dos objetos hash independientes de los datos comunes. No es necesario crear dos objetos hash independientes y hash de los datos comunes dos veces para lograr esto. Puede crear un único objeto hash y agregar todos los datos comunes al objeto hash. A continuación, puede usar la [**función BCryptDuplicateHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptduplicatehash) para crear un duplicado del objeto hash original. El objeto hash duplicado contiene toda la misma información de estado y datos hash que el original, pero es un objeto hash completamente independiente. Ahora puede agregar los datos únicos a cada uno de los objetos hash y obtener el valor hash como se muestra en el ejemplo. Esta técnica es útil cuando se aplica un algoritmo hash a una cantidad posiblemente grande de datos comunes. Solo tiene que agregar los datos comunes al hash original una vez y, a continuación, puede duplicar el objeto hash para obtener un objeto hash único.
+En algunas circunstancias, puede ser útil crear un algoritmo hash de alguna cantidad de datos comunes y, a continuación, crear dos objetos hash independientes de los datos comunes. No es necesario crear dos objetos hash independientes y crear un algoritmo hash de los datos comunes dos veces para lograr esto. Puede crear un único objeto hash y agregar todos los datos comunes al objeto hash. A continuación, puede usar la [**función BCryptDuplicateHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptduplicatehash) para crear un duplicado del objeto hash original. El objeto hash duplicado contiene toda la misma información de estado y datos hash que el original, pero es un objeto hash completamente independiente. Ahora puede agregar los datos únicos a cada uno de los objetos hash y obtener el valor hash como se muestra en el ejemplo. Esta técnica es útil cuando se aplica un algoritmo hash a una cantidad posiblemente grande de datos comunes. Solo tiene que agregar los datos comunes al hash original una vez y, a continuación, puede duplicar el objeto hash para obtener un objeto hash único.
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 7fe1b52d-4b06-48cd-afe5-2bd5495bb55e
 title: Tabla DuplicateFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ade1be4296e800bdf0c92e004aa359c1e27d41ddd83283f4e414c4b68b2b5b8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 766f28b7984aedfc682a2bf23378d46ee0519c65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119692615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158516"
 ---
 # <a name="duplicatefile-table"></a>Tabla DuplicateFile
 
@@ -70,7 +70,7 @@ Nombre de una propiedad que es la ruta de acceso completa a donde se va a copiar
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La tabla se procesa mediante la acción [DuplicateFiles y](duplicatefiles-action.md) [la acción RemoveDuplicateFiles](removeduplicatefiles-action.md).
 

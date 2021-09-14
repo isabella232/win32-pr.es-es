@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: a3d5a2413b61d7f54ed26eefcf17e1a4cd7a98b9bc4dc485b11daf349343f0e9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e615a9d17dbf1a40332afc5b49b3c0c5446963ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072129"
 ---
 # <a name="installerpatchesex-property"></a>Installer.PatchesEx, propiedad
 
-La **propiedad PatchesEx** devuelve un [**objeto RecordList**](recordlist-object.md) que enumera la lista de revisiones. Esta propiedad llama [**a MsiEnumPatchesEx.**](/windows/desktop/api/Msi/nf-msi-msienumpatchesexa)
+La **propiedad PatchesEx** devuelve un [**objeto RecordList**](recordlist-object.md) que enumera la lista de revisiones. Esta propiedad llama [**a MsiEnumPatchesEx**](/windows/desktop/api/Msi/nf-msi-msienumpatchesexa).
 
 Esta propiedad es de solo lectura.
 
@@ -43,13 +43,13 @@ propVal = Installer.PatchesEx
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003 o Windows XP.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003 o Windows XP.<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                    |
-| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                                         |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

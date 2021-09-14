@@ -4,12 +4,12 @@ ms.assetid: 79c7c5eb-b212-4dbf-943a-00ebd6037ce1
 title: MediaSourceDir, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d3346cc275fec22b555cd5408fb544bf22339e61dce46785622357e9c9b779c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4ae8ec79d11f8aaf5027ae0e68003532449c52ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119926815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071909"
 ---
 # <a name="mediasourcedir-property"></a>MediaSourceDir, propiedad
 
@@ -21,7 +21,7 @@ El instalador establece la **propiedad MediaSourceDir** en 1 cuando la instalaci
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows installer.<br/> |
 
 
 

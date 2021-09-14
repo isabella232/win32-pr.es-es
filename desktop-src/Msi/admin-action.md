@@ -4,12 +4,12 @@ ms.assetid: 9925a645-5909-42c7-9de8-f908a5e42be9
 title: Acción admin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 785bd69a8de7da1df9a812f7e89d589b6e939b3eedd6b3cecb66bf86407636cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00106c9ab7877918e122f1ec9bd201fe30bb68b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159185"
 ---
 # <a name="admin-action"></a>Acción admin
 
@@ -23,9 +23,9 @@ No hay restricciones de secuencia.
 
 No hay ningún mensaje ActionData.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-No se llama a la acción ADMIN desde dentro de la secuencia de la tabla de acciones, el instalador de Windows ejecuta esta acción cuando se llama a [**MsiInstallProduct**](/windows/desktop/api/Msi/nf-msi-msiinstallproducta) con el parámetro *szCommandLine* establecido en "ACTION=ADMIN" o se llama al ejecutable de línea de comandos Msiexec.exe con el modificador de línea de comandos "/a".
+No se llama a la acción ADMIN desde la secuencia de la tabla de acciones, Windows Installer ejecuta esta acción cuando se llama a [**MsiInstallProduct**](/windows/desktop/api/Msi/nf-msi-msiinstallproducta) con el parámetro *szCommandLine* establecido en "ACTION=ADMIN" o se llama al archivo ejecutable de la línea de comandos Msiexec.exe con el modificador de línea de comandos "/a".
 
 ## <a name="related-topics"></a>Temas relacionados
 

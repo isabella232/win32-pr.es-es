@@ -4,26 +4,26 @@ ms.assetid: 03e7eea6-1a37-4c86-a9da-109fbaf20728
 title: Generar información de secuencia de revisión (PATCHWIZ.DLL)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03094d9df26f4565db5b3a31c9a27c58a0bb45dac8aac93b2fefce34104d58c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff82166f33266a58cd3ef299b2546b04a94ebb14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118947026"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074734"
 ---
 # <a name="generating-patch-sequence-information-patchwizdll"></a>Generar información de secuencia de revisión (PATCHWIZ.DLL)
 
-La versión de [PATCHWIZ.DLL](patchwiz-dll.md) publicada con Windows Installer 3.0 puede generar automáticamente información de secuenciación de revisiones y agregar a la tabla [MsiPatchSequence](msipatchsequence-table.md) una nueva revisión.
+La versión de [PATCHWIZ.DLL](patchwiz-dll.md) publicada con Windows Installer 3.0 puede generar automáticamente información de secuenciación de revisiones y agregar una nueva revisión a la tabla [MsiPatchSequence.](msipatchsequence-table.md)
 
 Establezca la propiedad SEQUENCE DATA GENERATION DISABLED en \_ 1 (uno) en la Tabla de propiedades del archivo .csv para evitar la generación automática de información de \_ \_ secuenciación de revisiones. [](properties-table-patchwiz-dll-.md) Si esta propiedad no está presente, la información se genera y agrega automáticamente.
 
 Cuando el [PATCHWIZ.DLL](patchwiz-dll.md) publicado con Windows Installer 3.0 se usa para generar automáticamente la información de secuenciación de revisiones, se produce lo siguiente:
 
--   Se agrega una nueva fila a la tabla [MsiPatchSequence para](msipatchsequence-table.md) cada código de producto de una imagen de destino que se muestra en [la tabla TargetImages](targetimages-table-patchwiz-dll-.md).
+-   Se agrega una nueva fila a la tabla [MsiPatchSequence para](msipatchsequence-table.md) cada código de producto de una imagen de destino que se muestra en la [tabla TargetImages](targetimages-table-patchwiz-dll-.md).
 -   Los valores agregados a la columna PatchFamily de las nuevas filas corresponden a los códigos de producto de destino de las imágenes de destino que se enumeran en la [tabla TargetImages](targetimages-table-patchwiz-dll-.md).
 -   Los valores agregados a las columnas Sequence de las nuevas filas se generan con la versión de producto más alta destinada por la revisión y la hora UTC cuando se genera la revisión. El número de secuencia es <Product Minor Version> <Build Major Number> . <marca de tiempo 1>.<marca de tiempo 2>.
     -   El primer campo es la versión del producto de la versión más alta del producto a la que se dirigirá la revisión.
-    -   El segundo campo es el número principal de compilación de la versión más alta del producto a la que se dirigirá la revisión.
+    -   El segundo campo es el número principal de compilación de la versión más alta del producto que es el destino de la revisión.
 
     Los dos campos de marca de tiempo tienen en cuenta la marca de tiempo de 32 bits necesaria para contar los segundos en hora universal coordinada (UTC).
     > [!Note]  

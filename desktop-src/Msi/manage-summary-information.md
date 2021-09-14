@@ -1,19 +1,19 @@
 ---
-description: El archivo VBScript WiSumInf.vbs se proporciona en los componentes Windows SDK para desarrolladores Windows Installer. Este script de ejemplo se puede usar para administrar el flujo de información de resumen de un Windows Installer.
+description: El archivo VBScript WiSumInf.vbs se proporciona en los componentes del SDK de Windows para Windows Instalador de aplicaciones. Este script de ejemplo se puede usar para administrar el flujo de información de resumen de un Windows Installer.
 ms.assetid: f7f1cf89-f211-4511-8260-b48c898c1cf6
 title: Administrar información de resumen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bf5ad72ee4f308831077ec2f732b92a70f407c560b204d10f2d3db63d1bb9bb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 02ff360bd56dabc57b3a7ffccdba8c4f90346193
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119926975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074405"
 ---
 # <a name="manage-summary-information"></a>Administrar información de resumen
 
-El archivo vbscript WiSumInf.vbs se proporciona en los componentes del SDK de [Windows para Windows desarrolladores del instalador de .](platform-sdk-components-for-windows-installer-developers.md) Este script de ejemplo se puede usar para administrar el flujo [de información de resumen](summary-information-stream.md) de un Windows Installer.
+El archivo vbscript WiSumInf.vbs se proporciona en los componentes del SDK Windows [para Windows instalador de .](platform-sdk-components-for-windows-installer-developers.md) Este script de ejemplo se puede usar para administrar el flujo de información [de resumen](summary-information-stream.md) de un paquete Windows Installer.
 
 En el ejemplo se muestra el uso de:
 
@@ -22,9 +22,9 @@ En el ejemplo se muestra el uso de:
 
 El uso de este ejemplo requiere la CScript.exe o WScript.exe de Windows host de script. Para usar CScript.exe para ejecutar este ejemplo, escriba un comando en el símbolo del sistema con la sintaxis siguiente. Se muestra ayuda si el primer argumento es /? o si se especifican demasiados argumentos. Para redirigir la salida a un archivo, finalice la línea de comandos con VBS > \[ *ruta de acceso al archivo* \] . El ejemplo devuelve un valor de 0 para correcto, 1 si se invoca ayuda y 2 si se produce un error en el script.
 
-**cscript WiSumInf.vbs \[ ruta de acceso a la base de datos \] \[ Property=value\]**
+**cscript WiSumInf.vbs \[ ruta de acceso a la base \] \[ de datos Property=value\]**
 
-Especifique la ruta de acceso a la base Windows del instalador. Si no se especifica ningún otro argumento, el script enumera todas las propiedades de resumen del paquete. Especifique una lista de propiedades y valores de resumen que se actualizarán con el formato Property=value. Puede especificar la propiedad por el nombre o el valor pid que se muestra a continuación. Los campos de fecha y hora usan el formato de configuración regional actual o "Now" o "Date". Para obtener más información, vea [Summary Information Stream Property Set](summary-information-stream-property-set.md).
+Especifique la ruta de acceso a la base Windows instalador. Si no se especifica ningún otro argumento, el script enumera todas las propiedades de resumen del paquete. Especifique una lista de propiedades y valores de resumen que se actualizarán con el formato Property=value. Puede especificar la propiedad por el nombre o el valor pid que se muestra a continuación. Los campos de fecha y hora usan el formato de configuración regional actual o "Now" o "Date". Para obtener más información, vea [Summary Information Stream Property Set](summary-information-stream-property-set.md).
 
 
 
@@ -33,7 +33,7 @@ Especifique la ruta de acceso a la base Windows del instalador. Si no se especif
 | 1   | codepage    | Página de códigos ANSI de cadenas de texto en información de resumen. Para obtener más información, vea [**Codepage Summary**](codepage-summary.md) Property.                                                                                                                                                           |
 | 2   | Título       | Tipo de Windows paquete del instalador. Para obtener más información, vea [**Title Summary Property**](title-summary.md).                                                                                                                                                                                    |
 | 3   | Asunto     | Nombre completo del producto . Para obtener más información, vea [**Subject Summary Property**](subject-summary.md).                                                                                                                                                                                               |
-| 4   | Autor      | Creador, normalmente nombre del proveedor. Para obtener más información, vea [**Author Summary Property**](author-summary.md).                                                                                                                                                                                     |
+| 4   | Autor      | Creador, normalmente nombre del proveedor. Para obtener más información, [**vea Author Summary Property**](author-summary.md).                                                                                                                                                                                     |
 | 5   | Palabras clave    | Lista de palabras clave para usarlas en el explorador de archivos. Para obtener más información, vea [**Keywords Summary Property**](keywords-summary.md).                                                                                                                                                                       |
 | 6   | Comentarios    | Descripción del propósito o uso del paquete. Para obtener más información, vea [**Comments Summary Property**](comments-summary.md).                                                                                                                                                                       |
 | 7   | Plantilla    | Plataformas y lenguajes admitidos. Para obtener más información, vea [**Template Summary Property**](template-summary.md).                                                                                                                                                                              |

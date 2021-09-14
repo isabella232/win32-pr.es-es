@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 3cf8cf536baab0cef4cd76828ecdf0c594b1fcc7206a73a793c579b9871f242b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e72ce215b373ef8bd48921f796083e9bc5e801be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119482275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071275"
 ---
 # <a name="iscardattachbyhandle-method"></a>Método ISCard::AttachByHandle
 
 \[El **método AttachByHandle** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método AttachByHandle** asocia el objeto [**ISCard**](iscard.md) a un identificador de [*tarjeta inteligente*](../secgloss/s-gly.md) abierto y configurado.
+El **método AttachByHandle** adjunta el objeto [**ISCard**](iscard.md) a un identificador de [*tarjeta inteligente*](../secgloss/s-gly.md) abierto y configurado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -100,21 +100,21 @@ if (FAILED(hr))
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCard se define como \_ 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**AttachByReader**](iscard-attachbyreader.md)
 </dt> <dt>
 
-[**Desasociar**](iscard-detach.md)
+[**Separar**](iscard-detach.md)
 </dt> <dt>
 
 [**get \_ CardHandle**](iscard-get-cardhandle.md)

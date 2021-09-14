@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 2cc10422657ffa1b2c15f1550f20feab3e378f0ec4b88a774f5faa297c49b0ce
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1570f5a0dc607b4a011a5b4276a243c59a64392d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120129345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072095"
 ---
 # <a name="installerreinstallproduct-method"></a>Método Installer.ReinstallProduct
 
@@ -89,7 +89,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

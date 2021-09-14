@@ -4,12 +4,12 @@ ms.assetid: 9ef552b3-6e81-4ace-9ecb-885e339f7083
 title: Acciones personalizadas de texto con formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5f1166b522f0814b588dd5d959af874a84203ee48a86fd8face4eb57cf4e035
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91ff562a8db26cfe51a3fd8a1292130d140b3173
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120044375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074756"
 ---
 # <a name="formatted-text-custom-actions"></a>Acciones personalizadas de texto con formato
 

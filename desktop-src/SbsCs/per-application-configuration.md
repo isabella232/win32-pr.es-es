@@ -4,12 +4,12 @@ ms.assetid: b7988385-c87e-443c-8ec3-84ab3c172eab
 title: Configuración por aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccecdd184ec9c23d3b06a698abeba01b266e558c72851cefb283d3a98adffaae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b17543c9972deefe2a2beda1f5eeba1c5ace2ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119142028"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071343"
 ---
 # <a name="per-application-configuration"></a>Configuración por aplicación
 
@@ -18,14 +18,14 @@ La configuración por aplicación redirige la dependencia de una aplicación det
 A partir Windows Server 2003, la configuración por [](default-configuration.md) aplicación siempre invalida la configuración predeterminada por aplicación. La configuración por [](publisher-configuration.md) aplicación invalida la configuración del publicador por aplicación solo si el archivo de configuración de la aplicación especifica *apply="no"* en **publisherPolicy** y hay una entrada correspondiente en la base de datos de compatibilidad de aplicaciones. [](application-configuration-files.md)
 
 > [!Note]  
-> En Windows XP, la configuración por aplicación [](default-configuration.md) invalida [](publisher-configuration.md) la configuración predeterminada y la configuración del publicador por aplicación. Para obtener información, [vea Configuración por aplicación en Windows XP.](per-application-configuration-on-windows-xp.md)
+> En Windows XP, la configuración por aplicación [](default-configuration.md) invalida la configuración predeterminada y la configuración del [publicador](publisher-configuration.md) por aplicación. Para obtener información, [vea Configuración por aplicación en Windows XP.](per-application-configuration-on-windows-xp.md)
 
  
 
-[A](publisher-configuration.md) partir de Windows Server 2003, una configuración por aplicación [](application-configuration-files.md) invalidará una configuración del publicador si el archivo de configuración de la aplicación especifica *apply="yes"* en **publisherPolicy** y la marca EnableAppConfig está establecida para la aplicación en la base de datos de compatibilidad de aplicaciones. Esta funcionalidad para invalidar una configuración del publicador mediante una configuración por aplicación permite que la aplicación se ejecute en Safemode. Para obtener más información sobre la base de datos de compatibilidad de aplicaciones y Safemode, vea el Windows compatibilidad de aplicaciones Toolkit. Puede obtener el Windows compatibilidad de Toolkit de [https://www.microsoft.com/downloads](https://www.microsoft.com/Downloads/) .
+[A](publisher-configuration.md) partir de Windows Server 2003, una configuración por aplicación [](application-configuration-files.md) invalidará una configuración del publicador si el archivo de configuración de la aplicación especifica *apply="yes"* en **publisherPolicy** y la marca EnableAppConfig se establece para la aplicación en la base de datos de compatibilidad de aplicaciones. Esta funcionalidad para invalidar una configuración del publicador mediante una configuración por aplicación permite que la aplicación se ejecute en Safemode. Para obtener más información sobre la base de datos de compatibilidad de aplicaciones y Safemode, vea el Windows compatibilidad de aplicaciones Toolkit. Puede obtener el Windows compatibilidad de Toolkit de [https://www.microsoft.com/downloads](https://www.microsoft.com/Downloads/) .
 
 > [!Note]  
-> Si envía componentes con un archivo de configuración de aplicación [(.config](application-configuration-files.md) file) que especifica *apply="no"* en **publisherPolicy**, se producirá un error en la generación del contexto de activación. La configuración por aplicación se omitirá si envía componentes con un archivo .config *especificando apply="yes"* en **publisherPolicy**.
+> Si envía componentes con un archivo de configuración de aplicación [(archivo](application-configuration-files.md) .config) que especifica *apply="no"* en **publisherPolicy**, se producirá un error en la generación del contexto de activación. La configuración por aplicación se omitirá si envía componentes con un archivo .config *especificando apply="yes"* en **publisherPolicy**.
 
  
 

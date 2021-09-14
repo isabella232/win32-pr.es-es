@@ -6,11 +6,11 @@ ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2dad0da9f84d68fc1acbf53332d1cae4075f0faa
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107492287"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072871"
 ---
 # <a name="specifying-root-signatures-in-hlsl"></a>Especificación de firmas de raíz en HLSL
 
@@ -25,7 +25,7 @@ Especificar firmas raíz en el modelo de sombreador HLSL 5.1 es una alternativa 
 -   [CBV de nivel raíz](#root-level-cbv)
 -   [SRV de nivel raíz](#root-level-srv)
 -   [UAV de nivel de raíz](#root-level-uav)
--   [Tabla descriptor](#descriptor-table)
+-   [Tabla descriptora](#descriptor-table)
 -   [Sampler estático](#static-sampler)
 -   [Compilación de una firma raíz HLSL](#compiling-an-hlsl-root-signature)
 -   [Manipulación de firmas raíz con el compilador fxc](#manipulating-root-signatures-with-the-fxc-compiler)
@@ -62,7 +62,7 @@ Una firma raíz se puede especificar en HLSL como una cadena. La cadena contiene
 Esta definición proporcionaría la siguiente firma raíz, y se debe hacer lo siguiente:
 
 -   El uso de parámetros predeterminados.
--   b0 y (b0, space=1) no entren en conflicto
+-   b0 y (b0, space=1) no están en conflicto
 -   u0 solo es visible para el sombreador de geometría
 -   u4 y u5 tienen alias para el mismo descriptor en un montón
 
@@ -91,11 +91,11 @@ Esta definición proporcionaría la siguiente firma raíz, y se debe hacer lo si
                              "filter = FILTER_MIN_MAG_MIP_LINEAR )"
 ```
 
-El lenguaje de firma raíz HLSL se corresponde estrechamente con las API de firma raíz de C++ y tiene una capacidad expresiva equivalente. La firma raíz se especifica como una secuencia de cláusulas, separadas por comas. El orden de las cláusulas es importante, ya que el orden de análisis determina la posición de la ranura en la firma raíz. Cada cláusula toma uno o varios parámetros con nombre. Sin embargo, el orden de los parámetros no es importante.
+El lenguaje de firma raíz HLSL se corresponde estrechamente con las API de firma raíz de C++ y tiene una potencia expresiva equivalente. La firma raíz se especifica como una secuencia de cláusulas, separadas por comas. El orden de las cláusulas es importante, ya que el orden de análisis determina la posición de la ranura en la firma raíz. Cada cláusula toma uno o varios parámetros con nombre. Sin embargo, el orden de los parámetros no es importante.
 
 ## <a name="rootflags"></a>RootFlags
 
-La *cláusula RootFlags* opcional toma 0 (el valor predeterminado para indicar que no hay marcas) o uno o varios valores de marcas raíz predefinidos, conectados a través del operador OR ' \| '. Los valores de marca raíz permitidos se definen mediante [**D3D12 \_ ROOT \_ SIGNATURE \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags).
+La *cláusula RootFlags* opcional toma 0 (el valor predeterminado para indicar que no hay marcas) o uno o varios de los valores de marcas raíz predefinidos, conectados a través del operador OR ' \| '. Los valores de marca raíz permitidos se definen mediante [**D3D12 \_ ROOT \_ SIGNATURE \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags).
 
 Por ejemplo:
 
@@ -107,7 +107,7 @@ RootFlags(ALLOW_INPUT_ASSEMBLER_INPUT_LAYOUT | DENY_VERTEX_SHADER_ROOT_ACCESS)
 
 ## <a name="root-constants"></a>Constantes raíz
 
-La *cláusula RootConstants* especifica las constantes raíz en la firma raíz. Dos parámetros obligatorios son: *num32BitConstants* y *bReg* (el registro correspondiente a *BaseShaderRegister* en las API de *C++)* del cbuffer . Los parámetros space *(RegisterSpace* en las API de C++) y *visibility (ShaderVisibility* en C++) son opcionales y los valores predeterminados son:
+La *cláusula RootConstants* especifica las constantes raíz en la firma raíz. Dos parámetros obligatorios son: *num32BitConstants* y *bReg* (el registro correspondiente a *BaseShaderRegister* en las API de C++) del *cbuffer*. Los parámetros space *(RegisterSpace* en las API de C++) y *visibility (ShaderVisibility* en C++) son opcionales y los valores predeterminados son:
 
 ``` syntax
 RootConstants(num32BitConstants=N, bReg [, space=0, 
@@ -124,7 +124,7 @@ RootConstants(num32BitConstants=3, b3)
 
 Visibility es un parámetro opcional que puede tener uno de los valores de [**D3D12 \_ SHADER \_ VISIBILITY**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility).
 
-SHADER \_ VISIBILITY \_ ALL difunde los argumentos raíz a todos los sombreadores. En algún hardware esto no tiene ningún costo, pero en otro hardware hay un costo por bifurcar los datos a todas las fases del sombreador. Al establecer una de las opciones, como SHADER VISIBILITY VERTEX, se limita \_ el argumento raíz a una sola fase del \_ sombreador.
+SHADER \_ VISIBILITY \_ ALL difunde los argumentos raíz a todos los sombreadores. En algún hardware esto no tiene ningún costo, pero en otro hardware hay un costo para bifurcar los datos a todas las fases del sombreador. Al establecer una de las opciones, como SHADER VISIBILITY VERTEX, se limita \_ el argumento raíz a una sola fase del \_ sombreador.
 
 Establecer argumentos raíz en fases de sombreador único permite usar el mismo nombre de enlace en distintas fases. Por ejemplo, un enlace SRV de `t0,SHADER_VISIBILITY_VERTEX` y un enlace SRV de sería `t0,SHADER_VISIBILITY_PIXEL` válido. Pero si la configuración de `t0,SHADER_VISIBILITY_ALL` visibilidad fuera para uno de los enlaces, la firma raíz no sería válida.
 
@@ -166,7 +166,7 @@ UAV(u3)
 
 ## <a name="descriptor-table"></a>Tabla descriptora
 
-La `DescriptorTable` cláusula es en sí misma una lista de cláusulas de tabla de descriptores separadas por comas, así como un parámetro de visibilidad opcional. Las *cláusulas DescriptorTable* incluyen CBV, SRV, UAV y Sampler. Tenga en cuenta que sus parámetros difieren de los de las cláusulas de nivel raíz.
+La cláusula es en sí misma una lista de cláusulas de tabla de descriptores separadas por comas, así como `DescriptorTable` un parámetro de visibilidad opcional. Las *cláusulas descriptorTable* incluyen CBV, SRV, UAV y Sampler. Tenga en cuenta que sus parámetros difieren de los de las cláusulas de nivel raíz.
 
 ``` syntax
 DescriptorTable( DTClause1, [ DTClause2, … DTClauseN,
@@ -187,7 +187,7 @@ Por ejemplo:
 DescriptorTable(CBV(b0),SRV(t3, numDescriptors=unbounded))
 ```
 
-El parámetro obligatorio *bReg* especifica el reg inicial del intervalo de cbuffer. El *parámetro numDescriptors* especifica el número de descriptores en el intervalo de cbuffer contiguo; el valor predeterminado es 1. La entrada declara un intervalo de cbuffer ` [Reg, Reg + numDescriptors - 1]` , cuando *numDescriptors* es un número. Si *numDescriptors* es igual a "sin enlazar", el intervalo es , lo que significa que la aplicación debe asegurarse de que no hace referencia a un área fuera de `[Reg, UINT_MAX]` límites. El *campo* offset representa el parámetro *OffsetInDescriptorsFromTableStart* en las API de C++, es decir, el desplazamiento (en descriptores) desde el principio de la tabla. Si el desplazamiento se establece en DESCRIPTOR RANGE OFFSET APPEND (valor predeterminado), significa que \_ el intervalo está directamente después del intervalo \_ \_ anterior. Sin embargo, la especificación de desplazamientos específicos permite que los intervalos se superpongan entre sí, lo que permite el alias de registro.
+El parámetro obligatorio *bReg* especifica el reg inicial del intervalo de cbuffer. El *parámetro numDescriptors* especifica el número de descriptores en el intervalo de cbuffer contiguo; el valor predeterminado es 1. La entrada declara un intervalo de cbuffer ` [Reg, Reg + numDescriptors - 1]` cuando *numDescriptors* es un número. Si *numDescriptors* es igual a "sin enlazar", el intervalo es , lo que significa que la aplicación debe asegurarse de que no hace referencia a un área fuera de `[Reg, UINT_MAX]` límites. El *campo offset* representa el parámetro *OffsetInDescriptorsFromTableStart* en las API de C++, es decir, el desplazamiento (en descriptores) desde el principio de la tabla. Si el desplazamiento se establece en DESCRIPTOR \_ RANGE \_ OFFSET APPEND (valor predeterminado), significa que el intervalo está directamente después \_ del intervalo anterior. Sin embargo, la especificación de desplazamientos específicos permite que los intervalos se superpongan entre sí, lo que permite el alias de registro.
 
 La tabla descriptor `SRV` tiene la sintaxis siguiente:
 
@@ -197,7 +197,7 @@ SRV(tReg [, numDescriptors=1, space=0, offset=DESCRIPTOR_RANGE_OFFSET_APPEND,   
             flags=DATA_STATIC_WHILE_SET_AT_EXECUTE ])
 ```
 
-Esto es similar a la entrada de la tabla descriptor, salvo que el intervalo especificado es para las vistas de recursos `CBV` del sombreador.
+Esto es similar a la entrada de la tabla descriptor, salvo que el intervalo especificado es para las vistas de recursos `CBV` de sombreador.
 
 La tabla descriptor `UAV` tiene la sintaxis siguiente:
 
@@ -207,7 +207,7 @@ UAV(uReg [, numDescriptors=1, space=0, offset=DESCRIPTOR_RANGE_OFFSET_APPEND,   
             flags=DATA_VOLATILE ])
 ```
 
-Esto es similar a la entrada de la tabla descriptor, salvo que `CBV` el intervalo especificado es para las vistas de acceso no ordenado.
+Esto es similar a la entrada de la tabla descriptor, salvo que `CBV` el intervalo especificado es para vistas de acceso no ordenado.
 
 La tabla descriptor `Sampler` tiene la sintaxis siguiente:
 
@@ -221,7 +221,7 @@ Esto es similar a la entrada de la tabla descriptor, salvo que el intervalo espe
 
 ## <a name="static-sampler"></a>Sampler estático
 
-El sampler estático representa la estructura [**D3D12 \_ STATIC \_ SAMPLER \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) El parámetro obligatorio para *StaticSampler* es un objeto escalar, sampler s-register Reg. Otros parámetros son opcionales con los valores predeterminados que se muestran a continuación. La mayoría de los campos aceptan un conjunto de enumeraciones predefinidas.
+El sampler estático representa la [**estructura D3D12 \_ STATIC \_ SAMPLER \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) El parámetro obligatorio para *StaticSampler* es un valor escalar, sampler s-register Reg. Otros parámetros son opcionales con los valores predeterminados que se muestran a continuación. La mayoría de los campos aceptan un conjunto de enumeraciones predefinidas.
 
 ``` syntax
 StaticSampler( sReg,
@@ -245,17 +245,17 @@ Por ejemplo:
 StaticSampler(s4, filter=FILTER_MIN_MAG_MIP_LINEAR)
 ```
 
-Las opciones de parámetro son muy similares a las llamadas API de C++, excepto *borderColor*, que está restringido a una enumeración en HLSL.
+Las opciones de parámetro son muy similares a las llamadas API de C++, excepto *borderColor*, que está restringida a una enumeración en HLSL.
 
 El campo de filtro puede ser uno de [**D3D12 \_ FILTER.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_filter)
 
-Los campos de dirección pueden ser de [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode).
+Los campos de dirección pueden ser uno de [**D3D12 \_ TEXTURE \_ ADDRESS \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_texture_address_mode).
 
 La función de comparación puede ser una de las funciones [**\_ \_ FUNC COMPARISON de D3D12.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func)
 
 El campo de color del borde puede ser uno de [**D3D12 \_ STATIC \_ BORDER \_ COLOR**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_static_border_color).
 
-La visibilidad puede ser una de [**las VISIBILIDAD DEL \_ SOMBREADOR \_ de D3D12.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility)
+La visibilidad puede ser una de las [**VISIBILIDAD DEL \_ SOMBREADOR \_ de D3D12.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility)
 
 ## <a name="compiling-an-hlsl-root-signature"></a>Compilación de una firma raíz HLSL
 
@@ -269,9 +269,9 @@ float4 main(float4 coord : COORD) : SV_Target
 }
 ```
 
-El compilador creará y comprobará el blob de firma raíz del sombreador e insertará junto con el código de bytes del sombreador en el blob del sombreador. El compilador admite la sintaxis de firma raíz para el modelo de sombreador 5.0 y superior. Si una firma raíz está incrustada en un sombreador del modelo de sombreador 5.0 y ese sombreador se envía al runtime D3D11, en lugar de D3D12, D3D11 omitirá silenciosamente la parte de la firma raíz.
+El compilador creará y comprobará el blob de firma raíz para el sombreador e insertará junto con el código de bytes del sombreador en el blob del sombreador. El compilador admite la sintaxis de firma raíz para el modelo de sombreador 5.0 y superior. Si una firma raíz está incrustada en un sombreador del modelo 5.0 del sombreador y ese sombreador se envía al entorno de ejecución D3D11, en lugar de D3D12, D3D11 omitirá silenciosamente la parte de la firma raíz.
 
-El otro mecanismo es crear un blob de firma raíz independiente, quizás para reutilizarlo con un gran conjunto de sombreadores, lo que ahorra espacio. [Effect-Compiler Tool](/windows/desktop/direct3dtools/fxc) (FXC) admite modelos de sombreador **rootsig \_ 1 \_ 0** y **rootsig \_ 1 \_ 1.** El nombre de la cadena de definición se especifica mediante el argumento /E habitual. Por ejemplo:
+El otro mecanismo es crear un blob de firma raíz independiente, quizás para reutilizarlo con un gran conjunto de sombreadores, lo que ahorra espacio. [Effect-Compiler Tool](/windows/desktop/direct3dtools/fxc) (FXC) admite los modelos de sombreador **rootsig \_ 1 \_ 0** y **rootsig \_ \_ 1 1.** El nombre de la cadena de definición se especifica a través del argumento /E habitual. Por ejemplo:
 
 ``` syntax
 fxc.exe /T rootsig_1_1 MyRS1.hlsl /E MyRS1 /Fo MyRS1.fxo
@@ -279,11 +279,11 @@ fxc.exe /T rootsig_1_1 MyRS1.hlsl /E MyRS1 /Fo MyRS1.fxo
 
 Tenga en cuenta que la definición de la cadena de firma raíz también se puede pasar en la línea de comandos, por ejemplo, /D MyRS1="...".
 
-## <a name="manipulating-root-signatures-with-the-fxc-compiler"></a>Manipulación de firmas raíz con el compilador fxc
+## <a name="manipulating-root-signatures-with-the-fxc-compiler"></a>Manipulación de firmas raíz con el compilador FXC
 
-El compilador FXC crea código de bytes del sombreador a partir de archivos de código fuente HLSL. Hay una gran cantidad de parámetros opcionales para este compilador; consulte [la herramienta Effect-Compiler](/windows/desktop/direct3dtools/fxc).
+El compilador FXC crea código de bytes de sombreador a partir de archivos de código fuente HLSL. Hay una gran cantidad de parámetros opcionales para este compilador; consulte [la herramienta Effect-Compiler .](/windows/desktop/direct3dtools/fxc)
 
-Para administrar firmas raíz de HLSL, en la tabla siguiente se proporcionan algunos ejemplos de uso de FXC.
+Para administrar firmas raíz de HLSL, en la tabla siguiente se proporcionan algunos ejemplos del uso de FXC.
 
 
 

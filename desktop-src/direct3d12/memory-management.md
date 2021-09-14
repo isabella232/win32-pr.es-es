@@ -5,12 +5,12 @@ ms.assetid: 94D47EBB-8060-49F6-A1FF-8B7B98AD5363
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42547b85836711efc4e9aa5b621d90c672617aacff779567f118d4af5041512c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71b8091c2893f8906fe2ab5baadbf1288a1474cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119123804"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072942"
 ---
 # <a name="memory-management-in-direct3d-12"></a>Administración de la memoria en Direct3D 12
 

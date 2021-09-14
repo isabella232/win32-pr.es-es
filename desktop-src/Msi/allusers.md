@@ -5,12 +5,12 @@ title: ALLUSERS, propiedad
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: b6412707d6ef46b55d1f8add3de56a24e6f970dc9fa7f0353dce6ec9efa9f531
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f4e490216a16b6ef36cdb90efebbbf24a7b1b9cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119581885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159149"
 ---
 # <a name="allusers-property"></a>ALLUSERS, propiedad
 
@@ -46,7 +46,7 @@ Ejemplo de [Windows ejemplos clásicos](https://github.com/microsoft/Windows-cla
 
 El contexto de instalación predeterminado recomendado es por usuario. Si **ALLUSERS** no está establecido, el instalador realiza una instalación por usuario. Puede asegurarse de que no se ha establecido la propiedad **ALLUSERS** estableciendo su valor en una cadena vacía (""), ALLUSERS="".
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [](installation-context.md) contexto de instalación determina los valores de las propiedades [**DesktopFolder**](desktopfolder.md), [**ProgramMenuFolder**](programmenufolder.md), [**StartMenuFolder**](startmenufolder.md), [**StartupFolder**](startupfolder.md), [**TemplateFolder**](templatefolder.md), [**AdminToolsFolder**](admintoolsfolder.md), [**ProgramFilesFolder**](programfilesfolder.md), [**CommonFilesFolder**](commonfilesfolder.md), [**ProgramFiles64Folder**](programfiles64folder.md)y [**CommonFiles64Folder.**](commonfiles64folder.md) El contexto de instalación determina las partes del registro donde se escriben o quitan las entradas de la tabla [Registry](registry-table.md) y [removeRegistry](removeregistry-table.md), con -1 en la columna Raíz.
 
@@ -54,9 +54,9 @@ El [](installation-context.md) contexto de instalación determina los valores de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

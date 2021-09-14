@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 59d1a4d8491175acb0f833cbafb430faae9b36b38a179970b7a99d6b0077591d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: faea1699657efd92049068e48ff361c48242e9c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118907166"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073642"
 ---
 # <a name="sslcomputeclientauthhash-function"></a>Función SslComputeClientAuthHash
 
@@ -49,7 +49,7 @@ SECURITY_STATUS WINAPI SslComputeClientAuthHash(
 *hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo de protocolo de seguridad (SSL).
+Identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo de protocolo de acceso (SSL).
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntero a una cadena Unicode terminada en NULL que identifica el algoritmo [*cri
 *pbOutput* \[ out\]
 </dt> <dd>
 
-Dirección de un búfer que recibe la [*clave BLOB*](/windows/desktop/SecGloss/k-gly). El *parámetro cbOutput* contiene el tamaño de este búfer. Si este parámetro es **NULL,** esta función colocará el tamaño necesario, en bytes, en el **DWORD** al que apunta el *parámetro byteResult.*
+Dirección de un búfer que recibe la [*clave BLOB.*](/windows/desktop/SecGloss/k-gly) El *parámetro cbOutput* contiene el tamaño de este búfer. Si este parámetro es **NULL,** esta función colocará el tamaño necesario, en bytes, en el **DWORD** al que apunta el *parámetro byteResult.*
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
@@ -120,7 +120,7 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función SslComputeClientAuthHash** calcula el hash que se envía en el mensaje de comprobación del certificado del protocolo de enlace SSL. El valor hash se calcula mediante la creación de un hash que contiene el secreto maestro con un hash de todos los mensajes de protocolo de enlace anteriores enviados o recibidos. Para obtener más información sobre la secuencia de protocolo de enlace SSL, vea Descripción del protocolo de enlace [Capa de sockets seguros (SSL).](https://support.microsoft.com/kb/257591)
 
@@ -130,11 +130,11 @@ La manera en que se calcula el hash depende del protocolo y el conjunto de cifra
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

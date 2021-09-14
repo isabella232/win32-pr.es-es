@@ -4,12 +4,12 @@ ms.assetid: be9a8382-c892-44ae-8b59-c665b5cca2d2
 title: Acción CostInitialize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 959e9e250292a44050c1f4b9feb3fb29f7530fe2a1f53aa77a62bf3680ea9eeb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 251bb0ae7508c87cd0af7ab81196c5d739e923a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118948372"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158749"
 ---
 # <a name="costinitialize-action"></a>Acción CostInitialize
 
@@ -23,7 +23,7 @@ Las acciones estándar [o personalizadas](custom-actions.md) que afecten a los c
 
 No hay ningún mensaje ActionData.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La acción CostInitialize carga la tabla Component y [la tabla Feature](feature-table.md) en la memoria.
 

@@ -4,12 +4,12 @@ ms.assetid: 8ded41a6-6e5b-4a39-b783-e2b9f83eaed4
 title: Crear una base de datos con una página de códigos neutra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72e9283378d003adf3069e2feb505fab36c9a379de4deb2a767d10559d547e8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08639b6ab3521f183a2dab46dfd257121b28bae0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118379420"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158738"
 ---
 # <a name="creating-a-database-with-a-neutral-code-page"></a>Crear una base de datos con una página de códigos neutra
 

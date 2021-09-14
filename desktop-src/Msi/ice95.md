@@ -1,32 +1,32 @@
 ---
-description: ICE95 comprueba la tabla De control y la tabla BBControl para comprobar que los controles de la bolsa caben en todos los paneles.
+description: ICE95 comprueba la tabla de control y la tabla BBControl para comprobar que los controles de los paneles caben en todos los paneles.
 ms.assetid: 8ba73536-65a5-4658-846c-76356f16b81c
 title: ICE95
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8f0f7d44554385c33648036f314406971193afc079b5aa8e72cf595695797ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 14144c7739dfcc1f1b5e66d92d8e6c1c46ed49fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119315265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074503"
 ---
 # <a name="ice95"></a>ICE95
 
-ICE95 comprueba la tabla [De control y](control-table.md) la tabla [BBControl](bbcontrol-table.md) para comprobar que los controles de la bolsa caben en todos los paneles.
+ICE95 comprueba la tabla [de control y](control-table.md) la tabla [BBControl](bbcontrol-table.md) para comprobar que los controles de los paneles caben en todos los paneles.
 
 ## <a name="result"></a>Resultado
 
-Si se cumple alguna de las condiciones siguientes, un control de la ciudad no cabe en un panel. ICE95 publica las siguientes advertencias.
+Si se cumple alguna de las siguientes condiciones, un control Descontrol no cabe en un cuadro. ICE95 publica las advertencias siguientes.
 
 
 
 | Advertencia de ICE95                                                                                                                                                                                                              | Descripción                                                                                |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada X supera el límite del ancho mínimo de control de la banda %s                   | La coordenada X del control está fuera del ancho del panel.                          |
-| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada Y supera el límite de la altura mínima del control de ciudad %s                  | La coordenada Y del control está debajo de la parte inferior del panel.                           |
-| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada X y el ancho combinados superan el ancho de control mínimo %s   | La coordenada X del control más el ancho del control está fuera del ancho del panel. |
-| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada Y y el alto combinados superan el alto mínimo del control de la ciudad %s. | La coordenada Y del control más el alto del control se encuentra debajo de la parte inferior del panel. |
+| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada X supera el límite del ancho de control mínimo %s                   | La coordenada X del control está fuera del ancho del borde.                          |
+| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada Y supera el límite de la altura de control mínima %s                  | La coordenada Y del control está debajo de la parte inferior de la fila.                           |
+| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada X y el ancho combinados superan el ancho de control mínimo %s   | La coordenada X del control más el ancho del control está fuera del ancho del borde. |
+| El elemento BBControl ' \[ 1 \] . \[ 2 \] ' en la tabla BBControl no cabe en todos los controles de paneles de la tabla Control. La coordenada Y y el alto combinados superan la altura mínima del control de los paneles %s. | La coordenada Y del control más la altura del control está debajo de la parte inferior de la barra. |
 
 
 
@@ -62,10 +62,10 @@ Tabla de control (parcial) (parcial)
 
 | Cartelera\_ | BBControl  | X   | Y   | Ancho | Alto |
 |-------------|------------|-----|-----|-------|--------|
-| yónctese1  | bbcontrol1 | 200 | 0   | 100   | 100    |
-| yónctese1  | bbcontrol2 | 0   | 200 | 100   | 100    |
-| yónctese1  | bbcontrol3 | 50  | 0   | 100   | 50     |
-| yónctese1  | bbcontrol4 | 0   | 50  | 50    | 100    |
+| yádes1  | bbcontrol1 | 200 | 0   | 100   | 100    |
+| yádes1  | bbcontrol2 | 0   | 200 | 100   | 100    |
+| yádes1  | bbcontrol3 | 50  | 0   | 100   | 50     |
+| yádes1  | bbcontrol4 | 0   | 50  | 50    | 100    |
 
 
 

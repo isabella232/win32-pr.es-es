@@ -4,12 +4,12 @@ ms.assetid: eaad88a1-4e1d-4246-9560-8eef60f8b70f
 title: 'Cryptography API: Next Generation'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfb5be604ea1dc8bdfc38ba37f0f202d1b95f334109e592a087e4da57b678cfb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d485f8371905961c63fbab66b29d0db544e3271
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118908236"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073679"
 ---
 # <a name="cryptography-api-next-generation"></a>Cryptography API: Next Generation
 
@@ -19,7 +19,7 @@ Cryptography API: Next Generation (CNG) es el reemplazo a largo plazo de [*Crypt
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-CNG está pensado para que lo usen los desarrolladores de aplicaciones que permitirán a los usuarios crear e intercambiar documentos y otros datos en un entorno seguro, especialmente a través de medios no seguros como Internet. Los desarrolladores deben estar familiarizados con los lenguajes de programación C y C++ y el Windows de programación basado en C y C++. Aunque no es necesario, se recomienda comprender la criptografía o los temas relacionados con la seguridad.
+CNG está pensado para que lo usen los desarrolladores de aplicaciones que permitirán a los usuarios crear e intercambiar documentos y otros datos en un entorno seguro, especialmente a través de medios no seguros como Internet. Los desarrolladores deben estar familiarizados con los lenguajes de programación C y C++ y con el Windows de programación basado en aplicaciones. Aunque no es necesario, se recomienda comprender la criptografía o los temas relacionados con la seguridad.
 
 Si está desarrollando un proveedor de algoritmos criptográficos CNG o un proveedor de almacenamiento de claves, debe descargar el [Kit](https://www.microsoft.com/download/details.aspx?id=30688) de desarrollo de proveedores criptográficos de Microsoft.
 

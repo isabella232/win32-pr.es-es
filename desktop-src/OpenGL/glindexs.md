@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65d3e309d8288765e493cac6c586c873d4bb927ca2d0fc89c3b8c621b2e2ed31
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0cdc2036b3aec37c8f727dc38a5186998a5bc80c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119493395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074042"
 ---
-# <a name="glindexs-function"></a>función glIndexs
+# <a name="glindexs-function"></a>Función glIndexs
 
 La **función glIndexs** establece el índice de color actual.
 
@@ -51,25 +51,25 @@ Nuevo valor para el índice de color actual.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glIndexs** actualiza el índice de color actual (con un solo valor). Toma un argumento: el nuevo valor para el índice de color actual.
 
 El índice actual se almacena como un valor de punto flotante. Los valores enteros se convierten directamente en valores de punto flotante, sin ninguna asignación especial.
 
-Los valores de índice fuera del intervalo representable del búfer de índice de color no están fijos. Sin embargo, antes de que se dithere un índice (si está habilitado) y se escriba en el búfer de fotogramas, se convierte al formato de punto fijo. Los bits de la parte entera del valor de punto fijo resultante que no se correspondan con los bits del búfer de fotogramas se enmascaran.
+Los valores de índice fuera del intervalo representable del búfer de índice de color no están fijas. Sin embargo, antes de que se dithere un índice (si está habilitado) y se escriba en el búfer de fotogramas, se convierte al formato de punto fijo. Los bits de la parte entera del valor de punto fijo resultante que no se correspondan con los bits del búfer de fotogramas se enmascaran.
 
 El índice actual se puede actualizar en cualquier momento. En concreto, se puede llamar a **glIndexs** entre una llamada a [**glBegin**](/windows/desktop/OpenGL/glbegin) y la llamada correspondiente [**a glEnd**](glend.md).
 
 La función siguiente recupera información relacionada con **glIndexs**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ CURRENT \_ INDEX
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ CURRENT \_ INDEX
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -79,7 +79,7 @@ La función siguiente recupera información relacionada con **glIndexs**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

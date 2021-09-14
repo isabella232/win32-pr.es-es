@@ -4,12 +4,12 @@ ms.assetid: 458c5418-94c5-4977-8203-f8299387c6da
 title: Definir operaciones en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87cf547e89c7767f6e04cd2bfb9cdc9e0b42123ce3c7c784c89a4b394af60bbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31431390d3c95dbf4248ffeebc63f29f1fa6757d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118913788"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073705"
 ---
 # <a name="defining-operations-in-c"></a>Definir operaciones en C++
 

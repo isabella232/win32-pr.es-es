@@ -4,12 +4,12 @@ ms.assetid: 8b180b71-1e80-47c0-bb44-d5fcecabaed2
 title: Control de línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7eb4dc02db9c701c0c5156a0e3f3e15a039893bae290fc7e8bee7dfce64f2eb7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ba3b7374574e2a0087e7dae8d0ffa9f097be9f45
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119763495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071965"
 ---
 # <a name="line-control"></a>Control de línea
 
@@ -17,7 +17,7 @@ El control Línea es una línea horizontal.
 
 ## <a name="control-attributes"></a>Atributos de control
 
-Puede usar los atributos siguientes con este control. Para cambiar el valor de un atributo mediante un evento, suscribe el control a un control ControlEvent en la [tabla EventMapping](eventmapping-table.md) y enumera el identificador del atributo en la columna Atributo . Escriba el identificador de ControlEvent en la columna Evento.
+Puede usar los atributos siguientes con este control. Para cambiar el valor de un atributo mediante un evento, suscriba el control a un control ControlEvent en la [tabla EventMapping](eventmapping-table.md) y enumézcalo en la columna Atributo . Escriba el identificador de ControlEvent en la columna Evento.
 
 
 
@@ -31,7 +31,7 @@ Puede usar los atributos siguientes con este control. Para cambiar el valor de u
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este control se puede crear a partir de la clase STATIC mediante [**la función CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Tiene los **estilos SS \_ ETCHEDHORZ** y **SS \_ SUNKEN.**
 

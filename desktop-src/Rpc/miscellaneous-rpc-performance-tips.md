@@ -1,17 +1,17 @@
 ---
-title: Rendimiento de RPC Sugerencias
+title: Varias opciones de rendimiento de RPC Sugerencias
 description: En esta sección se de abordan varias sugerencias de rendimiento para desarrollar servidores RPC de alto rendimiento. En esta sección se proporcionan muchas sugerencias que hacen referencia al cliente RPC. El desarrollo de un cliente RPC correctamente permite que el servidor RPC realice menos trabajo.
 ms.assetid: 82278f4b-1273-45e8-9078-ad919a4711f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0946b83aae296f7b908babca9135c35a0afe8dbe7588a8292ad66bc19dc6488
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82b0b43f996cc0a165076f1d7aab1b69e6fb9b73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118928074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071413"
 ---
-# <a name="miscellaneous-rpc-performance-tips"></a>Rendimiento de RPC Sugerencias
+# <a name="miscellaneous-rpc-performance-tips"></a>Varias opciones de rendimiento de RPC Sugerencias
 
 En esta sección se de abordan varias sugerencias de rendimiento para desarrollar servidores RPC de alto rendimiento. En esta sección se proporcionan muchas sugerencias que hacen referencia al cliente RPC. El desarrollo de un cliente RPC correctamente permite que el servidor RPC realice menos trabajo.
 
@@ -21,7 +21,7 @@ Si se usa la seguridad, use Kerberos. En el lado servidor, Kerberos no requiere 
 
 ## <a name="use-static-identity-tracking"></a>Uso del seguimiento de identidades estáticas
 
-Si se usa la seguridad, intente usar el seguimiento de identidades estáticas. El seguimiento de identidades estáticas es más barato en términos de uso de recursos que el seguimiento dinámico de identidades. Si cambia la identidad del cliente y el servidor no debe tener en cuenta el cambio, use el seguimiento dinámico en lugar de crear un identificador de enlace diferente para cada identidad. Pero si la identidad es la misma, asegúrese de que RPC es consciente de ese hecho para evitar que RPC realice comprobaciones de identidad modificada cada vez.
+Si se usa la seguridad, intente usar el seguimiento de identidades estáticas. El seguimiento de identidades estáticas es más económico en términos de uso de recursos que el seguimiento dinámico de identidades. Si cambia la identidad del cliente y el servidor no debe tener en cuenta el cambio, use el seguimiento dinámico en lugar de crear un identificador de enlace diferente para cada identidad. Pero si la identidad es la misma, asegúrese de que RPC es consciente de ese hecho para evitar que RPC realice comprobaciones de identidad modificada cada vez.
 
 ## <a name="use-the-rpcgetauthorizationcontextforclient-function"></a>Uso de la función RpcGetAuthorizationContextForClient
 

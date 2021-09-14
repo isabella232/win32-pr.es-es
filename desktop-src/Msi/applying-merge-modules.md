@@ -4,12 +4,12 @@ ms.assetid: 2c14dfcc-6447-4c08-8e59-f3eaeb621de1
 title: Aplicación de módulos de mezcla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b573c8dc89f26fb49729d17a46b44af331e751f404a7a9dc8899405256e444d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5734722f24bf8992b8369da3d31622d609076442
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118639464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159113"
 ---
 # <a name="applying-merge-modules"></a>Aplicación de módulos de mezcla
 

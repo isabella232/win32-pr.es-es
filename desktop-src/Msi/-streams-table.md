@@ -4,12 +4,12 @@ ms.assetid: 1e30472d-6ba5-410a-a81b-07ed225dcb69
 title: _Streams tabla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23f3796a3abb402027dc9985991a6ba673f5381d8f35657e7d80b0714c40f1e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9607097b32acc8a3c2350a00db0b9721a4aa353
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119013343"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159298"
 ---
 # <a name="_streams-table"></a>\_Secuencias Mesa
 
@@ -44,7 +44,7 @@ Datos binarios sin formato.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para copiar un flujo de datos OLE (por ejemplo, un objeto del tipo de datos [Binary)](binary.md) de un archivo en una base de datos, cree un registro en la tabla Secuencias y escriba el nombre del flujo de datos en la columna Nombre de este registro y copie los datos del archivo en la columna Datos mediante \_ [**MsiRecordSetStream**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordsetstreama). Use [**MsiViewModify para**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewmodify) insertar el nuevo registro en la tabla.
 

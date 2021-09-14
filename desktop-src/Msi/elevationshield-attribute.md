@@ -4,12 +4,12 @@ ms.assetid: ec52d660-eb83-4f27-b640-ea89156260aa
 title: Atributo ElevationShield
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce4c5da7133a7216386be56328c0e21e2e365129caa185e045984cb5e89b7d95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4c580beefd1d2c0a80b0ee63b7a44e58a2a2fae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118637495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158501"
 ---
 # <a name="elevationshield-attribute"></a>Atributo ElevationShield
 
@@ -25,13 +25,13 @@ Si no se establece este bit, el control de botón de inserción se crea con los 
 
 [Pulsador](pushbutton-control.md)
 
-## <a name="value"></a>Valor
+## <a name="value"></a>Value
 
 
 
 | Decimal | Hexadecimal | Constante                                  |
 |---------|-------------|-------------------------------------------|
-| 8388608 | 0x00800000  | **msidbControlAttributesExiaShield** |
+| 8388608 | 0x00800000  | **msidbControlAttributesEentaciónShield** |
 
 
 

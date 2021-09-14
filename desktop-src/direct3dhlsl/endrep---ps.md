@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3d053e177a9378357289113a591ac2c5d3de01f549ab31757451478354467b03
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d33e85f5e34c69509350dda29a7f6703a8b52ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119744205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072714"
 ---
 # <a name="endrep---ps"></a>endrep - ps
 
 Finalización de [un representante: ps...](rep---ps.md) endrep block.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,7 +31,7 @@ Finalización de [un representante: ps...](rep---ps.md) endrep block.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

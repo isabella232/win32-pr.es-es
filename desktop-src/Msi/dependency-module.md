@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 1cd5ce697057a04d611dcf7f2f0cd0757874a27f869b5b6aa450d9c6bcc85209
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4bcf2241cd278640b333bb9f08dc24e645990b4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118378894"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158600"
 ---
 # <a name="dependencymodule-property"></a>Propiedad Dependency.Module
 
@@ -46,10 +46,10 @@ Consulte el [**método IMsmDependency \_ get \_ Module.**](/windows/win32/api/me
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

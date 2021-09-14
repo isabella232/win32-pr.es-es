@@ -12,12 +12,12 @@ api_name:
 - WorldToObject3x4
 api_type:
 - NA
-ms.openlocfilehash: 5818e579076dc94a5d42003aa0af93f012e779a69e4ca78988e5c62b518a2d8f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc7bf7dc2f06102b9b23eafd45655f12816c8359
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119631755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072838"
 ---
 # <a name="worldtoobject3x4"></a>WorldToObject3x4
 
@@ -33,7 +33,7 @@ void WorldToObject3x4();
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La matriz es una contracción de **la matriz WorldToObject4x3.**
 
@@ -47,7 +47,7 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador de rayt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

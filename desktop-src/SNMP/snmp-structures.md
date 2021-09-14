@@ -7,12 +7,12 @@ keywords:
 - Estructuras SNMP, SNMP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bb5cf0920d9387fb24874cc92a8e7fa623617d89f3578cb181805eb56f35546
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f254dfebeb3d468add8871d4b6f28f268341e9ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119886355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071358"
 ---
 # <a name="snmp-structures"></a>Estructuras SNMP
 

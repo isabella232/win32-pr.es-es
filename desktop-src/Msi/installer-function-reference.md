@@ -4,12 +4,12 @@ ms.assetid: 05a16915-6b47-4d51-b62a-5a4d92b87e50
 title: Referencia de función del instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05ab6a77bd3aa02be85f0d2a3cb11a864861535360f5741c6566f77e9fc1aa11
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9261789f21bd559e49c4e5718ef68ce9d0bb41c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118630550"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072142"
 ---
 # <a name="installer-function-reference"></a>Referencia de función del instalador
 
@@ -174,8 +174,8 @@ Para habilitar Windows Installer en la aplicación, debe usar las funciones del 
 | [**MsiDeterminePatchSequence**](/windows/desktop/api/Msi/nf-msi-msideterminepatchsequencea)         | Determina la mejor secuencia de aplicación para un conjunto de revisiones y productos. Disponible en Windows Installer 3.0.                                                     |
 | [**MsiApplyMultiplePatches**](/windows/desktop/api/Msi/nf-msi-msiapplymultiplepatchesa)             | Aplica una o varias revisiones a los productos. Disponible en Windows Installer 3.0.                                                                                       |
 | [**MsiEnumPatchesEx**](/windows/desktop/api/Msi/nf-msi-msienumpatchesexa)                           | Enumera todas las revisiones aplicadas a un producto en un contexto determinado o en todos los contextos. Disponible en Windows Installer 3.0.                                   |
-| [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista)                     | Cuando se proporciona una lista de archivos .msp, esta función recupera la lista de archivos que las revisiones pueden actualizar para el targe. Disponible en Windows Installer 4.0. |
-| [**MsiGetPatchInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa)                         | Consulta información sobre la aplicación de una revisión especificada a un producto especificado. Disponible en Windows Installer 3.0.                                     |
+| [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista)                     | Cuando se proporciona una lista de archivos .msp, esta función recupera la lista de archivos que las revisiones pueden actualizar para la targe. Disponible en Windows Installer 4.0. |
+| [**MsiGetPatchInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa)                         | Consulta para obtener información sobre la aplicación de una revisión especificada a un producto especificado. Disponible en Windows Installer 3.0.                                     |
 | [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa)               | Extrae información de una revisión. Disponible en Windows Installer 3.0.                                                                                             |
 | [**MsiDetermineApplicablePatches**](/windows/desktop/api/Msi/nf-msi-msidetermineapplicablepatchesa) | Determina el mejor conjunto de revisiones necesarias para actualizar un producto o un conjunto de productos. Disponible en Windows Installer 3.0.                                            |
 
@@ -190,7 +190,7 @@ Para habilitar Windows Installer en la aplicación, debe usar las funciones del 
 | Nombre                                                                     | Descripción                                                                                                 |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | [**MsiGetFileHash**](/windows/desktop/api/Msi/nf-msi-msigetfilehasha)                                 | Toma la ruta de acceso a un archivo y devuelve un hash de 128 bits de ese archivo.                                           |
-| [**MsiGetFileSignatureInformation**](/windows/desktop/api/Msi/nf-msi-msigetfilesignatureinformationa) | Toma la ruta de acceso a un archivo firmado digitalmente y devuelve el hash y el certificado de firmante del archivo. |
+| [**MsiGetFileSignatureInformation**](/windows/desktop/api/Msi/nf-msi-msigetfilesignatureinformationa) | Toma la ruta de acceso a un archivo que se ha firmado digitalmente y devuelve el certificado de firmante y el hash del archivo. |
 | [**MsiGetFileVersion**](/windows/desktop/api/Msi/nf-msi-msigetfileversiona)                           | Devuelve la cadena de versión y la cadena de idioma.                                                             |
 
 
@@ -213,7 +213,7 @@ Para habilitar Windows Installer en la aplicación, debe usar las funciones del 
 
 ## <a name="database-functions"></a>Funciones de base de datos
 
-Además de las funciones Windows Installer identificadas en las tablas anteriores, puede manipular la información de la base de datos de instalación mediante las funciones de acceso a la base de datos que se describen en la sección [Funciones](database-functions.md) de base de datos.
+Además de las funciones Windows Installer identificadas en las tablas anteriores, puede manipular la información de la base de datos de instalación mediante las funciones de acceso a la base de datos que se describen en la sección Funciones de base de [datos.](database-functions.md)
 
 ## <a name="installer-structures"></a>Estructuras del instalador
 

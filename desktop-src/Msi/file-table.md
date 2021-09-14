@@ -1,19 +1,19 @@
 ---
-description: La tabla de archivos contiene una lista completa de los archivos de origen con sus distintos atributos, ordenados por un identificador único no localizado.
+description: La tabla de archivos contiene una lista completa de archivos de origen con sus distintos atributos, ordenados por un identificador único no localizado.
 ms.assetid: 31d0e727-a9eb-4cd2-a211-ea7b138d0173
 title: Tabla de archivos
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 59838001101bbc65af50bff3f2b00b540976e4b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074797"
 ---
 # <a name="file-table"></a>Tabla de archivos
 
-La tabla de archivos contiene una lista completa de los archivos de origen con sus distintos atributos, ordenados por un identificador único no localizado. Los archivos se pueden almacenar en el medio de origen como archivos individuales o comprimirse dentro de un [*archivo. cab*](c-gly.md). Para obtener más información, consulte [uso de archivadores y orígenes comprimidos](using-cabinets-and-compressed-sources.md).
+La tabla de archivos contiene una lista completa de archivos de origen con sus distintos atributos, ordenados por un identificador único no localizado. Los archivos se pueden almacenar en el medio de origen como archivos individuales o comprimirse dentro de un [*archivo de archivador*](c-gly.md). Para obtener más información, [vea Using Cabinets and Compressed Sources](using-cabinets-and-compressed-sources.md).
 
 La tabla de archivos tiene las columnas siguientes.
 
@@ -38,30 +38,30 @@ La tabla de archivos tiene las columnas siguientes.
 
 <dl> <dt>
 
-<span id="File"></span><span id="file"></span><span id="FILE"></span>Filesystem
+<span id="File"></span><span id="file"></span><span id="FILE"></span>Archivo
 </dt> <dd>
 
-Un token no traducido que identifica de forma única el archivo. Este campo no distingue entre mayúsculas y minúsculas. No asigne identificadores a archivos diferentes que solo difieran en su caso.
+Token no localizado que identifica de forma única el archivo. Este campo no tiene en cuenta las mayúsculas y minúsculas. No asigne identificadores a archivos diferentes que solo difieren en su caso.
 
 </dd> <dt>
 
-<span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Pone\_
+<span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-La clave externa en la primera columna de la [tabla de componentes](component-table.md). Este campo identifica el componente que controla el archivo.
+Clave externa en la primera columna de la [tabla de componentes](component-table.md). Este campo identifica el componente que controla el archivo.
 
 </dd> <dt>
 
-<span id="FileName"></span><span id="filename"></span><span id="FILENAME"></span>Extensión
+<span id="FileName"></span><span id="filename"></span><span id="FILENAME"></span>Nombre
 </dt> <dd>
 
-Nombre de archivo que se usa para la instalación. El nombre se puede localizar.
+Nombre de archivo usado para la instalación. El nombre se puede localizar.
 
-Dado que algunos servidores Web pueden distinguir mayúsculas de minúsculas, FileName debe coincidir exactamente con las mayúsculas y minúsculas de los archivos de origen para garantizar la compatibilidad con las descargas de Internet.
+Dado que algunos servidores web pueden distingue mayúsculas de minúsculas, FileName debe coincidir exactamente con el caso de los archivos de origen para garantizar la compatibilidad con las descargas de Internet.
 
 </dd> <dt>
 
-<span id="FileSize"></span><span id="filesize"></span><span id="FILESIZE"></span>FileSize
+<span id="FileSize"></span><span id="filesize"></span><span id="FILESIZE"></span>Tamaño
 </dt> <dd>
 
 El tamaño del archivo en bytes. Debe ser un número no negativo.
@@ -71,25 +71,25 @@ El tamaño del archivo en bytes. Debe ser un número no negativo.
 <span id="Version"></span><span id="version"></span><span id="VERSION"></span>Versión
 </dt> <dd>
 
-Este campo es la cadena de versión de un archivo con versiones. Este campo está en blanco para los archivos sin versión. La versión del archivo especificada en este campo debe ser idéntica a la versión del archivo incluido con el paquete de instalación.
+Este campo es la cadena de versión de un archivo con versión. Este campo está en blanco para los archivos sin control de versiones. La versión del archivo especificada en este campo debe ser idéntica a la versión del archivo incluido con el paquete de instalación.
 
-El campo version también puede configurarse para que contenga la clave principal de otro registro en la tabla File. A continuación, el archivo al que se hace referencia determina la lógica de control de versiones para este archivo. Para obtener más información, consulte [Companion files](companion-files.md). Tenga en cuenta que si este archivo es la ruta de acceso de la clave de su componente, no debe especificarse como un archivo complementario.
-
-</dd> <dt>
-
-<span id="Language"></span><span id="language"></span><span id="LANGUAGE"></span>Módulo
-</dt> <dd>
-
-Lista de identificadores de idiomas decimales separados por comas.
-
-Los archivos de fuentes no deben crearse con un identificador de idioma, ya que las fuentes no tienen un recurso de identificador de idioma incrustado. Por lo tanto, esta columna debe dejarse como null para los archivos de fuentes.
+El campo Versión también se puede establecer para que contenga la clave principal de otro registro en la tabla Archivo. A continuación, el archivo al que se hace referencia determina la lógica de control de versiones para este archivo. Para obtener más información, vea [Archivos complementarios](companion-files.md). Tenga en cuenta que si este archivo es la ruta de acceso de clave para su componente, no debe especificarse como un archivo complementario.
 
 </dd> <dt>
 
-<span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Sus
+<span id="Language"></span><span id="language"></span><span id="LANGUAGE"></span>Lengua
 </dt> <dd>
 
-Entero que contiene marcadores de bits que representan atributos de archivo.
+Lista de los IDs de idioma decimal separados por comas.
+
+Los archivos de fuente no deben crearse con un identificador de idioma, ya que las fuentes no tienen un recurso de identificador de idioma incrustado. Por lo tanto, esta columna debe dejársela como NULL para los archivos de fuente.
+
+</dd> <dt>
+
+<span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Atributos
+</dt> <dd>
+
+Entero que contiene marcas de bits que representan atributos de archivo.
 
 En la tabla siguiente se muestra la definición del campo de bits.
 
@@ -100,63 +100,63 @@ En la tabla siguiente se muestra la definición del campo de bits.
 | **msidbFileAttributesReadOnly**      | 0x000001    | 1       | Solo lectura                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | **msidbFileAttributesHidden**        | 0x000002    | 2       | Hidden                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | **msidbFileAttributesSystem**        | 0x000004    | 4       | Sistema                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **msidbFileAttributesVital**         | 0x000200    | 512     | El archivo es fundamental para el funcionamiento preciso del componente al que pertenece. Si se produce un error en la instalación de un archivo con el atributo msidbFileAttributesVital, la instalación se detiene y se revierte. En este caso, el instalador muestra un cuadro de diálogo sin un botón Omitir. Si no se establece este atributo y se produce un error en la instalación del archivo, el instalador muestra un cuadro de diálogo con un botón Omitir. En este caso, el usuario puede optar por omitir el error para instalar el archivo y continuar. <br/> |
-| **msidbFileAttributesChecksum**      | 0x000400    | 1024    | El archivo contiene una [*suma de comprobación*](c-gly.md)válida. Se requiere una suma de comprobación para reparar un archivo que ha resultado dañado.                                                                                                                                                                                                                                                                                                                                                                                           |
+| **msidbFileAttributesVital**         | 0x000200    | 512     | El archivo es fundamental para el funcionamiento preciso del componente al que pertenece. Si se produce un error en la instalación de un archivo con el atributo msidbFileAttributesVital, la instalación se detiene y se revierte. En este caso, el instalador muestra un cuadro de diálogo sin un botón Omitir. Si no se establece este atributo y se produce un error en la instalación del archivo, el instalador muestra un cuadro de diálogo con un botón Omitir. En este caso, el usuario puede optar por omitir el error al instalar el archivo y continuar. <br/> |
+| **msidbFileAttributesChecksum**      | 0x000400    | 1024    | El archivo contiene una suma de [*comprobación válida.*](c-gly.md) Se requiere una suma de comprobación para reparar un archivo que se ha dañado.                                                                                                                                                                                                                                                                                                                                                                                           |
 | **msidbFileAttributesPatchAdded**    | 0x001000    | 4096    | Este bit solo debe agregarse mediante una revisión y si la revisión agrega el archivo.                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **msidbFileAttributesNoncompressed** | 0x002000    | 8192    | El tipo de origen del archivo no está comprimido. Si se establece, se omite la propiedad de [**Resumen de recuento de palabras**](word-count-summary.md) . Si no se establece **msidbFileAttributesNoncompressed** ni **msidbFileAttributesCompressed** , el estado de compresión del archivo se especifica mediante la propiedad de **Resumen de recuento de palabras** . No establezca **msidbFileAttributesNoncompressed** y **msidbFileAttributesCompressed**.                                                                                                                            |
-| **msidbFileAttributesCompressed**    | 0x004000    | 16384   | El tipo de origen del archivo está comprimido. Si se establece, se omite la propiedad de [**Resumen de recuento de palabras**](word-count-summary.md) . Si no se establece **msidbFileAttributesNoncompressed** ni **msidbFileAttributesCompressed** , el estado de compresión del archivo se especifica mediante la propiedad de **Resumen de recuento de palabras** . No establezca **msidbFileAttributesNoncompressed** y **msidbFileAttributesCompressed**.                                                                                                                              |
+| **msidbFileAttributesNoncompressed** | 0x002000    | 8192    | El tipo de origen del archivo no está comprimido. Si se establece, ignore la [**propiedad Resumen de recuento de**](word-count-summary.md) palabras. Si no **se establecen msidbFileAttributesNoncompressed** o **msidbFileAttributesCompressed,** la propiedad **Resumen** de recuento de palabras especifica el estado de compresión del archivo. No establezca **msidbFileAttributesNoncompressed y** **msidbFileAttributesCompressed.**                                                                                                                            |
+| **msidbFileAttributesCompressed**    | 0x004000    | 16384   | El tipo de origen del archivo está comprimido. Si se establece, ignore la [**propiedad Resumen de recuento de**](word-count-summary.md) palabras. Si no **se establecen msidbFileAttributesNoncompressed** o **msidbFileAttributesCompressed,** la propiedad **Resumen** de recuento de palabras especifica el estado de compresión del archivo. No establezca **msidbFileAttributesNoncompressed y** **msidbFileAttributesCompressed.**                                                                                                                              |
 
 
 
  
 
-Si se establece el bit **msidbFileAttributesVital** en la columna atributos y se selecciona el componente al que pertenece el archivo para su instalación, el instalador debe ser capaz de instalar este archivo para que la instalación se complete correctamente. Si el instalador no puede instalar el archivo por algún motivo (por ejemplo, si el archivo de origen no se encuentra dentro de la imagen de origen), aparecerá un cuadro de diálogo de error con las opciones "Reintentar" o "Cancelar". Para un archivo que no tiene **msidbFileAttributesVital** establecido, las opciones en caso de error de instalación serán "Abort", "Retry" y "ignore" (es decir, el usuario tendrá la opción de completar la instalación correctamente sin instalar el archivo).
+Si se establece el bit **msidbFileAttributesVital** dentro de la columna Atributos y si el componente al que pertenece el archivo está seleccionado para la instalación, el instalador debe poder instalar este archivo para que la instalación se complete correctamente. Si el instalador no puede instalar el archivo por algún motivo (por ejemplo, si el archivo de origen no se puede encontrar dentro de la imagen de origen), aparecerá un cuadro de diálogo de error con las opciones "Reintentar" o "Cancelar". Para un archivo que no tiene **msidbFileAttributesVital** establecido, las opciones en caso de error de instalación serán "Abort", "Retry" e "Ignore" (es decir, el usuario tendrá la opción de completar la instalación correctamente sin instalar ese archivo).
 
-El bit **msidbFileAttributesChecksum** dentro de la columna Attributes debe establecerse para cada archivo ejecutable de la instalación que tenga una [*suma de comprobación*](c-gly.md) válida almacenada en el encabezado del archivo portable ejecutable (PE). Solo se comprobará la suma de comprobación válida durante una reinstalación de los archivos que tengan este bit establecido. Para obtener más información, vea el [**REINSTALLMODE**](reinstallmode.md).
+El bit **msidbFileAttributesChecksum** de la columna Atributos debe establecerse para [](c-gly.md) cada archivo ejecutable de la instalación que tenga una suma de comprobación válida almacenada en el encabezado de archivo Portable Executable (PE). Solo los archivos que tienen este conjunto de bits se comprobarán alguna vez para la suma de comprobación válida durante una reinstalación. Para obtener más información, vea [**REINSTALLMODE**](reinstallmode.md).
 
 </dd> <dt>
 
-<span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>SPRJ
+<span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>Secuencia
 </dt> <dd>
 
-Posición de la secuencia de este archivo en las imágenes multimedia. Este orden debe corresponder al orden de los archivos en el archivo. cab si los archivos están comprimidos. Los enteros de este campo deben ser iguales o mayores que 1.
+Posición de secuencia de este archivo en las imágenes multimedia. Este orden debe corresponder al orden de los archivos del archivador si los archivos están comprimidos. Los enteros de este campo deben ser iguales o mayores que 1.
 
-Los números de secuencia de la columna secuencia se utilizan para especificar el orden de instalación de los archivos y el medio de origen en el que se encuentra el archivo (junto con la [tabla de medios](media-table.md)). Por ejemplo, supongamos que un archivo tiene un número de secuencia de 92. Para determinar el disco de origen en el que reside este archivo, busque en la tabla de medios la entrada con el menor valor de la última secuencia mayor que 92.
+Los números de secuencia de la columna Secuencia se usan para especificar el orden de instalación de los archivos y los medios de origen en los que se encuentra el archivo (junto con la [tabla multimedia](media-table.md)). Por ejemplo, suponga que un archivo tiene un número de secuencia de 92. Para determinar el disco de origen en el que reside este archivo, busque en la tabla Media la entrada con el valor más pequeño de Last Sequence mayor que 92.
 
-Aunque los archivos comprimidos tienen asignados números de secuencia internos dentro de los contenedores, no es necesario que coincidan con los números de secuencia de la tabla de archivos. Sin embargo, es importante que la secuencia de archivos de la tabla de archivos sea idéntica a la secuencia de los archivos dentro de los contenedores.
+Aunque a los archivos comprimidos se les asignan números de secuencia internos dentro de los gabinetes, esos números absolutos no necesitan coincidir con los números de secuencia de la tabla Archivo. Sin embargo, es importante que la secuencia de archivos de la tabla File sea idéntica a la secuencia de los archivos dentro de los archivadores.
 
-En el caso de los archivos que no estén comprimidos, los números de secuencia no deben ser únicos. Por ejemplo, si todos los archivos están sin comprimir y todos residen en un disco, puede asignar a todos los archivos el mismo número de secuencia.
+Para los archivos que no están comprimidos, los números de secuencia no deben ser únicos. Por ejemplo, si todos los archivos están descomprimidos y todos residen en un disco, podría dar a todos los archivos el mismo número de secuencia.
 
-El límite máximo es de 32767 archivos. Para crear un paquete de Windows Installer con más archivos, consulte [crear un paquete de gran tamaño](authoring-a-large-package.md).
+El límite máximo es de 32767 archivos. Para crear un paquete Windows Installer con más archivos, vea [Creación de un paquete grande.](authoring-a-large-package.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Las acciones [InstallFiles](installfiles-action.md) y [RemoveFiles](removefiles-action.md) de las [*tablas de secuencia*](s-gly.md) procesan la información de esta tabla. Para obtener información sobre el uso de *tablas de secuencia*, vea [usar una tabla de secuencia](using-a-sequence-table.md).
+Las [acciones InstallFiles](installfiles-action.md) [y RemoveFiles](removefiles-action.md) de las tablas [*de secuencia*](s-gly.md) procesan la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
 
-La tabla se genera inicialmente a partir de la lista de archivos, pero si se usa la compresión del archivo. la tabla se regenera a partir de la salida del motor de compresión. Para obtener más información, consulte [archivos. cab](cabinet-files.md).
+La tabla se genera inicialmente a partir de la lista de archivos, pero si se usa la compresión de gabinete, la tabla se vuelve a generar a partir de la salida del motor de compresión. Para obtener más información, vea [Archivos archivadores](cabinet-files.md).
 
-Para trasladar un archivo existente en el equipo del usuario durante la instalación, use la [acción MoveFiles](movefiles-action.md) y la [tabla MoveFile](movefile-table.md). Para instalar un archivo en varias ubicaciones, use la [acción DuplicateFiles](duplicatefiles-action.md) y la [tabla DuplicateFile](duplicatefile-table.md).
+Para mover un archivo existente en el equipo del usuario durante la instalación, use la acción [MoveFiles](movefiles-action.md) y la [tabla MoveFile](movefile-table.md). Para instalar un archivo en varias ubicaciones, use [la acción DuplicateFiles](duplicatefiles-action.md) y [la tabla DuplicateFile](duplicatefile-table.md).
 
-En la tabla siguiente se resumen las posibles combinaciones de valores de la columna versión y la columna idioma. Para obtener más información, vea [reglas de control de versiones de archivos](file-versioning-rules.md).
+En la tabla siguiente se resumen las posibles combinaciones de valores de la columna Versión y la columna Idioma. Para obtener más información, vea [Reglas de control de versiones de archivos](file-versioning-rules.md).
 
 
 
 | Versión | Idioma | Descripción                                                                     |
 |---------|----------|---------------------------------------------------------------------------------|
-| 1.2.3.4 | 3082     | La versión y el idioma.                                                       |
-| 1.2.3.4 | Acepta   | La versión pero no el idioma.                                                    |
+| 1.2.3.4 | 3082     | Versión e idioma.                                                       |
+| 1.2.3.4 | (Null)   | Versión pero sin idioma.                                                    |
 | 1.2.3.4 | 0        | La versión y el idioma son neutros.                                           |
-| TestDB  | Acepta   | Archivo complementario sin idioma asociado.                         |
-| TestDB  | 3082     | El archivo complementario y el idioma.                                                |
-| Acepta  | 3082     | Sin versión, pero tiene un lenguaje asociado (es decir, typelib, HelpFile). |
+| Testdb  | (Null)   | Archivo complementario sin idioma asociado a él.                         |
+| Testdb  | 3082     | El archivo complementario y el idioma.                                                |
+| (Null)  | 3082     | No hay ninguna versión, pero tiene un lenguaje asociado (es decir, typelib, helpfile). |
 
 
 
  
 
-Para obtener más información, vea la [tabla MsiLockPermissionsEx](msilockpermissionsex-table.md) y la [tabla LockPermissions](lockpermissions-table.md).
+Para obtener más información, [vea MsiLockPermissionsEx Table](msilockpermissionsex-table.md) y [LockPermissions Table](lockpermissions-table.md).
 
 ## <a name="validation"></a>Validación
 

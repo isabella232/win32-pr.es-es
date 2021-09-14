@@ -28,16 +28,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 30ba54414bcc7043edb06300b7bda31e40b838cbc6f78f32171f26c1e37684c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 617cbefba047f822b338627a782be7e016c2a16f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118487311"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072531"
 ---
 # <a name="jet_callback-delegate"></a>JET_CALLBACK delegado
 
-Función de devolución de llamada multipropósito utilizada por el motor de base de datos para informar a la aplicación de un evento que implica notificaciones de estado de cursor y desfragmentación en línea.
+Una función de devolución de llamada multiuso utilizada por el motor de base de datos para informar a la aplicación de un evento que implica notificaciones de estado de cursor y desfragmentación en línea.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -78,7 +78,7 @@ public delegate JET_err JET_CALLBACK(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sesión para la que se realiza la devolución de llamada.
+    La sesión para la que se realiza la devolución de llamada.
 
 <!-- end list -->
 

@@ -4,12 +4,12 @@ ms.assetid: 48707ae1-9488-4bbb-8447-b24e383affb7
 title: Cambiar el estado del sistema mediante una acción personalizada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f3ec2fafdc6f57041c087903da0c912327c967b3b188127ee1f2ff71db7c1af
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ace5dc323bcf809c76eeb55cfa859a8621312df7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120086245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158930"
 ---
 # <a name="changing-the-system-state-using-a-custom-action"></a>Cambiar el estado del sistema mediante una acción personalizada
 

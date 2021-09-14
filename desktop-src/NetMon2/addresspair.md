@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: bbfc455951e76548694415434e0ee4b53893d594b8f0f31419e516bc466ed2c4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7960a8bb1c3ed1b2fc86c93f371b2f05d299b97b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119744865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074176"
 ---
 # <a name="addresspair-structure"></a>AddressPAIR (estructura)
 
@@ -38,7 +38,7 @@ typedef struct _ADDRESSPAIR {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -53,8 +53,8 @@ Marcas que describen las direcciones usadas por un filtro de captura. Vea Coment
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | <span id="ADDRESS_FLAGS_MATCH_DST"></span><span id="address_flags_match_dst"></span><dl> <dt>**LAS \_ MARCAS DE DIRECCIÓN COINCIDEN CON \_ \_ DST**</dt> </dl>                 | Coincide con la dirección de destino.<br/>                              |
 | <span id="ADDRESS_FLAGS_MATCH_SRC"></span><span id="address_flags_match_src"></span><dl> <dt>**LAS \_ MARCAS DE DIRECCIÓN COINCIDEN CON \_ \_ SRC**</dt> </dl>                 | Coincide con la dirección de origen.<br/>                                   |
-| <span id="ADDRESS_FLAGS_EXCLUDED"></span><span id="address_flags_excluded"></span><dl> <dt>**MARCAS \_ DE DIRECCIONES \_ EXCLUIDAS**</dt> </dl>                     | Excluye el marco si se encuentra esta dirección.<br/>                  |
-| <span id="ADDRESS_FLAGS_DST_GROUP_ADDR"></span><span id="address_flags_dst_group_addr"></span><dl> <dt>**MARCADOR \_ DE DIRECCIÓN \_ DST GROUP \_ \_ ADDR**</dt> </dl> | Coincide solo con el bit de grupo. Úsese esto para los mensajes de tipo de difusión.<br/> |
+| <span id="ADDRESS_FLAGS_EXCLUDED"></span><span id="address_flags_excluded"></span><dl> <dt>**MARCAS \_ DE DIRECCIÓN \_ EXCLUIDAS**</dt> </dl>                     | Excluye el marco si se encuentra esta dirección.<br/>                  |
+| <span id="ADDRESS_FLAGS_DST_GROUP_ADDR"></span><span id="address_flags_dst_group_addr"></span><dl> <dt>**MARCADOR \_ DE DIRECCIÓN \_ ADDR DE GRUPO \_ \_ DST**</dt> </dl> | Coincide solo con el bit de grupo. Úselo para los mensajes de tipo de difusión.<br/> |
 | <span id="ADDRESS_FLAGS_MATCH_BOTH"></span><span id="address_flags_match_both"></span><dl> <dt>**LAS \_ MARCAS DE DIRECCIÓN COINCIDEN CON \_ \_ AMBAS**</dt> </dl>              | Coincide con las direcciones de destino y de origen.<br/>                     |
 
 
@@ -66,7 +66,7 @@ Marcas que describen las direcciones usadas por un filtro de captura. Vea Coment
 **NalReserved**
 </dt> <dd>
 
-Está reservado.
+Esto está reservado.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Dirección de origen del elemento de par de direcciones.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se pueden combinar las **marcas del miembro AddressFlags.** Por ejemplo, la siguiente configuración excluye el marco si se detecta la dirección de origen especificada.
 
@@ -92,7 +92,7 @@ Se pueden combinar las **marcas del miembro AddressFlags.** Por ejemplo, la sigu
 ADDRESS_FLAGS_MATCH_SOURCE|ADDRESS_FLAGS_EXCLUDED
 ```
 
-Para obtener más información sobre cómo implementar esta estructura, vea [Filtros de captura](capture-filters.md).
+Para obtener más información sobre cómo implementar esta estructura, vea [Capturar filtros](capture-filters.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,7 +106,7 @@ Para obtener más información sobre cómo implementar esta estructura, vea [Fil
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

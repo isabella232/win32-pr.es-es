@@ -15,11 +15,11 @@ api_location:
 - d3dx9.lib
 - d3dx9.dll
 ms.openlocfilehash: 3c583b74366a0a00054bbeced1ece2bd3d1c1cd2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072768"
 ---
 # <a name="d3dxmatrixperspectiverh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveRH (D3dx9math.h)
 
@@ -95,13 +95,13 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva con la mano derecha.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todos los parámetros de la **función D3DXMatrixPerspectiveRH** son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixPerspectiveRH** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixPerspectiveRH** se puede usar como parámetro para otra función.
 
-Esta función usa la siguiente fórmula para calcular la matriz devuelta.
+Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 ```

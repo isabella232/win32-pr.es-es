@@ -8,12 +8,12 @@ keywords:
 - OpenGL, referencia de vértices
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e77b208b5e337ef3560b283408fb3b44df9e926d7aa3ca18568d6a67cec4d92e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8e83e356c62d6a6b23eb136d8fa8d46fb31a5203
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119011873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073978"
 ---
 # <a name="vertices-reference"></a>Referencia de vértices
 

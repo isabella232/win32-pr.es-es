@@ -4,12 +4,12 @@ ms.assetid: 5b55d12d-8805-4820-91af-5ef583de3463
 title: Configuración por aplicación en Windows XP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9f07860a42951e073403e8145037074c35e6ec6a267736381f6beab385f3bb2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ea6fa2e14e24e48be84247a23feecddf2784fbc6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120127465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071347"
 ---
 # <a name="per-application-configuration-on-windows-xp"></a>Configuración por aplicación en Windows XP
 

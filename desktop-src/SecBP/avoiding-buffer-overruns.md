@@ -4,18 +4,18 @@ ms.assetid: 713fd6de-16af-49d2-8940-763c4a6e414b
 title: Evitar saturaciones de búfer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae85d66d32b1efc29e75e187bb1afa67653084a3b9c729cd56728078f5e0c1ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3c8a3456384e799380fa0041172fb2b2ea09c0c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119622955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071192"
 ---
 # <a name="avoiding-buffer-overruns"></a>Evitar saturaciones de búfer
 
 Una saturación del búfer es uno de los orígenes más comunes de riesgo de seguridad. Una saturación del búfer se debe básicamente al tratamiento de la entrada externa no desactivada como datos de confianza. El acto de copiar estos datos, mediante operaciones como [**CopyMemory**](/previous-versions/windows/desktop/legacy/aa366535(v=vs.85)), **strcat**, **strcpy** o **wcscpy,** puede crear resultados imprevistos, lo que permite daños en el sistema. En el mejor de los casos, la aplicación se anulará con un volcado de memoria, un error de segmentación o una infracción de acceso. En el peor de los casos, un atacante puede aprovechar la saturación del búfer mediante la introducción y ejecución de otro código malintencionado en el proceso. Copiar datos de entrada no desactivados en un búfer basado en la pila es la causa más común de errores que se pueden aprovechar.
 
-Las saturaciones del búfer pueden producirse de varias maneras. En la lista siguiente se proporciona una breve introducción a algunos tipos de situaciones de saturación de búfer y se ofrecen algunas ideas y recursos que le ayudarán a evitar la creación de nuevos riesgos y mitigar los existentes:
+Las saturaciones del búfer pueden producirse de varias maneras. En la lista siguiente se proporciona una breve introducción a algunos tipos de situaciones de saturación de búfer y se ofrecen algunas ideas y recursos que le ayudarán a evitar la creación de nuevos riesgos y a mitigar los existentes:
 
 <dl> <dt>
 
@@ -50,7 +50,7 @@ La prevención de saturaciones del búfer se basa principalmente en escribir có
 
  
 
-Caja fuerte control de cadenas es un problema de larga duración que se sigue abordando siguiendo los procedimientos de programación adecuados y, a menudo, mediante el uso y la retroajuste de los sistemas existentes con funciones seguras y de control de cadenas. Un ejemplo de este conjunto de funciones para el shell de Windows se inicia con [**StringCbCat**](/windows/win32/api/strsafe/nf-strsafe-stringcbcata).
+Caja fuerte control de cadenas es un problema de larga duración que se sigue abordando siguiendo los procedimientos de programación recomendados y, a menudo, mediante el uso y la retroajuste de los sistemas existentes con funciones seguras y de control de cadenas. Un ejemplo de este conjunto de funciones para el shell de Windows se inicia con [**StringCbCat**](/windows/win32/api/strsafe/nf-strsafe-stringcbcata).
 
  
 

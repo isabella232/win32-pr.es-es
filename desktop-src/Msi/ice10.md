@@ -4,18 +4,18 @@ ms.assetid: b0e0d837-245e-4c38-a7c4-06dda0eea25c
 title: ICE10
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80071bdb7f219904c03d7c6b5b947a1bd818af2c3ebc270b0bfb17f2cf185280
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ac8f1304f4444a0f087d747328cdea4b3d714ab0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119581215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074671"
 ---
 # <a name="ice10"></a>ICE10
 
 ICE10 valida que el estado de anuncio de las características secundarias coincide con el de su característica primaria.
 
-Es posible que una característica secundaria no permita anuncios mientras que su característica primaria permite anuncios. Por lo tanto, la siguiente combinación de atributos primarios y secundarios no es válida.
+Es posible que una característica secundaria no permita anuncios, mientras que su característica primaria permite anuncios. Por lo tanto, la siguiente combinación de atributos primarios y secundarios no es válida.
 
 ``` syntax
 parent = msidbFeatureAttributesFavorAdvertise 
@@ -24,11 +24,11 @@ child = msidbFeatureAttributesDisallowAdvertise
 
 Esta combinación no es válida porque desactivaría el elemento primario cada vez que se supone que se debe anunciar el elemento primario. Sin embargo, se permite lo contrario. Un elemento secundario se puede marcar para favorecer el anuncio mientras el elemento primario está marcado para no permitir anuncios.
 
-La acción personalizada ICE10 determina el estado de las características primarias y secundarias de la columna Atributos de la [tabla Característica.](feature-table.md) Tenga en cuenta que es válido establecer el estado de una característica en 0 y establecer su elemento primario o secundario para favorecer o no el anuncio.
+La acción personalizada ICE10 determina el estado de las características primarias y secundarias de la columna Atributos de la [tabla Característica.](feature-table.md) Tenga en cuenta que es válido establecer el estado de una característica en 0 y tener su elemento primario o secundario establecido para favorecer o no permitir anuncios.
 
 ## <a name="result"></a>Resultado
 
-ICE10 publica un error si la columna Atributos de la [tabla Característica](feature-table.md) contiene un error de coincidencia en el estado de anuncio.
+ICE10 publica un error si la columna Atributos de la [tabla Característica](feature-table.md) contiene una discrepancia en el estado de anuncio.
 
 ## <a name="example"></a>Ejemplo
 

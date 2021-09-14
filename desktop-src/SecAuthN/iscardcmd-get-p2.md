@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: bf9d5735e4583e0b55a91e6c45f9f23905bd199e15697596a93b06c2347aab65
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7811ad3e42264477210830f340338d0786ed5547
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119577555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071227"
 ---
 # <a name="iscardcmdget_p2-method"></a>Método ISCardCmd::get \_ P2
 
@@ -44,7 +44,7 @@ HRESULT get_P2(
 *pbyP2* \[ out\]
 </dt> <dd>
 
-Puntero al byte que es el P2 de la APDU en la devolución.
+Puntero al byte que es el P2 de apdu en la devolución.
 
 </dd> </dl>
 
@@ -65,11 +65,11 @@ El método devuelve uno de los siguientes valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para establecer el parámetro P2 en un nuevo valor, llame a [**put \_ P2**](iscardcmd-put-p2.md).
 
-Para obtener los parámetros P1 o P3, llame [**a get \_ P1**](iscardcmd-get-p1.md) [**y get \_ P3**](iscardcmd-get-p3.md) respectivamente.
+Para obtener los parámetros P1 o P3, llame a [**get \_ P1**](iscardcmd-get-p1.md) [**y get \_ P3**](iscardcmd-get-p3.md) respectivamente.
 
 Para obtener una lista de todos los métodos proporcionados por esta interfaz, vea [**ISCardCmd**](iscardcmd.md).
 
@@ -77,7 +77,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo recuperar el segundo byte de parámetro (P2) de la unidad de [*datos del protocolo de aplicación*](../secgloss/a-gly.md) (APDU). En el ejemplo se supone que pISCardCmd es un puntero válido a una instancia de la [**interfaz ISCardCmd.**](iscardcmd.md)
+En el ejemplo siguiente se muestra cómo recuperar el segundo byte de parámetro (P2) de la unidad [*de datos del protocolo de aplicación*](../secgloss/a-gly.md) (APDU). En el ejemplo se supone que pISCardCmd es un puntero válido a una instancia de la [**interfaz ISCardCmd.**](iscardcmd.md)
 
 
 ```C++
@@ -99,24 +99,24 @@ if (FAILED(hr))
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardCmd se define como \_ D5778AE3-43DE-11D0-9171-00AA00C18068<br/>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**obtener \_ P1**](iscardcmd-get-p1.md)
+[**get \_ P1**](iscardcmd-get-p1.md)
 </dt> <dt>
 
 [**obtener \_ P3**](iscardcmd-get-p3.md)

@@ -3,8 +3,8 @@ title: RAS_PORT_1 estructura (Rassapi.h)
 description: La estructura \_ RAS PORT \_ 1 contiene información sobre un puerto RAS.
 ms.assetid: f226ef16-feb4-41e0-ba60-ddb2f0acd305
 keywords:
-- RAS_PORT_1 ras de estructura
-- PRAS_PORT_1 de estructura ras
+- RAS_PORT_1 estructura RAS
+- PRAS_PORT_1 puntero raso de estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c73677b10743434bb9548c8d6add95100c4cf017d25bb44d7436e2f68b9ca4f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d73fe450e5ea5f8ceee48436dbbe05570d0d818a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119673115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073880"
 ---
 # <a name="ras_port_1-structure"></a>Estructura \_ RAS PORT \_ 1
 
-\[Esta versión de la **estructura \_ RAS PORT \_ 1** no se admite a partir Windows Vista. Use el puerto [**RAS \_ \_ 1 más**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_1) reciente definido en mprapi.h en su lugar.\]
+\[Esta versión de la **estructura \_ RAS PORT \_ 1** no se admite desde Windows Vista. En su lugar, use el [**\_ puerto \_ 1 de RAS**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_1) más reciente definido en mprapi.h.\]
 
 La **estructura RAS PORT \_ \_ 1** contiene información sobre un puerto RAS.
 
@@ -46,7 +46,7 @@ typedef struct _RAS_PORT_1 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -66,13 +66,13 @@ Especifica el estado del puerto. Este miembro puede ser uno de los siguientes va
 
 | Value                                                                                                                                                                                            | Significado                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="RAS_PORT_NON_OPERATIONAL"></span><span id="ras_port_non_operational"></span><dl> <dt>**PUERTO RAS \_ \_ NO \_ OPERATIVO**</dt> </dl> | El puerto no está operativo. Compruebe en el registro de eventos si hay errores notificados por el servidor.<br/>                                                                         |
+| <span id="RAS_PORT_NON_OPERATIONAL"></span><span id="ras_port_non_operational"></span><dl> <dt>**PUERTO \_ RAS \_ NO \_ OPERATIVO**</dt> </dl> | El puerto no está operativo. Compruebe en el registro de eventos los errores notificados por el servidor.<br/>                                                                         |
 | <span id="RAS_PORT_DISCONNECTED"></span><span id="ras_port_disconnected"></span><dl> <dt>**PUERTO \_ RAS \_ DESCONECTADO**</dt> </dl>           | El puerto está desconectado actualmente.<br/>                                                                                                                         |
-| <span id="RAS_PORT_CALLING_BACK"></span><span id="ras_port_calling_back"></span><dl> <dt>**PUERTO RAS \_ QUE \_ LLAMA DE \_ NUEVO**</dt> </dl>          | El servidor RAS está llamando de nuevo al cliente RAS.<br/>                                                                                                              |
+| <span id="RAS_PORT_CALLING_BACK"></span><span id="ras_port_calling_back"></span><dl> <dt>**PUERTO RAS \_ QUE \_ VUELVE A \_ LLAMAR**</dt> </dl>          | El servidor RAS está llamando de nuevo al cliente RAS.<br/>                                                                                                              |
 | <span id="RAS_PORT_LISTENING"></span><span id="ras_port_listening"></span><dl> <dt>**ESCUCHA \_ DE PUERTO \_ RAS**</dt> </dl>                    | El puerto está esperando a que un cliente llame a .<br/>                                                                                                                |
 | <span id="RAS_PORT_AUTHENTICATING"></span><span id="ras_port_authenticating"></span><dl> <dt>**AUTENTICACIÓN \_ DE \_ PUERTO RAS**</dt> </dl>     | El servidor está en proceso de autenticación del cliente remoto.<br/>                                                                                           |
 | <span id="RAS_PORT_AUTHENTICATED"></span><span id="ras_port_authenticated"></span><dl> <dt>**PUERTO \_ RAS \_ AUTENTICADO**</dt> </dl>        | El cliente remoto ahora está autenticado.<br/>                                                                                                                     |
-| <span id="RAS_PORT_INITIALIZING"></span><span id="ras_port_initializing"></span><dl> <dt>**INICIALIZACIÓN \_ DE \_ PUERTO RAS**</dt> </dl>           | Se está inicializando el dispositivo conectado al puerto. El estado del puerto cambiará a RAS \_ PORT LISTENING cuando se haya completado la \_ inicialización.<br/> |
+| <span id="RAS_PORT_INITIALIZING"></span><span id="ras_port_initializing"></span><dl> <dt>**INICIALIZACIÓN \_ DE PUERTO \_ RAS**</dt> </dl>           | Se está inicializando el dispositivo conectado al puerto. El estado del puerto cambiará a RAS \_ PORT LISTENING cuando se haya completado la \_ inicialización.<br/> |
 
 
 
@@ -90,7 +90,7 @@ Especifica uno de los siguientes valores para indicar el estado del dispositivo 
 | Value                                                                                                                                                                                                  | Significado                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | <span id="RAS_MODEM_OPERATIONAL"></span><span id="ras_modem_operational"></span><dl> <dt>**MÓDEM \_ RAS \_ OPERATIVO**</dt> </dl>                 | El módem conectado a este puerto está operativo y está listo para recibir llamadas de cliente.<br/> |
-| <span id="RAS_MODEM_HARDWARE_FAILURE"></span><span id="ras_modem_hardware_failure"></span><dl> <dt>**ERROR \_ DE HARDWARE DEL MÓDEM \_ \_ RAS**</dt> </dl> | El módem conectado a este puerto tiene un problema de hardware.<br/>                              |
+| <span id="RAS_MODEM_HARDWARE_FAILURE"></span><span id="ras_modem_hardware_failure"></span><dl> <dt>**ERROR DE \_ HARDWARE DEL \_ MÓDEM \_ RAS**</dt> </dl> | El módem conectado a este puerto tiene un problema de hardware.<br/>                              |
 
 
 
@@ -143,11 +143,11 @@ Estructura [**RAS PPP PROJECTION \_ \_ \_ RESULT**](ras-ppp-projection-result-st
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -172,7 +172,7 @@ Estructura [**RAS PPP PROJECTION \_ \_ \_ RESULT**](ras-ppp-projection-result-st
 [**RasAdminAcceptNewConnection**](rasadminacceptnewconnection.md)
 </dt> <dt>
 
-[**RasAdminConnectionConnectionConnectionupNotification**](rasadminconnectionhangupnotification.md)
+[**RasAdminConnectionHangupNotification**](rasadminconnectionhangupnotification.md)
 </dt> <dt>
 
 [**RasAdminPortGetInfo**](rasadminportgetinfo.md)

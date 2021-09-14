@@ -4,12 +4,12 @@ ms.assetid: 83defdc5-79f5-4727-a9b2-fc7422767873
 title: Configuraciones de informática móvil para SENS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56b51dfaf05f8babd85a921517289faa77916ccba5323703b87faa445af4adc8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e04f1844e84efb1b6247e5b9f7026c71d01e68fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118890691"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073580"
 ---
 # <a name="mobile-computing-configurations-for-sens"></a>Configuraciones de informática móvil para SENS
 

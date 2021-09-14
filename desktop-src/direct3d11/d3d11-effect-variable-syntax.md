@@ -4,33 +4,33 @@ description: Una variable de efecto se declara con la sintaxis descrita en esta 
 ms.assetid: c0cfc9dd-2df3-4f38-a0e4-2e494456b3c9
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25057f3cd2535a0b48072616c3dd59393f90a24fe044c1cdad8acea677a541ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 67710642060ffea642434ba2d23a77cec2fb8bc3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118538398"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072975"
 ---
 # <a name="effect-variable-syntax-direct3d-11"></a>Sintaxis de variable de efecto (Direct3D 11)
 
 Una variable de efecto se declara con la sintaxis descrita en esta sección.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 Sintaxis básica:
 
 *DataType* *VariableName* \[ *: Anotaciones SemanticName* = \]  <    >  \[ InitialValue \] ;
 
-Consulte [Sintaxis de variables (DirectX HLSL) para obtener](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax) una sintaxis completa.
+Consulte [Sintaxis de variables (HLSL de DirectX) para obtener](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax) una sintaxis completa.
 
 
 
 | Nombre         | Descripción                                                                                                                                                                                 |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DataType     | Cualquier [tipo básico](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)de [bloque](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-type)de estado, sombreador o vista de acceso desordenado.                            |
+| DataType     | Cualquier [tipo básico](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)de [bloque](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-type)de estado, sombreador o vista de acceso sin ordenar.                            |
 | VariableName | Cadena ASCII que identifica de forma única el nombre de la variable de efecto.                                                                                                                   |
 | SemanticName | Cadena ASCII que denota información adicional sobre cómo se debe usar una variable. Una semántica es una cadena ASCII que puede ser un valor del sistema predefinido o una cadena de usuario personalizado. |
-| anotaciones  | Uno o varios fragmentos de información proporcionada por el usuario (metadatos) que el sistema de efectos omite. Para obtener sintaxis, vea [Sintaxis de anotación (Direct3D 11).](d3d11-effect-annotation-syntax.md)     |
+| Anotaciones  | Uno o varios fragmentos de información proporcionados por el usuario (metadatos) que el sistema de efectos omite. Para obtener sintaxis, vea [Annotation Syntax (Direct3D 11) (Sintaxis de anotación [Direct3D 11]).](d3d11-effect-annotation-syntax.md)     |
 | InitialValue | Valor predeterminado de la variable.                                                                                                                                                          |
 
 

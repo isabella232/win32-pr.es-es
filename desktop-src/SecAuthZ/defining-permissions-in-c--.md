@@ -1,21 +1,21 @@
 ---
-description: Instrucciones para usar la API del Administrador de autorización para definir permisos en C++ mediante la creación de un almacén de directivas de autorización.
+description: Instrucciones para usar la API de Authorization Manager para definir permisos en C++ mediante la creación de un almacén de directivas de autorización.
 ms.assetid: 8a3bf625-7973-4905-a63c-e42e6682b7c2
 title: Definir permisos en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 008c82e74bcd4b4fec714e43c8beb7d8c7e908baaf569ee260559f64ba5bbc10
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc398d811f44b69dbde8d30f135fd4f30a552bbf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118913778"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073699"
 ---
 # <a name="defining-permissions-in-c"></a>Definir permisos en C++
 
-En el Administrador de autorización, defina qué usuarios tienen acceso a los recursos de aplicación mediante la creación de un almacén de directivas de autorización.
+En el Administrador de autorización, puede definir qué usuarios tienen acceso a qué recursos de aplicación mediante la creación de un almacén de directivas de autorización.
 
-Para obtener información sobre cómo definir permisos con ACL, vea Definir permisos con [ACL en C++.](defining-permissions-with-acls-in-c--.md)
+Para obtener información sobre cómo definir permisos con ACL, vea [Definición de permisos con ACL en C++.](defining-permissions-with-acls-in-c--.md)
 
 **Para definir permisos de acceso**
 
@@ -25,7 +25,7 @@ Para obtener información sobre cómo definir permisos con ACL, vea Definir perm
     </dl>
 2.  Cree una sección en el almacén de directivas de autorización para una aplicación específica:<dl>
 
-[Creación de un objeto de aplicación en C++](creating-an-application-object-in-c--.md)  
+[Crear un objeto de aplicación en C++](creating-an-application-object-in-c--.md)  
     </dl>
 3.  Defina las operaciones que implementa la aplicación para acceder a los recursos y modificarlos:<dl>
 
@@ -41,7 +41,7 @@ Para obtener información sobre cómo definir permisos con ACL, vea Definir perm
     </dl>Un usuario asignado a un rol tiene permiso para realizar cualquier tarea asignada a ese rol.
 6.  Cree scripts para calificar el acceso a las tareas en tiempo de ejecución:<dl>
 
-[Calificar el acceso con lógica de negocios en C++](qualifying-access-with-business-logic-in-c--.md)  
+[Acceso apto con lógica de negocios en C++](qualifying-access-with-business-logic-in-c--.md)  
     </dl>Este paso es opcional.
 7.  Definir grupos de usuarios:<dl>
 

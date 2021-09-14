@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 1e675c07eae46096878e7c0aa71b53ba5bf22194e82ad8cc5aa5b6070d7e27e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c327ce1568eec07aabe3334013dae8b720ab7446
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118938576"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074156"
 ---
 # <a name="frame_descriptor-structure"></a>Estructura \_ DEL DESCRIPTOR DE MARCO
 
@@ -44,7 +44,7 @@ typedef struct _FRAME_DESCRIPTOR {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 

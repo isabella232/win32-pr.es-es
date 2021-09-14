@@ -6,12 +6,12 @@ keywords:
 - Llamada a procedimiento remoto RPC, referencia, atributos MIDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c60ff9a4d37472b54e90954b1c22c5f2b2df6632b54c8a850bc9a5223c189596
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb1c21d57aed15797a481a2c718f122f13aa797c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118928104"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071417"
 ---
 # <a name="midl-array-attributes-used-in-rpc"></a>Atributos de matriz MIDL usados en RPC
 

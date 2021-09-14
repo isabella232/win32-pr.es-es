@@ -4,12 +4,12 @@ ms.assetid: e23e43ce-942f-4f6b-b5fd-cf366f7a7fe5
 title: ICE55
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 044b9993c6c50dce32c04f98d8e000f0faae4280d244c4656d7b0cbed7b49749
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 239093e3502a1731c3248918750c18aa1b3e1f18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118635146"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074583"
 ---
 # <a name="ice55"></a>ICE55
 
@@ -17,11 +17,11 @@ ICE55 valida que todos los objetos LockPermission existen y tienen valores de pe
 
 ## <a name="result"></a>Resultado
 
-ICE55 publica un error si un LockObject que aparece en la tabla [LockPermissions](lockpermissions-table.md) no existe o si no se especifica ningún nivel de privilegio en la columna Permission.
+ICE55 publica un error si no existe un LockObject enumerado en la tabla [LockPermissions](lockpermissions-table.md) o si no se especifica ningún nivel de privilegio en la columna Permission.
 
 ## <a name="example"></a>Ejemplo
 
-ICE55 notificaría los errores siguientes para el ejemplo.
+ICE55 notificaría los siguientes errores para el ejemplo.
 
 ``` syntax
 LockObject 'File1'.'File'.''.'guest' in the LockPermissions table 
@@ -47,7 +47,7 @@ Could not find item 'File3' in table 'File' which is referenced
 
 
 
-| Archivo  | Versión | Lenguaje |
+| Archivo  | Versión | Idioma |
 |-------|---------|----------|
 | Archivo1 | Archivo2   |          |
 | Archivo2 | 1.0.0.0 | 3082     |

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a567242431fc90be3b60d8ae08875b585ff6a81794899a6c9eb69e7a0a03daa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9ebdb9d19f6c88340fd53162febe694e3566408
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074041"
 ---
 # <a name="glinitnames-function"></a>Función glInitNames
 
@@ -54,7 +54,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar el código de error 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glInitNames** hace que la pila de nombres se inicialice en su estado vacío predeterminado. La pila de nombres se usa durante el modo de selección para permitir que los conjuntos de comandos de representación se identifiquen de forma única. Consta de un conjunto ordenado de enteros sin signo.
 
@@ -80,7 +80,7 @@ Las siguientes funciones recuperan información relacionada **con glInitNames**:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

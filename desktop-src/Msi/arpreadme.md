@@ -4,12 +4,12 @@ ms.assetid: 5a3232b0-8194-4df5-9e6b-a1c7df5a216c
 title: Propiedad ARPREADME
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b9dc0a31c698ba32b9681d61a3ca7139a503a149fc4e5423f26ce94f8e0debd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 702c6d51e1c83b71cd3c3a9b6755ce78f7624dfa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159073"
 ---
 # <a name="arpreadme-property"></a>Propiedad ARPREADME
 
@@ -21,7 +21,7 @@ La **propiedad ARPREADME proporciona** la propiedad Agregar o quitar programas P
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

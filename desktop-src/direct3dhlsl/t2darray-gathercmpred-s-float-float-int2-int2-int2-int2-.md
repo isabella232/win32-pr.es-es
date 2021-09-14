@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 93ee67c536934adb3187a5e224be0043167f9836e391d86556b8e76871563aad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d621bf26d097eeac17962fd14557f73f295a2e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119485875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072682"
 ---
 # <a name="texture2darraygathercmpredsfloatfloatint2int2int2int2-function"></a>Función Texture2DArray::GatherCmpRed(S,float,float,int2,int2,int2,int2)
 
@@ -114,7 +114,7 @@ Tipo: **TemplateType**
 
 Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las muestras de textura se pueden usar para la interpolación bilineal.
 
@@ -130,7 +130,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3de18441f1b62bbd4084476dabec1cf14bd096c62ba1b26f35985208f19200b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e277b0b71361588f8a9835ec3b8891b49f9482a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119888365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074046"
 ---
 # <a name="glevalcoord2fv-function"></a>Función glEvalCoord2fv
 
@@ -51,11 +51,11 @@ Puntero a una matriz que contiene la coordenada de *dominio u*.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función glEvalCoord2fv** evalúa los mapas bidimensionales habilitados mediante dos valores de dominio, *u* y *v*. Defina mapas con [**glMap1.**](glmap1.md) Habilite o deshabilite con [**glEnable**](glenable.md) [**y glDisable.**](gldisable.md)
 
-Cuando se emite una de las funciones **glEvalCoord,** se evalúan todos los mapas habilitados actualmente de la dimensión indicada. A continuación, para cada asignación habilitada, es como si la función OpenGL correspondiente se emitiese con el valor calculado. Es decir, si GL MAP1 INDEX o \_ \_ GL \_ MAP2 INDEX están \_ habilitados, se simula una función [**glIndex.**](glindex-functions.md) Si GL \_ MAP1 \_ COLOR \_ 4 o GL MAP2 COLOR 4 están habilitados, se simula una \_ \_ función \_ **glcolor.** Si GL MAP1 NORMAL o GL MAP2 NORMAL están habilitados, Se genera un vector normal y, si se ha habilitado alguna de las funciones \_ \_ GL \_ \_ \_ MAP1 TEXTURE \_ \_ COORD \_ 1, GL \_ MAP1 TEXTURE \_ \_ COORD \_ 2, GL \_ \_ MAP1 TEXTURE \_ COORD \_ 3, GL \_ MAP1 TEXTURE \_ \_ \_ COORD 4, GL \_ MAP2 TEXTURE \_ \_ \_ COORD 1, GL \_ MAP2 TEXTURE \_ \_ COORD \_ 2, GL \_ MAP2 TEXTURE \_ \_ COORD 3 y GL \_ MAP2 TEXTURE COORD 4, \_ \_ \_ \_ [](gltexcoord-functions.md) se simula una función glTexCoord adecuada.
+Cuando se emite una de las funciones **glEvalCoord,** se evalúan todas las asignaciones habilitadas actualmente de la dimensión indicada. A continuación, para cada asignación habilitada, es como si la función OpenGL correspondiente se emitiese con el valor calculado. Es decir, si GL MAP1 INDEX o \_ \_ GL \_ MAP2 INDEX están \_ habilitados, se simula una función [**glIndex.**](glindex-functions.md) Si GL \_ MAP1 \_ COLOR \_ 4 o GL \_ MAP2 COLOR 4 están habilitados, se simula \_ una función \_ **glcolor.** Si GL MAP1 NORMAL o GL MAP2 NORMAL están habilitados, Se genera un vector normal y, si se ha habilitado alguna de las funciones \_ \_ GL \_ \_ \_ MAP1 TEXTURE \_ \_ COORD \_ 1, GL \_ MAP1 TEXTURE \_ \_ COORD \_ 2, GL \_ \_ MAP1 TEXTURE \_ COORD \_ 3, GL \_ MAP1 TEXTURE \_ \_ \_ COORD 4, GL \_ MAP2 TEXTURE \_ \_ \_ COORD 1, GL \_ MAP2 TEXTURE \_ \_ COORD \_ 2, GL \_ MAP2 TEXTURE \_ \_ COORD 3 y GL \_ MAP2 TEXTURE COORD 4, \_ \_ \_ \_ [](gltexcoord-functions.md) se simula una función glTexCoord adecuada.
 
 OpenGL usa valores evaluados en lugar de valores actuales para las evaluaciones que están habilitadas y los valores actuales en caso contrario, para las coordenadas de color, índice de color, normal y textura. Sin embargo, los valores evaluados no actualizan los valores actuales. Por lo tanto, si las funciones [**glVertex**](glvertex-functions.md) se intercalan con funciones **glEvalCoord,** las coordenadas de color, normal y textura asociadas a las funciones **glVertex** no se ven afectadas por los valores generados por las funciones **glEvalCoord,** sino solo por las funciones [**glColor**](glcolor-functions.md), [**glIndex**](glindex-functions.md), [**glNormal**](glnormal-functions.md)y [**glTexCoord**](gltexcoord-functions.md) más recientes.
 
@@ -67,7 +67,7 @@ El n normal **generado es**
 
 ![Ecuación que muestra el n normal generado para el mapa.](images/evlcrd02.png)
 
-Las siguientes funciones recuperan información relacionada con **la función glEvalCoord2fv:**
+Las siguientes funciones recuperan información relacionada **con la función glEvalCoord2fv:**
 
 [**glIsEnabled con**](glisenabled.md) el argumento GL \_ MAP1 \_ VERTEX \_ 3
 
@@ -121,7 +121,7 @@ Las siguientes funciones recuperan información relacionada con **la función gl
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

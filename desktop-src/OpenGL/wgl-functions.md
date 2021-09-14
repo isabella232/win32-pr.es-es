@@ -1,22 +1,22 @@
 ---
 title: Funciones WGL
-description: A continuación se muestra las funciones WGL asociadas a OpenGL.
+description: A continuación se muestra las funciones de WGL asociadas a OpenGL.
 ms.assetid: 52053370-d88b-4faf-bdcd-4663c6d5270d
 keywords:
 - Funciones OpenGL,WGL
 - Referencia de WGL OpenGL ,functions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ece9b08b165a820bab43da6ecfc1de5c1ce98f63b7a3d4ce7775627765a1365a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 150871ed1e059a5a7711c5921c43860a309c4367
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118932795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073967"
 ---
 # <a name="wgl-functions"></a>Funciones WGL
 
-Estas son las funciones WGL asociadas a OpenGL:
+A continuación se encuentran las funciones de WGL asociadas a OpenGL:
 
 -   [**wglCopyContext**](/windows/desktop/api/wingdi/nf-wingdi-wglcopycontext)
 -   [**wglCreateContext**](/windows/desktop/api/wingdi/nf-wingdi-wglcreatecontext)

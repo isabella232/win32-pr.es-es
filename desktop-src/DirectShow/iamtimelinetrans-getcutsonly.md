@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 7007db4699dc3f1772ad727c2e40daa15946d07d564b92b5b1517899ff6e1f20
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3bbec55ddfe77c053135054fde9b64efce516a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118154789"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072210"
 ---
-# <a name="iamtimelinetransgetcutsonly-method"></a>IamTimelineTrans::GetCutsOnly (método)
+# <a name="iamtimelinetransgetcutsonly-method"></a>IAMTimelineTrans::GetCutsOnly (método)
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
@@ -56,7 +56,7 @@ Recibe un valor booleano que especifica si la transición se representa como un 
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -79,7 +79,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -95,7 +95,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 [**IAMTimeline::TransitionsEnabled**](iamtimeline-transitionsenabled.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

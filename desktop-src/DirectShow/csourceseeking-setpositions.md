@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dd6af5bc48629c71964f1d6845bb25de556ad49c9ab0fa408835e04aad4ef707
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b09dd92b97166b8d973328ec95e466abbda116bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072256"
 ---
 # <a name="csourceseekingsetpositions-method"></a>Método CSourceSeeking.SetPositions
 
@@ -89,18 +89,18 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en l
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se admiten las marcas siguientes:
 
--   NoPositioning de AM \_ SEEKING \_
+-   AM \_ SEEKING \_ NoPositioning
 -   AM \_ SEEKING \_ AbsolutePositioning
 -   AM \_ SEEKING \_ RelativePositioning
 -   AM \_ SEEKING \_ IncrementalPositioning *(solo pStop)*
 
 Para obtener más información, [**vea IMediaSeeking::SetPositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions).
 
-Este método actualiza los valores de las variables miembro [**CSourceSeeking::m \_ rtStart**](csourceseeking-m-rtstart.md) y [**CSourceSeeking::m \_ rtStop**](csourceseeking-m-rtstop.md) y, a continuación, llama a los métodos virtuales puros [**CSourceSeeking::ChangeStart**](csourceseeking-changestart.md) y [**CSourceSeeking::ChangeStop**](csourceseeking-changestop.md).
+Este método actualiza los valores de las variables miembro [**CSourceSeeking::m \_ rtStart**](csourceseeking-m-rtstart.md) y [**CSourceSeeking::m \_ rtStop**](csourceseeking-m-rtstop.md) y, a continuación, llama a los métodos virtuales puros [**CSourceSeeking::ChangeStart**](csourceseeking-changestart.md) y [**CSourceSeeking::ChangeStop.**](csourceseeking-changestop.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -113,7 +113,7 @@ Este método actualiza los valores de las variables miembro [**CSourceSeeking::m
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

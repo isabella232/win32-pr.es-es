@@ -4,16 +4,16 @@ ms.assetid: f7d64f61-24c8-4037-a10b-d68d0e9e3c42
 title: Revisión de Control de cuentas de usuario (UAC)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 689da3d09541199d6ff231e4f6ce909d7342025ab443d79e4db47aee9deb2733
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d111a39245ab15b24c1734d278a8e0a477e68a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074285"
 ---
 # <a name="user-account-control-uac-patching"></a>Revisión de Control de cuentas de usuario (UAC)
 
-La aplicación de revisiones de [*Control*](u-gly.md) de cuentas de usuario (UAC) permite a los autores de las instalaciones del instalador de Windows identificar las revisiones firmadas digitalmente que los usuarios que no son administradores pueden aplicar en el futuro.
+[*La aplicación*](u-gly.md) de revisiones de Control de cuentas de usuario (UAC) permite a los autores de las instalaciones del instalador de Windows identificar las revisiones firmadas digitalmente que los usuarios que no son administradores pueden aplicar en el futuro.
 
 Si la firma digital no coincide con el certificado, Windows Vista muestra un cuadro de diálogo de UAC que solicita autorización de administrador antes de instalar la revisión. En sistemas anteriores a Windows Vista, el instalador no aplicará una revisión firmada que no coincida con el certificado.
 
@@ -45,7 +45,7 @@ Puede determinar si la aplicación de revisiones con privilegios mínimos está 
 
 Un administrador puede deshabilitar la aplicación de revisiones con privilegios mínimos en el equipo estableciendo [la directiva DisableLUAPatching](disableluapatching.md) en 1. Puede establecer la propiedad [**MSIDISABLELUAPATCHING**](msidisableluapatching.md) en 1 durante la instalación inicial de una aplicación para evitar solo la aplicación con privilegios mínimos.
 
-Esta funcionalidad está disponible a partir de Windows Installer versión 3.0. La aplicación de revisiones de Control de cuentas de usuario (UAC) se denominaba aplicación de revisiones de cuentas de usuario con privilegios mínimos (LUA) Windows XP. La aplicación de revisiones de LUA no está disponible en Windows 2000 y Windows Server 2003.
+Esta funcionalidad está disponible a partir de Windows Installer versión 3.0. La aplicación de revisiones de Control de cuentas de usuario (UAC) se denominaba aplicación de revisiones de cuentas de usuario con privilegios mínimos (LUA) Windows XP. La aplicación de revisiones de LUA no está disponible Windows 2000 y Windows Server 2003.
 
 Para obtener más información sobre la compatibilidad de aplicaciones y el desarrollo de aplicaciones compatibles con el Control de cuentas de usuario (UAC), consulte la información de UAC que se proporciona en [Microsoft Technet](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc709691(v=ws.10)).
 

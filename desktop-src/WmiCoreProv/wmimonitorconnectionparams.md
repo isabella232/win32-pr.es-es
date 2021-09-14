@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 4a0ec181cebbb832eed64cd915e8a4b7bfb1f1cb214055c187c5bb4a2355c07f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a88b80773ec60b161df51fc759cc932d5c53c931
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117926723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073079"
 ---
 # <a name="wmimonitorconnectionparams-class"></a>Clase WmiMonitorConnectionParams
 
@@ -40,7 +40,7 @@ class WmiMonitorConnectionParams
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase WmiMonitorConnectionParams** tiene estos tipos de miembros:
 
@@ -98,7 +98,7 @@ Tipo de conexión de tecnología de salida de vídeo. Los valores válidos se do
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -108,7 +108,7 @@ Tipo de conexión de tecnología de salida de vídeo. Los valores válidos se do
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -12,18 +12,18 @@ api_name:
 - RAY_FLAG
 api_type:
 - NA
-ms.openlocfilehash: a4fa44e68e8747a0a8366ca2d949290f585d4b70d9e75b4ed2d3b6fdda0d05c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5fd6e041fc476c24ff926c9c8f99f05699f5e41
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119123690"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072909"
 ---
 # <a name="raydesc-structure"></a>Estructura RayDesc
 
-Se pasa a [**la función TraceRay**](traceray-function.md) para definir el origen, la dirección y las extensiones del rayo.
+Se pasa [**a la función TraceRay**](traceray-function.md) para definir el origen, la dirección y las extensiones del rayo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -53,7 +53,7 @@ Origen del rayo.
 <span id="TMin"></span><span id="tmin"></span>**Tmin**
 </dt> <dd>
 
-Extensión mínima del rayo.
+La extensión mínima del rayo.
 
 
 </dd> <dt>

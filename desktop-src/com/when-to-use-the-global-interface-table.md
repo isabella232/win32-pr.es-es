@@ -5,11 +5,11 @@ ms.assetid: def8f7f8-9d0d-49a4-9d5c-40233903eea5
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f89bbd7437b65c85abe89e8d647cbd73555c2d6a
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073043"
 ---
 # <a name="when-to-use-the-global-interface-table"></a>Cuándo usar la tabla de interfaz global
 

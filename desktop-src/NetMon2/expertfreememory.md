@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: edc4d1a9e33139372d0f397053d233a28c9e2445ba270a47e7dbfe97090eb6a1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc26056a3ec3e8820c363d97f92c7eb382cd0622
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074160"
 ---
 # <a name="expertfreememory-function"></a>Función ExpertFreeMemory
 
@@ -60,7 +60,7 @@ Si la función se realiza correctamente. el valor devuelto es NMERR \_ SUCCESS.
 
 Si la función no se realiza correctamente, el valor devuelto indica el motivo del error. Si el valor devuelto es NMERR EXPERT TERMINATE, el experto limpia inmediatamente \_ \_ y devuelve.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Es importante tener en cuenta que un experto debe usar las Monitor de red de asignación de memoria para la administración de memoria. Si se produce un error en el experto durante el tiempo de ejecución, el uso de estas funciones Monitor de red liberar la memoria que ha asignado.
 

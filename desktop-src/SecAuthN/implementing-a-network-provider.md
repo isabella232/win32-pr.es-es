@@ -4,12 +4,12 @@ ms.assetid: 21dfa941-72fd-4f2c-8bc4-379ed6ca2a4c
 title: Implementar un proveedor de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4776bd97b9528bd04bbda25b88e0ff45a8f911429bb573e62dbbb8581abdfbac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97819b033c57feb25cf882f97051785123e2e382
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071297"
 ---
 # <a name="implementing-a-network-provider"></a>Implementar un proveedor de red
 

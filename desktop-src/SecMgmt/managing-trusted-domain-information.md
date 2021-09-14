@@ -4,20 +4,20 @@ ms.assetid: 0c7534d7-3372-49c4-992c-9b519279982d
 title: Administración de información de dominio de confianza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a945705efaedf56920ee2170deeab9da0d01802259a57aca5cda2fac9d531aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b7df297b8c83ebe9054ca6f04b657905c21fae6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118894096"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073602"
 ---
 # <a name="managing-trusted-domain-information"></a>Administración de información de dominio de confianza
 
 La directiva LSA proporciona varias funciones que puede usar para crear, enumerar y eliminar dominios de confianza y para establecer y recuperar información de dominio de confianza.
 
-Para poder administrar la información de dominio de confianza, la aplicación debe obtener un identificador para un objeto [**Policy,**](policy-object.md) como se explica en [Apertura de un identificador de objeto de directiva](opening-a-policy-object-handle.md).
+Para poder administrar información de dominio de confianza, la aplicación debe obtener un identificador para un objeto [**Policy,**](policy-object.md) como se explica en Apertura de un [identificador de objeto de directiva.](opening-a-policy-object-handle.md)
 
-Puede enumerar los dominios de confianza llamando a [**LsaEnumerateTrustedDomainsEx.**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaenumeratetrusteddomainsex)
+Puede enumerar los dominios de confianza llamando a [**LsaEnumerateTrustedDomainsEx**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaenumeratetrusteddomainsex).
 
 Para recuperar información sobre un dominio de confianza, llame a [**LsaQueryTrustedDomainInfo**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaquerytrusteddomaininfo) o [**LsaQueryTrustedDomainInfoByName**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaquerytrusteddomaininfobyname). Ambas funciones devuelven la misma información; sin embargo, **LsaQueryTrustedDomainInfo** identifica el dominio de confianza por SID y **LsaQueryTrustedDomainInfoByName** identifica el dominio de confianza por nombre.
 

@@ -4,12 +4,12 @@ ms.assetid: 40622282-e190-40d0-80d4-cab9eddc2091
 title: Cifrado de datos con CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b264518c2a0ccfe0f626c869ba3062c0429941234ca0c286f9e7801961485b74
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a8f161cd23ec6863bee7f5ffd5b696fa99880e3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118907743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073663"
 ---
 # <a name="encrypting-data-with-cng"></a>Cifrado de datos con CNG
 
@@ -24,7 +24,7 @@ El uso principal de cualquier API de criptografía es cifrar y descifrar datos. 
 Para cifrar los datos, realice los pasos siguientes:
 
 1.  Abra un proveedor de algoritmos que admita el cifrado, como **BCRYPT \_ DES \_ ALGORITHM**.
-2.  Cree una clave con la que cifrar los datos. Se puede crear una clave mediante cualquiera de las siguientes funciones:
+2.  Cree una clave con la que cifrar los datos. Una clave se puede crear mediante cualquiera de las siguientes funciones:
     -   [**BCryptGenerateKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptgeneratekeypair) o [**BCryptImportKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkeypair) para proveedores asimétricos.
     -   [**BCryptGenerateSymmetricKey**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptgeneratesymmetrickey) o [**BCryptImportKey**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkey) para proveedores simétricos.
 
@@ -33,7 +33,7 @@ Para cifrar los datos, realice los pasos siguientes:
 
      
 
-3.  Obtenga el tamaño de los datos cifrados. Esto se basa en el algoritmo de cifrado, el esquema de relleno (si existe) y el tamaño de los datos que se cifrarán. Puede obtener el tamaño de los datos cifrados mediante la [**función BCryptEncrypt,**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptencrypt) pasando **NULL** para el *parámetro pbOutput.* Todos los demás parámetros deben ser los mismos que cuando los datos se cifran realmente, excepto el *parámetro pbInput,* que no se usa en este caso.
+3.  Obtenga el tamaño de los datos cifrados. Esto se basa en el algoritmo de cifrado, el esquema de relleno (si existe) y el tamaño de los datos que se cifrarán. Puede obtener el tamaño de los datos cifrados mediante la función [**BCryptEncrypt,**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptencrypt) pasando **NULL** para el *parámetro pbOutput.* Todos los demás parámetros deben ser los mismos que cuando los datos se cifran realmente, excepto el *parámetro pbInput,* que no se usa en este caso.
 4.  Puede cifrar los datos en su lugar con el mismo búfer o cifrar los datos en un búfer independiente.
 
     Si desea cifrar los datos en su lugar, pase el puntero de búfer de texto no cifrado para los parámetros *pbInput* y *pbOutput* en la [**función BCryptEncrypt.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptencrypt) Es posible que el tamaño de los datos cifrados sea mayor que el tamaño de los datos sin cifrar, por lo que el búfer de texto no cifrado debe ser lo suficientemente grande como para contener los datos cifrados, no solo el texto no cifrado. Puede usar el tamaño obtenido en el paso 3 para asignar el búfer de texto no cifrado.
@@ -447,7 +447,7 @@ Para descifrar los datos, realice los pasos siguientes:
 
 1.  Abra un proveedor de algoritmos que admita el cifrado, como **BCRYPT \_ DES \_ ALGORITHM**.
 2.  Obtenga la clave con la que se cifraron los datos y use esa clave para obtener un identificador para la clave.
-3.  Obtenga el tamaño de los datos descifrados. Esto se basa en el algoritmo de cifrado, el esquema de relleno (si existe) y el tamaño de los datos que se descifrarán. Puede obtener el tamaño de los datos cifrados mediante la [**función BCryptDecrypt,**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptdecrypt) pasando **NULL** para el *parámetro pbOutput.* Los parámetros que especifican el esquema de relleno y el [*vector*](/windows/desktop/SecGloss/i-gly) de inicialización (IV) deben ser los mismos que cuando se cifraron los datos, excepto para el *parámetro pbInput,* que no se usa en este caso.
+3.  Obtenga el tamaño de los datos descifrados. Esto se basa en el algoritmo de cifrado, el esquema de relleno (si existe) y el tamaño de los datos que se descifrarán. Puede obtener el tamaño de los datos cifrados mediante la función [**BCryptDecrypt,**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptdecrypt) pasando **NULL** para el *parámetro pbOutput.* Los parámetros que especifican el esquema de relleno y el [*vector*](/windows/desktop/SecGloss/i-gly) de inicialización (IV) deben ser los mismos que cuando se cifraron los datos, excepto para el *parámetro pbInput,* que no se usa en este caso.
 4.  Asigne un búfer de memoria para los datos descifrados.
 5.  Puede descifrar los datos en su lugar mediante el mismo búfer o descifrar los datos en un búfer independiente.
 

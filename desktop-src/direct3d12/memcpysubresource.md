@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c27e8cf9ffda237c2dad017b3a981ff71498a22c1c7b54ede032d6bf8c012a1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b955211a490927033186442480b3449773b4ebcd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117733367"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072954"
 ---
 # <a name="memcpysubresource-function"></a>Función MemcpySubresource
 
@@ -50,7 +50,7 @@ void inline MemcpySubresource(
 
 Tipo: **const [**D3D12 \_ MEMCPY \_ DEST**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_memcpy_dest) \***
 
-Puntero a una estructura DEST de [**\_ MEMCPY \_ de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_memcpy_dest) que describe el destino de la operación de copia de memoria.
+Puntero a una [**estructura \_ \_ DEST de MEMCPY de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_memcpy_dest) que describe el destino de la operación de copia de memoria.
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Número de segmentos.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Tenga en cuenta también los métodos siguientes:
 
@@ -114,7 +114,7 @@ Tenga en cuenta también los métodos siguientes:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

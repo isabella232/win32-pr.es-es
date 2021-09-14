@@ -4,12 +4,12 @@ ms.assetid: e6e3ea44-a1d4-451a-b326-e8fb7ed4adeb
 title: ICE25
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2715ce629ad22b872b8d38d0c6848236b9f1af9378a0a652b702e7b72cbd7dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0d966c4c374d6e61e30b44a41ad88bed8bf907f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119528955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074638"
 ---
 # <a name="ice25"></a>ICE25
 

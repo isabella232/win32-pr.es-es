@@ -4,12 +4,12 @@ ms.assetid: 51cc0b3f-aa01-4f4d-9a4d-add832698061
 title: Acción DuplicateFiles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7969440aed4361ad264baa0d30a9c1d16f0ca673c72a2a7c3c1326e5d393ffc1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 711f6bbd4716beb227dea348826bc302e2f4ba2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118637717"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158514"
 ---
 # <a name="duplicatefiles-action"></a>Acción DuplicateFiles
 
@@ -33,7 +33,7 @@ La acción DuplicateFiles debe ir después de [la acción InstallFiles](installf
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La acción DuplicateFiles procesa una entrada de tabla [DuplicateFile](duplicatefile-table.md) solo si el componente vinculado a esa entrada se instala localmente. Para obtener más información, vea [Tabla de componentes](component-table.md).
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 254b140e801f4d4440c9b292999e5c8f91175a30750b08bfd30abd6afd84f73d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 932b457bd1ddd870fd84facdb540e31188825504
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072299"
 ---
 # <a name="mcm_getcolor-message"></a>Mensaje \_ GETCOLOR de MCM
 
@@ -56,7 +56,7 @@ Valor de tipo **int** que especifica el color del calendario del mes que se va a
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **valor COLORREF** que representa la configuración de color para la parte especificada del control de calendario mensual si se realiza correctamente. De lo contrario, este mensaje devuelve -1.
+Devuelve un **valor COLORREF que** representa la configuración de color para la parte especificada del control de calendario mensual si se realiza correctamente. De lo contrario, este mensaje devuelve -1.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Devuelve un **valor COLORREF** que representa la configuración de color para la
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

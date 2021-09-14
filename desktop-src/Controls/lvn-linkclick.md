@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e89db641bc17e8c3d9d548bdf502e077c88dfc6c7452f8059b085c3432d23bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd69fb463e71523fcbd4eeb65a6a718d27847c09
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119019073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072306"
 ---
 # <a name="lvn_linkclick-notification-code"></a>Lvn \_ LINKCLICK notification code
 
@@ -49,7 +49,7 @@ Puntero a una [**estructura NMLVLINK.**](/windows/win32/api/commctrl/ns-commctrl
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En el ejemplo siguiente se muestra cómo una aplicación podría responder a este código de notificación en su [**controlador de mensajes WM \_ NOTIFY.**](wm-notify.md) En el ejemplo se alterna el estado contraído del grupo y se establece el texto de vínculo adecuado.
 
@@ -85,7 +85,7 @@ case LVN_LINKCLICK:
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

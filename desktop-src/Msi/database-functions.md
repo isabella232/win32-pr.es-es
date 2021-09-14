@@ -1,21 +1,21 @@
 ---
-description: Este material está destinado a desarrolladores que escriben sus propios programas de instalación y desarrolladores que desean obtener más información sobre las tablas de base de datos del instalador. Para obtener información general sobre el instalador, vea Acerca de Windows Installer.
+description: Este material está destinado a desarrolladores que escriben sus propios programas de instalación y desarrolladores que desean obtener más información sobre las tablas de base de datos del instalador. Para obtener información general sobre el instalador, vea Acerca de Windows Instalador.
 ms.assetid: 95516437-9708-4f4e-a5c2-7bcd4741c776
 title: Funciones de base de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6214dadc413a2c4e2d5f257c396438c850446fb9106fb70970bdb971f4653d44
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e4a4233437d24944c8bb7fe5c7de6412e700022b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120086215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158644"
 ---
 # <a name="database-functions"></a>Funciones de base de datos
 
 Este material está destinado a desarrolladores que escriben sus propios programas de instalación y desarrolladores que desean obtener más información sobre las tablas de base de datos del instalador. Para obtener información general sobre el instalador, vea [Acerca de Windows Installer](about-windows-installer.md).
 
-Puede usar las funciones de acceso del instalador para acceder a la base de datos y al proceso de instalación. Estas funciones solo las deben usar las acciones de instalación personalizadas y las herramientas de creación. Algunas de las funciones de acceso del instalador requieren SQL cadenas de consulta para consultar la base de datos. Las consultas deben cumplir el instalador para [SQL sintaxis](sql-syntax.md).
+Puede usar las funciones de acceso del instalador para acceder a la base de datos y al proceso de instalación. Estas funciones solo deben usarse mediante acciones de instalación personalizadas y herramientas de creación. Algunas de las funciones de acceso del instalador requieren SQL cadenas de consulta para consultar la base de datos. Las consultas deben cumplir el instalador de SQL [sintaxis](sql-syntax.md).
 
 En este tema se enumeran las funciones de acceso a la base de datos del instalador por categoría.
 
@@ -73,8 +73,8 @@ En este tema se enumeran las funciones de acceso a la base de datos del instalad
 | [**MsiRecordGetFieldCount**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordgetfieldcount) | Devuelve el número de campos de un registro.                       |
 | [**MsiRecordGetInteger**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordgetinteger)       | Devuelve el valor entero de un campo de registro.                  |
 | [**MsiRecordGetString**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordgetstringa)         | Devuelve el valor de cadena de un campo de registro.                     |
-| [**MsiRecordIsNull**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordisnull)               | Informa de si un campo de registro es NULL.                         |
-| [**MsiRecordReadStream**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordreadstream)       | Lee bytes de un campo de secuencia de registros en un búfer.           |
+| [**MsiRecordIsNull**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordisnull)               | Indica si un campo de registro es NULL.                         |
+| [**MsiRecordReadStream**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordreadstream)       | Lee bytes de un campo de flujo de registro en un búfer.           |
 | [**MsiRecordSetInteger**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordsetinteger)       | Establece un campo de registro en un campo entero.                        |
 | [**MsiRecordSetStream**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordsetstreama)         | Establece un campo de flujo de registros de un archivo.                         |
 | [**MsiRecordSetString**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordsetstringa)         | Copia una cadena en el campo designado.                      |
@@ -166,7 +166,7 @@ En este tema se enumeran las funciones de acceso a la base de datos del instalad
 
  
 
-## <a name="user-interface-functions"></a>Interfaz de usuario functions
+## <a name="user-interface-functions"></a>Interfaz de usuario Functions
 
 
 

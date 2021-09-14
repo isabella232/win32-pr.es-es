@@ -1,5 +1,5 @@
 ---
-description: Función definida por la aplicación que libera la memoria asignada por la función AuthzComputeGroupsCallback. AuthzFreeGroupsCallback es un marcador de posición para el nombre de la función definida por la aplicación.
+description: Función definida por la aplicación que libera memoria asignada por la función AuthzComputeGroupsCallback. AuthzFreeGroupsCallback es un marcador de posición para el nombre de la función definida por la aplicación.
 ms.assetid: 5563311c-2bd1-4e96-ba0a-5a4225050f77
 title: Función de devolución de llamada AuthzFreeGroupsCallback
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 3cce78e261892fede79fb8fc76bc5b0d009342db3e0bf672be2854cb8492bcec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d8942acbc67f122ea79f0b9e98793628b5f21f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117783769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071199"
 ---
 # <a name="authzfreegroupscallback-callback-function"></a>Función de devolución de llamada AuthzFreeGroupsCallback
 
@@ -49,7 +49,7 @@ Puntero a la memoria asignada por [**AuthzComputeGroupsCallback.**](authzcompute
 
 Esta función de devolución de llamada no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las variables de atributo deben tener el formato de una expresión cuando se usan con operadores lógicos; De lo contrario, se evalúan como desconocidos.
 

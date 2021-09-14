@@ -4,12 +4,12 @@ ms.assetid: 42139d33-2d56-4d29-998f-5512bb795d44
 title: Constantes de derechos de cuenta (Ntsecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4285561761908308f67585544bef6c87d2f0ebbaa25de9989f53fcab051b79b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d5b16b75af89773df969ec78b771986b0a73dfb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785376"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073743"
 ---
 # <a name="account-rights-constants"></a>Constantes de derechos de cuenta
 
@@ -36,9 +36,9 @@ Las siguientes constantes de derecho de cuenta se usan para controlar la capacid
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los SE \_ deny invalidan los derechos de cuenta correspondientes. Un administrador puede asignar un SE deny a una cuenta para invalidar los derechos de inicio de sesión que una cuenta pueda tener como resultado de \_ una pertenencia a un grupo. Por ejemplo, podría asignar el derecho nombre de inicio de sesión de SE NETWORK a Todos, pero asignar el derecho SE DENEGAR NOMBRE DE INICIO DE SESIÓN DE RED a los administradores para evitar la administración remota de \_ \_ \_ \_ \_ \_ \_ equipos.
+Los SE \_ deny invalidan los derechos de cuenta correspondientes. Un administrador puede asignar un SE deny a una cuenta para invalidar los derechos de inicio de sesión que una cuenta podría tener como resultado de una \_ pertenencia a un grupo. Por ejemplo, podría asignar el derecho nombre de inicio de sesión de red de SE a Todos, pero asignar el derecho SE DENEGAR NOMBRE DE INICIO DE SESIÓN DE RED a los administradores para evitar la administración remota de \_ \_ \_ \_ \_ \_ \_ equipos.
 
 Todas las funciones de LSA mencionadas en la introducción anterior admiten derechos de cuenta [y privilegios](privilege-constants.md). Sin embargo, a diferencia de los privilegios, las funciones [**LookupPrivilegeValue**](/windows/desktop/api/Winbase/nf-winbase-lookupprivilegevaluea) y [**LookupPrivilegeName**](/windows/desktop/api/Winbase/nf-winbase-lookupprivilegenamea) no admiten los derechos de cuenta. La [**función GetTokenInformation**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-gettokeninformation) obtendrá información sobre los derechos de cuenta si Se especifica TokenGroups y no TokenPrivileges como valor del *parámetro TokenInformationClass.*
 
@@ -52,7 +52,7 @@ Las constantes de derecho de cuenta anteriores se definen como cadenas en Ntseca
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Ntsecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntsecapi.h</dt> </dl> |
 
 
 

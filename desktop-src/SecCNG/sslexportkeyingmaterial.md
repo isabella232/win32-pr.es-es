@@ -1,5 +1,5 @@
 ---
-description: Exporta el material de clave según el estándar RFC 5705.
+description: Exporta material de clave según el estándar RFC 5705.
 ms.assetid: 19624852-B1A6-4BB4-96AF-0457834DA294
 title: Función SslExportKeyingMaterial (Sslprovider.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 39aaebba64f92794e179af95a5a175e2603fccc40410989cfcd427c6a7a1a88e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 906a7535b297f309c0c8471843ce07f43a110a3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906623"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073618"
 ---
 # <a name="sslexportkeyingmaterial-function"></a>Función SslExportKeyingMaterial
 
@@ -114,7 +114,7 @@ Longitud, en bytes, del *búfer pbOutput.* Debe ser mayor que cero.
 *dwFlags* \[ En\]
 </dt> <dd>
 
-No se usa. Debe establecerse en cero.
+No se utiliza. Debe establecerse en cero.
 
 </dd> </dl>
 
@@ -144,7 +144,7 @@ Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

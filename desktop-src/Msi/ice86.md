@@ -4,12 +4,12 @@ ms.assetid: c23c2920-3b8b-4cd1-a570-bdeabcf11436
 title: ICE86
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c96e572a99fc31fea540fa4fbaad4179d1e8f2ecadebfcd9222527ca6a4afac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25df1e2a9c3ab610e78efd6f797cb916f0563e31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074519"
 ---
 # <a name="ice86"></a>ICE86
 

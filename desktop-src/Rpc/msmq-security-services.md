@@ -4,12 +4,12 @@ description: Los mensajes RPC sincrónicos pueden usar cualquiera de las caracte
 ms.assetid: 0f4d45c4-7457-4449-8736-e141a95f6930
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f142d83c003f1293556786167222a4e9e88d3912786aa328319efa7fb0ea345d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ffd2e12cd9f32a571088de769adb079327caab9b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071412"
 ---
 # <a name="msmq-security-services"></a>Servicios de seguridad de MSMQ
 

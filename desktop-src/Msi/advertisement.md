@@ -4,12 +4,12 @@ ms.assetid: 67170daa-448a-4a20-b38a-2dd36c95440f
 title: Anuncio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d71f9d60eb1d709f0b956719593e2d7158ba8ef2bc17994945302474a02b695a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0bb31f14fb4cd6f589e94939afdd5575df52c43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159167"
 ---
 # <a name="advertisement"></a>Anuncio
 

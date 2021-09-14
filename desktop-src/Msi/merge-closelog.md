@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 39cccfac44878fd22d81b59e91c07998a1eaea1c91289ec803a8110b493dc593
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 93756a2a5431e8c2ec8b2d7ac57840065e1bed90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119926745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071907"
 ---
 # <a name="mergecloselog-method"></a>Método Merge.CloseLog
 
@@ -44,7 +44,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="c"></a>C++
 
-Vea [**CloseLog function (Función CloseLog).**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closelog)
+Consulte [**Función CloseLog.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closelog)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ Vea [**CloseLog function (Función CloseLog).**](/windows/win32/api/mergemod/nf-
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

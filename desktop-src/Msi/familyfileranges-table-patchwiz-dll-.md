@@ -1,19 +1,19 @@
 ---
-description: La tabla FamilyFileRanges contiene información sobre archivos concretos de una imagen actualizada con intervalos que nunca se deben sobrescribir.
+description: La tabla FamilyFileRanges contiene información sobre archivos concretos de una imagen actualizada con intervalos que nunca deben sobrescribirse.
 ms.assetid: 2e77605a-d909-4a17-977c-18281a96c36c
 title: Tabla FamilyFileRanges (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b0559f4cea1061f9cf0c1438140e7abba8b00908233a1a1d608ae5dbd8b79ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2940d45d82efae3e61842ee0f6b4e46e3f77ef3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118636902"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158415"
 ---
 # <a name="familyfileranges-table-patchwizdll"></a>Tabla FamilyFileRanges (Patchwiz.dll)
 
-La tabla FamilyFileRanges contiene información sobre archivos concretos de una imagen actualizada con intervalos que nunca se deben sobrescribir. Esta tabla es opcional en la base de datos de creación de revisiones (archivo .fp) y la usa la función [UiCreatePatchPackageEx.](uicreatepatchpackageex--patchwiz-dll-.md)
+La tabla FamilyFileRanges contiene información sobre archivos concretos de una imagen actualizada con intervalos que nunca deben sobrescribirse. Esta tabla es opcional en la base de datos de creación de revisiones (archivo .csv) y la usa la [función UiCreatePatchPackageEx.](uicreatepatchpackageex--patchwiz-dll-.md)
 
 La tabla FamilyFileRanges tiene las columnas siguientes.
 
@@ -21,10 +21,10 @@ La tabla FamilyFileRanges tiene las columnas siguientes.
 
 | Columna        | Tipo | Clave | Nullable |
 |---------------|------|-----|----------|
-| Familia        | texto | Y   | N        |
-| FTK           | texto | Y   | N        |
-| RetainOffsets | texto |     | N        |
-| RetainLengths | texto |     | N        |
+| Familia        | text | Y   | N        |
+| FTK           | text | Y   | N        |
+| RetainOffsets | text |     | N        |
+| RetainLengths | text |     | N        |
 
 
 
@@ -44,7 +44,7 @@ Clave externa a la columna Familia de [la tabla ImageFamilies (Patchwiz.dll).](i
 <span id="FTK"></span><span id="ftk"></span>FTK
 </dt> <dd>
 
-Clave externa en las [tablas file de](file-table.md) todas las imágenes actualizadas de la familia de imágenes.
+Clave externa en las [tablas File de](file-table.md) todas las imágenes actualizadas de la familia de imágenes.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Los valores pueden ser decimales o hexadecimales. [Patchwiz.dll](patchwiz-dll.md
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los desplazamientos y longitudes especificados en RetainOffsets y RetainLengths no deben especificar intervalos superpuestos.
 

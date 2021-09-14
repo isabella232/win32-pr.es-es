@@ -1,6 +1,6 @@
 ---
 title: ICM_CONFIGURE mensaje (Vfw.h)
-description: El ICM configure notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo de configuración o consulta a un controlador de compresión de vídeo para determinar si tiene un cuadro de diálogo \_ de configuración.
+description: El ICM configurar notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo de configuración o consulta a un controlador de compresión de vídeo para determinar si tiene un cuadro de \_ diálogo de configuración.
 ms.assetid: 9760788e-fa66-44d7-bda6-aa9536143774
 keywords:
 - ICM_CONFIGURE mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 9faae26fcf132abfa424b0db7a88670735d30727
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370436"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074237"
 ---
 # <a name="icm_configure-message"></a>\_ICM MENSAJE DE CONFIGURACIÓN
 
-El **ICM \_ configure** notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo de configuración o consulta a un controlador de compresión de vídeo para determinar si tiene un cuadro de diálogo de configuración. Puede enviar este mensaje explícitamente o mediante la macro [**ICConfigure.**](/windows/desktop/api/Vfw/nf-vfw-icconfigure)
+El **ICM \_ configurar** notifica a un controlador de compresión de vídeo que muestre su cuadro de diálogo de configuración o consulta a un controlador de compresión de vídeo para determinar si tiene un cuadro de diálogo de configuración. Puede enviar este mensaje explícitamente o mediante la macro [**ICConfigure.**](/windows/desktop/api/Vfw/nf-vfw-icconfigure)
 
 
 ```C++
@@ -65,7 +65,7 @@ Este mensaje es diferente del mensaje [**DRV \_ CONFIGURE**](drv-configure.md) q
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 221d54fd0aca5d1698b55af03e12f80b2e7dd2d75733167eab023a7d3cee8eed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f72f9fbbeece6fff2bb3fad77a4d06bb773ffd27
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118144986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158847"
 ---
 # <a name="componentcomponentcode-property"></a>Component.ComponentCode, propiedad
 
@@ -26,7 +26,7 @@ Código de componente del componente en cuestión. Esta propiedad llama a [**la 
 
 **[Windows Instalador 4.5 o anterior:](not-supported-in-windows-installer-4-5.md)** No se admite. Esta propiedad está disponible a partir de Windows Installer 5.0.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ## <a name="property-value"></a>Valor de propiedad
 
@@ -34,7 +34,7 @@ Código de componente del componente en cuestión. Esta propiedad llama a [**la 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 o posterior.<br/>                                         |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |

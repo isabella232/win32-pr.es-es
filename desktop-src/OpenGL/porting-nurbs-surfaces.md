@@ -3,21 +3,21 @@ title: Porte de superficies DE LA BASE DE DATOS
 description: En la tabla siguiente se enumeran las funciones GL de IRIS para dibujar superficies DE LABS y sus funciones OpenGL equivalentes.
 ms.assetid: d34ac6af-55d7-4128-bcd9-3c910607895f
 keywords:
-- Porte de IRIS GL, superficies DE LA BASE DE DATOS
+- Porte de IRIS GL, superficies DE IRISBS
 - porte desde superficies IRIS GL,GLBS
 - porte a OpenGL desde iris gl,superficies DE IRISBS
 - Porte de OpenGL desde superficies IRIS GL,GLBS
 - Superficies DE LA BASE DE DATOS
-- SPLINEBS (B-spline no uniforme)
+- SPLINEBS (B-spline no uniforme lógica)
 - Spline B no uniforme lógica (SPLINE) (SPLINEBS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a57de3a3b413d909ed034e9d355f4099c196a89b1e7ed93a69fe99ea72fca54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7260750db4d221743d3e764d6dd30e2de499383
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118132354"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074005"
 ---
 # <a name="porting-nurbs-surfaces"></a>Porte de superficies DE LA BASE DE DATOS
 

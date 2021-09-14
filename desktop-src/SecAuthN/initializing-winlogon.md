@@ -4,12 +4,12 @@ ms.assetid: 874aa12b-e213-4857-9600-698c28dfda37
 title: Inicialización de Winlogon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fff33740b77b23577cd7749b8cc745cd06a55e18675e35b817e405a71679b482
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 768983d308228e73316c797fb67b035d491a1582
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119482397"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071286"
 ---
 # <a name="initializing-winlogon"></a>Inicialización de Winlogon
 
@@ -24,14 +24,14 @@ WinSta0 es el nombre del objeto de estación de ventana que representa la pantal
 | Escritorio              | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Escritorio winlogon     | Este es el escritorio que Winlogon y [*GINA*](../secgloss/g-gly.md) usan para la identificación y autenticación interactivas, y otros cuadros de diálogo seguros. Winlogon cambia automáticamente a este escritorio cuando recibe la notificación de eventos de SAS.                                                                                                                                                                                                                                                                                                                                                                          |
-| Escritorio de aplicaciones  | Cada vez que un usuario inicia sesión correctamente, se crea un escritorio de aplicación para esa [*sesión de inicio de sesión.*](../secgloss/l-gly.md) El escritorio de la aplicación también se conoce como el escritorio predeterminado o de usuario. Este escritorio es donde tiene lugar toda la actividad del usuario. El escritorio de la aplicación está protegido; solo el sistema y la sesión de inicio de sesión interactiva tienen acceso a él. Tenga en cuenta que solo una instancia determinada del usuario que ha iniciado sesión tiene acceso al escritorio. Si el usuario interactivo activa un proceso mediante el controlador de servicio, esa aplicación de servicio no tendrá acceso al escritorio de la aplicación. |
+| Escritorio de aplicaciones  | Cada vez que un usuario inicia sesión correctamente, se crea un escritorio de aplicación para esa sesión [*de inicio de sesión.*](../secgloss/l-gly.md) El escritorio de la aplicación también se conoce como el escritorio predeterminado o de usuario. Este escritorio es donde tiene lugar toda la actividad del usuario. El escritorio de la aplicación está protegido; solo el sistema y la sesión de inicio de sesión interactiva tienen acceso a él. Tenga en cuenta que solo una instancia determinada del usuario que inició sesión tiene acceso al escritorio. Si el usuario interactivo activa un proceso mediante el controlador de servicio, esa aplicación de servicio no tendrá acceso al escritorio de la aplicación. |
 | Escritorio de protector de pantalla | Este es el escritorio actual cuando se ejecuta un protector de pantalla. Si un usuario ha iniciado sesión, tanto el sistema como la sesión de inicio de sesión interactiva tienen acceso al escritorio. De lo contrario, solo el sistema tiene acceso al escritorio.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 
 
  
 
-Como propietario de estos escritorios, Winlogon puede cambiar el escritorio actual o visible a cualquiera de los tres escritorios y permitir el acceso de GINA a esta funcionalidad. En general, los desarrolladores de GINA no cambiarán el escritorio actual porque Winlogon establece el escritorio correctamente antes de comunicarse con GINA. La descripción de cada función GINA indica qué escritorio está actual para esa llamada.
+Como propietario de estos escritorios, Winlogon puede cambiar el escritorio actual o visible a cualquiera de los tres escritorios y permitir que el GINA acceda a esta funcionalidad. En general, los desarrolladores de GINA no cambiarán el escritorio actual porque Winlogon establece el escritorio correctamente antes de comunicarse con la GINA. La descripción de cada función GINA indica qué escritorio está actual para esa llamada.
 
 
 

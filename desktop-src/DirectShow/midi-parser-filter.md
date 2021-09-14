@@ -4,16 +4,16 @@ ms.assetid: a56576ad-f949-48fa-85e0-3e9898d2970d
 title: Filtro del analizador DE MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c5907c36e668a39494b46ec6bbc67e4d8cb4870357df9c1f0303c882bc86f0d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 60ce659559852497b8ec55709e77f9510a1deaf2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119256515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072153"
 ---
 # <a name="midi-parser-filter"></a>Filtro del analizador DE MIDI
 
-El filtro analizador de MIDI lee los datos DE MIDI que se encuentran en . MID y . Archivos MID. El filtro acepta una secuencia de los filtros [Async File Source](file-source--async--filter.md) (Origen de archivo asincrónico) o URL File Source (Origen de archivo [URL)](file-source--url--filter.md) y genera ejemplos de MIDI en [**el representador de MIDI**](midi-renderer-filter.md) para su reproducción.
+El filtro Analizador DE MIDI lee los datos DE MIDI que se encuentran en . MID y . Archivos MID. El filtro acepta una secuencia de los filtros [Async File Source](file-source--async--filter.md) (Origen de archivo asincrónico) o URL File Source (Origen de archivo [URL)](file-source--url--filter.md) y genera ejemplos de MIDI en [**el representador de MIDI**](midi-renderer-filter.md) para su reproducción.
 
 
 

@@ -4,12 +4,12 @@ description: Los caracteres de formato denotan objetos de interés para el motor
 ms.assetid: 71117082-07b0-4ba4-a920-09be8d8427ab
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42f4aa17494cbef0f3bcc232f89104e3502f94de4a3285a1da6cc0229af0fe26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f618d857e487f86e2d28ed18300d82e94b76e3a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119011123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071395"
 ---
 # <a name="type-format-strings"></a>Cadenas de formato de tipo
 
@@ -41,7 +41,7 @@ Los siguientes son caracteres de formato con significados especiales.
 
  
 
-Las cadenas de formato de tipo RPC RPC se describen con más detalle en los temas siguientes:
+Las cadenas de formato de tipo RPC RPC RPC se describen con más detalle en los temas siguientes:
 
 -   [Tipos simples](simple-types-tfs.md)
 -   [Punteros](pointers-tfs.md)

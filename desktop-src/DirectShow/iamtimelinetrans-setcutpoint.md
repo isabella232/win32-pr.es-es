@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 2c411925ebe10ad35641e38ae2332605d7691ae24f0cc96ff716bd7d00e6603f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c1dad934d373a52b7e6c076c8c20dc8e1c6809ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072201"
 ---
 # <a name="iamtimelinetranssetcutpoint-method"></a>IamTimelineTrans::SetCutPoint (método)
 
@@ -48,7 +48,7 @@ HRESULT SetCutPoint(
 *TLTime* 
 </dt> <dd>
 
-Punto de corte relativo al inicio de la transición, en unidades de 100 nanosegundos. Si el valor queda fuera de los límites de la transición, se trunca al tiempo válido más cercano.
+Punto de corte con respecto al inicio de la transición, en unidades de 100 nanosegundos. Si el valor está fuera de los límites de la transición, se trunca al tiempo válido más cercano.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Punto de corte relativo al inicio de la transición, en unidades de 100 nanosegu
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, el punto de corte es el centro de la transición. Por ejemplo, en una transición que abarca un segundo, el punto de corte predeterminado es 0,5 segundos en la transición.
 
@@ -66,7 +66,7 @@ De forma predeterminada, el punto de corte es el centro de la transición. Por e
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -81,14 +81,14 @@ De forma predeterminada, el punto de corte es el centro de la transición. Por e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IamTimelineTrans (interfaz)**](iamtimelinetrans.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

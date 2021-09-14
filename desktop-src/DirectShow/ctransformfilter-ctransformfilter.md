@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 44061a753ef61c784298fe23e70f21fe410a9f0ad5f360acc10cb1fd16dd5f80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fce67bbe22361bdbae0cd3e51768e0cf0743d97d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119907695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072232"
 ---
 # <a name="ctransformfilterctransformfilter-constructor"></a>Constructor CTransformFilter.CTransformFilter
 
@@ -65,7 +65,7 @@ Identificador de clase del filtro.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El constructor no crea los pines del filtro. Esto sucede durante la primera llamada al [**método GetPin.**](ctransformfilter-getpin.md) El constructor inicializa las variables [**miembro m \_ pInput**](ctransformfilter-m-pinput.md) y [**m \_ pOutput**](ctransformfilter-m-poutput.md) en **NULL.**
 
@@ -80,7 +80,7 @@ El constructor no crea los pines del filtro. Esto sucede durante la primera llam
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,23 +1,23 @@
 ---
-title: Operaciones de píxeles de porte
-description: Operaciones de píxeles de porte
+title: Porting Pixel Operations
+description: Porting Pixel Operations
 ms.assetid: 57917f33-daf5-4db6-9583-ab596deab91a
 keywords:
 - Porte de IRIS GL, píxeles
-- porte desde IRIS GL, píxeles
+- porting from IRIS GL,pixels
 - porte a OpenGL desde IRIS GL, píxeles
 - Porte de OpenGL desde IRIS GL, píxeles
-- pixels,porting from IRIS GL
+- pixels,porting de IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc67a4c9224dbe6544c60cb205f8a192517af7f3ab16ba64134b4d55d1c8676f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1fd484efa031bd12af59cb729c8fa20b68fe88e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118132384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074000"
 ---
-# <a name="porting-pixel-operations"></a>Operaciones de píxeles de porte
+# <a name="porting-pixel-operations"></a>Porting Pixel Operations
 
 Al portear código que implica operaciones de píxeles, tenga en cuenta los siguientes puntos:
 
@@ -25,19 +25,19 @@ Al portear código que implica operaciones de píxeles, tenga en cuenta los sigu
 -   En general, IRIS GL usa el formato ABGR para píxeles, mientras que OpenGL usa RGBA. Puede cambiar el formato con [**glPixelStore.**](glpixelstore-functions.md)
 -   Al **portear funciones lrectwrite,** tenga cuidado de tener en cuenta dónde está escribiendo **lrectwrite** (por ejemplo, podría estar escribiendo en el búfer de profundidad).
 
-OpenGL proporciona cierta flexibilidad adicional en las operaciones de píxeles. En la tabla siguiente se enumeran las funciones GL de IRIS para las operaciones de píxeles y sus funciones openGL equivalentes.
+OpenGL proporciona cierta flexibilidad adicional en las operaciones de píxeles. En la tabla siguiente se enumeran las funciones GL de IRIS para las operaciones de píxeles y sus funciones OpenGL equivalentes.
 
 
 
-| Función GL de IRIS                                   | Función OpenGL                                                                           | Significado                                                                 |
+| Función IRIS GL                                   | Función OpenGL                                                                           | Significado                                                                 |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | **lrectread,** **rectread,****readRGB**<br/> | [**glReadPixels**](glreadpixels.md)                                                      | Lee un bloque de píxeles del búfer de fotogramas.                           |
 | **lrectwrite**, **rectwrite**                      | [**glDrawPixels**](gldrawpixels.md)                                                      | Escribe un bloque de píxeles en el búfer de fotogramas.                            |
 | **rectcopy**                                       | [**glCopyPixels**](glcopypixels.md)                                                      | Copia píxeles en el búfer de fotogramas.                                       |
-| **rectzoom**                                       | [**glPixelZoom**](glpixelzoom.md)                                                        | Especifica factores de zoom de píxeles **para glDrawPixels** y **glCopyPixels.** |
+| **rectzoom**                                       | [**glPixelZoom**](glpixelzoom.md)                                                        | Especifica los factores de zoom de píxeles **para glDrawPixels** **y glCopyPixels.** |
 | **cmov**                                           | [glRasterPos](glrasterpos-functions.md)                                                  | Especifica la posición de trama para las operaciones de píxeles.                         |
-| **readsource**                                     | [**glReadBuffer**](glreadbuffer.md)                                                      | Selecciona un origen de búfer de color para píxeles.                               |
-| **mode**                                        | [**glPixelStore**](glpixelstore-functions.md),[**glPixelTransfer**](glpixeltransfer.md) | Establece los modos de almacenamiento de píxeles. Establecer modos de transferencia de píxeles.                      |
+| **origen de lectura**                                     | [**glReadBuffer**](glreadbuffer.md)                                                      | Selecciona un origen de búfer de color para píxeles.                               |
+| **modemode**                                        | [**glPixelStore**](glpixelstore-functions.md),[**glPixelTransfer**](glpixeltransfer.md) | Establece los modos de almacenamiento de píxeles. Establecer modos de transferencia de píxeles.                      |
 | **logicop**                                        | [**glLogicOp**](gllogicop.md)                                                            | Especifica una operación lógica para escrituras de píxeles.                         |
 |                                                    | [**glEnable**](glenable.md) ( GL \_ LOGIC \_ OP )                                            | Activa las operaciones lógicas de píxeles.                                        |
 
@@ -47,7 +47,7 @@ OpenGL proporciona cierta flexibilidad adicional en las operaciones de píxeles.
 
 Para obtener una lista completa de las posibles operaciones lógicas, [**vea glLogicOp**](gllogicop.md).
 
-En este ejemplo de código DE IRIS GL se muestra una escritura típica de píxeles:
+En este ejemplo de código de IRIS GL se muestra una escritura típica de píxeles:
 
 ``` syntax
 unsigned long *packedRaster; 

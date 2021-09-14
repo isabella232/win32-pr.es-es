@@ -4,12 +4,12 @@ ms.assetid: 68bf064c-dd85-4796-8e08-6af307f94ad8
 title: Tabla BindImage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 729ae4f36f3b258845bcba13748495dc9dfb53c86268bd61e98475d1c7c0c282
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f47b97efc8886d7748d0426a49ed76567810939c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119500775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158973"
 ---
 # <a name="bindimage-table"></a>Tabla BindImage
 
@@ -22,7 +22,7 @@ La tabla BindImage tiene las columnas siguientes.
 | Columna | Tipo                         | Clave | Nullable |
 |--------|------------------------------|-----|----------|
 | Archivo\_ | [Identificador](identifier.md) | Y   | N        |
-| Ruta de acceso   | [Paths](paths.md)           | N   | Y        |
+| Path   | [Paths](paths.md)           | N   | Y        |
 
 
 
@@ -46,7 +46,7 @@ Lista de rutas de acceso, separadas por punto y coma, que representan las rutas 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El instalador calcula la dirección virtual de cada función que se importa desde todos los archivos DLL y, a continuación, la dirección virtual calculada se guarda en la tabla de direcciones de importación (IAT) de la imagen de importación.
 

@@ -4,16 +4,16 @@ description: En el ejemplo de código siguiente se muestra una función que esta
 ms.assetid: fa863999-72f1-4280-b278-d9336f62108d
 keywords:
 - píxeles OpenGL , Windows ejemplo
-- porting to OpenGL,pixels
+- porte a OpenGL, píxeles
 - Porte de OpenGL, píxeles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fdd9569b6bef7dd273f6c3ff0370e2e4e44bbbbb6ec41362d1fb7dd32bd7745
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4328976a3622d19c3482aa2845c2094975dd7f74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118932785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073963"
 ---
 # <a name="windows-pixel-format-code-sample"></a>Windows Ejemplo de código de formato de píxel
 

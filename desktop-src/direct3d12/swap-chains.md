@@ -5,12 +5,12 @@ ms.assetid: AABF5FDE-DB49-4B29-BC0E-032E0C7DF9EB
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e98fc2baf63d7d80fefc190f2d01da33ea24d420e647b4f0c57df7ec4c501f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ebbc7ec1b62ba620b42bc85c1c1f491ff7ba952d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119850661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072867"
 ---
 # <a name="swap-chains"></a>Cadenas de intercambio
 
@@ -18,7 +18,7 @@ Las cadenas de intercambio controlan la rotación del búfer de reserva, formand
 
 ## <a name="overview"></a>Información general
 
-El modelo de programación para cadenas de intercambio en Direct3D 12 no es idéntico al de versiones anteriores de D3D. La comodidad de programación, por ejemplo, de admitir la rotación automática de recursos que estaba presente en D3D10 y D3D11 no se admite ahora. La rotación automática de recursos permite a las aplicaciones representar el mismo objeto de API mientras la superficie real que se representa cambia cada fotograma. El comportamiento de las cadenas de intercambio se cambia con Direct3D 12 para permitir que otras características de Direct3D 12 tengan una sobrecarga de CPU baja. No se admiten la clave de color automática ni la multimuestreo, aunque todavía lo son el ajuste y la rotación.
+El modelo de programación para cadenas de intercambio en Direct3D 12 no es idéntico al de versiones anteriores de D3D. La comodidad de programación, por ejemplo, de admitir la rotación automática de recursos que estaba presente en D3D10 y D3D11 no se admite ahora. La rotación automática de recursos permite a las aplicaciones representar el mismo objeto de API mientras la superficie real que se representa cambia cada fotograma. El comportamiento de las cadenas de intercambio se cambia con Direct3D 12 para permitir que otras características de Direct3D 12 tengan una sobrecarga de CPU baja. La clave de color automática y la multimuestreo no se admiten, aunque todavía se admiten el ajuste y la rotación.
 
 ### <a name="buffer-lifetime"></a>Duración del búfer
 
@@ -43,11 +43,11 @@ Direct3D 12 mantiene la restricción de que las aplicaciones deben llamar a [**R
 
 Las [**transiciones IDXGISwapChain::SetFullscreenState**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-setfullscreenstate) no cambian el conjunto de búferes visibles para la aplicación en la cadena de intercambio. Solo las [**llamadas ResizeBuffers**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-resizebuffers) y [**ResizeTarget**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-resizetarget) crean o destruyen búferes visibles para la aplicación. Sin embargo, en [**IDXGISwapChain::SetFullscreenState**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-setfullscreenstate) de Direct3D 12 no entra en modo exclusivo de pantalla completa y simplemente cambia las resoluciones y las tasas de actualización para permitir optimizaciones a pantalla completa. Estos cambios se pueden realizar mediante una aplicación sin el uso de este método
 
-Cuando se llama a [**o IDXGISwapChain::P resent**](/windows/win32/api/dxgi/nf-dxgi-idxgiswapchain-present) o [**IDXGISwapChain1::P resent,**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgiswapchain1-present1) el búfer de reserva que se va a presentar debe estar en el estado RESOURCE STATE PRESENT de [**\_ \_ \_ D3D12.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states) Si no es así, se producirá un error en la llamada no válida a **DXGI \_ \_ \_** ERROR.
+Cuando se llama a [**o IDXGISwapChain::P resent**](/windows/win32/api/dxgi/nf-dxgi-idxgiswapchain-present) o [**IDXGISwapChain1::P resent,**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgiswapchain1-present1) el búfer de reserva que se va a presentar debe estar en el estado [**D3D12 \_ RESOURCE STATE \_ \_ PRESENT.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states) Si no es así, se producirá un error en la llamada no válida a **DXGI \_ \_ \_** ERROR.
 
 Las cadenas de intercambio de pantalla completa siguen teniendo la restricción de que se debe llamar a [**SetFullscreenState**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-setfullscreenstate)(FALSE, NULL) antes de la versión final de la cadena de intercambio. **SetFullscreenState**(FALSE) se realiza correctamente en cadenas de intercambio que se ejecutan en dispositivos Direct3D 12.
 
-Las operaciones presentes se producen en la cola 3D proporcionada en la creación de la cadena de intercambio y las aplicaciones pueden presentar simultáneamente varias cadenas de intercambio y registrar y ejecutar listas de comandos.
+Las operaciones presentes se producen en la cola 3D proporcionada en la creación de la cadena de intercambio, y las aplicaciones pueden presentar simultáneamente varias cadenas de intercambio y registrar y ejecutar listas de comandos.
 
 Cuando la parte final del trabajo de gráficos (por ejemplo, el procesamiento posterior de fotogramas) se realiza en una cola de proceso o no implica la cola de gráficos del dispositivo, la creación de una segunda cola 3D en la que se va a presentar puede ser beneficiosa y evitar la latencia de presentación que retrasa el inicio del fotograma siguiente. 
 
@@ -85,5 +85,5 @@ Proporcione una lista de comandos abierta al método presente Windows 7, que se 
 ## <a name="related-topics"></a>Temas relacionados
 
 * [D3D12_HEAP_FLAGS](/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_flags)
-* [Tutoriales de vídeo de aprendizaje avanzado de DirectX: Velocidad de fotogramas sin desmarcar](https://www.youtube.com/watch?v=wn02zCXa9IU)
+* [Tutoriales de vídeo de aprendizaje avanzado de DirectX: Velocidad de fotogramas sinthrottled](https://www.youtube.com/watch?v=wn02zCXa9IU)
 * [Representación](rendering.md)

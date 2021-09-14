@@ -4,12 +4,12 @@ ms.assetid: 3d0791b1-8706-4a80-9938-07481594e408
 title: Agregar o quitar claves del Registro después de instalar o quitar componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da215cf80f5f71f5b488f06186d5a8e2835b05fed75faac72ef53358c38c2a77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6b26860fad31d530ae588170388d8b7f829187e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119066475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159200"
 ---
 # <a name="adding-or-removing-registry-keys-on-the-installation-or-removal-of-components"></a>Agregar o quitar claves del Registro en la instalación o eliminación de componentes
 

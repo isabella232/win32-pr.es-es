@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 15f0c5bac66d0c1b43bf3938e4ecb1f2fffd8dd235532b5dddc27eb5923ef5f8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5472f9839928fd3b4c1830bc309c7f610d487864
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120027655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072783"
 ---
 # <a name="d3dxfresnelterm-function-d3dx9mathh"></a>Función D3DXFresnelTerm (D3dx9math.h)
 
@@ -55,7 +55,7 @@ El valor debe estar entre 0 y 1.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Índice de reanuración de un material. El valor debe ser mayor que 1.
+Índice de retracción de un material. El valor debe ser mayor que 1.
 
 </dd> </dl>
 
@@ -65,11 +65,11 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Esta función devuelve el término Fresnel para la luz nopolarizada. CosTheta es el coseno del ángulo del incidente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para buscar el término Fresnel (F):
 
-Si A es el ángulo de la incidencia y B es el ángulo de reanguía,
+Si A es ángulo de incidencia y B es el ángulo de retracción,
 
 
 ```
@@ -83,7 +83,7 @@ Let g   = (r2 + c2 - 1)1/2
 
 
 
-A continuación, al expandir con las identidades trig y simplificar, obtiene lo siguiente:
+A continuación, al expandir mediante las identidades trig y simplificar, obtiene lo siguiente:
 
 
 ```
@@ -103,7 +103,7 @@ F = 0.5 * (g + c)2 / (g - c)2 * ([c(g + c) - 1]2 / [c(g - c) + 1]2 + 1)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: fff01044-5749-42a5-b026-5b22671870bd
 title: Tipo de enumeración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56c5df6b0f76cc789c148e841827a75e7184aca2892d7d6e2233843e26aac80f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bc582a7f96d8fc91aad66387f579f05f9255346f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119869325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158479"
 ---
 # <a name="enum-type"></a>Tipo de enumeración
 

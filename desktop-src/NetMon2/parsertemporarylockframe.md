@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 47a8c02a29007084161897e34bd3ba6fbe3b5f53460aaced2acaf8e4924d67f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 48fa646e709982d88093e0cbeb5e60375643351d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118364391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074103"
 ---
 # <a name="parsertemporarylockframe-function"></a>Función ParserTemporaryLockFrame
 
@@ -52,7 +52,7 @@ Si la función se realiza correctamente, el valor devuelto es un puntero al prim
 
 Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los analizadores no deben llamar a **la función LockFrame.** Si un analizador toma un bloqueo y, a continuación, genera un error o devuelve sin desbloquear el marco, el analizador deja el sistema en un estado en el que no puede cambiar los protocolos ni cortar o copiar fotogramas. Los analizadores deben usar la función **ParserTemporaryLockFrame,** que concede un bloqueo solo durante el contexto de la entrada de función en el analizador. Al salir del analizador, se libera el bloqueo de ese marco. Como resultado, el puntero solo será válido después de que el analizador vuelva de la llamada a la **función AttachProperties** **o RecognizeFrame.**
 
@@ -60,7 +60,7 @@ Los analizadores no deben llamar a **la función LockFrame.** Si un analizador t
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

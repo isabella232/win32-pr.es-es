@@ -4,12 +4,12 @@ ms.assetid: cbe7acd6-b916-45f3-b694-d2345c5a892a
 title: Tabla de controles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e1832a2cb600e8d7a27b43bc28c94836396d74a50a90b44d0e5013bde973c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8ced41fcaf020a043962b16cf12d9c339901b415
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118638537"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158775"
 ---
 # <a name="control-table"></a>Tabla de controles
 
@@ -29,7 +29,7 @@ La tabla Control tiene las columnas siguientes.
 | Ancho         | [Entero](integer.md)             | N   | N        |
 | Alto        | [Entero](integer.md)             | N   | N        |
 | Atributos    | [DoubleInteger](doubleinteger.md) | N   | Y        |
-| Propiedad      | [Identificador](identifier.md)       | N   | Y        |
+| Propiedad.      | [Identificador](identifier.md)       | N   | Y        |
 | Texto          | [Formato](formatted.md)         | N   | Y        |
 | Control \_ Siguiente | [Identificador](identifier.md)       | N   | Y        |
 | Ayuda          | [Texto](text.md)                   | N   | Y        |
@@ -134,7 +134,7 @@ Cadenas de texto localizables opcionales que se usan con el botón Ayuda. La cad
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores enteros de x, y, width y height se encuentran en las unidades [del instalador,](installer-units.md)no en las unidades de diálogo. Una unidad del instalador es igual a una duodécima parte del alto del tamaño de fuente de MS Sans Serif de 10 puntos. Las coordenadas de los controles son relativas a la ciudad.
 

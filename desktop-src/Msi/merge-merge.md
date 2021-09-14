@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 43644f8ef19b81331f9f2d88d4dac03d654379d51174a50e994d3642cb86eabc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f33a0ba8218ae38d8fb31cefb6910f5b2c16484d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117804735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074386"
 ---
 # <a name="mergemerge-method"></a>Método Merge.Merge
 
@@ -61,15 +61,15 @@ Clave de una entrada en la tabla [Directory de](directory-table.md) la base de d
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una vez completada la combinación, los componentes del módulo se adjuntan a la característica identificada por *la característica*. Esta característica no se crea y debe ser una característica existente. Tenga en cuenta que el **método Merge** obtiene todas las referencias de características del módulo y sustituye la referencia de características por todas las apariciones del GUID nulo en la base de datos del módulo. Para obtener más información, vea [Hacer referencia a características en módulos de mezcla.](referencing-features-in-merge-modules.md)
+Una vez completada la combinación, los componentes del módulo se adjuntan a la característica identificada por *la característica*. Esta característica no se crea y debe ser una característica existente. Tenga en cuenta que **el método Merge** obtiene todas las referencias de características del módulo y sustituye la referencia de características por todas las apariciones del GUID nulo en la base de datos del módulo. Para obtener más información, vea [Hacer referencia a características en módulos de mezcla.](referencing-features-in-merge-modules.md)
 
-El módulo se puede adjuntar a características adicionales mediante [**el Conectar**](merge-connect.md) método . Tenga en cuenta que al **llamar al Conectar** de características solo se crean asociaciones de componentes de características. No modifica las filas que ya se han combinado en la base de datos.
+El módulo se puede adjuntar a características adicionales mediante [**Conectar**](merge-connect.md) método . Tenga en cuenta que al **llamar Conectar** método solo se crean asociaciones de componentes de características. No modifica las filas que ya se han combinado en la base de datos.
 
 Los cambios realizados en la base de datos se guardan si y solo si se llama al método [**CloseDatabase**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closedatabase) con *bCommit* establecido en **TRUE.**
 
-Si se produce algún conflicto de combinación, incluidas las exclusiones, se colocan en el enumerador de errores para su recuperación posterior, pero no hace que se produzca un error en la combinación. Los errores se pueden recuperar a través de [**la propiedad Errors.**](error-object.md) Los errores y los mensajes informativos se publican en el archivo de registro actual.
+Si se produce algún conflicto de combinación, incluidas las exclusiones, se colocan en el enumerador de errores para su recuperación posterior, pero no hace que se produzca un error en la combinación. Los errores se pueden recuperar a través de [**la propiedad**](error-object.md) Errors. Los errores y los mensajes informativos se publican en el archivo de registro actual.
 
 ### <a name="c"></a>C++
 
@@ -79,10 +79,10 @@ Vea [**Función Merge.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-merg
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

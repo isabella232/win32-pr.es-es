@@ -3,7 +3,7 @@ title: 'tex2D (referencia HLSL): seleccione el nivel de mip'
 description: Muestrea una textura 2D mediante un degradado para seleccionar el nivel de mip. | tex2D (referencia hlsl)
 ms.assetid: 0e8c32ed-d174-4045-9cbf-6c04586ea5bb
 keywords:
-- tex2D HLSL
+- hlsl de texas2D
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 43e6d60505964beb47eb14bb797a60a3c78089371c9e1fd67463586ba1e5db0b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a642a92756f3f0774e5719aa1fcf9ec302eecb5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118513158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072736"
 ---
 # <a name="tex2d-hlsl-reference---select-the-mip-level"></a>tex2D (referencia HLSL): seleccione el nivel de mip
 
@@ -39,8 +39,8 @@ Muestrea una textura 2D mediante un degradado para seleccionar el nivel de mip.
 
 | Elemento                                                         | Descripción                                                                  |
 |--------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="s"></span><span id="S"></span>*s*<br/>       | \[en \] el estado del muestreador.<br/>                                         |
-| <span id="t"></span><span id="T"></span>*T*<br/>       | \[en \] Coordenadas de textura.<br/>                                   |
+| <span id="s"></span><span id="S"></span>*s*<br/>       | \[en \] el estado sampler.<br/>                                         |
+| <span id="t"></span><span id="T"></span>*T*<br/>       | \[en \] Las coordenadas de textura.<br/>                                   |
 | <span id="ddx"></span><span id="DDX"></span>*Ddx*<br/> | \[en \] Velocidad de cambio de la geometría de la superficie en la dirección x.<br/> |
 | <span id="ddy"></span><span id="DDY"></span>*ddy*<br/> | \[en \] Velocidad de cambio de la geometría de la superficie en la dirección y.<br/> |
 
@@ -58,10 +58,10 @@ Valor de los datos de textura.
 
 | Nombre | Entrada o salida | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size |
 |------|--------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
-| s    | in     | [**object**](dx-graphics-hlsl-intrinsic-functions.md) | [sampler2D](dx-graphics-hlsl-sampler.md)                      | 1    |
-| t    | in     | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | 2    |
-| Ddx  | in     | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | 2    |
-| ddy  | in     | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | 2    |
+| s    | in     | [**Objeto**](dx-graphics-hlsl-intrinsic-functions.md) | [sampler2D](dx-graphics-hlsl-sampler.md)                      | 1    |
+| t    | in     | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 2    |
+| Ddx  | in     | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 2    |
+| ddy  | in     | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 2    |
 | Ret  | out    | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
 
 
@@ -76,7 +76,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible                |
 |-----------------------------------------------------------|--------------------------|
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí (solo sombreador de píxeles)  |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí (solo sombreador de píxeles)  |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | sí (solo sombreador de píxeles) |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | sí (solo sombreador de píxeles) |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No                       |
@@ -86,13 +86,13 @@ Esta función se admite en los siguientes modelos de sombreador.
  
 
 1.  Se realiza una reordenación significativa del código para mover los cálculos de degradado fuera del control de flujo.
-2.  Si el límite D3DPSHADERCAPS2 0 se establece con \_ D3DD3DPSHADERCAPS2 \_ 0 GRADIENTINSTRUCTIONS, el compilador asigna esta función a \_ texldd.
+2.  Si el límite D3DPSHADERCAPS2 0 se establece con \_ D3DD3DPSHADERCAPS2 \_ 0 GRADIENTINSTRUCTIONS, el compilador asigna esta función \_ aldd.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando el control de flujo está presente en un sombreador, el resultado de un cálculo de degradado solicitado dentro de una ruta de acceso de rama determinada es ambiguo cuando los píxeles adyacentes pueden bajar rutas de control de flujo independientes. Por lo tanto, se considera que no es posible usar cualquier operación de sombreador de píxeles que solicite que se produzca un cálculo de degradado en una ubicación que se encuentra dentro de una construcción de control de flujo que podría variar en píxeles para una primitiva determinada que se está rasterizando. Si cualquiera de los lados de una **instrucción if** con el atributo branch usa una función de degradado, se puede generar un error del compilador. Vea [la instrucción if (DirectX HLSL).](dx-graphics-hlsl-if.md)
+Cuando el control de flujo está presente en un sombreador, el resultado de un cálculo de degradado solicitado dentro de una ruta de acceso de rama determinada es ambiguo cuando los píxeles adyacentes pueden bajar por rutas de control de flujo independientes. Por lo tanto, se considera no seguro usar cualquier operación de sombreador de píxeles que solicite que se produzca un cálculo de degradado en una ubicación que se encuentra dentro de una construcción de control de flujo que podría variar en píxeles para una primitiva determinada que se está rasterizar. Si cualquiera de los lados de una **instrucción if** con el atributo de rama usa una función de degradado, se puede generar un error del compilador. Vea [la instrucción if (DirectX HLSL).](dx-graphics-hlsl-if.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

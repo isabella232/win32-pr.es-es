@@ -4,12 +4,12 @@ ms.assetid: c1576aff-ff05-49be-8679-a8bfd01977f5
 title: ICE12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef427ca1567680aa9a9f2a598f5a94cb8dee545487afcf3eb1fbb8d1f350fd35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d02756bd357c6e85f60b0c41b72a4a66965fedb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119262265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074666"
 ---
 # <a name="ice12"></a>ICE12
 
@@ -37,7 +37,7 @@ ICE12 publicaría tres errores para el ejemplo mostrado.
 
 
 
-| Acción | Tipo | Source        |
+| Acción | Tipo | Origen        |
 |--------|------|---------------|
 | CA1    | 35   | MyFolder      |
 | CA2    | 35   | WindowsFolder |

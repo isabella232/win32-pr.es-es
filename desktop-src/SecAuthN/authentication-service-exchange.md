@@ -4,12 +4,12 @@ ms.assetid: fcb3b601-9953-474c-9a08-1fa25706f3d7
 title: Intercambio del servicio de autenticación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8480370dd9fe5d7c5fc10e7979de9d4e7f67f99db3e517e1ec6520a3274ef23c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c14121ed33ae0ac169c590b03dfb0b395306d11f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120073295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071314"
 ---
 # <a name="authentication-service-exchange"></a>Intercambio del servicio de autenticación
 

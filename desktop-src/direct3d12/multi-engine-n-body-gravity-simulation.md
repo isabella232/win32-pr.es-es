@@ -5,27 +5,27 @@ ms.assetid: B20C5575-0616-43F7-9AC9-5F802E5597B5
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da14e34bfc881e000eb4f4557a0dddef3cee3d0ab55343a9e5597a483af39adc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e60782519de6f655882717c4ea657668129a6ce3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119632054"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072939"
 ---
 # <a name="multi-engine-n-body-gravity-simulation"></a>Simulación de la gravedad de n-cuerpos de varios motores
 
-El **ejemplo D3D12nBodyGravity** muestra cómo realizar el trabajo de proceso de forma asincrónica. El ejemplo pone en marcha varios subprocesos cada uno con una cola de comandos de proceso y programa el trabajo de proceso en la GPU que realiza una simulación de gravedad de n cuerpos. Cada subproceso funciona en dos búferes llenos de datos de posición y velocidad. Con cada iteración, el sombreador de proceso lee los datos de posición y velocidad actuales de un búfer y escribe la siguiente iteración en el otro búfer. Cuando se completa la iteración, el sombreador de proceso intercambia qué búfer es el SRV para leer los datos de posición/velocidad y cuál es el UAV para escribir actualizaciones de posición/velocidad cambiando el estado de los recursos en cada búfer.
+El **ejemplo D3D12nBodyGravity** muestra cómo realizar el trabajo de proceso de forma asincrónica. El ejemplo pone en marcha varios subprocesos cada uno con una cola de comandos de proceso y programa el trabajo de proceso en la GPU que realiza una simulación de gravedad de n cuerpos. Cada subproceso funciona en dos búferes llenos de datos de posición y velocidad. Con cada iteración, el sombreador de proceso lee los datos de posición y velocidad actuales de un búfer y escribe la siguiente iteración en el otro búfer. Cuando se completa la iteración, el sombreador de proceso intercambia qué búfer es el SRV para leer los datos de posición y velocidad y cuál es el UAV para escribir actualizaciones de posición y velocidad cambiando el estado de los recursos en cada búfer.
 
 -   [Creación de las firmas raíz](#create-the-root-signatures)
 -   [Creación de los búferes SRV y UAV](#create-the-srv-and-uav-buffers)
--   [Creación del CBV y los búferes de vértices](#create-the-cbv-and-vertex-buffers)
+-   [Creación de los búferes cbv y de vértice](#create-the-cbv-and-vertex-buffers)
 -   [Sincronizar los subprocesos de representación y proceso](#synchronize-the-rendering-and-compute-threads)
 -   [Ejecución del ejemplo](#run-the-sample)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="create-the-root-signatures"></a>Creación de las firmas raíz
 
-Comenzamos creando un gráfico y una firma raíz de proceso, en el **método LoadAssets.** Ambas firmas raíz tienen una vista de búfer constante raíz (CBV) y una tabla descriptor de vista de recursos de sombreador (SRV). La firma raíz de proceso también tiene una tabla de descriptores de vista de acceso no ordenado (UAV).
+Para empezar, se crean gráficos y una firma raíz de proceso, en el **método LoadAssets.** Ambas firmas raíz tienen una vista de búfer constante raíz (CBV) y una tabla de descriptores de vista de recursos de sombreador (SRV). La firma raíz de proceso también tiene una tabla de descriptores de vista de acceso no ordenado (UAV).
 
 ``` syntax
  // Create the root signatures.
@@ -62,14 +62,14 @@ Comenzamos creando un gráfico y una firma raíz de proceso, en el **método Loa
 
 | Flujo de llamadas                                                             | Parámetros                                                            |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [**INTERVALO DEL DESCRIPTOR CD3DX12 \_ \_**](cd3dx12-descriptor-range.md)        | [**TIPO DE INTERVALO DESCRIPTOR D3D12 \_ \_ \_**](/windows/win32/api/d3d12/ne-d3d12-d3d12_descriptor_range_type) |
+| [**INTERVALO DEL DESCRIPTOR CD3DX12 \_ \_**](cd3dx12-descriptor-range.md)        | [**TIPO DE INTERVALO \_ DE DESCRIPTOR D3D12 \_ \_**](/windows/win32/api/d3d12/ne-d3d12-d3d12_descriptor_range_type) |
 | [**PARÁMETRO RAÍZ CD3DX12 \_ \_**](cd3dx12-root-parameter.md)            | [**VISIBILIDAD DEL SOMBREADOR D3D12 \_ \_**](/windows/win32/api/d3d12/ne-d3d12-d3d12_shader_visibility)          |
 | [**CD3DX12 \_ ROOT \_ SIGNATURE \_ DESC**](cd3dx12-root-signature-desc.md) | [**MARCAS DE FIRMA RAÍZ D3D12 \_ \_ \_**](/windows/win32/api/d3d12/ne-d3d12-d3d12_root_signature_flags)   |
 | [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85))                                   |                                                                       |
-| [**D3D12SerializeRootSignature**](/windows/win32/api/d3d12/nf-d3d12-d3d12serializerootsignature)    | [**VERSIÓN DE LA FIRMA \_ RAÍZ \_ D3D \_**](/windows/win32/api/d3d12/ne-d3d12-d3d_root_signature_version)   |
+| [**D3D12SerializeRootSignature**](/windows/win32/api/d3d12/nf-d3d12-d3d12serializerootsignature)    | [**VERSIÓN DE FIRMA RAÍZ D3D \_ \_ \_**](/windows/win32/api/d3d12/ne-d3d12-d3d_root_signature_version)   |
 | [**CreateRootSignature**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createrootsignature)       |                                                                       |
 | [**CD3DX12 \_ ROOT \_ SIGNATURE \_ DESC**](cd3dx12-root-signature-desc.md) |                                                                       |
-| [**D3D12SerializeRootSignature**](/windows/win32/api/d3d12/nf-d3d12-d3d12serializerootsignature)    | [**VERSIÓN DE LA FIRMA \_ RAÍZ \_ D3D \_**](/windows/win32/api/d3d12/ne-d3d12-d3d_root_signature_version)   |
+| [**D3D12SerializeRootSignature**](/windows/win32/api/d3d12/nf-d3d12-d3d12serializerootsignature)    | [**VERSIÓN DE FIRMA RAÍZ D3D \_ \_ \_**](/windows/win32/api/d3d12/ne-d3d12-d3d_root_signature_version)   |
 | [**CreateRootSignature**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-createrootsignature)       |                                                                       |
 
 
@@ -103,9 +103,9 @@ Los búferes SRV y UAV constan de una matriz de datos de posición y velocidad.
 
  
 
-## <a name="create-the-cbv-and-vertex-buffers"></a>Creación del CBV y los búferes de vértices
+## <a name="create-the-cbv-and-vertex-buffers"></a>Creación de los búferes cbv y de vértice
 
-Para la canalización de gráficos, cbv es una **estructura** que contiene dos matrices usadas por el sombreador de geometría. El sombreador de geometría toma la posición de cada partícula en el sistema y genera un cuadrándum para representarlo mediante estas matrices.
+Para la canalización de gráficos, CBV es una **estructura** que contiene dos matrices usadas por el sombreador de geometría. El sombreador de geometría toma la posición de cada partícula en el sistema y genera un cuadrándum para representarlo mediante estas matrices.
 
 ``` syntax
  struct ConstantBufferGS
@@ -220,9 +220,9 @@ void D3D12nBodyGravity::OnRender()
 
  
 
-Para simplificar un poco el ejemplo, el subproceso de proceso espera a que la GPU complete cada iteración antes de programar más trabajo de proceso. En la práctica, es probable que las aplicaciones quieran mantener la cola de proceso llena para lograr el máximo rendimiento de la GPU.
+Para simplificar un poco el ejemplo, el subproceso de proceso espera a que la GPU complete cada iteración antes de programar más trabajos de proceso. En la práctica, es probable que las aplicaciones quieran mantener la cola de proceso llena para lograr el máximo rendimiento de la GPU.
 
-En el subproceso Compute:
+En el subproceso Proceso:
 
 ``` syntax
 DWORD D3D12nBodyGravity::AsyncComputeThreadProc(int threadIndex)
@@ -279,7 +279,7 @@ DWORD D3D12nBodyGravity::AsyncComputeThreadProc(int threadIndex)
 | [**ID3D12GraphicsCommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist)              |            |
 | [**ID3D12Fence**](/windows/win32/api/d3d12/nn-d3d12-id3d12fence)                                          |            |
 | [**InterlockedGetValue**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedcompareexchange)                |            |
-| [**Cerrar**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-close)                            |            |
+| [**Cerca**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-close)                            |            |
 | [**ID3D12CommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12commandlist)                              |            |
 | [**ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists)       |            |
 | [**InterlockedIncrement**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedincrement)                     |            |
@@ -299,7 +299,7 @@ DWORD D3D12nBodyGravity::AsyncComputeThreadProc(int threadIndex)
 
 ## <a name="run-the-sample"></a>Ejecución del ejemplo
 
-![una captura de pantalla de la simulación final de gravedad de n cuerpos](images/nbodygravity.png)
+![captura de pantalla de la simulación de gravedad del cuerpo n final](images/nbodygravity.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

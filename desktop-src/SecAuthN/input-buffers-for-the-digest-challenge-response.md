@@ -1,17 +1,17 @@
 ---
 description: La autenticación HTTP Microsoft Digest requiere tres búferes de entrada para generar una respuesta de desafío. En la tabla siguiente se resumen estos búferes.
 ms.assetid: 0df02be2-f42e-46d0-a206-765adf3d7a72
-title: Búferes de entrada para la respuesta de desafío de resumen
+title: Búferes de entrada para la respuesta del desafío de resumen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c5bdc71e93c6c10bfcd2d911dccf8cc464a5a7a3040f97953d377be9eaf7ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 982923782b13e37a5e3531717dabf47016c60932
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071283"
 ---
-# <a name="input-buffers-for-the-digest-challenge-response"></a>Búferes de entrada para la respuesta de desafío de resumen
+# <a name="input-buffers-for-the-digest-challenge-response"></a>Búferes de entrada para la respuesta del desafío de resumen
 
 La autenticación HTTP Microsoft Digest requiere tres búferes de entrada para generar una respuesta de desafío. En la tabla siguiente se resumen estos búferes.
 
@@ -19,7 +19,7 @@ La autenticación HTTP Microsoft Digest requiere tres búferes de entrada para g
 
 | Número de búfer | Contiene                                                                                                                                             | Tipo de búfer                                                 |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| 0             | Desafío recibido del servidor                                                                                                                   | TOKEN DE \_ SECBUFFER                                            |
+| 0             | Desafío recibido del servidor                                                                                                                   | TOKEN DE SECBUFFER \_                                            |
 | 1             | Método HTTP                                                                                                                                          | SECBUFFER \_ PARAMS                                           |
 | 2             | H(Entidad)                                                                                                                                            | SECBUFFER \_ PARAMS                                           |
 | 3             | Nombre [*de entidad de seguridad*](../secgloss/s-gly.md) de servicio (SPN) del servidor de destino. | **SECBUFFER \_ HOST \_ DE DESTINO** \| **SECBUFFER \_ READONLY**      |
@@ -33,7 +33,7 @@ El búfer cero contiene el desafío Digest recibido del servidor en respuesta a 
 
 El búfer 1 contiene la representación de cadena del método, como "GET" o "POST". El método se usa en el cálculo de A2, como se describe en [RFC 2617](https://www.ietf.org/rfc/rfc2617.txt).
 
-El búfer 2 es el hash [*MD5*](../secgloss/m-gly.md) del cuerpo de la entidad del mensaje, tal y como se describe en RFC 2617.
+El búfer 2 es el hash [*MD5*](../secgloss/m-gly.md) del cuerpo de la entidad del mensaje, tal como se describe en RFC 2617.
 
 El búfer 3 contiene el SPN del servidor de destino en formato UTF-8 cuando se usa digest con enlaces de canal.
 

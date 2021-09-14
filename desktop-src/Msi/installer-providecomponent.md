@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 49e3808fdad44e4bc3cb7312c1b352874eab3b768920f23ac198811d29f6c8ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e383c532d496ed217bdb7743b8171d732d61b2d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118630333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072100"
 ---
 # <a name="installerprovidecomponent-method"></a>Método Installer.ProvideComponent
 
@@ -88,7 +88,7 @@ Define el modo de instalación. Este parámetro puede ser uno de los valores que
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método ProvideComponent** combina la funcionalidad de [**UseFeature,**](installer-usefeature.md) [**ConfigureFeature**](installer-configurefeature.md)y [**ComponentPath.**](installer-componentpath.md) El **método ProvideComponent** simplifica la secuencia de llamada, pero también incrementa el recuento de uso y se debe usar con precaución para evitar recuentos de uso inexactos. El **método ProvideComponent** también proporciona menos flexibilidad que una serie de llamadas individuales a los métodos y propiedades mencionados anteriormente.
 
@@ -100,11 +100,11 @@ La opción msiInstallModeExisting no se puede usar en combinación con marcas ms
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 

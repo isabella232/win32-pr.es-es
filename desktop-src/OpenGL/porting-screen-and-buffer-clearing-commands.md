@@ -20,12 +20,12 @@ keywords:
 - comandos de borrado de búfer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbff0fed3472fd4374605cb96dbae845998c0ba2d8ce488420f9b4c6895a07c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e53566c9fe14922f3965133cef9e30cbea4548b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117794880"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073989"
 ---
 # <a name="porting-screen-and-buffer-clearing-commands"></a>Comandos de borrado de búfer y pantalla de porte
 

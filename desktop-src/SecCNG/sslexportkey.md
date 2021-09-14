@@ -1,5 +1,5 @@
 ---
-description: Devuelve una clave Capa de sockets seguros sesión de protocolo de inicio de sesión (SSL) o una clave efímera pública en un BLOB serializado.
+description: Devuelve una Capa de sockets seguros de sesión de protocolo de inicio de sesión (SSL) o una clave efímera pública en un BLOB serializado.
 ms.assetid: c978e6ac-a535-4625-8598-4aa16484dcad
 title: Función SslExportKey (Sslprovider.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 073e922ce8c1a79e81d991c869743148b5a581503192a10dfb9cd6e64707d83e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c5fcbcfa1a8b6c1aa9922b98a7699bdf2bf4b0fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906677"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073620"
 ---
 # <a name="sslexportkey-function"></a>Función SslExportKey
 
-La **función SslExportKey** devuelve una clave Capa de sockets seguros de sesión [*de*](/windows/desktop/SecGloss/s-gly) protocolo de Capa de sockets seguros (SSL) [](/windows/desktop/SecGloss/s-gly) o una clave efímera pública en un BLOB [*serializado.*](/windows/desktop/SecGloss/b-gly)
+La **función SslExportKey** devuelve una clave [*de sesión Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo de seguridad (SSL) o una clave efímera pública en un BLOB [*serializado.*](/windows/desktop/SecGloss/b-gly) [](/windows/desktop/SecGloss/s-gly)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,7 +75,7 @@ Cadena Unicode terminada en NULL que contiene un identificador que especifica el
 
 | Value                                                                                                                                                                                      | Significado                                                                                                                                                                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="BCRYPT_DH_PUBLIC_BLOB"></span><span id="bcrypt_dh_public_blob"></span><dl> <dt>**BCRYPT \_ DH \_ PUBLIC \_ BLOB**</dt> </dl>    | Exporte una Diffie-Hellman [*pública*](/windows/desktop/SecGloss/p-gly). El *búfer pbOutput* recibe una estructura [**\_ BCRYPT DH KEY \_ \_ BLOB**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_key_blob) seguida inmediatamente de los datos clave.<br/>                                                                                                               |
+| <span id="BCRYPT_DH_PUBLIC_BLOB"></span><span id="bcrypt_dh_public_blob"></span><dl> <dt>**BCRYPT \_ DH \_ PUBLIC \_ BLOB**</dt> </dl>    | Exporte un Diffie-Hellman [*clave pública*](/windows/desktop/SecGloss/p-gly). El *búfer pbOutput* recibe una estructura [**\_ BCRYPT DH KEY \_ \_ BLOB**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_key_blob) seguida inmediatamente de los datos clave.<br/>                                                                                                               |
 | <span id="BCRYPT_ECCPUBLIC_BLOB"></span><span id="bcrypt_eccpublic_blob"></span><dl> <dt>**BCRYPT \_ ECCPUBLIC \_ BLOB**</dt> </dl>     | Exportar una [*clave pública de criptografía*](/windows/desktop/SecGloss/e-gly) de curva elíptica (ECC). El *búfer pbOutput* recibe una estructura [**\_ BCRYPT ECCKEY \_ BLOB**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_ecckey_blob) seguida inmediatamente de los datos clave.<br/>                                                          |
 | <span id="BCRYPT_OPAQUE_KEY_BLOB"></span><span id="bcrypt_opaque_key_blob"></span><dl> <dt>**BCRYPT \_ OPAQUE \_ KEY \_ BLOB**</dt> </dl> | Exportar una clave simétrica en un formato específico de un único proveedor [*de servicios criptográficos*](/windows/desktop/SecGloss/c-gly) (CSP). Los blobs opacos no son transferibles  y deben importarse mediante el mismo proveedor de servicios criptográficos (CSP) que generó el BLOB.<br/> |
 | <span id="BCRYPT_RSAPUBLIC_BLOB"></span><span id="bcrypt_rsapublic_blob"></span><dl> <dt>**BCRYPT \_ RSAPUBLIC \_ BLOB**</dt> </dl>     | Exportar una clave pública RSA. El *búfer pbOutput* recibe una [**estructura \_ BCRYPT RSAKEY \_ BLOB**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_rsakey_blob) inmediatamente seguida de los datos clave.<br/>                                                                                                                                                                                                |
@@ -148,7 +148,7 @@ Al exportar la parte pública de una clave efímera, el tipo BLOB debe ser el ti
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

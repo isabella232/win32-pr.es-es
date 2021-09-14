@@ -4,16 +4,16 @@ ms.assetid: a7657c14-6542-4a7b-a8f7-727b109cfc39
 title: ICE99
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25744243ad5de8adc6a88ebc09890eb006d94e929a56e469ce802ad67f9a230b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f7d70aeaf6480e45db5b47f76434f93e49adf317
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119315275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074493"
 ---
 # <a name="ice99"></a>ICE99
 
-ICE99 comprueba que ningún nombre de propiedad especificado en la tabla [Directory](directory-table.md) duplica un nombre reservado para el uso público o privado del instalador de Windows.
+ICE99 comprueba que ningún nombre de propiedad especificado en la tabla [Directorio](directory-table.md) duplica un nombre reservado para el uso público o privado del instalador de Windows.
 
 ## <a name="result"></a>Resultado
 
@@ -23,7 +23,7 @@ ICE99 publica el siguiente error.
 
 | Error ICE99                                                                                                      | Descripción                                                                                                                                   |
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| El nombre del directorio: 1 es el mismo que una de las propiedades públicas de MSI y puede producir efectos secundarios \[ \] imprevistos. | El valor de la columna Directorio de la [tabla Directorio](directory-table.md) duplica un nombre de propiedad reservado por Windows Installer. |
+| El nombre del directorio: 1 es el mismo que una de las propiedades públicas de MSI y puede producir efectos secundarios \[ \] imprevistos. | El valor de la columna Directory de la [tabla Directory](directory-table.md) duplica un nombre de propiedad reservado por el Windows instalador. |
 
 
 

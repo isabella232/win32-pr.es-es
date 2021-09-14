@@ -9,18 +9,18 @@ keywords:
 - RAS RAS, consulte Acceso remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e300061c328751f288634faf2f36ab0391ba41d7079e4f42c842d31b3e29397
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95a4b1c06656b51395c8c4fc666e59d6115bd839
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117788290"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071432"
 ---
 # <a name="remote-access"></a>Acceso remoto
 
 ## <a name="purpose"></a>Propósito
 
-Use el Servicio de acceso remoto (RAS) para crear aplicaciones cliente. Estas aplicaciones muestran cuadros de diálogo comunes de RAS, administran dispositivos y conexiones de acceso remoto, y manipulan entradas de la libreta de teléfonos. RAS también proporciona la siguiente generación de funcionalidad de servidor para el Servicio de acceso remoto (RAS) para Windows. La funcionalidad del servidor RRAS sigue y se basa en el Servicio de acceso remoto (RAS).
+Use el Servicio de acceso remoto (RAS) para crear aplicaciones cliente. Estas aplicaciones muestran cuadros de diálogo comunes de RAS, administran dispositivos y conexiones de acceso remoto, y manipulan entradas de la libreta de teléfonos. RAS también proporciona la próxima generación de funcionalidad de servidor para el Servicio de acceso remoto (RAS) para Windows. La funcionalidad del servidor RRAS sigue y se basa en el Servicio de acceso remoto (RAS).
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
@@ -34,7 +34,7 @@ La API ras está diseñada para su uso por los programadores de C/C++. Los progr
 
 Algunas de las funciones de la API RAS solo se admiten en servidores de red y otras solo se admiten en clientes de red. Para obtener información más específica sobre qué sistemas operativos admiten una función determinada, consulte las secciones Requisitos de la documentación.
 
-La [funcionalidad mejorada de RAS](function-comparison-windows-2000-versus-rras-redistributable.md) de RRAS está disponible para Windows NT Server 4.0 mediante la instalación de [RRAS redistribuible.](https://www.microsoft.com/ntserver/nts/downloads/winfeatures/rras/rrasdown.asp) Toda la funcionalidad de RRAS se incorpora a Windows 2000 Server, Windows Server 2003 y Windows Server 2008. Las aplicaciones RRAS no se pueden ejecutar Windows nt workstation 4.0 o en sistemas operativos cliente, como Windows 95. Para obtener información más específica sobre qué sistemas operativos admiten una función determinada, consulte las secciones Requisitos de la documentación.
+La [funcionalidad mejorada de RAS](function-comparison-windows-2000-versus-rras-redistributable.md) de RRAS está disponible para Windows NT Server 4.0 mediante la instalación de [RRAS redistribuible.](https://www.microsoft.com/ntserver/nts/downloads/winfeatures/rras/rrasdown.asp) Toda la funcionalidad de RRAS se incorpora a Windows Server 2000, Windows Server 2003 y Windows Server 2008. Las aplicaciones RRAS no se pueden ejecutar en Windows NT Workstation 4.0 ni en sistemas operativos cliente, como Windows 95. Para obtener información más específica sobre qué sistemas operativos admiten una función determinada, consulte las secciones Requisitos de la documentación.
 
 ## <a name="in-this-section"></a>En esta sección
 

@@ -4,12 +4,12 @@ ms.assetid: e1bcdd59-8cbc-46f7-b908-c8cbc2ea0539
 title: Acción ForceReboot
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c41af6b656222a31ab75c9df3f2fa9f94af415f94d6d0b50010c0b25c5742502
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 807bab474f1faacfbc7684797b7a0b7b74f354d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118636076"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074760"
 ---
 # <a name="forcereboot-action"></a>Acción ForceReboot
 
@@ -17,11 +17,11 @@ La acción ForceReboot solicita al usuario que reinicie el sistema durante la in
 
 Si la instalación tiene una interfaz de usuario, el instalador muestra un cuadro de diálogo en cada acción ForceReboot que solicita al usuario que reinicie el sistema. El usuario debe responder a este aviso antes de continuar con la instalación. Si la instalación no tiene ninguna interfaz de usuario, el sistema se reinicia automáticamente en la acción ForceReboot.
 
-Si el instalador determina que es necesario reiniciar, se solicita automáticamente al usuario que se reinicie al final de la instalación, independientemente de si hay o no alguna acción ForceReboot o ScheduleReboot en la secuencia. Por ejemplo, el instalador solicita automáticamente un reinicio si necesita reemplazar los archivos usados durante la instalación.
+Si el instalador determina que un reinicio es necesario, automáticamente solicita al usuario que reinicie al final de la instalación, independientemente de si hay o no alguna acción ForceReboot o ScheduleReboot en la secuencia. Por ejemplo, el instalador solicita automáticamente un reinicio si necesita reemplazar los archivos usados durante la instalación.
 
 Suprimir determinados mensajes de reinicio estableciendo la [**propiedad REBOOT.**](reboot.md)
 
-Si el instalador Windows encuentra la acción ForceReboot o [](multiple-package-installations.md) [ScheduleReboot](schedulereboot-action.md) durante una instalación de varios paquetes, el instalador detendrá y revertirá la instalación. Se pueden instalar otros paquetes que pertenezcan a la instalación de varios paquetes, que no contengan una acción ForceReboot o ScheduleReboot.
+Si el Windows encuentra la acción ForceReboot o [ScheduleReboot](schedulereboot-action.md) durante una instalación de varios [paquetes,](multiple-package-installations.md)el instalador detendrá y revertirá la instalación. Se pueden instalar otros paquetes que pertenecen a la instalación de varios paquetes, que no contienen una acción ForceReboot o ScheduleReboot.
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
@@ -43,9 +43,9 @@ La acción ForceReboot debe estar entre [InstallInitialize](installinitialize-ac
 
 No hay ningún mensaje ActionData.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La acción ForceReboot siempre debe usarse con una instrucción condicional de modo que el instalador desencadene un reinicio solo cuando sea necesario. Por ejemplo, solo puede ser necesario reiniciar si se reemplaza un archivo determinado o se instala un componente determinado. Cada instalación de producto es única y puede ser necesaria una acción personalizada para determinar si es necesario reiniciar. La condición de la acción ForceReboot normalmente usa la [**propiedad AFTERREBOOT.**](afterreboot.md)
+La acción ForceReboot siempre debe usarse con una instrucción condicional de modo que el instalador desencadene un reinicio solo cuando sea necesario. Por ejemplo, es posible que solo sea necesario reiniciar si se reemplaza un archivo determinado o si se instala un componente determinado. Cada instalación de producto es única y puede ser necesaria una acción personalizada para determinar si es necesario reiniciar. La condición de la acción ForceReboot normalmente usa la [**propiedad AFTERREBOOT.**](afterreboot.md)
 
 ForceReboot ejecuta las operaciones del sistema generadas por las acciones anteriores antes de solicitar un reinicio o un reinicio. Por ejemplo, las operaciones del sistema [generadas por InstallFiles](installfiles-action.md) y [WriteRegistryValues](writeregistryvalues-action.md) se ejecutan antes de reiniciar.
 

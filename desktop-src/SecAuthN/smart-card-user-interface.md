@@ -4,12 +4,12 @@ ms.assetid: a64a617a-b2ae-471f-a88f-a73f0fc3a791
 title: Tarjeta inteligente Interfaz de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3b94a82889d196b01f8a1d1ca6af7b4788398d9508accc2d5ca245f7929d9d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc558446516149529e9a98d28aa9fe94f80b2777
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118917335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071214"
 ---
 # <a name="smart-card-user-interface"></a>Tarjeta inteligente Interfaz de usuario
 
@@ -35,7 +35,7 @@ Las siguientes son dos maneras de usar el cuadro de diálogo común. Ambos asume
      
 
 4.  Llame a la función de cuadro de diálogo común [**GetOpenCardName.**](/windows/desktop/api/Winscard/nf-winscard-getopencardnamea)
-5.  A continuación, el cuadro de diálogo común buscará las tarjetas solicitadas. Si se encuentra un nombre de tarjeta o una cadena [*ATR*](../secgloss/a-gly.md) correspondientes, las funciones de devolución de llamada **Conectar**, **Check** y **Disconnect** se llamarán en secuencia. Si una tarjeta pasa la **rutina Check** (es decir, la devolución de llamada **Check** devuelve **TRUE),** esta tarjeta se resalta en la pantalla al usuario.
+5.  A continuación, el cuadro de diálogo común buscará las tarjetas solicitadas. Si se encuentra un nombre de tarjeta o una cadena [*ATR*](../secgloss/a-gly.md) correspondientes, las funciones de devolución de **llamada Conectar**, **Check** y **Disconnect** se llamarán en secuencia. Si una tarjeta pasa la **rutina Check** (es decir, la devolución de llamada **Check** devuelve **TRUE),** esta tarjeta se resalta en la pantalla al usuario.
     > [!Note]  
     > Si se dan varios nombres de tarjeta, el primer lector que contenga una de las tarjetas solicitadas y pase la **rutina Check** será la tarjeta seleccionada.
 

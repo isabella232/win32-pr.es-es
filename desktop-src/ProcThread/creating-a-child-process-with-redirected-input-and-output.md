@@ -4,12 +4,12 @@ ms.assetid: a4e37069-2b3a-4b6d-9cfd-eb1700ab3bc6
 title: Creación de un proceso secundario con entrada y salida redirigidas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ec7c7761bd73386285a4e911be13ff3ab46a479cb78442b1d8b14ac9e1b1368
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: af3a8e922c37baf20dae2d3a26b8cd0705e4c1a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073893"
 ---
 # <a name="creating-a-child-process-with-redirected-input-and-output"></a>Creación de un proceso secundario con entrada y salida redirigidas
 

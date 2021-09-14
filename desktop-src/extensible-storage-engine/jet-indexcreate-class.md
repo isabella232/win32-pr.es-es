@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f5e899aefc26fbb0518c1ddc91362dbaf2c6cdbe56512f20d9bce057cbd13cdf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3f22756aa8a2c3888ef9ba180e12c32c3dda5249
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119110096"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072509"
 ---
 # <a name="jet_indexcreate-class"></a>JET_INDEXCREATE clase
 
@@ -43,7 +43,7 @@ Contiene la información necesaria para crear un índice sobre los datos de una 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

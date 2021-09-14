@@ -4,12 +4,12 @@ ms.assetid: ebcc8202-94b4-47ad-9918-e5bc843a258f
 title: Identificadores de propiedad primitivos de criptografía (Bcrypt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5452c6a55388998a08577cb19ef2fba6905faddbdf28f5f8051b7bc8d9d1c375
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71f4996a216fbc4fbf63216f99b5f630c4769e97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118908226"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073678"
 ---
 # <a name="cryptography-primitive-property-identifiers"></a>Identificadores de propiedad primitivos de criptografía
 
@@ -64,7 +64,7 @@ L"BlockSizeList"
 
 
 
-Lista de las longitudes de bloque admitidas por un algoritmo de cifrado. Este tipo de datos es una matriz **de DWORD.** El número de elementos de la matriz se puede determinar dividiendo el número de bytes recuperados por el tamaño de un **único DWORD.**
+Lista de las longitudes de bloque admitidas por un algoritmo de cifrado. Este tipo de datos es una matriz **de DWORD.** El número de elementos de la matriz se puede determinar dividiendo el número de bytes recuperados por el tamaño de una **sola DWORD**.
 
 
 </dt> </dl> </dd> <dt>
@@ -84,11 +84,11 @@ Puntero a una cadena Unicode terminada en NULL que representa el modo de encaden
 | Identificador                   | Value                         | Descripción                                                                                                                                                                    |
 |------------------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **BCRYPT \_ CHAIN \_ MODE \_ CBC** | L"ChainingModeCBC"<br/> | Establece el modo de encadenamiento del algoritmo en [*el encadenamiento de bloques de cifrado.*](/windows/desktop/SecGloss/c-gly)<br/>            |
-| **CCM del MODO \_ \_ DE CADENA \_ BCRYPT** | L"ChainingModeCCM"<br/> | Establece el modo de encadenamiento del algoritmo en contador con el modo CBC-MAC (CCM). **Windows Vista:** Este valor se admite a partir de Windows Vista con SP1.<br/> <br/> |
+| **CCM DEL MODO \_ DE \_ CADENA DE \_ BCRYPT** | L"ChainingModeCCM"<br/> | Establece el modo de encadenamiento del algoritmo en contador con el modo CBC-MAC (CCM). **Windows Vista:** Este valor se admite a partir de Windows Vista con SP1.<br/> <br/> |
 | **BCRYPT \_ CHAIN \_ MODE \_ CFB** | L"ChainingModeCFB"<br/> | Establece el modo de encadenamiento del algoritmo para cifrar [*los comentarios*](/windows/desktop/SecGloss/c-gly).<br/>                              |
-| **BCRYPT \_ CHAIN \_ MODE \_ ECB** | L"ChainingModeECB"<br/> | Establece el modo de encadenamiento del algoritmo en [*el cuaderno de códigos electrónico*](/windows/desktop/SecGloss/e-gly).<br/>                  |
+| **BCRYPT \_ CHAIN \_ MODE (INDESO DE MODO DE CADENA DE \_ BCRYPT)** | L"ChainingModeECB"<br/> | Establece el modo de encadenamiento del algoritmo en [*el cuaderno de códigos electrónico*](/windows/desktop/SecGloss/e-gly).<br/>                  |
 | **BCRYPT \_ CHAIN \_ MODE \_ GCM** | L"ChainingModeGCM"<br/> | Establece el modo de encadenamiento del algoritmo en el modo Galois/counter (GCM). **Windows Vista:** Este valor se admite a partir de Windows Vista con SP1.<br/> <br/>       |
-| **BCRYPT \_ CHAIN \_ MODE \_ NA**  | L"ChainingModen/A"<br/> | El algoritmo no admite el encadenamiento.<br/>                                                                                                                            |
+| **BCRYPT \_ CHAIN \_ MODE \_ NA**  | L"ChainingModeN/A"<br/> | El algoritmo no admite el encadenamiento.<br/>                                                                                                                            |
 
 
 
@@ -105,7 +105,7 @@ L"DHParameters"
 
 
 
-Especifica los parámetros que se usarán con Diffie-Hellman clave. Este tipo de datos es un puntero a una estructura [**\_ BCRYPT DH \_ PARAMETER \_ HEADER.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_parameter_header) Esta propiedad solo se puede establecer y debe establecerse para la clave antes de que se complete la clave.
+Especifica los parámetros que se usarán con una Diffie-Hellman clave. Este tipo de datos es un puntero a una estructura [**\_ BCRYPT DH \_ PARAMETER \_ HEADER.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_parameter_header) Esta propiedad solo se puede establecer y debe establecerse para la clave antes de que se complete la clave.
 
 
 </dt> </dl> </dd> <dt>
@@ -120,7 +120,7 @@ L"DSAParameters"
 
 Especifica los parámetros que se usarán con una clave DSA. Esta propiedad es una [**estructura \_ BCRYPT DSA \_ PARAMETER HEADER \_ o**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dsa_parameter_header) [**BCRYPT \_ DSA \_ PARAMETER HEADER \_ \_ V2.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dsa_parameter_header_v2) Esta propiedad solo se puede establecer y debe establecerse para la clave antes de que se complete la clave.
 
-**Windows 8:** A partir Windows 8, esta propiedad puede ser una estructura [**\_ BCRYPT DSA \_ PARAMETER HEADER \_ \_ V2.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dsa_parameter_header_v2) Use esta estructura si el tamaño de clave supera los 1024 bits y es menor o igual que 3072 bits. Si el tamaño de clave es mayor o igual que 512 pero menor o igual que 1024 bits, use la estructura DE ENCABEZADO DE PARÁMETRO [**\_ DSA \_ \_ de BCRYPT.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dsa_parameter_header)
+**Windows 8:** A partir Windows 8, esta propiedad puede ser una estructura [**\_ BCRYPT DSA \_ PARAMETER HEADER \_ \_ V2.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dsa_parameter_header_v2) Use esta estructura si el tamaño de la clave supera los 1024 bits y es menor o igual que 3072 bits. Si el tamaño de la clave es mayor o igual que 512, pero menor o igual que 1024 bits, use la estructura [**\_ BCRYPT DSA \_ PARAMETER \_ HEADER.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dsa_parameter_header)
 
 
 </dt> </dl> </dd> <dt>
@@ -138,7 +138,7 @@ Tamaño, en bits, de la longitud efectiva de una clave RC2. Este tipo de datos e
 
 </dt> </dl> </dd> <dt>
 
-<span id="BCRYPT_HASH_BLOCK_LENGTH"></span><span id="bcrypt_hash_block_length"></span>**LONGITUD DEL \_ BLOQUE HASH \_ BCRYPT \_**
+<span id="BCRYPT_HASH_BLOCK_LENGTH"></span><span id="bcrypt_hash_block_length"></span>**LONGITUD DEL \_ BLOQUE HASH \_ DE BCRYPT \_**
 </dt> <dd> <dl> <dt>
 
 L"HashBlockLength"
@@ -146,7 +146,7 @@ L"HashBlockLength"
 
 
 
-Tamaño, en bytes, del bloque para un hash. Esta propiedad solo se aplica a los algoritmos hash. Este tipo de datos es **DWORD.**
+Tamaño, en bytes, del bloque de un hash. Esta propiedad solo se aplica a los algoritmos hash. Este tipo de datos es **DWORD.**
 
 
 </dt> </dl> </dd> <dt>
@@ -159,7 +159,7 @@ L"HashDigestLength"
 
 
 
-Tamaño, en bytes, del valor hash de un proveedor hash. Este tipo de datos es **DWORD.**
+Tamaño, en bytes, del valor hash de un proveedor de hash. Este tipo de datos es **DWORD.**
 
 
 </dt> </dl> </dd> <dt>
@@ -172,7 +172,7 @@ L"HashOIDList"
 
 
 
-Lista de identificadores de objetos hash (UNIDADES) [*codificados*](/windows/desktop/SecGloss/o-gly) por [*DER.*](/windows/desktop/SecGloss/d-gly) Esta propiedad es una [**estructura \_ BCRYPT OID \_ LIST.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_oid_list) Esta propiedad solo se puede leer.
+Lista de identificadores de objetos hash ( URI) [*codificados*](/windows/desktop/SecGloss/o-gly) por [*DER.*](/windows/desktop/SecGloss/d-gly) Esta propiedad es una [**estructura BCRYPT \_ OID \_ LIST.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_oid_list) Esta propiedad solo se puede leer.
 
 
 </dt> </dl> </dd> <dt>
@@ -198,7 +198,7 @@ L"KeyLength"
 
 
 
-Tamaño, en bits, del valor de clave de un proveedor de claves simétrico. Este tipo de datos es **DWORD.**
+Tamaño, en bits, del valor de clave de un proveedor de claves simétricas. Este tipo de datos es **DWORD.**
 
 
 </dt> </dl> </dd> <dt>
@@ -216,7 +216,7 @@ Longitudes de clave admitidas por el algoritmo. Esta propiedad es una [**estruct
 
 </dt> </dl> </dd> <dt>
 
-<span id="BCRYPT_KEY_OBJECT_LENGTH"></span><span id="bcrypt_key_object_length"></span>**BCRYPT \_ KEY \_ OBJECT \_ LENGTH**
+<span id="BCRYPT_KEY_OBJECT_LENGTH"></span><span id="bcrypt_key_object_length"></span>**LONGITUD DEL \_ OBJETO DE CLAVE BCRYPT \_ \_**
 </dt> <dd> <dl> <dt>
 
 L"KeyObjectLength"
@@ -229,7 +229,7 @@ No se usa esta propiedad. La **propiedad \_ BCRYPT OBJECT \_ LENGTH** se usa par
 
 </dt> </dl> </dd> <dt>
 
-<span id="BCRYPT_KEY_STRENGTH"></span><span id="bcrypt_key_strength"></span>**SEGURIDAD DE LA \_ CLAVE BCRYPT \_**
+<span id="BCRYPT_KEY_STRENGTH"></span><span id="bcrypt_key_strength"></span>**SEGURIDAD DE \_ LA CLAVE BCRYPT \_**
 </dt> <dd> <dl> <dt>
 
 L"KeyStrength"
@@ -242,7 +242,7 @@ Número de bits de la clave. Este tipo de datos es **DWORD.** Esta propiedad sol
 
 </dt> </dl> </dd> <dt>
 
-<span id="BCRYPT_MESSAGE_BLOCK_LENGTH"></span><span id="bcrypt_message_block_length"></span>**LONGITUD DEL BLOQUE \_ DE \_ MENSAJES DE \_ BCRYPT**
+<span id="BCRYPT_MESSAGE_BLOCK_LENGTH"></span><span id="bcrypt_message_block_length"></span>**LONGITUD DEL \_ BLOQUE DE \_ MENSAJES BCRYPT \_**
 </dt> <dd> <dl> <dt>
 
 L"MessageBlockLength"
@@ -250,12 +250,12 @@ L"MessageBlockLength"
 
 
 
-Esto se puede establecer en cualquier identificador de clave que tenga establecido el modo de encadenamiento CFB. De forma predeterminada, esta propiedad se establece en 1 para CFB de 8 bits. Si se establece en el tamaño de bloque en bytes, se usará CFB de bloque completo. Para las claves XTS se usa para establecer el tamaño, en bytes, de la unidad de datos XTS (normalmente 512 o 4096).
+Esto se puede establecer en cualquier identificador de clave que tenga establecido el modo de encadenamiento CFB. De forma predeterminada, esta propiedad se establece en 1 para CFB de 8 bits. Si se establece en el tamaño del bloque en bytes, se usará CFB de bloque completo. Para las claves XTS, se usa para establecer el tamaño, en bytes, de la unidad de datos XTS (normalmente 512 o 4096).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="BCRYPT_MULTI_OBJECT_LENGTH"></span><span id="bcrypt_multi_object_length"></span>**LONGITUD DE \_ VARIOS \_ OBJETOS DE \_ BCRYPT**
+<span id="BCRYPT_MULTI_OBJECT_LENGTH"></span><span id="bcrypt_multi_object_length"></span>**BCRYPT \_ MULTI \_ OBJECT \_ LENGTH**
 </dt> <dd> <dl> <dt>
 
 L"MultiObjectLength"
@@ -263,7 +263,7 @@ L"MultiObjectLength"
 
 
 
-Esta propiedad devuelve un [**\_ \_ \_ \_ STRUCT BCRYPT MULTI OBJECT LENGTH**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_multi_object_length_struct), que contiene la información necesaria para calcular el tamaño de un búfer de objetos. Esta propiedad solo se admite en las versiones del sistema operativo que admiten [**la función BCryptCreateMultiHash.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptcreatemultihash)
+Esta propiedad devuelve una [**estructura BCRYPT \_ MULTI OBJECT \_ LENGTH \_ \_ ,**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_multi_object_length_struct)que contiene la información necesaria para calcular el tamaño de un búfer de objetos. Esta propiedad solo se admite en las versiones del sistema operativo que admiten [**la función BCryptCreateMultiHash.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptcreatemultihash)
 
 
 </dt> </dl> </dd> <dt>
@@ -276,7 +276,7 @@ L"ObjectLength"
 
 
 
-Tamaño, en bytes, del subobjeto de un proveedor. Este tipo de datos es **DWORD.** Actualmente, los proveedores de algoritmos de cifrado hash y simétrico usan búferes asignados por el autor de la llamada para almacenar sus subobjetos. Por ejemplo, el proveedor de hash requiere que asigne memoria para el objeto hash obtenido con la [**función BCryptCreateHash.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptcreatehash) Esta propiedad proporciona el tamaño de búfer para el objeto de un proveedor para que pueda asignar memoria para el objeto creado por el proveedor.
+Tamaño, en bytes, del subobjeto de un proveedor. Este tipo de datos es **DWORD.** Actualmente, los proveedores de algoritmos de cifrado hash y simétrico usan búferes asignados por el autor de la llamada para almacenar sus subobjetos. Por ejemplo, el proveedor hash requiere que asigne memoria para el objeto hash obtenido con la [**función BCryptCreateHash.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptcreatehash) Esta propiedad proporciona el tamaño de búfer para el objeto de un proveedor para que pueda asignar memoria para el objeto creado por el proveedor.
 
 
 </dt> </dl> </dd> <dt>
@@ -298,8 +298,8 @@ Representa el esquema de relleno del proveedor de algoritmos RSA. Este tipo de d
 | **ENRUTADOR DE \_ \_ PANEL COMPATIBLE CON BCRYPT \_**     | 0x00000001 | El proveedor admite el relleno agregado por el enrutador.         |
 | **BCRYPT \_ SUPPORTED \_ PAD \_ PKCS1 \_ ENC** | 0x00000002 | El proveedor admite el esquema de relleno de cifrado PKCS1. |
 | **BCRYPT \_ SUPPORTED \_ PAD \_ PKCS1 \_ SIG** | 0x00000004 | El proveedor admite el esquema de relleno de firma PKCS1.  |
-| **\_OAEP DE PANEL COMPATIBLE \_ \_ CON BCRYPT**       | 0x00000008 | El proveedor admite el esquema de relleno OAEP.             |
-| **PSS \_ \_ DE PANEL COMPATIBLE CON \_ BCRYPT**        | 0x00000010 | El proveedor admite el esquema de relleno de PSS.              |
+| **BCRYPT \_ SUPPORTED \_ PAD \_ OAEP**       | 0x00000008 | El proveedor admite el esquema de relleno OAEP.             |
+| **BCRYPT \_ SUPPORTED \_ PAD \_ PSS**        | 0x00000010 | El proveedor admite el esquema de relleno de PSS.              |
 
 
 
@@ -308,7 +308,7 @@ Representa el esquema de relleno del proveedor de algoritmos RSA. Este tipo de d
 
 </dt> </dl> </dd> <dt>
 
-<span id="BCRYPT_PROVIDER_HANDLE"></span><span id="bcrypt_provider_handle"></span>**IDENTIFICADOR DEL PROVEEDOR DE BCRYPT \_ \_**
+<span id="BCRYPT_PROVIDER_HANDLE"></span><span id="bcrypt_provider_handle"></span>**IDENTIFICADOR DEL \_ PROVEEDOR BCRYPT \_**
 </dt> <dd> <dl> <dt>
 
 L"ProviderHandle"
@@ -342,7 +342,7 @@ Tamaño, en bytes, de la longitud de una firma para una clave. Este tipo de dato
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
-| Header<br/>                   | <dl> <dt>Bcrypt.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Bcrypt.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: af0b86e8-29ca-4afa-a1e5-f9fd88786dc5
 title: CustomSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2521f712e49bf3486bcbc404de692d51730351d685df3ccc1ae5bfaca2ff2794
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cb89456eb772f4744e190283226fde41139f2216
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119328355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158660"
 ---
 # <a name="customsource"></a>CustomSource
 

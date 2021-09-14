@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: b5ec57833ed34a432988c42351a333362168112174cccd7a989e0c2e1bddd694
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bef669bae5e5e5c4c31a49b545fcfc7f58285f97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119982905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072215"
 ---
 # <a name="iamtimelinetrackzerobetween-method"></a>IamTimelineTrack::ZeroBetween (método)
 
@@ -28,7 +28,7 @@ ms.locfileid: "119982905"
 
  
 
-El `ZeroBetween` método quita todo de la pista entre las horas especificadas. Este método divide los objetos que abarcan el intervalo de tiempo especificado y quita las partes que se encuentran dentro del intervalo.
+El `ZeroBetween` método quita todo el elemento de la pista entre las horas especificadas. Este método divide los objetos que abarcan el intervalo de tiempo especificado y quita las partes que se encuentran dentro del intervalo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,7 +75,7 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -98,14 +98,14 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IamTimelineTrack (interfaz)**](iamtimelinetrack.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

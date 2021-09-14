@@ -4,12 +4,12 @@ ms.assetid: f23bd5c2-1d7f-485f-a22b-99436dfab6bf
 title: Importación de AdminUISequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e3cbe0b574b4d70834b3c0d65acc88fe357b2022429fb599656bcf8ee16fb9b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b6f1b9d2a91a350097ac043c186478e4933f6e81
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074434"
 ---
 # <a name="importing-the-adminuisequence"></a>Importación de AdminUISequence
 

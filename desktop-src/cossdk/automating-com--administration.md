@@ -4,12 +4,12 @@ ms.assetid: f302eb02-2ef5-42ee-a18f-59f7e60b38df
 title: Automatización de la administración de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72cb7370c3b1a90324b612108e9ec1ef17c7030d3372d303da74ced95298ab02
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0ef3f56da64e442594a7685a77efb9a06e3fe08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120029845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073019"
 ---
 # <a name="automating-com-administration"></a>Automatización de la administración de COM+
 
@@ -49,7 +49,7 @@ Para obtener descripciones completa de los objetos COMAdmin y las interfaces cor
 En los temas siguientes de esta sección se proporciona información general para automatizar la administración mediante los objetos COMAdmin:
 
 -   [Información general de los objetos COMAdmin](overview-of-the-comadmin-objects.md)
--   [Recuperación de colecciones en el catálogo de COM+](retrieving-collections-on-the-com--catalog.md)
+-   [Recuperar colecciones en el catálogo de COM+](retrieving-collections-on-the-com--catalog.md)
 -   [Establecimiento de propiedades y guardado de cambios en el catálogo de COM+](setting-properties-and-saving-changes-to-the-com--catalog.md)
 -   [Control de errores de administración de COM+](handling-com--administration-errors.md)
 -   [Operaciones de administración de COM+ dentro de transacciones](com--administration-operations-within-transactions.md)

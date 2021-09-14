@@ -4,16 +4,16 @@ ms.assetid: 951d20c8-7908-40d8-a9d5-d321340c97f3
 title: Restricciones de diseño de aplicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16b98e7b7d8dddf1cd74224573d355e1f42d75c8ae6122d20977bbc1b38ffb99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1c4307a979866e3df9f019e69b858e8347c295b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117917549"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073022"
 ---
 # <a name="application-design-restrictions"></a>Restricciones de diseño de aplicaciones
 
-Algunas aplicaciones están diseñadas de forma que impide que varias instancias de la aplicación se instalen en un equipo. Con esta limitación, una aplicación no puede hacer uso de la característica de particiones. Es posible que las siguientes características de diseño de aplicaciones deban modificarse antes de que se puedan usar particiones para esa aplicación.
+Algunas aplicaciones están diseñadas de forma que impide que varias instancias de la aplicación se instalen en un equipo. Con esta limitación, una aplicación no puede hacer uso de la característica de particiones. Es posible que sea necesario modificar las siguientes características de diseño de aplicaciones para poder usar particiones para esa aplicación.
 
 ## <a name="tables-and-arrays"></a>Tablas y matrices
 
@@ -32,10 +32,10 @@ Por ejemplo, si un componente usa memoria compartida para interactuar con otros 
 Las bibliotecas de tipos proporcionan información sobre las interfaces y los métodos de un componente. Esta información se usa para varios propósitos, incluidos los siguientes:
 
 -   Serialización de datos entre componentes cuando se realizan llamadas de función
--   Ayudar a los componentes en cola de COM+ y a los servicios de eventos COM+
+-   Ayuda a los componentes en cola de COM+ y a los servicios de eventos COM+
 -   Proporcionar la información correcta dentro de un editor de Visual Basic Microsoft
 
-Las referencias a una biblioteca de tipos se instalan en el Registro de un equipo. Al desarrollar aplicaciones que se invocarán desde particiones, es importante que la versión más reciente de una biblioteca de tipos esté instalada en el Registro. Esto garantiza que el editor Visual Basic que se usa obtenga información precisa sobre los métodos disponibles para ese componente.
+Las referencias a una biblioteca de tipos se instalan en el Registro de un equipo. Al desarrollar aplicaciones que se invocarán desde particiones, es importante que la versión más reciente de una biblioteca de tipos esté instalada en el Registro. Esto garantiza que el editor Visual Basic que se está utilizando obtenga información precisa sobre los métodos disponibles para ese componente.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -44,7 +44,7 @@ Las referencias a una biblioteca de tipos se instalan en el Registro de un equip
 [Componentes y particiones en cola de COM+](com--queued-components-and-partitions.md)
 </dt> <dt>
 
-[Implementación de particiones](partition-implementation.md)
+[Implementación de partición](partition-implementation.md)
 </dt> <dt>
 
 [Registro y activación de componentes en particiones](registering-and-activating-components-in-partitions.md)

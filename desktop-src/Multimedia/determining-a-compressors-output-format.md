@@ -3,19 +3,19 @@ title: Determinar el formato de salida de un resalte
 description: Determinar el formato de salida de un resalte
 ms.assetid: 910bd77f-4c65-4ea2-bab2-96f42a2b6cf1
 keywords:
-- Administrador de compresión de vídeo (VCM), formato de salida
+- administrador de compresión de vídeo (VCM), formato de salida
 - VCM (administrador de compresión de vídeo), formato de salida
 - Macro ICCompressGetFormat
 - Macro ICCompressQuery
-- Macro ICCompressGetSize
+- ICCompressGetSize macro
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6c4356870598dc08ad84c4073be5ffa3c2ddbd5b
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370387"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074259"
 ---
 # <a name="determining-a-compressors-output-format"></a>Determinar el formato de salida de un resalte
 
@@ -36,7 +36,7 @@ ICCompressGetFormat(hIC, lpbiIn, lpbiOut);
 
 
 
-En el ejemplo siguiente se usa la macro [**ICCompressQuery**](/windows/desktop/api/Vfw/nf-vfw-iccompressquery) para determinar si un asete puede controlar los formatos de entrada y salida.
+En el ejemplo siguiente se usa la macro [**ICCompressQuery**](/windows/desktop/api/Vfw/nf-vfw-iccompressquery) para determinar si un objeto puede controlar los formatos de entrada y salida.
 
 
 ```C++

@@ -7,12 +7,12 @@ keywords:
 - funciones de consulta OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39e3e883bdf8730dac7b1a8e07448b771109bef0ac5ec2246411703e8f841a53
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14804b260451d4b51b0146b1cb2f796ba6b6778e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073980"
 ---
 # <a name="using-the-query-functions"></a>Uso de las funciones de consulta
 
@@ -34,15 +34,15 @@ Los prototipos de las funciones de consulta son:
 
 **void** **glGetDoublev**(**GLenum** *pname* , **GLdouble \** _ _params* );
 
-Respectivamente, las funciones de consulta obtienen variables de estado booleanos, enteros, de punto flotante o de precisión doble. El *parámetro pname* es una constante simbólica que indica la variable de estado que se va a devolver y *params* es un puntero a una matriz del tipo indicado en la que se colocarán los datos devueltos. Los valores posibles para *pname se* enumeran en [Variables de estado openGL](opengl-state-variables.md). Se realiza una conversión de tipos si es necesario para devolver la variable deseada como el tipo de datos solicitado.
+Respectivamente, las funciones de consulta obtienen variables de estado booleano, entero, de punto flotante o de precisión doble. El *parámetro pname* es una constante simbólica que indica la variable de estado que se va a devolver y *params* es un puntero a una matriz del tipo indicado en la que se colocarán los datos devueltos. Los valores posibles de *pname* se enumeran en [Variables de estado openGL](opengl-state-variables.md). Se realiza una conversión de tipos si es necesario para devolver la variable deseada como el tipo de datos solicitado.
 
 El prototipo de [**glIsEnabled**](glisenabled.md) es:
 
 **GLboolean** **glIsEnabled**(GLenum *cap* );
 
-Si el modo especificado por *cap está* habilitado, **glIsEnabled** devuelve GL \_ TRUE. Si el modo especificado por *cap está* deshabilitado, **glIsEnabled** devuelve GL \_ FALSE. Los valores posibles para *cap* se enumeran en [Variables de estado OpenGL](opengl-state-variables.md).
+Si el modo especificado por *cap* está habilitado, **glIsEnabled** devuelve GL \_ TRUE. Si el modo especificado por *cap* está deshabilitado, **glIsEnabled** devuelve GL \_ FALSE. Los valores posibles de *cap* se enumeran en [Variables de estado OpenGL](opengl-state-variables.md).
 
-Otras funciones especializadas devuelven variables de estado específicas. Para averiguar cuándo usar estas funciones, vea Variables de estado de OpenGL y el *Manual de referencia de OpenGL.* Para obtener más información sobre la instalación de control de errores de OpenGL y la función **glGetError,** vea [Control de errores.](error-handling.md)
+Otras funciones especializadas devuelven variables de estado específicas. Para averiguar cuándo usar estas funciones, vea Variables de estado de OpenGL y el *Manual de referencia de OpenGL.* Para obtener más información sobre la instalación de control de errores de OpenGL y la **función glGetError,** vea [Control de errores.](error-handling.md)
 
 Las funciones que devuelven variables de estado específicas son:
 

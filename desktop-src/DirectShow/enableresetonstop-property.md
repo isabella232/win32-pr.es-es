@@ -1,15 +1,15 @@
 ---
-description: La propiedad EnableResetOnStop establece o recupera un valor que determina cómo se reanudará la reproducción cuando el gráfico de filtros realiza una transición desde un estado detenido.
+description: La propiedad EnableResetOnStop establece o recupera un valor que determina cómo se reanudará el juego cuando el gráfico de filtros realiza una transición desde un estado detenido.
 ms.assetid: ff2e2756-e3f3-4ddb-b99d-5fa65ec67f6b
 title: Propiedad EnableResetOnStop
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67be4bfda62839f55dcb4c4597fdad6654072f4dfeb2450c3bce3ed99c13a418
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9449d8dd3e2e5ab0e1f008cba3e4cb2aabaa78c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120107865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072219"
 ---
 # <a name="enableresetonstop-property"></a>Propiedad EnableResetOnStop
 
@@ -28,7 +28,7 @@ La propiedad establece o recupera un valor que determina cómo se reanudará la 
 
 Devuelve un valor booleano que indica dónde se volverá a reproducir el objeto MSWebDVD después de detener el gráfico de filtro.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad es de lectura y escritura.
 

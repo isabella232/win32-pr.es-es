@@ -1,5 +1,5 @@
 ---
-description: Descifra un único Capa de sockets seguros de protocolo de seguridad (SSL).
+description: Descifra un único Capa de sockets seguros de protocolo (SSL).
 ms.assetid: 22a7dd2b-d023-47b9-8f76-1c17c2dd6466
 title: Función SslDecryptPacket (Sslprovider.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 0b058fbb01183ccf0582c0fa196bec71bfaffa2e8a44739c1ea5fb01a8148174
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd568596b7e780242c0ff8d9c522a9e1758c60b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118906707"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127073633"
 ---
 # <a name="ssldecryptpacket-function"></a>Función SslDecryptPacket
 
-La **función SslDecryptPacket** descifra un único [*Capa de sockets seguros de protocolo de*](/windows/desktop/SecGloss/s-gly) cifrado (SSL).
+La **función SslDecryptPacket** descifra un único [*Capa de sockets seguros de protocolo de cifrado*](/windows/desktop/SecGloss/s-gly) (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ SECURITY_STATUS WINAPI SslDecryptPacket(
 *hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor de protocolo SSL.
+Identificador de la instancia del proveedor del protocolo SSL.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 ## <a name="remarks"></a>Observaciones
 
-La longitud del paquete puede ser cero, como cuando se descifra un mensaje "HelloRequest".
+La longitud del paquete puede ser cero, por ejemplo, cuando se descifra un mensaje "HelloRequest".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -140,7 +140,7 @@ La longitud del paquete puede ser cero, como cuando se descifra un mensaje "Hell
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

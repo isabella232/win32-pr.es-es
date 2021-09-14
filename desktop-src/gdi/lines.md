@@ -4,12 +4,12 @@ ms.assetid: 538aa3c3-e13a-40dc-b977-3e353a7e9893
 title: Líneas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b81976984cecc3d4d3b27fb3e474e896c6e81f03e6f601db36418b9e3cf197c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 64cd678f782567e98d32ab7f8786d5b87aab1918
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072479"
 ---
 # <a name="lines"></a>Líneas
 

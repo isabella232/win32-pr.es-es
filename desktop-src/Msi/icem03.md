@@ -4,18 +4,18 @@ ms.assetid: 8e2b5921-32cf-45e8-9906-30002574a712
 title: ICEM03
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f061fbf63fa1874fef8764aee56b3e7caa41976a8280802041c54f088c663c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f368fa50a71153c41eebaa9ee5084449cf824993
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127074494"
 ---
 # <a name="icem03"></a>ICEM03
 
 ICEM03 comprueba que todas las acciones del módulo son acciones base o derivan de una acción base válida.
 
-Los ICE del módulo de mezcla se almacenan en un archivo .uu. del módulo de mezcla denominado Mergemod.pack y no en el archivo .uu. que contiene los ICE usados para la validación del paquete.
+Los ICE del módulo de mezcla se almacenan en un archivo .uu. del módulo de mezcla denominado Mergemod.uu y no en el archivo .uu. que contiene los ICE usados para la validación del paquete.
 
 ## <a name="result"></a>Resultado
 

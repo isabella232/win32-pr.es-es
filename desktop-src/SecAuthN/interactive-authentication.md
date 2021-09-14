@@ -4,12 +4,12 @@ ms.assetid: 86a318fa-4d7c-4191-a309-d25b492dd915
 title: Autenticación interactiva
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 876f3aced39afba0d08a9643e14caae91336daf38a63f3855e76fe50136a16a2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: afeb09044f4b34f28c02cd0f03b3358a8158af65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119482304"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071277"
 ---
 # <a name="interactive-authentication"></a>Autenticación interactiva
 
@@ -21,9 +21,9 @@ Un usuario indica al sistema que inicie la secuencia de [](../secgloss/s-gly.md)
 
 Después de obtener los datos de inicio de sesión, GINA llama a la función [**LsaLogonUser**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsalogonuser) para autenticar al usuario, especificando qué paquete de autenticación debe usarse para evaluar los datos de inicio de sesión.
 
-El LSA llama al paquete de autenticación especificado y le pasa los datos de inicio de sesión. El paquete de autenticación examina los datos y determina si la autenticación es correcta. El resultado de la autenticación se devuelve al LSA y desde el LSA, a la GINA.
+El LSA llama al paquete de autenticación especificado y le pasa los datos de inicio de sesión. El paquete de autenticación examina los datos y determina si la autenticación se realiza correctamente. El resultado de la autenticación se devuelve al LSA y desde el LSA, a la GINA.
 
-El GINA muestra el éxito o error de la autenticación al usuario y devuelve el resultado de la autenticación a Winlogon. Si la autenticación se realiza correctamente, se inicia la sesión de inicio de sesión del usuario y se guarda un conjunto de credenciales de [*inicio*](../secgloss/c-gly.md) de sesión para futuras referencias.
+La GINA muestra el éxito o error de la autenticación al usuario y devuelve el resultado de la autenticación a Winlogon. Si la autenticación se realiza correctamente, comienza la sesión de inicio de sesión del usuario y se guarda un conjunto de credenciales de [*inicio*](../secgloss/c-gly.md) de sesión para futuras referencias.
 
 > [!Note]  
 > En general, un desarrollador que escribe una GINA personalizada para [](../secgloss/s-gly.md) aceptar datos de inicio de sesión especializados, como una tarjeta inteligente o datos de examen de retinal, también debe escribir un paquete de autenticación responsable de procesar esos datos y determinar su autenticidad.

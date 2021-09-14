@@ -4,12 +4,12 @@ ms.assetid: 5dab4315-721e-417d-91e0-b38653a65c23
 title: Cuadro de diálogo Cancelar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ac2f0ba12c442b8b0f4445077497c26649b79714d1a1d77af7b2a82e6c1a3f2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1022a7613f3f5341d8c833b7cbe2645ce871aeb7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120105395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158947"
 ---
 # <a name="cancel-dialog"></a>Cuadro de diálogo Cancelar
 

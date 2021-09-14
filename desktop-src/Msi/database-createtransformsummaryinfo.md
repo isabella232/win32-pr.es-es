@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: e1daa3e31ccfb49e49842994d6203b58534d86c111cd98652e66079fa47322cf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 824f46fd17eb51fddbf09c2f34569574c50c570a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119745735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127158654"
 ---
 # <a name="databasecreatetransformsummaryinfo-method"></a>Método Database.CreateTransformSummaryInfo
 
@@ -146,7 +146,7 @@ Para validar que la transformación se aplica a un paquete que tiene el [**upgra
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para crear un flujo de información de resumen para una transformación, las propiedades [**ProductCode**](productcode.md) y [**ProductVersion**](productversion.md) deben definirse en las tablas [Property](property-table.md) de las bases de datos base y de referencia. Si se usa msiTransformValidationUpgradeCode, la [**propiedad UpgradeCode**](upgradecode.md) debe definirse en ambas bases de datos.
 
@@ -156,13 +156,13 @@ Para crear un flujo de información de resumen para una transformación, las pro
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID IDatabase se define como \_ 000C109D-0000-0000-C000-00000000046<br/>                                                                                                                                                                            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
