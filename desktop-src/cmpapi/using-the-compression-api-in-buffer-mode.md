@@ -4,24 +4,24 @@ ms.assetid: 0A062E5D-E5FA-4098-B76E-E136FC74D853
 title: Uso de compression API en modo de búfer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79a63b8a7dabc7b61c85abb192f855f094a6e271a99997b9e98b849614d53527
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 676a5bea1ea4fa673bbf9a8fc2caf9fe84d9bc1e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048943"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966955"
 ---
 # <a name="using-the-compression-api-in-buffer-mode"></a>Uso de compression API en modo de búfer
 
-En los ejemplos siguientes se muestra cómo usar compression API en modo de búfer. El modo búfer se desarrolló para facilitar el uso y divide automáticamente el búfer de entrada en bloques de un tamaño adecuado para el algoritmo de compresión seleccionado. El modo búfer da formato y almacena automáticamente el tamaño de búfer sin comprimir en el búfer comprimido donde está disponible para el descomprimidor. El tamaño del búfer comprimido no se guarda automáticamente y la aplicación debe guardarlo para la descompresión. No incluya la marca **COMPRESS \_ RAW** al llamar a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor) si desea usar la API de compresión en modo de búfer.
+En los ejemplos siguientes se muestra cómo usar compression API en modo de búfer. El modo búfer se desarrolló para facilitar el uso y divide automáticamente el búfer de entrada en bloques de un tamaño adecuado para el algoritmo de compresión seleccionado. El modo búfer da formato y almacena automáticamente el tamaño de búfer sin comprimir en el búfer comprimido donde está disponible para el descomprimidor. El tamaño del búfer comprimido no se guarda automáticamente y la aplicación debe guardarlo para la descompresión. No incluya la marca **COMPRESS \_ RAW** al llamar a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor) si desea usar compression API en modo de búfer.
 
 Se recomienda el modo de búfer en la mayoría de los casos. Para obtener más información sobre cómo usar el modo de bloque, consulte [Uso de la API de compresión en modo de bloque.](using-the-compression-api-in-block-mode.md)
 
-Las aplicaciones que usan el modo de búfer o de bloque tienen la opción de especificar una rutina de asignación de memoria personalizada al llamar a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) [**o CreateDecompressor.**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor) Consulte la [sección Using the Compression API in block mode](using-the-compression-api-in-block-mode.md) (Uso de la API de compresión en modo de bloque) para obtener un ejemplo de una rutina de asignación personalizada simple.
+Las aplicaciones que usan el modo de búfer o de bloque tienen la opción de especificar una rutina de asignación de memoria personalizada al llamar a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) [**o CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). Consulte la [sección Uso de compression API en modo de](using-the-compression-api-in-block-mode.md) bloque para obtener un ejemplo de una rutina de asignación personalizada simple.
 
 **Windows 8 y Windows Server 2012:** Para usar el código de ejemplo siguiente, debe ejecutar Windows 8 o Windows Server 2012 y tener "compressapi.h" y "cabinet.dll" y un vínculo a "Cabinet.lib".
 
-El siguiente fragmento de código muestra la compresión de archivos con el algoritmo de compresión XPRESS y la codificación de Huffman mediante la API de compresión en modo de búfer. La aplicación acepta un archivo, comprime su contenido y genera un archivo comprimido. En primer lugar, la aplicación llama a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) con **COMPRESS ALGORITHM \_ \_ XPRESS \_ HUFF** para generar un reanimación. A continuación, [**llama a Compress**](/windows/desktop/api/compressapi/nf-compressapi-compress), con *CompressedBufferSize* establecido en 0, para consultar el tamaño necesario del búfer comprimido. Asigna un búfer de salida al *valor CompressedBufferSize.* La aplicación llama a **Compress** una segunda vez para realizar la compresión real. Por último, la aplicación escribe los datos comprimidos en el archivo de salida.
+El siguiente fragmento de código muestra la compresión de archivos con el algoritmo de compresión XPRESS y la codificación de Huffman mediante compression API en modo de búfer. La aplicación acepta un archivo, comprime su contenido y genera un archivo comprimido. En primer lugar, la aplicación llama a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) con **COMPRESS ALGORITHM \_ \_ XPRESS \_ HUFF para** generar un desenlace. A continuación, [**llama a Compress**](/windows/desktop/api/compressapi/nf-compressapi-compress), con *CompressedBufferSize* establecido en 0, para consultar el tamaño necesario del búfer comprimido. Asigna un búfer de salida al valor *CompressedBufferSize.* La aplicación llama a **Compress** una segunda vez para realizar la compresión real. Por último, la aplicación escribe los datos comprimidos en el archivo de salida.
 
 
 ```C++

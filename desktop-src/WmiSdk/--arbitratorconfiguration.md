@@ -35,16 +35,16 @@ api_type:
 - Schema
 api_location:
 - Root
-ms.openlocfilehash: 4344eb368a96d2d47207748cba622d07d11ef78e0a046c6ea169305d9c587957
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 906164d6d715ed70bccecf61fba767ada622c74f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118321125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967176"
 ---
 # <a name="__arbitratorconfiguration-class"></a>\_\_Clase Desconfiguración
 
-La **\_ \_ claseConfigurationConfiguration** es una clase de configuración que limita los recursos internos que usan las operaciones iniciadas por clientes WMI. Se trata de una clase singleton que reside en el espacio \\ de nombres raíz. La clase se genera internamente, por lo que no hay ningún archivo MOF para ella.
+La **\_ \_ claseConfiguration Es** una clase de configuración que limita los recursos internos que usan las operaciones iniciadas por clientes WMI. Se trata de una clase singleton que reside en el espacio \\ de nombres raíz. La clase se genera internamente, por lo que no hay ningún archivo MOF para ella.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -78,7 +78,7 @@ class __ArbitratorConfiguration : __SystemClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **\_ \_ claseConfigurationConfiguration** tiene estos tipos de miembros:
 
@@ -203,7 +203,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Sin usar. Número de infracciones de cuota permitidas antes de cancelar una tarea.
+Sin usar. Número de infracciones de cuota permitidas antes de que se cancele una tarea.
 
 </dd> <dt>
 
@@ -363,15 +363,15 @@ Sin usar. Número máximo de usuarios conectados.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-**\_ \_ ConfigurationConfiguration** se hereda de [**\_ \_ SystemClass.**](--systemclass.md)
+**\_ \_ Se hereda** De [**\_ \_ SystemClass.**](--systemclass.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |

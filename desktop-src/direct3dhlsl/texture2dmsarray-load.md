@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 8e5e85f3d4d75a6c4a5846095f8dfa43888aea7da75b234ede5340c960b7b291
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d5af5928a95f15880e5a110daaf231badb202c56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120022905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884049"
 ---
 # <a name="texture2dmsarrayload-methods"></a>Métodos Texture2DMSArray::Load
 
@@ -35,7 +35,7 @@ Lee los datos de textura.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

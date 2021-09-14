@@ -4,12 +4,12 @@ description: En la función de ejemplo siguiente se enumeran los subprocesos en 
 ms.assetid: 67194627-8239-46d2-93e7-eb8e5f6c56e6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e66ebd58ebb50a2a7d96fa41c9f9449dbe5d85744c0ba09405ef0ffaf5fcedd0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 300b162af296b0c556cce3d3d62e59bd4278b1d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119513835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890473"
 ---
 # <a name="traversing-the-thread-list"></a>Recorrer la lista de subprocesos
 

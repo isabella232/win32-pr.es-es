@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Instrucción SELECT para consultas de esquema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dd08cffa3fccc9a8cc2bf50452dcefcc1b7bfc0a62e512069b2db098bc6d13c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91f9f3f9ae8cc11a94d4d868e36af56ee7dffd2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118315679"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965268"
 ---
 # <a name="select-statement-for-schema-queries"></a>Instrucción SELECT para consultas de esquema
 
-Las consultas de datos de esquema usan la instrucción SELECT con una sintaxis similar a la de las [consultas de datos](select-statement-for-data-queries.md). La diferencia es el uso de una clase especial denominada "meta class", que identifica la consulta \_ como una consulta de esquema.
+Las consultas de datos de esquema usan la instrucción SELECT con una sintaxis similar a la de las [consultas de datos](select-statement-for-data-queries.md). La diferencia es el uso de una clase especial denominada "meta \_ class", que identifica la consulta como una consulta de esquema.
 
 En el ejemplo siguiente se solicitan todas las definiciones de clase que están dentro del espacio de nombres actual.
 
@@ -36,7 +36,7 @@ SELECT * FROM meta_class WHERE __this ISA "Win32_LogicalDisk"
 
 
 
-La propiedad especial denominada **\_ \_ this** identifica la clase de destino para una consulta de esquema. Tenga en cuenta que el operador ISA debe usarse con esta **propiedad \_ \_** para solicitar definiciones para las subclases de la clase de destino. La consulta anterior devuelve la definición de la [**clase \_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) y las definiciones de todas sus subclases.
+La propiedad especial denominada **\_ \_ this** identifica la clase de destino para una consulta de esquema. Tenga en cuenta que el operador ISA debe usarse con **esta \_ \_** propiedad para solicitar definiciones para las subclases de la clase de destino. La consulta anterior devuelve la definición de la [**clase \_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) y las definiciones de todas sus subclases.
 
 En el ejemplo siguiente se muestra cómo solicitar una definición de clase para una sola clase mediante la propiedad del sistema **\_ \_ Class.**
 

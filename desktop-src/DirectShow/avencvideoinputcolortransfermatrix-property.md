@@ -4,12 +4,12 @@ ms.assetid: de03f3e6-12c8-4a7c-a424-ef974d223e70
 title: Propiedad AVEncVideoInputColorTransferMatrix (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41927641a43b104d59248cdcba5743dda647cf24afeb3970e9a87cd87b983b54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 362c73f5527f5db30e906b46e93a9e6f7c1733fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119275335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161758"
 ---
 # <a name="avencvideoinputcolortransfermatrix-property"></a>Propiedad AVEncVideoInputColorTransferMatrix
 
@@ -27,7 +27,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es miembro de la [**enumeración eAVEncVideoColorTransferMatrix.**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolortransfermatrix)
+El valor de esta propiedad es un miembro de la [**enumeración eAVEncVideoColorTransferMatrix.**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolortransfermatrix)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,13 +35,13 @@ El valor de esta propiedad es miembro de la [**enumeración eAVEncVideoColorTran
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

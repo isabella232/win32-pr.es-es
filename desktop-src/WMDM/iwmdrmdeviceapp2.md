@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 17bd0d7aa729103a81fca6732ed178ac5ced583566dd353a28716d4933e602ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df4bfdb023198631b16ffa0e511488fa52423c5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118584499"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890289"
 ---
 # <a name="iwmdrmdeviceapp2-interface"></a>Interfaz IWMDRMDeviceApp2
 
@@ -32,9 +32,9 @@ Para obtener esta interfaz, llame **a CoCreateInstance** y pase CLSID \_ WMDRMDe
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **interfaz IWMDRMDeviceApp2** hereda de [**IWMDRMDeviceApp.**](iwmdrmdeviceapp.md) **IWMDRMDeviceApp2** también tiene estos tipos de miembros:
+La **interfaz IWMDRMDeviceApp2** hereda de [**IWMDRMDeviceApp**](iwmdrmdeviceapp.md). **IWMDRMDeviceApp2** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -46,7 +46,7 @@ La **interfaz IWMDRMDeviceApp2** tiene estos métodos.
 
 | Método                                                            | Descripción                                                          |
 |:------------------------------------------------------------------|:---------------------------------------------------------------------|
-| [**QueryDeviceStatus2**](iwmdrmdeviceapp2-querydevicestatus2.md) | Consulta un dispositivo para un estado o funcionalidad específicos de DRM.<br/> |
+| [**QueryDeviceStatus2**](iwmdrmdeviceapp2-querydevicestatus2.md) | Consulta un dispositivo para obtener un estado o una funcionalidad de DRM específicos.<br/> |
 
 
 
@@ -59,7 +59,7 @@ La **interfaz IWMDRMDeviceApp2** tiene estos métodos.
 [**IWMDRMDeviceApp**](iwmdrmdeviceapp.md)
 </dt> <dt>
 
-[**Control del contenido protegido en la aplicación**](handling-protected-content-in-the-application.md)
+[**Control de contenido protegido en la aplicación**](handling-protected-content-in-the-application.md)
 </dt> <dt>
 
 [**Interfaces para aplicaciones**](interfaces-for-applications.md)

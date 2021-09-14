@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fa56b175d9047935b9f92829823ba2608536ddabb90cb0ad674b86b73cc17475
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0566d423d277dc3f39f36f8c1fda297ec917eb7f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119674735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966615"
 ---
 # <a name="id3dxskininfogetbonename-method"></a>Método ID3DXSkinInfo::GetNameName
 
@@ -66,7 +66,7 @@ Devuelve el nombre del pánseo. No libera esta cadena.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,29 +1,29 @@
 ---
 title: Propiedad ColorDepth de IMsRdpClient
-description: Profundidad de color (en bits por píxel) de la conexión del control.
+description: Profundidad de color (en bits por píxel) para la conexión del control.
 ms.assetid: 9ba4d8fe-20cd-40e9-a71a-0dce0ddd29fc
 ms.tgt_platform: multiple
 keywords:
 - ColorDepth, propiedad Servicios de Escritorio remoto
 - Propiedad ColorDepth Servicios de Escritorio remoto , interfaz IMsRdpClient
 - Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad ColorDepth
-- Propiedad ColorDepth Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Propiedad ColorDepth Servicios de Escritorio remoto , interfaz IMsRdpClient2
 - Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad ColorDepth
-- Propiedad ColorDepth Servicios de Escritorio remoto interfaz , IMsRdpClient3
+- Propiedad ColorDepth Servicios de Escritorio remoto , interfaz IMsRdpClient3
 - Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad ColorDepth
-- Propiedad ColorDepth Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Propiedad ColorDepth Servicios de Escritorio remoto , interfaz IMsRdpClient4
 - Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad ColorDepth
-- Propiedad ColorDepth Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Propiedad ColorDepth Servicios de Escritorio remoto , interfaz IMsRdpClient5
 - Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad ColorDepth
-- Propiedad ColorDepth Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Propiedad ColorDepth Servicios de Escritorio remoto , interfaz IMsRdpClient6
 - Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad ColorDepth
-- Propiedad ColorDepth Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Propiedad ColorDepth Servicios de Escritorio remoto , interfaz IMsRdpClient7
 - Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad ColorDepth
-- Propiedad ColorDepth Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Propiedad ColorDepth Servicios de Escritorio remoto , interfaz IMsRdpClient8
 - Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad ColorDepth
-- Propiedad ColorDepth Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Propiedad ColorDepth Servicios de Escritorio remoto , interfaz IMsRdpClient9
 - Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad ColorDepth
-- Propiedad ColorDepth Servicios de Escritorio remoto interfaz , IMsRdpClient10
+- Propiedad ColorDepth Servicios de Escritorio remoto , interfaz IMsRdpClient10
 - Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad ColorDepth
 topic_type:
 - apiref
@@ -64,20 +64,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 995509385cabc18a7768300e29482b00f674ce347463b0b8aeb2c3af7e6a209b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d5099deff3913d23173a466245cbf08fd5b95a6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119475755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891052"
 ---
-# <a name="imsrdpclientcolordepth-property"></a>IMsRdpClient::ColorDepth, propiedad
+# <a name="imsrdpclientcolordepth-property"></a>Propiedad IMsRdpClient::ColorDepth
 
-Profundidad de color (en bits por píxel) de la conexión del control.
+Profundidad de color (en bits por píxel) para la conexión del control.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -100,7 +100,7 @@ Profundidad de color. Los valores incluyen 8, 15, 16, 24 y 32 bits por píxel.
 
 Si los métodos se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro **valor HRESULT** indica que se ha dado error en la llamada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad no se puede establecer cuando el control está conectado.
 
@@ -120,7 +120,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

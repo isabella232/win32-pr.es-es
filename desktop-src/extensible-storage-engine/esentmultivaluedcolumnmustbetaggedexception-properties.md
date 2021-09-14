@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102320
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 574aa46c9c79f512067623ffce87c6809f80863863100a5597c19d8c907a51ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 24a4c31fd0b2a23290f48c9dcd0713dbdd24ca1b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117708755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963140"
 ---
 # <a name="esentmultivaluedcolumnmustbetaggedexception-properties"></a>Propiedades de EsentMultiValuedColumnMustBeTaggedException
 
@@ -34,7 +34,7 @@ El [tipo EsentMultiValuedColumnMustBeTaggedException](./esentmultivaluedcolumnmu
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentMultiValuedColumnMustBeTaggedException](./esentmultivaluedcolumnmu
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

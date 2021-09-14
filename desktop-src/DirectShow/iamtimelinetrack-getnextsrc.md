@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: dd0257fa614a6581cc31f5416e6f1c2395fcb9444721d3668c9f2d2498e52088
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd8ca25b2d5a551d803e79e69cf8d1095ee47511
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119904645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891924"
 ---
 # <a name="iamtimelinetrackgetnextsrc-method"></a>IamTimelineTrack::GetNextSrc (método)
 
@@ -64,7 +64,7 @@ Puntero a una variable que contiene la hora de inicio de la búsqueda, en unidad
 
 Devuelve S OK si el método recupera un origen o S FALSE en caso \_ \_ contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la hora especificada por *pInOut* se encuentra entre las horas de inicio y de detenerse de un origen, el método recupera ese origen.
 
@@ -91,7 +91,7 @@ Si el método devuelve S \_ OK, la **interfaz IAMTimelineObj** que devuelve tien
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Constructor EsentInvalidSettingsException'
+description: Más información sobre el constructor EsentInvalidSettingsException
 title: Constructor EsentInvalidSettingsException
 TOCTitle: 'EsentInvalidSettingsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidSettingsException.#ctor
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 87d9ab78d15910c1d48dbcfd47aa6defce7efc9bb72c2ea4eb3d65f513487351
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12d0ca57605fc64a6087465f6866d67d478e1ae4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119040983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963211"
 ---
 # <a name="esentinvalidsettingsexception-constructor"></a>Constructor EsentInvalidSettingsException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidSettingsException()
 public EsentInvalidSettingsException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

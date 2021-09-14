@@ -4,14 +4,14 @@ ms.assetid: 7e98a9f4-113b-45d0-ae55-7dc3f2af099e
 title: Propiedad AVEncCommonRealTime (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b718f4f58d230448689700fc2e681c109e645d48cb33eb1788e45ac607350951
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a03e51da1a088603273da3d083573e5921edf7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118403895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161982"
 ---
-# <a name="avenccommonrealtime-property"></a>AvEncCommonRealTime, propiedad
+# <a name="avenccommonrealtime-property"></a>Propiedad AVEncCommonRealTime
 
 Especifica si la aplicación requiere un rendimiento de codificación en tiempo real.
 
@@ -25,19 +25,19 @@ Esta propiedad es de lectura y escritura.
 
 **CODECAPI \_ AVEncCommonRealTime**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para especificar que la codificación se debe realizar en tiempo real, establezca esta propiedad en **VARIANT \_ TRUE.** Los códecs también pueden devolver esta propiedad como una funcionalidad.
+Para especificar que la codificación debe realizarse en tiempo real, establezca esta propiedad en **VARIANT \_ TRUE.** Los códecs también pueden devolver esta propiedad como una funcionalidad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio aplicaciones para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 

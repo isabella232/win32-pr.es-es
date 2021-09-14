@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXMatrixRotationYawPitchRoll (D3DX10Math.h): crea una matriz con una yaw, pitch y roll especificada.'
+description: 'Función D3DXMatrixRotationYawPitchRoll (D3DX10Math.h): crea una matriz con un yaw, pitch y roll especificados.'
 ms.assetid: a3ef2b57-275f-484a-88fc-aaa5e470717c
 title: Función D3DXMatrixRotationYawPitchRoll (D3DX10Math.h)
 ms.topic: reference
@@ -15,15 +15,15 @@ api_location:
 - D3DX10.lib
 - D3DX10.dll
 ms.openlocfilehash: ae00865c45878159dbf86a6f829e9d1cf50337e3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108953"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970084"
 ---
 # <a name="d3dxmatrixrotationyawpitchroll-function-d3dx10mathh"></a>Función D3DXMatrixRotationYawPitchRoll (D3DX10Math.h)
 
-Crea una matriz con una yaw, pitch y roll especificada.
+Crea una matriz con un yaw, pitch y roll especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Puntero a la [**estructura D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultad
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Moverse alrededor del eje Y, en radianes.
+Eje Y alrededor del eje Y, en radianes.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
 Puntero a una estructura D3DXMATRIX con el yaw, pitch y roll especificados.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixRotationYawPitchRoll se puede usar como parámetro para otra función.
 

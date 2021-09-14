@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 811bd31b10ca4e304746f8ba26324b297feca602
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962831"
 ---
 # <a name="jet_setcolumn-structure"></a>JET_SETCOLUMN estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_setcolumn-structure"></a>JET_SETCOLUMN estructura
 
-La **JET_SETCOLUMN** contiene parámetros de entrada y salida [para JetSetColumns.](./jetsetcolumns-function.md) Los campos de la estructura describen qué valor de columna se va a establecer, cómo establecerlo y dónde obtener los datos del conjunto de columnas.
+La **JET_SETCOLUMN** contiene parámetros de entrada y salida [para JetSetColumns](./jetsetcolumns-function.md). Los campos de la estructura describen qué valor de columna se va a establecer, cómo establecerlo y dónde obtener los datos del conjunto de columnas.
 
 ```cpp
     typedef struct {
@@ -43,7 +43,7 @@ La **JET_SETCOLUMN** contiene parámetros de entrada y salida [para JetSetColumn
     } JET_SETCOLUMN;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **columnid**
 
@@ -72,7 +72,7 @@ Grupo de bits que contienen las opciones que se usarán para esta llamada, que i
 | <p>JET_bitSetUniqueMultiValues</p> | <p>Aplica valores distintos en una columna con varios valores. Esta opción compara los datos de la columna de origen, sin ninguna transformación, con otros valores de columna existentes y se devuelve un error si se encuentra un duplicado. Si se proporciona esta opción, JET_bitSetAppendLv, JET_bitSetOverwriteLV y JET_bitSetSizeLV también se pueden proporcionar.</p> | 
 | <p>JET_bitSetUniqueNormalizedMultiValues</p> | <p>Aplica valores distintos en una columna con varios valores. Esta opción compara la transformación normalizada de clave de los datos de columna con otros valores de columna existentes transformados de forma similar y se devuelve un error si se encuentra un duplicado. Si se proporciona esta opción, JET_bitSetAppendLv, JET_bitSetOverwriteLV y JET_bitSetSizeLV también se pueden proporcionar.</p> | 
 | <p>JET_bitSetRevertToDefaultValue</p> | <p>Hace que la columna devuelva el valor de columna predeterminado en las operaciones de recuperación de columnas posteriores. Se quitan todos los valores de columna existentes. Esta opción solo es aplicable a las columnas etiquetadas, dispersas o con varios valores.</p> | 
-| <p>JET_bitSetIntrinsicLV</p> | <p>Mantiene el valor largo, las columnas de <a href="gg269213(v=exchg.10).md">tipo JET_coltypLongText</a> o JET_coltypeLongBinary, almacenados con los datos de registro restantes si es posible. Normalmente, las columnas largas se almacenan por separado cuando su longitud supera los 1024 bytes o, de lo contrario, hace que la longitud del registro supere su limitación de tamaño de página relacionada. Sin embargo, si se establece esta opción, se producirá un error en la operación de establecimiento de columna JET_errColumnTooBig almacenar este valor de columna independiente de los datos de registro restantes.</p> | 
+| <p>JET_bitSetIntrinsicLV</p> | <p>Mantiene el valor largo, las columnas de <a href="gg269213(v=exchg.10).md">tipo JET_coltypLongText</a> o JET_coltypeLongBinary, almacenados con los datos de registro restantes si es posible. Normalmente, las columnas largas se almacenan por separado cuando su longitud supera los 1024 bytes o, de lo contrario, hace que la longitud del registro supere su limitación de tamaño de página relacionada. Sin embargo, si se establece esta opción, se producirá un error en la operación de establecimiento de columna JET_errColumnTooBig en lugar de almacenar este valor de columna independiente de los datos de registro restantes.</p> | 
 
 
 

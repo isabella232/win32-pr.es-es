@@ -4,12 +4,12 @@ description: Establece el estado del elemento especificado en el adaptador.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: c80ca670be26ffdcefa5e89cee079d2225d204ee97e99e41f69686300a46230b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8cbeacdb8c6020441b5dd74a9f9233a6c112b4f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119042913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966348"
 ---
 # <a name="idxcoreadaptersetstate-method"></a>IDXCoreAdapter::SetState (método)
 
@@ -78,6 +78,6 @@ Si la función se realiza correctamente, devuelve **S_OK**. De lo contrario, dev
 |E_INVALIDARG|Se proporciona un tamaño de búfer insuficiente para *inputData* (o *para inputStateDetails* cuando se necesita un búfer de detalles de estado de entrada).|
 |E_POINTER|`nullptr` se proporcionó para *inputData* (o *para inputStateDetails* donde es necesario un búfer de detalles de estado de entrada).|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [IDXCoreAdapter,](./nn-dxcore_interface-idxcoreadapter.md) [referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

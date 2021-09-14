@@ -4,14 +4,14 @@ ms.assetid: eee85330-098e-4f21-81b7-a493abbd599b
 title: AVDecVideoAcceleration_VC1 propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1767206fab479dbcae1dec5e768b21d768440a66776b1f41610b75be4190d6c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1fcdbe265f5a65212a2846b724f570b024ea0ab8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118663844"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162110"
 ---
-# <a name="avdecvideoacceleration_vc1-property"></a>Propiedad AVDecVideoAcceleration \_ VC1
+# <a name="avdecvideoacceleration_vc1-property"></a>AvDecVideoAcceleration \_ VC1, propiedad
 
 Habilita o deshabilita la aceleración de hardware para lacodización de vídeo vc-1.
 
@@ -35,13 +35,13 @@ Si el valor es cero, el descodificador no usa la aceleración de vídeo directX 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a9271e922fe33865feb36b361ae97bb16298b504fb6cbb14066fbd6976c8065e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eeea5563ca9a2548507d3b4333d857d7cc156dd3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119812415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892233"
 ---
 # <a name="iamtimelinesetdefaulttransition-method"></a>IamTimeline::SetDefaultTransition (método)
 
@@ -56,7 +56,7 @@ Puntero a una variable que contiene el GUID de la transición predeterminada.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si no establece una transición predeterminada o si la transición que especifique como predeterminada produce un error, DES usa su propia transición predeterminada.
 
@@ -81,7 +81,7 @@ Si no establece una transición predeterminada o si la transición que especifiq
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

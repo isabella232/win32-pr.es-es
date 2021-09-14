@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Clases de Active Directory asignación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc38e91d52b59a206a0b64465d0f9710f6d515c9487853824477b7f4f6a126aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a606cfacc2e9d56ef07973df182f5ce1a65be35
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967159"
 ---
 # <a name="mapping-active-directory-classes"></a>Clases de Active Directory asignación
 
-Dado Active Directory tiene una amplia variedad de objetos posibles, WMI no puede crear una asignación uno a uno directa. En su lugar, el proveedor de servicios de directorio usa reglas para asignar clases entre las dos tecnologías.
+Dado Active Directory tiene una amplia variedad de objetos posibles, WMI no puede crear una asignación directa uno a uno. En su lugar, el proveedor de Servicios de directorio usa reglas para asignar clases entre las dos tecnologías.
 
 En este tema se de abordan las siguientes secciones:
 
@@ -23,32 +23,32 @@ En este tema se de abordan las siguientes secciones:
 -   [Clases de asociación](#association-classes)
 
 > [!Note]  
-> Para obtener más información sobre la compatibilidad y la instalación de este componente en un sistema operativo específico, vea Disponibilidad del [sistema operativo de componentes WMI](operating-system-availability-of-wmi-components.md).
+> Para obtener más información sobre la compatibilidad y la instalación de este componente en un sistema operativo específico, vea Disponibilidad del sistema operativo [de componentes WMI](operating-system-availability-of-wmi-components.md).
 
  
 
 ## <a name="mapping-classes"></a>Clases de asignación
 
-En la lista siguiente se describen las directrices que usa el proveedor de servicios de directorio para asignar Active Directory a clases WMI:
+En la lista siguiente se describen las directrices que usa el proveedor de servicios de directorio para asignar Active Directory clases a clases WMI:
 
 -   Cada clase abstracta del esquema Active Directory asigna a una clase abstracta en el esquema WMI.
 
-    En el esquema WMI, cada clase abstracta tiene el prefijo DS \_ . Por ejemplo, la **clase person** del esquema Active Directory asigna a la clase WMI **\_ de persona DS.**
+    En el esquema WMI, cada clase abstracta tiene como prefijo DS \_ . Por ejemplo, la **clase person** del esquema Active Directory asigna a la clase WMI **de \_ persona DS.**
 
--   Cada clase no existente del esquema Active Directory asigna a las dos clases siguientes del esquema WMI:
+-   Cada clase no existente del esquema Active Directory asigna a las dos clases siguientes en el esquema WMI:
 
-    -   La primera clase asignada tiene el prefijo ADS \_ . Se trata de clases abstractas, asignadas según las reglas siguientes.
-    -   La segunda clase asignada es una clase noabstract con el prefijo de \_ nombre DS. Esta clase se deriva de la clase \_ abstracta ADS, con la adición del [**calificador Provider.**](/windows/desktop/api/Provider/nl-provider-provider)
+    -   La primera clase asignada tiene como prefijo ADS \_ . Se trata de clases abstractas, asignadas según las reglas siguientes.
+    -   La segunda clase asignada es una clase no comercial con el prefijo de \_ nombre DS. Esta clase se deriva de la clase \_ abstracta ADS, con la adición del [**calificador Provider.**](/windows/desktop/api/Provider/nl-provider-provider)
 
-    Por ejemplo, la **clase de** usuario del esquema Active Directory asigna a dos clases. La primera clase es la clase **\_ abstracta de usuario** ads, asignada según las reglas siguientes. La segunda clase es la clase no administradora del usuario **DS. \_** Se deriva del usuario **ads \_ y** tiene el [**calificador Provider**](/windows/desktop/api/Provider/nl-provider-provider) agregado.
+    Por ejemplo, la **clase de** usuario del esquema Active Directory asigna a dos clases. La primera clase es la clase **\_ abstracta de usuario ads,** asignada según las reglas siguientes. La segunda clase es la clase no administradora del usuario de **DS. \_** Se deriva del usuario **ads \_ y** tiene el [**calificador Provider**](/windows/desktop/api/Provider/nl-provider-provider) agregado.
 
--   A menos que se especifique lo contrario, el nombre de una clase asignada es el valor desasignado de la propiedad **LDAP-Display-Name** de la Active Directory asignación.
+-   A menos que se especifique lo contrario, el nombre de una clase asignada es el valor de la propiedad **LDAP-Display-Name** de la Active Directory asignación.
 -   Si la **propiedad Sub-Class-Of** está presente en la clase Active Directory, la clase asignada a WMI se deriva de la clase especificada.
 
-    Si la **propiedad Sub-Class-Of** no está presente, la clase asignada a WMI se deriva de la clase raíz LDAP de **DS, \_ \_ \_** tal como se especifica en el archivo MOF.
+    Si la **propiedad Sub-Class-Of** no está presente, la clase asignada a WMI se deriva de la clase raíz LDAP de **DS, \_ \_ \_** como se especifica en el archivo MOF.
 
     > [!Note]  
-    > Esta clase tiene la **propiedad de clave ADSIPath,** con un tipo **VT \_ BSTR**. Esta es la ruta de acceso adsi única que identifica esta instancia. Active Directory solo admite la herencia única, por lo que esto funciona.
+    > Esta clase tiene la **propiedad de clave ADSIPath,** con un tipo **VT \_ BSTR**. Esta es la ruta de acceso ADSI única que identifica esta instancia. Active Directory solo admite la herencia única, por lo que esto funciona.
 
      
 
@@ -57,7 +57,7 @@ En la lista siguiente se describen las directrices que usa el proveedor de servi
 
 El resto de las propiedades adsi se asignan a calificadores de clase y propiedades según las tablas siguientes. Todos los calificadores se asignan con un valor de marca calificador de `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` .
 
-A continuación se muestra información de asignación para la clase Active Directory, que muestra el calificador WMI y el tipo de calificador WMI para cada Active Directory propiedad.
+A continuación se muestra información de asignación para Active Directory clase , que muestra el calificador WMI y el tipo de calificador WMI para cada Active Directory propiedad.
 
 <dl> <dt>
 
@@ -93,7 +93,7 @@ Se asigna directamente desde el valor de cadena.
 
 **GovernsId** (**VT \_ BSTR**)
 
-Asignado a partir de la representación de cadena del OID; por ejemplo, "{ 1 3 3 6 }".
+Se asigna a partir de la representación de cadena del OID; por ejemplo, "{ 1 3 3 6 }".
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ No asignado.
 
 **ObjectClassCategory** (**VT \_ I4**)
 
-Asignado directamente desde el valor entero. Además, si el valor es Abstract(2), también se crea el calificador **CIM \_ DE VT BOOL** estándar, denominado calificador **"Abstract".**
+Se asigna directamente desde el valor entero. Además, si el valor es Abstract(2), también se crea el calificador **CIM \_ VT BOOL** estándar, denominado **calificador "Abstract".**
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Asignado directamente desde el valor entero. Además, si el valor es Abstract(2)
 
 **RDNATTID** (**VT \_ BSTR**)
 
-Asignado a partir de la representación de cadena del valor OID; por ejemplo, "{ 1 3 3 6 }". Además, la propiedad identificada aquí se anota con el calificador CIM **indexado** estándar establecido en **TRUE.**
+Se asigna a partir de la representación de cadena del valor OID; por ejemplo, "{ 1 3 3 6 }". Además, la propiedad identificada aquí se anota con el calificador CIM **indexado** estándar establecido en **TRUE.**
 
 </dd> <dt>
 
@@ -160,7 +160,7 @@ Cada propiedad de esta lista se asigna a una propiedad WMI. Además, cada propie
 
 </dd> <dt>
 
-**Debe contener el sistema**
+**System-Must-Contain**
 </dt> <dd>
 
 Cada propiedad de esta lista se asigna a una propiedad WMI. Se crea **el \_ calificador** CIM not null estándar para cada uno de ellos. Además, cada propiedad se anota con un calificador **system,** establecido en **TRUE.**
@@ -169,11 +169,11 @@ Cada propiedad de esta lista se asigna a una propiedad WMI. Se crea **el \_ cali
 
 ## <a name="mapping-attributes"></a>Atributos de asignación
 
-El proveedor de Servicios de directorio asigna cada atributo de una clase Active Directory a exactamente una propiedad de la clase WMI correspondiente según las reglas de esta sección. En general, el proveedor de servicios de directorio asigna a la propiedad WMI el nombre de la versión modificada del valor **LDAP-Display-Name** del atributo Active Directory ldap.
+El proveedor de Servicios de directorio asigna cada atributo de una clase Active Directory a exactamente una propiedad de la clase WMI correspondiente según las reglas de esta sección. En general, el proveedor de servicios de directorio nombra la propiedad WMI como la versión modificada del valor **LDAP-Display-Name** del Active Directory atributo.
 
-Si la Active Directory propiedad **Is-Single-Valued** es **FALSE,** esta propiedad WMI se combina con el operador OR con **CIM FLAG \_ \_ ARRAY**. Tenga en cuenta que cada propiedad se etiqueta con el **\_ calificador VT BSTR,** **ADSyntax**. Representa la sintaxis Active Directory subyacente.
+Si la Active Directory propiedad **Is-Single-Valued** es **FALSE**, esta propiedad WMI se combina con el operador OR con **CIM FLAG \_ \_ ARRAY**. Tenga en cuenta que cada propiedad se etiqueta con el **\_ calificador VT BSTR,** **ADSyntax**. Representa la sintaxis Active Directory subyacente.
 
-En la tabla siguiente se muestra la asignación de la sintaxis Active Directory al tipo de datos de propiedad WMI.
+En la tabla siguiente se muestra la asignación de la Active Directory sintaxis al tipo de datos de propiedad WMI.
 
 
 
@@ -184,8 +184,8 @@ En la tabla siguiente se muestra la asignación de la sintaxis Active Directory 
 | **Cadena que no tiene en cuenta mayúsculas de minúsculas**                                   | **CIM \_ STRING**                                                         |
 | [**Cadena que distingue mayúsculas de minúsculas**](/windows/desktop/ADSchema/s-string-case-sensitive) | **CIM \_ STRING**                                                         |
 | [**Nombre distintivo**](/windows/desktop/ADSchema/s-object-ds-dn)             | **CIM \_ STRING**                                                         |
-| [**DN-Binary**](/windows/desktop/ADSchema/s-object-dn-binary)                  | Objeto incrustado de la **clase DN \_ con \_ binario** definido a continuación.<br/> |
-| [**Cadena DN**](/windows/desktop/ADSchema/s-object-dn-string)                  | Objeto incrustado de la **clase DN \_ con la \_ cadena** definida a continuación.<br/> |
+| [**DN-Binary**](/windows/desktop/ADSchema/s-object-dn-binary)                  | Objeto incrustado de clase **DN \_ con \_ binario** definido a continuación.<br/> |
+| [**DN-String**](/windows/desktop/ADSchema/s-object-dn-string)                  | Objeto incrustado de la **clase DN \_ con \_ cadena** definida a continuación.<br/> |
 | [**Enumeración**](/windows/desktop/ADSchema/s-enumeration)                     | **CIM \_ SINT32**                                                         |
 | [**Enumeración**](/windows/desktop/ADSchema/s-enumeration)                     | **CIM \_ STRING**                                                         |
 | [**Entero**](/windows/desktop/ADSchema/s-integer)                             | **CIM \_ SINT32**                                                         |
@@ -207,7 +207,7 @@ En la tabla siguiente se muestra la asignación de la sintaxis Active Directory 
 
  
 
-La sintaxis de cadena de octeto, que hace referencia a una matriz de valores **uint8,** presenta un problema cuando se asigna a WMI porque WMI permite propiedades de tipos **uint8** y matrices de **uint8,** mientras que Active Directory permite propiedades de tipo Octet String, así como matrices de Octet String.
+La sintaxis de cadena de octeto, que hace referencia a una matriz de valores **uint8,** presenta un problema cuando se asigna a WMI porque WMI permite propiedades de tipos **uint8** y matrices de **uint8,** mientras que Active Directory permite propiedades de tipo Cadena de octeto, así como matrices de cadena de octeto.
 
 En el ejemplo siguiente se muestra la clase Proveedor de servicios de directorio que se usa para asignar una matriz de propiedades de tipo Octet String.
 
@@ -219,7 +219,7 @@ Class Uint8Array
 };
 ```
 
-WMI asigna todos los valores de propiedad string Active Directory octetos a instancias incrustadas de **Uint8Array**. De forma similar, WMI asigna matrices de Octet String a matrices de **objetos Uint8Array incrustados.**
+WMI asigna todos los valores de propiedad string Active Directory octeto a instancias incrustadas de **Uint8Array**. De forma similar, WMI asigna matrices de Octet String a matrices de **objetos Uint8Array incrustados.**
 
 En el ejemplo siguiente se muestran las clases asignadas por WMI para DN-Binary y DN-String de propiedad DS.
 
@@ -252,7 +252,7 @@ En la tabla siguiente se muestra cómo WMI asigna el resto de las propiedades Ac
  
 
 > [!Note]  
-> WMI asigna todos los Active Directory calificadores con las clases `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` de calificador.
+> WMI asigna todos los Active Directory calificadores con los `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` tipo de calificador.
 
  
 

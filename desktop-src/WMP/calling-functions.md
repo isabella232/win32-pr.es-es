@@ -6,7 +6,7 @@ keywords:
 - Reproductor de Windows Media máscaras, llamar a funciones en JScript
 - máscaras, llamar a funciones en JScript
 - llamar a funciones en JScript
-- JScript para máscaras, funciones de llamada
+- JScript archivos para máscaras, funciones de llamada
 - Reproductor de Windows Media máscaras,atributo scriptFile en JScript
 - atributo skins,scriptFile en JScript
 - attributes,scriptFile en JScript
@@ -14,12 +14,12 @@ keywords:
 - JScript archivos para máscaras,atributo scriptFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e41b5fdfd6109292a1a42cae43e42e8424348090541fd50a8d83f04d23b8329
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9450c8ca09b75f66f6206c850a656192bb1bb9b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885313"
 ---
 # <a name="calling-functions"></a>Llamadas a funciones
 

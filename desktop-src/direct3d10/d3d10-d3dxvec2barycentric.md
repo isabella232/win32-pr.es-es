@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec2BaryCentric (D3DX10Math.h): devuelve un punto en coordenadas centradas en Barycentric, mediante los vectores 2D especificados.'
+description: 'Función D3DXVec2BaryCentric (D3DX10Math.h): devuelve un punto en coordenadas baricéntricas, mediante los vectores 2D especificados.'
 ms.assetid: 8eceb2c0-26a0-4a7f-9830-85327dcb31ab
 title: Función D3DXVec2BaryCentric (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: be7cf659a3f6c8aeffd07cdc9990e1e705d8b1db84aef019f77c0201961d16a1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b78d08c67fed04af9ef0d54d0c6895106b99208
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118990745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970027"
 ---
 # <a name="d3dxvec2barycentric-function-d3dx10mathh"></a>Función D3DXVec2BaryCentric (D3DX10Math.h)
 
-Devuelve un punto en coordenadas centradas en Barycentric, utilizando los vectores 2D especificados.
+Devuelve un punto en coordenadas baricéntricas, utilizando los vectores 2D especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -90,7 +90,7 @@ Factor de ponderación. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*g* \[ en\]
+*g* \[ in\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -103,9 +103,9 @@ Factor de ponderación. Vea la sección Comentarios.
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
-Puntero a una estructura D3DXVECTOR2 en coordenadas centradas en Barycentric.
+Puntero a una estructura D3DXVECTOR2 en coordenadas centradas en baría.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La función D3DXVec2BaryCentric proporciona una manera de comprender los puntos dentro y alrededor de un triángulo, independientemente de dónde se encuentra realmente el triángulo. Esta función devuelve el punto resultante mediante la siguiente ecuación: V1 + f(V2-V1) + g(V3-V1).
 
@@ -118,11 +118,11 @@ Tenga en cuenta las siguientes relaciones.
 -   Si (f>=0 &, & g==0 &, & 1-f-g>=0), el punto está en la línea V1V2.
 -   Si (f>=0 &, & g>=0 &, & 1-f-g==0), el punto está en la línea V2V3.
 
-Las coordenadas centradas en barras son una forma de coordenadas generales. En este contexto, el uso de coordenadas centradas en Bary representa un cambio en los sistemas de coordenadas. Lo que es cierto para las coordenadas cartesianas es true para las coordenadas barícéntricas.
+Las coordenadas barycéntricas son una forma de coordenadas generales. En este contexto, el uso de coordenadas baricéntricas representa un cambio en los sistemas de coordenadas. Lo que se aplica a las coordenadas cartesianas es true para las coordenadas baríntricas.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec2BaryCentric se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXVec2BaryCentric se puede usar como parámetro para otra función.
 
-Las coordenadas centradas en barras definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas centradas en barras, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Las coordenadas barítricas definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas baricéntricas, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -135,7 +135,7 @@ Las coordenadas centradas en barras definen un punto dentro de un triángulo en 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

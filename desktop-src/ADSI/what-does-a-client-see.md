@@ -7,18 +7,18 @@ keywords:
 - ADSI de extensiones, ¿qué ve un cliente?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33d38563de47cfc80bdcf265249bf3e4cf10bc46471e18672221fed8c3047efa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 398c9fd2d603c1eebb18280c435bec7cb7cd8e14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119082179"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970376"
 ---
 # <a name="what-does-a-client-see"></a>¿Qué ve un cliente?
 
--   Un cliente ve ADSI y todos sus objetos de extensión como un objeto.
--   Un cliente ADSI ve una interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que controla todas las interfaces dual y de distribución del objeto, independientemente de si el agregador implementa la interfaz dual o de distribución en el proveedor o mediante una extensión. Consulte Resolución [de conflictos de nombre de función o propiedad en Automation en Extensiones](resolution-of-functionproperty-name-conflicts-in-automation-in-extensions.md).
--   ADSI no expone ninguna información de tipo a través de los métodos [**IDispatch::GetTypeInfo**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) o [**IDispatch::GetTypeInfoCount.**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) ADSI proporciona información de tipos a través de la biblioteca de tipos.
+-   Un cliente ve ADSI y todos sus objetos de extensión como un objeto .
+-   Un cliente ADSI ve una interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que controla todas las interfaces duales y de distribución del objeto, independientemente de si el agregador implementa la interfaz dual o de distribución en el proveedor o mediante una extensión. Consulte Resolución [de conflictos de nombre de](resolution-of-functionproperty-name-conflicts-in-automation-in-extensions.md)función o propiedad en Automation en Extensiones .
+-   ADSI no expone información de tipo a través de los métodos [**IDispatch::GetTypeInfo**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) o [**IDispatch::GetTypeInfoCount.**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) ADSI proporciona información de tipos a través de la biblioteca de tipos.
 
  
 

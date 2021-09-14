@@ -1,15 +1,15 @@
 ---
 description: Invierte el orden de los campos entrelazados en el vídeo de origen.
 ms.assetid: e7b45fe4-fde3-49ed-a4c7-2706c420edb3
-title: Propiedad AVEncVideoFieldSwap (Codecapi. h)
+title: Propiedad AVEncVideoFieldSwap (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: bd34484357eb2361ce762820aba39becebe96ab0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161781"
 ---
 # <a name="avencvideofieldswap-property"></a>Propiedad AVEncVideoFieldSwap
 
@@ -19,7 +19,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID de propiedad
 
@@ -27,7 +27,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="remarks"></a>Observaciones
 
-Si el valor es **Variant \_ true**, el codificador intercambia el orden de los campos.
+Si el valor es **VARIANT \_ TRUE,** el codificador intercambia el orden de campo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,20 +35,20 @@ Si el valor es **Variant \_ true**, el codificador intercambia el orden de los c
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP de 2000 \[ \| Server\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

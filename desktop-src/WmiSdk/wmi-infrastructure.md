@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Infraestructura wmi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a2bc4492c7d26f422705863609a2e0ec19af5eb930e0aa80f4fd8bb8c26bea4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4370af9ec062ffa845d54eafda054357a76dc07c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119757335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967012"
 ---
 # <a name="wmi-infrastructure"></a>Infraestructura wmi
 

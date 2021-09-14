@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a527fc6ea360e1b0674fc8332097d9bbb297dd1621b625d34a71fe56e6c5226e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97ab5074d65aca3f2e2e5627fca26bb2ad716830
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119730995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962964"
 ---
 # <a name="jet_lgposequals-method-jet_lgpos"></a>JET_LGPOS. Método Equals (JET_LGPOS)
 
@@ -57,7 +57,7 @@ public bool Equals(
 
 #### <a name="parameters"></a>Parámetros
 
-  - Otros  
+  - otro  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
     Instancia de que se va a comparar con esta instancia.
@@ -71,7 +71,7 @@ True si las dos instancias son iguales.
 
 [IEquatable \<T\> . Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

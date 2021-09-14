@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: enumeración JET_coltyp'
-title: Enumeración JET_coltyp
+description: 'Más información sobre: enumeración JET_coltyp datos'
+title: JET_coltyp enumeración
 TOCTitle: JET_coltyp enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_coltyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_coltyp(v=EXCHG.10)
@@ -51,18 +51,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 616dc80d835e22502b6781355a2eff35a6375e05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965752"
 ---
-# <a name="jet_coltyp-enumeration"></a>Enumeración JET_coltyp
+# <a name="jet_coltyp-enumeration"></a>JET_coltyp enumeración
 
-Tipos de columna ESENT.
+Tipos de columna DE ESENT.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -77,7 +77,7 @@ Dim instance As JET_coltyp
 public enum JET_coltyp
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -90,48 +90,48 @@ public enum JET_coltyp
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Nulo</td>
-<td>Tipo de columna null. No es válido para la creación de columnas.</td>
+<td>Nula</td>
+<td>Tipo de columna NULL. No es válido para la creación de columnas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>bit</td>
-<td>True, false o NULL.</td>
+<td>True, False o NULL.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>UnsignedByte</td>
-<td>entero de 1 byte, sin signo.</td>
+<td>Entero de 1 byte, sin signo.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Short</td>
-<td>entero de 2 bytes, con signo.</td>
+<td>Entero de 2 bytes, con signo.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>long</td>
-<td>entero de 4 bytes, con signo.</td>
+<td>Entero de 4 bytes, con signo.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Moneda</td>
-<td>entero de 8 bytes, con signo.</td>
+<td>Entero de 8 bytes, con signo.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>IEEESingle</td>
-<td>una sola precisión IEEE de 4 bytes.</td>
+<td>Precisión sencilla IEEE de 4 bytes.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>IEEEDouble</td>
-<td>IEEE de doble precisión de 8 bytes.</td>
+<td>Precisión doble IEEE de 8 bytes.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DateTime</td>
-<td>Fecha entera, hora fraccionaria.</td>
+<td>Fecha integral, hora fraccionera.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -157,8 +157,8 @@ public enum JET_coltyp
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

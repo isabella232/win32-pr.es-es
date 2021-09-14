@@ -4,7 +4,7 @@ description: Especifica el resultado del método IMsRdpClient8 Reconnect.
 ms.assetid: FB0AC4CF-18F5-4CDD-A75C-59A7CF716688
 ms.tgt_platform: multiple
 keywords:
-- ControlReconnectStatus enumeración Servicios de Escritorio remoto
+- Enumeración ControlReconnectStatus Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 635adbcafd5180dad967e2488b793f6907fd38cc848935a088bee59aad536354
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5638cbdda268dd453881ee1d88085728479aada6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886356"
 ---
 # <a name="controlreconnectstatus-enumeration"></a>Enumeración ControlReconnectStatus
 
 Especifica el resultado del método [**IMsRdpClient8::Reconnect.**](imsrdpclient8-reconnect.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -68,7 +68,7 @@ No se pudo iniciar la operación de reconexión.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

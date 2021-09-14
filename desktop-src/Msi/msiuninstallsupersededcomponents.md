@@ -1,19 +1,19 @@
 ---
 description: Establezca la propiedad MSIUNINSTALLSUPERSEDEDCOMPONENTS en 1 en la tabla Property o en una línea de comandos.
 ms.assetid: ba9b1b2d-1667-48c8-8f1a-9958a1d170da
-title: Propiedad MSIUNINSTALLSUPERSEDCOMPONENTS
+title: Propiedad MSIUNINSTALLSUPERSEDEDCOMPONENTS
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae30e142167e2d080fa4c74c046625338fbf92fd4476b0339d60f77e321ab54a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fcc930a258d8faebe71480f466f2b097fe1eda68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118943946"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161478"
 ---
-# <a name="msiuninstallsupersededcomponents-property"></a>Propiedad MSIUNINSTALLSUPERSEDCOMPONENTS
+# <a name="msiuninstallsupersededcomponents-property"></a>Propiedad MSIUNINSTALLSUPERSEDEDCOMPONENTS
 
-Establezca la **propiedad MSIUNINSTALLSUPERSEDEDCOMPONENTS** en 1 en la tabla [Property](property-table.md) o en una línea de comandos. Cuando esta propiedad se ha establecido en 1, el instalador determina si los componentes de las revisiones reemplazadas se están volviendo redundantes. El instalador puede anular el registro y desinstalar los componentes redundantes para evitar quedarse con componentes huérfanos en el equipo.
+Establezca la **propiedad MSIUNINSTALLSUPERSEDEDCOMPONENTS** en 1 en la tabla [Property](property-table.md) o en una línea de comandos. Cuando esta propiedad se ha establecido en 1, el instalador determina si los componentes de las revisiones reemplazadas se están volviendo redundantes. El instalador puede anular el registro y desinstalar componentes redundantes para evitar dejar componentes huérfanos en el equipo.
 
 Establecer esta propiedad afecta a los componentes de todas las revisiones que se sustituyen. Para habilitar esta funcionalidad para componentes únicos, use el atributo **msidbComponentAttributesUninstallOnSupersedence** en la [tabla Component](component-table.md).
 

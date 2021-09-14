@@ -4,16 +4,16 @@ ms.assetid: dd98aada-8309-428e-9609-2542195bc6ec
 title: Uso de Demux con el Secuencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dec805b4c93432c6532edaefac50e9bd15ad8fac5a7d9672fd358c66e57363fd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e6b9004d6c99db96405797016b0d9854c96dae92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119964675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891636"
 ---
 # <a name="using-the-demux-with-elementary-streams"></a>Uso de Demux con el Secuencias
 
-Cuando la demux MPEG-2 entrega cargas de PES, envía la secuencia de bytes ES en lotes de ejemplos multimedia. El tamaño de muestra predeterminado es de 8 K. La demux inicia un nuevo ejemplo multimedia en cada límite de PES, pero puede dividir una carga de PES única en varias muestras. Por ejemplo, si una carga de PES es de 20 000, se entregará en dos muestras de 8K seguidas de una muestra de 4K. Demux no examina el contenido de la secuencia de bytes. Es el descodificador el que analiza los encabezados de secuencia y busca cambios de formato.
+Cuando la demux MPEG-2 entrega cargas de PES, envía la secuencia de bytes ES en lotes de ejemplos multimedia. El tamaño de muestra predeterminado es de 8 K. La demux inicia un nuevo ejemplo multimedia en cada límite de PES, pero puede dividir una única carga de PES en varios ejemplos. Por ejemplo, si una carga de PES es de 20 000, se entregará en dos muestras de 8K seguidas de una muestra de 4K. Demux no examina el contenido de la secuencia de bytes. Es el descodificador el que analiza los encabezados de secuencia y busca los cambios de formato.
 
 Cuando el pin de salida del filtro demux se conecta al descodificador, ofrece el tipo de medio que se especificó cuando se creó el pin. Dado que demux no examina la secuencia de bytes ES, no valida el tipo de medio. En teoría, un descodificador MPEG-2 debe poder conectarse solo con el tipo principal y el subtipo rellenados, para indicar el tipo de datos. A continuación, el descodificador debe examinar los encabezados de secuencia que llegan a los ejemplos multimedia. Sin embargo, en la práctica, muchos descodificadores no se conectarán a menos que el tipo de medio incluya un bloque de formato completo.
 

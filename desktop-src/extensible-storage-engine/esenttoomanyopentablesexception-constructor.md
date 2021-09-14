@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 02d24c14c3061cdf13fb849ee8fccdd2769b08f0524c0c3151585b6d5a3b8430
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 52ffd4d382689fe3a5dd926ffaae7d33c3f17fe6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119732315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965816"
 ---
 # <a name="esenttoomanyopentablesexception-constructor"></a>Constructor EsentTooManyOpenTablesException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentTooManyOpenTablesException()
 public EsentTooManyOpenTablesException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

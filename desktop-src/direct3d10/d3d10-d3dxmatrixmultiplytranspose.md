@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 55bf8dc8eaed13c6bfdc4a8cedacd02b9c5cc5aa11ca0d3e494ed194c8cc9245
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fcf3d5578aa6e2ad13bd3f91dfd2206d6eaf0b13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965096"
 ---
 # <a name="d3dxmatrixmultiplytranspose-function-d3dx10mathh"></a>Función D3DXMatrixMultiplyTranspose (D3DX10Math.h)
 
@@ -75,11 +75,11 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
 Puntero a una estructura D3DXMATRIX que es el producto de dos matrices.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El resultado es la transpuesta del producto de dos matrices de transformación, Out = T(M1 \* M2).
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixMultiplyTranspose se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixMultiplyTranspose se puede usar como parámetro para otra función.
 
 Esta función es útil para establecer matrices como constantes para sombreadores de vértices y píxeles.
 
@@ -94,7 +94,7 @@ Esta función es útil para establecer matrices como constantes para sombreadore
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

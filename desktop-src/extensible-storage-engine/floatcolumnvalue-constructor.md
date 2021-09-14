@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0ac9089c67f5d331a06feaa54e30f5762c97c31a17dea5b983447995abfe682a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85e81d3a1924a7b117a003f410aff14361baf466
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118487976"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969208"
 ---
 # <a name="floatcolumnvalue-constructor"></a>Constructor FloatColumnValue
 
@@ -50,11 +50,11 @@ Dim instance As New FloatColumnValue()
 public FloatColumnValue()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[FloatColumnValue (clase)](./floatcolumnvalue-class.md)
+[Clase FloatColumnValue](./floatcolumnvalue-class.md)
 
 [Miembros FloatColumnValue](./floatcolumnvalue-members.md)
 

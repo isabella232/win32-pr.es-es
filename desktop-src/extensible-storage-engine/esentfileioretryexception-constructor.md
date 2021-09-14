@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentFileIORetryException'
-title: Constructor de EsentFileIORetryException
+description: 'Más información sobre: Constructor EsentFileIORetryException'
+title: Constructor EsentFileIORetryException
 TOCTitle: 'EsentFileIORetryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFileIORetryException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentfileioretryexception.esentfileioretryexception(v=EXCHG.10)
@@ -25,18 +25,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 56b6faf2654da7fa9b41da4d1995e895e70fe3a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277490"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963268"
 ---
-# <a name="esentfileioretryexception-constructor"></a>Constructor de EsentFileIORetryException
+# <a name="esentfileioretryexception-constructor"></a>Constructor EsentFileIORetryException
 
 Inicializa una nueva instancia de la clase EsentFileIORetryException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentFileIORetryException()
 
 [Miembros de EsentFileIORetryException](./esentfileioretryexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

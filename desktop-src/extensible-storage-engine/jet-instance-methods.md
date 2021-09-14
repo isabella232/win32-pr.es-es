@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_INSTANCE métodos'
+description: 'Más información acerca de: JET_INSTANCE métodos'
 title: JET_INSTANCE métodos
 TOCTitle: JET_INSTANCE methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_INSTANCE
@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39515011
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0e72ff94cf381230637fc0f407197b03dcf547b9a94ea6bb83524a5cd70fb2de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd279f660d97fdb1100346db3f8f63dcaba26f34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118074680"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965708"
 ---
 # <a name="jet_instance-methods"></a>JET_INSTANCE métodos
 
@@ -78,7 +78,7 @@ El [JET_INSTANCE](./jet-instance-structure.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

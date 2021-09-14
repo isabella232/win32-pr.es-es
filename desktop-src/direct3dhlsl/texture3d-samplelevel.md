@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 3011b0e197083b3ed2daa5d875e6f307d7b965ac2632677198b89f34bb396624
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c50096552781784420404ac5a4ef2e68149fd5aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120067315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963492"
 ---
 # <a name="texture3dsamplelevel-methods"></a>Métodos Texture3D::SampleLevel
 
@@ -34,7 +34,7 @@ Muestrea una textura en el nivel de mapa mip especificado.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

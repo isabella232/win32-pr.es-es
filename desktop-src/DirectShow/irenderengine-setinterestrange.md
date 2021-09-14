@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d462ed73680d27daa476d653c2d08935c40ba4b26bddce93c9baf8246c9cb581
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec9790e65efa30b83cf324da4153f20c541733b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120083675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886697"
 ---
 # <a name="irenderenginesetinterestrange-method"></a>IRenderEngine::SetInterestRange (método)
 
@@ -62,7 +62,7 @@ Reservado.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -74,7 +74,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_LGPOS métodos'
+description: 'Más información acerca de: JET_LGPOS métodos'
 title: JET_LGPOS métodos
 TOCTitle: JET_LGPOS methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_LGPOS
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39512312
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3b4c9f9fc65f22e99ddbab0a874707d5da2f261890fd3434c3473dd3c04e85bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 331eee9d94b57a5b277f1d6fd38cf068b89d254e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119109341"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887433"
 ---
 # <a name="jet_lgpos-methods"></a>JET_LGPOS métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_LGPOS](./jet-lgpos-structure2.md) expone los miembros siguientes.
+El [JET_LGPOS](./jet-lgpos-structure2.md) muestra los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 

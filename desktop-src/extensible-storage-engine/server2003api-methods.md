@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.serv
 ms:contentKeyID: 55104095
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 41415780934622da5458b7cd56ea43e07eadc52879ceab8fa9ff67b3e076300a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4f38977b9d6e553ce7b7ab704956a53e3161a5f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120093254"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887180"
 ---
 # <a name="server2003api-methods"></a>Métodos Server2003Api
 

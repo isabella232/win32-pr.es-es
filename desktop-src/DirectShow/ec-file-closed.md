@@ -4,12 +4,12 @@ ms.assetid: 1bbedf76-e840-4ec6-b3b2-c7e7dee47cf5
 title: EC_FILE_CLOSED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36b345bb364504a285b384a89f1fc6987a61ffba998608df0185f7871264d466
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f4516c8a82f88c7685a41840d5da589c4a3741f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119748895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161552"
 ---
 # <a name="ec_file_closed"></a>ARCHIVO \_ EC \_ CERRADO
 
@@ -37,7 +37,7 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El filtro heredado Windows origen multimedia envía este evento. Los nuevos filtros no deben enviar este evento.
 
@@ -51,7 +51,7 @@ El filtro heredado Windows origen multimedia envía este evento. Los nuevos filt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

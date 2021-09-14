@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ea754aa883f9c80c4a436357cc159c588bde375aaa66a229b358723b74b9e070
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9133d536aef692a5f9928e10963dff8c454f25fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119002243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968660"
 ---
 # <a name="settings-tasktype-element"></a>Configuración (taskType) (Elemento)
 
@@ -39,7 +39,7 @@ El **Configuración** elemento se define mediante el [**tipo complejo taskType.*
 
 | Elemento                                          | Derivado de                                                 | Descripción                                                                    |
 |--------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [**Task**](taskschedulerschema-task-element.md) | [**taskType**](taskschedulerschema-tasktype-complextype.md) | Especifica la tarea que realiza el Programador de tareas servicio.<br/> |
+| [**Task**](taskschedulerschema-task-element.md) | [**taskType**](taskschedulerschema-tasktype-complextype.md) | Especifica la tarea que realiza el servicio Programador de tareas trabajo.<br/> |
 
 
 
@@ -49,13 +49,13 @@ El **Configuración** elemento se define mediante el [**tipo complejo taskType.*
 
 | Elemento                                                                                                          | Tipo                                                                                              | Descripción                                                                                                          |
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [**AllowHardTerminate**](taskschedulerschema-allowhardterminate-settingstype-element.md)                        | boolean                                                                                           | Especifica que la tarea puede finalizarse mediante TerminateProcess.<br/>                                         |
-| [**AllowStartOnDemand**](taskschedulerschema-allowstartondemand-settingstype-element.md)                        | boolean                                                                                           | Especifica que la tarea se puede iniciar mediante el comando Ejecutar o el menú contextual.<br/>                  |
+| [**AllowHardTerminate**](taskschedulerschema-allowhardterminate-settingstype-element.md)                        | boolean                                                                                           | Especifica que la tarea se puede finalizar mediante TerminateProcess.<br/>                                         |
+| [**AllowStartOnDemand**](taskschedulerschema-allowstartondemand-settingstype-element.md)                        | boolean                                                                                           | Especifica que la tarea se puede iniciar mediante el comando Ejecutar o el menú Contextual.<br/>                  |
 | [**DeleteExpiredTaskAfter**](taskschedulerschema-deleteexpiredtaskafter-settingstype-element.md)                | duration                                                                                          | Especifica la cantidad de tiempo que el Programador de tareas esperará antes de eliminar la tarea después de que expire.<br/> |
 | [**DisallowStartIfOnBatteries**](taskschedulerschema-disallowstartifonbatteries-settingstype-element.md)        | boolean                                                                                           | Especifica que la tarea no se iniciará si el equipo se ejecuta con baterías.<br/>                      |
-| [**habilitado**](taskschedulerschema-enabled-settingstype-element.md)                                              | boolean                                                                                           | Especifica que la tarea está habilitada. La tarea solo se puede realizar cuando esta configuración es True.<br/>             |
+| [**Habilitado**](taskschedulerschema-enabled-settingstype-element.md)                                              | boolean                                                                                           | Especifica que la tarea está habilitada. La tarea solo se puede realizar cuando esta configuración es True.<br/>             |
 | [**ExecutionTimeLimit**](taskschedulerschema-executiontimelimit-settingstype-element.md)                        | duration                                                                                          | Cantidad de tiempo permitido para completar la tarea.<br/>                                                              |
-| [**Oculto**](taskschedulerschema-hidden-settingstype-element.md)                                                | boolean                                                                                           | Especifica que la tarea no estará visible en la interfaz de usuario de forma predeterminada.<br/>                                         |
+| [**Hidden**](taskschedulerschema-hidden-settingstype-element.md)                                                | boolean                                                                                           | Especifica que la tarea no estará visible en la interfaz de usuario de forma predeterminada.<br/>                                         |
 | [**IdleSettings**](taskschedulerschema-idlesettings-settingstype-element.md)                                    | [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md)                      | Especifica cómo el Programador de tareas realiza tareas cuando el equipo está en estado inactivo.<br/>                    |
 | [**MaintenanceSettings**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md)           | [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md)        | Especifica cómo realiza el Programador de tareas tareas durante el mantenimiento automático.<br/>                             |
 | [**MultipleInstancesPolicy**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md)              | [**multipleInstancesPolicyType**](taskschedulerschema-multipleinstancespolicytype-simpletype.md) | Especifica la directiva que define cómo el Programador de tareas trata con varias instancias de la tarea.<br/>       |
@@ -70,7 +70,7 @@ El **Configuración** elemento se define mediante el [**tipo complejo taskType.*
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede seleccionar uno o varios de los elementos secundarios a los que se hace referencia anteriormente.
 
@@ -80,7 +80,7 @@ Para el desarrollo de scripting, la información de registro de una tarea se esp
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código XML se define un elemento de configuración que permite una terminación de la tarea de forma dura.
+En el ejemplo de código XML siguiente se define un elemento de configuración que permite una terminación de la tarea de forma fija.
 
 
 ```XML
@@ -94,7 +94,7 @@ En el siguiente ejemplo de código XML se define un elemento de configuración q
 
 
 
-Para obtener más información y un ejemplo completo del XML para establecer la configuración de tareas, vea [Ejemplo de desencadenador de tiempo (XML).](time-trigger-example--xml-.md)
+Para obtener más información y un ejemplo completo del XML para establecer la configuración de tareas, vea Ejemplo de desencadenador [de tiempo (XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,7 +107,7 @@ Para obtener más información y un ejemplo completo del XML para establecer la 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

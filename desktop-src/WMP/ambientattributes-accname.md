@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a525688683584b112ae002b4179ae68623a5709d67685ad38b34256226f55f62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 506af45bd214a91eda26b19453810ae90629dec9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119509665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890044"
 ---
 # <a name="ambientattributesaccname"></a>AmbientAttributes.accName
 
@@ -29,9 +29,9 @@ El **atributo accName** especifica o recupera un nombre para cualquier elemento.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de lectura **y** escritura con un valor predeterminado igual al **atributo id.**
+Este atributo es una cadena de lectura y **escritura** con un valor predeterminado igual al **atributo id.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se usa con fines de accesibilidad. Permite que un programa de lector lea en voz alta el nombre de cualquier elemento.
 
@@ -41,13 +41,13 @@ Este atributo también se aplica a los elementos de botón dentro de un control 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

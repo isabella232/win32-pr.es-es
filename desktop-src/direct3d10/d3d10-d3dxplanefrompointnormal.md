@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: ab9f3fdd53b1fbad4fa0b6a92c07589a8c0fab41c162dc49939f0e7254bf99c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 519ce82a8d5a8c6adaf22b69047a8d365bd777ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118991195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965095"
 ---
 # <a name="d3dxplanefrompointnormal-function-d3dx10mathh"></a>Función D3DXPlaneFromPointNormal (D3DX10Math.h)
 
@@ -65,7 +65,7 @@ Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md), que define el punto utilizado
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a una estructura D3DXVECTOR3, que define el normal utilizado para construir el plano.
+Puntero a una estructura D3DXVECTOR3, que define la normal usada para construir el plano.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXPLANE**](../direct3d9/d3dxplane.md)\***
 
 Puntero a la estructura D3DXPLANE construida a partir del punto y el valor normal.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXPlaneFromPointNormal se puede usar como parámetro para otra función.
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

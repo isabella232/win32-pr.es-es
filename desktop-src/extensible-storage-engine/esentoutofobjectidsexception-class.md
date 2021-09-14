@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8194f233683cdb1e80c1fa3307a088a2d12ed67065287a665fc7bcf471499d50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18cf8d1b7c98db8f855cf970eed7be87185fc9fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119363426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883220"
 ---
 # <a name="esentoutofobjectidsexception-class"></a>Clase EsentOutOfObjectIDsException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones OutOfObjectIDs.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: db7b9e20a0b0621038e1c7e092a871a6727566cf
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161413"
 ---
-# <a name="icm_draw_begin-message"></a>\_ICM Draw Begin message (Draw \_ Begin)
+# <a name="icm_draw_begin-message"></a>\_ICM Draw \_ BEGIN message
 
 El **ICM \_ DRAW \_ BEGIN** notifica a un controlador de representación que se prepare para dibujar datos.
 
@@ -61,7 +61,7 @@ Devuelve ICERR OK si el controlador admite dibujar los datos en la pantalla de l
 | Value               | Significado                                                                       |
 |---------------------|-------------------------------------------------------------------------------|
 | ICERR \_ BADFORMAT    | No se admite el formato de entrada o salida.                                      |
-| ICERR \_ NO ADMITIDO | El controlador no dibuja directamente en la pantalla o no admite este mensaje. |
+| ICERR \_ NO COMPATIBLE | El controlador no dibuja directamente en la pantalla o no admite este mensaje. |
 
 
 
@@ -69,9 +69,9 @@ Devuelve ICERR OK si el controlador admite dibujar los datos en la pantalla de l
 
 ## <a name="remarks"></a>Observaciones
 
-Si desea que el controlador descomprima los datos en un búfer, envíe el ICM [**\_ DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
+Si desea que el controlador descomprima los datos en un búfer, envíe el [**ICM \_ BEGIN de DECOMPRESS. \_**](icm-decompress-begin.md)
 
-Los **ICM \_ DRAW \_ BEGIN** [**y ICM \_ DRAW \_ END**](icm-draw-end.md) no anidan. Si el controlador recibe **ICM \_ DRAW \_ BEGIN** antes de detener la descompresión **con ICM DRAW \_ \_ END**, debe reiniciar la descompresión con nuevos parámetros.
+Los **ICM \_ DRAW \_ BEGIN** [**y ICM \_ DRAW \_ END**](icm-draw-end.md) no anidan. Si el controlador recibe **ICM \_ DRAW \_ BEGIN** antes de detener la descompresión con **ICM DRAW \_ \_ END,** debe reiniciar la descompresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ Los **ICM \_ DRAW \_ BEGIN** [**y ICM \_ DRAW \_ END**](icm-draw-end.md) no anid
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

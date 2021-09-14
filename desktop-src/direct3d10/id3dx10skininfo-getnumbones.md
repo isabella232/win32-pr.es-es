@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d1e4c761652bff649e9cf1ab8950202430e54d940cec96b7dc62eb8a060b4534
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1cbc39dd0f1a99ff65935c66e22a79a3d1836a7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118990325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965067"
 ---
 # <a name="id3dx10skininfogetnumbones-method"></a>Método ID3DX10SkinInfo::GetNumPxs
 
@@ -55,7 +55,7 @@ Número de esqueletos en ID3DX10SkinInfo.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

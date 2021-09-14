@@ -1,5 +1,5 @@
 ---
-description: Describe una clave de cuaternión para usarla en la animación de fotogramas clave. Una clave de cuaternión es un valor de cuaternión en un momento dado.
+description: Describe una clave de cuaternión para su uso en la animación de fotogramas clave. Una clave de cuaternión es un valor de cuaternión en un momento dado.
 ms.assetid: 8f5b74a3-f712-40ac-942c-a2189c2327c8
 title: D3DXKEY_QUATERNION estructura (D3dx9anim.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 088361835c8a15890887fef05cfa0a196e294406bf0c736d332f1a5ba1879740
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12e4deead606c1a2c5b103ed9fd0e31e23515982
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966759"
 ---
 # <a name="d3dxkey_quaternion-structure"></a>D3DXKEY \_ QUATERNION (estructura)
 
-Describe una clave de cuaternión para usarla en la animación de fotogramas clave. Una clave de cuaternión es un valor de cuaternión en un momento dado.
+Describe una clave de cuaternión para su uso en la animación de fotogramas clave. Una clave de cuaternión es un valor de cuaternión en un momento dado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ typedef struct D3DXKEY_QUATERNION {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

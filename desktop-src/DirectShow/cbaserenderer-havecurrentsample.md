@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ea807ffc68fc27a3c276de1fabcd7eb3591311a3896acfd5b0d4f91cb7f1ed7c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc7a594ce23f2e015a9c74864308e2e42528e145
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161619"
 ---
 # <a name="cbaserendererhavecurrentsample-method"></a>Método CBaseRenderer.HaveCurrentSample
 
@@ -55,7 +55,7 @@ Devuelve **TRUE** si el filtro tiene un ejemplo o **FALSE** en caso contrario.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

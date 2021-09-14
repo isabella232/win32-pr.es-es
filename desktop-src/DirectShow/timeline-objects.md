@@ -4,12 +4,12 @@ ms.assetid: da426964-d5bd-45ca-a914-c19062f3564b
 title: Objetos de escala de tiempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbcf3496770dee7664e08ffabe6537356c7b37ad13abee1dce149698748745e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 580286b31afd77f064411dd29d60a62b80bfb51a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119072309"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891649"
 ---
 # <a name="timeline-objects"></a>Objetos de escala de tiempo
 

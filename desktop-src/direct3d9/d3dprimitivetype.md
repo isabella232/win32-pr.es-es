@@ -1,5 +1,5 @@
 ---
-description: Define los primitivos admitidos por Direct3D.
+description: Define las primitivas admitidas por Direct3D.
 ms.assetid: 89e697f9-02b9-4ae1-9e86-6178da0cb008
 title: Enumeración D3DPRIMITIVETYPE (D3D9Types.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: a7406670b055a11f30a71677a88dc6230aecec8d7660d886b1d63f53e6e61566
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 933bbec72950bd2c73fda8b3781dd46393ca4c96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118527521"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888676"
 ---
 # <a name="d3dprimitivetype-enumeration"></a>D3DPRIMITIVETYPE (enumeración)
 
-Define los primitivos admitidos por Direct3D.
+Define las primitivas admitidas por Direct3D.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -71,14 +71,14 @@ Representa los vértices como una sola polilínea.
 
 Representa los vértices especificados como una secuencia de triángulos aislados. Cada grupo de tres vértices define un triángulo independiente.
 
-La selección de la cara posterior se ve afectada por el estado de representación del orden de desenlazado actual.
+La selección de la cara posterior se ve afectada por el estado de representación del orden de sinuoso actual.
 
 </dd> <dt>
 
 <span id="D3DPT_TRIANGLESTRIP"></span><span id="d3dpt_trianglestrip"></span>**D3DPT \_ TRIANGLESTRIP**
 </dt> <dd>
 
-Representa los vértices como una franja de triángulo. La marca de selección de la cara posterior se volteará automáticamente en triángulos numerados uniformemente.
+Representa los vértices como una franja de triángulo. La marca de selección de cara posterior se volteará automáticamente en triángulos numerados uniformemente.
 
 </dd> <dt>
 
@@ -92,13 +92,13 @@ Representa los vértices como un ventilador de triángulo.
 <span id="D3DPT_FORCE_DWORD"></span><span id="d3dpt_force_dword"></span>**D3DPT \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El [uso de franjas de triángulos](triangle-strips.md) o ventiladores de triángulo [(Direct3D 9)](triangle-fans.md) suele ser más eficaz que usar listas de triángulos porque se duplican menos vértices.
+El [uso de franjas de](triangle-strips.md) triángulo o ventiladores de triángulo [(Direct3D 9)](triangle-fans.md) suele ser más eficaz que usar listas de triángulos porque se duplican menos vértices.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 6b94992d94779932301c271ca46dc7466344b40b68c62855d4c57bfe8b780a94
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8436a52edbb9460c6945c1526513629939ec444b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119791981"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963772"
 ---
 # <a name="d3dfogmode-enumeration"></a>D3DFOGMODE (enumeración)
 
 Define constantes que describen el modo Desenlaz.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -86,11 +86,11 @@ Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, al
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los estados de representación D3DRS CONFIGURABLEMODE y \_ D3DRS CONFIGURABLEVERTEXMODE usan los valores \_ de este tipo enumerado.
 
-La distancia se puede considerar como una medida de visibilidad: cuando menor sea el valor de lamas producido por una ecuación de extremo, menos visible será un objeto.
+La distancia se puede considerar como una medida de visibilidad: cuando menor sea el valor de lamas producido por una ecuación de cálculo, menos visible será un objeto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ La distancia se puede considerar como una medida de visibilidad: cuando menor se
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

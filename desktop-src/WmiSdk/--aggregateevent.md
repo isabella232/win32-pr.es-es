@@ -1,8 +1,8 @@
 ---
-description: Representa un evento de agregado de varios eventos intrínsecos o extrínsecos individuales.
+description: Representa un evento agregado de varios eventos intrínsecos o extrínsecos individuales.
 ms.assetid: 99afa390-01fe-4a13-ba21-27587470f111
 ms.tgt_platform: multiple
-title: __AggregateEvent (clase)
+title: __AggregateEvent clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,15 +17,15 @@ api_type:
 api_location:
 - All
 ms.openlocfilehash: f93a962e57452ac555214e42f00af8ac8a4ea3db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967180"
 ---
-# <a name="__aggregateevent-class"></a>\_\_Clase AggregateEvent
+# <a name="__aggregateevent-class"></a>\_\_AggregateEvent (clase)
 
-La clase del sistema **\_ \_ AggregateEvent** representa un evento agregado de varios eventos intrínsecos o extrínsecos individuales. WMI genera una instancia de **\_ \_ AggregateEvent** en lugar de un [**\_ \_ evento**](--event.md) cuando los consumidores se registran con la cláusula [Group Within](group-clause.md) en su consulta de eventos.
+La **\_ \_ clase del sistema AggregateEvent** representa un evento agregado de varios eventos intrínsecos o extrínsecos individuales. WMI genera una instancia de **\_ \_ AggregateEvent en** lugar de [**\_ \_ Event cuando**](--event.md) los consumidores se registran con la cláusula GROUP [WITHIN](group-clause.md) en su consulta de eventos.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -39,28 +39,28 @@ class __AggregateEvent : __IndicationRelated
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La clase **\_ \_ AggregateEvent** tiene estos tipos de miembros:
+La **\_ \_ clase AggregateEvent** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ AggregateEvent** tiene estas propiedades.
+La **\_ \_ clase AggregateEvent** tiene estas propiedades.
 
 <dl> <dt>
 
 **NumberOfEvents**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de eventos combinados para producir este evento de Resumen único.
+Número de eventos combinados para generar este evento de resumen único.
 
 </dd> <dt>
 
@@ -73,15 +73,15 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Copia de uno de los eventos entregados en el intervalo de agregación. Por ejemplo, si un consumidor se ha registrado para eventos de cambio de clave del registro del proveedor de eventos del registro, **representador** contendría una instancia de la clase **RegistryKeyChangeEvent** .
+Copia de uno de los eventos entregados dentro del intervalo de agregación. Por ejemplo, si un consumidor se ha registrado para los eventos de cambio de clave del Registro desde el proveedor de eventos del Registro, **Representative** tendría una instancia de **la clase RegistryKeyChangeEvent.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La clase **\_ \_ AggregateEvent** se deriva de [**\_ \_ IndicationRelated**](--indicationrelated.md), que no tiene propiedades.
+La **\_ \_ clase AggregateEvent** se deriva de [**\_ \_ IndicationRelated ,**](--indicationrelated.md)que no tiene propiedades.
 
-Los proveedores de eventos nunca generan eventos agregados. Deben pasar por alto la cláusula GROUP WITHIN en el procesamiento de consultas de eventos.
+Los proveedores de eventos nunca generan eventos agregados. Deben omitir la cláusula GROUP WITHIN en su procesamiento de consultas de eventos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,7 +95,7 @@ Los proveedores de eventos nunca generan eventos agregados. Deben pasar por alto
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -105,7 +105,7 @@ Los proveedores de eventos nunca generan eventos agregados. Deben pasar por alto
 [Clases del sistema WMI](wmi-system-classes.md)
 </dt> <dt>
 
-[Realizar consultas con WQL](querying-with-wql.md)
+[Consulta con WQL](querying-with-wql.md)
 </dt> </dl>
 
  

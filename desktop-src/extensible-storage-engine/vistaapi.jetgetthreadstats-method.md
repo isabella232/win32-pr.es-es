@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: VistaApi. JetGetThreadStats (método)'
-title: Método VistaApi. JetGetThreadStats (Microsoft. ISAM. esent. Interop. vista)
+description: Más información sobre el método VistaApi.JetGetThreadStats
+title: Método VistaApi.JetGetThreadStats (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'JetGetThreadStats method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.VistaApi.JetGetThreadStats(Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaapi.jetgetthreadstats(v=EXCHG.10)
@@ -25,18 +25,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 92572fd538f0c6c2643e7b40a07ac168ae6980d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705997"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962744"
 ---
-# <a name="vistaapijetgetthreadstats-method"></a>VistaApi. JetGetThreadStats, método
+# <a name="vistaapijetgetthreadstats-method"></a>Método VistaApi.JetGetThreadStats
 
 Recupera información de rendimiento del motor de base de datos para el subproceso actual. Se pueden usar varias llamadas para recopilar estadísticas que reflejen la actividad del motor de base de datos en este subproceso entre esas llamadas.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,16 +58,16 @@ public static void JetGetThreadStats(
 #### <a name="parameters"></a>Parámetros
 
   - threadstats  
-    Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
     
-    Devuelve los datos de las estadísticas del subproceso.
+    Devuelve los datos de estadísticas del subproceso.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaApi](./vistaapi-class.md)
+[VistaApi (clase)](./vistaapi-class.md)
 
 [Miembros de VistaApi](./vistaapi-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

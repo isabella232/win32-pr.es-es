@@ -16,20 +16,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5b408ad8642cc17b85d783a8f26d7de3322a26309897e4d9b3c128401449d0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a1604367a8daad1ae1b5f44c6021d22bf1aa7c5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139348"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886505"
 ---
 # <a name="showmessageactionmessagebody-property"></a>Propiedad ShowMessageAction.MessageBody
 
-\[Este objeto ya no se admite. Puede usar IExecAction con la función Windows [**scripting MsgBox**](/previous-versions/sfw6660x(v=vs.80)) para mostrar un mensaje en la sesión de usuario.\]
+\[Este objeto ya no se admite. Puede usar IExecAction con la función [**msgbox**](/previous-versions/sfw6660x(v=vs.80)) Windows scripting para mostrar un mensaje en la sesión de usuario.\]
 
 Para el scripting, obtiene o establece el texto del mensaje que se muestra en el cuerpo del cuadro de mensaje.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -42,11 +42,11 @@ ShowMessageAction.MessageBody As String
 
 Texto del mensaje que se muestra en el cuerpo del cuadro de mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las cadenas parametrizadas se pueden usar en el texto del mensaje del cuadro de mensaje. Para obtener más información, vea la sección Ejemplos de [**EventTrigger.ValueQueries**](eventtrigger-valuequeries.md).
+Las cadenas parametrizadas se pueden usar en el texto del mensaje del cuadro de mensaje. Para obtener más información, vea la sección Ejemplos [**de EventTrigger.ValueQueries**](eventtrigger-valuequeries.md).
 
-Al establecer este valor de propiedad, el valor puede ser texto que se recupera de un recurso .dll archivo. Se usa una cadena especializada para hacer referencia al texto del archivo de recursos. El formato de la cadena es $(@ Dll , ResourceID ), donde Dll es la ruta de acceso al archivo .dll que contiene el recurso y ResourceID es el identificador del texto \[ \] del \[ \] \[ \] \[ \] recurso. Por ejemplo, el establecimiento de este valor de propiedad en $(@ %SystemRoot% \\ System32ResourceName.dll, -101) establecerá la propiedad en el valor del texto del recurso con un identificador igual a -101 en el archivo deResourceName.dll \\ %SystemRoot%. \\ \\
+Al establecer este valor de propiedad, el valor puede ser texto que se recupera de un recurso .dll archivo. Se usa una cadena especializada para hacer referencia al texto del archivo de recursos. El formato de la cadena es $(@ Dll , ResourceID ), donde Dll es la ruta de acceso al archivo .dll que contiene el recurso y ResourceID es el identificador del texto \[ \] del \[ \] \[ \] \[ \] recurso. Por ejemplo, el establecimiento de este valor de propiedad en $(@ %SystemRoot% System32ResourceName.dll, -101) establecerá la propiedad en el valor del texto del recurso con un identificador igual a -101 en el archivo deResourceName.dll \\ \\ %SystemRoot% \\ \\ System32.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Al establecer este valor de propiedad, el valor puede ser texto que se recupera 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

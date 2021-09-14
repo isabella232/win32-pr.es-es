@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: c20a846d13cd45bb8a1629fca0e958d3042aacf148c24b0633dd19fb5462bd66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b910d38025c44d6157a76aa3e3425ba46d628787
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119850124"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963755"
 ---
 # <a name="d3dtripatch_info-structure"></a>Estructura INFO de D3DTRIPATCH \_
 
@@ -38,7 +38,7 @@ typedef struct D3DTRIPATCH_INFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -101,7 +101,7 @@ N/A: no disponible. No compatible.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Por ejemplo, el diagrama siguiente identifica el orden de los vértices y los números de segmento de una revisión cúbica del triángulo bézier. El orden de los vértices determina los números de segmento utilizados por [**DrawTriPatch.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawtripatch) El desplazamiento es el número de bytes del primer vértice de revisión de triángulo en el búfer de vértices.
 
@@ -117,7 +117,7 @@ Por ejemplo, el diagrama siguiente identifica el orden de los vértices y los n�
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

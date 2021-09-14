@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 7bb36b3aeb448933416148b087cb7e82619beef04186637c0bb3fa944a143da5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 208422604e79b3ef7a87b548e7d71eceedd9fb78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963948"
 ---
 # <a name="d3dx_cpu_optimization-enumeration"></a>Enumeración D3DX \_ CPU \_ OPTIMIZATION
 
 Especifica el conjunto de instrucciones para el que D3DX está optimizado actualmente.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -80,7 +80,7 @@ Optimice para un conjunto de instrucciones SSE.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

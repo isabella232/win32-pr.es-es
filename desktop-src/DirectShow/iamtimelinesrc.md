@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 5d2ad5684df6298bde458e87ff322b21622139930fa9aaf994fda0e7ba7e987e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25733b1353bc0cbd92c40335a8d342473b03a806
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118399202"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891929"
 ---
 # <a name="iamtimelinesrc-interface"></a>Interfaz IAMTimelineSrc
 
@@ -34,7 +34,7 @@ Puede usar una parte de los datos dentro de un archivo de origen estableciendo l
 
 Para crear un objeto de origen, llame a [**IAMTimeline::CreateEmptyNode**](iamtimeline-createemptynode.md) con el valor TIMELINE \_ MAJOR TYPE \_ \_ SOURCE. Puede consultar el puntero [**IAMTimelineObj**](iamtimelineobj.md) devuelto para la **interfaz IAMTimelineSrc.** Para obtener más información, vea [Construir una escala de tiempo](constructing-a-timeline.md) y Trabajar con [orígenes.](working-with-sources.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IAMTimelineSrc** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IAMTimelineSrc** también tiene estos tipos de miembros:
 
@@ -49,7 +49,7 @@ La **interfaz IAMTimelineSrc** tiene estos métodos.
 | Método                                                    | Descripción                                                                                              |
 |:----------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
 | [**FixMediaTimes**](iamtimelinesrc-fixmediatimes.md)     | Redondea los valores de tiempo especificados al límite de marco más cercano.<br/>                               |
-| [**FixMediaTimes2**](iamtimelinesrc-fixmediatimes2.md)   | Redondea los valores de tiempo especificados, dados **como valores REFTIME,** al límite de fotograma más cercano.<br/> |
+| [**FixMediaTimes2**](iamtimelinesrc-fixmediatimes2.md)   | Redondea los valores de tiempo especificados, dados **como valores REFTIME,** al límite de marco más cercano.<br/> |
 | [**GetDefaultFPS**](iamtimelinesrc-getdefaultfps.md)     | Recupera la velocidad de fotogramas predeterminada del objeto de origen.<br/>                                             |
 | [**GetMediaLength**](iamtimelinesrc-getmedialength.md)   | Recupera la longitud del medio de este objeto de origen.<br/>                                             |
 | [**GetMediaLength2**](iamtimelinesrc-getmedialength2.md) | Recupera la longitud del medio de este objeto de origen, como un **valor REFTIME.**<br/>                     |
@@ -75,7 +75,7 @@ La **interfaz IAMTimelineSrc** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -83,7 +83,7 @@ La **interfaz IAMTimelineSrc** tiene estos métodos.
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 

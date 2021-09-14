@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 749994cf02e4608f5e677d20bf0b1b0dab714e5df739e204a9e80ada4f41f3c5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3590d2cbdeead9e1b9b2547b2344163b81f05d11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119609505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965111"
 ---
 # <a name="d3dxmatrixlookatlh-function-d3dx10mathh"></a>Función D3DXMatrixLookAtLH (D3DX10Math.h)
 
@@ -75,7 +75,7 @@ Puntero a la estructura D3DXVECTOR3 que define el destino de mirada de la cámar
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a la estructura D3DXVECTOR3 que define el valor de up del mundo actual, normalmente \[ 0, 1, 0 \] .
+Puntero a la estructura D3DXVECTOR3 que define el valor de arriba del mundo actual, normalmente \[ 0, 1, 0 \] .
 
 </dd> </dl>
 
@@ -85,11 +85,11 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
 Puntero a una estructura D3DXMATRIX que es una matriz de mirada a la izquierda.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixLookAtLH se puede usar como parámetro para otra función.
 
-Esta función usa la fórmula siguiente para calcular la matriz devuelta.
+Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 ```
@@ -116,7 +116,7 @@ yaxis = cross(zaxis, xaxis)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f181c2dbe21e31c752a44a4a3b0e27abd0f9396939c9a9dcee3127f796760527
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 55e9263ae9d02bb384bfbe56101ea82f98c2e076
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117758323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886444"
 ---
 # <a name="privilege-requiredprivilegestype-element"></a>Elemento Privilege (requiredPrivilegesType)
 
@@ -32,7 +32,7 @@ Especifica el derecho de una tarea para realizar varias operaciones relacionadas
  />
 ```
 
-El tipo complejo [**requiredPrivilegesType**](taskschedulerschema-requiredprivilegestype-complextype.md) define el elemento **Privilege.**
+El **elemento Privilege** se define mediante el tipo complejo [**requiredPrivilegesType.**](taskschedulerschema-requiredprivilegestype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -44,13 +44,13 @@ El tipo complejo [**requiredPrivilegesType**](taskschedulerschema-requiredprivil
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para el desarrollo de C++, se tiene acceso a esta información a través de [**la propiedad IPrincipal2::RequiredPrivilege.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal2-get_requiredprivilege)
+Para el desarrollo de C++, se tiene acceso a esta información a través de la [**propiedad IPrincipal2::RequiredPrivilege.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal2-get_requiredprivilege)
 
 ## <a name="examples"></a>Ejemplos
 
-El xml siguiente define un elemento de configuración que especifica el derecho de una tarea para realizar diversas operaciones relacionadas con el sistema, como apagar el sistema, cargar controladores de dispositivo o cambiar la hora del sistema.
+El siguiente XML define un elemento de configuración que especifica el derecho de una tarea para realizar varias operaciones relacionadas con el sistema, como apagar el sistema, cargar controladores de dispositivo o cambiar la hora del sistema.
 
 
 ```XML
@@ -70,12 +70,12 @@ El xml siguiente define un elemento de configuración que especifica el derecho 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

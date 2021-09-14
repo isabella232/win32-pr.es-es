@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56d1acb150b4af3f096b8ebf8c5a91caef831ebc03f84df10440b95110bc018e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9099b0839b6b55676d5a8afdfb913948e70bbb7f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119953165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969827"
 ---
 # <a name="cd3dx12_root_parameter-structure"></a>Estructura DE PARÁMETROS RAÍZ DE CD3DX12 \_ \_
 
-Estructura auxiliar para permitir la inicialización sencilla de una [**estructura \_ ROOT \_ PARAMETER de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter)
+Estructura auxiliar para permitir la inicialización sencilla de una [**estructura \_ ROOT PARAMETER \_ de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ struct CD3DX12_ROOT_PARAMETER  : public D3D12_ROOT_PARAMETER{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ Crea una nueva instancia sin inicializar de un PARÁMETRO RAÍZ CD3DX12. \_ \_
 **explicit CD3DX12 \_ ROOT \_ PARAMETER(const D3D12 \_ ROOT PARAMETER &\_ o)**
 </dt> <dd>
 
-Crea una nueva instancia de UN PARÁMETRO RAÍZ CD3DX12, inicializado con el contenido de otra estructura \_ \_ ROOT [**\_ \_ PARAMETER de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter)
+Crea una nueva instancia de UN PARÁMETRO RAÍZ CD3DX12, inicializado con el contenido de otra estructura ROOT PARAMETER de \_ \_ [**D3D12. \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter)
 
 </dd> <dt>
 
@@ -171,7 +171,7 @@ Sombreador UINTRegistrar
 
 </dd> <dt>
 
-**inline InitAsConstantBufferView(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
+**inline InitAsConstantBufferView(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ SHADER VISIBILITY VISIBILITY = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
@@ -220,7 +220,7 @@ Sombreador UINTRegistrar
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

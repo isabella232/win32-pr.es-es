@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_OPENTEMPORARYTABLE. cbVarSegMac'
-title: Propiedad JET_OPENTEMPORARYTABLE. cbVarSegMac (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_OPENTEMPORARYTABLE.cbVarSegMac'
+title: JET_OPENTEMPORARYTABLE.cbVarSegMac (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cbVarSegMac property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE.cbVarSegMac
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_opentemporarytable.cbvarsegmac(v=EXCHG.10)
@@ -27,18 +27,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 37fe218a9741235410d2452f04f082dc6673eaf5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706446"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969099"
 ---
-# <a name="jet_opentemporarytablecbvarsegmac-property"></a>Propiedad JET_OPENTEMPORARYTABLE. cbVarSegMac
+# <a name="jet_opentemporarytablecbvarsegmac-property"></a>JET_OPENTEMPORARYTABLE.cbVarSegMac, propiedad
 
-Obtiene o establece la cantidad máxima de datos que se usarán de cualquier variable lengthcolumn para construir una clave para una fila determinada. Este parámetro se puede utilizar para controlar la cantidad de espacio de clave consumida por una columna de clave determinada. Este límite se encuentra en bytes. Si este parámetro es cero o es igual que la propiedad [cbKeyMost](./jet-opentemporarytable.cbkeymost-property.md) , no se aplica ningún límite.
+Obtiene o establece la cantidad máxima de datos que se usarán desde cualquier columna lengthcolumn variable para construir una clave para una fila determinada. Este parámetro se puede usar para controlar la cantidad de espacio de claves consumido por cualquier columna de clave determinada. Este límite está en bytes. Si este parámetro es cero o es el mismo que la [propiedad cbKeyMost,](./jet-opentemporarytable.cbkeymost-property.md) no hay ningún límite en vigor.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public int cbVarSegMac { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_OPENTEMPORARYTABLE (clase)](./jet-opentemporarytable-class.md)
+[JET_OPENTEMPORARYTABLE clase](./jet-opentemporarytable-class.md)
 
-[Miembros de JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-members.md)
+[JET_OPENTEMPORARYTABLE miembros](./jet-opentemporarytable-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

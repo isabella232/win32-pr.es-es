@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 13e16e3796a18ee80f4f20004af7f3c64096dbf7b82e5c1b0c1f224d14ac16dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 627490a5c64d8ff5762a33eb366b4735d7e25f22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118765394"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969104"
 ---
 # <a name="jet_logtimehasvalue-property"></a>JET_LOGTIME. Propiedad HasValue
 
@@ -39,7 +39,7 @@ Obtiene un valor que indica si el JET_LOGTIME tiene un valor NULL.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

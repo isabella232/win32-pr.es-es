@@ -4,17 +4,17 @@ ms.assetid: 0a4fcf2a-dbad-4211-9a85-7741c8dfc95e
 title: Motor de representación básico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8a3e04e1ad32c163db93794e075ff7933f041c3270ab8412cbd5b5a68b4a763
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb9b51240b43c58de99b7d6fe1f7ad61f754c7ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118955583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161695"
 ---
 # <a name="basic-render-engine"></a>Motor de representación básico
 
 > [!Note]  
-> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 

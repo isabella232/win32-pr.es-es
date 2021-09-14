@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cd97ca6f3ec79320509881d79bc0ea24d73944a0ae3634d331073517c8bc0fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ca58f82d2918441e5da3cf53d442497c1a6a2eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118130450"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968471"
 ---
 # <a name="getprovisioningproperties-method-of-the-win32_rdmscollectionproperties-class"></a>Método GetProvisioningProperties de la clase RDMSCollectionProperties de Win32 \_
 
@@ -71,7 +71,7 @@ Vhd clonado.
 DiffDisk
 </dt> <dd>
 
-Vhd de diferenciación.
+Disco duro virtual de diferenciación.
 
 </dd> </dl> </dd> <dt>
 
@@ -141,7 +141,7 @@ Recibe el nombre de dominio de las máquinas virtuales de la colección.
 *VmOU* \[ out\]
 </dt> <dd>
 
-Recibe el Active Directory unidad organizativa (OU) de las máquinas virtuales de la colección.
+Recibe la Active Directory organizativa (OU) de las máquinas virtuales de la colección.
 
 </dd> <dt>
 
@@ -160,7 +160,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
@@ -170,7 +170,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

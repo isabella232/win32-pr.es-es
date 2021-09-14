@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: WMI-Specific calificadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b90a32d5bd13f9dbda9125a6752891752505215e156d65e999ca7cf372a109d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13848f8ca9a5e889c73890439e2cdcd33381c539
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119639515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966992"
 ---
 # <a name="wmi-specific-qualifiers"></a>WMI-Specific calificadores
 

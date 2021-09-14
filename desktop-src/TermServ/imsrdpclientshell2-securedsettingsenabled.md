@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d418df76de38313d681f9f01a4dea33ba0803ad67e42d92d90d2ba5a354a8eac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1009759051207db7e6b8d741c1dd91e3de1ffc36
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119870885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886065"
 ---
 # <a name="imsrdpclientshell2securedsettingsenabled-property"></a>IMsRdpClientShell2::SecuredSettingsEnabled, propiedad
 
@@ -58,7 +58,7 @@ Puntero a un valor booleano que indica si la página web actual está en una zon
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

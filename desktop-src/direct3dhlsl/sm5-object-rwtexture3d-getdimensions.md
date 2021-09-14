@@ -1,6 +1,6 @@
 ---
-title: Función RWTexture3D::GetDimensions
-description: Devuelve las dimensiones del recurso. | Función RWTexture3D::GetDimensions
+title: RWTexture3D::GetDimensions (Función)
+description: Devuelve las dimensiones del recurso. | RWTexture3D::GetDimensions (Función)
 ms.assetid: ba70b955-1e80-4f27-84f1-fc9d26a1f1ab
 keywords:
 - Función GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2fcd1f5e5fb1ab87193c2946e68a8144f34a7275c9ad90e87e9cc7e960336e14
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 499ab493851257030921e9d55f4873eef8726915
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118509213"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884108"
 ---
-# <a name="rwtexture3dgetdimensions-function"></a>Función RWTexture3D::GetDimensions
+# <a name="rwtexture3dgetdimensions-function"></a>RWTexture3D::GetDimensions (Función)
 
 Devuelve las dimensiones del recurso.
 
@@ -61,7 +61,7 @@ Alto del recurso, en texturas.
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Profundidad del recurso, en los elementos de textura.
+Profundidad del recurso, en texturas.
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ Profundidad del recurso, en los elementos de textura.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta es una lista de las versiones sobrecargadas de este método.
 
@@ -98,14 +98,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [RWTexture3D](sm5-object-rwtexture3d.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

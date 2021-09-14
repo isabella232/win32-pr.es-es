@@ -4,12 +4,12 @@ ms.assetid: 34b3e4de-e4eb-48c5-aaef-fc99b63e8691
 title: Volver a conectar los pines
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d8bb214307a5c17639d98ae07284abddca4d5beb11b966150d8b7ec46013853
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9fc71b4d5a62ee066edaa5f97b4cc3332b2231d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119072779"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886617"
 ---
 # <a name="reconnecting-pins"></a>Volver a conectar los pines
 

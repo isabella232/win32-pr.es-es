@@ -4,12 +4,12 @@ ms.assetid: 7b41d0dc-209f-4ade-a7ed-aa54f421e520
 title: EffectParamFloats
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f34f60c16f583021d0e7f01482941fa31d12861d4a59c07c26c7aa89a96e3d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0954ce7679691920c2e104277d12a48f7a34ddf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119122394"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969688"
 ---
 # <a name="effectparamfloats"></a>EffectParamFloats
 
@@ -31,7 +31,7 @@ Donde:
 -   nFloats: número de valores de punto flotante en la matriz.
 -   Floats \[ nFloats: \] matriz de valores de punto flotante.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

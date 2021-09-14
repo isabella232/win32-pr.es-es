@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 67cdde2ba057f41d8a1929e6f641b22d05919b698fee61fd8351deb64b27f5ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95321d377ad5af29075764e2c2d9386abf5b1441
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118990685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970011"
 ---
 # <a name="d3dxvec2transformcoord-function-d3dx10mathh"></a>Función D3DXVec2TransformCoord (D3DX10Math.h)
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
 Puntero a una estructura D3DXVECTOR2 que es el vector transformado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función transforma el vector, pV (x, y, 0, 1), por la matriz, pM, proyectando el resultado de nuevo en w=1.
 
@@ -92,7 +92,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

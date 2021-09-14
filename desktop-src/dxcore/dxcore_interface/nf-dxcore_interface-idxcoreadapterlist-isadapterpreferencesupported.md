@@ -4,12 +4,12 @@ description: Determina si el sistema operativo entiende [un valor DXCoreAdapterP
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 09/03/2019
-ms.openlocfilehash: f8a42040ecd6c5667a3d33fb506fd97cfdfe53e8950c2e42b6068bbed6c19467
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1678568eb17c0dd833c130e6184931c8896261e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118502586"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966327"
 ---
 # <a name="idxcoreadapterlistisadapterpreferencesupported-method"></a>IDXCoreAdapterList::IsAdapterPreferenceSupported (método)
 

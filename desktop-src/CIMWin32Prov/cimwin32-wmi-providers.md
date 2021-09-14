@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Proveedores WMI CIMWin32
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a0a41fecc0dd5d9222dd8bc207957881c924f62e0c5c12e14a3677513599f1a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68a0f88778ee305c5825f053d82286aabf858d1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020773"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965451"
 ---
 # <a name="cimwin32-wmi-providers"></a>Proveedores WMI CIMWin32
 
@@ -18,7 +18,7 @@ Los proveedores WMI CIMWin32 admiten las clases implementadas en CimWin32.dll y 
 
 Esta sección contiene:
 
--   [Proveedor WMI de CIM](cim-wmi-provider.md)
+-   [Proveedor WMI cim](cim-wmi-provider.md)
 -   [Proveedor de eventos de Administración de energía](power-management-event-provider.md)
 -   [Proveedor win32](win32-provider.md)
 

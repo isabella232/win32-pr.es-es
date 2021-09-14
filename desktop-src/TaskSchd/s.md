@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 7e859940-a090-45fb-80fd-93ad04dc37c9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6049fdcb3ab8b2cce00c82cbd4bf5f968b81d89afd9e3cba1e4f031ff998143a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a57be6e320475ca7367f9ab18dc523c6ecbc9fa7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119866765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886548"
 ---
 # <a name="s-task-scheduler"></a>S (Programador de tareas)
 

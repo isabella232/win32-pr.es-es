@@ -4,12 +4,12 @@ ms.assetid: d9c1b860-f75f-4886-95d6-c62e9e5b69eb
 title: Formatos de tiempo para los comandos seek
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e585a7dda12b40e7f501e51aff6ffed50d647066f03804c82e5ffa236f8623a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: de8217873a9443c2b56c60523f95a6fe599ee045
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120078725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891697"
 ---
 # <a name="time-formats-for-seek-commands"></a>Formatos de tiempo para los comandos seek
 

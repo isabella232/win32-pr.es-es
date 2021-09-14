@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: JET_DBINFOMISC.dwMinorVersion'
-title: JET_DBINFOMISC.dwMinorVersion
+title: JET_DBINFOMISC.dwMinorVersion, propiedad
 TOCTitle: 'dwMinorVersion property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.dwMinorVersion
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.dwminorversion(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dcebb644d3d095155d4958aab6bc666900e6274a54dc68cef29994f4a288fa10
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e539407bea7b8d6cb83c7dfe2bc8a3b7530d4f02
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119891435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965731"
 ---
-# <a name="jet_dbinfomiscdwminorversion-property"></a>JET_DBINFOMISC.dwMinorVersion
+# <a name="jet_dbinfomiscdwminorversion-property"></a>JET_DBINFOMISC.dwMinorVersion, propiedad
 
 Obtiene la versión secundaria del sistema operativo de la última asociación.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public int dwMinorVersion { get; internal set; }
 
 Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: e650a250333ac784e599d0bce820ef390a937f49bff2371b1b7a52b18d9d0ad6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 864053c2c5def6ef1b23ca2c2ee712664e132079
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117818540"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891796"
 ---
 # <a name="irenderengine2setresizerguid-method"></a>IRenderEngine2::SetResizerGUID (método)
 
@@ -58,7 +58,7 @@ CLSID del filtro.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para revertir al cambio de tamaño de DES predeterminado, use el siguiente CLSID:
 
@@ -85,10 +85,10 @@ DEFINE_GUID(CLSID_Resize,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | DirectX 9.0 o posterior<br/>                                                         |
-| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 

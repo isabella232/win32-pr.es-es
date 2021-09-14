@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: da4684872358d9d6751812b2adb2b2bea819a2e3
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 456eadecbaba7295753a18ec2ca739f5e3fc8391
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476481"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887324"
 ---
 # <a name="jet_signature-structure"></a>JET_SIGNATURE estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_signature-structure"></a>JET_SIGNATURE estructura
 
-La **JET_SIGNATURE** contiene información que identifica de forma única una base de datos.
+La **JET_SIGNATURE** estructura contiene información que identifica de forma única una base de datos.
 
 ```cpp
     typedef struct {
@@ -39,7 +39,7 @@ La **JET_SIGNATURE** contiene información que identifica de forma única una ba
     } JET_SIGNATURE;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **ulRandom**
 
@@ -53,14 +53,18 @@ El [JET_LOGTIME](./jet-logtime-structure.md) en el momento de [ejecutar JetCreat
 
 Valor de cadena opcional del nombre NetBIOS del equipo. Este valor no se puede establecer.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 Se puede encontrar como un elemento de [JET_DBINFOMISC](./jet-dbinfomisc-structure.md).
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

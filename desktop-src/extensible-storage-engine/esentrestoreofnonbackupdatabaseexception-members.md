@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102634
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f19bd8137fb5bbb8992e84707b096688760b0baecee228d123293f9c1f9d7dff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22c244284e4c1a7c55befa4c8c2548ae4207a0df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118775259"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963076"
 ---
 # <a name="esentrestoreofnonbackupdatabaseexception-members"></a>Miembros de EsentRestoreOfNonBackupDatabaseException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones restoreOfNonBackupDatabase.
+Clase base para JET_err. Excepciones RestoreOfNonBackupDatabase.
 
 El [tipo EsentRestoreOfNonBackupDatabaseException](./esentrestoreofnonbackupdatabaseexception-class.md) expone los miembros siguientes.
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

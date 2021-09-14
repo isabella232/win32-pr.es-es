@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101934
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cc6055f34afac9bc8979bfb131a5038a7a58da7c352fad5e654f5975b76b326f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 77e0797c098bfb825d60ba9f1f202e86ba10b96b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118266514"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966195"
 ---
 # <a name="esentinvalidfilenameexception-properties"></a>Propiedades de EsentInvalidFilenameException
 

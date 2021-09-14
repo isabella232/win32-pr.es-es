@@ -4,12 +4,12 @@ ms.assetid: 21b0449b-eed0-4879-a938-a7b01b349f22
 title: Propiedad AVEncVideoSourceContent (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfe76c04da1c6d2e1f0bb9dd4782eec1fe9a85f31011709300fb3ef3aac612c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 859a547ca67b5ffbf476ae0eff04562c75dd7bfe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118663159"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161722"
 ---
 # <a name="avencvideosourcefilmcontent-property"></a>Propiedad AVEncVideoSourceContent
 
@@ -35,13 +35,13 @@ El valor de esta propiedad es un miembro de la [**enumeración eAVEncVideoConten
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
-| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP de 2000 \[ \| Server\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

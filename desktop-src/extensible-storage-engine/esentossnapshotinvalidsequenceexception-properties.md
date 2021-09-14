@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102424
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b3ade378a54a0b8c735f8efb5498f9f58b9f3849b72bd64861d708f7e99ba261
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b6b6989aed1ba3e287972f92e3c198132dbbdfb3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019176"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969347"
 ---
 # <a name="esentossnapshotinvalidsequenceexception-properties"></a>Propiedades de EsentOSSnapshotInvalidSequenceException
 
@@ -34,7 +34,7 @@ El [tipo EsentOSSnapshotInvalidSequenceException](./esentossnapshotinvalidsequen
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentOSSnapshotInvalidSequenceException](./esentossnapshotinvalidsequen
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2e4ae00e2fe760f9b86c558d3bd7cbe74dab1aa4fb6793dd8957767de1aed18b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b024cf6baca367e1ca1c1e5c17593314c09e8d72
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118264866"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963207"
 ---
 # <a name="esentkeyboundaryexception-constructor"></a>Constructor EsentKeyBoundaryException
 

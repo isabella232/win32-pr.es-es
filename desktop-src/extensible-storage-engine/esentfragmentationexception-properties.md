@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101779
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 2cdab38f0e7c1fc91ac8f0119281e181492f7d009a98526b10a0048aec983bab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec1996a1eeb5268df248d085bdf4b1a3b80ea182
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118268416"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963251"
 ---
 # <a name="esentfragmentationexception-properties"></a>Propiedades de EsentFragmentationException
 

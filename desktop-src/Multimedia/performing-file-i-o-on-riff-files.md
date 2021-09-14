@@ -15,15 +15,15 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c5e13fd50d98ea8042bb143c135d839b9b570475
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161393"
 ---
 # <a name="performing-file-io-on-riff-files"></a>Realizar E/S de archivos en archivos RIFF
 
-En el ejemplo siguiente se muestra cómo abrir un archivo RIFF para la E/S en búfer, así como cómo bajar, subir y leer fragmentos de "RIFF".
+En el ejemplo siguiente se muestra cómo abrir un archivo RIFF para la E/S en búfer, así como cómo bajar, subir y leer fragmentos "RIFF".
 
 
 ```C++

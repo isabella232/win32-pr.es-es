@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 6e6d61d60a4664386cded025d2b7bcea82353602c7f7f8c0fb5bc4c53779ae2f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46e0565c314bab86967ee0d5dabee6ba449a87dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117817922"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891708"
 ---
 # <a name="isamplegrabbersetcallback-method"></a>ISampleGrabber::SetCallback (método)
 
@@ -60,7 +60,7 @@ Puntero a una [**interfaz ISampleGrabberCB**](isamplegrabbercb.md) que contiene 
 
 
 
-| Valor | Descripción                                                                                                                                                                                     |
+| Value | Descripción                                                                                                                                                                                     |
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | El filtro Sample Grabber llama al [**método ISampleGrabberCB::SampleCB.**](isamplegrabbercb-samplecb.md) Este método recibe un [**puntero IMediaSample.**](/windows/desktop/api/Strmif/nn-strmif-imediasample)               |
 | 1     | El filtro Sample Grabber llama al [**método ISampleGrabberCB::BufferCB.**](isamplegrabbercb-buffercb.md) Este método recibe un puntero al búfer contenido en el ejemplo multimedia. |
@@ -75,11 +75,11 @@ Puntero a una [**interfaz ISampleGrabberCB**](isamplegrabbercb.md) que contiene 
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El subproceso de procesamiento de datos se bloquea hasta que se devuelve el método de devolución de llamada. Si la devolución de llamada no se devuelve rápidamente, puede interferir con la reproducción.
 
-El filtro no invoca la función de devolución de llamada para los ejemplos de inscripción previa, ni para los ejemplos en los que el **miembro dwStreamId** de la estructura [**PROPERTIES DE AM \_ SAMPLE2 \_**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties) no sea AM STREAM \_ \_ MEDIA.
+El filtro no invoca la función de devolución de llamada para los ejemplos de inscripción previa ni para los ejemplos en los que el **miembro dwStreamId** de la estructura [**PROPERTIES DE AM \_ SAMPLE2 \_**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties) no es otro que AM STREAM \_ \_ MEDIA.
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.

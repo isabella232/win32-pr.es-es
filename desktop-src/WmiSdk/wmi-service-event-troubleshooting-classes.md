@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Clases de solución de problemas de eventos del servicio WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99be30a6b2f0551cae4e0abe269da5341e34e1444eb1545ca96377a43b5415ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e811ac5b276e5562f73b5b432d5f3255af5bab7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119502805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966995"
 ---
 # <a name="wmi-service-event-troubleshooting-classes"></a>Clases de solución de problemas de eventos del servicio WMI
 

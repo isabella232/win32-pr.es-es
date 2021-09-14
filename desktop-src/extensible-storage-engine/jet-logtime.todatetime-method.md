@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: add66724ff34b3871462eef129dc6efd549159b39243a19565d4ca40d2f05b04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14d427d1c7e4a6f37c27677ed9617d92eb8ff644
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118979855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964280"
 ---
 # <a name="jet_logtimetodatetime-method"></a>JET_LOGTIME. Método ToDateTime
 
@@ -57,7 +57,7 @@ public Nullable<DateTime> ToDateTime()
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Nullable](/dotnet/api/system.nullable-1)\<[DateTime](/dotnet/api/system.datetime)\>  
-Un valor DateTime que representa el JET_LOGTIME. Si el JET_LOGTIME es NULL, se devuelve null.  
+Un valor DateTime que representa el JET_LOGTIME. Si el JET_LOGTIME es null, se devuelve null.  
 
 #### <a name="implements"></a>Implementaciones
 

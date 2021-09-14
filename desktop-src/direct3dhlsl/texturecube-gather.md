@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 4dfc4e6ecee3c78b0b0419c6b2525558f7d0122487630695aaace48873da91df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce58acc01ef87e6d53d829a5c84e7c9c0ff6afb9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118786823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964624"
 ---
 # <a name="texturecubegather-methods"></a>Métodos TextureCube::Gather
 

@@ -1,11 +1,11 @@
 ---
-title: IMsRdpClientAdvancedSettings HotKeyCtrlEsc, propiedad
+title: Propiedad IMsRdpClientAdvancedSettings HotKeyCtrlEsc
 description: Especifica el código de clave virtual que se agregará a ALT para determinar el reemplazo de la tecla de acceso rápido para CTRL+ESC.
 ms.assetid: 55d20a97-ce6e-4394-bfdf-c5bc880e7e2f
 ms.tgt_platform: multiple
 keywords:
 - Propiedad HotKeyCtrlEsc Servicios de Escritorio remoto
-- Propiedad HotKeyCtrlEsc Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Propiedad HotKeyCtrlEsc Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad HotKeyCtrlEsc
 - Propiedad HotKeyCtrlEsc Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad HotKeyCtrlEsc
@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a643c8dcf9000aff7d87781cc8a0db81c2b9a6abd9933d3d61ae213387c97af6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf1a806430e8b93503c7cdc0fef04ba3f0a59b20
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117941841"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968332"
 ---
 # <a name="imsrdpclientadvancedsettingshotkeyctrlesc-property"></a>IMsRdpClientAdvancedSettings::HotKeyCtrlEsc, propiedad
 
@@ -69,7 +69,7 @@ Esta propiedad solo es válida cuando la [**propiedad KeyboardHookMode**](imsrdp
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -92,7 +92,7 @@ Nuevo código de clave virtual. **VK \_ HOME** es el valor predeterminado, con A
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -100,7 +100,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                        |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                  |
@@ -110,7 +110,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

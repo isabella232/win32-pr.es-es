@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103843
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b203b7579200bf9f9f2e019018c788f58edff397b22c3ddd8de3b6c9fbe32ae6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eee06b8429ef183d589f4e5e542c955208beae7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119107544"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962928"
 ---
 # <a name="jet_recpos-members"></a>JET_RECPOS miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Representa una posición fraccionera dentro de un índice. JetGotoPosition y JetGetRecordPosition lo usan.
+Representa una posición fraccionera dentro de un índice. Lo usan JetGotoPosition y JetGetRecordPosition.
 
-El [JET_RECPOS](./jet-recpos-class.md) expone los miembros siguientes.
+El [JET_RECPOS](./jet-recpos-class.md) muestra los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 

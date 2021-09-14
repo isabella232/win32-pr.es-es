@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 11ddcf04637d02b1508dd5eb4f00cbfd5e5361d531e2e6d543b4b15d910a3d83
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1cd0e59720961700253033055d75f2e79837e78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118283460"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883972"
 ---
 # <a name="texturecubesamplelevel-methods"></a>Métodos TextureCube::SampleLevel
 

@@ -4,12 +4,12 @@ description: Estructuras de cuadro de diálogo
 ms.assetid: b6acae79-673f-453b-954f-9073712085ce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04b503f5e43a30991d85a0338516dfbfd48f3617b18c78bf0fd7fc7d4d842afe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3405d771fe2efd87c938f61d0bc48ad3876fabd9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119741795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964600"
 ---
 # <a name="dialog-box-structures"></a>Estructuras de cuadro de diálogo
 

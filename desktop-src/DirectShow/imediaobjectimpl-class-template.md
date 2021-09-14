@@ -4,12 +4,12 @@ ms.assetid: 81d45b8d-8373-4e42-b768-f6126feb935d
 title: Plantilla de clase IMediaObjectImpl (Dmoimpl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71b166836ff4da6100f61fca5d3a0c2887462b37adcbdd2ec61abeb919553a59
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ecfa1be82ffeaa9e05eb6460249e0c40bb2989c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886812"
 ---
 # <a name="imediaobjectimpl-class-template"></a>Plantilla de clase IMediaObjectImpl
 
@@ -19,7 +19,7 @@ Esta `IMediaObjectImpl` plantilla expone los miembros siguientes.
 
 
 
-| Clase anidada                              | Descripción                                  |
+| Nested (Clase)                              | Descripción                                  |
 |-------------------------------------------|----------------------------------------------|
 | [**LockIt**](imediaobjectimpl-lockit.md) | Clase auxiliar que bloquea y desbloquea el DMO. |
 
@@ -57,14 +57,14 @@ Esta `IMediaObjectImpl` plantilla expone los miembros siguientes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [DMO Referencia](dmo-reference.md)
 </dt> <dt>
 
-[Uso de la DMO de clase](using-the-dmo-class-template.md)
+[Uso de la plantilla DMO clase](using-the-dmo-class-template.md)
 </dt> </dl>
 
  

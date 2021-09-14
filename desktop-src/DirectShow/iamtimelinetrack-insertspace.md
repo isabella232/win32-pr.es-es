@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a51e89a72d813e1f5a9c1c05b1a46b6674906284b61b4036c164af87af9a4559
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 84d8076f6f89ee5e890db0047d47ade283b1e333
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118399182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891841"
 ---
 # <a name="iamtimelinetrackinsertspace-method"></a>IamTimelineTrack::InsertSpace (método)
 
@@ -62,7 +62,7 @@ Punto final del espacio insertado, en unidades de 100 nanosegundos.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **valor HRESULT.** Entre los posibles valores devueltos se incluyen los siguientes:
+Devuelve un **valor HRESULT.** Entre los valores devueltos posibles se incluyen los siguientes:
 
 
 
@@ -77,7 +77,7 @@ Devuelve un **valor HRESULT.** Entre los posibles valores devueltos se incluyen 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -107,7 +107,7 @@ Devuelve un **valor HRESULT.** Entre los posibles valores devueltos se incluyen 
 [**IamTimelineTrack (interfaz)**](iamtimelinetrack.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

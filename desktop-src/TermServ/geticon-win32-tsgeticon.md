@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método GetIcon Servicios de Escritorio remoto
 - Método GetIcon Servicios de Escritorio remoto , Win32_TSGetIcon clase
-- Win32_TSGetIcon clase Servicios de Escritorio remoto , método GetIcon
+- Win32_TSGetIcon clase Servicios de Escritorio remoto método , GetIcon
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 305316d66ce95659210396a10f22366d64ebdd2b410b056aa3c398cf65edbbf5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92cd20cad668b0e3a6bba191c83ecdca2934ca17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119001543"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968515"
 ---
-# <a name="geticon-method-of-the-win32_tsgeticon-class"></a>Método GetIcon de la clase \_ TSGetIcon win32
+# <a name="geticon-method-of-the-win32_tsgeticon-class"></a>Método GetIcon de la clase \_ TSGetIcon de Win32
 
 Devuelve el contenido del icono especificado.
 
@@ -74,17 +74,17 @@ Si la finalización se realiza correctamente, contiene el contenido del icono.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                          |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TsAllow.mof</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ TSGetIcon**](win32-tsgeticon.md)
+[**TSGetIcon de Win32 \_**](win32-tsgeticon.md)
 </dt> </dl>
 
  

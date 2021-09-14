@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 95a987730706f32654aab8f63feed61ae87c4d58d27ccccdaed9767d3303bbf8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 621f45d7c2a6d8ff162f539ef62153d3ae70f6e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119460385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126969775"
 ---
 # <a name="d3dxintersectsubset-function"></a>Función D3DXIntersectSubset
 
@@ -91,7 +91,7 @@ Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) especificando la dir
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)\***
 
-Puntero a bool. Si el rayo forma una intersección con una cara triangular en la malla, este valor se establecerá en **TRUE.** De lo contrario, este valor se establece en **FALSE.**
+Puntero a un bool. Si el rayo forma una intersección con una cara triangular en la malla, este valor se establecerá en **TRUE.** De lo contrario, este valor se establece en **FALSE.**
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Puntero a una distancia de parámetro de intersección de rayo.
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Matriz [**de estructuras D3DXINTERSECTINFO,**](d3dxintersectinfo.md) que representa todos los aciertos, no solo los aciertos más cercanos.
+Matriz [**de estructuras D3DXINTERSECTINFO,**](d3dxintersectinfo.md) que representan todos los aciertos, no solo los aciertos más cercanos.
 
 </dd> <dt>
 
@@ -176,7 +176,7 @@ Las coordenadas centradas en barras definen un punto dentro de un triángulo en 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

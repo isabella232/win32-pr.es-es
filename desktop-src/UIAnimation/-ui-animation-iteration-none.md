@@ -12,20 +12,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0aceb8d343859f23018a5f29777599bbc7fc479828efdacaae3a4b87bb141b9b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c45f004421a273f6dd2e6ab2d61810d9332ca17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118126485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890452"
 ---
-# <a name="ui_animation_iteration_none"></a>\_ITERACIÓN DE ANIMACIÓN DE LA INTERFAZ DE USUARIO \_ \_ NONE
+# <a name="ui_animation_iteration_none"></a>\_ITERACIÓN DE ANIMACIÓN DE INTERFAZ DE USUARIO \_ \_ NONE
 
 Indica que se trata de la entrada inicial en un bucle determinado.
 
 <dl> <dt>
 
-<span id="UI_ANIMATION_ITERATION_NONE"></span><span id="ui_animation_iteration_none"></span>**\_ITERACIÓN DE ANIMACIÓN DE LA INTERFAZ DE USUARIO \_ \_ NONE**
+<span id="UI_ANIMATION_ITERATION_NONE"></span><span id="ui_animation_iteration_none"></span>**\_ITERACIÓN DE ANIMACIÓN DE INTERFAZ DE USUARIO \_ \_ NONE**
 </dt> <dd> <dl> <dt>
 
 -1
@@ -44,14 +44,14 @@ UINT32
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8, Windows 7 y actualización de plataforma solo para Windows 7 \[ aplicaciones de escritorio\]<br/>    |
+| Cliente mínimo compatible<br/> | Windows 8, Windows 7 y Actualización de plataforma solo para Windows 7 \[ aplicaciones de escritorio\]<br/>    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
-| Header<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Gg269304(v=EXCHG.10)
 ms:contentKeyID: 32765595
 ms.date: 04/11/2016
 ms.topic: article
-ms.openlocfilehash: af2ab8ece57342f211b0dd4488b6feb25b191c1977ae39038fb61ea56f20d543
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3f27237c5f75874f7320f675affe20f3833084b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118484753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968971"
 ---
 # <a name="tagged-fixed-and-variable-columns"></a>Columnas etiquetadas, fijas y variables
 
@@ -21,9 +21,9 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="tagged-fixed-and-variable-columns"></a>Columnas etiquetadas, fijas y variables
 
-Las columnas etiquetadas, fijas y de longitud variable son los tipos de columna principales admitidos por ESE. Las columnas etiquetadas no están presentes en un registro a menos que los datos se almacenen en la columna y pueden tener una longitud fija o variable. Las columnas etiquetadas también pueden contener más de un valor en un único registro. Las columnas fijas toman la misma cantidad de espacio en cada fila y requieren 1 bit para representar el valor NULL. Las columnas de longitud variable requieren 2 bytes para representar el tamaño y el valor NULL, y ocupan una cantidad variable de espacio en cada registro. Para obtener más información sobre las columnas etiquetadas y fijas, vea la opción Jet_bitColumnTagged y Jet_bitColumnFixed en el miembro **grbit** de la estructura JET_COLUMNDEF utilizada en la llamada [a](./jet-columndef-structure.md) [JetAddColumn](./jetaddcolumn-function.md).
+Las columnas etiquetadas, fijas y de longitud variable son los tipos de columna principales admitidos por ESE. Las columnas etiquetadas no están presentes en un registro a menos que los datos se almacenen en la columna y puedan tener una longitud fija o variable. Las columnas etiquetadas también pueden contener más de un valor en un único registro. Las columnas fijas toman la misma cantidad de espacio en cada fila y requieren 1 bit para representar el valor NULL. Las columnas de longitud variable requieren 2 bytes para representar el tamaño y el valor NULL, y ocupan una cantidad variable de espacio en cada registro. Para obtener más información sobre las columnas etiquetadas y fijas, vea la opción Jet_bitColumnTagged y Jet_bitColumnFixed en el miembro **grbit** de la estructura JET_COLUMNDEF utilizada en la llamada [a](./jet-columndef-structure.md) [JetAddColumn](./jetaddcolumn-function.md).
 
-El tipo de columna que se establece en el parámetro *coltyp* en la llamada a [JetAddColumn](./jetaddcolumn-function.md)determina las columnas de longitud variable. Los siguientes tipos de columna pueden ser de longitud fija o variable dependiendo de si se Jet_bitColumnFixed opción:
+Las columnas de longitud variable están determinadas por el tipo de columna que se establece en el parámetro *coltyp* en la llamada a [JetAddColumn](./jetaddcolumn-function.md). Los siguientes tipos de columna pueden ser de longitud fija o variable en función de si se Jet_bitColumnFixed la opción de columna:
 
   - JET_coltypBinary
 

@@ -4,12 +4,12 @@ ms.assetid: 61470caa-cca6-4e7e-91a0-758ec5a9bdb5
 title: Propiedad AVEncMPVGenerateHeaderSeqDispExt (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49cc4efc93df331d4550984135ec13b2d7e7d9f22a027db0c42a9950146fcc02
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9b3dd17e1a9931f1b5df4cbc87e866346e5f02a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119276165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161851"
 ---
 # <a name="avencmpvgenerateheaderseqdispext-property"></a>Propiedad AVEncMPVGenerateHeaderSeqDispExt
 
@@ -25,7 +25,7 @@ Esta propiedad es de lectura y escritura.
 
 **CODECAPI \_ AVEncMPVGenerateHeaderSeqDispExt**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el valor es **VARIANT \_ TRUE,** el codificador genera encabezados de extensión de visualización de secuencia.
 
@@ -35,9 +35,9 @@ Si el valor es **VARIANT \_ TRUE,** el codificador genera encabezados de extensi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 

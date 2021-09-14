@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a41af8aebde27d8452453616dabfe0d84f8f5f0681e6257bd29774d9eca91d68
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31fdc564ad50c161f16e7054c6d0ec7d753bd0f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161642"
 ---
 # <a name="cameventreset-method"></a>Método CAMEvent.Reset
 
@@ -55,7 +55,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

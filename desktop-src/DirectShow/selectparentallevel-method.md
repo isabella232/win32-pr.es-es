@@ -4,12 +4,12 @@ ms.assetid: ffd1e204-6ed2-4190-8635-9f3866d38099
 title: SelectParentalLevel (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95de7e8cbf1fb6fa284eddefa1ba07ebb9268825116fdac9c97fbd5d42bac84e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb00172b8e61f353c45981af628eb396bca7a7df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119684045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886593"
 ---
 # <a name="selectparentallevel-method"></a>SelectParentalLevel (método)
 
@@ -53,11 +53,11 @@ Especifica la contraseña almacenada actualmente en el Registro como una cadena.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método establece el nivel de acceso en el objeto MSWebDVD, que determina qué contenido puede reproducir el usuario. Los niveles más altos pueden reproducir contenido de nivel inferior, pero los niveles inferiores no pueden reproducir contenido de nivel superior. El significado exacto de los ocho niveles de administración parental de DVD varía en función del país o región. En el Estados Unidos y Canadá, los niveles se asignan a las categorías de clasificación de Motion Picture Association of America (MPAA). La administración parental en el navegador de DVD está deshabilitada de forma predeterminada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cd2a715c3e0c40196117d679b6f8c4ddcaf1b809865867f169035ec90c9fe861
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8369b4e07437d3b749091a0b1c549188ddb6fc24
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119973115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888052"
 ---
 # <a name="esentindextuplescannotretrievefromindexexception-constructor"></a>Constructor EsentIndexTuplesCannotRetrieveFromIndexException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentIndexTuplesCannotRetrieveFromIndexException()
 public EsentIndexTuplesCannotRetrieveFromIndexException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

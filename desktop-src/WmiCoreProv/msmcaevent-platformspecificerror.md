@@ -1,5 +1,5 @@
 ---
-description: Indica un error específico de la plataforma de arquitectura de comprobación de máquina (MCA). Esta clase solo está disponible en sistemas de 64 Windows bits.
+description: Indica un error específico de la plataforma de arquitectura de comprobación de máquinas (MCA). Esta clase solo está disponible en sistemas de 64 Windows bits.
 ms.assetid: 409641d5-3451-4d26-88d1-bfd0e55db257
 title: MSMCAEvent_PlatformSpecificError clase
 ms.topic: reference
@@ -30,12 +30,12 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 0f85a0828b46826566c406d90b851cec3bbe39ee07a1456065e93542edcda35c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 51993c8c41206dac8f4c944d24fa59ae7b689f92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965319"
 ---
 # <a name="msmcaevent_platformspecificerror-class"></a>Clase MSMCAEvent \_ PlatformSpecificError
 
@@ -68,7 +68,7 @@ class MSMCAEvent_PlatformSpecificError : WMIEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase MSMCAEvent \_ PlatformSpecificError** tiene estos tipos de miembros:
 
@@ -186,7 +186,7 @@ Identificador único del componente que informa del error.
 
 </dd> <dt>
 
-**DATOS \_ ESPECÍFICOS DE PLATFORM BUS \_ \_**
+**DATOS \_ \_ ESPECÍFICOS DE PLATFORM BUS \_**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint64**
@@ -195,13 +195,13 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Datos específicos de OEM, dependientes del bus.
+Datos específicos del OEM, dependientes del bus.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
-**ESTADO DE \_ ERROR DE \_ LA PLATAFORMA**
+**ESTADO \_ DE ERROR DE LA \_ PLATAFORMA**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint64**
@@ -210,9 +210,9 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado de error genérico de la plataforma.
+Estado de error de plataforma genérica.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -227,11 +227,11 @@ Tipo de acceso: solo lectura
 
 Identificador del solicitante en el momento del evento.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
-**ID. \_ DE \_ RESPONDEDOR DE PLATAFORMA**
+**IDENTIFICADOR DEL \_ \_ RESPONDEDOR DE PLATAFORMA**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint64**
@@ -242,11 +242,11 @@ Tipo de acceso: solo lectura
 
 Identificador del respondedor en el momento del evento.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
-**ID. \_ DE DESTINO DE \_ PLATAFORMA**
+**ID. \_ DE DESTINO DE LA \_ PLATAFORMA**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint64**
@@ -257,7 +257,7 @@ Tipo de acceso: solo lectura
 
 Identificador de destino en el momento del evento.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -270,7 +270,7 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de bytes que contiene el registro de errores sin procesar tal como se Windows la capa de abstracción del sistema (SAL). La propiedad Size especifica el número de elementos de la **matriz.**
+Matriz de bytes que contiene el registro de error sin formato presentado a Windows por la capa de abstracción del sistema (SAL). La propiedad Size especifica el número de elementos de la **matriz.**
 
 </dd> <dt>
 
@@ -283,9 +283,9 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de registro del registro de errores de este error.
+Identificador de registro del registro de errores para este error.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -324,7 +324,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Bits de validación usados para indicar la validez de los campos subsiguientes.
+Bits de validación usados para indicar la validez de los campos posteriores.
 
 
 
@@ -333,21 +333,21 @@ Bits de validación usados para indicar la validez de los campos subsiguientes.
 | <span id="1_0x1"></span><span id="1_0X1"></span><dl> <dt>**1 0x1**</dt> </dl>          | **PLATAFORMA \_ ERROR \_ STATUS** es válido.<br/>            |
 | <span id="2_0x2"></span><span id="2_0X2"></span><dl> <dt>**2 0x2**</dt> </dl>          | **PLATAFORMA \_ ERROR \_ REQUESTOR \_ ID es** válido.<br/>     |
 | <span id="4_0x4"></span><span id="4_0X4"></span><dl> <dt>**4 0x4**</dt> </dl>          | **PLATAFORMA \_ ERROR \_ EL IDENTIFICADOR DEL \_ RESPONDEDOR** es válido.<br/>     |
-| <span id="8_0x8"></span><span id="8_0X8"></span><dl> <dt>**8 0x8**</dt> </dl>          | **PLATAFORMA \_ EL \_ IDENTIFICADOR DE DESTINO DE \_ ERROR** es válido.<br/>        |
+| <span id="8_0x8"></span><span id="8_0X8"></span><dl> <dt>**8 0x8**</dt> </dl>          | **PLATAFORMA \_ ERROR \_ EL IDENTIFICADOR DE \_ DESTINO** es válido.<br/>        |
 | <span id="16_0x10"></span><span id="16_0X10"></span><dl> <dt>**16 0x10**</dt> </dl>    | **PLATAFORMA \_ ERROR \_ SPECIFIC \_ DATA** es válido.<br/>    |
-| <span id="32_0x20"></span><span id="32_0X20"></span><dl> <dt>**32 0x20**</dt> </dl>    | **PLATAFORMA \_ ERROR \_ El identificador de \_ OEM** es válido.<br/>           |
-| <span id="64_0x40"></span><span id="64_0X40"></span><dl> <dt>**64 0x40**</dt> </dl>    | **PLATAFORMA \_ ERROR \_ EL \_ \_ STRUCT DE DATOS DE OEM** es válido.<br/> |
-| <span id="128_0x80"></span><span id="128_0X80"></span><dl> <dt>**128 0x80**</dt> </dl> | **PLATAFORMA \_ ERROR LA \_ RUTA DE ACCESO DEL DISPOSITIVO \_ \_ OEM** es válida.<br/> |
+| <span id="32_0x20"></span><span id="32_0X20"></span><dl> <dt>**32 0x20**</dt> </dl>    | **PLATAFORMA \_ ERROR \_ El identificador \_ de OEM** es válido.<br/>           |
+| <span id="64_0x40"></span><span id="64_0X40"></span><dl> <dt>**64 0x40**</dt> </dl>    | **PLATAFORMA \_ ERROR \_ LA ESTRUCTURA DATA DE \_ \_ OEM** es válida.<br/> |
+| <span id="128_0x80"></span><span id="128_0X80"></span><dl> <dt>**128 0x80**</dt> </dl> | **PLATAFORMA \_ ERROR \_ LA RUTA DE ACCESO DEL DISPOSITIVO \_ \_ OEM** es válida.<br/> |
 
 
 
  
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase MSMCAEvent \_ PlatformSpecificError** se deriva de [**WMIEvent**](wmievent.md).
 
@@ -365,7 +365,7 @@ La **clase MSMCAEvent \_ PlatformSpecificError** se deriva de [**WMIEvent**](wmi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

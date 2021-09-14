@@ -24,12 +24,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e43f3998e1b8f9e7d252a8a4c949d7d083c763a8759d7c9df6aa60c21618e217
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7ae74003f798049fbdb34c955db3f64112bfcd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119867965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890841"
 ---
 # <a name="win32_terminal-class"></a>Clase Terminal win32 \_
 
@@ -54,7 +54,7 @@ class Win32_Terminal : CIM_LogicalElement
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Terminal win32** tiene estos tipos de miembros:
 
@@ -69,10 +69,10 @@ La **clase \_ Terminal win32** tiene estos métodos.
 
 | Método                                  | Descripción                                                                                                                                                                             |
 |:----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Crear**](create-win32-terminal.md) | Crea un terminal con la configuración predeterminada que se puede personalizar mediante las propiedades y los métodos de las clases [**\_ TerminalSetting de Win32.**](win32-terminalsetting.md)<br/> |
+| [**Crear**](create-win32-terminal.md) | Crea un terminal con la configuración predeterminada que se puede personalizar mediante las propiedades y métodos de las clases [**\_ TerminalSetting de Win32.**](win32-terminalsetting.md)<br/> |
 | [**Eliminar**](delete-win32-terminal.md) | Elimina el terminal especificado.<br/>                                                                                                                                              |
 | [**Habilitar**](win32-terminal-enable.md) | Deshabilita o habilita el terminal.<br/>                                                                                                                                            |
-| [**Renombrar**](win32-terminal-rename.md) | Cambia el nombre del terminal.<br/>                                                                                                                                                        |
+| [**Cambiar nombre**](win32-terminal-rename.md) | Cambia el nombre del terminal.<br/>                                                                                                                                                        |
 
 
 
@@ -80,7 +80,7 @@ La **clase \_ Terminal win32** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ Terminal win32** tiene estas propiedades.
+La **clase \_ Terminal Win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -212,7 +212,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -292,7 +292,7 @@ Nombre único que identifica la instancia del terminal.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Win32 \_ Terminal** está asociado a [**\_ TerminalSetting de Win32**](win32-terminalsetting.md) como la **propiedad Element** de la asociación [**\_ TerminalTerminalSetting de Win32.**](win32-terminalterminalsetting.md)
 
@@ -300,7 +300,7 @@ Las siguientes clases son subclases de la clase **\_ Terminal Win32: Win32** [**
 
 Tenga en cuenta que las winstations asociadas a la sesión de consola no pueden tener acceso a los métodos y propiedades de esta clase. Si se intenta hacerlo especificando "Console" como valor de la propiedad **TerminalName,** los métodos de este objeto **devuelven WBEM \_ E NOT \_ \_ SUPPORTED**. Este código de error también se devuelve si una estación de ventana intenta llamar a métodos de este objeto para agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
 
-Para conectarse al espacio \\ de nombres Raíz de \\ TerminalServices CIMV2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el Visual Basic ejemplo de Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio \\ de nombres Raíz de \\ TerminalServices CIMV2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -311,7 +311,7 @@ Set objServices = GetObject( _
 
 
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -327,7 +327,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

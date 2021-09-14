@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15302483143b17075b6a6164fcd05da80eb1c7c666a83c76a460408d70ac72e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e05e05ca9c7c3efdf842ffd4297da6f9fee035d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890012"
 ---
 # <a name="ambientattributesclippingimage"></a>AmbientAttributes.clippingImage
 
@@ -29,9 +29,9 @@ El **atributo clippingImage** especifica o recupera la región a la que se recor
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de lectura **y** escritura que indica el nombre del archivo de imagen. No tiene valor predeterminado.
+Este atributo es una cadena de **lectura** y escritura que indica el nombre del archivo de imagen. No tiene valor predeterminado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **atributo clippingImage** admite archivos PNG, JPG, BMP y GIF (sin incluir GIF animados). Dado que los JPG son perdidos y, por tanto, están sujetos a un cambio de color inesperado, no se recomiendan para recortar imágenes.
 
@@ -49,13 +49,13 @@ Vea el [atributo BUTTONELEMENT.mappingColor](buttonelement-mappingcolor.md) para
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3ce6a9a05573467e0725785a6272e5542c4f871080fe221ac12078b17165eb5a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76e0a6f259bc8ba547a02b2e95cccf718d54e904
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118803278"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963728"
 ---
 # <a name="d3dxweldvertices-function"></a>Función D3DXWeldVertices
 
@@ -51,7 +51,7 @@ HRESULT D3DXWeldVertices(
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a un [**objeto ID3DXMesh,**](id3dxmesh.md) la malla desde la que se verán los vértices de las agujas del mouse.
+Puntero a un [**objeto ID3DXMesh,**](id3dxmesh.md) la malla desde la que se va a vertices de distancia.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Matriz de DWORD, una por cara, que identifica la cara de malla original que corr
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXBuffer,**](id3dxbuffer.md) que contiene un DWORD para cada vértice que especifica cómo se asignan los nuevos vértices a los vértices antiguos. Esta reasignación es útil si necesita modificar los datos externos en función de la nueva asignación de vértices.
+Dirección de un puntero a una interfaz [**ID3DXBuffer,**](id3dxbuffer.md) que contiene un DWORD para cada vértice que especifica cómo se asignan los nuevos vértices a los vértices antiguos. Esta reasignación es útil si necesita modificar datos externos en función de la nueva asignación de vértices.
 
 </dd> </dl>
 
@@ -115,7 +115,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función usa información de adyacencia proporcionada para determinar los puntos que se replican. Los vértices se combinan en función de una comparación de epsilón. Los vértices con la misma posición ya deben haber sido calculados y representados por datos representativos de punto.
 

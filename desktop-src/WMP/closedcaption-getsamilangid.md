@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7317bff13b0dcf29157e4a31c1b854fff781d93460633b64485670fab64e6f1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8cd543c9cb9d884022d78a875a2f8de078c479b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885268"
 ---
 # <a name="closedcaptiongetsamilangid-method"></a>Método ClosedCaption.getSAMILangID
 
@@ -53,7 +53,7 @@ retVal = ClosedCaption.getSAMILangID(
 
 Este método devuelve un **valor Number** (**long**) que contiene el LCID del lenguaje con el índice especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los idiomas de un archivo SAMI se indexa en el orden que se muestra en el archivo, empezando por cero.
 
@@ -67,12 +67,12 @@ Este método no se puede usar hasta que se abra un archivo multimedia digital *(
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
+| Version<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

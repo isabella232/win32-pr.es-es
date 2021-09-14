@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: dbeaf5d7987f1baf2b3df9804c4abd3049c38042a29f4177f83abec6855140a6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e5a4500c2b53703a13b509f112453e65c954f96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118401056"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892172"
 ---
 # <a name="iamtimelinecompgetnextvtrack-method"></a>IamTimelineComp::GetNextVTrack (método)
 
@@ -64,7 +64,7 @@ Recibe un puntero a la [**interfaz IAMTimelineObj**](iamtimelineobj.md) de la si
 
 Devuelve S OK si el método recupera una pista virtual o S FALSE en caso \_ \_ contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el método se realiza correctamente, la **interfaz IAMTimelineObj** que devuelve tiene un recuento de referencias pendiente. Asegúrese de liberar la interfaz cuando haya terminado de usarlo.
 
@@ -89,7 +89,7 @@ Si el método se realiza correctamente, la **interfaz IAMTimelineObj** que devue
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

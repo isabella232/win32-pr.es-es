@@ -17,11 +17,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 808c7d1bf1bdef1223e5b57e40ea5e6a90878101
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469352"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966912"
 ---
 # <a name="id3dx11dataprocessor-interface"></a>Interfaz ID3DX11DataProcessor
 
@@ -32,7 +32,7 @@ ms.locfileid: "122469352"
 
 Objeto de procesamiento de datos utilizado [**por la interfaz ID3DX11ThreadPump para**](id3dx11threadpump.md) cargar datos de forma asincrónica.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ID3DX11DataProcessor** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ID3DX11DataProcessor** también tiene estos tipos de miembros:
 
@@ -56,7 +56,7 @@ La **interfaz ID3DX11DataProcessor** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este objeto se puede heredar y sus miembros se pueden volver a definir para procesar formatos de archivo personalizados.
 
@@ -64,9 +64,9 @@ Este objeto se puede heredar y sus miembros se pueden volver a definir para proc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                              |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                 |
 | Encabezado<br/>                   | <dl> <dt>D3DX11core.h</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>D3DX11.lib</dt> </dl>   |

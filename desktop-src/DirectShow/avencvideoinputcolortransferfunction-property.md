@@ -4,12 +4,12 @@ ms.assetid: ccfdeb65-6188-4fea-bbef-2510271fbf1e
 title: Propiedad AVEncVideoInputColorTransferFunction (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c601d1f4d56ada75b297742a533aa084e171a292f9e9b332d0b0f70f80ebee95
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8be732165bbd2be72ae637f54080420cb8ae243c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119342275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161759"
 ---
 # <a name="avencvideoinputcolortransferfunction-property"></a>Propiedad AVEncVideoInputColorTransferFunction
 
@@ -35,13 +35,13 @@ El valor de esta propiedad es miembro de la [**enumeración eAVEncVideoColorTran
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

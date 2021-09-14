@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe9b2a75e7a5c220db3f7f330fd3e4aa2ceb1553a995d40f6ffc3e3369aa31e6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f119955a66f7aec336ce52d730d54a5f11756527
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120094885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966532"
 ---
 # <a name="texture1dsamplesfloatintfloat-function"></a>Función Texture1D::Sample(S,float,int,float)
 
@@ -60,7 +60,7 @@ Las coordenadas de textura. El tipo de argumento depende del tipo texture-object
 
 
 
-| Texture-Object de datos                    | Tipo de parámetro |
+| Texture-Object type                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -82,7 +82,7 @@ Desplazamiento de coordenadas de textura opcional, que se puede usar para cualqu
 
 
 
-| Texture-Object de datos           | Tipo de parámetro |
+| Texture-Object type           | Tipo de parámetro |
 |-------------------------------|----------------|
 | Texture1D, Texture1DArray     | int            |
 | Texture2D, Texture2DArray     | int2           |
@@ -100,7 +100,7 @@ Desplazamiento de coordenadas de textura opcional, que se puede usar para cualqu
 
 Tipo: **float**
 
-Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual tiene acceso a un nivel de mip inferior a 2,0f.
+Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual acceda a un nivel de mip inferior a 2,0f.
 
 </dd> </dl>
 
@@ -108,7 +108,7 @@ Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pa
 
 Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-El formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+El formato de textura, que es uno de los valores con tipo enumerados en [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Consulte también
 

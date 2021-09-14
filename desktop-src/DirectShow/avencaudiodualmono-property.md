@@ -4,16 +4,16 @@ ms.assetid: 37f25590-69c2-43bd-a5d4-2262457cb39d
 title: Propiedad AVEncAudioDualMono (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7255177290ebbe15104d0264a821e9c17ecdf90b605fbaab435f6d39c577548
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b58cbd901079d8f4dede1efae140791ae99c7fed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162069"
 ---
 # <a name="avencaudiodualmono-property"></a>AvEncAudioDualMono, propiedad
 
-Especifica si el audio de 2 canales está codificado como estéreo o mono dual.
+Especifica si el audio de 2 canales se codifica como estéreo o mono dual.
 
 Esta propiedad es de lectura y escritura.
 
@@ -29,9 +29,9 @@ Esta propiedad es de lectura y escritura.
 
 El valor de esta propiedad es un miembro de la [**enumeración eAVEncAudioDualMono.**](/windows/win32/api/codecapi/ne-codecapi-eavencaudiodualmono)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta propiedad no se aplica a los codificadores de audio MPEG. Para audio MPEG, use [**la propiedad AVEncMPACodingMode.**](avencmpacodingmode-property.md)
+Esta propiedad no se aplica a los codificadores de audio MPEG. Para el audio MPEG, use [**la propiedad AVEncMPACodingMode.**](avencmpacodingmode-property.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,13 +39,13 @@ Esta propiedad no se aplica a los codificadores de audio MPEG. Para audio MPEG, 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

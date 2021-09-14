@@ -4,12 +4,12 @@ ms.assetid: 1a6d94b8-bb41-cf4a-6e6e-3fc9756f56d2
 title: Funciones de comparación de vectores 4D de la biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57a46d7ca48696a3767e5008ddcd9684faaa2003c783670d945a98538bda5a9c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8cb3b0a888cd77473c48e6231892d32fd403f0b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118276742"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963456"
 ---
 # <a name="directxmath-library-4d-vector-comparison-functions"></a>Funciones de comparación de vectores 4D de la biblioteca DirectXMath
 

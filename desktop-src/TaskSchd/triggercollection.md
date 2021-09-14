@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7fd103918bc3898e56a3041221c9c70c9ede9aea5df4843cd984f2502279014
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29f7288d8db0b56fc9cc8b3de7ace8c10c13959a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119001943"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891356"
 ---
 # <a name="triggercollection-object"></a>Objeto TriggerCollection
 
 Objeto de scripting que se usa para agregar, quitar y recuperar los desencadenadores de una tarea.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto TriggerCollection** tiene estos tipos de miembros:
 
@@ -44,7 +44,7 @@ El **objeto TriggerCollection** tiene estos métodos.
 |:-------------------------------------------|:-------------------------------------------------------------------------------------------|
 | [**Borrar**](triggercollection-clear.md)   | Borra todos los desencadenadores de la colección.<br/>                                        |
 | [**Crear**](triggercollection-create.md) | Crea un nuevo desencadenador para la tarea.<br/>                                             |
-| [**Quitar**](triggercollection-remove.md) | Quita el desencadenador especificado de la colección de desencadenadores usados por la tarea.<br/> |
+| [**Remove**](triggercollection-remove.md) | Quita el desencadenador especificado de la colección de desencadenadores usados por la tarea.<br/> |
 
 
 
@@ -65,7 +65,7 @@ El **objeto TriggerCollection** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al leer o escribir XML para una tarea, los desencadenadores de la tarea se especifican en el elemento [**Triggers**](taskschedulerschema-triggers-tasktype-element.md) del Programador de tareas esquema.
 
@@ -83,17 +83,17 @@ Para obtener más información y código de ejemplo para este objeto de scriptin
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                         |
-| Header<br/>                   | <dl> <dt>Windows.ui.xaml.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Windows.ui.xaml.h</dt> </dl> |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl>      |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl>      |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**detonante**](trigger.md)
+[**Detonante**](trigger.md)
 </dt> </dl>
 
  

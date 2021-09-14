@@ -1,5 +1,5 @@
 ---
-title: ProcessTokenSidType Simple Type
+title: Tipo simple processTokenSidType
 description: Define los valores posibles para el elemento ProcessTokenSidType (principalType).
 ms.assetid: 9db3e113-c525-4cbf-88c2-be256d641e92
 keywords:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 505f8abe340af36c25792ec97a5a465a166eedb74921c800d2a568d10a5cce0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13cf70534510e1aed8def9005d0c2d1eafab2a5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118611907"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968700"
 ---
-# <a name="processtokensidtype-simple-type"></a>ProcessTokenSidType Simple Type
+# <a name="processtokensidtype-simple-type"></a>Tipo simple processTokenSidType
 
-Define los valores posibles [**para el elemento ProcessTokenSidType (principalType).**](taskschedulerschema-processtokensidtype-principaltype-element.md)
+Define los valores posibles para [**el elemento ProcessTokenSidType (principalType).**](taskschedulerschema-processtokensidtype-principaltype-element.md)
 
 ``` syntax
 <xs:simpleType name="processTokenSidType">
@@ -48,7 +48,7 @@ El **tipo simple processTokenSidType** define los valores siguientes.
 | Value        | Descripción                                                                                                                                 |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | None         | Las tareas se ejecutan en un proceso que no contiene un SID de token de proceso (no se realizará ningún cambio en la lista de grupos de tokens de proceso).<br/> |
-| Sin restricciones | Un SID de tarea se derivará de la ruta de acceso completa de la tarea y se agregará a la lista de grupos de tokens de proceso.<br/>                           |
+| Sin restricciones | Un SID de tarea se derivará de la ruta de acceso de tarea completa y se agregará a la lista de grupos de tokens de proceso.<br/>                           |
 
 
 
@@ -58,7 +58,7 @@ El **tipo simple processTokenSidType** define los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 

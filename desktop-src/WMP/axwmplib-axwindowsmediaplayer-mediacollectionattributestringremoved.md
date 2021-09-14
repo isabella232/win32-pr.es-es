@@ -1,6 +1,6 @@
 ---
 title: Evento MediaCollectionAttributeStringRemoved del objeto AxWindowsMediaPlayer
-description: El evento MediaCollectionAttributeStringRemoved tiene lugar cuando se quita un valor de atributo de la biblioteca. | Evento MediaCollectionAttributeStringRemoved del objeto AxWindowsMediaPlayer
+description: El evento MediaCollectionAttributeStringRemoved se produce cuando se quita un valor de atributo de la biblioteca. | Evento MediaCollectionAttributeStringRemoved del objeto AxWindowsMediaPlayer
 ms.assetid: 2f264416-0bc5-41d0-8863-32c284393082
 keywords:
 - Evento MediaCollectionAttributeStringRemoved del objeto AxWindowsMediaPlayer Reproductor de Windows Media
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f56a6e997ada3296a0ec1df841797c1495ccde0864495dcf77a0a0634ccde5fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a11b6b028a2a47585b06159ed46b986124583950
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118582081"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889713"
 ---
 # <a name="mediacollectionattributestringremoved-event-of-the-axwindowsmediaplayer-object"></a>Evento MediaCollectionAttributeStringRemoved del objeto AxWindowsMediaPlayer
 
-El evento MediaCollectionAttributeStringRemoved tiene lugar cuando se quita un valor de atributo de la biblioteca.
+El evento MediaCollectionAttributeStringRemoved se produce cuando se quita un valor de atributo de la biblioteca.
 
 ``` syntax
 [C#]
@@ -54,15 +54,15 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se quita un elemento multimedia de la biblioteca, sus metadatos se quitan de **MediaCollection** y este evento se desencadena para cada atributo quitado.
+Cuando se quita un elemento multimedia de la biblioteca, sus metadatos se quitan de **MediaCollection** y se desencadena este evento para cada atributo quitado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |

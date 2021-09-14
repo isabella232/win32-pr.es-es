@@ -1,30 +1,30 @@
 ---
 title: Propiedad IMsRdpClient SecuredSettings2
-description: Recupera un puntero a la interfaz IMsRdpClientSecuredSettings. Esta interfaz se puede usar para establecer la configuración segura para el control de cliente.
+description: Recupera un puntero a la interfaz IMsRdpClientSecuredSettings. Esta interfaz se puede usar para establecer la configuración protegida para el control de cliente.
 ms.assetid: f570a3f6-70ae-45fd-ba20-75c9f4d2f5ca
 ms.tgt_platform: multiple
 keywords:
 - Propiedad SecuredSettings2 Servicios de Escritorio remoto
 - Propiedad SecuredSettings2 Servicios de Escritorio remoto , interfaz IMsRdpClient
-- Interfaz IMsRdpClient Servicios de Escritorio remoto propiedad , SecuredSettings2
-- Propiedad SecuredSettings2 Servicios de Escritorio remoto interfaz , IMsRdpClient2
-- Interfaz IMsRdpClient2 Servicios de Escritorio remoto propiedad , SecuredSettings2
-- Propiedad SecuredSettings2 Servicios de Escritorio remoto interfaz , IMsRdpClient3
-- Interfaz IMsRdpClient3 Servicios de Escritorio remoto propiedad , SecuredSettings2
-- Propiedad SecuredSettings2 Servicios de Escritorio remoto interfaz , IMsRdpClient4
-- Interfaz IMsRdpClient4 Servicios de Escritorio remoto propiedad , SecuredSettings2
-- Propiedad SecuredSettings2 Servicios de Escritorio remoto interfaz , IMsRdpClient5
-- Interfaz IMsRdpClient5 Servicios de Escritorio remoto propiedad , SecuredSettings2
-- Propiedad SecuredSettings2 Servicios de Escritorio remoto interfaz , IMsRdpClient6
-- Interfaz IMsRdpClient6 Servicios de Escritorio remoto propiedad , SecuredSettings2
-- Propiedad SecuredSettings2 Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad SecuredSettings2
+- Propiedad SecuredSettings2 Servicios de Escritorio remoto , interfaz IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad SecuredSettings2
+- Propiedad SecuredSettings2 Servicios de Escritorio remoto , interfaz IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad SecuredSettings2
+- Propiedad SecuredSettings2 Servicios de Escritorio remoto , interfaz IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad SecuredSettings2
+- Propiedad SecuredSettings2 Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad SecuredSettings2
+- Propiedad SecuredSettings2 Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad SecuredSettings2
+- Propiedad SecuredSettings2 Servicios de Escritorio remoto , interfaz IMsRdpClient7
 - Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad SecuredSettings2
-- Propiedad SecuredSettings2 Servicios de Escritorio remoto interfaz , IMsRdpClient8
-- Interfaz IMsRdpClient8 Servicios de Escritorio remoto propiedad , SecuredSettings2
-- Propiedad SecuredSettings2 Servicios de Escritorio remoto interfaz , IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto propiedad , SecuredSettings2
-- Propiedad SecuredSettings2 Servicios de Escritorio remoto interfaz , IMsRdpClient10
-- Interfaz IMsRdpClient10 Servicios de Escritorio remoto propiedad , SecuredSettings2
+- Propiedad SecuredSettings2 Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad SecuredSettings2
+- Propiedad SecuredSettings2 Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad SecuredSettings2
+- Propiedad SecuredSettings2 Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad SecuredSettings2
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea0dff321eed8da198cafeb2fd58cf37661f100b08fbc52ac7c90be9c2575c7a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39e26d9d7a7b2ac776166c251e5a2ab9923297f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119771785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890985"
 ---
 # <a name="imsrdpclientsecuredsettings2-property"></a>Propiedad IMsRdpClient::SecuredSettings2
 
-Recupera un puntero a la [**interfaz IMsRdpClientSecuredSettings.**](imsrdpclientsecuredsettings-interface.md) Esta interfaz se puede usar para establecer la configuración segura para el control de cliente.
+Recupera un puntero a la [**interfaz IMsRdpClientSecuredSettings.**](imsrdpclientsecuredsettings-interface.md) Esta interfaz se puede usar para establecer la configuración protegida para el control de cliente.
 
 Esta propiedad es de solo lectura.
 
@@ -86,9 +86,9 @@ Puntero [**de interfaz IMsRdpClientSecuredSettings.**](imsrdpclientsecuredsettin
 
 Si el método se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro **valor HRESULT** indica que se ha dado error en la llamada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para obtener más información, vea la [**interfaz IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) y [Proporcionar seguridad de cliente RDP.](providing-for-rdp-client-security.md)
+Para obtener más información, vea la [**interfaz IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) y [Proporcionar seguridad de cliente RDP](providing-for-rdp-client-security.md).
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -106,7 +106,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

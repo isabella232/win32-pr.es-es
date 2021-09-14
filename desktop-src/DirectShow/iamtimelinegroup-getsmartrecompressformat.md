@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8d568bdf0446533df9391c1c0b30382b9a56ecdf0ed788d64c48c38ddf0684a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8560bb9d8da6904cf74b62ffd238b234e9c74ed6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118400733"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892092"
 ---
 # <a name="iamtimelinegroupgetsmartrecompressformat-method"></a>Método IAMTimelineGroup::GetSmartRecompressFormat
 
@@ -48,7 +48,7 @@ HRESULT GetSmartRecompressFormat(
 *ppFormat* 
 </dt> <dd>
 
-Recibe un puntero a una [**estructura SCompFmt0,**](scompfmt0.md) que se convierte como un puntero a un objeto long. Si se produce un error en el método, el valor se establece en **NULL.**
+Recibe un puntero a una [**estructura SCompFmt0,**](scompfmt0.md) que se convierte como un puntero a un objeto long. Si se produce un error en el método , el valor se establece en **NULL.**
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Recibe un puntero a una [**estructura SCompFmt0,**](scompfmt0.md) que se convier
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la aplicación no ha establecido un formato de compresión inteligente (llamando a [**IAMTimelineGroup::SetSmartRecompressFormat),**](iamtimelinegroup-setsmartrecompressformat.md)el formato devuelto por este método no será válido. Llame al [**método IAMTimelineGroup::IsSmartRecompressFormatSet**](iamtimelinegroup-issmartrecompressformatset.md) para determinar si se estableció un formato de compresión.
 

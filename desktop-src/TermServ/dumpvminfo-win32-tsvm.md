@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método DumpVmInfo Servicios de Escritorio remoto
 - Método DumpVmInfo Servicios de Escritorio remoto , Win32_TSVm clase
-- Win32_TSVm clase Servicios de Escritorio remoto método , DumpVmInfo
+- Win32_TSVm clase Servicios de Escritorio remoto , Método DumpVmInfo
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c74602e09f7aab4909e78bcd4696a450419e929b89769b35e16f21cbcafc080
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a2d02a1d4ea07bd045da2850a4d7ccb0069977a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118354026"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891084"
 ---
 # <a name="dumpvminfo-method-of-the-win32_tsvm-class"></a>Método DumpVmInfo de la clase TSVm win32 \_
 
@@ -59,7 +59,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

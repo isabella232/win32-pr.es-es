@@ -1,19 +1,19 @@
 ---
-description: Especifica la función de conversión de RGB a R'G'B ' para el vídeo codificado.
+description: Especifica la función de conversión de RGB a R'G'B' para vídeo codificado.
 ms.assetid: 89efb1c7-cf77-465c-b6b3-5f89773c524b
-title: Propiedad AVEncVideoOutputColorTransferFunction (Codecapi. h)
+title: Propiedad AVEncVideoOutputColorTransferFunction (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ba86d9afa507804e631614936e941952f17797c8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686294"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161737"
 ---
 # <a name="avencvideooutputcolortransferfunction-property"></a>Propiedad AVEncVideoOutputColorTransferFunction
 
-Especifica la función de conversión de RGB a R'G'B ' para el vídeo codificado.
+Especifica la función de conversión de RGB a R'G'B' para vídeo codificado.
 
 Esta propiedad es de lectura y escritura.
 
@@ -27,7 +27,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la enumeración [**eAVEncVideoColorTransferFunction**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolortransferfunction) .
+El valor de esta propiedad es miembro de la [**enumeración eAVEncVideoColorTransferFunction.**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolortransferfunction)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,20 +35,20 @@ El valor de esta propiedad es un miembro de la enumeración [**eAVEncVideoColorT
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio aplicaciones para \| UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

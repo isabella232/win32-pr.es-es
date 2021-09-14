@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c675e0b7fffc00f181bc56f314ddcbbdac56c9c910abbaa0f88f69ad321bce2b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c41fae92f6177bf0c39138ad33988a74c482e0ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965599"
 ---
 # <a name="jet_recsizeaddition-operator"></a>JET_RECSIZE. Operador de suma
 
@@ -67,7 +67,7 @@ public static JET_RECSIZE operator +(
   - izquierda  
     Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE](./jet-recsize-structure2.md)  
     
-    Primer JET_RECSIZE.
+    El primer JET_RECSIZE.
 
 <!-- end list -->
 
@@ -79,9 +79,9 @@ public static JET_RECSIZE operator +(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE](./jet-recsize-structure2.md)  
-Un JET_RECSIZE que contiene el resultado de agregar los tamaños a la izquierda y a la derecha.  
+Un JET_RECSIZE que contiene el resultado de agregar los tamaños de izquierda y derecha.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,7 +1,7 @@
 ---
-description: Cambiar los huesos influyen en los vértices.
+description: Cambiar qué influencia tienen los vértices.
 ms.assetid: 0955e0ba-ffc5-408b-ab38-2abd39e1c429
-title: 'ID3DX10SkinInfo:: RemapBones (método) (D3DX10. h)'
+title: Método ID3DX10SkinInfo::RemapPxs (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,15 +15,15 @@ api_location:
 - D3DX10.lib
 - D3DX10.dll
 ms.openlocfilehash: 238e4628740fa74e055312c82de2635316f5bde5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718226"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965059"
 ---
-# <a name="id3dx10skininforemapbones-method"></a>ID3DX10SkinInfo:: RemapBones (método)
+# <a name="id3dx10skininforemapbones-method"></a>Método ID3DX10SkinInfo::RemapPxs
 
-Cambiar los huesos influyen en los vértices.
+Cambiar qué influencia tienen los vértices.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT RemapBones(
 
 <dl> <dt>
 
-*NewBoneCount* \[ de\]
+*NewBoneCount* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Nuevo número de huesos.
+Nuevo número de esqueletos.
 
 </dd> <dt>
 
-*pBoneRemap* \[ de\]
+*pIqueRemap* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntero a una matriz de índices de hueso, que describen la reasignación. Por ejemplo, suponga que SkinInfo contiene algunos huesos, de modo que bone0 se asigna a V0, bone1 a V1 y bone2 a V2, y se especifica array con 2, 1, 0 para pBoneRemap. Esto hará que bone0 se asigne a V2, bone1 a V1 y bone2 a v0.
+Puntero a una matriz de índices de pórdices, que describen el remapping. Por ejemplo, por ejemplo, say SkinInfo contiene algunos fragmentos, como que se asigna a v0, a pero1 a v1 y a la matriz con 2,1,0, y se especifica array con 2,1,0 para pDimensionRemap. Esto hará que cause que cause que se asignen a v2, a pero1 a v1 y a la versión 2 a v0.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a una matriz de índices de hueso, que describen la reasignación. Por e
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ OUTOFMEMORY o e \_ INVALIDARG.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ OUTOFMEMORY o E \_ INVALIDARG.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,19 +71,19 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

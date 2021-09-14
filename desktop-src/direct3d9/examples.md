@@ -4,12 +4,12 @@ ms.assetid: vs|directx_sdk|~\examples.htm
 title: Ejemplos (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47f8b8e2a9c500042e9b8d7c7fd911ab74b2f428d1ef814aca9e5fda1be7dcab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d26fbb8cbe45881243e17f80fd302c0fb4640685
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118523102"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888572"
 ---
 # <a name="examples-direct3d-9-graphics"></a>Ejemplos (gráficos de Direct3D 9)
 

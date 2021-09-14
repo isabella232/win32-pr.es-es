@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 17e01e987e7d15c33d9d1221499d448ef6567a785f8754274831f3969ed650ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a0feca232f09da4dc99ff97f68eaab881f1e9ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119043713"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966463"
 ---
 # <a name="samplegradsamplegradsfloatfloatfloatintfloatuint-function-for-texture1darray"></a>Función SampleGrad::SampleGrad(S,float,float,float,int,float,uint) para Texture1DArray
 
@@ -166,7 +166,7 @@ Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi
 
 Formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8ea3b8487aee5101358c5eb0243d0122c3f2ee7f22b6b15ddc45eba97cc8e72e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a5fd34cc3dffc6d5c8df7f7a76d9cada7856d57
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119921195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970307"
 ---
 # <a name="cim_productparentchild-class"></a>Cim \_ ProductParentChild (clase)
 
 La **\_ asociación CIM ProductParentChild** define una jerarquía de elementos primarios y secundarios entre los productos. Por ejemplo, un producto puede estar empaquetado con otros productos.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_ProductParentChild
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM ProductParentChild** tiene estos tipos de miembros:
 
@@ -86,7 +86,7 @@ Referencia al producto primario de la asociación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 

@@ -7,12 +7,12 @@ keywords:
 - Transformaciones 2D de DirectComposition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ef965ce98bb064eb63b34de569160c9b68932c96ce757e3e5d13450f73098b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b52d2e0ce9fbb56547c42ea4ea18d57d173a7e40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118281965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126970435"
 ---
 # <a name="how-to-apply-2d-transforms"></a>Cómo aplicar transformaciones 2D
 
@@ -22,10 +22,10 @@ ms.locfileid: "118281965"
 En este tema se muestra cómo aplicar transformaciones 2D a un objeto visual mediante Microsoft DirectComposition. En el ejemplo de este tema se aplica un grupo de transformaciones que:
 
 1.  Gira el objeto visual en 180 grados.
-2.  Escale verticalmente el objeto visual hasta tres veces su tamaño original.
+2.  Escale verticalmente el objeto visual tres veces su tamaño original.
 3.  Traducir (mover) el objeto visual 150 píxeles a la derecha de su posición original.
 
-Las siguientes capturas de pantalla muestran el objeto visual antes y después de aplicar las transformaciones 2D.
+Las capturas de pantalla siguientes muestran el objeto visual antes y después de aplicar las transformaciones 2D.
 
 ![resultado de aplicar un grupo de transformaciones 2d a un objeto visual](images/apply2dtransform.png)
 
@@ -43,14 +43,14 @@ Las siguientes capturas de pantalla muestran el objeto visual antes y después d
 -   Microsoft Win32
 -   Modelo de objetos componentes (COM)
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="step-1-initialize-directcomposition-objects"></a>Paso 1: Inicializar objetos DirectComposition
 
 1.  Cree el objeto de dispositivo y el objeto de destino de composición.
 2.  Cree un objeto visual, establezca su contenido y agrégrélo al árbol visual.
 
-Para obtener más información, [vea Cómo inicializar DirectComposition](initialize-directcomposition.md).
+Para obtener más información, [vea How to initialize DirectComposition](initialize-directcomposition.md).
 
 ### <a name="step-2-create-the-transform-group-array"></a>Paso 2: Creación de la matriz de grupos de transformación
 
@@ -61,7 +61,7 @@ IDCompositionTransform *pTransforms[3];
 
 
 
-### <a name="step-3-create-the-transform-objects-set-their-properties-and-add-them-to-the-transform-group-array"></a>Paso 3: Crear los objetos de transformación, establecer sus propiedades y agregarlos a la matriz de grupos de transformación
+### <a name="step-3-create-the-transform-objects-set-their-properties-and-add-them-to-the-transform-group-array"></a>Paso 3: Crear los objetos de transformación, establecer sus propiedades y agregarlos a la matriz del grupo de transformación
 
 1.  Use los [**métodos IDCompositionDevice::CreateRotateTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createrotatetransform), [**::CreateScaleTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform)y [**::CreateTranslateTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtranslatetransform) para crear los objetos de transformación.
 2.  Use las funciones miembro de las interfaces [**IDCompositionRotateTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionrotatetransform), [**IDCompositionScaleTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionscaletransform)e [**IDCompositionTranslateTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositiontranslatetransform) para establecer las propiedades de las transformaciones.
@@ -170,7 +170,7 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-6-commit-the-composition"></a>Paso 6: Confirmar la composición
+### <a name="step-6-commit-the-composition"></a>Paso 6: Confirmación de la composición
 
 Llame al [**método IDCompositionDevice::Commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) para confirmar las actualizaciones del objeto visual en DirectComposition para su procesamiento. El resultado de aplicar el grupo de transformaciones 2D aparece en la ventana de destino.
 

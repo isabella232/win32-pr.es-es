@@ -9,12 +9,12 @@ keywords:
 - vídeo en máscaras, agregar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 099778395146cb0bf0f27b483d55dd75c0fb8a0b28b879cc2d388f8e8cb7ba75
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0cc952f2fa80536bc6b2bb9ef3b43c6730616af3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055413"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890204"
 ---
 # <a name="adding-video"></a>Adición de vídeo
 

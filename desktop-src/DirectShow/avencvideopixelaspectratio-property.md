@@ -4,12 +4,12 @@ ms.assetid: 948eae1e-ab24-4b39-aa20-ec7da71bb359
 title: Propiedad AVEncVideoPixelAspectRatio (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6d3f1050cbdd4006f9e32b9b574bbffc14ccf5f64a53982137804165ca26226
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cecd4b48f51fd6e91b45ad962a9ef81ebbf40824
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161727"
 ---
 # <a name="avencvideopixelaspectratio-property"></a>Propiedad AVEncVideoPixelAspectRatio
 
@@ -37,11 +37,11 @@ Los 16 bits superiores del valor contienen el ancho y los 16 bits inferiores con
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

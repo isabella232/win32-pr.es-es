@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 81c295e19c1f02bfd6d6cf7af3705ad7ed5db801d610560e6424e694fe4cd81d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2385d7ff766d72300a402fccfae8eb7338b89f87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117942793"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968723"
 ---
 # <a name="principals-tasktype-element"></a>Elemento Principals (taskType)
 
@@ -52,7 +52,7 @@ El **elemento Principals** se define mediante el [**tipo complejo taskType.**](t
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede especificar hasta 32 entidades de seguridad para una tarea.
 
@@ -92,7 +92,7 @@ El siguiente XML define dos entidades de seguridad: un identificador de usuario 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

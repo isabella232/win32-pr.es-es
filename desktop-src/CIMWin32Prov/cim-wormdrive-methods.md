@@ -1,23 +1,23 @@
 ---
-description: La clase \_ CIM WORMDrive expone los métodos siguientes.
+description: La clase WORMDrive de CIM \_ expone los métodos siguientes.
 ms.assetid: 877CC484-EBBE-4719-85B9-50C04A8A61FE
 ms.tgt_platform: multiple
 title: CIM_WORMDrive métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 428c81cf99196a35a35bb12127dde31d21422f2f4ecd98380d88c4f2b3f0329a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6ecd49da5cc4cb24423525ae90fd329254facb5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118676896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965455"
 ---
 # <a name="cim_wormdrive-methods"></a>Métodos \_ WORMDrive de CIM
 
-La [**clase \_ CIM WORMDrive**](cim-wormdrive.md) expone los métodos siguientes.
+La [**clase \_ WORMDrive**](cim-wormdrive.md) de CIM expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

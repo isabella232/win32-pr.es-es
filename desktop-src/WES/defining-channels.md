@@ -4,12 +4,12 @@ description: Los eventos se pueden escribir en canales de registro de eventos, a
 ms.assetid: 3c2f39ee-fbc0-40ae-8279-566905250f47
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89c2f932616a131e478c100996fd0b76034b3cccdebf4e3714fd5b9b38ba9678
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ab3c73697aa11e7b63ace0ece33be23ca7a1b883
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120032485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885556"
 ---
 # <a name="defining-channels"></a>Definición de canales
 
@@ -64,7 +64,7 @@ En el ejemplo siguiente se muestra cómo importar un canal. Debe establecer los 
 </instrumentationManifest>
 ```
 
-Aunque Winmeta.xml define canales heredados que puede importar, no debe usarlos a menos que admita consumidores heredados que consuman eventos fuera de los canales heredados (por ejemplo, aplicación o sistema). El Winmeta.xml se incluye en el SDK de Windows.
+Aunque Winmeta.xml define canales heredados que puede importar, no debe usarlos a menos que admita consumidores heredados que consuman eventos fuera de los canales heredados (por ejemplo, Aplicación o Sistema). El Winmeta.xml archivo se incluye en el SDK de Windows.
 
 En el ejemplo siguiente se muestra cómo definir un canal. Debe establecer los **atributos chid**, **name** y **type.** El **atributo chid** identifica de forma única el canal: cada identificador de canal de la lista de canales debe ser único. Establezca el **atributo chid** en un valor que sea único para los canales que el proveedor enumera; Se hace referencia al identificador del canal en una o varias de las definiciones de eventos. La convención para asignar un nombre al canal es usar el nombre del proveedor y el tipo de canal con el formato *providername* / *channeltype*.
 

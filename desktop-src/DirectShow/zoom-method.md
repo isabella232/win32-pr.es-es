@@ -1,15 +1,15 @@
 ---
-description: El método Zoom acerca o aleja la presentación del vídeo, centrada en un conjunto determinado de coordenadas de pantalla.
+description: El método Zoom acerca o aleja la pantalla del vídeo, centrada en un conjunto determinado de coordenadas de pantalla.
 ms.assetid: 050f1264-8fbe-4322-970c-184275d5b219
 title: Zoom (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb0c260e5a5404b65f4e0d0595a87ee78103c5acccedd32abf50fc5706c6b42f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2625e6c4facf006a0d904e49068853720e20c29e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119632705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161493"
 ---
 # <a name="zoom-method"></a>Zoom (método)
 
@@ -18,7 +18,7 @@ ms.locfileid: "119632705"
 
  
 
-El método acerca o aleja la `Zoom` pantalla del vídeo, centrada en un conjunto determinado de coordenadas de pantalla.
+El método acerca o aleja la pantalla `Zoom` del vídeo, centrada en un conjunto determinado de coordenadas de pantalla.
 
 ``` syntax
 MSWebDVD.Zoom(iXPos, iYPos, iZoomRatio)
@@ -31,14 +31,14 @@ MSWebDVD.Zoom(iXPos, iYPos, iZoomRatio)
 <span id="iXPos"></span><span id="ixpos"></span><span id="IXPOS"></span>*iXPos*
 </dt> <dd>
 
-Especifica la coordenada x en el centro del área de zoom rectangular como un entero.
+Especifica la coordenada X en el centro del área de zoom rectangular como un entero.
 
 </dd> <dt>
 
 <span id="iYPos"></span><span id="iypos"></span><span id="IYPOS"></span>*iYPos*
 </dt> <dd>
 
-Especifica la coordenada y en el centro del rectángulo que se va a acercar como un entero.
+Especifica la coordenada Y en el centro del rectángulo que se va a acercar como entero.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Especifica el factor de ampliación aplicado al valor de zoom actual como entero
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La nueva relación de zoom permanece en vigor hasta que se restaura al tamaño original o se cambia de nuevo. En otras palabras, dos llamadas a este método que especifican un *iZoomRatio* de dos darán como resultado una relación de zoom cuatro veces mayor que el tamaño del vídeo original. Si el usuario intenta hacer zoom más allá de lo que el hardware puede admitir, este método se realizará correctamente, pero no hará nada.
+La nueva relación de zoom permanece en vigor hasta que se restaura al tamaño original o se cambia de nuevo. En otras palabras, dos llamadas a este método que especifican un *iZoomRatio* de dos darán como resultado una proporción de zoom cuatro veces mayor que el tamaño del vídeo original. Si el usuario intenta hacer zoom más allá de lo que el hardware puede admitir, este método se realizará correctamente, pero no hará nada.
 
 El [**método SetClipVideoRect**](setclipvideorect-method.md) es otra manera de acercar; La única diferencia entre los dos métodos es la forma en que se especifica el rectángulo de zoom.
 

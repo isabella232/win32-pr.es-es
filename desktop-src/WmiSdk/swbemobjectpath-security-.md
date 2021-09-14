@@ -16,19 +16,19 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: ed473049de6973da077b1ccfabdd3fe752ff4e5edd13f4a49a7c5589309ae81e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 000f3f5e334ef0eba3dbd687d7bdc4b594442305
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119639975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126967056"
 ---
 # <a name="swbemobjectpathsecurity_-property"></a>Propiedad SWbemObjectPath.Security \_
 
 La **propiedad Security** del objeto [**SWbemObjectPath**](swbemobjectpath.md) se usa para obtener o establecer los componentes de seguridad de una ruta de acceso de objeto. Tenga en cuenta que no se usa para establecer atributos de seguridad del propio **objeto SWbemObjectPath.** Solo se usa para representar los componentes de seguridad de la ruta de acceso de [**un objeto SWbemLocator.**](swbemlocator.md) Esta propiedad es un [**objeto SWbemSecurity.**](swbemsecurity.md)
 
 > [!Note]  
-> Establecer la [**propiedad Security \_**](swbemobject-security-.md) de un objeto [**SWbemObjectPath**](swbemobjectset.md) en **NULL** concede acceso ilimitado a todos los usuarios en todo momento. Para obtener más información, [**vea SWbemSecurity**](swbemsecurity.md).
+> Establecer la [**propiedad Security \_**](swbemobject-security-.md) de un objeto [**SWbemObjectPath**](swbemobjectset.md) en **NULL** concede acceso ilimitado a todos en todo momento. Para obtener más información, [**vea SWbemSecurity**](swbemsecurity.md).
 
  
 
@@ -51,11 +51,11 @@ SWbemObjectPath.Security_ As Object
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
@@ -63,7 +63,7 @@ SWbemObjectPath.Security_ As Object
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

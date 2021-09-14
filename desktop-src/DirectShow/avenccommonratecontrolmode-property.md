@@ -4,12 +4,12 @@ ms.assetid: 4a0d49b1-30da-4ebe-abff-3fceef6dd94a
 title: Propiedad AVEncCommonRateControlMode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aaa914f445fcbc535ec423b41306938890d64b747258cb0159add5e4fd43c3f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d18d0d7cb68936326fb4c4ba08188e362fdc91d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161985"
 ---
 # <a name="avenccommonratecontrolmode-property"></a>Propiedad AVEncCommonRateControlMode
 
@@ -31,7 +31,7 @@ Esta propiedad es de lectura y escritura.
 
 El valor de esta propiedad es un miembro de la [**enumeración eAVEncCommonRateControlMode.**](/windows/win32/api/codecapi/ne-codecapi-eavenccommonratecontrolmode)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad también se usa con codificadores de cámara [H.264 UVC 1.5](/windows/desktop/medfound/camera-encoder-h264-uvc-1-5).
 
@@ -43,13 +43,13 @@ Esta propiedad también se usa con codificadores de cámara [H.264 UVC 1.5](/win
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

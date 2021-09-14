@@ -1,19 +1,19 @@
 ---
-description: Especifica la matriz de cuantificación de quantization de quantization para macrobloques dentro de . Esta propiedad se aplica a los codificadores de vídeo MPEG.
+description: Especifica la matriz de cuantificación de cuantificación para macrobloqueos dentro de . Esta propiedad se aplica a los codificadores de vídeo MPEG.
 ms.assetid: 9da6130f-c064-4b6b-b0ab-ba99118fd249
 title: Propiedad AVEncMPVQuantMatrixChromaIntra (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 180cfe120b1984c5149d8c670a11203b86d8809fbd04b54971a2a690a496ddcb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7253a3064acbff74ce22134a40a52d87c78113a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118159496"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161829"
 ---
 # <a name="avencmpvquantmatrixchromaintra-property"></a>Propiedad AVEncMPVQuantMatrixChromaIntra
 
-Especifica la matriz de cuantificación de quantization de quantization para macrobloques dentro de . Esta propiedad se aplica a los codificadores de vídeo MPEG.
+Especifica la matriz de cuantificación de cuantificación para macrobloqueos dentro de . Esta propiedad se aplica a los codificadores de vídeo MPEG.
 
 Esta propiedad es de lectura y escritura.
 
@@ -27,21 +27,21 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es una cadena que contiene los coeficientes de 64 8 bits codificados como una cadena de valores hexadecimales (128 caracteres).
+El valor de esta propiedad es una cadena que contiene los 64 coeficientes de 8 bits codificados como una cadena de valores hexadecimales (128 caracteres).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

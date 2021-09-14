@@ -4,12 +4,12 @@ ms.assetid: 58acb05d-e79b-8f42-4cf4-76ae57929739
 title: Estructuras de la biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce40aeb51c04f0b5ab76f20b83e2825c33e261862ab3205490aaab855ddb4ec1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c6ac040ee932e9da84c186124514d9f763e20e67
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120117515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963432"
 ---
 # <a name="directxmath-library-structures"></a>Estructuras de la biblioteca DirectXMath
 
@@ -69,8 +69,8 @@ La biblioteca DirectXMath proporciona una serie de estructuras y tipos definidos
 | [**XMUSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort4) | Vector 4D que consta de componentes enteros de 16 bits sin signo.  |
 | [**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) | Vector 2D para almacenar valores sin signo y normalizados como enteros de 16 bits sin signo, (tipo `uint16_t` ).  |
 | [**XMUSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4) | Vector 4D para almacenar valores normalizados sin signo como enteros de 16 bits con signo (tipo `uint16_t` ).  |
-| [**XMXDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdec4) | Vector 4D con componentes x,y y z- representados como valores enteros de 10 bits con signo y w-component como un valor entero de 2 bits sin signo.  |
-| [**XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4) | Vector 4D para almacenar valores con signo y normalizados como componentes x-, y-y z- con signo de 10 bits y un valor normalizado sin signo como 2 bits sin signo w-component.  |
+| [**XMXDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdec4) | Vector 4D con componentes x-, y- y z- representados como valores enteros con signo de 10 bits y w-component como un valor entero sin signo de 2 bits.  |
+| [**XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4) | Vector 4D para almacenar valores con signo y normalizados como componentes x-, y-y z- con signo de 10 bits y un valor normalizado sin signo como w-component de 2 bits sin signo.  |
 
 ## <a name="related-topics"></a>Temas relacionados
 

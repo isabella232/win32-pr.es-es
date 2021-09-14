@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74f20840a5580d0188354ca6b65ab3ce5b7402d57ea7346462d2f990ecfe34cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 762cd2445c3c6b720bba0f01ae48b787abc1fb38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119658655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126968555"
 ---
 # <a name="taskservice-object"></a>Objeto TaskService
 
@@ -29,7 +29,7 @@ Para el scripting, proporciona acceso al servicio Programador de tareas para adm
 
 Se [**debe llamar al Conectar TaskService.Conectar**](taskservice-connect.md) antes de llamar a cualquiera de los otros **métodos TaskService.**
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto TaskService** tiene estos tipos de miembros:
 
@@ -61,10 +61,10 @@ El **objeto TaskService** tiene estas propiedades.
 
 | Propiedad                                                          | Descripción                                                                                                                 |
 |:------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
-| [**Conectado**](taskservice-connected.md)<br/>             | Obtiene un valor booleano que indica si está conectado al Programador de tareas servicio.<br/>                          |
-| [**ConnectedDomain**](taskservice-connecteddomain.md)<br/> | Obtiene el nombre del dominio al que está conectado el [**equipo TargetServer.**](taskservice-targetserver.md)<br/> |
-| [**ConnectedUser**](taskservice-connecteduser.md)<br/>     | Obtiene el nombre del usuario que está conectado al Programador de tareas servicio.<br/>                                       |
-| HighestVersion<br/>                                         | Obtiene la versión más alta de Programador de tareas que admite un equipo.<br/>                                             |
+| [**Conectado**](taskservice-connected.md)<br/>             | Obtiene un valor booleano que indica si está conectado al servicio Programador de tareas trabajo.<br/>                          |
+| [**ConnectedDomain**](taskservice-connecteddomain.md)<br/> | Obtiene el nombre del dominio al que está conectado el equipo [**TargetServer.**](taskservice-targetserver.md)<br/> |
+| [**ConnectedUser**](taskservice-connecteduser.md)<br/>     | Obtiene el nombre del usuario que está conectado al servicio Programador de tareas usuario.<br/>                                       |
+| HighestVersion<br/>                                         | Obtiene la versión más alta Programador de tareas que admite un equipo.<br/>                                             |
 | [**TargetServer**](taskservice-targetserver.md)<br/>       | Obtiene el nombre del equipo que ejecuta el Programador de tareas al que está conectado el usuario.<br/>          |
 
 
@@ -73,7 +73,7 @@ El **objeto TaskService** tiene estas propiedades.
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener más información y código de ejemplo para este objeto de scripting, vea Ejemplo de desencadenador de tiempo [(scripting),](time-trigger-example--scripting-.md)Ejemplo de desencadenador de eventos [(scripting)](https://www.bing.com/search?q=Event+Trigger+Example+(Scripting)), Ejemplo de desencadenador diario [(scripting),](daily-trigger-example--scripting-.md)Ejemplo de desencadenador de registro [(scripting)](registration-trigger-example--scripting-.md), Ejemplo de desencadenador semanal [(scripting),](weekly-trigger-example--scripting-.md)Ejemplo de desencadenador de inicio [(scripting)](logon-trigger-example--scripting-.md), Ejemplo de desencadenador de arranque [(scripting)](boot-trigger-example--scripting-.md)o Mostrar nombres y estados de tarea [(scripting).](displaying-task-names-and-state--scripting-.md)
+Para obtener más información y código de ejemplo para este objeto de scripting, vea Ejemplo de desencadenador de tiempo [(scripting),](time-trigger-example--scripting-.md)Ejemplo de desencadenador de eventos [(scripting)](https://www.bing.com/search?q=Event+Trigger+Example+(Scripting)), Ejemplo de desencadenador diario [(scripting),](daily-trigger-example--scripting-.md)Ejemplo de desencadenador de registro [(scripting)](registration-trigger-example--scripting-.md), Ejemplo de desencadenador semanal [(scripting)](weekly-trigger-example--scripting-.md), Ejemplo de desencadenador de inicio [(scripting)](logon-trigger-example--scripting-.md), Ejemplo de desencadenador de arranque [(scripting)](boot-trigger-example--scripting-.md)o Mostrar nombres y estados de tareas [(scripting).](displaying-task-names-and-state--scripting-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,7 +88,7 @@ Para obtener más información y código de ejemplo para este objeto de scriptin
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

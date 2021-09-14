@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56a8a9f85a3dce5ef070519f436c28ec157f7aa467a9115bcd8e2ccefa6444f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e1765a7756aedcebc2b7b030634d8598a5cd89e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885324"
 ---
 # <a name="buttongroupradio"></a>BUTTONGROUP.radio
 
@@ -42,7 +42,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si **radio** se establece en true, todos los elementos **BUTTONELEMENT** de **BUTTONGROUP** serán permanentes, pero solo un botón a la vez estará en estado de inactividad.
 
@@ -52,11 +52,11 @@ Si **radio** se establece en true, todos los elementos **BUTTONELEMENT** de **BU
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

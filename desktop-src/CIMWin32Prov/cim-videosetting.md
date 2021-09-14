@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a32b581a281ed95954d8fc71b5fc6c2b24c799c69b2c847bebfd92f6f904d251
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a37fe8dd03738ae93f391a754caca84564dc6f6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119817455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965471"
 ---
 # <a name="cim_videosetting-class"></a>Cim \_ VideoSetting (clase)
 
 La **clase \_ CIM VideoSetting** asocia el objeto de configuración [**Cim \_ VideoControllerResolution**](cim-videocontrollerresolution.md) con el controlador al que se aplica.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,7 +45,7 @@ class CIM_VideoSetting : CIM_ElementSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ CIM VideoSetting** tiene estos tipos de miembros:
 
@@ -89,7 +89,7 @@ Cim [**\_ VideoControllerResolution que**](cim-videocontrollerresolution.md) des
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase. Para las clases WMI derivadas de **\_ Cim VideoSetting**, vea [Clases Win32](win32-provider.md).
 
@@ -109,7 +109,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

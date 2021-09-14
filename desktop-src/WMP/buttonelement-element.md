@@ -3,19 +3,19 @@ title: Elemento BUTTONELEMENT
 description: Elemento BUTTONELEMENT
 ms.assetid: 2c1bac51-8aea-4c73-b9b4-4ddbf1e4231b
 keywords:
-- Reproductor de Windows Media máscaras,elemento BUTTONELEMENT
+- Reproductor de Windows Media máscaras, elemento BUTTONELEMENT
 - skins,BUTTONELEMENT, elemento
 - Elemento BUTTONELEMENT
-- referencia de máscaras,elemento BUTTONELEMENT
+- referencia para máscaras, elemento BUTTONELEMENT
 - elements,BUTTONELEMENT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1aeef505a3bf0b07a2c25d21fa2a135e045934c589401829cf6aaccc8410a12
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d4cc69154821981874f0072f6282f708cc4826d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119135948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889329"
 ---
 # <a name="buttonelement-element"></a>Elemento BUTTONELEMENT
 
@@ -29,7 +29,7 @@ El **elemento BUTTONELEMENT** admite los atributos siguientes.
 |------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [cursor](buttonelement-cursor.md)             | Especifica o recupera el valor del cursor **BUTTONELEMENT** que aparece cuando el mouse está sobre **BUTTONELEMENT.**                                                                                      |
 | [down](buttonelement-down.md)                 | Especifica o recupera el valor de arriba o abajo de **BUTTONELEMENT.**                                                                                                                                            |
-| [downToolTip](buttonelement-downtooltip.md)   | Especifica o recupera el texto de la información sobre herramientas que aparece cuando el mouse está sobre **BUTTONELEMENT** y **BUTTONELEMENT** está en estado de bajada.                                                                |
+| [downToolTip](buttonelement-downtooltip.md)   | Especifica o recupera el texto de la información sobre herramientas que aparece cuando el mouse está sobre **BUTTONELEMENT** y **buttonelement** está en estado de insanado.                                                                |
 | [índice](buttonelement-index.md)               | Recupera el índice de **BUTTONELEMENT** dentro de **BUTTONGROUP**.                                                                                                                                         |
 | [mappingColor](buttonelement-mappingcolor.md) | Especifica o recupera la clave de color que identifica este **BUTTONELEMENT** en el **grupo BUTTONELEMENT.**                                                                                                      |
 | [Pegajoso](buttonelement-sticky.md)             | Especifica o recupera un valor que indica si **BUTTONELEMENT** es permanente. Cuando sea permanente, **buttonelement** cambiará los estados después de hacer clic y permanecerá en el nuevo estado hasta que se vuelva a hacer clic. |
@@ -62,12 +62,12 @@ Los efectos predefinidos son elementos **EFFECTS** normales con varias configura
 | BUTTONELEMENT predefinido         | Descripción                                                                                               |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [FFWDELEMENT](ffwdelement.md)   | BUTTONELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.fastForward**. |
-| [NEXTELEMENT](nextelement.md)   | ButtonELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.next.**        |
-| [PAUSEELEMENT](pauseelement.md) | ButtonELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.pause.**       |
-| [PLAYELEMENT](playerelement.md) | ButtonELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.play.**        |
+| [NEXTELEMENT](nextelement.md)   | BUTTONELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.next.**        |
+| [PAUSEELEMENT](pauseelement.md) | BUTTONELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.pause.**       |
+| [PLAYELEMENT](playerelement.md) | BUTTONELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.play.**        |
 | [PREVELEMENT](prevelement.md)   | ButtonELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.previous.**    |
 | [REWELEMENT](rewelement.md)     | ButtonELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.rewind**.      |
-| [STOPELEMENT](stopelement.md)   | ButtonELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.stop.**        |
+| [STOPELEMENT](stopelement.md)   | BUTTONELEMENT **con** un controlador de eventos **onclick** integrado que llama a **player.controls.stop.**        |
 
 
 

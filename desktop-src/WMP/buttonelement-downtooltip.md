@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae152fd5e4f5ac9aa9b46abfed6084adfa0d20bad42bfa7e88afee18c2517755
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c9edc9c5c8de697f7ee570bb85bd0d3226d26f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119764375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889337"
 ---
 # <a name="buttonelementdowntooltip"></a>BUTTONELEMENT.downToolTip
 
@@ -31,7 +31,7 @@ El **atributo downToolTip** especifica o recupera el texto de información sobre
 
 Este atributo es una cadena de lectura y escritura con un valor predeterminado de "" (cadena vacía) con una longitud máxima de 1024 caracteres.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando este atributo se establece en "" (cadena vacía), no se muestra información sobre herramientas.
 
@@ -39,13 +39,13 @@ Cuando este atributo se establece en "" (cadena vacía), no se muestra informaci
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

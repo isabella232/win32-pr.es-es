@@ -4,16 +4,16 @@ ms.assetid: fbf75dbe-3fa1-424b-83bb-cfd0b179107c
 title: No se admite en Windows Installer 3.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b33334133fafa5e37f8bd7dfe4edfd30962c4e605bf2a675661e9d57aca4184
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f3a221d80f56c5737cc5ae92a040a005ae42449e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119145588"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161472"
 ---
 # <a name="not-supported-in-windows-installer-31"></a>No se admite en Windows Installer 3.1
 
-Las Windows, las tablas y las propiedades del instalador que se enumeran en esta página no son compatibles con Windows Installer 3.1 y versiones anteriores. La ausencia de una característica de esta lista no garantiza que se admite la característica. Consulte la documentación principal para determinar qué Windows installer es necesaria para una característica determinada. Para obtener información sobre otras versiones Windows Installer, vea [Novedades de Windows Installer](what-s-new-in-windows-installer.md).
+Las Windows, las tablas y las propiedades del Instalador de aplicaciones enumeradas en esta página no son compatibles con Windows Installer 3.1 y versiones anteriores. La ausencia de una característica de esta lista no garantiza que se admite la característica. Consulte la documentación principal para determinar qué versión Windows installer es necesaria para una característica determinada. Para obtener información sobre otras Windows installer, vea [Novedades de Windows Installer](what-s-new-in-windows-installer.md).
 
 Windows El instalador 3.1 está disponible para Windows Server 2003, Windows XP o Windows 2000. Para obtener una lista de todas las versiones Windows installer y redistribuibles, vea Versiones publicadas [de Windows Installer](released-versions-of-windows-installer.md).
 
@@ -90,7 +90,7 @@ Las siguientes características no se admiten en Windows Installer 3.1 y version
 
 ## <a name="notes"></a>Notas
 
-El servicio Windows Installer debe ejecutarse en Windows Vista para habilitar el uso de la aplicación de revisiones del Administrador de [reinicio,](../rstmgr/restart-manager-portal.md) [*control*](u-gly.md)de cuentas de usuario y Control de cuentas de [usuario (UAC).](user-account-control--uac--patching.md) Para obtener información, vea Usar [Windows instalador](using-windows-installer-with-restart-manager.md) con el Administrador de reinicio y Usar Windows Installer [con UAC](using-windows-installer-with-uac.md) y aplicación de revisiones de control de cuentas [de usuario (UAC).](user-account-control--uac--patching.md)
+El servicio Windows Installer debe ejecutarse en Windows Vista para habilitar el uso de la aplicación de revisiones de Administrador de [reinicio,](../rstmgr/restart-manager-portal.md) [*Control*](u-gly.md)de cuentas de usuario y Control de cuentas de [usuario (UAC).](user-account-control--uac--patching.md) Para obtener información, vea Usar [Windows instalador](using-windows-installer-with-restart-manager.md) con el Administrador de reinicio y Usar Windows Installer con [UAC](using-windows-installer-with-uac.md) y aplicación de revisiones de control de cuentas de usuario [(UAC).](user-account-control--uac--patching.md)
 
 Windows Installer 3.1 admite Windows File Protection (WFP) y no admite Windows Resource Protection (WRP). WRP en Windows Server 2008 y Windows Vista reemplaza a WFP en Windows Server 2003, Windows XP y Windows 2000. Para obtener información sobre Windows Installer y WFP, vea [Using Windows Installer and Windows Resource Protection](windows-resource-protection-on-windows-vista.md).
 

@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8012a305fef042e27749be233741b2cf85acd0994a9164c553e374e3e966a7c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b91e78d31e2c82b0825da5e320fef558f790caf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119038693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126962871"
 ---
 # <a name="jet_retrievecolumncbdata-property"></a>JET_RETRIEVECOLUMN.cbData, propiedad
 
-Obtiene o establece el tamaño del búfer [pvData,](./jet-retrievecolumn.pvdata-property.md) en bytes. La operación de recuperación de columna no almacenará más datos en pvData que cbData.
+Obtiene o establece el tamaño del búfer [pvData,](./jet-retrievecolumn.pvdata-property.md) en bytes. La operación de recuperación de columnas no almacenará más datos en pvData que cbData.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ public int cbData { get; set; }
 
 Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

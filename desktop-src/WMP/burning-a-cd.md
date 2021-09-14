@@ -3,10 +3,10 @@ title: Grabación de un CD
 description: Grabación de un CD
 ms.assetid: df55479e-d8a7-443d-bf2c-c988bfd0b1be
 keywords:
-- Reproductor de Windows Media, cds
-- Reproductor de Windows Media modelo de objetos, grabación de CD
+- Reproductor de Windows Media,cds
+- Reproductor de Windows Media modelo de objetos, cds
 - modelo de objetos, grabación de CD
-- Reproductor de Windows Media ActiveX control, cds
+- Reproductor de Windows Media ActiveX control, grabación de CD
 - ActiveX control, grabación de CD
 - Reproductor de Windows Media Control de ActiveX móvil, grabación de CD
 - Reproductor de Windows Media Móvil, cds
@@ -14,12 +14,12 @@ keywords:
 - cds, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82c7cfee7468b2cd376b7b25d4cff4a04e0d057dcc7a792ac7471843de2b74a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 007b7808ff375ab0673592d0d016f8e713321d1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118840774"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889537"
 ---
 # <a name="burning-a-cd"></a>Grabación de un CD
 

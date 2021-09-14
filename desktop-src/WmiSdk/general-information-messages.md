@@ -6,11 +6,11 @@ title: Mensajes de información general
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 680bcf7c2b9cbea5e60d13a7dd2aa6be93d9fad0
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965287"
 ---
 # <a name="general-information-messages"></a>Mensajes de información general
 
@@ -18,7 +18,7 @@ Los siguientes mensajes de información describen la operación del compilador.
 
 <dl> <dt>
 
-<span id="smi2smir__Version__version____MIB_definitions_compiled_from__file_name_"></span><span id="smi2smir__version__version____mib_definitions_compiled_from__file_name_"></span><span id="SMI2SMIR__VERSION__VERSION____MIB_DEFINITIONS_COMPILED_FROM__FILE_NAME_"></span>**smi2smira: versión <versión \#> definiciones de MIB compiladas a partir de <file name>**
+<span id="smi2smir__Version__version____MIB_definitions_compiled_from__file_name_"></span><span id="smi2smir__version__version____mib_definitions_compiled_from__file_name_"></span><span id="SMI2SMIR__VERSION__VERSION____MIB_DEFINITIONS_COMPILED_FROM__FILE_NAME_"></span>**smi2smira: versión <de \#> definiciones de MIB compiladas a partir de <file name>**
 </dt> <dd>
 
 Este mensaje aparece al principio de cada compilación de archivos. Esto significa que el usuario puede haber especificado explícitamente el archivo en la línea de comandos, o bien que el compilador lo haya extraido de los directorios de incluir del Registro o de los directorios de incluir mencionados en la línea de comandos.
@@ -39,7 +39,7 @@ Los mensajes de error específicos que preceden a este mensaje dan la naturaleza
 
 </dd> <dt>
 
-<span id="smi2smir__Could_not_load__file_name__into_the_smir"></span><span id="smi2smir__could_not_load__file_name__into_the_smir"></span><span id="SMI2SMIR__COULD_NOT_LOAD__FILE_NAME__INTO_THE_SMIR"></span>**smi2smira: no se pudo cargar <file name> en el smira**
+<span id="smi2smir__Could_not_load__file_name__into_the_smir"></span><span id="smi2smir__could_not_load__file_name__into_the_smir"></span><span id="SMI2SMIR__COULD_NOT_LOAD__FILE_NAME__INTO_THE_SMIR"></span>**smi2smira: no se pudo cargar <file name> en el smir**
 </dt> <dd>
 
 Error de sintaxis o comprobación semántica en el módulo, o la interacción de SMIRA no se ha completado.
@@ -107,7 +107,7 @@ El **modificador /p** se ha cambiado correctamente.
 <span id="smi2smir__Could_not_delete_all_the_modules_in_the_SMIR"></span><span id="smi2smir__could_not_delete_all_the_modules_in_the_smir"></span><span id="SMI2SMIR__COULD_NOT_DELETE_ALL_THE_MODULES_IN_THE_SMIR"></span>**smi2smira: no se pudieron eliminar todos los módulos del SMIR**
 </dt> <dd>
 
-Error **en el modificador /p** porque no hay ninguna conexión SMIRA.
+Error en el modificador **/p** porque no hay ninguna conexión SMIRA.
 
 </dd> <dt>
 
