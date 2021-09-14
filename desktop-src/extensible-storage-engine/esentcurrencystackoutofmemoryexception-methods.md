@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101389
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 81c4e4063059e312cbf1f56ac629254c026bb402654586eb795abd0d022d9d17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3efce03f232e51c93e497c86c213b53444d5494
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117713573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883540"
 ---
 # <a name="esentcurrencystackoutofmemoryexception-methods"></a>Métodos de EsentCurrencyStackOutOfMemoryException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentCurrencyStackOutOfMemoryException](./esentcurrencystackoutofmemoryexception-class.md) expone los siguientes miembros.
+El [tipo EsentCurrencyStackOutOfMemoryException](./esentcurrencystackoutofmemoryexception-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -78,7 +78,7 @@ El [tipo EsentCurrencyStackOutOfMemoryException](./esentcurrencystackoutofmemory
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

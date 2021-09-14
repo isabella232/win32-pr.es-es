@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101761
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cd031508ba84c17b8733f6c5e47e9fdbb489ad3183927b7cf07ff9f6419940d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cec3ff6b564b519bb9fd00d535d0673ce63989a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118268421"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883505"
 ---
 # <a name="esentfilteredmovenotsupportedexception-properties"></a>Propiedades de EsentFilteredMoveNotSupportedException
 
