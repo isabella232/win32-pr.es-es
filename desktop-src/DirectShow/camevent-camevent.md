@@ -1,5 +1,5 @@
 ---
-description: 'Constructor DEEVENT.CAMEvent: método constructor.'
+description: 'Constructor CAMEvent.CAMEvent: método constructor.'
 ms.assetid: 35c9ac07-8756-42b1-beeb-5f0e79466742
 title: Constructor CAMEvent.CAMEvent (Wxutil.h)
 ms.topic: reference
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f0fd5895ada4bbbd1bf4ad24710f7782fdfb9c932f2d9446ff0d992335437da9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cdd37ba72d9467c16d46b2aec3ec40c206466eaf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119540564"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161653"
 ---
-# <a name="cameventcamevent-constructor"></a>Constructor DE EVENTOS.CAMEvent
+# <a name="cameventcamevent-constructor"></a>Constructor CAMEvent.CAMEvent
 
 Método constructor.
 
@@ -55,15 +55,15 @@ Valor booleano que especifica si el objeto es un evento de restablecimiento manu
 
 Puntero a un **valor HRESULT.** Si se produce un error en el constructor, este parámetro recibe un código de error. Si esto ocurre, el objeto no está en un estado válido.
 
-Para la compatibilidad con versiones anteriores de strmbase.lib, el valor predeterminado de este parámetro es **NULL.** Sin embargo, se prefiere pasar un valor distinto de **NULL,** para que el autor de la llamada pueda comprobar el estado del objeto.
+Para la compatibilidad con versiones anteriores de strmbase.lib, este parámetro tiene como valor predeterminado **NULL**. Sin embargo, se prefiere pasar un valor distinto de **NULL,** para que el autor de la llamada pueda comprobar el estado del objeto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El evento comienza en un estado sin signo.
 
-Con un evento de restablecimiento automático, el método [**CAMEvent::Wait**](camevent-wait.md) restablece el evento a sin signo cuando el método vuelve. Con un evento de restablecimiento manual, el evento permanece señalado hasta que se llama al [**método CAMEvent::Reset.**](camevent-reset.md)
+Con un evento de restablecimiento automático, el [**método CAMEvent::Wait**](camevent-wait.md) restablece el evento a nonsignaled cuando el método vuelve. Con un evento de restablecimiento manual, el evento permanece señalado hasta que se llama al [**método CAMEvent::Reset.**](camevent-reset.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Con un evento de restablecimiento automático, el método [**CAMEvent::Wait**](c
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

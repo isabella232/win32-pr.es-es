@@ -1,21 +1,21 @@
 ---
 title: Cómo obtener el último conjunto de encabezados HTTP recibidos para cada archivo en un trabajo de descarga de BITS
-description: En este ejemplo se muestra cómo usar el método GetProperty de la nueva interfaz IBackgroundCopyJob5 para obtener los últimos encabezados HTTP establecidos recibidos para cada archivo en un trabajo de descarga de Servicio de transferencia inteligente en segundo plano (BITS).
+description: En este ejemplo se muestra cómo usar el nuevo método GetProperty de la interfaz IBackgroundCopyJob5 para obtener los últimos encabezados HTTP establecidos recibidos para cada archivo en un trabajo de descarga Servicio de transferencia inteligente en segundo plano (BITS).
 ms.assetid: 38808AB2-0D7A-46C6-A666-F3E0DB8A3009
 keywords:
 - descargar BITS, encabezado HTTP
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 92e9fe2c1671d26854da119938b426bc662324fe701d7f24d1885ff7b88e2df1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0b7858d5b2467f52681b325e2bfbe65b96889e0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119528535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160369"
 ---
 # <a name="how-to-get-the-last-set-of-http-headers-received-for-each-file-in-a-bits-download-job"></a>Cómo obtener el último conjunto de encabezados HTTP recibidos para cada archivo en un trabajo de descarga de BITS
 
-En este ejemplo se muestra cómo usar el método [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) de la nueva interfaz [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) para obtener los últimos encabezados HTTP establecidos recibidos para cada archivo en un trabajo de descarga de Servicio de transferencia inteligente en segundo plano (BITS). La información del encabezado HTTP podría usarse, por ejemplo, para determinar el tipo de archivo o cuándo cambió por última vez en el servidor. Antes de Windows 8 y Windows Server 2012, BITS no proporcionaba un medio por el que la aplicación pudiera recuperar e inspeccionar los encabezados de respuesta HTTP de una descarga completada. En este ejemplo se muestra cómo usar la API de BITS para crear un trabajo de BITS con varias direcciones URL para descargar, enumerar las direcciones URL de un trabajo y recuperar los encabezados de respuesta HTTP para cada dirección URL.
+En este ejemplo se muestra cómo usar el nuevo método [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) de la interfaz [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) para obtener los últimos encabezados HTTP establecidos recibidos para cada archivo en un trabajo de descarga Servicio de transferencia inteligente en segundo plano (BITS). La información del encabezado HTTP se podría usar, por ejemplo, para determinar el tipo de archivo o cuándo cambió por última vez en el servidor. Antes de Windows 8 y Windows Server 2012, BITS no proporcionaba un medio por el que la aplicación pudiera recuperar e inspeccionar los encabezados de respuesta HTTP de una descarga completada. En este ejemplo se muestra cómo usar la API de BITS para crear un trabajo de BITS con varias direcciones URL para descargar, enumerar las direcciones URL de un trabajo y recuperar los encabezados de respuesta HTTP para cada dirección URL.
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -38,9 +38,9 @@ Inserte las siguientes directivas de encabezado en la parte superior del archivo
 
 
 
-### <a name="step-2-initialize-com-and-instantiate-a-bits-background-copy-manager-object-interface"></a>Paso 2: Inicializar COM y crear una instancia de una interfaz de objeto del Administrador de copias en segundo plano de BITS
+### <a name="step-2-initialize-com-and-instantiate-a-bits-background-copy-manager-object-interface"></a>Paso 2: Inicializar COM y crear una instancia de una interfaz de objeto del Administrador de copia en segundo plano de BITS
 
-Antes de crear instancias de la [**interfaz IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) (que se usa para crear un trabajo de BITS), debe inicializar COM y establecer el modelo de subproceso COM deseado.
+Antes de crear instancias de [**la interfaz IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) (que se usa para crear un trabajo de BITS), debe inicializar COM y establecer el modelo de subproceso COM deseado.
 
 
 ```C++

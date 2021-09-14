@@ -17,17 +17,17 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 043bed9edd08269e4e030482cbd44debea3a3695
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548770"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966403"
 ---
-# <a name="sharevistring-message"></a>Mensaje DE SHAREVISTRING
+# <a name="sharevistring-message"></a>Mensaje SHAREVISTRING
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir Windows Vista,  los  cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
 
-Un **cuadro** de **diálogo** Abrir o Guardar como envía el mensaje registrado de **SHAREVISTRING** al procedimiento de enlace, [*OFNHookProc,*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)si se produce una infracción de uso compartido para el archivo seleccionado cuando el usuario hace clic en el botón Aceptar. 
+Un **cuadro** de **diálogo** Abrir o Guardar como envía el mensaje registrado de **SHAREVISTRING** al procedimiento de enlace, [*OFNHookProc,*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)si se produce una infracción de uso compartido para el archivo seleccionado cuando el usuario hace clic en el **botón** Aceptar.
 
 
 ```C++
@@ -56,7 +56,7 @@ Puntero a una [**estructura OPENFILENAME.**](/windows/win32/api/commdlg/ns-commd
 
 ## <a name="return-value"></a>Valor devuelto
 
-El procedimiento de enlace debe devolver uno de los siguientes valores para indicar cómo el cuadro de diálogo debe controlar la infracción de uso compartido.
+El procedimiento de enlace debe devolver uno de los siguientes valores para indicar cómo debe controlar el cuadro de diálogo la infracción de uso compartido.
 
 
 
@@ -70,7 +70,7 @@ El procedimiento de enlace debe devolver uno de los siguientes valores para indi
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El procedimiento de enlace debe especificar la **constante SHAREVISTRING** en una llamada a la función [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener el identificador del mensaje enviado por el cuadro de diálogo.
 
@@ -86,7 +86,7 @@ Si el procedimiento de enlace devuelve un valor indefinido, el cuadro de diálog
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluye Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **SHAREVISTRINGW** (Unicode) y **SHAREVISTRINGA** (ANSI)<br/>                                    |
 
 
@@ -98,7 +98,7 @@ Si el procedimiento de enlace devuelve un valor indefinido, el cuadro de diálog
 **Referencia**
 </dt> <dt>
 
-[**CDN \_ SHAREVIOLATION**](cdn-shareviolation.md)
+[**\_CDN SHAREVIOLATION**](cdn-shareviolation.md)
 </dt> <dt>
 
 [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)

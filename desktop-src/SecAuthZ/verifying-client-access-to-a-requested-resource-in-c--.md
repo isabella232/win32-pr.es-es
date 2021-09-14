@@ -4,12 +4,12 @@ ms.assetid: 7c8a63c5-2eab-4414-9a3d-c99a92b67a62
 title: Comprobar el acceso de cliente a un recurso solicitado en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 363490e3636f5ad5229dd4234eba3bf38b9dfc54a4564bda775b143a249fe640
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eeffe9cb3312e33a283c1701b58356cdf5ea9b3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119906735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160811"
 ---
 # <a name="verifying-client-access-to-a-requested-resource-in-c"></a>Comprobar el acceso de cliente a un recurso solicitado en C++
 

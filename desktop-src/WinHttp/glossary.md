@@ -5,12 +5,12 @@ ms.assetid: 08951f9f-d03d-4720-8f18-1413ba72e93d
 title: Glosario (WinHTTP)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2064d9b7424971e2be286b18129fa3b4109fb64a03fa26ababc152a5cf0b64e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f74d707c828a9eeb5f07ebf3ec3c1ca92a9d2b58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133208"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160546"
 ---
 # <a name="glossary-winhttp"></a>Glosario (WinHTTP)
 
@@ -26,14 +26,14 @@ Bloque de datos específico del esquema que se intercambia entre el servidor y e
 <span id="term_base64_encoding"></span><span id="TERM_BASE64_ENCODING"></span>**Codificación base64**
 </dt> <dd>
 
-Esquema utilizado para transmitir datos binarios. Base64 procesa los datos como grupos de 24 bits y asigna estos datos a cuatro caracteres codificados. A veces se conoce como codificación 3 a 4. Cada 6 bits del grupo de 24 bits se usa como índice en una tabla de asignación (el alfabeto base64) para obtener un carácter para los datos codificados. Los datos codificados tienen longitudes de línea limitadas a 76 caracteres.
+Esquema utilizado para transmitir datos binarios. Base64 procesa los datos como grupos de 24 bits, asignando estos datos a cuatro caracteres codificados. A veces se conoce como codificación de 3 a 4. Cada 6 bits del grupo de 24 bits se usa como índice en una tabla de asignación (el alfabeto base64) para obtener un carácter para los datos codificados. Los datos codificados tienen longitudes de línea limitadas a 76 caracteres.
 
 </dd> <dt>
 
 <span id="term_certificate_store"></span><span id="TERM_CERTIFICATE_STORE"></span>**almacén de certificados**
 </dt> <dd>
 
-Normalmente, el almacenamiento permanente donde se almacenan los certificados, las listas de revocación de certificados (CRL) y las listas de confianza de certificados (CTL). Un almacén de certificados también puede ser temporal cuando se trabaja con certificados basados en sesión.
+Normalmente, almacenamiento permanente donde se almacenan certificados, listas de revocación de certificados (CRL) y listas de confianza de certificados (CTL). Un almacén de certificados también puede ser temporal cuando se trabaja con certificados basados en sesión.
 
 </dd> <dt>
 
@@ -47,7 +47,7 @@ Capacidad de un sitio Microsoft Passport participante para proporcionar sus prop
 <span id="term_code_page"></span><span id="TERM_CODE_PAGE"></span>**página de códigos**
 </dt> <dd>
 
-Tabla que relaciona los códigos de caracteres binarios usados por un programa con las teclas del teclado o con la apariencia de caracteres en el monitor. El uso de páginas de códigos es una manera de proporcionar compatibilidad con juegos de caracteres y diseños de teclado usados en diferentes países y regiones. Puede configurar dispositivos como el monitor y el teclado para usar una página de códigos específica y cambiar de una página de códigos (como Estados Unidos) a otra (como Portugal) a petición del usuario.
+Tabla que relaciona los códigos de caracteres binarios utilizados por un programa con las teclas del teclado o con la apariencia de caracteres en el monitor. El uso de páginas de códigos es una manera de proporcionar compatibilidad con juegos de caracteres y diseños de teclado usados en diferentes países y regiones. Puede configurar dispositivos como el monitor y el teclado para usar una página de códigos específica y cambiar de una página de códigos (como Estados Unidos) a otra (como Portugal) a petición del usuario.
 
 </dd> <dt>
 

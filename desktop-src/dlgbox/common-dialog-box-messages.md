@@ -4,12 +4,12 @@ description: . | Mensajes comunes del cuadro de diálogo
 ms.assetid: f08c19f8-c18d-4094-b8b6-161b0ceea239
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 511f76d7da4f071e2f3a6766a10cf0486d3a969907f41959e8d617dbb51cb3c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e724e48b199bcb98691ad4ae4eb7bb8029b565de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118503603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160404"
 ---
 # <a name="common-dialog-box-messages"></a>Mensajes comunes del cuadro de diálogo
 

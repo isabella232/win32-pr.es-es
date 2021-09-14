@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f66bc54f00e5eb560589429f1cb116183e165a36d90f5d560d8895678a2d5bad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6ab8a6f55ce5e069a01edb5d281bfe506c5fee6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117723182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966424"
 ---
 # <a name="texldl---ps"></a>texldl: ps
 
 Muestrear una textura con un muestreador determinado. El nivel de detalle de mapa mip concreto que se muestrea debe especificarse como el cuarto componente de la coordenada de textura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -37,7 +37,7 @@ Donde:
 -   src0 es un registro de origen que proporciona las coordenadas de textura para la muestra de textura. Consulte [Registro de coordenadas de textura.](dx9-graphics-reference-asm-ps-registers-texture-coordinate.md)
 -   src1 identifica el registro (s) del muestreador de origen, donde especifica qué número de muestreador de textura se va \# \# a muestrear. El muestreador le ha asociado una textura y un estado de control definidos por la enumeración [**D3DSAMPLERSTATETYPE**](/windows/desktop/direct3d9/d3dsamplerstatetype) (por ejemplo, D3DSAMP \_ MINFILTER).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

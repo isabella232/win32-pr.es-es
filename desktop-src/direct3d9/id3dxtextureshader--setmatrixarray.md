@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 75f37d637833bb1b256b86f8bebf7879badc6730e91ae4fce7eecfdd1566d548
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0545d48e16698f44cc48ad467f9454ac94db030
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119847025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964715"
 ---
 # <a name="id3dxtextureshadersetmatrixarray-method"></a>Método ID3DXTextureShader::SetMatrixArray
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una matriz no transpuesta contiene datos principales de fila; es decir, cada vector está contenido en una fila.
 
@@ -90,7 +90,7 @@ Una matriz no transpuesta contiene datos principales de fila; es decir, cada vec
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

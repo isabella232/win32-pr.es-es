@@ -5,26 +5,26 @@ ms.assetid: d2ec9fb2-c0dc-49f1-a86b-d7abca13a322
 ms.tgt_platform: multiple
 keywords:
 - Método GetVirtualChannelOptions Servicios de Escritorio remoto
-- Método GetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient
-- Interfaz IMsRdpClient Servicios de Escritorio remoto , método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient2
-- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient3
+- Método GetVirtualChannelOptions Servicios de Escritorio remoto interfaz , IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto método , GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto método , GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Servicios de Escritorio remoto interfaz , IMsRdpClient3
 - Interfaz IMsRdpClient3 Servicios de Escritorio remoto , método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient4
-- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient5
-- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient6
-- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient7
-- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient8
-- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Servicios de Escritorio remoto , interfaz IMsRdpClient10
-- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto método , GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto método , GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto método , GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto método , GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto método , GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto método , GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Servicios de Escritorio remoto interfaz , IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto método , GetVirtualChannelOptions
 topic_type:
 - apiref
 api_name:
@@ -44,14 +44,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70d51ad6ccd1924c78817f76f385d65e1963b68c1b1329c3d6ba924f25a827a3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71548002ebc67dae8dc1a49e8144da3de608afb2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119059093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891012"
 ---
-# <a name="imsrdpclientgetvirtualchanneloptions-method"></a>Método IMsRdpClient::GetVirtualChannelOptions
+# <a name="imsrdpclientgetvirtualchanneloptions-method"></a>IMsRdpClient::GetVirtualChannelOptions (método)
 
 Recupera las opciones establecidas para un canal virtual.
 
@@ -71,7 +71,7 @@ HRESULT GetVirtualChannelOptions(
 
 <dl> <dt>
 
-*ChanName* \[ En\]
+*SonnombredeDesánda* \[ En\]
 </dt> <dd>
 
 Nombre de un canal virtual que se especificó en la llamada al [**método CreateVirtualChannels.**](imstscax-createvirtualchannels.md)
@@ -81,7 +81,7 @@ Nombre de un canal virtual que se especificó en la llamada al [**método Create
 *pChanOptions* \[ out\]
 </dt> <dd>
 
-Las opciones establecidas para el canal virtual especificado por el *parámetro SonName.* Para obtener una descripción de las posibles opciones, vea [**CHANNEL \_ DEF**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def).
+Opciones establecidas para el canal virtual especificado por el *parámetro ChanName.* Para obtener una descripción de las posibles opciones, vea [**CHANNEL \_ DEF**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def).
 
 </dd> </dl>
 
@@ -89,7 +89,7 @@ Las opciones establecidas para el canal virtual especificado por el *parámetro 
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
@@ -103,11 +103,11 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient se define como 92b4a539-7115-4b7c-a5a9-e5d9efc2780a<br/>        |
+| IID<br/>                      | IID IMsRdpClient se define como \_ 92b4a539-7115-4b7c-a5a9-e5d9efc2780a<br/>        |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

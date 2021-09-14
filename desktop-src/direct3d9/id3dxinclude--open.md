@@ -1,5 +1,5 @@
 ---
-description: Método implementado por el usuario para abrir y leer el contenido de un archivo de contenido \# de un sombreador.
+description: Método implementado por el usuario para abrir y leer el contenido de un archivo de contenido \# de sombreador.
 ms.assetid: ad0105f7-042d-4e96-ad4a-1ece08e519af
 title: Método ID3DXInclude::Open (D3DX9Shader.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: e50b4774f6ed62b1e8a6e6cb85b5732efd878302563958e25e6b9017f9acc58d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 313b3f4845f9a46f758a40b6b315cc5b5eeecb29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060594"
 ---
 # <a name="id3dxincludeopen-method"></a>Método ID3DXInclude::Open
 
-Método implementado por el usuario para abrir y leer el contenido de un archivo de contenido \# de un sombreador.
+Método implementado por el usuario para abrir y leer el contenido de un archivo de contenido \# de sombreador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ HRESULT Open(
 
 Tipo: **[ **D3DXINCLUDE \_ TYPE**](./d3dxinclude-type.md)**
 
-Ubicación del archivo \# de incluir. Vea [**D3DXINCLUDE \_ TYPE**](./d3dxinclude-type.md).
+Ubicación del archivo \# de include. Vea [**D3DXINCLUDE \_ TYPE**](./d3dxinclude-type.md).
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Ubicación del archivo \# de incluir. Vea [**D3DXINCLUDE \_ TYPE**](./d3dxinclud
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nombre del archivo \# de incluir.
+Nombre del archivo \# de include.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Nombre del archivo \# de incluir.
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Puntero al contenedor que incluye el \# archivo de incluir. El compilador podría pasar NULL en *pParentData.* Para obtener más información, vea la sección "Buscar archivos de incluir" en [Compilar un efecto (Direct3D 11).](../direct3d11/d3d11-graphics-programming-guide-effects-compile.md)
+Puntero al contenedor que incluye el \# archivo de include. El compilador podría pasar NULL en *pParentData.* Para obtener más información, vea la sección "Buscar archivos de incluir" en [Compilar un efecto (Direct3D 11).](../direct3d11/d3d11-graphics-programming-guide-effects-compile.md)
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Número de bytes devueltos en ppData.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al leer el archivo include, se producirá un error en la API que hizo que se llamara a \# la devolución de llamada. Es uno de los siguientes:
+El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al leer el archivo de include, se producirá un error en la API que hizo que se llamara a \# la devolución de llamada. Es uno de los siguientes:
 
 -   El sombreador HLSL producirá un error en una de las funciones D3DXCompileShader. \* \* \*
 -   El sombreador de ensamblados producirá un error en una de las funciones D3DXAssembleShader. \* \* \*
@@ -110,7 +110,7 @@ El método implementado por el usuario debe devolver S \_ OK. Si se produce un e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

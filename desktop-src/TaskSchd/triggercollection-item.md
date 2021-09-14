@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aee0460d79ef239c8dacbf7fbd45573dac8ba03ad9b53e6e9881dded1bf01030
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d600418d43459d6c4cbfcb0746a378633d096c24
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119001963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891372"
 ---
 # <a name="triggercollectionitem-property"></a>Propiedad TriggerCollection.Item
 
 Para el scripting, obtiene el desencadenador especificado de la colección.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -42,7 +42,7 @@ TriggerCollection.Item( _
 
 Objeto [**Trigger**](trigger.md) que representa el desencadenador solicitado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las colecciones se basan en 1. En otras palabras, el índice del primer elemento de la colección es 1.
 
@@ -59,7 +59,7 @@ Las colecciones se basan en 1. En otras palabras, el índice del primer elemento
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

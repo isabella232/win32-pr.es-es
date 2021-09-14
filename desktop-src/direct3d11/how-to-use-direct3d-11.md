@@ -4,12 +4,12 @@ description: En esta sección se muestra cómo usar la API de Microsoft Direct3D
 ms.assetid: 9BDEDB68-3484-4683-85AF-B583971382C8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5613a2ea9a4b8c472c7483e9e29d5ce2d5d2ffccbd3b4ee7d8c65a1621e88c92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45bc4dad63c5fc12f2077481172061fc317135a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119633055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060835"
 ---
 # <a name="how-to-use-direct3d-11"></a>Uso de Direct3D 11
 

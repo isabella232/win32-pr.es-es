@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39516328
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 917eb0db8b1646fb470aa4cfe8e38d7d95786350dfb42a9fbfbd479b01b28a73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af3f4302c5092140f4f78ec6347006833c0b5c0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118979875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887345"
 ---
 # <a name="jet_ls-methods"></a>JET_LS métodos
 
@@ -78,7 +78,7 @@ El [JET_LS](./jet-ls-structure.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

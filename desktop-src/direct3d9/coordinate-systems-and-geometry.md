@@ -4,12 +4,12 @@ ms.assetid: d351c20c-fc86-4736-915c-4dc12094bda4
 title: Sistemas de coordenadas y geometría (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0f0ecb8c0c506abd155c11d1d12c9af3dd815f1e8237f0c7044d59720de4b31
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e19596aec2648f9b3d2a2bb0a2239aee7a9138d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119241845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884532"
 ---
 # <a name="coordinate-systems-and-geometry-direct3d-9"></a>Sistemas de coordenadas y geometría (Direct3D 9)
 

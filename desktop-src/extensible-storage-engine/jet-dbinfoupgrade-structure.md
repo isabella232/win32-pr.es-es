@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 0e2e6d6e812b5f56c89eba2e4b19d2730d589548
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985208"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965715"
 ---
 # <a name="jet_dbinfoupgrade-structure"></a>Estructura de JET_DBINFOUPGRADE
 
@@ -49,7 +49,7 @@ La **JET_DBINFOUPGRADE** contiene información sobre el estado de actualización
     } JET_DBINFOUPGRADE;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **cbStruct**
 
@@ -65,7 +65,7 @@ DWORD **alto que** refleja el tamaño de archivo actual de la base de datos.
 
 **cbFreeSpaceRequiredLow**
 
-DWORD **bajo del** espacio en disco libre estimado necesario para una actualización local.
+DWORD **bajo de** espacio libre estimado en disco necesario para una actualización local.
 
 **cbFreeSpaceRequiredHigh**
 

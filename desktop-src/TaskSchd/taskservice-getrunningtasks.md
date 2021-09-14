@@ -5,7 +5,7 @@ ms.assetid: bae3c035-a6b2-4ca5-970b-d4bc808068ad
 keywords:
 - Método GetRunningTasks Programador de tareas
 - Método GetRunningTasks Programador de tareas , objeto TaskService
-- Objeto TaskService Programador de tareas método , GetRunningTasks
+- Objeto TaskService Programador de tareas , método GetRunningTasks
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ecbc52451a4ed3dcc5f3ecc9984009e94dd9bf18b4c8dc667c0b040c43cc68c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dec585b9ed46af9a283e337c8f200687c512cd36
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120072425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891468"
 ---
 # <a name="taskservicegetrunningtasks-method"></a>Método TaskService.GetRunningTasks
 
@@ -62,7 +62,7 @@ Objeto [**RunningTaskCollection**](runningtaskcollection.md) que contiene las ta
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
@@ -71,7 +71,7 @@ Objeto [**RunningTaskCollection**](runningtaskcollection.md) que contiene las ta
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: b50b3927-6c74-4282-b79b-c86d72d93ae3
 title: Recuperar información sobre el protocolo de Internet y el protocolo de mensajes de control de Internet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b5d009ea045e66a65cf585b2196c56ea13ea95c14938b838d1572c9d563a303
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 09b2768ff591b53db79bbbfb38fc2c6c2596ca9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160065"
 ---
 # <a name="retrieving-information-on-the-internet-protocol-and-the-internet-control-message-protocol"></a>Recuperar información sobre el protocolo de Internet y el protocolo de mensajes de control de Internet
 

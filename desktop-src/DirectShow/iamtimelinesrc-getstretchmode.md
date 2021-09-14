@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 53be58df0315c4a03c62369f746efa510c2024fa030c3bef75eb4ff08505b1c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f10552ac67c50e8656f303fd524bdad2cd07823
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118952914"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160150"
 ---
 # <a name="iamtimelinesrcgetstretchmode-method"></a>IamTimelineSrc::GetStretchMode (método)
 
@@ -48,7 +48,7 @@ HRESULT GetStretchMode(
 *pnStretchMode* 
 </dt> <dd>
 
-Recibe una marca que indica el modo de ajuste actual. Para obtener una lista de valores posibles, vea [**Cambiar el tamaño de las marcas**](resize-flags.md).
+Recibe una marca que indica el modo de ajuste actual. Para obtener una lista de valores [**posibles,**](resize-flags.md)vea Cambiar el tamaño de las marcas .
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Recibe una marca que indica el modo de ajuste actual. Para obtener una lista de 
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -79,7 +79,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

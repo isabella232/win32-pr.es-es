@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7b06d9529d4f7e6bf8e44339290855d50e6668d67f56305fbc3bbeb77ad4b217
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be9240f5307bb1e70b1f10cc1e392b92e5833fd8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118787855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966419"
 ---
 # <a name="texldl---vs"></a>texldl: vs
 
 Muestrear una textura con un muestreador determinado. El nivel de detalle mipmap concreto que se muestrea debe especificarse como el cuarto componente de la coordenada de textura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -37,7 +37,7 @@ Donde:
 -   src0 es un registro de origen que proporciona las coordenadas de textura para la muestra de textura.
 -   src1 identifica el registro (s) del muestreador de origen, donde especifica qué número de muestreador de textura se va \# \# a muestrear. El muestreador le ha asociado una textura y un estado de control definidos por la enumeración [**D3DSAMPLERSTATETYPE**](/windows/desktop/direct3d9/d3dsamplerstatetype) (por ejemplo, D3DSAMP \_ MINFILTER).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -49,7 +49,7 @@ Donde:
 
  
 
-texldl busca el conjunto de texturas en la fase sampler a la que hace referencia src1. El nivel de detalle está seleccionado en src0.w. Este valor puede ser negativo, en cuyo caso el nivel de detalle seleccionado es el "cero" (mapa más grande) con MAGFILTER. Dado que src0.w es un valor de punto flotante, el valor fraccionrio se usa para interpolar (si MIPFILTER es LINEAR) entre dos niveles mip. Se respetan los estados de muestreo MIPMAPLODBIAS y MAXMIPLEVEL. Para obtener más información sobre los estados del sampler, vea [**D3DSAMPLERSTATETYPE**](/windows/desktop/direct3d9/d3dsamplerstatetype).
+texldl busca el conjunto de texturas en la fase de sampler a la que hace referencia src1. El nivel de detalle está seleccionado en src0.w. Este valor puede ser negativo, en cuyo caso el nivel de detalle seleccionado es el "cero" (mapa más grande) con el MAGFILTER. Dado que src0.w es un valor de punto flotante, el valor fraccionrio se usa para interpolar (si MIPFILTER es LINEAR) entre dos niveles mip. Se respetan los estados de muestreo MIPMAPLODBIAS y MAXMIPLEVEL. Para obtener más información sobre los estados del sampler, vea [**D3DSAMPLERSTATETYPE**](/windows/desktop/direct3d9/d3dsamplerstatetype).
 
 Si un programa de sombreador toma muestras de un muestreador que no tiene un conjunto de texturas, se obtiene 0001 en el registro de destino.
 

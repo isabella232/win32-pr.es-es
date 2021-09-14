@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 707a5b7b886ac9366733e1b17322ac61c7d9703cb6ef8ac1e095cf1300fd508d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f3997aa38a7a97455b9f36d8afbee896ca9ae937
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119857515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963787"
 ---
 # <a name="d3ddeclusage-enumeration"></a>D3DDECLUSAGE (enumeración)
 
 Identifica el uso previsto de los datos de vértice.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -83,7 +83,7 @@ Datos normales de vértices. Use D3DDECLUSAGE NORMAL con un índice de uso de 0 
 <span id="D3DDECLUSAGE_PSIZE"></span><span id="d3ddeclusage_psize"></span>**D3DDECLUSAGE \_ PSIZE**
 </dt> <dd>
 
-Datos de tamaño de punto. Use D3DDECLUSAGE PSIZE con un índice de uso de 0 para especificar el atributo de tamaño de punto utilizado por el motor de instalación del rasterizador para expandir un punto en un cuadráncho para la funcionalidad de \_ sprite de punto.
+Datos de tamaño de punto. Use D3DDECLUSAGE PSIZE con un índice de uso de 0 para especificar el atributo de tamaño de punto utilizado por el motor de configuración del rasterizador para expandir un punto en un cuadráncho para la funcionalidad de \_ sprite de punto.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Valor de punto flotante positivo único. Use D3DDECLUSAGE TESSFACTOR con un índ
 <span id="D3DDECLUSAGE_POSITIONT"></span><span id="d3ddeclusage_positiont"></span>**D3DDECLUSAGE \_ POSITIONT**
 </dt> <dd>
 
-Los datos de vértices contienen datos de posición transformados que van de (0,0) a (ancho de ventanilla, alto de ventanilla). Use D3DDECLUSAGE \_ POSITIONT con un índice de uso de 0 para especificar la posición transformada. Cuando se establece una declaración que contiene esto, la canalización no realiza el procesamiento de vértices.
+Los datos de vértice contienen datos de posición transformados que van de (0,0) a (ancho de ventanilla, alto de ventanilla). Use D3DDECLUSAGE \_ POSITIONT con un índice de uso de 0 para especificar la posición transformada. Cuando se establece una declaración que contiene esto, la canalización no realiza el procesamiento de vértices.
 
 </dd> <dt>
 
@@ -150,7 +150,7 @@ Los datos de vértices contienen datos del muestreador. Use D3DDECLUSAGE SAMPLE 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los datos de vértice se declaran con una matriz [**de estructuras D3DVERTEXELEMENT9.**](d3dvertexelement9.md) Cada elemento de la matriz contiene un tipo de uso.
 
@@ -166,7 +166,7 @@ Para obtener más información sobre las declaraciones de vértices, vea [Declar
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

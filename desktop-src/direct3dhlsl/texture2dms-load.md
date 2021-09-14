@@ -1,6 +1,6 @@
 ---
-title: Métodos De carga de Texture2DMS::Texture2DMS
-description: Recupera un valor del recurso en la ubicación y el índice de ejemplo proporcionados. | Métodos De carga de Texture2DMS::Texture2DMS
+title: Métodos texture2DMS::Texture2DMS Load
+description: Recupera un valor del recurso en la ubicación y el índice de ejemplo proporcionados. | Métodos texture2DMS::Texture2DMS Load
 ms.assetid: d597fc42-0b21-4e89-bb33-0b8c12ae00ae
 keywords:
 - Métodos de carga HLSL
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 24df3d58413c873df4113cbd9b876ad531cb8307fbc5c8b5062d4a94847e8e2f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a29324dc108464359e333ac401a24be4cadb461d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119742705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884044"
 ---
 # <a name="texture2dmsload-methods"></a>Métodos Texture2DMS::Load
 
@@ -35,7 +35,7 @@ Recupera un valor del recurso en la ubicación y el índice de ejemplo proporcio
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

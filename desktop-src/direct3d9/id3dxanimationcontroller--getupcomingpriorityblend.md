@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4c58bf5e2a8736db98e0461988f984709e756d269d09c74dd673356676702ff9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72f9b8854041094d43d9e8250ab61b5f59a67848
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119849085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964915"
 ---
 # <a name="id3dxanimationcontrollergetupcomingpriorityblend-method"></a>Método ID3DXAnimationController::GetUpcomingPriorityBlend
 
@@ -45,7 +45,7 @@ D3DXEVENTHANDLE GetUpcomingPriorityBlend(
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Identificador de evento para un evento especificado después del cual se va a buscar un evento blend de prioridad siguiente. Si se establece **en NULL,** el método devolverá el siguiente evento de combinación de prioridad programada.
+Identificador de evento para un evento especificado después del cual se va a buscar un siguiente evento de combinación de prioridad. Si se establece **en NULL,** el método devolverá el siguiente evento de combinación de prioridad programada.
 
 </dd> </dl>
 
@@ -55,12 +55,12 @@ Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
 Identificador de evento para el siguiente evento de combinación de prioridad programada. **Se** devuelve NULL si no se programa ningún nuevo evento de combinación de prioridad.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método se puede usar de forma iterativa para buscar un evento de combinación de prioridad deseado pasando repetidamente **NULL** para hEvent.
+Este método se puede usar de forma iterativa para localizar un evento de combinación de prioridad deseada pasando repetidamente **NULL** para hEvent.
 
 > [!Note]  
-> No itere más después de que el método haya devuelto **NULL.**
+> No itera más después de que el método haya devuelto **NULL.**
 
  
 
@@ -75,7 +75,7 @@ Este método se puede usar de forma iterativa para buscar un evento de combinaci
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

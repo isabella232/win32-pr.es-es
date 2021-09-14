@@ -9,12 +9,12 @@ keywords:
 - botones en máscaras, ubicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 790b3f6dcd7612e60d4ef93e87ccea5f322a659f008579ec37eae38594cf3796
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b6f651848a376e58184634a1d4336bac9bab1507
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119736715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889420"
 ---
 # <a name="button-location"></a>Ubicación del botón
 

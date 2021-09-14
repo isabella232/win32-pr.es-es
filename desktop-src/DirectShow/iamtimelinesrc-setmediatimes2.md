@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 5d94515f2e810f74e788f5d8909ddee377bebee29525cc3d0c12b0463635043e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4aa4f68a6fb93c329507edceea4e9665bfecd5f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118154907"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891932"
 ---
 # <a name="iamtimelinesrcsetmediatimes2-method"></a>Método IAMTimelineSrc::SetMediaTimes2
 
@@ -56,7 +56,7 @@ Hora de inicio del medio, en segundos.
 *Detención* 
 </dt> <dd>
 
-Tiempo de detenerse de medios, en segundos.
+Tiempo de detención de medios, en segundos.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Tiempo de detenerse de medios, en segundos.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -87,7 +87,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

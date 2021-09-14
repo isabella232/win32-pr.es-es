@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b74c98e06d6d3e81c5147d0173be67a29450ca2d50bdfe5a34106f85e556bd55
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8540c43e53bc9f2ab36ba5d0897e4cefd39c40d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118259854"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964468"
 ---
 # <a name="esentslvcolumndefaultvaluenotallowedexception-class"></a>Clase EsentSLVColumnDefaultValueNotAllowedException
 
@@ -46,7 +46,7 @@ ms.locfileid: "118259854"
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

@@ -4,12 +4,12 @@ ms.assetid: eb064064-1b18-4e89-8555-258e8538338c
 title: Tareas DirectShow básicas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9390044ef2e778d4d0c4c4c2201ba9527674d370614745dab7507939dee0056d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d8b853f982399be87505bd43ac91dfe370268aff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120103385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161697"
 ---
 # <a name="basic-directshow-tasks"></a>Tareas DirectShow básicas
 

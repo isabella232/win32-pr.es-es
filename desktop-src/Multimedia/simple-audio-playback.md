@@ -15,11 +15,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 256feded06de4ee92ee415f14bb08adc7fb4456e
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371281"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161379"
 ---
 # <a name="simple-audio-playback"></a>Reproducción de audio simple
 
@@ -39,7 +39,7 @@ Puede usar las siguientes funciones para reproducir audio de forma de onda en la
 
 La **función MessageBeep** es una parte estándar de la API win32; dado que sus capacidades son muy limitadas y se documentan en otro lugar, no se trata aquí.
 
-Las funciones enumeradas admiten los siguientes orígenes de audio de onda:
+Las funciones enumeradas admiten los siguientes orígenes de audio de forma de onda:
 
 -   Archivos de audio de forma de onda asociados a los niveles de alerta del sistema
 -   Archivos de audio de forma de onda especificados por las entradas del Registro

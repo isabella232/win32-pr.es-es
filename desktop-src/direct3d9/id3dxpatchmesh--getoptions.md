@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7cabcf82dbc7d5e783e9b71cf8dd05cc1ec16f18bbaa308629d6ac388dee77bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a1e492382e96cae23379adab66c3700fb3c0b24
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119120788"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060544"
 ---
 # <a name="id3dxpatchmeshgetoptions-method"></a>Método ID3DXPatchMesh::GetOptions
 
@@ -44,7 +44,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 Tipo de revisión.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre los tipos de revisión, [**vea D3DXPATCHMESHTYPE**](./d3dxpatchmeshtype.md).
 

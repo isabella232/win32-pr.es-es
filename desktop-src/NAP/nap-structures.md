@@ -4,12 +4,12 @@ description: Estructuras nap
 ms.assetid: 68048587-0f7e-48d4-9326-768a977ea3ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd23e5f137592b24a2c1a1b15c4e2c969fa0e9b91ac9c80dcc7f8cb3fad3f2cd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b31f217afc96a25a5f85166ebde4e13b483e4a0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119802615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161250"
 ---
 # <a name="nap-structures"></a>Estructuras nap
 

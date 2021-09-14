@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a8e0e29df897d070cd4d337e27a7f5f7f7e3a86c7f44a784afadb5bc203674ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16b21e78de3510e2e4a58c7214995f7888f778c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055233"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890041"
 ---
 # <a name="ambientattributesalphablendto"></a>AmbientAttributes.alphaBlendTo
 
@@ -50,7 +50,7 @@ El **método alphaBlendTo** ajusta la **propiedad alphaBlend** durante un perío
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método es útil para hacer que los elementos aparezcan o desaparezcan gradualmente.
 
@@ -71,7 +71,7 @@ Cuando se usa **alphaBlendTo con** un elemento **TEXT** que no tiene especificad
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

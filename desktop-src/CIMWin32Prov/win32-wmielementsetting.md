@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - Wbemcore.dll
-ms.openlocfilehash: f46a9d5fd7c3f0baace1f763b9912f49fbcf318ffd07fa7cbf3138d04d8621f4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 41f79614fd0931759d502bbd61c7f4143e9e7dc9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119922545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126892428"
 ---
 # <a name="win32_wmielementsetting-class"></a>Clase \_ WMIElementSetting de Win32
 
-La clase [WMI](../wmisdk/retrieving-a-class.md) **de asociación \_ WMIElementSetting de Win32** relaciona un servicio que se ejecuta en el sistema Windows y la configuración de WMI que puede usar.
+La clase [WMI](../wmisdk/retrieving-a-class.md) de asociación **WMI \_ Win32 WMIElementSetting** relaciona un servicio que se ejecuta en el sistema Windows y la configuración de WMI que puede usar.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ class Win32_WMIElementSetting : CIM_ElementSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ WMIElementSetting de Win32** tiene estos tipos de miembros:
 
@@ -64,7 +64,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Wmi \| Win32 \_ Service")
 </dt> </dl>
 
-Referencia a la instancia de que representa Windows servicio mediante o que ofrece propiedades WMI.
+Referencia a la instancia de que representa Windows servicio mediante o mostrar propiedades WMI.
 
 </dd> <dt>
 
@@ -84,9 +84,9 @@ Referencia a la instancia de que representa la configuración de WMI disponible 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ WMIElementSetting de Win32** se deriva del [**elemento \_ CIMSetting**](cim-elementsetting.md).
+La **clase \_ WMIElementSetting de Win32** se deriva de [**\_ ElementSetting de CIM.**](cim-elementsetting.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ La **clase \_ WMIElementSetting de Win32** se deriva del [**elemento \_ CIMSetti
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

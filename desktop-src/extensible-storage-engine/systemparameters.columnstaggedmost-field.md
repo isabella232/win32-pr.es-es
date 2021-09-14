@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 120b83ec195cfff7304a9fe78bcc919cecc5a0e4880a49ecee708b87478bbc9a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72e832cb945101cb98efcf1cf7ccdc4ae450db45
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119107039"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887177"
 ---
 # <a name="systemparameterscolumnstaggedmost-field"></a>Campo SystemParameters.ColumnsTaggedMost
 

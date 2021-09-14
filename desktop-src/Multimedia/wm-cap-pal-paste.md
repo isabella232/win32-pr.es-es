@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_PAL_PASTE mensaje (Vfw.h)
-description: El mensaje WM \_ CAP PAL PASTE copia la paleta del \_ \_ Portapapeles y la pasa a un controlador de captura. Puede enviar este mensaje explícitamente o mediante la macro capPalettePaste.
+description: El mensaje WM CAP PAL PASTE copia la paleta del Portapapeles \_ y la pasa a un controlador de \_ \_ captura. Puede enviar este mensaje explícitamente o mediante la macro capPalettePaste.
 ms.assetid: d49c7fd9-be40-4a07-8339-b85f7c4c331e
 keywords:
 - WM_CAP_PAL_PASTE mensaje Windows Multimedia
@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 3daf88c69edbb8bad6257456b95a86c8a68df328
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371480"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161353"
 ---
-# <a name="wm_cap_pal_paste-message"></a>Mensaje \_ DE PEGADO DE PAL \_ \_ de WM CAP
+# <a name="wm_cap_pal_paste-message"></a>Mensaje \_ DE PEGAR DE WM CAP \_ PAL \_
 
 El **mensaje WM CAP PAL \_ \_ \_ PASTE** copia la paleta del Portapapeles y la pasa a un controlador de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capPalettePaste.**](/windows/desktop/api/Vfw/nf-vfw-cappalettepaste)
 
@@ -36,9 +36,9 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
-Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR,**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
+Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**DE ERROR WM CAP SET \_ \_ \_ CALLBACK, \_**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -56,7 +56,7 @@ Un controlador de captura usa una paleta cuando lo requiere el formato de vídeo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

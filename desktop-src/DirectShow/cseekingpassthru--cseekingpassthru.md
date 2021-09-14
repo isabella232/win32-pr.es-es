@@ -1,5 +1,5 @@
 ---
-description: 'Destructor CSeekingPassThru.~CSeekingPassThru: método Destructor.'
+description: 'Destructor CSeekingPassThru.~CSeekingPassThru : método destructor.'
 ms.assetid: 98e00ff2-0175-4c44-9a7f-c5c1b23f8fce
 title: Destructor CSeekingPassThru.~CSeekingPassThru (Seekpt.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 28b871224528581c3127553654dd57b7b991692c32f2c71cb99afa9b41443a0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b6ed17cf4fd57f3470a57b22daafa9858ba97f79
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119908055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160176"
 ---
 # <a name="cseekingpassthrucseekingpassthru-destructor"></a>Destructor CSeekingPassThru.~CSeekingPassThru
 
@@ -47,7 +47,7 @@ Método destructor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

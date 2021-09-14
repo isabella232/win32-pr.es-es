@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2a665f4b5e4420929e9ac7d70c1e5f85b7a50ab1742a01825ad4441007fda1be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8584a408a22661bdf4addb0ddb2622f4cc927f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119114955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887756"
 ---
 # <a name="esentslvproviderversionmismatchexception-constructor"></a>Constructor EsentSLVProviderVersionMismatchException
 

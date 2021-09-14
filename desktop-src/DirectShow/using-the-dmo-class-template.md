@@ -1,32 +1,32 @@
 ---
-description: Uso de la DMO de clase
+description: Uso de la plantilla DMO clase
 ms.assetid: 5193ad08-aaee-47e3-93eb-a126a66d8f23
-title: Uso de la DMO de clase
+title: Uso de la plantilla DMO clase
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 205ee51953aff35ef5b05790b45fcd0bdf3bcd753239a521e40ca796c21b0a3c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4db80017372f11f6c928e0e6a83b591967a84ee7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120130905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891617"
 ---
-# <a name="using-the-dmo-class-template"></a>Uso de la DMO de clase
+# <a name="using-the-dmo-class-template"></a>Uso de la plantilla DMO clase
 
-DirectShow incluye una plantilla de clase, [**IMediaObjectImpl,**](imediaobjectimpl-class-template.md)para implementar DDO. La plantilla controla muchas de las tareas de "contabilidad", como validar parámetros de entrada. Mediante el uso de la plantilla, puede centrarse en la funcionalidad específica de su DMO. Además, la plantilla ayuda a garantizar que se crea una implementación sólida. La plantilla se define en el archivo de encabezado Dmoimpl.h, ubicado en el directorio Include del SDK.
+DirectShow incluye una plantilla de clase, [**IMediaObjectImpl**](imediaobjectimpl-class-template.md), para implementar DDO. La plantilla controla muchas de las tareas de "contabilidad", como validar los parámetros de entrada. Mediante el uso de la plantilla, puede centrarse en la funcionalidad específica de su DMO. Además, la plantilla ayuda a garantizar que se crea una implementación sólida. La plantilla se define en el archivo de encabezado Dmoimpl.h, ubicado en el directorio Include del SDK.
 
 La **plantilla IMediaObjectImpl** hereda la [**interfaz IMediaObject.**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediaobject) Para crear un DMO mediante la plantilla, defina una nueva clase que derive de **IMediaObjectImpl**. La plantilla implementa todos los métodos **IMediaObject.** En la mayoría de los casos, la plantilla llama a un método privado correspondiente en la clase derivada. La plantilla proporciona las siguientes características:
 
 -   Comprobación básica de parámetros. Los métodos de plantilla comprueban que los parámetros necesarios no son **NULL,** que los índices de flujo están dentro del intervalo y que las marcas son válidas.
--   Bloqueo. Los métodos de plantilla llaman a dos métodos internos, **Lock** y **Unlock**, para serializar las operaciones en el DMO. Esta característica garantiza que el DMO es seguro para subprocesos.
--   Tipos de medios. La plantilla almacena los tipos de medios establecidos por el cliente y proporciona métodos de accessor para los tipos de medios.
--   Streaming. La plantilla evita el streaming hasta que el cliente ha establecido tipos de medios para todas las secuencias no opcionales. También garantiza que se llame al método [**IMediaObject::AllocateStreamingResources**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-allocatestreamingresources) antes de comenzar el streaming, lo que garantiza que se asignan recursos.
+-   Bloqueo. Los métodos de plantilla llaman a dos métodos internos, **Lock** y **Unlock,** para serializar las operaciones en el DMO. Esta característica garantiza que el DMO es seguro para subprocesos.
+-   Tipos de medios. La plantilla almacena los tipos de medios establecidos por el cliente y proporciona métodos de acceso para los tipos de medios.
+-   Streaming. La plantilla evita el streaming hasta que el cliente haya establecido tipos de medios para todas las secuencias no opcionales. También garantiza que se llame al método [**IMediaObject::AllocateStreamingResources**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-allocatestreamingresources) antes de comenzar el streaming, lo que garantiza que se asignen recursos.
 
-La clase derivada debe implementar la **interfaz IUnknown;** la plantilla no proporciona esta interfaz. Puede usar el Active Template Library (ATL) para implementar **IUnknown** o puede proporcionar alguna otra implementación. La plantilla tampoco implementa el mecanismo de bloqueo. La clase derivada debe implementar los **métodos Lock** **y Unlock.** Si crea la clase mediante ATL, puede usar las implementaciones de ATL predeterminadas.
+La clase derivada debe implementar la **interfaz IUnknown;** la plantilla no proporciona esta interfaz. Puede usar el Active Template Library (ATL) para implementar **IUnknown** o puede proporcionar alguna otra implementación. La plantilla tampoco implementa el mecanismo de bloqueo. La clase derivada debe implementar los métodos **Lock** **y Unlock.** Si crea la clase mediante ATL, puede usar las implementaciones de ATL predeterminadas.
 
 **Declarar la clase derivada**
 
-La **plantilla de clase IMediaObjectImpl** se declara de la siguiente manera:
+La **plantilla de clase IMediaObjectImpl** se declara como sigue:
 
 
 ```C++
@@ -36,7 +36,7 @@ class IMediaObjectImpl : public ImediaObject
 
 
 
-Los tres parámetros de plantilla \_ son \_ DERIVED, NUMBEROFINPUTS y NUMBEROFOUTPUTS. Establezca \_ DERIVED \_ igual al nombre de la clase. Los otros dos parámetros definen el número de flujos de entrada y de salida en el DMO. Por ejemplo, para crear una clase DMO denominada CMyDmo que admita un flujo de entrada y dos flujos de salida, use la declaración siguiente:
+Los tres parámetros de plantilla \_ son \_ DERIVADO, NUMBEROFINPUTS y NUMBEROFOUTPUTS. Establezca \_ DERIVED \_ igual al nombre de la clase. Los otros dos parámetros definen el número de flujos de entrada y de salida en el DMO. Por ejemplo, para crear una clase DMO denominada CMyDmo que admita un flujo de entrada y dos flujos de salida, use la declaración siguiente:
 
 
 ```C++
@@ -45,22 +45,22 @@ class CMyDmo : public IMediaObjectImpl<CMyDmo, 1, 2>
 
 
 
-En el resto de esta sección se describe cómo la plantilla implementa los distintos métodos en **IMediaObject**.
+En el resto de esta sección se describe cómo la plantilla implementa los distintos métodos **en IMediaObject**.
 
 **Métodos para establecer tipos de medios**
 
 Los métodos siguientes establecen o recuperan tipos de medios en el DMO:
 
--   **GetInputType**, **GetOutputType**. Estos métodos devuelven tipos de medios preferidos, por número de secuencia e índice de tipo. La plantilla llama **a InternalGetInputType** **o InternalGetOutputType** en la clase derivada.
--   **SetInputType**, **SetOutputType**. Estos métodos establecen el tipo de medio en una secuencia, prueban un tipo de medio o borran un tipo de medio. Para validar el tipo de medio, la plantilla llama **a InternalCheckInputType** o **InternalCheckOutputType** en la clase derivada. La clase derivada devuelve S OK para aceptar el tipo o \_ DMO \_ E \_ INVALIDTYPE para rechazar el tipo. La plantilla controla la configuración o el borrado del tipo de medio.
+-   **GetInputType**, **GetOutputType**. Estos métodos devuelven tipos de medios preferidos, por número de secuencia e índice de tipo. La plantilla llama **a InternalGetInputType** o **InternalGetOutputType** en la clase derivada.
+-   **SetInputType**, **SetOutputType**. Estos métodos establecen el tipo de medio en una secuencia, prueban un tipo de medio o borran un tipo de medio. Para validar el tipo de medio, la plantilla llama **a InternalCheckInputType** o **InternalCheckOutputType** en la clase derivada. La clase derivada devuelve S OK para aceptar el tipo o DMO \_ \_ E \_ INVALIDTYPE para rechazar el tipo. La plantilla controla la configuración o el borrado del tipo de medio.
 -   **GetInputCurrentType**, **GetOutputCurrentType**. Estos métodos devuelven el tipo de medio actual para una secuencia o DMO \_ E TYPE NOT SET si no se establece ningún \_ \_ \_ tipo. La plantilla implementa completamente estos métodos.
 
 **Métodos informativos**
 
 Los métodos siguientes proporcionan información sobre el DMO.
 
--   **GetInputMaxLatency**, **SetInputMaxLatency**. Estos métodos recuperan o establecen la latencia máxima. La plantilla llama **a InternalGetInputMaxLatency** o **InternalSetInputMaxLatency** en la clase derivada.
--   **GetInputSizeInfo**, **GetOutputSizeInfo**. Estos métodos devuelven los DMO búfer de la aplicación para una secuencia especificada. Si no se ha establecido ningún tipo de medio en esa secuencia, la plantilla devuelve DMO \_ E \_ TYPE NOT \_ \_ SET. De lo contrario, llama **a InternalGetInputSizeInfo** **o InternalGetOutputSizeInfo** en la clase derivada.
+-   **GetInputMaxLatency**, **SetInputMaxLatency**. Estos métodos recuperan o establecen la latencia máxima. La plantilla llama **a InternalGetInputMaxLatency** **o InternalSetInputMaxLatency** en la clase derivada.
+-   **GetInputSizeInfo**, **GetOutputSizeInfo**. Estos métodos devuelven los DMO búfer de la base de datos para una secuencia especificada. Si no se ha establecido ningún tipo de medio en esa secuencia, la plantilla devuelve DMO \_ E \_ TYPE NOT \_ \_ SET. De lo contrario, **llama a InternalGetInputSizeInfo** **o InternalGetOutputSizeInfo** en la clase derivada.
 -   **GetInputStreamInfo**, **GetOutputStreamInfo**. Estos métodos devuelven varias marcas que indican cómo el cliente debe dar formato a los datos. La plantilla llama **a InternalGetInputStreamInfo** **o InternalGetOutputStreamInfo** en la clase derivada.
 -   **GetStreamCount**. Este método devuelve el número de flujos de entrada y salida. La plantilla implementa este método mediante los parámetros de plantilla.
 
@@ -68,25 +68,25 @@ Los métodos siguientes proporcionan información sobre el DMO.
 
 -   El **método AllocateStreamingResources** asigna los recursos que necesita DMO antes de comenzar el streaming. El **método FreeStreamingResources** libera los mismos recursos. La plantilla llama **a InternalAllocateStreamingResources** e **InternalFreeStreamingResources,** respectivamente.
 
-El cliente del DMO no es necesario llamar a estos métodos, pero la plantilla llama automáticamente a **AllocateStreamingResources** antes de que se inicie el streaming. Por lo tanto, DMO puede suponer que los recursos se han asignado correctamente en el momento en que se llama a **ProcessInput.** El DMO debe llamar **a FreeStreamingResources en** su destructor.
+No es necesario que el DMO llame a estos métodos, pero la plantilla llama automáticamente a **AllocateStreamingResources** antes de que se inicie el streaming. Por lo tanto, DMO puede suponer que los recursos se han asignado correctamente en el momento en que se llama a **ProcessInput.** El DMO debe llamar **a FreeStreamingResources** en su destructor.
 
-Además, cuando la plantilla llama a **InternalAllocateStreamingResources**, establece una marca interna, de modo que no vuelva a llamar a ese método hasta que llame a **InternalFreeStreamingResources**. Esto garantiza que los recursos no se vuelvan a asignar accidentalmente, lo que podría provocar pérdidas de memoria.
+Además, cuando la plantilla llama a **InternalAllocateStreamingResources**, establece una marca interna para que no vuelva a llamar a ese método hasta que llame a **InternalFreeStreamingResources**. Esto garantiza que los recursos no se vuelvan a asignar accidentalmente, lo que podría provocar pérdidas de memoria.
 
-**Métodos para streaming**
+**Métodos de streaming**
 
 Los métodos siguientes se usan para transmitir datos:
 
--   **GetInputStatus**. Este método indica si el DMO puede aceptar la entrada en este momento. La plantilla llama **a InternalAcceptingInput** en la clase derivada. Si el DMO puede aceptar la entrada, la clase derivada devuelve S DMO OK y la plantilla establece el bit input STATUSF ACCEPT DATA en el \_ \_ parámetro \_ \_ \_ *dwFlags.* De lo contrario, la clase derivada devuelve S \_ FALSE y la plantilla establece *dwFlags* en cero.
--   **ProcessInput**. Este método procesa un búfer de entrada. La plantilla llama **a AllocateStreamingResources**, descrita anteriormente. A continuación, **llama a InternalAcceptingInput** en la clase derivada. Si el DMO puede aceptar nueva entrada, la plantilla llama **a InternalProcessInput**.
--   **ProcessOutput**. Este método procesa un conjunto de búferes de salida, un búfer para cada flujo de salida. La plantilla llama **a AllocateStreamingResources** y, después, **a InternalProcessOutput.**
--   **Discontinuidad.** Este método señala una discontinuidad en un flujo de entrada. La plantilla llama **a InternalAcceptingInput** en la clase derivada. Si ese método devuelve S \_ OK, la plantilla llama **a InternalDiscontinuity** en la clase derivada.
--   **Vacíe**. Este método vacía el DMO. La plantilla llama **a InternalFlush** en la clase derivada. El DMO debe descartar los búferes de entrada que aún contiene para procesarse.
+-   **GetInputStatus**. Este método indica si el DMO puede aceptar la entrada en este momento. La plantilla llama **a InternalAcceptingInput** en la clase derivada. Si el DMO puede aceptar la entrada, la clase derivada devuelve S OK y la plantilla establece el bit DMO INPUT STATUSF ACCEPT DATA en el \_ \_ parámetro \_ \_ \_ *dwFlags.* De lo contrario, la clase derivada devuelve S \_ FALSE y la plantilla establece *dwFlags* en cero.
+-   **ProcessInput**. Este método procesa un búfer de entrada. La plantilla llama **a AllocateStreamingResources**, descrito anteriormente. A continuación, **llama a InternalAcceptingInput** en la clase derivada. Si el DMO puede aceptar una nueva entrada, la plantilla llama a **InternalProcessInput**.
+-   **ProcessOutput**. Este método procesa un conjunto de búferes de salida, un búfer para cada flujo de salida. La plantilla llama **a AllocateStreamingResources** y, a **continuación, a InternalProcessOutput.**
+-   **Discontinuidad.** Este método indica una discontinuidad en un flujo de entrada. La plantilla llama **a InternalAcceptingInput** en la clase derivada. Si ese método devuelve S \_ OK, la plantilla llama **a InternalDiscontinuity** en la clase derivada.
+-   **Vacíe**. Este método vacía el DMO. La plantilla llama **a InternalFlush** en la clase derivada. El DMO debe descartar los búferes de entrada que aún se mantienen para procesarse.
 
 La plantilla no proporciona ninguna compatibilidad directa con la [**interfaz IMediaObjectInPlace.**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobjectinplace)
 
 **Métodos de bloqueo**
 
-El bloqueo se usa para proteger DMO estado de la aplicación en un entorno multiproceso. En un proyecto ATL, el [**método IMediaObject::Lock**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-lock) provoca un conflicto de nombres con el método **Lock atl.** Para resolver el conflicto, la plantilla cambia el nombre del **método IMediaObject** a **DMOLock.** Al compilar la clase derivada, defina FIX LOCK NAME antes de \_ incluir el archivo de encabezado \_ Dmo.h:
+El bloqueo se usa para proteger DMO estado de la aplicación en un entorno multiproceso. En un proyecto ATL, el [**método IMediaObject::Lock**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-lock) provoca un conflicto de nombres con **el** método Lock atl. Para resolver el conflicto, la plantilla cambia el nombre del **método IMediaObject** a **DMOLock.** Al compilar la clase derivada, defina FIX LOCK NAME antes de \_ incluir el archivo de encabezado \_ Dmo.h:
 
 
 ```C++

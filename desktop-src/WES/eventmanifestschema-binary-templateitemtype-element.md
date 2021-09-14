@@ -1,9 +1,9 @@
 ---
-title: Elemento binario (TemplateItemType)
-description: Contiene los datos binarios proporcionados por la API del registro de eventos.
+title: elemento binary (TemplateItemType)
+description: Contiene los datos binarios proporcionados por la API de registro de eventos.
 ms.assetid: 3ad9c119-9395-49d3-b920-9a071bcc6a04
 keywords:
-- EventLog del elemento binario
+- elemento binario EventLog
 topic_type:
 - apiref
 api_name:
@@ -14,15 +14,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 3c3e281da662b4cdd0ecacc81a88f1a5728f90da
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696002"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885481"
 ---
-# <a name="binary-templateitemtype-element"></a>Elemento binario (TemplateItemType)
+# <a name="binary-templateitemtype-element"></a>elemento binary (TemplateItemType)
 
-Contiene los datos binarios proporcionados por la API del [registro de eventos](/windows/desktop/EventLog/event-logging) .
+Contiene los datos binarios proporcionados por la API [de registro de](/windows/desktop/EventLog/event-logging) eventos.
 
 ``` syntax
 <xs:element name="binary">
@@ -35,7 +35,7 @@ Contiene los datos binarios proporcionados por la API del [registro de eventos](
 </xs:element>
 ```
 
-El elemento **binario** se define mediante el tipo complejo [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) .
+El **tipo** complejo [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) define el elemento binario.
 
 ## <a name="attributes"></a>Atributos
 
@@ -53,19 +53,19 @@ El elemento **binario** se define mediante el tipo complejo [**TemplateItemType*
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Elemento primario**
 </dt> <dt>
 
-[**plantilla (TemplateListType)**](eventmanifestschema-template-templatelisttype-element.md)
+[**template (TemplateListType)**](eventmanifestschema-template-templatelisttype-element.md)
 </dt> </dl>
 
  

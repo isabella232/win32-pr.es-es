@@ -4,16 +4,16 @@ ms.assetid: 632cecc6-6e34-43e5-992d-5fb3b066c8c7
 title: Funciones de la utilidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eff7764d69139a108330e5d46fb78f227d639ba496695aa004037ed0c28a95cf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 51ab7599eee3984db53dc0c7f8874435639aac3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119755855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160102"
 ---
 # <a name="utility-functions"></a>Funciones de la utilidad
 
-Esta sección contiene entradas de referencia para las macros y ® DirectShow® de utilidad de Microsoft. Para usar estas funciones, debe compilar la biblioteca DirectShow de clase base.
+Esta sección contiene entradas de referencia para las macros y ® DirectShow® de utilidad de Microsoft. Para usar estas funciones, debe compilar el DirectShow biblioteca de clase base.
 
 -   [**Funciones auxiliares COM**](com-helper-functions.md)
 -   [**Funciones de instalación de DLL**](dll-setup-functions.md)
@@ -26,7 +26,7 @@ Esta sección contiene entradas de referencia para las macros y ® DirectShow® 
 
 <dl> <dt>
 
-[Uso de las DirectShow base](using-the-directshow-base-classes.md)
+[Uso de las DirectShow base de datos](using-the-directshow-base-classes.md)
 </dt> </dl>
 
  

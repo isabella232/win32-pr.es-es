@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 2f851e6bdccb755977210fcd67e7ce0bb6cb270ec3ff6a4f1fed4806a035a11a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 401c20d766fe9751c35cb59c03bca739494b3f8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891849"
 ---
 # <a name="iamtimelinetrackinsertspace2-method"></a>IamTimelineTrack::InsertSpace2 (método)
 
@@ -77,7 +77,7 @@ Devuelve un **valor HRESULT.** Entre los valores devueltos posibles se incluyen 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -100,7 +100,7 @@ Devuelve un **valor HRESULT.** Entre los valores devueltos posibles se incluyen 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

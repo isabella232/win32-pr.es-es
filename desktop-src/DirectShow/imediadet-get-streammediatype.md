@@ -1,5 +1,5 @@
 ---
-description: El método \_ get StreamMediaType recupera el tipo de medio de la secuencia actual. Todas las secuencias de vídeo se convierten a tipos VIDEOINFOHEADER y todas las secuencias de audio se convierten a tipos DE FORMA DESATEX.
+description: El método \_ get StreamMediaType recupera el tipo de medio de la secuencia actual. Todas las secuencias de vídeo se convierten en tipos VIDEOINFOHEADER y todas las secuencias de audio se convierten en tipos DE FORMA DESATEX.
 ms.assetid: 7fc15cb3-af77-42c1-b5eb-d1d88bf9cd1d
 title: Método IMediaDet::get_StreamMediaType (Qedit.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8e62f7c7d5a6881647280e17d7ae21c442ae57c21a0c48470e255434007c5db3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c2bea0c9cad7e1a25666cc38735107e14a884ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118154187"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886905"
 ---
 # <a name="imediadetget_streammediatype-method"></a>IMediaDet::get \_ StreamMediaType (método)
 
@@ -28,7 +28,7 @@ ms.locfileid: "118154187"
 
  
 
-El `get_StreamMediaType` método recupera el tipo de medio de la secuencia actual. Todas las secuencias de vídeo se convierten a [**tipos VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) y todas las secuencias de audio se convierten a [**tipos DE FORMA DESATEX.**](/previous-versions/dd757713(v=vs.85))
+El `get_StreamMediaType` método recupera el tipo de medio de la secuencia actual. Todas las secuencias de vídeo se convierten en [**tipos VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) y todas las secuencias de audio se convierten en [**tipos DE FORMA DESATEX.**](/previous-versions/dd757713(v=vs.85))
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,9 +56,9 @@ Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Antes de llamar a este método, establezca el nombre de archivo y la secuencia mediante una llamada a [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream**](imediadet-put-currentstream.md).
+Antes de llamar a este método, establezca el nombre de archivo y la secuencia llamando a [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream**](imediadet-put-currentstream.md).
 
 Si el detector de medios está en modo de captura de mapa de bits, este método devuelve E \_ INVALIDARG. Para obtener más información, [**vea IMediaDet::EnterBitmapGrabMode**](imediadet-enterbitmapgrabmode.md).
 
@@ -83,14 +83,14 @@ Si el detector de medios está en modo de captura de mapa de bits, este método 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IMediaDet (interfaz)**](imediadet.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

@@ -3,9 +3,9 @@ title: Método IWMDRMDeviceApp GenerateMeterChallenge (WMDRMDeviceApp.h)
 description: El método GenerateMeterChallenge adquiere datos de medición de un dispositivo.
 ms.assetid: 2457cab7-bd45-49a7-ba69-74ae022207ce
 keywords:
-- Método GenerateMeterChallenge windows Media Administrador de dispositivos
-- Método GenerateMeterChallenge windows Media Administrador de dispositivos interfaz , IWMDRMDeviceApp
-- IWMDRMDeviceApp interface windows Media Administrador de dispositivos , GenerateMeterChallenge method
+- GenerateMeterChallenge method windows Media Administrador de dispositivos
+- GenerateMeterChallenge method windows Media Administrador de dispositivos , IWMDRMDeviceApp interface
+- IWMDRMDeviceApp interfaz windows Media Administrador de dispositivos , GenerateMeterChallenge (método)
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e91ac5049740d360ae0c5f53959b3d952188bfa2a569c58a9e7cf86ae0c22577
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 06a71f04a5837f09575a2f4bccf4b17e34e30d63
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118584554"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885396"
 ---
 # <a name="iwmdrmdeviceappgeneratemeterchallenge-method"></a>IWMDRMDeviceApp::GenerateMeterChallenge (método)
 
@@ -56,7 +56,7 @@ Puntero a una [**interfaz IWMDMDevice.**](/windows/desktop/api/mswmdm/nn-mswmdm-
 *bstrMeterCert* \[ En\]
 </dt> <dd>
 
-Certificado de medición de la aplicación, como **BSTR**. Se trata de un certificado firmado recibido de Microsoft.
+El certificado de medición de la aplicación, como **un BSTR**. Se trata de un certificado firmado recibido de Microsoft.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Dirección URL a la que se deben enviar los datos de medición. Esto se asigna m
 *pbstrMeterData* \[ out\]
 </dt> <dd>
 
-Datos de medición que se enviarán al servicio de medición. Esto se asigna mediante Windows media Administrador de dispositivos y el autor de la llamada debe liberarlo **mediante SysFreeString.**
+Datos de medición que se envían al servicio de medición. Esto se asigna mediante Windows media Administrador de dispositivos y el autor de la llamada debe liberarlo **mediante SysFreeString.**
 
 </dd> </dl>
 
@@ -90,15 +90,15 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 | <dl> <dt>**DRM \_ E \_ XMLNOTFOUND**</dt> </dl>               | No se pudo encontrar una etiqueta XML necesaria.<br/>                                 |
 | <dl> <dt>**Errores del dispositivo**</dt> </dl>            | Cualquiera de varios errores de dispositivo.<br/>                                  |
 | <dl> <dt>**Errores del cliente DRM**</dt> </dl>        | Cualquiera de varios errores de cliente DRM internos.<br/>                     |
-| <dl> <dt>**NS \_ E \_ DEVICE \_ NOT \_ WMDRM \_ DEVICE**</dt> </dl> | El dispositivo especificado no es un dispositivo compatible Windows DRM multimedia.<br/> |
+| <dl> <dt>**NS \_ E \_ DEVICE \_ NOT \_ WMDRM \_ DEVICE**</dt> </dl> | El dispositivo especificado no es un Windows compatible con DRM multimedia.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Antes de llamar a este método, la aplicación debe llamar a [**IWMDRMDeviceApp::QueryDeviceStatus**](iwmdrmdeviceapp-querydevicestatus.md) o [**IWMDRMDeviceApp2::QueryDeviceStatus2**](iwmdrmdeviceapp2-querydevicestatus2.md) para comprobar que todos los componentes DRM del dispositivo están actualizados. Solo se puede llamar a este método en un dispositivo que admita Windows DRM 10 multimedia para dispositivos portátiles.
+Antes de llamar a este método, la aplicación debe llamar a [**IWMDRMDeviceApp::QueryDeviceStatus**](iwmdrmdeviceapp-querydevicestatus.md) o [**IWMDRMDeviceApp2::QueryDeviceStatus2**](iwmdrmdeviceapp2-querydevicestatus2.md) para comprobar que todos los componentes DRM del dispositivo están actualizados. Este método solo se puede llamar en un dispositivo que admita Windows DRM multimedia 10 para dispositivos portátiles.
 
 Los datos recuperados *pbstrMeterData* deben enviarse a la dirección URL especificada por *pbstrMeterURL.* Asegúrese de codificar mediante URL los datos recuperados para que no se modifiquen durante la transferencia.
 
@@ -106,7 +106,7 @@ Consulte [Control de contenido protegido en la aplicación para](handling-protec
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente ejemplo de código de C++ crea un objeto **WMDRMDeviceApp,** comprueba que el dispositivo es un dispositivo DRM 10 de Windows Media, que su reloj es preciso y, a continuación, solicita los datos de medición.
+El siguiente ejemplo de código de C++ crea un objeto **WMDRMDeviceApp,** comprueba que el dispositivo es un dispositivo DRM 10 multimedia de Windows, que su reloj es preciso y, a continuación, solicita los datos de medición.
 
 
 ```C++
@@ -153,7 +153,7 @@ if (hr == S_OK)
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>WMDRMDeviceApp.h (también requiere Wmdrmdeviceapp i.c, creado a partir de \_ WMDRMDeviceApp.idl)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>WMDRMDeviceApp.h (también requiere Wmdrmdeviceapp \_ i.c, creado a partir de WMDRMDeviceApp.idl)</dt> </dl> |
 | Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl>                                                                        |
 
 
@@ -162,13 +162,13 @@ if (hr == S_OK)
 
 <dl> <dt>
 
-[**Control de contenido protegido en la aplicación**](handling-protected-content-in-the-application.md)
+[**Control del contenido protegido en la aplicación**](handling-protected-content-in-the-application.md)
 </dt> <dt>
 
 [**IWMDMDevice (interfaz)**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice)
 </dt> <dt>
 
-[**IWMDRMDeviceApp (interfaz)**](iwmdrmdeviceapp.md)
+[**Interfaz IWMDRMDeviceApp**](iwmdrmdeviceapp.md)
 </dt> </dl>
 
  

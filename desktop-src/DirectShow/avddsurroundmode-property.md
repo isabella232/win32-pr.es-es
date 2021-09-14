@@ -4,14 +4,14 @@ ms.assetid: b33839c8-4829-4d90-94de-e461772d3e94
 title: Propiedad AVDDSurroundMode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06b0f4be094861b8bd84b7c1fe0d801bbdcde6284d8f6d5985fffd294db302ff
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0ac2bfe34d55f3ab7b45d936f5842e46188d5452
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119503175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162169"
 ---
-# <a name="avddsurroundmode-property"></a>AvDDSurroundMode, propiedad
+# <a name="avddsurroundmode-property"></a>Propiedad AVDDSurroundMode
 
 Especifica si el audio está codificado en Dolby Surround.
 
@@ -35,13 +35,13 @@ El valor de esta propiedad es un miembro de la [**enumeración eAVDDSurroundMode
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
-| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP de 2000 \[ \| Server\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

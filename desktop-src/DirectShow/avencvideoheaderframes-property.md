@@ -4,14 +4,14 @@ ms.assetid: 77b04001-f524-49c0-b2cf-be32ad16564b
 title: Propiedad AVEncVideoHeaderFrames (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d20f90c50baed4278bf7c91a5838235e764ccf196dfb2575eac202d33fd88955
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c49d31a4b399f9f3af7ecb85cba65aa8fe536ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119275704"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161778"
 ---
-# <a name="avencvideoheaderframes-property"></a>Propiedad AVEncVideoHeaderFrames
+# <a name="avencvideoheaderframes-property"></a>AvEncVideoHeaderFrames, propiedad
 
 Especifica el número de fotograma inicial en el encabezado de grupo de imágenes (GOP).
 
@@ -35,13 +35,13 @@ El intervalo válido de esta propiedad depende de la velocidad de fotogramas.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Propiedad IndexInfo.Grbit'
+description: Más información sobre la propiedad IndexInfo.Grbit
 title: IndexInfo.Grbit, propiedad
 TOCTitle: 'Grbit property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.IndexInfo.Grbit
@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3767ee86d757901e396e3e54ce632dc2375e4ecc2aae3ba7ef32cbca64754294
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 55e16e08b82191f48bcab8813772d03dd243fd2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965767"
 ---
 # <a name="indexinfogrbit-property"></a>IndexInfo.Grbit, propiedad
 
@@ -39,7 +39,7 @@ Obtiene las opciones de índice.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 747ca8d7fd839321a9dbf4403c503652b932403e49bb964ae6148da2f49c5ac5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9fe4971fd9ede0f695fe06a4102da8243e7c720
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117818216"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891748"
 ---
 # <a name="iresizeget_size-method"></a>IResize::get \_ Size (método)
 
@@ -64,7 +64,7 @@ Recibe el ancho del vídeo, en píxeles.
 *pFlag* \[ out\]
 </dt> <dd>
 
-Recibe una marca que especifica el modo de ajuste. Consulte [**Cambiar el tamaño de las marcas**](resize-flags.md) para ver los valores posibles.
+Recibe una marca que especifica el modo de ajuste. Vea [**Cambiar el tamaño de las marcas**](resize-flags.md) para ver los valores posibles.
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Recibe una marca que especifica el modo de ajuste. Consulte [**Cambiar el tamañ
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si no se ha establecido el tipo de salida, el filtro debe devolver los valores predeterminados. Estos valores se pueden elegir arbitrariamente en tiempo de diseño.
 
@@ -82,7 +82,7 @@ Si no se ha establecido el tipo de salida, el filtro debe devolver los valores p
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -90,19 +90,19 @@ Si no se ha establecido el tipo de salida, el filtro debe devolver los valores p
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | DirectX 9.0 o posterior<br/>                                                         |
-| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> <dt>
 
 [**IResize (Interfaz)**](iresize.md)

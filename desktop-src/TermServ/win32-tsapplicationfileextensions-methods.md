@@ -5,12 +5,12 @@ ms.assetid: F7F5E4F8-DB09-4845-BFEA-9B85BC37E4EE
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36f00198cdeac27bb850195d9fb0510908e30a6ff52d730a344d956f9f111954
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c88f826db17a5e7187938c69732773b4d6439bec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118999855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890716"
 ---
 # <a name="win32_tsapplicationfileextensions-methods"></a>Métodos \_ TSApplicationFileExtensions de Win32
 

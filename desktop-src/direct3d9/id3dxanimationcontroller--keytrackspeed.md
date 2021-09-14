@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 21ad7b0b1423a25ede319a623cad0a8b453af481d4aac5fae4e5bcce252dd31e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 09705dd03e7767e94b1508cf4951186a509a3c5b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119791195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964888"
 ---
 # <a name="id3dxanimationcontrollerkeytrackspeed-method"></a>Método ID3DXAnimationController::KeyTrackSpeed
 
@@ -67,7 +67,7 @@ Nueva velocidad de la pista de animación.
 
 Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Clave de hora global. Especifica la hora global en la que se realizará el cambio.
+Clave de hora global. Especifica la hora global en la que se llevará a cabo el cambio.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Clave de hora global. Especifica la hora global en la que se realizará el cambi
 
 Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Tiempo de transición, que especifica cuánto tiempo llevará completarse la transición sin problemas.
+Tiempo de transición, que especifica cuánto tiempo se tardará en completarse la transición sin problemas.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Identificador de evento para el evento de combinación de prioridad. **Se** devu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

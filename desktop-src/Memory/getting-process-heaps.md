@@ -4,12 +4,12 @@ ms.assetid: 00f69593-f03b-4f30-aeec-db3fda0ac356
 title: Obtención de montones de procesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52b055bd558d12506d5a900c369365cb497e3817dbfa1fd53dd6506f6a919eab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: caffc8dcc69b02ab671b379dbb5e133e65f8d448
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119067845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159858"
 ---
 # <a name="getting-process-heaps"></a>Obtención de montones de procesos
 

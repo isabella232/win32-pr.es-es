@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 482553400348951139b2faa8a3c8bbd6b240e4b476c7ddaacfb4f354f8df8379
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 074106cac238e7e8e718dd7654b8dc4771052205
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889377"
 ---
 # <a name="buttonuptooltip"></a>BUTTON.upToolTip
 
@@ -31,7 +31,7 @@ El **atributo upToolTip** especifica o recupera el texto de la información sobr
 
 Este atributo es una cadena de lectura y **escritura** con un valor predeterminado de "" (cadena vacía) y una longitud máxima de 1024 caracteres.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando este atributo se establece en "" (cadena vacía), no se muestra información sobre herramientas.
 
@@ -45,7 +45,7 @@ Cuando este atributo se establece en "" (cadena vacía), no se muestra informaci
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

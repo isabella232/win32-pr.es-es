@@ -1,19 +1,19 @@
 ---
-description: Paquete de origen (VS) de SU
+description: Paquete de origen (VS) de LOA
 ms.assetid: 5ffd2883-0e56-459f-b229-cc014b894237
-title: Paquete de origen (VS) de SU
+title: Paquete de origen (VS) de LOA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 477e7a3257c11d6d8b42e16d2f066251452bc42a489abe9e666e374a565fa77c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 28f7ad2a91f1be1291b564013041e6dfa23bb014
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119072108"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160098"
 ---
-# <a name="vaux-source-vs-pack"></a>Paquete de origen (VS) de SU
+# <a name="vaux-source-vs-pack"></a>Paquete de origen (VS) de LOA
 
-En las tablas siguientes se muestran los valores utilizados por el controlador MSDV para rellenar el **miembro dwDVVVvSrc** de la [**estructura DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo) Para obtener más información, [vea DvINFO Field Configuración en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
+En las tablas siguientes se muestran los valores utilizados por el controlador MSDV para rellenar el **miembro dwDVVJdbcSrc** de la [**estructura DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo) Para obtener más información, [vea DVINFO Field Configuración en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
 
 **Dvcr Configuración**
 
@@ -119,7 +119,7 @@ STYPE (5)
 
 0:0000
 
-CATEGORÍA DE TUNER (8)
+TUNER CATEGORY (8)
 
 1111:1111
 
@@ -375,7 +375,7 @@ VS Pack
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los siguientes códigos de campo son de interés:
 

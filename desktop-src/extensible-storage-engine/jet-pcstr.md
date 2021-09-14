@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 6a698afffb415bb4418f46cfe16091ceda03cb59
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985168"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965640"
 ---
 # <a name="jet_pcstr"></a>JET_PCSTR
 

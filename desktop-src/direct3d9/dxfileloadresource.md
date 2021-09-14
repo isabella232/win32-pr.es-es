@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - DXFile.h
-ms.openlocfilehash: 54d0072d7c87f6d26483faf8c591ea7651eff29b411643eb9848de11ff50d899
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 233fe6acb13a6ae654a714028a316d7d6f6871ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118803042"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060648"
 ---
 # <a name="dxfileloadresource-structure"></a>DXFILELOADRESOURCE (estructura)
 
@@ -37,7 +37,7 @@ typedef struct DXFILELOADRESOURCE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -74,7 +74,7 @@ Puntero a una cadena que especifica el tipo definido por el usuario que identifi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta estructura identifica un recurso que se va a cargar cuando una aplicación usa el [**método CreateEnumObject**](idirectxfile--createenumobject.md) y especifica DXFILELOAD \_ FROMRESOURCE.
 

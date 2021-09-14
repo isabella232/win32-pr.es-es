@@ -4,12 +4,12 @@ ms.assetid: c8c269e7-6e2a-4b5d-847c-6779e276b9af
 title: Sistemas de coordenadas (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 140f4791151faa77b617bd5859430a67f13ad957811ca90f60dd53a3df2abb37
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e3da846ae4b989f6d8cb4741f9df8f7228e8970
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118101121"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888857"
 ---
 # <a name="coordinate-systems-direct3d-10"></a>Sistemas de coordenadas (Direct3D 10)
 

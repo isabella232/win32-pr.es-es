@@ -1,25 +1,25 @@
 ---
-title: IMsRdpClientAdvancedSettings DisplayConnectionBar, propiedad
+title: Propiedad IMsRdpClientAdvancedSettings DisplayConnectionBar
 description: Especifica si se debe usar la barra de conexión. El valor predeterminado es VARIANT \_ TRUE, que habilita la propiedad .
 ms.assetid: 251c0322-5589-423d-9694-004f847c173b
 ms.tgt_platform: multiple
 keywords:
 - Propiedad DisplayConnectionBar Servicios de Escritorio remoto
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
 - Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
 topic_type:
 - apiref
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cf7c0002128dd8d47684c5a5aa2269656e915e15c854ac007a0f87016b8829f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 39dd85d0c8fd578931ed9ca8b85ac7a5ca01981e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119475555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890884"
 ---
 # <a name="imsrdpclientadvancedsettingsdisplayconnectionbar-property"></a>IMsRdpClientAdvancedSettings::D isplayConnectionBar
 
-Especifica si se debe usar la barra de conexión. El valor predeterminado es **VARIANT \_ TRUE,** que habilita la propiedad . Si se establece esta propiedad **en VARIANT \_ FALSE en** un entorno de scripting seguro, se devuelve E **\_ FAIL**.
+Especifica si se debe usar la barra de conexión. El valor predeterminado es **VARIANT \_ TRUE,** que habilita la propiedad . Al establecer esta propiedad en **VARIANT \_ FALSE en** un entorno de scripting seguro, se devuelve E **\_ FAIL**.
 
 Esta propiedad es de lectura y escritura.
 
@@ -108,7 +108,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

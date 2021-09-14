@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 32a697dfe0292df3d4866551c2c65f4dd4cab4beeac82a9447b57cff4b11d4b9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fe521b743dab6c9c4922014ff82785d303f83f7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119675245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060575"
 ---
 # <a name="id3dxlinegetgllines-method"></a>Método ID3DXLine::GetGLLines
 
@@ -55,7 +55,7 @@ Devuelve **TRUE si** las líneas de estilo OpenGL están habilitadas y **FALSE**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

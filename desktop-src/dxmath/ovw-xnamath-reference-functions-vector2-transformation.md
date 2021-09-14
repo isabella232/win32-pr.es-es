@@ -4,12 +4,12 @@ ms.assetid: 175c2073-40ac-06b5-2f0e-495bd74b1502
 title: Funciones de transformación vectorial 2D de la biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dafaeef1257d07d6970e8b67258530d655333245f7a89610261c226d7c60fe17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cbf715f1acbffba0ed7680f17fbb2b5b6db8e191
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118277000"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126966272"
 ---
 # <a name="directxmath-library-2d-vector-transformation-functions"></a>Funciones de transformación vectorial 2D de la biblioteca DirectXMath
 

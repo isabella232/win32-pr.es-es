@@ -9,24 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7393001c63f0a5b605870a8498e76231f0bf620a8c7e819a8c624eace565499a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6d5c3940e38d8a9a8befa00b85ac9c3cd406c292
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119906705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160810"
 ---
 # <a name="verifying-client-access-to-requested-resources-in-script"></a>Comprobación del acceso de cliente a los recursos solicitados en el script
 
-Llame al [**método AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) de un [**objeto IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) para comprobar si el cliente tiene acceso a una o varias operaciones. Para obtener información sobre cómo crear **un objeto IAzClientContext,** vea [Establecer un contexto de cliente en script](establishing-a-client-context-in-script.md).
+Llame al [**método AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) de un [**objeto IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) para comprobar si el cliente tiene acceso a una o varias operaciones. Para obtener información sobre cómo crear **un objeto IAzClientContext,** vea [Establecer un contexto de cliente en el script](establishing-a-client-context-in-script.md).
 
-Un cliente podría pertenecer a más de un rol y una operación podría asignarse a más de una tarea, por lo que el Administrador de autorización comprueba todos los roles y tareas. Si algún rol al que pertenece el cliente contiene alguna tarea que contenga una operación, se concede acceso a esa operación.
+Un cliente podría pertenecer a más de un rol y una operación podría asignarse a más de una tarea, por lo que el Administrador de autorización comprueba todos los roles y tareas. Si algún rol al que pertenece el cliente contiene cualquier tarea que contenga una operación, se concede acceso a esa operación.
 
 Para comprobar el acceso de un solo rol al que pertenece el cliente, establezca la [**propiedad RoleForAccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck) del [**objeto IAzClientContext.**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext)
 
 Al inicializar el almacén de directivas de autorización para la comprobación de acceso, debe pasar cero como valor del parámetro *lFlags* del método [**Initialize**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize) del [**objeto AzAuthorizationStore.**](/windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore)
 
-También es posible aplicar lógica de negocios en tiempo de ejecución para calificar el acceso. Para obtener información sobre cómo calificar el acceso con lógica de negocios, vea [Acceso calificado con lógica de negocios en script](qualifying-access-with-business-logic-in-script.md).
+También es posible aplicar lógica de negocios en tiempo de ejecución para calificar el acceso. Para obtener información sobre cómo calificar el acceso con lógica de negocios, vea [Acceso apto con lógica de negocios en script](qualifying-access-with-business-logic-in-script.md).
 
 En el ejemplo siguiente se muestra cómo comprobar el acceso de un cliente a una operación. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C y que este almacén contiene una aplicación denominada Expense y una operación denominada UseFormControl.
 

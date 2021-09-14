@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 215f5a73d18599484b80b9d29d7dffcbb8be20ef3743ddb6fc0cdf7f70e974b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc2a72f6d638c7a4daa8db1849a790bdd76556b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119044622"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060692"
 ---
 # <a name="d3dxvec3catmullrom-function-d3dx9mathh"></a>Función D3DXVec3CatmullRom (D3dx9math.h)
 
@@ -105,7 +105,7 @@ Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
 Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el resultado del Catmull-Rom interpolación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Dados cuatro puntos (p1, p2, p3, p4), busque una función Q(s) de modo que:
 
@@ -119,7 +119,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-El Catmull-Rom spline se puede derivar de la spline hermite estableciendo:
+La Catmull-Rom spline se puede derivar de la spline de Hermite estableciendo:
 
 
 ```
@@ -179,7 +179,7 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

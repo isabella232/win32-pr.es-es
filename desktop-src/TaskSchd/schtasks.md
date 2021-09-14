@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 05/31/2018
-ms.openlocfilehash: 0da33bf63d999ddad42f58dfa15a1c36571a664855ac20e48ef43bfd7aecd55b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c9ba2c13053a8c550128f5d66623b5eed3a9dec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119139388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886537"
 ---
 # <a name="schtasksexe"></a>Schtasks.exe
 
@@ -53,21 +53,21 @@ Valor que especifica el equipo remoto al que se conectará. Si se omite, el par�
 <span id="_U_username"></span><span id="_u_username"></span><span id="_U_USERNAME"></span>**/U** **username**
 </dt> <dd>
 
-Valor que especifica el contexto de usuario en el que Schtasks.exe debe ejecutarse.
+Valor que especifica el contexto de usuario en el que se Schtasks.exe ejecutar.
 
 </dd> <dt>
 
 <span id="_P__password_"></span><span id="_p__password_"></span><span id="_P__PASSWORD_"></span>**/P** **\[ password \]**
 </dt> <dd>
 
-Valor que especifica la contraseña de un contexto de usuario determinado. Si se omite, Schtasks.exe solicita al usuario la entrada.
+Valor que especifica la contraseña para un contexto de usuario determinado. Si se omite, Schtasks.exe solicita al usuario la entrada.
 
 </dd> <dt>
 
-<span id="_RU_username"></span><span id="_ru_username"></span><span id="_RU_USERNAME"></span>**Nombre de usuario de /RU** 
+<span id="_RU_username"></span><span id="_ru_username"></span><span id="_RU_USERNAME"></span>**/RU username** 
 </dt> <dd>
 
-Valor que especifica el contexto de usuario bajo el que se ejecuta la tarea. Para la cuenta del sistema, los valores válidos son "", "NT AUTHORITY \\ SYSTEM" o "SYSTEM". Para Programador de tareas 2.0, "NT AUTHORITY \\ LOCALSERVICE" y "NT AUTHORITY \\ NETWORKSERVICE" también son valores válidos.
+Valor que especifica el contexto de usuario en el que se ejecuta la tarea. Para la cuenta del sistema, los valores válidos son "", "NT AUTHORITY \\ SYSTEM" o "SYSTEM". Para Programador de tareas 2.0, "NT AUTHORITY \\ LOCALSERVICE" y "NT AUTHORITY \\ NETWORKSERVICE" también son valores válidos.
 
 </dd> <dt>
 
@@ -90,12 +90,12 @@ Valor que especifica la frecuencia de programación. Los valores válidos son: M
 
 Valor que refina el tipo de programación para permitir un control más preciso sobre la periodicidad de la programación. Los valores válidos son:
 
--   MINUTO: 1 - 1439 minutos.
+-   MINUTO: de 1 a 1439 minutos.
 -   HORA: de 1 a 23 horas.
--   DIARIAMENTE: de 1 a 365 días.
+-   DIARIA: de 1 a 365 días.
 -   WEEKLY: semanas 1 a 52.
 -   ONCE: no hay modificadores.
--   ONSTART: no hay modificadores.
+-   ONSTART: sin modificadores.
 -   ONLOGON: no hay modificadores.
 -   ONIDLE: no hay modificadores.
 -   MENSUAL: 1 - 12, o FIRST, SECOND, THIRD, FOURTH, LAST y LASTDAY.
@@ -106,7 +106,7 @@ Valor que refina el tipo de programación para permitir un control más preciso 
 <span id="_D_days"></span><span id="_d_days"></span><span id="_D_DAYS"></span>**/D** **días**
 </dt> <dd>
 
-Valor que especifica el día de la semana para ejecutar la tarea. Los valores válidos son: MON, TUE, WED, THU, FRI, SAT, SUN y para las programaciones mensuales del 1 al 31 (días del mes). El carácter comodín ( \* ) especifica todos los días.
+Valor que especifica el día de la semana para ejecutar la tarea. Los valores válidos son: MON, TUE, WED, THU, FRI, SAT, SUN y para las programaciones MENSUALes de 1 a 31 (días del mes). El carácter comodín ( \* ) especifica todos los días.
 
 </dd> <dt>
 
@@ -163,16 +163,16 @@ Valor que especifica la hora de finalización para ejecutar la tarea. El formato
 
 </dd> <dt>
 
-<span id="_DU_duration"></span><span id="_du_duration"></span><span id="_DU_DURATION"></span>**Duración de /DU** 
+<span id="_DU_duration"></span><span id="_du_duration"></span><span id="_DU_DURATION"></span>**/DU** **duration**
 </dt> <dd>
 
-Valor que especifica la duración para ejecutar la tarea. El formato de hora es HH:mm (hora de 24 horas). Por ejemplo, 14:50 especifica 2:50 p. m. Esto no es aplicable a /ET y a los siguientes tipos de programación: ONSTART, ONLOGON, ONIDLE y ONEVENT. Para las tareas /V1 (Programador de tareas 1.0), si se especifica /RI, el valor predeterminado de duración es una hora.
+Valor que especifica la duración para ejecutar la tarea. El formato de hora es HH:mm (hora de 24 horas). Por ejemplo, 14:50 especifica 2:50 p. m. Esto no es aplicable con /ET y para los siguientes tipos de programación: ONSTART, ONLOGON, ONIDLE y ONEVENT. Para las tareas /V1 (Programador de tareas 1.0), si se especifica /RI, el valor predeterminado de duración es una hora.
 
 **Windows XP:** Esta opción no está disponible.
 
 </dd> <dt>
 
-<span id="_K_"></span><span id="_k_"></span>**/k** 
+<span id="_K_"></span><span id="_k_"></span>**/K** 
 </dt> <dd>
 
 Valor que finaliza la tarea en el tiempo de finalización o de duración. Esto no es aplicable a los siguientes tipos de programación: ONSTART, ONLOGON, ONIDLE y ONEVENT. Se debe especificar /ET o /DU.
@@ -216,13 +216,13 @@ Valor que permite que la tarea se ejecute de forma interactiva solo si el usuari
 <span id="_NP_"></span><span id="_np_"></span>**/NP** 
 </dt> <dd>
 
-Valor que indica que no se almacena ninguna contraseña. La tarea no se ejecuta de forma interactiva como el usuario determinado. Solo están disponibles los recursos locales.
+Valor que indica que no se almacena ninguna contraseña. La tarea no se ejecuta interactivamente como el usuario determinado. Solo están disponibles los recursos locales.
 
 **Windows XP y Windows Server 2003:** Esta opción no está disponible.
 
 </dd> <dt>
 
-<span id="_Z_"></span><span id="_z_"></span>**/z** 
+<span id="_Z_"></span><span id="_z_"></span>**/Z** 
 </dt> <dd>
 
 Valor que marca la tarea que se va a eliminar después de su ejecución final.
@@ -249,10 +249,10 @@ Valor que crea una tarea visible para Windows 2000, Windows Server 2003 y Window
 
 </dd> <dt>
 
-<span id="_F_"></span><span id="_f_"></span>**/f** 
+<span id="_F_"></span><span id="_f_"></span>**/F** 
 </dt> <dd>
 
-Valor que crea la tarea de forma forzar y suprime las advertencias si la tarea especificada ya existe.
+Valor que crea la tarea y suprime las advertencias si la tarea especificada ya existe.
 
 **Windows XP y Windows Server 2003:** Esta opción no está disponible.
 
@@ -270,7 +270,7 @@ Valor que establece el nivel de ejecución de la tarea. Los valores válidos son
 <span id="_DELAY_delaytime"></span><span id="_delay_delaytime"></span><span id="_DELAY_DELAYTIME"></span>**/DELAY** **delaytime**
 </dt> <dd>
 
-Valor que especifica el tiempo de espera para retrasar la tarea después de que se desencadene el desencadenador. El formato de hora es mmmm:ss. Esta opción solo es válida para los tipos de programación ONSTART, ONLOGON y ONEVENT.
+Valor que especifica el tiempo de espera para retrasar la tarea después de activar el desencadenador. El formato de hora es mmmm:ss. Esta opción solo es válida para los tipos de programación ONSTART, ONLOGON y ONEVENT.
 
 **Windows XP y Windows Server 2003:** Esta opción no está disponible.
 
@@ -283,15 +283,15 @@ Valor que muestra el mensaje de ayuda para Schtasks.exe.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al crear una tarea en un equipo remoto que se ejecuta en el sistema operativo Windows XP, Windows Server 2003 o Windows 2000, use el modificador /V1.
 
-No se puede crear una tarea de Programador de tareas 1.0 remota no interactiva (crear una tarea si no se usa el modificador /IT y se usa el modificador /V1) si el equipo remoto tiene habilitada la excepción de firewall Uso compartido de archivos e impresoras y la excepción de firewall Administración de tareas programadas remotas deshabilitada.
+No se puede crear una tarea de Programador de tareas 1.0 remota no interactiva (crear una tarea sin usar el modificador /IT y usar el modificador /V1) si el equipo remoto tiene habilitada la excepción de firewall Compartir archivos e impresoras y la excepción de firewall Administración remota de tareas programadas deshabilitada.
 
-## <a name="deleting-a-task"></a>Eliminar una tarea
+## <a name="deleting-a-task"></a>Eliminación de una tarea
 
-La sintaxis siguiente se usa para eliminar una o varias tareas programadas.
+La siguiente sintaxis se usa para eliminar una o varias tareas programadas.
 
 ``` syntax
 schtasks /Delete 
@@ -313,7 +313,7 @@ Valor que especifica el equipo remoto al que se conectará. Si se omite, el par�
 <span id="_U_username"></span><span id="_u_username"></span><span id="_U_USERNAME"></span>**/U** **username**
 </dt> <dd>
 
-Valor que especifica el contexto de usuario en el que Schtasks.exe ejecutar.
+Valor que especifica el contexto de usuario en el que se Schtasks.exe ejecutar.
 
 </dd> <dt>
 
@@ -331,7 +331,7 @@ Valor que especifica el nombre de la tarea programada que se eliminará. El car�
 
 </dd> <dt>
 
-<span id="_F_"></span><span id="_f_"></span>**/f** 
+<span id="_F_"></span><span id="_f_"></span>**/F** 
 </dt> <dd>
 
 Valor que elimina de forma forzar la tarea y suprime las advertencias si la tarea especificada se está ejecutando.
@@ -345,7 +345,7 @@ Valor que muestra la Ayuda para Schtasks.exe.
 
 </dd> </dl>
 
-## <a name="running-a-task"></a>Ejecutar una tarea
+## <a name="running-a-task"></a>Ejecución de una tarea
 
 La sintaxis siguiente se usa para ejecutar inmediatamente una tarea programada.
 
@@ -369,7 +369,7 @@ Valor que especifica el equipo remoto al que se conectará. Si se omite, el par�
 <span id="_U_username"></span><span id="_u_username"></span><span id="_U_USERNAME"></span>**/U** **username**
 </dt> <dd>
 
-Valor que especifica el contexto de usuario en el que Schtasks.exe ejecutar.
+Valor que especifica el contexto de usuario en el que se Schtasks.exe ejecutar.
 
 </dd> <dt>
 
@@ -423,7 +423,7 @@ Valor que especifica el equipo remoto al que se conectará. Si se omite, el par�
 <span id="_U_username"></span><span id="_u_username"></span><span id="_U_USERNAME"></span>**/U** **username**
 </dt> <dd>
 
-Valor que especifica el contexto de usuario en el que Schtasks.exe ejecutar.
+Valor que especifica el contexto de usuario en el que se Schtasks.exe ejecutar.
 
 </dd> <dt>
 
@@ -472,7 +472,7 @@ Valor que especifica el equipo remoto al que se conectará. Si se omite, el par�
 <span id="_U_username"></span><span id="_u_username"></span><span id="_U_USERNAME"></span>**/U** **username**
 </dt> <dd>
 
-Valor que especifica el contexto de usuario en el que Schtasks.exe ejecutar.
+Valor que especifica el contexto de usuario en el que se Schtasks.exe ejecutar.
 
 </dd> <dt>
 
@@ -497,7 +497,7 @@ Valor que especifica que el encabezado de columna no debe mostrarse en la salida
 
 </dd> <dt>
 
-<span id="_V_"></span><span id="_v_"></span>**/v** 
+<span id="_V_"></span><span id="_v_"></span>**/V** 
 </dt> <dd>
 
 Valor que muestra la salida detallada de la tarea.
@@ -530,13 +530,13 @@ Valor que se usa para mostrar las definiciones de tareas en formato XML.
 <span id="__"></span>**/?**
 </dt> <dd>
 
-Valor que se usa para mostrar la Ayuda para Schtasks.exe.
+Valor que se usa para mostrar la Ayuda de Schtasks.exe.
 
 </dd> </dl>
 
 ## <a name="changing-a-task"></a>Cambiar una tarea
 
-La sintaxis siguiente se usa para cambiar el modo en que se ejecuta el programa o para cambiar la cuenta de usuario y la contraseña que usa una tarea programada.
+La sintaxis siguiente se usa para cambiar la forma en que se ejecuta el programa o para cambiar la cuenta de usuario y la contraseña que usa una tarea programada.
 
 ``` syntax
 schtasks /Change 
@@ -635,7 +635,7 @@ Valor que especifica la duración para ejecutar la tarea. El formato de hora es 
 
 </dd> <dt>
 
-<span id="_K_"></span><span id="_k_"></span>**/k** 
+<span id="_K_"></span><span id="_k_"></span>**/K** 
 </dt> <dd>
 
 Valor que finaliza la tarea en el tiempo de finalización o de duración.
@@ -703,7 +703,7 @@ Valor que deshabilita la ejecución de la tarea programada.
 
 </dd> <dt>
 
-<span id="_Z_"></span><span id="_z_"></span>**/z** 
+<span id="_Z_"></span><span id="_z_"></span>**/Z** 
 </dt> <dd>
 
 Valor que marca la tarea que se va a eliminar después de su ejecución final.

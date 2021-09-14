@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Hh578711(v=EXCHG.10)
 ms:contentKeyID: 39512487
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e5f95bb94424c85cc5b4cfb22272ec4af87077b029955ce281200daa6576138d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 03a21347a2d88a21e08e086477c7c19ea827edac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118487842"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887612"
 ---
 # <a name="jet_bklogtime-operators"></a>JET_BKLOGTIME operadores
 

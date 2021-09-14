@@ -3,7 +3,7 @@ title: BALANCESLIDER
 description: Se trata de un control SLIDER predefinido con los siguientes valores predeterminados. | BALANCESLIDER
 ms.assetid: 89f027bf-1c31-4bd5-bb87-ebfd62b02def
 keywords:
-- BalanceSLIDER Reproductor de Windows Media
+- BALANCESLIDER Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5294a1139ffe3884c38b741faf84aae652e72146c4fb81ca79079494bfc4af71
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0de083f0b34b32f9f837791719a6fedec3e4b2ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119573475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889612"
 ---
 # <a name="balanceslider"></a>BALANCESLIDER
 
@@ -32,21 +32,21 @@ value="wmpprop:player.settings.balance"
 value_onchange="jscript:player.settings.balance=value;"
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esto crea un control **SLIDER** que establece el equilibrio de audio. La información sobre herramientas está localizada. Todas las propiedades de **este CONTROL DESLIZANTE** se pueden invalidar si se especifican explícitamente.
+Esto crea un control **SLIDER** que establece el equilibrio de audio. La información sobre herramientas se localiza. Todas las propiedades de **este CONTROL DESLIZANTE** se pueden invalidar especificándolos explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|----------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

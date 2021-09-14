@@ -4,12 +4,12 @@ ms.assetid: 48891204-397b-4b2b-8550-7a77461db06c
 title: Propiedad AVEncVideoOutputColorTransferMatrix (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 972f2b34c69af7bd5fc97bf34e5a96678216a39c6882748bfa64af019d6c7a5d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 309e51b8abdac33303e49ba380ed73cf4aa57272
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118663179"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161736"
 ---
 # <a name="avencvideooutputcolortransfermatrix-property"></a>Propiedad AVEncVideoOutputColorTransferMatrix
 
@@ -27,7 +27,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es miembro de la [**enumeración eAVEncVideoColorTransferMatrix.**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolortransfermatrix)
+El valor de esta propiedad es un miembro de la [**enumeración eAVEncVideoColorTransferMatrix.**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolortransfermatrix)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,13 +35,13 @@ El valor de esta propiedad es miembro de la [**enumeración eAVEncVideoColorTran
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
-| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| aplicaciones para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP de 2000 \[ \| Server\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

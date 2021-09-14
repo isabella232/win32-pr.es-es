@@ -1,5 +1,5 @@
 ---
-description: El método GetConnectedMediaType recupera el tipo de medio para la conexión en el pin de entrada del sample grabber.
+description: El método GetConnectedMediaType recupera el tipo de medio para la conexión en la clavija de entrada del sample grabber.
 ms.assetid: 65f5603a-1151-4ffd-a662-84e265663b04
 title: Método ISampleGrabber::GetConnectedMediaType (Qedit.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 03dc0c9763bdea75569f9447becb749bf284ae2ad7d77427f6dfc2f0aac58382
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85e30820afdca865f438ac40521a9be540fd4a1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117818064"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126891729"
 ---
 # <a name="isamplegrabbergetconnectedmediatype-method"></a>ISampleGrabber::GetConnectedMediaType (método)
 
@@ -28,7 +28,7 @@ ms.locfileid: "117818064"
 
  
 
-El `GetConnectedMediaType` método recupera el tipo de medio para la conexión en la patilla de entrada del sample grabber.
+El `GetConnectedMediaType` método recupera el tipo de medio para la conexión en el pin de entrada de Sample Grabber.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,9 +68,9 @@ Devuelve uno de los valores siguientes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método copia el tipo de medio en la **estructura \_ AM MEDIA \_ TYPE** especificada por *pType*. El autor de la llamada debe liberar el bloque de formato del tipo de medio. Puede usar la **función CoTaskMemFree** o [**la función FreeMediaType**](freemediatype.md) en la biblioteca de clase base.
+Este método copia el tipo de medio en la **estructura \_ AM MEDIA \_ TYPE** especificada por *pType*. El autor de la llamada debe liberar el bloque de formato del tipo de medio. Puede usar la **función CoTaskMemFree** o la [**función FreeMediaType**](freemediatype.md) en la biblioteca de clase base.
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
