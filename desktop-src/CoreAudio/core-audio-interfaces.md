@@ -1,25 +1,25 @@
 ---
-description: 'Esta referencia de programación para core audio SDK incluye las interfaces siguientes:'
+description: 'Esta referencia de programación para core Audio SDK incluye las interfaces siguientes:'
 ms.assetid: b18e2094-e974-4c23-b70b-ace5a168132d
 title: Interfaces de audio principales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 330bb620b48b865db3db2ab5ea5625b7859588bd8e53e1addbcd8fd8ec9bda6a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0eed875bad93bed1625a175bd74b849f139a0140
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120109475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165090"
 ---
 # <a name="core-audio-interfaces"></a>Interfaces de audio principales
 
-Esta referencia de programación para core audio SDK incluye las interfaces siguientes:
+Esta referencia de programación para core Audio SDK incluye las interfaces siguientes:
 
 ## <a name="mmdevice-api"></a>MMDevice API
 
 La API Windows Multimedia Device (MMDevice) permite a los clientes de audio detectar dispositivos de punto de conexión de [audio,](audio-endpoint-devices.md)determinar sus funcionalidades y crear instancias de controlador para esos dispositivos. El archivo de encabezado Mmdeviceapi.h define las interfaces de la API MMDevice. Para obtener más información, consulte [Acerca de MMDevice API.](mmdevice-api.md)
 
-En la tabla siguiente se enumeran las interfaces MMDevice disponibles con core audio SDK para Windows Vista.
+En la tabla siguiente se enumeran las interfaces MMDevice disponibles con core Audio SDK para Windows Vista.
 
 
 
@@ -37,7 +37,7 @@ En la tabla siguiente se enumeran las interfaces MMDevice disponibles con core a
 
 ## <a name="wasapi"></a>WASAPI
 
-La WINDOWS Audio Session API (WASAPI) permite a las aplicaciones cliente administrar el flujo de datos de audio entre la aplicación y un dispositivo de punto de [conexión de audio.](audio-endpoint-devices.md) Los archivos de encabezado Audioclient.h y Audiopolicy.h definen las interfaces WASAPI. Para obtener más información, vea [Acerca de WASAPI.](wasapi.md)
+La Windows Audio Session API (WASAPI) permite a las aplicaciones cliente administrar el flujo de datos de audio entre la aplicación y un dispositivo de punto de [conexión de audio.](audio-endpoint-devices.md) Los archivos de encabezado Audioclient.h y Audiopolicy.h definen las interfaces WASAPI. Para obtener más información, vea [Acerca de WASAPI.](wasapi.md)
 
 En la tabla siguiente se enumeran las interfaces WASAPI disponibles con core Audio SDK para Windows Vista y versiones posteriores.
 
@@ -46,17 +46,17 @@ En la tabla siguiente se enumeran las interfaces WASAPI disponibles con core Aud
 | Interfaz                                                                                    | Descripción                                                                                                                                                                                               |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IActivateAudioInterfaceAsyncOperation**](/windows/desktop/api/mmdeviceapi/nn-mmdeviceapi-iactivateaudiointerfaceasyncoperation)       | Representa una operación asincrónica que activa una [interfaz WASAPI](wasapi.md) y proporciona un método para recuperar los resultados de la activación.<br/> Se aplica a partir de Windows 8.<br/> |
-| [**IActivateAudioInterfaceCompletionHandler**](/windows/desktop/api/mmdeviceapi/nn-mmdeviceapi-iactivateaudiointerfacecompletionhandler) | Proporciona una devolución de llamada para indicar que se ha completado la activación de una interfaz [WASAPI.](wasapi.md)<br/> Se aplica a partir de Windows 8.<br/>                                                  |
+| [**IActivateAudioInterfaceCompletionHandler**](/windows/desktop/api/mmdeviceapi/nn-mmdeviceapi-iactivateaudiointerfacecompletionhandler) | Proporciona una devolución de llamada para indicar que se ha completado la activación de una [interfaz WASAPI.](wasapi.md)<br/> Se aplica a partir de Windows 8.<br/>                                                  |
 | [**IAudioCaptureClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudiocaptureclient)                                           | Permite a un cliente leer los datos de entrada de un búfer de punto de conexión de captura.                                                                                                                                       |
 | [**IAudioClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclient)                                                         | Permite a un cliente crear e inicializar una secuencia de audio entre una aplicación de audio y el motor de audio o el búfer de hardware de un dispositivo de punto de conexión de audio.                                           |
 | [**IAudioClock**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclock)                                                           | Permite a un cliente supervisar la velocidad de datos de un flujo y la posición actual en la secuencia.                                                                                                                  |
 | [**IAudioClock2**](/windows/desktop/api/audioclient/nn-audioclient-iaudioclock2)<br/>                                              | Permite que un cliente obtenga la posición actual del dispositivo.<br/>                                                                                                                                           |
 | [**IAudioClockAdjustment**](/windows/desktop/api/audioclient/nn-audioclient-iaudioclockadjustment)<br/>                            | Permite a un cliente establecer la frecuencia de muestreo de una secuencia.<br/>                                                                                                                                           |
 | [**IAudioRenderClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudiorenderclient)                                             | Permite a un cliente escribir datos de salida en un búfer de punto de conexión de representación.                                                                                                                                     |
-| [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol)                                         | Permite a un cliente configurar los parámetros de control para una sesión de audio y supervisar los eventos de la sesión.                                                                                           |
-| [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2)<br/>                            | Permite a un cliente obtener información sobre la sesión de audio.<br/>                                                                                                                                   |
+| [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol)                                         | Permite a un cliente configurar los parámetros de control de una sesión de audio y supervisar los eventos de la sesión.                                                                                           |
+| [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2)<br/>                            | Permite que un cliente obtenga información sobre la sesión de audio.<br/>                                                                                                                                   |
 | [**IAudioSessionManager**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionmanager)                                         | Permite que un cliente acceda a los controles de sesión y controles de volumen para sesiones de audio entre procesos y específicas del proceso.                                                                           |
-| [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2)<br/>                            | Administra todas las submezclas, incluida la enumeración y la notificación de submezclas. También proporciona compatibilidad con notificaciones de afijo.<br/>                                                                   |
+| [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2)<br/>                            | Administra todas las submezclas, incluida la enumeración y la notificación de submezclas. También proporciona compatibilidad con notificaciones de achacamiento.<br/>                                                                   |
 | [**IAudioSessionEnumerator**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionenumerator)<br/>                        | Permite a un cliente enumerar sesiones de audio.<br/>                                                                                                                                                  |
 | [**IAudioStreamVolume**](/windows/desktop/api/Audioclient/nn-audioclient-iaudiostreamvolume)                                             | Permite a un cliente controlar y supervisar los niveles de volumen de todos los canales de una secuencia de audio.                                                                                                     |
 | [**IChannelAudioVolume**](/windows/desktop/api/Audioclient/nn-audioclient-ichannelaudiovolume)                                           | Permite a un cliente controlar los niveles de volumen de todos los canales de la sesión de audio a la que pertenece la secuencia.                                                                                    |
@@ -71,7 +71,7 @@ En la tabla siguiente se enumeran las interfaces WASAPI disponibles con core Aud
 
 ## <a name="devicetopology-api"></a>DeviceTopology API
 
-DeviceTopology API proporciona a las aplicaciones cliente la capacidad de recorrer las topologías de hardware funcionales de los dispositivos de representación y captura de audio. El archivo de encabezado Devicetopology.h define las interfaces de DeviceTopology API. Para más información, consulte [Device Topologies](device-topologies.md) and DeviceTopology API ( Topologías de [**dispositivos y Api DeviceTopology).**](/windows/desktop/api/Devicetopology/nn-devicetopology-idevicetopology)
+DeviceTopology API proporciona a las aplicaciones cliente la capacidad de recorrer las topologías de hardware funcionales de los dispositivos de representación y captura de audio. El archivo de encabezado Devicetopology.h define las interfaces de DeviceTopology API. Para obtener más información, consulte [Topologías de dispositivos](device-topologies.md) [**y DeviceTopology API.**](/windows/desktop/api/Devicetopology/nn-devicetopology-idevicetopology)
 
 En la tabla siguiente se enumeran las interfaces DeviceTopology disponibles con core Audio SDK para Windows Vista y versiones posteriores.
 
@@ -79,14 +79,14 @@ En la tabla siguiente se enumeran las interfaces DeviceTopology disponibles con 
 
 | Interfaz                                                           | Descripción                                                                                                                                                                                                               |
 |---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IAudioAutoGainControl**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudioautogaincontrol)              | Proporciona acceso a un control de ganancia automática de hardware (AGC).                                                                                                                                                               |
-| [**IAudioBass**](/windows/win32/api/devicetopology/nn-devicetopology-iaudiobass)                                    | Proporciona acceso a un control de hardware de nivel de hardware.                                                                                                                                                                         |
+| [**IAudioAutoGainControl**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudioautogaincontrol)              | Proporciona acceso a un control de ganancia automático de hardware (AGC).                                                                                                                                                               |
+| [**IAudioBass**](/windows/win32/api/devicetopology/nn-devicetopology-iaudiobass)                                    | Proporciona acceso a un control de nivel de hardware.                                                                                                                                                                         |
 | [**IAudioChannelConfig**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudiochannelconfig)                  | Proporciona acceso a un control de configuración de canal de hardware.                                                                                                                                                              |
-| [**IAudioInputSelector**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudioinputselector)                  | Proporciona acceso a un control multiplexador de hardware (selector de entrada).                                                                                                                                                       |
+| [**IAudioInputSelector**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudioinputselector)                  | Proporciona acceso a un control multiplexor de hardware (selector de entrada).                                                                                                                                                       |
 | [**IAudioLoudness**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudioloudness)                            | Proporciona acceso a un control de compensación de "sonoridad".                                                                                                                                                                     |
 | [**IAudioMidrange**](/windows/win32/api/devicetopology/nn-devicetopology-iaudiomidrange)                            | Proporciona acceso a un control de nivel medio de hardware.                                                                                                                                                                     |
 | [**IAudioMute**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudiomute)                                    | Proporciona acceso a un control de exclusión mutua de hardware.                                                                                                                                                                               |
-| [**IAudioOutputSelector**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudiooutputselector)                | Proporciona acceso a un control de demultiplexador de hardware (selector de salida).                                                                                                                                                    |
+| [**IAudioOutputSelector**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudiooutputselector)                | Proporciona acceso a un control de demultiplexor de hardware (selector de salida).                                                                                                                                                    |
 | [**IAudioPeakMeter**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudiopeakmeter)                          | Proporciona acceso a un control de medidor máximo de hardware.                                                                                                                                                                         |
 | [**IAudioTreble**](/windows/win32/api/devicetopology/nn-devicetopology-iaudiotreble)                                | Proporciona acceso a un control de nivel triple de hardware.                                                                                                                                                                       |
 | [**IAudioVolumeLevel**](/windows/win32/api/devicetopology/nn-devicetopology-iaudiovolumelevel)                      | Proporciona acceso a un control de volumen de hardware.                                                                                                                                                                             |

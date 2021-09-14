@@ -4,12 +4,12 @@ description: Una aplicación puede pegar el contenido del Portapapeles en un con
 ms.assetid: 1FEFFD95-839B-4A26-A26E-B8429D5FF4C0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdeac2e892716880e4e2971d597c13047dc79cebf2c57888e2fa248c6b0c4beb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4a46432054956914b484c9faeeeda78f2a18e132
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120132095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165406"
 ---
 # <a name="how-to-use-rich-edit-clipboard-operations"></a>Cómo usar las operaciones de edición enriquecte del Portapapeles
 
@@ -21,7 +21,7 @@ Una aplicación puede pegar el contenido del Portapapeles en un control de edici
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación

@@ -4,12 +4,12 @@ ms.assetid: 02f5d1b4-ba4f-424a-897f-b113d1f7cd6b
 title: Medidores máximos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e04a15ddd2e5fd91cf60845f2a939715e7a4a992f36aea3b9129e69c30d05961
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ccd2f1ce0b8fd45fbf1cb3710c878c05544f7d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077509"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164934"
 ---
 # <a name="peak-meters"></a>Medidores máximos
 
@@ -21,7 +21,7 @@ Si el dispositivo de punto de conexión de audio implementa el medidor máximo e
 
 Si un dispositivo tiene un medidor máximo de hardware, el medidor máximo está activo tanto en modo compartido como en modo exclusivo. Si un dispositivo carece de medidor máximo de hardware, el medidor máximo está activo en modo compartido, pero no en modo exclusivo. En modo exclusivo, la aplicación y el hardware de audio intercambian datos de audio directamente, omitiendo el medidor máximo de software (que siempre informa de un valor máximo de 0,0).
 
-El siguiente ejemplo de código de C++ es una Windows que muestra un medidor máximo para el dispositivo de representación predeterminado:
+El siguiente ejemplo de código de C++ es Windows aplicación que muestra un medidor máximo para el dispositivo de representación predeterminado:
 
 
 ```C++
@@ -180,7 +180,7 @@ void DrawPeakMeter(HWND hPeakMeter, float peak)
 
 En el ejemplo de código anterior, la función [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) llama a la función [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para crear una instancia de la interfaz [**IMMDeviceEnumerator**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) y llama al método [**IMMDeviceEnumerator::GetDefaultAudioEndpoint**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdeviceenumerator-getdefaultaudioendpoint) para obtener la interfaz [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) del dispositivo de representación predeterminado. **WinMain** llama al método [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para obtener la interfaz [**IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) del dispositivo y abre un cuadro de diálogo para mostrar un medidor máximo para el dispositivo. Para obtener más información sobre **WinMain** y **CoCreateInstance,** consulte la documentación Windows SDK. Para obtener más información sobre **IMMDeviceEnumerator** **e IMMDevice**, vea [Enumerating Audio Devices](enumerating-audio-devices.md).
 
-En el ejemplo de código anterior, la función DlgProc muestra el medidor máximo en el cuadro de diálogo. Durante el procesamiento del mensaje WM INITDIALOG, DlgProc llama a la función SetTimer para configurar un temporizador que generará mensajes WM TIMER a intervalos \_ de tiempo [](/windows/win32/api/winuser/nf-winuser-settimer) \_ regulares. Cuando DlgProc recibe un mensaje DE TEMPORIZADOR DE WM, llama a \_ [**IAudioMeterInformation::GetPeakValue**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudiometerinformation-getpeakvalue) para obtener la lectura más reciente del medidor máximo de la secuencia. A continuación, DlgProc llama a la función DrawPeakMeter para dibujar el medidor máximo actualizado en el cuadro de diálogo. Para obtener más información sobre **SetTimer y** los mensajes WM INITDIALOG y WM TIMER, consulte la \_ documentación Windows \_ SDK.
+En el ejemplo de código anterior, la función DlgProc muestra el medidor máximo en el cuadro de diálogo. Durante el procesamiento del mensaje WM INITDIALOG, DlgProc llama a la función SetTimer para configurar un temporizador que generará mensajes WM TIMER a intervalos \_ de tiempo [](/windows/win32/api/winuser/nf-winuser-settimer) \_ regulares. Cuando DlgProc recibe un mensaje DE TEMPORIZADOR DE WM, llama a \_ [**IAudioMeterInformation::GetPeakValue**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudiometerinformation-getpeakvalue) para obtener la lectura más reciente del medidor máximo de la secuencia. A continuación, DlgProc llama a la función DrawPeakMeter para dibujar el medidor máximo actualizado en el cuadro de diálogo. Para obtener más información sobre **SetTimer y** los mensajes WM INITDIALOG y WM TIMER, consulte \_ la documentación Windows \_ SDK.
 
 Puede modificar fácilmente el ejemplo de código anterior para mostrar un medidor máximo para el dispositivo de captura predeterminado. En la [**función WinMain,**](/windows/win32/api/winbase/nf-winbase-winmain) cambie el valor del primer parámetro de la llamada a [**IMMDeviceEnumerator::GetDefaultAudioEndpoint**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdeviceenumerator-getdefaultaudioendpoint) de eRender a eCapture.
 

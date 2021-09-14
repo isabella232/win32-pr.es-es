@@ -4,12 +4,12 @@ ms.assetid: 06124b99-89b3-4dfa-b989-a54746ecd697
 title: CaptureSharedTimerDriven
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf6d9e8cbd686bdd71804ed067a5b3d9ff36ed8271c8b0edb04b8077ca162fbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b635462767f22d3e31fe6deaa79b5c00911b378b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165122"
 ---
 # <a name="capturesharedtimerdriven"></a>CaptureSharedTimerDriven
 
@@ -50,9 +50,9 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Ubicación    | Ruta de acceso o dirección URL                                                                                                  |
+| Location    | Ruta de acceso o dirección URL                                                                                                  |
 |-------------|-----------------------------------------------------------------------------------------------------------|
-| Windows SDK | \\Archivos de \\ programa Sdk de Microsoft Windows \\ \\ v7.0 \\ Samples Multimedia Audio \\ \\ \\ CaptureSharedTimerDriven \\ ... |
+| Windows SDK | \\Archivos de programa Sdk de Microsoft Windows archivos de audio multimedia de ejemplo \\ \\ \\ v7.0 \\ \\ \\ \\ CaptureSharedTimerDriven \\ ... |
 
 
 
@@ -62,9 +62,9 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 Para compilar el ejemplo CaptureSharedTimerDriven, siga estos pasos:
 
-1.  Abra el shell de CMD para el SDK Windows y cambie al directorio de ejemplo CaptureSharedTimerDriven.
-2.  Ejecute el comando en el directorio CaptureSharedTimerDriven para abrir el proyecto `start WASAPICaptureSharedTimerDriven.sln` WASAPICaptureSharedTimerDriven en Visual Studio ventana.
-3.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre una Visual Studio desde el shell de CMD para el SDK, Visual Studio no tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto WASAPICaptureSharedTimerDriven.vcproj.
+1.  Abra el shell de CMD para Windows SDK y cambie al directorio de ejemplo CaptureSharedTimerDriven.
+2.  Ejecute el comando en el directorio CaptureSharedTimerDriven para abrir el proyecto `start WASAPICaptureSharedTimerDriven.sln` WASAPICaptureSharedTimerDriven en la Visual Studio anterior.
+3.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre Visual Studio shell de CMD para el SDK, Visual Studio tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto WASAPICaptureSharedTimerDriven.vcproj.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
@@ -92,13 +92,13 @@ En la tabla siguiente se muestran los argumentos.
 
 Si la aplicación se ejecuta sin argumentos, enumera los dispositivos disponibles y solicita al usuario que seleccione un dispositivo para la sesión de captura. La consola predeterminada, la comunicación y los dispositivos multimedia aparecen seguidos de los dispositivos y los identificadores de punto de conexión. Si no se especifica ninguna duración, la secuencia de audio del dispositivo especificado se captura durante 10 segundos. La aplicación escribe los datos capturados en un archivo .wav con nombre único.
 
-CaptureSharedTimerDriven muestra el almacenamiento en búfer controlado por temporizador. En este modo, el cliente debe esperar un período de tiempo (la mitad de la latencia, especificada por el valor del modificador -d, en milisegundos). Cuando el cliente se reactiva, a mitad del período de procesamiento, extrae el siguiente conjunto de muestras del motor. Antes de que cada procesamiento pase en el bucle de almacenamiento en búfer, el cliente debe averiguar la cantidad de datos de captura disponibles para que los datos no sobresalan el búfer de captura. Los datos de audio que se capturan desde el dispositivo especificado se pueden procesar habilitando el almacenamiento en búfer controlado por eventos. Este modo se muestra en el [ejemplo CaptureSharedEventDriven.](capturesharedeventdriven.md)
+CaptureSharedTimerDriven muestra el almacenamiento en búfer controlado por temporizador. En este modo, el cliente debe esperar un período de tiempo (la mitad de la latencia, especificada por el valor del modificador -d, en milisegundos). Cuando el cliente se reactiva, a mitad del período de procesamiento, extrae el siguiente conjunto de muestras del motor. Antes de que cada procesamiento pase en el bucle de almacenamiento en búfer, el cliente debe averiguar la cantidad de datos de captura disponibles para que los datos no supere el búfer de captura. Los datos de audio que se capturan desde el dispositivo especificado se pueden procesar habilitando el almacenamiento en búfer controlado por eventos. Este modo se muestra en el [ejemplo CaptureSharedEventDriven.](capturesharedeventdriven.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ejemplos de SDK que usan las API de audio principales](sdk-samples-that-use-the-core-audio-apis.md)
+[Ejemplos del SDK que usan las API de audio principales](sdk-samples-that-use-the-core-audio-apis.md)
 </dt> </dl>
 
  

@@ -1,15 +1,15 @@
 ---
-description: La propiedad PKEY \_ AudioEndpoint FormFactor especifica el factor de forma del dispositivo de punto \_ de conexión de audio. El factor de forma indica los atributos físicos del dispositivo de punto de conexión de audio que el usuario manipula.
+description: La propiedad PKEY \_ AudioEndpoint \_ FormFactor especifica el factor de forma del dispositivo de punto de conexión de audio. El factor de forma indica los atributos físicos del dispositivo de punto de conexión de audio que el usuario manipula.
 ms.assetid: f49cb7da-3b50-47e2-90b4-1a885001b5d7
 title: PKEY_AudioEndpoint_FormFactor (Mmdeviceapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e76b53b91a03cda5e8484878f62c3c7a205e422f53ed647d29cca6435e0f14f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5833470e2a2848f9454f3b5eefbf852f452f033
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119018343"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164926"
 ---
 # <a name="pkey_audioendpoint_formfactor"></a>PKEY \_ AudioEndpoint \_ FormFactor
 
@@ -27,7 +27,7 @@ El **miembro uintVal** de la **estructura PROPVARIANT** contiene un valor de enu
 -   Auriculares
 -   Auricular
 -   UnknownDigitalPassthrough
--   Spdif
+-   SPDIF
 -   HDMI
 -   UnknownFormFactor
 
@@ -39,11 +39,11 @@ El **miembro uintVal** de la **estructura PROPVARIANT** contiene un valor de enu
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

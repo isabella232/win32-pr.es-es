@@ -4,12 +4,12 @@ description: Cuando un puntero del mouse mantiene el puntero sobre un elemento, 
 ms.assetid: E77B15D7-F0C9-41F7-8BE9-30260FA4BB0C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd735828675ca360cfa91aceefb2d76d34252a96aa7b5edb776e3d48a1fcdc5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a486407b8dafade1e3bba083c5a56f3a9be2adcf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117829095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165413"
 ---
 # <a name="how-to-use-hot-tracking-with-toolbars"></a>Uso de Hot-Tracking con barras de herramientas
 
@@ -29,7 +29,7 @@ Si desea que un mapa de bits de botón de la barra de herramientas cambie cuando
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación

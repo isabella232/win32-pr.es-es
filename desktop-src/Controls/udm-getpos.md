@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e92ca5fe5d902980560b6879ac7c345230056987308a1e390b0af351281eac62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8e78ad19289d85b93ebcb39a244a896ddb4f33f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120059785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165506"
 ---
 # <a name="udm_getpos-message"></a>Mensaje \_ GETPOS de UDM
 
@@ -39,11 +39,11 @@ Recupera la posición actual de un control hacia abajo con una precisión de 16 
 
 Si se realiza [**correctamente, hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) se establece en cero y [**loword**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) se establece en la posición actual del control. Si se produce un error, **HIWORD** se establece en un valor distinto de cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Al procesar este mensaje, el control de flechas actualiza su posición actual en función del título de la ventana del compañero. El control de arriba a abajo devuelve un error si no hay ninguna ventana de compañeros o si el título especifica un valor no válido o fuera del intervalo. Además, se establece una marca de error en hiWORD de la devolución si el control se crea sin el estilo [**\_ SETBUDDYINT de UDS,**](up-down-control-styles.md) aunque devuelve un valor de posición válido en el LOWORD de la devolución.
+Al procesar este mensaje, el control de flechas actualiza su posición actual en función del título de la ventana del compañero. El control de arriba a abajo devuelve un error si no hay ninguna ventana de compañeros o si el título especifica un valor no válido o fuera del intervalo. Además, se establece una marca de error en el HIWORD de la devolución si el control se crea sin el estilo [**\_ SETBUDDYINT de UDS,**](up-down-control-styles.md) aunque devuelve un valor de posición válido en el LOWORD de la devolución.
 
-Si se han habilitado valores de 32 bits para un control de arriba a abajo con [**UDM \_ SETRANGE32,**](udm-setrange32.md)este mensaje devuelve solo los 16 bits inferiores de la posición. Para recuperar la posición completa de 32 bits, use [**UDM \_ GETPOS32**](udm-getpos32.md).
+Si se han habilitado valores de 32 bits para un control de flechas con [**UDM \_ SETRANGE32,**](udm-setrange32.md)este mensaje devuelve solo los 16 bits inferiores de la posición. Para recuperar la posición completa de 32 bits, use [**UDM \_ GETPOS32**](udm-getpos32.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,11 +53,11 @@ Si se han habilitado valores de 32 bits para un control de arriba a abajo con [*
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

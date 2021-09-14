@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60499c960b7f2e496dc4317229865a8838013fc5d78c194072bee27e761ba4d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb32a72ca8ca5182e87e2c0346cbc44ab25300e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118408068"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165469"
 ---
 # <a name="udm_setrange-message"></a>Mensaje \_ SETRANGE de UDM
 
@@ -35,7 +35,7 @@ Establece las posiciones mínima y máxima (intervalo) de un control de flechas.
 *lParam* 
 </dt> <dd>
 
-LOWORD es un **valor short** que especifica la posición máxima para el control de arriba **a** abajo, y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es un valor short que especifica la posición mínima. [](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) Ninguna posición puede ser mayor que el valor MAXVAL de UD \_ o menor que el valor DE UD \_ MINVAL. Además, la diferencia entre las dos posiciones no puede superar LA \_ UD MAXVAL.
+LOWORD es un **valor short** que especifica la posición máxima para el control de arriba **a** abajo, y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es un valor [**short**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) que especifica la posición mínima. Ninguna posición puede ser mayor que el valor MAXVAL de UD \_ o menor que el valor DE UD \_ MINVAL. Además, la diferencia entre las dos posiciones no puede superar LA \_ UD MAXVAL.
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ LOWORD es un **valor short** que especifica la posición máxima para el control
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La posición máxima puede ser menor que la posición mínima. Al hacer clic en el botón de flecha arriba, la posición actual se acerca a la posición máxima y, al hacer clic en el botón de flecha hacia abajo, se desplaza hacia la posición mínima.
 
@@ -51,15 +51,15 @@ La posición máxima puede ser menor que la posición mínima. Al hacer clic en 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

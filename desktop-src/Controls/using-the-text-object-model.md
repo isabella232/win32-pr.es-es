@@ -1,19 +1,19 @@
 ---
 title: Usar el modelo de objetos de texto
-description: Esta sección contiene temas que muestran varios aspectos del uso del modelo de objetos de texto (TOM).
+description: Esta sección contiene temas que muestran varios aspectos del uso del Modelo de objetos de texto (TOM).
 ms.assetid: VS|Controls|~\controls\richedit\textobjectmodel\usingthetextobjectmodel.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 125b9bc17993449abffb7bb7cbc7f749652696bcd2555fbb2d8aeca3a0aa7736
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 30addcd10ac521a0c4fd8771eb6c938f7649ab40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117828546"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165290"
 ---
 # <a name="using-the-text-object-model"></a>Usar el modelo de objetos de texto
 
-Esta sección contiene temas que muestran varios aspectos del uso del modelo de objetos de texto (TOM).
+Esta sección contiene temas que muestran varios aspectos del uso del Modelo de objetos de texto (TOM).
 
 ## <a name="in-this-section"></a>En esta sección
 

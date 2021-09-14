@@ -4,12 +4,12 @@ ms.assetid: 0061feb6-e1a0-4fcd-8f80-954087c799d7
 title: Códigos de error del sistema (1000-1299) (WinError.h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: dfda2e29a6b75acd683842509229f3bc52d7e8d3599855b01d8376f5a7daf2ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 592bd5c6653526d87fed05d6ec76f739355ae359
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119076339"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164605"
 ---
 # <a name="system-error-codes-1000-1299"></a>Códigos de error del sistema (1000-1299)
 
@@ -33,7 +33,7 @@ Recursividad demasiado profunda; la pila desbordada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_MESSAGE"></span><span id="error_invalid_message"></span>**MENSAJE \_ DE ERROR NO \_ VÁLIDO**
+<span id="ERROR_INVALID_MESSAGE"></span><span id="error_invalid_message"></span>**MENSAJE DE \_ ERROR \_ NO VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1002 (0x3EA)
@@ -709,7 +709,7 @@ Este servicio se ejecuta en el mismo proceso que el administrador de control de 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_RECOVERY_PROGRAM"></span><span id="error_no_recovery_program"></span>**ERROR \_ NO HAY PROGRAMA DE \_ \_ RECUPERACIÓN**
+<span id="ERROR_NO_RECOVERY_PROGRAM"></span><span id="error_no_recovery_program"></span>**ERROR \_ SIN PROGRAMA DE \_ \_ RECUPERACIÓN**
 </dt> <dd> <dl> <dt>
 
 1082 (0x43A)
@@ -834,12 +834,12 @@ No se pudo particionar la cinta.
 
 
 
-Al acceder a una nueva cinta de una partición multivolumen, el tamaño de bloque actual es incorrecto.
+Al acceder a una nueva cinta de una partición multivolumen, el tamaño del bloque actual es incorrecto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_NOT_PARTITIONED"></span><span id="error_device_not_partitioned"></span>**ERROR \_ DISPOSITIVO \_ NO \_ PARTICIONADO**
+<span id="ERROR_DEVICE_NOT_PARTITIONED"></span><span id="error_device_not_partitioned"></span>**ERROR \_ EL DISPOSITIVO NO TIENE \_ \_ PARTICIONES**
 </dt> <dd> <dl> <dt>
 
 1107 (0x453)
@@ -878,7 +878,7 @@ No se puede descargar el medio.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MEDIA_CHANGED"></span><span id="error_media_changed"></span>**MEDIOS \_ DE ERROR \_ CAMBIADOS**
+<span id="ERROR_MEDIA_CHANGED"></span><span id="error_media_changed"></span>**SE HA \_ CAMBIADO EL MEDIO DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1110 (0x456)
@@ -891,7 +891,7 @@ Es posible que el medio de la unidad haya cambiado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BUS_RESET"></span><span id="error_bus_reset"></span>**ERROR \_ RESTABLECIMIENTO DE \_ BUS**
+<span id="ERROR_BUS_RESET"></span><span id="error_bus_reset"></span>**ERROR \_ DE RESTABLECIMIENTO DE \_ BUS**
 </dt> <dd> <dl> <dt>
 
 1111 (0x457)
@@ -899,12 +899,12 @@ Es posible que el medio de la unidad haya cambiado.
 
 
 
-Se ha restablecido el bus de E/S.
+Se restablecró el bus de E/S.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_MEDIA_IN_DRIVE"></span><span id="error_no_media_in_drive"></span>**ERROR \_ SIN MEDIOS EN LA \_ \_ \_ UNIDAD**
+<span id="ERROR_NO_MEDIA_IN_DRIVE"></span><span id="error_no_media_in_drive"></span>**ERROR \_ NO HAY MEDIOS EN LA \_ \_ \_ UNIDAD**
 </dt> <dd> <dl> <dt>
 
 1112 (0x458)
@@ -930,7 +930,7 @@ No existe ninguna asignación para el carácter Unicode en la página de código
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DLL_INIT_FAILED"></span><span id="error_dll_init_failed"></span>**ERROR \_ DLL \_ INIT \_ FAILED**
+<span id="ERROR_DLL_INIT_FAILED"></span><span id="error_dll_init_failed"></span>**ERROR \_ AL \_ INIT DE DLL \_**
 </dt> <dd> <dl> <dt>
 
 1114 (0x45A)
@@ -943,7 +943,7 @@ Error en una rutina de inicialización de la biblioteca de vínculos dinámicos 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHUTDOWN_IN_PROGRESS"></span><span id="error_shutdown_in_progress"></span>**ERROR \_ SHUTDOWN \_ IN \_ PROGRESS**
+<span id="ERROR_SHUTDOWN_IN_PROGRESS"></span><span id="error_shutdown_in_progress"></span>**ERROR \_ DE APAGADO EN \_ \_ CURSO**
 </dt> <dd> <dl> <dt>
 
 1115 (0x45B)
@@ -964,12 +964,12 @@ Hay un apagado del sistema en curso.
 
 
 
-No se pudo anular el apagado del sistema porque no había ningún apagado en curso.
+No se puede anular el apagado del sistema porque no hay ningún apagado en curso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IO_DEVICE"></span><span id="error_io_device"></span>**ERROR \_ DISPOSITIVO DE \_ E/S**
+<span id="ERROR_IO_DEVICE"></span><span id="error_io_device"></span>**ERROR \_ DE DISPOSITIVO DE \_ E/S**
 </dt> <dd> <dl> <dt>
 
 1117 (0x45D)
@@ -982,7 +982,7 @@ La solicitud no se pudo realizar debido a un error de dispositivo de E/S.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SERIAL_NO_DEVICE"></span><span id="error_serial_no_device"></span>**ERROR \_ SERIE \_ SIN \_ DISPOSITIVO**
+<span id="ERROR_SERIAL_NO_DEVICE"></span><span id="error_serial_no_device"></span>**ERROR \_ SERIAL \_ NO \_ DEVICE**
 </dt> <dd> <dl> <dt>
 
 1118 (0x45E)
@@ -1016,7 +1016,7 @@ No se puede abrir un dispositivo que comparte una solicitud de interrupción (IR
 
 
 
-Una operación de E/S serie se completó con otra escritura en el puerto serie. El CONTADOR XOFF SERIE de IOCTL \_ \_ \_ alcanzó cero).
+Otra escritura en el puerto serie completó una operación de E/S en serie. El CONTADOR IOCTL \_ SERIAL \_ XOFF \_ llegó a cero).
 
 
 </dt> </dl> </dd> <dt>
@@ -1055,12 +1055,12 @@ No se encontró ninguna marca de dirección de identificador en el disquete.
 
 
 
-Error de coincidencia entre el campo id. del sector del disquete y la dirección de seguimiento del controlador de disquete.
+Error de coincidencia entre el campo id. del sector del disquete y la dirección de la pista del controlador de disquete.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FLOPPY_UNKNOWN_ERROR"></span><span id="error_floppy_unknown_error"></span>**ERROR \_ DE DISQUETE ERROR \_ \_ DESCONOCIDO**
+<span id="ERROR_FLOPPY_UNKNOWN_ERROR"></span><span id="error_floppy_unknown_error"></span>**ERROR \_ ERROR DISQUETE \_ \_ DESCONOCIDO**
 </dt> <dd> <dl> <dt>
 
 1124 (0x464)
@@ -1073,7 +1073,7 @@ El controlador de disquete informó de un error que el controlador de disquete n
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FLOPPY_BAD_REGISTERS"></span><span id="error_floppy_bad_registers"></span>**REGISTROS \_ DE ERRORES DE \_ \_ DISQUETES NO SE PUEDEN REGISTRAR**
+<span id="ERROR_FLOPPY_BAD_REGISTERS"></span><span id="error_floppy_bad_registers"></span>**ERROR \_ DE REGISTROS DE \_ \_ DISQUETES CON ERRORES**
 </dt> <dd> <dl> <dt>
 
 1125 (0x465)
@@ -1094,12 +1094,12 @@ El controlador de disquete devolvió resultados incoherentes en sus registros.
 
 
 
-Al acceder al disco duro, se ha podido realizar una operación de reenlazado, incluso después de los reintentos.
+Al acceder al disco duro, no se pudo realizar una operación de reescalado, incluso después de los reintentos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DISK_OPERATION_FAILED"></span><span id="error_disk_operation_failed"></span>**ERROR EN \_ LA OPERACIÓN \_ DE DISCO \_**
+<span id="ERROR_DISK_OPERATION_FAILED"></span><span id="error_disk_operation_failed"></span>**ERROR \_ OPERACIÓN DE DISCO CON \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1127 (0x467)
@@ -1107,7 +1107,7 @@ Al acceder al disco duro, se ha podido realizar una operación de reenlazado, in
 
 
 
-Al acceder al disco duro, se ha podido realizar una operación de disco incluso después de los reintentos.
+Al acceder al disco duro, no se pudo realizar una operación de disco incluso después de reintentos.
 
 
 </dt> </dl> </dd> <dt>
@@ -1164,7 +1164,7 @@ Se ha detectado una posible condición de interbloqueo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MAPPED_ALIGNMENT"></span><span id="error_mapped_alignment"></span>**ALINEACIÓN \_ ASIGNADA DE \_ ERROR**
+<span id="ERROR_MAPPED_ALIGNMENT"></span><span id="error_mapped_alignment"></span>**ALINEACIÓN \_ ASIGNADA DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 1132 (0x46C)
@@ -1172,7 +1172,7 @@ Se ha detectado una posible condición de interbloqueo.
 
 
 
-La dirección base o el desplazamiento de archivo especificado no tienen la alineación adecuada.
+La dirección base o el desplazamiento del archivo especificado no tienen la alineación adecuada.
 
 
 </dt> </dl> </dd> <dt>
@@ -1185,12 +1185,12 @@ La dirección base o el desplazamiento de archivo especificado no tienen la alin
 
 
 
-Otra aplicación o controlador vetó un intento de cambiar el estado de energía del sistema.
+Otro controlador o aplicación vetó un intento de cambiar el estado de energía del sistema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SET_POWER_STATE_FAILED"></span><span id="error_set_power_state_failed"></span>**ERROR EN \_ EL ESTADO DE ENERGÍA DEL CONJUNTO DE \_ \_ \_ ERRORES**
+<span id="ERROR_SET_POWER_STATE_FAILED"></span><span id="error_set_power_state_failed"></span>**ERROR AL \_ ESTABLECER EL ESTADO DE \_ \_ \_ ENERGÍA**
 </dt> <dd> <dl> <dt>
 
 1141 (0x475)
@@ -1606,7 +1606,7 @@ Se encontró un archivo, pero puede que no sea el correcto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_JOURNAL_ENTRY_DELETED"></span><span id="error_journal_entry_deleted"></span>**ENTRADA \_ DEL DIARIO DE ERRORES \_ \_ ELIMINADA**
+<span id="ERROR_JOURNAL_ENTRY_DELETED"></span><span id="error_journal_entry_deleted"></span>**ENTRADA DEL \_ DIARIO \_ DE ERRORES \_ ELIMINADA**
 </dt> <dd> <dl> <dt>
 
 1181 (0x49D)
@@ -1723,7 +1723,7 @@ No se puede abrir el perfil de conexión de red.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_PROFILE"></span><span id="error_bad_profile"></span>**ERROR \_ PERFIL \_ DE ERROR**
+<span id="ERROR_BAD_PROFILE"></span><span id="error_bad_profile"></span>**ERROR \_ PERFIL NO ESTÁ \_ BIEN**
 </dt> <dd> <dl> <dt>
 
 1206 (0x4B6)
@@ -1788,7 +1788,7 @@ El formato del nombre de equipo especificado no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_EVENTNAME"></span><span id="error_invalid_eventname"></span>**\_ERRORNOMBREDE \_ EVENTO NO VÁLIDO**
+<span id="ERROR_INVALID_EVENTNAME"></span><span id="error_invalid_eventname"></span>**ERROR \_ NOMBREDE \_ EVENTO NO VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1211 (0x4BB)
@@ -1879,7 +1879,7 @@ El formato del nombre del mensaje especificado no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_MESSAGEDEST"></span><span id="error_invalid_messagedest"></span>**ERROR \_ INVALID \_ MESSAGEDEST**
+<span id="ERROR_INVALID_MESSAGEDEST"></span><span id="error_invalid_messagedest"></span>**ERROR \_ \_ MESSAGEDEST NO VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1218 (0x4C2)
@@ -1900,7 +1900,7 @@ El formato del destino del mensaje especificado no es válido.
 
 
 
-No se permiten varias conexiones a un servidor o recurso compartido por el mismo usuario, con más de un nombre de usuario. Desconecte todas las conexiones anteriores al servidor o al recurso compartido e inténtelo de nuevo.
+No se permiten varias conexiones a un servidor o recurso compartido por el mismo usuario, con más de un nombre de usuario. Desconecte todas las conexiones anteriores al servidor o recurso compartido e inténtelo de nuevo.
 
 
 </dt> </dl> </dd> <dt>
@@ -2017,7 +2017,7 @@ El punto de conexión de transporte de red ya tiene una dirección asociada.
 
 
 
-Todavía no se ha asociado una dirección con el punto de conexión de red.
+Todavía no se ha asociado una dirección al punto de conexión de red.
 
 
 </dt> </dl> </dd> <dt>
@@ -2087,7 +2087,7 @@ No se puede acceder a la ubicación de red. Para obtener información sobre la s
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PORT_UNREACHABLE"></span><span id="error_port_unreachable"></span>**PUERTO \_ DE ERROR \_ INACCESIBLE**
+<span id="ERROR_PORT_UNREACHABLE"></span><span id="error_port_unreachable"></span>**PUERTO DE ERROR \_ \_ INACCESIBLE**
 </dt> <dd> <dl> <dt>
 
 1234 (0x4D2)
@@ -2139,7 +2139,7 @@ No se pudo completar la operación. Se debe realizar un reintento.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CONNECTION_COUNT_LIMIT"></span><span id="error_connection_count_limit"></span>**LÍMITE DE \_ RECUENTO \_ DE \_ CONEXIONES DE ERROR**
+<span id="ERROR_CONNECTION_COUNT_LIMIT"></span><span id="error_connection_count_limit"></span>**LÍMITE DE \_ RECUENTO \_ DE CONEXIONES DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1238 (0x4D6)
@@ -2295,7 +2295,7 @@ El sitio especificado no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DOMAIN_CONTROLLER_EXISTS"></span><span id="error_domain_controller_exists"></span>**EXISTE \_ EL CONTROLADOR DE DOMINIO DE \_ \_ ERROR**
+<span id="ERROR_DOMAIN_CONTROLLER_EXISTS"></span><span id="error_domain_controller_exists"></span>**ERROR \_ DOMAIN \_ CONTROLLER \_ EXISTS**
 </dt> <dd> <dl> <dt>
 
 1250 (0x4E2)
@@ -2334,7 +2334,7 @@ El marco de directivas de grupo debe llamar a la extensión incluso si no hay ni
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_USER_PROFILE"></span><span id="error_bad_user_profile"></span>**PERFIL \_ DE USUARIO CON \_ ERRORES \_**
+<span id="ERROR_BAD_USER_PROFILE"></span><span id="error_bad_user_profile"></span>**PERFIL \_ DE USUARIO CON \_ ERROR \_**
 </dt> <dd> <dl> <dt>
 
 1253 (0x4E5)
@@ -2516,7 +2516,7 @@ La máquina está bloqueada y no se puede apagar sin la opción forzar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CALLBACK_SUPPLIED_INVALID_DATA"></span><span id="error_callback_supplied_invalid_data"></span>**DEVOLUCIÓN \_ DE LLAMADA DE ERROR PROPORCIONADO DATOS NO \_ \_ \_ VÁLIDOS**
+<span id="ERROR_CALLBACK_SUPPLIED_INVALID_DATA"></span><span id="error_callback_supplied_invalid_data"></span>**DATOS NO \_ \_ VÁLIDOS PROPORCIONADOS POR LA DEVOLUCIÓN \_ DE LLAMADA DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1273 (0x4F9)
@@ -2524,12 +2524,12 @@ La máquina está bloqueada y no se puede apagar sin la opción forzar.
 
 
 
-Una devolución de llamada definida por la aplicación proporcionó datos no válidos cuando se llamó a .
+Una devolución de llamada definida por la aplicación proporcionó datos no válidos cuando se llama a .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYNC_FOREGROUND_REFRESH_REQUIRED"></span><span id="error_sync_foreground_refresh_required"></span>**ACTUALIZACIÓN DE \_ PRIMER PLANO DE SINCRONIZACIÓN DE ERRORES \_ \_ \_ NECESARIA**
+<span id="ERROR_SYNC_FOREGROUND_REFRESH_REQUIRED"></span><span id="error_sync_foreground_refresh_required"></span>**ERROR \_ SYNC \_ FOREGROUND \_ REFRESH \_ REQUIRED**
 </dt> <dd> <dl> <dt>
 
 1274 (0x4FA)
@@ -2568,7 +2568,7 @@ Una biblioteca de vínculos dinámicos (DLL) hace referencia a un módulo que no
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ACCESS_DISABLED_WEBBLADE"></span><span id="error_access_disabled_webblade"></span>**ACCESO \_ DE ERROR DESHABILITADO \_ \_ WEBBLADE**
+<span id="ERROR_ACCESS_DISABLED_WEBBLADE"></span><span id="error_access_disabled_webblade"></span>**ERROR \_ ACCESS \_ DISABLED \_ WEBBLADE**
 </dt> <dd> <dl> <dt>
 
 1277 (0x4FD)
@@ -2607,7 +2607,7 @@ Error en la recuperación de una transacción.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ALREADY_FIBER"></span><span id="error_already_fiber"></span>**ERROR \_ YA DE \_ FIBRA**
+<span id="ERROR_ALREADY_FIBER"></span><span id="error_already_fiber"></span>**ERROR \_ YA FIBRA \_**
 </dt> <dd> <dl> <dt>
 
 1280 (0x500)
@@ -2628,7 +2628,7 @@ El subproceso actual ya se ha convertido en una fibra.
 
 
 
-El subproceso actual ya se ha convertido a partir de una fibra.
+El subproceso actual ya se ha convertido de una fibra.
 
 
 </dt> </dl> </dd> <dt>
@@ -2641,7 +2641,7 @@ El subproceso actual ya se ha convertido a partir de una fibra.
 
 
 
-El sistema detectó una saturación de un búfer basado en pila en esta aplicación. Esta saturación podría permitir que un usuario malintencionado obtenga el control de esta aplicación.
+El sistema detectó una saturación de un búfer basado en pila en esta aplicación. Esta saturación podría permitir que un usuario malintencionado tomara el control de esta aplicación.
 
 
 </dt> </dl> </dd> <dt>
@@ -2672,7 +2672,7 @@ Error al intentar realizar una operación en un objeto de depuración porque el 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DELAY_LOAD_FAILED"></span><span id="error_delay_load_failed"></span>**ERROR DE \_ CARGA \_ RETRASADA \_**
+<span id="ERROR_DELAY_LOAD_FAILED"></span><span id="error_delay_load_failed"></span>**ERROR AL \_ RETRASAR \_ LA CARGA \_**
 </dt> <dd> <dl> <dt>
 
 1285 (0x505)
@@ -2680,7 +2680,7 @@ Error al intentar realizar una operación en un objeto de depuración porque el 
 
 
 
-Error al intentar retrasar la carga de .dll u obtener una dirección de función en un .dll de carga retrasada.
+Error al intentar retrasar la carga .dll una dirección de función en un .dll de carga retrasada.
 
 
 </dt> </dl> </dd> <dt>
@@ -2706,12 +2706,12 @@ Error al intentar retrasar la carga de .dll u obtener una dirección de función
 
 
 
-No existe información suficiente para identificar la causa del error.
+Existe información insuficiente para identificar la causa del error.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_CRUNTIME_PARAMETER"></span><span id="error_invalid_cruntime_parameter"></span>**ERROR \_ INVALID \_ CRUNTIME \_ PARAMETER**
+<span id="ERROR_INVALID_CRUNTIME_PARAMETER"></span><span id="error_invalid_cruntime_parameter"></span>**ERROR \_ PARÁMETRO \_ CRUNTIME \_ NO VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1288 (0x508)
@@ -2745,7 +2745,7 @@ La operación se produjo más allá de la longitud de datos válida del archivo.
 
 
 
-Error en el inicio del servicio, ya que uno o varios servicios del mismo proceso tienen una configuración de tipo SID de servicio incompatible. Un servicio con un tipo de SID de servicio restringido solo puede coexistir en el mismo proceso con otros servicios con un tipo de SID restringido. Si el tipo de SID de servicio para este servicio se acaba de configurar, el proceso de hospedaje debe reiniciarse para iniciar este servicio.
+Se ha producido un error en el inicio del servicio, ya que uno o varios servicios del mismo proceso tienen una configuración de tipo SID de servicio incompatible. Un servicio con un tipo de SID de servicio restringido solo puede coexistir en el mismo proceso con otros servicios con un tipo de SID restringido. Si el tipo de SID de servicio para este servicio se acaba de configurar, el proceso de hospedaje debe reiniciarse para iniciar este servicio.
 
 En Windows Server 2003 y Windows XP, un servicio sin restricciones no puede coexistir en el mismo proceso con otros servicios. El servicio con el tipo de SID de servicio sin restricciones debe moverse a un proceso de propiedad para iniciar este servicio.
 
@@ -2804,7 +2804,7 @@ El cliente de notificación de servicio está demasiado lejos del estado actual 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DISK_QUOTA_EXCEEDED"></span><span id="error_disk_quota_exceeded"></span>**CUOTA \_ DE DISCO DE ERROR \_ \_ SUPERADA**
+<span id="ERROR_DISK_QUOTA_EXCEEDED"></span><span id="error_disk_quota_exceeded"></span>**SE \_ SUPERÓ \_ LA CUOTA DE DISCO \_ DE ERROR**
 </dt> <dd> <dl> <dt>
 
 1295 (0x50F)
@@ -2830,7 +2830,7 @@ Error en la operación de archivo solicitada porque la directiva de almacenamien
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INCOMPATIBLE_SERVICE_PRIVILEGE"></span><span id="error_incompatible_service_privilege"></span>**PRIVILEGIO DE \_ SERVICIO INCOMPATIBLE \_ DE \_ ERROR**
+<span id="ERROR_INCOMPATIBLE_SERVICE_PRIVILEGE"></span><span id="error_incompatible_service_privilege"></span>**ERROR \_ PRIVILEGIO DE SERVICIO INCOMPATIBLE \_ \_**
 </dt> <dd> <dl> <dt>
 
 1297 (0x511)
@@ -2878,11 +2878,11 @@ Indica que un identificador de seguridad determinado no se puede asignar como et
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

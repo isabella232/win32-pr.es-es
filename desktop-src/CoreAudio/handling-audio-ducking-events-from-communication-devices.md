@@ -4,22 +4,22 @@ ms.assetid: 1b92574e-7cde-49c0-a68e-223492412361
 title: Consideraciones de implementación para notificaciones de afijo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f61d7e67bd456e962442f62f59c3119c756258aadd75334e7736cbc69fba0867
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3de07ea23b7cdc8d726ab68a5a6554bf1713a921
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164973"
 ---
 # <a name="implementation-considerations-for-ducking-notifications"></a>Consideraciones de implementación para notificaciones de afijo
 
 La [experiencia de desaconsuelo](stream-attenuation.md) predeterminada proporcionada por el sistema achaca todos los flujos que no son de comunicación disponibles en el sistema cuando se abre un flujo de comunicación. Una aplicación multimedia puede invalidar el control predeterminado si sabe cuándo se inicia y finaliza la sesión de comunicación.
 
-Considere el escenario implementado por la aplicación multimedia en [el ejemplo DesaingMediaPlayer.](duckingmediaplayer.md) La aplicación pausa la secuencia de audio que está reproduciendo cuando recibe una notificación de agacha y continúa la reproducción cuando recibe una notificación de desaprobación. Los eventos de pausa y continuación se reflejan en la interfaz de usuario de la aplicación multimedia. Esto se admite a través de dos mensajes de ventana definidos por la aplicación, WM APP SESSION DUCKED y \_ WM APP \_ SESSION \_ \_ \_ \_ UNDUCKED. Las notificaciones de afijo se reciben de forma asincrónica en segundo plano y la aplicación multimedia no debe bloquear el subproceso de notificación para procesar los mensajes de ventana. Los mensajes de ventana se deben procesar en el subproceso de la interfaz de usuario.
+Considere el escenario implementado por la aplicación multimedia en [el ejemplo DesaingMediaPlayer.](duckingmediaplayer.md) La aplicación pausa la secuencia de audio que está reproduciendo cuando recibe una notificación de agacha y continúa la reproducción cuando recibe una notificación de desaprobación. Los eventos de pausa y continuación se reflejan en la interfaz de usuario de la aplicación multimedia. Esto se admite a través de dos mensajes de ventana definidos por la aplicación, WM APP SESSION DUCKED y \_ WM APP \_ SESSION \_ \_ \_ \_ UNDUCKED. Las notificaciones de afijo se reciben de forma asincrónica en segundo plano y la aplicación multimedia no debe bloquear el subproceso de notificación para procesar los mensajes de ventana. Los mensajes de ventana deben procesarse en el subproceso de la interfaz de usuario.
 
 El comportamiento de afijo funciona a través de un mecanismo de notificación. Para proporcionar una experiencia personalizada, la aplicación multimedia debe implementar la [**interfaz IAudioVolumeDuckNotification**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) y registrar la implementación con el sistema de audio. Tras el registro correcto, la aplicación multimedia recibe notificaciones de eventos en forma de devoluciones de llamada a través de los métodos de la interfaz . El administrador de sesión que administra la sesión de comunicación llama a [**IAudioVolumeDuckNotification::OnVolumeDuckNotification**](/windows/desktop/api/AudioPolicy/nf-audiopolicy-iaudiovolumeducknotification-onvolumeducknotification) cuando se abre el flujo de comunicación y, a continuación, llama a [**IAudioVolumeDuckNotification::OnVolumeUnduckNotification**](/windows/desktop/api/AudioPolicy/nf-audiopolicy-iaudiovolumeducknotification-onvolumeunducknotification) cuando la secuencia se cierra en el dispositivo de comunicación.
 
-El código siguiente muestra una implementación de ejemplo de [**la interfaz IAudioVolumeDuckNotification.**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) Para obtener la definición de CMediaPlayer::D AptOut, consulte Getting Getting Ducking Events from a Communication Device.
+El código siguiente muestra una implementación de ejemplo de [**la interfaz IAudioVolumeDuckNotification.**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) Para obtener la definición de CMediaPlayer::D optOut, consulte Getting Getting Ducking Events from a Communication Device.
 
 
 ```C++
@@ -129,7 +129,7 @@ IFACEMETHODIMP_(ULONG) CMediaPlayer::Release()
 [Experiencia de afición predeterminada](stream-attenuation.md)
 </dt> <dt>
 
-[Deshabilitación de la experiencia de afición predeterminada](disabling-the-ducking-experience.md)
+[Deshabilitación de la experiencia predeterminada de afijo](disabling-the-ducking-experience.md)
 </dt> <dt>
 
 [Proporcionar un comportamiento de afijo personalizado](providing-a-custom-ducking-experience.md)

@@ -3,7 +3,7 @@ title: TVN_SINGLEEXPAND de notificación (Commctrl.h)
 description: Enviado por un control de vista de árbol con el estilo SINGLEEXPAND de TVS cuando el usuario abre o cierra un elemento de árbol con un solo \_ clic del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: ae738237-172a-400b-b9fe-33832224e299
 keywords:
-- TVN_SINGLEEXPAND de notificación Windows controles
+- TVN_SINGLEEXPAND código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61cd83dedbe16bad81c340f35a176b18804de6b7db6847fb65bc847160a2ff8a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 976c0e8acfee1f024e4ee7f88d9f745e4029ec82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120132205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165529"
 ---
 # <a name="tvn_singleexpand-notification-code"></a>Código de notificación DE TVN \_ SINGLEEXPAND
 
@@ -60,7 +60,7 @@ Devuelve TVNRET \_ DEFAULT para permitir que se produzca el comportamiento prede
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para omitir el procesamiento predeterminado de los elementos seleccionados y no seleccionados, devuelva TVNRET \_ SKIPOLD y TVNRET SKIPNEW combinándolos con un \_ or lógico.
 
@@ -74,7 +74,7 @@ Este código de notificación solo se envía mediante controles de vista de árb
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,15 +1,15 @@
 ---
-description: Esta aplicación de ejemplo, que muestra el almacenamiento en búfer controlado por eventos, usa core Audio API para representar datos de audio en un dispositivo de salida especificado por el usuario.
+description: Esta aplicación de ejemplo, que muestra el almacenamiento en búfer controlado por eventos, usa las API de audio principal para representar datos de audio en un dispositivo de salida especificado por el usuario.
 ms.assetid: 3a2e3fa6-2d6a-4ab0-a531-d1c968458e96
 title: RenderExclusiveEventDriven
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c23213e1e60d0fdf77de67a91ea3bba3c928a51f9e562876dd1a4e018595dfb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 75553496219d0a4ddaf6685089de802e034f94cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119216555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164837"
 ---
 # <a name="renderexclusiveeventdriven"></a>RenderExclusiveEventDriven
 
@@ -50,7 +50,7 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Ubicación    | Ruta de acceso o dirección URL                                                                                                    |
+| Location    | Ruta de acceso o dirección URL                                                                                                    |
 |-------------|-------------------------------------------------------------------------------------------------------------|
 | Windows SDK | \\Archivos de \\ programa Sdk de Microsoft Windows ejemplos de audio multimedia \\ \\ v7.0 \\ \\ \\ \\ RenderExclusiveEventDriven \\ ... |
 
@@ -95,7 +95,7 @@ Si la aplicación se ejecuta sin argumentos, enumera los dispositivos disponible
 
 El ejemplo RenderExclusiveEventDriven muestra el almacenamiento en búfer controlado por eventos. En el ejemplo se muestra cómo:
 
--   Cree una instancia de un cliente de audio, configúrelo para que se ejecute en modo exclusivo y habilite el almacenamiento en búfer controlado por eventos estableciendo la marca **AUDCLNT \_ STREAMFLAGS \_ EVENTCALLBACK** en la llamada a [**IAudioClient::Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize).
+-   Cree una instancia de un cliente de audio, configúrelo para que se ejecute en modo exclusivo y habilite el almacenamiento en búfer controlado por eventos estableciendo la marca **\_ \_ EVENTCALLBACK AUDCLNT STREAMFLAGS** en la llamada a [**IAudioClient::Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize).
 -   Asocie el cliente con los ejemplos que están listos para representarse proporcionando un identificador de eventos al sistema mediante una llamada al [**método IAudioClient::SetEventHandle.**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-seteventhandle)
 -   Cree un subproceso de representación para procesar ejemplos del motor de audio.
 -   Alinee los búferes correctamente en un límite de 128 bytes antes de enviarlos al dispositivo. Esto se hace ajustando la periodicidad del motor.

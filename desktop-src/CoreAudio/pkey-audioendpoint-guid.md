@@ -4,12 +4,12 @@ ms.assetid: d3119504-9b6a-47b8-b3c6-15cb329929cb
 title: PKEY_AudioEndpoint_GUID (Mmdeviceapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 357531a76316381e9ae39f867a5b6cfa0a055a04f41b0cba5fab95fcccbcc7fb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 45405cd2350777e535b50859e77aa56755d191fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120104365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164913"
 ---
 # <a name="pkey_audioendpoint_guid"></a>PKEY \_ AudioEndpoint \_ GUID
 
@@ -46,11 +46,11 @@ Para obtener un ejemplo de código que usa la propiedad PKEY AudioEndpoint GUID,
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

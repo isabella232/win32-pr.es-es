@@ -4,12 +4,12 @@ ms.assetid: 667c3659-69ae-469d-9ae0-e32a189cbc71
 title: Controles de volumen de punto de conexión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a08ce6bc406d928f10f705b5a76e4f6eb47d98cce659d782de3e2c7e7f07c5a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57be477a86a1de4584a7590d20d4e0199e782f10
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077609"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165002"
 ---
 # <a name="endpoint-volume-controls"></a>Controles de volumen de punto de conexión
 
@@ -146,7 +146,7 @@ La implementación del [**método OnNotify**](/windows/desktop/api/Endpointvolum
 
 Una aplicación llama al método [**IAudioEndpointVolume::RegisterControlChangeNotify**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-registercontrolchangenotify) para registrar su [**interfaz IAudioEndpointVolumeCallback**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolumecallback) para recibir notificaciones. Cuando la aplicación ya no requiere notificaciones, llama al método [**IAudioEndpointVolume::UnregisterControlChangeNotify**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-unregistercontrolchangenotify) para eliminar el registro.
 
-El ejemplo de código siguiente es una aplicación Windows que llama a los métodos [**RegisterControlChangeNotify**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-registercontrolchangenotify) y [**UnregisterControlChangeNotify**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-unregistercontrolchangenotify) para registrar y anular el registro de la clase CAudioEndpointVolumeCallback en el ejemplo de código anterior:
+El ejemplo de código siguiente es una aplicación de Windows que llama a los métodos [**RegisterControlChangeNotify**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-registercontrolchangenotify) y [**UnregisterControlChangeNotify**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-unregistercontrolchangenotify) para registrar y anular el registro de la clase CAudioEndpointVolumeCallback en el ejemplo de código anterior:
 
 
 ```C++

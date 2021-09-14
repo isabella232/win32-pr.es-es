@@ -4,22 +4,22 @@ description: Una aplicación puede enviar mensajes para recuperar o buscar texto
 ms.assetid: 95D88F9A-3DD1-48E4-B6FF-3168F2D25846
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91018dfd2c13c589530b9e3d5abe5399a8128bb5904e66c5aceacb692ae0d0ee
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2b54619e1ce5952b7c0d06527c6aca2402a4e714
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120132085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165409"
 ---
 # <a name="how-to-use-rich-edit-text-operations"></a>Cómo usar operaciones de edición de texto enriquecido
 
 Una aplicación puede enviar mensajes para recuperar o buscar texto en un control de edición enriquecido. Puede recuperar el texto seleccionado o un intervalo de texto especificado.
 
-Para obtener el texto seleccionado en un control de edición enriquecido, use el [**mensaje EM \_ GETSELTEXT.**](em-getseltext.md) El texto se copia en la matriz de caracteres especificada. Debe asegurarse de que la matriz es lo suficientemente grande como para contener el texto seleccionado más un carácter nulo de terminación.
+Para obtener el texto seleccionado en un control de edición enriquecido, use el [**mensaje EM \_ GETSELTEXT.**](em-getseltext.md) El texto se copia en la matriz de caracteres especificada. Debe asegurarse de que la matriz sea lo suficientemente grande como para contener el texto seleccionado más un carácter nulo de terminación.
 
-Para recuperar un intervalo de texto especificado, use el [**mensaje EM \_ GETTEXTRANGE.**](em-gettextrange.md) La [**estructura TEXTRANGE**](/windows/win32/api/richedit/ns-richedit-textrangea) usada con este mensaje especifica el intervalo de texto que se va a recuperar y apunta a una matriz de caracteres que recibe el texto. De nuevo, la aplicación debe asegurarse de que la matriz sea lo suficientemente grande para el texto especificado más un carácter nulo de terminación.
+Para recuperar un intervalo de texto especificado, use el [**\_ mensaje EM GETTEXTRANGE.**](em-gettextrange.md) La [**estructura TEXTRANGE**](/windows/win32/api/richedit/ns-richedit-textrangea) utilizada con este mensaje especifica el intervalo de texto que se va a recuperar y apunta a una matriz de caracteres que recibe el texto. Aquí, de nuevo, la aplicación debe asegurarse de que la matriz sea lo suficientemente grande para el texto especificado más un carácter nulo de terminación.
 
-Puede buscar una cadena en un control de edición enriquecido mediante los mensajes [**EM \_ FINDTEXT**](em-findtext.md) o [**EM \_ FINDTEXTEX,**](em-findtextex.md) o sus equivalentes Unicode, [**EM \_ FINDTEXTW**](em-findtextw.md) y [**EM \_ FINDTEXTEXW**](em-findtextexw.md). La [**estructura FINDTEXT**](/windows/win32/api/richedit/ns-richedit-findtexta) que se usa con las versiones no siguientes especifica el intervalo de texto que se va a buscar y la cadena que se va a buscar. Las versiones extendidas usan una estructura [**FINDTEXTEX,**](/windows/desktop/api/Richedit/ns-richedit-findtextexa) que especifica la misma información y también recibe los puntos inicial y final del intervalo de caracteres del texto encontrado. También puede especificar opciones como si la búsqueda distingue mayúsculas de minúsculas.
+Puede buscar una cadena en un control de edición enriquecido mediante los mensajes [**EM \_ FINDTEXT**](em-findtext.md) o [**EM \_ FINDTEXTEX,**](em-findtextex.md) o sus equivalentes Unicode, [**EM \_ FINDTEXTW**](em-findtextw.md) y [**EM \_ FINDTEXTEXW**](em-findtextexw.md). La [**estructura FINDTEXT**](/windows/win32/api/richedit/ns-richedit-findtexta) que se usa con las versiones nonextended especifica el intervalo de texto que se va a buscar y la cadena que se va a buscar. Las versiones extendidas usan una [**estructura FINDTEXTEX,**](/windows/desktop/api/Richedit/ns-richedit-findtextexa) que especifica la misma información y también recibe los puntos inicial y final del intervalo de caracteres del texto encontrado. También puede especificar opciones como si la búsqueda distingue mayúsculas de minúsculas.
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -27,7 +27,7 @@ Puede buscar una cadena en un control de edición enriquecido mediante los mensa
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
@@ -36,7 +36,7 @@ Puede buscar una cadena en un control de edición enriquecido mediante los mensa
 
 ### <a name="use-a-rich-edit-text-operation"></a>Usar una operación de edición de texto enriquecido
 
-La función de ejemplo siguiente busca el texto especificado dentro del texto seleccionado en un control de edición enriquecido que admite Unicode. Si se encuentra el destino, se convierte en la nueva selección.
+La siguiente función de ejemplo busca el texto especificado dentro del texto seleccionado en un control de edición enriquecido que admite Unicode. Si se encuentra el destino, se convierte en la nueva selección.
 
 
 ```C++
@@ -70,7 +70,7 @@ BOOL FindTextInSelection(HWND hRich, WCHAR* target)
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Microsoft Rich Edit 3.0 también admite la función Editor de métodos de entrada (IME) HexToUnicode, que permite a un usuario convertir entre hexadecimal y Unicode mediante teclas de acceso rápido. Para obtener más información, [vea HexToUnicode IME](/windows/desktop/Intl/hextounicode-ime).
 
@@ -78,7 +78,7 @@ Microsoft Rich Edit 3.0 también admite la función Editor de métodos de entrad
 
 <dl> <dt>
 
-[Usar controles rich edit](using-rich-edit-controls.md)
+[Usar controles Rich Edit](using-rich-edit-controls.md)
 </dt> <dt>
 
 [Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)

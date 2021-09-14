@@ -4,18 +4,18 @@ ms.assetid: 18290d05-b114-476b-8365-6bbb5fe6cffc
 title: Proporcionar un comportamiento de agachamiento personalizado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72cf4bb254b97a6a9d6b5c9d415d48a2c95f528f20efbf2ffbe4782ae5980400
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b4051dc7b79f698f10d007beaafa97e90d79f3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118406373"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164857"
 ---
 # <a name="providing-a-custom-ducking-behavior"></a>Proporcionar un comportamiento de agachamiento personalizado
 
 Una aplicación puede no participar en la [experiencia de aplazamiento](stream-attenuation.md) predeterminada que controla el sistema y reemplazarla por una implementación personalizada.
 
-Una aplicación puede proporcionar una experiencia de agachamiento personalizada. Por ejemplo, Reproductor de Windows Media proporciona su propia experiencia de agachamiento mediante la pausa del flujo multimedia actual durante una sesión de comunicación y la reanudación de la reproducción cuando se cierra la sesión. Se incluye una aplicación multimedia de ejemplo que implementa el agachamiento con ejemplos Windows SDK. Para obtener más información, vea [DuckingMediaPlayer](duckingmediaplayer.md). Para simular la experiencia de apertura y cierre de flujos de comunicación y la generación de eventos de afijo, vea [DuckingCaptureSample](duckingcapturesample.md), que también se incluye con ejemplos de SDK de Windows.
+Una aplicación puede proporcionar una experiencia de agachamiento personalizada. Por ejemplo, Reproductor de Windows Media proporciona su propia experiencia de agachamiento mediante la pausa del flujo multimedia actual durante una sesión de comunicación y la reanudación de la reproducción cuando se cierra la sesión. Se incluye una aplicación multimedia de ejemplo que implementa el agachamiento con Windows ejemplos del SDK. Para obtener más información, vea [DuckingMediaPlayer](duckingmediaplayer.md). Para simular la experiencia de apertura y cierre de flujos de comunicación y la generación de eventos de afijo, consulte [DuckingCaptureSample](duckingcapturesample.md), que también se incluye con ejemplos de SDK Windows.
 
 Una aplicación multimedia que reproduce sonidos que se atenuarán debe tener en cuenta los flujos de comunicación cuando se abren y cierran en el sistema. La implementación personalizada se puede proporcionar mediante MediaFoundation, DirectShow o DirectSound, que usan las API de audio principal. Un cliente WASAPI directo también puede invalidar el control predeterminado si sabe cuándo se inicia y finaliza la sesión de comunicación.
 

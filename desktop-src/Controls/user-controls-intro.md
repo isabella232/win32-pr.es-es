@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre los controles personaliza
 ms.assetid: 220f7058-db04-46d0-acee-ed5e676790b3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12d1a31a44f1f71d99088f7729c2de6d5fdb597e14507f5f994dfaca1b96613d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e82ed9394ec06257e524153b86ef487f4507f35b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120059715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165373"
 ---
 # <a name="custom-controls"></a>Controles personalizados
 
@@ -73,7 +73,7 @@ La creación de subclases de un control existente es otra manera de crear un con
 
 Para crear un control que no se base explícitamente en un control existente, la aplicación debe crear y registrar una clase de ventana. El proceso para registrar una clase de ventana definida por la aplicación para un control personalizado es el mismo que el registro de una clase para una ventana normal. Para crear un control personalizado, especifique el nombre de la clase de ventana en la [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o en una plantilla de cuadro de diálogo. Cada clase debe tener un nombre único, un procedimiento de ventana correspondiente y otra información.
 
-Como mínimo, el procedimiento de ventana dibuja el control . Si una aplicación usa el control para permitir que el usuario escriba información, el procedimiento de ventana también procesa los mensajes de entrada del teclado y el mouse y envía mensajes de notificación a la ventana primaria. Además, si el control admite mensajes de control, el procedimiento de ventana procesa los mensajes que le envía la ventana primaria u otras ventanas. Por ejemplo, los controles suelen procesar el mensaje [**\_ GETDLGCODE de WM**](/windows/desktop/dlgbox/wm-getdlgcode) enviado por los cuadros de diálogo para dirigir un cuadro de diálogo para procesar la entrada de teclado de una manera determinada.
+Como mínimo, el procedimiento de ventana dibuja el control . Si una aplicación usa el control para permitir que el usuario escriba información, el procedimiento de ventana también procesa los mensajes de entrada del teclado y del mouse y envía mensajes de notificación a la ventana primaria. Además, si el control admite mensajes de control, el procedimiento de ventana procesa los mensajes que le envía la ventana primaria u otras ventanas. Por ejemplo, los controles suelen procesar el mensaje [**\_ GETDLGCODE de WM**](/windows/desktop/dlgbox/wm-getdlgcode) enviado por los cuadros de diálogo para dirigir un cuadro de diálogo para procesar la entrada de teclado de una manera determinada.
 
 El procedimiento de ventana para un control definido por la aplicación debe procesar cualquier mensaje de control predefinido en la tabla siguiente si el mensaje afecta al funcionamiento del control.
 
@@ -88,7 +88,7 @@ El procedimiento de ventana para un control definido por la aplicación debe pro
 | [**WM \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus)       | Procese si el control muestra un caret, un rectángulo de foco u otro elemento para indicar que tiene el foco de entrada.                                                                                                                            |
 | [**WM \_ SETFOCUS**](/windows/desktop/inputdev/wm-setfocus)         | Procese si el control muestra un caret, un rectángulo de foco u otro elemento para indicar que tiene el foco de entrada.                                                                                                                            |
 | [**WM \_ SETTEXT**](/windows/desktop/winmsg/wm-settext)             | Procese si el texto del control no es el mismo que el título especificado por la [**función CreateWindowEx.**](/windows/desktop/api/winuser/nf-winuser-createwindowexa)                                                                                                                 |
-| [**WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont)             | Procese si el control muestra texto. El sistema envía este mensaje al crear un cuadro de diálogo con el estilo \_ DS SETFONT.                                                                                                                  |
+| [**WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont)             | Procese si el control muestra texto. El sistema envía este mensaje al crear un cuadro de diálogo con el estilo \_ SETFONT de DS.                                                                                                                  |
 
 
 
@@ -104,7 +104,7 @@ Las notificaciones se envían como [**mensajes WM \_ COMMAND**](/windows/desktop
 
 El identificador de control es un número único que la aplicación usa para identificar el control que envía el mensaje. La aplicación establece el identificador de un control cuando crea el control. La aplicación especifica el identificador en el parámetro *hMenu* de la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o en el miembro **id** de la [**estructura DLGITEMTEMPLATEEX.**](/windows/desktop/dlgbox/dlgitemtemplateex)
 
-Dado que el propio control no establece el identificador de control, el control debe recuperar el identificador para poder enviar mensajes de notificación. Un control debe usar la [**función GetDlgCtrlID**](/windows/desktop/api/winuser/nf-winuser-getdlgctrlid) para recuperar su propio identificador de control. Aunque el identificador de control se especifica como identificador de menú cuando se crea el control, la [**función GetMenu**](/windows/desktop/api/winuser/nf-winuser-getmenu) no se puede usar para recuperar el identificador. Como alternativa, un control puede recuperar el identificador del **miembro hMenu** en la [**estructura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) mientras se procesa [**el mensaje WM \_ CREATE.**](/windows/desktop/winmsg/wm-create)
+Dado que el propio control no establece el identificador de control, el control debe recuperar el identificador para poder enviar mensajes de notificación. Un control debe usar la [**función GetDlgCtrlID**](/windows/desktop/api/winuser/nf-winuser-getdlgctrlid) para recuperar su propio identificador de control. Aunque el identificador de control se especifica como identificador de menú cuando se crea el control, la función [**GetMenu**](/windows/desktop/api/winuser/nf-winuser-getmenu) no se puede usar para recuperar el identificador. Como alternativa, un control puede recuperar el identificador del **miembro hMenu** en la [**estructura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) mientras se procesa [**el mensaje WM \_ CREATE.**](/windows/desktop/winmsg/wm-create)
 
 En los ejemplos siguientes, donde *hwndControl* es el identificador de la ventana de control y CN VALUECHANGED es una definición de notificación personalizada, se muestran las dos maneras de enviar una notificación específica \_ del control.
 
@@ -133,7 +133,7 @@ Tenga en cuenta [**que la estructura NMHDR**](/windows/desktop/api/richedit/ns-r
 
 ## <a name="accessibility"></a>Accesibilidad
 
-Todos los controles comunes admiten Microsoft Active Accessibility (MSAA), que permite el acceso mediante programación a aplicaciones de tecnología accesible, como lectores de pantalla. MSAA también permite a Automatización de la interfaz de usuario, una tecnología más reciente, interactuar con los controles.
+Todos los controles comunes admiten Microsoft Active Accessibility (MSAA), que permite el acceso mediante programación mediante aplicaciones de tecnología accesible, como lectores de pantalla. MSAA también permite a Automatización de la interfaz de usuario, una tecnología más reciente, interactuar con los controles.
 
 Los controles personalizados deben implementar la [**interfaz IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) (para admitir MSAA) o Automatización de la interfaz de usuario interfaces, o ambas. De lo contrario, los productos de tecnología accesible solo podrán obtener información muy limitada sobre la ventana de control, no tendrán acceso a las propiedades del control y no podrán desencadenar eventos en el control.
 

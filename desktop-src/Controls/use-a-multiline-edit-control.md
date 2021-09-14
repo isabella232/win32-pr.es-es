@@ -4,12 +4,12 @@ description: En este tema se muestra cómo implementar un procesador de palabras
 ms.assetid: B955CC42-F89F-48EB-A19A-ADA6E5273EF6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d11100d4d6f82c7a352d4ddacaa7fc05694b4d54125febc766a6d3f1c68376e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d05133707e9a47a632a70807177c6ec1b63bc842
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117829076"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165437"
 ---
 # <a name="how-to-create-a-multiline-edit-control"></a>Cómo crear un control de edición multilínea
 
@@ -21,7 +21,7 @@ En este tema se muestra cómo implementar un procesador de palabras simple agreg
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación

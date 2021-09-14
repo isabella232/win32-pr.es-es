@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 137d6667c993d4a107be057e46c4ee469a513ec95d358b6d3cc50654a5bba520
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c4869f36d8ba70c8dcd8ca526949d489f455e8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957134"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164677"
 ---
 # <a name="abnormaltermination-macro"></a>Macro AbnormalTermination
 
 Indica si el bloque **\_ \_ try** de un controlador de terminación finalizó con normalidad. Solo se puede llamar a la función desde el bloque **\_ \_ finally** de un controlador de terminación.
 
 > [!Note]  
-> El compilador de optimización de Microsoft C/C++ interpreta esta función como una palabra clave y su uso fuera de la sintaxis adecuada de control de excepciones genera un error del compilador.
+> El compilador de optimización de Microsoft C/C++ interpreta esta función como una palabra clave y su uso fuera de la sintaxis de control de excepciones adecuada genera un error del compilador.
 
  
 
@@ -47,7 +47,7 @@ Si el **\_ \_ bloque try** finalizó de forma anómala, el valor devuelto es dis
 
 Si el **\_ \_ bloque try** finalizó con normalidad, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **\_ \_ bloque try** finaliza normalmente solo si la ejecución sale del bloque secuencialmente después de ejecutar la última instrucción del bloque. Las instrucciones (como **return**, **goto**, **continue** o **break)** que hacen que la ejecución deje el resultado del bloque **\_ \_ try** en una terminación anómala del bloque. Este es el caso incluso si esta instrucción es la última instrucción del **\_ \_ bloque try.**
 
@@ -66,7 +66,7 @@ Para evitar la terminación anómala, la ejecución debe continuar hasta el fina
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

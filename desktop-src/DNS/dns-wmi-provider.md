@@ -6,12 +6,12 @@ keywords:
 - Sistema de nombres de dominio, proveedor WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a06ceb2093bb4fdf06ddbc4d06b50ed183f1e810dd8e8187887f07b1b63a426
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 566018f8c4168e66c24942a8861d937d217b8f0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118163741"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164714"
 ---
 # <a name="dns-wmi-provider"></a>Proveedor WMI de DNS
 

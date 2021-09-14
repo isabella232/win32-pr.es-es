@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9139f2dab6410eeb2bacbde93b5e163c0591f350626046861426ddc53beab389
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f1905954e7fb164f8436216fa918cc6f243f4b17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119539715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165197"
 ---
 # <a name="wm_notify-message"></a>Mensaje \_ WM NOTIFY
 
@@ -47,7 +47,7 @@ Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-n
 
 El valor devuelto se omite, excepto para los mensajes de notificación que especifican lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El destino del mensaje debe ser el **HWND** del elemento primario del control. Este valor se puede obtener mediante [**GetParent**](/windows/desktop/api/winuser/nf-winuser-getparent), como se muestra en el ejemplo siguiente, donde *m \_ controlHwnd* es el **HWND** del propio control.
 
@@ -106,15 +106,15 @@ Muchas notificaciones están disponibles en formato ANSI y Unicode. La ventana q
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

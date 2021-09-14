@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e88a9b5fed4260fa88f5f40431113456950d99985ad2f2e0e97c2e951dce96bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b03e60ba7d8e6d7851c62fac030bd252cf957d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957774"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165530"
 ---
 # <a name="tvn_setdispinfo-notification-code"></a>Código de notificación \_ SETDISPINFO de TVN
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMTVDISPINFO**](/windows/win32/api/commctrl/ns-commc
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el **miembro pszText** de la estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) del elemento es el valor LPSTR TEXTCALLBACK, el control envía esta notificación para establecer el texto \_ del elemento. En este caso, el **miembro mask** de *lParam* tendrá establecida la marca TEXT de TVIF. \_
 
@@ -65,12 +65,12 @@ Si el **miembro iImage** o **iSelectedImage** de la estructura [**TVITEM**](/win
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ SETDISPINFOW** (Unicode) y **TVN \_ SETDISPINFOA** (ANSI)<br/>           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

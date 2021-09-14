@@ -4,12 +4,12 @@ ms.assetid: 7ccd02c2-7cec-4d9d-83c1-512f25f4045c
 title: PageBlackGenerationProcessingTotalInkCoverageLimit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e10b97916ec8bad8b0a977e4a92af6083aa554da4f1fd21c123226bc6c9dfb91
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68410cabdfafa5ce82450821e4ae45709ee8d4c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119098899"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168058"
 ---
 # <a name="pageblackgenerationprocessingtotalinkcoveragelimit"></a>PageBlackGenerationProcessingTotalInkCoverageLimit
 
@@ -24,7 +24,7 @@ Especifica la suma máxima permitida de la cobertura de lápiz de cuatro en cual
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
 | Prefijo de ámbito <br/> | Página<br/>                                            |
@@ -70,13 +70,13 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | 400<br/>             |
 | MinValue<br/>     | integer<br/> | 200<br/>             |
-| Varios<br/>     | integer<br/> | 1<br/>               |
+| Múltiple<br/>     | integer<br/> | 1<br/>               |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | percent<br/>         |
 

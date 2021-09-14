@@ -5,16 +5,16 @@ title: DeviceTopology API
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: project-verbatim
-ms.openlocfilehash: 3b79def9f1cb1f5ec9342074b813e50993cbc37e7a7af2a9e0b577c730156247
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 472c02cd59ca0cadd922cbe398a768c97cfab73a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118406760"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165030"
 ---
 # <a name="devicetopology-api"></a>DeviceTopology API
 
-Consulte la captura [de voz de alta calidad de Microsoft DMO ejemplo](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/audio/aecmicarray).
+Consulte la captura de voz de alta calidad [de Microsoft DMO ejemplo](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/audio/aecmicarray).
 
 DeviceTopology API proporciona a las aplicaciones cliente la capacidad de recorrer las topologías de hardware funcionales de los dispositivos de representación y captura de audio. A través de las interfaces y los métodos de la API DeviceTopology, los clientes pueden detectar las subunidades funcionales (por ejemplo, el control de volumen) que se encuentran a lo largo de las rutas de acceso de datos que conducen a y desde dispositivos de punto de conexión de [audio.](audio-endpoint-devices.md) Los clientes pueden recorrer las topologías internas de los dispositivos del adaptador de audio y los dispositivos de punto de conexión de audio y recorrer paso a paso las conexiones que vinculan un dispositivo a otro. Para obtener más información, vea [Topologías de dispositivo.](device-topologies.md)
 
@@ -22,10 +22,10 @@ El archivo de encabezado Devicetopology.h define las interfaces de DeviceTopolog
 
 Para acceder a las interfaces de la API DeviceTopology, un cliente obtiene primero una referencia a la interfaz [**IDeviceTopology**](/windows/desktop/api/Devicetopology/nn-devicetopology-idevicetopology) para un dispositivo de punto de conexión de audio siguiendo estos pasos:
 
-1.  Mediante una de las técnicas descritas en IMMDevice Interface (Interfaz [**IMMDevice),**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice)obtenga una referencia a la **interfaz IMMDevice** para un dispositivo de punto de conexión de audio.
+1.  Mediante una de las técnicas descritas en IMMDevice Interface (Interfaz [**IMMDevice),**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice)obtenga una referencia a la interfaz **IMMDevice** para un dispositivo de punto de conexión de audio.
 2.  Llame al [**método IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) con el *parámetro iid* establecido en **REFIID** \_ IID IDeviceTopology.
 
-El cliente puede obtener referencias a las demás interfaces de la API DeviceTopology llamando a los métodos de la [**interfaz IDeviceTopology.**](/windows/desktop/api/Devicetopology/nn-devicetopology-idevicetopology)
+El cliente puede obtener referencias a las otras interfaces de la API DeviceTopology llamando a los métodos de la [**interfaz IDeviceTopology.**](/windows/desktop/api/Devicetopology/nn-devicetopology-idevicetopology)
 
 DeviceTopology API implementa las interfaces siguientes.
 
@@ -34,7 +34,7 @@ DeviceTopology API implementa las interfaces siguientes.
 | Interfaz                                                  | Descripción                                                                                                                                                                                                               |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IAudioAutoGainControl**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudioautogaincontrol)     | Proporciona acceso a un control de ganancia automática de hardware (AGC).                                                                                                                                                               |
-| [**IAudioBass**](/windows/win32/api/devicetopology/nn-devicetopology-iaudiobass)                           | Proporciona acceso a un control de nivel de hardware.                                                                                                                                                                         |
+| [**IAudioBass**](/windows/win32/api/devicetopology/nn-devicetopology-iaudiobass)                           | Proporciona acceso a un control de hardware de nivel de hardware.                                                                                                                                                                         |
 | [**IAudioChannelConfig**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudiochannelconfig)         | Proporciona acceso a un control de configuración de canal de hardware.                                                                                                                                                              |
 | [**IAudioInputSelector**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudioinputselector)         | Proporciona acceso a un control multiplexador de hardware (selector de entrada).                                                                                                                                                       |
 | [**IAudioLoudness**](/windows/desktop/api/Devicetopology/nn-devicetopology-iaudioloudness)                   | Proporciona acceso a un control de compensación de "sonoridad".                                                                                                                                                                     |

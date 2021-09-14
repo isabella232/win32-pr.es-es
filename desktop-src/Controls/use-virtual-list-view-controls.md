@@ -4,12 +4,12 @@ description: En este tema se muestra cómo trabajar con controles de vista de li
 ms.assetid: DA32D7B3-5FDB-4D73-9A72-0D4EEB2A0C4F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6ed847d7cb8a41e4cb1c255290ff660eb278bcd99126605a2874c52b279e694
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3baf5e37d0d4f6da0cdf596dd8ba3c71e852a99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120059705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165374"
 ---
 # <a name="how-to-use-virtual-list-view-controls"></a>Cómo usar controles de List-View virtuales
 
@@ -47,14 +47,14 @@ struct RndItem
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
 
 ## <a name="instructions"></a>Instructions
 
-### <a name="process-virtual-list-view-control-notification-codes"></a>Procesar códigos de notificación List-View control virtual
+### <a name="process-virtual-list-view-control-notification-codes"></a>Procesar códigos de notificación de List-View control virtual
 
 Además de los códigos de notificación enviados por otros controles de vista de lista, los controles de vista de lista virtual también pueden enviar los códigos de notificación [LVN \_ ODCACHEHINT](lvn-odcachehint.md) y [**LVN \_ ODFINDITEM.**](lvn-odfinditem.md)
 
@@ -330,7 +330,7 @@ void RetrieveItem( RndItem * prndItem, int index )
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una lista de los mensajes de ventana procesados por un control de vista de lista, vea [Default List-View Message Processing](listview-message-processing.md).
 

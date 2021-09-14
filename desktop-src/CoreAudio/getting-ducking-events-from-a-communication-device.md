@@ -4,12 +4,12 @@ ms.assetid: 709ad912-6b03-4ad3-bc47-ad8b6bd6de45
 title: Obtención de eventos de afición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4a5869aa02a64ef3b7d035743b9bee3c91d295448c4d89d659862c5efc81d89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e45557c25570a89452a39683a0b6732b9632129
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117828266"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164986"
 ---
 # <a name="getting-ducking-events"></a>Obtención de eventos de afición
 
@@ -27,7 +27,7 @@ En los pasos siguientes se resume el proceso de obtención del identificador de 
 4.  Consulte [**IAudioSessionControl2 desde**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) la [**interfaz IAudioSessionControl.**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol)
 5.  Llame [**a IAudioSessionControl2::GetSessionInstanceIdentifier**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-getsessioninstanceidentifier) y recupere una cadena que contenga el identificador de sesión de la sesión de audio actual.
 
-Para obtener notificaciones de afijo sobre los flujos de comunicación, la aplicación multimedia llama a [**IAudioSessionManager2::RegisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-registerducknotification). La aplicación multimedia proporciona su identificador de instancia de sesión al sistema de audio y un puntero a la [**implementación de IAudioVolumeDuckNotification.**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) La aplicación ahora puede recibir una notificación de eventos cuando se abre una secuencia en el dispositivo de comunicación. Para dejar de recibir notificaciones, la aplicación multimedia debe llamar a [**IAudioSessionManager2::UnregisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-unregisterducknotification).
+Para obtener notificaciones de alerta sobre los flujos de comunicación, la aplicación multimedia llama a [**IAudioSessionManager2::RegisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-registerducknotification). La aplicación multimedia proporciona su identificador de instancia de sesión al sistema de audio y un puntero a la [**implementación de IAudioVolumeDuckNotification.**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) La aplicación ahora puede recibir una notificación de eventos cuando se abre una secuencia en el dispositivo de comunicación. Para dejar de recibir notificaciones, la aplicación multimedia debe llamar a [**IAudioSessionManager2::UnregisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-unregisterducknotification).
 
 El código siguiente muestra cómo se puede registrar una aplicación para recibir notificaciones de afijo. La clase CMediaPlayer se define en Consideraciones de implementación [para notificaciones de atajo.](handling-audio-ducking-events-from-communication-devices.md) El [ejemplo DuckingMediaPlayer](duckingmediaplayer.md) implementa esta funcionalidad.
 
@@ -142,7 +142,7 @@ HRESULT CMediaPlayer::DuckingOptOut(bool DuckingOptOutChecked)
 [Experiencia de afición predeterminada](stream-attenuation.md)
 </dt> <dt>
 
-[Deshabilitación de la experiencia de afición predeterminada](disabling-the-ducking-experience.md)
+[Deshabilitación de la experiencia predeterminada de afijo](disabling-the-ducking-experience.md)
 </dt> <dt>
 
 [Proporcionar un comportamiento de afijo personalizado](providing-a-custom-ducking-experience.md)

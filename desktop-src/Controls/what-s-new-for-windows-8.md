@@ -4,12 +4,12 @@ description: En este tema se describen las diferencias en la compatibilidad con 
 ms.assetid: 866C2E0B-D3AF-4DA0-8B45-D5FF1335C350
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d7801eea011aabb05663cc2e29f18e0dd58edc9fddc4f32014fcffb96c559cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b203152c8fae5b844eeab334870bf8efb04ac20
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957554"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165257"
 ---
 # <a name="whats-new-windows-controls"></a>Novedades (Windows controles)
 
@@ -17,11 +17,11 @@ En este tema se describen las diferencias en la compatibilidad con temas y estil
 
 ## <a name="through-windows-7"></a>Hasta Windows 7
 
-A Windows 7 Windows, los estilos visuales están encendidos de forma predeterminada, pero el usuario puede desactivarlos seleccionando un tema clásico o desactivando el servicio Temas. Cuando los estilos visuales están desactivados, toda la interfaz de usuario obtiene el aspecto clásico y la mayoría de las API de estilos visuales no están disponibles. Los estilos visuales desactivados se han conservado Windows 7 para admitir los distintos temas de contraste alto, así como Windows tema clásico. Si desea admitir estilos visuales y temas de contraste alto en la misma aplicación, normalmente debe mantener dos rutas de acceso de código independientes para representar controles.
+A Windows 7 Windows, los estilos visuales están encendidos de forma predeterminada, pero el usuario puede desactivarlos seleccionando un tema clásico o desactivando el servicio Temas. Cuando los estilos visuales están desactivados, toda la interfaz de usuario obtiene el aspecto clásico y la mayoría de las API de estilos visuales no están disponibles. Los estilos visuales en modo desactivado se han conservado Windows 7 para admitir los distintos temas de contraste alto, así como Windows tema clásico. Si desea admitir estilos visuales y temas de contraste alto en la misma aplicación, normalmente debe mantener dos rutas de acceso de código independientes para representar controles.
 
 ## <a name="windows-8-and-later"></a>Windows 8 y versiones posteriores
 
-En Windows 8, los estilos visuales no se pueden desactivar a través de la página **Personalización** de **pc Configuración** o desactivando el servicio Temas. Windows El modo clásico ya no existe y el modo de contraste alto se ha modificado para que funcione con estilos visuales. Debido a estos cambios, las aplicaciones que tienen como destino Windows 8 ya no necesitan dos rutas de acceso de código independientes para admitir estilos visuales y temas de contraste alto.
+En Windows 8, los estilos visuales no se pueden desactivar a través de la página **Personalización** de **PC Configuración** o desactivando el servicio Temas. Windows El modo clásico ya no existe y el modo de contraste alto se ha modificado para que funcione con estilos visuales. Debido a estos cambios, las aplicaciones que tienen como destino Windows 8 ya no necesitan dos rutas de acceso de código independientes para admitir estilos visuales y temas de contraste alto.
 
 Los estilos visuales de Windows 8 compatibilidad con versiones anteriores para Windows de tema clásico. Cualquier código de representación de la interfaz de usuario que funcione en versiones anteriores seguirá funcionando en Windows 8 sin modificaciones.
 
@@ -42,7 +42,7 @@ Al igual que en versiones anteriores, Windows 8 admite tanto la versión 5 como 
 [Estilos visuales](themes-overview.md)
 </dt> <dt>
 
-[Información general sobre los estilos visuales](visual-styles-overview.md)
+[Información general sobre estilos visuales](visual-styles-overview.md)
 </dt> </dl>
 
  

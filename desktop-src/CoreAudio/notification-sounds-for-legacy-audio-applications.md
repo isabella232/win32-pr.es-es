@@ -4,12 +4,12 @@ ms.assetid: c5ad67d9-56fb-4bf0-aea4-5b49b0e5bf95
 title: Sonidos de notificación para aplicaciones de audio heredadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4ce813fb2d38a9995f929c62936879f502392415d040e88ddb50f3b4699734a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e9ee2ef1155694e32a21779c55d290da6b3799c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077529"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164946"
 ---
 # <a name="notification-sounds-for-legacy-audio-applications"></a>Sonidos de notificación para aplicaciones de audio heredadas
 
@@ -17,7 +17,7 @@ En Windows Vista, el sistema operativo asigna todos sus sonidos de notificación
 
 Algunas aplicaciones reproducen sonidos de notificación. En lugar de requerir al usuario que administre los sonidos de notificación de una aplicación a través de un control deslizante de volumen independiente en Sndvol, la aplicación puede asignar sus sonidos de notificación a la misma sesión que los sonidos de notificación del sistema. El control deslizante del volumen Sndvol que controla los sonidos de notificación del sistema controla los sonidos de notificación de la aplicación.
 
-Para habilitar este comportamiento, Windows Vista define una marca \_ SND SYSTEM para la función [**PlaySound**](/previous-versions//dd743680(v=vs.85)) heredada. (Esta marca no se admite en versiones anteriores de Windows, incluidos Windows Server 2003, Windows XP y Windows 2000). Si el autor de la llamada establece esta marca, la función **PlaySound** asigna el sonido que reproduce a la sesión entre procesos que el sistema operativo usa para sus sonidos de notificación. Si el autor de la llamada no establece la marca, **PlaySound** asigna el sonido que reproduce a la sesión predeterminada, la sesión específica del proceso identificada por el VALOR GUID de la sesión \_ NULL. SND \_ SYSTEM se define en el archivo de encabezado Mmsystem.h. Para más información sobre **PlaySound,** consulte la documentación Windows SDK.
+Para habilitar este comportamiento, Windows Vista define una marca \_ SND SYSTEM para la función [**PlaySound**](/previous-versions//dd743680(v=vs.85)) heredada. (Esta marca no se admite en versiones anteriores de Windows, incluidos Windows Server 2003, Windows XP y Windows 2000). Si el autor de la llamada establece esta marca, la función **PlaySound** asigna el sonido que reproduce a la sesión entre procesos que el sistema operativo usa para sus sonidos de notificación. Si el autor de la llamada no establece la marca, **PlaySound** asigna el sonido que reproduce a la sesión predeterminada, la sesión específica del proceso identificada por el VALOR GUID de la sesión \_ NULL. SND \_ SYSTEM se define en el archivo de encabezado Mmsystem.h. Para obtener más información sobre **PlaySound,** consulte la documentación Windows SDK.
 
 ## <a name="related-topics"></a>Temas relacionados
 

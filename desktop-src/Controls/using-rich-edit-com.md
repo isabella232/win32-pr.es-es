@@ -1,19 +1,19 @@
 ---
-title: Cómo usar OLE en controles Rich Edit
-description: Esta sección contiene información sobre el uso de la vinculación e inserción de objetos (OLE) en controles de edición enriquecidos.
+title: Cómo usar OLE en controles rich edit
+description: Esta sección contiene información sobre el uso de la vinculación e inserción de objetos (OLE) en controles rich edit.
 ms.assetid: bfcecbf5-cc35-47b8-a713-7e5fd03f60cc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d825a9876005cadb20e4fc7717f766582ab12224f4f86995319357875d24230
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7868bd62044c87765a25f6033499460ed044e57
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119311685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165314"
 ---
-# <a name="how-to-use-ole-in-rich-edit-controls"></a>Cómo usar OLE en controles Rich Edit
+# <a name="how-to-use-ole-in-rich-edit-controls"></a>Cómo usar OLE en controles rich edit
 
-Esta sección contiene información sobre el uso de la vinculación e inserción de objetos (OLE) en controles de edición enriquecidos.
+Esta sección contiene información sobre el uso de la vinculación e inserción de objetos (OLE) en controles rich edit.
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -30,13 +30,13 @@ Esta sección contiene información sobre el uso de la vinculación e inserción
 
 ### <a name="use-a-rich-edit-interface"></a>Usar una interfaz rich edit
 
-Los controles de edición enriquecciones exponen parte de su funcionalidad a través de interfaces de Modelo de objetos componentes (COM). Al obtener una interfaz de un control, se obtiene la capacidad de trabajar con otros objetos dentro del control . Puede obtener esta interfaz mediante el envío del [**mensaje EM \_ GETOLEINTERFACE.**](em-getoleinterface.md) Desde la [**interfaz IRichEditOle,**](/windows/desktop/api/Richole/nn-richole-iricheditole) puede obtener las interfaces usadas en el modelo [de objetos de texto](text-object-model.md).
+Los controles de edición enriquecciones exponen parte de su funcionalidad a través de interfaces del Modelo de objetos componentes (COM). Al obtener una interfaz de un control, se obtiene la capacidad de trabajar con otros objetos dentro del control . Puede obtener esta interfaz enviando el [**mensaje EM \_ GETOLEINTERFACE.**](em-getoleinterface.md) En la [**interfaz IRichEditOle,**](/windows/desktop/api/Richole/nn-richole-iricheditole) puede obtener las interfaces usadas en el modelo de [objetos de texto](text-object-model.md).
 
-Las aplicaciones implementan otra interfaz, [**IRichEditOleCallback,**](/windows/desktop/api/Richole/nn-richole-iricheditolecallback)para definir el comportamiento del control cuando interactúa con objetos .
+Otra interfaz, [**IRichEditOleCallback**](/windows/desktop/api/Richole/nn-richole-iricheditolecallback), la implementan las aplicaciones para definir el comportamiento del control cuando interactúa con objetos .
 
 ### <a name="insert-an-object-into-a-rich-edit-control"></a>Insertar un objeto en un control Rich Edit
 
-En el ejemplo de código siguiente se inserta un objeto de archivo en un control de edición enriquecido. Si un programa está asociado al tipo de archivo en el equipo del usuario (por ejemplo, Microsoft Excel para un archivo .xls), el contenido del archivo se muestra en el control ; De lo contrario, aparece un icono.
+En el ejemplo de código siguiente se inserta un objeto de archivo en un control de edición enriquecido. Si un programa está asociado al tipo de archivo en la máquina del usuario (por ejemplo, Microsoft Excel para un archivo .xls), el contenido del archivo se muestra en el control ; De lo contrario, aparece un icono.
 
 1.  Obtenga la [**interfaz IRichEditOle.**](/windows/desktop/api/Richole/nn-richole-iricheditole)
 
@@ -207,9 +207,9 @@ En el ejemplo de código siguiente se inserta un objeto de archivo en un control
 
 ### <a name="using-iricheditolecallback"></a>Uso de IRichEditOleCallback
 
-Las aplicaciones implementan [**la interfaz IRichEditOleCallback**](/windows/desktop/api/Richole/nn-richole-iricheditolecallback) para responder a las consultas o acciones relacionadas con OLE realizadas por un control de edición enriquecido. Asocie la implementación de la interfaz con el control mediante el envío de un [**mensaje EM \_ SETOLECALLBACK.**](em-setolecallback.md) A continuación, el control llama a métodos en la implementación de la interfaz según corresponda.
+Las aplicaciones implementan [**la interfaz IRichEditOleCallback**](/windows/desktop/api/Richole/nn-richole-iricheditolecallback) para responder a consultas relacionadas con OLE o acciones realizadas por un control de edición enriquecido. La implementación de la interfaz se asocia al control mediante el envío de un [**mensaje EM \_ SETOLECALLBACK.**](em-setolecallback.md) A continuación, el control llama a métodos en la implementación de la interfaz según corresponda.
 
-Por ejemplo, [**se llama a QueryAcceptData**](/windows/desktop/api/Richole/nf-richole-iricheditolecallback-queryacceptdata) cuando el usuario intenta arrastrar o pegar un objeto en el control . Si la aplicación puede aceptar los datos, la implementación del método devuelve S \_ OK; de lo contrario, devuelve un código de error. El método también puede realizar alguna otra acción, como advertir al usuario de que los archivos de ese tipo no se pueden colocar en el control .
+Por ejemplo, se llama a [**QueryAcceptData**](/windows/desktop/api/Richole/nf-richole-iricheditolecallback-queryacceptdata) cuando el usuario intenta arrastrar o pegar un objeto en el control . Si la aplicación puede aceptar los datos, la implementación del método devuelve S \_ OK; de lo contrario, devuelve un código de error. El método también puede realizar alguna otra acción, como advertir al usuario que los archivos de ese tipo no se pueden colocar en el control.
 
 ## <a name="complete-insertobject-example-function"></a>Función de ejemplo InsertObject completa
 
@@ -330,7 +330,7 @@ BOOL InsertObject(HWND hRichEdit, LPCTSTR pszFileName)
 
 <dl> <dt>
 
-[Usar controles rich edit](using-rich-edit-controls.md)
+[Usar controles Rich Edit](using-rich-edit-controls.md)
 </dt> <dt>
 
 [Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)

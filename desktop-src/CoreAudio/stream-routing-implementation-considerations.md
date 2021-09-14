@@ -4,16 +4,16 @@ ms.assetid: ecda0b5b-6583-43b4-a9b4-f12a95f09452
 title: Consideraciones sobre la implementación del enrutamiento de flujos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e440fed0035838eff18c3a93bca7271fcc484a8ce37a11ad4afd3931f357f76a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 62bd753fe027c92ffac9f5a41cea589b600d7f26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120088255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164789"
 ---
 # <a name="stream-routing-implementation-considerations"></a>Consideraciones sobre la implementación del enrutamiento de flujos
 
-En Windows 7, las API de plataforma de alto nivel que usan api de audio principal, como las API de Media Foundation, Direct Sound y Wave, implementan la característica de enrutamiento de flujos controlando el cambio de flujo de un dispositivo existente a un nuevo punto de conexión de audio predeterminado. Las aplicaciones multimedia que usan estas API usan el comportamiento de enrutamiento de flujos sin modificaciones en el origen. Los clientes WASAPI directos pueden usar las notificaciones enviadas por los componentes de Core Audio e implementar la característica de enrutamiento de secuencias.
+En Windows 7, las API de plataforma de alto nivel que usan api de audio principal, como las API de Media Foundation, DirectSound y Wave, implementan la característica de enrutamiento de flujos controlando el cambio de flujo de un dispositivo existente a un nuevo punto de conexión de audio predeterminado. Las aplicaciones multimedia que usan estas API usan el comportamiento de enrutamiento de flujos sin modificaciones en el origen. Los clientes WASAPI directos pueden usar las notificaciones enviadas por los componentes de Core Audio e implementar la característica de enrutamiento de secuencias.
 
 Los clientes WASAPI directos (aplicaciones multimedia que usan WASAPI directamente) reciben nuevas notificaciones de sesión de audio y dispositivo enviadas por los componentes de Audio principal. El comportamiento de la característica de enrutamiento de flujos se define mediante la forma en que la aplicación controla estas notificaciones.
 
@@ -60,7 +60,7 @@ En los pasos siguientes se resume el proceso de realizar una transición de fluj
 
 Durante la transición, la aplicación debe asegurarse de que el reloj no salga de la sincronización, lo que da lugar a secuencias de audio y vídeo no sincronizadas. Esto puede ocurrir si los ejemplos de vídeo se siguen representando mientras la secuencia de audio se enruta al nuevo dispositivo. La aplicación debe almacenar en caché la posición del reloj para el cálculo de remapping y asegurarse de que los ejemplos de vídeo no se representen hasta que la secuencia de audio se vuelva a abrir en el nuevo dispositivo, de modo que cuando el clip reanude la representación, se sincronicen las secuencias de audio y vídeo. En algunos casos, cuando el tiempo de presentación para representar los fotogramas de vídeo se basa en el reloj de audio, es suficiente detener la secuencia de audio hasta que se complete el cambio de secuencia y no sea necesaria ninguna otra implementación de asignación de posición para la secuencia de vídeo para la sincronización de vídeo de audio.
 
-Si durante la representación, [**IAudioRenderClient::GetBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiorenderclient-getbuffer) devuelve un error porque se pierde el dispositivo antiguo, la aplicación no necesita detener la secuencia anterior porque la operación de streaming ya ha finalizado. Para obtener información sobre cómo controlar este error, vea [Recuperación de un Invalid-Device error](recovering-from-an-invalid-device-error.md).
+Si durante la representación, [**IAudioRenderClient::GetBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiorenderclient-getbuffer) devuelve un error porque se pierde el dispositivo antiguo, la aplicación no necesita detener la secuencia anterior porque la operación de streaming ya ha finalizado. Para obtener información sobre cómo controlar este error, vea [Recuperarse de un Invalid-Device error](recovering-from-an-invalid-device-error.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

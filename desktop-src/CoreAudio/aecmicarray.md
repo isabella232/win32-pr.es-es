@@ -1,19 +1,19 @@
 ---
-description: En este ejemplo se usan las API core audio para capturar una secuencia de voz de alta calidad. El ejemplo admite la cancelación de eco acústico (AEC) y el procesamiento de la matriz de micrófonos mediante el uso del AEC DMO, también denominado DSP de captura de voz, proporcionado por Microsoft .
+description: En este ejemplo se usan las API de audio principal para capturar una secuencia de voz de alta calidad. El ejemplo admite la cancelación de eco acústico (AEC) y el procesamiento de la matriz de micrófonos mediante el uso de la DMO de AEC, también denominada DSP de captura de voz, proporcionada por Microsoft .
 ms.assetid: 932d3442-1beb-4938-9382-031c61cd9b05
 title: AECMicArray
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5d7960a1ff3163b936af949d605e7782f8a09890741f99e022c37a0aadc57a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfe72351b9f8f61d939a9f73eaf85022d7f487bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120059125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165165"
 ---
 # <a name="aecmicarray"></a>AECMicArray
 
-En este ejemplo se usan las API core audio para capturar una secuencia de voz de alta calidad. El ejemplo admite la cancelación de eco acústico (AEC) y el procesamiento de la matriz de micrófonos mediante el uso del AEC DMO, también denominado DSP de captura de voz, proporcionado por Microsoft .
+En este ejemplo se usan las API de audio principal para capturar una secuencia de voz de alta calidad. El ejemplo admite la cancelación de eco acústico (AEC) y el procesamiento de la matriz de micrófonos mediante el uso de la DMO de AEC, también denominada DSP de captura de voz, proporcionada por Microsoft .
 
 Este tema contiene las secciones siguientes.
 
@@ -52,9 +52,9 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Ubicación    | Ruta de acceso o dirección URL                                                                                     |
+| Location    | Ruta de acceso o dirección URL                                                                                     |
 |-------------|----------------------------------------------------------------------------------------------|
-| Windows SDK | \\Archivos de programa Sdk de Microsoft Windows audio multimedia de ejemplo \\ \\ \\ v7.0 \\ \\ \\ \\ AECMicArray \\ ... |
+| Windows SDK | \\Archivos de \\ programa Sdk de Microsoft Windows ejemplos de audio multimedia de la versión \\ \\ 7.0 \\ \\ \\ \\ AECMicArray... \\ |
 
 
 
@@ -82,14 +82,14 @@ En la tabla siguiente se muestran los argumentos.
 
 | Argumento  | Descripción                                                                                                                           |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------|
-| -out      | Obligatorio. Especifica el nombre del archivo de salida.                                                                                                 |
-| -mod      | Obligatorio. Especifica el modo del sistema de captura de voz. Consulte la sección "Configuración de la captura de DMO" del archivo Léame de ejemplo para obtener más información. |
-| -feat     | Opcional. Activa o desactiva el modo de característica (1) o desactivado (0).                                                                                       |
-| -ns       | Opcional. Activa o desactiva la supresión de ruido (1) o desactivada (0). El modo de característica debe estar en para especificarlo.                                     |
-| -agc      | Opcional. Activa o desactiva AGC digital (1) o desactivada (0). El modo de característica debe estar en para especificarlo.                                           |
-| -cntrclip | Opcional. Activa o desactiva el recorte del centro (1) o desactivado (0). El modo de característica debe estar en para especificarlo.                                       |
-| -spkdev   | Opcional. Especifica el índice del dispositivo del hablante. Si no se especifica, se le pedirá al usuario que seleccione.                                         |
-| -micdev   | Opcional. Especifica el índice del dispositivo de micrófono. Si no se especifica, se le pedirá al usuario que seleccione.                                      |
+| -out      | Necesario. Especifica el nombre del archivo de salida.                                                                                                 |
+| -mod      | Necesario. Especifica el modo del sistema de captura de voz. Consulte la sección "Configuring the voice capture DMO" (Configuración de la captura de voz DMO) del archivo Léame de ejemplo para obtener más información. |
+| -feat     | Opcional. Activa (1) o desactiva el modo de característica (0).                                                                                       |
+| -ns       | Opcional. Activa (1) o desactiva la supresión de ruido (0). El modo de característica debe estar en on para especificarlo.                                     |
+| -agc      | Opcional. Activa o desactiva AGC digital (1) o desactivado (0). El modo de característica debe estar en on para especificarlo.                                           |
+| -cntrclip | Opcional. Activa (1) o desactiva el recorte central (0). El modo de característica debe estar en on para especificarlo.                                       |
+| -spkdev   | Opcional. Especifica el índice del dispositivo del hablante. Si no se especifica, se pedirá al usuario que seleccione .                                         |
+| -micdev   | Opcional. Especifica el índice del dispositivo de micrófono. Si no se especifica, se pedirá al usuario que seleccione .                                      |
 | -duration | Opcional. Especifica cuánto tiempo se ejecuta la aplicación.                                                                                    |
 
 

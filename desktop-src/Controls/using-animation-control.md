@@ -4,12 +4,12 @@ description: En esta sección se proporciona información de implementación y c
 ms.assetid: 4f699219-8d9a-41f5-8dc8-889786442fb6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad01cbff3108dff131e450452e611c3e1ce8b4400c689b107457d90f969b88cf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e131d652dd234b02ef6b10e8dd8573dd514f8940
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119391395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165369"
 ---
 # <a name="using-animation-controls"></a>Usar controles de animación
 

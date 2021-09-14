@@ -4,12 +4,12 @@ ms.assetid: bb3c658d-96db-495a-a0dc-e93949c3835d
 title: Códigos de error del sistema (12000-15999) (WinError.h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: aa250eb26db3a2dfefda4c8b31bb2bbfd5e5d6415ea50d7279121fb09302c7ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8cac8adf6d8a4cf8f60fe978eb6f99f5efc1b9fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120058995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164602"
 ---
 # <a name="system-error-codes-12000-15999"></a>Códigos de error del sistema (12000-15999)
 
@@ -72,7 +72,7 @@ Se usa la directiva de modo rápido especificada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_MM_POLICY_EXISTS"></span><span id="error_ipsec_mm_policy_exists"></span>**ERROR \_ EXISTE LA DIRECTIVA MM \_ \_ DE IPSEC \_**
+<span id="ERROR_IPSEC_MM_POLICY_EXISTS"></span><span id="error_ipsec_mm_policy_exists"></span>**ERROR \_ IPSEC \_ MM \_ POLICY \_ EXISTS**
 </dt> <dd> <dl> <dt>
 
 13003 (0x32CB)
@@ -384,7 +384,7 @@ ERROR \_ IPSEC \_ IKE \_ NEG \_ STATUS \_ BEGIN
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_AUTH_FAIL"></span><span id="error_ipsec_ike_auth_fail"></span>**ERROR \_ IPSEC \_ IKE \_ AUTH \_ FAIL**
+<span id="ERROR_IPSEC_IKE_AUTH_FAIL"></span><span id="error_ipsec_ike_auth_fail"></span>**ERROR \_ ERROR DE \_ AUTENTICACIÓN DE IKE \_ IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13801 (0x35E9)
@@ -444,7 +444,7 @@ Error de procesamiento general.
 
 
 
-Se ha llegado al tiempo de espera de la negociación.
+Se ha producido un tiempo de espera de negociación.
 
 
 </dt> </dl> </dd> <dt>
@@ -457,7 +457,7 @@ Se ha llegado al tiempo de espera de la negociación.
 
 
 
-IKE no pudo encontrar el certificado de máquina válido. Póngase en contacto con el administrador de seguridad de red para instalar un certificado válido en el almacén de certificados adecuado.
+IKE no pudo encontrar el certificado de equipo válido. Póngase en contacto con el administrador de seguridad de red para instalar un certificado válido en el almacén de certificados adecuado.
 
 
 </dt> </dl> </dd> <dt>
@@ -483,7 +483,7 @@ Sa de IKE eliminado por el mismo nivel antes de que se complete el establecimien
 
 
 
-Sa de IKE eliminado antes de que se complete el establecimiento.
+El sa de IKE se eliminó antes de que se completara el establecimiento.
 
 
 </dt> </dl> </dd> <dt>
@@ -496,7 +496,7 @@ Sa de IKE eliminado antes de que se complete el establecimiento.
 
 
 
-La solicitud de negociación se sentó en cola demasiado tiempo.
+La solicitud de negociación se sentó en la cola demasiado tiempo.
 
 
 </dt> </dl> </dd> <dt>
@@ -509,7 +509,7 @@ La solicitud de negociación se sentó en cola demasiado tiempo.
 
 
 
-La solicitud de negociación se sentó en cola demasiado tiempo.
+La solicitud de negociación se sentó en la cola demasiado tiempo.
 
 
 </dt> </dl> </dd> <dt>
@@ -522,7 +522,7 @@ La solicitud de negociación se sentó en cola demasiado tiempo.
 
 
 
-La solicitud de negociación se sentó en cola demasiado tiempo.
+La solicitud de negociación se sentó en la cola demasiado tiempo.
 
 
 </dt> </dl> </dd> <dt>
@@ -535,7 +535,7 @@ La solicitud de negociación se sentó en cola demasiado tiempo.
 
 
 
-La solicitud de negociación se sentó en cola demasiado tiempo.
+La solicitud de negociación se sentó en la cola demasiado tiempo.
 
 
 </dt> </dl> </dd> <dt>
@@ -561,7 +561,7 @@ No hay respuesta del mismo nivel.
 
 
 
-La negociación tardó demasiado tiempo.
+La negociación tardó demasiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -574,7 +574,7 @@ La negociación tardó demasiado tiempo.
 
 
 
-La negociación tardó demasiado tiempo.
+La negociación tardó demasiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -639,7 +639,7 @@ Tipo de certificado no válido.
 
 
 
-Error en la negociación de IKE porque el certificado de máquina usado no tiene una clave privada. Los certificados IPsec requieren una clave privada. Póngase en contacto con Administrador de seguridad de red para reemplazar por un certificado que tenga una clave privada.
+Error de negociación de IKE porque el certificado de máquina usado no tiene una clave privada. Los certificados IPsec requieren una clave privada. Póngase en contacto con Administrador de seguridad de red para reemplazar por un certificado que tenga una clave privada.
 
 
 </dt> </dl> </dd> <dt>
@@ -652,7 +652,7 @@ Error en la negociación de IKE porque el certificado de máquina usado no tiene
 
 
 
-Se detectaron claves simultáneas.
+Se detectaron reclaves simultáneas.
 
 
 </dt> </dl> </dd> <dt>
@@ -678,7 +678,7 @@ Error en Diffie-Hellman cálculo.
 
 
 
-No sabe cómo procesar la carga crítica.
+No sé cómo procesar la carga crítica.
 
 
 </dt> </dl> </dd> <dt>
@@ -769,7 +769,7 @@ Carga de error de procesamiento de errores.
 
 
 
-Error al procesar la carga de SA.
+Carga de SA de procesamiento de errores.
 
 
 </dt> </dl> </dd> <dt>
@@ -834,7 +834,7 @@ Carga del identificador de procesamiento de errores.
 
 
 
-Error al procesar la carga del certificado.
+Carga del certificado de procesamiento de errores.
 
 
 </dt> </dl> </dd> <dt>
@@ -873,7 +873,7 @@ Error al procesar la carga hash.
 
 
 
-Carga de firma de procesamiento de errores.
+Error al procesar la carga de firma.
 
 
 </dt> </dl> </dd> <dt>
@@ -990,7 +990,7 @@ Cookie no válida recibida.
 
 
 
-El mismo nivel no pudo enviar un certificado de equipo válido.
+El mismo nivel no pudo enviar un certificado de máquina válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -1016,7 +1016,7 @@ Error en la comprobación de revocación de certificación del certificado del m
 
 
 
-Las nuevas directivas invalidan las SAs formadas con la directiva anterior.
+Las nuevas directivas invalidan las SU formadas con la directiva anterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -1120,7 +1120,7 @@ No se pudo determinar el nombre principal de SSPI para el servicio IKE de IPSEC 
 
 
 
-No se pudo obtener el nuevo SPI para el SA entrante del controlador IPsec. La causa más común de esto es que el controlador no tiene el filtro correcto. Compruebe la directiva para comprobar los filtros.
+No se pudo obtener el nuevo SPI para el SA de entrada del controlador IPsec. La causa más común de esto es que el controlador no tiene el filtro correcto. Compruebe la directiva para comprobar los filtros.
 
 
 </dt> </dl> </dd> <dt>
@@ -1411,7 +1411,7 @@ El valor de duración recibido en notificación de duración del respondedor est
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_MAJOR_VERSION"></span><span id="error_ipsec_ike_invalid_major_version"></span>**ERROR IPSEC IKE INVALID MAJOR VERSION (VERSIÓN \_ PRINCIPAL NO VÁLIDA DE \_ IPSEC \_ \_ \_ IKE)**
+<span id="ERROR_IPSEC_IKE_INVALID_MAJOR_VERSION"></span><span id="error_ipsec_ike_invalid_major_version"></span>**ERROR \_ IPSEC \_ IKE \_ VERSIÓN PRINCIPAL NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 13880 (0x3638)
@@ -1614,7 +1614,7 @@ Los parámetros del modo principal no son válidos para este modo rápido.
 
 
 
-El controlador IPsec expiró en el modo rápido sa.
+El controlador IPsec expiró en el modo rápido SA.
 
 
 </dt> </dl> </dd> <dt>
@@ -1705,7 +1705,7 @@ Una negociación que se ejecuta como el principio de seguridad que emitió la co
 
 
 
-SA se eliminó debido a la comprobación de supresión de la coexistencia de IKEv1/AuthIP.
+SA se eliminó debido a la comprobación de supresión de coexistencia de IKEv1/AuthIP.
 
 
 </dt> </dl> </dd> <dt>
@@ -1762,7 +1762,7 @@ El establecimiento de SA no está autorizado porque no hay una credencial sufici
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_AUTHORIZATION_FAILURE_WITH_OPTIONAL_RETRY"></span><span id="error_ipsec_ike_authorization_failure_with_optional_retry"></span>**ERROR \_ IPSEC IKE AUTHORIZATION FAILURE WITH OPTIONAL RETRY (ERROR DE AUTORIZACIÓN \_ DE IKE IPSEC \_ CON REINTENTO \_ \_ \_ \_ OPCIONAL)**
+<span id="ERROR_IPSEC_IKE_AUTHORIZATION_FAILURE_WITH_OPTIONAL_RETRY"></span><span id="error_ipsec_ike_authorization_failure_with_optional_retry"></span>**ERROR IPSEC IKE AUTHORIZATION FAILURE WITH OPTIONAL RETRY (ERROR DE AUTORIZACIÓN DE IKE DE \_ \_ IPSEC \_ CON REINTENTO \_ \_ \_ \_ OPCIONAL)**
 </dt> <dd> <dl> <dt>
 
 13907 (0x3653)
@@ -1866,7 +1866,7 @@ El encabezado o finalizador IPsec del paquete no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_INTEGRITY_CHECK_FAILED"></span><span id="error_ipsec_integrity_check_failed"></span>**ERROR \_ IPSEC \_ INTEGRITY \_ CHECK \_ FAILED**
+<span id="ERROR_IPSEC_INTEGRITY_CHECK_FAILED"></span><span id="error_ipsec_integrity_check_failed"></span>**ERROR ERROR \_ EN LA COMPROBACIÓN DE INTEGRIDAD \_ \_ DE IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13915 (0x365B)
@@ -1926,7 +1926,7 @@ IPsec ha eliminado un paquete debido a la limitación de DoS.
 
 
 
-IPsec DoS Protection coincidió con una regla de bloque explícita.
+IPsec DoS Protection coincidía con una regla de bloque explícita.
 
 
 </dt> </dl> </dd> <dt>
@@ -2004,7 +2004,7 @@ IPsec DoS Protection recibió un paquete de negociación de IPsec para un módul
 
 
 
-No se ha habilitado IPsec DoS Protection.
+No se ha habilitado la protección contra IPsec DoS.
 
 
 </dt> </dl> </dd> <dt>
@@ -2043,7 +2043,7 @@ La sección solicitada no estaba presente en el contexto de activación.
 
 
 
-No se pudo iniciar la aplicación porque su configuración en paralelo es incorrecta. Consulte el registro de eventos de la aplicación o use la herramienta de sxstrace.exe línea de comandos para obtener más detalles.
+No se pudo iniciar la aplicación porque su configuración en paralelo es incorrecta. Consulte el registro de eventos de la aplicación o use la herramienta de sxstrace.exe comandos para obtener más detalles.
 
 
 </dt> </dl> </dd> <dt>
@@ -2147,7 +2147,7 @@ Una versión de componente requerida por la aplicación entra en conflicto con o
 
 
 
-La sección type requested activation context (Contexto de activación solicitado) no coincide con la API de consulta usada.
+La sección de contexto de activación solicitada de tipo no coincide con la API de consulta usada.
 
 
 </dt> </dl> </dd> <dt>
@@ -2160,7 +2160,7 @@ La sección type requested activation context (Contexto de activación solicitad
 
 
 
-La falta de recursos del sistema ha requerido que se deshabilite la activación aislada para el subproceso de ejecución actual.
+La falta de recursos del sistema ha requerido que la activación aislada se deshabilite para el subproceso de ejecución actual.
 
 
 </dt> </dl> </dd> <dt>
@@ -2191,7 +2191,7 @@ No se reconoce el identificador de grupo de codificación especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_UNKNOWN_ENCODING"></span><span id="error_sxs_unknown_encoding"></span>**CODIFICACIÓN \_ DESCONOCIDA DE SXS \_ DE \_ ERROR**
+<span id="ERROR_SXS_UNKNOWN_ENCODING"></span><span id="error_sxs_unknown_encoding"></span>**ERROR \_ SXS \_ UNKNOWN \_ ENCODING**
 </dt> <dd> <dl> <dt>
 
 14013 (0x36BD)
@@ -2264,7 +2264,7 @@ El manifiesto contiene un atributo para la identidad del ensamblado que no es v�
 
 
 
-Al manifiesto le falta la especificación de espacio de nombres predeterminada necesaria en el elemento de ensamblado.
+El manifiesto no tiene la especificación de espacio de nombres predeterminada necesaria en el elemento de ensamblado.
 
 
 </dt> </dl> </dd> <dt>
@@ -2290,7 +2290,7 @@ El manifiesto tiene un espacio de nombres predeterminado especificado en el elem
 
 
 
-El manifiesto privado sondeado ha cruzado una ruta de acceso con un punto de rean aproximado no admitido.
+El manifiesto privado sondeado ha cruzado una ruta de acceso con un punto de reanado no admitido.
 
 
 </dt> </dl> </dd> <dt>
@@ -2355,7 +2355,7 @@ Dos o más componentes a los que hace referencia directa o indirectamente el man
 
 
 
-Dos o más componentes a los que hace referencia directa o indirectamente el manifiesto de aplicación tienen los mismos TLBID de la biblioteca de tipos COM.
+Dos o más componentes a los que hace referencia directa o indirectamente el manifiesto de aplicación tienen los mismos TLBID de biblioteca de tipos COM.
 
 
 </dt> </dl> </dd> <dt>
@@ -2420,7 +2420,7 @@ El manifiesto de directiva contiene uno o varios errores de sintaxis.
 
 
 
-Error de análisis de manifiesto: se esperaba un literal de cadena, pero no se encontró ningún carácter de comilla de apertura.
+Error de análisis del manifiesto: se esperaba un literal de cadena, pero no se encontró ningún carácter de comilla de apertura.
 
 
 </dt> </dl> </dd> <dt>
@@ -2433,7 +2433,7 @@ Error de análisis de manifiesto: se esperaba un literal de cadena, pero no se e
 
 
 
-Error de análisis de manifiesto: se usó una sintaxis incorrecta en un comentario.
+Error de análisis del manifiesto: se usó una sintaxis incorrecta en un comentario.
 
 
 </dt> </dl> </dd> <dt>
@@ -2459,7 +2459,7 @@ Error de análisis del manifiesto: se inició un nombre con un carácter no vál
 
 
 
-Error de análisis de manifiesto: un nombre contenía un carácter no válido.
+Error de análisis del manifiesto: un nombre contenía un carácter no válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -2472,7 +2472,7 @@ Error de análisis de manifiesto: un nombre contenía un carácter no válido.
 
 
 
-Error de análisis de manifiesto: un literal de cadena contenía un carácter no válido.
+Error de análisis del manifiesto: un literal de cadena contenía un carácter no válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -2485,7 +2485,7 @@ Error de análisis de manifiesto: un literal de cadena contenía un carácter no
 
 
 
-Error de análisis de manifiesto: sintaxis no válida para una declaración xml.
+Error de análisis del manifiesto: sintaxis no válida para una declaración xml.
 
 
 </dt> </dl> </dd> <dt>
@@ -2498,7 +2498,7 @@ Error de análisis de manifiesto: sintaxis no válida para una declaración xml.
 
 
 
-Error de análisis de manifiesto: se encontró un carácter no válido en el contenido de texto.
+Error de análisis del manifiesto: se encontró un carácter no válido en el contenido de texto.
 
 
 </dt> </dl> </dd> <dt>
@@ -2550,7 +2550,7 @@ Error de análisis del manifiesto: se esperaba un carácter de punto y coma.
 
 
 
-Error de análisis de manifiesto: paréntesis desequilibrados.
+Error de análisis del manifiesto: paréntesis desequilibrados.
 
 
 </dt> </dl> </dd> <dt>
@@ -2563,7 +2563,7 @@ Error de análisis de manifiesto: paréntesis desequilibrados.
 
 
 
-Error de análisis de manifiesto: error interno.
+Error de análisis del manifiesto: error interno.
 
 
 </dt> </dl> </dd> <dt>
@@ -2589,7 +2589,7 @@ Error de análisis del manifiesto: no se permite el espacio en blanco en esta ub
 
 
 
-Error de análisis de manifiesto: final del archivo alcanzado en estado no válido para la codificación actual.
+Error de análisis del manifiesto: final del archivo alcanzado en estado no válido para la codificación actual.
 
 
 </dt> </dl> </dd> <dt>
@@ -2836,7 +2836,7 @@ Error de análisis del manifiesto: faltaba el carácter ">" en el elemento end.
 
 
 
-Error de análisis de manifiesto: no se cerró un literal de cadena.
+Error de análisis del manifiesto: no se cerró un literal de cadena.
 
 
 </dt> </dl> </dd> <dt>
@@ -2927,7 +2927,7 @@ Error de análisis de manifiesto: no se admite el cambio de la codificación act
 
 
 
-Error de análisis de manifiesto: el nombre 'xml' está reservado y debe estar en minúsculas.
+Error de análisis del manifiesto: el nombre 'xml' está reservado y debe estar en minúsculas.
 
 
 </dt> </dl> </dd> <dt>
@@ -2953,7 +2953,7 @@ Error de análisis del manifiesto: el atributo independiente debe tener el valor
 
 
 
-Error de análisis de manifiesto: el atributo independiente no se puede usar en entidades externas.
+Error de análisis del manifiesto: el atributo independiente no se puede usar en entidades externas.
 
 
 </dt> </dl> </dd> <dt>
@@ -2984,7 +2984,7 @@ Error de análisis del manifiesto: falta el signo igual entre el atributo y el v
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_PROTECTION_RECOVERY_FAILED"></span><span id="error_sxs_protection_recovery_failed"></span>**ERROR AL \_ RECUPERAR LA PROTECCIÓN DE SXS \_ \_ \_**
+<span id="ERROR_SXS_PROTECTION_RECOVERY_FAILED"></span><span id="error_sxs_protection_recovery_failed"></span>**ERROR DE \_ RECUPERACIÓN DE PROTECCIÓN DE SXS \_ CON \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 14074 (0x36FA)
@@ -3010,7 +3010,7 @@ Error de protección de ensamblados: la clave pública de un ensamblado era dema
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_PROTECTION_CATALOG_NOT_VALID"></span><span id="error_sxs_protection_catalog_not_valid"></span>**ERROR \_ CATÁLOGO DE PROTECCIÓN SXS NO \_ \_ \_ \_ VÁLIDO**
+<span id="ERROR_SXS_PROTECTION_CATALOG_NOT_VALID"></span><span id="error_sxs_protection_catalog_not_valid"></span>**ERROR \_ EL CATÁLOGO DE PROTECCIÓN DE SXS NO ES \_ \_ \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 14076 (0x36FC)
@@ -3031,7 +3031,7 @@ Error de protección de ensamblados: el catálogo de un ensamblado no es válido
 
 
 
-No se pudo traducir un HRESULT a un código de error de Win32 correspondiente.
+No se pudo traducir un valor HRESULT a un código de error de Win32 correspondiente.
 
 
 </dt> </dl> </dd> <dt>
@@ -3096,7 +3096,7 @@ No se encontró el ensamblado al que se hace referencia.
 
 
 
-La pila de activación del contexto de activación para el subproceso de ejecución en ejecución está dañada.
+La pila de activación del contexto de activación para el subproceso en ejecución de la ejecución está dañada.
 
 
 </dt> </dl> </dd> <dt>
@@ -3114,7 +3114,7 @@ Los metadatos de aislamiento de aplicación para este proceso o subproceso se ha
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_EARLY_DEACTIVATION"></span><span id="error_sxs_early_deactivation"></span>**DESACTIVACIÓN \_ TEMPRANA DE SXS \_ DE \_ ERROR**
+<span id="ERROR_SXS_EARLY_DEACTIVATION"></span><span id="error_sxs_early_deactivation"></span>**ERROR \_ SXS \_ EARLY \_ DEACTIVATION**
 </dt> <dd> <dl> <dt>
 
 14084 (0x3704)
@@ -3135,7 +3135,7 @@ El contexto de activación que se desactiva no es el activado más recientemente
 
 
 
-El contexto de activación que se desactiva no está activo para el subproceso de ejecución actual.
+El contexto de activación que se desactiva no está activo para el subproceso actual de ejecución.
 
 
 </dt> </dl> </dd> <dt>
@@ -3200,7 +3200,7 @@ No se pudo generar el contexto de activación del ensamblado predeterminado del 
 
 
 
-El valor de un atributo en una identidad no está dentro del intervalo legal.
+El valor de un atributo de una identidad no está dentro del intervalo legal.
 
 
 </dt> </dl> </dd> <dt>
@@ -3213,7 +3213,7 @@ El valor de un atributo en una identidad no está dentro del intervalo legal.
 
 
 
-El nombre de un atributo en una identidad no está dentro del intervalo legal.
+El nombre de un atributo de una identidad no está dentro del intervalo legal.
 
 
 </dt> </dl> </dd> <dt>
@@ -3239,12 +3239,12 @@ Una identidad contiene dos definiciones para el mismo atributo.
 
 
 
-La cadena de identidad tiene un formato mal. Esto puede deberse a una coma final, más de dos atributos sin nombre, un nombre de atributo ausente o un valor de atributo que falta.
+La cadena de identidad tiene un formato desaformado. Esto puede deberse a una coma final, más de dos atributos sin nombre, un nombre de atributo que falta o un valor de atributo que falta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MALFORMED_SUBSTITUTION_STRING"></span><span id="error_malformed_substitution_string"></span>**ERROR \_ CADENA DE SUSTITUCIÓN CON \_ FORMATO \_**
+<span id="ERROR_MALFORMED_SUBSTITUTION_STRING"></span><span id="error_malformed_substitution_string"></span>**ERROR \_ CADENA DE SUSTITUCIÓN CON \_ \_ FORMATO**
 </dt> <dd> <dl> <dt>
 
 14094 (0x370E)
@@ -3252,7 +3252,7 @@ La cadena de identidad tiene un formato mal. Esto puede deberse a una coma final
 
 
 
-Una cadena que contiene contenido sustituible localizado tenía un formato mal. Un signo de dólar ($) estaba seguido de algo distinto de un paréntesis izquierdo u otro signo de dólar o no se encontró el paréntesis derecho de una sustitución.
+Una cadena que contiene contenido sustituible localizado no tenía el formato. Un signo de dólar ($) estaba seguido de algo distinto de un paréntesis izquierdo u otro signo de dólar o no se encontró el paréntesis derecho de una sustitución.
 
 
 </dt> </dl> </dd> <dt>
@@ -3270,7 +3270,7 @@ El token de clave pública no se corresponde con la clave pública especificada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNMAPPED_SUBSTITUTION_STRING"></span><span id="error_unmapped_substitution_string"></span>**ERROR \_ UNMAPPED \_ SUBSTITUTION \_ STRING**
+<span id="ERROR_UNMAPPED_SUBSTITUTION_STRING"></span><span id="error_unmapped_substitution_string"></span>**ERROR \_ CADENA DE SUSTITUCIÓN SIN \_ \_ ALA**
 </dt> <dd> <dl> <dt>
 
 14096 (0x3710)
@@ -3309,7 +3309,7 @@ El almacén de componentes está dañado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ADVANCED_INSTALLER_FAILED"></span><span id="error_advanced_installer_failed"></span>**ERROR \_ ADVANCED \_ INSTALLER \_ FAILED**
+<span id="ERROR_ADVANCED_INSTALLER_FAILED"></span><span id="error_advanced_installer_failed"></span>**ERROR ERROR \_ DEL \_ INSTALADOR \_ AVANZADO**
 </dt> <dd> <dl> <dt>
 
 14099 (0x3713)
@@ -3322,7 +3322,7 @@ Error de un instalador avanzado durante la instalación o el mantenimiento.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_XML_ENCODING_MISMATCH"></span><span id="error_xml_encoding_mismatch"></span>**ERROR \_ DE COINCIDENCIA DE \_ CODIFICACIÓN XML \_**
+<span id="ERROR_XML_ENCODING_MISMATCH"></span><span id="error_xml_encoding_mismatch"></span>**ERROR \_ DE COINCIDENCIA DE \_ CODIFICACIÓN \_ XML**
 </dt> <dd> <dl> <dt>
 
 14100 (0x3714)
@@ -3330,7 +3330,7 @@ Error de un instalador avanzado durante la instalación o el mantenimiento.
 
 
 
-La codificación de caracteres de la declaración XML no coincide con la codificación utilizada en el documento.
+La codificación de caracteres en la declaración XML no coincide con la codificación utilizada en el documento.
 
 
 </dt> </dl> </dd> <dt>
@@ -3374,7 +3374,7 @@ El ensamblado no es una implementación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_FILE_NOT_PART_OF_ASSEMBLY"></span><span id="error_sxs_file_not_part_of_assembly"></span>**ERROR SXS FILE NOT PART OF ASSEMBLY (ARCHIVO \_ SXS \_ DE ERROR QUE NO FORMA PARTE DEL \_ \_ \_ \_ ENSAMBLADO)**
+<span id="ERROR_SXS_FILE_NOT_PART_OF_ASSEMBLY"></span><span id="error_sxs_file_not_part_of_assembly"></span>**ERROR \_ SXS FILE NOT PART OF ASSEMBLY (ARCHIVO SXS \_ DE ERROR QUE NO FORMA PARTE DEL \_ \_ \_ \_ ENSAMBLADO)**
 </dt> <dd> <dl> <dt>
 
 14104 (0x3718)
@@ -3387,7 +3387,7 @@ El archivo no forma parte del ensamblado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_MANIFEST_TOO_BIG"></span><span id="error_sxs_manifest_too_big"></span>**ERROR \_ SXS \_ MANIFEST \_ TOO \_ BIG**
+<span id="ERROR_SXS_MANIFEST_TOO_BIG"></span><span id="error_sxs_manifest_too_big"></span>**MANIFIESTO \_ SXS \_ DE ERROR DEMASIADO \_ \_ GRANDE**
 </dt> <dd> <dl> <dt>
 
 14105 (0x3719)
@@ -3400,7 +3400,7 @@ El tamaño del manifiesto supera el máximo permitido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_SETTING_NOT_REGISTERED"></span><span id="error_sxs_setting_not_registered"></span>**ERROR \_ DE CONFIGURACIÓN DE SXS NO \_ \_ \_ REGISTRADA**
+<span id="ERROR_SXS_SETTING_NOT_REGISTERED"></span><span id="error_sxs_setting_not_registered"></span>**ERROR \_ SXS \_ SETTING \_ NOT \_ REGISTERED**
 </dt> <dd> <dl> <dt>
 
 14106 (0x371A)
@@ -3439,7 +3439,7 @@ Error del instalador primitivo de SMI durante la instalación o el mantenimiento
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GENERIC_COMMAND_FAILED"></span><span id="error_generic_command_failed"></span>**ERROR \_ GENERIC \_ COMMAND \_ FAILED**
+<span id="ERROR_GENERIC_COMMAND_FAILED"></span><span id="error_generic_command_failed"></span>**ERROR \_ EN EL COMANDO \_ GENÉRICO \_**
 </dt> <dd> <dl> <dt>
 
 14109 (0x371D)
@@ -3491,7 +3491,7 @@ La consulta especificada no es válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_PUBLISHER_METADATA_NOT_FOUND"></span><span id="error_evt_publisher_metadata_not_found"></span>**ERROR \_ NO SE ENCONTRARON \_ METADATOS DEL \_ \_ PUBLICADOR DE \_ EVT**
+<span id="ERROR_EVT_PUBLISHER_METADATA_NOT_FOUND"></span><span id="error_evt_publisher_metadata_not_found"></span>**ERROR \_ NO SE ENCONTRARON \_ \_ METADATOS DEL \_ PUBLICADOR EVT \_**
 </dt> <dd> <dl> <dt>
 
 15002 (0x3A9A)
@@ -3512,12 +3512,12 @@ Los metadatos del publicador no se pueden encontrar en el recurso.
 
 
 
-No se encuentra la plantilla para una definición de evento en el recurso (error = %1).
+La plantilla para una definición de evento no se encuentra en el recurso (error = %1).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_INVALID_PUBLISHER_NAME"></span><span id="error_evt_invalid_publisher_name"></span>**ERROR \_ EVT \_ NOMBRE DE \_ PUBLICADOR NO \_ VÁLIDO**
+<span id="ERROR_EVT_INVALID_PUBLISHER_NAME"></span><span id="error_evt_invalid_publisher_name"></span>**ERROR \_ EVT \_ INVALID \_ PUBLISHER \_ NAME**
 </dt> <dd> <dl> <dt>
 
 15004 (0x3A9C)
@@ -3543,7 +3543,7 @@ Los datos de evento que genera el publicador no son compatibles con la definici�
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_CHANNEL_NOT_FOUND"></span><span id="error_evt_channel_not_found"></span>**ERROR \_ NO SE ENCONTRÓ EL CANAL \_ \_ EVT \_**
+<span id="ERROR_EVT_CHANNEL_NOT_FOUND"></span><span id="error_evt_channel_not_found"></span>**NO \_ SE ENCONTRÓ EL CANAL \_ EVT DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 15007 (0x3A9F)
@@ -3564,12 +3564,12 @@ No se encontró el canal especificado. Compruebe la configuración del canal.
 
 
 
-El texto XML especificado no tenía el formato correcto. Consulte Error extendido para obtener más detalles.
+El texto xml especificado no tenía el formato correcto. Consulte Error extendido para obtener más detalles.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_SUBSCRIPTION_TO_DIRECT_CHANNEL"></span><span id="error_evt_subscription_to_direct_channel"></span>**ERROR \_ EVT SUBSCRIPTION TO DIRECT CHANNEL (SUSCRIPCIÓN DE EVT \_ DE ERROR AL CANAL \_ \_ \_ DIRECTO)**
+<span id="ERROR_EVT_SUBSCRIPTION_TO_DIRECT_CHANNEL"></span><span id="error_evt_subscription_to_direct_channel"></span>**ERROR \_ DE SUSCRIPCIÓN DE EVT AL CANAL \_ \_ \_ \_ DIRECTO**
 </dt> <dd> <dl> <dt>
 
 15009 (0x3AA1)
@@ -3582,7 +3582,7 @@ El autor de la llamada está intentando suscribirse a un canal directo que no es
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_CONFIGURATION_ERROR"></span><span id="error_evt_configuration_error"></span>**ERROR \_ EVT \_ CONFIGURATION \_ ERROR**
+<span id="ERROR_EVT_CONFIGURATION_ERROR"></span><span id="error_evt_configuration_error"></span>**ERROR \_ DE CONFIGURACIÓN DE EVT \_ \_**
 </dt> <dd> <dl> <dt>
 
 15010 (0x3AA2)
@@ -3603,7 +3603,7 @@ Error de configuración.
 
 
 
-El resultado de la consulta es obsoleto o no válido. Esto puede deberse a que el registro se borra o se redova después de crear el resultado de la consulta. Los usuarios deben controlar este código mediante la publicación del objeto de resultado de la consulta y la reedición de la consulta.
+El resultado de la consulta es obsoleto o no es válido. Esto puede deberse a que el registro se borra o se redova después de crear el resultado de la consulta. Para controlar este código, los usuarios deben liberar el objeto de resultado de la consulta y volver a emitir la consulta.
 
 
 </dt> </dl> </dd> <dt>
@@ -3616,7 +3616,7 @@ El resultado de la consulta es obsoleto o no válido. Esto puede deberse a que e
 
 
 
-El resultado de la consulta está actualmente en una posición no válida.
+El resultado de la consulta se encuentra actualmente en una posición no válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -3668,7 +3668,7 @@ No se puede realizar una operación de paso a partir de un término que no repre
 
 
 
-Los argumentos del lado izquierdo para los operadores binarios deben ser atributos, nodos o variables, y los argumentos del lado derecho deben ser constantes.
+Los argumentos del lado izquierdo de los operadores binarios deben ser atributos, nodos o variables, y los argumentos del lado derecho deben ser constantes.
 
 
 </dt> </dl> </dd> <dt>
@@ -3681,7 +3681,7 @@ Los argumentos del lado izquierdo para los operadores binarios deben ser atribut
 
 
 
-Una operación de paso debe implicar una prueba de nodo o, en el caso de un predicado, se puede evaluar una expresión algebraica con la que probar cada nodo del conjunto de nodos identificado por el conjunto de nodos anterior.
+Una operación de paso debe implicar una prueba de nodo o, en el caso de un predicado, se puede evaluar una expresión algebraica con la que probar cada nodo del conjunto de nodos identificado por el conjunto de nodos preceptor.
 
 
 </dt> </dl> </dd> <dt>
@@ -3707,7 +3707,7 @@ Este tipo de datos no se admite actualmente.
 
 
 
-Error de sintaxis en la posición %1!d!.
+Se produjo un error de sintaxis en la posición %1!d!.
 
 
 </dt> </dl> </dd> <dt>
@@ -3733,7 +3733,7 @@ Esta implementación del filtro no admite este operador.
 
 
 
-El token encontrado era inesperado.
+El token encontrado fue inesperado.
 
 
 </dt> </dl> </dd> <dt>
@@ -4050,7 +4050,7 @@ El cargador de recursos no pudo encontrar el archivo MUI.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUI_INVALID_FILE"></span><span id="error_mui_invalid_file"></span>**ERROR \_ ARCHIVO NO VÁLIDO \_ DE MUI \_**
+<span id="ERROR_MUI_INVALID_FILE"></span><span id="error_mui_invalid_file"></span>**ERROR \_ ARCHIVO NO VÁLIDO DE MUI \_ \_**
 </dt> <dd> <dl> <dt>
 
 15101 (0x3AFD)
@@ -4102,7 +4102,7 @@ El manifiesto rc tiene un nombre ultimatefallback no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUI_FILE_NOT_LOADED"></span><span id="error_mui_file_not_loaded"></span>**ERROR \_ QUE NO SE HA CARGADO EN EL ARCHIVO \_ \_ \_ DE MUI**
+<span id="ERROR_MUI_FILE_NOT_LOADED"></span><span id="error_mui_file_not_loaded"></span>**ERROR \_ NO SE HA CARGADO EL ARCHIVO DE \_ \_ \_ CSV**
 </dt> <dd> <dl> <dt>
 
 15105 (0x3B01)
@@ -4110,7 +4110,7 @@ El manifiesto rc tiene un nombre ultimatefallback no válido.
 
 
 
-La memoria caché del cargador de recursos no tiene una entrada DE LAN cargada.
+La memoria caché del cargador de recursos no tiene la entrada DE LAN cargada.
 
 
 </dt> </dl> </dd> <dt>
@@ -4180,7 +4180,7 @@ Archivo de configuración de PRI no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_INVALID_FILE_TYPE"></span><span id="error_mrm_invalid_file_type"></span>**ERROR \_ MRM \_ INVALID \_ FILE \_ TYPE**
+<span id="ERROR_MRM_INVALID_FILE_TYPE"></span><span id="error_mrm_invalid_file_type"></span>**ERROR \_ TIPO DE ARCHIVO NO VÁLIDO DE \_ \_ \_ MRM**
 </dt> <dd> <dl> <dt>
 
 15112 (0x3B08)
@@ -4305,12 +4305,12 @@ Identificador de recurso no válido.
 
 
 
-Filepath demasiado largo.
+Ruta de archivo demasiado larga.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_UNSUPPORTED_DIRECTORY_TYPE"></span><span id="error_mrm_unsupported_directory_type"></span>**ERROR \_ MRM \_ UNSUPPORTED \_ DIRECTORY \_ TYPE**
+<span id="ERROR_MRM_UNSUPPORTED_DIRECTORY_TYPE"></span><span id="error_mrm_unsupported_directory_type"></span>**ERROR \_ TIPO DE DIRECTORIO NO ADMITIDO DE \_ \_ \_ MRM**
 </dt> <dd> <dl> <dt>
 
 15122 (0x3B12)
@@ -4362,7 +4362,7 @@ No se encontró ResourceMap.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_UNSUPPORTED_PROFILE_TYPE"></span><span id="error_mrm_unsupported_profile_type"></span>**ERROR \_ TIPO DE PERFIL NO ADMITIDO DE \_ \_ \_ MRM**
+<span id="ERROR_MRM_UNSUPPORTED_PROFILE_TYPE"></span><span id="error_mrm_unsupported_profile_type"></span>**ERROR TIPO DE PERFIL NO ADMITIDO \_ \_ DE \_ \_ MRM**
 </dt> <dd> <dl> <dt>
 
 15136 (0x3B20)
@@ -4370,7 +4370,7 @@ No se encontró ResourceMap.
 
 
 
-Tipo de perfil DE MRT no admitido.
+Tipo de perfil de MRT no admitido.
 
 
 </dt> </dl> </dd> <dt>
@@ -4409,7 +4409,7 @@ No se puede determinar el valor del calificador o el valor del calificador no se
 
 
 
-La fusión automática está habilitada en el archivo PRI.
+La opción Automerge está habilitada en el archivo PRI.
 
 
 </dt> </dl> </dd> <dt>
@@ -4435,7 +4435,7 @@ Demasiados recursos definidos para el paquete.
 
 
 
-El monitor devolvió una cadena de funcionalidades de DDC/CI que no cumplía con la especificación ACCESS.bus 3.0, DDC/CI 1.1 o MCCS 2 Revisión 1.
+El monitor devolvió una cadena de funcionalidades de DDC/CI que no se ajustaba a la especificación ACCESS.bus 3.0, DDC/CI 1.1 o MCCS 2 Revision 1.
 
 
 </dt> </dl> </dd> <dt>
@@ -4448,12 +4448,12 @@ El monitor devolvió una cadena de funcionalidades de DDC/CI que no cumplía con
 
 
 
-El código VCP versión (0xDF) de VCP del monitor devolvió un valor de versión no válido.
+El código VCP versión de VCP (0xDF) del monitor devolvió un valor de versión no válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_MONITOR_VIOLATES_MCCS_SPECIFICATION"></span><span id="error_mca_monitor_violates_mccs_specification"></span>**ERROR \_ MCA \_ MONITOR INFRINGE LA \_ \_ ESPECIFICACIÓN DE \_ MCCS**
+<span id="ERROR_MCA_MONITOR_VIOLATES_MCCS_SPECIFICATION"></span><span id="error_mca_monitor_violates_mccs_specification"></span>**ERROR \_ QUE MCA \_ MONITOR INFRINGE LA \_ \_ ESPECIFICACIÓN DE \_ MCCS**
 </dt> <dd> <dl> <dt>
 
 15202 (0x3B62)
@@ -4474,12 +4474,12 @@ El monitor no cumple con la especificación MCCS que dice admitir.
 
 
 
-La versión de MCCS de la funcionalidad mccs ver de un monitor no coincide con la versión de MCCS que el monitor notifica cuando se usa el código VCP de la versión de \_ VCP (0xDF).
+La versión de MCCS en la funcionalidad mccs ver de un monitor no coincide con la versión de MCCS que el monitor notifica cuando se usa el código VCP de la versión de \_ VCP (0xDF).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_UNSUPPORTED_MCCS_VERSION"></span><span id="error_mca_unsupported_mccs_version"></span>**ERROR \_ MCA \_ VERSIÓN DE \_ MCCS NO \_ ADMITIDA**
+<span id="ERROR_MCA_UNSUPPORTED_MCCS_VERSION"></span><span id="error_mca_unsupported_mccs_version"></span>**ERROR \_ MCA \_ NO COMPATIBLE CON LA VERSIÓN DE \_ \_ MCCS**
 </dt> <dd> <dl> <dt>
 
 15204 (0x3B64)
@@ -4513,12 +4513,12 @@ Error interno de la API de configuración de Monitor.
 
 
 
-El monitor devolvió un tipo de tecnología de supervisión no válido. CRT, Crt, Crt y SUPERVISE (TFT) son ejemplos de tipos de tecnología de supervisión. Este error implica que el monitor infringió la especificación MCCS 2.0 o MCCS 2.0 Revisión 1.
+El monitor devolvió un tipo de tecnología de supervisión no válido. CRT, Crt y CRT (TFT) son ejemplos de tipos de tecnología de supervisión. Este error implica que el monitor infringió la especificación MCCS 2.0 o MCCS 2.0 Revision 1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_UNSUPPORTED_COLOR_TEMPERATURE"></span><span id="error_mca_unsupported_color_temperature"></span>**ERROR \_ MCA \_ UNSUPPORTED \_ COLOR \_ TEMPERATURE**
+<span id="ERROR_MCA_UNSUPPORTED_COLOR_TEMPERATURE"></span><span id="error_mca_unsupported_color_temperature"></span>**ERROR \_ TEMPERATURA DE COLOR NO \_ ADMITIDA DE MCA \_ \_**
 </dt> <dd> <dl> <dt>
 
 15207 (0x3B67)
@@ -4526,7 +4526,7 @@ El monitor devolvió un tipo de tecnología de supervisión no válido. CRT, Crt
 
 
 
-El llamador [**de SetMonitorColorTemperature**](/windows/win32/api/highlevelmonitorconfigurationapi/nf-highlevelmonitorconfigurationapi-setmonitorcolortemperature) especificó una temperatura de color que el monitor actual no admite. Este error implica que el monitor infringió la especificación MCCS 2.0 o MCCS 2.0 Revisión 1.
+El [**llamador de SetMonitorColorTemperature**](/windows/win32/api/highlevelmonitorconfigurationapi/nf-highlevelmonitorconfigurationapi-setmonitorcolortemperature) especificó una temperatura de color que el monitor actual no admite. Este error implica que el monitor infringió la especificación MCCS 2.0 o MCCS 2.0 Revision 1.
 
 
 </dt> </dl> </dd> <dt>
@@ -4544,7 +4544,7 @@ El dispositivo del sistema solicitado no se puede identificar debido a que vario
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYSTEM_DEVICE_NOT_FOUND"></span><span id="error_system_device_not_found"></span>**NO SE \_ ENCONTRÓ EL DISPOSITIVO DEL SISTEMA DE \_ \_ \_ ERRORES**
+<span id="ERROR_SYSTEM_DEVICE_NOT_FOUND"></span><span id="error_system_device_not_found"></span>**ERROR \_ NO SE ENCONTRÓ EL DISPOSITIVO DEL \_ \_ \_ SISTEMA**
 </dt> <dd> <dl> <dt>
 
 15299 (0x3BC3)
@@ -4557,7 +4557,7 @@ No se encuentra el dispositivo del sistema solicitado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HASH_NOT_SUPPORTED"></span><span id="error_hash_not_supported"></span>**ERROR \_ HASH \_ NO \_ COMPATIBLE**
+<span id="ERROR_HASH_NOT_SUPPORTED"></span><span id="error_hash_not_supported"></span>**ERROR \_ HASH \_ NO \_ ADMITIDO**
 </dt> <dd> <dl> <dt>
 
 15300 (0x3BC4)
@@ -4583,7 +4583,7 @@ El hash solicitado desde el servidor no está disponible o ya no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECONDARY_IC_PROVIDER_NOT_REGISTERED"></span><span id="error_secondary_ic_provider_not_registered"></span>**ERROR PROVEEDOR \_ DE IC SECUNDARIO NO \_ \_ \_ \_ REGISTRADO**
+<span id="ERROR_SECONDARY_IC_PROVIDER_NOT_REGISTERED"></span><span id="error_secondary_ic_provider_not_registered"></span>**ERROR \_ PROVEEDOR DE IC SECUNDARIO NO \_ \_ \_ \_ REGISTRADO**
 </dt> <dd> <dl> <dt>
 
 15321 (0x3BD9)
@@ -4591,7 +4591,7 @@ El hash solicitado desde el servidor no está disponible o ya no es válido.
 
 
 
-La instancia del controlador de interrupción secundaria que administra la interrupción especificada no está registrada.
+La instancia del controlador de interrupciones secundaria que administra la interrupción especificada no está registrada.
 
 
 </dt> </dl> </dd> <dt>
@@ -4648,7 +4648,7 @@ La operación solicitada no se admite para el identificador especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GPIO_INCOMPATIBLE_CONNECT_MODE"></span><span id="error_gpio_incompatible_connect_mode"></span>**ERROR \_ GPIO \_ MODO DE CONEXIÓN INCOMPATIBLE \_ \_**
+<span id="ERROR_GPIO_INCOMPATIBLE_CONNECT_MODE"></span><span id="error_gpio_incompatible_connect_mode"></span>**ERROR \_ GPIO \_ INCOMPATIBLE \_ CONNECT \_ MODE**
 </dt> <dd> <dl> <dt>
 
 15326 (0x3BDE)
@@ -4687,7 +4687,7 @@ El modificador de nivel de ejecución solicitado no se puede completar correctam
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_RUNLEVEL_SETTING"></span><span id="error_invalid_runlevel_setting"></span>**ERROR \_ DE CONFIGURACIÓN DE \_ RUNLEVEL NO \_ VÁLIDA**
+<span id="ERROR_INVALID_RUNLEVEL_SETTING"></span><span id="error_invalid_runlevel_setting"></span>**ERROR \_ CONFIGURACIÓN \_ DE RUNLEVEL NO \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 15401 (0x3C29)
@@ -4739,7 +4739,7 @@ Actualmente hay un modificador de nivel de ejecución en curso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SERVICES_FAILED_AUTOSTART"></span><span id="error_services_failed_autostart"></span>**ERROR \_ DE INICIO AUTOMÁTICO DE SERVICIOS DE \_ \_ ERROR**
+<span id="ERROR_SERVICES_FAILED_AUTOSTART"></span><span id="error_services_failed_autostart"></span>**ERROR DE \_ INICIO AUTOMÁTICO DE SERVICIOS DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 15405 (0x3C2D)
@@ -4747,7 +4747,7 @@ Actualmente hay un modificador de nivel de ejecución en curso.
 
 
 
-Uno o varios servicios no se pudieron iniciar durante la fase de inicio del servicio de un modificador de nivel de ejecución.
+Uno o varios servicios no se pudieron iniciar durante la fase de inicio del servicio de un conmutador de nivel de ejecución.
 
 
 </dt> </dl> </dd> <dt>
@@ -4760,12 +4760,12 @@ Uno o varios servicios no se pudieron iniciar durante la fase de inicio del serv
 
 
 
-La solicitud de detenerse de la tarea no se puede completar inmediatamente, ya que la tarea necesita más tiempo para cerrarse.
+La solicitud de detención de tareas no se puede completar inmediatamente, ya que la tarea necesita más tiempo para cerrarse.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_OPEN_PACKAGE_FAILED"></span><span id="error_install_open_package_failed"></span>**ERROR \_ AL INSTALAR OPEN PACKAGE \_ \_ \_ FAILED**
+<span id="ERROR_INSTALL_OPEN_PACKAGE_FAILED"></span><span id="error_install_open_package_failed"></span>**ERROR AL \_ INSTALAR \_ OPEN PACKAGE \_ \_ FAILED**
 </dt> <dd> <dl> <dt>
 
 15600 (0x3CF0)
@@ -4804,7 +4804,7 @@ Los datos del paquete no son válidos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_RESOLVE_DEPENDENCY_FAILED"></span><span id="error_install_resolve_dependency_failed"></span>**ERROR AL \_ INSTALAR RESOLVER DEPENDENCIA CON \_ \_ \_ ERROR**
+<span id="ERROR_INSTALL_RESOLVE_DEPENDENCY_FAILED"></span><span id="error_install_resolve_dependency_failed"></span>**ERROR AL \_ INSTALAR \_ RESOLVER \_ \_ DEPENDENCIAS CON ERROR**
 </dt> <dd> <dl> <dt>
 
 15603 (0x3CF3)
@@ -4812,7 +4812,7 @@ Los datos del paquete no son válidos.
 
 
 
-Actualizaciones de paquete con errores, dependencia o validación de conflictos.
+Actualizaciones de paquete con error, dependencia o validación de conflictos.
 
 
 </dt> </dl> </dd> <dt>
@@ -4830,7 +4830,7 @@ No hay suficiente espacio en disco en el equipo. Libera espacio e inténtelo de 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_NETWORK_FAILURE"></span><span id="error_install_network_failure"></span>**ERROR \_ AL INSTALAR EL ERROR DE \_ \_ RED**
+<span id="ERROR_INSTALL_NETWORK_FAILURE"></span><span id="error_install_network_failure"></span>**ERROR AL \_ INSTALAR UN ERROR DE \_ \_ RED**
 </dt> <dd> <dl> <dt>
 
 15605 (0x3CF5)
@@ -4856,7 +4856,7 @@ No se pudo registrar el paquete.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_DEREGISTRATION_FAILURE"></span><span id="error_install_deregistration_failure"></span>**ERROR \_ AL INSTALAR EL ERROR DE \_ DESREGISTRATION \_**
+<span id="ERROR_INSTALL_DEREGISTRATION_FAILURE"></span><span id="error_install_deregistration_failure"></span>**ERROR \_ AL INSTALAR EL \_ REGISTRO \_**
 </dt> <dd> <dl> <dt>
 
 15607 (0x3CF7)
@@ -4869,7 +4869,7 @@ No se pudo anular el registro del paquete.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_CANCEL"></span><span id="error_install_cancel"></span>**ERROR \_ INSTALL \_ CANCEL**
+<span id="ERROR_INSTALL_CANCEL"></span><span id="error_install_cancel"></span>**ERROR \_ AL INSTALAR \_ CANCEL**
 </dt> <dd> <dl> <dt>
 
 15608 (0x3CF8)
@@ -4882,7 +4882,7 @@ El usuario canceló la solicitud de instalación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_FAILED"></span><span id="error_install_failed"></span>**ERROR \_ AL INSTALAR \_**
+<span id="ERROR_INSTALL_FAILED"></span><span id="error_install_failed"></span>**ERROR AL \_ INSTALAR \_**
 </dt> <dd> <dl> <dt>
 
 15609 (0x3CF9)
@@ -4890,7 +4890,7 @@ El usuario canceló la solicitud de instalación.
 
 
 
-Error de instalación. Póngase en contacto con su proveedor de software.
+Error de instalación. Póngase en contacto con el proveedor de software.
 
 
 </dt> </dl> </dd> <dt>
@@ -4903,7 +4903,7 @@ Error de instalación. Póngase en contacto con su proveedor de software.
 
 
 
-Error de eliminación. Póngase en contacto con su proveedor de software.
+Error de eliminación. Póngase en contacto con el proveedor de software.
 
 
 </dt> </dl> </dd> <dt>
@@ -4947,7 +4947,7 @@ No se pudo cumplir un requisito previo para una instalación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PACKAGE_REPOSITORY_CORRUPTED"></span><span id="error_package_repository_corrupted"></span>**REPOSITORIO \_ DE \_ PAQUETES DE ERROR \_ DAÑADO**
+<span id="ERROR_PACKAGE_REPOSITORY_CORRUPTED"></span><span id="error_package_repository_corrupted"></span>**REPOSITORIO \_ DE \_ PAQUETES DE ERRORES \_ DAÑADO**
 </dt> <dd> <dl> <dt>
 
 15614 (0x3CFE)
@@ -4968,7 +4968,7 @@ El repositorio de paquetes está dañado.
 
 
 
-Para instalar esta aplicación, necesita una licencia Windows desarrollador o un sistema habilitado para la instalación local.
+Para instalar esta aplicación, necesita una licencia Windows desarrollador o un sistema habilitado para la instalación de instalación local.
 
 
 </dt> </dl> </dd> <dt>
@@ -5046,7 +5046,7 @@ La firma no es válida. Para registrarse en modo de desarrollador, AppxSignature
 
 
 
-Se produjo un error al eliminar los datos de aplicación existentes anteriormente del paquete.
+Error al eliminar los datos de aplicación existentes anteriormente del paquete.
 
 
 </dt> </dl> </dd> <dt>
@@ -5181,7 +5181,7 @@ Error al cargar el almacén de estado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STATE_GET_VERSION_FAILED"></span><span id="error_state_get_version_failed"></span>**ERROR \_ AL OBTENER LA VERSIÓN DEL ESTADO DE \_ \_ \_ ERROR**
+<span id="ERROR_STATE_GET_VERSION_FAILED"></span><span id="error_state_get_version_failed"></span>**ERROR AL \_ OBTENER LA VERSIÓN DEL ESTADO DE \_ \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 15801 (0x3DB9)
@@ -5194,7 +5194,7 @@ Error al recuperar la versión de estado de la aplicación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STATE_SET_VERSION_FAILED"></span><span id="error_state_set_version_failed"></span>**ERROR \_ STATE \_ SET \_ VERSION \_ FAILED**
+<span id="ERROR_STATE_SET_VERSION_FAILED"></span><span id="error_state_set_version_failed"></span>**ERROR \_ EN LA VERSIÓN DEL CONJUNTO DE \_ \_ ESTADO \_**
 </dt> <dd> <dl> <dt>
 
 15802 (0x3DBA)
@@ -5207,7 +5207,7 @@ Error al establecer la versión de estado de la aplicación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STATE_STRUCTURED_RESET_FAILED"></span><span id="error_state_structured_reset_failed"></span>**ERROR DE \_ RESTABLECIMIENTO \_ ESTRUCTURADO DE ESTADO \_ DE \_ ERROR**
+<span id="ERROR_STATE_STRUCTURED_RESET_FAILED"></span><span id="error_state_structured_reset_failed"></span>**ERROR DE \_ RESTABLECIMIENTO \_ ESTRUCTURADO DEL ESTADO \_ DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 15803 (0x3DBB)
@@ -5259,7 +5259,7 @@ State Manager no pudo eliminar el contenedor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STATE_READ_SETTING_FAILED"></span><span id="error_state_read_setting_failed"></span>**ERROR DE \_ CONFIGURACIÓN DE LECTURA DE ESTADO DE \_ \_ \_ ERROR**
+<span id="ERROR_STATE_READ_SETTING_FAILED"></span><span id="error_state_read_setting_failed"></span>**ERROR EN \_ LA CONFIGURACIÓN DE LECTURA DE \_ \_ ESTADO \_**
 </dt> <dd> <dl> <dt>
 
 15807 (0x3DBF)
@@ -5272,7 +5272,7 @@ State Manager no pudo leer la configuración.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STATE_WRITE_SETTING_FAILED"></span><span id="error_state_write_setting_failed"></span>**ERROR AL \_ ESTABLECER EL ESTADO DE \_ \_ ESCRITURA \_**
+<span id="ERROR_STATE_WRITE_SETTING_FAILED"></span><span id="error_state_write_setting_failed"></span>**ERROR EN \_ LA CONFIGURACIÓN DE ESCRITURA DE \_ \_ ESTADO \_**
 </dt> <dd> <dl> <dt>
 
 15808 (0x3DC0)
@@ -5285,7 +5285,7 @@ State Manager no pudo escribir la configuración.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STATE_DELETE_SETTING_FAILED"></span><span id="error_state_delete_setting_failed"></span>**ERROR AL \_ ESTABLECER \_ LA \_ ELIMINACIÓN DEL ESTADO DE \_ ERROR**
+<span id="ERROR_STATE_DELETE_SETTING_FAILED"></span><span id="error_state_delete_setting_failed"></span>**ERROR AL \_ ESTABLECER \_ LA \_ ELIMINACIÓN DEL ESTADO \_**
 </dt> <dd> <dl> <dt>
 
 15809 (0x3DC1)
@@ -5311,7 +5311,7 @@ State Manager no pudo consultar la configuración.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STATE_READ_COMPOSITE_SETTING_FAILED"></span><span id="error_state_read_composite_setting_failed"></span>**ERROR DE \_ CONFIGURACIÓN COMPUESTA DE LECTURA DE ESTADO DE \_ \_ \_ \_ ERROR**
+<span id="ERROR_STATE_READ_COMPOSITE_SETTING_FAILED"></span><span id="error_state_read_composite_setting_failed"></span>**ERROR EN \_ LA CONFIGURACIÓN COMPUESTA DE LECTURA DE ESTADO DE \_ \_ \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 15811 (0x3DC3)
@@ -5324,7 +5324,7 @@ State Manager no pudo leer la configuración compuesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STATE_WRITE_COMPOSITE_SETTING_FAILED"></span><span id="error_state_write_composite_setting_failed"></span>**ERROR DE \_ CONFIGURACIÓN COMPUESTA DE ESCRITURA DE ESTADO DE \_ \_ \_ \_ ERROR**
+<span id="ERROR_STATE_WRITE_COMPOSITE_SETTING_FAILED"></span><span id="error_state_write_composite_setting_failed"></span>**ERROR EN \_ LA CONFIGURACIÓN COMPUESTA DE ESCRITURA DE ESTADO DE \_ \_ \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 15812 (0x3DC4)
@@ -5337,7 +5337,7 @@ State Manager no pudo escribir la configuración compuesta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STATE_ENUMERATE_CONTAINER_FAILED"></span><span id="error_state_enumerate_container_failed"></span>**ERROR AL \_ \_ ENUMERAR CONTENEDOR \_ DE ESTADO \_ DE ERROR**
+<span id="ERROR_STATE_ENUMERATE_CONTAINER_FAILED"></span><span id="error_state_enumerate_container_failed"></span>**ERROR \_ AL \_ ENUMERAR CONTENEDOR DE \_ \_ ESTADO**
 </dt> <dd> <dl> <dt>
 
 15813 (0x3DC5)
@@ -5436,11 +5436,11 @@ Esta API no se puede usar en el contexto del tipo de aplicación del autor de la
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

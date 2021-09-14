@@ -4,12 +4,12 @@ ms.assetid: 088156f7-fb75-4fcf-b928-87e97b13bdab
 title: Parámetros de agrupación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3083c3a7ad0971d6d3334303cf9eaf4c0313c4482825c3623a04a12ae046b665
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ecfb674d4349f351ce36fe1e236d1ecd3b265d8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119018373"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164974"
 ---
 # <a name="grouping-parameters"></a>Parámetros de agrupación
 
@@ -26,15 +26,15 @@ Los parámetros de agrupación ayudan a reducir el número de controles de volum
 
 Como se explicó anteriormente, las API de audio de nivel superior normalmente asignan sus secuencias a la sesión predeterminada específica del proceso (identificada por el valor GUID de sesión GUID \_ NULL). Este valor predeterminado permite a Sndvol mostrar un control de volumen independiente para cada proceso de aplicación cliente, que suele ser el comportamiento deseado. Además, si varias instancias del mismo cliente se ejecutan en procesos independientes pero requieren un único control de volumen compartido, los clientes pueden asignar simplemente sus secuencias a la misma sesión entre procesos. Ninguno de estos casos requiere el uso de parámetros de agrupación. Sin embargo, un caso importante, como se ejemplifica en Microsoft Internet Explorer, requiere el uso de parámetros de agrupación para lograr el comportamiento deseado.
 
-Internet Explorer permite a los usuarios abrir varias ventanas del explorador y es posible que estas ventanas no se ejecuten en el mismo proceso. Es posible que los usuarios se confundan si Sndvol muestra un control de volumen independiente para cada instancia de aplicación, todos con la misma etiqueta, "Internet Explorer". Una sesión entre procesos no es una solución factible en este caso: si varias instancias de Internet Explorer se ejecutan en procesos diferentes, es posible que no puedan asignar todas sus secuencias de audio a una sola sesión entre procesos. El motivo es que las ventanas Internet Explorer pueden estar ejecutando instancias de Reproductor de Windows Media o algún otro complemento multimedia que use una API de audio de nivel superior para reproducir sus secuencias de audio. Estas API suelen asignar las secuencias de un proceso a una sesión predeterminada específica del proceso. Internet Explorer control sobre la asignación de estos flujos a sesiones.
+Internet Explorer permite a los usuarios abrir varias ventanas del explorador y es posible que estas ventanas no se ejecuten en el mismo proceso. Los usuarios podrían confundirse si Sndvol mostrara un control de volumen independiente para cada instancia de aplicación, todos con la misma etiqueta, "Internet Explorer". Una sesión entre procesos no es una solución factible en este caso: si varias instancias de Internet Explorer se ejecutan en procesos diferentes, es posible que no puedan asignar todas sus secuencias de audio a una sola sesión entre procesos. El motivo es que las ventanas de Internet Explorer pueden estar ejecutando instancias de Reproductor de Windows Media o algún otro complemento multimedia que use una API de audio de nivel superior para reproducir sus secuencias de audio. Estas API suelen asignar las secuencias de un proceso a una sesión predeterminada específica del proceso. Internet Explorer control sobre la asignación de estos flujos a sesiones.
 
-WASAPI resuelve este problema al permitir que cada instancia de Internet Explorer acceda a los controles de sesión de su sesión predeterminada específica del proceso y asigne un parámetro de agrupación a esa sesión. Si todas las instancias de Internet Explorer asignar el mismo parámetro de agrupación a todas sus sesiones de audio, Sndvol mostrará un control de volumen único para estas sesiones.
+WASAPI resuelve este problema al permitir que cada instancia de Internet Explorer acceda a los controles de sesión de su sesión predeterminada específica del proceso y asigne un parámetro de agrupación a esa sesión. Si todas las instancias de Internet Explorer el mismo parámetro de agrupación a todas sus sesiones de audio, Sndvol mostrará un control de volumen único para estas sesiones.
 
 De forma predeterminada, una sesión no pertenece a ninguna agrupación. Si un cliente no asigna explícitamente una sesión a una agrupación, Sndvol muestra un control de volumen dedicado para esa sesión. El valor de parámetro de agrupación \_ GUID NULL indica que una sesión no pertenece a ninguna agrupación. Si ningún cliente ha asignado explícitamente un parámetro de agrupación a una sesión, el valor del parámetro de agrupación para esa sesión es NULL \_ GUID de forma predeterminada.
 
 Un cliente puede cambiar dinámicamente la agrupación a la que se asigna una sesión.
 
-Una agrupación puede incluir cualquier combinación de sesiones entre procesos y sesiones específicas del proceso en un dispositivo de [punto de conexión de audio.](audio-endpoint-devices.md)
+Una agrupación puede incluir cualquier combinación de sesiones entre procesos y sesiones específicas del proceso en un dispositivo [de punto de conexión de audio.](audio-endpoint-devices.md)
 
 La interfaz de usuario de Sndvol permite al usuario mostrar los controles de volumen solo para un dispositivo de punto de conexión de audio a la vez. Cuando el usuario ajusta los controles de volumen de un dispositivo determinado, los niveles de volumen de las sesiones que se conectan a otros dispositivos no se ven afectados. En concreto, un control de volumen para un parámetro de agrupación determinado solo afecta a las sesiones que comparten el parámetro de agrupación y están conectadas al dispositivo seleccionado actualmente. Una sesión que tiene un parámetro de agrupación idéntico pero está conectada a otro dispositivo no se ve afectada.
 

@@ -4,12 +4,12 @@ ms.assetid: 54f42bda-b4a0-465c-9ce6-9102d2908776
 title: Roles de dispositivo para DirectShow aplicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56e22a86e5537f11b6b4153753841a2682b5ac77a043a3fa74538714a2540377
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df8b43ddd56870b65fc9ec1e3bb600e8e6b79528
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957364"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165057"
 ---
 # <a name="device-roles-for-directshow-applications"></a>Roles de dispositivo para DirectShow aplicaciones
 
@@ -18,15 +18,15 @@ ms.locfileid: "118957364"
 
  
 
-La API DirectShow no proporciona un medio para que una aplicación seleccione el dispositivo de punto de conexión de [audio](audio-endpoint-devices.md) asignado a un rol de [dispositivo determinado.](device-roles.md) Sin embargo, Windows Vista, las API de audio principales se pueden usar junto con una aplicación DirectShow para habilitar la selección de dispositivos en función del rol de dispositivo. Con la ayuda de las API de audio principales, la aplicación puede:
+La DIRECTSHOW API no proporciona un medio para que una aplicación seleccione el dispositivo de punto de conexión de [audio](audio-endpoint-devices.md) asignado a un rol de [dispositivo determinado.](device-roles.md) Sin embargo, en Windows Vista, las API de audio principales se pueden usar junto con una aplicación DirectShow para habilitar la selección de dispositivos en función del rol del dispositivo. Con la ayuda de las API de audio principales, la aplicación puede:
 
 -   Identifique el dispositivo de punto de conexión de audio que el usuario ha asignado a un rol de dispositivo determinado.
 -   Cree un DirectShow de representación de audio con una [**interfaz IBaseFilter**](/windows/desktop/api/strmif/nn-strmif-ibasefilter) que encapsula el dispositivo de punto de conexión de audio.
--   Cree un DirectShow gráfico que incorpore el filtro.
+-   Cree un DirectShow que incorpore el filtro.
 
 Para obtener más información sobre DirectShow [**e IBaseFilter,**](/windows/desktop/api/strmif/nn-strmif-ibasefilter)consulte la documentación Windows SDK.
 
-En el ejemplo de código siguiente se muestra cómo crear un filtro de representación de audio DirectShow que encapsula el dispositivo del punto de conexión de representación asignado a un rol de dispositivo determinado:
+En el ejemplo de código siguiente se muestra cómo crear un filtro de representación de audio DirectShow que encapsula el dispositivo de punto de conexión de representación asignado a un rol de dispositivo determinado:
 
 
 ```C++
@@ -96,9 +96,9 @@ Exit:
 
 
 
-En el ejemplo de código anterior, la función CreateAudioRenderer acepta un rol de dispositivo (eConsole, eMultimedia o eCommunications) como parámetro de entrada. El segundo parámetro es un puntero a través del cual la función escribe la dirección de una instancia de [**interfaz IBaseFilter.**](/windows/desktop/api/strmif/nn-strmif-ibasefilter) Además, en el ejemplo se muestra cómo usar el método [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para asignar la secuencia de audio de la instancia de **IBaseFilter** a una sesión de audio entre procesos con un GUID de sesión específico de la aplicación (especificado por la **constante guidAudioSessionId).** El tercer parámetro de la llamada **a Activate** apunta a una estructura que contiene el GUID de sesión y la marca de proceso cruzado. Si el usuario ejecuta varias instancias de la aplicación, las secuencias de audio de todas las instancias usan el mismo GUID de sesión y, por tanto, pertenecen a la misma sesión.
+En el ejemplo de código anterior, la función CreateAudioRenderer acepta un rol de dispositivo (eConsole, eMultimedia o eCommunications) como parámetro de entrada. El segundo parámetro es un puntero a través del cual la función escribe la dirección de una instancia de [**interfaz IBaseFilter.**](/windows/desktop/api/strmif/nn-strmif-ibasefilter) Además, en el ejemplo se muestra cómo usar el método [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para asignar la secuencia de audio de la instancia **de IBaseFilter** a una sesión de audio entre procesos con un GUID de sesión específico de la aplicación (especificado por la **constante guidAudioSessionId).** El tercer parámetro de la llamada **a Activate** apunta a una estructura que contiene el GUID de sesión y la marca de proceso cruzado. Si el usuario ejecuta varias instancias de la aplicación, las secuencias de audio de todas las instancias usan el mismo GUID de sesión y, por tanto, pertenecen a la misma sesión.
 
-Como alternativa, el autor de la llamada puede especificar **NULL** como tercer parámetro en la llamada [**Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para asignar la secuencia a la sesión predeterminada como sesión específica del proceso con el VALOR GUID de sesión \_ NULL. Para obtener más información, **vea IMMDevice::Activate**.
+Como alternativa, el autor de la llamada [](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) puede especificar **NULL** como tercer parámetro en la llamada Activate para asignar la secuencia a la sesión predeterminada como sesión específica del proceso con el valor GUID DE sesión \_ NULL. Para obtener más información, **vea IMMDevice::Activate**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

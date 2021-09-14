@@ -4,12 +4,12 @@ ms.assetid: 61cf055b-eb9a-4e56-9d36-21fc95adea77
 title: Funciones estructuradas de control de excepciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 947cde636051e6d51428b1d75b7d299ce196b0f4335e096f99d6da6a277ae259
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c70b431be2961a55bba28bdfe07723e93b95ac69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119815505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164629"
 ---
 # <a name="structured-exception-handling-functions"></a>Funciones estructuradas de control de excepciones
 
@@ -71,7 +71,7 @@ Las funciones siguientes se usan en el control estructurado de excepciones.
 
     Función definida por la aplicación que actúa como controlador de excepciones vectorial.
 
-Las siguientes funciones solo se usan en funciones de 64 Windows.
+Las funciones siguientes solo se usan en las funciones de 64 Windows.
 
 -   [**RtlAddFunctionTable**](/windows/desktop/api/WinNT/nf-winnt-rtladdfunctiontable)
 

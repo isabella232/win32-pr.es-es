@@ -1,6 +1,6 @@
 ---
 title: Sistema de nombres de dominio
-description: Domain Name System (DNS), un servicio de localizador de Microsoft Windows, es un protocolo estándar del sector que busca equipos en una red basada en IP.
+description: Domain Name System (DNS), un servicio de localizador de Microsoft Windows, es un protocolo estándar del sector que localiza equipos en una red basada en IP.
 ms.assetid: 4d1c2151-3995-4e7f-881b-4466bd7b7bb7
 keywords:
 - DNS
@@ -9,22 +9,22 @@ keywords:
 - Sistema de nombres de dominio, página de inicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9762fd6a46b9fe0fd07b5b75a8e06c31819100b5548a51286ef753cf43447888
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d705c15fccb0ab237bc610ae4129f6d7002c4a2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119825345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164717"
 ---
 # <a name="domain-name-system"></a>Sistema de nombres de dominio
 
 ## <a name="purpose"></a>Propósito
 
-Domain Name System (DNS), un servicio de localizador de Microsoft Windows, es un protocolo estándar del sector que busca equipos en una red basada en IP. Las redes IP, como Internet y Windows, se basan en direcciones basadas en números para procesar los datos. Sin embargo, los usuarios pueden recordar más fácilmente las direcciones de nombre, por lo que es necesario traducir nombres descriptivos (como ) en direcciones que la red pueda reconocer (por ejemplo, `www.microsoft.com` 207.46.131.137).
+Domain Name System (DNS), un servicio de localizador de Microsoft Windows, es un protocolo estándar del sector que localiza equipos en una red basada en IP. Las redes IP, como Internet y Windows, se basan en direcciones basadas en números para procesar los datos. Sin embargo, los usuarios pueden recordar más fácilmente las direcciones de nombre, por lo que es necesario traducir nombres descriptivos (como ) en direcciones que la red pueda reconocer `www.microsoft.com` (por ejemplo, 207.46.131.137).
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
-Windows y Active Directory DNS. DNS es el servicio de localizador principal para Internet y Active Directory y, por lo tanto, DNS se considera un servicio base para Windows y Active Directory.
+Windows y Active Directory dns. DNS es el servicio de localizador principal para Internet y Active Directory y, por lo tanto, DNS se considera un servicio base para Windows y Active Directory.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
@@ -44,7 +44,7 @@ DNS se usa en todas las redes IP que requieren un servicio de localizador compat
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | [Documentos de estándares DNS](dns-standards-documents.md)<br/> | Vínculos a documentos de estándares DNS públicos.<br/>                                  |
 | [Acerca de DNS](about-dns.md)<br/>                             | Información general sobre DNS.<br/>                                            |
-| [Referencia de DNS](dns-reference.md)<br/>                     | Documentación de referencia para DNS.<br/>                                          |
+| [Referencia de DNS](dns-reference.md)<br/>                     | Documentación de referencia de DNS.<br/>                                          |
 | [Proveedor WMI de DNS](dns-wmi-provider.md)<br/>               | Información general y documentación de referencia para el proveedor WMI de DNS.<br/> |
 | [Glosario](glossary-gly.md)<br/>                           | Glosario de términos y definiciones de DNS.<br/>                                    |
 

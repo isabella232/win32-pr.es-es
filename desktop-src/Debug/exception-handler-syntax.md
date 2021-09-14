@@ -4,12 +4,12 @@ ms.assetid: 1ea2c7f7-f920-4c72-bc62-4eb5e8d70790
 title: Exception-Handler sintaxis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcd24b3ffc84a3469c7c8d97ce505a0292ee538ea8f0b9c1d604bf34f65203ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11eff9e6ca5d16a71b416f79a09f46795592a696
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119912745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164657"
 ---
 # <a name="exception-handler-syntax"></a>Exception-Handler sintaxis
 
@@ -43,7 +43,7 @@ El sistema evalúa la expresión de filtro de cada controlador de excepciones qu
 
 | Value                              | Significado                                                                                                                                                                                                                |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **EXCEPTION \_ EXECUTE \_ HANDLER**    | El sistema transfiere el control al controlador de excepciones y la ejecución continúa en el marco de pila en el que se encuentra el controlador.                                                                                       |
+| **CONTROLADOR \_ DE EJECUCIÓN DE \_ EXCEPCIONES**    | El sistema transfiere el control al controlador de excepciones y la ejecución continúa en el marco de pila en el que se encuentra el controlador.                                                                                       |
 | **EXCEPTION \_ CONTINUE \_ SEARCH**    | El sistema continúa buscando un controlador.                                                                                                                                                                          |
 | **EXCEPTION \_ CONTINUE \_ EXECUTION** | El sistema detiene la búsqueda de un controlador y devuelve el control al punto en el que se produjo la excepción. Si la excepción no es pertinente, se produce una excepción **EXCEPTION \_ NONCONTINUABLE \_ EXCEPTION.** |
 

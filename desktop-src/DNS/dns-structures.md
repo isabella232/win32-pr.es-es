@@ -10,11 +10,11 @@ ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
 ms.openlocfilehash: 832508a5b483dec15fb00b09c92b55dd840279ec
-ms.sourcegitcommit: 9942a888f172981e276def0c6b84fb0266fcb02d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123399790"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164721"
 ---
 # <a name="dns-structures"></a>Estructuras DNS
 

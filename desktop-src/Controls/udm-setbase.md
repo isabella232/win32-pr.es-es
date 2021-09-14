@@ -1,6 +1,6 @@
 ---
 title: UDM_SETBASE mensaje (Commctrl.h)
-description: Establece la base de base de base para un control de arriba a abajo. El valor base determina si la ventana de compañeros muestra números en dígitos decimales o hexadecimales. Los números hexadecimales siempre son sin signo y los números decimales están firmados.
+description: Establece la base base de base para un control de flechas. El valor base determina si la ventana de compañeros muestra números en dígitos decimales o hexadecimales. Los números hexadecimales siempre son sin signo y los números decimales están firmados.
 ms.assetid: c76cdec1-e73b-4b4b-89be-9a00ff2ea172
 keywords:
 - UDM_SETBASE controles de Windows mensaje
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f9fd3750a70e676c3e9f32efe9ff0bfd9b300b812d09f4a04c34e4a90f36933
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d6bcd7d6154b4ba732e5ffbbec889b326ec8176
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118669083"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165489"
 ---
 # <a name="udm_setbase-message"></a>Mensaje \_ SETBASE de UDM
 
-Establece la base de base de base para un control de arriba a abajo. El valor base determina si la ventana de compañeros muestra números en dígitos decimales o hexadecimales. Los números hexadecimales siempre son sin signo y los números decimales están firmados.
+Establece la base base de base para un control de flechas. El valor base determina si la ventana de compañeros muestra números en dígitos decimales o hexadecimales. Los números hexadecimales siempre son sin signo y los números decimales están firmados.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -51,7 +51,7 @@ El valor devuelto es el valor base anterior. Si se especifica una base no válid
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ description: En este tema se muestra cómo crear un cuadro de diálogo que conti
 ms.assetid: 742DF606-9998-46D0-8D0A-F79508AAFFC0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 597c3e611f53af56a42f837c4d85a43f97ff846e371314b130d72c568aaf860e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0d5d39a4c9fbc806de6ca151606e770eb0cea9b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117829125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165434"
 ---
 # <a name="how-to-create-a-single-line-edit-control"></a>Cómo crear un control de edición de una sola línea
 
@@ -30,7 +30,7 @@ El control de edición de una sola línea tiene el [**estilo ES \_ PASSWORD.**](
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación

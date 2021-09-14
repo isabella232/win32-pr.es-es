@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81285d2e0aa5c9a8b65eabf7c5b23d02da3acf02ac13e3274accce340530024f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dec8f0ec2200d1f18e48c068b581b42868db197b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120088415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165457"
 ---
-# <a name="udn_deltapos-notification-code"></a>Código de notificación deltapos de UDN \_
+# <a name="udn_deltapos-notification-code"></a>Código de notificación DELTAPOS de UDN \_
 
 Enviado por el sistema operativo a la ventana primaria de un control hacia abajo cuando la posición del control está a punto de cambiar. Esto sucede cuando el usuario solicita un cambio en el valor presionando la flecha arriba o abajo del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -49,23 +49,23 @@ Puntero a una [**estructura NMUPDOWN**](/windows/win32/api/commctrl/ns-commctrl-
 
 Devuelve un valor distinto de cero para evitar el cambio en la posición del control o cero para permitir el cambio.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El código de notificación DELTAPOS de UDN se envía antes del mensaje \_ [**WM \_ VSCROLL**](wm-vscroll.md) o [**WM \_ HSCROLL,**](wm-hscroll.md) que realmente cambia la posición del control. Esto le permite examinar, permitir, modificar o no permitir el cambio.
+El código de notificación UDN DELTAPOS se envía antes del mensaje \_ [**WM \_ VSCROLL**](wm-vscroll.md) o [**WM \_ HSCROLL,**](wm-hscroll.md) que cambia realmente la posición del control. Esto le permite examinar, permitir, modificar o no permitir el cambio.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 2dffd86a-162c-4e09-bfa1-73b87522741a
 title: Control de entrada y salida del dispositivo (IOCTL)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f5885ad3eb327e9c2df07977c7a1e16cbc962a9466b019ce8e14cbb3a3a82b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce2bb2ee26c63c2aad02d8e8d167ff12383fc6b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118004623"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164422"
 ---
 # <a name="device-input-and-output-control-ioctl"></a>Control de entrada y salida del dispositivo (IOCTL)
 

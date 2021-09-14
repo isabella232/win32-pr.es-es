@@ -4,18 +4,18 @@ ms.assetid: e33634bb-5db5-4197-889d-82caf2e74191
 title: PageBlackGenerationProcessingGrayComponentReplacementLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c53c4d896f41fe084581555c3706852bfbd905c6e30044b71b848dbc60420e2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8499c8521b974d01657c171a99e86e738c82b4e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120112315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168061"
 ---
 # <a name="pageblackgenerationprocessinggraycomponentreplacementlevel"></a>PageBlackGenerationProcessingGrayComponentReplacementLevel
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica el porcentaje de reemplazo de componentes grises que se realizará.
+Especifica el porcentaje de reemplazo de componentes grises que se debe realizar.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -76,7 +76,7 @@ En la tabla siguiente se describen las características de las variables definid
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | 100<br/>             |
 | MinValue<br/>     | integer<br/> | 0<br/>               |
-| Varios<br/>     | integer<br/> | 1<br/>               |
+| Múltiple<br/>     | integer<br/> | 1<br/>               |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | percent<br/>         |
 
@@ -88,7 +88,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

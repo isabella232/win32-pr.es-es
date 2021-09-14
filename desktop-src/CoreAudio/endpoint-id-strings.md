@@ -4,12 +4,12 @@ ms.assetid: 3c955e2d-daaa-4b77-8ca5-890383bb2d39
 title: Cadenas de identificador de punto de conexión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92fdfbf12f3e037a23163bb3e8fef525db89c15904328c9e0fd8a71e5de004b2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f04c07da78b92795ebadd7d8f9731f7188ae8dc3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957314"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165005"
 ---
 # <a name="endpoint-id-strings"></a>Cadenas de identificador de punto de conexión
 
@@ -25,7 +25,7 @@ Las API de audio heredadas, como Direct Sound y las Windows multimedia, tienen s
 
 Durante la enumeración de dispositivos Direct Sound, Direct Sound proporciona la cadena de identificador de punto de conexión para cada dispositivo que enumera. Para obtener más información, vea [Eventos de audio para aplicaciones de audio heredadas.](audio-events-for-legacy-audio-applications.md)
 
-Para obtener la cadena de identificador de punto de conexión para un dispositivo de onda heredado, use la función [**waveOutMessage**](/previous-versions//dd743865(v=vs.85)) o [**waveInMessage**](/previous-versions//dd743846(v=vs.85)) para enviar un mensaje QUERYFUNCTIONINSTANCEID DRV al controlador de dispositivo de forma de \_ onda. Para obtener un ejemplo de código que muestra el uso de este mensaje, vea Roles de dispositivo para aplicaciones [Windows multimedia heredadas.](device-roles-for-legacy-windows-multimedia-applications.md)
+Para obtener la cadena de identificador de punto de conexión para un dispositivo de forma de onda heredado, use la función [**waveOutMessage**](/previous-versions//dd743865(v=vs.85)) o [**waveInMessage**](/previous-versions//dd743846(v=vs.85)) para enviar un mensaje QUERYFUNCTIONINSTANCEID de DRV al controlador de dispositivo de forma de \_ onda. Para obtener un ejemplo de código que muestra el uso de este mensaje, vea Roles de dispositivo para aplicaciones [Windows multimedia heredadas.](device-roles-for-legacy-windows-multimedia-applications.md)
 
 Para obtener más información sobre el uso de las funcionalidades de las API de audio principales para mejorar las aplicaciones que usan API de audio heredadas, consulte Interoperabilidad con api [de audio heredadas.](interoperability-with-legacy-audio-apis.md)
 

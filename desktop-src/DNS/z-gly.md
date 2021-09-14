@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: d1704296-3b89-42d2-9451-dc79357a635e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4d04483462656000f561b77c329be30a7741436747d89c6b6ed154241925ca3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e9ed64f93cf122df3d997a4cafd4bb5eeb93c91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119076539"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164678"
 ---
 # <a name="z-dns"></a>Z (DNS)
 

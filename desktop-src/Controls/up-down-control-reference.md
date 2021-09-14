@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre los elementos de programa
 ms.assetid: 48c6b4bd-65b4-4388-959e-efffa7658274
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2979ac08889761cb7f226b58a9d951d407bc82420957ed9327de1a880d0d9bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8364eb44ee01e27439c82d1d77e674bfb9e3165
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119018593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165453"
 ---
 # <a name="up-down-control"></a>Up-Down control
 
@@ -45,7 +45,7 @@ Esta sección contiene información sobre los elementos de programación usados 
 
 | Tema                                                 | Contenido                                                                                                                                                                                                                               |
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UDM \_ GETACCEL**](udm-getaccel.md)                 | Recupera información de aceleración para un control de flechas. <br/>                                                                                                                                                                 |
+| [**UDM \_ GETACCEL**](udm-getaccel.md)                 | Recupera la información de aceleración de un control de flechas. <br/>                                                                                                                                                                 |
 | [**UDM \_ GETBASE**](udm-getbase.md)                   | Recupera la base base de base actual (es decir, base 10 o 16) para un control de flechas. <br/>                                                                                                                                   |
 | [**UDM \_ GETBUDDY**](udm-getbuddy.md)                 | Recupera el identificador en la ventana actual del compañero. <br/>                                                                                                                                                                          |
 | [**UDM \_ GETPOS**](udm-getpos.md)                     | Recupera la posición actual de un control hacia abajo con una precisión de 16 bits. <br/>                                                                                                                                                |
@@ -53,7 +53,7 @@ Esta sección contiene información sobre los elementos de programación usados 
 | [**UDM \_ GETRANGE**](udm-getrange.md)                 | Recupera las posiciones mínima y máxima (intervalo) de un control de flechas. <br/>                                                                                                                                                |
 | [**UDM \_ GETRANGE32**](udm-getrange32.md)             | Recupera el intervalo de 32 bits de un control de flechas. <br/>                                                                                                                                                                          |
 | [**UDM \_ GETUNICODEFORMAT**](udm-getunicodeformat.md) | Recupera la marca de formato de caracteres Unicode para el control . <br/>                                                                                                                                                               |
-| [**UDM \_ SETACCEL**](udm-setaccel.md)                 | Establece la aceleración de un control de flechas. <br/>                                                                                                                                                                              |
+| [**UDM \_ SETACCEL**](udm-setaccel.md)                 | Establece la aceleración de un control de flecha hacia abajo. <br/>                                                                                                                                                                              |
 | [**UDM \_ SETBASE**](udm-setbase.md)                   | Establece la base base de base para un control de flechas. El valor base determina si la ventana de compañeros muestra números en dígitos decimales o hexadecimales. Los números hexadecimales siempre son sin signo y los números decimales están firmados. <br/> |
 | [**UDM \_ SETBUDDY**](udm-setbuddy.md)                 | Establece la ventana del compañero para un control de flechas. <br/>                                                                                                                                                                              |
 | [**UDM \_ SETPOS**](udm-setpos.md)                     | Establece la posición actual de un control de arriba a abajo con precisión de 16 bits. <br/>                                                                                                                                                    |
@@ -85,7 +85,7 @@ Esta sección contiene información sobre los elementos de programación usados 
 
 | Tema                        | Contenido                                                                                                                                          |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**NMUPDOWN**](/windows/win32/api/commctrl/ns-commctrl-nmupdown) | Contiene información específica de los mensajes de notificación de control hacia abajo. Es idéntico a y reemplaza la estructura **\_ UPDOWN de NM.** <br/> |
+| [**NMUPDOWN**](/windows/win32/api/commctrl/ns-commctrl-nmupdown) | Contiene información específica de los mensajes de notificación de control de flechas. Es idéntico a y reemplaza la estructura **\_ UPDOWN de NM.** <br/> |
 | [**UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel)   | Contiene información de aceleración para un control de flechas. <br/>                                                                             |
 
 

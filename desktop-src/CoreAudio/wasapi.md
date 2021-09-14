@@ -4,12 +4,12 @@ ms.assetid: 452b9725-b0b9-4888-bbb5-a23e0067e840
 title: Acerca de WASAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3effb34ec0cde0a53d0eb6f6e9718aa13fc308417b33427f168364afc32086ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f869319f3100b797e58c7b43597869c9767ac037
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120088185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164761"
 ---
 # <a name="about-wasapi"></a>Acerca de WASAPI
 
@@ -23,7 +23,7 @@ El motor de audio es el [componente de audio en modo de usuario a](user-mode-aud
 
 WASAPI consta de varias interfaces. La primera de ellas es la [**interfaz IAudioClient.**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclient) Para acceder a las interfaces WASAPI, un cliente obtiene primero una referencia a la interfaz **IAudioClient** de un dispositivo de punto de conexión de audio mediante una llamada al método [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) con el parámetro *iid* establecido en **REFIID** \_ IAudioClient. El cliente llama al [**método IAudioClient::Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize) para inicializar una secuencia en un dispositivo de punto de conexión. Después de inicializar una secuencia, el cliente puede obtener referencias a las otras interfaces WASAPI llamando al [**método IAudioClient::GetService.**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getservice)
 
-Muchos de los métodos de WASAPI devuelven código de error AUDCLNT E DEVICE INVALIDATED si el dispositivo de punto de conexión de audio que usa una aplicación cliente \_ \_ deja de ser \_ válido. Con frecuencia, la aplicación puede recuperarse de este error. Para obtener más información, vea [Recuperación de una Invalid-Device error](recovering-from-an-invalid-device-error.md).
+Muchos de los métodos de WASAPI devuelven código de error AUDCLNT E DEVICE INVALIDATED si el dispositivo de punto de conexión de audio que usa una aplicación cliente \_ \_ deja de ser \_ válido. Con frecuencia, la aplicación puede recuperarse de este error. Para obtener más información, [vea Recuperación de una Invalid-Device error](recovering-from-an-invalid-device-error.md).
 
 WASAPI implementa las interfaces siguientes.
 

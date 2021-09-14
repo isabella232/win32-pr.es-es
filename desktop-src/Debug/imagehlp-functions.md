@@ -4,12 +4,12 @@ ms.assetid: 926f412e-25ba-4f9c-a118-b5a1bc723379
 title: ImageHlp (Funciones)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2650d80dfb78f346a5fab22e0adfabdfb11c8e626ad3b5ea39930337feaebe8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16e921707474f68e288f67e84dda9e361922bca0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164638"
 ---
 # <a name="imagehlp-functions"></a>ImageHlp (Funciones)
 

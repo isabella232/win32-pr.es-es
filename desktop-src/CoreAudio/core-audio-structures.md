@@ -4,16 +4,16 @@ ms.assetid: 92585cd4-baa9-4f75-816e-b83f5badad37
 title: Estructuras de audio principales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ec8ea83d0de4c07c1a3d36bab169d5cb581e82cf60e84e308d04dff49af0dac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 078f49ac7abce8fc2773549df26431b780550c1b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118407219"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165078"
 ---
 # <a name="core-audio-structures"></a>Estructuras de audio principales
 
-En esta sección se describen las estructuras que usan core audio API en Windows Vista y versiones posteriores.
+En esta sección se describen las estructuras que usan las API de audio principales en Windows Vista y versiones posteriores.
 
 
 

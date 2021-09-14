@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9244fd7a848adc3f2d82f48177482c0ffb8cbe1484bc501accfb7ffab3aefbc1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2953ca0cf272b102a08fba0516d4891dccde9daf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118408251"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165573"
 ---
 # <a name="tvn_deleteitem-notification-code"></a>Código de notificación DELETEITEM de TVN \_
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMTREEVIEW.**](/windows/win32/api/commctrl/ns-commct
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el **miembro lParam** de la estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) apunta a la memoria asignada por la aplicación, puede liberarla cuando reciba el código de notificación \_ DELETEITEM de TVN.
 
@@ -59,11 +59,11 @@ Si el **miembro lParam** de la estructura [**TVITEM**](/windows/win32/api/commct
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ DELETEITEMW** (Unicode) y **TVN \_ DELETEITEMA** (ANSI)<br/>             |
 
 

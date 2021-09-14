@@ -1,19 +1,19 @@
 ---
-description: La propiedad PKEY Device DeviceDesc contiene la descripción del dispositivo del punto de conexión \_ \_ (por ejemplo, &\# 0034; Altavoces&\# 0034;).
+description: La propiedad PKEY Device DeviceDesc contiene la descripción del dispositivo del punto de conexión \_ \_ (por ejemplo, &\# 0034; Los&\# 0034;).
 ms.assetid: 23715497-a74d-4dab-aade-c7779fe80aa6
 title: PKEY_Device_DeviceDesc (Functiondiscoverykeys \_ devpkey.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71c5772029f6c99a86c330f05e3cae3b343e3ee25f39eae4c8d5900e7bf947c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5eb68f874979e660fec0cd563db9bcaceb7d5b74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077469"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164889"
 ---
-# <a name="pkey_device_devicedesc"></a>Dispositivo \_ \_ PKEYDesc
+# <a name="pkey_device_devicedesc"></a>Dispositivo de dispositivo \_ \_ PKEYDesc
 
-La **propiedad PKEY \_ Device \_ DeviceDesc** contiene la descripción del dispositivo del punto de conexión (por ejemplo, "Altavoces").
+La **propiedad PKEY \_ Device \_ DeviceDesc** contiene la descripción del dispositivo del punto de conexión (por ejemplo, "Speakers").
 
 El **miembro vt** de la estructura **PROPVARIANT** se establece en VT \_ LPWSTR.
 
@@ -23,15 +23,15 @@ El **miembro pwszVal** de la estructura **PROPVARIANT** apunta a una cadena de c
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                        |
-| Header<br/>                   | <dl> <dt>Functiondiscoverykeys \_ devpkey.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Functiondiscoverykeys \_ devpkey.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

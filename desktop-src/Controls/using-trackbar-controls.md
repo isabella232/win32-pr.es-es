@@ -4,12 +4,12 @@ description: En esta sección se proporcionan detalles de implementación y ejem
 ms.assetid: 28078f3e-a3d1-4bb5-96c6-2191ff9f8d38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b910c59121d692b45d122f9c38a5efdc74b1e9dd8eb47429327e5de34e9e4796
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 296d667a495dce918bdcfcf0391638eef8a3c6e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120059375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165285"
 ---
 # <a name="using-trackbar-controls"></a>Usar controles trackbar
 

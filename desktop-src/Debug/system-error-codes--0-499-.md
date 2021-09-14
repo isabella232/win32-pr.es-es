@@ -4,19 +4,19 @@ ms.assetid: cacb0aec-d438-4875-a96e-4e0239fdc6ba
 title: Códigos de error del sistema (0-499) (WinError.h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: a9eddec2baf098f62bb1c0ad88e632360807e7f3fd0ea045f2565587f13e93a6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 413d9674f511bd49df12267b60d6c6c3dac366aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118405654"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164606"
 ---
 # <a name="system-error-codes-0-499"></a>Códigos de error del sistema (0-499)
 
 > [!NOTE]
-> Esta información está pensada para los desarrolladores que depuran errores del sistema. Para otros errores, como problemas con Windows Update, hay una lista de recursos en la página [Códigos de](system-error-codes.md) error.
+> Esta información está pensada para desarrolladores que depuran errores del sistema. Para otros errores, como problemas con Windows update, hay una lista de recursos en la página [Códigos de](system-error-codes.md) error.
 
-En la lista siguiente se describen [los códigos de error del](system-error-codes.md) sistema (errores 0 a 499). La función [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) los devuelve cuando se producirá un error en muchas funciones. Para recuperar el texto de descripción del error en la aplicación, use la [**función FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) con la **marca FORMAT MESSAGE FROM \_ \_ \_ SYSTEM.**
+En la lista siguiente se describen [los códigos de error del](system-error-codes.md) sistema (errores del 0 al 499). La función [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) los devuelve cuando se producirá un error en muchas funciones. Para recuperar el texto de descripción del error en la aplicación, use la [**función FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) con la **marca FORMAT MESSAGE FROM \_ \_ \_ SYSTEM.**
 
 <dl> <dt>
 
@@ -85,7 +85,7 @@ El sistema no puede abrir el archivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ACCESS_DENIED"></span><span id="error_access_denied"></span>**ERROR \_ DE ACCESO \_ DENEGADO**
+<span id="ERROR_ACCESS_DENIED"></span><span id="error_access_denied"></span>**ACCESO DE ERROR \_ \_ DENEGADO**
 </dt> <dd> <dl> <dt>
 
 5 (0x5)
@@ -111,7 +111,7 @@ El identificador no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ARENA_TRASHED"></span><span id="error_arena_trashed"></span>**ERROR \_ DE LA \_ PAPELERA**
+<span id="ERROR_ARENA_TRASHED"></span><span id="error_arena_trashed"></span>**ERROR \_ DE ERROR DE LA \_ PAPELERA**
 </dt> <dd> <dl> <dt>
 
 7 (0x7)
@@ -150,7 +150,7 @@ La dirección del bloque de control de almacenamiento no es válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_ENVIRONMENT"></span><span id="error_bad_environment"></span>**ERROR \_ ENTORNO \_ DE ERROR**
+<span id="ERROR_BAD_ENVIRONMENT"></span><span id="error_bad_environment"></span>**ERROR \_ ENTORNO \_ NO ADECUADO**
 </dt> <dd> <dl> <dt>
 
 10 (0xA)
@@ -228,7 +228,7 @@ El sistema no puede encontrar la unidad especificada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CURRENT_DIRECTORY"></span><span id="error_current_directory"></span>**ERROR \_ DIRECTORIO \_ ACTUAL**
+<span id="ERROR_CURRENT_DIRECTORY"></span><span id="error_current_directory"></span>**DIRECTORIO \_ ACTUAL DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 16 (0x10)
@@ -267,7 +267,7 @@ No hay más archivos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WRITE_PROTECT"></span><span id="error_write_protect"></span>**PROTECCIÓN DE \_ ESCRITURA \_ DE ERROR**
+<span id="ERROR_WRITE_PROTECT"></span><span id="error_write_protect"></span>**PROTECCIÓN DE \_ ESCRITURA \_ DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 19 (0x13)
@@ -280,7 +280,7 @@ El medio está protegido por escritura.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_UNIT"></span><span id="error_bad_unit"></span>**UNIDAD \_ DE ERROR NO ESTÁ \_ BIEN**
+<span id="ERROR_BAD_UNIT"></span><span id="error_bad_unit"></span>**UNIDAD \_ DE ERROR NO ES \_ BUENA**
 </dt> <dd> <dl> <dt>
 
 20 (0x14)
@@ -332,7 +332,7 @@ Error de datos (comprobación de redundancia cíclica).
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_LENGTH"></span><span id="error_bad_length"></span>**ERROR \_ BAD \_ LENGTH**
+<span id="ERROR_BAD_LENGTH"></span><span id="error_bad_length"></span>**LONGITUD \_ DE ERROR \_ MALA**
 </dt> <dd> <dl> <dt>
 
 24 (0x18)
@@ -345,7 +345,7 @@ El programa emitió un comando, pero la longitud del comando es incorrecta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SEEK"></span><span id="error_seek"></span>**ERROR \_ SEEK**
+<span id="ERROR_SEEK"></span><span id="error_seek"></span>**BÚSQUEDA DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 25 (0x19)
@@ -366,7 +366,7 @@ La unidad no puede encontrar un área o un seguimiento específicos en el disco.
 
 
 
-No se puede acceder al disco o a la unidad de disco especificados.
+No se puede acceder al disco o a la disquete especificados.
 
 
 </dt> </dl> </dd> <dt>
@@ -397,7 +397,7 @@ La impresora se ha quedado sin papel.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WRITE_FAULT"></span><span id="error_write_fault"></span>**ERROR \_ AL ESCRIBIR \_ ERROR**
+<span id="ERROR_WRITE_FAULT"></span><span id="error_write_fault"></span>**ERROR \_ DE ESCRITURA DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 29 (0x1D)
@@ -436,7 +436,7 @@ Un dispositivo conectado al sistema no funciona.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHARING_VIOLATION"></span><span id="error_sharing_violation"></span>**INFRACCIÓN DE \_ USO COMPARTIDO \_ DE ERRORES**
+<span id="ERROR_SHARING_VIOLATION"></span><span id="error_sharing_violation"></span>**INFRACCIÓN \_ DE USO COMPARTIDO DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 32 (0x20)
@@ -470,12 +470,12 @@ El proceso no puede obtener acceso al archivo porque otro proceso ha bloqueado u
 
 
 
-El diskette incorrecto está en la unidad. Inserte %2 (Número de serie de volumen: %3) en la unidad %1.
+El diskette incorrecto está en la unidad. Inserte %2 (número de serie del volumen: %3) en la unidad %1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHARING_BUFFER_EXCEEDED"></span><span id="error_sharing_buffer_exceeded"></span>**SE HA \_ SUPERADO EL BÚFER DE USO COMPARTIDO DE \_ \_ ERRORES**
+<span id="ERROR_SHARING_BUFFER_EXCEEDED"></span><span id="error_sharing_buffer_exceeded"></span>**BÚFER \_ DE USO COMPARTIDO DE ERRORES \_ \_ SUPERADO**
 </dt> <dd> <dl> <dt>
 
 36 (0x24)
@@ -483,7 +483,7 @@ El diskette incorrecto está en la unidad. Inserte %2 (Número de serie de volum
 
 
 
-Demasiados archivos abiertos para compartir.
+Demasiados archivos abiertos para el uso compartido.
 
 
 </dt> </dl> </dd> <dt>
@@ -535,12 +535,12 @@ No se admite la solicitud.
 
 
 
-Windows puede encontrar la ruta de acceso de red. Compruebe que la ruta de acceso de red es correcta y que el equipo de destino no está ocupado ni desactivado. Si Windows puede encontrar la ruta de acceso de red, póngase en contacto con el administrador de red.
+Windows puede encontrar la ruta de acceso de red. Compruebe que la ruta de acceso de red es correcta y que el equipo de destino no está ocupado o desactivado. Si Windows encuentra la ruta de acceso de red, póngase en contacto con el administrador de red.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DUP_NAME"></span><span id="error_dup_name"></span>**ERROR \_ DUP \_ NAME**
+<span id="ERROR_DUP_NAME"></span><span id="error_dup_name"></span>**NOMBRE \_ DE DUP \_ DE ERROR**
 </dt> <dd> <dl> <dt>
 
 52 (0x34)
@@ -548,7 +548,7 @@ Windows puede encontrar la ruta de acceso de red. Compruebe que la ruta de acces
 
 
 
-No estaba conectado porque existe un nombre duplicado en la red. Si se une a un dominio, vaya a Sistema en Panel de control cambiar el nombre del equipo e inténtelo de nuevo. Si se une a un grupo de trabajo, elija otro nombre de grupo de trabajo.
+No estaba conectado porque existe un nombre duplicado en la red. Si se une a un dominio, vaya a System in Panel de control para cambiar el nombre del equipo e inténtelo de nuevo. Si se une a un grupo de trabajo, elija otro nombre de grupo de trabajo.
 
 
 </dt> </dl> </dd> <dt>
@@ -644,7 +644,7 @@ Se produjo un error de red inesperado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_REM_ADAP"></span><span id="error_bad_rem_adap"></span>**ERROR \_ BAD \_ REM \_ ADAP**
+<span id="ERROR_BAD_REM_ADAP"></span><span id="error_bad_rem_adap"></span>**ADAP \_ \_ REM CON \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 60 (0x3C)
@@ -665,12 +665,12 @@ El adaptador remoto no es compatible.
 
 
 
-La cola de impresora está llena.
+La cola de impresoras está llena.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_SPOOL_SPACE"></span><span id="error_no_spool_space"></span>**ERROR \_ NO HAY ESPACIO DE \_ COLA \_**
+<span id="ERROR_NO_SPOOL_SPACE"></span><span id="error_no_spool_space"></span>**ERROR \_ SIN ESPACIO DE COLA DE \_ \_ TRABAJO**
 </dt> <dd> <dl> <dt>
 
 62 (0x3E)
@@ -683,7 +683,7 @@ El espacio para almacenar el archivo en espera de impresión no está disponible
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINT_CANCELLED"></span><span id="error_print_cancelled"></span>**ERROR \_ DE \_ IMPRESIÓN CANCELADA**
+<span id="ERROR_PRINT_CANCELLED"></span><span id="error_print_cancelled"></span>**IMPRESIÓN \_ DE ERROR \_ CANCELADA**
 </dt> <dd> <dl> <dt>
 
 63 (0x3F)
@@ -691,7 +691,7 @@ El espacio para almacenar el archivo en espera de impresión no está disponible
 
 
 
-Se eliminó el archivo que espera a ser impreso.
+Se eliminó el archivo que espera ser impreso.
 
 
 </dt> </dl> </dd> <dt>
@@ -722,7 +722,7 @@ Se deniega el acceso a la red.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_DEV_TYPE"></span><span id="error_bad_dev_type"></span>**ERROR \_ TIPO \_ DEV NO ES \_ BUENO**
+<span id="ERROR_BAD_DEV_TYPE"></span><span id="error_bad_dev_type"></span>**TIPO \_ \_ DE DESARROLLO CON ERRORES \_**
 </dt> <dd> <dl> <dt>
 
 66 (0x42)
@@ -761,7 +761,7 @@ Se superó el límite de nombres de la tarjeta del adaptador de red del equipo l
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TOO_MANY_SESS"></span><span id="error_too_many_sess"></span>**ERROR \_ \_ DEMASIADOS \_ SESS**
+<span id="ERROR_TOO_MANY_SESS"></span><span id="error_too_many_sess"></span>**ERROR \_ DEMASIADO \_ \_ SESS**
 </dt> <dd> <dl> <dt>
 
 69 (0x45)
@@ -774,7 +774,7 @@ Se superó el límite de sesión del BIOS de red.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHARING_PAUSED"></span><span id="error_sharing_paused"></span>**ERROR \_ AL COMPARTIR EN \_ PAUSA**
+<span id="ERROR_SHARING_PAUSED"></span><span id="error_sharing_paused"></span>**ERROR \_ SHARING \_ PAUSED**
 </dt> <dd> <dl> <dt>
 
 70 (0x46)
@@ -782,7 +782,7 @@ Se superó el límite de sesión del BIOS de red.
 
 
 
-El servidor remoto se ha pausado o se está iniciando.
+El servidor remoto se ha pausado o está en proceso de iniciarse.
 
 
 </dt> </dl> </dd> <dt>
@@ -795,7 +795,7 @@ El servidor remoto se ha pausado o se está iniciando.
 
 
 
-No se pueden realizar más conexiones a este equipo remoto en este momento porque ya hay tantas conexiones como el equipo pueda aceptar.
+En este momento no se pueden realizar más conexiones a este equipo remoto porque ya hay tantas conexiones como el equipo puede aceptar.
 
 
 </dt> </dl> </dd> <dt>
@@ -813,7 +813,7 @@ Se ha pausado la impresora o el dispositivo de disco especificados.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILE_EXISTS"></span><span id="error_file_exists"></span>**ARCHIVO DE \_ ERROR \_ EXISTE**
+<span id="ERROR_FILE_EXISTS"></span><span id="error_file_exists"></span>**EXISTE \_ UN ARCHIVO DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 80 (0x50)
@@ -1255,7 +1255,7 @@ No se pudo encontrar el módulo especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROC_NOT_FOUND"></span><span id="error_proc_not_found"></span>**ERROR \_ PROC \_ NOT \_ FOUND**
+<span id="ERROR_PROC_NOT_FOUND"></span><span id="error_proc_not_found"></span>**NO \_ SE ENCONTRÓ EL PROCEDIMIENTO DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 127 (0x7F)
@@ -1632,7 +1632,7 @@ No se puede crear otro subproceso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SIGNAL_REFUSED"></span><span id="error_signal_refused"></span>**SEÑAL \_ DE ERROR \_ RECHAZADA**
+<span id="ERROR_SIGNAL_REFUSED"></span><span id="error_signal_refused"></span>**SEÑAL DE ERROR \_ \_ RECHAZADA**
 </dt> <dd> <dl> <dt>
 
 156 (0x9C)
@@ -2009,7 +2009,7 @@ El sistema operativo no puede ejecutar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_AUTODATASEG_EXCEEDS_64k"></span><span id="error_autodataseg_exceeds_64k"></span><span id="ERROR_AUTODATASEG_EXCEEDS_64K"></span>**EL \_ ERROR AUTODATASEG \_ SUPERA LOS \_ 64 000**
+<span id="ERROR_AUTODATASEG_EXCEEDS_64k"></span><span id="error_autodataseg_exceeds_64k"></span><span id="ERROR_AUTODATASEG_EXCEEDS_64K"></span>**ERROR \_ AUTODATASEG \_ SUPERA LOS \_ 64 000**
 </dt> <dd> <dl> <dt>
 
 199 (0xC7)
@@ -2100,7 +2100,7 @@ El nombre de archivo o la extensión es demasiado largo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RING2_STACK_IN_USE"></span><span id="error_ring2_stack_in_use"></span>**PILA \_ RING2 \_ DE ERROR EN \_ \_ USO**
+<span id="ERROR_RING2_STACK_IN_USE"></span><span id="error_ring2_stack_in_use"></span>**PILA \_ DE ANILLO DE ERROR \_ 2 EN \_ \_ USO**
 </dt> <dd> <dl> <dt>
 
 207 (0xCF)
@@ -2199,7 +2199,7 @@ No se pueden anidar llamadas a LoadModule.
 
 
 
-Esta versión de %1 no es compatible con la versión de Windows está ejecutando. Compruebe la información del sistema del equipo y, a continuación, póngase en contacto con el publicador de software.
+Esta versión de %1 no es compatible con la versión de Windows que está ejecutando. Compruebe la información del sistema del equipo y, a continuación, póngase en contacto con el publicador de software.
 
 
 </dt> </dl> </dd> <dt>
@@ -2321,7 +2321,7 @@ Este archivo contiene un virus o software potencialmente no deseado y no se pued
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PIPE_LOCAL"></span><span id="error_pipe_local"></span>**CANALIZACIÓN DE \_ \_ ERROR LOCAL**
+<span id="ERROR_PIPE_LOCAL"></span><span id="error_pipe_local"></span>**ERROR \_ PIPE \_ LOCAL**
 </dt> <dd> <dl> <dt>
 
 229 (0xE5)
@@ -2368,7 +2368,7 @@ Todas las instancias de canalización están ocupadas.
 
 
 
-La canalización se está cierrando.
+Se está cierrando la canalización.
 
 
 </dt> </dl> </dd> <dt>
@@ -2516,7 +2516,7 @@ El archivo de atributo extendido en el sistema de archivos montado está dañado
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EA_TABLE_FULL"></span><span id="error_ea_table_full"></span>**ERROR \_ DE TABLA DE EA \_ \_ COMPLETA**
+<span id="ERROR_EA_TABLE_FULL"></span><span id="error_ea_table_full"></span>**ERROR \_ EA \_ TABLE \_ FULL**
 </dt> <dd> <dl> <dt>
 
 277 (0x115)
@@ -2581,7 +2581,7 @@ Se han realizado demasiadas publicaciones en un semáforo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PARTIAL_COPY"></span><span id="error_partial_copy"></span>**ERROR \_ COPIA \_ PARCIAL**
+<span id="ERROR_PARTIAL_COPY"></span><span id="error_partial_copy"></span>**ERROR \_ DE COPIA \_ PARCIAL**
 </dt> <dd> <dl> <dt>
 
 299 (0x12B)
@@ -2646,7 +2646,7 @@ No se puede abrir el archivo porque está en proceso de eliminación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INCOMPATIBLE_WITH_GLOBAL_SHORT_NAME_REGISTRY_SETTING"></span><span id="error_incompatible_with_global_short_name_registry_setting"></span>**ERROR INCOMPATIBLE \_ CON LA CONFIGURACIÓN GLOBAL DEL REGISTRO DE NOMBRES \_ \_ \_ \_ \_ \_ CORTOS**
+<span id="ERROR_INCOMPATIBLE_WITH_GLOBAL_SHORT_NAME_REGISTRY_SETTING"></span><span id="error_incompatible_with_global_short_name_registry_setting"></span>**ERROR \_ INCOMPATIBLE CON LA CONFIGURACIÓN GLOBAL DEL REGISTRO DE NOMBRES \_ \_ \_ \_ \_ CORTOS \_**
 </dt> <dd> <dl> <dt>
 
 304 (0x130)
@@ -2654,12 +2654,12 @@ No se puede abrir el archivo porque está en proceso de eliminación.
 
 
 
-La configuración de nombre corto no se puede cambiar en este volumen debido a la configuración del Registro global.
+Es posible que la configuración de nombre corto no se cambie en este volumen debido a la configuración del Registro global.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHORT_NAMES_NOT_ENABLED_ON_VOLUME"></span><span id="error_short_names_not_enabled_on_volume"></span>**NOMBRES \_ CORTOS DE ERROR NO \_ \_ \_ \_ HABILITADOS EN EL \_ VOLUMEN**
+<span id="ERROR_SHORT_NAMES_NOT_ENABLED_ON_VOLUME"></span><span id="error_short_names_not_enabled_on_volume"></span>**ERROR \_ DE NOMBRES CORTOS NO \_ \_ \_ \_ HABILITADOS EN EL \_ VOLUMEN**
 </dt> <dd> <dl> <dt>
 
 305 (0x131)
@@ -2672,7 +2672,7 @@ Los nombres cortos no están habilitados en este volumen.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECURITY_STREAM_IS_INCONSISTENT"></span><span id="error_security_stream_is_inconsistent"></span>**EL FLUJO \_ DE SEGURIDAD DE ERROR ES \_ \_ \_ INCOHERENTE**
+<span id="ERROR_SECURITY_STREAM_IS_INCONSISTENT"></span><span id="error_security_stream_is_inconsistent"></span>**EL FLUJO \_ DE SEGURIDAD DE ERRORES ES \_ \_ \_ INCOHERENTE**
 </dt> <dd> <dl> <dt>
 
 306 (0x132)
@@ -2680,7 +2680,7 @@ Los nombres cortos no están habilitados en este volumen.
 
 
 
-El flujo de seguridad para el volumen dado está en un estado incoherente. Ejecute CHKDSK en el volumen.
+El flujo de seguridad para el volumen determinado está en un estado incoherente. Ejecute CHKDSK en el volumen.
 
 
 </dt> </dl> </dd> <dt>
@@ -2698,7 +2698,7 @@ No se puede procesar una operación de bloqueo de archivo solicitada debido a un
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IMAGE_SUBSYSTEM_NOT_PRESENT"></span><span id="error_image_subsystem_not_present"></span>**SUBSISTEMA DE \_ IMAGEN DE ERROR NO \_ \_ \_ PRESENTE**
+<span id="ERROR_IMAGE_SUBSYSTEM_NOT_PRESENT"></span><span id="error_image_subsystem_not_present"></span>**ERROR \_ EL SUBSISTEMA DE IMAGEN NO ESTÁ \_ \_ \_ PRESENTE**
 </dt> <dd> <dl> <dt>
 
 308 (0x134)
@@ -2711,7 +2711,7 @@ El subsistema necesario para admitir el tipo de imagen no está presente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOTIFICATION_GUID_ALREADY_DEFINED"></span><span id="error_notification_guid_already_defined"></span>**GUID \_ DE NOTIFICACIÓN DE ERRORES YA \_ \_ \_ DEFINIDO**
+<span id="ERROR_NOTIFICATION_GUID_ALREADY_DEFINED"></span><span id="error_notification_guid_already_defined"></span>**GUID \_ DE NOTIFICACIÓN DE ERROR YA \_ \_ \_ DEFINIDO**
 </dt> <dd> <dl> <dt>
 
 309 (0x135)
@@ -2737,7 +2737,7 @@ Se ha detectado una rutina de controlador de excepciones no válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DUPLICATE_PRIVILEGES"></span><span id="error_duplicate_privileges"></span>**PRIVILEGIOS \_ \_ DUPLICADOS DE ERROR**
+<span id="ERROR_DUPLICATE_PRIVILEGES"></span><span id="error_duplicate_privileges"></span>**ERROR \_ DE \_ PRIVILEGIOS DUPLICADOS**
 </dt> <dd> <dl> <dt>
 
 311 (0x137)
@@ -2823,7 +2823,7 @@ El dispositivo no admite la característica de comandos.
 
 
 
-El sistema no encuentra el texto del mensaje para el número de mensaje 0x%1 en el archivo de mensaje para %2.
+El sistema no puede encontrar texto de mensaje para el número de mensaje 0x%1 en el archivo de mensaje para %2.
 
 
 </dt> </dl> </dd> <dt>
@@ -2841,7 +2841,7 @@ No se encontró el ámbito especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNDEFINED_SCOPE"></span><span id="error_undefined_scope"></span>**ÁMBITO \_ SIN DEFINIR DE \_ ERROR**
+<span id="ERROR_UNDEFINED_SCOPE"></span><span id="error_undefined_scope"></span>**ERROR \_ ÁMBITO SIN \_ DEFINIR**
 </dt> <dd> <dl> <dt>
 
 319 (0x13F)
@@ -2867,7 +2867,7 @@ La directiva de acceso central obtenida de Active Directory no es válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_UNREACHABLE"></span><span id="error_device_unreachable"></span>**DISPOSITIVO DE ERROR \_ \_ INACCESIBLE**
+<span id="ERROR_DEVICE_UNREACHABLE"></span><span id="error_device_unreachable"></span>**ERROR \_ DISPOSITIVO \_ INACCESIBLE**
 </dt> <dd> <dl> <dt>
 
 321 (0x141)
@@ -2893,7 +2893,7 @@ El dispositivo de destino no tiene recursos suficientes para completar la operac
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DATA_CHECKSUM_ERROR"></span><span id="error_data_checksum_error"></span>**ERROR \_ DE SUMA DE COMPROBACIÓN DE DATOS DE \_ \_ ERROR**
+<span id="ERROR_DATA_CHECKSUM_ERROR"></span><span id="error_data_checksum_error"></span>**ERROR \_ DE SUMA DE COMPROBACIÓN DE DATOS DE \_ \_ DATOS**
 </dt> <dd> <dl> <dt>
 
 323 (0x143)
@@ -2901,7 +2901,7 @@ El dispositivo de destino no tiene recursos suficientes para completar la operac
 
 
 
-Error de suma de comprobación de integridad de datos. Los datos del flujo de archivos están dañados.
+Error de suma de comprobación de integridad de datos. Los datos de la secuencia de archivos están dañados.
 
 
 </dt> </dl> </dd> <dt>
@@ -2927,7 +2927,7 @@ Se intentó modificar un kernel y un atributo extendido normal (EA) en la misma 
 
 
 
-El dispositivo no admite TRIM en el nivel de archivo.
+El dispositivo no admite TRIM de nivel de archivo.
 
 
 </dt> </dl> </dd> <dt>
@@ -2971,7 +2971,7 @@ Una operación está actualmente en curso con el dispositivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_DEVICE_PATH"></span><span id="error_bad_device_path"></span>**RUTA DE \_ ACCESO DEL DISPOSITIVO CON \_ \_ ERROR**
+<span id="ERROR_BAD_DEVICE_PATH"></span><span id="error_bad_device_path"></span>**ERROR \_ RUTA DE ACCESO DE DISPOSITIVO NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 330 (0x14A)
@@ -2992,12 +2992,12 @@ Se intentó enviar el comando a través de una ruta de acceso no válida al disp
 
 
 
-El comando especificó una serie de descriptores que superaron el máximo admitido por el dispositivo.
+El comando especificó un número de descriptores que superó el máximo admitido por el dispositivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SCRUB_DATA_DISABLED"></span><span id="error_scrub_data_disabled"></span>**ERROR \_ AL LIMPIAR LOS DATOS \_ \_ DESHABILITADOS**
+<span id="ERROR_SCRUB_DATA_DISABLED"></span><span id="error_scrub_data_disabled"></span>**DATOS \_ DE LIMPIEZA DE ERRORES \_ \_ DESHABILITADOS**
 </dt> <dd> <dl> <dt>
 
 332 (0x14C)
@@ -3005,7 +3005,7 @@ El comando especificó una serie de descriptores que superaron el máximo admiti
 
 
 
-La limpieza está deshabilitada en el archivo especificado.
+El limpieza está deshabilitado en el archivo especificado.
 
 
 </dt> </dl> </dd> <dt>
@@ -3075,7 +3075,7 @@ No se pudo leer la copia especificada de los datos solicitados.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAIL_NOACTION_REBOOT"></span><span id="error_fail_noaction_reboot"></span>**ERROR \_ AL \_ REINICIAR NOACTION \_**
+<span id="ERROR_FAIL_NOACTION_REBOOT"></span><span id="error_fail_noaction_reboot"></span>**ERROR \_ AL REINICIAR \_ NOACTION \_**
 </dt> <dd> <dl> <dt>
 
 350 (0x15E)
@@ -3088,7 +3088,7 @@ No se ha realizado ninguna acción porque se requiere un reinicio del sistema.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAIL_SHUTDOWN"></span><span id="error_fail_shutdown"></span>**ERROR \_ AL CERRAR \_**
+<span id="ERROR_FAIL_SHUTDOWN"></span><span id="error_fail_shutdown"></span>**ERROR \_ AL APAGAR \_**
 </dt> <dd> <dl> <dt>
 
 351 (0x15F)
@@ -3114,7 +3114,7 @@ Error en la operación de reinicio.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MAX_SESSIONS_REACHED"></span><span id="error_max_sessions_reached"></span>**SE \_ ALCANZÓ EL NÚMERO \_ MÁXIMO DE SESIONES DE \_ ERROR**
+<span id="ERROR_MAX_SESSIONS_REACHED"></span><span id="error_max_sessions_reached"></span>**SE \_ ALCANZÓ EL \_ NÚMERO MÁXIMO DE SESIONES DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 353 (0x161)
@@ -3127,7 +3127,7 @@ Se ha alcanzado el número máximo de sesiones.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_THREAD_MODE_ALREADY_BACKGROUND"></span><span id="error_thread_mode_already_background"></span>**MODO DE \_ SUBPROCESO DE ERROR YA EN SEGUNDO \_ \_ \_ PLANO**
+<span id="ERROR_THREAD_MODE_ALREADY_BACKGROUND"></span><span id="error_thread_mode_already_background"></span>**EL MODO \_ DE SUBPROCESO DE ERROR YA ESTÁ EN SEGUNDO \_ \_ \_ PLANO**
 </dt> <dd> <dl> <dt>
 
 400 (0x190)
@@ -3140,7 +3140,7 @@ El subproceso ya está en modo de procesamiento en segundo plano.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_THREAD_MODE_NOT_BACKGROUND"></span><span id="error_thread_mode_not_background"></span>**MODO DE \_ SUBPROCESO DE ERROR NO EN SEGUNDO \_ \_ \_ PLANO**
+<span id="ERROR_THREAD_MODE_NOT_BACKGROUND"></span><span id="error_thread_mode_not_background"></span>**MODO DE SUBPROCESO DE \_ ERROR NO EN SEGUNDO \_ \_ \_ PLANO**
 </dt> <dd> <dl> <dt>
 
 401 (0x191)
@@ -3197,11 +3197,11 @@ Intente acceder a una dirección no válida.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                               |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                      |
-| Header<br/>                   | <dl> <dt>WinError.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinError.h (incluir Windows.h)</dt> </dl> |
 
 
 

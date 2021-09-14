@@ -4,12 +4,12 @@ ms.assetid: 4edd1fdf-9601-440d-b967-82ffa6dceeb1
 title: PageBlackGenerationProcessing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0496bf65da5ef6c2cfb36ebd443e05ef0aad95c8f58b6a16ba7b9efaebdee76d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d21861595917b67390857b380a416e441d454081
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119098949"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127168069"
 ---
 # <a name="pageblackgenerationprocessing"></a>PageBlackGenerationProcessing
 
@@ -25,7 +25,7 @@ Especifica el comportamiento de generación de negro para las separaciones de NT
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Página<br/>    |

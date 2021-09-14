@@ -1,19 +1,19 @@
 ---
-description: Esta aplicación de ejemplo usa core audio API para cambiar el volumen del dispositivo, según lo especificado por el usuario.
+description: Esta aplicación de ejemplo usa las API de audio principal para cambiar el volumen del dispositivo, según lo especificado por el usuario.
 ms.assetid: 2597f3b1-5339-4fd4-9938-39ff917626b4
 title: EndpointVolume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c157149e6b15014b1228b2b5c97080fcdbdccd9acc2745ee5a986a7de7c997f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e89efe89035ec272c68c6a9289672a249616e23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117828276"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164993"
 ---
 # <a name="endpointvolume"></a>EndpointVolume
 
-Esta aplicación de ejemplo usa core audio API para cambiar el volumen del dispositivo, según lo especificado por el usuario.
+Esta aplicación de ejemplo usa las API de audio principal para cambiar el volumen del dispositivo, según lo especificado por el usuario.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -50,9 +50,9 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Ubicación    | Ruta de acceso o dirección URL                                                                                        |
+| Location    | Ruta de acceso o dirección URL                                                                                        |
 |-------------|-------------------------------------------------------------------------------------------------|
-| Windows SDK | \\Archivos de \\ programa Microsoft SDKs \\ Windows \\ v7.0 \\ Samples Multimedia Audio \\ \\ \\ EndpointVolume \\ ... |
+| Windows SDK | \\Archivos de \\ programa Sdk de Microsoft Windows ejemplos de audio multimedia \\ \\ v7.0 \\ \\ \\ \\ EndpointVolume \\ ... |
 
 
 
@@ -64,9 +64,9 @@ Para compilar el ejemplo x, siga estos pasos:
 
 Para compilar el ejemplo EndpointVolumeChanger, siga estos pasos:
 
-1.  Abra el shell de CMD para el SDK de Windows y cambie al directorio de ejemplo EndpointVolume.
+1.  Abra el shell de CMD para Windows SDK y cambie al directorio de ejemplo EndpointVolume.
 2.  Ejecute el comando en el directorio EndpointVolume para abrir el proyecto `start EndpointVolumeChanger.sln` EndpointVolumeChanger en Visual Studio ventana.
-3.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre Visual Studio desde el shell de CMD para el SDK, Visual Studio tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto WASAPIEndpointVolume.vcproj.
+3.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre una Visual Studio desde el shell de CMD para el SDK, Visual Studio no tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto WASAPIEndpointVolume.vcproj.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
@@ -96,7 +96,7 @@ En la tabla siguiente se muestran los argumentos.
 
 Si la aplicación se ejecuta sin argumentos, enumera los dispositivos disponibles y solicita al usuario que seleccione un dispositivo. Una vez que el usuario especifica el dispositivo, la aplicación muestra la configuración del volumen actual para el punto de conexión. El volumen se puede controlar mediante los modificadores descritos en la tabla anterior.
 
-Para más información sobre cómo controlar los niveles de volumen de los dispositivos de punto de conexión de audio, consulte [EndpointVolume API](endpointvolume-api.md).
+Para obtener más información sobre cómo controlar los niveles de volumen de los dispositivos de punto de conexión de audio, vea [EndpointVolume API](endpointvolume-api.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

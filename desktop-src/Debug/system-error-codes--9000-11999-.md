@@ -4,12 +4,12 @@ ms.assetid: 27fe3fee-4ae3-43f1-a1f2-91c935e9851b
 title: Códigos de error del sistema (9000-11999) (WinError.h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: aea735601b2c19bfc54a0841bb0150426b5c292e61dddb53473dfe41575e4337
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 01eb071962d8d0f5beb801067ce1d72adc796bad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119984485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164573"
 ---
 # <a name="system-error-codes-9000-11999"></a>Códigos de error del sistema (9000-11999)
 
@@ -189,7 +189,7 @@ La validez de la firma DNS ha expirado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_KEYMASTER_REQUIRED"></span><span id="dns_error_keymaster_required"></span>**SE \_ REQUIERE KEYMASTER DE ERROR \_ DE \_ DNS**
+<span id="DNS_ERROR_KEYMASTER_REQUIRED"></span><span id="dns_error_keymaster_required"></span>**ERROR DE DNS \_ \_ KEYMASTER \_ REQUERIDO**
 </dt> <dd> <dl> <dt>
 
 9101 (0x238D)
@@ -373,7 +373,7 @@ El período de suversión especificado no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_INVALID_INITIAL_ROLLOVER_OFFSET"></span><span id="dns_error_invalid_initial_rollover_offset"></span>**ERROR DE DNS \_ \_ DESPLAZAMIENTO INICIAL DE \_ \_ SUVERSIÓN NO \_ VÁLIDO**
+<span id="DNS_ERROR_INVALID_INITIAL_ROLLOVER_OFFSET"></span><span id="dns_error_invalid_initial_rollover_offset"></span>**ERROR DE DNS \_ \_ DESPLAZAMIENTO INICIAL NO \_ \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 9115 (0x239B)
@@ -399,7 +399,7 @@ La clave de firma especificada ya está en proceso de revertir las claves.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_STANDBY_KEY_NOT_PRESENT"></span><span id="dns_error_standby_key_not_present"></span>**CLAVE EN ESPERA DE ERROR DE DNS \_ \_ NO \_ \_ \_ PRESENTE**
+<span id="DNS_ERROR_STANDBY_KEY_NOT_PRESENT"></span><span id="dns_error_standby_key_not_present"></span>**CLAVE \_ EN ESPERA DE ERROR DNS NO \_ \_ \_ \_ PRESENTE**
 </dt> <dd> <dl> <dt>
 
 9117 (0x239D)
@@ -412,7 +412,7 @@ La clave de firma especificada no tiene una clave en espera para revocar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NOT_ALLOWED_ON_ZSK"></span><span id="dns_error_not_allowed_on_zsk"></span>**ERROR \_ DE DNS NO PERMITIDO EN \_ \_ \_ \_ ZSK**
+<span id="DNS_ERROR_NOT_ALLOWED_ON_ZSK"></span><span id="dns_error_not_allowed_on_zsk"></span>**\_ERROR DE DNS NO PERMITIDO EN \_ \_ \_ \_ ZSK**
 </dt> <dd> <dl> <dt>
 
 9118 (0x239E)
@@ -425,7 +425,7 @@ Esta operación no se permite en una clave de firma de zona (ZSK).
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NOT_ALLOWED_ON_ACTIVE_SKD"></span><span id="dns_error_not_allowed_on_active_skd"></span>**ERROR \_ DE DNS NO PERMITIDO EN EL \_ \_ \_ \_ \_ SKD ACTIVO**
+<span id="DNS_ERROR_NOT_ALLOWED_ON_ACTIVE_SKD"></span><span id="dns_error_not_allowed_on_active_skd"></span>**\_ERROR DE DNS NO PERMITIDO EN \_ \_ \_ \_ \_ SKD ACTIVO**
 </dt> <dd> <dl> <dt>
 
 9119 (0x239F)
@@ -438,7 +438,7 @@ Esta operación no se permite en una clave de firma activa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_ROLLOVER_ALREADY_QUEUED"></span><span id="dns_error_rollover_already_queued"></span>**SUVERSIÓN DE ERRORES DE DNS \_ \_ YA EN \_ \_ COLA**
+<span id="DNS_ERROR_ROLLOVER_ALREADY_QUEUED"></span><span id="dns_error_rollover_already_queued"></span>**SUVERSIÓN DE ERRORES DE DNS \_ \_ YA ESTÁ EN \_ \_ COLA**
 </dt> <dd> <dl> <dt>
 
 9120 (0x23A0)
@@ -446,12 +446,12 @@ Esta operación no se permite en una clave de firma activa.
 
 
 
-La clave de firma especificada ya está en cola para la suversión.
+La clave de firma especificada ya está en cola para su suversión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NOT_ALLOWED_ON_UNSIGNED_ZONE"></span><span id="dns_error_not_allowed_on_unsigned_zone"></span>**ERROR \_ DNS NO PERMITIDO EN UNA ZONA SIN \_ \_ \_ \_ \_ SIGNO**
+<span id="DNS_ERROR_NOT_ALLOWED_ON_UNSIGNED_ZONE"></span><span id="dns_error_not_allowed_on_unsigned_zone"></span>**\_ERROR DE DNS NO PERMITIDO EN LA ZONA SIN \_ \_ \_ \_ \_ SIGNO**
 </dt> <dd> <dl> <dt>
 
 9121 (0x23A1)
@@ -477,7 +477,7 @@ Esta operación no se pudo completar porque el servidor DNS que aparece como el 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_INVALID_SIGNATURE_VALIDITY_PERIOD"></span><span id="dns_error_invalid_signature_validity_period"></span>**PERÍODO \_ DE VALIDEZ DE LA FIRMA NO VÁLIDA DEL ERROR \_ \_ \_ \_ DE DNS**
+<span id="DNS_ERROR_INVALID_SIGNATURE_VALIDITY_PERIOD"></span><span id="dns_error_invalid_signature_validity_period"></span>**ERROR DE DNS \_ PERÍODO DE VALIDEZ DE FIRMA NO \_ \_ \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 9123 (0x23A3)
@@ -485,12 +485,12 @@ Esta operación no se pudo completar porque el servidor DNS que aparece como el 
 
 
 
-El período de validez de firma especificado no es válido.
+El período de validez de la firma especificado no es válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_INVALID_NSEC3_ITERATION_COUNT"></span><span id="dns_error_invalid_nsec3_iteration_count"></span>**RECUENTO \_ DE \_ \_ ITERACIONES DE NSEC3 DE ERROR \_ DE \_ DNS NO VÁLIDO**
+<span id="DNS_ERROR_INVALID_NSEC3_ITERATION_COUNT"></span><span id="dns_error_invalid_nsec3_iteration_count"></span>**RECUENTO \_ DE \_ \_ ITERACIONES DE NSEC3 NO VÁLIDO DE ERROR \_ \_ DNS**
 </dt> <dd> <dl> <dt>
 
 9124 (0x23A4)
@@ -498,7 +498,7 @@ El período de validez de firma especificado no es válido.
 
 
 
-El número de iteraciones NSEC3 especificado es mayor que el permitido por la longitud de clave mínima usada en la zona.
+El recuento de iteraciones NSEC3 especificado es mayor que el permitido por la longitud de clave mínima usada en la zona.
 
 
 </dt> </dl> </dd> <dt>
@@ -529,7 +529,7 @@ Esta operación no se pudo completar porque la secuencia XML recibida está vac�
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NO_VALID_TRUST_ANCHORS"></span><span id="dns_error_no_valid_trust_anchors"></span>**ERROR DE DNS \_ \_ NO HAY \_ \_ DELIMITADORES DE CONFIANZA \_ VÁLIDOS**
+<span id="DNS_ERROR_NO_VALID_TRUST_ANCHORS"></span><span id="dns_error_no_valid_trust_anchors"></span>**\_ERROR DE DNS NO HAY \_ \_ \_ DELIMITADORES DE CONFIANZA \_ VÁLIDOS**
 </dt> <dd> <dl> <dt>
 
 9127 (0x23A7)
@@ -537,7 +537,7 @@ Esta operación no se pudo completar porque la secuencia XML recibida está vac�
 
 
 
-Esta operación se completó, pero no se agregaron anclajes de confianza porque todos los delimitadores de confianza recibidos no eran válidos, no se admiten, expiraron o no serían válidos en menos de 30 días.
+Esta operación se completó, pero no se agregaron anclajes de confianza porque todos los delimitadores de confianza recibidos no eran válidos, no se admiten, expiraban o no se convertían en válidos en menos de 30 días.
 
 
 </dt> </dl> </dd> <dt>
@@ -555,7 +555,7 @@ La clave de firma especificada no está esperando la actualización del DS paren
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NSEC3_NAME_COLLISION"></span><span id="dns_error_nsec3_name_collision"></span>**CONFLICTO \_ DE NOMBRES \_ NSEC3 DE ERROR \_ \_ DE DNS**
+<span id="DNS_ERROR_NSEC3_NAME_COLLISION"></span><span id="dns_error_nsec3_name_collision"></span>**DNS \_ ERROR \_ NSEC3 \_ NAME \_ COLLISION**
 </dt> <dd> <dl> <dt>
 
 9129 (0x23A9)
@@ -563,7 +563,7 @@ La clave de firma especificada no está esperando la actualización del DS paren
 
 
 
-Se detectó una colisión hash durante la firma de NSEC3. Especifique otro valor salt proporcionado por el usuario o use un valor salt generado aleatoriamente e intente volver a firmar la zona.
+Se detectó una colisión de hash durante la firma de NSEC3. Especifique otro valor de sal proporcionado por el usuario o use un valor salt generado aleatoriamente e intente firmar de nuevo la zona.
 
 
 </dt> </dl> </dd> <dt>
@@ -576,7 +576,7 @@ Se detectó una colisión hash durante la firma de NSEC3. Especifique otro valor
 
 
 
-NSEC no es compatible con el algoritmo NSEC3-RSA-SHA-1. Elija otro algoritmo o use NSEC3.
+NSEC no es compatible con el algoritmo NSEC3-RSA-SHA-1. Elija un algoritmo diferente o use NSEC3.
 
 
 </dt> </dl> </dd> <dt>
@@ -594,7 +594,7 @@ No se ha encontrado ningún registro para la consulta DNS especificada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_BAD_PACKET"></span><span id="dns_error_bad_packet"></span>**PAQUETE \_ CON ERROR \_ DE DNS \_**
+<span id="DNS_ERROR_BAD_PACKET"></span><span id="dns_error_bad_packet"></span>**ERROR \_ DE \_ DNS: PAQUETE NO ESTÁ \_ BIEN**
 </dt> <dd> <dl> <dt>
 
 9502 (0x251E)
@@ -602,12 +602,12 @@ No se ha encontrado ningún registro para la consulta DNS especificada.
 
 
 
-Paquete DNS no es bueno.
+Paquete DNS no bueno.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NO_PACKET"></span><span id="dns_error_no_packet"></span>**ERROR DE DNS \_ \_ SIN \_ PAQUETE**
+<span id="DNS_ERROR_NO_PACKET"></span><span id="dns_error_no_packet"></span>**\_ERROR DE DNS NO \_ \_ PACKET**
 </dt> <dd> <dl> <dt>
 
 9503 (0x251F)
@@ -633,7 +633,7 @@ Error de DNS, compruebe rcode.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_UNSECURE_PACKET"></span><span id="dns_error_unsecure_packet"></span>**PAQUETE \_ NO SEGURO DE ERROR \_ \_ DE DNS**
+<span id="DNS_ERROR_UNSECURE_PACKET"></span><span id="dns_error_unsecure_packet"></span>**ERROR DE DNS \_ \_ PAQUETE NO \_ SEGURO**
 </dt> <dd> <dl> <dt>
 
 9505 (0x2521)
@@ -646,7 +646,7 @@ Paquete DNS no seguro.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_REQUEST_PENDING"></span><span id="dns_request_pending"></span>**SOLICITUD DE DNS \_ \_ PENDIENTE**
+<span id="DNS_REQUEST_PENDING"></span><span id="dns_request_pending"></span>**SOLICITUD \_ DNS \_ PENDIENTE**
 </dt> <dd> <dl> <dt>
 
 9506 (0x2522)
@@ -659,7 +659,7 @@ La solicitud de consulta DNS está pendiente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_INVALID_TYPE"></span><span id="dns_error_invalid_type"></span>**TIPO \_ DE ERROR DE DNS NO \_ \_ VÁLIDO**
+<span id="DNS_ERROR_INVALID_TYPE"></span><span id="dns_error_invalid_type"></span>**TIPO DE ERROR DE DNS \_ \_ NO \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 9551 (0x254F)
@@ -672,7 +672,7 @@ Tipo DNS no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_INVALID_IP_ADDRESS"></span><span id="dns_error_invalid_ip_address"></span>**ERROR DE DNS \_ \_ DIRECCIÓN IP NO \_ \_ VÁLIDA**
+<span id="DNS_ERROR_INVALID_IP_ADDRESS"></span><span id="dns_error_invalid_ip_address"></span>**\_ERROR DE DNS DIRECCIÓN IP NO \_ \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 9552 (0x2550)
@@ -698,7 +698,7 @@ Propiedad no válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_TRY_AGAIN_LATER"></span><span id="dns_error_try_again_later"></span>**ERROR \_ DE DNS VUELVA A \_ \_ INTENTARLO MÁS \_ TARDE**
+<span id="DNS_ERROR_TRY_AGAIN_LATER"></span><span id="dns_error_try_again_later"></span>**\_ERROR DE DNS \_ \_ INTÉNTELO DE NUEVO MÁS \_ TARDE**
 </dt> <dd> <dl> <dt>
 
 9554 (0x2552)
@@ -719,12 +719,12 @@ Vuelva a intentar la operación DNS más adelante.
 
 
 
-El registro del nombre y el tipo especificados no es único.
+El registro para el nombre y el tipo especificados no es único.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NON_RFC_NAME"></span><span id="dns_error_non_rfc_name"></span>**ERROR DE DNS \_ \_ NO NOMBRE \_ RFC \_**
+<span id="DNS_ERROR_NON_RFC_NAME"></span><span id="dns_error_non_rfc_name"></span>**ERROR DE DNS \_ \_ NOMBRE NO \_ RFC \_**
 </dt> <dd> <dl> <dt>
 
 9556 (0x2554)
@@ -737,7 +737,7 @@ El nombre DNS no cumple las especificaciones de RFC.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_STATUS_FQDN"></span><span id="dns_status_fqdn"></span>**FQDN \_ DE \_ ESTADO DE DNS**
+<span id="DNS_STATUS_FQDN"></span><span id="dns_status_fqdn"></span>**FQDN \_ DE \_ ESTADO DNS**
 </dt> <dd> <dl> <dt>
 
 9557 (0x2555)
@@ -789,7 +789,7 @@ El nombre DNS contiene un carácter no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NUMERIC_NAME"></span><span id="dns_error_numeric_name"></span>**NOMBRE \_ NUMÉRICO DE ERROR DE \_ \_ DNS**
+<span id="DNS_ERROR_NUMERIC_NAME"></span><span id="dns_error_numeric_name"></span>**NOMBRE \_ NUMÉRICO DEL ERROR DE \_ \_ DNS**
 </dt> <dd> <dl> <dt>
 
 9561 (0x2559)
@@ -932,7 +932,7 @@ Esta operación requiere la delegación de credenciales.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_INVALID_POLICY_TABLE"></span><span id="dns_error_invalid_policy_table"></span>**TABLA DE DIRECTIVAS DE ERROR DE DNS \_ \_ NO \_ \_ VÁLIDA**
+<span id="DNS_ERROR_INVALID_POLICY_TABLE"></span><span id="dns_error_invalid_policy_table"></span>**ERROR DE DNS \_ TABLA DE DIRECTIVAS NO \_ \_ \_ VÁLIDAS**
 </dt> <dd> <dl> <dt>
 
 9572 (0x2564)
@@ -1231,7 +1231,7 @@ Esta operación no se puede realizar porque la zona se está firmando actualment
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_PRIMARY_REQUIRES_DATAFILE"></span><span id="dns_error_primary_requires_datafile"></span>**DNS \_ ERROR \_ PRIMARY \_ REQUIRES \_ DATAFILE**
+<span id="DNS_ERROR_PRIMARY_REQUIRES_DATAFILE"></span><span id="dns_error_primary_requires_datafile"></span>**EL ERROR DE DNS \_ \_ PRINCIPAL REQUIERE \_ \_ DATAFILE**
 </dt> <dd> <dl> <dt>
 
 9651 (0x25B3)
@@ -1270,7 +1270,7 @@ No se pudo abrir el archivo de datos para la zona DNS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_FILE_WRITEBACK_FAILED"></span><span id="dns_error_file_writeback_failed"></span>**ERROR \_ DE ESCRITURA \_ REESCRIBIDA \_ DEL ARCHIVO DE ERROR \_ DE DNS**
+<span id="DNS_ERROR_FILE_WRITEBACK_FAILED"></span><span id="dns_error_file_writeback_failed"></span>**ERROR \_ DE ESCRITURA \_ REESCRIBIDA DEL ARCHIVO DE ERROR \_ \_ DE DNS**
 </dt> <dd> <dl> <dt>
 
 9654 (0x25B6)
@@ -1309,7 +1309,7 @@ El registro DNS no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_RECORD_FORMAT"></span><span id="dns_error_record_format"></span>**FORMATO \_ DE REGISTRO DE ERRORES \_ \_ DE DNS**
+<span id="DNS_ERROR_RECORD_FORMAT"></span><span id="dns_error_record_format"></span>**FORMATO \_ DE REGISTRO DE ERRORES DE \_ \_ DNS**
 </dt> <dd> <dl> <dt>
 
 9702 (0x25E6)
@@ -1356,12 +1356,12 @@ Tipo de registro DNS desconocido.
 
 
 
-Se ha producido un tiempo de espera del registro DNS.
+Se ha pasado el tiempo de espera del registro DNS.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NAME_NOT_IN_ZONE"></span><span id="dns_error_name_not_in_zone"></span>**NOMBRE \_ DE ERROR DNS NO EN LA \_ \_ \_ \_ ZONA**
+<span id="DNS_ERROR_NAME_NOT_IN_ZONE"></span><span id="dns_error_name_not_in_zone"></span>**NOMBRE \_ DE ERROR DNS NO ESTÁ EN LA \_ \_ \_ \_ ZONA**
 </dt> <dd> <dl> <dt>
 
 9706 (0x25EA)
@@ -1374,7 +1374,7 @@ Nombre que no está en la zona DNS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_CNAME_LOOP"></span><span id="dns_error_cname_loop"></span>**BUCLE \_ CNAME DE ERROR \_ DE \_ DNS**
+<span id="DNS_ERROR_CNAME_LOOP"></span><span id="dns_error_cname_loop"></span>**ERROR DE DNS \_ \_ BUCLE \_ CNAME**
 </dt> <dd> <dl> <dt>
 
 9707 (0x25EB)
@@ -1400,7 +1400,7 @@ Node es un registro DNS CNAME.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_CNAME_COLLISION"></span><span id="dns_error_cname_collision"></span>**COLISIÓN \_ DE CNAME DE ERROR \_ \_ DE DNS**
+<span id="DNS_ERROR_CNAME_COLLISION"></span><span id="dns_error_cname_collision"></span>**COLISIÓN \_ DE CNAME DE ERROR \_ DE \_ DNS**
 </dt> <dd> <dl> <dt>
 
 9709 (0x25ED)
@@ -1413,7 +1413,7 @@ Ya existe un registro CNAME para un nombre determinado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_RECORD_ONLY_AT_ZONE_ROOT"></span><span id="dns_error_record_only_at_zone_root"></span>**REGISTRO DE ERRORES DE DNS \_ SOLO EN LA RAÍZ DE \_ \_ \_ \_ \_ ZONA**
+<span id="DNS_ERROR_RECORD_ONLY_AT_ZONE_ROOT"></span><span id="dns_error_record_only_at_zone_root"></span>**REGISTRO \_ DE ERRORES DNS SOLO EN LA RAÍZ DE \_ \_ \_ \_ \_ ZONA**
 </dt> <dd> <dl> <dt>
 
 9710 (0x25EE)
@@ -1426,7 +1426,7 @@ Registre solo en la raíz de la zona DNS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_RECORD_ALREADY_EXISTS"></span><span id="dns_error_record_already_exists"></span>**EL REGISTRO DE ERROR DE DNS \_ \_ YA \_ \_ EXISTE**
+<span id="DNS_ERROR_RECORD_ALREADY_EXISTS"></span><span id="dns_error_record_already_exists"></span>**EL REGISTRO DE ERRORES DE DNS \_ \_ YA \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 9711 (0x25EF)
@@ -1452,7 +1452,7 @@ Error de datos de la zona DNS secundaria.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NO_CREATE_CACHE_DATA"></span><span id="dns_error_no_create_cache_data"></span>**DNS \_ ERROR \_ NO \_ CREATE \_ CACHE \_ DATA**
+<span id="DNS_ERROR_NO_CREATE_CACHE_DATA"></span><span id="dns_error_no_create_cache_data"></span>**ERROR DE DNS \_ NO CREAR DATOS DE \_ \_ \_ CACHÉ \_**
 </dt> <dd> <dl> <dt>
 
 9713 (0x25F1)
@@ -1460,12 +1460,12 @@ Error de datos de la zona DNS secundaria.
 
 
 
-No se pudieron crear datos de caché dns.
+No se pudieron crear datos de caché DNS.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NAME_DOES_NOT_EXIST"></span><span id="dns_error_name_does_not_exist"></span>**EL \_ NOMBRE DE ERROR DNS NO \_ \_ \_ \_ EXISTE**
+<span id="DNS_ERROR_NAME_DOES_NOT_EXIST"></span><span id="dns_error_name_does_not_exist"></span>**EL \_ NOMBRE DEL ERROR DNS NO \_ \_ \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 9714 (0x25F2)
@@ -1478,7 +1478,7 @@ El nombre DNS no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_WARNING_PTR_CREATE_FAILED"></span><span id="dns_warning_ptr_create_failed"></span>**ERROR \_ DE CREACIÓN DE \_ PTR DE ADVERTENCIA \_ \_ DE DNS**
+<span id="DNS_WARNING_PTR_CREATE_FAILED"></span><span id="dns_warning_ptr_create_failed"></span>**ERROR \_ DE CREACIÓN DE PTR DE ADVERTENCIA \_ \_ \_ DE DNS**
 </dt> <dd> <dl> <dt>
 
 9715 (0x25F3)
@@ -1504,7 +1504,7 @@ Se ha eliminado el dominio DNS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_DS_UNAVAILABLE"></span><span id="dns_error_ds_unavailable"></span>**ERROR \_ DE \_ DNS DS NO \_ DISPONIBLE**
+<span id="DNS_ERROR_DS_UNAVAILABLE"></span><span id="dns_error_ds_unavailable"></span>**\_ERROR DE DNS \_ DS NO \_ DISPONIBLE**
 </dt> <dd> <dl> <dt>
 
 9717 (0x25F5)
@@ -1538,7 +1538,7 @@ La zona DNS ya existe en el servicio de directorio.
 
 
 
-El servidor DNS no crea ni lee el archivo de arranque de la zona DNS integrada del servicio de directorio.
+El servidor DNS no crea ni lee el archivo de arranque para la zona DNS integrada del servicio de directorio.
 
 
 </dt> </dl> </dd> <dt>
@@ -1621,7 +1621,7 @@ Se ha agregado el servidor WINS local.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_STATUS_CONTINUE_NEEDED"></span><span id="dns_status_continue_needed"></span>**ESTADO DNS \_ \_ CONTINUAR \_ NECESARIO**
+<span id="DNS_STATUS_CONTINUE_NEEDED"></span><span id="dns_status_continue_needed"></span>**ESTADO DNS \_ \_ NECESARIO \_**
 </dt> <dd> <dl> <dt>
 
 9801 (0x2649)
@@ -1634,7 +1634,7 @@ La llamada de actualización segura debe continuar con la solicitud de actualiza
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NO_TCPIP"></span><span id="dns_error_no_tcpip"></span>**\_ERROR DE DNS SIN \_ \_ TCPIP**
+<span id="DNS_ERROR_NO_TCPIP"></span><span id="dns_error_no_tcpip"></span>**\_ERROR DE DNS NO \_ \_ TCPIP**
 </dt> <dd> <dl> <dt>
 
 9851 (0x267B)
@@ -1647,7 +1647,7 @@ El protocolo de red TCP/IP no está instalado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_NO_DNS_SERVERS"></span><span id="dns_error_no_dns_servers"></span>**\_ERROR DE DNS SIN SERVIDORES \_ \_ \_ DNS**
+<span id="DNS_ERROR_NO_DNS_SERVERS"></span><span id="dns_error_no_dns_servers"></span>**\_ERROR DNS NO HAY SERVIDORES \_ \_ \_ DNS**
 </dt> <dd> <dl> <dt>
 
 9852 (0x267C)
@@ -1712,7 +1712,7 @@ Este servidor DNS ya está dado de alta en la partición de directorio especific
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_DP_NOT_AVAILABLE"></span><span id="dns_error_dp_not_available"></span>**DP DE ERROR DE DNS \_ \_ NO \_ \_ DISPONIBLE**
+<span id="DNS_ERROR_DP_NOT_AVAILABLE"></span><span id="dns_error_dp_not_available"></span>**ERROR DE DNS \_ \_ DP NO \_ \_ DISPONIBLE**
 </dt> <dd> <dl> <dt>
 
 9905 (0x26B1)
@@ -1725,7 +1725,7 @@ La partición de directorio no está disponible en este momento. Espere unos min
 
 </dt> </dl> </dd> <dt>
 
-<span id="DNS_ERROR_DP_FSMO_ERROR"></span><span id="dns_error_dp_fsmo_error"></span>**ERROR DE DNS \_ \_ DP \_ \_ FSMO ERROR**
+<span id="DNS_ERROR_DP_FSMO_ERROR"></span><span id="dns_error_dp_fsmo_error"></span>**ERROR DE DNS \_ \_ DP \_ FSMO \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 9906 (0x26B2)
@@ -1733,7 +1733,7 @@ La partición de directorio no está disponible en este momento. Espere unos min
 
 
 
-Error en la operación porque no se pudo alcanzar el rol FSMO maestro de nomenclatura de dominio. El controlador de dominio que mantiene el rol FSMO maestro de nomenclatura de dominio está sin servicio o no puede dar servicio a la solicitud o no se está ejecutando Windows Server 2003 o posterior.
+Error en la operación porque no se pudo alcanzar el rol FSMO maestro de nomenclatura de dominio. El controlador de dominio que mantiene el rol FSMO del maestro de nomenclatura de dominio está sin servicio o no puede dar servicio a la solicitud o no está ejecutando Windows Server 2003 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -1915,7 +1915,7 @@ Se especificó un protocolo en la llamada de función de socket que no admite la
 
 
 
-Se especificó una opción o un nivel desconocido, no válido o no admitido en una llamada a getsockopt o setsockopt.
+Se especificó una opción o un nivel desconocidos, no válidos o no admitidos en una llamada a getsockopt o setsockopt.
 
 
 </dt> </dl> </dd> <dt>
@@ -1967,7 +1967,7 @@ La operación intentada no se admite para el tipo de objeto al que se hace refer
 
 
 
-La familia de protocolos no se ha configurado en el sistema o no existe ninguna implementación para él.
+La familia de protocolos no se ha configurado en el sistema o no existe ninguna implementación para ella.
 
 
 </dt> </dl> </dd> <dt>
@@ -2045,7 +2045,7 @@ Se intentó realizar una operación de socket en una red inaccesible.
 
 
 
-La conexión se ha roto debido a que la actividad keep-alive detecta un error mientras la operación estaba en curso.
+La conexión se ha roto debido a que la actividad de mantenimiento activo detectó un error mientras la operación estaba en curso.
 
 
 </dt> </dl> </dd> <dt>
@@ -2344,7 +2344,7 @@ La aplicación no ha llamado a WSAStartup o WSAStartup ha dado error.
 
 
 
-Lo devuelveN WSARecv o WSARecvFrom para indicar que la parte remota ha iniciado una secuencia de apagado estable.
+Devuelto por WSARecv o WSARecvFrom para indicar que la parte remota ha iniciado una secuencia de apagado estable.
 
 
 </dt> </dl> </dd> <dt>
@@ -2635,7 +2635,7 @@ Rechazado por motivos administrativos: credenciales no válidas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WSA_QOS_BAD_STYLE"></span><span id="wsa_qos_bad_style"></span>**ESTILO NO BUENO \_ DE QOS \_ DE WSA \_**
+<span id="WSA_QOS_BAD_STYLE"></span><span id="wsa_qos_bad_style"></span>**ESTILO DE \_ CALIDAD DE SERVICIO DE WSA \_ \_**
 </dt> <dd> <dl> <dt>
 
 11012 (0x2B04)
@@ -2877,7 +2877,7 @@ Se encontró un objeto de modo de descarte de forma no válido en el búfer espe
 
 
 
-Se encontró un objeto de velocidad de forma no válido en el búfer específico del proveedor de QOS.
+Se encontró un objeto de velocidad de modelado no válido en el búfer específico del proveedor de QOS.
 
 
 </dt> </dl> </dd> <dt>
@@ -2930,11 +2930,11 @@ No se pudo agregar la directiva IPSEC basada en nombres.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

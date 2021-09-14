@@ -4,12 +4,12 @@ ms.assetid: 3a199ecf-642c-491c-a565-f0083783d180
 title: PKEY_AudioEngine_OEMFormat (Mmdeviceapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ed43ee7a607bc7b97e6ce521c3c1f76356380d27b3471d16dde27cd021838e5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: be7ed65ae8a7bd717992b13dc7b5517a5725b241
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164894"
 ---
 # <a name="pkey_audioengine_oemformat"></a>PKEY \_ AudioEngine \_ OEMFormat
 
@@ -17,7 +17,7 @@ La propiedad PKEY AudioEngine OEMFormat especifica el formato predeterminado del
 
 El **miembro vt** de la estructura **PROPVARIANT** se establece en VT \_ BLOB.
 
-El **miembro de blob** de la estructura **PROPVARIANT** es una estructura de tipo **BLOB** que contiene dos miembros. El **miembro blob.cbSize** es **un DWORD** que especifica el número de bytes en la descripción del formato. El **miembro blob.pBlobData** apunta a una **estructura DE FORMA DEDATOX** que contiene la descripción del formato. Para más información sobre BLOB, consulte la documentación Windows SDK. Para obtener más información sobre **LA FORMA DE ONDAATEX,** consulte la documentación Windows DDK.
+El **miembro blob** de la estructura **PROPVARIANT** es una estructura de tipo **BLOB** que contiene dos miembros. El **miembro blob.cbSize** es **un DWORD** que especifica el número de bytes en la descripción del formato. El **miembro blob.pBlobData** apunta a una estructura **DE FORMADETEATEX** que contiene la descripción del formato. Para más información sobre BLOB, consulte la documentación Windows SDK. Para obtener más información acerca **de LAATEX,** consulte la documentación Windows DDK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,13 +25,13 @@ El **miembro de blob** de la estructura **PROPVARIANT** es una estructura de tip
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 305D63E7-800C-4792-B04C-127E5844EF3E
 title: Uniones de audio principales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfcb67eac429e44289d3f4d15a18bb68dc3d3c4b90e2d2f9baae44e6bd23752d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c09473150fe36f18aa42c0ddb01b106327aa59b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957354"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165070"
 ---
 # <a name="core-audio-unions"></a>Uniones de audio principales
 

@@ -4,12 +4,12 @@ description: Esta sección contiene ejemplos que muestran cómo crear diferentes
 ms.assetid: 4486b406-a069-4250-b7ab-671d895b79f9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d27bb6ac0f922df024adff15b8c67600338f2fcb17a8a97559ae9b0a41cdc191
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 86fd4a0cef452be3f9700f8466959043ac8d30b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119318615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165282"
 ---
 # <a name="using-tooltip-controls"></a>Uso de controles de información sobre herramientas
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b6e4bd0715b7eeb5f99f34f5142ac3198c5c1eae53cf4486c3efce9dace19a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c5eb9182b6d8d3fc1360565f6661e989f3b6d0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119311345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165190"
 ---
 # <a name="wm_undo-message"></a>Mensaje \_ WM UNDO
 
@@ -49,7 +49,7 @@ Si el mensaje se realiza correctamente, el valor devuelto es **TRUE.**
 
 Si se produce un error en el mensaje, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Edición enriquecte:** Se recomienda usar [**EM \_ UNDO**](em-undo.md) en lugar de **WM \_ UNDO**.
 
@@ -61,7 +61,7 @@ Si se produce un error en el mensaje, el valor devuelto es **FALSE.**
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

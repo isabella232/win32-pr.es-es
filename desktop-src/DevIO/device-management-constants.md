@@ -4,12 +4,12 @@ ms.assetid: 93401195-3619-41a0-ad24-3fddf3932ba5
 title: Administración de dispositivos constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 620bd7a2fc3b924d3e3248c68dfe4aa2c9efc37f078604d3bc6ef6452fe2f6f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78c293e1064e7d67df4eeef7b999d7b1e009cb18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118956924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164414"
 ---
 # <a name="device-management-constants"></a>Administración de dispositivos constantes
 

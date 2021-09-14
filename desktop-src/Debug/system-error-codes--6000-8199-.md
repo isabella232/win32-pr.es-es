@@ -4,12 +4,12 @@ ms.assetid: eaaf9f65-e8ff-4e54-90a9-04252cdd773a
 title: Códigos de error del sistema (6000-8199) (WinError.h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: d24a165798f0d4bf8a3ed534880cd3f9ad1f2b8b85d072e8a4d7aae8e6345508
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0660009411224673481e9b65bcb62d7b194ab71f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120131665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164585"
 ---
 # <a name="system-error-codes-6000-8199"></a>Códigos de error del sistema (6000-8199)
 
@@ -288,7 +288,7 @@ El archivo está cifrado y debe abrirse en modo de cifrado del lado cliente.
 
 
 
-Se está creando un nuevo archivo cifrado y $EFS se debe proporcionar un nuevo archivo.
+Se está creando un nuevo archivo cifrado y $EFS se debe proporcionar un nuevo archivo cifrado.
 
 
 </dt> </dl> </dd> <dt>
@@ -644,7 +644,7 @@ Una directiva en el registro en cuestión impedía que se completara la operaci�
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_PINNED_ARCHIVE_TAIL"></span><span id="error_log_pinned_archive_tail"></span>**COLA \_ DE ARCHIVO \_ ANCLADO DEL REGISTRO DE \_ \_ ERRORES**
+<span id="ERROR_LOG_PINNED_ARCHIVE_TAIL"></span><span id="error_log_pinned_archive_tail"></span>**COLA \_ DE ARCHIVO ANCLADO DEL REGISTRO \_ DE \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6623 (0x19DF)
@@ -696,7 +696,7 @@ El espacio de registro reservado o el ajuste del espacio de registro no es váli
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_TAIL_INVALID"></span><span id="error_log_tail_invalid"></span>**COLA DEL \_ REGISTRO DE ERRORES NO \_ \_ VÁLIDA**
+<span id="ERROR_LOG_TAIL_INVALID"></span><span id="error_log_tail_invalid"></span>**COLA \_ DEL REGISTRO DE ERRORES NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 6627 (0x19E3)
@@ -852,7 +852,7 @@ Ya se ha realizado una solicitud para controlar la condición completa del regis
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CONTAINER_READ_FAILED"></span><span id="error_log_container_read_failed"></span>**ERROR DE \_ LECTURA DEL CONTENEDOR DEL REGISTRO DE \_ \_ \_ ERRORES**
+<span id="ERROR_LOG_CONTAINER_READ_FAILED"></span><span id="error_log_container_read_failed"></span>**ERROR AL \_ LEER EL CONTENEDOR DEL REGISTRO DE \_ \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6639 (0x19EF)
@@ -865,7 +865,7 @@ El servicio de registro encontró un error al intentar leer desde un contenedor 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CONTAINER_WRITE_FAILED"></span><span id="error_log_container_write_failed"></span>**ERROR AL \_ ESCRIBIR EN EL CONTENEDOR DEL REGISTRO DE \_ \_ \_ ERRORES**
+<span id="ERROR_LOG_CONTAINER_WRITE_FAILED"></span><span id="error_log_container_write_failed"></span>**ERROR AL \_ ESCRIBIR EN EL CONTENEDOR DE \_ \_ REGISTROS \_**
 </dt> <dd> <dl> <dt>
 
 6640 (0x19F0)
@@ -977,7 +977,7 @@ Los registros se anexaron al registro o se realizaron cambios en la reserva, per
 
 
 
-El registro se ancla debido a que la reserva consume la mayor parte del espacio de registro. Liberar algunos registros reservados para que el espacio esté disponible.
+El registro se ancla debido a que la reserva consume la mayor parte del espacio del registro. Liberar algunos registros reservados para hacer que el espacio esté disponible.
 
 
 </dt> </dl> </dd> <dt>
@@ -1060,7 +1060,7 @@ Es demasiado tarde para realizar la operación solicitada, ya que la transacció
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TM_INITIALIZATION_FAILED"></span><span id="error_tm_initialization_failed"></span>**ERROR DE \_ \_ INICIALIZACIÓN DE TM \_**
+<span id="ERROR_TM_INITIALIZATION_FAILED"></span><span id="error_tm_initialization_failed"></span>**ERROR \_ AL \_ INICIALIZAR TM \_**
 </dt> <dd> <dl> <dt>
 
 6706 (0x1A32)
@@ -1073,7 +1073,7 @@ El Administrador de transacciones no se pudo inicializar correctamente. No se ad
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCEMANAGER_READ_ONLY"></span><span id="error_resourcemanager_read_only"></span>**ERROR \_ RESOURCEMANAGER \_ DE SOLO \_ LECTURA**
+<span id="ERROR_RESOURCEMANAGER_READ_ONLY"></span><span id="error_resourcemanager_read_only"></span>**ERROR \_ RESOURCEMANAGER \_ READ \_ ONLY**
 </dt> <dd> <dl> <dt>
 
 6707 (0x1A33)
@@ -1107,12 +1107,12 @@ El administrador de recursos ha intentado preparar una transacción que no se ha
 
 
 
-El objeto Transaction ya tiene una alta superior y el autor de la llamada intentó realizar una operación que habría creado un nuevo superior. Solo se permite una única alta superior.
+El objeto Transaction ya tiene una alta superior y el autor de la llamada intentó una operación que habría creado un nuevo superior. Solo se permite una única alta superior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CRM_PROTOCOL_ALREADY_EXISTS"></span><span id="error_crm_protocol_already_exists"></span>**EL PROTOCOLO \_ CRM DE ERROR YA \_ \_ \_ EXISTE**
+<span id="ERROR_CRM_PROTOCOL_ALREADY_EXISTS"></span><span id="error_crm_protocol_already_exists"></span>**ERROR \_ CRM \_ PROTOCOL \_ ALREADY \_ EXISTS**
 </dt> <dd> <dl> <dt>
 
 6710 (0x1A36)
@@ -1177,7 +1177,7 @@ El contexto de transacción actual asociado al subproceso no es un identificador
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_NOT_FOUND"></span><span id="error_transaction_not_found"></span>**ERROR \_ TRANSACTION \_ NOT \_ FOUND**
+<span id="ERROR_TRANSACTION_NOT_FOUND"></span><span id="error_transaction_not_found"></span>**NO SE \_ ENCONTRÓ \_ LA TRANSACCIÓN DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 6715 (0x1A3B)
@@ -1185,7 +1185,7 @@ El contexto de transacción actual asociado al subproceso no es un identificador
 
 
 
-No se pudo abrir el objeto Transaction especificado porque no se encontró.
+No se pudo abrir el objeto Transaction especificado, porque no se encontró.
 
 
 </dt> </dl> </dd> <dt>
@@ -1211,12 +1211,12 @@ No se pudo abrir el objeto ResourceManager especificado porque no se encontró.
 
 
 
-No se pudo abrir el objeto enlistment especificado, porque no se encontró.
+No se pudo abrir el objeto Enlistment especificado, porque no se encontró.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTIONMANAGER_NOT_FOUND"></span><span id="error_transactionmanager_not_found"></span>**ERROR \_ TRANSACTIONMANAGER \_ NO \_ ENCONTRADO**
+<span id="ERROR_TRANSACTIONMANAGER_NOT_FOUND"></span><span id="error_transactionmanager_not_found"></span>**ERROR \_ TRANSACTIONMANAGER \_ NOT \_ FOUND**
 </dt> <dd> <dl> <dt>
 
 6718 (0x1A3E)
@@ -1224,7 +1224,7 @@ No se pudo abrir el objeto enlistment especificado, porque no se encontró.
 
 
 
-No se pudo abrir el objeto TransactionManager especificado porque no se encontró.
+No se pudo abrir el objeto TransactionManager especificado, porque no se encontró.
 
 
 </dt> </dl> </dd> <dt>
@@ -1237,7 +1237,7 @@ No se pudo abrir el objeto TransactionManager especificado porque no se encontr�
 
 
 
-No se pudo crear ni abrir el objeto especificado, porque su TransactionManager asociado no está en línea. TransactionManager debe ponerse totalmente en línea llamando a RecoverTransactionManager para recuperarse hasta el final de su LogFile antes de que se puedan abrir los objetos de sus espacios de nombres Transaction o ResourceManager. Además, los errores al escribir registros en su LogFile pueden hacer que transactionManager se desconecta.
+No se pudo crear ni abrir el objeto especificado, porque su TransactionManager asociado no está en línea. TransactionManager debe estar totalmente conectado llamando a RecoverTransactionManager para recuperarse hasta el final de su LogFile antes de que se puedan abrir los objetos de sus espacios de nombres Transaction o ResourceManager. Además, los errores al escribir registros en su LogFile pueden hacer que transactionManager se desconecta.
 
 
 </dt> </dl> </dd> <dt>
@@ -1250,7 +1250,7 @@ No se pudo crear ni abrir el objeto especificado, porque su TransactionManager a
 
 
 
-El TransactionManager especificado no pudo crear los objetos contenidos en su archivo de registro en el espacio de nombres Ob. Por lo tanto, TransactionManager no se pudo recuperar.
+TransactionManager especificado no pudo crear los objetos contenidos en su archivo de registro en el espacio de nombres Ob. Por lo tanto, TransactionManager no pudo recuperarse.
 
 
 </dt> </dl> </dd> <dt>
@@ -1263,7 +1263,7 @@ El TransactionManager especificado no pudo crear los objetos contenidos en su ar
 
 
 
-No se pudo completar la llamada para crear una alta superior en este objeto Transaction, porque el objeto Transaction especificado para la alta es una rama subordinada de transaction. Solo la raíz de la transacción se puede inselecciona como superior.
+No se pudo completar la llamada para crear una alta superior en este objeto Transaction, porque el objeto Transaction especificado para la lista es una rama subordinada de transaction. Solo la raíz de la transacción se puede agregar como superior.
 
 
 </dt> </dl> </dd> <dt>
@@ -1302,7 +1302,7 @@ La operación especificada no se pudo realizar en esta alta superior, porque la 
 
 
 
-No se pudo realizar la operación especificada, porque el registro que se registraría era demasiado largo. Esto puede ocurrir debido a dos condiciones: o hay demasiadas inscciones en esta transacción o la combinación de RecoveryInformation que se registra en nombre de esas inscciones es demasiado larga.
+No se pudo realizar la operación especificada, porque el registro que se registraría era demasiado largo. Esto puede ocurrir debido a dos condiciones: o hay demasiadas inscciones en esta transacción, o bien la clase RecoveryInformation combinada que se registra en nombre de esas inscciones es demasiado larga.
 
 
 </dt> </dl> </dd> <dt>
@@ -1320,7 +1320,7 @@ No se admite la transacción implícita.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_INTEGRITY_VIOLATED"></span><span id="error_transaction_integrity_violated"></span>**INTEGRIDAD DE \_ \_ TRANSACCIÓN DE ERROR \_ INFRINGIDO**
+<span id="ERROR_TRANSACTION_INTEGRITY_VIOLATED"></span><span id="error_transaction_integrity_violated"></span>**ERROR AL \_ \_ INFRINGIR \_ LA INTEGRIDAD DE LA TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 6726 (0x1A46)
@@ -1328,7 +1328,7 @@ No se admite la transacción implícita.
 
 
 
-El administrador de transacciones del kernel tuvo que anular u olvidar la transacción porque bloqueó el progreso hacia delante.
+El administrador de transacciones del kernel tenía que anular u olvidar la transacción porque bloqueaba el progreso hacia delante.
 
 
 </dt> </dl> </dd> <dt>
@@ -1359,7 +1359,7 @@ Esta operación de instantánea no puede continuar porque un administrador de re
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSACTION_MUST_WRITETHROUGH"></span><span id="error_transaction_must_writethrough"></span>**LA \_ TRANSACCIÓN DE \_ ERROR DEBE ESCRIBIR \_ EN ESCRITURA**
+<span id="ERROR_TRANSACTION_MUST_WRITETHROUGH"></span><span id="error_transaction_must_writethrough"></span>**ERROR \_ TRANSACTION \_ MUST \_ WRITETHROUGH**
 </dt> <dd> <dl> <dt>
 
 6729 (0x1A49)
@@ -1367,7 +1367,7 @@ Esta operación de instantánea no puede continuar porque un administrador de re
 
 
 
-La transacción no se puede dar de alta con la enlistmentMask especificada, porque la transacción ya ha completado la fase de preparación previa. Para garantizar la corrección, ResourceManager debe cambiar a un modo de escritura a través y dejar de almacenar en caché los datos dentro de esta transacción. La alta solo para las fases de transacción posteriores puede seguir siendo correcta.
+No se puede dar de alta la transacción con la enlistmentMask especificada, porque la transacción ya ha completado la fase de preparación previa. Para garantizar la corrección, ResourceManager debe cambiar a un modo de escritura a través y dejar de almacenar en caché los datos dentro de esta transacción. La alta solo para las fases de transacción posteriores puede seguir siendo correcta.
 
 
 </dt> </dl> </dd> <dt>
@@ -1393,7 +1393,7 @@ La transacción no tiene una alta superior.
 
 
 
-Se completó el intento de confirmar la transacción, pero es posible que alguna parte del árbol de transacciones no se confirmara correctamente debido a la heurística. Por lo tanto, es posible que algunos datos modificados en la transacción no se haya confirmado, lo que da lugar a una incoherencia transaccional. Si es posible, compruebe la coherencia de los datos asociados.
+El intento de confirmar la transacción se completó, pero es posible que alguna parte del árbol de transacciones no se confirmara correctamente debido a la heurística. Por lo tanto, es posible que algunos datos modificados en la transacción no se haya confirmado, lo que da lugar a una incoherencia transaccional. Si es posible, compruebe la coherencia de los datos asociados.
 
 
 </dt> </dl> </dd> <dt>
@@ -1406,7 +1406,7 @@ Se completó el intento de confirmar la transacción, pero es posible que alguna
 
 
 
-La función intentó usar un nombre que está reservado para que lo use otra transacción.
+La función intentó usar un nombre que está reservado para su uso por otra transacción.
 
 
 </dt> </dl> </dd> <dt>
@@ -1419,7 +1419,7 @@ La función intentó usar un nombre que está reservado para que lo use otra tra
 
 
 
-La compatibilidad con transacciones en el administrador de recursos especificado no se inicia o se cierra debido a un error.
+La compatibilidad con transacciones en el administrador de recursos especificado no se ha iniciado o se ha cerrado debido a un error.
 
 
 </dt> </dl> </dd> <dt>
@@ -1432,12 +1432,12 @@ La compatibilidad con transacciones en el administrador de recursos especificado
 
 
 
-Los metadatos del rm se han dañado. El RM no funcionará.
+Los metadatos del rm se han dañado. Rm no funcionará.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DIRECTORY_NOT_RM"></span><span id="error_directory_not_rm"></span>**DIRECTORIO \_ DE ERROR NO \_ \_ RM**
+<span id="ERROR_DIRECTORY_NOT_RM"></span><span id="error_directory_not_rm"></span>**ERROR \_ DIRECTORY \_ NOT \_ RM**
 </dt> <dd> <dl> <dt>
 
 6803 (0x1A93)
@@ -1463,7 +1463,7 @@ El servidor remoto o recurso compartido no admite operaciones de archivos con tr
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_RESIZE_INVALID_SIZE"></span><span id="error_log_resize_invalid_size"></span>**TAMAÑO NO \_ VÁLIDO DEL TAMAÑO DEL REGISTRO DE \_ \_ \_ ERRORES**
+<span id="ERROR_LOG_RESIZE_INVALID_SIZE"></span><span id="error_log_resize_invalid_size"></span>**TAMAÑO NO \_ VÁLIDO DEL REGISTRO DE \_ \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 6806 (0x1A96)
@@ -1515,7 +1515,7 @@ Se encontró la miniversión de archivo especificada, pero se ha invalidado. La 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MINIVERSION_INACCESSIBLE_FROM_SPECIFIED_TRANSACTION"></span><span id="error_miniversion_inaccessible_from_specified_transaction"></span>**ERROR \_ MINIVERSION \_ INACCESSIBLE \_ FROM \_ SPECIFIED \_ TRANSACTION**
+<span id="ERROR_MINIVERSION_INACCESSIBLE_FROM_SPECIFIED_TRANSACTION"></span><span id="error_miniversion_inaccessible_from_specified_transaction"></span>**ERROR \_ MINIVERSION \_ INACCESIBLE \_ DESDE LA \_ TRANSACCIÓN \_ ESPECIFICADA**
 </dt> <dd> <dl> <dt>
 
 6810 (0x1A9A)
@@ -1528,7 +1528,7 @@ Una miniversión solo se puede abrir en el contexto de la transacción que la cr
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_OPEN_MINIVERSION_WITH_MODIFY_INTENT"></span><span id="error_cant_open_miniversion_with_modify_intent"></span>**ERROR \_ CANT \_ OPEN \_ MINIVERSION \_ WITH \_ MODIFY \_ INTENT**
+<span id="ERROR_CANT_OPEN_MINIVERSION_WITH_MODIFY_INTENT"></span><span id="error_cant_open_miniversion_with_modify_intent"></span>**ERROR \_ NO SE PUEDE ABRIR \_ \_ MINIVERSION CON LA INTENCIÓN \_ \_ \_ MODIFY**
 </dt> <dd> <dl> <dt>
 
 6811 (0x1A9B)
@@ -1536,7 +1536,7 @@ Una miniversión solo se puede abrir en el contexto de la transacción que la cr
 
 
 
-No es posible abrir una miniversión con acceso de modificación.
+No es posible abrir una miniversión con modificar el acceso.
 
 
 </dt> </dl> </dd> <dt>
@@ -1593,7 +1593,7 @@ No hay metadatos de transacción en el archivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_CORRUPTION_DETECTED"></span><span id="error_log_corruption_detected"></span>**SE \_ DETECTÓ \_ DAÑOS EN EL REGISTRO \_ DE ERRORES**
+<span id="ERROR_LOG_CORRUPTION_DETECTED"></span><span id="error_log_corruption_detected"></span>**SE \_ DETECTARON \_ DAÑOS EN EL REGISTRO \_ DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 6817 (0x1AA1)
@@ -1991,7 +1991,7 @@ Se intentó realizar E/S en un objeto de sección que se ha flotante como result
 
 
 
-El administrador de recursos transaccional no puede aceptar actualmente el trabajo de transacción debido a una condición transitoria, como los pocos recursos.
+El administrador de recursos transaccional no puede aceptar actualmente el trabajo de transacción debido a una condición transitoria, como los recursos bajos.
 
 
 </dt> </dl> </dd> <dt>
@@ -2004,7 +2004,7 @@ El administrador de recursos transaccional no puede aceptar actualmente el traba
 
 
 
-El administrador de recursos transaccional tenía demasiadas tranacciones pendientes que no se pudieron anular. Se ha apagado el administrador de recursos transaccional.
+El administrador de recursos transaccional tenía demasiadas tranacciones pendientes que no se pudieron anular. Se ha cerrado el administrador de recursos transaccional.
 
 
 </dt> </dl> </dd> <dt>
@@ -2035,7 +2035,7 @@ No se pudo completar la operación de compresión porque una transacción está 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VOLUME_DIRTY"></span><span id="error_volume_dirty"></span>**ERROR \_ EN EL VOLUMEN \_ DESADOBLE**
+<span id="ERROR_VOLUME_DIRTY"></span><span id="error_volume_dirty"></span>**ERROR \_ EN EL VOLUMEN \_ DESDESOCIADO**
 </dt> <dd> <dl> <dt>
 
 6851 (0x1AC3)
@@ -2043,12 +2043,12 @@ No se pudo completar la operación de compresión porque una transacción está 
 
 
 
-No se pudo completar la operación porque el volumen está desaciado. Ejecute chkdsk e inténtelo de nuevo.
+No se pudo completar la operación porque el volumen está desnuciado. Ejecute chkdsk e inténtelo de nuevo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_LINK_TRACKING_IN_TRANSACTION"></span><span id="error_no_link_tracking_in_transaction"></span>**ERROR \_ SIN SEGUIMIENTO DE \_ \_ \_ VÍNCULOS EN LA \_ TRANSACCIÓN**
+<span id="ERROR_NO_LINK_TRACKING_IN_TRANSACTION"></span><span id="error_no_link_tracking_in_transaction"></span>**ERROR \_ NO \_ LINK \_ TRACKING \_ IN \_ TRANSACTION**
 </dt> <dd> <dl> <dt>
 
 6852 (0x1AC4)
@@ -2061,7 +2061,7 @@ No se pudo completar la operación de seguimiento de vínculos porque una transa
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OPERATION_NOT_SUPPORTED_IN_TRANSACTION"></span><span id="error_operation_not_supported_in_transaction"></span>**OPERACIÓN DE ERROR \_ \_ NO ADMITIDA EN \_ \_ \_ TRANSACTION**
+<span id="ERROR_OPERATION_NOT_SUPPORTED_IN_TRANSACTION"></span><span id="error_operation_not_supported_in_transaction"></span>**OPERACIÓN \_ DE ERROR NO ADMITIDA EN \_ \_ \_ TRANSACTION \_**
 </dt> <dd> <dl> <dt>
 
 6853 (0x1AC5)
@@ -2152,7 +2152,7 @@ No se encontró el controlador de conexión de terminal especificado en la ruta 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_CANNOT_MAKE_EVENTLOG_ENTRY"></span><span id="error_ctx_cannot_make_eventlog_entry"></span>**ERROR \_ CTX \_ CANNOT \_ MAKE \_ EVENTLOG \_ ENTRY**
+<span id="ERROR_CTX_CANNOT_MAKE_EVENTLOG_ENTRY"></span><span id="error_ctx_cannot_make_eventlog_entry"></span>**ERROR \_ CTX \_ NO PUEDE REALIZAR LA ENTRADA DEL REGISTRO DE \_ \_ \_ EVENTOS**
 </dt> <dd> <dl> <dt>
 
 7005 (0x1B5D)
@@ -2199,7 +2199,7 @@ Hay una operación de cierre pendiente en la sesión.
 
 
 
-No hay búferes de salida gratuitos disponibles.
+No hay búferes de salida disponibles.
 
 
 </dt> </dl> </dd> <dt>
@@ -2225,12 +2225,12 @@ MÓDEM. No se encontró el archivo INF.
 
 
 
-El nombre del módem no se encontró en MÓDEM.INF.
+El nombre del módem no se encontró en MODEM.INF.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_MODEM_RESPONSE_ERROR"></span><span id="error_ctx_modem_response_error"></span>**ERROR \_ CTX \_ MÓDEM RESPONSE \_ \_ ERROR**
+<span id="ERROR_CTX_MODEM_RESPONSE_ERROR"></span><span id="error_ctx_modem_response_error"></span>**ERROR \_ CTX \_ MODEM \_ RESPONSE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 7011 (0x1B63)
@@ -2251,7 +2251,7 @@ El módem no aceptó el comando que se le envió. Compruebe que el nombre del m�
 
 
 
-El módem no respondió al comando que se le envió. Compruebe que el módem está correctamente cableado y encendido.
+El módem no respondió al comando que se le envió. Compruebe que el módem está cableado y encendido correctamente.
 
 
 </dt> </dl> </dd> <dt>
@@ -2282,7 +2282,7 @@ No se detectó el tono de marcado en el tiempo necesario. Compruebe que el cable
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CTX_MODEM_RESPONSE_BUSY"></span><span id="error_ctx_modem_response_busy"></span>**ERROR \_ CTX \_ MODEM \_ RESPONSE \_ BUSY**
+<span id="ERROR_CTX_MODEM_RESPONSE_BUSY"></span><span id="error_ctx_modem_response_busy"></span>**ERROR \_ RESPUESTA DE MÓDEM CTX \_ \_ \_ OCUPADA**
 </dt> <dd> <dl> <dt>
 
 7015 (0x1B67)
@@ -2355,7 +2355,7 @@ El nombre de sesión especificado ya está en uso.
 
 
 
-La tarea que está intentando realizar no se puede completar porque Servicios de Escritorio remoto está ocupado actualmente. Inténtalo de nuevo al cabo de un rato. Otros usuarios todavía deben poder iniciar sesión.
+La tarea que intenta realizar no se puede completar porque Servicios de Escritorio remoto está ocupado actualmente. Inténtalo de nuevo al cabo de un rato. Otros usuarios todavía deben poder iniciar sesión.
 
 
 </dt> </dl> </dd> <dt>
@@ -2381,7 +2381,7 @@ Se ha intentado conectarse a una sesión cuyo modo de vídeo no es compatible co
 
 
 
-La aplicación intentó habilitar el modo gráfico DOS. No se admite el modo gráfico DOS.
+La aplicación intentó habilitar el modo de gráficos DOS. No se admite el modo gráfico DOS.
 
 
 </dt> </dl> </dd> <dt>
@@ -2407,7 +2407,7 @@ Se ha deshabilitado el privilegio de inicio de sesión interactivo. Póngase en 
 
 
 
-La operación solicitada solo se puede realizar en la consola del sistema. Este suele ser el resultado de un controlador o dll del sistema que requiere acceso directo a la consola.
+La operación solicitada solo se puede realizar en la consola del sistema. Esto suele ser el resultado de un controlador o dll del sistema que requiere acceso directo a la consola.
 
 
 </dt> </dl> </dd> <dt>
@@ -2737,7 +2737,7 @@ La capa de seguridad de Terminal Server detectó un error en el flujo de protoco
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TS_INCOMPATIBLE_SESSIONS"></span><span id="error_ts_incompatible_sessions"></span>**ERROR \_ TS \_ INCOMPATIBLE \_ SESSIONS**
+<span id="ERROR_TS_INCOMPATIBLE_SESSIONS"></span><span id="error_ts_incompatible_sessions"></span>**SESIONES \_ INCOMPATIBLES DE TS \_ DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 7069 (0x1B9D)
@@ -2802,7 +2802,7 @@ No se puede detener el servicio de replicación de archivos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_INTERNAL_API"></span><span id="frs_err_internal_api"></span>**API INTERNA \_ DE ERROR \_ DE \_ FRS**
+<span id="FRS_ERR_INTERNAL_API"></span><span id="frs_err_internal_api"></span>**FRS \_ ERR \_ INTERNAL \_ API**
 </dt> <dd> <dl> <dt>
 
 8004 (0x1F44)
@@ -2862,7 +2862,7 @@ El servicio de replicación de archivos no puede satisfacer la solicitud porque 
 
 
 
-El servicio de replicación de archivos no puede satisfacer la solicitud porque rpc autenticado no está disponible. El registro de eventos puede tener más información.
+El servicio de replicación de archivos no puede satisfacer la solicitud porque la RPC autenticada no está disponible. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
@@ -2880,7 +2880,7 @@ El servicio de replicación de archivos no puede satisfacer la solicitud porque 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_PARENT_AUTHENTICATION"></span><span id="frs_err_parent_authentication"></span>**AUTENTICACIÓN PRIMARIA \_ DE ERROR \_ DE FRS \_**
+<span id="FRS_ERR_PARENT_AUTHENTICATION"></span><span id="frs_err_parent_authentication"></span>**AUTENTICACIÓN \_ PRIMARIA DE FRS ERR \_ \_**
 </dt> <dd> <dl> <dt>
 
 8010 (0x1F4A)
@@ -2888,7 +2888,7 @@ El servicio de replicación de archivos no puede satisfacer la solicitud porque 
 
 
 
-El servicio de replicación de archivos no puede satisfacer la solicitud porque rpc autenticado no está disponible en el controlador de dominio. El registro de eventos puede tener más información.
+El servicio de replicación de archivos no puede satisfacer la solicitud porque la RPC autenticada no está disponible en el controlador de dominio. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
@@ -2914,7 +2914,7 @@ El servicio de replicación de archivos no puede comunicarse con el servicio de 
 
 
 
-El servicio de replicación de archivos del controlador de dominio no puede comunicarse con el servicio de replicación de archivos en este equipo. El registro de eventos puede tener más información.
+El servicio de replicación de archivos en el controlador de dominio no puede comunicarse con el servicio de replicación de archivos en este equipo. El registro de eventos puede tener más información.
 
 
 </dt> </dl> </dd> <dt>
@@ -2971,7 +2971,7 @@ El servicio de replicación de archivos no puede detener la replicación del vol
 
 </dt> </dl> </dd> <dt>
 
-<span id="FRS_ERR_INVALID_SERVICE_PARAMETER"></span><span id="frs_err_invalid_service_parameter"></span>**PARÁMETRO DE SERVICIO \_ FRS ERR \_ NO \_ \_ VÁLIDO**
+<span id="FRS_ERR_INVALID_SERVICE_PARAMETER"></span><span id="frs_err_invalid_service_parameter"></span>**FRS \_ ERR \_ INVALID \_ SERVICE \_ PARAMETER**
 </dt> <dd> <dl> <dt>
 
 8017 (0x1F51)
@@ -2990,13 +2990,13 @@ El servicio de replicación de archivos detectó un parámetro no válido.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

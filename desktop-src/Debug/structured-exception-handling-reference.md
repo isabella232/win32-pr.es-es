@@ -1,21 +1,21 @@
 ---
-description: Los elementos siguientes se usan con el control estructurado de excepciones.
+description: Los siguientes elementos se usan con el control estructurado de excepciones.
 ms.assetid: fd658422-9ab1-4f00-9b61-ed87efac39b6
-title: Referencia de control estructurado de excepciones
+title: Referencia de control de excepciones estructurado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48f76dde0881b2c8fb4916fc5865af7bfb2c32033dbdf4d9eef7f290bd4fbf04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a83f5a9863e5466b8e6035177a9e1c38475ab03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119076359"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164626"
 ---
-# <a name="structured-exception-handling-reference"></a>Referencia de control estructurado de excepciones
+# <a name="structured-exception-handling-reference"></a>Referencia de control de excepciones estructurado
 
-Los elementos siguientes se usan con el control estructurado de excepciones.
+Los siguientes elementos se usan con el control estructurado de excepciones.
 
--   [Funciones estructuradas de control de excepciones](structured-exception-handling-functions.md)
+-   [Funciones de control de excepciones estructurado](structured-exception-handling-functions.md)
 -   [Estructuras estructuradas de control de excepciones](structured-exception-handling-structures.md)
 
  

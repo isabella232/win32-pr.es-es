@@ -1,21 +1,21 @@
 ---
-description: El sistema difunde el evento de dispositivo DBT DEVICEARRIVAL cuando se ha insertado un dispositivo o un elemento multimedia y \_ está disponible.
+description: El sistema difunde el evento de dispositivo DBT DEVICEARRIVAL cuando se ha insertado un dispositivo o un elemento multimedia \_ y está disponible.
 ms.assetid: 8e44cb02-cf79-4b19-807e-20cea07362af
 title: DBT_DEVICEARRIVAL evento (Dbt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 826d0b510ca76b829eb683396c99579c14a512a6773b76a2049ae7963ede54a5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f69c2feec996b4306c271454767ca4e75d1ff855
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120088155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164478"
 ---
 # <a name="dbt_devicearrival-event"></a>Evento \_ DEVICEARRIVAL de DBT
 
-El sistema difunde el evento de dispositivo DBT DEVICEARRIVAL cuando se ha insertado un dispositivo o un elemento multimedia y \_ está disponible.
+El sistema difunde el evento de dispositivo DBT DEVICEARRIVAL cuando se ha insertado un dispositivo o un elemento multimedia \_ y está disponible.
 
-Para difundir este evento de dispositivo, el sistema usa el mensaje [**\_ WM DEVICECHANGE**](wm-devicechange.md) con *wParam* establecido en DBT \_ DEVICEARRIVAL y *lParam* establecidos como se describe a continuación.
+Para difundir este evento de dispositivo, el sistema usa el mensaje [**\_ DEVICECHANGE de WM**](wm-devicechange.md) con *wParam* establecido en DBT \_ DEVICEARRIVAL y *lParam* establecido como se describe a continuación.
 
 
 ```C++
@@ -43,7 +43,7 @@ Identificador a una ventana.
 *uMsg* 
 </dt> <dd>
 
-Identificador [**del mensaje WM \_ DEVICECHANGE.**](wm-devicechange.md)
+Identificador [**del mensaje \_ DEVICECHANGE**](wm-devicechange.md) de WM.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Establezca en DBT \_ DEVICEARRIVAL.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura que identifica el dispositivo insertado. La estructura consta de un encabezado independiente del evento, seguido de miembros dependientes del evento que describen el dispositivo. Para usar esta estructura, trate la estructura como una estructura [**\_ BROADCAST \_ HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr) de DEV y, a continuación, compruebe su **miembro \_ dbch devicetype** para determinar el tipo de dispositivo.
+Puntero a una estructura que identifica el dispositivo insertado. La estructura consta de un encabezado independiente del evento, seguido de miembros dependientes del evento que describen el dispositivo. Para usar esta estructura, trate la estructura como una estructura [**\_ \_ DEV BROADCAST HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr) y, a continuación, compruebe su miembro **dbch \_ devicetype** para determinar el tipo de dispositivo.
 
 </dd> </dl>
 
@@ -65,9 +65,9 @@ Puntero a una estructura que identifica el dispositivo insertado. La estructura 
 
 Devuelve **TRUE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si se insertan medios, el tipo de dispositivo que llega es un volumen (el miembro **dbch \_ devicetype** es DBT DEVTYP VOLUME) y el cambio afecta al medio (el miembro \_ \_ **dbcv \_ flags** es DBTF \_ MEDIA).
+Si se insertan medios, el tipo de dispositivo que llega es un volumen (el miembro **dbch \_ devicetype** es DBT DEVTYP VOLUME) y el cambio afecta a los medios (el miembro \_ \_ **dbcv \_ flags** es DBTF \_ MEDIA).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -81,11 +81,11 @@ Para obtener un ejemplo, vea [Detectar inserción o eliminación de medios.](det
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                   |
-| Header<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

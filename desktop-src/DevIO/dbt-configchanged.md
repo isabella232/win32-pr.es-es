@@ -4,12 +4,12 @@ ms.assetid: e5e33970-b17e-4723-98aa-e242f90fe4e7
 title: DBT_CONFIGCHANGED evento (Dbt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba7e0d93b2a89793bb572a5c7563e54fa3114101443b43b8d6beac7955bdd6ce
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d242832378ba9ca3d3006965719942aa41ecff93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164482"
 ---
 # <a name="dbt_configchanged-event"></a>Evento \_ CONFIGCHANGED de DBT
 
@@ -73,11 +73,11 @@ Devuelve **TRUE.**
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                   |
-| Header<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -6,12 +6,12 @@ keywords:
 - IP4_ADDRESS
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81756daaff73e7d5afc1b7c749cd976a9ede09d74ae70eb7db05d9e5d12f2f62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2caa113670a749029b70df9772d6e2707684b7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119076869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164742"
 ---
 # <a name="dns-data-types"></a>Tipos de datos DNS
 
@@ -29,7 +29,7 @@ typedef DWORD IP4_ADDRESS;
 **DIRECCIÓN \_ IP4**
 </dt> <dd>
 
-Valor que representa una dirección IPv4 (Protocolo de Internet versión 4). Por ejemplo, la dirección IPv4 decimal con puntos, **127.0.0.1,** se representa en orden de bytes de host **0x7F000001**.
+Valor que representa una dirección IPv4 (Protocolo de Internet versión 4). Por ejemplo, la dirección IPv4 decimal con puntos, **127.0.0.1,** se representa en orden de bytes del host **como 0x7F000001**.
 
 </dd> </dl>
 
@@ -37,11 +37,11 @@ Valor que representa una dirección IPv4 (Protocolo de Internet versión 4). Por
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                |
-| Header<br/>                   | <dl> <dt>Windns.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Windns.h</dt> </dl> |
 
 
 

@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d140346d66a87bd394bc5aa36555b8accedef56891e722a4b28272e22f804ed0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d58501d02cc2058ac803c949cc7118d7f146a10
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119018653"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165562"
 ---
 # <a name="tvn_itemchanged-notification-code"></a>Código de notificación ITEMCHANGED de TVN \_
 
@@ -59,16 +59,16 @@ Devuelve **FALSE** para aceptar el cambio o **TRUE** para evitar el cambio.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ ITEMCHANGEDW** (Unicode) y **TVN \_ ITEMCHANGEDA** (ANSI)<br/>           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[TVN \_ ITEMCHANGING](tvn-itemchanging.md)
+[INTERCAMBIO DE ELEMENTOS DE TVN \_](tvn-itemchanging.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 95a838a2-f138-4682-b733-3f363b6c4a4b
 title: Funciones de depuración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfafdf5a453d262e75c4ab87356cbe34cfbb8574b520d353de0e66057903087f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39bf5f81b08e3a7b324f276fc1a7b5d256d40819
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118162676"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164666"
 ---
 # <a name="debugging-functions"></a>Funciones de depuración
 
@@ -29,14 +29,14 @@ Las siguientes funciones se usan con la depuración.
 | [**FatalExit**](/windows/desktop/api/WinBase/nf-winbase-fatalexit)                                     | Transfiere el control de ejecución al depurador.                                        |
 | [**FlushInstructionCache**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-flushinstructioncache)             | Vacía la memoria caché de instrucciones para el proceso especificado.                            |
 | [**GetThreadContext**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadcontext)                       | Recupera el contexto del subproceso especificado.                                      |
-| [**GetThreadSelectorEntry**](/windows/desktop/api/WinBase/nf-winbase-getthreadselectorentry)           | Recupera una entrada de tabla descriptor para el selector y subproceso especificados.           |
+| [**GetThreadSelectorEntry**](/windows/desktop/api/WinBase/nf-winbase-getthreadselectorentry)           | Recupera una entrada de tabla de descriptores para el selector y subproceso especificados.           |
 | [**IsDebuggerPresent**](/windows/win32/api/debugapi/nf-debugapi-isdebuggerpresent)                     | Determina si un depurador en modo de usuario depura el proceso de llamada.   |
 | [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa)                     | Envía una cadena al depurador para mostrarla.                                         |
 | [**ReadProcessMemory**](/windows/win32/api/memoryapi/nf-memoryapi-readprocessmemory)                     | Lee datos de un área de memoria en un proceso especificado.                           |
 | [**SetThreadContext**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadcontext)                       | Establece el contexto del subproceso especificado.                                          |
 | [**WaitForDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-waitfordebugevent)                     | Espera a que se produzca un evento de depuración en un proceso que se está depurando.                   |
 | [**Wow64GetThreadContext**](/windows/desktop/api/WinBase/nf-winbase-wow64getthreadcontext)             | Recupera el contexto del subproceso WOW64 especificado.                                |
-| [**Wow64GetThreadSelectorEntry**](/windows/desktop/api/WinBase/nf-winbase-wow64getthreadselectorentry) | Recupera una entrada de tabla descriptor para el selector y subproceso WOW64 especificados.     |
+| [**Wow64GetThreadSelectorEntry**](/windows/desktop/api/WinBase/nf-winbase-wow64getthreadselectorentry) | Recupera una entrada de tabla de descriptores para el selector y subproceso WOW64 especificados.     |
 | [**Wow64SetThreadContext**](/windows/desktop/api/WinBase/nf-winbase-wow64setthreadcontext)             | Establece el contexto del subproceso WOW64 especificado.                                     |
 | [**WriteProcessMemory**](/windows/win32/api/memoryapi/nf-memoryapi-writeprocessmemory)                   | Escribe datos en un área de memoria en un proceso especificado.                            |
 

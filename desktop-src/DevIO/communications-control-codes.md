@@ -4,12 +4,12 @@ ms.assetid: a9aed6bb-05aa-4378-837a-ea7ccda39ba4
 title: Códigos de control de comunicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1b1f07245d380b6b27870c9043cd3125d245f997a0fddc0594ae9c7ac0f5567
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d1089026da24c1e6d7178600e83df083527cb0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118405433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164525"
 ---
 # <a name="communications-control-codes"></a>Códigos de control de comunicaciones
 

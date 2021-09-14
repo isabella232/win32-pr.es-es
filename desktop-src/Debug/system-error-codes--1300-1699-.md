@@ -4,17 +4,17 @@ ms.assetid: 7b04a2ba-7bf9-4bff-93c8-cbb0060e069d
 title: Códigos de error del sistema (1300-1699) (WinError.h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: 7aeb1c3642331db8ed3215d55a6d77e1e7b2a98c3859a5eb64a1d5b60350d24a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8fa0cbc312c8d82879322f0bc0c79533ddb961ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119310925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164601"
 ---
 # <a name="system-error-codes-1300-1699"></a>Códigos de error del sistema (1300-1699)
 
 > [!NOTE]
-> Esta información está pensada para los desarrolladores que depuran errores del sistema. Para otros errores, como problemas con Windows Update, hay una lista de recursos en la página [Códigos de](system-error-codes.md) error.
+> Esta información está pensada para desarrolladores que depuran errores del sistema. Para otros errores, como problemas con Windows update, hay una lista de recursos en la página [Códigos de](system-error-codes.md) error.
 
 En la lista siguiente se [describen los códigos de error del](system-error-codes.md) sistema para los errores 1300 a 1699. La función [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) los devuelve cuando se producirá un error en muchas funciones. Para recuperar el texto de descripción del error en la aplicación, use la [**función FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) con la **marca FORMAT MESSAGE FROM \_ \_ \_ SYSTEM.**
 
@@ -41,7 +41,7 @@ No todos los privilegios o grupos a los que se hace referencia se asignan al aut
 
 
 
-No se ha realizado alguna asignación entre los nombres de cuenta y los ID de seguridad.
+No se ha realizado alguna asignación entre los nombres de cuenta y los de seguridad.
 
 
 </dt> </dl> </dd> <dt>
@@ -54,7 +54,7 @@ No se ha realizado alguna asignación entre los nombres de cuenta y los ID de se
 
 
 
-No se establecen límites de cuota del sistema específicamente para esta cuenta.
+No se establecen específicamente límites de cuota del sistema para esta cuenta.
 
 
 </dt> </dl> </dd> <dt>
@@ -80,7 +80,7 @@ No hay ninguna clave de cifrado disponible. Se devolvió una clave de cifrado co
 
 
 
-La contraseña es demasiado compleja para convertirse en una contraseña de LAN Manager. La contraseña del administrador de LAN devuelta es una **cadena NULL.**
+La contraseña es demasiado compleja para convertirse en una contraseña de LAN Manager. La contraseña de LAN Manager devuelta es **una cadena** NULL.
 
 
 </dt> </dl> </dd> <dt>
@@ -98,7 +98,7 @@ Se desconoce el nivel de revisión.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REVISION_MISMATCH"></span><span id="error_revision_mismatch"></span>**ERROR \_ REVISION \_ MISMATCH**
+<span id="ERROR_REVISION_MISMATCH"></span><span id="error_revision_mismatch"></span>**ERROR \_ DE COINCIDENCIA DE \_ REVISIÓN**
 </dt> <dd> <dl> <dt>
 
 1306 (0x51A)
@@ -163,7 +163,7 @@ Es posible que el grupo no esté deshabilitado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_LOGON_SERVERS"></span><span id="error_no_logon_servers"></span>**ERROR \_ NO \_ LOGON \_ SERVERS**
+<span id="ERROR_NO_LOGON_SERVERS"></span><span id="error_no_logon_servers"></span>**ERROR \_ SIN SERVIDORES DE INICIO DE \_ \_ SESIÓN**
 </dt> <dd> <dl> <dt>
 
 1311 (0x51F)
@@ -176,7 +176,7 @@ Actualmente no hay servidores de inicio de sesión disponibles para dar servicio
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_SUCH_LOGON_SESSION"></span><span id="error_no_such_logon_session"></span>**ERROR \_ NO SE HA PRODUCIDO DICHA SESIÓN DE INICIO DE \_ \_ \_ SESIÓN**
+<span id="ERROR_NO_SUCH_LOGON_SESSION"></span><span id="error_no_such_logon_session"></span>**ERROR \_ EN LA SESIÓN DE INICIO DE \_ \_ \_ SESIÓN**
 </dt> <dd> <dl> <dt>
 
 1312 (0x520)
@@ -189,7 +189,7 @@ Una sesión de inicio especificada no existe. Es posible que ya se haya terminad
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_SUCH_PRIVILEGE"></span><span id="error_no_such_privilege"></span>**ERROR \_ AL NO TENER ESTE \_ \_ PRIVILEGIO**
+<span id="ERROR_NO_SUCH_PRIVILEGE"></span><span id="error_no_such_privilege"></span>**ERROR \_ NO \_ SUCH \_ PRIVILEGE**
 </dt> <dd> <dl> <dt>
 
 1313 (0x521)
@@ -202,7 +202,7 @@ No existe un privilegio especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRIVILEGE_NOT_HELD"></span><span id="error_privilege_not_held"></span>**PRIVILEGIO DE ERROR \_ \_ NO \_ MANTENIDO**
+<span id="ERROR_PRIVILEGE_NOT_HELD"></span><span id="error_privilege_not_held"></span>**PRIVILEGIO DE \_ ERROR \_ NO \_ MANTENIDO**
 </dt> <dd> <dl> <dt>
 
 1314 (0x522)
@@ -288,7 +288,7 @@ El grupo especificado no existe.
 
 
 
-La cuenta de usuario especificada ya es miembro del grupo especificado o no se puede eliminar el grupo especificado porque contiene un miembro.
+La cuenta de usuario especificada ya es miembro del grupo especificado o el grupo especificado no se puede eliminar porque contiene un miembro.
 
 
 </dt> </dl> </dd> <dt>
@@ -314,7 +314,7 @@ La cuenta de usuario especificada no es miembro de la cuenta de grupo especifica
 
 
 
-Esta operación no está permitido, ya que podría dar lugar a que una cuenta de administración se deshabilite, elimine o no pueda iniciar sesión.
+Esta operación no se puede realizar, ya que podría dar lugar a que una cuenta de administración se deshabilite, elimine o no pueda iniciar sesión.
 
 
 </dt> </dl> </dd> <dt>
@@ -332,7 +332,7 @@ No se puede actualizar la contraseña. El valor proporcionado como contraseña a
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ILL_FORMED_PASSWORD"></span><span id="error_ill_formed_password"></span>**ERROR \_ CONTRASEÑA CON UN MAL \_ \_ FORMADO**
+<span id="ERROR_ILL_FORMED_PASSWORD"></span><span id="error_ill_formed_password"></span>**ERROR \_ CONTRASEÑA CON FORMA \_ \_ INCORRECTA**
 </dt> <dd> <dl> <dt>
 
 1324 (0x52C)
@@ -358,7 +358,7 @@ No se puede actualizar la contraseña. El valor proporcionado para la nueva cont
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOGON_FAILURE"></span><span id="error_logon_failure"></span>**ERROR AL \_ INICIAR SESIÓN \_**
+<span id="ERROR_LOGON_FAILURE"></span><span id="error_logon_failure"></span>**ERROR DE \_ INICIO DE \_ SESIÓN**
 </dt> <dd> <dl> <dt>
 
 1326 (0x52E)
@@ -379,7 +379,7 @@ El nombre de usuario o la contraseña son incorrectos.
 
 
 
-Las restricciones de cuenta impiden que este usuario inicie sesión. Por ejemplo: no se permiten contraseñas en blanco, los tiempos de inicio de sesión son limitados o se ha aplicado una restricción de directiva.
+Las restricciones de la cuenta impiden que este usuario inicie sesión. Por ejemplo: no se permiten contraseñas en blanco, los tiempos de inicio de sesión son limitados o se ha aplicado una restricción de directiva.
 
 
 </dt> </dl> </dd> <dt>
@@ -605,7 +605,7 @@ Los atributos especificados no son válidos o no son compatibles con los atribut
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_IMPERSONATION_LEVEL"></span><span id="error_bad_impersonation_level"></span>**ERROR \_ NIVEL \_ DE \_ SUPLANTACIÓN DE ERROR**
+<span id="ERROR_BAD_IMPERSONATION_LEVEL"></span><span id="error_bad_impersonation_level"></span>**ERROR \_ NIVEL DE \_ \_ SUPLANTACIÓN DE ERROR**
 </dt> <dd> <dl> <dt>
 
 1346 (0x542)
@@ -821,7 +821,7 @@ Un descriptor de seguridad no tiene el formato correcto (absoluto o relativo a s
 
 
 
-La acción solicitada está restringida solo para que la usen los procesos de inicio de sesión. El proceso de llamada no se ha registrado como un proceso de inicio de sesión.
+La acción solicitada está restringida solo para su uso por parte de procesos de inicio de sesión. El proceso de llamada no se ha registrado como un proceso de inicio de sesión.
 
 
 </dt> </dl> </dd> <dt>
@@ -1094,7 +1094,7 @@ La longitud de un secreto supera la longitud máxima permitida.
 
 
 
-La base de datos de la autoridad de seguridad local contiene una incoherencia interna.
+La base de datos de autoridad de seguridad local contiene una incoherencia interna.
 
 
 </dt> </dl> </dd> <dt>
@@ -1250,7 +1250,7 @@ No hay ninguna clave de sesión de usuario para la sesión de inicio de sesión 
 
 
 
-El servicio al que se está accediendo tiene una licencia para un número determinado de conexiones. No se pueden realizar más conexiones al servicio en este momento porque ya hay tantas conexiones como el servicio pueda aceptar.
+El servicio al que se está accediendo tiene una licencia para un número determinado de conexiones. En este momento no se pueden realizar más conexiones al servicio porque ya hay tantas conexiones como el servicio puede aceptar.
 
 
 </dt> </dl> </dd> <dt>
@@ -1307,7 +1307,7 @@ Esta operación no se puede realizar en el dominio actual.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_WINDOW_HANDLE"></span><span id="error_invalid_window_handle"></span>**ERROR \_ IDENTIFICADOR DE VENTANA NO \_ \_ VÁLIDO**
+<span id="ERROR_INVALID_WINDOW_HANDLE"></span><span id="error_invalid_window_handle"></span>**IDENTIFICADOR \_ DE VENTANA NO VÁLIDO DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1400 (0x578)
@@ -1320,7 +1320,7 @@ Identificador de ventana no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_MENU_HANDLE"></span><span id="error_invalid_menu_handle"></span>**ERROR \_ IDENTIFICADOR DE MENÚ NO \_ \_ VÁLIDO**
+<span id="ERROR_INVALID_MENU_HANDLE"></span><span id="error_invalid_menu_handle"></span>**IDENTIFICADOR \_ DE MENÚ NO VÁLIDO DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1401 (0x579)
@@ -1333,7 +1333,7 @@ Identificador de menú no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_CURSOR_HANDLE"></span><span id="error_invalid_cursor_handle"></span>**ERROR \_ IDENTIFICADOR DE CURSOR NO \_ \_ VÁLIDO**
+<span id="ERROR_INVALID_CURSOR_HANDLE"></span><span id="error_invalid_cursor_handle"></span>**IDENTIFICADOR \_ DE CURSOR NO VÁLIDO DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1402 (0x57A)
@@ -1346,7 +1346,7 @@ Identificador de cursor no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_ACCEL_HANDLE"></span><span id="error_invalid_accel_handle"></span>**ERROR \_ IDENTIFICADOR DE ACL NO \_ \_ VÁLIDO**
+<span id="ERROR_INVALID_ACCEL_HANDLE"></span><span id="error_invalid_accel_handle"></span>**IDENTIFICADOR \_ DE ACL NO VÁLIDO DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1403 (0x57B)
@@ -1359,7 +1359,7 @@ Identificador de tabla de aceleradores no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_HOOK_HANDLE"></span><span id="error_invalid_hook_handle"></span>**ERROR \_ IDENTIFICADOR DE ENLACE NO \_ \_ VÁLIDO**
+<span id="ERROR_INVALID_HOOK_HANDLE"></span><span id="error_invalid_hook_handle"></span>**IDENTIFICADOR \_ DE ENLACE NO VÁLIDO DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1404 (0x57C)
@@ -1385,7 +1385,7 @@ Identificador no válido para una estructura de posición de varias ventanas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TLW_WITH_WSCHILD"></span><span id="error_tlw_with_wschild"></span>**ERROR \_ TLW \_ CON \_ WSCHILD**
+<span id="ERROR_TLW_WITH_WSCHILD"></span><span id="error_tlw_with_wschild"></span>**ERROR \_ TLW \_ WITH \_ WSCHILD**
 </dt> <dd> <dl> <dt>
 
 1406 (0x57E)
@@ -1424,7 +1424,7 @@ Ventana no válida; pertenece a otro subproceso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HOTKEY_ALREADY_REGISTERED"></span><span id="error_hotkey_already_registered"></span>**ERROR \_ HOTKEY \_ ALREADY \_ REGISTERED**
+<span id="ERROR_HOTKEY_ALREADY_REGISTERED"></span><span id="error_hotkey_already_registered"></span>**TECLA \_ DE ACCESO RÁPIDO DE ERROR YA \_ \_ REGISTRADA**
 </dt> <dd> <dl> <dt>
 
 1409 (0x581)
@@ -1432,7 +1432,7 @@ Ventana no válida; pertenece a otro subproceso.
 
 
 
-Ya se ha registrado la tecla de acceso.
+Ya está registrada la tecla de acceso.
 
 
 </dt> </dl> </dd> <dt>
@@ -1450,7 +1450,7 @@ La clase ya existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLASS_DOES_NOT_EXIST"></span><span id="error_class_does_not_exist"></span>**LA \_ CLASE ERROR NO \_ \_ \_ EXISTE**
+<span id="ERROR_CLASS_DOES_NOT_EXIST"></span><span id="error_class_does_not_exist"></span>**LA \_ CLASE DE ERROR NO \_ \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 1411 (0x583)
@@ -1489,7 +1489,7 @@ La clase todavía tiene ventanas abiertas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_ICON_HANDLE"></span><span id="error_invalid_icon_handle"></span>**ERROR \_ IDENTIFICADOR DE ICONO NO \_ \_ VÁLIDO**
+<span id="ERROR_INVALID_ICON_HANDLE"></span><span id="error_invalid_icon_handle"></span>**IDENTIFICADOR DE \_ ICONO NO VÁLIDO DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1414 (0x586)
@@ -1502,7 +1502,7 @@ Identificador de icono no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRIVATE_DIALOG_INDEX"></span><span id="error_private_dialog_index"></span>**ERROR \_ PRIVATE \_ DIALOG \_ INDEX**
+<span id="ERROR_PRIVATE_DIALOG_INDEX"></span><span id="error_private_dialog_index"></span>**ÍNDICE DE \_ DIÁLOGO \_ PRIVADO DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1415 (0x587)
@@ -1528,7 +1528,7 @@ No se encontró el identificador del cuadro de lista.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_WILDCARD_CHARACTERS"></span><span id="error_no_wildcard_characters"></span>**ERROR \_ SIN CARACTERES \_ \_ COMODÍN**
+<span id="ERROR_NO_WILDCARD_CHARACTERS"></span><span id="error_no_wildcard_characters"></span>**ERROR \_ SIN \_ CARACTERES \_ COMODÍN**
 </dt> <dd> <dl> <dt>
 
 1417 (0x589)
@@ -1541,7 +1541,7 @@ No se encontraron caracteres comodín.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLIPBOARD_NOT_OPEN"></span><span id="error_clipboard_not_open"></span>**ERROR \_ EL PORTAPAPELES \_ NO ESTÁ \_ ABIERTO**
+<span id="ERROR_CLIPBOARD_NOT_OPEN"></span><span id="error_clipboard_not_open"></span>**ERROR \_ CLIPBOARD \_ NOT \_ OPEN**
 </dt> <dd> <dl> <dt>
 
 1418 (0x58A)
@@ -1554,7 +1554,7 @@ El subproceso no tiene un Portapapeles abierto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HOTKEY_NOT_REGISTERED"></span><span id="error_hotkey_not_registered"></span>**ERROR \_ HOTKEY \_ NOT \_ REGISTERED**
+<span id="ERROR_HOTKEY_NOT_REGISTERED"></span><span id="error_hotkey_not_registered"></span>**TECLA \_ DE ACCESO RÁPIDO DE ERROR NO \_ \_ REGISTRADA**
 </dt> <dd> <dl> <dt>
 
 1419 (0x58B)
@@ -1562,7 +1562,7 @@ El subproceso no tiene un Portapapeles abierto.
 
 
 
-La clave de acceso no está registrada.
+La tecla de acceso no está registrada.
 
 
 </dt> </dl> </dd> <dt>
@@ -1588,12 +1588,12 @@ La ventana no es una ventana de diálogo válida.
 
 
 
-No se encontró el identificador de control.
+No se encuentra el identificador de control.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_COMBOBOX_MESSAGE"></span><span id="error_invalid_combobox_message"></span>**ERROR \_ MENSAJE DE CUADRO COMBINADO NO \_ \_ VÁLIDO**
+<span id="ERROR_INVALID_COMBOBOX_MESSAGE"></span><span id="error_invalid_combobox_message"></span>**MENSAJE DE \_ CUADRO COMBINADO NO VÁLIDO DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1422 (0x58E)
@@ -1606,7 +1606,7 @@ Mensaje no válido para un cuadro combinado porque no tiene un control de edici�
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WINDOW_NOT_COMBOBOX"></span><span id="error_window_not_combobox"></span>**VENTANA DE \_ ERROR \_ NO \_ COMBOBOX**
+<span id="ERROR_WINDOW_NOT_COMBOBOX"></span><span id="error_window_not_combobox"></span>**CUADRO \_ COMBINADO DE LA VENTANA DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1423 (0x58F)
@@ -1632,7 +1632,7 @@ El alto debe ser menor que 256.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DC_NOT_FOUND"></span><span id="error_dc_not_found"></span>**ERROR \_ DC \_ NOT \_ FOUND**
+<span id="ERROR_DC_NOT_FOUND"></span><span id="error_dc_not_found"></span>**NO SE \_ ENCONTRÓ EL CONTROLADOR DE DOMINIO DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1425 (0x591)
@@ -2113,7 +2113,7 @@ Identificador de monitor no válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INCORRECT_SIZE"></span><span id="error_incorrect_size"></span>**ERROR \_ TAMAÑO \_ INCORRECTO**
+<span id="ERROR_INCORRECT_SIZE"></span><span id="error_incorrect_size"></span>**TAMAÑO \_ INCORRECTO \_ DEL ERROR**
 </dt> <dd> <dl> <dt>
 
 1462 (0x5B6)
@@ -2126,7 +2126,7 @@ Argumento de tamaño incorrecto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYMLINK_CLASS_DISABLED"></span><span id="error_symlink_class_disabled"></span>**ERROR \_ SYMLINK \_ (CLASE \_ DESHABILITADA)**
+<span id="ERROR_SYMLINK_CLASS_DISABLED"></span><span id="error_symlink_class_disabled"></span>**ERROR \_ SYMLINK (CLASE \_ \_ DESHABILITADA)**
 </dt> <dd> <dl> <dt>
 
 1463 (0x5B7)
@@ -2204,7 +2204,7 @@ El autor de la llamada realizó la solicitud de conexión en el compartimiento d
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_AUTHIP_FAILURE"></span><span id="error_authip_failure"></span>**ERROR \_ AUTHIP \_ FAILURE**
+<span id="ERROR_AUTHIP_FAILURE"></span><span id="error_authip_failure"></span>**ERROR \_ DE AUTHIP \_**
 </dt> <dd> <dl> <dt>
 
 1469 (0x5BD)
@@ -2238,7 +2238,7 @@ Existen recursos de NVRAM insuficientes para completar el servicio solicitado. E
 
 
 
-No se puede finalizar la operación solicitada porque el proceso especificado no es un proceso gui.
+No se puede finalizar la operación solicitada porque el proceso especificado no es un proceso de GUI.
 
 
 </dt> </dl> </dd> <dt>
@@ -2264,12 +2264,12 @@ El archivo de registro de eventos está dañado.
 
 
 
-No se pudo abrir ningún archivo de registro de eventos, por lo que el servicio de registro de eventos no se inició.
+No se pudo abrir ningún archivo de registro de eventos, por lo que no se inició el servicio de registro de eventos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_FILE_FULL"></span><span id="error_log_file_full"></span>**ARCHIVO \_ DE REGISTRO DE ERRORES \_ \_ LLENO**
+<span id="ERROR_LOG_FILE_FULL"></span><span id="error_log_file_full"></span>**ARCHIVO \_ DE REGISTRO DE ERRORES \_ \_ COMPLETO**
 </dt> <dd> <dl> <dt>
 
 1502 (0x5DE)
@@ -2316,7 +2316,7 @@ El nombre de tarea especificado no es válido.
 
 
 
-El índice de tareas especificado no es válido.
+El índice de tarea especificado no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -2342,7 +2342,7 @@ El subproceso especificado ya se está uniendo a una tarea.
 
 
 
-No Windows se pudo acceder al servicio del instalador de archivos. Esto puede ocurrir si el Windows instalador no está instalado correctamente. Póngase en contacto con el personal de soporte técnico para obtener ayuda.
+No Windows se pudo acceder al servicio instalador de archivos. Esto puede ocurrir si el instalador Windows no está instalado correctamente. Póngase en contacto con el personal de soporte técnico para obtener ayuda.
 
 
 </dt> </dl> </dd> <dt>
@@ -2360,7 +2360,7 @@ Instalación cancelada por el usuario.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_FAILURE"></span><span id="error_install_failure"></span>**ERROR \_ DE INSTALACIÓN \_**
+<span id="ERROR_INSTALL_FAILURE"></span><span id="error_install_failure"></span>**ERROR DE \_ INSTALACIÓN \_**
 </dt> <dd> <dl> <dt>
 
 1603 (0x643)
@@ -2420,7 +2420,7 @@ Id. de característica no registrado.
 
 
 
-Id. de componente no registrado.
+Identificador de componente no registrado.
 
 
 </dt> </dl> </dd> <dt>
@@ -2490,7 +2490,7 @@ El origen de instalación de este producto no está disponible. Compruebe que el
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_PACKAGE_VERSION"></span><span id="error_install_package_version"></span>**ERROR \_ INSTALAR LA VERSIÓN DEL \_ \_ PAQUETE**
+<span id="ERROR_INSTALL_PACKAGE_VERSION"></span><span id="error_install_package_version"></span>**ERROR \_ AL INSTALAR LA VERSIÓN DEL \_ \_ PAQUETE**
 </dt> <dd> <dl> <dt>
 
 1613 (0x64D)
@@ -2498,7 +2498,7 @@ El origen de instalación de este producto no está disponible. Compruebe que el
 
 
 
-Este paquete de instalación no se puede instalar mediante el servicio Windows Installer. Debe instalar un service pack Windows que contenga una versión más reciente del servicio Windows Installer.
+El servicio instalador de Windows no puede instalar este paquete de instalación. Debe instalar un service pack Windows que contenga una versión más reciente del servicio Windows Installer.
 
 
 </dt> </dl> </dd> <dt>
@@ -2516,7 +2516,7 @@ El producto se desinstala.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_QUERY_SYNTAX"></span><span id="error_bad_query_syntax"></span>**SINTAXIS \_ DE CONSULTA INCORRECTA DE \_ \_ ERROR**
+<span id="ERROR_BAD_QUERY_SYNTAX"></span><span id="error_bad_query_syntax"></span>**ERROR: \_ SINTAXIS \_ DE CONSULTA \_ INCORRECTA**
 </dt> <dd> <dl> <dt>
 
 1615 (0x64F)
@@ -2524,12 +2524,12 @@ El producto se desinstala.
 
 
 
-SQL sintaxis de consulta no válida o no compatible.
+SQL sintaxis de consulta no válida o no admitida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_FIELD"></span><span id="error_invalid_field"></span>**CAMPO ERROR \_ NO \_ VÁLIDO**
+<span id="ERROR_INVALID_FIELD"></span><span id="error_invalid_field"></span>**ERROR \_ CAMPO NO \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1616 (0x650)
@@ -2542,7 +2542,7 @@ El campo de registro no existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_REMOVED"></span><span id="error_device_removed"></span>**SE \_ QUITÓ EL \_ DISPOSITIVO DE ERROR**
+<span id="ERROR_DEVICE_REMOVED"></span><span id="error_device_removed"></span>**SE HA \_ QUITADO EL DISPOSITIVO DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1617 (0x651)
@@ -2555,7 +2555,7 @@ Se ha quitado el dispositivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_ALREADY_RUNNING"></span><span id="error_install_already_running"></span>**ERROR \_ AL INSTALAR YA EN \_ \_ EJECUCIÓN**
+<span id="ERROR_INSTALL_ALREADY_RUNNING"></span><span id="error_install_already_running"></span>**ERROR \_ INSTALACIÓN YA EN \_ \_ EJECUCIÓN**
 </dt> <dd> <dl> <dt>
 
 1618 (0x652)
@@ -2568,7 +2568,7 @@ Ya hay otra instalación en curso. Complete esa instalación antes de continuar 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_PACKAGE_OPEN_FAILED"></span><span id="error_install_package_open_failed"></span>**ERROR AL \_ ABRIR EL PAQUETE DE INSTALACIÓN CON \_ \_ \_ ERROR**
+<span id="ERROR_INSTALL_PACKAGE_OPEN_FAILED"></span><span id="error_install_package_open_failed"></span>**ERROR AL \_ INSTALAR PAQUETE ABIERTO CON \_ \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 1619 (0x653)
@@ -2576,7 +2576,7 @@ Ya hay otra instalación en curso. Complete esa instalación antes de continuar 
 
 
 
-No se pudo abrir este paquete de instalación. Compruebe que el paquete existe y que puede acceder a él, o póngase en contacto con el proveedor de la aplicación para comprobar que se trata de un paquete de Windows instalador válido.
+No se pudo abrir este paquete de instalación. Compruebe que el paquete existe y que puede acceder a él, o póngase en contacto con el proveedor de la aplicación para comprobar que se trata de un paquete Windows Installer.
 
 
 </dt> </dl> </dd> <dt>
@@ -2589,7 +2589,7 @@ No se pudo abrir este paquete de instalación. Compruebe que el paquete existe y
 
 
 
-No se pudo abrir este paquete de instalación. Póngase en contacto con el proveedor de la aplicación para comprobar que se trata de un paquete Windows instalador válido.
+No se pudo abrir este paquete de instalación. Póngase en contacto con el proveedor de la aplicación para comprobar que se trata de un paquete Windows Installer válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -2607,7 +2607,7 @@ Se produjo un error al iniciar la interfaz Windows de usuario del servicio Insta
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_LOG_FAILURE"></span><span id="error_install_log_failure"></span>**ERROR AL \_ INSTALAR \_ EL \_ REGISTRO**
+<span id="ERROR_INSTALL_LOG_FAILURE"></span><span id="error_install_log_failure"></span>**ERROR \_ AL INSTALAR EL \_ \_ REGISTRO**
 </dt> <dd> <dl> <dt>
 
 1622 (0x656)
@@ -2659,7 +2659,7 @@ Esta instalación está prohibida por la directiva del sistema. Póngase en cont
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FUNCTION_NOT_CALLED"></span><span id="error_function_not_called"></span>**FUNCIÓN DE \_ ERROR \_ NO \_ LLAMADA**
+<span id="ERROR_FUNCTION_NOT_CALLED"></span><span id="error_function_not_called"></span>**ERROR \_ FUNCTION \_ NOT \_ CALLED**
 </dt> <dd> <dl> <dt>
 
 1626 (0x65A)
@@ -2672,7 +2672,7 @@ No se pudo ejecutar la función.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FUNCTION_FAILED"></span><span id="error_function_failed"></span>**ERROR EN \_ LA FUNCIÓN \_**
+<span id="ERROR_FUNCTION_FAILED"></span><span id="error_function_failed"></span>**ERROR \_ EN LA FUNCIÓN \_**
 </dt> <dd> <dl> <dt>
 
 1627 (0x65B)
@@ -2706,7 +2706,7 @@ Tabla no válida o desconocida especificada.
 
 
 
-Los datos proporcionados son de tipo incorrecto.
+Los datos proporcionados son de un tipo incorrecto.
 
 
 </dt> </dl> </dd> <dt>
@@ -2732,7 +2732,7 @@ No se admiten datos de este tipo.
 
 
 
-No se Windows el servicio instalador de archivos. Póngase en contacto con el personal de soporte técnico.
+No se Windows el servicio instalador de Windows error. Póngase en contacto con el personal de soporte técnico.
 
 
 </dt> </dl> </dd> <dt>
@@ -2776,7 +2776,7 @@ Componente no utilizado en este equipo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PATCH_PACKAGE_OPEN_FAILED"></span><span id="error_patch_package_open_failed"></span>**ERROR AL \_ ABRIR EL PAQUETE DE \_ \_ REVISIÓN \_**
+<span id="ERROR_PATCH_PACKAGE_OPEN_FAILED"></span><span id="error_patch_package_open_failed"></span>**ERROR AL \_ ABRIR EL PAQUETE DE \_ \_ \_ REVISIÓN**
 </dt> <dd> <dl> <dt>
 
 1635 (0x663)
@@ -2802,7 +2802,7 @@ No se pudo abrir este paquete de actualización. Póngase en contacto con el pro
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PATCH_PACKAGE_UNSUPPORTED"></span><span id="error_patch_package_unsupported"></span>**PAQUETE \_ DE \_ REVISIÓN DE ERRORES NO \_ COMPATIBLE**
+<span id="ERROR_PATCH_PACKAGE_UNSUPPORTED"></span><span id="error_patch_package_unsupported"></span>**PAQUETE \_ DE \_ REVISIÓN DE ERRORES NO \_ ADMITIDO**
 </dt> <dd> <dl> <dt>
 
 1637 (0x665)
@@ -2810,7 +2810,7 @@ No se pudo abrir este paquete de actualización. Póngase en contacto con el pro
 
 
 
-El servicio instalador de Windows no puede procesar este paquete de actualización. Debe instalar un service pack Windows que contenga una versión más reciente del servicio Windows Installer.
+El servicio installer no puede procesar este paquete Windows actualización. Debe instalar un service pack Windows que contenga una versión más reciente del servicio Windows Installer.
 
 
 </dt> </dl> </dd> <dt>
@@ -2841,7 +2841,7 @@ Argumento de línea de comandos no válido. Consulte el SDK Windows Installer pa
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTALL_REMOTE_DISALLOWED"></span><span id="error_install_remote_disallowed"></span>**ERROR \_ DE INSTALACIÓN REMOTA NO \_ \_ PERMITIDO**
+<span id="ERROR_INSTALL_REMOTE_DISALLOWED"></span><span id="error_install_remote_disallowed"></span>**ERROR \_ INSTALAR REMOTO NO \_ \_ PERMITIDO**
 </dt> <dd> <dl> <dt>
 
 1640 (0x668)
@@ -2875,7 +2875,7 @@ La operación solicitada se completó correctamente. El sistema se reiniciará p
 
 
 
-El servicio instalador de Windows no puede instalar la actualización porque es posible que falte el programa que se va a actualizar o que la actualización actualice una versión diferente del programa. Compruebe que el programa que se va a actualizar existe en el equipo y que tiene la actualización correcta.
+El servicio instalador de Windows no puede instalar la actualización porque es posible que falte el programa que se va a actualizar o que la actualización actualice otra versión del programa. Compruebe que el programa que se va a actualizar existe en el equipo y que tiene la actualización correcta.
 
 
 </dt> </dl> </dd> <dt>
@@ -3005,7 +3005,7 @@ Windows El instalador no permite la actualización de productos anunciados admin
 
 
 
-El Windows installer no es accesible en Caja fuerte modo. Inténtelo de nuevo cuando el equipo no esté en modo Caja fuerte o puede usar Restaurar sistema para devolver el equipo a un estado anterior bueno.
+El Windows installer no es accesible en Caja fuerte modo. Vuelva a intentarlo cuando el equipo no esté en modo Caja fuerte o puede usar Restaurar sistema para devolver el equipo a un estado anterior bueno.
 
 
 </dt> </dl> </dd> <dt>
@@ -3040,11 +3040,11 @@ La aplicación que intenta ejecutar no se admite en esta versión de Windows.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
 
 
 

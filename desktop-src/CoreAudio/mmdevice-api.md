@@ -4,12 +4,12 @@ ms.assetid: 3a8fd734-0761-4b5b-ba04-677c7c040988
 title: Acerca de MMDevice API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23e2f33c6969e00006c12b0bc6dc1ba37b70c5ff38ea2846633d5eb61da03b19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82843bbecf004d0931575d73ec2459c3e72a3cf3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077549"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164950"
 ---
 # <a name="about-mmdevice-api"></a>Acerca de MMDevice API
 
@@ -17,7 +17,7 @@ La API Windows Multimedia Device (MMDevice) permite a los clientes de audio dete
 
 El archivo de encabezado Mmdeviceapi.h define las interfaces de la API MMDevice.
 
-MMDevice API consta de varias interfaces. El primero de ellos es la [**interfaz IMMDeviceEnumerator.**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) Para acceder a las interfaces de la API MMDevice, un cliente obtiene una referencia a la interfaz **IMMDeviceEnumerator** de un objeto de enumerador de dispositivos mediante una llamada a la función [**CoCreateInstance,**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) como se muestra en el fragmento de código siguiente:
+MMDevice API consta de varias interfaces. El primero de ellos es la [**interfaz IMMDeviceEnumerator.**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) Para acceder a las interfaces de MMDevice API, un cliente obtiene una referencia a la interfaz **IMMDeviceEnumerator** de un objeto de enumerador de dispositivos mediante una llamada a la función [**CoCreateInstance,**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) como se muestra en el fragmento de código siguiente:
 
 
 ```C++
@@ -31,9 +31,9 @@ MMDevice API consta de varias interfaces. El primero de ellos es la [**interfaz 
 
 
 
-En el fragmento de código anterior, CLSID MMDeviceEnumerator e IID IMMDeviceEnumerator son los valores GUID que se adjuntan como atributos al objeto de clase MMDeviceEnumerator y a la interfaz \_ \_ [**IMMDeviceEnumerator.**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator)  La [**llamada CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) pasa estos valores por referencia. La `hr` variable es de tipo **HRESULT** y la variable es un puntero a la interfaz `pEnumerator` **IMMDeviceEnumerator** de un objeto enumerador de dispositivo. **IMMDeviceEnumerator proporciona métodos** para enumerar los dispositivos de punto de conexión de audio. Para obtener información sobre el **\_ \_ operador uuidof,** la **función CoCreateInstance** y las constantes CLSCTX Xxx, consulte la documentación \_  Windows SDK.
+En el fragmento de código anterior, CLSID MMDeviceEnumerator e IID IMMDeviceEnumerator son los valores GUID que se adjuntan como atributos al objeto de clase MMDeviceEnumerator y a la interfaz \_ \_ [**IMMDeviceEnumerator.**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator)  La [**llamada a CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) pasa estos valores por referencia. La `hr` variable es de tipo **HRESULT** y la variable es un puntero a la interfaz `pEnumerator` **IMMDeviceEnumerator** de un objeto de enumerador de dispositivos. **IMMDeviceEnumerator proporciona métodos** para enumerar los dispositivos de punto de conexión de audio. Para obtener información sobre el operador **\_ \_ uuidof,** la función **CoCreateInstance** y las constantes XXX de CLSCTX, consulte la \_  documentación Windows SDK.
 
-A través [**de la interfaz IMMDeviceEnumerator,**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) el cliente puede obtener referencias a las otras interfaces en la API MMDevice. MMDevice API implementa las siguientes interfaces.
+A través [**de la interfaz IMMDeviceEnumerator,**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) el cliente puede obtener referencias a las otras interfaces de la API MMDevice. MMDevice API implementa las interfaces siguientes.
 
 
 
@@ -48,7 +48,7 @@ A través [**de la interfaz IMMDeviceEnumerator,**](/windows/desktop/api/Mmdevic
 
  
 
-Además, los clientes de MMDevice API que requieren la notificación de cambios de estado en los dispositivos de punto de conexión de audio deben implementar la siguiente interfaz.
+Además, los clientes de la API MMDevice que requieren la notificación de los cambios de estado en los dispositivos de punto de conexión de audio deben implementar la siguiente interfaz.
 
 
 

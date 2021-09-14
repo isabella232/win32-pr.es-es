@@ -3,7 +3,7 @@ title: TVN_GETDISPINFO de notificación (Commctrl.h)
 description: Solicita que la ventana primaria de un control de vista de árbol proporcione la información necesaria para mostrar u ordenar un elemento. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 2dfe41d8-1164-481b-ac07-8faba43c562a
 keywords:
-- TVN_GETDISPINFO código de notificación Windows controles
+- TVN_GETDISPINFO de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59728c816ee3fe7dac46c12d7e62da6c18cfdad8387f03d3861e63792d9c8f66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a09bcc683ba9cf2d89a796e63812381254588a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120059915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165569"
 ---
 # <a name="tvn_getdispinfo-notification-code"></a>Código de notificación \_ GETDISPINFO de TVN
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMTVDISPINFO.**](/windows/win32/api/commctrl/ns-comm
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este código de notificación se envía en las siguientes circunstancias:
 
@@ -67,12 +67,12 @@ Este código de notificación se envía en las siguientes circunstancias:
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ GETDISPINFOW** (Unicode) y **TVN \_ GETDISPINFOA** (ANSI)<br/>           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

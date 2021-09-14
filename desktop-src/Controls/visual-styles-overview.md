@@ -1,17 +1,17 @@
 ---
-title: Información general sobre los estilos visuales
+title: Información general sobre estilos visuales
 description: En este tema se describen los estilos visuales e identifica Windows componentes que los admiten. También se explican los pasos que debe seguir para usar estilos visuales en las aplicaciones.
 ms.assetid: 5B5D7BB6-684F-478D-BF5F-B8D18BBCFF2E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 237ac858e1a60e615a6af177728102fb7e6ea1737a3a2d94d93091264b02121a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5663730c752fbf16c4f229a031eafa0c65bb9dbb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077738"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165258"
 ---
-# <a name="visual-styles-overview"></a>Información general sobre los estilos visuales
+# <a name="visual-styles-overview"></a>Información general sobre estilos visuales
 
 En este tema se describen los estilos visuales e identifica Windows componentes que los admiten. También se explican los pasos que debe seguir para usar estilos visuales en las aplicaciones. Este tema incluye las siguientes secciones:
 
@@ -22,7 +22,7 @@ En este tema se describen los estilos visuales e identifica Windows componentes 
 
 ## <a name="themes-and-visual-styles"></a>Themes and Visual Styles
 
-Windows incluye varias características que permiten a los usuarios adaptar la interfaz de usuario para adaptarse a sus necesidades y preferencias individuales. Estas características incluyen temas, que se introdujeron en Microsoft Plus. para Windows 95. Un tema es una colección de configuraciones seleccionable por el usuario que incluye papel tapiz, cursores, fuentes, sonidos e iconos. A continuación se den algunas características de los temas.
+Windows incluye varias características que permiten a los usuarios adaptar la interfaz de usuario para adaptarse a sus necesidades y preferencias individuales. Estas características incluyen temas, que se introdujeron en Microsoft Plus. para Windows 95. Un tema es una colección seleccionable por el usuario de configuraciones que incluye papel tapiz, cursores, fuentes, sonidos e iconos. A continuación se den algunas características de los temas.
 
 -   La configuración del tema se especifica en los archivos .theme que tienen un formato similar a win.ini archivos.
 -   Un proveedor de software independiente (ISV) puede crear y distribuir un archivo .theme con un producto.
@@ -30,7 +30,7 @@ Windows incluye varias características que permiten a los usuarios adaptar la i
 
 Para obtener más información sobre los archivos .theme, vea [Theme File Format](themesfileformat-overview.md).
 
-Un estilo visual es una especificación que define la apariencia del Windows controles comunes. Los estilos visuales están asociados a temas; Es decir, un archivo .theme contiene una sección que especifica el estilo visual que se aplicará cuando el tema concreto esté activo. Las siguientes son algunas características de los estilos visuales.
+Un estilo visual es una especificación que define la apariencia de la Windows controles comunes. Los estilos visuales están asociados a temas; Es decir, un archivo .theme contiene una sección que especifica el estilo visual que se aplicará cuando el tema concreto esté activo. Las siguientes son algunas características de los estilos visuales.
 
 -   Los usuarios pueden cambiar el estilo visual en cualquier momento seleccionando un tema diferente.
 -   Debe usar la API de estilos visuales para aplicar el estilo visual activo actualmente a los controles personalizados o dibujados por el propietario de la aplicación, si los hay.
@@ -45,7 +45,7 @@ Por el contrario, en la ilustración siguiente se muestra el mismo cuadro de di�
 
 ![captura de pantalla de un cuadro de diálogo con botones que usan transparencia](images/tb-withstyles.png)
 
-En el ejemplo siguiente se muestra un cuadro de diálogo similar en un Windows 8 escritorio. En Windows 8, los estilos visuales siempre están on, por lo que Windows 8 aplicaciones obtenerlos "de forma gratuita".
+En el ejemplo siguiente se muestra un cuadro de diálogo similar en un Windows 8 escritorio. En Windows 8, los estilos visuales siempre están on, por lo que Windows 8 aplicaciones obtienen tema "de forma gratuita".
 
 ![captura de pantalla de un cuadro de diálogo simple en el escritorio de Windows 8](images/tb-win8.png)
 
@@ -75,7 +75,7 @@ En el caso de los controles comunes, no es necesario realizar ninguna otra acci�
 
 Si la aplicación contiene controles personalizados o dibujados por el propietario, debe usar la API de estilos visuales para recuperar información sobre el estilo visual activo actualmente y para dibujar los controles en ese estilo.
 
-Para Windows versiones anteriores a Windows 8, las aplicaciones normalmente necesitan proporcionar dos rutas de acceso de código independientes para dibujar controles personalizados y dibujados por el propietario. Una ruta de acceso de código dibuja los controles cuando un tema que usa estilos visuales está activo y otra ruta de acceso de código dibuja los controles cuando el tema clásico de Windows o un tema de contraste alto está activo. En Windows 8, sin embargo, los estilos visuales siempre están on, por lo que no se necesitan rutas de acceso de código de tema independientes. Las aplicaciones que se manifiestan para Windows 8 obtienen un alto contraste de los theming "de forma gratuita". Para obtener más información, [vea Supporting contraste alto Themes](supporting-high-contrast-themes.md).
+Para Windows versiones anteriores a Windows 8, las aplicaciones normalmente necesitan proporcionar dos rutas de acceso de código independientes para dibujar controles personalizados y dibujados por el propietario. Una ruta de acceso de código dibuja los controles cuando un tema que usa estilos visuales está activo y otra ruta de acceso de código dibuja los controles cuando el tema clásico de Windows o un tema de contraste alto están activos. En Windows 8, sin embargo, los estilos visuales están siempre en marcha, por lo que no se necesitan rutas de acceso de código de tema independientes. Las aplicaciones que se manifiestan para Windows 8 obtienen un gran contraste de los theming "de forma gratuita". Para obtener más información, [vea Supporting contraste alto Themes](supporting-high-contrast-themes.md).
 
 Para obtener más información sobre, vea Usar estilos visuales con controles personalizados [y Owner-Drawn y](using-visual-styles.md) Referencia de estilos [visuales.](uxctl-ref.md)
 

@@ -4,12 +4,12 @@ description: En este tema se proporcionan detalles de implementación y ejemplos
 ms.assetid: 388ca191-be77-4954-baeb-73fa209dc21d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 335ec0d400fe55f7aaf6261f96844744bdae9fdc2087d3d3fb5b8c68795117fb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ce61377cef08fb11f0a655fe9930ac755f5240dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119655805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165334"
 ---
 # <a name="using-header-controls"></a>Usar controles de encabezado
 

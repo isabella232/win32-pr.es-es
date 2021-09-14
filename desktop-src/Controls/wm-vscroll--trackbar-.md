@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0dabd6c3c50588c4a9052b0829473352940f0027a1c12d0f3bbc6334e5f13b08
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1e13b07fab3335bf99469cd43ed1caa10373a97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077659"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165177"
 ---
 # <a name="wm_vscroll-trackbar-notification-code"></a>Código de notificación de WM \_ VSCROLL (Trackbar)
 
@@ -50,7 +50,7 @@ LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.
 
 
 
-| Valor                                                                                                                                                                  | Significado                                                                                                                                                                                     |
+| Value                                                                                                                                                                  | Significado                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="TB_BOTTOM"></span><span id="tb_bottom"></span><dl> <dt>**TB \_ INFERIOR**</dt> </dl>                      | El usuario ha presionado la tecla END [**(VK \_ END).**](/windows/desktop/inputdev/virtual-key-codes)<br/>                                                                                          |
 | <span id="TB_ENDTRACK"></span><span id="tb_endtrack"></span><dl> <dt>**TB \_ ENDTRACK**</dt> </dl>                | La barra de seguimiento recibió [**WM \_ KEYUP**](/windows/desktop/inputdev/wm-keyup), lo que significa que el usuario publicó una clave que envió un código de clave virtual pertinente. <br/>                                           |
@@ -79,7 +79,7 @@ Identificador del control trackbar.
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El código THUMBTRACK de TB lo usan normalmente las aplicaciones que proporcionan \_ comentarios a medida que el usuario arrastra el cuadro de desplazamiento.
 
@@ -89,15 +89,15 @@ Tenga en cuenta que **el mensaje \_ VSCROLL** de WM solo contiene 16 bits de dat
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

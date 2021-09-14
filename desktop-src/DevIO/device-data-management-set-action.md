@@ -4,16 +4,16 @@ ms.assetid: ff688c9a-8669-4699-aab9-1e2e3a5c7fca
 title: DEVICE_DATA_MANAGEMENT_SET_ACTION (WinIoCtl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 602243e31645e1cc4706e3a3a2b954bb68fc2cbda58a0f0b6c9076ae6b0797f3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 524d1dbd2ecf09dbcfa66fa766089dde7cf04a0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119654925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164434"
 ---
-# <a name="device_data_management_set_action"></a>ACCIÓN DEL \_ CONJUNTO DE ADMINISTRACIÓN DE DATOS DE \_ \_ \_ DISPOSITIVOS
+# <a name="device_data_management_set_action"></a>ACCIÓN \_ DEL CONJUNTO DE ADMINISTRACIÓN DE DATOS DE \_ \_ \_ DISPOSITIVOS
 
-Los siguientes valores constantes son el conjunto de valores posibles para el tipo **DE ACCIÓN DEVICE DATA MANAGEMENT \_ \_ \_ SET, \_** que se define como tipo **DWORD**.
+Los siguientes valores constantes son el conjunto de valores posibles para el tipo **DE ACCIÓN DEVICE DATA MANAGEMENT \_ \_ \_ \_ SET,** que se define como tipo **DWORD**.
 
 <dl> <dt>
 
@@ -30,7 +30,7 @@ No se realiza ninguna acción.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DeviceDsmAction_Trim"></span><span id="devicedsmaction_trim"></span><span id="DEVICEDSMACTION_TRIM"></span>**Recorte de DeviceDsmAction \_**
+<span id="DeviceDsmAction_Trim"></span><span id="devicedsmaction_trim"></span><span id="DEVICEDSMACTION_TRIM"></span>**Recorte deviceDsmAction \_**
 </dt> <dd> <dl> <dt>
 
 1
@@ -150,11 +150,11 @@ Se realiza una acción de resistencia. **DeviceDsmActionFlag \_ nonDestructive**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7<br/>                                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                                         |
-| Header<br/>                   | <dl> <dt>WinIoCtl.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinIoCtl.h (incluir Windows.h)</dt> </dl> |
 
 
 

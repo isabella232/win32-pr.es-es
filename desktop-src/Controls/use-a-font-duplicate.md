@@ -4,12 +4,12 @@ description: En esta sección se explica cómo usar una fuente duplicada para ap
 ms.assetid: CF0123E5-313F-4583-872F-6FE954F1C9E8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c5558d4866c888e33ba31ad1a65f6b32a1c675ebe759bc5f24d2904c1ebce0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 52dce0481b59fe9955b93a00b2c0d703c5c695ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119696005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165446"
 ---
 # <a name="how-to-use-a-font-duplicate"></a>Cómo usar un duplicado de fuente
 
@@ -21,7 +21,7 @@ En esta sección se explica cómo usar una fuente duplicada para aplicar una ser
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
@@ -81,7 +81,7 @@ void ChangeFontNameSizeBold(ITextSelection *pSel)
 [Usar el modelo de objetos de texto](using-the-text-object-model.md)
 </dt> <dt>
 
-[Usar controles rich edit](using-rich-edit-controls.md)
+[Usar controles Rich Edit](using-rich-edit-controls.md)
 </dt> <dt>
 
 [Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)

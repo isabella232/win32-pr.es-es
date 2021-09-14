@@ -4,12 +4,12 @@ ms.assetid: c89da4ac-57dd-4d95-ac86-3eb137dee0bc
 title: Eventos de dispositivo (IoEvent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a44e6160ef3a59821e5d2b2a3d4e42ee1d14d5c2fb7deda689fb1c9c3186b428
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce58ba5dd21cdd505e945687603ddb54e77b2440
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119076259"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164433"
 ---
 # <a name="device-events-ioeventh"></a>Eventos de dispositivo (IoEvent.h)
 
@@ -35,7 +35,7 @@ bc56c139-7a10-47ee-a294-4c6a38f0149a
 
 El dispositivo CD-ROM se ha bloqueado para un acceso exclusivo.
 
-**Windows Server 2003 y Windows XP:** La compatibilidad con este valor requiere IMAPI 2.0. Para obtener más información, consulte [Image Mastering API](/windows/desktop/imapi/portal).
+**Windows Server 2003 y Windows XP:** La compatibilidad con este valor requiere IMAPI 2.0. Para obtener más información, vea [Image Mastering API](/windows/desktop/imapi/portal).
 
 
 </dt> </dl> </dd> <dt>
@@ -50,12 +50,12 @@ a3b6d27d-5e35-4885-81e5-ee18c00ed779
 
 Se ha desbloqueado un dispositivo CD-ROM bloqueado para acceso exclusivo.
 
-**Windows Server 2003 y Windows XP:** La compatibilidad con este valor requiere IMAPI 2.0. Para obtener más información, consulte [Image Mastering API](/windows/desktop/imapi/portal).
+**Windows Server 2003 y Windows XP:** La compatibilidad con este valor requiere IMAPI 2.0. Para obtener más información, vea [Image Mastering API](/windows/desktop/imapi/portal).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="GUID_IO_DEVICE_BECOMING_READY"></span><span id="guid_io_device_becoming_ready"></span>**GUID \_ IO \_ DEVICE \_ BECOMING \_ READY**
+<span id="GUID_IO_DEVICE_BECOMING_READY"></span><span id="guid_io_device_becoming_ready"></span>**PREPARAR \_ EL DISPOSITIVO DE \_ \_ E/S \_ GUID**
 </dt> <dd> <dl> <dt>
 
 d07433f0-a98e-11d2-917a-00a0c9068ff3
@@ -186,7 +186,7 @@ Error al tratar de desmontar un volumen. Esto suele ocurrir porque otro proceso 
 
 
 
-El estado de Cifrado de unidad BitLocker volumen ha cambiado. Este evento se señala cuando BitLocker está habilitado o deshabilitado, o cuando el cifrado comienza, finaliza, se pausa o se reanuda.
+El estado de Cifrado de unidad BitLocker del volumen ha cambiado. Este evento se señala cuando BitLocker está habilitado o deshabilitado, o cuando el cifrado comienza, finaliza, se pausa o se reanuda.
 
 **Windows Server 2003 y Windows XP:** Este valor no se admite.
 
@@ -268,7 +268,7 @@ Un sistema de archivos ha detectado daños en el volumen. La aplicación debe ej
 
 
 
-El cuerpo físico o el estado físico actual del volumen han cambiado.
+El estado físico o físico actual del volumen ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -303,7 +303,7 @@ Se ha cambiado el identificador único del volumen. Para obtener más informaci�
 
 </dt> </dl> </dd> <dt>
 
-<span id="GUID_IO_VOLUME_UNLOCK"></span><span id="guid_io_volume_unlock"></span>**DESBLOQUEO \_ DEL VOLUMEN DE \_ \_ E/S GUID**
+<span id="GUID_IO_VOLUME_UNLOCK"></span><span id="guid_io_volume_unlock"></span>**DESBLOQUEO \_ DEL VOLUMEN DE \_ E/S \_ GUID**
 </dt> <dd> <dl> <dt>
 
 9a8c3d68-d0cb-11d1-8fef-00a0c9a06d32
@@ -331,7 +331,7 @@ Los medios se están desabando. Este evento se envía cuando un sistema de archi
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los **eventos GUID IO VOLUME \_ \_ \_ DISMOUNT** y **GUID IO VOLUME \_ \_ \_ DISMOUNT \_ FAILED** están relacionados, al igual que el evento GUID **IO VOLUME \_ \_ \_ LOCK** y **GUID IO VOLUME LOCK \_ \_ \_ \_ FAILED.** Los **eventos GUID IO VOLUME \_ \_ \_ DISMOUNT** y **GUID IO VOLUME \_ \_ \_ LOCK** indican que se está intentando realizar una operación. Debe actuar sobre la notificación de eventos y registrar la acción realizada. Los **eventos GUID IO VOLUME \_ \_ \_ DISMOUNT FAILED \_ y** **GUID IO VOLUME LOCK \_ \_ \_ \_ FAILED** indican que se ha intentado realizar la operación. A continuación, puede usar el registro para deshacer las acciones que realizó en respuesta a la operación.
 
@@ -341,11 +341,11 @@ El **miembro dbch \_ hdevnotify** de la estructura [**BROADCAST \_ \_ HANDLE de 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                       |
-| Header<br/>                   | <dl> <dt>IoEvent.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IoEvent.h</dt> </dl> |
 
 
 

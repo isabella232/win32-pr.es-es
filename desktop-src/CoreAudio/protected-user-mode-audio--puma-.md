@@ -4,12 +4,12 @@ ms.assetid: 27a50026-9e48-48b1-9249-7528a97333c9
 title: Audio en modo de usuario protegido (IAM)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f119094440297c90ae67c46d5a6b39b1ba6e2e9931b43b4bdda17393d0273dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 233dc82109feb66472e66e4235031696937d70d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077459"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164858"
 ---
 # <a name="protected-user-mode-audio-puma"></a>Audio en modo de usuario protegido (IAM)
 
@@ -17,7 +17,7 @@ Windows Vista introdujo el audio en modo de usuario protegido (PEM), el motor de
 
 SE HA ACTUALIZADO PARA WINDOWS 7 para proporcionar las siguientes características:
 
--   Establecer bits del Sistema de administración de copia en serie (SCMS) en puntos de conexión S/PDIF y bits de Content Protection digital de ancho de banda alto (HDCP) en puntos de conexión de la interfaz multimedia de High-Definition (HDMI).
+-   Establecer bits del Sistema de administración de copia serie (SCMS) en puntos de conexión S/PDIF y bits de Content Protection digital de ancho de banda alto (HDCP) en puntos de conexión de High-Definition Multimedia Interface (HDMI).
 -   Habilitación de controles de protección SCMS y HDMI fuera de un entorno protegido (PE).
 
 ## <a name="drm-protection-in-audio-drivers"></a>Protección DRM en controladores de audio
@@ -30,7 +30,7 @@ Para representar el contenido protegido, el  controlador de confianza debe compr
 
 ### <a name="copy-protection-rule"></a>Regla de protección de copia
 
-**La protección contra** copia indica que no se permiten copias digitales directas en el sistema. La prueba B del acuerdo de pruebas de WHQL se ha actualizado para reflejar las nuevas expectativas y requisitos de un controlador cuando **se** establece la protección de copia en el contenido. Para Windows 7, el controlador de clase de audio HD integrado cumple los requisitos más recientes.
+**La protección contra** copia indica que no se permiten copias digitales directas en el sistema. La prueba B del acuerdo de pruebas de WHQL se ha actualizado para reflejar las nuevas expectativas y requisitos de un controlador cuando **se** establece la protección de copia en el contenido. Para Windows 7, el controlador integrado de la clase de audio HD cumple los requisitos más recientes.
 
 Además de asegurarse de que el contenido no puede pasar a otro componente o almacenarse en cualquier medio de almacenamiento no  volátil que no esté autenticado por el sistema DRM, el controlador de audio realiza las siguientes tareas cuando se establece la protección de copia:
 
@@ -48,7 +48,7 @@ Para Windows 7, el uso de **CopyProtect** es más estricto. El controlador garan
 
 ## <a name="enabling-content-protection-mechanisms-outside-of-a-protected-environment"></a>Habilitar mecanismos de protección de contenido fuera de un entorno protegido
 
-RESIDE en un proceso independiente en el entorno protegido (PE). En Windows Vista, para usar los controles de protección de contenido de audio ofrecidos por PEM, una aplicación multimedia debe estar en un PE. Dado que Media Foundation API pueden interactuar con un PE, los controles de protección de contenido se limitan a las aplicaciones que usan Media Foundation API para transmitir contenido de audio.
+RESIDE en un proceso independiente en el entorno protegido (PE). En Windows Vista, para usar los controles de protección de contenido de audio que ofrece LAN, una aplicación multimedia debe estar en un PE. Dado que Media Foundation API pueden interactuar con un PE, los controles de protección de contenido se limitan a las aplicaciones que usan Media Foundation API para transmitir contenido de audio.
 
 En Windows 7, cualquier aplicación puede tener acceso a los controles de protección de contenido proporcionados por la autoridad de confianza de salida (OTA) de KPI, independientemente de si están en un PE o mediante las API de Media Foundation para la reproducción de audio.
 
@@ -194,7 +194,7 @@ La aplicación multimedia debe realizar las siguientes tareas.
 
             
 
-        2.  Cree un DirectShow de filtro con este objeto COM activado por el dispositivo. Para obtener más información sobre este proceso, consulte "Building the Filter Graph" (Creación del filtro DirectShow sdk).
+        2.  Cree un DirectShow de filtro con este objeto COM activado por el dispositivo. Para obtener más información sobre este proceso, vea "Building the Filter Graph" (Creación del filtro DirectShow documentación del SDK).
     -   Para las aplicaciones de audio D Sound:
         1.  Cree un objeto COM DSound llamando a [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) y especificando \_ IID IDirectSound8 como identificador de interfaz.
             ```cpp
@@ -270,7 +270,7 @@ La aplicación multimedia debe realizar las siguientes tareas.
 
          
 
-        En el código de ejemplo, *pPolicy* es un puntero a la interfaz [**IMFOutputPolicy**](/windows/win32/api/mfidl/nn-mfidl-imfoutputpolicy) de un objeto de directiva implementado por el cliente. Para más información, consulte la [documentación Media Foundation SDK.](../medfound/microsoft-media-foundation-sdk.md)
+        En el código de ejemplo, *pPolicy* es un puntero a la interfaz [**IMFOutputPolicy**](/windows/win32/api/mfidl/nn-mfidl-imfoutputpolicy) de un objeto de directiva implementado por el cliente. Para más información, consulte [la documentación Media Foundation SDK.](../medfound/microsoft-media-foundation-sdk.md)
 
         En la implementación del método [**IMFOutputPolicy::GenerateRequiredSchemas,**](/windows/win32/api/mfidl/nf-mfidl-imfoutputpolicy-generaterequiredschemas) se debe generar una colección de los sistemas de protección de salida (esquemas) que el OTA debe aplicar. Cada esquema se identifica mediante un GUID y contiene datos de configuración para el sistema de protección. Asegúrese de que los sistemas de protección de la colección están restringidos al uso de controladores de audio de confianza. Esta restricción se identifica mediante el GUID, **MFPROTECTION \_ TRUSTEDAUDIODRIVERS**, DISABLE o CONSTRICTAUDIO. Si se usa MFPROTECTION \_ TRUSTEDAUDIODRIVERS, los datos de configuración de este esquema son DWORD. Para obtener más información sobre los esquemas y los datos de configuración relacionados, consulte la documentación del SDK del entorno protegido.
 

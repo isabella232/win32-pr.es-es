@@ -4,12 +4,12 @@ ms.assetid: 9dcfccd2-a709-4b4e-bbb3-4c68a15cce03
 title: RenderExclusiveTimerDriven
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6876c448aa7737683aff4e495416020af7def54cb01109c3d6ad2d1c26d20780
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb6145f65de3de9425f7ba2f023a669ec0b57a3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119077449"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164834"
 ---
 # <a name="renderexclusivetimerdriven"></a>RenderExclusiveTimerDriven
 
@@ -62,13 +62,13 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 Para compilar el ejemplo RenderExclusiveTimerDriven, siga estos pasos:
 
-1.  Abra el shell cmd para el SDK Windows y cambie al directorio de ejemplo RenderExclusiveTimerDriven.
-2.  Ejecute el comando `start WASAPIRenderExclusiveTimerDriven.sln` en el directorio RenderExclusiveTimerDriven para abrir el proyecto WASAPIRenderExclusiveTimerDriven en la Visual Studio cliente.
-3.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre una Visual Studio desde el shell de CMD para el SDK, Visual Studio no tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto WASAPIRenderExclusiveTimerDriven.vcproj.
+1.  Abra el shell de CMD para Windows SDK y cambie al directorio de ejemplo RenderExclusiveTimerDriven.
+2.  Ejecute el comando en el directorio RenderExclusiveTimerDriven para abrir el proyecto `start WASAPIRenderExclusiveTimerDriven.sln` WASAPIRenderExclusiveTimerDriven en la Visual Studio cliente.
+3.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre Visual Studio shell de CMD para el SDK, Visual Studio tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto, WASAPIRenderExclusiveTimerDriven.vcproj.
 
 ## <a name="view-the-sample-files"></a>Ver los archivos de ejemplo
 
-Si compila correctamente la aplicación de demostración, se genera WASAPIRenderExclusiveTimerDriven.exe archivo ejecutable. Para ejecutarlo, escriba `WASAPIRenderExclusiveTimerDriven` una ventana de comandos seguida de argumentos obligatorios u opcionales. En el ejemplo siguiente se muestra cómo ejecutar el ejemplo especificando la duración de reproducción en el dispositivo de consola predeterminado.
+Si compila correctamente la aplicación de demostración, se genera WASAPIRenderExclusiveTimerDriven.exe archivo ejecutable. Para ejecutarlo, escriba `WASAPIRenderExclusiveTimerDriven` una ventana de comandos seguida de argumentos obligatorios u opcionales. En el ejemplo siguiente se muestra cómo ejecutar el ejemplo especificando la duración de la reproducción en el dispositivo de consola predeterminado.
 
 `WASAPIRenderExclusiveTimerDriven.exe -d 20 -console`
 
@@ -91,7 +91,7 @@ En la tabla siguiente se muestran los argumentos.
 
  
 
-Si la aplicación se ejecuta sin argumentos, enumera los dispositivos disponibles y solicita al usuario que seleccione un dispositivo para la sesión de representación. Una vez que el usuario especifica un dispositivo, la aplicación representa una onda seno a 440 Hz durante 10 segundos. Estos valores se pueden modificar especificando los valores de modificador -f y -d.
+Si la aplicación se ejecuta sin argumentos, enumera los dispositivos disponibles y solicita al usuario que seleccione un dispositivo para la sesión de representación. Después de que el usuario especifica un dispositivo, la aplicación representa una onda sinusoidal a 440 Hz durante 10 segundos. Estos valores se pueden modificar especificando los valores de modificador -f y -d.
 
 RenderExclusiveTimerDriven muestra el almacenamiento en búfer controlado por temporizador. En este modo, el cliente debe esperar un período de tiempo (la mitad de la latencia, especificada por el valor del modificador -d, en milisegundos). Cuando el cliente se reactiva, a mitad del período de procesamiento, extrae el siguiente conjunto de muestras del motor. Antes de que cada procesamiento pase en el bucle de almacenamiento en búfer, el cliente debe averiguar la cantidad de datos que se representará para que los datos no sobresalan el búfer.
 
@@ -103,7 +103,7 @@ Para obtener más información sobre cómo representar una secuencia, vea [Repre
 
 <dl> <dt>
 
-[Ejemplos de SDK que usan las API de audio principales](sdk-samples-that-use-the-core-audio-apis.md)
+[Ejemplos del SDK que usan las API de audio principales](sdk-samples-that-use-the-core-audio-apis.md)
 </dt> </dl>
 
  

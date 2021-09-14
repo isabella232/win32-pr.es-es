@@ -4,12 +4,12 @@ ms.assetid: b8a1b656-a582-4112-99e9-bd575719ebb3
 title: Sesiones de audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13d5b8cee0a3a53709d2c450bef36ae00e3a6f4d9323c75ff80e96b19550eb39
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 57ae67a3eafe7a76add2fad192823868304e860d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119929415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165134"
 ---
 # <a name="audio-sessions"></a>Sesiones de audio
 
@@ -27,7 +27,7 @@ Cada sesión de representación representa un subconjunto de las secuencias que 
 
 Con frecuencia, una aplicación con varios flujos asigna todos sus flujos a la misma sesión. Sin embargo, la aplicación puede, como opción, asignar secuencias diferentes a diferentes sesiones. Cualquier secuencia que la aplicación no asigne explícitamente a una sesión pertenece a la sesión predeterminada.
 
-Las aplicaciones de audio típicas deben evitar modificar la configuración de volumen y exclusión mutua de las sesiones. En su lugar, los usuarios controlan esta configuración a través de las interfaces de usuario de los programas de control. Por ejemplo, en Windows Vista, el programa proporcionado por el sistema, Sndvol.exe, muestra un control de volumen y un control de exclusión mutua para cada sesión de representación activa o reciente en el sistema. A través de estos controles, los usuarios pueden ajustar la configuración de volumen y exclusión mutua para todas las sesiones del sistema.
+Las aplicaciones de audio típicas deben evitar modificar la configuración de volumen y exclusión mutua de las sesiones. En su lugar, los usuarios controlan esta configuración a través de las interfaces de usuario de los programas de control. Por ejemplo, en Windows Vista, el programa proporcionado por el sistema, Sndvol.exe, muestra un control de volumen y un control de exclusión mutua para cada sesión de representación activa o recientemente activa en el sistema. A través de estos controles, los usuarios pueden ajustar la configuración de volumen y exclusión mutua para todas las sesiones del sistema.
 
 Actualmente, el programa Sndvol solo muestra controles de volumen para dispositivos de punto de conexión de representación de audio. No muestra controles de volumen para dispositivos de captura de audio.
 
@@ -57,7 +57,7 @@ Esta información es suficiente para distinguir una sesión determinada de todas
 
 En el caso de una sesión específica del proceso, el sistema usa una combinación de GUID de sesión e identificador de proceso para identificar de forma única la sesión dentro del ámbito del equipo. Por lo tanto, si los clientes de dos procesos diferentes asignan sus respectivos flujos a dos sesiones específicas del proceso con GUID de sesión idénticos, el sistema trata las sesiones como independientes porque sus id. de proceso son diferentes. Además, si una sesión entre procesos usa el mismo GUID de sesión que una o varias sesiones específicas del proceso, el sistema trata la sesión entre procesos como distinta de las sesiones específicas del proceso, aunque compartan el mismo GUID de sesión.
 
-Por ejemplo, en Windows Vista, las API de nivel superior, como las funciones **waveOutXxx** multimedia de Windows y Direct Sound, suelen asignar las secuencias de audio que crean a sesiones específicas del proceso predeterminadas identificadas por el valor GUID de sesión GUID \_ NULL. Para los clientes de estas API, la sesión predeterminada para cada proceso de cliente es independiente de las sesiones predeterminadas para otros procesos de cliente, aunque las sesiones tengan GUID de sesión idénticos. Además, si una o varias aplicaciones asignan secuencias a la sesión entre procesos identificada por el valor GUID de sesión GUID NULL, el sistema trata esta sesión entre procesos como independiente de las sesiones predeterminadas específicas del proceso que comparten el mismo GUID de \_ sesión. En consecuencia, el programa Sndvol muestra un control de volumen independiente para la sesión predeterminada específica del proceso de cada cliente y muestra un control de volumen adicional para la sesión entre procesos que se identifica mediante el VALOR GUID NULL de la sesión, si esa sesión \_ existe.
+Por ejemplo, en Windows Vista, las API de nivel superior, como las funciones **waveOutXxx** multimedia de Windows y Direct Sound suelen asignar las secuencias de audio que crean a sesiones específicas del proceso predeterminadas identificadas por el valor GUID de sesión GUID \_ NULL. Para los clientes de estas API, la sesión predeterminada para cada proceso de cliente es independiente de las sesiones predeterminadas para otros procesos de cliente, aunque las sesiones tengan GUID de sesión idénticos. Además, si una o varias aplicaciones asignan secuencias a la sesión entre procesos identificada por el valor GUID de sesión GUID NULL, el sistema trata esta sesión entre procesos como independiente de las sesiones predeterminadas específicas del proceso que comparten el mismo GUID de \_ sesión. En consecuencia, el programa Sndvol muestra un control de volumen independiente para la sesión predeterminada específica del proceso de cada cliente y muestra un control de volumen adicional para la sesión entre procesos que se identifica mediante el VALOR GUID NULL de la sesión, si esa sesión \_ existe.
 
 Cada sesión está asociada a un único dispositivo de punto de conexión de audio. Si dos sesiones tienen GUID de sesión idénticos e id. de proceso, pero están asociadas a distintos dispositivos, el sistema trata las dos sesiones como independientes. Una sesión nunca puede contener secuencias de captura y representación porque una secuencia de captura solo se puede asociar a un dispositivo de captura y una secuencia de representación solo se puede asociar a un dispositivo de representación.
 

@@ -4,12 +4,12 @@ ms.assetid: d03f2fbc-313a-42cf-902a-fd9f6dce2a35
 title: DEVICE_STATE_XXX constantes (Mmdeviceapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3d5632f14ff52fec2aa907dc2786f2a3ab893f921cd44433548510163f66a1b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b65fc09a547ad702d27e96e968915f9d70e3313e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165038"
 ---
 # <a name="device_state_xxx-constants"></a>Constantes \_ XXX de DEVICE STATE \_
 
@@ -27,11 +27,11 @@ Las constantes DEVICE \_ STATE XXX indican el estado actual de un dispositivo de
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los [**métodos IMMDeviceEnumerator::EnumAudioEndpoints**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdeviceenumerator-enumaudioendpoints), [**IMMDevice::GetState**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-getstate)e [**IMMNotificationClient::OnDeviceStateChanged usan**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immnotificationclient-ondevicestatechanged) las constantes DEVICE \_ STATE \_ XXX. Estos métodos permiten a los clientes obtener información sobre los dispositivos de punto de conexión que se encuentran en cualquiera de los estados representados por las constantes DEVICE \_ STATE \_ XXX.
 
-Sin embargo, un cliente puede abrir una secuencia (por ejemplo, mediante la obtención de una interfaz [**IAudioClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclient) para el dispositivo) solo en un dispositivo que se encuentra en el estado DEVICE \_ STATE \_ ACTIVE.
+Sin embargo, un cliente puede abrir una secuencia (por ejemplo, obteniendo una interfaz [**IAudioClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclient) para el dispositivo) solo en un dispositivo que se encuentra en el estado DEVICE \_ STATE \_ ACTIVE.
 
 En Windows panel de control multimedia, Mmsys.cpl, se muestran los dispositivos de punto de conexión de audio en el sistema. Deshabilitar un dispositivo en Mmsys.cpl oculta el dispositivo de los mecanismos de detección de dispositivos en las API de audio de nivel superior, pero no invalida los objetos de secuencia de los que un cliente podría haber creado instancias antes de deshabilitar el dispositivo. Por ejemplo, si una secuencia se reproduce en el dispositivo cuando el usuario la deshabilita en Mmsys.cpl, la secuencia continúa reproduciendo sin interrupciones.
 
@@ -47,11 +47,11 @@ Para ver los dispositivos de captura, escriba el siguiente comando:
 
 Como alternativa, puede ver los dispositivos de representación o los dispositivos de captura en Mmsys.cpl haciendo clic con el botón derecho  en el icono del altavoz en el área de notificación, que se encuentra en el lado derecho de la barra de tareas, y seleccionando Dispositivos de reproducción o Dispositivos de **grabación.**
 
-Mmsys.cpl siempre muestra los dispositivos de punto de conexión que se encuentran en el estado DEVICE \_ STATE \_ ACTIVE. Además, se puede configurar para mostrar dispositivos deshabilitados y desconectados.
+Mmsys.cpl muestra siempre los dispositivos de punto de conexión que se encuentran en el estado ESTADO \_ \_ ACTIVO DEL DISPOSITIVO. Además, se puede configurar para mostrar dispositivos deshabilitados y desconectados.
 
 Para ver los dispositivos de punto de conexión que se encuentran en los estados DEVICE STATE DISABLED y DEVICE STATE NOTPRESENT, haga clic con el botón derecho en la ventana Mmsys.cpl y seleccione la opción Mostrar dispositivos \_ \_ \_ \_ deshabilitados. 
 
-Para ver los dispositivos de punto de conexión que están en estado ESTADO DE DISPOSITIVO UNPLUGGED, haga clic con el botón derecho en la ventana Mmsys.cpl y seleccione la opción Mostrar \_ \_ **dispositivos** desconectados.
+Para ver los dispositivos de punto de conexión que están en estado DEVICE STATE UNPLUGGED, haga clic con el botón derecho en la ventana Mmsys.cpl y seleccione la opción Mostrar \_ \_ **dispositivos** desconectados.
 
 Para ver solo los dispositivos de punto de conexión que están en estado ACTIVO ESTADO DE DISPOSITIVO, anule la selección de las opciones Mostrar dispositivos deshabilitados y \_ \_ Mostrar **dispositivos** desconectados. 
 
@@ -65,11 +65,11 @@ Para habilitar o deshabilitar un dispositivo de  punto de conexión en Mmsys.cpl
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

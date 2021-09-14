@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da7f1fd27c51cabc699cf945fd4701c36d2e9709d1654de45859777333b9b4bb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e100367f37018424fad33dc7cea30700183a0a2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165234"
 ---
 # <a name="wm_ctlcoloredit-message"></a>Mensaje \_ CTLCOLOREDIT de WM
 
@@ -57,7 +57,7 @@ Identificador del control de edición.
 
 Si una aplicación procesa este mensaje, debe devolver el identificador de un pincel. El sistema usa el pincel para pintar el fondo del control de edición.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la aplicación devuelve un pincel que creó (por ejemplo, mediante la [**función CreateSolidBrush**](/windows/desktop/api/wingdi/nf-wingdi-createsolidbrush) o [**CreateBrushIndirect),**](/windows/desktop/api/wingdi/nf-wingdi-createbrushindirect) la aplicación debe liberar el pincel. Si la aplicación devuelve un pincel del sistema (por ejemplo, uno recuperado por la función [**GetStockObject**](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) o [**GetSysColorBrush),**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) la aplicación no necesita liberar el pincel.
 
@@ -69,7 +69,7 @@ El **mensaje \_ WM CTLCOLOREDIT nunca** se envía entre subprocesos, solo se env
 
 Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir el valor devuelto deseado en **int \_ PTR** y devolver el valor directamente. Si el procedimiento del cuadro de diálogo **devuelve FALSE,** se realiza el control de mensajes predeterminado. Se omite el valor MSGRESULT de DWL establecido por la función \_ [**SetWindowLong.**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga)
 
-**Edición enriquecte:** Este mensaje no se admite. Para establecer el color de fondo de un control de edición enriquecido, use el mensaje [**\_ EM SETBNDCOLOR.**](em-setbkgndcolor.md)
+**Edición enriquecte:** No se admite este mensaje. Para establecer el color de fondo de un control de edición enriquecido, use el mensaje [**\_ EM SETBNDCOLOR.**](em-setbkgndcolor.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,11 +79,11 @@ Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

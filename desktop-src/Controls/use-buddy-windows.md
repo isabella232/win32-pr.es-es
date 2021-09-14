@@ -4,12 +4,12 @@ description: Al establecer otros controles como ventanas de compañeros para una
 ms.assetid: 5797AA55-BD8D-407A-8896-08EE0DDC7E30
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6819e0f37f07a90ae08a623f14c6c26d1d67f55ea81143834dfd10816f74396
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8eca9a4e3b3049f8d4cf7515879d91a096f5a9e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117829065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165421"
 ---
 # <a name="how-to-use-buddy-windows"></a>Uso de La Windows
 
@@ -25,7 +25,7 @@ En la ilustración siguiente se muestra una barra de seguimiento horizontal y ve
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
@@ -84,7 +84,7 @@ void LabelTrackbarsWithBuddies(HWND hDlg)
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **IDC \_ SLIDER1** e **IDC \_ SLIDER2** son barras de seguimiento creadas en el editor de recursos.
 

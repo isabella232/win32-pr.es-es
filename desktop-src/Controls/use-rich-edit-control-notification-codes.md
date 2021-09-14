@@ -4,12 +4,12 @@ description: La ventana primaria de un control de edición enriquecido puede pro
 ms.assetid: E045EADE-CB37-492A-85EC-6CF236677F08
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6bc730c648e76137db480f14895d540a9142ae6a80ffa58533e38ef513653ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e68e510bf7c5abe6109862a01d8926c8956736f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117828646"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165410"
 ---
 # <a name="how-to-use-rich-edit-control-notification-codes"></a>Cómo usar los códigos de notificación del control Rich Edit
 
@@ -30,9 +30,9 @@ La ventana primaria de un control de edición enriquecido puede procesar código
 
 ### <a name="use-a-rich-edit-control-notification-code"></a>Usar un código de notificación de control rich edit
 
-Puede determinar qué códigos de notificación envía un control de edición enriquecido a su ventana primaria estableciendo su máscara de eventos. Para establecer la máscara de eventos para un control de edición enriquecido, use el mensaje [**\_ EM SETEVENTMASK.**](em-seteventmask.md) Puede recuperar la máscara de evento actual para un control de edición enriquecido mediante el mensaje [**\_ EM GETEVENTMASK.**](em-geteventmask.md) Para obtener una lista de marcas de máscara de eventos, vea [Rich Edit Control Event Mask Flags](rich-edit-control-event-mask-flags.md).
+Puede determinar qué códigos de notificación envía un control de edición enriquecido a su ventana primaria estableciendo su máscara de eventos. Para establecer la máscara de evento para un control de edición enriquecido, use el mensaje [**\_ EM SETEVENTMASK.**](em-seteventmask.md) Puede recuperar la máscara de evento actual para un control de edición enriquecido mediante el mensaje [**\_ EM GETEVENTMASK.**](em-geteventmask.md) Para obtener una lista de marcas de máscara de eventos, vea [Rich Edit Control Event Mask Flags](rich-edit-control-event-mask-flags.md).
 
-La ventana primaria de un control rich edit puede filtrar todas las entradas de teclado y mouse en el control mediante el procesamiento del código [de notificación EN \_ MSGFILTER.](en-msgfilter.md) La ventana primaria puede impedir que se procese el mensaje del teclado o del mouse o puede cambiar el mensaje modificando la estructura [**MSGFILTER**](/windows/desktop/api/Richedit/ns-richedit-msgfilter) especificada.
+La ventana primaria de un control de edición enriquecido puede filtrar todas las entradas de teclado y mouse en el control mediante el procesamiento del código [de notificación EN \_ MSGFILTER.](en-msgfilter.md) La ventana primaria puede impedir que se procese el mensaje del teclado o del mouse o puede cambiar el mensaje modificando la estructura [**MSGFILTER**](/windows/desktop/api/Richedit/ns-richedit-msgfilter) especificada.
 
 Una aplicación puede procesar el código [de notificación EN \_ PROTECTED](en-protected.md) para detectar cuándo el usuario intenta modificar el texto protegido. Para marcar un intervalo de texto como protegido, puede establecer el efecto de carácter protegido.
 

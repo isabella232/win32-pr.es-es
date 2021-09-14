@@ -4,12 +4,12 @@ ms.assetid: 7d82d67f-aad8-4e5b-ac65-87d75774e613
 title: Roles de dispositivo para aplicaciones DirectSound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3037b767d7ddfb96d892c789608f23523efed465535258c336496f3f23d82f19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3829817f8b00c7288aceb8d0b6d418d5793ae580
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118957334"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165054"
 ---
 # <a name="device-roles-for-directsound-applications"></a>Roles de dispositivo para aplicaciones DirectSound
 
@@ -18,7 +18,7 @@ ms.locfileid: "118957334"
 
  
 
-DirectSound API no proporciona un medio para que una aplicación seleccione el dispositivo de punto de conexión de [audio](audio-endpoint-devices.md) que el usuario ha asignado a un rol de [dispositivo determinado.](device-roles.md) Sin embargo, Windows Vista, las API de audio principales se pueden usar junto con una aplicación DirectSound para habilitar la selección de dispositivos en función del rol del dispositivo. Con la ayuda de las API de audio principales, la aplicación puede identificar el dispositivo de punto de conexión de audio asignado a un rol determinado, obtener el GUID del dispositivo DirectSound para el dispositivo de punto de conexión y llamar a la función **DirectSoundCreate** o **DirectSoundCaptureCreate** para crear una instancia de interfaz **IDirectSound** o **IDirectSoundCapture** que encapsula el dispositivo del punto de conexión. Para obtener más información sobre DirectSound, consulte la documentación Windows SDK.
+DirectSound API no proporciona un medio para que una aplicación seleccione el dispositivo de punto de conexión de [audio](audio-endpoint-devices.md) que el usuario ha asignado a un rol de [dispositivo determinado.](device-roles.md) Sin embargo, Windows Vista, las API de audio principales se pueden usar junto con una aplicación DirectSound para habilitar la selección de dispositivos en función del rol del dispositivo. Con la ayuda de las API de audio principales, la aplicación puede identificar el dispositivo de punto de conexión de audio asignado a un rol determinado, obtener el GUID del dispositivo DirectSound para el dispositivo de punto de conexión y llamar a la función **DirectSoundCreate** o **DirectSoundCaptureCreate** para crear una instancia de interfaz **IDirectSound** o **IDirectSoundCapture** que encapsula el dispositivo del punto de conexión. Para más información sobre DirectSound, consulte la documentación Windows SDK.
 
 En el ejemplo de código siguiente se muestra cómo obtener el GUID del dispositivo DirectSound para el dispositivo de representación o captura que está asignado actualmente a un rol de dispositivo determinado:
 
@@ -101,7 +101,7 @@ En el ejemplo de código anterior se obtiene el GUID del dispositivo DirectSound
 
 Después de obtener un GUID de dispositivo de la función GetDirectSoundGuid, la aplicación puede llamar a **DirectSoundCreate** o **DirectSoundCaptureCreate** con este GUID para crear el dispositivo de representación o captura de DirectSound que encapsula el dispositivo de punto de conexión de audio. Cuando DirectSound crea un dispositivo de esta manera, siempre asigna la secuencia de audio del dispositivo a la sesión predeterminada, la sesión de audio específica del proceso que se identifica mediante el VALOR GUID de la sesión \_ GUID NULL.
 
-Si la aplicación requiere que DirectSound asigne la secuencia a una sesión de audio entre procesos o a una sesión con un GUID de sesión que no sea NULL, debe llamar al método [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para crear un objeto **IDirectSound** o **IDirectSoundCapture** en lugar de usar la técnica que se muestra en el ejemplo de código anterior. Para obtener un ejemplo de código que muestra cómo usar el método **Activate** para especificar una sesión de audio entre procesos o un GUID de sesión que no sea NULL para una secuencia, vea Roles de dispositivo [para DirectShow Aplicaciones](device-roles-for-directshow-applications.md). El ejemplo de código de esa sección muestra cómo crear un filtro DirectShow, pero, con modificaciones menores, el código se puede adaptar para crear un dispositivo DirectSound.
+Si la aplicación requiere que DirectSound asigne la secuencia a una sesión de audio entre procesos o a una sesión con un GUID de sesión que no sea NULL, debe llamar al método [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para crear un objeto **IDirectSound** o **IDirectSoundCapture** en lugar de usar la técnica que se muestra en el ejemplo de código anterior. Para obtener un ejemplo de código que muestra cómo usar el método **Activate** para especificar una sesión de audio entre procesos o un GUID de sesión que no sea NULL para una secuencia, vea Roles de dispositivo para DirectShow [Aplicaciones](device-roles-for-directshow-applications.md). En el ejemplo de código de esa sección se muestra cómo crear un filtro DirectShow, pero, con modificaciones menores, el código se puede adaptar para crear un dispositivo DirectSound.
 
 La función GetDirectSoundGuid del ejemplo de código anterior llama a la función [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear un enumerador para los dispositivos de punto de conexión de audio del sistema. A menos que el programa de llamada llamara previamente a la función [**CoInitialize**](/windows/desktop/api/objbase/nf-objbase-coinitialize) o [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) para inicializar la biblioteca COM, se producirá un error en la llamada **a CoCreateInstance.** Para obtener más información sobre **CoCreateInstance,** **CoInitialize** y **CoInitializeEx,** consulte la documentación Windows SDK.
 

@@ -4,12 +4,12 @@ ms.assetid: a24916a9-b67a-4622-b9f3-4b4f26bf4d6b
 title: DBT_DEVICEQUERYREMOVEFAILED evento (Dbt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 605c2689d7d986b4e85fda6d8ce5f24fa6483641de46a6a84f3e4e96ba473897
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 848c7378cdbac95729eee70c70a1e323373b8e85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119076309"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164473"
 ---
 # <a name="dbt_devicequeryremovefailed-event"></a>Evento \_ DBT DEVICEQUERYREMOVEFAILED
 
@@ -73,15 +73,15 @@ Para obtener un ejemplo, [consulte Procesamiento de una solicitud para quitar un
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                   |
-| Header<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

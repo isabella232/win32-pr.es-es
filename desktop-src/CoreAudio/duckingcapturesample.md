@@ -4,12 +4,12 @@ ms.assetid: 9a2131b2-ec4a-492a-a277-bd26ec8d67e5
 title: DuckingCaptureSample
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76515f9d20e31bf4583b715e09da38c29bfdac34f6c975087f64bf2617696542
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 636fe39e8fa27beee14ab17548f5929d1d937b20
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119018463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127165018"
 ---
 # <a name="duckingcapturesample"></a>DuckingCaptureSample
 
@@ -30,7 +30,7 @@ En este ejemplo se muestran las siguientes características.
 
 -   [MMDevice API para](mmdevice-api.md) la enumeración y selección de dispositivos multimedia.
 -   [WASAPI para](wasapi.md) acceder a la captura de comunicaciones y representar el dispositivo, las operaciones de administración de flujos y el control de eventos de afijo.
--   [API wave para acceder](/previous-versions//ms713499(v=vs.85)) al dispositivo de comunicaciones y capturar la entrada de audio.
+-   [API wave para acceder](/previous-versions//ms713499(v=vs.85)) al dispositivo de comunicaciones y capturar entradas de audio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Ubicación    | Ruta de acceso o dirección URL                                                                                              |
+| Location    | Ruta de acceso o dirección URL                                                                                              |
 |-------------|-------------------------------------------------------------------------------------------------------|
 | Windows SDK | \\Archivos de \\ programa Sdk de Microsoft Windows ejemplos de audio multimedia \\ \\ v7.0CaptureSample... \\ \\ \\ \\ \\ |
 
@@ -64,7 +64,7 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 Para compilar el ejemplo DesanchamientoCaptureSample, siga estos pasos:
 
 1.  Abra el archivo DuckingCaptureSample.sln en Visual Studio 2008.
-2.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre Visual Studio desde el shell de CMD para el SDK, Visual Studio tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto, DuckingCaptureSample.vcproj.
+2.  En la ventana, seleccione  la **configuración** de  la solución Depurar o Liberar, seleccione el menú Compilar en la barra de menús y seleccione la **opción Compilar.** Si no abre Visual Studio shell de CMD para el SDK, Visual Studio tendrá acceso al entorno de compilación del SDK. En ese caso, el ejemplo no se compilará a menos que establezca explícitamente la variable de entorno MSSdk, que se usa en el archivo de proyecto, DuckingCaptureSample.vcproj.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
@@ -87,7 +87,7 @@ Para obtener más información sobre la característica de atenuación de secuen
 
 <dl> <dt>
 
-[Ejemplos de SDK que usan las API de audio principales](sdk-samples-that-use-the-core-audio-apis.md)
+[Ejemplos del SDK que usan las API de audio principales](sdk-samples-that-use-the-core-audio-apis.md)
 </dt> </dl>
 
  
