@@ -4,12 +4,12 @@ ms.assetid: cbdbe088-9cf1-4af8-a5f7-072faee7f34e
 title: Atributo de control multilínea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 474bf8a9b765f402924a554c9da064a8c60a01f6af910a3fd24c81d377978a93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 936bc4b3901293e950690e878a0f86229bb03b4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118943436"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071837"
 ---
 # <a name="multiline-control-attribute"></a>Atributo de control multilínea
 
@@ -31,9 +31,9 @@ Si no se establece este bit, especifica que se muestra un control de edición no
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para establecer este atributo en un control , incluya el bit MultiLine en la columna Atributos del registro del control en la [tabla Control](control-table.md).
+Para establecer este atributo en un control, incluya el bit MultiLine en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 
 Vea [Controles y atributos](control-attributes.md) de [control.](controls.md)
 

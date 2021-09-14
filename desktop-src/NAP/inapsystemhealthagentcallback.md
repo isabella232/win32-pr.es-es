@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d7221dada78494f808ca0b98673b351a3a93c8088cc883bb7ed6324619c8ebc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 11d08dd9cf77d36ca33902c63831135a0cc2fe5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117799153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071638"
 ---
 # <a name="inapsystemhealthagentcallback-interface"></a>INapSystemHealthAgentCallback (interfaz)
 
@@ -31,7 +31,7 @@ ms.locfileid: "117799153"
 
 La **interfaz INapSystemHealthAgentCallback** proporciona métodos de devolución de llamada declarados por el sistema e implementados por el escritor SHA para que NapAgent pueda comunicarse con sha.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz INapSystemHealthAgentCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapSystemHealthAgentCallback** también tiene estos tipos de miembros:
 
@@ -45,12 +45,12 @@ La **interfaz INapSystemHealthAgentCallback** tiene estos métodos.
 
 | Método                                                                                                                                           | Descripción                                                                                                          |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
-| [**INapSystemHealthAgentCallback::CompareSoHRequests**](inapsystemhealthagentcallback-comparesohrequests-method.md)                             | Lo usa sha para comparar los SoH.<br/>                                                                      |
+| [**INapSystemHealthAgentCallback::CompareSoHRequests**](inapsystemhealthagentcallback-comparesohrequests-method.md)                             | Lo usa sha para comparar los sohs.<br/>                                                                      |
 | [**INapSystemHealthAgentCallback::GetFixupInfo**](inapsystemhealthagentcallback-getfixupinfo-method.md)                                         | Llamado por NapAgent para determinar el estado de SHA.<br/>                                                 |
 | [**INapSystemHealthAgentCallback::GetSoHRequest**](inapsystemhealthagentcallback-getsohrequest-method.md)                                       | Llamado por NapAgent para consultar la solicitud soH de SHA.<br/>                                                    |
-| [**INapSystemHealthAgentCallback::NotifyOrphanedSoHRequest**](inapsystemhealthagentcallback-notifyorphanedsohrequest-method.md)                 | Se le llama si se ha consultado una solicitud de SoH desde sha, pero la respuesta nunca regresó.<br/>                      |
-| [**INapSystemHealthAgentCallback::NotifySystemIsolationStateChange**](inapsystemhealthagentcallback-notifysystemisolationstatechange-method.md) | Lo llama NapAgent para indicar que el estado de aislamiento del sistema o la hora de finalización de la sondeo han cambiado.<br/> |
-| [**INapSystemHealthAgentCallback::P rocessSoHResponse**](inapsystemhealthagentcallback-processsohresponse-method.md)                             | Se llama cuando NapAgent recibe una respuesta soH destinada a este agente de mantenimiento.<br/>                         |
+| [**INapSystemHealthAgentCallback::NotifyOrphanedSoHRequest**](inapsystemhealthagentcallback-notifyorphanedsohrequest-method.md)                 | Se le llama si se ha consultado una solicitud SoH desde sha, pero la respuesta nunca ha vuelto.<br/>                      |
+| [**INapSystemHealthAgentCallback::NotifySystemIsolationStateChange**](inapsystemhealthagentcallback-notifysystemisolationstatechange-method.md) | Lo llama NapAgent para indicar que ha cambiado el estado de aislamiento del sistema o la hora de finalización de la sondeo.<br/> |
+| [**INapSystemHealthAgentCallback::P rocessSoHResponse**](inapsystemhealthagentcallback-processsohresponse-method.md)                             | Se llama cuando NapAgent recibe una respuesta SoH destinada a este agente de mantenimiento.<br/>                         |
 
 
 
@@ -60,12 +60,12 @@ La **interfaz INapSystemHealthAgentCallback** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 1938f6c5-d5a4-41ca-b272-1166a7688be2
 title: Atributo de control transparente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 347a2f3c9b7d6e934ad591e5917e89579c60911870dfbff51f92bef108b6017a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f1bb5e27c9c39ab6433c8ffa0547c7c6004a68c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119500155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071828"
 ---
 # <a name="transparent-control-attribute"></a>Atributo de control transparente
 
@@ -19,7 +19,7 @@ Si el bit Control transparente se establece en un control de texto, el control s
 
 [Texto](text-control.md)
 
-## <a name="value"></a>Valor
+## <a name="value"></a>Value
 
 
 
@@ -31,7 +31,7 @@ Si el bit Control transparente se establece en un control de texto, el control s
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Vea [Atributos de](control-attributes.md) control y el control que debe crear en [Controles](controls.md).
 

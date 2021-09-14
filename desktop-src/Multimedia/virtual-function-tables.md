@@ -5,11 +5,11 @@ ms.assetid: 1b7c6da6-3156-46fe-a9ca-0c1717fe28b5
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a784a027f7e1120d8e7092aa5dd6c0f5c0e958b3
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372548"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071712"
 ---
 # <a name="virtual-function-tables"></a>Tablas de función virtual
 

@@ -4,12 +4,12 @@ ms.assetid: 44ab770b-1a7f-4590-9681-8f6bd343bf86
 title: Grupo de tablas de localizador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ad0cf5b2d28d01b6e10cf796dc9653c82feb8ffb63adc57c7a7bc244e7ccfcb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 300a869a912c06b2112476f50bcda021833cfbe7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118629172"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071938"
 ---
 # <a name="locator-tables-group"></a>Grupo de tablas de localizador
 

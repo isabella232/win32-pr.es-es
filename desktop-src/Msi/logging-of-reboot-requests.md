@@ -4,12 +4,12 @@ ms.assetid: 59237d2c-6dda-4edc-bbaf-39c6b4c221b9
 title: Registro de solicitudes de reinicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae5131d5662b4064538a9ae80936d6a02e74edbe44a725d5dd27754a9a2e845c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a256f9042dc40633932a36e288ad18d8194f4739
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071929"
 ---
 # <a name="logging-of-reboot-requests"></a>Registro de solicitudes de reinicio
 

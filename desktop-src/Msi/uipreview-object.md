@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 82436f21cc3920c2e1f635f8d1612118831e7d29f3fb1202105511f2e61f7a3d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6650dc9bcc66a24d0e8a9d7f0d971884a2379f60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118623504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071818"
 ---
 # <a name="uipreview-object"></a>OBJETO UIPreview
 
 El **objeto UIPreview** se usa para ver cuadros de diálogo y paneles de la interfaz de usuario durante la creación. El método [**EnableUIPreview**](database-enableuipreview.md) del objeto [**Database**](database-object.md) crea este objeto .
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto UIPreview** tiene estos tipos de miembros:
 
@@ -52,9 +52,9 @@ El **objeto UIPreview** tiene estas propiedades.
 
 
 
-| Propiedad                                          | Tipo de acceso           | Descripción                                                                                                                                                                       |
+| Propiedad.                                          | Tipo de acceso           | Descripción                                                                                                                                                                       |
 |:--------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Propiedad**](uipreview-property.md)<br/> | Lectura/escritura<br/> | Representa el valor de cadena de una propiedad de instalador con nombre o, si tiene como prefijo un signo de porcentaje (%), el valor de una variable de entorno del sistema para el proceso actual.<br/> |
+| [**Propiedad**](uipreview-property.md)<br/> | Lectura y escritura<br/> | Representa el valor de cadena de una propiedad de instalador con nombre o, si tiene como prefijo un signo de porcentaje (%), el valor de una variable de entorno del sistema para el proceso actual.<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 9f3ce218-1243-4eba-9866-113200fefa30
 title: Tipos de formato de clave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a22c4149ec89bd9a1745c28fe17cdafcbcfeaee827dcb35bd8c6badbf2acfb7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 96687299a57ddebbb90b422ad5311c4bed1db332
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119692495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071995"
 ---
 # <a name="key-format-types"></a>Tipos de formato de clave
 
@@ -29,7 +29,7 @@ Existen los siguientes tipos de formato de clave:
 
 [Tipo de icono](icon-type.md)
 
-Los elementos configurables del tipo de formato de clave se usan en columnas de texto para proporcionar una clave de base de datos y, en general, podrían reemplazarse por cualquier cadena de texto. Los tipos individuales pueden tener restricciones sintácticas adicionales, pero estas restricciones no se aplican Mergemod.dll. Determinados elementos configurables también pueden tener restricciones semánticas de características. Por ejemplo, puede ser necesario que un elemento configurable determinado sea una clave de la [tabla Binaria](binary-table.md) para una fila que contenga una imagen de mapa de bits. Estas restricciones no se aplican mediante Mergemod.dll, por lo que los autores de módulos deben estar preparados para controlar cualquier cadena que satisfaga el tipo de formato de clave especificado. A menos que se especifique lo contrario por significado semántico o atributos, null es una respuesta válida.
+Los elementos configurables del tipo de formato de clave se usan en columnas de texto para proporcionar una clave de base de datos y, en general, podrían reemplazarse por cualquier cadena de texto. Los tipos individuales pueden tener restricciones sintácticas adicionales, pero estas restricciones no se aplican Mergemod.dll. Determinados elementos configurables también pueden tener restricciones semánticas de características. Por ejemplo, puede ser necesario que un elemento configurable determinado sea una clave de la [tabla Binaria](binary-table.md) para una fila que contenga una imagen de mapa de bits. Estas restricciones no se aplican mediante Mergemod.dll, por lo que los autores de módulos deben estar preparados para controlar cualquier cadena que cumpla el tipo de formato de clave especificado. A menos que se especifique lo contrario por significado semántico o atributos, null es una respuesta válida.
 
  
 

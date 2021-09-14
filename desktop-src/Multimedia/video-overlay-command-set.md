@@ -5,11 +5,11 @@ ms.assetid: e1f9da94-00c2-472e-a78d-1b65e656c8ea
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1eabbc829012b36cfc0970912577a1ef1885f461
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371588"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071722"
 ---
 # <a name="video-overlay-command-set"></a>Video-Overlay de comandos
 
@@ -32,7 +32,7 @@ Los dispositivos de superposición de vídeo admiten el siguiente conjunto de co
 | [**status**](status.md)         | [**ESTADO \_ DE MCI**](mci-status.md)         |
 | [Sysinfo](sysinfo.md)           | [**SYSINFO de MCI \_**](mci-sysinfo.md)       |
 | [**Descongelar**](unfreeze.md)     | [**MCI \_ UNFREEZE**](mci-unfreeze.md)     |
-| [**where**](where.md)           | [**MCI \_ WHERE**](mci-where.md)           |
+| [**, donde**](where.md)           | [**MCI \_ WHERE**](mci-where.md)           |
 | [**Ventana**](window.md)         | [**VENTANA \_ de MCI**](mci-window.md)         |
 
 

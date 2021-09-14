@@ -5,7 +5,7 @@ ms.assetid: abbc942b-0217-4b07-bf43-fab55ca9c411
 keywords:
 - Inicialización del método NAP
 - Inicializar el método NAP , INapSystemHealthAgentBinding (interfaz)
-- INapSystemHealthAgentBinding interface NAP , Initialize (método)
+- INapSystemHealthAgentBinding interfaz NAP , Initialize (método)
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dbe764d477c5f176fcaebc0825bbbcd02495ec70ee669a02c59258173cfbdd3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7ee4d4f602303ca1943e47c04ba30ab8f6e75e72
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119802715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071658"
 ---
 # <a name="inapsystemhealthagentbindinginitialize-method"></a>INapSystemHealthAgentBinding::Initialize (Método)
 
@@ -58,7 +58,7 @@ HRESULT Initialize(
 *devolución de llamada* \[ En\]
 </dt> <dd>
 
-Puntero COM a una [**interfaz INapSystemHealthAgentCallback**](inapsystemhealthagentcallback.md) usada por NapAgent para devolución de llamada del agente de mantenimiento con un proceso o notificación. NapAgent contiene una referencia al objeto asociado a esta interfaz hasta que se llama a [**Uninitialize.**](inapsystemhealthagentbinding-uninitialize-method.md)
+Puntero COM a una [**interfaz INapSystemHealthAgentCallback**](inapsystemhealthagentcallback.md) usada por NapAgent para devolución de llamada al agente de mantenimiento con un proceso o notificación. NapAgent contiene una referencia al objeto asociado a esta interfaz hasta que se llama a [**Uninitialize.**](inapsystemhealthagentbinding-uninitialize-method.md)
 
 </dd> </dl>
 
@@ -81,20 +81,20 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-NapAgent no desencadena un intercambio soH como resultado de la inicialización. Un agente de mantenimiento del sistema debe llamar a [**NotifySoHChange para**](inapsystemhealthagentbinding-notifysohchange-method.md) solicitar un intercambio de paquetes SoH después de inicializarse con NapAgent.
+NapAgent no desencadena un intercambio de SoH como resultado de la inicialización. Un agente de mantenimiento del sistema debe llamar [**a NotifySoHChange para**](inapsystemhealthagentbinding-notifysohchange-method.md) solicitar un intercambio de paquetes SoH después de inicializar con NapAgent.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

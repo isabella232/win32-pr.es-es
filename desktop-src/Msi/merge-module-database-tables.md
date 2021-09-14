@@ -4,12 +4,12 @@ ms.assetid: 2af6cea0-6d93-4aa5-a708-d305f11986ef
 title: Combinar tablas de base de datos de módulos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 201b4af776ae0b68fd4330dca8240390e5731950fdaba5a734f48d887db5be84
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 17a58240c589297cf2540625bc12180252efa42d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119580645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071898"
 ---
 # <a name="merge-module-database-tables"></a>Combinar tablas de base de datos de módulos
 
@@ -110,7 +110,7 @@ Las siguientes tablas del instalador son opcionales en los módulos de combinaci
 -   [Entorno](environment-table.md)
 -   [EventMapping](eventmapping-table.md)
 -   [Extensión](extension-table.md)
--   [Fuente](font-table.md)
+-   [Font](font-table.md)
 -   [Icono](icon-table.md)
 -   [IniFile](inifile-table.md)
 -   [IniLocator](inilocator-table.md)
@@ -118,7 +118,7 @@ Las siguientes tablas del instalador son opcionales en los módulos de combinaci
 -   [InstallUISequence](installuisequence-table.md)
 -   [ListBox](listbox-table.md)
 -   [ListView](listview-table.md)
--   [Mime](mime-table.md)
+-   [MIME](mime-table.md)
 -   [MoveFile](movefile-table.md)
 -   [ODBCAttribute](odbcattribute-table.md)
 -   [ODBCDataSource](odbcdatasource-table.md)
@@ -143,7 +143,7 @@ Las siguientes tablas del instalador son opcionales en los módulos de combinaci
 -   [Textstyle](textstyle-table.md)
 -   [Typelib](typelib-table.md)
 -   [UIText](uitext-table.md)
--   [Verbo](verb-table.md)
+-   [Verb](verb-table.md)
 
  
 

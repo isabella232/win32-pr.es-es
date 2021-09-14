@@ -4,20 +4,20 @@ ms.assetid: 2eee535f-e7f6-4e1a-9667-df4b8067b132
 title: Msidb.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71bff646ae3e933be5dbe37a774b72c10a0183fe9c793305292c9a11c4f417be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86f2e1fa6a1cf1a9dc8a01b9f9d6542607dd9275
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012939"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071880"
 ---
 # <a name="msidbexe"></a>Msidb.exe
 
-Msidb.exe usa [**MsiDatabaseImport y**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta) [**MsiDatabaseExport para**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) importar y exportar tablas [y](database-tables.md) secuencias de base de datos.
+Msidb.exe usa [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta) y [**MsiDatabaseExport para**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) importar y exportar tablas [y](database-tables.md) secuencias de base de datos.
 
 Si el modo, la carpeta, la base de datos y la lista de tablas se especifican en la línea de comandos, Msidb.exe no muestra ninguna interfaz de usuario y funciona como una utilidad de línea de comandos silenciosa adecuada para el script de compilación.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 **MsiDb** *{option}***...** _{option}_* _..._ * *{table}***...** _{table}_
 
@@ -29,7 +29,7 @@ Msidb.exe usa las siguientes opciones de línea de comandos que no tienen en cue
 
 | Opción | Descripción                                                                                                                                                                                                                                                                                                                         |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| -i     | Importe archivos de archivo de texto de la carpeta a la base de datos. Los nombres de tabla para la importación son nombres de archivo de 8 caracteres con una extensión ".idt". Los nombres más largos se truncan a 8 caracteres si se proporcionan mediante el comando para la importación. Se pueden usar especificaciones de comodín estándar.                                                                 |
+| -i     | Importe los archivos de archivo de texto de la carpeta a la base de datos. Los nombres de tabla para la importación son nombres de archivo de 8 caracteres con una extensión ".idt". Los nombres más largos se truncan a 8 caracteres si se proporcionan mediante el comando para la importación. Se pueden usar especificaciones de comodín estándar.                                                                 |
 | -E     | Exporte las tablas seleccionadas de la base de datos a archivos de archivo de texto de la carpeta . Los nombres de tabla para la exportación son nombres de tabla. Solo se puede usar la especificación \* de caracteres comodín, "". Las tablas se pueden exportar desde una base de datos de solo lectura.                                                                                                               |
 | -c     | Crea un nuevo archivo de base de datos e importa tablas. Sobrescribe un archivo de base de datos existente.                                                                                                                                                                                                                                               |
 | -f     | Especifica la carpeta que contiene los archivos de archivo de texto para tablas y secuencias. Si no se especifica la carpeta que contiene los archivos de archivo de texto, la utilidad solicita al usuario la carpeta.                                                                                                                                       |

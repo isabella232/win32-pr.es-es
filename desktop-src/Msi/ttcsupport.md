@@ -1,21 +1,21 @@
 ---
 description: El instalador establece la propiedad TTCSupport para indicar si el sistema operativo admite archivos .ttc (colecciones de fuentes de tipo true).
 ms.assetid: 016a6d5a-84b7-415e-88ee-7a533bfeaad2
-title: Propiedad TTCSupport
+title: TTCSupport, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c021aba01366e6b7002fc836e8caf0df3d6d81c7728d68ee96a28ef5a007822
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 71a75d91b324c2509b64851efa61c5a33ca4f023
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119810555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071827"
 ---
-# <a name="ttcsupport-property"></a>Propiedad TTCSupport
+# <a name="ttcsupport-property"></a>TTCSupport, propiedad
 
 El instalador establece la **propiedad TTCSupport** para indicar si el sistema operativo admite archivos .ttc (colecciones de fuentes de tipo true).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad se establece si el instalador detecta Windows 2000 o cualquiera de los siguientes sistemas operativos:
 
@@ -29,9 +29,9 @@ Esta propiedad se establece si el instalador detecta Windows 2000 o cualquiera d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows installer.<br/> |
 
 
 

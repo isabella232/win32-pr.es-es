@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ceb9e927e1ac65f21a3ff457922e1bd475b8327ac2525b2af7afefa6cb173f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 546a6d3b4ec262fdd725af24211338e848b2b848
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037856"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071676"
 ---
 # <a name="inapsohconstructor-interface"></a>Interfaz INapSoHConstructor
 
@@ -31,7 +31,7 @@ ms.locfileid: "120037856"
 
 El **INapSoHConstructor** proporciona métodos que usan los SHA para construir [**SoHRequests**](/windows/win32/api/naptypes/ns-naptypes-soh) y los SHV para construir **SoHResponses.**
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz INapSoHConstructor** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapSoHConstructor** también tiene estos tipos de miembros:
 
@@ -62,8 +62,8 @@ La **interfaz INapSoHConstructor** tiene estos métodos.
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 
 

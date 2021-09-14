@@ -1,6 +1,6 @@
 ---
-title: Uso de la estructura DESATEX
-description: Uso de la estructura DESATEX
+title: Usar la estructura DESATEX
+description: Usar la estructura DESATEX
 ms.assetid: 9b668e1e-cb5f-4065-802b-23974925eacf
 keywords:
 - audio de forma de onda, estructura DESATEX
@@ -10,17 +10,17 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1534cf660c2f2423dc526c3d29f8eca06878fc0c
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071732"
 ---
-# <a name="using-the-waveformatex-structure"></a>Uso de la estructura DESATEX
+# <a name="using-the-waveformatex-structure"></a>Usar la estructura DESATEX
 
-En el caso de los datos de audio PCM en no más de dos canales y con muestras de 8 o 16 bits, use la estructura [**DESACTETEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) para especificar el formato de datos.
+En el caso de los datos de audio PCM en no más de dos canales y con muestras de 8 o 16 bits, use la estructura [**DESATEX para**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) especificar el formato de datos.
 
-En el ejemplo siguiente se muestra cómo configurar una estructura **DE FORMADEDATEX** para 11,025 kilohercios (kHz) mono de 8 bits y para estéreo de 16 bits de 44,1 kHz. Después de configurar **LAMTEX,** en el ejemplo se llama a la función IsFormatSupported para comprobar que el dispositivo de salida de forma de onda PCM admite el formato. El código fuente de IsFormatSupported se muestra en un ejemplo de Determinar la [compatibilidad con formato no estándar.](determining-nonstandard-format-support.md)
+En el ejemplo siguiente se muestra cómo configurar una estructura **DE FORMADETEATEX** para 11,025 kilohercios (kHz) mono de 8 bits y para estéreo de 16 bits de 44,1 kHz. Después de configurar **ESTAMÁTEX,** en el ejemplo se llama a la función IsFormatSupported para comprobar que el dispositivo de salida de forma de onda PCM admite el formato . El código fuente de IsFormatSupported se muestra en un ejemplo de Determinar la compatibilidad [con formato no estándar.](determining-nonstandard-format-support.md)
 
 
 ```C++

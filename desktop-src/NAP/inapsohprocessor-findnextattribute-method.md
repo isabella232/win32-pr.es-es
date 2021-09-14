@@ -5,7 +5,7 @@ ms.assetid: 0ff94a32-ece8-4a89-9ee9-93c5e14dfb6c
 keywords:
 - Método NAP de FindNextAttribute
 - Método NAP de FindNextAttribute, interfaz INapSoHProcessor
-- INapSoHProcessor interface NAP , FindNextAttribute (método)
+- INapSoHProcessor interface NAP , FindNextAttribute method
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4425707487994904d1bd2a622cd1ab66f286469c93e80a8eb01e71c0319426ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1a270e36f8254ed5dbfcd9776cf013f9d10d4a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118939582"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071672"
 ---
 # <a name="inapsohprocessorfindnextattribute-method"></a>INapSoHProcessor::FindNextAttribute (método)
 
@@ -52,7 +52,7 @@ HRESULT FindNextAttribute(
 *fromLocation* \[ En\]
 </dt> <dd>
 
-Ubicación inicial (índice) en el paquete statement of health (SoH) para iniciar la búsqueda de atributos. Este valor debe estar en el intervalo de 0 a (**numAttrib** - 1) donde **numAttrib** se recupera mediante [**INapSoHProcessor::GetNumberOfAttributes**](inapsohprocessor-getnumberofattributes-method.md).
+Ubicación inicial (índice) del paquete Statement of Health (SoH) para iniciar la búsqueda de atributos. Este valor debe estar en el intervalo de 0 a (**numAttrib** - 1) donde **numAttrib** se recupera mediante [**INapSoHProcessor::GetNumberOfAttributes**](inapsohprocessor-getnumberofattributes-method.md).
 
 > [!Note]  
 > El paquete SoH usa índices de atributo basados en 0.
@@ -92,7 +92,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método FindNextAttribute** busca atributos de tipo *SoHAttributeType* del índice especificado por *fromLocation* y superiores hasta que se encuentra una coincidencia. Si no se encuentra ninguna coincidencia, **se devuelve ERROR FILE NOT \_ \_ \_ FOUND.**
 
@@ -104,8 +104,8 @@ El **método FindNextAttribute** busca atributos de tipo *SoHAttributeType* del 
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 
 

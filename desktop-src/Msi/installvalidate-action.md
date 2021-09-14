@@ -4,12 +4,12 @@ ms.assetid: 1c55794d-1ecc-43bf-956f-96afc5f36964
 title: Acción InstallValidate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd8a5e2f69df5e588c2366f7cf9fff0fb3621889e9b725605a38acc14f39457
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e650ce136ac3b1b62e41ce34f79f5d28540d1292
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117805643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127072023"
 ---
 # <a name="installvalidate-action"></a>Acción InstallValidate
 
@@ -27,7 +27,7 @@ La [acción CostFinalize](costfinalize-action.md) y las secuencias de cuadro de 
 
 No hay ningún mensaje ActionData.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Normalmente, una secuencia de cuadro de diálogo de interfaz de usuario anterior debe realizar la misma comprobación que la acción InstallValidate cuando el usuario intenta iniciar la copia de archivos. Esta secuencia de cuadro  de diálogo de interfaz de usuario debe presentar un cuadro de diálogo Espacio insuficiente en disco si los volúmenes seleccionados no tienen suficiente espacio para la instalación. Los cuadros de diálogo de la interfaz de usuario deben crearse de forma que el usuario no pueda continuar con la instalación si no hay suficiente espacio en disco. En el caso de una instalación silenciosa, no hay ninguna interfaz de usuario y la acción InstallValidate finaliza la instalación si no hay suficiente espacio en disco. La causa de la terminación prematura se registra en el archivo de registro si el registro está habilitado.
 

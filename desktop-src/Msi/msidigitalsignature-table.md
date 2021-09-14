@@ -4,12 +4,12 @@ ms.assetid: 63d62152-4f01-454f-bdea-550f2a9f6b14
 title: Tabla MsiDigitalSignature
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d18514747e5bb99f03bacc792f9a9ec311e28006b837061ce96088c3b723bf93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd0ec22b9a399b6248fd3b2781e1ac8d7ae14324
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119679795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071869"
 ---
 # <a name="msidigitalsignature-table"></a>Tabla MsiDigitalSignature
 

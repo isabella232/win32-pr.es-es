@@ -18,11 +18,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f36f1bebfca22b963e5c1eb6fede3f2786b35199
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372133"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071753"
 ---
 # <a name="meters"></a>Metros
 
@@ -32,7 +32,7 @@ Los controles de medidor miden los datos que pasan a través de una línea de au
 
 | Control  | Descripción                                                                                                                                            |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Booleano  | Mide si un valor entero es FALSE/OFF (cero) o TRUE/ON (distinto de cero).                                                                            |
+| Boolean  | Mide si un valor entero es FALSE/OFF (cero) o TRUE/ON (distinto de cero).                                                                            |
 | Peak     | Mide la desviación de 0 en las direcciones positiva y negativa. El intervalo de valores enteros para el medidor máximo es de -32 768 a 32 767. |
 | Firmado   | Mide los valores enteros del intervalo de –231 a (231 – 1). El controlador mezclador define los límites de este medidor.                                     |
 | Sin signo | Mide los valores enteros del intervalo de 0 a (232 – 1). El controlador mezclador define los límites de este medidor.                                        |

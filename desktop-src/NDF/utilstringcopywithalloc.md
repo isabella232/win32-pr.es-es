@@ -3,7 +3,7 @@ title: Función UtilStringCopyWithAlloc (Ndattributils.h)
 description: Asigna y copia una cadena de origen.
 ms.assetid: e1400ae1-0edd-4b59-af03-3da1b9d7073b
 keywords:
-- Función NDF UtilStringCopyWithAlloc
+- Función UtilStringCopyWithAlloc NDF
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3654fa5eefd45a51d963325e10fbcba765420afe25a5c47a058bbaf4e4093ef0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b68bd1815ff09473f0431dde19a12a87603a9dec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119801535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071627"
 ---
 # <a name="utilstringcopywithalloc-function"></a>Función UtilStringCopyWithAlloc
 
@@ -47,7 +47,7 @@ HRESULT UtilStringCopyWithAlloc(
 
 Tipo: **LPWSTR \***
 
-Ubicación donde se almacena el puntero a la memoria asignada. Cuando ya no los necesite, debe publicarse [**con CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) Este búfer siempre termina en NULL.
+Ubicación donde se almacena el puntero a la memoria asignada. Cuando ya no lo necesite, debe publicarse con [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) Este búfer siempre termina en null.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 | Código devuelto                                                                                  | Descripción                                                        |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | La operación se realizó correctamente.<br/>                                |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o varios parámetros no se han proporcionado correctamente.<br/> |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | No se han proporcionado correctamente uno o varios parámetros.<br/> |
 
 
 
@@ -90,11 +90,11 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 

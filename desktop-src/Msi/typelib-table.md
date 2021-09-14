@@ -4,12 +4,12 @@ ms.assetid: 86b827ed-e707-4627-9488-78eafb444d32
 title: Tabla TypeLib
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 862bc37e325f8c615e8158cfa431c927841f6b33c403c804726cea8fee6f0469
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0aa8949df75162ffb7107b633ab766d276c4b42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119500005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071826"
 ---
 # <a name="typelib-table"></a>Tabla TypeLib
 
@@ -22,13 +22,13 @@ La tabla TypeLib tiene las columnas siguientes.
 | Columna      | Tipo                               | Clave | Nullable |
 |-------------|------------------------------------|-----|----------|
 | LibID       | [GUID](guid.md)                   | Y   | N        |
-| Lenguaje    | [Entero](integer.md)             | Y   | N        |
+| Idioma    | [Entero](integer.md)             | Y   | N        |
 | Componente\_ | [Identificador](identifier.md)       | Y   | N        |
 | Versión     | [DoubleInteger](doubleinteger.md) | N   | Y        |
 | Descripción | [Texto](text.md)                   | N   | Y        |
 | Directorio\_ | [Identificador](identifier.md)       | N   | Y        |
 | Característica\_   | [Identificador](identifier.md)       | N   | N        |
-| Costo        | [DoubleInteger](doubleinteger.md) | N   | Y        |
+| Coste        | [DoubleInteger](doubleinteger.md) | N   | Y        |
 
 
 
@@ -62,7 +62,7 @@ Clave externa en la primera columna de la [tabla Component](component-table.md).
 <span id="Version"></span><span id="version"></span><span id="VERSION"></span>Versión
 </dt> <dd>
 
-Esta es la versión de la biblioteca. Las versiones principal y secundaria se codifican en el valor entero de cuatro bytes. La versión secundaria está en los ocho bits inferiores. La versión principal está en los dieciséis bits centrales.
+Esta es la versión de la biblioteca. Las versiones principales y secundarias se codifican en el valor entero de cuatro bytes. La versión secundaria está en los ocho bits inferiores. La versión principal está en los dieciséis bits centrales.
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Clave externa en la primera columna de la [tabla Directory](directory-table.md).
 <span id="Feature_"></span><span id="feature_"></span><span id="FEATURE_"></span>Característica\_
 </dt> <dd>
 
-Clave externa en la primera columna de la [tabla Característica](feature-table.md). Esta columna especifica la característica que debe instalarse para que la biblioteca de tipos esté operativa.
+Clave externa en la primera columna de la [tabla Feature](feature-table.md). Esta columna especifica la característica que se debe instalar para que la biblioteca de tipos esté operativa.
 
 </dd> <dt>
 
@@ -94,11 +94,11 @@ Costo asociado al registro de la biblioteca de tipos en bytes. Debe ser un núme
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se hace referencia a esta tabla cuando se ejecuta [la acción RegisterTypeLibraries](registertypelibraries-action.md) o la acción [UnregisterTypeLibraries.](unregistertypelibraries-action.md)
 
-El instalador escribe toda la información de registro de la biblioteca de tipos en la ubicación del Registro HKEY \_ LOCAL \_ MACHINE (HKLM). Este es el caso incluso para las instalaciones por usuario. Las bibliotecas de tipos no se pueden registrar en ubicaciones por usuario (HKCU).
+El instalador escribe toda la información de registro de la biblioteca de tipos en la ubicación del registro HKEY \_ LOCAL \_ MACHINE (HKLM). Este es el caso incluso para las instalaciones por usuario. Las bibliotecas de tipos no se pueden registrar en ubicaciones por usuario (HKCU).
 
 Se recomienda encarecidamente a los autores de paquetes de instalación que no utilicen la tabla TypeLib. En su lugar, deben registrar bibliotecas de tipos mediante la [tabla Registry.](registry-table.md) Entre los motivos para evitar el registro propio se incluyen:
 

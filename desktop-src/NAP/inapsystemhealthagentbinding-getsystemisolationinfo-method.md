@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9058b78bcff60b27bb27f25f11b785a8cd341f9addafe1829c1e8a7f3fb02a15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0323149be50cd8896a191ca57584cea0c015487
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118939562"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071659"
 ---
 # <a name="inapsystemhealthagentbindinggetsystemisolationinfo-method"></a>Método INapSystemHealthAgentBinding::GetSystemIsolationInfo
 
@@ -85,7 +85,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sha debe llamar a [**Initialize antes**](inapsystemhealthagentbinding-initialize-method.md) de llamar a este método o a cualquier otro método de la [**interfaz INapSystemHealthAgentBinding2.**](inapsystemhealthagentbinding2.md)
 
@@ -97,8 +97,8 @@ Sha debe llamar a [**Initialize antes**](inapsystemhealthagentbinding-initialize
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: e56d6572526e2aecfc12dc5b2bb9a365be6d3c53b6fb1707fe197c056d05c377
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3869dc37b841d386891eb70940054bd78805bf94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119926565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071902"
 ---
 # <a name="mergeextractfiles-method"></a>Método Merge.ExtractFiles
 
@@ -40,7 +40,7 @@ Merge.ExtractFiles(
 
 <dl> <dt>
 
-*Ruta de acceso* 
+*Path* 
 </dt> <dd>
 
 Directorio de destino completo.
@@ -51,11 +51,11 @@ Directorio de destino completo.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se sobrescriben los archivos del directorio de destino con el mismo nombre. La ruta de acceso se crea si aún no existe.
 
-**ExtractFiles siempre** extrae archivos mediante nombres de archivo cortos para la ruta de acceso. Para usar nombres de archivo largos para la ruta de acceso, use el [**método ExtractFilesEx**](merge-extractfilesex.md).
+**ExtractFiles** siempre extrae archivos mediante nombres de archivo cortos para la ruta de acceso. Para usar nombres de archivo largos para la ruta de acceso, use el [**método ExtractFilesEx**](merge-extractfilesex.md).
 
 ### <a name="c"></a>C++
 
@@ -68,7 +68,7 @@ Vea [**Función ExtractFiles.**](/windows/win32/api/mergemod/nf-mergemod-imsmmer
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                                     |
-| Header<br/>  | <dl> <dt>Advpub.h (incluya Mergemod.h)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Advpub.h (incluir Mergemod.h)</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl>                  |
 
 

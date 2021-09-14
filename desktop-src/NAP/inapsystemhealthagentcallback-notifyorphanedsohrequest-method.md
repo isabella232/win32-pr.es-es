@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 171191c266ae3fd59ab1ba8f55acd73eb143e9aa220fb3d2989a7ced9f716513
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 676b67b61a9375f4fd44ecc41f9e56e92a97b693
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118621186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071639"
 ---
 # <a name="inapsystemhealthagentcallbacknotifyorphanedsohrequest-method"></a>Método INapSystemHealthAgentCallback::NotifyOrphanedSoHRequest
 
@@ -30,7 +30,7 @@ ms.locfileid: "118621186"
 
  
 
-Se llama al método **INapSystemHealthAgentCallback::NotifyOrphanedSoHRequest** si se ha consultado una [**solicitud SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) desde SHA, pero la respuesta nunca ha vuelto.
+Se llama al método **INapSystemHealthAgentCallback::NotifyOrphanedSoHRequest** si se ha consultado [**una solicitud SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) desde sha, pero la respuesta nunca ha vuelto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -84,7 +84,7 @@ Esta es solo una notificación de mejor esfuerzo, por lo que las SHA no deben co
 -   Si se bloquea un ejecutor.
 -   En condiciones de error, es decir, NapAgent no tiene memoria.
 
-Las SHA pueden recibir algunas notificaciones falsos cuando se enlazan por primera vez a NapAgent, por ejemplo, si un intercambio de SoH está en curso cuando el sha está enlazado y, a continuación, se hace el tiempo de espera.
+Es posible que las SHA reciban algunas notificaciones falsos cuando se enlazan por primera vez a NapAgent, por ejemplo, si hay un intercambio de SoH en curso cuando el sha está enlazado y, a continuación, se hace el tiempo de espera.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,8 +94,8 @@ Las SHA pueden recibir algunas notificaciones falsos cuando se enlazan por prime
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 
 
 

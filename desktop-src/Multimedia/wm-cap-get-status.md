@@ -15,13 +15,13 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 58ef6590770e8a9ece3eb8abaffb4dbca0b1a4d4
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371456"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071679"
 ---
-# <a name="wm_cap_get_status-message"></a>Mensaje \_ GET \_ STATUS \_ de WM CAP
+# <a name="wm_cap_get_status-message"></a>Mensaje \_ DE ESTADO GET \_ DE WM CAP \_
 
 El **mensaje GET STATUS \_ \_ \_ de WM CAP** recupera el estado de la ventana de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capGetStatus.**](/windows/desktop/api/Vfw/nf-vfw-capgetstatus)
 
@@ -54,7 +54,7 @@ Puntero a una [**estructura CAPSTATUS.**](/windows/win32/api/vfw/ns-vfw-capstatu
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE** si se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
+Devuelve **TRUE si** se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
 
 ## <a name="remarks"></a>Observaciones
 

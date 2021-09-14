@@ -4,24 +4,24 @@ ms.assetid: 1963adcf-f682-4371-ab44-f91e90105dc0
 title: ListBox (tabla)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b8877db002185cd675914eca6d5be38454796c7b50af6a48f88e0e63c10c195
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5f60fb6ac48860c7893b0320b54e6e54dcf1691
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120043195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071953"
 ---
 # <a name="listbox-table"></a>ListBox (tabla)
 
 Las líneas de un cuadro de lista no se tratan como controles individuales, pero forman parte de un cuadro de lista que funciona como un control . La tabla ListBox define los valores de todos los cuadros de lista.
 
-La tabla ListBox tiene las columnas siguientes.
+La tabla ListBox tiene las siguientes columnas.
 
 
 
 | Columna   | Tipo                         | Clave | Nullable |
 |----------|------------------------------|-----|----------|
-| Propiedad | [Identificador](identifier.md) | Y   | N        |
+| Propiedad. | [Identificador](identifier.md) | Y   | N        |
 | Pedido    | [Entero](integer.md)       | Y   | N        |
 | Value    | [Formato](formatted.md)   | N   | N        |
 | Texto     | [Formato](formatted.md)   | N   | Y        |
@@ -58,11 +58,11 @@ Cadena de valor asociada a este elemento. Al seleccionar la línea se establece 
 <span id="Text"></span><span id="text"></span><span id="TEXT"></span>Texto
 </dt> <dd>
 
-Texto localizable y visible que se va a asignar al elemento. Si falta esta entrada o toda la columna, el texto tiene como valor predeterminado la entrada correspondiente en Valor.
+Texto visible localizable que se va a asignar al elemento. Si falta esta entrada o toda la columna, el texto tiene como valor predeterminado la entrada correspondiente en Valor.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El contenido de los campos Value y Text tiene el formato de la función [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) cuando se crea el control, por lo que pueden contener cualquier expresión que la **función MsiFormatRecord** pueda interpretar. El formato solo se produce cuando se crea el control y no se actualiza si una propiedad implicada en la expresión se modifica durante la vida del control.
 

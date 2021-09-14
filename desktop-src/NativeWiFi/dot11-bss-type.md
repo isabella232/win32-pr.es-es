@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - wlantypes.h
-ms.openlocfilehash: 2d1c83ced842dbb876fea89271a160df2ca07fb9f02f415b13f8f1a46bc8dc79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7815e75f3ef7ef8d908b7d2b26f2e5f9d3630009
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119780325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127071616"
 ---
-# <a name="dot11_bss_type-enumeration"></a>ENUMERACIÓN DOT11 \_ BSS \_ TYPE
+# <a name="dot11_bss_type-enumeration"></a>Enumeración DOT11 \_ BSS \_ TYPE
 
 El **tipo enumerado DOT11 \_ BSS \_ TYPE** define un tipo de red de conjunto de servicios básico (BSS).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -48,10 +48,10 @@ Especifica una red BSS de infraestructura.
 
 </dd> <dt>
 
-<span id="dot11_BSS_type_independent"></span><span id="dot11_bss_type_independent"></span><span id="DOT11_BSS_TYPE_INDEPENDENT"></span>**Tipo \_ BSS dot11 \_ \_ independiente**
+<span id="dot11_BSS_type_independent"></span><span id="dot11_bss_type_independent"></span><span id="DOT11_BSS_TYPE_INDEPENDENT"></span>**Tipo BSS dot11 \_ \_ \_ independiente**
 </dt> <dd>
 
-Especifica una red BSS independiente (IBSS).
+Especifica una red BSS (IBSS) independiente.
 
 </dd> <dt>
 
@@ -68,10 +68,10 @@ Especifica la infraestructura o la red IBSS.
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio SP3 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                        |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                        |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                                                         |
-| Header<br/>                   | <dl> <dt>Wlantypes.h (incluya Windot11.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wlantypes.h (incluye Windot11.h)</dt> </dl> |
 
 
 
